@@ -33,18 +33,6 @@ the math equations, the attributes of the objects, due to the limitation of
 my time, those things are left behind, if anyone is willing to make any 
 contributions, please feel free to create your pull requests.
 
-## New Features
-
-- **Jupyter Notebook support (Since V1.0.15)**
-  
-  You can put your Abaqus/Python script into a Jupyter Notebook.
-  When you run the notebook, the package will convert the notebook into a plain Python file 
-  with the same name but with `.py` suffix instead of `.ipynb`, and then it will be submitted 
-  to Abaqus kernel. 
-
-  Go [github.com/haiiliin/abqpy/tree/main/tests](https://github.com/haiiliin/abqpy/tree/main/tests/compression)
-  for tests using Jupyter Notebooks to build the Abaqus model.
-
 ## Installation
 
 `abqpy` is using type hints features that require Python 3.9 or a later version, 
@@ -62,7 +50,15 @@ pip install abqpy
 conda install -c haiiliin abqpy
 ```
 
-## Optional Installations
+## Optional Requirements
+
+You can put your Abaqus/Python script into a Jupyter Notebook.
+When you run the notebook, the package will convert the notebook into a plain Python file 
+with the same name but with `.py` suffix instead of `.ipynb`, and then it will be submitted 
+to Abaqus kernel. 
+
+Go [github.com/haiiliin/abqpy/tree/main/tests](https://github.com/haiiliin/abqpy/tree/main/tests/compression)
+for tests using Jupyter Notebooks to build the Abaqus model.
  
 In order to use the **Jupyter Notebook** feature, you have to install the following packages:
 ```shell
