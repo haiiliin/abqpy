@@ -26,7 +26,6 @@ class Density:
     The corresponding analysis keywords are:
 
     - DENSITY
-
     """
 
     def __init__(

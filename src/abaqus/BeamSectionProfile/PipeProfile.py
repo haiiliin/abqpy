@@ -2,7 +2,6 @@ from .Profile import Profile
 
 
 class PipeProfile(Profile):
-
     """The PipeProfile object defines the properties of a circular pipe profile.
     The PipeProfile object is derived from the Profile object.
 
@@ -20,7 +19,6 @@ class PipeProfile(Profile):
     The corresponding analysis keywords are:
 
     - BEAM SECTION
-
     """
 
     def __init__(self, name: str, r: float, t: float):

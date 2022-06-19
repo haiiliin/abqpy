@@ -33,7 +33,6 @@ class StepOption:
 
         import optimization
         mdb.models[name].optimizationTasks[name].designResponses[name].stepOptions[i]
-
     """
 
     # The SymbolicConstant ALL or an Int specifying the lower mode in the range of modes to

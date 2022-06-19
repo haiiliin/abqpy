@@ -25,7 +25,6 @@ class HistoryVariable:
 
         import visualization
         session.odbData[name].historyVariables[i]
-
     """
 
     # A String specifying the history request label. This String is read-only.

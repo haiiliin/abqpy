@@ -74,7 +74,6 @@ class FieldBulkData:
 
         import odbAccess
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].bulkDataBlocks[i]
-
     """
 
     # A SymbolicConstant specifying the position of the output in the element. Possible values

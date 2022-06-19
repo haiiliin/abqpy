@@ -18,7 +18,6 @@ class ObjectiveFunction:
 
         import optimization
         mdb.models[name].optimizationTasks[name].objectiveFunctions[name]
-
     """
 
     # Optimization objectives

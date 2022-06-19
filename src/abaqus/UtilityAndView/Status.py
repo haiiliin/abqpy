@@ -21,7 +21,6 @@ def milestone(message: str):
     ----------
     message
         A String specifying the text to display.
-
     """
     pass
 
@@ -44,7 +43,6 @@ def milestone(message: str, percent: int):
         A String specifying the text to display.
     percent
         An Int specifying the percentage complete.
-
     """
     pass
 
@@ -72,7 +70,6 @@ def milestone(message: str, object: str, done: int, total: int):
         An Int specifying the number being processed.
     total
         An Int specifying the total number.
-
     """
     pass
 

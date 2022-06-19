@@ -27,7 +27,6 @@ class CombinedTestData:
     The corresponding analysis keywords are:
 
     - COMBINED TEST DATA
-
     """
 
     def __init__(self, table: tuple, volinf: float = None, shrinf: float = None):

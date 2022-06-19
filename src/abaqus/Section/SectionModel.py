@@ -33,7 +33,6 @@ class SectionModel(ModelBase):
     .. code-block:: python
 
         mdb.models[name]
-
     """
 
     def AcousticInfiniteSection(

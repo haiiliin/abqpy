@@ -24,7 +24,6 @@ class FreeBodyOptions:
         session.defaultOdbDisplay.freeBodyOptions
         session.viewports[name].layers[name].odbDisplay.freeBodyOptions
         session.viewports[name].odbDisplay.freeBodyOptions
-
     """
 
     def setValues(

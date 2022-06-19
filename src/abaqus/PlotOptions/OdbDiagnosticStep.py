@@ -84,7 +84,6 @@ class OdbDiagnosticStep:
 
         import visualization
         session.odbData[name].diagnosticData.steps[i]
-
     """
 
     # A Tuple of the status values. This attribute is read-only.

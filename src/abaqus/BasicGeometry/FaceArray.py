@@ -35,7 +35,6 @@ class FaceArray:
         mdb.models[name].rootAssembly.modelInstances[i].surfaces[name].faces
         mdb.models[name].rootAssembly.sets[name].faces
         mdb.models[name].rootAssembly.surfaces[name].faces
-
     """
 
     def __init__(self, faces: list[Face]):

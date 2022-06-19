@@ -20,7 +20,6 @@ class AcousticImpedance(Interaction):
     The corresponding analysis keywords are:
 
     - SIMPEDANCE
-
     """
 
     def __init__(

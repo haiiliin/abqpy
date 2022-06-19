@@ -49,7 +49,6 @@ class ConcentratedHeatFluxState(LoadState):
         The corresponding analysis keywords are:
 
         - CFLUX
-
     """
 
     # A Float specifying the load magnitude.

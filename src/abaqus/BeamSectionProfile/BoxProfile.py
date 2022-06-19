@@ -3,7 +3,6 @@ from .Profile import Profile
 
 
 class BoxProfile(Profile):
-
     """The BoxProfile object defines the properties of a box profile.
     The BoxProfile object is derived from the Profile object.
 
@@ -21,7 +20,6 @@ class BoxProfile(Profile):
     The corresponding analysis keywords are:
 
     - BEAM SECTION
-
     """
 
     def __init__(

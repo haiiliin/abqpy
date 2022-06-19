@@ -64,7 +64,6 @@ class Viscoelastic:
     The corresponding analysis keywords are:
 
     - VISCOELASTIC
-
     """
 
     # A CombinedTestData object.

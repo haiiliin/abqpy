@@ -28,7 +28,6 @@ class VertexArray:
         mdb.models[name].rootAssembly.modelInstances[i].vertices
         mdb.models[name].rootAssembly.sets[name].vertices
         mdb.models[name].rootAssembly.vertices
-
     """
 
     def __init__(self, vertices: list[Vertex]):

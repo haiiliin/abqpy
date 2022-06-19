@@ -50,7 +50,6 @@ class UserDataBase:
 
         import odbAccess
         session.odbs[name].userData
-
     """
 
     # A String specifying the repository key.

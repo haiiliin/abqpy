@@ -13,7 +13,6 @@ class FeatureOptions:
 
         import part
         mdb.models[name].featureOptions
-
     """
 
     def setValues(

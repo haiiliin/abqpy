@@ -183,7 +183,6 @@ class ImplicitDynamicsStep(AnalysisStep):
 
     - DYNAMIC
             - STEP
-
     """
 
     # A String specifying the repository key.

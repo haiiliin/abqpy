@@ -14,7 +14,6 @@ class ConstrainedSketchGeometry:
         import sketch
         mdb.models[name].sketches[name].geometry[i]
         mdb.models[name].sketches[name].geometry[i][i]
-
     """
 
     # An Int specifying the index of the sketch entity in the ConstrainedSketchGeometryArray.

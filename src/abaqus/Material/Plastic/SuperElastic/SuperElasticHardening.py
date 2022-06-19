@@ -21,7 +21,6 @@ class SuperElasticHardening:
     The corresponding analysis keywords are:
 
     - SUPERELASTIC HARDENING
-
     """
 
     def __init__(self, table: tuple):

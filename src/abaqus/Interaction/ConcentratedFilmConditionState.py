@@ -70,7 +70,6 @@ class ConcentratedFilmConditionState(InteractionState):
     The corresponding analysis keywords are:
 
     - CFILM
-
     """
 
     # A SymbolicConstant specifying the propagation state of the **interactionProperty** member.

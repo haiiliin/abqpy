@@ -57,7 +57,6 @@ class MomentState(LoadState):
     The corresponding analysis keywords are:
 
     - CLOAD
-
     """
 
     # A Float or a Complex specifying the load component in the 4-direction.

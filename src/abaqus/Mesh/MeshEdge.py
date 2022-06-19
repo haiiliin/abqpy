@@ -20,7 +20,6 @@ class MeshEdge:
         mdb.models[name].rootAssembly.allInstances[name].elementEdges[i]
         mdb.models[name].rootAssembly.instances[name].elemEdges[i]
         mdb.models[name].rootAssembly.instances[name].elementEdges[i]
-
     """
 
     def getElements(self):

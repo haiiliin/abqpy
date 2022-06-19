@@ -18,7 +18,6 @@ class InterestingPoint:
 
         import part
         import assembly
-
     """
 
     def __init__(self, edge: Edge, rule: SymbolicConstant):

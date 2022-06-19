@@ -42,7 +42,6 @@ class Permeability:
     The corresponding analysis keywords are:
 
     - PERMEABILITY
-
     """
 
     # A SaturationDependence object specifying the dependence of the permeability of a

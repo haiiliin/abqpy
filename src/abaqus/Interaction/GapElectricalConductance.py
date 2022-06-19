@@ -33,7 +33,6 @@ class GapElectricalConductance:
     The corresponding analysis keywords are:
 
     - GAP ELECTRICAL CONDUCTANCE
-
     """
 
     def __init__(

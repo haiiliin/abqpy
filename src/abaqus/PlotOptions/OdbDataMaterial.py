@@ -17,7 +17,6 @@ class OdbDataMaterial:
 
         import visualization
         session.odbData[name].materials[i]
-
     """
 
     # A String specifying the set name. This attribute is read-only.

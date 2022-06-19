@@ -18,7 +18,6 @@ class NumberFormat:
         session.journalOptions.defaultFormat
         session.journalOptions.fieldReportFormat
         session.journalOptions.geometryFormat
-
     """
 
     def __init__(

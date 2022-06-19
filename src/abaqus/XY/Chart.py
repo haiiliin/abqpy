@@ -70,7 +70,6 @@ class Chart:
         import visualization
         session.charts[name]
         session.xyPlots[name].charts[name]
-
     """
 
     # A String specifying the name of the Chart object.

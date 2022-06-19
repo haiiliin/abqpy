@@ -12,7 +12,6 @@ class MaterialModel(ModelBase):
     .. code-block:: python
 
         mdb.models[name]
-
     """
 
     def Material(self, name: str, description: str = "", materialIdentifier: str = ""):

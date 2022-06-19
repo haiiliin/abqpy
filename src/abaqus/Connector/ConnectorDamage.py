@@ -94,7 +94,6 @@ class ConnectorDamage(ConnectorBehaviorOption):
     The corresponding analysis keywords are:
 
     - CONNECTOR DAMAGE INITIATION
-
     """
 
     # A ConnectorOptions object specifying the ConnectorOptions used to define tabular options

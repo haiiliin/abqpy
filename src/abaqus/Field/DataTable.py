@@ -23,7 +23,6 @@ class DataTable:
 
         import field
         mdb.models[name].discreteFields[name].data[i]
-
     """
 
     # An Int specifying the width of the data. Valid widths are 1, 6, 21, corresponding to

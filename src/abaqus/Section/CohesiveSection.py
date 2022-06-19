@@ -20,7 +20,6 @@ class CohesiveSection(Section):
     The corresponding analysis keywords are:
 
     - COHESIVE SECTION
-
     """
 
     def __init__(

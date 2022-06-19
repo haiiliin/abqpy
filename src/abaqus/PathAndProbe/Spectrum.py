@@ -9,7 +9,6 @@ class Spectrum:
 
         import visualization
         session.spectrums[name]
-
     """
 
     def __init__(self, name: str, colors: tuple):

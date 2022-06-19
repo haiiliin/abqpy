@@ -173,7 +173,6 @@ class ViscoStep(AnalysisStep):
 
     - VISCO
             - STEP
-
     """
 
     # A String specifying the repository key.

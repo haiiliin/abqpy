@@ -38,7 +38,6 @@ class OptimizationTaskBase:
 
         import optimization
         mdb.models[name].optimizationTasks[name]
-
     """
 
     # A String specifying the optimization task repository key.

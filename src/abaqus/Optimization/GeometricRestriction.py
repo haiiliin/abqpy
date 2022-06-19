@@ -24,7 +24,6 @@ class GeometricRestriction:
 
         import optimization
         mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
-
     """
 
     # A String specifying the geometric restriction repository key.

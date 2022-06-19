@@ -50,7 +50,6 @@ class ModelInstance:
 
         import assembly
         mdb.models[name].rootAssembly.modelInstances[i]
-
     """
 
     # A repository of Set objects specifying the sets created on the assembly. For more

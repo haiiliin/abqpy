@@ -17,7 +17,6 @@ class CompositeDamping:
 
         import step
         mdb.models[name].steps[name].compositeDamping
-
     """
 
     # A CompositeDampingComponentArray object.

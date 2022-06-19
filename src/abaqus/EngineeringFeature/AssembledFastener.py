@@ -23,7 +23,6 @@ class AssembledFastener(Fastener):
         mdb.models[name].parts[name].engineeringFeatures.fasteners[name]
         import assembly
         mdb.models[name].rootAssembly.engineeringFeatures.fasteners[name]
-
     """
 
     # A Boolean specifying whether the fastener is suppressed or not. The default value is

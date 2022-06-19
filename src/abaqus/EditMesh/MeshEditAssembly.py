@@ -21,7 +21,6 @@ class MeshEditAssembly(AssemblyBase):
 
         import assembly
         mdb.models[name].rootAssembly
-
     """
 
     def collapseMeshEdge(self, edge: str, collapseMethod: SymbolicConstant):

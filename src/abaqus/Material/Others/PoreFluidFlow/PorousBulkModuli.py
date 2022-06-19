@@ -24,7 +24,6 @@ class PorousBulkModuli:
     The corresponding analysis keywords are:
 
     - POROUS BULK MODULI
-
     """
 
     def __init__(self, table: tuple, temperatureDependency: Boolean = OFF):

@@ -14,7 +14,6 @@ class TimePoint:
     The corresponding analysis keywords are:
 
     - TIME POINTS
-
     """
 
     def __init__(self, name: str, points: tuple):

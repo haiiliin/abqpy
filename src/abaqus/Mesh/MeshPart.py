@@ -25,7 +25,6 @@ class MeshPart(PartBase):
     .. code-block:: python
 
         import mesh
-
     """
 
     def assignStackDirection(self, cells: tuple[Cell], referenceRegion: Face):

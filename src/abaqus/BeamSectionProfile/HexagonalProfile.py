@@ -2,7 +2,6 @@ from .Profile import Profile
 
 
 class HexagonalProfile(Profile):
-
     """The HexagonalProfile object defines the properties of a hexagonal profile.
     The HexagonalProfile object is derived from the Profile object.
 
@@ -20,7 +19,6 @@ class HexagonalProfile(Profile):
     The corresponding analysis keywords are:
 
     - BEAM SECTION
-
     """
 
     def __init__(self, name: str, r: float, t: float):

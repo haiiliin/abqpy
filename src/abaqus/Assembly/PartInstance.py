@@ -110,7 +110,6 @@ class PartInstance:
         import assembly
         mdb.models[name].rootAssembly.allInstances[name]
         mdb.models[name].rootAssembly.instances[name]
-
     """
 
     # A String specifying the repository key. The name must be a valid Abaqus object name.

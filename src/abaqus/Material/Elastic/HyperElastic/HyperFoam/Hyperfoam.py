@@ -31,7 +31,6 @@ class Hyperfoam:
     The corresponding analysis keywords are:
 
     - HYPERFOAM
-
     """
 
     # A BiaxialTestData object.

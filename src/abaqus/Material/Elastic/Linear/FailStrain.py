@@ -29,7 +29,6 @@ class FailStrain:
     The corresponding analysis keywords are:
 
     - FAIL STRAIN
-
     """
 
     def __init__(

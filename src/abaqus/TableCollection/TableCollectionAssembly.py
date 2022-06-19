@@ -17,7 +17,6 @@ class TableCollectionAssembly(AssemblyBase):
 
         import assembly
         mdb.models[name].rootAssembly
-
     """
 
     elementProgressiveActivations: dict[str, ElementProgressiveActivation] = dict[

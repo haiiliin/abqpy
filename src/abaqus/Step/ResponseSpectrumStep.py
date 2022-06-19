@@ -145,7 +145,6 @@ class ResponseSpectrumStep(AnalysisStep):
 
     - RESPONSE SPECTRUM
             - STEP
-
     """
 
     # A String specifying the repository key.

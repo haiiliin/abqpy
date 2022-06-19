@@ -13,7 +13,6 @@ class ErrorIndicatorResult(RuleResult):
 
         import job
         mdb.adaptivityProcesses[name].iterations[i].ruleResults[name].indicatorResults[name]
-
     """
 
     def __init__(self, name: str, results: str):

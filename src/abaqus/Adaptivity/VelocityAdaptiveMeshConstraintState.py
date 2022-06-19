@@ -69,7 +69,6 @@ class VelocityAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
     The corresponding analysis keywords are:
 
     - ADAPTIVE MESH CONSTRAINT
-
     """
 
     # A Float specifying the velocity component in the 1-direction.

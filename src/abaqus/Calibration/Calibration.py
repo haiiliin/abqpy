@@ -21,7 +21,6 @@ class Calibration:
 
         import calibration
         mdb.models[name].calibrations[name]
-
     """
 
     # A DataSet object.

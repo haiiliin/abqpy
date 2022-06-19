@@ -23,7 +23,6 @@ class Hysteresis:
     The corresponding analysis keywords are:
 
     - HYSTERESIS
-
     """
 
     def __init__(self, table: tuple):

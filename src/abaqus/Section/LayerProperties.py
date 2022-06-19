@@ -17,7 +17,6 @@ class LayerProperties:
     The corresponding analysis keywords are:
 
     - REBAR LAYER
-
     """
 
     def __init__(

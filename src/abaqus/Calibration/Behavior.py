@@ -26,7 +26,6 @@ class Behavior:
 
         import calibration
         mdb.models[name].calibrations[name].behaviors[name]
-
     """
 
     # A string specifying the name of the model to which the behavior belongs.

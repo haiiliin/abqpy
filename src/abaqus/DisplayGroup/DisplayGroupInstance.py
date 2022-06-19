@@ -38,7 +38,6 @@ class DisplayGroupInstance:
         session.viewports[name].layers[name].partDisplay.displayGroupInstances[name]
         session.viewports[name].odbDisplay.displayGroupInstances[name]
         session.viewports[name].partDisplay.displayGroupInstances[name]
-
     """
 
     # A String specifying the repository key.

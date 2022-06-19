@@ -13,7 +13,6 @@ class MemoryReductionOptions:
     .. code-block:: python
 
         session.memoryReductionOptions
-
     """
 
     def setValues(self, reducedMemoryMode: Boolean = ON, percentThreshold: float = 75):

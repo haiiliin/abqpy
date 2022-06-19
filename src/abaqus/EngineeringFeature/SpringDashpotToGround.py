@@ -30,7 +30,6 @@ class SpringDashpotToGround(SpringDashpot):
     - ELEMENT
             - SPRING
             - DASHPOT
-
     """
 
     # A Boolean specifying whether the spring/dashpot is suppressed or not. The default value

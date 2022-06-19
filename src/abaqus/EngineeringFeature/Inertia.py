@@ -22,7 +22,6 @@ class Inertia:
         mdb.models[name].parts[name].engineeringFeatures.inertias[name]
         import assembly
         mdb.models[name].rootAssembly.engineeringFeatures.inertias[name]
-
     """
 
     # A String specifying the repository key.

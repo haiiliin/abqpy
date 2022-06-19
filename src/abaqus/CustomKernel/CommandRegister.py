@@ -9,7 +9,6 @@ class CommandRegister:
     .. code-block:: python
 
         import customKernel
-
     """
 
     def __init__(self):

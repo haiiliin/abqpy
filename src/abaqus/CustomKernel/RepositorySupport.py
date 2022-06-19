@@ -17,7 +17,6 @@ class RepositorySupport(CommandRegister):
         mdb.customData
         session.customData
         session.odbs[name].customData
-
     """
 
     def __init__(self):

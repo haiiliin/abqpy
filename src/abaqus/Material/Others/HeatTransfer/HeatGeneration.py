@@ -15,7 +15,6 @@ class HeatGeneration:
     The corresponding analysis keywords are:
 
     - HEAT GENERATION
-
     """
 
     def __init__(self):

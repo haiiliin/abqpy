@@ -11,7 +11,6 @@ class ContactInitialization:
 
         import interaction
         mdb.models[name].contactInitializations[name]
-
     """
 
     pass

@@ -16,7 +16,6 @@ class MovieOptions:
     .. code-block::
 
         session.viewports[name].movieOptions
-
     """
 
     def setValues(

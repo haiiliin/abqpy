@@ -24,7 +24,6 @@ class StreamOptions:
         session.defaultOdbDisplay.streamOptions
         session.viewports[name].layers[name].odbDisplay.streamOptions
         session.viewports[name].odbDisplay.streamOptions
-
     """
 
     def setValues(

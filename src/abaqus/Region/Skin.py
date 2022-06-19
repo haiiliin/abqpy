@@ -31,7 +31,6 @@ class Skin:
         mdb.models[name].rootAssembly.allInstances[name].skins[name]
         mdb.models[name].rootAssembly.instances[name].skins[name]
         mdb.models[name].rootAssembly.skins[name]
-
     """
 
     # A MeshElementArray object.

@@ -27,7 +27,6 @@ class ContourIntegral(Crack):
     The corresponding analysis keywords are:
 
     - CONTOUR INTEGRAL
-
     """
 
     # A Boolean specifying whether the crack is suppressed or not. The default value is OFF.

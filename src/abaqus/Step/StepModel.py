@@ -79,7 +79,6 @@ class StepModel(ModelBase):
     .. code-block:: python
 
         mdb.models[name]
-
     """
 
     def AnnealStep(

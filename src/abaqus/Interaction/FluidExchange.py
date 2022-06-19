@@ -19,7 +19,6 @@ class FluidExchange(Interaction):
     The corresponding analysis keywords are:
 
     - FLUID EXCHANGE
-
     """
 
     def __init__(

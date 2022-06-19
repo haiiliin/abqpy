@@ -15,7 +15,6 @@ class JouleHeatFraction:
     The corresponding analysis keywords are:
 
     - JOULE HEAT FRACTION
-
     """
 
     def __init__(self, fraction: float = 1):

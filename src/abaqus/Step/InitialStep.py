@@ -99,7 +99,6 @@ class InitialStep(AnalysisStep):
 
         import step
         mdb.models[name].steps[name]
-
     """
 
     # A String specifying the repository key.

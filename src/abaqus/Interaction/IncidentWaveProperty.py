@@ -21,7 +21,6 @@ class IncidentWaveProperty(ContactProperty):
     - INCIDENT WAVE INTERACTION PROPERTY
             - UNDEX CHARGE PROPERTY
             - CONWEP CHARGE PROPERTY
-
     """
 
     def __init__(

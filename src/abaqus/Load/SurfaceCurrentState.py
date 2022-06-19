@@ -47,7 +47,6 @@ class SurfaceCurrentState(LoadState):
     The corresponding analysis keywords are:
 
     - DSECURRENT
-
     """
 
     # A Float specifying the load magnitude.

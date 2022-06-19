@@ -13,7 +13,6 @@ class PsOptions:
     .. code-block:: python
 
         session.psOptions
-
     """
 
     def setValues(

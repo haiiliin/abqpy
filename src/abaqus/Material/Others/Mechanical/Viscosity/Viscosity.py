@@ -29,7 +29,6 @@ class Viscosity:
     The corresponding analysis keywords are:
 
     - VISCOSITY
-
     """
 
     # A Trs object.

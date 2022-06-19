@@ -20,7 +20,6 @@ class DisplayOptions:
         import visualization
         session.viewports[name].layers[name].odbDisplay.display
         session.viewports[name].odbDisplay.display
-
     """
 
     # A tuple of SymbolicConstants specifying the plot state of the display. Possible values

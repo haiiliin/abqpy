@@ -14,7 +14,6 @@ class RigidBodyConstraint:
 
         import visualization
         session.odbData[name].rigidbodies[i]
-
     """
 
     # A String specifying the rigidbody constraint name. This attribute is read-only.

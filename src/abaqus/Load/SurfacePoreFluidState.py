@@ -48,7 +48,6 @@ class SurfacePoreFluidState(LoadState):
     The corresponding analysis keywords are:
 
     - DSFLOW
-
     """
 
     # A Float specifying the surface pore fluid flow magnitude.

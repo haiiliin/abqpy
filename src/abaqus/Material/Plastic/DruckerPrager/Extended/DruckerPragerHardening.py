@@ -29,7 +29,6 @@ class DruckerPragerHardening:
     The corresponding analysis keywords are:
 
     - DRUCKER PRAGER HARDENING
-
     """
 
     def __init__(

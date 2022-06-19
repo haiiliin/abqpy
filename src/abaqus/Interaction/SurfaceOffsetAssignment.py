@@ -20,7 +20,6 @@ class SurfaceOffsetAssignment:
     The corresponding analysis keywords are:
 
     - SURFACE PROPERTY ASSIGNMENT
-
     """
 
     def changeValuesInStep(

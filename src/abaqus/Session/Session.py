@@ -175,7 +175,6 @@ class Session(
     .. code-block:: python
 
         session
-
     """
 
     pass

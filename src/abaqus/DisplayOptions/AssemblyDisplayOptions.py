@@ -113,7 +113,6 @@ class AssemblyDisplayOptions:
         import assembly
         session.viewports[name].assemblyDisplay
         session.viewports[name].layers[name].assemblyDisplay
-
     """
 
     # A Boolean specifying whether boundary conditions are shown. The default value is OFF.

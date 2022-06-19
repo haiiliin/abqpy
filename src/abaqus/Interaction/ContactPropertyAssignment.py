@@ -18,7 +18,6 @@ class ContactPropertyAssignment:
     The corresponding analysis keywords are:
 
     - CONTACT PROPERTY ASSIGNMENT
-
     """
 
     def changeValuesInStep(self, stepName: str, index: int, value: str):

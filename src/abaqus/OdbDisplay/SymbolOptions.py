@@ -154,7 +154,6 @@ class SymbolOptions(DGSymbolOptions):
         session.viewports[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.symbolOptions
         session.viewports[name].odbDisplay.symbolOptions
         session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.symbolOptions
-
     """
 
     # A SymbolicConstant specifying the vector quantity to display. Possible values are

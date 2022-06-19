@@ -32,7 +32,6 @@ class OdbDataDatumCsys:
 
         import visualization
         session.odbData[name].datumCsyses[i]
-
     """
 
     # A String specifying the coordinate system name. This String is read-only.

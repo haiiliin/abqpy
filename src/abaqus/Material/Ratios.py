@@ -29,7 +29,6 @@ class Ratios:
     The corresponding analysis keywords are:
 
     - RATIOS
-
     """
 
     def __init__(

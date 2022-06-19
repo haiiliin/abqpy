@@ -29,7 +29,6 @@ class DisplayBody(Constraint):
     The corresponding analysis keywords are:
 
     - DISPLAY BODY
-
     """
 
     # A Boolean specifying whether the constraint is suppressed or not. The default value is

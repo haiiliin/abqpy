@@ -23,7 +23,6 @@ class AnimationController:
 
         import animation
         session.viewports[name].animationController
-
     """
 
     # A SymbolicConstant specifying the type of movie to play. Possible values are

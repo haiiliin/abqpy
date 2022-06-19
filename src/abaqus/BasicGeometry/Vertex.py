@@ -41,7 +41,6 @@ class Vertex:
         mdb.models[name].rootAssembly.modelInstances[i].vertices[i]
         mdb.models[name].rootAssembly.sets[name].vertices[i]
         mdb.models[name].rootAssembly.vertices[i]
-
     """
 
     # An Int specifying the index of the ConstrainedSketchVertex in the VertexArray.

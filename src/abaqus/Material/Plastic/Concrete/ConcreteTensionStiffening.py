@@ -46,7 +46,6 @@ class ConcreteTensionStiffening:
     The corresponding analysis keywords are:
 
     - CONCRETE TENSION STIFFENING
-
     """
 
     def __init__(

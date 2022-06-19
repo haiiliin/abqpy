@@ -16,7 +16,6 @@ class PredefinedFieldDisplayOptions:
 
         session.viewports[name].assemblyDisplay.predefinedFieldOptions
         session.viewports[name].layers[name].assemblyDisplay.predefinedFieldOptions
-
     """
 
     def setValues(

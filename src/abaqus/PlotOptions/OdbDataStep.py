@@ -18,7 +18,6 @@ class OdbDataStep:
 
         import visualization
         session.odbData[name].steps[i]
-
     """
 
     # An OdbDataFrameArray object specifying the list of frames. The list is read-only.

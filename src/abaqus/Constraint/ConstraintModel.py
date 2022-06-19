@@ -26,7 +26,6 @@ class ConstraintModel(ModelBase):
     .. code-block:: python
 
         mdb.models[name]
-
     """
 
     def AdjustPoints(

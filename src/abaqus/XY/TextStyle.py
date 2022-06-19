@@ -37,7 +37,6 @@ class TextStyle:
         session.xyPlots[name].charts[name].legend.titleStyle
         session.xyPlots[name].charts[name].tagTextStyle
         session.xyPlots[name].title.titleStyle
-
     """
 
     def __init__(

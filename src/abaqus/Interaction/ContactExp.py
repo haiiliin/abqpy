@@ -58,7 +58,6 @@ class ContactExp(Interaction):
     The corresponding analysis keywords are:
 
     - CONTACT
-
     """
 
     # A String specifying the repository key.

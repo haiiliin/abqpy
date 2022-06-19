@@ -32,7 +32,6 @@ class CompositeShellSection(GeometryShellSection):
 
     - SHELL SECTION
             - SHELL GENERAL SECTION
-
     """
 
     # A RebarLayers object specifying reinforcement properties.

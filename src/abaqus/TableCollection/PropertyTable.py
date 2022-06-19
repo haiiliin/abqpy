@@ -27,7 +27,6 @@ class PropertyTable:
 
     - PROPERTY TABLE TYPE
             - PROPERTY TABLE
-
     """
 
     # A repository of PropertyTableData. Specifies all the propertyTableData in PropertyTable

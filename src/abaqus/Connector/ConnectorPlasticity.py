@@ -77,7 +77,6 @@ class ConnectorPlasticity(ConnectorBehaviorOption):
     - CONNECTOR PLASTICITY
             - CONNECTOR HARDENING
             - CONNECTOR POTENTIAL
-
     """
 
     # A ConnectorOptions object specifying the ConnectorOptions used to define tabular options

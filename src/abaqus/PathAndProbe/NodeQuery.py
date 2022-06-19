@@ -20,7 +20,6 @@ class NodeQuery:
 
         import visualization
         session.nodeQuery
-
     """
 
     # An Int specifying the ID of the most recently queried node. If the last query was

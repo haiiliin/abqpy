@@ -13,7 +13,6 @@ class IntegratedOutputSection:
 
         import step
         mdb.models[name].integratedOutputSections[name]
-
     """
 
     def __init__(

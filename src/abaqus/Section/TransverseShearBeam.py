@@ -20,7 +20,6 @@ class TransverseShearBeam:
     The corresponding analysis keywords are:
 
     - TRANSVERSE SHEAR STIFFNESS
-
     """
 
     def __init__(

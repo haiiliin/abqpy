@@ -27,7 +27,6 @@ class InertiaRelief(Load):
 
         import load
         mdb.models[name].loads[name]
-
     """
 
     # A String specifying the load repository key.

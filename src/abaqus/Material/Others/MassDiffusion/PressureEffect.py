@@ -27,7 +27,6 @@ class PressureEffect:
     The corresponding analysis keywords are:
 
     - KAPPA
-
     """
 
     def __init__(

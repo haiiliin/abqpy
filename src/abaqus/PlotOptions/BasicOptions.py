@@ -304,7 +304,6 @@ class BasicOptions:
         session.defaultOdbDisplay.basicOptions
         session.viewports[name].layers[name].odbDisplay.basicOptions
         session.viewports[name].odbDisplay.basicOptions
-
     """
 
     # A Boolean specifying whether to ignore region boundaries when computing values. The

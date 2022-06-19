@@ -122,7 +122,6 @@ class CavityRadiation(Interaction):
             - RADIATION SYMMETRY
             - RADIATION VIEWFACTOR
             - REFLECTION
-
     """
 
     # A String specifying the repository key.

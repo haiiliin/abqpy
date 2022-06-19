@@ -9,7 +9,6 @@ class Image:
     .. code-block:: python
 
         session.images[name]
-
     """
 
     def __init__(self, name: str, fileName: str):

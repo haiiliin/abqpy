@@ -19,7 +19,6 @@ class FluidCavity(Interaction):
     The corresponding analysis keywords are:
 
     - FLUID CAVITY
-
     """
 
     def __init__(

@@ -10,7 +10,6 @@ class ConstrainedSketchParameter:
 
         import sketch
         mdb.models[name].sketches[name].parameters[i]
-
     """
 
     # A String specifying the name of the ConstrainedSketchParameter object.

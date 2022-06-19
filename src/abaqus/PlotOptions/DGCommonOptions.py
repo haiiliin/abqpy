@@ -120,7 +120,6 @@ class DGCommonOptions:
         session.viewports[name].layers[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.commonOptions
         session.viewports[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.commonOptions
         session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.commonOptions
-
     """
 
     # A SymbolicConstant specifying the render style of the plot. Possible values are

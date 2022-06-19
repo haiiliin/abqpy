@@ -31,7 +31,6 @@ class OdbContactDiagnostics:
 
         import visualization
         session.odbData[name].diagnosticData.steps[i].contactDiagnostics[i]
-
     """
 
     # A repository of OdbAuxiliaryData objects. This attribute is read-only.

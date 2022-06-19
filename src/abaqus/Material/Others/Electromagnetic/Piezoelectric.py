@@ -66,7 +66,6 @@ class Piezoelectric:
     The corresponding analysis keywords are:
 
     - PIEZOELECTRIC
-
     """
 
     def __init__(

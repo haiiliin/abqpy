@@ -99,7 +99,6 @@ class Part(MeshEditPart, MeshPart, PropertyPart, RegionPart):
 
         import part
         mdb.models[name].parts[name]
-
     """
 
     pass

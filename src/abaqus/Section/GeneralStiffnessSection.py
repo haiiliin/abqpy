@@ -30,7 +30,6 @@ class GeneralStiffnessSection(ShellSection):
     The corresponding analysis keywords are:
 
     - SHELL GENERAL SECTION
-
     """
 
     # A RebarLayers object specifying reinforcement properties.

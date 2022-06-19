@@ -27,7 +27,6 @@ class CapHardening:
     The corresponding analysis keywords are:
 
     - CAP HARDENING
-
     """
 
     def __init__(

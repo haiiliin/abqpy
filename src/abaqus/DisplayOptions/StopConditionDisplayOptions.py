@@ -16,7 +16,6 @@ class StopConditionDisplayOptions:
 
         session.viewports[name].assemblyDisplay.stopConditionOptions
         session.viewports[name].layers[name].assemblyDisplay.stopConditionOptions
-
     """
 
     def setValues(self, localStopCondition: Boolean = ON):

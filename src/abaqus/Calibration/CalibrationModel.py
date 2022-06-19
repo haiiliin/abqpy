@@ -12,7 +12,6 @@ class CalibrationModel(ModelBase):
     .. code-block:: python
 
         mdb.models[name]
-
     """
 
     def Calibration(self, name: str) -> Calibration:

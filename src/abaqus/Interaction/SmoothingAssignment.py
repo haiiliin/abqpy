@@ -18,7 +18,6 @@ class SmoothingAssignment:
     The corresponding analysis keywords are:
 
     - SURFACE PROPERTY ASSIGNMENT
-
     """
 
     def changeValuesInStep(self, stepName: str, index: int, value: SymbolicConstant):

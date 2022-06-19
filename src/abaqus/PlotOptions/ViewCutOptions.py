@@ -86,7 +86,6 @@ class ViewCutOptions:
         session.defaultOdbDisplay.viewCutOptions
         session.viewports[name].layers[name].odbDisplay.viewCutOptions
         session.viewports[name].odbDisplay.viewCutOptions
-
     """
 
     # A Boolean specifying whether to use the options defined for displaying the model below

@@ -15,7 +15,6 @@ class UserDefinedField:
     The corresponding analysis keywords are:
 
     - USER DEFINED FIELD
-
     """
 
     def __init__(self):

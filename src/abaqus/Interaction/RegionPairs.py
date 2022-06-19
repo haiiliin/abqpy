@@ -19,7 +19,6 @@ class RegionPairs:
 
     - CONTACT INCLUSIONS
             - CONTACT EXCLUSIONS
-
     """
 
     def setValuesInStep(

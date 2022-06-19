@@ -19,7 +19,6 @@ class UserMaterial:
     The corresponding analysis keywords are:
 
     - USER MATERIAL
-
     """
 
     def __init__(

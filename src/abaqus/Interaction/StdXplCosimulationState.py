@@ -39,7 +39,6 @@ class StdXplCosimulationState(InteractionState):
     - CO-SIMULATION
             - CO-SIMULATION REGION
             - CO-SIMULATION CONTROLS
-
     """
 
     # A SymbolicConstant specifying the propagation state of the InteractionState object.

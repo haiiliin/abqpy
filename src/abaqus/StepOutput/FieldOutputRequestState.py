@@ -73,7 +73,6 @@ class FieldOutputRequestState:
 
         import step
         mdb.models[name].steps[name].fieldOutputRequestState[name]
-
     """
 
     # A SymbolicConstant specifying the propagation state of the field output request

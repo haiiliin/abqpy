@@ -16,7 +16,6 @@ class CurrentProbeValues:
 
         import visualization
         session.currentProbeValues
-
     """
 
     # A tuple of Floats specifying the values obtained while probing. These values are updated

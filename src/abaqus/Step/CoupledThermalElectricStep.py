@@ -154,7 +154,6 @@ class CoupledThermalElectricStep(AnalysisStep):
     - COUPLED THERMAL-ELECTRICAL
             - SOLUTION TECHNIQUE
             - STEP
-
     """
 
     # A String specifying the repository key.

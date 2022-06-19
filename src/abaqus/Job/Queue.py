@@ -13,7 +13,6 @@ class Queue:
 
         import job
         session.queues[name]
-
     """
 
     def __init__(

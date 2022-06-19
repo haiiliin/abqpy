@@ -47,7 +47,6 @@ class Message:
         import job
         mdb.coexecutions[name].jobs[name].messages[i]
         mdb.jobs[name].messages[i]
-
     """
 
     # A SymbolicConstant specifying the type of message. Possible values are:

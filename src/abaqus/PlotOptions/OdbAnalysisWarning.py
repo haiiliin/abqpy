@@ -10,7 +10,6 @@ class OdbAnalysisWarning:
 
         import visualization
         session.odbData[name].diagnosticData.analysisWarnings[i]
-
     """
 
     pass

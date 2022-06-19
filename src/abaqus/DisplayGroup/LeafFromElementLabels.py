@@ -23,7 +23,6 @@ class LeafFromElementLabels(Leaf):
     .. code-block:: python
 
         import displayGroupOdbToolset
-
     """
 
     # A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,

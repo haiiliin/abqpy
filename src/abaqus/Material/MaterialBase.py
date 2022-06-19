@@ -228,7 +228,6 @@ class MaterialBase:
     The corresponding analysis keywords are:
 
     - MATERIAL
-
     """
 
     # An AcousticMedium object.

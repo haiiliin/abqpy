@@ -23,7 +23,6 @@ class ActuatorSensor(Interaction):
     - ELEMENT
             - USER ELEMENT
             - INITIAL CONDITIONS
-
     """
 
     def __init__(

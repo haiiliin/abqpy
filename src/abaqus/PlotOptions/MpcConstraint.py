@@ -14,7 +14,6 @@ class MpcConstraint:
 
         import visualization
         session.odbData[name].multiPointConstraints[i]
-
     """
 
     # A String specifying the multipoint constraint name. This attribute is read-only.

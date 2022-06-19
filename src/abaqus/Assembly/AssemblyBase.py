@@ -111,7 +111,6 @@ class AssemblyBase(Feature):
 
         import assembly
         mdb.models[name].rootAssembly
-
     """
 
     # An Int specifying that feature parameters have been modified but that the assembly has

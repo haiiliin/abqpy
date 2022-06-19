@@ -150,7 +150,6 @@ class PartBase(Feature):
 
         import part
         mdb.models[name].parts[name]
-
     """
 
     # A Boolean specifying the validity of the geometry of the part. The value is computed,

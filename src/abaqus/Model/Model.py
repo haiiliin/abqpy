@@ -165,7 +165,6 @@ class Model(
     The corresponding analysis keywords are:
 
     - PHYSICAL CONSTANTS
-
     """
 
     pass

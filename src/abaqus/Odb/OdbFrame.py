@@ -38,7 +38,6 @@ class OdbFrame:
 
         import odbAccess
         session.odbs[name].steps[name].frames[i]
-
     """
 
     # An Int specifying the cyclic mode number associated with the data stored on this frame.

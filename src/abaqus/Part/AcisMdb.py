@@ -14,7 +14,6 @@ class AcisMdb(MdbBase):
     .. code-block:: python
 
         mdb
-
     """
 
     @staticmethod

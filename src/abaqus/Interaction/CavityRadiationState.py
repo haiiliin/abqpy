@@ -57,7 +57,6 @@ class CavityRadiationState(InteractionState):
     The corresponding analysis keywords are:
 
     - RADIATION VIEWFACTOR
-
     """
 
     # A SymbolicConstant specifying the blocking checks to be performed in the viewfactor

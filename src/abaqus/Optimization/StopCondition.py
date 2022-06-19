@@ -22,7 +22,6 @@ class StopCondition:
 
         import optimization
         mdb.models[name].optimizationTasks[name].stopConditions[name]
-
     """
 
     # A String specifying the stop condition repository key.

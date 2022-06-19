@@ -15,7 +15,6 @@ class Feature(FeatureBase):
     .. code-block:: python
 
         import assembly
-
     """
 
     @staticmethod

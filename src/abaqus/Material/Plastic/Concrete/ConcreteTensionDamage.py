@@ -36,7 +36,6 @@ class ConcreteTensionDamage:
     The corresponding analysis keywords are:
 
     - CONCRETE TENSION DAMAGE
-
     """
 
     def __init__(

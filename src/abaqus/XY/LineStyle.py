@@ -62,7 +62,6 @@ class LineStyle:
         session.xyPlots[name].charts[name].tagBorder
         session.xyPlots[name].curves[name].lineStyle
         session.xyPlots[name].title.area.border
-
     """
 
     def __init__(

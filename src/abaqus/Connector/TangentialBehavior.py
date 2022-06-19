@@ -39,7 +39,6 @@ class TangentialBehavior:
     The corresponding analysis keywords are:
 
     - FRICTION
-
     """
 
     def __init__(

@@ -17,7 +17,6 @@ class ConnectorOrientation:
         mdb.models[name].rootAssembly.connectorOrientations[i]
         import odbAccess
         session.odbs[name].rootAssembly.connectorOrientations[i]
-
     """
 
     region: Set

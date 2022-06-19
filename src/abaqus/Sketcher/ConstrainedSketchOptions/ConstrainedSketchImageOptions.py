@@ -14,7 +14,6 @@ class ConstrainedSketchImageOptions:
 
         import sketch
         mdb.models[name].sketches[name].imageOptions
-
     """
 
     def setValues(

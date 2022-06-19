@@ -47,7 +47,6 @@ class BodyChargeState(LoadState):
     The corresponding analysis keywords are:
 
     - DECHARGE
-
     """
 
     # A Float specifying the load magnitude.

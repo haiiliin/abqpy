@@ -18,7 +18,6 @@ class SlidingTransitionAssignment:
     The corresponding analysis keywords are:
 
     - CONTACT FORMULATION
-
     """
 
     def changeValuesInStep(self, stepName: str, index: int, value: SymbolicConstant):

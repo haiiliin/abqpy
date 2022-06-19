@@ -14,7 +14,6 @@ class LocalStopCondition(StopCondition):
 
         import optimization
         mdb.models[name].optimizationTasks[name].stopConditions[name]
-
     """
 
     def __init__(

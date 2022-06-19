@@ -2,7 +2,6 @@ from .Profile import Profile
 
 
 class GeneralizedProfile(Profile):
-
     """The GeneralizedProfile object defines the properties of a profile via its area, moment
     of inertia, etc.
     The GeneralizedProfile object is derived from the Profile object.
@@ -21,7 +20,6 @@ class GeneralizedProfile(Profile):
     The corresponding analysis keywords are:
 
     - BEAM GENERAL SECTION
-
     """
 
     def __init__(

@@ -26,7 +26,6 @@ class Keyword:
     .. code-block:: python
 
         import inpParser
-
     """
 
     # A String specifying the name of the keyword.

@@ -35,7 +35,6 @@ class BodyForce(Load):
     The corresponding analysis keywords are:
 
     - DLOAD
-
     """
 
     # A String specifying the load repository key.

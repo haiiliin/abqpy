@@ -47,7 +47,6 @@ class SurfaceChargeState(LoadState):
     The corresponding analysis keywords are:
 
     - DSECHARGE
-
     """
 
     # A Float specifying the load magnitude.

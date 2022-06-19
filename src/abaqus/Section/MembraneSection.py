@@ -26,7 +26,6 @@ class MembraneSection(Section):
     The corresponding analysis keywords are:
 
     - MEMBRANE SECTION
-
     """
 
     # A RebarLayers object specifying reinforcement properties.

@@ -63,7 +63,6 @@ class ConnectorForceState(LoadState):
     The corresponding analysis keywords are:
 
     - CONNECTOR LOAD
-
     """
 
     # A Float or a Complex specifying the connector force component in the connector's local

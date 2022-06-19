@@ -180,7 +180,6 @@ class StaticStep(AnalysisStep):
 
     - STATIC
             - STEP
-
     """
 
     # A String specifying the repository key.

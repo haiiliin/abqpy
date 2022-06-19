@@ -26,7 +26,6 @@ class HistoryOutput:
 
         import odbAccess
         session.odbs[name].steps[name].historyRegions[name].historyOutputs[name]
-
     """
 
     # A tuple of pairs of Floats specifying the pairs (*frameValue*, **value**) where

@@ -9,7 +9,6 @@ class DataSet:
 
         import calibration
         mdb.models[name].calibrations[name].dataSets[name]
-
     """
 
     def __init__(self, name: str, data: tuple = (), type: str = "", form: str = ""):

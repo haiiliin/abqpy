@@ -29,7 +29,6 @@ class EquallySpacedAmplitude(Amplitude):
     The corresponding analysis keywords are:
 
     - AMPLITUDE
-
     """
 
     # A BaselineCorrection object.

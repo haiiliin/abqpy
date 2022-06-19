@@ -41,7 +41,6 @@ class Legend:
         session.charts[name].legend
         session.defaultChartOptions.legend
         session.xyPlots[name].charts[name].legend
-
     """
 
     # A SymbolicConstant specifying how the minimum and maximum values are formatted. Possible

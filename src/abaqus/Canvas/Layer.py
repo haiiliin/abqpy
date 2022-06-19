@@ -30,7 +30,6 @@ class Layer:
     .. code-block:: python
 
         session.viewports[name].layers[name]
-
     """
 
     # A Displayable object specifying the object to be displayed. The Displayable type is an

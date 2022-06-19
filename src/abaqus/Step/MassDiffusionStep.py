@@ -144,7 +144,6 @@ class MassDiffusionStep(AnalysisStep):
 
     - MASS DIFFUSION
             - STEP
-
     """
 
     # A String specifying the repository key.

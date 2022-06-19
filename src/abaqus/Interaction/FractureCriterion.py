@@ -66,7 +66,6 @@ class FractureCriterion:
     The corresponding analysis keywords are:
 
     - FRACTURE CRITERION
-
     """
 
     def __init__(

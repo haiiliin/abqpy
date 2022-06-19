@@ -68,7 +68,6 @@ class InteractionModel(
     .. code-block:: python
 
         mdb.models[name]
-
     """
 
     def contactDetection(

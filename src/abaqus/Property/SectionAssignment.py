@@ -27,7 +27,6 @@ class SectionAssignment:
         session.odbs[name].rootAssembly.instances[name].sectionAssignments[i]
         session.odbs[name].rootAssembly.sectionAssignments[i]
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.sectionAssignments[i]
-
     """
 
     # A Boolean specifying whether the section assignment is suppressed or not. The default

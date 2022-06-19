@@ -30,7 +30,6 @@ class PointFastener(Fastener):
     The corresponding analysis keywords are:
 
     - FASTENER
-
     """
 
     # A Boolean specifying whether the fastener is suppressed or not. The default value is

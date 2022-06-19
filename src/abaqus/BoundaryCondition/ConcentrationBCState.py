@@ -50,7 +50,6 @@ class ConcentrationBCState(BoundaryConditionState):
     The corresponding analysis keywords are:
 
     - BOUNDARY
-
     """
 
     # A Float specifying the concentration magnitude.

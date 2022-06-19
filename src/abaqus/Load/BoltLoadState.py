@@ -54,7 +54,6 @@ class BoltLoadState(LoadState):
 
     - CLOAD
             - BOUNDARY
-
     """
 
     # A SymbolicConstant specifying the type of bolt load. Possible values are APPLY_FORCE,

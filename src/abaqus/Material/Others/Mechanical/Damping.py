@@ -15,7 +15,6 @@ class Damping:
     The corresponding analysis keywords are:
 
     - DAMPING
-
     """
 
     def __init__(

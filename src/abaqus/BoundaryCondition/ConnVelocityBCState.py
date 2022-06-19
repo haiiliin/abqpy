@@ -84,7 +84,6 @@ class ConnVelocityBCState(BoundaryConditionState):
     The corresponding analysis keywords are:
 
     - CONNECTOR MOTION
-
     """
 
     # A Float specifying the velocity component in the connector's local 1-direction.

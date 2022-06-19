@@ -19,7 +19,6 @@ class SurfaceToSurfaceContactExp(Interaction):
 
         import interaction
         mdb.models[name].interactions[name]
-
     """
 
     def __init__(

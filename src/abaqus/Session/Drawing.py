@@ -70,7 +70,6 @@ class Drawing:
     .. code-block:: python
 
         session.drawings[name]
-
     """
 
     # An Int specifying the number of vertices in the vertex array after a call to the

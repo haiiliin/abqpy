@@ -13,7 +13,6 @@ class RegisteredTuple(CommandRegister):
     .. code-block:: python
 
         import customKernel
-
     """
 
     def __init__(self, tuple: tuple):

@@ -39,7 +39,6 @@ class FieldOutput:
         import
         odbAccess
         session.odbs[name].steps[name].frames[i].fieldOutputs[name]
-
     """
 
     # An Int specifying the dimension of vector or the first dimension (number of rows) of

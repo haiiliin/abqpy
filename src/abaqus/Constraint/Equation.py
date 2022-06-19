@@ -25,7 +25,6 @@ class Equation(Constraint):
     The corresponding analysis keywords are:
 
     - EQUATION
-
     """
 
     # A Boolean specifying whether the constraint is suppressed or not. The default value is

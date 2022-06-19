@@ -160,7 +160,6 @@ class HeatTransferStep(AnalysisStep):
 
     - HEAT TRANSFER
             - STEP
-
     """
 
     # A String specifying the repository key.

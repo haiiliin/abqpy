@@ -26,7 +26,6 @@ def addImportCallback(moduleName: str, callback: str, userData: str = ""):
         object passed as the **userData** argument to the addImportCallback method.
     userData
         Any Python object or None. This object is passed to the callback function.
-
     """
     pass
 
@@ -50,6 +49,5 @@ def removeImportCallback(callback: str, userData: str):
     userData
         Any Python object or None; it must be the same as the **userData** argument specified in
         the original call to addImportCallback.
-
     """
     pass

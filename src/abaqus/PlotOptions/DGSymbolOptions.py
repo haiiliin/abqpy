@@ -96,7 +96,6 @@ class DGSymbolOptions:
         session.viewports[name].layers[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.symbolOptions
         session.viewports[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.symbolOptions
         session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.symbolOptions
-
     """
 
     # A SymbolicConstant specifying the vector line thickness. Possible values are VERY_THIN,

@@ -12,7 +12,6 @@ class ElemType:
     .. code-block:: python
 
         import mesh
-
     """
 
     def __init__(

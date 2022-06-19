@@ -41,7 +41,6 @@ class AdaptiveMeshConstraintState:
 
         import step
         mdb.models[name].steps[name].adaptiveMeshConstraintStates[name]
-
     """
 
     # A SymbolicConstant specifying the propagation state of the amplitude reference. Possible

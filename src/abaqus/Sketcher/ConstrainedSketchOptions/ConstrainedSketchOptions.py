@@ -13,7 +13,6 @@ class ConstrainedSketchOptions:
 
         import sketch
         mdb.models[name].sketches[name].sketchOptions
-
     """
 
     def setValues(

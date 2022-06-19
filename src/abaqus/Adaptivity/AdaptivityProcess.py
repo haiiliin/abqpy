@@ -24,7 +24,6 @@ class AdaptivityProcess:
 
         import job
         mdb.adaptivityProcesses[name]
-
     """
 
     # A SymbolicConstant specifying the status of the adaptivity process. Possible values are

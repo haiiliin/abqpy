@@ -40,7 +40,6 @@ class UniaxialTestData:
     The corresponding analysis keywords are:
 
     - UNIAXIAL TEST DATA
-
     """
 
     def __init__(

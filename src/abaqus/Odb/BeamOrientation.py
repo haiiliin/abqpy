@@ -29,7 +29,6 @@ class BeamOrientation:
         session.odbs[name].parts[name].beamOrientations[i]
         session.odbs[name].rootAssembly.instances[name].beamOrientations[i]
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.beamOrientations[i]
-
     """
 
     # A SymbolicConstant specifying the orientation assignment method. Possible values are

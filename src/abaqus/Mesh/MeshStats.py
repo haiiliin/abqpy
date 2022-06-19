@@ -32,7 +32,6 @@ class MeshStats:
     .. code-block:: python
 
         import mesh
-
     """
 
     # An Int specifying the number of point elements.

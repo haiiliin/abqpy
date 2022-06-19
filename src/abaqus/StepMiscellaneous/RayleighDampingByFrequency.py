@@ -19,7 +19,6 @@ class RayleighDampingByFrequency:
 
         import step
         mdb.models[name].steps[name].rayleighDampingByFrequency
-
     """
 
     # A RayleighDampingByFrequencyComponentArray object.

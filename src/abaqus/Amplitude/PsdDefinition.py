@@ -21,7 +21,6 @@ class PsdDefinition(Amplitude):
     The corresponding analysis keywords are:
 
     - PSD-DEFINITION
-
     """
 
     def __init__(

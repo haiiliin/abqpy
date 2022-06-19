@@ -14,7 +14,6 @@ class ActivateElements:
 
     - ActivateElements
             - ElementProgressiveActivation
-
     """
 
     def __init__(

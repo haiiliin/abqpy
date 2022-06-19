@@ -81,7 +81,6 @@ class DisplacementBCState(BoundaryConditionState):
     The corresponding analysis keywords are:
 
     - BOUNDARY
-
     """
 
     # A Float or a Complex specifying the displacement component in the 1-direction.

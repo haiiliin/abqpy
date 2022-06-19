@@ -25,7 +25,6 @@ class InputFile:
     .. code-block:: python
 
         import inpParser
-
     """
 
     # A String specifying the source file name of the Abaqus input file.

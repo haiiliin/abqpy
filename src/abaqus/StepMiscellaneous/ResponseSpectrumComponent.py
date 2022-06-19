@@ -26,7 +26,6 @@ class ResponseSpectrumComponent:
 
         import step
         mdb.models[name].steps[name].components[i]
-
     """
 
     # A Float specifying the **X**-direction cosine.

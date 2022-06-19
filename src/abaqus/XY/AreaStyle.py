@@ -30,7 +30,6 @@ class AreaStyle:
         session.xyPlots[name].charts[name].legend.area.style
         session.xyPlots[name].charts[name].tagAreaStyle
         session.xyPlots[name].title.area.style
-
     """
 
     def __init__(

@@ -49,7 +49,6 @@ class Dielectric:
     The corresponding analysis keywords are:
 
     - DIELECTRIC
-
     """
 
     def __init__(

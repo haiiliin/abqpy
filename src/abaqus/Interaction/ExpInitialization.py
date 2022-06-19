@@ -19,7 +19,6 @@ class ExpInitialization(ContactInitialization):
     The corresponding analysis keywords are:
 
     - CONTACT INITIALIZATION DATA
-
     """
 
     def __init__(

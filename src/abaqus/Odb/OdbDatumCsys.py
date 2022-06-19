@@ -34,7 +34,6 @@ class OdbDatumCsys:
 
         import odbAccess
         session.odbs[name].rootAssembly.datumCsyses[name]
-
     """
 
     # A String specifying the repository key.

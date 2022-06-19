@@ -19,7 +19,6 @@ class RayleighDampingByFrequencyComponent:
 
         import step
         mdb.models[name].steps[name].rayleighDampingByFrequency.components[i]
-
     """
 
     # A Float specifying the frequency value in cycles/time.

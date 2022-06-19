@@ -17,7 +17,6 @@ class GeometryDisplayOptions:
         session.viewports[name].layers[name].assemblyDisplay.geometryOptions
         session.viewports[name].layers[name].partDisplay.geometryOptions
         session.viewports[name].partDisplay.geometryOptions
-
     """
 
     def setValues(

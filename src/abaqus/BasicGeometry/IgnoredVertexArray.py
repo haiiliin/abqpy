@@ -16,7 +16,6 @@ class IgnoredVertexArray:
         import assembly
         mdb.models[name].rootAssembly.allInstances[name].ignoredVertices
         mdb.models[name].rootAssembly.instances[name].ignoredVertices
-
     """
 
     def findAt(self, coordinates: tuple, printWarning: Boolean = True):

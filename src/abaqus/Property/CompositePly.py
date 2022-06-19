@@ -13,7 +13,6 @@ class CompositePly:
 
         import section
         mdb.models[name].parts[name].compositeLayups[i].plies[i]
-
     """
 
     def __init__(

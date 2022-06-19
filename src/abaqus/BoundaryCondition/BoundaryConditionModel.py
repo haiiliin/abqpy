@@ -61,7 +61,6 @@ class BoundaryConditionModel(ModelBase):
     .. code-block:: python
 
         mdb.models[name]
-
     """
 
     def AccelerationBaseMotionBC(

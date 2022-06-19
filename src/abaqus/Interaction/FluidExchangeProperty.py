@@ -20,7 +20,6 @@ class FluidExchangeProperty(ContactProperty):
     The corresponding analysis keywords are:
 
     - FLUID EXCHANGE PROPERTY
-
     """
 
     def __init__(

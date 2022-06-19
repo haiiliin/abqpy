@@ -9,7 +9,6 @@ class Stream:
 
         import visualization
         session.streams[name]
-
     """
 
     def __init__(

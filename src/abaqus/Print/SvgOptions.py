@@ -13,7 +13,6 @@ class SvgOptions:
     .. code-block:: python
 
         session.svgOptions
-
     """
 
     def setValues(self, imageSize: SymbolicConstant = SIZE_ON_SCREEN):

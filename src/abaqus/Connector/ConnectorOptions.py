@@ -50,7 +50,6 @@ class ConnectorOptions:
             - CONNECTOR ELASTICITY
             - CONNECTOR FRICTION
             - CONNECTOR PLASTICITY
-
     """
 
     def __init__(

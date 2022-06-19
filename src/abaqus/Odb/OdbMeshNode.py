@@ -28,7 +28,6 @@ class OdbMeshNode:
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.nodes[i]
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.nodeSets[name].nodes[i]
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.surfaces[name].nodes[i]
-
     """
 
     # An Int specifying the node label.

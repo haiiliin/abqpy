@@ -45,7 +45,6 @@ class SecondaryBaseBCState(BoundaryConditionState):
     The corresponding analysis keywords are:
 
     - BOUNDARY
-
     """
 
     # A SymbolicConstant specifying the propagation state of the amplitude reference. Possible

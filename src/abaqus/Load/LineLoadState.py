@@ -59,7 +59,6 @@ class LineLoadState(LoadState):
     The corresponding analysis keywords are:
 
     - DLOAD
-
     """
 
     # A Float or a Complex specifying the load component in the global or the beam local

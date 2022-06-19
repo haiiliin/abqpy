@@ -46,7 +46,6 @@ class OdbDiagnosticData:
 
         import visualization
         session.odbData[name].diagnosticData
-
     """
 
     # A repository of OdbAnalysisError objects.

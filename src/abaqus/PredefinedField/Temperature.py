@@ -39,7 +39,6 @@ class Temperature(PredefinedField):
 
     - INITIAL CONDITIONS
             - TEMPERATURE
-
     """
 
     # A String specifying the repository key.

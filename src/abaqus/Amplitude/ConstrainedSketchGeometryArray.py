@@ -12,7 +12,6 @@ class ConstrainedSketchGeometryArray:
 
         import sketch
         mdb.models[name].sketches[name].geometry[i]
-
     """
 
     def findAt(self, coordinates: tuple, printWarning: Boolean = True):

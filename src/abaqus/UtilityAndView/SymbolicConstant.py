@@ -20,7 +20,6 @@ class SymbolicConstant:
 
         from symbolicConstants import *
         from abaqusConstants import *
-
     """
 
     def __init__(self, text: str):

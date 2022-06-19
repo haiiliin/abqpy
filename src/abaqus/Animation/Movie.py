@@ -28,7 +28,6 @@ class Movie:
 
         import animation
         session.movies[name]
-
     """
 
     # An Int specifying the width of the movie in pixels.

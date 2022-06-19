@@ -26,7 +26,6 @@ class Stringer:
         mdb.models[name].rootAssembly.allInstances[name].stringers[name]
         mdb.models[name].rootAssembly.instances[name].stringers[name]
         mdb.models[name].rootAssembly.stringers[name]
-
     """
 
     # A MeshElementArray object.

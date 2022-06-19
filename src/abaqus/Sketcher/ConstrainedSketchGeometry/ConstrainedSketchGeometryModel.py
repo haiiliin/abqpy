@@ -16,7 +16,6 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
 
         import sketch
         mdb.models[name].sketches[name]
-
     """
 
     def Arc3Points(

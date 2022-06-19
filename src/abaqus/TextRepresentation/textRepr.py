@@ -43,7 +43,6 @@ def getIndentedRepr(
     Returns
     -------
         A String.
-
     """
     pass
 
@@ -81,7 +80,6 @@ def getPaths(
     Returns
     -------
         A String.
-
     """
     pass
 
@@ -117,7 +115,6 @@ def getTypes(
     Returns
     -------
         A String.
-
     """
     pass
 
@@ -150,7 +147,6 @@ def prettyPrint(
     significantDigits
         An Int specifying the number of significant digits for Floats in the output. Possible
         values are 0 << **significantDigits** ≤≤ 15. The default value is 6.
-
     """
     pass
 
@@ -184,7 +180,6 @@ def printPaths(
         A String specifying the root of the paths to be printed. This String is prepended to
         each path found. The default value is None, implying that the path to **object** will be
         used.
-
     """
     pass
 
@@ -216,6 +211,5 @@ def printTypes(
         A String specifying the root of the paths to be printed. This String is prepended to
         each path found. The default value is None, implying that the path to **object** will be
         used.
-
     """
     pass

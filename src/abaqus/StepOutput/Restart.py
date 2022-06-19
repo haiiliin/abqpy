@@ -16,7 +16,6 @@ class Restart:
     The corresponding analysis keywords are:
 
     - RESTART
-
     """
 
     def __init__(

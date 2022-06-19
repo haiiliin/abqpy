@@ -22,7 +22,6 @@ class FieldReportOptions:
         import visualization
         session.defaultFieldReportOptions
         session.fieldReportOptions
-
     """
 
     # Format of the number

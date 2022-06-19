@@ -13,7 +13,6 @@ class AnnotationViewport(ViewportBase):
     .. code-block:: python
 
         import annotationToolset
-
     """
 
     def plotAnnotation(self, annotation: Annotation, index: str = 0.0):

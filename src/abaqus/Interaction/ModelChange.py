@@ -20,7 +20,6 @@ class ModelChange(Interaction):
     The corresponding analysis keywords are:
 
     - MODEL CHANGE
-
     """
 
     def __init__(

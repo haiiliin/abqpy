@@ -12,7 +12,6 @@ class SketchModel(ModelBase):
     .. code-block:: python
 
         mdb.models[name]
-
     """
 
     def ConstrainedSketch(

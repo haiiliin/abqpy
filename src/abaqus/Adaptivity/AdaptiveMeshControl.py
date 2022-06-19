@@ -14,7 +14,6 @@ class AdaptiveMeshControl:
 
         import step
         mdb.models[name].adaptiveMeshControls[name]
-
     """
 
     def __init__(

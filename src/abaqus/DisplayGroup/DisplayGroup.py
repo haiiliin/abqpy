@@ -40,7 +40,6 @@ class DisplayGroup:
         session.viewports[name].layers[name].partDisplay.displayGroup
         session.viewports[name].odbDisplay.displayGroup
         session.viewports[name].partDisplay.displayGroup
-
     """
 
     # A Boolean specifying whether Undo is possible or not.

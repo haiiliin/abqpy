@@ -14,7 +14,6 @@ class SolverControl:
 
         import step
         mdb.models[name].steps[name].solverControl
-
     """
 
     def setValues(

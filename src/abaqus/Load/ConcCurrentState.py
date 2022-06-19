@@ -47,7 +47,6 @@ class ConcCurrentState(LoadState):
     The corresponding analysis keywords are:
 
     - CECURRENT
-
     """
 
     # A Float specifying the load magnitude.

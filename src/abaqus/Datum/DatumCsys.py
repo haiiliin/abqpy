@@ -41,7 +41,6 @@ class DatumCsys(Datum):
         import odbAccess
         session.odbs[name].rootAssembly.connectorOrientations[i].localCsys1
         session.odbs[name].rootAssembly.connectorOrientations[i].localCsys2
-
     """
 
     # A SymbolicConstant specifying the type of the coordinate system. Possible values are

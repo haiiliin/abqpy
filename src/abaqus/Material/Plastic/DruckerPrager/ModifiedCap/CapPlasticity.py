@@ -34,7 +34,6 @@ class CapPlasticity:
     The corresponding analysis keywords are:
 
     - CAP PLASTICITY
-
     """
 
     # A CapCreepCohesion object.

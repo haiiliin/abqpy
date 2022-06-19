@@ -15,7 +15,6 @@ class ConstrainedSketchParameterModel(ConstrainedSketchBase):
 
         import sketch
         mdb.models[name].sketches[name]
-
     """
 
     def ConstrainedSketchParameter(

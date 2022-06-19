@@ -19,7 +19,6 @@ class AcousticInfiniteSection(Section):
     The corresponding analysis keywords are:
 
     - SOLID SECTION
-
     """
 
     def __init__(self, name: str, material: str, thickness: float = 1, order: int = 10):

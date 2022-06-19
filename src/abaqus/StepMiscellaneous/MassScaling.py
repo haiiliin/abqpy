@@ -48,7 +48,6 @@ class MassScaling:
 
         import step
         mdb.models[name].steps[name].massScaling[i]
-
     """
 
     # A SymbolicConstant specifying the objective of the mass scaling definition. Possible

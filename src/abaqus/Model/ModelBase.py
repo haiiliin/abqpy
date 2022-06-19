@@ -162,7 +162,6 @@ class ModelBase:
     The corresponding analysis keywords are:
 
     - PHYSICAL CONSTANTS
-
     """
 
     # A String specifying the repository key.

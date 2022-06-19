@@ -17,7 +17,6 @@ class MullinsEffect:
         mdb.models[name].materials[name].mullinsEffect
         import odbMaterial
         session.odbs[name].materials[name].mullinsEffect
-
     """
 
     # A SymbolicConstant specifying the method of specifying the data. Possible values are

@@ -27,7 +27,6 @@ class Swelling:
     The corresponding analysis keywords are:
 
     - SWELLING
-
     """
 
     # A Ratios object.

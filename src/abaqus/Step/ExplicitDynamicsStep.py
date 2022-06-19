@@ -143,7 +143,6 @@ class ExplicitDynamicsStep(AnalysisStep):
             - FIXED MASS SCALING
             - STEP
             - VARIABLE MASS SCALING
-
     """
 
     # A String specifying the repository key.

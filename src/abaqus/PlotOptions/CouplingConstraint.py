@@ -18,7 +18,6 @@ class CouplingConstraint:
         session.odbData[name].kinematicCouplings[i]
         session.odbData[name].distributingCouplings[i]
         session.odbData[name].shellSolidCouplings[i]
-
     """
 
     # A String specifying the coupling name. This attribute is read-only.

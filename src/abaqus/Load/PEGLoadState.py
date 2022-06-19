@@ -57,7 +57,6 @@ class PEGLoadState(LoadState):
     The corresponding analysis keywords are:
 
     - CLOAD
-
     """
 
     # A Float or a Complex specifying the load component at dof 1 of reference node 1.

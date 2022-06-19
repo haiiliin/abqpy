@@ -141,7 +141,6 @@ class RandomResponseStep(AnalysisStep):
             - MODAL DAMPING
             - RANDOM RESPONSE
             - STEP
-
     """
 
     # A String specifying the repository key.

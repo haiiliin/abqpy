@@ -47,7 +47,6 @@ class BodyHeatFluxState(LoadState):
     The corresponding analysis keywords are:
 
     - DFLUX
-
     """
 
     # A Float specifying the Body heat flux magnitude.

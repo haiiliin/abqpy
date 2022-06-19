@@ -28,7 +28,6 @@ class Coupling(Constraint):
     The corresponding analysis keywords are:
 
     - COUPLING
-
     """
 
     # A Boolean specifying whether the constraint is suppressed or not. The default value is

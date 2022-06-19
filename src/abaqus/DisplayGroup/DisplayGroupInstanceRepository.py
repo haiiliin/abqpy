@@ -15,7 +15,6 @@ class DisplayGroupInstanceRepository:
         import visualization
         session.viewports[name].layers[name].odbDisplay.displayGroupInstances
         session.viewports[name].odbDisplay.displayGroupInstances
-
     """
 
     def syncOptions(self, name: str, updateInstances: Boolean = ON):

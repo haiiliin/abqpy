@@ -135,7 +135,6 @@ class ModalDynamicsStep(AnalysisStep):
             - MODAL DAMPING
             - MODAL DYNAMIC
             - STEP
-
     """
 
     # A String specifying the repository key.

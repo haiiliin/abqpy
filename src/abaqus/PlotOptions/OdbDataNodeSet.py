@@ -17,7 +17,6 @@ class OdbDataNodeSet:
 
         import visualization
         session.odbData[name].nodeSets[i]
-
     """
 
     # A String specifying the set name. This attribute is read-only.

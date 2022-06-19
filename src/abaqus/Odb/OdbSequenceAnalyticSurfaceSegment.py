@@ -11,7 +11,6 @@ class OdbSequenceAnalyticSurfaceSegment:
         session.odbs[name].parts[name].analyticSurface.segments
         session.odbs[name].rootAssembly.instances[name].analyticSurface.segments
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.analyticSurface.segments
-
     """
 
     def __init__(self):

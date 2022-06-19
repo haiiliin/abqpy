@@ -26,7 +26,6 @@ class Hypoelastic:
     The corresponding analysis keywords are:
 
     - HYPOELASTIC
-
     """
 
     def __init__(self, table: tuple, user: Boolean = OFF):

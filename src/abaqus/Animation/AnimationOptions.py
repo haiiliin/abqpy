@@ -98,7 +98,6 @@ class AnimationOptions:
 
         import animation
         session.animationOptions
-
     """
 
     # A SymbolicConstant specifying the animation mode. Possible values are PLAY_ONCE, LOOP,

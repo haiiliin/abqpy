@@ -9,7 +9,6 @@ class MdbDataFrame:
 
         import visualization
         session.mdbData[name].steps[i].frames[i]
-
     """
 
     pass

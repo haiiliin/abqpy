@@ -29,7 +29,6 @@ class ConcreteCompressionHardening:
     The corresponding analysis keywords are:
 
     - CONCRETE COMPRESSION HARDENING
-
     """
 
     def __init__(

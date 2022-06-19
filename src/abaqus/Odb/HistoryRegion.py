@@ -24,7 +24,6 @@ class HistoryRegion:
 
         import odbAccess
         session.odbs[name].steps[name].historyRegions[name]
-
     """
 
     # A SymbolicConstant specifying the position of the history output. Possible values are

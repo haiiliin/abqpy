@@ -20,7 +20,6 @@ class DefaultChartOptions:
 
         import visualization
         session.defaultChartOptions
-
     """
 
     areaStyle: AreaStyle = AreaStyle()

@@ -23,7 +23,6 @@ class Fastener:
         mdb.models[name].parts[name].engineeringFeatures.fasteners[name]
         import assembly
         mdb.models[name].rootAssembly.engineeringFeatures.fasteners[name]
-
     """
 
     # A String specifying the repository key.

@@ -21,7 +21,6 @@ class AdaptivityIteration:
 
         import job
         mdb.adaptivityProcesses[name].iterations[i]
-
     """
 
     # A repository of RuleResult objects specifying the calculated results from sizing

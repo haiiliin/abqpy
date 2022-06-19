@@ -14,7 +14,6 @@ class QuickTimeOptions:
 
         import animation
         session.quickTimeOptions
-
     """
 
     def setValues(

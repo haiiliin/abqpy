@@ -13,7 +13,6 @@ class RegionAssemblyBase(AssemblyBase):
     .. code-block:: python
 
         import regionToolset
-
     """
 
     def clashSets(self, arg1: str, arg2: str):

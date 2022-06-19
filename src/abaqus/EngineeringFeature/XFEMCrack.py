@@ -28,7 +28,6 @@ class XFEMCrack(Crack):
 
     - ENRICHMENT
             - INITIAL CONDITIONS
-
     """
 
     # A Boolean specifying whether the crack is suppressed or not. The default value is OFF.

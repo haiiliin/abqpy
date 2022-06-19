@@ -33,7 +33,6 @@ class Sorption:
     The corresponding analysis keywords are:
 
     - SORPTION
-
     """
 
     def __init__(

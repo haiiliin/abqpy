@@ -63,7 +63,6 @@ class MagneticPermeability:
     The corresponding analysis keywords are:
 
     - MAGNETIC PERMEABILITY
-
     """
 
     def __init__(

@@ -38,7 +38,6 @@ class ElasticFoundationState(InteractionState):
 
         import interaction
         mdb.models[name].steps[name].interactionStates[name]
-
     """
 
     # A Float specifying the foundation stiffness per area.

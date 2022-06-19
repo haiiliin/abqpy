@@ -25,7 +25,6 @@ class MeshEditPart(PartBase):
     .. code-block:: python
 
         import meshEdit
-
     """
 
     def adjustMidsideNode(self, cornerNodes: tuple[Node], parameter: float):

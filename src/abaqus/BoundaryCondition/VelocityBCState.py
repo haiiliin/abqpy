@@ -74,7 +74,6 @@ class VelocityBCState(BoundaryConditionState):
     The corresponding analysis keywords are:
 
     - BOUNDARY
-
     """
 
     # A Float specifying the velocity component in the 1-direction.

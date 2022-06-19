@@ -13,7 +13,6 @@ class ConstraintDisplayOptions:
     This object can be accessed by:
         session.viewports[name].assemblyDisplay.constraintOptions
         session.viewports[name].layers[name].assemblyDisplay.constraintOptions
-
     """
 
     def setValues(

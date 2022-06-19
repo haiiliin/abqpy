@@ -87,7 +87,6 @@ class ConnDisplacementBCState(BoundaryConditionState):
     The corresponding analysis keywords are:
 
     - CONNECTOR MOTION
-
     """
 
     # A Float or a Complex specifying the displacement component in the connector's local

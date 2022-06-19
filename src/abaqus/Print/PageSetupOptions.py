@@ -15,7 +15,6 @@ class PageSetupOptions:
     .. code-block:: python
 
         session.pageSetupOptions
-
     """
 
     def setValues(

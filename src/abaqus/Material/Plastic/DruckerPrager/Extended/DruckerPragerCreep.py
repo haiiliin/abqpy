@@ -38,7 +38,6 @@ class DruckerPragerCreep:
     The corresponding analysis keywords are:
 
     - DRUCKER PRAGER CREEP
-
     """
 
     def __init__(

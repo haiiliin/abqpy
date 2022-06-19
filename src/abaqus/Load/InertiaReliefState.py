@@ -95,7 +95,6 @@ class InertiaReliefState(LoadState):
     The corresponding analysis keywords are:
 
     - INERTIA RELIEF
-
     """
 
     # A Boolean specifying the 1-direction as a free direction.

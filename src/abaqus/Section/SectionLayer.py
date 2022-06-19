@@ -20,7 +20,6 @@ class SectionLayer:
 
     - SHELL SECTION
             - SHELL GENERAL SECTION
-
     """
 
     def __init__(

@@ -18,7 +18,6 @@ class DetailPlotOptions:
     .. code-block:: python
 
         session.viewports[name].detailPlotOptions
-
     """
 
     # A PlyStackPlotOptions object.

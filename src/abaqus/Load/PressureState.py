@@ -60,7 +60,6 @@ class PressureState(LoadState):
 
     - DSLOAD
             - DLOAD
-
     """
 
     # A Float or a Complex specifying the pressure magnitude.

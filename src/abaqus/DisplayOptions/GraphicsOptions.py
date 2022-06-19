@@ -228,7 +228,6 @@ class GraphicsOptions:
 
         session.defaultGraphicsOptions
         session.graphicsOptions
-
     """
 
     # A Boolean specifying whether a viewport background style of GRADIENT can be overridden

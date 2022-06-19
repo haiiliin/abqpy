@@ -42,7 +42,6 @@ class DamageStabilization:
     The corresponding analysis keywords are:
 
     - DAMAGE STABILIZATION
-
     """
 
     def __init__(

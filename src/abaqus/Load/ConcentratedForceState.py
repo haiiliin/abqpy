@@ -60,7 +60,6 @@ class ConcentratedForceState(LoadState):
     The corresponding analysis keywords are:
 
     - CLOAD
-
     """
 
     # A Float or a Complex specifying the concentrated force component in the 1-direction.

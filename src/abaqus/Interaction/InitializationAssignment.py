@@ -18,7 +18,6 @@ class InitializationAssignment:
     The corresponding analysis keywords are:
 
     - CONTACT INITIALIZATION ASSIGNMENT
-
     """
 
     def changeValuesInStep(self, stepName: str, index: int, value: str):

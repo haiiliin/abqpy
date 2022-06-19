@@ -19,7 +19,6 @@ class EulerianSection(Section):
     The corresponding analysis keywords are:
 
     - EULERIAN SECTION
-
     """
 
     def __init__(self, name: str, data: str):

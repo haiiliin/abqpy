@@ -57,7 +57,6 @@ class BodyForceState(LoadState):
     The corresponding analysis keywords are:
 
     - DLOAD
-
     """
 
     # A Float or a Complex specifying the body force component in the 1-direction.

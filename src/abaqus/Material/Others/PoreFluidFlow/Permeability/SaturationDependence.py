@@ -21,7 +21,6 @@ class SaturationDependence:
     The corresponding analysis keywords are:
 
     - PERMEABILITY
-
     """
 
     def __init__(self, table: tuple):

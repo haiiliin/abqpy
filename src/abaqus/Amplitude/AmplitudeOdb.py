@@ -25,7 +25,6 @@ class AmplitudeOdb(OdbBase):
 
         import odbAccess
         session.odbs[name]
-
     """
 
     def ActuatorAmplitude(

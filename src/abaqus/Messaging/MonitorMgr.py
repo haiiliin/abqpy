@@ -14,7 +14,6 @@ class MonitorMgr:
     .. code-block:: python
 
         monitorManager
-
     """
 
     def addMessageCallback(

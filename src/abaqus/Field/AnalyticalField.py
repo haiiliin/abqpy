@@ -31,7 +31,6 @@ class AnalyticalField(Field):
 
         import fields
         mdb.models[name].analyticalFields[name]
-
     """
 
     # A String specifying the repository key.

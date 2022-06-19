@@ -75,7 +75,6 @@ class Set:
         mdb.models[name].rootAssembly.instances[name].sets[name]
         mdb.models[name].rootAssembly.modelInstances[i].sets[name]
         mdb.models[name].rootAssembly.sets[name]
-
     """
 
     # A MeshElementArray object.

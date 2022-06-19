@@ -26,7 +26,6 @@ class SurfaceSection(Section):
     The corresponding analysis keywords are:
 
     - SURFACE SECTION
-
     """
 
     # A RebarLayers object specifying reinforcement properties.

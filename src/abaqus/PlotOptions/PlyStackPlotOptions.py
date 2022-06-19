@@ -13,7 +13,6 @@ class PlyStackPlotOptions:
     .. code-block:: python
 
         session.viewports[name].detailPlotOptions.plyStackPlotOptions
-
     """
 
     def setValues(

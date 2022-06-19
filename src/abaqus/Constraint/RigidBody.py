@@ -26,7 +26,6 @@ class RigidBody(Constraint):
     The corresponding analysis keywords are:
 
     - RIGID BODY
-
     """
 
     # A Boolean specifying whether the constraint is suppressed or not. The default value is

@@ -81,7 +81,6 @@ class DGContourOptions:
         session.viewports[name].layers[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.contourOptions
         session.viewports[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.contourOptions
         session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.contourOptions
-
     """
 
     # A SymbolicConstant specifying the contour rendering method. Possible values are

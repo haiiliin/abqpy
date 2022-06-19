@@ -27,7 +27,6 @@ class DeformationPlasticity:
     The corresponding analysis keywords are:
 
     - DEFORMATION PLASTICITY
-
     """
 
     def __init__(self, table: tuple, temperatureDependency: Boolean = OFF):

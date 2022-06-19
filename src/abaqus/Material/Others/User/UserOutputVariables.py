@@ -15,7 +15,6 @@ class UserOutputVariables:
     The corresponding analysis keywords are:
 
     - USER OUTPUT VARIABLES
-
     """
 
     def __init__(self, n: int = 0):

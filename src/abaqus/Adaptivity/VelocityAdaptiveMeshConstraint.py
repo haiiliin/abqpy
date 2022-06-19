@@ -33,7 +33,6 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
 
         import step
         mdb.models[name].adaptiveMeshConstraints[name]
-
     """
 
     # A String specifying the adaptive mesh constraint repository key.

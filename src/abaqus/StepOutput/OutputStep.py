@@ -19,7 +19,6 @@ class OutputStep(StepBase):
 
         import step
         mdb.models[name].steps[name]
-
     """
 
     def DiagnosticPrint(

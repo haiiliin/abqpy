@@ -214,7 +214,6 @@ class ViewportBase:
     .. code-block:: python
 
         session.viewports[name]
-
     """
 
     # A SymbolicConstant specifying the display mode of the viewport. Possible values

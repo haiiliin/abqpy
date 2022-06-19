@@ -30,7 +30,6 @@ class ShearRetention:
     The corresponding analysis keywords are:
 
     - SHEAR RETENTION
-
     """
 
     def __init__(

@@ -16,7 +16,6 @@ class JobMdb(MdbBase):
     .. code-block:: python
 
         mdb
-
     """
 
     def Job(

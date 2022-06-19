@@ -144,7 +144,6 @@ class SteadyStateModalStep(AnalysisStep):
             - MODAL DAMPING
             - STEADY STATE DYNAMICS
             - STEP
-
     """
 
     # A String specifying the repository key.

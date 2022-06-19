@@ -33,7 +33,6 @@ class BoltLoad(Load):
     - PRE-TENSION SECTION
             - NODE
             - NSET
-
     """
 
     # A String specifying the load repository key.

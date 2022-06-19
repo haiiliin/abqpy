@@ -71,7 +71,6 @@ class Coexecution:
 
     - HEADING
             - PREPRINT
-
     """
 
     # A String specifying the name of the new job. The name must be a valid Abaqus/CAE object

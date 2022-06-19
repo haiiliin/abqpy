@@ -29,7 +29,6 @@ class InteractionState:
 
         import interaction
         mdb.models[name].steps[name].interactionStates[name]
-
     """
 
     # A SymbolicConstant specifying the propagation state of the InteractionState object.

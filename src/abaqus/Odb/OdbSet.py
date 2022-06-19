@@ -44,7 +44,6 @@ class OdbSet:
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.elementSets[name]
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.nodeSets[name]
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.surfaces[name]
-
     """
 
     # A String specifying the name of the set and the repository key.

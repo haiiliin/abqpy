@@ -13,7 +13,6 @@ class OptimizationProcess:
 
         import job
         mdb.optimizationProcesses[name]
-
     """
 
     def __init__(

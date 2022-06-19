@@ -41,7 +41,6 @@ class ClayPlasticity:
     The corresponding analysis keywords are:
 
     - CLAY PLASTICITY
-
     """
 
     # A ClayHardening object.

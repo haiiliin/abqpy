@@ -40,7 +40,6 @@ class Mdb(AcisMdb, JobMdb):
     .. code-block:: python
 
         mdb
-
     """
 
     def Model(

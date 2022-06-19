@@ -18,7 +18,6 @@ class MeshDisplayOptions:
         session.viewports[name].layers[name].assemblyDisplay.meshOptions
         session.viewports[name].layers[name].partDisplay.meshOptions
         session.viewports[name].partDisplay.meshOptions
-
     """
 
     def setValues(

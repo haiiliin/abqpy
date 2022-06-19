@@ -33,7 +33,6 @@ class View:
         session.viewports[name].layers[name].view
         session.viewports[name].view
         session.views[name]
-
     """
 
     # A Float specifying the width in viewport millimeters of the bounding rectangle around

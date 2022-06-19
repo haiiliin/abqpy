@@ -27,7 +27,6 @@ class NonstructuralMass(Inertia):
     The corresponding analysis keywords are:
 
     - NONSTRUCTURAL MASS
-
     """
 
     # A Boolean specifying whether the inertia is suppressed or not. The default value is OFF.

@@ -29,7 +29,6 @@ class FluidLeakoff:
     The corresponding analysis keywords are:
 
     - FLUID LEAKOFF
-
     """
 
     def __init__(

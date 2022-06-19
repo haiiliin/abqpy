@@ -20,7 +20,6 @@ class IncidentWave(Interaction):
     The corresponding analysis keywords are:
 
     - INCIDENT WAVE INTERACTION
-
     """
 
     def __init__(

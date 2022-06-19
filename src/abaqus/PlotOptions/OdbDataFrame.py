@@ -12,7 +12,6 @@ class OdbDataFrame:
 
         import visualization
         session.odbData[name].steps[i].frames[i]
-
     """
 
     def setValues(self, activateFrame: Boolean, update: Boolean = OFF):

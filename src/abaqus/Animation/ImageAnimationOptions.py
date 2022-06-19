@@ -14,7 +14,6 @@ class ImageAnimationOptions:
 
         import animation
         session.imageAnimationOptions
-
     """
 
     def setValues(

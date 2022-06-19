@@ -19,7 +19,6 @@ class AssemblyModel(ModelBase):
     .. code-block:: python
 
         mdb.models[name]
-
     """
 
     def Instance(self, name: str, objectToCopy: PartInstance):

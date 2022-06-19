@@ -86,7 +86,6 @@ class ProbeOptions:
         import visualization
         session.defaultProbeOptions
         session.probeOptions
-
     """
 
     # A SymbolicConstant specifying the entity being probed when **probeObject**="ODB". Possible

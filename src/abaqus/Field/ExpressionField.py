@@ -14,7 +14,6 @@ class ExpressionField(AnalyticalField):
 
         import fields
         mdb.models[name].analyticalFields[name]
-
     """
 
     def __init__(

@@ -27,7 +27,6 @@ class SoretEffect:
     The corresponding analysis keywords are:
 
     - KAPPA
-
     """
 
     def __init__(

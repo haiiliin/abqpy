@@ -13,7 +13,6 @@ class GeometricRestrictionDisplayOptions:
     This object can be accessed by:
         session.viewports[name].assemblyDisplay.geometricRestrictionOptions
         session.viewports[name].layers[name].assemblyDisplay.geometricRestrictionOptions
-
     """
 
     def setValues(

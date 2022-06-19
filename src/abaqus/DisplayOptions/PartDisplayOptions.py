@@ -47,7 +47,6 @@ class PartDisplayOptions:
         session.viewports[name].layers[name].partDisplay
         import part
         session.viewports[name].partDisplay
-
     """
 
     # A Boolean specifying whether engineering features are shown. The default value is OFF.

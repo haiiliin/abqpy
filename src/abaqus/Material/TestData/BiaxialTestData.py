@@ -22,7 +22,6 @@ class BiaxialTestData:
     The corresponding analysis keywords are:
 
     - BIAXIAL TEST DATA
-
     """
 
     def __init__(

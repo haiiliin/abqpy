@@ -47,7 +47,6 @@ class CapCreepConsolidation:
     The corresponding analysis keywords are:
 
     - CAP CREEP
-
     """
 
     def __init__(

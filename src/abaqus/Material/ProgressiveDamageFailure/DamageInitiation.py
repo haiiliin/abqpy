@@ -154,7 +154,6 @@ class DamageInitiation:
     The corresponding analysis keywords are:
 
     - DAMAGE INITIATION
-
     """
 
     # A SymbolicConstant specifying the damage initiation definition. Possible values are FLD

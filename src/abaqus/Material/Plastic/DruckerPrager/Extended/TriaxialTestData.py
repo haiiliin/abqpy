@@ -20,7 +20,6 @@ class TriaxialTestData:
     The corresponding analysis keywords are:
 
     - TRIAXIAL TEST DATA
-
     """
 
     def __init__(

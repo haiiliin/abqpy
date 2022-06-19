@@ -24,7 +24,6 @@ class FluidCavityPressure(PredefinedField):
     The corresponding analysis keywords are:
 
     - INITIAL CONDITIONS
-
     """
 
     # A Region object on which the **fluidCavity** interaction is specified.

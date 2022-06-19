@@ -20,7 +20,6 @@ class IgnoredVertex:
         import assembly
         mdb.models[name].rootAssembly.allInstances[name].ignoredVertices[i]
         mdb.models[name].rootAssembly.instances[name].ignoredVertices[i]
-
     """
 
     # An Int specifying the index of the IgnoredVertex in the IgnoredVertexArray.

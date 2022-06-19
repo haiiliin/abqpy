@@ -28,7 +28,6 @@ class IncidentWaveState(InteractionState):
     The corresponding analysis keywords are:
 
     - INCIDENT WAVE INTERACTION
-
     """
 
     # A SymbolicConstant specifying the propagation state of the InteractionState object.

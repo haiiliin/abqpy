@@ -17,7 +17,6 @@ class CompositeDampingComponent:
 
         import step
         mdb.models[name].steps[name].compositeDamping.components[i]
-
     """
 
     # An Int specifying the mode number of the lowest mode of a range.

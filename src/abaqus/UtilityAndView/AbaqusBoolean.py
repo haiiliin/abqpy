@@ -21,7 +21,6 @@ class AbaqusBoolean:
 
         from symbolicConstants import *
         from abaqusConstants import *
-
     """
 
     def __init__(self, value: int):

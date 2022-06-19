@@ -27,7 +27,6 @@ class Trs:
     The corresponding analysis keywords are:
 
     - TRS
-
     """
 
     def __init__(self, definition: SymbolicConstant = WLF, table: tuple = ()):

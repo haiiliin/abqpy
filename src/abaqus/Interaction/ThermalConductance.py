@@ -35,7 +35,6 @@ class ThermalConductance:
     The corresponding analysis keywords are:
 
     - GAP CONDUCTANCE
-
     """
 
     def __init__(

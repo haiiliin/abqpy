@@ -23,7 +23,6 @@ class DetonationPoint:
     The corresponding analysis keywords are:
 
     - DETONATION POINT
-
     """
 
     def __init__(self, table: tuple):

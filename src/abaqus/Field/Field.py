@@ -17,7 +17,6 @@ class Field:
     .. code-block:: python
 
         import fields
-
     """
 
     # A String specifying the repository key.

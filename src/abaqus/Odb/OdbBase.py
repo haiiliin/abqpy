@@ -56,7 +56,6 @@ class OdbBase:
 
         import odbAccess
         session.odbs[name]
-
     """
 
     # A Boolean specifying whether the output database was opened with read-only access.

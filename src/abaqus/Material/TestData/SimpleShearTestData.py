@@ -21,7 +21,6 @@ class SimpleShearTestData:
     The corresponding analysis keywords are:
 
     - SIMPLE SHEAR TEST DATA
-
     """
 
     def __init__(self, table: tuple):

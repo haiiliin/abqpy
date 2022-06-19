@@ -155,7 +155,6 @@ class CommonOptions(DGCommonOptions):
         session.viewports[name].odbDisplay.commonOptions
         session.viewports[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.commonOptions
         session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.commonOptions
-
     """
 
     # A SymbolicConstant specifying the deformation scale factor mode. Possible values are

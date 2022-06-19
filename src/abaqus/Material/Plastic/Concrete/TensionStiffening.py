@@ -35,7 +35,6 @@ class TensionStiffening:
     The corresponding analysis keywords are:
 
     - TENSION STIFFENING
-
     """
 
     def __init__(

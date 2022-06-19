@@ -48,7 +48,6 @@ class SurfaceHeatFluxState(LoadState):
     The corresponding analysis keywords are:
 
     - DSFLUX
-
     """
 
     # A Float specifying the surface heat flux magnitude.

@@ -21,7 +21,6 @@ class ConnectorLock(ConnectorBehaviorOption):
     The corresponding analysis keywords are:
 
     - CONNECTOR LOCK
-
     """
 
     def __init__(

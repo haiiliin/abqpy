@@ -24,7 +24,6 @@ class SteadyStateDirectFrequency:
 
         import step
         mdb.models[name].steps[name].frequencyRange[i]
-
     """
 
     # A Float specifying the lower limit of frequency range or a single frequency, in

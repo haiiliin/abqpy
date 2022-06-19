@@ -181,7 +181,6 @@ class SoilsStep(AnalysisStep):
 
     - SOILS
             - STEP
-
     """
 
     # A String specifying the repository key.

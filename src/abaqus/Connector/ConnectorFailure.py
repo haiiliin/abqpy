@@ -21,7 +21,6 @@ class ConnectorFailure(ConnectorBehaviorOption):
     The corresponding analysis keywords are:
 
     - CONNECTOR FAILURE
-
     """
 
     def __init__(

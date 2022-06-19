@@ -27,7 +27,6 @@ class PoreFluidExpansion:
     The corresponding analysis keywords are:
 
     - EXPANSION
-
     """
 
     def __init__(

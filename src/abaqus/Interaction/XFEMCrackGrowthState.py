@@ -43,7 +43,6 @@ class XFEMCrackGrowthState(InteractionState):
     The corresponding analysis keywords are:
 
     - ENRICHMENT ACTIVATION
-
     """
 
     # A Boolean specifying whether the crack is allowed to grow (propagate) during this

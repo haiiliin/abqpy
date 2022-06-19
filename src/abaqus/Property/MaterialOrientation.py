@@ -32,7 +32,6 @@ class MaterialOrientation:
         session.odbs[name].parts[name].materialOrientations[i]
         session.odbs[name].rootAssembly.instances[name].materialOrientations[i]
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.materialOrientations[i]
-
     """
 
     # A SymbolicConstant specifying the method used to describe the additional rotation when a

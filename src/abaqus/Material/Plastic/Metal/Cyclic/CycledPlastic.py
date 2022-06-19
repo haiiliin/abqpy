@@ -25,7 +25,6 @@ class CycledPlastic:
     The corresponding analysis keywords are:
 
     - CYCLED PLASTIC
-
     """
 
     def __init__(self, table: tuple, temperatureDependency: Boolean = OFF):

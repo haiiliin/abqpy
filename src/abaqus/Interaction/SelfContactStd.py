@@ -28,7 +28,6 @@ class SelfContactStd(Interaction):
 
         import interaction
         mdb.models[name].interactions[name]
-
     """
 
     # A SymbolicConstant specifying the choice of contact tracking algorithm. The STATE

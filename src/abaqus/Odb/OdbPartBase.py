@@ -52,7 +52,6 @@ class OdbPartBase:
 
         import odbAccess
         session.odbs[name].parts[name]
-
     """
 
     # An OdbMeshNodeArray object.

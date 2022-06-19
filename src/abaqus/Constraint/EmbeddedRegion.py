@@ -26,7 +26,6 @@ class EmbeddedRegion(Constraint):
     The corresponding analysis keywords are:
 
     - EMBEDDED ELEMENT
-
     """
 
     # A Boolean specifying whether the constraint is suppressed or not. The default value is

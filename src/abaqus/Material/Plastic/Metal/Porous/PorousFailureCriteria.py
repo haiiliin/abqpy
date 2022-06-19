@@ -16,7 +16,6 @@ class PorousFailureCriteria:
     The corresponding analysis keywords are:
 
     - POROUS FAILURE CRITERIA
-
     """
 
     def __init__(self, fraction: float = 1, criticalFraction: float = 1):

@@ -13,7 +13,6 @@ class TiffOptions:
     .. code-block:: python
 
         session.tiffOptions
-
     """
 
     def setValues(self, imageSize: SymbolicConstant = SIZE_ON_SCREEN):

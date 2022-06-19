@@ -56,7 +56,6 @@ class ContactProperty(InteractionProperty):
     The corresponding analysis keywords are:
 
     - SURFACE INTERACTION
-
     """
 
     # A ContactTangentialBehavior object.

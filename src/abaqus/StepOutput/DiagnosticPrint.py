@@ -17,7 +17,6 @@ class DiagnosticPrint:
     The corresponding analysis keywords are:
 
     - DIAGNOSTICS
-
     """
 
     def __init__(

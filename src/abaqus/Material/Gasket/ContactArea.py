@@ -29,7 +29,6 @@ class ContactArea:
     The corresponding analysis keywords are:
 
     - GASKET CONTACT AREA
-
     """
 
     def __init__(

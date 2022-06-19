@@ -19,7 +19,6 @@ class InitialState(PredefinedField):
     The corresponding analysis keywords are:
 
     - INSTANCE
-
     """
 
     def __init__(

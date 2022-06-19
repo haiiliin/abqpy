@@ -78,7 +78,6 @@ class SubmodelBCState(BoundaryConditionState):
 
     - SUBMODEL
             - BOUNDARY
-
     """
 
     # A SymbolicConstant specifying the propagation state of the **dof** member. Possible values

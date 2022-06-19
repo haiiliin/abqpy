@@ -50,7 +50,6 @@ class ElectricPotentialBCState(BoundaryConditionState):
     The corresponding analysis keywords are:
 
     - BOUNDARY
-
     """
 
     # A Float specifying the electrical potential magnitude.

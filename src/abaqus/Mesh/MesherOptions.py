@@ -15,7 +15,6 @@ class MesherOptions:
     .. code-block:: python
 
         session.defaultMesherOptions
-
     """
 
     def setValues(

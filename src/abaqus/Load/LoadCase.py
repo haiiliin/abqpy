@@ -20,7 +20,6 @@ class LoadCase:
 
         import step
         mdb.models[name].steps[name].loadCases[name]
-
     """
 
     # A Boolean specifying whether the load case is suppressed or not. The default value is

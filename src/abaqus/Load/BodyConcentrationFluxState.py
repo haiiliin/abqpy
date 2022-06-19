@@ -48,7 +48,6 @@ class BodyConcentrationFluxState(LoadState):
     The corresponding analysis keywords are:
 
     - CFLUX
-
     """
 
     # A Float specifying the body concentration flux magnitude.

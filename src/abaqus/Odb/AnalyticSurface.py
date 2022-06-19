@@ -33,7 +33,6 @@ class AnalyticSurface:
         session.odbs[name].parts[name].analyticSurface
         session.odbs[name].rootAssembly.instances[name].analyticSurface
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.analyticSurface
-
     """
 
     # A String specifying the name of the analytic surface.

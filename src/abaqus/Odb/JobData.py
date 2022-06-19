@@ -34,7 +34,6 @@ class JobData:
 
         import odbAccess
         session.odbs[name].jobData
-
     """
 
     # A String specifying the name of the job.

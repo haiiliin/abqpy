@@ -26,7 +26,6 @@ class MdbData:
 
         import visualization
         session.mdbData[name]
-
     """
 
     # A tuple of (String, Float) tuples specifying the stepName and the stepPeriod.

@@ -13,7 +13,6 @@ class Radiation:
     The corresponding analysis keywords are:
 
     - GAP RADIATION
-
     """
 
     def __init__(self, mainEmissivity: float, secondaryEmissivity: float, table: tuple):

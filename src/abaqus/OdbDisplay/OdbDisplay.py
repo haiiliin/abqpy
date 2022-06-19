@@ -213,7 +213,6 @@ class OdbDisplay:
         session.viewports[name].layers[name].odbDisplay
         import visualization
         session.viewports[name].odbDisplay
-
     """
 
     # A String specifying the name of the output database associated with the OdbDisplay

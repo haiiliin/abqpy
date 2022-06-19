@@ -27,7 +27,6 @@ class GasketMembraneElastic:
     The corresponding analysis keywords are:
 
     - GASKET ELASTICITY
-
     """
 
     def __init__(

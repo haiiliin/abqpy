@@ -125,7 +125,6 @@ class SubspaceDynamicsStep(AnalysisStep):
 
     - DYNAMIC
             - STEP
-
     """
 
     # A String specifying the repository key.

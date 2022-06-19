@@ -11,7 +11,6 @@ class ContactStabilization:
 
         import interaction
         mdb.models[name].contactStabilizations[name]
-
     """
 
     pass

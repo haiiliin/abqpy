@@ -53,7 +53,6 @@ class RadiationToAmbientState(InteractionState):
     The corresponding analysis keywords are:
 
     - SRADIATE
-
     """
 
     # A Float specifying the ambient temperature.

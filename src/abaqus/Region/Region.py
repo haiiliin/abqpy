@@ -54,7 +54,6 @@ class Region:
     .. code-block:: python
 
         import regionToolset
-
     """
 
     @typing.overload

@@ -5,7 +5,6 @@ class ModelDot:
     Notes
     -----
     This object can be accessed by:
-
     """
 
     pass

@@ -19,7 +19,6 @@ class Velocity(PredefinedField):
     The corresponding analysis keywords are:
 
     - INITIAL CONDITIONS
-
     """
 
     def __init__(

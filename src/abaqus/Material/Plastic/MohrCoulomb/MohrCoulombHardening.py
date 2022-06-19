@@ -28,7 +28,6 @@ class MohrCoulombHardening:
     The corresponding analysis keywords are:
 
     - MOHR COULOMB HARDENING
-
     """
 
     def __init__(

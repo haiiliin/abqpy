@@ -17,7 +17,6 @@ class StructuralDamping:
 
         import step
         mdb.models[name].steps[name].structuralDamping
-
     """
 
     # A StructuralDampingComponentArray object.

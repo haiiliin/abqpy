@@ -47,7 +47,6 @@ class CoriolisForceState(LoadState):
     The corresponding analysis keywords are:
 
     - DLOAD
-
     """
 
     # A Float specifying the load magnitude.

@@ -22,7 +22,6 @@ class Constraint:
 
         import interaction
         mdb.models[name].constraints[name]
-
     """
 
     # A String specifying the constraint repository key.

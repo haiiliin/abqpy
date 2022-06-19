@@ -19,7 +19,6 @@ class OdbRigidBody:
         session.odbs[name].rootAssembly.instances[name].rigidBodies[i]
         session.odbs[name].rootAssembly.rigidBodies[i]
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.rigidBodies[i]
-
     """
 
     def __init__(

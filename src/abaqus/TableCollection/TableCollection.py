@@ -27,7 +27,6 @@ class TableCollection:
     The corresponding analysis keywords are:
 
     - *TABLE COLLECTION
-
     """
 
     # A repository of the PropertyTable object.

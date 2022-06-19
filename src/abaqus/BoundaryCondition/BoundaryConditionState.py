@@ -38,7 +38,6 @@ class BoundaryConditionState:
 
         import load
         mdb.models[name].steps[name].boundaryConditionStates[name]
-
     """
 
     # A SymbolicConstant specifying the propagation state of the amplitude reference. Possible

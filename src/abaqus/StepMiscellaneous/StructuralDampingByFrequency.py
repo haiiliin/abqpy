@@ -19,7 +19,6 @@ class StructuralDampingByFrequency:
 
         import step
         mdb.models[name].steps[name].structuralDampingByFrequency
-
     """
 
     # A StructuralDampingByFrequencyComponentArray object.

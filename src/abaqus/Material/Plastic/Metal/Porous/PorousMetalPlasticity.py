@@ -30,7 +30,6 @@ class PorousMetalPlasticity:
     The corresponding analysis keywords are:
 
     - POROUS METAL PLASTICITY
-
     """
 
     # A PorousFailureCriteria object.

@@ -20,7 +20,6 @@ class ConnectorStop(ConnectorBehaviorOption):
     The corresponding analysis keywords are:
 
     - CONNECTOR STOP
-
     """
 
     def __init__(

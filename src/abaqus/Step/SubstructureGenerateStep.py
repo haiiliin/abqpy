@@ -153,7 +153,6 @@ class SubstructureGenerateStep(AnalysisStep):
 
     - SUBSTRUCTURE GENERATE
             - STEP
-
     """
 
     # A String specifying the repository key.

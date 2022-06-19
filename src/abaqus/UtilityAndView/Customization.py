@@ -37,6 +37,5 @@ def journalMethodCall(objectPath: str, methodName: str, args: tuple, kargs: str)
         A sequence specifying the positional arguments to be written to the journal file.
     kargs
         A Python dict object specifying the keyword arguments to be written to the journal file.
-
     """
     pass

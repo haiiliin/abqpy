@@ -26,7 +26,6 @@ class Solubility:
     The corresponding analysis keywords are:
 
     - SOLUBILITY
-
     """
 
     def __init__(

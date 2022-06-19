@@ -26,7 +26,6 @@ class ShellSolidCoupling(Constraint):
     The corresponding analysis keywords are:
 
     - SHELL TO SOLID COUPLING
-
     """
 
     # A Boolean specifying whether the constraint is suppressed or not. The default value is

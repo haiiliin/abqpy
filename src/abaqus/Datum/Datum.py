@@ -16,7 +16,6 @@ class Datum:
         mdb.models[name].rootAssembly.datums[i]
         mdb.models[name].rootAssembly.instances[name].datums[i]
         mdb.models[name].rootAssembly.modelInstances[i].datums[i]
-
     """
 
     pass

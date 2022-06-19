@@ -19,7 +19,6 @@ class Feature(BaseFeature):
     .. code-block:: python
 
         import part
-
     """
 
     def AutoRepair(self):

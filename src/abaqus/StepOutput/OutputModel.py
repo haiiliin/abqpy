@@ -19,7 +19,6 @@ class OutputModel(ModelBase):
     .. code-block:: python
 
         mdb.models[name]
-
     """
 
     def FieldOutputRequest(

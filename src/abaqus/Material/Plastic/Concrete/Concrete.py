@@ -30,7 +30,6 @@ class Concrete:
     The corresponding analysis keywords are:
 
     - CONCRETE
-
     """
 
     # A FailureRatios object.

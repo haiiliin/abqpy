@@ -13,7 +13,6 @@ class PrintOptions:
     .. code-block:: python
 
         session.printOptions
-
     """
 
     def setValues(

@@ -82,7 +82,6 @@ class SurfaceToSurfaceStdState(InteractionState):
     - CONTACT CONTROLS
             - CONTACT PAIR
             - CONTACT INTERFERENCE
-
     """
 
     # A SymbolicConstant specifying the propagation state of the **interactionProperty** member.

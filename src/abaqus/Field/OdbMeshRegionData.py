@@ -113,7 +113,6 @@ class OdbMeshRegionData:
 
         import field
         mdb.models[name].analyticalFields[name].odbMeshRegionData
-
     """
 
     # An Int specifying the step index. Possible values are 0 ≤≤ **stepIndex** ≤≤ (*numSteps* −

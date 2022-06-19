@@ -68,7 +68,6 @@ class DataObject:
     Notes
     -----
     This object can be accessed by:
-
     """
 
     # A SymbolicConstant specifying the phase of the analysis. Possible values are

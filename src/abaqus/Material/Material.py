@@ -227,7 +227,6 @@ class Material(MaterialBase):
     The corresponding analysis keywords are:
 
     - MATERIAL
-
     """
 
     def AcousticMedium(

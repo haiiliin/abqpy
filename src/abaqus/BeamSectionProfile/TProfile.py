@@ -2,7 +2,6 @@ from .Profile import Profile
 
 
 class TProfile(Profile):
-
     """The TProfile object defines the properties of a T profile.
     The TProfile object is derived from the Profile object.
 
@@ -20,7 +19,6 @@ class TProfile(Profile):
     The corresponding analysis keywords are:
 
     - BEAM SECTION
-
     """
 
     def __init__(self, name: str, b: float, h: float, l: float, tf: float, tw: float):

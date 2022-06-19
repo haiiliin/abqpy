@@ -11,7 +11,6 @@ class OdbModelFieldVarList:
         import visualization
         session.viewports[name].layers[name].odbDisplay.modelVariableList
         session.viewports[name].odbDisplay.modelVariableList
-
     """
 
     pass

@@ -13,7 +13,6 @@ class AdaptiveMeshDomain:
 
         import step
         mdb.models[name].steps[name].adaptiveMeshDomains[name]
-
     """
 
     def __init__(

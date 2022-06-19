@@ -20,7 +20,6 @@ class DecayAmplitude(Amplitude):
     The corresponding analysis keywords are:
 
     - AMPLITUDE
-
     """
 
     def __init__(

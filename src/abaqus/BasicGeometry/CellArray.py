@@ -25,7 +25,6 @@ class CellArray:
         mdb.models[name].rootAssembly.instances[name].sets[name].cells
         mdb.models[name].rootAssembly.modelInstances[i].sets[name].cells
         mdb.models[name].rootAssembly.sets[name].cells
-
     """
 
     def __init__(self, cells: list[Cell]):

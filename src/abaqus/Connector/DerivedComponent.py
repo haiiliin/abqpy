@@ -32,7 +32,6 @@ class DerivedComponent:
     The corresponding analysis keywords are:
 
     - CONNECTOR DERIVED COMPONENT
-
     """
 
     # A CDCTermArray object.

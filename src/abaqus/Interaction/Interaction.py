@@ -23,7 +23,6 @@ class Interaction:
 
         import interaction
         mdb.models[name].interactions[name]
-
     """
 
     # A String specifying the repository key.

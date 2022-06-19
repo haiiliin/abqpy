@@ -51,7 +51,6 @@ class Diffusivity:
     The corresponding analysis keywords are:
 
     - DIFFUSIVITY
-
     """
 
     # A PressureEffect object.

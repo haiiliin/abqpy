@@ -57,7 +57,6 @@ class LightOptions:
 
         session.defaultLightOptions
         session.viewports[name].lightOptions
-
     """
 
     # A SymbolicConstant specifying the shading technique that should be used to fill facets

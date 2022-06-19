@@ -26,7 +26,6 @@ class SpecificHeat:
     The corresponding analysis keywords are:
 
     - SPECIFIC HEAT
-
     """
 
     def __init__(

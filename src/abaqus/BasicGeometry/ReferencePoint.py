@@ -33,7 +33,6 @@ class ReferencePoint:
         mdb.models[name].rootAssembly.modelInstances[i].sets[name].referencePoints[i]
         mdb.models[name].rootAssembly.referencePoints[i]
         mdb.models[name].rootAssembly.sets[name].referencePoints[i]
-
     """
 
     def __init__(

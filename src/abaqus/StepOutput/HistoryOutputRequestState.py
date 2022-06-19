@@ -68,7 +68,6 @@ class HistoryOutputRequestState:
 
         import step
         mdb.models[name].steps[name].historyOutputRequestState[name]
-
     """
 
     # A SymbolicConstant specifying the propagation state of the history output request

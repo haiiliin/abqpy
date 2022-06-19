@@ -19,7 +19,6 @@ class PropertyTableData:
 
     - PROPERTY TABLE TYPE
             - PROPERTY TABLE
-
     """
 
     def __init__(

@@ -46,7 +46,6 @@ class Conductivity:
     The corresponding analysis keywords are:
 
     - CONDUCTIVITY
-
     """
 
     def __init__(

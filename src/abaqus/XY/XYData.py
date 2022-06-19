@@ -51,7 +51,6 @@ class XYData:
         session.xyPlots[name].charts[name].axes2[i].axisData.curves[i].data
         session.xyPlots[name].charts[name].curves[name].data
         session.xyPlots[name].curves[name].data
-
     """
 
     # A SymbolicConstant specifying the source type of the XYData object. Possible values are

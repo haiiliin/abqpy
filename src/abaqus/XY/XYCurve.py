@@ -52,7 +52,6 @@ class XYCurve:
         session.xyPlots[name].charts[name].axes2[i].axisData.curves[i]
         session.xyPlots[name].charts[name].curves[name]
         session.xyPlots[name].curves[name]
-
     """
 
     # A String specifying the repository key.

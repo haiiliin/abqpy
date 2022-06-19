@@ -49,7 +49,6 @@ class ContactDamping:
     The corresponding analysis keywords are:
 
     - CONTACT DAMPING
-
     """
 
     # A SymbolicConstant specifying the method used to define the damping. Possible values are

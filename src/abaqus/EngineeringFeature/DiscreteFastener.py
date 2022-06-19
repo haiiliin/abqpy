@@ -29,7 +29,6 @@ class DiscreteFastener(Fastener):
     The corresponding analysis keywords are:
 
     - COUPLING
-
     """
 
     # A Boolean specifying whether the fastener is suppressed or not. The default value is

@@ -49,7 +49,6 @@ class SubstructureLoadState(LoadState):
     The corresponding analysis keywords are:
 
     - SLOAD
-
     """
 
     # A tuple of strings specifying the names of the load cases to be activated.

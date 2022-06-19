@@ -47,7 +47,6 @@ class BodyCurrentState(LoadState):
     The corresponding analysis keywords are:
 
     - DECURRENT
-
     """
 
     # A Float specifying the load magnitude.

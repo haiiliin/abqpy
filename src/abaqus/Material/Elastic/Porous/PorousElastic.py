@@ -37,7 +37,6 @@ class PorousElastic:
     The corresponding analysis keywords are:
 
     - POROUS ELASTIC
-
     """
 
     def __init__(

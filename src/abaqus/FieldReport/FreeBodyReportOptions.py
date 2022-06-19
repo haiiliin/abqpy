@@ -16,7 +16,6 @@ class FreeBodyReportOptions:
         import visualization
         session.defaultFreeBodyReportOptions
         session.freeBodyReportOptions
-
     """
 
     def setValues(

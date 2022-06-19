@@ -38,7 +38,6 @@ class ConnectorFriction(ConnectorBehaviorOption):
     The corresponding analysis keywords are:
 
     - CONNECTOR FRICTION
-
     """
 
     # A TangentialBehavior object.

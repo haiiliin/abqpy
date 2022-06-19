@@ -36,7 +36,6 @@ class CompositeLayup:
     - SHELL SECTION
             - SHELL GENERAL SECTION
             - SOLID SECTION
-
     """
 
     # A GeometryShellSection object.

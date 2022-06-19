@@ -18,7 +18,6 @@ class OdbJobTime:
 
         import visualization
         session.odbData[name].diagnosticData.jobTime
-
     """
 
     # A float specifying the systemtime for the analysis. This attribute is read-only.

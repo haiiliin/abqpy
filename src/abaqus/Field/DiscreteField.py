@@ -18,7 +18,6 @@ class DiscreteField(Field):
 
         import fields
         mdb.models[name].discreteFields[name]
-
     """
 
     def __init__(

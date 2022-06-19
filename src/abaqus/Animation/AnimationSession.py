@@ -16,7 +16,6 @@ class AnimationSession(SessionBase):
     .. code-block:: python
 
         import animation
-
     """
 
     def writeImageAnimation(

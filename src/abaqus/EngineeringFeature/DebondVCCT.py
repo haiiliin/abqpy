@@ -26,7 +26,6 @@ class DebondVCCT(Crack):
     The corresponding analysis keywords are:
 
     - DEBOND
-
     """
 
     # A Boolean specifying whether the crack is suppressed or not. The default value is OFF.

@@ -15,7 +15,6 @@ class SizingPointSymmetry(GeometricRestriction):
 
         import optimization
         mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
-
     """
 
     def __init__(

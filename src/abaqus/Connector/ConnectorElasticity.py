@@ -62,7 +62,6 @@ class ConnectorElasticity(ConnectorBehaviorOption):
     The corresponding analysis keywords are:
 
     - CONNECTOR ELASTICITY
-
     """
 
     # A ConnectorOptions object specifying the ConnectorOptions used to define tabular options

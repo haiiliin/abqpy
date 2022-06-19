@@ -25,7 +25,6 @@ class Text(Annotation):
         mdb.annotations[name]
         session.odbs[name].userData.annotations[name]
         session.viewports[name].annotationsToPlot[i]
-
     """
 
     # A Float specifying the width in millimeters of the Text object.

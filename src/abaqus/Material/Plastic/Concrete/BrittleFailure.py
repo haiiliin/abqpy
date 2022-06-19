@@ -33,7 +33,6 @@ class BrittleFailure:
     The corresponding analysis keywords are:
 
     - BRITTLE FAILURE
-
     """
 
     def __init__(

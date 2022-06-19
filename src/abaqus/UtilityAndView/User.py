@@ -35,7 +35,6 @@ def getInput(prompt: str, default: str = ""):
     Returns
     -------
         A String or None if the user clicks Cancel.
-
     """
     pass
 
@@ -78,7 +77,6 @@ def getInput(fields: tuple, label: str = "", dialogTitle: str = ""):
         A sequence of Strings representing the data in each of the text fields in the dialog
         box. If the user clicks the Cancel button, the method returns a sequence of None
         objects.
-
     """
     pass
 
@@ -117,6 +115,5 @@ def getWarningReply(message: str, buttons: str):
     Returns
     -------
         The button that the user clicks.
-
     """
     pass

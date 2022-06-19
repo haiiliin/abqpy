@@ -30,7 +30,6 @@ class OdbNumericalProblemSummary:
 
         import visualization
         session.odbData[name].diagnosticData.numericalProblemSummary
-
     """
 
     # A boolean specifying whether negative eigenvalues converged during the analysis. This

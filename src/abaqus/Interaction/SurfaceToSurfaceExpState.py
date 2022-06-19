@@ -50,7 +50,6 @@ class SurfaceToSurfaceExpState(InteractionState):
 
     - CONTACT CONTROLS
             - CONTACT PAIR
-
     """
 
     # A SymbolicConstant specifying the propagation state of the **interactionProperty** member.

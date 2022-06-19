@@ -18,7 +18,6 @@ class AcousticMedium:
     The corresponding analysis keywords are:
 
     - ACOUSTIC MEDIUM
-
     """
 
     def __init__(

@@ -18,7 +18,6 @@ class OptimizationTaskModel(ModelBase):
     .. code-block:: python
 
         mdb.models[name]
-
     """
 
     def BeadTask(

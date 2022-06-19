@@ -42,7 +42,6 @@ class BeamSection(Section):
             - DAMPING
             - SHEAR CENTER
             - SECTION POINTS
-
     """
 
     # A TransverseShearBeam object specifying the transverse shear stiffness properties.

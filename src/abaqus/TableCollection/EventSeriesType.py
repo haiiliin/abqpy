@@ -13,7 +13,6 @@ class EventSeriesType:
 
     - EVENT SERIES TYPE
             - EVENT SERIES
-
     """
 
     def __init__(self, name: str, createStepName: str, fields: str = ""):

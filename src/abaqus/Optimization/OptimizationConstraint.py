@@ -13,7 +13,6 @@ class OptimizationConstraint:
 
         import optimization
         mdb.models[name].optimizationTasks[name].optimizationConstraints[name]
-
     """
 
     def __init__(

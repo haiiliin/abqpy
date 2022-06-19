@@ -27,7 +27,6 @@ class NormalBehavior:
     The corresponding analysis keywords are:
 
     - SURFACE BEHAVIOR
-
     """
 
     def __init__(

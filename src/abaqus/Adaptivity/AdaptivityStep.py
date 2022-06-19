@@ -23,7 +23,6 @@ class AdaptivityStep(StepBase):
 
         import step
         mdb.models[name].steps[name]
-
     """
 
     def AdaptiveMeshConstraintState(

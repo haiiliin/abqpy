@@ -22,7 +22,6 @@ class OptionArg:
         session.viewports[name].odbDisplay.viewCutOptions.aboveOptions
         session.viewports[name].odbDisplay.viewCutOptions.belowOptions
         session.viewports[name].odbDisplay.viewCutOptions.onOptions
-
     """
 
     def __init__(

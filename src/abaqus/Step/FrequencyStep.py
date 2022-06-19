@@ -196,7 +196,6 @@ class FrequencyStep(AnalysisStep):
 
     - FREQUENCY
             - STEP
-
     """
 
     # A String specifying the repository key.

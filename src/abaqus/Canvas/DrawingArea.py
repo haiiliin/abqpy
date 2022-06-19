@@ -19,7 +19,6 @@ class DrawingArea:
     .. code-block::
 
         session.drawingArea
-
     """
 
     # A Float specifying the width in millimeters.

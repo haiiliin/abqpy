@@ -30,7 +30,6 @@ class EngineeringFeatureBase:
         mdb.models[name].parts[name].engineeringFeatures
         import assembly
         mdb.models[name].rootAssembly.engineeringFeatures
-
     """
 
     # A repository of Inertia objects.

@@ -19,7 +19,6 @@ class CavityRadiationProp(ContactProperty):
     The corresponding analysis keywords are:
 
     - EMISSIVITY
-
     """
 
     def __init__(

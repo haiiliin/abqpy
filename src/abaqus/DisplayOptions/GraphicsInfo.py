@@ -45,7 +45,6 @@ class GraphicsInfo:
     .. code-block::
 
         session.graphicsInfo
-
     """
 
     # A sequence of the type (Int, Int, String) specifying the three components of the OpenGL

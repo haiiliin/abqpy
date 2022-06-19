@@ -35,7 +35,6 @@ class LoadState:
 
         import load
         mdb.models[name].steps[name].loadStates[name]
-
     """
 
     # A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible

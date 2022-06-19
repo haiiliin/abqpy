@@ -42,7 +42,6 @@ class Filter:
         mdb.models[name].filters[name]
         import odbFilter
         session.odbs[name].filters[name]
-
     """
 
     # A String specifying the repository key. This name ANTIALIASING is reserved for filters

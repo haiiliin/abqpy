@@ -16,7 +16,6 @@ class InelasticHeatFraction:
     The corresponding analysis keywords are:
 
     - INELASTIC HEAT FRACTION
-
     """
 
     def __init__(self, fraction: float = 0):

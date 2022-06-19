@@ -40,7 +40,6 @@ class Cell:
         mdb.models[name].rootAssembly.instances[name].sets[name].cells[i]
         mdb.models[name].rootAssembly.modelInstances[i].sets[name].cells[i]
         mdb.models[name].rootAssembly.sets[name].cells[i]
-
     """
 
     # An Int specifying the index of the cell in the CellArray.

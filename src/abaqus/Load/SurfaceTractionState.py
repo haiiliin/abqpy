@@ -49,7 +49,6 @@ class SurfaceTractionState(LoadState):
 
     - DSLOAD
             - DLOAD
-
     """
 
     # A Float or a Complex specifying the load magnitude.

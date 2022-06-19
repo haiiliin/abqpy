@@ -57,7 +57,6 @@ class GravityState(LoadState):
     The corresponding analysis keywords are:
 
     - DLOAD
-
     """
 
     # A Float or a Complex specifying the load component in the 1-direction.

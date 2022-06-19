@@ -35,7 +35,6 @@ class JobFromInputFile(Job):
 
         import job
         mdb.jobs[name]
-
     """
 
     # A Boolean specifying whether to retrieve the recommended memory settings from the last

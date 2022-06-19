@@ -23,7 +23,6 @@ class GapHeatGeneration:
     The corresponding analysis keywords are:
 
     - GAP HEAT GENERATION
-
     """
 
     # A Float specifying the fraction of dissipated energy caused by friction or electric

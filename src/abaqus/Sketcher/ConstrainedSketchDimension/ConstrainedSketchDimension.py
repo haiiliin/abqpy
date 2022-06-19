@@ -9,7 +9,6 @@ class ConstrainedSketchDimension:
 
         import sketch
         mdb.models[name].sketches[name].dimensions[i]
-
     """
 
     pass

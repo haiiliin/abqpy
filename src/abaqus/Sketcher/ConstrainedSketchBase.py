@@ -50,7 +50,6 @@ class ConstrainedSketchBase:
 
         import sketch
         mdb.models[name].sketches[name]
-
     """
 
     # A repository of ConstrainedSketchConstraint objects.

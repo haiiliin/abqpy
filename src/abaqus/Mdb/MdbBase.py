@@ -44,7 +44,6 @@ class MdbBase:
     .. code-block:: python
 
         mdb
-
     """
 
     # An Int specifying the release number of the Mdb object in memory.

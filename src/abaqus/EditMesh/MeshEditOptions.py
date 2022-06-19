@@ -14,7 +14,6 @@ class MeshEditOptions:
     .. code-block::
 
         mdb.meshEditOptions
-
     """
 
     def setValues(

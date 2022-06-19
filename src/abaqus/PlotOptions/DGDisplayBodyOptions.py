@@ -60,7 +60,6 @@ class DGDisplayBodyOptions:
         session.viewports[name].layers[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.displayBodyOptions
         session.viewports[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.displayBodyOptions
         session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.displayBodyOptions
-
     """
 
     # A SymbolicConstant specifying which edges to plot. Possible values are ALL, EXTERIOR,

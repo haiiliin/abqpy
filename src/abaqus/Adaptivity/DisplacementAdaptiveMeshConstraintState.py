@@ -75,7 +75,6 @@ class DisplacementAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
     The corresponding analysis keywords are:
 
     - ADAPTIVE MESH CONSTRAINT
-
     """
 
     # A Float or a Complex specifying the displacement component in the 1-direction.

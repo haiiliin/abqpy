@@ -18,7 +18,6 @@ class Annotation:
         mdb.annotations[name]
         session.odbs[name].userData.annotations[name]
         session.viewports[name].annotationsToPlot[i]
-
     """
 
     # A String specifying the annotation repository key.

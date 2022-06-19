@@ -48,7 +48,6 @@ class SurfaceConcentrationFluxState(LoadState):
     The corresponding analysis keywords are:
 
     - DSFLUX
-
     """
 
     # A Float specifying the surface concentration flux magnitude.

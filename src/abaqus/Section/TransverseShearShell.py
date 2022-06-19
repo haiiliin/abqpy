@@ -16,7 +16,6 @@ class TransverseShearShell:
     The corresponding analysis keywords are:
 
     - TRANSVERSE SHEAR STIFFNESS
-
     """
 
     def __init__(self, k11: float, k22: float, k12: float):

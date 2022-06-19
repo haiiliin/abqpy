@@ -31,7 +31,6 @@ class XYPlotBase:
 
         import visualization
         session.xyPlots[name]
-
     """
 
     # An Area object specifying position, padding, background and borders of the XYPlot

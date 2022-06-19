@@ -21,7 +21,6 @@ class SpectrumAmplitude(Amplitude):
     The corresponding analysis keywords are:
 
     - SPECTRUM
-
     """
 
     def __init__(

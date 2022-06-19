@@ -42,7 +42,6 @@ class RateDependent:
     The corresponding analysis keywords are:
 
     - RATE DEPENDENT
-
     """
 
     def __init__(

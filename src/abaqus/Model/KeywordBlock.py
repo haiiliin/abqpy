@@ -32,7 +32,6 @@ class KeywordBlock:
     -----
     This object can be accessed by:
         mdb.models[name].keywordBlock
-
     """
 
     # A Boolean specifying whether the Keywords Editor has been used to change the model.

@@ -81,7 +81,6 @@ class Area:
         session.xyPlots[name].charts[name].gridArea
         session.xyPlots[name].charts[name].legend.area
         session.xyPlots[name].title.area
-
     """
 
     # A Boolean specifying whether the area is inset or occupies a reserved area. The default

@@ -16,7 +16,6 @@ class ScratchOdb:
 
         import odbAccess
         session.scratchOdbs[name]
-
     """
 
     def __init__(self, odb: Odb):

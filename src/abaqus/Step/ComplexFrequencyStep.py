@@ -133,7 +133,6 @@ class ComplexFrequencyStep(AnalysisStep):
 
     - COMPLEX FREQUENCY
             - STEP
-
     """
 
     # A String specifying the repository key.

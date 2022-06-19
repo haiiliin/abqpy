@@ -25,7 +25,6 @@ class OdbPretensionSection:
 
         import odbAccess
         session.odbs[name].rootAssembly.pretensionSections[i]
-
     """
 
     # An OdbSet object specifying the node set containing the pretension node.

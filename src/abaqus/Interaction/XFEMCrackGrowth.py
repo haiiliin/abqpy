@@ -18,7 +18,6 @@ class XFEMCrackGrowth(Interaction):
     The corresponding analysis keywords are:
 
     - ENRICHMENT ACTIVATION
-
     """
 
     def __init__(

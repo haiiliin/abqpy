@@ -24,7 +24,6 @@ class BeamSectionProfileModel(ModelBase):
     .. code-block:: python
 
         mdb.models[name]
-
     """
 
     def beamProfilesFromOdb(self, fileName: str):

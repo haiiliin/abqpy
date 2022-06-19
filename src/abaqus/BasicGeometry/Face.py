@@ -51,7 +51,6 @@ class Face:
         mdb.models[name].rootAssembly.modelInstances[i].surfaces[name].faces[i]
         mdb.models[name].rootAssembly.sets[name].faces[i]
         mdb.models[name].rootAssembly.surfaces[name].faces[i]
-
     """
 
     # An Int specifying the index of the face in the FaceArray.

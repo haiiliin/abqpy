@@ -8,7 +8,6 @@ class AutoColors:
     .. code-block:: python
 
         session.autoColors
-
     """
 
     def setValues(self, colors: tuple):

@@ -29,7 +29,6 @@ class CyclicHardening:
     The corresponding analysis keywords are:
 
     - CYCLIC HARDENING
-
     """
 
     def __init__(

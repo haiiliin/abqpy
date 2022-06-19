@@ -22,7 +22,6 @@ class GasketSection(Section):
     The corresponding analysis keywords are:
 
     - GASKET SECTION
-
     """
 
     def __init__(

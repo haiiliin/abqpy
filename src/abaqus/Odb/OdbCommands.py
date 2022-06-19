@@ -40,7 +40,6 @@ def isUpgradeRequiredForOdb(upgradeRequiredOdbPath: str):
     -------
         A Boolean indicating the result of the test. A value of True indicates that the output
         database needs to be upgraded to the current release.
-
     """
     pass
 

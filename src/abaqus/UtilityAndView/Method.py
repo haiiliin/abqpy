@@ -68,7 +68,6 @@ def addCallback(
         you can also access the return value of the command from within the callback by
         including the following statement:`returnValue = getMethodReturnValue()`The
         getMethodReturnValue function is in the global namespace of the callback function.
-
     """
     pass
 
@@ -104,6 +103,5 @@ def removeCallback(caller: str, methodName: str, callback: str, userData: str = 
     userData
         Any type of data. This data will be passed to the callback function. The default value
         is None.
-
     """
     pass

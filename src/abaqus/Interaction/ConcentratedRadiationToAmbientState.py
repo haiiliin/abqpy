@@ -60,7 +60,6 @@ class ConcentratedRadiationToAmbientState(InteractionState):
     The corresponding analysis keywords are:
 
     - CRADIATE
-
     """
 
     # A Float specifying the ambient temperature.

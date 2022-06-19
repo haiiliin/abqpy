@@ -28,7 +28,6 @@ class CastIronCompressionHardening:
     The corresponding analysis keywords are:
 
     - CAST IRON COMPRESSION HARDENING
-
     """
 
     def __init__(

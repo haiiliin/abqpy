@@ -13,7 +13,6 @@ class PartModel(ModelBase):
     .. code-block:: python
 
         mdb.models[name]
-
     """
 
     def Part(

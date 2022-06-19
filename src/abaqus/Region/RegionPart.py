@@ -28,7 +28,6 @@ class RegionPart(RegionPartBase):
     .. code-block:: python
 
         import regionToolset
-
     """
 
     def Surface(

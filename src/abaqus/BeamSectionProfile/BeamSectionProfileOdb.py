@@ -24,7 +24,6 @@ class BeamSectionProfileOdb(OdbBase):
 
         import odbAccess
         session.odbs[name]
-
     """
 
     def ArbitraryProfile(self, name: str, table: tuple) -> ArbitraryProfile:

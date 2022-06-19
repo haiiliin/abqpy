@@ -18,7 +18,6 @@ class Arrow(Annotation):
         mdb.annotations[name]
         session.odbs[name].userData.annotations[name]
         session.viewports[name].annotationsToPlot[i]
-
     """
 
     def __init__(

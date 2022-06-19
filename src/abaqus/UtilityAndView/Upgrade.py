@@ -85,6 +85,5 @@ def upgradeScript(
     -------
         The number of changes made or, if **preview** was used, the number of changes that would
         have been made.
-
     """
     pass

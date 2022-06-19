@@ -37,7 +37,6 @@ class Eos:
         - F1.
         - F2.
         - εcvol. (Dimensionless.)
-
     """
 
     def __init__(

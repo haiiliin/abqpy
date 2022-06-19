@@ -42,7 +42,6 @@ class DamageStabilizationCohesive:
     The corresponding analysis keywords are:
 
     - DAMAGE STABILIZATION
-
     """
 
     def __init__(self, cohesiveCoeff: float = None):

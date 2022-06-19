@@ -24,7 +24,6 @@ class CyclicSymmetry(Interaction):
             - DSLOAD
             - SELECT CYCLIC SYMMETRY MODES
             - TIE
-
     """
 
     def __init__(

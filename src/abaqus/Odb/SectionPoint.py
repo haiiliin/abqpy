@@ -30,7 +30,6 @@ class SectionPoint:
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.nodeSets[name].elements[i].sectionCategory.sectionPoints[i]
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.surfaces[name].elements[i].sectionCategory.sectionPoints[i]
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].sectionPoint
-
     """
 
     def __init__(self, number: int, description: str):

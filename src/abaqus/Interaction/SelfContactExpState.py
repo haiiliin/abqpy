@@ -50,7 +50,6 @@ class SelfContactExpState(InteractionState):
     - CONTACT CONTROLS
             - CONTACT PAIR
             - MODEL CHANGE
-
     """
 
     # A SymbolicConstant specifying the propagation state of the **interactionProperty** member.

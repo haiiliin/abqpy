@@ -14,7 +14,6 @@ class TableCollectionModel(ModelBase):
     .. code-block:: python
 
         mdb.models[name]
-
     """
 
     def EventSeries(

@@ -27,7 +27,6 @@ class PointMassInertia(Inertia):
     The corresponding analysis keywords are:
 
     - MASS
-
     """
 
     # A Boolean specifying whether the inertia is suppressed or not. The default value is OFF.

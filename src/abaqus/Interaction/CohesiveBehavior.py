@@ -37,7 +37,6 @@ class CohesiveBehavior:
 
     The corresponding analysis keywords are:
         - COHESIVE BEHAVIOR
-
     """
 
     def __init__(

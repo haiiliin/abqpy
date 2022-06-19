@@ -50,7 +50,6 @@ class TypeBCState(BoundaryConditionState):
     The corresponding analysis keywords are:
 
     - BOUNDARY
-
     """
 
     # A SymbolicConstant specifying the predefined boundary condition type. Possible values

@@ -67,7 +67,6 @@ class ConnectorDamping(ConnectorBehaviorOption):
     The corresponding analysis keywords are:
 
     - CONNECTOR DAMPING
-
     """
 
     # A ConnectorOptions object specifying the ConnectorOptions used to define tabular options

@@ -17,7 +17,6 @@ class NetworkDatabaseConnector:
     .. code-block:: python
 
         session.networkDatabaseConnectors[name]
-
     """
 
     # A Boolean specifying if the connection between the client and the server is established.

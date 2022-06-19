@@ -18,7 +18,6 @@ class CaeKerPrefs:
 
         import caePrefsAccess
         caePrefsAccess.openSessionOptions(...)
-
     """
 
     # A String specifying the path to the preferences file that the CaeKerPrefs object

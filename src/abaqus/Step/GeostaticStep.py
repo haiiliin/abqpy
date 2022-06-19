@@ -149,7 +149,6 @@ class GeostaticStep(AnalysisStep):
 
     - GEOSTATIC
             - STEP
-
     """
 
     # A String specifying the repository key.

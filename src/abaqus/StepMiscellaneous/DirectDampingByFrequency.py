@@ -19,7 +19,6 @@ class DirectDampingByFrequency:
 
         import step
         mdb.models[name].steps[name].directDampingByFrequency
-
     """
 
     # A DirectDampingByFrequencyComponentArray object.

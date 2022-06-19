@@ -47,7 +47,6 @@ class ConcentratedChargeState(LoadState):
     The corresponding analysis keywords are:
 
     - CECHARGE
-
     """
 
     # A Float specifying the load magnitude.

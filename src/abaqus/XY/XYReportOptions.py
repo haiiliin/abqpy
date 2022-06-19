@@ -15,7 +15,6 @@ class XYReportOptions:
         import visualization
         session.defaultXYReportOptions
         session.xyReportOptions
-
     """
 
     def setValues(

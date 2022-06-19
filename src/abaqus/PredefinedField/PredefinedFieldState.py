@@ -37,7 +37,6 @@ class PredefinedFieldState:
 
         import load
         mdb.models[name].steps[name].predefinedFieldStates[name]
-
     """
 
     # A SymbolicConstant specifying the propagation state of the PredefinedFieldState object.

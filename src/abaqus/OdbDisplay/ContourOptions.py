@@ -153,7 +153,6 @@ class ContourOptions(DGContourOptions):
         session.viewports[name].odbDisplay.contourOptions
         session.viewports[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.contourOptions
         session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.contourOptions
-
     """
 
     # A SymbolicConstant specifying the contour type. Possible values are LINE, BANDED, QUILT,

@@ -84,7 +84,6 @@ class ContactTangentialBehavior:
 
     - FRICTION
             - CHANGE FRICTION
-
     """
 
     # A SymbolicConstant specifying the friction formulation. Possible values are

@@ -12,7 +12,6 @@ class OdbFieldVarList(list[str]):
         import visualization
         session.viewports[name].layers[name].odbDisplay.fieldVariables
         session.viewports[name].odbDisplay.fieldVariables
-
     """
 
     pass

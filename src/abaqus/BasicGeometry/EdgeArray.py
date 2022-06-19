@@ -37,7 +37,6 @@ class EdgeArray:
         mdb.models[name].rootAssembly.modelInstances[i].surfaces[name].edges
         mdb.models[name].rootAssembly.sets[name].edges
         mdb.models[name].rootAssembly.surfaces[name].edges
-
     """
 
     def __init__(self, edges: list[Edge]):

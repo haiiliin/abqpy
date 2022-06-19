@@ -16,7 +16,6 @@ class FilmCondition(Interaction):
 
         import interaction
         mdb.models[name].interactions[name]
-
     """
 
     def __init__(

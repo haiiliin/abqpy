@@ -28,7 +28,6 @@ class CrushableFoamHardening:
     The corresponding analysis keywords are:
 
     - CRUSHABLE FOAM HARDENING
-
     """
 
     def __init__(

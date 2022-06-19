@@ -47,7 +47,6 @@ class MeshNode:
         mdb.models[name].rootAssembly.nodes[i]
         mdb.models[name].rootAssembly.sets[name].nodes[i]
         mdb.models[name].rootAssembly.surfaces[name].nodes[i]
-
     """
 
     # An Int specifying the node label.

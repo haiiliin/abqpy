@@ -16,7 +16,6 @@ class Monitor:
     The corresponding analysis keywords are:
 
     - MONITOR
-
     """
 
     def __init__(self, node: str, dof: SymbolicConstant, frequency: int):

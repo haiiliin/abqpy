@@ -69,7 +69,6 @@ class CyclicSymmetryState(InteractionState):
             - DLOAD
             - DSLOAD
             - SELECT CYCLIC SYMMETRY MODES
-
     """
 
     # A SymbolicConstant specifying whether Abaqus should extract all possible nodal diameters

@@ -28,7 +28,6 @@ class VoidNucleation:
     The corresponding analysis keywords are:
 
     - VOID NUCLEATION
-
     """
 
     def __init__(

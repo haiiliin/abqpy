@@ -16,7 +16,6 @@ class BaselineCorrection:
     The corresponding analysis keywords are:
 
     - BASELINE CORRECTION
-
     """
 
     def __init__(self, intervals: tuple = ()):

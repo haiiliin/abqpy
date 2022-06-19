@@ -62,7 +62,6 @@ class PressurePenetrationState(InteractionState):
     The corresponding analysis keywords are:
 
     - PRESSURE PENETRATION
-
     """
 
     # A Float specifying the fraction of the current step time over which the fluid pressure

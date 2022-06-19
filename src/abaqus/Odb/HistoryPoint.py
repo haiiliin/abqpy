@@ -73,7 +73,6 @@ class HistoryPoint:
 
         import odbAccess
         session.odbs[name].steps[name].historyRegions[name].point
-
     """
 
     # An Int specifying the integration point. This argument is used to define a history

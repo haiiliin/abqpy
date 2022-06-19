@@ -20,7 +20,6 @@ class ActuatorAmplitude(Amplitude):
     The corresponding analysis keywords are:
 
     - AMPLITUDE
-
     """
 
     def __init__(self, name: str, timeSpan: SymbolicConstant = STEP):

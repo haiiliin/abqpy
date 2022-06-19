@@ -174,7 +174,6 @@ class CoupledTempDisplacementStep(AnalysisStep):
     - COUPLED TEMPERATURE-DISPLACEMENT
             - SOLUTION TECHNIQUE
             - STEP
-
     """
 
     # A String specifying the repository key.

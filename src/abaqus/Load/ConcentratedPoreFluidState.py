@@ -48,7 +48,6 @@ class ConcentratedPoreFluidState(LoadState):
     The corresponding analysis keywords are:
 
     - CLOAD
-
     """
 
     # A Float specifying the load magnitude.

@@ -32,7 +32,6 @@ def getGuiPrefsFileName() -> str:
     Returns
     -------
         A String with the default file name for the GUI preferences file.
-
     """
     pass
 
@@ -58,7 +57,6 @@ def getDisplayNamesInGuiPreferences(fileName: str) -> list[str]:
     Returns
     -------
         A list of Strings of displayNames.
-
     """
     pass
 
@@ -97,7 +95,6 @@ def printValuesList(
     -------
         A String displaying the path, name, and value for all of the options in the object that
         you select.
-
     """
     pass
 
@@ -130,7 +127,6 @@ def openGuiPreferences(displayName: str, fileName: str = "") -> CaeGuiPrefs:
     Returns
     -------
         A CaeGuiPrefs object.
-
     """
     pass
 
@@ -174,6 +170,5 @@ def openSessionOptions(
     Returns
     -------
         A CaeKerPrefs object.
-
     """
     pass

@@ -15,7 +15,6 @@ class Light:
 
         session.defaultLightOptions.lights[i]
         session.viewports[name].lightOptions.lights[i]
-
     """
 
     def setValues(

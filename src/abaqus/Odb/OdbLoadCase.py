@@ -11,7 +11,6 @@ class OdbLoadCase:
         session.odbs[name].steps[name].frames[i].loadCase
         session.odbs[name].steps[name].historyRegions[name].loadCase
         session.odbs[name].steps[name].loadCases[name]
-
     """
 
     def __init__(self, name: str):

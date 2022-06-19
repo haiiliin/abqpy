@@ -26,7 +26,6 @@ class MaterialAssignment(PredefinedField):
     The corresponding analysis keywords are:
 
     - INITIAL CONDITIONS
-
     """
 
     # A Region object specifying the region to which the predefined field is applied.

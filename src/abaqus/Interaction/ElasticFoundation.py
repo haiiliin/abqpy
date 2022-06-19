@@ -18,7 +18,6 @@ class ElasticFoundation(Interaction):
     The corresponding analysis keywords are:
 
     - FOUNDATION
-
     """
 
     def __init__(

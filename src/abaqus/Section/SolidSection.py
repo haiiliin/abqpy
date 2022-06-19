@@ -22,7 +22,6 @@ class SolidSection(Section):
         mdb.models[name].sections[name]
         import odbSection
         session.odbs[name].sections[name]
-
     """
 
     # A String specifying the repository key.

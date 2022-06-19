@@ -64,7 +64,6 @@ class FilmConditionState(InteractionState):
 
     - SFILM
             - FILM
-
     """
 
     # A SymbolicConstant specifying the propagation state of the **interactionProperty** member.

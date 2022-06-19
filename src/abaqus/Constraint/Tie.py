@@ -26,7 +26,6 @@ class Tie(Constraint):
     The corresponding analysis keywords are:
 
     - TIE
-
     """
 
     # A Boolean specifying whether the constraint is suppressed or not. The default value is

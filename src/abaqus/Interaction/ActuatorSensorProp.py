@@ -18,7 +18,6 @@ class ActuatorSensorProp(ContactProperty):
     The corresponding analysis keywords are:
 
     - UEL PROPERTY
-
     """
 
     def __init__(

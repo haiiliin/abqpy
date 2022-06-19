@@ -19,7 +19,6 @@ class FilmConditionProp(ContactProperty):
     The corresponding analysis keywords are:
 
     - FILM PROPERTY
-
     """
 
     def __init__(

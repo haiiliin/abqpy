@@ -15,7 +15,6 @@ class EosCompaction:
     The corresponding analysis keywords are:
 
     - EOS COMPACTION
-
     """
 
     def __init__(

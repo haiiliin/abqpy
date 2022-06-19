@@ -18,7 +18,6 @@ class StabilizationAssignment:
     The corresponding analysis keywords are:
 
     - CONTACT STABILIZATION
-
     """
 
     def changeValuesInStep(self, stepName: str, index: int, value: str):

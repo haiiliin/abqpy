@@ -13,7 +13,6 @@ class MaterialOdb(OdbBase):
 
         import odbAccess
         session.odbs[name]
-
     """
 
     def Material(self, name: str, description: str = "", materialIdentifier: str = ""):

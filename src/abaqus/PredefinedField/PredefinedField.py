@@ -30,7 +30,6 @@ class PredefinedField:
 
         import load
         mdb.models[name].predefinedFields[name]
-
     """
 
     # A String specifying the repository key.

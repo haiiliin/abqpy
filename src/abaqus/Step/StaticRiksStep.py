@@ -172,7 +172,6 @@ class StaticRiksStep(AnalysisStep):
 
     - STATIC
             - STEP
-
     """
 
     # A String specifying the repository key.

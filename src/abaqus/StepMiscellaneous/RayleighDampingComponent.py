@@ -21,7 +21,6 @@ class RayleighDampingComponent:
 
         import step
         mdb.models[name].steps[name].rayleighDamping.components[i]
-
     """
 
     # An Int specifying the mode number of the lowest mode of a range.

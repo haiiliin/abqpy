@@ -23,7 +23,6 @@ class SpringDashpot:
         mdb.models[name].parts[name].engineeringFeatures.springDashpots[name]
         import assembly
         mdb.models[name].rootAssembly.engineeringFeatures.springDashpots[name]
-
     """
 
     # A String specifying the repository key.

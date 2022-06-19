@@ -35,7 +35,6 @@ class OdbDiagnosticAttempt:
 
         import visualization
         session.odbData[name].diagnosticData.steps[i].increments[i].attempts[i]
-
     """
 
     # A boolean specifying the state of Auto-stablilization. This attribute is read-only.

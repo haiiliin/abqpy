@@ -14,7 +14,6 @@ class AVIOptions:
 
         import animation
         session.aviOptions
-
     """
 
     def setValues(

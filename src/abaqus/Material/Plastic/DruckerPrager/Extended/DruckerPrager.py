@@ -48,7 +48,6 @@ class DruckerPrager:
     The corresponding analysis keywords are:
 
     - DRUCKER PRAGER
-
     """
 
     # A DruckerPragerCreep object.

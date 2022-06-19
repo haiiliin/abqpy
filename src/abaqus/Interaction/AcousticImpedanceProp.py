@@ -19,7 +19,6 @@ class AcousticImpedanceProp(ContactProperty):
     The corresponding analysis keywords are:
 
     - IMPEDANCE PROPERTY
-
     """
 
     def __init__(

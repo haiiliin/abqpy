@@ -21,7 +21,6 @@ class LatentHeat:
     The corresponding analysis keywords are:
 
     - LATENT HEAT
-
     """
 
     def __init__(self, table: tuple):

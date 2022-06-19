@@ -15,7 +15,6 @@ class Depvar:
     The corresponding analysis keywords are:
 
     - DEPVAR
-
     """
 
     def __init__(self, deleteVar: int = 0, n: int = 0):

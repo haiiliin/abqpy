@@ -222,7 +222,6 @@ class SessionBase:
     .. code-block:: python
 
         session
-
     """
 
     # A Boolean specifying whether an Abaqus interactive session is running.

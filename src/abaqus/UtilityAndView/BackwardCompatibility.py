@@ -54,7 +54,6 @@ class BackwardCompatibility:
     .. code-block:: python
 
         backwardCompatibility
-
     """
 
     # A Boolean specifying whether deprecated members, methods, and arguments can be seen and

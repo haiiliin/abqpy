@@ -178,7 +178,6 @@ class DirectCyclicStep(AnalysisStep):
 
     - DIRECT CYCLIC
             - STEP
-
     """
 
     # A String specifying the repository key.

@@ -16,7 +16,6 @@ class InteractionDisplayOptions:
 
         session.viewports[name].assemblyDisplay.interactionOptions
         session.viewports[name].layers[name].assemblyDisplay.interactionOptions
-
     """
 
     def setValues(

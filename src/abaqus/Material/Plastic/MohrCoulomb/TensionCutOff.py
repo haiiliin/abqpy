@@ -28,7 +28,6 @@ class TensionCutOff:
     The corresponding analysis keywords are:
 
     - TENSION CUTOFF
-
     """
 
     def __init__(

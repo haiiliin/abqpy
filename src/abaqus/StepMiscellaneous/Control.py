@@ -14,7 +14,6 @@ class Control:
 
         import step
         mdb.models[name].steps[name].control
-
     """
 
     def setValues(

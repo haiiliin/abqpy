@@ -10,7 +10,6 @@ class ContactControl:
 
         import interaction
         mdb.models[name].contactControls[name]
-
     """
 
     pass

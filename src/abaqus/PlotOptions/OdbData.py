@@ -91,7 +91,6 @@ class OdbData:
 
         import visualization
         session.odbData[name]
-
     """
 
     # A tuple specifying the active frames, or the SymbolicConstant ALL. Each item in the

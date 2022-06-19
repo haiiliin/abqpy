@@ -14,7 +14,6 @@ class OdbDataInstance:
 
         import visualization
         session.odbData[name].instances[i]
-
     """
 
     # A String specifying the instance name. This attribute is read-only.

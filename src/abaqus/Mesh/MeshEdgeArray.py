@@ -15,7 +15,6 @@ class MeshEdgeArray(list[MeshEdge]):
         import assembly
         mdb.models[name].rootAssembly.allInstances[name].elementEdges
         mdb.models[name].rootAssembly.instances[name].elementEdges
-
     """
 
     def __init__(self, elemEdges: list[MeshEdge]):

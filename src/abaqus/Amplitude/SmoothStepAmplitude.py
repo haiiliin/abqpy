@@ -21,7 +21,6 @@ class SmoothStepAmplitude(Amplitude):
     The corresponding analysis keywords are:
 
     - AMPLITUDE
-
     """
 
     def __init__(self, name: str, data: tuple, timeSpan: SymbolicConstant = STEP):

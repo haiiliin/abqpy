@@ -17,7 +17,6 @@ class StructuralDampingByFrequencyComponent:
 
         import step
         mdb.models[name].steps[name].structuralDampingByFrequency.components[i]
-
     """
 
     # A Float specifying the frequency value in cycles/time.

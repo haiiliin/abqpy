@@ -20,7 +20,6 @@ class Chebyshev1Filter(Filter):
     The corresponding analysis keywords are:
 
     - FILTER
-
     """
 
     def __init__(

@@ -16,7 +16,6 @@ class Color:
     .. code-block:: python
 
         session.colors[name]
-
     """
 
     # A String specifying the name of the color.

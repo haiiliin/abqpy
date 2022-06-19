@@ -50,7 +50,6 @@ class GapFlow:
     The corresponding analysis keywords are:
 
     - GAP FLOW
-
     """
 
     def __init__(

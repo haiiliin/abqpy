@@ -87,7 +87,6 @@ class ConnAccelerationBCState(BoundaryConditionState):
     The corresponding analysis keywords are:
 
     - CONNECTOR MOTION
-
     """
 
     # A Float specifying the connector acceleration component in the connector's local

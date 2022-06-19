@@ -112,7 +112,6 @@ class AxisData:
         session.defaultChartOptions.defaultAxis2Options.axisData
         session.xyPlots[name].charts[name].axes1[i].axisData
         session.xyPlots[name].charts[name].axes2[i].axisData
-
     """
 
     # A Float specifying the reference value for decibel computation. The default value is

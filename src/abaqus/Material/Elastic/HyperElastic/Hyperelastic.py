@@ -75,7 +75,6 @@ class Hyperelastic:
     The corresponding analysis keywords are:
 
     - HYPERELASTIC
-
     """
 
     # A BiaxialTestData object.

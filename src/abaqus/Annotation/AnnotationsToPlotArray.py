@@ -14,7 +14,6 @@ class AnnotationsToPlotArray(list[Annotation]):
 
         import annotationToolset
         session.viewports[name].annotationsToPlot
-
     """
 
     def bringForward(self, index: str):

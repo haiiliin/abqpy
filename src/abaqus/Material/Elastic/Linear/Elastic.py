@@ -122,7 +122,6 @@ class Elastic:
     The corresponding analysis keywords are:
 
     - ELASTIC
-
     """
 
     # A FailStress object.

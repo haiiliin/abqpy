@@ -17,7 +17,6 @@ class DirectDamping:
 
         import step
         mdb.models[name].steps[name].directDamping
-
     """
 
     # A DirectDampingComponentArray object.

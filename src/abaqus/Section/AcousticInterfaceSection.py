@@ -19,7 +19,6 @@ class AcousticInterfaceSection(Section):
     The corresponding analysis keywords are:
 
     - INTERFACE
-
     """
 
     def __init__(self, name: str, thickness: float = 1):

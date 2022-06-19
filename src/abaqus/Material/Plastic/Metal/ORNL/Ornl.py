@@ -21,7 +21,6 @@ class Ornl:
     The corresponding analysis keywords are:
 
     - ORNL
-
     """
 
     def __init__(self, a: float = 0, h: float = None, reset: Boolean = OFF):

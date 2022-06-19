@@ -35,7 +35,6 @@ class ConnectorPotential:
     The corresponding analysis keywords are:
 
     - CONNECTOR POTENTIAL
-
     """
 
     # A DerivedComponent object specifying the DerivedComponent used in the contribution. This

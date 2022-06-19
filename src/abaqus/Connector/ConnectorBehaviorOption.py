@@ -48,7 +48,6 @@ class ConnectorBehaviorOption:
         mdb.models[name].sections[name].behaviorOptions[i]
         import odbSection
         session.odbs[name].sections[name].behaviorOptions[i]
-
     """
 
     # A ConnectorPotentialArray object.

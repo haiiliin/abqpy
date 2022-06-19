@@ -48,7 +48,6 @@ class InwardVolAccelState(LoadState):
     The corresponding analysis keywords are:
 
     - CLOAD
-
     """
 
     # A Float specifying the load magnitude.

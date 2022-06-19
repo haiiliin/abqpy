@@ -67,7 +67,6 @@ class Plastic:
     The corresponding analysis keywords are:
 
     - PLASTIC
-
     """
 
     # A RateDependent object.

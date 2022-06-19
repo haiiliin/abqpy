@@ -56,7 +56,6 @@ class TemperatureBCState(BoundaryConditionState):
     The corresponding analysis keywords are:
 
     - BOUNDARY
-
     """
 
     # A Float specifying the temperature magnitude.

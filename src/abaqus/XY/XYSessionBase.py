@@ -13,7 +13,6 @@ class XYSessionBase(SessionBase):
     .. code-block:: python
 
         import visualization
-
     """
 
     def linearizeStress(

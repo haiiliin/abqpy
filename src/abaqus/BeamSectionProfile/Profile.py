@@ -17,7 +17,6 @@ class Profile:
         mdb.models[name].profiles[name]
         import odbSection
         session.odbs[name].profiles[name]
-
     """
 
     # A String specifying the repository key.

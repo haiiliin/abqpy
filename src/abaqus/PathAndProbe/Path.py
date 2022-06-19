@@ -22,7 +22,6 @@ class Path:
 
         import visualization
         session.paths[name]
-
     """
 
     # If **type**=NODE_LIST, **coordinates** is a sequence of tuples of three Floats. This can be

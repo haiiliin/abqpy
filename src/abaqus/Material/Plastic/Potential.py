@@ -35,7 +35,6 @@ class Potential:
     The corresponding analysis keywords are:
 
     - POTENTIAL
-
     """
 
     def __init__(

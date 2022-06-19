@@ -14,7 +14,6 @@ class AnalyticSurfaceSegment:
         session.odbs[name].parts[name].analyticSurface.segments[i]
         session.odbs[name].rootAssembly.instances[name].analyticSurface.segments[i]
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.analyticSurface.segments[i]
-
     """
 
     def __init__(self, type: SymbolicConstant, data: tuple):

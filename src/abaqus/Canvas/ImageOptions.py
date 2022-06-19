@@ -16,7 +16,6 @@ class ImageOptions:
     .. code-block::
 
         session.viewports[name].imageOptions
-
     """
 
     def setValues(

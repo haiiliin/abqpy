@@ -27,7 +27,6 @@ class MeshAssembly(AssemblyBase):
 
         import assembly
         mdb.models[name].rootAssembly
-
     """
 
     def assignStackDirection(self, cells: tuple[Cell], referenceRegion: Face):

@@ -33,7 +33,6 @@ class PlanarTestData:
     The corresponding analysis keywords are:
 
     - PLANAR TEST DATA
-
     """
 
     def __init__(

@@ -43,7 +43,6 @@ class AcousticImpedanceState(InteractionState):
     The corresponding analysis keywords are:
 
     - SIMPEDANCE
-
     """
 
     # A SymbolicConstant specifying the propagation state of the **interactionProperty** member.

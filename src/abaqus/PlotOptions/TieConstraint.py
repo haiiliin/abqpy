@@ -14,7 +14,6 @@ class TieConstraint:
 
         import visualization
         session.odbData[name].ties[i]
-
     """
 
     # A String specifying the tie constraint name. This attribute is read-only.

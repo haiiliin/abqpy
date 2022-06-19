@@ -31,7 +31,6 @@ class SectionBase:
         mdb.models[name].sections[name]
         import odbSection
         session.odbs[name].sections[name]
-
     """
 
     # A ConnectorBehaviorOptionArray object.

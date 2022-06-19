@@ -22,7 +22,6 @@ class RandomResponseFrequency:
 
         import step
         mdb.models[name].steps[name].freq[i]
-
     """
 
     # A Float specifying the lower limit of the frequency range in cycles per time.

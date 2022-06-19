@@ -27,7 +27,6 @@ class KinematicHardening(PredefinedField):
     The corresponding analysis keywords are:
 
     - INITIAL CONDITIONS
-
     """
 
     # A String specifying the name of the AnalyticalField object associated with this

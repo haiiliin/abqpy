@@ -52,7 +52,6 @@ class MeshElement:
         mdb.models[name].rootAssembly.modelInstances[i].surfaces[name].elements[i]
         mdb.models[name].rootAssembly.sets[name].elements[i]
         mdb.models[name].rootAssembly.surfaces[name].elements[i]
-
     """
 
     # An Int specifying the element label.

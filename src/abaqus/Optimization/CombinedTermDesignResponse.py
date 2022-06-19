@@ -14,7 +14,6 @@ class CombinedTermDesignResponse(DesignResponse):
 
         import optimization
         mdb.models[name].optimizationTasks[name].designResponses[name]
-
     """
 
     def __init__(

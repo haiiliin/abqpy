@@ -49,7 +49,6 @@ class ElectricalConductivity:
     The corresponding analysis keywords are:
 
     - ELECTRICAL CONDUCTIVITY
-
     """
 
     def __init__(

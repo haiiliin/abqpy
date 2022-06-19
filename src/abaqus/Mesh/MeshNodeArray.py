@@ -36,7 +36,6 @@ class MeshNodeArray(list[MeshNode]):
         mdb.models[name].rootAssembly.nodes
         mdb.models[name].rootAssembly.sets[name].nodes
         mdb.models[name].rootAssembly.surfaces[name].nodes
-
     """
 
     def __init__(self, nodes: list[MeshNode]):

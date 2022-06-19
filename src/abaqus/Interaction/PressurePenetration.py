@@ -36,7 +36,6 @@ class PressurePenetration(Interaction):
     The corresponding analysis keywords are:
 
     - PRESSURE PENETRATION
-
     """
 
     # A String specifying the repository key.

@@ -22,7 +22,6 @@ class AdaptivityModel(ModelBase):
     .. code-block:: python
 
         mdb.models[name]
-
     """
 
     def adaptiveRemesh(self, odb: Odb):

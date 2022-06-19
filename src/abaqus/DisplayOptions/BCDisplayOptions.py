@@ -13,7 +13,6 @@ class BCDisplayOptions:
     This object can be accessed by:
         session.viewports[name].assemblyDisplay.bcOptions
         session.viewports[name].layers[name].assemblyDisplay.bcOptions
-
     """
 
     def setValues(

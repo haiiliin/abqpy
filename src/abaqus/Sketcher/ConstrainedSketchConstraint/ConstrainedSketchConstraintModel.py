@@ -19,7 +19,6 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
 
         import sketch
         mdb.models[name].sketches[name]
-
     """
 
     def CoincidentConstraint(

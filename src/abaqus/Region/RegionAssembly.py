@@ -26,7 +26,6 @@ class RegionAssembly(RegionAssemblyBase):
 
         import assembly
         mdb.models[name].rootAssembly
-
     """
 
     def Surface(

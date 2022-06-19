@@ -29,7 +29,6 @@ class MohrCoulombPlasticity:
     The corresponding analysis keywords are:
 
     - MOHR COULOMB
-
     """
 
     # A MohrCoulombHardening object.

@@ -24,7 +24,6 @@ class DataTable:
     The corresponding analysis keywords are:
 
     - *PARAMETER TABLE
-
     """
 
     # A String specifying the label of the data table.

@@ -15,7 +15,6 @@ class MdbDataInstance:
 
         import visualization
         session.mdbData[name].instances[i]
-
     """
 
     # A String specifying the instance name. This attribute is read-only.

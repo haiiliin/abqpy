@@ -18,7 +18,6 @@ class ParameterColumn:
 
     - *PARAMETER TABLE TYPE
             - *PARAMETER TABLE
-
     """
 
     def __init__(

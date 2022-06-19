@@ -24,7 +24,6 @@ class Amplitude:
         mdb.models[name].amplitudes[name]
         import odbAmplitude
         session.odbs[name].amplitudes[name]
-
     """
 
     # A String specifying the repository key.

@@ -28,7 +28,6 @@ class TensileFailure:
     The corresponding analysis keywords are:
 
     - TENSILE FAILURE
-
     """
 
     def tensileFailure(

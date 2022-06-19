@@ -50,7 +50,6 @@ class QuantityType:
         session.xyPlots[name].charts[name].curves[name].data.axis2QuantityType
         session.xyPlots[name].curves[name].data.axis1QuantityType
         session.xyPlots[name].curves[name].data.axis2QuantityType
-
     """
 
     def __init__(self, label: str = "", type: SymbolicConstant = None):

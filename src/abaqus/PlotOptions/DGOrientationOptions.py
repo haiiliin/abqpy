@@ -54,7 +54,6 @@ class DGOrientationOptions:
         session.viewports[name].layers[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.materialOrientationOptions
         session.viewports[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.materialOrientationOptions
         session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.materialOrientationOptions
-
     """
 
     # A Boolean specifying whether axis 1 of the material orientation triad should be

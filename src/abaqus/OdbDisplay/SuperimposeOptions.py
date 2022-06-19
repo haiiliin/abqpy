@@ -146,7 +146,6 @@ class SuperimposeOptions(DGSuperimposeOptions):
         session.viewports[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.superimposeOptions
         session.viewports[name].odbDisplay.superimposeOptions
         session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.superimposeOptions
-
     """
 
     # A SymbolicConstant specifying the offset of the deformed shape from the undeformed

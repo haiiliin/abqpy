@@ -90,7 +90,6 @@ class Assembly(MeshEditAssembly, MeshAssembly, PropertyAssembly, RegionAssembly)
 
         import assembly
         mdb.models[name].rootAssembly
-
     """
 
     def ConnectorOrientation(

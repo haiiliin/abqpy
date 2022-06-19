@@ -31,7 +31,6 @@ class OptimizationObjective:
 
         import optimization
         mdb.models[name].optimizationTasks[name].objectiveFunctions[name].objectives[i]
-
     """
 
     # A Boolean specifying whether the objective is suppressed or not. The default value is

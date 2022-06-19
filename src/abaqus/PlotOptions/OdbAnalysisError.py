@@ -41,7 +41,6 @@ class OdbAnalysisError:
 
         import visualization
         session.odbData[name].diagnosticData.analysisErrors[i]
-
     """
 
     # An int specifying the increment number where the analysis was aborted. This attribute is

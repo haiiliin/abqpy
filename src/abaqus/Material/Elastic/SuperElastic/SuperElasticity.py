@@ -34,7 +34,6 @@ class SuperElasticity:
     The corresponding analysis keywords are:
 
     - SUPERELASTIC
-
     """
 
     # A [SuperElasticHardening

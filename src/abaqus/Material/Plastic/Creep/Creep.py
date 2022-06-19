@@ -80,7 +80,6 @@ class Creep:
     The corresponding analysis keywords are:
 
     - CREEP
-
     """
 
     # An Ornl object.

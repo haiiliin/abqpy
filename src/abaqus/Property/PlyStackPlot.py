@@ -15,7 +15,6 @@ class PlyStackPlot:
 
         import section
         import visualization
-
     """
 
 

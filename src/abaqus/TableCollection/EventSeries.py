@@ -19,7 +19,6 @@ class EventSeries:
 
     - EVENT SERIES TYPE
             - EVENT SERIES
-
     """
 
     def __init__(

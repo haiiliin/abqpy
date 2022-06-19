@@ -17,7 +17,6 @@ class ImageAnimation:
 
         import animation
         session.imageAnimation
-
     """
 
     # A String specifying the file to which the animation frames is to be written.

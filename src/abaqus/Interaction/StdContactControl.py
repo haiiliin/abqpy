@@ -19,7 +19,6 @@ class StdContactControl(ContactControl):
     The corresponding analysis keywords are:
 
     - CONTACT CONTROLS
-
     """
 
     def __init__(

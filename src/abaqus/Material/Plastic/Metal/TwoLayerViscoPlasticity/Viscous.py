@@ -82,7 +82,6 @@ class Viscous:
     The corresponding analysis keywords are:
 
     - VISCOUS
-
     """
 
     # A Potential object.

@@ -45,7 +45,6 @@ class BrittleCracking:
     The corresponding analysis keywords are:
 
     - BRITTLE CRACKING
-
     """
 
     # A BrittleShear object.

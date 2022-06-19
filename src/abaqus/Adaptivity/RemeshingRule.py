@@ -19,7 +19,6 @@ class RemeshingRule:
 
         import mesh
         mdb.models[name].remeshingRules[name]
-
     """
 
     # A Boolean specifying whether the remeshing rule is suppressed. Remeshing of the

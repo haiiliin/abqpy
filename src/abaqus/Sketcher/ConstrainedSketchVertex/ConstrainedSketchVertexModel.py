@@ -15,7 +15,6 @@ class ConstrainedSketchVertexModel(ConstrainedSketchBase):
 
         import sketch
         mdb.models[name].sketches[name]
-
     """
 
     def Spot(self, point: tuple[float]):

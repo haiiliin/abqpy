@@ -22,7 +22,6 @@ class Gel:
     The corresponding analysis keywords are:
 
     - GEL
-
     """
 
     def __init__(self, table: tuple):

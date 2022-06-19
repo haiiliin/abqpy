@@ -28,7 +28,6 @@ class CastIronPlasticity:
     The corresponding analysis keywords are:
 
     - CAST IRON PLASTICITY
-
     """
 
     # A CastIronTensionHardening object.

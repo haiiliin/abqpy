@@ -21,7 +21,6 @@ class ViewportAnnotationOptions:
 
         session.defaultViewportAnnotationOptions
         session.viewports[name].viewportAnnotationOptions
-
     """
 
     def setValues(

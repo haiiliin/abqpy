@@ -46,7 +46,6 @@ def highlight(object: str):
 
     Returns
     -------
-
     """
     pass
 
@@ -71,6 +70,5 @@ def unhighlight(object: str):
 
     Returns
     -------
-
     """
     pass

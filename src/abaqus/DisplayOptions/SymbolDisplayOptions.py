@@ -14,7 +14,6 @@ class SymbolDisplayOptions:
 
         session.viewports[name].assemblyDisplay.symbolOptions
         session.viewports[name].layers[name].assemblyDisplay.symbolOptions
-
     """
 
     def setValues(

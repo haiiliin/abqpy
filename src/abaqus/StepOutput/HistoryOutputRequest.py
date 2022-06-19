@@ -42,7 +42,6 @@ class HistoryOutputRequest:
             - NODE OUTPUT
             - OUTPUT
             - RADIATION OUTPUT
-
     """
 
     # A String specifying a bolt load from which output is requested. The default value is an

@@ -28,7 +28,6 @@ class ParameterTable:
 
     - *PARAMETER TABLE TYPE
             - *PARAMETER TABLE
-
     """
 
     # A ParameterColumnArray specifying all the columns in the ParameterTable.

@@ -19,7 +19,6 @@ class PEGSection(Section):
     The corresponding analysis keywords are:
 
     - SOLID SECTION
-
     """
 
     def __init__(

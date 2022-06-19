@@ -50,7 +50,6 @@ class ViewCut:
         import visualization
         session.viewports[name].layers[name].odbDisplay.viewCuts[name]
         session.viewports[name].odbDisplay.viewCuts[name]
-
     """
 
     # A Float specifying the rotation angle of the cut defined with a **shape** set to PLANE.

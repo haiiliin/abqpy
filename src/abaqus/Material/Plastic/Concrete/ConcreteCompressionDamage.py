@@ -28,7 +28,6 @@ class ConcreteCompressionDamage:
     The corresponding analysis keywords are:
 
     - CONCRETE COMPRESSION DAMAGE
-
     """
 
     def __init__(

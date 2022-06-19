@@ -21,7 +21,6 @@ class Crack:
         mdb.models[name].parts[name].engineeringFeatures.cracks[name]
         import assembly
         mdb.models[name].rootAssembly.engineeringFeatures.cracks[name]
-
     """
 
     # A String specifying the repository key.

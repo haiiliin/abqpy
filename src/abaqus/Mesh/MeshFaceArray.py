@@ -15,7 +15,6 @@ class MeshFaceArray(list[MeshFace]):
         import assembly
         mdb.models[name].rootAssembly.allInstances[name].elementFaces
         mdb.models[name].rootAssembly.instances[name].elementFaces
-
     """
 
     def __init__(self, elemFaces: list[MeshFace]):

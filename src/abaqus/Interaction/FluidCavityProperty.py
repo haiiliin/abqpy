@@ -24,7 +24,6 @@ class FluidCavityProperty(ContactProperty):
             - FLUID DENSITY
             - FLUID EXPANSION
             - MOLECULAR WEIGHT
-
     """
 
     def __init__(

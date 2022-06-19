@@ -16,7 +16,6 @@ class TableCollectionStep(StepBase):
 
         import step
         mdb.models[name].steps[name]
-
     """
 
     def ActivateElements(

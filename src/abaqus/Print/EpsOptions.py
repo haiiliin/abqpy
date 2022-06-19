@@ -15,7 +15,6 @@ class EpsOptions:
     .. code-block:: python
 
         session.epsOptions
-
     """
 
     def setValues(

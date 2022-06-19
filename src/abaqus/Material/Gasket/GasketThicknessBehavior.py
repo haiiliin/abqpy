@@ -69,7 +69,6 @@ class GasketThicknessBehavior:
     The corresponding analysis keywords are:
 
     - GASKET THICKNESS BEHAVIOR
-
     """
 
     # A ContactArea object.

@@ -39,7 +39,6 @@ class Feature:
         import assembly
         mdb.models[name].rootAssembly.features[name]
         mdb.models[name].rootAssembly.featuresById[i]
-
     """
 
     # A String specifying the repository key.

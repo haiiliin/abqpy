@@ -30,7 +30,6 @@ class FailureRatios:
     The corresponding analysis keywords are:
 
     - FAILURE RATIOS
-
     """
 
     def __init__(

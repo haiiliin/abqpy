@@ -174,7 +174,6 @@ class ContactDamage:
     - DAMAGE INITIATION
             - DAMAGE EVOLUTION
             - DAMAGE STABILIZATION
-
     """
 
     # A SymbolicConstant specifying the type of data used to define the initiation of damage.

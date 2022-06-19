@@ -50,7 +50,6 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb):
 
         import odbAccess
         session.odbs[name]
-
     """
 
     def Part(

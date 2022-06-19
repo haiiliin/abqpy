@@ -17,7 +17,6 @@ class Leaf:
 
         import displayGroupMdbToolset
         import displayGroupOdbToolset
-
     """
 
     def __init__(self, leafType: SymbolicConstant):

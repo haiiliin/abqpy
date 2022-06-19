@@ -111,7 +111,6 @@ class AnnealStep(AnalysisStep):
 
     - ANNEAL
             - STEP
-
     """
 
     # A String specifying the repository key.

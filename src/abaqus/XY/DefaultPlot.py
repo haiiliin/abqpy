@@ -24,7 +24,6 @@ class DefaultPlot:
 
         import visualization
         session.defaultPlot
-
     """
 
     # An Area object specifying an Area used to hold on to the default display properties for

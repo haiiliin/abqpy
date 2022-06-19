@@ -21,7 +21,6 @@ class JournalOptions:
     .. code-block:: python
 
         session.journalOptions
-
     """
 
     # Format of the number

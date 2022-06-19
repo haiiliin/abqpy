@@ -16,7 +16,6 @@ class GeometricProperties:
     The corresponding analysis keywords are:
 
     - SURFACE INTERACTION
-
     """
 
     def __init__(

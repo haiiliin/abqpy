@@ -23,7 +23,6 @@ class IMAField:
 
         import load
         mdb.models[name].predefinedFields[name].fieldList
-
     """
 
     # A Region object specifying the sub-region of the selected part instance to which the

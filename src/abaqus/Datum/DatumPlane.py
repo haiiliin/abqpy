@@ -27,7 +27,6 @@ class DatumPlane(Datum):
         mdb.models[name].rootAssembly.allInstances[name].datums[i]
         mdb.models[name].rootAssembly.datums[i]
         mdb.models[name].rootAssembly.instances[name].datums[i]
-
     """
 
     # A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point located on

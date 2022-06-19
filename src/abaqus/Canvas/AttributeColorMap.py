@@ -36,7 +36,6 @@ class AttributeColorMap:
     .. code-block::
 
         session.viewports[name].colorMappings[name]
-
     """
 
     # A SymbolicConstant specifying the type of AttributeColorMap . Possible values are

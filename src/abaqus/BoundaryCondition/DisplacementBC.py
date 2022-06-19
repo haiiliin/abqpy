@@ -48,7 +48,6 @@ class DisplacementBC(BoundaryCondition):
 
         import load
         mdb.models[name].boundaryConditions[name]
-
     """
 
     # A String specifying the boundary condition repository key.

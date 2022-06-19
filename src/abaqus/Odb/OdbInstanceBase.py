@@ -65,7 +65,6 @@ class OdbInstanceBase:
         import odbAccess
         session.odbs[name].rootAssembly.instances[name]
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance
-
     """
 
     # A String specifying the instance name.

@@ -14,7 +14,6 @@ class ConstrainedSketcherOptions:
 
         import sketch
         session.sketcherOptions
-
     """
 
     def setValues(

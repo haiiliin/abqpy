@@ -14,7 +14,6 @@ class ViewerOptions:
 
         import visualization
         session.viewerOptions
-
     """
 
     def setValues(

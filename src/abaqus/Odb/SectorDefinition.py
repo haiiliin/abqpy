@@ -18,7 +18,6 @@ class SectorDefinition:
 
         import odbAccess
         session.odbs[name].sectorDefinition
-
     """
 
     # An Int specifying the number of sectors in the cyclic symmetry model.

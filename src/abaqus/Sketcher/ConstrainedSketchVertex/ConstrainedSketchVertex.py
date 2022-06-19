@@ -10,7 +10,6 @@ class ConstrainedSketchVertex:
         import sketch
         mdb.models[name].sketches[name].vertices[i]
         mdb.models[name].sketches[name].vertices[i][i]
-
     """
 
     # A tuple of Floats specifying the*X*-, **Y**-, and **Z**-coordinates of the sketch vertex.

@@ -31,7 +31,6 @@ class Correlation(Amplitude):
 
         import load
         mdb.models[name].boundaryConditions[name].correlation[i]
-
     """
 
     # A String specifying the repository key.

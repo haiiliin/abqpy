@@ -19,7 +19,6 @@ class EngineeringFeatureDisplayOptions:
         import part
         session.viewports[name].layers[name].partDisplay.engineeringFeatureOptions
         session.viewports[name].partDisplay.engineeringFeatureOptions
-
     """
 
     def setValues(

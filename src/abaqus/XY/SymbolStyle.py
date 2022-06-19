@@ -23,7 +23,6 @@ class SymbolStyle:
         session.xyPlots[name].charts[name].axes2[i].axisData.curves[i].symbolStyle
         session.xyPlots[name].charts[name].curves[name].symbolStyle
         session.xyPlots[name].curves[name].symbolStyle
-
     """
 
     def __init__(

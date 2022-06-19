@@ -42,7 +42,6 @@ class OdbDisplayOptions:
         session.viewports[name].layers[name].partDisplay.displayGroupInstances[name].odbDisplayOptions
         session.viewports[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions
         session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions
-
     """
 
     # A DGCommonOptions object.

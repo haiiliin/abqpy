@@ -16,7 +16,6 @@ class ShearTestData:
     The corresponding analysis keywords are:
 
     - SHEAR TEST DATA
-
     """
 
     def __init__(self, table: tuple, shrinf: float = None):

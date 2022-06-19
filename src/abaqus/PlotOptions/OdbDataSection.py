@@ -17,7 +17,6 @@ class OdbDataSection:
 
         import visualization
         session.odbData[name].sections[i]
-
     """
 
     # A String specifying the set name. This attribute is read-only.

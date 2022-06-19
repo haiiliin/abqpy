@@ -45,7 +45,6 @@ class VelocityBaseMotionBCState(BoundaryConditionState):
     The corresponding analysis keywords are:
 
     - BASE MOTION
-
     """
 
     # A SymbolicConstant specifying the propagation state of the amplitude reference. Possible

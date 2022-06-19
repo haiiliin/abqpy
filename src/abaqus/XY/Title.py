@@ -28,7 +28,6 @@ class Title:
         import visualization
         session.defaultPlot.title
         session.xyPlots[name].title
-
     """
 
     # A Boolean specifying whether to show the default title. The default value is OFF.

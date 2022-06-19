@@ -63,7 +63,6 @@ class EulerianBCState(BoundaryConditionState):
     The corresponding analysis keywords are:
 
     - EULERIAN BOUNDARY
-
     """
 
     # A SymbolicConstant specifying the material flow conditions to be defined. Possible

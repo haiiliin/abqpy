@@ -20,7 +20,6 @@ class MPCSection(Section):
     The corresponding analysis keywords are:
 
     - MPC
-
     """
 
     def __init__(

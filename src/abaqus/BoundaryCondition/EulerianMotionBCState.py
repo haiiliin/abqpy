@@ -114,7 +114,6 @@ class EulerianMotionBCState(BoundaryConditionState):
     The corresponding analysis keywords are:
 
     - EULERIAN MESH MOTION
-
     """
 
     # A SymbolicConstant specifying the 1-direction translational constraint on the center of

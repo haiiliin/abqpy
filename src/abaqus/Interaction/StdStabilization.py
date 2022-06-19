@@ -19,7 +19,6 @@ class StdStabilization(ContactStabilization):
     The corresponding analysis keywords are:
 
     - CONTACT STABILIZATION
-
     """
 
     def __init__(

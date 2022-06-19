@@ -58,7 +58,6 @@ class SubmodelSBState(LoadState):
 
     - SUBMODEL
             - DSLOAD
-
     """
 
     # A SymbolicConstant specifying the propagation state of the **globalStep** member. Possible

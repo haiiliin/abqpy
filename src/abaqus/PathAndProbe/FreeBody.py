@@ -13,7 +13,6 @@ class FreeBody:
 
         import visualization
         session.freeBodies[name]
-
     """
 
     def FreeBodyFromEdges(

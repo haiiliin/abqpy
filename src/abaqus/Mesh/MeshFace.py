@@ -24,7 +24,6 @@ class MeshFace:
         mdb.models[name].rootAssembly.allInstances[name].elemFaces[i]
         mdb.models[name].rootAssembly.instances[name].elementFaces[i]
         mdb.models[name].rootAssembly.instances[name].elemFaces[i]
-
     """
 
     # An Int specifying an Int specifying the element label.

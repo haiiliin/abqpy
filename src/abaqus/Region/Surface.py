@@ -46,7 +46,6 @@ class Surface:
         mdb.models[name].rootAssembly.instances[name].surfaces[name]
         mdb.models[name].rootAssembly.modelInstances[i].surfaces[name]
         mdb.models[name].rootAssembly.surfaces[name]
-
     """
 
     # An EdgeArray object.

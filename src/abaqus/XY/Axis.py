@@ -61,7 +61,6 @@ class Axis:
         session.defaultChartOptions.defaultAxis2Options
         session.xyPlots[name].charts[name].axes1[i]
         session.xyPlots[name].charts[name].axes2[i]
-
     """
 
     # An Int specifying the frequency of the labels with respect to the tick marks. The

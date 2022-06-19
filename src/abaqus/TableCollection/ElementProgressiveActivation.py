@@ -17,7 +17,6 @@ class ElementProgressiveActivation:
     The corresponding analysis keywords are:
 
     - *ELEMENT PROGRESSIVE ACTIVATION
-
     """
 
     def __init__(

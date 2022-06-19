@@ -16,7 +16,6 @@ class DesignResponse:
 
         import optimization
         mdb.models[name].optimizationTasks[name].designResponses[name]
-
     """
 
     # A String specifying the design response repository key.

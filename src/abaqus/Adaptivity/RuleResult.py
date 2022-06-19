@@ -18,7 +18,6 @@ class RuleResult:
 
         import job
         mdb.adaptivityProcesses[name].iterations[i].ruleResults[name]
-
     """
 
     def __init__(

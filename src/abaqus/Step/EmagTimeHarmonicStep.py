@@ -110,7 +110,6 @@ class EmagTimeHarmonicStep(AnalysisStep):
 
     - ELECTROMAGNETIC TIME HARMONIC
             - STEP
-
     """
 
     # A SymbolicConstant specifying the type of matrix storage. Possible values are SYMMETRIC,

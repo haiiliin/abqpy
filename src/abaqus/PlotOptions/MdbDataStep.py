@@ -18,7 +18,6 @@ class MdbDataStep:
 
         import visualization
         session.mdbData[name].steps[i]
-
     """
 
     # A MdbDataFrameArray object specifying the list of frames. The list is read-only. There

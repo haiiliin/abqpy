@@ -16,7 +16,6 @@ class IgnoredEdgeArray:
         import assembly
         mdb.models[name].rootAssembly.allInstances[name].ignoredEdges
         mdb.models[name].rootAssembly.instances[name].ignoredEdges
-
     """
 
     def findAt(self, coordinates: tuple, printWarning: Boolean = True):

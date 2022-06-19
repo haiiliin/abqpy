@@ -23,7 +23,6 @@ class AnnealTemperature:
     The corresponding analysis keywords are:
 
     - ANNEAL TEMPERATURE
-
     """
 
     def __init__(self, table: tuple, dependencies: int = 0):

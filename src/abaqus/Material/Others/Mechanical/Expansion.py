@@ -47,7 +47,6 @@ class Expansion:
     The corresponding analysis keywords are:
 
     - EXPANSION
-
     """
 
     def __init__(

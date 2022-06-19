@@ -133,7 +133,6 @@ class BuckleStep(AnalysisStep):
 
     - BUCKLE
             - STEP
-
     """
 
     # A String specifying the repository key.

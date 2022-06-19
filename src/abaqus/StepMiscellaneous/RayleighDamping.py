@@ -17,7 +17,6 @@ class RayleighDamping:
 
         import step
         mdb.models[name].steps[name].rayleighDamping
-
     """
 
     # A RayleighDampingComponentArray object.

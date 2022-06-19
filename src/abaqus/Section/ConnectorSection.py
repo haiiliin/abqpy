@@ -23,7 +23,6 @@ class ConnectorSection(Section):
     - CONNECTOR SECTION
             - CONNECTOR BEHAVIOR
             - CONNECTOR CONSTITUTIVE REFERENCE
-
     """
 
     def __init__(

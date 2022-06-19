@@ -2,7 +2,6 @@ from .Profile import Profile
 
 
 class IProfile(Profile):
-
     """The IProfile object defines the properties of an I profile.
     The IProfile object is derived from the Profile object.
 
@@ -20,7 +19,6 @@ class IProfile(Profile):
     The corresponding analysis keywords are:
 
     - BEAM SECTION
-
     """
 
     def __init__(

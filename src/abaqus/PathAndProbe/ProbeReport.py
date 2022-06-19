@@ -17,7 +17,6 @@ class ProbeReport:
         import visualization
         session.defaultProbeReport
         session.probeReport
-
     """
 
     def setValues(

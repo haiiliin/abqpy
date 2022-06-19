@@ -23,7 +23,6 @@ class MoistureSwelling:
     The corresponding analysis keywords are:
 
     - MOISTURE SWELLING
-
     """
 
     # A Ratios object.

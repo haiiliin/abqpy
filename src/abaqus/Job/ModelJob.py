@@ -114,7 +114,6 @@ class ModelJob(Job):
         import job
         mdb.adaptivityProcesses[name].job
         mdb.jobs[name]
-
     """
 
     # A String specifying the name of the new job. The name must be a valid Abaqus/CAE object

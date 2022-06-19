@@ -34,7 +34,6 @@ class ConcreteDamagedPlasticity:
     The corresponding analysis keywords are:
 
     - CONCRETE DAMAGED PLASTICITY
-
     """
 
     # A ConcreteCompressionHardening object.

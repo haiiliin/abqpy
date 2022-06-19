@@ -17,7 +17,6 @@ class DirectDampingByFrequencyComponent:
 
         import step
         mdb.models[name].steps[name].directDampingByFrequency.components[i]
-
     """
 
     # A Float specifying the frequency value in cycles/time.

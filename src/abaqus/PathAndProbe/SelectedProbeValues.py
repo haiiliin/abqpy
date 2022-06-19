@@ -25,7 +25,6 @@ class SelectedProbeValues:
 
         import visualization
         session.selectedProbeValues
-
     """
 
     # An Int specifying the length of the **values** member.

@@ -29,7 +29,6 @@ class BeadTask(OptimizationTask):
 
         import optimization
         mdb.models[name].optimizationTasks[name]
-
     """
 
     # A repository of DesignResponse objects.

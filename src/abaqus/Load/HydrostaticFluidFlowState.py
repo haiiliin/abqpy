@@ -48,7 +48,6 @@ class HydrostaticFluidFlowState(LoadState):
     The corresponding analysis keywords are:
 
     - FLUID FLUX
-
     """
 
     # A Float specifying the load magnitude.

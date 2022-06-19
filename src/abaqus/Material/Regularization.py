@@ -19,7 +19,6 @@ class Regularization:
     The corresponding analysis keywords are:
 
     - DASHPOT
-
     """
 
     def __init__(

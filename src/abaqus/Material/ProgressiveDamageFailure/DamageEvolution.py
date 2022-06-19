@@ -139,7 +139,6 @@ class DamageEvolution:
     The corresponding analysis keywords are:
 
     - DAMAGE EVOLUTION
-
     """
 
     def __init__(

@@ -36,7 +36,6 @@ class BrittleShear:
     The corresponding analysis keywords are:
 
     - BRITTLE SHEAR
-
     """
 
     def __init__(

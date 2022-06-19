@@ -50,7 +50,6 @@ class OdbAssemblyBase:
 
         import odbAccess
         session.odbs[name].rootAssembly
-
     """
 
     # A repository of OdbInstance objects.

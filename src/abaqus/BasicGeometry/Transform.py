@@ -11,7 +11,6 @@ class Transform:
 
         import part
         import assembly
-
     """
 
     def matrix(self):

@@ -17,7 +17,6 @@ class PropertyAssembly(AssemblyBase):
 
         import assembly
         mdb.models[name].rootAssembly
-
     """
 
     def SectionAssignment(

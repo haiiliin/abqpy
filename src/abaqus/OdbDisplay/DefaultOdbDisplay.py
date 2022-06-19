@@ -45,7 +45,6 @@ class DefaultOdbDisplay:
 
         import visualization
         session.defaultOdbDisplay
-
     """
 
     # A BasicOptions object.

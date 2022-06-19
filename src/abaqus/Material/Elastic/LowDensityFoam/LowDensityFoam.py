@@ -19,7 +19,6 @@ class LowDensityFoam:
     The corresponding analysis keywords are:
 
     - LOW DENSITY FOAM
-
     """
 
     # A UniaxialTestData object.

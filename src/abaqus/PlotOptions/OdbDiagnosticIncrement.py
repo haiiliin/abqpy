@@ -34,7 +34,6 @@ class OdbDiagnosticIncrement:
 
         import visualization
         session.odbData[name].diagnosticData.steps[i].increments[i]
-
     """
 
     # A repository of OdbDiagnosticAttempt objects.

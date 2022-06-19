@@ -31,7 +31,6 @@ class FailStress:
     The corresponding analysis keywords are:
 
     - FAIL STRESS
-
     """
 
     def __init__(

@@ -49,7 +49,6 @@ class LoadModel(ModelBase):
     .. code-block:: python
 
         mdb.models[name]
-
     """
 
     def BodyCharge(

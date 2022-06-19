@@ -21,7 +21,6 @@ class IgnoredEdge:
         import assembly
         mdb.models[name].rootAssembly.allInstances[name].ignoredEdges[i]
         mdb.models[name].rootAssembly.instances[name].ignoredEdges[i]
-
     """
 
     # An Int specifying the index of the IgnoredEdge in the IgnoredEdgeArray.

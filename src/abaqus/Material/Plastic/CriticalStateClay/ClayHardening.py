@@ -27,7 +27,6 @@ class ClayHardening:
     The corresponding analysis keywords are:
 
     - CLAY HARDENING
-
     """
 
     def __init__(

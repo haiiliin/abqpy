@@ -88,7 +88,6 @@ class Step(AdaptivityStep, OutputStep):
 
         import step
         mdb.models[name].steps[name]
-
     """
 
     pass

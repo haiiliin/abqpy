@@ -17,7 +17,6 @@ class FilterOdb(OdbBase):
 
         import odbAccess
         session.odbs[name]
-
     """
 
     def ButterworthFilter(

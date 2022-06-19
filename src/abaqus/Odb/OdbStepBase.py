@@ -52,7 +52,6 @@ class OdbStepBase:
 
         import odbAccess
         session.odbs[name].steps[name]
-
     """
 
     # An Int specifying the step number.

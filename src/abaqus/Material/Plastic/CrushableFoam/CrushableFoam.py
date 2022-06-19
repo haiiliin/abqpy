@@ -37,7 +37,6 @@ class CrushableFoam:
     The corresponding analysis keywords are:
 
     - CRUSHABLE FOAM
-
     """
 
     # A CrushableFoamHardening object.

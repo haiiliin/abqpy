@@ -16,7 +16,6 @@ class AcisFile:
     .. code-block:: python
 
         import part
-
     """
 
     # An Int specifying the number of parts in the object.

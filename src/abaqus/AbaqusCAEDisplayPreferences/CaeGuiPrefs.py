@@ -18,7 +18,6 @@ class CaeGuiPrefs:
 
         import caePrefsAccess
         caePrefsAccess.openGuiPreferences(...)
-
     """
 
     fileName:str = ""

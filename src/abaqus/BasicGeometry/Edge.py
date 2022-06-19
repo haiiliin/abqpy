@@ -51,7 +51,6 @@ class Edge:
         mdb.models[name].rootAssembly.modelInstances[i].surfaces[name].edges[i]
         mdb.models[name].rootAssembly.sets[name].edges[i]
         mdb.models[name].rootAssembly.surfaces[name].edges[i]
-
     """
 
     # An Int specifying the index of the edge in the EdgeArray.

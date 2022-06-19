@@ -28,7 +28,6 @@ class PredefinedFieldModel(
     .. code-block:: python
 
         mdb.models[name]
-
     """
 
     def FluidCavityPressure(
