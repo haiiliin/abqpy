@@ -1,0 +1,1477 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="Datum" href="part_assembly/datum.html" /><link rel="prev" title="Part" href="part.html" />
+
+    <meta name="generator" content="sphinx-4.5.0, furo 2022.06.04.1"/>
+        <title>Assembly - AbqPy 2016a0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../../index.html"><div class="brand">AbqPy 2016a0 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../../index.html">
+  
+  
+  <span class="sidebar-brand-text">AbqPy 2016a0 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../summary.html">API Summary</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../summary/header.html">Header of the Python script</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../summary/mdb.html">Abaqus Model Database</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../summary/mdb/model.html">Abaqus Model</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/adaptivity.html">Adaptivity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/amplitude.html">Amplitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/assembly.html">Assembly</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/bc.html">Boundary Condition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/calibration.html">Calibration of Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/constraint.html">Constraint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/field.html">Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/filter.html">Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/interaction.html">Interaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/load.html">Load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/material.html">Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/optimization.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/output.html">Output Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/part.html">Part</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/predefined.html">Predefined Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/profile.html">Beam Section Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/property.html">Property</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../summary/mdb/model/section.html">Section</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../summary/mdb/model/section/connector.html">Connector</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/sketcher.html">Sketcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../summary/mdb/model/step.html">Step</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../summary/mdb/model/step/step_miscellaneous.html">Step Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../summary/mdb/job.html">Abaqus Job</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../summary/odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../summary/session.html">Abaqus Session</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../../../references.html">API Reference</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../../mdb.html">Abaqus Model Database</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 current has-children"><a class="reference internal" href="../model.html">Model</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="adaptivity.html">Adaptivity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="amplitude.html">Amplitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bc.html">Boundary Condition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="calibration.html">Calibration of Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="constraint.html">Constraint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="field.html">Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="filter.html">Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interaction.html">Interaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="load.html">Load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material.html">Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mesh.html">Mesh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="optimization.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="output.html">Output Request</a></li>
+<li class="toctree-l4 current has-children"><a class="reference internal" href="part_assembly.html">Part and Assembly</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="part.html">Part</a></li>
+<li class="toctree-l5 current current-page"><a class="current reference internal" href="#">Assembly</a></li>
+<li class="toctree-l5"><a class="reference internal" href="part_assembly/datum.html">Datum</a></li>
+<li class="toctree-l5"><a class="reference internal" href="part_assembly/engineering.html">Engineering Feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="part_assembly/feature.html">Feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="part_assembly/geometry.html">Basic Geometry</a></li>
+<li class="toctree-l5"><a class="reference internal" href="part_assembly/region.html">Region</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="predefined.html">Predefined Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="profile.html">Beam Section Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="property.html">Property</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="section.html">Section</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="section/connector.html">Connector</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sketcher.html">Sketcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="step.html">Step</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="step/step_miscellaneous.html">Step Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../job.html">Job</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../annotation.html">Annotation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../edit_mesh.html">Edit Mesh</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../session.html">Abaqus Session</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../session/animation.html">Animation Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../session/canvas.html">Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../session/display_options.html">Display Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../session/display.html">Display Group</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../session/field_report.html">FieldReport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../session/odb_display.html">Odb Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../session/path.html">Path and Probe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../session/plot_options.html">Plot Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../session/print.html">Print</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../session/xy.html">XY</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../kernel.html">Kernel</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../kernel/cae_display_preferences.html">Abaqus CAE Display Preferences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../kernel/input.html">Input File Parser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../kernel/kernel.html">Custom Kernel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../kernel/messaging.html">Messaging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../kernel/table_collection.html">Table Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../kernel/text_representation.html">Text Representation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../kernel/utility.html">Utility and View</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="assembly">
+<h1>Assembly<a class="headerlink" href="#assembly" title="Permalink to this headline">#</a></h1>
+<p>Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly operations. Assembly commands create Feature objects on only the rootAssembly object. The commands that create Feature objects on only the Part object are described in Part commands. The commands that create Feature objects on both the Part and the rootAssembly objects are described in Feature commands.</p>
+<section id="create-instances">
+<h2>Create instances<a class="headerlink" href="#create-instances" title="Permalink to this headline">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Assembly.AssemblyModel.AssemblyModel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AssemblyModel</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/AssemblyModel.py#L12-L89"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.AssemblyModel.AssemblyModel" title="Permalink to this definition">#</a></dt>
+<dd><p>Abaqus creates a Model object named <cite>Model-1</cite> when a session is started.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.Instance" title="abaqus.Assembly.AssemblyModel.AssemblyModel.Instance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Instance</span></code></a>(name, objectToCopy)</p></td>
+<td><p>This method copies a PartInstance object from the specified model and creates a new PartInstance object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches" title="abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convertAllSketches</span></code></a>([regenerate, ...])</p></td>
+<td><p>This method converts all sketches from Abaqus 6.5 or earlier to the equivalent ConstrainedSketch objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances" title="abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances"><code class="xref py py-obj docutils literal notranslate"><span class="pre">linkInstances</span></code></a>(instancesMap)</p></td>
+<td><p>This method links the selected PartInstance objects to the corresponding PartInstance objects from the specified models.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.AssemblyModel.AssemblyModel.Instance">
+<span class="sig-name descname"><span class="pre">Instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">objectToCopy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance" title="abaqus.Assembly.PartInstance.PartInstance"><span class="pre">PartInstance</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/AssemblyModel.py#L24-L47"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.Instance" title="Permalink to this definition">#</a></dt>
+<dd><p>This method copies a PartInstance object from the specified model and creates a new
+PartInstance object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>objectToCopy</strong></dt><dd><p>A PartInstance object to be copied.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Model</span></code> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Instance</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches">
+<span class="sig-name descname"><span class="pre">convertAllSketches</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regenerate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">convertReversedSketches</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/AssemblyModel.py#L49-L70"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches" title="Permalink to this definition">#</a></dt>
+<dd><p>This method converts all sketches from Abaqus 6.5 or earlier to the equivalent
+ConstrainedSketch objects.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>regenerate</strong></dt><dd><p>A Boolean specifying if all the features in assembly as well as in all the parts in the
+model should be regenerated after the conversion. The default value is True.</p>
+</dd>
+<dt><strong>convertReversedSketches</strong></dt><dd><p>A Boolean specifying whether sketches in analytic rigid parts should be converted even
+if they cause the orientation of surfaces defined on them to be flipped. The default
+value is True.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-class docutils literal notranslate"><span class="pre">python:list</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">strings</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">describing</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">any</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">warnings</span></code> or <code class="xref py py-obj docutils literal notranslate"><span class="pre">errors</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">encountered</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">during</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">conversion</span></code></dt><dd></dd>
+<dt>process.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances">
+<span class="sig-name descname"><span class="pre">linkInstances</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instancesMap</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/AssemblyModel.py#L72-L89"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances" title="Permalink to this definition">#</a></dt>
+<dd><p>This method links the selected PartInstance objects to the corresponding PartInstance
+objects from the specified models. If all instances of a Part are selected for linking,
+the Part will be linked as well. If not, a new linked child Part object will be created
+and added to the repository.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>instancesMap</strong></dt><dd><p>A tuple of tuples containing the instance name to be linked and the corresponding
+PartInstance object to which it will be linked.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-class docutils literal notranslate"><span class="pre">python:list</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">strings</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">describing</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">any</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">warnings</span></code> or <code class="xref py py-obj docutils literal notranslate"><span class="pre">errors</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">encountered</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">during</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">conversion</span></code></dt><dd></dd>
+<dt>process.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="object-features">
+<h2>Object features<a class="headerlink" href="#object-features" title="Permalink to this headline">#</a></h2>
+<section id="id1">
+<h3>Assembly<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="connectororientation">
+<h3>ConnectorOrientation<a class="headerlink" href="#connectororientation" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Assembly.ConnectorOrientation.ConnectorOrientation">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConnectorOrientation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Set.Set" title="abaqus.Region.Set.Set"><span class="pre">Set</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="part_assembly/datum.html#abaqus.Datum.DatumCsys.DatumCsys" title="abaqus.Datum.DatumCsys.DatumCsys"><span class="pre">DatumCsys</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'AXIS_1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angle1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">orient2sameAs1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="part_assembly/datum.html#abaqus.Datum.DatumCsys.DatumCsys" title="abaqus.Datum.DatumCsys.DatumCsys"><span class="pre">DatumCsys</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'AXIS_1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angle2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/ConnectorOrientation.py#L6-L87"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ConnectorOrientation.ConnectorOrientation" title="Permalink to this definition">#</a></dt>
+<dd><p>The ConnectorOrientation object is used to assign a connector orientation to a
+connector.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">assembly</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">connectorOrientations</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<span class="kn">import</span> <span class="nn">odbAccess</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">connectorOrientations</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.setValues" title="abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
+<td><p>This method modifies the ConnectorOrientation object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/ConnectorOrientation.py#L85-L87"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.setValues" title="Permalink to this definition">#</a></dt>
+<dd><p>This method modifies the ConnectorOrientation object.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="connectororientationarray">
+<h3>ConnectorOrientationArray<a class="headerlink" href="#connectororientationarray" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientationArray">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConnectorOrientationArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/ConnectorOrientationArray.py#L4-L6"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientationArray" title="Permalink to this definition">#</a></dt>
+<dd><p class="rubric">Methods</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>findAt</strong></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<section id="feature">
+<h3>Feature<a class="headerlink" href="#feature" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Assembly.Feature.Feature">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Feature</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/Feature.py#L7-L346"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.Feature.Feature" title="Permalink to this definition">#</a></dt>
+<dd><p>The following commands operate on Feature objects. For more information about the
+Feature object, see Feature object.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">assembly</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.Feature.Feature.AttachmentLines" title="abaqus.Assembly.Feature.Feature.AttachmentLines"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AttachmentLines</span></code></a>(name, points, sourceFaces, ...)</p></td>
+<td><p>This method creates a Feature object by creating attachment lines between the given set of source and target faces.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Assembly.Feature.Feature.Coaxial" title="abaqus.Assembly.Feature.Feature.Coaxial"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Coaxial</span></code></a>(movableAxis, fixedAxis, flip)</p></td>
+<td><p>This method moves an instance so that its selected face is coaxial with the selected face of a fixed instance.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.Feature.Feature.CoincidentPoint" title="abaqus.Assembly.Feature.Feature.CoincidentPoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CoincidentPoint</span></code></a>(movablePoint, fixedPoint)</p></td>
+<td><p>This method moves an instance so that a specified point is coincident with a specified point of a fixed instance.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Assembly.Feature.Feature.EdgeToEdge" title="abaqus.Assembly.Feature.Feature.EdgeToEdge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EdgeToEdge</span></code></a>(movableAxis, fixedAxis, flip, ...)</p></td>
+<td><p>This method moves an instance so that its edge is parallel to an edge of a fixed instance.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.Feature.Feature.FaceToFace" title="abaqus.Assembly.Feature.Feature.FaceToFace"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FaceToFace</span></code></a>(movablePlane, fixedPlane, flip, ...)</p></td>
+<td><p>This method moves an instance so that its face is coincident with a face of a fixed instance.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Assembly.Feature.Feature.ParallelCsys" title="abaqus.Assembly.Feature.Feature.ParallelCsys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParallelCsys</span></code></a>(movableCsys, fixedCsys)</p></td>
+<td><p>This method moves an instance so that its Datum coordinate system is parallel to a Datum coordinate system of a fixed instance.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.Feature.Feature.ParallelEdge" title="abaqus.Assembly.Feature.Feature.ParallelEdge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParallelEdge</span></code></a>(movableAxis, fixedAxis, flip)</p></td>
+<td><p>This method moves an instance so that its edge is parallel to an edge of a fixed instance.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Assembly.Feature.Feature.ParallelFace" title="abaqus.Assembly.Feature.Feature.ParallelFace"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParallelFace</span></code></a>(movablePlane, fixedPlane, flip)</p></td>
+<td><p>This method moves an instance so that its face is parallel to a face of a fixed instance.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.Feature.Feature.AttachmentLines">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AttachmentLines</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sourceFaces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.Face.Face" title="abaqus.BasicGeometry.Face.Face"><span class="pre">Face</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sourceElementFaces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="mesh.html#abaqus.Mesh.MeshFace.MeshFace" title="abaqus.Mesh.MeshFace.MeshFace"><span class="pre">MeshFace</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">targetFaces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.Face.Face" title="abaqus.BasicGeometry.Face.Face"><span class="pre">Face</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">targetElementFaces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="mesh.html#abaqus.Mesh.MeshFace.MeshFace" title="abaqus.Mesh.MeshFace.MeshFace"><span class="pre">MeshFace</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'PROJECT_BY_PROXIMITY'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionDirStartPt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionDirEndPt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sourceToTargetProjMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'PROJECT_BY_NUMBER'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numProjections</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionDistance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flipSourceToTargetDirection</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><span class="pre">Feature</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/Feature.py#L20-L106"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.Feature.Feature.AttachmentLines" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a Feature object by creating attachment lines between the given set
+of source and target faces. The given points are first projected onto the source faces
+using the specified projection method. The points are then projected normal to the
+source faces onto the target faces. The user can specify the number of projections or
+the length of projection vector for projection onto the target faces. The lines are then
+created between the source face and the closest target face. Subsequent lines are
+created between the target faces.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying a unique Feature name.</p>
+</dd>
+<dt><strong>points</strong></dt><dd><p>A tuple of points. Each point can be a ConstrainedSketchVertex, Datum point, Reference point, an
+Attachment point, orphan mesh Node, or an Interesting point object.</p>
+</dd>
+<dt><strong>sourceFaces</strong></dt><dd><p>A sequence of Face objects specifying the geometry faces onto which the points are to be
+projected.</p>
+</dd>
+<dt><strong>sourceElementFaces</strong></dt><dd><p>A sequence of MeshFace objects specifying the orphan mesh element faces onto which the
+points are to be projected.</p>
+</dd>
+<dt><strong>targetFaces</strong></dt><dd><p>A sequence of Face objects specifying the geometry faces on which the attachment lines
+will terminate.</p>
+</dd>
+<dt><strong>targetElementFaces</strong></dt><dd><p>A sequence of MeshFace objects specifying the orphan mesh element faces on which the
+attachment lines will terminate.</p>
+</dd>
+<dt><strong>projectionMethod</strong></dt><dd><p>A SymbolicConstant specifying the method to be used to project onto source faces.
+Possible values are PROJECT_BY_PROXIMITY and PROJECT_BY_DIRECTION. The default value is
+PROJECT_BY_PROXIMITY.</p>
+</dd>
+<dt><strong>projectionDirStartPt</strong></dt><dd><p>A point specifying the start point of the projection direction to project onto source
+faces. The point can be a ConstrainedSketchVertex, Datum point, Reference point, Attachment point, orphan
+mesh Node, Interesting Point object, or a tuple of Floats representing the coordinates
+of a point.</p>
+</dd>
+<dt><strong>projectionDirEndPt</strong></dt><dd><p>A point specifying the end point of the projection direction to project onto source
+faces. The point can be a ConstrainedSketchVertex, Datum point, Reference point, Attachment point, orphan
+mesh Node, Interesting point object, or a tuple of Floats representing the coordinates
+of a point.</p>
+</dd>
+<dt><strong>sourceToTargetProjMethod</strong></dt><dd><p>A SymbolicConstant specifying the method to be used to project onto target faces.
+Possible values are PROJECT_BY_NUMBER and PROJECT_BY_DISTANCE. The default value is
+PROJECT_BY_NUMBER.</p>
+</dd>
+<dt><strong>numProjections</strong></dt><dd><p>An integer specifying the maximum number of layers each point should be projected onto
+when the source to target projection method is PROJECT_BY_NUMBER.</p>
+</dd>
+<dt><strong>projectionDistance</strong></dt><dd><p>A float specifying the maximum distance of the projection vector when the source to
+target projection method is PROJECT_BY_DISTANCE.</p>
+</dd>
+<dt><strong>flipSourceToTargetDirection</strong></dt><dd><p>A Boolean specifying whether the computed projection direction from the source to the
+target faces should be flipped.</p>
+</dd>
+<dt><strong>setName</strong></dt><dd><p>A String specifying a unique set name.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">AttachmentLines</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.Feature.Feature.Coaxial">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Coaxial</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">movableAxis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixedAxis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flip</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><span class="pre">Feature</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/Feature.py#L108-L138"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.Feature.Feature.Coaxial" title="Permalink to this definition">#</a></dt>
+<dd><p>This method moves an instance so that its selected face is coaxial with the selected
+face of a fixed instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>movableAxis</strong></dt><dd><p>A cylindrical or conical Face on the part instance to be moved.</p>
+</dd>
+<dt><strong>fixedAxis</strong></dt><dd><p>A cylindrical or conical Face on the part instance that remains fixed.</p>
+</dd>
+<dt><strong>flip</strong></dt><dd><p>A Boolean specifying whether the axes are forward aligned (OFF) or reverse aligned (ON).</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>AbaqusException.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">AttachmentLines</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.Feature.Feature.CoincidentPoint">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CoincidentPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">movablePoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixedPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><span class="pre">Feature</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/Feature.py#L140-L167"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.Feature.Feature.CoincidentPoint" title="Permalink to this definition">#</a></dt>
+<dd><p>This method moves an instance so that a specified point is coincident with a specified
+point of a fixed instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>movablePoint</strong></dt><dd><p>A ConstrainedSketchVertex, a Datum point, or a ReferencePoint or a mesh node from an orphan mesh on the
+part instance to be moved.</p>
+</dd>
+<dt><strong>fixedPoint</strong></dt><dd><p>A ConstrainedSketchVertex, a Datum point, or a ReferencePoint or a mesh node from an orphan mesh on the
+part instance to remain fixed.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>feature: <a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A Feature object</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">AttachmentLines</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.Feature.Feature.EdgeToEdge">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EdgeToEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">movableAxis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixedAxis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flip</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clearance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><span class="pre">Feature</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/Feature.py#L169-L207"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.Feature.Feature.EdgeToEdge" title="Permalink to this definition">#</a></dt>
+<dd><p>This method moves an instance so that its edge is parallel to an edge of a fixed
+instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>movableAxis</strong></dt><dd><p>A straight Edge, a Datum axis, or an element edge from an orphan mesh on the part
+instance to be moved.</p>
+</dd>
+<dt><strong>fixedAxis</strong></dt><dd><p>A straight Edge, a Datum axis, or an element edge from an orphan mesh on the part
+instance to remain fixed.</p>
+</dd>
+<dt><strong>flip</strong></dt><dd><p>A Boolean specifying whether the edges are forward aligned (OFF) or reverse aligned
+(ON).</p>
+</dd>
+<dt><strong>clearance</strong></dt><dd><p>A Float specifying the distance between the two edges (for two-dimensional and
+axisymmetric instances only).</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> Object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>AbaqusException.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">AttachmentLines</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.Feature.Feature.FaceToFace">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FaceToFace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">movablePlane</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixedPlane</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flip</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clearance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><span class="pre">Feature</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/Feature.py#L209-L246"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.Feature.Feature.FaceToFace" title="Permalink to this definition">#</a></dt>
+<dd><p>This method moves an instance so that its face is coincident with a face of a fixed
+instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>movablePlane</strong></dt><dd><p>A planar face, a Datum plane, or a face from an orphan mesh on the part instance to be
+moved.</p>
+</dd>
+<dt><strong>fixedPlane</strong></dt><dd><p>A planar face, a Datum plane, or a face from an orphan mesh on the part instance to
+remain fixed.</p>
+</dd>
+<dt><strong>flip</strong></dt><dd><p>A Boolean specifying whether the normals to the faces are forward aligned (OFF) or
+reverse aligned (ON).</p>
+</dd>
+<dt><strong>clearance</strong></dt><dd><p>A Float specifying the distance between the two faces.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> Object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>AbaqusException.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">AttachmentLines</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.Feature.Feature.ParallelCsys">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ParallelCsys</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">movableCsys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixedCsys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><span class="pre">Feature</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/Feature.py#L248-L276"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.Feature.Feature.ParallelCsys" title="Permalink to this definition">#</a></dt>
+<dd><p>This method moves an instance so that its Datum coordinate system is parallel to a Datum
+coordinate system of a fixed instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>movableCsys</strong></dt><dd><p>A Datum coordinate system on the part instance to be moved.</p>
+</dd>
+<dt><strong>fixedCsys</strong></dt><dd><p>A Datum coordinate system on the part instance to remain fixed.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>AbaqusException.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">AttachmentLines</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.Feature.Feature.ParallelEdge">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ParallelEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">movableAxis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixedAxis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flip</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><span class="pre">Feature</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/Feature.py#L278-L311"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.Feature.Feature.ParallelEdge" title="Permalink to this definition">#</a></dt>
+<dd><p>This method moves an instance so that its edge is parallel to an edge of a fixed
+instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>movableAxis</strong></dt><dd><p>A straight Edge, a Datum axis, or an element edge from an orphan mesh on the part
+instance to be moved.</p>
+</dd>
+<dt><strong>fixedAxis</strong></dt><dd><p>A straight Edge, a Datum axis, or an element edge from an orphan mesh on the part
+instance to remain fixed.</p>
+</dd>
+<dt><strong>flip</strong></dt><dd><p>A Boolean specifying whether the edges are forward aligned (OFF) or reverse aligned
+(ON).</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>AbaqusException.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">AttachmentLines</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.Feature.Feature.ParallelFace">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ParallelFace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">movablePlane</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixedPlane</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flip</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><span class="pre">Feature</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/Feature.py#L313-L346"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.Feature.Feature.ParallelFace" title="Permalink to this definition">#</a></dt>
+<dd><p>This method moves an instance so that its face is parallel to a face of a fixed
+instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>movablePlane</strong></dt><dd><p>A planar face, a Datum plane, or a face from an orphan mesh on the part instance to be
+moved.</p>
+</dd>
+<dt><strong>fixedPlane</strong></dt><dd><p>A planar face, a Datum plane, or a face from an orphan mesh on the part instance to
+remain fixed.</p>
+</dd>
+<dt><strong>flip</strong></dt><dd><p>A Boolean specifying whether the normals to the faces are forward aligned (OFF) or
+reverse aligned (ON).</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>AbaqusException.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">AttachmentLines</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="modelinstance">
+<h3>ModelInstance<a class="headerlink" href="#modelinstance" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="partinstance">
+<h3>PartInstance<a class="headerlink" href="#partinstance" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Assembly.PartInstance.PartInstance">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PartInstance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">part</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part.html#abaqus.Part.Part.Part" title="abaqus.Part.Part.Part"><span class="pre">Part</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">autoOffset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dependent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/PartInstance.py#L23-L620"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.PartInstance.PartInstance" title="Permalink to this definition">#</a></dt>
+<dd><p>A PartInstance object is an instance of a Part object.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">assembly</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">allInstances</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">instances</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name: str</strong></dt><dd><p>A String specifying the repository key. The name must be a valid <code class="xref py py-class docutils literal notranslate"><span class="pre">Abaqus</span></code> object name.</p>
+</dd>
+<dt><strong>dependent: Boolean</strong></dt><dd><p>A Boolean specifying whether the part instance is dependent or independent. If
+<strong>dependent=OFF</strong>, the part instance is independent. The default value is OFF.</p>
+</dd>
+<dt><strong>excludedFromSimulation: Boolean</strong></dt><dd><p>A Boolean specifying whether the part instance is excluded from the simulation. If
+<strong>excludedFromSimulation=ON</strong>, the part instance is excluded from the simulation. The
+default value is OFF.</p>
+</dd>
+<dt><strong>geometryValidity: Boolean</strong></dt><dd><p>A Boolean specifying the validity of the geometry of the instance. The value is
+computed, but it can be set to ON to perform feature and mesh operations on an invalid
+instance. There is no guarantee that such operations will work if the instance was
+originally invalid.</p>
+</dd>
+<dt><strong>analysisType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the part type. Possible values are DEFORMABLE_BODY,
+EULERIAN, DISCRETE_RIGID_SURFACE, and ANALYTIC_RIGID_SURFACE.</p>
+</dd>
+<dt><strong>referenceNode: int</strong></dt><dd><p>An Int specifying the reference node number. This member is valid only if
+<strong>analysisType=DISCRETE_RIGID_SURFACE</strong> or ANALYTIC_RIGID_SURFACE.</p>
+</dd>
+<dt><strong>part: Part</strong></dt><dd><p>A <a class="reference internal" href="part.html#abaqus.Part.Part.Part" title="abaqus.Part.Part.Part"><code class="xref py py-class docutils literal notranslate"><span class="pre">Part</span></code></a> object specifying the instanced part.</p>
+</dd>
+<dt><strong>sets: dict[str, Set]</strong></dt><dd><p>A repository of <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Set.Set" title="abaqus.Region.Set.Set"><code class="xref py py-class docutils literal notranslate"><span class="pre">Set</span></code></a> objects specifying the sets created on the part. For more
+information, see [Region
+commands](<a class="reference external" href="https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all">https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all</a>).</p>
+</dd>
+<dt><strong>surfaces: dict[str, Surface]</strong></dt><dd><p>A repository of <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Surface.Surface" title="abaqus.Region.Surface.Surface"><code class="xref py py-class docutils literal notranslate"><span class="pre">Surface</span></code></a> objects specifying the surfaces created on the part. For more
+information, see [Region
+commands](<a class="reference external" href="https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all">https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all</a>).</p>
+</dd>
+<dt><strong>skins: dict[str, Skin]</strong></dt><dd><p>A repository of <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Skin.Skin" title="abaqus.Region.Skin.Skin"><code class="xref py py-class docutils literal notranslate"><span class="pre">Skin</span></code></a> objects specifying the skins created on the part. For more
+information, see [Region
+commands](<a class="reference external" href="https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all">https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all</a>).</p>
+</dd>
+<dt><strong>stringers: dict[str, Stringer]</strong></dt><dd><p>A repository of <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Stringer.Stringer" title="abaqus.Region.Stringer.Stringer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Stringer</span></code></a> objects specifying the stringers created on the part. For more
+information, see [Region
+commands](<a class="reference external" href="https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all">https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all</a>).</p>
+</dd>
+<dt><strong>vertices: VertexArray</strong></dt><dd><p>A <a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.VertexArray.VertexArray" title="abaqus.BasicGeometry.VertexArray.VertexArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">VertexArray</span></code></a> object.</p>
+</dd>
+<dt><strong>ignoredVertices: IgnoredVertexArray</strong></dt><dd><p>An <a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray" title="abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">IgnoredVertexArray</span></code></a> object.</p>
+</dd>
+<dt><strong>edges: EdgeArray</strong></dt><dd><p>An <a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.EdgeArray.EdgeArray" title="abaqus.BasicGeometry.EdgeArray.EdgeArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">EdgeArray</span></code></a> object.</p>
+</dd>
+<dt><strong>ignoredEdges: IgnoredEdgeArray</strong></dt><dd><p>An <a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray" title="abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">IgnoredEdgeArray</span></code></a> object.</p>
+</dd>
+<dt><strong>faces: FaceArray</strong></dt><dd><p>A <a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.FaceArray.FaceArray" title="abaqus.BasicGeometry.FaceArray.FaceArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">FaceArray</span></code></a> object.</p>
+</dd>
+<dt><strong>cells: CellArray</strong></dt><dd><p>A <a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.CellArray.CellArray" title="abaqus.BasicGeometry.CellArray.CellArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">CellArray</span></code></a> object.</p>
+</dd>
+<dt><strong>datums: list[Datum]</strong></dt><dd><p>A repository of <a class="reference internal" href="part_assembly/datum.html#abaqus.Datum.Datum.Datum" title="abaqus.Datum.Datum.Datum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Datum</span></code></a> objects.</p>
+</dd>
+<dt><strong>elements: MeshElementArray</strong></dt><dd><p>A <a class="reference internal" href="mesh.html#abaqus.Mesh.MeshElementArray.MeshElementArray" title="abaqus.Mesh.MeshElementArray.MeshElementArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshElementArray</span></code></a> object.</p>
+</dd>
+<dt><strong>nodes: MeshNodeArray</strong></dt><dd><p>A <a class="reference internal" href="mesh.html#abaqus.Mesh.MeshNodeArray.MeshNodeArray" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshNodeArray</span></code></a> object.</p>
+</dd>
+<dt><strong>elemFaces: dict[str, MeshFace]</strong></dt><dd><p>A repository of <code class="xref py py-class docutils literal notranslate"><span class="pre">MeshFace</span></code>.:py:class:<cite>~abaqus.Mesh.MeshFace.MeshFace`</cite> objects specifying all the element faces in the part instance.
+For a given element and a given face index within that element, the corresponding
+<code class="xref py py-class docutils literal notranslate"><span class="pre">MeshFace</span></code>.:py:class:<cite>~abaqus.Mesh.MeshFace.MeshFace`</cite> object can be retrieved from the repository by using the key calculated as (i*8
++ j), where i and j are zero-based element and face indices, respectively.</p>
+</dd>
+<dt><strong>elementFaces: MeshFaceArray</strong></dt><dd><p>A <a class="reference internal" href="mesh.html#abaqus.Mesh.MeshFaceArray.MeshFaceArray" title="abaqus.Mesh.MeshFaceArray.MeshFaceArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshFaceArray</span></code></a> object.</p>
+</dd>
+<dt><strong>elemEdges: dict[str, MeshEdge]</strong></dt><dd><p>A repository of <code class="xref py py-class docutils literal notranslate"><span class="pre">MeshEdge</span></code>.:py:class:<cite>~abaqus.Mesh.MeshEdge.MeshEdge`</cite> objects specifying all the element edges in the part instance.
+For a given element and a given edge index on a given face within that element, the
+corresponding <code class="xref py py-class docutils literal notranslate"><span class="pre">MeshEdge</span></code>.:py:class:<cite>~abaqus.Mesh.MeshEdge.MeshEdge`</cite> object can be retrieved from the repository by using the key
+calculated as (i*32 + j*4 + k), where i, j, and k are zero-based element, face, and edge
+indices, respectively.</p>
+</dd>
+<dt><strong>elementEdges: MeshEdgeArray</strong></dt><dd><p>A <a class="reference internal" href="mesh.html#abaqus.Mesh.MeshEdgeArray.MeshEdgeArray" title="abaqus.Mesh.MeshEdgeArray.MeshEdgeArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshEdgeArray</span></code></a> object.</p>
+</dd>
+<dt><strong>referencePoints: dict[str, ReferencePoint]</strong></dt><dd><p>A repository of <a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.ReferencePoint.ReferencePoint" title="abaqus.BasicGeometry.ReferencePoint.ReferencePoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">ReferencePoint</span></code></a> objects.</p>
+</dd>
+<dt><strong>partName: str</strong></dt><dd><p>A String specifying the name of the part from which the instance was created.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.Contact" title="abaqus.Assembly.PartInstance.PartInstance.Contact"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Contact</span></code></a>(movableList, fixedList, direction, ...)</p></td>
+<td><p>This method translates an instance along the specified direction until it is in contact with a fixed instance.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.ConvertConstraints" title="abaqus.Assembly.PartInstance.PartInstance.ConvertConstraints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConvertConstraints</span></code></a>()</p></td>
+<td><p>This method converts the position constraints of an instance to absolute positions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut" title="abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InstanceFromBooleanCut</span></code></a>(name, ...[, ...])</p></td>
+<td><p>This method creates a PartInstance in the instances repository after subtracting or cutting the geometries of a group of part instances from that of a base part instance.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge" title="abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InstanceFromBooleanMerge</span></code></a>(name, instances[, ...])</p></td>
+<td><p>This method creates a PartInstance in the instances repository after merging two or more part instances.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern" title="abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LinearInstancePattern</span></code></a>(instanceList, number1, ...)</p></td>
+<td><p>This method creates multiple PartInstance objects in a linear pattern and puts them into the instances repository.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern" title="abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RadialInstancePattern</span></code></a>(instanceList, number, ...)</p></td>
+<td><p>This method creates multiple PartInstance objects in a radial pattern and puts them into the instances repository.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.checkGeometry" title="abaqus.Assembly.PartInstance.PartInstance.checkGeometry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">checkGeometry</span></code></a>([detailed, level])</p></td>
+<td><p>This method checks the validity of the geometry of the part instance and prints a count of all topological entities on the part instance (faces, edges, vertices, etc.).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.getPosition" title="abaqus.Assembly.PartInstance.PartInstance.getPosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPosition</span></code></a>()</p></td>
+<td><p>This method prints the sum of the translations and rotations applied to the PartInstance object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.getRotation" title="abaqus.Assembly.PartInstance.PartInstance.getRotation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getRotation</span></code></a>()</p></td>
+<td><p>This method returns a tuple including the point of rotation, axis of rotation, and rotation angle (in degrees).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.getTranslation" title="abaqus.Assembly.PartInstance.PartInstance.getTranslation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getTranslation</span></code></a>()</p></td>
+<td><p>This method returns a tuple of three Floats representing translation in the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-directions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.replace" title="abaqus.Assembly.PartInstance.PartInstance.replace"><code class="xref py py-obj docutils literal notranslate"><span class="pre">replace</span></code></a>(instanceOf[, applyConstraints])</p></td>
+<td><p>This method replaces one instance with an instance of another part.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.rotateAboutAxis" title="abaqus.Assembly.PartInstance.PartInstance.rotateAboutAxis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rotateAboutAxis</span></code></a>(axisPoint, axisDirection, angle)</p></td>
+<td><p>This method translates an instance by the specified amount.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.translate" title="abaqus.Assembly.PartInstance.PartInstance.translate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translate</span></code></a>(vector)</p></td>
+<td><p>This method translates an instance by the specified amount.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.translateTo" title="abaqus.Assembly.PartInstance.PartInstance.translateTo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translateTo</span></code></a>(movableList, fixedList, ...[, ...])</p></td>
+<td><p>This method translates an instance along the specified direction until it is in contact with a fixed instance.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.PartInstance.PartInstance.Contact">
+<span class="sig-name descname"><span class="pre">Contact</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">movableList</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixedList</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clearance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isFaceEdges</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/PartInstance.py#L480-L512"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.PartInstance.PartInstance.Contact" title="Permalink to this definition">#</a></dt>
+<dd><p>This method translates an instance along the specified direction until it is in contact
+with a fixed instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>movableList</strong></dt><dd><p>A sequence of Face or Edge objects on the part instance to be moved.</p>
+</dd>
+<dt><strong>fixedList</strong></dt><dd><p>A sequence of Face or Edge objects on the part instance to remain fixed.</p>
+</dd>
+<dt><strong>direction</strong></dt><dd><p>A sequence of three Floats specifying the direction of contact.</p>
+</dd>
+<dt><strong>clearance</strong></dt><dd><p>A Float specifying the distance between the two faces along the direction of contact.</p>
+</dd>
+<dt><strong>isFaceEdges</strong></dt><dd><p>A Boolean specifying how Abaqus calculates the contact. If <strong>isFaceEdges</strong> is OFF, contact
+is computed from the movable face to the fixed face. If <strong>isFaceEdges</strong> is ON, contact is
+computed using only the edges of the movable face and not its interior. The default
+value is OFF.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>feature: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></dt><dd><p>A Feature object</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.PartInstance.PartInstance.ConvertConstraints">
+<span class="sig-name descname"><span class="pre">ConvertConstraints</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/PartInstance.py#L514-L519"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.PartInstance.PartInstance.ConvertConstraints" title="Permalink to this definition">#</a></dt>
+<dd><p>This method converts the position constraints of an instance to absolute positions. The
+method deletes the constraint features on the instance but preserves the position in
+space.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut">
+<span class="sig-name descname"><span class="pre">InstanceFromBooleanCut</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instanceToBeCut</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cuttingInstances</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'PartInstance'</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">originalInstances</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SUPPRESS'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/PartInstance.py#L264-L300"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a PartInstance in the instances repository after subtracting or
+cutting the geometries of a group of part instances from that of a base part instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key. The name must be a valid Abaqus object name.</p>
+</dd>
+<dt><strong>instanceToBeCut</strong></dt><dd><p>A PartInstance specifying the base instance from which to cut other instances.</p>
+</dd>
+<dt><strong>cuttingInstances</strong></dt><dd><p>A sequence of PartInstance objects specifying the instances with which to cut the base
+instance.</p>
+</dd>
+<dt><strong>originalInstances</strong></dt><dd><p>A SymbolicConstant specifying whether the original instances should be suppressed or
+deleted after the merge operation. Possible values are SUPPRESS or DELETE. The default
+value is SUPPRESS.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance" title="abaqus.Assembly.PartInstance.PartInstance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartInstance</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">Instance</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge">
+<span class="sig-name descname"><span class="pre">InstanceFromBooleanMerge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instances</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'PartInstance'</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepIntersections</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">originalInstances</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SUPPRESS'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">domain</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'GEOMETRY'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mergeNodes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOUNDARY_ONLY'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodeMergingTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">removeDuplicateElements</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/PartInstance.py#L302-L359"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a PartInstance in the instances repository after merging two or more
+part instances.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key. The name must be a valid Abaqus object name.</p>
+</dd>
+<dt><strong>instances</strong></dt><dd><p>A sequence of PartInstance objects specifying the part instances to merge.</p>
+</dd>
+<dt><strong>keepIntersections</strong></dt><dd><p>A Boolean specifying whether the boundary intersections of Abaqus native part instances
+should be retained after the merge operation. The default value is False.</p>
+</dd>
+<dt><strong>originalInstances</strong></dt><dd><p>A SymbolicConstant specifying whether the original instances should be suppressed or
+deleted after the merge operation. Possible values are SUPPRESS or DELETE. The default
+value is SUPPRESS.</p>
+</dd>
+<dt><strong>domain</strong></dt><dd><p>A SymbolicConstant specifying whether geometry or mesh of the specified part instances
+is to be merged. Possible values are GEOMETRY, MESH or BOTH. The default value is
+GEOMETRY.</p>
+</dd>
+<dt><strong>mergeNodes</strong></dt><dd><p>A SymbolicConstant specifying which nodes of the specified part instances should be
+considered for merging. This argument is only applicable if <strong>domain</strong> is MESH. Possible
+values are BOUNDARY_ONLY, ALL, or NONE. The default value is BOUNDARY_ONLY.</p>
+</dd>
+<dt><strong>nodeMergingTolerance</strong></dt><dd><p>A Float specifying the maximum distance between nodes of the specified part instances
+that will be merged and replaced with a single node in the new part. The location of the
+new node is the average position of the deleted nodes. This argument is only applicable
+if <strong>domain</strong> is MESH. The default value is 10–6.</p>
+</dd>
+<dt><strong>removeDuplicateElements</strong></dt><dd><p>A Boolean specifying whether elements with the same connectivity in the new part will be
+merged into a single element. This argument is only applicable if <strong>domain</strong> is MESH. The
+default value is True.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance" title="abaqus.Assembly.PartInstance.PartInstance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartInstance</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">Instance</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern">
+<span class="sig-name descname"><span class="pre">LinearInstancePattern</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instanceList</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spacing1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spacing2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/PartInstance.py#L361-L409"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates multiple PartInstance objects in a linear pattern and puts them into
+the instances repository.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>instanceList</strong></dt><dd><p>A sequence of Strings specifying the names of instances to pattern.</p>
+</dd>
+<dt><strong>number1</strong></dt><dd><p>An Int specifying the total number of instances, including the original instances, that
+appear along the first direction in the pattern.</p>
+</dd>
+<dt><strong>spacing1</strong></dt><dd><p>A Float specifying the spacing between instances along the first direction in the
+pattern.</p>
+</dd>
+<dt><strong>number2</strong></dt><dd><p>An Int specifying the total number of instances, including the original instances, that
+appear along the second direction in the pattern.</p>
+</dd>
+<dt><strong>spacing2</strong></dt><dd><p>A Float specifying the spacing between instances along the second direction in the
+pattern.</p>
+</dd>
+<dt><strong>direction1</strong></dt><dd><p>A sequence of three Floats specifying a vector along the first direction. The default
+value is (1.0, 0.0, 0.0).</p>
+</dd>
+<dt><strong>direction2</strong></dt><dd><p>A sequence of three Floats specifying a vector along the second direction. The default
+value is (0.0, 1.0, 0.0).</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <span class="xref std std-term">python:sequence</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance" title="abaqus.Assembly.PartInstance.PartInstance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartInstance</span></code></a> objects.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">Instance</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern">
+<span class="sig-name descname"><span class="pre">RadialInstancePattern</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instanceList</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">totalAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/PartInstance.py#L411-L454"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates multiple PartInstance objects in a radial pattern and puts them into
+the instances repository.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>instanceList</strong></dt><dd><p>A sequence of Strings specifying the names of instances to pattern.</p>
+</dd>
+<dt><strong>number</strong></dt><dd><p>An Int specifying the total number of instances, including the original instances, that
+appear in the radial pattern.</p>
+</dd>
+<dt><strong>totalAngle</strong></dt><dd><p>A Float specifying the total angle in degrees between the first and last instance in the
+pattern. A positive angle corresponds to a counter-clockwise direction. The values 360°
+and −360° represent a special case where the pattern makes a full circle. In this case,
+because the copy would overlay the original, the copy is not placed at the last
+position. Possible values are −360.0 ≤≤ <strong>totalAngle</strong> ≤≤ 360.0.</p>
+</dd>
+<dt><strong>point</strong></dt><dd><p>A sequence of three Floats specifying the center of the radial pattern. The default
+value is (0.0, 0.0, 0.0).</p>
+</dd>
+<dt><strong>axis</strong></dt><dd><p>A sequence of three Floats specifying the central axis of the radial pattern. The
+default value is (0.0, 0.0, 1.0).</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <span class="xref std std-term">python:sequence</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance" title="abaqus.Assembly.PartInstance.PartInstance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartInstance</span></code></a> objects.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">Instance</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.PartInstance.PartInstance.checkGeometry">
+<span class="sig-name descname"><span class="pre">checkGeometry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">detailed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/PartInstance.py#L456-L478"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.PartInstance.PartInstance.checkGeometry" title="Permalink to this definition">#</a></dt>
+<dd><p>This method checks the validity of the geometry of the part instance and prints a count
+of all topological entities on the part instance (faces, edges, vertices, etc.).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>detailed</strong></dt><dd><p>A Boolean specifying whether detailed output will be printed to the replay file. The
+default value is OFF.</p>
+</dd>
+<dt><strong>level</strong></dt><dd><p>An Int specifying which level of checking is performed. Values can range from 20 to 70,
+with higher values reporting less and less important errors. The default value is 20,
+which reports all critical errors. When the default value is used, the stored validity
+status is updated to agree with the result of this check.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">exception</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">thrown</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">if</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">this</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">dependent</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">part</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">instance</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">and</span></code> <strong>level</strong> <code class="xref py py-obj docutils literal notranslate"><span class="pre">was</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">either</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code></dt><dd></dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">specified</span></code> or <code class="xref py py-obj docutils literal notranslate"><span class="pre">was</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">set</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">to</span></code> 20, <code class="xref py py-obj docutils literal notranslate"><span class="pre">because</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">validity</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">status</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">cannot</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">be</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">updated</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">for</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code></dt><dd></dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">dependent</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">part</span></code> instance. <code class="xref py py-obj docutils literal notranslate"><span class="pre">In</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">this</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">case</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">this</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">command</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">should</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">be</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">called</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">on</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Part</span></code></dt><dd></dd>
+<dt>instead. <code class="xref py py-obj docutils literal notranslate"><span class="pre">The</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">geometry</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">dependent</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">part</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">instances</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">cannot</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">be</span></code> changed.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.PartInstance.PartInstance.getPosition">
+<span class="sig-name descname"><span class="pre">getPosition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/PartInstance.py#L521-L525"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.PartInstance.PartInstance.getPosition" title="Permalink to this definition">#</a></dt>
+<dd><p>This method prints the sum of the translations and rotations applied to the PartInstance
+object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.PartInstance.PartInstance.getRotation">
+<span class="sig-name descname"><span class="pre">getRotation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/PartInstance.py#L527-L536"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.PartInstance.PartInstance.getRotation" title="Permalink to this definition">#</a></dt>
+<dd><p>This method returns a tuple including the point of rotation, axis of rotation, and
+rotation angle (in degrees).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-class docutils literal notranslate"><span class="pre">python:tuple</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">including</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">point</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">rotation</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">axis</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">rotation</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">and</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">rotation</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">angle</span></code> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">in</span></code></dt><dd></dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">degrees</span></code>).</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.PartInstance.PartInstance.getTranslation">
+<span class="sig-name descname"><span class="pre">getTranslation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/PartInstance.py#L538-L546"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.PartInstance.PartInstance.getTranslation" title="Permalink to this definition">#</a></dt>
+<dd><p>This method returns a tuple of three Floats representing translation in the <strong>X</strong>-, <strong>Y</strong>-,
+and <strong>Z</strong>-directions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-class docutils literal notranslate"><span class="pre">python:tuple</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">three</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Floats</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">representing</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> translation.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.PartInstance.PartInstance.replace">
+<span class="sig-name descname"><span class="pre">replace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instanceOf</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part.html#abaqus.Part.Part.Part" title="abaqus.Part.Part.Part"><span class="pre">Part</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">applyConstraints</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/PartInstance.py#L548-L561"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.PartInstance.PartInstance.replace" title="Permalink to this definition">#</a></dt>
+<dd><p>This method replaces one instance with an instance of another part.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>instanceOf</strong></dt><dd><p>A Part object specifying which Part will be instanced in place of the original Part.</p>
+</dd>
+<dt><strong>applyConstraints</strong></dt><dd><p>A Boolean specifying whether to apply existing constraints on the new instance or to
+position the new instance in the same place as the original instance. The default value
+is True. A value of False indicates that constraints applies to the instance are deleted
+will be deleted from the feature list.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.PartInstance.PartInstance.rotateAboutAxis">
+<span class="sig-name descname"><span class="pre">rotateAboutAxis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">axisPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axisDirection</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/PartInstance.py#L563-L577"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.PartInstance.PartInstance.rotateAboutAxis" title="Permalink to this definition">#</a></dt>
+<dd><p>This method translates an instance by the specified amount.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>axisPoint</strong></dt><dd><p>A sequence of three Floats specifying the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point on
+the axis.</p>
+</dd>
+<dt><strong>axisDirection</strong></dt><dd><p>A sequence of three Floats specifying the direction vector of the axis.</p>
+</dd>
+<dt><strong>angle</strong></dt><dd><p>A Float specifying the rotation angle in degrees. Use the right-hand rule to determine
+the direction.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.PartInstance.PartInstance.translate">
+<span class="sig-name descname"><span class="pre">translate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/PartInstance.py#L579-L587"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.PartInstance.PartInstance.translate" title="Permalink to this definition">#</a></dt>
+<dd><p>This method translates an instance by the specified amount.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>vector</strong></dt><dd><p>A sequence of three Floats specifying a translation vector.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Assembly.PartInstance.PartInstance.translateTo">
+<span class="sig-name descname"><span class="pre">translateTo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">movableList</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixedList</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clearance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/PartInstance.py#L589-L620"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.PartInstance.PartInstance.translateTo" title="Permalink to this definition">#</a></dt>
+<dd><p>This method translates an instance along the specified direction until it is in contact
+with a fixed instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>movableList</strong></dt><dd><p>A sequence of Face or Edge objects on the part instance to be moved.</p>
+</dd>
+<dt><strong>fixedList</strong></dt><dd><p>A sequence of Face or Edge objects on the part instances to remain fixed.</p>
+</dd>
+<dt><strong>direction</strong></dt><dd><p>A sequence of three Floats specifying the direction of contact.</p>
+</dd>
+<dt><strong>clearance</strong></dt><dd><p>A Float specifying the distance between the two faces along the direction of contact.</p>
+</dd>
+<dt><strong>vector</strong></dt><dd><p>A sequence of three Floats specifying a translation vector. If this argument is
+specified, the movable instance will be translated by the specified amount without
+solving for the actual contact.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>feature: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></dt><dd><p>A Feature object</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="partinstancearray">
+<h3>PartInstanceArray<a class="headerlink" href="#partinstancearray" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Assembly.PartInstanceArray.PartInstanceArray">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PartInstanceArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Assembly/PartInstanceArray.py#L4-L6"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.PartInstanceArray.PartInstanceArray" title="Permalink to this definition">#</a></dt>
+<dd><p class="rubric">Methods</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>findAt</strong></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="part_assembly/datum.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Datum</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="part.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Part</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, WANG Hailin
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Assembly</a><ul>
+<li><a class="reference internal" href="#create-instances">Create instances</a></li>
+<li><a class="reference internal" href="#object-features">Object features</a><ul>
+<li><a class="reference internal" href="#id1">Assembly</a></li>
+<li><a class="reference internal" href="#connectororientation">ConnectorOrientation</a></li>
+<li><a class="reference internal" href="#connectororientationarray">ConnectorOrientationArray</a></li>
+<li><a class="reference internal" href="#feature">Feature</a></li>
+<li><a class="reference internal" href="#modelinstance">ModelInstance</a></li>
+<li><a class="reference internal" href="#partinstance">PartInstance</a></li>
+<li><a class="reference internal" href="#partinstancearray">PartInstanceArray</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/scripts/furo.js"></script>
+    </body>
+</html>

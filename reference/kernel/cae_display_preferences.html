@@ -1,0 +1,698 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Input File Parser" href="input.html" /><link rel="prev" title="Kernel" href="../kernel.html" />
+
+    <meta name="generator" content="sphinx-4.5.0, furo 2022.06.04.1"/>
+        <title>Abaqus CAE Display Preferences - AbqPy 2016a0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">AbqPy 2016a0 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  
+  
+  <span class="sidebar-brand-text">AbqPy 2016a0 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../summary.html">API Summary</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../summary/header.html">Header of the Python script</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../summary/mdb.html">Abaqus Model Database</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../summary/mdb/model.html">Abaqus Model</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/adaptivity.html">Adaptivity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/amplitude.html">Amplitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/assembly.html">Assembly</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/bc.html">Boundary Condition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/calibration.html">Calibration of Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/constraint.html">Constraint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/field.html">Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/filter.html">Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/interaction.html">Interaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/load.html">Load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/material.html">Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/optimization.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/output.html">Output Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/part.html">Part</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/predefined.html">Predefined Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/profile.html">Beam Section Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/property.html">Property</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../summary/mdb/model/section.html">Section</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../summary/mdb/model/section/connector.html">Connector</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/sketcher.html">Sketcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../summary/mdb/model/step.html">Step</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../summary/mdb/model/step/step_miscellaneous.html">Step Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../summary/mdb/job.html">Abaqus Job</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../summary/odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../summary/session.html">Abaqus Session</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../../references.html">API Reference</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../mdb.html">Abaqus Model Database</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../mdb/model.html">Model</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/adaptivity.html">Adaptivity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/amplitude.html">Amplitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/bc.html">Boundary Condition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/calibration.html">Calibration of Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/constraint.html">Constraint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/field.html">Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/filter.html">Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/interaction.html">Interaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/load.html">Load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/material.html">Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/mesh.html">Mesh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/optimization.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/output.html">Output Request</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../mdb/model/part_assembly.html">Part and Assembly</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/part.html">Part</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/assembly.html">Assembly</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/part_assembly/datum.html">Datum</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/part_assembly/engineering.html">Engineering Feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/part_assembly/feature.html">Feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/part_assembly/geometry.html">Basic Geometry</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/part_assembly/region.html">Region</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/predefined.html">Predefined Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/profile.html">Beam Section Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/property.html">Property</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../mdb/model/section.html">Section</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/section/connector.html">Connector</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/sketcher.html">Sketcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../mdb/model/step.html">Step</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/step/step_miscellaneous.html">Step Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mdb/job.html">Job</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mdb/annotation.html">Annotation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mdb/edit_mesh.html">Edit Mesh</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../session.html">Abaqus Session</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../session/animation.html">Animation Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/canvas.html">Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/display_options.html">Display Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/display.html">Display Group</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/field_report.html">FieldReport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/odb_display.html">Odb Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/path.html">Path and Probe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/plot_options.html">Plot Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/print.html">Print</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/xy.html">XY</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../kernel.html">Kernel</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Abaqus CAE Display Preferences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="input.html">Input File Parser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="kernel.html">Custom Kernel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="messaging.html">Messaging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="table_collection.html">Table Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="text_representation.html">Text Representation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="utility.html">Utility and View</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="abaqus-cae-display-preferences">
+<h1>Abaqus CAE Display Preferences<a class="headerlink" href="#abaqus-cae-display-preferences" title="Permalink to this headline">#</a></h1>
+<section id="object-features">
+<h2>Object features<a class="headerlink" href="#object-features" title="Permalink to this headline">#</a></h2>
+<section id="caeguiprefs">
+<h3>CaeGuiPrefs<a class="headerlink" href="#caeguiprefs" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CaeGuiPrefs</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/AbaqusCAEDisplayPreferences/CaeGuiPrefs.py#L4-L44"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs" title="Permalink to this definition">#</a></dt>
+<dd><p>The CaeGuiPrefs object contains the details of the graphical preferences in a
+guiPreferences section of the abaqus_2021.gpr file.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">caePrefsAccess</span>
+<span class="n">caePrefsAccess</span><span class="o">.</span><span class="n">openGuiPreferences</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>fileName: str</strong></dt><dd><p>A String specifying the path to the preferences file.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.save" title="abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code></a>([backupFile])</p></td>
+<td><p>This method saves the guiPreferences section specified in the current <strong>fileName</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.saveAs" title="abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.saveAs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveAs</span></code></a>(fileName)</p></td>
+<td><p>This method saves the guiPreferences settings to the specified location.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">backupFile</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/AbaqusCAEDisplayPreferences/CaeGuiPrefs.py#L25-L34"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.save" title="Permalink to this definition">#</a></dt>
+<dd><p>This method saves the guiPreferences section specified in the current <strong>fileName</strong>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>backupFile: Boolean</strong></dt><dd><p>A Boolean specifying whether Abaqus should save a numbered backup copy of the
+preferences file, <strong>fileName</strong>. Default is True.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.saveAs">
+<span class="sig-name descname"><span class="pre">saveAs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/AbaqusCAEDisplayPreferences/CaeGuiPrefs.py#L36-L44"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.saveAs" title="Permalink to this definition">#</a></dt>
+<dd><p>This method saves the guiPreferences settings to the specified location.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>fileName: str</strong></dt><dd><p>A String specifying the path to the preferences file.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="caekerprefs">
+<h3>CaeKerPrefs<a class="headerlink" href="#caekerprefs" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CaeKerPrefs</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/AbaqusCAEDisplayPreferences/CaeKerPrefs.py#L4-L57"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs" title="Permalink to this definition">#</a></dt>
+<dd><p>The CaeKerPrefs object contains the details of the sessionOptions.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">caePrefsAccess</span>
+<span class="n">caePrefsAccess</span><span class="o">.</span><span class="n">openSessionOptions</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>fileName: str</strong></dt><dd><p>A String specifying the path to the preferences file that the <a class="reference internal" href="#abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs" title="abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs"><code class="xref py py-class docutils literal notranslate"><span class="pre">CaeKerPrefs</span></code></a> object
+represents.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.save" title="abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code></a>([backupFile])</p></td>
+<td><p>This method saves the sessionOptions in the current <strong>fileName</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs" title="abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveAs</span></code></a>(fileName, directory)</p></td>
+<td><p>This method saves the sessionOptions to the specified location.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">backupFile</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/AbaqusCAEDisplayPreferences/CaeKerPrefs.py#L27-L36"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.save" title="Permalink to this definition">#</a></dt>
+<dd><p>This method saves the sessionOptions in the current <strong>fileName</strong>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>backupFile: Boolean</strong></dt><dd><p>A Boolean specifying whether save a numbered backup copy of the preferences file,
+<strong>fileName</strong>. Default is True.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs">
+<span class="sig-name descname"><span class="pre">saveAs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/AbaqusCAEDisplayPreferences/CaeKerPrefs.py#L38-L57"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs" title="Permalink to this definition">#</a></dt>
+<dd><p>This method saves the sessionOptions to the specified location.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><strong>fileName: str</strong></dt><dd><p>A String specifying the path to the preferences file.</p>
+</dd>
+<dt><strong>directory: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the location of the preferences file. Possible values
+are:</p>
+<ul class="simple">
+<li><p>CURRENT to open the preferences file in the current directory 
+(caePrefsAccess.CURRENT)</p></li>
+<li><p>HOME to open the preferences file in your home directory 
+(caePrefsAccess.HOME)</p></li>
+</ul>
+<p>The default value is HOME. Either <strong>fileName</strong> or <strong>directory</strong> must be
+supplied. The <strong>fileName</strong> or <strong>directory</strong> arguments are mutually exclusive.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess">
+<span id="caeprefsaccess"></span><h3>caePrefsAccess<a class="headerlink" href="#module-abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess" title="Permalink to this headline">#</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences">
+<span class="sig-name descname"><span class="pre">getDisplayNamesInGuiPreferences</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L39-L61"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences" title="Permalink to this definition">#</a></dt>
+<dd><p>The abaqus_2021.gpr file stores a separate guiPreferences record for each display that
+you use. This function returns a list of every displayName recorded in the preferences
+file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>fileName: str</strong></dt><dd><p>A String that specifies the path to the preferences file.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-class docutils literal notranslate"><span class="pre">python:list</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Strings</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> displayNames.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">caePrefsAccess</span><span class="o">.</span><span class="n">getDisplayNamesInGuiPreferences</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getGuiPrefsFileName">
+<span class="sig-name descname"><span class="pre">getGuiPrefsFileName</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L21-L36"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getGuiPrefsFileName" title="Permalink to this definition">#</a></dt>
+<dd><p>This function enables you to retrieve the location of your abaqus_2021.gpr file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">String</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">with</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">default</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">file</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">for</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">GUI</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">preferences</span></code> file.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">caePrefsAccess</span><span class="o">.</span><span class="n">getGuiPrefsFileName</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences">
+<span class="sig-name descname"><span class="pre">openGuiPreferences</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">displayName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs" title="abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs"><span class="pre">CaeGuiPrefs</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L102-L131"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences" title="Permalink to this definition">#</a></dt>
+<dd><p>This function enables you to examine and change many default behaviors in the Abaqus/CAE
+graphical user interface. Abaqus stores preferences for each display you use in a
+separate guiPreferences section of the abaqus_2021.gpr file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>displayName: str</strong></dt><dd><p>A String that specifies the display for which you want to investigate GUI preferences
+from the abaqus_2021.gpr file. You can retrieve the available display names in the file
+by using the getDisplayNamesInGuiPreferences method.</p>
+</dd>
+<dt><strong>fileName: str</strong></dt><dd><p>A String specifying the path to the preferences file. The openGuiPreferences method uses
+this argument if you are working with a preferences file that is not at the default
+location.If this argument is omitted, the abaqus_2021.gpr file in your home directory is
+opened.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">CaeGuiPrefs</span></code> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">caePrefsAccess</span><span class="o">.</span><span class="n">openGuiPreferences</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions">
+<span class="sig-name descname"><span class="pre">openSessionOptions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'CURRENT'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'HOME'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'HOME'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs" title="abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs"><span class="pre">CaeKerPrefs</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L134-L174"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>This function enables you to examine and change the default behavior for many session
+options Abaqus/CAE; that is, the settings that you can save in Abaqus/CAE from the
+FileSave Display ConstrainedSketchOptions menu option. Abaqus stores default session options in the
+sessionOptions section of the abaqus_2021.gpr file.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><strong>fileName: str</strong></dt><dd><p>A String specifying the path to the preferences file. The openSessionOptions method uses
+this argument if you are working with a preferences file that is not at the default
+location.If this argument is omitted, the abaqus_2021.gpr file in your home directory is
+opened.</p>
+</dd>
+<dt><strong>directory: typing.Literal[‘CURRENT’, ‘HOME’]</strong></dt><dd><p>A SymbolicConstant specifying the location of the preferences file. Possible values
+are:</p>
+<ul class="simple">
+<li><p>CURRENT to open the preferences file in the current directory</p></li>
+</ul>
+<p>(caePrefsAccess.CURRENT)
+- HOME to open the preferences file in your home directory
+(caePrefsAccess.HOME)</p>
+<p>The default value is HOME. Either <strong>fileName</strong> or <strong>directory</strong> must be
+supplied. The <strong>fileName</strong> or <strong>directory</strong> arguments are mutually exclusive.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">CaeKerPrefs</span></code> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">caePrefsAccess</span><span class="o">.</span><span class="n">openSessionOptions</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList">
+<span class="sig-name descname"><span class="pre">printValuesList</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'UNLIMITED'</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asString</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L64-L99"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList" title="Permalink to this definition">#</a></dt>
+<dd><p>This function enables you to print all of the options and their values for a set of
+guiPreferences or sessionOptions settings derived from the abaqus_2021.gpr file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>object: str</strong></dt><dd><p>The guiPreferences object or sessionOptions object for which you want to print options
+and their values.</p>
+</dd>
+<dt><strong>maxRecursionDepth: typing.Union[int, typing.Literal[‘UNLIMITED’]]</strong></dt><dd><p>An Int, or SymbolicConstant UNLIMITED, that specifies the depth of recursion when
+accessing the attributes of <strong>object</strong>.</p>
+</dd>
+<dt><strong>asString: Boolean</strong></dt><dd><p>A Boolean specifying how the string representation of each option is printed. If
+<strong>asString</strong> is True, printValuesList prints the str of each option; otherwise
+printValuesList prints the repr of the options. The default value is False.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">String</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">displaying</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">path</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">and</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">for</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">all</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">options</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">in</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">that</span></code></dt><dd></dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">you</span></code> select.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">caePrefsAccess</span><span class="o">.</span><span class="n">printValuesList</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="input.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Input File Parser</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="../kernel.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Kernel</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, WANG Hailin
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Abaqus CAE Display Preferences</a><ul>
+<li><a class="reference internal" href="#object-features">Object features</a><ul>
+<li><a class="reference internal" href="#caeguiprefs">CaeGuiPrefs</a></li>
+<li><a class="reference internal" href="#caekerprefs">CaeKerPrefs</a></li>
+<li><a class="reference internal" href="#module-abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess">caePrefsAccess</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/furo.js"></script>
+    </body>
+</html>

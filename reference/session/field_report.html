@@ -1,0 +1,770 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Odb Display" href="odb_display.html" /><link rel="prev" title="Display Group" href="display.html" />
+
+    <meta name="generator" content="sphinx-4.5.0, furo 2022.06.04.1"/>
+        <title>FieldReport - AbqPy 2016a0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">AbqPy 2016a0 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  
+  
+  <span class="sidebar-brand-text">AbqPy 2016a0 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../summary.html">API Summary</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../summary/header.html">Header of the Python script</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../summary/mdb.html">Abaqus Model Database</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../summary/mdb/model.html">Abaqus Model</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/adaptivity.html">Adaptivity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/amplitude.html">Amplitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/assembly.html">Assembly</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/bc.html">Boundary Condition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/calibration.html">Calibration of Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/constraint.html">Constraint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/field.html">Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/filter.html">Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/interaction.html">Interaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/load.html">Load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/material.html">Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/optimization.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/output.html">Output Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/part.html">Part</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/predefined.html">Predefined Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/profile.html">Beam Section Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/property.html">Property</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../summary/mdb/model/section.html">Section</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../summary/mdb/model/section/connector.html">Connector</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/sketcher.html">Sketcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../summary/mdb/model/step.html">Step</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../summary/mdb/model/step/step_miscellaneous.html">Step Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../summary/mdb/job.html">Abaqus Job</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../summary/odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../summary/session.html">Abaqus Session</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../../references.html">API Reference</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../mdb.html">Abaqus Model Database</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../mdb/model.html">Model</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/adaptivity.html">Adaptivity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/amplitude.html">Amplitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/bc.html">Boundary Condition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/calibration.html">Calibration of Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/constraint.html">Constraint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/field.html">Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/filter.html">Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/interaction.html">Interaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/load.html">Load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/material.html">Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/mesh.html">Mesh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/optimization.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/output.html">Output Request</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../mdb/model/part_assembly.html">Part and Assembly</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/part.html">Part</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/assembly.html">Assembly</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/part_assembly/datum.html">Datum</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/part_assembly/engineering.html">Engineering Feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/part_assembly/feature.html">Feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/part_assembly/geometry.html">Basic Geometry</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/part_assembly/region.html">Region</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/predefined.html">Predefined Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/profile.html">Beam Section Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/property.html">Property</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../mdb/model/section.html">Section</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/section/connector.html">Connector</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/sketcher.html">Sketcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../mdb/model/step.html">Step</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/step/step_miscellaneous.html">Step Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mdb/job.html">Job</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mdb/annotation.html">Annotation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mdb/edit_mesh.html">Edit Mesh</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../session.html">Abaqus Session</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="animation.html">Animation Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="canvas.html">Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="display_options.html">Display Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="display.html">Display Group</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">FieldReport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="odb_display.html">Odb Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="path.html">Path and Probe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="plot_options.html">Plot Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="print.html">Print</a></li>
+<li class="toctree-l3"><a class="reference internal" href="xy.html">XY</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../kernel.html">Kernel</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/cae_display_preferences.html">Abaqus CAE Display Preferences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/input.html">Input File Parser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/kernel.html">Custom Kernel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/messaging.html">Messaging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/table_collection.html">Table Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/text_representation.html">Text Representation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/utility.html">Utility and View</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="fieldreport">
+<h1>FieldReport<a class="headerlink" href="#fieldreport" title="Permalink to this headline">#</a></h1>
+<p>Field report commands are used to write a field output report and free body computational results to an ASCII file.</p>
+<section id="create-field-reports-in-session">
+<h2>Create field reports in Session<a class="headerlink" href="#create-field-reports-in-session" title="Permalink to this headline">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.FieldReport.FieldReportSession.FieldReportSession">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FieldReportSession</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/FieldReport/FieldReportSession.py#L7-L143"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FieldReportSession.FieldReportSession" title="Permalink to this definition">#</a></dt>
+<dd><p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldRepor" title="abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldRepor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeFieldRepor</span></code></a>(filename, append, sortItem, ...)</p></td>
+<td><p>This method writes a FieldOutput object to a user-defined ASCII file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyRepor" title="abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyRepor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeFreeBodyRepor</span></code></a>(fileName, append[, step, ...])</p></td>
+<td><p>This method writes a FreeBody object to a user-defined ASCII file.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldRepor">
+<span class="sig-name descname"><span class="pre">writeFieldRepor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">append</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sortItem</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odb</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../odb.html#abaqus.Odb.Odb.Odb" title="abaqus.Odb.Odb.Odb"><span class="pre">Odb</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputPosition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displayGroup</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="display.html#abaqus.DisplayGroup.DisplayGroup.DisplayGroup" title="abaqus.DisplayGroup.DisplayGroup.DisplayGroup"><span class="pre">DisplayGroup</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numericForm</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">complexAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stepFrame</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SPECIFY'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/FieldReport/FieldReportSession.py#L8-L96"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldRepor" title="Permalink to this definition">#</a></dt>
+<dd><p>This method writes a FieldOutput object to a user-defined ASCII file.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><strong>filename</strong></dt><dd><p>A String specifying the name of the file to which field output will be written.</p>
+</dd>
+<dt><strong>append</strong></dt><dd><p>A Boolean specifying whether to append the field output to an existing file. The default
+value is ON.</p>
+</dd>
+<dt><strong>sortItem</strong></dt><dd><p>A String specifying the item by which to sort the tabular values.</p>
+</dd>
+<dt><strong>odb</strong></dt><dd><p>An Odb object from which to obtain field output values.</p>
+</dd>
+<dt><strong>step</strong></dt><dd><p>An Int (or stepIndex) specifying the step from which to obtain field output values.
+Possible values are 0 ≤≤ <strong>step</strong> ≤≤ (<em>numSteps</em> − 1).</p>
+</dd>
+<dt><strong>frame</strong></dt><dd><p>An Int (or frameIndex) specifying the frame from which to obtain field output values.
+Possible values are 0 ≤≤ <strong>frame</strong> ≤≤ (<em>numFramesInStep</em> − 1).</p>
+</dd>
+<dt><strong>outputPosition</strong></dt><dd><p>A SymbolicConstant specifying the position from which to obtain data. Possible values
+are NODAL, INTEGRATION_POINT, ELEMENT_FACE, ELEMENT_NODAL, ELEMENT_CENTROID,
+WHOLE_ELEMENT, WHOLE_REGION, WHOLE_PART_INSTANCE, WHOLE_MODEL, and GENERAL_PARTICLE.</p>
+</dd>
+<dt><strong>displayGroup</strong></dt><dd><p>A DisplayGroup object specifying the subset of the model for which to obtain data.</p>
+</dd>
+<dt><strong>variable</strong></dt><dd><p>A sequence of variable description sequences specifying one or more field output
+variables for which to obtain data. Each variable description sequence contains the
+following elements:</p>
+<ul>
+<li><p><strong>element0</strong>: A String specifying the name of the variable.</p></li>
+<li><p><strong>element1</strong>: A SymbolicConstant specifying the output position at which to report data.
+Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE,
+INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and
+WHOLE_REGION.</p></li>
+<li><p><strong>element2</strong>: A Sequence of tuples each consisting of a SymbolicConstant specifying the
+refinement (COMPONENT or INVARIANT), followed by a String specifying the name of a
+component or invariant for which to obtain values.
+If this element is omitted, data are written for all components and invariants (if
+applicable). This element is required if <strong>element3</strong> (the following element in the tuple)
+is included.</p></li>
+<li><p><strong>element3 (if applicable)</strong>: A Dictionary with a String key and a String value
+specifying a single section point at which to report data. The key specifies a region in
+the model; the corresponding value specifies a section point within that region. For
+example:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">{'shell</span> <span class="pre">&lt;</span> <span class="pre">MAT</span> <span class="pre">&gt;</span> <span class="pre">&lt;</span> <span class="pre">7</span> <span class="pre">section</span> <span class="pre">points</span> <span class="pre">&gt;':'SPOS</span>
+<span class="pre">(fraction</span> <span class="pre">=</span> <span class="pre">1.0)'}</span>
+<span class="pre">`</span></code></p>
+<p>If this element is omitted, data are written for all section points (if applicable).
+If this element is omitted, data are written for all section points (if applicable).</p>
+</li>
+</ul>
+</dd>
+<dt><strong>numericForm</strong></dt><dd><p>A SymbolicConstant specifying the numeric form in which to display results that contain
+complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
+and COMPLEX_MAG_AT_ANGLE. The initial value is COMPLEX_MAGNITUDE.</p>
+</dd>
+<dt><strong>complexAngle</strong></dt><dd><p>A Float specifying the angle (in degrees) at which to display results that contain
+complex numbers when <a href="#id1"><span class="problematic" id="id2">**</span></a>numericForm**=COMPLEX_MAG_AT_ANGLE. The initial value is 0.</p>
+</dd>
+<dt><strong>stepFrame</strong></dt><dd><p>A SymbolicConstant indicating whether to obtain the values from the specified frame or
+from all active frames. Possible values are SPECIFY and ALL. The default value is
+SPECIFY.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">writeFieldReport</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyRepor">
+<span class="sig-name descname"><span class="pre">writeFreeBodyRepor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">append</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stepFrame</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SPECIFY'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odb</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../odb.html#abaqus.Odb.Odb.Odb" title="abaqus.Odb.Odb.Odb"><span class="pre">Odb</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/FieldReport/FieldReportSession.py#L98-L143"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyRepor" title="Permalink to this definition">#</a></dt>
+<dd><p>This method writes a FreeBody object to a user-defined ASCII file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>fileName</strong></dt><dd><p>A String specifying the name of the file to which the free body output will be written.</p>
+</dd>
+<dt><strong>append</strong></dt><dd><p>A Boolean specifying whether to append the free body output to an existing file. The
+default value is ON.</p>
+</dd>
+<dt><strong>step</strong></dt><dd><p>An Int identifying the step from which to obtain values. The default value is the
+current step.</p>
+</dd>
+<dt><strong>frame</strong></dt><dd><p>An Int identifying the frame from which to obtain values. The default value is the
+current frame.</p>
+</dd>
+<dt><strong>stepFrame</strong></dt><dd><p>A SymbolicConstant indicating whether to obtain the values from the specified frame or
+from all active frames. Possible values are SPECIFY and ALL. The default value is
+SPECIFY.</p>
+</dd>
+<dt><strong>odb</strong></dt><dd><p>An Odb object specifying the output database from which data will be read.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"></dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"></dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">writeFreeBodyReport</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="object-features">
+<h2>Object features<a class="headerlink" href="#object-features" title="Permalink to this headline">#</a></h2>
+<section id="fieldreportoptions">
+<h3>FieldReportOptions<a class="headerlink" href="#fieldreportoptions" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.FieldReport.FieldReportOptions.FieldReportOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FieldReportOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/FieldReport/FieldReportOptions.py#L5-L124"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>The FieldReportOptions object stores settings used by the writeFieldReport method when
+you write a FieldOutput object to an ASCII file. The FieldReportOptions object has no
+constructor. Abaqus creates the <strong>fieldReportOptions</strong> member when you import the
+Visualization module.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">visualization</span>
+<span class="n">session</span><span class="o">.</span><span class="n">defaultFieldReportOptions</span>
+<span class="n">session</span><span class="o">.</span><span class="n">fieldReportOptions</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>numberFormat: NumberFormat</strong></dt><dd><p>Format of the number</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NumberFormat</span></code></a>([blankPad, format, numDigits, ...])</p></td>
+<td><p>This method creates a NumberFormat object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(numColumns, numberFormat[, ...])</p></td>
+<td><p>This method modifies the FieldReportOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat">
+<span class="sig-name descname"><span class="pre">NumberFormat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">blankPad</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ENGINEERING'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numDigits</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">precision</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../session.html#abaqus.Session.NumberFormat.NumberFormat" title="abaqus.Session.NumberFormat.NumberFormat"><span class="pre">NumberFormat</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/FieldReport/FieldReportOptions.py#L81-L124"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a NumberFormat object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>blankPad</strong></dt><dd><p>A Boolean specifying whether the printed digits should be padded with blank characters
+to ensure equal sized fields. The <strong>blankPad</strong> argument is useful when your printed output
+includes columns. The default value is ON.</p>
+</dd>
+<dt><strong>format</strong></dt><dd><p>A SymbolicConstant specifying the formatting type. Possible values are ENGINEERING,
+SCIENTIFIC, and AUTOMATIC. The default value is ENGINEERING.</p>
+</dd>
+<dt><strong>numDigits</strong></dt><dd><p>An Int specifying the number of digits to be displayed in the result. <strong>numDigits</strong> &gt;0&gt;0.
+The default value is 6.</p>
+</dd>
+<dt><strong>precision</strong></dt><dd><p>An Int specifying the number of decimal places to which the number is to be truncated
+for display. <strong>precision</strong> ≤0≤0. If <strong>precision</strong> =0, no truncation is applied. The default
+value is 0.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NumberFormat</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">defaultFieldReportOptions</span><span class="o">.</span><span class="n">NumberFormat</span>
+<span class="n">session</span><span class="o">.</span><span class="n">fieldReportOptions</span><span class="o">.</span><span class="n">NumberFormat</span>
+<span class="n">session</span><span class="o">.</span><span class="n">journalOptions</span><span class="o">.</span><span class="n">NumberFormat</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numColumns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberFormat</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../session.html#abaqus.Session.NumberFormat.NumberFormat" title="abaqus.Session.NumberFormat.NumberFormat"><span class="pre">NumberFormat</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">printXYData</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">printTotal</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">printMinMax</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pageWidth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NO_LIMIT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columnLayout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SINGLE_TABLE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ASCENDING'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">printLocalCSYS</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/FieldReport/FieldReportOptions.py#L30-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues" title="Permalink to this definition">#</a></dt>
+<dd><p>This method modifies the FieldReportOptions object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>numColumns</strong></dt><dd><p>An Int specifying the number of columns to display for the tabular report. The default
+value is 80.</p>
+</dd>
+<dt><strong>numberFormat</strong></dt><dd><p>A NumberFormat object specifying the format type, number of digits and precision used to
+print the numeric output.</p>
+</dd>
+<dt><strong>printXYData</strong></dt><dd><p>A Boolean specifying whether to include <strong>X - Y</strong> data values in the tabular report. The
+default value is ON.</p>
+</dd>
+<dt><strong>printTotal</strong></dt><dd><p>A Boolean specifying whether to include column totals in the tabular report. The default
+value is ON.</p>
+</dd>
+<dt><strong>printMinMax</strong></dt><dd><p>A Boolean specifying whether to include column summary minimum and maximum values in the
+tabular report. The default value is ON.</p>
+</dd>
+<dt><strong>pageWidth</strong></dt><dd><p>A SymbolicConstant specifying how the width of the tabular report is to be determined.
+Possible values are NO_LIMIT and SPECIFY. The default value is NO_LIMIT.</p>
+</dd>
+<dt><strong>columnLayout</strong></dt><dd><p>A SymbolicConstant specifying how values are to be presented in the tabular report.
+Possible values are SINGLE_TABLE and SEPARATE_TABLES. The default value is SINGLE_TABLE.</p>
+</dd>
+<dt><strong>sort</strong></dt><dd><p>A SymbolicConstant specifying the order in which values are to be sorted within a
+tabular report. Possible values are ASCENDING and DESCENDING. The default value is
+ASCENDING.</p>
+</dd>
+<dt><strong>printLocalCSYS</strong></dt><dd><p>A Boolean specifying whether to include the local coordinate system values in the
+tabular report. The default value is OFF.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FieldReportOptions</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="freebodyreportoptions">
+<h3>FreeBodyReportOptions<a class="headerlink" href="#freebodyreportoptions" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FreeBodyReportOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/FieldReport/FreeBodyReportOptions.py#L4-L54"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>The FreeBodyReportOptions object stores settings used by the writeFreeBodyReport method
+when you write free body computational results to an ASCII file. The
+FreeBodyReportOptions object has no constructor. Abaqus creates the
+<strong>freeBodyReportOptions</strong> member when you import the Visualization module.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">visualization</span>
+<span class="n">session</span><span class="o">.</span><span class="n">defaultFreeBodyReportOptions</span>
+<span class="n">session</span><span class="o">.</span><span class="n">freeBodyReportOptions</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([numDigits, forceThreshold, ...])</p></td>
+<td><p>This method modifies the FreeBodyReportOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numDigits</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forceThreshold</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">momentThreshold</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberFormat</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SCIENTIFIC'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reportFormat</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NORMAL_ANNOTATED'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csysType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'GLOBAL'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/FieldReport/FreeBodyReportOptions.py#L21-L54"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues" title="Permalink to this definition">#</a></dt>
+<dd><p>This method modifies the FreeBodyReportOptions object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>numDigits</strong></dt><dd><p>An Int specifying the number of decimal places. The default value is 3.</p>
+</dd>
+<dt><strong>forceThreshold</strong></dt><dd><p>A Float specifying the threshold value for force. The default value is 10–6.</p>
+</dd>
+<dt><strong>momentThreshold</strong></dt><dd><p>A Float specifying the threshold value for moment. The default value is 10–6.</p>
+</dd>
+<dt><strong>numberFormat</strong></dt><dd><p>A SymbolicConstant specifying the number format. Possible values are SCIENTIFIC, FIXED,
+and ENGINEERING. The default value is SCIENTIFIC.</p>
+</dd>
+<dt><strong>reportFormat</strong></dt><dd><p>A SymbolicConstant specifying the report format. Possible values are NORMAL_ANNOTATED
+and COMMA_SEPARATED_VALUES. The default value is NORMAL_ANNOTATED.</p>
+</dd>
+<dt><strong>csysType</strong></dt><dd><p>A SymbolicConstant specifying the coordinate system type. Possible values are GLOBAL and
+LOCAL. The default value is GLOBAL.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FreeBodyReportOptions</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="odbfieldvarlist">
+<h3>OdbFieldVarList<a class="headerlink" href="#odbfieldvarlist" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbFieldVarList</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/FieldReport/OdbFieldVarList.py#L1-L17"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList" title="Permalink to this definition">#</a></dt>
+<dd><p>The read-only OdbFieldVarList object is a sequence listing all variables available for
+the current step and frame. Each item in the sequence is itself a sequence fully
+describing the given variable.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">visualization</span>
+<span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">layers</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">fieldVariables</span>
+<span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">fieldVariables</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="odbmodelfieldvarlist">
+<h3>OdbModelFieldVarList<a class="headerlink" href="#odbmodelfieldvarlist" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbModelFieldVarList</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/FieldReport/OdbModelFieldVarList.py#L1-L16"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList" title="Permalink to this definition">#</a></dt>
+<dd><p>The read-only OdbModelFieldVarList object lists all variables available for the model in
+the current OdbDisplay object.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">visualization</span>
+<span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">layers</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">modelVariableList</span>
+<span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">modelVariableList</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="writefieldreport">
+<h3>writeFieldReport<a class="headerlink" href="#writefieldreport" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="writefreebodyreport">
+<h3>writeFreeBodyReport<a class="headerlink" href="#writefreebodyreport" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="odb_display.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Odb Display</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="display.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Display Group</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, WANG Hailin
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">FieldReport</a><ul>
+<li><a class="reference internal" href="#create-field-reports-in-session">Create field reports in Session</a></li>
+<li><a class="reference internal" href="#object-features">Object features</a><ul>
+<li><a class="reference internal" href="#fieldreportoptions">FieldReportOptions</a></li>
+<li><a class="reference internal" href="#freebodyreportoptions">FreeBodyReportOptions</a></li>
+<li><a class="reference internal" href="#odbfieldvarlist">OdbFieldVarList</a></li>
+<li><a class="reference internal" href="#odbmodelfieldvarlist">OdbModelFieldVarList</a></li>
+<li><a class="reference internal" href="#writefieldreport">writeFieldReport</a></li>
+<li><a class="reference internal" href="#writefreebodyreport">writeFreeBodyReport</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/furo.js"></script>
+    </body>
+</html>

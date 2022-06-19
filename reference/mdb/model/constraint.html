@@ -1,0 +1,1559 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="Field" href="field.html" /><link rel="prev" title="Calibration of Material" href="calibration.html" />
+
+    <meta name="generator" content="sphinx-4.5.0, furo 2022.06.04.1"/>
+        <title>Constraint - AbqPy 2016a0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../../index.html"><div class="brand">AbqPy 2016a0 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../../index.html">
+  
+  
+  <span class="sidebar-brand-text">AbqPy 2016a0 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../summary.html">API Summary</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../summary/header.html">Header of the Python script</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../summary/mdb.html">Abaqus Model Database</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../summary/mdb/model.html">Abaqus Model</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/adaptivity.html">Adaptivity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/amplitude.html">Amplitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/assembly.html">Assembly</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/bc.html">Boundary Condition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/calibration.html">Calibration of Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/constraint.html">Constraint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/field.html">Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/filter.html">Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/interaction.html">Interaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/load.html">Load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/material.html">Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/optimization.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/output.html">Output Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/part.html">Part</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/predefined.html">Predefined Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/profile.html">Beam Section Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/property.html">Property</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../summary/mdb/model/section.html">Section</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../summary/mdb/model/section/connector.html">Connector</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/sketcher.html">Sketcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../summary/mdb/model/step.html">Step</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../summary/mdb/model/step/step_miscellaneous.html">Step Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../summary/mdb/job.html">Abaqus Job</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../summary/odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../summary/session.html">Abaqus Session</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../../../references.html">API Reference</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../../mdb.html">Abaqus Model Database</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 current has-children"><a class="reference internal" href="../model.html">Model</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="adaptivity.html">Adaptivity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="amplitude.html">Amplitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bc.html">Boundary Condition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="calibration.html">Calibration of Material</a></li>
+<li class="toctree-l4 current current-page"><a class="current reference internal" href="#">Constraint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="field.html">Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="filter.html">Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interaction.html">Interaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="load.html">Load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material.html">Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mesh.html">Mesh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="optimization.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="output.html">Output Request</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="part_assembly.html">Part and Assembly</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="part.html">Part</a></li>
+<li class="toctree-l5"><a class="reference internal" href="assembly.html">Assembly</a></li>
+<li class="toctree-l5"><a class="reference internal" href="part_assembly/datum.html">Datum</a></li>
+<li class="toctree-l5"><a class="reference internal" href="part_assembly/engineering.html">Engineering Feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="part_assembly/feature.html">Feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="part_assembly/geometry.html">Basic Geometry</a></li>
+<li class="toctree-l5"><a class="reference internal" href="part_assembly/region.html">Region</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="predefined.html">Predefined Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="profile.html">Beam Section Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="property.html">Property</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="section.html">Section</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="section/connector.html">Connector</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sketcher.html">Sketcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="step.html">Step</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="step/step_miscellaneous.html">Step Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../job.html">Job</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../annotation.html">Annotation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../edit_mesh.html">Edit Mesh</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../session.html">Abaqus Session</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../session/animation.html">Animation Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../session/canvas.html">Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../session/display_options.html">Display Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../session/display.html">Display Group</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../session/field_report.html">FieldReport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../session/odb_display.html">Odb Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../session/path.html">Path and Probe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../session/plot_options.html">Plot Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../session/print.html">Print</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../session/xy.html">XY</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../kernel.html">Kernel</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../kernel/cae_display_preferences.html">Abaqus CAE Display Preferences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../kernel/input.html">Input File Parser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../kernel/kernel.html">Custom Kernel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../kernel/messaging.html">Messaging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../kernel/table_collection.html">Table Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../kernel/text_representation.html">Text Representation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../kernel/utility.html">Utility and View</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="constraint">
+<h1>Constraint<a class="headerlink" href="#constraint" title="Permalink to this headline">#</a></h1>
+<p>The Constraint commands define constraints between regions of the model.</p>
+<section id="create-constraints">
+<h2>Create constraints<a class="headerlink" href="#create-constraints" title="Permalink to this headline">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Constraint.ConstraintModel.ConstraintModel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConstraintModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stefanBoltzmann</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">absoluteZero</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waveFormulation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NOT_SET'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'STANDARD_EXPLICIT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">universalGas</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyConstraints</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyConnectors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyInteractions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/ConstraintModel.py#L19-L538"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ConstraintModel.ConstraintModel" title="Permalink to this definition">#</a></dt>
+<dd><p>Abaqus creates a Model object named <cite>Model-1</cite> when a session is started.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints" title="abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdjustPoints</span></code></a>(name, surface, controlPoints)</p></td>
+<td><p>This method creates an AdjustPoints object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling" title="abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Coupling</span></code></a>(name, surface, controlPoint, ...[, ...])</p></td>
+<td><p>This method creates a Coupling object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody" title="abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DisplayBody</span></code></a>(name, instance, controlPoints)</p></td>
+<td><p>This method creates a DisplayBody object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion" title="abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EmbeddedRegion</span></code></a>(name, embeddedRegion, hostRegion)</p></td>
+<td><p>This method creates a EmbeddedRegion object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.Equation" title="abaqus.Constraint.ConstraintModel.ConstraintModel.Equation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Equation</span></code></a>(name, terms)</p></td>
+<td><p>This method creates an Equation object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint" title="abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MultipointConstraint</span></code></a>(name, surface, ...[, ...])</p></td>
+<td><p>This method creates a MultipointConstraint object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody" title="abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RigidBody</span></code></a>(name, refPointRegion[, ...])</p></td>
+<td><p>This method creates a RigidBody object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling" title="abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShellSolidCoupling</span></code></a>(name, shellEdge, solidFace)</p></td>
+<td><p>This method creates a ShellSolidCoupling object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.Tie" title="abaqus.Constraint.ConstraintModel.ConstraintModel.Tie"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Tie</span></code></a>(name, main, secondary[, adjust, ...])</p></td>
+<td><p>This method creates a Tie object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints">
+<span class="sig-name descname"><span class="pre">AdjustPoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">controlPoints</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Constraint.AdjustPoints.AdjustPoints" title="abaqus.Constraint.AdjustPoints.AdjustPoints"><span class="pre">AdjustPoints</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/ConstraintModel.py#L31-L58"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates an AdjustPoints object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the constraint repository key.</p>
+</dd>
+<dt><strong>surface</strong></dt><dd><p>A Region object specifying the surface to which the <strong>controlPoints</strong> are adjusted.</p>
+</dd>
+<dt><strong>controlPoints</strong></dt><dd><p>A Region object specifying the constraint control points.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints" title="abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdjustPoints</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">AdjustPoints</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling">
+<span class="sig-name descname"><span class="pre">Coupling</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">controlPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">influenceRadius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">couplingType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adjust</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weightingMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'UNIFORM'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Constraint.Coupling.Coupling" title="abaqus.Constraint.Coupling.Coupling"><span class="pre">Coupling</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/ConstraintModel.py#L60-L158"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a Coupling object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the constraint repository key.</p>
+</dd>
+<dt><strong>surface</strong></dt><dd><p>A Region object specifying the surface on which the coupling nodes are located.</p>
+</dd>
+<dt><strong>controlPoint</strong></dt><dd><p>A Region object specifying the constraint control point.</p>
+</dd>
+<dt><strong>influenceRadius</strong></dt><dd><p>The SymbolicConstant WHOLE_SURFACE or a Float specifying the influence radius.</p>
+</dd>
+<dt><strong>couplingType</strong></dt><dd><p>A SymbolicConstant specifying the coupling constraint type. Possible values are
+KINEMATIC, DISTRIBUTING, and STRUCTURAL.</p>
+</dd>
+<dt><strong>adjust</strong></dt><dd><p>A Boolean specifying if the control point will be adjusted (moved) to the surface. The
+point will be adjusted in the direction normal to the specified surface. The default
+value is OFF.</p>
+</dd>
+<dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the initial orientation of the local coordinate
+system for the coupling’s degrees of freedom. If <a href="#id1"><span class="problematic" id="id2">**</span></a>localCsys**=None, the coupling is
+defined in the global coordinate system. The default value is None.</p>
+</dd>
+<dt><strong>u1</strong></dt><dd><p>A Boolean specifying if the displacement component in the 1-direction is constrained to
+the reference node for a kinematic coupling constraint. The default value is ON.The <strong>u1</strong>
+argument applies only when <a href="#id3"><span class="problematic" id="id4">**</span></a>couplingType**=KINEMATIC.</p>
+</dd>
+<dt><strong>u2</strong></dt><dd><p>A Boolean specifying if the displacement component in the 2-direction is constrained to
+the reference node for a kinematic coupling constraint. The default value is ON.The <strong>u2</strong>
+argument applies only when <a href="#id5"><span class="problematic" id="id6">**</span></a>couplingType**=KINEMATIC.</p>
+</dd>
+<dt><strong>u3</strong></dt><dd><p>A Boolean specifying if the displacement component in the 3-direction is constrained to
+the reference node for a kinematic coupling constraint. The default value is ON.The <strong>u3</strong>
+argument applies only when <a href="#id7"><span class="problematic" id="id8">**</span></a>couplingType**=KINEMATIC.</p>
+</dd>
+<dt><strong>ur1</strong></dt><dd><p>A Boolean specifying if the rotational displacement component about the 1-direction is
+constrained to the reference node for a kinematic coupling constraint. The default value
+is ON.The <strong>ur1</strong> argument applies only when <a href="#id9"><span class="problematic" id="id10">**</span></a>couplingType**=KINEMATIC.</p>
+</dd>
+<dt><strong>ur2</strong></dt><dd><p>A Boolean specifying if the rotational displacement component about the 2-direction is
+constrained to the reference node for a kinematic coupling constraint. The default value
+is ON.The <strong>ur2</strong> argument applies only when <a href="#id11"><span class="problematic" id="id12">**</span></a>couplingType**=KINEMATIC.</p>
+</dd>
+<dt><strong>ur3</strong></dt><dd><p>A Boolean specifying if the rotational displacement component about the 3-direction is
+constrained to the reference node for a kinematic coupling constraint. The default value
+is ON.The <strong>ur3</strong> argument applies only when <a href="#id13"><span class="problematic" id="id14">**</span></a>couplingType**=KINEMATIC.</p>
+</dd>
+<dt><strong>weightingMethod</strong></dt><dd><p>A SymbolicConstant specifying an optional weighting method used for calculating the
+distributing weight factors. Possible values are UNIFORM, LINEAR, QUADRATIC, and CUBIC.
+The default value is UNIFORM.The <strong>weightingMethod</strong> argument applies only when
+<a href="#id15"><span class="problematic" id="id16">**</span></a>couplingType**=DISTRIBUTING.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling" title="abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Coupling</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Coupling</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody">
+<span class="sig-name descname"><span class="pre">DisplayBody</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="assembly.html#abaqus.Assembly.PartInstance.PartInstance" title="abaqus.Assembly.PartInstance.PartInstance"><span class="pre">PartInstance</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">controlPoints</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.ModelDotArray.ModelDotArray" title="abaqus.BasicGeometry.ModelDotArray.ModelDotArray"><span class="pre">ModelDotArray</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Constraint.DisplayBody.DisplayBody" title="abaqus.Constraint.DisplayBody.DisplayBody"><span class="pre">DisplayBody</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/ConstraintModel.py#L160-L191"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a DisplayBody object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the constraint repository key.</p>
+</dd>
+<dt><strong>instance</strong></dt><dd><p>A PartInstance object specifying the part instance that is to be used for display only.</p>
+</dd>
+<dt><strong>controlPoints</strong></dt><dd><p>A ModelDotArray object specifying the motion of the PartInstance. The control points may
+be ConstrainedSketchVertex, ReferencePoint, or MeshNode objects. Their motion will control the motion of
+the PartInstance. If this argument is set to an empty sequence, the PartInstance will
+remain fixed in space during the analysis. The sequence can have either one object or
+three objects.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody" title="abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DisplayBody</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">DisplayBody</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion">
+<span class="sig-name descname"><span class="pre">EmbeddedRegion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embeddedRegion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">hostRegion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">weightFactorTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">toleranceMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">absoluteTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fractionalTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion" title="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion"><span class="pre">EmbeddedRegion</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/ConstraintModel.py#L193-L254"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a EmbeddedRegion object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the constraint repository key.</p>
+</dd>
+<dt><strong>embeddedRegion</strong></dt><dd><p>A Region object specifying the body region to be embedded.</p>
+</dd>
+<dt><strong>hostRegion</strong></dt><dd><p>A Region object specifying the host region. A value of None indicates that the host
+region is the whole model.</p>
+</dd>
+<dt><strong>weightFactorTolerance</strong></dt><dd><p>A Float specifying a small value below which the weighting factors will be zeroed out.
+The default value is 10–6.</p>
+</dd>
+<dt><strong>toleranceMethod</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the embedded element
+tolerance. Possible values are ABSOLUTE, FRACTIONAL, and BOTH. The default value is
+BOTH.</p>
+</dd>
+<dt><strong>absoluteTolerance</strong></dt><dd><p>A Float specifying the absolute value by which a node on the embedded region may lie
+outside the host region. If <strong>absoluteTolerance**=0.0, the **fractionalTolerance</strong> value
+will be used. The default value is 0.0.This argument applies only when
+<a href="#id17"><span class="problematic" id="id18">**</span></a>toleranceMethod**=ABSOLUTE or BOTH.</p>
+</dd>
+<dt><strong>fractionalTolerance</strong></dt><dd><p>A Float specifying the fractional value by which a node on the embedded region may lie
+outside the host region. The fractional value is based on the average element size
+within the host region. The default value is 0.05.If both tolerance arguments are
+specified, the smaller value will be used.This argument applies only when
+<a href="#id19"><span class="problematic" id="id20">**</span></a>toleranceMethod**=FRACTIONAL or BOTH.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion" title="abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EmbeddedRegion</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">EmbeddedRegion</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Constraint.ConstraintModel.ConstraintModel.Equation">
+<span class="sig-name descname"><span class="pre">Equation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">terms</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Constraint.Equation.Equation" title="abaqus.Constraint.Equation.Equation"><span class="pre">Equation</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/ConstraintModel.py#L256-L285"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.Equation" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates an Equation object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the constraint repository key.</p>
+</dd>
+<dt><strong>terms</strong></dt><dd><p>A sequence of (Float, String, Int, Int) sequences specifying a coefficient, Set name,
+degree of freedom, and coordinate system ID. The coordinate system ID is optional.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.Equation" title="abaqus.Constraint.ConstraintModel.ConstraintModel.Equation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Equation</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><ul class="simple">
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>terms</strong> <code class="xref py py-obj docutils literal notranslate"><span class="pre">does</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">contain</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">more</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">than</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">one</span></code> entry:</dt><dd><p>Equation must have two or more terms.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Equation</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint">
+<span class="sig-name descname"><span class="pre">MultipointConstraint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">controlPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">mpcType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userMode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DOF_MODE_MPC'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint" title="abaqus.Constraint.MultipointConstraint.MultipointConstraint"><span class="pre">MultipointConstraint</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/ConstraintModel.py#L287-L340"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a MultipointConstraint object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the constraint repository key.</p>
+</dd>
+<dt><strong>surface</strong></dt><dd><p>A Region object specifying the surface on which the MultipointConstraint nodes are
+located.</p>
+</dd>
+<dt><strong>controlPoint</strong></dt><dd><p>A Region object specifying the constraint control point.</p>
+</dd>
+<dt><strong>mpcType</strong></dt><dd><p>A SymbolicConstant specifying the MPC type of the constraint. Possible values are
+BEAM_MPC, ELBOW_MPC, PIN_MPC, LINK_MPC, TIE_MPC, and USER_MPC.</p>
+</dd>
+<dt><strong>csys</strong></dt><dd><p>None or a DatumCsys object specifying the initial orientation of the local coordinate
+system for the MultipointConstraint’s degrees of freedom. If <a href="#id21"><span class="problematic" id="id22">**</span></a>localCsys**=None, the
+MultipointConstraint is defined in the global coordinate system. The default value is
+None.</p>
+</dd>
+<dt><strong>userType</strong></dt><dd><p>An Int specifying to differentiate between different constraint types in a user-defined
+MultipointConstraint. The default value is 0.The <strong>userType</strong> argument applies only when
+<a href="#id23"><span class="problematic" id="id24">**</span></a>mpcType**=USER_MPC.</p>
+</dd>
+<dt><strong>userMode</strong></dt><dd><p>A SymbolicConstant specifying the mode of the constraint when it is user-defined.
+Possible values are DOF_MODE_MPC and NODE_MODE_MPC. The default value is
+DOF_MODE_MPC.The <strong>userMode</strong> argument applies only when <a href="#id25"><span class="problematic" id="id26">**</span></a>mpcType**=USER_MPC.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint" title="abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MultipointConstraint</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">MultipointConstraint</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody">
+<span class="sig-name descname"><span class="pre">RigidBody</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointRegion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">bodyRegion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tieRegion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pinRegion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surfaceRegion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointAtCOM</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isothermal</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Constraint.RigidBody.RigidBody" title="abaqus.Constraint.RigidBody.RigidBody"><span class="pre">RigidBody</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/ConstraintModel.py#L342-L402"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a RigidBody object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the constraint repository key.</p>
+</dd>
+<dt><strong>refPointRegion</strong></dt><dd><p>A Region object specifying the reference point.</p>
+</dd>
+<dt><strong>bodyRegion</strong></dt><dd><p>None or a Region object specifying the elements constrained to the movement of the
+reference point. The default value is None.</p>
+</dd>
+<dt><strong>tieRegion</strong></dt><dd><p>None or a Region object specifying the nodes tied to the movement of the reference
+point. The default value is None.</p>
+</dd>
+<dt><strong>pinRegion</strong></dt><dd><p>None or a Region object specifying the nodes pinned to the movement of the reference
+point. The default value is None.</p>
+</dd>
+<dt><strong>surfaceRegion</strong></dt><dd><p>None or a Region object specifying the analytic surface constrained to the movement of
+the reference point. The default value is None.</p>
+</dd>
+<dt><strong>refPointAtCOM</strong></dt><dd><p>A Boolean specifying whether the analysis product should recompute the reference point
+position to be at the center of mass. The default value is OFF.</p>
+</dd>
+<dt><strong>isothermal</strong></dt><dd><p>A Boolean specifying whether the temperature degree of freedom should be constrained.
+The default value is OFF.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody" title="abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RigidBody</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">RigidBody</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling">
+<span class="sig-name descname"><span class="pre">ShellSolidCoupling</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shellEdge</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">solidFace</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionToleranceMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'COMPUTED'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">influenceDistanceMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">influenceDistance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling" title="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling"><span class="pre">ShellSolidCoupling</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/ConstraintModel.py#L404-L460"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a ShellSolidCoupling object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the constraint repository key.</p>
+</dd>
+<dt><strong>shellEdge</strong></dt><dd><p>A Region object specifying the name of the shell edge surface.</p>
+</dd>
+<dt><strong>solidFace</strong></dt><dd><p>A Region object specifying the name of the solid surface.</p>
+</dd>
+<dt><strong>positionToleranceMethod</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the position tolerance.
+Possible values are COMPUTED and SPECIFIED. The default value is COMPUTED.</p>
+</dd>
+<dt><strong>positionTolerance</strong></dt><dd><p>A Float specifying the position tolerance. The default value is 0.0.The
+<strong>positionTolerance</strong> argument applies only when
+<a href="#id27"><span class="problematic" id="id28">**</span></a>positionToleranceMethod**=SPECIFIED.Note:Abaqus will not constrain nodes on the solid
+face region outside the position tolerance.</p>
+</dd>
+<dt><strong>influenceDistanceMethod</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the influence distance.
+Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT.</p>
+</dd>
+<dt><strong>influenceDistance</strong></dt><dd><p>A Float specifying the influence distance. The <strong>influenceDistance</strong> argument applies only
+when <a href="#id29"><span class="problematic" id="id30">**</span></a>influenceDistanceMethod**=SPECIFIED. The default value is 0.0.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling" title="abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShellSolidCoupling</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ShellSolidCoupling</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Constraint.ConstraintModel.ConstraintModel.Tie">
+<span class="sig-name descname"><span class="pre">Tie</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">main</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">secondary</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">adjust</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionToleranceMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'COMPUTED'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tieRotations</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraintRatioMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraintRatio</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraintEnforcement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SOLVER_DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Constraint.Tie.Tie" title="abaqus.Constraint.Tie.Tie"><span class="pre">Tie</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/ConstraintModel.py#L462-L538"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.Tie" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a Tie object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the constraint repository key.</p>
+</dd>
+<dt><strong>main</strong></dt><dd><p>A Region object specifying the name of the main surface.</p>
+</dd>
+<dt><strong>secondary</strong></dt><dd><p>A Region object specifying the name of the secondary surface.</p>
+</dd>
+<dt><strong>adjust</strong></dt><dd><p>A Boolean specifying whether initial positions of tied secondary nodes are adjusted to
+lie on the main surface. The default value is ON.</p>
+</dd>
+<dt><strong>positionToleranceMethod</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the position tolerance.
+Possible values are COMPUTED and SPECIFIED. The default value is COMPUTED.</p>
+</dd>
+<dt><strong>positionTolerance</strong></dt><dd><p>A Float specifying the position tolerance. The <strong>positionTolerance</strong> argument applies only
+when <a href="#id31"><span class="problematic" id="id32">**</span></a>positionToleranceMethod**=SPECIFIED. The default value is 0.0.</p>
+</dd>
+<dt><strong>tieRotations</strong></dt><dd><p>A Boolean specifying whether rotation degrees of freedom should be tied. The default
+value is ON.</p>
+</dd>
+<dt><strong>constraintRatioMethod</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the constraint ratio.
+Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT.</p>
+</dd>
+<dt><strong>constraintRatio</strong></dt><dd><p>A Float specifying the fractional distance between the main reference surface and the
+secondary node at which the translational constraint should act. The <strong>constraintRatio</strong>
+argument applies only when <a href="#id33"><span class="problematic" id="id34">**</span></a>constraintRatioMethod**=SPECIFIED. The default value is 0.0.</p>
+</dd>
+<dt><strong>constraintEnforcement</strong></dt><dd><p>A SymbolicConstant specifying the discretization method. Possible values are
+SOLVER_DEFAULT, NODE_TO_SURFACE, and SURFACE_TO_SURFACE. The default value is
+SOLVER_DEFAULT.</p>
+</dd>
+<dt><strong>thickness</strong></dt><dd><p>A Boolean specifying whether shell element thickness is considered. The default value is
+ON.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.Tie" title="abaqus.Constraint.ConstraintModel.ConstraintModel.Tie"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Tie</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Tie</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="object-features">
+<h2>Object features<a class="headerlink" href="#object-features" title="Permalink to this headline">#</a></h2>
+<section id="id35">
+<h3>Constraint<a class="headerlink" href="#id35" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Constraint.Constraint.Constraint">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Constraint</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/Constraint.py#L4-L50"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Constraint.Constraint" title="Permalink to this definition">#</a></dt>
+<dd><p>The ConstrainedSketchConstraint object is the abstract base type for other ConstrainedSketchConstraint objects. The
+ConstrainedSketchConstraint object has no explicit constructor. The members of the ConstrainedSketchConstraint object are
+common to all objects derived from the ConstrainedSketchConstraint.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">interaction</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">constraints</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name: str</strong></dt><dd><p>A String specifying the constraint repository key.</p>
+</dd>
+<dt><strong>suppressed: Boolean</strong></dt><dd><p>A Boolean specifying whether the constraint is suppressed or not. The default value is
+OFF.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.Constraint.Constraint.delete" title="abaqus.Constraint.Constraint.Constraint.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
+<td><p>This method allows you to delete existing constraints.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.Constraint.Constraint.resume" title="abaqus.Constraint.Constraint.Constraint.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
+<td><p>This method resumes the constraint that was previously suppressed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.Constraint.Constraint.suppress" title="abaqus.Constraint.Constraint.Constraint.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
+<td><p>This method suppresses the constraint.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Constraint.Constraint.Constraint.delete">
+<span class="sig-name descname"><span class="pre">delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indices</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/Constraint.py#L42-L50"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Constraint.Constraint.delete" title="Permalink to this definition">#</a></dt>
+<dd><p>This method allows you to delete existing constraints.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>indices</strong></dt><dd><p>A sequence of Ints specifying the index of each constraint to delete.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Constraint.Constraint.Constraint.resume">
+<span class="sig-name descname"><span class="pre">resume</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/Constraint.py#L34-L36"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Constraint.Constraint.resume" title="Permalink to this definition">#</a></dt>
+<dd><p>This method resumes the constraint that was previously suppressed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Constraint.Constraint.Constraint.suppress">
+<span class="sig-name descname"><span class="pre">suppress</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/Constraint.py#L38-L40"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Constraint.Constraint.suppress" title="Permalink to this definition">#</a></dt>
+<dd><p>This method suppresses the constraint.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="adjustpoints">
+<h3>AdjustPoints<a class="headerlink" href="#adjustpoints" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Constraint.AdjustPoints.AdjustPoints">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AdjustPoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">controlPoints</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/AdjustPoints.py#L6-L63"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.AdjustPoints.AdjustPoints" title="Permalink to this definition">#</a></dt>
+<dd><p>The AdjustPoints constraint object is used to adjust points (nodes) to a surface.
+The AdjustPoints object is derived from the ConstrainedSketchConstraint object.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">interaction</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">constraints</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The corresponding analysis keywords are:</p>
+<ul class="simple">
+<li><p>ADJUST</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>suppressed: Boolean</strong></dt><dd><p>A Boolean specifying whether the constraint is suppressed or not. The default value is
+OFF.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.AdjustPoints.AdjustPoints.setValues" title="abaqus.Constraint.AdjustPoints.AdjustPoints.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
+<td><p>This method modifies the AdjustPoints object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Constraint.AdjustPoints.AdjustPoints.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/AdjustPoints.py#L61-L63"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.AdjustPoints.AdjustPoints.setValues" title="Permalink to this definition">#</a></dt>
+<dd><p>This method modifies the AdjustPoints object.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="coupling">
+<h3>Coupling<a class="headerlink" href="#coupling" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Constraint.Coupling.Coupling">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Coupling</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">controlPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">influenceRadius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">couplingType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adjust</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weightingMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'UNIFORM'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/Coupling.py#L8-L176"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Coupling.Coupling" title="Permalink to this definition">#</a></dt>
+<dd><p>The Coupling object defines a constraint between a group of coupling nodes located on a
+region and a reference point.
+The Coupling object is derived from the ConstrainedSketchConstraint object.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">interaction</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">constraints</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The corresponding analysis keywords are:</p>
+<ul class="simple">
+<li><p>COUPLING</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>suppressed: Boolean</strong></dt><dd><p>A Boolean specifying whether the constraint is suppressed or not. The default value is
+OFF.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.Coupling.Coupling.setValues" title="abaqus.Constraint.Coupling.Coupling.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([adjust, localCsys, u1, u2, u3, ...])</p></td>
+<td><p>This method modifies the Coupling object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Constraint.Coupling.Coupling.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">adjust</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weightingMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'UNIFORM'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/Coupling.py#L122-L176"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Coupling.Coupling.setValues" title="Permalink to this definition">#</a></dt>
+<dd><p>This method modifies the Coupling object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>adjust</strong></dt><dd><p>A Boolean specifying if the control point will be adjusted (moved) to the surface. The
+point will be adjusted in the direction normal to the specified surface. The default
+value is OFF.</p>
+</dd>
+<dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the initial orientation of the local coordinate
+system for the coupling’s degrees of freedom. If <a href="#id36"><span class="problematic" id="id37">**</span></a>localCsys**=None, the coupling is
+defined in the global coordinate system. The default value is None.</p>
+</dd>
+<dt><strong>u1</strong></dt><dd><p>A Boolean specifying if the displacement component in the 1-direction is constrained to
+the reference node for a kinematic coupling constraint. The default value is ON.The <strong>u1</strong>
+argument applies only when <a href="#id38"><span class="problematic" id="id39">**</span></a>couplingType**=KINEMATIC.</p>
+</dd>
+<dt><strong>u2</strong></dt><dd><p>A Boolean specifying if the displacement component in the 2-direction is constrained to
+the reference node for a kinematic coupling constraint. The default value is ON.The <strong>u2</strong>
+argument applies only when <a href="#id40"><span class="problematic" id="id41">**</span></a>couplingType**=KINEMATIC.</p>
+</dd>
+<dt><strong>u3</strong></dt><dd><p>A Boolean specifying if the displacement component in the 3-direction is constrained to
+the reference node for a kinematic coupling constraint. The default value is ON.The <strong>u3</strong>
+argument applies only when <a href="#id42"><span class="problematic" id="id43">**</span></a>couplingType**=KINEMATIC.</p>
+</dd>
+<dt><strong>ur1</strong></dt><dd><p>A Boolean specifying if the rotational displacement component about the 1-direction is
+constrained to the reference node for a kinematic coupling constraint. The default value
+is ON.The <strong>ur1</strong> argument applies only when <a href="#id44"><span class="problematic" id="id45">**</span></a>couplingType**=KINEMATIC.</p>
+</dd>
+<dt><strong>ur2</strong></dt><dd><p>A Boolean specifying if the rotational displacement component about the 2-direction is
+constrained to the reference node for a kinematic coupling constraint. The default value
+is ON.The <strong>ur2</strong> argument applies only when <a href="#id46"><span class="problematic" id="id47">**</span></a>couplingType**=KINEMATIC.</p>
+</dd>
+<dt><strong>ur3</strong></dt><dd><p>A Boolean specifying if the rotational displacement component about the 3-direction is
+constrained to the reference node for a kinematic coupling constraint. The default value
+is ON.The <strong>ur3</strong> argument applies only when <a href="#id48"><span class="problematic" id="id49">**</span></a>couplingType**=KINEMATIC.</p>
+</dd>
+<dt><strong>weightingMethod</strong></dt><dd><p>A SymbolicConstant specifying an optional weighting method used for calculating the
+distributing weight factors. Possible values are UNIFORM, LINEAR, QUADRATIC, and CUBIC.
+The default value is UNIFORM.The <strong>weightingMethod</strong> argument applies only when
+<a href="#id50"><span class="problematic" id="id51">**</span></a>couplingType**=DISTRIBUTING.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="displaybody">
+<h3>DisplayBody<a class="headerlink" href="#displaybody" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Constraint.DisplayBody.DisplayBody">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DisplayBody</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="assembly.html#abaqus.Assembly.PartInstance.PartInstance" title="abaqus.Assembly.PartInstance.PartInstance"><span class="pre">PartInstance</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">controlPoints</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.ModelDotArray.ModelDotArray" title="abaqus.BasicGeometry.ModelDotArray.ModelDotArray"><span class="pre">ModelDotArray</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/DisplayBody.py#L7-L71"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.DisplayBody.DisplayBody" title="Permalink to this definition">#</a></dt>
+<dd><p>The DisplayBody object defines a constraint such that the specified instance is used for
+display only and does not take part in the analysis. However it will still be visible
+during postprocessing and its position at any frame will be defined by the translation
+and rotation of the specified control points.
+The DisplayBody object is derived from the ConstrainedSketchConstraint object.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">interaction</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">constraints</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The corresponding analysis keywords are:</p>
+<ul class="simple">
+<li><p>DISPLAY BODY</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>suppressed: Boolean</strong></dt><dd><p>A Boolean specifying whether the constraint is suppressed or not. The default value is
+OFF.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.DisplayBody.DisplayBody.setValues" title="abaqus.Constraint.DisplayBody.DisplayBody.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
+<td><p>This method modifies the DisplayBody object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Constraint.DisplayBody.DisplayBody.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/DisplayBody.py#L69-L71"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.DisplayBody.DisplayBody.setValues" title="Permalink to this definition">#</a></dt>
+<dd><p>This method modifies the DisplayBody object.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="embeddedregion">
+<h3>EmbeddedRegion<a class="headerlink" href="#embeddedregion" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EmbeddedRegion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embeddedRegion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">hostRegion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">weightFactorTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">toleranceMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">absoluteTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fractionalTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/EmbeddedRegion.py#L6-L120"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion" title="Permalink to this definition">#</a></dt>
+<dd><p>The EmbeddedRegion object allows you to embed a region of the model within a “host”
+region of the model or within the whole model.
+The EmbeddedRegion object is derived from the ConstrainedSketchConstraint object.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">interaction</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">constraints</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The corresponding analysis keywords are:</p>
+<ul class="simple">
+<li><p>EMBEDDED ELEMENT</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>suppressed: Boolean</strong></dt><dd><p>A Boolean specifying whether the constraint is suppressed or not. The default value is
+OFF.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues" title="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([weightFactorTolerance, ...])</p></td>
+<td><p>This method modifies the EmbeddedRegion object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">weightFactorTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">toleranceMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">absoluteTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fractionalTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/EmbeddedRegion.py#L90-L120"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues" title="Permalink to this definition">#</a></dt>
+<dd><p>This method modifies the EmbeddedRegion object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>weightFactorTolerance</strong></dt><dd><p>A Float specifying a small value below which the weighting factors will be zeroed out.
+The default value is 10–6.</p>
+</dd>
+<dt><strong>toleranceMethod</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the embedded element
+tolerance. Possible values are ABSOLUTE, FRACTIONAL, and BOTH. The default value is
+BOTH.</p>
+</dd>
+<dt><strong>absoluteTolerance</strong></dt><dd><p>A Float specifying the absolute value by which a node on the embedded region may lie
+outside the host region. If <strong>absoluteTolerance**=0.0, the **fractionalTolerance</strong> value
+will be used. The default value is 0.0.This argument applies only when
+<a href="#id52"><span class="problematic" id="id53">**</span></a>toleranceMethod**=ABSOLUTE or BOTH.</p>
+</dd>
+<dt><strong>fractionalTolerance</strong></dt><dd><p>A Float specifying the fractional value by which a node on the embedded region may lie
+outside the host region. The fractional value is based on the average element size
+within the host region. The default value is 0.05.If both tolerance arguments are
+specified, the smaller value will be used.This argument applies only when
+<a href="#id54"><span class="problematic" id="id55">**</span></a>toleranceMethod**=FRACTIONAL or BOTH.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="equation">
+<h3>Equation<a class="headerlink" href="#equation" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Constraint.Equation.Equation">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Equation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">terms</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/Equation.py#L5-L73"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Equation.Equation" title="Permalink to this definition">#</a></dt>
+<dd><p>The Equation object defines a linear multi-point constraint between a set of degrees of
+freedom.
+The Equation object is derived from the ConstrainedSketchConstraint object.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">interaction</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">constraints</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The corresponding analysis keywords are:</p>
+<ul class="simple">
+<li><p>EQUATION</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>suppressed: Boolean</strong></dt><dd><p>A Boolean specifying whether the constraint is suppressed or not. The default value is
+OFF.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.Equation.Equation.setValues" title="abaqus.Constraint.Equation.Equation.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
+<td><p>This method modifies the Equation object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Constraint.Equation.Equation.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/Equation.py#L65-L73"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Equation.Equation.setValues" title="Permalink to this definition">#</a></dt>
+<dd><p>This method modifies the Equation object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><ul class="simple">
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>terms</strong> <code class="xref py py-obj docutils literal notranslate"><span class="pre">does</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">contain</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">more</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">than</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">one</span></code> entry:</dt><dd><p>Equation must have two or more terms.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="multipointconstraint">
+<h3>MultipointConstraint<a class="headerlink" href="#multipointconstraint" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Constraint.MultipointConstraint.MultipointConstraint">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipointConstraint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">controlPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">mpcType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userMode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DOF_MODE_MPC'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/MultipointConstraint.py#L6-L112"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint" title="Permalink to this definition">#</a></dt>
+<dd><p>The MultipointConstraint object defines a constraint between a group of
+MultipointConstraint nodes located on a region and a reference point.
+The MultipointConstraint object is derived from the ConstrainedSketchConstraint object.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">interaction</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">constraints</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The corresponding analysis keywords are:</p>
+<ul class="simple">
+<li><p>MPC</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>suppressed: Boolean</strong></dt><dd><p>A Boolean specifying whether the constraint is suppressed or not. The default value is
+OFF.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.setValues" title="abaqus.Constraint.MultipointConstraint.MultipointConstraint.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([csys, userType, userMode])</p></td>
+<td><p>This method modifies the MultipointConstraint object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Constraint.MultipointConstraint.MultipointConstraint.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">csys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userMode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DOF_MODE_MPC'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/MultipointConstraint.py#L88-L112"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.setValues" title="Permalink to this definition">#</a></dt>
+<dd><p>This method modifies the MultipointConstraint object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>csys</strong></dt><dd><p>None or a DatumCsys object specifying the initial orientation of the local coordinate
+system for the MultipointConstraint’s degrees of freedom. If <a href="#id56"><span class="problematic" id="id57">**</span></a>localCsys**=None, the
+MultipointConstraint is defined in the global coordinate system. The default value is
+None.</p>
+</dd>
+<dt><strong>userType</strong></dt><dd><p>An Int specifying to differentiate between different constraint types in a user-defined
+MultipointConstraint. The default value is 0.The <strong>userType</strong> argument applies only when
+<a href="#id58"><span class="problematic" id="id59">**</span></a>mpcType**=USER_MPC.</p>
+</dd>
+<dt><strong>userMode</strong></dt><dd><p>A SymbolicConstant specifying the mode of the constraint when it is user-defined.
+Possible values are DOF_MODE_MPC and NODE_MODE_MPC. The default value is
+DOF_MODE_MPC.The <strong>userMode</strong> argument applies only when <a href="#id60"><span class="problematic" id="id61">**</span></a>mpcType**=USER_MPC.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="rigidbody">
+<h3>RigidBody<a class="headerlink" href="#rigidbody" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Constraint.RigidBody.RigidBody">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RigidBody</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointRegion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">bodyRegion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tieRegion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pinRegion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surfaceRegion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointAtCOM</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isothermal</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/RigidBody.py#L6-L120"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.RigidBody.RigidBody" title="Permalink to this definition">#</a></dt>
+<dd><p>The RigidBody object constrains all the degrees of freedom on the specified regions to
+the degree of freedom of its associated reference point.
+The RigidBody object is derived from the ConstrainedSketchConstraint object.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">interaction</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">constraints</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The corresponding analysis keywords are:</p>
+<ul class="simple">
+<li><p>RIGID BODY</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>suppressed: Boolean</strong></dt><dd><p>A Boolean specifying whether the constraint is suppressed or not. The default value is
+OFF.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.RigidBody.RigidBody.setValues" title="abaqus.Constraint.RigidBody.RigidBody.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([bodyRegion, tieRegion, ...])</p></td>
+<td><p>This method modifies the RigidBody object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Constraint.RigidBody.RigidBody.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bodyRegion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tieRegion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pinRegion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surfaceRegion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointAtCOM</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isothermal</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/RigidBody.py#L88-L120"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.RigidBody.RigidBody.setValues" title="Permalink to this definition">#</a></dt>
+<dd><p>This method modifies the RigidBody object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>bodyRegion</strong></dt><dd><p>None or a Region object specifying the elements constrained to the movement of the
+reference point. The default value is None.</p>
+</dd>
+<dt><strong>tieRegion</strong></dt><dd><p>None or a Region object specifying the nodes tied to the movement of the reference
+point. The default value is None.</p>
+</dd>
+<dt><strong>pinRegion</strong></dt><dd><p>None or a Region object specifying the nodes pinned to the movement of the reference
+point. The default value is None.</p>
+</dd>
+<dt><strong>surfaceRegion</strong></dt><dd><p>None or a Region object specifying the analytic surface constrained to the movement of
+the reference point. The default value is None.</p>
+</dd>
+<dt><strong>refPointAtCOM</strong></dt><dd><p>A Boolean specifying whether the analysis product should recompute the reference point
+position to be at the center of mass. The default value is OFF.</p>
+</dd>
+<dt><strong>isothermal</strong></dt><dd><p>A Boolean specifying whether the temperature degree of freedom should be constrained.
+The default value is OFF.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="shellsolidcoupling">
+<h3>ShellSolidCoupling<a class="headerlink" href="#shellsolidcoupling" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ShellSolidCoupling</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shellEdge</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">solidFace</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionToleranceMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'COMPUTED'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">influenceDistanceMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">influenceDistance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/ShellSolidCoupling.py#L6-L111"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling" title="Permalink to this definition">#</a></dt>
+<dd><p>The ShellSolidCoupling object defines two surfaces to be tied together for the duration
+of a simulation.
+The ShellSolidCoupling object is derived from the ConstrainedSketchConstraint object.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">interaction</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">constraints</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The corresponding analysis keywords are:</p>
+<ul class="simple">
+<li><p>SHELL TO SOLID COUPLING</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>suppressed: Boolean</strong></dt><dd><p>A Boolean specifying whether the constraint is suppressed or not. The default value is
+OFF.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues" title="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([positionToleranceMethod, ...])</p></td>
+<td><p>This method modifies the ShellSolidCoupling object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">positionToleranceMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'COMPUTED'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">influenceDistanceMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">influenceDistance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/ShellSolidCoupling.py#L85-L111"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues" title="Permalink to this definition">#</a></dt>
+<dd><p>This method modifies the ShellSolidCoupling object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>positionToleranceMethod</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the position tolerance.
+Possible values are COMPUTED and SPECIFIED. The default value is COMPUTED.</p>
+</dd>
+<dt><strong>positionTolerance</strong></dt><dd><p>A Float specifying the position tolerance. The default value is 0.0.The
+<strong>positionTolerance</strong> argument applies only when
+<a href="#id62"><span class="problematic" id="id63">**</span></a>positionToleranceMethod**=SPECIFIED.Note:Abaqus will not constrain nodes on the solid
+face region outside the position tolerance.</p>
+</dd>
+<dt><strong>influenceDistanceMethod</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the influence distance.
+Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT.</p>
+</dd>
+<dt><strong>influenceDistance</strong></dt><dd><p>A Float specifying the influence distance. The <strong>influenceDistance</strong> argument applies only
+when <a href="#id64"><span class="problematic" id="id65">**</span></a>influenceDistanceMethod**=SPECIFIED. The default value is 0.0.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="tie">
+<h3>Tie<a class="headerlink" href="#tie" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Constraint.Tie.Tie">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Tie</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">main</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">secondary</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">adjust</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionToleranceMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'COMPUTED'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tieRotations</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraintRatioMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraintRatio</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraintEnforcement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SOLVER_DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/Tie.py#L6-L149"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Tie.Tie" title="Permalink to this definition">#</a></dt>
+<dd><p>The Tie object defines two surfaces to be tied together for the duration of a
+simulation.
+The Tie object is derived from the ConstrainedSketchConstraint object.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">interaction</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">constraints</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The corresponding analysis keywords are:</p>
+<ul class="simple">
+<li><p>TIE</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>suppressed: Boolean</strong></dt><dd><p>A Boolean specifying whether the constraint is suppressed or not. The default value is
+OFF.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.Tie.Tie.setValues" title="abaqus.Constraint.Tie.Tie.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([adjust, positionToleranceMethod, ...])</p></td>
+<td><p>This method modifies the Tie object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.Tie.Tie.swapSurfaces" title="abaqus.Constraint.Tie.Tie.swapSurfaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">swapSurfaces</span></code></a>()</p></td>
+<td><p>This method switches the main and secondary surfaces of a tied constraint.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Constraint.Tie.Tie.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">adjust</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionToleranceMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'COMPUTED'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tieRotations</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraintRatioMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraintRatio</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraintEnforcement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SOLVER_DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/Tie.py#L107-L149"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Tie.Tie.setValues" title="Permalink to this definition">#</a></dt>
+<dd><p>This method modifies the Tie object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>adjust</strong></dt><dd><p>A Boolean specifying whether initial positions of tied secondary nodes are adjusted to
+lie on the main surface. The default value is ON.</p>
+</dd>
+<dt><strong>positionToleranceMethod</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the position tolerance.
+Possible values are COMPUTED and SPECIFIED. The default value is COMPUTED.</p>
+</dd>
+<dt><strong>positionTolerance</strong></dt><dd><p>A Float specifying the position tolerance. The <strong>positionTolerance</strong> argument applies only
+when <a href="#id66"><span class="problematic" id="id67">**</span></a>positionToleranceMethod**=SPECIFIED. The default value is 0.0.</p>
+</dd>
+<dt><strong>tieRotations</strong></dt><dd><p>A Boolean specifying whether rotation degrees of freedom should be tied. The default
+value is ON.</p>
+</dd>
+<dt><strong>constraintRatioMethod</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the constraint ratio.
+Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT.</p>
+</dd>
+<dt><strong>constraintRatio</strong></dt><dd><p>A Float specifying the fractional distance between the main reference surface and the
+secondary node at which the translational constraint should act. The <strong>constraintRatio</strong>
+argument applies only when <a href="#id68"><span class="problematic" id="id69">**</span></a>constraintRatioMethod**=SPECIFIED. The default value is 0.0.</p>
+</dd>
+<dt><strong>constraintEnforcement</strong></dt><dd><p>A SymbolicConstant specifying the discretization method. Possible values are
+SOLVER_DEFAULT, NODE_TO_SURFACE, and SURFACE_TO_SURFACE. The default value is
+SOLVER_DEFAULT.</p>
+</dd>
+<dt><strong>thickness</strong></dt><dd><p>A Boolean specifying whether shell element thickness is considered. The default value is
+ON.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Constraint.Tie.Tie.swapSurfaces">
+<span class="sig-name descname"><span class="pre">swapSurfaces</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Constraint/Tie.py#L101-L105"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Tie.Tie.swapSurfaces" title="Permalink to this definition">#</a></dt>
+<dd><p>This method switches the main and secondary surfaces of a tied constraint. This command
+is valid only during the step in which the interaction is created.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="field.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Field</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="calibration.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Calibration of Material</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, WANG Hailin
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Constraint</a><ul>
+<li><a class="reference internal" href="#create-constraints">Create constraints</a></li>
+<li><a class="reference internal" href="#object-features">Object features</a><ul>
+<li><a class="reference internal" href="#id35">Constraint</a></li>
+<li><a class="reference internal" href="#adjustpoints">AdjustPoints</a></li>
+<li><a class="reference internal" href="#coupling">Coupling</a></li>
+<li><a class="reference internal" href="#displaybody">DisplayBody</a></li>
+<li><a class="reference internal" href="#embeddedregion">EmbeddedRegion</a></li>
+<li><a class="reference internal" href="#equation">Equation</a></li>
+<li><a class="reference internal" href="#multipointconstraint">MultipointConstraint</a></li>
+<li><a class="reference internal" href="#rigidbody">RigidBody</a></li>
+<li><a class="reference internal" href="#shellsolidcoupling">ShellSolidCoupling</a></li>
+<li><a class="reference internal" href="#tie">Tie</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/scripts/furo.js"></script>
+    </body>
+</html>

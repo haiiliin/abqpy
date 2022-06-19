@@ -1,0 +1,1190 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Edit Mesh" href="edit_mesh.html" /><link rel="prev" title="Job" href="job.html" />
+
+    <meta name="generator" content="sphinx-4.5.0, furo 2022.06.04.1"/>
+        <title>Annotation - AbqPy 2016a0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">AbqPy 2016a0 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  
+  
+  <span class="sidebar-brand-text">AbqPy 2016a0 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../summary.html">API Summary</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../summary/header.html">Header of the Python script</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../summary/mdb.html">Abaqus Model Database</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../summary/mdb/model.html">Abaqus Model</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/adaptivity.html">Adaptivity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/amplitude.html">Amplitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/assembly.html">Assembly</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/bc.html">Boundary Condition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/calibration.html">Calibration of Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/constraint.html">Constraint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/field.html">Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/filter.html">Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/interaction.html">Interaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/load.html">Load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/material.html">Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/optimization.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/output.html">Output Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/part.html">Part</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/predefined.html">Predefined Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/profile.html">Beam Section Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/property.html">Property</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../summary/mdb/model/section.html">Section</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../summary/mdb/model/section/connector.html">Connector</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/sketcher.html">Sketcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../summary/mdb/model/step.html">Step</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../summary/mdb/model/step/step_miscellaneous.html">Step Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../summary/mdb/job.html">Abaqus Job</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../summary/odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../summary/session.html">Abaqus Session</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../../references.html">API Reference</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../mdb.html">Abaqus Model Database</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 has-children"><a class="reference internal" href="model.html">Model</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="model/adaptivity.html">Adaptivity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/amplitude.html">Amplitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/bc.html">Boundary Condition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/calibration.html">Calibration of Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/constraint.html">Constraint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/field.html">Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/filter.html">Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/interaction.html">Interaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/load.html">Load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/material.html">Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/mesh.html">Mesh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/optimization.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/output.html">Output Request</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="model/part_assembly.html">Part and Assembly</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="model/part.html">Part</a></li>
+<li class="toctree-l5"><a class="reference internal" href="model/assembly.html">Assembly</a></li>
+<li class="toctree-l5"><a class="reference internal" href="model/part_assembly/datum.html">Datum</a></li>
+<li class="toctree-l5"><a class="reference internal" href="model/part_assembly/engineering.html">Engineering Feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="model/part_assembly/feature.html">Feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="model/part_assembly/geometry.html">Basic Geometry</a></li>
+<li class="toctree-l5"><a class="reference internal" href="model/part_assembly/region.html">Region</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="model/predefined.html">Predefined Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/profile.html">Beam Section Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/property.html">Property</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="model/section.html">Section</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="model/section/connector.html">Connector</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="model/sketcher.html">Sketcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="model/step.html">Step</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="model/step/step_miscellaneous.html">Step Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="job.html">Job</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Annotation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="edit_mesh.html">Edit Mesh</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../session.html">Abaqus Session</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../session/animation.html">Animation Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/canvas.html">Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/display_options.html">Display Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/display.html">Display Group</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/field_report.html">FieldReport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/odb_display.html">Odb Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/path.html">Path and Probe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/plot_options.html">Plot Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/print.html">Print</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/xy.html">XY</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../kernel.html">Kernel</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/cae_display_preferences.html">Abaqus CAE Display Preferences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/input.html">Input File Parser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/kernel.html">Custom Kernel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/messaging.html">Messaging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/table_collection.html">Table Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/text_representation.html">Text Representation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/utility.html">Utility and View</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="annotation">
+<h1>Annotation<a class="headerlink" href="#annotation" title="Permalink to this headline">#</a></h1>
+<p>Annotation commands are used to create, position, and modify viewport annotations.</p>
+<section id="create-annotations">
+<h2>Create annotations<a class="headerlink" href="#create-annotations" title="Permalink to this headline">#</a></h2>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow">
+<span class="sig-prename descclassname"><span class="pre">AnimationUserData.</span></span><span class="sig-name descname"><span class="pre">Arrow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startAnchor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOTTOM_LEFT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endAnchor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOTTOM_LEFT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startHeadStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NONE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endHeadStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'FILLED_ARROW'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startGap</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endGap</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SOLID'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineThickness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'VERY_THIN'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow" title="abaqus.Annotation.Arrow.Arrow"><span class="pre">Arrow</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/AnimationUserData.py#L10-L144"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates an Arrow object.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><strong>name</strong></dt><dd><p>A String specifying the annotation repository key.</p>
+</dd>
+<dt><strong>startPoint</strong></dt><dd><p>A pair of Floats specifying the start point <strong>X</strong>- and <strong>Y</strong>-offsets in millimeters from
+<strong>startAnchor</strong>. The default value is (0, 0).</p>
+</dd>
+<dt><strong>endPoint</strong></dt><dd><p>A pair of Floats specifying the end point <strong>X</strong>- and <strong>Y</strong>-offsets in millimeters from
+<strong>endAnchor</strong>. The default value is (0, 0).</p>
+</dd>
+<dt><strong>startAnchor</strong></dt><dd><p>A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
+specifies the <strong>X</strong>- and <strong>Y</strong>-coordinates as percentages of the viewport width and height.
+A sequence of three Floats specifies the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point in
+the model coordinate system. A SymbolicConstant indicates a relative position. Possible
+values are:</p>
+<ul class="simple">
+<li><p>BOTTOM_LEFT,,</p></li>
+<li><p>BOTTOM_CENTER</p></li>
+<li><p>BOTTOM_RIGHT</p></li>
+<li><p>CENTER_LEFT</p></li>
+<li><p>CENTER</p></li>
+<li><p>CENTER_RIGHT</p></li>
+<li><p>TOP_LEFT</p></li>
+<li><p>TOP_CENTER</p></li>
+<li><p>TOP_RIGHT</p></li>
+</ul>
+<p>The default value is BOTTOM_LEFT.</p>
+</dd>
+<dt><strong>endAnchor</strong></dt><dd><p>A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
+specifies the <strong>X</strong>- and <strong>Y</strong>-coordinates as percentages of the viewport width and height.
+A Sequence of three Floats specifies the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point in
+the model coordinate system. A SymbolicConstant indicates a relative position. Possible
+values are:</p>
+<ul class="simple">
+<li><p>BOTTOM_LEFT</p></li>
+<li><p>BOTTOM_CENTER</p></li>
+<li><p>BOTTOM_RIGHT</p></li>
+<li><p>CENTER_LEFT</p></li>
+<li><p>CENTER</p></li>
+<li><p>CENTER_RIGHT</p></li>
+<li><p>TOP_LEFT</p></li>
+<li><p>TOP_CENTER</p></li>
+<li><p>TOP_RIGHT</p></li>
+</ul>
+<p>The default value is BOTTOM_LEFT.</p>
+</dd>
+<dt><strong>startHeadStyle</strong></dt><dd><p>A SymbolicConstant specifying the style of the start head. Possible values are:</p>
+<ul class="simple">
+<li><p>ARROW</p></li>
+<li><p>FILLED_ARROW</p></li>
+<li><p>HOLLOW_CIRCLE</p></li>
+<li><p>FILLED_CIRCLE</p></li>
+<li><p>HOLLOW_DIAMOND</p></li>
+<li><p>FILLED_DIAMOND</p></li>
+<li><p>HOLLOW_SQUARE</p></li>
+<li><p>FILLED_SQUARE</p></li>
+<li><p>NONE</p></li>
+</ul>
+<p>The default value is NONE.</p>
+</dd>
+<dt><strong>endHeadStyle</strong></dt><dd><p>A SymbolicConstant specifying the style of the end head. Possible values are:</p>
+<ul class="simple">
+<li><p>ARROW</p></li>
+<li><p>FILLED_ARROW</p></li>
+<li><p>HOLLOW_CIRCLE</p></li>
+<li><p>FILLED_CIRCLE</p></li>
+<li><p>HOLLOW_DIAMOND</p></li>
+<li><p>FILLED_DIAMOND</p></li>
+<li><p>HOLLOW_SQUARE</p></li>
+<li><p>FILLED_SQUARE</p></li>
+<li><p>NONE</p></li>
+</ul>
+<p>The default value is FILLED_ARROW.</p>
+</dd>
+<dt><strong>startGap</strong></dt><dd><p>A Float specifying the distance in millimeters between the arrow start point and the
+arrow start head. The default value is 0.0.</p>
+</dd>
+<dt><strong>endGap</strong></dt><dd><p>A Float specifying the distance in millimeters between the arrow end point and the arrow
+end head. The default value is 0.0.</p>
+</dd>
+<dt><strong>color</strong></dt><dd><p>A String specifying the color of the arrow. Possible string values are any valid color.
+The default value is “White”.</p>
+</dd>
+<dt><strong>lineStyle</strong></dt><dd><p>A SymbolicConstant specifying the line style of the arrow. Possible values are SOLID,
+DASHED, DOTTED, and DOT_DASH. The default value is SOLID.</p>
+</dd>
+<dt><strong>lineThickness</strong></dt><dd><p>A SymbolicConstant specifying the line thickness of the arrow. Possible values are
+VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow" title="abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Arrow</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">Arrow</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="o">*</span><span class="n">name</span><span class="o">*</span><span class="p">]</span><span class="o">.</span><span class="n">userData</span><span class="o">.</span><span class="n">Arrow</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Annotation.AnimationUserData.AnimationUserData.Text">
+<span class="sig-prename descclassname"><span class="pre">AnimationUserData.</span></span><span class="sig-name descname"><span class="pre">Text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anchor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOTTOM_LEFT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referencePoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOTTOM_LEFT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rotationAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backgroundStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'TRANSPARENT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backgroundColor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">box</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">justification</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'JUSTIFY_LEFT'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Annotation.Text.Text" title="abaqus.Annotation.Text.Text"><span class="pre">Text</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/AnimationUserData.py#L146-L257"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.AnimationUserData.AnimationUserData.Text" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a Text object.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><strong>name</strong></dt><dd><p>A String specifying the annotation repository key.</p>
+</dd>
+<dt><strong>text</strong></dt><dd><p>A String specifying the text of the Text object. The default value is an empty string.</p>
+</dd>
+<dt><strong>offset</strong></dt><dd><p>A pair of Floats specifying the <strong>X</strong>- and <strong>Y</strong>-offsets in millimeters of the Text object
+from <strong>anchor</strong>. The default value is (0, 0).</p>
+</dd>
+<dt><strong>anchor</strong></dt><dd><p>A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
+specifies the <strong>X</strong>- and <strong>Y</strong> coordinates as percentages of the viewport width and height.
+A Sequence of three Floats specifies the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point in
+the model coordinate system. A SymbolicConstant specifies a relative position. Possible
+values are:</p>
+<ul class="simple">
+<li><p>BOTTOM_LEFT</p></li>
+<li><p>BOTTOM_CENTER</p></li>
+<li><p>BOTTOM_RIGHT</p></li>
+<li><p>CENTER_LEFT</p></li>
+<li><p>CENTER</p></li>
+<li><p>CENTER_RIGHT</p></li>
+<li><p>TOP_LEFT</p></li>
+<li><p>TOP_CENTER</p></li>
+<li><p>TOP_RIGHT</p></li>
+</ul>
+<p>The default value is BOTTOM_LEFT.</p>
+</dd>
+<dt><strong>referencePoint</strong></dt><dd><p>A SymbolicConstant or a sequence of Floats specifying a point. The sequence of two
+Floats specifies the <strong>X</strong>- and <strong>Y</strong>-coordinates of the reference point of the Text
+annotation given as percentages of its width and height. The SymbolicConstant indicates
+a relative position. Possible values are:</p>
+<ul class="simple">
+<li><p>BOTTOM_LEFT</p></li>
+<li><p>BOTTOM_CENTER</p></li>
+<li><p>BOTTOM_RIGHT</p></li>
+<li><p>CENTER_LEFT</p></li>
+<li><p>CENTER</p></li>
+<li><p>CENTER_RIGHT</p></li>
+<li><p>TOP_LEFT</p></li>
+<li><p>TOP_CENTER</p></li>
+<li><p>TOP_RIGHT</p></li>
+</ul>
+<p>The default value is BOTTOM_LEFT.</p>
+</dd>
+<dt><strong>rotationAngle</strong></dt><dd><p>A Float specifying the amount of rotation in degrees about <strong>referencePoint</strong>. The default
+value is 0.0.</p>
+</dd>
+<dt><strong>color</strong></dt><dd><p>A String specifying the color of the Text object. Possible string values are any valid
+color. The default value is “White”.</p>
+</dd>
+<dt><strong>font</strong></dt><dd><p>A String specifying the font of the Text object. Possible string values are any valid
+font specification. The default value is “-<em>-verdana-medium-r-normal–120-</em>“.</p>
+</dd>
+<dt><strong>backgroundStyle</strong></dt><dd><p>A SymbolicConstant specifying the Text object background style. Possible values are
+MATCH, TRANSPARENT, and OTHER. The default value is TRANSPARENT.</p>
+</dd>
+<dt><strong>backgroundColor</strong></dt><dd><p>A String specifying the color of the Text object background. Possible string values are
+any valid color. The default value matches the viewport background.</p>
+</dd>
+<dt><strong>box</strong></dt><dd><p>A Boolean specifying whether the box around the text is shown. The default value is OFF.</p>
+</dd>
+<dt><strong>justification</strong></dt><dd><p>A SymbolicConstant specifying the Text object justification for multiline text. Possible
+values are JUSTIFY_LEFT, JUSTIFY_CENTER, and JUSTIFY_RIGHT. The default value is
+JUSTIFY_LEFT.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Annotation.AnimationUserData.AnimationUserData.Text" title="abaqus.Annotation.AnimationUserData.AnimationUserData.Text"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Text</span></code></a> object.</dt><dd></dd>
+<dt>!img</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">Text</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="o">*</span><span class="n">name</span><span class="o">*</span><span class="p">]</span><span class="o">.</span><span class="n">userData</span><span class="o">.</span><span class="n">Text</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Annotation.AnimationUserData.AnimationUserData.XYData">
+<span class="sig-prename descclassname"><span class="pre">AnimationUserData.</span></span><span class="sig-name descname"><span class="pre">XYData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sourceDescription</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contentDescription</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionDescription</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legendLabel</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xValuesLabel</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yValuesLabel</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis1QuantityType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../session/xy.html#abaqus.XY.QuantityType.QuantityType" title="abaqus.XY.QuantityType.QuantityType"><span class="pre">QuantityType</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis2QuantityType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../session/xy.html#abaqus.XY.QuantityType.QuantityType" title="abaqus.XY.QuantityType.QuantityType"><span class="pre">QuantityType</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/AnimationUserData.py#L99-L157"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.AnimationUserData.AnimationUserData.XYData" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates an XYData object from a sequence of <strong>X - Y</strong> data pairs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>data</strong></dt><dd><p>A sequence of pairs of Floats specifying the <strong>X - Y</strong> data pairs.</p>
+</dd>
+<dt><strong>sourceDescription</strong></dt><dd><p>A String specifying the source of the <strong>X - Y</strong> data (e.g., “Entered from keyboard”, “Taken
+from ASCII file”, “Read from an ODB”, etc.). The default value is an empty string.</p>
+</dd>
+<dt><strong>contentDescription</strong></dt><dd><p>A String specifying the content of the <strong>X - Y</strong> data (e.g., “field 1 vs. field 2”). The
+default value is an empty string.</p>
+</dd>
+<dt><strong>positionDescription</strong></dt><dd><p>A String specifying additional information about the <strong>X - Y</strong> data (e.g., “for whole
+model”). The default value is an empty string.</p>
+</dd>
+<dt><strong>legendLabel</strong></dt><dd><p>A String specifying the label to be used in the legend. The default value is the name of
+the XYData object.</p>
+</dd>
+<dt><strong>xValuesLabel</strong></dt><dd><p>A String specifying the label for the X-values. This value may be overridden if the
+<strong>X - Y</strong> data are combined with other <strong>X - Y</strong> data. The default value is an empty string.</p>
+</dd>
+<dt><strong>yValuesLabel</strong></dt><dd><p>A String specifying the label for the Y-values. This value may be overridden if the
+<strong>X - Y</strong> data are combined with other <strong>X - Y</strong> data. The default value is an empty string.</p>
+</dd>
+<dt><strong>axis1QuantityType</strong></dt><dd><p>A QuantityType object specifying the QuantityType object associated to the X -axis1-
+values.</p>
+</dd>
+<dt><strong>axis2QuantityType</strong></dt><dd><p>A QuantityType object specifying the QuantityType object associated to the Y -axis2-
+values.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.Annotation.AnimationUserData.AnimationUserData.XYData" title="abaqus.Annotation.AnimationUserData.AnimationUserData.XYData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYData</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">userData</span><span class="o">.</span><span class="n">XYData</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="object-features">
+<h2>Object features<a class="headerlink" href="#object-features" title="Permalink to this headline">#</a></h2>
+<section id="id1">
+<h3>Annotation<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Annotation.Annotation.Annotation">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Annotation</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/Annotation.py#L1-L72"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Annotation.Annotation" title="Permalink to this definition">#</a></dt>
+<dd><p>The Annotation object is the abstract base type for other Annotation objects. The
+Annotation object has no explicit constructor. The methods and members of the Annotation
+object are common to all objects derived from Annotation.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">annotationToolset</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">annotations</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">userData</span><span class="o">.</span><span class="n">annotations</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+<span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">annotationsToPlot</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name: str</strong></dt><dd><p>A String specifying the annotation repository key.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation.bringForward" title="abaqus.Annotation.Annotation.Annotation.bringForward"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bringForward</span></code></a>()</p></td>
+<td><p>This method brings the Annotation object one position up in the annotation stack.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation.bringToFront" title="abaqus.Annotation.Annotation.Annotation.bringToFront"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bringToFront</span></code></a>()</p></td>
+<td><p>This method brings the Annotation object to the top of the annotation stack.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation.moveAfter" title="abaqus.Annotation.Annotation.Annotation.moveAfter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">moveAfter</span></code></a>(name)</p></td>
+<td><p>This method moves the Annotation object after another object in the same repository.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation.moveBefore" title="abaqus.Annotation.Annotation.Annotation.moveBefore"><code class="xref py py-obj docutils literal notranslate"><span class="pre">moveBefore</span></code></a>(name)</p></td>
+<td><p>This method moves the Annotation object before another object in the same repository.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation.sendBackward" title="abaqus.Annotation.Annotation.Annotation.sendBackward"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sendBackward</span></code></a>()</p></td>
+<td><p>This method sends the Annotation object one position down in the annotation stack.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation.sendToBack" title="abaqus.Annotation.Annotation.Annotation.sendToBack"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sendToBack</span></code></a>()</p></td>
+<td><p>This method sends the Annotation object to the bottom of the annotation stack.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation.translate" title="abaqus.Annotation.Annotation.Annotation.translate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translate</span></code></a>([x, y])</p></td>
+<td><p>This method translates the Annotation object on the viewport plane.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Annotation.Annotation.Annotation.bringForward">
+<span class="sig-name descname"><span class="pre">bringForward</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/Annotation.py#L34-L36"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Annotation.Annotation.bringForward" title="Permalink to this definition">#</a></dt>
+<dd><p>This method brings the Annotation object one position up in the annotation stack.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Annotation.Annotation.Annotation.bringToFront">
+<span class="sig-name descname"><span class="pre">bringToFront</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/Annotation.py#L26-L28"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Annotation.Annotation.bringToFront" title="Permalink to this definition">#</a></dt>
+<dd><p>This method brings the Annotation object to the top of the annotation stack.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Annotation.Annotation.Annotation.moveAfter">
+<span class="sig-name descname"><span class="pre">moveAfter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/Annotation.py#L52-L60"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Annotation.Annotation.moveAfter" title="Permalink to this definition">#</a></dt>
+<dd><p>This method moves the Annotation object after another object in the same repository.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the name of the other Annotation object.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Annotation.Annotation.Annotation.moveBefore">
+<span class="sig-name descname"><span class="pre">moveBefore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/Annotation.py#L42-L50"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Annotation.Annotation.moveBefore" title="Permalink to this definition">#</a></dt>
+<dd><p>This method moves the Annotation object before another object in the same repository.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the name of the other Annotation object.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Annotation.Annotation.Annotation.sendBackward">
+<span class="sig-name descname"><span class="pre">sendBackward</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/Annotation.py#L38-L40"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Annotation.Annotation.sendBackward" title="Permalink to this definition">#</a></dt>
+<dd><p>This method sends the Annotation object one position down in the annotation stack.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Annotation.Annotation.Annotation.sendToBack">
+<span class="sig-name descname"><span class="pre">sendToBack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/Annotation.py#L30-L32"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Annotation.Annotation.sendToBack" title="Permalink to this definition">#</a></dt>
+<dd><p>This method sends the Annotation object to the bottom of the annotation stack.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Annotation.Annotation.Annotation.translate">
+<span class="sig-name descname"><span class="pre">translate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/Annotation.py#L62-L72"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Annotation.Annotation.translate" title="Permalink to this definition">#</a></dt>
+<dd><p>This method translates the Annotation object on the viewport plane.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>x</strong></dt><dd><p>A Float specifying the <strong>X</strong> translation amount in millimeters.</p>
+</dd>
+<dt><strong>y</strong></dt><dd><p>A Float specifying the <strong>Y</strong> translation amount in millimeters.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="annotationstoplotarray">
+<h3>AnnotationsToPlotArray<a class="headerlink" href="#annotationstoplotarray" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AnnotationsToPlotArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/AnnotationsToPlotArray.py#L4-L101"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray" title="Permalink to this definition">#</a></dt>
+<dd><p>The AnnotationsToPlotArray object is a sequence that stores references to plotted
+annotations. By adding annotations to and removing annotations from this sequence, you
+can control which annotations are displayed in a particular viewport.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">annotationToolset</span>
+<span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">annotationsToPlot</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringForward" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringForward"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bringForward</span></code></a>(index)</p></td>
+<td><p>This method brings the Annotation object one position forward in the AnnotationsToPlotArray sequence.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringToFront" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringToFront"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bringToFront</span></code></a>(index)</p></td>
+<td><p>This method brings the Annotation object to the beginning of the AnnotationsToPlotArray sequence.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveAfter" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveAfter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">moveAfter</span></code></a>(index, other)</p></td>
+<td><p>This method moves the Annotation object after another object in the same AnnotationsToPlotArray sequence.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveBefore" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveBefore"><code class="xref py py-obj docutils literal notranslate"><span class="pre">moveBefore</span></code></a>(index, other)</p></td>
+<td><p>This method moves the Annotation object before another object in the same AnnotationsToPlotArray sequence.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendBackward" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendBackward"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sendBackward</span></code></a>(index)</p></td>
+<td><p>This method sends the Annotation object one position backward in the AnnotationsToPlotArray sequence.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendToBack" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendToBack"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sendToBack</span></code></a>(index)</p></td>
+<td><p>This method sends the Annotation object to the end of the AnnotationsToPlotArray sequence.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringForward">
+<span class="sig-name descname"><span class="pre">bringForward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/AnnotationsToPlotArray.py#L19-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringForward" title="Permalink to this definition">#</a></dt>
+<dd><p>This method brings the Annotation object one position forward in the
+AnnotationsToPlotArray sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>index</strong></dt><dd><p>An Int specifying the index of the Annotation object in the AnnotationsToPlotArray
+sequence.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringToFront">
+<span class="sig-name descname"><span class="pre">bringToFront</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/AnnotationsToPlotArray.py#L32-L43"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringToFront" title="Permalink to this definition">#</a></dt>
+<dd><p>This method brings the Annotation object to the beginning of the AnnotationsToPlotArray
+sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>index</strong></dt><dd><p>An Int specifying the index of the Annotation object in the AnnotationsToPlotArray
+sequence.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveAfter">
+<span class="sig-name descname"><span class="pre">moveAfter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/AnnotationsToPlotArray.py#L45-L59"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveAfter" title="Permalink to this definition">#</a></dt>
+<dd><p>This method moves the Annotation object after another object in the same
+AnnotationsToPlotArray sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>index</strong></dt><dd><p>An Integer specifying the index of the Annotation object in the AnnotationsToPlotArray
+sequence.</p>
+</dd>
+<dt><strong>other</strong></dt><dd><p>An Integer specifying the index of the other Annotation object in the
+AnnotationsToPlotArray sequence after which this object will be moved.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveBefore">
+<span class="sig-name descname"><span class="pre">moveBefore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/AnnotationsToPlotArray.py#L61-L75"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveBefore" title="Permalink to this definition">#</a></dt>
+<dd><p>This method moves the Annotation object before another object in the same
+AnnotationsToPlotArray sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>index</strong></dt><dd><p>An Int specifying the index of the Annotation object in the AnnotationsToPlotArray
+sequence.</p>
+</dd>
+<dt><strong>other</strong></dt><dd><p>An Int specifying the index of the other Annotation object in the AnnotationsToPlotArray
+sequence before which this object will be moved.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendBackward">
+<span class="sig-name descname"><span class="pre">sendBackward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/AnnotationsToPlotArray.py#L77-L88"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendBackward" title="Permalink to this definition">#</a></dt>
+<dd><p>This method sends the Annotation object one position backward in the
+AnnotationsToPlotArray sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>index</strong></dt><dd><p>An Int specifying the index of the Annotation object in the AnnotationsToPlotArray
+sequence.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendToBack">
+<span class="sig-name descname"><span class="pre">sendToBack</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/AnnotationsToPlotArray.py#L90-L101"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendToBack" title="Permalink to this definition">#</a></dt>
+<dd><p>This method sends the Annotation object to the end of the AnnotationsToPlotArray
+sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>index</strong></dt><dd><p>An Int specifying the index of the Annotation object in the AnnotationsToPlotArray
+sequence.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="annotationviewport">
+<h3>AnnotationViewport<a class="headerlink" href="#annotationviewport" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Annotation.AnnotationViewport.AnnotationViewport">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AnnotationViewport</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">120</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">80</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">border</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">titleBar</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">titleStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SYSTEM'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">customTitleString</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/AnnotationViewport.py#L5-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.AnnotationViewport.AnnotationViewport" title="Permalink to this definition">#</a></dt>
+<dd><p>The following commands operate on Viewport objects. For more information about the
+Viewport object, see Viewport object.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">annotationToolset</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../session/canvas.html#abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation" title="abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plotAnnotation</span></code></a>(annotation[, index])</p></td>
+<td><p>This method plots an Annotation object in aViewport.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation">
+<span class="sig-name descname"><span class="pre">plotAnnotation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">annotation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation" title="abaqus.Annotation.Annotation.Annotation"><span class="pre">Annotation</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/AnnotationViewport.py#L18-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation" title="Permalink to this definition">#</a></dt>
+<dd><p>This method plots an Annotation object in aViewport.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>annotation</strong></dt><dd><p>An Annotation object to plot.</p>
+</dd>
+<dt><strong>index</strong></dt><dd><p>An Int specifying the index of the Annotation object in the sequence of annotations to
+plot. The default value is zero.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="arrow">
+<h3>Arrow<a class="headerlink" href="#arrow" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Annotation.Arrow.Arrow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Arrow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startAnchor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOTTOM_LEFT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endAnchor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOTTOM_LEFT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startHeadStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NONE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endHeadStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'FILLED_ARROW'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startGap</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endGap</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SOLID'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineThickness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'VERY_THIN'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/Arrow.py#L7-L239"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Arrow.Arrow" title="Permalink to this definition">#</a></dt>
+<dd><p>The Arrow object stores the visual settings and location of an arrow annotation.
+The Arrow object is derived from the Annotation object.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">annotationToolset</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">annotations</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">userData</span><span class="o">.</span><span class="n">annotations</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+<span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">annotationsToPlot</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow.setValues" title="abaqus.Annotation.Arrow.Arrow.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([startPoint, endPoint, ...])</p></td>
+<td><p>This method modifies the Arrow object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow.translateEndPoint" title="abaqus.Annotation.Arrow.Arrow.translateEndPoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translateEndPoint</span></code></a>([x, y])</p></td>
+<td><p>This method translates the end point of the Arrow object on the viewport plane.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow.translateStartPoint" title="abaqus.Annotation.Arrow.Arrow.translateStartPoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translateStartPoint</span></code></a>([x, y])</p></td>
+<td><p>This method translates the start point of the Arrow object on the viewport plane.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Annotation.Arrow.Arrow.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">startPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startAnchor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOTTOM_LEFT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endAnchor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOTTOM_LEFT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startHeadStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NONE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endHeadStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'FILLED_ARROW'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startGap</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endGap</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SOLID'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineThickness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'VERY_THIN'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/Arrow.py#L173-L239"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Arrow.Arrow.setValues" title="Permalink to this definition">#</a></dt>
+<dd><p>This method modifies the Arrow object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>startPoint</strong></dt><dd><p>A pair of Floats specifying the start point <strong>X</strong>- and <strong>Y</strong>-offsets in millimeters from
+<strong>startAnchor</strong>. The default value is (0, 0).</p>
+</dd>
+<dt><strong>endPoint</strong></dt><dd><p>A pair of Floats specifying the end point <strong>X</strong>- and <strong>Y</strong>-offsets in millimeters from
+<strong>endAnchor</strong>. The default value is (0, 0).</p>
+</dd>
+<dt><strong>startAnchor</strong></dt><dd><p>A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
+specifies the <strong>X</strong>- and <strong>Y</strong>-coordinates as percentages of the viewport width and height.
+A sequence of three Floats specifies the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point in
+the model coordinate system. A SymbolicConstant indicates a relative position. Possible
+values
+are:BOTTOM_LEFTBOTTOM_CENTERBOTTOM_RIGHTCENTER_LEFTCENTERCENTER_RIGHTTOP_LEFTTOP_CENTERTOP_RIGHTThe
+default value is BOTTOM_LEFT.</p>
+</dd>
+<dt><strong>endAnchor</strong></dt><dd><p>A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
+specifies the <strong>X</strong>- and <strong>Y</strong>-coordinates as percentages of the viewport width and height.
+A Sequence of three Floats specifies the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point in
+the model coordinate system. A SymbolicConstant indicates a relative position. Possible
+values
+are:BOTTOM_LEFTBOTTOM_CENTERBOTTOM_RIGHTCENTER_LEFTCENTERCENTER_RIGHTTOP_LEFTTOP_CENTERTOP_RIGHTThe
+default value is BOTTOM_LEFT.</p>
+</dd>
+<dt><strong>startHeadStyle</strong></dt><dd><p>A SymbolicConstant specifying the style of the start head. Possible values
+are:ARROWFILLED_ARROWHOLLOW_CIRCLEFILLED_CIRCLEHOLLOW_DIAMONDFILLED_DIAMONDHOLLOW_SQUAREFILLED_SQUARENONEThe
+default value is NONE.</p>
+</dd>
+<dt><strong>endHeadStyle</strong></dt><dd><p>A SymbolicConstant specifying the style of the end head. Possible values
+<a href="#id2"><span class="problematic" id="id3">are:ARROWFILLED_ARROWHOLLOW_</span></a>
+CIRCLEFILLED_CIRCLEHOLLOW_DIAMONDFILLED_DIAMONDHOLLOW_SQUAREFILLED_SQUARENONEThe default
+value is FILLED_ARROW.</p>
+</dd>
+<dt><strong>startGap</strong></dt><dd><p>A Float specifying the distance in millimeters between the arrow start point and the
+arrow start head. The default value is 0.0.</p>
+</dd>
+<dt><strong>endGap</strong></dt><dd><p>A Float specifying the distance in millimeters between the arrow end point and the arrow
+end head. The default value is 0.0.</p>
+</dd>
+<dt><strong>color</strong></dt><dd><p>A String specifying the color of the arrow. Possible string values are any valid color.
+The default value is “White”.</p>
+</dd>
+<dt><strong>lineStyle</strong></dt><dd><p>A SymbolicConstant specifying the line style of the arrow. Possible values are SOLID,
+DASHED, DOTTED, and DOT_DASH. The default value is SOLID.</p>
+</dd>
+<dt><strong>lineThickness</strong></dt><dd><p>A SymbolicConstant specifying the line thickness of the arrow. Possible values are
+VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Annotation.Arrow.Arrow.translateEndPoint">
+<span class="sig-name descname"><span class="pre">translateEndPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/Arrow.py#L160-L171"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Arrow.Arrow.translateEndPoint" title="Permalink to this definition">#</a></dt>
+<dd><p>This method translates the end point of the Arrow object on the viewport plane.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>x</strong></dt><dd><p>A Float specifying the <strong>X</strong> translation amount in millimeters.</p>
+</dd>
+<dt><strong>y</strong></dt><dd><p>A Float specifying the*Y* translation amount in millimeters.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Annotation.Arrow.Arrow.translateStartPoint">
+<span class="sig-name descname"><span class="pre">translateStartPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/Arrow.py#L147-L158"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Arrow.Arrow.translateStartPoint" title="Permalink to this definition">#</a></dt>
+<dd><p>This method translates the start point of the Arrow object on the viewport plane.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>x</strong></dt><dd><p>A Float specifying the <strong>X</strong> translation amount in millimeters.</p>
+</dd>
+<dt><strong>y</strong></dt><dd><p>A Float specifying the*Y* translation amount in millimeters.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="text">
+<h3>Text<a class="headerlink" href="#text" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Annotation.Text.Text">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anchor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOTTOM_LEFT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referencePoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOTTOM_LEFT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rotationAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backgroundStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'TRANSPARENT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backgroundColor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">box</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">justification</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'JUSTIFY_LEFT'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/Text.py#L7-L197"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Text.Text" title="Permalink to this definition">#</a></dt>
+<dd><p>The Text object stores the text settings and location of a text annotation.
+The Text object is derived from the Annotation object.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">annotationToolset</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">annotations</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">userData</span><span class="o">.</span><span class="n">annotations</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+<span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">annotationsToPlot</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>width: float</strong></dt><dd><p>A Float specifying the width in millimeters of the <a class="reference internal" href="#abaqus.Annotation.Text.Text" title="abaqus.Annotation.Text.Text"><code class="xref py py-class docutils literal notranslate"><span class="pre">Text</span></code></a> object.</p>
+</dd>
+<dt><strong>height: float</strong></dt><dd><p>A Float specifying the height in millimeters of the <a class="reference internal" href="#abaqus.Annotation.Text.Text" title="abaqus.Annotation.Text.Text"><code class="xref py py-class docutils literal notranslate"><span class="pre">Text</span></code></a> object.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Text.Text.setValues" title="abaqus.Annotation.Text.Text.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([text, offset, anchor, ...])</p></td>
+<td><p>This method modifies the Text object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Annotation.Text.Text.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anchor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOTTOM_LEFT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referencePoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOTTOM_LEFT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rotationAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backgroundStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'TRANSPARENT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backgroundColor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">box</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">justification</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'JUSTIFY_LEFT'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Annotation/Text.py#L136-L197"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Text.Text.setValues" title="Permalink to this definition">#</a></dt>
+<dd><p>This method modifies the Text object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>text</strong></dt><dd><p>A String specifying the text of the Text object. The default value is an empty string.</p>
+</dd>
+<dt><strong>offset</strong></dt><dd><p>A pair of Floats specifying the <strong>X</strong>- and <strong>Y</strong>-offsets in millimeters of the Text object
+from <strong>anchor</strong>. The default value is (0, 0).</p>
+</dd>
+<dt><strong>anchor</strong></dt><dd><p>A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
+specifies the <strong>X</strong>- and <strong>Y</strong> coordinates as percentages of the viewport width and height.
+A Sequence of three Floats specifies the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point in
+the model coordinate system. A SymbolicConstant specifies a relative position. Possible
+values
+are:BOTTOM_LEFTBOTTOM_CENTERBOTTOM_RIGHTCENTER_LEFTCENTERCENTER_RIGHTTOP_LEFTTOP_CENTERTOP_RIGHTThe
+default value is BOTTOM_LEFT.</p>
+</dd>
+<dt><strong>referencePoint</strong></dt><dd><p>A SymbolicConstant or a sequence of Floats specifying a point. The sequence of two
+Floats specifies the <strong>X</strong>- and <strong>Y</strong>-coordinates of the reference point of the Text
+annotation given as percentages of its width and height. The SymbolicConstant indicates
+a relative position. Possible values
+are:BOTTOM_LEFTBOTTOM_CENTERBOTTOM_RIGHTCENTER_LEFTCENTERCENTER_RIGHTTOP_LEFTTOP_CENTERTOP_RIGHTThe
+default value is BOTTOM_LEFT.</p>
+</dd>
+<dt><strong>rotationAngle</strong></dt><dd><p>A Float specifying the amount of rotation in degrees about <strong>referencePoint</strong>. The default
+value is 0.0.</p>
+</dd>
+<dt><strong>color</strong></dt><dd><p>A String specifying the color of the Text object. Possible string values are any valid
+color. The default value is “White”.</p>
+</dd>
+<dt><strong>font</strong></dt><dd><p>A String specifying the font of the Text object. Possible string values are any valid
+font specification. The default value is “-<em>-verdana-medium-r-normal–120-</em>“.</p>
+</dd>
+<dt><strong>backgroundStyle</strong></dt><dd><p>A SymbolicConstant specifying the Text object background style. Possible values are
+MATCH, TRANSPARENT, and OTHER. The default value is TRANSPARENT.</p>
+</dd>
+<dt><strong>backgroundColor</strong></dt><dd><p>A String specifying the color of the Text object background. Possible string values are
+any valid color. The default value matches the viewport background.</p>
+</dd>
+<dt><strong>box</strong></dt><dd><p>A Boolean specifying whether the box around the text is shown. The default value is OFF.</p>
+</dd>
+<dt><strong>justification</strong></dt><dd><p>A SymbolicConstant specifying the Text object justification for multiline text. Possible
+values are JUSTIFY_LEFT, JUSTIFY_CENTER, and JUSTIFY_RIGHT. The default value is
+JUSTIFY_LEFT.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="edit_mesh.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Edit Mesh</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="job.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Job</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, WANG Hailin
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Annotation</a><ul>
+<li><a class="reference internal" href="#create-annotations">Create annotations</a></li>
+<li><a class="reference internal" href="#object-features">Object features</a><ul>
+<li><a class="reference internal" href="#id1">Annotation</a></li>
+<li><a class="reference internal" href="#annotationstoplotarray">AnnotationsToPlotArray</a></li>
+<li><a class="reference internal" href="#annotationviewport">AnnotationViewport</a></li>
+<li><a class="reference internal" href="#arrow">Arrow</a></li>
+<li><a class="reference internal" href="#text">Text</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/furo.js"></script>
+    </body>
+</html>

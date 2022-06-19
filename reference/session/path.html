@@ -1,0 +1,1117 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Plot Options" href="plot_options.html" /><link rel="prev" title="Odb Display" href="odb_display.html" />
+
+    <meta name="generator" content="sphinx-4.5.0, furo 2022.06.04.1"/>
+        <title>Path and Probe - AbqPy 2016a0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">AbqPy 2016a0 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  
+  
+  <span class="sidebar-brand-text">AbqPy 2016a0 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../summary.html">API Summary</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../summary/header.html">Header of the Python script</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../summary/mdb.html">Abaqus Model Database</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../summary/mdb/model.html">Abaqus Model</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/adaptivity.html">Adaptivity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/amplitude.html">Amplitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/assembly.html">Assembly</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/bc.html">Boundary Condition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/calibration.html">Calibration of Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/constraint.html">Constraint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/field.html">Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/filter.html">Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/interaction.html">Interaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/load.html">Load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/material.html">Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/optimization.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/output.html">Output Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/part.html">Part</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/predefined.html">Predefined Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/profile.html">Beam Section Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/property.html">Property</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../summary/mdb/model/section.html">Section</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../summary/mdb/model/section/connector.html">Connector</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/sketcher.html">Sketcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../summary/mdb/model/step.html">Step</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../summary/mdb/model/step/step_miscellaneous.html">Step Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../summary/mdb/job.html">Abaqus Job</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../summary/odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../summary/session.html">Abaqus Session</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../../references.html">API Reference</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../mdb.html">Abaqus Model Database</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../mdb/model.html">Model</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/adaptivity.html">Adaptivity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/amplitude.html">Amplitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/bc.html">Boundary Condition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/calibration.html">Calibration of Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/constraint.html">Constraint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/field.html">Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/filter.html">Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/interaction.html">Interaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/load.html">Load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/material.html">Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/mesh.html">Mesh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/optimization.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/output.html">Output Request</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../mdb/model/part_assembly.html">Part and Assembly</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/part.html">Part</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/assembly.html">Assembly</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/part_assembly/datum.html">Datum</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/part_assembly/engineering.html">Engineering Feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/part_assembly/feature.html">Feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/part_assembly/geometry.html">Basic Geometry</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/part_assembly/region.html">Region</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/predefined.html">Predefined Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/profile.html">Beam Section Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/property.html">Property</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../mdb/model/section.html">Section</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/section/connector.html">Connector</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../mdb/model/sketcher.html">Sketcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../mdb/model/step.html">Step</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../mdb/model/step/step_miscellaneous.html">Step Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mdb/job.html">Job</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mdb/annotation.html">Annotation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mdb/edit_mesh.html">Edit Mesh</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../session.html">Abaqus Session</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="animation.html">Animation Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="canvas.html">Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="display_options.html">Display Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="display.html">Display Group</a></li>
+<li class="toctree-l3"><a class="reference internal" href="field_report.html">FieldReport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="odb_display.html">Odb Display</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Path and Probe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="plot_options.html">Plot Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="print.html">Print</a></li>
+<li class="toctree-l3"><a class="reference internal" href="xy.html">XY</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../kernel.html">Kernel</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/cae_display_preferences.html">Abaqus CAE Display Preferences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/input.html">Input File Parser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/kernel.html">Custom Kernel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/messaging.html">Messaging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/table_collection.html">Table Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/text_representation.html">Text Representation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/utility.html">Utility and View</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="path-and-probe">
+<h1>Path and Probe<a class="headerlink" href="#path-and-probe" title="Permalink to this headline">#</a></h1>
+<p>Path commands are used to define a line through your model by specifying a series of points. You can view results along the path in the form of an X–Y plot. Probe commands are used to determine model data and analysis results at selected locations.</p>
+<section id="create-paths-in-session">
+<h2>Create paths in Session<a class="headerlink" href="#create-paths-in-session" title="Permalink to this headline">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.PathAndProbe.PathSession.PathSession">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PathSession</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/PathAndProbe/PathSession.py#L10-L185"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.PathSession.PathSession" title="Permalink to this definition">#</a></dt>
+<dd><p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.PathSession.PathSession.Path" title="abaqus.PathAndProbe.PathSession.PathSession.Path"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path</span></code></a>(name, type, expression, ...)</p></td>
+<td><p>This method creates a Path object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.PathSession.PathSession.Spectrum" title="abaqus.PathAndProbe.PathSession.PathSession.Spectrum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Spectrum</span></code></a>(name, colors)</p></td>
+<td><p>This method creates a Spectrum object and places it in the spectrums repository.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.PathSession.PathSession.Stream" title="abaqus.PathAndProbe.PathSession.PathSession.Stream"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Stream</span></code></a>(name, numPointsOnRake[, pointA, ...])</p></td>
+<td><p>This method creates aStream object and places it in the streams repository.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.PathAndProbe.PathSession.PathSession.Path">
+<span class="sig-name descname"><span class="pre">Path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expression</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">circleDefinition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numSegments</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radialAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startRadius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endRadius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.PathAndProbe.Path.Path" title="abaqus.PathAndProbe.Path.Path"><span class="pre">Path</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/PathAndProbe/PathSession.py#L11-L118"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.PathSession.PathSession.Path" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a Path object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>type</strong></dt><dd><p>A SymbolicConstant specifying the type of path being created. Possible values are
+NODE_LIST, POINT_LIST, EDGE_LIST, CIRCUMFERENTIAL, and RADIAL.</p>
+</dd>
+<dt><strong>expression</strong></dt><dd><p>A sequence specifying the nodes or points that make up the path. The definition of the
+path expression depends on the <strong>type</strong> argument.</p>
+<ul class="simple">
+<li><p>If <strong>type**=NODE_LIST, **expression</strong> must be a sequence of sequences. Each inner sequence
+contains two items, the first item is a String specifying the name of a part instance,
+and the second item can be either a sequence of Ints or a sequence of Strings, each
+specifying a range of Ints.</p></li>
+<li><p>If <strong>type**=POINT_LIST, **expression</strong> must be a sequence of tuples of three Floats,
+specifying the coordinates of each point.</p></li>
+<li><p>If <strong>type**=EDGE_LIST, **expression</strong> must be a sequence of sequences. Each inner sequence
+contains two items, the first item is a String specifying the name of the part instance,
+and the second item is a sequence of tuples of four Ints that uniquely identify an
+element edge. The four Ints are:</p>
+<ol class="arabic simple">
+<li><p>The element label.</p></li>
+<li><p>The element face index (one-based).</p></li>
+<li><p>The face edge index (one-based).</p></li>
+<li><p>The edge direction. A positive number specifies that the edge direction runs from the
+edge start node to the edge end node. A negative number specifies the opposite.</p></li>
+</ol>
+</li>
+<li><p>When <strong>type**=CIRCUMFERENTIAL or RADIAL, **expression</strong> must be a sequence of three tuples
+of three Floats, specifying the coordinates of the points used to define a coordinate
+system.</p></li>
+</ul>
+</dd>
+<dt><strong>circleDefinition</strong></dt><dd><p>A SymbolicConstant specifying the method in which the circle is being defined. This
+argument is valid only when <strong>type**=CIRCUMFERENTIAL or RADIAL. Possible values are
+ORIGIN_AXIS and POINT_ARC.When the value is ORIGIN_AXIS, the first two points in
+**expression</strong> are points on the rotational axis and the third point lies on the x-axis.
+When the value is POINT_ARC, the three points in <strong>expression</strong> are points lying on the
+arc of the circle.</p>
+</dd>
+<dt><strong>numSegments</strong></dt><dd><p>An Int specifying the number of equal segments in the path. This argument is valid only
+when <a href="#id1"><span class="problematic" id="id2">**</span></a>type**=CIRCUMFERENTIAL or RADIAL.</p>
+</dd>
+<dt><strong>startAngle</strong></dt><dd><p>A Float specifying the start angle of the circumferential path. This argument is valid
+only when <a href="#id3"><span class="problematic" id="id4">**</span></a>type**=CIRCUMFERENTIAL.</p>
+</dd>
+<dt><strong>endAngle</strong></dt><dd><p>A Float specifying the end angle of the circumferential path. This argument is valid
+only when <a href="#id5"><span class="problematic" id="id6">**</span></a>type**=CIRCUMFERENTIAL.</p>
+</dd>
+<dt><strong>radius</strong></dt><dd><p>The SymbolicConstant CIRCLE_RADIUS or a Float specifying the radius of the
+circumferential path. This argument is valid only when <a href="#id7"><span class="problematic" id="id8">**</span></a>type**=CIRCUMFERENTIAL.</p>
+</dd>
+<dt><strong>radialAngle</strong></dt><dd><p>A Float specifying the angle between the radial path and the <strong>X</strong>-axis of the specified
+coordinate system. This argument is valid only when <a href="#id9"><span class="problematic" id="id10">**</span></a>type**=RADIAL.</p>
+</dd>
+<dt><strong>startRadius</strong></dt><dd><p>The SymbolicConstant CIRCLE_RADIUS or a Float specifying the start radius of the radial
+path. This argument is valid only when <a href="#id11"><span class="problematic" id="id12">**</span></a>type**=RADIAL.</p>
+</dd>
+<dt><strong>endRadius</strong></dt><dd><p>The SymbolicConstant CIRCLE_RADIUS or a Float specifying the end radius of the radial
+path. This argument is valid only when <a href="#id13"><span class="problematic" id="id14">**</span></a>type**=RADIAL.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.PathAndProbe.PathSession.PathSession.Path" title="abaqus.PathAndProbe.PathSession.PathSession.Path"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelError</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">ErrorUnsupportedNodeData</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">ErrorUnsupportedPointData</span></code>, ErrorIncorrectPathData,</dt><dd></dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyError</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">ErrorEmptyPathName</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">ErrorPathNotFound</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">and</span></code> ErrorNoOdbPathDisplay.</dt><dd></dd>
+<dt>ValueError: <code class="xref py py-obj docutils literal notranslate"><span class="pre">When</span></code> <a href="#id15"><span class="problematic" id="id16">**</span></a>type**=CIRCUMFERENTIAL or <code class="xref py py-obj docutils literal notranslate"><span class="pre">RADIAL</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">three</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">points</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specified</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">in</span></code></dt><dd></dd>
+<dt><strong>expression</strong> <code class="xref py py-obj docutils literal notranslate"><span class="pre">are</span></code> collinear.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Path</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.PathAndProbe.PathSession.PathSession.Spectrum">
+<span class="sig-name descname"><span class="pre">Spectrum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.PathAndProbe.Spectrum.Spectrum" title="abaqus.PathAndProbe.Spectrum.Spectrum"><span class="pre">Spectrum</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/PathAndProbe/PathSession.py#L120-L143"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.PathSession.PathSession.Spectrum" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a Spectrum object and places it in the spectrums repository.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A string name for the spectrum.</p>
+</dd>
+<dt><strong>colors</strong></dt><dd><p>A sequence of strings indicating the colors of the spectrum.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.PathAndProbe.PathSession.PathSession.Spectrum" title="abaqus.PathAndProbe.PathSession.PathSession.Spectrum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Spectrum</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.PathAndProbe.PathSession.PathSession.Stream">
+<span class="sig-name descname"><span class="pre">Stream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numPointsOnRake</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointA</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointB</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.PathAndProbe.Stream.Stream" title="abaqus.PathAndProbe.Stream.Stream"><span class="pre">Stream</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/PathAndProbe/PathSession.py#L145-L185"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.PathSession.PathSession.Stream" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates aStream object and places it in the streams repository.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A string name for the stream.</p>
+</dd>
+<dt><strong>numPointsOnRake</strong></dt><dd><p>An integer specifying the number of points along the rake.</p>
+</dd>
+<dt><strong>pointA</strong></dt><dd><p>A tuple of 3 floats specifying the starting point of the rake. Alternatively, a string
+representation of the node selected in the viewport.</p>
+</dd>
+<dt><strong>pointB</strong></dt><dd><p>A tuple of 3 floats specifying the end point of the rake. Alternatively, a string
+representation of the node selected in the viewport.</p>
+</dd>
+<dt><strong>path</strong></dt><dd><p>APath object that specifies the rake.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.PathAndProbe.PathSession.PathSession.Stream" title="abaqus.PathAndProbe.PathSession.PathSession.Stream"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Stream</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Stream</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="create-free-bodies-in-session">
+<h2>Create free bodies in Session<a class="headerlink" href="#create-free-bodies-in-session" title="Permalink to this headline">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.PathAndProbe.FreeBody.FreeBody">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FreeBody</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/PathAndProbe/FreeBody.py#L4-L145"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.FreeBody.FreeBody" title="Permalink to this definition">#</a></dt>
+<dd><p>The FreeBody object defines a section across which resultant forces and moments are
+computed.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">visualization</span>
+<span class="n">session</span><span class="o">.</span><span class="n">freeBodies</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges" title="abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FreeBodyFromEdges</span></code></a>(name, edges[, ...])</p></td>
+<td><p>This method creates a FreeBody object and places it in the freeBodies repository.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces" title="abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FreeBodyFromFaces</span></code></a>(name, faces[, ...])</p></td>
+<td><p>This method creates a FreeBody object and places it in the freeBodies repository.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements" title="abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FreeBodyFromNodesElements</span></code></a>(name, elements, nodes)</p></td>
+<td><p>This method creates a FreeBody object and places it in the freeBodies repository.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges">
+<span class="sig-name descname"><span class="pre">FreeBodyFromEdges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">summationLoc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'CENTROID'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">summationPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">componentResolution</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NORMAL_TANGENTIAL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csysName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/PathAndProbe/FreeBody.py#L18-L58"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a FreeBody object and places it in the freeBodies repository.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A string name for the free body.</p>
+</dd>
+<dt><strong>edges</strong></dt><dd><p>A DisplayGroup leaf object that specifies the physical constituents of the free body.</p>
+</dd>
+<dt><strong>summationLoc</strong></dt><dd><p>A SymbolicConstant specifying the location of the summation point. Possible values are
+CENTROID, NODAL_AVERAGE and SPECIFY. The default value is CENTROID.</p>
+</dd>
+<dt><strong>summationPoint</strong></dt><dd><p>A tuple of 3 floats specifying the summation point.</p>
+</dd>
+<dt><strong>componentResolution</strong></dt><dd><p>A SymbolicConstant specifying the component resolution. Possible values are
+NORMAL_TANGENTIAL and CSYS. The default value is NORMAL_TANGENTIAL.</p>
+</dd>
+<dt><strong>csysName</strong></dt><dd><p>A string specifying the name of the coordinate system.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.PathAndProbe.FreeBody.FreeBody" title="abaqus.PathAndProbe.FreeBody.FreeBody"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FreeBody</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">FreeBodyFromEdges</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces">
+<span class="sig-name descname"><span class="pre">FreeBodyFromFaces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">faces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">summationLoc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'CENTROID'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">summationPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">componentResolution</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NORMAL_TANGENTIAL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csysName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/PathAndProbe/FreeBody.py#L60-L100"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a FreeBody object and places it in the freeBodies repository.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A string name for the free body.</p>
+</dd>
+<dt><strong>faces</strong></dt><dd><p>A DisplayGroup leaf object that specifies the physical constituents of the free body.</p>
+</dd>
+<dt><strong>summationLoc</strong></dt><dd><p>A SymbolicConstant specifying the location of the summation point. Possible values are
+CENTROID, NODAL_AVERAGE and SPECIFY. The default value is CENTROID.</p>
+</dd>
+<dt><strong>summationPoint</strong></dt><dd><p>A tuple of 3 floats specifying the summation point.</p>
+</dd>
+<dt><strong>componentResolution</strong></dt><dd><p>A SymbolicConstant specifying the component resolution. Possible values are
+NORMAL_TANGENTIAL and CSYS. The default value is NORMAL_TANGENTIAL.</p>
+</dd>
+<dt><strong>csysName</strong></dt><dd><p>A string specifying the name of the coordinate system.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.PathAndProbe.FreeBody.FreeBody" title="abaqus.PathAndProbe.FreeBody.FreeBody"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FreeBody</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">FreeBodyFromEdges</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements">
+<span class="sig-name descname"><span class="pre">FreeBodyFromNodesElements</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elements</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">summationLoc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'CENTROID'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">summationPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">componentResolution</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NORMAL_TANGENTIAL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csysName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/PathAndProbe/FreeBody.py#L102-L145"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a FreeBody object and places it in the freeBodies repository.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A string name for the free body.</p>
+</dd>
+<dt><strong>elements</strong></dt><dd><p>A DisplayGroup leaf object that specifies the physical constituents of the free body.</p>
+</dd>
+<dt><strong>nodes</strong></dt><dd><p>A DisplayGroup leaf object that specifies the physical constituents of the free body.</p>
+</dd>
+<dt><strong>summationLoc</strong></dt><dd><p>A SymbolicConstant specifying the location of the summation point. Possible values are
+CENTROID, NODAL_AVERAGE and SPECIFY. The default value is CENTROID.</p>
+</dd>
+<dt><strong>summationPoint</strong></dt><dd><p>A tuple of 3 floats specifying the summation point.</p>
+</dd>
+<dt><strong>componentResolution</strong></dt><dd><p>A SymbolicConstant specifying the component resolution. Possible values are
+NORMAL_TANGENTIAL and CSYS. The default value is NORMAL_TANGENTIAL.</p>
+</dd>
+<dt><strong>csysName</strong></dt><dd><p>A string specifying the name of the coordinate system.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.PathAndProbe.FreeBody.FreeBody" title="abaqus.PathAndProbe.FreeBody.FreeBody"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FreeBody</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">FreeBodyFromEdges</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="object-features">
+<h2>Object features<a class="headerlink" href="#object-features" title="Permalink to this headline">#</a></h2>
+<section id="currentprobevalues">
+<h3>CurrentProbeValues<a class="headerlink" href="#currentprobevalues" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CurrentProbeValues</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/PathAndProbe/CurrentProbeValues.py#L1-L23"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues" title="Permalink to this definition">#</a></dt>
+<dd><p>The CurrentProbeValues object has no constructor. The CurrentProbeValues object is
+created when you import the Visualization module.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">visualization</span>
+<span class="n">session</span><span class="o">.</span><span class="n">currentProbeValues</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>values: tuple[float]</strong></dt><dd><p>A tuple of Floats specifying <code class="xref py py-class docutils literal notranslate"><span class="pre">the</span></code> values obtained while probing. These values are updated
+constantly as <code class="xref py py-class docutils literal notranslate"><span class="pre">the</span></code> user moves <code class="xref py py-class docutils literal notranslate"><span class="pre">the</span></code> mouse over <code class="xref py py-class docutils literal notranslate"><span class="pre">the</span></code> object being probed.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="nodequery">
+<h3>NodeQuery<a class="headerlink" href="#nodequery" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.PathAndProbe.NodeQuery.NodeQuery">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">NodeQuery</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/PathAndProbe/NodeQuery.py#L1-L31"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.NodeQuery.NodeQuery" title="Permalink to this definition">#</a></dt>
+<dd><p>The NodeQuery object specifies nodes and their coordinates in a path. The NodeQuery
+object has no constructor or methods. Abaqus creates the <strong>nodeQuery</strong> member when you
+import the visualization module.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">visualization</span>
+<span class="n">session</span><span class="o">.</span><span class="n">nodeQuery</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>nodeId: int</strong></dt><dd><p>An Int specifying the ID of the most recently queried node. If the last query was
+unsuccessful, <a href="#id17"><span class="problematic" id="id18">**</span></a>nodeID**=−1.</p>
+</dd>
+<dt><strong>nodePos: float</strong></dt><dd><p>A tuple of Floats specifying the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of the most recently
+queried node.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="path">
+<h3>Path<a class="headerlink" href="#path" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.PathAndProbe.Path.Path">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expression</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">circleDefinition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numSegments</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radialAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startRadius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endRadius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/PathAndProbe/Path.py#L6-L126"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.Path.Path" title="Permalink to this definition">#</a></dt>
+<dd><p>The Path object defines a line through your model by specifying a series of nodes or
+points.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">visualization</span>
+<span class="n">session</span><span class="o">.</span><span class="n">paths</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>coordinates: list[tuple[float]]</strong></dt><dd><p>If <strong>type=NODE_LIST</strong>, <strong>coordinates</strong> is a sequence of tuples of three Floats. This can be
+used as the value for the <strong>expression</strong> argument when creating a <a class="reference internal" href="#abaqus.PathAndProbe.Path.Path" title="abaqus.PathAndProbe.Path.Path"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a> object of <strong>type</strong> =
+POINT_LIST.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="probeoptions">
+<h3>ProbeOptions<a class="headerlink" href="#probeoptions" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.PathAndProbe.ProbeOptions.ProbeOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ProbeOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/PathAndProbe/ProbeOptions.py#L4-L266"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>The ProbeOptions object is used to store settings associated with probing a model or an
+<strong>X - Y</strong> plot. The ProbeOptions object has no constructor. Abaqus creates the
+<strong>defaultProbeOptions</strong> and the <strong>probeOptions</strong> members when you import the Visualization
+module. When probing is initiated for the first time, the values in the <strong>probeOptions</strong>
+member are initialized using the values from the <strong>defaultProbeOptions</strong> member.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">visualization</span>
+<span class="n">session</span><span class="o">.</span><span class="n">defaultProbeOptions</span>
+<span class="n">session</span><span class="o">.</span><span class="n">probeOptions</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>probeEntity: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the entity being probed when <a href="#id19"><span class="problematic" id="id20">**</span></a>probeObject**=”ODB”. Possible
+values are NODE and ELEMENT. The default value is ELEMENT.</p>
+</dd>
+<dt><strong>probeOutputPosition: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the output position to probe for field output results when
+<strong>probeObject**=”ODB”. Possible values are NODAL, INTEGRATION_POINT, ELEMENT_FACE,
+ELEMENT_NODAL, and ELEMENT_CENTROID.When **probeEntity=NODE</strong>, the only possible value is
+NODAL. When <strong>probeEntity=ELEMENT</strong>, the only possible values are INTEGRATION_POINT,
+ELEMENT_FACE, ELEMENT_NODAL, and ELEMENT_CENTROID, and the default is INTEGRATION_POINT.</p>
+</dd>
+<dt><strong>partInstance: Boolean</strong></dt><dd><p>A Boolean specifying whether to display the part instance information. This member is
+valid when <strong>probeObject=ODB</strong>. The default value is ON.</p>
+</dd>
+<dt><strong>elementID: Boolean</strong></dt><dd><p>A Boolean specifying whether to display the element ID information. This member is valid
+when <strong>probeObject=ODB</strong> and <strong>probeEntity=ELEMENT</strong>. The default value is ON.</p>
+</dd>
+<dt><strong>elementType: Boolean</strong></dt><dd><p>A Boolean specifying whether to display the element type information. This member is
+valid when <strong>probeObject=ODB</strong> and <strong>probeEntity=ELEMENT</strong>. The default value is ON.</p>
+</dd>
+<dt><strong>elementConnectivity: Boolean</strong></dt><dd><p>A Boolean specifying whether to display the element connectivity. This member is valid
+when <strong>probeObject=ODB</strong> and <strong>probeEntity=ELEMENT</strong>. The default value is ON.</p>
+</dd>
+<dt><strong>elementFieldResults: Boolean</strong></dt><dd><p>A Boolean specifying whether to display the element field output results. This member is
+valid when <strong>probeObject=ODB</strong>, <strong>probeEntity=ELEMENT</strong>, and <strong>isFieldOutputAvailable=ON</strong>.
+The default value is ON.</p>
+</dd>
+<dt><strong>nodeId: Boolean</strong></dt><dd><p>A Boolean specifying whether to display the node ID when <strong>probeObject=ODB</strong> and
+<strong>probeEntity=NODE</strong>. The default value is ON.</p>
+</dd>
+<dt><strong>baseCoordinates: Boolean</strong></dt><dd><p>A Boolean specifying whether to display the base coordinates of a node when
+<strong>probeObject=ODB</strong> and <strong>probeEntity=NODE</strong>. The default value is ON.</p>
+</dd>
+<dt><strong>deformedCoordinates: Boolean</strong></dt><dd><p>A Boolean specifying whether to display the deformed coordinates of a node when
+<strong>probeObject=ODB</strong> and <strong>probeEntity=NODE</strong>. The default value is ON.</p>
+</dd>
+<dt><strong>attachedElements: Boolean</strong></dt><dd><p>A Boolean specifying whether to display the elements attached to a node when
+<strong>probeObject=ODB</strong> and <strong>probeEntity=NODE</strong>. The default value is ON.</p>
+</dd>
+<dt><strong>nodeFieldResults: Boolean</strong></dt><dd><p>A Boolean specifying whether to display the node field output results. This member is
+valid when <strong>probeObject=ODB</strong>, <strong>probeEntity=NODE</strong>, and <strong>isFieldOutputAvailable=ON</strong>. The
+default value is ON.</p>
+</dd>
+<dt><strong>legend: Boolean</strong></dt><dd><p>A Boolean specifying whether to display the legend for a curve being probed. This member
+is valid when <strong>probeObject=XYPlot</strong>. The default value is ON.</p>
+</dd>
+<dt><strong>xValue: Boolean</strong></dt><dd><p>A Boolean specifying whether to display the <strong>x</strong>-coordinate value of the point on the
+curve being probed. This member is valid when <strong>probeObject=XYPlot</strong>. The default value is
+ON.</p>
+</dd>
+<dt><strong>yValue: Boolean</strong></dt><dd><p>A Boolean specifying whether to display the <strong>y</strong>-coordinate value of the point on the
+curve being probed. This member is valid when <strong>probeObject=XYPlot</strong>. The default value is
+ON.</p>
+</dd>
+<dt><strong>sequenceID: Boolean</strong></dt><dd><p>A Boolean specifying whether to display the sequence ID of the point on the curve being
+probed. This member is valid when <strong>probeObject=XYPlot</strong>. The default value is ON.</p>
+</dd>
+<dt><strong>interpolateXy: Boolean</strong></dt><dd><p>A Boolean specifying whether to interpolate values within a line segment when
+<strong>probeObject=XYPlot</strong>. When <strong>interpolateXy=OFF</strong>, probing returns the nearest <strong>X - Y</strong> data
+point on the curve. When <strong>interpolateXy=ON</strong>, probing interpolates data to return a value
+at the nearest point on the curve. The default value is OFF.</p>
+</dd>
+<dt><strong>isFieldOutputAvailable: Boolean</strong></dt><dd><p>A Boolean specifying whether field output is available for probing when
+<strong>probeObject=XYPlot</strong>. This member is read-only.</p>
+</dd>
+<dt><strong>probeObject: str</strong></dt><dd><p>A String specifying the type of the <code class="xref py py-class docutils literal notranslate"><span class="pre">displayed</span></code> object being probed. Possible values are
+“ODB” and “XYPlot”. This member is read-only.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions.setValues" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([options, probeEntity, ...])</p></td>
+<td><p>This method modifies the settings on the ProbeOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.PathAndProbe.ProbeOptions.ProbeOptions.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions"><span class="pre">ProbeOptions</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">probeEntity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ELEMENT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">probeOutputPosition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">partInstance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementID</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementConnectivity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementFieldResults</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodeId</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">baseCoordinates</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deformedCoordinates</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attachedElements</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodeFieldResults</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xValue</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yValue</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sequenceID</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interpolateXy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/PathAndProbe/ProbeOptions.py#L176-L266"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions.setValues" title="Permalink to this definition">#</a></dt>
+<dd><p>This method modifies the settings on the ProbeOptions object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>options</strong></dt><dd><p>A ProbeOptions object from which values are to be copied. If other arguments are also
+supplied to setValues, they will override the values in <strong>options</strong>. The default value is
+None.</p>
+</dd>
+<dt><strong>probeEntity</strong></dt><dd><p>A SymbolicConstant specifying the entity being probed when <a href="#id21"><span class="problematic" id="id22">**</span></a>probeObject**=”ODB”. Possible
+values are NODE and ELEMENT. The default value is ELEMENT.</p>
+</dd>
+<dt><strong>probeOutputPosition</strong></dt><dd><p>A SymbolicConstant specifying the output position to probe for field output results when
+<a href="#id23"><span class="problematic" id="id24">**</span></a>probeObject**=”ODB”. Possible values are NODAL, INTEGRATION_POINT, ELEMENT_FACE,
+ELEMENT_NODAL, and ELEMENT_CENTROID.When <a href="#id25"><span class="problematic" id="id26">**</span></a>probeEntity**=NODE, the only possible value is
+NODAL. When <a href="#id27"><span class="problematic" id="id28">**</span></a>probeEntity**=ELEMENT, the only possible values are INTEGRATION_POINT,
+ELEMENT_FACE, ELEMENT_NODAL, and ELEMENT_CENTROID, and the default is INTEGRATION_POINT.</p>
+</dd>
+<dt><strong>partInstance</strong></dt><dd><p>A Boolean specifying whether to display the part instance information. This member is
+valid when <a href="#id29"><span class="problematic" id="id30">**</span></a>probeObject**=ODB. The default value is ON.</p>
+</dd>
+<dt><strong>elementID</strong></dt><dd><p>A Boolean specifying whether to display the element ID information. This member is valid
+when <a href="#id31"><span class="problematic" id="id32">**</span></a>probeObject**=ODB and <a href="#id33"><span class="problematic" id="id34">**</span></a>probeEntity**=ELEMENT. The default value is ON.</p>
+</dd>
+<dt><strong>elementType</strong></dt><dd><p>A Boolean specifying whether to display the element type information. This member is
+valid when <a href="#id35"><span class="problematic" id="id36">**</span></a>probeObject**=ODB and <a href="#id37"><span class="problematic" id="id38">**</span></a>probeEntity**=ELEMENT. The default value is ON.</p>
+</dd>
+<dt><strong>elementConnectivity</strong></dt><dd><p>A Boolean specifying whether to display the element connectivity. This member is valid
+when <a href="#id39"><span class="problematic" id="id40">**</span></a>probeObject**=ODB and <a href="#id41"><span class="problematic" id="id42">**</span></a>probeEntity**=ELEMENT. The default value is ON.</p>
+</dd>
+<dt><strong>elementFieldResults</strong></dt><dd><p>A Boolean specifying whether to display the element field output results. This member is
+valid when <a href="#id43"><span class="problematic" id="id44">**</span></a>probeObject**=ODB, <a href="#id45"><span class="problematic" id="id46">**</span></a>probeEntity**=ELEMENT, and <a href="#id47"><span class="problematic" id="id48">**</span></a>isFieldOutputAvailable**=ON.
+The default value is ON.</p>
+</dd>
+<dt><strong>nodeId</strong></dt><dd><p>A Boolean specifying whether to display the node ID when <a href="#id49"><span class="problematic" id="id50">**</span></a>probeObject**=ODB and
+<a href="#id51"><span class="problematic" id="id52">**</span></a>probeEntity**=NODE. The default value is ON.</p>
+</dd>
+<dt><strong>baseCoordinates</strong></dt><dd><p>A Boolean specifying whether to display the base coordinates of a node when
+<a href="#id53"><span class="problematic" id="id54">**</span></a>probeObject**=ODB and <a href="#id55"><span class="problematic" id="id56">**</span></a>probeEntity**=NODE. The default value is ON.</p>
+</dd>
+<dt><strong>deformedCoordinates</strong></dt><dd><p>A Boolean specifying whether to display the deformed coordinates of a node when
+<a href="#id57"><span class="problematic" id="id58">**</span></a>probeObject**=ODB and <a href="#id59"><span class="problematic" id="id60">**</span></a>probeEntity**=NODE. The default value is ON.</p>
+</dd>
+<dt><strong>attachedElements</strong></dt><dd><p>A Boolean specifying whether to display the elements attached to a node when
+<a href="#id61"><span class="problematic" id="id62">**</span></a>probeObject**=ODB and <a href="#id63"><span class="problematic" id="id64">**</span></a>probeEntity**=NODE. The default value is ON.</p>
+</dd>
+<dt><strong>nodeFieldResults</strong></dt><dd><p>A Boolean specifying whether to display the node field output results. This member is
+valid when <a href="#id65"><span class="problematic" id="id66">**</span></a>probeObject**=ODB, <a href="#id67"><span class="problematic" id="id68">**</span></a>probeEntity**=NODE, and <a href="#id69"><span class="problematic" id="id70">**</span></a>isFieldOutputAvailable**=ON. The
+default value is ON.</p>
+</dd>
+<dt><strong>legend</strong></dt><dd><p>A Boolean specifying whether to display the legend for a curve being probed. This member
+is valid when <a href="#id71"><span class="problematic" id="id72">**</span></a>probeObject**=XYPlot. The default value is ON.</p>
+</dd>
+<dt><strong>xValue</strong></dt><dd><p>A Boolean specifying whether to display the <strong>x</strong>-coordinate value of the point on the
+curve being probed. This member is valid when <a href="#id73"><span class="problematic" id="id74">**</span></a>probeObject**=XYPlot. The default value is
+ON.</p>
+</dd>
+<dt><strong>yValue</strong></dt><dd><p>A Boolean specifying whether to display the <strong>y</strong>-coordinate value of the point on the
+curve being probed. This member is valid when <a href="#id75"><span class="problematic" id="id76">**</span></a>probeObject**=XYPlot. The default value is
+ON.</p>
+</dd>
+<dt><strong>sequenceID</strong></dt><dd><p>A Boolean specifying whether to display the sequence ID of the point on the curve being
+probed. This member is valid when <a href="#id77"><span class="problematic" id="id78">**</span></a>probeObject**=XYPlot. The default value is ON.</p>
+</dd>
+<dt><strong>interpolateXy</strong></dt><dd><p>A Boolean specifying whether to interpolate values within a line segment when
+<strong>probeObject**=XYPlot. When **interpolateXy**=OFF, probing returns the nearest **X - Y</strong> data
+point on the curve. When <a href="#id79"><span class="problematic" id="id80">**</span></a>interpolateXy**=ON, probing interpolates data to return a value
+at the nearest point on the curve. The default value is OFF.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="probereport">
+<h3>ProbeReport<a class="headerlink" href="#probereport" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.PathAndProbe.ProbeReport.ProbeReport">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ProbeReport</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/PathAndProbe/ProbeReport.py#L4-L62"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.ProbeReport.ProbeReport" title="Permalink to this definition">#</a></dt>
+<dd><p>The ProbeReport object is used to store settings associated with tabular reports of
+probe data. The ProbeReport object has no constructor. Abaqus creates the
+<strong>defaultProbeReport</strong> and the <strong>probeReport</strong> members when you import the Visualization
+module. When probing is initiated for the first time, the values in the <strong>probeReport</strong>
+member are initialized using the values from the <strong>defaultProbeReport</strong> member.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">visualization</span>
+<span class="n">session</span><span class="o">.</span><span class="n">defaultProbeReport</span>
+<span class="n">session</span><span class="o">.</span><span class="n">probeReport</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PathAndProbe.ProbeReport.ProbeReport.setValues" title="abaqus.PathAndProbe.ProbeReport.ProbeReport.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([options, numColumns, numDigits, ...])</p></td>
+<td><p>This method modifies the ProbeReport object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.PathAndProbe.ProbeReport.ProbeReport.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numColumns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">80</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numDigits</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numFormat</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ENGINEERING'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pageWidth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NO_LIMIT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">printTotal</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">printMinMax</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/PathAndProbe/ProbeReport.py#L22-L62"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.ProbeReport.ProbeReport.setValues" title="Permalink to this definition">#</a></dt>
+<dd><p>This method modifies the ProbeReport object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>options</strong></dt><dd><p>None or a ProbeReport object specifying values to be copied. If other arguments are also
+supplied to setValues, they will override the values in <strong>options</strong>. The default value is
+None.</p>
+</dd>
+<dt><strong>numColumns</strong></dt><dd><p>An Int specifying the number of columns in the report file. This argument is valid only
+when <a href="#id81"><span class="problematic" id="id82">**</span></a>pageWidth**=SPECIFY. The default value is 80.</p>
+</dd>
+<dt><strong>numDigits</strong></dt><dd><p>An Int specifying the number of significant digits to be written for decimal values. The
+default value is 6.</p>
+</dd>
+<dt><strong>numFormat</strong></dt><dd><p>A SymbolicConstant specifying the number format to be used when formatting decimal
+values. Possible values are AUTOMATIC, ENGINEERING, and SCIENTIFIC. The default value is
+ENGINEERING.</p>
+</dd>
+<dt><strong>pageWidth</strong></dt><dd><p>A SymbolicConstant specifying the page width format. Possible values are NO_LIMIT and
+SPECIFY. The default value is NO_LIMIT.</p>
+</dd>
+<dt><strong>printTotal</strong></dt><dd><p>A Boolean specifying whether to print the total value of either the field output result
+(when <strong>probeObject**=”ODB”) or the **x</strong>- and <strong>y</strong>-coordinates (when <a href="#id83"><span class="problematic" id="id84">**</span></a>probeObject**=XYPlot).
+The default value is OFF.</p>
+</dd>
+<dt><strong>printMinMax</strong></dt><dd><p>A Boolean specifying whether to print the minimum and maximum values of either the field
+output result (when <strong>probeObject**=”ODB”) or the **x</strong>- and <strong>y</strong>-coordinates (when
+<a href="#id85"><span class="problematic" id="id86">**</span></a>probeObject**=XYPlot). The default value is OFF.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="selectedprobevalues">
+<h3>SelectedProbeValues<a class="headerlink" href="#selectedprobevalues" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SelectedProbeValues</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/PathAndProbe/SelectedProbeValues.py#L4-L41"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues" title="Permalink to this definition">#</a></dt>
+<dd><p>The SelectedProbeValues object has no constructor. The SelectedProbeValues object is
+created when you import the Visualization module.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">visualization</span>
+<span class="n">session</span><span class="o">.</span><span class="n">selectedProbeValues</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>length: int</strong></dt><dd><p>An Int specifying the length of the <strong>values</strong> member.</p>
+</dd>
+<dt><strong>fieldOutputAvailable: Boolean</strong></dt><dd><p>A Boolean specifying whether any probe values have been selected (as is necessary prior
+to writing to a file).</p>
+</dd>
+<dt><strong>values: float</strong></dt><dd><p>A tuple of tuples of Floats specifying the selected probe values.</p>
+</dd>
+<dt><strong>lastValues: tuple</strong></dt><dd><p>A tuple of Floats specifying the last sequence of the <strong>values</strong> member.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="spectrum">
+<h3>Spectrum<a class="headerlink" href="#spectrum" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.PathAndProbe.Spectrum.Spectrum">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Spectrum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/PathAndProbe/Spectrum.py#L1-L36"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.Spectrum.Spectrum" title="Permalink to this definition">#</a></dt>
+<dd><p>The Spectrum object defines a color spectrum for the contour display.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">visualization</span>
+<span class="n">session</span><span class="o">.</span><span class="n">spectrums</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="stream">
+<h3>Stream<a class="headerlink" href="#stream" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.PathAndProbe.Stream.Stream">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Stream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numPointsOnRake</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointA</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointB</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/PathAndProbe/Stream.py#L1-L51"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.Stream.Stream" title="Permalink to this definition">#</a></dt>
+<dd><p>TheStream object defines a set of streamlines in fluid mechanics.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">visualization</span>
+<span class="n">session</span><span class="o">.</span><span class="n">streams</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="plot_options.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Plot Options</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="odb_display.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Odb Display</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, WANG Hailin
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Path and Probe</a><ul>
+<li><a class="reference internal" href="#create-paths-in-session">Create paths in Session</a></li>
+<li><a class="reference internal" href="#create-free-bodies-in-session">Create free bodies in Session</a></li>
+<li><a class="reference internal" href="#object-features">Object features</a><ul>
+<li><a class="reference internal" href="#currentprobevalues">CurrentProbeValues</a></li>
+<li><a class="reference internal" href="#nodequery">NodeQuery</a></li>
+<li><a class="reference internal" href="#path">Path</a></li>
+<li><a class="reference internal" href="#probeoptions">ProbeOptions</a></li>
+<li><a class="reference internal" href="#probereport">ProbeReport</a></li>
+<li><a class="reference internal" href="#selectedprobevalues">SelectedProbeValues</a></li>
+<li><a class="reference internal" href="#spectrum">Spectrum</a></li>
+<li><a class="reference internal" href="#stream">Stream</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/furo.js"></script>
+    </body>
+</html>

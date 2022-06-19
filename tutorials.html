@@ -1,0 +1,742 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="API Summary" href="summary.html" /><link rel="prev" title="Getting Started" href="getting_started.html" />
+
+    <meta name="generator" content="sphinx-4.5.0, furo 2022.06.04.1"/>
+        <title>Tutorials - AbqPy 2016a0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">AbqPy 2016a0 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  
+  <span class="sidebar-brand-text">AbqPy 2016a0 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Tutorials</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="summary.html">API Summary</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="summary/header.html">Header of the Python script</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="summary/mdb.html">Abaqus Model Database</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="summary/mdb/model.html">Abaqus Model</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="summary/mdb/model/adaptivity.html">Adaptivity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="summary/mdb/model/amplitude.html">Amplitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="summary/mdb/model/assembly.html">Assembly</a></li>
+<li class="toctree-l4"><a class="reference internal" href="summary/mdb/model/bc.html">Boundary Condition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="summary/mdb/model/calibration.html">Calibration of Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="summary/mdb/model/constraint.html">Constraint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="summary/mdb/model/field.html">Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="summary/mdb/model/filter.html">Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="summary/mdb/model/interaction.html">Interaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="summary/mdb/model/load.html">Load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="summary/mdb/model/material.html">Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="summary/mdb/model/optimization.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="summary/mdb/model/output.html">Output Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="summary/mdb/model/part.html">Part</a></li>
+<li class="toctree-l4"><a class="reference internal" href="summary/mdb/model/predefined.html">Predefined Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="summary/mdb/model/profile.html">Beam Section Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="summary/mdb/model/property.html">Property</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="summary/mdb/model/section.html">Section</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="summary/mdb/model/section/connector.html">Connector</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="summary/mdb/model/sketcher.html">Sketcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="summary/mdb/model/step.html">Step</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="summary/mdb/model/step/step_miscellaneous.html">Step Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="summary/mdb/job.html">Abaqus Job</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="summary/odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="summary/session.html">Abaqus Session</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="references.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="reference/mdb.html">Abaqus Model Database</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="reference/mdb/model.html">Model</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/mdb/model/adaptivity.html">Adaptivity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/mdb/model/amplitude.html">Amplitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/mdb/model/bc.html">Boundary Condition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/mdb/model/calibration.html">Calibration of Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/mdb/model/constraint.html">Constraint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/mdb/model/field.html">Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/mdb/model/filter.html">Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/mdb/model/interaction.html">Interaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/mdb/model/load.html">Load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/mdb/model/material.html">Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/mdb/model/mesh.html">Mesh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/mdb/model/optimization.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/mdb/model/output.html">Output Request</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="reference/mdb/model/part_assembly.html">Part and Assembly</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="reference/mdb/model/part.html">Part</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/mdb/model/assembly.html">Assembly</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/mdb/model/part_assembly/datum.html">Datum</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/mdb/model/part_assembly/engineering.html">Engineering Feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/mdb/model/part_assembly/feature.html">Feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/mdb/model/part_assembly/geometry.html">Basic Geometry</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/mdb/model/part_assembly/region.html">Region</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="reference/mdb/model/predefined.html">Predefined Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/mdb/model/profile.html">Beam Section Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/mdb/model/property.html">Property</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="reference/mdb/model/section.html">Section</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="reference/mdb/model/section/connector.html">Connector</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="reference/mdb/model/sketcher.html">Sketcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="reference/mdb/model/step.html">Step</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="reference/mdb/model/step/step_miscellaneous.html">Step Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="reference/mdb/job.html">Job</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/mdb/annotation.html">Annotation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/mdb/edit_mesh.html">Edit Mesh</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="reference/session.html">Abaqus Session</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/session/animation.html">Animation Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/session/canvas.html">Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/session/display_options.html">Display Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/session/display.html">Display Group</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/session/field_report.html">FieldReport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/session/odb_display.html">Odb Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/session/path.html">Path and Probe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/session/plot_options.html">Plot Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/session/print.html">Print</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/session/xy.html">XY</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="reference/kernel.html">Kernel</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/kernel/cae_display_preferences.html">Abaqus CAE Display Preferences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/kernel/input.html">Input File Parser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/kernel/kernel.html">Custom Kernel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/kernel/messaging.html">Messaging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/kernel/table_collection.html">Table Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/kernel/text_representation.html">Text Representation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/kernel/utility.html">Utility and View</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="tutorials">
+<h1>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">#</a></h1>
+<p>For more tests, check <a class="reference external" href="https://github.com/Haiiliin/abqpy/tree/main/tests">abqpy/tests at main · Haiiliin/abqpy</a>.</p>
+<dl class="simple">
+<dt>Usually in Abaqus, we have several things to do:</dt><dd><ul class="simple">
+<li><p>Build the model</p></li>
+<li><p>Submit and monitor the job</p></li>
+<li><p>Get the output data and visualize it</p></li>
+</ul>
+</dd>
+</dl>
+<section id="build-an-abaqus-model">
+<h2>Build an Abaqus model<a class="headerlink" href="#build-an-abaqus-model" title="Permalink to this headline">#</a></h2>
+<p>The most convenient way to build an Abaqus model is to do it in Abaqus CAE. When we use the
+Abaqus/CAE graphical user interface (GUI) to create a model and to visualize the results,
+commands are issued internally by Abaqus/CAE after every operation. These commands reflect the
+geometry you created along with the options and settings you selected from each dialog box.</p>
+<p>Therefore, we can build our Abaqus model using Python script. We can totally use the Python
+script to build our Abaqus model, although it is not an efficient way. Usually, we do
+something in Abaqus/CAE, and check the Python script in the reply file (<cite>.rpy</cite>). And then copy
+it to our script file, this works, but not nicely.</p>
+<p>However, if type hints are provided in Python scripting of Abaqus, things will getting much
+easier, and that is what <cite>abqpy</cite> does.</p>
+<p>The example model described in the following is simple, there is a squre structure, the vertical displacement of the bottom face is fixed, and there is a vertical pressure in the top surface, the Abaqus model is showed as follows:</p>
+<a class="reference internal image-reference" href="_images/model.png"><img alt="_images/model.png" class="align-center" src="_images/model.png" style="width: 50%;" /></a>
+<section id="header-of-the-script">
+<h3>Header of the script<a class="headerlink" href="#header-of-the-script" title="Permalink to this headline">#</a></h3>
+<p>Usually, when we use Python script to build the model, we need to import the following modules:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">driverUtils</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>Module <cite>abaqus</cite> contains two most important variable <cite>mdb</cite> and <cite>session</cite> which control the model. Module <cite>abaqusConstants</cite> contains constant strings used in modelling, i.e., when we defines a part using the following code:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s1">&#39;Model-1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">Part</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;part&#39;</span><span class="p">,</span> <span class="n">dimensionality</span><span class="o">=</span><span class="n">THREE_D</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">DEFORMABLE_BODY</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><cite>THREE_D</cite> indicates the part is a 3D part, <cite>DEFORMABLE_BODY</cite> indicates the part is deformable.</p>
+<p>Module <cite>driverUtils</cite> contains an important function <cite>executeOnCaeStartup</cite>, this function will be execute each time we open the Abaqus, so we need to call this function in our Python script. Now, the header of our Python script would be like:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">driverUtils</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">executeOnCaeStartup</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="create-parts">
+<h3>Create parts<a class="headerlink" href="#create-parts" title="Permalink to this headline">#</a></h3>
+<p>First we need to create a sketch that will be used to create the part, we need to use <a class="reference internal" href="reference/mdb/model/sketcher.html#abaqus.Sketcher.SketchModel.SketchModel.ConstrainedSketch" title="abaqus.Sketcher.SketchModel.SketchModel.ConstrainedSketch"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConstrainedSketch()</span></code></a> to create a sketch:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s1">&#39;Model-1&#39;</span><span class="p">]</span>
+<span class="n">sketch</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">ConstrainedSketch</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;sketch&#39;</span><span class="p">,</span> <span class="n">sheetSize</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="n">sketch</span><span class="o">.</span><span class="n">rectangle</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>In this code, we draw a sketch with a squre. Now we can create a part using this sketch:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">part</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">Part</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;part&#39;</span><span class="p">,</span> <span class="n">dimensionality</span><span class="o">=</span><span class="n">THREE_D</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">DEFORMABLE_BODY</span><span class="p">)</span>
+<span class="n">part</span><span class="o">.</span><span class="n">BaseSolidExtrude</span><span class="p">(</span><span class="n">sketch</span><span class="o">=</span><span class="n">sketch</span><span class="p">,</span> <span class="n">depth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The first line creates a 3D and deformable part. Then we use the <a class="reference internal" href="reference/mdb/model/part.html#abaqus.Part.Feature.Feature.BaseSolidExtrude" title="abaqus.Part.Feature.Feature.BaseSolidExtrude"><code class="xref py py-meth docutils literal notranslate"><span class="pre">BaseSolidExtrude()</span></code></a> method to create a part using the sketch.</p>
+</section>
+<section id="create-some-sets-for-boundary-conditions-and-loads">
+<h3>Create some sets for boundary conditions and loads<a class="headerlink" href="#create-some-sets-for-boundary-conditions-and-loads" title="Permalink to this headline">#</a></h3>
+<p>Unlike building a model in Abaqus/CAE, we can just click the nodes/faces to create sets, when we use a Python script to build the model, we can use coordinates to find nodes/faces we need.</p>
+<p>We can use <a class="reference internal" href="reference/mdb/model/part_assembly/region.html#abaqus.Region.RegionPart.RegionPart.Set" title="abaqus.Region.RegionPart.RegionPart.Set"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Set()</span></code></a> and <a class="reference internal" href="reference/mdb/model/part_assembly/region.html#abaqus.Region.RegionPart.RegionPart.Surface" title="abaqus.Region.RegionPart.RegionPart.Surface"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Surface()</span></code></a> to create sets and surfaces:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">part</span><span class="o">.</span><span class="n">Set</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;set-all&#39;</span><span class="p">,</span> <span class="n">cells</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">cells</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">((</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span> <span class="p">)))</span>
+<span class="n">part</span><span class="o">.</span><span class="n">Set</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;set-bottom&#39;</span><span class="p">,</span> <span class="n">faces</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">faces</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">((</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">),</span> <span class="p">)))</span>
+<span class="n">part</span><span class="o">.</span><span class="n">Set</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;set-top&#39;</span><span class="p">,</span> <span class="n">faces</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">faces</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">((</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),</span> <span class="p">)))</span>
+<span class="n">part</span><span class="o">.</span><span class="n">Surface</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;surface-top&#39;</span><span class="p">,</span>
+             <span class="n">side1Faces</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">faces</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">((</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),</span> <span class="p">)))</span>
+</pre></div>
+</div>
+</section>
+<section id="merge-parts-to-assembly">
+<h3>Merge parts to assembly<a class="headerlink" href="#merge-parts-to-assembly" title="Permalink to this headline">#</a></h3>
+<p>We can use <code class="xref py py-meth docutils literal notranslate"><span class="pre">Instance()</span></code> to create instances：</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">DatumCsysByDefault</span><span class="p">(</span><span class="n">CARTESIAN</span><span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">Instance</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;instance&#39;</span><span class="p">,</span> <span class="n">part</span><span class="o">=</span><span class="n">part</span><span class="p">,</span> <span class="n">dependent</span><span class="o">=</span><span class="n">ON</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="create-materials-and-sections-and-assign-materials-to-sections">
+<h3>Create materials and sections, and assign materials to sections<a class="headerlink" href="#create-materials-and-sections-and-assign-materials-to-sections" title="Permalink to this headline">#</a></h3>
+<p>First we create a Material object using <a class="reference internal" href="reference/mdb/model/material.html#abaqus.Material.MaterialModel.MaterialModel.Material" title="abaqus.Material.MaterialModel.MaterialModel.Material"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Material()</span></code></a>:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">material</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">Material</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;material&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Then we assign some properties to the Material object, i.e., <a class="reference internal" href="reference/mdb/model/material.html#id121" title="abaqus.Material.Material.Material.Elastic"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Elastic()</span></code></a> and <a class="reference internal" href="reference/mdb/model/material.html#id110" title="abaqus.Material.Material.Material.Density"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Density()</span></code></a>:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">material</span><span class="o">.</span><span class="n">Elastic</span><span class="p">(</span><span class="n">table</span><span class="o">=</span><span class="p">((</span><span class="mi">1000</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">),</span> <span class="p">))</span>
+<span class="n">material</span><span class="o">.</span><span class="n">Density</span><span class="p">(</span><span class="n">table</span><span class="o">=</span><span class="p">((</span><span class="mi">2500</span><span class="p">,</span> <span class="p">),</span> <span class="p">))</span>
+</pre></div>
+</div>
+<p>Then we create a <a class="reference internal" href="reference/mdb/model/section.html#abaqus.Section.SectionModel.SectionModel.HomogeneousSolidSection" title="abaqus.Section.SectionModel.SectionModel.HomogeneousSolidSection"><code class="xref py py-meth docutils literal notranslate"><span class="pre">HomogeneousSolidSection()</span></code></a> and assign the material to the section (<a class="reference internal" href="reference/mdb/model/property.html#abaqus.Property.PropertyPart.PropertyPart.SectionAssignment" title="abaqus.Property.PropertyPart.PropertyPart.SectionAssignment"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SectionAssignment()</span></code></a>):</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">HomogeneousSolidSection</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;section&#39;</span><span class="p">,</span> <span class="n">material</span><span class="o">=</span><span class="s1">&#39;material&#39;</span><span class="p">,</span> <span class="n">thickness</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">part</span><span class="o">.</span><span class="n">SectionAssignment</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">sets</span><span class="p">[</span><span class="s1">&#39;set-all&#39;</span><span class="p">],</span> <span class="n">sectionName</span><span class="o">=</span><span class="s1">&#39;section&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="create-steps">
+<h3>Create steps<a class="headerlink" href="#create-steps" title="Permalink to this headline">#</a></h3>
+<p>It is easy to create a <a class="reference internal" href="reference/mdb/model/step.html#abaqus.Step.StepModel.StepModel.StaticStep" title="abaqus.Step.StepModel.StepModel.StaticStep"><code class="xref py py-meth docutils literal notranslate"><span class="pre">StaticStep()</span></code></a>:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">step</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">StaticStep</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Step-1&#39;</span><span class="p">,</span> <span class="n">previous</span><span class="o">=</span><span class="s1">&#39;Initial&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+                        <span class="n">timePeriod</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">timeIncrementationMethod</span><span class="o">=</span><span class="n">AUTOMATIC</span><span class="p">,</span>
+                        <span class="n">maxNumInc</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">initialInc</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">minInc</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">maxInc</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="specify-output-requests">
+<h3>Specify output requests<a class="headerlink" href="#specify-output-requests" title="Permalink to this headline">#</a></h3>
+<p>We can use the <a class="reference internal" href="reference/mdb/model/output.html#abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest" title="abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest"><code class="xref py py-meth docutils literal notranslate"><span class="pre">FieldOutputRequest()</span></code></a> and <a class="reference internal" href="reference/mdb/model/output.html#abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest" title="abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest"><code class="xref py py-meth docutils literal notranslate"><span class="pre">HistoryOutputRequest()</span></code></a> to specify field output and history output information.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">field</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">FieldOutputRequest</span><span class="p">(</span><span class="s1">&#39;F-Output-1&#39;</span><span class="p">,</span> <span class="n">createStepName</span><span class="o">=</span><span class="s1">&#39;Step-1&#39;</span><span class="p">,</span>
+                                 <span class="n">variables</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;S&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">,</span> <span class="s1">&#39;U&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</section>
+<section id="create-boundary-conditions">
+<h3>Create boundary conditions<a class="headerlink" href="#create-boundary-conditions" title="Permalink to this headline">#</a></h3>
+<p>We can use <a class="reference internal" href="reference/mdb/model/bc.html#abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBC" title="abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBC"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DisplacementBC()</span></code></a> to create a displacement boundary condition:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">bottom_instance</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">instances</span><span class="p">[</span><span class="s1">&#39;instance&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sets</span><span class="p">[</span><span class="s1">&#39;set-bottom&#39;</span><span class="p">]</span>
+<span class="n">bc</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">DisplacementBC</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;BC-1&#39;</span><span class="p">,</span> <span class="n">createStepName</span><span class="o">=</span><span class="s1">&#39;Initial&#39;</span><span class="p">,</span>
+                          <span class="n">region</span><span class="o">=</span><span class="n">bottom_instance</span><span class="p">,</span> <span class="n">u3</span><span class="o">=</span><span class="n">SET</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It should be noted that region of the boundary condition should be a region of the instances instead of parts, since sets created in parts are copied to the instance, we can use the sets in the parts that we defined before.</p>
+</section>
+<section id="create-loads">
+<h3>Create loads<a class="headerlink" href="#create-loads" title="Permalink to this headline">#</a></h3>
+<p>We can use <a class="reference internal" href="reference/mdb/model/load.html#abaqus.Load.LoadModel.LoadModel.Pressure" title="abaqus.Load.LoadModel.LoadModel.Pressure"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Pressure()</span></code></a> ro create a pressure:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">top_instance</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">instances</span><span class="p">[</span><span class="s1">&#39;instance&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">surfaces</span><span class="p">[</span><span class="s1">&#39;surface-top&#39;</span><span class="p">]</span>
+<span class="n">pressure</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">Pressure</span><span class="p">(</span><span class="s1">&#39;pressure&#39;</span><span class="p">,</span> <span class="n">createStepName</span><span class="o">=</span><span class="s1">&#39;Step-1&#39;</span><span class="p">,</span> <span class="n">region</span><span class="o">=</span><span class="n">top_instance</span><span class="p">,</span>
+                          <span class="n">magnitude</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="mesh">
+<h3>Mesh<a class="headerlink" href="#mesh" title="Permalink to this headline">#</a></h3>
+<p>To mesh the model, we have to set the <a class="reference internal" href="reference/mdb/model/mesh.html#abaqus.Mesh.ElemType.ElemType" title="abaqus.Mesh.ElemType.ElemType"><code class="xref py py-class docutils literal notranslate"><span class="pre">ElemType</span></code></a>, which is defined in the <cite>mesh</cite> module, so we need to import <cite>mesh</cite> module:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mesh</span>
+
+<span class="n">elem1</span> <span class="o">=</span> <span class="n">mesh</span><span class="o">.</span><span class="n">ElemType</span><span class="p">(</span><span class="n">elemCode</span><span class="o">=</span><span class="n">C3D8R</span><span class="p">)</span>
+<span class="n">elem2</span> <span class="o">=</span> <span class="n">mesh</span><span class="o">.</span><span class="n">ElemType</span><span class="p">(</span><span class="n">elemCode</span><span class="o">=</span><span class="n">C3D6</span><span class="p">)</span>
+<span class="n">elem3</span> <span class="o">=</span> <span class="n">mesh</span><span class="o">.</span><span class="n">ElemType</span><span class="p">(</span><span class="n">elemCode</span><span class="o">=</span><span class="n">C3D4</span><span class="p">)</span>
+<span class="n">part</span><span class="o">.</span><span class="n">setElementType</span><span class="p">(</span><span class="n">regions</span><span class="o">=</span><span class="p">(</span><span class="n">part</span><span class="o">.</span><span class="n">cells</span><span class="p">,</span> <span class="p">),</span> <span class="n">elemTypes</span><span class="o">=</span><span class="p">(</span><span class="n">elem1</span><span class="p">,</span> <span class="n">elem2</span><span class="p">,</span> <span class="n">elem3</span><span class="p">))</span>
+<span class="n">part</span><span class="o">.</span><span class="n">seedPart</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+<span class="n">part</span><span class="o">.</span><span class="n">generateMesh</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="create-jobs">
+<h3>Create jobs<a class="headerlink" href="#create-jobs" title="Permalink to this headline">#</a></h3>
+<p>We can use <code class="xref py py-meth docutils literal notranslate"><span class="pre">Job()</span></code> to create a job:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">job</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">Job</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Job-1&#39;</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="s1">&#39;Model-1&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Then we can write the model to an input file (<cite>.inp</cite>):</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">job</span><span class="o">.</span><span class="n">writeInput</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Then we can submit the job:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">job</span><span class="o">.</span><span class="n">submit</span><span class="p">()</span>
+<span class="n">job</span><span class="o">.</span><span class="n">waitForCompletion</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="save-the-abaqus-model-to-a-cae-file">
+<h3>Save the Abaqus model to a <cite>.cae</cite> file<a class="headerlink" href="#save-the-abaqus-model-to-a-cae-file" title="Permalink to this headline">#</a></h3>
+<p>We can use <code class="xref py py-class docutils literal notranslate"><span class="pre">saveAs</span></code> to save the Abaqus model to a <cite>.cae</cite> file:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">saveAs</span><span class="p">(</span><span class="s1">&#39;compression.cae&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It should be noted that we have to use this function to save the model when we use <cite>abqpy</cite> to build an Abaqus model. It is because that when we execute all the above codes, the Python script has not been sent to Abaqus kernel. All the functions mentioned above are included in <cite>abqpy</cite>, however, nothing has been done inside this functions, they are just provided for type hints. Therefore, if we want to send the Python script to the Abaqus kernel, we have to use the Abaqus command like this:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus cae -noGUI script.py
+</pre></div>
+</div>
+<p>In order to make it simple, this has been done in the <code class="xref py py-meth docutils literal notranslate"><span class="pre">saveAs()</span></code> function:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">saveAs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pathName</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="n">abaqus</span> <span class="o">=</span> <span class="s1">&#39;abaqus&#39;</span>
+    <span class="k">if</span> <span class="s1">&#39;ABAQUS_BAT_PATH&#39;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="n">abaqus</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;ABAQUS_BAT_PATH&#39;</span><span class="p">]</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> cae -noGUI </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">abaqus</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">])))</span>
+</pre></div>
+</div>
+</section>
+<section id="the-whole-script">
+<h3>The whole script<a class="headerlink" href="#the-whole-script" title="Permalink to this headline">#</a></h3>
+<p>The whole script of this example is showed as follows:</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">compression.py</span><a class="headerlink" href="#id1" title="Permalink to this code">#</a></div>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">caeModules</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">driverUtils</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">executeOnCaeStartup</span><span class="p">()</span>
+
+<span class="c1"># Model</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s1">&#39;Model-1&#39;</span><span class="p">]</span>
+
+<span class="c1"># Part</span>
+<span class="n">sketch</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">ConstrainedSketch</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;sketch&#39;</span><span class="p">,</span> <span class="n">sheetSize</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="n">sketch</span><span class="o">.</span><span class="n">rectangle</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">part</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">Part</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;part&#39;</span><span class="p">,</span> <span class="n">dimensionality</span><span class="o">=</span><span class="n">THREE_D</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">DEFORMABLE_BODY</span><span class="p">)</span>
+<span class="n">part</span><span class="o">.</span><span class="n">BaseSolidExtrude</span><span class="p">(</span><span class="n">sketch</span><span class="o">=</span><span class="n">sketch</span><span class="p">,</span> <span class="n">depth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Create sets</span>
+<span class="n">part</span><span class="o">.</span><span class="n">Set</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;set-all&#39;</span><span class="p">,</span> <span class="n">cells</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">cells</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">((</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span> <span class="p">)))</span>
+<span class="n">part</span><span class="o">.</span><span class="n">Set</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;set-bottom&#39;</span><span class="p">,</span> <span class="n">faces</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">faces</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">((</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">),</span> <span class="p">)))</span>
+<span class="n">part</span><span class="o">.</span><span class="n">Set</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;set-top&#39;</span><span class="p">,</span> <span class="n">faces</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">faces</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">((</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),</span> <span class="p">)))</span>
+<span class="n">part</span><span class="o">.</span><span class="n">Surface</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;surface-top&#39;</span><span class="p">,</span>
+             <span class="n">side1Faces</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">faces</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">((</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),</span> <span class="p">)))</span>
+
+<span class="c1"># Assembly</span>
+<span class="n">model</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">DatumCsysByDefault</span><span class="p">(</span><span class="n">CARTESIAN</span><span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">Instance</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;instance&#39;</span><span class="p">,</span> <span class="n">part</span><span class="o">=</span><span class="n">part</span><span class="p">,</span> <span class="n">dependent</span><span class="o">=</span><span class="n">ON</span><span class="p">)</span>
+
+<span class="c1"># Material</span>
+<span class="n">material</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">Material</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;material&#39;</span><span class="p">)</span>
+<span class="n">material</span><span class="o">.</span><span class="n">Elastic</span><span class="p">(</span><span class="n">table</span><span class="o">=</span><span class="p">((</span><span class="mi">1000</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">),</span> <span class="p">))</span>
+<span class="n">material</span><span class="o">.</span><span class="n">Density</span><span class="p">(</span><span class="n">table</span><span class="o">=</span><span class="p">((</span><span class="mi">2500</span><span class="p">,</span> <span class="p">),</span> <span class="p">))</span>
+
+<span class="c1"># Section</span>
+<span class="n">model</span><span class="o">.</span><span class="n">HomogeneousSolidSection</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;section&#39;</span><span class="p">,</span> <span class="n">material</span><span class="o">=</span><span class="s1">&#39;material&#39;</span><span class="p">,</span> <span class="n">thickness</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">part</span><span class="o">.</span><span class="n">SectionAssignment</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">sets</span><span class="p">[</span><span class="s1">&#39;set-all&#39;</span><span class="p">],</span> <span class="n">sectionName</span><span class="o">=</span><span class="s1">&#39;section&#39;</span><span class="p">)</span>
+
+<span class="c1"># Step</span>
+<span class="n">step</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">StaticStep</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Step-1&#39;</span><span class="p">,</span> <span class="n">previous</span><span class="o">=</span><span class="s1">&#39;Initial&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+                        <span class="n">timePeriod</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">timeIncrementationMethod</span><span class="o">=</span><span class="n">AUTOMATIC</span><span class="p">,</span>
+                        <span class="n">maxNumInc</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">initialInc</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">minInc</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">maxInc</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+
+<span class="c1"># Output request</span>
+<span class="n">field</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">FieldOutputRequest</span><span class="p">(</span><span class="s1">&#39;F-Output-1&#39;</span><span class="p">,</span> <span class="n">createStepName</span><span class="o">=</span><span class="s1">&#39;Step-1&#39;</span><span class="p">,</span>
+                                 <span class="n">variables</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;S&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">,</span> <span class="s1">&#39;U&#39;</span><span class="p">))</span>
+
+<span class="c1"># Boundary condition</span>
+<span class="n">bottom_instance</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">instances</span><span class="p">[</span><span class="s1">&#39;instance&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sets</span><span class="p">[</span><span class="s1">&#39;set-bottom&#39;</span><span class="p">]</span>
+<span class="n">bc</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">DisplacementBC</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;BC-1&#39;</span><span class="p">,</span> <span class="n">createStepName</span><span class="o">=</span><span class="s1">&#39;Initial&#39;</span><span class="p">,</span>
+                          <span class="n">region</span><span class="o">=</span><span class="n">bottom_instance</span><span class="p">,</span> <span class="n">u3</span><span class="o">=</span><span class="n">SET</span><span class="p">)</span>
+
+<span class="c1"># Load</span>
+<span class="n">top_instance</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">instances</span><span class="p">[</span><span class="s1">&#39;instance&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">surfaces</span><span class="p">[</span><span class="s1">&#39;surface-top&#39;</span><span class="p">]</span>
+<span class="n">pressure</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">Pressure</span><span class="p">(</span><span class="s1">&#39;pressure&#39;</span><span class="p">,</span> <span class="n">createStepName</span><span class="o">=</span><span class="s1">&#39;Step-1&#39;</span><span class="p">,</span> <span class="n">region</span><span class="o">=</span><span class="n">top_instance</span><span class="p">,</span>
+                          <span class="n">magnitude</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="c1"># Mesh</span>
+<span class="n">elem1</span> <span class="o">=</span> <span class="n">mesh</span><span class="o">.</span><span class="n">ElemType</span><span class="p">(</span><span class="n">elemCode</span><span class="o">=</span><span class="n">C3D8R</span><span class="p">)</span>
+<span class="n">elem2</span> <span class="o">=</span> <span class="n">mesh</span><span class="o">.</span><span class="n">ElemType</span><span class="p">(</span><span class="n">elemCode</span><span class="o">=</span><span class="n">C3D6</span><span class="p">)</span>
+<span class="n">elem3</span> <span class="o">=</span> <span class="n">mesh</span><span class="o">.</span><span class="n">ElemType</span><span class="p">(</span><span class="n">elemCode</span><span class="o">=</span><span class="n">C3D4</span><span class="p">)</span>
+<span class="n">part</span><span class="o">.</span><span class="n">setElementType</span><span class="p">(</span><span class="n">regions</span><span class="o">=</span><span class="p">(</span><span class="n">part</span><span class="o">.</span><span class="n">cells</span><span class="p">,</span> <span class="p">),</span> <span class="n">elemTypes</span><span class="o">=</span><span class="p">(</span><span class="n">elem1</span><span class="p">,</span> <span class="n">elem2</span><span class="p">,</span> <span class="n">elem3</span><span class="p">))</span>
+<span class="n">part</span><span class="o">.</span><span class="n">seedPart</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+<span class="n">part</span><span class="o">.</span><span class="n">generateMesh</span><span class="p">()</span>
+
+<span class="c1"># Job</span>
+<span class="n">job</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">Job</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Job-1&#39;</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="s1">&#39;Model-1&#39;</span><span class="p">)</span>
+<span class="n">job</span><span class="o">.</span><span class="n">writeInput</span><span class="p">()</span>
+
+<span class="c1"># Submit the job</span>
+<span class="c1"># job.submit()</span>
+<span class="c1"># job.waitForCompletion()</span>
+
+<span class="c1"># Save abaqus model</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">saveAs</span><span class="p">(</span><span class="s1">&#39;compression.cae&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+<section id="extract-output-data">
+<h2>Extract output data<a class="headerlink" href="#extract-output-data" title="Permalink to this headline">#</a></h2>
+<p>If we want to extract the output data, we have to write an outout script.</p>
+<section id="header-of-the-output-script">
+<h3>Header of the output script<a class="headerlink" href="#header-of-the-output-script" title="Permalink to this headline">#</a></h3>
+<p>Similarly, we have to import some modules:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">driverUtils</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">executeOnCaeStartup</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="open-the-output-database">
+<h3>Open the output database<a class="headerlink" href="#open-the-output-database" title="Permalink to this headline">#</a></h3>
+<p>We can use <code class="xref py py-meth docutils literal notranslate"><span class="pre">openOdb()</span></code> to open the output database:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">odb</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">openOdb</span><span class="p">(</span><span class="s1">&#39;Job-1.odb&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="extract-the-data">
+<h3>Extract the data<a class="headerlink" href="#extract-the-data" title="Permalink to this headline">#</a></h3>
+<p>We can use the <a class="reference internal" href="reference/session/xy.html#abaqus.XY.XYSession.XYSession.xyDataListFromField" title="abaqus.XY.XYSession.XYSession.xyDataListFromField"><code class="xref py py-meth docutils literal notranslate"><span class="pre">xyDataListFromField()</span></code></a> to extract the output data:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">dataList</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">xyDataListFromField</span><span class="p">(</span><span class="n">odb</span><span class="o">=</span><span class="n">odb</span><span class="p">,</span> <span class="n">outputPosition</span><span class="o">=</span><span class="n">NODAL</span><span class="p">,</span>
+                                       <span class="n">variable</span><span class="o">=</span><span class="p">((</span><span class="s1">&#39;U&#39;</span><span class="p">,</span> <span class="n">NODAL</span><span class="p">,</span> <span class="p">((</span><span class="n">COMPONENT</span><span class="p">,</span> <span class="s1">&#39;U3&#39;</span><span class="p">),)),),</span>
+                                       <span class="n">nodeSets</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;INSTANCE.SET-TOP&#39;</span><span class="p">,</span> <span class="p">))</span>
+</pre></div>
+</div>
+<p><cite>dataList</cite> is a list of <cite>XYData</cite> objects. <cite>XYData</cite> is a data type defined in Abaqus, the data is stored in tuples of tuples, so we can simply save it to a file, i.e., using the <cite>numpy</cite> (<cite>numpy</cite> is installed in Python interpreter of Abaqus already):</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">dataList</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">np</span><span class="o">.</span><span class="n">savetxt</span><span class="p">(</span><span class="s1">&#39;data.csv&#39;</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="s1">&#39;time,U3&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">comments</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="results-of-above-example">
+<h3>Results of above example<a class="headerlink" href="#results-of-above-example" title="Permalink to this headline">#</a></h3>
+<p>The distribution of <cite>U3</cite> of above model is showed as follows:</p>
+<a class="reference internal image-reference" href="_images/output.png"><img alt="_images/output.png" class="align-center" src="_images/output.png" style="width: 70%;" /></a>
+<p>The distribution of the vertical displacement of a point in the top surface is showed as follows:</p>
+<a class="reference internal image-reference" href="_images/compression.png"><img alt="_images/compression.png" class="align-center" src="_images/compression.png" style="width: 70%;" /></a>
+</section>
+<section id="the-whole-output-script">
+<h3>The whole output script<a class="headerlink" href="#the-whole-output-script" title="Permalink to this headline">#</a></h3>
+<p>The whole output script of this example is showed as follows:</p>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">compression-output.py</span><a class="headerlink" href="#id2" title="Permalink to this code">#</a></div>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">driverUtils</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">executeOnCaeStartup</span><span class="p">()</span>
+
+<span class="c1"># Open output database</span>
+<span class="n">odb</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">openOdb</span><span class="p">(</span><span class="s1">&#39;Job-1.odb&#39;</span><span class="p">)</span>
+
+<span class="c1"># Extract output data</span>
+<span class="n">dataList</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">xyDataListFromField</span><span class="p">(</span><span class="n">odb</span><span class="o">=</span><span class="n">odb</span><span class="p">,</span> <span class="n">outputPosition</span><span class="o">=</span><span class="n">NODAL</span><span class="p">,</span>
+                                       <span class="n">variable</span><span class="o">=</span><span class="p">((</span><span class="s1">&#39;U&#39;</span><span class="p">,</span> <span class="n">NODAL</span><span class="p">,</span> <span class="p">((</span><span class="n">COMPONENT</span><span class="p">,</span> <span class="s1">&#39;U3&#39;</span><span class="p">),)),),</span>
+                                       <span class="n">nodeSets</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;INSTANCE.SET-TOP&#39;</span><span class="p">,</span> <span class="p">))</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">dataList</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">np</span><span class="o">.</span><span class="n">savetxt</span><span class="p">(</span><span class="s1">&#39;data.csv&#39;</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="s1">&#39;time,U3&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">comments</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="summary.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">API Summary</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="getting_started.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Getting Started</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, WANG Hailin
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Tutorials</a><ul>
+<li><a class="reference internal" href="#build-an-abaqus-model">Build an Abaqus model</a><ul>
+<li><a class="reference internal" href="#header-of-the-script">Header of the script</a></li>
+<li><a class="reference internal" href="#create-parts">Create parts</a></li>
+<li><a class="reference internal" href="#create-some-sets-for-boundary-conditions-and-loads">Create some sets for boundary conditions and loads</a></li>
+<li><a class="reference internal" href="#merge-parts-to-assembly">Merge parts to assembly</a></li>
+<li><a class="reference internal" href="#create-materials-and-sections-and-assign-materials-to-sections">Create materials and sections, and assign materials to sections</a></li>
+<li><a class="reference internal" href="#create-steps">Create steps</a></li>
+<li><a class="reference internal" href="#specify-output-requests">Specify output requests</a></li>
+<li><a class="reference internal" href="#create-boundary-conditions">Create boundary conditions</a></li>
+<li><a class="reference internal" href="#create-loads">Create loads</a></li>
+<li><a class="reference internal" href="#mesh">Mesh</a></li>
+<li><a class="reference internal" href="#create-jobs">Create jobs</a></li>
+<li><a class="reference internal" href="#save-the-abaqus-model-to-a-cae-file">Save the Abaqus model to a <cite>.cae</cite> file</a></li>
+<li><a class="reference internal" href="#the-whole-script">The whole script</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#extract-output-data">Extract output data</a><ul>
+<li><a class="reference internal" href="#header-of-the-output-script">Header of the output script</a></li>
+<li><a class="reference internal" href="#open-the-output-database">Open the output database</a></li>
+<li><a class="reference internal" href="#extract-the-data">Extract the data</a></li>
+<li><a class="reference internal" href="#results-of-above-example">Results of above example</a></li>
+<li><a class="reference internal" href="#the-whole-output-script">The whole output script</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/scripts/furo.js"></script>
+    </body>
+</html>

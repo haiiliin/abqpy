@@ -1,0 +1,1220 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="Predefined Field" href="predefined.html" /><link rel="prev" title="Output Request" href="output.html" />
+
+    <meta name="generator" content="sphinx-4.5.0, furo 2022.06.04.1"/>
+        <title>Part - AbqPy 2016a0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../../index.html"><div class="brand">AbqPy 2016a0 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../../index.html">
+  
+  
+  <span class="sidebar-brand-text">AbqPy 2016a0 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../../../summary.html">API Summary</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../header.html">Header of the Python script</a></li>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../../mdb.html">Abaqus Model Database</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 current has-children"><a class="reference internal" href="../model.html">Abaqus Model</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="adaptivity.html">Adaptivity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="amplitude.html">Amplitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="assembly.html">Assembly</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bc.html">Boundary Condition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="calibration.html">Calibration of Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="constraint.html">Constraint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="field.html">Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="filter.html">Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interaction.html">Interaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="load.html">Load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material.html">Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="optimization.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="output.html">Output Request</a></li>
+<li class="toctree-l4 current current-page"><a class="current reference internal" href="#">Part</a></li>
+<li class="toctree-l4"><a class="reference internal" href="predefined.html">Predefined Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="profile.html">Beam Section Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="property.html">Property</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="section.html">Section</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="section/connector.html">Connector</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sketcher.html">Sketcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="step.html">Step</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="step/step_miscellaneous.html">Step Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../job.html">Abaqus Job</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../session.html">Abaqus Session</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../references.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../reference/mdb.html">Abaqus Model Database</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../reference/mdb/model.html">Model</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/adaptivity.html">Adaptivity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/amplitude.html">Amplitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/bc.html">Boundary Condition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/calibration.html">Calibration of Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/constraint.html">Constraint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/field.html">Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/filter.html">Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/interaction.html">Interaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/load.html">Load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/material.html">Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/mesh.html">Mesh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/optimization.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/output.html">Output Request</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../reference/mdb/model/part_assembly.html">Part and Assembly</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../reference/mdb/model/part.html">Part</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../reference/mdb/model/assembly.html">Assembly</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../reference/mdb/model/part_assembly/datum.html">Datum</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../reference/mdb/model/part_assembly/engineering.html">Engineering Feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../reference/mdb/model/part_assembly/feature.html">Feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../reference/mdb/model/part_assembly/geometry.html">Basic Geometry</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../reference/mdb/model/part_assembly/region.html">Region</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/predefined.html">Predefined Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/profile.html">Beam Section Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/property.html">Property</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../reference/mdb/model/section.html">Section</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../reference/mdb/model/section/connector.html">Connector</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/sketcher.html">Sketcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../reference/mdb/model/step.html">Step</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../reference/mdb/model/step/step_miscellaneous.html">Step Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/mdb/job.html">Job</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/mdb/annotation.html">Annotation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/mdb/edit_mesh.html">Edit Mesh</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../reference/odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../reference/session.html">Abaqus Session</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/session/animation.html">Animation Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/session/canvas.html">Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/session/display_options.html">Display Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/session/display.html">Display Group</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/session/field_report.html">FieldReport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/session/odb_display.html">Odb Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/session/path.html">Path and Probe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/session/plot_options.html">Plot Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/session/print.html">Print</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/session/xy.html">XY</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../reference/kernel.html">Kernel</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/kernel/cae_display_preferences.html">Abaqus CAE Display Preferences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/kernel/input.html">Input File Parser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/kernel/kernel.html">Custom Kernel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/kernel/messaging.html">Messaging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/kernel/table_collection.html">Table Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/kernel/text_representation.html">Text Representation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/kernel/utility.html">Utility and View</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="part">
+<h1>Part<a class="headerlink" href="#part" title="Permalink to this headline">#</a></h1>
+<p>Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly operations. Part commands create Feature objects on only the Part object. The commands that create Feature objects on only the rootAssembly object are described in Assembly commands. The commands that create Feature objects on both the Part and the rootAssembly objects are described in Feature commands.</p>
+<section id="create-parts">
+<h2>Create parts<a class="headerlink" href="#create-parts" title="Permalink to this headline">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PartModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stefanBoltzmann</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">absoluteZero</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waveFormulation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NOT_SET'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'STANDARD_EXPLICIT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">universalGas</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyConstraints</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyConnectors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyInteractions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Part/PartModel.py#L6-L55"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Abaqus creates a Model object named <cite>Model-1</cite> when a session is started.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/part.html#abaqus.Part.PartModel.PartModel.Part" title="abaqus.Part.PartModel.PartModel.Part"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Part</span></code></a>(name, dimensionality, type[, twist])</p></td>
+<td><p>This method creates a Part object and places it in the parts repository.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PartBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dimensionality</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">twist</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Part/PartBase.py#L43-L1872"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PartBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">objectToCopy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mirrorPlane</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">NONE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compressFeatureList</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">separate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>The Part object defines the physical attributes of a structure. Parts are instanced into
+the assembly and positioned before an analysis.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">part</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>geometryValidity: Boolean</strong></dt><dd><p>A Boolean specifying the validity of the geometry of the part. The value is computed,
+but it can be set to ON to perform feature and mesh operations on an invalid part. There
+is no guarantee that such operations will work if the part was originally invalid.</p>
+</dd>
+<dt><strong>isOutOfDate: int</strong></dt><dd><p>An Int specifying that feature parameters have been modified but that the part has not
+been regenerated. Possible values are 0 and 1.</p>
+</dd>
+<dt><strong>timeStamp: float</strong></dt><dd><p>A Float specifying when the part was last modified.</p>
+</dd>
+<dt><strong>vertices: VertexArray</strong></dt><dd><p>A <a class="reference internal" href="../../../reference/mdb/model/part_assembly/geometry.html#abaqus.BasicGeometry.VertexArray.VertexArray" title="abaqus.BasicGeometry.VertexArray.VertexArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">VertexArray</span></code></a> object specifying all the vertices in the part.</p>
+</dd>
+<dt><strong>ignoredVertices: IgnoredVertexArray</strong></dt><dd><p>An <a class="reference internal" href="../../../reference/mdb/model/part_assembly/geometry.html#abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray" title="abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">IgnoredVertexArray</span></code></a> object specifying all the ignored
+vertices in the part.</p>
+</dd>
+<dt><strong>edges: EdgeArray</strong></dt><dd><p>An <a class="reference internal" href="../../../reference/mdb/model/part_assembly/geometry.html#abaqus.BasicGeometry.EdgeArray.EdgeArray" title="abaqus.BasicGeometry.EdgeArray.EdgeArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">EdgeArray</span></code></a> object specifying all the edges in the part.</p>
+</dd>
+<dt><strong>ignoredEdges: IgnoredEdgeArray</strong></dt><dd><p>An <a class="reference internal" href="../../../reference/mdb/model/part_assembly/geometry.html#abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray" title="abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">IgnoredEdgeArray</span></code></a> object specifying all the ignored edges
+in the part.</p>
+</dd>
+<dt><strong>faces: FaceArray</strong></dt><dd><p>A <a class="reference internal" href="../../../reference/mdb/model/part_assembly/geometry.html#abaqus.BasicGeometry.FaceArray.FaceArray" title="abaqus.BasicGeometry.FaceArray.FaceArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">FaceArray</span></code></a> object specifying all the faces in the part.</p>
+</dd>
+<dt><strong>cells: CellArray</strong></dt><dd><p>A <a class="reference internal" href="../../../reference/mdb/model/part_assembly/geometry.html#abaqus.BasicGeometry.CellArray.CellArray" title="abaqus.BasicGeometry.CellArray.CellArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">CellArray</span></code></a> object specifying all the cells in the part.</p>
+</dd>
+<dt><strong>features: dict[str, Feature]</strong></dt><dd><p>A repository of <a class="reference internal" href="../../../reference/mdb/model/assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> objects specifying all the features in the part.</p>
+</dd>
+<dt><strong>featuresById: dict[str, Feature]</strong></dt><dd><p>A repository of <a class="reference internal" href="../../../reference/mdb/model/part_assembly/feature.html#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> objects specifying all Feature objects in the part.
+The Feature
+objects in the featuresById repository are the same as the Feature objects in the
+features’ repository. However, the key to the objects in the featuresById repository is
+an integer specifying the <strong>ID</strong>, whereas the key to the objects in the features’
+repository is a string specifying the <strong>name</strong>.
+datums: list[Datum]
+A repository of <a class="reference internal" href="../../../reference/mdb/model/part_assembly/datum.html#abaqus.Datum.Datum.Datum" title="abaqus.Datum.Datum.Datum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Datum</span></code></a> objects specifying all the datums in the part.</p>
+</dd>
+<dt><strong>elements: MeshElementArray</strong></dt><dd><p>A <a class="reference internal" href="../../../reference/mdb/model/mesh.html#abaqus.Mesh.MeshElementArray.MeshElementArray" title="abaqus.Mesh.MeshElementArray.MeshElementArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshElementArray</span></code></a> object specifying all the elements in the part.</p>
+</dd>
+<dt><strong>elemFaces: dict[str, MeshFace]</strong></dt><dd><p>A repository of <a class="reference internal" href="../../../reference/mdb/model/mesh.html#abaqus.Mesh.MeshFace.MeshFace" title="abaqus.Mesh.MeshFace.MeshFace"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshFace</span></code></a> objects specifying all the element faces in the part.
+For a
+given element and a given face index within that element, the corresponding
+<a class="reference internal" href="../../../reference/mdb/model/mesh.html#abaqus.Mesh.MeshFace.MeshFace" title="abaqus.Mesh.MeshFace.MeshFace"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshFace</span></code></a>
+object can be retrieved from the repository by using the key calculated as (i*8 + j),
+where i and j are zero-based element and face indices, respectively.</p>
+</dd>
+<dt><strong>elementFaces: MeshFaceArray</strong></dt><dd><p>A <a class="reference internal" href="../../../reference/mdb/model/mesh.html#abaqus.Mesh.MeshFaceArray.MeshFaceArray" title="abaqus.Mesh.MeshFaceArray.MeshFaceArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshFaceArray</span></code></a> object specifying all the unique element faces in the
+part.</p>
+</dd>
+<dt><strong>nodes: MeshNodeArray</strong></dt><dd><p>A <a class="reference internal" href="../../../reference/mdb/model/mesh.html#abaqus.Mesh.MeshNodeArray.MeshNodeArray" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshNodeArray</span></code></a> object specifying all the nodes in the part.</p>
+</dd>
+<dt><strong>retainedNodes: MeshNodeArray</strong></dt><dd><p>A <a class="reference internal" href="../../../reference/mdb/model/mesh.html#abaqus.Mesh.MeshNodeArray.MeshNodeArray" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshNodeArray</span></code></a> object specifying all the retained nodes in the
+substructure part.</p>
+</dd>
+<dt><strong>sets: dict[str, Set]</strong></dt><dd><p>A repository of <a class="reference internal" href="../../../reference/mdb/model/part_assembly/region.html#abaqus.Region.Set.Set" title="abaqus.Region.Set.Set"><code class="xref py py-class docutils literal notranslate"><span class="pre">Set</span></code></a> objects specifying for more information, see
+<a class="reference internal" href="../../../reference/mdb/model/part_assembly/region.html#abaqus.Region.Set.Set" title="abaqus.Region.Set.Set"><code class="xref py py-class docutils literal notranslate"><span class="pre">Set</span></code></a>.</p>
+</dd>
+<dt><strong>allSets: dict[str, Set]</strong></dt><dd><p>A repository of <a class="reference internal" href="../../../reference/mdb/model/part_assembly/region.html#abaqus.Region.Set.Set" title="abaqus.Region.Set.Set"><code class="xref py py-class docutils literal notranslate"><span class="pre">Set</span></code></a> objects specifying the contents of the <strong>all
+:py:class:`~abaqus.Region.Set.Set`s</strong> repository is the
+same as the contents of the <strong>sets</strong> repository.</p>
+</dd>
+<dt><strong>allInternalSets: dict[str, Set]</strong></dt><dd><p>A repository of <a class="reference internal" href="../../../reference/mdb/model/part_assembly/region.html#abaqus.Region.Set.Set" title="abaqus.Region.Set.Set"><code class="xref py py-class docutils literal notranslate"><span class="pre">Set</span></code></a> objects specifying picked regions.</p>
+</dd>
+<dt><strong>surfaces: dict[str, Surface]</strong></dt><dd><p>A repository of <a class="reference internal" href="../../../reference/mdb/model/part_assembly/region.html#abaqus.Region.Surface.Surface" title="abaqus.Region.Surface.Surface"><code class="xref py py-class docutils literal notranslate"><span class="pre">Surface</span></code></a> objects specifying for more information, see
+<a class="reference internal" href="../../../reference/mdb/model/part_assembly/region.html#abaqus.Region.Surface.Surface" title="abaqus.Region.Surface.Surface"><code class="xref py py-class docutils literal notranslate"><span class="pre">Surface</span></code></a>.</p>
+</dd>
+<dt><strong>allSurfaces: dict[str, Surface]</strong></dt><dd><p>A repository of <a class="reference internal" href="../../../reference/mdb/model/part_assembly/region.html#abaqus.Region.Surface.Surface" title="abaqus.Region.Surface.Surface"><code class="xref py py-class docutils literal notranslate"><span class="pre">Surface</span></code></a> objects specifying the contents of the
+<strong>allSurfaces</strong> repository
+is the same as the contents of the <strong>surfaces</strong> repository.</p>
+</dd>
+<dt><strong>allInternalSurfaces: dict[str, Surface]</strong></dt><dd><p>A repository of <a class="reference internal" href="../../../reference/mdb/model/part_assembly/region.html#abaqus.Region.Surface.Surface" title="abaqus.Region.Surface.Surface"><code class="xref py py-class docutils literal notranslate"><span class="pre">Surface</span></code></a> objects specifying picked regions.</p>
+</dd>
+<dt><strong>skins: dict[str, Skin]</strong></dt><dd><p>A repository of <a class="reference internal" href="../../../reference/mdb/model/part_assembly/region.html#abaqus.Region.Skin.Skin" title="abaqus.Region.Skin.Skin"><code class="xref py py-class docutils literal notranslate"><span class="pre">Skin</span></code></a> objects specifying the skins created on the part.</p>
+</dd>
+<dt><strong>stringers: dict[str, Stringer]</strong></dt><dd><p>A repository of <a class="reference internal" href="../../../reference/mdb/model/part_assembly/region.html#abaqus.Region.Stringer.Stringer" title="abaqus.Region.Stringer.Stringer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Stringer</span></code></a> objects specifying the stringers created on the
+part.</p>
+</dd>
+<dt><strong>referencePoints: ReferencePoints</strong></dt><dd><p>A repository of <a class="reference internal" href="../../../reference/mdb/model/part_assembly/geometry.html#abaqus.BasicGeometry.ReferencePoint.ReferencePoint" title="abaqus.BasicGeometry.ReferencePoint.ReferencePoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">ReferencePoint</span></code></a> objects.</p>
+</dd>
+<dt><strong>engineeringFeatures: EngineeringFeature</strong></dt><dd><p>An <code class="xref py py-class docutils literal notranslate"><span class="pre">EngineeringFeature</span></code> object.</p>
+</dd>
+<dt><strong>sectionAssignments: SectionAssignmentArray</strong></dt><dd><p>A <a class="reference internal" href="../../../reference/mdb/model/property.html#abaqus.Property.SectionAssignmentArray.SectionAssignmentArray" title="abaqus.Property.SectionAssignmentArray.SectionAssignmentArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">SectionAssignmentArray</span></code></a> object.</p>
+</dd>
+<dt><strong>materialOrientations: MaterialOrientationArray</strong></dt><dd><p>A <a class="reference internal" href="../../../reference/mdb/model/property.html#abaqus.Property.MaterialOrientationArray.MaterialOrientationArray" title="abaqus.Property.MaterialOrientationArray.MaterialOrientationArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MaterialOrientationArray</span></code></a> object.</p>
+</dd>
+<dt><strong>compositeLayups: dict[str, CompositeLayup]</strong></dt><dd><p>A repository of <a class="reference internal" href="../../../reference/mdb/model/property.html#abaqus.Property.CompositeLayup.CompositeLayup" title="abaqus.Property.CompositeLayup.CompositeLayup"><code class="xref py py-class docutils literal notranslate"><span class="pre">CompositeLayup</span></code></a> objects.</p>
+</dd>
+<dt><strong>elemEdges: dict[str, MeshEdge]</strong></dt><dd><p>A repository of <code class="xref py py-class docutils literal notranslate"><span class="pre">MeshEdge</span></code>.
+<code class="xref py py-class docutils literal notranslate"><span class="pre">MeshEdge`</span></code> objects specifying all the element edges in the part. For a
+given element and a given edge index on a given face within that element, the
+corresponding <code class="xref py py-class docutils literal notranslate"><span class="pre">MeshEdge</span></code>.
+<code class="xref py py-class docutils literal notranslate"><span class="pre">MeshEdge`</span></code> object can be retrieved from the repository by using the key
+calculated as (i*32 + j*4 + k), where i, j, and k are zero-based element, face, and edge
+indices, respectively.</p>
+</dd>
+<dt><strong>elementEdges: MeshEdgeArray</strong></dt><dd><p>A <a class="reference internal" href="../../../reference/mdb/model/mesh.html#abaqus.Mesh.MeshEdgeArray.MeshEdgeArray" title="abaqus.Mesh.MeshEdgeArray.MeshEdgeArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshEdgeArray</span></code></a> object specifying all the unique element edges in the
+part.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/part.html#abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh" title="abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Part2DGeomFrom2DMesh</span></code></a>(name, part, featureAngle)</p></td>
+<td><p>This method creates a geometric Part object from the outline of an existing two-dimensional orphan mesh Part object and places it in the parts repository.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/part.html#abaqus.Part.PartBase.PartBase.PartFromBooleanCut" title="abaqus.Part.PartBase.PartBase.PartFromBooleanCut"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartFromBooleanCut</span></code></a>(name, instanceToBeCut, ...)</p></td>
+<td><p>This method creates a Part in the parts repository after subtracting or cutting the geometries of a group of part instances from that of a base part instance.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/part.html#abaqus.Part.PartBase.PartBase.PartFromBooleanMerge" title="abaqus.Part.PartBase.PartBase.PartFromBooleanMerge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartFromBooleanMerge</span></code></a>(name, instances[, ...])</p></td>
+<td><p>This method creates a Part in the parts repository after merging two or more part instances.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/part.html#abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh" title="abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartFromExtrude2DMesh</span></code></a>(name, part, depth, ...)</p></td>
+<td><p>This method creates a Part object by extruding an existing two-dimensional orphan mesh Part object in the positive <strong>Z</strong>-direction and places it in the parts repository.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/part.html#abaqus.Part.PartBase.PartBase.PartFromGeometryFile" title="abaqus.Part.PartBase.PartBase.PartFromGeometryFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartFromGeometryFile</span></code></a>(name, geometryFile, ...)</p></td>
+<td><p>This method creates a Part object and places it in the parts repository.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/part.html#abaqus.Part.PartBase.PartBase.PartFromInstanceMesh" title="abaqus.Part.PartBase.PartBase.PartFromInstanceMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartFromInstanceMesh</span></code></a>(name[, partInstances, ...])</p></td>
+<td><p>This method creates a Part object containing the mesh found in the supplied PartInstance objects and places the new Part object in the parts repository.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/part.html#abaqus.Part.PartBase.PartBase.PartFromMesh" title="abaqus.Part.PartBase.PartBase.PartFromMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartFromMesh</span></code></a>(name[, copySets])</p></td>
+<td><p>This method creates a Part object containing the mesh found in the part and places the new Part object in the parts repository.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/part.html#abaqus.Part.PartBase.PartBase.PartFromMeshMirror" title="abaqus.Part.PartBase.PartBase.PartFromMeshMirror"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartFromMeshMirror</span></code></a>(name, part, point1, point2)</p></td>
+<td><p>This method creates a Part object by mirroring an existing orphan mesh Part object about a specified plane and places it in the parts repository.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/part.html#abaqus.Part.PartBase.PartBase.PartFromNodesAndElements" title="abaqus.Part.PartBase.PartBase.PartFromNodesAndElements"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartFromNodesAndElements</span></code></a>(name, ...[, twist])</p></td>
+<td><p>This method creates a Part object from nodes and elements and places it in the parts repository.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/part.html#abaqus.Part.PartBase.PartBase.PartFromOdb" title="abaqus.Part.PartBase.PartBase.PartFromOdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartFromOdb</span></code></a>(name, odb[, fileName, instance, ...])</p></td>
+<td><p>This method creates an orphan mesh Part object by reading an output database.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/part.html#abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane" title="abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartFromSection3DMeshByPlane</span></code></a>(name, part, ...)</p></td>
+<td><p>This method creates a Part object by cutting an existing three-dimensional orphan mesh Part object by a plane and places it in the parts repository.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/part.html#abaqus.Part.PartBase.PartBase.PartFromSubstructure" title="abaqus.Part.PartBase.PartBase.PartFromSubstructure"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartFromSubstructure</span></code></a>(name, substructureFile, ...)</p></td>
+<td><p>This method creates a substructure Part object by reading a substructure sim file and places it in the parts repository.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">Part2DGeomFrom2DMesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">part</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../../../reference/mdb/model/part.html#abaqus.Part.PartBase.PartBase" title="abaqus.Part.PartBase.PartBase"><span class="pre">PartBase</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">featureAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">splineCurvatureLimit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">90</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">twist</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Part/PartBase.py#L915-L967"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>This method creates a geometric Part object from the outline of an existing
+two-dimensional orphan mesh Part object and places it in the parts repository. If the
+Part2DGeomFrom2DMesh method cannot create a valid two-dimensional shell section from the
+two-dimensional mesh, the method fails and creates an empty geometry part with a failed
+base shell feature.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>part</strong></dt><dd><p>A Part object specifying an existing two-dimensional orphan mesh Part object.</p>
+</dd>
+<dt><strong>featureAngle</strong></dt><dd><p>A Float specifying the angle (in degrees) between line segments that triggers a break in
+the geometry.</p>
+</dd>
+<dt><strong>splineCurvatureLimit</strong></dt><dd><p>A Float specifying the traversal angle in degrees of the spline that triggers a break in
+the geometry. The default value is 90.</p>
+</dd>
+<dt><strong>twist</strong></dt><dd><p>A Boolean specifying whether to include a twist DEGREE OF FREEDOM in the part (only
+available when <a href="#id1"><span class="problematic" id="id2">**</span></a>dimensionality**=AXISYMMETRIC and <a href="#id3"><span class="problematic" id="id4">**</span></a>type**=DEFORMABLE_BODY). The default
+value is OFF.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl>
+<dt>part: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Part</span></code></dt><dd><p>A Part object
+If the specified part is not an orphan mesh part:</p>
+<blockquote>
+<div><p>Specified part must be an orphan mesh.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>If the Part2DGeomFrom2DMesh method cannot create a valid two-dimensional shell section from the two-dimensional mesh:</dt><dd><p>Planar shell feature failed</p>
+</dd>
+<dt>If the specified part is not two-dimensional:</dt><dd><p>Cannot create a geometry from a 3D part.</p>
+</dd>
+<dt>If the specified part is a rigid body:</dt><dd><p>Cannot create a geometry from a rigid body.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Part</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">PartFromBooleanCut</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instanceToBeCut</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cuttingInstances</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">abaqus.Part.PartBase.PartInstance</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Part/PartBase.py#L361-L390"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>This method creates a Part in the parts repository after subtracting or cutting the
+geometries of a group of part instances from that of a base part instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>instanceToBeCut</strong></dt><dd><p>A PartInstance specifying the base instance from which to cut other instances.</p>
+</dd>
+<dt><strong>cuttingInstances</strong></dt><dd><p>A sequence of PartInstance objects specifying the instances with which to cut the base
+instance.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>part: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Part</span></code></dt><dd><p>A Part object</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Part</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">PartFromBooleanMerge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instances</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">abaqus.Part.PartBase.PartInstance</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepIntersections</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mergeNodes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOUNDARY_ONLY'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodeMergingTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">removeDuplicateElements</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">domain</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'GEOMETRY'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Part/PartBase.py#L392-L444"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>This method creates a Part in the parts repository after merging two or more part
+instances. The part instances can be either Abaqus native parts or orphan mesh parts,
+but they cannot be a combination of both.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>instances</strong></dt><dd><p>A sequence of PartInstance objects specifying the part instances to merge.</p>
+</dd>
+<dt><strong>keepIntersections</strong></dt><dd><p>A Boolean specifying whether the boundary intersections of Abaqus native part instances
+should be retained after the merge operation. The default value is False.</p>
+</dd>
+<dt><strong>mergeNodes</strong></dt><dd><p>A SymbolicConstant specifying whether the nodes of orphan mesh part instances should be
+retained after the merge operation. Possible values are BOUNDARY_ONLY, ALL, or NONE. The
+default value is BOUNDARY_ONLY.</p>
+</dd>
+<dt><strong>nodeMergingTolerance</strong></dt><dd><p>A Float specifying the maximum distance between nodes of orphan mesh part instances that
+will be merged and replaced with a single new node. The location of the new node is the
+average position of the deleted nodes. The default value is 10–6.</p>
+</dd>
+<dt><strong>removeDuplicateElements</strong></dt><dd><p>A Boolean specifying whether elements with the same connectivity after the merge will
+merged into a single element. The default value is ON.</p>
+</dd>
+<dt><strong>domain</strong></dt><dd><p>A SymbolicConstant specifying whether the part instances being merged are geometric
+instances or mesh instances. Possible values are GEOMETRY, MESH or BOTH. The default
+value is GEOMETRY.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>part: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Part</span></code></dt><dd><p>A Part object</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Part</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">PartFromExtrude2DMesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">part</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../../../reference/mdb/model/part.html#abaqus.Part.PartBase.PartBase" title="abaqus.Part.PartBase.PartBase"><span class="pre">PartBase</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">depth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementSize</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Part/PartBase.py#L446-L482"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>This method creates a Part object by extruding an existing two-dimensional orphan mesh
+Part object in the positive <strong>Z</strong>-direction and places it in the parts repository.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>part</strong></dt><dd><p>A Part object specifying an existing two-dimensional orphan mesh Part object.</p>
+</dd>
+<dt><strong>depth</strong></dt><dd><p>A Float specifying the total extrusion distance.</p>
+</dd>
+<dt><strong>elementSize</strong></dt><dd><p>A Float specifying an approximate element length in the extruded direction.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl>
+<dt>part: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Part</span></code></dt><dd><p>A Part object
+- If the specified part is not an orphan mesh part:</p>
+<blockquote>
+<div><p>Cannot extrude a geometric part.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>If the specified part is not two-dimensional:
+Cannot extrude a 3D part.</p></li>
+<li><p>If the specified part is a rigid body:
+Cannot change dimension of a rigid body.</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Part</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">PartFromGeometryFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">geometryFile</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../../../reference/mdb/model/part.html#abaqus.Part.AcisFile.AcisFile" title="abaqus.Part.AcisFile.AcisFile"><span class="pre">AcisFile</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">dimensionality</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bodyNum</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">combine</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">booleanSolids</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">retainBoundary</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">usePartNameFromFile</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stitchTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">twist</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">convertToAnalytical</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">convertToPrecise</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Part/PartBase.py#L484-L575"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>This method creates a Part object and places it in the parts repository.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>geometryFile</strong></dt><dd><p>An AcisFile object specifying a file containing geometry.</p>
+</dd>
+<dt><strong>dimensionality</strong></dt><dd><p>A SymbolicConstant specifying the dimensionality of the part. Possible values are
+THREE_D, TWO_D_PLANAR, and AXISYMMETRIC.</p>
+</dd>
+<dt><strong>type</strong></dt><dd><p>A SymbolicConstant specifying the type of the part. Possible values are DEFORMABLE_BODY,
+EULERIAN, DISCRETE_RIGID_SURFACE, and ANALYTIC_RIGID_SURFACE.</p>
+</dd>
+<dt><strong>bodyNum</strong></dt><dd><p>An Int specifying the desired body to be selected from an ACIS object containing a list
+of <strong>N</strong> ACIS bodies. Possible values are 1 ≤≤ <strong>bodyNum</strong> ≤≤ <strong>N</strong>. The default value is 1.</p>
+</dd>
+<dt><strong>combine</strong></dt><dd><p>A Boolean specifying weather to create a single part by combining all the bodies in the
+ACIS object. This argument is ignored if <strong>bodyNum</strong> is specified. The default value is
+False.</p>
+</dd>
+<dt><strong>booleanSolids</strong></dt><dd><p>A Boolean specifying whether the solids should be boolean while combining all the
+bodies.The default value is FALSE.</p>
+</dd>
+<dt><strong>retainBoundary</strong></dt><dd><p>A Boolean specifying whether the intersecting boundaries should be retained while
+boolean the solids.The default value is FALSE.</p>
+</dd>
+<dt><strong>usePartNameFromFile</strong></dt><dd><p>A Boolean specifying whether the part names specified in a STEP file should be used as
+the names in the Abaqus model database. If this option is TRUE, the part names in the
+STEP file will be used; if FALSE, each imported part will be named using the text of the
+<strong>name</strong> argument followed by a number. This functionality is available only for import
+from STEP files; for import from all other types of files this option should be FALSE.</p>
+</dd>
+<dt><strong>stitchTolerance</strong></dt><dd><p>A Float indicating the maximum gap to be stitched. The value should be smaller than the
+minimum feature size and bigger than the maximum gap expected to be stitched in the
+model. Otherwise this command may remove small (sliver) edges that are smaller than the
+tolerance. The default value is 1.0</p>
+</dd>
+<dt><strong>twist</strong></dt><dd><p>A Boolean specifying whether to include a twist DEGREE OF FREEDOM in the part (only
+available when <a href="#id5"><span class="problematic" id="id6">**</span></a>dimensionality**=AXISYMMETRIC and <a href="#id7"><span class="problematic" id="id8">**</span></a>type**=DEFORMABLE_BODY). The default
+value is OFF.</p>
+</dd>
+<dt><strong>scale</strong></dt><dd><p>A Float specifying the scaling factor to apply to the imported geometric entities. The
+default value is 1.0.</p>
+</dd>
+<dt><strong>convertToAnalytical</strong></dt><dd><p>An Int specifying whether to convert to analytical entities. Possible values are 0 or 1.
+The default value is 0. If <a href="#id9"><span class="problematic" id="id10">**</span></a>convertToAnalytical**=1, all the numerical entities, such as
+splines, are converted to analytical entities, such as arcs and lines, during the repair
+phase of the command.</p>
+</dd>
+<dt><strong>convertToPrecise</strong></dt><dd><p>An Int specifying whether to convert to precise geometry. Possible value are 0 or 1. The
+default value is 0. If <a href="#id11"><span class="problematic" id="id12">**</span></a>convertToPrecise**=1, the application will attempt to re-evaluate
+the tolerant entities to be more precise.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl>
+<dt>part: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Part</span></code></dt><dd><p>A Part object
+- If the ACIS file is corrupt:</p>
+<blockquote>
+<div><p>PartError: the file is corrupt</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>If the dimensionality does not correspond to what is found in the ACIS file:
+PartError: dimensionality does not match the contents of the file</p></li>
+<li><p>If the type does not correspond to what is found in the ACIS file:
+PartError: type does not match the contents of the file</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Part</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">PartFromInstanceMesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">partInstances</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">abaqus.Part.PartBase.PartInstance</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyPartSets</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyAssemblySets</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Part/PartBase.py#L577-L623"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>This method creates a Part object containing the mesh found in the supplied PartInstance
+objects and places the new Part object in the parts repository.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>partInstances</strong></dt><dd><p>A sequence of PartInstance objects to be used in the creation of the new mesh part. If
+the <strong>partInstances</strong> argument is omitted, the new Part object contains the mesh of all
+the part instances in the assembly.</p>
+</dd>
+<dt><strong>copyPartSets</strong></dt><dd><p>A Boolean specifying whether to copy sets, surfaces, and attributes from the base part
+or parts of the specified part instances to the new part. The default is False.</p>
+</dd>
+<dt><strong>copyAssemblySets</strong></dt><dd><p>A Boolean specifying whether to copy assembly-level sets that reference entities of the
+specified part instances to the new part. The default is False.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>part: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Part</span></code></dt><dd><p>A Part object</p>
+<ul class="simple">
+<li><p>If the analysis type (deformable or rigid) is not consistent among the supplied part
+instances:
+The selected part instances do not have a consistent analysis type.</p></li>
+<li><p>If the assembly does not contain a mesh:
+The current assembly does not contain a mesh for a mesh part.</p></li>
+<li><p>If the specified part instances do not contain a mesh:
+The selected part instances do not have a mesh for a mesh part.</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Part</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">PartFromMesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copySets</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Part/PartBase.py#L625-L652"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>This method creates a Part object containing the mesh found in the part and places the
+new Part object in the parts repository.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>copySets</strong></dt><dd><p>A Boolean specifying whether to copy sets, surfaces, and attributes to the new part. The
+default is False.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl>
+<dt>part: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Part</span></code></dt><dd><p>A Part object
+- If the part does not contain a mesh:</p>
+<blockquote>
+<div><p>The current part does not contain a mesh for a mesh part.</p>
+</div></blockquote>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Part</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">PartFromMeshMirror</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">part</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../../../reference/mdb/model/part.html#abaqus.Part.PartBase.PartBase" title="abaqus.Part.PartBase.PartBase"><span class="pre">PartBase</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">point1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Part/PartBase.py#L654-L698"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>This method creates a Part object by mirroring an existing orphan mesh Part object about
+a specified plane and places it in the parts repository. The result is a union of the
+original and the mirrored copy. Contrast the PartFromMeshMirror method with the
+<strong>mirrorPlane</strong> argument of the Part copy constructor. The <strong>mirrorPlane</strong> argument creates
+only the second half of the part but does not unite the two halves.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>part</strong></dt><dd><p>A Part object specifying an existing orphan mesh part.</p>
+</dd>
+<dt><strong>point1</strong></dt><dd><p>A sequence of three Floats specifying a point on the mirror plane. This point is the
+local origin in the local system of the plane.</p>
+</dd>
+<dt><strong>point2</strong></dt><dd><p>A sequence of three Floats specifying a point in the direction of the normal to the
+mirror plane. This point must not be coincident with <strong>point1</strong>.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl>
+<dt>part: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Part</span></code></dt><dd><p>A Part object
+- If the specified part is not an orphan mesh part:</p>
+<blockquote>
+<div><p>Cannot mirror a geometric part.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>If the specified part is a rigid body:
+Cannot mirror a rigid body.</p></li>
+<li><p>If <strong>point1</strong> and <strong>point2</strong> are coincident:
+Mirror plane director has zero length.</p></li>
+<li><p>If the specified part is two-dimensional and the plane is not parallel to the</p></li>
+</ul>
+<dl class="simple">
+<dt><strong>Z</strong>-axis:</dt><dd><p>Mirror plane must be parallel to Z axis for 2D parts</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Part</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">PartFromNodesAndElements</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dimensionality</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elements</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">twist</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Part/PartBase.py#L700-L749"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>This method creates a Part object from nodes and elements and places it in the parts
+repository.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>dimensionality</strong></dt><dd><p>A SymbolicConstant specifying the dimensionality of the part. Possible values are
+THREE_D, TWO_D_PLANAR, and AXISYMMETRIC.</p>
+</dd>
+<dt><strong>type</strong></dt><dd><p>A SymbolicConstant specifying the type of the part. Possible values are DEFORMABLE_BODY,
+EULERIAN, DISCRETE_RIGID_SURFACE, and ANALYTIC_RIGID_SURFACE.</p>
+</dd>
+<dt><strong>nodes</strong></dt><dd><p>A sequence of (<em>nodeLabels</em>, <strong>nodeCoords</strong>) specifying the nodes of the mesh.
+<strong>nodeLabels</strong> is a sequence of Ints specifying the node labels, and <strong>nodeCoords</strong> is a
+sequence of sequences of three Floats specifying the nodal coordinates.</p>
+</dd>
+<dt><strong>elements</strong></dt><dd><p>A sequence of sequences of(<em>meshType</em>, <strong>elementLabels</strong>, <strong>elementConns</strong>) specifying the
+elements of the mesh. <strong>meshType</strong> is a String specifying the element type.
+<strong>elementlabels</strong> is a sequence of Ints specifying the element labels. <strong>elementConns</strong> is a
+sequence of sequences of node labels specifying the element connectivity.</p>
+</dd>
+<dt><strong>twist</strong></dt><dd><p>A boolean specifying whether the part is defined with twist. This option has meaning
+only when <a href="#id13"><span class="problematic" id="id14">**</span></a>dimensionality**=AXISYMMETRIC. Possible values are ON and OFF. The default
+value is OFF.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>part: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Part</span></code></dt><dd><p>A Part object</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Part</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">PartFromOdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odb</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementSet</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'UNDEFORMED'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">twist</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Part/PartBase.py#L751-L827"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>This method creates an orphan mesh Part object by reading an output database. The new
+part is placed in the parts repository.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>odb</strong></dt><dd><p>An output database object.</p>
+</dd>
+<dt><strong>fileName</strong></dt><dd><p>A String specifying the name of the output database file from which to create the part.
+The default value is an empty string.</p>
+</dd>
+<dt><strong>instance</strong></dt><dd><p>A String specifying the part instance in the output database from which to create the
+part. If no instance name is specified, Abaqus creates an orphan mesh part from the
+first part instance in the output database.</p>
+</dd>
+<dt><strong>elementSet</strong></dt><dd><p>A String specifying an element set defined on the output database. Only elements from
+this set will be imported. The default is to import all element sets.</p>
+</dd>
+<dt><strong>shape</strong></dt><dd><p>A SymbolicConstant specifying the configuration state. Possible values are UNDEFORMED
+and DEFORMED. The default value is UNDEFORMED.</p>
+</dd>
+<dt><strong>step</strong></dt><dd><p>An Int specifying the step number for reading deformed coordinates. 0≤step≤N−10≤step≤N-1
+where NN is the number of available steps. The default value is the last available step.
+You should specify the <strong>step</strong> argument only when <a href="#id15"><span class="problematic" id="id16">**</span></a>shape**=DEFORMED.</p>
+</dd>
+<dt><strong>frame</strong></dt><dd><p>An Int specifying the frame number for reading deformed coordinates.
+0≤frame≤N−10≤frame≤N-1 where NN is the number of available frames. The default value is
+the last available frame. You should specify the <strong>frame</strong> argument only when
+<a href="#id17"><span class="problematic" id="id18">**</span></a>shape**=DEFORMED.</p>
+</dd>
+<dt><strong>twist</strong></dt><dd><p>A Boolean specifying whether to include a twist DEGREE OF FREEDOM in the part (only
+available when <a href="#id19"><span class="problematic" id="id20">**</span></a>dimensionality**=AXISYMMETRIC and <a href="#id21"><span class="problematic" id="id22">**</span></a>type**=DEFORMABLE_BODY). The default
+value is OFF.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl>
+<dt>part: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Part</span></code></dt><dd><p>A Part object
+- If the output database contains elements of more than one dimensionality or type:</p>
+<blockquote>
+<div><p>File contains both axisymmetric and nonaxisymmetric elements.File contains both 2D and</p>
+</div></blockquote>
+<p>3D elements.File contains both rigid and deformable elements.
+- If more than one part is found on the output database:</p>
+<blockquote>
+<div><p>PartError: importing of more than one part is not currently supported</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>If the output database does not contain any valid results for the specified step:
+Error. File does not contain any valid frames.</p></li>
+<li><p>If the specified step and frame do not contain any displacements:
+Error. Specified frame does not contain nodal displacements.</p></li>
+<li><p>If the specified element set is not found on the output database:
+Error. Specified element set is not defined in the ODB.</p></li>
+<li><p>If the step number is invalid:
+OdiError: Invalid step index: i. Available step indices: 0 - j.</p></li>
+<li><p>If the frame number is invalid:
+OdiError: Invalid frame index: i. Available frame indices: 0 - j.</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Part</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">PartFromSection3DMeshByPlane</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">part</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../../../reference/mdb/model/part.html#abaqus.Part.PartBase.PartBase" title="abaqus.Part.PartBase.PartBase"><span class="pre">PartBase</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">point1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Part/PartBase.py#L829-L877"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>This method creates a Part object by cutting an existing three-dimensional orphan mesh
+Part object by a plane and places it in the parts repository. This method is valid only
+for orphan mesh parts composed of 8-node brick elements.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>part</strong></dt><dd><p>A Part object specifying an existing three-dimensional orphan mesh part.</p>
+</dd>
+<dt><strong>point1</strong></dt><dd><p>A Sequence of three Floats specifying a point on the cutting plane. This point is the
+local origin in the local system of the plane.</p>
+</dd>
+<dt><strong>point2</strong></dt><dd><p>A Sequence of three Floats specifying a point in the direction of the normal to the
+cutting plane. This point must not be coincident with <strong>point1</strong>.</p>
+</dd>
+<dt><strong>point3</strong></dt><dd><p>A sequence of three Floats specifying the direction of the local 1-axis in the local
+system of the plane. This point must not project onto <strong>point1</strong>.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl>
+<dt>part: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Part</span></code></dt><dd><p>A Part object
+- If the specified part is not an orphan mesh part:</p>
+<blockquote>
+<div><p>Cannot reduce dimension of a geometric part.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>If the specified part is not three-dimensional:
+Cannot reduce dimension of a 2D part.</p></li>
+<li><p>If the specified part is a rigid body:
+Cannot change dimension of a rigid body.</p></li>
+<li><p>If <strong>point1</strong> and <strong>point2</strong> are coincident:
+Cutting plane director has zero length.</p></li>
+<li><p>If <strong>point3</strong> projects onto <strong>point1</strong>:
+Local axis point projects to origin.</p></li>
+<li><p>If no elements are cut by the specified plane:
+Cannot reduce part dimension.</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Part</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">PartFromSubstructure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">substructureFile</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odbFile</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Part/PartBase.py#L879-L913"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>This method creates a substructure Part object by reading a substructure sim file and
+places it in the parts repository.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>substructureFile</strong></dt><dd><p>A substructure sim file.</p>
+</dd>
+<dt><strong>odbFile</strong></dt><dd><p>The output database file corresponding to the substructure sim file.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl>
+<dt>part: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Part</span></code></dt><dd><p>A Part object
+- If the specified part is not a substructure:</p>
+<blockquote>
+<div><p>File specified does not contain a substructure.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>If the specified part already exists:
+A part with the same name already exists.</p></li>
+<li><p>If the substructure cannot be imported:
+The output database is missing nodes and elements.Nested substructures are not</p></li>
+</ul>
+<p>supported.The substructure sim file was generated using a version that is different from
+the current version.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Part</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">PartFromSubstructure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">substructureFile</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odbFile</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Part/PartBase.py#L879-L913"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>This method creates a substructure Part object by reading a substructure sim file and
+places it in the parts repository.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>substructureFile</strong></dt><dd><p>A substructure sim file.</p>
+</dd>
+<dt><strong>odbFile</strong></dt><dd><p>The output database file corresponding to the substructure sim file.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl>
+<dt>part: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Part</span></code></dt><dd><p>A Part object
+- If the specified part is not a substructure:</p>
+<blockquote>
+<div><p>File specified does not contain a substructure.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>If the specified part already exists:
+A part with the same name already exists.</p></li>
+<li><p>If the substructure cannot be imported:
+The output database is missing nodes and elements.Nested substructures are not</p></li>
+</ul>
+<p>supported.The substructure sim file was generated using a version that is different from
+the current version.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Part</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="predefined.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Predefined Field</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="output.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Output Request</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, WANG Hailin
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Part</a><ul>
+<li><a class="reference internal" href="#create-parts">Create parts</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/scripts/furo.js"></script>
+    </body>
+</html>

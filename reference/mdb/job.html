@@ -1,0 +1,1352 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Annotation" href="annotation.html" /><link rel="prev" title="Step Miscellaneous" href="model/step/step_miscellaneous.html" />
+
+    <meta name="generator" content="sphinx-4.5.0, furo 2022.06.04.1"/>
+        <title>Job - AbqPy 2016a0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">AbqPy 2016a0 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  
+  
+  <span class="sidebar-brand-text">AbqPy 2016a0 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../summary.html">API Summary</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../summary/header.html">Header of the Python script</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../summary/mdb.html">Abaqus Model Database</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../summary/mdb/model.html">Abaqus Model</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/adaptivity.html">Adaptivity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/amplitude.html">Amplitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/assembly.html">Assembly</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/bc.html">Boundary Condition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/calibration.html">Calibration of Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/constraint.html">Constraint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/field.html">Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/filter.html">Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/interaction.html">Interaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/load.html">Load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/material.html">Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/optimization.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/output.html">Output Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/part.html">Part</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/predefined.html">Predefined Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/profile.html">Beam Section Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/property.html">Property</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../summary/mdb/model/section.html">Section</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../summary/mdb/model/section/connector.html">Connector</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/sketcher.html">Sketcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../summary/mdb/model/step.html">Step</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../summary/mdb/model/step/step_miscellaneous.html">Step Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../summary/mdb/job.html">Abaqus Job</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../summary/odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../summary/session.html">Abaqus Session</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../../references.html">API Reference</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../mdb.html">Abaqus Model Database</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 has-children"><a class="reference internal" href="model.html">Model</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="model/adaptivity.html">Adaptivity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/amplitude.html">Amplitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/bc.html">Boundary Condition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/calibration.html">Calibration of Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/constraint.html">Constraint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/field.html">Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/filter.html">Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/interaction.html">Interaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/load.html">Load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/material.html">Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/mesh.html">Mesh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/optimization.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/output.html">Output Request</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="model/part_assembly.html">Part and Assembly</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="model/part.html">Part</a></li>
+<li class="toctree-l5"><a class="reference internal" href="model/assembly.html">Assembly</a></li>
+<li class="toctree-l5"><a class="reference internal" href="model/part_assembly/datum.html">Datum</a></li>
+<li class="toctree-l5"><a class="reference internal" href="model/part_assembly/engineering.html">Engineering Feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="model/part_assembly/feature.html">Feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="model/part_assembly/geometry.html">Basic Geometry</a></li>
+<li class="toctree-l5"><a class="reference internal" href="model/part_assembly/region.html">Region</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="model/predefined.html">Predefined Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/profile.html">Beam Section Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model/property.html">Property</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="model/section.html">Section</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="model/section/connector.html">Connector</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="model/sketcher.html">Sketcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="model/step.html">Step</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="model/step/step_miscellaneous.html">Step Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Job</a></li>
+<li class="toctree-l3"><a class="reference internal" href="annotation.html">Annotation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="edit_mesh.html">Edit Mesh</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../session.html">Abaqus Session</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../session/animation.html">Animation Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/canvas.html">Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/display_options.html">Display Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/display.html">Display Group</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/field_report.html">FieldReport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/odb_display.html">Odb Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/path.html">Path and Probe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/plot_options.html">Plot Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/print.html">Print</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../session/xy.html">XY</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../kernel.html">Kernel</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/cae_display_preferences.html">Abaqus CAE Display Preferences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/input.html">Input File Parser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/kernel.html">Custom Kernel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/messaging.html">Messaging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/table_collection.html">Table Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/text_representation.html">Text Representation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kernel/utility.html">Utility and View</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="job">
+<h1>Job<a class="headerlink" href="#job" title="Permalink to this headline">#</a></h1>
+<p>The Job object is the abstract base type for other Job objects. The Job object has no explicit constructor. The methods and members of the Job object are common to all objects derived from Job.</p>
+<section id="create-jobs">
+<h2>Create jobs<a class="headerlink" href="#create-jobs" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="create-queues-in-session">
+<h2>Create queues in Session<a class="headerlink" href="#create-queues-in-session" title="Permalink to this headline">#</a></h2>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Job.JobSession.JobSession.Queue">
+<span class="sig-prename descclassname"><span class="pre">JobSession.</span></span><span class="sig-name descname"><span class="pre">Queue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queueName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hostName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileCopy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">driver</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remotePlatform</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Linux'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filesToCopy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ALL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deleteAfterCopy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Job.Queue.Queue" title="abaqus.Job.Queue.Queue"><span class="pre">Queue</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/JobSession.py#L7-L84"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobSession.JobSession.Queue" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a Queue object.
+Note:Remote queues are available only on Linux platforms.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the name of the new Queue object.</p>
+</dd>
+<dt><strong>queueName</strong></dt><dd><p>A String specifying the name of the remote analysis queue.</p>
+</dd>
+<dt><strong>hostName</strong></dt><dd><p>A String specifying the name of the remote host. The default value is an empty string.</p>
+</dd>
+<dt><strong>fileCopy</strong></dt><dd><p>A Boolean specifying if the results files are to be copied from the remote machine to
+the local machine. The default value is ON.</p>
+</dd>
+<dt><strong>directory</strong></dt><dd><p>A String specifying the remote location for the execution of the simulation. The default
+value is an empty string.</p>
+</dd>
+<dt><strong>driver</strong></dt><dd><p>A String specifying the designation of the remote driver. The default value is “abaqus”.</p>
+</dd>
+<dt><strong>remotePlatform</strong></dt><dd><p>A SymbolicConstant specifying the type of operating system on the remote machine. The
+default value is Linux.</p>
+</dd>
+<dt><strong>filesToCopy</strong></dt><dd><p>A list of Strings specifying the files to be copied from the remote location to the
+local machine, or ALL. Strings specified in a list are the extensions of the job files
+that will be copied, such as (‘log’, ‘dat’, ‘msg’, ‘sta’, ‘odb’). The default value is
+ALL.</p>
+</dd>
+<dt><strong>deleteAfterCopy</strong></dt><dd><p>A Boolean specifying whether remote files are to be deleted after they are copied to the
+local machine. The default value is OFF.</p>
+</dd>
+<dt><strong>description</strong></dt><dd><p>A String specifying a description of the queue. The default value is an empty string.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Job.JobSession.JobSession.Queue" title="abaqus.Job.JobSession.JobSession.Queue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Queue</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><ul class="simple">
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>fileCopy**=ON :obj:`and` **hostName</strong> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> empty:</dt><dd><p>Remote queue host name is not set.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>fileCopy**=ON :obj:`and` **directory</strong> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> empty:</dt><dd><p>Directory in which to run the job on the remote computer is not set.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Queue</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="features-of-the-job">
+<h2>Features of the job<a class="headerlink" href="#features-of-the-job" title="Permalink to this headline">#</a></h2>
+<section id="coexecution">
+<h3>Coexecution<a class="headerlink" href="#coexecution" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Coexecution</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/Coexecution.py#L5-L185"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution" title="Permalink to this definition">#</a></dt>
+<dd><p>The Coexecution object contains a set of jobs as associated parameters to define a
+co-simulation analysis.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">job</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">coexecutions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The corresponding analysis keywords are:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>HEADING</dt><dd><ul>
+<li><p>PREPRINT</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name: str</strong></dt><dd><p>A String specifying the name of the new job. The name must be a valid Abaqus/<code class="xref py py-class docutils literal notranslate"><span class="pre">CAE</span></code> object
+name.</p>
+</dd>
+<dt><strong>type: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the type of analysis to execute for the co-execution.
+Possible values are ANALYSIS, SYNTAXCHECK, RECOVER, and RESTART. The default value is
+ANALYSIS.</p>
+</dd>
+<dt><strong>mainAnalysisProduct: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the analysis product type of the main model for the
+co-execution. The default value is ABAQUS.</p>
+</dd>
+<dt><strong>waitHours: int</strong></dt><dd><p>An Int specifying the number of hours to wait before submitting the co-execution. This
+argument is ignored if <strong>queue</strong> is set. The default value is 0.This argument works in
+conjunction with <strong>waitMinutes</strong>. <strong>waitHours</strong> and <strong>atTime</strong> are mutually exclusive.</p>
+</dd>
+<dt><strong>waitMinutes: int</strong></dt><dd><p>An Int specifying the number of minutes to wait before submitting the job. This argument
+is ignored if <strong>queue</strong> is set. The default value is 0.This argument works in conjunction
+with <strong>waitHours</strong>. <strong>waitMinutes</strong> and <strong>atTime</strong> are mutually exclusive.</p>
+</dd>
+<dt><strong>status: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the status of the co-execution. Possible values are
+SUBMITTED, RUNNING, ABORTED, TERMINATED, COMPLETED, CHECK_SUBMITTED, CHECK_RUNNING, and
+CHECK_COMPLETED.If the <strong>message</strong> member of all the jobs are empty, <strong>status</strong> is set to
+NONE.</p>
+</dd>
+<dt><strong>queue: str</strong></dt><dd><p>A String specifying the name of the queue to which to submit the co-execution. The
+default value is an empty string.Note:You can use the <strong>queue</strong> argument when creating a
+<a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution" title="abaqus.Job.Coexecution.Coexecution"><code class="xref py py-class docutils literal notranslate"><span class="pre">Coexecution</span></code></a> object on a Windows workstation; however, remote queues are available only
+on Linux platforms.</p>
+</dd>
+<dt><strong>atTime: str</strong></dt><dd><p>A String specifying the time at which to submit the co-execution. If <strong>queue</strong> is empty,
+the string syntax must be valid for the Linux <cite>at</cite> command. If <strong>queue</strong> is set, the
+syntax must be valid according to the system administrator. The default value is an
+empty string.Note:You can use the <strong>atTime</strong> argument when creating a <a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution" title="abaqus.Job.Coexecution.Coexecution"><code class="xref py py-class docutils literal notranslate"><span class="pre">Coexecution</span></code></a> object
+on a Windows workstation; however, the <cite>at</cite> command is available only on Linux
+platforms.</p>
+</dd>
+<dt><strong>jobs: dict[str, Job]</strong></dt><dd><p>A repository of <a class="reference internal" href="#abaqus.Job.Job.Job" title="abaqus.Job.Job.Job"><code class="xref py py-class docutils literal notranslate"><span class="pre">Job</span></code></a> objects specifying the jobs that comprise this co-execution.</p>
+</dd>
+<dt><strong>secondaryModels: tuple</strong></dt><dd><p>A tuple of Strings specifying the names of the secondary models for the co-execution.</p>
+</dd>
+<dt><strong>secondaryAnalysisProducts: SymbolicConstant</strong></dt><dd><p>A tuple of SymbolicConstants specifying the analysis product types of the secondary
+models for the co-execution. The default value is an empty sequence.</p>
+</dd>
+<dt><strong>mainModel: str</strong></dt><dd><p>A String specifying the name of the main model for the co-execution.</p>
+</dd>
+<dt><strong>licenseType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the type of license type being used in case of DSLS
+SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default value
+is DEFAULT.If the license model is not DSLS SimUnit then the licenseType is not
+available.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.kill" title="abaqus.Job.Coexecution.Coexecution.kill"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kill</span></code></a>()</p></td>
+<td><p>This method kills the analysis of a co-execution.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.submit" title="abaqus.Job.Coexecution.Coexecution.submit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">submit</span></code></a>([consistencyChecking, datacheckJob, ...])</p></td>
+<td><p>This method submits a co-execution for analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.waitForCompletion" title="abaqus.Job.Coexecution.Coexecution.waitForCompletion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitForCompletion</span></code></a>()</p></td>
+<td><p>This method interrupts the execution of the script until the end of all the analyses.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Coexecution.Coexecution.writeInput" title="abaqus.Job.Coexecution.Coexecution.writeInput"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeInput</span></code></a>([consistencyChecking])</p></td>
+<td><p>This method writes an input file for each analysis in the co-execution.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.kill">
+<span class="sig-name descname"><span class="pre">kill</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/Coexecution.py#L138-L140"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.kill" title="Permalink to this definition">#</a></dt>
+<dd><p>This method kills the analysis of a co-execution.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.submit">
+<span class="sig-name descname"><span class="pre">submit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">consistencyChecking</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datacheckJob</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">continueJob</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/Coexecution.py#L142-L165"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.submit" title="Permalink to this definition">#</a></dt>
+<dd><p>This method submits a co-execution for analysis.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>consistencyChecking</strong></dt><dd><p>A Boolean specifying whether to perform consistency checking for the individual jobs.
+The default value is ON. It is not recommended to turn the consistency checking off
+unless you are absolutely sure the models are all consistent.</p>
+</dd>
+<dt><strong>datacheckJob</strong></dt><dd><p>A Boolean specifying whether to run the co-execution as a datacheck analysis. The
+default value is False. The <strong>datacheckJob</strong> and <strong>continueJob</strong> arguments cannot both be
+True.</p>
+</dd>
+<dt><strong>continueJob</strong></dt><dd><p>A Boolean specifying whether to run the co-execution as a continuation analysis. The
+default value is False. The <strong>datacheckJob</strong> and <strong>continueJob</strong> arguments cannot both be
+True.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.waitForCompletion">
+<span class="sig-name descname"><span class="pre">waitForCompletion</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/Coexecution.py#L179-L185"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.waitForCompletion" title="Permalink to this definition">#</a></dt>
+<dd><p>This method interrupts the execution of the script until the end of all the analyses. If
+you call the waitForCompletion method and the <strong>status</strong> member is neither SUBMITTED nor
+RUNNING, Abaqus assumes the analysis has either completed or aborted and returns
+immediately.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.writeInput">
+<span class="sig-name descname"><span class="pre">writeInput</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">consistencyChecking</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/Coexecution.py#L167-L177"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.writeInput" title="Permalink to this definition">#</a></dt>
+<dd><p>This method writes an input file for each analysis in the co-execution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>consistencyChecking</strong></dt><dd><p>A Boolean specifying whether to perform consistency checking for the individual jobs.
+The default value is ON. It is not recommended to turn the consistency checking off
+unless you are absolutely sure the models are all consistent.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="id1">
+<h3>Job<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Job</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/Job.py#L5-L264"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job" title="Permalink to this definition">#</a></dt>
+<dd><p>The Job object is the abstract base type for other Job objects. The Job object has no
+explicit constructor. The methods and members of the Job object are common to all
+objects derived from Job.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">job</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">coexecutions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">jobs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">jobs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The corresponding analysis keywords are:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>HEADING</dt><dd><ul>
+<li><p>PREPRINT</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name: str</strong></dt><dd><p>A String specifying the name of the new job. The name must be a valid Abaqus/<code class="xref py py-class docutils literal notranslate"><span class="pre">CAE</span></code> object
+name.</p>
+</dd>
+<dt><strong>type: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying <code class="xref py py-class docutils literal notranslate"><span class="pre">the</span></code> type of job. Possible values are ANALYSIS,
+SYNTAXCHECK, RECOVER, and RESTART. The default value is ANALYSIS.If <code class="xref py py-class docutils literal notranslate"><span class="pre">the</span></code> object has <code class="xref py py-class docutils literal notranslate"><span class="pre">the</span></code>
+type JobFromInputFile, <strong>type=RESTART</strong> is not available.</p>
+</dd>
+<dt><strong>waitHours: int</strong></dt><dd><p>An Int specifying the number of hours to wait before submitting the job. This argument
+is ignored if <strong>queue</strong> is set. The default value is 0.This argument works in conjunction
+with <strong>waitMinutes</strong>. <strong>waitHours</strong> and <strong>atTime</strong> are mutually exclusive.</p>
+</dd>
+<dt><strong>waitMinutes: int</strong></dt><dd><p>An Int specifying the number of minutes to wait before submitting the job. This argument
+is ignored if <strong>queue</strong> is set. The default value is 0.This argument works in conjunction
+with <strong>waitHours</strong>. <strong>waitMinutes</strong> and <strong>atTime</strong> are mutually exclusive.</p>
+</dd>
+<dt><strong>numCpus: int</strong></dt><dd><p>An Int specifying the number of CPUs to use for this analysis if parallel processing is
+available. Possible values are <strong>numCpus</strong> &gt;&gt; 0. The default value is 1.</p>
+</dd>
+<dt><strong>memory: int</strong></dt><dd><p>An Int specifying the amount of memory available to Abaqus analysis. The value should be
+expressed in the units supplied in <strong>memoryUnits</strong>. The default value is 90.</p>
+</dd>
+<dt><strong>memoryUnits: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the units for the amount of memory used in an Abaqus
+analysis. Possible values are PERCENTAGE, MEGA_BYTES, and GIGA_BYTES. The default value
+is PERCENTAGE.</p>
+</dd>
+<dt><strong>getMemoryFromAnalysis: Boolean</strong></dt><dd><p>A Boolean specifying whether to retrieve the recommended memory settings from the last
+datacheck or analysis run and use those values in subsequent submissions. The default
+value is ON.</p>
+</dd>
+<dt><strong>explicitPrecision: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying whether to use the double precision version of
+Abaqus/Explicit. Possible values are SINGLE, FORCE_SINGLE, DOUBLE,
+DOUBLE_CONSTRAINT_ONLY, and DOUBLE_PLUS_PACK. The default value is SINGLE.</p>
+</dd>
+<dt><strong>nodalOutputPrecision: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the precision of the nodal output written to the output
+database. Possible values are SINGLE and FULL. The default value is SINGLE.</p>
+</dd>
+<dt><strong>parallelizationMethodExplicit: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the parallelization method for Abaqus/Explicit. Possible
+values are LOOP and DOMAIN. The default value is LOOP.</p>
+</dd>
+<dt><strong>numDomains: int</strong></dt><dd><p>An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
+<strong>parallelizationMethodExplicit=DOMAIN</strong>, <strong>numDomains</strong> must be a multiple of <strong>numCpus</strong>.
+The default value is 1.</p>
+</dd>
+<dt><strong>activateLoadBalancing: Boolean</strong></dt><dd><p>A Boolean specifying whether to activate dyanmic load balancing for jobs running on
+multiple processors with multiple domains in Abaqus/Explicit. The default value is OFF.</p>
+</dd>
+<dt><strong>multiprocessingMode: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying whether an analysis is decomposed into threads or into
+multiple processes that communicate through a message passing interface (MPI). Possible
+values are DEFAULT, THREADS,MPI, and HYBRID. The default value is DEFAULT.</p>
+</dd>
+<dt><strong>numThreadsPerMpiProcess: int</strong></dt><dd><p>An Int specifying the number of threads per MPI process to use for this analysis if
+parallel processing is available. Possible values are <strong>numThreadsPerMpiProcess</strong> &gt;&gt; 0.
+The default value is 1.</p>
+</dd>
+<dt><strong>analysis: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying whe:py:class:<cite>~.the`r :py:class:`~.the</cite> job will be analyzed by Abaqus/Standard or
+Abaqus/Explicit. Possible values are STANDARD, EXPLICIT, and UNKNOWN.If <code class="xref py py-class docutils literal notranslate"><span class="pre">the</span></code> object has
+<code class="xref py py-class docutils literal notranslate"><span class="pre">the</span></code> type JobFromInputFile, <strong>analysis=UNKNOWN</strong>.</p>
+</dd>
+<dt><strong>status: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the status of the analysis. Possible values are SUBMITTED,
+RUNNING, ABORTED, TERMINATED, COMPLETED, CHECK_RUNNING, and CHECK_COMPLETED.If the
+<strong>message</strong> member is empty, <strong>status</strong> is set to NONE.</p>
+</dd>
+<dt><strong>queue: str</strong></dt><dd><p>A String specifying the name of the queue to which to submit the job. The default value
+is an empty string.Note:You can use the <strong>queue</strong> argument when creating a <a class="reference internal" href="#abaqus.Job.Job.Job" title="abaqus.Job.Job.Job"><code class="xref py py-class docutils literal notranslate"><span class="pre">Job</span></code></a> object on a
+Windows workstation; however, remote queues are available only on Linux platforms.</p>
+</dd>
+<dt><strong>atTime: str</strong></dt><dd><p>A String specifying the time at which to submit the job. If <strong>queue</strong> is empty, the string
+syntax must be valid for the Linux <cite>at</cite> command. If <strong>queue</strong> is set, the syntax must be
+valid according to the system administrator. The default value is an empty
+string.Note:You can use the <strong>atTime</strong> argument when creating a <a class="reference internal" href="#abaqus.Job.Job.Job" title="abaqus.Job.Job.Job"><code class="xref py py-class docutils literal notranslate"><span class="pre">Job</span></code></a> object on a Windows
+workstation; however, the <cite>at</cite> command is available only on Linux platforms.</p>
+</dd>
+<dt><strong>scratch: str</strong></dt><dd><p>A String specifying the location of the scratch directory. The default value is an empty
+string.</p>
+</dd>
+<dt><strong>userSubroutine: str</strong></dt><dd><p>A String specifying the file containing the user’s subroutine definitions. The default
+value is an empty string.</p>
+</dd>
+<dt><strong>messages: MessageArray</strong></dt><dd><p>A <a class="reference internal" href="#abaqus.Job.MessageArray.MessageArray" title="abaqus.Job.MessageArray.MessageArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageArray</span></code></a> object specifying the messages received during an analysis.</p>
+</dd>
+<dt><strong>environment: tuple</strong></dt><dd><p>A tuple of Strings specifying the environment variables and their values.</p>
+</dd>
+<dt><strong>licenseType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the type of license type being used in the case of the
+DSLS SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default
+value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not
+available.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.clearMessage" title="abaqus.Job.Job.Job.clearMessage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clearMessage</span></code></a>()</p></td>
+<td><p>This method clears <strong>messages</strong> and sets the <strong>status</strong> to NONE.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.kill" title="abaqus.Job.Job.Job.kill"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kill</span></code></a>()</p></td>
+<td><p>This method kills the analysis of a job.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.submit" title="abaqus.Job.Job.Job.submit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">submit</span></code></a>([consistencyChecking, datacheckJob, ...])</p></td>
+<td><p>This method submits a job for analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.Job.Job.waitForCompletion" title="abaqus.Job.Job.Job.waitForCompletion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitForCompletion</span></code></a>()</p></td>
+<td><p>This method interrupts the execution of the script until the end of the analysis.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.clearMessage">
+<span class="sig-name descname"><span class="pre">clearMessage</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/Job.py#L262-L264"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.clearMessage" title="Permalink to this definition">#</a></dt>
+<dd><p>This method clears <strong>messages</strong> and sets the <strong>status</strong> to NONE.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.kill">
+<span class="sig-name descname"><span class="pre">kill</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/Job.py#L227-L229"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.kill" title="Permalink to this definition">#</a></dt>
+<dd><p>This method kills the analysis of a job.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.submit">
+<span class="sig-name descname"><span class="pre">submit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">consistencyChecking</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datacheckJob</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">continueJob</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/Job.py#L231-L252"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.submit" title="Permalink to this definition">#</a></dt>
+<dd><p>This method submits a job for analysis.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>consistencyChecking</strong></dt><dd><p>A Boolean specifying whether to perform consistency checking for the job. The default
+value is ON. It is not recommended to turn the consistency checking off unless you are
+absolutely sure the model is consistent.</p>
+</dd>
+<dt><strong>datacheckJob</strong></dt><dd><p>A Boolean specifying whether to run the job as a datacheck analysis. The default value
+is False. The datacheckJob and continueJob arguments cannot both be True.</p>
+</dd>
+<dt><strong>continueJob</strong></dt><dd><p>A Boolean specifying whether to run the job as a continuation analysis. The default
+value is False. The datacheckJob and continueJob arguments cannot both be True.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.waitForCompletion">
+<span class="sig-name descname"><span class="pre">waitForCompletion</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/Job.py#L254-L260"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.waitForCompletion" title="Permalink to this definition">#</a></dt>
+<dd><p>This method interrupts the execution of the script until the end of the analysis. If you
+call the waitForCompletion method and the <strong>status</strong> member is neither SUBMITTED nor
+RUNNING, Abaqus assumes the analysis has either completed or aborted and returns
+immediately.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="jobfrominputfile">
+<h3>JobFromInputFile<a class="headerlink" href="#jobfrominputfile" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">JobFromInputFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inputFileName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ANALYSIS'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queue</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitHours</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitMinutes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atTime</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scratch</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userSubroutine</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numCpus</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">90</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memoryUnits</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'PERCENTAGE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">explicitPrecision</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SINGLE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodalOutputPrecision</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SINGLE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parallelizationMethodExplicit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DOMAIN'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numDomains</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">activateLoadBalancing</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multiprocessingMode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">licenseType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/JobFromInputFile.py#L6-L270"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile" title="Permalink to this definition">#</a></dt>
+<dd><p>The JobFromInputFile object defines a Job object which analyzes a model contained in an
+input file.
+The JobFromInputFile object is derived from the Job object.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">job</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">jobs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>getMemoryFromAnalysis: Boolean</strong></dt><dd><p>A Boolean specifying whether to retrieve the recommended memory settings from the last
+datacheck or analysis run and use those values in subsequent submissions. The default
+value is ON.</p>
+</dd>
+<dt><strong>analysis: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying whe:py:class:<cite>~.the`r :py:class:`~.the</cite> job will be analyzed by Abaqus/Standard or
+Abaqus/Explicit. Possible values are STANDARD, EXPLICIT, and UNKNOWN.If <code class="xref py py-class docutils literal notranslate"><span class="pre">the</span></code> object has
+<code class="xref py py-class docutils literal notranslate"><span class="pre">the</span></code> type JobFromInputFile, <strong>analysis=UNKNOWN</strong>.</p>
+</dd>
+<dt><strong>status: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the status of the analysis. Possible values are SUBMITTED,
+RUNNING, ABORTED, TERMINATED, COMPLETED, CHECK_RUNNING, and CHECK_COMPLETED.If the
+<strong>message</strong> member is empty, <strong>status</strong> is set to NONE.</p>
+</dd>
+<dt><strong>messages: MessageArray</strong></dt><dd><p>A <a class="reference internal" href="#abaqus.Job.MessageArray.MessageArray" title="abaqus.Job.MessageArray.MessageArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageArray</span></code></a> object specifying the messages received during an analysis.</p>
+</dd>
+<dt><strong>environment: tuple</strong></dt><dd><p>A tuple of Strings specifying the environment variables and their values.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.setValues" title="abaqus.Job.JobFromInputFile.JobFromInputFile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([type, queue, waitHours, ...])</p></td>
+<td><p>This method modifies the JobFromInputFile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ANALYSIS'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queue</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitHours</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitMinutes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atTime</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scratch</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userSubroutine</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numCpus</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">90</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memoryUnits</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'PERCENTAGE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">explicitPrecision</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SINGLE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodalOutputPrecision</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SINGLE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parallelizationMethodExplicit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DOMAIN'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numDomains</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">activateLoadBalancing</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multiprocessingMode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">licenseType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/JobFromInputFile.py#L181-L270"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.setValues" title="Permalink to this definition">#</a></dt>
+<dd><p>This method modifies the JobFromInputFile object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>type</strong></dt><dd><p>A SymbolicConstant specifying the type of job. Possible values are ANALYSIS,
+SYNTAXCHECK, and RECOVER. The default value is ANALYSIS.For theJobFromInputFile object,
+<a href="#id2"><span class="problematic" id="id3">**</span></a>type**=RESTART is not currently supported.</p>
+</dd>
+<dt><strong>queue</strong></dt><dd><p>A String specifying the name of the queue to which to submit the job. The default value
+is an empty string.Note: You can use the <strong>queue</strong> argument when creating a Job object on
+a Windows workstation; however, remote queues are available only on Linux platforms.</p>
+</dd>
+<dt><strong>waitHours</strong></dt><dd><p>An Int specifying the number of hours to wait before submitting the job. This argument
+is ignored if <strong>queue</strong> is set. The default value is 0.This argument works in conjunction
+with <strong>waitMinutes</strong>. <strong>waitHours</strong> and <strong>atTime</strong> are mutually exclusive.</p>
+</dd>
+<dt><strong>waitMinutes</strong></dt><dd><p>An Int specifying the number of minutes to wait before submitting the job. This argument
+is ignored if <strong>queue</strong> is set. The default value is 0.This argument works in conjunction
+with <strong>waitHours</strong>. <strong>waitMinutes</strong> and <strong>atTime</strong> are mutually exclusive.</p>
+</dd>
+<dt><strong>atTime</strong></dt><dd><p>A String specifying the time at which to submit the job. If <strong>queue</strong> is empty, the string
+syntax must be valid for the Linux <cite>at</cite> command. If <strong>queue</strong> is set, the syntax must be
+valid according to the system administrator. The default value is an empty string.Note:
+You can use the <strong>atTime</strong> argument when creating a Job object on a Windows workstation;
+however, the <cite>at</cite> command is available only on Linux platforms.</p>
+</dd>
+<dt><strong>scratch</strong></dt><dd><p>A String specifying the location of the scratch directory. The default value is an empty
+string.</p>
+</dd>
+<dt><strong>userSubroutine</strong></dt><dd><p>A String specifying the file containing the user’s subroutine definitions. The default
+value is an empty string.</p>
+</dd>
+<dt><strong>numCpus</strong></dt><dd><p>An Int specifying the number of CPUs to use for this analysis if parallel processing is
+available. Possible values are <strong>numCpus</strong> &gt;&gt; 0. The default value is 1.</p>
+</dd>
+<dt><strong>memory</strong></dt><dd><p>An Int specifying the amount of memory available to Abaqus analysis. The value should be
+expressed in the units supplied in <strong>memoryUnits</strong>. The default value is 90.</p>
+</dd>
+<dt><strong>memoryUnits</strong></dt><dd><p>A SymbolicConstant specifying the units for the amount of memory used in an Abaqus
+analysis. Possible values are PERCENTAGE, MEGA_BYTES, and GIGA_BYTES. The default value
+is PERCENTAGE.</p>
+</dd>
+<dt><strong>explicitPrecision</strong></dt><dd><p>A SymbolicConstant specifying whether to use the double precision version of
+Abaqus/Explicit. Possible values are SINGLE, FORCE_SINGLE, DOUBLE,
+DOUBLE_CONSTRAINT_ONLY, and DOUBLE_PLUS_PACK. The default value is SINGLE.</p>
+</dd>
+<dt><strong>nodalOutputPrecision</strong></dt><dd><p>A SymbolicConstant specifying the precision of the nodal output written to the output
+database. Possible values are SINGLE and FULL. The default value is SINGLE.</p>
+</dd>
+<dt><strong>parallelizationMethodExplicit</strong></dt><dd><p>A SymbolicConstant specifying the parallelization method for Abaqus/Explicit.
+Possible values are LOOP and DOMAIN. The default value is LOOP.</p>
+</dd>
+<dt><strong>numDomains</strong></dt><dd><p>An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
+<strong>parallelizationMethodExplicit**=DOMAIN, **numDomains</strong> must be a multiple of <strong>numCpus</strong>.
+The default value is 1.</p>
+</dd>
+<dt><strong>activateLoadBalancing</strong></dt><dd><p>A Boolean specifying whether to activate dyanmic load balancing for jobs running on
+multiple processors with multiple domains in Abaqus/Explicit. The default value is OFF.</p>
+</dd>
+<dt><strong>multiprocessingMode</strong></dt><dd><p>A SymbolicConstant specifying whether an analysis is decomposed into threads or into
+multiple processes that communicate through a message passing interface (MPI). Possible
+values are DEFAULT, THREADS, and MPI. The default value is DEFAULT.</p>
+</dd>
+<dt><strong>licenseType</strong></dt><dd><p>A SymbolicConstant specifying the type of license type being used in the case of the
+DSLS SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default
+value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not
+available.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="message">
+<h3>Message<a class="headerlink" href="#message" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Job.Message.Message">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Message</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/Message.py#L4-L81"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Message.Message" title="Permalink to this definition">#</a></dt>
+<dd><p>The Message object contains information about a given phase of the simulation. Job
+messages are not returned if a script is run without the Abaqus/CAE GUI (using the noGUI
+option).</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">job</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">coexecutions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">jobs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">messages</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">jobs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">messages</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>type: SymbolicConstant</strong></dt><dd><dl class="simple">
+<dt>A SymbolicConstant specifying the type of message. Possible values are:</dt><dd><ul class="simple">
+<li><p>ABORTED</p></li>
+<li><p>ANY_JOB</p></li>
+<li><p>ANY_MESSAGE_TYPE</p></li>
+<li><p>COMPLETED</p></li>
+<li><p>END_STEP</p></li>
+<li><p>ERROR</p></li>
+<li><p>HEADING</p></li>
+<li><p>HEALER_JOB</p></li>
+<li><p>HEALER_TYPE</p></li>
+<li><p>INTERRUPTED</p></li>
+<li><p>ITERATION</p></li>
+<li><p>JOB_ABORTED</p></li>
+<li><p>JOB_COMPLETED</p></li>
+<li><p>JOB_INTERRUPTED</p></li>
+<li><p>JOB_SUBMITTED</p></li>
+<li><p>MONITOR_DATA</p></li>
+<li><p>ODB_FILE</p></li>
+<li><p>ODB_FRAME</p></li>
+<li><p>STARTED</p></li>
+<li><p>STATE_FRAME</p></li>
+<li><p>STATUS</p></li>
+<li><p>STEP</p></li>
+<li><p>WARNING</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt><strong>data: dict</strong></dt><dd><p>A <code class="xref py py-class docutils literal notranslate"><span class="pre">Dictionary</span></code> object specifying the data returned by the analysis product. The value
+depends on the message returned. For a list of the possible entries, see the members of
+DataObject.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="messagearray">
+<h3>MessageArray<a class="headerlink" href="#messagearray" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Job.MessageArray.MessageArray">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MessageArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/MessageArray.py#L4-L6"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.MessageArray.MessageArray" title="Permalink to this definition">#</a></dt>
+<dd><p class="rubric">Methods</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>findAt</strong></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<section id="modeljob">
+<h3>ModelJob<a class="headerlink" href="#modeljob" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ModelJob</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ANALYSIS'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queue</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitHours</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitMinutes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atTime</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">echoPrint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contactPrint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelPrint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">historyPrint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scratch</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userSubroutine</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numCpus</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">90</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memoryUnits</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'PERCENTAGE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">explicitPrecision</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SINGLE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodalOutputPrecision</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SINGLE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parallelizationMethodExplicit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DOMAIN'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numDomains</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">activateLoadBalancing</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multiprocessingMode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">licenseType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/ModelJob.py#L6-L387"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob" title="Permalink to this definition">#</a></dt>
+<dd><p>The ModelJob object defines a Job object which analyzes a model on a model database
+(MDB).
+The ModelJob object is derived from the Job object.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">job</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">adaptivityProcesses</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">job</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">jobs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name: str</strong></dt><dd><p>A String specifying the name of the new job. The name must be a valid Abaqus/<code class="xref py py-class docutils literal notranslate"><span class="pre">CAE</span></code> object
+name.</p>
+</dd>
+<dt><strong>echoPrint: Boolean</strong></dt><dd><p>A Boolean specifying whether an echo of the input data is printed. The default value is
+OFF.</p>
+</dd>
+<dt><strong>contactPrint: Boolean</strong></dt><dd><p>A Boolean specifying whether contact constraint data are printed. The default value is
+OFF.</p>
+</dd>
+<dt><strong>modelPrint: Boolean</strong></dt><dd><p>A Boolean specifying whether model definition data are printed. The default value is
+OFF.</p>
+</dd>
+<dt><strong>historyPrint: Boolean</strong></dt><dd><p>A Boolean specifying whether history data are printed. The default value is OFF.</p>
+</dd>
+<dt><strong>model: str</strong></dt><dd><p>A String specifying the name of the model to be analyzed or a <a class="reference internal" href="model.html#abaqus.Model.Model.Model" title="abaqus.Model.Model.Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> object specifying
+the model to be analyzed.</p>
+</dd>
+<dt><strong>description: str</strong></dt><dd><p>A String specifying a description of the job.</p>
+</dd>
+<dt><strong>type: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying <code class="xref py py-class docutils literal notranslate"><span class="pre">the</span></code> type of job. Possible values are ANALYSIS,
+SYNTAXCHECK, RECOVER, and RESTART. The default value is ANALYSIS.If <code class="xref py py-class docutils literal notranslate"><span class="pre">the</span></code> object has <code class="xref py py-class docutils literal notranslate"><span class="pre">the</span></code>
+type JobFromInputFile, <strong>type=RESTART</strong> is not available.</p>
+</dd>
+<dt><strong>waitHours: int</strong></dt><dd><p>An Int specifying the number of hours to wait before submitting the job. This argument
+is ignored if <strong>queue</strong> is set. The default value is 0.This argument works in conjunction
+with <strong>waitMinutes</strong>. <strong>waitHours</strong> and <strong>atTime</strong> are mutually exclusive.</p>
+</dd>
+<dt><strong>waitMinutes: int</strong></dt><dd><p>An Int specifying the number of minutes to wait before submitting the job. This argument
+is ignored if <strong>queue</strong> is set. The default value is 0.This argument works in conjunction
+with <strong>waitHours</strong>. <strong>waitMinutes</strong> and <strong>atTime</strong> are mutually exclusive.</p>
+</dd>
+<dt><strong>numCpus: int</strong></dt><dd><p>An Int specifying the number of CPUs to use for this analysis if parallel processing is
+available. Possible values are <strong>numCpus</strong> &gt;&gt; 0. The default value is 1.</p>
+</dd>
+<dt><strong>memory: int</strong></dt><dd><p>An Int specifying the amount of memory available to Abaqus analysis. The value should be
+expressed in the units supplied in <strong>memoryUnits</strong>. The default value is 90.</p>
+</dd>
+<dt><strong>memoryUnits: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the units for the amount of memory used in an Abaqus
+analysis. Possible values are PERCENTAGE, MEGA_BYTES, and GIGA_BYTES. The default value
+is PERCENTAGE.</p>
+</dd>
+<dt><strong>getMemoryFromAnalysis: Boolean</strong></dt><dd><p>A Boolean specifying whether to retrieve the recommended memory settings from the last
+datacheck or analysis run and use those values in subsequent submissions. The default
+value is ON.</p>
+</dd>
+<dt><strong>explicitPrecision: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying whether to use the double precision version of
+Abaqus/Explicit. Possible values are SINGLE, FORCE_SINGLE, DOUBLE,
+DOUBLE_CONSTRAINT_ONLY, and DOUBLE_PLUS_PACK. The default value is SINGLE.</p>
+</dd>
+<dt><strong>nodalOutputPrecision: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the precision of the nodal output written to the output
+database. Possible values are SINGLE and FULL. The default value is SINGLE.</p>
+</dd>
+<dt><strong>parallelizationMethodExplicit: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the parallelization method for Abaqus/Explicit.
+Possible values are LOOP and DOMAIN. The default value is LOOP.</p>
+</dd>
+<dt><strong>numDomains: int</strong></dt><dd><p>An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
+<strong>parallelizationMethodExplicit=DOMAIN</strong>, <strong>numDomains</strong> must be a multiple of <strong>numCpus</strong>.
+The default value is 1.</p>
+</dd>
+<dt><strong>activateLoadBalancing: Boolean</strong></dt><dd><p>A Boolean specifying whether to activate dyanmic load balancing for jobs running on
+multiple processors with multiple domains in Abaqus/Explicit. The default value is OFF.</p>
+</dd>
+<dt><strong>multiprocessingMode: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying whether an analysis is decomposed into threads or into
+multiple processes that communicate through a message passing interface (MPI). Possible
+values are DEFAULT, THREADS, and MPI. The default value is DEFAULT.</p>
+</dd>
+<dt><strong>analysis: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying whe:py:class:<cite>~.the`r :py:class:`~.the</cite> job will be analyzed by Abaqus/Standard or
+Abaqus/Explicit. Possible values are STANDARD, EXPLICIT, and UNKNOWN.If <code class="xref py py-class docutils literal notranslate"><span class="pre">the</span></code> object has
+<code class="xref py py-class docutils literal notranslate"><span class="pre">the</span></code> type JobFromInputFile, <strong>analysis=UNKNOWN</strong>.</p>
+</dd>
+<dt><strong>status: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the status of the analysis. Possible values are SUBMITTED,
+RUNNING, ABORTED, TERMINATED, COMPLETED, CHECK_RUNNING, and CHECK_COMPLETED.If the
+<strong>message</strong> member is empty, <strong>status</strong> is set to NONE.</p>
+</dd>
+<dt><strong>queue: str</strong></dt><dd><p>A String specifying the name of the queue to which to submit the job. The default value
+is an empty string.Note:You can use the <strong>queue</strong> argument when creating a <a class="reference internal" href="#abaqus.Job.Job.Job" title="abaqus.Job.Job.Job"><code class="xref py py-class docutils literal notranslate"><span class="pre">Job</span></code></a> object on a
+Windows workstation; however, remote queues are available only on Linux platforms.</p>
+</dd>
+<dt><strong>atTime: str</strong></dt><dd><p>A String specifying the time at which to submit the job. If <strong>queue</strong> is empty, the string
+syntax must be valid for the Linux <cite>at</cite> command. If <strong>queue</strong> is set, the syntax must be
+valid according to the system administrator. The default value is an empty
+string.Note:You can use the <strong>atTime</strong> argument when creating a <a class="reference internal" href="#abaqus.Job.Job.Job" title="abaqus.Job.Job.Job"><code class="xref py py-class docutils literal notranslate"><span class="pre">Job</span></code></a> object on a Windows
+workstation; however, the <cite>at</cite> command is available only on Linux platforms.</p>
+</dd>
+<dt><strong>scratch: str</strong></dt><dd><p>A String specifying the location of the scratch directory. The default value is an empty
+string.</p>
+</dd>
+<dt><strong>userSubroutine: str</strong></dt><dd><p>A String specifying the file containing the user’s subroutine definitions. The default
+value is an empty string.</p>
+</dd>
+<dt><strong>messages: MessageArray</strong></dt><dd><p>A <a class="reference internal" href="#abaqus.Job.MessageArray.MessageArray" title="abaqus.Job.MessageArray.MessageArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageArray</span></code></a> object specifying the messages received during an analysis.</p>
+</dd>
+<dt><strong>environment: tuple</strong></dt><dd><p>A tuple of Strings specifying the environment variables and their values.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.setValues" title="abaqus.Job.ModelJob.ModelJob.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
+<td><p>This method modifies the ModelJob object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.ModelJob.ModelJob.writeInput" title="abaqus.Job.ModelJob.ModelJob.writeInput"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeInput</span></code></a>([consistencyChecking])</p></td>
+<td><p>This method writes an input file.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/ModelJob.py#L385-L387"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.setValues" title="Permalink to this definition">#</a></dt>
+<dd><p>This method modifies the ModelJob object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.writeInput">
+<span class="sig-name descname"><span class="pre">writeInput</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">consistencyChecking</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/ModelJob.py#L373-L383"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.writeInput" title="Permalink to this definition">#</a></dt>
+<dd><p>This method writes an input file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>consistencyChecking</strong></dt><dd><p>A Boolean specifying whether to perform consistency checking for the job. The default
+value is ON.It is not recommended to turn the consistency checking off unless you are
+absolutely sure the model is consistent.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="optimizationprocess">
+<h3>OptimizationProcess<a class="headerlink" href="#optimizationprocess" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OptimizationProcess</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prototypeJob</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxDesignCycle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">15</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataSaveFrequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'OPT_DATASAVE_SPECIFY_CYCLE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saveInitial</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saveFirst</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saveLast</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saveEvery</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/OptimizationProcess.py#L4-L208"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess" title="Permalink to this definition">#</a></dt>
+<dd><p>The OptimizationProcess object defines a process to perform an optimization of a model
+defined using an optimization task.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">job</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">optimizationProcesses</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.extract" title="abaqus.Job.OptimizationProcess.OptimizationProcess.extract"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extract</span></code></a>(outputFileName, designCycle[, ...])</p></td>
+<td><p>This method extracts a surface mesh from the optimized model.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.setValues" title="abaqus.Job.OptimizationProcess.OptimizationProcess.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([description, maxDesignCycle, ...])</p></td>
+<td><p>This method modifies the OptimizationProcess object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.submit" title="abaqus.Job.OptimizationProcess.OptimizationProcess.submit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">submit</span></code></a>([validate])</p></td>
+<td><p>This method submits an optimization process.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.waitForCompletion" title="abaqus.Job.OptimizationProcess.OptimizationProcess.waitForCompletion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waitForCompletion</span></code></a>()</p></td>
+<td><p>This method interrupts the execution of the script until the end of all the analyses.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.writeParAndInputFiles" title="abaqus.Job.OptimizationProcess.OptimizationProcess.writeParAndInputFiles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeParAndInputFiles</span></code></a>()</p></td>
+<td><p>This method allows you to write par and input files for an optimization task.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess.extract">
+<span class="sig-name descname"><span class="pre">extract</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">outputFileName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">designCycle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isoValue</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smoothCycles</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reductionPercent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reductionAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">targetVolume</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extractFormat</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'OPT_EXTRACT_SMOOTH_ABAQUS_INPUT_FILE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resultFiltering</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instances</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/OptimizationProcess.py#L114-L165"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.extract" title="Permalink to this definition">#</a></dt>
+<dd><p>This method extracts a surface mesh from the optimized model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>outputFileName</strong></dt><dd><p>Name of the output file for the extracted surface mesh.</p>
+</dd>
+<dt><strong>designCycle</strong></dt><dd><p>The design cycle number for which the surface mesh should be extracted.</p>
+</dd>
+<dt><strong>isoValue</strong></dt><dd><p>Value used to determine the positions on the element edges where the new nodes are
+created. Value between 0 and 1. The default value is 0.3.</p>
+</dd>
+<dt><strong>smoothCycles</strong></dt><dd><p>Number of smoothing cycles; if set to 0, no smoothing is performed. The default value is
+5.</p>
+</dd>
+<dt><strong>reductionPercent</strong></dt><dd><p>Defines the percent of faces that should be removed during the data reduction. If set to
+0, no data reduction occurs. If set to 100, the data reduction stops when no faces can
+be removed (that is checked using reductionAngle parameter). Value between 0 and 100.
+The default value is 0.</p>
+</dd>
+<dt><strong>reductionAngle</strong></dt><dd><p>Defines the maximal angle between adjacent faces at a node such that the node may be
+removed during the data reduction. Value in degrees between 0 and 90. The default value
+is15.</p>
+</dd>
+<dt><strong>targetVolume</strong></dt><dd><p>Defines the target volume that is to be achieved iteratively by varying the isovalue.
+Value between 0 and 1. The default value is 0.</p>
+</dd>
+<dt><strong>extractFormat</strong></dt><dd><p>Tuple for the types of format of the output. Values are (OPT_EXTRACT_SMOOTH_ABAQUS_INPUT_FILE,
+OPT_EXTRACT_SMOOTH_STL). Default: OPT_EXTRACT_SMOOTH_ABAQUS_INPUT_FILE</p>
+</dd>
+<dt><strong>resultFiltering</strong></dt><dd><p>Possible string values are OFF or MODERATE or FULL. Defines if the element material
+values are to be filtered (averaged locally) before the isocut, and to what extent. The
+default value is OFF.</p>
+</dd>
+<dt><strong>instances</strong></dt><dd><p>Defines a list of names of part instances to be used for surface extraction. One file
+(according to extractFormat) is created for each part instance. If the argument is not
+specified, no part instance is selected and surface is generated for the whole model.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxDesignCycle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">15</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataSaveFrequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'OPT_DATASAVE_SPECIFY_CYCLE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saveInitial</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saveFirst</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saveLast</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saveEvery</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/OptimizationProcess.py#L167-L208"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.setValues" title="Permalink to this definition">#</a></dt>
+<dd><p>This method modifies the OptimizationProcess object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>description</strong></dt><dd><p>A String specifying a description of the optimization process.</p>
+</dd>
+<dt><strong>maxDesignCycle</strong></dt><dd><p>An Int specifying the maximum number of allowed design cycles for the optimization
+process. The default value is 15.</p>
+</dd>
+<dt><strong>dataSaveFrequency</strong></dt><dd><p>An Enum specifying whether Abaqus should save every iteration file in the optimization
+process or a selection of iteration files saved at a user-specified frequency. If you
+set <strong>dataSaveFrequency**=OPT_DATASAVE_EVERY_CYCLE, Abaqus saves every iteration file; if
+you set **dataSaveFrequency**=OPT_DATASAVE_SPECIFY_CYCLE, Abaqus saves iteration files
+according to the frequency defined by the **saveEvery</strong> parameter. The default value is
+OPT_DATASAVE_SPECIFY_CYCLE.</p>
+</dd>
+<dt><strong>saveInitial</strong></dt><dd><p>A Boolean specifying whether the initial cycle should be saved when <strong>dataSaveFrequency</strong>
+is OPT_DATASAVE_SPECIFY_CYCLE. The default value is True.</p>
+</dd>
+<dt><strong>saveFirst</strong></dt><dd><p>A Boolean specifying whether the first cycle should be saved when <strong>dataSaveFrequency</strong> is
+OPT_DATASAVE_SPECIFY_CYCLE. The default value is True.</p>
+</dd>
+<dt><strong>saveLast</strong></dt><dd><p>A Boolean specifying whether the last cycle should be saved when <strong>dataSaveFrequency</strong> is
+OPT_DATASAVE_SPECIFY_CYCLE. The default value is True.</p>
+</dd>
+<dt><strong>saveEvery</strong></dt><dd><p>An Int specifying every nth cycle iterations to be saved when <strong>dataSaveFrequency</strong> is
+OPT_DATASAVE_SPECIFY_CYCLE. Abaqus saves file iterations for every nth iteration after
+iteration 1; if you set <a href="#id4"><span class="problematic" id="id5">**</span></a>saveEvery**=3, Abaqus saves file iterations for cycles 1, 4, 7,
+and so on. The default value is None.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess.submit">
+<span class="sig-name descname"><span class="pre">submit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">validate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/OptimizationProcess.py#L95-L104"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.submit" title="Permalink to this definition">#</a></dt>
+<dd><p>This method submits an optimization process.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>validate</strong></dt><dd><p>A Boolean specifying whether Abaqus should perform the validation of the optimization
+process only. The default value is False.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess.waitForCompletion">
+<span class="sig-name descname"><span class="pre">waitForCompletion</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/OptimizationProcess.py#L106-L112"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.waitForCompletion" title="Permalink to this definition">#</a></dt>
+<dd><p>This method interrupts the execution of the script until the end of all the analyses. If
+you call the waitForCompletion method and the <strong>status</strong> member is neither SUBMITTED nor
+RUNNING, Abaqus assumes the analysis has either completed or aborted and returns
+immediately.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess.writeParAndInputFiles">
+<span class="sig-name descname"><span class="pre">writeParAndInputFiles</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/OptimizationProcess.py#L91-L93"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.writeParAndInputFiles" title="Permalink to this definition">#</a></dt>
+<dd><p>This method allows you to write par and input files for an optimization task.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="queue">
+<h3>Queue<a class="headerlink" href="#queue" title="Permalink to this headline">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Job.Queue.Queue">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Queue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queueName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hostName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileCopy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">driver</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remotePlatform</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Linux'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filesToCopy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ALL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deleteAfterCopy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016a0/src/abaqus/Job/Queue.py#L4-L83"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Queue.Queue" title="Permalink to this definition">#</a></dt>
+<dd><p>A Queue object tells the job where and how to submit a job remotely. A Queue object can
+be used as the <strong>queue</strong> argument to the Job method.</p>
+<p class="rubric">Notes</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">job</span>
+<span class="n">session</span><span class="o">.</span><span class="n">queues</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="annotation.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Annotation</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="model/step/step_miscellaneous.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Step Miscellaneous</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, WANG Hailin
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Job</a><ul>
+<li><a class="reference internal" href="#create-jobs">Create jobs</a></li>
+<li><a class="reference internal" href="#create-queues-in-session">Create queues in Session</a></li>
+<li><a class="reference internal" href="#features-of-the-job">Features of the job</a><ul>
+<li><a class="reference internal" href="#coexecution">Coexecution</a></li>
+<li><a class="reference internal" href="#id1">Job</a></li>
+<li><a class="reference internal" href="#jobfrominputfile">JobFromInputFile</a></li>
+<li><a class="reference internal" href="#message">Message</a></li>
+<li><a class="reference internal" href="#messagearray">MessageArray</a></li>
+<li><a class="reference internal" href="#modeljob">ModelJob</a></li>
+<li><a class="reference internal" href="#optimizationprocess">OptimizationProcess</a></li>
+<li><a class="reference internal" href="#queue">Queue</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/furo.js"></script>
+    </body>
+</html>
