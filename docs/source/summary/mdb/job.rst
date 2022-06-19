@@ -1,0 +1,24 @@
+==========
+Abaqus Job
+==========
+
+The Job object is the abstract base type for other Job objects. The Job object has no explicit constructor. The methods and members of the Job object are common to all objects derived from Job.
+
+
+Create jobs
+-----------
+
+.. automethod:: abaqus.Job.JobMdb.JobMdb.Job
+    :noindex:
+
+Create queues in Session
+------------------------
+
+.. automethod:: abaqus.Job.JobSession.JobSession.Queue
+    :noindex:
+
+Job
+---
+
+.. autoclass:: abaqus.Job.Job.Job
+    :noindex:

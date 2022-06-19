@@ -1,0 +1,105 @@
+from abaqusConstants import *
+from .InteractionState import InteractionState
+
+
+class CavityRadiationState(InteractionState):
+    """The CavityRadiationState object stores the propagating data for a CavityRadiation
+    object. One instance of this object is created internally by the CavityRadiation object
+    for each step. The instance is also deleted internally by the CavityRadiation object.
+    The CavityRadiationState object has no constructor or methods.
+    The CavityRadiationState object is derived from the InteractionState object.
+
+    Attributes
+    ----------
+    blocking: SymbolicConstant
+        A SymbolicConstant specifying the blocking checks to be performed in the viewfactor
+        calculations. Possible values are BLOCKING_ALL, NO_BLOCKING, and PARTIAL_BLOCKING.
+    blockingState: SymbolicConstant
+        A SymbolicConstant specifying the propagation state of the blocking member. Possible
+        values are UNSET, SET, UNCHANGED, and FREED.
+    blockingSurfacesState: SymbolicConstant
+        A SymbolicConstant specifying the propagation state of the **blockingSurfaces** member.
+        Possible values are UNSET, SET, UNCHANGED, and FREED.
+    rangeOfView: float
+        A Float specifying the distance beyond which factors need not be calculated because
+        surfaces are judged to be too far apart to “see” each other (due to blocking by other
+        surfaces).
+    rangeOfViewState: SymbolicConstant
+        A SymbolicConstant specifying the propagation state of the **rangeOfView** member.
+        Possible values are UNSET, SET, UNCHANGED, and FREED.
+    surfaceReflection: Boolean
+        A Boolean specifying whether reflection must be included in the cavity radiation
+        calculations. The default value is ON.
+    surfaceReflectionState: SymbolicConstant
+        A SymbolicConstant specifying the propagation state of the **surfaceReflection** member.
+        Possible values are UNSET, SET, UNCHANGED, and FREED.
+    viewfactorAccuracyTol: float
+        A Float specifying the acceptable tolerance for the viewfactor calculations.
+    viewfactorAccuracyTolState: SymbolicConstant
+        A SymbolicConstant specifying the propagation state of the **viewfactorAccuracyTol**
+        member. Possible values are UNSET, SET, UNCHANGED, and FREED.
+    blockingSurfaces: tuple
+        A tuple of Strings specifying the surfaces that provide blocking inside the cavity.
+    status: SymbolicConstant
+        A SymbolicConstant specifying the propagation state of the :py:class:`~abaqus.Interaction.InteractionState.InteractionState` object.
+        Possible values
+        are:NOT_YET_ACTIVECREATEDPROPAGATEDMODIFIEDDEACTIVATEDNO_LONGER_ACTIVETYPE_NOT_APPLICABLEINSTANCE_NOT_APPLICABLEBUILT_INTO_BASE_STATE
+
+    Notes
+    -----
+    This object can be accessed by:
+
+    .. code-block:: python
+
+        import interaction
+        mdb.models[name].steps[name].interactionStates[name]
+
+    The corresponding analysis keywords are:
+
+    - RADIATION VIEWFACTOR
+
+    """
+
+    # A SymbolicConstant specifying the blocking checks to be performed in the viewfactor
+    # calculations. Possible values are BLOCKING_ALL, NO_BLOCKING, and PARTIAL_BLOCKING.
+    blocking: SymbolicConstant = None
+
+    # A SymbolicConstant specifying the propagation state of the blocking member. Possible
+    # values are UNSET, SET, UNCHANGED, and FREED.
+    blockingState: SymbolicConstant = None
+
+    # A SymbolicConstant specifying the propagation state of the **blockingSurfaces** member.
+    # Possible values are UNSET, SET, UNCHANGED, and FREED.
+    blockingSurfacesState: SymbolicConstant = None
+
+    # A Float specifying the distance beyond which factors need not be calculated because
+    # surfaces are judged to be too far apart to “see” each other (due to blocking by other
+    # surfaces).
+    rangeOfView: float = None
+
+    # A SymbolicConstant specifying the propagation state of the **rangeOfView** member.
+    # Possible values are UNSET, SET, UNCHANGED, and FREED.
+    rangeOfViewState: SymbolicConstant = None
+
+    # A Boolean specifying whether reflection must be included in the cavity radiation
+    # calculations. The default value is ON.
+    surfaceReflection: Boolean = ON
+
+    # A SymbolicConstant specifying the propagation state of the **surfaceReflection** member.
+    # Possible values are UNSET, SET, UNCHANGED, and FREED.
+    surfaceReflectionState: SymbolicConstant = None
+
+    # A Float specifying the acceptable tolerance for the viewfactor calculations.
+    viewfactorAccuracyTol: float = None
+
+    # A SymbolicConstant specifying the propagation state of the **viewfactorAccuracyTol**
+    # member. Possible values are UNSET, SET, UNCHANGED, and FREED.
+    viewfactorAccuracyTolState: SymbolicConstant = None
+
+    # A tuple of Strings specifying the surfaces that provide blocking inside the cavity.
+    blockingSurfaces: tuple = ()
+
+    # A SymbolicConstant specifying the propagation state of the InteractionState object.
+    # Possible values
+    # are:NOT_YET_ACTIVECREATEDPROPAGATEDMODIFIEDDEACTIVATEDNO_LONGER_ACTIVETYPE_NOT_APPLICABLEINSTANCE_NOT_APPLICABLEBUILT_INTO_BASE_STATE
+    status: SymbolicConstant = None

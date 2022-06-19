@@ -1,0 +1,28 @@
+package:
+  name: abqpy
+  version: 2016a0
+
+build:
+  script: python setup.py install --single-version-externally-managed --record=record.txt
+  skip: True # [py<39]
+
+source:
+  git_url: https://github.com/haiiliin/abqpy.git
+  git_rev: "2016a0"
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  import:
+    - abaqus
+    - mesh
+    - abaqusConstants
+about:
+  summary: Type hints for Abaqus/Python scripting
+  home: https://github.com/haiiliin/abqpy
+  license: MIT
+# conda build abqpy -c default -c deliangus
