@@ -43,11 +43,13 @@ class Hyperelastic:
         - D1.
         - Temperature, if the data depend on temperature.
     - If **type**=OGDEN, the table data specify the following for values of nn:
+    
         - μi and αi for ii from 1 to n.
         - nn coefficients Di.
         - Temperature, if the data depend on temperature. Temperature dependence is not allowed for 4 ≤n≤ 6 in an
-        Abaqus/Explicit analysis.
+          Abaqus/Explicit analysis.
     - If **type**=POLYNOMIAL, the table data specify the following for values of nn:
+    
         - CijCi⁢j for each value of (i+j) from 11 to n with ii decreasing from (i+j) to zero and j 
           increasing from zero to (i+j).
         - n coefficients Di.
@@ -57,7 +59,7 @@ class Hyperelastic:
         - Ci⁢0 for ii from 1 to n.
         - n coefficients Di.
         - Temperature, if the data depend on temperature. Temperature dependence is not allowed for 4 ≤n≤ 6 in an
-        Abaqus/Explicit analysis.
+          Abaqus/Explicit analysis.
     - If **type**=VAN_DER_WAALS, the table data specify the following:
     
         - μ.

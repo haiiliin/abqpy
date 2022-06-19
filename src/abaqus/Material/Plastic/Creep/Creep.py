@@ -119,7 +119,7 @@ class Creep:
             A sequence of sequences of Floats specifying the items described below.
         law
             A SymbolicConstant specifying the strain-hardening law. Possible values are STRAIN,
-            TIME, HYPERBOLIC_SINE, USER, ANAND, DARVEAUX,DOUBLE_POWER, POWER_LAW, and
+            TIME, HYPERBOLIC_SINE, USER, ANAND, DARVEAUX, DOUBLE_POWER, POWER_LAW, and
             TIME_POWER_LAW. The default value is STRAIN.
         temperatureDependency
             A Boolean specifying whether the data depend on temperature. The default value is OFF.
