@@ -20,6 +20,5 @@ CaeKerPrefs
 caePrefsAccess
 ~~~~~~~~~~~~~~
 
-.. autoclass:: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.caePrefsAccess
+.. automodule:: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess
     :members:
-
