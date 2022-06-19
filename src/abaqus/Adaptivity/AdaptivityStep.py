@@ -48,8 +48,13 @@ class AdaptivityStep(StepBase):
         Parameters
         ----------
         amplitudeState
-            A SymbolicConstant specifying the propagation state of the amplitude reference. Possible  values are
-            UNSET, SET, UNCHANGED, FREED, and MODIFIED.
+            A SymbolicConstant specifying the propagation state of the amplitude reference. Possible values are
+            
+            - UNSET
+            - SET
+            - UNCHANGED
+            - FREED
+            - MODIFIED
         status
             A SymbolicConstant specifying the propagation state of the AdaptiveMeshConstraintState  object. Possible
             values are:
