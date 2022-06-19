@@ -47,11 +47,11 @@ class CaeKerPrefs:
             A SymbolicConstant specifying the location of the preferences file. Possible values
             are:
 
-            - CURRENT to open the preferences file in the current directory
-            (caePrefsAccess.CURRENT)
-            - HOME to open the preferences file in your home directory
-            (caePrefsAccess.HOME)
-
+            - CURRENT to open the preferences file in the current directory 
+              (caePrefsAccess.CURRENT)
+            - HOME to open the preferences file in your home directory 
+              (caePrefsAccess.HOME)
+            
             The default value is HOME. Either **fileName** or **directory** must be
             supplied. The **fileName** or **directory** arguments are mutually exclusive.
         """

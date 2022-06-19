@@ -431,20 +431,21 @@ class MeshPart(PartBase):
             A SymbolicConstant specifying the type of edge seed attribute to return. Possible values
             are:
 
-                - EDGE_SEEDING_METHOD
-                - BIAS_METHOD
-                - NUMBER
-                - AVERAGE_SIZE
-                - DEVIATION_FACTOR
-                - MIN_SIZE_FACTOR
-                - BIAS_RATIO
-                - BIAS_MIN_SIZE
-                - BIAS_MAX_SIZE
-                - VERTEX_ADJ_TO_SMALLEST_ELEM
-                - SMALLEST_ELEM_LOCATION
-                - CONSTRAINT
+            - EDGE_SEEDING_METHOD
+            - BIAS_METHOD
+            - NUMBER
+            - AVERAGE_SIZE
+            - DEVIATION_FACTOR
+            - MIN_SIZE_FACTOR
+            - BIAS_RATIO
+            - BIAS_MIN_SIZE
+            - BIAS_MAX_SIZE
+            - VERTEX_ADJ_TO_SMALLEST_ELEM
+            - SMALLEST_ELEM_LOCATION
+            - CONSTRAINT
 
             The return value is dependent on the **attribute** argument.
+            
             - If **attribute**=EDGE_SEEDING_METHOD, the return value is a SymbolicConstant specifying
             the edge seeding method used to create the seeds along the edge. Possible values are:
 
@@ -563,10 +564,10 @@ class MeshPart(PartBase):
         attribute
             A SymbolicConstant specifying the mesh control attribute to return. Possible values are:
 
-                - ELEM_SHAPE
-                - TECHNIQUE
-                - ALGORITHM
-                - MIN_TRANSITION
+            - ELEM_SHAPE
+            - TECHNIQUE
+            - ALGORITHM
+            - MIN_TRANSITION
 
             The return value depends on the value of the **attribute** argument.
             - If **attribute**=ELEM_SHAPE, the return value is a SymbolicConstant specifying the

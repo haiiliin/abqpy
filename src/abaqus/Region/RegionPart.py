@@ -131,6 +131,8 @@ class RegionPart(RegionPartBase):
             A sequence of Edge objects (surface applies circumferentially to edge). 
             The default value is None.
         kwargs
+            The required parameters for different conditions are:
+            
             - On three-dimensional solid faces, you can use the following arguments:
 
                 - side1Faces

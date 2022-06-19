@@ -75,30 +75,34 @@ class Text(Annotation):
             A Sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
             the model coordinate system. A SymbolicConstant specifies a relative position. Possible
             values are:
-                - BOTTOM_LEFT,,
-                - BOTTOM_CENTER
-                - BOTTOM_RIGHT
-                - CENTER_LEFT
-                - CENTER
-                - CENTER_RIGHT
-                - TOP_LEFT
-                - TOP_CENTER
-                - TOP_RIGHT
+            
+            - BOTTOM_LEFT
+            - BOTTOM_CENTER
+            - BOTTOM_RIGHT
+            - CENTER_LEFT
+            - CENTER
+            - CENTER_RIGHT
+            - TOP_LEFT
+            - TOP_CENTER
+            - TOP_RIGHT
+                
             The default value is BOTTOM_LEFT.
         referencePoint
             A SymbolicConstant or a sequence of Floats specifying a point. The sequence of two
             Floats specifies the **X**- and **Y**-coordinates of the reference point of the Text
             annotation given as percentages of its width and height. The SymbolicConstant indicates
             a relative position. Possible values are:
-                - BOTTOM_LEFT,,
-                - BOTTOM_CENTER
-                - BOTTOM_RIGHT
-                - CENTER_LEFT
-                - CENTER
-                - CENTER_RIGHT
-                - TOP_LEFT
-                - TOP_CENTER
-                - TOP_RIGHT
+            
+            - BOTTOM_LEFT
+            - BOTTOM_CENTER
+            - BOTTOM_RIGHT
+            - CENTER_LEFT
+            - CENTER
+            - CENTER_RIGHT
+            - TOP_LEFT
+            - TOP_CENTER
+            - TOP_RIGHT
+                
             The default value is BOTTOM_LEFT.
         rotationAngle
             A Float specifying the amount of rotation in degrees about **referencePoint**. The default

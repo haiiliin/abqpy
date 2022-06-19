@@ -109,6 +109,7 @@ class AdaptiveMeshConstraintState:
             - MODIFIED_FROM_BASE_STATE
             - DEACTIVATED_FROM_BASE_STATE
             - BUILT_INTO_MODES
+            
         amplitude
             A String specifying the name of the amplitude reference. The String is empty if the  adaptive mesh
             constraint has no amplitude reference.

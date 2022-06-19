@@ -432,18 +432,18 @@ class MeshAssembly(AssemblyBase):
             A SymbolicConstant specifying the type of edge seed attribute to return. Possible values
             are:
 
-                - EDGE_SEEDING_METHOD
-                - BIAS_METHOD
-                - NUMBER
-                - AVERAGE_SIZE
-                - DEVIATION_FACTOR
-                - MIN_SIZE_FACTOR
-                - BIAS_RATIO
-                - BIAS_MIN_SIZE
-                - BIAS_MAX_SIZE
-                - VERTEX_ADJ_TO_SMALLEST_ELEM
-                - SMALLEST_ELEM_LOCATION
-                - CONSTRAINT
+            - EDGE_SEEDING_METHOD
+            - BIAS_METHOD
+            - NUMBER
+            - AVERAGE_SIZE
+            - DEVIATION_FACTOR
+            - MIN_SIZE_FACTOR
+            - BIAS_RATIO
+            - BIAS_MIN_SIZE
+            - BIAS_MAX_SIZE
+            - VERTEX_ADJ_TO_SMALLEST_ELEM
+            - SMALLEST_ELEM_LOCATION
+            - CONSTRAINT
 
             The return value is dependent on the **attribute** argument.
 

@@ -1000,6 +1000,7 @@ class Material(MaterialBase):
             session.odbs[name].materials[name].Elastic
 
         The table data for this object are:
+        
         - If **type**=ISOTROPIC, the table data specify the following:
             - The Young's modulus, E.
             - The Poisson's ratio, v.
