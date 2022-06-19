@@ -19,6 +19,7 @@ class BrittleShear:
     The table data for this object are:
 
     - If **type**=RETENTION_FACTOR the table data specify the following:
+    
         - Shear retention factor.
         - Crack opening strain.
         - Temperature, if the data depend on temperature.
@@ -26,6 +27,7 @@ class BrittleShear:
         - Value of the second field variable.
         - Etc.
     - If **type**=POWER_LAW the table data specify the following:
+    
         - e.
         - p.
         - Temperature, if the data depend on temperature.

@@ -45,18 +45,21 @@ class DamageEvolution:
     The table data for this object are:
 
     - If **type**=DISPLACEMENT, and **softening**=LINEAR, and **mixedModeBehavior**=MODE_INDEPENDENT, the table data specify the following:
+    
         - Equivalent total or Plastic displacement at failure, measured from the time of damage initiation.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **type**=ENERGY, and **softening**=LINEAR, and **mixedModeBehavior**=MODE_INDEPENDENT, the table data specify the following:
+    
         - Fracture energy.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **type**=DISPLACEMENT, and **softening**=LINEAR, and **mixedModeBehavior**=TABULAR, the table data specify the following:
+    
         - Total displacement at failure, measured from the time of damage initiation.
         - Appropriate mode mix ratio.
         - Appropriate mode mix ratio (if relevant, for three-dimensional problems with anisotropic shear behavior).
@@ -65,6 +68,7 @@ class DamageEvolution:
         - Value of the second field variable.
         - Etc.
     - If **type**=ENERGY, and **softening**=LINEAR, and **mixedModeBehavior**=TABULAR, the table data specify the following:
+    
         - Fracture energy.
         - Appropriate mode mix ratio.
         - Appropriate mode mix ratio (if relevant, for three-dimensional problems with anisotropic shear behavior).
@@ -73,6 +77,7 @@ class DamageEvolution:
         - Value of the second field variable.
         - Etc.
     - If **type**=DISPLACEMENT, and **softening**=EXPONENTIAL, and **mixedModeBehavior**=MODE_INDEPENDENT, the table data specify the following:
+    
         - Equivalent total or Plastic displacement at failure, measured from the time of damage initiation.
         - Exponential law parameter.
         - Temperature, if the data depend on temperature.
@@ -80,12 +85,14 @@ class DamageEvolution:
         - Value of the second field variable.
         - Etc.
     - If **type**=ENERGY, and **softening**=EXPONENTIAL, and **mixedModeBehavior**=MODE_INDEPENDENT, the table data specify the following:
+    
         - Fracture energy.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **type**=DISPLACEMENT, and **softening**=EXPONENTIAL, and **mixedModeBehavior**=TABULAR, the table data specify the following:
+    
         - Total displacement at failure, measured from the time of damage initiation.
         - Exponential law parameter.
         - Appropriate mode mix ratio.
@@ -95,6 +102,7 @@ class DamageEvolution:
         - Value of the second field variable.
         - Etc.
     - If **type**=ENERGY, and **softening**=EXPONENTIAL, and **mixedModeBehavior**=TABULAR, the table data specify the following:
+    
         - Fracture energy.
         - Appropriate mode mix ratio.
         - Appropriate mode mix ratio (if relevant, for three-dimensional problems with anisotropic shear behavior).
@@ -103,6 +111,7 @@ class DamageEvolution:
         - Value of the second field variable.
         - Etc.
     - If **type**=DISPLACEMENT, and **softening**=TABULAR, and **mixedModeBehavior**=MODE_INDEPENDENT, the table data specify the following:
+    
         - Damage variable.
         - Equivalent total or Plastic displacement, measured from the time of damage initiation.
         - Temperature, if the data depend on temperature.
@@ -110,6 +119,7 @@ class DamageEvolution:
         - Value of the second field variable.
         - Etc.
     - If **type**=DISPLACEMENT, and **softening**=TABULAR, and **mixedModeBehavior**=TABULAR, the table data specify the following:
+    
         - Damage variable.
         - Equivalent total or Plastic displacement, measured from the time of damage initiation.
         - Appropriate mode mix ratio.
@@ -119,6 +129,7 @@ class DamageEvolution:
         - Value of the second field variable.
         - Etc.
     - If **type**=ENERGY, and **softening**=LINEAR or EXPONENTIAL, and **mixedModeBehavior**=POWER_LAW or BK, the table data specify the following:
+    
         - Normal mode fracture energy.
         - Shear mode fracture energy for failure in the first shear direction.
         - Shear mode fracture energy for failure in the second shear direction.
@@ -127,6 +138,7 @@ class DamageEvolution:
         - Value of the second field variable.
         - Etc.
     - If **type**=ENERGY, **softening**=LINEAR and constructor for [DamageInitiation](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-damageinitiationpyc.htm?ContextScope=all)=HashinDamageInitiation the table data specify the following:
+    
         - Fiber tensile fracture energy.
         - Fiber compressive fracture energy.
         - Matrix tensile fracture energy.

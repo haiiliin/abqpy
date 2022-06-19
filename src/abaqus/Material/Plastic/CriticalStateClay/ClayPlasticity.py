@@ -19,6 +19,7 @@ class ClayPlasticity:
     The table data for this object are:
 
     - If **hardening**=EXPONENTIAL, the table data specify the following:
+    
         - Logarithmic Plastic bulk modulus, λ (dimensionless).
         - Stress ratio at critical state, M.
         - The initial yield surface size, a0.
@@ -29,6 +30,7 @@ class ClayPlasticity:
         - Value of the second field variable.
         - Etc.
     - If **hardening**=TABULAR, the table data specify the following:
+    
         - Stress ratio at critical state, M.
         - The initial volumetric Plastic strain, ε_vol^pl∣0, corresponding to pc|0according to the [ClayHardening](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-clayhardeningpyc.htm?ContextScope=all) definition.
         - ββ, the parameter defining the size of the yield surface on the “wet” side of critical state.

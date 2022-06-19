@@ -22,6 +22,7 @@ class RateDependent:
     The table data for this object are:
 
     - If **type**=POWER_LAW, the table data specify the following:
+    
         - D.
         - n.
         - Temperature, if the data depend on temperature.
@@ -29,6 +30,7 @@ class RateDependent:
         - Value of the second field variable.
         - Etc.
     - If **type**=YIELD_RATIO, the table data specify the following:
+    
         - Yield stress ratio, R=¯σ/σ0.
         - Equivalent Plastic strain rate, ˙¯εpl.
         - Temperature, if the data depend on temperature.
@@ -36,6 +38,7 @@ class RateDependent:
         - Value of the second field variable.
         - Etc.
     - If **type**=JOHNSON_COOK, the table data specify the following:
+    
         - C.
         - ˙ε0.
 

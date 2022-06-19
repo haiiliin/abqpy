@@ -20,16 +20,19 @@ class Permeability:
     The table data for this object are:
 
     - If **type**=ISOTROPIC, the table data specify the following:
+    
         - k.
         - Void ratio, e.
         - Temperature, if the data depend on temperature.
     - If **type**=ORTHOTROPIC, the table data specify the following:
+    
         - k11.
         - k22.
         - k33.
         - Void ratio, e.
         - Temperature, if the data depend on temperature.
     - If **type**=ANISOTROPIC, the table data specify the following:
+    
         - k11.
         - k12.
         - k22.

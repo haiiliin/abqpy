@@ -19,6 +19,7 @@ class TangentialBehavior:
     The table data for this object are:
 
     - If **formulation**=PENALTY, the table data specify the following:
+    
         - Friction coefficient in the slip direction, μμ.
         - Slip rate, if the data depend on slip rate.
         - Contact pressure, if the data depend on contact pressure.
@@ -27,10 +28,12 @@ class TangentialBehavior:
         - Value of the second field variable.
         - Etc.
     - If **formulation**=EXPONENTIAL_DECAY and **exponentialDecayDefinition**=COEFFICIENTS, the table data specify the following:
+    
         - Static friction coefficient, μsμs.
         - Kinetic friction coefficient, μkμk.
         - Decay coefficient, dcdc.
     - If **formulation**=EXPONENTIAL_DECAY and **exponentialDecayDefinition**=TEST_DATA, the table data specify the following:
+    
         - Static coefficient of friction.
         - Dynamic friction coefficient measured at the reference slip rate, ˙γ2γ˙2.
         - Reference slip rate, ˙γ2γ˙2, used to measure the dynamic friction coefficient.

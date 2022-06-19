@@ -66,6 +66,7 @@ class SymbolStyle:
             - CROSS
             - XMARKER
             - POINT
+            
             The default value is FILLED_CIRCLE.
         size
             A Float specifying the marker size to be used when drawing markers using this
@@ -113,6 +114,7 @@ class SymbolStyle:
             - CROSS
             - XMARKER
             - POINT
+            
             The default value is FILLED_CIRCLE.
         size
             A Float specifying the marker size to be used when drawing markers using this

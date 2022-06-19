@@ -432,6 +432,7 @@ class CommonOptions(DGCommonOptions):
             - HOLLOW_TRI
             - CROSS
             - XMARKER
+            
             The default value is HOLLOW_CIRCLE.
         nodeSymbolColor
             A String specifying the color to be used to plot the node symbols. The default value is

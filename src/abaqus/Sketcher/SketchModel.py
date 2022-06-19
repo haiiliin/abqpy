@@ -47,7 +47,7 @@ class SketchModel(ModelBase):
             and the translation vector. Possible values are any Floats.The default value for the
             axis of rotation is the identity matrix`(1.0, 0.0, 0.0),  (0.0, 1.0, 0.0),  (0.0, 0.0,
             1.0)`The default value for the translation vector is`(0.0, 0.0, 0.0)`The default values
-            position the sketch on the *X–Y* plane centered at the origin.
+            position the sketch on the **X - Y** plane centered at the origin.
 
         Returns
         -------

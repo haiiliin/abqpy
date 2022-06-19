@@ -58,27 +58,28 @@ def writeFieldRepor(
         A sequence of variable description sequences specifying one or more field output
         variables for which to obtain data. Each variable description sequence contains the
         following elements:
-            - **element0**: A String specifying the name of the variable.
-            - **element1**: A SymbolicConstant specifying the output position at which to report data.
-        Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE,
-        INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and
-        WHOLE_REGION.
-            - **element2**: A Sequence of tuples each consisting of a SymbolicConstant specifying the
-        refinement (COMPONENT or INVARIANT), followed by a String specifying the name of a
-        component or invariant for which to obtain values.
-        If this element is omitted, data are written for all components and invariants (if
-        applicable). This element is required if **element3** (the following element in the tuple)
-        is included.
-            - *element3 (if applicable)*: A Dictionary with a String key and a String value
-        specifying a single section point at which to report data. The key specifies a region in
-        the model; the corresponding value specifies a section point within that region. For
-        example:
-        ```
-        {'shell < MAT > < 7 section points >':'SPOS
-        (fraction = 1.0)'}
-        ```
-        If this element is omitted, data are written for all section points (if applicable).
-        If this element is omitted, data are written for all section points (if applicable).
+        
+        - **element0**: A String specifying the name of the variable.
+        - **element1**: A SymbolicConstant specifying the output position at which to report data.
+          Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE,
+          INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and
+          WHOLE_REGION.
+        - **element2**: A Sequence of tuples each consisting of a SymbolicConstant specifying the
+          refinement (COMPONENT or INVARIANT), followed by a String specifying the name of a
+          component or invariant for which to obtain values.
+          If this element is omitted, data are written for all components and invariants (if
+          applicable). This element is required if **element3** (the following element in the tuple)
+          is included.
+        - **element3 (if applicable)**: A Dictionary with a String key and a String value
+          specifying a single section point at which to report data. The key specifies a region in
+          the model; the corresponding value specifies a section point within that region. For
+          example:
+          ```
+          {'shell < MAT > < 7 section points >':'SPOS
+          (fraction = 1.0)'}
+          ```
+          If this element is omitted, data are written for all section points (if applicable).
+          If this element is omitted, data are written for all section points (if applicable).
     numericForm
         A SymbolicConstant specifying the numeric form in which to display results that contain
         complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,

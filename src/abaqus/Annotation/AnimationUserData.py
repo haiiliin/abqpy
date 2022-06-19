@@ -81,27 +81,31 @@ class AnimationUserData(UserDataBase):
             The default value is BOTTOM_LEFT.
         startHeadStyle
             A SymbolicConstant specifying the style of the start head. Possible values are:
-                ARROW
-                FILLED_ARROW
-                HOLLOW_CIRCLE
-                FILLED_CIRCLE
-                HOLLOW_DIAMOND
-                FILLED_DIAMOND
-                HOLLOW_SQUARE
-                FILLED_SQUARE
-                NONE
+            
+            - ARROW
+            - FILLED_ARROW
+            - HOLLOW_CIRCLE
+            - FILLED_CIRCLE
+            - HOLLOW_DIAMOND
+            - FILLED_DIAMOND
+            - HOLLOW_SQUARE
+            - FILLED_SQUARE
+            - NONE
+            
             The default value is NONE.
         endHeadStyle
             A SymbolicConstant specifying the style of the end head. Possible values are:
-            ARROW
-                FILLED_ARROW
-                HOLLOW_CIRCLE
-                FILLED_CIRCLE
-                HOLLOW_DIAMOND
-                FILLED_DIAMOND
-                HOLLOW_SQUARE
-                FILLED_SQUARE
-                NONE
+            
+            - ARROW
+            - FILLED_ARROW
+            - HOLLOW_CIRCLE
+            - FILLED_CIRCLE
+            - HOLLOW_DIAMOND
+            - FILLED_DIAMOND
+            - HOLLOW_SQUARE
+            - FILLED_SQUARE
+            - NONE
+            
             The default value is FILLED_ARROW.
         startGap
             A Float specifying the distance in millimeters between the arrow start point and the

@@ -20,6 +20,7 @@ class Viscous:
     The table data for this object are:
 
     - If **law**=STRAIN or **law**=TIME, the table data specify the following:
+    
         - A.
         - n.
         - m.
@@ -29,12 +30,14 @@ class Viscous:
         - Value of the second field variable.
         - Etc.
     - If **law**=USER, the table data specify the following:
+    
         - f.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **law**=ANAND, the table data specify the following:
+    
         - s1.
         - QR.
         - A.
@@ -52,6 +55,7 @@ class Viscous:
         - A4.
         - f.
     - If **law**=DARVEAUX, the table data specify the following:
+    
         - Css.
         - QR.
         - α.
@@ -60,6 +64,7 @@ class Viscous:
         - B.
         - f.
     - If **law**=DOUBLE_POWER, the table data specify the following:
+    
         - A1.
         - B1.
         - C1.
@@ -69,6 +74,7 @@ class Viscous:
         - σ0.
         - f.
     - If **law**=POWER_LAW or **law**=TIME_POWER_LAW, the table data specify the following:
+    
         - q0.
         - n.
         - m.

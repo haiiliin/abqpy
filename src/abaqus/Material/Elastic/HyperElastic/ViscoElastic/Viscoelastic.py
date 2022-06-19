@@ -22,6 +22,7 @@ class Viscoelastic:
     The table data for this object are:
 
     - If **frequency**=FORMULA, the table data for **table** specify the following:
+    
         - Real part of g∗1 (g∗(ω)=g∗1f−a).
         - Imaginary part of g∗1.
         - Value of a.
@@ -30,32 +31,38 @@ class Viscoelastic:
         - Value of b. If the material is incompressible, this value is ignored.
     - If **frequency**=TABULAR and **type**=ISOTROPIC and **preload**=NONE, or **time**=FREQUENCY_DATA the table data for
     **table** specify the following:
+    
         - Real part of ω⁢g* (ωR(g∗)=Gℓ/G∞).
         - Imaginary part of ω⁢g* (ωI(g*)=1−Gs/G∞).
         - Real part of ω⁢k* (ωR(k∗)=Kℓ/K∞). If the material is incompressible, this value is ignored.
         - Imaginary part of ω⁢k* (ωI(k∗)=1−Ks/K∞). If the material is incompressible, this value is ignored.
         - Frequency f in cycles per time.
     - If **frequency**=TABULAR and **type**=ISOTROPIC and **preload**=UNIAXIAL the table data for **table** specify the following:
+    
         - Loss modulus.
         - Storage modulus.
         - Frequency.
         - Uniaxial strain.
     - If **frequency**=TABULAR and **type**=TRACTION and **preload**=NONE the table data for **table** specify the following:
+    
         - Normalized loss modulus.
         - Normalized shear modulus.
         - Frequency.
     - If **frequency**=TABULAR and **type**=TRACTION and **preload**=UNIAXIAL or **preload**=UNIAXIAL_VOLUMETRIC the table
     data for **table** specify the following:
+    
         - Loss modulus.
         - Storage modulus.
         - Frequency.
         - Closure.
     - If **time**=PRONY or **frequency**=PRONY, the table data for **table** specify the following:
+    
         - g¯1P, the modulus ratio in the first term in the Prony series expansion of the shear relaxation modulus.
         - k¯1P, the modulus ratio in the first term in the Prony series expansion of the bulk relaxation modulus.
         - τ1, the relaxation time for the first term in the Prony series expansion.
     - If **frequency**=TABULAR and **type**=ISOTROPIC and **preload**=VOLUMETRIC or **preload**=UNIAXIAL_VOLUMETRIC the table
     data for **volumetricTable** specify the following:
+    
         - Loss modulus.
         - Storage modulus.
         - Frequency.

@@ -52,10 +52,12 @@ def linkcode_resolve(domain: str, info: dict):
         specifies the language domain the object is in
     info : dict
         a dictionary with the following keys guaranteed to be present (dependent on the domain)
+        
         - py: module (name of the module), fullname (name of the object)
         - c: names (list of names for the object)
         - cpp: names (list of names for the object)
         - javascript: object (name of the object), fullname (name of the item)
+        
     Returns
     -------
     source url of the object

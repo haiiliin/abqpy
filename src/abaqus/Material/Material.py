@@ -269,19 +269,23 @@ class Material(MaterialBase):
             **volumetricTable**. The default value is 0.
         bulkTable
             A sequence of sequences of Floats specifying the following:
+            
             - Bulk modulus.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
+            
         volumetricTable
             A sequence of sequences of Floats specifying the following:
+            
             - Volumetric drag.
             - Frequency.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
+            
             The default value is an empty sequence.
 
         Returns
@@ -1001,6 +1005,7 @@ class Material(MaterialBase):
         The table data for this object are:
         
         - If **type**=ISOTROPIC, the table data specify the following:
+        
             - The Young's modulus, E.
             - The Poisson's ratio, v.
             - Temperature, if the data depend on temperature.
@@ -1008,12 +1013,14 @@ class Material(MaterialBase):
             - Value of the second field variable.
             - Etc.
         - If **type**=SHEAR, the table data specify the following:
+        
             - The shear modulus,G.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
         - If **type**=ENGINEERING_CONSTANTS, the table data specify the following:
+        
             - E1.
             - E2.
             - E3.
@@ -1028,6 +1035,7 @@ class Material(MaterialBase):
             - Value of the second field variable.
             - Etc.
         - If **type**=LAMINA, the table data specify the following:
+        
             - E1.
             - E2.
             - v12.
@@ -1039,6 +1047,7 @@ class Material(MaterialBase):
             - Value of the second field variable.
             - Etc.
         - If **type**=ORTHOTROPIC, the table data specify the following:
+        
             - D1111.
             - D1122.
             - D2222.
@@ -1053,6 +1062,7 @@ class Material(MaterialBase):
             - Value of the second field variable.
             - Etc.
         - If **type**=ANISOTROPIC, the table data specify the following:
+        
             - D1111.
             - D1122.
             - D2222.
@@ -1079,6 +1089,7 @@ class Material(MaterialBase):
             - Value of the second field variable.
             - Etc.
         - If **type**=TRACTION, the table data specify the following:
+        
             - EE for warping elements; En⁢n for cohesive elements.
             - G1 for warping elements; Es⁢s for cohesive elements.
             - G2 for warping elements; Et⁢t for cohesive elements.
@@ -1087,6 +1098,7 @@ class Material(MaterialBase):
             - Value of the second field variable.
             - Etc.
         - If **type**=BILAMINA, the table data specify the following:
+        
             - E1+.
             - E2+.
             - v12+.
@@ -1117,6 +1129,7 @@ class Material(MaterialBase):
             - SHORT_FIBER
             - SHEAR
             - BILAMINA
+            
             The default value is ISOTROPIC.
         noCompression
             A Boolean specifying whether compressive stress is allowed. The default value is OFF.
@@ -1233,22 +1246,27 @@ class Material(MaterialBase):
             A Float specifying the detonation energy text field. The default value is 0.0.
         solidTable
             A sequence of sequences of Floats specifying the following:
+            
             - $A_{s}$.
             - $B_{s}$.
             - ${\omega}_{s}$.
             - $R_{1s}$.
             - $R_{2s}$.
+            
             The default value is an empty sequence.
         gasTable
             A sequence of sequences of Floats specifying the following:
+            
             - $A_{g}$.
             - $B_{g}$.
             - ${\omega}_{g}$.
             - $R_{1g}$.
             - $R_{2g}$.
+            
             The default value is an empty sequence.
         reactionTable
             A sequence of sequences of Floats specifying the following:
+            
             - Initial Pressure, $I$.
             - Product co-volume, $a$.
             - Exponent on the unreacted fraction (ignition term), $x$.
@@ -1263,14 +1281,17 @@ class Material(MaterialBase):
             - Initial reacted fraction, ${F^{max}}_{ig}$.
             - Maximum reacted fraction for the growth term, ${F^{max}}_{G1}$.
             - Minimum reacted fraction, ${F^{min}}_{G2}$.
+            
             The default value is an empty sequence.
         gasSpecificTable
             A sequence of sequences of Floats specifying the following:
+            
             - Specific Heat per unit mass.
             - Temperature dependent data.
             - Value of first field variable.
             - Value of second field variable.
             - Etc.
+            
             The default value is an empty sequence.
         table
             A sequence of sequences of Floats specifying the items described below. The default

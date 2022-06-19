@@ -18,6 +18,7 @@ class PorousElastic:
     The table data for this object are:
 
     - If **shear**=G, the table data specify the following:
+    
         - The logarithmic bulk modulus, κ. (Dimensionless.)
         - The shear modulus, G.
         - The elastic tensile limit, peltpte⁢l. (This value cannot be negative.)
@@ -26,6 +27,7 @@ class PorousElastic:
         - Value of the second field variable.
         - Etc.
     - If **shear**=POISSON, the table data specify the following:
+    
         - The logarithmic bulk modulus, κ. (Dimensionless.)
         - The Poisson's ratio, ν.
         - The elastic tensile limit, peltpte⁢l. (This value cannot be negative.)

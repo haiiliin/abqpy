@@ -17,6 +17,7 @@ class FluidLeakoff:
         session.odbs[name].materials[name].fluidLeakoff
 
     The table data for this object are:
+    
     The table data specify the following:
 
     - Fluid leak-off coefficient at top element surface.

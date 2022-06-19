@@ -46,6 +46,7 @@ class PsOptions:
             - A3
             - A4
             - A5
+            
             The default value is LETTER.
         topMargin
             A Float specifying the top margin of the paper in inches. Possible values are

@@ -19,6 +19,7 @@ class ConcreteTensionStiffening:
     The table data for this object are:
 
     - If **type**=STRAIN, the table data specify the following:
+    
         - Remaining direct stress after cracking, σt.
         - Direct cracking strain, ϵckt.
         - Direct cracking strain rate, ˙ϵckt.
@@ -27,6 +28,7 @@ class ConcreteTensionStiffening:
         - Value of the second field variable.
         - Etc.
     - If **type**=DISPLACEMENT, the table data specify the following:
+    
         - Remaining direct stress after cracking, σt.
         - Direct cracking displacement, uckt.
         - Direct cracking displacement rate, ˙uckt
@@ -35,6 +37,7 @@ class ConcreteTensionStiffening:
         - Value of the second field variable.
         - Etc.
     - If **type**=GFI, the table data specify the following:
+    
         - Failure stress, σt0σt⁢0.
         - Fracture energy, Gf.
         - Direct cracking displacement rate, ˙uckt.
@@ -78,9 +81,11 @@ class ConcreteTensionStiffening:
         type
             A SymbolicConstant specifying the type of postcracking behavior data. Possible values 
             are: 
+            
             - STRAIN, specifying postfailure stress as a function of cracking strain. 
             - DISPLACEMENT, specifying postfailure stress as a function of cracking displacement. 
             - GFI, specifying failure stress as a function of the fracture energy. 
+            
             The default value is STRAIN. 
         temperatureDependency
             A Boolean specifying whether the data depend on temperature. The default value is OFF. 

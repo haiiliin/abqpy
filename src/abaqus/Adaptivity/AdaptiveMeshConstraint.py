@@ -76,8 +76,7 @@ class AdaptiveMeshConstraint:
         name
             A String specifying the adaptive mesh constraint repository key.
         category
-            A SymbolicConstant specifying the category of the adaptive mesh constraint. Possible values are
-            MECHANICAL and THERMAL.
+            A SymbolicConstant specifying the category of the adaptive mesh constraint. Possible values are MECHANICAL and THERMAL.
         region
             A Region object specifying the region to which the adaptive mesh constraint is applied.
         localCsys

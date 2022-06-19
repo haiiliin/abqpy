@@ -51,6 +51,7 @@ class BiaxialTestData:
         ----------
         table
             A sequence of sequences of Floats specifying the following:
+            
             - Nominal stress, TB.
             - Nominal strain, ϵB.
         smoothing

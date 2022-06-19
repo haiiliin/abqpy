@@ -18,6 +18,7 @@ class CapCreepCohesion:
     The table data for this object are:
 
     - If **law**=STRAIN or **law**=TIME, the table data specify the following:
+    
         - A.
         - n.
         - m.
@@ -26,6 +27,7 @@ class CapCreepCohesion:
         - Value of the second field variable.
         - Etc.
     - If **law**=SINGHM, the table data specify the following:
+    
         - A.
         - α.
         - m.
@@ -35,6 +37,7 @@ class CapCreepCohesion:
         - Value of the second field variable.
         - Etc.
     - If **law**=POWER_LAW or **law**=TIME_POWER_LAW, the table data specify the following:
+    
         - q0.
         - n.
         - m.

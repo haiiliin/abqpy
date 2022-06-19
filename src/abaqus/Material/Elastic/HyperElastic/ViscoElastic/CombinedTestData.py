@@ -16,10 +16,12 @@ class CombinedTestData:
     The table data for this object are:
 
     If **time**=RELAXATION_TEST_DATA, the table data specify the following:
+    
         - Normalized shear modulus, gR⁢(t) (0≤gR(t)≤1).
         - Normalized volumetric (bulk) modulus, kR⁢(t) (0≤kR(t)≤1).
         - Time t (t>0).
     If **time**=CREEP_TEST_DATA, the table data specify the following:
+    
         - Normalized shear compliance, jS(t)(jS(t)≥1).
         - Normalized volumetric (bulk) compliance, jK⁢(t) (jK(t)≥1)
         - Time t (t>0)

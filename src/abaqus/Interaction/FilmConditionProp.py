@@ -48,6 +48,7 @@ class FilmConditionProp(ContactProperty):
             An Int specifying the number of field variable dependencies. The default value is 0.
         property
             A sequence of sequences of Floats specifying the following:
+            
             - The film coefficient, hh.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
@@ -77,6 +78,7 @@ class FilmConditionProp(ContactProperty):
             An Int specifying the number of field variable dependencies. The default value is 0.
         property
             A sequence of sequences of Floats specifying the following:
+            
             - The film coefficient, hh.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.

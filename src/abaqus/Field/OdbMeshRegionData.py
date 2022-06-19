@@ -33,19 +33,21 @@ class OdbMeshRegionData:
     dataType: SymbolicConstant
         A SymbolicConstant specifying the data type of the field output variable which should be
         aligned with the variable. Currently only SCALAR is supported. Possible values are:
-            - ENUMERATION
-            - BOOLEAN
-            - INTEGER
-            - SCALAR
-            - VECTOR
-            - QUATERNION_2D
-            - QUATERNION_3D
-            - TENSOR
-            - TENSOR_3D_FULL
-            - TENSOR_3D_PLANAR
-            - TENSOR_3D_SURFACE
-            - TENSOR_2D_PLANAR
-            - TENSOR_2D_SURFACE
+            
+        - ENUMERATION
+        - BOOLEAN
+        - INTEGER
+        - SCALAR
+        - VECTOR
+        - QUATERNION_2D
+        - QUATERNION_3D
+        - TENSOR
+        - TENSOR_3D_FULL
+        - TENSOR_3D_PLANAR
+        - TENSOR_3D_SURFACE
+        - TENSOR_2D_PLANAR
+        - TENSOR_2D_SURFACE
+        
         The default value is SCALAR.
     storageType: SymbolicConstant
         A SymbolicConstant specifying the storage type of the field output variable which should
@@ -317,6 +319,7 @@ class OdbMeshRegionData:
             - TENSOR_3D_SURFACE
             - TENSOR_2D_PLANAR
             - TENSOR_2D_SURFACE
+            
             The default value is SCALAR.
         storageType
             ​	A SymbolicConstant specifying the storage type of the field output variable which

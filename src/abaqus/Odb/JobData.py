@@ -23,7 +23,7 @@ class JobData:
     machineName: str
         A String specifying the name of the machine on which the analysis was run.
     productAddOns: str
-        A String specifying an odb_Sequence of productAddOns. Possible values are: Possible
+        A String specifying an odb_Sequence of productAddOns. Possible
         values are AQUA, DESIGN, BIORID, CEL, SOLITER, and CAVPARALLEL.
 
     Notes
@@ -59,6 +59,6 @@ class JobData:
     # A String specifying the name of the machine on which the analysis was run.
     machineName: str = ""
 
-    # A String specifying an odb_Sequence of productAddOns. Possible values are: Possible
+    # A String specifying an odb_Sequence of productAddOns. Possible
     # values are AQUA, DESIGN, BIORID, CEL, SOLITER, and CAVPARALLEL.
     productAddOns: str = ""

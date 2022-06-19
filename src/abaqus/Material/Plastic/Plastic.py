@@ -24,6 +24,7 @@ class Plastic:
     The table data for this object are:
 
     - If **hardening**=ISOTROPIC, or if **hardening**=COMBINED and **dataType**=HALF_CYCLE, the table data specify the following:
+    
         - Yield stress.
         - Plastic strain.
         - Equivalent Plastic strain rate, ε¯˙p⁢l.
@@ -32,6 +33,7 @@ class Plastic:
         - Value of the second field variable.
         - Etc.
     - If **hardening**=COMBINED and **dataType**=STABILIZED, the table data specify the following:
+    
         - Yield stress.
         - Plastic strain.
         - Strain range, if the data depend on strain range.
@@ -40,6 +42,7 @@ class Plastic:
         - Value of the second field variable.
         - Etc.
     - If **hardening**=COMBINED and **dataType**=PARAMETERS, the table data specify the following:
+    
         - Yield stress at zero Plastic strain.
         - The first kinematic hardening parameter, C1.
         - The first kinematic hardening parameter, γ1.
@@ -51,10 +54,12 @@ class Plastic:
         - Value of the second field variable.
         - Etc.
     - If **hardening**=KINEMATIC, the table data specify the following:
+    
         - Yield stress.
         - Plastic strain.
         - Temperature, if the data depend on temperature.
     - If **hardening**=JOHNSON_COOK, the table data specify the following:
+    
         - A.
         - B.
         - n.
@@ -62,6 +67,7 @@ class Plastic:
         - Melting temperature.
         - Transition temperature.
     - If **hardening**=USER, the table data specify the following:
+    
         - Hardening properties.
 
     The corresponding analysis keywords are:

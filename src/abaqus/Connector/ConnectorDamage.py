@@ -30,8 +30,11 @@ class ConnectorDamage(ConnectorBehaviorOption):
         session.odbs[name].sections[name].behaviorOptions[i]
 
         The table data for this object are:
+        
         Table data for **initiationTable**:
-        If **criterion**=FORCE, then each sequence of the table data specifies the following:
+        
+        - If **criterion**=FORCE, then each sequence of the table data specifies the following:
+           
             - Lower (compression) limiting force or moment. Use -1.0E+36 to indicate an unspecified lower limit.
             - Upper (tension) limiting force or moment. Use 1.0E+36 to indicate an unspecified upper limit. At least one
           limit, lower or upper, must be specified.
@@ -39,7 +42,9 @@ class ConnectorDamage(ConnectorBehaviorOption):
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-        If **criterion**=MOTION, then each sequence of the table data specifies the following:
+            
+        - If **criterion**=MOTION, then each sequence of the table data specifies the following:
+        
             - Lower (compression) limiting connector constitutive relative displacement or rotation. Use -1.0E+36 to
           indicate an unspecified lower limit.
             - Upper (tension) limiting connector constitutive relative displacement or rotation. Use 1.0E+36 to indicate an
@@ -48,7 +53,8 @@ class ConnectorDamage(ConnectorBehaviorOption):
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-        If **criterion**=PLASTIC_MOTION, then each sequence of the table data specifies the following:
+        - If **criterion**=PLASTIC_MOTION, then each sequence of the table data specifies the following:
+        
             - Relative equivalent Plastic displacement/rotation at which damage will be initiated.
             - Mode-mix ratio (only if **coupling**=COUPLED).
             - Relative equivalent Plastic displacement/rotation rate.
@@ -56,34 +62,40 @@ class ConnectorDamage(ConnectorBehaviorOption):
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
+            
         Table data for **evolutionTable**:
-        If **evolutionType**=MOTION and **softening**=LINEAR, then each sequence of the table data specifies the following:
+        
+        - If **evolutionType**=MOTION and **softening**=LINEAR, then each sequence of the table data specifies the following:
+        
             - Post-initiation equivalent relative Plastic motion at ultimate failure if **criterion**=PLASTIC_MOTION.
-          Otherwise, post-initiation constitutive relative motion (displacement/rotation) at ultimate failure.
+              Otherwise, post-initiation constitutive relative motion (displacement/rotation) at ultimate failure.
             - Mode-mix ratio (only if **coupling**=COUPLED and **criterion**=PLASTIC_MOTION).
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-        If **evolutionType**=MOTION and **softening**=EXPONENTIAL, then each sequence of the table data specifies the following:
+        - If **evolutionType**=MOTION and **softening**=EXPONENTIAL, then each sequence of the table data specifies the following:
+        
             - Post-initiation equivalent relative Plastic motion at ultimate failure if **criterion**=PLASTIC_MOTION.
-          Otherwise, post-initiation constitutive relative motion (displacement/rotation) at ultimate failure.
+              Otherwise, post-initiation constitutive relative motion (displacement/rotation) at ultimate failure.
             - Exponential law parameter.
             - Mode-mix ratio (only if **coupling**=COUPLED and **criterion**=PLASTIC_MOTION).
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-        If **evolutionType**=MOTION and **softening**=TABULAR, then each sequence of the table data specifies the following:
+        - If **evolutionType**=MOTION and **softening**=TABULAR, then each sequence of the table data specifies the following:
+        
             - Damage variable (cannot be less than 0 or greater than 1).
-            - Post-initiation equivalent relative Plastic motion if **criterion**=PLASTIC_MOTION. Otherwise, post-initiation
-          constitutive relative motion (displacement/rotation).
+            - Post-initiation equivalent relative Plastic motion if **criterion**=PLASTIC_MOTION.  
+              Otherwise, post-initiation constitutive relative motion (displacement/rotation).
             - Mode-mix ratio (only if **coupling**=COUPLED and **criterion**=PLASTIC_MOTION).
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-        If **evolutionType**=ENERGY, then each sequence of the table data specifies the following:
+        - If **evolutionType**=ENERGY, then each sequence of the table data specifies the following:
+        
             - Total energy dissipated by damage at ultimate failure.
             - Mode-mix ratio (only if **coupling**=COUPLED and **criterion**=PLASTIC_MOTION).
             - Temperature, if the data depend on temperature.

@@ -23,9 +23,11 @@ class PlanarTestData:
     The table data for this object are:
 
     - For a hyperelastic material model, the table data specify the following:
+    
         - Nominal stress, TS.
         - Nominal strain in the direction of loading, ϵS.
     - For a hyperfoam material model, the table data specify the following:
+    
         - Nominal stress, TL.
         - Nominal strain in the direction of loading, ϵp.
         - Nominal transverse strain, ϵ3. The default value is 0.

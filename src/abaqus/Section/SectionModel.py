@@ -232,10 +232,10 @@ class SectionModel(ModelBase):
             A sequence of pairs of Floats specifying the positions at which output is requested. The
             default value is an empty sequence.
         centroid
-            A pair of Floats specifying the *X–Y* coordinates of the centroid. The default value is
+            A pair of Floats specifying the **X - Y** coordinates of the centroid. The default value is
             (0.0, 0.0).
         shearCenter
-            A pair of Floats specifying the *X–Y* coordinates of the shear center. The default value
+            A pair of Floats specifying the **X - Y** coordinates of the shear center. The default value
             is (0.0, 0.0).
         profileEnd
             A String specifying the name of the end profile. The type of the end profile must be

@@ -62,7 +62,7 @@ class ElemType:
             - CODE, specifying add more codes.
             - UNKNOWN_TRI, specifying an unknown element type associated with a triangular shape.
             - UNKNOWN_QUAD, specifying an unknown element type associated with a quadrilateral
-            shape.
+              shape.
             - UNKNOWN_HEX, specifying an unknown element type associated with a hexahedral shape.
             - UNKNOWN_WEDGE, specifying an unknown element type associated with a wedge shape.
             - UNKNOWN_TET, specifying an unknown element type associated with a tetrahedral shape.

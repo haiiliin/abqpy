@@ -29,8 +29,10 @@ class QuickTimeOptions:
         compressionMethod
             A SymbolicConstant specifying the compression method for the QuickTime format. Possible
             values are:
+            
             - RAW24, specifying an uncompressed format of 24 bits per pixel.
             - RLE24, specifying a run length encoded format of 24 bits per pixel.
+            
             The default value is RLE24.
         sizeDefinition
             A SymbolicConstant specifying how the width and height of the image are specified.

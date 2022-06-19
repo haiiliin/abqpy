@@ -24,7 +24,9 @@ class BeamSection(Section):
         session.odbs[name].sections[name]
 
         The table data for this object are:
+        
         The table data specify the following:
+        
             - E, the Young's modulus of the section.
             - G, the torsional shear modulus of the section.
             - Thermal expansion coefficient, if using thermal expansion.
@@ -36,12 +38,12 @@ class BeamSection(Section):
     The corresponding analysis keywords are:
 
     - BEAM GENERAL SECTION
-            - BEAM SECTION
-            - BEAM FLUID INERTIA
-            - CENTROID
-            - DAMPING
-            - SHEAR CENTER
-            - SECTION POINTS
+    - BEAM SECTION
+    - BEAM FLUID INERTIA
+    - CENTROID
+    - DAMPING
+    - SHEAR CENTER
+    - SECTION POINTS
     """
 
     # A TransverseShearBeam object specifying the transverse shear stiffness properties.
@@ -168,10 +170,10 @@ class BeamSection(Section):
             A sequence of pairs of Floats specifying the positions at which output is requested. The
             default value is an empty sequence.
         centroid
-            A pair of Floats specifying the *X–Y* coordinates of the centroid. The default value is
+            A pair of Floats specifying the **X - Y** coordinates of the centroid. The default value is
             (0.0, 0.0).
         shearCenter
-            A pair of Floats specifying the *X–Y* coordinates of the shear center. The default value
+            A pair of Floats specifying the **X - Y** coordinates of the shear center. The default value
             is (0.0, 0.0).
         profileEnd
             A String specifying the name of the end profile. The type of the end profile must be
@@ -287,10 +289,10 @@ class BeamSection(Section):
             A sequence of pairs of Floats specifying the positions at which output is requested. The
             default value is an empty sequence.
         centroid
-            A pair of Floats specifying the *X–Y* coordinates of the centroid. The default value is
+            A pair of Floats specifying the **X - Y** coordinates of the centroid. The default value is
             (0.0, 0.0).
         shearCenter
-            A pair of Floats specifying the *X–Y* coordinates of the shear center. The default value
+            A pair of Floats specifying the **X - Y** coordinates of the shear center. The default value
             is (0.0, 0.0).
         profileEnd
             A String specifying the name of the end profile. The type of the end profile must be

@@ -61,6 +61,7 @@ class LocalStopCondition(StopCondition):
             - RESTRICTED_TASK_REGION_EQUIV_STRESS
             - SURFACE_POINT_EQUIV_STRESS
             - TASK_REGION_EQUIV_STRESS
+            
             The default value is MOVEMENT.
         identifierOperation
             A SymbolicConstant specifying the operation used to evaluate values in the region.
@@ -114,6 +115,7 @@ class LocalStopCondition(StopCondition):
             - RESTRICTED_TASK_REGION_EQUIV_STRESS
             - SURFACE_POINT_EQUIV_STRESS
             - TASK_REGION_EQUIV_STRESS
+            
             The default value is MOVEMENT.
         identifierOperation
             A SymbolicConstant specifying the operation used to evaluate values in the region.

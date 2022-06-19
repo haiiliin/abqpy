@@ -27,9 +27,11 @@ class OdbData:
         A tuple specifying the active frames, or the SymbolicConstant ALL. Each item in the
         sequence is a tuple defining the stepName followed by a sequence of expressions
         specifying frame numbers. The expression can be any of the following:
-            - An Int specifying a single frame number; for example, `1`.
-            - A String specifying a single frame number ; for example, `'7'`.
-            - A String specifying a sequence of frame numbers; for example, `'3:5'` and `'3:15:3'`.
+        
+        - An Int specifying a single frame number; for example, `1`.
+        - A String specifying a single frame number ; for example, `'7'`.
+        - A String specifying a sequence of frame numbers; for example, `'3:5'` and `'3:15:3'`.
+            
         For these expressions a negative number will indicate reverse numbering: -1 is the last
         frame of the step, -2 is the one before the last frame. Frame numbering starts at 0.
     stepPeriods: float

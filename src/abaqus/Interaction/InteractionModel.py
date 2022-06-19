@@ -240,29 +240,29 @@ class InteractionModel(
         nonreflectingType
             A SymbolicConstant specifying the type of nonreflecting geometry to be defined. Possible
             values are PLANE, IMPROVED, CIRCULAR, SPHERICAL, ELLIPTICAL, and PROLATE. The default
-            value is PLANE.This argument is valid only when *definition*=NONREFLECTING.
+            value is PLANE.This argument is valid only when **definition**=NONREFLECTING.
         radius
             A Float specifying the radius of the circle or sphere defining the boundary surface. The
-            default value is 1.0.This argument is valid only when *definition*=NONREFLECTING, and
-            *nonreflectingType*=CIRCULAR or SPHERICAL.
+            default value is 1.0.This argument is valid only when **definition**=NONREFLECTING, and
+            **nonreflectingType**=CIRCULAR or SPHERICAL.
         semimajorAxis
             A Float specifying the semimajor axis length of the ellipse or prolate spheroid defining
             the boundary surface. The default value is 1.0.This argument is valid only when
-            *definition*=NONREFLECTING, and *nonreflectingType*=ELLIPTICAL or PROLATE.
+            **definition**=NONREFLECTING, and **nonreflectingType**=ELLIPTICAL or PROLATE.
         eccentricity
             A Float specifying the eccentricity of the ellipse or prolate spheroid defining the
             boundary surface. The default value is 0.0.This argument is valid only when
-            *definition*=NONREFLECTING, and *nonreflectingType*=ELLIPTICAL or PROLATE.
+            **definition**=NONREFLECTING, and **nonreflectingType**=ELLIPTICAL or PROLATE.
         centerCoordinates
             A sequence of three Floats specifying the X, Y, and Z coordinates of the center of the
             ellipse or prolate spheroid defining the boundary surface. The default value is (0, 0,
-            0).This argument is valid only when *definition*=NONREFLECTING, and
-            *nonreflectingType*=ELLIPTICAL or PROLATE.
+            0).This argument is valid only when **definition**=NONREFLECTING, and
+            **nonreflectingType**=ELLIPTICAL or PROLATE.
         directionCosine
             A sequence of three Floats specifying the X, Y, and Z components of the direction cosine
             of the major axis of the ellipse or prolate spheroid defining the boundary surface. The
-            default value is (0, 0, 1).This argument is valid only when *definition*=NONREFLECTING,
-            and *nonreflectingType*=ELLIPTICAL or PROLATE.
+            default value is (0, 0, 1).This argument is valid only when **definition**=NONREFLECTING,
+            and **nonreflectingType**=ELLIPTICAL or PROLATE.
 
         Returns
         -------
@@ -309,13 +309,13 @@ class InteractionModel(
             are IMPEDANCE and ADMITTANCE.
         table
             A sequence of sequences of Floats specifying acoustic impedance properties.If
-            *tableType*=IMPEDANCE, each sequence of the table data specifies:The real part of the
+            **tableType**=IMPEDANCE, each sequence of the table data specifies:The real part of the
             complex impedance.The imaginary part of the complex impedance.Frequency, if the data
-            depend on frequency.If *tableType*=ADMITTANCE, each sequence of the table data
+            depend on frequency.If **tableType**=ADMITTANCE, each sequence of the table data
             specifies:The real part of the complex admittance.The imaginary part of the complex
             admittance.Frequency, if the data depend on frequency.
         frequencyDependency
-            A Boolean specifying whether the *table* data depend on frequency. The default value is
+            A Boolean specifying whether the **table** data depend on frequency. The default value is
             OFF.
 
         Returns
@@ -356,7 +356,7 @@ class InteractionModel(
             A String specifying the repository key.
         createStepName
             A String specifying the name of the step in which the actuator/sensor interaction is
-            created. *createStepName* must be set to 'Initial'.
+            created. **createStepName** must be set to 'Initial'.
         point
             A Region object specifying the point at which the constraint is applied.
         interactionProperty
@@ -492,7 +492,7 @@ class InteractionModel(
         surfaceEmissivities
             A sequence of Strings specifying the names of the Cavity Radiation properties containing
             the surface emissivity data. One name per specified surface. The emissivity data is
-            ignored when *surfaceReflection*=OFF.
+            ignored when **surfaceReflection**=OFF.
         ambientTemp
             None or a Float specifying the reference ambient temperature value, θ0θ0. Specifying a
             value indicates an open cavity. The default value is None.
@@ -502,12 +502,12 @@ class InteractionModel(
             default value is BLOCKING_ALL.
         blockingSurfaces
             A RegionArray object specifying the surfaces that provide blocking inside the cavity.
-            This argument applies only when *blocking*=PARTIAL_BLOCKING.
+            This argument applies only when **blocking**=PARTIAL_BLOCKING.
         rangeOfView
             None or a Float specifying the maximum distance between surface facets at which
             viewfactors are calculated. More distant facets are deemed too far apart to exchange
             significant amounts of heat through radiation effects, and the viewfactors between these
-            facets are assumed to be zero. If *rangeOfView*=None, there is no upper limit. The
+            facets are assumed to be zero. If **rangeOfView**=None, there is no upper limit. The
             default value is None.
         surfaceReflection
             A Boolean specifying whether heat reflections are to be included in the cavity radiation
@@ -530,17 +530,17 @@ class InteractionModel(
             specified for axisymmetric models. The default value is OFF.
         cyclicImages
             An Int specifying the number of cyclically similar images that compose the cavity formed
-            as a result of this symmetry. This argument applies only when *cyclicSymmetry*=ON. The
+            as a result of this symmetry. This argument applies only when **cyclicSymmetry**=ON. The
             default value is 2.
         cyclicRotPt
             A ModelDot object specifying the rotation axis point. This argument applies only when
-            *cyclicSymmetry*=ON.
+            **cyclicSymmetry**=ON.
         cyclicRotEndPt
             A ModelDot object specifying the rotation axis end point. This argument applies only for
-            three-dimensional models, and only when *cyclicSymmetry*=ON.
+            three-dimensional models, and only when **cyclicSymmetry**=ON.
         cyclicSymPt
             A ModelDot object specifying the symmetry axis end point. This argument applies only
-            when *cyclicSymmetry*=ON.
+            when **cyclicSymmetry**=ON.
         periodicSymmetries
             An Int specifying the number of periodic symmetries that will be applied. The default
             value is 0.
@@ -548,90 +548,90 @@ class InteractionModel(
             An Int specifying the number of repetitions used in the numerical calculation of the
             cavity viewfactors resulting from the first periodic symmetry. The result of this
             symmetry is a cavity composed of the cavity surface defined in the model plus twice the
-            value of *periodicImages_1*. This argument applies only when *periodicSymmetries* is
+            value of **periodicImages_1**. This argument applies only when **periodicSymmetries** is
             greater than zero. The default value is 2.
         periodicImages_2
             An Int specifying the number of repetitions used in the numerical calculation of the
             cavity viewfactors resulting from the second periodic symmetry. The result of this
             symmetry is a cavity composed of the cavity surface defined in the model plus twice the
-            value of *periodicImages_2*. This argument applies only when *periodicSymmetries* is
+            value of **periodicImages_2**. This argument applies only when **periodicSymmetries** is
             greater than one. The default value is 2.
         periodicImages_3
             An Int specifying the number of repetitions used in the numerical calculation of the
             cavity viewfactors resulting from the third periodic symmetry. The result of this
             symmetry is a cavity composed of the cavity surface defined in the model plus twice the
-            value of *periodicImages_3*. This argument applies only when *periodicSymmetries* = 3.
+            value of **periodicImages_3**. This argument applies only when **periodicSymmetries** = 3.
             The default value is 2.
         periodicSymAxis_1
             A straight Edge, a Datum object representing a datum axis, or an ElementEdge object
             indicating the first line of symmetry in two-dimensional models. This argument applies
-            only for 2D models, and when *periodicSymmetries* is greater than zero.
+            only for 2D models, and when **periodicSymmetries** is greater than zero.
         periodicSymAxis_2
             A straight Edge, a Datum object representing a datum axis, or an ElementEdge object
             indicating the second line of symmetry in two-dimensional models. This argument applies
-            only for two-dimensional models, and when *periodicSymmetries* = 2.
+            only for two-dimensional models, and when **periodicSymmetries** = 2.
         periodicSymPlane_1
             A planar Face, an ElementFace, or a Datum object representing a datum plane; indicating
             the first plane of symmetry in three-dimensional models. This argument applies only for
-            three-dimensional models, and when *periodicSymmetries* is greater than zero.
+            three-dimensional models, and when **periodicSymmetries** is greater than zero.
         periodicSymPlane_2
             A planar Face, an ElementFace, or a Datum object representing a datum plane; indicating
             the second plane of symmetry in three-dimensional models. This argument applies only for
-            three-dimensional models, and when *periodicSymmetries* is greater than one.
+            three-dimensional models, and when **periodicSymmetries** is greater than one.
         periodicSymPlane_3
             A planar Face, an ElementFace, or a Datum object representing a datum plane; indicating
             the third plane of symmetry in three-dimensional models. This argument applies only for
-            three-dimensional models, and when *periodicSymmetries* = 3.
+            three-dimensional models, and when **periodicSymmetries** = 3.
         periodicDistance_1
             A sequence of sequences of Floats specifying the two points of the vector that describes
             the periodic distance for the first periodic symmetry. Each point is defined by a tuple
             of three coordinates indicating its position. This argument applies only when
-            *periodicSymmetries* is greater than zero. The default value is an empty sequence.
+            **periodicSymmetries** is greater than zero. The default value is an empty sequence.
         periodicDistance_2
             A sequence of sequences of Floats specifying the two points of the vector that describes
             the periodic distance for the second periodic symmetry. Each point is defined by a tuple
             of three coordinates indicating its position. This argument applies only when
-            *periodicSymmetries* is greater than one. The default value is an empty sequence.
+            **periodicSymmetries** is greater than one. The default value is an empty sequence.
         periodicDistance_3
             A sequence of sequences of Floats specifying the two points of the vector that describes
             the periodic distance for the third periodic symmetry. Each point is defined by a tuple
             of three coordinates indicating its position. This argument applies only when
-            *periodicSymmetries* = 3. The default value is an empty sequence.
+            **periodicSymmetries** = 3. The default value is an empty sequence.
         periodicSymZ
             None or a Float specifying the Z value indicating the symmetry reference line in
             axisymmetric models. This argument applies only for axisymmetric models, and when
-            *periodicSymmetries* = 1. The default value is None.
+            **periodicSymmetries** = 1. The default value is None.
         periodicDistZ
             None or a Float specifying the Z value indicating the periodic distance in axisymmetric
             models. This argument applies only for axisymmetric models, and when
-            *periodicSymmetries* = 1. The default value is None.
+            **periodicSymmetries** = 1. The default value is None.
         reflectionSymmetries
             An Int specifying the number of reflection symmetries will be applied. The default value
             is 0.
         reflectionSymAxis_1
             A straight Edge, a Datum object representing a datum axis, or an ElementEdge object
             indicating the first line of symmetry in two-dimensional models. This argument applies
-            only for two-dimensional models, and when *reflectionSymmetries* is greater than zero.
+            only for two-dimensional models, and when **reflectionSymmetries** is greater than zero.
         reflectionSymAxis_2
             A straight Edge, a Datum object representing a datum axis, or an ElementEdge object
             indicating the second line of symmetry in two-dimensional models. This argument applies
-            only for two-dimensional models, and when *reflectionSymmetries* = 2.
+            only for two-dimensional models, and when **reflectionSymmetries** = 2.
         reflectionSymPlane_1
             A planar Face, an ElementFace, or a Datum object representing a datum plane; indicating
             the first plane of symmetry in three-dimensional models. This argument applies only for
-            three-dimensional models, and when *reflectionSymmetries* is greater than zero.
+            three-dimensional models, and when **reflectionSymmetries** is greater than zero.
         reflectionSymPlane_2
             A planar Face, an ElementFace, or a Datum object representing a datum plane; indicating
             the second plane of symmetry in three-dimensional models. This argument applies only for
-            three-dimensional models, and when *reflectionSymmetries* is greater than one.
+            three-dimensional models, and when **reflectionSymmetries** is greater than one.
         reflectionSymPlane_3
             A planar Face, an ElementFace, or a Datum object representing a datum plane; indicating
             the third plane of symmetry in three-dimensional models. This argument applies only for
-            three-dimensional models, and when *reflectionSymmetries* = 3.
+            three-dimensional models, and when **reflectionSymmetries** = 3.
         reflectionSymZ
             None or a Float specifying the Z value indicating the symmetry reference line in
             axisymmetric models. This argument applies only for axisymmetric models, and when
-            *reflectionSymmetries* = 1. The default value is None.
+            **reflectionSymmetries** = 1. The default value is None.
 
         Returns
         -------
@@ -769,11 +769,11 @@ class InteractionModel(
             Abaqus/Explicit analysis.
         interactionProperty
             A String specifying the name of the FilmConditionProp object associated with this
-            interaction. The *interactionProperty* argument applies only when
-            *definition*=PROPERTY_REF. The default value is an empty string.
+            interaction. The **interactionProperty** argument applies only when
+            **definition**=PROPERTY_REF. The default value is an empty string.
         field
             A String specifying the name of the AnalyticalField object associated with this
-            interaction. The *field* argument applies only when *definition*=FIELD. The default
+            interaction. The **field** argument applies only when **definition**=FIELD. The default
             value is an empty string.
         sinkTemperature
             A Float specifying the reference sink temperature, θ0θ0. The default value is 0.0.
@@ -785,8 +785,8 @@ class InteractionModel(
             Abaqus/Explicit analysis to specify that the reference sink temperature is applied
             throughout the step.
         filmCoeff
-            A Float specifying the reference film coefficient value, hh. The *filmCoeff* argument
-            applies when *definition*=EMBEDDED_COEFF, *definition*=USER_SUB, or *definition*=FIELD.
+            A Float specifying the reference film coefficient value, hh. The **filmCoeff** argument
+            applies when **definition**=EMBEDDED_COEFF, **definition**=USER_SUB, or **definition**=FIELD.
             The default value is 0.0.
         filmCoeffAmplitude
             A String specifying the name of the Amplitude object that gives the variation of the
@@ -797,8 +797,8 @@ class InteractionModel(
             throughout the step.
         sinkFieldName
             A String specifying the name of the AnalyticalField or DiscreteField object associated
-            with the sink temperature. The *sinkFieldName* argument applies only when
-            *sinkDistributionType*=ANALYTICAL_FIELD or *sinkDistributionType*=DISCRETE_FIELD. The
+            with the sink temperature. The **sinkFieldName** argument applies only when
+            **sinkDistributionType**=ANALYTICAL_FIELD or **sinkDistributionType**=DISCRETE_FIELD. The
             default value is an empty string.
         sinkDistributionType
             A SymbolicConstant specifying how the sink temperature is distributed. Possible values
@@ -879,7 +879,7 @@ class InteractionModel(
             Abaqus/Explicit analysis.
         field
             A String specifying the name of the AnalyticalField object associated with this
-            interaction. The *field* argument applies only when *distributionType*=ANALYTICAL_FIELD.
+            interaction. The **field** argument applies only when **distributionType**=ANALYTICAL_FIELD.
             The default value is an empty string.
         distributionType
             A SymbolicConstant specifying how the radiation is defined. Possible values are UNIFORM
@@ -1147,7 +1147,7 @@ class InteractionModel(
         axisPoint1
             A Region object specifying the first point of the axis of symmetry. The region should
             contain exactly one mesh node, vertex, interesting point, reference point, or datum
-            point. In a two-dimensional model *axisPoint1* is the only point used to define the axis
+            point. In a two-dimensional model **axisPoint1** is the only point used to define the axis
             of symmetry.
         axisPoint2
             A Region object specifying the second point of the axis of symmetry. The region should
@@ -1155,8 +1155,8 @@ class InteractionModel(
             point. This point is ignored in a two-dimensional model.
         extractedNodalDiameter
             A SymbolicConstant specifying whether Abaqus should extract all possible nodal diameters
-            or the nodal diameters between the user-specified values for *lowestNodalDiameter* and
-            *highestNodalDiameter*. Possible values are ALL_NODAL_DIAMETER and
+            or the nodal diameters between the user-specified values for **lowestNodalDiameter** and
+            **highestNodalDiameter**. Possible values are ALL_NODAL_DIAMETER and
             SPECIFIED_NODAL_DIAMETER. The default value is ALL_NODAL_DIAMETER.
         lowestNodalDiameter
             An Int specifying the lowest nodal diameter to be used in the eigenfrequency analysis.
@@ -1164,19 +1164,19 @@ class InteractionModel(
         highestNodalDiameter
             An Int specifying the highest nodal diameter to be used in the eigenfrequency analysis.
             This argument value should be less than or equal to the half of the total number of
-            sectors (as specified in the *repetitiveSectors* parameter). The default value is 0.
+            sectors (as specified in the **repetitiveSectors** parameter). The default value is 0.
         excitationNodalDiameter
             An Int specifying the nodal diameter for which the modal-based steady-state dynamic
             analysis will be performed. This value should be greater than or equal to the lowest
-            nodal diameter (specified in the *lowestNodalDiameter* parameter), and less than or
-            equal to the highest nodal diameter (specified in the *highestNodalDiameter* parameter).
+            nodal diameter (specified in the **lowestNodalDiameter** parameter), and less than or
+            equal to the highest nodal diameter (specified in the **highestNodalDiameter** parameter).
             The default value is 0.
         adjustTie
             A Boolean specifying whether or not to adjust the secondary surface of the cyclic
             symmetry to tie it to the main surface. The default value is ON.
         positionTolerance
             A Float specifying the position tolerance. The*positionTolerance* argument applies only
-            when *positionToleranceMethod*=SPECIFY_TOLERANCE. The default value is 0.0.
+            when **positionToleranceMethod**=SPECIFY_TOLERANCE. The default value is 0.0.
         positionToleranceMethod
             A SymbolicConstant specifying the method used to determine the position tolerance.
             Possible values are COMPUTED_TOLERANCE and SPECIFY_TOLERANCE. The default value is
@@ -1223,7 +1223,7 @@ class InteractionModel(
             A String specifying the repository key.
         createStepName
             A String specifying the name of the step in which the ElasticFoundation object is
-            created. *createStepName* must be set to 'Initial'.
+            created. **createStepName** must be set to 'Initial'.
         surface
             A Region object specifying the surface to which the foundation applies.
         stiffness
@@ -1268,7 +1268,7 @@ class InteractionModel(
             DEFAULT and SPECIFY. The default value is DEFAULT.
         globTrkInc
             An Int specifying the maximum number of increments between global contact searches. The
-            *globTrkInc* argument applies only when *globTrkChoice*=SPECIFY. The default value is
+            **globTrkInc** argument applies only when **globTrkChoice**=SPECIFY. The default value is
             100 for surface-to-surface contact and 4 for self-contact.
         fastLocalTrk
             A Boolean specifying whether to use the more computationally efficient local tracking
@@ -1342,8 +1342,8 @@ class InteractionModel(
             EMBEDDED_COEFF, PROPERTY_REF, USER_SUB, and FIELD.
         interactionProperty
             A String specifying the name of the FilmConditionProp object associated with this
-            interaction. The *interactionProperty* argument applies only when
-            *definition*=PROPERTY_REF. The default value is an empty string.
+            interaction. The **interactionProperty** argument applies only when
+            **definition**=PROPERTY_REF. The default value is an empty string.
         sinkTemperature
             A Float specifying the reference sink temperature, θ0θ0. The default value is 0.0.
         sinkAmplitude
@@ -1354,8 +1354,8 @@ class InteractionModel(
             string in an Abaqus/Explicit analysis to specify that the reference sink temperature is
             applied throughout the step.
         filmCoeff
-            A Float specifying the reference film coefficient value, hh. The *filmCoeff* argument
-            applies when *definition*=EMBEDDED_COEFF, *definition*=USER_SUB, or *definition*=FIELD.
+            A Float specifying the reference film coefficient value, hh. The **filmCoeff** argument
+            applies when **definition**=EMBEDDED_COEFF, **definition**=USER_SUB, or **definition**=FIELD.
             The default value is 0.0.
         filmCoeffAmplitude
             A String specifying the name of the Amplitude object that gives the variation of the
@@ -1366,12 +1366,12 @@ class InteractionModel(
             applied throughout the step.
         field
             A String specifying the name of the AnalyticalField object associated with this
-            interaction. The *field* argument applies only when *definition*=FIELD. The default
+            interaction. The **field** argument applies only when **definition**=FIELD. The default
             value is an empty string.
         sinkFieldName
             A String specifying the name of the AnalyticalField or DiscreteField object associated
-            with the sink temperature. The *sinkFieldName* argument applies only when
-            *sinkDistributionType*=ANALYTICAL_FIELD or *sinkDistributionType*=DISCRETE_FIELD. The
+            with the sink temperature. The **sinkFieldName** argument applies only when
+            **sinkDistributionType**=ANALYTICAL_FIELD or **sinkDistributionType**=DISCRETE_FIELD. The
             default value is an empty string.
         sinkDistributionType
             A SymbolicConstant specifying how the sink temperature is distributed. Possible values
@@ -1424,6 +1424,7 @@ class InteractionModel(
             An Int specifying the number of field variable dependencies. The default value is 0.
         property
             A sequence of sequences of Floats specifying the following:
+            
             - The film coefficient, hh.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
@@ -1480,7 +1481,7 @@ class InteractionModel(
             This argument is valid only when using two-dimensional models. The default value is 1.0.
         useAdiabatic
             A Boolean specifying whether adiabatic behavior is assumed for the ideal gas. This
-            argument is valid only when *interactionProperty* specifies a pneumatic definition. The
+            argument is valid only when **interactionProperty** specifies a pneumatic definition. The
             default value is OFF.
         checkNormals
             A Boolean specifying whether the analysis will check the consistency of the surface
@@ -1543,31 +1544,32 @@ class InteractionModel(
             values are HYDRAULIC and PNEUMATIC. The default value is HYDRAULIC.
         fluidDensity
             None or a Float specifying the reference fluid density. This argument is applicable only
-            when *definition*=HYDRAULIC, and is required in that case. The default value is None.
+            when **definition**=HYDRAULIC, and is required in that case. The default value is None.
         molecularWeight
             None or a Float specifying the molecular weight of the ideal gas species. This argument
-            is applicable only when *definition*=PNEUMATIC, and is required in that case. The
+            is applicable only when **definition**=PNEUMATIC, and is required in that case. The
             default value is None.
         useExpansion
             A Boolean specifying whether thermal expansion coefficients will be defined. This
-            argument is applicable only when *definition*=HYDRAULIC. The default value is OFF.
+            argument is applicable only when **definition**=HYDRAULIC. The default value is OFF.
         expansionTempDep
             A Boolean specifying whether the thermal fluid expansion data will have temperature
-            dependency. This argument is applicable only when *definition*=HYDRAULIC and when
-            *useExpansion*=True. The default value is OFF.
+            dependency. This argument is applicable only when **definition**=HYDRAULIC and when
+            **useExpansion**=True. The default value is OFF.
         expansionDependencies
             An Int specifying the number of field variable dependencies in the thermal fluid
-            expansion data. This argument is applicable only when *definition*=HYDRAULIC and when
-            *useExpansion*=True. The default value is 0.
+            expansion data. This argument is applicable only when **definition**=HYDRAULIC and when
+            **useExpansion**=True. The default value is 0.
         referenceTemperature
             A Float specifying the reference temperature for the coefficient of thermal expansion.
-            This argument is applicable only when *definition*=HYDRAULIC, when *useExpansion*=True,
-            and when either *expansionTempDep*=True or when *expansionDependencies* is greater than
+            This argument is applicable only when **definition**=HYDRAULIC, when **useExpansion**=True,
+            and when either **expansionTempDep**=True or when **expansionDependencies** is greater than
             0. The default value is 0.0.
         expansionTable
             A sequence of sequences of Floats specifying the thermal expansion coefficients. This
-            argument is applicable only when *definition*=HYDRAULIC and when *useExpansion*=True.
+            argument is applicable only when **definition**=HYDRAULIC and when **useExpansion**=True.
             Each sequence contains the following data:
+            
             - The mean coefficient of thermal expansion.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
@@ -1575,19 +1577,20 @@ class InteractionModel(
             - Etc.
         useBulkModulus
             A Boolean specifying whether fluid bulk modulus values will be defined. This argument is
-            applicable only when *definition*=HYDRAULIC. The default value is OFF.
+            applicable only when **definition**=HYDRAULIC. The default value is OFF.
         bulkModulusTempDep
             A Boolean specifying whether the fluid bulk modulus data will have temperature
-            dependency. This argument is applicable only when *definition*=HYDRAULIC and when
-            *useBulkModulus*=True. The default value is OFF.
+            dependency. This argument is applicable only when **definition**=HYDRAULIC and when
+            **useBulkModulus**=True. The default value is OFF.
         bulkModulusDependencies
             An Int specifying the number of field variable dependencies in the fluid bulk modulus
-            data. This argument is applicable only when *definition*=HYDRAULIC and when
-            *useBulkModulus*=True. The default value is 0.
+            data. This argument is applicable only when **definition**=HYDRAULIC and when
+            **useBulkModulus**=True. The default value is 0.
         bulkModulusTable
             A sequence of sequences of Floats specifying the fluid bulk modulus values. This
-            argument is applicable only when *definition*=HYDRAULIC and when *useBulkModulus*=True.
+            argument is applicable only when **definition**=HYDRAULIC and when **useBulkModulus**=True.
             Each sequence contains the following data:
+            
             - The fluid bulk modulus.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
@@ -1595,37 +1598,39 @@ class InteractionModel(
             - Etc.
         useCapacity
             A Boolean specifying whether molar heat capacity values will be defined. This argument
-            is applicable only when *definition*=PNEUMATIC. The default value is OFF.
+            is applicable only when **definition**=PNEUMATIC. The default value is OFF.
         capacityType
             A SymbolicConstant specifying the method to define the molar heat capacity. Possible
             values are POLYNOMIAL and TABULAR. The default value is POLYNOMIAL.
         capacityTempDep
             A Boolean specifying whether the molar heat capacity data will have temperature
-            dependency. This argument is applicable only when *definition*=PNEUMATIC, when
-            *useCapacity*=True, and when *capacityType*=TABULAR. The default value is OFF.
+            dependency. This argument is applicable only when **definition**=PNEUMATIC, when
+            **useCapacity**=True, and when **capacityType**=TABULAR. The default value is OFF.
         capacityDependencies
             An Int specifying the number of field variable dependencies in the molar heat capacity
-            data. This argument is applicable only when *definition*=PNEUMATIC, when
-            *useCapacity*=True, and when *capacityType*=TABULAR. The default value is 0.
+            data. This argument is applicable only when **definition**=PNEUMATIC, when
+            **useCapacity**=True, and when **capacityType**=TABULAR. The default value is 0.
         capacityTable
             A sequence of sequences of Floats specifying the molar heat capacity values in the form
             of a polynomial expression. This argument is applicable only when
-            *definition*=PNEUMATIC, when *useCapacity*=True, and when *capacityType*=POLYNOMIAL. In
+            **definition**=PNEUMATIC, when **useCapacity**=True, and when **capacityType**=POLYNOMIAL. In
             this form, only one sequence is specified and that sequence contains the following data:
+            
             - The first molar heat capacity coefficient.
             - The second molar heat capacity coefficient.
             - The third molar heat capacity coefficient.
             - The fourth molar heat capacity coefficient.
             - The fifth molar heat capacity coefficient.
-            Alternatively, the sequence data may specify the molar heat capacity values at constant
-            pressure for an ideal gas species. This argument is applicable only when
-            *definition*=PNEUMATIC, when *useCapacity*=True, and when *capacityType*=TABULAR. Each
-            sequence contains the following data:
-            - The molar heat capacity at constant pressure.
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
+              Alternatively, the sequence data may specify the molar heat capacity values at constant
+              pressure for an ideal gas species. This argument is applicable only when
+              **definition**=PNEUMATIC, when **useCapacity**=True, and when **capacityType**=TABULAR. Each
+              sequence contains the following data:
+              
+              - The molar heat capacity at constant pressure.
+              - Temperature, if the data depend on temperature.
+              - Value of the first field variable, if the data depend on field variables.
+              - Value of the second field variable.
+              - Etc.
 
         Returns
         -------
@@ -1681,7 +1686,7 @@ class InteractionModel(
             A String specifying the name of the step in which the FluidExchange object is created.
         firstCavity
             A String specifying the first FluidCavity object associated with this interaction. This
-            will be the only cavity specified if *definition*=TO_ENVIRONMENT.
+            will be the only cavity specified if **definition**=TO_ENVIRONMENT.
         interactionProperty
             A String specifying the FluidExchangeProperty object associated with this interaction.
         definition
@@ -1689,7 +1694,7 @@ class InteractionModel(
             are TO_ENVIRONMENT and BETWEEN_CAVITIES. The default value is TO_ENVIRONMENT.
         secondCavity
             A String specifying the second FluidCavity object associated with this interaction. This
-            argument is applicable only when *definition*=BETWEEN_CAVITIES.
+            argument is applicable only when **definition**=BETWEEN_CAVITIES.
         exchangeArea
             A Float specifying the effective exchange area. The default value is 1.0.
 
@@ -1733,8 +1738,9 @@ class InteractionModel(
             A String specifying the interaction property repository key.
         dataTable
             A sequence of sequences of Floats specifying the viscous and hydrodynamic resistance
-            coefficients when *definition*=BULK_VISCOSITY. Each sequence contains the following
+            coefficients when **definition**=BULK_VISCOSITY. Each sequence contains the following
             data:
+            
             - The viscous resistance coefficient.
             - The hydrodynamic resistance coefficient.
             - The average absolute pressure, if the data depend on pressure.
@@ -1742,31 +1748,37 @@ class InteractionModel(
             - The value of the first field variable, if the data depend on field variables.
             - The value of the second field variable.
             - Etc.
+            
             Alternatively, the sequence data may specify the mass flow rate. This is applicable only
-            when *definition*=MASS_FLUX. In this form, only one sequence is specified and that
+            when **definition**=MASS_FLUX. In this form, only one sequence is specified and that
             sequence contains the following data:
+            
             - The mass flow rate per unit area.
-            Alternatively, the sequence data may specify the mass rate leakage. This is applicable
-            only when *definition*=MASS_RATE_LEAK. Each sequence contains the following data:
-            - The absolute value of the mass flow rate per unit area. (The first tabular value
-            entered must always be zero.)
-            - The absolute value of the pressure difference. (The first tabular value entered must
-            always be zero.)
-            - The average absolute pressure, if the data depend on pressure.
-            - The average temperature, if the data depend on temperature.
-            - The value of the first field variable, if the data depend on field variables.
-            - The value of the second field variable.
-            - Etc.
+              Alternatively, the sequence data may specify the mass rate leakage. This is applicable
+              only when **definition**=MASS_RATE_LEAK. Each sequence contains the following data:
+              
+              - The absolute value of the mass flow rate per unit area. (The first tabular value
+                entered must always be zero.)
+              - The absolute value of the pressure difference. (The first tabular value entered must
+                always be zero.)
+              - The average absolute pressure, if the data depend on pressure.
+              - The average temperature, if the data depend on temperature.
+              - The value of the first field variable, if the data depend on field variables.
+              - The value of the second field variable.
+              - Etc.
+            
             Alternatively, the sequence data may specify the volume flow rate. This is applicable
-            only when *definition*=VOL_FLUX. In this form, only one sequence is specified and that
+            only when **definition**=VOL_FLUX. In this form, only one sequence is specified and that
             sequence contains the following data:
+            
             - The volumetric flow rate per unit area.
-            Alternatively, the sequence data may specify the volume rate leakage. This is applicable
-            only when *definition*=VOL_RATE_LEAK. Each sequence contains the following data:
+              Alternatively, the sequence data may specify the volume rate leakage. This is applicable
+              only when **definition**=VOL_RATE_LEAK. Each sequence contains the following data:
+            
             - The absolute value of the volumetric flow rate per unit area. (The first tabular value
-            entered must always be zero.)
+              entered must always be zero.)
             - The absolute value of the pressure difference. (The first tabular value entered must
-            always be zero.)
+              always be zero.)
             - The average absolute pressure, if the data depend on pressure.
             - The average temperature, if the data depend on temperature.
             - The value of the first field variable, if the data depend on field variables.
@@ -1778,16 +1790,16 @@ class InteractionModel(
             VOL_RATE_LEAK. The default value is BULK_VISCOSITY.
         pressureDependency
             A Boolean specifying whether the data will have pressure dependency. This argument is
-            applicable only when *definition*=BULK_VISCOSITY, or when *definition*=MASS_RATE_LEAK,
-            or when *definition*=VOL_RATE_LEAK. The default value is OFF.
+            applicable only when **definition**=BULK_VISCOSITY, or when **definition**=MASS_RATE_LEAK,
+            or when **definition**=VOL_RATE_LEAK. The default value is OFF.
         temperatureDependency
             A Boolean specifying whether the data will have temperature dependency. This argument is
-            applicable only when *definition*=BULK_VISCOSITY, or when *definition*=MASS_RATE_LEAK,
-            or when *definition*=VOL_RATE_LEAK. The default value is OFF.
+            applicable only when **definition**=BULK_VISCOSITY, or when **definition**=MASS_RATE_LEAK,
+            or when **definition**=VOL_RATE_LEAK. The default value is OFF.
         fieldDependencies
             An Int specifying the number of field variable dependencies in the data. This argument
-            is applicable only when *definition*=BULK_VISCOSITY, or when
-            *definition*=MASS_RATE_LEAK, or when *definition*=VOL_RATE_LEAK. The default value is 0.
+            is applicable only when **definition**=BULK_VISCOSITY, or when
+            **definition**=MASS_RATE_LEAK, or when **definition**=VOL_RATE_LEAK. The default value is 0.
 
         Returns
         -------
@@ -1840,7 +1852,7 @@ class InteractionModel(
             A Region object specifying the incident wave source point.
         standoffPoint
             A Region object specifying the incident wave standoff point.This argument is not valid
-            when *definition*=CONWEP.
+            when **definition**=CONWEP.
         surface
             A Region object specifying the surface defining the incident wave interaction. In
             problems involving fluid/surface boundaries, both the fluid surface and the solid
@@ -1854,31 +1866,31 @@ class InteractionModel(
             default value is PRESSURE.
         amplitude
             A String specifying the name of the Amplitude object that defines the fluid pressure
-            time history at the standoff point, if *definition*=PRESSURE. If
-            *definition*=ACCELERATION, then this string specifies the name of the Amplitude object
+            time history at the standoff point, if **definition**=PRESSURE. If
+            **definition**=ACCELERATION, then this string specifies the name of the Amplitude object
             that defines the fluid particle acceleration time history at the standoff point. This
-            member can be specified only if *definition*=PRESSURE or ACCELERATION. The default value
+            member can be specified only if **definition**=PRESSURE or ACCELERATION. The default value
             is an empty string.
         imaginaryAmplitude
             A String specifying the name of the Amplitude object that defines the imaginary
             component of the fluid pressure time history at the standoff point. This member is
-            applicable only for linear perturbation steps and if *definition*=PRESSURE. The default
+            applicable only for linear perturbation steps and if **definition**=PRESSURE. The default
             value is an empty string.
         surfaceNormal
             A sequence of three Floats specifying the X, Y, and Z components of the direction cosine
-            of the fluid surface normal.This argument is valid only when *definition*=UNDEX.
+            of the fluid surface normal.This argument is valid only when **definition**=UNDEX.
         initialDepth
             None or a Float specifying the initial depth of the UNDEX bubble. The default value is
-            None.This argument is valid only when *definition*=UNDEX.
+            None.This argument is valid only when **definition**=UNDEX.
         referenceMagnitude
             A Float specifying the reference magnitude.This argument is not valid when
-            *definition*=CONWEP.
+            **definition**=CONWEP.
         detonationTime
             A Float specifying the time of detonation, given in total time.This argument is valid
-            only when *definition*=CONWEP.
+            only when **definition**=CONWEP.
         magnitudeFactor
             A Float specifying the magnitude scale factor. The default value is 1.0.This argument is
-            valid only when *definition*=CONWEP.
+            valid only when **definition**=CONWEP.
 
         Returns
         -------
@@ -1957,115 +1969,115 @@ class InteractionModel(
         propagationModel
             A SymbolicConstant specifying the spherical propagation model. Possible values are
             ACOUSTIC, UNDEX_CHARGE, and GENERALIZED_DECAY. The default value is ACOUSTIC.This
-            argument is valid only when *definition*=SPHERICAL.
+            argument is valid only when **definition**=SPHERICAL.
         soundSpeed
             A Float specifying the speed of sound in the fluid.This argument is not valid when
-            *definition*=AIR_BLAST or when *definition*=SURFACE_BLAST.
+            **definition**=AIR_BLAST or when **definition**=SURFACE_BLAST.
         fluidDensity
             A Float specifying the fluid mass density.This argument is not valid when
-            *definition*=AIR_BLAST or when *definition*=SURFACE_BLAST.
+            **definition**=AIR_BLAST or when **definition**=SURFACE_BLAST.
         specificHeatRatio
             None or a Float specifying the ratio of specific heats for gas. The default value is
-            None.This argument is valid only when *definition*=SPHERICAL and
-            *propagationModel*=UNDEX_CHARGE.
+            None.This argument is valid only when **definition**=SPHERICAL and
+            **propagationModel**=UNDEX_CHARGE.
         gravity
             None or a Float specifying the acceleration due to gravity. The default value is
-            None.This argument is valid only when *definition*=SPHERICAL and
-            *propagationModel*=UNDEX_CHARGE.
+            None.This argument is valid only when **definition**=SPHERICAL and
+            **propagationModel**=UNDEX_CHARGE.
         atmosphericPressure
             None or a Float specifying the atmospheric pressure. The default value is None.This
-            argument is valid only when *definition*=SPHERICAL and *propagationModel*=UNDEX_CHARGE.
+            argument is valid only when **definition**=SPHERICAL and **propagationModel**=UNDEX_CHARGE.
         dragCoefficient
             None or a Float specifying the fluid drag coefficient. The default value is None.This
-            argument is valid only when *definition*=SPHERICAL and *propagationModel*=UNDEX_CHARGE.
+            argument is valid only when **definition**=SPHERICAL and **propagationModel**=UNDEX_CHARGE.
         dragExponent
             A Float specifying the fluid drag exponent. The default value is 2.0.This argument is
-            valid only when *definition*=SPHERICAL and *propagationModel*=UNDEX_CHARGE.
+            valid only when **definition**=SPHERICAL and **propagationModel**=UNDEX_CHARGE.
         waveEffects
             A Boolean specifying whether or not to include wave effects in the fluid and gas. The
-            default value is ON.This argument is valid only when *definition*=SPHERICAL and
-            *propagationModel*=UNDEX_CHARGE.
+            default value is ON.This argument is valid only when **definition**=SPHERICAL and
+            **propagationModel**=UNDEX_CHARGE.
         chargeDensity
             None or a Float specifying the density of the charge material. The default value is
-            None.This argument is valid only when *definition*=SPHERICAL and
-            *propagationModel*=UNDEX_CHARGE.
+            None.This argument is valid only when **definition**=SPHERICAL and
+            **propagationModel**=UNDEX_CHARGE.
         chargeMass
             None or a Float specifying the mass of the charge material. The default value is
-            None.This argument is valid only when *definition*=SPHERICAL and
-            *propagationModel*=UNDEX_CHARGE.
+            None.This argument is valid only when **definition**=SPHERICAL and
+            **propagationModel**=UNDEX_CHARGE.
         constantK1
             None or a Float specifying the charge material constant K. The default value is
-            None.This argument is valid only when *definition*=SPHERICAL and
-            *propagationModel*=UNDEX_CHARGE.
+            None.This argument is valid only when **definition**=SPHERICAL and
+            **propagationModel**=UNDEX_CHARGE.
         constantK2
             None or a Float specifying the charge material constant k. The default value is
-            None.This argument is valid only when *definition*=SPHERICAL and
-            *propagationModel*=UNDEX_CHARGE.
+            None.This argument is valid only when **definition**=SPHERICAL and
+            **propagationModel**=UNDEX_CHARGE.
         constantA
             None or a Float specifying the charge material constant A. The default value is
-            None.This argument is valid only when *definition*=SPHERICAL and
-            *propagationModel*=UNDEX_CHARGE.
+            None.This argument is valid only when **definition**=SPHERICAL and
+            **propagationModel**=UNDEX_CHARGE.
         constantB
             None or a Float specifying the charge material constant B. The default value is
-            None.This argument is valid only when *definition*=SPHERICAL and
-            *propagationModel*=UNDEX_CHARGE.
+            None.This argument is valid only when **definition**=SPHERICAL and
+            **propagationModel**=UNDEX_CHARGE.
         constantKc
             None or a Float specifying the charge material constant Kc. The default value is
-            None.This argument is valid only when *definition*=SPHERICAL and
-            *propagationModel*=UNDEX_CHARGE.
+            None.This argument is valid only when **definition**=SPHERICAL and
+            **propagationModel**=UNDEX_CHARGE.
         duration
             None or a Float specifying the time duration for the bubble simulation. The default
-            value is None.This argument is valid only when *definition*=SPHERICAL and
-            *propagationModel*=UNDEX_CHARGE.
+            value is None.This argument is valid only when **definition**=SPHERICAL and
+            **propagationModel**=UNDEX_CHARGE.
         maximumSteps
             An Int specifying the maximum number of time steps for the bubble simulation. The
-            default value is 1500.This argument is valid only when *definition*=SPHERICAL and
-            *propagationModel*=UNDEX_CHARGE.
+            default value is 1500.This argument is valid only when **definition**=SPHERICAL and
+            **propagationModel**=UNDEX_CHARGE.
         relativeStepControl
             A Float specifying the relative step size control parameter. The default value is
-            1×10–11.This argument is valid only when *definition*=SPHERICAL and
-            *propagationModel*=UNDEX_CHARGE.
+            1×10–11.This argument is valid only when **definition**=SPHERICAL and
+            **propagationModel**=UNDEX_CHARGE.
         absoluteStepControl
             A Float specifying the absolute step size control parameter. The default value is
-            1×10–11.This argument is valid only when *definition*=SPHERICAL and
-            *propagationModel*=UNDEX_CHARGE.
+            1×10–11.This argument is valid only when **definition**=SPHERICAL and
+            **propagationModel**=UNDEX_CHARGE.
         stepControlExponent
             A Float specifying the step size control exponent. The default value is 0.2.This
-            argument is valid only when *definition*=SPHERICAL and *propagationModel*=UNDEX_CHARGE.
+            argument is valid only when **definition**=SPHERICAL and **propagationModel**=UNDEX_CHARGE.
         genDecayA
             A Float specifying the constant A associated with the generalized decay propagation
-            model. The default value is 0.0.This argument is valid only when *definition*=SPHERICAL
-            and *propagationModel*=GENERALIZED_DECAY.
+            model. The default value is 0.0.This argument is valid only when **definition**=SPHERICAL
+            and **propagationModel**=GENERALIZED_DECAY.
         genDecayB
             A Float specifying the constant B associated with the generalized decay propagation
-            model. The default value is 0.0.This argument is valid only when *definition*=SPHERICAL
-            and *propagationModel*=GENERALIZED_DECAY.
+            model. The default value is 0.0.This argument is valid only when **definition**=SPHERICAL
+            and **propagationModel**=GENERALIZED_DECAY.
         genDecayC
             A Float specifying the constant C associated with the generalized decay propagation
-            model. The default value is 0.0.This argument is valid only when *definition*=SPHERICAL
-            and *propagationModel*=GENERALIZED_DECAY.
+            model. The default value is 0.0.This argument is valid only when **definition**=SPHERICAL
+            and **propagationModel**=GENERALIZED_DECAY.
         seedNumber
             An Int specifying the seed number (N) for the diffuse source calculation. N2 sources
-            will be used in the simulation.This argument is valid only when *definition*=DIFFUSE.
+            will be used in the simulation.This argument is valid only when **definition**=DIFFUSE.
         massTNT
             A Float specifying the equivalent mass of TNT, in any preferred mass unit.This argument
-            is valid only when *definition*=AIR_BLAST or *definition*=SURFACE_BLAST.
+            is valid only when **definition**=AIR_BLAST or **definition**=SURFACE_BLAST.
         massFactor
             A Float specifying the multiplication factor to convert from the preferred mass unit to
             kilograms. The default value is 1.0.This argument is valid only when
-            *definition*=AIR_BLAST or *definition*=SURFACE_BLAST.
+            **definition**=AIR_BLAST or **definition**=SURFACE_BLAST.
         lengthFactor
             A Float specifying the multiplication factor to convert from the analysis length unit to
-            meters. The default value is 1.0.This argument is valid only when *definition*=AIR_BLAST
-            or *definition*=SURFACE_BLAST.
+            meters. The default value is 1.0.This argument is valid only when **definition**=AIR_BLAST
+            or **definition**=SURFACE_BLAST.
         timeFactor
             A Float specifying the multiplication factor to convert from the analysis time unit to
             seconds. The default value is 1.0.This argument is valid only when
-            *definition*=AIR_BLAST or *definition*=SURFACE_BLAST.
+            **definition**=AIR_BLAST or **definition**=SURFACE_BLAST.
         pressureFactor
             A Float specifying the multiplication factor to convert from the analysis pressure unit
             to pascals. The default value is 1.0.This argument is valid only when
-            *definition*=AIR_BLAST or *definition*=SURFACE_BLAST.
+            **definition**=AIR_BLAST or **definition**=SURFACE_BLAST.
 
         Returns
         -------
@@ -2139,17 +2151,17 @@ class InteractionModel(
             contact pairs). The default value is OFF.
         regionType
             A SymbolicConstant specifying the region selection type. This argument is valid only
-            when *isRestart*=False. Possible values are GEOMETRY, SKINS, STRINGERS, and ELEMENTS.
+            when **isRestart**=False. Possible values are GEOMETRY, SKINS, STRINGERS, and ELEMENTS.
             The default value is GEOMETRY.
         region
             A Region object specifying the elements to be removed or reactivated. This argument is
-            valid only when *isRestart*=False.
+            valid only when **isRestart**=False.
         activeInStep
             A Boolean specifying whether elements are being removed or reactivated. This argument is
-            valid only when *isRestart*=False. The default value is OFF.
+            valid only when **isRestart**=False. The default value is OFF.
         includeStrain
             A Boolean specifying whether stress/displacement elements are reactivated with strain.
-            This argument is valid only when *isRestart*=False and when *activeInStep*=True. The
+            This argument is valid only when **isRestart**=False and when **activeInStep**=True. The
             default value is OFF.
 
         Returns
@@ -2213,7 +2225,7 @@ class InteractionModel(
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
             UNSET should be used if the load has no amplitude reference. The default value is UNSET.
-            You should provide the *amplitude* argument only if it is valid for the specified step.
+            You should provide the **amplitude** argument only if it is valid for the specified step.
         penetrationTime
             A Float specifying the fraction of the current step time over which the fluid pressure
             on newly penetrated contact surface segments is ramped up to the current magnitude. The
@@ -2271,11 +2283,11 @@ class InteractionModel(
             A Float specifying the emissivity, ϵϵ.
         field
             A String specifying the name of the AnalyticalField object associated with this
-            interaction. The *field* argument applies only when *distributionType*=ANALYTICAL_FIELD.
+            interaction. The **field** argument applies only when **distributionType**=ANALYTICAL_FIELD.
             The default value is an empty string.
         distributionType
             A SymbolicConstant specifying how the radiation is distributed. This argument applies
-            only when *radiationType*=AMBIENT. Possible values are UNIFORM and ANALYTICAL_FIELD. The
+            only when **radiationType**=AMBIENT. Possible values are UNIFORM and ANALYTICAL_FIELD. The
             default value is UNIFORM.
         radiationType
             A SymbolicConstant specifying whether to use the default surface radiation behavior, or
@@ -2283,14 +2295,14 @@ class InteractionModel(
             value is AMBIENT.
         ambientTemperature
             A Float specifying the reference ambient temperature, θ0θ0. This argument applies only
-            when *radiationType*=AMBIENT. The default value is 0.0.
+            when **radiationType**=AMBIENT. The default value is 0.0.
         ambientTemperatureAmp
             A String specifying the name of the Amplitude object that gives the variation of the
             ambient temperature with time.Note:Use None in an Abaqus/Standard analysis to specify
             that the reference ambient temperature is applied immediately at the beginning of the
             step or linearly over the step. Use None in an Abaqus/Explicit analysis to specify that
             the reference ambient temperature is applied throughout the step. This argument applies
-            only when *radiationType*=AMBIENT.
+            only when **radiationType**=AMBIENT.
 
         Returns
         -------
@@ -2398,10 +2410,10 @@ class InteractionModel(
             NODE_TO_SURFACE and SURFACE_TO_SURFACE. The default value is SURFACE_TO_SURFACE.
         thickness
             A Boolean specifying whether shell/membrane element thickness is considered. The default
-            value is ON.This argument in valid only when *enforcement*=SURFACE_TO_SURFACE.
+            value is ON.This argument in valid only when **enforcement**=SURFACE_TO_SURFACE.
         smooth
             A Float specifying the degree of smoothing used for deformable or rigid main surfaces
-            involved when *enforcement*=NODE_TO_SURFACE. The value given must lie between 0.0 and
+            involved when **enforcement**=NODE_TO_SURFACE. The value given must lie between 0.0 and
             0.5. The default value is 0.2.
         contactControls
             A String specifying the name of the ContactControl object associated with this
@@ -2473,40 +2485,41 @@ class InteractionModel(
             A Float specifying the ratio of the allowable penetration to the characteristic contact
             surface face dimension. The float values represent percentages (e.g.: 0.001=0.1%). Only
             contact interactions defined with augmented Lagrangian surface behavior will be affected
-            by this argument. The default value is 10–3.The *relativePenetrationTolerance* argument
-            applies only when *penetrationTolChoice*=RELATIVE. The *relativePenetrationTolerance*
-            and *absolutePenetrationTolerance* arguments are mutually exclusive.
+            by this argument. The default value is 10–3.The **relativePenetrationTolerance** argument
+            applies only when **penetrationTolChoice**=RELATIVE. The **relativePenetrationTolerance**
+            and **absolutePenetrationTolerance** arguments are mutually exclusive.
         absolutePenetrationTolerance
             None or a Float specifying the allowable penetration. Only contact interactions defined
             with augmented Lagrangian surface behavior will be affected by this argument. The
-            *absolutePenetrationTolerance* argument applies only when
-            *penetrationTolChoice*=ABSOLUTE. The *relativePenetrationTolerance* and
-            *absolutePenetrationTolerance* arguments are mutually exclusive. The default value is
+            **absolutePenetrationTolerance** argument applies only when
+            **penetrationTolChoice**=ABSOLUTE. The **relativePenetrationTolerance** and
+            **absolutePenetrationTolerance** arguments are mutually exclusive. The default value is
             None.
         frictionOnset
             A SymbolicConstant specifying when the application of friction occurs. Possible values
             are:
+            
             - IMMEDIATE, specifying the friction is included in the increment when contact occurs.
             - DELAYED, specifying the application of friction is delayed until the increment after
-            contact occurs.
+              contact occurs.
         automaticTolerances
             A Boolean specifying whether Abaqus/Standard should automatically compute an overclosure
             tolerance and a separation tolerance to prevent chattering in contact. The default value
-            is OFF.The *automaticTolerances* argument cannot be used with the *maxchp*, *perrmx*,
-            and *uerrmx* arguments.
+            is OFF.The **automaticTolerances** argument cannot be used with the **maxchp**, **perrmx**,
+            and **uerrmx** arguments.
         maxchp
             An Int specifying the maximum number of points that are permitted to violate contact
-            conditions in any increment. The default value is 0.Either the *perrmx* or the *uerrmx*
-            argument must be specified in conjunction with the *maxchp* argument.
+            conditions in any increment. The default value is 0.Either the **perrmx** or the **uerrmx**
+            argument must be specified in conjunction with the **maxchp** argument.
         perrmx
             A Float specifying the maximum value of tensile stress (tensile force in GAP- or
             ITT-type contact elements) allowed to be transmitted at a contact point. The default
-            value is 0.0.The *perrmx* argument must be specified in conjunction with the *maxchp*
+            value is 0.0.The **perrmx** argument must be specified in conjunction with the **maxchp**
             argument.
         uerrmx
             A Float specifying the maximum overclosure distance allowed at a secondary node that is
-            considered to be open. The default value is 0.0.The *uerrmx* argument must be specified
-            in conjunction with the *maxchp* argument.
+            considered to be open. The default value is 0.0.The **uerrmx** argument must be specified
+            in conjunction with the **maxchp** argument.
         stabilizeChoice
             A SymbolicConstant specifying whether or not viscous damping will be specified, and if
             so, how it will be specified. Possible values are NONE, AUTOMATIC, and COEFFICIENT. The
@@ -2514,26 +2527,26 @@ class InteractionModel(
         dampFactor
             A Float specifying the value of the damping factor. This value is multiplied by the
             calculated damping coefficient. The default value is 1.0.This argument is only valid
-            when *stabilizeChoice*=AUTOMATIC.
+            when **stabilizeChoice**=AUTOMATIC.
         dampCoef
             A Float specifying the damping coefficient. The default value is 0.0.This argument is
-            only valid when *stabilizeChoice*=COEFFICIENT.
+            only valid when **stabilizeChoice**=COEFFICIENT.
         tangFraction
             A Float specifying the tangential stabilization as a fraction of the normal
             stabilization (damping). The default value is 1.0.This argument is valid only if
-            *stabilizeChoice* = AUTOMATIC or COEFFICIENT.
+            **stabilizeChoice** = AUTOMATIC or COEFFICIENT.
         eosFraction
             A Float specifying the fraction of the damping that remains at the end of the step. The
-            default value is 0.0.This argument is valid only if *stabilizeChoice* = AUTOMATIC or
+            default value is 0.0.This argument is valid only if **stabilizeChoice** = AUTOMATIC or
             COEFFICIENT.
         zeroDampingChoice
             A SymbolicConstant specifying how the zero-damping clearance will be specified. Possible
             values are COMPUTE and SPECIFY. The default value is COMPUTE.This argument is valid only
-            if *stabilizeChoice* = AUTOMATIC or COEFFICIENT.
+            if **stabilizeChoice** = AUTOMATIC or COEFFICIENT.
         zeroDamping
             None or a Float specifying the clearance at which damping becomes zero. This argument is
-            valid only when *zeroDampingChoice*=SPECIFY. This argument is valid only if
-            *stabilizeChoice* = AUTOMATIC or COEFFICIENT. The default value is None.
+            valid only when **zeroDampingChoice**=SPECIFY. This argument is valid only if
+            **stabilizeChoice** = AUTOMATIC or COEFFICIENT. The default value is None.
         enforceWithLagrangeMultipliers
             A SymbolicConstant specifying whether to enforce the contact constraints with Lagrange
             multipliers. Possible values are DEFAULT, ENFORCEMENT_OFF, and ENFORCEMENT_ON. The
@@ -2597,16 +2610,16 @@ class InteractionModel(
             ADJUST, INTERFERENCE, and CLEARANCE. The default value is ADJUST.
         interferenceDistance
             None or a Float specifying the interference distance. This argument is valid only when
-            *overclosureType*=INTERFERENCE. The default value is None.
+            **overclosureType**=INTERFERENCE. The default value is None.
         clearanceDistance
             None or a Float specifying the initial clearance distance. This argument is valid only
-            when *overclosureType*=CLEARANCE, and must be specified in that case. The default value
+            when **overclosureType**=CLEARANCE, and must be specified in that case. The default value
             is None.
         openingTolerance
             None or a Float specifying the distance tolerance within which initial openings will
             undergo strain-free adjustments. This argument is not valid when
-            *overclosureType*=INTERFERENCE unless a value has been specified for
-            *interferenceDistance*. The default value is None.
+            **overclosureType**=INTERFERENCE unless a value has been specified for
+            **interferenceDistance**. The default value is None.
         overclosureTolerance
             None or a Float specifying the distance tolerance within which initial overclosures will
             undergo strain-free adjustments.. The default value is None.
@@ -2799,7 +2812,7 @@ class InteractionModel(
             are DEFAULT and SPECIFIED. The default value is DEFAULT.
         weightingFactor
             A Float specifying the weighting factor for the contact surfaces when
-            *weightingFactorType*=SPECIFIED. The default value is 0.0.
+            **weightingFactorType**=SPECIFIED. The default value is 0.0.
         contactControls
             A String specifying the name of the ContactControl object associated with this
             interaction. An empty string indicates that the default contact controls will be used.
@@ -2918,22 +2931,26 @@ class InteractionModel(
         interferenceType
             A SymbolicConstant specifying the type of time-dependent allowable interference for
             contact pairs and contact elements. Possible values are:
+            
             - NONE, specifying no allowable contact interference.
             - SHRINK_FIT.
             - UNIFORM.
+            
             The default value is NONE.
         overclosure
             A Float specifying the maximum overclosure distance allowed. This argument applies only
-            when *interferenceType*=UNIFORM. The default value is 0.0.
+            when **interferenceType**=UNIFORM. The default value is 0.0.
         interferenceDirectionType
             A SymbolicConstant specifying the method used to determine the interference direction.
             Possible values are COMPUTED and DIRECTION_COSINE. The default value is COMPUTED.
         direction
             A sequence of three Floats specifying the following:
+            
             - XX-direction cosine of the interference direction vector.
             - YY-direction cosine of the interference direction vector.
             - ZZ-direction cosine of the interference direction vector.
-            This argument is required only when *interferenceDirectionType*=DIRECTION_COSINE.
+            
+            This argument is required only when **interferenceDirectionType**=DIRECTION_COSINE.
         amplitude
             A String specifying the name of the amplitude curve that defines the magnitude of the
             prescribed interference during the step. Use None to specify that the prescribed
@@ -2941,7 +2958,7 @@ class InteractionModel(
             linearly over the step.
         smooth
             A Float specifying the degree of smoothing used for deformable or rigid main surfaces
-            involved when *enforcement*=NODE_TO_SURFACE. The value given must lie between 0.0 and
+            involved when **enforcement**=NODE_TO_SURFACE. The value given must lie between 0.0 and
             0.5. The default value is 0.2.
         hcrit
             A Float specifying the distance by which a secondary node must penetrate the main
@@ -2963,8 +2980,8 @@ class InteractionModel(
             NODE_TO_SURFACE and SURFACE_TO_SURFACE. The default value is SURFACE_TO_SURFACE.
         thickness
             A Boolean specifying whether shell/membrane element thickness is considered. The default
-            value is ON.This argument is not valid when *sliding*=FINITE and
-            *enforcement*=NODE_TO_SURFACE.
+            value is ON.This argument is not valid when **sliding**=FINITE and
+            **enforcement**=NODE_TO_SURFACE.
         contactControls
             A String specifying the name of the ContactControl object associated with this
             interaction. The empty string indicates that the default contact controls will be used.

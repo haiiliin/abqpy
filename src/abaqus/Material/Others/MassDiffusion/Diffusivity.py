@@ -20,6 +20,7 @@ class Diffusivity:
     The table data for this object are:
 
     - If **type**=ISOTROPIC, the table data specify the following:
+    
         - Diffusivity, D.
         - Concentration, c.
         - Temperature, if the data depend on temperature.
@@ -27,6 +28,7 @@ class Diffusivity:
         - Value of the second field variable.
         - Etc.
     - If **type**=ORTHOTROPIC, the table data specify the following:
+    
         - D11.
         - D22.
         - D33.
@@ -36,6 +38,7 @@ class Diffusivity:
         - Value of the second field variable.
         - Etc.
     - If **type**=ANISOTROPIC, the table data specify the following:
+    
         - D11.
         - D12.
         - D22.

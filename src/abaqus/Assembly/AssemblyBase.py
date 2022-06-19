@@ -521,9 +521,10 @@ class AssemblyBase(Feature):
 
     def getDistance(self, entity1: str, entity2: str, printResults: Boolean = OFF):
         """Depending on the arguments provided, this method returns one of the following:
-            - The distance between two points.
-            - The minimum distance between a point and an edge.
-            - The minimum distance between two edges.
+        
+        - The distance between two points.
+        - The minimum distance between a point and an edge.
+        - The minimum distance between two edges.
 
         Parameters
         ----------

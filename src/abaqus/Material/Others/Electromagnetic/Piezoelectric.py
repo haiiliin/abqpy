@@ -18,6 +18,7 @@ class Piezoelectric:
     The table data for this object are:
 
     - If **type**=STRESS, the table data specify the following:
+    
         - e1 11φ.
         - e1 22φ.
         - e1 33φ.
@@ -41,6 +42,7 @@ class Piezoelectric:
         - Value of the second field variable.
         - Etc.
     - If **type**=STRAIN, the table data specify the following:
+    
         - d1 11φ.
         - d1 22φ.
         - d1 33φ.

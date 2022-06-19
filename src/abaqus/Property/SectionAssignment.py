@@ -98,7 +98,7 @@ class SectionAssignment:
         Raises
         ------
             - An exception is thrown if getVertices() is called on any section assignment except
-            connector section assignment.
+              connector section assignment.
               This method is valid only for connector section assignments.
         """
         pass

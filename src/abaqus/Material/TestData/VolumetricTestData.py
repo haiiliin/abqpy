@@ -22,13 +22,16 @@ class VolumetricTestData:
     The table data for this object are:
 
     - For a hyperelastic or hyperfoam material model, the table data specify the following:
+    
         - Pressure, p.
         - Volume ratio, J (current volume/original volume).
     - For a viscoelastic material model, the values depend on the value of the **time** member of the [Viscoelastic](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viscoelasticpyc.htm?ContextScope=all) object.
         - If **time**=RELAXATION_TEST_DATA, the table data specify the following:
+        
             - Normalized volumetric (bulk) modulus kR(t),(0≤kR(t)≤1).
             - Time t (t>0).
         - If **time**=CREEP_TEST_DATA, the table data specify the following:
+        
             - Normalized volumetric (bulk) compliance jK(t),(jK(t)≥1).
             - Time t (t>0).
 

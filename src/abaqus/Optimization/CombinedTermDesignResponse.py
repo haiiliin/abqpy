@@ -94,6 +94,7 @@ class CombinedTermDesignResponse(DesignResponse):
             - SUBTRACT
             - TANGENT
             - WEIGHTED_ADD
+            
             The default value is ADD.
         weights
             A sequence of Floats specifying the weights to apply to the list of design responses
@@ -170,6 +171,7 @@ class CombinedTermDesignResponse(DesignResponse):
             - SUBTRACT
             - TANGENT
             - WEIGHTED_ADD
+            
             The default value is ADD.
         weights
             A sequence of Floats specifying the weights to apply to the list of design responses

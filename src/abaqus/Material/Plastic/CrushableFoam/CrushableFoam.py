@@ -20,6 +20,7 @@ class CrushableFoam:
     The table data for this object are:
 
     - If **hardening**=VOLUMETRIC, the table data specify the following:
+    
         - Ratio, k, of initial yield stress in uniaxial compression, σc0, to initial yield stress in hydrostatic compression, p0cpc0; 0.0 <k< 3.0.
         - Ratio, kt, of yield stress in hydrostatic tension, pt, to initial yield stress in hydrostatic compression, pc0. The default value is 1.0.
         - Temperature, if the data depend on temperature.
@@ -27,6 +28,7 @@ class CrushableFoam:
         - Value of the second field variable.
         - Etc.
     - If **hardening**=ISOTROPIC, the table data specify the following:
+    
         - Ratio, k, of initial yield stress in uniaxial compression, σ0cσc0, to initial yield stress in hydrostatic compression, p00; 0.0 ≤k≤ 3.0.
         - Plastic Poisson's ratio.νpνp; -1≤νp≤0.5.
         - Temperature, if the data depend on temperature.

@@ -20,6 +20,7 @@ class Elastic:
     The table data for this object are:
 
     - If **type**=ISOTROPIC, the table data specify the following:
+    
         - The Young's modulus, E.
         - The Poisson's ratio, v.
         - Temperature, if the data depend on temperature.
@@ -27,12 +28,14 @@ class Elastic:
         - Value of the second field variable.
         - Etc.
     - If **type**=SHEAR, the table data specify the following:
+    
         - The shear modulus,G.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **type**=ENGINEERING_CONSTANTS, the table data specify the following:
+    
         - E1.
         - E2.
         - E3.
@@ -47,6 +50,7 @@ class Elastic:
         - Value of the second field variable.
         - Etc.
     - If **type**=LAMINA, the table data specify the following:
+    
         - E1.
         - E2.
         - v12.
@@ -58,6 +62,7 @@ class Elastic:
         - Value of the second field variable.
         - Etc.
     - If **type**=ORTHOTROPIC, the table data specify the following:
+    
         - D1111.
         - D1122.
         - D2222.
@@ -72,6 +77,7 @@ class Elastic:
         - Value of the second field variable.
         - Etc.
     - If **type**=ANISOTROPIC, the table data specify the following:
+    
         - D1111.
         - D1122.
         - D2222.
@@ -98,6 +104,7 @@ class Elastic:
         - Value of the second field variable.
         - Etc.
     - If **type**=TRACTION, the table data specify the following:
+    
         - EE for warping elements; Enn for cohesive elements.
         - G1 for warping elements; Ess for cohesive elements.
         - G2 for warping elements; Ett for cohesive elements.
@@ -106,6 +113,7 @@ class Elastic:
         - Value of the second field variable.
         - Etc.
     - If **type**=BILAMINA, the table data specify the following:
+    
         - E1+.
         - E2+.
         - v12+.
@@ -168,6 +176,7 @@ class Elastic:
             - SHORT_FIBER
             - SHEAR
             - BILAMINA
+            
             The default value is ISOTROPIC.
         noCompression
             A Boolean specifying whether compressive stress is allowed. The default value is OFF.

@@ -42,24 +42,26 @@ class PathSession(SessionBase):
         expression
             A sequence specifying the nodes or points that make up the path. The definition of the
             path expression depends on the **type** argument.
+            
             - If **type**=NODE_LIST, **expression** must be a sequence of sequences. Each inner sequence
-            contains two items, the first item is a String specifying the name of a part instance,
-            and the second item can be either a sequence of Ints or a sequence of Strings, each
-            specifying a range of Ints.
+              contains two items, the first item is a String specifying the name of a part instance,
+              and the second item can be either a sequence of Ints or a sequence of Strings, each
+              specifying a range of Ints.
             - If **type**=POINT_LIST, **expression** must be a sequence of tuples of three Floats,
-            specifying the coordinates of each point.
+              specifying the coordinates of each point.
             - If **type**=EDGE_LIST, **expression** must be a sequence of sequences. Each inner sequence
-            contains two items, the first item is a String specifying the name of the part instance,
-            and the second item is a sequence of tuples of four Ints that uniquely identify an
-            element edge. The four Ints are:
-            1. The element label.
-            2. The element face index (one-based).
-            3. The face edge index (one-based).
-            4. The edge direction. A positive number specifies that the edge direction runs from the
-            edge start node to the edge end node. A negative number specifies the opposite.
+              contains two items, the first item is a String specifying the name of the part instance,
+              and the second item is a sequence of tuples of four Ints that uniquely identify an
+              element edge. The four Ints are:
+              
+              1. The element label.
+              2. The element face index (one-based).
+              3. The face edge index (one-based).
+              4. The edge direction. A positive number specifies that the edge direction runs from the
+                 edge start node to the edge end node. A negative number specifies the opposite.
             - When **type**=CIRCUMFERENTIAL or RADIAL, **expression** must be a sequence of three tuples
-            of three Floats, specifying the coordinates of the points used to define a coordinate
-            system.
+              of three Floats, specifying the coordinates of the points used to define a coordinate
+              system.
         circleDefinition
             A SymbolicConstant specifying the method in which the circle is being defined. This
             argument is valid only when **type**=CIRCUMFERENTIAL or RADIAL. Possible values are

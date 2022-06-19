@@ -26,13 +26,16 @@ class UniaxialTestData:
     The table data for this object are:
 
     - For a hyperelastic material model, the table data specify the following:
+    
         - Nominal stress, TU.
         - Nominal strain, ϵU.
     - For a hyperfoam material model, the table data specify the following:
+    
         - Nominal stress, TL.
         - Nominal strain, ϵU.
         - Nominal lateral strain, ϵ2=ϵ3. The default value is 0.
     - For a low-density foam material model, the table data specify the following:
+    
         - Nominal stress, TU.
         - Nominal strain, ϵU.
         - Nominal strain rate, ϵU˙.

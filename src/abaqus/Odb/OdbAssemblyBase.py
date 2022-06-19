@@ -186,11 +186,11 @@ class OdbAssemblyBase:
 
         Raises
         ------
-            - Only certain element types are permitted at the assembly level. e.g., connector
+        OdbError: Addition of this element type is not permitted at the assembly level
+            Only certain element types are permitted at the assembly level. e.g., connector
             elements.
-              OdbError: Addition of this element type is not permitted at the assembly level
-            - If length of label array does not match connectivity data length:
-              OdbError: Connectivity array must be provided for all element
+        OdbError: Connectivity array must be provided for all element
+            If length of label array does not match connectivity data length.
         """
         pass
 

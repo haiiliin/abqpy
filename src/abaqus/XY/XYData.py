@@ -77,7 +77,7 @@ class XYData:
         axis1QuantityType: QuantityType = None, 
         axis2QuantityType: QuantityType = None, 
     ):
-        """This method creates an XYData object from a sequence of *X–Y* data pairs.
+        """This method creates an XYData object from a sequence of **X - Y** data pairs.
 
         Notes
         -----
@@ -91,30 +91,30 @@ class XYData:
         Parameters
         ----------
         data
-            A sequence of pairs of Floats specifying the *X–Y* data pairs.
+            A sequence of pairs of Floats specifying the **X - Y** data pairs.
         name
             The repository key. If the name is not supplied while creating the XYData object using
             xyPlot.XYData, a default name in the form _temp#_ is generated and the XYData object is
             temporary. (This argument is required if the method is accessed from the session
             object.)
         sourceDescription
-            A String specifying the source of the *X–Y* data (e.g., “Entered from keyboard”, “Taken
+            A String specifying the source of the **X - Y** data (e.g., “Entered from keyboard”, “Taken
             from ASCII file”, “Read from an ODB”, etc.). The default value is an empty string.
         contentDescription
-            A String specifying the content of the *X–Y* data (e.g., “field 1 vs. field 2”). The
+            A String specifying the content of the **X - Y** data (e.g., “field 1 vs. field 2”). The
             default value is an empty string.
         positionDescription
-            A String specifying additional information about the *X–Y* data (e.g., “for whole
+            A String specifying additional information about the **X - Y** data (e.g., “for whole
             model”). The default value is an empty string.
         legendLabel
             A String specifying the label to be used in the legend. The default value is the name of
             the XYData object.
         xValuesLabel
             A String specifying the label for the X-values. This value may be overridden if the
-            *X–Y* data are combined with other *X–Y* data. The default value is an empty string.
+            **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
         yValuesLabel
             A String specifying the label for the Y-values. This value may be overridden if the
-            *X–Y* data are combined with other *X–Y* data. The default value is an empty string.
+            **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
         axis1QuantityType
             A QuantityType object specifying the QuantityType object associated to the X -axis1-
             values.
@@ -185,28 +185,28 @@ class XYData:
         Parameters
         ----------
         fileName
-            A String specifying the name of the file from which the *X–Y* data will be read.
+            A String specifying the name of the file from which the **X - Y** data will be read.
         name
             The repository key. If the name is not supplied, a default name in the form _temp#_ is
             generated and the XYData object is temporary.
         sourceDescription
-            A String specifying the source of the *X–Y* data (e.g., “Entered from keyboard”, “Taken
+            A String specifying the source of the **X - Y** data (e.g., “Entered from keyboard”, “Taken
             from ASCII file”, “Read from an ODB”, etc.). The default value is an empty string.
         contentDescription
-            A String specifying the content of the *X–Y* data (e.g., “field 1 vs. field 2”). The
+            A String specifying the content of the **X - Y** data (e.g., “field 1 vs. field 2”). The
             default value is an empty string.
         positionDescription
-            A String specifying additional information about the *X–Y* data (e.g., “for whole
+            A String specifying additional information about the **X - Y** data (e.g., “for whole
             model”). The default value is an empty string.
         legendLabel
             A String specifying the label to be used in the legend. The default value is the name of
             the XYData object.
         xValuesLabel
             A String specifying the label for the X-values. This value may be overridden if the
-            *X–Y* data are combined with other *X–Y* data. The default value is an empty string.
+            **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
         yValuesLabel
             A String specifying the label for the Y-values. This value may be overridden if the
-            *X–Y* data are combined with other *X–Y* data. The default value is an empty string.
+            **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
         axis1QuantityType
             A QuantityType object specifying the QuantityType object associated to the X -axis1-
             values.
@@ -266,7 +266,7 @@ class XYData:
         odb
             An Odb object specifying the output database from which data will be read.
         outputVariableName
-            A String specifying the output variable from which the *X–Y* data will be read.
+            A String specifying the output variable from which the **X - Y** data will be read.
         steps
             A sequence of Strings specifying the names of the steps from which data will be
             extracted.
@@ -275,14 +275,14 @@ class XYData:
             generated and the XYData object is temporary (this argument is required if the method is
             accessed from the session object).
         sourceDescription
-            A String specifying the source of the *X–Y* data (for example, “Entered from keyboard”,
+            A String specifying the source of the **X - Y** data (for example, “Entered from keyboard”,
             “Taken from ASCII file”, “Read from an ODB”, etc.). The default value is an empty
             string.
         contentDescription
-            A String specifying the content of the *X–Y* data (for example, “field 1 vs. field 2”).
+            A String specifying the content of the **X - Y** data (for example, “field 1 vs. field 2”).
             The default value is an empty string.
         positionDescription
-            A String specifying additional information about the *X–Y* data (for example, “for whole
+            A String specifying additional information about the **X - Y** data (for example, “for whole
             model”). The default value is an empty string.
         legendLabel
             A String specifying the label to be used in the legend. The default value is the name of
@@ -592,12 +592,12 @@ class XYData:
         Parameters
         ----------
         path
-            A Path object to use in *X–Y* data generation.
+            A Path object to use in **X - Y** data generation.
         name
             A String specifying the repository key:for **session** 'name' is required argument and for
             **xyPlot** 'name' is optional argument.
         includeIntersections
-            A Boolean specifying whether to include *X–Y* data for the intersections between the
+            A Boolean specifying whether to include **X - Y** data for the intersections between the
             path and element faces or edges. The default value is False.
         shape
             A SymbolicConstant specifying the model shape to use. Possible values are UNDEFORMED and
@@ -675,7 +675,7 @@ class XYData:
             - If the specified output variable is not available in the output database:
               ErrorUnavailableSelectedVariable: The selected variable is not available for the
             current frame.
-            - If the specified output variable cannot be used to obtain *X–Y* data:
+            - If the specified output variable cannot be used to obtain **X - Y** data:
               ErrorUnusableVarInPathExtract: Specified variable cannot be used in XY data extraction
             from path.
             - If the SymbolicConstant specifying the refinement type is invalid:
@@ -710,23 +710,23 @@ class XYData:
         Parameters
         ----------
         sourceDescription
-            A String specifying the source of the *X–Y* data (e.g., “Entered from keyboard”, “Taken
+            A String specifying the source of the **X - Y** data (e.g., “Entered from keyboard”, “Taken
             from ASCII file”, “Read from an ODB”, etc.). The default value is an empty string.
         contentDescription
-            A String specifying the content of the *X–Y* data (e.g., “field 1 vs. field 2”). The
+            A String specifying the content of the **X - Y** data (e.g., “field 1 vs. field 2”). The
             default value is an empty string.
         positionDescription
-            A String specifying additional information about the *X–Y* data (e.g., “for whole
+            A String specifying additional information about the **X - Y** data (e.g., “for whole
             model”). The default value is an empty string.
         legendLabel
             A String specifying the label to be used in the legend. The default value is the name of
             the XYData object.
         xValuesLabel
             A String specifying the label for the X-values. This value may be overridden if the
-            *X–Y* data are combined with other *X–Y* data. The default value is an empty string.
+            **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
         yValuesLabel
             A String specifying the label for the Y-values. This value may be overridden if the
-            *X–Y* data are combined with other *X–Y* data. The default value is an empty string.
+            **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
         axis1QuantityType
             A QuantityType object specifying the QuantityType object associated to the X -axis1-
             values.

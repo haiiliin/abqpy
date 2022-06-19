@@ -757,7 +757,7 @@ class Feature:
             are mutually exclusive. One of them must be specified.
         point2
             A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum object representing a datum point
-            specifying a point in the *X–Y* plane or the rr–θθ plane. The **point2** and **line2**
+            specifying a point in the **X - Y** plane or the rr–θθ plane. The **point2** and **line2**
             arguments are mutually exclusive. One of them must be specified.
         line1
             An Edge, an Element Edge, or a Datum object representing a datum axis specifying the
@@ -765,7 +765,7 @@ class Feature:
             of them must be specified.
         line2
             An Edge, an Element Edge, or a Datum object representing a datum axis specifying a
-            vector in the *X–Y* plane or the rr–θθ plane. The **point2** and **line2** arguments are
+            vector in the **X - Y** plane or the rr–θθ plane. The **point2** and **line2** arguments are
             mutually exclusive. One of them must be specified.
         name
             A String specifying the name of the DatumCsys.
@@ -806,7 +806,7 @@ class Feature:
             the **X**-axis or the rr-axis.
         line2
             A straight Edge, an ElementEdge, or a Datum object representing a datum axis specifying
-            a line in the *X–Y* plane or in the rr–θθ plane.
+            a line in the **X - Y** plane or in the rr–θθ plane.
         name
             A String specifying the name of the DatumCsys.
 

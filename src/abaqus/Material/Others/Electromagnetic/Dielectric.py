@@ -18,6 +18,7 @@ class Dielectric:
     The table data for this object are:
 
     - If **type**=ISOTROPIC, the table data specify the following:
+    
         - Dielectric constant.
         - Frequency, if the data depend on frequency.
         - Temperature, if the data depend on temperature.
@@ -25,6 +26,7 @@ class Dielectric:
         - Value of the second field variable.
         - Etc.
     - If **type**=ORTHOTROPIC, the table data specify the following:
+    
         - Dφ11.
         - Dφ2φ.
         - Dφ3φ.
@@ -34,6 +36,7 @@ class Dielectric:
         - Value of the second field variable.
         - Etc.
     - If **type**=ANISOTROPIC, the table data specify the following:
+    
         - Dφ11.
         - Dφ12.
         - Dφ22.

@@ -611,8 +611,9 @@ class PartBase(Feature):
         -------
         part: Part
             A Part object
+            
             - If the analysis type (deformable or rigid) is not consistent among the supplied part
-            instances:
+              instances:
               The selected part instances do not have a consistent analysis type.
             - If the assembly does not contain a mesh:
               The current assembly does not contain a mesh for a mesh part.
@@ -1154,9 +1155,10 @@ class PartBase(Feature):
     def getCentroid(
         self, faces: tuple[Face], cells: tuple[Face], relativeAccuracy: float = 0
     ):
-        """Depending on the arguments provided, this method returns the following:
-            - The location of the centroid of a given face or group of faces.
-            - The location of the centroid of a given cell or group of cells.
+        """Location of the centroid of a given face/cell or group of faces/cells
+        
+        Parameters
+        ----------
         faces
             A sequence of Face objects whose centroid the method will calculate. The arguments
             **faces** and **cells** are mutually exclusive.
@@ -1171,6 +1173,10 @@ class PartBase(Feature):
         -------
         centroid: tuple[float]
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the centroid.
+            Depending on the arguments provided, this method returns the following:
+        
+            - The location of the centroid of a given face or group of faces.
+            - The location of the centroid of a given cell or group of cells.
         """
         pass
 
@@ -1212,9 +1218,10 @@ class PartBase(Feature):
 
     def getDistance(self, entity1: str, entity2: str):
         """Depending on the arguments provided, this method returns one of the following:
-            - The distance between two points.
-            - The minimum distance between a point and an edge.
-            - The minimum distance between two edges.
+        
+        - The distance between two points.
+        - The minimum distance between a point and an edge.
+        - The minimum distance between two edges.
 
         Parameters
         ----------

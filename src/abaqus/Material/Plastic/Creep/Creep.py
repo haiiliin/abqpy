@@ -20,6 +20,7 @@ class Creep:
     The table data for this object are:
 
     - If **law**=STRAIN or **law**=TIME, the table data specify the following:
+    
         - A.
         - n.
         - m.
@@ -28,6 +29,7 @@ class Creep:
         - Value of the second field variable.
         - Etc.
     - If **law**=HYPERBOLIC_SINE, the table data specify the following:
+    
         - A.
         - B.
         - n.
@@ -37,9 +39,10 @@ class Creep:
         - Value of the second field variable.
         - Etc.
     - If **law**=ANAND, the table data specify the following:
+    
         - s1.
         - QR.
-        A.
+        - A.
         - ξ.
         - m.
         - A0.
@@ -53,6 +56,7 @@ class Creep:
         - A3.
         - A4.
     - If **law**=DARVEAUX, the table data specify the following:
+    
         - Css.
         - QR.
         - α.
@@ -60,6 +64,7 @@ class Creep:
         - ϵT.
         - B.
     - If **law**=DOUBLE_POWER, the table data specify the following:
+    
         - A1.
         - B1.
         - C1.
@@ -68,6 +73,7 @@ class Creep:
         - C2.
         - σ0.
     - If **law**=POWER_LAW or **law**=TIME_POWER_LAW, the table data specify the following:
+    
         - q0.
         - n.
         - m.

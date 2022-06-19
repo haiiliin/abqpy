@@ -22,15 +22,17 @@ class DruckerPrager:
     The table data for this object are:
 
     - If **shearCriterion**=LINEAR (the only option allowed in an Abaqus/Explicit analysis), the table data specify the following:
+    
         - Material angle of friction, β, in the p–t plane. Give the value in degrees.
-        - K, the ratio of the flow stress in triaxial tension to the flow stress in triaxial compression. 0.778≤K≤1.0.
-            If the default value of 0.0 is accepted, a value of 1.0 is assumed.
+        - K, the ratio of the flow stress in triaxial tension to the flow stress in triaxial compression. 0.778≤K≤1.0. 
+          If the default value of 0.0 is accepted, a value of 1.0 is assumed.
         - Dilation angle, ψ, in the p–t plane. Give the value in degrees.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **shearCriterion**=HYPERBOLIC, the table data specify the following:
+    
         - Material angle of friction, β, at high confining pressure in the p–q plane. Give the value in degrees.
         - Initial hydrostatic tension strength, pt|0.
         - Dilation angle, ψ, at high confining pressure in the p–q plane. Give the value in degrees.
@@ -39,6 +41,7 @@ class DruckerPrager:
         - Value of the second field variable.
         - Etc.
     - If **shearCriterion**=EXPONENTIAL, the table data specify the following:
+    
         - Dilation angle, ψ, at high confining pressure in the p–q plane. Give the value in degrees.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.

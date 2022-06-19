@@ -113,6 +113,7 @@ class XYPlot(XYPlotBase):
             A String specifying the label for this quantity type.
         type
             A SymbolicConstant specifying the physical dimension of the axis. Possible values are:
+            
             - NONE.
             - ACCELERATION.
             - ACOUSTIC_INTENSITY.
@@ -185,6 +186,7 @@ class XYPlot(XYPlotBase):
             - VOLUME_FLUX.
             - VOLUME_FLUX_AREA, specifying "Volume flux per area".
             - VOLUME_FRACTION.
+            
             The default value is NONE
 
         Returns
@@ -223,6 +225,7 @@ class XYPlot(XYPlotBase):
         marker
             A SymbolicConstant specifying the marker type be used when drawing symbols using this
             SymbolStyle object. Possible values are:
+            
             - FILLED_CIRCLE
             - FILLED_SQUARE
             - FILLED_DIAMOND
@@ -234,6 +237,7 @@ class XYPlot(XYPlotBase):
             - CROSS
             - XMARKER
             - POINT
+            
             The default value is FILLED_CIRCLE.
         size
             A Float specifying the marker size to be used when drawing markers using this
@@ -305,7 +309,7 @@ class XYPlot(XYPlotBase):
         axis1QuantityType: QuantityType = None,
         axis2QuantityType: QuantityType = None,
     ) -> XYData:
-        """This method creates an XYData object from a sequence of *X–Y* data pairs.
+        """This method creates an XYData object from a sequence of **X - Y** data pairs.
 
         Notes
         -----
@@ -319,30 +323,30 @@ class XYPlot(XYPlotBase):
         Parameters
         ----------
         data
-            A sequence of pairs of Floats specifying the *X–Y* data pairs.
+            A sequence of pairs of Floats specifying the **X - Y** data pairs.
         name
             The repository key. If the name is not supplied while creating the XYData object using
             xyPlot.XYData, a default name in the form _temp#_ is generated and the XYData object is
             temporary. (This argument is required if the method is accessed from the session
             object.)
         sourceDescription
-            A String specifying the source of the *X–Y* data (e.g., “Entered from keyboard”, “Taken
+            A String specifying the source of the **X - Y** data (e.g., “Entered from keyboard”, “Taken
             from ASCII file”, “Read from an ODB”, etc.). The default value is an empty string.
         contentDescription
-            A String specifying the content of the *X–Y* data (e.g., “field 1 vs. field 2”). The
+            A String specifying the content of the **X - Y** data (e.g., “field 1 vs. field 2”). The
             default value is an empty string.
         positionDescription
-            A String specifying additional information about the *X–Y* data (e.g., “for whole
+            A String specifying additional information about the **X - Y** data (e.g., “for whole
             model”). The default value is an empty string.
         legendLabel
             A String specifying the label to be used in the legend. The default value is the name of
             the XYData object.
         xValuesLabel
             A String specifying the label for the X-values. This value may be overridden if the
-            *X–Y* data are combined with other *X–Y* data. The default value is an empty string.
+            **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
         yValuesLabel
             A String specifying the label for the Y-values. This value may be overridden if the
-            *X–Y* data are combined with other *X–Y* data. The default value is an empty string.
+            **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
         axis1QuantityType
             A QuantityType object specifying the QuantityType object associated to the X -axis1-
             values.

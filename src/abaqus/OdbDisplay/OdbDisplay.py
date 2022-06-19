@@ -110,8 +110,10 @@ class OdbDisplay:
     primaryVariable: tuple
         A tuple specifying variables.
         Each item in the sequence consists of a tuple containing the following elements:
-            - Element 0: A String specifying the variable label.
-            - Element 1: An Int specifying the output position. Possible integer values are:
+        
+        - Element 0: A String specifying the variable label.
+        - Element 1: An Int specifying the output position. Possible integer values are:
+        
             - 0: UNDEFINED_POSITION
             - 1: NODAL
             - 2: INTEGRATION_POINT
@@ -123,7 +125,8 @@ class OdbDisplay:
             - 8: WHOLE_PART_INSTANCE
             - 9: WHOLE_MODEL
             - 10: GENERAL_PARTICLE
-            - Element 2: An Int specifying the data type. Possible values are:
+        - Element 2: An Int specifying the data type. Possible values are:
+        
             - 0: ENUMERATION
             - 1: BOOLEAN
             - 2: INTEGER
@@ -137,37 +140,41 @@ class OdbDisplay:
             - 10: TENSOR_3D_SURFACE
             - 11: TENSOR_2D_PLANAR
             - 12: TENSOR_2D_SURFACE
-            - Element 3: An Int specifying the storage type. Possible values are:
+        - Element 3: An Int specifying the storage type. Possible values are:
+        
             - 0: FLOAT
             - 1: DOUBLE
             - 2: INTEGER
             - 3: BOOLEAN
-            - Element 4: An Int specifying the refinement type. Possible values are:
+        - Element 4: An Int specifying the refinement type. Possible values are:
+        
             - 0: NO_REFINEMENT
             - 1: INVARIANT
             - 2: COMPONENT
-            - Element 5: A String specifying the refinement label.
-            - Element 6: An Int specifying the refinement index.
-            - Element 7: An Int specifying whether section point information is available. Possible
-        values are 1 when section point information is available; 0, when this information is
-        unavailable.
-            - Element 8: A sequence of a String specifying the name of the ply and category
-        selection tuples (see below) specifying the section point information.
+        - Element 5: A String specifying the refinement label.
+        - Element 6: An Int specifying the refinement index.
+        - Element 7: An Int specifying whether section point information is available. Possible
+          values are 1 when section point information is available; 0, when this information is
+          unavailable.
+        - Element 8: A sequence of a String specifying the name of the ply and category
+          selection tuples (see below) specifying the section point information.
+          
         A category selection tuple consists of the following elements:
-            - Element 0: A String specifying the category label.
-            - Element 1: An Int specifying whether to use both top and bottom section points to
-        obtain results. Possible values are 1 to use both section points and 0 to use only the
-        top section point.
-            - Element 2: An Int specifying the top section point index.
-            - Element 3: A String specifying the top section label.
-            - Element 4: An Int specifying the bottom section point index.
-            - Element 5: A String specifying the bottom section label.
-            - Element 6: An Int specifying the category id.
-            - Element 9: An Int specifying whether the data are complex. Possible values are 1 when
-        the data are complex; 0, when the data is not complex.
-            - Element 10: A Float specifying the minimum possible value for the data.
-            - Element 11: A Float specifying the maximum possible value for the data.
-            - Element 12: An Int specifying whether the data is derived. Possible values are 1 when
+          
+        - Element 0: A String specifying the category label.
+        - Element 1: An Int specifying whether to use both top and bottom section points to
+          obtain results. Possible values are 1 to use both section points and 0 to use only the
+          top section point.
+        - Element 2: An Int specifying the top section point index.
+        - Element 3: A String specifying the top section label.
+        - Element 4: An Int specifying the bottom section point index.
+        - Element 5: A String specifying the bottom section label.
+        - Element 6: An Int specifying the category id.
+        - Element 9: An Int specifying whether the data are complex. Possible values are 1 when
+          the data are complex; 0, when the data is not complex.
+        - Element 10: A Float specifying the minimum possible value for the data.
+        - Element 11: A Float specifying the maximum possible value for the data.
+        - Element 12: An Int specifying whether the data is derived. Possible values are 1 when
         the data is derived; 0, when the data is not derived.
     deformedVariable: tuple
         A tuple specifying variables.For information on the sequence, see the member

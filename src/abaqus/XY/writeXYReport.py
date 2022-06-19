@@ -20,11 +20,11 @@ def writeXYRepor(fileName: str, xyData: tuple[XYData], appendMode: Boolean = ON)
     Parameters
     ----------
     fileName
-        A String specifying the name of the file to which *X–Y* data will be written.
+        A String specifying the name of the file to which **X - Y** data will be written.
     xyData
         A sequence of XYData objects to be written to the output file.
     appendMode
-        A Boolean specifying whether to append the *X–Y* data to the existing file. The default
+        A Boolean specifying whether to append the **X - Y** data to the existing file. The default
         value is ON.
     """
     pass

@@ -51,6 +51,7 @@ class Monitor:
             - NT30
             - NN11
             - NN30
+            
             The NT identifiers are not available for mass diffusion. The NN identifiers are
             available only for mass diffusion.
         frequency

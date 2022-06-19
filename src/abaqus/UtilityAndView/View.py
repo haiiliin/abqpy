@@ -135,7 +135,7 @@ class View:
         pass
 
     def fitView(self, drawImmediately: Boolean = False):
-        """This method scales the displayable object (such as a part, the assembly, or an *X–Y*
+        """This method scales the displayable object (such as a part, the assembly, or an **X - Y**
         plot) to fit the viewport.
 
         Parameters

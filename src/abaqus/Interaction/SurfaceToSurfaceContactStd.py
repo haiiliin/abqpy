@@ -116,6 +116,7 @@ class SurfaceToSurfaceContactStd(Interaction):
             - NONE, specifying no allowable contact interference.
             - SHRINK_FIT.
             - UNIFORM.
+            
             The default value is NONE.
         overclosure
             A Float specifying the maximum overclosure distance allowed. This argument applies only
@@ -125,9 +126,11 @@ class SurfaceToSurfaceContactStd(Interaction):
             Possible values are COMPUTED and DIRECTION_COSINE. The default value is COMPUTED.
         direction
             A sequence of three Floats specifying the following:
+            
             - XX-direction cosine of the interference direction vector.
             - YY-direction cosine of the interference direction vector.
             - ZZ-direction cosine of the interference direction vector.
+            
             This argument is required only when **interferenceDirectionType**=DIRECTION_COSINE.
         amplitude
             A String specifying the name of the amplitude curve that defines the magnitude of the
@@ -253,6 +256,7 @@ class SurfaceToSurfaceContactStd(Interaction):
             - NONE, specifying no allowable contact interference.
             - SHRINK_FIT.
             - UNIFORM.
+            
             The default value is NONE.
         overclosure
             A Float specifying the maximum overclosure distance allowed. This argument applies only
@@ -262,9 +266,11 @@ class SurfaceToSurfaceContactStd(Interaction):
             Possible values are COMPUTED and DIRECTION_COSINE. The default value is COMPUTED.
         direction
             A sequence of three Floats specifying the following:
+            
             - XX-direction cosine of the interference direction vector.
             - YY-direction cosine of the interference direction vector.
             - ZZ-direction cosine of the interference direction vector.
+            
             This argument is required only when **interferenceDirectionType**=DIRECTION_COSINE.
         amplitude
             A String specifying the name of the amplitude curve that defines the magnitude of the
@@ -372,6 +378,7 @@ class SurfaceToSurfaceContactStd(Interaction):
             - NONE, specifying no allowable contact interference.
             - SHRINK_FIT.
             - UNIFORM.
+            
             The default value is NONE.
         overclosure
             A Float specifying the maximum overclosure distance allowed. This argument applies only
@@ -381,9 +388,11 @@ class SurfaceToSurfaceContactStd(Interaction):
             Possible values are COMPUTED and DIRECTION_COSINE. The default value is COMPUTED.
         direction
             A sequence of three Floats specifying the following:
+            
             - XX-direction cosine of the interference direction vector.
             - YY-direction cosine of the interference direction vector.
             - ZZ-direction cosine of the interference direction vector.
+            
             This argument is required only when **interferenceDirectionType**=DIRECTION_COSINE.
         amplitude
             A String specifying the name of the amplitude curve that defines the magnitude of the

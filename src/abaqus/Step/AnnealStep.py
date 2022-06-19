@@ -41,32 +41,33 @@ class AnnealStep(AnalysisStep):
         A Boolean specifying whether the step has a mechanical procedure type.
     procedureType: SymbolicConstant
         A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-            - ANNEAL
-            - BUCKLE
-            - COMPLEX_FREQUENCY
-            - COUPLED_TEMP_DISPLACEMENT
-            - COUPLED_THERMAL_ELECTRIC
-            - DIRECT_CYCLIC
-            - DYNAMIC_IMPLICIT
-            - DYNAMIC_EXPLICIT
-            - DYNAMIC_SUBSPACE
-            - DYNAMIC_TEMP_DISPLACEMENT
-            - COUPLED_THERMAL_ELECTRICAL_STRUCTURAL
-            - FREQUENCY
-            - GEOSTATIC
-            - HEAT_TRANSFER
-            - MASS_DIFFUSION
-            - MODAL_DYNAMICS
-            - RANDOM_RESPONSE
-            - RESPONSE_SPECTRUM
-            - SOILS
-            - STATIC_GENERAL
-            - STATIC_LINEAR_PERTURBATION
-            - STATIC_RIKS
-            - STEADY_STATE_DIRECT
-            - STEADY_STATE_MODAL
-            - STEADY_STATE_SUBSPACE
-            - VISCO
+        
+        - ANNEAL
+        - BUCKLE
+        - COMPLEX_FREQUENCY
+        - COUPLED_TEMP_DISPLACEMENT
+        - COUPLED_THERMAL_ELECTRIC
+        - DIRECT_CYCLIC
+        - DYNAMIC_IMPLICIT
+        - DYNAMIC_EXPLICIT
+        - DYNAMIC_SUBSPACE
+        - DYNAMIC_TEMP_DISPLACEMENT
+        - COUPLED_THERMAL_ELECTRICAL_STRUCTURAL
+        - FREQUENCY
+        - GEOSTATIC
+        - HEAT_TRANSFER
+        - MASS_DIFFUSION
+        - MODAL_DYNAMICS
+        - RANDOM_RESPONSE
+        - RESPONSE_SPECTRUM
+        - SOILS
+        - STATIC_GENERAL
+        - STATIC_LINEAR_PERTURBATION
+        - STATIC_RIKS
+        - STEADY_STATE_DIRECT
+        - STEADY_STATE_MODAL
+        - STEADY_STATE_SUBSPACE
+        - VISCO
     suppressed: Boolean
         A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     fieldOutputRequestState: dict[str, FieldOutputRequestState]

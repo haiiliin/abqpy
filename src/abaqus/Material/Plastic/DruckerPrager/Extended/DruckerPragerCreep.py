@@ -18,6 +18,7 @@ class DruckerPragerCreep:
     The table data for this object are:
 
     - If **law**=TIME or **law**=STRAIN, the table data specify the following:
+    
         - AA. (Units of F-nL2nT−1−m.)
         - n.
         - m.
@@ -26,6 +27,7 @@ class DruckerPragerCreep:
         - Value of the second field variable.
         - Etc.
     - If **law**=SINGHM, the table data specify the following:
+    
         - A. (Units of T−1.)
         - α. (Units of F−1L2.)
         - m.

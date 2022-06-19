@@ -69,7 +69,7 @@ class ConstrainedSketchOptions:
             A Boolean specifying if the sheet size and the grid spacing are automatically computed.
             The default value is ON.
         gridOrigin
-            A sequence of Floats specifying the *X–Y* coordinates for the origin of the grid. The
+            A sequence of Floats specifying the **X - Y** coordinates for the origin of the grid. The
             default value is (0, 0).
         gridAngle
             A Float specifying the angle of the grid relative to the computer screen. The default

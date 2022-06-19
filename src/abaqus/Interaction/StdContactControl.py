@@ -85,7 +85,7 @@ class StdContactControl(ContactControl):
             are:
             - IMMEDIATE, specifying the friction is included in the increment when contact occurs.
             - DELAYED, specifying the application of friction is delayed until the increment after
-            contact occurs.
+              contact occurs.
         automaticTolerances
             A Boolean specifying whether Abaqus/Standard should automatically compute an overclosure
             tolerance and a separation tolerance to prevent chattering in contact. The default value
@@ -198,9 +198,10 @@ class StdContactControl(ContactControl):
         frictionOnset
             A SymbolicConstant specifying when the application of friction occurs. Possible values
             are:
+            
             - IMMEDIATE, specifying the friction is included in the increment when contact occurs.
             - DELAYED, specifying the application of friction is delayed until the increment after
-            contact occurs.
+              contact occurs.
         automaticTolerances
             A Boolean specifying whether Abaqus/Standard should automatically compute an overclosure
             tolerance and a separation tolerance to prevent chattering in contact. The default value

@@ -24,13 +24,13 @@ class HeatCapacitance(Inertia):
         import assembly
         mdb.models[name].rootAssembly.engineeringFeatures.inertias[name]
 
-        The table data for this object are:
-        The table data specify the following:
-            - Heat capacitance magnitude, ρcVρ⁢c⁢V (density × specific heat × volume).
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
+    The table data specify the following:
+    
+    - Heat capacitance magnitude, ρcVρ⁢c⁢V (density × specific heat × volume).
+    - Temperature, if the data depend on temperature.
+    - Value of the first field variable, if the data depend on field variables.
+    - Value of the second field variable.
+    - Etc.
 
     The corresponding analysis keywords are:
 

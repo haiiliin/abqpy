@@ -25,17 +25,17 @@ class SurfaceToSurfaceExpState(InteractionState):
         A String specifying the name of the :py:class:`~abaqus.Interaction.ContactControl.ContactControl` object associated with this
         interaction.
     status: SymbolicConstant
-        A SymbolicConstant specifying the propagation state of the :py:class:`~abaqus.Interaction.InteractionState.InteractionState` object.
-        Possible values are:
-            - NOT_YET_ACTIVE
-            - CREATED
-            - PROPAGATED
-            - MODIFIED
-            - DEACTIVATED
-            - NO_LONGER_ACTIVE
-            - TYPE_NOT_APPLICABLE
-            - INSTANCE_NOT_APPLICABLE
-            - BUILT_INTO_BASE_STATE
+        A SymbolicConstant specifying the propagation state of the :py:class:`~abaqus.Interaction.InteractionState.InteractionState` object.Possible values are:
+        
+        - NOT_YET_ACTIVE
+        - CREATED
+        - PROPAGATED
+        - MODIFIED
+        - DEACTIVATED
+        - NO_LONGER_ACTIVE
+        - TYPE_NOT_APPLICABLE
+        - INSTANCE_NOT_APPLICABLE
+        - BUILT_INTO_BASE_STATE
 
     Notes
     -----

@@ -50,7 +50,7 @@ class FieldReportOptions:
             A NumberFormat object specifying the format type, number of digits and precision used to
             print the numeric output.
         printXYData
-            A Boolean specifying whether to include *X–Y* data values in the tabular report. The
+            A Boolean specifying whether to include **X - Y** data values in the tabular report. The
             default value is ON.
         printTotal
             A Boolean specifying whether to include column totals in the tabular report. The default

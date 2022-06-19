@@ -26,16 +26,19 @@ class Hyperelastic:
     The table data for this object are:
 
     - If **type**=ARRUDA_BOYCE, the table data specify the following:
+    
         - μ.
         - λm.
         - D.
         - Temperature, if the data depend on temperature.
     - If **type**=MOONEY_RIVLIN, the table data specify the following:
+    
         - C10.
         - C01.
         - D1.
         - Temperature, if the data depend on temperature.
     - If **type**=NEO_HOOKE, the table data specify the following:
+    
         - C10.
         - D1.
         - Temperature, if the data depend on temperature.
@@ -45,17 +48,18 @@ class Hyperelastic:
         - Temperature, if the data depend on temperature. Temperature dependence is not allowed for 4 ≤n≤ 6 in an
         Abaqus/Explicit analysis.
     - If **type**=POLYNOMIAL, the table data specify the following for values of nn:
-        - CijCi⁢j for each value of (i+j) from 11 to n with ii decreasing from (i+j) to zero and j increasing from
-        zero to (i+j).
+        - CijCi⁢j for each value of (i+j) from 11 to n with ii decreasing from (i+j) to zero and j 
+          increasing from zero to (i+j).
         - n coefficients Di.
         - Temperature, if the data depend on temperature. Temperature dependence is not allowed for 3 ≤n≤ 6 in an
-        Abaqus/Explicit analysis.
+          Abaqus/Explicit analysis.
     - If **type**=REDUCED_POLYNOMIAL, the table data specify the following for values of nn:
         - Ci⁢0 for ii from 1 to n.
         - n coefficients Di.
         - Temperature, if the data depend on temperature. Temperature dependence is not allowed for 4 ≤n≤ 6 in an
         Abaqus/Explicit analysis.
     - If **type**=VAN_DER_WAALS, the table data specify the following:
+    
         - μ.
         - λm.
         - a.
@@ -63,6 +67,7 @@ class Hyperelastic:
         - D.
         - Temperature, if the data depend on temperature.
     - If **type**=YEOH, the table data specify the following:
+    
         - C10.
         - C20.
         - C30.

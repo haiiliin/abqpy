@@ -166,13 +166,13 @@ class FieldOutput:
             - NODAL, specifying the values calculated at the nodes.
             - INTEGRATION_POINT, specifying the values calculated at the integration points.
             - ELEMENT_NODAL, specifying the values obtained by extrapolating results calculated at
-            the integration points.
+              the integration points.
             - CENTROID, specifying the value at the centroid obtained by extrapolating results
-            calculated at the integration points.
+              calculated at the integration points.
             - ELEMENT_FACE_INTEGRATION_POINT, specifying the values calculated at the element face
-            integration points.
+              integration points.
             - SURFACE_INTEGRATION_POINT, specifying the values calculated at the surface integration
-            points. Selecting this value prompts the Visualization module to calculate the sum of
+              points. Selecting this value prompts the Visualization module to calculate the sum of
             the values at the ELEMENT_FACE_INTEGRATION_POINT position from multiple surfaces.
         instance
             An OdbInstance object specifying the namespace for labels.
@@ -207,9 +207,9 @@ class FieldOutput:
 
         Raises
         ------
-            - The addData method throws many exceptions of type odbException. For example, if the
-            local coordinate system is specified for scalar data:
-              odbException: Transformation not allowed for scalar data.
+        odbException: Transformation not allowed for scalar data.
+            The addData method throws many exceptions of type odbException. For example, if the
+            local coordinate system is specified for scalar data
         """
         pass
 
@@ -226,9 +226,9 @@ class FieldOutput:
 
         Raises
         ------
-            - The addData method throws many exceptions of type odbException. For example, if the
-            local coordinate system is specified for scalar data:
-              odbException: Transformation not allowed for scalar data.
+        odbException: Transformation not allowed for scalar data.
+            The addData method throws many exceptions of type odbException. For example, if the
+            local coordinate system is specified for scalar data
         """
         pass
 
@@ -283,11 +283,11 @@ class FieldOutput:
 
         Raises
         ------
-            - If you specify an odbSet containing entities from multiple instances:
-              odbException: Entities from multiple instances present in set.
-            - The addData method throws many exceptions of type odbException. For example, if the
-            local coordinate system is specified for scalar data:
-              odbException: Transformation not allowed for scalar data.
+        odbException: Entities from multiple instances present in set
+            If you specify an odbSet containing entities from multiple instances
+        dbException: Transformation not allowed for scalar data
+            The addData method throws many exceptions of type odbException. For example, if the
+            local coordinate system is specified for scalar data
         """
         pass
 
@@ -347,18 +347,19 @@ class FieldOutput:
             **position**
             A SymbolicConstant specifying the position of the output in the element. Possible values
             are:
+            
             - NODAL, specifying the values calculated at the nodes.
             - INTEGRATION_POINT, specifying the values calculated at the integration points.
             - ELEMENT_NODAL, specifying the values obtained by extrapolating results calculated at
-            the integration points.
+              the integration points.
             - CENTROID, specifying the value at the centroid obtained by extrapolating results
-            calculated at the integration points.
-            If the requested field values are not found in the output database at the specified
-            ELEMENT_NODAL or CENTROID positions, they are extrapolated from the field data at the
-            INTEGRATION_POINT position for the entire field region. If the field values are found at
-            the specified positions, only these field values are returned without any extrapolation.
-            This could potentially be only for a subset of the field region, depending on the output
-            request.
+              calculated at the integration points.
+              If the requested field values are not found in the output database at the specified
+              ELEMENT_NODAL or CENTROID positions, they are extrapolated from the field data at the
+              INTEGRATION_POINT position for the entire field region. If the field values are found at
+              the specified positions, only these field values are returned without any extrapolation.
+              This could potentially be only for a subset of the field region, depending on the output
+              request.
         readOnly
             A Boolean specifying whether the extrapolated data returned by this call is written to
             the output database. The default value is OFF.
@@ -527,9 +528,9 @@ class FieldOutput:
 
         Raises
         ------
-            - The getTransformedField method throws an exception if the field contains any assembly
+        odbException: Cannot apply transformation to field containing assembly level nodes
+            The getTransformedField method throws an exception if the field contains any assembly
             level nodes.
-              odbException: Cannot apply transformation to field containing assembly level nodes.
         """
         pass
 
@@ -572,9 +573,9 @@ class FieldOutput:
 
         Raises
         ------
-            - The getTransformedField method throws an exception if the field contains any assembly
+        odbException: Cannot apply transformation to field containing assembly level nodes
+            The getTransformedField method throws an exception if the field contains any assembly
             level nodes.
-              odbException: Cannot apply transformation to field containing assembly level nodes.
         """
         pass
 
@@ -622,9 +623,9 @@ class FieldOutput:
 
         Raises
         ------
-            - The getTransformedField method throws an exception if the field contains any assembly
+        odbException: Cannot apply transformation to field containing assembly level nodes
+            The getTransformedField method throws an exception if the field contains any assembly
             level nodes.
-              odbException: Cannot apply transformation to field containing assembly level nodes.
         """
         pass
 
@@ -650,9 +651,9 @@ class FieldOutput:
 
         Raises
         ------
-            - The getConnectorFieldXformedToNodeA method throws an exception if the field requires a
+        odbException: Deformation field is required for transforming this connector field.
+            The getConnectorFieldXformedToNodeA method throws an exception if the field requires a
             deformationField and the argument is not supplied.
-              odbException: Deformation field is required for transforming this connector field.
         """
         pass
 
@@ -703,6 +704,7 @@ class FieldOutput:
             - MAX_INPLANE_PRINCIPAL
             - MIN_INPLANE_PRINCIPAL
             - OUTOFPLANE_PRINCIPAL
+            
             The default value is an empty sequence.
         """
         pass

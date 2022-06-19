@@ -34,8 +34,9 @@ class AVIOptions:
             - RAW8, specifying an uncompressed format of 8 bits per pixel.
             - RAW32, specifying an uncompressed format of 32 bits per pixel.
             - RLE8, specifying a run length encoded format of 8 bits per pixel.
-            - CODEC, specifying a format defined by CODEC (encoder/decoder). The availability of the
-            CODEC is system dependent
+            - CODEC, specifying a format defined by CODEC (encoder/decoder). The availability of
+              theCODEC is system dependent
+              
             The default value is RLE8.
         compressionQuality
             An Int specifying the quality of the compression as a percentage when the

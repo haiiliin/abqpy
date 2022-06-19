@@ -19,6 +19,7 @@ class ConcreteTensionDamage:
     The table data for this object are:
 
     - If **type**=STRAIN, the table data specify the following:
+    
         - Tensile damage variable, dt.
         - Direct cracking strain, ϵtc⁢k.
         - Temperature, if the data depend on temperature.
@@ -26,6 +27,7 @@ class ConcreteTensionDamage:
         - Value of the second field variable.
         - Etc.
     - If **type**=DISPLACEMENT, the table data specify the following:
+    
         - Tensile damage variable, dt.
         - Direct cracking displacement, utc⁢k.
         - Temperature, if the data depend on temperature.

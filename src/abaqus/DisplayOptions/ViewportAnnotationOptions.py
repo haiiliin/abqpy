@@ -85,7 +85,7 @@ class ViewportAnnotationOptions:
         legend
             A Boolean specifying whether the legend is shown. The default value is ON.
         legendMinMax
-            A Boolean specifying whether the minimum and maximum values for *X–Y* and contour plots
+            A Boolean specifying whether the minimum and maximum values for **X - Y** and contour plots
             are shown. The default value is OFF.
         legendBox
             A Boolean specifying whether the box around the legend is shown. The default value is

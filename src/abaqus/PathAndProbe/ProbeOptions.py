@@ -3,7 +3,7 @@ from abaqusConstants import *
 
 class ProbeOptions:
     """The ProbeOptions object is used to store settings associated with probing a model or an
-    *X–Y* plot. The ProbeOptions object has no constructor. Abaqus creates the
+    **X - Y** plot. The ProbeOptions object has no constructor. Abaqus creates the
     **defaultProbeOptions** and the **probeOptions** members when you import the Visualization
     module. When probing is initiated for the first time, the values in the **probeOptions**
     member are initialized using the values from the **defaultProbeOptions** member.
@@ -67,7 +67,7 @@ class ProbeOptions:
         probed. This member is valid when **probeObject=XYPlot**. The default value is ON.
     interpolateXy: Boolean
         A Boolean specifying whether to interpolate values within a line segment when
-        **probeObject=XYPlot**. When **interpolateXy=OFF**, probing returns the nearest *X–Y* data
+        **probeObject=XYPlot**. When **interpolateXy=OFF**, probing returns the nearest **X - Y** data
         point on the curve. When **interpolateXy=ON**, probing interpolates data to return a value
         at the nearest point on the curve. The default value is OFF.
     isFieldOutputAvailable: Boolean
@@ -160,7 +160,7 @@ class ProbeOptions:
     sequenceID: Boolean = ON
 
     # A Boolean specifying whether to interpolate values within a line segment when
-    # **probeObject**=XYPlot. When **interpolateXy**=OFF, probing returns the nearest *X–Y* data
+    # **probeObject**=XYPlot. When **interpolateXy**=OFF, probing returns the nearest **X - Y** data
     # point on the curve. When **interpolateXy**=ON, probing interpolates data to return a value
     # at the nearest point on the curve. The default value is OFF.
     interpolateXy: Boolean = OFF
@@ -259,7 +259,7 @@ class ProbeOptions:
             probed. This member is valid when **probeObject**=XYPlot. The default value is ON.
         interpolateXy
             A Boolean specifying whether to interpolate values within a line segment when
-            **probeObject**=XYPlot. When **interpolateXy**=OFF, probing returns the nearest *X–Y* data
+            **probeObject**=XYPlot. When **interpolateXy**=OFF, probing returns the nearest **X - Y** data
             point on the curve. When **interpolateXy**=ON, probing interpolates data to return a value
             at the nearest point on the curve. The default value is OFF.
         """

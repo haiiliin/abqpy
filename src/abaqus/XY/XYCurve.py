@@ -5,7 +5,7 @@ from .XYData import XYData
 
 
 class XYCurve:
-    """The XYCurve object is used to plot *X–Y* data and to store its display attributes.
+    """The XYCurve object is used to plot **X - Y** data and to store its display attributes.
 
     Attributes
     ----------

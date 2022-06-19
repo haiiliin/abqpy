@@ -56,37 +56,39 @@ class AnimationOptions:
     xyShowLine: Boolean
         A Boolean specifying whether to show the time tracker line. The default value is ON.
     xyLineStyle: SymbolicConstant
-        A SymbolicConstant specifying the *X–Y* time tracker line style. Possible values are
+        A SymbolicConstant specifying the **X - Y** time tracker line style. Possible values are
         SOLID, DASHED, DOTTED, and DOT_DASH. The default value is SOLID.
     xyLineThickness: SymbolicConstant
-        A SymbolicConstant specifying the *X–Y* time tracker line thickness. Possible values are
+        A SymbolicConstant specifying the **X - Y** time tracker line thickness. Possible values are
         VERY_THIN, THIN, MEDIUM, and THICK. The default value is MEDIUM.
     xyShowSymbol: Boolean
         A Boolean specifying whether to show the time tracker symbols. The default value is ON.
     xySymbolMarker: SymbolicConstant
-        A SymbolicConstant specifying the marker type to be used for all animation capable *X–Y*
+        A SymbolicConstant specifying the marker type to be used for all animation capable **X - Y**
         curve or the SymbolicConstant DEFAULT specifying that the system will take the marker
-        associated to each curve Possible values are:
-            - FILLED_CIRCLE
-            - FILLED_SQUARE
-            - FILLED_DIAMOND
-            - FILLED_TRI
-            - HOLLOW_CIRCLE
-            - HOLLOW_SQUARE
-            - HOLLOW_DIAMOND
-            - HOLLOW_TRI
-            - CROSS
-            - XMARKER
-            - DEFAULT
+        associated to each curve. Possible values are:
+        
+        - FILLED_CIRCLE
+        - FILLED_SQUARE
+        - FILLED_DIAMOND
+        - FILLED_TRI
+        - HOLLOW_CIRCLE
+        - HOLLOW_SQUARE
+        - HOLLOW_DIAMOND
+        - HOLLOW_TRI
+        - CROSS
+        - XMARKER
+        - DEFAULT
+        
         The default value is DEFAULT.
     xySymbolSize: SymbolicConstant
         A SymbolicConstant specifying the size of the markers. Possible values are SMALL,
         MEDIUM, and LARGE. The default value is MEDIUM.
     xyLineColor: str
-        A String specifying the color used to plot the *X–Y* time tracker line when
+        A String specifying the color used to plot the **X - Y** time tracker line when
         **xyUseHighlightMethod** = False. The default value is "Yellow".
     xySymbolColor: str
-        A String specifying the color used to plot *X–Y* time tracker symbols when
+        A String specifying the color used to plot **X - Y** time tracker symbols when
         **xyUseHighlightMethod** = False. When setting the color to 'Default' the system will take
         the color associated to each curve. The default value is "Default".
 
@@ -161,18 +163,18 @@ class AnimationOptions:
     # A Boolean specifying whether to show the time tracker line. The default value is ON.
     xyShowLine: Boolean = ON
 
-    # A SymbolicConstant specifying the *X–Y* time tracker line style. Possible values are
+    # A SymbolicConstant specifying the **X - Y** time tracker line style. Possible values are
     # SOLID, DASHED, DOTTED, and DOT_DASH. The default value is SOLID.
     xyLineStyle: SymbolicConstant = SOLID
 
-    # A SymbolicConstant specifying the *X–Y* time tracker line thickness. Possible values are
+    # A SymbolicConstant specifying the **X - Y** time tracker line thickness. Possible values are
     # VERY_THIN, THIN, MEDIUM, and THICK. The default value is MEDIUM.
     xyLineThickness: SymbolicConstant = MEDIUM
 
     # A Boolean specifying whether to show the time tracker symbols. The default value is ON.
     xyShowSymbol: Boolean = ON
 
-    # A SymbolicConstant specifying the marker type to be used for all animation capable *X–Y*
+    # A SymbolicConstant specifying the marker type to be used for all animation capable **X - Y**
     # curve or the SymbolicConstant DEFAULT specifying that the system will take the marker
     # associated to each curve Possible values are:
     # - FILLED_CIRCLE
@@ -193,11 +195,11 @@ class AnimationOptions:
     # MEDIUM, and LARGE. The default value is MEDIUM.
     xySymbolSize: SymbolicConstant = MEDIUM
 
-    # A String specifying the color used to plot the *X–Y* time tracker line when
+    # A String specifying the color used to plot the **X - Y** time tracker line when
     # **xyUseHighlightMethod** = False. The default value is "Yellow".
     xyLineColor: str = ""
 
-    # A String specifying the color used to plot *X–Y* time tracker symbols when
+    # A String specifying the color used to plot **X - Y** time tracker symbols when
     # **xyUseHighlightMethod** = False. When setting the color to 'Default' the system will take
     # the color associated to each curve. The default value is "Default".
     xySymbolColor: str = ""
@@ -268,18 +270,18 @@ class AnimationOptions:
         xyShowLine
             A Boolean specifying whether to show the time tracker line. The default value is ON.
         xyLineStyle
-            A SymbolicConstant specifying the *X–Y* time tracker line style. Possible values are
+            A SymbolicConstant specifying the **X - Y** time tracker line style. Possible values are
             SOLID, DASHED, DOTTED, and DOT_DASH. The default value is SOLID.
         xyLineThickness
-            A SymbolicConstant specifying the *X–Y* time tracker line thickness. Possible values are
+            A SymbolicConstant specifying the **X - Y** time tracker line thickness. Possible values are
             VERY_THIN, THIN, MEDIUM, and THICK. The default value is MEDIUM.
         xyLineColor
-            A String specifying the color used to plot the *X–Y* time tracker line when
+            A String specifying the color used to plot the **X - Y** time tracker line when
             **xyUseHighlightMethod** = False. The default value is "Yellow".
         xyShowSymbol
             A Boolean specifying whether to show the time tracker symbols. The default value is ON.
         xySymbolMarker
-            A SymbolicConstant specifying the marker type to be used for all animation capable *X–Y*
+            A SymbolicConstant specifying the marker type to be used for all animation capable **X - Y**
             curve or the SymbolicConstant DEFAULT specifying that the system will take the marker
             associated to each curve Possible values are:
 
@@ -294,12 +296,13 @@ class AnimationOptions:
             - CROSS
             - XMARKER
             - DEFAULT
+            
             The default value is DEFAULT.
         xySymbolSize
             A SymbolicConstant specifying the size of the markers. Possible values are SMALL,
             MEDIUM, and LARGE. The default value is MEDIUM.
         xySymbolColor
-            A String specifying the color used to plot *X–Y* time tracker symbols when
+            A String specifying the color used to plot **X - Y** time tracker symbols when
             **xyUseHighlightMethod** = False. When setting the color to 'Default' the system will take
             the color associated to each curve. The default value is "Default".
         """

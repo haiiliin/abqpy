@@ -64,7 +64,7 @@ class ConstrainedSketch(
             and the translation vector. Possible values are any Floats.The default value for the
             axis of rotation is the identity matrix`(1.0, 0.0, 0.0),  (0.0, 1.0, 0.0),  (0.0, 0.0,
             1.0)`The default value for the translation vector is`(0.0, 0.0, 0.0)`The default values
-            position the sketch on the *X–Y* plane centered at the origin.
+            position the sketch on the **X - Y** plane centered at the origin.
 
         Returns
         -------
@@ -123,7 +123,7 @@ class ConstrainedSketch(
             A String specifying the repository key.
         geometryFile
             An AcisFile object specifying a file containing geometry. The geometry in the file is
-            converted to two-dimensional sketch geometry in the *X–Y* plane.
+            converted to two-dimensional sketch geometry in the **X - Y** plane.
 
         Returns
         -------
