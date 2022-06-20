@@ -52,10 +52,33 @@ def evaluateMaterial(
         COEFFICIENTS.
     strainEnergyPotentials
         A sequence of SymbolicConstants specifying for which material models the material is to
-        be evaluated. Possible values are POLY_N1, POLY_N2, POLY_N3, POLY_N4, POLY_N5, POLY_N6,
-        OGDEN_N1, OGDEN_N2, OGDEN_N3, OGDEN_N4, OGDEN_N5, OGDEN_N6, REDUCED_POLY_N1,
-        REDUCED_POLY_N2, REDUCED_POLY_N3, REDUCED_POLY_N4, REDUCED_POLY_N5, REDUCED_POLY_N6,
-        ARRUDA_BOYCE, VAN_DER_WAALS, YEOH, MOONEY_RIVLIN, and NEO_HOOKE.Note:The options
+        be evaluated. Possible values are 
+        
+        - POLY_N1
+        - POLY_N2
+        - POLY_N3
+        - POLY_N4
+        - POLY_N5
+        - POLY_N6,
+        - OGDEN_N1
+        - OGDEN_N2
+        - OGDEN_N3
+        - OGDEN_N4
+        - OGDEN_N5
+        - OGDEN_N6
+        - REDUCED_POLY_N1,
+        - REDUCED_POLY_N2
+        - REDUCED_POLY_N3
+        - REDUCED_POLY_N4
+        - REDUCED_POLY_N5
+        - REDUCED_POLY_N6,
+        - ARRUDA_BOYCE
+        - VAN_DER_WAALS
+        - YEOH
+        - MOONEY_RIVLIN
+        - NEO_HOOKE. 
+        
+        **Note**: The options
         POLY_N3, POLY_N4, POLY_N5, and POLY_N6 are valid only if the material was defined by
         providing coefficients of the strain energy potential.
     marlowData
@@ -100,14 +123,12 @@ def evaluateMaterial(
 
     Raises
     ------
-        - If **dataSource** = TEST_DATA and **strainEnergyPotentials** contains POLY_N3, POLY_N4,
-        POLY_N5, or POLY_N6:
-          MaterialEvaluationError: POLY_N3, POLY_N4, POLY_N5, or POLY_N6not allowed for
-        **dataSource** = TEST_DATA.
-        - If the material evaluation failed:
-          MaterialEvaluationError: material evaluation failed, see*path to data file*.
-        - If the material type of the material to be evaluated is not hyperelastic:
-          MaterialEvaluationError: Material evaluation is currentlysupported only for
-        hyperelastic materials.
+    MaterialEvaluationError: POLY_N3, POLY_N4, POLY_N5, or POLY_N6 not allowed for **dataSource** = TEST_DATA
+        If **dataSource** = TEST_DATA and **strainEnergyPotentials** contains POLY_N3, POLY_N4,
+        POLY_N5, or POLY_N6.
+    MaterialEvaluationError: material evaluation failed, see **path to data file**
+        If the material evaluation failed.
+    MaterialEvaluationError: Material evaluation is currentlysupported only for hyperelastic materials
+        If the material type of the material to be evaluated is not hyperelastic.
     """
     pass
