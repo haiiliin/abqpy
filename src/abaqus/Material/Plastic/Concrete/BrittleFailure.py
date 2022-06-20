@@ -17,14 +17,14 @@ class BrittleFailure:
 
     The table data for this object are:
 
-    - If parent [BrittleCracking](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-brittlecrackingpyc.htm?ContextScope=all) member **type** = STRAIN the table data specify the following:
+    - If parent :py:class:`~abaqus.Material.Plastic.Concrete.BrittleCracking.BrittleCracking` member **type** = STRAIN the table data specify the following:
     
         - Direct cracking failure strain.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If parent [BrittleCracking](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-brittlecrackingpyc.htm?ContextScope=all) member **type** = DISPLACEMENT or **type** = GFI the table data specify the following:
+    - If parent :py:class:`~abaqus.Material.Plastic.Concrete.BrittleCracking.BrittleCracking` member **type** = DISPLACEMENT or **type** = GFI the table data specify the following:
     
         - Direct cracking failure displacement.
         - Temperature, if the data depend on temperature.
