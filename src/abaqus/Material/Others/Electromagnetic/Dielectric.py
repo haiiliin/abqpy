@@ -39,7 +39,7 @@ class Dielectric:
     
         - :math:`D_{11}^{\varphi}`
         - :math:`D_{12}^{\varphi}`
-        . :math:`D_{22}^{\varphi}`
+        - :math:`D_{22}^{\varphi}`
         - :math:`D_{13}^{\varphi}`
         - :math:`D_{23}^{\varphi}`
         - :math:`D_{33}^{\varphi}`
