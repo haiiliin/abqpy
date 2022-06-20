@@ -62,11 +62,11 @@ for tests using Jupyter Notebooks to build the Abaqus model.
  
 In order to use the **Jupyter Notebook** feature, you have to install the following packages:
 ```shell
-pip install ipyparams  # to read the file name of the notebook
+pip install ipynbname  # to read the file name of the notebook
 pip install notebook
 pip install jupyterlab
 ```
-Or use `conda` to install (the `ipyparams` package is only distributed in `PyPI`, 
+Or use `conda` to install (the `ipynbname` package is only distributed in `PyPI`, 
 so you have to install it using `pip`):
 ```shell
 conda install jupyterlab
