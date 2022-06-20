@@ -61,7 +61,7 @@ class DerivedComponent:
 
         Raises
         ------
-            ValueError and TextError.
+        ValueError and TextError
         """
         pass
 
@@ -70,7 +70,7 @@ class DerivedComponent:
 
         Raises
         ------
-            ValueError.
+        ValueError
         """
         pass
 
@@ -151,7 +151,7 @@ class DerivedComponent:
 
         Raises
         ------
-            ValueError and TextError.
+        ValueError and TextError
         """
         cDCTerm = CDCTerm(
             intrinsicComponents,

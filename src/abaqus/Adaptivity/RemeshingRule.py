@@ -130,7 +130,7 @@ class RemeshingRule:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 

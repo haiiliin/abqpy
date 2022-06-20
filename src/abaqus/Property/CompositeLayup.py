@@ -97,7 +97,7 @@ class CompositeLayup:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -238,7 +238,7 @@ class CompositeLayup:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         compositePly = CompositePly(
             thickness,

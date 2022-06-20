@@ -78,7 +78,7 @@ class TextStyle:
 
         Raises
         ------
-            ColorError
+        ColorError
         """
         pass
 

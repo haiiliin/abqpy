@@ -1020,7 +1020,7 @@ class BasicOptions:
 
         Raises
         ------
-            - If **featureAngle** is not in the valid range:
-              RangeError: featureAngle must be a float in the range 0-90, inclusive
+        RangeError: featureAngle must be a float in the range 0-90, inclusive
+            If **featureAngle** is not in the valid range.
         """
         pass

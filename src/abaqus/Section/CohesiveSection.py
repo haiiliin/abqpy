@@ -71,7 +71,7 @@ class CohesiveSection(Section):
 
         Raises
         ------
-            RangeError and InvalidNameError.
+        RangeError and InvalidNameError
         """
         super().__init__()
         pass

@@ -95,7 +95,7 @@ class BoltLoad(Load):
 
         Raises
         ------
-            TextError.
+        TextError
         """
         super().__init__()
         pass

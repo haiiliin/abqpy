@@ -328,7 +328,7 @@ class SectionModel(ModelBase):
 
         Raises
         ------
-            RangeError and InvalidNameError.
+        RangeError and InvalidNameError
         """
         self.sections[name] = section = CohesiveSection(
             name,
@@ -1041,7 +1041,7 @@ class SectionModel(ModelBase):
 
         Raises
         ------
-            RangeError and InvalidNameError.
+        RangeError and InvalidNameError
         """
         self.sections[name] = section = MembraneSection(
             name,
@@ -1094,7 +1094,7 @@ class SectionModel(ModelBase):
 
         Raises
         ------
-            RangeError and InvalidNameError.
+        RangeError and InvalidNameError
         """
         self.sections[name] = section = MPCSection(name, mpcType, userMode, userType)
         return section
@@ -1179,7 +1179,7 @@ class SectionModel(ModelBase):
 
         Raises
         ------
-            RangeError and InvalidNameError.
+        RangeError and InvalidNameError
         """
         self.sections[name] = section = SurfaceSection(name, useDensity, density)
         return section
@@ -1212,7 +1212,7 @@ class SectionModel(ModelBase):
 
         Raises
         ------
-            RangeError and InvalidNameError.
+        RangeError and InvalidNameError
         """
         self.sections[name] = section = TrussSection(name, material, area)
         return section

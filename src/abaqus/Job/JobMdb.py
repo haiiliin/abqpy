@@ -151,7 +151,7 @@ class JobMdb(MdbBase):
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         self.jobs[name] = job = ModelJob(
             name,
@@ -382,7 +382,7 @@ class JobMdb(MdbBase):
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         self.optimizationProcesses[name] = optimizationProcess = OptimizationProcess(
             name,

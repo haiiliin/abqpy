@@ -61,7 +61,7 @@ class PropertyPart(PartBase):
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         self.compositeLayups[name] = compositeLayup = CompositeLayup(
             name,

@@ -526,8 +526,8 @@ class MeshAssembly(AssemblyBase):
 
         Raises
         ------
-            - TypeError
-              If the region cannot be associated with element types or if the **elemShape** is not
+        TypeError
+            If the region cannot be associated with element types or if the **elemShape** is not
             consistent with the dimension of the **region**.
         """
         pass
@@ -608,8 +608,8 @@ class MeshAssembly(AssemblyBase):
 
         Raises
         ------
-            - TypeError
-              The region cannot carry mesh controls.
+        TypeError
+            The region cannot carry mesh controls.
         """
         pass
 
@@ -665,8 +665,8 @@ class MeshAssembly(AssemblyBase):
 
         Raises
         ------
-            - An exception occurs if the part instance does not contain native geometry.
-              Error: Part instance does not contain native geometry
+        Error: Part instance does not contain native geometry
+            An exception occurs if the part instance does not contain native geometry.
         """
         pass
 
@@ -919,6 +919,7 @@ class MeshAssembly(AssemblyBase):
 
         Raises
         ------
+        Exception
             As a result of the element assignment, a region must have the same library, family, and
             order for all its assigned element types. Otherwise, an exception will be thrown.
             For example, suppose the Hex, Wedge, and Tet elements previously assigned to a cell are

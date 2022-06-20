@@ -84,7 +84,7 @@ class OptimizationProcess:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 

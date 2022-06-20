@@ -354,7 +354,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -384,7 +384,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -414,7 +414,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -443,7 +443,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -478,7 +478,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -513,7 +513,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -551,7 +551,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -578,7 +578,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -608,7 +608,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -638,7 +638,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -669,7 +669,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -718,7 +718,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -776,7 +776,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -816,7 +816,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -849,7 +849,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -883,7 +883,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -914,7 +914,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -949,7 +949,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -981,7 +981,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -1011,7 +1011,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -1041,7 +1041,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -1071,7 +1071,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -1188,7 +1188,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -1250,7 +1250,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -1281,7 +1281,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -1329,8 +1329,8 @@ class Feature:
 
         Raises
         ------
-            - If the sketchUpEdge is parallel to the sketchPlane:
-              Up direction is parallel to plane normal
+        Up direction is parallel to plane normal
+            If the sketchUpEdge is parallel to the sketchPlane.
         """
         pass
 
@@ -1359,7 +1359,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -1389,7 +1389,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -1429,7 +1429,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -1460,7 +1460,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -1490,7 +1490,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -1524,7 +1524,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -1558,7 +1558,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -1594,7 +1594,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -1631,7 +1631,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -1660,7 +1660,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -1690,7 +1690,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -1719,7 +1719,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -1784,7 +1784,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -1822,7 +1822,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -1972,7 +1972,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -2014,7 +2014,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -2066,7 +2066,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -2116,7 +2116,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -2165,7 +2165,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -2338,7 +2338,7 @@ class Feature:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 

@@ -126,7 +126,7 @@ class PropertyTable:
 
         Raises
         ------
-            RangeError.
+        RangeError
         """
         self.propertyTableDatas[label] = propertyTableData = PropertyTableData(
             label, regularize, extrapolate, isTemp, fieldNums, regularizeTolerance, data

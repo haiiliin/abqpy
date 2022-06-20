@@ -98,7 +98,7 @@ class AdaptiveMeshConstraint:
 
         Raises
         ------
-            TextError.
+        TextError
         """
         pass
 
@@ -116,7 +116,7 @@ class AdaptiveMeshConstraint:
 
         Raises
         ------
-            TextError.
+        TextError
         """
         pass
 
@@ -132,7 +132,7 @@ class AdaptiveMeshConstraint:
 
         Raises
         ------
-            TextError.
+        TextError
         """
         pass
 

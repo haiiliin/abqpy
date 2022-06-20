@@ -52,7 +52,7 @@ class InteractionContactInitializationModel(ModelBase):
 
         Raises
         ------
-            RangeError.
+        RangeError
         """
         self.contactInitializations[name] = contactInitialization = StdInitialization(
             name,

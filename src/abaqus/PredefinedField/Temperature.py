@@ -194,7 +194,7 @@ class Temperature(PredefinedField):
 
         Raises
         ------
-            TextError.
+        TextError
         """
         pass
 

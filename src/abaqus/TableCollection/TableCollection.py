@@ -83,7 +83,7 @@ class TableCollection:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         dataTable = DataTable(label)
         self.dataTables.append(dataTable)
@@ -142,7 +142,7 @@ class TableCollection:
 
         Raises
         ------
-            RangeError.
+        RangeError
         """
         self.propertyTables[name] = propertyTable = PropertyTable(
             name, properties, variables

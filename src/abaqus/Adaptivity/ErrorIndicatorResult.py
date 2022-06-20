@@ -42,6 +42,6 @@ class ErrorIndicatorResult(RuleResult):
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass

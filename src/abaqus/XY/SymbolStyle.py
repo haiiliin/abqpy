@@ -78,7 +78,7 @@ class SymbolStyle:
 
         Raises
         ------
-            ColorError
+        ColorError
         """
         pass
 

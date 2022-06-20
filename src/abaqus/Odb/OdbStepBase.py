@@ -195,8 +195,9 @@ class OdbStepBase:
 
         Raises
         ------
-            - If **previousStepName** is invalid:
-              ValueError: previousStepName is invalid
+        ValueError: previousStepName is invalid
+            If **previousStepName** is invalid.
+              
         """
         pass
 
@@ -223,8 +224,8 @@ class OdbStepBase:
 
         Raises
         ------
-            - If the OdbFrame object is not found:
-              OdbError: Frame not found.
+        OdbError: Frame not found
+            If the OdbFrame object is not found.
         """
         pass
 
@@ -243,8 +244,8 @@ class OdbStepBase:
 
         Raises
         ------
-            - If the OdbFrame object is not found:
-              OdbError: Frame not found.
+        OdbError: Frame not found
+            If the OdbFrame object is not found.
         """
         pass
 
@@ -276,8 +277,8 @@ class OdbStepBase:
 
         Raises
         ------
-            - If the OdbFrame object is not found:
-              OdbError: Frame not found.
+        OdbError: Frame not found
+            If the OdbFrame object is not found.
         """
         pass
 
@@ -303,8 +304,8 @@ class OdbStepBase:
 
         Raises
         ------
-            - If a HistoryRegion object is not found:
-              OdbError: HistoryRegion not found.
+        OdbError: HistoryRegion not found
+            If a HistoryRegion object is not found.
         """
         pass
 

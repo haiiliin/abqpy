@@ -64,7 +64,7 @@ class TableCollectionModel(ModelBase):
 
         Raises
         ------
-            RangeError.
+        RangeError
         """
         self.eventSeriesDatas[name] = eventSeries = EventSeries(
             name,
@@ -106,7 +106,7 @@ class TableCollectionModel(ModelBase):
 
         Raises
         ------
-            RangeError.
+        RangeError
         """
         self.eventSeriesTypes[name] = eventSeriesType = EventSeriesType(
             name, createStepName, fields

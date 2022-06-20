@@ -69,7 +69,7 @@ class AdaptivityProcess:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 

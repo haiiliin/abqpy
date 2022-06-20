@@ -59,7 +59,7 @@ class PredefinedField:
 
         Raises
         ------
-            TextError.
+        TextError
         """
         pass
 

@@ -103,6 +103,6 @@ class CompositePly:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass

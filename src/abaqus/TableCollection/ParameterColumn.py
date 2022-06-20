@@ -61,6 +61,6 @@ class ParameterColumn:
 
         Raises
         ------
-            Incompatible data are given.
+        Incompatible data are given
         """
         pass

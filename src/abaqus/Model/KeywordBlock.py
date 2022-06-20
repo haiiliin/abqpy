@@ -78,7 +78,7 @@ class KeywordBlock:
 
         Raises
         ------
-            IndexError.
+        IndexError
         """
         pass
 
@@ -95,7 +95,7 @@ class KeywordBlock:
 
         Raises
         ------
-            IndexError.
+        IndexError
         """
         pass
 
@@ -125,6 +125,6 @@ class KeywordBlock:
 
         Raises
         ------
-            IndexError.
+        IndexError
         """
         pass

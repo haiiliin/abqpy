@@ -64,7 +64,7 @@ class AreaStyle:
 
         Raises
         ------
-            ColorError
+        ColorError
         """
         pass
 

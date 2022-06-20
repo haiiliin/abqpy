@@ -44,7 +44,7 @@ class XYPlot(XYPlotBase):
 
         Raises
         ------
-            ColorError
+        ColorError
         """
         areaStyle = AreaStyle(color, fill, style)
         return areaStyle
@@ -89,7 +89,7 @@ class XYPlot(XYPlotBase):
 
         Raises
         ------
-            ColorError
+        ColorError
         """
         lineStyle = LineStyle(color, show, style, thickness)
         return lineStyle
@@ -249,7 +249,7 @@ class XYPlot(XYPlotBase):
 
         Raises
         ------
-            ColorError
+        ColorError
         """
         symbolStyle = SymbolStyle(color, show, marker, size)
         return symbolStyle
@@ -290,7 +290,7 @@ class XYPlot(XYPlotBase):
 
         Raises
         ------
-            ColorError
+        ColorError
         """
         textStyle = TextStyle(color, show, font, rotationAngle)
         return textStyle

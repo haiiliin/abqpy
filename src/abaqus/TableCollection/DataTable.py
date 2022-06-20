@@ -54,6 +54,6 @@ class DataTable:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass

@@ -184,8 +184,8 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb):
 
         Raises
         ------
-            - If **previousStepName** is invalid:
-              ValueError: previousStepName is invalid
+        ValueError: previousStepName is invalid
+            If **previousStepName** is invalid.
         """
         self.steps[name] = odbStep = OdbStep(
             name,

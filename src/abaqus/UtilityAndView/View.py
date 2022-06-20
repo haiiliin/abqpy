@@ -306,8 +306,9 @@ class View:
 
         Raises
         ------
-            TypeError: rotationCenter cannot be set using a part instance and node label unless the
-            displayed object is an ODB
+        TypeError
+            rotationCenter cannot be set using a part instance and node label unless the
+            displayed object is an ODB.
         """
         pass
 

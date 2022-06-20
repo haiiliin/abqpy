@@ -763,7 +763,7 @@ class ViewportBase:
 
         Raises
         ------
-            ValueError.
+        ValueError
         """
         pass
 
@@ -778,7 +778,7 @@ class ViewportBase:
 
         Raises
         ------
-            ValueError.
+        ValueError
         """
         pass
 

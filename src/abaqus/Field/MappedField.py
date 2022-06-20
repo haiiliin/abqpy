@@ -282,7 +282,7 @@ class MappedField(AnalyticalField):
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         super().__init__()
         pass

@@ -202,7 +202,7 @@ class AnalyticalField(Field):
 
         Raises
         ------
-            TextException.
+        TextException
         """
         self.odbMeshRegionData = OdbMeshRegionData(
             odbFileName,

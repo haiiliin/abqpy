@@ -109,6 +109,6 @@ class GasketSection(Section):
 
         Raises
         ------
-            ValueError.
+        ValueError
         """
         pass

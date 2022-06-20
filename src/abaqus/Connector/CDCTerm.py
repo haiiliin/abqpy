@@ -110,8 +110,7 @@ class CDCTerm:
 
         Raises
         ------
-            ValueError and TextError.
-        """
+        ValueError and TextError        """
         pass
 
     def setValues(self):
@@ -119,7 +118,7 @@ class CDCTerm:
 
         Raises
         ------
-            ValueError.
+        ValueError
         """
         pass
 
@@ -201,8 +200,7 @@ class CDCTerm:
 
         Raises
         ------
-            ValueError and TextError.
-        """
+        ValueError and TextError        """
         self.options = connectorOptions = ConnectorOptions(
             useBehRegSettings,
             regularize,

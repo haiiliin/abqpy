@@ -175,7 +175,7 @@ class ConnectorBehaviorOption:
 
         Raises
         ------
-            ValueError and TextError.
+        ValueError and TextError
         """
         self.derivedComponent = derivedComponent = DerivedComponent()
         return derivedComponent
@@ -252,7 +252,7 @@ class ConnectorBehaviorOption:
 
         Raises
         ------
-            ValueError and TextError.
+        ValueError and TextError.
         """
         self.options = connectorOptions = ConnectorOptions(
             useBehRegSettings,

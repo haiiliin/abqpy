@@ -162,7 +162,7 @@ class Drawing:
 
         Raises
         ------
-            ValueError.
+        ValueError
             - If the user attempts to create a new drawing with the name of an existing drawing:
               ValueError: There is already a drawing with this name
         """
@@ -276,7 +276,7 @@ class Drawing:
 
         Raises
         ------
-            ValueError.
+        ValueError
             - If **edgeColor** is not a sequence of 0 or 3 Floats:
               ValueError: **edgeColor** must be a tuple with 3 values
         """
@@ -297,7 +297,7 @@ class Drawing:
 
         Raises
         ------
-            ValueError.
+        ValueError
             - If **pointColor** is a not sequence of 0 or 3 Floats:
               ValueError: **pointColor** must be a tuple with 3 values
         """

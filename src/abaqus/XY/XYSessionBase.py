@@ -122,13 +122,13 @@ class XYSessionBase(SessionBase):
 
         Raises
         ------
-            - Text Error
-              The stress line passes through incompatible part instances. Results cannot be
+        TextError
+            The stress line passes through incompatible part instances. Results cannot be
             extracted.
-            - Text Error
-              Specified variables cannot be used for extracting results along the stress line.
-            - Text Error
-              Results for all the points along the stress line were not found. Selected end points
+        TextError
+            Specified variables cannot be used for extracting results along the stress line.
+        TextError
+            Results for all the points along the stress line were not found. Selected end points
             and all intermediate sample points must lie within the current display group, and within
             solid continuum elements. Due to tolerance limitations, intermediate points lying on
             display group boundaries may fail to meet this criterion. Choose new end points, adjust

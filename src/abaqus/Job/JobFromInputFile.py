@@ -170,10 +170,10 @@ class JobFromInputFile(Job):
 
         Raises
         ------
-            AbaqusException
-            ValueError
-            - If the user attempts to provide RESTART as a value to argument type:
-              ValueError: RESTART of input file job is not currently supported
+        AbaqusException
+            If the user attempts to provide RESTART as a value to argument type:
+        ValueError
+            RESTART of input file job is not currently supported
         """
         super().__init__()
         pass

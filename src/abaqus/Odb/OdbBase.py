@@ -162,8 +162,8 @@ class OdbBase:
 
         Raises
         ------
-            - If the exact frame is not found:
-              OdbError: Frame not found.
+        OdbError: Frame not found
+            If the exact frame is not found.
         """
         pass
 
@@ -172,8 +172,8 @@ class OdbBase:
 
         Raises
         ------
-            - OdbError
-              Database save failed. The database was opened as read-only. Modification of data is
+        OdbError
+            Database save failed. The database was opened as read-only. Modification of data is
             not permitted.
         """
         pass

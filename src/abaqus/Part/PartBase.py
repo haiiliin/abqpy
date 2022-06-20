@@ -1423,8 +1423,8 @@ class PartBase(Feature):
 
         Raises
         ------
-            - An exception occurs if a feature with the given name does not exist.
-              Error : Incorrect feature name.
+        Error : Incorrect feature name
+            An exception occurs if a feature with the given name does not exist.
         """
         pass
 
@@ -1443,8 +1443,8 @@ class PartBase(Feature):
 
         Raises
         ------
-            - An exception occurs if a feature with the given name does not exist.
-              Error : Incorrect feature name.
+        Error: Incorrect feature name
+            An exception occurs if a feature with the given name does not exist.
         """
         pass
 
@@ -1463,8 +1463,8 @@ class PartBase(Feature):
 
         Raises
         ------
-            - An exception occurs if a feature with the given name does not exist.
-              Error : Incorrect feature name.
+        Error : Incorrect feature name
+            An exception occurs if a feature with the given name does not exist.
         """
         pass
 
@@ -1483,8 +1483,8 @@ class PartBase(Feature):
 
         Raises
         ------
-            - An exception occurs if a feature with the given name does not exist.
-              Error : Incorrect feature name.
+        Error: Incorrect feature name
+            An exception occurs if a feature with the given name does not exist.
         """
         pass
 
@@ -1499,8 +1499,8 @@ class PartBase(Feature):
 
         Raises
         ------
-            - If the part is not an analytical rigid part:
-              AbaqusException: Can only be used with analytical rigid parts.
+        AbaqusException: Can only be used with analytical rigid parts
+            If the part is not an analytical rigid part.
         """
         pass
 
@@ -1731,8 +1731,8 @@ class PartBase(Feature):
 
         Raises
         ------
-            - If the part is an orphan mesh part:
-              Cannot export orphan mesh parts to ACIS.
+        Cannot export orphan mesh parts to ACIS
+            If the part is an orphan mesh part.
         """
         pass
 
@@ -1769,8 +1769,8 @@ class PartBase(Feature):
 
         Raises
         ------
-            - If the part is an orphan mesh part:
-              Cannot export orphan mesh parts to IGES.
+        Cannot export orphan mesh parts to IGES
+            If the part is an orphan mesh part.
         """
         pass
 
@@ -1784,8 +1784,8 @@ class PartBase(Feature):
 
         Raises
         ------
-            - If the part contains no geometry:
-              Parterror: Cannot export orphan mesh parts to STEP.
+        Parterror: Cannot export orphan mesh parts to STEP
+            If the part contains no geometry.
         """
         pass
 
@@ -1799,8 +1799,8 @@ class PartBase(Feature):
 
         Raises
         ------
-            - If the part is an orphan mesh part:
-              Cannot export orphan mesh parts to VDA-FS.
+        Cannot export orphan mesh parts to VDA-FS
+            If the part is an orphan mesh part.
         """
         pass
 

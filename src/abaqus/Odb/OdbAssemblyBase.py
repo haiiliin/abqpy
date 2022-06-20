@@ -128,8 +128,8 @@ class OdbAssemblyBase:
 
         Raises
         ------
-            - If **region** is not an element set:
-              OdbError: Connector orientation assignment requires element set.
+        OdbError: Connector orientation assignment requires element set
+            If **region** is not an element set.
         """
         pass
 
@@ -146,8 +146,8 @@ class OdbAssemblyBase:
 
         Raises
         ------
-            - If **region** is not an element set:
-              OdbError: Section assignment requires element set.
+        OdbError: Section assignment requires element set
+            If **region** is not an element set.
         """
         pass
 
@@ -210,10 +210,10 @@ class OdbAssemblyBase:
 
         Raises
         ------
-            - If length of labels does not match length of coordinates:
-              OdbError: Number of node labels and coordinates does not match
-            - If width of coordinate array does not match assembly dimension:
-              OdbError: Node location specification does not correspond to part dimensions
+        OdbError: Number of node labels and coordinates does not match
+            If length of labels does not match length of coordinates.
+        OdbError: Node location specification does not correspond to part dimensions
+            If width of coordinate array does not match assembly dimension.
         """
         pass
 
@@ -250,7 +250,7 @@ class OdbAssemblyBase:
 
         Raises
         ------
-            - If **referenceNode** is not a node set:
-              OdbError: Rigid body definition requires a node set.
+        OdbError: Rigid body definition requires a node set
+            If **referenceNode** is not a node set
         """
         pass

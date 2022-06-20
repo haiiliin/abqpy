@@ -118,9 +118,10 @@ class Path:
 
         Raises
         ------
-            ModelError, ErrorUnsupportedNodeData, ErrorUnsupportedPointData, ErrorIncorrectPathData,
-            KeyError, ErrorEmptyPathName, ErrorPathNotFound, and ErrorNoOdbPathDisplay.
-            ValueError: When **type**=CIRCUMFERENTIAL or RADIAL, the three points specified in
+        ModelError, ErrorUnsupportedNodeData, ErrorUnsupportedPointData, ErrorIncorrectPathData,
+        KeyError, ErrorEmptyPathName, ErrorPathNotFound, and ErrorNoOdbPathDisplay.
+        ValueError
+            When **type**=CIRCUMFERENTIAL or RADIAL, the three points specified in
             **expression** are collinear.
         """
         pass

@@ -136,7 +136,7 @@ class ConnectorOptions:
 
         Raises
         ------
-            ValueError and TextError.
+        ValueError and TextError
         """
         pass
 
@@ -145,6 +145,6 @@ class ConnectorOptions:
 
         Raises
         ------
-            ValueError.
+        ValueError
         """
         pass

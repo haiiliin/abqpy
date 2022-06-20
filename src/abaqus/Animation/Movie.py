@@ -101,7 +101,7 @@ class Movie:
 
         Raises
         ------
-            ValueError.
+        ValueError
             - If **fileName** does not exist or can not be read:
               ValueError: Unable to open movie file
             - If **fileName** references an unsupported movie file format:

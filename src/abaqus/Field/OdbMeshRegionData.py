@@ -392,7 +392,7 @@ class OdbMeshRegionData:
 
         Raises
         ------
-            TextException.
+        TextException
         """
         pass
 

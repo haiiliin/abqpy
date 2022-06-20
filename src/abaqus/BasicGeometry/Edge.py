@@ -104,8 +104,7 @@ class Edge:
 
         Raises
         ------
-            The given edge is straight.
-
+        The given edge is straight
         """
         pass
 
@@ -175,8 +174,7 @@ class Edge:
 
         Raises
         ------
-            The given edges is not circular.
-
+        The given edges is not circular
         """
         pass
 

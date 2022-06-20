@@ -57,7 +57,7 @@ class InteractionContactControlModel(ModelBase):
 
         Raises
         ------
-            RangeError.
+        RangeError
         """
         self.contactControls[name] = contactControl = ExpContactControl(
             name,
@@ -192,7 +192,7 @@ class InteractionContactControlModel(ModelBase):
 
         Raises
         ------
-            RangeError.
+        RangeError
         """
         self.contactControls[name] = contactControl = StdContactControl(
             name,

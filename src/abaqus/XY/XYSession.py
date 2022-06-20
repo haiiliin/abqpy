@@ -50,7 +50,7 @@ class XYSession(XYSessionBase):
 
         Raises
         ------
-            ColorError
+        ColorError
         """
         areaStyle = AreaStyle(color, fill, style)
         return areaStyle
@@ -95,7 +95,7 @@ class XYSession(XYSessionBase):
 
         Raises
         ------
-            ColorError
+        ColorError
         """
         lineStyle = LineStyle(color, show, style, thickness)
         return lineStyle
@@ -255,7 +255,7 @@ class XYSession(XYSessionBase):
 
         Raises
         ------
-            ColorError
+        ColorError
         """
         symbolStyle = SymbolStyle(color, show, marker, size)
         return symbolStyle
@@ -296,7 +296,7 @@ class XYSession(XYSessionBase):
 
         Raises
         ------
-            ColorError
+        ColorError
         """
         textStyle = TextStyle(color, show, font, rotationAngle)
         return textStyle
@@ -807,27 +807,24 @@ class XYSession(XYSessionBase):
 
         Raises
         ------
-            - If **path** is invalid:
-              ErrorPathNotFound: Path not found.
-            - If **viewport** is invalid:
-              ErrorCurrentVPNotFound: Current viewport not found.
-            - If **step** and/or **frame** are invalid:
-              ErrorInvalidUserStepAndFrame: The user step and frame specified have not been defined.
-            - If the **variable** argument is empty:
-              ErrorNoVarInPathExtract: No variable selection for XY data extraction from path.
-            - If the specified output variable is not available in the output database:
-              ErrorUnavailableSelectedVariable: The selected variable is not available for the
-            current frame.
-            - If the specified output variable cannot be used to obtain **X - Y** data:
-              ErrorUnusableVarInPathExtract: Specified variable cannot be used in XY data extraction
-            from path.
-            - If the SymbolicConstant specifying the refinement type is invalid:
-              ErrorUnsupportedRefinementType: Unsupported refinement type.
-            - If the label specifying the refinement invariant or component is invalid:
-              ErrorInvalidRefinementSpecification: Invalid refinement specification.
-            - If **deformedMag** does not contain three Floats:
-              ErrorDeformedMagTupleInPathExtract: Deformed magnification tuple must contain X, Y and
-            Z values.
+        ErrorPathNotFound: Path not found
+            If **path** is invalid.
+        ErrorCurrentVPNotFound: Current viewport not found
+            If **viewport** is invalid.
+        ErrorInvalidUserStepAndFrame: The user step and frame specified have not been defined
+            If **step** and/or **frame** are invalid.
+        ErrorNoVarInPathExtract: No variable selection for XY data extraction from path
+            If the **variable** argument is empty.
+        ErrorUnavailableSelectedVariable: The selected variable is not available for the current frame
+            If the specified output variable is not available in the output database.
+        ErrorUnusableVarInPathExtract: Specified variable cannot be used in XY data extraction
+            If the specified output variable cannot be used to obtain **X - Y** data from path.
+        ErrorUnsupportedRefinementType: Unsupported refinement type
+            If the SymbolicConstant specifying the refinement type is invalid.
+        ErrorInvalidRefinementSpecification: Invalid refinement specification
+            If the label specifying the refinement invariant or component is invalid.
+        ErrorDeformedMagTupleInPathExtract: Deformed magnification tuple must contain X, Y and Z values
+            If **deformedMag** does not contain three Floats.
         """
         self.xyDataObjects[name] = xyData = XYData(())
         return xyData

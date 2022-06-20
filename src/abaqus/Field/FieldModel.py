@@ -61,7 +61,7 @@ class FieldModel(ModelBase):
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         self.discreteFields[name] = discreteField = DiscreteField(
             name,
@@ -109,7 +109,7 @@ class FieldModel(ModelBase):
 
         Raises
         ------
-            TextException.
+        TextException
         """
         self.analyticalFields[name] = expressionField = ExpressionField(
             name, expression, localCsys, description
@@ -222,7 +222,7 @@ class FieldModel(ModelBase):
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         self.analyticalFields[name] = mappedField = MappedField(
             name,

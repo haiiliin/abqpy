@@ -144,7 +144,7 @@ class ConnectorSection(SectionBase):
 
         Raises
         ------
-            ValueError and TextError.
+        ValueError and TextError
         """
         option = ConnectorDamage()
         self.behaviorOptions.append(option)
@@ -214,7 +214,7 @@ class ConnectorSection(SectionBase):
 
         Raises
         ------
-            ValueError and TextError.
+        ValueError and TextError
         """
         option = ConnectorDamping()
         self.behaviorOptions.append(option)
@@ -288,7 +288,7 @@ class ConnectorSection(SectionBase):
 
         Raises
         ------
-            ValueError and TextError.
+        ValueError and TextError
         """
         option = ConnectorElasticity()
         self.behaviorOptions.append(option)
@@ -347,7 +347,7 @@ class ConnectorSection(SectionBase):
 
         Raises
         ------
-            ValueError and TextError.
+        ValueError and TextError
         """
         option = ConnectorFailure()
         self.behaviorOptions.append(option)
@@ -482,7 +482,7 @@ class ConnectorSection(SectionBase):
 
         Raises
         ------
-            ValueError and TextError.
+        ValueError and TextError
         """
         option = ConnectorFriction()
         self.behaviorOptions.append(option)
@@ -542,7 +542,7 @@ class ConnectorSection(SectionBase):
 
         Raises
         ------
-            ValueError and TextError.
+        ValueError and TextError
         """
         option = ConnectorLock()
         self.behaviorOptions.append(option)
@@ -642,7 +642,7 @@ class ConnectorSection(SectionBase):
 
         Raises
         ------
-            ValueError and TextError.
+        ValueError and TextError
         """
         option = ConnectorPlasticity()
         self.behaviorOptions.append(option)
@@ -705,7 +705,7 @@ class ConnectorSection(SectionBase):
 
         Raises
         ------
-            ValueError and TextError.
+        ValueError and TextError
         """
         option = ConnectorPotential()
         self.behaviorOptions.append(option)
@@ -746,7 +746,7 @@ class ConnectorSection(SectionBase):
 
         Raises
         ------
-            ValueError and TextError.
+        ValueError and TextError
         """
         option = ConnectorStop()
         self.behaviorOptions.append(option)
@@ -776,7 +776,7 @@ class ConnectorSection(SectionBase):
 
         Raises
         ------
-            ValueError and TextError.
+        ValueError and TextError
         """
         option = DerivedComponent()
         self.behaviorOptions.append(option)

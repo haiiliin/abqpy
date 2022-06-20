@@ -56,8 +56,7 @@ class Equation(Constraint):
 
         Raises
         ------
-            - If **terms** does not contain more than one entry:
-              Equation must have two or more terms.
+        If **terms** does not contain more than one entry, Equation must have two or more terms.
         """
         super().__init__()
         pass
@@ -67,7 +66,6 @@ class Equation(Constraint):
 
         Raises
         ------
-            - If **terms** does not contain more than one entry:
-              Equation must have two or more terms.
+        If **terms** does not contain more than one entry, Equation must have two or more terms.
         """
         pass

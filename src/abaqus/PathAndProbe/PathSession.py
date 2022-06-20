@@ -8,6 +8,7 @@ from ..Session.SessionBase import SessionBase
 
 
 class PathSession(SessionBase):
+    
     def Path(
         self,
         name: str,
@@ -97,9 +98,10 @@ class PathSession(SessionBase):
 
         Raises
         ------
-            ModelError, ErrorUnsupportedNodeData, ErrorUnsupportedPointData, ErrorIncorrectPathData,
-            KeyError, ErrorEmptyPathName, ErrorPathNotFound, and ErrorNoOdbPathDisplay.
-            ValueError: When **type**=CIRCUMFERENTIAL or RADIAL, the three points specified in
+        ModelError, ErrorUnsupportedNodeData, ErrorUnsupportedPointData, ErrorIncorrectPathData,
+        KeyError, ErrorEmptyPathName, ErrorPathNotFound, and ErrorNoOdbPathDisplay.
+        ValueError
+            When **type**=CIRCUMFERENTIAL or RADIAL, the three points specified in
             **expression** are collinear.
         """
         self.paths[name] = path = Path(

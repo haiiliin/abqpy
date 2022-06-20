@@ -99,7 +99,7 @@ class ConnectorPotential:
 
         Raises
         ------
-            ValueError and TextError. 
+        ValueError and TextError 
         """
         pass
 
@@ -108,7 +108,7 @@ class ConnectorPotential:
 
         Raises
         ------
-            ValueError.
+        ValueError
         """
         pass
 
@@ -131,7 +131,7 @@ class ConnectorPotential:
 
         Raises
         ------
-            ValueError and TextError.
+        ValueError and TextError
         """
         self.derivedComponent = derivedComponent = DerivedComponent()
         return derivedComponent

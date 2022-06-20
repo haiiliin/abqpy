@@ -104,7 +104,7 @@ class LineStyle:
 
         Raises
         ------
-            ColorError
+        ColorError
         """
         pass
 

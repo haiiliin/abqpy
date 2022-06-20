@@ -245,7 +245,7 @@ class ConnectorDamage(ConnectorBehaviorOption):
 
         Raises
         ------
-            ValueError and TextError.
+        ValueError and TextError
         """
         super().__init__()
         pass
@@ -255,6 +255,6 @@ class ConnectorDamage(ConnectorBehaviorOption):
 
         Raises
         ------
-            ValueError.
+        ValueError
         """
         pass

@@ -54,8 +54,7 @@ class IgnoredEdge:
 
         Raises
         ------
-            The given IgnoredEdge object is not circular.
-
+        The given IgnoredEdge object is not circular
         """
         pass
 
@@ -82,7 +81,6 @@ class IgnoredEdge:
 
         Raises
         ------
-            The given IgnoredEdge is straight.
-
+        The given IgnoredEdge is straight
         """
         pass

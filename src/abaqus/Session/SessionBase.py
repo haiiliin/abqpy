@@ -650,14 +650,14 @@ class SessionBase:
 
         Raises
         ------
-            - If **printCommand** is invalid:
-              SystemError: invalid print command
-            - If the print command fails:
-              SystemError: print command failed
-            - If **numCopies** is out of range:
-              RangeError: numCopies must be in the range 1 <= value <= 100
-            - If **compression** is specified when **format** is not SVG :
-              TypeError: keyword error on compression
+        SystemError: invalid print command
+            If **printCommand** is invalid.
+        SystemError: print command failed
+            If the print command fails.
+        RangeError: numCopies must be in the range 1 <= value <= 100
+            If **numCopies** is out of range.
+        TypeError: keyword error on compression
+            If **compression** is specified when **format** is not SVG.
         """
         pass
 

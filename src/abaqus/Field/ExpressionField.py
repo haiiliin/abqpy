@@ -49,7 +49,7 @@ class ExpressionField(AnalyticalField):
 
         Raises
         ------
-            TextException.
+        TextException
         """
         super().__init__()
         pass

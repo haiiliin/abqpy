@@ -435,7 +435,7 @@ class LoadModel(ModelBase):
 
         Raises
         ------
-            TextError.
+        TextError
         """
         self.loads[name] = load = BoltLoad(
             name, createStepName, region, magnitude, datumAxis, boltMethod, amplitude

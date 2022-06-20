@@ -244,8 +244,8 @@ class OdbInstanceBase:
 
         Raises
         ------
-            - If no element with the specified label exists:
-              OdbError: Invalid element label
+        OdbError: Invalid element label
+            If no element with the specified label exists.
         """
         pass
 
@@ -263,8 +263,8 @@ class OdbInstanceBase:
 
         Raises
         ------
-            - If no node with the specified label exists:
-              OdbError: Invalid node label
+        OdbError: Invalid node label
+            If no node with the specified label exists.
         """
         pass
 
@@ -280,10 +280,10 @@ class OdbInstanceBase:
 
         Raises
         ------
-            - If **region** is not an element set:
-              OdbError: Section assignment requires element set.
-            - If the element set is not from the current instance:
-              OdbError: Section assignment requires element set from this part instance.
+        OdbError: Section assignment requires element set
+            If **region** is not an element set.
+        OdbError: Section assignment requires element set from this part instance
+            If the element set is not from the current instance.
         """
         pass
 
@@ -305,9 +305,10 @@ class OdbInstanceBase:
 
         Raises
         ------
-            - If OdbPart associated with the part instance is of type THREE_D:
-              OdbError: 2D-Planar Analytic Rigid Surface can be defined only if the instance is of
-            type TWO_D_PLANAR or AXISYMMETRIC.
+        OdbError: 2D-Planar Analytic Rigid Surface can be defined only if the instance is of 
+        type TWO_D_PLANAR or AXISYMMETRIC.
+            If OdbPart associated with the part instance is of type THREE_D.
+              
         """
         pass
 
@@ -337,9 +338,10 @@ class OdbInstanceBase:
 
         Raises
         ------
-            - If OdbPart associated with the part instance is not of type THREE_D:
-              OdbError: Analytic Rigid Surface of type CYLINDER can be defined only if the instance
-            is of type THREE_D.
+        OdbError: Analytic Rigid Surface of type CYLINDER can be defined only if the instance is 
+        of type THREE_D
+            If OdbPart associated with the part instance is not of type THREE_D.
+              
         """
         pass
 
@@ -369,9 +371,10 @@ class OdbInstanceBase:
 
         Raises
         ------
-            - If OdbPart associated with the part instance is not of type THREE_D:
-              OdbError: Analytic Rigid Surface of type REVOLUTION can be defined only if the
-            instance is of type THREE_D.
+        OdbError: Analytic Rigid Surface of type REVOLUTION can be defined only if the
+        instance is of type THREE_D
+            If OdbPart associated with the part instance is not of type THREE_D.
+              
         """
         pass
 
@@ -408,7 +411,7 @@ class OdbInstanceBase:
 
         Raises
         ------
-            - If **referenceNode** is not a node set:
-              OdbError: Rigid body definition requires a node set.
+        OdbError: Rigid body definition requires a node set
+            If **referenceNode** is not a node set.
         """
         pass

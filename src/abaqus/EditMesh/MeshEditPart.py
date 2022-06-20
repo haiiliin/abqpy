@@ -205,7 +205,7 @@ class MeshEditPart(PartBase):
 
         Raises
         ------
-            A coordinate and an offset may not both be specified for the same coordinate component.
+        A coordinate and an offset may not both be specified for the same coordinate component
         """
         pass
 
@@ -414,14 +414,14 @@ class MeshEditPart(PartBase):
 
         Raises
         ------
-            - Renumbering is attempted on a native part:
-              Error: Renumbering can be applied to orphan mesh parts only
-            - Renumbering data is specified incorrectly:
-              Error: Either startLabel and increment or offset must be specified
-            - Renumbering will result in invalid labels:
-              Error: Specified data will result in invalid labels
-            - Renumbering will result in conflicting labels:
-              Error: Specified data will result in conflicting labels
+        Error: Renumbering can be applied to orphan mesh parts only
+            Renumbering is attempted on a native part
+        Error: Either startLabel and increment or offset must be specified
+            Renumbering data is specified incorrectly
+        Error: Specified data will result in invalid labels
+            Renumbering will result in invalid labels
+        Error: Specified data will result in conflicting labels
+            Renumbering will result in conflicting labels
         """
         pass
 
@@ -453,14 +453,14 @@ class MeshEditPart(PartBase):
 
         Raises
         ------
-            - Renumbering is attempted on a native part:
-              Error: Renumbering can be applied to orphan mesh parts only
-            - Renumbering data is specified incorrectly:
-              Error: Either startLabel and increment or offset must be specified
-            - Renumbering will result in invalid labels:
-              Error: Specified data will result in invalid labels
-            - Renumbering will result in conflicting labels:
-              Error: Specified data will result in conflicting labels
+        Error: Renumbering can be applied to orphan mesh parts only
+            Renumbering is attempted on a native part.
+        Error: Either startLabel and increment or offset must be specified
+            Renumbering data is specified incorrectly.
+        Error: Specified data will result in invalid labels
+            Renumbering will result in invalid labels.
+        Error: Specified data will result in conflicting labels
+            Renumbering will result in conflicting labels.
         """
         pass
 

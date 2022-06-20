@@ -62,6 +62,6 @@ class RuleResult:
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass

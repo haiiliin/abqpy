@@ -65,7 +65,8 @@ class TableCollectionAssembly(AssemblyBase):
 
         Raises
         ------
-            AbaqusException: If the region does not contain only elements.
+        AbaqusException
+            If the region does not contain only elements.
         """
         self.elementProgressiveActivations[
             name

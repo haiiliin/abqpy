@@ -199,7 +199,7 @@ class OutputStep(StepBase):
 
         Raises
         ------
-            RangeError.
+        RangeError
         """
         self.restart = restart = Restart(numberIntervals, timeMarks, overlay, frequency)
         return restart

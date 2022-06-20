@@ -138,7 +138,7 @@ class ConnectorElasticity(ConnectorBehaviorOption):
 
         Raises
         ------
-            ValueError and TextError.
+        ValueError and TextError
         """
         super().__init__()
         pass
@@ -148,6 +148,6 @@ class ConnectorElasticity(ConnectorBehaviorOption):
 
         Raises
         ------
-            ValueError.
+        ValueError
         """
         pass

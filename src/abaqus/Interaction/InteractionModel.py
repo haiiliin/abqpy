@@ -1290,7 +1290,7 @@ class InteractionModel(
 
         Raises
         ------
-            RangeError.
+        RangeError
         """
         self.interactions[name] = interaction = ExpContactControl(
             name,
@@ -2558,7 +2558,7 @@ class InteractionModel(
 
         Raises
         ------
-            RangeError.
+        RangeError
         """
         self.interactions[name] = interaction = StdContactControl(
             name,
@@ -2630,7 +2630,7 @@ class InteractionModel(
 
         Raises
         ------
-            RangeError.
+        RangeError
         """
         self.interactions[name] = interaction = StdInitialization(
             name,
@@ -2692,7 +2692,7 @@ class InteractionModel(
 
         Raises
         ------
-            RangeError.
+        RangeError
         """
         self.interactions[name] = interaction = StdStabilization(
             name,

@@ -532,8 +532,8 @@ class MeshPart(PartBase):
 
         Raises
         ------
-            - TypeError
-              The region cannot be associated with element types or the **elemShape** is not
+        TypeError
+            The region cannot be associated with element types or the **elemShape** is not
             consistent with the dimension of the **region**.
         """
         pass
@@ -667,8 +667,8 @@ class MeshPart(PartBase):
 
         Raises
         ------
-            - An exception occurs if the part does not contain native geometry.
-              Error: Part does not contain native geometry
+        Error: Part does not contain native geometry            
+            An exception occurs if the part does not contain native geometry.
         """
         pass
 
@@ -922,6 +922,7 @@ class MeshPart(PartBase):
 
         Raises
         ------
+        Exception
             As a result of the element assignment, a region must have the same library, family, and
             order for all its assigned element types. Otherwise, an exception will be thrown.
             For example, suppose the Hex, Wedge, and Tet elements previously assigned to a cell are

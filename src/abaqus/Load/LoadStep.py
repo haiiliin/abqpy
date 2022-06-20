@@ -41,7 +41,7 @@ class LoadStep(StepBase):
 
         Raises
         ------
-            RangeError.
+        RangeError
         """
         self.loadCases[name] = loadCase = LoadCase(
             name, boundaryConditions, loads, includeActiveBaseStateBC

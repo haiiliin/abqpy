@@ -103,8 +103,8 @@ class HistoryOutput:
 
         Raises
         ------
-            If the length of **frame** is not the same as the length of **value** a ValueError is
-            raised.
+        ValueError
+            If the length of **frame** is not the same as the length of **value**.
         """
         pass
 

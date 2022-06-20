@@ -100,7 +100,7 @@ class ParameterTable:
 
         Raises
         ------
-            Incompatible data are given.
+        Incompatible data are given
         """
         parameterColumn = ParameterColumn(
             type, unit, description, default, allowedValues

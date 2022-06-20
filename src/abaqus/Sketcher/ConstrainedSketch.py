@@ -385,9 +385,8 @@ class ConstrainedSketch(
 
         Raises
         ------
-            - AbaqusException
-              Number must be greater than 1 for at least one direction
-            !img
+        AbaqusException
+            Number must be greater than 1 for at least one direction
         """
         pass
 

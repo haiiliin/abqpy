@@ -664,12 +664,12 @@ class Feature(BaseFeature):
 
         Raises
         ------
-            - If the given boundary is not a closed loop:
-              Parterror: Cannot find a closed loop
-            - If the given boundary contains a zero length component:
-              Parterror: Cannot find a closed loop
-            - If the underlying surface is too difficult to fit:
-              Parterror: Cannot construct face geometry
+        Parterror: Cannot find a closed loop
+            If the given boundary is not a closed loop.
+        Parterror: Cannot find a closed loop
+            If the given boundary contains a zero length component.
+        Parterror: Cannot construct face geometry
+            If the underlying surface is too difficult to fit.
         """
         pass
 
@@ -1364,8 +1364,8 @@ class Feature(BaseFeature):
 
         Raises
         ------
-            - If the intended volume to be turned into a shell entity is not three-dimensional.
-              Parterror: ConstrainedSketchGeometry that is not 3-dimensional does not contain cells.
+        Parterror: ConstrainedSketchGeometry that is not 3-dimensional does not contain cells
+            If the intended volume to be turned into a shell entity is not three-dimensional.
         """
         pass
 
@@ -1452,8 +1452,8 @@ class Feature(BaseFeature):
 
         Raises
         ------
-            - If the selected entity is not a redundant entity.
-              Parterror: None of the selected entities are redundant.
+        Parterror: None of the selected entities are redundant
+            If the selected entity is not a redundant entity.
         """
         pass
 

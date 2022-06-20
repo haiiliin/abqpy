@@ -133,7 +133,7 @@ class Feature(FeatureBase):
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         return Feature()
 
@@ -202,7 +202,7 @@ class Feature(FeatureBase):
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         return Feature()
 
@@ -241,7 +241,7 @@ class Feature(FeatureBase):
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         return Feature()
 
@@ -271,7 +271,7 @@ class Feature(FeatureBase):
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         return Feature()
 
@@ -306,7 +306,7 @@ class Feature(FeatureBase):
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         return Feature()
 
@@ -341,6 +341,6 @@ class Feature(FeatureBase):
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         return Feature()

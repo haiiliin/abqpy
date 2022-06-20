@@ -37,7 +37,7 @@ class Image:
 
         Raises
         ------
-            ValueError.
+        ValueError
             - If **fileName** does not exist or can not be read:
               ValueError: Unable to open image file
             - If **fileName** references an unsupported image file format:
@@ -68,7 +68,7 @@ class Image:
 
         Raises
         ------
-            ValueError.
+        ValueError
             TypeError.
             - If **movieName** does not exist:
               ValueError: There is no movie object with this name: 'movieName'

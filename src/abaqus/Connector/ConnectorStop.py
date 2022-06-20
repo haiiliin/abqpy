@@ -57,7 +57,7 @@ class ConnectorStop(ConnectorBehaviorOption):
 
         Raises
         ------
-            ValueError and TextError.
+        ValueError and TextError
         """
         super().__init__()
         pass
@@ -67,6 +67,6 @@ class ConnectorStop(ConnectorBehaviorOption):
 
         Raises
         ------
-            ValueError.
+        ValueError
         """
         pass

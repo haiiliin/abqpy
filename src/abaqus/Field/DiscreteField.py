@@ -74,7 +74,7 @@ class DiscreteField(Field):
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         super().__init__()
         pass
@@ -128,7 +128,7 @@ class DiscreteField(Field):
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
@@ -167,7 +167,7 @@ class DiscreteField(Field):
 
         Raises
         ------
-            AbaqusException.
+        AbaqusException
         """
         pass
 
