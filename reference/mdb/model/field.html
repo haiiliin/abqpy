@@ -392,7 +392,7 @@ level coordinates. The default value is OFF.</p>
 Z; R, Th, and Z; or R, Th, and P based on the selected coordinate system.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the field. If
-<a href="#id1"><span class="problematic" id="id2">**</span></a>localCsys**=None, the field is defined in the global coordinate system. The default
+<strong>localCsys</strong> = None, the field is defined in the global coordinate system. The default
 value is None.</p>
 </dd>
 <dt><strong>description</strong></dt><dd><p>A String specifying the description of the field. The default value is an empty string.</p>
@@ -485,7 +485,7 @@ default value is an empty sequence.</p>
 directions. The default value is (1.0, 1.0, 1.0).</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the field. If
-<a href="#id3"><span class="problematic" id="id4">**</span></a>localCsys**=None, the field is defined in the global coordinate system. The default
+<strong>localCsys</strong> = None, the field is defined in the global coordinate system. The default
 value is None.</p>
 </dd>
 <dt><strong>description</strong></dt><dd><p>A String specifying the description of the field. The default value is an empty string.</p>
@@ -515,8 +515,8 @@ value is None.</p>
 </section>
 <section id="object-features">
 <h2>Object features<a class="headerlink" href="#object-features" title="Permalink to this headline">#</a></h2>
-<section id="id5">
-<h3>Field<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h3>
+<section id="id1">
+<h3>Field<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Field.Field.Field">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Field</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/Field.py#L1-L26"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.Field.Field" title="Permalink to this definition">#</a></dt>
@@ -663,7 +663,7 @@ and DISPLAY_GROUPS. The default value is NONE.</p>
 <dt><strong>includeFeatureBoundaries</strong></dt><dd><p>​   A Boolean specifying whether to include additional averaging boundaries for shells and
 membranes based on feature edges. The default value is ON.</p>
 </dd>
-<dt><strong>featureAngle</strong></dt><dd><p>​   A Float specifying the feature angle to be used when <a href="#id6"><span class="problematic" id="id7">**</span></a>includeFeatureBoundaries**=ON.
+<dt><strong>featureAngle</strong></dt><dd><p>​   A Float specifying the feature angle to be used when <strong>includeFeatureBoundaries</strong> = ON.
 The default value is 20.0.</p>
 </dd>
 <dt><strong>averageOnlyDisplayed</strong></dt><dd><p>​   A Boolean specifying whether to average only values on displayed elements. The default
@@ -682,7 +682,7 @@ contain complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, R
 IMAGINARY, and COMPLEX_MAG_AT_ANGLE. The default value is REAL.</p>
 </dd>
 <dt><strong>complexAngle</strong></dt><dd><p>​   A Float specifying the angle (in degrees) at which to display results that contain
-complex numbers when <a href="#id8"><span class="problematic" id="id9">*</span></a>numericForm=COMPLEX_MAG_AT_ANGLE*=COMPLEX_MAG_AT_ANGLE. The
+complex numbers when <a href="#id2"><span class="problematic" id="id3">*</span></a>numericForm=COMPLEX_MAG_AT_ANGLE*=COMPLEX_MAG_AT_ANGLE. The
 default value is 0.0.</p>
 </dd>
 <dt><strong>sectionPoint</strong></dt><dd><p>​   A Dictionary with String keys and String values. Each key specifies a region in the
@@ -965,7 +965,7 @@ The ExpressionField object is derived from the AnalyticalField object.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the field. If
-<a href="#id10"><span class="problematic" id="id11">**</span></a>localCsys**=None, the field is defined in the global coordinate system. The default
+<strong>localCsys</strong> = None, the field is defined in the global coordinate system. The default
 value is None.</p>
 </dd>
 <dt><strong>description</strong></dt><dd><p>A String specifying the description of the field. The default value is an empty string.</p>
@@ -1156,7 +1156,7 @@ default value is an empty sequence.</p>
 directions. The default value is (1.0, 1.0, 1.0).</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the field. If
-<a href="#id12"><span class="problematic" id="id13">**</span></a>localCsys**=None, the field is defined in the global coordinate system. The default
+<strong>localCsys</strong> = None, the field is defined in the global coordinate system. The default
 value is None.</p>
 </dd>
 <dt><strong>description</strong></dt><dd><p>A String specifying the description of the field. The default value is an empty string.</p>
@@ -1270,7 +1270,7 @@ complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMA
 and COMPLEX_MAG_AT_ANGLE. The default value is REAL.</p>
 </dd>
 <dt><strong>complexAngle: float</strong></dt><dd><p>A Float specifying the angle (in degrees) at which to display results that contain
-complex numbers when <a href="#id14"><span class="problematic" id="id15">*</span></a>numericForm=COMPLEX_MAG_AT_ANGLE*=COMPLEX_MAG_AT_ANGLE. The
+complex numbers when <a href="#id4"><span class="problematic" id="id5">*</span></a>numericForm=COMPLEX_MAG_AT_ANGLE*=COMPLEX_MAG_AT_ANGLE. The
 default value is 0.0.</p>
 </dd>
 <dt><strong>odbFileName: str</strong></dt><dd><p>A String specifying the name of the output database file (including the .odb extension)
@@ -1377,7 +1377,7 @@ default value is UNDEFINED_POSITION.</p>
 <li><a class="reference internal" href="#">Field</a><ul>
 <li><a class="reference internal" href="#create-fields">Create fields</a></li>
 <li><a class="reference internal" href="#object-features">Object features</a><ul>
-<li><a class="reference internal" href="#id5">Field</a></li>
+<li><a class="reference internal" href="#id1">Field</a></li>
 <li><a class="reference internal" href="#analyticalfield">AnalyticalField</a></li>
 <li><a class="reference internal" href="#datatable">DataTable</a></li>
 <li><a class="reference internal" href="#datatablearray">DataTableArray</a></li>

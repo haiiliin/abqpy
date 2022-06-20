@@ -668,9 +668,9 @@ is None.</p>
 </dd>
 <dt><strong>callAfter</strong></dt><dd><p>A Boolean specifying that the callback should be called after the method has executed
 (instead of before the method is called). The default value is False, which indicates
-that the callback should be called before the method has executed.If <a href="#id11"><span class="problematic" id="id12">**</span></a>callAfter**=True,
+that the callback should be called before the method has executed.If <strong>callAfter</strong> = True,
 you can also access the return value of the command from within the callback by
-including the following statement:<a href="#id13"><span class="problematic" id="id14">`</span></a>returnValue = getMethodReturnValue()`The
+including the following statement:<a href="#id11"><span class="problematic" id="id12">`</span></a>returnValue = getMethodReturnValue()`The
 getMethodReturnValue function is in the global namespace of the callback function.</p>
 </dd>
 </dl>
@@ -698,7 +698,7 @@ be invoked or the Symbolic Constant ALL_TYPES.</p>
 function to be invoked or the Symbolic Constant ALL_METHODS.</p>
 </dd>
 <dt><strong>callback</strong></dt><dd><p>A Python function to be called when a command matching the specified caller and method
-name is about to be executed. The interface definition of the callback function is:<a href="#id15"><span class="problematic" id="id16">`</span></a>def
+name is about to be executed. The interface definition of the callback function is:<a href="#id13"><span class="problematic" id="id14">`</span></a>def
 functionName(callingMethod, args, keywordArgs, userData)`where:<em>callingMethod</em> is the
 method that called this function.*args* is the sequence of nonkeyword arguments that was
 passed to the calling method.*keywordArgs* is the dictionary of keyword arguments that

@@ -514,7 +514,7 @@ the geometry.</p>
 the geometry. The default value is 90.</p>
 </dd>
 <dt><strong>twist</strong></dt><dd><p>A Boolean specifying whether to include a twist DEGREE OF FREEDOM in the part (only
-available when <a href="#id1"><span class="problematic" id="id2">**</span></a>dimensionality**=AXISYMMETRIC and <a href="#id3"><span class="problematic" id="id4">**</span></a>type**=DEFORMABLE_BODY). The default
+available when <strong>dimensionality</strong> = AXISYMMETRIC and <strong>type</strong> = DEFORMABLE_BODY). The default
 value is OFF.</p>
 </dd>
 </dl>
@@ -707,19 +707,19 @@ model. Otherwise this command may remove small (sliver) edges that are smaller t
 tolerance. The default value is 1.0</p>
 </dd>
 <dt><strong>twist</strong></dt><dd><p>A Boolean specifying whether to include a twist DEGREE OF FREEDOM in the part (only
-available when <a href="#id5"><span class="problematic" id="id6">**</span></a>dimensionality**=AXISYMMETRIC and <a href="#id7"><span class="problematic" id="id8">**</span></a>type**=DEFORMABLE_BODY). The default
+available when <strong>dimensionality</strong> = AXISYMMETRIC and <strong>type</strong> = DEFORMABLE_BODY). The default
 value is OFF.</p>
 </dd>
 <dt><strong>scale</strong></dt><dd><p>A Float specifying the scaling factor to apply to the imported geometric entities. The
 default value is 1.0.</p>
 </dd>
 <dt><strong>convertToAnalytical</strong></dt><dd><p>An Int specifying whether to convert to analytical entities. Possible values are 0 or 1.
-The default value is 0. If <a href="#id9"><span class="problematic" id="id10">**</span></a>convertToAnalytical**=1, all the numerical entities, such as
+The default value is 0. If <strong>convertToAnalytical</strong> = 1, all the numerical entities, such as
 splines, are converted to analytical entities, such as arcs and lines, during the repair
 phase of the command.</p>
 </dd>
 <dt><strong>convertToPrecise</strong></dt><dd><p>An Int specifying whether to convert to precise geometry. Possible value are 0 or 1. The
-default value is 0. If <a href="#id11"><span class="problematic" id="id12">**</span></a>convertToPrecise**=1, the application will attempt to re-evaluate
+default value is 0. If <strong>convertToPrecise</strong> = 1, the application will attempt to re-evaluate
 the tolerant entities to be more precise.</p>
 </dd>
 </dl>
@@ -904,7 +904,7 @@ elements of the mesh. <strong>meshType</strong> is a String specifying the eleme
 sequence of sequences of node labels specifying the element connectivity.</p>
 </dd>
 <dt><strong>twist</strong></dt><dd><p>A boolean specifying whether the part is defined with twist. This option has meaning
-only when <a href="#id13"><span class="problematic" id="id14">**</span></a>dimensionality**=AXISYMMETRIC. Possible values are ON and OFF. The default
+only when <strong>dimensionality</strong> = AXISYMMETRIC. Possible values are ON and OFF. The default
 value is OFF.</p>
 </dd>
 </dl>
@@ -950,15 +950,15 @@ and DEFORMED. The default value is UNDEFORMED.</p>
 </dd>
 <dt><strong>step</strong></dt><dd><p>An Int specifying the step number for reading deformed coordinates. 0≤step≤N−10≤step≤N-1
 where NN is the number of available steps. The default value is the last available step.
-You should specify the <strong>step</strong> argument only when <a href="#id15"><span class="problematic" id="id16">**</span></a>shape**=DEFORMED.</p>
+You should specify the <strong>step</strong> argument only when <strong>shape</strong> = DEFORMED.</p>
 </dd>
 <dt><strong>frame</strong></dt><dd><p>An Int specifying the frame number for reading deformed coordinates.
 0≤frame≤N−10≤frame≤N-1 where NN is the number of available frames. The default value is
 the last available frame. You should specify the <strong>frame</strong> argument only when
-<a href="#id17"><span class="problematic" id="id18">**</span></a>shape**=DEFORMED.</p>
+<strong>shape</strong> = DEFORMED.</p>
 </dd>
 <dt><strong>twist</strong></dt><dd><p>A Boolean specifying whether to include a twist DEGREE OF FREEDOM in the part (only
-available when <a href="#id19"><span class="problematic" id="id20">**</span></a>dimensionality**=AXISYMMETRIC and <a href="#id21"><span class="problematic" id="id22">**</span></a>type**=DEFORMABLE_BODY). The default
+available when <strong>dimensionality</strong> = AXISYMMETRIC and <strong>type</strong> = DEFORMABLE_BODY). The default
 value is OFF.</p>
 </dd>
 </dl>

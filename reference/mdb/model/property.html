@@ -344,15 +344,15 @@
 <dt><strong>description</strong></dt><dd><p>A String specifying a description of the composite layup.</p>
 </dd>
 <dt><strong>offsetType</strong></dt><dd><p>A SymbolicConstant specifying the method used to define the shell offset. If
-<strong>offsetType**=OFFSET_FIELD the **offsetField</strong> argument is required. This member is valid
-only if <a href="#id1"><span class="problematic" id="id2">**</span></a>elementType**=SHELL. Possible values are SINGLE_VALUE, MIDDLE_SURFACE,
+<strong>offsetType</strong> = OFFSET_FIELD the <strong>offsetField</strong> argument is required. This member is valid
+only if <strong>elementType</strong> = SHELL. Possible values are SINGLE_VALUE, MIDDLE_SURFACE,
 TOP_SURFACE, BOTTOM_SURFACE, OFFSET_FIELD, and GLOBAL. The default value is GLOBAL.</p>
 </dd>
 <dt><strong>offsetField</strong></dt><dd><p>A String specifying The name of the field specifying the offset. This member is valid
-only if <a href="#id3"><span class="problematic" id="id4">**</span></a>elementType**=SHELL. The default value is an empty string.</p>
+only if <strong>elementType</strong> = SHELL. The default value is an empty string.</p>
 </dd>
 <dt><strong>offsetValues</strong></dt><dd><p>A Float specifying The offset of the shell section. This member is valid only if
-<a href="#id5"><span class="problematic" id="id6">**</span></a>elementType**=SHELL. The default value is 0.0.</p>
+<strong>elementType</strong> = SHELL. The default value is 0.0.</p>
 </dd>
 <dt><strong>elementType</strong></dt><dd><p>A SymbolicConstant specifying the type of element in the composite layup. Possible
 values are SHELL, CONTINUUM_SHELL, and SOLID. The default value is SHELL.</p>
@@ -409,8 +409,8 @@ STACK_1, STACK_2, STACK_3, and STACK_ORIENTATION. The default value is STACK_3.<
 default value is an empty string.</p>
 </dd>
 <dt><strong>orientationType</strong></dt><dd><p>A SymbolicConstant specifying the method used to define the material orientation. If
-<strong>orientationType**=SYSTEM, the **region</strong> and <strong>localCsys</strong> arguments are required. If
-<strong>orientationType**=FIELD, the **fieldName</strong> argument is required. Possible values are
+<strong>orientationType</strong> = SYSTEM, the <strong>region</strong> and <strong>localCsys</strong> arguments are required. If
+<strong>orientationType</strong> = FIELD, the <strong>fieldName</strong> argument is required. Possible values are
 GLOBAL, SYSTEM, FIELD, DISCRETE, and USER. The default value is GLOBAL.</p>
 </dd>
 <dt><strong>normalAxisDirection</strong></dt><dd><p>A SymbolicConstant specifying the axis that is defined by the normal axis direction for
@@ -602,13 +602,13 @@ OFFSET_FIELD. The default value is SINGLE_VALUE.</p>
 empty string.</p>
 </dd>
 <dt><strong>orientationType</strong></dt><dd><p>A SymbolicConstant specifying the method used to define the relative orientation. If
-<strong>orientationType**=SPECIFY_ORIENT the **orientationValue</strong> argument is required. If
-<strong>orientationType**=CSYS the **orientation</strong> argument is required. Possible values are CSYS,
+<strong>orientationType</strong> = SPECIFY_ORIENT the <strong>orientationValue</strong> argument is required. If
+<strong>orientationType</strong> = CSYS the <strong>orientation</strong> argument is required. Possible values are CSYS,
 SPECIFY_ORIENT, ANGLE_0, ANGLE_45, ANGLE_90, and ANGLE_NEG45. The default value is
 ANGLE_0.</p>
 </dd>
 <dt><strong>thicknessType</strong></dt><dd><p>A SymbolicConstant specifying the method used to define the thickness. If
-<strong>thicknessType**=SPECIFY_THICKNESS, the **thickness</strong> argument is required. Possible values
+<strong>thicknessType</strong> = SPECIFY_THICKNESS, the <strong>thickness</strong> argument is required. Possible values
 are SPECIFY_THICKNESS, FIELD_THICKNESS, and ANALYTICAL_FIELD_THICKNESS. The default
 value is SPECIFY_THICKNESS.</p>
 </dd>
@@ -617,13 +617,13 @@ value is SPECIFY_THICKNESS.</p>
 </dd>
 <dt><strong>thicknessField</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object used to
 define the thickness of the shell elements and composite ply. The <strong>thicknessField</strong>
-argument applies when <a href="#id7"><span class="problematic" id="id8">**</span></a>thicknessType**=ANALYTICAL_FIELD or <a href="#id9"><span class="problematic" id="id10">**</span></a>thicknessType**=DISCRETE_FIELD
-for shell elements and <a href="#id11"><span class="problematic" id="id12">**</span></a>thicknessType**=FIELD_THICKNESS or
-<a href="#id13"><span class="problematic" id="id14">**</span></a>thicknessType**=ANALYTICAL_FIELD_THICKNESS for composite ply. The default value is an
+argument applies when <strong>thicknessType</strong> = ANALYTICAL_FIELD or <strong>thicknessType</strong> = DISCRETE_FIELD
+for shell elements and <strong>thicknessType</strong> = FIELD_THICKNESS or
+<strong>thicknessType</strong> = ANALYTICAL_FIELD_THICKNESS for composite ply. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>numIntPts</strong></dt><dd><p>An Int specifying the number of integration points to be used through the section layer.
-This argument is valid only if <a href="#id15"><span class="problematic" id="id16">**</span></a>preIntegrate**=OFF. The default value is 3.</p>
+This argument is valid only if <strong>preIntegrate</strong> = OFF. The default value is 3.</p>
 </dd>
 <dt><strong>axis</strong></dt><dd><p>A SymbolicConstant specifying the axis of a cylindrical or spherical datum coordinate
 system about which an additional rotation is applied. For shells this axis is also the
@@ -635,8 +635,8 @@ AXIS_1.</p>
 only if a valid reference is provided for the <strong>orientation</strong>. The default value is 0.0.</p>
 </dd>
 <dt><strong>additionalRotationType</strong></dt><dd><p>A SymbolicConstant specifying the method used to describe the additional rotation when a
-valid orientation is specified. Use <a href="#id17"><span class="problematic" id="id18">**</span></a>orientationType**=ANGLE_0 and
-<a href="#id19"><span class="problematic" id="id20">**</span></a>additionalRotationType**=ROTATION_FIELD to specify a discrete field of rotations for
+valid orientation is specified. Use <strong>orientationType</strong> = ANGLE_0 and
+<strong>additionalRotationType</strong> = ROTATION_FIELD to specify a discrete field of rotations for
 this CompositePly. Possible values are ROTATION_NONE, ROTATION_ANGLE, and
 ROTATION_FIELD. The default value is ROTATION_NONE.</p>
 </dd>
@@ -695,7 +695,7 @@ Abaqus/Explicit analysis.VALUE, specifying that the Poisson’s ratio used in th
 is the value provided in <strong>poisson</strong>.The default value is DEFAULT.</p>
 </dd>
 <dt><strong>poisson</strong></dt><dd><p>A Float specifying the Poisson’s ratio. Possible values are −1.0 ≤≤ <strong>poisson</strong> ≤≤ 0.5.
-This argument is valid only when <a href="#id21"><span class="problematic" id="id22">**</span></a>poissonDefinition**=VALUE. The default value is 0.5.</p>
+This argument is valid only when <strong>poissonDefinition</strong> = VALUE. The default value is 0.5.</p>
 </dd>
 <dt><strong>integrationRule</strong></dt><dd><p>A SymbolicConstant specifying the shell section integration rule. Possible values are
 SIMPSON and GAUSS. The default value is SIMPSON.</p>
@@ -710,7 +710,7 @@ values are NO_IDEALIZATION, SMEAR_ALL_LAYERS, MEMBRANE, and BENDING. The default
 is NO_IDEALIZATION.</p>
 </dd>
 <dt><strong>nTemp</strong></dt><dd><p>None or an Int specifying the number of temperature points to be input. This argument is
-valid only when <a href="#id23"><span class="problematic" id="id24">**</span></a>temperature**=POINTWISE. The default value is None.</p>
+valid only when <strong>temperature</strong> = POINTWISE. The default value is None.</p>
 </dd>
 <dt><strong>thicknessModulus</strong></dt><dd><p>None or a Float specifying the effective thickness modulus. This argument is relevant
 only for continuum shells and must be used in conjunction with the argument <strong>poisson</strong>.
@@ -727,13 +727,13 @@ string.</p>
 </dd>
 <dt><strong>thicknessField</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object used to
 define the thickness of the shell elements. The <strong>thicknessField</strong> argument applies only
-when <a href="#id25"><span class="problematic" id="id26">**</span></a>thicknessType**=ANALYTICAL_FIELD or <a href="#id27"><span class="problematic" id="id28">**</span></a>thicknessType**=DISCRETE_FIELD. The default
+when <strong>thicknessType</strong> = ANALYTICAL_FIELD or <strong>thicknessType</strong> = DISCRETE_FIELD. The default
 value is an empty string.</p>
 </dd>
 <dt><strong>nodalThicknessField</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object used to
 define the thickness of the shell elements at each node. The <strong>nodalThicknessField</strong>
-argument applies only when <a href="#id29"><span class="problematic" id="id30">**</span></a>thicknessType**=NODAL_ANALYTICAL_FIELD or
-<a href="#id31"><span class="problematic" id="id32">**</span></a>thicknessType**=NODAL_DISCRETE_FIELD. The default value is an empty string.</p>
+argument applies only when <strong>thicknessType</strong> = NODAL_ANALYTICAL_FIELD or
+<strong>thicknessType</strong> = NODAL_DISCRETE_FIELD. The default value is an empty string.</p>
 </dd>
 </dl>
 </dd>
@@ -759,12 +759,12 @@ argument applies only when <a href="#id29"><span class="problematic" id="id30">*
 <dd class="field-odd"><dl class="simple">
 <dt><strong>nodalThicknessField</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object used to
 define the thickness of the shell elements at each node. The <strong>nodalThicknessField</strong>
-argument applies only when <a href="#id33"><span class="problematic" id="id34">**</span></a>thicknessType**=NODAL_ANALYTICAL_FIELD or
-<a href="#id35"><span class="problematic" id="id36">**</span></a>thicknessType**=NODAL_DISCRETE_FIELD. The default value is an empty string.</p>
+argument applies only when <strong>thicknessType</strong> = NODAL_ANALYTICAL_FIELD or
+<strong>thicknessType</strong> = NODAL_DISCRETE_FIELD. The default value is an empty string.</p>
 </dd>
 <dt><strong>thicknessField</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object used to
 define the thickness of the shell elements. The <strong>thicknessField</strong> argument applies only
-when <a href="#id37"><span class="problematic" id="id38">**</span></a>thicknessType**=ANALYTICAL_FIELD or <a href="#id39"><span class="problematic" id="id40">**</span></a>thicknessType**=DISCRETE_FIELD. The default
+when <strong>thicknessType</strong> = ANALYTICAL_FIELD or <strong>thicknessType</strong> = DISCRETE_FIELD. The default
 value is an empty string.</p>
 </dd>
 <dt><strong>thicknessType</strong></dt><dd><p>A SymbolicConstant specifying the distribution used for defining the thickness of the
@@ -782,7 +782,7 @@ Abaqus/Explicit analysis.VALUE, specifying that the Poisson’s ratio used in th
 is the value provided in <strong>poisson</strong>.The default value is DEFAULT.</p>
 </dd>
 <dt><strong>poisson</strong></dt><dd><p>A Float specifying the Poisson’s ratio. Possible values are −1.0 ≤≤ <strong>poisson</strong> ≤≤ 0.5.
-This argument is valid only when <a href="#id41"><span class="problematic" id="id42">**</span></a>poissonDefinition**=VALUE. The default value is 0.5.</p>
+This argument is valid only when <strong>poissonDefinition</strong> = VALUE. The default value is 0.5.</p>
 </dd>
 <dt><strong>integrationRule</strong></dt><dd><p>A SymbolicConstant specifying the shell section integration rule. Possible values are
 SIMPSON and GAUSS. The default value is SIMPSON.</p>
@@ -792,7 +792,7 @@ across the section thickness. Possible values are GRADIENT and POINTWISE. The de
 value is GRADIENT.</p>
 </dd>
 <dt><strong>nTemp</strong></dt><dd><p>None or an Int specifying the number of temperature points to be input. This argument is
-valid only when <a href="#id43"><span class="problematic" id="id44">**</span></a>temperature**=POINTWISE. The default value is None.</p>
+valid only when <strong>temperature</strong> = POINTWISE. The default value is None.</p>
 </dd>
 <dt><strong>thicknessModulus</strong></dt><dd><p>None or a Float specifying the effective thickness modulus. This argument is relevant
 only for continuum shells and must be used in conjunction with the argument <strong>poisson</strong>.
@@ -831,12 +831,12 @@ OFF.</p>
 <dt><strong>material</strong></dt><dd><p>A String specifying the name of the section material.</p>
 </dd>
 <dt><strong>thickness</strong></dt><dd><p>A Float specifying the thickness of the section. The <strong>thickness</strong> argument applies only
-when <a href="#id45"><span class="problematic" id="id46">**</span></a>thicknessType**=UNIFORM. The default value is 0.0.</p>
+when <strong>thicknessType</strong> = UNIFORM. The default value is 0.0.</p>
 </dd>
 <dt><strong>numIntPts</strong></dt><dd><p>An Int specifying the number of integration points to be used through the section.
 Possible values are <strong>numIntPts</strong> &gt;&gt; 0. The default value is 5.To use the default settings
-of the analysis products, set <strong>numIntPts</strong> to 5 if <strong>integrationRule**=SIMPSON or set
-**numIntPts</strong> to 7 if <a href="#id47"><span class="problematic" id="id48">**</span></a>integrationRule**=GAUSS.</p>
+of the analysis products, set <strong>numIntPts</strong> to 5 if <strong>integrationRule</strong> = SIMPSON or set
+<strong>numIntPts</strong> to 7 if <strong>integrationRule</strong> = GAUSS.</p>
 </dd>
 <dt><strong>thicknessType</strong></dt><dd><p>A SymbolicConstant specifying the distribution used for defining the thickness of the
 elements. Possible values are UNIFORM, ANALYTICAL_FIELD, DISCRETE_FIELD,
@@ -853,7 +853,7 @@ Abaqus/Explicit analysis.VALUE, specifying that the Poisson’s ratio used in th
 is the value provided in <strong>poisson</strong>.The default value is DEFAULT.</p>
 </dd>
 <dt><strong>poisson</strong></dt><dd><p>A Float specifying the Poisson’s ratio. Possible values are −1.0 ≤≤ <strong>poisson</strong> ≤≤ 0.5.
-This argument is valid only when <a href="#id49"><span class="problematic" id="id50">**</span></a>poissonDefinition**=VALUE. The default value is 0.5.</p>
+This argument is valid only when <strong>poissonDefinition</strong> = VALUE. The default value is 0.5.</p>
 </dd>
 <dt><strong>integrationRule</strong></dt><dd><p>A SymbolicConstant specifying the shell section integration rule. Possible values are
 SIMPSON and GAUSS. The default value is SIMPSON.</p>
@@ -868,7 +868,7 @@ values are NO_IDEALIZATION, SMEAR_ALL_LAYERS, MEMBRANE, and BENDING. The default
 is NO_IDEALIZATION.</p>
 </dd>
 <dt><strong>nTemp</strong></dt><dd><p>None or an Int specifying the number of temperature points to be input. This argument is
-valid only when <a href="#id51"><span class="problematic" id="id52">**</span></a>temperature**=POINTWISE. The default value is None.</p>
+valid only when <strong>temperature</strong> = POINTWISE. The default value is None.</p>
 </dd>
 <dt><strong>thicknessModulus</strong></dt><dd><p>None or a Float specifying the effective thickness modulus. This argument is relevant
 only for continuum shells and must be used in conjunction with the argument <strong>poisson</strong>.
@@ -882,13 +882,13 @@ OFF.</p>
 </dd>
 <dt><strong>thicknessField</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object used to
 define the thickness of the shell elements. The <strong>thicknessField</strong> argument applies only
-when <a href="#id53"><span class="problematic" id="id54">**</span></a>thicknessType**=ANALYTICAL_FIELD or <a href="#id55"><span class="problematic" id="id56">**</span></a>thicknessType**=DISCRETE_FIELD. The default
+when <strong>thicknessType</strong> = ANALYTICAL_FIELD or <strong>thicknessType</strong> = DISCRETE_FIELD. The default
 value is an empty string.</p>
 </dd>
 <dt><strong>nodalThicknessField</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object used to
 define the thickness of the shell elements at each node. The <strong>nodalThicknessField</strong>
-argument applies only when <a href="#id57"><span class="problematic" id="id58">**</span></a>thicknessType**=NODAL_ANALYTICAL_FIELD or
-<a href="#id59"><span class="problematic" id="id60">**</span></a>thicknessType**=NODAL_DISCRETE_FIELD. The default value is an empty string.</p>
+argument applies only when <strong>thicknessType</strong> = NODAL_ANALYTICAL_FIELD or
+<strong>thicknessType</strong> = NODAL_DISCRETE_FIELD. The default value is an empty string.</p>
 </dd>
 </dl>
 </dd>
@@ -927,15 +927,15 @@ argument applies only when <a href="#id57"><span class="problematic" id="id58">*
 <dt><strong>description</strong></dt><dd><p>A String specifying a description of the composite layup.</p>
 </dd>
 <dt><strong>offsetType</strong></dt><dd><p>A SymbolicConstant specifying the method used to define the shell offset. If
-<strong>offsetType**=OFFSET_FIELD the **offsetField</strong> argument is required. This member is valid
-only if <a href="#id61"><span class="problematic" id="id62">**</span></a>elementType**=SHELL. Possible values are SINGLE_VALUE, MIDDLE_SURFACE,
+<strong>offsetType</strong> = OFFSET_FIELD the <strong>offsetField</strong> argument is required. This member is valid
+only if <strong>elementType</strong> = SHELL. Possible values are SINGLE_VALUE, MIDDLE_SURFACE,
 TOP_SURFACE, BOTTOM_SURFACE, OFFSET_FIELD, and GLOBAL. The default value is GLOBAL.</p>
 </dd>
 <dt><strong>offsetField</strong></dt><dd><p>A String specifying The name of the field specifying the offset. This member is valid
-only if <a href="#id63"><span class="problematic" id="id64">**</span></a>elementType**=SHELL. The default value is an empty string.</p>
+only if <strong>elementType</strong> = SHELL. The default value is an empty string.</p>
 </dd>
 <dt><strong>offsetValues</strong></dt><dd><p>A Float specifying The offset of the shell section. This member is valid only if
-<a href="#id65"><span class="problematic" id="id66">**</span></a>elementType**=SHELL. The default value is 0.0.</p>
+<strong>elementType</strong> = SHELL. The default value is 0.0.</p>
 </dd>
 <dt><strong>elementType</strong></dt><dd><p>A SymbolicConstant specifying the type of element in the composite layup. Possible
 values are SHELL, CONTINUUM_SHELL, and SOLID. The default value is SHELL.</p>
@@ -1068,8 +1068,8 @@ STACK_1, STACK_2, STACK_3, and STACK_ORIENTATION. The default value is STACK_3.<
 default value is an empty string.</p>
 </dd>
 <dt><strong>orientationType</strong></dt><dd><p>A SymbolicConstant specifying the method used to define the material orientation. If
-<strong>orientationType**=SYSTEM, the **region</strong> and <strong>localCsys</strong> arguments are required. If
-<strong>orientationType**=FIELD, the **fieldName</strong> argument is required. Possible values are
+<strong>orientationType</strong> = SYSTEM, the <strong>region</strong> and <strong>localCsys</strong> arguments are required. If
+<strong>orientationType</strong> = FIELD, the <strong>fieldName</strong> argument is required. Possible values are
 GLOBAL, SYSTEM, FIELD, DISCRETE, and USER. The default value is GLOBAL.</p>
 </dd>
 <dt><strong>additionalRotationField</strong></dt><dd><p>A String specifying the name of the DiscreteField object specifying the additional

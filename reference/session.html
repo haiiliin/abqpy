@@ -665,13 +665,13 @@ NODE_LIST, POINT_LIST, EDGE_LIST, CIRCUMFERENTIAL, and RADIAL.</p>
 <dt><strong>expression</strong></dt><dd><p>A sequence specifying the nodes or points that make up the path. The definition of the
 path expression depends on the <strong>type</strong> argument.</p>
 <ul class="simple">
-<li><p>If <strong>type**=NODE_LIST, **expression</strong> must be a sequence of sequences. Each inner sequence
+<li><p>If <strong>type</strong> = NODE_LIST, <strong>expression</strong> must be a sequence of sequences. Each inner sequence
 contains two items, the first item is a String specifying the name of a part instance,
 and the second item can be either a sequence of Ints or a sequence of Strings, each
 specifying a range of Ints.</p></li>
-<li><p>If <strong>type**=POINT_LIST, **expression</strong> must be a sequence of tuples of three Floats,
+<li><p>If <strong>type</strong> = POINT_LIST, <strong>expression</strong> must be a sequence of tuples of three Floats,
 specifying the coordinates of each point.</p></li>
-<li><p>If <strong>type**=EDGE_LIST, **expression</strong> must be a sequence of sequences. Each inner sequence
+<li><p>If <strong>type</strong> = EDGE_LIST, <strong>expression</strong> must be a sequence of sequences. Each inner sequence
 contains two items, the first item is a String specifying the name of the part instance,
 and the second item is a sequence of tuples of four Ints that uniquely identify an
 element edge. The four Ints are:</p>
@@ -683,38 +683,38 @@ element edge. The four Ints are:</p>
 edge start node to the edge end node. A negative number specifies the opposite.</p></li>
 </ol>
 </li>
-<li><p>When <strong>type**=CIRCUMFERENTIAL or RADIAL, **expression</strong> must be a sequence of three tuples
+<li><p>When <strong>type</strong> = CIRCUMFERENTIAL or RADIAL, <strong>expression</strong> must be a sequence of three tuples
 of three Floats, specifying the coordinates of the points used to define a coordinate
 system.</p></li>
 </ul>
 </dd>
 <dt><strong>circleDefinition</strong></dt><dd><p>A SymbolicConstant specifying the method in which the circle is being defined. This
-argument is valid only when <strong>type**=CIRCUMFERENTIAL or RADIAL. Possible values are
+argument is valid only when <strong>type</strong> = CIRCUMFERENTIAL or RADIAL. Possible values are
 ORIGIN_AXIS and POINT_ARC.When the value is ORIGIN_AXIS, the first two points in
-**expression</strong> are points on the rotational axis and the third point lies on the x-axis.
+<strong>expression</strong> are points on the rotational axis and the third point lies on the x-axis.
 When the value is POINT_ARC, the three points in <strong>expression</strong> are points lying on the
 arc of the circle.</p>
 </dd>
 <dt><strong>numSegments</strong></dt><dd><p>An Int specifying the number of equal segments in the path. This argument is valid only
-when <a href="#id1"><span class="problematic" id="id2">**</span></a>type**=CIRCUMFERENTIAL or RADIAL.</p>
+when <strong>type</strong> = CIRCUMFERENTIAL or RADIAL.</p>
 </dd>
 <dt><strong>startAngle</strong></dt><dd><p>A Float specifying the start angle of the circumferential path. This argument is valid
-only when <a href="#id3"><span class="problematic" id="id4">**</span></a>type**=CIRCUMFERENTIAL.</p>
+only when <strong>type</strong> = CIRCUMFERENTIAL.</p>
 </dd>
 <dt><strong>endAngle</strong></dt><dd><p>A Float specifying the end angle of the circumferential path. This argument is valid
-only when <a href="#id5"><span class="problematic" id="id6">**</span></a>type**=CIRCUMFERENTIAL.</p>
+only when <strong>type</strong> = CIRCUMFERENTIAL.</p>
 </dd>
 <dt><strong>radius</strong></dt><dd><p>The SymbolicConstant CIRCLE_RADIUS or a Float specifying the radius of the
-circumferential path. This argument is valid only when <a href="#id7"><span class="problematic" id="id8">**</span></a>type**=CIRCUMFERENTIAL.</p>
+circumferential path. This argument is valid only when <strong>type</strong> = CIRCUMFERENTIAL.</p>
 </dd>
 <dt><strong>radialAngle</strong></dt><dd><p>A Float specifying the angle between the radial path and the <strong>X</strong>-axis of the specified
-coordinate system. This argument is valid only when <a href="#id9"><span class="problematic" id="id10">**</span></a>type**=RADIAL.</p>
+coordinate system. This argument is valid only when <strong>type</strong> = RADIAL.</p>
 </dd>
 <dt><strong>startRadius</strong></dt><dd><p>The SymbolicConstant CIRCLE_RADIUS or a Float specifying the start radius of the radial
-path. This argument is valid only when <a href="#id11"><span class="problematic" id="id12">**</span></a>type**=RADIAL.</p>
+path. This argument is valid only when <strong>type</strong> = RADIAL.</p>
 </dd>
 <dt><strong>endRadius</strong></dt><dd><p>The SymbolicConstant CIRCLE_RADIUS or a Float specifying the end radius of the radial
-path. This argument is valid only when <a href="#id13"><span class="problematic" id="id14">**</span></a>type**=RADIAL.</p>
+path. This argument is valid only when <strong>type</strong> = RADIAL.</p>
 </dd>
 </dl>
 </dd>
@@ -727,8 +727,8 @@ path. This argument is valid only when <a href="#id13"><span class="problematic"
 <dd class="field-odd"><dl class="simple">
 <dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelError</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">ErrorUnsupportedNodeData</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">ErrorUnsupportedPointData</span></code>, ErrorIncorrectPathData,</dt><dd></dd>
 <dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyError</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">ErrorEmptyPathName</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">ErrorPathNotFound</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">and</span></code> ErrorNoOdbPathDisplay.</dt><dd></dd>
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">ValueError</span></code></dt><dd><p>When <strong>type**=CIRCUMFERENTIAL or RADIAL, the three points specified in
-**expression</strong> are collinear.</p>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">ValueError</span></code></dt><dd><p>When <strong>type</strong> = CIRCUMFERENTIAL or RADIAL, the three points specified in
+<strong>expression</strong> are collinear.</p>
 </dd>
 </dl>
 </dd>
@@ -886,9 +886,9 @@ local machine. The default value is OFF.</p>
 </dd>
 <dt class="field-odd">Raises</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">Remote</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">queue</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">host</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">set</span></code></dt><dd><p>If <strong>fileCopy**=ON and **hostName</strong> is empty.</p>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">Remote</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">queue</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">host</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">set</span></code></dt><dd><p>If <strong>fileCopy</strong> = ON and <strong>hostName</strong> is empty.</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">Directory</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">in</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">which</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">to</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">run</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">job</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">on</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">remote</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">computer</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">set</span></code></dt><dd><p>If <strong>fileCopy**=ON and **directory</strong> is empty.</p>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">Directory</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">in</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">which</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">to</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">run</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">job</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">on</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">remote</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">computer</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">set</span></code></dt><dd><p>If <strong>fileCopy</strong> = ON and <strong>directory</strong> is empty.</p>
 </dd>
 </dl>
 </dd>
@@ -1216,16 +1216,16 @@ model”). The default value is an empty string.</p>
 <dt><strong>legendLabel</strong></dt><dd><p>A String specifying the label to be used in the legend. The default value is the name of
 the XYData object.</p>
 </dd>
-<dt><strong>skipFrequency</strong></dt><dd><p>An Int specifying how often data frames will be skipped. If <strong>skipFrequency**=1, Abaqus
+<dt><strong>skipFrequency</strong></dt><dd><p>An Int specifying how often data frames will be skipped. If <strong>skipFrequency</strong> = 1, Abaqus
 will skip every other frame. The first frame is always read. Possible values are
-**skipFrequency</strong> ≥≥ 0. The default value is 0 (data are read from every frame).</p>
+<strong>skipFrequency</strong> ≥≥ 0. The default value is 0 (data are read from every frame).</p>
 </dd>
 <dt><strong>numericForm</strong></dt><dd><p>A SymbolicConstant specifying the numeric form in which to display results that contain
 complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
 and COMPLEX_VAL_AT_ANGLE. The default value is REAL.</p>
 </dd>
 <dt><strong>complexAngle</strong></dt><dd><p>A Float specifying the angle (in degrees) at which to display results that contain
-complex numbers when <a href="#id15"><span class="problematic" id="id16">**</span></a>numericForm**=COMPLEX_VAL_AT_ANGLE. The default value is 0.</p>
+complex numbers when <strong>numericForm</strong> = COMPLEX_VAL_AT_ANGLE. The default value is 0.</p>
 </dd>
 <dt><strong>stepTuple</strong></dt><dd><p>A tuple of Integers specifying the steps to include when extracting data.</p>
 </dd>
@@ -1308,20 +1308,20 @@ example,`variable= (‘S’,INTEGRATION_POINT, ( (COMPONENT, ‘S22’ ), ), ) v
 (fraction = -1.0)’, }), )`</p>
 </dd>
 <dt><strong>deformedMag</strong></dt><dd><p>A tuple of three Floats specifying the deformation magnitude in the <em>X-</em>, <em>Y-</em>, and
-<a href="#id17"><span class="problematic" id="id18">*</span></a>Z-<a href="#id19"><span class="problematic" id="id20">*</span></a>planes. The default value is (1, 1, 1).</p>
+<a href="#id1"><span class="problematic" id="id2">*</span></a>Z-<a href="#id3"><span class="problematic" id="id4">*</span></a>planes. The default value is (1, 1, 1).</p>
 </dd>
 <dt><strong>numericForm</strong></dt><dd><p>A SymbolicConstant specifying the numeric form in which to display results that contain
 complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
 and COMPLEX_VAL_AT_ANGLE. The default value is REAL.</p>
 </dd>
 <dt><strong>complexAngle</strong></dt><dd><p>A Float specifying the angle (in degrees) at which to display results that contain
-complex numbers when <a href="#id21"><span class="problematic" id="id22">**</span></a>numericForm**=COMPLEX_VAL_AT_ANGLE. The default value is 0.</p>
+complex numbers when <strong>numericForm</strong> = COMPLEX_VAL_AT_ANGLE. The default value is 0.</p>
 </dd>
 <dt><strong>projectOntoMesh</strong></dt><dd><p>A Boolean to specify whether to consider the data points that do not lie on or inside
 the mesh. The default value is False.</p>
 </dd>
 <dt><strong>projectionTolerance</strong></dt><dd><p>A Float specifying the tolerance value for the projected distance considered for the
-data extraction when <a href="#id23"><span class="problematic" id="id24">**</span></a>projectOntoMesh**= True. The default value is 0.</p>
+data extraction when <strong>projectOntoMesh</strong> =  True. The default value is 0.</p>
 </dd>
 </dl>
 </dd>
@@ -1789,7 +1789,7 @@ memory limit is not recommended unless you are using a Windows 32-bit system wit
 boot option /3GB /userva=SizeInMBytes to extend the amount of memory available for
 Abaqus/CAE. In this case the limit can be changed to 2800 MB.If the kernel memory size
 reaches the <strong>abq_ker_memory</strong> value or the virtual memory limit of the machine, the
-following message will be displayed:<a href="#id25"><span class="problematic" id="id26">`</span></a>Operation did not complete due to a memory
+following message will be displayed:<a href="#id5"><span class="problematic" id="id6">`</span></a>Operation did not complete due to a memory
 allocation failure.`For optimal performance, the memory limit should be set to a value
 less than the physical amount of memory on the machine.The minimum setting allowed is
 256 MB.</p>
@@ -1813,18 +1813,18 @@ file.</p>
 available options are ‘Pro/ENGINEER’, ‘CATIA V5’ and ‘CATIA V6’.</p>
 </dd>
 <dt><strong>parameterFile</strong></dt><dd><p>A parameter file containing the parameters that were exposed in the CAD system using the
-‘<a href="#id39"><span class="problematic" id="id40">ABQ_</span></a>’ prefix.</p>
+‘<a href="#id9"><span class="problematic" id="id10">ABQ_</span></a>’ prefix.</p>
 </dd>
 <dt><strong>CADPartFile</strong></dt><dd><p>A file name specifying the CAD part file for which parameter update is triggered.For
-<a href="#id27"><span class="problematic" id="id28">**</span></a>CADName**=’CATIA V5’ or ‘CATIA V6’, you can specify either products or parts using this
+<strong>CADName</strong> = ‘CATIA V5’ or ‘CATIA V6’, you can specify either products or parts using this
 argument. If you specify a product, Abaqus updates all of the parts associated with that
-product.For <a href="#id29"><span class="problematic" id="id30">**</span></a>CADName**=’Pro/ENGINEER’, this argument is optional, and you can specify
+product.For <strong>CADName</strong> = ‘Pro/ENGINEER’, this argument is optional, and you can specify
 update for parts only. However, a single file can be associated with multiple parts in
 the case of family tables. In this case, Abaqus updates all listed parts.</p>
 </dd>
 <dt><strong>CADPartName</strong></dt><dd><p>An String specifying the part name to update. This part name should match the part name
 in the originating CAD system.If you specify neither <strong>CADPartFile</strong> nor <strong>CADPartName</strong>
-during an update in which you specified <a href="#id31"><span class="problematic" id="id32">**</span></a>CADName**=’Pro/ENGINEER’, Abaqus updates all of
+during an update in which you specified <strong>CADName</strong> = ‘Pro/ENGINEER’, Abaqus updates all of
 the parts in the specified file.</p>
 </dd>
 </dl>
@@ -1913,7 +1913,7 @@ complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMA
 and COMPLEX_MAG_AT_ANGLE. The initial value is COMPLEX_MAGNITUDE.</p>
 </dd>
 <dt><strong>complexAngle</strong></dt><dd><p>A Float specifying the angle (in degrees) at which to display results that contain
-complex numbers when <a href="#id33"><span class="problematic" id="id34">**</span></a>numericForm**=COMPLEX_MAG_AT_ANGLE. The initial value is 0.</p>
+complex numbers when <strong>numericForm</strong> = COMPLEX_MAG_AT_ANGLE. The initial value is 0.</p>
 </dd>
 <dt><strong>stepFrame</strong></dt><dd><p>A SymbolicConstant indicating whether to obtain the values from the specified frame or
 from all active frames. Possible values are SPECIFY and ALL. The default value is
@@ -2056,7 +2056,7 @@ variable=(‘S’,INTEGRATION_POINT, ((COMPONENT, ‘S22’ ), ), )
 variable=((‘S’,INTEGRATION_POINT, ((COMPONENT, ‘S11’ ), ), ), (‘U’,NODAL,((COMPONENT, ‘U1’),)),)
 variable=((‘S’, INTEGRATION_POINT, ((INVARIANT, ‘Mises’ ), ),{‘shell &lt; STEEL &gt; &lt; 3 section points &gt;’:’SNEG, (fraction = -1.0)’, }), )                                   (fraction = -1.0)’, }), )</p>
 <blockquote>
-<div><p><a href="#id35"><span class="problematic" id="id36">`</span></a></p>
+<div><p><a href="#id7"><span class="problematic" id="id8">`</span></a></p>
 </div></blockquote>
 </dd>
 <dt><strong>elementSets</strong></dt><dd><p>A sequence of Strings specifying element sets or a String specifying a single element
@@ -2085,7 +2085,7 @@ complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMA
 and COMPLEX_VAL_AT_ANGLE. The default value is REAL.</p>
 </dd>
 <dt><strong>complexAngle</strong></dt><dd><p>A Float specifying the angle (in degrees) at which to display results that contain
-complex numbers when <a href="#id37"><span class="problematic" id="id38">**</span></a>numericForm**=COMPLEX_VAL_AT_ANGLE. The default value is 0.</p>
+complex numbers when <strong>numericForm</strong> = COMPLEX_VAL_AT_ANGLE. The default value is 0.</p>
 </dd>
 <dt><strong>operator</strong></dt><dd><p>A SymbolicConstant specifying the mathematical, trigonometric, logarithmic, exponential,
 or other operations. Possible values are ADD, SUBTRACT, MULTIPLY, DIVIDE, POWER,

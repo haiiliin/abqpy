@@ -324,7 +324,7 @@ the model to be analyzed.</p>
 </dd>
 <dt><strong>type</strong></dt><dd><p>A SymbolicConstant specifying the type of job. Possible values are ANALYSIS,
 SYNTAXCHECK, RECOVER, and RESTART. The default value is ANALYSIS.If the object has the
-type JobFromInputFile, <a href="#id1"><span class="problematic" id="id2">**</span></a>type**=RESTART is not available.</p>
+type JobFromInputFile, <strong>type</strong> = RESTART is not available.</p>
 </dd>
 <dt><strong>queue</strong></dt><dd><p>A String specifying the name of the queue to which to submit the job. The default value
 is an empty string.Note:You can use the <strong>queue</strong> argument when creating a Job object on a
@@ -383,7 +383,7 @@ is ignored for Abaqus/Standard. Possible values are DOMAIN and LOOP. The default
 is DOMAIN.</p>
 </dd>
 <dt><strong>numDomains</strong></dt><dd><p>An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
-<strong>parallelizationMethodExplicit**=DOMAIN, **numDomains</strong> must be a multiple of <strong>numCpus</strong>.
+<strong>parallelizationMethodExplicit</strong> = DOMAIN, <strong>numDomains</strong> must be a multiple of <strong>numCpus</strong>.
 The default value is 1.</p>
 </dd>
 <dt><strong>activateLoadBalancing</strong></dt><dd><p>A Boolean specifying whether to activate dyanmic load balancing for jobs running on
@@ -465,9 +465,9 @@ local machine. The default value is OFF.</p>
 </dd>
 <dt class="field-odd">Raises</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">Remote</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">queue</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">host</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">set</span></code></dt><dd><p>If <strong>fileCopy**=ON and **hostName</strong> is empty.</p>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">Remote</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">queue</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">host</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">set</span></code></dt><dd><p>If <strong>fileCopy</strong> = ON and <strong>hostName</strong> is empty.</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">Directory</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">in</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">which</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">to</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">run</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">job</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">on</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">remote</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">computer</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">set</span></code></dt><dd><p>If <strong>fileCopy**=ON and **directory</strong> is empty.</p>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">Directory</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">in</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">which</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">to</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">run</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">job</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">on</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">remote</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">computer</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">set</span></code></dt><dd><p>If <strong>fileCopy</strong> = ON and <strong>directory</strong> is empty.</p>
 </dd>
 </dl>
 </dd>

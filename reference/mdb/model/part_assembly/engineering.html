@@ -339,9 +339,9 @@ model.</p>
 template model at each attachment point. Possible values are NORMALS and CSYS. The
 default value is NORMALS.</p>
 </dd>
-<dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system. If <a href="#id1"><span class="problematic" id="id2">**</span></a>localCsys**=None,
+<dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system. If <strong>localCsys</strong> = None,
 the global coordinate system is used. When this member is queried, it returns an Int.
-The default value is None.This argument applies only when <a href="#id3"><span class="problematic" id="id4">**</span></a>orientMethod**=CSYS.</p>
+The default value is None.This argument applies only when <strong>orientMethod</strong> = CSYS.</p>
 </dd>
 <dt><strong>scriptName</strong></dt><dd><p>A String specifying the name of the property generation script. The default value is an
 empty string.</p>
@@ -392,21 +392,21 @@ specified using a single region or tuples of region objects. The default value i
 </dd>
 <dt><strong>crackFrontName</strong></dt><dd><p>A String specifying the name of the crack-front region generated from the tuple of
 regions specifying the crack-front region. This argument is valid only when
-<strong>listOfRegions</strong> is ON. The default value is <a href="#id5"><span class="problematic" id="id6">**</span></a>name**+Front.</p>
+<strong>listOfRegions</strong> is ON. The default value is <a href="#id1"><span class="problematic" id="id2">**</span></a>name**+Front.</p>
 </dd>
 <dt><strong>crackTipName</strong></dt><dd><p>A String specifying the name of the crack-tip region generated from the tuple of regions
-specifying the crack-tip region. This parameter is valid only when <a href="#id7"><span class="problematic" id="id8">**</span></a>listOfRegions**=ON.
-The default value is <a href="#id9"><span class="problematic" id="id10">**</span></a>name**+Tip.</p>
+specifying the crack-tip region. This parameter is valid only when <strong>listOfRegions</strong> = ON.
+The default value is <a href="#id3"><span class="problematic" id="id4">**</span></a>name**+Tip.</p>
 </dd>
 <dt><strong>crackNormal</strong></dt><dd><p>A sequence of sequences of Floats specifying the two points of the vector that describes
 the crack normal direction. Each point is defined by a tuple of two or three coordinates
 indicating its position. This argument is required only when
-<a href="#id11"><span class="problematic" id="id12">**</span></a>extensionDirectionMethod**=CRACK_NORMAL. The default value is an empty sequence.</p>
+<strong>extensionDirectionMethod</strong> = CRACK_NORMAL. The default value is an empty sequence.</p>
 </dd>
 <dt><strong>qVectors</strong></dt><dd><p>A sequence of sequences of sequences of Floats specifying the vectors that indicate the
 set of crack extension directions. Each vector is described by a tuple of two points,
 and each point is described by a tuple of two or three coordinates indicating its
-position. This argument is required only when <a href="#id13"><span class="problematic" id="id14">**</span></a>extensionDirectionMethod**=Q_VECTORS. The
+position. This argument is required only when <strong>extensionDirectionMethod</strong> = Q_VECTORS. The
 default value is an empty sequence.</p>
 </dd>
 <dt><strong>midNodePosition</strong></dt><dd><p>A Float specifying the position of the midside node along the edges of the second-order
@@ -508,7 +508,7 @@ weight distributions. Possible values are UNIFORM, LINEAR, QUADRATIC, and CUBIC.
 default value is UNIFORM.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of fastener couplings.
-If <a href="#id15"><span class="problematic" id="id16">**</span></a>localCsys**=None, couplings are defined in the global coordinate system. When this
+If <strong>localCsys</strong> = None, couplings are defined in the global coordinate system. When this
 member is queried, it returns an Int. The default value is None.</p>
 </dd>
 </dl>
@@ -579,7 +579,7 @@ values are TOTAL_MASS, MASS_PER_VOLUME, MASS_PER_AREA, and MASS_PER_LENGTH.</p>
 </dd>
 <dt><strong>distribution</strong></dt><dd><p>A SymbolicConstant specifying the distribution of the nonstructural mass. Possible
 values are MASS_PROPORTIONAL and VOLUME_PROPORTIONAL. The default value is
-MASS_PROPORTIONAL.The <strong>distribution</strong> argument applies only when <a href="#id17"><span class="problematic" id="id18">**</span></a>units**=TOTAL_MASS.</p>
+MASS_PROPORTIONAL.The <strong>distribution</strong> argument applies only when <strong>units</strong> = TOTAL_MASS.</p>
 </dd>
 </dl>
 </dd>
@@ -663,7 +663,7 @@ default value is 0.0.</p>
 fastener is normal to the surface that is closest to the reference node for that
 fastener. The default value is ON.</p>
 </dd>
-<dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system. If <a href="#id19"><span class="problematic" id="id20">**</span></a>localCsys**=None,
+<dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system. If <strong>localCsys</strong> = None,
 the global coordinate system is used. When this member is queried, it returns an Int.
 The default value is None.</p>
 </dd>
@@ -674,7 +674,7 @@ CONNECTOR and BEAM_MPC. The default value is CONNECTOR.</p>
 value is an empty string.</p>
 </dd>
 <dt><strong>connectorOrientationLocalCsys1</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the first connector
-point in generated connectors. If <a href="#id21"><span class="problematic" id="id22">**</span></a>connectorOrientationLocalCsys1**=None, the degrees of
+point in generated connectors. If <strong>connectorOrientationLocalCsys1</strong> = None, the degrees of
 freedom are defined in the global coordinate system. When this member is queried, it
 returns an Int. The default value is None.</p>
 </dd>
@@ -690,7 +690,7 @@ is to use the same local coordinate system, axis, and angle as the first point. 
 default value is ON.</p>
 </dd>
 <dt><strong>connectorOrientationLocalCsys2</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the second
-connector point in generated connectors. If <a href="#id23"><span class="problematic" id="id24">**</span></a>connectorOrientationLocalCsys2**=None, the
+connector point in generated connectors. If <strong>connectorOrientationLocalCsys2</strong> = None, the
 degrees of freedom are defined in the global coordinate system. When this member is
 queried, it returns an Int. The default value is None.</p>
 </dd>
@@ -761,7 +761,7 @@ is 0.0.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system for the anisotropic
 mass terms (when specified), and the rotary inertia (when specified). If
-<a href="#id25"><span class="problematic" id="id26">**</span></a>localCsys**=None, the anisotropic mass and rotary inertia data are defined in the global
+<strong>localCsys</strong> = None, the anisotropic mass and rotary inertia data are defined in the global
 coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>alpha</strong></dt><dd><p>A Float specifying the alpha damping magnitude. The default value is 0.0.This argument
@@ -801,16 +801,16 @@ argument applies only to Abaqus/Standard analyses.</p>
 behaviors.</p>
 </dd>
 <dt><strong>orientation</strong></dt><dd><p>None or a DatumCsys object specifying the local directions for the spring and/or
-dashpot. If <a href="#id27"><span class="problematic" id="id28">**</span></a>orientation**=None, the spring and/or dashpot data are defined in the global
+dashpot. If <strong>orientation</strong> = None, the spring and/or dashpot data are defined in the global
 coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>springBehavior</strong></dt><dd><p>A Boolean specifying whether to apply spring behavior to the selected points. The
-default value is OFF.At least one of the arguments <a href="#id29"><span class="problematic" id="id30">**</span></a>springBehavior**=ON or
-<a href="#id31"><span class="problematic" id="id32">**</span></a>dashpotBehavior**=ON must be specified.</p>
+default value is OFF.At least one of the arguments <strong>springBehavior</strong> = ON or
+<strong>dashpotBehavior</strong> = ON must be specified.</p>
 </dd>
 <dt><strong>dashpotBehavior</strong></dt><dd><p>A Boolean specifying whether to apply dashpot behavior to the selected points. The
-default value is OFF.At least one of the arguments <a href="#id33"><span class="problematic" id="id34">**</span></a>springBehavior**=ON or
-<a href="#id35"><span class="problematic" id="id36">**</span></a>dashpotBehavior**=ON must be specified.</p>
+default value is OFF.At least one of the arguments <strong>springBehavior</strong> = ON or
+<strong>dashpotBehavior</strong> = ON must be specified.</p>
 </dd>
 <dt><strong>springStiffness</strong></dt><dd><p>A Float specifying the force per relative displacement for the spring. The default value
 is 0.0.</p>
@@ -852,24 +852,24 @@ and FIXED_DOF.</p>
 </dd>
 <dt><strong>dof1</strong></dt><dd><p>An Int specifying the degree of freedom with which the springs and/or dashpots are
 associated at their first points. The <strong>dof1</strong> argument applies only when
-<a href="#id37"><span class="problematic" id="id38">**</span></a>axis**=FIXED_DOFS. The default value is 0.</p>
+<strong>axis</strong> = FIXED_DOFS. The default value is 0.</p>
 </dd>
 <dt><strong>dof2</strong></dt><dd><p>An Int specifying the degree of freedom with which the springs and/or dashpots are
 associated at their second points. The <strong>dof2</strong> argument applies only when
-<a href="#id39"><span class="problematic" id="id40">**</span></a>axis**=FIXED_DOFS. The default value is 0.</p>
+<strong>axis</strong> = FIXED_DOFS. The default value is 0.</p>
 </dd>
 <dt><strong>orientation</strong></dt><dd><p>None or a DatumCsys object specifying the local directions for the spring and/or
-dashpot. If <strong>orientation**=None, the spring and/or dashpot data are defined in the global
-coordinate system. The default value is None.The **orientation</strong> argument applies only
-when <a href="#id41"><span class="problematic" id="id42">**</span></a>axis**=FIXED_DOFS.</p>
+dashpot. If <strong>orientation</strong> = None, the spring and/or dashpot data are defined in the global
+coordinate system. The default value is None.The <strong>orientation</strong> argument applies only
+when <strong>axis</strong> = FIXED_DOFS.</p>
 </dd>
 <dt><strong>springBehavior</strong></dt><dd><p>A Boolean specifying whether to apply spring behavior to the selected point pairs. The
-default value is OFF.At least one of the arguments <a href="#id43"><span class="problematic" id="id44">**</span></a>springBehavior**=ON or
-<a href="#id45"><span class="problematic" id="id46">**</span></a>dashpotBehavior**=ON must be specified.</p>
+default value is OFF.At least one of the arguments <strong>springBehavior</strong> = ON or
+<strong>dashpotBehavior</strong> = ON must be specified.</p>
 </dd>
 <dt><strong>dashpotBehavior</strong></dt><dd><p>A Boolean specifying whether to apply dashpot behavior to the selected point pairs. The
-default value is OFF.At least one of the arguments <a href="#id47"><span class="problematic" id="id48">**</span></a>springBehavior**=ON or
-<a href="#id49"><span class="problematic" id="id50">**</span></a>dashpotBehavior**=ON must be specified.</p>
+default value is OFF.At least one of the arguments <strong>springBehavior</strong> = ON or
+<strong>dashpotBehavior</strong> = ON must be specified.</p>
 </dd>
 <dt><strong>springStiffness</strong></dt><dd><p>A Float specifying the force per relative displacement for the springs. The default
 value is 0.0.</p>
@@ -911,11 +911,11 @@ the crack.</p>
 is ON.</p>
 </dd>
 <dt><strong>crackLocation</strong></dt><dd><p>A Region object specifying the initial crack location. This parameter is required when
-<a href="#id51"><span class="problematic" id="id52">**</span></a>allowCrackGrowth**=OFF.</p>
+<strong>allowCrackGrowth</strong> = OFF.</p>
 </dd>
 <dt><strong>singularityCalcRadius</strong></dt><dd><p>None or a Float specifying the radius from the crack tips within which the elements are
 used for crack singularity calculations. This argument applies only when
-<a href="#id53"><span class="problematic" id="id54">**</span></a>allowCrackGrowth**=OFF. The default value is None.</p>
+<strong>allowCrackGrowth</strong> = OFF. The default value is None.</p>
 </dd>
 <dt><strong>interactionProperty</strong></dt><dd><p>A String specifying the name of the ContactProperty object that defines the contact
 properties for the crack surfaces. The default value is an empty string.</p>
@@ -1237,9 +1237,9 @@ OFF.</p>
 template model at each attachment point. Possible values are NORMALS and CSYS. The
 default value is NORMALS.</p>
 </dd>
-<dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system. If <a href="#id55"><span class="problematic" id="id56">**</span></a>localCsys**=None,
+<dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system. If <strong>localCsys</strong> = None,
 the global coordinate system is used. When this member is queried, it returns an Int.
-The default value is None.This argument applies only when <a href="#id57"><span class="problematic" id="id58">**</span></a>orientMethod**=CSYS.</p>
+The default value is None.This argument applies only when <strong>orientMethod</strong> = CSYS.</p>
 </dd>
 <dt><strong>scriptName</strong></dt><dd><p>A String specifying the name of the property generation script. The default value is an
 empty string.</p>
@@ -1309,21 +1309,21 @@ specified using a single region or tuples of region objects. The default value i
 </dd>
 <dt><strong>crackFrontName</strong></dt><dd><p>A String specifying the name of the crack-front region generated from the tuple of
 regions specifying the crack-front region. This argument is valid only when
-<strong>listOfRegions</strong> is ON. The default value is <a href="#id59"><span class="problematic" id="id60">**</span></a>name**+Front.</p>
+<strong>listOfRegions</strong> is ON. The default value is <a href="#id5"><span class="problematic" id="id6">**</span></a>name**+Front.</p>
 </dd>
 <dt><strong>crackTipName</strong></dt><dd><p>A String specifying the name of the crack-tip region generated from the tuple of regions
-specifying the crack-tip region. This parameter is valid only when <a href="#id61"><span class="problematic" id="id62">**</span></a>listOfRegions**=ON.
-The default value is <a href="#id63"><span class="problematic" id="id64">**</span></a>name**+Tip.</p>
+specifying the crack-tip region. This parameter is valid only when <strong>listOfRegions</strong> = ON.
+The default value is <a href="#id7"><span class="problematic" id="id8">**</span></a>name**+Tip.</p>
 </dd>
 <dt><strong>crackNormal</strong></dt><dd><p>A sequence of sequences of Floats specifying the two points of the vector that describes
 the crack normal direction. Each point is defined by a tuple of two or three coordinates
 indicating its position. This argument is required only when
-<a href="#id65"><span class="problematic" id="id66">**</span></a>extensionDirectionMethod**=CRACK_NORMAL. The default value is an empty sequence.</p>
+<strong>extensionDirectionMethod</strong> = CRACK_NORMAL. The default value is an empty sequence.</p>
 </dd>
 <dt><strong>qVectors</strong></dt><dd><p>A sequence of sequences of sequences of Floats specifying the vectors that indicate the
 set of crack extension directions. Each vector is described by a tuple of two points,
 and each point is described by a tuple of two or three coordinates indicating its
-position. This argument is required only when <a href="#id67"><span class="problematic" id="id68">**</span></a>extensionDirectionMethod**=Q_VECTORS. The
+position. This argument is required only when <strong>extensionDirectionMethod</strong> = Q_VECTORS. The
 default value is an empty sequence.</p>
 </dd>
 <dt><strong>midNodePosition</strong></dt><dd><p>A Float specifying the position of the midside node along the edges of the second-order
@@ -1476,7 +1476,7 @@ weight distributions. Possible values are UNIFORM, LINEAR, QUADRATIC, and CUBIC.
 default value is UNIFORM.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of fastener couplings.
-If <a href="#id69"><span class="problematic" id="id70">**</span></a>localCsys**=None, couplings are defined in the global coordinate system. When this
+If <strong>localCsys</strong> = None, couplings are defined in the global coordinate system. When this
 member is queried, it returns an Int. The default value is None.</p>
 </dd>
 </dl>
@@ -1686,7 +1686,7 @@ The NonstructuralMass object is derived from the Inertia object.</p>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>distribution</strong></dt><dd><p>A SymbolicConstant specifying the distribution of the nonstructural mass. Possible
 values are MASS_PROPORTIONAL and VOLUME_PROPORTIONAL. The default value is
-MASS_PROPORTIONAL.The <strong>distribution</strong> argument applies only when <a href="#id71"><span class="problematic" id="id72">**</span></a>units**=TOTAL_MASS.</p>
+MASS_PROPORTIONAL.The <strong>distribution</strong> argument applies only when <strong>units</strong> = TOTAL_MASS.</p>
 </dd>
 </dl>
 </dd>
@@ -1796,7 +1796,7 @@ default value is 0.0.</p>
 fastener is normal to the surface that is closest to the reference node for that
 fastener. The default value is ON.</p>
 </dd>
-<dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system. If <a href="#id73"><span class="problematic" id="id74">**</span></a>localCsys**=None,
+<dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system. If <strong>localCsys</strong> = None,
 the global coordinate system is used. When this member is queried, it returns an Int.
 The default value is None.</p>
 </dd>
@@ -1807,7 +1807,7 @@ CONNECTOR and BEAM_MPC. The default value is CONNECTOR.</p>
 value is an empty string.</p>
 </dd>
 <dt><strong>connectorOrientationLocalCsys1</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the first connector
-point in generated connectors. If <a href="#id75"><span class="problematic" id="id76">**</span></a>connectorOrientationLocalCsys1**=None, the degrees of
+point in generated connectors. If <strong>connectorOrientationLocalCsys1</strong> = None, the degrees of
 freedom are defined in the global coordinate system. When this member is queried, it
 returns an Int. The default value is None.</p>
 </dd>
@@ -1823,7 +1823,7 @@ is to use the same local coordinate system, axis, and angle as the first point. 
 default value is ON.</p>
 </dd>
 <dt><strong>connectorOrientationLocalCsys2</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the second
-connector point in generated connectors. If <a href="#id77"><span class="problematic" id="id78">**</span></a>connectorOrientationLocalCsys2**=None, the
+connector point in generated connectors. If <strong>connectorOrientationLocalCsys2</strong> = None, the
 degrees of freedom are defined in the global coordinate system. When this member is
 queried, it returns an Int. The default value is None.</p>
 </dd>
@@ -1924,7 +1924,7 @@ is 0.0.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system for the anisotropic
 mass terms (when specified), and the rotary inertia (when specified). If
-<a href="#id79"><span class="problematic" id="id80">**</span></a>localCsys**=None, the anisotropic mass and rotary inertia data are defined in the global
+<strong>localCsys</strong> = None, the anisotropic mass and rotary inertia data are defined in the global
 coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>alpha</strong></dt><dd><p>A Float specifying the alpha damping magnitude. The default value is 0.0.This argument
@@ -1999,16 +1999,16 @@ is OFF.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>orientation</strong></dt><dd><p>None or a DatumCsys object specifying the local directions for the spring and/or
-dashpot. If <a href="#id81"><span class="problematic" id="id82">**</span></a>orientation**=None, the spring and/or dashpot data are defined in the global
+dashpot. If <strong>orientation</strong> = None, the spring and/or dashpot data are defined in the global
 coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>springBehavior</strong></dt><dd><p>A Boolean specifying whether to apply spring behavior to the selected points. The
-default value is OFF.At least one of the arguments <a href="#id83"><span class="problematic" id="id84">**</span></a>springBehavior**=ON or
-<a href="#id85"><span class="problematic" id="id86">**</span></a>dashpotBehavior**=ON must be specified.</p>
+default value is OFF.At least one of the arguments <strong>springBehavior</strong> = ON or
+<strong>dashpotBehavior</strong> = ON must be specified.</p>
 </dd>
 <dt><strong>dashpotBehavior</strong></dt><dd><p>A Boolean specifying whether to apply dashpot behavior to the selected points. The
-default value is OFF.At least one of the arguments <a href="#id87"><span class="problematic" id="id88">**</span></a>springBehavior**=ON or
-<a href="#id89"><span class="problematic" id="id90">**</span></a>dashpotBehavior**=ON must be specified.</p>
+default value is OFF.At least one of the arguments <strong>springBehavior</strong> = ON or
+<strong>dashpotBehavior</strong> = ON must be specified.</p>
 </dd>
 <dt><strong>springStiffness</strong></dt><dd><p>A Float specifying the force per relative displacement for the spring. The default value
 is 0.0.</p>
@@ -2083,24 +2083,24 @@ is OFF.</p>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>dof1</strong></dt><dd><p>An Int specifying the degree of freedom with which the springs and/or dashpots are
 associated at their first points. The <strong>dof1</strong> argument applies only when
-<a href="#id91"><span class="problematic" id="id92">**</span></a>axis**=FIXED_DOFS. The default value is 0.</p>
+<strong>axis</strong> = FIXED_DOFS. The default value is 0.</p>
 </dd>
 <dt><strong>dof2</strong></dt><dd><p>An Int specifying the degree of freedom with which the springs and/or dashpots are
 associated at their second points. The <strong>dof2</strong> argument applies only when
-<a href="#id93"><span class="problematic" id="id94">**</span></a>axis**=FIXED_DOFS. The default value is 0.</p>
+<strong>axis</strong> = FIXED_DOFS. The default value is 0.</p>
 </dd>
 <dt><strong>orientation</strong></dt><dd><p>None or a DatumCsys object specifying the local directions for the spring and/or
-dashpot. If <strong>orientation**=None, the spring and/or dashpot data are defined in the global
-coordinate system. The default value is None.The **orientation</strong> argument applies only
-when <a href="#id95"><span class="problematic" id="id96">**</span></a>axis**=FIXED_DOFS.</p>
+dashpot. If <strong>orientation</strong> = None, the spring and/or dashpot data are defined in the global
+coordinate system. The default value is None.The <strong>orientation</strong> argument applies only
+when <strong>axis</strong> = FIXED_DOFS.</p>
 </dd>
 <dt><strong>springBehavior</strong></dt><dd><p>A Boolean specifying whether to apply spring behavior to the selected point pairs. The
-default value is OFF.At least one of the arguments <a href="#id97"><span class="problematic" id="id98">**</span></a>springBehavior**=ON or
-<a href="#id99"><span class="problematic" id="id100">**</span></a>dashpotBehavior**=ON must be specified.</p>
+default value is OFF.At least one of the arguments <strong>springBehavior</strong> = ON or
+<strong>dashpotBehavior</strong> = ON must be specified.</p>
 </dd>
 <dt><strong>dashpotBehavior</strong></dt><dd><p>A Boolean specifying whether to apply dashpot behavior to the selected point pairs. The
-default value is OFF.At least one of the arguments <a href="#id101"><span class="problematic" id="id102">**</span></a>springBehavior**=ON or
-<a href="#id103"><span class="problematic" id="id104">**</span></a>dashpotBehavior**=ON must be specified.</p>
+default value is OFF.At least one of the arguments <strong>springBehavior</strong> = ON or
+<strong>dashpotBehavior</strong> = ON must be specified.</p>
 </dd>
 <dt><strong>springStiffness</strong></dt><dd><p>A Float specifying the force per relative displacement for the springs. The default
 value is 0.0.</p>
@@ -2175,11 +2175,11 @@ The XFEMCrack object is derived from the Crack object.</p>
 is ON.</p>
 </dd>
 <dt><strong>crackLocation</strong></dt><dd><p>A Region object specifying the initial crack location. This parameter is required when
-<a href="#id105"><span class="problematic" id="id106">*</span></a>allowCrackGrowth*=OFF.</p>
+<a href="#id9"><span class="problematic" id="id10">*</span></a>allowCrackGrowth*=OFF.</p>
 </dd>
 <dt><strong>singularityCalcRadius</strong></dt><dd><p>None or a Float specifying the radius from the crack tips within which the elements are
 used for crack singularity calculations. This argument applies only when
-<a href="#id107"><span class="problematic" id="id108">*</span></a>allowCrackGrowth*=OFF. The default value is None.</p>
+<a href="#id11"><span class="problematic" id="id12">*</span></a>allowCrackGrowth*=OFF. The default value is None.</p>
 </dd>
 <dt><strong>interactionProperty</strong></dt><dd><p>A String specifying the name of the ContactProperty object that defines the contact
 properties for the crack surfaces. The default value is an empty string.</p>

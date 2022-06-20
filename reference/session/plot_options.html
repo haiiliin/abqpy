@@ -657,7 +657,7 @@ are EXTRA_COARSE, COARSE, MEDIUM, FINE, and EXTRA_FINE. The default value is COA
 <dt><strong>noResultsColor</strong></dt><dd><p>A String specifying the color of elements that do not have any results. The default
 value is “White”.</p>
 </dd>
-<dt><strong>featureAngle</strong></dt><dd><p>A Float specifying the feature angle to be used when <a href="#id1"><span class="problematic" id="id2">**</span></a>visibleEdges**=FEATURE. The default
+<dt><strong>featureAngle</strong></dt><dd><p>A Float specifying the feature angle to be used when <strong>visibleEdges</strong> = FEATURE. The default
 value is 30.0.</p>
 </dd>
 <dt><strong>otherSymbolSize</strong></dt><dd><p>An Int specifying the size of various glyph symbols (boundary conditions, coupling
@@ -691,25 +691,25 @@ default value is ON.</p>
 <dt><strong>pointElements</strong></dt><dd><p>A Boolean specifying whether to display point type elements. The default value is ON.</p>
 </dd>
 <dt><strong>referencePoints</strong></dt><dd><p>A Boolean specifying whether to display reference points. <strong>referencePoints</strong> is valid
-only when <a href="#id3"><span class="problematic" id="id4">**</span></a>pointElements**=ON. The default value is ON.</p>
+only when <strong>pointElements</strong> = ON. The default value is ON.</p>
 </dd>
 <dt><strong>massElements</strong></dt><dd><p>A Boolean specifying whether to display mass, heat capacity and inertia elements.
-<strong>massElements</strong> is valid only when <a href="#id5"><span class="problematic" id="id6">**</span></a>pointElements**=ON. The default value is OFF.</p>
+<strong>massElements</strong> is valid only when <strong>pointElements</strong> = ON. The default value is OFF.</p>
 </dd>
 <dt><strong>springElements</strong></dt><dd><p>A Boolean specifying whether to display spring and dashpot elements. <strong>springElements</strong> is
-valid only when <a href="#id7"><span class="problematic" id="id8">**</span></a>pointElements**=ON. The default value is OFF.</p>
+valid only when <strong>pointElements</strong> = ON. The default value is OFF.</p>
 </dd>
 <dt><strong>spotWelds</strong></dt><dd><p>A Boolean specifying whether to display spot weld and distributed coupling elements.
-<strong>spotWelds</strong> is valid only when <a href="#id9"><span class="problematic" id="id10">**</span></a>pointElements**=ON. The default value is OFF.</p>
+<strong>spotWelds</strong> is valid only when <strong>pointElements</strong> = ON. The default value is OFF.</p>
 </dd>
 <dt><strong>tracerParticles</strong></dt><dd><p>A Boolean specifying whether to display tracer particles. <strong>tracerParticles</strong> is valid
-only when <a href="#id11"><span class="problematic" id="id12">**</span></a>pointElements**=ON. The default value is OFF.</p>
+only when <strong>pointElements</strong> = ON. The default value is OFF.</p>
 </dd>
 <dt><strong>pc3dElements</strong></dt><dd><p>A Boolean specifying whether to display PC3D elements. <strong>pc3dElements</strong> is valid only when
-<a href="#id13"><span class="problematic" id="id14">**</span></a>pointElements**=ON. The default value is ON.</p>
+<strong>pointElements</strong> = ON. The default value is ON.</p>
 </dd>
 <dt><strong>pd3dElements</strong></dt><dd><p>A Boolean specifying whether to display PD3D elements. <strong>pd3dElements</strong> is valid only when
-<a href="#id15"><span class="problematic" id="id16">**</span></a>pointElements**=ON. The default value is ON.</p>
+<strong>pointElements</strong> = ON. The default value is ON.</p>
 </dd>
 <dt><strong>sweepArs</strong></dt><dd><p>A Boolean specifying whether to sweep the analytical surfaces. The default value is ON
 or OFF, depending on the characteristics of your model.</p>
@@ -718,21 +718,21 @@ or OFF, depending on the characteristics of your model.</p>
 or OFF, depending on the characteristics of your model.</p>
 </dd>
 <dt><strong>sweepStartAngleArs</strong></dt><dd><p>A Float specifying the starting angle (in degrees) from which to sweep the analytical
-surfaces when <a href="#id17"><span class="problematic" id="id18">**</span></a>sweepArs**=ON. The default value is 0.0.</p>
+surfaces when <strong>sweepArs</strong> = ON. The default value is 0.0.</p>
 </dd>
 <dt><strong>sweepStartAngleElem</strong></dt><dd><p>A Float specifying the starting angle (in degrees) from which to sweep the model when
-<a href="#id19"><span class="problematic" id="id20">**</span></a>sweepElem**=ON. The default value is 0.0.</p>
+<strong>sweepElem</strong> = ON. The default value is 0.0.</p>
 </dd>
 <dt><strong>sweepEndAngleArs</strong></dt><dd><p>A Float specifying the angle (in degrees) through which to sweep the analytical surfaces
-when <a href="#id21"><span class="problematic" id="id22">**</span></a>sweepArs**=ON. The default value is 360.0.</p>
+when <strong>sweepArs</strong> = ON. The default value is 360.0.</p>
 </dd>
 <dt><strong>sweepEndAngleElem</strong></dt><dd><p>A Float specifying the angle (in degrees) through which to sweep the model when
-<a href="#id23"><span class="problematic" id="id24">**</span></a>sweepElem**=ON. The default value is 180.0.</p>
+<strong>sweepElem</strong> = ON. The default value is 180.0.</p>
 </dd>
-<dt><strong>numSweepSegmentsArs</strong></dt><dd><p>An Int specifying the number of segments to display when <a href="#id25"><span class="problematic" id="id26">**</span></a>sweepArs**=ON. The default
+<dt><strong>numSweepSegmentsArs</strong></dt><dd><p>An Int specifying the number of segments to display when <strong>sweepArs</strong> = ON. The default
 value is 10 or 20, depending on characteristics of your model.</p>
 </dd>
-<dt><strong>numSweepSegmentsElem</strong></dt><dd><p>An Int specifying the number of segments to display when <a href="#id27"><span class="problematic" id="id28">**</span></a>sweepElem**=ON. The default
+<dt><strong>numSweepSegmentsElem</strong></dt><dd><p>An Int specifying the number of segments to display when <strong>sweepElem</strong> = ON. The default
 value is 10 or 20, depending on characteristics of your model.</p>
 </dd>
 <dt><strong>numericForm</strong></dt><dd><p>A SymbolicConstant specifying the numeric form in which to display results that contain
@@ -740,7 +740,7 @@ complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMA
 and COMPLEX_MAG_AT_ANGLE. The default value is REAL.</p>
 </dd>
 <dt><strong>complexAngle</strong></dt><dd><p>A Float specifying the angle (in degrees) at which to display results that contain
-complex numbers when <a href="#id29"><span class="problematic" id="id30">**</span></a>numericForm**=COMPLEX_MAG_AT_ANGLE. The default value is 0.0.</p>
+complex numbers when <strong>numericForm</strong> = COMPLEX_MAG_AT_ANGLE. The default value is 0.0.</p>
 </dd>
 <dt><strong>sectionResults</strong></dt><dd><p>A SymbolicConstant specifying which of the section points to use. Possible values are
 USE_BOTTOM, USE_TOP, USE_BOTTOM_AND_TOP, and USE_ENVELOPE. The default value is
@@ -767,16 +767,16 @@ are SELECT_BY_NUMBER, SELECT_BY_ANGLE, and SELECT_ALL. The default value is
 SELECT_BY_NUMBER.</p>
 </dd>
 <dt><strong>selectedSectorNumbers</strong></dt><dd><p>A sequence of Ints specifying which sectors to display when
-<strong>sectorSelectionType**=SELECT_BY_NUMBER. Possible values are 1 ≤≤ **selectedSectorNumbers</strong>
+<strong>sectorSelectionType</strong> = SELECT_BY_NUMBER. Possible values are 1 ≤≤ <strong>selectedSectorNumbers</strong>
 ≤≤ the number of sectors. The default value is (1).</p>
 </dd>
 <dt><strong>sweepSectorStartAngle</strong></dt><dd><p>A Float specifying the angle (in degrees) from which to sweep cyclic symmetry sectors
-when <strong>sweepSectors**=ON. Possible values are multiples of the sector angle such that 0 ≤≤
-**sweepSectorStartAngle</strong> ≤≤ 360. The default value is 0.0.</p>
+when <strong>sweepSectors</strong> = ON. Possible values are multiples of the sector angle such that 0 ≤≤
+<strong>sweepSectorStartAngle</strong> ≤≤ 360. The default value is 0.0.</p>
 </dd>
 <dt><strong>sweepSectorEndAngle</strong></dt><dd><p>A Float specifying the angle (in degrees) through which to sweep cyclic symmetry sectors
-when <strong>sweepSectors**=ON. Possible values are multiples of the sector angle such that 0 &lt;&lt;
-**sweepSectorEndAngle</strong> ≤≤ 360. The default value is 360.0.</p>
+when <strong>sweepSectors</strong> = ON. Possible values are multiples of the sector angle such that 0 &lt;&lt;
+<strong>sweepSectorEndAngle</strong> ≤≤ 360. The default value is 360.0.</p>
 </dd>
 <dt><strong>extrudeArs</strong></dt><dd><p>A Boolean specifying whether to extrude analytical surfaces. The default value is ON or
 OFF depending on characteristics of your model.</p>
@@ -788,10 +788,10 @@ analytical surfaces. The default value is ON. The default value is ON.</p>
 OFF depending on characteristics of your model.</p>
 </dd>
 <dt><strong>extrudeArsDepth</strong></dt><dd><p>A Float specifying the depth (in model units) by which the analytical surfaces are to be
-extruded when <a href="#id31"><span class="problematic" id="id32">**</span></a>extrudeArs**=ON. The default value is 1.0.</p>
+extruded when <strong>extrudeArs</strong> = ON. The default value is 1.0.</p>
 </dd>
 <dt><strong>extrudeElemDepth</strong></dt><dd><p>A Float specifying the depth (in model units) by which the deformable elements are to be
-extruded when <a href="#id33"><span class="problematic" id="id34">**</span></a>extrudeElem**=ON. The default value is 1.0.</p>
+extruded when <strong>extrudeElem</strong> = ON. The default value is 1.0.</p>
 </dd>
 <dt><strong>mirrorPatternOrder</strong></dt><dd><p>A SymbolicConstant specifying the order of operations to create the mirror pattern.
 Possible values are MIRROR_RECT_CIRC, RECT_MIRROR_CIRC, MIRROR_CIRC_RECT,
@@ -847,17 +847,17 @@ orientations. The default value is OFF.</p>
 </dd>
 <dt><strong>transformationType</strong></dt><dd><p>A SymbolicConstant specifying the transformation to apply to the PrimaryVariable.
 Possible values are DEFAULT, NODAL, USER_SPECIFIED, ANGULAR, and LAYUP_ORIENTATION. The
-default value is DEFAULT.If <strong>transformationType**=NODAL, Abaqus will transform nodal
+default value is DEFAULT.If <strong>transformationType</strong> = NODAL, Abaqus will transform nodal
 vector fields into any orientation defined in the analysis with the TRANSFORM option.
-Setting **transformationType**=NODAL has no effect on element-based results.If
-**transformationType**=USER_SPECIFIED, Abaqus will transform tensor and vector fields into
-the coordinate system specified by **datumCsys</strong>.If
-<a href="#id35"><span class="problematic" id="id36">**</span></a>transformationType**=LAYUP_ORIENTATION, Abaqus will transform tensor and vector fields
+Setting <strong>transformationType</strong> = NODAL has no effect on element-based results.If
+<strong>transformationType</strong> = USER_SPECIFIED, Abaqus will transform tensor and vector fields into
+the coordinate system specified by <strong>datumCsys</strong>.If
+<strong>transformationType</strong> = LAYUP_ORIENTATION, Abaqus will transform tensor and vector fields
 into the layup orientation defined in the composite section. The odb should contain the
 field SORIENT in order to use this option.</p>
 </dd>
 <dt><strong>datumCsys</strong></dt><dd><p>A DatumCsys object specifying the coordinate system to use for results transformation
-when <a href="#id37"><span class="problematic" id="id38">**</span></a>transformationType**=USER_SPECIFIED.</p>
+when <strong>transformationType</strong> = USER_SPECIFIED.</p>
 </dd>
 <dt><strong>rigidTransformPrimary</strong></dt><dd><p>A Boolean specifying whether to perform a rigid transformation of nodal vector datasets
 based on the active user specific system The default value is OFF.</p>
@@ -2983,8 +2983,8 @@ MEDIUM, and THICK. The default value is VERY_THIN.</p>
 </dd>
 <dt><strong>translucency</strong></dt><dd><p>A Boolean specifying whether to set translucency. The default value is OFF.</p>
 </dd>
-<dt><strong>translucencyFactor</strong></dt><dd><p>A Float specifying the translucency factor when <strong>translucency**=ON. Possible values are
-0.0≤≤ **translucencyFactor</strong> ≤≤ 1.0. The default value is 0.3.</p>
+<dt><strong>translucencyFactor</strong></dt><dd><p>A Float specifying the translucency factor when <strong>translucency</strong> = ON. Possible values are
+0.0≤≤ <strong>translucencyFactor</strong> ≤≤ 1.0. The default value is 0.3.</p>
 </dd>
 <dt><strong>translucencySort</strong></dt><dd><p>A Boolean specifying whether to use depth sorting. The default value is OFF.</p>
 </dd>

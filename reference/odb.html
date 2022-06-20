@@ -396,9 +396,9 @@ total time or frequency.</p>
 </dd>
 <dt><strong>match</strong></dt><dd><p>A SymbolicConstant specifying which frame to return if there is no frame at the exact
 frame value. Possible values are CLOSEST, BEFORE, AFTER, and EXACT. The default value is
-CLOSEST.When <a href="#id1"><span class="problematic" id="id2">**</span></a>match**=CLOSEST, Abaqus returns the closest frame. If the frame value
+CLOSEST.When <strong>match</strong> = CLOSEST, Abaqus returns the closest frame. If the frame value
 requested is exactly halfway between two frames, Abaqus returns the frame after the
-value.When <a href="#id3"><span class="problematic" id="id4">**</span></a>match**=EXACT, Abaqus raises an exception if the exact frame value does not
+value.When <strong>match</strong> = EXACT, Abaqus raises an exception if the exact frame value does not
 exist.</p>
 </dd>
 </dl>
@@ -590,7 +590,7 @@ FREQUENCY, ARC_LENGTH, and MODAL.The type of OdbFrame object that can be created
 this step is based on the value of the <strong>domain</strong> argument.</p>
 </dd>
 <dt><strong>timePeriod</strong></dt><dd><p>A Float specifying the time period of the step. <strong>timePeriod</strong> is required if
-<a href="#id5"><span class="problematic" id="id6">**</span></a>domain**=TIME; otherwise, this argument is not applicable. The default value is 0.0.</p>
+<strong>domain</strong> = TIME; otherwise, this argument is not applicable. The default value is 0.0.</p>
 </dd>
 <dt><strong>previousStepName</strong></dt><dd><p>A String specifying the preceding step. If <strong>previousStepName</strong> is the empty string, the
 last step in the repository is used. If <strong>previousStepName</strong> is not the last step, this
@@ -823,7 +823,7 @@ Possible values are positive numbers.</p>
 are non-negative numbers. The default value is 0.0.</p>
 </dd>
 <dt><strong>smooth</strong></dt><dd><p>The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing.
-Possible float values are 0 ≤≤ <strong>smoothing</strong> ≤≤ 0.5. If <a href="#id7"><span class="problematic" id="id8">**</span></a>smooth**=SOLVER_DEFAULT, the
+Possible float values are 0 ≤≤ <strong>smoothing</strong> ≤≤ 0.5. If <strong>smooth</strong> = SOLVER_DEFAULT, the
 default degree of smoothing will be determined by the solver. The default value is
 SOLVER_DEFAULT.</p>
 </dd>
@@ -1156,7 +1156,7 @@ calculate the spectrum. The default value is an empty string.</p>
 values for time/frequency are positive numbers.</p>
 </dd>
 <dt><strong>smooth</strong></dt><dd><p>The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing.
-Possible float values are between 0 and 0.5. If <a href="#id9"><span class="problematic" id="id10">**</span></a>smooth**=SOLVER_DEFAULT, the default
+Possible float values are between 0 and 0.5. If <strong>smooth</strong> = SOLVER_DEFAULT, the default
 degree of smoothing will be determined by the solver. The default value is
 SOLVER_DEFAULT.</p>
 </dd>
@@ -1356,17 +1356,17 @@ library](<a class="reference external" href="https://help.3ds.com/2021/English/D
 </dd>
 <dt><strong>uniformThickness</strong></dt><dd><p>A Boolean specifying whether the thickness is uniform.</p>
 </dd>
-<dt><strong>t1</strong></dt><dd><p>A Float specifying the uniform wall thickness if <a href="#id11"><span class="problematic" id="id12">**</span></a>uniformThickness**=ON, and the wall
-thickness of the first segment if <a href="#id13"><span class="problematic" id="id14">**</span></a>uniformThickness**=OFF.</p>
+<dt><strong>t1</strong></dt><dd><p>A Float specifying the uniform wall thickness if <strong>uniformThickness</strong> = ON, and the wall
+thickness of the first segment if <strong>uniformThickness</strong> = OFF.</p>
 </dd>
 <dt><strong>t2</strong></dt><dd><p>A Float specifying the wall thickness of the second segment. <strong>t2</strong> is required only when
-<a href="#id15"><span class="problematic" id="id16">**</span></a>uniformThickness**=OFF. The default value is 0.0.</p>
+<strong>uniformThickness</strong> = OFF. The default value is 0.0.</p>
 </dd>
 <dt><strong>t3</strong></dt><dd><p>A Float specifying the wall thickness of the third segment. <strong>t3</strong> is required only when
-<a href="#id17"><span class="problematic" id="id18">**</span></a>uniformThickness**=OFF. The default value is 0.0.</p>
+<strong>uniformThickness</strong> = OFF. The default value is 0.0.</p>
 </dd>
 <dt><strong>t4</strong></dt><dd><p>A Float specifying the wall thickness of the fourth segment. <strong>t4</strong> is required only when
-<a href="#id19"><span class="problematic" id="id20">**</span></a>uniformThickness**=OFF. The default value is 0.0.</p>
+<strong>uniformThickness</strong> = OFF. The default value is 0.0.</p>
 </dd>
 </dl>
 </dd>
@@ -2133,9 +2133,9 @@ deformationField and the argument is not supplied.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>componentLabels</strong></dt><dd><p>A sequence of Strings specifying the labels for each component of the value. The length
-of the sequence must match the type. If <strong>type**=TENSOR, the default value is **name</strong> with
-the suffixes (‘11’, ‘22’, ‘33’, ‘12’, ‘13’, ‘23’). If <strong>type**=VECTOR, the default value
-is **name</strong> with the suffixes (‘1’, ‘2’, ‘3’). If <a href="#id21"><span class="problematic" id="id22">**</span></a>type**=SCALAR, the default value is an
+of the sequence must match the type. If <strong>type</strong> = TENSOR, the default value is <strong>name</strong> with
+the suffixes (‘11’, ‘22’, ‘33’, ‘12’, ‘13’, ‘23’). If <strong>type</strong> = VECTOR, the default value
+is <strong>name</strong> with the suffixes (‘1’, ‘2’, ‘3’). If <strong>type</strong> = SCALAR, the default value is an
 empty sequence.</p>
 </dd>
 </dl>
@@ -3375,7 +3375,7 @@ the <strong>procedureType</strong> member of the <a class="reference internal" h
 <dt><strong>associatedFrame: ‘OdbFrame’</strong></dt><dd><p>An <a class="reference internal" href="#abaqus.Odb.OdbFrame.OdbFrame" title="abaqus.Odb.OdbFrame.OdbFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbFrame</span></code></a> object specifying the real or imaginary portion of the data corresponding to
 this cyclic symmetry mode.</p>
 </dd>
-<dt><strong>fieldOutputs: dict[str, FieldOutput]</strong></dt><dd><p>A repository of <a class="reference internal" href="#abaqus.Odb.FieldOutput.FieldOutput" title="abaqus.Odb.FieldOutput.FieldOutput"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldOutput</span></code></a> objects specifying the key to the <a href="#id23"><span class="problematic" id="id24">**</span></a>fieldOutputs**repository
+<dt><strong>fieldOutputs: dict[str, FieldOutput]</strong></dt><dd><p>A repository of <a class="reference internal" href="#abaqus.Odb.FieldOutput.FieldOutput" title="abaqus.Odb.FieldOutput.FieldOutput"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldOutput</span></code></a> objects specifying the key to the <a href="#id1"><span class="problematic" id="id2">**</span></a>fieldOutputs**repository
 is a String representing an output variable.</p>
 </dd>
 <dt><strong>loadCase: OdbLoadCase</strong></dt><dd><p>An <a class="reference internal" href="#abaqus.Odb.OdbLoadCase.OdbLoadCase" title="abaqus.Odb.OdbLoadCase.OdbLoadCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbLoadCase</span></code></a> object specifying the load case for the frame.</p>

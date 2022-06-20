@@ -431,14 +431,14 @@ data. The default value is OFF.</p>
 hardening models. The default value is an empty sequence.</p>
 </dd>
 <dt><strong>sectPtNum</strong></dt><dd><p>A sequence of Ints specifying section point numbers. This argument is valid only when
-<a href="#id1"><span class="problematic" id="id2">**</span></a>definition**=SECTION_PTS.</p>
+<strong>definition</strong> = SECTION_PTS.</p>
 </dd>
 <dt><strong>definition</strong></dt><dd><p>A SymbolicConstant specifying different types of kinematic hardening. Possible values
 are KINEMATIC_HARDENING, CRUSHABLE_FOAM, REBAR, SECTION_PTS, and USER_DEFINED. The
 default value is KINEMATIC_HARDENING.</p>
 </dd>
 <dt><strong>rebarLayerNames</strong></dt><dd><p>A sequence of Strings specifying rebar layer names. This argument is valid only when
-<a href="#id3"><span class="problematic" id="id4">**</span></a>definition**=REBAR.</p>
+<strong>definition</strong> = REBAR.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying whether the load is uniform. Possible values are MAGNITUDE
 and ANALYTICAL_FIELD. The default value is MAGNITUDE.</p>
@@ -474,16 +474,16 @@ is applied. All instances must be assigned the same Eulerian section.</p>
 discrete fields. The default value is OFF.</p>
 </dd>
 <dt><strong>assignmentList</strong></dt><dd><p>A sequence of tuples specifying the uniform volume fractions to be assigned. This
-argument is valid only when <strong>useFields**=FALSE. Each tuple contains two entries:A Region
+argument is valid only when <strong>useFields</strong> = FALSE. Each tuple contains two entries:A Region
 object.A tuple of Floats specifying the uniform volume fraction values. The length of
 the tuple must match the number of material instance names specified in the Eulerain
-section assigned to part instances specified by **instanceList</strong>.</p>
+section assigned to part instances specified by <strong>instanceList</strong>.</p>
 </dd>
 <dt><strong>fieldList</strong></dt><dd><p>A sequence of tuples specifying the discrete volume fractions to be assigned. This
-argument is valid only when <strong>useFields**=TRUE. Each tuple contains two entries:A Region
+argument is valid only when <strong>useFields</strong> = TRUE. Each tuple contains two entries:A Region
 object.A tuple of Strings specifying Discrete Field names. The length of the tuple must
 match the number of material instance names specified in the Eulerain section assigned
-to part instances specified by **instanceList</strong>.</p>
+to part instances specified by <strong>instanceList</strong>.</p>
 </dd>
 <dt><strong>colorList</strong></dt><dd><p>A sequence of three Ints specifying colors used to display the material instance
 assignments. This is a sequence of R,G,B colors, where the values are represented by
@@ -517,7 +517,7 @@ integers between 0 and 255. The default value is an empty sequence.</p>
 </dd>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the predefined field is applied. <strong>Region</strong>
 is ignored if the predefined field has a <strong>distributionType</strong> member available, and
-<a href="#id5"><span class="problematic" id="id6">**</span></a>distributionType**=FROM_FILE .</p>
+<strong>distributionType</strong> = FROM_FILE .</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the predefined field varies spatially. Possible values
 are UNIFORM, USER_DEFINED, FROM_FILE, FIELD, FROM_FILE_AND_USER_DEFINED, and
@@ -535,7 +535,7 @@ section of the region. Possible values are</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object associated
 with this predefined field. The <strong>field</strong> argument applies only when
-<a href="#id7"><span class="problematic" id="id8">**</span></a>distributionType**=FIELD or <a href="#id9"><span class="problematic" id="id10">**</span></a>distributionType**=DISCRETE_FIELD. The default value is an
+<strong>distributionType</strong> = FIELD or <strong>distributionType</strong> = DISCRETE_FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>amplitude</strong></dt><dd><p>A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -544,48 +544,48 @@ value is UNSET.Note:<em>amplitude</em> should be given only if it is valid for t
 step.</p>
 </dd>
 <dt><strong>fileName</strong></dt><dd><p>A String specifying the name of the file from which the temperature values are to be
-read when <a href="#id11"><span class="problematic" id="id12">**</span></a>distributionType**=FROM_FILE or <a href="#id13"><span class="problematic" id="id14">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED.</p>
+read when <strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED.</p>
 </dd>
 <dt><strong>beginStep</strong></dt><dd><p>An Int specifying the first step from which temperature values are to be read or the
 SymbolicConstant FIRST_STEP or LAST_STEP. This argument is valid only when
-<a href="#id15"><span class="problematic" id="id16">**</span></a>distributionType**=FROM_FILE or <a href="#id17"><span class="problematic" id="id18">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED. The
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
 default value is None.</p>
 </dd>
 <dt><strong>beginIncrement</strong></dt><dd><p>An Int specifying the first increment of the step set in <strong>beginStep</strong> or the
 SymbolicConstants STEP_START or STEP_END. This argument is valid only when
-<a href="#id19"><span class="problematic" id="id20">**</span></a>distributionType**=FROM_FILE or <a href="#id21"><span class="problematic" id="id22">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED. The
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
 default value is None.</p>
 </dd>
 <dt><strong>endStep</strong></dt><dd><p>An Int specifying the last step from which temperature values are to be read or the
 SymbolicConstants FIRST_STEP and LAST_STEP. This argument is valid only when
-<a href="#id23"><span class="problematic" id="id24">**</span></a>distributionType**=FROM_FILE or <a href="#id25"><span class="problematic" id="id26">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED. The
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
 default value is None.</p>
 </dd>
 <dt><strong>endIncrement</strong></dt><dd><p>An Int specifying the last increment of the step set in <strong>endStep</strong> or the
 SymbolicConstants STEP_START and STEP_END. This argument is valid only when
-<a href="#id27"><span class="problematic" id="id28">**</span></a>distributionType**=FROM_FILE or <a href="#id29"><span class="problematic" id="id30">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED. The
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
 default value is None.</p>
 </dd>
 <dt><strong>interpolate</strong></dt><dd><p>A SymbolicConstant specifying whether to interpolate a field read from an output
 database or results file. Possible values are OFF, ON or MIDSIDE_ONLY. The default value
 is OFF.</p>
 </dd>
-<dt><strong>magnitudes</strong></dt><dd><p>A Sequence of Doubles specifying the temperature values when <strong>distributionType**=UNIFORM
-or FIELD. The value of the **magnitudes</strong> argument is a function of the
+<dt><strong>magnitudes</strong></dt><dd><p>A Sequence of Doubles specifying the temperature values when <strong>distributionType</strong> = UNIFORM
+or FIELD. The value of the <strong>magnitudes</strong> argument is a function of the
 <strong>crossSectionDistribution</strong> argument, as shown in the following list:</p>
 <ul class="simple">
-<li><p>If <strong>crossSectionDistribution**=CONSTANT_THROUGH_THICKNESS then **magnitudes</strong> is a Double
+<li><p>If <strong>crossSectionDistribution</strong> = CONSTANT_THROUGH_THICKNESS then <strong>magnitudes</strong> is a Double
 specifying the temperature.</p></li>
-<li><p>If <strong>crossSectionDistribution**=GRADIENTS_THROUGH_SHELL_CS then **magnitudes</strong> is a
+<li><p>If <strong>crossSectionDistribution</strong> = GRADIENTS_THROUGH_SHELL_CS then <strong>magnitudes</strong> is a
 sequence of Doubles specifying the mean value and the gradient in the thickness</p></li>
 </ul>
 <p>direction.
-- If <strong>crossSectionDistribution**=GRADIENTS_THROUGH_BEAM_CS then **magnitudes</strong> is a</p>
+- If <strong>crossSectionDistribution</strong> = GRADIENTS_THROUGH_BEAM_CS then <strong>magnitudes</strong> is a</p>
 <blockquote>
 <div><p>sequence of Doubles specifying the mean value, the gradient in the N1 direction, and the</p>
 </div></blockquote>
 <p>gradient in the N2 direction.
-- If <strong>crossSectionDistribution**=POINTS_THROUGH_SECTION then **magnitudes</strong> is a sequence</p>
+- If <strong>crossSectionDistribution</strong> = POINTS_THROUGH_SECTION then <strong>magnitudes</strong> is a sequence</p>
 <blockquote>
 <div><p>of Doubles specifying the temperature at each point.</p>
 </div></blockquote>
@@ -640,7 +640,7 @@ the axis about which <strong>omega</strong> is defined.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this
 predefined field. The <strong>field</strong> argument applies only when
-<a href="#id31"><span class="problematic" id="id32">**</span></a>distributionType**=FIELD_ANALYTICAL. The default value is an empty string.</p>
+<strong>distributionType</strong> = FIELD_ANALYTICAL. The default value is an empty string.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying whether the load is uniform. Possible values are MAGNITUDE
 and FIELD_ANALYTICAL. The default value is MAGNITUDE.</p>
@@ -1044,14 +1044,14 @@ predefined field. The <strong>field</strong> argument applies only when
 hardening models. The default value is an empty sequence.</p>
 </dd>
 <dt><strong>sectPtNum</strong></dt><dd><p>A sequence of Ints specifying section point numbers. This argument is valid only when
-<a href="#id33"><span class="problematic" id="id34">**</span></a>definition**=SECTION_PTS.</p>
+<strong>definition</strong> = SECTION_PTS.</p>
 </dd>
 <dt><strong>definition</strong></dt><dd><p>A SymbolicConstant specifying different types of kinematic hardening. Possible values
 are KINEMATIC_HARDENING, CRUSHABLE_FOAM, REBAR, SECTION_PTS, and USER_DEFINED. The
 default value is KINEMATIC_HARDENING.</p>
 </dd>
 <dt><strong>rebarLayerNames</strong></dt><dd><p>A sequence of Strings specifying rebar layer names. This argument is valid only when
-<a href="#id35"><span class="problematic" id="id36">**</span></a>definition**=REBAR.</p>
+<strong>definition</strong> = REBAR.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying whether the load is uniform. Possible values are MAGNITUDE
 and ANALYTICAL_FIELD. The default value is MAGNITUDE.</p>
@@ -1115,16 +1115,16 @@ The MaterialAssignment object is derived from the PredefinedField object.</p>
 discrete fields. The default value is OFF.</p>
 </dd>
 <dt><strong>assignmentList</strong></dt><dd><p>A sequence of tuples specifying the uniform volume fractions to be assigned. This
-argument is valid only when <strong>useFields**=FALSE. Each tuple contains two entries:A Region
+argument is valid only when <strong>useFields</strong> = FALSE. Each tuple contains two entries:A Region
 object.A tuple of Floats specifying the uniform volume fraction values. The length of
 the tuple must match the number of material instance names specified in the Eulerain
-section assigned to part instances specified by **instanceList</strong>.</p>
+section assigned to part instances specified by <strong>instanceList</strong>.</p>
 </dd>
 <dt><strong>fieldList</strong></dt><dd><p>A sequence of tuples specifying the discrete volume fractions to be assigned. This
-argument is valid only when <strong>useFields**=TRUE. Each tuple contains two entries:A Region
+argument is valid only when <strong>useFields</strong> = TRUE. Each tuple contains two entries:A Region
 object.A tuple of Strings specifying Discrete Field names. The length of the tuple must
 match the number of material instance names specified in the Eulerain section assigned
-to part instances specified by **instanceList</strong>.</p>
+to part instances specified by <strong>instanceList</strong>.</p>
 </dd>
 <dt><strong>colorList</strong></dt><dd><p>A sequence of three Ints specifying colors used to display the material instance
 assignments. This is a sequence of R,G,B colors, where the values are represented by
@@ -1248,7 +1248,7 @@ section of the region. Possible values are</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object associated
 with this predefined field. The <strong>field</strong> argument applies only when
-<a href="#id37"><span class="problematic" id="id38">**</span></a>distributionType**=FIELD or <a href="#id39"><span class="problematic" id="id40">**</span></a>distributionType**=DISCRETE_FIELD. The default value is an
+<strong>distributionType</strong> = FIELD or <strong>distributionType</strong> = DISCRETE_FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>amplitude</strong></dt><dd><p>A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -1257,45 +1257,45 @@ value is UNSET.Note:<em>amplitude</em> should be given only if it is valid for t
 step.</p>
 </dd>
 <dt><strong>fileName</strong></dt><dd><p>A String specifying the name of the file from which the temperature values are to be
-read when <a href="#id41"><span class="problematic" id="id42">**</span></a>distributionType**=FROM_FILE or <a href="#id43"><span class="problematic" id="id44">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED.</p>
+read when <strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED.</p>
 </dd>
 <dt><strong>beginStep</strong></dt><dd><p>An Int specifying the first step from which temperature values are to be read or the
 SymbolicConstant FIRST_STEP or LAST_STEP. This argument is valid only when
-<a href="#id45"><span class="problematic" id="id46">**</span></a>distributionType**=FROM_FILE or <a href="#id47"><span class="problematic" id="id48">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED. The
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
 default value is None.</p>
 </dd>
 <dt><strong>beginIncrement</strong></dt><dd><p>An Int specifying the first increment of the step set in <strong>beginStep</strong> or the
 SymbolicConstants STEP_START or STEP_END. This argument is valid only when
-<a href="#id49"><span class="problematic" id="id50">**</span></a>distributionType**=FROM_FILE or <a href="#id51"><span class="problematic" id="id52">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED. The
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
 default value is None.</p>
 </dd>
 <dt><strong>endStep</strong></dt><dd><p>An Int specifying the last step from which temperature values are to be read or the
 SymbolicConstants FIRST_STEP and LAST_STEP. This argument is valid only when
-<a href="#id53"><span class="problematic" id="id54">**</span></a>distributionType**=FROM_FILE or <a href="#id55"><span class="problematic" id="id56">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED. The
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
 default value is None.</p>
 </dd>
 <dt><strong>endIncrement</strong></dt><dd><p>An Int specifying the last increment of the step set in <strong>endStep</strong> or the
 SymbolicConstants STEP_START and STEP_END. This argument is valid only when
-<a href="#id57"><span class="problematic" id="id58">**</span></a>distributionType**=FROM_FILE or <a href="#id59"><span class="problematic" id="id60">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED. The
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
 default value is None.</p>
 </dd>
 <dt><strong>interpolate</strong></dt><dd><p>A SymbolicConstant specifying whether to interpolate a field read from an output
 database or results file. Possible values are OFF, ON or MIDSIDE_ONLY. The default value
 is OFF.</p>
 </dd>
-<dt><strong>magnitudes</strong></dt><dd><p>A Sequence of Doubles specifying the temperature values when <strong>distributionType**=UNIFORM
-or FIELD. The value of the **magnitudes</strong> argument is a function of the
+<dt><strong>magnitudes</strong></dt><dd><p>A Sequence of Doubles specifying the temperature values when <strong>distributionType</strong> = UNIFORM
+or FIELD. The value of the <strong>magnitudes</strong> argument is a function of the
 <strong>crossSectionDistribution</strong> argument, as shown in the following list:</p>
 <ul class="simple">
-<li><p>If <strong>crossSectionDistribution**=CONSTANT_THROUGH_THICKNESS then **magnitudes</strong> is a Double
+<li><p>If <strong>crossSectionDistribution</strong> = CONSTANT_THROUGH_THICKNESS then <strong>magnitudes</strong> is a Double
 specifying the temperature.</p></li>
-<li><p>If <strong>crossSectionDistribution**=GRADIENTS_THROUGH_SHELL_CS then **magnitudes</strong> is a
+<li><p>If <strong>crossSectionDistribution</strong> = GRADIENTS_THROUGH_SHELL_CS then <strong>magnitudes</strong> is a
 sequence of Doubles specifying the mean value and the gradient in the thickness
 direction.</p></li>
-<li><p>If <strong>crossSectionDistribution**=GRADIENTS_THROUGH_BEAM_CS then **magnitudes</strong> is a
+<li><p>If <strong>crossSectionDistribution</strong> = GRADIENTS_THROUGH_BEAM_CS then <strong>magnitudes</strong> is a
 sequence of Doubles specifying the mean value, the gradient in the N1 direction, and the
 gradient in the N2 direction.</p></li>
-<li><p>If <strong>crossSectionDistribution**=POINTS_THROUGH_SECTION then **magnitudes</strong> is a sequence
+<li><p>If <strong>crossSectionDistribution</strong> = POINTS_THROUGH_SECTION then <strong>magnitudes</strong> is a sequence
 of Doubles specifying the temperature at each point.</p></li>
 </ul>
 </dd>
@@ -1324,7 +1324,7 @@ specified step.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object associated
 with this predefined field. The <strong>field</strong> argument applies only when
-<a href="#id61"><span class="problematic" id="id62">**</span></a>distributionType**=FIELD or <a href="#id63"><span class="problematic" id="id64">**</span></a>distributionType**=DISCRETE_FIELD. The default value is an
+<strong>distributionType</strong> = FIELD or <strong>distributionType</strong> = DISCRETE_FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>amplitude</strong></dt><dd><p>A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -1333,45 +1333,45 @@ value is UNSET.Note:<em>amplitude</em> should be given only if it is valid for t
 step.</p>
 </dd>
 <dt><strong>fileName</strong></dt><dd><p>A String specifying the name of the file from which the temperature values are to be
-read when <a href="#id65"><span class="problematic" id="id66">**</span></a>distributionType**=FROM_FILE or <a href="#id67"><span class="problematic" id="id68">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED.</p>
+read when <strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED.</p>
 </dd>
 <dt><strong>beginStep</strong></dt><dd><p>An Int specifying the first step from which temperature values are to be read or the
 SymbolicConstant FIRST_STEP or LAST_STEP. This argument is valid only when
-<a href="#id69"><span class="problematic" id="id70">**</span></a>distributionType**=FROM_FILE or <a href="#id71"><span class="problematic" id="id72">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED. The
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
 default value is None.</p>
 </dd>
 <dt><strong>beginIncrement</strong></dt><dd><p>An Int specifying the first increment of the step set in <strong>beginStep</strong> or the
 SymbolicConstants STEP_START or STEP_END. This argument is valid only when
-<a href="#id73"><span class="problematic" id="id74">**</span></a>distributionType**=FROM_FILE or <a href="#id75"><span class="problematic" id="id76">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED. The
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
 default value is None.</p>
 </dd>
 <dt><strong>endStep</strong></dt><dd><p>An Int specifying the last step from which temperature values are to be read or the
 SymbolicConstants FIRST_STEP and LAST_STEP. This argument is valid only when
-<a href="#id77"><span class="problematic" id="id78">**</span></a>distributionType**=FROM_FILE or <a href="#id79"><span class="problematic" id="id80">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED. The
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
 default value is None.</p>
 </dd>
 <dt><strong>endIncrement</strong></dt><dd><p>An Int specifying the last increment of the step set in <strong>endStep</strong> or the
 SymbolicConstants STEP_START and STEP_END. This argument is valid only when
-<a href="#id81"><span class="problematic" id="id82">**</span></a>distributionType**=FROM_FILE or <a href="#id83"><span class="problematic" id="id84">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED. The
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
 default value is None.</p>
 </dd>
 <dt><strong>interpolate</strong></dt><dd><p>A SymbolicConstant specifying whether to interpolate a field read from an output
 database or results file. Possible values are OFF, ON or MIDSIDE_ONLY. The default value
 is OFF.</p>
 </dd>
-<dt><strong>magnitudes</strong></dt><dd><p>A Sequence of Doubles specifying the temperature values when <strong>distributionType**=UNIFORM
-or FIELD. The value of the **magnitudes</strong> argument is a function of the
+<dt><strong>magnitudes</strong></dt><dd><p>A Sequence of Doubles specifying the temperature values when <strong>distributionType</strong> = UNIFORM
+or FIELD. The value of the <strong>magnitudes</strong> argument is a function of the
 <strong>crossSectionDistribution</strong> argument, as shown in the following list:</p>
 <ul class="simple">
-<li><p>If <strong>crossSectionDistribution**=CONSTANT_THROUGH_THICKNESS then **magnitudes</strong> is a Double
+<li><p>If <strong>crossSectionDistribution</strong> = CONSTANT_THROUGH_THICKNESS then <strong>magnitudes</strong> is a Double
 specifying the temperature.</p></li>
-<li><p>If <strong>crossSectionDistribution**=GRADIENTS_THROUGH_SHELL_CS then **magnitudes</strong> is a
+<li><p>If <strong>crossSectionDistribution</strong> = GRADIENTS_THROUGH_SHELL_CS then <strong>magnitudes</strong> is a
 sequence of Doubles specifying the mean value and the gradient in the thickness
 direction.</p></li>
-<li><p>If <strong>crossSectionDistribution**=GRADIENTS_THROUGH_BEAM_CS then **magnitudes</strong> is a
+<li><p>If <strong>crossSectionDistribution</strong> = GRADIENTS_THROUGH_BEAM_CS then <strong>magnitudes</strong> is a
 sequence of Doubles specifying the mean value, the gradient in the N1 direction, and the
 gradient in the N2 direction.</p></li>
-<li><p>If <strong>crossSectionDistribution**=POINTS_THROUGH_SECTION then **magnitudes</strong> is a sequence
+<li><p>If <strong>crossSectionDistribution</strong> = POINTS_THROUGH_SECTION then <strong>magnitudes</strong> is a sequence
 of Doubles specifying the temperature at each point.</p></li>
 </ul>
 </dd>
@@ -1614,7 +1614,7 @@ The Velocity object is derived from the PredefinedField object.</p>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this
 predefined field. The <strong>field</strong> argument applies only when
-<a href="#id85"><span class="problematic" id="id86">**</span></a>distributionType**=FIELD_ANALYTICAL. The default value is an empty string.</p>
+<strong>distributionType</strong> = FIELD_ANALYTICAL. The default value is an empty string.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying whether the load is uniform. Possible values are MAGNITUDE
 and FIELD_ANALYTICAL. The default value is MAGNITUDE.</p>

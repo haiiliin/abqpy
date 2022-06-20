@@ -353,9 +353,9 @@ local machine. The default value is OFF.</p>
 </dd>
 <dt class="field-odd">Raises</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">Remote</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">queue</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">host</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">set</span></code></dt><dd><p>If <strong>fileCopy**=ON and **hostName</strong> is empty.</p>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">Remote</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">queue</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">host</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">set</span></code></dt><dd><p>If <strong>fileCopy</strong> = ON and <strong>hostName</strong> is empty.</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">Directory</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">in</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">which</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">to</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">run</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">job</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">on</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">remote</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">computer</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">set</span></code></dt><dd><p>If <strong>fileCopy**=ON and **directory</strong> is empty.</p>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">Directory</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">in</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">which</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">to</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">run</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">job</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">on</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">remote</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">computer</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">set</span></code></dt><dd><p>If <strong>fileCopy</strong> = ON and <strong>directory</strong> is empty.</p>
 </dd>
 </dl>
 </dd>
@@ -775,7 +775,7 @@ RUNNING, ABORTED, TERMINATED, COMPLETED, CHECK_RUNNING, and CHECK_COMPLETED.If t
 <dd class="field-odd"><dl class="simple">
 <dt><strong>type</strong></dt><dd><p>A SymbolicConstant specifying the type of job. Possible values are ANALYSIS,
 SYNTAXCHECK, and RECOVER. The default value is ANALYSIS.For theJobFromInputFile object,
-<a href="#id2"><span class="problematic" id="id3">**</span></a>type**=RESTART is not currently supported.</p>
+<strong>type</strong> = RESTART is not currently supported.</p>
 </dd>
 <dt><strong>queue</strong></dt><dd><p>A String specifying the name of the queue to which to submit the job. The default value
 is an empty string.Note: You can use the <strong>queue</strong> argument when creating a Job object on
@@ -822,7 +822,7 @@ database. Possible values are SINGLE and FULL. The default value is SINGLE.</p>
 Possible values are LOOP and DOMAIN. The default value is LOOP.</p>
 </dd>
 <dt><strong>numDomains</strong></dt><dd><p>An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
-<strong>parallelizationMethodExplicit**=DOMAIN, **numDomains</strong> must be a multiple of <strong>numCpus</strong>.
+<strong>parallelizationMethodExplicit</strong> = DOMAIN, <strong>numDomains</strong> must be a multiple of <strong>numCpus</strong>.
 The default value is 1.</p>
 </dd>
 <dt><strong>activateLoadBalancing</strong></dt><dd><p>A Boolean specifying whether to activate dyanmic load balancing for jobs running on
@@ -1179,9 +1179,9 @@ process. The default value is 15.</p>
 </dd>
 <dt><strong>dataSaveFrequency</strong></dt><dd><p>An Enum specifying whether Abaqus should save every iteration file in the optimization
 process or a selection of iteration files saved at a user-specified frequency. If you
-set <strong>dataSaveFrequency**=OPT_DATASAVE_EVERY_CYCLE, Abaqus saves every iteration file; if
-you set **dataSaveFrequency**=OPT_DATASAVE_SPECIFY_CYCLE, Abaqus saves iteration files
-according to the frequency defined by the **saveEvery</strong> parameter. The default value is
+set <strong>dataSaveFrequency</strong> = OPT_DATASAVE_EVERY_CYCLE, Abaqus saves every iteration file; if
+you set <strong>dataSaveFrequency</strong> = OPT_DATASAVE_SPECIFY_CYCLE, Abaqus saves iteration files
+according to the frequency defined by the <strong>saveEvery</strong> parameter. The default value is
 OPT_DATASAVE_SPECIFY_CYCLE.</p>
 </dd>
 <dt><strong>saveInitial</strong></dt><dd><p>A Boolean specifying whether the initial cycle should be saved when <strong>dataSaveFrequency</strong>
@@ -1195,7 +1195,7 @@ OPT_DATASAVE_SPECIFY_CYCLE. The default value is True.</p>
 </dd>
 <dt><strong>saveEvery</strong></dt><dd><p>An Int specifying every nth cycle iterations to be saved when <strong>dataSaveFrequency</strong> is
 OPT_DATASAVE_SPECIFY_CYCLE. Abaqus saves file iterations for every nth iteration after
-iteration 1; if you set <a href="#id4"><span class="problematic" id="id5">**</span></a>saveEvery**=3, Abaqus saves file iterations for cycles 1, 4, 7,
+iteration 1; if you set <strong>saveEvery</strong> = 3, Abaqus saves file iterations for cycles 1, 4, 7,
 and so on. The default value is None.</p>
 </dd>
 </dl>

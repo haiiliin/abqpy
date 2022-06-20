@@ -455,29 +455,29 @@ values are TABULAR and NONREFLECTING. The default value is TABULAR.</p>
 </dd>
 <dt><strong>nonreflectingType</strong></dt><dd><p>A SymbolicConstant specifying the type of nonreflecting geometry to be defined. Possible
 values are PLANE, IMPROVED, CIRCULAR, SPHERICAL, ELLIPTICAL, and PROLATE. The default
-value is PLANE.This argument is valid only when <a href="#id1"><span class="problematic" id="id2">**</span></a>definition**=NONREFLECTING.</p>
+value is PLANE.This argument is valid only when <strong>definition</strong> = NONREFLECTING.</p>
 </dd>
 <dt><strong>radius</strong></dt><dd><p>A Float specifying the radius of the circle or sphere defining the boundary surface. The
-default value is 1.0.This argument is valid only when <a href="#id3"><span class="problematic" id="id4">**</span></a>definition**=NONREFLECTING, and
-<a href="#id5"><span class="problematic" id="id6">**</span></a>nonreflectingType**=CIRCULAR or SPHERICAL.</p>
+default value is 1.0.This argument is valid only when <strong>definition</strong> = NONREFLECTING, and
+<strong>nonreflectingType</strong> = CIRCULAR or SPHERICAL.</p>
 </dd>
 <dt><strong>semimajorAxis</strong></dt><dd><p>A Float specifying the semimajor axis length of the ellipse or prolate spheroid defining
 the boundary surface. The default value is 1.0.This argument is valid only when
-<a href="#id7"><span class="problematic" id="id8">**</span></a>definition**=NONREFLECTING, and <a href="#id9"><span class="problematic" id="id10">**</span></a>nonreflectingType**=ELLIPTICAL or PROLATE.</p>
+<strong>definition</strong> = NONREFLECTING, and <strong>nonreflectingType</strong> = ELLIPTICAL or PROLATE.</p>
 </dd>
 <dt><strong>eccentricity</strong></dt><dd><p>A Float specifying the eccentricity of the ellipse or prolate spheroid defining the
 boundary surface. The default value is 0.0.This argument is valid only when
-<a href="#id11"><span class="problematic" id="id12">**</span></a>definition**=NONREFLECTING, and <a href="#id13"><span class="problematic" id="id14">**</span></a>nonreflectingType**=ELLIPTICAL or PROLATE.</p>
+<strong>definition</strong> = NONREFLECTING, and <strong>nonreflectingType</strong> = ELLIPTICAL or PROLATE.</p>
 </dd>
 <dt><strong>centerCoordinates</strong></dt><dd><p>A sequence of three Floats specifying the X, Y, and Z coordinates of the center of the
 ellipse or prolate spheroid defining the boundary surface. The default value is (0, 0,
-0).This argument is valid only when <a href="#id15"><span class="problematic" id="id16">**</span></a>definition**=NONREFLECTING, and
-<a href="#id17"><span class="problematic" id="id18">**</span></a>nonreflectingType**=ELLIPTICAL or PROLATE.</p>
+0).This argument is valid only when <strong>definition</strong> = NONREFLECTING, and
+<strong>nonreflectingType</strong> = ELLIPTICAL or PROLATE.</p>
 </dd>
 <dt><strong>directionCosine</strong></dt><dd><p>A sequence of three Floats specifying the X, Y, and Z components of the direction cosine
 of the major axis of the ellipse or prolate spheroid defining the boundary surface. The
-default value is (0, 0, 1).This argument is valid only when <a href="#id19"><span class="problematic" id="id20">**</span></a>definition**=NONREFLECTING,
-and <a href="#id21"><span class="problematic" id="id22">**</span></a>nonreflectingType**=ELLIPTICAL or PROLATE.</p>
+default value is (0, 0, 1).This argument is valid only when <strong>definition</strong> = NONREFLECTING,
+and <strong>nonreflectingType</strong> = ELLIPTICAL or PROLATE.</p>
 </dd>
 </dl>
 </dd>
@@ -507,9 +507,9 @@ and <a href="#id21"><span class="problematic" id="id22">**</span></a>nonreflecti
 are IMPEDANCE and ADMITTANCE.</p>
 </dd>
 <dt><strong>table</strong></dt><dd><p>A sequence of sequences of Floats specifying acoustic impedance properties.If
-<a href="#id23"><span class="problematic" id="id24">**</span></a>tableType**=IMPEDANCE, each sequence of the table data specifies:The real part of the
+<strong>tableType</strong> = IMPEDANCE, each sequence of the table data specifies:The real part of the
 complex impedance.The imaginary part of the complex impedance.Frequency, if the data
-depend on frequency.If <a href="#id25"><span class="problematic" id="id26">**</span></a>tableType**=ADMITTANCE, each sequence of the table data
+depend on frequency.If <strong>tableType</strong> = ADMITTANCE, each sequence of the table data
 specifies:The real part of the complex admittance.The imaginary part of the complex
 admittance.Frequency, if the data depend on frequency.</p>
 </dd>
@@ -623,7 +623,7 @@ being specified.</p>
 </dd>
 <dt><strong>surfaceEmissivities</strong></dt><dd><p>A sequence of Strings specifying the names of the Cavity Radiation properties containing
 the surface emissivity data. One name per specified surface. The emissivity data is
-ignored when <a href="#id27"><span class="problematic" id="id28">**</span></a>surfaceReflection**=OFF.</p>
+ignored when <strong>surfaceReflection</strong> = OFF.</p>
 </dd>
 <dt><strong>ambientTemp</strong></dt><dd><p>None or a Float specifying the reference ambient temperature value, θ0θ0. Specifying a
 value indicates an open cavity. The default value is None.</p>
@@ -633,12 +633,12 @@ calculations. Possible values are BLOCKING_ALL, NO_BLOCKING, and PARTIAL_BLOCKIN
 default value is BLOCKING_ALL.</p>
 </dd>
 <dt><strong>blockingSurfaces</strong></dt><dd><p>A RegionArray object specifying the surfaces that provide blocking inside the cavity.
-This argument applies only when <a href="#id29"><span class="problematic" id="id30">**</span></a>blocking**=PARTIAL_BLOCKING.</p>
+This argument applies only when <strong>blocking</strong> = PARTIAL_BLOCKING.</p>
 </dd>
 <dt><strong>rangeOfView</strong></dt><dd><p>None or a Float specifying the maximum distance between surface facets at which
 viewfactors are calculated. More distant facets are deemed too far apart to exchange
 significant amounts of heat through radiation effects, and the viewfactors between these
-facets are assumed to be zero. If <a href="#id31"><span class="problematic" id="id32">**</span></a>rangeOfView**=None, there is no upper limit. The
+facets are assumed to be zero. If <strong>rangeOfView</strong> = None, there is no upper limit. The
 default value is None.</p>
 </dd>
 <dt><strong>surfaceReflection</strong></dt><dd><p>A Boolean specifying whether heat reflections are to be included in the cavity radiation
@@ -661,17 +661,17 @@ approximation is used for viewfactor calculations. The default value is 5.0.</p>
 specified for axisymmetric models. The default value is OFF.</p>
 </dd>
 <dt><strong>cyclicImages</strong></dt><dd><p>An Int specifying the number of cyclically similar images that compose the cavity formed
-as a result of this symmetry. This argument applies only when <a href="#id33"><span class="problematic" id="id34">**</span></a>cyclicSymmetry**=ON. The
+as a result of this symmetry. This argument applies only when <strong>cyclicSymmetry</strong> = ON. The
 default value is 2.</p>
 </dd>
 <dt><strong>cyclicRotPt</strong></dt><dd><p>A ModelDot object specifying the rotation axis point. This argument applies only when
-<a href="#id35"><span class="problematic" id="id36">**</span></a>cyclicSymmetry**=ON.</p>
+<strong>cyclicSymmetry</strong> = ON.</p>
 </dd>
 <dt><strong>cyclicRotEndPt</strong></dt><dd><p>A ModelDot object specifying the rotation axis end point. This argument applies only for
-three-dimensional models, and only when <a href="#id37"><span class="problematic" id="id38">**</span></a>cyclicSymmetry**=ON.</p>
+three-dimensional models, and only when <strong>cyclicSymmetry</strong> = ON.</p>
 </dd>
 <dt><strong>cyclicSymPt</strong></dt><dd><p>A ModelDot object specifying the symmetry axis end point. This argument applies only
-when <a href="#id39"><span class="problematic" id="id40">**</span></a>cyclicSymmetry**=ON.</p>
+when <strong>cyclicSymmetry</strong> = ON.</p>
 </dd>
 <dt><strong>periodicSymmetries</strong></dt><dd><p>An Int specifying the number of periodic symmetries that will be applied. The default
 value is 0.</p>
@@ -839,10 +839,10 @@ Abaqus/Explicit analysis.</p>
 </dd>
 <dt><strong>interactionProperty</strong></dt><dd><p>A String specifying the name of the FilmConditionProp object associated with this
 interaction. The <strong>interactionProperty</strong> argument applies only when
-<a href="#id41"><span class="problematic" id="id42">**</span></a>definition**=PROPERTY_REF. The default value is an empty string.</p>
+<strong>definition</strong> = PROPERTY_REF. The default value is an empty string.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this
-interaction. The <strong>field</strong> argument applies only when <a href="#id43"><span class="problematic" id="id44">**</span></a>definition**=FIELD. The default
+interaction. The <strong>field</strong> argument applies only when <strong>definition</strong> = FIELD. The default
 value is an empty string.</p>
 </dd>
 <dt><strong>sinkTemperature</strong></dt><dd><p>A Float specifying the reference sink temperature, θ0θ0. The default value is 0.0.</p>
@@ -855,7 +855,7 @@ Abaqus/Explicit analysis to specify that the reference sink temperature is appli
 throughout the step.</p>
 </dd>
 <dt><strong>filmCoeff</strong></dt><dd><p>A Float specifying the reference film coefficient value, hh. The <strong>filmCoeff</strong> argument
-applies when <a href="#id45"><span class="problematic" id="id46">**</span></a>definition**=EMBEDDED_COEFF, <a href="#id47"><span class="problematic" id="id48">**</span></a>definition**=USER_SUB, or <a href="#id49"><span class="problematic" id="id50">**</span></a>definition**=FIELD.
+applies when <strong>definition</strong> = EMBEDDED_COEFF, <strong>definition</strong> = USER_SUB, or <strong>definition</strong> = FIELD.
 The default value is 0.0.</p>
 </dd>
 <dt><strong>filmCoeffAmplitude</strong></dt><dd><p>A String specifying the name of the Amplitude object that gives the variation of the
@@ -867,7 +867,7 @@ throughout the step.</p>
 </dd>
 <dt><strong>sinkFieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object associated
 with the sink temperature. The <strong>sinkFieldName</strong> argument applies only when
-<a href="#id51"><span class="problematic" id="id52">**</span></a>sinkDistributionType**=ANALYTICAL_FIELD or <a href="#id53"><span class="problematic" id="id54">**</span></a>sinkDistributionType**=DISCRETE_FIELD. The
+<strong>sinkDistributionType</strong> = ANALYTICAL_FIELD or <strong>sinkDistributionType</strong> = DISCRETE_FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>sinkDistributionType</strong></dt><dd><p>A SymbolicConstant specifying how the sink temperature is distributed. Possible values
@@ -922,7 +922,7 @@ default value is LAGRANGIAN.Note:<em>explicitRegionType</em> applies only during
 Abaqus/Explicit analysis.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this
-interaction. The <strong>field</strong> argument applies only when <a href="#id55"><span class="problematic" id="id56">**</span></a>distributionType**=ANALYTICAL_FIELD.
+interaction. The <strong>field</strong> argument applies only when <strong>distributionType</strong> = ANALYTICAL_FIELD.
 The default value is an empty string.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the radiation is defined. Possible values are UNIFORM
@@ -1134,7 +1134,7 @@ The default value is 0.</p>
 symmetry to tie it to the main surface. The default value is ON.</p>
 </dd>
 <dt><strong>positionTolerance</strong></dt><dd><p>A Float specifying the position tolerance. The*positionTolerance* argument applies only
-when <a href="#id57"><span class="problematic" id="id58">**</span></a>positionToleranceMethod**=SPECIFY_TOLERANCE. The default value is 0.0.</p>
+when <strong>positionToleranceMethod</strong> = SPECIFY_TOLERANCE. The default value is 0.0.</p>
 </dd>
 <dt><strong>positionToleranceMethod</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the position tolerance.
 Possible values are COMPUTED_TOLERANCE and SPECIFY_TOLERANCE. The default value is
@@ -1200,7 +1200,7 @@ maximum number of increments between global contact searches. Possible values ar
 DEFAULT and SPECIFY. The default value is DEFAULT.</p>
 </dd>
 <dt><strong>globTrkInc</strong></dt><dd><p>An Int specifying the maximum number of increments between global contact searches. The
-<strong>globTrkInc</strong> argument applies only when <a href="#id59"><span class="problematic" id="id60">**</span></a>globTrkChoice**=SPECIFY. The default value is
+<strong>globTrkInc</strong> argument applies only when <strong>globTrkChoice</strong> = SPECIFY. The default value is
 100 for surface-to-surface contact and 4 for self-contact.</p>
 </dd>
 <dt><strong>fastLocalTrk</strong></dt><dd><p>A Boolean specifying whether to use the more computationally efficient local tracking
@@ -1255,7 +1255,7 @@ EMBEDDED_COEFF, PROPERTY_REF, USER_SUB, and FIELD.</p>
 </dd>
 <dt><strong>interactionProperty</strong></dt><dd><p>A String specifying the name of the FilmConditionProp object associated with this
 interaction. The <strong>interactionProperty</strong> argument applies only when
-<a href="#id61"><span class="problematic" id="id62">**</span></a>definition**=PROPERTY_REF. The default value is an empty string.</p>
+<strong>definition</strong> = PROPERTY_REF. The default value is an empty string.</p>
 </dd>
 <dt><strong>sinkTemperature</strong></dt><dd><p>A Float specifying the reference sink temperature, θ0θ0. The default value is 0.0.</p>
 </dd>
@@ -1267,7 +1267,7 @@ string in an Abaqus/Explicit analysis to specify that the reference sink tempera
 applied throughout the step.</p>
 </dd>
 <dt><strong>filmCoeff</strong></dt><dd><p>A Float specifying the reference film coefficient value, hh. The <strong>filmCoeff</strong> argument
-applies when <a href="#id63"><span class="problematic" id="id64">**</span></a>definition**=EMBEDDED_COEFF, <a href="#id65"><span class="problematic" id="id66">**</span></a>definition**=USER_SUB, or <a href="#id67"><span class="problematic" id="id68">**</span></a>definition**=FIELD.
+applies when <strong>definition</strong> = EMBEDDED_COEFF, <strong>definition</strong> = USER_SUB, or <strong>definition</strong> = FIELD.
 The default value is 0.0.</p>
 </dd>
 <dt><strong>filmCoeffAmplitude</strong></dt><dd><p>A String specifying the name of the Amplitude object that gives the variation of the
@@ -1278,12 +1278,12 @@ string in an Abaqus/Explicit analysis to specify that the reference film coeffic
 applied throughout the step.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this
-interaction. The <strong>field</strong> argument applies only when <a href="#id69"><span class="problematic" id="id70">**</span></a>definition**=FIELD. The default
+interaction. The <strong>field</strong> argument applies only when <strong>definition</strong> = FIELD. The default
 value is an empty string.</p>
 </dd>
 <dt><strong>sinkFieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object associated
 with the sink temperature. The <strong>sinkFieldName</strong> argument applies only when
-<a href="#id71"><span class="problematic" id="id72">**</span></a>sinkDistributionType**=ANALYTICAL_FIELD or <a href="#id73"><span class="problematic" id="id74">**</span></a>sinkDistributionType**=DISCRETE_FIELD. The
+<strong>sinkDistributionType</strong> = ANALYTICAL_FIELD or <strong>sinkDistributionType</strong> = DISCRETE_FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>sinkDistributionType</strong></dt><dd><p>A SymbolicConstant specifying how the sink temperature is distributed. Possible values
@@ -1398,30 +1398,30 @@ normals. The default value is ON.</p>
 values are HYDRAULIC and PNEUMATIC. The default value is HYDRAULIC.</p>
 </dd>
 <dt><strong>fluidDensity</strong></dt><dd><p>None or a Float specifying the reference fluid density. This argument is applicable only
-when <a href="#id75"><span class="problematic" id="id76">**</span></a>definition**=HYDRAULIC, and is required in that case. The default value is None.</p>
+when <strong>definition</strong> = HYDRAULIC, and is required in that case. The default value is None.</p>
 </dd>
 <dt><strong>molecularWeight</strong></dt><dd><p>None or a Float specifying the molecular weight of the ideal gas species. This argument
-is applicable only when <a href="#id77"><span class="problematic" id="id78">**</span></a>definition**=PNEUMATIC, and is required in that case. The
+is applicable only when <strong>definition</strong> = PNEUMATIC, and is required in that case. The
 default value is None.</p>
 </dd>
 <dt><strong>useExpansion</strong></dt><dd><p>A Boolean specifying whether thermal expansion coefficients will be defined. This
-argument is applicable only when <a href="#id79"><span class="problematic" id="id80">**</span></a>definition**=HYDRAULIC. The default value is OFF.</p>
+argument is applicable only when <strong>definition</strong> = HYDRAULIC. The default value is OFF.</p>
 </dd>
 <dt><strong>expansionTempDep</strong></dt><dd><p>A Boolean specifying whether the thermal fluid expansion data will have temperature
-dependency. This argument is applicable only when <a href="#id81"><span class="problematic" id="id82">**</span></a>definition**=HYDRAULIC and when
-<a href="#id83"><span class="problematic" id="id84">**</span></a>useExpansion**=True. The default value is OFF.</p>
+dependency. This argument is applicable only when <strong>definition</strong> = HYDRAULIC and when
+<strong>useExpansion</strong> = True. The default value is OFF.</p>
 </dd>
 <dt><strong>expansionDependencies</strong></dt><dd><p>An Int specifying the number of field variable dependencies in the thermal fluid
-expansion data. This argument is applicable only when <a href="#id85"><span class="problematic" id="id86">**</span></a>definition**=HYDRAULIC and when
-<a href="#id87"><span class="problematic" id="id88">**</span></a>useExpansion**=True. The default value is 0.</p>
+expansion data. This argument is applicable only when <strong>definition</strong> = HYDRAULIC and when
+<strong>useExpansion</strong> = True. The default value is 0.</p>
 </dd>
 <dt><strong>referenceTemperature</strong></dt><dd><p>A Float specifying the reference temperature for the coefficient of thermal expansion.
-This argument is applicable only when <strong>definition**=HYDRAULIC, when **useExpansion**=True,
-and when either **expansionTempDep**=True or when **expansionDependencies</strong> is greater than
+This argument is applicable only when <strong>definition</strong> = HYDRAULIC, when <strong>useExpansion</strong> = True,
+and when either <strong>expansionTempDep</strong> = True or when <strong>expansionDependencies</strong> is greater than
 0. The default value is 0.0.</p>
 </dd>
 <dt><strong>expansionTable</strong></dt><dd><p>A sequence of sequences of Floats specifying the thermal expansion coefficients. This
-argument is applicable only when <a href="#id89"><span class="problematic" id="id90">**</span></a>definition**=HYDRAULIC and when <a href="#id91"><span class="problematic" id="id92">**</span></a>useExpansion**=True.
+argument is applicable only when <strong>definition</strong> = HYDRAULIC and when <strong>useExpansion</strong> = True.
 Each sequence contains the following data:</p>
 <ul class="simple">
 <li><p>The mean coefficient of thermal expansion.</p></li>
@@ -1432,18 +1432,18 @@ Each sequence contains the following data:</p>
 </ul>
 </dd>
 <dt><strong>useBulkModulus</strong></dt><dd><p>A Boolean specifying whether fluid bulk modulus values will be defined. This argument is
-applicable only when <a href="#id93"><span class="problematic" id="id94">**</span></a>definition**=HYDRAULIC. The default value is OFF.</p>
+applicable only when <strong>definition</strong> = HYDRAULIC. The default value is OFF.</p>
 </dd>
 <dt><strong>bulkModulusTempDep</strong></dt><dd><p>A Boolean specifying whether the fluid bulk modulus data will have temperature
-dependency. This argument is applicable only when <a href="#id95"><span class="problematic" id="id96">**</span></a>definition**=HYDRAULIC and when
-<a href="#id97"><span class="problematic" id="id98">**</span></a>useBulkModulus**=True. The default value is OFF.</p>
+dependency. This argument is applicable only when <strong>definition</strong> = HYDRAULIC and when
+<strong>useBulkModulus</strong> = True. The default value is OFF.</p>
 </dd>
 <dt><strong>bulkModulusDependencies</strong></dt><dd><p>An Int specifying the number of field variable dependencies in the fluid bulk modulus
-data. This argument is applicable only when <a href="#id99"><span class="problematic" id="id100">**</span></a>definition**=HYDRAULIC and when
-<a href="#id101"><span class="problematic" id="id102">**</span></a>useBulkModulus**=True. The default value is 0.</p>
+data. This argument is applicable only when <strong>definition</strong> = HYDRAULIC and when
+<strong>useBulkModulus</strong> = True. The default value is 0.</p>
 </dd>
 <dt><strong>bulkModulusTable</strong></dt><dd><p>A sequence of sequences of Floats specifying the fluid bulk modulus values. This
-argument is applicable only when <a href="#id103"><span class="problematic" id="id104">**</span></a>definition**=HYDRAULIC and when <a href="#id105"><span class="problematic" id="id106">**</span></a>useBulkModulus**=True.
+argument is applicable only when <strong>definition</strong> = HYDRAULIC and when <strong>useBulkModulus</strong> = True.
 Each sequence contains the following data:</p>
 <ul class="simple">
 <li><p>The fluid bulk modulus.</p></li>
@@ -1454,22 +1454,22 @@ Each sequence contains the following data:</p>
 </ul>
 </dd>
 <dt><strong>useCapacity</strong></dt><dd><p>A Boolean specifying whether molar heat capacity values will be defined. This argument
-is applicable only when <a href="#id107"><span class="problematic" id="id108">**</span></a>definition**=PNEUMATIC. The default value is OFF.</p>
+is applicable only when <strong>definition</strong> = PNEUMATIC. The default value is OFF.</p>
 </dd>
 <dt><strong>capacityType</strong></dt><dd><p>A SymbolicConstant specifying the method to define the molar heat capacity. Possible
 values are POLYNOMIAL and TABULAR. The default value is POLYNOMIAL.</p>
 </dd>
 <dt><strong>capacityTempDep</strong></dt><dd><p>A Boolean specifying whether the molar heat capacity data will have temperature
-dependency. This argument is applicable only when <a href="#id109"><span class="problematic" id="id110">**</span></a>definition**=PNEUMATIC, when
-<a href="#id111"><span class="problematic" id="id112">**</span></a>useCapacity**=True, and when <a href="#id113"><span class="problematic" id="id114">**</span></a>capacityType**=TABULAR. The default value is OFF.</p>
+dependency. This argument is applicable only when <strong>definition</strong> = PNEUMATIC, when
+<strong>useCapacity</strong> = True, and when <strong>capacityType</strong> = TABULAR. The default value is OFF.</p>
 </dd>
 <dt><strong>capacityDependencies</strong></dt><dd><p>An Int specifying the number of field variable dependencies in the molar heat capacity
-data. This argument is applicable only when <a href="#id115"><span class="problematic" id="id116">**</span></a>definition**=PNEUMATIC, when
-<a href="#id117"><span class="problematic" id="id118">**</span></a>useCapacity**=True, and when <a href="#id119"><span class="problematic" id="id120">**</span></a>capacityType**=TABULAR. The default value is 0.</p>
+data. This argument is applicable only when <strong>definition</strong> = PNEUMATIC, when
+<strong>useCapacity</strong> = True, and when <strong>capacityType</strong> = TABULAR. The default value is 0.</p>
 </dd>
 <dt><strong>capacityTable</strong></dt><dd><p>A sequence of sequences of Floats specifying the molar heat capacity values in the form
 of a polynomial expression. This argument is applicable only when
-<a href="#id121"><span class="problematic" id="id122">**</span></a>definition**=PNEUMATIC, when <a href="#id123"><span class="problematic" id="id124">**</span></a>useCapacity**=True, and when <a href="#id125"><span class="problematic" id="id126">**</span></a>capacityType**=POLYNOMIAL. In
+<strong>definition</strong> = PNEUMATIC, when <strong>useCapacity</strong> = True, and when <strong>capacityType</strong> = POLYNOMIAL. In
 this form, only one sequence is specified and that sequence contains the following data:</p>
 <ul class="simple">
 <li><p>The first molar heat capacity coefficient.</p></li>
@@ -1479,7 +1479,7 @@ this form, only one sequence is specified and that sequence contains the followi
 <li><p>The fifth molar heat capacity coefficient.
 Alternatively, the sequence data may specify the molar heat capacity values at constant
 pressure for an ideal gas species. This argument is applicable only when
-<a href="#id127"><span class="problematic" id="id128">**</span></a>definition**=PNEUMATIC, when <a href="#id129"><span class="problematic" id="id130">**</span></a>useCapacity**=True, and when <a href="#id131"><span class="problematic" id="id132">**</span></a>capacityType**=TABULAR. Each
+<strong>definition</strong> = PNEUMATIC, when <strong>useCapacity</strong> = True, and when <strong>capacityType</strong> = TABULAR. Each
 sequence contains the following data:</p>
 <ul>
 <li><p>The molar heat capacity at constant pressure.</p></li>
@@ -1518,7 +1518,7 @@ sequence contains the following data:</p>
 <dt><strong>createStepName</strong></dt><dd><p>A String specifying the name of the step in which the FluidExchange object is created.</p>
 </dd>
 <dt><strong>firstCavity</strong></dt><dd><p>A String specifying the first FluidCavity object associated with this interaction. This
-will be the only cavity specified if <a href="#id133"><span class="problematic" id="id134">**</span></a>definition**=TO_ENVIRONMENT.</p>
+will be the only cavity specified if <strong>definition</strong> = TO_ENVIRONMENT.</p>
 </dd>
 <dt><strong>interactionProperty</strong></dt><dd><p>A String specifying the FluidExchangeProperty object associated with this interaction.</p>
 </dd>
@@ -1526,7 +1526,7 @@ will be the only cavity specified if <a href="#id133"><span class="problematic" 
 are TO_ENVIRONMENT and BETWEEN_CAVITIES. The default value is TO_ENVIRONMENT.</p>
 </dd>
 <dt><strong>secondCavity</strong></dt><dd><p>A String specifying the second FluidCavity object associated with this interaction. This
-argument is applicable only when <a href="#id135"><span class="problematic" id="id136">**</span></a>definition**=BETWEEN_CAVITIES.</p>
+argument is applicable only when <strong>definition</strong> = BETWEEN_CAVITIES.</p>
 </dd>
 <dt><strong>exchangeArea</strong></dt><dd><p>A Float specifying the effective exchange area. The default value is 1.0.</p>
 </dd>
@@ -1555,7 +1555,7 @@ argument is applicable only when <a href="#id135"><span class="problematic" id="
 <dt><strong>name</strong></dt><dd><p>A String specifying the interaction property repository key.</p>
 </dd>
 <dt><strong>dataTable</strong></dt><dd><p>A sequence of sequences of Floats specifying the viscous and hydrodynamic resistance
-coefficients when <a href="#id137"><span class="problematic" id="id138">**</span></a>definition**=BULK_VISCOSITY. Each sequence contains the following
+coefficients when <strong>definition</strong> = BULK_VISCOSITY. Each sequence contains the following
 data:</p>
 <ul class="simple">
 <li><p>The viscous resistance coefficient.</p></li>
@@ -1567,12 +1567,12 @@ data:</p>
 <li><p>Etc.</p></li>
 </ul>
 <p>Alternatively, the sequence data may specify the mass flow rate. This is applicable only
-when <a href="#id139"><span class="problematic" id="id140">**</span></a>definition**=MASS_FLUX. In this form, only one sequence is specified and that
+when <strong>definition</strong> = MASS_FLUX. In this form, only one sequence is specified and that
 sequence contains the following data:</p>
 <ul class="simple">
 <li><p>The mass flow rate per unit area.
 Alternatively, the sequence data may specify the mass rate leakage. This is applicable
-only when <a href="#id141"><span class="problematic" id="id142">**</span></a>definition**=MASS_RATE_LEAK. Each sequence contains the following data:</p>
+only when <strong>definition</strong> = MASS_RATE_LEAK. Each sequence contains the following data:</p>
 <ul>
 <li><p>The absolute value of the mass flow rate per unit area. (The first tabular value
 entered must always be zero.)</p></li>
@@ -1587,12 +1587,12 @@ always be zero.)</p></li>
 </li>
 </ul>
 <p>Alternatively, the sequence data may specify the volume flow rate. This is applicable
-only when <a href="#id143"><span class="problematic" id="id144">**</span></a>definition**=VOL_FLUX. In this form, only one sequence is specified and that
+only when <strong>definition</strong> = VOL_FLUX. In this form, only one sequence is specified and that
 sequence contains the following data:</p>
 <ul class="simple">
 <li><p>The volumetric flow rate per unit area.
 Alternatively, the sequence data may specify the volume rate leakage. This is applicable
-only when <a href="#id145"><span class="problematic" id="id146">**</span></a>definition**=VOL_RATE_LEAK. Each sequence contains the following data:</p></li>
+only when <strong>definition</strong> = VOL_RATE_LEAK. Each sequence contains the following data:</p></li>
 <li><p>The absolute value of the volumetric flow rate per unit area. (The first tabular value
 entered must always be zero.)</p></li>
 <li><p>The absolute value of the pressure difference. (The first tabular value entered must
@@ -1609,16 +1609,16 @@ Possible values are BULK_VISCOSITY, MASS_FLUX, MASS_RATE_LEAK, VOL_FLUX, and
 VOL_RATE_LEAK. The default value is BULK_VISCOSITY.</p>
 </dd>
 <dt><strong>pressureDependency</strong></dt><dd><p>A Boolean specifying whether the data will have pressure dependency. This argument is
-applicable only when <a href="#id147"><span class="problematic" id="id148">**</span></a>definition**=BULK_VISCOSITY, or when <a href="#id149"><span class="problematic" id="id150">**</span></a>definition**=MASS_RATE_LEAK,
-or when <a href="#id151"><span class="problematic" id="id152">**</span></a>definition**=VOL_RATE_LEAK. The default value is OFF.</p>
+applicable only when <strong>definition</strong> = BULK_VISCOSITY, or when <strong>definition</strong> = MASS_RATE_LEAK,
+or when <strong>definition</strong> = VOL_RATE_LEAK. The default value is OFF.</p>
 </dd>
 <dt><strong>temperatureDependency</strong></dt><dd><p>A Boolean specifying whether the data will have temperature dependency. This argument is
-applicable only when <a href="#id153"><span class="problematic" id="id154">**</span></a>definition**=BULK_VISCOSITY, or when <a href="#id155"><span class="problematic" id="id156">**</span></a>definition**=MASS_RATE_LEAK,
-or when <a href="#id157"><span class="problematic" id="id158">**</span></a>definition**=VOL_RATE_LEAK. The default value is OFF.</p>
+applicable only when <strong>definition</strong> = BULK_VISCOSITY, or when <strong>definition</strong> = MASS_RATE_LEAK,
+or when <strong>definition</strong> = VOL_RATE_LEAK. The default value is OFF.</p>
 </dd>
 <dt><strong>fieldDependencies</strong></dt><dd><p>An Int specifying the number of field variable dependencies in the data. This argument
-is applicable only when <a href="#id159"><span class="problematic" id="id160">**</span></a>definition**=BULK_VISCOSITY, or when
-<a href="#id161"><span class="problematic" id="id162">**</span></a>definition**=MASS_RATE_LEAK, or when <a href="#id163"><span class="problematic" id="id164">**</span></a>definition**=VOL_RATE_LEAK. The default value is 0.</p>
+is applicable only when <strong>definition</strong> = BULK_VISCOSITY, or when
+<strong>definition</strong> = MASS_RATE_LEAK, or when <strong>definition</strong> = VOL_RATE_LEAK. The default value is 0.</p>
 </dd>
 </dl>
 </dd>
@@ -1649,7 +1649,7 @@ is applicable only when <a href="#id159"><span class="problematic" id="id160">**
 <dt><strong>sourcePoint</strong></dt><dd><p>A Region object specifying the incident wave source point.</p>
 </dd>
 <dt><strong>standoffPoint</strong></dt><dd><p>A Region object specifying the incident wave standoff point.This argument is not valid
-when <a href="#id165"><span class="problematic" id="id166">**</span></a>definition**=CONWEP.</p>
+when <strong>definition</strong> = CONWEP.</p>
 </dd>
 <dt><strong>surface</strong></dt><dd><p>A Region object specifying the surface defining the incident wave interaction. In
 problems involving fluid/surface boundaries, both the fluid surface and the solid
@@ -1663,31 +1663,31 @@ set to CONWEP. Possible values are PRESSURE, ACCELERATION, UNDEX, and CONWEP. Th
 default value is PRESSURE.</p>
 </dd>
 <dt><strong>amplitude</strong></dt><dd><p>A String specifying the name of the Amplitude object that defines the fluid pressure
-time history at the standoff point, if <a href="#id167"><span class="problematic" id="id168">**</span></a>definition**=PRESSURE. If
-<a href="#id169"><span class="problematic" id="id170">**</span></a>definition**=ACCELERATION, then this string specifies the name of the Amplitude object
+time history at the standoff point, if <strong>definition</strong> = PRESSURE. If
+<strong>definition</strong> = ACCELERATION, then this string specifies the name of the Amplitude object
 that defines the fluid particle acceleration time history at the standoff point. This
-member can be specified only if <a href="#id171"><span class="problematic" id="id172">**</span></a>definition**=PRESSURE or ACCELERATION. The default value
+member can be specified only if <strong>definition</strong> = PRESSURE or ACCELERATION. The default value
 is an empty string.</p>
 </dd>
 <dt><strong>imaginaryAmplitude</strong></dt><dd><p>A String specifying the name of the Amplitude object that defines the imaginary
 component of the fluid pressure time history at the standoff point. This member is
-applicable only for linear perturbation steps and if <a href="#id173"><span class="problematic" id="id174">**</span></a>definition**=PRESSURE. The default
+applicable only for linear perturbation steps and if <strong>definition</strong> = PRESSURE. The default
 value is an empty string.</p>
 </dd>
 <dt><strong>surfaceNormal</strong></dt><dd><p>A sequence of three Floats specifying the X, Y, and Z components of the direction cosine
-of the fluid surface normal.This argument is valid only when <a href="#id175"><span class="problematic" id="id176">**</span></a>definition**=UNDEX.</p>
+of the fluid surface normal.This argument is valid only when <strong>definition</strong> = UNDEX.</p>
 </dd>
 <dt><strong>initialDepth</strong></dt><dd><p>None or a Float specifying the initial depth of the UNDEX bubble. The default value is
-None.This argument is valid only when <a href="#id177"><span class="problematic" id="id178">**</span></a>definition**=UNDEX.</p>
+None.This argument is valid only when <strong>definition</strong> = UNDEX.</p>
 </dd>
 <dt><strong>referenceMagnitude</strong></dt><dd><p>A Float specifying the reference magnitude.This argument is not valid when
-<a href="#id179"><span class="problematic" id="id180">**</span></a>definition**=CONWEP.</p>
+<strong>definition</strong> = CONWEP.</p>
 </dd>
 <dt><strong>detonationTime</strong></dt><dd><p>A Float specifying the time of detonation, given in total time.This argument is valid
-only when <a href="#id181"><span class="problematic" id="id182">**</span></a>definition**=CONWEP.</p>
+only when <strong>definition</strong> = CONWEP.</p>
 </dd>
 <dt><strong>magnitudeFactor</strong></dt><dd><p>A Float specifying the magnitude scale factor. The default value is 1.0.This argument is
-valid only when <a href="#id183"><span class="problematic" id="id184">**</span></a>definition**=CONWEP.</p>
+valid only when <strong>definition</strong> = CONWEP.</p>
 </dd>
 </dl>
 </dd>
@@ -1718,115 +1718,115 @@ PLANAR, SPHERICAL, DIFFUSE, AIR_BLAST, and SURFACE_BLAST. The default value is P
 </dd>
 <dt><strong>propagationModel</strong></dt><dd><p>A SymbolicConstant specifying the spherical propagation model. Possible values are
 ACOUSTIC, UNDEX_CHARGE, and GENERALIZED_DECAY. The default value is ACOUSTIC.This
-argument is valid only when <a href="#id185"><span class="problematic" id="id186">**</span></a>definition**=SPHERICAL.</p>
+argument is valid only when <strong>definition</strong> = SPHERICAL.</p>
 </dd>
 <dt><strong>soundSpeed</strong></dt><dd><p>A Float specifying the speed of sound in the fluid.This argument is not valid when
-<a href="#id187"><span class="problematic" id="id188">**</span></a>definition**=AIR_BLAST or when <a href="#id189"><span class="problematic" id="id190">**</span></a>definition**=SURFACE_BLAST.</p>
+<strong>definition</strong> = AIR_BLAST or when <strong>definition</strong> = SURFACE_BLAST.</p>
 </dd>
 <dt><strong>fluidDensity</strong></dt><dd><p>A Float specifying the fluid mass density.This argument is not valid when
-<a href="#id191"><span class="problematic" id="id192">**</span></a>definition**=AIR_BLAST or when <a href="#id193"><span class="problematic" id="id194">**</span></a>definition**=SURFACE_BLAST.</p>
+<strong>definition</strong> = AIR_BLAST or when <strong>definition</strong> = SURFACE_BLAST.</p>
 </dd>
 <dt><strong>specificHeatRatio</strong></dt><dd><p>None or a Float specifying the ratio of specific heats for gas. The default value is
-None.This argument is valid only when <a href="#id195"><span class="problematic" id="id196">**</span></a>definition**=SPHERICAL and
-<a href="#id197"><span class="problematic" id="id198">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>gravity</strong></dt><dd><p>None or a Float specifying the acceleration due to gravity. The default value is
-None.This argument is valid only when <a href="#id199"><span class="problematic" id="id200">**</span></a>definition**=SPHERICAL and
-<a href="#id201"><span class="problematic" id="id202">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>atmosphericPressure</strong></dt><dd><p>None or a Float specifying the atmospheric pressure. The default value is None.This
-argument is valid only when <a href="#id203"><span class="problematic" id="id204">**</span></a>definition**=SPHERICAL and <a href="#id205"><span class="problematic" id="id206">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+argument is valid only when <strong>definition</strong> = SPHERICAL and <strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>dragCoefficient</strong></dt><dd><p>None or a Float specifying the fluid drag coefficient. The default value is None.This
-argument is valid only when <a href="#id207"><span class="problematic" id="id208">**</span></a>definition**=SPHERICAL and <a href="#id209"><span class="problematic" id="id210">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+argument is valid only when <strong>definition</strong> = SPHERICAL and <strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>dragExponent</strong></dt><dd><p>A Float specifying the fluid drag exponent. The default value is 2.0.This argument is
-valid only when <a href="#id211"><span class="problematic" id="id212">**</span></a>definition**=SPHERICAL and <a href="#id213"><span class="problematic" id="id214">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+valid only when <strong>definition</strong> = SPHERICAL and <strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>waveEffects</strong></dt><dd><p>A Boolean specifying whether or not to include wave effects in the fluid and gas. The
-default value is ON.This argument is valid only when <a href="#id215"><span class="problematic" id="id216">**</span></a>definition**=SPHERICAL and
-<a href="#id217"><span class="problematic" id="id218">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+default value is ON.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>chargeDensity</strong></dt><dd><p>None or a Float specifying the density of the charge material. The default value is
-None.This argument is valid only when <a href="#id219"><span class="problematic" id="id220">**</span></a>definition**=SPHERICAL and
-<a href="#id221"><span class="problematic" id="id222">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>chargeMass</strong></dt><dd><p>None or a Float specifying the mass of the charge material. The default value is
-None.This argument is valid only when <a href="#id223"><span class="problematic" id="id224">**</span></a>definition**=SPHERICAL and
-<a href="#id225"><span class="problematic" id="id226">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>constantK1</strong></dt><dd><p>None or a Float specifying the charge material constant K. The default value is
-None.This argument is valid only when <a href="#id227"><span class="problematic" id="id228">**</span></a>definition**=SPHERICAL and
-<a href="#id229"><span class="problematic" id="id230">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>constantK2</strong></dt><dd><p>None or a Float specifying the charge material constant k. The default value is
-None.This argument is valid only when <a href="#id231"><span class="problematic" id="id232">**</span></a>definition**=SPHERICAL and
-<a href="#id233"><span class="problematic" id="id234">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>constantA</strong></dt><dd><p>None or a Float specifying the charge material constant A. The default value is
-None.This argument is valid only when <a href="#id235"><span class="problematic" id="id236">**</span></a>definition**=SPHERICAL and
-<a href="#id237"><span class="problematic" id="id238">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>constantB</strong></dt><dd><p>None or a Float specifying the charge material constant B. The default value is
-None.This argument is valid only when <a href="#id239"><span class="problematic" id="id240">**</span></a>definition**=SPHERICAL and
-<a href="#id241"><span class="problematic" id="id242">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>constantKc</strong></dt><dd><p>None or a Float specifying the charge material constant Kc. The default value is
-None.This argument is valid only when <a href="#id243"><span class="problematic" id="id244">**</span></a>definition**=SPHERICAL and
-<a href="#id245"><span class="problematic" id="id246">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>duration</strong></dt><dd><p>None or a Float specifying the time duration for the bubble simulation. The default
-value is None.This argument is valid only when <a href="#id247"><span class="problematic" id="id248">**</span></a>definition**=SPHERICAL and
-<a href="#id249"><span class="problematic" id="id250">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+value is None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>maximumSteps</strong></dt><dd><p>An Int specifying the maximum number of time steps for the bubble simulation. The
-default value is 1500.This argument is valid only when <a href="#id251"><span class="problematic" id="id252">**</span></a>definition**=SPHERICAL and
-<a href="#id253"><span class="problematic" id="id254">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+default value is 1500.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>relativeStepControl</strong></dt><dd><p>A Float specifying the relative step size control parameter. The default value is
-1×10-11.This argument is valid only when <a href="#id255"><span class="problematic" id="id256">**</span></a>definition**=SPHERICAL and
-<a href="#id257"><span class="problematic" id="id258">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+1×10-11.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>absoluteStepControl</strong></dt><dd><p>A Float specifying the absolute step size control parameter. The default value is
-1×10-11.This argument is valid only when <a href="#id259"><span class="problematic" id="id260">**</span></a>definition**=SPHERICAL and
-<a href="#id261"><span class="problematic" id="id262">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+1×10-11.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>stepControlExponent</strong></dt><dd><p>A Float specifying the step size control exponent. The default value is 0.2.This
-argument is valid only when <a href="#id263"><span class="problematic" id="id264">**</span></a>definition**=SPHERICAL and <a href="#id265"><span class="problematic" id="id266">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+argument is valid only when <strong>definition</strong> = SPHERICAL and <strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>genDecayA</strong></dt><dd><p>A Float specifying the constant A associated with the generalized decay propagation
-model. The default value is 0.0.This argument is valid only when <a href="#id267"><span class="problematic" id="id268">**</span></a>definition**=SPHERICAL
-and <a href="#id269"><span class="problematic" id="id270">**</span></a>propagationModel**=GENERALIZED_DECAY.</p>
+model. The default value is 0.0.This argument is valid only when <strong>definition</strong> = SPHERICAL
+and <strong>propagationModel</strong> = GENERALIZED_DECAY.</p>
 </dd>
 <dt><strong>genDecayB</strong></dt><dd><p>A Float specifying the constant B associated with the generalized decay propagation
-model. The default value is 0.0.This argument is valid only when <a href="#id271"><span class="problematic" id="id272">**</span></a>definition**=SPHERICAL
-and <a href="#id273"><span class="problematic" id="id274">**</span></a>propagationModel**=GENERALIZED_DECAY.</p>
+model. The default value is 0.0.This argument is valid only when <strong>definition</strong> = SPHERICAL
+and <strong>propagationModel</strong> = GENERALIZED_DECAY.</p>
 </dd>
 <dt><strong>genDecayC</strong></dt><dd><p>A Float specifying the constant C associated with the generalized decay propagation
-model. The default value is 0.0.This argument is valid only when <a href="#id275"><span class="problematic" id="id276">**</span></a>definition**=SPHERICAL
-and <a href="#id277"><span class="problematic" id="id278">**</span></a>propagationModel**=GENERALIZED_DECAY.</p>
+model. The default value is 0.0.This argument is valid only when <strong>definition</strong> = SPHERICAL
+and <strong>propagationModel</strong> = GENERALIZED_DECAY.</p>
 </dd>
 <dt><strong>seedNumber</strong></dt><dd><p>An Int specifying the seed number (N) for the diffuse source calculation. N2 sources
-will be used in the simulation.This argument is valid only when <a href="#id279"><span class="problematic" id="id280">**</span></a>definition**=DIFFUSE.</p>
+will be used in the simulation.This argument is valid only when <strong>definition</strong> = DIFFUSE.</p>
 </dd>
 <dt><strong>massTNT</strong></dt><dd><p>A Float specifying the equivalent mass of TNT, in any preferred mass unit.This argument
-is valid only when <a href="#id281"><span class="problematic" id="id282">**</span></a>definition**=AIR_BLAST or <a href="#id283"><span class="problematic" id="id284">**</span></a>definition**=SURFACE_BLAST.</p>
+is valid only when <strong>definition</strong> = AIR_BLAST or <strong>definition</strong> = SURFACE_BLAST.</p>
 </dd>
 <dt><strong>massFactor</strong></dt><dd><p>A Float specifying the multiplication factor to convert from the preferred mass unit to
 kilograms. The default value is 1.0.This argument is valid only when
-<a href="#id285"><span class="problematic" id="id286">**</span></a>definition**=AIR_BLAST or <a href="#id287"><span class="problematic" id="id288">**</span></a>definition**=SURFACE_BLAST.</p>
+<strong>definition</strong> = AIR_BLAST or <strong>definition</strong> = SURFACE_BLAST.</p>
 </dd>
 <dt><strong>lengthFactor</strong></dt><dd><p>A Float specifying the multiplication factor to convert from the analysis length unit to
-meters. The default value is 1.0.This argument is valid only when <a href="#id289"><span class="problematic" id="id290">**</span></a>definition**=AIR_BLAST
-or <a href="#id291"><span class="problematic" id="id292">**</span></a>definition**=SURFACE_BLAST.</p>
+meters. The default value is 1.0.This argument is valid only when <strong>definition</strong> = AIR_BLAST
+or <strong>definition</strong> = SURFACE_BLAST.</p>
 </dd>
 <dt><strong>timeFactor</strong></dt><dd><p>A Float specifying the multiplication factor to convert from the analysis time unit to
 seconds. The default value is 1.0.This argument is valid only when
-<a href="#id293"><span class="problematic" id="id294">**</span></a>definition**=AIR_BLAST or <a href="#id295"><span class="problematic" id="id296">**</span></a>definition**=SURFACE_BLAST.</p>
+<strong>definition</strong> = AIR_BLAST or <strong>definition</strong> = SURFACE_BLAST.</p>
 </dd>
 <dt><strong>pressureFactor</strong></dt><dd><p>A Float specifying the multiplication factor to convert from the analysis pressure unit
 to pascals. The default value is 1.0.This argument is valid only when
-<a href="#id297"><span class="problematic" id="id298">**</span></a>definition**=AIR_BLAST or <a href="#id299"><span class="problematic" id="id300">**</span></a>definition**=SURFACE_BLAST.</p>
+<strong>definition</strong> = AIR_BLAST or <strong>definition</strong> = SURFACE_BLAST.</p>
 </dd>
 </dl>
 </dd>
@@ -1859,17 +1859,17 @@ model change may be required in a subsequent restart analysis (either for elemen
 contact pairs). The default value is OFF.</p>
 </dd>
 <dt><strong>regionType</strong></dt><dd><p>A SymbolicConstant specifying the region selection type. This argument is valid only
-when <a href="#id301"><span class="problematic" id="id302">**</span></a>isRestart**=False. Possible values are GEOMETRY, SKINS, STRINGERS, and ELEMENTS.
+when <strong>isRestart</strong> = False. Possible values are GEOMETRY, SKINS, STRINGERS, and ELEMENTS.
 The default value is GEOMETRY.</p>
 </dd>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the elements to be removed or reactivated. This argument is
-valid only when <a href="#id303"><span class="problematic" id="id304">**</span></a>isRestart**=False.</p>
+valid only when <strong>isRestart</strong> = False.</p>
 </dd>
 <dt><strong>activeInStep</strong></dt><dd><p>A Boolean specifying whether elements are being removed or reactivated. This argument is
-valid only when <a href="#id305"><span class="problematic" id="id306">**</span></a>isRestart**=False. The default value is OFF.</p>
+valid only when <strong>isRestart</strong> = False. The default value is OFF.</p>
 </dd>
 <dt><strong>includeStrain</strong></dt><dd><p>A Boolean specifying whether stress/displacement elements are reactivated with strain.
-This argument is valid only when <a href="#id307"><span class="problematic" id="id308">**</span></a>isRestart**=False and when <a href="#id309"><span class="problematic" id="id310">**</span></a>activeInStep**=True. The
+This argument is valid only when <strong>isRestart</strong> = False and when <strong>activeInStep</strong> = True. The
 default value is OFF.</p>
 </dd>
 </dl>
@@ -1953,11 +1953,11 @@ created.</p>
 <dt><strong>emissivity</strong></dt><dd><p>A Float specifying the emissivity, ϵϵ.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this
-interaction. The <strong>field</strong> argument applies only when <a href="#id311"><span class="problematic" id="id312">**</span></a>distributionType**=ANALYTICAL_FIELD.
+interaction. The <strong>field</strong> argument applies only when <strong>distributionType</strong> = ANALYTICAL_FIELD.
 The default value is an empty string.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the radiation is distributed. This argument applies
-only when <a href="#id313"><span class="problematic" id="id314">**</span></a>radiationType**=AMBIENT. Possible values are UNIFORM and ANALYTICAL_FIELD. The
+only when <strong>radiationType</strong> = AMBIENT. Possible values are UNIFORM and ANALYTICAL_FIELD. The
 default value is UNIFORM.</p>
 </dd>
 <dt><strong>radiationType</strong></dt><dd><p>A SymbolicConstant specifying whether to use the default surface radiation behavior, or
@@ -1965,14 +1965,14 @@ the cavity radiation approximation. Possible values are AMBIENT and CAVITY. The 
 value is AMBIENT.</p>
 </dd>
 <dt><strong>ambientTemperature</strong></dt><dd><p>A Float specifying the reference ambient temperature, θ0θ0. This argument applies only
-when <a href="#id315"><span class="problematic" id="id316">**</span></a>radiationType**=AMBIENT. The default value is 0.0.</p>
+when <strong>radiationType</strong> = AMBIENT. The default value is 0.0.</p>
 </dd>
 <dt><strong>ambientTemperatureAmp</strong></dt><dd><p>A String specifying the name of the Amplitude object that gives the variation of the
 ambient temperature with time.Note:Use None in an Abaqus/Standard analysis to specify
 that the reference ambient temperature is applied immediately at the beginning of the
 step or linearly over the step. Use None in an Abaqus/Explicit analysis to specify that
 the reference ambient temperature is applied throughout the step. This argument applies
-only when <a href="#id317"><span class="problematic" id="id318">**</span></a>radiationType**=AMBIENT.</p>
+only when <strong>radiationType</strong> = AMBIENT.</p>
 </dd>
 </dl>
 </dd>
@@ -2047,10 +2047,10 @@ interaction.</p>
 NODE_TO_SURFACE and SURFACE_TO_SURFACE. The default value is SURFACE_TO_SURFACE.</p>
 </dd>
 <dt><strong>thickness</strong></dt><dd><p>A Boolean specifying whether shell/membrane element thickness is considered. The default
-value is ON.This argument in valid only when <a href="#id319"><span class="problematic" id="id320">**</span></a>enforcement**=SURFACE_TO_SURFACE.</p>
+value is ON.This argument in valid only when <strong>enforcement</strong> = SURFACE_TO_SURFACE.</p>
 </dd>
 <dt><strong>smooth</strong></dt><dd><p>A Float specifying the degree of smoothing used for deformable or rigid main surfaces
-involved when <a href="#id321"><span class="problematic" id="id322">**</span></a>enforcement**=NODE_TO_SURFACE. The value given must lie between 0.0 and
+involved when <strong>enforcement</strong> = NODE_TO_SURFACE. The value given must lie between 0.0 and
 0.5. The default value is 0.2.</p>
 </dd>
 <dt><strong>contactControls</strong></dt><dd><p>A String specifying the name of the ContactControl object associated with this
@@ -2095,13 +2095,13 @@ argument. Possible values are RELATIVE and ABSOLUTE. The default value is RELATI
 surface face dimension. The float values represent percentages (e.g.: 0.001=0.1%). Only
 contact interactions defined with augmented Lagrangian surface behavior will be affected
 by this argument. The default value is 10-3.The <strong>relativePenetrationTolerance</strong> argument
-applies only when <strong>penetrationTolChoice**=RELATIVE. The **relativePenetrationTolerance</strong>
+applies only when <strong>penetrationTolChoice</strong> = RELATIVE. The <strong>relativePenetrationTolerance</strong>
 and <strong>absolutePenetrationTolerance</strong> arguments are mutually exclusive.</p>
 </dd>
 <dt><strong>absolutePenetrationTolerance</strong></dt><dd><p>None or a Float specifying the allowable penetration. Only contact interactions defined
 with augmented Lagrangian surface behavior will be affected by this argument. The
 <strong>absolutePenetrationTolerance</strong> argument applies only when
-<strong>penetrationTolChoice**=ABSOLUTE. The **relativePenetrationTolerance</strong> and
+<strong>penetrationTolChoice</strong> = ABSOLUTE. The <strong>relativePenetrationTolerance</strong> and
 <strong>absolutePenetrationTolerance</strong> arguments are mutually exclusive. The default value is
 None.</p>
 </dd>
@@ -2137,10 +2137,10 @@ default value is NONE.</p>
 </dd>
 <dt><strong>dampFactor</strong></dt><dd><p>A Float specifying the value of the damping factor. This value is multiplied by the
 calculated damping coefficient. The default value is 1.0.This argument is only valid
-when <a href="#id323"><span class="problematic" id="id324">**</span></a>stabilizeChoice**=AUTOMATIC.</p>
+when <strong>stabilizeChoice</strong> = AUTOMATIC.</p>
 </dd>
 <dt><strong>dampCoef</strong></dt><dd><p>A Float specifying the damping coefficient. The default value is 0.0.This argument is
-only valid when <a href="#id325"><span class="problematic" id="id326">**</span></a>stabilizeChoice**=COEFFICIENT.</p>
+only valid when <strong>stabilizeChoice</strong> = COEFFICIENT.</p>
 </dd>
 <dt><strong>tangFraction</strong></dt><dd><p>A Float specifying the tangential stabilization as a fraction of the normal
 stabilization (damping). The default value is 1.0.This argument is valid only if
@@ -2155,8 +2155,8 @@ values are COMPUTE and SPECIFY. The default value is COMPUTE.This argument is va
 if <strong>stabilizeChoice</strong> = AUTOMATIC or COEFFICIENT.</p>
 </dd>
 <dt><strong>zeroDamping</strong></dt><dd><p>None or a Float specifying the clearance at which damping becomes zero. This argument is
-valid only when <strong>zeroDampingChoice**=SPECIFY. This argument is valid only if
-**stabilizeChoice</strong> = AUTOMATIC or COEFFICIENT. The default value is None.</p>
+valid only when <strong>zeroDampingChoice</strong> = SPECIFY. This argument is valid only if
+<strong>stabilizeChoice</strong> = AUTOMATIC or COEFFICIENT. The default value is None.</p>
 </dd>
 <dt><strong>enforceWithLagrangeMultipliers</strong></dt><dd><p>A SymbolicConstant specifying whether to enforce the contact constraints with Lagrange
 multipliers. Possible values are DEFAULT, ENFORCEMENT_OFF, and ENFORCEMENT_ON. The
@@ -2195,16 +2195,16 @@ default value is DEFAULT.</p>
 ADJUST, INTERFERENCE, and CLEARANCE. The default value is ADJUST.</p>
 </dd>
 <dt><strong>interferenceDistance</strong></dt><dd><p>None or a Float specifying the interference distance. This argument is valid only when
-<a href="#id327"><span class="problematic" id="id328">**</span></a>overclosureType**=INTERFERENCE. The default value is None.</p>
+<strong>overclosureType</strong> = INTERFERENCE. The default value is None.</p>
 </dd>
 <dt><strong>clearanceDistance</strong></dt><dd><p>None or a Float specifying the initial clearance distance. This argument is valid only
-when <a href="#id329"><span class="problematic" id="id330">**</span></a>overclosureType**=CLEARANCE, and must be specified in that case. The default value
+when <strong>overclosureType</strong> = CLEARANCE, and must be specified in that case. The default value
 is None.</p>
 </dd>
 <dt><strong>openingTolerance</strong></dt><dd><p>None or a Float specifying the distance tolerance within which initial openings will
 undergo strain-free adjustments. This argument is not valid when
-<strong>overclosureType**=INTERFERENCE unless a value has been specified for
-**interferenceDistance</strong>. The default value is None.</p>
+<strong>overclosureType</strong> = INTERFERENCE unless a value has been specified for
+<strong>interferenceDistance</strong>. The default value is None.</p>
 </dd>
 <dt><strong>overclosureTolerance</strong></dt><dd><p>None or a Float specifying the distance tolerance within which initial overclosures will
 undergo strain-free adjustments.. The default value is None.</p>
@@ -2348,7 +2348,7 @@ KINEMATIC and PENALTY. The default value is KINEMATIC.</p>
 are DEFAULT and SPECIFIED. The default value is DEFAULT.</p>
 </dd>
 <dt><strong>weightingFactor</strong></dt><dd><p>A Float specifying the weighting factor for the contact surfaces when
-<a href="#id331"><span class="problematic" id="id332">**</span></a>weightingFactorType**=SPECIFIED. The default value is 0.0.</p>
+<strong>weightingFactorType</strong> = SPECIFIED. The default value is 0.0.</p>
 </dd>
 <dt><strong>contactControls</strong></dt><dd><p>A String specifying the name of the ContactControl object associated with this
 interaction. An empty string indicates that the default contact controls will be used.
@@ -2424,7 +2424,7 @@ contact pairs and contact elements. Possible values are:</p>
 <p>The default value is NONE.</p>
 </dd>
 <dt><strong>overclosure</strong></dt><dd><p>A Float specifying the maximum overclosure distance allowed. This argument applies only
-when <a href="#id333"><span class="problematic" id="id334">**</span></a>interferenceType**=UNIFORM. The default value is 0.0.</p>
+when <strong>interferenceType</strong> = UNIFORM. The default value is 0.0.</p>
 </dd>
 <dt><strong>interferenceDirectionType</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the interference direction.
 Possible values are COMPUTED and DIRECTION_COSINE. The default value is COMPUTED.</p>
@@ -2435,7 +2435,7 @@ Possible values are COMPUTED and DIRECTION_COSINE. The default value is COMPUTED
 <li><p>YY-direction cosine of the interference direction vector.</p></li>
 <li><p>ZZ-direction cosine of the interference direction vector.</p></li>
 </ul>
-<p>This argument is required only when <a href="#id335"><span class="problematic" id="id336">**</span></a>interferenceDirectionType**=DIRECTION_COSINE.</p>
+<p>This argument is required only when <strong>interferenceDirectionType</strong> = DIRECTION_COSINE.</p>
 </dd>
 <dt><strong>amplitude</strong></dt><dd><p>A String specifying the name of the amplitude curve that defines the magnitude of the
 prescribed interference during the step. Use None to specify that the prescribed
@@ -2443,7 +2443,7 @@ interference is applied immediately at the beginning of the step and ramped down
 linearly over the step.</p>
 </dd>
 <dt><strong>smooth</strong></dt><dd><p>A Float specifying the degree of smoothing used for deformable or rigid main surfaces
-involved when <a href="#id337"><span class="problematic" id="id338">**</span></a>enforcement**=NODE_TO_SURFACE. The value given must lie between 0.0 and
+involved when <strong>enforcement</strong> = NODE_TO_SURFACE. The value given must lie between 0.0 and
 0.5. The default value is 0.2.</p>
 </dd>
 <dt><strong>hcrit</strong></dt><dd><p>A Float specifying the distance by which a secondary node must penetrate the main
@@ -2465,8 +2465,8 @@ TOLERANCE, and SET. The default value is NONE.</p>
 NODE_TO_SURFACE and SURFACE_TO_SURFACE. The default value is SURFACE_TO_SURFACE.</p>
 </dd>
 <dt><strong>thickness</strong></dt><dd><p>A Boolean specifying whether shell/membrane element thickness is considered. The default
-value is ON.This argument is not valid when <a href="#id339"><span class="problematic" id="id340">**</span></a>sliding**=FINITE and
-<a href="#id341"><span class="problematic" id="id342">**</span></a>enforcement**=NODE_TO_SURFACE.</p>
+value is ON.This argument is not valid when <strong>sliding</strong> = FINITE and
+<strong>enforcement</strong> = NODE_TO_SURFACE.</p>
 </dd>
 <dt><strong>contactControls</strong></dt><dd><p>A String specifying the name of the ContactControl object associated with this
 interaction. The empty string indicates that the default contact controls will be used.
@@ -2698,7 +2698,7 @@ The ContactControl object has no explicit constructor, members, or methods.</p>
 </div>
 <p>The table data for this object are:</p>
 <p>Table data for <strong>initTable</strong>:</p>
-<p>If <a href="#id343"><span class="problematic" id="id344">**</span></a>criterion**=MAX_STRESS or QUAD_TRACTION, the table data specify the following:</p>
+<p>If <strong>criterion</strong> = MAX_STRESS or QUAD_TRACTION, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Maximum nominal stress in the normal-only mode.</p></li>
@@ -2710,7 +2710,7 @@ The ContactControl object has no explicit constructor, members, or methods.</p>
 <li><p>Etc.</p></li>
 </ul>
 </div></blockquote>
-<p>If <a href="#id345"><span class="problematic" id="id346">**</span></a>criterion**=MAX_SEPARATION or QUAD_SEPARATION, the table data specify the following:</p>
+<p>If <strong>criterion</strong> = MAX_SEPARATION or QUAD_SEPARATION, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Separation at damage initiation in a normal-only mode.</p></li>
@@ -2723,7 +2723,7 @@ The ContactControl object has no explicit constructor, members, or methods.</p>
 </ul>
 </div></blockquote>
 <p>Table data for <strong>evolTable</strong>:</p>
-<p>If <a href="#id347"><span class="problematic" id="id348">**</span></a>evolutionType**=DISPLACEMENT, <a href="#id349"><span class="problematic" id="id350">**</span></a>softening**=LINEAR, and <a href="#id351"><span class="problematic" id="id352">**</span></a>useMixedMode**=OFF, the table data specify the following:</p>
+<p>If <strong>evolutionType</strong> = DISPLACEMENT, <strong>softening</strong> = LINEAR, and <strong>useMixedMode</strong> = OFF, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Effective total or Plastic displacement at failure, measured from the time of damage initiation.</p></li>
@@ -2733,7 +2733,7 @@ The ContactControl object has no explicit constructor, members, or methods.</p>
 <li><p>Etc.</p></li>
 </ul>
 </div></blockquote>
-<p>If <a href="#id353"><span class="problematic" id="id354">**</span></a>evolutionType**=ENERGY, <a href="#id355"><span class="problematic" id="id356">**</span></a>softening**=LINEAR or EXPONENTIAL, and <a href="#id357"><span class="problematic" id="id358">**</span></a>useMixedMode**=OFF, the table data specify the following:</p>
+<p>If <strong>evolutionType</strong> = ENERGY, <strong>softening</strong> = LINEAR or EXPONENTIAL, and <strong>useMixedMode</strong> = OFF, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Fracture energy.</p></li>
@@ -2743,8 +2743,8 @@ The ContactControl object has no explicit constructor, members, or methods.</p>
 <li><p>Etc.</p></li>
 </ul>
 </div></blockquote>
-<p>If <a href="#id359"><span class="problematic" id="id360">**</span></a>evolutionType**=DISPLACEMENT, <a href="#id361"><span class="problematic" id="id362">**</span></a>softening**=LINEAR, <a href="#id363"><span class="problematic" id="id364">**</span></a>useMixedMode**=ON, <a href="#id365"><span class="problematic" id="id366">**</span></a>mixedModeType**=TABULAR, and
-<a href="#id367"><span class="problematic" id="id368">**</span></a>modeMixRatio**=ENERGY or TRACTION, the table data specify the following:</p>
+<p>If <strong>evolutionType</strong> = DISPLACEMENT, <strong>softening</strong> = LINEAR, <strong>useMixedMode</strong> = ON, <strong>mixedModeType</strong> = TABULAR, and
+<strong>modeMixRatio</strong> = ENERGY or TRACTION, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Total displacement at failure, measured from the time of damage initiation.</p></li>
@@ -2756,8 +2756,8 @@ The ContactControl object has no explicit constructor, members, or methods.</p>
 <li><p>Etc.</p></li>
 </ul>
 </div></blockquote>
-<p>If <a href="#id369"><span class="problematic" id="id370">**</span></a>evolutionType**=ENERGY, <a href="#id371"><span class="problematic" id="id372">**</span></a>softening**=LINEAR or EXPONENTIAL, <a href="#id373"><span class="problematic" id="id374">**</span></a>useMixedMode**=ON, <a href="#id375"><span class="problematic" id="id376">**</span></a>mixedModeType**=TABULAR, and
-<a href="#id377"><span class="problematic" id="id378">**</span></a>modeMixRatio**=ENERGY or TRACTION, the table data specify the following:</p>
+<p>If <strong>evolutionType</strong> = ENERGY, <strong>softening</strong> = LINEAR or EXPONENTIAL, <strong>useMixedMode</strong> = ON, <strong>mixedModeType</strong> = TABULAR, and
+<strong>modeMixRatio</strong> = ENERGY or TRACTION, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Fracture energy.</p></li>
@@ -2769,7 +2769,7 @@ The ContactControl object has no explicit constructor, members, or methods.</p>
 <li><p>Etc.</p></li>
 </ul>
 </div></blockquote>
-<p>If <a href="#id379"><span class="problematic" id="id380">**</span></a>evolutionType**=DISPLACEMENT, <a href="#id381"><span class="problematic" id="id382">**</span></a>softening**=EXPONENTIAL, and <a href="#id383"><span class="problematic" id="id384">**</span></a>useMixedMode**=OFF, the table data specify the following:</p>
+<p>If <strong>evolutionType</strong> = DISPLACEMENT, <strong>softening</strong> = EXPONENTIAL, and <strong>useMixedMode</strong> = OFF, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Effective total or Plastic displacement at failure, measured from the time of damage initiation.</p></li>
@@ -2780,8 +2780,8 @@ The ContactControl object has no explicit constructor, members, or methods.</p>
 <li><p>Etc.</p></li>
 </ul>
 </div></blockquote>
-<p>If <a href="#id385"><span class="problematic" id="id386">**</span></a>evolutionType**=DISPLACEMENT, <a href="#id387"><span class="problematic" id="id388">**</span></a>softening**=EXPONENTIAL, <a href="#id389"><span class="problematic" id="id390">**</span></a>useMixedMode**=ON, <a href="#id391"><span class="problematic" id="id392">**</span></a>mixedModeType**=TABULAR, and
-<a href="#id393"><span class="problematic" id="id394">**</span></a>modeMixRatio**=ENERGY or TRACTION, the table data specify the following:</p>
+<p>If <strong>evolutionType</strong> = DISPLACEMENT, <strong>softening</strong> = EXPONENTIAL, <strong>useMixedMode</strong> = ON, <strong>mixedModeType</strong> = TABULAR, and
+<strong>modeMixRatio</strong> = ENERGY or TRACTION, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Total displacement at failure, measured from the time of damage initiation.</p></li>
@@ -2794,7 +2794,7 @@ The ContactControl object has no explicit constructor, members, or methods.</p>
 <li><p>Etc.</p></li>
 </ul>
 </div></blockquote>
-<p>If <a href="#id395"><span class="problematic" id="id396">**</span></a>evolutionType**=DISPLACEMENT, <a href="#id397"><span class="problematic" id="id398">**</span></a>softening**=TABULAR, and <a href="#id399"><span class="problematic" id="id400">**</span></a>useMixedMode**=OFF, the table data specify the following:</p>
+<p>If <strong>evolutionType</strong> = DISPLACEMENT, <strong>softening</strong> = TABULAR, and <strong>useMixedMode</strong> = OFF, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Damage variable.</p></li>
@@ -2805,8 +2805,8 @@ The ContactControl object has no explicit constructor, members, or methods.</p>
 <li><p>Etc.</p></li>
 </ul>
 </div></blockquote>
-<p>If <a href="#id401"><span class="problematic" id="id402">**</span></a>evolutionType**=DISPLACEMENT, <a href="#id403"><span class="problematic" id="id404">**</span></a>softening**=TABULAR, <a href="#id405"><span class="problematic" id="id406">**</span></a>useMixedMode**=ON, <a href="#id407"><span class="problematic" id="id408">**</span></a>mixedModeType**=TABULAR, and
-<a href="#id409"><span class="problematic" id="id410">**</span></a>modeMixRatio**=ENERGY or TRACTION, the table data specify the following:</p>
+<p>If <strong>evolutionType</strong> = DISPLACEMENT, <strong>softening</strong> = TABULAR, <strong>useMixedMode</strong> = ON, <strong>mixedModeType</strong> = TABULAR, and
+<strong>modeMixRatio</strong> = ENERGY or TRACTION, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Damage variable.</p></li>
@@ -2819,8 +2819,8 @@ The ContactControl object has no explicit constructor, members, or methods.</p>
 <li><p>Etc.</p></li>
 </ul>
 </div></blockquote>
-<p>If <a href="#id411"><span class="problematic" id="id412">**</span></a>evolutionType**=ENERGY, <a href="#id413"><span class="problematic" id="id414">**</span></a>softening**=LINEAR or EXPONENTIAL, <a href="#id415"><span class="problematic" id="id416">**</span></a>useMixedMode**=ON, <a href="#id417"><span class="problematic" id="id418">**</span></a>mixedModeType**=POWER_LAW or
-BK, and <a href="#id419"><span class="problematic" id="id420">**</span></a>modeMixRatio**=ENERGY, the table data specify the following:</p>
+<p>If <strong>evolutionType</strong> = ENERGY, <strong>softening</strong> = LINEAR or EXPONENTIAL, <strong>useMixedMode</strong> = ON, <strong>mixedModeType</strong> = POWER_LAW or
+BK, and <strong>modeMixRatio</strong> = ENERGY, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Normal mode fracture energy.</p></li>
@@ -2937,23 +2937,23 @@ items in the table data are described below. This argument is valid only when
 </div>
 <p>The table data for this object are:</p>
 <ul>
-<li><p>If <a href="#id421"><span class="problematic" id="id422">**</span></a>definition**=DAMPING_COEFFICIENT and <a href="#id423"><span class="problematic" id="id424">**</span></a>clearanceDependence**=STEP, the table data specify the following:</p>
+<li><p>If <strong>definition</strong> = DAMPING_COEFFICIENT and <strong>clearanceDependence</strong> = STEP, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Damping coefficient.</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p>If <a href="#id425"><span class="problematic" id="id426">**</span></a>definition**=DAMPING_COEFFICIENT and <a href="#id427"><span class="problematic" id="id428">**</span></a>clearanceDependence**=LINEAR or BILINEAR, the table data specify the following:</p>
+<li><p>If <strong>definition</strong> = DAMPING_COEFFICIENT and <strong>clearanceDependence</strong> = LINEAR or BILINEAR, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Damping coefficient.</p></li>
 <li><p>Clearance.</p></li>
 </ul>
-<p>Two pairs must be given for <a href="#id429"><span class="problematic" id="id430">**</span></a>clearanceDependence**=LINEAR and three pairs for <a href="#id431"><span class="problematic" id="id432">**</span></a>clearanceDependence**=BILINEAR. The first pair must have <a href="#id433"><span class="problematic" id="id434">**</span></a>clearance**=0.0, and the last pair must have <a href="#id435"><span class="problematic" id="id436">**</span></a>coefficient**=0.0.</p>
+<p>Two pairs must be given for <strong>clearanceDependence</strong> = LINEAR and three pairs for <strong>clearanceDependence</strong> = BILINEAR. The first pair must have <strong>clearance</strong> = 0.0, and the last pair must have <strong>coefficient</strong> = 0.0.</p>
 </div></blockquote>
 </li>
-<li><p>If <a href="#id437"><span class="problematic" id="id438">**</span></a>definition**=CRITICAL_DAMPING_FRACTION, the table data specify the following:</p>
+<li><p>If <strong>definition</strong> = CRITICAL_DAMPING_FRACTION, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Critical damping fraction.</p></li>
@@ -3131,18 +3131,18 @@ ALL_NODES, INITIAL_NODES, and SPECIFIED. The default value is ALL_NODES.</p>
 ON.</p>
 </dd>
 <dt><strong>coupling</strong></dt><dd><p>A SymbolicConstant specifying whether the traction-separation coefficients are coupled
-or uncoupled. This argument is valid only for <a href="#id439"><span class="problematic" id="id440">**</span></a>defaultPenalties**=OFF. Possible values
+or uncoupled. This argument is valid only for <strong>defaultPenalties</strong> = OFF. Possible values
 are UNCOUPLED and COUPLED. The default value is UNCOUPLED.</p>
 </dd>
 <dt><strong>temperatureDependency</strong></dt><dd><p>A Boolean specifying whether the coefficient data depend on temperature. This argument
-is valid only for <a href="#id441"><span class="problematic" id="id442">**</span></a>defaultPenalties**=OFF. The default value is OFF.</p>
+is valid only for <strong>defaultPenalties</strong> = OFF. The default value is OFF.</p>
 </dd>
 <dt><strong>dependencies</strong></dt><dd><p>An Int specifying the number of field variables. This argument is valid only for
-<a href="#id443"><span class="problematic" id="id444">**</span></a>defaultPenalties**=OFF. The default value is 0.</p>
+<strong>defaultPenalties</strong> = OFF. The default value is 0.</p>
 </dd>
 <dt><strong>table</strong></dt><dd><p>A sequence of sequences of Floats specifying the traction-separation coefficients. The
 items in the table data are described below. This argument is valid only for
-<a href="#id445"><span class="problematic" id="id446">**</span></a>defaultPenalties**=OFF.</p>
+<strong>defaultPenalties</strong> = OFF.</p>
 </dd>
 </dl>
 </dd>
@@ -3181,46 +3181,46 @@ value is OFF.</p>
 <dt><strong>useEvolution</strong></dt><dd><p>A Boolean specifying whether evolution data will be defined. The default value is OFF.</p>
 </dd>
 <dt><strong>evolutionType</strong></dt><dd><p>A SymbolicConstant specifying the type of data used to define the evolution of damage.
-This argument is valid only when <a href="#id447"><span class="problematic" id="id448">**</span></a>useEvolution**=ON. Possible values are DISPLACEMENT and
+This argument is valid only when <strong>useEvolution</strong> = ON. Possible values are DISPLACEMENT and
 ENERGY. The default value is DISPLACEMENT.</p>
 </dd>
 <dt><strong>softening</strong></dt><dd><p>A SymbolicConstant specifying the type of data used to define the evolution softening
-response. This argument is valid only when <a href="#id449"><span class="problematic" id="id450">**</span></a>useEvolution**=ON. The TABULAR value can be
-used only when <a href="#id451"><span class="problematic" id="id452">**</span></a>evolutionType**=DISPLACEMENT. Possible values are LINEAR, EXPONENTIAL,
+response. This argument is valid only when <strong>useEvolution</strong> = ON. The TABULAR value can be
+used only when <strong>evolutionType</strong> = DISPLACEMENT. Possible values are LINEAR, EXPONENTIAL,
 and TABULAR. The default value is LINEAR.</p>
 </dd>
 <dt><strong>useMixedMode</strong></dt><dd><p>A Boolean specifying whether evolution data be defined using dependent behavior modes.
-This argument is valid only when <a href="#id453"><span class="problematic" id="id454">**</span></a>useEvolution**=ON. The default value is OFF.</p>
+This argument is valid only when <strong>useEvolution</strong> = ON. The default value is OFF.</p>
 </dd>
 <dt><strong>mixedModeType</strong></dt><dd><p>A SymbolicConstant specifying the mode mix fracture criterion. This argument is valid
-only when <a href="#id455"><span class="problematic" id="id456">**</span></a>useEvolution**=ON and when <a href="#id457"><span class="problematic" id="id458">**</span></a>useMixedMode**=ON. The POWER_LAW and BK values can
-be used only when <a href="#id459"><span class="problematic" id="id460">**</span></a>evolutionType**=ENERGY. Possible values are TABULAR, POWER_LAW, and
+only when <strong>useEvolution</strong> = ON and when <strong>useMixedMode</strong> = ON. The POWER_LAW and BK values can
+be used only when <strong>evolutionType</strong> = ENERGY. Possible values are TABULAR, POWER_LAW, and
 BK. The default value is TABULAR.</p>
 </dd>
 <dt><strong>modeMixRatio</strong></dt><dd><p>A SymbolicConstant specifying the mode mix ratio type. This argument is valid only when
-<a href="#id461"><span class="problematic" id="id462">**</span></a>useEvolution**=ON and when <a href="#id463"><span class="problematic" id="id464">**</span></a>useMixedMode**=ON. The TRACTION value can be used only when
-<a href="#id465"><span class="problematic" id="id466">**</span></a>mixedModeType**=TABULAR. Possible values are ENERGY and TRACTION. The default value is
+<strong>useEvolution</strong> = ON and when <strong>useMixedMode</strong> = ON. The TRACTION value can be used only when
+<strong>mixedModeType</strong> = TABULAR. Possible values are ENERGY and TRACTION. The default value is
 ENERGY.</p>
 </dd>
 <dt><strong>exponent</strong></dt><dd><p>None or a Float specifying the exponent in the power-law or BK criterion that defines
 the variation of fracture energy with mode mix. This argument is valid only when
-<a href="#id467"><span class="problematic" id="id468">**</span></a>useEvolution**=ON and when <a href="#id469"><span class="problematic" id="id470">**</span></a>mixedModeType**=POWER_LAW or BK. The default value is None.</p>
+<strong>useEvolution</strong> = ON and when <strong>mixedModeType</strong> = POWER_LAW or BK. The default value is None.</p>
 </dd>
 <dt><strong>evolTempDep</strong></dt><dd><p>A Boolean specifying whether the evolution data depend on temperature. This argument is
-valid only when <a href="#id471"><span class="problematic" id="id472">**</span></a>useEvolution**=ON. The default value is OFF.</p>
+valid only when <strong>useEvolution</strong> = ON. The default value is OFF.</p>
 </dd>
 <dt><strong>evolDependencies</strong></dt><dd><p>An Int specifying the number of evolution data field variables. This argument is valid
-only when <a href="#id473"><span class="problematic" id="id474">**</span></a>useEvolution**=ON. The default value is 0.</p>
+only when <strong>useEvolution</strong> = ON. The default value is 0.</p>
 </dd>
 <dt><strong>evolTable</strong></dt><dd><p>A sequence of sequences of Floats specifying the values defining the damage evolution.
 The items in the table data are described below. This argument is valid only when
-<a href="#id475"><span class="problematic" id="id476">**</span></a>useEvolution**=ON.</p>
+<strong>useEvolution</strong> = ON.</p>
 </dd>
 <dt><strong>useStabilization</strong></dt><dd><p>A Boolean specifying whether stabilization data will be defined. This argument is valid
-only when <a href="#id477"><span class="problematic" id="id478">**</span></a>useEvolution**=ON. The default value is OFF.</p>
+only when <strong>useEvolution</strong> = ON. The default value is OFF.</p>
 </dd>
 <dt><strong>viscosityCoef</strong></dt><dd><p>None or a Float specifying the viscosity coefficient. This argument is valid only when
-<a href="#id479"><span class="problematic" id="id480">**</span></a>useStabilization**=ON. The default value is None.</p>
+<strong>useStabilization</strong> = ON. The default value is None.</p>
 </dd>
 </dl>
 </dd>
@@ -3253,7 +3253,7 @@ divided by the normal damping coefficient. The default value is DEFAULT.</p>
 </dd>
 <dt><strong>clearanceDependence</strong></dt><dd><p>A SymbolicConstant specifying the variation of the damping coefficient or fraction with
 respect to clearance. Possible values are STEP, LINEAR, and BILINEAR. The default value
-is STEP.If <a href="#id481"><span class="problematic" id="id482">**</span></a>definition**=CRITICAL_DAMPING_FRACTION, the only possible value is STEP.</p>
+is STEP.If <strong>definition</strong> = CRITICAL_DAMPING_FRACTION, the only possible value is STEP.</p>
 </dd>
 <dt><strong>table</strong></dt><dd><p>A sequence of pairs of Floats specifying the damping properties. The items in the table
 data are described below.</p>
@@ -3348,7 +3348,7 @@ value is 0.</p>
 fracture criterion. Possible values are ON and OFF. The default value is OFF.</p>
 </dd>
 <dt><strong>unstableTolerance</strong></dt><dd><p>The SymbolicConstant DEFAULT or a Float specifying the tolerance for unstable crack
-propagation. This parameter specified only if <a href="#id483"><span class="problematic" id="id484">**</span></a>specifyUnstableCrackProp**=ON. The default
+propagation. This parameter specified only if <strong>specifyUnstableCrackProp</strong> = ON. The default
 value is DEFAULT.</p>
 </dd>
 </dl>
@@ -3378,7 +3378,7 @@ or cross-sectional area for every node in the node-based surface. The default va
 1.0.</p>
 </dd>
 <dt><strong>padThickness</strong></dt><dd><p>None or a Float specifying the thickness of an interfacial layer between the contacting
-surfaces. If <a href="#id485"><span class="problematic" id="id486">**</span></a>padThickness**=None, there is no interfacial layer. The default value is
+surfaces. If <strong>padThickness</strong> = None, there is no interfacial layer. The default value is
 None.</p>
 </dd>
 <dt><strong>trackingThickness</strong></dt><dd><p>None or a Float specifying the thickness that determines the contacting surfaces to be
@@ -3386,16 +3386,16 @@ tracked. The input value for this parameter cannot be negative. An internal defa
 value is used if a zero value is input or if the parameter is omitted.</p>
 </dd>
 <dt><strong>dependentVariables</strong></dt><dd><p>An Int specifying the number of state-dependent variables. The default value is 0. This
-argument is applicable only if <a href="#id487"><span class="problematic" id="id488">**</span></a>modelType**=MODELTYPE_USER or
-<a href="#id489"><span class="problematic" id="id490">**</span></a>modelType**=MODELTYPE_USER_INTERACTION.</p>
+argument is applicable only if <strong>modelType</strong> = MODELTYPE_USER or
+<strong>modelType</strong> = MODELTYPE_USER_INTERACTION.</p>
 </dd>
 <dt><strong>numProperties</strong></dt><dd><p>An Int specifying the number of property values required. The default value is 0. This
-argument is applicable only if <a href="#id491"><span class="problematic" id="id492">**</span></a>modelType**=MODELTYPE_USER or
-<a href="#id493"><span class="problematic" id="id494">**</span></a>modelType**=MODELTYPE_USER_INTERACTION.</p>
+argument is applicable only if <strong>modelType</strong> = MODELTYPE_USER or
+<strong>modelType</strong> = MODELTYPE_USER_INTERACTION.</p>
 </dd>
 <dt><strong>useUnsymmetricEqunProcedure</strong></dt><dd><p>A Boolean specifying whether to use unsymmetric equation solution procedures. This
-argument is applicable only if <a href="#id495"><span class="problematic" id="id496">**</span></a>modelType**=MODELTYPE_USER or
-<a href="#id497"><span class="problematic" id="id498">**</span></a>modelType**=MODELTYPE_USER_INTERACTION.</p>
+argument is applicable only if <strong>modelType</strong> = MODELTYPE_USER or
+<strong>modelType</strong> = MODELTYPE_USER_INTERACTION.</p>
 </dd>
 <dt><strong>modelType</strong></dt><dd><p>A SymbolicConstant specifying the surface interaction model type.</p>
 </dd>
@@ -3450,8 +3450,8 @@ The default value is 0.5.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>contactStiffness</strong></dt><dd><p>The SymbolicConstant DEFAULT or a Float specifying the contact stiffness. This argument
-is valid for <a href="#id499"><span class="problematic" id="id500">**</span></a>pressureOverclosure**=LINEAR. This argument is also valid for
-<a href="#id501"><span class="problematic" id="id502">**</span></a>pressureOverclosure**=HARD when <a href="#id503"><span class="problematic" id="id504">**</span></a>constraintEnforcementMethod**=AUGMENTED_LAGRANGE or
+is valid for <strong>pressureOverclosure</strong> = LINEAR. This argument is also valid for
+<strong>pressureOverclosure</strong> = HARD when <strong>constraintEnforcementMethod</strong> = AUGMENTED_LAGRANGE or
 PENALTY. A value of DEFAULT is valid only when the later conditions are met. A value of
 zero is equivalent to specifying DEFAULT. The default value is DEFAULT.</p>
 </dd>
@@ -3461,11 +3461,11 @@ HARD.</p>
 </dd>
 <dt><strong>allowSeparation</strong></dt><dd><p>A Boolean specifying whether to allow separation after contact. The default value is ON.</p>
 </dd>
-<dt><strong>maxStiffness</strong></dt><dd><p>None or a Float specifying the maximum stiffness. If <a href="#id505"><span class="problematic" id="id506">**</span></a>maxStiffness**=None, there is no
+<dt><strong>maxStiffness</strong></dt><dd><p>None or a Float specifying the maximum stiffness. If <strong>maxStiffness</strong> = None, there is no
 upper limit. The default value is None.</p>
 </dd>
 <dt><strong>table</strong></dt><dd><p>A sequence of sequences of Floats specifying the normal behavior properties. This
-argument is valid only for <a href="#id507"><span class="problematic" id="id508">**</span></a>pressureOverclosure**=EXPONENTIAL or TABULAR. The items in
+argument is valid only for <strong>pressureOverclosure</strong> = EXPONENTIAL or TABULAR. The items in
 the table data are described below.</p>
 </dd>
 <dt><strong>constraintEnforcementMethod</strong></dt><dd><p>A SymbolicConstant specifying the method for enforcement of the contact constraint.
@@ -3489,21 +3489,21 @@ The default value is 1.0.</p>
 value is 0.0.</p>
 </dd>
 <dt><strong>stiffnessBehavior</strong></dt><dd><p>A SymbolicConstant specifying the type of penalty stiffness to be defined. This argument
-is valid only when <a href="#id509"><span class="problematic" id="id510">**</span></a>constraintEnforcementMethod**=PENALTY. Possible values are LINEAR and
+is valid only when <strong>constraintEnforcementMethod</strong> = PENALTY. Possible values are LINEAR and
 NONLINEAR. The default value is LINEAR.</p>
 </dd>
 <dt><strong>stiffnessRatio</strong></dt><dd><p>A Float specifying the ratio of the initial stiffness divided by the final stiffness.
-This argument is valid only when <strong>stiffnessBehavior**=NONLINEAR. Possible values are 0 ≤≤
-**stiffnessRatio</strong> &lt;&lt; 1. The default value is 0.01.</p>
+This argument is valid only when <strong>stiffnessBehavior</strong> = NONLINEAR. Possible values are 0 ≤≤
+<strong>stiffnessRatio</strong> &lt;&lt; 1. The default value is 0.01.</p>
 </dd>
 <dt><strong>upperQuadraticFactor</strong></dt><dd><p>A Float specifying the ratio of the overclosure at the maximum stiffness divided by the
 characteristic facet length. This argument is valid only when
-<a href="#id511"><span class="problematic" id="id512">**</span></a>stiffnessBehavior**=NONLINEAR. The default value is 0.03.</p>
+<strong>stiffnessBehavior</strong> = NONLINEAR. The default value is 0.03.</p>
 </dd>
 <dt><strong>lowerQuadraticRatio</strong></dt><dd><p>A Float specifying the ratio of the overclosure at the initial stiffness divided by the
 overclosure at the maximum stiffness, both relative to the clearance at which the
 contact pressure is zero. This argument is valid only when
-<strong>stiffnessBehavior**=NONLINEAR. Possible values are 0 ≤≤ **stiffnessRatio</strong> &lt;&lt; 1. The
+<strong>stiffnessBehavior</strong> = NONLINEAR. Possible values are 0 ≤≤ <strong>stiffnessRatio</strong> &lt;&lt; 1. The
 default value is 0.33333.</p>
 </dd>
 </dl>
@@ -3579,7 +3579,7 @@ COEFFICIENTS and TEST_DATA. The default value is COEFFICIENTS.</p>
 <dt><strong>table</strong></dt><dd><p>A sequence of sequences of Floats specifying tangential behavior. The items in the table
 data are described below.</p>
 </dd>
-<dt><strong>shearStressLimit</strong></dt><dd><p>None or a Float specifying the shear stress limit. If <a href="#id513"><span class="problematic" id="id514">**</span></a>shearStressLimit**=None, there is
+<dt><strong>shearStressLimit</strong></dt><dd><p>None or a Float specifying the shear stress limit. If <strong>shearStressLimit</strong> = None, there is
 no upper limit. The default value is None.</p>
 </dd>
 <dt><strong>maximumElasticSlip</strong></dt><dd><p>A SymbolicConstant specifying what the maximum elastic slip will be. Possible values are
@@ -3590,7 +3590,7 @@ is 0.0.</p>
 </dd>
 <dt><strong>absoluteDistance</strong></dt><dd><p>A Float specifying the absolute distance. The default value is 0.0.</p>
 </dd>
-<dt><strong>elasticSlipStiffness</strong></dt><dd><p>None or a Float specifying the elastic slip stiffness. If <a href="#id515"><span class="problematic" id="id516">**</span></a>elasticSlipStiffness**=None,
+<dt><strong>elasticSlipStiffness</strong></dt><dd><p>None or a Float specifying the elastic slip stiffness. If <strong>elasticSlipStiffness</strong> = None,
 there is no upper limit. The default value is None.</p>
 </dd>
 <dt><strong>nStateDependentVars</strong></dt><dd><p>An Int specifying the number of state-dependent variables. The default value is 0.</p>
@@ -3790,8 +3790,8 @@ methods.</p>
 </dd></dl>
 
 </section>
-<section id="id517">
-<h3>Interaction<a class="headerlink" href="#id517" title="Permalink to this headline">#</a></h3>
+<section id="id1">
+<h3>Interaction<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Interaction.Interaction.Interaction">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Interaction</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Interaction/Interaction.py#L1-L81"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Interaction.Interaction.Interaction" title="Permalink to this definition">#</a></dt>
@@ -3977,7 +3977,7 @@ tuple contains four entries (fourth entry is for Abaqus/Explicit and is optional
 - A region object or the SymbolicConstant GLOBAL (for Abaqus/Standard only).
 - A region object or the SymbolicConstant SELF (for Abaqus/Standard only).
 - A String specifying a StdInitialization or ExpInitializationobject associated with this pair of regions.
-- A String specifying a secondary surface type. This entry is applicable only if the ExpInitialization object is defined with <a href="#id518"><span class="problematic" id="id519">**</span></a>overclosureType**=CLEARANCE and <a href="#id520"><span class="problematic" id="id521">**</span></a>adjustNodalCoords**=True.</p>
+- A String specifying a secondary surface type. This entry is applicable only if the ExpInitialization object is defined with <strong>overclosureType</strong> = CLEARANCE and <strong>adjustNodalCoords</strong> = True.</p>
 </dd>
 </dl>
 </dd>
@@ -4130,29 +4130,29 @@ values are TABULAR and NONREFLECTING. The default value is TABULAR.</p>
 </dd>
 <dt><strong>nonreflectingType</strong></dt><dd><p>A SymbolicConstant specifying the type of nonreflecting geometry to be defined. Possible
 values are PLANE, IMPROVED, CIRCULAR, SPHERICAL, ELLIPTICAL, and PROLATE. The default
-value is PLANE.This argument is valid only when <a href="#id522"><span class="problematic" id="id523">**</span></a>definition**=NONREFLECTING.</p>
+value is PLANE.This argument is valid only when <strong>definition</strong> = NONREFLECTING.</p>
 </dd>
 <dt><strong>radius</strong></dt><dd><p>A Float specifying the radius of the circle or sphere defining the boundary surface. The
-default value is 1.0.This argument is valid only when <a href="#id524"><span class="problematic" id="id525">**</span></a>definition**=NONREFLECTING, and
-<a href="#id526"><span class="problematic" id="id527">**</span></a>nonreflectingType**=CIRCULAR or SPHERICAL.</p>
+default value is 1.0.This argument is valid only when <strong>definition</strong> = NONREFLECTING, and
+<strong>nonreflectingType</strong> = CIRCULAR or SPHERICAL.</p>
 </dd>
 <dt><strong>semimajorAxis</strong></dt><dd><p>A Float specifying the semimajor axis length of the ellipse or prolate spheroid defining
 the boundary surface. The default value is 1.0.This argument is valid only when
-<a href="#id528"><span class="problematic" id="id529">**</span></a>definition**=NONREFLECTING, and <a href="#id530"><span class="problematic" id="id531">**</span></a>nonreflectingType**=ELLIPTICAL or PROLATE.</p>
+<strong>definition</strong> = NONREFLECTING, and <strong>nonreflectingType</strong> = ELLIPTICAL or PROLATE.</p>
 </dd>
 <dt><strong>eccentricity</strong></dt><dd><p>A Float specifying the eccentricity of the ellipse or prolate spheroid defining the
 boundary surface. The default value is 0.0.This argument is valid only when
-<a href="#id532"><span class="problematic" id="id533">**</span></a>definition**=NONREFLECTING, and <a href="#id534"><span class="problematic" id="id535">**</span></a>nonreflectingType**=ELLIPTICAL or PROLATE.</p>
+<strong>definition</strong> = NONREFLECTING, and <strong>nonreflectingType</strong> = ELLIPTICAL or PROLATE.</p>
 </dd>
 <dt><strong>centerCoordinates</strong></dt><dd><p>A sequence of three Floats specifying the X, Y, and Z coordinates of the center of the
 ellipse or prolate spheroid defining the boundary surface. The default value is (0, 0,
-0).This argument is valid only when <a href="#id536"><span class="problematic" id="id537">**</span></a>definition**=NONREFLECTING, and
-<a href="#id538"><span class="problematic" id="id539">**</span></a>nonreflectingType**=ELLIPTICAL or PROLATE.</p>
+0).This argument is valid only when <strong>definition</strong> = NONREFLECTING, and
+<strong>nonreflectingType</strong> = ELLIPTICAL or PROLATE.</p>
 </dd>
 <dt><strong>directionCosine</strong></dt><dd><p>A sequence of three Floats specifying the X, Y, and Z components of the direction cosine
 of the major axis of the ellipse or prolate spheroid defining the boundary surface. The
-default value is (0, 0, 1).This argument is valid only when <a href="#id540"><span class="problematic" id="id541">**</span></a>definition**=NONREFLECTING,
-and <a href="#id542"><span class="problematic" id="id543">**</span></a>nonreflectingType**=ELLIPTICAL or PROLATE.</p>
+default value is (0, 0, 1).This argument is valid only when <strong>definition</strong> = NONREFLECTING,
+and <strong>nonreflectingType</strong> = ELLIPTICAL or PROLATE.</p>
 </dd>
 </dl>
 </dd>
@@ -4572,7 +4572,7 @@ it is created.</p>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>surfaceEmissivities</strong></dt><dd><p>A sequence of Strings specifying the names of the Cavity Radiation properties containing
 the surface emissivity data. One name per specified surface. The emissivity data is
-ignored when <a href="#id544"><span class="problematic" id="id545">**</span></a>surfaceReflection**=OFF.</p>
+ignored when <strong>surfaceReflection</strong> = OFF.</p>
 </dd>
 <dt><strong>ambientTemp</strong></dt><dd><p>None or a Float specifying the reference ambient temperature value, θ0θ0. Specifying a
 value indicates an open cavity. The default value is None.</p>
@@ -4582,12 +4582,12 @@ calculations. Possible values are BLOCKING_ALL, NO_BLOCKING, and PARTIAL_BLOCKIN
 default value is BLOCKING_ALL.</p>
 </dd>
 <dt><strong>blockingSurfaces</strong></dt><dd><p>A RegionArray object specifying the surfaces that provide blocking inside the cavity.
-This argument applies only when <a href="#id546"><span class="problematic" id="id547">**</span></a>blocking**=PARTIAL_BLOCKING.</p>
+This argument applies only when <strong>blocking</strong> = PARTIAL_BLOCKING.</p>
 </dd>
 <dt><strong>rangeOfView</strong></dt><dd><p>None or a Float specifying the maximum distance between surface facets at which
 viewfactors are calculated. More distant facets are deemed too far apart to exchange
 significant amounts of heat through radiation effects, and the viewfactors between these
-facets are assumed to be zero. If <a href="#id548"><span class="problematic" id="id549">**</span></a>rangeOfView**=None, there is no upper limit. The
+facets are assumed to be zero. If <strong>rangeOfView</strong> = None, there is no upper limit. The
 default value is None.</p>
 </dd>
 <dt><strong>surfaceReflection</strong></dt><dd><p>A Boolean specifying whether heat reflections are to be included in the cavity radiation
@@ -4610,17 +4610,17 @@ approximation is used for viewfactor calculations. The default value is 5.0.</p>
 specified for axisymmetric models. The default value is OFF.</p>
 </dd>
 <dt><strong>cyclicImages</strong></dt><dd><p>An Int specifying the number of cyclically similar images that compose the cavity formed
-as a result of this symmetry. This argument applies only when <a href="#id550"><span class="problematic" id="id551">**</span></a>cyclicSymmetry**=ON. The
+as a result of this symmetry. This argument applies only when <strong>cyclicSymmetry</strong> = ON. The
 default value is 2.</p>
 </dd>
 <dt><strong>cyclicRotPt</strong></dt><dd><p>A ModelDot object specifying the rotation axis point. This argument applies only when
-<a href="#id552"><span class="problematic" id="id553">**</span></a>cyclicSymmetry**=ON.</p>
+<strong>cyclicSymmetry</strong> = ON.</p>
 </dd>
 <dt><strong>cyclicRotEndPt</strong></dt><dd><p>A ModelDot object specifying the rotation axis end point. This argument applies only for
-three-dimensional models, and only when <a href="#id554"><span class="problematic" id="id555">**</span></a>cyclicSymmetry**=ON.</p>
+three-dimensional models, and only when <strong>cyclicSymmetry</strong> = ON.</p>
 </dd>
 <dt><strong>cyclicSymPt</strong></dt><dd><p>A ModelDot object specifying the symmetry axis end point. This argument applies only
-when <a href="#id556"><span class="problematic" id="id557">**</span></a>cyclicSymmetry**=ON.</p>
+when <strong>cyclicSymmetry</strong> = ON.</p>
 </dd>
 <dt><strong>periodicSymmetries</strong></dt><dd><p>An Int specifying the number of periodic symmetries that will be applied. The default
 value is 0.</p>
@@ -4733,12 +4733,12 @@ calculations. Possible values are BLOCKING_ALL, NO_BLOCKING, and PARTIAL_BLOCKIN
 default value is BLOCKING_ALL.</p>
 </dd>
 <dt><strong>blockingSurfaces</strong></dt><dd><p>A RegionArray object specifying the surfaces that provide blocking inside the cavity.
-This argument applies only when <a href="#id558"><span class="problematic" id="id559">**</span></a>blocking**=PARTIAL_BLOCKING.</p>
+This argument applies only when <strong>blocking</strong> = PARTIAL_BLOCKING.</p>
 </dd>
 <dt><strong>rangeOfView</strong></dt><dd><p>None or a Float specifying the maximum distance between surface facets at which
 viewfactors are calculated. More distant facets are deemed too far apart to exchange
 significant amounts of heat through radiation effects, and the viewfactors between these
-facets are assumed to be zero. If <a href="#id560"><span class="problematic" id="id561">**</span></a>rangeOfView**=None, there is no upper limit. The
+facets are assumed to be zero. If <strong>rangeOfView</strong> = None, there is no upper limit. The
 default value is None.</p>
 </dd>
 <dt><strong>surfaceReflection</strong></dt><dd><p>A Boolean specifying whether heat reflections are to be included in the cavity radiation
@@ -4886,7 +4886,7 @@ are:NOT_YET_ACTIVECREATEDPROPAGATEDMODIFIEDDEACTIVATEDNO_LONGER_ACTIVETYPE_NOT_A
 </div>
 <p>The table data for this object are:</p>
 <ul>
-<li><p>If <a href="#id562"><span class="problematic" id="id563">**</span></a>coupling**=UNCOUPLED, the table data specify the following:</p>
+<li><p>If <strong>coupling</strong> = UNCOUPLED, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Stiffness coefficient in the normal direction, Knn.</p></li>
@@ -4899,7 +4899,7 @@ are:NOT_YET_ACTIVECREATEDPROPAGATEDMODIFIEDDEACTIVATEDNO_LONGER_ACTIVETYPE_NOT_A
 </ul>
 </div></blockquote>
 </li>
-<li><p>If <a href="#id564"><span class="problematic" id="id565">**</span></a>coupling**=COUPLED, the table data specify the following:</p>
+<li><p>If <strong>coupling</strong> = COUPLED, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Stiffness coefficient in the normal direction, Knn.</p></li>
@@ -4992,10 +4992,10 @@ Abaqus/Explicit analysis.</p>
 </dd>
 <dt><strong>interactionProperty</strong></dt><dd><p>A String specifying the name of the FilmConditionProp object associated with this
 interaction. The <strong>interactionProperty</strong> argument applies only when
-<a href="#id566"><span class="problematic" id="id567">**</span></a>definition**=PROPERTY_REF. The default value is an empty string.</p>
+<strong>definition</strong> = PROPERTY_REF. The default value is an empty string.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this
-interaction. The <strong>field</strong> argument applies only when <a href="#id568"><span class="problematic" id="id569">**</span></a>definition**=FIELD. The default
+interaction. The <strong>field</strong> argument applies only when <strong>definition</strong> = FIELD. The default
 value is an empty string.</p>
 </dd>
 <dt><strong>sinkTemperature</strong></dt><dd><p>A Float specifying the reference sink temperature, θ0θ0. The default value is 0.0.</p>
@@ -5008,7 +5008,7 @@ Abaqus/Explicit analysis to specify that the reference sink temperature is appli
 throughout the step.</p>
 </dd>
 <dt><strong>filmCoeff</strong></dt><dd><p>A Float specifying the reference film coefficient value, hh. The <strong>filmCoeff</strong> argument
-applies when <a href="#id570"><span class="problematic" id="id571">**</span></a>definition**=EMBEDDED_COEFF, <a href="#id572"><span class="problematic" id="id573">**</span></a>definition**=USER_SUB, or <a href="#id574"><span class="problematic" id="id575">**</span></a>definition**=FIELD.
+applies when <strong>definition</strong> = EMBEDDED_COEFF, <strong>definition</strong> = USER_SUB, or <strong>definition</strong> = FIELD.
 The default value is 0.0.</p>
 </dd>
 <dt><strong>filmCoeffAmplitude</strong></dt><dd><p>A String specifying the name of the Amplitude object that gives the variation of the
@@ -5020,7 +5020,7 @@ throughout the step.</p>
 </dd>
 <dt><strong>sinkFieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object associated
 with the sink temperature. The <strong>sinkFieldName</strong> argument applies only when
-<a href="#id576"><span class="problematic" id="id577">**</span></a>sinkDistributionType**=ANALYTICAL_FIELD or <a href="#id578"><span class="problematic" id="id579">**</span></a>sinkDistributionType**=DISCRETE_FIELD. The
+<strong>sinkDistributionType</strong> = ANALYTICAL_FIELD or <strong>sinkDistributionType</strong> = DISCRETE_FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>sinkDistributionType</strong></dt><dd><p>A SymbolicConstant specifying how the sink temperature is distributed. Possible values
@@ -5173,7 +5173,7 @@ default value is LAGRANGIAN.Note:<em>explicitRegionType</em> applies only during
 Abaqus/Explicit analysis.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this
-interaction. The <strong>field</strong> argument applies only when <a href="#id580"><span class="problematic" id="id581">**</span></a>distributionType**=ANALYTICAL_FIELD.
+interaction. The <strong>field</strong> argument applies only when <strong>distributionType</strong> = ANALYTICAL_FIELD.
 The default value is an empty string.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the radiation is defined. Possible values are UNIFORM
@@ -5198,7 +5198,7 @@ object in the specified step.</p>
 interaction is applied. The default value is 1.0.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this
-interaction. The <strong>field</strong> argument applies only when <a href="#id582"><span class="problematic" id="id583">**</span></a>distributionType**=ANALYTICAL_FIELD.
+interaction. The <strong>field</strong> argument applies only when <strong>distributionType</strong> = ANALYTICAL_FIELD.
 The default value is an empty string.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the radiation is defined. Possible values are UNIFORM
@@ -5419,11 +5419,11 @@ interaction property.</p>
 </div>
 <p>The table data for this object are:</p>
 <ul>
-<li><p>If <a href="#id584"><span class="problematic" id="id585">**</span></a>formulation**=PENALTY or LAGRANGE, the table data specify the following:</p>
+<li><p>If <strong>formulation</strong> = PENALTY or LAGRANGE, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Friction coefficient in the first slip direction, μ1μ1.</p></li>
-<li><p>Friction coefficient in the second slip direction, μ2μ2 (if <a href="#id586"><span class="problematic" id="id587">**</span></a>directionality**=ANISOTROPIC).</p></li>
+<li><p>Friction coefficient in the second slip direction, μ2μ2 (if <strong>directionality</strong> = ANISOTROPIC).</p></li>
 <li><p>Slip rate, if the data depend on slip rate.</p></li>
 <li><p>Contact pressure, if the data depend on contact pressure.</p></li>
 <li><p>Temperature, if the data depend on temperature.</p></li>
@@ -5433,7 +5433,7 @@ interaction property.</p>
 </ul>
 </div></blockquote>
 </li>
-<li><p>If <a href="#id588"><span class="problematic" id="id589">**</span></a>formulation**=EXPONENTIAL_DECAY and <a href="#id590"><span class="problematic" id="id591">**</span></a>exponentialDecayDefinition**=COEFFICIENTS, the table data specify the following:</p>
+<li><p>If <strong>formulation</strong> = EXPONENTIAL_DECAY and <strong>exponentialDecayDefinition</strong> = COEFFICIENTS, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Static friction coefficient.</p></li>
@@ -5442,7 +5442,7 @@ interaction property.</p>
 </ul>
 </div></blockquote>
 </li>
-<li><p>If <a href="#id592"><span class="problematic" id="id593">**</span></a>formulation**=EXPONENTIAL_DECAY and <a href="#id594"><span class="problematic" id="id595">**</span></a>exponentialDecayDefinition**=TEST_DATA, the table data specify the following:</p>
+<li><p>If <strong>formulation</strong> = EXPONENTIAL_DECAY and <strong>exponentialDecayDefinition</strong> = TEST_DATA, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Friction coefficient.</p></li>
@@ -5450,7 +5450,7 @@ interaction property.</p>
 </ul>
 </div></blockquote>
 </li>
-<li><p>If <a href="#id596"><span class="problematic" id="id597">**</span></a>formulation**=USER_DEFINED, the table data specify the following:</p>
+<li><p>If <strong>formulation</strong> = USER_DEFINED, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Friction property.</p></li>
@@ -5609,7 +5609,7 @@ The default value is 0.</p>
 symmetry to tie it to the main surface. The default value is ON.</p>
 </dd>
 <dt><strong>positionTolerance</strong></dt><dd><p>A Float specifying the position tolerance. The*positionTolerance* argument applies only
-when <a href="#id598"><span class="problematic" id="id599">**</span></a>positionToleranceMethod**=SPECIFY_TOLERANCE. The default value is 0.0.</p>
+when <strong>positionToleranceMethod</strong> = SPECIFY_TOLERANCE. The default value is 0.0.</p>
 </dd>
 <dt><strong>positionToleranceMethod</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the position tolerance.
 Possible values are COMPUTED_TOLERANCE and SPECIFY_TOLERANCE. The default value is
@@ -5892,7 +5892,7 @@ maximum number of increments between global contact searches. Possible values ar
 DEFAULT and SPECIFY. The default value is DEFAULT.</p>
 </dd>
 <dt><strong>globTrkInc</strong></dt><dd><p>An Int specifying the maximum number of increments between global contact searches. The
-<strong>globTrkInc</strong> argument applies only when <a href="#id600"><span class="problematic" id="id601">**</span></a>globTrkChoice**=SPECIFY. The default value is
+<strong>globTrkInc</strong> argument applies only when <strong>globTrkChoice</strong> = SPECIFY. The default value is
 100 for surface-to-surface contact and 4 for self-contact.</p>
 </dd>
 <dt><strong>fastLocalTrk</strong></dt><dd><p>A Boolean specifying whether to use the more computationally efficient local tracking
@@ -5962,7 +5962,7 @@ is created.</p>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>interactionProperty</strong></dt><dd><p>A String specifying the name of the FilmConditionProp object associated with this
 interaction. The <strong>interactionProperty</strong> argument applies only when
-<a href="#id602"><span class="problematic" id="id603">**</span></a>definition**=PROPERTY_REF. The default value is an empty string.</p>
+<strong>definition</strong> = PROPERTY_REF. The default value is an empty string.</p>
 </dd>
 <dt><strong>sinkTemperature</strong></dt><dd><p>A Float specifying the reference sink temperature, θ0θ0. The default value is 0.0.</p>
 </dd>
@@ -5974,7 +5974,7 @@ string in an Abaqus/Explicit analysis to specify that the reference sink tempera
 applied throughout the step.</p>
 </dd>
 <dt><strong>filmCoeff</strong></dt><dd><p>A Float specifying the reference film coefficient value, hh. The <strong>filmCoeff</strong> argument
-applies when <a href="#id604"><span class="problematic" id="id605">**</span></a>definition**=EMBEDDED_COEFF, <a href="#id606"><span class="problematic" id="id607">**</span></a>definition**=USER_SUB, or <a href="#id608"><span class="problematic" id="id609">**</span></a>definition**=FIELD.
+applies when <strong>definition</strong> = EMBEDDED_COEFF, <strong>definition</strong> = USER_SUB, or <strong>definition</strong> = FIELD.
 The default value is 0.0.</p>
 </dd>
 <dt><strong>filmCoeffAmplitude</strong></dt><dd><p>A String specifying the name of the Amplitude object that gives the variation of the
@@ -5985,12 +5985,12 @@ string in an Abaqus/Explicit analysis to specify that the reference film coeffic
 applied throughout the step.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this
-interaction. The <strong>field</strong> argument applies only when <a href="#id610"><span class="problematic" id="id611">**</span></a>definition**=FIELD. The default
+interaction. The <strong>field</strong> argument applies only when <strong>definition</strong> = FIELD. The default
 value is an empty string.</p>
 </dd>
 <dt><strong>sinkFieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object associated
 with the sink temperature. The <strong>sinkFieldName</strong> argument applies only when
-<a href="#id612"><span class="problematic" id="id613">**</span></a>sinkDistributionType**=ANALYTICAL_FIELD or <a href="#id614"><span class="problematic" id="id615">**</span></a>sinkDistributionType**=DISCRETE_FIELD. The
+<strong>sinkDistributionType</strong> = ANALYTICAL_FIELD or <strong>sinkDistributionType</strong> = DISCRETE_FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>sinkDistributionType</strong></dt><dd><p>A SymbolicConstant specifying how the sink temperature is distributed. Possible values
@@ -6265,30 +6265,30 @@ The FluidCavityProperty object is derived from the InteractionProperty object.</
 values are HYDRAULIC and PNEUMATIC. The default value is HYDRAULIC.</p>
 </dd>
 <dt><strong>fluidDensity</strong></dt><dd><p>None or a Float specifying the reference fluid density. This argument is applicable only
-when <a href="#id616"><span class="problematic" id="id617">**</span></a>definition**=HYDRAULIC, and is required in that case. The default value is None.</p>
+when <strong>definition</strong> = HYDRAULIC, and is required in that case. The default value is None.</p>
 </dd>
 <dt><strong>molecularWeight</strong></dt><dd><p>None or a Float specifying the molecular weight of the ideal gas species. This argument
-is applicable only when <a href="#id618"><span class="problematic" id="id619">**</span></a>definition**=PNEUMATIC, and is required in that case. The
+is applicable only when <strong>definition</strong> = PNEUMATIC, and is required in that case. The
 default value is None.</p>
 </dd>
 <dt><strong>useExpansion</strong></dt><dd><p>A Boolean specifying whether thermal expansion coefficients will be defined. This
-argument is applicable only when <a href="#id620"><span class="problematic" id="id621">**</span></a>definition**=HYDRAULIC. The default value is OFF.</p>
+argument is applicable only when <strong>definition</strong> = HYDRAULIC. The default value is OFF.</p>
 </dd>
 <dt><strong>expansionTempDep</strong></dt><dd><p>A Boolean specifying whether the thermal fluid expansion data will have temperature
-dependency. This argument is applicable only when <a href="#id622"><span class="problematic" id="id623">**</span></a>definition**=HYDRAULIC and when
-<a href="#id624"><span class="problematic" id="id625">**</span></a>useExpansion**=True. The default value is OFF.</p>
+dependency. This argument is applicable only when <strong>definition</strong> = HYDRAULIC and when
+<strong>useExpansion</strong> = True. The default value is OFF.</p>
 </dd>
 <dt><strong>expansionDependencies</strong></dt><dd><p>An Int specifying the number of field variable dependencies in the thermal fluid
-expansion data. This argument is applicable only when <a href="#id626"><span class="problematic" id="id627">**</span></a>definition**=HYDRAULIC and when
-<a href="#id628"><span class="problematic" id="id629">**</span></a>useExpansion**=True. The default value is 0.</p>
+expansion data. This argument is applicable only when <strong>definition</strong> = HYDRAULIC and when
+<strong>useExpansion</strong> = True. The default value is 0.</p>
 </dd>
 <dt><strong>referenceTemperature</strong></dt><dd><p>A Float specifying the reference temperature for the coefficient of thermal expansion.
-This argument is applicable only when <strong>definition**=HYDRAULIC, when **useExpansion**=True,
-and when either **expansionTempDep**=True or when **expansionDependencies</strong> is greater than
+This argument is applicable only when <strong>definition</strong> = HYDRAULIC, when <strong>useExpansion</strong> = True,
+and when either <strong>expansionTempDep</strong> = True or when <strong>expansionDependencies</strong> is greater than
 0. The default value is 0.0.</p>
 </dd>
 <dt><strong>expansionTable</strong></dt><dd><p>A sequence of sequences of Floats specifying the thermal expansion coefficients. This
-argument is applicable only when <a href="#id630"><span class="problematic" id="id631">**</span></a>definition**=HYDRAULIC and when <a href="#id632"><span class="problematic" id="id633">**</span></a>useExpansion**=True.
+argument is applicable only when <strong>definition</strong> = HYDRAULIC and when <strong>useExpansion</strong> = True.
 Each sequence contains the following data:</p>
 <ul class="simple">
 <li><p>The mean coefficient of thermal expansion.</p></li>
@@ -6299,18 +6299,18 @@ Each sequence contains the following data:</p>
 </ul>
 </dd>
 <dt><strong>useBulkModulus</strong></dt><dd><p>A Boolean specifying whether fluid bulk modulus values will be defined. This argument is
-applicable only when <a href="#id634"><span class="problematic" id="id635">**</span></a>definition**=HYDRAULIC. The default value is OFF.</p>
+applicable only when <strong>definition</strong> = HYDRAULIC. The default value is OFF.</p>
 </dd>
 <dt><strong>bulkModulusTempDep</strong></dt><dd><p>A Boolean specifying whether the fluid bulk modulus data will have temperature
-dependency. This argument is applicable only when <a href="#id636"><span class="problematic" id="id637">**</span></a>definition**=HYDRAULIC and when
-<a href="#id638"><span class="problematic" id="id639">**</span></a>useBulkModulus**=True. The default value is OFF.</p>
+dependency. This argument is applicable only when <strong>definition</strong> = HYDRAULIC and when
+<strong>useBulkModulus</strong> = True. The default value is OFF.</p>
 </dd>
 <dt><strong>bulkModulusDependencies</strong></dt><dd><p>An Int specifying the number of field variable dependencies in the fluid bulk modulus
-data. This argument is applicable only when <a href="#id640"><span class="problematic" id="id641">**</span></a>definition**=HYDRAULIC and when
-<a href="#id642"><span class="problematic" id="id643">**</span></a>useBulkModulus**=True. The default value is 0.</p>
+data. This argument is applicable only when <strong>definition</strong> = HYDRAULIC and when
+<strong>useBulkModulus</strong> = True. The default value is 0.</p>
 </dd>
 <dt><strong>bulkModulusTable</strong></dt><dd><p>A sequence of sequences of Floats specifying the fluid bulk modulus values. This
-argument is applicable only when <a href="#id644"><span class="problematic" id="id645">**</span></a>definition**=HYDRAULIC and when <a href="#id646"><span class="problematic" id="id647">**</span></a>useBulkModulus**=True.
+argument is applicable only when <strong>definition</strong> = HYDRAULIC and when <strong>useBulkModulus</strong> = True.
 Each sequence contains the following data:</p>
 <ul class="simple">
 <li><p>The fluid bulk modulus.</p></li>
@@ -6321,22 +6321,22 @@ Each sequence contains the following data:</p>
 </ul>
 </dd>
 <dt><strong>useCapacity</strong></dt><dd><p>A Boolean specifying whether molar heat capacity values will be defined. This argument
-is applicable only when <a href="#id648"><span class="problematic" id="id649">**</span></a>definition**=PNEUMATIC. The default value is OFF.</p>
+is applicable only when <strong>definition</strong> = PNEUMATIC. The default value is OFF.</p>
 </dd>
 <dt><strong>capacityType</strong></dt><dd><p>A SymbolicConstant specifying the method to define the molar heat capacity. Possible
 values are POLYNOMIAL and TABULAR. The default value is POLYNOMIAL.</p>
 </dd>
 <dt><strong>capacityTempDep</strong></dt><dd><p>A Boolean specifying whether the molar heat capacity data will have temperature
-dependency. This argument is applicable only when <a href="#id650"><span class="problematic" id="id651">**</span></a>definition**=PNEUMATIC, when
-<a href="#id652"><span class="problematic" id="id653">**</span></a>useCapacity**=True, and when <a href="#id654"><span class="problematic" id="id655">**</span></a>capacityType**=TABULAR. The default value is OFF.</p>
+dependency. This argument is applicable only when <strong>definition</strong> = PNEUMATIC, when
+<strong>useCapacity</strong> = True, and when <strong>capacityType</strong> = TABULAR. The default value is OFF.</p>
 </dd>
 <dt><strong>capacityDependencies</strong></dt><dd><p>An Int specifying the number of field variable dependencies in the molar heat capacity
-data. This argument is applicable only when <a href="#id656"><span class="problematic" id="id657">**</span></a>definition**=PNEUMATIC, when
-<a href="#id658"><span class="problematic" id="id659">**</span></a>useCapacity**=True, and when <a href="#id660"><span class="problematic" id="id661">**</span></a>capacityType**=TABULAR. The default value is 0.</p>
+data. This argument is applicable only when <strong>definition</strong> = PNEUMATIC, when
+<strong>useCapacity</strong> = True, and when <strong>capacityType</strong> = TABULAR. The default value is 0.</p>
 </dd>
 <dt><strong>capacityTable</strong></dt><dd><p>A sequence of sequences of Floats specifying the molar heat capacity values in the form
 of a polynomial expression. This argument is applicable only when
-<a href="#id662"><span class="problematic" id="id663">**</span></a>definition**=PNEUMATIC, when <a href="#id664"><span class="problematic" id="id665">**</span></a>useCapacity**=True, and when <a href="#id666"><span class="problematic" id="id667">**</span></a>capacityType**=POLYNOMIAL. In
+<strong>definition</strong> = PNEUMATIC, when <strong>useCapacity</strong> = True, and when <strong>capacityType</strong> = POLYNOMIAL. In
 this form, only one sequence is specified and that sequence contains the following data:</p>
 <ul>
 <li><p>The first molar heat capacity coefficient.</p></li>
@@ -6346,7 +6346,7 @@ this form, only one sequence is specified and that sequence contains the followi
 <li><p>The fifth molar heat capacity coefficient.</p>
 <p>Alternatively, the sequence data may specify the molar heat capacity values at constant
 pressure for an ideal gas species. This argument is applicable only when
-<a href="#id668"><span class="problematic" id="id669">**</span></a>definition**=PNEUMATIC, when <a href="#id670"><span class="problematic" id="id671">**</span></a>useCapacity**=True, and when <a href="#id672"><span class="problematic" id="id673">**</span></a>capacityType**=TABULAR. Each
+<strong>definition</strong> = PNEUMATIC, when <strong>useCapacity</strong> = True, and when <strong>capacityType</strong> = TABULAR. Each
 sequence contains the following data:</p>
 </li>
 <li><p>The molar heat capacity at constant pressure.</p></li>
@@ -6445,7 +6445,7 @@ The FluidExchange object is derived from the Interaction object.</p>
 are TO_ENVIRONMENT and BETWEEN_CAVITIES. The default value is TO_ENVIRONMENT.</p>
 </dd>
 <dt><strong>secondCavity</strong></dt><dd><p>A String specifying the second FluidCavity object associated with this interaction. This
-argument is applicable only when <a href="#id674"><span class="problematic" id="id675">**</span></a>definition**=BETWEEN_CAVITIES.</p>
+argument is applicable only when <strong>definition</strong> = BETWEEN_CAVITIES.</p>
 </dd>
 <dt><strong>exchangeArea</strong></dt><dd><p>A Float specifying the effective exchange area. The default value is 1.0.</p>
 </dd>
@@ -6502,16 +6502,16 @@ Possible values are BULK_VISCOSITY, MASS_FLUX, MASS_RATE_LEAK, VOL_FLUX, and
 VOL_RATE_LEAK. The default value is BULK_VISCOSITY.</p>
 </dd>
 <dt><strong>pressureDependency</strong></dt><dd><p>A Boolean specifying whether the data will have pressure dependency. This argument is
-applicable only when <a href="#id676"><span class="problematic" id="id677">**</span></a>definition**=BULK_VISCOSITY, or when <a href="#id678"><span class="problematic" id="id679">**</span></a>definition**=MASS_RATE_LEAK,
-or when <a href="#id680"><span class="problematic" id="id681">**</span></a>definition**=VOL_RATE_LEAK. The default value is OFF.</p>
+applicable only when <strong>definition</strong> = BULK_VISCOSITY, or when <strong>definition</strong> = MASS_RATE_LEAK,
+or when <strong>definition</strong> = VOL_RATE_LEAK. The default value is OFF.</p>
 </dd>
 <dt><strong>temperatureDependency</strong></dt><dd><p>A Boolean specifying whether the data will have temperature dependency. This argument is
-applicable only when <a href="#id682"><span class="problematic" id="id683">**</span></a>definition**=BULK_VISCOSITY, or when <a href="#id684"><span class="problematic" id="id685">**</span></a>definition**=MASS_RATE_LEAK,
-or when <a href="#id686"><span class="problematic" id="id687">**</span></a>definition**=VOL_RATE_LEAK. The default value is OFF.</p>
+applicable only when <strong>definition</strong> = BULK_VISCOSITY, or when <strong>definition</strong> = MASS_RATE_LEAK,
+or when <strong>definition</strong> = VOL_RATE_LEAK. The default value is OFF.</p>
 </dd>
 <dt><strong>fieldDependencies</strong></dt><dd><p>An Int specifying the number of field variable dependencies in the data. This argument
-is applicable only when <a href="#id688"><span class="problematic" id="id689">**</span></a>definition**=BULK_VISCOSITY, or when
-<a href="#id690"><span class="problematic" id="id691">**</span></a>definition**=MASS_RATE_LEAK, or when <a href="#id692"><span class="problematic" id="id693">**</span></a>definition**=VOL_RATE_LEAK. The default value is 0.</p>
+is applicable only when <strong>definition</strong> = BULK_VISCOSITY, or when
+<strong>definition</strong> = MASS_RATE_LEAK, or when <strong>definition</strong> = VOL_RATE_LEAK. The default value is 0.</p>
 </dd>
 </dl>
 </dd>
@@ -6574,7 +6574,7 @@ interaction property.</p>
 </div>
 <p>The table data for this object are:</p>
 <p>Table data for <strong>initTable</strong>:</p>
-<p>If <a href="#id694"><span class="problematic" id="id695">**</span></a>type**=VCCT for <a href="#id696"><span class="problematic" id="id697">**</span></a>mixedModeBehavior**=BK or REEDER, the table data specify the following:</p>
+<p>If <strong>type</strong> = VCCT for <strong>mixedModeBehavior</strong> = BK or REEDER, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Mode I critical energy release rate, GICGI⁢C.</p></li>
@@ -6587,7 +6587,7 @@ interaction property.</p>
 <li><p>Etc.</p></li>
 </ul>
 </div></blockquote>
-<p>If <a href="#id698"><span class="problematic" id="id699">**</span></a>type**=VCCT for <a href="#id700"><span class="problematic" id="id701">**</span></a>mixedModeBehavior**=POWER, the table data specify the following:</p>
+<p>If <strong>type</strong> = VCCT for <strong>mixedModeBehavior</strong> = POWER, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Mode I critical energy release rate, GICGI⁢C.</p></li>
@@ -6601,7 +6601,7 @@ interaction property.</p>
 <li><p>Etc.</p></li>
 </ul>
 </div></blockquote>
-<p>If <a href="#id702"><span class="problematic" id="id703">**</span></a>type**=ENHANCED VCCT for <a href="#id704"><span class="problematic" id="id705">**</span></a>mixedModeBehavior**=BK or REEDER, the table data specify the following:</p>
+<p>If <strong>type</strong> = ENHANCED VCCT for <strong>mixedModeBehavior</strong> = BK or REEDER, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Mode I critical energy release rate for onset crack, GICGI⁢C.</p></li>
@@ -6617,7 +6617,7 @@ interaction property.</p>
 <li><p>Etc.</p></li>
 </ul>
 </div></blockquote>
-<p>If <a href="#id706"><span class="problematic" id="id707">**</span></a>type**=ENHANCED VCCT for <a href="#id708"><span class="problematic" id="id709">**</span></a>mixedModeBehavior**=POWER, the table data specify the following:</p>
+<p>If <strong>type</strong> = ENHANCED VCCT for <strong>mixedModeBehavior</strong> = POWER, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Mode I critical energy release rate for onset crack, GICGI⁢C.</p></li>
@@ -6860,31 +6860,31 @@ set to CONWEP. Possible values are PRESSURE, ACCELERATION, UNDEX, and CONWEP. Th
 default value is PRESSURE.</p>
 </dd>
 <dt><strong>amplitude</strong></dt><dd><p>A String specifying the name of the Amplitude object that defines the fluid pressure
-time history at the standoff point, if <a href="#id710"><span class="problematic" id="id711">**</span></a>definition**=PRESSURE. If
-<a href="#id712"><span class="problematic" id="id713">**</span></a>definition**=ACCELERATION, then this string specifies the name of the Amplitude object
+time history at the standoff point, if <strong>definition</strong> = PRESSURE. If
+<strong>definition</strong> = ACCELERATION, then this string specifies the name of the Amplitude object
 that defines the fluid particle acceleration time history at the standoff point. This
-member can be specified only if <a href="#id714"><span class="problematic" id="id715">**</span></a>definition**=PRESSURE or ACCELERATION. The default value
+member can be specified only if <strong>definition</strong> = PRESSURE or ACCELERATION. The default value
 is an empty string.</p>
 </dd>
 <dt><strong>imaginaryAmplitude</strong></dt><dd><p>A String specifying the name of the Amplitude object that defines the imaginary
 component of the fluid pressure time history at the standoff point. This member is
-applicable only for linear perturbation steps and if <a href="#id716"><span class="problematic" id="id717">**</span></a>definition**=PRESSURE. The default
+applicable only for linear perturbation steps and if <strong>definition</strong> = PRESSURE. The default
 value is an empty string.</p>
 </dd>
 <dt><strong>surfaceNormal</strong></dt><dd><p>A sequence of three Floats specifying the X, Y, and Z components of the direction cosine
-of the fluid surface normal.This argument is valid only when <a href="#id718"><span class="problematic" id="id719">**</span></a>definition**=UNDEX.</p>
+of the fluid surface normal.This argument is valid only when <strong>definition</strong> = UNDEX.</p>
 </dd>
 <dt><strong>initialDepth</strong></dt><dd><p>None or a Float specifying the initial depth of the UNDEX bubble. The default value is
-None.This argument is valid only when <a href="#id720"><span class="problematic" id="id721">**</span></a>definition**=UNDEX.</p>
+None.This argument is valid only when <strong>definition</strong> = UNDEX.</p>
 </dd>
 <dt><strong>referenceMagnitude</strong></dt><dd><p>A Float specifying the reference magnitude.This argument is not valid when
-<a href="#id722"><span class="problematic" id="id723">**</span></a>definition**=CONWEP.</p>
+<strong>definition</strong> = CONWEP.</p>
 </dd>
 <dt><strong>detonationTime</strong></dt><dd><p>A Float specifying the time of detonation, given in total time.This argument is valid
-only when <a href="#id724"><span class="problematic" id="id725">**</span></a>definition**=CONWEP.</p>
+only when <strong>definition</strong> = CONWEP.</p>
 </dd>
 <dt><strong>magnitudeFactor</strong></dt><dd><p>A Float specifying the magnitude scale factor. The default value is 1.0.This argument is
-valid only when <a href="#id726"><span class="problematic" id="id727">**</span></a>definition**=CONWEP.</p>
+valid only when <strong>definition</strong> = CONWEP.</p>
 </dd>
 </dl>
 </dd>
@@ -6945,115 +6945,115 @@ PLANAR, SPHERICAL, DIFFUSE, AIR_BLAST, and SURFACE_BLAST. The default value is P
 </dd>
 <dt><strong>propagationModel</strong></dt><dd><p>A SymbolicConstant specifying the spherical propagation model. Possible values are
 ACOUSTIC, UNDEX_CHARGE, and GENERALIZED_DECAY. The default value is ACOUSTIC.This
-argument is valid only when <a href="#id728"><span class="problematic" id="id729">**</span></a>definition**=SPHERICAL.</p>
+argument is valid only when <strong>definition</strong> = SPHERICAL.</p>
 </dd>
 <dt><strong>soundSpeed</strong></dt><dd><p>A Float specifying the speed of sound in the fluid.This argument is not valid when
-<a href="#id730"><span class="problematic" id="id731">**</span></a>definition**=AIR_BLAST or when <a href="#id732"><span class="problematic" id="id733">**</span></a>definition**=SURFACE_BLAST.</p>
+<strong>definition</strong> = AIR_BLAST or when <strong>definition</strong> = SURFACE_BLAST.</p>
 </dd>
 <dt><strong>fluidDensity</strong></dt><dd><p>A Float specifying the fluid mass density.This argument is not valid when
-<a href="#id734"><span class="problematic" id="id735">**</span></a>definition**=AIR_BLAST or when <a href="#id736"><span class="problematic" id="id737">**</span></a>definition**=SURFACE_BLAST.</p>
+<strong>definition</strong> = AIR_BLAST or when <strong>definition</strong> = SURFACE_BLAST.</p>
 </dd>
 <dt><strong>specificHeatRatio</strong></dt><dd><p>None or a Float specifying the ratio of specific heats for gas. The default value is
-None.This argument is valid only when <a href="#id738"><span class="problematic" id="id739">**</span></a>definition**=SPHERICAL and
-<a href="#id740"><span class="problematic" id="id741">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>gravity</strong></dt><dd><p>None or a Float specifying the acceleration due to gravity. The default value is
-None.This argument is valid only when <a href="#id742"><span class="problematic" id="id743">**</span></a>definition**=SPHERICAL and
-<a href="#id744"><span class="problematic" id="id745">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>atmosphericPressure</strong></dt><dd><p>None or a Float specifying the atmospheric pressure. The default value is None.This
-argument is valid only when <a href="#id746"><span class="problematic" id="id747">**</span></a>definition**=SPHERICAL and <a href="#id748"><span class="problematic" id="id749">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+argument is valid only when <strong>definition</strong> = SPHERICAL and <strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>dragCoefficient</strong></dt><dd><p>None or a Float specifying the fluid drag coefficient. The default value is None.This
-argument is valid only when <a href="#id750"><span class="problematic" id="id751">**</span></a>definition**=SPHERICAL and <a href="#id752"><span class="problematic" id="id753">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+argument is valid only when <strong>definition</strong> = SPHERICAL and <strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>dragExponent</strong></dt><dd><p>A Float specifying the fluid drag exponent. The default value is 2.0.This argument is
-valid only when <a href="#id754"><span class="problematic" id="id755">**</span></a>definition**=SPHERICAL and <a href="#id756"><span class="problematic" id="id757">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+valid only when <strong>definition</strong> = SPHERICAL and <strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>waveEffects</strong></dt><dd><p>A Boolean specifying whether or not to include wave effects in the fluid and gas. The
-default value is ON.This argument is valid only when <a href="#id758"><span class="problematic" id="id759">**</span></a>definition**=SPHERICAL and
-<a href="#id760"><span class="problematic" id="id761">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+default value is ON.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>chargeDensity</strong></dt><dd><p>None or a Float specifying the density of the charge material. The default value is
-None.This argument is valid only when <a href="#id762"><span class="problematic" id="id763">**</span></a>definition**=SPHERICAL and
-<a href="#id764"><span class="problematic" id="id765">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>chargeMass</strong></dt><dd><p>None or a Float specifying the mass of the charge material. The default value is
-None.This argument is valid only when <a href="#id766"><span class="problematic" id="id767">**</span></a>definition**=SPHERICAL and
-<a href="#id768"><span class="problematic" id="id769">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>constantK1</strong></dt><dd><p>None or a Float specifying the charge material constant K. The default value is
-None.This argument is valid only when <a href="#id770"><span class="problematic" id="id771">**</span></a>definition**=SPHERICAL and
-<a href="#id772"><span class="problematic" id="id773">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>constantK2</strong></dt><dd><p>None or a Float specifying the charge material constant k. The default value is
-None.This argument is valid only when <a href="#id774"><span class="problematic" id="id775">**</span></a>definition**=SPHERICAL and
-<a href="#id776"><span class="problematic" id="id777">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>constantA</strong></dt><dd><p>None or a Float specifying the charge material constant A. The default value is
-None.This argument is valid only when <a href="#id778"><span class="problematic" id="id779">**</span></a>definition**=SPHERICAL and
-<a href="#id780"><span class="problematic" id="id781">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>constantB</strong></dt><dd><p>None or a Float specifying the charge material constant B. The default value is
-None.This argument is valid only when <a href="#id782"><span class="problematic" id="id783">**</span></a>definition**=SPHERICAL and
-<a href="#id784"><span class="problematic" id="id785">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>constantKc</strong></dt><dd><p>None or a Float specifying the charge material constant Kc. The default value is
-None.This argument is valid only when <a href="#id786"><span class="problematic" id="id787">**</span></a>definition**=SPHERICAL and
-<a href="#id788"><span class="problematic" id="id789">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>duration</strong></dt><dd><p>None or a Float specifying the time duration for the bubble simulation. The default
-value is None.This argument is valid only when <a href="#id790"><span class="problematic" id="id791">**</span></a>definition**=SPHERICAL and
-<a href="#id792"><span class="problematic" id="id793">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+value is None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>maximumSteps</strong></dt><dd><p>An Int specifying the maximum number of time steps for the bubble simulation. The
-default value is 1500.This argument is valid only when <a href="#id794"><span class="problematic" id="id795">**</span></a>definition**=SPHERICAL and
-<a href="#id796"><span class="problematic" id="id797">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+default value is 1500.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>relativeStepControl</strong></dt><dd><p>A Float specifying the relative step size control parameter. The default value is
-1x10-11.This argument is valid only when <a href="#id798"><span class="problematic" id="id799">**</span></a>definition**=SPHERICAL and
-<a href="#id800"><span class="problematic" id="id801">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+1x10-11.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>absoluteStepControl</strong></dt><dd><p>A Float specifying the absolute step size control parameter. The default value is
-1x10-11.This argument is valid only when <a href="#id802"><span class="problematic" id="id803">**</span></a>definition**=SPHERICAL and
-<a href="#id804"><span class="problematic" id="id805">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+1x10-11.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>stepControlExponent</strong></dt><dd><p>A Float specifying the step size control exponent. The default value is 0.2.This
-argument is valid only when <a href="#id806"><span class="problematic" id="id807">**</span></a>definition**=SPHERICAL and <a href="#id808"><span class="problematic" id="id809">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+argument is valid only when <strong>definition</strong> = SPHERICAL and <strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>genDecayA</strong></dt><dd><p>A Float specifying the constant A associated with the generalized decay propagation
-model. The default value is 0.0.This argument is valid only when <a href="#id810"><span class="problematic" id="id811">**</span></a>definition**=SPHERICAL
-and <a href="#id812"><span class="problematic" id="id813">**</span></a>propagationModel**=GENERALIZED_DECAY.</p>
+model. The default value is 0.0.This argument is valid only when <strong>definition</strong> = SPHERICAL
+and <strong>propagationModel</strong> = GENERALIZED_DECAY.</p>
 </dd>
 <dt><strong>genDecayB</strong></dt><dd><p>A Float specifying the constant B associated with the generalized decay propagation
-model. The default value is 0.0.This argument is valid only when <a href="#id814"><span class="problematic" id="id815">**</span></a>definition**=SPHERICAL
-and <a href="#id816"><span class="problematic" id="id817">**</span></a>propagationModel**=GENERALIZED_DECAY.</p>
+model. The default value is 0.0.This argument is valid only when <strong>definition</strong> = SPHERICAL
+and <strong>propagationModel</strong> = GENERALIZED_DECAY.</p>
 </dd>
 <dt><strong>genDecayC</strong></dt><dd><p>A Float specifying the constant C associated with the generalized decay propagation
-model. The default value is 0.0.This argument is valid only when <a href="#id818"><span class="problematic" id="id819">**</span></a>definition**=SPHERICAL
-and <a href="#id820"><span class="problematic" id="id821">**</span></a>propagationModel**=GENERALIZED_DECAY.</p>
+model. The default value is 0.0.This argument is valid only when <strong>definition</strong> = SPHERICAL
+and <strong>propagationModel</strong> = GENERALIZED_DECAY.</p>
 </dd>
 <dt><strong>seedNumber</strong></dt><dd><p>An Int specifying the seed number (N) for the diffuse source calculation. N2 sources
-will be used in the simulation.This argument is valid only when <a href="#id822"><span class="problematic" id="id823">**</span></a>definition**=DIFFUSE.</p>
+will be used in the simulation.This argument is valid only when <strong>definition</strong> = DIFFUSE.</p>
 </dd>
 <dt><strong>massTNT</strong></dt><dd><p>A Float specifying the equivalent mass of TNT, in any preferred mass unit.This argument
-is valid only when <a href="#id824"><span class="problematic" id="id825">**</span></a>definition**=AIR_BLAST or <a href="#id826"><span class="problematic" id="id827">**</span></a>definition**=SURFACE_BLAST.</p>
+is valid only when <strong>definition</strong> = AIR_BLAST or <strong>definition</strong> = SURFACE_BLAST.</p>
 </dd>
 <dt><strong>massFactor</strong></dt><dd><p>A Float specifying the multiplication factor to convert from the preferred mass unit to
 kilograms. The default value is 1.0.This argument is valid only when
-<a href="#id828"><span class="problematic" id="id829">**</span></a>definition**=AIR_BLAST or <a href="#id830"><span class="problematic" id="id831">**</span></a>definition**=SURFACE_BLAST.</p>
+<strong>definition</strong> = AIR_BLAST or <strong>definition</strong> = SURFACE_BLAST.</p>
 </dd>
 <dt><strong>lengthFactor</strong></dt><dd><p>A Float specifying the multiplication factor to convert from the analysis length unit to
-meters. The default value is 1.0.This argument is valid only when <a href="#id832"><span class="problematic" id="id833">**</span></a>definition**=AIR_BLAST
-or <a href="#id834"><span class="problematic" id="id835">**</span></a>definition**=SURFACE_BLAST.</p>
+meters. The default value is 1.0.This argument is valid only when <strong>definition</strong> = AIR_BLAST
+or <strong>definition</strong> = SURFACE_BLAST.</p>
 </dd>
 <dt><strong>timeFactor</strong></dt><dd><p>A Float specifying the multiplication factor to convert from the analysis time unit to
 seconds. The default value is 1.0.This argument is valid only when
-<a href="#id836"><span class="problematic" id="id837">**</span></a>definition**=AIR_BLAST or <a href="#id838"><span class="problematic" id="id839">**</span></a>definition**=SURFACE_BLAST.</p>
+<strong>definition</strong> = AIR_BLAST or <strong>definition</strong> = SURFACE_BLAST.</p>
 </dd>
 <dt><strong>pressureFactor</strong></dt><dd><p>A Float specifying the multiplication factor to convert from the analysis pressure unit
 to pascals. The default value is 1.0.This argument is valid only when
-<a href="#id840"><span class="problematic" id="id841">**</span></a>definition**=AIR_BLAST or <a href="#id842"><span class="problematic" id="id843">**</span></a>definition**=SURFACE_BLAST.</p>
+<strong>definition</strong> = AIR_BLAST or <strong>definition</strong> = SURFACE_BLAST.</p>
 </dd>
 </dl>
 </dd>
@@ -7251,17 +7251,17 @@ model change may be required in a subsequent restart analysis (either for elemen
 contact pairs). The default value is OFF.</p>
 </dd>
 <dt><strong>regionType</strong></dt><dd><p>A SymbolicConstant specifying the region selection type. This argument is valid only
-when <a href="#id844"><span class="problematic" id="id845">**</span></a>isRestart**=False. Possible values are GEOMETRY, SKINS, STRINGERS, and ELEMENTS.
+when <strong>isRestart</strong> = False. Possible values are GEOMETRY, SKINS, STRINGERS, and ELEMENTS.
 The default value is GEOMETRY.</p>
 </dd>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the elements to be removed or reactivated. This argument is
-valid only when <a href="#id846"><span class="problematic" id="id847">**</span></a>isRestart**=False.</p>
+valid only when <strong>isRestart</strong> = False.</p>
 </dd>
 <dt><strong>activeInStep</strong></dt><dd><p>A Boolean specifying whether elements are being removed or reactivated. This argument is
-valid only when <a href="#id848"><span class="problematic" id="id849">**</span></a>isRestart**=False. The default value is OFF.</p>
+valid only when <strong>isRestart</strong> = False. The default value is OFF.</p>
 </dd>
 <dt><strong>includeStrain</strong></dt><dd><p>A Boolean specifying whether stress/displacement elements are reactivated with strain.
-This argument is valid only when <a href="#id850"><span class="problematic" id="id851">**</span></a>isRestart**=False and when <a href="#id852"><span class="problematic" id="id853">**</span></a>activeInStep**=True. The
+This argument is valid only when <strong>isRestart</strong> = False and when <strong>activeInStep</strong> = True. The
 default value is OFF.</p>
 </dd>
 </dl>
@@ -7280,10 +7280,10 @@ specified step.</p>
 <dt><strong>stepName</strong></dt><dd><p>A String specifying the name of the step in which the interaction is modified.</p>
 </dd>
 <dt><strong>activeInStep</strong></dt><dd><p>A Boolean specifying whether elements are being removed or reactivated. This argument is
-valid only when <a href="#id854"><span class="problematic" id="id855">**</span></a>isRestart**=False. The default value is OFF.</p>
+valid only when <strong>isRestart</strong> = False. The default value is OFF.</p>
 </dd>
 <dt><strong>includeStrain</strong></dt><dd><p>A Boolean specifying whether stress/displacement elements are reactivated with strain.
-This argument is valid only when <a href="#id856"><span class="problematic" id="id857">**</span></a>isRestart**=False and when <a href="#id858"><span class="problematic" id="id859">**</span></a>activeInStep**=True. The
+This argument is valid only when <strong>isRestart</strong> = False and when <strong>activeInStep</strong> = True. The
 default value is OFF.</p>
 </dd>
 </dl>
@@ -7308,7 +7308,7 @@ default value is OFF.</p>
 </div>
 <p>The table data for this object are:</p>
 <ul>
-<li><p>If <a href="#id860"><span class="problematic" id="id861">**</span></a>pressureOverclosure**=EXPONENTIAL, the table data specify the following:</p>
+<li><p>If <strong>pressureOverclosure</strong> = EXPONENTIAL, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Pressure at zero clearance, p0p0.</p></li>
@@ -7316,7 +7316,7 @@ default value is OFF.</p>
 </ul>
 </div></blockquote>
 </li>
-<li><p>If <a href="#id862"><span class="problematic" id="id863">**</span></a>pressureOverclosure**=TABULAR, the table data specify the following:</p>
+<li><p>If <strong>pressureOverclosure</strong> = TABULAR, the table data specify the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Pressure.</p></li>
@@ -7608,11 +7608,11 @@ where it is created.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this
-interaction. The <strong>field</strong> argument applies only when <a href="#id864"><span class="problematic" id="id865">**</span></a>distributionType**=ANALYTICAL_FIELD.
+interaction. The <strong>field</strong> argument applies only when <strong>distributionType</strong> = ANALYTICAL_FIELD.
 The default value is an empty string.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the radiation is distributed. This argument applies
-only when <a href="#id866"><span class="problematic" id="id867">**</span></a>radiationType**=AMBIENT. Possible values are UNIFORM and ANALYTICAL_FIELD. The
+only when <strong>radiationType</strong> = AMBIENT. Possible values are UNIFORM and ANALYTICAL_FIELD. The
 default value is UNIFORM.</p>
 </dd>
 <dt><strong>radiationType</strong></dt><dd><p>A SymbolicConstant specifying whether to use the default surface radiation behavior, or
@@ -7620,14 +7620,14 @@ the cavity radiation approximation. Possible values are AMBIENT and CAVITY. The 
 value is AMBIENT.</p>
 </dd>
 <dt><strong>ambientTemperature</strong></dt><dd><p>A Float specifying the reference ambient temperature, θ0θ0. This argument applies only
-when <a href="#id868"><span class="problematic" id="id869">**</span></a>radiationType**=AMBIENT. The default value is 0.0.</p>
+when <strong>radiationType</strong> = AMBIENT. The default value is 0.0.</p>
 </dd>
 <dt><strong>ambientTemperatureAmp</strong></dt><dd><p>A String specifying the name of the Amplitude object that gives the variation of the
 ambient temperature with time.Note:Use None in an Abaqus/Standard analysis to specify
 that the reference ambient temperature is applied immediately at the beginning of the
 step or linearly over the step. Use None in an Abaqus/Explicit analysis to specify that
 the reference ambient temperature is applied throughout the step. This argument applies
-only when <a href="#id870"><span class="problematic" id="id871">**</span></a>radiationType**=AMBIENT.</p>
+only when <strong>radiationType</strong> = AMBIENT.</p>
 </dd>
 </dl>
 </dd>
@@ -7977,10 +7977,10 @@ is created.</p>
 NODE_TO_SURFACE and SURFACE_TO_SURFACE. The default value is SURFACE_TO_SURFACE.</p>
 </dd>
 <dt><strong>thickness</strong></dt><dd><p>A Boolean specifying whether shell/membrane element thickness is considered. The default
-value is ON.This argument in valid only when <a href="#id872"><span class="problematic" id="id873">**</span></a>enforcement**=SURFACE_TO_SURFACE.</p>
+value is ON.This argument in valid only when <strong>enforcement</strong> = SURFACE_TO_SURFACE.</p>
 </dd>
 <dt><strong>smooth</strong></dt><dd><p>A Float specifying the degree of smoothing used for deformable or rigid main surfaces
-involved when <a href="#id874"><span class="problematic" id="id875">**</span></a>enforcement**=NODE_TO_SURFACE. The value given must lie between 0.0 and
+involved when <strong>enforcement</strong> = NODE_TO_SURFACE. The value given must lie between 0.0 and
 0.5. The default value is 0.2.</p>
 </dd>
 <dt><strong>contactControls</strong></dt><dd><p>A String specifying the name of the ContactControl object associated with this
@@ -8435,13 +8435,13 @@ argument. Possible values are RELATIVE and ABSOLUTE. The default value is RELATI
 surface face dimension. The float values represent percentages (e.g.: 0.001=0.1%). Only
 contact interactions defined with augmented Lagrangian surface behavior will be affected
 by this argument. The default value is 10-3.The <strong>relativePenetrationTolerance</strong> argument
-applies only when <strong>penetrationTolChoice**=RELATIVE. The **relativePenetrationTolerance</strong>
+applies only when <strong>penetrationTolChoice</strong> = RELATIVE. The <strong>relativePenetrationTolerance</strong>
 and <strong>absolutePenetrationTolerance</strong> arguments are mutually exclusive.</p>
 </dd>
 <dt><strong>absolutePenetrationTolerance</strong></dt><dd><p>None or a Float specifying the allowable penetration. Only contact interactions defined
 with augmented Lagrangian surface behavior will be affected by this argument. The
 <strong>absolutePenetrationTolerance</strong> argument applies only when
-<strong>penetrationTolChoice**=ABSOLUTE. The **relativePenetrationTolerance</strong> and
+<strong>penetrationTolChoice</strong> = ABSOLUTE. The <strong>relativePenetrationTolerance</strong> and
 <strong>absolutePenetrationTolerance</strong> arguments are mutually exclusive. The default value is
 None.</p>
 </dd>
@@ -8477,10 +8477,10 @@ default value is NONE.</p>
 </dd>
 <dt><strong>dampFactor</strong></dt><dd><p>A Float specifying the value of the damping factor. This value is multiplied by the
 calculated damping coefficient. The default value is 1.0.This argument is only valid
-when <a href="#id876"><span class="problematic" id="id877">**</span></a>stabilizeChoice**=AUTOMATIC.</p>
+when <strong>stabilizeChoice</strong> = AUTOMATIC.</p>
 </dd>
 <dt><strong>dampCoef</strong></dt><dd><p>A Float specifying the damping coefficient. The default value is 0.0.This argument is
-only valid when <a href="#id878"><span class="problematic" id="id879">**</span></a>stabilizeChoice**=COEFFICIENT.</p>
+only valid when <strong>stabilizeChoice</strong> = COEFFICIENT.</p>
 </dd>
 <dt><strong>tangFraction</strong></dt><dd><p>A Float specifying the tangential stabilization as a fraction of the normal
 stabilization (damping). The default value is 1.0.This argument is valid only if
@@ -8495,8 +8495,8 @@ values are COMPUTE and SPECIFY. The default value is COMPUTE.This argument is va
 if <strong>stabilizeChoice</strong> = AUTOMATIC or COEFFICIENT.</p>
 </dd>
 <dt><strong>zeroDamping</strong></dt><dd><p>None or a Float specifying the clearance at which damping becomes zero. This argument is
-valid only when <strong>zeroDampingChoice**=SPECIFY. This argument is valid only if
-**stabilizeChoice</strong> = AUTOMATIC or COEFFICIENT. The default value is None.</p>
+valid only when <strong>zeroDampingChoice</strong> = SPECIFY. This argument is valid only if
+<strong>stabilizeChoice</strong> = AUTOMATIC or COEFFICIENT. The default value is None.</p>
 </dd>
 <dt><strong>enforceWithLagrangeMultipliers</strong></dt><dd><p>A SymbolicConstant specifying whether to enforce the contact constraints with Lagrange
 multipliers. Possible values are DEFAULT, ENFORCEMENT_OFF, and ENFORCEMENT_ON. The
@@ -8558,16 +8558,16 @@ The StdInitialization object is derived from the ContactInitialization object.</
 ADJUST, INTERFERENCE, and CLEARANCE. The default value is ADJUST.</p>
 </dd>
 <dt><strong>interferenceDistance</strong></dt><dd><p>None or a Float specifying the interference distance. This argument is valid only when
-<a href="#id880"><span class="problematic" id="id881">**</span></a>overclosureType**=INTERFERENCE. The default value is None.</p>
+<strong>overclosureType</strong> = INTERFERENCE. The default value is None.</p>
 </dd>
 <dt><strong>clearanceDistance</strong></dt><dd><p>None or a Float specifying the initial clearance distance. This argument is valid only
-when <a href="#id882"><span class="problematic" id="id883">**</span></a>overclosureType**=CLEARANCE, and must be specified in that case. The default value
+when <strong>overclosureType</strong> = CLEARANCE, and must be specified in that case. The default value
 is None.</p>
 </dd>
 <dt><strong>openingTolerance</strong></dt><dd><p>None or a Float specifying the distance tolerance within which initial openings will
 undergo strain-free adjustments. This argument is not valid when
-<strong>overclosureType**=INTERFERENCE unless a value has been specified for
-**interferenceDistance</strong>. The default value is None.</p>
+<strong>overclosureType</strong> = INTERFERENCE unless a value has been specified for
+<strong>interferenceDistance</strong>. The default value is None.</p>
 </dd>
 <dt><strong>overclosureTolerance</strong></dt><dd><p>None or a Float specifying the distance tolerance within which initial overclosures will
 undergo strain-free adjustments.. The default value is None.</p>
@@ -9160,7 +9160,7 @@ KINEMATIC and PENALTY. The default value is KINEMATIC.</p>
 are DEFAULT and SPECIFIED. The default value is DEFAULT.</p>
 </dd>
 <dt><strong>weightingFactor</strong></dt><dd><p>A Float specifying the weighting factor for the contact surfaces when
-<a href="#id884"><span class="problematic" id="id885">**</span></a>weightingFactorType**=SPECIFIED. The default value is 0.0.</p>
+<strong>weightingFactorType</strong> = SPECIFIED. The default value is 0.0.</p>
 </dd>
 <dt><strong>contactControls</strong></dt><dd><p>A String specifying the name of the ContactControl object associated with this
 interaction. An empty string indicates that the default contact controls will be used.
@@ -9295,7 +9295,7 @@ contact pairs and contact elements. Possible values are:</p>
 <p>The default value is NONE.</p>
 </dd>
 <dt><strong>overclosure</strong></dt><dd><p>A Float specifying the maximum overclosure distance allowed. This argument applies only
-when <a href="#id886"><span class="problematic" id="id887">**</span></a>interferenceType**=UNIFORM. The default value is 0.0.</p>
+when <strong>interferenceType</strong> = UNIFORM. The default value is 0.0.</p>
 </dd>
 <dt><strong>interferenceDirectionType</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the interference direction.
 Possible values are COMPUTED and DIRECTION_COSINE. The default value is COMPUTED.</p>
@@ -9306,7 +9306,7 @@ Possible values are COMPUTED and DIRECTION_COSINE. The default value is COMPUTED
 <li><p>YY-direction cosine of the interference direction vector.</p></li>
 <li><p>ZZ-direction cosine of the interference direction vector.</p></li>
 </ul>
-<p>This argument is required only when <a href="#id888"><span class="problematic" id="id889">**</span></a>interferenceDirectionType**=DIRECTION_COSINE.</p>
+<p>This argument is required only when <strong>interferenceDirectionType</strong> = DIRECTION_COSINE.</p>
 </dd>
 <dt><strong>amplitude</strong></dt><dd><p>A String specifying the name of the amplitude curve that defines the magnitude of the
 prescribed interference during the step. Use None to specify that the prescribed
@@ -9314,7 +9314,7 @@ interference is applied immediately at the beginning of the step and ramped down
 linearly over the step.</p>
 </dd>
 <dt><strong>smooth</strong></dt><dd><p>A Float specifying the degree of smoothing used for deformable or rigid main surfaces
-involved when <a href="#id890"><span class="problematic" id="id891">**</span></a>enforcement**=NODE_TO_SURFACE. The value given must lie between 0.0 and
+involved when <strong>enforcement</strong> = NODE_TO_SURFACE. The value given must lie between 0.0 and
 0.5. The default value is 0.2.</p>
 </dd>
 <dt><strong>hcrit</strong></dt><dd><p>A Float specifying the distance by which a secondary node must penetrate the main
@@ -9336,8 +9336,8 @@ TOLERANCE, and SET. The default value is NONE.</p>
 NODE_TO_SURFACE and SURFACE_TO_SURFACE. The default value is SURFACE_TO_SURFACE.</p>
 </dd>
 <dt><strong>thickness</strong></dt><dd><p>A Boolean specifying whether shell/membrane element thickness is considered. The default
-value is ON.This argument is not valid when <a href="#id892"><span class="problematic" id="id893">**</span></a>sliding**=FINITE and
-<a href="#id894"><span class="problematic" id="id895">**</span></a>enforcement**=NODE_TO_SURFACE.</p>
+value is ON.This argument is not valid when <strong>sliding</strong> = FINITE and
+<strong>enforcement</strong> = NODE_TO_SURFACE.</p>
 </dd>
 <dt><strong>contactControls</strong></dt><dd><p>A String specifying the name of the ContactControl object associated with this
 interaction. The empty string indicates that the default contact controls will be used.
@@ -9411,7 +9411,7 @@ contact pairs and contact elements. Possible values are:</p>
 <p>The default value is NONE.</p>
 </dd>
 <dt><strong>overclosure</strong></dt><dd><p>A Float specifying the maximum overclosure distance allowed. This argument applies only
-when <a href="#id896"><span class="problematic" id="id897">**</span></a>interferenceType**=UNIFORM. The default value is 0.0.</p>
+when <strong>interferenceType</strong> = UNIFORM. The default value is 0.0.</p>
 </dd>
 <dt><strong>interferenceDirectionType</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the interference direction.
 Possible values are COMPUTED and DIRECTION_COSINE. The default value is COMPUTED.</p>
@@ -9422,7 +9422,7 @@ Possible values are COMPUTED and DIRECTION_COSINE. The default value is COMPUTED
 <li><p>YY-direction cosine of the interference direction vector.</p></li>
 <li><p>ZZ-direction cosine of the interference direction vector.</p></li>
 </ul>
-<p>This argument is required only when <a href="#id898"><span class="problematic" id="id899">**</span></a>interferenceDirectionType**=DIRECTION_COSINE.</p>
+<p>This argument is required only when <strong>interferenceDirectionType</strong> = DIRECTION_COSINE.</p>
 </dd>
 <dt><strong>amplitude</strong></dt><dd><p>A String specifying the name of the amplitude curve that defines the magnitude of the
 prescribed interference during the step. Use None to specify that the prescribed
@@ -9859,7 +9859,7 @@ Possible values are UNSET, SET, UNCHANGED, and FREED.</p>
 <li><a class="reference internal" href="#contactproperty">ContactProperty</a></li>
 <li><a class="reference internal" href="#contactpropertyassignment">ContactPropertyAssignment</a></li>
 <li><a class="reference internal" href="#contactstabilization">ContactStabilization</a></li>
-<li><a class="reference internal" href="#id517">Interaction</a></li>
+<li><a class="reference internal" href="#id1">Interaction</a></li>
 <li><a class="reference internal" href="#initializationassignment">InitializationAssignment</a></li>
 <li><a class="reference internal" href="#interactionproperty">InteractionProperty</a></li>
 <li><a class="reference internal" href="#interactionstate">InteractionState</a></li>

@@ -775,16 +775,16 @@ model”). The default value is an empty string.</p>
 <dt><strong>legendLabel</strong></dt><dd><p>A String specifying the label to be used in the legend. The default value is the name of
 the XYData object.</p>
 </dd>
-<dt><strong>skipFrequency</strong></dt><dd><p>An Int specifying how often data frames will be skipped. If <strong>skipFrequency**=1, Abaqus
+<dt><strong>skipFrequency</strong></dt><dd><p>An Int specifying how often data frames will be skipped. If <strong>skipFrequency</strong> = 1, Abaqus
 will skip every other frame. The first frame is always read. Possible values are
-**skipFrequency</strong> ≥≥ 0. The default value is 0 (data are read from every frame).</p>
+<strong>skipFrequency</strong> ≥≥ 0. The default value is 0 (data are read from every frame).</p>
 </dd>
 <dt><strong>numericForm</strong></dt><dd><p>A SymbolicConstant specifying the numeric form in which to display results that contain
 complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
 and COMPLEX_VAL_AT_ANGLE. The default value is REAL.</p>
 </dd>
 <dt><strong>complexAngle</strong></dt><dd><p>A Float specifying the angle (in degrees) at which to display results that contain
-complex numbers when <a href="#id1"><span class="problematic" id="id2">**</span></a>numericForm**=COMPLEX_VAL_AT_ANGLE. The default value is 0.</p>
+complex numbers when <strong>numericForm</strong> = COMPLEX_VAL_AT_ANGLE. The default value is 0.</p>
 </dd>
 <dt><strong>stepTuple</strong></dt><dd><p>A tuple of Integers specifying the steps to include when extracting data.</p>
 </dd>
@@ -867,20 +867,20 @@ example,`variable= (‘S’,INTEGRATION_POINT, ( (COMPONENT, ‘S22’ ), ), ) v
 (fraction = -1.0)’, }), )`</p>
 </dd>
 <dt><strong>deformedMag</strong></dt><dd><p>A tuple of three Floats specifying the deformation magnitude in the <em>X-</em>, <em>Y-</em>, and
-<a href="#id3"><span class="problematic" id="id4">*</span></a>Z-<a href="#id5"><span class="problematic" id="id6">*</span></a>planes. The default value is (1, 1, 1).</p>
+<a href="#id1"><span class="problematic" id="id2">*</span></a>Z-<a href="#id3"><span class="problematic" id="id4">*</span></a>planes. The default value is (1, 1, 1).</p>
 </dd>
 <dt><strong>numericForm</strong></dt><dd><p>A SymbolicConstant specifying the numeric form in which to display results that contain
 complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
 and COMPLEX_VAL_AT_ANGLE. The default value is REAL.</p>
 </dd>
 <dt><strong>complexAngle</strong></dt><dd><p>A Float specifying the angle (in degrees) at which to display results that contain
-complex numbers when <a href="#id7"><span class="problematic" id="id8">**</span></a>numericForm**=COMPLEX_VAL_AT_ANGLE. The default value is 0.</p>
+complex numbers when <strong>numericForm</strong> = COMPLEX_VAL_AT_ANGLE. The default value is 0.</p>
 </dd>
 <dt><strong>projectOntoMesh</strong></dt><dd><p>A Boolean to specify whether to consider the data points that do not lie on or inside
 the mesh. The default value is False.</p>
 </dd>
 <dt><strong>projectionTolerance</strong></dt><dd><p>A Float specifying the tolerance value for the projected distance considered for the
-data extraction when <a href="#id9"><span class="problematic" id="id10">**</span></a>projectOntoMesh**= True. The default value is 0.</p>
+data extraction when <strong>projectOntoMesh</strong> =  True. The default value is 0.</p>
 </dd>
 </dl>
 </dd>
@@ -951,7 +951,7 @@ variable=(‘S’,INTEGRATION_POINT, ((COMPONENT, ‘S22’ ), ), )
 variable=((‘S’,INTEGRATION_POINT, ((COMPONENT, ‘S11’ ), ), ), (‘U’,NODAL,((COMPONENT, ‘U1’),)),)
 variable=((‘S’, INTEGRATION_POINT, ((INVARIANT, ‘Mises’ ), ),{‘shell &lt; STEEL &gt; &lt; 3 section points &gt;’:’SNEG, (fraction = -1.0)’, }), )                                   (fraction = -1.0)’, }), )</p>
 <blockquote>
-<div><p><a href="#id11"><span class="problematic" id="id12">`</span></a></p>
+<div><p><a href="#id5"><span class="problematic" id="id6">`</span></a></p>
 </div></blockquote>
 </dd>
 <dt><strong>elementSets</strong></dt><dd><p>A sequence of Strings specifying element sets or a String specifying a single element
@@ -980,7 +980,7 @@ complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMA
 and COMPLEX_VAL_AT_ANGLE. The default value is REAL.</p>
 </dd>
 <dt><strong>complexAngle</strong></dt><dd><p>A Float specifying the angle (in degrees) at which to display results that contain
-complex numbers when <a href="#id13"><span class="problematic" id="id14">**</span></a>numericForm**=COMPLEX_VAL_AT_ANGLE. The default value is 0.</p>
+complex numbers when <strong>numericForm</strong> = COMPLEX_VAL_AT_ANGLE. The default value is 0.</p>
 </dd>
 <dt><strong>operator</strong></dt><dd><p>A SymbolicConstant specifying the mathematical, trigonometric, logarithmic, exponential,
 or other operations. Possible values are ADD, SUBTRACT, MULTIPLY, DIVIDE, POWER,
@@ -1345,7 +1345,7 @@ The default value is (-1, 0). The valid range for each float is (0, 1).</p>
 and MANUAL. The default value is AUTO_ALIGN.</p>
 </dd>
 <dt><strong>alignment</strong></dt><dd><p>A SymbolicConstant specifying the relative position of the area in its parent when
-<a href="#id15"><span class="problematic" id="id16">**</span></a>positionMethod**=AUTO_ALIGN. Possible values are:</p>
+<strong>positionMethod</strong> = AUTO_ALIGN. Possible values are:</p>
 <ul class="simple">
 <li><p>BOTTOM_LEFT</p></li>
 <li><p>BOTTOM_CENTER</p></li>
@@ -1363,14 +1363,14 @@ and MANUAL. The default value is AUTO_ALIGN.</p>
 AUTOMATIC and MANUAL. The default value is AUTOMATIC.</p>
 </dd>
 <dt><strong>originOffset</strong></dt><dd><p>A pair of Floats specifying the X- and Y-offsets of the origin as a fraction of the
-available area. The <strong>originOffset</strong> argument is ignored unless <a href="#id17"><span class="problematic" id="id18">**</span></a>positionMethod**=MANUAL.
+available area. The <strong>originOffset</strong> argument is ignored unless <strong>positionMethod</strong> = MANUAL.
 The default value is (-1, 0). The valid range for each float is (0, 1).</p>
 </dd>
 <dt><strong>widthScale</strong></dt><dd><p>A Float specifying the scale as a fraction of the width of the available area when the
 sizeMethod=MANUAL. The valid range is (0, 1). The default value is 1.0.</p>
 </dd>
 <dt><strong>heightScale</strong></dt><dd><p>A Float specifying the scale as a fraction of the height of the available area when the
-<a href="#id19"><span class="problematic" id="id20">**</span></a>sizeMethod**=MANUAL. The valid range is (0, 1). The default value is 1.0.</p>
+<strong>sizeMethod</strong> = MANUAL. The valid range is (0, 1). The default value is 1.0.</p>
 </dd>
 <dt><strong>inset</strong></dt><dd><p>A Boolean specifying whether the area is inset or occupies a reserved area. The default
 value is OFF.</p>
@@ -2817,7 +2817,7 @@ Possible values are LINE and SYMBOL. The default value is (LINE).</p>
 system defined.</p>
 </dd>
 <dt><strong>symbolFrequency</strong></dt><dd><p>An Int specifying the frequency of plotting the markers. Possible values are
-<strong>symbolFrequency</strong> &gt;&gt; 0. If <a href="#id21"><span class="problematic" id="id22">**</span></a>symbolFrequency**=1, then markers are plotted at every point.
+<strong>symbolFrequency</strong> &gt;&gt; 0. If <strong>symbolFrequency</strong> = 1, then markers are plotted at every point.
 The default value is 1.</p>
 </dd>
 <dt><strong>useDefault</strong></dt><dd><p>A Boolean specifying whether to use the system supplied legend label. The default value
@@ -3085,16 +3085,16 @@ model”). The default value is an empty string.</p>
 <dt><strong>legendLabel</strong></dt><dd><p>A String specifying the label to be used in the legend. The default value is the name of
 the XYData object.</p>
 </dd>
-<dt><strong>skipFrequency</strong></dt><dd><p>An Int specifying how often data frames will be skipped. If <strong>skipFrequency**=1, Abaqus
+<dt><strong>skipFrequency</strong></dt><dd><p>An Int specifying how often data frames will be skipped. If <strong>skipFrequency</strong> = 1, Abaqus
 will skip every other frame. The first frame is always read. Possible values are
-**skipFrequency</strong> ≥≥ 0. The default value is 0 (data are read from every frame).</p>
+<strong>skipFrequency</strong> ≥≥ 0. The default value is 0 (data are read from every frame).</p>
 </dd>
 <dt><strong>numericForm</strong></dt><dd><p>A SymbolicConstant specifying the numeric form in which to display results that contain
 complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
 and COMPLEX_VAL_AT_ANGLE. The default value is REAL.</p>
 </dd>
 <dt><strong>complexAngle</strong></dt><dd><p>A Float specifying the angle (in degrees) at which to display results that contain
-complex numbers when <a href="#id23"><span class="problematic" id="id24">**</span></a>numericForm**=COMPLEX_VAL_AT_ANGLE. The default value is 0.</p>
+complex numbers when <strong>numericForm</strong> = COMPLEX_VAL_AT_ANGLE. The default value is 0.</p>
 </dd>
 <dt><strong>stepTuple</strong></dt><dd><p>A tuple of Integers specifying the steps to include when extracting data.</p>
 </dd>
@@ -3177,20 +3177,20 @@ example,`variable= (‘S’,INTEGRATION_POINT, ( (COMPONENT, ‘S22’ ), ), ) v
 (fraction = -1.0)’, }), )`</p>
 </dd>
 <dt><strong>deformedMag</strong></dt><dd><p>A tuple of three Floats specifying the deformation magnitude in the <em>X-</em>, <em>Y-</em>, and
-<a href="#id25"><span class="problematic" id="id26">*</span></a>Z-<a href="#id27"><span class="problematic" id="id28">*</span></a>planes. The default value is (1, 1, 1).</p>
+<a href="#id7"><span class="problematic" id="id8">*</span></a>Z-<a href="#id9"><span class="problematic" id="id10">*</span></a>planes. The default value is (1, 1, 1).</p>
 </dd>
 <dt><strong>numericForm</strong></dt><dd><p>A SymbolicConstant specifying the numeric form in which to display results that contain
 complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
 and COMPLEX_VAL_AT_ANGLE. The default value is REAL.</p>
 </dd>
 <dt><strong>complexAngle</strong></dt><dd><p>A Float specifying the angle (in degrees) at which to display results that contain
-complex numbers when <a href="#id29"><span class="problematic" id="id30">**</span></a>numericForm**=COMPLEX_VAL_AT_ANGLE. The default value is 0.</p>
+complex numbers when <strong>numericForm</strong> = COMPLEX_VAL_AT_ANGLE. The default value is 0.</p>
 </dd>
 <dt><strong>projectOntoMesh</strong></dt><dd><p>A Boolean to specify whether to consider the data points that do not lie on or inside
 the mesh. The default value is False.</p>
 </dd>
 <dt><strong>projectionTolerance</strong></dt><dd><p>A Float specifying the tolerance value for the projected distance considered for the
-data extraction when <a href="#id31"><span class="problematic" id="id32">**</span></a>projectOntoMesh**= True. The default value is 0.</p>
+data extraction when <strong>projectOntoMesh</strong> =  True. The default value is 0.</p>
 </dd>
 </dl>
 </dd>
@@ -3289,7 +3289,7 @@ complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMA
 and COMPLEX_VAL_AT_ANGLE. The default value is REAL.</p>
 </dd>
 <dt><strong>complexAngle</strong></dt><dd><p>A Float specifying the angle (in degrees) at which to display results that contain
-complex numbers when <a href="#id33"><span class="problematic" id="id34">**</span></a>numericForm**=COMPLEX_VAL_AT_ANGLE. The default value is 0.</p>
+complex numbers when <strong>numericForm</strong> = COMPLEX_VAL_AT_ANGLE. The default value is 0.</p>
 </dd>
 </dl>
 </dd>
@@ -3386,7 +3386,7 @@ variable=(‘S’,INTEGRATION_POINT, ((COMPONENT, ‘S22’ ), ), )
 variable=((‘S’,INTEGRATION_POINT, ((COMPONENT, ‘S11’ ), ), ), (‘U’,NODAL,((COMPONENT, ‘U1’),)),)
 variable=((‘S’, INTEGRATION_POINT, ((INVARIANT, ‘Mises’ ), ),{‘shell &lt; STEEL &gt; &lt; 3 section points &gt;’:’SNEG, (fraction = -1.0)’, }), )</p>
 <blockquote>
-<div><p><a href="#id35"><span class="problematic" id="id36">`</span></a></p>
+<div><p><a href="#id11"><span class="problematic" id="id12">`</span></a></p>
 </div></blockquote>
 </dd>
 <dt><strong>elementSets</strong></dt><dd><p>A sequence of Strings specifying element sets or a String specifying a single element
@@ -3415,7 +3415,7 @@ complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMA
 and COMPLEX_VAL_AT_ANGLE. The default value is REAL.</p>
 </dd>
 <dt><strong>complexAngle</strong></dt><dd><p>A Float specifying the angle (in degrees) at which to display results that contain
-complex numbers when <a href="#id37"><span class="problematic" id="id38">**</span></a>numericForm**=COMPLEX_VAL_AT_ANGLE. The default value is 0.</p>
+complex numbers when <strong>numericForm</strong> = COMPLEX_VAL_AT_ANGLE. The default value is 0.</p>
 </dd>
 <dt><strong>operator</strong></dt><dd><p>A SymbolicConstant specifying the mathematical, trigonometric, logarithmic, exponential,
 or other operations. Possible values are ADD, SUBTRACT, MULTIPLY, DIVIDE, POWER,
@@ -3954,7 +3954,7 @@ Abaqus creates the <strong>xyReportOptions</strong> member when you import the V
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>pageWidth</strong></dt><dd><p>An Int specifying the number of characters per line of the report file when
-<strong>pageWidthLimited**=ON. Possible values are **pageWidth</strong> &gt;&gt; 0. The default value is 80.</p>
+<strong>pageWidthLimited</strong> = ON. Possible values are <strong>pageWidth</strong> &gt;&gt; 0. The default value is 80.</p>
 </dd>
 <dt><strong>numDigits</strong></dt><dd><p>An Int specifying the number of significant digits to be included for each data value in
 the report file. Possible values are 0 ≤≤ <strong>numDigits</strong> ≤≤ 9. The default value is 6.</p>
@@ -3963,7 +3963,7 @@ the report file. Possible values are 0 ≤≤ <strong>numDigits</strong> ≤≤ 
 The default value is OFF.</p>
 </dd>
 <dt><strong>xyData</strong></dt><dd><p>A Boolean specifying whether to print the <strong>X</strong>- and <strong>Y</strong>-values of the selected XYData
-objects. (If <strong>xyData**=OFF, **totals</strong> and <strong>minMax</strong> can still be printed.) The default
+objects. (If <strong>xyData</strong> = OFF, <strong>totals</strong> and <strong>minMax</strong> can still be printed.) The default
 value is ON.</p>
 </dd>
 <dt><strong>totals</strong></dt><dd><p>A Boolean specifying whether to print the sum of the <strong>Y</strong>-values of the selected XYData

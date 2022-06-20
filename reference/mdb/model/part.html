@@ -345,7 +345,7 @@ THREE_D, TWO_D_PLANAR, and AXISYMMETRIC.</p>
 EULERIAN, DISCRETE_RIGID_SURFACE, and ANALYTIC_RIGID_SURFACE.</p>
 </dd>
 <dt><strong>twist</strong></dt><dd><p>A Boolean specifying whether to include a twist DEGREE OF FREEDOM in the part (only
-available when <a href="#id1"><span class="problematic" id="id2">**</span></a>dimensionality**=AXISYMMETRIC and <a href="#id3"><span class="problematic" id="id4">**</span></a>type**=DEFORMABLE_BODY). The default
+available when <strong>dimensionality</strong> = AXISYMMETRIC and <strong>type</strong> = DEFORMABLE_BODY). The default
 value is OFF.</p>
 </dd>
 </dl>
@@ -722,7 +722,7 @@ the geometry.</p>
 the geometry. The default value is 90.</p>
 </dd>
 <dt><strong>twist</strong></dt><dd><p>A Boolean specifying whether to include a twist DEGREE OF FREEDOM in the part (only
-available when <a href="#id5"><span class="problematic" id="id6">**</span></a>dimensionality**=AXISYMMETRIC and <a href="#id7"><span class="problematic" id="id8">**</span></a>type**=DEFORMABLE_BODY). The default
+available when <strong>dimensionality</strong> = AXISYMMETRIC and <strong>type</strong> = DEFORMABLE_BODY). The default
 value is OFF.</p>
 </dd>
 </dl>
@@ -915,19 +915,19 @@ model. Otherwise this command may remove small (sliver) edges that are smaller t
 tolerance. The default value is 1.0</p>
 </dd>
 <dt><strong>twist</strong></dt><dd><p>A Boolean specifying whether to include a twist DEGREE OF FREEDOM in the part (only
-available when <a href="#id9"><span class="problematic" id="id10">**</span></a>dimensionality**=AXISYMMETRIC and <a href="#id11"><span class="problematic" id="id12">**</span></a>type**=DEFORMABLE_BODY). The default
+available when <strong>dimensionality</strong> = AXISYMMETRIC and <strong>type</strong> = DEFORMABLE_BODY). The default
 value is OFF.</p>
 </dd>
 <dt><strong>scale</strong></dt><dd><p>A Float specifying the scaling factor to apply to the imported geometric entities. The
 default value is 1.0.</p>
 </dd>
 <dt><strong>convertToAnalytical</strong></dt><dd><p>An Int specifying whether to convert to analytical entities. Possible values are 0 or 1.
-The default value is 0. If <a href="#id13"><span class="problematic" id="id14">**</span></a>convertToAnalytical**=1, all the numerical entities, such as
+The default value is 0. If <strong>convertToAnalytical</strong> = 1, all the numerical entities, such as
 splines, are converted to analytical entities, such as arcs and lines, during the repair
 phase of the command.</p>
 </dd>
 <dt><strong>convertToPrecise</strong></dt><dd><p>An Int specifying whether to convert to precise geometry. Possible value are 0 or 1. The
-default value is 0. If <a href="#id15"><span class="problematic" id="id16">**</span></a>convertToPrecise**=1, the application will attempt to re-evaluate
+default value is 0. If <strong>convertToPrecise</strong> = 1, the application will attempt to re-evaluate
 the tolerant entities to be more precise.</p>
 </dd>
 </dl>
@@ -1112,7 +1112,7 @@ elements of the mesh. <strong>meshType</strong> is a String specifying the eleme
 sequence of sequences of node labels specifying the element connectivity.</p>
 </dd>
 <dt><strong>twist</strong></dt><dd><p>A boolean specifying whether the part is defined with twist. This option has meaning
-only when <a href="#id17"><span class="problematic" id="id18">**</span></a>dimensionality**=AXISYMMETRIC. Possible values are ON and OFF. The default
+only when <strong>dimensionality</strong> = AXISYMMETRIC. Possible values are ON and OFF. The default
 value is OFF.</p>
 </dd>
 </dl>
@@ -1158,15 +1158,15 @@ and DEFORMED. The default value is UNDEFORMED.</p>
 </dd>
 <dt><strong>step</strong></dt><dd><p>An Int specifying the step number for reading deformed coordinates. 0≤step≤N−10≤step≤N-1
 where NN is the number of available steps. The default value is the last available step.
-You should specify the <strong>step</strong> argument only when <a href="#id19"><span class="problematic" id="id20">**</span></a>shape**=DEFORMED.</p>
+You should specify the <strong>step</strong> argument only when <strong>shape</strong> = DEFORMED.</p>
 </dd>
 <dt><strong>frame</strong></dt><dd><p>An Int specifying the frame number for reading deformed coordinates.
 0≤frame≤N−10≤frame≤N-1 where NN is the number of available frames. The default value is
 the last available frame. You should specify the <strong>frame</strong> argument only when
-<a href="#id21"><span class="problematic" id="id22">**</span></a>shape**=DEFORMED.</p>
+<strong>shape</strong> = DEFORMED.</p>
 </dd>
 <dt><strong>twist</strong></dt><dd><p>A Boolean specifying whether to include a twist DEGREE OF FREEDOM in the part (only
-available when <a href="#id23"><span class="problematic" id="id24">**</span></a>dimensionality**=AXISYMMETRIC and <a href="#id25"><span class="problematic" id="id26">**</span></a>type**=DEFORMABLE_BODY). The default
+available when <strong>dimensionality</strong> = AXISYMMETRIC and <strong>type</strong> = DEFORMABLE_BODY). The default
 value is OFF.</p>
 </dd>
 </dl>
@@ -1999,7 +1999,7 @@ sketch as reference geometry.</p>
 projected.</p>
 </dd>
 <dt><strong>filter</strong></dt><dd><p>A SymbolicConstant specifying how to limit the amount of projection. Possible values are
-ALL_EDGES and COPLANAR_EDGES. If <a href="#id27"><span class="problematic" id="id28">**</span></a>filter**=COPLANAR_EDGES, edges that are coplanar to the
+ALL_EDGES and COPLANAR_EDGES. If <strong>filter</strong> = COPLANAR_EDGES, edges that are coplanar to the
 sketching plane are the only candidates for projection. The default value is ALL_EDGES.</p>
 </dd>
 <dt><strong>upToFeature</strong></dt><dd><p>A Feature object specifying a marker in the feature-based history of the part.
@@ -2359,8 +2359,8 @@ AUTOCAD, SOLIDWORKS, JAMA, and MSBO.</p>
 </section>
 <section id="object-features">
 <h2>Object features<a class="headerlink" href="#object-features" title="Permalink to this headline">#</a></h2>
-<section id="id29">
-<h3>Part<a class="headerlink" href="#id29" title="Permalink to this headline">#</a></h3>
+<section id="id1">
+<h3>Part<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Part.Part.Part">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Part</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dimensionality</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">twist</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/Part.py#L7-L104"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.Part.Part" title="Permalink to this definition">#</a></dt>
@@ -2711,7 +2711,7 @@ object, or a tuple of Floats representing the coordinates of a point.</p>
 </dd>
 <dt><strong>flipDirection</strong></dt><dd><p>A Boolean specifying if the direction along which the attachment points are created
 should be reversed. This argument is valid only when
-<a href="#id30"><span class="problematic" id="id31">**</span></a>pointCreationMethod**=NUM_PTS_ALONG_DIR.</p>
+<strong>pointCreationMethod</strong> = NUM_PTS_ALONG_DIR.</p>
 </dd>
 <dt><strong>setName</strong></dt><dd><p>A String specifying a unique set name.</p>
 </dd>
@@ -2951,18 +2951,18 @@ full revolution about the axis of revolution. Possible values are 0 ≤≤ <stro
 The default value, 0, implies a normal revolve.</p>
 </dd>
 <dt><strong>flipRevolveDirection</strong></dt><dd><p>A Boolean specifying whether to override the direction of feature creation. If
-<a href="#id32"><span class="problematic" id="id33">**</span></a>flipRevolveDirection**=OFF, the default direction of revolution is used. If
-<a href="#id34"><span class="problematic" id="id35">**</span></a>flipRevolveDirection**=ON, the revolve direction is reversed. The default value is OFF.</p>
+<strong>flipRevolveDirection</strong> = OFF, the default direction of revolution is used. If
+<strong>flipRevolveDirection</strong> = ON, the revolve direction is reversed. The default value is OFF.</p>
 </dd>
 <dt><strong>flipPitchDirection</strong></dt><dd><p>A Boolean specifying whether to override the direction of translation. If
-<a href="#id36"><span class="problematic" id="id37">**</span></a>flipPitchDirection**=OFF, the direction of translation is given by the direction of the
-revolve axis. If <a href="#id38"><span class="problematic" id="id39">**</span></a>flipPitchDirection**=ON, the translation direction is reversed. The
+<strong>flipPitchDirection</strong> = OFF, the direction of translation is given by the direction of the
+revolve axis. If <strong>flipPitchDirection</strong> = ON, the translation direction is reversed. The
 default value is OFF.</p>
 </dd>
 <dt><strong>moveSketchNormalToPath</strong></dt><dd><p>A Boolean specifying whether to rotate the sketch so that it is normal to the path of
-revolution when using the <strong>pitch</strong> option. If <strong>moveSketchNormalToPath**=OFF, the sketch
-plane remains parallel to the revolve axis. If **moveSketchNormalToPath**=ON, the sketch
-is moved to match the angle created by the **pitch</strong> before being revolved. The default
+revolution when using the <strong>pitch</strong> option. If <strong>moveSketchNormalToPath</strong> = OFF, the sketch
+plane remains parallel to the revolve axis. If <strong>moveSketchNormalToPath</strong> = ON, the sketch
+is moved to match the angle created by the <strong>pitch</strong> before being revolved. The default
 value is OFF.</p>
 </dd>
 </dl>
@@ -3074,18 +3074,18 @@ full revolution about the axis of revolution. Possible values are 0 ≤≤ <stro
 The default value, 0, implies a normal revolve.</p>
 </dd>
 <dt><strong>flipRevolveDirection</strong></dt><dd><p>A Boolean specifying whether to override the direction of feature creation. If
-<a href="#id40"><span class="problematic" id="id41">**</span></a>flipRevolveDirection**=OFF, the default direction of revolution is used. If
-<a href="#id42"><span class="problematic" id="id43">**</span></a>flipRevolveDirection**=ON, the revolve direction is reversed. The default value is OFF.</p>
+<strong>flipRevolveDirection</strong> = OFF, the default direction of revolution is used. If
+<strong>flipRevolveDirection</strong> = ON, the revolve direction is reversed. The default value is OFF.</p>
 </dd>
 <dt><strong>flipPitchDirection</strong></dt><dd><p>A Boolean specifying whether to override the direction of translation. If
-<a href="#id44"><span class="problematic" id="id45">**</span></a>flipPitchDirection**=OFF, the direction of translation is given by the direction of the
-revolve axis. If <a href="#id46"><span class="problematic" id="id47">**</span></a>flipPitchDirection**=ON, the translation direction is reversed. The
+<strong>flipPitchDirection</strong> = OFF, the direction of translation is given by the direction of the
+revolve axis. If <strong>flipPitchDirection</strong> = ON, the translation direction is reversed. The
 default value is OFF.</p>
 </dd>
 <dt><strong>moveSketchNormalToPath</strong></dt><dd><p>A Boolean specifying whether to rotate the sketch so that it is normal to the path of
-revolution when using the <strong>pitch</strong> option. If <strong>moveSketchNormalToPath**=OFF, the sketch
-plane remains parallel to the revolve axis. If **moveSketchNormalToPath**=ON, the sketch
-is moved to match the angle created by the **pitch</strong> before being revolved. The default
+revolution when using the <strong>pitch</strong> option. If <strong>moveSketchNormalToPath</strong> = OFF, the sketch
+plane remains parallel to the revolve axis. If <strong>moveSketchNormalToPath</strong> = ON, the sketch
+is moved to match the angle created by the <strong>pitch</strong> before being revolved. The default
 value is OFF.</p>
 </dd>
 </dl>
@@ -3187,7 +3187,7 @@ between the two sides.SPECIFY_PATH: The blend connects the two sides along a spe
 path.</p>
 </dd>
 <dt><strong>path</strong></dt><dd><p>An Edge object that connects <strong>side1</strong> to <strong>side2</strong> and specifies the path for creating the
-blend. This argument is required if <a href="#id48"><span class="problematic" id="id49">**</span></a>method**=SPECIFY_PATH; otherwise, it is ignored.</p>
+blend. This argument is required if <strong>method</strong> = SPECIFY_PATH; otherwise, it is ignored.</p>
 </dd>
 </dl>
 </dd>
@@ -3245,15 +3245,15 @@ with a given length.</p>
 <dt><strong>description</strong></dt><dd><p>A String specifying a description of the composite layup.</p>
 </dd>
 <dt><strong>offsetType</strong></dt><dd><p>A SymbolicConstant specifying the method used to define the shell offset. If
-<strong>offsetType**=OFFSET_FIELD the **offsetField</strong> argument is required. This member is valid
-only if <a href="#id50"><span class="problematic" id="id51">**</span></a>elementType**=SHELL. Possible values are SINGLE_VALUE, MIDDLE_SURFACE,
+<strong>offsetType</strong> = OFFSET_FIELD the <strong>offsetField</strong> argument is required. This member is valid
+only if <strong>elementType</strong> = SHELL. Possible values are SINGLE_VALUE, MIDDLE_SURFACE,
 TOP_SURFACE, BOTTOM_SURFACE, OFFSET_FIELD, and GLOBAL. The default value is GLOBAL.</p>
 </dd>
 <dt><strong>offsetField</strong></dt><dd><p>A String specifying The name of the field specifying the offset. This member is valid
-only if <a href="#id52"><span class="problematic" id="id53">**</span></a>elementType**=SHELL. The default value is an empty string.</p>
+only if <strong>elementType</strong> = SHELL. The default value is an empty string.</p>
 </dd>
 <dt><strong>offsetValues</strong></dt><dd><p>A Float specifying The offset of the shell section. This member is valid only if
-<a href="#id54"><span class="problematic" id="id55">**</span></a>elementType**=SHELL. The default value is 0.0.</p>
+<strong>elementType</strong> = SHELL. The default value is 0.0.</p>
 </dd>
 <dt><strong>elementType</strong></dt><dd><p>A SymbolicConstant specifying the type of element in the composite layup. Possible
 values are SHELL, CONTINUUM_SHELL, and SOLID. The default value is SHELL.</p>
@@ -3499,15 +3499,15 @@ conjunction with the <strong>startCondition</strong> argument.</p>
 </dd>
 <dt><strong>startTangent</strong></dt><dd><p>A Float specifying the angle in degrees of the tangent with respect to the plane in
 which the start section lies. You must specify the <strong>startTangent</strong> argument if
-<strong>startCondition**=SPECIFIED. Possible values are 0.0 ≤≤ **startTangent</strong> ≤≤ 180.0.</p>
+<strong>startCondition</strong> = SPECIFIED. Possible values are 0.0 ≤≤ <strong>startTangent</strong> ≤≤ 180.0.</p>
 </dd>
 <dt><strong>startMagnitude</strong></dt><dd><p>A Float specifying the magnitude of the <strong>startTangent</strong>. You must specify the
-<strong>startMagnitude</strong> argument if <strong>startCondition**=SPECIFIED. Possible values are 0.0 &lt;&lt;
-**startMagnitude</strong> &lt;&lt; 100.0.</p>
+<strong>startMagnitude</strong> argument if <strong>startCondition</strong> = SPECIFIED. Possible values are 0.0 &lt;&lt;
+<strong>startMagnitude</strong> &lt;&lt; 100.0.</p>
 </dd>
 <dt><strong>endTangent</strong></dt><dd><p>A Float specifying the angle in degrees of the tangent with respect to the plane in
 which the end section lies. You must specify the <strong>endTangent</strong> argument if
-<strong>startCondition**=SPECIFIED. Possible values are 0.0 ≤≤ **endTangent</strong> ≤≤ 180.0.</p>
+<strong>startCondition</strong> = SPECIFIED. Possible values are 0.0 ≤≤ <strong>endTangent</strong> ≤≤ 180.0.</p>
 </dd>
 <dt><strong>endMagnitude</strong></dt><dd><p>A Float specifying the magnitude of the <strong>endTangent</strong>. This argument is to be used when
 the <strong>endCondition</strong> argument has the value SPECIFIED. Possible values are 0.0 &lt;&lt;
@@ -3566,18 +3566,18 @@ full revolution about the axis of revolution. Possible values are 0 ≤≤ <stro
 The default value, 0, implies a normal revolve.</p>
 </dd>
 <dt><strong>flipRevolveDirection</strong></dt><dd><p>A Boolean specifying whether to override the direction of feature creation. If
-<a href="#id56"><span class="problematic" id="id57">**</span></a>flipRevolveDirection**=OFF, the default direction of revolution is used. If
-<a href="#id58"><span class="problematic" id="id59">**</span></a>flipRevolveDirection**=ON, the revolve direction is reversed. The default value is OFF.</p>
+<strong>flipRevolveDirection</strong> = OFF, the default direction of revolution is used. If
+<strong>flipRevolveDirection</strong> = ON, the revolve direction is reversed. The default value is OFF.</p>
 </dd>
 <dt><strong>flipPitchDirection</strong></dt><dd><p>A Boolean specifying whether to override the direction of translation. If
-<a href="#id60"><span class="problematic" id="id61">**</span></a>flipPitchDirection**=OFF, the direction of translation is given by the direction of the
-revolve axis. If <a href="#id62"><span class="problematic" id="id63">**</span></a>flipPitchDirection**=ON, the translation direction is reversed. The
+<strong>flipPitchDirection</strong> = OFF, the direction of translation is given by the direction of the
+revolve axis. If <strong>flipPitchDirection</strong> = ON, the translation direction is reversed. The
 default value is OFF.</p>
 </dd>
 <dt><strong>moveSketchNormalToPath</strong></dt><dd><p>A Boolean specifying whether to rotate the sketch so that it is normal to the path of
-revolution when using the <strong>pitch</strong> option. If <strong>moveSketchNormalToPath**=OFF, the sketch
-plane remains parallel to the revolve axis. If **moveSketchNormalToPath**=ON, the sketch
-is moved to match the angle created by the **pitch</strong> before being revolved. The default
+revolution when using the <strong>pitch</strong> option. If <strong>moveSketchNormalToPath</strong> = OFF, the sketch
+plane remains parallel to the revolve axis. If <strong>moveSketchNormalToPath</strong> = ON, the sketch
+is moved to match the angle created by the <strong>pitch</strong> before being revolved. The default
 value is OFF.</p>
 </dd>
 </dl>
@@ -3650,13 +3650,13 @@ normal extrude. Possible values are -105 ≤≤ <strong>pitch</strong> ≤≤ 10
 and <strong>pitch</strong> are mutually exclusive.</p>
 </dd>
 <dt><strong>profileNormal</strong></dt><dd><p>A Boolean specifying whether to keep the profile normal same as original or varying
-through out the sweep path. When <a href="#id64"><span class="problematic" id="id65">**</span></a>profileNormal**=OFF, the profile normal will vary
-through out the sweep path. When <a href="#id66"><span class="problematic" id="id67">**</span></a>profileNormal**=ON, the profile normal will be same as
+through out the sweep path. When <strong>profileNormal</strong> = OFF, the profile normal will vary
+through out the sweep path. When <strong>profileNormal</strong> = ON, the profile normal will be same as
 original through out the sweep path. The default value is OFF.</p>
 </dd>
 <dt><strong>flipSweepDirection</strong></dt><dd><p>A Boolean specifying whether to flip the direction in which sweep operation will be
-performed. When <a href="#id68"><span class="problematic" id="id69">**</span></a>flipSweepDirection**=OFF, sweep operation will be performed in the
-direction of path direction. When <a href="#id70"><span class="problematic" id="id71">**</span></a>flipSweepDirection**=ON, sweep operation will be
+performed. When <strong>flipSweepDirection</strong> = OFF, sweep operation will be performed in the
+direction of path direction. When <strong>flipSweepDirection</strong> = ON, sweep operation will be
 performed in the direction opposite to the path direction. The default value is OFF.</p>
 </dd>
 </dl>
@@ -4870,8 +4870,8 @@ STACK_1, STACK_2, STACK_3, and STACK_ORIENTATION. The default value is STACK_3.<
 default value is an empty string.</p>
 </dd>
 <dt><strong>orientationType</strong></dt><dd><p>A SymbolicConstant specifying the method used to define the material orientation. If
-<strong>orientationType**=SYSTEM, the **region</strong> and <strong>localCsys</strong> arguments are required. If
-<strong>orientationType**=FIELD, the **fieldName</strong> argument is required. Possible values are
+<strong>orientationType</strong> = SYSTEM, the <strong>region</strong> and <strong>localCsys</strong> arguments are required. If
+<strong>orientationType</strong> = FIELD, the <strong>fieldName</strong> argument is required. Possible values are
 GLOBAL, SYSTEM, FIELD, DISCRETE, and USER. The default value is GLOBAL.</p>
 </dd>
 <dt><strong>normalAxisDirection</strong></dt><dd><p>A SymbolicConstant specifying the axis that is defined by the normal axis direction for
@@ -5088,7 +5088,7 @@ the geometry.</p>
 the geometry. The default value is 90.</p>
 </dd>
 <dt><strong>twist</strong></dt><dd><p>A Boolean specifying whether to include a twist DEGREE OF FREEDOM in the part (only
-available when <a href="#id72"><span class="problematic" id="id73">**</span></a>dimensionality**=AXISYMMETRIC and <a href="#id74"><span class="problematic" id="id75">**</span></a>type**=DEFORMABLE_BODY). The default
+available when <strong>dimensionality</strong> = AXISYMMETRIC and <strong>type</strong> = DEFORMABLE_BODY). The default
 value is OFF.</p>
 </dd>
 </dl>
@@ -5281,19 +5281,19 @@ model. Otherwise this command may remove small (sliver) edges that are smaller t
 tolerance. The default value is 1.0</p>
 </dd>
 <dt><strong>twist</strong></dt><dd><p>A Boolean specifying whether to include a twist DEGREE OF FREEDOM in the part (only
-available when <a href="#id76"><span class="problematic" id="id77">**</span></a>dimensionality**=AXISYMMETRIC and <a href="#id78"><span class="problematic" id="id79">**</span></a>type**=DEFORMABLE_BODY). The default
+available when <strong>dimensionality</strong> = AXISYMMETRIC and <strong>type</strong> = DEFORMABLE_BODY). The default
 value is OFF.</p>
 </dd>
 <dt><strong>scale</strong></dt><dd><p>A Float specifying the scaling factor to apply to the imported geometric entities. The
 default value is 1.0.</p>
 </dd>
 <dt><strong>convertToAnalytical</strong></dt><dd><p>An Int specifying whether to convert to analytical entities. Possible values are 0 or 1.
-The default value is 0. If <a href="#id80"><span class="problematic" id="id81">**</span></a>convertToAnalytical**=1, all the numerical entities, such as
+The default value is 0. If <strong>convertToAnalytical</strong> = 1, all the numerical entities, such as
 splines, are converted to analytical entities, such as arcs and lines, during the repair
 phase of the command.</p>
 </dd>
 <dt><strong>convertToPrecise</strong></dt><dd><p>An Int specifying whether to convert to precise geometry. Possible value are 0 or 1. The
-default value is 0. If <a href="#id82"><span class="problematic" id="id83">**</span></a>convertToPrecise**=1, the application will attempt to re-evaluate
+default value is 0. If <strong>convertToPrecise</strong> = 1, the application will attempt to re-evaluate
 the tolerant entities to be more precise.</p>
 </dd>
 </dl>
@@ -5478,7 +5478,7 @@ elements of the mesh. <strong>meshType</strong> is a String specifying the eleme
 sequence of sequences of node labels specifying the element connectivity.</p>
 </dd>
 <dt><strong>twist</strong></dt><dd><p>A boolean specifying whether the part is defined with twist. This option has meaning
-only when <a href="#id84"><span class="problematic" id="id85">**</span></a>dimensionality**=AXISYMMETRIC. Possible values are ON and OFF. The default
+only when <strong>dimensionality</strong> = AXISYMMETRIC. Possible values are ON and OFF. The default
 value is OFF.</p>
 </dd>
 </dl>
@@ -5524,15 +5524,15 @@ and DEFORMED. The default value is UNDEFORMED.</p>
 </dd>
 <dt><strong>step</strong></dt><dd><p>An Int specifying the step number for reading deformed coordinates. 0≤step≤N−10≤step≤N-1
 where NN is the number of available steps. The default value is the last available step.
-You should specify the <strong>step</strong> argument only when <a href="#id86"><span class="problematic" id="id87">**</span></a>shape**=DEFORMED.</p>
+You should specify the <strong>step</strong> argument only when <strong>shape</strong> = DEFORMED.</p>
 </dd>
 <dt><strong>frame</strong></dt><dd><p>An Int specifying the frame number for reading deformed coordinates.
 0≤frame≤N−10≤frame≤N-1 where NN is the number of available frames. The default value is
 the last available frame. You should specify the <strong>frame</strong> argument only when
-<a href="#id88"><span class="problematic" id="id89">**</span></a>shape**=DEFORMED.</p>
+<strong>shape</strong> = DEFORMED.</p>
 </dd>
 <dt><strong>twist</strong></dt><dd><p>A Boolean specifying whether to include a twist DEGREE OF FREEDOM in the part (only
-available when <a href="#id90"><span class="problematic" id="id91">**</span></a>dimensionality**=AXISYMMETRIC and <a href="#id92"><span class="problematic" id="id93">**</span></a>type**=DEFORMABLE_BODY). The default
+available when <strong>dimensionality</strong> = AXISYMMETRIC and <strong>type</strong> = DEFORMABLE_BODY). The default
 value is OFF.</p>
 </dd>
 </dl>
@@ -5751,7 +5751,7 @@ PartInstance object.</p>
 perpendicular to the plane formed by <strong>edges</strong>.</p>
 </dd>
 <dt><strong>sense</strong></dt><dd><p>A SymbolicConstant specifying the direction of the extrusion. Possible values are
-FORWARD and REVERSE. If <strong>sense**=FORWARD, the extrusion is in the direction of **line</strong>.</p>
+FORWARD and REVERSE. If <strong>sense</strong> = FORWARD, the extrusion is in the direction of <strong>line</strong>.</p>
 </dd>
 </dl>
 </dd>
@@ -7112,15 +7112,15 @@ conjunction with the <strong>startCondition</strong> argument.</p>
 </dd>
 <dt><strong>startTangent</strong></dt><dd><p>A Float specifying the angle in degrees of the tangent with respect to the plane in
 which the start section lies. You must specify the <strong>startTangent</strong> argument if
-<strong>startCondition**=SPECIFIED. Possible values are 0.0 ≤≤ **startTangent</strong> ≤≤ 180.0.</p>
+<strong>startCondition</strong> = SPECIFIED. Possible values are 0.0 ≤≤ <strong>startTangent</strong> ≤≤ 180.0.</p>
 </dd>
 <dt><strong>startMagnitude</strong></dt><dd><p>A Float specifying the magnitude of the <strong>startTangent</strong>. You must specify the
-<strong>startMagnitude</strong> argument if <strong>startCondition**=SPECIFIED. Possible values are 0.0 &lt;&lt;
-**startMagnitude</strong> &lt;&lt; 100.0.</p>
+<strong>startMagnitude</strong> argument if <strong>startCondition</strong> = SPECIFIED. Possible values are 0.0 &lt;&lt;
+<strong>startMagnitude</strong> &lt;&lt; 100.0.</p>
 </dd>
 <dt><strong>endTangent</strong></dt><dd><p>A Float specifying the angle in degrees of the tangent with respect to the plane in
 which the end section lies. You must specify the <strong>endTangent</strong> argument if
-<strong>startCondition**=SPECIFIED. Possible values are 0.0 ≤≤ **endTangent</strong> ≤≤ 180.0.</p>
+<strong>startCondition</strong> = SPECIFIED. Possible values are 0.0 ≤≤ <strong>endTangent</strong> ≤≤ 180.0.</p>
 </dd>
 <dt><strong>endMagnitude</strong></dt><dd><p>A Float specifying the magnitude of the <strong>endTangent</strong>. This argument is to be used when
 the <strong>endCondition</strong> argument has the value SPECIFIED. Possible values are 0.0 &lt;&lt;
@@ -7193,18 +7193,18 @@ full revolution about the axis of revolution. Possible values are 0 ≤≤ <stro
 The default value, 0, implies a normal revolve.</p>
 </dd>
 <dt><strong>flipRevolveDirection</strong></dt><dd><p>A Boolean specifying whether to override the direction of feature creation. If
-<a href="#id94"><span class="problematic" id="id95">**</span></a>flipRevolveDirection**=OFF, the default direction of revolution is used. If
-<a href="#id96"><span class="problematic" id="id97">**</span></a>flipRevolveDirection**=ON, the revolve direction is reversed. The default value is OFF.</p>
+<strong>flipRevolveDirection</strong> = OFF, the default direction of revolution is used. If
+<strong>flipRevolveDirection</strong> = ON, the revolve direction is reversed. The default value is OFF.</p>
 </dd>
 <dt><strong>flipPitchDirection</strong></dt><dd><p>A Boolean specifying whether to override the direction of translation. If
-<a href="#id98"><span class="problematic" id="id99">**</span></a>flipPitchDirection**=OFF, the direction of translation is given by the direction of the
-revolve axis. If <a href="#id100"><span class="problematic" id="id101">**</span></a>flipPitchDirection**=ON, the translation direction is reversed. The
+<strong>flipPitchDirection</strong> = OFF, the direction of translation is given by the direction of the
+revolve axis. If <strong>flipPitchDirection</strong> = ON, the translation direction is reversed. The
 default value is OFF.</p>
 </dd>
 <dt><strong>moveSketchNormalToPath</strong></dt><dd><p>A Boolean specifying whether to rotate the sketch so that it is normal to the path of
-revolution when using the <strong>pitch</strong> option. If <strong>moveSketchNormalToPath**=OFF, the sketch
-plane remains parallel to the revolve axis. If **moveSketchNormalToPath**=ON, the sketch
-is moved to match the angle created by the **pitch</strong> before being revolved. The default
+revolution when using the <strong>pitch</strong> option. If <strong>moveSketchNormalToPath</strong> = OFF, the sketch
+plane remains parallel to the revolve axis. If <strong>moveSketchNormalToPath</strong> = ON, the sketch
+is moved to match the angle created by the <strong>pitch</strong> before being revolved. The default
 value is OFF.</p>
 </dd>
 <dt><strong>keepInternalBoundaries</strong></dt><dd><p>A Boolean specifying whether internal boundaries will be retained. The default value is
@@ -7280,13 +7280,13 @@ normal extrude. Possible values are -105 ≤≤ <strong>pitch</strong> ≤≤ 10
 and <strong>pitch</strong> are mutually exclusive.</p>
 </dd>
 <dt><strong>profileNormal</strong></dt><dd><p>A Boolean specifying whether to keep the profile normal same as original or varying
-through out the sweep path. When <a href="#id102"><span class="problematic" id="id103">**</span></a>profileNormal**=OFF, the profile normal will vary
-through out the sweep path. When <a href="#id104"><span class="problematic" id="id105">**</span></a>profileNormal**=ON, the profile normal will be same as
+through out the sweep path. When <strong>profileNormal</strong> = OFF, the profile normal will vary
+through out the sweep path. When <strong>profileNormal</strong> = ON, the profile normal will be same as
 original through out the sweep path. The default value is OFF.</p>
 </dd>
 <dt><strong>flipSweepDirection</strong></dt><dd><p>A Boolean specifying whether to flip the direction in which sweep operation will be
-performed. When <a href="#id106"><span class="problematic" id="id107">**</span></a>flipSweepDirection**=OFF, sweep operation will be performed in the
-direction of path direction. When <a href="#id108"><span class="problematic" id="id109">**</span></a>flipSweepDirection**=ON, sweep operation will be
+performed. When <strong>flipSweepDirection</strong> = OFF, sweep operation will be performed in the
+direction of path direction. When <strong>flipSweepDirection</strong> = ON, sweep operation will be
 performed in the direction opposite to the path direction. The default value is OFF.</p>
 </dd>
 <dt><strong>keepInternalBoundaries</strong></dt><dd><p>A Boolean specifying whether internal boundaries will be retained. The default value is
@@ -7440,15 +7440,15 @@ conjunction with the <strong>startCondition</strong> argument.</p>
 </dd>
 <dt><strong>startTangent</strong></dt><dd><p>A Float specifying the angle in degrees of the tangent with respect to the plane in
 which the start section lies. You must specify the <strong>startTangent</strong> argument if
-<strong>startCondition**=SPECIFIED. Possible values are 0.0 ≤≤ **startTangent</strong> ≤≤ 180.0.</p>
+<strong>startCondition</strong> = SPECIFIED. Possible values are 0.0 ≤≤ <strong>startTangent</strong> ≤≤ 180.0.</p>
 </dd>
 <dt><strong>startMagnitude</strong></dt><dd><p>A Float specifying the magnitude of the <strong>startTangent</strong>. You must specify the
-<strong>startMagnitude</strong> argument if <strong>startCondition**=SPECIFIED. Possible values are 0.0 &lt;&lt;
-**startMagnitude</strong> &lt;&lt; 100.0.</p>
+<strong>startMagnitude</strong> argument if <strong>startCondition</strong> = SPECIFIED. Possible values are 0.0 &lt;&lt;
+<strong>startMagnitude</strong> &lt;&lt; 100.0.</p>
 </dd>
 <dt><strong>endTangent</strong></dt><dd><p>A Float specifying the angle in degrees of the tangent with respect to the plane in
 which the end section lies. You must specify the <strong>endTangent</strong> argument if
-<strong>startCondition**=SPECIFIED. Possible values are 0.0 ≤≤ **endTangent</strong> ≤≤ 180.0.</p>
+<strong>startCondition</strong> = SPECIFIED. Possible values are 0.0 ≤≤ <strong>endTangent</strong> ≤≤ 180.0.</p>
 </dd>
 <dt><strong>endMagnitude</strong></dt><dd><p>A Float specifying the magnitude of the <strong>endTangent</strong>. This argument is to be used when
 the <strong>endCondition</strong> argument has the value SPECIFIED. Possible values are 0.0 &lt;&lt;
@@ -7520,18 +7520,18 @@ full revolution about the axis of revolution. Possible values are 0 ≤≤ <stro
 The default value, 0, implies a normal revolve.</p>
 </dd>
 <dt><strong>flipRevolveDirection</strong></dt><dd><p>A Boolean specifying whether to override the direction of feature creation. If
-<a href="#id110"><span class="problematic" id="id111">**</span></a>flipRevolveDirection**=OFF, the default direction of revolution is used. If
-<a href="#id112"><span class="problematic" id="id113">**</span></a>flipRevolveDirection**=ON, the revolve direction is reversed. The default value is OFF.</p>
+<strong>flipRevolveDirection</strong> = OFF, the default direction of revolution is used. If
+<strong>flipRevolveDirection</strong> = ON, the revolve direction is reversed. The default value is OFF.</p>
 </dd>
 <dt><strong>flipPitchDirection</strong></dt><dd><p>A Boolean specifying whether to override the direction of translation. If
-<a href="#id114"><span class="problematic" id="id115">**</span></a>flipPitchDirection**=OFF, the direction of translation is given by the direction of the
-revolve axis. If <a href="#id116"><span class="problematic" id="id117">**</span></a>flipPitchDirection**=ON, the translation direction is reversed. The
+<strong>flipPitchDirection</strong> = OFF, the direction of translation is given by the direction of the
+revolve axis. If <strong>flipPitchDirection</strong> = ON, the translation direction is reversed. The
 default value is OFF.</p>
 </dd>
 <dt><strong>moveSketchNormalToPath</strong></dt><dd><p>A Boolean specifying whether to rotate the sketch so that it is normal to the path of
-revolution when using the <strong>pitch</strong> option. If <strong>moveSketchNormalToPath**=OFF, the sketch
-plane remains parallel to the revolve axis. If **moveSketchNormalToPath**=ON, the sketch
-is moved to match the angle created by the **pitch</strong> before being revolved. The default
+revolution when using the <strong>pitch</strong> option. If <strong>moveSketchNormalToPath</strong> = OFF, the sketch
+plane remains parallel to the revolve axis. If <strong>moveSketchNormalToPath</strong> = ON, the sketch
+is moved to match the angle created by the <strong>pitch</strong> before being revolved. The default
 value is OFF.</p>
 </dd>
 <dt><strong>keepInternalBoundaries</strong></dt><dd><p>A Boolean specifying whether internal boundaries will be retained. The default value is
@@ -7607,13 +7607,13 @@ normal extrude. Possible values are -105 ≤≤ <strong>pitch</strong> ≤≤ 10
 and <strong>pitch</strong> are mutually exclusive.</p>
 </dd>
 <dt><strong>profileNormal</strong></dt><dd><p>A Boolean specifying whether to keep the profile normal same as original or varying
-through out the sweep path. When <a href="#id118"><span class="problematic" id="id119">**</span></a>profileNormal**=OFF, the profile normal will vary
-through out the sweep path. When <a href="#id120"><span class="problematic" id="id121">**</span></a>profileNormal**=ON, the profile normal will be same as
+through out the sweep path. When <strong>profileNormal</strong> = OFF, the profile normal will vary
+through out the sweep path. When <strong>profileNormal</strong> = ON, the profile normal will be same as
 original through out the sweep path. The default value is OFF.</p>
 </dd>
 <dt><strong>flipSweepDirection</strong></dt><dd><p>A Boolean specifying whether to flip the direction in which sweep operation will be
-performed. When <a href="#id122"><span class="problematic" id="id123">**</span></a>flipSweepDirection**=OFF, sweep operation will be performed in the
-direction of path direction. When <a href="#id124"><span class="problematic" id="id125">**</span></a>flipSweepDirection**=ON, sweep operation will be
+performed. When <strong>flipSweepDirection</strong> = OFF, sweep operation will be performed in the
+direction of path direction. When <strong>flipSweepDirection</strong> = ON, sweep operation will be
 performed in the direction opposite to the path direction. The default value is OFF.</p>
 </dd>
 <dt><strong>keepInternalBoundaries</strong></dt><dd><p>A Boolean specifying whether internal boundaries will be retained. The default value is
@@ -7959,7 +7959,7 @@ spline wire with existing geometry. It creates the wire separately. The default 
 IMPRINT.</p>
 </dd>
 <dt><strong>meshable</strong></dt><dd><p>A Boolean specifying whether the wire should be available for selection in meshing
-operations. If <a href="#id126"><span class="problematic" id="id127">**</span></a>meshable**=OFF, the wire can be used for connector section assignment.
+operations. If <strong>meshable</strong> = OFF, the wire can be used for connector section assignment.
 The default value is ON.</p>
 </dd>
 </dl>
@@ -7999,9 +7999,9 @@ imprints the spline wire with existing geometry. It creates the wire separately.
 default value is IMPRINT.</p>
 </dd>
 <dt><strong>smoothClosedSpline</strong></dt><dd><p>A Boolean specifying the behavior of Abaqus when the points defining a spline wire form
-a closed loop (the start and end points are the same). If <a href="#id128"><span class="problematic" id="id129">**</span></a>smoothClosedSpline**=ON,
+a closed loop (the start and end points are the same). If <strong>smoothClosedSpline</strong> = ON,
 Abaqus creates a smooth spline wire where the tangencies at the end point meet smoothly.
-If <a href="#id130"><span class="problematic" id="id131">**</span></a>smoothClosedSpline**=OFF, Abaqus does not automatically create a smooth end
+If <strong>smoothClosedSpline</strong> = OFF, Abaqus does not automatically create a smooth end
 condition. The default value in OFF.</p>
 </dd>
 </dl>
@@ -8771,10 +8771,10 @@ layers of elements that propagate out normal to the surface boundary.</p>
 SOLID or SHELL.</p>
 </dd>
 <dt><strong>totalThickness</strong></dt><dd><p>A Float specifying the total thickness of the solid layers. This argument applies only
-when <a href="#id132"><span class="problematic" id="id133">**</span></a>meshType**=SOLID.</p>
+when <strong>meshType</strong> = SOLID.</p>
 </dd>
 <dt><strong>distanceBetweenLayers</strong></dt><dd><p>A Float specifying the distance between shell layers. This argument applies only when
-<a href="#id134"><span class="problematic" id="id135">**</span></a>meshType**=SHELL.</p>
+<strong>meshType</strong> = SHELL.</p>
 </dd>
 <dt><strong>numLayers</strong></dt><dd><p>An Int specifying the number of element layers to be generated.</p>
 </dd>
@@ -8788,7 +8788,7 @@ and BOTH. The default value is OUTWARD.</p>
 base surface. The default value is False.</p>
 </dd>
 <dt><strong>deleteBaseElements</strong></dt><dd><p>A Boolean specifying whether to delete the shell elements after the offset layers are
-generated. The default value is False. This argument applies only when <a href="#id136"><span class="problematic" id="id137">**</span></a>meshType**=SHELL.</p>
+generated. The default value is False. This argument applies only when <strong>meshType</strong> = SHELL.</p>
 </dd>
 <dt><strong>constantThicknessCorners</strong></dt><dd><p>A Boolean specifying whether to use element-based thickness or nodal-based thickness.
 The default value is False.</p>
@@ -9031,7 +9031,7 @@ are:</p>
 </ul>
 <p>The return value is dependent on the <strong>attribute</strong> argument.</p>
 <ul>
-<li><p>If <a href="#id138"><span class="problematic" id="id139">**</span></a>attribute**=EDGE_SEEDING_METHOD, the return value is a SymbolicConstant specifying
+<li><p>If <strong>attribute</strong> = EDGE_SEEDING_METHOD, the return value is a SymbolicConstant specifying
 the edge seeding method used to create the seeds along the edge. Possible values are:</p>
 <blockquote>
 <div><ul class="simple">
@@ -9043,7 +9043,7 @@ the edge seeding method used to create the seeds along the edge. Possible values
 </ul>
 </div></blockquote>
 </li>
-<li><p>If <a href="#id140"><span class="problematic" id="id141">**</span></a>attribute**=BIAS_METHOD, the return value is a SymbolicConstant specifying the bias
+<li><p>If <strong>attribute</strong> = BIAS_METHOD, the return value is a SymbolicConstant specifying the bias
 type used to create the seeds along the edge. Possible values are:</p>
 <blockquote>
 <div><ul class="simple">
@@ -9053,28 +9053,28 @@ type used to create the seeds along the edge. Possible values are:</p>
 </ul>
 </div></blockquote>
 </li>
-<li><p>If <a href="#id142"><span class="problematic" id="id143">**</span></a>attribute**=NUMBER, the return value is an Int specifying the number of element
+<li><p>If <strong>attribute</strong> = NUMBER, the return value is an Int specifying the number of element
 seeds along the edge.</p></li>
-<li><p>If <a href="#id144"><span class="problematic" id="id145">**</span></a>attribute**=AVERAGE_SIZE, the return value is a Float specifying the average
+<li><p>If <strong>attribute</strong> = AVERAGE_SIZE, the return value is a Float specifying the average
 element size along the edge.</p></li>
-<li><p>If <a href="#id146"><span class="problematic" id="id147">**</span></a>attribute**=DEVIATION_FACTOR, the return value is a Float specifying the deviation
+<li><p>If <strong>attribute</strong> = DEVIATION_FACTOR, the return value is a Float specifying the deviation
 factor h/Lh/L, where hh is the chordal deviation and LL is the element length. If edge
 seeds are not defined, the return value is zero.</p></li>
-<li><p>If <a href="#id148"><span class="problematic" id="id149">**</span></a>attribute**=MIN_SIZE_FACTOR, the return value is a Float specifying the size of the
+<li><p>If <strong>attribute</strong> = MIN_SIZE_FACTOR, the return value is a Float specifying the size of the
 smallest allowable element as a fraction of the specified global element size. If edge
 seeds are not defined, the return value is zero.</p></li>
-<li><p>If <a href="#id150"><span class="problematic" id="id151">**</span></a>attribute**=BIAS_RATIO, the return value is a Float specifying the length ratio of
+<li><p>If <strong>attribute</strong> = BIAS_RATIO, the return value is a Float specifying the length ratio of
 the largest element to the smallest element.</p></li>
-<li><p>If <a href="#id152"><span class="problematic" id="id153">**</span></a>attribute**=BIAS_MIN_SIZE, the return value is a Float specifying the length of the
+<li><p>If <strong>attribute</strong> = BIAS_MIN_SIZE, the return value is a Float specifying the length of the
 largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were
 specified by minimum and maximum sizes.</p></li>
-<li><p>If <a href="#id154"><span class="problematic" id="id155">**</span></a>attribute**=BIAS_MAX_SIZE, the return value is a Float specifying the length of the
+<li><p>If <strong>attribute</strong> = BIAS_MAX_SIZE, the return value is a Float specifying the length of the
 largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were
 specified by minimum and maximum sizes.</p></li>
-<li><p>If <a href="#id156"><span class="problematic" id="id157">**</span></a>attribute**=VERTEX_ADJ_TO_SMALLEST_ELEM, the return value is an Int specifying the
+<li><p>If <strong>attribute</strong> = VERTEX_ADJ_TO_SMALLEST_ELEM, the return value is an Int specifying the
 ID of the vertex next to the smallest element; only applicable if the
 EDGE_SEEDING_METHOD is BIASED.</p></li>
-<li><p>If <a href="#id158"><span class="problematic" id="id159">**</span></a>attribute**=SMALLEST_ELEM_LOCATION, the return value is a SymbolicConstant
+<li><p>If <strong>attribute</strong> = SMALLEST_ELEM_LOCATION, the return value is a SymbolicConstant
 specifying the location of smallest elements for double bias seeds; only applicable if
 the EDGE_SEEDING_METHOD is BIASED and BIAS_METHOD is DOUBLE. Possible values are:</p>
 <blockquote>
@@ -9085,7 +9085,7 @@ the EDGE_SEEDING_METHOD is BIASED and BIAS_METHOD is DOUBLE. Possible values are
 </ul>
 </div></blockquote>
 </li>
-<li><p>If <a href="#id160"><span class="problematic" id="id161">**</span></a>attribute**=CONSTRAINT, the return value is a SymbolicConstant specifying how close
+<li><p>If <strong>attribute</strong> = CONSTRAINT, the return value is a SymbolicConstant specifying how close
 the seeds must be matched by the mesh. Possible values are:</p>
 <blockquote>
 <div><ul class="simple">
@@ -9422,7 +9422,7 @@ distribution.</p>
 </ul>
 <p>The return value depends on the value of the <strong>attribute</strong> argument.</p>
 <ul>
-<li><p>If <a href="#id162"><span class="problematic" id="id163">**</span></a>attribute**=ELEM_SHAPE, the return value is a SymbolicConstant specifying the
+<li><p>If <strong>attribute</strong> = ELEM_SHAPE, the return value is a SymbolicConstant specifying the
 element shape used during meshing. Possible values are:</p>
 <blockquote>
 <div><ul class="simple">
@@ -9437,7 +9437,7 @@ element shape used during meshing. Possible values are:</p>
 </ul>
 </div></blockquote>
 </li>
-<li><p>If <a href="#id164"><span class="problematic" id="id165">**</span></a>attribute**=TECHNIQUE, the return value is a SymbolicConstant specifying the
+<li><p>If <strong>attribute</strong> = TECHNIQUE, the return value is a SymbolicConstant specifying the
 meshing technique to be used during meshing. Possible values are:</p>
 <blockquote>
 <div><ul class="simple">
@@ -9451,7 +9451,7 @@ meshing technique to be used during meshing. Possible values are:</p>
 </ul>
 <p>Where UNMESHABLE indicates that no meshing technique is applicable with the currently
 assigned element shape.
-- If <a href="#id166"><span class="problematic" id="id167">**</span></a>attribute**=ALGORITHM, the return value is a SymbolicConstant specifying the</p>
+- If <strong>attribute</strong> = ALGORITHM, the return value is a SymbolicConstant specifying the</p>
 <blockquote>
 <div><p>meshing algorithm to be used during meshing. Possible values are:</p>
 <blockquote>
@@ -9465,12 +9465,12 @@ assigned element shape.
 </div></blockquote>
 </div></blockquote>
 <p>Where NONE indicates that no algorithm is applicable.
-- If <a href="#id168"><span class="problematic" id="id169">**</span></a>attribute**=MIN_TRANSITION, the return value is a Boolean indicating whether</p>
+- If <strong>attribute</strong> = MIN_TRANSITION, the return value is a Boolean indicating whether</p>
 <blockquote>
 <div><p>minimum transition will be used during meshing. This option is applicable only to the
 following:</p>
 <ul class="simple">
-<li><p>Free quadrilateral meshing or sweep hexahedral meshing with <a href="#id170"><span class="problematic" id="id171">**</span></a>algorithm**=MEDIAL_AXIS.</p></li>
+<li><p>Free quadrilateral meshing or sweep hexahedral meshing with <strong>algorithm</strong> = MEDIAL_AXIS.</p></li>
 <li><p>Structured quadrilateral meshing.</p></li>
 </ul>
 </div></blockquote>
@@ -9528,14 +9528,14 @@ are:</p>
 </ul>
 <p>The return value depends on the value of the <strong>attribute</strong> argument.</p>
 <ul class="simple">
-<li><p>If <a href="#id172"><span class="problematic" id="id173">**</span></a>attribute**=SIZE, the return value is a Float specifying the assigned global
+<li><p>If <strong>attribute</strong> = SIZE, the return value is a Float specifying the assigned global
 element size. If part seeds are not defined, the return value is zero.</p></li>
-<li><p>If <a href="#id174"><span class="problematic" id="id175">**</span></a>attribute**=DEFAULT_SIZE, the return value is a Float specifying a suggested
+<li><p>If <strong>attribute</strong> = DEFAULT_SIZE, the return value is a Float specifying a suggested
 default global element size based upon the part geometry.</p></li>
-<li><p>If <a href="#id176"><span class="problematic" id="id177">**</span></a>attribute**=DEVIATION_FACTOR, the return value is a Float specifying the deviation
+<li><p>If <strong>attribute</strong> = DEVIATION_FACTOR, the return value is a Float specifying the deviation
 factor h/Lh/L, where hh is the chordal deviation and LL is the element length. If part
 seeds are not defined, the return value is zero.</p></li>
-<li><p>If <a href="#id178"><span class="problematic" id="id179">**</span></a>attribute**=MIN_SIZE_FACTOR, the return value is a Float specifying the size of the
+<li><p>If <strong>attribute</strong> = MIN_SIZE_FACTOR, the return value is a Float specifying the size of the
 smallest allowable element as a fraction of the specified global element size. If part
 seeds are not defined, the return value is zero.</p></li>
 </ul>
@@ -9835,7 +9835,7 @@ sketch as reference geometry.</p>
 projected.</p>
 </dd>
 <dt><strong>filter</strong></dt><dd><p>A SymbolicConstant specifying how to limit the amount of projection. Possible values are
-ALL_EDGES and COPLANAR_EDGES. If <a href="#id180"><span class="problematic" id="id181">**</span></a>filter**=COPLANAR_EDGES, edges that are coplanar to the
+ALL_EDGES and COPLANAR_EDGES. If <strong>filter</strong> = COPLANAR_EDGES, edges that are coplanar to the
 sketching plane are the only candidates for projection. The default value is ALL_EDGES.</p>
 </dd>
 <dt><strong>upToFeature</strong></dt><dd><p>A Feature object specifying a marker in the feature-based history of the part.
@@ -10157,18 +10157,18 @@ values are:
 </dd>
 <dt><strong>end1Edges</strong></dt><dd><p>A sequence of Edge objects specifying the edges to seed. The smallest elements will be
 positioned near the end where the normalized curve parameter=0.0. You must provide
-either the <strong>end1Edges</strong> or the <strong>end2Edges</strong> argument or both when <a href="#id182"><span class="problematic" id="id183">**</span></a>biasMethod**=SINGLE and
-omit both of them when <a href="#id184"><span class="problematic" id="id185">**</span></a>biasMethod**=DOUBLE.Note:You can determine which end is which by
+either the <strong>end1Edges</strong> or the <strong>end2Edges</strong> argument or both when <strong>biasMethod</strong> = SINGLE and
+omit both of them when <strong>biasMethod</strong> = DOUBLE.Note:You can determine which end is which by
 the order of the vertex indices returned by
-[getVertices()](<a class="reference external" href="https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?ContextScope=all#simaker-edgegetverticespyc">https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?ContextScope=all#simaker-edgegetverticespyc</a>).</p>
+[getVertices()](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?ContextScope=all#simaker-edgegetverticespyc).</p>
 </dd>
 <dt><strong>end2Edges</strong></dt><dd><p>A sequence of Edge objects specifying the edges to seed. The smallest elements will be
 positioned near the end where the normalized curve parameter=1.0.</p>
 </dd>
 <dt><strong>centerEdges</strong></dt><dd><p>A sequence of Edge objects specifying the edges to seed. The smallest elements will be
 positioned near edge center. You must provide either the <strong>centerEdges</strong> or the <strong>endEdges</strong>
-argument or both when <a href="#id186"><span class="problematic" id="id187">**</span></a>biasMethod**=DOUBLE and omit both of them when
-<a href="#id188"><span class="problematic" id="id189">**</span></a>biasMethod**=SINGLE.</p>
+argument or both when <strong>biasMethod</strong> = DOUBLE and omit both of them when
+<strong>biasMethod</strong> = SINGLE.</p>
 </dd>
 <dt><strong>endEdges</strong></dt><dd><p>A sequence of Edge objects specifying the edges to seed. The smallest elements will be
 positioned near edge ends.</p>
@@ -10456,7 +10456,7 @@ will be used. If algorithm is not specified, the default</p></li>
 ON. If unspecified, the existing value will remain unchanged. This option is applicable
 only in the following cases:</p>
 <ul class="simple">
-<li><p>Free quadrilateral meshing or hexahedral sweep meshing with <a href="#id190"><span class="problematic" id="id191">**</span></a>algorithm**=MEDIAL_AXIS.</p></li>
+<li><p>Free quadrilateral meshing or hexahedral sweep meshing with <strong>algorithm</strong> = MEDIAL_AXIS.</p></li>
 <li><p>Structured quadrilateral meshing.</p></li>
 </ul>
 </dd>
@@ -10470,10 +10470,10 @@ technique. The <strong>allowMapped</strong> argument is applicable only in the f
 <ul class="simple">
 <li><p>Free triangular meshing.</p></li>
 <li><p>Free quadrilateral or quadrilateral-dominated meshing with
-<a href="#id192"><span class="problematic" id="id193">**</span></a>algorithm**=ADVANCING_FRONT.</p></li>
-<li><p>Hexahedral or hexahedral-dominated sweep meshing with <a href="#id194"><span class="problematic" id="id195">**</span></a>algorithm**=ADVANCING_FRONT.</p></li>
-<li><p>Free tetrahedral meshing. <strong>allowMapped**=True implies that mapped triangular meshing
-can be used on faces that bound three-dimensional **regions</strong>.</p></li>
+<strong>algorithm</strong> = ADVANCING_FRONT.</p></li>
+<li><p>Hexahedral or hexahedral-dominated sweep meshing with <strong>algorithm</strong> = ADVANCING_FRONT.</p></li>
+<li><p>Free tetrahedral meshing. <strong>allowMapped</strong> = True implies that mapped triangular meshing
+can be used on faces that bound three-dimensional <strong>regions</strong>.</p></li>
 </ul>
 </dd>
 </dl>
@@ -10495,7 +10495,7 @@ revolvable region.</p>
 </dd>
 <dt><strong>sense</strong></dt><dd><p>A SymbolicConstant specifying the sweep sense. The sense will affect only how gasket
 elements will be created; it will have no effect if gasket elements are not used.
-Possible values are FORWARD or REVERSE.If <a href="#id196"><span class="problematic" id="id197">**</span></a>sense**=FORWARD, the sense of the given edge’s
+Possible values are FORWARD or REVERSE.If <strong>sense</strong> = FORWARD, the sense of the given edge’s
 underlying curve will be used.</p>
 </dd>
 </dl>
@@ -10952,8 +10952,8 @@ object is subsequently used by the PartFromGeometryFile method.</p>
 </dd>
 <dt><strong>topology</strong></dt><dd><p>A SymbolicConstant specifying the topology of the data to be read from the file and of
 the part to be created. Possible values are SOLID , SHELL, and WIRE. If
-<a href="#id198"><span class="problematic" id="id199">**</span></a>topology**=SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
-<a href="#id200"><span class="problematic" id="id201">**</span></a>topology**=SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
+<strong>topology</strong> = SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
+<strong>topology</strong> = SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
 entity. The default value is SOLID .</p>
 </dd>
 <dt><strong>convertUnits</strong></dt><dd><p>A SymbolicConstant specifying whether the original units should be retained. Possible
@@ -10996,8 +10996,8 @@ type is unknown.</p>
 </dd>
 <dt><strong>topology</strong></dt><dd><p>A SymbolicConstant specifying the topology of the data to be read from the file and of
 the part to be created. Possible values are SOLID , SHELL, and WIRE. If
-<a href="#id202"><span class="problematic" id="id203">**</span></a>topology**=SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
-<a href="#id204"><span class="problematic" id="id205">**</span></a>topology**=SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
+<strong>topology</strong> = SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
+<strong>topology</strong> = SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
 entity. The default value is SOLID.</p>
 </dd>
 <dt><strong>convertUnits</strong></dt><dd><p>A Boolean specifying if the dimensions of the part should be converted to millimeters.
@@ -11048,8 +11048,8 @@ from the IGES file to build the part. The default is to include all the layers.<
 </dd>
 <dt><strong>topology</strong></dt><dd><p>A SymbolicConstant specifying the topology of the data to be read from the file and of
 the part to be created. Possible values are SOLID , SHELL, and WIRE. If
-<a href="#id206"><span class="problematic" id="id207">**</span></a>topology**=SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
-<a href="#id208"><span class="problematic" id="id209">**</span></a>topology**=SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
+<strong>topology</strong> = SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
+<strong>topology</strong> = SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
 entity. The default value is SOLID.</p>
 </dd>
 <dt><strong>uniteWires</strong></dt><dd><p>A SymbolicConstant specifying whether the imported wires need to be united or not.
@@ -11089,8 +11089,8 @@ This object is subsequently used by the PartFromGeometryFile method.</p>
 </dd>
 <dt><strong>topology</strong></dt><dd><p>A SymbolicConstant specifying the topology of the data to be read from the file and of
 the part to be created. Possible values are SOLID , SHELL, and WIRE. If
-<a href="#id210"><span class="problematic" id="id211">**</span></a>topology**=SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
-<a href="#id212"><span class="problematic" id="id213">**</span></a>topology**=SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
+<strong>topology</strong> = SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
+<strong>topology</strong> = SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
 entity. The default value is SOLID.</p>
 </dd>
 </dl>
@@ -11285,8 +11285,8 @@ object is subsequently used by the PartFromGeometryFile method.</p>
 </dd>
 <dt><strong>topology</strong></dt><dd><p>A SymbolicConstant specifying the topology of the data to be read from the file and of
 the part to be created. Possible values are SOLID , SHELL, and WIRE. If
-<a href="#id214"><span class="problematic" id="id215">**</span></a>topology**=SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
-<a href="#id216"><span class="problematic" id="id217">**</span></a>topology**=SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
+<strong>topology</strong> = SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
+<strong>topology</strong> = SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
 entity. The default value is SOLID .</p>
 </dd>
 <dt><strong>convertUnits</strong></dt><dd><p>A SymbolicConstant specifying whether the original units should be retained. Possible
@@ -11329,8 +11329,8 @@ type is unknown.</p>
 </dd>
 <dt><strong>topology</strong></dt><dd><p>A SymbolicConstant specifying the topology of the data to be read from the file and of
 the part to be created. Possible values are SOLID , SHELL, and WIRE. If
-<a href="#id218"><span class="problematic" id="id219">**</span></a>topology**=SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
-<a href="#id220"><span class="problematic" id="id221">**</span></a>topology**=SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
+<strong>topology</strong> = SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
+<strong>topology</strong> = SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
 entity. The default value is SOLID.</p>
 </dd>
 <dt><strong>convertUnits</strong></dt><dd><p>A Boolean specifying if the dimensions of the part should be converted to millimeters.
@@ -11381,8 +11381,8 @@ from the IGES file to build the part. The default is to include all the layers.<
 </dd>
 <dt><strong>topology</strong></dt><dd><p>A SymbolicConstant specifying the topology of the data to be read from the file and of
 the part to be created. Possible values are SOLID , SHELL, and WIRE. If
-<a href="#id222"><span class="problematic" id="id223">**</span></a>topology**=SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
-<a href="#id224"><span class="problematic" id="id225">**</span></a>topology**=SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
+<strong>topology</strong> = SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
+<strong>topology</strong> = SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
 entity. The default value is SOLID.</p>
 </dd>
 <dt><strong>uniteWires</strong></dt><dd><p>A SymbolicConstant specifying whether the imported wires need to be united or not.
@@ -11422,8 +11422,8 @@ This object is subsequently used by the PartFromGeometryFile method.</p>
 </dd>
 <dt><strong>topology</strong></dt><dd><p>A SymbolicConstant specifying the topology of the data to be read from the file and of
 the part to be created. Possible values are SOLID , SHELL, and WIRE. If
-<a href="#id226"><span class="problematic" id="id227">**</span></a>topology**=SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
-<a href="#id228"><span class="problematic" id="id229">**</span></a>topology**=SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
+<strong>topology</strong> = SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
+<strong>topology</strong> = SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
 entity. The default value is SOLID.</p>
 </dd>
 </dl>
@@ -11959,18 +11959,18 @@ full revolution about the axis of revolution. Possible values are 0 ≤≤ <stro
 The default value, 0, implies a normal revolve.</p>
 </dd>
 <dt><strong>flipRevolveDirection</strong></dt><dd><p>A Boolean specifying whether to override the direction of feature creation. If
-<a href="#id230"><span class="problematic" id="id231">**</span></a>flipRevolveDirection**=OFF, the default direction of revolution is used. If
-<a href="#id232"><span class="problematic" id="id233">**</span></a>flipRevolveDirection**=ON, the revolve direction is reversed. The default value is OFF.</p>
+<strong>flipRevolveDirection</strong> = OFF, the default direction of revolution is used. If
+<strong>flipRevolveDirection</strong> = ON, the revolve direction is reversed. The default value is OFF.</p>
 </dd>
 <dt><strong>flipPitchDirection</strong></dt><dd><p>A Boolean specifying whether to override the direction of translation. If
-<a href="#id234"><span class="problematic" id="id235">**</span></a>flipPitchDirection**=OFF, the direction of translation is given by the direction of the
-revolve axis. If <a href="#id236"><span class="problematic" id="id237">**</span></a>flipPitchDirection**=ON, the translation direction is reversed. The
+<strong>flipPitchDirection</strong> = OFF, the direction of translation is given by the direction of the
+revolve axis. If <strong>flipPitchDirection</strong> = ON, the translation direction is reversed. The
 default value is OFF.</p>
 </dd>
 <dt><strong>moveSketchNormalToPath</strong></dt><dd><p>A Boolean specifying whether to rotate the sketch so that it is normal to the path of
-revolution when using the <strong>pitch</strong> option. If <strong>moveSketchNormalToPath**=OFF, the sketch
-plane remains parallel to the revolve axis. If **moveSketchNormalToPath**=ON, the sketch
-is moved to match the angle created by the **pitch</strong> before being revolved. The default
+revolution when using the <strong>pitch</strong> option. If <strong>moveSketchNormalToPath</strong> = OFF, the sketch
+plane remains parallel to the revolve axis. If <strong>moveSketchNormalToPath</strong> = ON, the sketch
+is moved to match the angle created by the <strong>pitch</strong> before being revolved. The default
 value is OFF.</p>
 </dd>
 </dl>
@@ -12082,18 +12082,18 @@ full revolution about the axis of revolution. Possible values are 0 ≤≤ <stro
 The default value, 0, implies a normal revolve.</p>
 </dd>
 <dt><strong>flipRevolveDirection</strong></dt><dd><p>A Boolean specifying whether to override the direction of feature creation. If
-<a href="#id238"><span class="problematic" id="id239">**</span></a>flipRevolveDirection**=OFF, the default direction of revolution is used. If
-<a href="#id240"><span class="problematic" id="id241">**</span></a>flipRevolveDirection**=ON, the revolve direction is reversed. The default value is OFF.</p>
+<strong>flipRevolveDirection</strong> = OFF, the default direction of revolution is used. If
+<strong>flipRevolveDirection</strong> = ON, the revolve direction is reversed. The default value is OFF.</p>
 </dd>
 <dt><strong>flipPitchDirection</strong></dt><dd><p>A Boolean specifying whether to override the direction of translation. If
-<a href="#id242"><span class="problematic" id="id243">**</span></a>flipPitchDirection**=OFF, the direction of translation is given by the direction of the
-revolve axis. If <a href="#id244"><span class="problematic" id="id245">**</span></a>flipPitchDirection**=ON, the translation direction is reversed. The
+<strong>flipPitchDirection</strong> = OFF, the direction of translation is given by the direction of the
+revolve axis. If <strong>flipPitchDirection</strong> = ON, the translation direction is reversed. The
 default value is OFF.</p>
 </dd>
 <dt><strong>moveSketchNormalToPath</strong></dt><dd><p>A Boolean specifying whether to rotate the sketch so that it is normal to the path of
-revolution when using the <strong>pitch</strong> option. If <strong>moveSketchNormalToPath**=OFF, the sketch
-plane remains parallel to the revolve axis. If **moveSketchNormalToPath**=ON, the sketch
-is moved to match the angle created by the **pitch</strong> before being revolved. The default
+revolution when using the <strong>pitch</strong> option. If <strong>moveSketchNormalToPath</strong> = OFF, the sketch
+plane remains parallel to the revolve axis. If <strong>moveSketchNormalToPath</strong> = ON, the sketch
+is moved to match the angle created by the <strong>pitch</strong> before being revolved. The default
 value is OFF.</p>
 </dd>
 </dl>
@@ -12195,7 +12195,7 @@ between the two sides.SPECIFY_PATH: The blend connects the two sides along a spe
 path.</p>
 </dd>
 <dt><strong>path</strong></dt><dd><p>An Edge object that connects <strong>side1</strong> to <strong>side2</strong> and specifies the path for creating the
-blend. This argument is required if <a href="#id246"><span class="problematic" id="id247">**</span></a>method**=SPECIFY_PATH; otherwise, it is ignored.</p>
+blend. This argument is required if <strong>method</strong> = SPECIFY_PATH; otherwise, it is ignored.</p>
 </dd>
 </dl>
 </dd>
@@ -12458,15 +12458,15 @@ conjunction with the <strong>startCondition</strong> argument.</p>
 </dd>
 <dt><strong>startTangent</strong></dt><dd><p>A Float specifying the angle in degrees of the tangent with respect to the plane in
 which the start section lies. You must specify the <strong>startTangent</strong> argument if
-<strong>startCondition**=SPECIFIED. Possible values are 0.0 ≤≤ **startTangent</strong> ≤≤ 180.0.</p>
+<strong>startCondition</strong> = SPECIFIED. Possible values are 0.0 ≤≤ <strong>startTangent</strong> ≤≤ 180.0.</p>
 </dd>
 <dt><strong>startMagnitude</strong></dt><dd><p>A Float specifying the magnitude of the <strong>startTangent</strong>. You must specify the
-<strong>startMagnitude</strong> argument if <strong>startCondition**=SPECIFIED. Possible values are 0.0 &lt;&lt;
-**startMagnitude</strong> &lt;&lt; 100.0.</p>
+<strong>startMagnitude</strong> argument if <strong>startCondition</strong> = SPECIFIED. Possible values are 0.0 &lt;&lt;
+<strong>startMagnitude</strong> &lt;&lt; 100.0.</p>
 </dd>
 <dt><strong>endTangent</strong></dt><dd><p>A Float specifying the angle in degrees of the tangent with respect to the plane in
 which the end section lies. You must specify the <strong>endTangent</strong> argument if
-<strong>startCondition**=SPECIFIED. Possible values are 0.0 ≤≤ **endTangent</strong> ≤≤ 180.0.</p>
+<strong>startCondition</strong> = SPECIFIED. Possible values are 0.0 ≤≤ <strong>endTangent</strong> ≤≤ 180.0.</p>
 </dd>
 <dt><strong>endMagnitude</strong></dt><dd><p>A Float specifying the magnitude of the <strong>endTangent</strong>. This argument is to be used when
 the <strong>endCondition</strong> argument has the value SPECIFIED. Possible values are 0.0 &lt;&lt;
@@ -12525,18 +12525,18 @@ full revolution about the axis of revolution. Possible values are 0 ≤≤ <stro
 The default value, 0, implies a normal revolve.</p>
 </dd>
 <dt><strong>flipRevolveDirection</strong></dt><dd><p>A Boolean specifying whether to override the direction of feature creation. If
-<a href="#id248"><span class="problematic" id="id249">**</span></a>flipRevolveDirection**=OFF, the default direction of revolution is used. If
-<a href="#id250"><span class="problematic" id="id251">**</span></a>flipRevolveDirection**=ON, the revolve direction is reversed. The default value is OFF.</p>
+<strong>flipRevolveDirection</strong> = OFF, the default direction of revolution is used. If
+<strong>flipRevolveDirection</strong> = ON, the revolve direction is reversed. The default value is OFF.</p>
 </dd>
 <dt><strong>flipPitchDirection</strong></dt><dd><p>A Boolean specifying whether to override the direction of translation. If
-<a href="#id252"><span class="problematic" id="id253">**</span></a>flipPitchDirection**=OFF, the direction of translation is given by the direction of the
-revolve axis. If <a href="#id254"><span class="problematic" id="id255">**</span></a>flipPitchDirection**=ON, the translation direction is reversed. The
+<strong>flipPitchDirection</strong> = OFF, the direction of translation is given by the direction of the
+revolve axis. If <strong>flipPitchDirection</strong> = ON, the translation direction is reversed. The
 default value is OFF.</p>
 </dd>
 <dt><strong>moveSketchNormalToPath</strong></dt><dd><p>A Boolean specifying whether to rotate the sketch so that it is normal to the path of
-revolution when using the <strong>pitch</strong> option. If <strong>moveSketchNormalToPath**=OFF, the sketch
-plane remains parallel to the revolve axis. If **moveSketchNormalToPath**=ON, the sketch
-is moved to match the angle created by the **pitch</strong> before being revolved. The default
+revolution when using the <strong>pitch</strong> option. If <strong>moveSketchNormalToPath</strong> = OFF, the sketch
+plane remains parallel to the revolve axis. If <strong>moveSketchNormalToPath</strong> = ON, the sketch
+is moved to match the angle created by the <strong>pitch</strong> before being revolved. The default
 value is OFF.</p>
 </dd>
 </dl>
@@ -12609,13 +12609,13 @@ normal extrude. Possible values are -105 ≤≤ <strong>pitch</strong> ≤≤ 10
 and <strong>pitch</strong> are mutually exclusive.</p>
 </dd>
 <dt><strong>profileNormal</strong></dt><dd><p>A Boolean specifying whether to keep the profile normal same as original or varying
-through out the sweep path. When <a href="#id256"><span class="problematic" id="id257">**</span></a>profileNormal**=OFF, the profile normal will vary
-through out the sweep path. When <a href="#id258"><span class="problematic" id="id259">**</span></a>profileNormal**=ON, the profile normal will be same as
+through out the sweep path. When <strong>profileNormal</strong> = OFF, the profile normal will vary
+through out the sweep path. When <strong>profileNormal</strong> = ON, the profile normal will be same as
 original through out the sweep path. The default value is OFF.</p>
 </dd>
 <dt><strong>flipSweepDirection</strong></dt><dd><p>A Boolean specifying whether to flip the direction in which sweep operation will be
-performed. When <a href="#id260"><span class="problematic" id="id261">**</span></a>flipSweepDirection**=OFF, sweep operation will be performed in the
-direction of path direction. When <a href="#id262"><span class="problematic" id="id263">**</span></a>flipSweepDirection**=ON, sweep operation will be
+performed. When <strong>flipSweepDirection</strong> = OFF, sweep operation will be performed in the
+direction of path direction. When <strong>flipSweepDirection</strong> = ON, sweep operation will be
 performed in the direction opposite to the path direction. The default value is OFF.</p>
 </dd>
 </dl>
@@ -13413,15 +13413,15 @@ conjunction with the <strong>startCondition</strong> argument.</p>
 </dd>
 <dt><strong>startTangent</strong></dt><dd><p>A Float specifying the angle in degrees of the tangent with respect to the plane in
 which the start section lies. You must specify the <strong>startTangent</strong> argument if
-<strong>startCondition**=SPECIFIED. Possible values are 0.0 ≤≤ **startTangent</strong> ≤≤ 180.0.</p>
+<strong>startCondition</strong> = SPECIFIED. Possible values are 0.0 ≤≤ <strong>startTangent</strong> ≤≤ 180.0.</p>
 </dd>
 <dt><strong>startMagnitude</strong></dt><dd><p>A Float specifying the magnitude of the <strong>startTangent</strong>. You must specify the
-<strong>startMagnitude</strong> argument if <strong>startCondition**=SPECIFIED. Possible values are 0.0 &lt;&lt;
-**startMagnitude</strong> &lt;&lt; 100.0.</p>
+<strong>startMagnitude</strong> argument if <strong>startCondition</strong> = SPECIFIED. Possible values are 0.0 &lt;&lt;
+<strong>startMagnitude</strong> &lt;&lt; 100.0.</p>
 </dd>
 <dt><strong>endTangent</strong></dt><dd><p>A Float specifying the angle in degrees of the tangent with respect to the plane in
 which the end section lies. You must specify the <strong>endTangent</strong> argument if
-<strong>startCondition**=SPECIFIED. Possible values are 0.0 ≤≤ **endTangent</strong> ≤≤ 180.0.</p>
+<strong>startCondition</strong> = SPECIFIED. Possible values are 0.0 ≤≤ <strong>endTangent</strong> ≤≤ 180.0.</p>
 </dd>
 <dt><strong>endMagnitude</strong></dt><dd><p>A Float specifying the magnitude of the <strong>endTangent</strong>. This argument is to be used when
 the <strong>endCondition</strong> argument has the value SPECIFIED. Possible values are 0.0 &lt;&lt;
@@ -13494,18 +13494,18 @@ full revolution about the axis of revolution. Possible values are 0 ≤≤ <stro
 The default value, 0, implies a normal revolve.</p>
 </dd>
 <dt><strong>flipRevolveDirection</strong></dt><dd><p>A Boolean specifying whether to override the direction of feature creation. If
-<a href="#id264"><span class="problematic" id="id265">**</span></a>flipRevolveDirection**=OFF, the default direction of revolution is used. If
-<a href="#id266"><span class="problematic" id="id267">**</span></a>flipRevolveDirection**=ON, the revolve direction is reversed. The default value is OFF.</p>
+<strong>flipRevolveDirection</strong> = OFF, the default direction of revolution is used. If
+<strong>flipRevolveDirection</strong> = ON, the revolve direction is reversed. The default value is OFF.</p>
 </dd>
 <dt><strong>flipPitchDirection</strong></dt><dd><p>A Boolean specifying whether to override the direction of translation. If
-<a href="#id268"><span class="problematic" id="id269">**</span></a>flipPitchDirection**=OFF, the direction of translation is given by the direction of the
-revolve axis. If <a href="#id270"><span class="problematic" id="id271">**</span></a>flipPitchDirection**=ON, the translation direction is reversed. The
+<strong>flipPitchDirection</strong> = OFF, the direction of translation is given by the direction of the
+revolve axis. If <strong>flipPitchDirection</strong> = ON, the translation direction is reversed. The
 default value is OFF.</p>
 </dd>
 <dt><strong>moveSketchNormalToPath</strong></dt><dd><p>A Boolean specifying whether to rotate the sketch so that it is normal to the path of
-revolution when using the <strong>pitch</strong> option. If <strong>moveSketchNormalToPath**=OFF, the sketch
-plane remains parallel to the revolve axis. If **moveSketchNormalToPath**=ON, the sketch
-is moved to match the angle created by the **pitch</strong> before being revolved. The default
+revolution when using the <strong>pitch</strong> option. If <strong>moveSketchNormalToPath</strong> = OFF, the sketch
+plane remains parallel to the revolve axis. If <strong>moveSketchNormalToPath</strong> = ON, the sketch
+is moved to match the angle created by the <strong>pitch</strong> before being revolved. The default
 value is OFF.</p>
 </dd>
 <dt><strong>keepInternalBoundaries</strong></dt><dd><p>A Boolean specifying whether internal boundaries will be retained. The default value is
@@ -13581,13 +13581,13 @@ normal extrude. Possible values are -105 ≤≤ <strong>pitch</strong> ≤≤ 10
 and <strong>pitch</strong> are mutually exclusive.</p>
 </dd>
 <dt><strong>profileNormal</strong></dt><dd><p>A Boolean specifying whether to keep the profile normal same as original or varying
-through out the sweep path. When <a href="#id272"><span class="problematic" id="id273">**</span></a>profileNormal**=OFF, the profile normal will vary
-through out the sweep path. When <a href="#id274"><span class="problematic" id="id275">**</span></a>profileNormal**=ON, the profile normal will be same as
+through out the sweep path. When <strong>profileNormal</strong> = OFF, the profile normal will vary
+through out the sweep path. When <strong>profileNormal</strong> = ON, the profile normal will be same as
 original through out the sweep path. The default value is OFF.</p>
 </dd>
 <dt><strong>flipSweepDirection</strong></dt><dd><p>A Boolean specifying whether to flip the direction in which sweep operation will be
-performed. When <a href="#id276"><span class="problematic" id="id277">**</span></a>flipSweepDirection**=OFF, sweep operation will be performed in the
-direction of path direction. When <a href="#id278"><span class="problematic" id="id279">**</span></a>flipSweepDirection**=ON, sweep operation will be
+performed. When <strong>flipSweepDirection</strong> = OFF, sweep operation will be performed in the
+direction of path direction. When <strong>flipSweepDirection</strong> = ON, sweep operation will be
 performed in the direction opposite to the path direction. The default value is OFF.</p>
 </dd>
 <dt><strong>keepInternalBoundaries</strong></dt><dd><p>A Boolean specifying whether internal boundaries will be retained. The default value is
@@ -13703,15 +13703,15 @@ conjunction with the <strong>startCondition</strong> argument.</p>
 </dd>
 <dt><strong>startTangent</strong></dt><dd><p>A Float specifying the angle in degrees of the tangent with respect to the plane in
 which the start section lies. You must specify the <strong>startTangent</strong> argument if
-<strong>startCondition**=SPECIFIED. Possible values are 0.0 ≤≤ **startTangent</strong> ≤≤ 180.0.</p>
+<strong>startCondition</strong> = SPECIFIED. Possible values are 0.0 ≤≤ <strong>startTangent</strong> ≤≤ 180.0.</p>
 </dd>
 <dt><strong>startMagnitude</strong></dt><dd><p>A Float specifying the magnitude of the <strong>startTangent</strong>. You must specify the
-<strong>startMagnitude</strong> argument if <strong>startCondition**=SPECIFIED. Possible values are 0.0 &lt;&lt;
-**startMagnitude</strong> &lt;&lt; 100.0.</p>
+<strong>startMagnitude</strong> argument if <strong>startCondition</strong> = SPECIFIED. Possible values are 0.0 &lt;&lt;
+<strong>startMagnitude</strong> &lt;&lt; 100.0.</p>
 </dd>
 <dt><strong>endTangent</strong></dt><dd><p>A Float specifying the angle in degrees of the tangent with respect to the plane in
 which the end section lies. You must specify the <strong>endTangent</strong> argument if
-<strong>startCondition**=SPECIFIED. Possible values are 0.0 ≤≤ **endTangent</strong> ≤≤ 180.0.</p>
+<strong>startCondition</strong> = SPECIFIED. Possible values are 0.0 ≤≤ <strong>endTangent</strong> ≤≤ 180.0.</p>
 </dd>
 <dt><strong>endMagnitude</strong></dt><dd><p>A Float specifying the magnitude of the <strong>endTangent</strong>. This argument is to be used when
 the <strong>endCondition</strong> argument has the value SPECIFIED. Possible values are 0.0 &lt;&lt;
@@ -13783,18 +13783,18 @@ full revolution about the axis of revolution. Possible values are 0 ≤≤ <stro
 The default value, 0, implies a normal revolve.</p>
 </dd>
 <dt><strong>flipRevolveDirection</strong></dt><dd><p>A Boolean specifying whether to override the direction of feature creation. If
-<a href="#id280"><span class="problematic" id="id281">**</span></a>flipRevolveDirection**=OFF, the default direction of revolution is used. If
-<a href="#id282"><span class="problematic" id="id283">**</span></a>flipRevolveDirection**=ON, the revolve direction is reversed. The default value is OFF.</p>
+<strong>flipRevolveDirection</strong> = OFF, the default direction of revolution is used. If
+<strong>flipRevolveDirection</strong> = ON, the revolve direction is reversed. The default value is OFF.</p>
 </dd>
 <dt><strong>flipPitchDirection</strong></dt><dd><p>A Boolean specifying whether to override the direction of translation. If
-<a href="#id284"><span class="problematic" id="id285">**</span></a>flipPitchDirection**=OFF, the direction of translation is given by the direction of the
-revolve axis. If <a href="#id286"><span class="problematic" id="id287">**</span></a>flipPitchDirection**=ON, the translation direction is reversed. The
+<strong>flipPitchDirection</strong> = OFF, the direction of translation is given by the direction of the
+revolve axis. If <strong>flipPitchDirection</strong> = ON, the translation direction is reversed. The
 default value is OFF.</p>
 </dd>
 <dt><strong>moveSketchNormalToPath</strong></dt><dd><p>A Boolean specifying whether to rotate the sketch so that it is normal to the path of
-revolution when using the <strong>pitch</strong> option. If <strong>moveSketchNormalToPath**=OFF, the sketch
-plane remains parallel to the revolve axis. If **moveSketchNormalToPath**=ON, the sketch
-is moved to match the angle created by the **pitch</strong> before being revolved. The default
+revolution when using the <strong>pitch</strong> option. If <strong>moveSketchNormalToPath</strong> = OFF, the sketch
+plane remains parallel to the revolve axis. If <strong>moveSketchNormalToPath</strong> = ON, the sketch
+is moved to match the angle created by the <strong>pitch</strong> before being revolved. The default
 value is OFF.</p>
 </dd>
 <dt><strong>keepInternalBoundaries</strong></dt><dd><p>A Boolean specifying whether internal boundaries will be retained. The default value is
@@ -13870,13 +13870,13 @@ normal extrude. Possible values are -105 ≤≤ <strong>pitch</strong> ≤≤ 10
 and <strong>pitch</strong> are mutually exclusive.</p>
 </dd>
 <dt><strong>profileNormal</strong></dt><dd><p>A Boolean specifying whether to keep the profile normal same as original or varying
-through out the sweep path. When <a href="#id288"><span class="problematic" id="id289">**</span></a>profileNormal**=OFF, the profile normal will vary
-through out the sweep path. When <a href="#id290"><span class="problematic" id="id291">**</span></a>profileNormal**=ON, the profile normal will be same as
+through out the sweep path. When <strong>profileNormal</strong> = OFF, the profile normal will vary
+through out the sweep path. When <strong>profileNormal</strong> = ON, the profile normal will be same as
 original through out the sweep path. The default value is OFF.</p>
 </dd>
 <dt><strong>flipSweepDirection</strong></dt><dd><p>A Boolean specifying whether to flip the direction in which sweep operation will be
-performed. When <a href="#id292"><span class="problematic" id="id293">**</span></a>flipSweepDirection**=OFF, sweep operation will be performed in the
-direction of path direction. When <a href="#id294"><span class="problematic" id="id295">**</span></a>flipSweepDirection**=ON, sweep operation will be
+performed. When <strong>flipSweepDirection</strong> = OFF, sweep operation will be performed in the
+direction of path direction. When <strong>flipSweepDirection</strong> = ON, sweep operation will be
 performed in the direction opposite to the path direction. The default value is OFF.</p>
 </dd>
 <dt><strong>keepInternalBoundaries</strong></dt><dd><p>A Boolean specifying whether internal boundaries will be retained. The default value is
@@ -14015,7 +14015,7 @@ spline wire with existing geometry. It creates the wire separately. The default 
 IMPRINT.</p>
 </dd>
 <dt><strong>meshable</strong></dt><dd><p>A Boolean specifying whether the wire should be available for selection in meshing
-operations. If <a href="#id296"><span class="problematic" id="id297">**</span></a>meshable**=OFF, the wire can be used for connector section assignment.
+operations. If <strong>meshable</strong> = OFF, the wire can be used for connector section assignment.
 The default value is ON.</p>
 </dd>
 </dl>
@@ -14055,9 +14055,9 @@ imprints the spline wire with existing geometry. It creates the wire separately.
 default value is IMPRINT.</p>
 </dd>
 <dt><strong>smoothClosedSpline</strong></dt><dd><p>A Boolean specifying the behavior of Abaqus when the points defining a spline wire form
-a closed loop (the start and end points are the same). If <a href="#id298"><span class="problematic" id="id299">**</span></a>smoothClosedSpline**=ON,
+a closed loop (the start and end points are the same). If <strong>smoothClosedSpline</strong> = ON,
 Abaqus creates a smooth spline wire where the tangencies at the end point meet smoothly.
-If <a href="#id300"><span class="problematic" id="id301">**</span></a>smoothClosedSpline**=OFF, Abaqus does not automatically create a smooth end
+If <strong>smoothClosedSpline</strong> = OFF, Abaqus does not automatically create a smooth end
 condition. The default value in OFF.</p>
 </dd>
 </dl>
@@ -14142,7 +14142,7 @@ condition. The default value in OFF.</p>
 <li><a class="reference internal" href="#">Part</a><ul>
 <li><a class="reference internal" href="#create-parts">Create parts</a></li>
 <li><a class="reference internal" href="#object-features">Object features</a><ul>
-<li><a class="reference internal" href="#id29">Part</a></li>
+<li><a class="reference internal" href="#id1">Part</a></li>
 <li><a class="reference internal" href="#acisfile">AcisFile</a></li>
 <li><a class="reference internal" href="#acismdb">AcisMdb</a></li>
 <li><a class="reference internal" href="#feature">Feature</a></li>

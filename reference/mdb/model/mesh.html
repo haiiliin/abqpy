@@ -818,7 +818,7 @@ are:</p>
 </ul>
 <p>The return value is dependent on the <strong>attribute</strong> argument.</p>
 <ul>
-<li><p>If <a href="#id1"><span class="problematic" id="id2">**</span></a>attribute**=EDGE_SEEDING_METHOD, the return value is a SymbolicConstant specifying
+<li><p>If <strong>attribute</strong> = EDGE_SEEDING_METHOD, the return value is a SymbolicConstant specifying
 the edge seeding method used to create the seeds along the edge. Possible values are:</p>
 <blockquote>
 <div><ul class="simple">
@@ -830,7 +830,7 @@ the edge seeding method used to create the seeds along the edge. Possible values
 </ul>
 </div></blockquote>
 </li>
-<li><p>If <a href="#id3"><span class="problematic" id="id4">**</span></a>attribute**=BIAS_METHOD, the return value is a SymbolicConstant specifying the bias
+<li><p>If <strong>attribute</strong> = BIAS_METHOD, the return value is a SymbolicConstant specifying the bias
 type used to create the seeds along the edge. Possible values are:</p>
 <blockquote>
 <div><ul class="simple">
@@ -840,36 +840,36 @@ type used to create the seeds along the edge. Possible values are:</p>
 </ul>
 </div></blockquote>
 </li>
-<li><p>If <a href="#id5"><span class="problematic" id="id6">**</span></a>attribute**=NUMBER, the return value is an Int specifying the number of element
+<li><p>If <strong>attribute</strong> = NUMBER, the return value is an Int specifying the number of element
 seeds along the edge.</p></li>
-<li><p>If <a href="#id7"><span class="problematic" id="id8">**</span></a>attribute**=AVERAGE_SIZE, the return value is a Float specifying the average
+<li><p>If <strong>attribute</strong> = AVERAGE_SIZE, the return value is a Float specifying the average
 element size along the edge.</p></li>
-<li><p>If <a href="#id9"><span class="problematic" id="id10">**</span></a>attribute**=DEVIATION_FACTOR, the return value is a Float specifying the deviation
+<li><p>If <strong>attribute</strong> = DEVIATION_FACTOR, the return value is a Float specifying the deviation
 factor h/Lh/L, where hh is the chordal deviation and LL is the element length. If edge</p></li>
 </ul>
 <blockquote>
 <div><p>seeds are not defined, the return value is zero.</p>
 </div></blockquote>
 <ul class="simple">
-<li><p>If <a href="#id11"><span class="problematic" id="id12">**</span></a>attribute**=MIN_SIZE_FACTOR, the return value is a Float specifying the size of the
+<li><p>If <strong>attribute</strong> = MIN_SIZE_FACTOR, the return value is a Float specifying the size of the
 smallest allowable element as a fraction of the specified global element size. If edge
 seeds are not defined, the return value is zero.</p></li>
-<li><p>If <a href="#id13"><span class="problematic" id="id14">**</span></a>attribute**=BIAS_RATIO, the return value is a Float specifying the length ratio of
+<li><p>If <strong>attribute</strong> = BIAS_RATIO, the return value is a Float specifying the length ratio of
 the largest element to the smallest element.</p></li>
-<li><p>If <a href="#id15"><span class="problematic" id="id16">**</span></a>attribute**=BIAS_MIN_SIZE, the return value is a Float specifying the length of the
+<li><p>If <strong>attribute</strong> = BIAS_MIN_SIZE, the return value is a Float specifying the length of the
 largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were
 specified by minimum and maximum sizes.</p></li>
-<li><p>If <a href="#id17"><span class="problematic" id="id18">**</span></a>attribute**=BIAS_MAX_SIZE, the return value is a Float specifying the length of the
+<li><p>If <strong>attribute</strong> = BIAS_MAX_SIZE, the return value is a Float specifying the length of the
 largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were</p></li>
 </ul>
 <p>specified by minimum and maximum sizes.
-- If <a href="#id19"><span class="problematic" id="id20">**</span></a>attribute**=VERTEX_ADJ_TO_SMALLEST_ELEM, the return value is an Int specifying the</p>
+- If <strong>attribute</strong> = VERTEX_ADJ_TO_SMALLEST_ELEM, the return value is an Int specifying the</p>
 <blockquote>
 <div><p>ID of the vertex next to the smallest element; only applicable if the
 EDGE_SEEDING_METHOD is BIASED.</p>
 </div></blockquote>
 <ul>
-<li><p>If <a href="#id21"><span class="problematic" id="id22">**</span></a>attribute**=SMALLEST_ELEM_LOCATION, the return value is a SymbolicConstant
+<li><p>If <strong>attribute</strong> = SMALLEST_ELEM_LOCATION, the return value is a SymbolicConstant
 specifying the location of smallest elements for double bias seeds; only applicable if
 the EDGE_SEEDING_METHOD is BIASED and BIAS_METHOD is DOUBLE. Possible values are:</p>
 <blockquote>
@@ -880,7 +880,7 @@ the EDGE_SEEDING_METHOD is BIASED and BIAS_METHOD is DOUBLE. Possible values are
 </ul>
 </div></blockquote>
 </li>
-<li><p>If <a href="#id23"><span class="problematic" id="id24">**</span></a>attribute**=CONSTRAINT, the return value is a SymbolicConstant specifying how close
+<li><p>If <strong>attribute</strong> = CONSTRAINT, the return value is a SymbolicConstant specifying how close
 the seeds must be matched by the mesh. Possible values are:</p>
 <blockquote>
 <div><ul class="simple">
@@ -974,7 +974,7 @@ elements.</p>
 </ul>
 </div></blockquote>
 <p>The return value is dependent on the <strong>attribute</strong> argument.
-- If <a href="#id25"><span class="problematic" id="id26">**</span></a>attribute**=ELEM_SHAPE, the return value is a SymbolicConstant specifying the</p>
+- If <strong>attribute</strong> = ELEM_SHAPE, the return value is a SymbolicConstant specifying the</p>
 <blockquote>
 <div><p>element shape used during meshing. Possible values are:</p>
 <blockquote>
@@ -991,7 +991,7 @@ elements.</p>
 </div></blockquote>
 </div></blockquote>
 <ul>
-<li><p>If <a href="#id27"><span class="problematic" id="id28">**</span></a>attribute**=TECHNIQUE, the return value is a SymbolicConstant specifying the
+<li><p>If <strong>attribute</strong> = TECHNIQUE, the return value is a SymbolicConstant specifying the
 meshing technique to be used during meshing. Possible values are:</p>
 <blockquote>
 <div><ul class="simple">
@@ -1005,7 +1005,7 @@ meshing technique to be used during meshing. Possible values are:</p>
 </ul>
 <p>Where UNMESHABLE indicates that no meshing technique is applicable with the currently
 assigned element shape.
-- If <a href="#id29"><span class="problematic" id="id30">**</span></a>attribute**=ALGORITHM, the return value is a SymbolicConstant specifying the</p>
+- If <strong>attribute</strong> = ALGORITHM, the return value is a SymbolicConstant specifying the</p>
 <blockquote>
 <div><p>meshing algorithm to be used during meshing. Possible values are:</p>
 <blockquote>
@@ -1019,13 +1019,13 @@ assigned element shape.
 </div></blockquote>
 </div></blockquote>
 <p>Where NONE indicates that no algorithm is applicable.
-- If <a href="#id31"><span class="problematic" id="id32">**</span></a>attribute**=MIN_TRANSITION, the return value is a Boolean indicating whether</p>
+- If <strong>attribute</strong> = MIN_TRANSITION, the return value is a Boolean indicating whether</p>
 <blockquote>
 <div><p>minimum transition will be used during meshing. This option is applicable only to the</p>
 </div></blockquote>
 <dl class="simple">
 <dt>following:</dt><dd><ul class="simple">
-<li><p>Free quadrilateral meshing or sweep hexahedral meshing with <a href="#id33"><span class="problematic" id="id34">**</span></a>algorithm**=MEDIAL_AXIS.</p></li>
+<li><p>Free quadrilateral meshing or sweep hexahedral meshing with <strong>algorithm</strong> = MEDIAL_AXIS.</p></li>
 <li><p>Structured quadrilateral meshing.</p></li>
 </ul>
 </dd>
@@ -1087,14 +1087,14 @@ are:</p>
 </ul>
 <p>The return value is dependent on the value of the <strong>attribute</strong> argument.</p>
 <ul class="simple">
-<li><p>If <a href="#id35"><span class="problematic" id="id36">**</span></a>attribute**=SIZE, the return value is a Float specifying the assigned global
+<li><p>If <strong>attribute</strong> = SIZE, the return value is a Float specifying the assigned global
 element size. If part seeds are not defined, the return value is zero.</p></li>
-<li><p>If <a href="#id37"><span class="problematic" id="id38">**</span></a>attribute**=DEFAULT_SIZE, the return value is a Float specifying a suggested
+<li><p>If <strong>attribute</strong> = DEFAULT_SIZE, the return value is a Float specifying a suggested
 default global element size based upon the part geometry.</p></li>
-<li><p>If <a href="#id39"><span class="problematic" id="id40">**</span></a>attribute**=DEVIATION_FACTOR, the return value is a Float specifying the deviation
+<li><p>If <strong>attribute</strong> = DEVIATION_FACTOR, the return value is a Float specifying the deviation
 factor h/Lh/L, where hh is the chordal deviation and LL is the element length. If part
 seeds are not defined, the return value is zero.</p></li>
-<li><p>If <a href="#id41"><span class="problematic" id="id42">**</span></a>attribute**=MIN_SIZE_FACTOR, the return value is a Float specifying the size of the
+<li><p>If <strong>attribute</strong> = MIN_SIZE_FACTOR, the return value is a Float specifying the size of the
 smallest allowable element as a fraction of the specified global element size. If part
 seeds are not defined, the return value is zero.</p></li>
 </ul>
@@ -1190,18 +1190,18 @@ values are:
 </dd>
 <dt><strong>end1Edges</strong></dt><dd><p>A sequence of Edge objects specifying the edges to seed. The smallest elements will be
 positioned near the end where the normalized curve parameter=0.0. You must provide
-either the <strong>end1Edges</strong> or the <strong>end2Edges</strong> argument or both when <a href="#id43"><span class="problematic" id="id44">**</span></a>biasMethod**=SINGLE and
-omit both of them when <a href="#id45"><span class="problematic" id="id46">**</span></a>biasMethod**=DOUBLE.Note:You can determine which end is which by
+either the <strong>end1Edges</strong> or the <strong>end2Edges</strong> argument or both when <strong>biasMethod</strong> = SINGLE and
+omit both of them when <strong>biasMethod</strong> = DOUBLE.Note:You can determine which end is which by
 the order of the vertex indices returned by
-[getVertices()](<a class="reference external" href="https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?ContextScope=all#simaker-edgegetverticespyc">https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?ContextScope=all#simaker-edgegetverticespyc</a>).</p>
+[getVertices()](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?ContextScope=all#simaker-edgegetverticespyc).</p>
 </dd>
 <dt><strong>end2Edges</strong></dt><dd><p>A sequence of Edge objects specifying the edges to seed. The smallest elements will be
 positioned near the end where the normalized curve parameter=1.0.</p>
 </dd>
 <dt><strong>centerEdges</strong></dt><dd><p>A sequence of Edge objects specifying the edges to seed. The smallest elements will be
 positioned near edge center. You must provide either the <strong>centerEdges</strong> or the <strong>endEdges</strong>
-argument or both when <a href="#id47"><span class="problematic" id="id48">**</span></a>biasMethod**=DOUBLE and omit both of them when
-<a href="#id49"><span class="problematic" id="id50">**</span></a>biasMethod**=SINGLE.</p>
+argument or both when <strong>biasMethod</strong> = DOUBLE and omit both of them when
+<strong>biasMethod</strong> = SINGLE.</p>
 </dd>
 <dt><strong>endEdges</strong></dt><dd><p>A sequence of Edge objects specifying the edges to seed. The smallest elements will be
 positioned near edge ends.</p>
@@ -1451,7 +1451,7 @@ will be used.</p></li>
 ON. If unspecified, the existing value will remain unchanged. This option is applicable
 only in the following cases:</p>
 <ul class="simple">
-<li><p>Free quadrilateral meshing or hexahedral sweep meshing with <a href="#id51"><span class="problematic" id="id52">**</span></a>algorithm**=MEDIAL_AXIS.</p></li>
+<li><p>Free quadrilateral meshing or hexahedral sweep meshing with <strong>algorithm</strong> = MEDIAL_AXIS.</p></li>
 <li><p>Structured quadrilateral meshing.</p></li>
 </ul>
 </dd>
@@ -1465,10 +1465,10 @@ technique. The <strong>allowMapped</strong> argument is applicable only in the f
 <ul class="simple">
 <li><p>Free triangular meshing.</p></li>
 <li><p>Free quadrilateral or quadrilateral-dominated meshing with
-<a href="#id53"><span class="problematic" id="id54">**</span></a>algorithm**=ADVANCING_FRONT.</p></li>
-<li><p>Hexahedral or hexahedral-dominated sweep meshing with <a href="#id55"><span class="problematic" id="id56">**</span></a>algorithm**=ADVANCING_FRONT.</p></li>
-<li><p>Free tetrahedral meshing. <strong>allowMapped**=True implies that mapped triangular meshing
-can be used on faces that bound three-dimensional **regions</strong>.</p></li>
+<strong>algorithm</strong> = ADVANCING_FRONT.</p></li>
+<li><p>Hexahedral or hexahedral-dominated sweep meshing with <strong>algorithm</strong> = ADVANCING_FRONT.</p></li>
+<li><p>Free tetrahedral meshing. <strong>allowMapped</strong> = True implies that mapped triangular meshing
+can be used on faces that bound three-dimensional <strong>regions</strong>.</p></li>
 </ul>
 </dd>
 </dl>
@@ -1490,7 +1490,7 @@ revolvable region.</p>
 </dd>
 <dt><strong>sense</strong></dt><dd><p>A SymbolicConstant specifying the sweep sense. The sense will affect only how gasket
 elements will be created; it will have no effect if gasket elements are not used.
-Possible values are FORWARD or REVERSE.If <a href="#id57"><span class="problematic" id="id58">**</span></a>sense**=FORWARD, the sense of the given edge’s
+Possible values are FORWARD or REVERSE.If <strong>sense</strong> = FORWARD, the sense of the given edge’s
 underlying curve will be used.</p>
 </dd>
 </dl>
@@ -3653,7 +3653,7 @@ are:</p>
 </ul>
 <p>The return value is dependent on the <strong>attribute</strong> argument.</p>
 <ul>
-<li><p>If <a href="#id59"><span class="problematic" id="id60">**</span></a>attribute**=EDGE_SEEDING_METHOD, the return value is a SymbolicConstant specifying
+<li><p>If <strong>attribute</strong> = EDGE_SEEDING_METHOD, the return value is a SymbolicConstant specifying
 the edge seeding method used to create the seeds along the edge. Possible values are:</p>
 <blockquote>
 <div><ul class="simple">
@@ -3665,7 +3665,7 @@ the edge seeding method used to create the seeds along the edge. Possible values
 </ul>
 </div></blockquote>
 </li>
-<li><p>If <a href="#id61"><span class="problematic" id="id62">**</span></a>attribute**=BIAS_METHOD, the return value is a SymbolicConstant specifying the bias
+<li><p>If <strong>attribute</strong> = BIAS_METHOD, the return value is a SymbolicConstant specifying the bias
 type used to create the seeds along the edge. Possible values are:</p>
 <blockquote>
 <div><ul class="simple">
@@ -3675,28 +3675,28 @@ type used to create the seeds along the edge. Possible values are:</p>
 </ul>
 </div></blockquote>
 </li>
-<li><p>If <a href="#id63"><span class="problematic" id="id64">**</span></a>attribute**=NUMBER, the return value is an Int specifying the number of element
+<li><p>If <strong>attribute</strong> = NUMBER, the return value is an Int specifying the number of element
 seeds along the edge.</p></li>
-<li><p>If <a href="#id65"><span class="problematic" id="id66">**</span></a>attribute**=AVERAGE_SIZE, the return value is a Float specifying the average
+<li><p>If <strong>attribute</strong> = AVERAGE_SIZE, the return value is a Float specifying the average
 element size along the edge.</p></li>
-<li><p>If <a href="#id67"><span class="problematic" id="id68">**</span></a>attribute**=DEVIATION_FACTOR, the return value is a Float specifying the deviation
+<li><p>If <strong>attribute</strong> = DEVIATION_FACTOR, the return value is a Float specifying the deviation
 factor h/Lh/L, where hh is the chordal deviation and LL is the element length. If edge
 seeds are not defined, the return value is zero.</p></li>
-<li><p>If <a href="#id69"><span class="problematic" id="id70">**</span></a>attribute**=MIN_SIZE_FACTOR, the return value is a Float specifying the size of the
+<li><p>If <strong>attribute</strong> = MIN_SIZE_FACTOR, the return value is a Float specifying the size of the
 smallest allowable element as a fraction of the specified global element size. If edge
 seeds are not defined, the return value is zero.</p></li>
-<li><p>If <a href="#id71"><span class="problematic" id="id72">**</span></a>attribute**=BIAS_RATIO, the return value is a Float specifying the length ratio of
+<li><p>If <strong>attribute</strong> = BIAS_RATIO, the return value is a Float specifying the length ratio of
 the largest element to the smallest element.</p></li>
-<li><p>If <a href="#id73"><span class="problematic" id="id74">**</span></a>attribute**=BIAS_MIN_SIZE, the return value is a Float specifying the length of the
+<li><p>If <strong>attribute</strong> = BIAS_MIN_SIZE, the return value is a Float specifying the length of the
 largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were
 specified by minimum and maximum sizes.</p></li>
-<li><p>If <a href="#id75"><span class="problematic" id="id76">**</span></a>attribute**=BIAS_MAX_SIZE, the return value is a Float specifying the length of the
+<li><p>If <strong>attribute</strong> = BIAS_MAX_SIZE, the return value is a Float specifying the length of the
 largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were
 specified by minimum and maximum sizes.</p></li>
-<li><p>If <a href="#id77"><span class="problematic" id="id78">**</span></a>attribute**=VERTEX_ADJ_TO_SMALLEST_ELEM, the return value is an Int specifying the
+<li><p>If <strong>attribute</strong> = VERTEX_ADJ_TO_SMALLEST_ELEM, the return value is an Int specifying the
 ID of the vertex next to the smallest element; only applicable if the
 EDGE_SEEDING_METHOD is BIASED.</p></li>
-<li><p>If <a href="#id79"><span class="problematic" id="id80">**</span></a>attribute**=SMALLEST_ELEM_LOCATION, the return value is a SymbolicConstant
+<li><p>If <strong>attribute</strong> = SMALLEST_ELEM_LOCATION, the return value is a SymbolicConstant
 specifying the location of smallest elements for double bias seeds; only applicable if
 the EDGE_SEEDING_METHOD is BIASED and BIAS_METHOD is DOUBLE. Possible values are:</p>
 <blockquote>
@@ -3707,7 +3707,7 @@ the EDGE_SEEDING_METHOD is BIASED and BIAS_METHOD is DOUBLE. Possible values are
 </ul>
 </div></blockquote>
 </li>
-<li><p>If <a href="#id81"><span class="problematic" id="id82">**</span></a>attribute**=CONSTRAINT, the return value is a SymbolicConstant specifying how close
+<li><p>If <strong>attribute</strong> = CONSTRAINT, the return value is a SymbolicConstant specifying how close
 the seeds must be matched by the mesh. Possible values are:</p>
 <blockquote>
 <div><ul class="simple">
@@ -3808,7 +3808,7 @@ elements.</p>
 </ul>
 <p>The return value depends on the value of the <strong>attribute</strong> argument.</p>
 <ul>
-<li><p>If <a href="#id83"><span class="problematic" id="id84">**</span></a>attribute**=ELEM_SHAPE, the return value is a SymbolicConstant specifying the
+<li><p>If <strong>attribute</strong> = ELEM_SHAPE, the return value is a SymbolicConstant specifying the
 element shape used during meshing. Possible values are:</p>
 <blockquote>
 <div><ul class="simple">
@@ -3823,7 +3823,7 @@ element shape used during meshing. Possible values are:</p>
 </ul>
 </div></blockquote>
 </li>
-<li><p>If <a href="#id85"><span class="problematic" id="id86">**</span></a>attribute**=TECHNIQUE, the return value is a SymbolicConstant specifying the
+<li><p>If <strong>attribute</strong> = TECHNIQUE, the return value is a SymbolicConstant specifying the
 meshing technique to be used during meshing. Possible values are:</p>
 <blockquote>
 <div><ul class="simple">
@@ -3837,7 +3837,7 @@ meshing technique to be used during meshing. Possible values are:</p>
 </ul>
 <p>Where UNMESHABLE indicates that no meshing technique is applicable with the currently
 assigned element shape.
-- If <a href="#id87"><span class="problematic" id="id88">**</span></a>attribute**=ALGORITHM, the return value is a SymbolicConstant specifying the</p>
+- If <strong>attribute</strong> = ALGORITHM, the return value is a SymbolicConstant specifying the</p>
 <blockquote>
 <div><p>meshing algorithm to be used during meshing. Possible values are:</p>
 <blockquote>
@@ -3851,12 +3851,12 @@ assigned element shape.
 </div></blockquote>
 </div></blockquote>
 <p>Where NONE indicates that no algorithm is applicable.
-- If <a href="#id89"><span class="problematic" id="id90">**</span></a>attribute**=MIN_TRANSITION, the return value is a Boolean indicating whether</p>
+- If <strong>attribute</strong> = MIN_TRANSITION, the return value is a Boolean indicating whether</p>
 <blockquote>
 <div><p>minimum transition will be used during meshing. This option is applicable only to the
 following:</p>
 <ul class="simple">
-<li><p>Free quadrilateral meshing or sweep hexahedral meshing with <a href="#id91"><span class="problematic" id="id92">**</span></a>algorithm**=MEDIAL_AXIS.</p></li>
+<li><p>Free quadrilateral meshing or sweep hexahedral meshing with <strong>algorithm</strong> = MEDIAL_AXIS.</p></li>
 <li><p>Structured quadrilateral meshing.</p></li>
 </ul>
 </div></blockquote>
@@ -3914,14 +3914,14 @@ are:</p>
 </ul>
 <p>The return value depends on the value of the <strong>attribute</strong> argument.</p>
 <ul class="simple">
-<li><p>If <a href="#id93"><span class="problematic" id="id94">**</span></a>attribute**=SIZE, the return value is a Float specifying the assigned global
+<li><p>If <strong>attribute</strong> = SIZE, the return value is a Float specifying the assigned global
 element size. If part seeds are not defined, the return value is zero.</p></li>
-<li><p>If <a href="#id95"><span class="problematic" id="id96">**</span></a>attribute**=DEFAULT_SIZE, the return value is a Float specifying a suggested
+<li><p>If <strong>attribute</strong> = DEFAULT_SIZE, the return value is a Float specifying a suggested
 default global element size based upon the part geometry.</p></li>
-<li><p>If <a href="#id97"><span class="problematic" id="id98">**</span></a>attribute**=DEVIATION_FACTOR, the return value is a Float specifying the deviation
+<li><p>If <strong>attribute</strong> = DEVIATION_FACTOR, the return value is a Float specifying the deviation
 factor h/Lh/L, where hh is the chordal deviation and LL is the element length. If part
 seeds are not defined, the return value is zero.</p></li>
-<li><p>If <a href="#id99"><span class="problematic" id="id100">**</span></a>attribute**=MIN_SIZE_FACTOR, the return value is a Float specifying the size of the
+<li><p>If <strong>attribute</strong> = MIN_SIZE_FACTOR, the return value is a Float specifying the size of the
 smallest allowable element as a fraction of the specified global element size. If part
 seeds are not defined, the return value is zero.</p></li>
 </ul>
@@ -4017,18 +4017,18 @@ values are:
 </dd>
 <dt><strong>end1Edges</strong></dt><dd><p>A sequence of Edge objects specifying the edges to seed. The smallest elements will be
 positioned near the end where the normalized curve parameter=0.0. You must provide
-either the <strong>end1Edges</strong> or the <strong>end2Edges</strong> argument or both when <a href="#id101"><span class="problematic" id="id102">**</span></a>biasMethod**=SINGLE and
-omit both of them when <a href="#id103"><span class="problematic" id="id104">**</span></a>biasMethod**=DOUBLE.Note:You can determine which end is which by
+either the <strong>end1Edges</strong> or the <strong>end2Edges</strong> argument or both when <strong>biasMethod</strong> = SINGLE and
+omit both of them when <strong>biasMethod</strong> = DOUBLE.Note:You can determine which end is which by
 the order of the vertex indices returned by
-[getVertices()](<a class="reference external" href="https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?ContextScope=all#simaker-edgegetverticespyc">https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?ContextScope=all#simaker-edgegetverticespyc</a>).</p>
+[getVertices()](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?ContextScope=all#simaker-edgegetverticespyc).</p>
 </dd>
 <dt><strong>end2Edges</strong></dt><dd><p>A sequence of Edge objects specifying the edges to seed. The smallest elements will be
 positioned near the end where the normalized curve parameter=1.0.</p>
 </dd>
 <dt><strong>centerEdges</strong></dt><dd><p>A sequence of Edge objects specifying the edges to seed. The smallest elements will be
 positioned near edge center. You must provide either the <strong>centerEdges</strong> or the <strong>endEdges</strong>
-argument or both when <a href="#id105"><span class="problematic" id="id106">**</span></a>biasMethod**=DOUBLE and omit both of them when
-<a href="#id107"><span class="problematic" id="id108">**</span></a>biasMethod**=SINGLE.</p>
+argument or both when <strong>biasMethod</strong> = DOUBLE and omit both of them when
+<strong>biasMethod</strong> = SINGLE.</p>
 </dd>
 <dt><strong>endEdges</strong></dt><dd><p>A sequence of Edge objects specifying the edges to seed. The smallest elements will be
 positioned near edge ends.</p>
@@ -4281,7 +4281,7 @@ will be used. If algorithm is not specified, the default</p></li>
 ON. If unspecified, the existing value will remain unchanged. This option is applicable
 only in the following cases:</p>
 <ul class="simple">
-<li><p>Free quadrilateral meshing or hexahedral sweep meshing with <a href="#id109"><span class="problematic" id="id110">**</span></a>algorithm**=MEDIAL_AXIS.</p></li>
+<li><p>Free quadrilateral meshing or hexahedral sweep meshing with <strong>algorithm</strong> = MEDIAL_AXIS.</p></li>
 <li><p>Structured quadrilateral meshing.</p></li>
 </ul>
 </dd>
@@ -4295,10 +4295,10 @@ technique. The <strong>allowMapped</strong> argument is applicable only in the f
 <ul class="simple">
 <li><p>Free triangular meshing.</p></li>
 <li><p>Free quadrilateral or quadrilateral-dominated meshing with
-<a href="#id111"><span class="problematic" id="id112">**</span></a>algorithm**=ADVANCING_FRONT.</p></li>
-<li><p>Hexahedral or hexahedral-dominated sweep meshing with <a href="#id113"><span class="problematic" id="id114">**</span></a>algorithm**=ADVANCING_FRONT.</p></li>
-<li><p>Free tetrahedral meshing. <strong>allowMapped**=True implies that mapped triangular meshing
-can be used on faces that bound three-dimensional **regions</strong>.</p></li>
+<strong>algorithm</strong> = ADVANCING_FRONT.</p></li>
+<li><p>Hexahedral or hexahedral-dominated sweep meshing with <strong>algorithm</strong> = ADVANCING_FRONT.</p></li>
+<li><p>Free tetrahedral meshing. <strong>allowMapped</strong> = True implies that mapped triangular meshing
+can be used on faces that bound three-dimensional <strong>regions</strong>.</p></li>
 </ul>
 </dd>
 </dl>
@@ -4320,7 +4320,7 @@ revolvable region.</p>
 </dd>
 <dt><strong>sense</strong></dt><dd><p>A SymbolicConstant specifying the sweep sense. The sense will affect only how gasket
 elements will be created; it will have no effect if gasket elements are not used.
-Possible values are FORWARD or REVERSE.If <a href="#id115"><span class="problematic" id="id116">**</span></a>sense**=FORWARD, the sense of the given edge’s
+Possible values are FORWARD or REVERSE.If <strong>sense</strong> = FORWARD, the sense of the given edge’s
 underlying curve will be used.</p>
 </dd>
 </dl>

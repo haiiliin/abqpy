@@ -450,17 +450,17 @@ are WIREFRAME, HIDDEN, SHADED, and FILLED. The default value is WIREFRAME.</p>
 <dt><strong>connectors</strong></dt><dd><p>A Boolean specifying whether connectors are shown. The default value is OFF.</p>
 </dd>
 <dt><strong>cnxEndPoints</strong></dt><dd><p>A Boolean specifying whether the connector end points are shown. This member is
-applicable only if <a href="#id1"><span class="problematic" id="id2">**</span></a>connectors**=ON. The default value is ON.</p>
+applicable only if <strong>connectors</strong> = ON. The default value is ON.</p>
 </dd>
 <dt><strong>cnxLocalAxes</strong></dt><dd><p>A Boolean specifying whether the connector local coordinate system axes are shown. This
-member is applicable only if <a href="#id3"><span class="problematic" id="id4">**</span></a>connectors**=ON. The default value is ON.</p>
+member is applicable only if <strong>connectors</strong> = ON. The default value is ON.</p>
 </dd>
 <dt><strong>cnxTypeLabels</strong></dt><dd><p>A Boolean specifying whether the connector section type labels are shown. This member is
-applicable only if <a href="#id5"><span class="problematic" id="id6">**</span></a>connectors**=ON. The default value is ON.</p>
+applicable only if <strong>connectors</strong> = ON. The default value is ON.</p>
 </dd>
 <dt><strong>cnxTagDisplay</strong></dt><dd><p>A Boolean specifying whether the tag information is displayed along with the connector
-section type labels. This member is applicable only if <a href="#id7"><span class="problematic" id="id8">**</span></a>connectors**=ON and if
-<a href="#id9"><span class="problematic" id="id10">**</span></a>cnxTypeLabels**=ON. The default value is OFF.</p>
+section type labels. This member is applicable only if <strong>connectors</strong> = ON and if
+<strong>cnxTypeLabels</strong> = ON. The default value is OFF.</p>
 </dd>
 <dt><strong>predefinedFields</strong></dt><dd><p>A Boolean specifying whether fields and initial conditions are shown. The default value
 is OFF.</p>
@@ -1198,20 +1198,20 @@ OpenGL exclusively so the only possible value is OPEN_GL. OPEN_GL takes advantag
 graphics adapter hardware acceleration.</p>
 </dd>
 <dt><strong>doubleBuffering</strong></dt><dd><p>A Boolean specifying whether double buffering is used. The default value is ON.Double
-buffering controls where Abaqus/CAE draws its graphics. When <a href="#id11"><span class="problematic" id="id12">**</span></a>doubleBuffering**=OFF,
+buffering controls where Abaqus/CAE draws its graphics. When <strong>doubleBuffering</strong> = OFF,
 everything is drawn directly to the screen and on many systems you can see the progress
 of the drawing operations. Most users find this distracting, especially in dynamic
-situations such as view manipulation or animation of results. When <a href="#id13"><span class="problematic" id="id14">**</span></a>doubleBuffering**=ON,
+situations such as view manipulation or animation of results. When <strong>doubleBuffering</strong> = ON,
 the drawing occurs in a separate graphics buffer that is displayed when all the drawing
 operations are complete. This results in a much smoother display during view changes or
 animation. It is recommended that you set double buffering to ON.</p>
 </dd>
 <dt><strong>displayLists</strong></dt><dd><p>A Boolean specifying whether a display list will be used to accelerate graphics
-performance. The default value is ON.When <strong>displayLists**=ON, drawing operations are
+performance. The default value is ON.When <strong>displayLists</strong> = ON, drawing operations are
 recorded in a list that can be quickly replayed. This results in faster drawing on most
 systems but requires extra memory to record the drawing operations. In the Visualization
 module, display lists are only used during view manipulations and then their use is
-subject to the setting of **viewManipDisplayListThreshold</strong>.</p>
+subject to the setting of <strong>viewManipDisplayListThreshold</strong>.</p>
 </dd>
 <dt><strong>highlightMethodHint</strong></dt><dd><p>A sequence of SymbolicConstants specifying a hint used to modify the highlight method.
 Possible values are:HARDWARE_OVERLAY, specifying a hint of hardware overlay. The best
@@ -1234,8 +1234,8 @@ tuple to unique values based on the default order.</p>
 <dt><strong>dragMode</strong></dt><dd><p>A SymbolicConstant specifying which rendering is used during dynamic rotations of the
 view. Possible values are:FAST, specifying a rendering mode where the image is rendered
 in wireframe.AS_IS, specifying a rendering mode where the image is rendered as is.The
-default value is AS_IS.When set to <a href="#id15"><span class="problematic" id="id16">**</span></a>dragMode**=FAST, a wireframe outline is drawn during
-view changes by rotation, pan, or zoom. When <a href="#id17"><span class="problematic" id="id18">**</span></a>dragMode**=AS_IS, everything displayed in
+default value is AS_IS.When set to <strong>dragMode</strong> = FAST, a wireframe outline is drawn during
+view changes by rotation, pan, or zoom. When <strong>dragMode</strong> = AS_IS, everything displayed in
 the window will be drawn during view changes; however, the display may lag behind the
 mouse movement when the model is complex especially if you are using an older or slower
 system. For newer systems with graphics hardware acceleration the AS_IS setting can be
@@ -1271,8 +1271,8 @@ different OpenGL drivers for printing and display, and you may have to use diffe
 offset values for each driver.</p>
 </dd>
 <dt><strong>vertexArrays</strong></dt><dd><p>A Boolean specifying how the three-dimensional vertices of the model are processed. When
-<a href="#id19"><span class="problematic" id="id20">**</span></a>vertexArrays**=OFF, each vertex of the model is processed separately. When
-<a href="#id21"><span class="problematic" id="id22">**</span></a>vertexArrays**=ON, the vertices are processed in large blocks resulting in faster
+<strong>vertexArrays</strong> = OFF, each vertex of the model is processed separately. When
+<strong>vertexArrays</strong> = ON, the vertices are processed in large blocks resulting in faster
 display. Not all graphics adapters support this capability correctly. An indicator that
 the graphics adapters is not processing three-dimensional vertices correctly is the
 absence of graphics during rubber banding operations. For example, when dynamically
@@ -1291,29 +1291,29 @@ the delay before a view manipulation operation begins in order to obtain improve
 graphics performance during the view manipulation. If set high with a large model, the
 delay can be many seconds. In excessive cases, graphics memory can be exceeded and the
 result may be an empty display list (no visible model) for the view manipulation. This
-setting is treated as 0 if <strong>displayLists**=OFF. Possible values are 0 ≤≤
-**viewManipDisplayListThreshold</strong> ≤≤ 20000. The default value is 40.</p>
+setting is treated as 0 if <strong>displayLists</strong> = OFF. Possible values are 0 ≤≤
+<strong>viewManipDisplayListThreshold</strong> ≤≤ 20000. The default value is 40.</p>
 </dd>
 <dt><strong>directRendering</strong></dt><dd><p>A Boolean specifying how Abaqus renders X11 graphics operations. When
-<strong>directRendering**=OFF, the graphics are rendered through the X Server. When
-**directRendering**=ON, the graphics operations are sent directly to the graphics adapter
+<strong>directRendering</strong> = OFF, the graphics are rendered through the X Server. When
+<strong>directRendering</strong> = ON, the graphics operations are sent directly to the graphics adapter
 producing faster displays. For maximum performance, the initial value is ON. This
 argument is used only when you first start Abaqus/CAE; you cannot configure
-**directRendering</strong> during a session.</p>
+<strong>directRendering</strong> during a session.</p>
 </dd>
 <dt><strong>hardwareAcceleration</strong></dt><dd><p>A Boolean specifying whether a hardware accelerated OpenGL graphics driver will be used
-on Windows platforms. The default value is ON.When <strong>hardwareAcceleration**=OFF, the
+on Windows platforms. The default value is ON.When <strong>hardwareAcceleration</strong> = OFF, the
 graphics driver uses a software implementation of OpenGL that is included with the
 operating system. This results in slower drawing on most systems; however, you may have
 to use the software implementation of OpenGL if the hardware graphics driver is
 incompatible with Abaqus/CAE.*hardwareAcceleration* is used only when you first start
-Abaqus/CAE on a Windows platform; you cannot configure **hardwareAcceleration</strong> during a
+Abaqus/CAE on a Windows platform; you cannot configure <strong>hardwareAcceleration</strong> during a
 session.*hardwareAcceleration* is not used when you start Abaqus/CAE on an X-Windows
 platform and display to a Windows platform running Exceed or any other X-Windows server.</p>
 </dd>
 <dt><strong>hardwareOverlay</strong></dt><dd><p>A Boolean specifying whether hardware overlay planes will be used if available. The
 default value is the same value as the <strong>hardwareOverlayAvailable</strong> member.When
-<strong>hardwareOverlayAvailable**=OFF, it will not be possible to set **hardwareOverlay</strong> to ON
+<strong>hardwareOverlayAvailable</strong> = OFF, it will not be possible to set <strong>hardwareOverlay</strong> to ON
 and the HARDWARE_OVERLAY highlight method will not be available. If viewports display a
 solid color and will not display the model, it will be necessary to inhibit hardware
 overlay completely by setting the ABAQUS_EMULATE_OVERLAYS environment variable (to any
@@ -1334,9 +1334,9 @@ each driver.</p>
 </dd>
 <dt><strong>backgroundStyle</strong></dt><dd><p>A SymbolicConstant specifying the background style to be used for all viewport windows.
 Possible values are SOLID and GRADIENT. The default value is SOLID.If
-<strong>backgroundStyle**=SOLID, the viewport background will appear as a solid color as
-specified by **backgroundColor</strong>. If <strong>backgroundStyle**=GRADIENT, the viewport background
-will be drawn as a gradient beginning with the **backgroundColor</strong> at the top of the
+<strong>backgroundStyle</strong> = SOLID, the viewport background will appear as a solid color as
+specified by <strong>backgroundColor</strong>. If <strong>backgroundStyle</strong> = GRADIENT, the viewport background
+will be drawn as a gradient beginning with the <strong>backgroundColor</strong> at the top of the
 viewport and gradually blending to the <strong>backgroundBottomColor</strong> at the bottom of the
 viewport.</p>
 </dd>
@@ -1355,9 +1355,9 @@ background will be the top color of the gradient background.</p>
 <dt><strong>backfaceCulling</strong></dt><dd><p>A Boolean specifying whether facets that are determined to be facing away from the
 viewer will be drawn. The default value is ON. backfaceCulling provides a performance
 enhancement when displaying solid elements where the front side of the element occludes
-the back side of the element. Set <a href="#id23"><span class="problematic" id="id24">**</span></a>backfaceCulling**=OFF if it appears that you are
+the back side of the element. Set <strong>backfaceCulling</strong> = OFF if it appears that you are
 seeing the back side of an element and the front side is missing. You should also set
-<a href="#id25"><span class="problematic" id="id26">**</span></a>backfaceCulling**=OFF if you believe the display is not complete.</p>
+<strong>backfaceCulling</strong> = OFF if you believe the display is not complete.</p>
 </dd>
 <dt><strong>accelerateOffScreen</strong></dt><dd><p>A Boolean specifying whether the hardware accelerated graphics driver will be used for
 off-screen rendering. The default value is ON if graphics hardware acceleration is

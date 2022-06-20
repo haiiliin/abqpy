@@ -344,13 +344,13 @@ NODE_LIST, POINT_LIST, EDGE_LIST, CIRCUMFERENTIAL, and RADIAL.</p>
 <dt><strong>expression</strong></dt><dd><p>A sequence specifying the nodes or points that make up the path. The definition of the
 path expression depends on the <strong>type</strong> argument.</p>
 <ul class="simple">
-<li><p>If <strong>type**=NODE_LIST, **expression</strong> must be a sequence of sequences. Each inner sequence
+<li><p>If <strong>type</strong> = NODE_LIST, <strong>expression</strong> must be a sequence of sequences. Each inner sequence
 contains two items, the first item is a String specifying the name of a part instance,
 and the second item can be either a sequence of Ints or a sequence of Strings, each
 specifying a range of Ints.</p></li>
-<li><p>If <strong>type**=POINT_LIST, **expression</strong> must be a sequence of tuples of three Floats,
+<li><p>If <strong>type</strong> = POINT_LIST, <strong>expression</strong> must be a sequence of tuples of three Floats,
 specifying the coordinates of each point.</p></li>
-<li><p>If <strong>type**=EDGE_LIST, **expression</strong> must be a sequence of sequences. Each inner sequence
+<li><p>If <strong>type</strong> = EDGE_LIST, <strong>expression</strong> must be a sequence of sequences. Each inner sequence
 contains two items, the first item is a String specifying the name of the part instance,
 and the second item is a sequence of tuples of four Ints that uniquely identify an
 element edge. The four Ints are:</p>
@@ -362,38 +362,38 @@ element edge. The four Ints are:</p>
 edge start node to the edge end node. A negative number specifies the opposite.</p></li>
 </ol>
 </li>
-<li><p>When <strong>type**=CIRCUMFERENTIAL or RADIAL, **expression</strong> must be a sequence of three tuples
+<li><p>When <strong>type</strong> = CIRCUMFERENTIAL or RADIAL, <strong>expression</strong> must be a sequence of three tuples
 of three Floats, specifying the coordinates of the points used to define a coordinate
 system.</p></li>
 </ul>
 </dd>
 <dt><strong>circleDefinition</strong></dt><dd><p>A SymbolicConstant specifying the method in which the circle is being defined. This
-argument is valid only when <strong>type**=CIRCUMFERENTIAL or RADIAL. Possible values are
+argument is valid only when <strong>type</strong> = CIRCUMFERENTIAL or RADIAL. Possible values are
 ORIGIN_AXIS and POINT_ARC.When the value is ORIGIN_AXIS, the first two points in
-**expression</strong> are points on the rotational axis and the third point lies on the x-axis.
+<strong>expression</strong> are points on the rotational axis and the third point lies on the x-axis.
 When the value is POINT_ARC, the three points in <strong>expression</strong> are points lying on the
 arc of the circle.</p>
 </dd>
 <dt><strong>numSegments</strong></dt><dd><p>An Int specifying the number of equal segments in the path. This argument is valid only
-when <a href="#id1"><span class="problematic" id="id2">**</span></a>type**=CIRCUMFERENTIAL or RADIAL.</p>
+when <strong>type</strong> = CIRCUMFERENTIAL or RADIAL.</p>
 </dd>
 <dt><strong>startAngle</strong></dt><dd><p>A Float specifying the start angle of the circumferential path. This argument is valid
-only when <a href="#id3"><span class="problematic" id="id4">**</span></a>type**=CIRCUMFERENTIAL.</p>
+only when <strong>type</strong> = CIRCUMFERENTIAL.</p>
 </dd>
 <dt><strong>endAngle</strong></dt><dd><p>A Float specifying the end angle of the circumferential path. This argument is valid
-only when <a href="#id5"><span class="problematic" id="id6">**</span></a>type**=CIRCUMFERENTIAL.</p>
+only when <strong>type</strong> = CIRCUMFERENTIAL.</p>
 </dd>
 <dt><strong>radius</strong></dt><dd><p>The SymbolicConstant CIRCLE_RADIUS or a Float specifying the radius of the
-circumferential path. This argument is valid only when <a href="#id7"><span class="problematic" id="id8">**</span></a>type**=CIRCUMFERENTIAL.</p>
+circumferential path. This argument is valid only when <strong>type</strong> = CIRCUMFERENTIAL.</p>
 </dd>
 <dt><strong>radialAngle</strong></dt><dd><p>A Float specifying the angle between the radial path and the <strong>X</strong>-axis of the specified
-coordinate system. This argument is valid only when <a href="#id9"><span class="problematic" id="id10">**</span></a>type**=RADIAL.</p>
+coordinate system. This argument is valid only when <strong>type</strong> = RADIAL.</p>
 </dd>
 <dt><strong>startRadius</strong></dt><dd><p>The SymbolicConstant CIRCLE_RADIUS or a Float specifying the start radius of the radial
-path. This argument is valid only when <a href="#id11"><span class="problematic" id="id12">**</span></a>type**=RADIAL.</p>
+path. This argument is valid only when <strong>type</strong> = RADIAL.</p>
 </dd>
 <dt><strong>endRadius</strong></dt><dd><p>The SymbolicConstant CIRCLE_RADIUS or a Float specifying the end radius of the radial
-path. This argument is valid only when <a href="#id13"><span class="problematic" id="id14">**</span></a>type**=RADIAL.</p>
+path. This argument is valid only when <strong>type</strong> = RADIAL.</p>
 </dd>
 </dl>
 </dd>
@@ -406,8 +406,8 @@ path. This argument is valid only when <a href="#id13"><span class="problematic"
 <dd class="field-odd"><dl class="simple">
 <dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelError</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">ErrorUnsupportedNodeData</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">ErrorUnsupportedPointData</span></code>, ErrorIncorrectPathData,</dt><dd></dd>
 <dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyError</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">ErrorEmptyPathName</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">ErrorPathNotFound</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">and</span></code> ErrorNoOdbPathDisplay.</dt><dd></dd>
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">ValueError</span></code></dt><dd><p>When <strong>type**=CIRCUMFERENTIAL or RADIAL, the three points specified in
-**expression</strong> are collinear.</p>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">ValueError</span></code></dt><dd><p>When <strong>type</strong> = CIRCUMFERENTIAL or RADIAL, the three points specified in
+<strong>expression</strong> are collinear.</p>
 </dd>
 </dl>
 </dd>
@@ -673,7 +673,7 @@ import the visualization module.</p>
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>nodeId: int</strong></dt><dd><p>An Int specifying the ID of the most recently queried node. If the last query was
-unsuccessful, <a href="#id15"><span class="problematic" id="id16">**</span></a>nodeID**=−1.</p>
+unsuccessful, <strong>nodeID</strong> = −1.</p>
 </dd>
 <dt><strong>nodePos: float</strong></dt><dd><p>A tuple of Floats specifying the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of the most recently
 queried node.</p>
@@ -730,12 +730,12 @@ member are initialized using the values from the <strong>defaultProbeOptions</st
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>probeEntity: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the entity being probed when <a href="#id17"><span class="problematic" id="id18">**</span></a>probeObject**=”ODB”. Possible
+<dt><strong>probeEntity: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the entity being probed when <strong>probeObject</strong> = “ODB”. Possible
 values are NODE and ELEMENT. The default value is ELEMENT.</p>
 </dd>
 <dt><strong>probeOutputPosition: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the output position to probe for field output results when
-<strong>probeObject**=”ODB”. Possible values are NODAL, INTEGRATION_POINT, ELEMENT_FACE,
-ELEMENT_NODAL, and ELEMENT_CENTROID.When **probeEntity=NODE</strong>, the only possible value is
+<strong>probeObject</strong> = “ODB”. Possible values are NODAL, INTEGRATION_POINT, ELEMENT_FACE,
+ELEMENT_NODAL, and ELEMENT_CENTROID.When <strong>probeEntity=NODE</strong>, the only possible value is
 NODAL. When <strong>probeEntity=ELEMENT</strong>, the only possible values are INTEGRATION_POINT,
 ELEMENT_FACE, ELEMENT_NODAL, and ELEMENT_CENTROID, and the default is INTEGRATION_POINT.</p>
 </dd>
@@ -824,64 +824,64 @@ at the nearest point on the curve. The default value is OFF.</p>
 supplied to setValues, they will override the values in <strong>options</strong>. The default value is
 None.</p>
 </dd>
-<dt><strong>probeEntity</strong></dt><dd><p>A SymbolicConstant specifying the entity being probed when <a href="#id19"><span class="problematic" id="id20">**</span></a>probeObject**=”ODB”. Possible
+<dt><strong>probeEntity</strong></dt><dd><p>A SymbolicConstant specifying the entity being probed when <strong>probeObject</strong> = “ODB”. Possible
 values are NODE and ELEMENT. The default value is ELEMENT.</p>
 </dd>
 <dt><strong>probeOutputPosition</strong></dt><dd><p>A SymbolicConstant specifying the output position to probe for field output results when
-<a href="#id21"><span class="problematic" id="id22">**</span></a>probeObject**=”ODB”. Possible values are NODAL, INTEGRATION_POINT, ELEMENT_FACE,
-ELEMENT_NODAL, and ELEMENT_CENTROID.When <a href="#id23"><span class="problematic" id="id24">**</span></a>probeEntity**=NODE, the only possible value is
-NODAL. When <a href="#id25"><span class="problematic" id="id26">**</span></a>probeEntity**=ELEMENT, the only possible values are INTEGRATION_POINT,
+<strong>probeObject</strong> = “ODB”. Possible values are NODAL, INTEGRATION_POINT, ELEMENT_FACE,
+ELEMENT_NODAL, and ELEMENT_CENTROID.When <strong>probeEntity</strong> = NODE, the only possible value is
+NODAL. When <strong>probeEntity</strong> = ELEMENT, the only possible values are INTEGRATION_POINT,
 ELEMENT_FACE, ELEMENT_NODAL, and ELEMENT_CENTROID, and the default is INTEGRATION_POINT.</p>
 </dd>
 <dt><strong>partInstance</strong></dt><dd><p>A Boolean specifying whether to display the part instance information. This member is
-valid when <a href="#id27"><span class="problematic" id="id28">**</span></a>probeObject**=ODB. The default value is ON.</p>
+valid when <strong>probeObject</strong> = ODB. The default value is ON.</p>
 </dd>
 <dt><strong>elementID</strong></dt><dd><p>A Boolean specifying whether to display the element ID information. This member is valid
-when <a href="#id29"><span class="problematic" id="id30">**</span></a>probeObject**=ODB and <a href="#id31"><span class="problematic" id="id32">**</span></a>probeEntity**=ELEMENT. The default value is ON.</p>
+when <strong>probeObject</strong> = ODB and <strong>probeEntity</strong> = ELEMENT. The default value is ON.</p>
 </dd>
 <dt><strong>elementType</strong></dt><dd><p>A Boolean specifying whether to display the element type information. This member is
-valid when <a href="#id33"><span class="problematic" id="id34">**</span></a>probeObject**=ODB and <a href="#id35"><span class="problematic" id="id36">**</span></a>probeEntity**=ELEMENT. The default value is ON.</p>
+valid when <strong>probeObject</strong> = ODB and <strong>probeEntity</strong> = ELEMENT. The default value is ON.</p>
 </dd>
 <dt><strong>elementConnectivity</strong></dt><dd><p>A Boolean specifying whether to display the element connectivity. This member is valid
-when <a href="#id37"><span class="problematic" id="id38">**</span></a>probeObject**=ODB and <a href="#id39"><span class="problematic" id="id40">**</span></a>probeEntity**=ELEMENT. The default value is ON.</p>
+when <strong>probeObject</strong> = ODB and <strong>probeEntity</strong> = ELEMENT. The default value is ON.</p>
 </dd>
 <dt><strong>elementFieldResults</strong></dt><dd><p>A Boolean specifying whether to display the element field output results. This member is
-valid when <a href="#id41"><span class="problematic" id="id42">**</span></a>probeObject**=ODB, <a href="#id43"><span class="problematic" id="id44">**</span></a>probeEntity**=ELEMENT, and <a href="#id45"><span class="problematic" id="id46">**</span></a>isFieldOutputAvailable**=ON.
+valid when <strong>probeObject</strong> = ODB, <strong>probeEntity</strong> = ELEMENT, and <strong>isFieldOutputAvailable</strong> = ON.
 The default value is ON.</p>
 </dd>
-<dt><strong>nodeId</strong></dt><dd><p>A Boolean specifying whether to display the node ID when <a href="#id47"><span class="problematic" id="id48">**</span></a>probeObject**=ODB and
-<a href="#id49"><span class="problematic" id="id50">**</span></a>probeEntity**=NODE. The default value is ON.</p>
+<dt><strong>nodeId</strong></dt><dd><p>A Boolean specifying whether to display the node ID when <strong>probeObject</strong> = ODB and
+<strong>probeEntity</strong> = NODE. The default value is ON.</p>
 </dd>
 <dt><strong>baseCoordinates</strong></dt><dd><p>A Boolean specifying whether to display the base coordinates of a node when
-<a href="#id51"><span class="problematic" id="id52">**</span></a>probeObject**=ODB and <a href="#id53"><span class="problematic" id="id54">**</span></a>probeEntity**=NODE. The default value is ON.</p>
+<strong>probeObject</strong> = ODB and <strong>probeEntity</strong> = NODE. The default value is ON.</p>
 </dd>
 <dt><strong>deformedCoordinates</strong></dt><dd><p>A Boolean specifying whether to display the deformed coordinates of a node when
-<a href="#id55"><span class="problematic" id="id56">**</span></a>probeObject**=ODB and <a href="#id57"><span class="problematic" id="id58">**</span></a>probeEntity**=NODE. The default value is ON.</p>
+<strong>probeObject</strong> = ODB and <strong>probeEntity</strong> = NODE. The default value is ON.</p>
 </dd>
 <dt><strong>attachedElements</strong></dt><dd><p>A Boolean specifying whether to display the elements attached to a node when
-<a href="#id59"><span class="problematic" id="id60">**</span></a>probeObject**=ODB and <a href="#id61"><span class="problematic" id="id62">**</span></a>probeEntity**=NODE. The default value is ON.</p>
+<strong>probeObject</strong> = ODB and <strong>probeEntity</strong> = NODE. The default value is ON.</p>
 </dd>
 <dt><strong>nodeFieldResults</strong></dt><dd><p>A Boolean specifying whether to display the node field output results. This member is
-valid when <a href="#id63"><span class="problematic" id="id64">**</span></a>probeObject**=ODB, <a href="#id65"><span class="problematic" id="id66">**</span></a>probeEntity**=NODE, and <a href="#id67"><span class="problematic" id="id68">**</span></a>isFieldOutputAvailable**=ON. The
+valid when <strong>probeObject</strong> = ODB, <strong>probeEntity</strong> = NODE, and <strong>isFieldOutputAvailable</strong> = ON. The
 default value is ON.</p>
 </dd>
 <dt><strong>legend</strong></dt><dd><p>A Boolean specifying whether to display the legend for a curve being probed. This member
-is valid when <a href="#id69"><span class="problematic" id="id70">**</span></a>probeObject**=XYPlot. The default value is ON.</p>
+is valid when <strong>probeObject</strong> = XYPlot. The default value is ON.</p>
 </dd>
 <dt><strong>xValue</strong></dt><dd><p>A Boolean specifying whether to display the <strong>x</strong>-coordinate value of the point on the
-curve being probed. This member is valid when <a href="#id71"><span class="problematic" id="id72">**</span></a>probeObject**=XYPlot. The default value is
+curve being probed. This member is valid when <strong>probeObject</strong> = XYPlot. The default value is
 ON.</p>
 </dd>
 <dt><strong>yValue</strong></dt><dd><p>A Boolean specifying whether to display the <strong>y</strong>-coordinate value of the point on the
-curve being probed. This member is valid when <a href="#id73"><span class="problematic" id="id74">**</span></a>probeObject**=XYPlot. The default value is
+curve being probed. This member is valid when <strong>probeObject</strong> = XYPlot. The default value is
 ON.</p>
 </dd>
 <dt><strong>sequenceID</strong></dt><dd><p>A Boolean specifying whether to display the sequence ID of the point on the curve being
-probed. This member is valid when <a href="#id75"><span class="problematic" id="id76">**</span></a>probeObject**=XYPlot. The default value is ON.</p>
+probed. This member is valid when <strong>probeObject</strong> = XYPlot. The default value is ON.</p>
 </dd>
 <dt><strong>interpolateXy</strong></dt><dd><p>A Boolean specifying whether to interpolate values within a line segment when
-<strong>probeObject**=XYPlot. When **interpolateXy**=OFF, probing returns the nearest **X - Y</strong> data
-point on the curve. When <a href="#id77"><span class="problematic" id="id78">**</span></a>interpolateXy**=ON, probing interpolates data to return a value
+<strong>probeObject</strong> = XYPlot. When <strong>interpolateXy</strong> = OFF, probing returns the nearest <strong>X - Y</strong> data
+point on the curve. When <strong>interpolateXy</strong> = ON, probing interpolates data to return a value
 at the nearest point on the curve. The default value is OFF.</p>
 </dd>
 </dl>
@@ -935,7 +935,7 @@ supplied to setValues, they will override the values in <strong>options</strong>
 None.</p>
 </dd>
 <dt><strong>numColumns</strong></dt><dd><p>An Int specifying the number of columns in the report file. This argument is valid only
-when <a href="#id79"><span class="problematic" id="id80">**</span></a>pageWidth**=SPECIFY. The default value is 80.</p>
+when <strong>pageWidth</strong> = SPECIFY. The default value is 80.</p>
 </dd>
 <dt><strong>numDigits</strong></dt><dd><p>An Int specifying the number of significant digits to be written for decimal values. The
 default value is 6.</p>
@@ -948,12 +948,12 @@ ENGINEERING.</p>
 SPECIFY. The default value is NO_LIMIT.</p>
 </dd>
 <dt><strong>printTotal</strong></dt><dd><p>A Boolean specifying whether to print the total value of either the field output result
-(when <strong>probeObject**=”ODB”) or the **x</strong>- and <strong>y</strong>-coordinates (when <a href="#id81"><span class="problematic" id="id82">**</span></a>probeObject**=XYPlot).
+(when <strong>probeObject</strong> = ”ODB”) or the <strong>x</strong>- and <strong>y</strong>-coordinates (when <strong>probeObject</strong> = XYPlot).
 The default value is OFF.</p>
 </dd>
 <dt><strong>printMinMax</strong></dt><dd><p>A Boolean specifying whether to print the minimum and maximum values of either the field
-output result (when <strong>probeObject**=”ODB”) or the **x</strong>- and <strong>y</strong>-coordinates (when
-<a href="#id83"><span class="problematic" id="id84">**</span></a>probeObject**=XYPlot). The default value is OFF.</p>
+output result (when <strong>probeObject</strong> = ”ODB”) or the <strong>x</strong>- and <strong>y</strong>-coordinates (when
+<strong>probeObject</strong> = XYPlot). The default value is OFF.</p>
 </dd>
 </dl>
 </dd>

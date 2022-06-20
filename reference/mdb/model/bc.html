@@ -433,7 +433,7 @@
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the boundary condition is applied.</p>
 </dd>
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id1"><span class="problematic" id="id2">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>a1</strong></dt><dd><p>A Float or a SymbolicConstant specifying the acceleration component in the 1-direction.
@@ -465,7 +465,7 @@ value is UNSET. You should provide the <strong>amplitude</strong> argument only 
 specified step.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id3"><span class="problematic" id="id4">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is distributed spatially.
@@ -504,7 +504,7 @@ SymbolicConstant are U1, U2, U3, UR1, UR2, UR3. The default value is U1.</p>
 <dt><strong>amplitudeScaleFactor</strong></dt><dd><p>A Float specifying the scale factor for the amplitude curve. The default value is 1.0.</p>
 </dd>
 <dt><strong>centerOfRotation</strong></dt><dd><p>A ModelDot object specifying a tuple containing one center of rotation. The default
-value is the global origin. This argument applies only when <a href="#id5"><span class="problematic" id="id6">**</span></a>dof**=UR1, UR2, or UR3.</p>
+value is the global origin. This argument applies only when <strong>dof</strong> = UR1, UR2, or UR3.</p>
 </dd>
 <dt><strong>correlation</strong></dt><dd><p>A CorrelationArray object.</p>
 </dd>
@@ -549,11 +549,11 @@ specified step.</p>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the boundary condition is applied.</p>
 </dd>
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id7"><span class="problematic" id="id8">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the acoustic pressure magnitude. The default value is 0. The
-<strong>magnitude</strong> argument is optional if <a href="#id9"><span class="problematic" id="id10">**</span></a>distributionType**=USER_DEFINED.</p>
+<strong>magnitude</strong> argument is optional if <strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is distributed spatially.
 Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.</p>
@@ -621,11 +621,11 @@ values at the start of the step. The default value is OFF.</p>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the boundary condition is applied.</p>
 </dd>
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id11"><span class="problematic" id="id12">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the concentration magnitude. The default value is 0. The <strong>magnitude</strong>
-argument is optional if <a href="#id13"><span class="problematic" id="id14">**</span></a>distributionType**=USER_DEFINED.</p>
+argument is optional if <strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is distributed spatially.
 Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.</p>
@@ -901,7 +901,7 @@ Possible values are UNIFORM and USER_DEFINED. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object associated
 with this boundary condition. The <strong>fieldName</strong> argument applies only when
-<a href="#id15"><span class="problematic" id="id16">**</span></a>distributionType**=FIELD or <a href="#id17"><span class="problematic" id="id18">**</span></a>distributionType**=DISCRETE_FIELD. The default value is an
+<strong>distributionType</strong> = FIELD or <strong>distributionType</strong> = DISCRETE_FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>u1</strong></dt><dd><p>A Float, a Complex, or a SymbolicConstant specifying the displacement component in the
@@ -942,7 +942,7 @@ Possible values are UNIFORM, USER_DEFINED, FIELD, and DISCRETE_FIELD. The defaul
 is UNIFORM.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id19"><span class="problematic" id="id20">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>buckleCase</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE
@@ -982,7 +982,7 @@ SymbolicConstant are U1, U2, U3, UR1, UR2, UR3. The default value is U1.</p>
 <dt><strong>amplitudeScaleFactor</strong></dt><dd><p>A Float specifying the scale factor for the amplitude curve. The default value is 1.0.</p>
 </dd>
 <dt><strong>centerOfRotation</strong></dt><dd><p>A ModelDot object specifying a tuple containing one center of rotation. The default
-value is the global origin. This argument applies only when <a href="#id21"><span class="problematic" id="id22">**</span></a>dof**=UR1, UR2, or UR3.</p>
+value is the global origin. This argument applies only when <strong>dof</strong> = UR1, UR2, or UR3.</p>
 </dd>
 <dt><strong>correlation</strong></dt><dd><p>A CorrelationArray object.</p>
 </dd>
@@ -1027,11 +1027,11 @@ specified step.</p>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the boundary condition is applied.</p>
 </dd>
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id23"><span class="problematic" id="id24">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the electrical potential magnitude. The default value is 0. The
-<strong>magnitude</strong> argument is optional if <a href="#id25"><span class="problematic" id="id26">**</span></a>distributionType**=USER_DEFINED.</p>
+<strong>magnitude</strong> argument is optional if <strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is distributed spatially.
 Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.</p>
@@ -1081,7 +1081,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt>localCsys</dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id27"><span class="problematic" id="id28">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 </dl>
@@ -1148,7 +1148,7 @@ Eulerian surface. The default value is ON.</p>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the boundary condition is applied.</p>
 </dd>
 <dt><strong>materialName</strong></dt><dd><p>A String specifying the name of the Eulerian surface to follow. This argument applies
-only when <a href="#id29"><span class="problematic" id="id30">**</span></a>followRegion**=False.</p>
+only when <strong>followRegion</strong> = False.</p>
 </dd>
 <dt><strong>ctrPosition1</strong></dt><dd><p>A SymbolicConstant specifying the 1-direction translational constraint on the center of
 the Eulerian mesh. Possible values are FREE and FIXED. The default value is FREE.</p>
@@ -1162,7 +1162,7 @@ bounds of the mesh in the 1 direction. Possible values are FREE and FIXED. The d
 value is FREE.</p>
 </dd>
 <dt><strong>expansionRatio1</strong></dt><dd><p>None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
-1 direction. If <a href="#id31"><span class="problematic" id="id32">**</span></a>expansionRatio1**=None, then there is no upper limit. The default value
+1 direction. If <strong>expansionRatio1</strong> = None, then there is no upper limit. The default value
 is None.</p>
 </dd>
 <dt><strong>contractRatio1</strong></dt><dd><p>A Float specifying the lower bounds on the allowable scaling of the mesh in the 1
@@ -1180,7 +1180,7 @@ bounds of the mesh in the 2 direction. Possible values are FREE and FIXED. The d
 value is FREE.</p>
 </dd>
 <dt><strong>expansionRatio2</strong></dt><dd><p>None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
-2 direction. If <a href="#id33"><span class="problematic" id="id34">**</span></a>expansionRatio2**=None, then there is no upper limit. The default value
+2 direction. If <strong>expansionRatio2</strong> = None, then there is no upper limit. The default value
 is None.</p>
 </dd>
 <dt><strong>contractRatio2</strong></dt><dd><p>A Float specifying the lower bounds on the allowable scaling of the mesh in the 2
@@ -1198,7 +1198,7 @@ bounds of the mesh in the 3 direction. Possible values are FREE and FIXED. The d
 value is FREE.</p>
 </dd>
 <dt><strong>expansionRatio3</strong></dt><dd><p>None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
-3 direction. If <a href="#id35"><span class="problematic" id="id36">**</span></a>expansionRatio3**=None, then there is no upper limit. The default value
+3 direction. If <strong>expansionRatio3</strong> = None, then there is no upper limit. The default value
 is None.</p>
 </dd>
 <dt><strong>contractRatio3</strong></dt><dd><p>A Float specifying the lower bounds on the allowable scaling of the mesh in the 3
@@ -1214,7 +1214,7 @@ is 1.01.</p>
 </dd>
 <dt><strong>volThreshold</strong></dt><dd><p>A Float specifying the lower bounds on the volume fraction when determining which nodes
 to include in the surface bounding box calculation for an Eulerian material surface.
-This argument applies only when <a href="#id37"><span class="problematic" id="id38">**</span></a>followRegion**=False. The default value is 0.5.</p>
+This argument applies only when <strong>followRegion</strong> = False. The default value is 0.5.</p>
 </dd>
 <dt><strong>bufferSize</strong></dt><dd><p>None or a Float specifying the buffer between the surface box and the Eulerian section
 mesh bounding box. The default value is 2.0.</p>
@@ -1308,7 +1308,7 @@ specified step.</p>
 Possible values are UNIFORM and USER_DEFINED. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id39"><span class="problematic" id="id40">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 </dl>
@@ -1341,11 +1341,11 @@ in the global coordinate system. The default value is None.</p>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the boundary condition is applied.</p>
 </dd>
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id41"><span class="problematic" id="id42">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the material flow magnitude. The default value is 0. The <strong>magnitude</strong>
-argument is optional if <a href="#id43"><span class="problematic" id="id44">**</span></a>distributionType**=USER_DEFINED.</p>
+argument is optional if <strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is distributed spatially.
 Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.</p>
@@ -1395,7 +1395,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt>localCsys</dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id45"><span class="problematic" id="id46">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 </dl>
@@ -1418,11 +1418,11 @@ in the global coordinate system. The default value is None.</p>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the boundary condition is applied.</p>
 </dd>
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id47"><span class="problematic" id="id48">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the pore pressure magnitude. The default value is 0. The <strong>magnitude</strong>
-argument is optional if <a href="#id49"><span class="problematic" id="id50">**</span></a>distributionType**=USER_DEFINED.</p>
+argument is optional if <strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is distributed spatially.
 Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.</p>
@@ -1551,7 +1551,7 @@ applied.</p>
 </dd>
 <dt><strong>globalStep</strong></dt><dd><p>A String specifying the step in the global model from which Abaqus reads the values of
 the variables that will drive the submodel analysis. The String indicates the position
-of the step in the sequence of analysis steps. For example, <a href="#id51"><span class="problematic" id="id52">**</span></a>globalStep**=’1’ indicates
+of the step in the sequence of analysis steps. For example, <strong>globalStep</strong> = ‘1’ indicates
 the first step.</p>
 </dd>
 <dt><strong>timeScale</strong></dt><dd><p>A Boolean specifying whether to scale the time variable for the driven nodes’ amplitude
@@ -1573,12 +1573,12 @@ by which a driven node of the submodel can lie outside the region of the element
 global model. The default value is 0.05.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id53"><span class="problematic" id="id54">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>globalIncrement</strong></dt><dd><p>An Int specifying the increment number in the global model step from which the solution
-will be used to specify the values of the driven variables. If <strong>globalIncrement**=0, the
-solution from the last increment will be used. The **globalIncrement</strong> argument is
+will be used to specify the values of the driven variables. If <strong>globalIncrement</strong> = 0, the
+solution from the last increment will be used. The <strong>globalIncrement</strong> argument is
 applicable only for linear perturbation steps. The default value is 0.</p>
 </dd>
 <dt><strong>centerZoneSize</strong></dt><dd><p>A Float specifying the thickness of the center zone size around the shell midsurface.
@@ -1614,7 +1614,7 @@ The default value is None.</p>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the boundary condition is applied.</p>
 </dd>
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id55"><span class="problematic" id="id56">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the temperature magnitude. The default value is 0.</p>
@@ -1663,7 +1663,7 @@ values at the start of the step. The default value is OFF.</p>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the boundary condition is applied.</p>
 </dd>
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id57"><span class="problematic" id="id58">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>v1</strong></dt><dd><p>A Float or a SymbolicConstant specifying the velocity component in the 1-direction.
@@ -1695,7 +1695,7 @@ value is UNSET. You should provide the <strong>amplitude</strong> argument only 
 specified step.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id59"><span class="problematic" id="id60">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is distributed spatially.
@@ -1734,7 +1734,7 @@ SymbolicConstant are U1, U2, U3, UR1, UR2, UR3. The default value is U1.</p>
 <dt><strong>amplitudeScaleFactor</strong></dt><dd><p>A Float specifying the scale factor for the amplitude curve. The default value is 1.0.</p>
 </dd>
 <dt><strong>centerOfRotation</strong></dt><dd><p>A ModelDot object specifying a tuple containing one center of rotation. The default
-value is the global origin. This argument applies only when <a href="#id61"><span class="problematic" id="id62">**</span></a>dof**=UR1, UR2, or UR3.</p>
+value is the global origin. This argument applies only when <strong>dof</strong> = UR1, UR2, or UR3.</p>
 </dd>
 <dt><strong>correlation</strong></dt><dd><p>A CorrelationArray object.</p>
 </dd>
@@ -1783,7 +1783,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id63"><span class="problematic" id="id64">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>Returns</strong></dt><dd></dd>
@@ -1817,7 +1817,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id65"><span class="problematic" id="id66">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>Returns</strong></dt><dd></dd>
@@ -1851,7 +1851,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id67"><span class="problematic" id="id68">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>Returns</strong></dt><dd></dd>
@@ -1885,7 +1885,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id69"><span class="problematic" id="id70">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>Returns</strong></dt><dd></dd>
@@ -1919,7 +1919,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id71"><span class="problematic" id="id72">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>Returns</strong></dt><dd></dd>
@@ -1953,7 +1953,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id73"><span class="problematic" id="id74">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>Returns</strong></dt><dd></dd>
@@ -2246,7 +2246,7 @@ step where it is created.</p>
 <dt><strong>amplitudeScaleFactor</strong></dt><dd><p>A Float specifying the scale factor for the amplitude curve. The default value is 1.0.</p>
 </dd>
 <dt><strong>centerOfRotation</strong></dt><dd><p>A ModelDot object specifying a tuple containing one center of rotation. The default
-value is the global origin. This argument applies only when <a href="#id75"><span class="problematic" id="id76">**</span></a>dof**=UR1, UR2, or UR3.</p>
+value is the global origin. This argument applies only when <strong>dof</strong> = UR1, UR2, or UR3.</p>
 </dd>
 <dt><strong>correlation</strong></dt><dd><p>A CorrelationArray object.</p>
 </dd>
@@ -2406,7 +2406,7 @@ is created.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id77"><span class="problematic" id="id78">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>a1</strong></dt><dd><p>A Float or a SymbolicConstant specifying the acceleration component in the 1-direction.
@@ -2438,7 +2438,7 @@ value is UNSET. You should provide the <strong>amplitude</strong> argument only 
 specified step.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id79"><span class="problematic" id="id80">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is distributed spatially.
@@ -2640,11 +2640,11 @@ where it is created.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id81"><span class="problematic" id="id82">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the acoustic pressure magnitude. The default value is 0. The
-<strong>magnitude</strong> argument is optional if <a href="#id83"><span class="problematic" id="id84">**</span></a>distributionType**=USER_DEFINED.</p>
+<strong>magnitude</strong> argument is optional if <strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is distributed spatially.
 Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.</p>
@@ -2834,11 +2834,11 @@ it is created.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id85"><span class="problematic" id="id86">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the concentration magnitude. The default value is 0. The <strong>magnitude</strong>
-argument is optional if <a href="#id87"><span class="problematic" id="id88">**</span></a>distributionType**=USER_DEFINED.</p>
+argument is optional if <strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is distributed spatially.
 Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.</p>
@@ -3808,7 +3808,7 @@ step where it is created.</p>
 <dt><strong>amplitudeScaleFactor</strong></dt><dd><p>A Float specifying the scale factor for the amplitude curve. The default value is 1.0.</p>
 </dd>
 <dt><strong>centerOfRotation</strong></dt><dd><p>A ModelDot object specifying a tuple containing one center of rotation. The default
-value is the global origin. This argument applies only when <a href="#id89"><span class="problematic" id="id90">**</span></a>dof**=UR1, UR2, or UR3.</p>
+value is the global origin. This argument applies only when <strong>dof</strong> = UR1, UR2, or UR3.</p>
 </dd>
 <dt><strong>correlation</strong></dt><dd><p>A CorrelationArray object.</p>
 </dd>
@@ -3979,7 +3979,7 @@ is created.</p>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object associated
 with this boundary condition. The <strong>fieldName</strong> argument applies only when
-<a href="#id91"><span class="problematic" id="id92">**</span></a>distributionType**=FIELD or <a href="#id93"><span class="problematic" id="id94">**</span></a>distributionType**=DISCRETE_FIELD. The default value is an
+<strong>distributionType</strong> = FIELD or <strong>distributionType</strong> = DISCRETE_FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>u1</strong></dt><dd><p>A Float, a Complex, or a SymbolicConstant specifying the displacement component in the
@@ -4020,7 +4020,7 @@ Possible values are UNIFORM, USER_DEFINED, FIELD, and DISCRETE_FIELD. The defaul
 is UNIFORM.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id95"><span class="problematic" id="id96">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>buckleCase</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE
@@ -4233,11 +4233,11 @@ where it is created.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id97"><span class="problematic" id="id98">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the electrical potential magnitude. The default value is 0. The
-<strong>magnitude</strong> argument is optional if <a href="#id99"><span class="problematic" id="id100">**</span></a>distributionType**=USER_DEFINED.</p>
+<strong>magnitude</strong> argument is optional if <strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is distributed spatially.
 Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.</p>
@@ -4659,7 +4659,7 @@ Eulerian surface. The default value is ON.</p>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the boundary condition is applied.</p>
 </dd>
 <dt><strong>materialName</strong></dt><dd><p>A String specifying the name of the Eulerian surface to follow. This argument applies
-only when <a href="#id101"><span class="problematic" id="id102">**</span></a>followRegion**=False.</p>
+only when <strong>followRegion</strong> = False.</p>
 </dd>
 <dt><strong>ctrPosition1</strong></dt><dd><p>A SymbolicConstant specifying the 1-direction translational constraint on the center of
 the Eulerian mesh. Possible values are FREE and FIXED. The default value is FREE.</p>
@@ -4673,7 +4673,7 @@ bounds of the mesh in the 1 direction. Possible values are FREE and FIXED. The d
 value is FREE.</p>
 </dd>
 <dt><strong>expansionRatio1</strong></dt><dd><p>None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
-1 direction. If <a href="#id103"><span class="problematic" id="id104">**</span></a>expansionRatio1**=None, then there is no upper limit. The default value
+1 direction. If <strong>expansionRatio1</strong> = None, then there is no upper limit. The default value
 is None.</p>
 </dd>
 <dt><strong>contractRatio1</strong></dt><dd><p>A Float specifying the lower bounds on the allowable scaling of the mesh in the 1
@@ -4691,7 +4691,7 @@ bounds of the mesh in the 2 direction. Possible values are FREE and FIXED. The d
 value is FREE.</p>
 </dd>
 <dt><strong>expansionRatio2</strong></dt><dd><p>None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
-2 direction. If <a href="#id105"><span class="problematic" id="id106">**</span></a>expansionRatio2**=None, then there is no upper limit. The default value
+2 direction. If <strong>expansionRatio2</strong> = None, then there is no upper limit. The default value
 is None.</p>
 </dd>
 <dt><strong>contractRatio2</strong></dt><dd><p>A Float specifying the lower bounds on the allowable scaling of the mesh in the 2
@@ -4709,7 +4709,7 @@ bounds of the mesh in the 3 direction. Possible values are FREE and FIXED. The d
 value is FREE.</p>
 </dd>
 <dt><strong>expansionRatio3</strong></dt><dd><p>None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
-3 direction. If <a href="#id107"><span class="problematic" id="id108">**</span></a>expansionRatio3**=None, then there is no upper limit. The default value
+3 direction. If <strong>expansionRatio3</strong> = None, then there is no upper limit. The default value
 is None.</p>
 </dd>
 <dt><strong>contractRatio3</strong></dt><dd><p>A Float specifying the lower bounds on the allowable scaling of the mesh in the 3
@@ -4725,7 +4725,7 @@ is 1.01.</p>
 </dd>
 <dt><strong>volThreshold</strong></dt><dd><p>A Float specifying the lower bounds on the volume fraction when determining which nodes
 to include in the surface bounding box calculation for an Eulerian material surface.
-This argument applies only when <a href="#id109"><span class="problematic" id="id110">**</span></a>followRegion**=False. The default value is 0.5.</p>
+This argument applies only when <strong>followRegion</strong> = False. The default value is 0.5.</p>
 </dd>
 <dt><strong>bufferSize</strong></dt><dd><p>None or a Float specifying the buffer between the surface box and the Eulerian section
 mesh bounding box. The default value is 2.0.</p>
@@ -4757,7 +4757,7 @@ bounds of the mesh in the 1 direction. Possible values are FREE and FIXED. The d
 value is FREE.</p>
 </dd>
 <dt><strong>expansionRatio1</strong></dt><dd><p>None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
-1 direction. If <a href="#id111"><span class="problematic" id="id112">**</span></a>expansionRatio1**=None, then there is no upper limit. The default value
+1 direction. If <strong>expansionRatio1</strong> = None, then there is no upper limit. The default value
 is None.</p>
 </dd>
 <dt><strong>contractRatio1</strong></dt><dd><p>A Float specifying the lower bounds on the allowable scaling of the mesh in the 1
@@ -4775,7 +4775,7 @@ bounds of the mesh in the 2 direction. Possible values are FREE and FIXED. The d
 value is FREE.</p>
 </dd>
 <dt><strong>expansionRatio2</strong></dt><dd><p>None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
-2 direction. If <a href="#id113"><span class="problematic" id="id114">**</span></a>expansionRatio2**=None, then there is no upper limit. The default value
+2 direction. If <strong>expansionRatio2</strong> = None, then there is no upper limit. The default value
 is None.</p>
 </dd>
 <dt><strong>contractRatio2</strong></dt><dd><p>A Float specifying the lower bounds on the allowable scaling of the mesh in the 2
@@ -4793,7 +4793,7 @@ bounds of the mesh in the 3 direction. Possible values are FREE and FIXED. The d
 value is FREE.</p>
 </dd>
 <dt><strong>expansionRatio3</strong></dt><dd><p>None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
-3 direction. If <a href="#id115"><span class="problematic" id="id116">**</span></a>expansionRatio3**=None, then there is no upper limit. The default value
+3 direction. If <strong>expansionRatio3</strong> = None, then there is no upper limit. The default value
 is None.</p>
 </dd>
 <dt><strong>contractRatio3</strong></dt><dd><p>A Float specifying the lower bounds on the allowable scaling of the mesh in the 3
@@ -4809,7 +4809,7 @@ is 1.01.</p>
 </dd>
 <dt><strong>volThreshold</strong></dt><dd><p>A Float specifying the lower bounds on the volume fraction when determining which nodes
 to include in the surface bounding box calculation for an Eulerian material surface.
-This argument applies only when <a href="#id117"><span class="problematic" id="id118">**</span></a>followRegion**=False. The default value is 0.5.</p>
+This argument applies only when <strong>followRegion</strong> = False. The default value is 0.5.</p>
 </dd>
 <dt><strong>bufferSize</strong></dt><dd><p>None or a Float specifying the buffer between the surface box and the Eulerian section
 mesh bounding box. The default value is 2.0.</p>
@@ -5179,7 +5179,7 @@ specified step.</p>
 Possible values are UNIFORM and USER_DEFINED. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id119"><span class="problematic" id="id120">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 </dl>
@@ -5284,11 +5284,11 @@ is created.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id121"><span class="problematic" id="id122">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the material flow magnitude. The default value is 0. The <strong>magnitude</strong>
-argument is optional if <a href="#id123"><span class="problematic" id="id124">**</span></a>distributionType**=USER_DEFINED.</p>
+argument is optional if <strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is distributed spatially.
 Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.</p>
@@ -5452,11 +5452,11 @@ is created.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id125"><span class="problematic" id="id126">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the pore pressure magnitude. The default value is 0. The <strong>magnitude</strong>
-argument is optional if <a href="#id127"><span class="problematic" id="id128">**</span></a>distributionType**=USER_DEFINED.</p>
+argument is optional if <strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is distributed spatially.
 Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.</p>
@@ -5883,12 +5883,12 @@ by which a driven node of the submodel can lie outside the region of the element
 global model. The default value is 0.05.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id129"><span class="problematic" id="id130">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>globalIncrement</strong></dt><dd><p>An Int specifying the increment number in the global model step from which the solution
-will be used to specify the values of the driven variables. If <strong>globalIncrement**=0, the
-solution from the last increment will be used. The **globalIncrement</strong> argument is
+will be used to specify the values of the driven variables. If <strong>globalIncrement</strong> = 0, the
+solution from the last increment will be used. The <strong>globalIncrement</strong> argument is
 applicable only for linear perturbation steps. The default value is 0.</p>
 </dd>
 <dt><strong>centerZoneSize</strong></dt><dd><p>A Float specifying the thickness of the center zone size around the shell midsurface.
@@ -5913,22 +5913,22 @@ specified step.</p>
 values at the start of the step. The default value is ON.</p>
 </dd>
 <dt><strong>dof</strong></dt><dd><p>A sequence of Ints specifying the degrees of freedom to which the boundary condition is
-applied. The <strong>dof</strong> argument is applicable only if <a href="#id131"><span class="problematic" id="id132">**</span></a>fixed**=OFF.</p>
+applied. The <strong>dof</strong> argument is applicable only if <strong>fixed</strong> = OFF.</p>
 </dd>
 <dt><strong>globalStep</strong></dt><dd><p>A String specifying the step in the global model from which Abaqus reads the values of
 the variables that will drive the submodel analysis. The String indicates the position
-of the step in the sequence of analysis steps. For example, <strong>globalStep**=’1’ indicates
-the first step. The **globalStep</strong> argument is applicable only if <a href="#id133"><span class="problematic" id="id134">**</span></a>fixed**=OFF.</p>
+of the step in the sequence of analysis steps. For example, <strong>globalStep</strong> = ‘1’ indicates
+the first step. The <strong>globalStep</strong> argument is applicable only if <strong>fixed</strong> = OFF.</p>
 </dd>
 <dt><strong>globalIncrement</strong></dt><dd><p>An Int specifying the increment number in the global model step at which the solution
-will be used to specify the values of the driven variables. If <strong>globalIncrement**=0, the
-solution from the last increment will be used. The **globalIncrement</strong> argument is
-applicable only for linear perturbation steps and if <a href="#id135"><span class="problematic" id="id136">**</span></a>fixed**=OFF. The default value is
+will be used to specify the values of the driven variables. If <strong>globalIncrement</strong> = 0, the
+solution from the last increment will be used. The <strong>globalIncrement</strong> argument is
+applicable only for linear perturbation steps and if <strong>fixed</strong> = OFF. The default value is
 0.</p>
 </dd>
 <dt><strong>centerZoneSize</strong></dt><dd><p>A Float specifying the thickness of the center zone size around the shell midsurface.
 The default value is None.The <strong>centerZoneSize</strong> argument is applicable only if
-<a href="#id137"><span class="problematic" id="id138">**</span></a>fixed**=OFF.</p>
+<strong>fixed</strong> = OFF.</p>
 </dd>
 </dl>
 </dd>
@@ -5994,7 +5994,7 @@ values are SET and UNCHANGED.</p>
 </dd>
 <dt><strong>globalStep: str</strong></dt><dd><p>A String specifying the step in the global model from which Abaqus reads the values of
 the variables that will drive the submodel analysis. The String indicates the position
-of the step in the sequence of analysis steps. For example, <a href="#id139"><span class="problematic" id="id140">**</span></a>globalStep**=’1’ indicates
+of the step in the sequence of analysis steps. For example, <strong>globalStep</strong> = ‘1’ indicates
 the first step.</p>
 </dd>
 <dt><strong>dof: int</strong></dt><dd><p>A tuple of Ints specifying the degrees of freedom to which the boundary condition is
@@ -6091,7 +6091,7 @@ is created.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id141"><span class="problematic" id="id142">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the temperature magnitude. The default value is 0.</p>
@@ -6251,31 +6251,31 @@ in the global coordinate system. The default value is None.</p>
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.TypeBC.TypeBC.EncastreBC" title="abaqus.BoundaryCondition.TypeBC.TypeBC.EncastreBC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EncastreBC</span></code></a>(name, createStepName, region[, ...])</p></td>
-<td><p>This method creates an encastre TypeBC object. Notes ----- This function can be accessed by: .. code-block:: python     mdb.models[name].EncastreBC Parameters ---------- name     A String specifying the boundary condition repository key. createStepName     A String specifying the name of the step in which the boundary condition is created. region     A Region object specifying the region to which the boundary condition is applied. buckleCase     A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE     analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and     PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE. localCsys     None or a DatumCsys object specifying the local coordinate system of the boundary     condition's degrees of freedom. If <a href="#id143"><span class="problematic" id="id144">**</span></a>localCsys**=None, the degrees of freedom are defined     in the global coordinate system. The default value is None. Returns -------     A TypeBC object.</p></td>
+<td><p>This method creates an encastre TypeBC object. Notes ----- This function can be accessed by: .. code-block:: python     mdb.models[name].EncastreBC Parameters ---------- name     A String specifying the boundary condition repository key. createStepName     A String specifying the name of the step in which the boundary condition is created. region     A Region object specifying the region to which the boundary condition is applied. buckleCase     A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE     analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and     PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE. localCsys     None or a DatumCsys object specifying the local coordinate system of the boundary     condition's degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined     in the global coordinate system. The default value is None. Returns -------     A TypeBC object.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.TypeBC.TypeBC.PinnedBC" title="abaqus.BoundaryCondition.TypeBC.TypeBC.PinnedBC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PinnedBC</span></code></a>(name, createStepName, region[, ...])</p></td>
-<td><p>This method creates a pinned TypeBC object. Notes ----- This function can be accessed by: .. code-block:: python     mdb.models[name].PinnedBC Parameters ---------- name     A String specifying the boundary condition repository key. createStepName     A String specifying the name of the step in which the boundary condition is created. region     A Region object specifying the region to which the boundary condition is applied. buckleCase     A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE     analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and     PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE. localCsys     None or a DatumCsys object specifying the local coordinate system of the boundary     condition's degrees of freedom. If <a href="#id145"><span class="problematic" id="id146">**</span></a>localCsys**=None, the degrees of freedom are defined     in the global coordinate system. The default value is None. Returns -------     A TypeBC object.</p></td>
+<td><p>This method creates a pinned TypeBC object. Notes ----- This function can be accessed by: .. code-block:: python     mdb.models[name].PinnedBC Parameters ---------- name     A String specifying the boundary condition repository key. createStepName     A String specifying the name of the step in which the boundary condition is created. region     A Region object specifying the region to which the boundary condition is applied. buckleCase     A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE     analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and     PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE. localCsys     None or a DatumCsys object specifying the local coordinate system of the boundary     condition's degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined     in the global coordinate system. The default value is None. Returns -------     A TypeBC object.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.TypeBC.TypeBC.XasymmBC" title="abaqus.BoundaryCondition.TypeBC.TypeBC.XasymmBC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XasymmBC</span></code></a>(name, createStepName, region[, ...])</p></td>
-<td><p>This method creates a TypeBC object that specifies antisymmetry about the <strong>X</strong>-axis. Notes ----- This function can be accessed by: .. code-block:: python     mdb.models[name].XasymmBC Parameters ---------- name     A String specifying the boundary condition repository key. createStepName     A String specifying the name of the step in which the boundary condition is created. region     A Region object specifying the region to which the boundary condition is applied. buckleCase     A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE     analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and     PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE. localCsys     None or a DatumCsys object specifying the local coordinate system of the boundary     condition's degrees of freedom. If <a href="#id147"><span class="problematic" id="id148">**</span></a>localCsys**=None, the degrees of freedom are defined     in the global coordinate system. The default value is None. Returns -------     A TypeBC object.</p></td>
+<td><p>This method creates a TypeBC object that specifies antisymmetry about the <strong>X</strong>-axis. Notes ----- This function can be accessed by: .. code-block:: python     mdb.models[name].XasymmBC Parameters ---------- name     A String specifying the boundary condition repository key. createStepName     A String specifying the name of the step in which the boundary condition is created. region     A Region object specifying the region to which the boundary condition is applied. buckleCase     A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE     analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and     PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE. localCsys     None or a DatumCsys object specifying the local coordinate system of the boundary     condition's degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined     in the global coordinate system. The default value is None. Returns -------     A TypeBC object.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.TypeBC.TypeBC.XsymmBC" title="abaqus.BoundaryCondition.TypeBC.TypeBC.XsymmBC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XsymmBC</span></code></a>(name, createStepName, region[, ...])</p></td>
-<td><p>This method creates a TypeBC object that specifies symmetry about the <strong>X</strong>-axis. Notes ----- This function can be accessed by: .. code-block:: python     mdb.models[name].XsymmBC Parameters ---------- name     A String specifying the boundary condition repository key. createStepName     A String specifying the name of the step in which the boundary condition is created. region     A Region object specifying the region to which the boundary condition is applied. buckleCase     A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE     analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and     PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE. localCsys     None or a DatumCsys object specifying the local coordinate system of the boundary     condition's degrees of freedom. If <a href="#id149"><span class="problematic" id="id150">**</span></a>localCsys**=None, the degrees of freedom are defined     in the global coordinate system. The default value is None. Returns -------     A TypeBC object.</p></td>
+<td><p>This method creates a TypeBC object that specifies symmetry about the <strong>X</strong>-axis. Notes ----- This function can be accessed by: .. code-block:: python     mdb.models[name].XsymmBC Parameters ---------- name     A String specifying the boundary condition repository key. createStepName     A String specifying the name of the step in which the boundary condition is created. region     A Region object specifying the region to which the boundary condition is applied. buckleCase     A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE     analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and     PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE. localCsys     None or a DatumCsys object specifying the local coordinate system of the boundary     condition's degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined     in the global coordinate system. The default value is None. Returns -------     A TypeBC object.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.TypeBC.TypeBC.YasymmBC" title="abaqus.BoundaryCondition.TypeBC.TypeBC.YasymmBC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">YasymmBC</span></code></a>(name, createStepName, region[, ...])</p></td>
-<td><p>This method creates a TypeBC object that specifies antisymmetry about the <strong>Y</strong>-axis. Notes ----- This function can be accessed by: .. code-block:: python     mdb.models[name].YasymmBC Parameters ---------- name     A String specifying the boundary condition repository key. createStepName     A String specifying the name of the step in which the boundary condition is created. region     A Region object specifying the region to which the boundary condition is applied. buckleCase     A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE     analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and     PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE. localCsys     None or a DatumCsys object specifying the local coordinate system of the boundary     condition's degrees of freedom. If <a href="#id151"><span class="problematic" id="id152">**</span></a>localCsys**=None, the degrees of freedom are defined     in the global coordinate system. The default value is None. Returns -------     A TypeBC object.</p></td>
+<td><p>This method creates a TypeBC object that specifies antisymmetry about the <strong>Y</strong>-axis. Notes ----- This function can be accessed by: .. code-block:: python     mdb.models[name].YasymmBC Parameters ---------- name     A String specifying the boundary condition repository key. createStepName     A String specifying the name of the step in which the boundary condition is created. region     A Region object specifying the region to which the boundary condition is applied. buckleCase     A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE     analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and     PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE. localCsys     None or a DatumCsys object specifying the local coordinate system of the boundary     condition's degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined     in the global coordinate system. The default value is None. Returns -------     A TypeBC object.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.TypeBC.TypeBC.YsymmBC" title="abaqus.BoundaryCondition.TypeBC.TypeBC.YsymmBC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">YsymmBC</span></code></a>(name, createStepName, region[, ...])</p></td>
-<td><p>This method creates a TypeBC object that specifies symmetry about the <strong>Y</strong>-axis. Notes ----- This function can be accessed by: .. code-block:: python     mdb.models[name].YsymmBC Parameters ---------- name     A String specifying the boundary condition repository key. createStepName     A String specifying the name of the step in which the boundary condition is created. region     A Region object specifying the region to which the boundary condition is applied. buckleCase     A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE     analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and     PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE. localCsys     None or a DatumCsys object specifying the local coordinate system of the boundary     condition's degrees of freedom. If <a href="#id153"><span class="problematic" id="id154">**</span></a>localCsys**=None, the degrees of freedom are defined     in the global coordinate system. The default value is None. Returns -------     A TypeBC object.</p></td>
+<td><p>This method creates a TypeBC object that specifies symmetry about the <strong>Y</strong>-axis. Notes ----- This function can be accessed by: .. code-block:: python     mdb.models[name].YsymmBC Parameters ---------- name     A String specifying the boundary condition repository key. createStepName     A String specifying the name of the step in which the boundary condition is created. region     A Region object specifying the region to which the boundary condition is applied. buckleCase     A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE     analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and     PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE. localCsys     None or a DatumCsys object specifying the local coordinate system of the boundary     condition's degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined     in the global coordinate system. The default value is None. Returns -------     A TypeBC object.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.TypeBC.TypeBC.ZasymmBC" title="abaqus.BoundaryCondition.TypeBC.TypeBC.ZasymmBC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ZasymmBC</span></code></a>(name, createStepName, region[, ...])</p></td>
-<td><p>This method creates a TypeBC object that specifies antisymmetry about the <strong>Z</strong>-axis. Notes ----- This function can be accessed by: .. code-block:: python     mdb.models[name].ZasymmBC Parameters ---------- name     A String specifying the boundary condition repository key. createStepName     A String specifying the name of the step in which the boundary condition is created. region     A Region object specifying the region to which the boundary condition is applied. buckleCase     A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE     analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and     PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE. localCsys     None or a DatumCsys object specifying the local coordinate system of the boundary     condition's degrees of freedom. If <a href="#id155"><span class="problematic" id="id156">**</span></a>localCsys**=None, the degrees of freedom are defined     in the global coordinate system. The default value is None. Returns -------     A TypeBC object.</p></td>
+<td><p>This method creates a TypeBC object that specifies antisymmetry about the <strong>Z</strong>-axis. Notes ----- This function can be accessed by: .. code-block:: python     mdb.models[name].ZasymmBC Parameters ---------- name     A String specifying the boundary condition repository key. createStepName     A String specifying the name of the step in which the boundary condition is created. region     A Region object specifying the region to which the boundary condition is applied. buckleCase     A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE     analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and     PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE. localCsys     None or a DatumCsys object specifying the local coordinate system of the boundary     condition's degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined     in the global coordinate system. The default value is None. Returns -------     A TypeBC object.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.TypeBC.TypeBC.ZsymmBC" title="abaqus.BoundaryCondition.TypeBC.TypeBC.ZsymmBC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ZsymmBC</span></code></a>(name, createStepName, region[, ...])</p></td>
-<td><p>This method creates a TypeBC object that specifies symmetry about the <strong>Z</strong>-axis. Notes ----- This function can be accessed by: .. code-block:: python     mdb.models[name].ZsymmBC Parameters ---------- name     A String specifying the boundary condition repository key. createStepName     A String specifying the name of the step in which the boundary condition is created. region     A Region object specifying the region to which the boundary condition is applied. buckleCase     A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE     analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and     PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE. localCsys     None or a DatumCsys object specifying the local coordinate system of the boundary     condition's degrees of freedom. If <a href="#id157"><span class="problematic" id="id158">**</span></a>localCsys**=None, the degrees of freedom are defined     in the global coordinate system. The default value is None. Returns -------     A TypeBC object.</p></td>
+<td><p>This method creates a TypeBC object that specifies symmetry about the <strong>Z</strong>-axis. Notes ----- This function can be accessed by: .. code-block:: python     mdb.models[name].ZsymmBC Parameters ---------- name     A String specifying the boundary condition repository key. createStepName     A String specifying the name of the step in which the boundary condition is created. region     A Region object specifying the region to which the boundary condition is applied. buckleCase     A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE     analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and     PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE. localCsys     None or a DatumCsys object specifying the local coordinate system of the boundary     condition's degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined     in the global coordinate system. The default value is None. Returns -------     A TypeBC object.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.TypeBC.TypeBC.setValues" title="abaqus.BoundaryCondition.TypeBC.TypeBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(region[, typeName, buckleCase, ...])</p></td>
-<td><p>This method modifies the data for an existing TypeBC object in the step where it is created. Parameters ---------- region     A Region object specifying the region to which the boundary condition is applied. typeName     A SymbolicConstant specifying the predefined boundary condition type. Possible values     are XSYMM, YSYMM, ZSYMM, XASYMM, YASYMM, ZASYMM, PINNED, and ENCASTRE. buckleCase     A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE     analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and     PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE. localCsys     None or a DatumCsys object specifying the local coordinate system of the boundary     condition's degrees of freedom. If <a href="#id159"><span class="problematic" id="id160">**</span></a>localCsys**=None, the degrees of freedom are defined     in the global coordinate system. The default value is None.</p></td>
+<td><p>This method modifies the data for an existing TypeBC object in the step where it is created. Parameters ---------- region     A Region object specifying the region to which the boundary condition is applied. typeName     A SymbolicConstant specifying the predefined boundary condition type. Possible values     are XSYMM, YSYMM, ZSYMM, XASYMM, YASYMM, ZASYMM, PINNED, and ENCASTRE. buckleCase     A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE     analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and     PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE. localCsys     None or a DatumCsys object specifying the local coordinate system of the boundary     condition's degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined     in the global coordinate system. The default value is None.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.TypeBC.TypeBC.setValuesInStep" title="abaqus.BoundaryCondition.TypeBC.TypeBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, typeName])</p></td>
 <td><p>This method always returns a value error for a TypeBC; it is inherited from the BoundaryCondition object.</p></td>
@@ -6306,7 +6306,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt>localCsys</dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id161"><span class="problematic" id="id162">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 </dl>
@@ -6338,7 +6338,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt>localCsys</dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id163"><span class="problematic" id="id164">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 </dl>
@@ -6370,7 +6370,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt>localCsys</dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id165"><span class="problematic" id="id166">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 </dl>
@@ -6402,7 +6402,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt>localCsys</dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id167"><span class="problematic" id="id168">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 </dl>
@@ -6434,7 +6434,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt>localCsys</dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id169"><span class="problematic" id="id170">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 </dl>
@@ -6466,7 +6466,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt>localCsys</dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id171"><span class="problematic" id="id172">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 </dl>
@@ -6498,7 +6498,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt>localCsys</dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id173"><span class="problematic" id="id174">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 </dl>
@@ -6530,7 +6530,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt>localCsys</dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id175"><span class="problematic" id="id176">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 </dl>
@@ -6559,7 +6559,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt>localCsys</dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id177"><span class="problematic" id="id178">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 </dl>
@@ -6721,7 +6721,7 @@ where it is created.</p>
 <dt><strong>amplitudeScaleFactor</strong></dt><dd><p>A Float specifying the scale factor for the amplitude curve. The default value is 1.0.</p>
 </dd>
 <dt><strong>centerOfRotation</strong></dt><dd><p>A ModelDot object specifying a tuple containing one center of rotation. The default
-value is the global origin. This argument applies only when <a href="#id179"><span class="problematic" id="id180">**</span></a>dof**=UR1, UR2, or UR3.</p>
+value is the global origin. This argument applies only when <strong>dof</strong> = UR1, UR2, or UR3.</p>
 </dd>
 <dt><strong>correlation</strong></dt><dd><p>A CorrelationArray object.</p>
 </dd>
@@ -6880,7 +6880,7 @@ created.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id181"><span class="problematic" id="id182">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>v1</strong></dt><dd><p>A Float or a SymbolicConstant specifying the velocity component in the 1-direction.
@@ -6912,7 +6912,7 @@ value is UNSET. You should provide the <strong>amplitude</strong> argument only 
 specified step.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id183"><span class="problematic" id="id184">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is distributed spatially.

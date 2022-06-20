@@ -530,7 +530,7 @@ to the corresponding parent Part name in a different model.</p>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the boundary condition is applied.</p>
 </dd>
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id2"><span class="problematic" id="id3">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>a1</strong></dt><dd><p>A Float or a SymbolicConstant specifying the acceleration component in the 1-direction.
@@ -562,7 +562,7 @@ value is UNSET. You should provide the <strong>amplitude</strong> argument only 
 specified step.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id4"><span class="problematic" id="id5">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is distributed spatially.
@@ -601,7 +601,7 @@ SymbolicConstant are U1, U2, U3, UR1, UR2, UR3. The default value is U1.</p>
 <dt><strong>amplitudeScaleFactor</strong></dt><dd><p>A Float specifying the scale factor for the amplitude curve. The default value is 1.0.</p>
 </dd>
 <dt><strong>centerOfRotation</strong></dt><dd><p>A ModelDot object specifying a tuple containing one center of rotation. The default
-value is the global origin. This argument applies only when <a href="#id6"><span class="problematic" id="id7">**</span></a>dof**=UR1, UR2, or UR3.</p>
+value is the global origin. This argument applies only when <strong>dof</strong> = UR1, UR2, or UR3.</p>
 </dd>
 <dt><strong>correlation</strong></dt><dd><p>A CorrelationArray object.</p>
 </dd>
@@ -653,29 +653,29 @@ values are TABULAR and NONREFLECTING. The default value is TABULAR.</p>
 </dd>
 <dt><strong>nonreflectingType</strong></dt><dd><p>A SymbolicConstant specifying the type of nonreflecting geometry to be defined. Possible
 values are PLANE, IMPROVED, CIRCULAR, SPHERICAL, ELLIPTICAL, and PROLATE. The default
-value is PLANE.This argument is valid only when <a href="#id8"><span class="problematic" id="id9">**</span></a>definition**=NONREFLECTING.</p>
+value is PLANE.This argument is valid only when <strong>definition</strong> = NONREFLECTING.</p>
 </dd>
 <dt><strong>radius</strong></dt><dd><p>A Float specifying the radius of the circle or sphere defining the boundary surface. The
-default value is 1.0.This argument is valid only when <a href="#id10"><span class="problematic" id="id11">**</span></a>definition**=NONREFLECTING, and
-<a href="#id12"><span class="problematic" id="id13">**</span></a>nonreflectingType**=CIRCULAR or SPHERICAL.</p>
+default value is 1.0.This argument is valid only when <strong>definition</strong> = NONREFLECTING, and
+<strong>nonreflectingType</strong> = CIRCULAR or SPHERICAL.</p>
 </dd>
 <dt><strong>semimajorAxis</strong></dt><dd><p>A Float specifying the semimajor axis length of the ellipse or prolate spheroid defining
 the boundary surface. The default value is 1.0.This argument is valid only when
-<a href="#id14"><span class="problematic" id="id15">**</span></a>definition**=NONREFLECTING, and <a href="#id16"><span class="problematic" id="id17">**</span></a>nonreflectingType**=ELLIPTICAL or PROLATE.</p>
+<strong>definition</strong> = NONREFLECTING, and <strong>nonreflectingType</strong> = ELLIPTICAL or PROLATE.</p>
 </dd>
 <dt><strong>eccentricity</strong></dt><dd><p>A Float specifying the eccentricity of the ellipse or prolate spheroid defining the
 boundary surface. The default value is 0.0.This argument is valid only when
-<a href="#id18"><span class="problematic" id="id19">**</span></a>definition**=NONREFLECTING, and <a href="#id20"><span class="problematic" id="id21">**</span></a>nonreflectingType**=ELLIPTICAL or PROLATE.</p>
+<strong>definition</strong> = NONREFLECTING, and <strong>nonreflectingType</strong> = ELLIPTICAL or PROLATE.</p>
 </dd>
 <dt><strong>centerCoordinates</strong></dt><dd><p>A sequence of three Floats specifying the X, Y, and Z coordinates of the center of the
 ellipse or prolate spheroid defining the boundary surface. The default value is (0, 0,
-0).This argument is valid only when <a href="#id22"><span class="problematic" id="id23">**</span></a>definition**=NONREFLECTING, and
-<a href="#id24"><span class="problematic" id="id25">**</span></a>nonreflectingType**=ELLIPTICAL or PROLATE.</p>
+0).This argument is valid only when <strong>definition</strong> = NONREFLECTING, and
+<strong>nonreflectingType</strong> = ELLIPTICAL or PROLATE.</p>
 </dd>
 <dt><strong>directionCosine</strong></dt><dd><p>A sequence of three Floats specifying the X, Y, and Z components of the direction cosine
 of the major axis of the ellipse or prolate spheroid defining the boundary surface. The
-default value is (0, 0, 1).This argument is valid only when <a href="#id26"><span class="problematic" id="id27">**</span></a>definition**=NONREFLECTING,
-and <a href="#id28"><span class="problematic" id="id29">**</span></a>nonreflectingType**=ELLIPTICAL or PROLATE.</p>
+default value is (0, 0, 1).This argument is valid only when <strong>definition</strong> = NONREFLECTING,
+and <strong>nonreflectingType</strong> = ELLIPTICAL or PROLATE.</p>
 </dd>
 </dl>
 </dd>
@@ -705,9 +705,9 @@ and <a href="#id28"><span class="problematic" id="id29">**</span></a>nonreflecti
 are IMPEDANCE and ADMITTANCE.</p>
 </dd>
 <dt><strong>table</strong></dt><dd><p>A sequence of sequences of Floats specifying acoustic impedance properties.If
-<a href="#id30"><span class="problematic" id="id31">**</span></a>tableType**=IMPEDANCE, each sequence of the table data specifies:The real part of the
+<strong>tableType</strong> = IMPEDANCE, each sequence of the table data specifies:The real part of the
 complex impedance.The imaginary part of the complex impedance.Frequency, if the data
-depend on frequency.If <a href="#id32"><span class="problematic" id="id33">**</span></a>tableType**=ADMITTANCE, each sequence of the table data
+depend on frequency.If <strong>tableType</strong> = ADMITTANCE, each sequence of the table data
 specifies:The real part of the complex admittance.The imaginary part of the complex
 admittance.Frequency, if the data depend on frequency.</p>
 </dd>
@@ -817,11 +817,11 @@ The default value is 1.0.</p>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the boundary condition is applied.</p>
 </dd>
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id34"><span class="problematic" id="id35">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the acoustic pressure magnitude. The default value is 0. The
-<strong>magnitude</strong> argument is optional if <a href="#id36"><span class="problematic" id="id37">**</span></a>distributionType**=USER_DEFINED.</p>
+<strong>magnitude</strong> argument is optional if <strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is distributed spatially.
 Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.</p>
@@ -978,7 +978,7 @@ MECHANICAL and THERMAL.</p>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the adaptive mesh constraint is applied.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the adaptive mesh  constraint’s
-degrees of freedom. If <a href="#id38"><span class="problematic" id="id39">**</span></a>localCsys**=None, the degrees of freedom are defined  in the global coordinate
+degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined  in the global coordinate
 system. The default value is None.</p>
 </dd>
 </dl>
@@ -1255,7 +1255,7 @@ value of False means that the existing algorithm will be used.</p>
 are BEFORE_ANALYSIS and DURING_ANALYSIS.</p>
 </dd>
 <dt><strong>profile</strong></dt><dd><p>A String specifying the name of the profile. This argument represents the start profile
-in case of <a href="#id40"><span class="problematic" id="id41">**</span></a>beamShape**=TAPERED.</p>
+in case of <strong>beamShape</strong> = TAPERED.</p>
 </dd>
 <dt><strong>poissonRatio</strong></dt><dd><p>A Float specifying the Poisson’s ratio of the section. The default value is 0.0.</p>
 </dd>
@@ -1332,7 +1332,7 @@ default value is an empty sequence.</p>
 is (0.0, 0.0).</p>
 </dd>
 <dt><strong>profileEnd</strong></dt><dd><p>A String specifying the name of the end profile. The type of the end profile must be
-same as that of the start profile. This argument is valid only when <a href="#id42"><span class="problematic" id="id43">**</span></a>beamShape**=TAPERED.
+same as that of the start profile. This argument is valid only when <strong>beamShape</strong> = TAPERED.
 The default value is an empty string. This parameter is available for manipulating the
 model database but not for the ODB API.</p>
 </dd>
@@ -1376,7 +1376,7 @@ You should provide the <strong>amplitude</strong> argument only if it is valid f
 UNIFORM and FIELD. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id44"><span class="problematic" id="id45">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 </dl>
@@ -1408,10 +1408,10 @@ empty string.</p>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the load is applied.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the body concentration flux magnitude. <strong>magnitude</strong> is optional if
-<a href="#id46"><span class="problematic" id="id47">**</span></a>distributionType**=USER_DEFINED.</p>
+<strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id48"><span class="problematic" id="id49">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the body concentration flux is distributed spatially.
@@ -1460,7 +1460,7 @@ You should provide the <strong>amplitude</strong> argument only if it is valid f
 UNIFORM and FIELD. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id50"><span class="problematic" id="id51">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 </dl>
@@ -1534,7 +1534,7 @@ UNIFORM and USER_DEFINED. The default value is UNIFORM.</p>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the load is applied.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id52"><span class="problematic" id="id53">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the load is distributed spatially. Possible values are
@@ -1542,7 +1542,7 @@ UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>comp1</strong></dt><dd><p>A Float or a Complex specifying the body force component in the
 1-direction.Note:Although <strong>comp1</strong>, <strong>comp2</strong>, and <strong>comp3</strong> are optional arguments, at least
-one of them must be nonzero unless <a href="#id54"><span class="problematic" id="id55">**</span></a>distributionType**=USER_DEFINED.</p>
+one of them must be nonzero unless <strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>comp2</strong></dt><dd><p>A Float or a Complex specifying the body force component in the 2-direction.</p>
 </dd>
@@ -1581,10 +1581,10 @@ You should provide the <strong>amplitude</strong> argument only if it is valid f
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the load is applied.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the body heat flux magnitude. <strong>magnitude</strong> is optional if
-<a href="#id56"><span class="problematic" id="id57">**</span></a>distributionType**=USER_DEFINED.</p>
+<strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id58"><span class="problematic" id="id59">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the body heat flux is distributed spatially. Possible
@@ -1673,17 +1673,17 @@ library](<a class="reference external" href="https://help.3ds.com/2021/English/D
 </dd>
 <dt><strong>uniformThickness</strong></dt><dd><p>A Boolean specifying whether the thickness is uniform.</p>
 </dd>
-<dt><strong>t1</strong></dt><dd><p>A Float specifying the uniform wall thickness if <a href="#id60"><span class="problematic" id="id61">**</span></a>uniformThickness**=ON, and the wall
-thickness of the first segment if <a href="#id62"><span class="problematic" id="id63">**</span></a>uniformThickness**=OFF.</p>
+<dt><strong>t1</strong></dt><dd><p>A Float specifying the uniform wall thickness if <strong>uniformThickness</strong> = ON, and the wall
+thickness of the first segment if <strong>uniformThickness</strong> = OFF.</p>
 </dd>
 <dt><strong>t2</strong></dt><dd><p>A Float specifying the wall thickness of the second segment. <strong>t2</strong> is required only when
-<a href="#id64"><span class="problematic" id="id65">**</span></a>uniformThickness**=OFF. The default value is 0.0.</p>
+<strong>uniformThickness</strong> = OFF. The default value is 0.0.</p>
 </dd>
 <dt><strong>t3</strong></dt><dd><p>A Float specifying the wall thickness of the third segment. <strong>t3</strong> is required only when
-<a href="#id66"><span class="problematic" id="id67">**</span></a>uniformThickness**=OFF. The default value is 0.0.</p>
+<strong>uniformThickness</strong> = OFF. The default value is 0.0.</p>
 </dd>
 <dt><strong>t4</strong></dt><dd><p>A Float specifying the wall thickness of the fourth segment. <strong>t4</strong> is required only when
-<a href="#id68"><span class="problematic" id="id69">**</span></a>uniformThickness**=OFF. The default value is 0.0.</p>
+<strong>uniformThickness</strong> = OFF. The default value is 0.0.</p>
 </dd>
 </dl>
 </dd>
@@ -1742,7 +1742,7 @@ The default value is DEFAULT.</p>
 </dd>
 <dt><strong>maxBlocks</strong></dt><dd><p>The SymbolicConstant DEFAULT or an Int specifying the maximum number of Lanczos block
 steps within each Lanczos run. The default value is DEFAULT.Note:<em>minEigen</em>,
-<strong>blockSize</strong>, and <strong>maxBlocks</strong> are ignored unless <a href="#id70"><span class="problematic" id="id71">**</span></a>eigensolver**=LANCZOS.</p>
+<strong>blockSize</strong>, and <strong>maxBlocks</strong> are ignored unless <strong>eigensolver</strong> = LANCZOS.</p>
 </dd>
 <dt><strong>matrixStorage</strong></dt><dd><p>A SymbolicConstant specifying the type of matrix storage. Possible values are SYMMETRIC,
 UNSYMMETRIC, and SOLVER_DEFAULT. The default value is SOLVER_DEFAULT.</p>
@@ -1860,7 +1860,7 @@ being specified.</p>
 </dd>
 <dt><strong>surfaceEmissivities</strong></dt><dd><p>A sequence of Strings specifying the names of the Cavity Radiation properties containing
 the surface emissivity data. One name per specified surface. The emissivity data is
-ignored when <a href="#id72"><span class="problematic" id="id73">**</span></a>surfaceReflection**=OFF.</p>
+ignored when <strong>surfaceReflection</strong> = OFF.</p>
 </dd>
 <dt><strong>ambientTemp</strong></dt><dd><p>None or a Float specifying the reference ambient temperature value, θ0θ0. Specifying a
 value indicates an open cavity. The default value is None.</p>
@@ -1870,12 +1870,12 @@ calculations. Possible values are BLOCKING_ALL, NO_BLOCKING, and PARTIAL_BLOCKIN
 default value is BLOCKING_ALL.</p>
 </dd>
 <dt><strong>blockingSurfaces</strong></dt><dd><p>A RegionArray object specifying the surfaces that provide blocking inside the cavity.
-This argument applies only when <a href="#id74"><span class="problematic" id="id75">**</span></a>blocking**=PARTIAL_BLOCKING.</p>
+This argument applies only when <strong>blocking</strong> = PARTIAL_BLOCKING.</p>
 </dd>
 <dt><strong>rangeOfView</strong></dt><dd><p>None or a Float specifying the maximum distance between surface facets at which
 viewfactors are calculated. More distant facets are deemed too far apart to exchange
 significant amounts of heat through radiation effects, and the viewfactors between these
-facets are assumed to be zero. If <a href="#id76"><span class="problematic" id="id77">**</span></a>rangeOfView**=None, there is no upper limit. The
+facets are assumed to be zero. If <strong>rangeOfView</strong> = None, there is no upper limit. The
 default value is None.</p>
 </dd>
 <dt><strong>surfaceReflection</strong></dt><dd><p>A Boolean specifying whether heat reflections are to be included in the cavity radiation
@@ -1898,17 +1898,17 @@ approximation is used for viewfactor calculations. The default value is 5.0.</p>
 specified for axisymmetric models. The default value is OFF.</p>
 </dd>
 <dt><strong>cyclicImages</strong></dt><dd><p>An Int specifying the number of cyclically similar images that compose the cavity formed
-as a result of this symmetry. This argument applies only when <a href="#id78"><span class="problematic" id="id79">**</span></a>cyclicSymmetry**=ON. The
+as a result of this symmetry. This argument applies only when <strong>cyclicSymmetry</strong> = ON. The
 default value is 2.</p>
 </dd>
 <dt><strong>cyclicRotPt</strong></dt><dd><p>A ModelDot object specifying the rotation axis point. This argument applies only when
-<a href="#id80"><span class="problematic" id="id81">**</span></a>cyclicSymmetry**=ON.</p>
+<strong>cyclicSymmetry</strong> = ON.</p>
 </dd>
 <dt><strong>cyclicRotEndPt</strong></dt><dd><p>A ModelDot object specifying the rotation axis end point. This argument applies only for
-three-dimensional models, and only when <a href="#id82"><span class="problematic" id="id83">**</span></a>cyclicSymmetry**=ON.</p>
+three-dimensional models, and only when <strong>cyclicSymmetry</strong> = ON.</p>
 </dd>
 <dt><strong>cyclicSymPt</strong></dt><dd><p>A ModelDot object specifying the symmetry axis end point. This argument applies only
-when <a href="#id84"><span class="problematic" id="id85">**</span></a>cyclicSymmetry**=ON.</p>
+when <strong>cyclicSymmetry</strong> = ON.</p>
 </dd>
 <dt><strong>periodicSymmetries</strong></dt><dd><p>An Int specifying the number of periodic symmetries that will be applied. The default
 value is 0.</p>
@@ -2212,10 +2212,10 @@ and GASKET.</p>
 values are:SOLVER_DEFAULT, specifying that Abaqus will use the analysis product
 defaultGEOMETRY, specifying that Abaqus will compute the thickness from the nodal
 coordinates of the elements.SPECIFY, specifying that Abaqus will use the value given for
-<a href="#id86"><span class="problematic" id="id87">**</span></a>initialThickness**The default value is SOLVER_DEFAULT.</p>
+<a href="#id2"><span class="problematic" id="id3">**</span></a>initialThickness**The default value is SOLVER_DEFAULT.</p>
 </dd>
 <dt><strong>initialThickness</strong></dt><dd><p>A Float specifying the initial thickness for the section. The <strong>initialThickness</strong>
-argument applies only when <a href="#id88"><span class="problematic" id="id89">**</span></a>initialThicknessType**=SPECIFY. The default value is 1.0.</p>
+argument applies only when <strong>initialThicknessType</strong> = SPECIFY. The default value is 1.0.</p>
 </dd>
 <dt><strong>outOfPlaneThickness</strong></dt><dd><p>None or a Float specifying the out-of-plane thickness for the section. The default value
 is None.</p>
@@ -2328,7 +2328,7 @@ Abaqus/Explicit analysis.VALUE, specifying that the Poisson’s ratio used in th
 is the value provided in <strong>poisson</strong>.The default value is DEFAULT.</p>
 </dd>
 <dt><strong>poisson</strong></dt><dd><p>A Float specifying the Poisson’s ratio. Possible values are −1.0 ≤≤ <strong>poisson</strong> ≤≤ 0.5.
-This argument is valid only when <a href="#id90"><span class="problematic" id="id91">**</span></a>poissonDefinition**=VALUE. The default value is 0.5.</p>
+This argument is valid only when <strong>poissonDefinition</strong> = VALUE. The default value is 0.5.</p>
 </dd>
 <dt><strong>integrationRule</strong></dt><dd><p>A SymbolicConstant specifying the shell section integration rule. Possible values are
 SIMPSON and GAUSS. The default value is SIMPSON.</p>
@@ -2343,7 +2343,7 @@ values are NO_IDEALIZATION, SMEAR_ALL_LAYERS, MEMBRANE, and BENDING. The default
 is NO_IDEALIZATION.</p>
 </dd>
 <dt><strong>nTemp</strong></dt><dd><p>None or an Int specifying the number of temperature points to be input. This argument is
-valid only when <a href="#id92"><span class="problematic" id="id93">**</span></a>temperature**=POINTWISE. The default value is None.</p>
+valid only when <strong>temperature</strong> = POINTWISE. The default value is None.</p>
 </dd>
 <dt><strong>thicknessModulus</strong></dt><dd><p>None or a Float specifying the effective thickness modulus. This argument is relevant
 only for continuum shells and must be used in conjunction with the argument <strong>poisson</strong>.
@@ -2360,13 +2360,13 @@ string.</p>
 </dd>
 <dt><strong>thicknessField</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object used to
 define the thickness of the shell elements. The <strong>thicknessField</strong> argument applies only
-when <a href="#id94"><span class="problematic" id="id95">**</span></a>thicknessType**=ANALYTICAL_FIELD or <a href="#id96"><span class="problematic" id="id97">**</span></a>thicknessType**=DISCRETE_FIELD. The default
+when <strong>thicknessType</strong> = ANALYTICAL_FIELD or <strong>thicknessType</strong> = DISCRETE_FIELD. The default
 value is an empty string.</p>
 </dd>
 <dt><strong>nodalThicknessField</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object used to
 define the thickness of the shell elements at each node. The <strong>nodalThicknessField</strong>
-argument applies only when <a href="#id98"><span class="problematic" id="id99">**</span></a>thicknessType**=NODAL_ANALYTICAL_FIELD or
-<a href="#id100"><span class="problematic" id="id101">**</span></a>thicknessType**=NODAL_DISCRETE_FIELD. The default value is an empty string.</p>
+argument applies only when <strong>thicknessType</strong> = NODAL_ANALYTICAL_FIELD or
+<strong>thicknessType</strong> = NODAL_DISCRETE_FIELD. The default value is an empty string.</p>
 </dd>
 </dl>
 </dd>
@@ -2438,7 +2438,7 @@ first analysis step name.</p>
 UNIFORM and FIELD. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id102"><span class="problematic" id="id103">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>amplitude</strong></dt><dd><p>A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -2480,7 +2480,7 @@ first analysis step name.</p>
 UNIFORM and FIELD. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id104"><span class="problematic" id="id105">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>amplitude</strong></dt><dd><p>A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -2522,7 +2522,7 @@ first analysis step name.</p>
 UNIFORM and FIELD. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id106"><span class="problematic" id="id107">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>amplitude</strong></dt><dd><p>A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -2564,7 +2564,7 @@ first analysis step name.</p>
 UNIFORM and FIELD. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id108"><span class="problematic" id="id109">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>amplitude</strong></dt><dd><p>A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -2614,10 +2614,10 @@ Abaqus/Explicit analysis.</p>
 </dd>
 <dt><strong>interactionProperty</strong></dt><dd><p>A String specifying the name of the FilmConditionProp object associated with this
 interaction. The <strong>interactionProperty</strong> argument applies only when
-<a href="#id110"><span class="problematic" id="id111">**</span></a>definition**=PROPERTY_REF. The default value is an empty string.</p>
+<strong>definition</strong> = PROPERTY_REF. The default value is an empty string.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this
-interaction. The <strong>field</strong> argument applies only when <a href="#id112"><span class="problematic" id="id113">**</span></a>definition**=FIELD. The default
+interaction. The <strong>field</strong> argument applies only when <strong>definition</strong> = FIELD. The default
 value is an empty string.</p>
 </dd>
 <dt><strong>sinkTemperature</strong></dt><dd><p>A Float specifying the reference sink temperature, θ0θ0. The default value is 0.0.</p>
@@ -2630,7 +2630,7 @@ Abaqus/Explicit analysis to specify that the reference sink temperature is appli
 throughout the step.</p>
 </dd>
 <dt><strong>filmCoeff</strong></dt><dd><p>A Float specifying the reference film coefficient value, hh. The <strong>filmCoeff</strong> argument
-applies when <a href="#id114"><span class="problematic" id="id115">**</span></a>definition**=EMBEDDED_COEFF, <a href="#id116"><span class="problematic" id="id117">**</span></a>definition**=USER_SUB, or <a href="#id118"><span class="problematic" id="id119">**</span></a>definition**=FIELD.
+applies when <strong>definition</strong> = EMBEDDED_COEFF, <strong>definition</strong> = USER_SUB, or <strong>definition</strong> = FIELD.
 The default value is 0.0.</p>
 </dd>
 <dt><strong>filmCoeffAmplitude</strong></dt><dd><p>A String specifying the name of the Amplitude object that gives the variation of the
@@ -2642,7 +2642,7 @@ throughout the step.</p>
 </dd>
 <dt><strong>sinkFieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object associated
 with the sink temperature. The <strong>sinkFieldName</strong> argument applies only when
-<a href="#id120"><span class="problematic" id="id121">**</span></a>sinkDistributionType**=ANALYTICAL_FIELD or <a href="#id122"><span class="problematic" id="id123">**</span></a>sinkDistributionType**=DISCRETE_FIELD. The
+<strong>sinkDistributionType</strong> = ANALYTICAL_FIELD or <strong>sinkDistributionType</strong> = DISCRETE_FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>sinkDistributionType</strong></dt><dd><p>A SymbolicConstant specifying how the sink temperature is distributed. Possible values
@@ -2680,7 +2680,7 @@ are UNIFORM, ANALYTICAL_FIELD, and DISCRETE_FIELD. The default value is UNIFORM.
 UNIFORM and FIELD. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id124"><span class="problematic" id="id125">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>cf1</strong></dt><dd><p>A Float or a Complex specifying the concentrated force component in the 1-direction.
@@ -2700,7 +2700,7 @@ each node of the region. You should provide the <strong>follower</strong> argume
 for the specified step. The default value is OFF.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the load’s degrees
-of freedom. If <a href="#id126"><span class="problematic" id="id127">**</span></a>localCsys**=None, the degrees of freedom are defined in the global
+of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined in the global
 coordinate system. When this member is queried, it returns an Int. The default value is
 None.</p>
 </dd>
@@ -2739,7 +2739,7 @@ first analysis step name.</p>
 UNIFORM and FIELD. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id128"><span class="problematic" id="id129">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>amplitude</strong></dt><dd><p>A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -2798,7 +2798,7 @@ default value is LAGRANGIAN.Note:<em>explicitRegionType</em> applies only during
 Abaqus/Explicit analysis.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this
-interaction. The <strong>field</strong> argument applies only when <a href="#id130"><span class="problematic" id="id131">**</span></a>distributionType**=ANALYTICAL_FIELD.
+interaction. The <strong>field</strong> argument applies only when <strong>distributionType</strong> = ANALYTICAL_FIELD.
 The default value is an empty string.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the radiation is defined. Possible values are UNIFORM
@@ -2833,11 +2833,11 @@ and ANALYTICAL_FIELD. The default value is UNIFORM.</p>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the boundary condition is applied.</p>
 </dd>
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id132"><span class="problematic" id="id133">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the concentration magnitude. The default value is 0. The <strong>magnitude</strong>
-argument is optional if <a href="#id134"><span class="problematic" id="id135">**</span></a>distributionType**=USER_DEFINED.</p>
+argument is optional if <strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is distributed spatially.
 Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.</p>
@@ -3256,15 +3256,15 @@ response for the fifth component of relative motion. The default value is None.<
 response for the sixth component of relative motion. The default value is None.</p>
 </dd>
 <dt><strong>massPerLength</strong></dt><dd><p>None or a Float specifying the mass per unit reference length of belt material. This
-argument is applicable only when <a href="#id136"><span class="problematic" id="id137">**</span></a>assembledType**=SLIPRING, and must be specified in that
+argument is applicable only when <strong>assembledType</strong> = SLIPRING, and must be specified in that
 case. The default value is None.</p>
 </dd>
 <dt><strong>contactAngle</strong></dt><dd><p>None or a Float specifying the contact angle made by the belt wrapping around node b.
 This argument is applicable only to an Abaqus/Explicit analysis, and only when
-<a href="#id138"><span class="problematic" id="id139">**</span></a>assembledType**=SLIPRING. The default value is None.</p>
+<strong>assembledType</strong> = SLIPRING. The default value is None.</p>
 </dd>
 <dt><strong>materialFlowFactor</strong></dt><dd><p>A Float specifying the scaling factor for material flow at node b. This argument is
-applicable only when <a href="#id140"><span class="problematic" id="id141">**</span></a>assembledType**=RETRACTOR or <a href="#id142"><span class="problematic" id="id143">**</span></a>rotationalType**=FLOW_CONVERTER. The
+applicable only when <strong>assembledType</strong> = RETRACTOR or <strong>rotationalType</strong> = FLOW_CONVERTER. The
 default value is 1.0.</p>
 </dd>
 <dt><strong>regularize</strong></dt><dd><p>A Boolean specifying whether or not all tabular data associated with the
@@ -3273,12 +3273,12 @@ Abaqus/Explicit analysis. The default value is ON.</p>
 </dd>
 <dt><strong>defaultTolerance</strong></dt><dd><p>A Boolean specifying whether or not the default regularization tolerance will be used
 for all tabular data associated with the <strong>behaviorOptions</strong>. This argument is applicable
-only for an Abaqus/Explicit analysis and only if <a href="#id144"><span class="problematic" id="id145">**</span></a>regularize**=ON. The default value is
+only for an Abaqus/Explicit analysis and only if <strong>regularize</strong> = ON. The default value is
 ON.</p>
 </dd>
 <dt><strong>regularization</strong></dt><dd><p>A Float specifying the regularization increment to be used for all tabular data
 associated with the <strong>behaviorOptions</strong>. This argument is applicable only for an
-Abaqus/Explicit analysis and only if <a href="#id146"><span class="problematic" id="id147">**</span></a>regularize**=ON and <a href="#id148"><span class="problematic" id="id149">**</span></a>defaultTolerance**=OFF. The
+Abaqus/Explicit analysis and only if <strong>regularize</strong> = ON and <strong>defaultTolerance</strong> = OFF. The
 default value is 0.03.</p>
 </dd>
 <dt><strong>extrapolation</strong></dt><dd><p>A SymbolicConstant specifying the extrapolation technique to be used for all tabular
@@ -3517,7 +3517,7 @@ You should provide the <strong>amplitude</strong> argument only if it is valid f
 UNIFORM and FIELD. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id150"><span class="problematic" id="id151">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 </dl>
@@ -3561,7 +3561,7 @@ step. The default value is OFF.</p>
 DISSIPATED_ENERGY_FRACTION, and DAMPING_FACTOR. The default value is NONE.</p>
 </dd>
 <dt><strong>stabilizationMagnitude</strong></dt><dd><p>A Float specifying the damping intensity of the automatic damping algorithm if the
-problem is expected to be unstable and <a href="#id152"><span class="problematic" id="id153">**</span></a>stabilizationMethod**≠NONE. The default value is
+problem is expected to be unstable and <a href="#id4"><span class="problematic" id="id5">**</span></a>stabilizationMethod**≠NONE. The default value is
 2×10-4.</p>
 </dd>
 <dt><strong>timeIncrementationMethod</strong></dt><dd><p>A SymbolicConstant specifying the time incrementation method to be used. Possible values
@@ -3737,7 +3737,7 @@ step. The default value is OFF.</p>
 DISSIPATED_ENERGY_FRACTION, and DAMPING_FACTOR. The default value is NONE.</p>
 </dd>
 <dt><strong>stabilizationMagnitude</strong></dt><dd><p>A Float specifying the damping intensity of the automatic damping algorithm if the
-problem is expected to be unstable and <a href="#id154"><span class="problematic" id="id155">**</span></a>stabilizationMethod**≠NONE. The default value is
+problem is expected to be unstable and <a href="#id6"><span class="problematic" id="id7">**</span></a>stabilizationMethod**≠NONE. The default value is
 2×10-4.</p>
 </dd>
 <dt><strong>timeIncrementationMethod</strong></dt><dd><p>A SymbolicConstant specifying the time incrementation method to be used. Possible values
@@ -3829,37 +3829,37 @@ point will be adjusted in the direction normal to the specified surface. The def
 value is OFF.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the initial orientation of the local coordinate
-system for the coupling’s degrees of freedom. If <a href="#id156"><span class="problematic" id="id157">**</span></a>localCsys**=None, the coupling is
+system for the coupling’s degrees of freedom. If <strong>localCsys</strong> = None, the coupling is
 defined in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>u1</strong></dt><dd><p>A Boolean specifying if the displacement component in the 1-direction is constrained to
 the reference node for a kinematic coupling constraint. The default value is ON.The <strong>u1</strong>
-argument applies only when <a href="#id158"><span class="problematic" id="id159">**</span></a>couplingType**=KINEMATIC.</p>
+argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
 </dd>
 <dt><strong>u2</strong></dt><dd><p>A Boolean specifying if the displacement component in the 2-direction is constrained to
 the reference node for a kinematic coupling constraint. The default value is ON.The <strong>u2</strong>
-argument applies only when <a href="#id160"><span class="problematic" id="id161">**</span></a>couplingType**=KINEMATIC.</p>
+argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
 </dd>
 <dt><strong>u3</strong></dt><dd><p>A Boolean specifying if the displacement component in the 3-direction is constrained to
 the reference node for a kinematic coupling constraint. The default value is ON.The <strong>u3</strong>
-argument applies only when <a href="#id162"><span class="problematic" id="id163">**</span></a>couplingType**=KINEMATIC.</p>
+argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
 </dd>
 <dt><strong>ur1</strong></dt><dd><p>A Boolean specifying if the rotational displacement component about the 1-direction is
 constrained to the reference node for a kinematic coupling constraint. The default value
-is ON.The <strong>ur1</strong> argument applies only when <a href="#id164"><span class="problematic" id="id165">**</span></a>couplingType**=KINEMATIC.</p>
+is ON.The <strong>ur1</strong> argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
 </dd>
 <dt><strong>ur2</strong></dt><dd><p>A Boolean specifying if the rotational displacement component about the 2-direction is
 constrained to the reference node for a kinematic coupling constraint. The default value
-is ON.The <strong>ur2</strong> argument applies only when <a href="#id166"><span class="problematic" id="id167">**</span></a>couplingType**=KINEMATIC.</p>
+is ON.The <strong>ur2</strong> argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
 </dd>
 <dt><strong>ur3</strong></dt><dd><p>A Boolean specifying if the rotational displacement component about the 3-direction is
 constrained to the reference node for a kinematic coupling constraint. The default value
-is ON.The <strong>ur3</strong> argument applies only when <a href="#id168"><span class="problematic" id="id169">**</span></a>couplingType**=KINEMATIC.</p>
+is ON.The <strong>ur3</strong> argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
 </dd>
 <dt><strong>weightingMethod</strong></dt><dd><p>A SymbolicConstant specifying an optional weighting method used for calculating the
 distributing weight factors. Possible values are UNIFORM, LINEAR, QUADRATIC, and CUBIC.
 The default value is UNIFORM.The <strong>weightingMethod</strong> argument applies only when
-<a href="#id170"><span class="problematic" id="id171">**</span></a>couplingType**=DISTRIBUTING.</p>
+<strong>couplingType</strong> = DISTRIBUTING.</p>
 </dd>
 </dl>
 </dd>
@@ -3925,7 +3925,7 @@ The default value is 0.</p>
 symmetry to tie it to the main surface. The default value is ON.</p>
 </dd>
 <dt><strong>positionTolerance</strong></dt><dd><p>A Float specifying the position tolerance. The*positionTolerance* argument applies only
-when <a href="#id172"><span class="problematic" id="id173">**</span></a>positionToleranceMethod**=SPECIFY_TOLERANCE. The default value is 0.0.</p>
+when <strong>positionToleranceMethod</strong> = SPECIFY_TOLERANCE. The default value is 0.0.</p>
 </dd>
 <dt><strong>positionToleranceMethod</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the position tolerance.
 Possible values are COMPUTED_TOLERANCE and SPECIFY_TOLERANCE. The default value is
@@ -4136,7 +4136,7 @@ Possible values are INDEPENDENT, FOLLOW and USER_DEFINED. The default value is
 INDEPENDENT.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the adaptive mesh
-constraint’s degrees of freedom. If <a href="#id174"><span class="problematic" id="id175">**</span></a>localCsys**=None, the degrees of freedom are defined
+constraint’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 </dl>
@@ -4169,7 +4169,7 @@ in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object associated
 with this boundary condition. The <strong>fieldName</strong> argument applies only when
-<a href="#id176"><span class="problematic" id="id177">**</span></a>distributionType**=FIELD or <a href="#id178"><span class="problematic" id="id179">**</span></a>distributionType**=DISCRETE_FIELD. The default value is an
+<strong>distributionType</strong> = FIELD or <strong>distributionType</strong> = DISCRETE_FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>u1</strong></dt><dd><p>A Float, a Complex, or a SymbolicConstant specifying the displacement component in the
@@ -4210,7 +4210,7 @@ Possible values are UNIFORM, USER_DEFINED, FIELD, and DISCRETE_FIELD. The defaul
 is UNIFORM.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id180"><span class="problematic" id="id181">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>buckleCase</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE
@@ -4250,7 +4250,7 @@ SymbolicConstant are U1, U2, U3, UR1, UR2, UR3. The default value is U1.</p>
 <dt><strong>amplitudeScaleFactor</strong></dt><dd><p>A Float specifying the scale factor for the amplitude curve. The default value is 1.0.</p>
 </dd>
 <dt><strong>centerOfRotation</strong></dt><dd><p>A ModelDot object specifying a tuple containing one center of rotation. The default
-value is the global origin. This argument applies only when <a href="#id182"><span class="problematic" id="id183">**</span></a>dof**=UR1, UR2, or UR3.</p>
+value is the global origin. This argument applies only when <strong>dof</strong> = UR1, UR2, or UR3.</p>
 </dd>
 <dt><strong>correlation</strong></dt><dd><p>A CorrelationArray object.</p>
 </dd>
@@ -4358,11 +4358,11 @@ created. <strong>createStepName</strong> must be set to ‘Initial’.</p>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the boundary condition is applied.</p>
 </dd>
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id184"><span class="problematic" id="id185">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the electrical potential magnitude. The default value is 0. The
-<strong>magnitude</strong> argument is optional if <a href="#id186"><span class="problematic" id="id187">**</span></a>distributionType**=USER_DEFINED.</p>
+<strong>magnitude</strong> argument is optional if <strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is distributed spatially.
 Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.</p>
@@ -4449,15 +4449,15 @@ tolerance. Possible values are ABSOLUTE, FRACTIONAL, and BOTH. The default value
 BOTH.</p>
 </dd>
 <dt><strong>absoluteTolerance</strong></dt><dd><p>A Float specifying the absolute value by which a node on the embedded region may lie
-outside the host region. If <strong>absoluteTolerance**=0.0, the **fractionalTolerance</strong> value
+outside the host region. If <strong>absoluteTolerance</strong> = 0.0, the <strong>fractionalTolerance</strong> value
 will be used. The default value is 0.0.This argument applies only when
-<a href="#id188"><span class="problematic" id="id189">**</span></a>toleranceMethod**=ABSOLUTE or BOTH.</p>
+<strong>toleranceMethod</strong> = ABSOLUTE or BOTH.</p>
 </dd>
 <dt><strong>fractionalTolerance</strong></dt><dd><p>A Float specifying the fractional value by which a node on the embedded region may lie
 outside the host region. The fractional value is based on the average element size
 within the host region. The default value is 0.05.If both tolerance arguments are
 specified, the smaller value will be used.This argument applies only when
-<a href="#id190"><span class="problematic" id="id191">**</span></a>toleranceMethod**=FRACTIONAL or BOTH.</p>
+<strong>toleranceMethod</strong> = FRACTIONAL or BOTH.</p>
 </dd>
 </dl>
 </dd>
@@ -4495,7 +4495,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt>localCsys</dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id192"><span class="problematic" id="id193">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 </dl>
@@ -4522,7 +4522,7 @@ Possible values are positive numbers.</p>
 are non-negative numbers. The default value is 0.0.</p>
 </dd>
 <dt><strong>smooth</strong></dt><dd><p>The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing.
-Possible float values are 0 ≤≤ <strong>smoothing</strong> ≤≤ 0.5. If <a href="#id194"><span class="problematic" id="id195">**</span></a>smooth**=SOLVER_DEFAULT, the
+Possible float values are 0 ≤≤ <strong>smoothing</strong> ≤≤ 0.5. If <strong>smooth</strong> = SOLVER_DEFAULT, the
 default degree of smoothing will be determined by the solver. The default value is
 SOLVER_DEFAULT.</p>
 </dd>
@@ -4641,7 +4641,7 @@ Eulerian surface. The default value is ON.</p>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the boundary condition is applied.</p>
 </dd>
 <dt><strong>materialName</strong></dt><dd><p>A String specifying the name of the Eulerian surface to follow. This argument applies
-only when <a href="#id196"><span class="problematic" id="id197">**</span></a>followRegion**=False.</p>
+only when <strong>followRegion</strong> = False.</p>
 </dd>
 <dt><strong>ctrPosition1</strong></dt><dd><p>A SymbolicConstant specifying the 1-direction translational constraint on the center of
 the Eulerian mesh. Possible values are FREE and FIXED. The default value is FREE.</p>
@@ -4655,7 +4655,7 @@ bounds of the mesh in the 1 direction. Possible values are FREE and FIXED. The d
 value is FREE.</p>
 </dd>
 <dt><strong>expansionRatio1</strong></dt><dd><p>None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
-1 direction. If <a href="#id198"><span class="problematic" id="id199">**</span></a>expansionRatio1**=None, then there is no upper limit. The default value
+1 direction. If <strong>expansionRatio1</strong> = None, then there is no upper limit. The default value
 is None.</p>
 </dd>
 <dt><strong>contractRatio1</strong></dt><dd><p>A Float specifying the lower bounds on the allowable scaling of the mesh in the 1
@@ -4673,7 +4673,7 @@ bounds of the mesh in the 2 direction. Possible values are FREE and FIXED. The d
 value is FREE.</p>
 </dd>
 <dt><strong>expansionRatio2</strong></dt><dd><p>None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
-2 direction. If <a href="#id200"><span class="problematic" id="id201">**</span></a>expansionRatio2**=None, then there is no upper limit. The default value
+2 direction. If <strong>expansionRatio2</strong> = None, then there is no upper limit. The default value
 is None.</p>
 </dd>
 <dt><strong>contractRatio2</strong></dt><dd><p>A Float specifying the lower bounds on the allowable scaling of the mesh in the 2
@@ -4691,7 +4691,7 @@ bounds of the mesh in the 3 direction. Possible values are FREE and FIXED. The d
 value is FREE.</p>
 </dd>
 <dt><strong>expansionRatio3</strong></dt><dd><p>None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
-3 direction. If <a href="#id202"><span class="problematic" id="id203">**</span></a>expansionRatio3**=None, then there is no upper limit. The default value
+3 direction. If <strong>expansionRatio3</strong> = None, then there is no upper limit. The default value
 is None.</p>
 </dd>
 <dt><strong>contractRatio3</strong></dt><dd><p>A Float specifying the lower bounds on the allowable scaling of the mesh in the 3
@@ -4707,7 +4707,7 @@ is 1.01.</p>
 </dd>
 <dt><strong>volThreshold</strong></dt><dd><p>A Float specifying the lower bounds on the volume fraction when determining which nodes
 to include in the surface bounding box calculation for an Eulerian material surface.
-This argument applies only when <a href="#id204"><span class="problematic" id="id205">**</span></a>followRegion**=False. The default value is 0.5.</p>
+This argument applies only when <strong>followRegion</strong> = False. The default value is 0.5.</p>
 </dd>
 <dt><strong>bufferSize</strong></dt><dd><p>None or a Float specifying the buffer between the surface box and the Eulerian section
 mesh bounding box. The default value is 2.0.</p>
@@ -4770,7 +4770,7 @@ maximum number of increments between global contact searches. Possible values ar
 DEFAULT and SPECIFY. The default value is DEFAULT.</p>
 </dd>
 <dt><strong>globTrkInc</strong></dt><dd><p>An Int specifying the maximum number of increments between global contact searches. The
-<strong>globTrkInc</strong> argument applies only when <a href="#id206"><span class="problematic" id="id207">**</span></a>globTrkChoice**=SPECIFY. The default value is
+<strong>globTrkInc</strong> argument applies only when <strong>globTrkChoice</strong> = SPECIFY. The default value is
 100 for surface-to-surface contact and 4 for self-contact.</p>
 </dd>
 <dt><strong>fastLocalTrk</strong></dt><dd><p>A Boolean specifying whether to use the more computationally efficient local tracking
@@ -4833,11 +4833,11 @@ are AUTOMATIC_GLOBAL, AUTOMATIC_EBE, FIXED_USER_DEFINED_INC, and FIXED_EBE. The 
 value is AUTOMATIC_GLOBAL.</p>
 </dd>
 <dt><strong>maxIncrement</strong></dt><dd><p>None or a Float specifying the maximum time increment. If there is no upper limit,
-<a href="#id208"><span class="problematic" id="id209">**</span></a>maxIncrement**=None. This argument is required only when
-<a href="#id210"><span class="problematic" id="id211">**</span></a>timeIncrementationMethod**=AUTOMATIC_GLOBAL or AUTOMATIC_EBE. The default value is None.</p>
+<strong>maxIncrement</strong> = None. This argument is required only when
+<strong>timeIncrementationMethod</strong> = AUTOMATIC_GLOBAL or AUTOMATIC_EBE. The default value is None.</p>
 </dd>
 <dt><strong>scaleFactor</strong></dt><dd><p>A Float specifying the factor that is used to scale the time increment. This argument is
-required only when <a href="#id212"><span class="problematic" id="id213">**</span></a>timeIncrementationMethod**=AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
+required only when <strong>timeIncrementationMethod</strong> = AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
 FIXED_EBE. The default value is 1.0.</p>
 </dd>
 <dt><strong>massScaling</strong></dt><dd><p>A MassScalingArray object specifying mass scaling controls. The default value is
@@ -4849,7 +4849,7 @@ PREVIOUS_STEP.</p>
 1.2.</p>
 </dd>
 <dt><strong>userDefinedInc</strong></dt><dd><p>None or a Float specifying the user-defined time increment. This argument is required
-only when <a href="#id214"><span class="problematic" id="id215">**</span></a>timeIncrementationMethod**=FIXED_USER_DEFINED_INC. The default value is None.</p>
+only when <strong>timeIncrementationMethod</strong> = FIXED_USER_DEFINED_INC. The default value is None.</p>
 </dd>
 <dt><strong>maintainAttributes</strong></dt><dd><p>A Boolean specifying whether to retain attributes from an existing step with the same
 name. The default value is False.</p>
@@ -4932,7 +4932,7 @@ system. The default value is ON.</p>
 <strong>assembledFastener</strong>. The default value is an empty string.</p>
 </dd>
 <dt><strong>exteriorOnly</strong></dt><dd><p>A Boolean specifying whether the output domain is restricted to the exterior of the
-model. This argument is only valid if <a href="#id216"><span class="problematic" id="id217">**</span></a>region**=MODEL. The default value is OFF.</p>
+model. This argument is only valid if <strong>region</strong> = MODEL. The default value is OFF.</p>
 </dd>
 <dt><strong>layupNames</strong></dt><dd><p>A List of Composite Layer Names.</p>
 </dd>
@@ -4987,7 +4987,7 @@ EMBEDDED_COEFF, PROPERTY_REF, USER_SUB, and FIELD.</p>
 </dd>
 <dt><strong>interactionProperty</strong></dt><dd><p>A String specifying the name of the FilmConditionProp object associated with this
 interaction. The <strong>interactionProperty</strong> argument applies only when
-<a href="#id218"><span class="problematic" id="id219">**</span></a>definition**=PROPERTY_REF. The default value is an empty string.</p>
+<strong>definition</strong> = PROPERTY_REF. The default value is an empty string.</p>
 </dd>
 <dt><strong>sinkTemperature</strong></dt><dd><p>A Float specifying the reference sink temperature, θ0θ0. The default value is 0.0.</p>
 </dd>
@@ -4999,7 +4999,7 @@ string in an Abaqus/Explicit analysis to specify that the reference sink tempera
 applied throughout the step.</p>
 </dd>
 <dt><strong>filmCoeff</strong></dt><dd><p>A Float specifying the reference film coefficient value, hh. The <strong>filmCoeff</strong> argument
-applies when <a href="#id220"><span class="problematic" id="id221">**</span></a>definition**=EMBEDDED_COEFF, <a href="#id222"><span class="problematic" id="id223">**</span></a>definition**=USER_SUB, or <a href="#id224"><span class="problematic" id="id225">**</span></a>definition**=FIELD.
+applies when <strong>definition</strong> = EMBEDDED_COEFF, <strong>definition</strong> = USER_SUB, or <strong>definition</strong> = FIELD.
 The default value is 0.0.</p>
 </dd>
 <dt><strong>filmCoeffAmplitude</strong></dt><dd><p>A String specifying the name of the Amplitude object that gives the variation of the
@@ -5010,12 +5010,12 @@ string in an Abaqus/Explicit analysis to specify that the reference film coeffic
 applied throughout the step.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this
-interaction. The <strong>field</strong> argument applies only when <a href="#id226"><span class="problematic" id="id227">**</span></a>definition**=FIELD. The default
+interaction. The <strong>field</strong> argument applies only when <strong>definition</strong> = FIELD. The default
 value is an empty string.</p>
 </dd>
 <dt><strong>sinkFieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object associated
 with the sink temperature. The <strong>sinkFieldName</strong> argument applies only when
-<a href="#id228"><span class="problematic" id="id229">**</span></a>sinkDistributionType**=ANALYTICAL_FIELD or <a href="#id230"><span class="problematic" id="id231">**</span></a>sinkDistributionType**=DISCRETE_FIELD. The
+<strong>sinkDistributionType</strong> = ANALYTICAL_FIELD or <strong>sinkDistributionType</strong> = DISCRETE_FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>sinkDistributionType</strong></dt><dd><p>A SymbolicConstant specifying how the sink temperature is distributed. Possible values
@@ -5197,30 +5197,30 @@ values at the start of the step. The default value is OFF.</p>
 values are HYDRAULIC and PNEUMATIC. The default value is HYDRAULIC.</p>
 </dd>
 <dt><strong>fluidDensity</strong></dt><dd><p>None or a Float specifying the reference fluid density. This argument is applicable only
-when <a href="#id232"><span class="problematic" id="id233">**</span></a>definition**=HYDRAULIC, and is required in that case. The default value is None.</p>
+when <strong>definition</strong> = HYDRAULIC, and is required in that case. The default value is None.</p>
 </dd>
 <dt><strong>molecularWeight</strong></dt><dd><p>None or a Float specifying the molecular weight of the ideal gas species. This argument
-is applicable only when <a href="#id234"><span class="problematic" id="id235">**</span></a>definition**=PNEUMATIC, and is required in that case. The
+is applicable only when <strong>definition</strong> = PNEUMATIC, and is required in that case. The
 default value is None.</p>
 </dd>
 <dt><strong>useExpansion</strong></dt><dd><p>A Boolean specifying whether thermal expansion coefficients will be defined. This
-argument is applicable only when <a href="#id236"><span class="problematic" id="id237">**</span></a>definition**=HYDRAULIC. The default value is OFF.</p>
+argument is applicable only when <strong>definition</strong> = HYDRAULIC. The default value is OFF.</p>
 </dd>
 <dt><strong>expansionTempDep</strong></dt><dd><p>A Boolean specifying whether the thermal fluid expansion data will have temperature
-dependency. This argument is applicable only when <a href="#id238"><span class="problematic" id="id239">**</span></a>definition**=HYDRAULIC and when
-<a href="#id240"><span class="problematic" id="id241">**</span></a>useExpansion**=True. The default value is OFF.</p>
+dependency. This argument is applicable only when <strong>definition</strong> = HYDRAULIC and when
+<strong>useExpansion</strong> = True. The default value is OFF.</p>
 </dd>
 <dt><strong>expansionDependencies</strong></dt><dd><p>An Int specifying the number of field variable dependencies in the thermal fluid
-expansion data. This argument is applicable only when <a href="#id242"><span class="problematic" id="id243">**</span></a>definition**=HYDRAULIC and when
-<a href="#id244"><span class="problematic" id="id245">**</span></a>useExpansion**=True. The default value is 0.</p>
+expansion data. This argument is applicable only when <strong>definition</strong> = HYDRAULIC and when
+<strong>useExpansion</strong> = True. The default value is 0.</p>
 </dd>
 <dt><strong>referenceTemperature</strong></dt><dd><p>A Float specifying the reference temperature for the coefficient of thermal expansion.
-This argument is applicable only when <strong>definition**=HYDRAULIC, when **useExpansion**=True,
-and when either **expansionTempDep**=True or when **expansionDependencies</strong> is greater than
+This argument is applicable only when <strong>definition</strong> = HYDRAULIC, when <strong>useExpansion</strong> = True,
+and when either <strong>expansionTempDep</strong> = True or when <strong>expansionDependencies</strong> is greater than
 0. The default value is 0.0.</p>
 </dd>
 <dt><strong>expansionTable</strong></dt><dd><p>A sequence of sequences of Floats specifying the thermal expansion coefficients. This
-argument is applicable only when <a href="#id246"><span class="problematic" id="id247">**</span></a>definition**=HYDRAULIC and when <a href="#id248"><span class="problematic" id="id249">**</span></a>useExpansion**=True.
+argument is applicable only when <strong>definition</strong> = HYDRAULIC and when <strong>useExpansion</strong> = True.
 Each sequence contains the following data:</p>
 <ul class="simple">
 <li><p>The mean coefficient of thermal expansion.</p></li>
@@ -5231,18 +5231,18 @@ Each sequence contains the following data:</p>
 </ul>
 </dd>
 <dt><strong>useBulkModulus</strong></dt><dd><p>A Boolean specifying whether fluid bulk modulus values will be defined. This argument is
-applicable only when <a href="#id250"><span class="problematic" id="id251">**</span></a>definition**=HYDRAULIC. The default value is OFF.</p>
+applicable only when <strong>definition</strong> = HYDRAULIC. The default value is OFF.</p>
 </dd>
 <dt><strong>bulkModulusTempDep</strong></dt><dd><p>A Boolean specifying whether the fluid bulk modulus data will have temperature
-dependency. This argument is applicable only when <a href="#id252"><span class="problematic" id="id253">**</span></a>definition**=HYDRAULIC and when
-<a href="#id254"><span class="problematic" id="id255">**</span></a>useBulkModulus**=True. The default value is OFF.</p>
+dependency. This argument is applicable only when <strong>definition</strong> = HYDRAULIC and when
+<strong>useBulkModulus</strong> = True. The default value is OFF.</p>
 </dd>
 <dt><strong>bulkModulusDependencies</strong></dt><dd><p>An Int specifying the number of field variable dependencies in the fluid bulk modulus
-data. This argument is applicable only when <a href="#id256"><span class="problematic" id="id257">**</span></a>definition**=HYDRAULIC and when
-<a href="#id258"><span class="problematic" id="id259">**</span></a>useBulkModulus**=True. The default value is 0.</p>
+data. This argument is applicable only when <strong>definition</strong> = HYDRAULIC and when
+<strong>useBulkModulus</strong> = True. The default value is 0.</p>
 </dd>
 <dt><strong>bulkModulusTable</strong></dt><dd><p>A sequence of sequences of Floats specifying the fluid bulk modulus values. This
-argument is applicable only when <a href="#id260"><span class="problematic" id="id261">**</span></a>definition**=HYDRAULIC and when <a href="#id262"><span class="problematic" id="id263">**</span></a>useBulkModulus**=True.
+argument is applicable only when <strong>definition</strong> = HYDRAULIC and when <strong>useBulkModulus</strong> = True.
 Each sequence contains the following data:</p>
 <ul class="simple">
 <li><p>The fluid bulk modulus.</p></li>
@@ -5253,22 +5253,22 @@ Each sequence contains the following data:</p>
 </ul>
 </dd>
 <dt><strong>useCapacity</strong></dt><dd><p>A Boolean specifying whether molar heat capacity values will be defined. This argument
-is applicable only when <a href="#id264"><span class="problematic" id="id265">**</span></a>definition**=PNEUMATIC. The default value is OFF.</p>
+is applicable only when <strong>definition</strong> = PNEUMATIC. The default value is OFF.</p>
 </dd>
 <dt><strong>capacityType</strong></dt><dd><p>A SymbolicConstant specifying the method to define the molar heat capacity. Possible
 values are POLYNOMIAL and TABULAR. The default value is POLYNOMIAL.</p>
 </dd>
 <dt><strong>capacityTempDep</strong></dt><dd><p>A Boolean specifying whether the molar heat capacity data will have temperature
-dependency. This argument is applicable only when <a href="#id266"><span class="problematic" id="id267">**</span></a>definition**=PNEUMATIC, when
-<a href="#id268"><span class="problematic" id="id269">**</span></a>useCapacity**=True, and when <a href="#id270"><span class="problematic" id="id271">**</span></a>capacityType**=TABULAR. The default value is OFF.</p>
+dependency. This argument is applicable only when <strong>definition</strong> = PNEUMATIC, when
+<strong>useCapacity</strong> = True, and when <strong>capacityType</strong> = TABULAR. The default value is OFF.</p>
 </dd>
 <dt><strong>capacityDependencies</strong></dt><dd><p>An Int specifying the number of field variable dependencies in the molar heat capacity
-data. This argument is applicable only when <a href="#id272"><span class="problematic" id="id273">**</span></a>definition**=PNEUMATIC, when
-<a href="#id274"><span class="problematic" id="id275">**</span></a>useCapacity**=True, and when <a href="#id276"><span class="problematic" id="id277">**</span></a>capacityType**=TABULAR. The default value is 0.</p>
+data. This argument is applicable only when <strong>definition</strong> = PNEUMATIC, when
+<strong>useCapacity</strong> = True, and when <strong>capacityType</strong> = TABULAR. The default value is 0.</p>
 </dd>
 <dt><strong>capacityTable</strong></dt><dd><p>A sequence of sequences of Floats specifying the molar heat capacity values in the form
 of a polynomial expression. This argument is applicable only when
-<a href="#id278"><span class="problematic" id="id279">**</span></a>definition**=PNEUMATIC, when <a href="#id280"><span class="problematic" id="id281">**</span></a>useCapacity**=True, and when <a href="#id282"><span class="problematic" id="id283">**</span></a>capacityType**=POLYNOMIAL. In
+<strong>definition</strong> = PNEUMATIC, when <strong>useCapacity</strong> = True, and when <strong>capacityType</strong> = POLYNOMIAL. In
 this form, only one sequence is specified and that sequence contains the following data:</p>
 <ul class="simple">
 <li><p>The first molar heat capacity coefficient.</p></li>
@@ -5278,7 +5278,7 @@ this form, only one sequence is specified and that sequence contains the followi
 <li><p>The fifth molar heat capacity coefficient.
 Alternatively, the sequence data may specify the molar heat capacity values at constant
 pressure for an ideal gas species. This argument is applicable only when
-<a href="#id284"><span class="problematic" id="id285">**</span></a>definition**=PNEUMATIC, when <a href="#id286"><span class="problematic" id="id287">**</span></a>useCapacity**=True, and when <a href="#id288"><span class="problematic" id="id289">**</span></a>capacityType**=TABULAR. Each
+<strong>definition</strong> = PNEUMATIC, when <strong>useCapacity</strong> = True, and when <strong>capacityType</strong> = TABULAR. Each
 sequence contains the following data:</p>
 <ul>
 <li><p>The molar heat capacity at constant pressure.</p></li>
@@ -5317,7 +5317,7 @@ sequence contains the following data:</p>
 <dt><strong>createStepName</strong></dt><dd><p>A String specifying the name of the step in which the FluidExchange object is created.</p>
 </dd>
 <dt><strong>firstCavity</strong></dt><dd><p>A String specifying the first FluidCavity object associated with this interaction. This
-will be the only cavity specified if <a href="#id290"><span class="problematic" id="id291">**</span></a>definition**=TO_ENVIRONMENT.</p>
+will be the only cavity specified if <strong>definition</strong> = TO_ENVIRONMENT.</p>
 </dd>
 <dt><strong>interactionProperty</strong></dt><dd><p>A String specifying the FluidExchangeProperty object associated with this interaction.</p>
 </dd>
@@ -5325,7 +5325,7 @@ will be the only cavity specified if <a href="#id290"><span class="problematic" 
 are TO_ENVIRONMENT and BETWEEN_CAVITIES. The default value is TO_ENVIRONMENT.</p>
 </dd>
 <dt><strong>secondCavity</strong></dt><dd><p>A String specifying the second FluidCavity object associated with this interaction. This
-argument is applicable only when <a href="#id292"><span class="problematic" id="id293">**</span></a>definition**=BETWEEN_CAVITIES.</p>
+argument is applicable only when <strong>definition</strong> = BETWEEN_CAVITIES.</p>
 </dd>
 <dt><strong>exchangeArea</strong></dt><dd><p>A Float specifying the effective exchange area. The default value is 1.0.</p>
 </dd>
@@ -5354,7 +5354,7 @@ argument is applicable only when <a href="#id292"><span class="problematic" id="
 <dt><strong>name</strong></dt><dd><p>A String specifying the interaction property repository key.</p>
 </dd>
 <dt><strong>dataTable</strong></dt><dd><p>A sequence of sequences of Floats specifying the viscous and hydrodynamic resistance
-coefficients when <a href="#id294"><span class="problematic" id="id295">**</span></a>definition**=BULK_VISCOSITY. Each sequence contains the following
+coefficients when <strong>definition</strong> = BULK_VISCOSITY. Each sequence contains the following
 data:</p>
 <ul class="simple">
 <li><p>The viscous resistance coefficient.</p></li>
@@ -5366,12 +5366,12 @@ data:</p>
 <li><p>Etc.</p></li>
 </ul>
 <p>Alternatively, the sequence data may specify the mass flow rate. This is applicable only
-when <a href="#id296"><span class="problematic" id="id297">**</span></a>definition**=MASS_FLUX. In this form, only one sequence is specified and that
+when <strong>definition</strong> = MASS_FLUX. In this form, only one sequence is specified and that
 sequence contains the following data:</p>
 <ul class="simple">
 <li><p>The mass flow rate per unit area.
 Alternatively, the sequence data may specify the mass rate leakage. This is applicable
-only when <a href="#id298"><span class="problematic" id="id299">**</span></a>definition**=MASS_RATE_LEAK. Each sequence contains the following data:</p>
+only when <strong>definition</strong> = MASS_RATE_LEAK. Each sequence contains the following data:</p>
 <ul>
 <li><p>The absolute value of the mass flow rate per unit area. (The first tabular value
 entered must always be zero.)</p></li>
@@ -5386,12 +5386,12 @@ always be zero.)</p></li>
 </li>
 </ul>
 <p>Alternatively, the sequence data may specify the volume flow rate. This is applicable
-only when <a href="#id300"><span class="problematic" id="id301">**</span></a>definition**=VOL_FLUX. In this form, only one sequence is specified and that
+only when <strong>definition</strong> = VOL_FLUX. In this form, only one sequence is specified and that
 sequence contains the following data:</p>
 <ul class="simple">
 <li><p>The volumetric flow rate per unit area.
 Alternatively, the sequence data may specify the volume rate leakage. This is applicable
-only when <a href="#id302"><span class="problematic" id="id303">**</span></a>definition**=VOL_RATE_LEAK. Each sequence contains the following data:</p></li>
+only when <strong>definition</strong> = VOL_RATE_LEAK. Each sequence contains the following data:</p></li>
 <li><p>The absolute value of the volumetric flow rate per unit area. (The first tabular value
 entered must always be zero.)</p></li>
 <li><p>The absolute value of the pressure difference. (The first tabular value entered must
@@ -5408,16 +5408,16 @@ Possible values are BULK_VISCOSITY, MASS_FLUX, MASS_RATE_LEAK, VOL_FLUX, and
 VOL_RATE_LEAK. The default value is BULK_VISCOSITY.</p>
 </dd>
 <dt><strong>pressureDependency</strong></dt><dd><p>A Boolean specifying whether the data will have pressure dependency. This argument is
-applicable only when <a href="#id304"><span class="problematic" id="id305">**</span></a>definition**=BULK_VISCOSITY, or when <a href="#id306"><span class="problematic" id="id307">**</span></a>definition**=MASS_RATE_LEAK,
-or when <a href="#id308"><span class="problematic" id="id309">**</span></a>definition**=VOL_RATE_LEAK. The default value is OFF.</p>
+applicable only when <strong>definition</strong> = BULK_VISCOSITY, or when <strong>definition</strong> = MASS_RATE_LEAK,
+or when <strong>definition</strong> = VOL_RATE_LEAK. The default value is OFF.</p>
 </dd>
 <dt><strong>temperatureDependency</strong></dt><dd><p>A Boolean specifying whether the data will have temperature dependency. This argument is
-applicable only when <a href="#id310"><span class="problematic" id="id311">**</span></a>definition**=BULK_VISCOSITY, or when <a href="#id312"><span class="problematic" id="id313">**</span></a>definition**=MASS_RATE_LEAK,
-or when <a href="#id314"><span class="problematic" id="id315">**</span></a>definition**=VOL_RATE_LEAK. The default value is OFF.</p>
+applicable only when <strong>definition</strong> = BULK_VISCOSITY, or when <strong>definition</strong> = MASS_RATE_LEAK,
+or when <strong>definition</strong> = VOL_RATE_LEAK. The default value is OFF.</p>
 </dd>
 <dt><strong>fieldDependencies</strong></dt><dd><p>An Int specifying the number of field variable dependencies in the data. This argument
-is applicable only when <a href="#id316"><span class="problematic" id="id317">**</span></a>definition**=BULK_VISCOSITY, or when
-<a href="#id318"><span class="problematic" id="id319">**</span></a>definition**=MASS_RATE_LEAK, or when <a href="#id320"><span class="problematic" id="id321">**</span></a>definition**=VOL_RATE_LEAK. The default value is 0.</p>
+is applicable only when <strong>definition</strong> = BULK_VISCOSITY, or when
+<strong>definition</strong> = MASS_RATE_LEAK, or when <strong>definition</strong> = VOL_RATE_LEAK. The default value is 0.</p>
 </dd>
 </dl>
 </dd>
@@ -5447,11 +5447,11 @@ is applicable only when <a href="#id316"><span class="problematic" id="id317">**
 in the list of analysis steps.</p>
 </dd>
 <dt><strong>eigensolver</strong></dt><dd><p>A SymbolicConstant specifying the eigensolver. Possible values are LANCZOS, SUBSPACE,
-and AMS.The following optional arguments are ignored unless <strong>eigensolver**=LANCZOS:
-**blockSize</strong>, <strong>maxBlocks</strong>, <strong>normalization</strong>, <strong>propertyEvaluationFrequency</strong>.The following
-optional arguments are ignored unless <strong>eigensolver**=LANCZOS or AMS: **minEigen</strong>,
+and AMS.The following optional arguments are ignored unless <strong>eigensolver</strong> = LANCZOS:
+<strong>blockSize</strong>, <strong>maxBlocks</strong>, <strong>normalization</strong>, <strong>propertyEvaluationFrequency</strong>.The following
+optional arguments are ignored unless <strong>eigensolver</strong> = LANCZOS or AMS: <strong>minEigen</strong>,
 <strong>maxEigen</strong>, and <strong>acousticCoupling</strong>.The following optional arguments are ignored unless
-<strong>eigensolver**=AMS: **projectDamping</strong>, <strong>acousticRangeFactor</strong>,
+<strong>eigensolver</strong> = AMS: <strong>projectDamping</strong>, <strong>acousticRangeFactor</strong>,
 <strong>substructureCutoffMultiplier</strong>, <strong>firstCutoffMultiplier</strong>, <strong>secondCutoffMultiplier</strong>,
 <strong>residualModeRegion</strong>, <strong>regionalModeDof</strong>, and <strong>limitSavedEigenvectorRegion</strong>.</p>
 </dd>
@@ -5495,7 +5495,7 @@ stiffness contributions from frequency-domain viscoelasticity in the step. The d
 value is None.</p>
 </dd>
 <dt><strong>projectDamping</strong></dt><dd><p>A Boolean specifying whether to include projection of viscous and structural damping
-operators during <strong>AMS</strong> eigenvalue extraction. Valid only when <a href="#id322"><span class="problematic" id="id323">**</span></a>eigenSolver**=AMS. The
+operators during <strong>AMS</strong> eigenvalue extraction. Valid only when <strong>eigenSolver</strong> = AMS. The
 default value is ON.</p>
 </dd>
 <dt><strong>acousticCoupling</strong></dt><dd><p>A SymbolicConstant specifying the type of acoustic-structural coupling in models with
@@ -5629,7 +5629,7 @@ Abaqus/Explicit analysis.VALUE, specifying that the Poisson’s ratio used in th
 is the value provided in <strong>poisson</strong>.The default value is DEFAULT.</p>
 </dd>
 <dt><strong>poisson</strong></dt><dd><p>A Float specifying the Poisson’s ratio. Possible values are −1.0 ≤≤ <strong>poisson</strong> ≤≤ 0.5.
-This argument is valid only when <a href="#id324"><span class="problematic" id="id325">**</span></a>poissonDefinition**=VALUE. The default value is 0.5.</p>
+This argument is valid only when <strong>poissonDefinition</strong> = VALUE. The default value is 0.5.</p>
 </dd>
 <dt><strong>useDensity</strong></dt><dd><p>A Boolean specifying whether or not to use the value of <strong>density</strong>. The default value is
 OFF.</p>
@@ -5746,22 +5746,22 @@ CONVERT_SDI_ON. The default value is PROPAGATED.</p>
 default value is None.</p>
 </dd>
 <dt><strong>timePeriod</strong></dt><dd><p>A Float specifying the total time period. The default value is 1.0.Note:This parameter
-is ignored unless <a href="#id326"><span class="problematic" id="id327">**</span></a>timeIncrementationMethod**=AUTOMATIC.</p>
+is ignored unless <strong>timeIncrementationMethod</strong> = AUTOMATIC.</p>
 </dd>
 <dt><strong>timeIncrementationMethod</strong></dt><dd><p>A SymbolicConstant specifying the time incrementation method to be used. Possible values
 are FIXED and AUTOMATIC. The default value is AUTOMATIC.</p>
 </dd>
 <dt><strong>initialInc</strong></dt><dd><p>A Float specifying the initial time increment. The default value is the total time
 period for the step.Note:This parameter is ignored unless
-<a href="#id328"><span class="problematic" id="id329">**</span></a>timeIncrementationMethod**=AUTOMATIC.</p>
+<strong>timeIncrementationMethod</strong> = AUTOMATIC.</p>
 </dd>
 <dt><strong>minInc</strong></dt><dd><p>A Float specifying the minimum time increment allowed. The default value is the smaller
 of the suggested initial time increment or 10−5 times the total time period.Note:This
-parameter is ignored unless <a href="#id330"><span class="problematic" id="id331">**</span></a>timeIncrementationMethod**=AUTOMATIC.</p>
+parameter is ignored unless <strong>timeIncrementationMethod</strong> = AUTOMATIC.</p>
 </dd>
 <dt><strong>maxInc</strong></dt><dd><p>A Float specifying the maximum time increment allowed. The default value is the total
 time period for the step.Note:This parameter is ignored unless
-<a href="#id332"><span class="problematic" id="id333">**</span></a>timeIncrementationMethod**=AUTOMATIC.</p>
+<strong>timeIncrementationMethod</strong> = AUTOMATIC.</p>
 </dd>
 </dl>
 </dd>
@@ -5794,7 +5794,7 @@ time period for the step.Note:This parameter is ignored unless
 UNIFORM and FIELD. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id334"><span class="problematic" id="id335">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the load is applied.</p>
@@ -5862,7 +5862,7 @@ time period for the step.</p>
 <dt><strong>end</strong></dt><dd><p>None or a Float specifying the temperature change rate (temperature per time) used to
 define steady state. When all nodal temperatures are changing at less than this rate,
 the solution terminates. The default value is None.Note:This parameter is ignored unless
-<a href="#id336"><span class="problematic" id="id337">**</span></a>response**=STEADY_STATE.</p>
+<strong>response</strong> = STEADY_STATE.</p>
 </dd>
 <dt><strong>deltmx</strong></dt><dd><p>A Float specifying the maximum temperature change to be allowed in an increment during a
 transient heat transfer analysis. The default value is 0.0.</p>
@@ -6007,7 +6007,7 @@ J_INTEGRAL, C_INTEGRAL, T_STRESS, and K_FACTORS. The default value is J_INTEGRAL
 </dd>
 <dt><strong>kFactorDirection</strong></dt><dd><p>A SymbolicConstant specifying the stress intensity factor direction. Possible values are
 MTS, MERR, and K110. The <strong>kFactorDirection</strong> argument is valid only if
-<a href="#id338"><span class="problematic" id="id339">**</span></a>contourType**=K_FACTORS. The default value is MTS.</p>
+<strong>contourType</strong> = K_FACTORS. The default value is MTS.</p>
 </dd>
 <dt><strong>rebar</strong></dt><dd><p>A SymbolicConstant specifying whether output is requested for rebar. Possible values are
 EXCLUDE, INCLUDE, and ONLY. The default value is EXCLUDE.</p>
@@ -6060,12 +6060,12 @@ directions. The default value is True.</p>
 <dt><strong>material</strong></dt><dd><p>A String specifying the name of the section material.</p>
 </dd>
 <dt><strong>thickness</strong></dt><dd><p>A Float specifying the thickness of the section. The <strong>thickness</strong> argument applies only
-when <a href="#id340"><span class="problematic" id="id341">**</span></a>thicknessType**=UNIFORM. The default value is 0.0.</p>
+when <strong>thicknessType</strong> = UNIFORM. The default value is 0.0.</p>
 </dd>
 <dt><strong>numIntPts</strong></dt><dd><p>An Int specifying the number of integration points to be used through the section.
 Possible values are <strong>numIntPts</strong> &gt;&gt; 0. The default value is 5.To use the default settings
-of the analysis products, set <strong>numIntPts</strong> to 5 if <strong>integrationRule**=SIMPSON or set
-**numIntPts</strong> to 7 if <a href="#id342"><span class="problematic" id="id343">**</span></a>integrationRule**=GAUSS.</p>
+of the analysis products, set <strong>numIntPts</strong> to 5 if <strong>integrationRule</strong> = SIMPSON or set
+<strong>numIntPts</strong> to 7 if <strong>integrationRule</strong> = GAUSS.</p>
 </dd>
 <dt><strong>thicknessType</strong></dt><dd><p>A SymbolicConstant specifying the distribution used for defining the thickness of the
 elements. Possible values are UNIFORM, ANALYTICAL_FIELD, DISCRETE_FIELD,
@@ -6082,7 +6082,7 @@ Abaqus/Explicit analysis.VALUE, specifying that the Poisson’s ratio used in th
 is the value provided in <strong>poisson</strong>.The default value is DEFAULT.</p>
 </dd>
 <dt><strong>poisson</strong></dt><dd><p>A Float specifying the Poisson’s ratio. Possible values are −1.0 ≤≤ <strong>poisson</strong> ≤≤ 0.5.
-This argument is valid only when <a href="#id344"><span class="problematic" id="id345">**</span></a>poissonDefinition**=VALUE. The default value is 0.5.</p>
+This argument is valid only when <strong>poissonDefinition</strong> = VALUE. The default value is 0.5.</p>
 </dd>
 <dt><strong>integrationRule</strong></dt><dd><p>A SymbolicConstant specifying the shell section integration rule. Possible values are
 SIMPSON and GAUSS. The default value is SIMPSON.</p>
@@ -6097,7 +6097,7 @@ values are NO_IDEALIZATION, SMEAR_ALL_LAYERS, MEMBRANE, and BENDING. The default
 is NO_IDEALIZATION.</p>
 </dd>
 <dt><strong>nTemp</strong></dt><dd><p>None or an Int specifying the number of temperature points to be input. This argument is
-valid only when <a href="#id346"><span class="problematic" id="id347">**</span></a>temperature**=POINTWISE. The default value is None.</p>
+valid only when <strong>temperature</strong> = POINTWISE. The default value is None.</p>
 </dd>
 <dt><strong>thicknessModulus</strong></dt><dd><p>None or a Float specifying the effective thickness modulus. This argument is relevant
 only for continuum shells and must be used in conjunction with the argument <strong>poisson</strong>.
@@ -6111,13 +6111,13 @@ OFF.</p>
 </dd>
 <dt><strong>thicknessField</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object used to
 define the thickness of the shell elements. The <strong>thicknessField</strong> argument applies only
-when <a href="#id348"><span class="problematic" id="id349">**</span></a>thicknessType**=ANALYTICAL_FIELD or <a href="#id350"><span class="problematic" id="id351">**</span></a>thicknessType**=DISCRETE_FIELD. The default
+when <strong>thicknessType</strong> = ANALYTICAL_FIELD or <strong>thicknessType</strong> = DISCRETE_FIELD. The default
 value is an empty string.</p>
 </dd>
 <dt><strong>nodalThicknessField</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object used to
 define the thickness of the shell elements at each node. The <strong>nodalThicknessField</strong>
-argument applies only when <a href="#id352"><span class="problematic" id="id353">**</span></a>thicknessType**=NODAL_ANALYTICAL_FIELD or
-<a href="#id354"><span class="problematic" id="id355">**</span></a>thicknessType**=NODAL_DISCRETE_FIELD. The default value is an empty string.</p>
+argument applies only when <strong>thicknessType</strong> = NODAL_ANALYTICAL_FIELD or
+<strong>thicknessType</strong> = NODAL_DISCRETE_FIELD. The default value is an empty string.</p>
 </dd>
 </dl>
 </dd>
@@ -6292,7 +6292,7 @@ ANALYSIS_PRODUCT_DEFAULT.</p>
 </dd>
 <dt><strong>noStop</strong></dt><dd><p>A Boolean specifying whether to accept the solution to an increment after the maximum
 number of iterations allowed have been completed, even if the equilibrium tolerances are
-not satisfied. The default value is OFF.Warning:You should set <a href="#id356"><span class="problematic" id="id357">**</span></a>noStop**=OFF only in
+not satisfied. The default value is OFF.Warning:You should set <strong>noStop</strong> = OFF only in
 special cases when you have a thorough understanding of how to interpret the results.</p>
 </dd>
 <dt><strong>maintainAttributes</strong></dt><dd><p>A Boolean specifying whether to retain attributes from an existing step with the same
@@ -6338,7 +6338,7 @@ CONVERT_SDI_ON. The default value is PROPAGATED.</p>
 <dt><strong>sourcePoint</strong></dt><dd><p>A Region object specifying the incident wave source point.</p>
 </dd>
 <dt><strong>standoffPoint</strong></dt><dd><p>A Region object specifying the incident wave standoff point.This argument is not valid
-when <a href="#id358"><span class="problematic" id="id359">**</span></a>definition**=CONWEP.</p>
+when <strong>definition</strong> = CONWEP.</p>
 </dd>
 <dt><strong>surface</strong></dt><dd><p>A Region object specifying the surface defining the incident wave interaction. In
 problems involving fluid/surface boundaries, both the fluid surface and the solid
@@ -6352,31 +6352,31 @@ set to CONWEP. Possible values are PRESSURE, ACCELERATION, UNDEX, and CONWEP. Th
 default value is PRESSURE.</p>
 </dd>
 <dt><strong>amplitude</strong></dt><dd><p>A String specifying the name of the Amplitude object that defines the fluid pressure
-time history at the standoff point, if <a href="#id360"><span class="problematic" id="id361">**</span></a>definition**=PRESSURE. If
-<a href="#id362"><span class="problematic" id="id363">**</span></a>definition**=ACCELERATION, then this string specifies the name of the Amplitude object
+time history at the standoff point, if <strong>definition</strong> = PRESSURE. If
+<strong>definition</strong> = ACCELERATION, then this string specifies the name of the Amplitude object
 that defines the fluid particle acceleration time history at the standoff point. This
-member can be specified only if <a href="#id364"><span class="problematic" id="id365">**</span></a>definition**=PRESSURE or ACCELERATION. The default value
+member can be specified only if <strong>definition</strong> = PRESSURE or ACCELERATION. The default value
 is an empty string.</p>
 </dd>
 <dt><strong>imaginaryAmplitude</strong></dt><dd><p>A String specifying the name of the Amplitude object that defines the imaginary
 component of the fluid pressure time history at the standoff point. This member is
-applicable only for linear perturbation steps and if <a href="#id366"><span class="problematic" id="id367">**</span></a>definition**=PRESSURE. The default
+applicable only for linear perturbation steps and if <strong>definition</strong> = PRESSURE. The default
 value is an empty string.</p>
 </dd>
 <dt><strong>surfaceNormal</strong></dt><dd><p>A sequence of three Floats specifying the X, Y, and Z components of the direction cosine
-of the fluid surface normal.This argument is valid only when <a href="#id368"><span class="problematic" id="id369">**</span></a>definition**=UNDEX.</p>
+of the fluid surface normal.This argument is valid only when <strong>definition</strong> = UNDEX.</p>
 </dd>
 <dt><strong>initialDepth</strong></dt><dd><p>None or a Float specifying the initial depth of the UNDEX bubble. The default value is
-None.This argument is valid only when <a href="#id370"><span class="problematic" id="id371">**</span></a>definition**=UNDEX.</p>
+None.This argument is valid only when <strong>definition</strong> = UNDEX.</p>
 </dd>
 <dt><strong>referenceMagnitude</strong></dt><dd><p>A Float specifying the reference magnitude.This argument is not valid when
-<a href="#id372"><span class="problematic" id="id373">**</span></a>definition**=CONWEP.</p>
+<strong>definition</strong> = CONWEP.</p>
 </dd>
 <dt><strong>detonationTime</strong></dt><dd><p>A Float specifying the time of detonation, given in total time.This argument is valid
-only when <a href="#id374"><span class="problematic" id="id375">**</span></a>definition**=CONWEP.</p>
+only when <strong>definition</strong> = CONWEP.</p>
 </dd>
 <dt><strong>magnitudeFactor</strong></dt><dd><p>A Float specifying the magnitude scale factor. The default value is 1.0.This argument is
-valid only when <a href="#id376"><span class="problematic" id="id377">**</span></a>definition**=CONWEP.</p>
+valid only when <strong>definition</strong> = CONWEP.</p>
 </dd>
 </dl>
 </dd>
@@ -6407,115 +6407,115 @@ PLANAR, SPHERICAL, DIFFUSE, AIR_BLAST, and SURFACE_BLAST. The default value is P
 </dd>
 <dt><strong>propagationModel</strong></dt><dd><p>A SymbolicConstant specifying the spherical propagation model. Possible values are
 ACOUSTIC, UNDEX_CHARGE, and GENERALIZED_DECAY. The default value is ACOUSTIC.This
-argument is valid only when <a href="#id378"><span class="problematic" id="id379">**</span></a>definition**=SPHERICAL.</p>
+argument is valid only when <strong>definition</strong> = SPHERICAL.</p>
 </dd>
 <dt><strong>soundSpeed</strong></dt><dd><p>A Float specifying the speed of sound in the fluid.This argument is not valid when
-<a href="#id380"><span class="problematic" id="id381">**</span></a>definition**=AIR_BLAST or when <a href="#id382"><span class="problematic" id="id383">**</span></a>definition**=SURFACE_BLAST.</p>
+<strong>definition</strong> = AIR_BLAST or when <strong>definition</strong> = SURFACE_BLAST.</p>
 </dd>
 <dt><strong>fluidDensity</strong></dt><dd><p>A Float specifying the fluid mass density.This argument is not valid when
-<a href="#id384"><span class="problematic" id="id385">**</span></a>definition**=AIR_BLAST or when <a href="#id386"><span class="problematic" id="id387">**</span></a>definition**=SURFACE_BLAST.</p>
+<strong>definition</strong> = AIR_BLAST or when <strong>definition</strong> = SURFACE_BLAST.</p>
 </dd>
 <dt><strong>specificHeatRatio</strong></dt><dd><p>None or a Float specifying the ratio of specific heats for gas. The default value is
-None.This argument is valid only when <a href="#id388"><span class="problematic" id="id389">**</span></a>definition**=SPHERICAL and
-<a href="#id390"><span class="problematic" id="id391">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>gravity</strong></dt><dd><p>None or a Float specifying the acceleration due to gravity. The default value is
-None.This argument is valid only when <a href="#id392"><span class="problematic" id="id393">**</span></a>definition**=SPHERICAL and
-<a href="#id394"><span class="problematic" id="id395">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>atmosphericPressure</strong></dt><dd><p>None or a Float specifying the atmospheric pressure. The default value is None.This
-argument is valid only when <a href="#id396"><span class="problematic" id="id397">**</span></a>definition**=SPHERICAL and <a href="#id398"><span class="problematic" id="id399">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+argument is valid only when <strong>definition</strong> = SPHERICAL and <strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>dragCoefficient</strong></dt><dd><p>None or a Float specifying the fluid drag coefficient. The default value is None.This
-argument is valid only when <a href="#id400"><span class="problematic" id="id401">**</span></a>definition**=SPHERICAL and <a href="#id402"><span class="problematic" id="id403">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+argument is valid only when <strong>definition</strong> = SPHERICAL and <strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>dragExponent</strong></dt><dd><p>A Float specifying the fluid drag exponent. The default value is 2.0.This argument is
-valid only when <a href="#id404"><span class="problematic" id="id405">**</span></a>definition**=SPHERICAL and <a href="#id406"><span class="problematic" id="id407">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+valid only when <strong>definition</strong> = SPHERICAL and <strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>waveEffects</strong></dt><dd><p>A Boolean specifying whether or not to include wave effects in the fluid and gas. The
-default value is ON.This argument is valid only when <a href="#id408"><span class="problematic" id="id409">**</span></a>definition**=SPHERICAL and
-<a href="#id410"><span class="problematic" id="id411">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+default value is ON.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>chargeDensity</strong></dt><dd><p>None or a Float specifying the density of the charge material. The default value is
-None.This argument is valid only when <a href="#id412"><span class="problematic" id="id413">**</span></a>definition**=SPHERICAL and
-<a href="#id414"><span class="problematic" id="id415">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>chargeMass</strong></dt><dd><p>None or a Float specifying the mass of the charge material. The default value is
-None.This argument is valid only when <a href="#id416"><span class="problematic" id="id417">**</span></a>definition**=SPHERICAL and
-<a href="#id418"><span class="problematic" id="id419">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>constantK1</strong></dt><dd><p>None or a Float specifying the charge material constant K. The default value is
-None.This argument is valid only when <a href="#id420"><span class="problematic" id="id421">**</span></a>definition**=SPHERICAL and
-<a href="#id422"><span class="problematic" id="id423">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>constantK2</strong></dt><dd><p>None or a Float specifying the charge material constant k. The default value is
-None.This argument is valid only when <a href="#id424"><span class="problematic" id="id425">**</span></a>definition**=SPHERICAL and
-<a href="#id426"><span class="problematic" id="id427">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>constantA</strong></dt><dd><p>None or a Float specifying the charge material constant A. The default value is
-None.This argument is valid only when <a href="#id428"><span class="problematic" id="id429">**</span></a>definition**=SPHERICAL and
-<a href="#id430"><span class="problematic" id="id431">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>constantB</strong></dt><dd><p>None or a Float specifying the charge material constant B. The default value is
-None.This argument is valid only when <a href="#id432"><span class="problematic" id="id433">**</span></a>definition**=SPHERICAL and
-<a href="#id434"><span class="problematic" id="id435">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>constantKc</strong></dt><dd><p>None or a Float specifying the charge material constant Kc. The default value is
-None.This argument is valid only when <a href="#id436"><span class="problematic" id="id437">**</span></a>definition**=SPHERICAL and
-<a href="#id438"><span class="problematic" id="id439">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>duration</strong></dt><dd><p>None or a Float specifying the time duration for the bubble simulation. The default
-value is None.This argument is valid only when <a href="#id440"><span class="problematic" id="id441">**</span></a>definition**=SPHERICAL and
-<a href="#id442"><span class="problematic" id="id443">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+value is None.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>maximumSteps</strong></dt><dd><p>An Int specifying the maximum number of time steps for the bubble simulation. The
-default value is 1500.This argument is valid only when <a href="#id444"><span class="problematic" id="id445">**</span></a>definition**=SPHERICAL and
-<a href="#id446"><span class="problematic" id="id447">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+default value is 1500.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>relativeStepControl</strong></dt><dd><p>A Float specifying the relative step size control parameter. The default value is
-1×10-11.This argument is valid only when <a href="#id448"><span class="problematic" id="id449">**</span></a>definition**=SPHERICAL and
-<a href="#id450"><span class="problematic" id="id451">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+1×10-11.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>absoluteStepControl</strong></dt><dd><p>A Float specifying the absolute step size control parameter. The default value is
-1×10-11.This argument is valid only when <a href="#id452"><span class="problematic" id="id453">**</span></a>definition**=SPHERICAL and
-<a href="#id454"><span class="problematic" id="id455">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+1×10-11.This argument is valid only when <strong>definition</strong> = SPHERICAL and
+<strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>stepControlExponent</strong></dt><dd><p>A Float specifying the step size control exponent. The default value is 0.2.This
-argument is valid only when <a href="#id456"><span class="problematic" id="id457">**</span></a>definition**=SPHERICAL and <a href="#id458"><span class="problematic" id="id459">**</span></a>propagationModel**=UNDEX_CHARGE.</p>
+argument is valid only when <strong>definition</strong> = SPHERICAL and <strong>propagationModel</strong> = UNDEX_CHARGE.</p>
 </dd>
 <dt><strong>genDecayA</strong></dt><dd><p>A Float specifying the constant A associated with the generalized decay propagation
-model. The default value is 0.0.This argument is valid only when <a href="#id460"><span class="problematic" id="id461">**</span></a>definition**=SPHERICAL
-and <a href="#id462"><span class="problematic" id="id463">**</span></a>propagationModel**=GENERALIZED_DECAY.</p>
+model. The default value is 0.0.This argument is valid only when <strong>definition</strong> = SPHERICAL
+and <strong>propagationModel</strong> = GENERALIZED_DECAY.</p>
 </dd>
 <dt><strong>genDecayB</strong></dt><dd><p>A Float specifying the constant B associated with the generalized decay propagation
-model. The default value is 0.0.This argument is valid only when <a href="#id464"><span class="problematic" id="id465">**</span></a>definition**=SPHERICAL
-and <a href="#id466"><span class="problematic" id="id467">**</span></a>propagationModel**=GENERALIZED_DECAY.</p>
+model. The default value is 0.0.This argument is valid only when <strong>definition</strong> = SPHERICAL
+and <strong>propagationModel</strong> = GENERALIZED_DECAY.</p>
 </dd>
 <dt><strong>genDecayC</strong></dt><dd><p>A Float specifying the constant C associated with the generalized decay propagation
-model. The default value is 0.0.This argument is valid only when <a href="#id468"><span class="problematic" id="id469">**</span></a>definition**=SPHERICAL
-and <a href="#id470"><span class="problematic" id="id471">**</span></a>propagationModel**=GENERALIZED_DECAY.</p>
+model. The default value is 0.0.This argument is valid only when <strong>definition</strong> = SPHERICAL
+and <strong>propagationModel</strong> = GENERALIZED_DECAY.</p>
 </dd>
 <dt><strong>seedNumber</strong></dt><dd><p>An Int specifying the seed number (N) for the diffuse source calculation. N2 sources
-will be used in the simulation.This argument is valid only when <a href="#id472"><span class="problematic" id="id473">**</span></a>definition**=DIFFUSE.</p>
+will be used in the simulation.This argument is valid only when <strong>definition</strong> = DIFFUSE.</p>
 </dd>
 <dt><strong>massTNT</strong></dt><dd><p>A Float specifying the equivalent mass of TNT, in any preferred mass unit.This argument
-is valid only when <a href="#id474"><span class="problematic" id="id475">**</span></a>definition**=AIR_BLAST or <a href="#id476"><span class="problematic" id="id477">**</span></a>definition**=SURFACE_BLAST.</p>
+is valid only when <strong>definition</strong> = AIR_BLAST or <strong>definition</strong> = SURFACE_BLAST.</p>
 </dd>
 <dt><strong>massFactor</strong></dt><dd><p>A Float specifying the multiplication factor to convert from the preferred mass unit to
 kilograms. The default value is 1.0.This argument is valid only when
-<a href="#id478"><span class="problematic" id="id479">**</span></a>definition**=AIR_BLAST or <a href="#id480"><span class="problematic" id="id481">**</span></a>definition**=SURFACE_BLAST.</p>
+<strong>definition</strong> = AIR_BLAST or <strong>definition</strong> = SURFACE_BLAST.</p>
 </dd>
 <dt><strong>lengthFactor</strong></dt><dd><p>A Float specifying the multiplication factor to convert from the analysis length unit to
-meters. The default value is 1.0.This argument is valid only when <a href="#id482"><span class="problematic" id="id483">**</span></a>definition**=AIR_BLAST
-or <a href="#id484"><span class="problematic" id="id485">**</span></a>definition**=SURFACE_BLAST.</p>
+meters. The default value is 1.0.This argument is valid only when <strong>definition</strong> = AIR_BLAST
+or <strong>definition</strong> = SURFACE_BLAST.</p>
 </dd>
 <dt><strong>timeFactor</strong></dt><dd><p>A Float specifying the multiplication factor to convert from the analysis time unit to
 seconds. The default value is 1.0.This argument is valid only when
-<a href="#id486"><span class="problematic" id="id487">**</span></a>definition**=AIR_BLAST or <a href="#id488"><span class="problematic" id="id489">**</span></a>definition**=SURFACE_BLAST.</p>
+<strong>definition</strong> = AIR_BLAST or <strong>definition</strong> = SURFACE_BLAST.</p>
 </dd>
 <dt><strong>pressureFactor</strong></dt><dd><p>A Float specifying the multiplication factor to convert from the analysis pressure unit
 to pascals. The default value is 1.0.This argument is valid only when
-<a href="#id490"><span class="problematic" id="id491">**</span></a>definition**=AIR_BLAST or <a href="#id492"><span class="problematic" id="id493">**</span></a>definition**=SURFACE_BLAST.</p>
+<strong>definition</strong> = AIR_BLAST or <strong>definition</strong> = SURFACE_BLAST.</p>
 </dd>
 </dl>
 </dd>
@@ -6564,7 +6564,7 @@ rotations are defined. Such a point must be specified only for certain combinati
 free directions.</p>
 </dd>
 <dt><strong>localCoordinates</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the rigid body
-degrees of freedom for the inertia relief load. If <a href="#id494"><span class="problematic" id="id495">**</span></a>localCoordinates**=None, the free
+degrees of freedom for the inertia relief load. If <strong>localCoordinates</strong> = None, the free
 directions are defined in the global coordinate system. When this member is queried, it
 returns an Int. The default value is None.</p>
 </dd>
@@ -6678,7 +6678,7 @@ average translation of the output region. The default value is INDEPENDENT.This 
 is valid only when you include the <strong>refPoint</strong> argument.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system used to express vector
-output. If <a href="#id496"><span class="problematic" id="id497">**</span></a>localCsys**=None, the degrees of freedom are defined in the global coordinate
+output. If <strong>localCsys</strong> = None, the degrees of freedom are defined in the global coordinate
 system. The default value is None.</p>
 </dd>
 <dt><strong>projectOrientation</strong></dt><dd><p>A Boolean specifying that the coordinate system be projected onto the <strong>surface</strong> such
@@ -6721,7 +6721,7 @@ name of the first analysis step.</p>
 UNIFORM and FIELD. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id498"><span class="problematic" id="id499">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>amplitude</strong></dt><dd><p>A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -6762,14 +6762,14 @@ You should provide the <strong>amplitude</strong> argument only if it is valid f
 hardening models. The default value is an empty sequence.</p>
 </dd>
 <dt><strong>sectPtNum</strong></dt><dd><p>A sequence of Ints specifying section point numbers. This argument is valid only when
-<a href="#id500"><span class="problematic" id="id501">**</span></a>definition**=SECTION_PTS.</p>
+<strong>definition</strong> = SECTION_PTS.</p>
 </dd>
 <dt><strong>definition</strong></dt><dd><p>A SymbolicConstant specifying different types of kinematic hardening. Possible values
 are KINEMATIC_HARDENING, CRUSHABLE_FOAM, REBAR, SECTION_PTS, and USER_DEFINED. The
 default value is KINEMATIC_HARDENING.</p>
 </dd>
 <dt><strong>rebarLayerNames</strong></dt><dd><p>A sequence of Strings specifying rebar layer names. This argument is valid only when
-<a href="#id502"><span class="problematic" id="id503">**</span></a>definition**=REBAR.</p>
+<strong>definition</strong> = REBAR.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying whether the load is uniform. Possible values are MAGNITUDE
 and ANALYTICAL_FIELD. The default value is MAGNITUDE.</p>
@@ -6849,12 +6849,12 @@ a</em>).</p>
 UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id504"><span class="problematic" id="id505">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>comp1</strong></dt><dd><p>A Float or a Complex specifying the component of the load in the global or the beam
 local 1-direction.Note:Although <strong>comp1</strong>, <strong>comp2</strong>, and <strong>comp3</strong> are optional arguments, at
-least one of them must be nonzero unless <a href="#id506"><span class="problematic" id="id507">**</span></a>distributionType**=USER_DEFINED.</p>
+least one of them must be nonzero unless <strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>comp2</strong></dt><dd><p>A Float or a Complex specifying the component of the load in the global or the beam
 local 2-direction.</p>
@@ -6897,11 +6897,11 @@ ELBOW_MPC, PIN_MPC, LINK_MPC, TIE_MPC, and USER_DEFINED.</p>
 </dd>
 <dt><strong>userMode</strong></dt><dd><p>A SymbolicConstant specifying the mode of the MPC when it is user-defined. Possible
 values are DOF_MODE and NODE_MODE. The default value is DOF_MODE.The <strong>userMode</strong> argument
-applies only when <a href="#id508"><span class="problematic" id="id509">**</span></a>mpcType**=USER_DEFINED.</p>
+applies only when <strong>mpcType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>userType</strong></dt><dd><p>An Int specifying to differentiate between different constraint types in a user-defined
 MPCSection. The default value is 0.The <strong>userType</strong> argument applies only when
-<a href="#id510"><span class="problematic" id="id511">**</span></a>mpcType**=USER_DEFINED.</p>
+<strong>mpcType</strong> = USER_DEFINED.</p>
 </dd>
 </dl>
 </dd>
@@ -6958,7 +6958,7 @@ specified step.</p>
 Possible values are UNIFORM and USER_DEFINED. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id512"><span class="problematic" id="id513">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 </dl>
@@ -7092,16 +7092,16 @@ is applied. All instances must be assigned the same Eulerian section.</p>
 discrete fields. The default value is OFF.</p>
 </dd>
 <dt><strong>assignmentList</strong></dt><dd><p>A sequence of tuples specifying the uniform volume fractions to be assigned. This
-argument is valid only when <strong>useFields**=FALSE. Each tuple contains two entries:A Region
+argument is valid only when <strong>useFields</strong> = FALSE. Each tuple contains two entries:A Region
 object.A tuple of Floats specifying the uniform volume fraction values. The length of
 the tuple must match the number of material instance names specified in the Eulerain
-section assigned to part instances specified by **instanceList</strong>.</p>
+section assigned to part instances specified by <strong>instanceList</strong>.</p>
 </dd>
 <dt><strong>fieldList</strong></dt><dd><p>A sequence of tuples specifying the discrete volume fractions to be assigned. This
-argument is valid only when <strong>useFields**=TRUE. Each tuple contains two entries:A Region
+argument is valid only when <strong>useFields</strong> = TRUE. Each tuple contains two entries:A Region
 object.A tuple of Strings specifying Discrete Field names. The length of the tuple must
 match the number of material instance names specified in the Eulerain section assigned
-to part instances specified by **instanceList</strong>.</p>
+to part instances specified by <strong>instanceList</strong>.</p>
 </dd>
 <dt><strong>colorList</strong></dt><dd><p>A sequence of three Ints specifying colors used to display the material instance
 assignments. This is a sequence of R,G,B colors, where the values are represented by
@@ -7136,11 +7136,11 @@ integers between 0 and 255. The default value is an empty sequence.</p>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the boundary condition is applied.</p>
 </dd>
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id514"><span class="problematic" id="id515">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the material flow magnitude. The default value is 0. The <strong>magnitude</strong>
-argument is optional if <a href="#id516"><span class="problematic" id="id517">**</span></a>distributionType**=USER_DEFINED.</p>
+argument is optional if <strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is distributed spatially.
 Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.</p>
@@ -7194,12 +7194,12 @@ Abaqus/Explicit analysis.VALUE, specifying that the Poisson’s ratio used in th
 is the value provided in <strong>poisson</strong>.The default value is DEFAULT.</p>
 </dd>
 <dt><strong>poisson</strong></dt><dd><p>A Float specifying the section Poisson’s ratio. Possible values are −1.0 ≤≤ <strong>poisson</strong> ≤≤
-0.5. This argument is valid only when <a href="#id518"><span class="problematic" id="id519">**</span></a>poissonDefinition**=VALUE. The default value is
+0.5. This argument is valid only when <strong>poissonDefinition</strong> = VALUE. The default value is
 0.5.</p>
 </dd>
 <dt><strong>thicknessField</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object used to
 define the thickness of the shell elements. The <strong>thicknessField</strong> argument applies only
-when <a href="#id520"><span class="problematic" id="id521">**</span></a>thicknessType**=ANALYTICAL_FIELD or <a href="#id522"><span class="problematic" id="id523">**</span></a>thicknessType**=DISCRETE_FIELD. The default
+when <strong>thicknessType</strong> = ANALYTICAL_FIELD or <strong>thicknessType</strong> = DISCRETE_FIELD. The default
 value is an empty string.</p>
 </dd>
 </dl>
@@ -7292,17 +7292,17 @@ model change may be required in a subsequent restart analysis (either for elemen
 contact pairs). The default value is OFF.</p>
 </dd>
 <dt><strong>regionType</strong></dt><dd><p>A SymbolicConstant specifying the region selection type. This argument is valid only
-when <a href="#id524"><span class="problematic" id="id525">**</span></a>isRestart**=False. Possible values are GEOMETRY, SKINS, STRINGERS, and ELEMENTS.
+when <strong>isRestart</strong> = False. Possible values are GEOMETRY, SKINS, STRINGERS, and ELEMENTS.
 The default value is GEOMETRY.</p>
 </dd>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the elements to be removed or reactivated. This argument is
-valid only when <a href="#id526"><span class="problematic" id="id527">**</span></a>isRestart**=False.</p>
+valid only when <strong>isRestart</strong> = False.</p>
 </dd>
 <dt><strong>activeInStep</strong></dt><dd><p>A Boolean specifying whether elements are being removed or reactivated. This argument is
-valid only when <a href="#id528"><span class="problematic" id="id529">**</span></a>isRestart**=False. The default value is OFF.</p>
+valid only when <strong>isRestart</strong> = False. The default value is OFF.</p>
 </dd>
 <dt><strong>includeStrain</strong></dt><dd><p>A Boolean specifying whether stress/displacement elements are reactivated with strain.
-This argument is valid only when <a href="#id530"><span class="problematic" id="id531">**</span></a>isRestart**=False and when <a href="#id532"><span class="problematic" id="id533">**</span></a>activeInStep**=True. The
+This argument is valid only when <strong>isRestart</strong> = False and when <strong>activeInStep</strong> = True. The
 default value is OFF.</p>
 </dd>
 </dl>
@@ -7530,7 +7530,7 @@ node. You should provide the <strong>follower</strong> argument only if it is va
 step. The default value is OFF.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the ID of the Datum coordinate system used as the
-local coordinate system of the load. If <a href="#id534"><span class="problematic" id="id535">**</span></a>localCsys**=None, the load is defined in the
+local coordinate system of the load. If <strong>localCsys</strong> = None, the load is defined in the
 global coordinate system. When this member is queried, it returns an Int. The default
 value is None.</p>
 </dd>
@@ -7538,7 +7538,7 @@ value is None.</p>
 UNIFORM and FIELD. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id536"><span class="problematic" id="id537">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 </dl>
@@ -7574,17 +7574,17 @@ located.</p>
 BEAM_MPC, ELBOW_MPC, PIN_MPC, LINK_MPC, TIE_MPC, and USER_MPC.</p>
 </dd>
 <dt><strong>csys</strong></dt><dd><p>None or a DatumCsys object specifying the initial orientation of the local coordinate
-system for the MultipointConstraint’s degrees of freedom. If <a href="#id538"><span class="problematic" id="id539">**</span></a>localCsys**=None, the
+system for the MultipointConstraint’s degrees of freedom. If <strong>localCsys</strong> = None, the
 MultipointConstraint is defined in the global coordinate system. The default value is
 None.</p>
 </dd>
 <dt><strong>userType</strong></dt><dd><p>An Int specifying to differentiate between different constraint types in a user-defined
 MultipointConstraint. The default value is 0.The <strong>userType</strong> argument applies only when
-<a href="#id540"><span class="problematic" id="id541">**</span></a>mpcType**=USER_MPC.</p>
+<strong>mpcType</strong> = USER_MPC.</p>
 </dd>
 <dt><strong>userMode</strong></dt><dd><p>A SymbolicConstant specifying the mode of the constraint when it is user-defined.
 Possible values are DOF_MODE_MPC and NODE_MODE_MPC. The default value is
-DOF_MODE_MPC.The <strong>userMode</strong> argument applies only when <a href="#id542"><span class="problematic" id="id543">**</span></a>mpcType**=USER_MPC.</p>
+DOF_MODE_MPC.The <strong>userMode</strong> argument applies only when <strong>mpcType</strong> = USER_MPC.</p>
 </dd>
 </dl>
 </dd>
@@ -7670,7 +7670,7 @@ values are NONE, FIRST, and SECOND. The default value is NONE.</p>
 UNIFORM and FIELD. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id544"><span class="problematic" id="id545">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>comp1</strong></dt><dd><p>A Float or a Complex specifying the load component at dof 1 of reference node
@@ -7758,7 +7758,7 @@ THREE_D, TWO_D_PLANAR, and AXISYMMETRIC.</p>
 EULERIAN, DISCRETE_RIGID_SURFACE, and ANALYTIC_RIGID_SURFACE.</p>
 </dd>
 <dt><strong>twist</strong></dt><dd><p>A Boolean specifying whether to include a twist DEGREE OF FREEDOM in the part (only
-available when <a href="#id546"><span class="problematic" id="id547">**</span></a>dimensionality**=AXISYMMETRIC and <a href="#id548"><span class="problematic" id="id549">**</span></a>type**=DEFORMABLE_BODY). The default
+available when <strong>dimensionality</strong> = AXISYMMETRIC and <strong>type</strong> = DEFORMABLE_BODY). The default
 value is OFF.</p>
 </dd>
 </dl>
@@ -7839,7 +7839,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt>localCsys</dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id550"><span class="problematic" id="id551">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 </dl>
@@ -7862,18 +7862,18 @@ in the global coordinate system. The default value is None.</p>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the load is applied.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the pressure magnitude.Note:<em>magnitude</em> is optional if
-<a href="#id552"><span class="problematic" id="id553">**</span></a>distributionType**=USER_DEFINED.</p>
+<strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>diameter</strong></dt><dd><p>A Float specifying the effective inner or outer diameter.</p>
 </dd>
 <dt><strong>hZero</strong></dt><dd><p>A Float specifying the height of the zero pressure level when
-<a href="#id554"><span class="problematic" id="id555">**</span></a>distributionType**=HYDROSTATIC.</p>
+<strong>distributionType</strong> = HYDROSTATIC.</p>
 </dd>
 <dt><strong>hReference</strong></dt><dd><p>A Float specifying the height of the reference pressure level when
-<a href="#id556"><span class="problematic" id="id557">**</span></a>distributionType**=HYDROSTATIC.</p>
+<strong>distributionType</strong> = HYDROSTATIC.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id558"><span class="problematic" id="id559">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>amplitude</strong></dt><dd><p>A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -7952,11 +7952,11 @@ library](<a class="reference external" href="https://help.3ds.com/2021/English/D
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the boundary condition is applied.</p>
 </dd>
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id560"><span class="problematic" id="id561">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the pore pressure magnitude. The default value is 0. The <strong>magnitude</strong>
-argument is optional if <a href="#id562"><span class="problematic" id="id563">**</span></a>distributionType**=USER_DEFINED.</p>
+argument is optional if <strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is distributed spatially.
 Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.</p>
@@ -7999,20 +7999,20 @@ values at the start of the step. The default value is OFF.</p>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the load is applied.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float or a Complex specifying the pressure magnitude.Note:<em>magnitude</em> is optional if
-<a href="#id564"><span class="problematic" id="id565">**</span></a>distributionType**=USER_DEFINED.</p>
+<strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>hZero</strong></dt><dd><p>A Float specifying the height of the zero pressure level when
-<a href="#id566"><span class="problematic" id="id567">**</span></a>distributionType**=HYDROSTATIC.</p>
+<strong>distributionType</strong> = HYDROSTATIC.</p>
 </dd>
 <dt><strong>hReference</strong></dt><dd><p>A Float specifying the height of the reference pressure level when
-<a href="#id568"><span class="problematic" id="id569">**</span></a>distributionType**=HYDROSTATIC.</p>
+<strong>distributionType</strong> = HYDROSTATIC.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object associated
-with this load. The <strong>field</strong> argument applies only when <a href="#id570"><span class="problematic" id="id571">**</span></a>distributionType**=FIELD or
-<a href="#id572"><span class="problematic" id="id573">**</span></a>distributionType**=DISCRETE_FIELD. The default value is an empty string.</p>
+with this load. The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD or
+<strong>distributionType</strong> = DISCRETE_FIELD. The default value is an empty string.</p>
 </dd>
 <dt><strong>refPoint</strong></dt><dd><p>A Region specifying the reference point from which the relative velocity is determined
-when <a href="#id574"><span class="problematic" id="id575">**</span></a>distributionType**=STAGNATION or VISCOUS.</p>
+when <strong>distributionType</strong> = STAGNATION or VISCOUS.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the pressure is distributed spatially. Possible values
 are UNIFORM, USER_DEFINED, FIELD, HYDROSTATIC, STAGNATION, VISCOUS, TOTAL_FORCE, and
@@ -8159,11 +8159,11 @@ created.</p>
 <dt><strong>emissivity</strong></dt><dd><p>A Float specifying the emissivity, ϵϵ.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this
-interaction. The <strong>field</strong> argument applies only when <a href="#id576"><span class="problematic" id="id577">**</span></a>distributionType**=ANALYTICAL_FIELD.
+interaction. The <strong>field</strong> argument applies only when <strong>distributionType</strong> = ANALYTICAL_FIELD.
 The default value is an empty string.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the radiation is distributed. This argument applies
-only when <a href="#id578"><span class="problematic" id="id579">**</span></a>radiationType**=AMBIENT. Possible values are UNIFORM and ANALYTICAL_FIELD. The
+only when <strong>radiationType</strong> = AMBIENT. Possible values are UNIFORM and ANALYTICAL_FIELD. The
 default value is UNIFORM.</p>
 </dd>
 <dt><strong>radiationType</strong></dt><dd><p>A SymbolicConstant specifying whether to use the default surface radiation behavior, or
@@ -8171,14 +8171,14 @@ the cavity radiation approximation. Possible values are AMBIENT and CAVITY. The 
 value is AMBIENT.</p>
 </dd>
 <dt><strong>ambientTemperature</strong></dt><dd><p>A Float specifying the reference ambient temperature, θ0θ0. This argument applies only
-when <a href="#id580"><span class="problematic" id="id581">**</span></a>radiationType**=AMBIENT. The default value is 0.0.</p>
+when <strong>radiationType</strong> = AMBIENT. The default value is 0.0.</p>
 </dd>
 <dt><strong>ambientTemperatureAmp</strong></dt><dd><p>A String specifying the name of the Amplitude object that gives the variation of the
 ambient temperature with time.Note:Use None in an Abaqus/Standard analysis to specify
 that the reference ambient temperature is applied immediately at the beginning of the
 step or linearly over the step. Use None in an Abaqus/Explicit analysis to specify that
 the reference ambient temperature is applied throughout the step. This argument applies
-only when <a href="#id582"><span class="problematic" id="id583">**</span></a>radiationType**=AMBIENT.</p>
+only when <strong>radiationType</strong> = AMBIENT.</p>
 </dd>
 </dl>
 </dd>
@@ -8312,23 +8312,23 @@ MINIMUM_MAXIMUM. The default value is DEFAULT.</p>
 </dd>
 <dt><strong>errorTarget</strong></dt><dd><p>A Float specifying the target error percentage for each variable in the region. A value
 of 0.0 indicates that Abaqus will use automated error target reduction for the region.
-You use the <strong>errorTarget</strong> argument when <a href="#id584"><span class="problematic" id="id585">**</span></a>sizingMethod**=UNIFORM_ERROR. The default value
+You use the <strong>errorTarget</strong> argument when <strong>sizingMethod</strong> = UNIFORM_ERROR. The default value
 is 0.0.</p>
 </dd>
 <dt><strong>maxSolutionErrorTarget</strong></dt><dd><p>A Float specifying the target error percentage at the location of the maximum solution
 value in the region. A value of 0.0 indicates that Abaqus will use automated error
 target reduction for the region. You use the <strong>maxSolutionErrorTarget</strong> argument when
-<a href="#id586"><span class="problematic" id="id587">**</span></a>sizingMethod**=MINIMUM_MAXIMUM. The default value is 0.0.</p>
+<strong>sizingMethod</strong> = MINIMUM_MAXIMUM. The default value is 0.0.</p>
 </dd>
 <dt><strong>minSolutionErrorTarget</strong></dt><dd><p>A Float specifying the target error percentage at the location of the minimum solution
 value in the region. A value of 0.0 indicates that Abaqus will use automated error
 target reduction for the region. You use the <strong>minSolutionErrorTarget</strong> argument when
-<a href="#id588"><span class="problematic" id="id589">**</span></a>sizingMethod**=MINIMUM_MAXIMUM. The default value is 0.0.</p>
+<strong>sizingMethod</strong> = MINIMUM_MAXIMUM. The default value is 0.0.</p>
 </dd>
 <dt><strong>meshBias</strong></dt><dd><p>An Int specifying an indication of how much Abaqus will bias the mesh toward the
 location of the maximum solution value in the region. The higher the value, the more the
 mesh will bias towards the location of the maximum solution value. You use the
-<strong>meshBias</strong> argument when <a href="#id590"><span class="problematic" id="id591">**</span></a>sizingMethod**=MINIMUM_MAXIMUM. The default value is 0.0.</p>
+<strong>meshBias</strong> argument when <strong>sizingMethod</strong> = MINIMUM_MAXIMUM. The default value is 0.0.</p>
 </dd>
 <dt><strong>minElementSize</strong></dt><dd><p>A Float specifying the minimum size of any single element. The default value is 0.0.</p>
 </dd>
@@ -8542,7 +8542,7 @@ first analysis step name.</p>
 UNIFORM and FIELD. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id592"><span class="problematic" id="id593">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>centrifugal</strong></dt><dd><p>A Boolean specifying whether or not the effect of the load is centrifugal. The default
@@ -8662,10 +8662,10 @@ interaction.</p>
 NODE_TO_SURFACE and SURFACE_TO_SURFACE. The default value is SURFACE_TO_SURFACE.</p>
 </dd>
 <dt><strong>thickness</strong></dt><dd><p>A Boolean specifying whether shell/membrane element thickness is considered. The default
-value is ON.This argument in valid only when <a href="#id594"><span class="problematic" id="id595">**</span></a>enforcement**=SURFACE_TO_SURFACE.</p>
+value is ON.This argument in valid only when <strong>enforcement</strong> = SURFACE_TO_SURFACE.</p>
 </dd>
 <dt><strong>smooth</strong></dt><dd><p>A Float specifying the degree of smoothing used for deformable or rigid main surfaces
-involved when <a href="#id596"><span class="problematic" id="id597">**</span></a>enforcement**=NODE_TO_SURFACE. The value given must lie between 0.0 and
+involved when <strong>enforcement</strong> = NODE_TO_SURFACE. The value given must lie between 0.0 and
 0.5. The default value is 0.2.</p>
 </dd>
 <dt><strong>contactControls</strong></dt><dd><p>A String specifying the name of the ContactControl object associated with this
@@ -8867,13 +8867,13 @@ value of False means that the existing algorithm will be used.</p>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the load is applied.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float or Complex specifying the load magnitude. <strong>magnitude</strong> is optional if
-<a href="#id598"><span class="problematic" id="id599">**</span></a>distributionType**=USER_DEFINED</p>
+<strong>distributionType</strong> = USER_DEFINED</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the shell edge load is distributed spatially. Possible
 values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id600"><span class="problematic" id="id601">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>amplitude</strong></dt><dd><p>A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -8948,14 +8948,14 @@ Possible values are COMPUTED and SPECIFIED. The default value is COMPUTED.</p>
 </dd>
 <dt><strong>positionTolerance</strong></dt><dd><p>A Float specifying the position tolerance. The default value is 0.0.The
 <strong>positionTolerance</strong> argument applies only when
-<a href="#id602"><span class="problematic" id="id603">**</span></a>positionToleranceMethod**=SPECIFIED.Note:Abaqus will not constrain nodes on the solid
+<strong>positionToleranceMethod</strong> = SPECIFIED.Note:Abaqus will not constrain nodes on the solid
 face region outside the position tolerance.</p>
 </dd>
 <dt><strong>influenceDistanceMethod</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the influence distance.
 Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT.</p>
 </dd>
 <dt><strong>influenceDistance</strong></dt><dd><p>A Float specifying the influence distance. The <strong>influenceDistance</strong> argument applies only
-when <a href="#id604"><span class="problematic" id="id605">**</span></a>influenceDistanceMethod**=SPECIFIED. The default value is 0.0.</p>
+when <strong>influenceDistanceMethod</strong> = SPECIFIED. The default value is 0.0.</p>
 </dd>
 </dl>
 </dd>
@@ -9349,13 +9349,13 @@ default value is OFF.</p>
 </dd>
 <dt><strong>maximumDisplacement</strong></dt><dd><p>A Float specifying the value of the total displacement (or rotation) at the node and
 degree of freedom that, if crossed during an increment, ends the step at the current
-increment. This argument is required when <a href="#id606"><span class="problematic" id="id607">**</span></a>nodeOn**=ON. The default value is 0.0.</p>
+increment. This argument is required when <strong>nodeOn</strong> = ON. The default value is 0.0.</p>
 </dd>
 <dt><strong>dof</strong></dt><dd><p>An Int specifying the degree of freedom being monitored. This argument is required when
-<a href="#id608"><span class="problematic" id="id609">**</span></a>nodeOn**=ON. The default value is 0.</p>
+<strong>nodeOn</strong> = ON. The default value is 0.</p>
 </dd>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the vertex at which the finishing displacement value is being
-monitored. This argument is required when <a href="#id610"><span class="problematic" id="id611">**</span></a>nodeOn**=ON.</p>
+monitored. This argument is required when <strong>nodeOn</strong> = ON.</p>
 </dd>
 <dt><strong>timeIncrementationMethod</strong></dt><dd><p>A SymbolicConstant specifying the time incrementation method to be used. Possible values
 are FIXED and AUTOMATIC. The default value is AUTOMATIC.</p>
@@ -9387,7 +9387,7 @@ The default value is an empty string.</p>
 </dd>
 <dt><strong>noStop</strong></dt><dd><p>A Boolean specifying whether to accept the solution to an increment after the maximum
 number of iterations allowed have been completed, even if the equilibrium tolerances are
-not satisfied. The default value is OFF.Warning:You should set <a href="#id612"><span class="problematic" id="id613">**</span></a>noStop**=ON only in
+not satisfied. The default value is OFF.Warning:You should set <strong>noStop</strong> = ON only in
 special cases when you have a thorough understanding of how to interpret the results.</p>
 </dd>
 <dt><strong>maintainAttributes</strong></dt><dd><p>A Boolean specifying whether to retain attributes from an existing step with the same
@@ -9478,7 +9478,7 @@ value is an empty string.</p>
 </dd>
 <dt><strong>noStop</strong></dt><dd><p>A Boolean specifying whether to accept the solution to an increment after the maximum
 number of iterations allowed has been completed, even if the equilibrium tolerances are
-not satisfied. The default value is OFF.Warning:You should set <a href="#id614"><span class="problematic" id="id615">**</span></a>noStop**=ON only in
+not satisfied. The default value is OFF.Warning:You should set <strong>noStop</strong> = ON only in
 special cases when you have a thorough understanding of how to interpret the results.</p>
 </dd>
 <dt><strong>maintainAttributes</strong></dt><dd><p>A Boolean specifying whether to retain attributes from an existing step with the same
@@ -9545,13 +9545,13 @@ argument. Possible values are RELATIVE and ABSOLUTE. The default value is RELATI
 surface face dimension. The float values represent percentages (e.g.: 0.001=0.1%). Only
 contact interactions defined with augmented Lagrangian surface behavior will be affected
 by this argument. The default value is 10-3.The <strong>relativePenetrationTolerance</strong> argument
-applies only when <strong>penetrationTolChoice**=RELATIVE. The **relativePenetrationTolerance</strong>
+applies only when <strong>penetrationTolChoice</strong> = RELATIVE. The <strong>relativePenetrationTolerance</strong>
 and <strong>absolutePenetrationTolerance</strong> arguments are mutually exclusive.</p>
 </dd>
 <dt><strong>absolutePenetrationTolerance</strong></dt><dd><p>None or a Float specifying the allowable penetration. Only contact interactions defined
 with augmented Lagrangian surface behavior will be affected by this argument. The
 <strong>absolutePenetrationTolerance</strong> argument applies only when
-<strong>penetrationTolChoice**=ABSOLUTE. The **relativePenetrationTolerance</strong> and
+<strong>penetrationTolChoice</strong> = ABSOLUTE. The <strong>relativePenetrationTolerance</strong> and
 <strong>absolutePenetrationTolerance</strong> arguments are mutually exclusive. The default value is
 None.</p>
 </dd>
@@ -9587,10 +9587,10 @@ default value is NONE.</p>
 </dd>
 <dt><strong>dampFactor</strong></dt><dd><p>A Float specifying the value of the damping factor. This value is multiplied by the
 calculated damping coefficient. The default value is 1.0.This argument is only valid
-when <a href="#id616"><span class="problematic" id="id617">**</span></a>stabilizeChoice**=AUTOMATIC.</p>
+when <strong>stabilizeChoice</strong> = AUTOMATIC.</p>
 </dd>
 <dt><strong>dampCoef</strong></dt><dd><p>A Float specifying the damping coefficient. The default value is 0.0.This argument is
-only valid when <a href="#id618"><span class="problematic" id="id619">**</span></a>stabilizeChoice**=COEFFICIENT.</p>
+only valid when <strong>stabilizeChoice</strong> = COEFFICIENT.</p>
 </dd>
 <dt><strong>tangFraction</strong></dt><dd><p>A Float specifying the tangential stabilization as a fraction of the normal
 stabilization (damping). The default value is 1.0.This argument is valid only if
@@ -9605,8 +9605,8 @@ values are COMPUTE and SPECIFY. The default value is COMPUTE.This argument is va
 if <strong>stabilizeChoice</strong> = AUTOMATIC or COEFFICIENT.</p>
 </dd>
 <dt><strong>zeroDamping</strong></dt><dd><p>None or a Float specifying the clearance at which damping becomes zero. This argument is
-valid only when <strong>zeroDampingChoice**=SPECIFY. This argument is valid only if
-**stabilizeChoice</strong> = AUTOMATIC or COEFFICIENT. The default value is None.</p>
+valid only when <strong>zeroDampingChoice</strong> = SPECIFY. This argument is valid only if
+<strong>stabilizeChoice</strong> = AUTOMATIC or COEFFICIENT. The default value is None.</p>
 </dd>
 <dt><strong>enforceWithLagrangeMultipliers</strong></dt><dd><p>A SymbolicConstant specifying whether to enforce the contact constraints with Lagrange
 multipliers. Possible values are DEFAULT, ENFORCEMENT_OFF, and ENFORCEMENT_ON. The
@@ -9645,16 +9645,16 @@ default value is DEFAULT.</p>
 ADJUST, INTERFERENCE, and CLEARANCE. The default value is ADJUST.</p>
 </dd>
 <dt><strong>interferenceDistance</strong></dt><dd><p>None or a Float specifying the interference distance. This argument is valid only when
-<a href="#id620"><span class="problematic" id="id621">**</span></a>overclosureType**=INTERFERENCE. The default value is None.</p>
+<strong>overclosureType</strong> = INTERFERENCE. The default value is None.</p>
 </dd>
 <dt><strong>clearanceDistance</strong></dt><dd><p>None or a Float specifying the initial clearance distance. This argument is valid only
-when <a href="#id622"><span class="problematic" id="id623">**</span></a>overclosureType**=CLEARANCE, and must be specified in that case. The default value
+when <strong>overclosureType</strong> = CLEARANCE, and must be specified in that case. The default value
 is None.</p>
 </dd>
 <dt><strong>openingTolerance</strong></dt><dd><p>None or a Float specifying the distance tolerance within which initial openings will
 undergo strain-free adjustments. This argument is not valid when
-<strong>overclosureType**=INTERFERENCE unless a value has been specified for
-**interferenceDistance</strong>. The default value is None.</p>
+<strong>overclosureType</strong> = INTERFERENCE unless a value has been specified for
+<strong>interferenceDistance</strong>. The default value is None.</p>
 </dd>
 <dt><strong>overclosureTolerance</strong></dt><dd><p>None or a Float specifying the distance tolerance within which initial overclosures will
 undergo strain-free adjustments.. The default value is None.</p>
@@ -9954,7 +9954,7 @@ applied.</p>
 </dd>
 <dt><strong>globalStep</strong></dt><dd><p>A String specifying the step in the global model from which Abaqus reads the values of
 the variables that will drive the submodel analysis. The String indicates the position
-of the step in the sequence of analysis steps. For example, <a href="#id624"><span class="problematic" id="id625">**</span></a>globalStep**=’1’ indicates
+of the step in the sequence of analysis steps. For example, <strong>globalStep</strong> = ‘1’ indicates
 the first step.</p>
 </dd>
 <dt><strong>timeScale</strong></dt><dd><p>A Boolean specifying whether to scale the time variable for the driven nodes’ amplitude
@@ -9976,12 +9976,12 @@ by which a driven node of the submodel can lie outside the region of the element
 global model. The default value is 0.05.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id626"><span class="problematic" id="id627">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>globalIncrement</strong></dt><dd><p>An Int specifying the increment number in the global model step from which the solution
-will be used to specify the values of the driven variables. If <strong>globalIncrement**=0, the
-solution from the last increment will be used. The **globalIncrement</strong> argument is
+will be used to specify the values of the driven variables. If <strong>globalIncrement</strong> = 0, the
+solution from the last increment will be used. The <strong>globalIncrement</strong> argument is
 applicable only for linear perturbation steps. The default value is 0.</p>
 </dd>
 <dt><strong>centerZoneSize</strong></dt><dd><p>A Float specifying the thickness of the center zone size around the shell midsurface.
@@ -10018,7 +10018,7 @@ The default value is None.</p>
 </dd>
 <dt><strong>globalStep</strong></dt><dd><p>A String specifying the step in the global model from which Abaqus reads the values of
 the variables that will drive the submodel analysis. The String indicates the position
-of the step in the sequence of analysis steps. For example, <a href="#id628"><span class="problematic" id="id629">**</span></a>globalStep**=’1’ indicates
+of the step in the sequence of analysis steps. For example, <strong>globalStep</strong> = ‘1’ indicates
 the first step.</p>
 </dd>
 <dt><strong>globalDrivingRegion</strong></dt><dd><p>A String specifying the element set in the global model that will be searched for
@@ -10033,8 +10033,8 @@ by which a driven node of the submodel can lie outside the region of the element
 global model. The default value is 0.05.</p>
 </dd>
 <dt><strong>globalIncrement</strong></dt><dd><p>An Int specifying the increment number in the global model step from which the solution
-will be used to specify the values of the driven variables. If <strong>globalIncrement**=0, the
-solution from the last increment will be used. The **globalIncrement</strong> argument is
+will be used to specify the values of the driven variables. If <strong>globalIncrement</strong> = 0, the
+solution from the last increment will be used. The <strong>globalIncrement</strong> argument is
 applicable only for linear perturbation steps. The default value is 0.</p>
 </dd>
 </dl>
@@ -10121,7 +10121,7 @@ in the list of analysis steps.</p>
 are WHOLE_MODEL, REGION, and NONE. The default value is WHOLE_MODEL.</p>
 </dd>
 <dt><strong>recoveryRegion</strong></dt><dd><p>A Region object specifying the region for substructure recovery. This argument is
-required when <a href="#id630"><span class="problematic" id="id631">**</span></a>recoveryMatrix**=REGION.</p>
+required when <strong>recoveryMatrix</strong> = REGION.</p>
 </dd>
 <dt><strong>computeGravityLoadVectors</strong></dt><dd><p>A Boolean specifying whether to compute the gravity load vectors. The default value is
 False.</p>
@@ -10240,7 +10240,7 @@ first analysis step name.</p>
 UNIFORM and FIELD. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id632"><span class="problematic" id="id633">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>amplitude</strong></dt><dd><p>A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -10276,10 +10276,10 @@ You should provide the <strong>amplitude</strong> argument only if it is valid f
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the load is applied.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the surface concentration flux magnitude. <strong>magnitude</strong> is optional if
-<a href="#id634"><span class="problematic" id="id635">**</span></a>distributionType**=USER_DEFINED.</p>
+<strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id636"><span class="problematic" id="id637">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the surface concentration flux is distributed
@@ -10325,7 +10325,7 @@ first analysis step name.</p>
 UNIFORM and FIELD. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id638"><span class="problematic" id="id639">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>amplitude</strong></dt><dd><p>A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -10403,10 +10403,10 @@ You should provide the <strong>amplitude</strong> argument only if it is valid f
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the load is applied.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the surface heat flux magnitude. <strong>magnitude</strong> is optional if
-<a href="#id640"><span class="problematic" id="id641">**</span></a>distributionType**=USER_DEFINED.</p>
+<strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id642"><span class="problematic" id="id643">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the surface heat flux is distributed spatially.
@@ -10445,10 +10445,10 @@ You should provide the <strong>amplitude</strong> argument only if it is valid f
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the load is applied.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the surface pore fluid flow magnitude. <strong>magnitude</strong> is optional if
-<a href="#id644"><span class="problematic" id="id645">**</span></a>distributionType**=USER_DEFINED.</p>
+<strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id646"><span class="problematic" id="id647">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying whether the load is uniform. Possible values are UNIFORM,
@@ -10538,7 +10538,7 @@ KINEMATIC and PENALTY. The default value is KINEMATIC.</p>
 are DEFAULT and SPECIFIED. The default value is DEFAULT.</p>
 </dd>
 <dt><strong>weightingFactor</strong></dt><dd><p>A Float specifying the weighting factor for the contact surfaces when
-<a href="#id648"><span class="problematic" id="id649">**</span></a>weightingFactorType**=SPECIFIED. The default value is 0.0.</p>
+<strong>weightingFactorType</strong> = SPECIFIED. The default value is 0.0.</p>
 </dd>
 <dt><strong>contactControls</strong></dt><dd><p>A String specifying the name of the ContactControl object associated with this
 interaction. An empty string indicates that the default contact controls will be used.
@@ -10614,7 +10614,7 @@ contact pairs and contact elements. Possible values are:</p>
 <p>The default value is NONE.</p>
 </dd>
 <dt><strong>overclosure</strong></dt><dd><p>A Float specifying the maximum overclosure distance allowed. This argument applies only
-when <a href="#id650"><span class="problematic" id="id651">**</span></a>interferenceType**=UNIFORM. The default value is 0.0.</p>
+when <strong>interferenceType</strong> = UNIFORM. The default value is 0.0.</p>
 </dd>
 <dt><strong>interferenceDirectionType</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the interference direction.
 Possible values are COMPUTED and DIRECTION_COSINE. The default value is COMPUTED.</p>
@@ -10625,7 +10625,7 @@ Possible values are COMPUTED and DIRECTION_COSINE. The default value is COMPUTED
 <li><p>YY-direction cosine of the interference direction vector.</p></li>
 <li><p>ZZ-direction cosine of the interference direction vector.</p></li>
 </ul>
-<p>This argument is required only when <a href="#id652"><span class="problematic" id="id653">**</span></a>interferenceDirectionType**=DIRECTION_COSINE.</p>
+<p>This argument is required only when <strong>interferenceDirectionType</strong> = DIRECTION_COSINE.</p>
 </dd>
 <dt><strong>amplitude</strong></dt><dd><p>A String specifying the name of the amplitude curve that defines the magnitude of the
 prescribed interference during the step. Use None to specify that the prescribed
@@ -10633,7 +10633,7 @@ interference is applied immediately at the beginning of the step and ramped down
 linearly over the step.</p>
 </dd>
 <dt><strong>smooth</strong></dt><dd><p>A Float specifying the degree of smoothing used for deformable or rigid main surfaces
-involved when <a href="#id654"><span class="problematic" id="id655">**</span></a>enforcement**=NODE_TO_SURFACE. The value given must lie between 0.0 and
+involved when <strong>enforcement</strong> = NODE_TO_SURFACE. The value given must lie between 0.0 and
 0.5. The default value is 0.2.</p>
 </dd>
 <dt><strong>hcrit</strong></dt><dd><p>A Float specifying the distance by which a secondary node must penetrate the main
@@ -10655,8 +10655,8 @@ TOLERANCE, and SET. The default value is NONE.</p>
 NODE_TO_SURFACE and SURFACE_TO_SURFACE. The default value is SURFACE_TO_SURFACE.</p>
 </dd>
 <dt><strong>thickness</strong></dt><dd><p>A Boolean specifying whether shell/membrane element thickness is considered. The default
-value is ON.This argument is not valid when <a href="#id656"><span class="problematic" id="id657">**</span></a>sliding**=FINITE and
-<a href="#id658"><span class="problematic" id="id659">**</span></a>enforcement**=NODE_TO_SURFACE.</p>
+value is ON.This argument is not valid when <strong>sliding</strong> = FINITE and
+<strong>enforcement</strong> = NODE_TO_SURFACE.</p>
 </dd>
 <dt><strong>contactControls</strong></dt><dd><p>A String specifying the name of the ContactControl object associated with this
 interaction. The empty string indicates that the default contact controls will be used.
@@ -10724,13 +10724,13 @@ contact property CohesiveBehavior option specifies use.</p>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the load is applied.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float or Complex specifying the load magnitude. <strong>magnitude</strong> is optional if
-<a href="#id660"><span class="problematic" id="id661">**</span></a>distributionType**=USER_DEFINED.</p>
+<strong>distributionType</strong> = USER_DEFINED.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the surface traction is distributed spatially.
 Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this load.
-The <strong>field</strong> argument applies only when <a href="#id662"><span class="problematic" id="id663">**</span></a>distributionType**=FIELD. The default value is an
+The <strong>field</strong> argument applies only when <strong>distributionType</strong> = FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>amplitude</strong></dt><dd><p>A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -10745,12 +10745,12 @@ default value is 0.0.</p>
 AXIS_1.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the load’s degrees
-of freedom. If <strong>localCsys**=None, the degrees of freedom are defined in the global
-coordinate system or by the **userCsys</strong> parameter if defined. When this member is
+of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined in the global
+coordinate system or by the <strong>userCsys</strong> parameter if defined. When this member is
 queried, it returns an Int. The default value is None.</p>
 </dd>
-<dt><strong>userCsys</strong></dt><dd><p>A String specifying a CSYS defined by a user-subroutine. If <strong>userCsys**=None, the degrees
-of freedom are defined in the global coordinate system or by the **localCsys</strong> parameter
+<dt><strong>userCsys</strong></dt><dd><p>A String specifying a CSYS defined by a user-subroutine. If <strong>userCsys</strong> = None, the degrees
+of freedom are defined in the global coordinate system or by the <strong>localCsys</strong> parameter
 if defined. The default value is “None”.</p>
 </dd>
 <dt><strong>directionVector</strong></dt><dd><p>A VertexArray object of length 2 specifying the direction of the load. Instead of
@@ -10844,7 +10844,7 @@ b</em>).</p>
 values for time/frequency are positive numbers.</p>
 </dd>
 <dt><strong>smooth</strong></dt><dd><p>The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing.
-Possible float values are between 0 and 0.5. If <a href="#id664"><span class="problematic" id="id665">**</span></a>smooth**=SOLVER_DEFAULT, the default
+Possible float values are between 0 and 0.5. If <strong>smooth</strong> = SOLVER_DEFAULT, the default
 degree of smoothing will be determined by the solver. The default value is
 SOLVER_DEFAULT.</p>
 </dd>
@@ -10897,10 +10897,10 @@ are AUTOMATIC_GLOBAL, AUTOMATIC_EBE, FIXED_USER_DEFINED_INC, and FIXED_EBE. The 
 value is AUTOMATIC_GLOBAL.</p>
 </dd>
 <dt><strong>maxIncrement</strong></dt><dd><p>None or a Float specifying the maximum time increment allowed. If there is no upper
-limit, <a href="#id666"><span class="problematic" id="id667">**</span></a>maxIncrement**=None. The default value is None.</p>
+limit, <strong>maxIncrement</strong> = None. The default value is None.</p>
 </dd>
 <dt><strong>scaleFactor</strong></dt><dd><p>A Float specifying the factor that is used to scale the time increment. This argument is
-required only when <a href="#id668"><span class="problematic" id="id669">**</span></a>timeIncrementationMethod**=AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
+required only when <strong>timeIncrementationMethod</strong> = AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
 FIXED_EBE. The default value is 1.0.</p>
 </dd>
 <dt><strong>userDefinedInc</strong></dt><dd><p>None or a Float specifying the user-defined time increment. The default value is None.</p>
@@ -10945,7 +10945,7 @@ name. The default value is False.</p>
 </dd>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the predefined field is applied. <strong>Region</strong>
 is ignored if the predefined field has a <strong>distributionType</strong> member available, and
-<a href="#id670"><span class="problematic" id="id671">**</span></a>distributionType**=FROM_FILE .</p>
+<strong>distributionType</strong> = FROM_FILE .</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the predefined field varies spatially. Possible values
 are UNIFORM, USER_DEFINED, FROM_FILE, FIELD, FROM_FILE_AND_USER_DEFINED, and
@@ -10963,7 +10963,7 @@ section of the region. Possible values are</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object associated
 with this predefined field. The <strong>field</strong> argument applies only when
-<a href="#id672"><span class="problematic" id="id673">**</span></a>distributionType**=FIELD or <a href="#id674"><span class="problematic" id="id675">**</span></a>distributionType**=DISCRETE_FIELD. The default value is an
+<strong>distributionType</strong> = FIELD or <strong>distributionType</strong> = DISCRETE_FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>amplitude</strong></dt><dd><p>A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -10972,48 +10972,48 @@ value is UNSET.Note:<em>amplitude</em> should be given only if it is valid for t
 step.</p>
 </dd>
 <dt><strong>fileName</strong></dt><dd><p>A String specifying the name of the file from which the temperature values are to be
-read when <a href="#id676"><span class="problematic" id="id677">**</span></a>distributionType**=FROM_FILE or <a href="#id678"><span class="problematic" id="id679">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED.</p>
+read when <strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED.</p>
 </dd>
 <dt><strong>beginStep</strong></dt><dd><p>An Int specifying the first step from which temperature values are to be read or the
 SymbolicConstant FIRST_STEP or LAST_STEP. This argument is valid only when
-<a href="#id680"><span class="problematic" id="id681">**</span></a>distributionType**=FROM_FILE or <a href="#id682"><span class="problematic" id="id683">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED. The
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
 default value is None.</p>
 </dd>
 <dt><strong>beginIncrement</strong></dt><dd><p>An Int specifying the first increment of the step set in <strong>beginStep</strong> or the
 SymbolicConstants STEP_START or STEP_END. This argument is valid only when
-<a href="#id684"><span class="problematic" id="id685">**</span></a>distributionType**=FROM_FILE or <a href="#id686"><span class="problematic" id="id687">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED. The
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
 default value is None.</p>
 </dd>
 <dt><strong>endStep</strong></dt><dd><p>An Int specifying the last step from which temperature values are to be read or the
 SymbolicConstants FIRST_STEP and LAST_STEP. This argument is valid only when
-<a href="#id688"><span class="problematic" id="id689">**</span></a>distributionType**=FROM_FILE or <a href="#id690"><span class="problematic" id="id691">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED. The
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
 default value is None.</p>
 </dd>
 <dt><strong>endIncrement</strong></dt><dd><p>An Int specifying the last increment of the step set in <strong>endStep</strong> or the
 SymbolicConstants STEP_START and STEP_END. This argument is valid only when
-<a href="#id692"><span class="problematic" id="id693">**</span></a>distributionType**=FROM_FILE or <a href="#id694"><span class="problematic" id="id695">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED. The
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
 default value is None.</p>
 </dd>
 <dt><strong>interpolate</strong></dt><dd><p>A SymbolicConstant specifying whether to interpolate a field read from an output
 database or results file. Possible values are OFF, ON or MIDSIDE_ONLY. The default value
 is OFF.</p>
 </dd>
-<dt><strong>magnitudes</strong></dt><dd><p>A Sequence of Doubles specifying the temperature values when <strong>distributionType**=UNIFORM
-or FIELD. The value of the **magnitudes</strong> argument is a function of the
+<dt><strong>magnitudes</strong></dt><dd><p>A Sequence of Doubles specifying the temperature values when <strong>distributionType</strong> = UNIFORM
+or FIELD. The value of the <strong>magnitudes</strong> argument is a function of the
 <strong>crossSectionDistribution</strong> argument, as shown in the following list:</p>
 <ul class="simple">
-<li><p>If <strong>crossSectionDistribution**=CONSTANT_THROUGH_THICKNESS then **magnitudes</strong> is a Double
+<li><p>If <strong>crossSectionDistribution</strong> = CONSTANT_THROUGH_THICKNESS then <strong>magnitudes</strong> is a Double
 specifying the temperature.</p></li>
-<li><p>If <strong>crossSectionDistribution**=GRADIENTS_THROUGH_SHELL_CS then **magnitudes</strong> is a
+<li><p>If <strong>crossSectionDistribution</strong> = GRADIENTS_THROUGH_SHELL_CS then <strong>magnitudes</strong> is a
 sequence of Doubles specifying the mean value and the gradient in the thickness</p></li>
 </ul>
 <p>direction.
-- If <strong>crossSectionDistribution**=GRADIENTS_THROUGH_BEAM_CS then **magnitudes</strong> is a</p>
+- If <strong>crossSectionDistribution</strong> = GRADIENTS_THROUGH_BEAM_CS then <strong>magnitudes</strong> is a</p>
 <blockquote>
 <div><p>sequence of Doubles specifying the mean value, the gradient in the N1 direction, and the</p>
 </div></blockquote>
 <p>gradient in the N2 direction.
-- If <strong>crossSectionDistribution**=POINTS_THROUGH_SECTION then **magnitudes</strong> is a sequence</p>
+- If <strong>crossSectionDistribution</strong> = POINTS_THROUGH_SECTION then <strong>magnitudes</strong> is a sequence</p>
 <blockquote>
 <div><p>of Doubles specifying the temperature at each point.</p>
 </div></blockquote>
@@ -11055,7 +11055,7 @@ model. The default value is 0.0. This argument cannot be used with <strong>midsi
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the boundary condition is applied.</p>
 </dd>
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id696"><span class="problematic" id="id697">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>magnitude</strong></dt><dd><p>A Float specifying the temperature magnitude. The default value is 0.</p>
@@ -11110,7 +11110,7 @@ lie on the main surface. The default value is ON.</p>
 Possible values are COMPUTED and SPECIFIED. The default value is COMPUTED.</p>
 </dd>
 <dt><strong>positionTolerance</strong></dt><dd><p>A Float specifying the position tolerance. The <strong>positionTolerance</strong> argument applies only
-when <a href="#id698"><span class="problematic" id="id699">**</span></a>positionToleranceMethod**=SPECIFIED. The default value is 0.0.</p>
+when <strong>positionToleranceMethod</strong> = SPECIFIED. The default value is 0.0.</p>
 </dd>
 <dt><strong>tieRotations</strong></dt><dd><p>A Boolean specifying whether rotation degrees of freedom should be tied. The default
 value is ON.</p>
@@ -11120,7 +11120,7 @@ Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT.</p>
 </dd>
 <dt><strong>constraintRatio</strong></dt><dd><p>A Float specifying the fractional distance between the main reference surface and the
 secondary node at which the translational constraint should act. The <strong>constraintRatio</strong>
-argument applies only when <a href="#id700"><span class="problematic" id="id701">**</span></a>constraintRatioMethod**=SPECIFIED. The default value is 0.0.</p>
+argument applies only when <strong>constraintRatioMethod</strong> = SPECIFIED. The default value is 0.0.</p>
 </dd>
 <dt><strong>constraintEnforcement</strong></dt><dd><p>A SymbolicConstant specifying the discretization method. Possible values are
 SOLVER_DEFAULT, NODE_TO_SURFACE, and SURFACE_TO_SURFACE. The default value is
@@ -11414,7 +11414,7 @@ the axis about which <strong>omega</strong> is defined.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this
 predefined field. The <strong>field</strong> argument applies only when
-<a href="#id702"><span class="problematic" id="id703">**</span></a>distributionType**=FIELD_ANALYTICAL. The default value is an empty string.</p>
+<strong>distributionType</strong> = FIELD_ANALYTICAL. The default value is an empty string.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying whether the load is uniform. Possible values are MAGNITUDE
 and FIELD_ANALYTICAL. The default value is MAGNITUDE.</p>
@@ -11477,7 +11477,7 @@ default value is UNSET. You should provide the <strong>amplitude</strong> argume
 for the specified step.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the adaptive mesh
-constraint’s degrees of freedom. If <a href="#id704"><span class="problematic" id="id705">**</span></a>localCsys**=None, the degrees of freedom are defined
+constraint’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>motionType</strong></dt><dd><p>A SymbolicConstant specifying the mesh motion in relation to the underlying material.
@@ -11513,7 +11513,7 @@ INDEPENDENT.</p>
 <dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the boundary condition is applied.</p>
 </dd>
 <dt><strong>fieldName</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this boundary
-condition. The <strong>fieldName</strong> argument applies only when <a href="#id706"><span class="problematic" id="id707">**</span></a>distributionType**=FIELD. The
+condition. The <strong>fieldName</strong> argument applies only when <strong>distributionType</strong> = FIELD. The
 default value is an empty string.</p>
 </dd>
 <dt><strong>v1</strong></dt><dd><p>A Float or a SymbolicConstant specifying the velocity component in the 1-direction.
@@ -11545,7 +11545,7 @@ value is UNSET. You should provide the <strong>amplitude</strong> argument only 
 specified step.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id708"><span class="problematic" id="id709">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the boundary condition is distributed spatially.
@@ -11584,7 +11584,7 @@ SymbolicConstant are U1, U2, U3, UR1, UR2, UR3. The default value is U1.</p>
 <dt><strong>amplitudeScaleFactor</strong></dt><dd><p>A Float specifying the scale factor for the amplitude curve. The default value is 1.0.</p>
 </dd>
 <dt><strong>centerOfRotation</strong></dt><dd><p>A ModelDot object specifying a tuple containing one center of rotation. The default
-value is the global origin. This argument applies only when <a href="#id710"><span class="problematic" id="id711">**</span></a>dof**=UR1, UR2, or UR3.</p>
+value is the global origin. This argument applies only when <strong>dof</strong> = UR1, UR2, or UR3.</p>
 </dd>
 <dt><strong>correlation</strong></dt><dd><p>A CorrelationArray object.</p>
 </dd>
@@ -11762,7 +11762,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id712"><span class="problematic" id="id713">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>Returns</strong></dt><dd></dd>
@@ -11796,7 +11796,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id714"><span class="problematic" id="id715">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>Returns</strong></dt><dd></dd>
@@ -11830,7 +11830,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id716"><span class="problematic" id="id717">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>Returns</strong></dt><dd></dd>
@@ -11864,7 +11864,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id718"><span class="problematic" id="id719">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>Returns</strong></dt><dd></dd>
@@ -11898,7 +11898,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id720"><span class="problematic" id="id721">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>Returns</strong></dt><dd></dd>
@@ -11932,7 +11932,7 @@ analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODE
 PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the boundary
-condition’s degrees of freedom. If <a href="#id722"><span class="problematic" id="id723">**</span></a>localCsys**=None, the degrees of freedom are defined
+condition’s degrees of freedom. If <strong>localCsys</strong> = None, the degrees of freedom are defined
 in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>Returns</strong></dt><dd></dd>
@@ -12262,7 +12262,7 @@ specified step.</p>
 </dd>
 <dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object associated
 with this predefined field. The <strong>field</strong> argument applies only when
-<a href="#id724"><span class="problematic" id="id725">**</span></a>distributionType**=FIELD or <a href="#id726"><span class="problematic" id="id727">**</span></a>distributionType**=DISCRETE_FIELD. The default value is an
+<strong>distributionType</strong> = FIELD or <strong>distributionType</strong> = DISCRETE_FIELD. The default value is an
 empty string.</p>
 </dd>
 <dt><strong>amplitude</strong></dt><dd><p>A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -12271,45 +12271,45 @@ value is UNSET.Note:<em>amplitude</em> should be given only if it is valid for t
 step.</p>
 </dd>
 <dt><strong>fileName</strong></dt><dd><p>A String specifying the name of the file from which the temperature values are to be
-read when <a href="#id728"><span class="problematic" id="id729">**</span></a>distributionType**=FROM_FILE or <a href="#id730"><span class="problematic" id="id731">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED.</p>
+read when <strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED.</p>
 </dd>
 <dt><strong>beginStep</strong></dt><dd><p>An Int specifying the first step from which temperature values are to be read or the
 SymbolicConstant FIRST_STEP or LAST_STEP. This argument is valid only when
-<a href="#id732"><span class="problematic" id="id733">**</span></a>distributionType**=FROM_FILE or <a href="#id734"><span class="problematic" id="id735">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED. The
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
 default value is None.</p>
 </dd>
 <dt><strong>beginIncrement</strong></dt><dd><p>An Int specifying the first increment of the step set in <strong>beginStep</strong> or the
 SymbolicConstants STEP_START or STEP_END. This argument is valid only when
-<a href="#id736"><span class="problematic" id="id737">**</span></a>distributionType**=FROM_FILE or <a href="#id738"><span class="problematic" id="id739">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED. The
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
 default value is None.</p>
 </dd>
 <dt><strong>endStep</strong></dt><dd><p>An Int specifying the last step from which temperature values are to be read or the
 SymbolicConstants FIRST_STEP and LAST_STEP. This argument is valid only when
-<a href="#id740"><span class="problematic" id="id741">**</span></a>distributionType**=FROM_FILE or <a href="#id742"><span class="problematic" id="id743">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED. The
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
 default value is None.</p>
 </dd>
 <dt><strong>endIncrement</strong></dt><dd><p>An Int specifying the last increment of the step set in <strong>endStep</strong> or the
 SymbolicConstants STEP_START and STEP_END. This argument is valid only when
-<a href="#id744"><span class="problematic" id="id745">**</span></a>distributionType**=FROM_FILE or <a href="#id746"><span class="problematic" id="id747">**</span></a>distributionType**=FROM_FILE_AND_USER_DEFINED. The
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
 default value is None.</p>
 </dd>
 <dt><strong>interpolate</strong></dt><dd><p>A SymbolicConstant specifying whether to interpolate a field read from an output
 database or results file. Possible values are OFF, ON or MIDSIDE_ONLY. The default value
 is OFF.</p>
 </dd>
-<dt><strong>magnitudes</strong></dt><dd><p>A Sequence of Doubles specifying the temperature values when <strong>distributionType**=UNIFORM
-or FIELD. The value of the **magnitudes</strong> argument is a function of the
+<dt><strong>magnitudes</strong></dt><dd><p>A Sequence of Doubles specifying the temperature values when <strong>distributionType</strong> = UNIFORM
+or FIELD. The value of the <strong>magnitudes</strong> argument is a function of the
 <strong>crossSectionDistribution</strong> argument, as shown in the following list:</p>
 <ul class="simple">
-<li><p>If <strong>crossSectionDistribution**=CONSTANT_THROUGH_THICKNESS then **magnitudes</strong> is a Double
+<li><p>If <strong>crossSectionDistribution</strong> = CONSTANT_THROUGH_THICKNESS then <strong>magnitudes</strong> is a Double
 specifying the temperature.</p></li>
-<li><p>If <strong>crossSectionDistribution**=GRADIENTS_THROUGH_SHELL_CS then **magnitudes</strong> is a
+<li><p>If <strong>crossSectionDistribution</strong> = GRADIENTS_THROUGH_SHELL_CS then <strong>magnitudes</strong> is a
 sequence of Doubles specifying the mean value and the gradient in the thickness
 direction.</p></li>
-<li><p>If <strong>crossSectionDistribution**=GRADIENTS_THROUGH_BEAM_CS then **magnitudes</strong> is a
+<li><p>If <strong>crossSectionDistribution</strong> = GRADIENTS_THROUGH_BEAM_CS then <strong>magnitudes</strong> is a
 sequence of Doubles specifying the mean value, the gradient in the N1 direction, and the
 gradient in the N2 direction.</p></li>
-<li><p>If <strong>crossSectionDistribution**=POINTS_THROUGH_SECTION then **magnitudes</strong> is a sequence
+<li><p>If <strong>crossSectionDistribution</strong> = POINTS_THROUGH_SECTION then <strong>magnitudes</strong> is a sequence
 of Doubles specifying the temperature at each point.</p></li>
 </ul>
 </dd>
@@ -12477,7 +12477,7 @@ data will be similar to that of the input file. Since the KeywordBlock is stored
 Abaqus/CAE database, this will result in a larger database. It will also result in a
 slower execution of the synchVersions command. If <strong>storeNodesAndElements</strong> is False, the
 data lines are not stored in <strong>sieBlocks</strong>. Consequently, only set
-<a href="#id748"><span class="problematic" id="id749">**</span></a>storeNodesAndElements**=True if you wish to make changes to the <a href="#id750"><span class="problematic" id="id751">*</span></a>NODE or <a href="#id752"><span class="problematic" id="id753">*</span></a>ELEMENT data
+<strong>storeNodesAndElements</strong> = True if you wish to make changes to the <a href="#id8"><span class="problematic" id="id9">*</span></a>NODE or <a href="#id10"><span class="problematic" id="id11">*</span></a>ELEMENT data
 lines themselves. If your task is limited to reading nodal coordinates and element
 connectivities (i.e. not editing this information) then it is generally better to access
 this information from other parts of the Mdb.</p>

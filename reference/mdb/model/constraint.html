@@ -404,37 +404,37 @@ point will be adjusted in the direction normal to the specified surface. The def
 value is OFF.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the initial orientation of the local coordinate
-system for the coupling’s degrees of freedom. If <a href="#id1"><span class="problematic" id="id2">**</span></a>localCsys**=None, the coupling is
+system for the coupling’s degrees of freedom. If <strong>localCsys</strong> = None, the coupling is
 defined in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>u1</strong></dt><dd><p>A Boolean specifying if the displacement component in the 1-direction is constrained to
 the reference node for a kinematic coupling constraint. The default value is ON.The <strong>u1</strong>
-argument applies only when <a href="#id3"><span class="problematic" id="id4">**</span></a>couplingType**=KINEMATIC.</p>
+argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
 </dd>
 <dt><strong>u2</strong></dt><dd><p>A Boolean specifying if the displacement component in the 2-direction is constrained to
 the reference node for a kinematic coupling constraint. The default value is ON.The <strong>u2</strong>
-argument applies only when <a href="#id5"><span class="problematic" id="id6">**</span></a>couplingType**=KINEMATIC.</p>
+argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
 </dd>
 <dt><strong>u3</strong></dt><dd><p>A Boolean specifying if the displacement component in the 3-direction is constrained to
 the reference node for a kinematic coupling constraint. The default value is ON.The <strong>u3</strong>
-argument applies only when <a href="#id7"><span class="problematic" id="id8">**</span></a>couplingType**=KINEMATIC.</p>
+argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
 </dd>
 <dt><strong>ur1</strong></dt><dd><p>A Boolean specifying if the rotational displacement component about the 1-direction is
 constrained to the reference node for a kinematic coupling constraint. The default value
-is ON.The <strong>ur1</strong> argument applies only when <a href="#id9"><span class="problematic" id="id10">**</span></a>couplingType**=KINEMATIC.</p>
+is ON.The <strong>ur1</strong> argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
 </dd>
 <dt><strong>ur2</strong></dt><dd><p>A Boolean specifying if the rotational displacement component about the 2-direction is
 constrained to the reference node for a kinematic coupling constraint. The default value
-is ON.The <strong>ur2</strong> argument applies only when <a href="#id11"><span class="problematic" id="id12">**</span></a>couplingType**=KINEMATIC.</p>
+is ON.The <strong>ur2</strong> argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
 </dd>
 <dt><strong>ur3</strong></dt><dd><p>A Boolean specifying if the rotational displacement component about the 3-direction is
 constrained to the reference node for a kinematic coupling constraint. The default value
-is ON.The <strong>ur3</strong> argument applies only when <a href="#id13"><span class="problematic" id="id14">**</span></a>couplingType**=KINEMATIC.</p>
+is ON.The <strong>ur3</strong> argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
 </dd>
 <dt><strong>weightingMethod</strong></dt><dd><p>A SymbolicConstant specifying an optional weighting method used for calculating the
 distributing weight factors. Possible values are UNIFORM, LINEAR, QUADRATIC, and CUBIC.
 The default value is UNIFORM.The <strong>weightingMethod</strong> argument applies only when
-<a href="#id15"><span class="problematic" id="id16">**</span></a>couplingType**=DISTRIBUTING.</p>
+<strong>couplingType</strong> = DISTRIBUTING.</p>
 </dd>
 </dl>
 </dd>
@@ -505,15 +505,15 @@ tolerance. Possible values are ABSOLUTE, FRACTIONAL, and BOTH. The default value
 BOTH.</p>
 </dd>
 <dt><strong>absoluteTolerance</strong></dt><dd><p>A Float specifying the absolute value by which a node on the embedded region may lie
-outside the host region. If <strong>absoluteTolerance**=0.0, the **fractionalTolerance</strong> value
+outside the host region. If <strong>absoluteTolerance</strong> = 0.0, the <strong>fractionalTolerance</strong> value
 will be used. The default value is 0.0.This argument applies only when
-<a href="#id17"><span class="problematic" id="id18">**</span></a>toleranceMethod**=ABSOLUTE or BOTH.</p>
+<strong>toleranceMethod</strong> = ABSOLUTE or BOTH.</p>
 </dd>
 <dt><strong>fractionalTolerance</strong></dt><dd><p>A Float specifying the fractional value by which a node on the embedded region may lie
 outside the host region. The fractional value is based on the average element size
 within the host region. The default value is 0.05.If both tolerance arguments are
 specified, the smaller value will be used.This argument applies only when
-<a href="#id19"><span class="problematic" id="id20">**</span></a>toleranceMethod**=FRACTIONAL or BOTH.</p>
+<strong>toleranceMethod</strong> = FRACTIONAL or BOTH.</p>
 </dd>
 </dl>
 </dd>
@@ -580,17 +580,17 @@ located.</p>
 BEAM_MPC, ELBOW_MPC, PIN_MPC, LINK_MPC, TIE_MPC, and USER_MPC.</p>
 </dd>
 <dt><strong>csys</strong></dt><dd><p>None or a DatumCsys object specifying the initial orientation of the local coordinate
-system for the MultipointConstraint’s degrees of freedom. If <a href="#id21"><span class="problematic" id="id22">**</span></a>localCsys**=None, the
+system for the MultipointConstraint’s degrees of freedom. If <strong>localCsys</strong> = None, the
 MultipointConstraint is defined in the global coordinate system. The default value is
 None.</p>
 </dd>
 <dt><strong>userType</strong></dt><dd><p>An Int specifying to differentiate between different constraint types in a user-defined
 MultipointConstraint. The default value is 0.The <strong>userType</strong> argument applies only when
-<a href="#id23"><span class="problematic" id="id24">**</span></a>mpcType**=USER_MPC.</p>
+<strong>mpcType</strong> = USER_MPC.</p>
 </dd>
 <dt><strong>userMode</strong></dt><dd><p>A SymbolicConstant specifying the mode of the constraint when it is user-defined.
 Possible values are DOF_MODE_MPC and NODE_MODE_MPC. The default value is
-DOF_MODE_MPC.The <strong>userMode</strong> argument applies only when <a href="#id25"><span class="problematic" id="id26">**</span></a>mpcType**=USER_MPC.</p>
+DOF_MODE_MPC.The <strong>userMode</strong> argument applies only when <strong>mpcType</strong> = USER_MPC.</p>
 </dd>
 </dl>
 </dd>
@@ -669,14 +669,14 @@ Possible values are COMPUTED and SPECIFIED. The default value is COMPUTED.</p>
 </dd>
 <dt><strong>positionTolerance</strong></dt><dd><p>A Float specifying the position tolerance. The default value is 0.0.The
 <strong>positionTolerance</strong> argument applies only when
-<a href="#id27"><span class="problematic" id="id28">**</span></a>positionToleranceMethod**=SPECIFIED.Note:Abaqus will not constrain nodes on the solid
+<strong>positionToleranceMethod</strong> = SPECIFIED.Note:Abaqus will not constrain nodes on the solid
 face region outside the position tolerance.</p>
 </dd>
 <dt><strong>influenceDistanceMethod</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the influence distance.
 Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT.</p>
 </dd>
 <dt><strong>influenceDistance</strong></dt><dd><p>A Float specifying the influence distance. The <strong>influenceDistance</strong> argument applies only
-when <a href="#id29"><span class="problematic" id="id30">**</span></a>influenceDistanceMethod**=SPECIFIED. The default value is 0.0.</p>
+when <strong>influenceDistanceMethod</strong> = SPECIFIED. The default value is 0.0.</p>
 </dd>
 </dl>
 </dd>
@@ -713,7 +713,7 @@ lie on the main surface. The default value is ON.</p>
 Possible values are COMPUTED and SPECIFIED. The default value is COMPUTED.</p>
 </dd>
 <dt><strong>positionTolerance</strong></dt><dd><p>A Float specifying the position tolerance. The <strong>positionTolerance</strong> argument applies only
-when <a href="#id31"><span class="problematic" id="id32">**</span></a>positionToleranceMethod**=SPECIFIED. The default value is 0.0.</p>
+when <strong>positionToleranceMethod</strong> = SPECIFIED. The default value is 0.0.</p>
 </dd>
 <dt><strong>tieRotations</strong></dt><dd><p>A Boolean specifying whether rotation degrees of freedom should be tied. The default
 value is ON.</p>
@@ -723,7 +723,7 @@ Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT.</p>
 </dd>
 <dt><strong>constraintRatio</strong></dt><dd><p>A Float specifying the fractional distance between the main reference surface and the
 secondary node at which the translational constraint should act. The <strong>constraintRatio</strong>
-argument applies only when <a href="#id33"><span class="problematic" id="id34">**</span></a>constraintRatioMethod**=SPECIFIED. The default value is 0.0.</p>
+argument applies only when <strong>constraintRatioMethod</strong> = SPECIFIED. The default value is 0.0.</p>
 </dd>
 <dt><strong>constraintEnforcement</strong></dt><dd><p>A SymbolicConstant specifying the discretization method. Possible values are
 SOLVER_DEFAULT, NODE_TO_SURFACE, and SURFACE_TO_SURFACE. The default value is
@@ -752,8 +752,8 @@ ON.</p>
 </section>
 <section id="object-features">
 <h2>Object features<a class="headerlink" href="#object-features" title="Permalink to this headline">#</a></h2>
-<section id="id35">
-<h3>Constraint<a class="headerlink" href="#id35" title="Permalink to this headline">#</a></h3>
+<section id="id1">
+<h3>Constraint<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Constraint.Constraint.Constraint">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Constraint</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Constraint.py#L4-L50"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Constraint.Constraint" title="Permalink to this definition">#</a></dt>
@@ -928,37 +928,37 @@ point will be adjusted in the direction normal to the specified surface. The def
 value is OFF.</p>
 </dd>
 <dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the initial orientation of the local coordinate
-system for the coupling’s degrees of freedom. If <a href="#id36"><span class="problematic" id="id37">**</span></a>localCsys**=None, the coupling is
+system for the coupling’s degrees of freedom. If <strong>localCsys</strong> = None, the coupling is
 defined in the global coordinate system. The default value is None.</p>
 </dd>
 <dt><strong>u1</strong></dt><dd><p>A Boolean specifying if the displacement component in the 1-direction is constrained to
 the reference node for a kinematic coupling constraint. The default value is ON.The <strong>u1</strong>
-argument applies only when <a href="#id38"><span class="problematic" id="id39">**</span></a>couplingType**=KINEMATIC.</p>
+argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
 </dd>
 <dt><strong>u2</strong></dt><dd><p>A Boolean specifying if the displacement component in the 2-direction is constrained to
 the reference node for a kinematic coupling constraint. The default value is ON.The <strong>u2</strong>
-argument applies only when <a href="#id40"><span class="problematic" id="id41">**</span></a>couplingType**=KINEMATIC.</p>
+argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
 </dd>
 <dt><strong>u3</strong></dt><dd><p>A Boolean specifying if the displacement component in the 3-direction is constrained to
 the reference node for a kinematic coupling constraint. The default value is ON.The <strong>u3</strong>
-argument applies only when <a href="#id42"><span class="problematic" id="id43">**</span></a>couplingType**=KINEMATIC.</p>
+argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
 </dd>
 <dt><strong>ur1</strong></dt><dd><p>A Boolean specifying if the rotational displacement component about the 1-direction is
 constrained to the reference node for a kinematic coupling constraint. The default value
-is ON.The <strong>ur1</strong> argument applies only when <a href="#id44"><span class="problematic" id="id45">**</span></a>couplingType**=KINEMATIC.</p>
+is ON.The <strong>ur1</strong> argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
 </dd>
 <dt><strong>ur2</strong></dt><dd><p>A Boolean specifying if the rotational displacement component about the 2-direction is
 constrained to the reference node for a kinematic coupling constraint. The default value
-is ON.The <strong>ur2</strong> argument applies only when <a href="#id46"><span class="problematic" id="id47">**</span></a>couplingType**=KINEMATIC.</p>
+is ON.The <strong>ur2</strong> argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
 </dd>
 <dt><strong>ur3</strong></dt><dd><p>A Boolean specifying if the rotational displacement component about the 3-direction is
 constrained to the reference node for a kinematic coupling constraint. The default value
-is ON.The <strong>ur3</strong> argument applies only when <a href="#id48"><span class="problematic" id="id49">**</span></a>couplingType**=KINEMATIC.</p>
+is ON.The <strong>ur3</strong> argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
 </dd>
 <dt><strong>weightingMethod</strong></dt><dd><p>A SymbolicConstant specifying an optional weighting method used for calculating the
 distributing weight factors. Possible values are UNIFORM, LINEAR, QUADRATIC, and CUBIC.
 The default value is UNIFORM.The <strong>weightingMethod</strong> argument applies only when
-<a href="#id50"><span class="problematic" id="id51">**</span></a>couplingType**=DISTRIBUTING.</p>
+<strong>couplingType</strong> = DISTRIBUTING.</p>
 </dd>
 </dl>
 </dd>
@@ -1076,15 +1076,15 @@ tolerance. Possible values are ABSOLUTE, FRACTIONAL, and BOTH. The default value
 BOTH.</p>
 </dd>
 <dt><strong>absoluteTolerance</strong></dt><dd><p>A Float specifying the absolute value by which a node on the embedded region may lie
-outside the host region. If <strong>absoluteTolerance**=0.0, the **fractionalTolerance</strong> value
+outside the host region. If <strong>absoluteTolerance</strong> = 0.0, the <strong>fractionalTolerance</strong> value
 will be used. The default value is 0.0.This argument applies only when
-<a href="#id52"><span class="problematic" id="id53">**</span></a>toleranceMethod**=ABSOLUTE or BOTH.</p>
+<strong>toleranceMethod</strong> = ABSOLUTE or BOTH.</p>
 </dd>
 <dt><strong>fractionalTolerance</strong></dt><dd><p>A Float specifying the fractional value by which a node on the embedded region may lie
 outside the host region. The fractional value is based on the average element size
 within the host region. The default value is 0.05.If both tolerance arguments are
 specified, the smaller value will be used.This argument applies only when
-<a href="#id54"><span class="problematic" id="id55">**</span></a>toleranceMethod**=FRACTIONAL or BOTH.</p>
+<strong>toleranceMethod</strong> = FRACTIONAL or BOTH.</p>
 </dd>
 </dl>
 </dd>
@@ -1200,17 +1200,17 @@ OFF.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>csys</strong></dt><dd><p>None or a DatumCsys object specifying the initial orientation of the local coordinate
-system for the MultipointConstraint’s degrees of freedom. If <a href="#id56"><span class="problematic" id="id57">**</span></a>localCsys**=None, the
+system for the MultipointConstraint’s degrees of freedom. If <strong>localCsys</strong> = None, the
 MultipointConstraint is defined in the global coordinate system. The default value is
 None.</p>
 </dd>
 <dt><strong>userType</strong></dt><dd><p>An Int specifying to differentiate between different constraint types in a user-defined
 MultipointConstraint. The default value is 0.The <strong>userType</strong> argument applies only when
-<a href="#id58"><span class="problematic" id="id59">**</span></a>mpcType**=USER_MPC.</p>
+<strong>mpcType</strong> = USER_MPC.</p>
 </dd>
 <dt><strong>userMode</strong></dt><dd><p>A SymbolicConstant specifying the mode of the constraint when it is user-defined.
 Possible values are DOF_MODE_MPC and NODE_MODE_MPC. The default value is
-DOF_MODE_MPC.The <strong>userMode</strong> argument applies only when <a href="#id60"><span class="problematic" id="id61">**</span></a>mpcType**=USER_MPC.</p>
+DOF_MODE_MPC.The <strong>userMode</strong> argument applies only when <strong>mpcType</strong> = USER_MPC.</p>
 </dd>
 </dl>
 </dd>
@@ -1347,14 +1347,14 @@ Possible values are COMPUTED and SPECIFIED. The default value is COMPUTED.</p>
 </dd>
 <dt><strong>positionTolerance</strong></dt><dd><p>A Float specifying the position tolerance. The default value is 0.0.The
 <strong>positionTolerance</strong> argument applies only when
-<a href="#id62"><span class="problematic" id="id63">**</span></a>positionToleranceMethod**=SPECIFIED.Note:Abaqus will not constrain nodes on the solid
+<strong>positionToleranceMethod</strong> = SPECIFIED.Note:Abaqus will not constrain nodes on the solid
 face region outside the position tolerance.</p>
 </dd>
 <dt><strong>influenceDistanceMethod</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the influence distance.
 Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT.</p>
 </dd>
 <dt><strong>influenceDistance</strong></dt><dd><p>A Float specifying the influence distance. The <strong>influenceDistance</strong> argument applies only
-when <a href="#id64"><span class="problematic" id="id65">**</span></a>influenceDistanceMethod**=SPECIFIED. The default value is 0.0.</p>
+when <strong>influenceDistanceMethod</strong> = SPECIFIED. The default value is 0.0.</p>
 </dd>
 </dl>
 </dd>
@@ -1422,7 +1422,7 @@ lie on the main surface. The default value is ON.</p>
 Possible values are COMPUTED and SPECIFIED. The default value is COMPUTED.</p>
 </dd>
 <dt><strong>positionTolerance</strong></dt><dd><p>A Float specifying the position tolerance. The <strong>positionTolerance</strong> argument applies only
-when <a href="#id66"><span class="problematic" id="id67">**</span></a>positionToleranceMethod**=SPECIFIED. The default value is 0.0.</p>
+when <strong>positionToleranceMethod</strong> = SPECIFIED. The default value is 0.0.</p>
 </dd>
 <dt><strong>tieRotations</strong></dt><dd><p>A Boolean specifying whether rotation degrees of freedom should be tied. The default
 value is ON.</p>
@@ -1432,7 +1432,7 @@ Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT.</p>
 </dd>
 <dt><strong>constraintRatio</strong></dt><dd><p>A Float specifying the fractional distance between the main reference surface and the
 secondary node at which the translational constraint should act. The <strong>constraintRatio</strong>
-argument applies only when <a href="#id68"><span class="problematic" id="id69">**</span></a>constraintRatioMethod**=SPECIFIED. The default value is 0.0.</p>
+argument applies only when <strong>constraintRatioMethod</strong> = SPECIFIED. The default value is 0.0.</p>
 </dd>
 <dt><strong>constraintEnforcement</strong></dt><dd><p>A SymbolicConstant specifying the discretization method. Possible values are
 SOLVER_DEFAULT, NODE_TO_SURFACE, and SURFACE_TO_SURFACE. The default value is
@@ -1519,7 +1519,7 @@ is valid only during the step in which the interaction is created.</p>
 <li><a class="reference internal" href="#">Constraint</a><ul>
 <li><a class="reference internal" href="#create-constraints">Create constraints</a></li>
 <li><a class="reference internal" href="#object-features">Object features</a><ul>
-<li><a class="reference internal" href="#id35">Constraint</a></li>
+<li><a class="reference internal" href="#id1">Constraint</a></li>
 <li><a class="reference internal" href="#adjustpoints">AdjustPoints</a></li>
 <li><a class="reference internal" href="#coupling">Coupling</a></li>
 <li><a class="reference internal" href="#displaybody">DisplayBody</a></li>
