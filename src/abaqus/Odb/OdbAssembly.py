@@ -42,7 +42,7 @@ class OdbAssembly(OdbAssemblyBase):
         point1
             A sequence of Floats specifying the coordinates of a point on the local 1- or rr-axis.
         point2
-            A sequence of Floats specifying the coordinates of a point in the 1–2 or rr–θθ plane.
+            A sequence of Floats specifying the coordinates of a point in the 1-2 or rr-θθ plane.
 
         Returns
         -------
@@ -86,7 +86,7 @@ class OdbAssembly(OdbAssemblyBase):
         point1
             An OdbMeshNode object specifying a node on the local 1- or rr-axis.
         point2
-            An OdbMeshNode object specifying a node in the 1–2 or rr–θθ plane.
+            An OdbMeshNode object specifying a node in the 1-2 or rr-θθ plane.
 
         Returns
         -------

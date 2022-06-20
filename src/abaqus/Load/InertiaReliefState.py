@@ -18,11 +18,11 @@ class InertiaReliefState(LoadState):
     u3: Boolean
         A Boolean specifying the 3-direction as a free direction.
     ur1: Boolean
-        A Boolean specifying the rotation about the 1–direction as a free direction.
+        A Boolean specifying the rotation about the 1-direction as a free direction.
     ur2: Boolean
-        A Boolean specifying the rotation about the 2–direction as a free direction.
+        A Boolean specifying the rotation about the 2-direction as a free direction.
     ur3: Boolean
-        A Boolean specifying the rotation about the 3–direction as a free direction.
+        A Boolean specifying the rotation about the 3-direction as a free direction.
     u1State: SymbolicConstant
         A SymbolicConstant specifying the propagation state of the Boolean that identifies the
         local 1-direction as a free direction. Possible values are UNSET, SET, UNCHANGED, and
@@ -107,13 +107,13 @@ class InertiaReliefState(LoadState):
     # A Boolean specifying the 3-direction as a free direction.
     u3: Boolean = OFF
 
-    # A Boolean specifying the rotation about the 1–direction as a free direction.
+    # A Boolean specifying the rotation about the 1-direction as a free direction.
     ur1: Boolean = OFF
 
-    # A Boolean specifying the rotation about the 2–direction as a free direction.
+    # A Boolean specifying the rotation about the 2-direction as a free direction.
     ur2: Boolean = OFF
 
-    # A Boolean specifying the rotation about the 3–direction as a free direction.
+    # A Boolean specifying the rotation about the 3-direction as a free direction.
     ur3: Boolean = OFF
 
     # A SymbolicConstant specifying the propagation state of the Boolean that identifies the

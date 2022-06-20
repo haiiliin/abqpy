@@ -35,7 +35,7 @@ class InelasticHeatFraction:
         fraction
             A Float specifying the fraction of inelastic dissipation rate that appears as a heat
             flux per unit volume. The fraction may include a unit conversion factor if required.
-            Possible values are 0.0 ≤≤ **fraction** ≤≤ 1.0. The default value is 0.9.
+            Possible values are 0.0 ≤ **fraction** ≤ 1.0. The default value is 0.9.
 
         Returns
         -------

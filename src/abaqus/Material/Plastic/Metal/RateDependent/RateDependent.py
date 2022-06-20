@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class RateDependent:
-    """The RateDependent object defines a rate-dependent viscoplastic model.
+    r"""The RateDependent object defines a rate-dependent viscoplastic model.
 
     Notes
     -----
@@ -23,24 +23,24 @@ class RateDependent:
 
     - If **type**=POWER_LAW, the table data specify the following:
     
-        - D.
-        - n.
+        - :math:`D`.
+        - :math:`n`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **type**=YIELD_RATIO, the table data specify the following:
     
-        - Yield stress ratio, R=¯σ/σ0.
-        - Equivalent Plastic strain rate, ˙¯εpl.
+        - Yield stress ratio, :math:`R=\bar{\sigma} / \sigma^{0}`.
+        - Equivalent plastic strain rate, :math:`\dot{\bar{\varepsilon}}^{p l}`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **type**=JOHNSON_COOK, the table data specify the following:
-    
-        - C.
-        - ˙ε0.
+
+        - :math:`C`.
+        - :math:`\dot{\varepsilon}_{0}`.
 
     The corresponding analysis keywords are:
 

@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class CapCreepCohesion:
-    """The CapCreepCohesion object specifies a cap creep model and material properties.
+    r"""The CapCreepCohesion object specifies a cap creep model and material properties.
 
     Notes
     -----
@@ -19,19 +19,19 @@ class CapCreepCohesion:
 
     - If **law**=STRAIN or **law**=TIME, the table data specify the following:
     
-        - A.
-        - n.
-        - m.
+        - :math:`A`.
+        - :math:`n`.
+        - :math:`m`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **law**=SINGHM, the table data specify the following:
     
-        - A.
-        - α.
-        - m.
-        - t1.
+        - :math:`A`.
+        - :math:`\alpha`.
+        - :math:`m`.
+        - :math:`t_{1}`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.

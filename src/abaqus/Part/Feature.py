@@ -197,7 +197,7 @@ class Feature(BaseFeature):
         sketch
             A ConstrainedSketch object specifying the plane shape to be extruded.
         depth
-            A Float specifying the extrusion depth. Possible values are 10–5 ≤≤ **depth** ≤≤ 105.
+            A Float specifying the extrusion depth. Possible values are 10-5 ≤≤ **depth** ≤≤ 105.
         draftAngle
             A Float specifying the draft angle in degrees. Possible values are -90.0 ≤≤ **draftAngle**
             ≤≤ 90.0. By convention, for a positive draft angle an outer loop will draft outward and
@@ -209,7 +209,7 @@ class Feature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are –105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
 
         Returns
@@ -245,7 +245,7 @@ class Feature(BaseFeature):
         sketch
             A ConstrainedSketch object specifying the shape to be revolved.
         angle
-            A Float specifying the revolve angle in degrees. Possible values are 10–4 ≤≤ **angle** ≤≤
+            A Float specifying the revolve angle in degrees. Possible values are 10-4 ≤≤ **angle** ≤≤
             360.Note:If **pitch** >>0, there is no upper limit for **angle**.
         pitch
             A Float specifying the pitch. The pitch is the distance traveled along the axial
@@ -367,7 +367,7 @@ class Feature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are –105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
 
         Returns
@@ -775,7 +775,7 @@ class Feature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are –105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
         flipExtrudeDirection
             A Boolean specifying whether to override the direction of feature creation. If the value
@@ -1005,7 +1005,7 @@ class Feature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are –105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
         profileNormal
             A Boolean specifying whether to keep the profile normal same as original or varying
@@ -1761,7 +1761,7 @@ class Feature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are –105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
         flipExtrudeDirection
             A Boolean specifying whether to override the direction of feature creation. If the value
@@ -2015,7 +2015,7 @@ class Feature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are –105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
         profileNormal
             A Boolean specifying whether to keep the profile normal same as original or varying
@@ -2097,7 +2097,7 @@ class Feature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are –105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
         flipExtrudeDirection
             A Boolean specifying whether to override the direction of feature creation. If the value
@@ -2349,7 +2349,7 @@ class Feature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are –105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -105 ≤≤ **pitch** ≤≤ 105. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
         profileNormal
             A Boolean specifying whether to keep the profile normal same as original or varying

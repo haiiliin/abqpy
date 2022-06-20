@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class UniaxialTestData:
-    """The UniaxialTestData object provides uniaxial test data (compression and/or tension).
+    r"""The UniaxialTestData object provides uniaxial test data (compression and/or tension).
 
     Notes
     -----
@@ -27,18 +27,18 @@ class UniaxialTestData:
 
     - For a hyperelastic material model, the table data specify the following:
     
-        - Nominal stress, TU.
-        - Nominal strain, ϵU.
+        - Nominal stress, :math:`T_{U}`.
+        - Nominal strain, :math:`\epsilon_{U}`.
     - For a hyperfoam material model, the table data specify the following:
     
-        - Nominal stress, TL.
-        - Nominal strain, ϵU.
-        - Nominal lateral strain, ϵ2=ϵ3. The default value is 0.
+        - Nominal stress, :math:`T_{L}`.
+        - Nominal strain, :math:`\epsilon_{U}`.
+        - Nominal lateral strain, :math:`\epsilon_{2}=\epsilon_{3}`. The default value is 0 .
     - For a low-density foam material model, the table data specify the following:
     
-        - Nominal stress, TU.
-        - Nominal strain, ϵU.
-        - Nominal strain rate, ϵU˙.
+        - Nominal stress, :math:`T_{U}`.
+        - Nominal strain, :math:`\epsilon_{U}`.
+        - Nominal strain rate, :math:`\dot{\epsilon_{U}}`.
 
     The corresponding analysis keywords are:
 

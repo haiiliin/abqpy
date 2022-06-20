@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class Hypoelastic:
-    """The Hypoelastic object specifies hypoelastic material properties.
+    r"""The Hypoelastic object specifies hypoelastic material properties.
 
     Notes
     -----
@@ -17,11 +17,11 @@ class Hypoelastic:
 
     The table data for this object are:
 
-    - Instantaneous Young's modulus, E.
-    - Instantaneous Poisson's ratio, ν.
-    - First strain invariant, I1.
-    - Second strain invariant, I2.
-    - Third strain invariant, I3.
+    - Instantaneous Young's modulus, :math:`E`.
+    - Instantaneous Poisson's ratio, :math:`\nu`.
+    - First strain invariant, :math:`I_1`.
+    - Second strain invariant, :math:`I_2`.
+    - Third strain invariant, :math:`I_3`.
 
     The corresponding analysis keywords are:
 

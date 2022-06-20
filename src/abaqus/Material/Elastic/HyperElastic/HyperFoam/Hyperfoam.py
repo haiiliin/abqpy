@@ -7,7 +7,7 @@ from ....TestData.VolumetricTestData import VolumetricTestData
 
 
 class Hyperfoam:
-    """The Hyperfoam object specifies elastic properties for a hyperelastic foam.
+    r"""The Hyperfoam object specifies elastic properties for a hyperelastic foam.
 
     Notes
     -----
@@ -23,10 +23,10 @@ class Hyperfoam:
     The table data for this object are:
     The items in the table data specify the following for values of nn:
 
-    - μi and αi for i from 1 to n.
-    - νi.
-    - Temperature, if the data depend on temperature. Temperature dependence is not allowed for 4 ≤n≤ 6 in an
-    Abaqus/Explicit analysis.
+    - :math:`\mu_i` and :math:`\alpha_i` for :math:`i` from 1 to :math:`n`.
+    - :math:nu_i`.
+    - Temperature, if the data depend on temperature. Temperature dependence is not allowed for :math:`4\le n\le 6` in an
+      Abaqus/Explicit analysis.
 
     The corresponding analysis keywords are:
 

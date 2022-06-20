@@ -4,7 +4,7 @@ from .FailStress import FailStress
 
 
 class Elastic:
-    """The Elastic object specifies elastic material properties.
+    r"""The Elastic object specifies elastic material properties.
 
     Notes
     -----
@@ -21,110 +21,117 @@ class Elastic:
 
     - If **type**=ISOTROPIC, the table data specify the following:
     
-        - The Young's modulus, E.
-        - The Poisson's ratio, v.
+        - The Young's modulus, :math:`E`.
+        - The Poisson's ratio, :math:`\nu`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
+        
     - If **type**=SHEAR, the table data specify the following:
     
-        - The shear modulus,G.
+        - The shear modulus, :math:`G`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
+        
     - If **type**=ENGINEERING_CONSTANTS, the table data specify the following:
     
-        - E1.
-        - E2.
-        - E3.
-        - v12.
-        - v13.
-        - v23.
-        - G12.
-        - G13.
-        - G23.
+        - :math:`E_{1}`.
+        - :math:`E_{2}`.
+        - :math:`E_{3}`.
+        - :math:`\nu_{12}`.
+        - :math:`\nu_{13}`.
+        - :math:`\nu_{23}`.
+        - :math:`G_{12}`.
+        - :math:`G_{13}`.
+        - :math:`G_{23}`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
+        
     - If **type**=LAMINA, the table data specify the following:
     
-        - E1.
-        - E2.
-        - v12.
-        - G12.
-        - G13. This shear modulus is needed to define transverse shear behavior in shells.
-        - G23. This shear modulus is needed to define transverse shear behavior in shells.
+        - :math:`E_{1}`.
+        - :math:`E_{2}`.
+        - :math:`\nu_{12}`.
+        - :math:`G_{12}`.
+        - :math:`G_{13}`. This shear modulus is needed to define transverse shear behavior in shells.
+        - :math:`G_{23}`. This shear modulus is needed to define transverse shear behavior in shells.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
+        
     - If **type**=ORTHOTROPIC, the table data specify the following:
     
-        - D1111.
-        - D1122.
-        - D2222.
-        - D1133.
-        - D2233.
-        - D3333.
-        - D1212.
-        - D1313.
-        - D2323.
+        - :math:`D_{1111}`
+        - :math:`D_{1122}`
+        - :math:`D_{2222}`
+        - :math:`D_{1133}`
+        - :math:`D_{2233}`
+        - :math:`D_{3333}`
+        - :math:`D_{1212}`
+        - :math:`D_{1313}`
+        - :math:`D_{2323}`
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
+        
     - If **type**=ANISOTROPIC, the table data specify the following:
     
-        - D1111.
-        - D1122.
-        - D2222.
-        - D1133.
-        - D2233.
-        - D3333.
-        - D1112.
-        - D2212.
-        - D3312.
-        - D1212.
-        - D1113.
-        - D2213.
-        - D3313.
-        - D1213.
-        - D1313.
-        - D1123.
-        - D2223.
-        - D3323.
-        - D1223.
-        - D1323.
-        - D2323.
+        - :math:`D_{1111}`.
+        - :math:`D_{1122}`.
+        - :math:`D_{2222}`.
+        - :math:`D_{1133}`.
+        - :math:`D_{2233}`.
+        - :math:`D_{3333}`.
+        - :math:`D_{1112}`.
+        - :math:`D_{2212}`.
+        - :math:`D_{3312}`.
+        - :math:`D_{1212}`.
+        - :math:`D_{1113}`.
+        - :math:`D_{2213}`.
+        - :math:`D_{3313}`.
+        - :math:`D_{1213}`.
+        - :math:`D_{1313}`.
+        - :math:`D_{1123}`.
+        - :math:`D_{2223}`.
+        - :math:`D_{3323}`.
+        - :math:`D_{1223}`.
+        - :math:`D_{1323}`.
+        - :math:`D_{2323}`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
+        
     - If **type**=TRACTION, the table data specify the following:
     
-        - EE for warping elements; Enn for cohesive elements.
-        - G1 for warping elements; Ess for cohesive elements.
-        - G2 for warping elements; Ett for cohesive elements.
+        - :math:`E` for warping elements; $E_{nn} for cohesive elements.
+        - :math:`G_1` for warping elements; $E_{ss} for cohesive elements.
+        - :math:`G_2` for warping elements; $E_{tt} for cohesive elements.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
+        
     - If **type**=BILAMINA, the table data specify the following:
     
-        - E1+.
-        - E2+.
-        - v12+.
-        - G12.
-        - E1-.
-        - E2-.
-        - v112-.
+        - :math:`E_{n n}`.
+        - :math:`E_{s s}`.
+        - :math:`E_{t t}`.
+        - :math:`E_{n s}`.
+        - :math:`E_{n t}`.
+        - :math:`E_{s t}`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
+        
     - If **type**=SHORT_FIBER, there is no table data.
 
     The corresponding analysis keywords are:

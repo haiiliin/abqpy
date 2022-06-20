@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class GasketMembraneElastic:
-    """The GasketMembraneElastic object defines the elastic parameters for the membrane shear
+    r"""The GasketMembraneElastic object defines the elastic parameters for the membrane shear
     behavior of a gasket.
 
     Notes
@@ -17,12 +17,13 @@ class GasketMembraneElastic:
         session.odbs[name].materials[name].gasketMembraneElastic
 
     The table data for this object are:
-        - Young's modulus, E.
-        - Poisson's ratio, ν.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+    
+    - Young's modulus, :math:`E`.
+    - Poisson's ratio, :math:`\nu`.
+    - Temperature, if the data depend on temperature.
+    - Value of the first field variable, if the data depend on field variables.
+    - Value of the second field variable.
+    - Etc.
 
     The corresponding analysis keywords are:
 

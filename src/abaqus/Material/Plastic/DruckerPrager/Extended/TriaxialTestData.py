@@ -14,8 +14,8 @@ class TriaxialTestData:
 
     The table data for this object are:
 
-    - Sign and magnitude of confining stress, σ1=σ2.
-    - Sign and magnitude of the stress in loading direction, σ3.
+    - Sign and magnitude of confining stress, :math:`\sigma_1=\sigma_2`.
+    - Sign and magnitude of the stress in loading direction, :math:`\sigma_3`.
 
     The corresponding analysis keywords are:
 

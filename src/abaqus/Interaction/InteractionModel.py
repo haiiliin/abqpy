@@ -2035,11 +2035,11 @@ class InteractionModel(
             **propagationModel**=UNDEX_CHARGE.
         relativeStepControl
             A Float specifying the relative step size control parameter. The default value is
-            1×10–11.This argument is valid only when **definition**=SPHERICAL and
+            1×10-11.This argument is valid only when **definition**=SPHERICAL and
             **propagationModel**=UNDEX_CHARGE.
         absoluteStepControl
             A Float specifying the absolute step size control parameter. The default value is
-            1×10–11.This argument is valid only when **definition**=SPHERICAL and
+            1×10-11.This argument is valid only when **definition**=SPHERICAL and
             **propagationModel**=UNDEX_CHARGE.
         stepControlExponent
             A Float specifying the step size control exponent. The default value is 0.2.This
@@ -2485,7 +2485,7 @@ class InteractionModel(
             A Float specifying the ratio of the allowable penetration to the characteristic contact
             surface face dimension. The float values represent percentages (e.g.: 0.001=0.1%). Only
             contact interactions defined with augmented Lagrangian surface behavior will be affected
-            by this argument. The default value is 10–3.The **relativePenetrationTolerance** argument
+            by this argument. The default value is 10-3.The **relativePenetrationTolerance** argument
             applies only when **penetrationTolChoice**=RELATIVE. The **relativePenetrationTolerance**
             and **absolutePenetrationTolerance** arguments are mutually exclusive.
         absolutePenetrationTolerance

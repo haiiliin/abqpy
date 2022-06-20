@@ -1,5 +1,5 @@
 class SaturationDependence:
-    """The SaturationDependence object specifies the dependence of the permeability of a
+    r"""The SaturationDependence object specifies the dependence of the permeability of a
     material on the saturation of the wetting liquid.
 
     Notes
@@ -15,8 +15,8 @@ class SaturationDependence:
 
     The table data for this object are:
 
-    - ks. (Dimensionless.)
-    - Saturation, s. (Dimensionless.)
+    - :math:`k_{s}`. (Dimensionless.)
+    - Saturation, :math:`\boldsymbol{S}`. (Dimensionless.)
 
     The corresponding analysis keywords are:
 

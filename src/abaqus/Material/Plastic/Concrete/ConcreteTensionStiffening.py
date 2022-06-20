@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class ConcreteTensionStiffening:
-    """The ConcreteTensionStiffening object specifies hardening for the concrete damaged
+    r"""The ConcreteTensionStiffening object specifies hardening for the concrete damaged
     plasticity model.
 
     Notes
@@ -20,27 +20,27 @@ class ConcreteTensionStiffening:
 
     - If **type**=STRAIN, the table data specify the following:
     
-        - Remaining direct stress after cracking, σt.
-        - Direct cracking strain, ϵckt.
-        - Direct cracking strain rate, ˙ϵckt.
+        - Remaining direct stress after cracking, :math:`\sigma_{t}`.
+        - Direct cracking strain, :math:`\epsilon_{t}^{c k}`.
+        - Direct cracking strain rate, :math:`\dot{\epsilon}_{t}^{c k}`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **type**=DISPLACEMENT, the table data specify the following:
     
-        - Remaining direct stress after cracking, σt.
-        - Direct cracking displacement, uckt.
-        - Direct cracking displacement rate, ˙uckt
+        - Remaining direct stress after cracking, :math:`\sigma_{t}`.
+        - Direct cracking displacement, :math:`u_{t}^{c k}`.
+        - Direct cracking displacement rate, :math:`\dot{u}_{t}^{c k}`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **type**=GFI, the table data specify the following:
     
-        - Failure stress, σt0σt⁢0.
-        - Fracture energy, Gf.
-        - Direct cracking displacement rate, ˙uckt.
+        - Failure stress, :math:`\sigma_{t 0}`
+        - Fracture energy, :math:`G_{f}`.
+        - Direct cracking displacement rate, :math:`\dot{u}_{t}^{c k}`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
@@ -67,10 +67,7 @@ class ConcreteTensionStiffening:
             
             .. code-block:: python
             
-                mdb.models[name].materials[name].concreteDamagedPlasticity\
-            - .ConcreteTensionStiffening
-                session.odbs[name].materials[name].concreteDamagedPlasticity\
-            - .ConcreteTensionStiffening
+                mdb.models[name].materials[name].concreteDamagedPlasticity.ConcreteTensionStiffening.ConcreteTensionStiffeningials[name].concreteDamagedPlasticity.ConcreteTensionStiffening
         
         Parameters
         ----------

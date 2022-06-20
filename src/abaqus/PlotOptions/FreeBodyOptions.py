@@ -118,9 +118,9 @@ class FreeBodyOptions:
             A Float specifying the size of the moment symbol as a percentage of the screen or model.
             The default value is 10.0.
         thresholdF
-            A Float specifying the force threshold value. The default value is 10–6.
+            A Float specifying the force threshold value. The default value is 10-6.
         thresholdM
-            A Float specifying the moment threshold value. The default value is 10–6.
+            A Float specifying the moment threshold value. The default value is 10-6.
         drawLabelF
             A Boolean specifying whether to draw force labels. The default value is ON.
         drawLabelM

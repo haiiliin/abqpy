@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class CyclicHardening:
-    """The CyclicHardening object defines the evolution of the elastic domain for the nonlinear
+    r"""The CyclicHardening object defines the evolution of the elastic domain for the nonlinear
     isotropic/kinematic hardening model.
 
     Notes
@@ -19,7 +19,7 @@ class CyclicHardening:
     The table data for this object are:
 
     - Equivalent stress.
-    - Q∞Q(only if **parameters**=ON).
+    - :math:`Q_{\infty}`(only if **parameters**=ON).
     - Hardening parameter (only if **parameters**=ON).
     - Temperature, if the data depend on temperature.
     - Value of the first field variable, if the data depend on field variables.

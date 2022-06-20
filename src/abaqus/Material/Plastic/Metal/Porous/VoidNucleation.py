@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class VoidNucleation:
-    """The VoidNucleation object defines the nucleation of voids in a porous material.
+    r"""The VoidNucleation object defines the nucleation of voids in a porous material.
 
     Notes
     -----
@@ -17,9 +17,9 @@ class VoidNucleation:
 
     The table data for this object are:
 
-    - εN, the mean value of the nucleation-strain normal distribution.
-    - sN, the standard deviation of the nucleation-strain normal distribution.
-    - fN, the volume fraction of nucleating voids.
+    - :math:`\varepsilon_{N}`, the mean value of the nucleation-strain normal distribution.
+    - :math:`s_{N}`, the standard deviation of the nucleation-strain normal distribution.
+    - :math:`f_{N}`, the volume fraction of nucleating voids.
     - Temperature, if the data depend on temperature.
     - Value of the first field variable, if the data depend on field variables.
     - Value of the second field variable.
@@ -42,8 +42,7 @@ class VoidNucleation:
             .. code-block:: python
             
                 mdb.models[name].materials[name].porousMetalPlasticity.VoidNucleation
-                session.odbs[name].materials[name].porousMetalPlasticity\
-            - .VoidNucleation
+                session.odbs[name].materials[name].porousMetalPlasticity.VoidNucleation
         
         Parameters
         ----------

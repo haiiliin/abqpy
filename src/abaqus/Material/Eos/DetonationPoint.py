@@ -15,10 +15,11 @@ class DetonationPoint:
         session.odbs[name].materials[name].eos.detonationPoint
 
     The table data for this object are:
-        - X value for coordinate of detonation point.
-        - Y value for coordinate of detonation point.
-        - Z value for coordinate of detonation point.
-        - Detonation delay time.
+    
+    - X value for coordinate of detonation point.
+    - Y value for coordinate of detonation point.
+    - Z value for coordinate of detonation point.
+    - Detonation delay time.
 
     The corresponding analysis keywords are:
 

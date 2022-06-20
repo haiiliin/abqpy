@@ -6,7 +6,7 @@ from ...Metal.RateDependent.RateDependent import RateDependent
 
 
 class DruckerPrager:
-    """The DruckerPrager object specifies the extended Drucker-Prager plasticity model.
+    r"""The DruckerPrager object specifies the extended Drucker-Prager plasticity model.
 
     Notes
     -----
@@ -23,26 +23,30 @@ class DruckerPrager:
 
     - If **shearCriterion**=LINEAR (the only option allowed in an Abaqus/Explicit analysis), the table data specify the following:
     
-        - Material angle of friction, β, in the p–t plane. Give the value in degrees.
-        - K, the ratio of the flow stress in triaxial tension to the flow stress in triaxial compression. 0.778≤K≤1.0. 
-          If the default value of 0.0 is accepted, a value of 1.0 is assumed.
-        - Dilation angle, ψ, in the p–t plane. Give the value in degrees.
+        - Material angle of friction, :math:`\beta`, in the :math:`p-t` plane. Give the value in degrees.
+        - :math:`K`, the ratio of the flow stress in triaxial tension to the flow stress in triaxial 
+          compression. :math:`0.778 \leq K \leq 1.0`. If the default value of :math:`0.0` is accepted, a 
+          value of :math:`1.0` is assumed.
+        - Dilation angle, :math:`\psi`, in the :math:`p-t` plane. Give the value in degrees.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **shearCriterion**=HYPERBOLIC, the table data specify the following:
     
-        - Material angle of friction, β, at high confining pressure in the p–q plane. Give the value in degrees.
-        - Initial hydrostatic tension strength, pt|0.
-        - Dilation angle, ψ, at high confining pressure in the p–q plane. Give the value in degrees.
+        - Material angle of friction, :math:`\beta`, at high confining pressure in the :math:`p-q` plane. 
+          Give the value in degrees.
+        - Initial hydrostatic tension strength, :math:`\left.p_{t}\right|_{0}`.
+        - Dilation angle, :math:`\psi`, at high confining pressure in the :math:`p-q` plane. Give the value 
+          in degrees.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **shearCriterion**=EXPONENTIAL, the table data specify the following:
     
-        - Dilation angle, ψ, at high confining pressure in the p–q plane. Give the value in degrees.
+        - Dilation angle, :math:`\psi`, at high confining pressure in the :math:`p-q` plane. Give 
+          the value in degrees.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
@@ -74,7 +78,7 @@ class DruckerPrager:
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):
-        """This method creates a DruckerPrager object.
+        r"""This method creates a DruckerPrager object.
 
         Notes
         -----
@@ -95,7 +99,7 @@ class DruckerPrager:
             Abaqus/Standard analyses. Only the linear Drucker-Prager model is available in
             Abaqus/Explicit analyses.
         eccentricity
-            A Float specifying the flow potential eccentricity, ϵϵ, a small positive number that
+            A Float specifying the flow potential eccentricity, :math:`\epsilon`, a small positive number that
             defines the rate at which the hyperbolic flow potential approaches its asymptote. The
             default value is 0.1.This argument applies only to Abaqus/Standard analyses.
         testData

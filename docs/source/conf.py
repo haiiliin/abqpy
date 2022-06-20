@@ -139,9 +139,9 @@ latex_show_pagerefs = True
 
 # Control whether to display URL addresses. This is very useful for printed
 # copies of the manual. The setting can have the following values:
-# 'no' – do not display URLs (default)
-# 'footnote' – display URLs in footnotes
-# 'inline' – display URLs inline in parentheses
+# 'no' - do not display URLs (default)
+# 'footnote' - display URLs in footnotes
+# 'inline' - display URLs inline in parentheses
 latex_show_urls = 'footnote'
 
 # If given, this must be the name of an image file (relative to the

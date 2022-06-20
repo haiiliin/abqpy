@@ -19,9 +19,9 @@ class PorousMetalPlasticity:
 
     The table data for this object are:
 
-    - q1.
-    - q2.
-    - q3.
+    - :math:`q_1`.
+    - :math:`q_2`.
+    - :math:`q_3`.
     - Temperature, if the data depend on temperature.
     - Value of the first field variable, if the data depend on field variables.
     - Value of the second field variable.

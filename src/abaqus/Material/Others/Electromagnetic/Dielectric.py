@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class Dielectric:
-    """The Dielectric object specifies dielectric material properties.
+    r"""The Dielectric object specifies dielectric material properties.
 
     Notes
     -----
@@ -27,9 +27,9 @@ class Dielectric:
         - Etc.
     - If **type**=ORTHOTROPIC, the table data specify the following:
     
-        - Dφ11.
-        - Dφ2φ.
-        - Dφ3φ.
+        - :math:`D_{11}^{\varphi}`
+        - :math:`D_{22}^{\varphi}`.
+        - :math:`D_{33}^{\varphi}`
         - Frequency, if the data depend on frequency.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
@@ -37,12 +37,12 @@ class Dielectric:
         - Etc.
     - If **type**=ANISOTROPIC, the table data specify the following:
     
-        - Dφ11.
-        - Dφ12.
-        - Dφ22.
-        - Dφ13.
-        - Dφ23.
-        - Dφ33.
+        - :math:`D_{11}^{\varphi}`
+        - :math:`D_{12}^{\varphi}`
+        . :math:`D_{22}^{\varphi}`
+        - :math:`D_{13}^{\varphi}`
+        - :math:`D_{23}^{\varphi}`
+        - :math:`D_{33}^{\varphi}`
         - Frequency, if the data depend on frequency.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.

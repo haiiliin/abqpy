@@ -80,11 +80,11 @@ class InertiaRelief(Load):
         u3
             A Boolean specifying the 3-direction as a free direction.
         ur1
-            A Boolean specifying the rotation about the 1–direction as a free direction.
+            A Boolean specifying the rotation about the 1-direction as a free direction.
         ur2
-            A Boolean specifying the rotation about the 2–direction as a free direction.
+            A Boolean specifying the rotation about the 2-direction as a free direction.
         ur3
-            A Boolean specifying the rotation about the 3–direction as a free direction.
+            A Boolean specifying the rotation about the 3-direction as a free direction.
         referencePoint
             A sequence of Floats specifying the **X**, **Y** and **Z**-coordinates of a fixed rotation
             point or a point on the rotation axis or a point on the symmetry line, about which
@@ -129,11 +129,11 @@ class InertiaRelief(Load):
         u3
             A Boolean specifying the 3-direction as a free direction.
         ur1
-            A Boolean specifying the rotation about the 1–direction as a free direction.
+            A Boolean specifying the rotation about the 1-direction as a free direction.
         ur2
-            A Boolean specifying the rotation about the 2–direction as a free direction.
+            A Boolean specifying the rotation about the 2-direction as a free direction.
         ur3
-            A Boolean specifying the rotation about the 3–direction as a free direction.
+            A Boolean specifying the rotation about the 3-direction as a free direction.
         referencePoint
             A sequence of Floats specifying the **X**, **Y** and **Z**-coordinates of a fixed rotation
             point or a point on the rotation axis or a point on the symmetry line, about which
@@ -173,11 +173,11 @@ class InertiaRelief(Load):
         u3
             A Boolean specifying the 3-direction as a free direction.
         ur1
-            A Boolean specifying the rotation about the 1–direction as a free direction.
+            A Boolean specifying the rotation about the 1-direction as a free direction.
         ur2
-            A Boolean specifying the rotation about the 2–direction as a free direction.
+            A Boolean specifying the rotation about the 2-direction as a free direction.
         ur3
-            A Boolean specifying the rotation about the 3–direction as a free direction.
+            A Boolean specifying the rotation about the 3-direction as a free direction.
         referencePoint
             A sequence of Floats specifying the point about which rotations are defined. The point
             can be specified only for certain combinations of free directions. The **referencePoint**

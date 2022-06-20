@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class Conductivity:
-    """The Conductivity object specifies thermal conductivity.
+    r"""The Conductivity object specifies thermal conductivity.
 
     Notes
     -----
@@ -19,28 +19,28 @@ class Conductivity:
 
     - If **type**=ISOTROPIC, the table data specify the following:
     
-        - Conductivity, k.
+        - Conductivity, :math:`k`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **type**=ORTHOTROPIC, the table data specify the following:
     
-        - k11.
-        - k22.
-        - k33.
+        - :math:`k_{11}`
+        - :math:`k_{22}`.
+        - :math:`k_{33}`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **type**=ANISOTROPIC, the table data specify the following:
     
-        - k11.
-        - k12.
-        - k22.
-        - k13.
-        - k23.
-        - k33.
+        - :math:`k_{11}`.
+        - :math:`k_{12}`.
+        - :math:`k_{22}`.
+        - :math:`k_{13}`.
+        - :math:`k_{23}`.
+        - :math:`k_{33}`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.

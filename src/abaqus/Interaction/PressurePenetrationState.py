@@ -15,7 +15,7 @@ class PressurePenetrationState(InteractionState):
     penetrationTime: float
         A Float specifying the fraction of the current step time over which the fluid pressure
         on newly penetrated contact surface segments is ramped up to the current magnitude. The
-        default value is 10–3.
+        default value is 10-3.
     penetrationTimeState: SymbolicConstant
         A SymbolicConstant specifying the propagation state of the **penetrationTime** member.
         Possible values are UNSET, SET, UNCHANGED, and FREED.
@@ -66,7 +66,7 @@ class PressurePenetrationState(InteractionState):
 
     # A Float specifying the fraction of the current step time over which the fluid pressure
     # on newly penetrated contact surface segments is ramped up to the current magnitude. The
-    # default value is 10–3.
+    # default value is 10-3.
     penetrationTime: float = None
 
     # A SymbolicConstant specifying the propagation state of the **penetrationTime** member.

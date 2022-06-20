@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class Expansion:
-    """The Expansion object specifies thermal expansion.
+    r"""The Expansion object specifies thermal expansion.
 
     Notes
     -----
@@ -19,28 +19,28 @@ class Expansion:
 
     - If **type**=ISOTROPIC, the table data specify the following:
     
-        - α in Abaqus/Standard or Abaqus/Explicit analysis.
+        - :math:`\alpha` in Abaqus/Standard or Abaqus/Explicit analysis.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **type**=ORTHOTROPIC, the table data specify the following:
     
-        - α11.
-        - α22.
-        - α33.
+        - :math:`\alpha_{11}`.
+        - :math:`\alpha_{22}`.
+        - :math:`\alpha_{33}`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **type**=ANISOTROPIC, the table data specify the following:
     
-        - α11.
-        - α22.
-        - α33. (Not used for plane stress case.)
-        - α12.
-        - α13.
-        - α23.
+        - :math:`\alpha_{11}`.
+        - :math:`\alpha_{22}`.
+        - :math:`\alpha_{33}`. (Not used for plane stress case.)
+        - :math:`\alpha_{12}`.
+        - :math:`\alpha_{13}`.
+        - :math:`\alpha_{23}`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
@@ -61,7 +61,7 @@ class Expansion:
         dependencies: int = 0,
         table: tuple = (),
     ):
-        """This method creates an Expansion object.
+        r"""This method creates an Expansion object.
 
         Notes
         -----
@@ -81,7 +81,7 @@ class Expansion:
             A Boolean specifying whether a user subroutine is used to define the increments of
             thermal strain. The default value is OFF.
         zero
-            A Float specifying the value of θ0 if the thermal expansion is temperature-dependent or
+            A Float specifying the value of :math:`\theta_0` if the thermal expansion is temperature-dependent or
             field-variable-dependent. The default value is 0.0.
         temperatureDependency
             A Boolean specifying whether the data depend on temperature. The default value is OFF.

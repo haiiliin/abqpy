@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class FailStress:
-    """The FailStress object defines parameters for stress-based failure measures.
+    r"""The FailStress object defines parameters for stress-based failure measures.
 
     Notes
     -----
@@ -16,17 +16,19 @@ class FailStress:
         session.odbs[name].materials[name].elastic.failStress
 
     The table data for this object are:
-        - Tensile stress limit in fiber direction, Xt.
-        - Compressive stress limit in fiber direction, Xc.
-        - Tensile stress limit in transverse direction, Yt.
-        - Compressive stress limit in transverse direction, Yc.
-        - Shear strength in the X–Y plane, S.
-        - Cross product term coefficient, **f** (-1.0≤f*≤1.0). The default value is zero.
-        - Biaxial stress limit, σb⁢i⁢a⁢x.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+    
+    - Tensile stress limit in fiber direction, :math:`X_{t}`.
+    - Compressive stress limit in fiber direction, :math:`X_{c}`.
+    - Tensile stress limit in transverse direction, :math:`Y_{t}`
+    - Compressive stress limit in transverse direction, :math:`Y_{c}`.
+    - Shear strength in the :math:`X_{-} Y` plane, :math:`S`.
+    - Cross product term coefficient, :math:`\left.f_{(}^{*}-1.0 \leq f^{*} \leq 1.0\right)`. 
+      The default value is zero.
+    - Biaxial stress limit, :math:`\sigma_{b i a x}`.
+    - Temperature, if the data depend on temperature.
+    - Value of the first field variable, if the data depend on field variables.
+    - Value of the second field variable.
+    - Etc.
 
     The corresponding analysis keywords are:
 

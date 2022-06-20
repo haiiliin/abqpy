@@ -21,25 +21,25 @@ class Permeability:
 
     - If **type**=ISOTROPIC, the table data specify the following:
     
-        - k.
-        - Void ratio, e.
+        - :math:`k`.
+        - Void ratio, :math:`e`.
         - Temperature, if the data depend on temperature.
     - If **type**=ORTHOTROPIC, the table data specify the following:
     
-        - k11.
-        - k22.
-        - k33.
-        - Void ratio, e.
+        - :math:`k_{11}`.
+        - :math:`k_{22}`.
+        - :math:`k_{33}`.
+        - Void ratio, :math:`e`.
         - Temperature, if the data depend on temperature.
     - If **type**=ANISOTROPIC, the table data specify the following:
     
-        - k11.
-        - k12.
-        - k22.
-        - k13.
-        - k23.
-        - k33.
-        - Void ratio, e.
+        - :math:`k_{11}`.
+        - :math:`k_{12}`.
+        - :math:`k_{22}`.
+        - :math:`k_{13}`.
+        - :math:`k_{23}`.
+        - :math:`k_{33}`.
+        - Void ratio, :math:`e`.
         - Temperature, if the data depend on temperature.
 
     The corresponding analysis keywords are:
@@ -64,7 +64,7 @@ class Permeability:
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):
-        """This method creates a Permeability object.
+        r"""This method creates a Permeability object.
 
         Notes
         -----
@@ -78,9 +78,9 @@ class Permeability:
         Parameters
         ----------
         specificWeight
-            A Float specifying the specific weight of the wetting liquid, γwγw.
+            A Float specifying the specific weight of the wetting liquid, :math:`\gamma_w`.
         inertialDragCoefficient
-            A Float specifying The inertial drag coefficient of the wetting liquid, γwγw.
+            A Float specifying The inertial drag coefficient of the wetting liquid, :math:`\gamma_w`.
         table
             A sequence of sequences of Floats specifying the items described below.
         type

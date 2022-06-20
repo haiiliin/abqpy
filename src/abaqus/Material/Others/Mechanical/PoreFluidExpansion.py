@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class PoreFluidExpansion:
-    """The PoreFluidExpansion object specifies the thermal expansion coefficient for a
+    r"""The PoreFluidExpansion object specifies the thermal expansion coefficient for a
     hydraulic fluid.
 
     Notes
@@ -18,7 +18,7 @@ class PoreFluidExpansion:
 
     The table data for this object are:
 
-    - Mean coefficient of thermal expansion, α.
+    - Mean coefficient of thermal expansion, :math:`\theta_0`.
     - Temperature, if the data depend on temperature.
     - Value of the first field variable, if the data depend on field variables.
     - Value of the second field variable.

@@ -4,7 +4,7 @@ from .SoretEffect import SoretEffect
 
 
 class Diffusivity:
-    """The Diffusivity object specifies mass diffusivity.
+    r"""The Diffusivity object specifies mass diffusivity.
 
     Notes
     -----
@@ -21,31 +21,31 @@ class Diffusivity:
 
     - If **type**=ISOTROPIC, the table data specify the following:
     
-        - Diffusivity, D.
-        - Concentration, c.
+        - Diffusivity, :math:`D`.
+        - Concentration, :math:`c`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **type**=ORTHOTROPIC, the table data specify the following:
     
-        - D11.
-        - D22.
-        - D33.
-        - Concentration, c.
+        - :math:`D_{11}`.
+        - :math:`D_{22}`.
+        - :math:`D_{33}`.
+        - Concentration, :math:`c`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **type**=ANISOTROPIC, the table data specify the following:
     
-        - D11.
-        - D12.
-        - D22.
-        - D13.
-        - D23.
-        - D33.
-        - Concentration, c.
+        - :math:`D_{11}`.
+        - :math:`D_{12}`.
+        - :math:`D_{22}`.
+        - :math:`D_{13}`.
+        - :math:`D_{23}`.
+        - :math:`D_{33}`.
+        - Concentration, :math:`c`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.

@@ -63,7 +63,7 @@ class IntegratedOutputSection:
             system. The default value is None.
         projectOrientation
             A Boolean specifying that the coordinate system be projected onto the **surface** such
-            that the 1–axis is normal to the **surface**. Projection onto a planar **surface** is such
+            that the 1-axis is normal to the **surface**. Projection onto a planar **surface** is such
             that the 1-axis is normal to the surface, and a projection onto a nonplanar **surface** is
             such that a least-squares fit surface will be used. The default value is OFF.
 
@@ -110,7 +110,7 @@ class IntegratedOutputSection:
             system. The default value is None.
         projectOrientation
             A Boolean specifying that the coordinate system be projected onto the **surface** such
-            that the 1–axis is normal to the **surface**. Projection onto a planar **surface** is such
+            that the 1-axis is normal to the **surface**. Projection onto a planar **surface** is such
             that the 1-axis is normal to the surface, and a projection onto a nonplanar **surface** is
             such that a least-squares fit surface will be used. The default value is OFF.
         """

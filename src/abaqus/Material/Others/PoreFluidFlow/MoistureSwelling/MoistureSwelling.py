@@ -2,7 +2,7 @@ from ....Ratios import Ratios
 
 
 class MoistureSwelling:
-    """The MoistureSwelling object defines moisture-driven swelling.
+    r"""The MoistureSwelling object defines moisture-driven swelling.
 
     Notes
     -----
@@ -17,8 +17,8 @@ class MoistureSwelling:
 
     The table data for this object are:
 
-    - Volumetric moisture swelling strain, εm⁢s.
-    - Saturation, s. This value must lie in the range 0≤s≤1.0.
+    - Volumetric moisture swelling strain, :math:`\varepsilon^{m s}`.
+    - Saturation, :math:`s$. This value must lie in the range $0.0 \leq s \leq 1.0`.
 
     The corresponding analysis keywords are:
 

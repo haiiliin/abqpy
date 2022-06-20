@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class PressureEffect:
-    """The PressureEffect object defines equivalent pressure stress driven mass diffusion.
+    r"""The PressureEffect object defines equivalent pressure stress driven mass diffusion.
 
     Notes
     -----
@@ -17,7 +17,7 @@ class PressureEffect:
 
     The table data for this object are:
 
-    - Pressure stress factor, κp.
+    - Pressure stress factor, :math:`\kappa_p`.
     - Concentration.
     - Temperature, if the data depend on temperature.
     - Value of the first field variable, if the data depend on field variables.

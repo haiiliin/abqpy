@@ -8,7 +8,7 @@ from .Potential import Potential
 
 
 class Plastic:
-    """The Plastic object specifies a metal plasticity model.
+    r"""The Plastic object specifies a metal plasticity model.
 
     Notes
     -----
@@ -27,7 +27,7 @@ class Plastic:
     
         - Yield stress.
         - Plastic strain.
-        - Equivalent Plastic strain rate, ε¯˙p⁢l.
+        - Equivalent plastic strain rate, :math:`\dot{\bar{\varepsilon}} p l`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
@@ -44,10 +44,10 @@ class Plastic:
     - If **hardening**=COMBINED and **dataType**=PARAMETERS, the table data specify the following:
     
         - Yield stress at zero Plastic strain.
-        - The first kinematic hardening parameter, C1.
-        - The first kinematic hardening parameter, γ1.
-        - If applicable, the second kinematic hardening parameter, C2.
-        - If applicable, the second kinematic hardening parameter, γ2.
+        - The first kinematic hardening parameter, :math:`C_{1}`.
+        - The first kinematic hardening parameter, :math:`\gamma_{1}`.
+        - If applicable, the second kinematic hardening parameter, :math:`C_{2}`.
+        - If applicable, the second kinematic hardening parameter, :math:`\gamma_{2}`.
         - Etc.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
@@ -60,10 +60,10 @@ class Plastic:
         - Temperature, if the data depend on temperature.
     - If **hardening**=JOHNSON_COOK, the table data specify the following:
     
-        - A.
-        - B.
-        - n.
-        - m.
+        - :math:`A`.
+        - :math:`B`.
+        - :math:`\mathrm{n}`.
+        - :math:`\mathrm{m}`.
         - Melting temperature.
         - Transition temperature.
     - If **hardening**=USER, the table data specify the following:

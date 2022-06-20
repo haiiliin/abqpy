@@ -27,10 +27,7 @@ class PorousFailureCriteria:
             
             .. code-block:: python
             
-                mdb.models[name].materials[name].porousMetalPlasticity\
-            - .PorousFailureCriteria
-                session.odbs[name].materials[name].porousMetalPlasticity\
-            - .PorousFailureCriteria
+                mdb.models[name].materials[name].porousMetalPlasticity.PorousFailureCriteria.PorousFailureCriteriaaterials[name].porousMetalPlasticity.PorousFailureCriteria
         
         Parameters
         ----------

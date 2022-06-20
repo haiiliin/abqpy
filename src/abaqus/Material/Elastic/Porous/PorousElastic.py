@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class PorousElastic:
-    """The PorousElastic object specifies elastic material properties for porous materials.
+    r"""The PorousElastic object specifies elastic material properties for porous materials.
 
     Notes
     -----
@@ -17,20 +17,22 @@ class PorousElastic:
 
     The table data for this object are:
 
-    - If **shear**=G, the table data specify the following:
+    - If **shear**=:math:`G`, the table data specify the following:
     
-        - The logarithmic bulk modulus, κ. (Dimensionless.)
-        - The shear modulus, G.
-        - The elastic tensile limit, peltpte⁢l. (This value cannot be negative.)
+        - The logarithmic bulk modulus, :math:`\kappa`. (Dimensionless.)
+        - The shear modulus, :math:`G`.
+        - The elastic tensile limit, :math:`p_{t}^{e l}`.
+          (This value cannot be negative.)
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
+        
     - If **shear**=POISSON, the table data specify the following:
     
-        - The logarithmic bulk modulus, κ. (Dimensionless.)
-        - The Poisson's ratio, ν.
-        - The elastic tensile limit, peltpte⁢l. (This value cannot be negative.)
+        - The logarithmic bulk modulus, :math:`\kappa`. (Dimensionless.)
+        - The Poisson's ratio, :math:`\nu`.
+        - The elastic tensile limit, :math:`p_{t}^{e l}`. (This value cannot be negative.)
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.

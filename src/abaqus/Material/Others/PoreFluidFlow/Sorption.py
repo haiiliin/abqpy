@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class Sorption:
-    """The Sorption object defines absorption and exsorption behaviors of a partially saturated
+    r"""The Sorption object defines absorption and exsorption behaviors of a partially saturated
     porous medium in the analysis of coupled wetting liquid flow and porous medium stress.
 
     Notes
@@ -20,15 +20,15 @@ class Sorption:
 
     - If **lawAbsorption**=TABULAR or **lawExsorption**=TABULAR, the **absorptionTable** and **exsorptionTable** data respectively specify the following:
 
-        - Pore pressure, uw.
-        - Saturation, s.
+        - Pore pressure, :math:`u_{w}`.
+        - Saturation, :math:`\boldsymbol{S}`.
 
     - If **lawAbsorption**=LOG or **lawExsorption**=LOG, the **absorptionTable** and **exsorptionTable** data respectively specify the following:
 
-        - A.
-        - B.
-        - s0.
-        - s1.
+        - :math:`A`.
+        - :math:`B`.
+        - :math:`\boldsymbol{s}_{0}`.
+        - :math:`\boldsymbol{s}_{1}`.
 
     The corresponding analysis keywords are:
 
@@ -44,7 +44,7 @@ class Sorption:
         scanning: float = 0,
         exsorptionTable: tuple = (),
     ):
-        """This method creates a Sorption object.
+        r"""This method creates a Sorption object.
 
         Notes
         -----
@@ -68,7 +68,7 @@ class Sorption:
             A SymbolicConstant specifying exsorption behavior. Possible values are LOG and TABULAR.
             The default value is TABULAR.
         scanning
-            A Float specifying the slope of the scanning line, (duw/ds)|s. This slope must be
+            A Float specifying the slope of the scanning line, :math:`\left.\left(d u_{w} / d s\right)\right|_{s}`. This slope must be
             positive and larger than the slope of the absorption or exsorption behaviors. The
             default value is 0.0.
         exsorptionTable

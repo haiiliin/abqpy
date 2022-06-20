@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class ConcreteCompressionDamage:
-    """The ConcreteCompressionDamage object specifies hardening for the concrete damaged
+    r"""The ConcreteCompressionDamage object specifies hardening for the concrete damaged
     plasticity model.
 
     Notes
@@ -18,8 +18,8 @@ class ConcreteCompressionDamage:
 
     The table data for this object are:
 
-    - Compressive damage variable, dc.
-    - Plastic (crushing) strain, ϵci⁢n.
+    - Compressive damage variable, :math:`d_{c}`.
+    - Inelastic (crushing) strain, :math:`\epsilon_{c}^{i n}`.
     - Temperature, if the data depend on temperature.
     - Value of the first field variable, if the data depend on field variables.
     - Value of the second field variable.
@@ -53,7 +53,7 @@ class ConcreteCompressionDamage:
         table
             A sequence of sequences of Floats specifying the items described below.
         tensionRecovery
-            A Float specifying the value of the stiffness recovery factor, wtwt, that determines the
+            A Float specifying the value of the stiffness recovery factor, :math:`w_{t}`, that determines the
             amount of tension stiffness that is recovered as loading changes from compression to
             tension. The default value is 0.0.
         temperatureDependency

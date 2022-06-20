@@ -702,8 +702,7 @@ class EngineeringFeature(EngineeringFeatureBase):
             .. code-block:: python
             
                 mdb.models[name].parts[name].engineeringFeatures.SpringDashpotToGround
-                mdb.models[name].rootAssembly.engineeringFeatures\
-            - .SpringDashpotToGround
+                mdb.models[name].rootAssembly.engineeringFeatures.SpringDashpotToGround
         
         Parameters
         ----------
@@ -771,8 +770,7 @@ class EngineeringFeature(EngineeringFeatureBase):
             .. code-block:: python
             
                 mdb.models[name].parts[name].engineeringFeatures.TwoPointSpringDashpot
-                mdb.models[name].rootAssembly.engineeringFeatures\
-            - .TwoPointSpringDashpot
+                mdb.models[name].rootAssembly.engineeringFeatures.TwoPointSpringDashpot
         
         Parameters
         ----------

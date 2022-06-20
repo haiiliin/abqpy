@@ -1,5 +1,5 @@
 class SimpleShearTestData:
-    """The SimpleShearTestData object provides simple shear test data.
+    r"""The SimpleShearTestData object provides simple shear test data.
 
     Notes
     -----
@@ -14,9 +14,9 @@ class SimpleShearTestData:
 
     The table data for this object are:
 
-    - Nominal shear stress, TS.
-    - Nominal shear strain, γ.
-    - Nominal transverse stress, TT (normal to edge with shear stress). This stress value is optional.
+    - Nominal shear stress, :math:`T_{S}`.
+    - Nominal shear strain, :math:`\gamma`
+    - Nominal transverse stress, :math:`T_{T}` (normal to edge with shear stress). This stress value is optional.
 
     The corresponding analysis keywords are:
 

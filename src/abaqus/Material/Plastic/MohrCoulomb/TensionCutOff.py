@@ -19,7 +19,8 @@ class TensionCutOff:
     The table data for this object are:
 
     - Tension cutoff stress.
-    - The value of the corresponding tensile Plastic strain.(The first tabular value entered must always be zero.)
+    - The value of the corresponding tensile Plastic strain.(The first tabular value
+      entered must always be zero.)
     - Temperature, if the data depend on temperature.
     - Value of the first field variable, if the data depend on field variables.
     - Value of the second field variable.

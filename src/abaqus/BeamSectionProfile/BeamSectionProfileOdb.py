@@ -269,7 +269,7 @@ class BeamSectionProfileOdb(OdbBase):
         name
             A String specifying the repository key.
         l
-            A Float specifying the **l** dimension (offset of 1–axis from the bottom flange surface)
+            A Float specifying the **l** dimension (offset of 1-axis from the bottom flange surface)
             of the I profile. For more information, see [Beam cross-section
             library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all).
         h
@@ -433,7 +433,7 @@ class BeamSectionProfileOdb(OdbBase):
         h
             A positive Float specifying the **h** dimension (height) of the T profile.
         l
-            A positive Float specifying the **l** dimension (offset of 1–axis from the edge of web) of
+            A positive Float specifying the **l** dimension (offset of 1-axis from the edge of web) of
             the T profile.
         tf
             A positive Float specifying the **tf** dimension (flange thickness) of the T profile (*tf

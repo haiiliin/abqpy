@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class ShearRetention:
-    """The ShearRetention object defines the reduction of the shear modulus associated with
+    r"""The ShearRetention object defines the reduction of the shear modulus associated with
     crack surfaces in a Concrete model as a function of the tensile strain across the crack.
 
     Notes
@@ -18,10 +18,12 @@ class ShearRetention:
 
     The table data for this object are:
 
-    - ϱclose for dry concrete. The default value is 1.0.
-    - εmax for dry concrete. The default value is a very large number (full shear retention).
-    - ϱclose for wet concrete. The default value is 1.0.
-    - εmax for wet concrete. The default value is a very large number (full shear retention).
+    - :math:`\varrho^{\text {close }} for dry concrete. The default value is 1.0`
+    - :math:`\varepsilon^{\max }` for dry concrete. The default value is a very large number 
+      (full shear retention).
+    - :math:`\varrho^{\text {close }} for wet concrete. The default value is 1.0`
+    - :math:`\varepsilon^{\max }` for wet concrete. The default value is a very large number
+      (full shear retention).
     - Temperature, if the data depend on temperature.
     - Value of the first field variable, if the data depend on field variables.
     - Value of the second field variable.

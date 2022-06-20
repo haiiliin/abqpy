@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class CastIronCompressionHardening:
-    """The CastIronCompressionHardening object specifies hardening for the Cast- Iron
+    r"""The CastIronCompressionHardening object specifies hardening for the Cast- Iron
     plasticity model.
 
     Notes
@@ -18,7 +18,7 @@ class CastIronCompressionHardening:
 
     The table data for this object are:
 
-    - Yield stress in compression, σcσc.
+    - Yield stress in compression, $\sigma_c$.
     - The absolute value of the corresponding Plastic strain.(The first tabular value entered must always be zero.)
     - Temperature, if the data depend on temperature.
     - Value of the first field variable, if the data depend on field variables.
@@ -41,10 +41,7 @@ class CastIronCompressionHardening:
             
             .. code-block:: python
             
-                mdb.models[name].materials[name].castIronPlasticity\
-            - .CastIronCompressionHardening
-                session.odbs[name].materials[name].castIronPlasticity\
-            - .CastIronCompressionHardening
+                mdb.models[name].materials[name].castIronPlasticity.CastIronCompressionHardening.CastIronCompressionHardenings[name].castIronPlasticity.CastIronCompressionHardening
         
         Parameters
         ----------

@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class Eos:
-    """The Eos object specifies an equation of state model.
+    r"""The Eos object specifies an equation of state model.
 
     Notes
     -----
@@ -18,25 +18,32 @@ class Eos:
     The table data for this object are:
 
     - If **type**=IDEALGAS, the table data represents the following:
-        - Gas constant, R.
-        - The ambient pressure, pA. If this field is left blank, a default of 0.0 is used.
+    
+        - Gas constant, :math:`R`.
+        - The ambient pressure, :math:`p_{A}`. If this field is left blank, a default of 0.0 is used.
+        
     - If **type**=JWL, the table data represents the following:
-        - Detonation wave speed, Cd.
-        - A.
-        - B.
-        - ω. (Dimensionless.)
-        - R1. (Dimensionless.)
-        - R2. (Dimensionless.)
-        - Pre-detonation bulk modulus, Kp⁢d.
-        - Detonation energy density, E0.
+    
+        - Detonation wave speed, :math:`C_{d}`.
+        - :math:`A`.
+        - :math:`B`.
+        - :math:`\omega`. (Dimensionless.)
+        - :math:`R_{1}`. (Dimensionless.)
+        - :math:`R_{2}`. (Dimensionless.)
+        - Pre-detonation bulk modulus, :math:`K_{p d}`.
+        - Detonation energy density, :math:`E_{0}`.
+        
     - If **type**=USUP, the table data represents the following:
-        - c0.
-        - s. (Dimensionless.)
-        - Γ0. (Dimensionless.)
+    
+        - :math:`C_{0}`
+        - :math:`\boldsymbol{S}`. (Dimensionless.)
+        - :math:`\Gamma_{0}`. (Dimensionless.)
+        
     - If **type**=TABULAR, the table data represents the following:
-        - F1.
-        - F2.
-        - εcvol. (Dimensionless.)
+    
+        - :math:`F_{1}`
+        - :math:`F_{2}`
+        - :math:`\varepsilon_{v o l}^{c}`. (Dimensionless.)
     """
 
     def __init__(
@@ -78,40 +85,40 @@ class Eos:
         solidTable
             A sequence of sequences of Floats specifying the following:
             
-            - $A_{s}$.
-            - $B_{s}$.
-            - ${\omega}_{s}$.
-            - $R_{1s}$.
-            - $R_{2s}$.
+            - :math:`A_{s}`.
+            - :math:`B_{s}`.
+            - :math:`{\omega}_{s}`.
+            - :math:`R_{1s}`.
+            - :math:`R_{2s}`.
             
             The default value is an empty sequence.
         gasTable
             A sequence of sequences of Floats specifying the following:
             
-            - $A_{g}$.
-            - $B_{g}$.
-            - ${\omega}_{g}$.
-            - $R_{1g}$.
-            - $R_{2g}$.
+            - :math:`A_{g}`.
+            - :math:`B_{g}`.
+            - :math:`{\omega}_{g}`.
+            - :math:`R_{1g}`.
+            - :math:`R_{2g}`.
             
             The default value is an empty sequence.
         reactionTable
             A sequence of sequences of Floats specifying the following:
             
-            - Initial Pressure, $I$.
-            - Product co-volume, $a$.
-            - Exponent on the unreacted fraction (ignition term), $x$.
-            - First burn rate coefficient, $G_{1}$
-            - Exponent on the unreacted fraction (growth term), $c$.
-            - Exponent on the reacted fraction (growth term), $d$.
-            - Pressure exponent (growth term), $y$.
-            - Second burn rate coefficient, $G_{2}$.
-            - Exponent on the unreacted fraction (completion term), $e$.
-            - Exponent on the reacted fraction (completion term), $g$.
-            - Pressure exponent (completion term), $z$.
-            - Initial reacted fraction, ${F^{max}}_{ig}$.
-            - Maximum reacted fraction for the growth term, ${F^{max}}_{G1}$.
-            - Minimum reacted fraction, ${F^{min}}_{G2}$.
+            - Initial Pressure, :math:`I`.
+            - Product co-volume, :math:`a`.
+            - Exponent on the unreacted fraction (ignition term), :math:`x`.
+            - First burn rate coefficient, :math:`G_{1}`
+            - Exponent on the unreacted fraction (growth term), :math:`c`.
+            - Exponent on the reacted fraction (growth term), :math:`d`.
+            - Pressure exponent (growth term), :math:`y`.
+            - Second burn rate coefficient, :math:`G_{2}`.
+            - Exponent on the unreacted fraction (completion term), :math:`e`.
+            - Exponent on the reacted fraction (completion term), :math:`g`.
+            - Pressure exponent (completion term), :math:`z`.
+            - Initial reacted fraction, :math:`{F^{max}}_{ig}`.
+            - Maximum reacted fraction for the growth term, :math:`{F^{max}}_{G1}`.
+            - Minimum reacted fraction, :math:`{F^{min}}_{G2}`.
             
             The default value is an empty sequence.
         gasSpecificTable

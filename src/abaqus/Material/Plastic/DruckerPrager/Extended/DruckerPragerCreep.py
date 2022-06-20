@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class DruckerPragerCreep:
-    """The DruckerPragerCreep object specifies creep for Drucker-Prager plasticity models.
+    r"""The DruckerPragerCreep object specifies creep for Drucker-Prager plasticity models.
 
     Notes
     -----
@@ -19,19 +19,19 @@ class DruckerPragerCreep:
 
     - If **law**=TIME or **law**=STRAIN, the table data specify the following:
     
-        - AA. (Units of F-nL2nT−1−m.)
-        - n.
-        - m.
+        - A. (Units of :math:`\mathrm{F}^{-n} \mathrm{~L}^{2 n} \mathrm{~T}^{-1-m}`.)
+        - :math:`n`.
+        - :math:`m`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **law**=SINGHM, the table data specify the following:
     
-        - A. (Units of T−1.)
-        - α. (Units of F−1L2.)
-        - m.
-        - t1. (Units of T.)
+        - A. (Units of :math:`\mathrm{T}^{-1} .` )
+        - :math:`\alpha`. (Units of :math:`F^{-1} L^{2}`.)
+        - :math:`m`.
+        - :math:`t_{1} \cdot` (Units of :math:`\mathrm{T}`.)
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.

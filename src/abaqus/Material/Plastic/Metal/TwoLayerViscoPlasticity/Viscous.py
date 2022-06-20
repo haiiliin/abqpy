@@ -3,7 +3,7 @@ from ...Potential import Potential
 
 
 class Viscous:
-    """The Viscous object specifies the viscous properties for a two-layer viscoplastic
+    r"""The Viscous object specifies the viscous properties for a two-layer viscoplastic
     material model.
 
     Notes
@@ -21,65 +21,65 @@ class Viscous:
 
     - If **law**=STRAIN or **law**=TIME, the table data specify the following:
     
-        - A.
-        - n.
-        - m.
-        - f.
+        - :math:`A`.
+        - :math:`n`.
+        - :math:`m`.
+        - :math:`f`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **law**=USER, the table data specify the following:
     
-        - f.
+        - :math:`f`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **law**=ANAND, the table data specify the following:
     
-        - s1.
-        - QR.
-        - A.
-        - ξ.
-        - m.
-        - A00.
-        - ˆs.
-        - n.
-        - a.
-        - S2.
-        - S3.
-        - A1.
-        - A2.
-        - A3.
-        - A4.
-        - f.
+        - :math:`s_{1}`.
+        - :math:`\frac{Q}{R}`.
+        - :math:`A`.
+        - :math:`\xi`.
+        - :math:`m`.
+        - :math:`A_{0}`.
+        - :math:`\hat{s}`.
+        - :math:`n`.
+        - :math:`a`.
+        - :math:`S_{2}`.
+        - :math:`S_{3}`.
+        - :math:`A_{1}`.
+        - :math:`A_{2}`.
+        - :math:`A_{3}`.
+        - :math:`A_{4}`.
+        - :math:`f`.
     - If **law**=DARVEAUX, the table data specify the following:
     
-        - Css.
-        - QR.
-        - α.
-        - n.
-        - ϵT.
-        - B.
-        - f.
+        - :math:`C_{s s}`.
+        - :math:`\frac{Q}{R}`.
+        - :math:`\alpha`.
+        - :math:`n`.
+        - :math:`\epsilon_{T}`.
+        - :math:`B`.
+        - :math:`f`.
     - If **law**=DOUBLE_POWER, the table data specify the following:
     
-        - A1.
-        - B1.
-        - C1.
-        - A2.
-        - B2.
-        - C2.
-        - σ0.
-        - f.
+        - :math:`A_{1}`.
+        - :math:`B_{1}`.
+        - :math:`C_{1}`.
+        - :math:`A_{2}`.
+        - :math:`B_{2}`.
+        - :math:`C_{2}`.
+        - :math:`\sigma_{0}`.
+        - :math:`f`.
     - If **law**=POWER_LAW or **law**=TIME_POWER_LAW, the table data specify the following:
     
-        - q0.
-        - n.
-        - m.
-        - ∙ε0.⁢
-        - f.
+        - :math:`q_{0}`.
+        - :math:`n`.
+        - :math:`m`.
+        - :math:`\varepsilon_{0}`.
+        - :math:`f`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.

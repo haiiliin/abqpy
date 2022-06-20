@@ -1,5 +1,5 @@
 class AnnealTemperature:
-    """The AnnealTemperature object specifies the material annealing temperature.
+    r"""The AnnealTemperature object specifies the material annealing temperature.
 
     Notes
     -----
@@ -14,7 +14,7 @@ class AnnealTemperature:
 
     The table data for this object are:
 
-    - The annealing temperature, θθ.
+    - The annealing temperature, :math:`\theta`.
     - Temperature, if the data depend on temperature.
     - Value of the first field variable, if the data depend on field variables.
     - Value of the second field variable.

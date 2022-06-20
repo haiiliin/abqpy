@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class ConcreteTensionDamage:
-    """The ConcreteTensionDamage object specifies hardening for the concrete damaged plasticity
+    r"""The ConcreteTensionDamage object specifies hardening for the concrete damaged plasticity
     model.
 
     Notes
@@ -20,16 +20,16 @@ class ConcreteTensionDamage:
 
     - If **type**=STRAIN, the table data specify the following:
     
-        - Tensile damage variable, dt.
-        - Direct cracking strain, ϵtc⁢k.
+        - Tensile damage variable, :math:`d_{t}`.
+        - Direct cracking strain, :math:`\epsilon_{t}^{c k}`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **type**=DISPLACEMENT, the table data specify the following:
     
-        - Tensile damage variable, dt.
-        - Direct cracking displacement, utc⁢k.
+        - Tensile damage variable, :math:`d_{t}`
+        - Direct cracking displacement, :math:`u_{t}^{c k}`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
@@ -56,17 +56,14 @@ class ConcreteTensionDamage:
             
             .. code-block:: python
             
-                mdb.models[name].materials[name].concreteDamagedPlasticity\
-            - .ConcreteTensionDamage
-                session.odbs[name].materials[name].concreteDamagedPlasticity\
-            - .ConcreteTensionDamage
+                mdb.models[name].materials[name].concreteDamagedPlasticity.ConcreteTensionDamage.ConcreteTensionDamageaterials[name].concreteDamagedPlasticity.ConcreteTensionDamage
         
         Parameters
         ----------
         table
             A sequence of sequences of Floats specifying the items described below. 
         compressionRecovery
-            A Float specifying the value of the stiffness recovery factor, wcwc, that determines the 
+            A Float specifying the value of the stiffness recovery factor, :math:`w_c`, that determines the 
             amount of compression stiffness that is recovered as loading changes from tension to 
             compression. The default value is 1.0. 
         type

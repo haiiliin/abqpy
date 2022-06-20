@@ -33,7 +33,7 @@ class ViewportBase:
         manipulation tools when **displayMode=OVERLAY**. Possible values are ALL and CURRENT.
     layerOffset: float
         A Float specifying a factor to be used in offsetting layers in the screen Z direction.
-        Possible values are –1 to 1. A negative value reverses the apparent order in which the
+        Possible values are -1 to 1. A negative value reverses the apparent order in which the
         layers are plotted.
     windowState: SymbolicConstant
         A SymbolicConstant specifying the current state of a viewport. Possible values are
@@ -226,7 +226,7 @@ class ViewportBase:
     viewManipLayers: SymbolicConstant = None
 
     # A Float specifying a factor to be used in offsetting layers in the screen Z direction.
-    # Possible values are –1 to 1. A negative value reverses the apparent order in which the
+    # Possible values are -1 to 1. A negative value reverses the apparent order in which the
     # layers are plotted.
     layerOffset: float = None
 
@@ -744,7 +744,7 @@ class ViewportBase:
             when*viewManipLayers* =CURRENT.
         layerOffset
             A Float specifying a factor to be used in offsetting layers in the screen Z direction.
-            Possible values are –1 to 1. A negative value reverses the apparent order in which the
+            Possible values are -1 to 1. A negative value reverses the apparent order in which the
             layers are plotted.
 
         Raises

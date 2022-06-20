@@ -361,7 +361,7 @@ class ConstrainedSketch(
             Possible values are 0.0 ≤≤ **spacing1** .
         angle1
             A Float specifying the angle in degrees of the first direction in the pattern. Possible
-            values are –360.0 ≤≤ **angle1** ≤≤ 360.0.
+            values are -360.0 ≤≤ **angle1** ≤≤ 360.0.
         vertexList
             A sequence of ConstrainedSketchVertex objects to copy.
         geomList
@@ -376,7 +376,7 @@ class ConstrainedSketch(
             Possible values are 0.0 ≤≤ **spacing2**. The default value is **spacing1**.
         angle2
             A Float specifying the angle in degrees of the first direction in the pattern. Possible
-            values are –360.0 ≤≤ **angle2** ≤≤ 360.0. The default value is 90° beyond the value of
+            values are -360.0 ≤≤ **angle2** ≤≤ 360.0. The default value is 90° beyond the value of
             **angle1**.
 
         Returns
@@ -465,7 +465,7 @@ class ConstrainedSketch(
             pattern. A positive angle corresponds to a counter-clockwise direction. The values 360°
             and -360° represent a special case where the pattern makes a full circle. In this case,
             because the copy would overlay the original, the copy is not placed at the last
-            position. Possible values are –360.0 ≤≤ **totalAngle** ≤≤ 360.0.
+            position. Possible values are -360.0 ≤≤ **totalAngle** ≤≤ 360.0.
         centerPoint
             A pair of Floats specifying the center of the radial pattern.
         vertexList
@@ -531,7 +531,7 @@ class ConstrainedSketch(
             A sequence of ConstrainedSketchGeometry objects where the short edges are to be removed.
         tolerance
             A float value that is used to select and delete only those edges specified in **geomList**
-            whose lengths are smaller than the given value. The default value is –1.0. This value
+            whose lengths are smaller than the given value. The default value is -1.0. This value
             implies that all edges specified in **geomList** will be removed and the sketch healed to
             remove gaps left by their removal.
         """

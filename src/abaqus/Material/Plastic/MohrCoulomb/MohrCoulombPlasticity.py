@@ -4,7 +4,7 @@ from .TensionCutOff import TensionCutOff
 
 
 class MohrCoulombPlasticity:
-    """The MohrCoulombPlasticity object specifies the extended Mohr-Coulomb plasticity model.
+    r"""The MohrCoulombPlasticity object specifies the extended Mohr-Coulomb plasticity model.
 
     Notes
     -----
@@ -19,8 +19,9 @@ class MohrCoulombPlasticity:
 
     The table data for this object are:
 
-    - Friction angle (given in degrees), ϕ, at high confining pressure in the p–Rm⁢c⁢q plane.
-    - Dilation angle, ψ, at high confining pressure in the p–Rm⁢w⁢q plane.
+    - Friction angle (given in degrees), :math:`\phi`, at high confining pressure
+      in the :math:`p-R_{m c} q` plane.
+    - Dilation angle, :math:`\psi`, at high confining pressure in the :math:`p-R_{m w} q` plane.
     - Temperature, if the data depend on temperature.
     - Value of the first field variable, if the data depend on field variables.
     - Value of the second field variable.
@@ -46,7 +47,7 @@ class MohrCoulombPlasticity:
         dependencies: int = 0,
         useTensionCutoff: Boolean = OFF,
     ):
-        """This method creates a MohrCoulombPlasticity object.
+        r"""This method creates a MohrCoulombPlasticity object.
 
         Notes
         -----
@@ -62,11 +63,11 @@ class MohrCoulombPlasticity:
         table
             A sequence of sequences of Floats specifying the items described below.
         deviatoricEccentricity
-            None or a Float specifying the flow potential eccentricity in the deviatoric plane, e;
-            1/2 ≤ 1.0. If **deviatoricEccentricity**=None, Abaqus calculates the value using the
+            None or a Float specifying the flow potential eccentricity in the deviatoric plane, 
+            :math:`e`; :math:`1 / 2 \leq e \leq 1.0`. If **deviatoricEccentricity**=None, Abaqus calculates the value using the
             specified Mohr-Coulomb angle of friction. The default value is None.
         meridionalEccentricity
-            A Float specifying the flow potential eccentricity in the meridional plane, ϵϵ. The
+            A Float specifying the flow potential eccentricity in the meridional plane, :math:`\epsilon`. The
             default value is 0.1.
         temperatureDependency
             A Boolean specifying whether the data depend on temperature. The default value is OFF.

@@ -4,7 +4,7 @@ from .CastIronTensionHardening import CastIronTensionHardening
 
 
 class CastIronPlasticity:
-    """The CastIronPlasticity object specifies the Cast Iron plasticity model.
+    r"""The CastIronPlasticity object specifies the Cast Iron plasticity model.
 
     Notes
     -----
@@ -19,7 +19,7 @@ class CastIronPlasticity:
 
     The table data for this object are:
 
-    - Plastic Poisson's ratio, νp⁢l (dimensionless).
+    - Plastic Poisson's ratio, :math:`\nu_{pl}` (dimensionless).
     - Temperature, if the data depend on temperature.
     - Value of the first field variable, if the data depend on field variables.
     - Value of the second field variable.

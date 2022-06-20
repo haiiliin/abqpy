@@ -9,7 +9,7 @@ from ...TestData.VolumetricTestData import VolumetricTestData
 
 
 class Hyperelastic:
-    """The Hyperelastic object specifies elastic properties for approximately incompressible
+    r"""The Hyperelastic object specifies elastic properties for approximately incompressible
     elastomers.
 
     Notes
@@ -27,56 +27,67 @@ class Hyperelastic:
 
     - If **type**=ARRUDA_BOYCE, the table data specify the following:
     
-        - μ.
-        - λm.
-        - D.
+        - :math:`\mu`.
+        - :math:`\lambda_{m}`.
+        - :math:`D`.
         - Temperature, if the data depend on temperature.
+        
     - If **type**=MOONEY_RIVLIN, the table data specify the following:
     
-        - C10.
-        - C01.
-        - D1.
+        - :math:`C_{10}`
+        - :math:`C_{01}`.
+        - :math:`D_{1}`.
         - Temperature, if the data depend on temperature.
+        
     - If **type**=NEO_HOOKE, the table data specify the following:
     
-        - C10.
-        - D1.
+        - :math:`C_{10}`
+        - :math:`D_{1}`.
         - Temperature, if the data depend on temperature.
+        
     - If **type**=OGDEN, the table data specify the following for values of nn:
     
-        - μi and αi for ii from 1 to n.
-        - nn coefficients Di.
-        - Temperature, if the data depend on temperature. Temperature dependence is not allowed for 4 ≤n≤ 6 in an
-          Abaqus/Explicit analysis.
+        - :math:`\mu_{i}` and :math:`\alpha_{i}` for :math:`i` from 1 to $n.
+        - :math:`n` coefficients $D_{i}`.
+        - Temperature, if the data depend on temperature. Temperature dependence is not 
+          allowed for :math:`4 \leq n \leq 6` in an Abaqus/Explicit analysis.
+          
     - If **type**=POLYNOMIAL, the table data specify the following for values of nn:
     
-        - CijCi⁢j for each value of (i+j) from 11 to n with ii decreasing from (i+j) to zero and j 
-          increasing from zero to (i+j).
-        - n coefficients Di.
-        - Temperature, if the data depend on temperature. Temperature dependence is not allowed for 3 ≤n≤ 6 in an
-          Abaqus/Explicit analysis.
+        - :math:`C_{i j}` for each value of :math:`(i+j)` from 1 to :math:`n` with 
+          :math:`i` decreasing from :math:`(i+j)` to zero and :math:`j` increasing 
+          from zero to :math:`(i+j)`.
+        - :math:`n` coefficients :math:`D_{i}`
+        - Temperature, if the data depend on temperature. Temperature dependence is
+          not allowed for :math:`3 \leq n \leq 6` in an Abaqus/Explicit analysis.
+    
     - If **type**=REDUCED_POLYNOMIAL, the table data specify the following for values of nn:
-        - Ci⁢0 for ii from 1 to n.
-        - n coefficients Di.
-        - Temperature, if the data depend on temperature. Temperature dependence is not allowed for 4 ≤n≤ 6 in an
-          Abaqus/Explicit analysis.
+    
+        - :math:`C_{i 0}` for :math:`i` from 1 to :math:`n`.
+        - :math:`n` coefficients :math:`D_{i}`
+        - Temperature, if the data depend on temperature. Temperature dependence 
+          is not allowed for :math:`4 \leq n \leq 6` in an Abaqus/Explicit analysis.
+          
     - If **type**=VAN_DER_WAALS, the table data specify the following:
     
-        - μ.
-        - λm.
-        - a.
-        - β.
-        - D.
+        - :math:`\mu`.
+        - :math:`\bullet_{m}`.
+        - :math:`a`.
+        - :math:`\beta`.
+        - :math:`D`.
         - Temperature, if the data depend on temperature.
+        
     - If **type**=YEOH, the table data specify the following:
     
-        - C10.
-        - C20.
-        - C30.
-        - D1.
-        - D2.
-        - D3.
-        - Temperature, if the data depend on temperature. Temperature dependence is not allowed in an Abaqus/Explicit analysis.
+        - :math:`C_{10}`
+        - :math:`C_{20}`
+        - :math:`C_{30}`
+        - :math:`D_{1}`.
+        - :math:`D_{2}`
+        - :math:`D_{3}`.
+        - Temperature, if the data depend on temperature. Temperature dependence 
+          is not allowed in an Abaqus/Explicit analysis.
+    
     The None object is the default value if **testData**=ON.
 
     The corresponding analysis keywords are:

@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class FailStrain:
-    """The FailStrain object defines parameters for strain-based failure measures.
+    r"""The FailStrain object defines parameters for strain-based failure measures.
 
     Notes
     -----
@@ -16,15 +16,16 @@ class FailStrain:
         session.odbs[name].materials[name].elastic.failStrain
 
     The table data for this object are:
-        - Tensile strain limit in fiber direction, Xεt.
-        - Compressive strain limit in fiber direction, Xεc.
-        - Tensile strain limit in transverse direction, Yεt.
-        - Compressive strain limit in transverse direction, Yεc.
-        - Shear strain limit in the X–Y plane, Sε.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+    
+    - Tensile strain limit in fiber direction, :math:`X_{\varepsilon t}`.
+    - Compressive strain limit in fiber direction, :math:`X_{\varepsilon c}`.
+    - Tensile strain limit in transverse direction, :math:`Y_{\varepsilon t}`,
+    - Compressive strain limit in transverse direction, :math:`Y_{\varepsilon c}`.
+    - Shear strain limit in the :math:`X - Y` plane, :math:`S_{\varepsilon}`.
+    - Temperature, if the data depend on temperature.
+    - Value of the first field variable, if the data depend on field variables.
+    - Value of the second field variable.
+    - Etc.
 
     The corresponding analysis keywords are:
 

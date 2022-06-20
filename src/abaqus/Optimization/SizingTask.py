@@ -84,7 +84,7 @@ class SizingTask(OptimizationTask):
             A String specifying the optimization task repository key.
         elementThicknessDeltaStopCriteria
             A Float specifying the stop criteria based on the change in element thickness. The
-            default value is 0.5 × 10–2.
+            default value is 0.5 × 10-2.
         freezeBoundaryConditionRegions
             A Boolean specifying whether to exclude elements with boundary conditions from the
             optimization. The default value is OFF.
@@ -147,7 +147,7 @@ class SizingTask(OptimizationTask):
             sensitivities. The default value is True.
         elementThicknessDeltaStopCriteria
             A Float specifying the stop criteria based on the change in element thickness. The
-            default value is 0.5 × 10–2.
+            default value is 0.5 × 10-2.
         freezeBoundaryConditionRegions
             A Boolean specifying whether to exclude elements with boundary conditions from the
             optimization. The default value is OFF.

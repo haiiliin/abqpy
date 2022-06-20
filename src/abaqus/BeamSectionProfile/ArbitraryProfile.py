@@ -24,8 +24,8 @@ class ArbitraryProfile(Profile):
         
     All other sequences in the table specify the following:
     
-    - 1–coordinate of the next point defining the profile.
-    - 2–coordinate of the next point defining the profile.
+    - 1-coordinate of the next point defining the profile.
+    - 2-coordinate of the next point defining the profile.
     - The thickness of the segment ending at that point.
 
     The corresponding analysis keywords are:

@@ -20,13 +20,13 @@ class Potential:
         session.odbs[name].materials[name].viscous.potential
 
     The table data for this object are:
-
-    - R11.
-    - R22.
-    - R33.
-    - R12.
-    - R13.
-    - R23.
+    
+    - :math:`R_{11}`.
+    - :math:`R_{22}`.
+    - :math:`R_{33}`.
+    - :math:`R_{12}`.
+    - :math:`R_{13}`.
+    - :math:`R_{23}`.
     - Temperature, if the data depend on temperature.
     - Value of the first field variable, if the data depend on field variables.
     - Value of the second field variable.

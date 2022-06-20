@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class PlanarTestData:
-    """The PlanarTestData object specifies planar test (or pure shear) data (compression and/or
+    r"""The PlanarTestData object specifies planar test (or pure shear) data (compression and/or
     tension).
 
     Notes
@@ -24,13 +24,13 @@ class PlanarTestData:
 
     - For a hyperelastic material model, the table data specify the following:
     
-        - Nominal stress, TS.
-        - Nominal strain in the direction of loading, ϵS.
+        - Nominal stress, :math:`T_{S}`
+        - Nominal strain in the direction of loading, :math:`\epsilon_{S}`.
     - For a hyperfoam material model, the table data specify the following:
     
-        - Nominal stress, TL.
-        - Nominal strain in the direction of loading, ϵp.
-        - Nominal transverse strain, ϵ3. The default value is 0.
+        - Nominal stress, :math:`T_{L}`.
+        - Nominal strain in the direction of loading, :math:`\epsilon_{p}`.
+        - Nominal transverse strain, :math:`\epsilon_{3}`. The default value is 0 .
 
     The corresponding analysis keywords are:
 

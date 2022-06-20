@@ -6,7 +6,7 @@ from ....TestData.VolumetricTestData import VolumetricTestData
 
 
 class Viscoelastic:
-    """The Viscoelastic object specifies dissipative behavior for use with elasticity.
+    r"""The Viscoelastic object specifies dissipative behavior for use with elasticity.
 
     Notes
     -----
@@ -23,20 +23,24 @@ class Viscoelastic:
 
     - If **frequency**=FORMULA, the table data for **table** specify the following:
     
-        - Real part of g∗1 (g∗(ω)=g∗1f−a).
-        - Imaginary part of g∗1.
-        - Value of a.
-        - Real part of k∗1 (k∗(ω)=k∗1f−b). If the material is incompressible, this value is ignored.
-        - Imaginary part of k1*. If the material is incompressible, this value is ignored.
-        - Value of b. If the material is incompressible, this value is ignored.
+        - Real part of :math:`g_{1}^{*}\left(g^{*}(\omega)=g_{1}^{*} f^{-a}\right)`
+        - Imaginary part of :math:`g_{1}^{*}`.
+        - Value of :math:`a`.
+        - Real part of :math:`k_{1}^{*}\left(k^{*}(\omega)=k_{1}^{*} f^{-b}\right)`. If 
+          the material is incompressible, this value is ignored.
+        - Imaginary part of :math:`k_{1}^{*}`. If the material is incompressible, this 
+          value is ignored.
+        - Value of :math:`b`. If the material is incompressible, this value is ignored.
+        
     - If **frequency**=TABULAR and **type**=ISOTROPIC and **preload**=NONE, or **time**=FREQUENCY_DATA 
       the table data for **table** specify the following:
-    
-        - Real part of ω⁢g* (ωR(g∗)=Gℓ/G∞).
-        - Imaginary part of ω⁢g* (ωI(g*)=1−Gs/G∞).
-        - Real part of ω⁢k* (ωR(k∗)=Kℓ/K∞). If the material is incompressible, this value is ignored.
-        - Imaginary part of ω⁢k* (ωI(k∗)=1−Ks/K∞). If the material is incompressible, this value is ignored.
-        - Frequency f in cycles per time.
+      
+        - Real part of :math:`\omega g^{*}\left(\omega \Re\left(g^{*}\right)=G_{\ell} / G_{\infty}\right)`.
+        - Imaginary part of :math:`\omega g^{*}\left(\omega \mathfrak{J}\left(g^{*}\right)=1-G_{s} / G_{\infty}\right)`
+        - Real part of :math:`\omega k^{*}\left(\omega \mathfrak{R}\left(k^{*}\right)=\mathrm{K}_{\ell} / \mathrm{K}_{\infty}\right)`. If the material is incompressible, this value is ignored.
+        - Imaginary part of :math:`\omega k^{*}\left(\omega \mathfrak{I}\left(k^{*}\right)=1-\mathrm{K}_{s} / \mathrm{K}_{\infty}\right)`. If the material is incompressible, this value is ignored.
+        - Frequency :math:`f` in cycles per time.
+        
     - If **frequency**=TABULAR and **type**=ISOTROPIC and **preload**=UNIAXIAL the table data for **table** 
       specify the following:
     
@@ -44,12 +48,14 @@ class Viscoelastic:
         - Storage modulus.
         - Frequency.
         - Uniaxial strain.
+        
     - If **frequency**=TABULAR and **type**=TRACTION and **preload**=NONE the table data for **table** 
       specify the following:
     
         - Normalized loss modulus.
         - Normalized shear modulus.
         - Frequency.
+        
     - If **frequency**=TABULAR and **type**=TRACTION and **preload**=UNIAXIAL or 
       **preload**=UNIAXIAL_VOLUMETRIC the table data for **table** specify the following:
     
@@ -57,11 +63,15 @@ class Viscoelastic:
         - Storage modulus.
         - Frequency.
         - Closure.
+        
     - If **time**=PRONY or **frequency**=PRONY, the table data for **table** specify the following:
     
-        - g¯1P, the modulus ratio in the first term in the Prony series expansion of the shear relaxation modulus.
-        - k¯1P, the modulus ratio in the first term in the Prony series expansion of the bulk relaxation modulus.
-        - τ1, the relaxation time for the first term in the Prony series expansion.
+        - :math:`\bar{g}_{1}^{P}`, the modulus ratio in the first term in the Prony series
+          expansion of the shear relaxation modulus.
+        - :math:`\bar{k}_{1}^{P}`, the modulus ratio in the first term in the Prony series 
+          expansion of the bulk relaxation modulus.
+        - :math:`\tau_{1}`, the relaxation time for the first term in the Prony series expansion.
+        
     - If **frequency**=TABULAR and **type**=ISOTROPIC and **preload**=VOLUMETRIC or 
       **preload**=UNIAXIAL_VOLUMETRIC the table data for **volumetricTable** specify the following:
     

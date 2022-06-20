@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class DeformationPlasticity:
-    """The DeformationPlasticity object specifies the deformation plasticity model.
+    r"""The DeformationPlasticity object specifies the deformation plasticity model.
 
     Notes
     -----
@@ -17,11 +17,11 @@ class DeformationPlasticity:
 
     The table data for this object are:
 
-    - Young's modulus, E.
-    - Poisson's ratio, ν.
-    - Yield stress, σ0.
-    - Exponent, n.
-    - Yield offset, α.
+    - Young's modulus, :math:`E`.
+    - Poisson's ratio, :math:`\nu`.
+    - Yield stress, :math:`\sigma^{0}`
+    - Exponent, :math:`n`.
+    - Yield offset, :math:`\alpha`.
     - Temperature, if the data depend on temperature.
 
     The corresponding analysis keywords are:

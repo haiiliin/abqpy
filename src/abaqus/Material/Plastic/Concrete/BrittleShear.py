@@ -28,8 +28,8 @@ class BrittleShear:
         - Etc.
     - If **type**=POWER_LAW the table data specify the following:
     
-        - e.
-        - p.
+        - :math:`e`.
+        - :math:`p`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.

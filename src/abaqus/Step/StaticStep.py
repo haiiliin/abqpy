@@ -35,7 +35,7 @@ class StaticStep(AnalysisStep):
     stabilizationMagnitude: float
         A Float specifying the damping intensity of the automatic damping algorithm if the
         problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default
-        value is 2×10–4.
+        value is 2×10-4.
     adiabatic: Boolean
         A Boolean specifying whether to perform an adiabatic stress analysis. The default value
         is OFF.
@@ -49,7 +49,7 @@ class StaticStep(AnalysisStep):
         period for the step.
     minInc: float
         A Float specifying the minimum time increment allowed. The default value is the smaller
-        of the suggested initial time increment or 10–5 times the total time period.
+        of the suggested initial time increment or 10-5 times the total time period.
     maxInc: float
         A Float specifying the maximum time increment allowed. The default value is the total
         time period for the step.
@@ -199,7 +199,7 @@ class StaticStep(AnalysisStep):
 
     # A Float specifying the damping intensity of the automatic damping algorithm if the
     # problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default
-    # value is 2×10–4.
+    # value is 2×10-4.
     stabilizationMagnitude: float = None
 
     # A Boolean specifying whether to perform an adiabatic stress analysis. The default value
@@ -218,7 +218,7 @@ class StaticStep(AnalysisStep):
     initialInc: float = None
 
     # A Float specifying the minimum time increment allowed. The default value is the smaller
-    # of the suggested initial time increment or 10–5 times the total time period.
+    # of the suggested initial time increment or 10-5 times the total time period.
     minInc: float = None
 
     # A Float specifying the maximum time increment allowed. The default value is the total
@@ -440,7 +440,7 @@ class StaticStep(AnalysisStep):
         stabilizationMagnitude
             A Float specifying the damping intensity of the automatic damping algorithm if the
             problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default
-            value is 2×10–4.
+            value is 2×10-4.
         adiabatic
             A Boolean specifying whether to perform an adiabatic stress analysis. The default value
             is OFF.
@@ -454,7 +454,7 @@ class StaticStep(AnalysisStep):
             period for the step.
         minInc
             A Float specifying the minimum time increment allowed. The default value is the smaller
-            of the suggested initial time increment or 10–5 times the total time period.
+            of the suggested initial time increment or 10-5 times the total time period.
         maxInc
             A Float specifying the maximum time increment allowed. The default value is the total
             time period for the step.
@@ -559,7 +559,7 @@ class StaticStep(AnalysisStep):
         stabilizationMagnitude
             A Float specifying the damping intensity of the automatic damping algorithm if the
             problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default
-            value is 2×10–4.
+            value is 2×10-4.
         adiabatic
             A Boolean specifying whether to perform an adiabatic stress analysis. The default value
             is OFF.
@@ -573,7 +573,7 @@ class StaticStep(AnalysisStep):
             period for the step.
         minInc
             A Float specifying the minimum time increment allowed. The default value is the smaller
-            of the suggested initial time increment or 10–5 times the total time period.
+            of the suggested initial time increment or 10-5 times the total time period.
         maxInc
             A Float specifying the maximum time increment allowed. The default value is the total
             time period for the step.

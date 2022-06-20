@@ -3,7 +3,7 @@ from .ClayHardening import ClayHardening
 
 
 class ClayPlasticity:
-    """The ClayPlasticity object specifies the extended Cam-clay plasticity model.
+    r"""The ClayPlasticity object specifies the extended Cam-clay plasticity model.
 
     Notes
     -----
@@ -20,21 +20,25 @@ class ClayPlasticity:
 
     - If **hardening**=EXPONENTIAL, the table data specify the following:
     
-        - Logarithmic Plastic bulk modulus, λ (dimensionless).
-        - Stress ratio at critical state, M.
-        - The initial yield surface size, a0.
-        - ββ, the parameter defining the size of the yield surface on the “wet” side of critical state.
-        - KK, the ratio of the flow stress in triaxial tension to the flow stress in triaxial compression. 0.778≤K≤1.0. If the default value of 0.0 is accepted, a value of 1.0 is assumed.
+        - Logarithmic plastic bulk modulus, :math:`\lambda` (dimensionless).
+        - Stress ratio at critical state, :math:`M`.
+        - The initial yield surface size, :math:`a_{0}`.
+        - :math:`\beta`, the parameter defining the size of the yield surface on the "wet" side of critical state.
+        - :math:`K`, the ratio of the flow stress in triaxial tension to the flow stress in triaxial
+          compression. :math:`0.778 \leq K \leq 1.0`. If the default value of :math:`0.0` is accepted, a 
+          value of :math:`1.0` is assumed.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **hardening**=TABULAR, the table data specify the following:
     
-        - Stress ratio at critical state, M.
-        - The initial volumetric Plastic strain, ε_vol^pl∣0, corresponding to pc|0according to the [ClayHardening](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-clayhardeningpyc.htm?ContextScope=all) definition.
-        - ββ, the parameter defining the size of the yield surface on the “wet” side of critical state.
-        - KK, the ratio of the flow stress in triaxial tension to the flow stress in triaxial compression. 0.778≤K≤1.0.
+        - Stress ratio at critical state, :math:`M`
+        - The initial volumetric plastic strain, :math:`\left.\varepsilon_{\mathrm{vol}}^{p l}\right|_{0}`, 
+          corresponding to :math:`\left.p_{c}\right|_{0}` according to the ClayHardening definition.
+        - :math:`\beta`, the parameter defining the size of the yield surface on the "wet" side of critical state.
+        - :math:`K`, the ratio of the flow stress in triaxial tension to the flow stress in triaxial compression. 
+          :math:`0.778 \leq K \leq 1.0`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
@@ -72,7 +76,7 @@ class ClayPlasticity:
         table
             A sequence of sequences of Floats specifying the items described below.
         intercept
-            None or a Float specifying e1e1, the intercept of the virgin consolidation line with the
+            None or a Float specifying :math:`e_1`, the intercept of the virgin consolidation line with the
             void ratio axis in a plot of void ratio versus the logarithm of pressure stress. The
             default value is None.This argument is valid only if **hardening**=EXPONENTIAL.
         hardening

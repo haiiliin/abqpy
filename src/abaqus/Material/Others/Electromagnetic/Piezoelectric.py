@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class Piezoelectric:
-    """The Piezoelectric object specifies piezoelectric material properties.
+    r"""The Piezoelectric object specifies piezoelectric material properties.
 
     Notes
     -----
@@ -19,47 +19,47 @@ class Piezoelectric:
 
     - If **type**=STRESS, the table data specify the following:
     
-        - e1 11φ.
-        - e1 22φ.
-        - e1 33φ.
-        - e1 12φ.
-        - e1 13φ.
-        - e1 23φ.
-        - e2 11φ.
-        - e2 22φ.
-        - e2 33φ.
-        - e2 12φ.
-        - e2 13φ.
-        - e2 23φ.
-        - e3 11φ.
-        - e3 22φ.
-        - e3 33φ.
-        - e3 12φ.
-        - e3 13φ.
-        - e3 23φ.
+        - :math:`e_{111}^{\varphi}`.
+        - :math:`e_{122}^{\varphi}`.
+        - :math:`e_{133}^{\varphi}`.
+        - :math:`e_{112}^{\varphi}`.
+        - :math:`e_{113}^{\varphi}`.
+        - :math:`e_{123}^{\varphi}`.
+        - :math:`e_{211}^{\varphi}`.
+        - :math:`e_{222}^{\varphi}`.
+        - :math:`e_{233}^{\varphi}`.
+        - :math:`e_{212}^{\varphi}`.
+        - :math:`e_{213}^{\varphi}`.
+        - :math:`e_{223}^{\varphi}`.
+        - :math:`e_{311}^{\varphi}`.
+        - :math:`e_{322}^{\varphi}`.
+        - :math:`e_{333}^{\varphi}`.
+        - :math:`e_{312}^{\varphi}`.
+        - :math:`e_{313}^{\varphi}`.
+        - :math:`e_{323}^{\varphi}`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **type**=STRAIN, the table data specify the following:
     
-        - d1 11φ.
-        - d1 22φ.
-        - d1 33φ.
-        - d1 12φ.
-        - d1 13φ.
-        - d1 23φ.
-        - d2 11φ.
-        - d2 22φ.
-        - d2 33φ.
-        - d2 12φ.
-        - d2 13φ.
-        - d2 23φ.
-        - d3 11φ.
-        - d3 22φ.
-        - d3 33φ.
-        - d3 13φ.
-        - d3 23φ.
+        - :math:`d_{111}^{\varphi}`.
+        - :math:`d_{122}^{\varphi}`.
+        - :math:`d_{133}^{\varphi}`.
+        - :math:`d_{112}^{\varphi}`.
+        - :math:`d_{113}^{\varphi}`.
+        - :math:`d_{123}^{\varphi}`.
+        - :math:`d_{211}^{\varphi}`.
+        - :math:`d_{222}^{\varphi}`.
+        - :math:`d_{233}^{\varphi}`.
+        - :math:`d_{212}^{\varphi}`.
+        - :math:`d_{213}^{\varphi}`.
+        - :math:`d_{223}^{\varphi}`.
+        - :math:`d_{311}^{\varphi}`.
+        - :math:`d_{322}^{\varphi}`.
+        - :math:`d_{333}^{\varphi}`.
+        - :math:`d_{313}^{\varphi}`.
+        - :math:`d_{323}^{\varphi}`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.

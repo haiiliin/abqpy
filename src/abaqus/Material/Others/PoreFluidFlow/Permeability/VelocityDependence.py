@@ -1,5 +1,5 @@
 class VelocityDependence:
-    """The VelocityDependence object specifies the dependence of the permeability of a material
+    r"""The VelocityDependence object specifies the dependence of the permeability of a material
     on the velocity of fluid flow.
 
     Notes
@@ -15,8 +15,8 @@ class VelocityDependence:
 
     The table data for this object are:
 
-    - β. Only β> 0.0 is allowed.
-    - Void ratio, ee.
+    - :math:`\beta$. Only $\beta>0.0` is allowed.
+    - Void ratio, :math:`e`.
 
     The corresponding analysis keywords are:
 

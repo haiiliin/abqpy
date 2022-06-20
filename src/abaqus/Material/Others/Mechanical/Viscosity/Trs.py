@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class Trs:
-    """The Trs object defines the temperature-time shift for time history viscoelastic
+    r"""The Trs object defines the temperature-time shift for time history viscoelastic
     analysis.
 
     Notes
@@ -20,9 +20,9 @@ class Trs:
 
     The table data for this object are:
 
-    - Reference temperature, θ0θ0.
-    - Calibration constant, C1C1.
-    - Calibration constant, C2C2.
+    - Reference temperature, :math:`\theta_{0}`.
+    - Calibration constant, :math:`C_{1}`.
+    - Calibration constant, :math:`C_{2}`.
 
     The corresponding analysis keywords are:
 

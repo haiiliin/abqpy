@@ -4,7 +4,7 @@ from ..Potential import Potential
 
 
 class Creep:
-    """The Creep object defines a creep law.
+    r"""The Creep object defines a creep law.
 
     Notes
     -----
@@ -21,63 +21,63 @@ class Creep:
 
     - If **law**=STRAIN or **law**=TIME, the table data specify the following:
     
-        - A.
-        - n.
-        - m.
+        - :math:`A`.
+        - :math:`n`.
+        - :math:`m`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **law**=HYPERBOLIC_SINE, the table data specify the following:
     
-        - A.
-        - B.
-        - n.
-        - △⁢H, if the data depend on temperature.
-        - R.
+        - :math:`A`.
+        - :math:`B`.
+        - :math:`n`.
+        - :math:`\triangle H`, if the data depend on temperature.
+        - :math:`R`
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
     - If **law**=ANAND, the table data specify the following:
     
-        - s1.
-        - QR.
-        - A.
-        - ξ.
-        - m.
-        - A0.
-        - ˆS.
-        - n.
-        - a.
-        - S2.
-        - S3.
-        - A1.
-        - A2.
-        - A3.
-        - A4.
+        - :math:`s_{1}`.
+        - :math:`\frac{Q}{R}`.
+        - :math:`A`.
+        - :math:`\xi`.
+        - :math:`m`.
+        - :math:`A_{0}`.
+        - :math:`\widehat{S}`
+        - :math:`n`.
+        - :math:`a`.
+        - :math:`S_{2}`.
+        - :math:`S_{3}`.
+        - :math:`A_{1}`.
+        - :math:`A_{2}`.
+        - :math:`A_{3}`.
+        - :math:`A_{4}`.
     - If **law**=DARVEAUX, the table data specify the following:
     
-        - Css.
-        - QR.
-        - α.
-        - n.
-        - ϵT.
-        - B.
+        - :math:`C_{s s}`.
+        - :math:`\frac{Q}{R}`.
+        - :math:`\alpha`.
+        - :math:`n`.
+        - :math:`\epsilon_{T}`.
+        - :math:`B`.
     - If **law**=DOUBLE_POWER, the table data specify the following:
     
-        - A1.
-        - B1.
-        - C1.
-        - A2.
-        - B2.
-        - C2.
-        - σ0.
+        - :math:`A_{1}`.
+        - :math:`B_{1}`.
+        - :math:`C_{1}`.
+        - :math:`A_{2}`.
+        - :math:`B_{2}`.
+        - :math:`C_{2}`.
+        - :math:`\sigma_{0}`.
     - If **law**=POWER_LAW or **law**=TIME_POWER_LAW, the table data specify the following:
     
-        - q0.
-        - n.
-        - m.
-        - ∙ε0•.
+        - :math:`q_{0}`
+        - :math:`n`.
+        - :math:`m`.
+        - :math:`\varepsilon_{0}^{\bullet}`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.

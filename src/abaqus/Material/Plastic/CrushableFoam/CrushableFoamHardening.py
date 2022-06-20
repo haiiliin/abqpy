@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class CrushableFoamHardening:
-    """The CrushableFoamHardening object specifies hardening for the crushable foam plasticity
+    r"""The CrushableFoamHardening object specifies hardening for the crushable foam plasticity
     model.
 
     Notes
@@ -18,8 +18,9 @@ class CrushableFoamHardening:
 
     The table data for this object are:
 
-    - The yield stress in uniaxial compression, σcσc.
-    - The absolute value of the corresponding Plastic strain.(The first tabular value entered must always be zero.)
+    - The yield stress in uniaxial compression, :math:`\sigma_c`.
+    - The absolute value of the corresponding Plastic strain.(The first tabular 
+      value entered must always be zero.)
     - Temperature, if the data depend on temperature.
     - Value of the first field variable, if the data depend on field variables.
     - Value of the second field variable.
@@ -42,8 +43,7 @@ class CrushableFoamHardening:
             .. code-block:: python
             
                 mdb.models[name].materials[name].crushableFoam.CrushableFoamHardening
-                session.odbs[name].materials[name].crushableFoam\
-            - .CrushableFoamHardening
+                session.odbs[name].materials[name].crushableFoam.CrushableFoamHardening
         
         Parameters
         ----------

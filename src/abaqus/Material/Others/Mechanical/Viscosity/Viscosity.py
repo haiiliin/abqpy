@@ -20,11 +20,11 @@ class Viscosity:
 
     - If **type**=NEWTONIAN, the table data specify the following:
 
-        - Viscosity, k.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+    - Viscosity, :math:`k`.
+    - Temperature, if the data depend on temperature.
+    - Value of the first field variable, if the data depend on field variables.
+    - Value of the second field variable.
+    - Etc.
 
     The corresponding analysis keywords are:
 

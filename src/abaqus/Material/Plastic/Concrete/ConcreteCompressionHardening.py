@@ -18,9 +18,9 @@ class ConcreteCompressionHardening:
 
     The table data for this object are:
 
-    - Yield stress in compression, σcσc.
-    - Plastic (crushing) strain, ϵinc
-    - Plastic (crushing) strain rate, ϵinc
+    - Yield stress in compression, :math:`\sigma_{c}`.
+    - Inelastic (crushing) strain, :math:`\epsilon_{c}^{i n}`.
+    - Inelastic (crushing) strain rate, :math:`\dot{\epsilon}_{c}^{i n}`.
     - Temperature, if the data depend on temperature.
     - Value of the first field variable, if the data depend on field variables.
     - Value of the second field variable.

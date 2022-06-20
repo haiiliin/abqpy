@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class SoretEffect:
-    """The SoretEffect object defines temperature gradient driven mass diffusion.
+    r"""The SoretEffect object defines temperature gradient driven mass diffusion.
 
     Notes
     -----
@@ -17,7 +17,7 @@ class SoretEffect:
 
     The table data for this object are:
 
-    - Soret effect factor, κs.
+    - Soret effect factor, :math:`\kappa_s`.
     - Concentration.
     - Temperature, if the data depend on temperature.
     - Value of the first field variable, if the data depend on field variables.

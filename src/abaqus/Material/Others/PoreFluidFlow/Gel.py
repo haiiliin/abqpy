@@ -1,5 +1,5 @@
 class Gel:
-    """The Gel object defines a swelling gel.
+    r"""The Gel object defines a swelling gel.
 
     Notes
     -----
@@ -14,10 +14,10 @@ class Gel:
 
     The table data for this object are:
 
-    - Radius of gel particles when completely dry, radry.
-    - Fully swollen radius of gel particles, raf.
-    - Number of gel particles per unit volume, ka.
-    - Relaxation time constant for long-term swelling of gel particles, τ1.
+    - Radius of gel particles when completely dry, :math:`r_{a}^{\mathrm{dry}}`.
+    - Fully swollen radius of gel particles, :math:`r_{a}^{f}`.
+    - Number of gel particles per unit volume, :math:`k_{a}`.
+    - Relaxation time constant for long-term swelling of gel particles, :math:`\tau_{1}`.
 
     The corresponding analysis keywords are:
 

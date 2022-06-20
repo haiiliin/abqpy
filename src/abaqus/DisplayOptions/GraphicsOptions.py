@@ -188,7 +188,7 @@ class GraphicsOptions:
         A Float specifying a tolerance used when computing the appropriate scale for
         transforming result (contour) values to texture values. When set too low the 'out of
         range' colors may be incorrectly shown for values near the range limits. The default
-        value is 0.5×10–5.
+        value is 0.5×10-5.
     options: str
         None or a :py:class:`~abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions` object specifying :py:class:`~.the` object from which values are to be
         copied. If o:py:class:`~.the`r arguments are also supplied to setValues, :py:class:`~.the`y will override :py:class:`~.the` values
@@ -427,7 +427,7 @@ class GraphicsOptions:
     # A Float specifying a tolerance used when computing the appropriate scale for
     # transforming result (contour) values to texture values. When set too low the 'out of
     # range' colors may be incorrectly shown for values near the range limits. The default
-    # value is 0.5×10–5.
+    # value is 0.5×10-5.
     contourRangeTexturePrecision: float = 0
 
     # None or a GraphicsOptions object specifying the object from which values are to be
@@ -697,7 +697,7 @@ class GraphicsOptions:
             A Float specifying a tolerance used when computing the appropriate scale for
             transforming result (contour) values to texture values. When set too low the 'out of
             range' colors may be incorrectly shown for values near the range limits. The default
-            value is 0.5×10–5.
+            value is 0.5×10-5.
 
         Raises
         ------

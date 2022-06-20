@@ -34,9 +34,9 @@ class FreeBodyReportOptions:
         numDigits
             An Int specifying the number of decimal places. The default value is 3.
         forceThreshold
-            A Float specifying the threshold value for force. The default value is 10–6.
+            A Float specifying the threshold value for force. The default value is 10-6.
         momentThreshold
-            A Float specifying the threshold value for moment. The default value is 10–6.
+            A Float specifying the threshold value for moment. The default value is 10-6.
         numberFormat
             A SymbolicConstant specifying the number format. Possible values are SCIENTIFIC, FIXED,
             and ENGINEERING. The default value is SCIENTIFIC.

@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class ElectricalConductivity:
-    """The ElectricalConductivity object specifies electrical conductivity.
+    r"""The ElectricalConductivity object specifies electrical conductivity.
 
     Notes
     -----
@@ -27,9 +27,9 @@ class ElectricalConductivity:
         - Etc.
     - If **type**=ORTHOTROPIC, the table data specify the following:
     
-        - σE1E.
-        - σE2E.
-        - σE3E.
+        - :math:`\sigma_{11}^{E}`.
+        - :math:`\sigma_{22}^{E}`.
+        - :math:`\sigma_{33}^{E}`.
         - Frequency, if the data depend on frequency.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
@@ -37,12 +37,12 @@ class ElectricalConductivity:
         - Etc.
     - If **type**=ANISOTROPIC, the table data specify the following:
     
-        - σ11E.
-        - σ12E.
-        - σE2E.
-        - σE3E.
-        - σE3E.
-        - σE3E.
+        - :math:`\sigma_{11}^{E}`.
+        - :math:`\sigma_{12}^{E}`.
+        - :math:`\sigma_{22}^{E}`.
+        - :math:`\sigma_{13}^{E}`.
+        - :math:`\sigma_{23}^{E}`.
+        - :math:`\sigma_{33}^{E}`.
         - Frequency, if the data depend on frequency.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.

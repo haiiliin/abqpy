@@ -19,12 +19,13 @@ class ContactArea:
         session.odbs[name].materials[name].gasketThicknessBehavior.contactArea
 
     The table data for this object are:
-        - Contact area or width; this value must be positive.
-        - Closure; this value must be positive.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+    
+    - Contact area or width; this value must be positive.
+    - Closure; this value must be positive.
+    - Temperature, if the data depend on temperature.
+    - Value of the first field variable, if the data depend on field variables.
+    - Value of the second field variable.
+    - Etc.
 
     The corresponding analysis keywords are:
 

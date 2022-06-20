@@ -41,10 +41,7 @@ class MohrCoulombHardening:
             
             .. code-block:: python
             
-                mdb.models[name].materials[name].mohrCoulombPlasticity\
-            - .MohrCoulombHardening
-                session.odbs[name].materials[name].mohrCoulombPlasticity\
-            - .MohrCoulombHardening
+                mdb.models[name].materials[name].mohrCoulombPlasticity.MohrCoulombHardening.MohrCoulombHardeningmaterials[name].mohrCoulombPlasticity.MohrCoulombHardening
         
         Parameters
         ----------

@@ -17,7 +17,7 @@ class ClayHardening:
 
     The table data for this object are:
 
-    - The hydrostatic pressure stress at yield, pc.
+    - The hydrostatic pressure stress at yield, :math:`p_c`.
     - The absolute value of the corresponding volumetric Plastic strain.
     - Temperature, if the data depend on temperature.
     - Value of the first field variable, if the data depend on field variables.

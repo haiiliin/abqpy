@@ -41,15 +41,15 @@ class ConnVelocityBCState(BoundaryConditionState):
         MODIFIED.
     vr1State: SymbolicConstant
         A SymbolicConstant specifying the propagation state of the rotational velocity component
-        in the connector's local 4–direction. Possible values are UNSET, SET, UNCHANGED, FREED,
+        in the connector's local 4-direction. Possible values are UNSET, SET, UNCHANGED, FREED,
         and MODIFIED.
     vr2State: SymbolicConstant
         A SymbolicConstant specifying the propagation state of the rotational velocity component
-        in the connector's local 5–direction. Possible values are UNSET, SET, UNCHANGED, FREED,
+        in the connector's local 5-direction. Possible values are UNSET, SET, UNCHANGED, FREED,
         and MODIFIED.
     vr3State: SymbolicConstant
         A SymbolicConstant specifying the propagation state of the rotational velocity component
-        in the connector's local 6–direction. Possible values are UNSET, SET, UNCHANGED, FREED,
+        in the connector's local 6-direction. Possible values are UNSET, SET, UNCHANGED, FREED,
         and MODIFIED.
     amplitudeState: SymbolicConstant
         A SymbolicConstant specifying the propagation state of the amplitude reference. Possible
@@ -124,17 +124,17 @@ class ConnVelocityBCState(BoundaryConditionState):
     v3State: SymbolicConstant = None
 
     # A SymbolicConstant specifying the propagation state of the rotational velocity component
-    # in the connector's local 4–direction. Possible values are UNSET, SET, UNCHANGED, FREED,
+    # in the connector's local 4-direction. Possible values are UNSET, SET, UNCHANGED, FREED,
     # and MODIFIED.
     vr1State: SymbolicConstant = None
 
     # A SymbolicConstant specifying the propagation state of the rotational velocity component
-    # in the connector's local 5–direction. Possible values are UNSET, SET, UNCHANGED, FREED,
+    # in the connector's local 5-direction. Possible values are UNSET, SET, UNCHANGED, FREED,
     # and MODIFIED.
     vr2State: SymbolicConstant = None
 
     # A SymbolicConstant specifying the propagation state of the rotational velocity component
-    # in the connector's local 6–direction. Possible values are UNSET, SET, UNCHANGED, FREED,
+    # in the connector's local 6-direction. Possible values are UNSET, SET, UNCHANGED, FREED,
     # and MODIFIED.
     vr3State: SymbolicConstant = None
 

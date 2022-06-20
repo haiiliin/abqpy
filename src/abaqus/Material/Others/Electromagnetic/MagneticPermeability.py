@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class MagneticPermeability:
-    """The MagneticPermeability object specifies magnetic permeability.
+    r"""The MagneticPermeability object specifies magnetic permeability.
 
     Notes
     -----
@@ -35,9 +35,9 @@ class MagneticPermeability:
         - Etc.
     - If **type**=ORTHOTROPIC, the table data specify the following:
     
-        - μ11E.
-        - μ22E.
-        - μ33E.
+        - :math:`\mu_{11}^{E}`.
+        - :math:`\mu_{22}^{E}`.
+        - :math:`\mu_{33}^{E}`.
         - Frequency, if the data depend on frequency.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
@@ -53,12 +53,12 @@ class MagneticPermeability:
         - Etc.
     - If **type**=ANISOTROPIC, the table data specify the following:
     
-        - μ11E.
-        - μ12E.
-        - μ22E.
-        - μ13E.
-        - μ23E.
-        - μ33E.
+        - :math:`\mu_{11}^{E}`.
+        - :math:`\mu_{12}^{E}`.
+        - :math:`\mu_{22}^{E}`.
+        - :math:`\mu_{13}^{E}`.
+        - :math:`\mu_{23}^{E}`.
+        - :math:`\mu_{33}^{E}`.
         - Frequency, if the data depend on frequency.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
