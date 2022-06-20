@@ -71,7 +71,7 @@ class Hyperelastic:
     - If **type** = VAN_DER_WAALS, the table data specify the following:
     
         - :math:`\mu`.
-        - :math:`\bullet_{m}`.
+        - :math:`\lambda_{m}`.
         - :math:`a`.
         - :math:`\beta`.
         - :math:`D`.
