@@ -108,7 +108,7 @@ Installation
 please upgrade it to Python 3.9 or a later version if you are using an earlier version.
 
 `abqpy` is uploaded to `PyPI <https://pypi.org/project/abqpy>`_, you can simply install 
-it using pip, since abqpy (from V1.0.15) depends on `ipyparams` and it is not distributed to
+it using pip, since abqpy (from V1.0.15) depends on `ipynbname` and it is not distributed to
 anaconda, you have to use `pip` to install it manually:
 
 .. code-block:: sh
@@ -119,7 +119,7 @@ anaconda, you have to use `pip` to install it manually:
 
 .. code-block:: sh
 
-    pip install ipyparams
+    pip install ipynbname
     conda install -c haiiliin abqpy
 
 You may install the latest development version by cloning the 
@@ -128,7 +128,7 @@ the local directory:
 
 .. code-block:: sh
 
-    pip install ipyparams
+    pip install ipynbname
     git clone https://github.com/Haiiliin/abqpy.git
     cd abqpy
     python setup.py install
@@ -139,7 +139,7 @@ Dependencies
 ------------
 
 Required dependencies:
-    * ipyparams, used to get the file name of the jupyter notebook
+    * ipynbname, used to get the file name of the jupyter notebook
 
 Once you have installed `abqpy` and `PyQt5`, you can start to build your Abaqus model right 
 now.

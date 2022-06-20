@@ -44,12 +44,12 @@ it using pip:
     pip install abqpy
 
 `abqpy` is also uploaded to `anaconda <https://anaconda.org/haiiliin/abqpy>`_, you can use 
-`conda` to install it, since abqpy (from V1.0.15) depends on `ipyparams` and it is not distributed to
+`conda` to install it, since abqpy (from V1.0.15) depends on `ipynbname` and it is not distributed to
 anaconda, you have to use `pip` to install it manually:
 
 .. code-block:: sh
 
-    pip install ipyparams
+    pip install ipynbname
     conda install -c haiiliin abqpy
 
 You may install the latest development version by cloning the
@@ -58,7 +58,7 @@ the local directory:
 
 .. code-block:: sh
 
-    pip install ipyparams
+    pip install ipynbname
     git clone https://github.com/Haiiliin/abqpy.git
     cd abqpy
     python setup.py install
