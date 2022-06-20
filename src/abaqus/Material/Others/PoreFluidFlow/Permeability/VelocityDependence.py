@@ -15,7 +15,7 @@ class VelocityDependence:
 
     The table data for this object are:
 
-    - :math:`\beta$. Only $\beta>0.0` is allowed.
+    - :math:`\beta`. Only :math:`\beta>0.0` is allowed.
     - Void ratio, :math:`e`.
 
     The corresponding analysis keywords are:

@@ -18,7 +18,7 @@ class CastIronCompressionHardening:
 
     The table data for this object are:
 
-    - Yield stress in compression, $\sigma_c$.
+    - Yield stress in compression, :math:`\sigma_c`.
     - The absolute value of the corresponding Plastic strain.(The first tabular value entered must always be zero.)
     - Temperature, if the data depend on temperature.
     - Value of the first field variable, if the data depend on field variables.

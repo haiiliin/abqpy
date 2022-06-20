@@ -21,11 +21,11 @@ class ConcreteDamagedPlasticity:
 
     The table data for this object are:
 
-    - Dilation angle, :math:`\psi$ (in degrees) in the $p_{-} q_{\text {plane }}`
+    - Dilation angle, :math:`\psi` (in degrees) in the :math:`p_{-} q_{\text {plane }}`
     - Flow potential eccentricity, :math:`\epsilon`. The default value is 0.1.
     - :math:`\sigma_{b 0} / \sigma_{t 0}`, the ratio of initial equibiaxial compressive 
       yield stress to initial uniaxial compressive yield stress. The default value 
-      is :math:`1.16$. stress is negative. The default value is 2/3. default value is $0.0`.
+      is 1.16. stress is negative. The default value is 2/3. default value is 0.0.
     - :math:`K_c`, the ratio of the second stress invariant on the tensile meridian, to that on 
       the compressive meridian, at initial yield for any given value of the pressure invariant :math:`p`
       such that the maximum principal stress is negative. The default value is 2/3.

@@ -1247,40 +1247,40 @@ class Material(MaterialBase):
         solidTable
             A sequence of sequences of Floats specifying the following:
             
-            - $A_{s}$.
-            - $B_{s}$.
-            - ${\omega}_{s}$.
-            - $R_{1s}$.
-            - $R_{2s}$.
+            - :math:`A_{s}`.
+            - :math:`B_{s}`.
+            - :math:`{\omega}_{s}`.
+            - :math:`R_{1s}`.
+            - :math:`R_{2s}`.
             
             The default value is an empty sequence.
         gasTable
             A sequence of sequences of Floats specifying the following:
             
-            - $A_{g}$.
-            - $B_{g}$.
-            - ${\omega}_{g}$.
-            - $R_{1g}$.
-            - $R_{2g}$.
+            - :math:`A_{g}`.
+            - :math:`B_{g}`.
+            - :math:`{\omega}_{g}`.
+            - :math:`R_{1g}`.
+            - :math:`R_{2g}`.
             
             The default value is an empty sequence.
         reactionTable
             A sequence of sequences of Floats specifying the following:
             
-            - Initial Pressure, $I$.
-            - Product co-volume, $a$.
-            - Exponent on the unreacted fraction (ignition term), $x$.
-            - First burn rate coefficient, $G_{1}$
-            - Exponent on the unreacted fraction (growth term), $c$.
-            - Exponent on the reacted fraction (growth term), $d$.
-            - Pressure exponent (growth term), $y$.
-            - Second burn rate coefficient, $G_{2}$.
-            - Exponent on the unreacted fraction (completion term), $e$.
-            - Exponent on the reacted fraction (completion term), $g$.
-            - Pressure exponent (completion term), $z$.
-            - Initial reacted fraction, ${F^{max}}_{ig}$.
-            - Maximum reacted fraction for the growth term, ${F^{max}}_{G1}$.
-            - Minimum reacted fraction, ${F^{min}}_{G2}$.
+            - Initial Pressure, :math:`I`.
+            - Product co-volume, :math:`a`.
+            - Exponent on the unreacted fraction (ignition term), :math:`x`.
+            - First burn rate coefficient, :math:`G_{1}`
+            - Exponent on the unreacted fraction (growth term), :math:`c`.
+            - Exponent on the reacted fraction (growth term), :math:`d`.
+            - Pressure exponent (growth term), :math:`y`.
+            - Second burn rate coefficient, :math:`G_{2}`.
+            - Exponent on the unreacted fraction (completion term), :math:`e`.
+            - Exponent on the reacted fraction (completion term), :math:`g`.
+            - Pressure exponent (completion term), :math:`z`.
+            - Initial reacted fraction, :math:`{F^{max}}_{ig}`.
+            - Maximum reacted fraction for the growth term, :math:`{F^{max}}_{G1}`.
+            - Minimum reacted fraction, :math:`{F^{min}}_{G2}`.
             
             The default value is an empty sequence.
         gasSpecificTable

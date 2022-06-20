@@ -111,9 +111,9 @@ class Elastic:
         
     - If **type**=TRACTION, the table data specify the following:
     
-        - :math:`E` for warping elements; $E_{nn} for cohesive elements.
-        - :math:`G_1` for warping elements; $E_{ss} for cohesive elements.
-        - :math:`G_2` for warping elements; $E_{tt} for cohesive elements.
+        - :math:`E` for warping elements; :math:`E_{nn}` for cohesive elements.
+        - :math:`G_1` for warping elements; :math:`E_{ss}` for cohesive elements.
+        - :math:`G_2` for warping elements; :math:`E_{tt}` for cohesive elements.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.

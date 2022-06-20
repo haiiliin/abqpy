@@ -18,7 +18,7 @@ class MoistureSwelling:
     The table data for this object are:
 
     - Volumetric moisture swelling strain, :math:`\varepsilon^{m s}`.
-    - Saturation, :math:`s$. This value must lie in the range $0.0 \leq s \leq 1.0`.
+    - Saturation, :math:`s`. This value must lie in the range :math:`0.0 \leq s \leq 1.0`.
 
     The corresponding analysis keywords are:
 

@@ -47,8 +47,8 @@ class Hyperelastic:
         
     - If **type**=OGDEN, the table data specify the following for values of nn:
     
-        - :math:`\mu_{i}` and :math:`\alpha_{i}` for :math:`i` from 1 to $n.
-        - :math:`n` coefficients $D_{i}`.
+        - :math:`\mu_{i}` and :math:`\alpha_{i}` for :math:`i` from 1 to :math:`n`.
+        - :math:`n` coefficients :math:`D_{i}`.
         - Temperature, if the data depend on temperature. Temperature dependence is not 
           allowed for :math:`4 \leq n \leq 6` in an Abaqus/Explicit analysis.
           
