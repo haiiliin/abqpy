@@ -160,17 +160,17 @@ class EulerianMotionBCState(BoundaryConditionState):
     negPosition3: SymbolicConstant = FREE
 
     # None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
-    # 1 direction. If **expansionRatio1**=None, then there is no upper limit. The default value
+    # 1 direction. If **expansionRatio1** = None, then there is no upper limit. The default value
     # is None.
     expansionRatio1: float = None
 
     # None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
-    # 2 direction. If **expansionRatio2**=None, then there is no upper limit. The default value
+    # 2 direction. If **expansionRatio2** = None, then there is no upper limit. The default value
     # is None.
     expansionRatio2: float = None
 
     # None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
-    # 3 direction. If **expansionRatio3**=None, then there is no upper limit. The default value
+    # 3 direction. If **expansionRatio3** = None, then there is no upper limit. The default value
     # is None.
     expansionRatio3: float = None
 
@@ -199,7 +199,7 @@ class EulerianMotionBCState(BoundaryConditionState):
 
     # A Float specifying the lower bounds on the volume fraction when determining which nodes
     # to include in the surface bounding box calculation for an Eulerian material surface.
-    # This argument applies only when **followRegion**=False. The default value is 0.5.
+    # This argument applies only when **followRegion** = False. The default value is 0.5.
     volThreshold: float = 0
 
     # None or a Float specifying the buffer between the surface box and the Eulerian section

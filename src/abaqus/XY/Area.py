@@ -94,7 +94,7 @@ class Area:
     positionMethod: SymbolicConstant = AUTO_ALIGN
 
     # A SymbolicConstant specifying the relative position of the area in its parent when
-    # **positionMethod**=AUTO_ALIGN. Possible values are:
+    # **positionMethod** = AUTO_ALIGN. Possible values are:
     # - BOTTOM_LEFT
     # - BOTTOM_CENTER
     # - BOTTOM_RIGHT
@@ -122,7 +122,7 @@ class Area:
     widthScale: float = 1
 
     # A Float specifying the scale as a fraction of the height of the available area when the
-    # **sizeMethod**=MANUAL. The valid range is (0, 1). The default value is 1.0.
+    # **sizeMethod** = MANUAL. The valid range is (0, 1). The default value is 1.0.
     heightScale: float = 1
 
     # A Float specifying the left padding of the area in mm. The default value is 1.0.
@@ -148,7 +148,7 @@ class Area:
     origin: tuple[float] = ()
 
     # A pair of Floats specifying the X- and Y-offsets of the origin as a fraction of the
-    # available area. The **originOffset** argument is ignored unless **positionMethod**=MANUAL.
+    # available area. The **originOffset** argument is ignored unless **positionMethod** = MANUAL.
     # The default value is (-1, 0). The valid range for each float is (0, 1).
     originOffset: tuple[float] = ()
 
@@ -184,7 +184,7 @@ class Area:
             and MANUAL. The default value is AUTO_ALIGN.
         alignment
             A SymbolicConstant specifying the relative position of the area in its parent when
-            **positionMethod**=AUTO_ALIGN. Possible values are:
+            **positionMethod** = AUTO_ALIGN. Possible values are:
 
             - BOTTOM_LEFT
             - BOTTOM_CENTER
@@ -202,14 +202,14 @@ class Area:
             AUTOMATIC and MANUAL. The default value is AUTOMATIC.
         originOffset
             A pair of Floats specifying the X- and Y-offsets of the origin as a fraction of the
-            available area. The **originOffset** argument is ignored unless **positionMethod**=MANUAL.
+            available area. The **originOffset** argument is ignored unless **positionMethod** = MANUAL.
             The default value is (-1, 0). The valid range for each float is (0, 1).
         widthScale
             A Float specifying the scale as a fraction of the width of the available area when the
             sizeMethod=MANUAL. The valid range is (0, 1). The default value is 1.0.
         heightScale
             A Float specifying the scale as a fraction of the height of the available area when the
-            **sizeMethod**=MANUAL. The valid range is (0, 1). The default value is 1.0.
+            **sizeMethod** = MANUAL. The valid range is (0, 1). The default value is 1.0.
         inset
             A Boolean specifying whether the area is inset or occupies a reserved area. The default
             value is OFF.

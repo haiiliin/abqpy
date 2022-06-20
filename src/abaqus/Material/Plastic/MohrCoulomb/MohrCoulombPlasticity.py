@@ -64,7 +64,7 @@ class MohrCoulombPlasticity:
             A sequence of sequences of Floats specifying the items described below.
         deviatoricEccentricity
             None or a Float specifying the flow potential eccentricity in the deviatoric plane, 
-            :math:`e`; :math:`1 / 2 \leq e \leq 1.0`. If **deviatoricEccentricity**=None, Abaqus calculates the value using the
+            :math:`e`; :math:`1 / 2 \leq e \leq 1.0`. If **deviatoricEccentricity** = None, Abaqus calculates the value using the
             specified Mohr-Coulomb angle of friction. The default value is None.
         meridionalEccentricity
             A Float specifying the flow potential eccentricity in the meridional plane, :math:`\epsilon`. The

@@ -98,17 +98,17 @@ class SurfaceTraction(Load):
     distributionType: SymbolicConstant = UNIFORM
 
     # A String specifying the name of the AnalyticalField object associated with this load.
-    # The **field** argument applies only when **distributionType**=FIELD. The default value is an
+    # The **field** argument applies only when **distributionType** = FIELD. The default value is an
     # empty string.
     field: str = ""
 
-    # A String specifying a CSYS defined by a user-subroutine. If **userCsys**=None, the degrees
+    # A String specifying a CSYS defined by a user-subroutine. If **userCsys** = None, the degrees
     # of freedom are defined in the global coordinate system or by the **localCsys** parameter
     # if defined. The default value is "None".
     userCsys: str = ""
 
     # None or a DatumCsys object specifying the local coordinate system of the load's degrees
-    # of freedom. If **localCsys**=None, the degrees of freedom are defined in the global
+    # of freedom. If **localCsys** = None, the degrees of freedom are defined in the global
     # coordinate system or by the **userCsys** parameter if defined. When this member is
     # queried, it returns an Int. The default value is None.
     localCsys: int = None
@@ -160,13 +160,13 @@ class SurfaceTraction(Load):
             A Region object specifying the region to which the load is applied.
         magnitude
             A Float or Complex specifying the load magnitude. **magnitude** is optional if
-            **distributionType**=USER_DEFINED.
+            **distributionType** = USER_DEFINED.
         distributionType
             A SymbolicConstant specifying how the surface traction is distributed spatially.
             Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -181,11 +181,11 @@ class SurfaceTraction(Load):
             AXIS_1.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the load's degrees
-            of freedom. If **localCsys**=None, the degrees of freedom are defined in the global
+            of freedom. If **localCsys** = None, the degrees of freedom are defined in the global
             coordinate system or by the **userCsys** parameter if defined. When this member is
             queried, it returns an Int. The default value is None.
         userCsys
-            A String specifying a CSYS defined by a user-subroutine. If **userCsys**=None, the degrees
+            A String specifying a CSYS defined by a user-subroutine. If **userCsys** = None, the degrees
             of freedom are defined in the global coordinate system or by the **localCsys** parameter
             if defined. The default value is "None".
         directionVector
@@ -237,7 +237,7 @@ class SurfaceTraction(Load):
             Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -252,11 +252,11 @@ class SurfaceTraction(Load):
             AXIS_1.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the load's degrees
-            of freedom. If **localCsys**=None, the degrees of freedom are defined in the global
+            of freedom. If **localCsys** = None, the degrees of freedom are defined in the global
             coordinate system or by the **userCsys** parameter if defined. When this member is
             queried, it returns an Int. The default value is None.
         userCsys
-            A String specifying a CSYS defined by a user-subroutine. If **userCsys**=None, the degrees
+            A String specifying a CSYS defined by a user-subroutine. If **userCsys** = None, the degrees
             of freedom are defined in the global coordinate system or by the **localCsys** parameter
             if defined. The default value is "None".
         directionVector

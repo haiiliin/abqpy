@@ -99,8 +99,8 @@ class MaterialOrientation:
             default value is an empty string.
         orientationType
             A SymbolicConstant specifying the method used to define the material orientation. If
-            **orientationType**=SYSTEM, the **region** and **localCsys** arguments are required. If
-            **orientationType**=FIELD, the **fieldName** argument is required. Possible values are
+            **orientationType** = SYSTEM, the **region** and **localCsys** arguments are required. If
+            **orientationType** = FIELD, the **fieldName** argument is required. Possible values are
             GLOBAL, SYSTEM, FIELD, DISCRETE, and USER. The default value is GLOBAL.
         normalAxisDirection
             A SymbolicConstant specifying the axis that is defined by the normal axis direction for
@@ -204,8 +204,8 @@ class MaterialOrientation:
             default value is an empty string.
         orientationType
             A SymbolicConstant specifying the method used to define the material orientation. If
-            **orientationType**=SYSTEM, the **region** and **localCsys** arguments are required. If
-            **orientationType**=FIELD, the **fieldName** argument is required. Possible values are
+            **orientationType** = SYSTEM, the **region** and **localCsys** arguments are required. If
+            **orientationType** = FIELD, the **fieldName** argument is required. Possible values are
             GLOBAL, SYSTEM, FIELD, DISCRETE, and USER. The default value is GLOBAL.
         additionalRotationField
             A String specifying the name of the DiscreteField object specifying the additional

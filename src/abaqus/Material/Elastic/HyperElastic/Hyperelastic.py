@@ -25,34 +25,34 @@ class Hyperelastic:
 
     The table data for this object are:
 
-    - If **type**=ARRUDA_BOYCE, the table data specify the following:
+    - If **type** = ARRUDA_BOYCE, the table data specify the following:
     
         - :math:`\mu`.
         - :math:`\lambda_{m}`.
         - :math:`D`.
         - Temperature, if the data depend on temperature.
         
-    - If **type**=MOONEY_RIVLIN, the table data specify the following:
+    - If **type** = MOONEY_RIVLIN, the table data specify the following:
     
         - :math:`C_{10}`
         - :math:`C_{01}`.
         - :math:`D_{1}`.
         - Temperature, if the data depend on temperature.
         
-    - If **type**=NEO_HOOKE, the table data specify the following:
+    - If **type** = NEO_HOOKE, the table data specify the following:
     
         - :math:`C_{10}`
         - :math:`D_{1}`.
         - Temperature, if the data depend on temperature.
         
-    - If **type**=OGDEN, the table data specify the following for values of nn:
+    - If **type** = OGDEN, the table data specify the following for values of nn:
     
         - :math:`\mu_{i}` and :math:`\alpha_{i}` for :math:`i` from 1 to :math:`n`.
         - :math:`n` coefficients :math:`D_{i}`.
         - Temperature, if the data depend on temperature. Temperature dependence is not 
           allowed for :math:`4 \leq n \leq 6` in an Abaqus/Explicit analysis.
           
-    - If **type**=POLYNOMIAL, the table data specify the following for values of nn:
+    - If **type** = POLYNOMIAL, the table data specify the following for values of nn:
     
         - :math:`C_{i j}` for each value of :math:`(i+j)` from 1 to :math:`n` with 
           :math:`i` decreasing from :math:`(i+j)` to zero and :math:`j` increasing 
@@ -61,14 +61,14 @@ class Hyperelastic:
         - Temperature, if the data depend on temperature. Temperature dependence is
           not allowed for :math:`3 \leq n \leq 6` in an Abaqus/Explicit analysis.
     
-    - If **type**=REDUCED_POLYNOMIAL, the table data specify the following for values of nn:
+    - If **type** = REDUCED_POLYNOMIAL, the table data specify the following for values of nn:
     
         - :math:`C_{i 0}` for :math:`i` from 1 to :math:`n`.
         - :math:`n` coefficients :math:`D_{i}`
         - Temperature, if the data depend on temperature. Temperature dependence 
           is not allowed for :math:`4 \leq n \leq 6` in an Abaqus/Explicit analysis.
           
-    - If **type**=VAN_DER_WAALS, the table data specify the following:
+    - If **type** = VAN_DER_WAALS, the table data specify the following:
     
         - :math:`\mu`.
         - :math:`\bullet_{m}`.
@@ -77,7 +77,7 @@ class Hyperelastic:
         - :math:`D`.
         - Temperature, if the data depend on temperature.
         
-    - If **type**=YEOH, the table data specify the following:
+    - If **type** = YEOH, the table data specify the following:
     
         - :math:`C_{10}`
         - :math:`C_{20}`
@@ -88,7 +88,7 @@ class Hyperelastic:
         - Temperature, if the data depend on temperature. Temperature dependence 
           is not allowed in an Abaqus/Explicit analysis.
     
-    The None object is the default value if **testData**=ON.
+    The None object is the default value if **testData** = ON.
 
     The corresponding analysis keywords are:
 
@@ -146,7 +146,7 @@ class Hyperelastic:
         ----------
         table
             A sequence of sequences of Floats specifying the items described below. This argument is
-            valid only if **testData**=OFF.
+            valid only if **testData** = OFF.
         type
             A SymbolicConstant specifying the type of strain energy potential. Possible values
             are:
@@ -171,12 +171,12 @@ class Hyperelastic:
             A Boolean specifying whether the data depend on temperature. The default value is OFF.
         n
             An Int specifying the order of the strain energy potential. The default value is 1.If
-            **testData**=ON and **type**=POLYNOMIAL, **n** can take only the values 1 or 2.If
-            **testData**=ON and **type**=OGDEN or if **testData**=OFF for either type, 1 ≤n≤≤n≤ 6.If
-            **type**=USER, this argument cannot be used.
+            **testData** = ON and **type** = POLYNOMIAL, **n** can take only the values 1 or 2.If
+            **testData** = ON and **type** = OGDEN or if **testData** = OFF for either type, 1 ≤n≤≤n≤ 6.If
+            **type** = USER, this argument cannot be used.
         beta
             The SymbolicConstant FITTED_VALUE or a Float specifying the invariant mixture parameter.
-            This argument is valid only if **testData**=ON and **type**=VAN_DER_WAALS. The default value
+            This argument is valid only if **testData** = ON and **type** = VAN_DER_WAALS. The default value
             is FITTED_VALUE.
         testData
             A Boolean specifying whether test data are supplied. The default value is ON.
@@ -195,7 +195,7 @@ class Hyperelastic:
             DEFAULT.
         poissonRatio
             A Float specifying the poisson ratio. This argument is valid only if
-            **volumetricResponse**=POISSON_RATIO. The default value is 0.0.
+            **volumetricResponse** = POISSON_RATIO. The default value is 0.0.
         materialType
             A SymbolicConstant specifying the type of material. Possible values are ISOTROPIC and
             ANISOTROPIC. The default value is ISOTROPIC.

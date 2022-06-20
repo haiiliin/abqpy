@@ -54,17 +54,17 @@ class ModelChange(Interaction):
             contact pairs). The default value is OFF.
         regionType
             A SymbolicConstant specifying the region selection type. This argument is valid only
-            when **isRestart**=False. Possible values are GEOMETRY, SKINS, STRINGERS, and ELEMENTS.
+            when **isRestart** = False. Possible values are GEOMETRY, SKINS, STRINGERS, and ELEMENTS.
             The default value is GEOMETRY.
         region
             A Region object specifying the elements to be removed or reactivated. This argument is
-            valid only when **isRestart**=False.
+            valid only when **isRestart** = False.
         activeInStep
             A Boolean specifying whether elements are being removed or reactivated. This argument is
-            valid only when **isRestart**=False. The default value is OFF.
+            valid only when **isRestart** = False. The default value is OFF.
         includeStrain
             A Boolean specifying whether stress/displacement elements are reactivated with strain.
-            This argument is valid only when **isRestart**=False and when **activeInStep**=True. The
+            This argument is valid only when **isRestart** = False and when **activeInStep** = True. The
             default value is OFF.
 
         Returns
@@ -93,17 +93,17 @@ class ModelChange(Interaction):
             contact pairs). The default value is OFF.
         regionType
             A SymbolicConstant specifying the region selection type. This argument is valid only
-            when **isRestart**=False. Possible values are GEOMETRY, SKINS, STRINGERS, and ELEMENTS.
+            when **isRestart** = False. Possible values are GEOMETRY, SKINS, STRINGERS, and ELEMENTS.
             The default value is GEOMETRY.
         region
             A Region object specifying the elements to be removed or reactivated. This argument is
-            valid only when **isRestart**=False.
+            valid only when **isRestart** = False.
         activeInStep
             A Boolean specifying whether elements are being removed or reactivated. This argument is
-            valid only when **isRestart**=False. The default value is OFF.
+            valid only when **isRestart** = False. The default value is OFF.
         includeStrain
             A Boolean specifying whether stress/displacement elements are reactivated with strain.
-            This argument is valid only when **isRestart**=False and when **activeInStep**=True. The
+            This argument is valid only when **isRestart** = False and when **activeInStep** = True. The
             default value is OFF.
         """
         pass
@@ -120,10 +120,10 @@ class ModelChange(Interaction):
             A String specifying the name of the step in which the interaction is modified.
         activeInStep
             A Boolean specifying whether elements are being removed or reactivated. This argument is
-            valid only when **isRestart**=False. The default value is OFF.
+            valid only when **isRestart** = False. The default value is OFF.
         includeStrain
             A Boolean specifying whether stress/displacement elements are reactivated with strain.
-            This argument is valid only when **isRestart**=False and when **activeInStep**=True. The
+            This argument is valid only when **isRestart** = False and when **activeInStep** = True. The
             default value is OFF.
         """
         pass

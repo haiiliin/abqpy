@@ -37,7 +37,7 @@ class AnalyticalField(Field):
     name: str = ""
 
     # None or a DatumCsys object specifying the local coordinate system of the field. If
-    # **localCsys**=None, the field is defined in the global coordinate system. The default
+    # **localCsys** = None, the field is defined in the global coordinate system. The default
     # value is None.
     localCsys: DatumCsys = DatumCsys()
 
@@ -155,7 +155,7 @@ class AnalyticalField(Field):
             ​	A Boolean specifying whether to include additional averaging boundaries for shells and
             membranes based on feature edges. The default value is ON.
         featureAngle
-            ​	A Float specifying the feature angle to be used when **includeFeatureBoundaries**=ON.
+            ​	A Float specifying the feature angle to be used when **includeFeatureBoundaries** = ON.
             The default value is 20.0.
         averageOnlyDisplayed
             ​	A Boolean specifying whether to average only values on displayed elements. The default

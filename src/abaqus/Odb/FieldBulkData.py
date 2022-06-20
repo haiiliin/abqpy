@@ -101,27 +101,27 @@ class FieldBulkData:
     sectionPoint: SectionPoint = None
 
     # A sequence of Ints specifying the element labels of the elements in the block.
-    # **elementLabels** is valid only if **position**=INTEGRATION_POINT, CENTROID, ELEMENT_NODAL,
+    # **elementLabels** is valid only if **position** = INTEGRATION_POINT, CENTROID, ELEMENT_NODAL,
     # or ELEMENT_FACE.
     elementLabels: tuple = ()
 
     # A sequence of Ints specifying the node labels of the nodes in the block. **nodelabels** is
-    # valid only if **position**=ELEMENT_NODAL or NODAL.
+    # valid only if **position** = ELEMENT_NODAL or NODAL.
     nodeLabels: tuple = ()
 
     # A sequence of Strings specifying the component labels.
     componentLabels: tuple = ()
 
     # A sequence of Ints specifying the integration points in the elements in the block.
-    # **integrationPoints** is available only if **position**=INTEGRATION_POINT.
+    # **integrationPoints** is available only if **position** = INTEGRATION_POINT.
     integrationPoints: tuple = ()
 
-    # A tuple of Floats specifying data in the form described by **type**. If **type**=TENSOR or
+    # A tuple of Floats specifying data in the form described by **type**. If **type** = TENSOR or
     # VECTOR, **data** is a sequence containing the components for each element or node in the
     # block. If the underlying data are in double precision, an exception will be thrown.
     data: tuple = ()
 
-    # A tuple of Floats specifying data in the form described by **type**. If **type**=TENSOR or
+    # A tuple of Floats specifying data in the form described by **type**. If **type** = TENSOR or
     # VECTOR, **conjugateData** is a sequence containing the imaginary part of the components
     # for each element or node in the block. If the underlying data are in double precision,
     # an exception will be thrown.

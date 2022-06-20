@@ -98,7 +98,7 @@ class CyclicSymmetry(Interaction):
             symmetry to tie it to the main surface. The default value is ON.
         positionTolerance
             A Float specifying the position tolerance. The*positionTolerance* argument applies only
-            when **positionToleranceMethod**=SPECIFY_TOLERANCE. The default value is 0.0.
+            when **positionToleranceMethod** = SPECIFY_TOLERANCE. The default value is 0.0.
         positionToleranceMethod
             A SymbolicConstant specifying the method used to determine the position tolerance.
             Possible values are COMPUTED_TOLERANCE and SPECIFY_TOLERANCE. The default value is
@@ -155,7 +155,7 @@ class CyclicSymmetry(Interaction):
             symmetry to tie it to the main surface. The default value is ON.
         positionTolerance
             A Float specifying the position tolerance. The*positionTolerance* argument applies only
-            when **positionToleranceMethod**=SPECIFY_TOLERANCE. The default value is 0.0.
+            when **positionToleranceMethod** = SPECIFY_TOLERANCE. The default value is 0.0.
         positionToleranceMethod
             A SymbolicConstant specifying the method used to determine the position tolerance.
             Possible values are COMPUTED_TOLERANCE and SPECIFY_TOLERANCE. The default value is

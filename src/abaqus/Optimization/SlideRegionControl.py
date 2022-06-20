@@ -59,7 +59,7 @@ class SlideRegionControl(GeometricRestriction):
             restriction should conserve a turnable surface. Possible values are FREE_FORM and TURN.
             The default value is FREE_FORM.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. This
             is used when **approach** is TURN. The default value is None.
         freeFormRegion
@@ -109,7 +109,7 @@ class SlideRegionControl(GeometricRestriction):
             restriction should conserve a turnable surface. Possible values are FREE_FORM and TURN.
             The default value is FREE_FORM.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. This
             is used when **approach** is TURN. The default value is None.
         freeFormRegion

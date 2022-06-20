@@ -23,7 +23,7 @@ class Plastic:
 
     The table data for this object are:
 
-    - If **hardening**=ISOTROPIC, or if **hardening**=COMBINED and **dataType**=HALF_CYCLE, the table data specify the following:
+    - If **hardening** = ISOTROPIC, or if **hardening** = COMBINED and **dataType** = HALF_CYCLE, the table data specify the following:
     
         - Yield stress.
         - Plastic strain.
@@ -32,7 +32,7 @@ class Plastic:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **hardening**=COMBINED and **dataType**=STABILIZED, the table data specify the following:
+    - If **hardening** = COMBINED and **dataType** = STABILIZED, the table data specify the following:
     
         - Yield stress.
         - Plastic strain.
@@ -41,7 +41,7 @@ class Plastic:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **hardening**=COMBINED and **dataType**=PARAMETERS, the table data specify the following:
+    - If **hardening** = COMBINED and **dataType** = PARAMETERS, the table data specify the following:
     
         - Yield stress at zero Plastic strain.
         - The first kinematic hardening parameter, :math:`C_{1}`.
@@ -53,12 +53,12 @@ class Plastic:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **hardening**=KINEMATIC, the table data specify the following:
+    - If **hardening** = KINEMATIC, the table data specify the following:
     
         - Yield stress.
         - Plastic strain.
         - Temperature, if the data depend on temperature.
-    - If **hardening**=JOHNSON_COOK, the table data specify the following:
+    - If **hardening** = JOHNSON_COOK, the table data specify the following:
     
         - :math:`A`.
         - :math:`B`.
@@ -66,7 +66,7 @@ class Plastic:
         - :math:`\mathrm{m}`.
         - Melting temperature.
         - Transition temperature.
-    - If **hardening**=USER, the table data specify the following:
+    - If **hardening** = USER, the table data specify the following:
     
         - Hardening properties.
 
@@ -126,14 +126,14 @@ class Plastic:
             A Boolean specifying whether the data depend on rate. The default value is OFF.
         dataType
             A SymbolicConstant specifying the type of combined hardening. This argument is only
-            valid if **hardening**=COMBINED. Possible values are HALF_CYCLE, PARAMETERS, and
+            valid if **hardening** = COMBINED. Possible values are HALF_CYCLE, PARAMETERS, and
             STABILIZED. The default value is HALF_CYCLE.
         strainRangeDependency
             A Boolean specifying whether the data depend on strain range. This argument is only
-            valid if **hardening**=COMBINED and **dataType**=STABILIZED. The default value is OFF.
+            valid if **hardening** = COMBINED and **dataType** = STABILIZED. The default value is OFF.
         numBackstresses
             An Int specifying the number of backstresses. This argument is only valid if
-            **hardening**=COMBINED. The default value is 1.
+            **hardening** = COMBINED. The default value is 1.
         temperatureDependency
             A Boolean specifying whether the data depend on temperature. The default value is OFF.
         dependencies

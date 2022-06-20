@@ -47,9 +47,9 @@ class AcousticImpedanceProp(ContactProperty):
             are IMPEDANCE and ADMITTANCE.
         table
             A sequence of sequences of Floats specifying acoustic impedance properties.If
-            **tableType**=IMPEDANCE, each sequence of the table data specifies:The real part of the
+            **tableType** = IMPEDANCE, each sequence of the table data specifies:The real part of the
             complex impedance.The imaginary part of the complex impedance.Frequency, if the data
-            depend on frequency.If **tableType**=ADMITTANCE, each sequence of the table data
+            depend on frequency.If **tableType** = ADMITTANCE, each sequence of the table data
             specifies:The real part of the complex admittance.The imaginary part of the complex
             admittance.Frequency, if the data depend on frequency.
         frequencyDependency

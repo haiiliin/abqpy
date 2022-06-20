@@ -18,7 +18,7 @@ class ConcreteTensionDamage:
 
     The table data for this object are:
 
-    - If **type**=STRAIN, the table data specify the following:
+    - If **type** = STRAIN, the table data specify the following:
     
         - Tensile damage variable, :math:`d_{t}`.
         - Direct cracking strain, :math:`\epsilon_{t}^{c k}`.
@@ -26,7 +26,7 @@ class ConcreteTensionDamage:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **type**=DISPLACEMENT, the table data specify the following:
+    - If **type** = DISPLACEMENT, the table data specify the following:
     
         - Tensile damage variable, :math:`d_{t}`
         - Direct cracking displacement, :math:`u_{t}^{c k}`.
@@ -67,9 +67,9 @@ class ConcreteTensionDamage:
             amount of compression stiffness that is recovered as loading changes from tension to 
             compression. The default value is 1.0. 
         type
-            A SymbolicConstant specifying the type of tensile damage data. Set **type**=STRAIN to 
+            A SymbolicConstant specifying the type of tensile damage data. Set **type** = STRAIN to 
             specify the tensile damage variable as a function of cracking strain. Set 
-            **type**=DISPLACEMENT to specify the tensile damage variable as a function of cracking 
+            **type** = DISPLACEMENT to specify the tensile damage variable as a function of cracking 
             displacement. Possible values are STRAIN and DISPLACEMENT. The default value is STRAIN. 
         temperatureDependency
             A Boolean specifying whether the data depend on temperature. The default value is OFF. 

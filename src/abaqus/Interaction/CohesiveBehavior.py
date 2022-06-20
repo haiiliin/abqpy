@@ -15,7 +15,7 @@ class CohesiveBehavior:
 
     The table data for this object are:
 
-    - If **coupling**=UNCOUPLED, the table data specify the following:
+    - If **coupling** = UNCOUPLED, the table data specify the following:
     
         - Stiffness coefficient in the normal direction, Knn.
         - Stiffness coefficient in the first shear direction, Kss.
@@ -24,7 +24,7 @@ class CohesiveBehavior:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **coupling**=COUPLED, the table data specify the following:
+    - If **coupling** = COUPLED, the table data specify the following:
     
         - Stiffness coefficient in the normal direction, Knn.
         - Stiffness coefficient in the first shear direction, Kss.
@@ -75,18 +75,18 @@ class CohesiveBehavior:
             ON.
         coupling
             A SymbolicConstant specifying whether the traction-separation coefficients are coupled
-            or uncoupled. This argument is valid only for **defaultPenalties**=OFF. Possible values
+            or uncoupled. This argument is valid only for **defaultPenalties** = OFF. Possible values
             are UNCOUPLED and COUPLED. The default value is UNCOUPLED.
         temperatureDependency
             A Boolean specifying whether the coefficient data depend on temperature. This argument
-            is valid only for **defaultPenalties**=OFF. The default value is OFF.
+            is valid only for **defaultPenalties** = OFF. The default value is OFF.
         dependencies
             An Int specifying the number of field variables. This argument is valid only for
-            **defaultPenalties**=OFF. The default value is 0.
+            **defaultPenalties** = OFF. The default value is 0.
         table
             A sequence of sequences of Floats specifying the traction-separation coefficients. The
             items in the table data are described below. This argument is valid only for
-            **defaultPenalties**=OFF.
+            **defaultPenalties** = OFF.
 
         Returns
         -------

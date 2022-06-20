@@ -39,7 +39,7 @@ class ConcCurrent(Load):
     distributionType: SymbolicConstant = UNIFORM
 
     # A String specifying the name of the AnalyticalField object associated with this load.
-    # The **field** argument applies only when **distributionType**=FIELD. The default value is an
+    # The **field** argument applies only when **distributionType** = FIELD. The default value is an
     # empty string.
     field: str = ""
 
@@ -82,7 +82,7 @@ class ConcCurrent(Load):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -112,7 +112,7 @@ class ConcCurrent(Load):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.

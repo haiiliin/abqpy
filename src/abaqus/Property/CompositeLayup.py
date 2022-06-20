@@ -75,15 +75,15 @@ class CompositeLayup:
             A String specifying a description of the composite layup.
         offsetType
             A SymbolicConstant specifying the method used to define the shell offset. If
-            **offsetType**=OFFSET_FIELD the **offsetField** argument is required. This member is valid
-            only if **elementType**=SHELL. Possible values are SINGLE_VALUE, MIDDLE_SURFACE,
+            **offsetType** = OFFSET_FIELD the **offsetField** argument is required. This member is valid
+            only if **elementType** = SHELL. Possible values are SINGLE_VALUE, MIDDLE_SURFACE,
             TOP_SURFACE, BOTTOM_SURFACE, OFFSET_FIELD, and GLOBAL. The default value is GLOBAL.
         offsetField
             A String specifying The name of the field specifying the offset. This member is valid
-            only if **elementType**=SHELL. The default value is an empty string.
+            only if **elementType** = SHELL. The default value is an empty string.
         offsetValues
             A Float specifying The offset of the shell section. This member is valid only if
-            **elementType**=SHELL. The default value is 0.0.
+            **elementType** = SHELL. The default value is 0.0.
         elementType
             A SymbolicConstant specifying the type of element in the composite layup. Possible
             values are SHELL, CONTINUUM_SHELL, and SOLID. The default value is SHELL.
@@ -130,15 +130,15 @@ class CompositeLayup:
             A String specifying a description of the composite layup.
         offsetType
             A SymbolicConstant specifying the method used to define the shell offset. If
-            **offsetType**=OFFSET_FIELD the **offsetField** argument is required. This member is valid
-            only if **elementType**=SHELL. Possible values are SINGLE_VALUE, MIDDLE_SURFACE,
+            **offsetType** = OFFSET_FIELD the **offsetField** argument is required. This member is valid
+            only if **elementType** = SHELL. Possible values are SINGLE_VALUE, MIDDLE_SURFACE,
             TOP_SURFACE, BOTTOM_SURFACE, OFFSET_FIELD, and GLOBAL. The default value is GLOBAL.
         offsetField
             A String specifying The name of the field specifying the offset. This member is valid
-            only if **elementType**=SHELL. The default value is an empty string.
+            only if **elementType** = SHELL. The default value is an empty string.
         offsetValues
             A Float specifying The offset of the shell section. This member is valid only if
-            **elementType**=SHELL. The default value is 0.0.
+            **elementType** = SHELL. The default value is 0.0.
         elementType
             A SymbolicConstant specifying the type of element in the composite layup. Possible
             values are SHELL, CONTINUUM_SHELL, and SOLID. The default value is SHELL.
@@ -188,13 +188,13 @@ class CompositeLayup:
             empty string.
         orientationType
             A SymbolicConstant specifying the method used to define the relative orientation. If
-            **orientationType**=SPECIFY_ORIENT the **orientationValue** argument is required. If
-            **orientationType**=CSYS the **orientation** argument is required. Possible values are CSYS,
+            **orientationType** = SPECIFY_ORIENT the **orientationValue** argument is required. If
+            **orientationType** = CSYS the **orientation** argument is required. Possible values are CSYS,
             SPECIFY_ORIENT, ANGLE_0, ANGLE_45, ANGLE_90, and ANGLE_NEG45. The default value is
             ANGLE_0.
         thicknessType
             A SymbolicConstant specifying the method used to define the thickness. If
-            **thicknessType**=SPECIFY_THICKNESS, the **thickness** argument is required. Possible values
+            **thicknessType** = SPECIFY_THICKNESS, the **thickness** argument is required. Possible values
             are SPECIFY_THICKNESS, FIELD_THICKNESS, and ANALYTICAL_FIELD_THICKNESS. The default
             value is SPECIFY_THICKNESS.
         orientationValue
@@ -203,13 +203,13 @@ class CompositeLayup:
         thicknessField
             A String specifying the name of the AnalyticalField or DiscreteField object used to
             define the thickness of the shell elements and composite ply. The **thicknessField**
-            argument applies when **thicknessType**=ANALYTICAL_FIELD or **thicknessType**=DISCRETE_FIELD
-            for shell elements and **thicknessType**=FIELD_THICKNESS or
-            **thicknessType**=ANALYTICAL_FIELD_THICKNESS for composite ply. The default value is an
+            argument applies when **thicknessType** = ANALYTICAL_FIELD or **thicknessType** = DISCRETE_FIELD
+            for shell elements and **thicknessType** = FIELD_THICKNESS or
+            **thicknessType** = ANALYTICAL_FIELD_THICKNESS for composite ply. The default value is an
             empty string.
         numIntPts
             An Int specifying the number of integration points to be used through the section layer.
-            This argument is valid only if **preIntegrate**=OFF. The default value is 3.
+            This argument is valid only if **preIntegrate** = OFF. The default value is 3.
         axis
             A SymbolicConstant specifying the axis of a cylindrical or spherical datum coordinate
             system about which an additional rotation is applied. For shells this axis is also the
@@ -221,8 +221,8 @@ class CompositeLayup:
             only if a valid reference is provided for the **orientation**. The default value is 0.0.
         additionalRotationType
             A SymbolicConstant specifying the method used to describe the additional rotation when a
-            valid orientation is specified. Use **orientationType**=ANGLE_0 and
-            **additionalRotationType**=ROTATION_FIELD to specify a discrete field of rotations for
+            valid orientation is specified. Use **orientationType** = ANGLE_0 and
+            **additionalRotationType** = ROTATION_FIELD to specify a discrete field of rotations for
             this CompositePly. Possible values are ROTATION_NONE, ROTATION_ANGLE, and
             ROTATION_FIELD. The default value is ROTATION_NONE.
         orientation
@@ -314,7 +314,7 @@ class CompositeLayup:
             is the value provided in **poisson**.The default value is DEFAULT.
         poisson
             A Float specifying the Poisson's ratio. Possible values are −1.0 ≤≤ **poisson** ≤≤ 0.5.
-            This argument is valid only when **poissonDefinition**=VALUE. The default value is 0.5.
+            This argument is valid only when **poissonDefinition** = VALUE. The default value is 0.5.
         integrationRule
             A SymbolicConstant specifying the shell section integration rule. Possible values are
             SIMPSON and GAUSS. The default value is SIMPSON.
@@ -329,7 +329,7 @@ class CompositeLayup:
             is NO_IDEALIZATION.
         nTemp
             None or an Int specifying the number of temperature points to be input. This argument is
-            valid only when **temperature**=POINTWISE. The default value is None.
+            valid only when **temperature** = POINTWISE. The default value is None.
         thicknessModulus
             None or a Float specifying the effective thickness modulus. This argument is relevant
             only for continuum shells and must be used in conjunction with the argument **poisson**.
@@ -346,13 +346,13 @@ class CompositeLayup:
         thicknessField
             A String specifying the name of the AnalyticalField or DiscreteField object used to
             define the thickness of the shell elements. The **thicknessField** argument applies only
-            when **thicknessType**=ANALYTICAL_FIELD or **thicknessType**=DISCRETE_FIELD. The default
+            when **thicknessType** = ANALYTICAL_FIELD or **thicknessType** = DISCRETE_FIELD. The default
             value is an empty string.
         nodalThicknessField
             A String specifying the name of the AnalyticalField or DiscreteField object used to
             define the thickness of the shell elements at each node. The **nodalThicknessField**
-            argument applies only when **thicknessType**=NODAL_ANALYTICAL_FIELD or
-            **thicknessType**=NODAL_DISCRETE_FIELD. The default value is an empty string.
+            argument applies only when **thicknessType** = NODAL_ANALYTICAL_FIELD or
+            **thicknessType** = NODAL_DISCRETE_FIELD. The default value is an empty string.
 
         Returns
         -------
@@ -409,12 +409,12 @@ class CompositeLayup:
         nodalThicknessField
             A String specifying the name of the AnalyticalField or DiscreteField object used to
             define the thickness of the shell elements at each node. The **nodalThicknessField**
-            argument applies only when **thicknessType**=NODAL_ANALYTICAL_FIELD or
-            **thicknessType**=NODAL_DISCRETE_FIELD. The default value is an empty string.
+            argument applies only when **thicknessType** = NODAL_ANALYTICAL_FIELD or
+            **thicknessType** = NODAL_DISCRETE_FIELD. The default value is an empty string.
         thicknessField
             A String specifying the name of the AnalyticalField or DiscreteField object used to
             define the thickness of the shell elements. The **thicknessField** argument applies only
-            when **thicknessType**=ANALYTICAL_FIELD or **thicknessType**=DISCRETE_FIELD. The default
+            when **thicknessType** = ANALYTICAL_FIELD or **thicknessType** = DISCRETE_FIELD. The default
             value is an empty string.
         thicknessType
             A SymbolicConstant specifying the distribution used for defining the thickness of the
@@ -432,7 +432,7 @@ class CompositeLayup:
             is the value provided in **poisson**.The default value is DEFAULT.
         poisson
             A Float specifying the Poisson's ratio. Possible values are −1.0 ≤≤ **poisson** ≤≤ 0.5.
-            This argument is valid only when **poissonDefinition**=VALUE. The default value is 0.5.
+            This argument is valid only when **poissonDefinition** = VALUE. The default value is 0.5.
         integrationRule
             A SymbolicConstant specifying the shell section integration rule. Possible values are
             SIMPSON and GAUSS. The default value is SIMPSON.
@@ -442,7 +442,7 @@ class CompositeLayup:
             value is GRADIENT.
         nTemp
             None or an Int specifying the number of temperature points to be input. This argument is
-            valid only when **temperature**=POINTWISE. The default value is None.
+            valid only when **temperature** = POINTWISE. The default value is None.
         thicknessModulus
             None or a Float specifying the effective thickness modulus. This argument is relevant
             only for continuum shells and must be used in conjunction with the argument **poisson**.
@@ -512,12 +512,12 @@ class CompositeLayup:
             A String specifying the name of the section material.
         thickness
             A Float specifying the thickness of the section. The **thickness** argument applies only
-            when **thicknessType**=UNIFORM. The default value is 0.0.
+            when **thicknessType** = UNIFORM. The default value is 0.0.
         numIntPts
             An Int specifying the number of integration points to be used through the section.
             Possible values are **numIntPts** >> 0. The default value is 5.To use the default settings
-            of the analysis products, set **numIntPts** to 5 if **integrationRule**=SIMPSON or set
-            **numIntPts** to 7 if **integrationRule**=GAUSS.
+            of the analysis products, set **numIntPts** to 5 if **integrationRule** = SIMPSON or set
+            **numIntPts** to 7 if **integrationRule** = GAUSS.
         thicknessType
             A SymbolicConstant specifying the distribution used for defining the thickness of the
             elements. Possible values are UNIFORM, ANALYTICAL_FIELD, DISCRETE_FIELD,
@@ -534,7 +534,7 @@ class CompositeLayup:
             is the value provided in **poisson**.The default value is DEFAULT.
         poisson
             A Float specifying the Poisson's ratio. Possible values are −1.0 ≤≤ **poisson** ≤≤ 0.5.
-            This argument is valid only when **poissonDefinition**=VALUE. The default value is 0.5.
+            This argument is valid only when **poissonDefinition** = VALUE. The default value is 0.5.
         integrationRule
             A SymbolicConstant specifying the shell section integration rule. Possible values are
             SIMPSON and GAUSS. The default value is SIMPSON.
@@ -549,7 +549,7 @@ class CompositeLayup:
             is NO_IDEALIZATION.
         nTemp
             None or an Int specifying the number of temperature points to be input. This argument is
-            valid only when **temperature**=POINTWISE. The default value is None.
+            valid only when **temperature** = POINTWISE. The default value is None.
         thicknessModulus
             None or a Float specifying the effective thickness modulus. This argument is relevant
             only for continuum shells and must be used in conjunction with the argument **poisson**.
@@ -563,13 +563,13 @@ class CompositeLayup:
         thicknessField
             A String specifying the name of the AnalyticalField or DiscreteField object used to
             define the thickness of the shell elements. The **thicknessField** argument applies only
-            when **thicknessType**=ANALYTICAL_FIELD or **thicknessType**=DISCRETE_FIELD. The default
+            when **thicknessType** = ANALYTICAL_FIELD or **thicknessType** = DISCRETE_FIELD. The default
             value is an empty string.
         nodalThicknessField
             A String specifying the name of the AnalyticalField or DiscreteField object used to
             define the thickness of the shell elements at each node. The **nodalThicknessField**
-            argument applies only when **thicknessType**=NODAL_ANALYTICAL_FIELD or
-            **thicknessType**=NODAL_DISCRETE_FIELD. The default value is an empty string.
+            argument applies only when **thicknessType** = NODAL_ANALYTICAL_FIELD or
+            **thicknessType** = NODAL_DISCRETE_FIELD. The default value is an empty string.
 
         Returns
         -------

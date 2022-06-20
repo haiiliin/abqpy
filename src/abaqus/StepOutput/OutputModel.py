@@ -117,7 +117,7 @@ class OutputModel(ModelBase):
             **assembledFastener**. The default value is an empty string.
         exteriorOnly
             A Boolean specifying whether the output domain is restricted to the exterior of the
-            model. This argument is only valid if **region**=MODEL. The default value is OFF.
+            model. This argument is only valid if **region** = MODEL. The default value is OFF.
         layupNames
             A List of Composite Layer Names.
         layupLocationMethod
@@ -263,7 +263,7 @@ class OutputModel(ModelBase):
         kFactorDirection
             A SymbolicConstant specifying the stress intensity factor direction. Possible values are
             MTS, MERR, and K110. The **kFactorDirection** argument is valid only if
-            **contourType**=K_FACTORS. The default value is MTS.
+            **contourType** = K_FACTORS. The default value is MTS.
         rebar
             A SymbolicConstant specifying whether output is requested for rebar. Possible values are
             EXCLUDE, INCLUDE, and ONLY. The default value is EXCLUDE.
@@ -367,7 +367,7 @@ class OutputModel(ModelBase):
             is valid only when you include the **refPoint** argument.
         localCsys
             None or a DatumCsys object specifying the local coordinate system used to express vector
-            output. If **localCsys**=None, the degrees of freedom are defined in the global coordinate
+            output. If **localCsys** = None, the degrees of freedom are defined in the global coordinate
             system. The default value is None.
         projectOrientation
             A Boolean specifying that the coordinate system be projected onto the **surface** such

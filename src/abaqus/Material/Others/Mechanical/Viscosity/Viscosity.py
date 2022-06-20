@@ -18,7 +18,7 @@ class Viscosity:
 
     The table data for this object are:
 
-    - If **type**=NEWTONIAN, the table data specify the following:
+    - If **type** = NEWTONIAN, the table data specify the following:
 
     - Viscosity, :math:`k`.
     - Temperature, if the data depend on temperature.

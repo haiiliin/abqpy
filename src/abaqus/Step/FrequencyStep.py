@@ -203,11 +203,11 @@ class FrequencyStep(AnalysisStep):
     name: str = ""
 
     # A SymbolicConstant specifying the eigensolver. Possible values are LANCZOS, SUBSPACE,
-    # and AMS.The following optional arguments are ignored unless **eigensolver**=LANCZOS:
+    # and AMS.The following optional arguments are ignored unless **eigensolver** = LANCZOS:
     # **blockSize**, **maxBlocks**, **normalization**, **propertyEvaluationFrequency**.The following
-    # optional arguments are ignored unless **eigensolver**=LANCZOS or AMS: **minEigen**,
+    # optional arguments are ignored unless **eigensolver** = LANCZOS or AMS: **minEigen**,
     # **maxEigen**, and **acousticCoupling**.The following optional arguments are ignored unless
-    # **eigensolver**=AMS: **projectDamping**, **acousticRangeFactor**,
+    # **eigensolver** = AMS: **projectDamping**, **acousticRangeFactor**,
     # **substructureCutoffMultiplier**, **firstCutoffMultiplier**, **secondCutoffMultiplier**,
     # **residualModeRegion**, **regionalModeDof**, and **limitSavedEigenvectorRegion**.
     eigensolver: SymbolicConstant = None
@@ -260,7 +260,7 @@ class FrequencyStep(AnalysisStep):
     propertyEvaluationFrequency: float = None
 
     # A Boolean specifying whether to include projection of viscous and structural damping
-    # operators during **AMS** eigenvalue extraction. Valid only when **eigenSolver**=AMS. The
+    # operators during **AMS** eigenvalue extraction. Valid only when **eigenSolver** = AMS. The
     # default value is ON.
     projectDamping: Boolean = ON
 
@@ -465,11 +465,11 @@ class FrequencyStep(AnalysisStep):
             in the list of analysis steps.
         eigensolver
             A SymbolicConstant specifying the eigensolver. Possible values are LANCZOS, SUBSPACE,
-            and AMS.The following optional arguments are ignored unless **eigensolver**=LANCZOS:
+            and AMS.The following optional arguments are ignored unless **eigensolver** = LANCZOS:
             **blockSize**, **maxBlocks**, **normalization**, **propertyEvaluationFrequency**.The following
-            optional arguments are ignored unless **eigensolver**=LANCZOS or AMS: **minEigen**,
+            optional arguments are ignored unless **eigensolver** = LANCZOS or AMS: **minEigen**,
             **maxEigen**, and **acousticCoupling**.The following optional arguments are ignored unless
-            **eigensolver**=AMS: **projectDamping**, **acousticRangeFactor**,
+            **eigensolver** = AMS: **projectDamping**, **acousticRangeFactor**,
             **substructureCutoffMultiplier**, **firstCutoffMultiplier**, **secondCutoffMultiplier**,
             **residualModeRegion**, **regionalModeDof**, and **limitSavedEigenvectorRegion**.
         numEigen
@@ -513,7 +513,7 @@ class FrequencyStep(AnalysisStep):
             value is None.
         projectDamping
             A Boolean specifying whether to include projection of viscous and structural damping
-            operators during **AMS** eigenvalue extraction. Valid only when **eigenSolver**=AMS. The
+            operators during **AMS** eigenvalue extraction. Valid only when **eigenSolver** = AMS. The
             default value is ON.
         acousticCoupling
             A SymbolicConstant specifying the type of acoustic-structural coupling in models with
@@ -640,7 +640,7 @@ class FrequencyStep(AnalysisStep):
             value is None.
         projectDamping
             A Boolean specifying whether to include projection of viscous and structural damping
-            operators during **AMS** eigenvalue extraction. Valid only when **eigenSolver**=AMS. The
+            operators during **AMS** eigenvalue extraction. Valid only when **eigenSolver** = AMS. The
             default value is ON.
         acousticCoupling
             A SymbolicConstant specifying the type of acoustic-structural coupling in models with

@@ -39,7 +39,7 @@ class BodyHeatFlux(Load):
     distributionType: SymbolicConstant = UNIFORM
 
     # A String specifying the name of the AnalyticalField object associated with this load.
-    # The **field** argument applies only when **distributionType**=FIELD. The default value is an
+    # The **field** argument applies only when **distributionType** = FIELD. The default value is an
     # empty string.
     field: str = ""
 
@@ -76,10 +76,10 @@ class BodyHeatFlux(Load):
             A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the body heat flux magnitude. **magnitude** is optional if
-            **distributionType**=USER_DEFINED.
+            **distributionType** = USER_DEFINED.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         distributionType
             A SymbolicConstant specifying how the body heat flux is distributed spatially. Possible
@@ -109,7 +109,7 @@ class BodyHeatFlux(Load):
         ----------
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         distributionType
             A SymbolicConstant specifying how the body heat flux is distributed spatially. Possible

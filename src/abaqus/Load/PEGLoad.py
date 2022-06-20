@@ -41,7 +41,7 @@ class PEGLoad(Load):
     distributionType: SymbolicConstant = UNIFORM
 
     # A String specifying the name of the AnalyticalField object associated with this load.
-    # The **field** argument applies only when **distributionType**=FIELD. The default value is an
+    # The **field** argument applies only when **distributionType** = FIELD. The default value is an
     # empty string.
     field: str = ""
 
@@ -83,7 +83,7 @@ class PEGLoad(Load):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         comp1
             A Float or a Complex specifying the load component at dof 1 of reference node
@@ -124,7 +124,7 @@ class PEGLoad(Load):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         comp1
             A Float or a Complex specifying the load component at dof 1 of reference node

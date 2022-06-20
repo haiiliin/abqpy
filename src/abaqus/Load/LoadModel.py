@@ -91,7 +91,7 @@ class LoadModel(ModelBase):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
 
         Returns
@@ -133,10 +133,10 @@ class LoadModel(ModelBase):
             A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the body concentration flux magnitude. **magnitude** is optional if
-            **distributionType**=USER_DEFINED.
+            **distributionType** = USER_DEFINED.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         distributionType
             A SymbolicConstant specifying how the body concentration flux is distributed spatially.
@@ -195,7 +195,7 @@ class LoadModel(ModelBase):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
 
         Returns
@@ -299,7 +299,7 @@ class LoadModel(ModelBase):
             A Region object specifying the region to which the load is applied.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         distributionType
             A SymbolicConstant specifying how the load is distributed spatially. Possible values are
@@ -307,7 +307,7 @@ class LoadModel(ModelBase):
         comp1
             A Float or a Complex specifying the body force component in the
             1-direction.Note:Although **comp1**, **comp2**, and **comp3** are optional arguments, at least
-            one of them must be nonzero unless **distributionType**=USER_DEFINED.
+            one of them must be nonzero unless **distributionType** = USER_DEFINED.
         comp2
             A Float or a Complex specifying the body force component in the 2-direction.
         comp3
@@ -364,10 +364,10 @@ class LoadModel(ModelBase):
             A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the body heat flux magnitude. **magnitude** is optional if
-            **distributionType**=USER_DEFINED.
+            **distributionType** = USER_DEFINED.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         distributionType
             A SymbolicConstant specifying how the body heat flux is distributed spatially. Possible
@@ -478,7 +478,7 @@ class LoadModel(ModelBase):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -530,7 +530,7 @@ class LoadModel(ModelBase):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -582,7 +582,7 @@ class LoadModel(ModelBase):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -635,7 +635,7 @@ class LoadModel(ModelBase):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         cf1
             A Float or a Complex specifying the concentrated force component in the 1-direction.
@@ -655,7 +655,7 @@ class LoadModel(ModelBase):
             for the specified step. The default value is OFF.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the load's degrees
-            of freedom. If **localCsys**=None, the degrees of freedom are defined in the global
+            of freedom. If **localCsys** = None, the degrees of freedom are defined in the global
             coordinate system. When this member is queried, it returns an Int. The default value is
             None.
 
@@ -715,7 +715,7 @@ class LoadModel(ModelBase):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -777,7 +777,7 @@ class LoadModel(ModelBase):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -984,7 +984,7 @@ class LoadModel(ModelBase):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
 
         Returns
@@ -1037,7 +1037,7 @@ class LoadModel(ModelBase):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         region
             A Region object specifying the region to which the load is applied.
@@ -1122,7 +1122,7 @@ class LoadModel(ModelBase):
             free directions.
         localCoordinates
             None or a DatumCsys object specifying the local coordinate system of the rigid body
-            degrees of freedom for the inertia relief load. If **localCoordinates**=None, the free
+            degrees of freedom for the inertia relief load. If **localCoordinates** = None, the free
             directions are defined in the global coordinate system. When this member is queried, it
             returns an Int. The default value is None.
 
@@ -1180,7 +1180,7 @@ class LoadModel(ModelBase):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -1232,12 +1232,12 @@ class LoadModel(ModelBase):
             UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         comp1
             A Float or a Complex specifying the component of the load in the global or the beam
             local 1-direction.Note:Although **comp1**, **comp2**, and **comp3** are optional arguments, at
-            least one of them must be nonzero unless **distributionType**=USER_DEFINED.
+            least one of them must be nonzero unless **distributionType** = USER_DEFINED.
         comp2
             A Float or a Complex specifying the component of the load in the global or the beam
             local 2-direction.
@@ -1319,7 +1319,7 @@ class LoadModel(ModelBase):
             step. The default value is OFF.
         localCsys
             None or a DatumCsys object specifying the ID of the Datum coordinate system used as the
-            local coordinate system of the load. If **localCsys**=None, the load is defined in the
+            local coordinate system of the load. If **localCsys** = None, the load is defined in the
             global coordinate system. When this member is queried, it returns an Int. The default
             value is None.
         distributionType
@@ -1327,7 +1327,7 @@ class LoadModel(ModelBase):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
 
         Returns
@@ -1384,7 +1384,7 @@ class LoadModel(ModelBase):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         comp1
             A Float or a Complex specifying the load component at dof 1 of reference node
@@ -1450,18 +1450,18 @@ class LoadModel(ModelBase):
             A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the pressure magnitude.Note:*magnitude* is optional if
-            **distributionType**=USER_DEFINED.
+            **distributionType** = USER_DEFINED.
         diameter
             A Float specifying the effective inner or outer diameter.
         hZero
             A Float specifying the height of the zero pressure level when
-            **distributionType**=HYDROSTATIC.
+            **distributionType** = HYDROSTATIC.
         hReference
             A Float specifying the height of the reference pressure level when
-            **distributionType**=HYDROSTATIC.
+            **distributionType** = HYDROSTATIC.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -1526,20 +1526,20 @@ class LoadModel(ModelBase):
             A Region object specifying the region to which the load is applied.
         magnitude
             A Float or a Complex specifying the pressure magnitude.Note:*magnitude* is optional if
-            **distributionType**=USER_DEFINED.
+            **distributionType** = USER_DEFINED.
         hZero
             A Float specifying the height of the zero pressure level when
-            **distributionType**=HYDROSTATIC.
+            **distributionType** = HYDROSTATIC.
         hReference
             A Float specifying the height of the reference pressure level when
-            **distributionType**=HYDROSTATIC.
+            **distributionType** = HYDROSTATIC.
         field
             A String specifying the name of the AnalyticalField or DiscreteField object associated
-            with this load. The **field** argument applies only when **distributionType**=FIELD or
-            **distributionType**=DISCRETE_FIELD. The default value is an empty string.
+            with this load. The **field** argument applies only when **distributionType** = FIELD or
+            **distributionType** = DISCRETE_FIELD. The default value is an empty string.
         refPoint
             A Region specifying the reference point from which the relative velocity is determined
-            when **distributionType**=STAGNATION or VISCOUS.
+            when **distributionType** = STAGNATION or VISCOUS.
         distributionType
             A SymbolicConstant specifying how the pressure is distributed spatially. Possible values
             are UNIFORM, USER_DEFINED, FIELD, HYDROSTATIC, STAGNATION, VISCOUS, TOTAL_FORCE, and
@@ -1611,7 +1611,7 @@ class LoadModel(ModelBase):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         centrifugal
             A Boolean specifying whether or not the effect of the load is centrifugal. The default
@@ -1683,13 +1683,13 @@ class LoadModel(ModelBase):
             A Region object specifying the region to which the load is applied.
         magnitude
             A Float or Complex specifying the load magnitude. **magnitude** is optional if
-            **distributionType**=USER_DEFINED
+            **distributionType** = USER_DEFINED
         distributionType
             A SymbolicConstant specifying how the shell edge load is distributed spatially. Possible
             values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -1786,7 +1786,7 @@ class LoadModel(ModelBase):
         globalStep
             A String specifying the step in the global model from which Abaqus reads the values of
             the variables that will drive the submodel analysis. The String indicates the position
-            of the step in the sequence of analysis steps. For example, **globalStep**='1' indicates
+            of the step in the sequence of analysis steps. For example, **globalStep** = '1' indicates
             the first step.
         globalDrivingRegion
             A String specifying the element set in the global model that will be searched for
@@ -1801,7 +1801,7 @@ class LoadModel(ModelBase):
             global model. The default value is 0.05.
         globalIncrement
             An Int specifying the increment number in the global model step from which the solution
-            will be used to specify the values of the driven variables. If **globalIncrement**=0, the
+            will be used to specify the values of the driven variables. If **globalIncrement** = 0, the
             solution from the last increment will be used. The **globalIncrement** argument is
             applicable only for linear perturbation steps. The default value is 0.
 
@@ -1902,7 +1902,7 @@ class LoadModel(ModelBase):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -1948,10 +1948,10 @@ class LoadModel(ModelBase):
             A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the surface concentration flux magnitude. **magnitude** is optional if
-            **distributionType**=USER_DEFINED.
+            **distributionType** = USER_DEFINED.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         distributionType
             A SymbolicConstant specifying how the surface concentration flux is distributed
@@ -2007,7 +2007,7 @@ class LoadModel(ModelBase):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -2113,10 +2113,10 @@ class LoadModel(ModelBase):
             A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the surface heat flux magnitude. **magnitude** is optional if
-            **distributionType**=USER_DEFINED.
+            **distributionType** = USER_DEFINED.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         distributionType
             A SymbolicConstant specifying how the surface heat flux is distributed spatially.
@@ -2165,10 +2165,10 @@ class LoadModel(ModelBase):
             A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the surface pore fluid flow magnitude. **magnitude** is optional if
-            **distributionType**=USER_DEFINED.
+            **distributionType** = USER_DEFINED.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         distributionType
             A SymbolicConstant specifying whether the load is uniform. Possible values are UNIFORM,
@@ -2225,13 +2225,13 @@ class LoadModel(ModelBase):
             A Region object specifying the region to which the load is applied.
         magnitude
             A Float or Complex specifying the load magnitude. **magnitude** is optional if
-            **distributionType**=USER_DEFINED.
+            **distributionType** = USER_DEFINED.
         distributionType
             A SymbolicConstant specifying how the surface traction is distributed spatially.
             Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -2246,11 +2246,11 @@ class LoadModel(ModelBase):
             AXIS_1.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the load's degrees
-            of freedom. If **localCsys**=None, the degrees of freedom are defined in the global
+            of freedom. If **localCsys** = None, the degrees of freedom are defined in the global
             coordinate system or by the **userCsys** parameter if defined. When this member is
             queried, it returns an Int. The default value is None.
         userCsys
-            A String specifying a CSYS defined by a user-subroutine. If **userCsys**=None, the degrees
+            A String specifying a CSYS defined by a user-subroutine. If **userCsys** = None, the degrees
             of freedom are defined in the global coordinate system or by the **localCsys** parameter
             if defined. The default value is "None".
         directionVector

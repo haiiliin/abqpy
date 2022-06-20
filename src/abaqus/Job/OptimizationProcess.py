@@ -59,8 +59,8 @@ class OptimizationProcess:
         dataSaveFrequency
             An Enum specifying whether Abaqus should save every iteration file in the optimization
             process or a selection of iteration files saved at a user-specified frequency. If you
-            set **dataSaveFrequency**=OPT_DATASAVE_EVERY_CYCLE, Abaqus saves every iteration file; if
-            you set **dataSaveFrequency**=OPT_DATASAVE_SPECIFY_CYCLE, Abaqus saves iteration files
+            set **dataSaveFrequency** = OPT_DATASAVE_EVERY_CYCLE, Abaqus saves every iteration file; if
+            you set **dataSaveFrequency** = OPT_DATASAVE_SPECIFY_CYCLE, Abaqus saves iteration files
             according to the frequency defined by the **saveEvery** parameter. The default value is
             OPT_DATASAVE_SPECIFY_CYCLE.
         saveInitial
@@ -75,7 +75,7 @@ class OptimizationProcess:
         saveEvery
             An Int specifying every nth cycle iterations to be saved when **dataSaveFrequency** is
             OPT_DATASAVE_SPECIFY_CYCLE. Abaqus saves file iterations for every nth iteration after
-            iteration 1; if you set **saveEvery**=3, Abaqus saves file iterations for cycles 1, 4, 7,
+            iteration 1; if you set **saveEvery** = 3, Abaqus saves file iterations for cycles 1, 4, 7,
             and so on. The default value is None.
 
         Returns
@@ -186,8 +186,8 @@ class OptimizationProcess:
         dataSaveFrequency
             An Enum specifying whether Abaqus should save every iteration file in the optimization
             process or a selection of iteration files saved at a user-specified frequency. If you
-            set **dataSaveFrequency**=OPT_DATASAVE_EVERY_CYCLE, Abaqus saves every iteration file; if
-            you set **dataSaveFrequency**=OPT_DATASAVE_SPECIFY_CYCLE, Abaqus saves iteration files
+            set **dataSaveFrequency** = OPT_DATASAVE_EVERY_CYCLE, Abaqus saves every iteration file; if
+            you set **dataSaveFrequency** = OPT_DATASAVE_SPECIFY_CYCLE, Abaqus saves iteration files
             according to the frequency defined by the **saveEvery** parameter. The default value is
             OPT_DATASAVE_SPECIFY_CYCLE.
         saveInitial
@@ -202,7 +202,7 @@ class OptimizationProcess:
         saveEvery
             An Int specifying every nth cycle iterations to be saved when **dataSaveFrequency** is
             OPT_DATASAVE_SPECIFY_CYCLE. Abaqus saves file iterations for every nth iteration after
-            iteration 1; if you set **saveEvery**=3, Abaqus saves file iterations for cycles 1, 4, 7,
+            iteration 1; if you set **saveEvery** = 3, Abaqus saves file iterations for cycles 1, 4, 7,
             and so on. The default value is None.
         """
         pass

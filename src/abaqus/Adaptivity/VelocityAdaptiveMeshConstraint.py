@@ -46,7 +46,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     region: Region = Region()
 
     # None or a DatumCsys object specifying the local coordinate system of the adaptive mesh
-    # constraint's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+    # constraint's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     # in the global coordinate system. The default value is None.
     localCsys: str = None
 
@@ -114,7 +114,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
             for the specified step.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the adaptive mesh
-            constraint's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            constraint's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         motionType
             A SymbolicConstant specifying the mesh motion in relation to the underlying material.
@@ -174,7 +174,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
             for the specified step.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the adaptive mesh
-            constraint's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            constraint's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         motionType
             A SymbolicConstant specifying the mesh motion in relation to the underlying material.

@@ -193,7 +193,7 @@ class Feature:
         flipDirection
             A Boolean specifying if the direction along which the attachment points are created
             should be reversed. This argument is valid only when
-            **pointCreationMethod**=NUM_PTS_ALONG_DIR.
+            **pointCreationMethod** = NUM_PTS_ALONG_DIR.
         setName
             A String specifying a unique set name.
 
@@ -1421,7 +1421,7 @@ class Feature:
             perpendicular to the plane formed by **edges**.
         sense
             A SymbolicConstant specifying the direction of the extrusion. Possible values are
-            FORWARD and REVERSE. If **sense**=FORWARD, the extrusion is in the direction of **line**.
+            FORWARD and REVERSE. If **sense** = FORWARD, the extrusion is in the direction of **line**.
 
         Returns
         -------
@@ -2269,7 +2269,7 @@ class Feature:
             IMPRINT.
         meshable
             A Boolean specifying whether the wire should be available for selection for meshing
-            operations. If **meshable**=OFF, the wire can be used for connector section assignment.
+            operations. If **meshable** = OFF, the wire can be used for connector section assignment.
             The default value is ON.
 
         Returns

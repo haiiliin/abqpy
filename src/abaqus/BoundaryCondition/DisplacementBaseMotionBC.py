@@ -57,7 +57,7 @@ class DisplacementBaseMotionBC(BoundaryCondition):
     useComplex: Boolean = OFF
 
     # A ModelDot object specifying a tuple containing one center of rotation. The default
-    # value is the global origin. This argument applies only when **dof**=UR1, UR2, or UR3.
+    # value is the global origin. This argument applies only when **dof** = UR1, UR2, or UR3.
     centerOfRotation: tuple = ()
 
     # A CorrelationArray object.
@@ -75,7 +75,7 @@ class DisplacementBaseMotionBC(BoundaryCondition):
     region: Region = Region()
 
     # None or a DatumCsys object specifying the local coordinate system of the boundary
-    # condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+    # condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     # in the global coordinate system. The default value is None.
     localCsys: str = None
 
@@ -114,7 +114,7 @@ class DisplacementBaseMotionBC(BoundaryCondition):
             A Float specifying the scale factor for the amplitude curve. The default value is 1.0.
         centerOfRotation
             A ModelDot object specifying a tuple containing one center of rotation. The default
-            value is the global origin. This argument applies only when **dof**=UR1, UR2, or UR3.
+            value is the global origin. This argument applies only when **dof** = UR1, UR2, or UR3.
         correlation
             A CorrelationArray object.
         secondaryBase
@@ -154,7 +154,7 @@ class DisplacementBaseMotionBC(BoundaryCondition):
             A Float specifying the scale factor for the amplitude curve. The default value is 1.0.
         centerOfRotation
             A ModelDot object specifying a tuple containing one center of rotation. The default
-            value is the global origin. This argument applies only when **dof**=UR1, UR2, or UR3.
+            value is the global origin. This argument applies only when **dof** = UR1, UR2, or UR3.
         correlation
             A CorrelationArray object.
         secondaryBase

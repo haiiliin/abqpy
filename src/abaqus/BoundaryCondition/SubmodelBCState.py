@@ -39,7 +39,7 @@ class SubmodelBCState(BoundaryConditionState):
     globalStep: str
         A String specifying the step in the global model from which Abaqus reads the values of
         the variables that will drive the submodel analysis. The String indicates the position
-        of the step in the sequence of analysis steps. For example, **globalStep**='1' indicates
+        of the step in the sequence of analysis steps. For example, **globalStep** = '1' indicates
         the first step.
     dof: int
         A tuple of Ints specifying the degrees of freedom to which the boundary condition is
@@ -116,7 +116,7 @@ class SubmodelBCState(BoundaryConditionState):
 
     # A String specifying the step in the global model from which Abaqus reads the values of
     # the variables that will drive the submodel analysis. The String indicates the position
-    # of the step in the sequence of analysis steps. For example, **globalStep**='1' indicates
+    # of the step in the sequence of analysis steps. For example, **globalStep** = '1' indicates
     # the first step.
     globalStep: str = ""
 

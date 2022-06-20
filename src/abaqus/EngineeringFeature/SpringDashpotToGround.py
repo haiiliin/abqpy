@@ -70,16 +70,16 @@ class SpringDashpotToGround(SpringDashpot):
             behaviors. 
         orientation
             None or a DatumCsys object specifying the local directions for the spring and/or 
-            dashpot. If **orientation**=None, the spring and/or dashpot data are defined in the global 
+            dashpot. If **orientation** = None, the spring and/or dashpot data are defined in the global 
             coordinate system. The default value is None. 
         springBehavior
             A Boolean specifying whether to apply spring behavior to the selected points. The 
-            default value is OFF.At least one of the arguments **springBehavior**=ON or 
-            **dashpotBehavior**=ON must be specified. 
+            default value is OFF.At least one of the arguments **springBehavior** = ON or 
+            **dashpotBehavior** = ON must be specified. 
         dashpotBehavior
             A Boolean specifying whether to apply dashpot behavior to the selected points. The 
-            default value is OFF.At least one of the arguments **springBehavior**=ON or 
-            **dashpotBehavior**=ON must be specified. 
+            default value is OFF.At least one of the arguments **springBehavior** = ON or 
+            **dashpotBehavior** = ON must be specified. 
         springStiffness
             A Float specifying the force per relative displacement for the spring. The default value 
             is 0.0. 
@@ -108,16 +108,16 @@ class SpringDashpotToGround(SpringDashpot):
         ----------
         orientation
             None or a DatumCsys object specifying the local directions for the spring and/or
-            dashpot. If **orientation**=None, the spring and/or dashpot data are defined in the global
+            dashpot. If **orientation** = None, the spring and/or dashpot data are defined in the global
             coordinate system. The default value is None.
         springBehavior
             A Boolean specifying whether to apply spring behavior to the selected points. The
-            default value is OFF.At least one of the arguments **springBehavior**=ON or
-            **dashpotBehavior**=ON must be specified.
+            default value is OFF.At least one of the arguments **springBehavior** = ON or
+            **dashpotBehavior** = ON must be specified.
         dashpotBehavior
             A Boolean specifying whether to apply dashpot behavior to the selected points. The
-            default value is OFF.At least one of the arguments **springBehavior**=ON or
-            **dashpotBehavior**=ON must be specified.
+            default value is OFF.At least one of the arguments **springBehavior** = ON or
+            **dashpotBehavior** = ON must be specified.
         springStiffness
             A Float specifying the force per relative displacement for the spring. The default value
             is 0.0.

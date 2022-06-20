@@ -47,7 +47,7 @@ class KeywordBlock:
     # String can also be a comment in the input file. You initialize this data member by
     # calling synchVersions. After you initialize the data member, you use calls to replace
     # and insert to record your edits in the correct location. If the last call to
-    # synchVersions used the argument **storeNodesAndElements**=False, the entry for the
+    # synchVersions used the argument **storeNodesAndElements** = False, the entry for the
     # keywords NODE and ELEMENT will contain only the keyword and its parameters, not the data
     # lines.
     sieBlocks: tuple = ()
@@ -118,7 +118,7 @@ class KeywordBlock:
             Abaqus/CAE database, this will result in a larger database. It will also result in a
             slower execution of the synchVersions command. If **storeNodesAndElements** is False, the
             data lines are not stored in **sieBlocks**. Consequently, only set
-            **storeNodesAndElements**=True if you wish to make changes to the *NODE or *ELEMENT data
+            **storeNodesAndElements** = True if you wish to make changes to the *NODE or *ELEMENT data
             lines themselves. If your task is limited to reading nodal coordinates and element
             connectivities (i.e. not editing this information) then it is generally better to access
             this information from other parts of the Mdb.

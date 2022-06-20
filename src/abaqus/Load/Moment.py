@@ -55,13 +55,13 @@ class Moment(Load):
     follower: Boolean = OFF
 
     # None or a DatumCsys object specifying the ID of the Datum coordinate system used as the
-    # local coordinate system of the load. If **localCsys**=None, the load is defined in the
+    # local coordinate system of the load. If **localCsys** = None, the load is defined in the
     # global coordinate system. When this member is queried, it returns an Int. The default
     # value is None.
     localCsys: int = None
 
     # A String specifying the name of the AnalyticalField object associated with this load.
-    # The **field** argument applies only when **distributionType**=FIELD. The default value is an
+    # The **field** argument applies only when **distributionType** = FIELD. The default value is an
     # empty string.
     field: str = ""
 
@@ -118,7 +118,7 @@ class Moment(Load):
             step. The default value is OFF.
         localCsys
             None or a DatumCsys object specifying the ID of the Datum coordinate system used as the
-            local coordinate system of the load. If **localCsys**=None, the load is defined in the
+            local coordinate system of the load. If **localCsys** = None, the load is defined in the
             global coordinate system. When this member is queried, it returns an Int. The default
             value is None.
         distributionType
@@ -126,7 +126,7 @@ class Moment(Load):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
 
         Returns
@@ -170,7 +170,7 @@ class Moment(Load):
             step. The default value is OFF.
         localCsys
             None or a DatumCsys object specifying the ID of the Datum coordinate system used as the
-            local coordinate system of the load. If **localCsys**=None, the load is defined in the
+            local coordinate system of the load. If **localCsys** = None, the load is defined in the
             global coordinate system. When this member is queried, it returns an Int. The default
             value is None.
         distributionType
@@ -178,7 +178,7 @@ class Moment(Load):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         """
         pass

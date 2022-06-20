@@ -50,13 +50,13 @@ class TableCollectionAssembly(AssemblyBase):
             during the analysis.
         deformation
             A Boolean value specifying whether the elements that have not yet been activated will
-            follow the deformations of the active elements. Set **deformation**=ON when the
+            follow the deformations of the active elements. Set **deformation** = ON when the
             deformation of the active elements is excessive. The default value is OFF.
         freeSurfaceType
             A SymbolicConstant specifying the exposed areas of the element facets that are active
             for convection or radiation boundary conditions to be applied. Possible values are NONE
-            and FACET. If **freeSurfaceType**=FACET, user subroutine UEPACTIVATIONFACET will be called
-            at the start of the increment for each element. If **freeSurfaceType**=NONE, all the
+            and FACET. If **freeSurfaceType** = FACET, user subroutine UEPACTIVATIONFACET will be called
+            at the start of the increment for each element. If **freeSurfaceType** = NONE, all the
             exposed areas of the element facets are considered. The default value is NONE.
 
         Returns

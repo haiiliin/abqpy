@@ -88,7 +88,7 @@ class DGContourOptions:
     contourMethod: SymbolicConstant = TEXTURE_MAPPED
 
     # A Boolean specifying whether tick mark plots should be displayed on line-type elements.
-    # If **tickmarkPlots**=ON, Abaqus displays a tick mark plot. If **tickmarkPlots**=OFF, Abaqus
+    # If **tickmarkPlots** = ON, Abaqus displays a tick mark plot. If **tickmarkPlots** = OFF, Abaqus
     # displays contours on the element faces. The default value is OFF.
     tickmarkPlots: Boolean = OFF
 
@@ -97,16 +97,16 @@ class DGContourOptions:
     contourStyle: SymbolicConstant = UNIFORM
 
     # A Boolean specifying whether to plot the edges of each contour interval when
-    # **contourType**=BANDED or ISOSURFACE. The default value is OFF.
+    # **contourType** = BANDED or ISOSURFACE. The default value is OFF.
     contourEdges: Boolean = OFF
 
     # A SymbolicConstant specifying the edge line style to be used to plot the contour edges
-    # when **contourType**=BANDED or ISOSURFACE. Possible values are SOLID, DASHED, DOTTED, and
+    # when **contourType** = BANDED or ISOSURFACE. Possible values are SOLID, DASHED, DOTTED, and
     # DOT_DASH. The default value is SOLID.
     contourEdgeStyle: SymbolicConstant = SOLID
 
     # A SymbolicConstant specifying the edge line thickness to be used to plot the edge of the
-    # contour intervals when **contourType**=BANDED or ISOSURFACE. Possible values are
+    # contour intervals when **contourType** = BANDED or ISOSURFACE. Possible values are
     # VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN.
     contourEdgeThickness: SymbolicConstant = VERY_THIN
 
@@ -135,16 +135,16 @@ class DGContourOptions:
     # are N1 and N2. The default value is N2.
     tickmarkOrientation: SymbolicConstant = N2
 
-    # A String specifying the edge color to be used when **contourType**=LINE. The default value
+    # A String specifying the edge color to be used when **contourType** = LINE. The default value
     # is "White".
     edgeColorLine: str = ""
 
-    # A String specifying the edge color to be used when **contourType**=BANDED or QUILT. The
+    # A String specifying the edge color to be used when **contourType** = BANDED or QUILT. The
     # default value is "Black".
     edgeColorBandedQuilt: str = ""
 
     # A String specifying the color to be used to plot the contour edges when
-    # **contourType**=BANDED or ISOSURFACE. The default value is "Grey60".
+    # **contourType** = BANDED or ISOSURFACE. The default value is "Grey60".
     contourEdgeColor: str = ""
 
     # A String specifying the color to be used to plot the tick mark curve. The default value
@@ -152,7 +152,7 @@ class DGContourOptions:
     tickmarkCurveColor: str = ""
 
     # A tuple of tuples of SymbolicConstants specifying the line style and line thickness for
-    # each interval in the plot when **contourType**=LINE. The size of the outer sequence must
+    # each interval in the plot when **contourType** = LINE. The size of the outer sequence must
     # be equal to **numIntervals**-1. The inner sequence consists of two SymbolicConstants
     # specifying the line style and line thickness. For possible values, refer to the
     # **edgeLineStyle** and **edgeLineThickness** members of the DGCommonOptions object. The

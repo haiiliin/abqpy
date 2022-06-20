@@ -40,7 +40,7 @@ class QuickTimeOptions:
             SIZE_ON_SCREEN.
         imageSize
             A pair of Ints specifying the width and height of the image in pixels when
-            **sizeDefinition**=USER_DEFINED. Possible values are Ints in the range (*minWidth*,
+            **sizeDefinition** = USER_DEFINED. Possible values are Ints in the range (*minWidth*,
             **minHeight**) ≤≤ (width, height) ≤≤ (*maxWidth*, **maxHeight**). The default value is the
             screen size.
             Note:The values of the minimum width (*minWidth*) and height (*minHeight*) depend on the

@@ -41,7 +41,7 @@ class EpsOptions:
             value is INCHES.
         resolution
             A SymbolicConstant specifying the resolution of the image in dots per inch (dpi). The
-            **resolution** can be DPI_1200 only if **imageFormat**=VECTOR. Possible values are DPI_75,
+            **resolution** can be DPI_1200 only if **imageFormat** = VECTOR. Possible values are DPI_75,
             DPI_150, DPI_300, DPI_450, DPI_600, and DPI_1200. The default value is DPI_150.
         fontType
             A SymbolicConstant specifying the PostScript font substitution rules to be applied.

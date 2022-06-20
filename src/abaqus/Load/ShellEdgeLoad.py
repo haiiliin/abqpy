@@ -41,7 +41,7 @@ class ShellEdgeLoad(Load):
     distributionType: SymbolicConstant = UNIFORM
 
     # A String specifying the name of the AnalyticalField object associated with this load.
-    # The **field** argument applies only when **distributionType**=FIELD. The default value is an
+    # The **field** argument applies only when **distributionType** = FIELD. The default value is an
     # empty string.
     field: str = ""
 
@@ -86,13 +86,13 @@ class ShellEdgeLoad(Load):
             A Region object specifying the region to which the load is applied.
         magnitude
             A Float or Complex specifying the load magnitude. **magnitude** is optional if
-            **distributionType**=USER_DEFINED
+            **distributionType** = USER_DEFINED
         distributionType
             A SymbolicConstant specifying how the shell edge load is distributed spatially. Possible
             values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -165,7 +165,7 @@ class ShellEdgeLoad(Load):
             values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.

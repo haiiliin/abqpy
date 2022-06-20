@@ -65,7 +65,7 @@ class NonstructuralMass(Inertia):
         distribution
             A SymbolicConstant specifying the distribution of the nonstructural mass. Possible
             values are MASS_PROPORTIONAL and VOLUME_PROPORTIONAL. The default value is
-            MASS_PROPORTIONAL.The **distribution** argument applies only when **units**=TOTAL_MASS.
+            MASS_PROPORTIONAL.The **distribution** argument applies only when **units** = TOTAL_MASS.
 
         Returns
         -------
@@ -82,6 +82,6 @@ class NonstructuralMass(Inertia):
         distribution
             A SymbolicConstant specifying the distribution of the nonstructural mass. Possible
             values are MASS_PROPORTIONAL and VOLUME_PROPORTIONAL. The default value is
-            MASS_PROPORTIONAL.The **distribution** argument applies only when **units**=TOTAL_MASS.
+            MASS_PROPORTIONAL.The **distribution** argument applies only when **units** = TOTAL_MASS.
         """
         pass

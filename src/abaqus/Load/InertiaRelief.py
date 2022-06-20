@@ -33,7 +33,7 @@ class InertiaRelief(Load):
     name: str = ""
 
     # None or a DatumCsys object specifying the local coordinate system of the rigid body
-    # degrees of freedom for the inertia relief load. If **localCoordinates**=None, the free
+    # degrees of freedom for the inertia relief load. If **localCoordinates** = None, the free
     # directions are defined in the global coordinate system. When this member is queried, it
     # returns an Int. The default value is None.
     localCoordinates: int = None
@@ -92,7 +92,7 @@ class InertiaRelief(Load):
             free directions.
         localCoordinates
             None or a DatumCsys object specifying the local coordinate system of the rigid body
-            degrees of freedom for the inertia relief load. If **localCoordinates**=None, the free
+            degrees of freedom for the inertia relief load. If **localCoordinates** = None, the free
             directions are defined in the global coordinate system. When this member is queried, it
             returns an Int. The default value is None.
 
@@ -141,7 +141,7 @@ class InertiaRelief(Load):
             free directions.
         localCoordinates
             None or a DatumCsys object specifying the local coordinate system of the rigid body
-            degrees of freedom for the inertia relief load. If **localCoordinates**=None, the free
+            degrees of freedom for the inertia relief load. If **localCoordinates** = None, the free
             directions are defined in the global coordinate system. When this member is queried, it
             returns an Int. The default value is None.
         """

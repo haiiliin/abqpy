@@ -147,7 +147,7 @@ class FieldOutputRequest:
             **assembledFastener**. The default value is an empty string.
         exteriorOnly
             A Boolean specifying whether the output domain is restricted to the exterior of the
-            model. This argument is only valid if **region**=MODEL. The default value is OFF.
+            model. This argument is only valid if **region** = MODEL. The default value is OFF.
         layupNames
             A List of Composite Layer Names.
         layupLocationMethod
@@ -300,7 +300,7 @@ class FieldOutputRequest:
             **assembledFastener**. The default value is an empty string.
         exteriorOnly
             A Boolean specifying whether the output domain is restricted to the exterior of the
-            model. This argument is only valid if **region**=MODEL. The default value is OFF.
+            model. This argument is only valid if **region** = MODEL. The default value is OFF.
         layupNames
             A List of Composite Layer Names.
         layupLocationMethod

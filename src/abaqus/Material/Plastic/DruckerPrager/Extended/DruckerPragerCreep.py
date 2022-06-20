@@ -17,7 +17,7 @@ class DruckerPragerCreep:
 
     The table data for this object are:
 
-    - If **law**=TIME or **law**=STRAIN, the table data specify the following:
+    - If **law** = TIME or **law** = STRAIN, the table data specify the following:
     
         - A. (Units of :math:`\mathrm{F}^{-n} \mathrm{~L}^{2 n} \mathrm{~T}^{-1-m}`.)
         - :math:`n`.
@@ -26,7 +26,7 @@ class DruckerPragerCreep:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **law**=SINGHM, the table data specify the following:
+    - If **law** = SINGHM, the table data specify the following:
     
         - A. (Units of :math:`\mathrm{T}^{-1} .` )
         - :math:`\alpha`. (Units of :math:`F^{-1} L^{2}`.)

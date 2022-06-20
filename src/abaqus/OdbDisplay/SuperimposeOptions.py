@@ -154,12 +154,12 @@ class SuperimposeOptions(DGSuperimposeOptions):
     # shape.
     deformedOffsetMode: SymbolicConstant = NONE
 
-    # A Float specifying the uniform offset value when **deformedOffsetMode**=UNIFORM. The
+    # A Float specifying the uniform offset value when **deformedOffsetMode** = UNIFORM. The
     # default value is 0.0.
     uniformOffset: float = 0
 
     # A tuple of three Floats specifying the offset value in each of the three coordinate
-    # directions when **deformedOffsetMode**=NONUNIFORM. The default value is (0, 0, 0).
+    # directions when **deformedOffsetMode** = NONUNIFORM. The default value is (0, 0, 0).
     nonuniformOffset: float = None
 
     # A SymbolicConstant specifying the render style of the plot. Possible values are
@@ -168,7 +168,7 @@ class SuperimposeOptions(DGSuperimposeOptions):
 
     # A SymbolicConstant specifying which edges to plot. Possible values are ALL, EXTERIOR,
     # FEATURE, FREE, and NONE. The default value is FEATURE.NONE can be used only when
-    # **renderStyle**=SHADED.
+    # **renderStyle** = SHADED.
     visibleEdges: SymbolicConstant = FEATURE
 
     # A SymbolicConstant specifying the edge line style. Possible values are SOLID, DASHED,
@@ -208,7 +208,7 @@ class SuperimposeOptions(DGSuperimposeOptions):
     # value is OFF.
     elementShrink: Boolean = OFF
 
-    # An Int specifying the percentage to shrink the elements when **elementShrink**=ON.
+    # An Int specifying the percentage to shrink the elements when **elementShrink** = ON.
     # Possible values are 0≤ **elementShrinkPercentage** ≤ 90. The default value is 5.
     elementShrinkFactor: int = 5
 
@@ -238,19 +238,19 @@ class SuperimposeOptions(DGSuperimposeOptions):
     # A Boolean specifying whether to set translucency. The default value is OFF.
     translucency: Boolean = OFF
 
-    # A Float specifying the translucency factor when **translucency**=ON. Possible values are
+    # A Float specifying the translucency factor when **translucency** = ON. Possible values are
     # 0.0≤ **translucencyFactor** ≤ 1.0. The default value is 0.3.
     translucencyFactor: float = 0
 
     # A String specifying the color to be used to plot the edges of the model when
-    # **renderStyle**=WIREFRAME or HIDDEN. The default value is "Green".
+    # **renderStyle** = WIREFRAME or HIDDEN. The default value is "Green".
     edgeColorWireHide: str = ""
 
     # A String specifying the color to be used to plot the edges of the model when
-    # **renderStyle**=FILLED or SHADED. The default value is "Black".
+    # **renderStyle** = FILLED or SHADED. The default value is "Black".
     edgeColorFillShade: str = ""
 
-    # A String specifying the color to be used to fill elements when **renderStyle**=FILLED or
+    # A String specifying the color to be used to fill elements when **renderStyle** = FILLED or
     # SHADED. The default value is "Green".
     fillColor: str = ""
 
@@ -291,7 +291,7 @@ class SuperimposeOptions(DGSuperimposeOptions):
     beamTangentColor: str = ""
 
     # A tuple of three Floats specifying the coordinate scaling in each of the three
-    # coordinate directions when **coordinateScale**=ON. The default value is (1, 1, 1).
+    # coordinate directions when **coordinateScale** = ON. The default value is (1, 1, 1).
     coordinateScaleFactors: float = None
 
     def setValues(
@@ -349,13 +349,13 @@ class SuperimposeOptions(DGSuperimposeOptions):
         visibleEdges
             A SymbolicConstant specifying which edges to plot. Possible values are ALL, EXTERIOR,
             FEATURE, FREE, and NONE. The default value is FEATURE.NONE can be used only when
-            **renderStyle**=SHADED.
+            **renderStyle** = SHADED.
         edgeColorWireHide
             A String specifying the color to be used to plot the edges of the model when
-            **renderStyle**=WIREFRAME or HIDDEN. The default value is "Green".
+            **renderStyle** = WIREFRAME or HIDDEN. The default value is "Green".
         edgeColorFillShade
             A String specifying the color to be used to plot the edges of the model when
-            **renderStyle**=FILLED or SHADED. The default value is "Black".
+            **renderStyle** = FILLED or SHADED. The default value is "Black".
         edgeLineStyle
             A SymbolicConstant specifying the edge line style. Possible values are SOLID, DASHED,
             DOTTED, and DOT_DASH. The default value is SOLID.
@@ -366,7 +366,7 @@ class SuperimposeOptions(DGSuperimposeOptions):
             A Boolean specifying whether to allow color coded items in the output database to
             override the edge and fill color settings. The default value is ON.
         fillColor
-            A String specifying the color to be used to fill elements when **renderStyle**=FILLED or
+            A String specifying the color to be used to fill elements when **renderStyle** = FILLED or
             SHADED. The default value is "Green".
         labelFont
             A String specifying the label font to be used for all model labels. The default value is
@@ -402,13 +402,13 @@ class SuperimposeOptions(DGSuperimposeOptions):
             A Boolean specifying whether elements are displayed in a shrunk format. The default
             value is OFF.
         elementShrinkFactor
-            An Int specifying the percentage to shrink the elements when **elementShrink**=ON.
+            An Int specifying the percentage to shrink the elements when **elementShrink** = ON.
             Possible values are 0≤ **elementShrinkPercentage** ≤ 90. The default value is 5.
         coordinateScale
             A Boolean specifying whether to scale coordinates. The default value is OFF.
         coordinateScaleFactors
             A sequence of three Floats specifying the coordinate scaling in each of the three
-            coordinate directions when **coordinateScale**=ON. The default value is (1, 1, 1).
+            coordinate directions when **coordinateScale** = ON. The default value is (1, 1, 1).
         normals
             A Boolean specifying whether to draw arrows that indicate the directions of element and
             surface normals. The default value is OFF.
@@ -439,7 +439,7 @@ class SuperimposeOptions(DGSuperimposeOptions):
         translucency
             A Boolean specifying whether to set translucency. The default value is OFF.
         translucencyFactor
-            A Float specifying the translucency factor when **translucency**=ON. Possible values are
+            A Float specifying the translucency factor when **translucency** = ON. Possible values are
             0.0≤ **translucencyFactor** ≤ 1.0. The default value is 0.3.
         deformedOffsetMode
             A SymbolicConstant specifying the offset of the deformed shape from the undeformed
@@ -447,11 +447,11 @@ class SuperimposeOptions(DGSuperimposeOptions):
             specifies that there should be no offset of the deformed shape from the undeformed
             shape.
         uniformOffset
-            A Float specifying the uniform offset value when **deformedOffsetMode**=UNIFORM. The
+            A Float specifying the uniform offset value when **deformedOffsetMode** = UNIFORM. The
             default value is 0.0.
         nonuniformOffset
             A sequence of three Floats specifying the offset value in each of the three coordinate
-            directions when **deformedOffsetMode**=NONUNIFORM. The default value is (0, 0, 0).
+            directions when **deformedOffsetMode** = NONUNIFORM. The default value is (0, 0, 0).
 
         Raises
         ------

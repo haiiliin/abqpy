@@ -50,7 +50,7 @@ class Trs:
             WLF, ARRHENIUS, and USER. The default value is WLF.
         table
             A sequence of sequences of Floats specifying the items described below. The default
-            value is an empty sequence.This argument is valid only when **definition**=WLF.
+            value is an empty sequence.This argument is valid only when **definition** = WLF.
 
         Returns
         -------

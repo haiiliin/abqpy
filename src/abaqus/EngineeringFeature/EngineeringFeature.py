@@ -71,9 +71,9 @@ class EngineeringFeature(EngineeringFeatureBase):
             template model at each attachment point. Possible values are NORMALS and CSYS. The
             default value is NORMALS.
         localCsys
-            None or a DatumCsys object specifying the local coordinate system. If **localCsys**=None,
+            None or a DatumCsys object specifying the local coordinate system. If **localCsys** = None,
             the global coordinate system is used. When this member is queried, it returns an Int.
-            The default value is None.This argument applies only when **orientMethod**=CSYS.
+            The default value is None.This argument applies only when **orientMethod** = CSYS.
         scriptName
             A String specifying the name of the property generation script. The default value is an
             empty string.
@@ -151,18 +151,18 @@ class EngineeringFeature(EngineeringFeatureBase):
             **listOfRegions** is ON. The default value is **name**+Front.
         crackTipName
             A String specifying the name of the crack-tip region generated from the tuple of regions
-            specifying the crack-tip region. This parameter is valid only when **listOfRegions**=ON.
+            specifying the crack-tip region. This parameter is valid only when **listOfRegions** = ON.
             The default value is **name**+Tip.
         crackNormal
             A sequence of sequences of Floats specifying the two points of the vector that describes
             the crack normal direction. Each point is defined by a tuple of two or three coordinates
             indicating its position. This argument is required only when
-            **extensionDirectionMethod**=CRACK_NORMAL. The default value is an empty sequence.
+            **extensionDirectionMethod** = CRACK_NORMAL. The default value is an empty sequence.
         qVectors
             A sequence of sequences of sequences of Floats specifying the vectors that indicate the
             set of crack extension directions. Each vector is described by a tuple of two points,
             and each point is described by a tuple of two or three coordinates indicating its
-            position. This argument is required only when **extensionDirectionMethod**=Q_VECTORS. The
+            position. This argument is required only when **extensionDirectionMethod** = Q_VECTORS. The
             default value is an empty sequence.
         midNodePosition
             A Float specifying the position of the midside node along the edges of the second-order
@@ -299,7 +299,7 @@ class EngineeringFeature(EngineeringFeatureBase):
             default value is UNIFORM.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of fastener couplings.
-            If **localCsys**=None, couplings are defined in the global coordinate system. When this
+            If **localCsys** = None, couplings are defined in the global coordinate system. When this
             member is queried, it returns an Int. The default value is None.
 
         Returns
@@ -394,7 +394,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         distribution
             A SymbolicConstant specifying the distribution of the nonstructural mass. Possible
             values are MASS_PROPORTIONAL and VOLUME_PROPORTIONAL. The default value is
-            MASS_PROPORTIONAL.The **distribution** argument applies only when **units**=TOTAL_MASS.
+            MASS_PROPORTIONAL.The **distribution** argument applies only when **units** = TOTAL_MASS.
 
         Returns
         -------
@@ -508,7 +508,7 @@ class EngineeringFeature(EngineeringFeatureBase):
             fastener is normal to the surface that is closest to the reference node for that
             fastener. The default value is ON.
         localCsys
-            None or a DatumCsys object specifying the local coordinate system. If **localCsys**=None,
+            None or a DatumCsys object specifying the local coordinate system. If **localCsys** = None,
             the global coordinate system is used. When this member is queried, it returns an Int.
             The default value is None.
         connectionType
@@ -519,7 +519,7 @@ class EngineeringFeature(EngineeringFeatureBase):
             value is an empty string.
         connectorOrientationLocalCsys1
             None or a DatumCsys object specifying the local coordinate system of the first connector
-            point in generated connectors. If **connectorOrientationLocalCsys1**=None, the degrees of
+            point in generated connectors. If **connectorOrientationLocalCsys1** = None, the degrees of
             freedom are defined in the global coordinate system. When this member is queried, it
             returns an Int. The default value is None.
         axis1
@@ -535,7 +535,7 @@ class EngineeringFeature(EngineeringFeatureBase):
             default value is ON.
         connectorOrientationLocalCsys2
             None or a DatumCsys object specifying the local coordinate system of the second
-            connector point in generated connectors. If **connectorOrientationLocalCsys2**=None, the
+            connector point in generated connectors. If **connectorOrientationLocalCsys2** = None, the
             degrees of freedom are defined in the global coordinate system. When this member is
             queried, it returns an Int. The default value is None.
         axis2
@@ -650,7 +650,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         localCsys
             None or a DatumCsys object specifying the local coordinate system for the anisotropic
             mass terms (when specified), and the rotary inertia (when specified). If
-            **localCsys**=None, the anisotropic mass and rotary inertia data are defined in the global
+            **localCsys** = None, the anisotropic mass and rotary inertia data are defined in the global
             coordinate system. The default value is None.
         alpha
             A Float specifying the alpha damping magnitude. The default value is 0.0.This argument
@@ -715,16 +715,16 @@ class EngineeringFeature(EngineeringFeatureBase):
             behaviors.
         orientation
             None or a DatumCsys object specifying the local directions for the spring and/or
-            dashpot. If **orientation**=None, the spring and/or dashpot data are defined in the global
+            dashpot. If **orientation** = None, the spring and/or dashpot data are defined in the global
             coordinate system. The default value is None.
         springBehavior
             A Boolean specifying whether to apply spring behavior to the selected points. The
-            default value is OFF.At least one of the arguments **springBehavior**=ON or
-            **dashpotBehavior**=ON must be specified.
+            default value is OFF.At least one of the arguments **springBehavior** = ON or
+            **dashpotBehavior** = ON must be specified.
         dashpotBehavior
             A Boolean specifying whether to apply dashpot behavior to the selected points. The
-            default value is OFF.At least one of the arguments **springBehavior**=ON or
-            **dashpotBehavior**=ON must be specified.
+            default value is OFF.At least one of the arguments **springBehavior** = ON or
+            **dashpotBehavior** = ON must be specified.
         springStiffness
             A Float specifying the force per relative displacement for the spring. The default value
             is 0.0.
@@ -786,24 +786,24 @@ class EngineeringFeature(EngineeringFeatureBase):
         dof1
             An Int specifying the degree of freedom with which the springs and/or dashpots are
             associated at their first points. The **dof1** argument applies only when
-            **axis**=FIXED_DOFS. The default value is 0.
+            **axis** = FIXED_DOFS. The default value is 0.
         dof2
             An Int specifying the degree of freedom with which the springs and/or dashpots are
             associated at their second points. The **dof2** argument applies only when
-            **axis**=FIXED_DOFS. The default value is 0.
+            **axis** = FIXED_DOFS. The default value is 0.
         orientation
             None or a DatumCsys object specifying the local directions for the spring and/or
-            dashpot. If **orientation**=None, the spring and/or dashpot data are defined in the global
+            dashpot. If **orientation** = None, the spring and/or dashpot data are defined in the global
             coordinate system. The default value is None.The **orientation** argument applies only
-            when **axis**=FIXED_DOFS.
+            when **axis** = FIXED_DOFS.
         springBehavior
             A Boolean specifying whether to apply spring behavior to the selected point pairs. The
-            default value is OFF.At least one of the arguments **springBehavior**=ON or
-            **dashpotBehavior**=ON must be specified.
+            default value is OFF.At least one of the arguments **springBehavior** = ON or
+            **dashpotBehavior** = ON must be specified.
         dashpotBehavior
             A Boolean specifying whether to apply dashpot behavior to the selected point pairs. The
-            default value is OFF.At least one of the arguments **springBehavior**=ON or
-            **dashpotBehavior**=ON must be specified.
+            default value is OFF.At least one of the arguments **springBehavior** = ON or
+            **dashpotBehavior** = ON must be specified.
         springStiffness
             A Float specifying the force per relative displacement for the springs. The default
             value is 0.0.
@@ -869,11 +869,11 @@ class EngineeringFeature(EngineeringFeatureBase):
             is ON.
         crackLocation
             A Region object specifying the initial crack location. This parameter is required when
-            **allowCrackGrowth**=OFF.
+            **allowCrackGrowth** = OFF.
         singularityCalcRadius
             None or a Float specifying the radius from the crack tips within which the elements are
             used for crack singularity calculations. This argument applies only when
-            **allowCrackGrowth**=OFF. The default value is None.
+            **allowCrackGrowth** = OFF. The default value is None.
         interactionProperty
             A String specifying the name of the ContactProperty object that defines the contact
             properties for the crack surfaces. The default value is an empty string.

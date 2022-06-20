@@ -44,7 +44,7 @@ class BeadPlanarSymmetry(GeometricRestriction):
             A SymbolicConstant specifying the axis of symmetry. Possible values are AXIS_1, AXIS_2,
             and AXIS_3. The default value is AXIS_1.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
 
@@ -64,7 +64,7 @@ class BeadPlanarSymmetry(GeometricRestriction):
             A SymbolicConstant specifying the axis of symmetry. Possible values are AXIS_1, AXIS_2,
             and AXIS_3. The default value is AXIS_1.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
         """

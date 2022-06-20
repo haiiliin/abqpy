@@ -34,17 +34,17 @@ class ContactDamping:
 
     The table data for this object are:
 
-    - If **definition**=DAMPING_COEFFICIENT and **clearanceDependence**=STEP, the table data specify the following:
+    - If **definition** = DAMPING_COEFFICIENT and **clearanceDependence** = STEP, the table data specify the following:
     
         - Damping coefficient.
 
-    - If **definition**=DAMPING_COEFFICIENT and **clearanceDependence**=LINEAR or BILINEAR, the table data specify the following:
+    - If **definition** = DAMPING_COEFFICIENT and **clearanceDependence** = LINEAR or BILINEAR, the table data specify the following:
 
         - Damping coefficient.
         - Clearance.
 
-        Two pairs must be given for **clearanceDependence**=LINEAR and three pairs for **clearanceDependence**=BILINEAR. The first pair must have **clearance**=0.0, and the last pair must have **coefficient**=0.0.
-    - If **definition**=CRITICAL_DAMPING_FRACTION, the table data specify the following:
+        Two pairs must be given for **clearanceDependence** = LINEAR and three pairs for **clearanceDependence** = BILINEAR. The first pair must have **clearance** = 0.0, and the last pair must have **coefficient** = 0.0.
+    - If **definition** = CRITICAL_DAMPING_FRACTION, the table data specify the following:
     
         - Critical damping fraction.
 
@@ -64,7 +64,7 @@ class ContactDamping:
 
     # A SymbolicConstant specifying the variation of the damping coefficient or fraction with
     # respect to clearance. Possible values are STEP, LINEAR, and BILINEAR. The default value
-    # is STEP.If **definition**=CRITICAL_DAMPING_FRACTION, the only possible value is STEP.
+    # is STEP.If **definition** = CRITICAL_DAMPING_FRACTION, the only possible value is STEP.
     clearanceDependence: SymbolicConstant = STEP
 
     # A tuple of pairs of Floats specifying the damping properties. The items in the table
@@ -100,7 +100,7 @@ class ContactDamping:
         clearanceDependence
             A SymbolicConstant specifying the variation of the damping coefficient or fraction with
             respect to clearance. Possible values are STEP, LINEAR, and BILINEAR. The default value
-            is STEP.If **definition**=CRITICAL_DAMPING_FRACTION, the only possible value is STEP.
+            is STEP.If **definition** = CRITICAL_DAMPING_FRACTION, the only possible value is STEP.
         table
             A sequence of pairs of Floats specifying the damping properties. The items in the table
             data are described below.

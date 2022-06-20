@@ -91,7 +91,7 @@ class DiscreteFastener(Fastener):
             default value is UNIFORM.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of fastener couplings.
-            If **localCsys**=None, couplings are defined in the global coordinate system. When this
+            If **localCsys** = None, couplings are defined in the global coordinate system. When this
             member is queried, it returns an Int. The default value is None.
 
         Returns
@@ -137,7 +137,7 @@ class DiscreteFastener(Fastener):
             default value is UNIFORM.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of fastener couplings.
-            If **localCsys**=None, couplings are defined in the global coordinate system. When this
+            If **localCsys** = None, couplings are defined in the global coordinate system. When this
             member is queried, it returns an Int. The default value is None.
         """
         pass

@@ -196,11 +196,11 @@ class StaticRiksStep(AnalysisStep):
 
     # A Float specifying the value of the total displacement (or rotation) at the node and
     # degree of freedom that, if crossed during an increment, ends the step at the current
-    # increment. This argument is required when **nodeOn**=ON. The default value is 0.0.
+    # increment. This argument is required when **nodeOn** = ON. The default value is 0.0.
     maximumDisplacement: float = 0
 
     # An Int specifying the degree of freedom being monitored. This argument is required when
-    # **nodeOn**=ON. The default value is 0.
+    # **nodeOn** = ON. The default value is 0.
     dof: int = 0
 
     # A SymbolicConstant specifying the time incrementation method to be used. Possible values
@@ -238,7 +238,7 @@ class StaticRiksStep(AnalysisStep):
 
     # A Boolean specifying whether to accept the solution to an increment after the maximum
     # number of iterations allowed have been completed, even if the equilibrium tolerances are
-    # not satisfied. The default value is OFF.Warning:You should set **noStop**=ON only in
+    # not satisfied. The default value is OFF.Warning:You should set **noStop** = ON only in
     # special cases when you have a thorough understanding of how to interpret the results.
     noStop: Boolean = OFF
 
@@ -264,7 +264,7 @@ class StaticRiksStep(AnalysisStep):
     fullyPlastic: str = ""
 
     # A Region object specifying the vertex at which the finishing displacement value is being
-    # monitored. This argument is required when **nodeOn**=ON.
+    # monitored. This argument is required when **nodeOn** = ON.
     region: Region = Region()
 
     # A SymbolicConstant specifying whether the step has an explicit procedure type
@@ -421,13 +421,13 @@ class StaticRiksStep(AnalysisStep):
         maximumDisplacement
             A Float specifying the value of the total displacement (or rotation) at the node and
             degree of freedom that, if crossed during an increment, ends the step at the current
-            increment. This argument is required when **nodeOn**=ON. The default value is 0.0.
+            increment. This argument is required when **nodeOn** = ON. The default value is 0.0.
         dof
             An Int specifying the degree of freedom being monitored. This argument is required when
-            **nodeOn**=ON. The default value is 0.
+            **nodeOn** = ON. The default value is 0.
         region
             A Region object specifying the vertex at which the finishing displacement value is being
-            monitored. This argument is required when **nodeOn**=ON.
+            monitored. This argument is required when **nodeOn** = ON.
         timeIncrementationMethod
             A SymbolicConstant specifying the time incrementation method to be used. Possible values
             are FIXED and AUTOMATIC. The default value is AUTOMATIC.
@@ -459,7 +459,7 @@ class StaticRiksStep(AnalysisStep):
         noStop
             A Boolean specifying whether to accept the solution to an increment after the maximum
             number of iterations allowed have been completed, even if the equilibrium tolerances are
-            not satisfied. The default value is OFF.Warning:You should set **noStop**=ON only in
+            not satisfied. The default value is OFF.Warning:You should set **noStop** = ON only in
             special cases when you have a thorough understanding of how to interpret the results.
         maintainAttributes
             A Boolean specifying whether to retain attributes from an existing step with the same
@@ -528,13 +528,13 @@ class StaticRiksStep(AnalysisStep):
         maximumDisplacement
             A Float specifying the value of the total displacement (or rotation) at the node and
             degree of freedom that, if crossed during an increment, ends the step at the current
-            increment. This argument is required when **nodeOn**=ON. The default value is 0.0.
+            increment. This argument is required when **nodeOn** = ON. The default value is 0.0.
         dof
             An Int specifying the degree of freedom being monitored. This argument is required when
-            **nodeOn**=ON. The default value is 0.
+            **nodeOn** = ON. The default value is 0.
         region
             A Region object specifying the vertex at which the finishing displacement value is being
-            monitored. This argument is required when **nodeOn**=ON.
+            monitored. This argument is required when **nodeOn** = ON.
         timeIncrementationMethod
             A SymbolicConstant specifying the time incrementation method to be used. Possible values
             are FIXED and AUTOMATIC. The default value is AUTOMATIC.
@@ -566,7 +566,7 @@ class StaticRiksStep(AnalysisStep):
         noStop
             A Boolean specifying whether to accept the solution to an increment after the maximum
             number of iterations allowed have been completed, even if the equilibrium tolerances are
-            not satisfied. The default value is OFF.Warning:You should set **noStop**=ON only in
+            not satisfied. The default value is OFF.Warning:You should set **noStop** = ON only in
             special cases when you have a thorough understanding of how to interpret the results.
         useLongTermSolution
             A Boolean specifying wether to obtain the fully relaxed long-term elastic solution with

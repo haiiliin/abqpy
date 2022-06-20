@@ -210,7 +210,7 @@ class ContactExp(Interaction):
         includedPairs
             A sequence of pairs of Region objects or SymbolicConstants that specifies the surface
             pairs in contact. Possible values of the SymbolicConstants are ALLSTAR and SELF. This
-            argument is valid only when **useAllstar**=OFF.
+            argument is valid only when **useAllstar** = OFF.
         excludedPairs
             A sequence of pairs of Region objects or SymbolicConstants that specify the surface
             pairs excluded from contact. Possible values of the SymbolicConstants are ALLSTAR and

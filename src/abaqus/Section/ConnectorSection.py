@@ -107,15 +107,15 @@ class ConnectorSection(Section):
             response for the sixth component of relative motion. The default value is None.
         massPerLength
             None or a Float specifying the mass per unit reference length of belt material. This
-            argument is applicable only when **assembledType**=SLIPRING, and must be specified in that
+            argument is applicable only when **assembledType** = SLIPRING, and must be specified in that
             case. The default value is None.
         contactAngle
             None or a Float specifying the contact angle made by the belt wrapping around node b.
             This argument is applicable only to an Abaqus/Explicit analysis, and only when
-            **assembledType**=SLIPRING. The default value is None.
+            **assembledType** = SLIPRING. The default value is None.
         materialFlowFactor
             A Float specifying the scaling factor for material flow at node b. This argument is
-            applicable only when **assembledType**=RETRACTOR or **rotationalType**=FLOW_CONVERTER. The
+            applicable only when **assembledType** = RETRACTOR or **rotationalType** = FLOW_CONVERTER. The
             default value is 1.0.
         regularize
             A Boolean specifying whether or not all tabular data associated with the
@@ -124,12 +124,12 @@ class ConnectorSection(Section):
         defaultTolerance
             A Boolean specifying whether or not the default regularization tolerance will be used
             for all tabular data associated with the **behaviorOptions**. This argument is applicable
-            only for an Abaqus/Explicit analysis and only if **regularize**=ON. The default value is
+            only for an Abaqus/Explicit analysis and only if **regularize** = ON. The default value is
             ON.
         regularization
             A Float specifying the regularization increment to be used for all tabular data
             associated with the **behaviorOptions**. This argument is applicable only for an
-            Abaqus/Explicit analysis and only if **regularize**=ON and **defaultTolerance**=OFF. The
+            Abaqus/Explicit analysis and only if **regularize** = ON and **defaultTolerance** = OFF. The
             default value is 0.03.
         extrapolation
             A SymbolicConstant specifying the extrapolation technique to be used for all tabular
@@ -220,15 +220,15 @@ class ConnectorSection(Section):
             response for the sixth component of relative motion. The default value is None.
         massPerLength
             None or a Float specifying the mass per unit reference length of belt material. This
-            argument is applicable only when **assembledType**=SLIPRING, and must be specified in that
+            argument is applicable only when **assembledType** = SLIPRING, and must be specified in that
             case. The default value is None.
         contactAngle
             None or a Float specifying the contact angle made by the belt wrapping around node b.
             This argument is applicable only to an Abaqus/Explicit analysis, and only when
-            **assembledType**=SLIPRING. The default value is None.
+            **assembledType** = SLIPRING. The default value is None.
         materialFlowFactor
             A Float specifying the scaling factor for material flow at node b. This argument is
-            applicable only when **assembledType**=RETRACTOR or **rotationalType**=FLOW_CONVERTER. The
+            applicable only when **assembledType** = RETRACTOR or **rotationalType** = FLOW_CONVERTER. The
             default value is 1.0.
         regularize
             A Boolean specifying whether or not all tabular data associated with the
@@ -237,12 +237,12 @@ class ConnectorSection(Section):
         defaultTolerance
             A Boolean specifying whether or not the default regularization tolerance will be used
             for all tabular data associated with the **behaviorOptions**. This argument is applicable
-            only for an Abaqus/Explicit analysis and only if **regularize**=ON. The default value is
+            only for an Abaqus/Explicit analysis and only if **regularize** = ON. The default value is
             ON.
         regularization
             A Float specifying the regularization increment to be used for all tabular data
             associated with the **behaviorOptions**. This argument is applicable only for an
-            Abaqus/Explicit analysis and only if **regularize**=ON and **defaultTolerance**=OFF. The
+            Abaqus/Explicit analysis and only if **regularize** = ON and **defaultTolerance** = OFF. The
             default value is 0.03.
         extrapolation
             A SymbolicConstant specifying the extrapolation technique to be used for all tabular

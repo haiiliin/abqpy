@@ -80,37 +80,37 @@ class Coupling(Constraint):
             value is OFF.
         localCsys
             None or a DatumCsys object specifying the initial orientation of the local coordinate
-            system for the coupling's degrees of freedom. If **localCsys**=None, the coupling is
+            system for the coupling's degrees of freedom. If **localCsys** = None, the coupling is
             defined in the global coordinate system. The default value is None.
         u1
             A Boolean specifying if the displacement component in the 1-direction is constrained to
             the reference node for a kinematic coupling constraint. The default value is ON.The **u1**
-            argument applies only when **couplingType**=KINEMATIC.
+            argument applies only when **couplingType** = KINEMATIC.
         u2
             A Boolean specifying if the displacement component in the 2-direction is constrained to
             the reference node for a kinematic coupling constraint. The default value is ON.The **u2**
-            argument applies only when **couplingType**=KINEMATIC.
+            argument applies only when **couplingType** = KINEMATIC.
         u3
             A Boolean specifying if the displacement component in the 3-direction is constrained to
             the reference node for a kinematic coupling constraint. The default value is ON.The **u3**
-            argument applies only when **couplingType**=KINEMATIC.
+            argument applies only when **couplingType** = KINEMATIC.
         ur1
             A Boolean specifying if the rotational displacement component about the 1-direction is
             constrained to the reference node for a kinematic coupling constraint. The default value
-            is ON.The **ur1** argument applies only when **couplingType**=KINEMATIC.
+            is ON.The **ur1** argument applies only when **couplingType** = KINEMATIC.
         ur2
             A Boolean specifying if the rotational displacement component about the 2-direction is
             constrained to the reference node for a kinematic coupling constraint. The default value
-            is ON.The **ur2** argument applies only when **couplingType**=KINEMATIC.
+            is ON.The **ur2** argument applies only when **couplingType** = KINEMATIC.
         ur3
             A Boolean specifying if the rotational displacement component about the 3-direction is
             constrained to the reference node for a kinematic coupling constraint. The default value
-            is ON.The **ur3** argument applies only when **couplingType**=KINEMATIC.
+            is ON.The **ur3** argument applies only when **couplingType** = KINEMATIC.
         weightingMethod
             A SymbolicConstant specifying an optional weighting method used for calculating the
             distributing weight factors. Possible values are UNIFORM, LINEAR, QUADRATIC, and CUBIC.
             The default value is UNIFORM.The **weightingMethod** argument applies only when
-            **couplingType**=DISTRIBUTING.
+            **couplingType** = DISTRIBUTING.
 
         Returns
         -------
@@ -141,36 +141,36 @@ class Coupling(Constraint):
             value is OFF.
         localCsys
             None or a DatumCsys object specifying the initial orientation of the local coordinate
-            system for the coupling's degrees of freedom. If **localCsys**=None, the coupling is
+            system for the coupling's degrees of freedom. If **localCsys** = None, the coupling is
             defined in the global coordinate system. The default value is None.
         u1
             A Boolean specifying if the displacement component in the 1-direction is constrained to
             the reference node for a kinematic coupling constraint. The default value is ON.The **u1**
-            argument applies only when **couplingType**=KINEMATIC.
+            argument applies only when **couplingType** = KINEMATIC.
         u2
             A Boolean specifying if the displacement component in the 2-direction is constrained to
             the reference node for a kinematic coupling constraint. The default value is ON.The **u2**
-            argument applies only when **couplingType**=KINEMATIC.
+            argument applies only when **couplingType** = KINEMATIC.
         u3
             A Boolean specifying if the displacement component in the 3-direction is constrained to
             the reference node for a kinematic coupling constraint. The default value is ON.The **u3**
-            argument applies only when **couplingType**=KINEMATIC.
+            argument applies only when **couplingType** = KINEMATIC.
         ur1
             A Boolean specifying if the rotational displacement component about the 1-direction is
             constrained to the reference node for a kinematic coupling constraint. The default value
-            is ON.The **ur1** argument applies only when **couplingType**=KINEMATIC.
+            is ON.The **ur1** argument applies only when **couplingType** = KINEMATIC.
         ur2
             A Boolean specifying if the rotational displacement component about the 2-direction is
             constrained to the reference node for a kinematic coupling constraint. The default value
-            is ON.The **ur2** argument applies only when **couplingType**=KINEMATIC.
+            is ON.The **ur2** argument applies only when **couplingType** = KINEMATIC.
         ur3
             A Boolean specifying if the rotational displacement component about the 3-direction is
             constrained to the reference node for a kinematic coupling constraint. The default value
-            is ON.The **ur3** argument applies only when **couplingType**=KINEMATIC.
+            is ON.The **ur3** argument applies only when **couplingType** = KINEMATIC.
         weightingMethod
             A SymbolicConstant specifying an optional weighting method used for calculating the
             distributing weight factors. Possible values are UNIFORM, LINEAR, QUADRATIC, and CUBIC.
             The default value is UNIFORM.The **weightingMethod** argument applies only when
-            **couplingType**=DISTRIBUTING.
+            **couplingType** = DISTRIBUTING.
         """
         pass

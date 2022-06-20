@@ -97,7 +97,7 @@ class PointMassInertia(Inertia):
         localCsys
             None or a DatumCsys object specifying the local coordinate system for the anisotropic
             mass terms (when specified), and the rotary inertia (when specified). If
-            **localCsys**=None, the anisotropic mass and rotary inertia data are defined in the global
+            **localCsys** = None, the anisotropic mass and rotary inertia data are defined in the global
             coordinate system. The default value is None.
         alpha
             A Float specifying the alpha damping magnitude. The default value is 0.0.This argument
@@ -163,7 +163,7 @@ class PointMassInertia(Inertia):
         localCsys
             None or a DatumCsys object specifying the local coordinate system for the anisotropic
             mass terms (when specified), and the rotary inertia (when specified). If
-            **localCsys**=None, the anisotropic mass and rotary inertia data are defined in the global
+            **localCsys** = None, the anisotropic mass and rotary inertia data are defined in the global
             coordinate system. The default value is None.
         alpha
             A Float specifying the alpha damping magnitude. The default value is 0.0.This argument

@@ -38,7 +38,7 @@ class ConnectorPotential:
     """
 
     # A DerivedComponent object specifying the DerivedComponent used in the contribution. This
-    # argument is applicable only if **componentStyle**=DERIVED_COMPONENT.
+    # argument is applicable only if **componentStyle** = DERIVED_COMPONENT.
     derivedComponent: DerivedComponent = DerivedComponent()
 
     def __init__(
@@ -72,7 +72,7 @@ class ConnectorPotential:
             COMPONENT_NUMBER and DERIVED_COMPONENT. The default value is COMPONENT_NUMBER. 
         componentNumber
             An Int specifying the component number used in the contribution. This argument is 
-            applicable only if **componentStyle**=COMPONENT_NUMBER. Possible values are 1 ≤≤ 
+            applicable only if **componentStyle** = COMPONENT_NUMBER. Possible values are 1 ≤≤ 
             **componentNumber** ≤≤ 6. Only available components can be specified. The default value is 
             0. 
         sign
@@ -90,7 +90,7 @@ class ConnectorPotential:
             A SymbolicConstant specifying the H function of the contribution: either absolute value, 
             Macauley bracket, or the identity function. Possible values are ABS, MACAULEY, and 
             IDENTITY. The default value is ABS.The value of IDENTITY can be used only if 
-            **positiveExponent**=1.0 and the potential exponent of the invoking behavior option is 
+            **positiveExponent** = 1.0 and the potential exponent of the invoking behavior option is 
             also 1.0 (i.e., the potential operator of the invoking behavior option must be SUM). 
 
         Returns

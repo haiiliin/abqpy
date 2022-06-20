@@ -52,7 +52,7 @@ class PipePressure(Load):
     diameter: float = None
 
     # A String specifying the name of the AnalyticalField object associated with this load.
-    # The **field** argument applies only when **distributionType**=FIELD. The default value is an
+    # The **field** argument applies only when **distributionType** = FIELD. The default value is an
     # empty string.
     field: str = ""
 
@@ -93,18 +93,18 @@ class PipePressure(Load):
             A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the pressure magnitude.Note:*magnitude* is optional if
-            **distributionType**=USER_DEFINED.
+            **distributionType** = USER_DEFINED.
         diameter
             A Float specifying the effective inner or outer diameter.
         hZero
             A Float specifying the height of the zero pressure level when
-            **distributionType**=HYDROSTATIC.
+            **distributionType** = HYDROSTATIC.
         hReference
             A Float specifying the height of the reference pressure level when
-            **distributionType**=HYDROSTATIC.
+            **distributionType** = HYDROSTATIC.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -138,7 +138,7 @@ class PipePressure(Load):
         ----------
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -172,10 +172,10 @@ class PipePressure(Load):
             A Float specifying the pressure magnitude.
         hZero
             A Float specifying the height of the zero pressure level when
-            **distributionType**=HYDROSTATIC.
+            **distributionType** = HYDROSTATIC.
         hReference
             A Float specifying the height of the reference pressure level when
-            **distributionType**=HYDROSTATIC.
+            **distributionType** = HYDROSTATIC.
         amplitude
             A String or a SymbolicConstant specifying the name of the amplitude reference. Possible
             values for the SymbolicConstant are UNCHANGED and FREED. UNCHANGED should be used if the

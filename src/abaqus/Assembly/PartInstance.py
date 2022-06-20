@@ -116,11 +116,11 @@ class PartInstance:
     name: str = ""
 
     # A Boolean specifying whether the part instance is dependent or independent. If
-    # **dependent**=OFF, the part instance is independent. The default value is OFF.
+    # **dependent** = OFF, the part instance is independent. The default value is OFF.
     dependent: Boolean = OFF
 
     # A Boolean specifying whether the part instance is excluded from the simulation. If
-    # **excludedFromSimulation**=ON, the part instance is excluded from the simulation. The
+    # **excludedFromSimulation** = ON, the part instance is excluded from the simulation. The
     # default value is OFF.
     excludedFromSimulation: Boolean = OFF
 
@@ -135,7 +135,7 @@ class PartInstance:
     analysisType: SymbolicConstant = None
 
     # An Int specifying the reference node number. This member is valid only if
-    # **analysisType**=DISCRETE_RIGID_SURFACE or ANALYTIC_RIGID_SURFACE.
+    # **analysisType** = DISCRETE_RIGID_SURFACE or ANALYTIC_RIGID_SURFACE.
     referenceNode: int = None
 
     # A Part object specifying the instanced part.
@@ -238,7 +238,7 @@ class PartInstance:
             offset it from existing part instances. The default value is OFF.
         dependent
             A Boolean specifying whether the part instance is dependent or independent. If
-            **dependent**=OFF, the part instance is independent. The default value is OFF.
+            **dependent** = OFF, the part instance is independent. The default value is OFF.
 
         Returns
         -------

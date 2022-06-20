@@ -71,7 +71,7 @@ class ConcentratedRadiationToAmbient(Interaction):
             Abaqus/Explicit analysis.
         field
             A String specifying the name of the AnalyticalField object associated with this
-            interaction. The **field** argument applies only when **distributionType**=ANALYTICAL_FIELD.
+            interaction. The **field** argument applies only when **distributionType** = ANALYTICAL_FIELD.
             The default value is an empty string.
         distributionType
             A SymbolicConstant specifying how the radiation is defined. Possible values are UNIFORM
@@ -106,7 +106,7 @@ class ConcentratedRadiationToAmbient(Interaction):
             Abaqus/Explicit analysis.
         field
             A String specifying the name of the AnalyticalField object associated with this
-            interaction. The **field** argument applies only when **distributionType**=ANALYTICAL_FIELD.
+            interaction. The **field** argument applies only when **distributionType** = ANALYTICAL_FIELD.
             The default value is an empty string.
         distributionType
             A SymbolicConstant specifying how the radiation is defined. Possible values are UNIFORM
@@ -133,7 +133,7 @@ class ConcentratedRadiationToAmbient(Interaction):
             interaction is applied. The default value is 1.0.
         field
             A String specifying the name of the AnalyticalField object associated with this
-            interaction. The **field** argument applies only when **distributionType**=ANALYTICAL_FIELD.
+            interaction. The **field** argument applies only when **distributionType** = ANALYTICAL_FIELD.
             The default value is an empty string.
         distributionType
             A SymbolicConstant specifying how the radiation is defined. Possible values are UNIFORM

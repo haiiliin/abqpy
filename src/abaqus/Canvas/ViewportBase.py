@@ -222,7 +222,7 @@ class ViewportBase:
     displayMode: SymbolicConstant = None
 
     # A SymbolicConstant specifying which layer or layers will be controlled by the view
-    # manipulation tools when **displayMode**=OVERLAY. Possible values are ALL and CURRENT.
+    # manipulation tools when **displayMode** = OVERLAY. Possible values are ALL and CURRENT.
     viewManipLayers: SymbolicConstant = None
 
     # A Float specifying a factor to be used in offsetting layers in the screen Z direction.
@@ -371,7 +371,7 @@ class ViewportBase:
 
     # A Displayable object specifying the object to be displayed. The Displayable type is an
     # abstract generalization. The concrete possible types are Part, Assembly,
-    # ConstrainedSketch, Odb, PlyStackPlot, or XYPlot. If **displayedObject**=None, Abaqus
+    # ConstrainedSketch, Odb, PlyStackPlot, or XYPlot. If **displayedObject** = None, Abaqus
     # displays an empty viewport.
     displayedObject: Displayable = Displayable()
 
@@ -476,7 +476,7 @@ class ViewportBase:
         titleStyle
             A SymbolicConstant specifying which title to use for the viewport title. Possible values
             are CUSTOM and SYSTEM. The default value is SYSTEM.If **titleStyle** = CUSTOM,
-            **customTitleString** will be used. If **titleStyle**= SYSTEM, a system-generated string
+            **customTitleString** will be used. If **titleStyle** =  SYSTEM, a system-generated string
             will be used.
         customTitleString
             A String specifying the viewport title when **titleStyle** =CUSTOM. The default value is
@@ -726,7 +726,7 @@ class ViewportBase:
         displayedObject
             A Displayable object specifying the object to be displayed. The Displayable type is an
             abstract generalization. The concrete possible types are Part, Assembly,
-            ConstrainedSketch, Odb, PlyStackPlot, or XYPlot. If **displayedObject**=None, Abaqus
+            ConstrainedSketch, Odb, PlyStackPlot, or XYPlot. If **displayedObject** = None, Abaqus
             displays an empty viewport.
         displayMode
             A SymbolicConstant specifying the display mode of the viewport. Possible values
@@ -737,7 +737,7 @@ class ViewportBase:
             viewport when **displayMode** = OVERLAY.
         viewManipLayers
             A SymbolicConstant specifying which layer or layers will be controlled by the view
-            manipulation tools when **displayMode**=OVERLAY. Possible values are ALL and CURRENT.
+            manipulation tools when **displayMode** = OVERLAY. Possible values are ALL and CURRENT.
         currentLayer
             A String specifying which layer is affected by options settings when **displayMode**
             =OVERLAY. The current layer is also the only layer affected by view manipulations

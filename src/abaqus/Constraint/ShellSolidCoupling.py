@@ -66,14 +66,14 @@ class ShellSolidCoupling(Constraint):
         positionTolerance
             A Float specifying the position tolerance. The default value is 0.0.The
             **positionTolerance** argument applies only when
-            **positionToleranceMethod**=SPECIFIED.Note:Abaqus will not constrain nodes on the solid
+            **positionToleranceMethod** = SPECIFIED.Note:Abaqus will not constrain nodes on the solid
             face region outside the position tolerance.
         influenceDistanceMethod
             A SymbolicConstant specifying the method used to determine the influence distance.
             Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT.
         influenceDistance
             A Float specifying the influence distance. The **influenceDistance** argument applies only
-            when **influenceDistanceMethod**=SPECIFIED. The default value is 0.0.
+            when **influenceDistanceMethod** = SPECIFIED. The default value is 0.0.
 
         Returns
         -------
@@ -99,13 +99,13 @@ class ShellSolidCoupling(Constraint):
         positionTolerance
             A Float specifying the position tolerance. The default value is 0.0.The
             **positionTolerance** argument applies only when
-            **positionToleranceMethod**=SPECIFIED.Note:Abaqus will not constrain nodes on the solid
+            **positionToleranceMethod** = SPECIFIED.Note:Abaqus will not constrain nodes on the solid
             face region outside the position tolerance.
         influenceDistanceMethod
             A SymbolicConstant specifying the method used to determine the influence distance.
             Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT.
         influenceDistance
             A Float specifying the influence distance. The **influenceDistance** argument applies only
-            when **influenceDistanceMethod**=SPECIFIED. The default value is 0.0.
+            when **influenceDistanceMethod** = SPECIFIED. The default value is 0.0.
         """
         pass

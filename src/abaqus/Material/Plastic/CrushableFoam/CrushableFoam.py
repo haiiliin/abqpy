@@ -19,7 +19,7 @@ class CrushableFoam:
 
     The table data for this object are:
 
-    - If **hardening**=VOLUMETRIC, the table data specify the following:
+    - If **hardening** = VOLUMETRIC, the table data specify the following:
     
         - Ratio, :math:`k`, of initial yield stress in uniaxial compression, :math:`\sigma_{c}^{0}`, 
           to initial yield stress in hydrostatic compression, :math:`p_{c}^{0} ; 0.0<k<3.0`.
@@ -29,7 +29,7 @@ class CrushableFoam:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **hardening**=ISOTROPIC, the table data specify the following:
+    - If **hardening** = ISOTROPIC, the table data specify the following:
     
         - Ratio, :math:`k`, of initial yield stress in uniaxial compression, :math:`\sigma_{c}^{0}`, 
           to initial yield stress in hydrostatic compression, :math:`p_{c}^{0}`; :math:`0.0 \leq k \leq 3.0`

@@ -100,7 +100,7 @@ class BeamSection(Section):
             are BEFORE_ANALYSIS and DURING_ANALYSIS.
         profile
             A String specifying the name of the profile. This argument represents the start profile
-            in case of **beamShape**=TAPERED.
+            in case of **beamShape** = TAPERED.
         poissonRatio
             A Float specifying the Poisson's ratio of the section. The default value is 0.0.
         thermalExpansion
@@ -177,7 +177,7 @@ class BeamSection(Section):
             is (0.0, 0.0).
         profileEnd
             A String specifying the name of the end profile. The type of the end profile must be
-            same as that of the start profile. This argument is valid only when **beamShape**=TAPERED.
+            same as that of the start profile. This argument is valid only when **beamShape** = TAPERED.
             The default value is an empty string. This parameter is available for manipulating the
             model database but not for the ODB API.
 
@@ -296,7 +296,7 @@ class BeamSection(Section):
             is (0.0, 0.0).
         profileEnd
             A String specifying the name of the end profile. The type of the end profile must be
-            same as that of the start profile. This argument is valid only when **beamShape**=TAPERED.
+            same as that of the start profile. This argument is valid only when **beamShape** = TAPERED.
             The default value is an empty string. This parameter is available for manipulating the
             model database but not for the ODB API.
         """

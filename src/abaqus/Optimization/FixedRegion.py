@@ -46,7 +46,7 @@ class FixedRegion(GeometricRestriction):
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
         presumeFeasibleRegionAtStart
@@ -82,7 +82,7 @@ class FixedRegion(GeometricRestriction):
         Parameters
         ----------
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
         presumeFeasibleRegionAtStart

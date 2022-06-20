@@ -67,7 +67,7 @@ class RotationalBodyForce(Load):
     point2: float = None
 
     # A String specifying the name of the AnalyticalField object associated with this load.
-    # The **field** argument applies only when **distributionType**=FIELD. The default value is an
+    # The **field** argument applies only when **distributionType** = FIELD. The default value is an
     # empty string.
     field: str = ""
 
@@ -118,7 +118,7 @@ class RotationalBodyForce(Load):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         centrifugal
             A Boolean specifying whether or not the effect of the load is centrifugal. The default
@@ -158,7 +158,7 @@ class RotationalBodyForce(Load):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         centrifugal
             A Boolean specifying whether or not the effect of the load is centrifugal. The default

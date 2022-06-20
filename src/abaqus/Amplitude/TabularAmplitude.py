@@ -61,7 +61,7 @@ class TabularAmplitude(Amplitude):
             values for time/frequency are positive numbers.
         smooth
             The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing.
-            Possible float values are between 0 and 0.5. If **smooth**=SOLVER_DEFAULT, the default
+            Possible float values are between 0 and 0.5. If **smooth** = SOLVER_DEFAULT, the default
             degree of smoothing will be determined by the solver. The default value is
             SOLVER_DEFAULT.
         timeSpan
@@ -91,7 +91,7 @@ class TabularAmplitude(Amplitude):
         ----------
         smooth
             The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing.
-            Possible float values are between 0 and 0.5. If **smooth**=SOLVER_DEFAULT, the default
+            Possible float values are between 0 and 0.5. If **smooth** = SOLVER_DEFAULT, the default
             degree of smoothing will be determined by the solver. The default value is
             SOLVER_DEFAULT.
         timeSpan

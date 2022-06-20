@@ -34,12 +34,12 @@ class SelfContactStd(Interaction):
     # tracking algorithm uses only normal projections and is specified by using ONE_CONFIG.
     # The PATH tracking algorithm uses crossing and normal projections and is specified by
     # using TWO_CONFIG. Possible values are ONE_CONFIG and TWO_CONFIG. The default value is
-    # TWO_CONFIG.This argument is valid only when **enforcement**=SURFACE_TO_SURFACE.
+    # TWO_CONFIG.This argument is valid only when **enforcement** = SURFACE_TO_SURFACE.
     contactTracking: SymbolicConstant = TWO_CONFIG
 
     # A SymbolicConstant specifying the manner in which mid-face constraints are employed.
     # Possible values are SELECTIVE, NEVER, and ALWAYS. The default value is SELECTIVE.This
-    # argument is valid only when **enforcement**=NODE_TO_SURFACE.
+    # argument is valid only when **enforcement** = NODE_TO_SURFACE.
     supplementaryContact: SymbolicConstant = SELECTIVE
 
     def __init__(
@@ -79,10 +79,10 @@ class SelfContactStd(Interaction):
             NODE_TO_SURFACE and SURFACE_TO_SURFACE. The default value is SURFACE_TO_SURFACE.
         thickness
             A Boolean specifying whether shell/membrane element thickness is considered. The default
-            value is ON.This argument in valid only when **enforcement**=SURFACE_TO_SURFACE.
+            value is ON.This argument in valid only when **enforcement** = SURFACE_TO_SURFACE.
         smooth
             A Float specifying the degree of smoothing used for deformable or rigid main surfaces
-            involved when **enforcement**=NODE_TO_SURFACE. The value given must lie between 0.0 and
+            involved when **enforcement** = NODE_TO_SURFACE. The value given must lie between 0.0 and
             0.5. The default value is 0.2.
         contactControls
             A String specifying the name of the ContactControl object associated with this
@@ -113,10 +113,10 @@ class SelfContactStd(Interaction):
             NODE_TO_SURFACE and SURFACE_TO_SURFACE. The default value is SURFACE_TO_SURFACE.
         thickness
             A Boolean specifying whether shell/membrane element thickness is considered. The default
-            value is ON.This argument in valid only when **enforcement**=SURFACE_TO_SURFACE.
+            value is ON.This argument in valid only when **enforcement** = SURFACE_TO_SURFACE.
         smooth
             A Float specifying the degree of smoothing used for deformable or rigid main surfaces
-            involved when **enforcement**=NODE_TO_SURFACE. The value given must lie between 0.0 and
+            involved when **enforcement** = NODE_TO_SURFACE. The value given must lie between 0.0 and
             0.5. The default value is 0.2.
         contactControls
             A String specifying the name of the ContactControl object associated with this

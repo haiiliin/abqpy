@@ -209,7 +209,7 @@ class SubstructureGenerateStep(AnalysisStep):
     substructureIdentifier: str = ""
 
     # A Region object specifying the region for substructure recovery. This argument is
-    # required when **recoveryMatrix**=REGION.
+    # required when **recoveryMatrix** = REGION.
     recoveryRegion: Region = Region()
 
     # A SubstructureGenerateFrequencyArray object.
@@ -364,7 +364,7 @@ class SubstructureGenerateStep(AnalysisStep):
             are WHOLE_MODEL, REGION, and NONE. The default value is WHOLE_MODEL.
         recoveryRegion
             A Region object specifying the region for substructure recovery. This argument is
-            required when **recoveryMatrix**=REGION.
+            required when **recoveryMatrix** = REGION.
         computeGravityLoadVectors
             A Boolean specifying whether to compute the gravity load vectors. The default value is
             False.
@@ -454,7 +454,7 @@ class SubstructureGenerateStep(AnalysisStep):
             are WHOLE_MODEL, REGION, and NONE. The default value is WHOLE_MODEL.
         recoveryRegion
             A Region object specifying the region for substructure recovery. This argument is
-            required when **recoveryMatrix**=REGION.
+            required when **recoveryMatrix** = REGION.
         computeGravityLoadVectors
             A Boolean specifying whether to compute the gravity load vectors. The default value is
             False.

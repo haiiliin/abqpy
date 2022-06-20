@@ -52,7 +52,7 @@ class TypeBC(BoundaryCondition):
     region: Region = Region()
 
     # None or a DatumCsys object specifying the local coordinate system of the boundary
-    # condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+    # condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     # in the global coordinate system. The default value is None.
     localCsys: str = None
 
@@ -91,7 +91,7 @@ class TypeBC(BoundaryCondition):
             PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         """
         super().__init__()
@@ -128,7 +128,7 @@ class TypeBC(BoundaryCondition):
             PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         Returns
         -------
@@ -164,7 +164,7 @@ class TypeBC(BoundaryCondition):
             PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         Returns
         -------
@@ -200,7 +200,7 @@ class TypeBC(BoundaryCondition):
             PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         Returns
         -------
@@ -236,7 +236,7 @@ class TypeBC(BoundaryCondition):
             PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         Returns
         -------
@@ -272,7 +272,7 @@ class TypeBC(BoundaryCondition):
             PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         Returns
         -------
@@ -308,7 +308,7 @@ class TypeBC(BoundaryCondition):
             PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         Returns
         -------
@@ -344,7 +344,7 @@ class TypeBC(BoundaryCondition):
             PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         Returns
         -------
@@ -380,7 +380,7 @@ class TypeBC(BoundaryCondition):
             PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         Returns
         -------
@@ -410,7 +410,7 @@ class TypeBC(BoundaryCondition):
             PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         """
         pass

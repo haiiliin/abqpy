@@ -17,7 +17,7 @@ class CapCreepConsolidation:
 
     The table data for this object are:
 
-    - If **law**=STRAIN or **law**=TIME, the table data specify the following:
+    - If **law** = STRAIN or **law** = TIME, the table data specify the following:
     
         - :math:`A`.
         - :math:`n`.
@@ -26,7 +26,7 @@ class CapCreepConsolidation:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **law**=SINGHM, the table data specify the following:
+    - If **law** = SINGHM, the table data specify the following:
     
         - :math:`A`.
         - :math:`\alpha`.
@@ -36,7 +36,7 @@ class CapCreepConsolidation:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **law**=POWER_LAW or **law**=TIME_POWER_LAW, the table data specify the following:
+    - If **law** = POWER_LAW or **law** = TIME_POWER_LAW, the table data specify the following:
     
         - :math:`q_0`.
         - :math:`n`.

@@ -66,12 +66,12 @@ class ConnectorSection(SectionBase):
         initiationPotentialOperator
             A SymbolicConstant specifying the contribution operator for the initiation potential
             contributions. Possible values are SUM and MAXIMUM. The default value is SUM.This
-            argument is only if **coupling**=COUPLED and if **criterion**=FORCE or MOTION.
+            argument is only if **coupling** = COUPLED and if **criterion** = FORCE or MOTION.
         initiationPotentialExponent
             A Float specifying the number equal to the inverse of the overall exponent in the
             initiation potential definition. The default value is 2.0.This argument is applicable
-            only if **coupling**=COUPLED, when **initiationPotentialOperator**=SUM, and when
-            **criterion**=FORCE or MOTION.
+            only if **coupling** = COUPLED, when **initiationPotentialOperator** = SUM, and when
+            **criterion** = FORCE or MOTION.
         initiationDependencies
             An Int specifying the number of field variable dependencies for the initiation data. The
             default value is 0.
@@ -81,61 +81,61 @@ class ConnectorSection(SectionBase):
         evolutionType
             A SymbolicConstant specifying the type of damage evolution to be specified. Possible
             values are MOTION_TYPE and ENERGY_TYPE. The default value is MOTION_TYPE.This argument
-            is applicable only if **evolution**=ON.
+            is applicable only if **evolution** = ON.
         softening
             A SymbolicConstant specifying the damage evolution law to be specified. Possible values
             are LINEAR, EXPONENTIAL, and TABULAR. The default value is LINEAR.This argument is
-            applicable only if **evolution**=ON and when **evolutionType**=MOTION_TYPE.
+            applicable only if **evolution** = ON and when **evolutionType** = MOTION_TYPE.
         useAffected
             A Boolean specifying whether or not **affectedComponents** will be specified. If
-            **useAffected**=OFF, then only the components of relative motion specified by **components**
+            **useAffected** = OFF, then only the components of relative motion specified by **components**
             will undergo damage. The default value is OFF.This argument is applicable only if
-            **evolution**=ON.
+            **evolution** = ON.
         degradation
             A SymbolicConstant specifying the contribution of each damage mechanism when more than
             one damage mechanism is defined. Possible values are MAXIMUM and MULTIPLICATIVE. The
-            default value is MAXIMUM.This argument is applicable if **evolution**=ON.
+            default value is MAXIMUM.This argument is applicable if **evolution** = ON.
         evolutionTemperature
             A Boolean specifying whether the evolution data depend on temperature. The default value
-            is OFF.This argument is applicable only if **evolution**=ON.
+            is OFF.This argument is applicable only if **evolution** = ON.
         evolutionDependencies
             An Int specifying the number of field variable dependencies for the evolution data. The
-            default value is 0.This argument is applicable only if **evolution**=ON.
+            default value is 0.This argument is applicable only if **evolution** = ON.
         evolutionPotentialOperator
             A SymbolicConstant specifying the contribution operator for the evolution potential
             contributions. Possible values are SUM and MAXIMUM. The default value is SUM.This
-            argument is applicable only if **coupling**=COUPLED, when **evolution**=ON, when
-            **evolutionType**=MOTION_TYPE, and when **criterion**=FORCE or MOTION.
+            argument is applicable only if **coupling** = COUPLED, when **evolution** = ON, when
+            **evolutionType** = MOTION_TYPE, and when **criterion** = FORCE or MOTION.
         evolutionPotentialExponent
             A Float specifying the number equal to the inverse of the overall exponent in the
             evolution potential definition. The default value is 2.0.This argument is applicable
-            only if **coupling**=COUPLED, when **evolution**=ON, when **evolutionPotentialOperator**=SUM,
-            when **evolutionType**=MOTION, and when **criterion**=FORCE or MOTION.
+            only if **coupling** = COUPLED, when **evolution** = ON, when **evolutionPotentialOperator** = SUM,
+            when **evolutionType** = MOTION, and when **criterion** = FORCE or MOTION.
         initiationPotentials
             A ConnectorPotentialArray object specifying one ConnectorPotential object for each
             initiation potential contribution. This member can be specified only if
-            **coupling**=COUPLED and if **criterion**=FORCE or MOTION.
+            **coupling** = COUPLED and if **criterion** = FORCE or MOTION.
         evolutionPotentials
             A ConnectorPotentialArray object specifying one ConnectorPotential object for each
             evolution potential contribution). This member can be specified only if
-            **coupling**=COUPLED, if **evolution**=ON, if **evolutionType**=MOTION, and if
-            **criterion**=FORCE or MOTION.
+            **coupling** = COUPLED, if **evolution** = ON, if **evolutionType** = MOTION, and if
+            **criterion** = FORCE or MOTION.
         initiationTable
             A sequence of sequences of Floats specifying the initiation properties. The default
             value is an empty sequence.Items in the **initiationTable** data are described below.
         evolutionTable
             A sequence of sequences of Floats specifying the evolution properties. The default value
             is an empty sequence.Items in the **evolutionTable** data are described below. This
-            argument is only applicable if **evolution**=ON.
+            argument is only applicable if **evolution** = ON.
         affectedComponents
             A sequence of Ints specifying the components of relative motion that will be damaged.
             Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be specified.
-            This argument is applicable only if **evolution**=ON and **useAffected**=ON. The default
+            This argument is applicable only if **evolution** = ON and **useAffected** = ON. The default
             value is an empty sequence.
         components
             A sequence of Ints specifying the components of relative motion for which the behavior
             is defined. Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be
-            specified. This argument can be specified only if **coupling**=UNCOUPLED. The default
+            specified. This argument can be specified only if **coupling** = UNCOUPLED. The default
             value is an empty sequence.
 
         Returns
@@ -181,8 +181,8 @@ class ConnectorSection(SectionBase):
             values are LINEAR and NONLINEAR. The default value is LINEAR.
         coupling
             A SymbolicConstant specifying whether the damping behavior is coupled between the
-            connector's components of relative motion. If **behavior**=LINEAR, then possible values
-            are UNCOUPLED and COUPLED. If **behavior**=NONLINEAR, then possible values are UNCOUPLED,
+            connector's components of relative motion. If **behavior** = LINEAR, then possible values
+            are UNCOUPLED and COUPLED. If **behavior** = NONLINEAR, then possible values are UNCOUPLED,
             COUPLED_POSITION, and COUPLED_MOTION. Possible values are UNCOUPLED, COUPLED,
             COUPLED_POSITION, and COUPLED_MOTION. The default value is UNCOUPLED.
         dependencies
@@ -192,7 +192,7 @@ class ConnectorSection(SectionBase):
             is OFF.
         frequencyDependency
             A Boolean specifying whether the behavior data depend on frequency. This value is
-            applicable only if **behavior**= LINEAR and **coupling**=UNCOUPLED. The default value is
+            applicable only if **behavior** =  LINEAR and **coupling** = UNCOUPLED. The default value is
             OFF.
         table
             A sequence of sequences of Floats specifying damping properties. Items in the table data
@@ -200,7 +200,7 @@ class ConnectorSection(SectionBase):
         independentComponents
             A sequence of Ints specifying the list of independent components that are included in
             the definition of the connector damping data. This argument is applicable only if
-            **behavior**=NONLINEAR and **coupling**=COUPLED_POSITION or COUPLED_MOTION. When this
+            **behavior** = NONLINEAR and **coupling** = COUPLED_POSITION or COUPLED_MOTION. When this
             argument is applicable, at least one value must be specified. Only available components
             can be specified. The default value is an empty sequence.
         components
@@ -252,29 +252,29 @@ class ConnectorSection(SectionBase):
             rigid. Possible values are LINEAR, NONLINEAR, and RIGID. The default value is LINEAR.
         coupling
             A SymbolicConstant specifying whether the elastic behavior is coupled between the
-            connector's components of relative motion. If **behavior**=LINEAR, then possible values
-            are UNCOUPLED and COUPLED. If **behavior**=NONLINEAR, then possible values are UNCOUPLED,
+            connector's components of relative motion. If **behavior** = LINEAR, then possible values
+            are UNCOUPLED and COUPLED. If **behavior** = NONLINEAR, then possible values are UNCOUPLED,
             COUPLED_POSITION, and COUPLED_MOTION. Possible values are UNCOUPLED, COUPLED,
             COUPLED_POSITION, and COUPLED_MOTION. The default value is UNCOUPLED.This argument is
-            not applicable if **behavior**=RIGID.
+            not applicable if **behavior** = RIGID.
         dependencies
             An Int specifying the number of field variable dependencies. The default value is 0.This
-            argument is not applicable if **behavior**=RIGID.
+            argument is not applicable if **behavior** = RIGID.
         temperatureDependency
             A Boolean specifying whether the behavior data depend on temperature. The default value
-            is OFF.This argument is not applicable if **behavior**=RIGID.
+            is OFF.This argument is not applicable if **behavior** = RIGID.
         frequencyDependency
             A Boolean specifying whether the behavior data depend on frequency. This value is
-            applicable only if **behavior**=LINEAR and **coupling**=UNCOUPLED. The default value is
-            OFF.This argument is not applicable if **behavior**=RIGID.
+            applicable only if **behavior** = LINEAR and **coupling** = UNCOUPLED. The default value is
+            OFF.This argument is not applicable if **behavior** = RIGID.
         table
             A sequence of sequences of Floats specifying elasticity properties. Items in the table
-            data are described below. This argument is not applicable if **behavior**=RIGID. The
+            data are described below. This argument is not applicable if **behavior** = RIGID. The
             default value is an empty sequence.
         independentComponents
             A sequence of Ints specifying the list of independent components that are included in
             the definition of the connector elasticity data. This argument is applicable only if
-            **behavior**=NONLINEAR and **coupling**=COUPLED_POSITION or COUPLED_MOTION. If this argument
+            **behavior** = NONLINEAR and **coupling** = COUPLED_POSITION or COUPLED_MOTION. If this argument
             is applicable, at least one value must be specified. Only available components can be
             specified. The default value is an empty sequence.
         components
@@ -321,7 +321,7 @@ class ConnectorSection(SectionBase):
         releaseComponent
             The SymbolicConstant ALL or an Int specifying the motion components that fail. If an Int
             is specified, only that motion component fails when the failure criteria are satisfied.
-            If **releaseComponent**=ALL, all motion components fail. The default value is ALL.
+            If **releaseComponent** = ALL, all motion components fail. The default value is ALL.
         minMotion
             None or a Float specifying the lower bound for the connector's relative position for all
             specified components, or no lower bound. The default value is None.
@@ -396,12 +396,12 @@ class ConnectorSection(SectionBase):
             A SymbolicConstant specifying the method of indicating the slip direction: either
             specified or computed based upon the force potential data. Possible values are SPECIFY
             and COMPUTE. The default value is SPECIFY.This argument is applicable only if
-            **frictionModel**=USER_CUSTOMIZED.
+            **frictionModel** = USER_CUSTOMIZED.
         tangentDirection
             None or an Int specifying the direction for which the frictional behavior is specified.
             Possible values are 1 ≤≤ **tangentDirection** ≤≤ 6, indicating an available component of
-            relative motion. This argument applies only if **frictionModel**=USER_CUSTOMIZED and if
-            **slipStyle**=SPECIFY. The default value is None.
+            relative motion. This argument applies only if **frictionModel** = USER_CUSTOMIZED and if
+            **slipStyle** = SPECIFY. The default value is None.
         stickStiffness
             None or a Float specifying the stick stiffness associated with the frictional behavior
             in the direction specified by **tangentDirection**. If this argument is omitted, Abaqus
@@ -412,43 +412,43 @@ class ConnectorSection(SectionBase):
             NO_INDEPENDENT_COMPONENTS.
         slipDependency
             A Boolean specifying whether the table data depend on accumulated slip. The default
-            value is OFF.This argument applies only if **frictionModel**=USER_CUSTOMIZED.
+            value is OFF.This argument applies only if **frictionModel** = USER_CUSTOMIZED.
         temperatureDependency
             A Boolean specifying whether the table data depend on temperature. The default value is
-            OFF.This argument applies only if **frictionModel**=USER_CUSTOMIZED.
+            OFF.This argument applies only if **frictionModel** = USER_CUSTOMIZED.
         dependencies
             An Int specifying the number of field variable dependencies. The default value is 0.This
-            argument applies only if **frictionModel**=USER_CUSTOMIZED.
+            argument applies only if **frictionModel** = USER_CUSTOMIZED.
         useContactForceComponent
             A Boolean specifying whether the contact force component will be defined. The default
-            value is OFF.This argument applies only if **frictionModel**=USER_CUSTOMIZED.
+            value is OFF.This argument applies only if **frictionModel** = USER_CUSTOMIZED.
         contactForceStyle
             A SymbolicConstant specifying the method of indicating the contact force component
             direction: either specified or computed based on upon a DerivedComponent. Possible
             values are COMPONENT_NUMBER and DERIVED_COMPONENT. The default value is
-            COMPONENT_NUMBER.This argument is applicable only if **frictionModel**=USER_CUSTOMIZED and
-            if **useContactForceComponent**=ON.
+            COMPONENT_NUMBER.This argument is applicable only if **frictionModel** = USER_CUSTOMIZED and
+            if **useContactForceComponent** = ON.
         contactForceComponent
             An Int specifying the contact force component direction. This argument applies only if
-            **frictionModel**=USER_CUSTOMIZED, if **useContactForceComponent**=ON, and if
-            **contactForceStyle**=COMPONENT_NUMBER. The default value is 0.
+            **frictionModel** = USER_CUSTOMIZED, if **useContactForceComponent** = ON, and if
+            **contactForceStyle** = COMPONENT_NUMBER. The default value is 0.
         forcePotentialOperator
             A SymbolicConstant specifying the contribution operator for the force potential
             contributions. Possible values are SUM and MAXIMUM. The default value is SUM.This
-            argument is applicable only if **frictionModel**=USER_CUSTOMIZED and if
-            **slipStyle**=COMPUTE.
+            argument is applicable only if **frictionModel** = USER_CUSTOMIZED and if
+            **slipStyle** = COMPUTE.
         forcePotentialExponent
             A Float specifying the number equal to the inverse of the overall exponent in the force
             potential definition. The default value is 2.0.This argument is applicable only if
-            **frictionModel**=USER_CUSTOMIZED, if **slipStyle**=COMPUTE, and if
-            **forcePotentialOperator**=SUM.
+            **frictionModel** = USER_CUSTOMIZED, if **slipStyle** = COMPUTE, and if
+            **forcePotentialOperator** = SUM.
         connectorPotentials
             A ConnectorPotentialArray object specifying one ConnectorPotential object for each force
             potential contribution. This member can be specified only if
-            **frictionModel**=USER_CUSTOMIZED, and if **slipStyle**=COMPUTE.
+            **frictionModel** = USER_CUSTOMIZED, and if **slipStyle** = COMPUTE.
         table
             A sequence of sequences of Floats specifying friction properties. The default value is
-            an empty sequence.If **frictionModel**=PREDEFINED, each sequence of the table data
+            an empty sequence.If **frictionModel** = PREDEFINED, each sequence of the table data
             specifies:If applicable, the first geometric scaling constant relevant to frictional
             interactions.Etc., up to as many geometric scaling constants as are associated with this
             connection type.Internal contact force/moment generating friction in the first
@@ -458,12 +458,12 @@ class ConnectorSection(SectionBase):
             predefined slip direction, if the data depend on accumulated slip.Temperature, if the
             data depend on temperature.Value of the first field variable, if the data depend on
             field variables.Value of the second field variable.Etc.If
-            **frictionModel**=USER_CUSTOMIZED, each sequence of the table data specifies:Effective
+            **frictionModel** = USER_CUSTOMIZED, each sequence of the table data specifies:Effective
             radius of the cylindrical or spherical surface over which frictional slip occurs in the
             connector associated with frictional effects in the direction specified by
             **tangentDirection**. This radius is relevant only if the connection type includes an
             available rotational component of relative motion and
-            **tangentDirection**=SLIP_DIRECTION.Internal contact force/moment generating friction in
+            **tangentDirection** = SLIP_DIRECTION.Internal contact force/moment generating friction in
             the direction specified by **tangentDirection**.Connector constitutive relative motion in
             the direction specified by **independentComponent**.Accumulated slip in the direction
             specified by **tangentDirection**, if the data depend on accumulated slip.Temperature, if
@@ -473,7 +473,7 @@ class ConnectorSection(SectionBase):
             A sequence of Ints specifying the independent components. Possible values are 1 ≤≤
             **independentComponents** ≤≤ 6. In addition, each independent component value must be
             unique. The **independentComponents** argument applies only if
-            **frictionModel**=USER_CUSTOMIZED. Only available components can be specified. The default
+            **frictionModel** = USER_CUSTOMIZED. Only available components can be specified. The default
             value is an empty sequence.
 
         Returns
@@ -515,7 +515,7 @@ class ConnectorSection(SectionBase):
         lockingComponent
             The SymbolicConstant ALL or an Int specifying the motion components that are locked. If
             an Int is specified, only that motion component is locked when the locking criteria are
-            satisfied. If **lockingComponent**=ALL, all motion components are locked. The default
+            satisfied. If **lockingComponent** = ALL, all motion components are locked. The default
             value is ALL.
         minMotion
             None or a Float specifying the lower bound for the connector's relative position for all
@@ -587,53 +587,53 @@ class ConnectorSection(SectionBase):
             are UNCOUPLED and COUPLED. The default value is UNCOUPLED.
         isotropic
             A Boolean specifying whether isotropic hardening data will be used. The default value is
-            ON.If **isotropic**=OFF, then **kinematic** must be specified as ON.
+            ON.If **isotropic** = OFF, then **kinematic** must be specified as ON.
         isotropicType
             A SymbolicConstant specifying the type of isotropic hardening to be specified. Possible
             values are TABULAR and EXPONENTIAL_LAW. The default value is TABULAR.This argument is
-            applicable only if **isotropic**=ON.
+            applicable only if **isotropic** = ON.
         isotropicTemperature
             A Boolean specifying whether the isotropic data depend on temperature. The default value
-            is OFF.This argument is applicable only if **isotropic**=ON.
+            is OFF.This argument is applicable only if **isotropic** = ON.
         isotropicDependencies
             An Int specifying the number of field variable dependencies for the isotropic data. The
-            default value is 0.This argument is applicable only if **isotropic**=ON.
+            default value is 0.This argument is applicable only if **isotropic** = ON.
         kinematic
             A Boolean specifying whether kinematic hardening data will be used. The default value is
-            OFF.If **kinematic**=OFF, then **isotropic** must be specified as ON.
+            OFF.If **kinematic** = OFF, then **isotropic** must be specified as ON.
         kinematicType
             A SymbolicConstant specifying the type of kinematic hardening to be specified. Possible
             values are HALF_CYCLE, STABILIZED, and PARAMETERS. The default value is HALF_CYCLE.This
-            argument is applicable only if **kinematic**=ON.
+            argument is applicable only if **kinematic** = ON.
         kinematicTemperature
             A Boolean specifying whether the kinematic data depend on temperature. The default value
-            is OFF.This argument is applicable only if **kinematic**=ON.
+            is OFF.This argument is applicable only if **kinematic** = ON.
         kinematicDependencies
             An Int specifying the number of field variable dependencies for the kinematic data. The
-            default value is 0.This argument is applicable only if **kinematic**=ON.
+            default value is 0.This argument is applicable only if **kinematic** = ON.
         forcePotentialOperator
             A SymbolicConstant specifying the contribution operator for the force potential
             contributions. Possible values are SUM and MAXIMUM. The default value is SUM.This
-            argument is applicable only if **coupling**=COUPLED.
+            argument is applicable only if **coupling** = COUPLED.
         forcePotentialExponent
             A Float specifying the number equal to the inverse of the overall exponent in the force
             potential definition. The default value is 2.0.This argument is applicable only if
-            **coupling**=COUPLED and if **forcePotentialOperator**=SUM.
+            **coupling** = COUPLED and if **forcePotentialOperator** = SUM.
         connectorPotentials
             A ConnectorPotentialArray object specifying one ConnectorPotential object for each force
-            potential contribution. This member can be specified only if **coupling**=COUPLED.
+            potential contribution. This member can be specified only if **coupling** = COUPLED.
         isotropicTable
             A sequence of sequences of Floats specifying isotropic plasticity properties. Items in
             the **isotropicTable** data are described below. This argument is applicable only if
-            **isotropic**=ON. The default value is an empty sequence.
+            **isotropic** = ON. The default value is an empty sequence.
         kinematicTable
             A sequence of sequences of Floats specifying kinematic plasticity properties. Items in
             the **kinematicTable** data are described below. This argument is applicable only if
-            **kinematic**=ON. The default value is an empty sequence.
+            **kinematic** = ON. The default value is an empty sequence.
         components
             A sequence of Ints specifying the components of relative motion for which the behavior
             is defined. Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be
-            specified. This argument can be specified only if **coupling**=UNCOUPLED. The default
+            specified. This argument can be specified only if **coupling** = UNCOUPLED. The default
             value is an empty sequence.
 
         Returns
@@ -678,7 +678,7 @@ class ConnectorSection(SectionBase):
             COMPONENT_NUMBER and DERIVED_COMPONENT. The default value is COMPONENT_NUMBER.
         componentNumber
             An Int specifying the component number used in the contribution. This argument is
-            applicable only if **componentStyle**=COMPONENT_NUMBER. Possible values are 1 ≤≤
+            applicable only if **componentStyle** = COMPONENT_NUMBER. Possible values are 1 ≤≤
             **componentNumber** ≤≤ 6. Only available components can be specified. The default value is
             0.
         sign
@@ -696,7 +696,7 @@ class ConnectorSection(SectionBase):
             A SymbolicConstant specifying the H function of the contribution: either absolute value,
             Macauley bracket, or the identity function. Possible values are ABS, MACAULEY, and
             IDENTITY. The default value is ABS.The value of IDENTITY can be used only if
-            **positiveExponent**=1.0 and the potential exponent of the invoking behavior option is
+            **positiveExponent** = 1.0 and the potential exponent of the invoking behavior option is
             also 1.0 (i.e., the potential operator of the invoking behavior option must be SUM).
 
         Returns

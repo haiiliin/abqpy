@@ -44,7 +44,7 @@ class JobFromInputFile(Job):
 
     # A SymbolicConstant specifying whether the job will be analyzed by Abaqus/Standard or
     # Abaqus/Explicit. Possible values are STANDARD, EXPLICIT, and UNKNOWN.If the object has
-    # the type JobFromInputFile, **analysis**=UNKNOWN.
+    # the type JobFromInputFile, **analysis** = UNKNOWN.
     analysis: SymbolicConstant = None
 
     # A SymbolicConstant specifying the status of the analysis. Possible values are SUBMITTED,
@@ -102,7 +102,7 @@ class JobFromInputFile(Job):
         type
             A SymbolicConstant specifying the type of job. Possible values are ANALYSIS,
             SYNTAXCHECK, and RECOVER. The default value is ANALYSIS.For theJobFromInputFile object,
-            **type**=RESTART is not currently supported.
+            **type** = RESTART is not currently supported.
         queue
             A String specifying the name of the queue to which to submit the job. The default value
             is an empty string.Note: You can use the **queue** argument when creating a Job object on
@@ -149,7 +149,7 @@ class JobFromInputFile(Job):
             Possible values are LOOP and DOMAIN. The default value is LOOP.
         numDomains
             An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
-            **parallelizationMethodExplicit**=DOMAIN, **numDomains** must be a multiple of **numCpus**.
+            **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**.
             The default value is 1.
         activateLoadBalancing
             A Boolean specifying whether to activate dyanmic load balancing for jobs running on
@@ -205,7 +205,7 @@ class JobFromInputFile(Job):
         type
             A SymbolicConstant specifying the type of job. Possible values are ANALYSIS,
             SYNTAXCHECK, and RECOVER. The default value is ANALYSIS.For theJobFromInputFile object,
-            **type**=RESTART is not currently supported.
+            **type** = RESTART is not currently supported.
         queue
             A String specifying the name of the queue to which to submit the job. The default value
             is an empty string.Note: You can use the **queue** argument when creating a Job object on
@@ -252,7 +252,7 @@ class JobFromInputFile(Job):
             Possible values are LOOP and DOMAIN. The default value is LOOP.
         numDomains
             An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
-            **parallelizationMethodExplicit**=DOMAIN, **numDomains** must be a multiple of **numCpus**.
+            **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**.
             The default value is 1.
         activateLoadBalancing
             A Boolean specifying whether to activate dyanmic load balancing for jobs running on

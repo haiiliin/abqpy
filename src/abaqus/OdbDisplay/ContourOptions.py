@@ -159,7 +159,7 @@ class ContourOptions(DGContourOptions):
     # and ISOSURFACE. The default value is BANDED.
     contourType: SymbolicConstant = BANDED
 
-    # An Int specifying the number of intervals when **contourStyle**=UNIFORM. Possible values
+    # An Int specifying the number of intervals when **contourStyle** = UNIFORM. Possible values
     # are 2 ≤≤ **numIntervals** ≤≤ 24. The default value is 12.
     numIntervals: int = 12
 
@@ -172,7 +172,7 @@ class ContourOptions(DGContourOptions):
     maxAutoCompute: Boolean = ON
 
     # A Float specifying the contour range maximum value to be used in the plot when
-    # **maxAutoCompute**=ON. The default value is **autoMaxValue**.
+    # **maxAutoCompute** = ON. The default value is **autoMaxValue**.
     maxValue: float = None
 
     # A Boolean specifying whether the contour range minimum value should be computed from the
@@ -180,20 +180,20 @@ class ContourOptions(DGContourOptions):
     minAutoCompute: Boolean = ON
 
     # A Float specifying the contour range minimum value to be used in the plot when
-    # **minAutoCompute**=ON. The default value is **autoMinValue**.
+    # **minAutoCompute** = ON. The default value is **autoMinValue**.
     minValue: float = None
 
     # A SymbolicConstant specifying the method to be used when contour limits are
     # automatically computed for animation. **animationAutoLimits** will only effect the minimum
-    # limit and/or maximum limit when **minAutoCompute** and/or **maxAutoCompute**=True. Possible
+    # limit and/or maximum limit when **minAutoCompute** and/or **maxAutoCompute** = True. Possible
     # values are FIRST_AND_LAST, CURRENT_FRAME, RECOMPUTE_EACH_FRAME, and ALL_FRAMES. The
     # default value is ALL_FRAMES.
     animationAutoLimits: SymbolicConstant = ALL_FRAMES
 
     # A SymbolicConstant specifying the color of contour values that exceed the limits of the
-    # plot. Possible values are SPECTRUM and SPECIFY.When **outsideLimitsMode**=SPECTRUM, the
+    # plot. Possible values are SPECTRUM and SPECIFY.When **outsideLimitsMode** = SPECTRUM, the
     # maximum and minimum contour spectrum colors are used for values that exceed the limits
-    # of the plot. When **outsideLimitsMode**=SPECIFY, the values of **outsideLimitsAboveColor**
+    # of the plot. When **outsideLimitsMode** = SPECIFY, the values of **outsideLimitsAboveColor**
     # and **outsideLimitsBelowColor** are used for values that exceed the limits of the plot.
     outsideLimitsMode: SymbolicConstant = None
 
@@ -218,18 +218,18 @@ class ContourOptions(DGContourOptions):
     autoMinValue: float = None
 
     # A String specifying the color to be used for values that exceed the limits of the plot
-    # when **outsideLimitsMode**=SPECIFY. The default value is "Grey80".
+    # when **outsideLimitsMode** = SPECIFY. The default value is "Grey80".
     outsideLimitsAboveColor: str = ""
 
     # A String specifying the color to be used for values that exceed the limits of the plot
-    # when **outsideLimitsMode**=SPECIFY. The default value is "Grey20".
+    # when **outsideLimitsMode** = SPECIFY. The default value is "Grey20".
     outsideLimitsBelowColor: str = ""
 
     # A String specifying the name of the color spectrum to be used in the contour plot. The
     # default value is "Rainbow".
     spectrum: str = ""
 
-    # A tuple of Floats specifying the interval values when **intervalType**=USER_DEFINED.
+    # A tuple of Floats specifying the interval values when **intervalType** = USER_DEFINED.
     intervalValues: float = None
 
     # A SymbolicConstant specifying the contour rendering method. Possible values are
@@ -237,7 +237,7 @@ class ContourOptions(DGContourOptions):
     contourMethod: SymbolicConstant = TEXTURE_MAPPED
 
     # A Boolean specifying whether tick mark plots should be displayed on line-type elements.
-    # If **tickmarkPlots**=ON, Abaqus displays a tick mark plot. If **tickmarkPlots**=OFF, Abaqus
+    # If **tickmarkPlots** = ON, Abaqus displays a tick mark plot. If **tickmarkPlots** = OFF, Abaqus
     # displays contours on the element faces. The default value is OFF.
     tickmarkPlots: Boolean = OFF
 
@@ -246,16 +246,16 @@ class ContourOptions(DGContourOptions):
     contourStyle: SymbolicConstant = UNIFORM
 
     # A Boolean specifying whether to plot the edges of each contour interval when
-    # **contourType**=BANDED or ISOSURFACE. The default value is OFF.
+    # **contourType** = BANDED or ISOSURFACE. The default value is OFF.
     contourEdges: Boolean = OFF
 
     # A SymbolicConstant specifying the edge line style to be used to plot the contour edges
-    # when **contourType**=BANDED or ISOSURFACE. Possible values are SOLID, DASHED, DOTTED, and
+    # when **contourType** = BANDED or ISOSURFACE. Possible values are SOLID, DASHED, DOTTED, and
     # DOT_DASH. The default value is SOLID.
     contourEdgeStyle: SymbolicConstant = SOLID
 
     # A SymbolicConstant specifying the edge line thickness to be used to plot the edge of the
-    # contour intervals when **contourType**=BANDED or ISOSURFACE. Possible values are
+    # contour intervals when **contourType** = BANDED or ISOSURFACE. Possible values are
     # VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN.
     contourEdgeThickness: SymbolicConstant = VERY_THIN
 
@@ -284,16 +284,16 @@ class ContourOptions(DGContourOptions):
     # are N1 and N2. The default value is N2.
     tickmarkOrientation: SymbolicConstant = N2
 
-    # A String specifying the edge color to be used when **contourType**=LINE. The default value
+    # A String specifying the edge color to be used when **contourType** = LINE. The default value
     # is "White".
     edgeColorLine: str = ""
 
-    # A String specifying the edge color to be used when **contourType**=BANDED or QUILT. The
+    # A String specifying the edge color to be used when **contourType** = BANDED or QUILT. The
     # default value is "Black".
     edgeColorBandedQuilt: str = ""
 
     # A String specifying the color to be used to plot the contour edges when
-    # **contourType**=BANDED or ISOSURFACE. The default value is "Grey60".
+    # **contourType** = BANDED or ISOSURFACE. The default value is "Grey60".
     contourEdgeColor: str = ""
 
     # A String specifying the color to be used to plot the tick mark curve. The default value
@@ -301,7 +301,7 @@ class ContourOptions(DGContourOptions):
     tickmarkCurveColor: str = ""
 
     # A tuple of tuples of SymbolicConstants specifying the line style and line thickness for
-    # each interval in the plot when **contourType**=LINE. The size of the outer sequence must
+    # each interval in the plot when **contourType** = LINE. The size of the outer sequence must
     # be equal to **numIntervals**-1. The inner sequence consists of two SymbolicConstants
     # specifying the line style and line thickness. For possible values, refer to the
     # **edgeLineStyle** and **edgeLineThickness** members of the DGCommonOptions object. The
@@ -359,78 +359,78 @@ class ContourOptions(DGContourOptions):
             TEXTURE_MAPPED and TESSELLATED. The default value is TEXTURE_MAPPED.
         tickmarkPlots
             A Boolean specifying whether tick mark plots should be displayed on line-type elements.
-            If **tickmarkPlots**=ON, Abaqus displays a tick mark plot. If **tickmarkPlots**=OFF, Abaqus
+            If **tickmarkPlots** = ON, Abaqus displays a tick mark plot. If **tickmarkPlots** = OFF, Abaqus
             displays contours on the element faces. The default value is OFF.
         contourStyle
             A SymbolicConstant specifying the interval style of the contour plot. Possible values
             are CONTINUOUS and UNIFORM. The default value is UNIFORM.
         numIntervals
-            An Int specifying the number of intervals when **contourStyle**=UNIFORM. Possible values
+            An Int specifying the number of intervals when **contourStyle** = UNIFORM. Possible values
             are 2 ≤≤ **numIntervals** ≤≤ 24. The default value is 12.
         intervalType
             A SymbolicConstant specifying the interval type of the contour plot. Possible values are
             UNIFORM, LOG, and USER_DEFINED. The default value is UNIFORM.
         intervalValues
-            A sequence of Floats specifying the interval values when **intervalType**=USER_DEFINED.
+            A sequence of Floats specifying the interval values when **intervalType** = USER_DEFINED.
         maxAutoCompute
             A Boolean specifying whether the contour range maximum value should be computed from the
             output data to be contoured. The default value is ON.
         maxValue
             A Float specifying the contour range maximum value to be used in the plot when
-            **maxAutoCompute**=ON. The default value is **autoMaxValue**.
+            **maxAutoCompute** = ON. The default value is **autoMaxValue**.
         minAutoCompute
             A Boolean specifying whether the contour range minimum value should be computed from the
             output data to be contoured. The default value is ON.
         minValue
             A Float specifying the contour range minimum value to be used in the plot when
-            **minAutoCompute**=ON. The default value is **autoMinValue**.
+            **minAutoCompute** = ON. The default value is **autoMinValue**.
         animationAutoLimits
             A SymbolicConstant specifying the method to be used when contour limits are
             automatically computed for animation. **animationAutoLimits** will only effect the minimum
-            limit and/or maximum limit when **minAutoCompute** and/or **maxAutoCompute**=True. Possible
+            limit and/or maximum limit when **minAutoCompute** and/or **maxAutoCompute** = True. Possible
             values are FIRST_AND_LAST, CURRENT_FRAME, RECOMPUTE_EACH_FRAME, and ALL_FRAMES. The
             default value is ALL_FRAMES.
         edgeColorLine
-            A String specifying the edge color to be used when **contourType**=LINE. The default value
+            A String specifying the edge color to be used when **contourType** = LINE. The default value
             is "White".
         edgeColorBandedQuilt
-            A String specifying the edge color to be used when **contourType**=BANDED or QUILT. The
+            A String specifying the edge color to be used when **contourType** = BANDED or QUILT. The
             default value is "Black".
         spectrum
             A String specifying the name of the color spectrum to be used in the contour plot. The
             default value is "Rainbow".
         outsideLimitsMode
             A SymbolicConstant specifying the color of contour values that exceed the limits of the
-            plot. Possible values are SPECTRUM and SPECIFY.When **outsideLimitsMode**=SPECTRUM, the
+            plot. Possible values are SPECTRUM and SPECIFY.When **outsideLimitsMode** = SPECTRUM, the
             maximum and minimum contour spectrum colors are used for values that exceed the limits
-            of the plot. When **outsideLimitsMode**=SPECIFY, the values of **outsideLimitsAboveColor**
+            of the plot. When **outsideLimitsMode** = SPECIFY, the values of **outsideLimitsAboveColor**
             and **outsideLimitsBelowColor** are used for values that exceed the limits of the plot.
         outsideLimitsAboveColor
             A String specifying the color to be used for values that exceed the limits of the plot
-            when **outsideLimitsMode**=SPECIFY. The default value is "Grey80".
+            when **outsideLimitsMode** = SPECIFY. The default value is "Grey80".
         outsideLimitsBelowColor
             A String specifying the color to be used for values that exceed the limits of the plot
-            when **outsideLimitsMode**=SPECIFY. The default value is "Grey20".
+            when **outsideLimitsMode** = SPECIFY. The default value is "Grey20".
         intervalLineAttributes
             A sequence of sequences of SymbolicConstants specifying the line style and line
-            thickness for each interval in the plot when **contourType**=LINE. The size of the outer
+            thickness for each interval in the plot when **contourType** = LINE. The size of the outer
             sequence must be equal to **numIntervals**-1. The inner sequence consists of two
             SymbolicConstants specifying the line style and line thickness. For possible values,
             refer to the **edgeLineStyle** and **edgeLineThickness** members of the DGCommonOptions
             object. The default is ((SOLID, VERY_THIN), ).
         contourEdges
             A Boolean specifying whether to plot the edges of each contour interval when
-            **contourType**=BANDED or ISOSURFACE. The default value is OFF.
+            **contourType** = BANDED or ISOSURFACE. The default value is OFF.
         contourEdgeColor
             A String specifying the color to be used to plot the contour edges when
-            **contourType**=BANDED or ISOSURFACE. The default value is "Grey60".
+            **contourType** = BANDED or ISOSURFACE. The default value is "Grey60".
         contourEdgeStyle
             A SymbolicConstant specifying the edge line style to be used to plot the contour edges
-            when **contourType**=BANDED or ISOSURFACE. Possible values are SOLID, DASHED, DOTTED, and
+            when **contourType** = BANDED or ISOSURFACE. Possible values are SOLID, DASHED, DOTTED, and
             DOT_DASH. The default value is SOLID.
         contourEdgeThickness
             A SymbolicConstant specifying the edge line thickness to be used to plot the edge of the
-            contour intervals when **contourType**=BANDED or ISOSURFACE. Possible values are
+            contour intervals when **contourType** = BANDED or ISOSURFACE. Possible values are
             VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN.
         tickmarkAxisLength
             A SymbolicConstant specifying the length of the tick mark plot axes. Possible values are

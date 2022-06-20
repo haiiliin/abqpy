@@ -98,7 +98,7 @@ class BoundaryConditionModel(ModelBase):
             A Float specifying the scale factor for the amplitude curve. The default value is 1.0.
         centerOfRotation
             A ModelDot object specifying a tuple containing one center of rotation. The default
-            value is the global origin. This argument applies only when **dof**=UR1, UR2, or UR3.
+            value is the global origin. This argument applies only when **dof** = UR1, UR2, or UR3.
         correlation
             A CorrelationArray object.
         secondaryBase
@@ -170,7 +170,7 @@ class BoundaryConditionModel(ModelBase):
             A Region object specifying the region to which the boundary condition is applied.
         fieldName
             A String specifying the name of the AnalyticalField object associated with this boundary
-            condition. The **fieldName** argument applies only when **distributionType**=FIELD. The
+            condition. The **fieldName** argument applies only when **distributionType** = FIELD. The
             default value is an empty string.
         a1
             A Float or a SymbolicConstant specifying the acceleration component in the 1-direction.
@@ -202,7 +202,7 @@ class BoundaryConditionModel(ModelBase):
             specified step.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         distributionType
             A SymbolicConstant specifying how the boundary condition is distributed spatially.
@@ -262,11 +262,11 @@ class BoundaryConditionModel(ModelBase):
             A Region object specifying the region to which the boundary condition is applied.
         fieldName
             A String specifying the name of the AnalyticalField object associated with this boundary
-            condition. The **fieldName** argument applies only when **distributionType**=FIELD. The
+            condition. The **fieldName** argument applies only when **distributionType** = FIELD. The
             default value is an empty string.
         magnitude
             A Float specifying the acoustic pressure magnitude. The default value is 0. The
-            **magnitude** argument is optional if **distributionType**=USER_DEFINED.
+            **magnitude** argument is optional if **distributionType** = USER_DEFINED.
         distributionType
             A SymbolicConstant specifying how the boundary condition is distributed spatially.
             Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
@@ -354,11 +354,11 @@ class BoundaryConditionModel(ModelBase):
             A Region object specifying the region to which the boundary condition is applied.
         fieldName
             A String specifying the name of the AnalyticalField object associated with this boundary
-            condition. The **fieldName** argument applies only when **distributionType**=FIELD. The
+            condition. The **fieldName** argument applies only when **distributionType** = FIELD. The
             default value is an empty string.
         magnitude
             A Float specifying the concentration magnitude. The default value is 0. The **magnitude**
-            argument is optional if **distributionType**=USER_DEFINED.
+            argument is optional if **distributionType** = USER_DEFINED.
         distributionType
             A SymbolicConstant specifying how the boundary condition is distributed spatially.
             Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
@@ -753,7 +753,7 @@ class BoundaryConditionModel(ModelBase):
             A Float specifying the scale factor for the amplitude curve. The default value is 1.0.
         centerOfRotation
             A ModelDot object specifying a tuple containing one center of rotation. The default
-            value is the global origin. This argument applies only when **dof**=UR1, UR2, or UR3.
+            value is the global origin. This argument applies only when **dof** = UR1, UR2, or UR3.
         correlation
             A CorrelationArray object.
         secondaryBase
@@ -828,7 +828,7 @@ class BoundaryConditionModel(ModelBase):
         fieldName
             A String specifying the name of the AnalyticalField or DiscreteField object associated
             with this boundary condition. The **fieldName** argument applies only when
-            **distributionType**=FIELD or **distributionType**=DISCRETE_FIELD. The default value is an
+            **distributionType** = FIELD or **distributionType** = DISCRETE_FIELD. The default value is an
             empty string.
         u1
             A Float, a Complex, or a SymbolicConstant specifying the displacement component in the
@@ -869,7 +869,7 @@ class BoundaryConditionModel(ModelBase):
             is UNIFORM.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         buckleCase
             A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE
@@ -932,11 +932,11 @@ class BoundaryConditionModel(ModelBase):
             A Region object specifying the region to which the boundary condition is applied.
         fieldName
             A String specifying the name of the AnalyticalField object associated with this boundary
-            condition. The **fieldName** argument applies only when **distributionType**=FIELD. The
+            condition. The **fieldName** argument applies only when **distributionType** = FIELD. The
             default value is an empty string.
         magnitude
             A Float specifying the electrical potential magnitude. The default value is 0. The
-            **magnitude** argument is optional if **distributionType**=USER_DEFINED.
+            **magnitude** argument is optional if **distributionType** = USER_DEFINED.
         distributionType
             A SymbolicConstant specifying how the boundary condition is distributed spatially.
             Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
@@ -1072,7 +1072,7 @@ class BoundaryConditionModel(ModelBase):
             A Region object specifying the region to which the boundary condition is applied.
         materialName
             A String specifying the name of the Eulerian surface to follow. This argument applies
-            only when **followRegion**=False.
+            only when **followRegion** = False.
         ctrPosition1
             A SymbolicConstant specifying the 1-direction translational constraint on the center of
             the Eulerian mesh. Possible values are FREE and FIXED. The default value is FREE.
@@ -1086,7 +1086,7 @@ class BoundaryConditionModel(ModelBase):
             value is FREE.
         expansionRatio1
             None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
-            1 direction. If **expansionRatio1**=None, then there is no upper limit. The default value
+            1 direction. If **expansionRatio1** = None, then there is no upper limit. The default value
             is None.
         contractRatio1
             A Float specifying the lower bounds on the allowable scaling of the mesh in the 1
@@ -1104,7 +1104,7 @@ class BoundaryConditionModel(ModelBase):
             value is FREE.
         expansionRatio2
             None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
-            2 direction. If **expansionRatio2**=None, then there is no upper limit. The default value
+            2 direction. If **expansionRatio2** = None, then there is no upper limit. The default value
             is None.
         contractRatio2
             A Float specifying the lower bounds on the allowable scaling of the mesh in the 2
@@ -1122,7 +1122,7 @@ class BoundaryConditionModel(ModelBase):
             value is FREE.
         expansionRatio3
             None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
-            3 direction. If **expansionRatio3**=None, then there is no upper limit. The default value
+            3 direction. If **expansionRatio3** = None, then there is no upper limit. The default value
             is None.
         contractRatio3
             A Float specifying the lower bounds on the allowable scaling of the mesh in the 3
@@ -1138,7 +1138,7 @@ class BoundaryConditionModel(ModelBase):
         volThreshold
             A Float specifying the lower bounds on the volume fraction when determining which nodes
             to include in the surface bounding box calculation for an Eulerian material surface.
-            This argument applies only when **followRegion**=False. The default value is 0.5.
+            This argument applies only when **followRegion** = False. The default value is 0.5.
         bufferSize
             None or a Float specifying the buffer between the surface box and the Eulerian section
             mesh bounding box. The default value is 2.0.
@@ -1284,7 +1284,7 @@ class BoundaryConditionModel(ModelBase):
             Possible values are UNIFORM and USER_DEFINED. The default value is UNIFORM.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
 
         Returns
@@ -1336,11 +1336,11 @@ class BoundaryConditionModel(ModelBase):
             A Region object specifying the region to which the boundary condition is applied.
         fieldName
             A String specifying the name of the AnalyticalField object associated with this boundary
-            condition. The **fieldName** argument applies only when **distributionType**=FIELD. The
+            condition. The **fieldName** argument applies only when **distributionType** = FIELD. The
             default value is an empty string.
         magnitude
             A Float specifying the material flow magnitude. The default value is 0. The **magnitude**
-            argument is optional if **distributionType**=USER_DEFINED.
+            argument is optional if **distributionType** = USER_DEFINED.
         distributionType
             A SymbolicConstant specifying how the boundary condition is distributed spatially.
             Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
@@ -1402,11 +1402,11 @@ class BoundaryConditionModel(ModelBase):
             A Region object specifying the region to which the boundary condition is applied.
         fieldName
             A String specifying the name of the AnalyticalField object associated with this boundary
-            condition. The **fieldName** argument applies only when **distributionType**=FIELD. The
+            condition. The **fieldName** argument applies only when **distributionType** = FIELD. The
             default value is an empty string.
         magnitude
             A Float specifying the pore pressure magnitude. The default value is 0. The **magnitude**
-            argument is optional if **distributionType**=USER_DEFINED.
+            argument is optional if **distributionType** = USER_DEFINED.
         distributionType
             A SymbolicConstant specifying how the boundary condition is distributed spatially.
             Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
@@ -1577,7 +1577,7 @@ class BoundaryConditionModel(ModelBase):
         globalStep
             A String specifying the step in the global model from which Abaqus reads the values of
             the variables that will drive the submodel analysis. The String indicates the position
-            of the step in the sequence of analysis steps. For example, **globalStep**='1' indicates
+            of the step in the sequence of analysis steps. For example, **globalStep** = '1' indicates
             the first step.
         timeScale
             A Boolean specifying whether to scale the time variable for the driven nodes' amplitude
@@ -1599,11 +1599,11 @@ class BoundaryConditionModel(ModelBase):
             global model. The default value is 0.05.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         globalIncrement
             An Int specifying the increment number in the global model step from which the solution
-            will be used to specify the values of the driven variables. If **globalIncrement**=0, the
+            will be used to specify the values of the driven variables. If **globalIncrement** = 0, the
             solution from the last increment will be used. The **globalIncrement** argument is
             applicable only for linear perturbation steps. The default value is 0.
         centerZoneSize
@@ -1665,7 +1665,7 @@ class BoundaryConditionModel(ModelBase):
             A Region object specifying the region to which the boundary condition is applied.
         fieldName
             A String specifying the name of the AnalyticalField object associated with this boundary
-            condition. The **fieldName** argument applies only when **distributionType**=FIELD. The
+            condition. The **fieldName** argument applies only when **distributionType** = FIELD. The
             default value is an empty string.
         magnitude
             A Float specifying the temperature magnitude. The default value is 0.
@@ -1738,7 +1738,7 @@ class BoundaryConditionModel(ModelBase):
             A Float specifying the scale factor for the amplitude curve. The default value is 1.0.
         centerOfRotation
             A ModelDot object specifying a tuple containing one center of rotation. The default
-            value is the global origin. This argument applies only when **dof**=UR1, UR2, or UR3.
+            value is the global origin. This argument applies only when **dof** = UR1, UR2, or UR3.
         correlation
             A CorrelationArray object.
         secondaryBase
@@ -1810,7 +1810,7 @@ class BoundaryConditionModel(ModelBase):
             A Region object specifying the region to which the boundary condition is applied.
         fieldName
             A String specifying the name of the AnalyticalField object associated with this boundary
-            condition. The **fieldName** argument applies only when **distributionType**=FIELD. The
+            condition. The **fieldName** argument applies only when **distributionType** = FIELD. The
             default value is an empty string.
         v1
             A Float or a SymbolicConstant specifying the velocity component in the 1-direction.
@@ -1842,7 +1842,7 @@ class BoundaryConditionModel(ModelBase):
             specified step.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         distributionType
             A SymbolicConstant specifying how the boundary condition is distributed spatially.
@@ -1902,7 +1902,7 @@ class BoundaryConditionModel(ModelBase):
             PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         Returns
         -------
@@ -1948,7 +1948,7 @@ class BoundaryConditionModel(ModelBase):
             PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         Returns
         -------
@@ -1995,7 +1995,7 @@ class BoundaryConditionModel(ModelBase):
             PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         Returns
         -------
@@ -2042,7 +2042,7 @@ class BoundaryConditionModel(ModelBase):
             PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         Returns
         -------
@@ -2089,7 +2089,7 @@ class BoundaryConditionModel(ModelBase):
             PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         Returns
         -------
@@ -2136,7 +2136,7 @@ class BoundaryConditionModel(ModelBase):
             PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         Returns
         -------
@@ -2183,7 +2183,7 @@ class BoundaryConditionModel(ModelBase):
             PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         Returns
         -------
@@ -2230,7 +2230,7 @@ class BoundaryConditionModel(ModelBase):
             PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         Returns
         -------

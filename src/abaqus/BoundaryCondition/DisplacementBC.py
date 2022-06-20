@@ -69,7 +69,7 @@ class DisplacementBC(BoundaryCondition):
 
     # A String specifying the name of the AnalyticalField or DiscreteField object associated
     # with this boundary condition. The **fieldName** argument applies only when
-    # **distributionType**=FIELD or **distributionType**=DISCRETE_FIELD. The default value is an
+    # **distributionType** = FIELD or **distributionType** = DISCRETE_FIELD. The default value is an
     # empty string.
     fieldName: str = ""
 
@@ -81,7 +81,7 @@ class DisplacementBC(BoundaryCondition):
     region: Region = Region()
 
     # None or a DatumCsys object specifying the local coordinate system of the boundary
-    # condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+    # condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     # in the global coordinate system. The default value is None.
     localCsys: str = None
 
@@ -124,7 +124,7 @@ class DisplacementBC(BoundaryCondition):
         fieldName
             A String specifying the name of the AnalyticalField or DiscreteField object associated
             with this boundary condition. The **fieldName** argument applies only when
-            **distributionType**=FIELD or **distributionType**=DISCRETE_FIELD. The default value is an
+            **distributionType** = FIELD or **distributionType** = DISCRETE_FIELD. The default value is an
             empty string.
         u1
             A Float, a Complex, or a SymbolicConstant specifying the displacement component in the
@@ -165,7 +165,7 @@ class DisplacementBC(BoundaryCondition):
             is UNIFORM.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         buckleCase
             A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE
@@ -202,7 +202,7 @@ class DisplacementBC(BoundaryCondition):
         fieldName
             A String specifying the name of the AnalyticalField or DiscreteField object associated
             with this boundary condition. The **fieldName** argument applies only when
-            **distributionType**=FIELD or **distributionType**=DISCRETE_FIELD. The default value is an
+            **distributionType** = FIELD or **distributionType** = DISCRETE_FIELD. The default value is an
             empty string.
         u1
             A Float, a Complex, or a SymbolicConstant specifying the displacement component in the
@@ -243,7 +243,7 @@ class DisplacementBC(BoundaryCondition):
             is UNIFORM.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         buckleCase
             A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE

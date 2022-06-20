@@ -263,10 +263,10 @@ class MeshEditPart(PartBase):
             SOLID or SHELL.
         totalThickness
             A Float specifying the total thickness of the solid layers. This argument applies only
-            when **meshType**=SOLID.
+            when **meshType** = SOLID.
         distanceBetweenLayers
             A Float specifying the distance between shell layers. This argument applies only when
-            **meshType**=SHELL.
+            **meshType** = SHELL.
         numLayers
             An Int specifying the number of element layers to be generated.
         offsetDirection
@@ -280,7 +280,7 @@ class MeshEditPart(PartBase):
             base surface. The default value is False.
         deleteBaseElements
             A Boolean specifying whether to delete the shell elements after the offset layers are
-            generated. The default value is False. This argument applies only when **meshType**=SHELL.
+            generated. The default value is False. This argument applies only when **meshType** = SHELL.
         constantThicknessCorners
             A Boolean specifying whether to use element-based thickness or nodal-based thickness.
             The default value is False.

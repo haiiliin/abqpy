@@ -60,7 +60,7 @@ class CohesiveSection(Section):
             **initialThickness**The default value is SOLVER_DEFAULT.
         initialThickness
             A Float specifying the initial thickness for the section. The **initialThickness**
-            argument applies only when **initialThicknessType**=SPECIFY. The default value is 1.0.
+            argument applies only when **initialThicknessType** = SPECIFY. The default value is 1.0.
         outOfPlaneThickness
             None or a Float specifying the out-of-plane thickness for the section. The default value
             is None.
@@ -94,7 +94,7 @@ class CohesiveSection(Section):
             **initialThickness**The default value is SOLVER_DEFAULT.
         initialThickness
             A Float specifying the initial thickness for the section. The **initialThickness**
-            argument applies only when **initialThicknessType**=SPECIFY. The default value is 1.0.
+            argument applies only when **initialThicknessType** = SPECIFY. The default value is 1.0.
         outOfPlaneThickness
             None or a Float specifying the out-of-plane thickness for the section. The default value
             is None.

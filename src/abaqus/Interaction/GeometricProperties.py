@@ -46,7 +46,7 @@ class GeometricProperties:
             1.0.
         padThickness
             None or a Float specifying the thickness of an interfacial layer between the contacting
-            surfaces. If **padThickness**=None, there is no interfacial layer. The default value is
+            surfaces. If **padThickness** = None, there is no interfacial layer. The default value is
             None.
         trackingThickness
             None or a Float specifying the thickness that determines the contacting surfaces to be
@@ -54,16 +54,16 @@ class GeometricProperties:
             value is used if a zero value is input or if the parameter is omitted.
         dependentVariables
             An Int specifying the number of state-dependent variables. The default value is 0. This
-            argument is applicable only if **modelType**=MODELTYPE_USER or
-            **modelType**=MODELTYPE_USER_INTERACTION.
+            argument is applicable only if **modelType** = MODELTYPE_USER or
+            **modelType** = MODELTYPE_USER_INTERACTION.
         numProperties
             An Int specifying the number of property values required. The default value is 0. This
-            argument is applicable only if **modelType**=MODELTYPE_USER or
-            **modelType**=MODELTYPE_USER_INTERACTION.
+            argument is applicable only if **modelType** = MODELTYPE_USER or
+            **modelType** = MODELTYPE_USER_INTERACTION.
         useUnsymmetricEqunProcedure
             A Boolean specifying whether to use unsymmetric equation solution procedures. This
-            argument is applicable only if **modelType**=MODELTYPE_USER or
-            **modelType**=MODELTYPE_USER_INTERACTION.
+            argument is applicable only if **modelType** = MODELTYPE_USER or
+            **modelType** = MODELTYPE_USER_INTERACTION.
         modelType
             A SymbolicConstant specifying the surface interaction model type.
 

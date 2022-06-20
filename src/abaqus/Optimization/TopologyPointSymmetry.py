@@ -45,7 +45,7 @@ class TopologyPointSymmetry(GeometricRestriction):
             the default value is MODEL.
         csys
             None or a DatumCsys object specifying the position of the symmetry point defined as the
-            origin of a local coordinate system. If **csys**=None, the global coordinate system is
+            origin of a local coordinate system. If **csys** = None, the global coordinate system is
             used. When this member is queried, it returns an Int. The default value is None.
         ignoreFrozenArea
             A Boolean specifying whether to ignore frozen areas. The default value is OFF.
@@ -64,7 +64,7 @@ class TopologyPointSymmetry(GeometricRestriction):
         ----------
         csys
             None or a DatumCsys object specifying the position of the symmetry point defined as the
-            origin of a local coordinate system. If **csys**=None, the global coordinate system is
+            origin of a local coordinate system. If **csys** = None, the global coordinate system is
             used. When this member is queried, it returns an Int. The default value is None.
         ignoreFrozenArea
             A Boolean specifying whether to ignore frozen areas. The default value is OFF.

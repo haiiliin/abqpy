@@ -61,7 +61,7 @@ class Density:
         fieldName
             A String specifying the name of the AnalyticalField or DiscreteField object associated
             with this material option. The **fieldName** argument applies only when
-            **distributionType**=ANALYTICAL_FIELD or **distributionType**=DISCRETE_FIELD. The default
+            **distributionType** = ANALYTICAL_FIELD or **distributionType** = DISCRETE_FIELD. The default
             value is an empty string.
 
         Returns

@@ -266,7 +266,7 @@ class ImplicitDynamicsStep(AnalysisStep):
 
     # A Boolean specifying whether to accept the solution to an increment after the maximum
     # number of iterations allowed have been completed, even if the equilibrium tolerances are
-    # not satisfied. The default value is OFF.Warning:You should set **noStop**=OFF only in
+    # not satisfied. The default value is OFF.Warning:You should set **noStop** = OFF only in
     # special cases when you have a thorough understanding of how to interpret the results.
     noStop: Boolean = OFF
 
@@ -492,7 +492,7 @@ class ImplicitDynamicsStep(AnalysisStep):
         noStop
             A Boolean specifying whether to accept the solution to an increment after the maximum
             number of iterations allowed have been completed, even if the equilibrium tolerances are
-            not satisfied. The default value is OFF.Warning:You should set **noStop**=OFF only in
+            not satisfied. The default value is OFF.Warning:You should set **noStop** = OFF only in
             special cases when you have a thorough understanding of how to interpret the results.
         maintainAttributes
             A Boolean specifying whether to retain attributes from an existing step with the same
@@ -611,7 +611,7 @@ class ImplicitDynamicsStep(AnalysisStep):
         noStop
             A Boolean specifying whether to accept the solution to an increment after the maximum
             number of iterations allowed have been completed, even if the equilibrium tolerances are
-            not satisfied. The default value is OFF.Warning:You should set **noStop**=OFF only in
+            not satisfied. The default value is OFF.Warning:You should set **noStop** = OFF only in
             special cases when you have a thorough understanding of how to interpret the results.
         solutionTechnique
             A SymbolicConstant specifying the technique used to for solving nonlinear equations.

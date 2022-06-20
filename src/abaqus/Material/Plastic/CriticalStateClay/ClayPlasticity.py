@@ -18,7 +18,7 @@ class ClayPlasticity:
 
     The table data for this object are:
 
-    - If **hardening**=EXPONENTIAL, the table data specify the following:
+    - If **hardening** = EXPONENTIAL, the table data specify the following:
     
         - Logarithmic plastic bulk modulus, :math:`\lambda` (dimensionless).
         - Stress ratio at critical state, :math:`M`.
@@ -31,7 +31,7 @@ class ClayPlasticity:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **hardening**=TABULAR, the table data specify the following:
+    - If **hardening** = TABULAR, the table data specify the following:
     
         - Stress ratio at critical state, :math:`M`
         - The initial volumetric plastic strain, :math:`\left.\varepsilon_{\mathrm{vol}}^{p l}\right|_{0}`, 
@@ -78,7 +78,7 @@ class ClayPlasticity:
         intercept
             None or a Float specifying :math:`e_1`, the intercept of the virgin consolidation line with the
             void ratio axis in a plot of void ratio versus the logarithm of pressure stress. The
-            default value is None.This argument is valid only if **hardening**=EXPONENTIAL.
+            default value is None.This argument is valid only if **hardening** = EXPONENTIAL.
         hardening
             A SymbolicConstant specifying the type of hardening/softening definition. Possible
             values are EXPONENTIAL and TABULAR. The default value is EXPONENTIAL.

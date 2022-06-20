@@ -55,13 +55,13 @@ class OptionArg:
         visibleEdges
             A SymbolicConstant specifying which edges to plot. Possible values are ALL, EXTERIOR,
             FEATURE, FREE, and NONE. The default value is FEATURE.NONE can be used only when
-            **renderStyle**=SHADED.
+            **renderStyle** = SHADED.
         edgeColorWireHide
             A String specifying the color to be used to plot the edges of the undeformed plot when
-            **renderStyle**=WIREFRAME or HIDDEN. The default value is "Green".
+            **renderStyle** = WIREFRAME or HIDDEN. The default value is "Green".
         edgeColorFillShade
             A String specifying the color to be used to plot the edges of the undeformed plot when
-            **renderStyle**=FILLED or SHADED. The default value is "Black".
+            **renderStyle** = FILLED or SHADED. The default value is "Black".
         edgeLineStyle
             A SymbolicConstant specifying the edge line style. Possible values are SOLID, DASHED,
             DOTTED, and DOT_DASH. The default value is SOLID.
@@ -72,7 +72,7 @@ class OptionArg:
             A Boolean specifying whether to allow color coded items in the output database to
             override the edge and fill color settings. The default value is ON.
         fillColor
-            A String specifying the color to be used to fill elements when **renderStyle**=FILLED or
+            A String specifying the color to be used to fill elements when **renderStyle** = FILLED or
             SHADED. The default value is "Green".
         translucency
             A Boolean specifying whether to set translucency. The default value is OFF.

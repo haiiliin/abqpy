@@ -152,14 +152,14 @@ class PredefinedFieldModel(
             hardening models. The default value is an empty sequence.
         sectPtNum
             A sequence of Ints specifying section point numbers. This argument is valid only when
-            **definition**=SECTION_PTS.
+            **definition** = SECTION_PTS.
         definition
             A SymbolicConstant specifying different types of kinematic hardening. Possible values
             are KINEMATIC_HARDENING, CRUSHABLE_FOAM, REBAR, SECTION_PTS, and USER_DEFINED. The
             default value is KINEMATIC_HARDENING.
         rebarLayerNames
             A sequence of Strings specifying rebar layer names. This argument is valid only when
-            **definition**=REBAR.
+            **definition** = REBAR.
         distributionType
             A SymbolicConstant specifying whether the load is uniform. Possible values are MAGNITUDE
             and ANALYTICAL_FIELD. The default value is MAGNITUDE.
@@ -212,13 +212,13 @@ class PredefinedFieldModel(
             discrete fields. The default value is OFF.
         assignmentList
             A sequence of tuples specifying the uniform volume fractions to be assigned. This
-            argument is valid only when **useFields**=FALSE. Each tuple contains two entries:A Region
+            argument is valid only when **useFields** = FALSE. Each tuple contains two entries:A Region
             object.A tuple of Floats specifying the uniform volume fraction values. The length of
             the tuple must match the number of material instance names specified in the Eulerain
             section assigned to part instances specified by **instanceList**.
         fieldList
             A sequence of tuples specifying the discrete volume fractions to be assigned. This
-            argument is valid only when **useFields**=TRUE. Each tuple contains two entries:A Region
+            argument is valid only when **useFields** = TRUE. Each tuple contains two entries:A Region
             object.A tuple of Strings specifying Discrete Field names. The length of the tuple must
             match the number of material instance names specified in the Eulerain section assigned
             to part instances specified by **instanceList**.
@@ -274,7 +274,7 @@ class PredefinedFieldModel(
         region
             A Region object specifying the region to which the predefined field is applied. **Region**
             is ignored if the predefined field has a **distributionType** member available, and
-            **distributionType**=FROM_FILE .
+            **distributionType** = FROM_FILE .
         distributionType
             A SymbolicConstant specifying how the predefined field varies spatially. Possible values
             are UNIFORM, USER_DEFINED, FROM_FILE, FIELD, FROM_FILE_AND_USER_DEFINED, and
@@ -292,7 +292,7 @@ class PredefinedFieldModel(
         field
             A String specifying the name of the AnalyticalField or DiscreteField object associated
             with this predefined field. The **field** argument applies only when
-            **distributionType**=FIELD or **distributionType**=DISCRETE_FIELD. The default value is an
+            **distributionType** = FIELD or **distributionType** = DISCRETE_FIELD. The default value is an
             empty string.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -301,45 +301,45 @@ class PredefinedFieldModel(
             step.
         fileName
             A String specifying the name of the file from which the temperature values are to be
-            read when **distributionType**=FROM_FILE or **distributionType**=FROM_FILE_AND_USER_DEFINED.
+            read when **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED.
         beginStep
             An Int specifying the first step from which temperature values are to be read or the
             SymbolicConstant FIRST_STEP or LAST_STEP. This argument is valid only when
-            **distributionType**=FROM_FILE or **distributionType**=FROM_FILE_AND_USER_DEFINED. The
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
             default value is None.
         beginIncrement
             An Int specifying the first increment of the step set in **beginStep** or the
             SymbolicConstants STEP_START or STEP_END. This argument is valid only when
-            **distributionType**=FROM_FILE or **distributionType**=FROM_FILE_AND_USER_DEFINED. The
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
             default value is None.
         endStep
             An Int specifying the last step from which temperature values are to be read or the
             SymbolicConstants FIRST_STEP and LAST_STEP. This argument is valid only when
-            **distributionType**=FROM_FILE or **distributionType**=FROM_FILE_AND_USER_DEFINED. The
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
             default value is None.
         endIncrement
             An Int specifying the last increment of the step set in **endStep** or the
             SymbolicConstants STEP_START and STEP_END. This argument is valid only when
-            **distributionType**=FROM_FILE or **distributionType**=FROM_FILE_AND_USER_DEFINED. The
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
             default value is None.
         interpolate
             A SymbolicConstant specifying whether to interpolate a field read from an output
             database or results file. Possible values are OFF, ON or MIDSIDE_ONLY. The default value
             is OFF.
         magnitudes
-            A Sequence of Doubles specifying the temperature values when **distributionType**=UNIFORM
+            A Sequence of Doubles specifying the temperature values when **distributionType** = UNIFORM
             or FIELD. The value of the **magnitudes** argument is a function of the
             **crossSectionDistribution** argument, as shown in the following list:
             
-            - If **crossSectionDistribution**=CONSTANT_THROUGH_THICKNESS then **magnitudes** is a Double
+            - If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS then **magnitudes** is a Double
               specifying the temperature.
-            - If **crossSectionDistribution**=GRADIENTS_THROUGH_SHELL_CS then **magnitudes** is a
+            - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS then **magnitudes** is a
               sequence of Doubles specifying the mean value and the gradient in the thickness
             direction.
-            - If **crossSectionDistribution**=GRADIENTS_THROUGH_BEAM_CS then **magnitudes** is a
+            - If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS then **magnitudes** is a
               sequence of Doubles specifying the mean value, the gradient in the N1 direction, and the
             gradient in the N2 direction.
-            - If **crossSectionDistribution**=POINTS_THROUGH_SECTION then **magnitudes** is a sequence
+            - If **crossSectionDistribution** = POINTS_THROUGH_SECTION then **magnitudes** is a sequence
               of Doubles specifying the temperature at each point.
         absoluteExteriorTolerance
             A Float specifying the absolute value by which a driven node of the field can lie
@@ -420,7 +420,7 @@ class PredefinedFieldModel(
         field
             A String specifying the name of the AnalyticalField object associated with this
             predefined field. The **field** argument applies only when
-            **distributionType**=FIELD_ANALYTICAL. The default value is an empty string.
+            **distributionType** = FIELD_ANALYTICAL. The default value is an empty string.
         distributionType
             A SymbolicConstant specifying whether the load is uniform. Possible values are MAGNITUDE
             and FIELD_ANALYTICAL. The default value is MAGNITUDE.

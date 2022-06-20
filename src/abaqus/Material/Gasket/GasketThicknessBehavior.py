@@ -19,7 +19,7 @@ class GasketThicknessBehavior:
 
     The table data for this object are:
 
-    - If **variableUnits**=STRESS, the loading table data specify the following:
+    - If **variableUnits** = STRESS, the loading table data specify the following:
     
         - Pressure; this value must be positive.
         - Closure; this value must be positive.
@@ -27,7 +27,7 @@ class GasketThicknessBehavior:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **variableUnits**=FORCE, the loading table data specify the following:
+    - If **variableUnits** = FORCE, the loading table data specify the following:
     
         - Force or force per unit length; this value must be positive.
         - Closure; this value must be positive.
@@ -35,7 +35,7 @@ class GasketThicknessBehavior:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **variableUnits**=STRESS and **type**=ELASTIC_PLASTIC, the **unloadingTable** data specify the following:
+    - If **variableUnits** = STRESS and **type** = ELASTIC_PLASTIC, the **unloadingTable** data specify the following:
     
         - Pressure; this value must be positive.
         - Closure; this value must be positive.
@@ -44,7 +44,7 @@ class GasketThicknessBehavior:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **variableUnits**=FORCE and **type**=ELASTIC_PLASTIC, the **unloadingTable** data specify the following:
+    - If **variableUnits** = FORCE and **type** = ELASTIC_PLASTIC, the **unloadingTable** data specify the following:
     
         - Pressure; this value must be positive.
         - Closure; this value must be positive.
@@ -53,7 +53,7 @@ class GasketThicknessBehavior:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **variableUnits**=STRESS and **type**=DAMAGE, the **unloadingTable** data specify the following:
+    - If **variableUnits** = STRESS and **type** = DAMAGE, the **unloadingTable** data specify the following:
     
         - Pressure; this value must be positive.
         - Closure; this value must be positive.
@@ -62,7 +62,7 @@ class GasketThicknessBehavior:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **variableUnits**=FORCE and **type**=DAMAGE, the **unloadingTable** data specify the following:
+    - If **variableUnits** = FORCE and **type** = DAMAGE, the **unloadingTable** data specify the following:
     
         - Force or force per unit length; this value must be positive.
         - Closure; this value must be positive.
@@ -109,8 +109,8 @@ class GasketThicknessBehavior:
         ----------
         table
             A sequence of sequences of Floats specifying loading data. The first sequence must
-            contain only 0. At least two sequences must be specified if **type**=DAMAGE, and at least
-            3 sequences must be specified if **type**=ELASTIC_PLASTIC. The items in the table data are
+            contain only 0. At least two sequences must be specified if **type** = DAMAGE, and at least
+            3 sequences must be specified if **type** = ELASTIC_PLASTIC. The items in the table data are
             described below.
         temperatureDependency
             A Boolean specifying whether the loading data depend on temperature. The default value

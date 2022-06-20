@@ -50,7 +50,7 @@ class ConnectorFailure(ConnectorBehaviorOption):
         releaseComponent
             The SymbolicConstant ALL or an Int specifying the motion components that fail. If an Int
             is specified, only that motion component fails when the failure criteria are satisfied.
-            If **releaseComponent**=ALL, all motion components fail. The default value is ALL.
+            If **releaseComponent** = ALL, all motion components fail. The default value is ALL.
         minMotion
             None or a Float specifying the lower bound for the connector's relative position for all
             specified components, or no lower bound. The default value is None.

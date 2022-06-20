@@ -35,7 +35,7 @@ class InteractionContactControlModel(ModelBase):
             DEFAULT and SPECIFY. The default value is DEFAULT.
         globTrkInc
             An Int specifying the maximum number of increments between global contact searches. The
-            **globTrkInc** argument applies only when **globTrkChoice**=SPECIFY. The default value is
+            **globTrkInc** argument applies only when **globTrkChoice** = SPECIFY. The default value is
             100 for surface-to-surface contact and 4 for self-contact.
         fastLocalTrk
             A Boolean specifying whether to use the more computationally efficient local tracking
@@ -120,13 +120,13 @@ class InteractionContactControlModel(ModelBase):
             surface face dimension. The float values represent percentages (e.g.: 0.001=0.1%). Only
             contact interactions defined with augmented Lagrangian surface behavior will be affected
             by this argument. The default value is 10-3.The **relativePenetrationTolerance** argument
-            applies only when **penetrationTolChoice**=RELATIVE. The **relativePenetrationTolerance**
+            applies only when **penetrationTolChoice** = RELATIVE. The **relativePenetrationTolerance**
             and **absolutePenetrationTolerance** arguments are mutually exclusive.
         absolutePenetrationTolerance
             None or a Float specifying the allowable penetration. Only contact interactions defined
             with augmented Lagrangian surface behavior will be affected by this argument. The
             **absolutePenetrationTolerance** argument applies only when
-            **penetrationTolChoice**=ABSOLUTE. The **relativePenetrationTolerance** and
+            **penetrationTolChoice** = ABSOLUTE. The **relativePenetrationTolerance** and
             **absolutePenetrationTolerance** arguments are mutually exclusive. The default value is
             None.
         frictionOnset
@@ -161,10 +161,10 @@ class InteractionContactControlModel(ModelBase):
         dampFactor
             A Float specifying the value of the damping factor. This value is multiplied by the
             calculated damping coefficient. The default value is 1.0.This argument is only valid
-            when **stabilizeChoice**=AUTOMATIC.
+            when **stabilizeChoice** = AUTOMATIC.
         dampCoef
             A Float specifying the damping coefficient. The default value is 0.0.This argument is
-            only valid when **stabilizeChoice**=COEFFICIENT.
+            only valid when **stabilizeChoice** = COEFFICIENT.
         tangFraction
             A Float specifying the tangential stabilization as a fraction of the normal
             stabilization (damping). The default value is 1.0.This argument is valid only if
@@ -179,7 +179,7 @@ class InteractionContactControlModel(ModelBase):
             if **stabilizeChoice** = AUTOMATIC or COEFFICIENT.
         zeroDamping
             None or a Float specifying the clearance at which damping becomes zero. This argument is
-            valid only when **zeroDampingChoice**=SPECIFY. This argument is valid only if
+            valid only when **zeroDampingChoice** = SPECIFY. This argument is valid only if
             **stabilizeChoice** = AUTOMATIC or COEFFICIENT. The default value is None.
         enforceWithLagrangeMultipliers
             A SymbolicConstant specifying whether to enforce the contact constraints with Lagrange

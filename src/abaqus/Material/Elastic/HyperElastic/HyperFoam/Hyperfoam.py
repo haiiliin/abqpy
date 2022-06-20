@@ -74,7 +74,7 @@ class Hyperfoam:
             A Boolean specifying whether test data are supplied. The default value is OFF.
         poisson
             None or a Float specifying the effective Poisson's ratio, νν, of the material. This
-            argument is valid only when **testData**=ON. The default value is None.
+            argument is valid only when **testData** = ON. The default value is None.
         n
             An Int specifying the order of the strain energy potential. Possible values are 1 ≤n≤≤n≤
             6. The default value is 1.
@@ -85,7 +85,7 @@ class Hyperfoam:
             values are INSTANTANEOUS and LONG_TERM. The default value is LONG_TERM.
         table
             A sequence of sequences of Floats specifying the items described below. This argument is
-            valid only when **testData**=OFF. The default value is an empty sequence.
+            valid only when **testData** = OFF. The default value is an empty sequence.
 
         Returns
         -------

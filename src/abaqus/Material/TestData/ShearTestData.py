@@ -15,12 +15,12 @@ class ShearTestData:
         
     The table data for this object are:
             
-    - If **time**=RELAXATION_TEST_DATA, the table data specify the following:
+    - If **time** = RELAXATION_TEST_DATA, the table data specify the following:
     
         - Normalized shear relaxation modulus :math:`g_{R}(t)`. :math:`\left(0 \leq g_{R}(t) \leq 1\right)`
         - Time :math:`t (t>0)`.
         
-    - If **time**=CREEP_TEST_DATA, the table data specify the following:
+    - If **time** = CREEP_TEST_DATA, the table data specify the following:
     
         - Normalized shear compliance :math:`j_{S}(t)`. :math:`\left(j_{S}(t) \geq 1\right)`.
         - Time :math:`t (t>0)`.
@@ -50,8 +50,8 @@ class ShearTestData:
         shrinf
             None or a Float specifying a normalized shear. The value of **shrinf** depends on the
             value of the **time** member of the Viscoelastic object. The default value is None.If
-            **time**=RELAXATION_TEST_DATA, **shrinf** specifies the value of the long-term, normalized
-            shear modulus :math:`g_R(\infty)`.If **time**=CREEP_TEST_DATA, **shrinf** specifies the value of the
+            **time** = RELAXATION_TEST_DATA, **shrinf** specifies the value of the long-term, normalized
+            shear modulus :math:`g_R(\infty)`.If **time** = CREEP_TEST_DATA, **shrinf** specifies the value of the
             long-term, normalized shear compliance :math:`j_S(\infty)`.
 
         Returns

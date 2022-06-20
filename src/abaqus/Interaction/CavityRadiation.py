@@ -149,7 +149,7 @@ class CavityRadiation(Interaction):
     cyclicSymmetry: Boolean = OFF
 
     # An Int specifying the number of cyclically similar images that compose the cavity formed
-    # as a result of this symmetry. This argument applies only when **cyclicSymmetry**=ON. The
+    # as a result of this symmetry. This argument applies only when **cyclicSymmetry** = ON. The
     # default value is 2.
     cyclicImages: int = 2
 
@@ -207,19 +207,19 @@ class CavityRadiation(Interaction):
 
     # A tuple of Strings specifying the names of the Cavity Radiation properties containing
     # the surface emissivity data. One name per specified surface. The emissivity data is
-    # ignored when **surfaceReflection**=OFF.
+    # ignored when **surfaceReflection** = OFF.
     surfaceEmissivities: tuple = ()
 
     # A ModelDot object specifying the rotation axis point. This argument applies only when
-    # **cyclicSymmetry**=ON.
+    # **cyclicSymmetry** = ON.
     cyclicRotPt: ModelDot = ModelDot()
 
     # A ModelDot object specifying the rotation axis end point. This argument applies only for
-    # three-dimensional models, and only when **cyclicSymmetry**=ON.
+    # three-dimensional models, and only when **cyclicSymmetry** = ON.
     cyclicRotEndPt: ModelDot = ModelDot()
 
     # A ModelDot object specifying the symmetry axis end point. This argument applies only
-    # when **cyclicSymmetry**=ON.
+    # when **cyclicSymmetry** = ON.
     cyclicSymPt: ModelDot = ModelDot()
 
     # A tuple of tuples of Floats specifying the two points of the vector that describes the
@@ -305,7 +305,7 @@ class CavityRadiation(Interaction):
         surfaceEmissivities
             A sequence of Strings specifying the names of the Cavity Radiation properties containing
             the surface emissivity data. One name per specified surface. The emissivity data is
-            ignored when **surfaceReflection**=OFF.
+            ignored when **surfaceReflection** = OFF.
         ambientTemp
             None or a Float specifying the reference ambient temperature value, θ0θ0. Specifying a
             value indicates an open cavity. The default value is None.
@@ -315,12 +315,12 @@ class CavityRadiation(Interaction):
             default value is BLOCKING_ALL.
         blockingSurfaces
             A RegionArray object specifying the surfaces that provide blocking inside the cavity.
-            This argument applies only when **blocking**=PARTIAL_BLOCKING.
+            This argument applies only when **blocking** = PARTIAL_BLOCKING.
         rangeOfView
             None or a Float specifying the maximum distance between surface facets at which
             viewfactors are calculated. More distant facets are deemed too far apart to exchange
             significant amounts of heat through radiation effects, and the viewfactors between these
-            facets are assumed to be zero. If **rangeOfView**=None, there is no upper limit. The
+            facets are assumed to be zero. If **rangeOfView** = None, there is no upper limit. The
             default value is None.
         surfaceReflection
             A Boolean specifying whether heat reflections are to be included in the cavity radiation
@@ -343,17 +343,17 @@ class CavityRadiation(Interaction):
             specified for axisymmetric models. The default value is OFF.
         cyclicImages
             An Int specifying the number of cyclically similar images that compose the cavity formed
-            as a result of this symmetry. This argument applies only when **cyclicSymmetry**=ON. The
+            as a result of this symmetry. This argument applies only when **cyclicSymmetry** = ON. The
             default value is 2.
         cyclicRotPt
             A ModelDot object specifying the rotation axis point. This argument applies only when
-            **cyclicSymmetry**=ON.
+            **cyclicSymmetry** = ON.
         cyclicRotEndPt
             A ModelDot object specifying the rotation axis end point. This argument applies only for
-            three-dimensional models, and only when **cyclicSymmetry**=ON.
+            three-dimensional models, and only when **cyclicSymmetry** = ON.
         cyclicSymPt
             A ModelDot object specifying the symmetry axis end point. This argument applies only
-            when **cyclicSymmetry**=ON.
+            when **cyclicSymmetry** = ON.
         periodicSymmetries
             An Int specifying the number of periodic symmetries that will be applied. The default
             value is 0.
@@ -500,7 +500,7 @@ class CavityRadiation(Interaction):
         surfaceEmissivities
             A sequence of Strings specifying the names of the Cavity Radiation properties containing
             the surface emissivity data. One name per specified surface. The emissivity data is
-            ignored when **surfaceReflection**=OFF.
+            ignored when **surfaceReflection** = OFF.
         ambientTemp
             None or a Float specifying the reference ambient temperature value, θ0θ0. Specifying a
             value indicates an open cavity. The default value is None.
@@ -510,12 +510,12 @@ class CavityRadiation(Interaction):
             default value is BLOCKING_ALL.
         blockingSurfaces
             A RegionArray object specifying the surfaces that provide blocking inside the cavity.
-            This argument applies only when **blocking**=PARTIAL_BLOCKING.
+            This argument applies only when **blocking** = PARTIAL_BLOCKING.
         rangeOfView
             None or a Float specifying the maximum distance between surface facets at which
             viewfactors are calculated. More distant facets are deemed too far apart to exchange
             significant amounts of heat through radiation effects, and the viewfactors between these
-            facets are assumed to be zero. If **rangeOfView**=None, there is no upper limit. The
+            facets are assumed to be zero. If **rangeOfView** = None, there is no upper limit. The
             default value is None.
         surfaceReflection
             A Boolean specifying whether heat reflections are to be included in the cavity radiation
@@ -538,17 +538,17 @@ class CavityRadiation(Interaction):
             specified for axisymmetric models. The default value is OFF.
         cyclicImages
             An Int specifying the number of cyclically similar images that compose the cavity formed
-            as a result of this symmetry. This argument applies only when **cyclicSymmetry**=ON. The
+            as a result of this symmetry. This argument applies only when **cyclicSymmetry** = ON. The
             default value is 2.
         cyclicRotPt
             A ModelDot object specifying the rotation axis point. This argument applies only when
-            **cyclicSymmetry**=ON.
+            **cyclicSymmetry** = ON.
         cyclicRotEndPt
             A ModelDot object specifying the rotation axis end point. This argument applies only for
-            three-dimensional models, and only when **cyclicSymmetry**=ON.
+            three-dimensional models, and only when **cyclicSymmetry** = ON.
         cyclicSymPt
             A ModelDot object specifying the symmetry axis end point. This argument applies only
-            when **cyclicSymmetry**=ON.
+            when **cyclicSymmetry** = ON.
         periodicSymmetries
             An Int specifying the number of periodic symmetries that will be applied. The default
             value is 0.
@@ -665,12 +665,12 @@ class CavityRadiation(Interaction):
             default value is BLOCKING_ALL.
         blockingSurfaces
             A RegionArray object specifying the surfaces that provide blocking inside the cavity.
-            This argument applies only when **blocking**=PARTIAL_BLOCKING.
+            This argument applies only when **blocking** = PARTIAL_BLOCKING.
         rangeOfView
             None or a Float specifying the maximum distance between surface facets at which
             viewfactors are calculated. More distant facets are deemed too far apart to exchange
             significant amounts of heat through radiation effects, and the viewfactors between these
-            facets are assumed to be zero. If **rangeOfView**=None, there is no upper limit. The
+            facets are assumed to be zero. If **rangeOfView** = None, there is no upper limit. The
             default value is None.
         surfaceReflection
             A Boolean specifying whether heat reflections are to be included in the cavity radiation

@@ -15,12 +15,12 @@ class CombinedTestData:
 
     The table data for this object are:
 
-    If **time**=RELAXATION_TEST_DATA, the table data specify the following:
+    If **time** = RELAXATION_TEST_DATA, the table data specify the following:
     
         - Normalized shear modulus, :math:`g_R(t)` (:math:`0\le g_R(t)\le 1`).
         - Normalized volumetric (bulk) modulus, :math:`k_R(t)` (:math:`0\le k_R(t)\le 1`).
         - Time :math:`t` (:math:`t>0`).
-    If **time**=CREEP_TEST_DATA, the table data specify the following:
+    If **time** = CREEP_TEST_DATA, the table data specify the following:
     
         - Normalized shear compliance, :math:`j_S(t)` (:math:`j_S(t)\ge 1`).
         - Normalized volumetric (bulk) compliance, :math:`j_K(t)` (:math:`j_K(t)\ge 1`).
@@ -51,16 +51,16 @@ class CombinedTestData:
         volinf
             None or a Float specifying a normalized volume. The value of **volinf** depends on the
             value of the **time** member of the Viscoelastic object. The default value is None.
-            If **time**=RELAXATION_TEST_DATA, **volinf** specifies the value of the long-term normalized
+            If **time** = RELAXATION_TEST_DATA, **volinf** specifies the value of the long-term normalized
             volumetric modulus, kR(∞).
-            If **time**=CREEP_TEST_DATA, **volinf** specifies the value of the long-term normalized
+            If **time** = CREEP_TEST_DATA, **volinf** specifies the value of the long-term normalized
             volumetric compliance, jK⁢(∞).
         shrinf
             None or a Float specifying a normalized shear. The value of **shrinf** depends on the
             value of the **time** member of the Viscoelastic object. The default value is None.
-            If **time**=RELAXATION_TEST_DATA, **shrinf** specifies the value of the long-term normalized
+            If **time** = RELAXATION_TEST_DATA, **shrinf** specifies the value of the long-term normalized
             shear modulus, gR(∞)
-            If **time**=CREEP_TEST_DATA, **shrinf** specifies the value of the long-term normalized
+            If **time** = CREEP_TEST_DATA, **shrinf** specifies the value of the long-term normalized
             shear compliance, jS(∞).
 
         Returns

@@ -120,17 +120,17 @@ class BeamSectionProfileModel(ModelBase):
         uniformThickness
             A Boolean specifying whether the thickness is uniform.
         t1
-            A Float specifying the uniform wall thickness if **uniformThickness**=ON, and the wall
-            thickness of the first segment if **uniformThickness**=OFF.
+            A Float specifying the uniform wall thickness if **uniformThickness** = ON, and the wall
+            thickness of the first segment if **uniformThickness** = OFF.
         t2
             A Float specifying the wall thickness of the second segment. **t2** is required only when
-            **uniformThickness**=OFF. The default value is 0.0.
+            **uniformThickness** = OFF. The default value is 0.0.
         t3
             A Float specifying the wall thickness of the third segment. **t3** is required only when
-            **uniformThickness**=OFF. The default value is 0.0.
+            **uniformThickness** = OFF. The default value is 0.0.
         t4
             A Float specifying the wall thickness of the fourth segment. **t4** is required only when
-            **uniformThickness**=OFF. The default value is 0.0.
+            **uniformThickness** = OFF. The default value is 0.0.
 
         Returns
         -------

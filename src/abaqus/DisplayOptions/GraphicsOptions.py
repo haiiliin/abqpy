@@ -238,9 +238,9 @@ class GraphicsOptions:
     # A Boolean specifying whether facets that are determined to be facing away from the
     # viewer will be drawn. The default value is ON. backfaceCulling provides a performance
     # enhancement when displaying solid elements where the front side of the element occludes
-    # the back side of the element. Set **backfaceCulling**=OFF if it appears that you are
+    # the back side of the element. Set **backfaceCulling** = OFF if it appears that you are
     # seeing the back side of an element and the front side is missing. You should also set
-    # **backfaceCulling**=OFF if you believe the display is not complete.
+    # **backfaceCulling** = OFF if you believe the display is not complete.
     backfaceCulling: Boolean = ON
 
     # A SymbolicConstant specifying the graphics driver to use. Abaqus/CAE currently uses
@@ -249,17 +249,17 @@ class GraphicsOptions:
     graphicsDriver: SymbolicConstant = None
 
     # A Boolean specifying whether double buffering is used. The default value is ON.Double
-    # buffering controls where Abaqus/CAE draws its graphics. When **doubleBuffering**=OFF,
+    # buffering controls where Abaqus/CAE draws its graphics. When **doubleBuffering** = OFF,
     # everything is drawn directly to the screen and on many systems you can see the progress
     # of the drawing operations. Most users find this distracting, especially in dynamic
-    # situations such as view manipulation or animation of results. When **doubleBuffering**=ON,
+    # situations such as view manipulation or animation of results. When **doubleBuffering** = ON,
     # the drawing occurs in a separate graphics buffer that is displayed when all the drawing
     # operations are complete. This results in a much smoother display during view changes or
     # animation. It is recommended that you set double buffering to ON.
     doubleBuffering: Boolean = ON
 
     # A Boolean specifying whether a display list will be used to accelerate graphics
-    # performance. The default value is ON.When **displayLists**=ON, drawing operations are
+    # performance. The default value is ON.When **displayLists** = ON, drawing operations are
     # recorded in a list that can be quickly replayed. This results in faster drawing on most
     # systems but requires extra memory to record the drawing operations. In the Visualization
     # module, display lists are only used during view manipulations and then their use is
@@ -269,8 +269,8 @@ class GraphicsOptions:
     # A SymbolicConstant specifying which rendering is used during dynamic rotations of the
     # view. Possible values are:FAST, specifying a rendering mode where the image is rendered
     # in wireframe.AS_IS, specifying a rendering mode where the image is rendered as is.The
-    # default value is AS_IS.When set to **dragMode**=FAST, a wireframe outline is drawn during
-    # view changes by rotation, pan, or zoom. When **dragMode**=AS_IS, everything displayed in
+    # default value is AS_IS.When set to **dragMode** = FAST, a wireframe outline is drawn during
+    # view changes by rotation, pan, or zoom. When **dragMode** = AS_IS, everything displayed in
     # the window will be drawn during view changes; however, the display may lag behind the
     # mouse movement when the model is complex especially if you are using an older or slower
     # system. For newer systems with graphics hardware acceleration the AS_IS setting can be
@@ -313,8 +313,8 @@ class GraphicsOptions:
     printPolygonOffsetSlope: float = None
 
     # A Boolean specifying how the three-dimensional vertices of the model are processed. When
-    # **vertexArrays**=OFF, each vertex of the model is processed separately. When
-    # **vertexArrays**=ON, the vertices are processed in large blocks resulting in faster
+    # **vertexArrays** = OFF, each vertex of the model is processed separately. When
+    # **vertexArrays** = ON, the vertices are processed in large blocks resulting in faster
     # display. Not all graphics adapters support this capability correctly. An indicator that
     # the graphics adapters is not processing three-dimensional vertices correctly is the
     # absence of graphics during rubber banding operations. For example, when dynamically
@@ -335,20 +335,20 @@ class GraphicsOptions:
     # graphics performance during the view manipulation. If set high with a large model, the
     # delay can be many seconds. In excessive cases, graphics memory can be exceeded and the
     # result may be an empty display list (no visible model) for the view manipulation. This
-    # setting is treated as 0 if **displayLists**=OFF. Possible values are 0 ≤≤
+    # setting is treated as 0 if **displayLists** = OFF. Possible values are 0 ≤≤
     # **viewManipDisplayListThreshold** ≤≤ 20000. The default value is 40.
     viewManipDisplayListThreshold: int = 40
 
     # A Boolean specifying how Abaqus renders X11 graphics operations. When
-    # **directRendering**=OFF, the graphics are rendered through the X Server. When
-    # **directRendering**=ON, the graphics operations are sent directly to the graphics adapter
+    # **directRendering** = OFF, the graphics are rendered through the X Server. When
+    # **directRendering** = ON, the graphics operations are sent directly to the graphics adapter
     # producing faster displays. For maximum performance, the initial value is ON. This
     # argument is used only when you first start Abaqus/CAE; you cannot configure
     # **directRendering** during a session.
     directRendering: Boolean = OFF
 
     # A Boolean specifying whether a hardware accelerated OpenGL graphics driver will be used
-    # on Windows platforms. The default value is ON.When **hardwareAcceleration**=OFF, the
+    # on Windows platforms. The default value is ON.When **hardwareAcceleration** = OFF, the
     # graphics driver uses a software implementation of OpenGL that is included with the
     # operating system. This results in slower drawing on most systems; however, you may have
     # to use the software implementation of OpenGL if the hardware graphics driver is
@@ -360,7 +360,7 @@ class GraphicsOptions:
 
     # A Boolean specifying whether hardware overlay planes will be used if available. The
     # default value is the same value as the **hardwareOverlayAvailable** member.When
-    # **hardwareOverlayAvailable**=OFF, it will not be possible to set **hardwareOverlay** to ON
+    # **hardwareOverlayAvailable** = OFF, it will not be possible to set **hardwareOverlay** to ON
     # and the HARDWARE_OVERLAY highlight method will not be available. If viewports display a
     # solid color and will not display the model, it will be necessary to inhibit hardware
     # overlay completely by setting the ABAQUS_EMULATE_OVERLAYS environment variable (to any
@@ -384,8 +384,8 @@ class GraphicsOptions:
 
     # A SymbolicConstant specifying the background style to be used for all viewport windows.
     # Possible values are SOLID and GRADIENT. The default value is SOLID.If
-    # **backgroundStyle**=SOLID, the viewport background will appear as a solid color as
-    # specified by **backgroundColor**. If **backgroundStyle**=GRADIENT, the viewport background
+    # **backgroundStyle** = SOLID, the viewport background will appear as a solid color as
+    # specified by **backgroundColor**. If **backgroundStyle** = GRADIENT, the viewport background
     # will be drawn as a gradient beginning with the **backgroundColor** at the top of the
     # viewport and gradually blending to the **backgroundBottomColor** at the bottom of the
     # viewport.
@@ -507,16 +507,16 @@ class GraphicsOptions:
             graphics adapter hardware acceleration.
         doubleBuffering
             A Boolean specifying whether double buffering is used. The default value is ON.Double
-            buffering controls where Abaqus/CAE draws its graphics. When **doubleBuffering**=OFF,
+            buffering controls where Abaqus/CAE draws its graphics. When **doubleBuffering** = OFF,
             everything is drawn directly to the screen and on many systems you can see the progress
             of the drawing operations. Most users find this distracting, especially in dynamic
-            situations such as view manipulation or animation of results. When **doubleBuffering**=ON,
+            situations such as view manipulation or animation of results. When **doubleBuffering** = ON,
             the drawing occurs in a separate graphics buffer that is displayed when all the drawing
             operations are complete. This results in a much smoother display during view changes or
             animation. It is recommended that you set double buffering to ON.
         displayLists
             A Boolean specifying whether a display list will be used to accelerate graphics
-            performance. The default value is ON.When **displayLists**=ON, drawing operations are
+            performance. The default value is ON.When **displayLists** = ON, drawing operations are
             recorded in a list that can be quickly replayed. This results in faster drawing on most
             systems but requires extra memory to record the drawing operations. In the Visualization
             module, display lists are only used during view manipulations and then their use is
@@ -543,8 +543,8 @@ class GraphicsOptions:
             A SymbolicConstant specifying which rendering is used during dynamic rotations of the
             view. Possible values are:FAST, specifying a rendering mode where the image is rendered
             in wireframe.AS_IS, specifying a rendering mode where the image is rendered as is.The
-            default value is AS_IS.When set to **dragMode**=FAST, a wireframe outline is drawn during
-            view changes by rotation, pan, or zoom. When **dragMode**=AS_IS, everything displayed in
+            default value is AS_IS.When set to **dragMode** = FAST, a wireframe outline is drawn during
+            view changes by rotation, pan, or zoom. When **dragMode** = AS_IS, everything displayed in
             the window will be drawn during view changes; however, the display may lag behind the
             mouse movement when the model is complex especially if you are using an older or slower
             system. For newer systems with graphics hardware acceleration the AS_IS setting can be
@@ -580,8 +580,8 @@ class GraphicsOptions:
             offset values for each driver.
         vertexArrays
             A Boolean specifying how the three-dimensional vertices of the model are processed. When
-            **vertexArrays**=OFF, each vertex of the model is processed separately. When
-            **vertexArrays**=ON, the vertices are processed in large blocks resulting in faster
+            **vertexArrays** = OFF, each vertex of the model is processed separately. When
+            **vertexArrays** = ON, the vertices are processed in large blocks resulting in faster
             display. Not all graphics adapters support this capability correctly. An indicator that
             the graphics adapters is not processing three-dimensional vertices correctly is the
             absence of graphics during rubber banding operations. For example, when dynamically
@@ -600,18 +600,18 @@ class GraphicsOptions:
             graphics performance during the view manipulation. If set high with a large model, the
             delay can be many seconds. In excessive cases, graphics memory can be exceeded and the
             result may be an empty display list (no visible model) for the view manipulation. This
-            setting is treated as 0 if **displayLists**=OFF. Possible values are 0 ≤≤
+            setting is treated as 0 if **displayLists** = OFF. Possible values are 0 ≤≤
             **viewManipDisplayListThreshold** ≤≤ 20000. The default value is 40.
         directRendering
             A Boolean specifying how Abaqus renders X11 graphics operations. When
-            **directRendering**=OFF, the graphics are rendered through the X Server. When
-            **directRendering**=ON, the graphics operations are sent directly to the graphics adapter
+            **directRendering** = OFF, the graphics are rendered through the X Server. When
+            **directRendering** = ON, the graphics operations are sent directly to the graphics adapter
             producing faster displays. For maximum performance, the initial value is ON. This
             argument is used only when you first start Abaqus/CAE; you cannot configure
             **directRendering** during a session.
         hardwareAcceleration
             A Boolean specifying whether a hardware accelerated OpenGL graphics driver will be used
-            on Windows platforms. The default value is ON.When **hardwareAcceleration**=OFF, the
+            on Windows platforms. The default value is ON.When **hardwareAcceleration** = OFF, the
             graphics driver uses a software implementation of OpenGL that is included with the
             operating system. This results in slower drawing on most systems; however, you may have
             to use the software implementation of OpenGL if the hardware graphics driver is
@@ -622,7 +622,7 @@ class GraphicsOptions:
         hardwareOverlay
             A Boolean specifying whether hardware overlay planes will be used if available. The
             default value is the same value as the **hardwareOverlayAvailable** member.When
-            **hardwareOverlayAvailable**=OFF, it will not be possible to set **hardwareOverlay** to ON
+            **hardwareOverlayAvailable** = OFF, it will not be possible to set **hardwareOverlay** to ON
             and the HARDWARE_OVERLAY highlight method will not be available. If viewports display a
             solid color and will not display the model, it will be necessary to inhibit hardware
             overlay completely by setting the ABAQUS_EMULATE_OVERLAYS environment variable (to any
@@ -643,8 +643,8 @@ class GraphicsOptions:
         backgroundStyle
             A SymbolicConstant specifying the background style to be used for all viewport windows.
             Possible values are SOLID and GRADIENT. The default value is SOLID.If
-            **backgroundStyle**=SOLID, the viewport background will appear as a solid color as
-            specified by **backgroundColor**. If **backgroundStyle**=GRADIENT, the viewport background
+            **backgroundStyle** = SOLID, the viewport background will appear as a solid color as
+            specified by **backgroundColor**. If **backgroundStyle** = GRADIENT, the viewport background
             will be drawn as a gradient beginning with the **backgroundColor** at the top of the
             viewport and gradually blending to the **backgroundBottomColor** at the bottom of the
             viewport.
@@ -664,9 +664,9 @@ class GraphicsOptions:
             A Boolean specifying whether facets that are determined to be facing away from the
             viewer will be drawn. The default value is ON. backfaceCulling provides a performance
             enhancement when displaying solid elements where the front side of the element occludes
-            the back side of the element. Set **backfaceCulling**=OFF if it appears that you are
+            the back side of the element. Set **backfaceCulling** = OFF if it appears that you are
             seeing the back side of an element and the front side is missing. You should also set
-            **backfaceCulling**=OFF if you believe the display is not complete.
+            **backfaceCulling** = OFF if you believe the display is not complete.
         accelerateOffScreen
             A Boolean specifying whether the hardware accelerated graphics driver will be used for
             off-screen rendering. The default value is ON if graphics hardware acceleration is

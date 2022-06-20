@@ -59,7 +59,7 @@ class IncidentWave(Interaction):
             A Region object specifying the incident wave source point.
         standoffPoint
             A Region object specifying the incident wave standoff point.This argument is not valid
-            when **definition**=CONWEP.
+            when **definition** = CONWEP.
         surface
             A Region object specifying the surface defining the incident wave interaction. In
             problems involving fluid/surface boundaries, both the fluid surface and the solid
@@ -73,31 +73,31 @@ class IncidentWave(Interaction):
             default value is PRESSURE.
         amplitude
             A String specifying the name of the Amplitude object that defines the fluid pressure
-            time history at the standoff point, if **definition**=PRESSURE. If
-            **definition**=ACCELERATION, then this string specifies the name of the Amplitude object
+            time history at the standoff point, if **definition** = PRESSURE. If
+            **definition** = ACCELERATION, then this string specifies the name of the Amplitude object
             that defines the fluid particle acceleration time history at the standoff point. This
-            member can be specified only if **definition**=PRESSURE or ACCELERATION. The default value
+            member can be specified only if **definition** = PRESSURE or ACCELERATION. The default value
             is an empty string.
         imaginaryAmplitude
             A String specifying the name of the Amplitude object that defines the imaginary
             component of the fluid pressure time history at the standoff point. This member is
-            applicable only for linear perturbation steps and if **definition**=PRESSURE. The default
+            applicable only for linear perturbation steps and if **definition** = PRESSURE. The default
             value is an empty string.
         surfaceNormal
             A sequence of three Floats specifying the X, Y, and Z components of the direction cosine
-            of the fluid surface normal.This argument is valid only when **definition**=UNDEX.
+            of the fluid surface normal.This argument is valid only when **definition** = UNDEX.
         initialDepth
             None or a Float specifying the initial depth of the UNDEX bubble. The default value is
-            None.This argument is valid only when **definition**=UNDEX.
+            None.This argument is valid only when **definition** = UNDEX.
         referenceMagnitude
             A Float specifying the reference magnitude.This argument is not valid when
-            **definition**=CONWEP.
+            **definition** = CONWEP.
         detonationTime
             A Float specifying the time of detonation, given in total time.This argument is valid
-            only when **definition**=CONWEP.
+            only when **definition** = CONWEP.
         magnitudeFactor
             A Float specifying the magnitude scale factor. The default value is 1.0.This argument is
-            valid only when **definition**=CONWEP.
+            valid only when **definition** = CONWEP.
 
         Returns
         -------
@@ -128,30 +128,30 @@ class IncidentWave(Interaction):
             default value is PRESSURE.
         amplitude
             A String specifying the name of the Amplitude object that defines the fluid pressure
-            time history at the standoff point, if **definition**=PRESSURE. If
-            **definition**=ACCELERATION, then this string specifies the name of the Amplitude object
+            time history at the standoff point, if **definition** = PRESSURE. If
+            **definition** = ACCELERATION, then this string specifies the name of the Amplitude object
             that defines the fluid particle acceleration time history at the standoff point. This
-            member can be specified only if **definition**=PRESSURE or ACCELERATION. The default value
+            member can be specified only if **definition** = PRESSURE or ACCELERATION. The default value
             is an empty string.
         imaginaryAmplitude
             A String specifying the name of the Amplitude object that defines the imaginary
             component of the fluid pressure time history at the standoff point. This member is
-            applicable only for linear perturbation steps and if **definition**=PRESSURE. The default
+            applicable only for linear perturbation steps and if **definition** = PRESSURE. The default
             value is an empty string.
         surfaceNormal
             A sequence of three Floats specifying the X, Y, and Z components of the direction cosine
-            of the fluid surface normal.This argument is valid only when **definition**=UNDEX.
+            of the fluid surface normal.This argument is valid only when **definition** = UNDEX.
         initialDepth
             None or a Float specifying the initial depth of the UNDEX bubble. The default value is
-            None.This argument is valid only when **definition**=UNDEX.
+            None.This argument is valid only when **definition** = UNDEX.
         referenceMagnitude
             A Float specifying the reference magnitude.This argument is not valid when
-            **definition**=CONWEP.
+            **definition** = CONWEP.
         detonationTime
             A Float specifying the time of detonation, given in total time.This argument is valid
-            only when **definition**=CONWEP.
+            only when **definition** = CONWEP.
         magnitudeFactor
             A Float specifying the magnitude scale factor. The default value is 1.0.This argument is
-            valid only when **definition**=CONWEP.
+            valid only when **definition** = CONWEP.
         """
         pass

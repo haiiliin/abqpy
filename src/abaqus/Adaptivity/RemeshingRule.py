@@ -80,23 +80,23 @@ class RemeshingRule:
         errorTarget
             A Float specifying the target error percentage for each variable in the region. A value
             of 0.0 indicates that Abaqus will use automated error target reduction for the region.
-            You use the **errorTarget** argument when **sizingMethod**=UNIFORM_ERROR. The default value
+            You use the **errorTarget** argument when **sizingMethod** = UNIFORM_ERROR. The default value
             is 0.0.
         maxSolutionErrorTarget
             A Float specifying the target error percentage at the location of the maximum solution
             value in the region. A value of 0.0 indicates that Abaqus will use automated error
             target reduction for the region. You use the **maxSolutionErrorTarget** argument when
-            **sizingMethod**=MINIMUM_MAXIMUM. The default value is 0.0.
+            **sizingMethod** = MINIMUM_MAXIMUM. The default value is 0.0.
         minSolutionErrorTarget
             A Float specifying the target error percentage at the location of the minimum solution
             value in the region. A value of 0.0 indicates that Abaqus will use automated error
             target reduction for the region. You use the **minSolutionErrorTarget** argument when
-            **sizingMethod**=MINIMUM_MAXIMUM. The default value is 0.0.
+            **sizingMethod** = MINIMUM_MAXIMUM. The default value is 0.0.
         meshBias
             An Int specifying an indication of how much Abaqus will bias the mesh toward the
             location of the maximum solution value in the region. The higher the value, the more the
             mesh will bias towards the location of the maximum solution value. You use the
-            **meshBias** argument when **sizingMethod**=MINIMUM_MAXIMUM. The default value is 0.0.
+            **meshBias** argument when **sizingMethod** = MINIMUM_MAXIMUM. The default value is 0.0.
         minElementSize
             A Float specifying the minimum size of any single element. The default value is 0.0.
         maxElementSize
@@ -181,23 +181,23 @@ class RemeshingRule:
         errorTarget
             A Float specifying the target error percentage for each variable in the region. A value
             of 0.0 indicates that Abaqus will use automated error target reduction for the region.
-            You use the **errorTarget** argument when **sizingMethod**=UNIFORM_ERROR. The default value
+            You use the **errorTarget** argument when **sizingMethod** = UNIFORM_ERROR. The default value
             is 0.0.
         maxSolutionErrorTarget
             A Float specifying the target error percentage at the location of the maximum solution
             value in the region. A value of 0.0 indicates that Abaqus will use automated error
             target reduction for the region. You use the **maxSolutionErrorTarget** argument when
-            **sizingMethod**=MINIMUM_MAXIMUM. The default value is 0.0.
+            **sizingMethod** = MINIMUM_MAXIMUM. The default value is 0.0.
         minSolutionErrorTarget
             A Float specifying the target error percentage at the location of the minimum solution
             value in the region. A value of 0.0 indicates that Abaqus will use automated error
             target reduction for the region. You use the **minSolutionErrorTarget** argument when
-            **sizingMethod**=MINIMUM_MAXIMUM. The default value is 0.0.
+            **sizingMethod** = MINIMUM_MAXIMUM. The default value is 0.0.
         meshBias
             An Int specifying an indication of how much Abaqus will bias the mesh toward the
             location of the maximum solution value in the region. The higher the value, the more the
             mesh will bias towards the location of the maximum solution value. You use the
-            **meshBias** argument when **sizingMethod**=MINIMUM_MAXIMUM. The default value is 0.0.
+            **meshBias** argument when **sizingMethod** = MINIMUM_MAXIMUM. The default value is 0.0.
         minElementSize
             A Float specifying the minimum size of any single element. The default value is 0.0.
         maxElementSize

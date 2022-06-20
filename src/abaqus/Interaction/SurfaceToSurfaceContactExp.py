@@ -77,7 +77,7 @@ class SurfaceToSurfaceContactExp(Interaction):
             are DEFAULT and SPECIFIED. The default value is DEFAULT.
         weightingFactor
             A Float specifying the weighting factor for the contact surfaces when
-            **weightingFactorType**=SPECIFIED. The default value is 0.0.
+            **weightingFactorType** = SPECIFIED. The default value is 0.0.
         contactControls
             A String specifying the name of the ContactControl object associated with this
             interaction. An empty string indicates that the default contact controls will be used.
@@ -147,7 +147,7 @@ class SurfaceToSurfaceContactExp(Interaction):
             are DEFAULT and SPECIFIED. The default value is DEFAULT.
         weightingFactor
             A Float specifying the weighting factor for the contact surfaces when
-            **weightingFactorType**=SPECIFIED. The default value is 0.0.
+            **weightingFactorType** = SPECIFIED. The default value is 0.0.
         contactControls
             A String specifying the name of the ContactControl object associated with this
             interaction. An empty string indicates that the default contact controls will be used.

@@ -154,20 +154,20 @@ class FieldValue:
     precision: SymbolicConstant = None
 
     # An Int specifying the element label of the element containing the location.
-    # **elementLabel** is available only if **position**=INTEGRATION_POINT, CENTROID,
+    # **elementLabel** is available only if **position** = INTEGRATION_POINT, CENTROID,
     # ELEMENT_NODAL, or ELEMENT_FACE.
     elementLabel: int = None
 
     # An Int specifying the node label of the node containing the location. **nodelabel** is
-    # available only if **position**=ELEMENT_NODAL or NODAL.
+    # available only if **position** = ELEMENT_NODAL or NODAL.
     nodeLabel: int = None
 
     # An Int specifying the integration point in the element. **integrationPoint** is available
-    # only if **position**=INTEGRATION_POINT.
+    # only if **position** = INTEGRATION_POINT.
     integrationPoint: int = None
 
     # A SymbolicConstant specifying the face of the element. **face** is available only if
-    # **position**=ELEMENT_FACE.
+    # **position** = ELEMENT_FACE.
     face: SymbolicConstant = None
 
     # A SymbolicConstant specifying the output type. Possible values are SCALAR, VECTOR,
@@ -176,7 +176,7 @@ class FieldValue:
     type: SymbolicConstant = None
 
     # A Float specifying the length or magnitude of the vector. **magnitude** is valid only when
-    # **type**=VECTOR.
+    # **type** = VECTOR.
     magnitude: float = None
 
     # A Float specifying the calculated von Mises stress. The value is valid only when the
@@ -255,22 +255,22 @@ class FieldValue:
     # exception will be thrown.
     localCoordSystemDouble: tuple = ()
 
-    # A tuple of Floats specifying data in the form described by **type**. If **type**=TENSOR or
+    # A tuple of Floats specifying data in the form described by **type**. If **type** = TENSOR or
     # VECTOR, **data** is a sequence containing the components. If the underlying data are in
     # double precision an exception will be thrown.
     data: tuple = ()
 
-    # A tuple of Floats specifying data in the form described by **type**. If **type**=TENSOR or
+    # A tuple of Floats specifying data in the form described by **type**. If **type** = TENSOR or
     # VECTOR, **data** is a sequence containing the components. If the underlying data are in
     # single precision, an exception will be thrown.
     dataDouble: tuple = ()
 
-    # A tuple of Floats specifying data in the form described by **type**. If **type**=TENSOR or
+    # A tuple of Floats specifying data in the form described by **type**. If **type** = TENSOR or
     # VECTOR, **conjugateData** is a sequence containing the components. If the underlying data
     # are in double precision, an exception will be thrown.
     conjugateData: tuple = ()
 
-    # A tuple of Floats specifying data in the form described by **type**. If **type**=TENSOR or
+    # A tuple of Floats specifying data in the form described by **type**. If **type** = TENSOR or
     # VECTOR, **conjugateData** is a sequence containing the components. If the underlying data
     # are in single precision, an exception will be thrown.
     conjugateDataDouble: tuple = ()

@@ -97,7 +97,7 @@ class CompositeShellSection(GeometryShellSection):
             is the value provided in **poisson**.The default value is DEFAULT.
         poisson
             A Float specifying the Poisson's ratio. Possible values are −1.0 ≤≤ **poisson** ≤≤ 0.5.
-            This argument is valid only when **poissonDefinition**=VALUE. The default value is 0.5.
+            This argument is valid only when **poissonDefinition** = VALUE. The default value is 0.5.
         integrationRule
             A SymbolicConstant specifying the shell section integration rule. Possible values are
             SIMPSON and GAUSS. The default value is SIMPSON.
@@ -112,7 +112,7 @@ class CompositeShellSection(GeometryShellSection):
             is NO_IDEALIZATION.
         nTemp
             None or an Int specifying the number of temperature points to be input. This argument is
-            valid only when **temperature**=POINTWISE. The default value is None.
+            valid only when **temperature** = POINTWISE. The default value is None.
         thicknessModulus
             None or a Float specifying the effective thickness modulus. This argument is relevant
             only for continuum shells and must be used in conjunction with the argument **poisson**.
@@ -129,13 +129,13 @@ class CompositeShellSection(GeometryShellSection):
         thicknessField
             A String specifying the name of the AnalyticalField or DiscreteField object used to
             define the thickness of the shell elements. The **thicknessField** argument applies only
-            when **thicknessType**=ANALYTICAL_FIELD or **thicknessType**=DISCRETE_FIELD. The default
+            when **thicknessType** = ANALYTICAL_FIELD or **thicknessType** = DISCRETE_FIELD. The default
             value is an empty string.
         nodalThicknessField
             A String specifying the name of the AnalyticalField or DiscreteField object used to
             define the thickness of the shell elements at each node. The **nodalThicknessField**
-            argument applies only when **thicknessType**=NODAL_ANALYTICAL_FIELD or
-            **thicknessType**=NODAL_DISCRETE_FIELD. The default value is an empty string.
+            argument applies only when **thicknessType** = NODAL_ANALYTICAL_FIELD or
+            **thicknessType** = NODAL_DISCRETE_FIELD. The default value is an empty string.
 
         Returns
         -------
@@ -185,7 +185,7 @@ class CompositeShellSection(GeometryShellSection):
             is the value provided in **poisson**.The default value is DEFAULT.
         poisson
             A Float specifying the Poisson's ratio. Possible values are −1.0 ≤≤ **poisson** ≤≤ 0.5.
-            This argument is valid only when **poissonDefinition**=VALUE. The default value is 0.5.
+            This argument is valid only when **poissonDefinition** = VALUE. The default value is 0.5.
         integrationRule
             A SymbolicConstant specifying the shell section integration rule. Possible values are
             SIMPSON and GAUSS. The default value is SIMPSON.
@@ -200,7 +200,7 @@ class CompositeShellSection(GeometryShellSection):
             is NO_IDEALIZATION.
         nTemp
             None or an Int specifying the number of temperature points to be input. This argument is
-            valid only when **temperature**=POINTWISE. The default value is None.
+            valid only when **temperature** = POINTWISE. The default value is None.
         thicknessModulus
             None or a Float specifying the effective thickness modulus. This argument is relevant
             only for continuum shells and must be used in conjunction with the argument **poisson**.
@@ -217,12 +217,12 @@ class CompositeShellSection(GeometryShellSection):
         thicknessField
             A String specifying the name of the AnalyticalField or DiscreteField object used to
             define the thickness of the shell elements. The **thicknessField** argument applies only
-            when **thicknessType**=ANALYTICAL_FIELD or **thicknessType**=DISCRETE_FIELD. The default
+            when **thicknessType** = ANALYTICAL_FIELD or **thicknessType** = DISCRETE_FIELD. The default
             value is an empty string.
         nodalThicknessField
             A String specifying the name of the AnalyticalField or DiscreteField object used to
             define the thickness of the shell elements at each node. The **nodalThicknessField**
-            argument applies only when **thicknessType**=NODAL_ANALYTICAL_FIELD or
-            **thicknessType**=NODAL_DISCRETE_FIELD. The default value is an empty string.
+            argument applies only when **thicknessType** = NODAL_ANALYTICAL_FIELD or
+            **thicknessType** = NODAL_DISCRETE_FIELD. The default value is an empty string.
         """
         pass

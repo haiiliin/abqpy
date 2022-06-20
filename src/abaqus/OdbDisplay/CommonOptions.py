@@ -162,15 +162,15 @@ class CommonOptions(DGCommonOptions):
     deformationScaling: SymbolicConstant = AUTO
 
     # A Float specifying the uniform deformation scaling constant when
-    # **deformationScaling**=UNIFORM. The default value is **autoDeformationScaleValue**.
+    # **deformationScaling** = UNIFORM. The default value is **autoDeformationScaleValue**.
     uniformScaleFactor: float = None
 
-    # A Float specifying the deformation scale factor value when **deformationScaling**=AUTO.
+    # A Float specifying the deformation scale factor value when **deformationScaling** = AUTO.
     # This value is read-only.
     autoDeformationScaleValue: float = None
 
     # A tuple of three Floats specifying the deformation scaling in each of the three
-    # coordinate directions when **deformationScaling**=NONUNIFORM. The default value is
+    # coordinate directions when **deformationScaling** = NONUNIFORM. The default value is
     # (*autoDeformationScaleValue*, **autoDeformationScaleValue**, **autoDeformationScaleValue**).
     nonuniformScaleFactor: float = None
 
@@ -180,7 +180,7 @@ class CommonOptions(DGCommonOptions):
 
     # A SymbolicConstant specifying which edges to plot. Possible values are ALL, EXTERIOR,
     # FEATURE, FREE, and NONE. The default value is EXTERIOR.NONE can be used only when
-    # **renderStyle**=SHADED.
+    # **renderStyle** = SHADED.
     visibleEdges: SymbolicConstant = EXTERIOR
 
     # A SymbolicConstant specifying the edge line style. Possible values are SOLID, DASHED,
@@ -229,7 +229,7 @@ class CommonOptions(DGCommonOptions):
     # value is OFF.
     elementShrink: Boolean = OFF
 
-    # An Int specifying the percentage to shrink the elements when **elementShrink**=ON.
+    # An Int specifying the percentage to shrink the elements when **elementShrink** = ON.
     # Possible values are 0≤≤ **elementShrinkPercentage** ≤≤ 90. The default value is 5.
     elementShrinkFactor: int = 5
 
@@ -259,19 +259,19 @@ class CommonOptions(DGCommonOptions):
     # A Boolean specifying whether to set translucency. The default value is OFF.
     translucency: Boolean = OFF
 
-    # A Float specifying the translucency factor when **translucency**=ON. Possible values are
+    # A Float specifying the translucency factor when **translucency** = ON. Possible values are
     # 0.0≤≤ **translucencyFactor** ≤≤ 1.0. The default value is 0.3.
     translucencyFactor: float = 0
 
     # A String specifying the color to be used to plot the edges of the model when
-    # **renderStyle**=WIREFRAME or HIDDEN. The default value is "White".
+    # **renderStyle** = WIREFRAME or HIDDEN. The default value is "White".
     edgeColorWireHide: str = ""
 
     # A String specifying the color to be used to plot the edges of the model when
-    # **renderStyle**=FILLED or SHADED. The default value is "Black".
+    # **renderStyle** = FILLED or SHADED. The default value is "Black".
     edgeColorFillShade: str = ""
 
-    # A String specifying the color to be used to fill elements when **renderStyle**=FILLED or
+    # A String specifying the color to be used to fill elements when **renderStyle** = FILLED or
     # SHADED. The default value is "White".
     fillColor: str = ""
 
@@ -312,7 +312,7 @@ class CommonOptions(DGCommonOptions):
     beamTangentColor: str = ""
 
     # A tuple of three Floats specifying the coordinate scaling in each of the three
-    # coordinate directions when **coordinateScale**=ON. The default value is (1, 1, 1).
+    # coordinate directions when **coordinateScale** = ON. The default value is (1, 1, 1).
     coordinateScaleFactors: float = None
 
     def setValues(
@@ -370,23 +370,23 @@ class CommonOptions(DGCommonOptions):
         visibleEdges
             A SymbolicConstant specifying which edges to plot. Possible values are ALL, EXTERIOR,
             FEATURE, FREE, and NONE. The default value is EXTERIOR.NONE can be used only when
-            **renderStyle**=SHADED.
+            **renderStyle** = SHADED.
         deformationScaling
             A SymbolicConstant specifying the deformation scale factor mode. Possible values are
             AUTO, UNIFORM, and NONUNIFORM. The default value is AUTO.
         uniformScaleFactor
             A Float specifying the uniform deformation scaling constant when
-            **deformationScaling**=UNIFORM. The default value is **autoDeformationScaleValue**.
+            **deformationScaling** = UNIFORM. The default value is **autoDeformationScaleValue**.
         nonuniformScaleFactor
             A sequence of three Floats specifying the deformation scaling in each of the three
-            coordinate directions when **deformationScaling**=NONUNIFORM. The default value is
+            coordinate directions when **deformationScaling** = NONUNIFORM. The default value is
             (*autoDeformationScaleValue*, **autoDeformationScaleValue**, **autoDeformationScaleValue**).
         edgeColorWireHide
             A String specifying the color to be used to plot the edges of the model when
-            **renderStyle**=WIREFRAME or HIDDEN. The default value is "White".
+            **renderStyle** = WIREFRAME or HIDDEN. The default value is "White".
         edgeColorFillShade
             A String specifying the color to be used to plot the edges of the model when
-            **renderStyle**=FILLED or SHADED. The default value is "Black".
+            **renderStyle** = FILLED or SHADED. The default value is "Black".
         edgeLineStyle
             A SymbolicConstant specifying the edge line style. Possible values are SOLID, DASHED,
             DOTTED, and DOT_DASH. The default value is SOLID.
@@ -394,7 +394,7 @@ class CommonOptions(DGCommonOptions):
             A SymbolicConstant specifying the edge line thickness. Possible values are VERY_THIN,
             THIN, MEDIUM, and THICK. The default value is VERY_THIN.
         fillColor
-            A String specifying the color to be used to fill elements when **renderStyle**=FILLED or
+            A String specifying the color to be used to fill elements when **renderStyle** = FILLED or
             SHADED. The default value is "White".
         colorCodeOverride
             A Boolean specifying whether to allow color coded items in the output database to
@@ -444,13 +444,13 @@ class CommonOptions(DGCommonOptions):
             A Boolean specifying whether elements are displayed in a shrunk format. The default
             value is OFF.
         elementShrinkFactor
-            An Int specifying the percentage to shrink the elements when **elementShrink**=ON.
+            An Int specifying the percentage to shrink the elements when **elementShrink** = ON.
             Possible values are 0≤≤ **elementShrinkPercentage** ≤≤ 90. The default value is 5.
         coordinateScale
             A Boolean specifying whether to scale coordinates. The default value is OFF.
         coordinateScaleFactors
             A sequence of three Floats specifying the coordinate scaling in each of the three
-            coordinate directions when **coordinateScale**=ON. The default value is (1, 1, 1).
+            coordinate directions when **coordinateScale** = ON. The default value is (1, 1, 1).
         normals
             A Boolean specifying whether to draw arrows that indicate the directions of element and
             surface normals. The default value is OFF.
@@ -481,7 +481,7 @@ class CommonOptions(DGCommonOptions):
         translucency
             A Boolean specifying whether to set translucency. The default value is OFF.
         translucencyFactor
-            A Float specifying the translucency factor when **translucency**=ON. Possible values are
+            A Float specifying the translucency factor when **translucency** = ON. Possible values are
             0.0≤≤ **translucencyFactor** ≤≤ 1.0. The default value is 0.3.
 
         Raises

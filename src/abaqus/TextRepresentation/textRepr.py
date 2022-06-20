@@ -30,7 +30,7 @@ def getIndentedRepr(
         SymbolicConstant UNLIMITED, or None. A value of None implies that the current setting in
         the TextReprOptions object will be used. If **object** is not an Abaqus object,
         **maxRecursionDepth** has no effect. The default value is None.You should take care when
-        setting **maxRecursionDepth**=UNLIMITED because the resulting output can be very large. To
+        setting **maxRecursionDepth** = UNLIMITED because the resulting output can be very large. To
         limit the output, you should set **maxElementsInSequence** to a small number.
     maxElementsInSequence
         An Int specifying the maximum number of elements of a sequence to return or the
@@ -66,7 +66,7 @@ def getPaths(
         SymbolicConstant UNLIMITED, or None. A value of None implies that the current setting in
         the TextReprOptions object will be used. If **object** is not an Abaqus object,
         **maxRecursionDepth** has no effect. The default value is None.You should take care when
-        setting **maxRecursionDepth**=UNLIMITED because the resulting output can be very large. To
+        setting **maxRecursionDepth** = UNLIMITED because the resulting output can be very large. To
         limit the output, you should set **maxElementsInSequence** to a small number.
     maxElementsInSequence
         An Int specifying the maximum number of elements of a sequence to return or the
@@ -101,7 +101,7 @@ def getTypes(
         An Int specifying the maximum depth to which the object will be printed, the
         SymbolicConstant UNLIMITED, or None. A value of None implies that the current setting in
         the TextReprOptions object will be used. The default value is None.You should take care
-        when setting **maxRecursionDepth**=UNLIMITED because the resulting output can be very
+        when setting **maxRecursionDepth** = UNLIMITED because the resulting output can be very
         large. To limit the output, you should set **maxElementsInSequence** to a small number.
     maxElementsInSequence
         An Int specifying the maximum number of elements of a sequence to return or the
@@ -138,7 +138,7 @@ def prettyPrint(
         An Int specifying the maximum depth to which the object will be printed, the
         SymbolicConstant UNLIMITED, or None. A value of None implies that the current setting in
         the TextReprOptions object will be used. The default value is None.You should take care
-        when setting **maxRecursionDepth**=UNLIMITED because the resulting output can be very
+        when setting **maxRecursionDepth** = UNLIMITED because the resulting output can be very
         large. To limit the output, you should set **maxElementsInSequence** to a small number.
     maxElementsInSequence
         An Int specifying the maximum number of elements of a sequence to return or the
@@ -170,7 +170,7 @@ def printPaths(
         An Int specifying the maximum depth to which the object will be printed, the
         SymbolicConstant UNLIMITED, or None. A value of None implies that the current setting in
         the TextReprOptions object will be used. The default value is None.You should take care
-        when setting **maxRecursionDepth**=UNLIMITED because the resulting output can be very
+        when setting **maxRecursionDepth** = UNLIMITED because the resulting output can be very
         large. To limit the output, you should set **maxElementsInSequence** to a small number.
     maxElementsInSequence
         An Int specifying the maximum number of elements of a sequence to return or the
@@ -201,7 +201,7 @@ def printTypes(
         An Int specifying the maximum depth to which the object will be printed, the
         SymbolicConstant UNLIMITED, or None. A value of None implies that the current setting in
         the TextReprOptions object will be used. The default value is None.You should take care
-        when setting **maxRecursionDepth**=UNLIMITED because the resulting output can be very
+        when setting **maxRecursionDepth** = UNLIMITED because the resulting output can be very
         large. To limit the output, you should set **maxElementsInSequence** to a small number.
     maxElementsInSequence
         An Int specifying the maximum number of elements of a sequence to return or the

@@ -565,15 +565,15 @@ class SessionBase:
             'ABQ_' prefix.
         CADPartFile
             A file name specifying the CAD part file for which parameter update is triggered.For
-            **CADName**='CATIA V5' or 'CATIA V6', you can specify either products or parts using this
+            **CADName** = 'CATIA V5' or 'CATIA V6', you can specify either products or parts using this
             argument. If you specify a product, Abaqus updates all of the parts associated with that
-            product.For **CADName**='Pro/ENGINEER', this argument is optional, and you can specify
+            product.For **CADName** = 'Pro/ENGINEER', this argument is optional, and you can specify
             update for parts only. However, a single file can be associated with multiple parts in
             the case of family tables. In this case, Abaqus updates all listed parts.
         CADPartName
             An String specifying the part name to update. This part name should match the part name
             in the originating CAD system.If you specify neither **CADPartFile** nor **CADPartName**
-            during an update in which you specified **CADName**='Pro/ENGINEER', Abaqus updates all of
+            during an update in which you specified **CADName** = 'Pro/ENGINEER', Abaqus updates all of
             the parts in the specified file.
         """
         pass

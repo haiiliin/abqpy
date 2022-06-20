@@ -17,12 +17,12 @@ class Eos:
 
     The table data for this object are:
 
-    - If **type**=IDEALGAS, the table data represents the following:
+    - If **type** = IDEALGAS, the table data represents the following:
     
         - Gas constant, :math:`R`.
         - The ambient pressure, :math:`p_{A}`. If this field is left blank, a default of 0.0 is used.
         
-    - If **type**=JWL, the table data represents the following:
+    - If **type** = JWL, the table data represents the following:
     
         - Detonation wave speed, :math:`C_{d}`.
         - :math:`A`.
@@ -33,13 +33,13 @@ class Eos:
         - Pre-detonation bulk modulus, :math:`K_{p d}`.
         - Detonation energy density, :math:`E_{0}`.
         
-    - If **type**=USUP, the table data represents the following:
+    - If **type** = USUP, the table data represents the following:
     
         - :math:`C_{0}`
         - :math:`\boldsymbol{S}`. (Dimensionless.)
         - :math:`\Gamma_{0}`. (Dimensionless.)
         
-    - If **type**=TABULAR, the table data represents the following:
+    - If **type** = TABULAR, the table data represents the following:
     
         - :math:`F_{1}`
         - :math:`F_{2}`

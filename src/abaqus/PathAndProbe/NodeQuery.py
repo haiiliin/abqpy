@@ -7,7 +7,7 @@ class NodeQuery:
     ----------
     nodeId: int
         An Int specifying the ID of the most recently queried node. If the last query was
-        unsuccessful, **nodeID**=−1.
+        unsuccessful, **nodeID** = −1.
     nodePos: float
         A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the most recently
         queried node.
@@ -23,7 +23,7 @@ class NodeQuery:
     """
 
     # An Int specifying the ID of the most recently queried node. If the last query was
-    # unsuccessful, **nodeID**=−1.
+    # unsuccessful, **nodeID** = −1.
     nodeId: int = None
 
     # A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the most recently

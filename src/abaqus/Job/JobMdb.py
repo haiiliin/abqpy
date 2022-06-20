@@ -71,7 +71,7 @@ class JobMdb(MdbBase):
         type
             A SymbolicConstant specifying the type of job. Possible values are ANALYSIS,
             SYNTAXCHECK, RECOVER, and RESTART. The default value is ANALYSIS.If the object has the
-            type JobFromInputFile, **type**=RESTART is not available.
+            type JobFromInputFile, **type** = RESTART is not available.
         queue
             A String specifying the name of the queue to which to submit the job. The default value
             is an empty string.Note:You can use the **queue** argument when creating a Job object on a
@@ -130,7 +130,7 @@ class JobMdb(MdbBase):
             is DOMAIN.
         numDomains
             An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
-            **parallelizationMethodExplicit**=DOMAIN, **numDomains** must be a multiple of **numCpus**.
+            **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**.
             The default value is 1.
         activateLoadBalancing
             A Boolean specifying whether to activate dyanmic load balancing for jobs running on
@@ -227,7 +227,7 @@ class JobMdb(MdbBase):
         type
             A SymbolicConstant specifying the type of job. Possible values are ANALYSIS,
             SYNTAXCHECK, and RECOVER. The default value is ANALYSIS.For theJobFromInputFile object,
-            **type**=RESTART is not currently supported.
+            **type** = RESTART is not currently supported.
         queue
             A String specifying the name of the queue to which to submit the job. The default value
             is an empty string.Note: You can use the **queue** argument when creating a Job object on
@@ -275,7 +275,7 @@ class JobMdb(MdbBase):
             is DOMAIN.
         numDomains
             An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
-            **parallelizationMethodExplicit**=DOMAIN, **numDomains** must be a multiple of **numCpus**.
+            **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**.
             The default value is 1.
         activateLoadBalancing
             A Boolean specifying whether to activate dyanmic load balancing for jobs running on
@@ -357,8 +357,8 @@ class JobMdb(MdbBase):
         dataSaveFrequency
             An Enum specifying whether Abaqus should save every iteration file in the optimization
             process or a selection of iteration files saved at a user-specified frequency. If you
-            set **dataSaveFrequency**=OPT_DATASAVE_EVERY_CYCLE, Abaqus saves every iteration file; if
-            you set **dataSaveFrequency**=OPT_DATASAVE_SPECIFY_CYCLE, Abaqus saves iteration files
+            set **dataSaveFrequency** = OPT_DATASAVE_EVERY_CYCLE, Abaqus saves every iteration file; if
+            you set **dataSaveFrequency** = OPT_DATASAVE_SPECIFY_CYCLE, Abaqus saves iteration files
             according to the frequency defined by the **saveEvery** parameter. The default value is
             OPT_DATASAVE_SPECIFY_CYCLE.
         saveInitial
@@ -373,7 +373,7 @@ class JobMdb(MdbBase):
         saveEvery
             An Int specifying every nth cycle iterations to be saved when **dataSaveFrequency** is
             OPT_DATASAVE_SPECIFY_CYCLE. Abaqus saves file iterations for every nth iteration after
-            iteration 1; if you set **saveEvery**=3, Abaqus saves file iterations for cycles 1, 4, 7,
+            iteration 1; if you set **saveEvery** = 3, Abaqus saves file iterations for cycles 1, 4, 7,
             and so on. The default value is None.
 
         Returns

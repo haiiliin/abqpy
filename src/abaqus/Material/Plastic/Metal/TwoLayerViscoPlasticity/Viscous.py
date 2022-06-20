@@ -19,7 +19,7 @@ class Viscous:
 
     The table data for this object are:
 
-    - If **law**=STRAIN or **law**=TIME, the table data specify the following:
+    - If **law** = STRAIN or **law** = TIME, the table data specify the following:
     
         - :math:`A`.
         - :math:`n`.
@@ -29,14 +29,14 @@ class Viscous:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **law**=USER, the table data specify the following:
+    - If **law** = USER, the table data specify the following:
     
         - :math:`f`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **law**=ANAND, the table data specify the following:
+    - If **law** = ANAND, the table data specify the following:
     
         - :math:`s_{1}`.
         - :math:`\frac{Q}{R}`.
@@ -54,7 +54,7 @@ class Viscous:
         - :math:`A_{3}`.
         - :math:`A_{4}`.
         - :math:`f`.
-    - If **law**=DARVEAUX, the table data specify the following:
+    - If **law** = DARVEAUX, the table data specify the following:
     
         - :math:`C_{s s}`.
         - :math:`\frac{Q}{R}`.
@@ -63,7 +63,7 @@ class Viscous:
         - :math:`\epsilon_{T}`.
         - :math:`B`.
         - :math:`f`.
-    - If **law**=DOUBLE_POWER, the table data specify the following:
+    - If **law** = DOUBLE_POWER, the table data specify the following:
     
         - :math:`A_{1}`.
         - :math:`B_{1}`.
@@ -73,7 +73,7 @@ class Viscous:
         - :math:`C_{2}`.
         - :math:`\sigma_{0}`.
         - :math:`f`.
-    - If **law**=POWER_LAW or **law**=TIME_POWER_LAW, the table data specify the following:
+    - If **law** = POWER_LAW or **law** = TIME_POWER_LAW, the table data specify the following:
     
         - :math:`q_{0}`.
         - :math:`n`.

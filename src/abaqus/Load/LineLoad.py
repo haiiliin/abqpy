@@ -48,7 +48,7 @@ class LineLoad(Load):
     system: SymbolicConstant = GLOBAL
 
     # A String specifying the name of the AnalyticalField object associated with this load.
-    # The **field** argument applies only when **distributionType**=FIELD. The default value is an
+    # The **field** argument applies only when **distributionType** = FIELD. The default value is an
     # empty string.
     field: str = ""
 
@@ -91,12 +91,12 @@ class LineLoad(Load):
             UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         comp1
             A Float or a Complex specifying the component of the load in the global or the beam
             local 1-direction.Note:Although **comp1**, **comp2**, and **comp3** are optional arguments, at
-            least one of them must be nonzero unless **distributionType**=USER_DEFINED.
+            least one of them must be nonzero unless **distributionType** = USER_DEFINED.
         comp2
             A Float or a Complex specifying the component of the load in the global or the beam
             local 2-direction.
@@ -137,12 +137,12 @@ class LineLoad(Load):
             UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         comp1
             A Float or a Complex specifying the component of the load in the global or the beam
             local 1-direction.Note:Although **comp1**, **comp2**, and **comp3** are optional arguments, at
-            least one of them must be nonzero unless **distributionType**=USER_DEFINED.
+            least one of them must be nonzero unless **distributionType** = USER_DEFINED.
         comp2
             A Float or a Complex specifying the component of the load in the global or the beam
             local 2-direction.

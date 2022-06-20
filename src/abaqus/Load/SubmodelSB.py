@@ -87,7 +87,7 @@ class SubmodelSB(Load):
         globalStep
             A String specifying the step in the global model from which Abaqus reads the values of
             the variables that will drive the submodel analysis. The String indicates the position
-            of the step in the sequence of analysis steps. For example, **globalStep**='1' indicates
+            of the step in the sequence of analysis steps. For example, **globalStep** = '1' indicates
             the first step.
         globalDrivingRegion
             A String specifying the element set in the global model that will be searched for
@@ -102,7 +102,7 @@ class SubmodelSB(Load):
             global model. The default value is 0.05.
         globalIncrement
             An Int specifying the increment number in the global model step from which the solution
-            will be used to specify the values of the driven variables. If **globalIncrement**=0, the
+            will be used to specify the values of the driven variables. If **globalIncrement** = 0, the
             solution from the last increment will be used. The **globalIncrement** argument is
             applicable only for linear perturbation steps. The default value is 0.
 
@@ -138,7 +138,7 @@ class SubmodelSB(Load):
             global model. The default value is 0.05.
         globalIncrement
             An Int specifying the increment number in the global model step from which the solution
-            will be used to specify the values of the driven variables. If **globalIncrement**=0, the
+            will be used to specify the values of the driven variables. If **globalIncrement** = 0, the
             solution from the last increment will be used. The **globalIncrement** argument is
             applicable only for linear perturbation steps. The default value is 0.
         """
@@ -164,13 +164,13 @@ class SubmodelSB(Load):
         globalStep
             A String specifying the step in the global model from which Abaqus reads the values of
             the variables that will drive the submodel analysis. The String indicates the position
-            of the step in the sequence of analysis steps. For example, **globalStep**='1' indicates
-            the first step. The **globalStep** argument is applicable only if **fixed**=OFF.
+            of the step in the sequence of analysis steps. For example, **globalStep** = '1' indicates
+            the first step. The **globalStep** argument is applicable only if **fixed** = OFF.
         globalIncrement
             An Int specifying the increment number in the global model step at which the solution
-            will be used to specify the values of the driven variables. If **globalIncrement**=0, the
+            will be used to specify the values of the driven variables. If **globalIncrement** = 0, the
             solution from the last increment will be used. The **globalIncrement** argument is
-            applicable only for linear perturbation steps and if **fixed**=OFF. The default value is
+            applicable only for linear perturbation steps and if **fixed** = OFF. The default value is
             0.
         """
         pass

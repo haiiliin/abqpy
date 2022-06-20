@@ -44,7 +44,7 @@ class PartModel(ModelBase):
             EULERIAN, DISCRETE_RIGID_SURFACE, and ANALYTIC_RIGID_SURFACE.
         twist
             A Boolean specifying whether to include a twist DEGREE OF FREEDOM in the part (only
-            available when **dimensionality**=AXISYMMETRIC and **type**=DEFORMABLE_BODY). The default
+            available when **dimensionality** = AXISYMMETRIC and **type** = DEFORMABLE_BODY). The default
             value is OFF.
 
         Returns

@@ -48,11 +48,11 @@ class OdbFrame:
     # Possible values are TIME, FREQUENCY, and MODAL.
     domain: SymbolicConstant = None
 
-    # A Float specifying the frequency. This member is valid only if **domain**=FREQUENCY or if
+    # A Float specifying the frequency. This member is valid only if **domain** = FREQUENCY or if
     # the **procedureType** member of the Step object=FREQUENCY. The default value is 0.0.
     frequency: float = 0
 
-    # An Int specifying the eigenmode. This member is valid only if **domain**=MODAL.
+    # An Int specifying the eigenmode. This member is valid only if **domain** = MODAL.
     mode: int = None
 
     # An OdbFrame object specifying the real or imaginary portion of the data corresponding to
@@ -101,7 +101,7 @@ class OdbFrame:
     def __init__(self, mode: int, frequency: float, description: str = ""):
         """This constructor creates an OdbFrame object in the frequency domain and appends it to
         the frame sequence. The arguments to the constructor are valid only when
-        **domain**=FREQUENCY or **domain**=MODAL.
+        **domain** = FREQUENCY or **domain** = MODAL.
 
         Notes
         -----
@@ -114,9 +114,9 @@ class OdbFrame:
         Parameters
         ----------
         mode
-            An Int specifying the eigenmode. This member is valid only if **domain**=MODAL.
+            An Int specifying the eigenmode. This member is valid only if **domain** = MODAL.
         frequency
-            A Float specifying the frequency. This member is valid only if **domain**=FREQUENCY or if
+            A Float specifying the frequency. This member is valid only if **domain** = FREQUENCY or if
             the **procedureType** member of the Step object=FREQUENCY. The default value is 0.0.
         description
             A String specifying the contents of the frame. The default value is an empty string.
@@ -149,7 +149,7 @@ class OdbFrame:
         description
             A String specifying the contents of the frame. The default value is an empty string.
         frequency
-            A Float specifying the frequency. This member is valid only if **domain**=FREQUENCY or if
+            A Float specifying the frequency. This member is valid only if **domain** = FREQUENCY or if
             the **procedureType** member of the Step object=FREQUENCY. The default value is 0.0.
 
         Returns
@@ -194,9 +194,9 @@ class OdbFrame:
             TENSOR_2D_SURFACE.
         componentLabels
             A sequence of Strings specifying the labels for each component of the value. The length
-            of the sequence must match the type. If **type**=TENSOR, the default value is **name** with
-            the suffixes ('11', '22', '33', '12', '13', '23'). If **type**=VECTOR, the default value
-            is **name** with the suffixes ('1', '2', '3'). If **type**=SCALAR, the default value is an
+            of the sequence must match the type. If **type** = TENSOR, the default value is **name** with
+            the suffixes ('11', '22', '33', '12', '13', '23'). If **type** = VECTOR, the default value
+            is **name** with the suffixes ('1', '2', '3'). If **type** = SCALAR, the default value is an
             empty sequence.
         validInvariants
             A sequence of SymbolicConstants specifying which invariants should be calculated for

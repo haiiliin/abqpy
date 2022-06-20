@@ -51,7 +51,7 @@ class ExpContactControl(ContactControl):
             DEFAULT and SPECIFY. The default value is DEFAULT.
         globTrkInc
             An Int specifying the maximum number of increments between global contact searches. The
-            **globTrkInc** argument applies only when **globTrkChoice**=SPECIFY. The default value is
+            **globTrkInc** argument applies only when **globTrkChoice** = SPECIFY. The default value is
             100 for surface-to-surface contact and 4 for self-contact.
         fastLocalTrk
             A Boolean specifying whether to use the more computationally efficient local tracking
@@ -97,7 +97,7 @@ class ExpContactControl(ContactControl):
             DEFAULT and SPECIFY. The default value is DEFAULT.
         globTrkInc
             An Int specifying the maximum number of increments between global contact searches. The
-            **globTrkInc** argument applies only when **globTrkChoice**=SPECIFY. The default value is
+            **globTrkInc** argument applies only when **globTrkChoice** = SPECIFY. The default value is
             100 for surface-to-surface contact and 4 for self-contact.
         fastLocalTrk
             A Boolean specifying whether to use the more computationally efficient local tracking

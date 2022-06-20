@@ -21,7 +21,7 @@ class DruckerPrager:
 
     The table data for this object are:
 
-    - If **shearCriterion**=LINEAR (the only option allowed in an Abaqus/Explicit analysis), the table data specify the following:
+    - If **shearCriterion** = LINEAR (the only option allowed in an Abaqus/Explicit analysis), the table data specify the following:
     
         - Material angle of friction, :math:`\beta`, in the :math:`p-t` plane. Give the value in degrees.
         - :math:`K`, the ratio of the flow stress in triaxial tension to the flow stress in triaxial 
@@ -32,7 +32,7 @@ class DruckerPrager:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **shearCriterion**=HYPERBOLIC, the table data specify the following:
+    - If **shearCriterion** = HYPERBOLIC, the table data specify the following:
     
         - Material angle of friction, :math:`\beta`, at high confining pressure in the :math:`p-q` plane. 
           Give the value in degrees.
@@ -43,7 +43,7 @@ class DruckerPrager:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **shearCriterion**=EXPONENTIAL, the table data specify the following:
+    - If **shearCriterion** = EXPONENTIAL, the table data specify the following:
     
         - Dilation angle, :math:`\psi`, at high confining pressure in the :math:`p-q` plane. Give 
           the value in degrees.
@@ -106,7 +106,7 @@ class DruckerPrager:
             A Boolean specifying whether the material constants for the exponent model are to be
             computed by Abaqus/Standard from triaxial test data at different levels of confining
             pressure. The default value is OFF.This argument is valid only if
-            **shearCriterion**=EXPONENTIAL.
+            **shearCriterion** = EXPONENTIAL.
         temperatureDependency
             A Boolean specifying whether the data depend on temperature. The default value is OFF.
         dependencies

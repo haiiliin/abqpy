@@ -11,11 +11,11 @@ class ProbeOptions:
     Attributes
     ----------
     probeEntity: SymbolicConstant
-        A SymbolicConstant specifying the entity being probed when **probeObject**="ODB". Possible
+        A SymbolicConstant specifying the entity being probed when **probeObject** = "ODB". Possible
         values are NODE and ELEMENT. The default value is ELEMENT.
     probeOutputPosition: SymbolicConstant
         A SymbolicConstant specifying the output position to probe for field output results when
-        **probeObject**="ODB". Possible values are NODAL, INTEGRATION_POINT, ELEMENT_FACE,
+        **probeObject** = "ODB". Possible values are NODAL, INTEGRATION_POINT, ELEMENT_FACE,
         ELEMENT_NODAL, and ELEMENT_CENTROID.When **probeEntity=NODE**, the only possible value is
         NODAL. When **probeEntity=ELEMENT**, the only possible values are INTEGRATION_POINT,
         ELEMENT_FACE, ELEMENT_NODAL, and ELEMENT_CENTROID, and the default is INTEGRATION_POINT.
@@ -88,85 +88,85 @@ class ProbeOptions:
         session.probeOptions
     """
 
-    # A SymbolicConstant specifying the entity being probed when **probeObject**="ODB". Possible
+    # A SymbolicConstant specifying the entity being probed when **probeObject** = "ODB". Possible
     # values are NODE and ELEMENT. The default value is ELEMENT.
     probeEntity: SymbolicConstant = ELEMENT
 
     # A SymbolicConstant specifying the output position to probe for field output results when
-    # **probeObject**="ODB". Possible values are NODAL, INTEGRATION_POINT, ELEMENT_FACE,
-    # ELEMENT_NODAL, and ELEMENT_CENTROID.When **probeEntity**=NODE, the only possible value is
-    # NODAL. When **probeEntity**=ELEMENT, the only possible values are INTEGRATION_POINT,
+    # **probeObject** = "ODB". Possible values are NODAL, INTEGRATION_POINT, ELEMENT_FACE,
+    # ELEMENT_NODAL, and ELEMENT_CENTROID.When **probeEntity** = NODE, the only possible value is
+    # NODAL. When **probeEntity** = ELEMENT, the only possible values are INTEGRATION_POINT,
     # ELEMENT_FACE, ELEMENT_NODAL, and ELEMENT_CENTROID, and the default is INTEGRATION_POINT.
     probeOutputPosition: SymbolicConstant = None
 
     # A Boolean specifying whether to display the part instance information. This member is
-    # valid when **probeObject**=ODB. The default value is ON.
+    # valid when **probeObject** = ODB. The default value is ON.
     partInstance: Boolean = ON
 
     # A Boolean specifying whether to display the element ID information. This member is valid
-    # when **probeObject**=ODB and **probeEntity**=ELEMENT. The default value is ON.
+    # when **probeObject** = ODB and **probeEntity** = ELEMENT. The default value is ON.
     elementID: Boolean = ON
 
     # A Boolean specifying whether to display the element type information. This member is
-    # valid when **probeObject**=ODB and **probeEntity**=ELEMENT. The default value is ON.
+    # valid when **probeObject** = ODB and **probeEntity** = ELEMENT. The default value is ON.
     elementType: Boolean = ON
 
     # A Boolean specifying whether to display the element connectivity. This member is valid
-    # when **probeObject**=ODB and **probeEntity**=ELEMENT. The default value is ON.
+    # when **probeObject** = ODB and **probeEntity** = ELEMENT. The default value is ON.
     elementConnectivity: Boolean = ON
 
     # A Boolean specifying whether to display the element field output results. This member is
-    # valid when **probeObject**=ODB, **probeEntity**=ELEMENT, and **isFieldOutputAvailable**=ON.
+    # valid when **probeObject** = ODB, **probeEntity** = ELEMENT, and **isFieldOutputAvailable** = ON.
     # The default value is ON.
     elementFieldResults: Boolean = ON
 
-    # A Boolean specifying whether to display the node ID when **probeObject**=ODB and
-    # **probeEntity**=NODE. The default value is ON.
+    # A Boolean specifying whether to display the node ID when **probeObject** = ODB and
+    # **probeEntity** = NODE. The default value is ON.
     nodeId: Boolean = ON
 
     # A Boolean specifying whether to display the base coordinates of a node when
-    # **probeObject**=ODB and **probeEntity**=NODE. The default value is ON.
+    # **probeObject** = ODB and **probeEntity** = NODE. The default value is ON.
     baseCoordinates: Boolean = ON
 
     # A Boolean specifying whether to display the deformed coordinates of a node when
-    # **probeObject**=ODB and **probeEntity**=NODE. The default value is ON.
+    # **probeObject** = ODB and **probeEntity** = NODE. The default value is ON.
     deformedCoordinates: Boolean = ON
 
     # A Boolean specifying whether to display the elements attached to a node when
-    # **probeObject**=ODB and **probeEntity**=NODE. The default value is ON.
+    # **probeObject** = ODB and **probeEntity** = NODE. The default value is ON.
     attachedElements: Boolean = ON
 
     # A Boolean specifying whether to display the node field output results. This member is
-    # valid when **probeObject**=ODB, **probeEntity**=NODE, and **isFieldOutputAvailable**=ON. The
+    # valid when **probeObject** = ODB, **probeEntity** = NODE, and **isFieldOutputAvailable** = ON. The
     # default value is ON.
     nodeFieldResults: Boolean = ON
 
     # A Boolean specifying whether to display the legend for a curve being probed. This member
-    # is valid when **probeObject**=XYPlot. The default value is ON.
+    # is valid when **probeObject** = XYPlot. The default value is ON.
     legend: Boolean = ON
 
     # A Boolean specifying whether to display the **x**-coordinate value of the point on the
-    # curve being probed. This member is valid when **probeObject**=XYPlot. The default value is
+    # curve being probed. This member is valid when **probeObject** = XYPlot. The default value is
     # ON.
     xValue: Boolean = ON
 
     # A Boolean specifying whether to display the **y**-coordinate value of the point on the
-    # curve being probed. This member is valid when **probeObject**=XYPlot. The default value is
+    # curve being probed. This member is valid when **probeObject** = XYPlot. The default value is
     # ON.
     yValue: Boolean = ON
 
     # A Boolean specifying whether to display the sequence ID of the point on the curve being
-    # probed. This member is valid when **probeObject**=XYPlot. The default value is ON.
+    # probed. This member is valid when **probeObject** = XYPlot. The default value is ON.
     sequenceID: Boolean = ON
 
     # A Boolean specifying whether to interpolate values within a line segment when
-    # **probeObject**=XYPlot. When **interpolateXy**=OFF, probing returns the nearest **X - Y** data
-    # point on the curve. When **interpolateXy**=ON, probing interpolates data to return a value
+    # **probeObject** = XYPlot. When **interpolateXy** = OFF, probing returns the nearest **X - Y** data
+    # point on the curve. When **interpolateXy** = ON, probing interpolates data to return a value
     # at the nearest point on the curve. The default value is OFF.
     interpolateXy: Boolean = OFF
 
     # A Boolean specifying whether field output is available for probing when
-    # **probeObject**=XYPlot. This member is read-only.
+    # **probeObject** = XYPlot. This member is read-only.
     isFieldOutputAvailable: Boolean = OFF
 
     # A String specifying the type of the displayed object being probed. Possible values are
@@ -203,64 +203,64 @@ class ProbeOptions:
             supplied to setValues, they will override the values in **options**. The default value is
             None.
         probeEntity
-            A SymbolicConstant specifying the entity being probed when **probeObject**="ODB". Possible
+            A SymbolicConstant specifying the entity being probed when **probeObject** = "ODB". Possible
             values are NODE and ELEMENT. The default value is ELEMENT.
         probeOutputPosition
             A SymbolicConstant specifying the output position to probe for field output results when
-            **probeObject**="ODB". Possible values are NODAL, INTEGRATION_POINT, ELEMENT_FACE,
-            ELEMENT_NODAL, and ELEMENT_CENTROID.When **probeEntity**=NODE, the only possible value is
-            NODAL. When **probeEntity**=ELEMENT, the only possible values are INTEGRATION_POINT,
+            **probeObject** = "ODB". Possible values are NODAL, INTEGRATION_POINT, ELEMENT_FACE,
+            ELEMENT_NODAL, and ELEMENT_CENTROID.When **probeEntity** = NODE, the only possible value is
+            NODAL. When **probeEntity** = ELEMENT, the only possible values are INTEGRATION_POINT,
             ELEMENT_FACE, ELEMENT_NODAL, and ELEMENT_CENTROID, and the default is INTEGRATION_POINT.
         partInstance
             A Boolean specifying whether to display the part instance information. This member is
-            valid when **probeObject**=ODB. The default value is ON.
+            valid when **probeObject** = ODB. The default value is ON.
         elementID
             A Boolean specifying whether to display the element ID information. This member is valid
-            when **probeObject**=ODB and **probeEntity**=ELEMENT. The default value is ON.
+            when **probeObject** = ODB and **probeEntity** = ELEMENT. The default value is ON.
         elementType
             A Boolean specifying whether to display the element type information. This member is
-            valid when **probeObject**=ODB and **probeEntity**=ELEMENT. The default value is ON.
+            valid when **probeObject** = ODB and **probeEntity** = ELEMENT. The default value is ON.
         elementConnectivity
             A Boolean specifying whether to display the element connectivity. This member is valid
-            when **probeObject**=ODB and **probeEntity**=ELEMENT. The default value is ON.
+            when **probeObject** = ODB and **probeEntity** = ELEMENT. The default value is ON.
         elementFieldResults
             A Boolean specifying whether to display the element field output results. This member is
-            valid when **probeObject**=ODB, **probeEntity**=ELEMENT, and **isFieldOutputAvailable**=ON.
+            valid when **probeObject** = ODB, **probeEntity** = ELEMENT, and **isFieldOutputAvailable** = ON.
             The default value is ON.
         nodeId
-            A Boolean specifying whether to display the node ID when **probeObject**=ODB and
-            **probeEntity**=NODE. The default value is ON.
+            A Boolean specifying whether to display the node ID when **probeObject** = ODB and
+            **probeEntity** = NODE. The default value is ON.
         baseCoordinates
             A Boolean specifying whether to display the base coordinates of a node when
-            **probeObject**=ODB and **probeEntity**=NODE. The default value is ON.
+            **probeObject** = ODB and **probeEntity** = NODE. The default value is ON.
         deformedCoordinates
             A Boolean specifying whether to display the deformed coordinates of a node when
-            **probeObject**=ODB and **probeEntity**=NODE. The default value is ON.
+            **probeObject** = ODB and **probeEntity** = NODE. The default value is ON.
         attachedElements
             A Boolean specifying whether to display the elements attached to a node when
-            **probeObject**=ODB and **probeEntity**=NODE. The default value is ON.
+            **probeObject** = ODB and **probeEntity** = NODE. The default value is ON.
         nodeFieldResults
             A Boolean specifying whether to display the node field output results. This member is
-            valid when **probeObject**=ODB, **probeEntity**=NODE, and **isFieldOutputAvailable**=ON. The
+            valid when **probeObject** = ODB, **probeEntity** = NODE, and **isFieldOutputAvailable** = ON. The
             default value is ON.
         legend
             A Boolean specifying whether to display the legend for a curve being probed. This member
-            is valid when **probeObject**=XYPlot. The default value is ON.
+            is valid when **probeObject** = XYPlot. The default value is ON.
         xValue
             A Boolean specifying whether to display the **x**-coordinate value of the point on the
-            curve being probed. This member is valid when **probeObject**=XYPlot. The default value is
+            curve being probed. This member is valid when **probeObject** = XYPlot. The default value is
             ON.
         yValue
             A Boolean specifying whether to display the **y**-coordinate value of the point on the
-            curve being probed. This member is valid when **probeObject**=XYPlot. The default value is
+            curve being probed. This member is valid when **probeObject** = XYPlot. The default value is
             ON.
         sequenceID
             A Boolean specifying whether to display the sequence ID of the point on the curve being
-            probed. This member is valid when **probeObject**=XYPlot. The default value is ON.
+            probed. This member is valid when **probeObject** = XYPlot. The default value is ON.
         interpolateXy
             A Boolean specifying whether to interpolate values within a line segment when
-            **probeObject**=XYPlot. When **interpolateXy**=OFF, probing returns the nearest **X - Y** data
-            point on the curve. When **interpolateXy**=ON, probing interpolates data to return a value
+            **probeObject** = XYPlot. When **interpolateXy** = OFF, probing returns the nearest **X - Y** data
+            point on the curve. When **interpolateXy** = ON, probing interpolates data to return a value
             at the nearest point on the curve. The default value is OFF.
         """
         pass

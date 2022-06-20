@@ -70,7 +70,7 @@ class PipePressureState(LoadState):
     magnitudeState: SymbolicConstant = None
 
     # A Float specifying the height of the zero pressure level when the pipe pressure
-    # **distributionType**=HYDROSTATIC.
+    # **distributionType** = HYDROSTATIC.
     hZero: float = None
 
     # A SymbolicConstant specifying the propagation state of **hZero**. Possible values are
@@ -78,7 +78,7 @@ class PipePressureState(LoadState):
     hZeroState: SymbolicConstant = None
 
     # A Float specifying the height of the reference pressure level when the pipe pressure
-    # **distributionType**=HYDROSTATIC.
+    # **distributionType** = HYDROSTATIC.
     hReference: float = None
 
     # A SymbolicConstant specifying the propagation state of **hReference**. Possible values are

@@ -55,7 +55,7 @@ class BiaxialTestData:
             - Nominal stress, TB.
             - Nominal strain, ϵB.
         smoothing
-            None or an Int specifying the value for smoothing. If **smoothing**=None, no smoothing is
+            None or an Int specifying the value for smoothing. If **smoothing** = None, no smoothing is
             employed. The default value is None.
         lateralNominalStrain
             A Boolean specifying whether to include lateral nominal strain. The default value is

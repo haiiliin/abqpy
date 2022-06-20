@@ -151,7 +151,7 @@ class SectionOdb(OdbBase):
             are BEFORE_ANALYSIS and DURING_ANALYSIS.
         profile
             A String specifying the name of the profile. This argument represents the start profile
-            in case of **beamShape**=TAPERED.
+            in case of **beamShape** = TAPERED.
         poissonRatio
             A Float specifying the Poisson's ratio of the section. The default value is 0.0.
         thermalExpansion
@@ -228,7 +228,7 @@ class SectionOdb(OdbBase):
             is (0.0, 0.0).
         profileEnd
             A String specifying the name of the end profile. The type of the end profile must be
-            same as that of the start profile. This argument is valid only when **beamShape**=TAPERED.
+            same as that of the start profile. This argument is valid only when **beamShape** = TAPERED.
             The default value is an empty string. This parameter is available for manipulating the
             model database but not for the ODB API.
 
@@ -306,7 +306,7 @@ class SectionOdb(OdbBase):
             **initialThickness**The default value is SOLVER_DEFAULT.
         initialThickness
             A Float specifying the initial thickness for the section. The **initialThickness**
-            argument applies only when **initialThicknessType**=SPECIFY. The default value is 1.0.
+            argument applies only when **initialThicknessType** = SPECIFY. The default value is 1.0.
         outOfPlaneThickness
             None or a Float specifying the out-of-plane thickness for the section. The default value
             is None.
@@ -386,7 +386,7 @@ class SectionOdb(OdbBase):
             is the value provided in **poisson**.The default value is DEFAULT.
         poisson
             A Float specifying the Poisson's ratio. Possible values are −1.0 ≤≤ **poisson** ≤≤ 0.5.
-            This argument is valid only when **poissonDefinition**=VALUE. The default value is 0.5.
+            This argument is valid only when **poissonDefinition** = VALUE. The default value is 0.5.
         integrationRule
             A SymbolicConstant specifying the shell section integration rule. Possible values are
             SIMPSON and GAUSS. The default value is SIMPSON.
@@ -401,7 +401,7 @@ class SectionOdb(OdbBase):
             is NO_IDEALIZATION.
         nTemp
             None or an Int specifying the number of temperature points to be input. This argument is
-            valid only when **temperature**=POINTWISE. The default value is None.
+            valid only when **temperature** = POINTWISE. The default value is None.
         thicknessModulus
             None or a Float specifying the effective thickness modulus. This argument is relevant
             only for continuum shells and must be used in conjunction with the argument **poisson**.
@@ -418,13 +418,13 @@ class SectionOdb(OdbBase):
         thicknessField
             A String specifying the name of the AnalyticalField or DiscreteField object used to
             define the thickness of the shell elements. The **thicknessField** argument applies only
-            when **thicknessType**=ANALYTICAL_FIELD or **thicknessType**=DISCRETE_FIELD. The default
+            when **thicknessType** = ANALYTICAL_FIELD or **thicknessType** = DISCRETE_FIELD. The default
             value is an empty string.
         nodalThicknessField
             A String specifying the name of the AnalyticalField or DiscreteField object used to
             define the thickness of the shell elements at each node. The **nodalThicknessField**
-            argument applies only when **thicknessType**=NODAL_ANALYTICAL_FIELD or
-            **thicknessType**=NODAL_DISCRETE_FIELD. The default value is an empty string.
+            argument applies only when **thicknessType** = NODAL_ANALYTICAL_FIELD or
+            **thicknessType** = NODAL_DISCRETE_FIELD. The default value is an empty string.
 
         Returns
         -------
@@ -573,15 +573,15 @@ class SectionOdb(OdbBase):
             response for the sixth component of relative motion. The default value is None.
         massPerLength
             None or a Float specifying the mass per unit reference length of belt material. This
-            argument is applicable only when **assembledType**=SLIPRING, and must be specified in that
+            argument is applicable only when **assembledType** = SLIPRING, and must be specified in that
             case. The default value is None.
         contactAngle
             None or a Float specifying the contact angle made by the belt wrapping around node b.
             This argument is applicable only to an Abaqus/Explicit analysis, and only when
-            **assembledType**=SLIPRING. The default value is None.
+            **assembledType** = SLIPRING. The default value is None.
         materialFlowFactor
             A Float specifying the scaling factor for material flow at node b. This argument is
-            applicable only when **assembledType**=RETRACTOR or **rotationalType**=FLOW_CONVERTER. The
+            applicable only when **assembledType** = RETRACTOR or **rotationalType** = FLOW_CONVERTER. The
             default value is 1.0.
         regularize
             A Boolean specifying whether or not all tabular data associated with the
@@ -590,12 +590,12 @@ class SectionOdb(OdbBase):
         defaultTolerance
             A Boolean specifying whether or not the default regularization tolerance will be used
             for all tabular data associated with the **behaviorOptions**. This argument is applicable
-            only for an Abaqus/Explicit analysis and only if **regularize**=ON. The default value is
+            only for an Abaqus/Explicit analysis and only if **regularize** = ON. The default value is
             ON.
         regularization
             A Float specifying the regularization increment to be used for all tabular data
             associated with the **behaviorOptions**. This argument is applicable only for an
-            Abaqus/Explicit analysis and only if **regularize**=ON and **defaultTolerance**=OFF. The
+            Abaqus/Explicit analysis and only if **regularize** = ON and **defaultTolerance** = OFF. The
             default value is 0.03.
         extrapolation
             A SymbolicConstant specifying the extrapolation technique to be used for all tabular
@@ -775,7 +775,7 @@ class SectionOdb(OdbBase):
             is the value provided in **poisson**.The default value is DEFAULT.
         poisson
             A Float specifying the Poisson's ratio. Possible values are −1.0 ≤≤ **poisson** ≤≤ 0.5.
-            This argument is valid only when **poissonDefinition**=VALUE. The default value is 0.5.
+            This argument is valid only when **poissonDefinition** = VALUE. The default value is 0.5.
         useDensity
             A Boolean specifying whether or not to use the value of **density**. The default value is
             OFF.
@@ -851,12 +851,12 @@ class SectionOdb(OdbBase):
             A String specifying the name of the section material.
         thickness
             A Float specifying the thickness of the section. The **thickness** argument applies only
-            when **thicknessType**=UNIFORM. The default value is 0.0.
+            when **thicknessType** = UNIFORM. The default value is 0.0.
         numIntPts
             An Int specifying the number of integration points to be used through the section.
             Possible values are **numIntPts** >> 0. The default value is 5.To use the default settings
-            of the analysis products, set **numIntPts** to 5 if **integrationRule**=SIMPSON or set
-            **numIntPts** to 7 if **integrationRule**=GAUSS.
+            of the analysis products, set **numIntPts** to 5 if **integrationRule** = SIMPSON or set
+            **numIntPts** to 7 if **integrationRule** = GAUSS.
         thicknessType
             A SymbolicConstant specifying the distribution used for defining the thickness of the
             elements. Possible values are UNIFORM, ANALYTICAL_FIELD, DISCRETE_FIELD,
@@ -873,7 +873,7 @@ class SectionOdb(OdbBase):
             is the value provided in **poisson**.The default value is DEFAULT.
         poisson
             A Float specifying the Poisson's ratio. Possible values are −1.0 ≤≤ **poisson** ≤≤ 0.5.
-            This argument is valid only when **poissonDefinition**=VALUE. The default value is 0.5.
+            This argument is valid only when **poissonDefinition** = VALUE. The default value is 0.5.
         integrationRule
             A SymbolicConstant specifying the shell section integration rule. Possible values are
             SIMPSON and GAUSS. The default value is SIMPSON.
@@ -888,7 +888,7 @@ class SectionOdb(OdbBase):
             is NO_IDEALIZATION.
         nTemp
             None or an Int specifying the number of temperature points to be input. This argument is
-            valid only when **temperature**=POINTWISE. The default value is None.
+            valid only when **temperature** = POINTWISE. The default value is None.
         thicknessModulus
             None or a Float specifying the effective thickness modulus. This argument is relevant
             only for continuum shells and must be used in conjunction with the argument **poisson**.
@@ -902,13 +902,13 @@ class SectionOdb(OdbBase):
         thicknessField
             A String specifying the name of the AnalyticalField or DiscreteField object used to
             define the thickness of the shell elements. The **thicknessField** argument applies only
-            when **thicknessType**=ANALYTICAL_FIELD or **thicknessType**=DISCRETE_FIELD. The default
+            when **thicknessType** = ANALYTICAL_FIELD or **thicknessType** = DISCRETE_FIELD. The default
             value is an empty string.
         nodalThicknessField
             A String specifying the name of the AnalyticalField or DiscreteField object used to
             define the thickness of the shell elements at each node. The **nodalThicknessField**
-            argument applies only when **thicknessType**=NODAL_ANALYTICAL_FIELD or
-            **thicknessType**=NODAL_DISCRETE_FIELD. The default value is an empty string.
+            argument applies only when **thicknessType** = NODAL_ANALYTICAL_FIELD or
+            **thicknessType** = NODAL_DISCRETE_FIELD. The default value is an empty string.
 
         Returns
         -------
@@ -1015,12 +1015,12 @@ class SectionOdb(OdbBase):
             is the value provided in **poisson**.The default value is DEFAULT.
         poisson
             A Float specifying the section Poisson's ratio. Possible values are −1.0 ≤≤ **poisson** ≤≤
-            0.5. This argument is valid only when **poissonDefinition**=VALUE. The default value is
+            0.5. This argument is valid only when **poissonDefinition** = VALUE. The default value is
             0.5.
         thicknessField
             A String specifying the name of the AnalyticalField or DiscreteField object used to
             define the thickness of the shell elements. The **thicknessField** argument applies only
-            when **thicknessType**=ANALYTICAL_FIELD or **thicknessType**=DISCRETE_FIELD. The default
+            when **thicknessType** = ANALYTICAL_FIELD or **thicknessType** = DISCRETE_FIELD. The default
             value is an empty string.
 
         Returns
@@ -1070,11 +1070,11 @@ class SectionOdb(OdbBase):
         userMode
             A SymbolicConstant specifying the mode of the MPC when it is user-defined. Possible
             values are DOF_MODE and NODE_MODE. The default value is DOF_MODE.The **userMode** argument
-            applies only when **mpcType**=USER_DEFINED.
+            applies only when **mpcType** = USER_DEFINED.
         userType
             An Int specifying to differentiate between different constraint types in a user-defined
             MPCSection. The default value is 0.The **userType** argument applies only when
-            **mpcType**=USER_DEFINED.
+            **mpcType** = USER_DEFINED.
 
         Returns
         -------

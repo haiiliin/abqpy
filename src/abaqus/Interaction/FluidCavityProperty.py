@@ -66,30 +66,30 @@ class FluidCavityProperty(ContactProperty):
             values are HYDRAULIC and PNEUMATIC. The default value is HYDRAULIC.
         fluidDensity
             None or a Float specifying the reference fluid density. This argument is applicable only
-            when **definition**=HYDRAULIC, and is required in that case. The default value is None.
+            when **definition** = HYDRAULIC, and is required in that case. The default value is None.
         molecularWeight
             None or a Float specifying the molecular weight of the ideal gas species. This argument
-            is applicable only when **definition**=PNEUMATIC, and is required in that case. The
+            is applicable only when **definition** = PNEUMATIC, and is required in that case. The
             default value is None.
         useExpansion
             A Boolean specifying whether thermal expansion coefficients will be defined. This
-            argument is applicable only when **definition**=HYDRAULIC. The default value is OFF.
+            argument is applicable only when **definition** = HYDRAULIC. The default value is OFF.
         expansionTempDep
             A Boolean specifying whether the thermal fluid expansion data will have temperature
-            dependency. This argument is applicable only when **definition**=HYDRAULIC and when
-            **useExpansion**=True. The default value is OFF.
+            dependency. This argument is applicable only when **definition** = HYDRAULIC and when
+            **useExpansion** = True. The default value is OFF.
         expansionDependencies
             An Int specifying the number of field variable dependencies in the thermal fluid
-            expansion data. This argument is applicable only when **definition**=HYDRAULIC and when
-            **useExpansion**=True. The default value is 0.
+            expansion data. This argument is applicable only when **definition** = HYDRAULIC and when
+            **useExpansion** = True. The default value is 0.
         referenceTemperature
             A Float specifying the reference temperature for the coefficient of thermal expansion.
-            This argument is applicable only when **definition**=HYDRAULIC, when **useExpansion**=True,
-            and when either **expansionTempDep**=True or when **expansionDependencies** is greater than
+            This argument is applicable only when **definition** = HYDRAULIC, when **useExpansion** = True,
+            and when either **expansionTempDep** = True or when **expansionDependencies** is greater than
             0. The default value is 0.0.
         expansionTable
             A sequence of sequences of Floats specifying the thermal expansion coefficients. This
-            argument is applicable only when **definition**=HYDRAULIC and when **useExpansion**=True.
+            argument is applicable only when **definition** = HYDRAULIC and when **useExpansion** = True.
             Each sequence contains the following data:
             
             - The mean coefficient of thermal expansion.
@@ -99,18 +99,18 @@ class FluidCavityProperty(ContactProperty):
             - Etc.
         useBulkModulus
             A Boolean specifying whether fluid bulk modulus values will be defined. This argument is
-            applicable only when **definition**=HYDRAULIC. The default value is OFF.
+            applicable only when **definition** = HYDRAULIC. The default value is OFF.
         bulkModulusTempDep
             A Boolean specifying whether the fluid bulk modulus data will have temperature
-            dependency. This argument is applicable only when **definition**=HYDRAULIC and when
-            **useBulkModulus**=True. The default value is OFF.
+            dependency. This argument is applicable only when **definition** = HYDRAULIC and when
+            **useBulkModulus** = True. The default value is OFF.
         bulkModulusDependencies
             An Int specifying the number of field variable dependencies in the fluid bulk modulus
-            data. This argument is applicable only when **definition**=HYDRAULIC and when
-            **useBulkModulus**=True. The default value is 0.
+            data. This argument is applicable only when **definition** = HYDRAULIC and when
+            **useBulkModulus** = True. The default value is 0.
         bulkModulusTable
             A sequence of sequences of Floats specifying the fluid bulk modulus values. This
-            argument is applicable only when **definition**=HYDRAULIC and when **useBulkModulus**=True.
+            argument is applicable only when **definition** = HYDRAULIC and when **useBulkModulus** = True.
             Each sequence contains the following data:
             
             - The fluid bulk modulus.
@@ -120,22 +120,22 @@ class FluidCavityProperty(ContactProperty):
             - Etc.
         useCapacity
             A Boolean specifying whether molar heat capacity values will be defined. This argument
-            is applicable only when **definition**=PNEUMATIC. The default value is OFF.
+            is applicable only when **definition** = PNEUMATIC. The default value is OFF.
         capacityType
             A SymbolicConstant specifying the method to define the molar heat capacity. Possible
             values are POLYNOMIAL and TABULAR. The default value is POLYNOMIAL.
         capacityTempDep
             A Boolean specifying whether the molar heat capacity data will have temperature
-            dependency. This argument is applicable only when **definition**=PNEUMATIC, when
-            **useCapacity**=True, and when **capacityType**=TABULAR. The default value is OFF.
+            dependency. This argument is applicable only when **definition** = PNEUMATIC, when
+            **useCapacity** = True, and when **capacityType** = TABULAR. The default value is OFF.
         capacityDependencies
             An Int specifying the number of field variable dependencies in the molar heat capacity
-            data. This argument is applicable only when **definition**=PNEUMATIC, when
-            **useCapacity**=True, and when **capacityType**=TABULAR. The default value is 0.
+            data. This argument is applicable only when **definition** = PNEUMATIC, when
+            **useCapacity** = True, and when **capacityType** = TABULAR. The default value is 0.
         capacityTable
             A sequence of sequences of Floats specifying the molar heat capacity values in the form
             of a polynomial expression. This argument is applicable only when
-            **definition**=PNEUMATIC, when **useCapacity**=True, and when **capacityType**=POLYNOMIAL. In
+            **definition** = PNEUMATIC, when **useCapacity** = True, and when **capacityType** = POLYNOMIAL. In
             this form, only one sequence is specified and that sequence contains the following data:
             
             - The first molar heat capacity coefficient.
@@ -145,7 +145,7 @@ class FluidCavityProperty(ContactProperty):
             - The fifth molar heat capacity coefficient.
               Alternatively, the sequence data may specify the molar heat capacity values at constant
             pressure for an ideal gas species. This argument is applicable only when
-            **definition**=PNEUMATIC, when **useCapacity**=True, and when **capacityType**=TABULAR. Each
+            **definition** = PNEUMATIC, when **useCapacity** = True, and when **capacityType** = TABULAR. Each
             sequence contains the following data:
             
             - The molar heat capacity at constant pressure.
@@ -190,30 +190,30 @@ class FluidCavityProperty(ContactProperty):
             values are HYDRAULIC and PNEUMATIC. The default value is HYDRAULIC.
         fluidDensity
             None or a Float specifying the reference fluid density. This argument is applicable only
-            when **definition**=HYDRAULIC, and is required in that case. The default value is None.
+            when **definition** = HYDRAULIC, and is required in that case. The default value is None.
         molecularWeight
             None or a Float specifying the molecular weight of the ideal gas species. This argument
-            is applicable only when **definition**=PNEUMATIC, and is required in that case. The
+            is applicable only when **definition** = PNEUMATIC, and is required in that case. The
             default value is None.
         useExpansion
             A Boolean specifying whether thermal expansion coefficients will be defined. This
-            argument is applicable only when **definition**=HYDRAULIC. The default value is OFF.
+            argument is applicable only when **definition** = HYDRAULIC. The default value is OFF.
         expansionTempDep
             A Boolean specifying whether the thermal fluid expansion data will have temperature
-            dependency. This argument is applicable only when **definition**=HYDRAULIC and when
-            **useExpansion**=True. The default value is OFF.
+            dependency. This argument is applicable only when **definition** = HYDRAULIC and when
+            **useExpansion** = True. The default value is OFF.
         expansionDependencies
             An Int specifying the number of field variable dependencies in the thermal fluid
-            expansion data. This argument is applicable only when **definition**=HYDRAULIC and when
-            **useExpansion**=True. The default value is 0.
+            expansion data. This argument is applicable only when **definition** = HYDRAULIC and when
+            **useExpansion** = True. The default value is 0.
         referenceTemperature
             A Float specifying the reference temperature for the coefficient of thermal expansion.
-            This argument is applicable only when **definition**=HYDRAULIC, when **useExpansion**=True,
-            and when either **expansionTempDep**=True or when **expansionDependencies** is greater than
+            This argument is applicable only when **definition** = HYDRAULIC, when **useExpansion** = True,
+            and when either **expansionTempDep** = True or when **expansionDependencies** is greater than
             0. The default value is 0.0.
         expansionTable
             A sequence of sequences of Floats specifying the thermal expansion coefficients. This
-            argument is applicable only when **definition**=HYDRAULIC and when **useExpansion**=True.
+            argument is applicable only when **definition** = HYDRAULIC and when **useExpansion** = True.
             Each sequence contains the following data:
             
             - The mean coefficient of thermal expansion.
@@ -223,18 +223,18 @@ class FluidCavityProperty(ContactProperty):
             - Etc.
         useBulkModulus
             A Boolean specifying whether fluid bulk modulus values will be defined. This argument is
-            applicable only when **definition**=HYDRAULIC. The default value is OFF.
+            applicable only when **definition** = HYDRAULIC. The default value is OFF.
         bulkModulusTempDep
             A Boolean specifying whether the fluid bulk modulus data will have temperature
-            dependency. This argument is applicable only when **definition**=HYDRAULIC and when
-            **useBulkModulus**=True. The default value is OFF.
+            dependency. This argument is applicable only when **definition** = HYDRAULIC and when
+            **useBulkModulus** = True. The default value is OFF.
         bulkModulusDependencies
             An Int specifying the number of field variable dependencies in the fluid bulk modulus
-            data. This argument is applicable only when **definition**=HYDRAULIC and when
-            **useBulkModulus**=True. The default value is 0.
+            data. This argument is applicable only when **definition** = HYDRAULIC and when
+            **useBulkModulus** = True. The default value is 0.
         bulkModulusTable
             A sequence of sequences of Floats specifying the fluid bulk modulus values. This
-            argument is applicable only when **definition**=HYDRAULIC and when **useBulkModulus**=True.
+            argument is applicable only when **definition** = HYDRAULIC and when **useBulkModulus** = True.
             Each sequence contains the following data:
             
             - The fluid bulk modulus.
@@ -244,22 +244,22 @@ class FluidCavityProperty(ContactProperty):
             - Etc.
         useCapacity
             A Boolean specifying whether molar heat capacity values will be defined. This argument
-            is applicable only when **definition**=PNEUMATIC. The default value is OFF.
+            is applicable only when **definition** = PNEUMATIC. The default value is OFF.
         capacityType
             A SymbolicConstant specifying the method to define the molar heat capacity. Possible
             values are POLYNOMIAL and TABULAR. The default value is POLYNOMIAL.
         capacityTempDep
             A Boolean specifying whether the molar heat capacity data will have temperature
-            dependency. This argument is applicable only when **definition**=PNEUMATIC, when
-            **useCapacity**=True, and when **capacityType**=TABULAR. The default value is OFF.
+            dependency. This argument is applicable only when **definition** = PNEUMATIC, when
+            **useCapacity** = True, and when **capacityType** = TABULAR. The default value is OFF.
         capacityDependencies
             An Int specifying the number of field variable dependencies in the molar heat capacity
-            data. This argument is applicable only when **definition**=PNEUMATIC, when
-            **useCapacity**=True, and when **capacityType**=TABULAR. The default value is 0.
+            data. This argument is applicable only when **definition** = PNEUMATIC, when
+            **useCapacity** = True, and when **capacityType** = TABULAR. The default value is 0.
         capacityTable
             A sequence of sequences of Floats specifying the molar heat capacity values in the form
             of a polynomial expression. This argument is applicable only when
-            **definition**=PNEUMATIC, when **useCapacity**=True, and when **capacityType**=POLYNOMIAL. In
+            **definition** = PNEUMATIC, when **useCapacity** = True, and when **capacityType** = POLYNOMIAL. In
             this form, only one sequence is specified and that sequence contains the following data:
             
             - The first molar heat capacity coefficient.
@@ -270,7 +270,7 @@ class FluidCavityProperty(ContactProperty):
             
               Alternatively, the sequence data may specify the molar heat capacity values at constant
               pressure for an ideal gas species. This argument is applicable only when
-              **definition**=PNEUMATIC, when **useCapacity**=True, and when **capacityType**=TABULAR. Each
+              **definition** = PNEUMATIC, when **useCapacity** = True, and when **capacityType** = TABULAR. Each
               sequence contains the following data:
               
             - The molar heat capacity at constant pressure.

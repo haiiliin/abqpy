@@ -18,7 +18,7 @@ class ConcreteTensionStiffening:
 
     The table data for this object are:
 
-    - If **type**=STRAIN, the table data specify the following:
+    - If **type** = STRAIN, the table data specify the following:
     
         - Remaining direct stress after cracking, :math:`\sigma_{t}`.
         - Direct cracking strain, :math:`\epsilon_{t}^{c k}`.
@@ -27,7 +27,7 @@ class ConcreteTensionStiffening:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **type**=DISPLACEMENT, the table data specify the following:
+    - If **type** = DISPLACEMENT, the table data specify the following:
     
         - Remaining direct stress after cracking, :math:`\sigma_{t}`.
         - Direct cracking displacement, :math:`u_{t}^{c k}`.
@@ -36,7 +36,7 @@ class ConcreteTensionStiffening:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **type**=GFI, the table data specify the following:
+    - If **type** = GFI, the table data specify the following:
     
         - Failure stress, :math:`\sigma_{t 0}`
         - Fracture energy, :math:`G_{f}`.

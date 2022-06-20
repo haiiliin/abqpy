@@ -166,12 +166,12 @@ class ExplicitDynamicsStep(AnalysisStep):
     timeIncrementationMethod: SymbolicConstant = AUTOMATIC_GLOBAL
 
     # None or a Float specifying the maximum time increment. If there is no upper limit,
-    # **maxIncrement**=None. This argument is required only when
-    # **timeIncrementationMethod**=AUTOMATIC_GLOBAL or AUTOMATIC_EBE. The default value is None.
+    # **maxIncrement** = None. This argument is required only when
+    # **timeIncrementationMethod** = AUTOMATIC_GLOBAL or AUTOMATIC_EBE. The default value is None.
     maxIncrement: float = None
 
     # A Float specifying the factor that is used to scale the time increment. This argument is
-    # required only when **timeIncrementationMethod**=AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
+    # required only when **timeIncrementationMethod** = AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
     # FIXED_EBE. The default value is 1.0.
     scaleFactor: float = 1
 
@@ -183,7 +183,7 @@ class ExplicitDynamicsStep(AnalysisStep):
     quadBulkViscosity: float = 1
 
     # None or a Float specifying the user-defined time increment. This argument is required
-    # only when **timeIncrementationMethod**=FIXED_USER_DEFINED_INC. The default value is None.
+    # only when **timeIncrementationMethod** = FIXED_USER_DEFINED_INC. The default value is None.
     userDefinedInc: float = None
 
     # A String specifying the name of the previous step. The new step appears after this step
@@ -341,11 +341,11 @@ class ExplicitDynamicsStep(AnalysisStep):
             value is AUTOMATIC_GLOBAL.
         maxIncrement
             None or a Float specifying the maximum time increment. If there is no upper limit,
-            **maxIncrement**=None. This argument is required only when
-            **timeIncrementationMethod**=AUTOMATIC_GLOBAL or AUTOMATIC_EBE. The default value is None.
+            **maxIncrement** = None. This argument is required only when
+            **timeIncrementationMethod** = AUTOMATIC_GLOBAL or AUTOMATIC_EBE. The default value is None.
         scaleFactor
             A Float specifying the factor that is used to scale the time increment. This argument is
-            required only when **timeIncrementationMethod**=AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
+            required only when **timeIncrementationMethod** = AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
             FIXED_EBE. The default value is 1.0.
         massScaling
             A MassScalingArray object specifying mass scaling controls. The default value is
@@ -357,7 +357,7 @@ class ExplicitDynamicsStep(AnalysisStep):
             1.2.
         userDefinedInc
             None or a Float specifying the user-defined time increment. This argument is required
-            only when **timeIncrementationMethod**=FIXED_USER_DEFINED_INC. The default value is None.
+            only when **timeIncrementationMethod** = FIXED_USER_DEFINED_INC. The default value is None.
         maintainAttributes
             A Boolean specifying whether to retain attributes from an existing step with the same
             name. The default value is False.
@@ -407,11 +407,11 @@ class ExplicitDynamicsStep(AnalysisStep):
             value is AUTOMATIC_GLOBAL.
         maxIncrement
             None or a Float specifying the maximum time increment. If there is no upper limit,
-            **maxIncrement**=None. This argument is required only when
-            **timeIncrementationMethod**=AUTOMATIC_GLOBAL or AUTOMATIC_EBE. The default value is None.
+            **maxIncrement** = None. This argument is required only when
+            **timeIncrementationMethod** = AUTOMATIC_GLOBAL or AUTOMATIC_EBE. The default value is None.
         scaleFactor
             A Float specifying the factor that is used to scale the time increment. This argument is
-            required only when **timeIncrementationMethod**=AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
+            required only when **timeIncrementationMethod** = AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
             FIXED_EBE. The default value is 1.0.
         massScaling
             A MassScalingArray object specifying mass scaling controls. The default value is
@@ -423,7 +423,7 @@ class ExplicitDynamicsStep(AnalysisStep):
             1.2.
         userDefinedInc
             None or a Float specifying the user-defined time increment. This argument is required
-            only when **timeIncrementationMethod**=FIXED_USER_DEFINED_INC. The default value is None.
+            only when **timeIncrementationMethod** = FIXED_USER_DEFINED_INC. The default value is None.
 
         Raises
         ------

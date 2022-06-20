@@ -187,7 +187,7 @@ class OdbMeshRegionData:
     # membranes based on feature edges. The default value is ON.
     includeFeatureBoundaries: Boolean = ON
 
-    # A Float specifying the feature angle to be used when **includeFeatureBoundaries**=ON. The
+    # A Float specifying the feature angle to be used when **includeFeatureBoundaries** = ON. The
     # default value is 20.0.
     featureAngle: float = 20
 
@@ -342,7 +342,7 @@ class OdbMeshRegionData:
             ​	A Boolean specifying whether to include additional averaging boundaries for shells and
             membranes based on feature edges. The default value is ON.
         featureAngle
-            ​	A Float specifying the feature angle to be used when **includeFeatureBoundaries**=ON.
+            ​	A Float specifying the feature angle to be used when **includeFeatureBoundaries** = ON.
             The default value is 20.0.
         averageOnlyDisplayed
             ​	A Boolean specifying whether to average only values on displayed elements. The default

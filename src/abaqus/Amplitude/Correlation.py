@@ -42,7 +42,7 @@ class Correlation(Amplitude):
     approach: SymbolicConstant = CORRELATED
 
     # A tuple of tuples of Floats specifying the real and imaginary part of the scaling
-    # factor. If **approach**=MOVING_NOISE, then **data** represents the noise velocity components
+    # factor. If **approach** = MOVING_NOISE, then **data** represents the noise velocity components
     # 1, 2, and 3.
     data: float = None
 

@@ -38,7 +38,7 @@ class PredefinedField:
     # A Region object specifying the region to which the predefined field is applied. **Region**
     # is ignored if the predefined field has an **instances** member available. **Region** is also
     # ignored if the predefined field has a **distributionType** member available, and
-    # **distributionType**=FROM_FILE or FROM_FILE_AND_USER_DEFINED.
+    # **distributionType** = FROM_FILE or FROM_FILE_AND_USER_DEFINED.
     region: Region = Region()
 
     # An IMAField for MaterialAssignment predefined field。

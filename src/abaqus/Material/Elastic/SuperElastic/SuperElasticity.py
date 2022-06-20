@@ -65,7 +65,7 @@ class SuperElasticity:
             A sequence of sequences of Floats specifying the items described below.
         nonassociated
             None or a Float specifying the volumetric transformation strain. If
-            **nonassociated**=None, the value of the volumetric transformation strain is equal to the
+            **nonassociated** = None, the value of the volumetric transformation strain is equal to the
             uniaxial transformation strain. The default value is None.
 
         Returns

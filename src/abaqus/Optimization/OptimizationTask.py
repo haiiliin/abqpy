@@ -72,7 +72,7 @@ class OptimizationTask(OptimizationTaskBase):
         identifier
             A String specifying the name of the variable identifier.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
         drivingRegion
@@ -225,7 +225,7 @@ class OptimizationTask(OptimizationTaskBase):
         region
             A Region object specifying the region to which the geometric restriction is applied.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
         u1
@@ -340,7 +340,7 @@ class OptimizationTask(OptimizationTaskBase):
             A SymbolicConstant specifying the axis of symmetry. Possible values are AXIS_1, AXIS_2,
             and AXIS_3. The default value is AXIS_1.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
 
@@ -374,7 +374,7 @@ class OptimizationTask(OptimizationTaskBase):
             A Region object specifying the region to which the geometric restriction is applied.
         csys
             None or a DatumCsys object specifying the position of the symmetry point defined as the
-            origin of a local coordinate system. If **csys**=None, the global coordinate system is
+            origin of a local coordinate system. If **csys** = None, the global coordinate system is
             used. When this member is queried, it returns an Int. The default value is None.
 
         Returns
@@ -416,7 +416,7 @@ class OptimizationTask(OptimizationTaskBase):
             A SymbolicConstant specifying the axis of symmetry. Possible values are AXIS_1, AXIS_2,
             and AXIS_3. The default value is AXIS_1.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
 
@@ -463,7 +463,7 @@ class OptimizationTask(OptimizationTaskBase):
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
         mainPoint
@@ -549,7 +549,7 @@ class OptimizationTask(OptimizationTaskBase):
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
         drawAngle
@@ -624,7 +624,7 @@ class OptimizationTask(OptimizationTaskBase):
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
         presumeFeasibleRegionAtStart
@@ -805,7 +805,7 @@ class OptimizationTask(OptimizationTaskBase):
             demold region and the collision check region. The default value is DEMOLD_REGION.
         csys
             None or a DatumCsys object specifying the local coordinate system of the
-            **pullDirection**. If **csys**=None, the global coordinate system is used. When this member
+            **pullDirection**. If **csys** = None, the global coordinate system is used. When this member
             is queried, it returns an Int indicating the identifier of the DatumCsys. The default
             value is None.
         drawAngle
@@ -938,7 +938,7 @@ class OptimizationTask(OptimizationTaskBase):
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
         mainPointDetermination
@@ -1005,7 +1005,7 @@ class OptimizationTask(OptimizationTaskBase):
             the default value is MODEL.
         csys
             None or a DatumCsys object specifying the symmetry point represented as the origin of a
-            local coordinate system. If **csys**=None, the global coordinate system is used. When this
+            local coordinate system. If **csys** = None, the global coordinate system is used. When this
             member is queried, it returns an Int. The default value is None.
         mainPointDetermination
             A SymbolicConstant specifying the rule for determining the main node. Possible values
@@ -1080,7 +1080,7 @@ class OptimizationTask(OptimizationTaskBase):
             A Float specifying the segment size of the repeating pattern in degrees. If the **angle**
             value is 0, no repeating pattern is created. The default value is 0.0.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
         mainPoint
@@ -1187,7 +1187,7 @@ class OptimizationTask(OptimizationTaskBase):
             at the **csys** origin. Possible values are AXIS_1, AXIS_2, and AXIS_3. The default value
             is AXIS_1.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
         ignoreFrozenArea
@@ -1290,7 +1290,7 @@ class OptimizationTask(OptimizationTaskBase):
             A SymbolicConstant specifying the axis of symmetry. Possible values are AXIS_1, AXIS_2,
             and AXIS_3. The default value is AXIS_1.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
         ignoreFrozenArea
@@ -1330,7 +1330,7 @@ class OptimizationTask(OptimizationTaskBase):
             A Region object specifying the region to which the geometric restriction is applied.
         csys
             None or a DatumCsys object specifying the position of the symmetry point defined as the
-            origin of a local coordinate system. If **csys**=None, the global coordinate system is
+            origin of a local coordinate system. If **csys** = None, the global coordinate system is
             used. When this member is queried, it returns an Int. The default value is None.
         ignoreFrozenArea
             A Boolean specifying whether to ignore frozen areas. The default value is OFF.
@@ -1375,7 +1375,7 @@ class OptimizationTask(OptimizationTaskBase):
             A SymbolicConstant specifying the axis of symmetry. Possible values are AXIS_1, AXIS_2,
             and AXIS_3. The default value is AXIS_1.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
         ignoreFrozenArea
@@ -1434,7 +1434,7 @@ class OptimizationTask(OptimizationTaskBase):
             restriction should conserve a turnable surface. Possible values are FREE_FORM and TURN.
             The default value is FREE_FORM.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. This
             is used when **approach** is TURN. The default value is None.
         freeFormRegion
@@ -1512,7 +1512,7 @@ class OptimizationTask(OptimizationTaskBase):
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
         drawAngle
@@ -1592,7 +1592,7 @@ class OptimizationTask(OptimizationTaskBase):
             at the **csys** origin. Possible values are AXIS_1, AXIS_2, and AXIS_3. The default value
             is AXIS_1.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
         ignoreFrozenArea
@@ -1640,7 +1640,7 @@ class OptimizationTask(OptimizationTaskBase):
             the default value is MODEL.
         csys
             None or a DatumCsys object specifying the local coordinate system of the
-            **pullDirection**. If **csys**=None, the global coordinate system is used. When this member
+            **pullDirection**. If **csys** = None, the global coordinate system is used. When this member
             is queried, it returns an Int indicating the identifier of the DatumCsys. The default
             value is None.
         draftAngle
@@ -1752,7 +1752,7 @@ class OptimizationTask(OptimizationTaskBase):
             A Region object specifying the region to which the geometric restriction is applied.
         csys
             None or a DatumCsys object specifying the local coordinate system of the
-            **millingDirections**. If **csys**=None, the global coordinate system is used. When this
+            **millingDirections**. If **csys** = None, the global coordinate system is used. When this
             member is queried, it returns an Int indicating the identifier of the DatumCsys. The
             default value is None.
         millingCheckRegion
@@ -1805,7 +1805,7 @@ class OptimizationTask(OptimizationTaskBase):
             A SymbolicConstant specifying the axis of symmetry. Possible values are AXIS_1, AXIS_2,
             and AXIS_3. The default value is AXIS_1.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
         ignoreFrozenArea
@@ -1849,7 +1849,7 @@ class OptimizationTask(OptimizationTaskBase):
             the default value is MODEL.
         csys
             None or a DatumCsys object specifying the position of the symmetry point defined as the
-            origin of a local coordinate system. If **csys**=None, the global coordinate system is
+            origin of a local coordinate system. If **csys** = None, the global coordinate system is
             used. When this member is queried, it returns an Int. The default value is None.
         ignoreFrozenArea
             A Boolean specifying whether to ignore frozen areas. The default value is OFF.
@@ -1896,7 +1896,7 @@ class OptimizationTask(OptimizationTaskBase):
             A SymbolicConstant specifying the axis of symmetry. Possible values are AXIS_1, AXIS_2,
             and AXIS_3. The default value is AXIS_1.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
         ignoreFrozenArea
@@ -1949,7 +1949,7 @@ class OptimizationTask(OptimizationTaskBase):
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
         mainPoint

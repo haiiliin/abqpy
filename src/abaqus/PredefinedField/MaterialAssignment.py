@@ -62,13 +62,13 @@ class MaterialAssignment(PredefinedField):
             discrete fields. The default value is OFF.
         assignmentList
             A sequence of tuples specifying the uniform volume fractions to be assigned. This
-            argument is valid only when **useFields**=FALSE. Each tuple contains two entries:A Region
+            argument is valid only when **useFields** = FALSE. Each tuple contains two entries:A Region
             object.A tuple of Floats specifying the uniform volume fraction values. The length of
             the tuple must match the number of material instance names specified in the Eulerain
             section assigned to part instances specified by **instanceList**.
         fieldList
             A sequence of tuples specifying the discrete volume fractions to be assigned. This
-            argument is valid only when **useFields**=TRUE. Each tuple contains two entries:A Region
+            argument is valid only when **useFields** = TRUE. Each tuple contains two entries:A Region
             object.A tuple of Strings specifying Discrete Field names. The length of the tuple must
             match the number of material instance names specified in the Eulerain section assigned
             to part instances specified by **instanceList**.
@@ -100,13 +100,13 @@ class MaterialAssignment(PredefinedField):
             discrete fields. The default value is OFF.
         assignmentList
             A sequence of tuples specifying the uniform volume fractions to be assigned. This
-            argument is valid only when **useFields**=FALSE. Each tuple contains two entries:A Region
+            argument is valid only when **useFields** = FALSE. Each tuple contains two entries:A Region
             object.A tuple of Floats specifying the uniform volume fraction values. The length of
             the tuple must match the number of material instance names specified in the Eulerain
             section assigned to part instances specified by **instanceList**.
         fieldList
             A sequence of tuples specifying the discrete volume fractions to be assigned. This
-            argument is valid only when **useFields**=TRUE. Each tuple contains two entries:A Region
+            argument is valid only when **useFields** = TRUE. Each tuple contains two entries:A Region
             object.A tuple of Strings specifying Discrete Field names. The length of the tuple must
             match the number of material instance names specified in the Eulerain section assigned
             to part instances specified by **instanceList**.

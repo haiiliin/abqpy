@@ -51,14 +51,14 @@ class Temperature(PredefinedField):
 
     # A String specifying the name of the AnalyticalField or DiscreteField object associated
     # with this predefined field. The **field** argument applies only when
-    # **distributionType**=FIELD or **distributionType**=DISCRETE_FIELD. The default value is an
+    # **distributionType** = FIELD or **distributionType** = DISCRETE_FIELD. The default value is an
     # empty string.
     field: str = ""
 
     # A Region object specifying the region to which the predefined field is applied. **Region**
     # is ignored if the predefined field has an **instances** member available. **Region** is also
     # ignored if the predefined field has a **distributionType** member available, and
-    # **distributionType**=FROM_FILE or FROM_FILE_AND_USER_DEFINED.
+    # **distributionType** = FROM_FILE or FROM_FILE_AND_USER_DEFINED.
     region: Region = Region()
 
     def __init__(
@@ -99,7 +99,7 @@ class Temperature(PredefinedField):
         region
             A Region object specifying the region to which the predefined field is applied. **Region**
             is ignored if the predefined field has a **distributionType** member available, and
-            **distributionType**=FROM_FILE .
+            **distributionType** = FROM_FILE .
         distributionType
             A SymbolicConstant specifying how the predefined field varies spatially. Possible values
             are UNIFORM, USER_DEFINED, FROM_FILE, FIELD, FROM_FILE_AND_USER_DEFINED, and
@@ -117,7 +117,7 @@ class Temperature(PredefinedField):
         field
             A String specifying the name of the AnalyticalField or DiscreteField object associated
             with this predefined field. The **field** argument applies only when
-            **distributionType**=FIELD or **distributionType**=DISCRETE_FIELD. The default value is an
+            **distributionType** = FIELD or **distributionType** = DISCRETE_FIELD. The default value is an
             empty string.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -126,45 +126,45 @@ class Temperature(PredefinedField):
             step.
         fileName
             A String specifying the name of the file from which the temperature values are to be
-            read when **distributionType**=FROM_FILE or **distributionType**=FROM_FILE_AND_USER_DEFINED.
+            read when **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED.
         beginStep
             An Int specifying the first step from which temperature values are to be read or the
             SymbolicConstant FIRST_STEP or LAST_STEP. This argument is valid only when
-            **distributionType**=FROM_FILE or **distributionType**=FROM_FILE_AND_USER_DEFINED. The
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
             default value is None.
         beginIncrement
             An Int specifying the first increment of the step set in **beginStep** or the
             SymbolicConstants STEP_START or STEP_END. This argument is valid only when
-            **distributionType**=FROM_FILE or **distributionType**=FROM_FILE_AND_USER_DEFINED. The
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
             default value is None.
         endStep
             An Int specifying the last step from which temperature values are to be read or the
             SymbolicConstants FIRST_STEP and LAST_STEP. This argument is valid only when
-            **distributionType**=FROM_FILE or **distributionType**=FROM_FILE_AND_USER_DEFINED. The
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
             default value is None.
         endIncrement
             An Int specifying the last increment of the step set in **endStep** or the
             SymbolicConstants STEP_START and STEP_END. This argument is valid only when
-            **distributionType**=FROM_FILE or **distributionType**=FROM_FILE_AND_USER_DEFINED. The
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
             default value is None.
         interpolate
             A SymbolicConstant specifying whether to interpolate a field read from an output
             database or results file. Possible values are OFF, ON or MIDSIDE_ONLY. The default value
             is OFF.
         magnitudes
-            A Sequence of Doubles specifying the temperature values when **distributionType**=UNIFORM
+            A Sequence of Doubles specifying the temperature values when **distributionType** = UNIFORM
             or FIELD. The value of the **magnitudes** argument is a function of the
             **crossSectionDistribution** argument, as shown in the following list:
             
-            - If **crossSectionDistribution**=CONSTANT_THROUGH_THICKNESS then **magnitudes** is a Double
+            - If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS then **magnitudes** is a Double
               specifying the temperature.
-            - If **crossSectionDistribution**=GRADIENTS_THROUGH_SHELL_CS then **magnitudes** is a
+            - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS then **magnitudes** is a
               sequence of Doubles specifying the mean value and the gradient in the thickness
             direction.
-            - If **crossSectionDistribution**=GRADIENTS_THROUGH_BEAM_CS then **magnitudes** is a
+            - If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS then **magnitudes** is a
               sequence of Doubles specifying the mean value, the gradient in the N1 direction, and the
               gradient in the N2 direction.
-            - If **crossSectionDistribution**=POINTS_THROUGH_SECTION then **magnitudes** is a sequence
+            - If **crossSectionDistribution** = POINTS_THROUGH_SECTION then **magnitudes** is a sequence
               of Doubles specifying the temperature at each point.
         absoluteExteriorTolerance
             A Float specifying the absolute value by which a driven node of the field can lie
@@ -236,7 +236,7 @@ class Temperature(PredefinedField):
         field
             A String specifying the name of the AnalyticalField or DiscreteField object associated
             with this predefined field. The **field** argument applies only when
-            **distributionType**=FIELD or **distributionType**=DISCRETE_FIELD. The default value is an
+            **distributionType** = FIELD or **distributionType** = DISCRETE_FIELD. The default value is an
             empty string.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -245,45 +245,45 @@ class Temperature(PredefinedField):
             step.
         fileName
             A String specifying the name of the file from which the temperature values are to be
-            read when **distributionType**=FROM_FILE or **distributionType**=FROM_FILE_AND_USER_DEFINED.
+            read when **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED.
         beginStep
             An Int specifying the first step from which temperature values are to be read or the
             SymbolicConstant FIRST_STEP or LAST_STEP. This argument is valid only when
-            **distributionType**=FROM_FILE or **distributionType**=FROM_FILE_AND_USER_DEFINED. The
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
             default value is None.
         beginIncrement
             An Int specifying the first increment of the step set in **beginStep** or the
             SymbolicConstants STEP_START or STEP_END. This argument is valid only when
-            **distributionType**=FROM_FILE or **distributionType**=FROM_FILE_AND_USER_DEFINED. The
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
             default value is None.
         endStep
             An Int specifying the last step from which temperature values are to be read or the
             SymbolicConstants FIRST_STEP and LAST_STEP. This argument is valid only when
-            **distributionType**=FROM_FILE or **distributionType**=FROM_FILE_AND_USER_DEFINED. The
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
             default value is None.
         endIncrement
             An Int specifying the last increment of the step set in **endStep** or the
             SymbolicConstants STEP_START and STEP_END. This argument is valid only when
-            **distributionType**=FROM_FILE or **distributionType**=FROM_FILE_AND_USER_DEFINED. The
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
             default value is None.
         interpolate
             A SymbolicConstant specifying whether to interpolate a field read from an output
             database or results file. Possible values are OFF, ON or MIDSIDE_ONLY. The default value
             is OFF.
         magnitudes
-            A Sequence of Doubles specifying the temperature values when **distributionType**=UNIFORM
+            A Sequence of Doubles specifying the temperature values when **distributionType** = UNIFORM
             or FIELD. The value of the **magnitudes** argument is a function of the
             **crossSectionDistribution** argument, as shown in the following list:
             
-            - If **crossSectionDistribution**=CONSTANT_THROUGH_THICKNESS then **magnitudes** is a Double
+            - If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS then **magnitudes** is a Double
               specifying the temperature.
-            - If **crossSectionDistribution**=GRADIENTS_THROUGH_SHELL_CS then **magnitudes** is a
+            - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS then **magnitudes** is a
               sequence of Doubles specifying the mean value and the gradient in the thickness
               direction.
-            - If **crossSectionDistribution**=GRADIENTS_THROUGH_BEAM_CS then **magnitudes** is a
+            - If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS then **magnitudes** is a
               sequence of Doubles specifying the mean value, the gradient in the N1 direction, and the
               gradient in the N2 direction.
-            - If **crossSectionDistribution**=POINTS_THROUGH_SECTION then **magnitudes** is a sequence
+            - If **crossSectionDistribution** = POINTS_THROUGH_SECTION then **magnitudes** is a sequence
               of Doubles specifying the temperature at each point.
         absoluteExteriorTolerance
             A Float specifying the absolute value by which a driven node of the field can lie
@@ -321,7 +321,7 @@ class Temperature(PredefinedField):
         field
             A String specifying the name of the AnalyticalField or DiscreteField object associated
             with this predefined field. The **field** argument applies only when
-            **distributionType**=FIELD or **distributionType**=DISCRETE_FIELD. The default value is an
+            **distributionType** = FIELD or **distributionType** = DISCRETE_FIELD. The default value is an
             empty string.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -330,45 +330,45 @@ class Temperature(PredefinedField):
             step.
         fileName
             A String specifying the name of the file from which the temperature values are to be
-            read when **distributionType**=FROM_FILE or **distributionType**=FROM_FILE_AND_USER_DEFINED.
+            read when **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED.
         beginStep
             An Int specifying the first step from which temperature values are to be read or the
             SymbolicConstant FIRST_STEP or LAST_STEP. This argument is valid only when
-            **distributionType**=FROM_FILE or **distributionType**=FROM_FILE_AND_USER_DEFINED. The
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
             default value is None.
         beginIncrement
             An Int specifying the first increment of the step set in **beginStep** or the
             SymbolicConstants STEP_START or STEP_END. This argument is valid only when
-            **distributionType**=FROM_FILE or **distributionType**=FROM_FILE_AND_USER_DEFINED. The
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
             default value is None.
         endStep
             An Int specifying the last step from which temperature values are to be read or the
             SymbolicConstants FIRST_STEP and LAST_STEP. This argument is valid only when
-            **distributionType**=FROM_FILE or **distributionType**=FROM_FILE_AND_USER_DEFINED. The
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
             default value is None.
         endIncrement
             An Int specifying the last increment of the step set in **endStep** or the
             SymbolicConstants STEP_START and STEP_END. This argument is valid only when
-            **distributionType**=FROM_FILE or **distributionType**=FROM_FILE_AND_USER_DEFINED. The
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
             default value is None.
         interpolate
             A SymbolicConstant specifying whether to interpolate a field read from an output
             database or results file. Possible values are OFF, ON or MIDSIDE_ONLY. The default value
             is OFF.
         magnitudes
-            A Sequence of Doubles specifying the temperature values when **distributionType**=UNIFORM
+            A Sequence of Doubles specifying the temperature values when **distributionType** = UNIFORM
             or FIELD. The value of the **magnitudes** argument is a function of the
             **crossSectionDistribution** argument, as shown in the following list:
             
-            - If **crossSectionDistribution**=CONSTANT_THROUGH_THICKNESS then **magnitudes** is a Double
+            - If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS then **magnitudes** is a Double
               specifying the temperature.
-            - If **crossSectionDistribution**=GRADIENTS_THROUGH_SHELL_CS then **magnitudes** is a
+            - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS then **magnitudes** is a
               sequence of Doubles specifying the mean value and the gradient in the thickness
               direction.
-            - If **crossSectionDistribution**=GRADIENTS_THROUGH_BEAM_CS then **magnitudes** is a
+            - If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS then **magnitudes** is a
               sequence of Doubles specifying the mean value, the gradient in the N1 direction, and the
               gradient in the N2 direction.
-            - If **crossSectionDistribution**=POINTS_THROUGH_SECTION then **magnitudes** is a sequence
+            - If **crossSectionDistribution** = POINTS_THROUGH_SECTION then **magnitudes** is a sequence
               of Doubles specifying the temperature at each point.
         absoluteExteriorTolerance
             A Float specifying the absolute value by which a driven node of the field can lie

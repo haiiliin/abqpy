@@ -119,7 +119,7 @@ class Job:
 
     # A SymbolicConstant specifying the type of job. Possible values are ANALYSIS,
     # SYNTAXCHECK, RECOVER, and RESTART. The default value is ANALYSIS.If the object has the
-    # type JobFromInputFile, **type**=RESTART is not available.
+    # type JobFromInputFile, **type** = RESTART is not available.
     type: SymbolicConstant = ANALYSIS
 
     # An Int specifying the number of hours to wait before submitting the job. This argument
@@ -164,7 +164,7 @@ class Job:
     parallelizationMethodExplicit: SymbolicConstant = DOMAIN
 
     # An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
-    # **parallelizationMethodExplicit**=DOMAIN, **numDomains** must be a multiple of **numCpus**.
+    # **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**.
     # The default value is 1.
     numDomains: int = 1
 
@@ -184,7 +184,7 @@ class Job:
 
     # A SymbolicConstant specifying whether the job will be analyzed by Abaqus/Standard or
     # Abaqus/Explicit. Possible values are STANDARD, EXPLICIT, and UNKNOWN.If the object has
-    # the type JobFromInputFile, **analysis**=UNKNOWN.
+    # the type JobFromInputFile, **analysis** = UNKNOWN.
     analysis: SymbolicConstant = None
 
     # A SymbolicConstant specifying the status of the analysis. Possible values are SUBMITTED,

@@ -294,7 +294,7 @@ class PartBase(Feature):
             EULERIAN, DISCRETE_RIGID_SURFACE, and ANALYTIC_RIGID_SURFACE.
         twist
             A Boolean specifying whether to include a twist DEGREE OF FREEDOM in the part (only
-            available when **dimensionality**=AXISYMMETRIC and **type**=DEFORMABLE_BODY). The default
+            available when **dimensionality** = AXISYMMETRIC and **type** = DEFORMABLE_BODY). The default
             value is OFF.
 
         Returns
@@ -546,19 +546,19 @@ class PartBase(Feature):
             tolerance. The default value is 1.0
         twist
             A Boolean specifying whether to include a twist DEGREE OF FREEDOM in the part (only
-            available when **dimensionality**=AXISYMMETRIC and **type**=DEFORMABLE_BODY). The default
+            available when **dimensionality** = AXISYMMETRIC and **type** = DEFORMABLE_BODY). The default
             value is OFF.
         scale
             A Float specifying the scaling factor to apply to the imported geometric entities. The
             default value is 1.0.
         convertToAnalytical
             An Int specifying whether to convert to analytical entities. Possible values are 0 or 1.
-            The default value is 0. If **convertToAnalytical**=1, all the numerical entities, such as
+            The default value is 0. If **convertToAnalytical** = 1, all the numerical entities, such as
             splines, are converted to analytical entities, such as arcs and lines, during the repair
             phase of the command.
         convertToPrecise
             An Int specifying whether to convert to precise geometry. Possible value are 0 or 1. The
-            default value is 0. If **convertToPrecise**=1, the application will attempt to re-evaluate
+            default value is 0. If **convertToPrecise** = 1, the application will attempt to re-evaluate
             the tolerant entities to be more precise.
 
         Returns
@@ -738,7 +738,7 @@ class PartBase(Feature):
             sequence of sequences of node labels specifying the element connectivity.
         twist
             A boolean specifying whether the part is defined with twist. This option has meaning
-            only when **dimensionality**=AXISYMMETRIC. Possible values are ON and OFF. The default
+            only when **dimensionality** = AXISYMMETRIC. Possible values are ON and OFF. The default
             value is OFF.
 
         Returns
@@ -793,15 +793,15 @@ class PartBase(Feature):
         step
             An Int specifying the step number for reading deformed coordinates. 0≤step≤N−10≤step≤N-1
             where NN is the number of available steps. The default value is the last available step.
-            You should specify the **step** argument only when **shape**=DEFORMED.
+            You should specify the **step** argument only when **shape** = DEFORMED.
         frame
             An Int specifying the frame number for reading deformed coordinates.
             0≤frame≤N−10≤frame≤N-1 where NN is the number of available frames. The default value is
             the last available frame. You should specify the **frame** argument only when
-            **shape**=DEFORMED.
+            **shape** = DEFORMED.
         twist
             A Boolean specifying whether to include a twist DEGREE OF FREEDOM in the part (only
-            available when **dimensionality**=AXISYMMETRIC and **type**=DEFORMABLE_BODY). The default
+            available when **dimensionality** = AXISYMMETRIC and **type** = DEFORMABLE_BODY). The default
             value is OFF.
 
         Returns
@@ -948,7 +948,7 @@ class PartBase(Feature):
             the geometry. The default value is 90.
         twist
             A Boolean specifying whether to include a twist DEGREE OF FREEDOM in the part (only
-            available when **dimensionality**=AXISYMMETRIC and **type**=DEFORMABLE_BODY). The default
+            available when **dimensionality** = AXISYMMETRIC and **type** = DEFORMABLE_BODY). The default
             value is OFF.
 
         Returns
@@ -1552,7 +1552,7 @@ class PartBase(Feature):
             projected.
         filter
             A SymbolicConstant specifying how to limit the amount of projection. Possible values are
-            ALL_EDGES and COPLANAR_EDGES. If **filter**=COPLANAR_EDGES, edges that are coplanar to the
+            ALL_EDGES and COPLANAR_EDGES. If **filter** = COPLANAR_EDGES, edges that are coplanar to the
             sketching plane are the only candidates for projection. The default value is ALL_EDGES.
         upToFeature
             A Feature object specifying a marker in the feature-based history of the part.

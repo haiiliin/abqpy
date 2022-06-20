@@ -194,7 +194,7 @@ class HeatTransferStep(AnalysisStep):
     # None or a Float specifying the temperature change rate (temperature per time) used to
     # define steady state. When all nodal temperatures are changing at less than this rate,
     # the solution terminates. The default value is None.Note:This parameter is ignored unless
-    # **response**=STEADY_STATE.
+    # **response** = STEADY_STATE.
     end: float = None
 
     # A Float specifying the maximum temperature change to be allowed in an increment during a
@@ -401,7 +401,7 @@ class HeatTransferStep(AnalysisStep):
             None or a Float specifying the temperature change rate (temperature per time) used to
             define steady state. When all nodal temperatures are changing at less than this rate,
             the solution terminates. The default value is None.Note:This parameter is ignored unless
-            **response**=STEADY_STATE.
+            **response** = STEADY_STATE.
         deltmx
             A Float specifying the maximum temperature change to be allowed in an increment during a
             transient heat transfer analysis. The default value is 0.0.
@@ -496,7 +496,7 @@ class HeatTransferStep(AnalysisStep):
             None or a Float specifying the temperature change rate (temperature per time) used to
             define steady state. When all nodal temperatures are changing at less than this rate,
             the solution terminates. The default value is None.Note:This parameter is ignored unless
-            **response**=STEADY_STATE.
+            **response** = STEADY_STATE.
         deltmx
             A Float specifying the maximum temperature change to be allowed in an increment during a
             transient heat transfer analysis. The default value is 0.0.

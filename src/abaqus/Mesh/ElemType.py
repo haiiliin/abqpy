@@ -93,7 +93,7 @@ class ElemType:
         lengthRatio
             A Float specifying the length ratio for distortion control in crushable materials.
             Possible values are 0.0 ≤≤ **lengthRatio** ≤≤ 1.0. The default value is
-            **lengthRatio**=0.10.1This argument is applicable only when **distortionControl** is ON.
+            **lengthRatio** = 0.10.1This argument is applicable only when **distortionControl** is ON.
         secondOrderAccuracy
             A Boolean specifying the second-order accuracy option. The default value is OFF.This
             argument is applicable only to some Abaqus/Explicit elements.
@@ -102,7 +102,7 @@ class ElemType:
             RELAX_STIFFNESS, STIFFNESS, VISCOUS, ENHANCED, and COMBINED. The default value is
             ENHANCED.This argument is applicable only to some Abaqus/Explicit elements.
         weightFactor
-            A Float specifying a weight factor when **hourglassControl**=COMBINED. The default value
+            A Float specifying a weight factor when **hourglassControl** = COMBINED. The default value
             is 0.5.This argument is applicable only to some Abaqus/Explicit elements.
         displacementHourglass
             A Float specifying the displacement hourglass scaling factor. The default value will be

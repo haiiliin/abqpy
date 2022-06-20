@@ -334,7 +334,7 @@ class BasicOptions:
     # are EXTRA_COARSE, COARSE, MEDIUM, FINE, and EXTRA_FINE. The default value is COARSE.
     curveRefinementLevel: SymbolicConstant = COARSE
 
-    # A Float specifying the feature angle to be used when **visibleEdges**=FEATURE. The default
+    # A Float specifying the feature angle to be used when **visibleEdges** = FEATURE. The default
     # value is 30.0.
     featureAngle: float = 30
 
@@ -381,31 +381,31 @@ class BasicOptions:
     pointElements: Boolean = ON
 
     # A Boolean specifying whether to display reference points. **referencePoints** is valid
-    # only when **pointElements**=ON. The default value is ON.
+    # only when **pointElements** = ON. The default value is ON.
     referencePoints: Boolean = ON
 
     # A Boolean specifying whether to display mass, heat capacity and inertia elements.
-    # **massElements** is valid only when **pointElements**=ON. The default value is OFF.
+    # **massElements** is valid only when **pointElements** = ON. The default value is OFF.
     massElements: Boolean = OFF
 
     # A Boolean specifying whether to display spring and dashpot elements. **springElements** is
-    # valid only when **pointElements**=ON. The default value is OFF.
+    # valid only when **pointElements** = ON. The default value is OFF.
     springElements: Boolean = OFF
 
     # A Boolean specifying whether to display spot weld and distributed coupling elements.
-    # **spotWelds** is valid only when **pointElements**=ON. The default value is OFF.
+    # **spotWelds** is valid only when **pointElements** = ON. The default value is OFF.
     spotWelds: Boolean = OFF
 
     # A Boolean specifying whether to display tracer particles. **tracerParticles** is valid
-    # only when **pointElements**=ON. The default value is OFF.
+    # only when **pointElements** = ON. The default value is OFF.
     tracerParticles: Boolean = OFF
 
     # A Boolean specifying whether to display PC3D elements. **pc3dElements** is valid only when
-    # **pointElements**=ON. The default value is ON.
+    # **pointElements** = ON. The default value is ON.
     pc3dElements: Boolean = ON
 
     # A Boolean specifying whether to display PD3D elements. **pd3dElements** is valid only when
-    # **pointElements**=ON. The default value is ON.
+    # **pointElements** = ON. The default value is ON.
     pd3dElements: Boolean = ON
 
     # A Boolean specifying whether to sweep the analytical surfaces. The default value is ON
@@ -417,26 +417,26 @@ class BasicOptions:
     sweepElem: Boolean = OFF
 
     # A Float specifying the starting angle (in degrees) from which to sweep the analytical
-    # surfaces when **sweepArs**=ON. The default value is 0.0.
+    # surfaces when **sweepArs** = ON. The default value is 0.0.
     sweepStartAngleArs: float = 0
 
     # A Float specifying the starting angle (in degrees) from which to sweep the model when
-    # **sweepElem**=ON. The default value is 0.0.
+    # **sweepElem** = ON. The default value is 0.0.
     sweepStartAngleElem: float = 0
 
     # A Float specifying the angle (in degrees) through which to sweep the analytical surfaces
-    # when **sweepArs**=ON. The default value is 360.0.
+    # when **sweepArs** = ON. The default value is 360.0.
     sweepEndAngleArs: float = 360
 
     # A Float specifying the angle (in degrees) through which to sweep the model when
-    # **sweepElem**=ON. The default value is 180.0.
+    # **sweepElem** = ON. The default value is 180.0.
     sweepEndAngleElem: float = 180
 
-    # An Int specifying the number of segments to display when **sweepArs**=ON. The default
+    # An Int specifying the number of segments to display when **sweepArs** = ON. The default
     # value is 10 or 20, depending on characteristics of your model.
     numSweepSegmentsArs: int = None
 
-    # An Int specifying the number of segments to display when **sweepElem**=ON. The default
+    # An Int specifying the number of segments to display when **sweepElem** = ON. The default
     # value is 10 or 20, depending on characteristics of your model.
     numSweepSegmentsElem: int = None
 
@@ -447,7 +447,7 @@ class BasicOptions:
     numericForm: SymbolicConstant = REAL
 
     # A Float specifying the angle (in degrees) at which to display results that contain
-    # complex numbers when **numericForm**=COMPLEX_MAG_AT_ANGLE. The default value is 0.0.
+    # complex numbers when **numericForm** = COMPLEX_MAG_AT_ANGLE. The default value is 0.0.
     complexAngle: float = 0
 
     # A SymbolicConstant specifying which of the section points to use. Possible values are
@@ -482,12 +482,12 @@ class BasicOptions:
     sectorSelectionType: SymbolicConstant = SELECT_BY_NUMBER
 
     # A Float specifying the angle (in degrees) from which to sweep cyclic symmetry sectors
-    # when **sweepSectors**=ON. Possible values are multiples of the sector angle such that 0 ≤≤
+    # when **sweepSectors** = ON. Possible values are multiples of the sector angle such that 0 ≤≤
     # **sweepSectorStartAngle** ≤≤ 360. The default value is 0.0.
     sweepSectorStartAngle: float = 0
 
     # A Float specifying the angle (in degrees) through which to sweep cyclic symmetry sectors
-    # when **sweepSectors**=ON. Possible values are multiples of the sector angle such that 0 <<
+    # when **sweepSectors** = ON. Possible values are multiples of the sector angle such that 0 <<
     # **sweepSectorEndAngle** ≤≤ 360. The default value is 360.0.
     sweepSectorEndAngle: float = 360
 
@@ -504,11 +504,11 @@ class BasicOptions:
     extrudeElem: Boolean = OFF
 
     # A Float specifying the depth (in model units) by which the analytical surfaces are to be
-    # extruded when **extrudeArs**=ON. The default value is 1.0.
+    # extruded when **extrudeArs** = ON. The default value is 1.0.
     extrudeArsDepth: float = 1
 
     # A Float specifying the depth (in model units) by which the deformable elements are to be
-    # extruded when **extrudeElem**=ON. The default value is 1.0.
+    # extruded when **extrudeElem** = ON. The default value is 1.0.
     extrudeElemDepth: float = 1
 
     # A SymbolicConstant specifying the order of operations to create the mirror pattern.
@@ -576,12 +576,12 @@ class BasicOptions:
 
     # A SymbolicConstant specifying the transformation to apply to the PrimaryVariable.
     # Possible values are DEFAULT, NODAL, USER_SPECIFIED, ANGULAR, and LAYUP_ORIENTATION. The
-    # default value is DEFAULT.If **transformationType**=NODAL, Abaqus will transform nodal
+    # default value is DEFAULT.If **transformationType** = NODAL, Abaqus will transform nodal
     # vector fields into any orientation defined in the analysis with the TRANSFORM option.
-    # Setting **transformationType**=NODAL has no effect on element-based results.If
-    # **transformationType**=USER_SPECIFIED, Abaqus will transform tensor and vector fields into
+    # Setting **transformationType** = NODAL has no effect on element-based results.If
+    # **transformationType** = USER_SPECIFIED, Abaqus will transform tensor and vector fields into
     # the coordinate system specified by **datumCsys**.If
-    # **transformationType**=LAYUP_ORIENTATION, Abaqus will transform tensor and vector fields
+    # **transformationType** = LAYUP_ORIENTATION, Abaqus will transform tensor and vector fields
     # into the layup orientation defined in the composite section. The odb should contain the
     # field SORIENT in order to use this option.
     transformationType: SymbolicConstant = DEFAULT
@@ -654,11 +654,11 @@ class BasicOptions:
     patternCsysName: SymbolicConstant = GLOBAL
 
     # A DatumCsys object specifying the coordinate system to use for results transformation
-    # when **transformationType**=USER_SPECIFIED.
+    # when **transformationType** = USER_SPECIFIED.
     datumCsys: DatumCsys = DatumCsys()
 
     # A tuple of Ints specifying which sectors to display when
-    # **sectorSelectionType**=SELECT_BY_NUMBER. Possible values are 1 ≤≤ **selectedSectorNumbers**
+    # **sectorSelectionType** = SELECT_BY_NUMBER. Possible values are 1 ≤≤ **selectedSectorNumbers**
     # ≤≤ the number of sectors. The default value is (1).
     selectedSectorNumbers: int = None
 
@@ -783,7 +783,7 @@ class BasicOptions:
             A String specifying the color of elements that do not have any results. The default
             value is "White".
         featureAngle
-            A Float specifying the feature angle to be used when **visibleEdges**=FEATURE. The default
+            A Float specifying the feature angle to be used when **visibleEdges** = FEATURE. The default
             value is 30.0.
         otherSymbolSize
             An Int specifying the size of various glyph symbols (boundary conditions, coupling
@@ -817,25 +817,25 @@ class BasicOptions:
             A Boolean specifying whether to display point type elements. The default value is ON.
         referencePoints
             A Boolean specifying whether to display reference points. **referencePoints** is valid
-            only when **pointElements**=ON. The default value is ON.
+            only when **pointElements** = ON. The default value is ON.
         massElements
             A Boolean specifying whether to display mass, heat capacity and inertia elements.
-            **massElements** is valid only when **pointElements**=ON. The default value is OFF.
+            **massElements** is valid only when **pointElements** = ON. The default value is OFF.
         springElements
             A Boolean specifying whether to display spring and dashpot elements. **springElements** is
-            valid only when **pointElements**=ON. The default value is OFF.
+            valid only when **pointElements** = ON. The default value is OFF.
         spotWelds
             A Boolean specifying whether to display spot weld and distributed coupling elements.
-            **spotWelds** is valid only when **pointElements**=ON. The default value is OFF.
+            **spotWelds** is valid only when **pointElements** = ON. The default value is OFF.
         tracerParticles
             A Boolean specifying whether to display tracer particles. **tracerParticles** is valid
-            only when **pointElements**=ON. The default value is OFF.
+            only when **pointElements** = ON. The default value is OFF.
         pc3dElements
             A Boolean specifying whether to display PC3D elements. **pc3dElements** is valid only when
-            **pointElements**=ON. The default value is ON.
+            **pointElements** = ON. The default value is ON.
         pd3dElements
             A Boolean specifying whether to display PD3D elements. **pd3dElements** is valid only when
-            **pointElements**=ON. The default value is ON.
+            **pointElements** = ON. The default value is ON.
         sweepArs
             A Boolean specifying whether to sweep the analytical surfaces. The default value is ON
             or OFF, depending on the characteristics of your model.
@@ -844,21 +844,21 @@ class BasicOptions:
             or OFF, depending on the characteristics of your model.
         sweepStartAngleArs
             A Float specifying the starting angle (in degrees) from which to sweep the analytical
-            surfaces when **sweepArs**=ON. The default value is 0.0.
+            surfaces when **sweepArs** = ON. The default value is 0.0.
         sweepStartAngleElem
             A Float specifying the starting angle (in degrees) from which to sweep the model when
-            **sweepElem**=ON. The default value is 0.0.
+            **sweepElem** = ON. The default value is 0.0.
         sweepEndAngleArs
             A Float specifying the angle (in degrees) through which to sweep the analytical surfaces
-            when **sweepArs**=ON. The default value is 360.0.
+            when **sweepArs** = ON. The default value is 360.0.
         sweepEndAngleElem
             A Float specifying the angle (in degrees) through which to sweep the model when
-            **sweepElem**=ON. The default value is 180.0.
+            **sweepElem** = ON. The default value is 180.0.
         numSweepSegmentsArs
-            An Int specifying the number of segments to display when **sweepArs**=ON. The default
+            An Int specifying the number of segments to display when **sweepArs** = ON. The default
             value is 10 or 20, depending on characteristics of your model.
         numSweepSegmentsElem
-            An Int specifying the number of segments to display when **sweepElem**=ON. The default
+            An Int specifying the number of segments to display when **sweepElem** = ON. The default
             value is 10 or 20, depending on characteristics of your model.
         numericForm
             A SymbolicConstant specifying the numeric form in which to display results that contain
@@ -866,7 +866,7 @@ class BasicOptions:
             and COMPLEX_MAG_AT_ANGLE. The default value is REAL.
         complexAngle
             A Float specifying the angle (in degrees) at which to display results that contain
-            complex numbers when **numericForm**=COMPLEX_MAG_AT_ANGLE. The default value is 0.0.
+            complex numbers when **numericForm** = COMPLEX_MAG_AT_ANGLE. The default value is 0.0.
         sectionResults
             A SymbolicConstant specifying which of the section points to use. Possible values are
             USE_BOTTOM, USE_TOP, USE_BOTTOM_AND_TOP, and USE_ENVELOPE. The default value is
@@ -893,15 +893,15 @@ class BasicOptions:
             SELECT_BY_NUMBER.
         selectedSectorNumbers
             A sequence of Ints specifying which sectors to display when
-            **sectorSelectionType**=SELECT_BY_NUMBER. Possible values are 1 ≤≤ **selectedSectorNumbers**
+            **sectorSelectionType** = SELECT_BY_NUMBER. Possible values are 1 ≤≤ **selectedSectorNumbers**
             ≤≤ the number of sectors. The default value is (1).
         sweepSectorStartAngle
             A Float specifying the angle (in degrees) from which to sweep cyclic symmetry sectors
-            when **sweepSectors**=ON. Possible values are multiples of the sector angle such that 0 ≤≤
+            when **sweepSectors** = ON. Possible values are multiples of the sector angle such that 0 ≤≤
             **sweepSectorStartAngle** ≤≤ 360. The default value is 0.0.
         sweepSectorEndAngle
             A Float specifying the angle (in degrees) through which to sweep cyclic symmetry sectors
-            when **sweepSectors**=ON. Possible values are multiples of the sector angle such that 0 <<
+            when **sweepSectors** = ON. Possible values are multiples of the sector angle such that 0 <<
             **sweepSectorEndAngle** ≤≤ 360. The default value is 360.0.
         extrudeArs
             A Boolean specifying whether to extrude analytical surfaces. The default value is ON or
@@ -914,10 +914,10 @@ class BasicOptions:
             OFF depending on characteristics of your model.
         extrudeArsDepth
             A Float specifying the depth (in model units) by which the analytical surfaces are to be
-            extruded when **extrudeArs**=ON. The default value is 1.0.
+            extruded when **extrudeArs** = ON. The default value is 1.0.
         extrudeElemDepth
             A Float specifying the depth (in model units) by which the deformable elements are to be
-            extruded when **extrudeElem**=ON. The default value is 1.0.
+            extruded when **extrudeElem** = ON. The default value is 1.0.
         mirrorPatternOrder
             A SymbolicConstant specifying the order of operations to create the mirror pattern.
             Possible values are MIRROR_RECT_CIRC, RECT_MIRROR_CIRC, MIRROR_CIRC_RECT,
@@ -973,17 +973,17 @@ class BasicOptions:
         transformationType
             A SymbolicConstant specifying the transformation to apply to the PrimaryVariable.
             Possible values are DEFAULT, NODAL, USER_SPECIFIED, ANGULAR, and LAYUP_ORIENTATION. The
-            default value is DEFAULT.If **transformationType**=NODAL, Abaqus will transform nodal
+            default value is DEFAULT.If **transformationType** = NODAL, Abaqus will transform nodal
             vector fields into any orientation defined in the analysis with the TRANSFORM option.
-            Setting **transformationType**=NODAL has no effect on element-based results.If
-            **transformationType**=USER_SPECIFIED, Abaqus will transform tensor and vector fields into
+            Setting **transformationType** = NODAL has no effect on element-based results.If
+            **transformationType** = USER_SPECIFIED, Abaqus will transform tensor and vector fields into
             the coordinate system specified by **datumCsys**.If
-            **transformationType**=LAYUP_ORIENTATION, Abaqus will transform tensor and vector fields
+            **transformationType** = LAYUP_ORIENTATION, Abaqus will transform tensor and vector fields
             into the layup orientation defined in the composite section. The odb should contain the
             field SORIENT in order to use this option.
         datumCsys
             A DatumCsys object specifying the coordinate system to use for results transformation
-            when **transformationType**=USER_SPECIFIED.
+            when **transformationType** = USER_SPECIFIED.
         rigidTransformPrimary
             A Boolean specifying whether to perform a rigid transformation of nodal vector datasets
             based on the active user specific system The default value is OFF.

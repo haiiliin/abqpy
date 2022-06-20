@@ -17,7 +17,7 @@ class PorousElastic:
 
     The table data for this object are:
 
-    - If **shear**=:math:`G`, the table data specify the following:
+    - If **shear** = :math:`G`, the table data specify the following:
     
         - The logarithmic bulk modulus, :math:`\kappa`. (Dimensionless.)
         - The shear modulus, :math:`G`.
@@ -28,7 +28,7 @@ class PorousElastic:
         - Value of the second field variable.
         - Etc.
         
-    - If **shear**=POISSON, the table data specify the following:
+    - If **shear** = POISSON, the table data specify the following:
     
         - The logarithmic bulk modulus, :math:`\kappa`. (Dimensionless.)
         - The Poisson's ratio, :math:`\nu`.

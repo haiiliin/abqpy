@@ -76,7 +76,7 @@ class SubmodelBC(BoundaryCondition):
     region: Region = Region()
 
     # None or a DatumCsys object specifying the local coordinate system of the boundary
-    # condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+    # condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     # in the global coordinate system. The default value is None.
     localCsys: str = None
 
@@ -120,7 +120,7 @@ class SubmodelBC(BoundaryCondition):
         globalStep
             A String specifying the step in the global model from which Abaqus reads the values of
             the variables that will drive the submodel analysis. The String indicates the position
-            of the step in the sequence of analysis steps. For example, **globalStep**='1' indicates
+            of the step in the sequence of analysis steps. For example, **globalStep** = '1' indicates
             the first step.
         timeScale
             A Boolean specifying whether to scale the time variable for the driven nodes' amplitude
@@ -142,11 +142,11 @@ class SubmodelBC(BoundaryCondition):
             global model. The default value is 0.05.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         globalIncrement
             An Int specifying the increment number in the global model step from which the solution
-            will be used to specify the values of the driven variables. If **globalIncrement**=0, the
+            will be used to specify the values of the driven variables. If **globalIncrement** = 0, the
             solution from the last increment will be used. The **globalIncrement** argument is
             applicable only for linear perturbation steps. The default value is 0.
         centerZoneSize
@@ -187,11 +187,11 @@ class SubmodelBC(BoundaryCondition):
             global model. The default value is 0.05.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the boundary
-            condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+            condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
         globalIncrement
             An Int specifying the increment number in the global model step from which the solution
-            will be used to specify the values of the driven variables. If **globalIncrement**=0, the
+            will be used to specify the values of the driven variables. If **globalIncrement** = 0, the
             solution from the last increment will be used. The **globalIncrement** argument is
             applicable only for linear perturbation steps. The default value is 0.
         centerZoneSize
@@ -221,21 +221,21 @@ class SubmodelBC(BoundaryCondition):
             values at the start of the step. The default value is ON.
         dof
             A sequence of Ints specifying the degrees of freedom to which the boundary condition is
-            applied. The **dof** argument is applicable only if **fixed**=OFF.
+            applied. The **dof** argument is applicable only if **fixed** = OFF.
         globalStep
             A String specifying the step in the global model from which Abaqus reads the values of
             the variables that will drive the submodel analysis. The String indicates the position
-            of the step in the sequence of analysis steps. For example, **globalStep**='1' indicates
-            the first step. The **globalStep** argument is applicable only if **fixed**=OFF.
+            of the step in the sequence of analysis steps. For example, **globalStep** = '1' indicates
+            the first step. The **globalStep** argument is applicable only if **fixed** = OFF.
         globalIncrement
             An Int specifying the increment number in the global model step at which the solution
-            will be used to specify the values of the driven variables. If **globalIncrement**=0, the
+            will be used to specify the values of the driven variables. If **globalIncrement** = 0, the
             solution from the last increment will be used. The **globalIncrement** argument is
-            applicable only for linear perturbation steps and if **fixed**=OFF. The default value is
+            applicable only for linear perturbation steps and if **fixed** = OFF. The default value is
             0.
         centerZoneSize
             A Float specifying the thickness of the center zone size around the shell midsurface.
             The default value is None.The **centerZoneSize** argument is applicable only if
-            **fixed**=OFF.
+            **fixed** = OFF.
         """
         pass

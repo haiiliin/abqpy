@@ -58,7 +58,7 @@ class FilmCondition(Interaction):
         interactionProperty
             A String specifying the name of the FilmConditionProp object associated with this
             interaction. The **interactionProperty** argument applies only when
-            **definition**=PROPERTY_REF. The default value is an empty string.
+            **definition** = PROPERTY_REF. The default value is an empty string.
         sinkTemperature
             A Float specifying the reference sink temperature, θ0θ0. The default value is 0.0.
         sinkAmplitude
@@ -70,7 +70,7 @@ class FilmCondition(Interaction):
             applied throughout the step.
         filmCoeff
             A Float specifying the reference film coefficient value, hh. The **filmCoeff** argument
-            applies when **definition**=EMBEDDED_COEFF, **definition**=USER_SUB, or **definition**=FIELD.
+            applies when **definition** = EMBEDDED_COEFF, **definition** = USER_SUB, or **definition** = FIELD.
             The default value is 0.0.
         filmCoeffAmplitude
             A String specifying the name of the Amplitude object that gives the variation of the
@@ -81,12 +81,12 @@ class FilmCondition(Interaction):
             applied throughout the step.
         field
             A String specifying the name of the AnalyticalField object associated with this
-            interaction. The **field** argument applies only when **definition**=FIELD. The default
+            interaction. The **field** argument applies only when **definition** = FIELD. The default
             value is an empty string.
         sinkFieldName
             A String specifying the name of the AnalyticalField or DiscreteField object associated
             with the sink temperature. The **sinkFieldName** argument applies only when
-            **sinkDistributionType**=ANALYTICAL_FIELD or **sinkDistributionType**=DISCRETE_FIELD. The
+            **sinkDistributionType** = ANALYTICAL_FIELD or **sinkDistributionType** = DISCRETE_FIELD. The
             default value is an empty string.
         sinkDistributionType
             A SymbolicConstant specifying how the sink temperature is distributed. Possible values
@@ -118,7 +118,7 @@ class FilmCondition(Interaction):
         interactionProperty
             A String specifying the name of the FilmConditionProp object associated with this
             interaction. The **interactionProperty** argument applies only when
-            **definition**=PROPERTY_REF. The default value is an empty string.
+            **definition** = PROPERTY_REF. The default value is an empty string.
         sinkTemperature
             A Float specifying the reference sink temperature, θ0θ0. The default value is 0.0.
         sinkAmplitude
@@ -130,7 +130,7 @@ class FilmCondition(Interaction):
             applied throughout the step.
         filmCoeff
             A Float specifying the reference film coefficient value, hh. The **filmCoeff** argument
-            applies when **definition**=EMBEDDED_COEFF, **definition**=USER_SUB, or **definition**=FIELD.
+            applies when **definition** = EMBEDDED_COEFF, **definition** = USER_SUB, or **definition** = FIELD.
             The default value is 0.0.
         filmCoeffAmplitude
             A String specifying the name of the Amplitude object that gives the variation of the
@@ -141,12 +141,12 @@ class FilmCondition(Interaction):
             applied throughout the step.
         field
             A String specifying the name of the AnalyticalField object associated with this
-            interaction. The **field** argument applies only when **definition**=FIELD. The default
+            interaction. The **field** argument applies only when **definition** = FIELD. The default
             value is an empty string.
         sinkFieldName
             A String specifying the name of the AnalyticalField or DiscreteField object associated
             with the sink temperature. The **sinkFieldName** argument applies only when
-            **sinkDistributionType**=ANALYTICAL_FIELD or **sinkDistributionType**=DISCRETE_FIELD. The
+            **sinkDistributionType** = ANALYTICAL_FIELD or **sinkDistributionType** = DISCRETE_FIELD. The
             default value is an empty string.
         sinkDistributionType
             A SymbolicConstant specifying how the sink temperature is distributed. Possible values

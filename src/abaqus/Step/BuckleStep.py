@@ -167,7 +167,7 @@ class BuckleStep(AnalysisStep):
 
     # The SymbolicConstant DEFAULT or an Int specifying the maximum number of Lanczos block
     # steps within each Lanczos run. The default value is DEFAULT.Note:*minEigen*,
-    # **blockSize**, and **maxBlocks** are ignored unless **eigensolver**=LANCZOS.
+    # **blockSize**, and **maxBlocks** are ignored unless **eigensolver** = LANCZOS.
     maxBlocks: SymbolicConstant = DEFAULT
 
     # A SymbolicConstant specifying the type of matrix storage. Possible values are SYMMETRIC,
@@ -332,7 +332,7 @@ class BuckleStep(AnalysisStep):
         maxBlocks
             The SymbolicConstant DEFAULT or an Int specifying the maximum number of Lanczos block
             steps within each Lanczos run. The default value is DEFAULT.Note:*minEigen*,
-            **blockSize**, and **maxBlocks** are ignored unless **eigensolver**=LANCZOS.
+            **blockSize**, and **maxBlocks** are ignored unless **eigensolver** = LANCZOS.
         matrixStorage
             A SymbolicConstant specifying the type of matrix storage. Possible values are SYMMETRIC,
             UNSYMMETRIC, and SOLVER_DEFAULT. The default value is SOLVER_DEFAULT.
@@ -389,7 +389,7 @@ class BuckleStep(AnalysisStep):
         maxBlocks
             The SymbolicConstant DEFAULT or an Int specifying the maximum number of Lanczos block
             steps within each Lanczos run. The default value is DEFAULT.Note:*minEigen*,
-            **blockSize**, and **maxBlocks** are ignored unless **eigensolver**=LANCZOS.
+            **blockSize**, and **maxBlocks** are ignored unless **eigensolver** = LANCZOS.
         matrixStorage
             A SymbolicConstant specifying the type of matrix storage. Possible values are SYMMETRIC,
             UNSYMMETRIC, and SOLVER_DEFAULT. The default value is SOLVER_DEFAULT.

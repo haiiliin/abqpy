@@ -89,7 +89,7 @@ class GeneralStiffnessSection(ShellSection):
             is the value provided in **poisson**.The default value is DEFAULT.
         poisson
             A Float specifying the Poisson's ratio. Possible values are −1.0 ≤≤ **poisson** ≤≤ 0.5.
-            This argument is valid only when **poissonDefinition**=VALUE. The default value is 0.5.
+            This argument is valid only when **poissonDefinition** = VALUE. The default value is 0.5.
         useDensity
             A Boolean specifying whether or not to use the value of **density**. The default value is
             OFF.
@@ -147,7 +147,7 @@ class GeneralStiffnessSection(ShellSection):
             is the value provided in **poisson**.The default value is DEFAULT.
         poisson
             A Float specifying the Poisson's ratio. Possible values are −1.0 ≤≤ **poisson** ≤≤ 0.5.
-            This argument is valid only when **poissonDefinition**=VALUE. The default value is 0.5.
+            This argument is valid only when **poissonDefinition** = VALUE. The default value is 0.5.
         useDensity
             A Boolean specifying whether or not to use the value of **density**. The default value is
             OFF.

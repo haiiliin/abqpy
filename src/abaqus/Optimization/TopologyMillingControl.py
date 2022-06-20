@@ -48,7 +48,7 @@ class TopologyMillingControl(GeometricRestriction):
             A Region object specifying the region to which the geometric restriction is applied.
         csys
             None or a DatumCsys object specifying the local coordinate system of the
-            **millingDirections**. If **csys**=None, the global coordinate system is used. When this
+            **millingDirections**. If **csys** = None, the global coordinate system is used. When this
             member is queried, it returns an Int indicating the identifier of the DatumCsys. The
             default value is None.
         millingCheckRegion
@@ -79,7 +79,7 @@ class TopologyMillingControl(GeometricRestriction):
         ----------
         csys
             None or a DatumCsys object specifying the local coordinate system of the
-            **millingDirections**. If **csys**=None, the global coordinate system is used. When this
+            **millingDirections**. If **csys** = None, the global coordinate system is used. When this
             member is queried, it returns an Int indicating the identifier of the DatumCsys. The
             default value is None.
         millingCheckRegion

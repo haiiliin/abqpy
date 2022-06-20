@@ -55,13 +55,13 @@ class ConcentratedForce(Load):
     follower: Boolean = OFF
 
     # None or a DatumCsys object specifying the local coordinate system of the load's degrees
-    # of freedom. If **localCsys**=None, the degrees of freedom are defined in the global
+    # of freedom. If **localCsys** = None, the degrees of freedom are defined in the global
     # coordinate system. When this member is queried, it returns an Int. The default value is
     # None.
     localCsys: int = None
 
     # A String specifying the name of the AnalyticalField object associated with this load.
-    # The **field** argument applies only when **distributionType**=FIELD. The default value is an
+    # The **field** argument applies only when **distributionType** = FIELD. The default value is an
     # empty string.
     field: str = ""
 
@@ -105,7 +105,7 @@ class ConcentratedForce(Load):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         cf1
             A Float or a Complex specifying the concentrated force component in the 1-direction.
@@ -125,7 +125,7 @@ class ConcentratedForce(Load):
             for the specified step. The default value is OFF.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the load's degrees
-            of freedom. If **localCsys**=None, the degrees of freedom are defined in the global
+            of freedom. If **localCsys** = None, the degrees of freedom are defined in the global
             coordinate system. When this member is queried, it returns an Int. The default value is
             None.
 
@@ -157,7 +157,7 @@ class ConcentratedForce(Load):
             UNIFORM and FIELD. The default value is UNIFORM.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         cf1
             A Float or a Complex specifying the concentrated force component in the 1-direction.
@@ -177,7 +177,7 @@ class ConcentratedForce(Load):
             for the specified step. The default value is OFF.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the load's degrees
-            of freedom. If **localCsys**=None, the degrees of freedom are defined in the global
+            of freedom. If **localCsys** = None, the degrees of freedom are defined in the global
             coordinate system. When this member is queried, it returns an Int. The default value is
             None.
         """

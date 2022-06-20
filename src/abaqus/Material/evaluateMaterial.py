@@ -100,10 +100,10 @@ def evaluateMaterial(
 
     Raises
     ------
-        - If **dataSource**=TEST_DATA and **strainEnergyPotentials** contains POLY_N3, POLY_N4,
+        - If **dataSource** = TEST_DATA and **strainEnergyPotentials** contains POLY_N3, POLY_N4,
         POLY_N5, or POLY_N6:
           MaterialEvaluationError: POLY_N3, POLY_N4, POLY_N5, or POLY_N6not allowed for
-        **dataSource**=TEST_DATA.
+        **dataSource** = TEST_DATA.
         - If the material evaluation failed:
           MaterialEvaluationError: material evaluation failed, see*path to data file*.
         - If the material type of the material to be evaluated is not hyperelastic:

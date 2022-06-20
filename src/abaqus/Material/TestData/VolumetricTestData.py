@@ -26,11 +26,11 @@ class VolumetricTestData:
         - Pressure, :math:`p`.
         - Volume ratio, :math:`J` (current volume/original volume).
     - For a viscoelastic material model, the values depend on the value of the **time** member of the [Viscoelastic](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viscoelasticpyc.htm?ContextScope=all) object.
-        - If **time**=RELAXATION_TEST_DATA, the table data specify the following:
+        - If **time** = RELAXATION_TEST_DATA, the table data specify the following:
         
             - Normalized volumetric (bulk) modulus :math:`k_{R}(t), \quad\left(0 \leq k_{R}(t) \leq 1\right)`
             - Time :math:`t (t>0)`.
-        - If **time**=CREEP_TEST_DATA, the table data specify the following:
+        - If **time** = CREEP_TEST_DATA, the table data specify the following:
         
             - Normalized volumetric (bulk) compliance :math:`j_{K}(t), \quad\left(j_{K}(t) \geq 1\right)`.
             - Time :math:`t(t>0)`
@@ -70,12 +70,12 @@ class VolumetricTestData:
         volinf
             None or a Float specifying a normalized volumetric value that depends on the value of
             the **time** member of the Viscoelastic object. The default value is None.If
-            **time**=RELAXATION_TEST_DATA, **volinf** specifies the value of the long-term, normalized
-            volumetric modulus, kR⁢(∞). If **time**=CREEP_TEST_DATA, **volinf** specifies the value of
+            **time** = RELAXATION_TEST_DATA, **volinf** specifies the value of the long-term, normalized
+            volumetric modulus, kR⁢(∞). If **time** = CREEP_TEST_DATA, **volinf** specifies the value of
             the long-term, normalized volumetric compliance, K⁢(∞).This argument is valid only for a
             viscoelastic material model.
         smoothing
-            None or an Int specifying the value for smoothing. If **smoothing**=None, no smoothing is
+            None or an Int specifying the value for smoothing. If **smoothing** = None, no smoothing is
             employed. The default value is None.
         temperatureDependency
             A Boolean specifying whether the data depend on temperature. The default value is OFF.

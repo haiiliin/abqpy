@@ -98,7 +98,7 @@ class FieldModel(ModelBase):
             Z; R, Th, and Z; or R, Th, and P based on the selected coordinate system.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the field. If
-            **localCsys**=None, the field is defined in the global coordinate system. The default
+            **localCsys** = None, the field is defined in the global coordinate system. The default
             value is None.
         description
             A String specifying the description of the field. The default value is an empty string.
@@ -211,7 +211,7 @@ class FieldModel(ModelBase):
             directions. The default value is (1.0, 1.0, 1.0).
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the field. If
-            **localCsys**=None, the field is defined in the global coordinate system. The default
+            **localCsys** = None, the field is defined in the global coordinate system. The default
             value is None.
         description
             A String specifying the description of the field. The default value is an empty string.

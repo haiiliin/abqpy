@@ -64,7 +64,7 @@ def addCallback(
     callAfter
         A Boolean specifying that the callback should be called after the method has executed
         (instead of before the method is called). The default value is False, which indicates
-        that the callback should be called before the method has executed.If **callAfter**=True,
+        that the callback should be called before the method has executed.If **callAfter** = True,
         you can also access the return value of the command from within the callback by
         including the following statement:`returnValue = getMethodReturnValue()`The
         getMethodReturnValue function is in the global namespace of the callback function.

@@ -50,11 +50,11 @@ class MPCSection(Section):
         userMode
             A SymbolicConstant specifying the mode of the MPC when it is user-defined. Possible
             values are DOF_MODE and NODE_MODE. The default value is DOF_MODE.The **userMode** argument
-            applies only when **mpcType**=USER_DEFINED.
+            applies only when **mpcType** = USER_DEFINED.
         userType
             An Int specifying to differentiate between different constraint types in a user-defined
             MPCSection. The default value is 0.The **userType** argument applies only when
-            **mpcType**=USER_DEFINED.
+            **mpcType** = USER_DEFINED.
 
         Returns
         -------

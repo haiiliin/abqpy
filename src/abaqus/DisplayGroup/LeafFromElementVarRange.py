@@ -53,7 +53,7 @@ class LeafFromElementVarRange(Leaf):
             A Float specifying the maximum value for the variable range. The default value is
             3.40282346639e+038.
         insideRange
-            A Boolean specifying the method used to evaluate the range. If **insideRange**=ON, the
+            A Boolean specifying the method used to evaluate the range. If **insideRange** = ON, the
             range falls inside the specified minimum and maximum values. The default value is ON.
 
         Returns

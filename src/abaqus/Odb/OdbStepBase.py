@@ -127,7 +127,7 @@ class OdbStepBase:
             this step is based on the value of the **domain** argument.
         timePeriod
             A Float specifying the time period of the step. **timePeriod** is required if
-            **domain**=TIME; otherwise, this argument is not applicable. The default value is 0.0.
+            **domain** = TIME; otherwise, this argument is not applicable. The default value is 0.0.
         previousStepName
             A String specifying the preceding step. If **previousStepName** is the empty string, the
             last step in the repository is used. If **previousStepName** is not the last step, this
@@ -213,9 +213,9 @@ class OdbStepBase:
         match
             A SymbolicConstant specifying which frame to return if there is no frame at the exact
             frame value. Possible values are CLOSEST, BEFORE, AFTER, and EXACT. The default value is
-            CLOSEST.When **match**=CLOSEST, Abaqus returns the closest frame. If the frame value
+            CLOSEST.When **match** = CLOSEST, Abaqus returns the closest frame. If the frame value
             requested is exactly halfway between two frames, Abaqus returns the frame after the
-            value.When **match**=EXACT, Abaqus raises an exception if the exact frame value does not
+            value.When **match** = EXACT, Abaqus raises an exception if the exact frame value does not
             exist.
 
         Returns
@@ -266,9 +266,9 @@ class OdbStepBase:
         match
             A SymbolicConstant specifying which frame to return if there is no frame at the exact
             frame value. Possible values are CLOSEST, BEFORE, AFTER, and EXACT. The default value is
-            CLOSEST.When **match**=CLOSEST, Abaqus returns the closest frame. If the frame value
+            CLOSEST.When **match** = CLOSEST, Abaqus returns the closest frame. If the frame value
             requested is exactly halfway between two frames, Abaqus returns the frame after the
-            value.When **match**=EXACT, Abaqus raises an exception if the exact frame value does not
+            value.When **match** = EXACT, Abaqus raises an exception if the exact frame value does not
             exist.
 
         Returns

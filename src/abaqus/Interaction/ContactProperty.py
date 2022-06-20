@@ -167,7 +167,7 @@ class ContactProperty(InteractionProperty):
             A sequence of sequences of Floats specifying tangential behavior. The items in the table
             data are described below.
         shearStressLimit
-            None or a Float specifying the shear stress limit. If **shearStressLimit**=None, there is
+            None or a Float specifying the shear stress limit. If **shearStressLimit** = None, there is
             no upper limit. The default value is None.
         maximumElasticSlip
             A SymbolicConstant specifying what the maximum elastic slip will be. Possible values are
@@ -178,7 +178,7 @@ class ContactProperty(InteractionProperty):
         absoluteDistance
             A Float specifying the absolute distance. The default value is 0.0.
         elasticSlipStiffness
-            None or a Float specifying the elastic slip stiffness. If **elasticSlipStiffness**=None,
+            None or a Float specifying the elastic slip stiffness. If **elasticSlipStiffness** = None,
             there is no upper limit. The default value is None.
         nStateDependentVars
             An Int specifying the number of state-dependent variables. The default value is 0.
@@ -240,8 +240,8 @@ class ContactProperty(InteractionProperty):
         ----------
         contactStiffness
             The SymbolicConstant DEFAULT or a Float specifying the contact stiffness. This argument
-            is valid for **pressureOverclosure**=LINEAR. This argument is also valid for
-            **pressureOverclosure**=HARD when **constraintEnforcementMethod**=AUGMENTED_LAGRANGE or
+            is valid for **pressureOverclosure** = LINEAR. This argument is also valid for
+            **pressureOverclosure** = HARD when **constraintEnforcementMethod** = AUGMENTED_LAGRANGE or
             PENALTY. A value of DEFAULT is valid only when the later conditions are met. A value of
             zero is equivalent to specifying DEFAULT. The default value is DEFAULT.
         pressureOverclosure
@@ -251,11 +251,11 @@ class ContactProperty(InteractionProperty):
         allowSeparation
             A Boolean specifying whether to allow separation after contact. The default value is ON.
         maxStiffness
-            None or a Float specifying the maximum stiffness. If **maxStiffness**=None, there is no
+            None or a Float specifying the maximum stiffness. If **maxStiffness** = None, there is no
             upper limit. The default value is None.
         table
             A sequence of sequences of Floats specifying the normal behavior properties. This
-            argument is valid only for **pressureOverclosure**=EXPONENTIAL or TABULAR. The items in
+            argument is valid only for **pressureOverclosure** = EXPONENTIAL or TABULAR. The items in
             the table data are described below.
         constraintEnforcementMethod
             A SymbolicConstant specifying the method for enforcement of the contact constraint.
@@ -279,21 +279,21 @@ class ContactProperty(InteractionProperty):
             value is 0.0.
         stiffnessBehavior
             A SymbolicConstant specifying the type of penalty stiffness to be defined. This argument
-            is valid only when **constraintEnforcementMethod**=PENALTY. Possible values are LINEAR and
+            is valid only when **constraintEnforcementMethod** = PENALTY. Possible values are LINEAR and
             NONLINEAR. The default value is LINEAR.
         stiffnessRatio
             A Float specifying the ratio of the initial stiffness divided by the final stiffness.
-            This argument is valid only when **stiffnessBehavior**=NONLINEAR. Possible values are 0 ≤≤
+            This argument is valid only when **stiffnessBehavior** = NONLINEAR. Possible values are 0 ≤≤
             **stiffnessRatio** << 1. The default value is 0.01.
         upperQuadraticFactor
             A Float specifying the ratio of the overclosure at the maximum stiffness divided by the
             characteristic facet length. This argument is valid only when
-            **stiffnessBehavior**=NONLINEAR. The default value is 0.03.
+            **stiffnessBehavior** = NONLINEAR. The default value is 0.03.
         lowerQuadraticRatio
             A Float specifying the ratio of the overclosure at the initial stiffness divided by the
             overclosure at the maximum stiffness, both relative to the clearance at which the
             contact pressure is zero. This argument is valid only when
-            **stiffnessBehavior**=NONLINEAR. Possible values are 0 ≤≤ **stiffnessRatio** << 1. The
+            **stiffnessBehavior** = NONLINEAR. Possible values are 0 ≤≤ **stiffnessRatio** << 1. The
             default value is 0.33333.
 
         Returns
@@ -348,7 +348,7 @@ class ContactProperty(InteractionProperty):
         clearanceDependence
             A SymbolicConstant specifying the variation of the damping coefficient or fraction with
             respect to clearance. Possible values are STEP, LINEAR, and BILINEAR. The default value
-            is STEP.If **definition**=CRITICAL_DAMPING_FRACTION, the only possible value is STEP.
+            is STEP.If **definition** = CRITICAL_DAMPING_FRACTION, the only possible value is STEP.
         table
             A sequence of pairs of Floats specifying the damping properties. The items in the table
             data are described below.
@@ -409,46 +409,46 @@ class ContactProperty(InteractionProperty):
             A Boolean specifying whether evolution data will be defined. The default value is OFF.
         evolutionType
             A SymbolicConstant specifying the type of data used to define the evolution of damage.
-            This argument is valid only when **useEvolution**=ON. Possible values are DISPLACEMENT and
+            This argument is valid only when **useEvolution** = ON. Possible values are DISPLACEMENT and
             ENERGY. The default value is DISPLACEMENT.
         softening
             A SymbolicConstant specifying the type of data used to define the evolution softening
-            response. This argument is valid only when **useEvolution**=ON. The TABULAR value can be
-            used only when **evolutionType**=DISPLACEMENT. Possible values are LINEAR, EXPONENTIAL,
+            response. This argument is valid only when **useEvolution** = ON. The TABULAR value can be
+            used only when **evolutionType** = DISPLACEMENT. Possible values are LINEAR, EXPONENTIAL,
             and TABULAR. The default value is LINEAR.
         useMixedMode
             A Boolean specifying whether evolution data be defined using dependent behavior modes.
-            This argument is valid only when **useEvolution**=ON. The default value is OFF.
+            This argument is valid only when **useEvolution** = ON. The default value is OFF.
         mixedModeType
             A SymbolicConstant specifying the mode mix fracture criterion. This argument is valid
-            only when **useEvolution**=ON and when **useMixedMode**=ON. The POWER_LAW and BK values can
-            be used only when **evolutionType**=ENERGY. Possible values are TABULAR, POWER_LAW, and
+            only when **useEvolution** = ON and when **useMixedMode** = ON. The POWER_LAW and BK values can
+            be used only when **evolutionType** = ENERGY. Possible values are TABULAR, POWER_LAW, and
             BK. The default value is TABULAR.
         modeMixRatio
             A SymbolicConstant specifying the mode mix ratio type. This argument is valid only when
-            **useEvolution**=ON and when **useMixedMode**=ON. The TRACTION value can be used only when
-            **mixedModeType**=TABULAR. Possible values are ENERGY and TRACTION. The default value is
+            **useEvolution** = ON and when **useMixedMode** = ON. The TRACTION value can be used only when
+            **mixedModeType** = TABULAR. Possible values are ENERGY and TRACTION. The default value is
             ENERGY.
         exponent
             None or a Float specifying the exponent in the power-law or BK criterion that defines
             the variation of fracture energy with mode mix. This argument is valid only when
-            **useEvolution**=ON and when **mixedModeType**=POWER_LAW or BK. The default value is None.
+            **useEvolution** = ON and when **mixedModeType** = POWER_LAW or BK. The default value is None.
         evolTempDep
             A Boolean specifying whether the evolution data depend on temperature. This argument is
-            valid only when **useEvolution**=ON. The default value is OFF.
+            valid only when **useEvolution** = ON. The default value is OFF.
         evolDependencies
             An Int specifying the number of evolution data field variables. This argument is valid
-            only when **useEvolution**=ON. The default value is 0.
+            only when **useEvolution** = ON. The default value is 0.
         evolTable
             A sequence of sequences of Floats specifying the values defining the damage evolution.
             The items in the table data are described below. This argument is valid only when
-            **useEvolution**=ON.
+            **useEvolution** = ON.
         useStabilization
             A Boolean specifying whether stabilization data will be defined. This argument is valid
-            only when **useEvolution**=ON. The default value is OFF.
+            only when **useEvolution** = ON. The default value is OFF.
         viscosityCoef
             None or a Float specifying the viscosity coefficient. This argument is valid only when
-            **useStabilization**=ON. The default value is None.
+            **useStabilization** = ON. The default value is None.
 
         Returns
         -------
@@ -519,7 +519,7 @@ class ContactProperty(InteractionProperty):
             fracture criterion. Possible values are ON and OFF. The default value is OFF.
         unstableTolerance
             The SymbolicConstant DEFAULT or a Float specifying the tolerance for unstable crack
-            propagation. This parameter specified only if **specifyUnstableCrackProp**=ON. The default
+            propagation. This parameter specified only if **specifyUnstableCrackProp** = ON. The default
             value is DEFAULT.
 
         Returns
@@ -571,18 +571,18 @@ class ContactProperty(InteractionProperty):
             ON.
         coupling
             A SymbolicConstant specifying whether the traction-separation coefficients are coupled
-            or uncoupled. This argument is valid only for **defaultPenalties**=OFF. Possible values
+            or uncoupled. This argument is valid only for **defaultPenalties** = OFF. Possible values
             are UNCOUPLED and COUPLED. The default value is UNCOUPLED.
         temperatureDependency
             A Boolean specifying whether the coefficient data depend on temperature. This argument
-            is valid only for **defaultPenalties**=OFF. The default value is OFF.
+            is valid only for **defaultPenalties** = OFF. The default value is OFF.
         dependencies
             An Int specifying the number of field variables. This argument is valid only for
-            **defaultPenalties**=OFF. The default value is 0.
+            **defaultPenalties** = OFF. The default value is 0.
         table
             A sequence of sequences of Floats specifying the traction-separation coefficients. The
             items in the table data are described below. This argument is valid only for
-            **defaultPenalties**=OFF.
+            **defaultPenalties** = OFF.
 
         Returns
         -------
@@ -763,7 +763,7 @@ class ContactProperty(InteractionProperty):
             1.0.
         padThickness
             None or a Float specifying the thickness of an interfacial layer between the contacting
-            surfaces. If **padThickness**=None, there is no interfacial layer. The default value is
+            surfaces. If **padThickness** = None, there is no interfacial layer. The default value is
             None.
         trackingThickness
             None or a Float specifying the thickness that determines the contacting surfaces to be
@@ -771,16 +771,16 @@ class ContactProperty(InteractionProperty):
             value is used if a zero value is input or if the parameter is omitted.
         dependentVariables
             An Int specifying the number of state-dependent variables. The default value is 0. This
-            argument is applicable only if **modelType**=MODELTYPE_USER or
-            **modelType**=MODELTYPE_USER_INTERACTION.
+            argument is applicable only if **modelType** = MODELTYPE_USER or
+            **modelType** = MODELTYPE_USER_INTERACTION.
         numProperties
             An Int specifying the number of property values required. The default value is 0. This
-            argument is applicable only if **modelType**=MODELTYPE_USER or
-            **modelType**=MODELTYPE_USER_INTERACTION.
+            argument is applicable only if **modelType** = MODELTYPE_USER or
+            **modelType** = MODELTYPE_USER_INTERACTION.
         useUnsymmetricEqunProcedure
             A Boolean specifying whether to use unsymmetric equation solution procedures. This
-            argument is applicable only if **modelType**=MODELTYPE_USER or
-            **modelType**=MODELTYPE_USER_INTERACTION.
+            argument is applicable only if **modelType** = MODELTYPE_USER or
+            **modelType** = MODELTYPE_USER_INTERACTION.
         modelType
             A SymbolicConstant specifying the surface interaction model type.
 

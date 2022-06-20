@@ -254,17 +254,17 @@ class Feature(BaseFeature):
             The default value, 0, implies a normal revolve.
         flipRevolveDirection
             A Boolean specifying whether to override the direction of feature creation. If
-            **flipRevolveDirection**=OFF, the default direction of revolution is used. If
-            **flipRevolveDirection**=ON, the revolve direction is reversed. The default value is OFF.
+            **flipRevolveDirection** = OFF, the default direction of revolution is used. If
+            **flipRevolveDirection** = ON, the revolve direction is reversed. The default value is OFF.
         flipPitchDirection
             A Boolean specifying whether to override the direction of translation. If
-            **flipPitchDirection**=OFF, the direction of translation is given by the direction of the
-            revolve axis. If **flipPitchDirection**=ON, the translation direction is reversed. The
+            **flipPitchDirection** = OFF, the direction of translation is given by the direction of the
+            revolve axis. If **flipPitchDirection** = ON, the translation direction is reversed. The
             default value is OFF.
         moveSketchNormalToPath
             A Boolean specifying whether to rotate the sketch so that it is normal to the path of
-            revolution when using the **pitch** option. If **moveSketchNormalToPath**=OFF, the sketch
-            plane remains parallel to the revolve axis. If **moveSketchNormalToPath**=ON, the sketch
+            revolution when using the **pitch** option. If **moveSketchNormalToPath** = OFF, the sketch
+            plane remains parallel to the revolve axis. If **moveSketchNormalToPath** = ON, the sketch
             is moved to match the angle created by the **pitch** before being revolved. The default
             value is OFF.
 
@@ -416,17 +416,17 @@ class Feature(BaseFeature):
             The default value, 0, implies a normal revolve.
         flipRevolveDirection
             A Boolean specifying whether to override the direction of feature creation. If
-            **flipRevolveDirection**=OFF, the default direction of revolution is used. If
-            **flipRevolveDirection**=ON, the revolve direction is reversed. The default value is OFF.
+            **flipRevolveDirection** = OFF, the default direction of revolution is used. If
+            **flipRevolveDirection** = ON, the revolve direction is reversed. The default value is OFF.
         flipPitchDirection
             A Boolean specifying whether to override the direction of translation. If
-            **flipPitchDirection**=OFF, the direction of translation is given by the direction of the
-            revolve axis. If **flipPitchDirection**=ON, the translation direction is reversed. The
+            **flipPitchDirection** = OFF, the direction of translation is given by the direction of the
+            revolve axis. If **flipPitchDirection** = ON, the translation direction is reversed. The
             default value is OFF.
         moveSketchNormalToPath
             A Boolean specifying whether to rotate the sketch so that it is normal to the path of
-            revolution when using the **pitch** option. If **moveSketchNormalToPath**=OFF, the sketch
-            plane remains parallel to the revolve axis. If **moveSketchNormalToPath**=ON, the sketch
+            revolution when using the **pitch** option. If **moveSketchNormalToPath** = OFF, the sketch
+            plane remains parallel to the revolve axis. If **moveSketchNormalToPath** = ON, the sketch
             is moved to match the angle created by the **pitch** before being revolved. The default
             value is OFF.
 
@@ -525,7 +525,7 @@ class Feature(BaseFeature):
             path.
         path
             An Edge object that connects **side1** to **side2** and specifies the path for creating the
-            blend. This argument is required if **method**=SPECIFY_PATH; otherwise, it is ignored.
+            blend. This argument is required if **method** = SPECIFY_PATH; otherwise, it is ignored.
 
         Returns
         -------
@@ -836,15 +836,15 @@ class Feature(BaseFeature):
         startTangent
             A Float specifying the angle in degrees of the tangent with respect to the plane in
             which the start section lies. You must specify the **startTangent** argument if
-            **startCondition**=SPECIFIED. Possible values are 0.0 ≤≤ **startTangent** ≤≤ 180.0.
+            **startCondition** = SPECIFIED. Possible values are 0.0 ≤≤ **startTangent** ≤≤ 180.0.
         startMagnitude
             A Float specifying the magnitude of the **startTangent**. You must specify the
-            **startMagnitude** argument if **startCondition**=SPECIFIED. Possible values are 0.0 <<
+            **startMagnitude** argument if **startCondition** = SPECIFIED. Possible values are 0.0 <<
             **startMagnitude** << 100.0.
         endTangent
             A Float specifying the angle in degrees of the tangent with respect to the plane in
             which the end section lies. You must specify the **endTangent** argument if
-            **startCondition**=SPECIFIED. Possible values are 0.0 ≤≤ **endTangent** ≤≤ 180.0.
+            **startCondition** = SPECIFIED. Possible values are 0.0 ≤≤ **endTangent** ≤≤ 180.0.
         endMagnitude
             A Float specifying the magnitude of the **endTangent**. This argument is to be used when
             the **endCondition** argument has the value SPECIFIED. Possible values are 0.0 <<
@@ -913,17 +913,17 @@ class Feature(BaseFeature):
             The default value, 0, implies a normal revolve.
         flipRevolveDirection
             A Boolean specifying whether to override the direction of feature creation. If
-            **flipRevolveDirection**=OFF, the default direction of revolution is used. If
-            **flipRevolveDirection**=ON, the revolve direction is reversed. The default value is OFF.
+            **flipRevolveDirection** = OFF, the default direction of revolution is used. If
+            **flipRevolveDirection** = ON, the revolve direction is reversed. The default value is OFF.
         flipPitchDirection
             A Boolean specifying whether to override the direction of translation. If
-            **flipPitchDirection**=OFF, the direction of translation is given by the direction of the
-            revolve axis. If **flipPitchDirection**=ON, the translation direction is reversed. The
+            **flipPitchDirection** = OFF, the direction of translation is given by the direction of the
+            revolve axis. If **flipPitchDirection** = ON, the translation direction is reversed. The
             default value is OFF.
         moveSketchNormalToPath
             A Boolean specifying whether to rotate the sketch so that it is normal to the path of
-            revolution when using the **pitch** option. If **moveSketchNormalToPath**=OFF, the sketch
-            plane remains parallel to the revolve axis. If **moveSketchNormalToPath**=ON, the sketch
+            revolution when using the **pitch** option. If **moveSketchNormalToPath** = OFF, the sketch
+            plane remains parallel to the revolve axis. If **moveSketchNormalToPath** = ON, the sketch
             is moved to match the angle created by the **pitch** before being revolved. The default
             value is OFF.
 
@@ -1009,13 +1009,13 @@ class Feature(BaseFeature):
             and **pitch** are mutually exclusive.
         profileNormal
             A Boolean specifying whether to keep the profile normal same as original or varying
-            through out the sweep path. When **profileNormal**=OFF, the profile normal will vary
-            through out the sweep path. When **profileNormal**=ON, the profile normal will be same as
+            through out the sweep path. When **profileNormal** = OFF, the profile normal will vary
+            through out the sweep path. When **profileNormal** = ON, the profile normal will be same as
             original through out the sweep path. The default value is OFF.
         flipSweepDirection
             A Boolean specifying whether to flip the direction in which sweep operation will be
-            performed. When **flipSweepDirection**=OFF, sweep operation will be performed in the
-            direction of path direction. When **flipSweepDirection**=ON, sweep operation will be
+            performed. When **flipSweepDirection** = OFF, sweep operation will be performed in the
+            direction of path direction. When **flipSweepDirection** = ON, sweep operation will be
             performed in the direction opposite to the path direction. The default value is OFF.
 
         Returns
@@ -1827,15 +1827,15 @@ class Feature(BaseFeature):
         startTangent
             A Float specifying the angle in degrees of the tangent with respect to the plane in
             which the start section lies. You must specify the **startTangent** argument if
-            **startCondition**=SPECIFIED. Possible values are 0.0 ≤≤ **startTangent** ≤≤ 180.0.
+            **startCondition** = SPECIFIED. Possible values are 0.0 ≤≤ **startTangent** ≤≤ 180.0.
         startMagnitude
             A Float specifying the magnitude of the **startTangent**. You must specify the
-            **startMagnitude** argument if **startCondition**=SPECIFIED. Possible values are 0.0 <<
+            **startMagnitude** argument if **startCondition** = SPECIFIED. Possible values are 0.0 <<
             **startMagnitude** << 100.0.
         endTangent
             A Float specifying the angle in degrees of the tangent with respect to the plane in
             which the end section lies. You must specify the **endTangent** argument if
-            **startCondition**=SPECIFIED. Possible values are 0.0 ≤≤ **endTangent** ≤≤ 180.0.
+            **startCondition** = SPECIFIED. Possible values are 0.0 ≤≤ **endTangent** ≤≤ 180.0.
         endMagnitude
             A Float specifying the magnitude of the **endTangent**. This argument is to be used when
             the **endCondition** argument has the value SPECIFIED. Possible values are 0.0 <<
@@ -1919,17 +1919,17 @@ class Feature(BaseFeature):
             The default value, 0, implies a normal revolve.
         flipRevolveDirection
             A Boolean specifying whether to override the direction of feature creation. If
-            **flipRevolveDirection**=OFF, the default direction of revolution is used. If
-            **flipRevolveDirection**=ON, the revolve direction is reversed. The default value is OFF.
+            **flipRevolveDirection** = OFF, the default direction of revolution is used. If
+            **flipRevolveDirection** = ON, the revolve direction is reversed. The default value is OFF.
         flipPitchDirection
             A Boolean specifying whether to override the direction of translation. If
-            **flipPitchDirection**=OFF, the direction of translation is given by the direction of the
-            revolve axis. If **flipPitchDirection**=ON, the translation direction is reversed. The
+            **flipPitchDirection** = OFF, the direction of translation is given by the direction of the
+            revolve axis. If **flipPitchDirection** = ON, the translation direction is reversed. The
             default value is OFF.
         moveSketchNormalToPath
             A Boolean specifying whether to rotate the sketch so that it is normal to the path of
-            revolution when using the **pitch** option. If **moveSketchNormalToPath**=OFF, the sketch
-            plane remains parallel to the revolve axis. If **moveSketchNormalToPath**=ON, the sketch
+            revolution when using the **pitch** option. If **moveSketchNormalToPath** = OFF, the sketch
+            plane remains parallel to the revolve axis. If **moveSketchNormalToPath** = ON, the sketch
             is moved to match the angle created by the **pitch** before being revolved. The default
             value is OFF.
         keepInternalBoundaries
@@ -2019,13 +2019,13 @@ class Feature(BaseFeature):
             and **pitch** are mutually exclusive.
         profileNormal
             A Boolean specifying whether to keep the profile normal same as original or varying
-            through out the sweep path. When **profileNormal**=OFF, the profile normal will vary
-            through out the sweep path. When **profileNormal**=ON, the profile normal will be same as
+            through out the sweep path. When **profileNormal** = OFF, the profile normal will vary
+            through out the sweep path. When **profileNormal** = ON, the profile normal will be same as
             original through out the sweep path. The default value is OFF.
         flipSweepDirection
             A Boolean specifying whether to flip the direction in which sweep operation will be
-            performed. When **flipSweepDirection**=OFF, sweep operation will be performed in the
-            direction of path direction. When **flipSweepDirection**=ON, sweep operation will be
+            performed. When **flipSweepDirection** = OFF, sweep operation will be performed in the
+            direction of path direction. When **flipSweepDirection** = ON, sweep operation will be
             performed in the direction opposite to the path direction. The default value is OFF.
         keepInternalBoundaries
             A Boolean specifying whether internal boundaries will be retained. The default value is
@@ -2162,15 +2162,15 @@ class Feature(BaseFeature):
         startTangent
             A Float specifying the angle in degrees of the tangent with respect to the plane in
             which the start section lies. You must specify the **startTangent** argument if
-            **startCondition**=SPECIFIED. Possible values are 0.0 ≤≤ **startTangent** ≤≤ 180.0.
+            **startCondition** = SPECIFIED. Possible values are 0.0 ≤≤ **startTangent** ≤≤ 180.0.
         startMagnitude
             A Float specifying the magnitude of the **startTangent**. You must specify the
-            **startMagnitude** argument if **startCondition**=SPECIFIED. Possible values are 0.0 <<
+            **startMagnitude** argument if **startCondition** = SPECIFIED. Possible values are 0.0 <<
             **startMagnitude** << 100.0.
         endTangent
             A Float specifying the angle in degrees of the tangent with respect to the plane in
             which the end section lies. You must specify the **endTangent** argument if
-            **startCondition**=SPECIFIED. Possible values are 0.0 ≤≤ **endTangent** ≤≤ 180.0.
+            **startCondition** = SPECIFIED. Possible values are 0.0 ≤≤ **endTangent** ≤≤ 180.0.
         endMagnitude
             A Float specifying the magnitude of the **endTangent**. This argument is to be used when
             the **endCondition** argument has the value SPECIFIED. Possible values are 0.0 <<
@@ -2253,17 +2253,17 @@ class Feature(BaseFeature):
             The default value, 0, implies a normal revolve.
         flipRevolveDirection
             A Boolean specifying whether to override the direction of feature creation. If
-            **flipRevolveDirection**=OFF, the default direction of revolution is used. If
-            **flipRevolveDirection**=ON, the revolve direction is reversed. The default value is OFF.
+            **flipRevolveDirection** = OFF, the default direction of revolution is used. If
+            **flipRevolveDirection** = ON, the revolve direction is reversed. The default value is OFF.
         flipPitchDirection
             A Boolean specifying whether to override the direction of translation. If
-            **flipPitchDirection**=OFF, the direction of translation is given by the direction of the
-            revolve axis. If **flipPitchDirection**=ON, the translation direction is reversed. The
+            **flipPitchDirection** = OFF, the direction of translation is given by the direction of the
+            revolve axis. If **flipPitchDirection** = ON, the translation direction is reversed. The
             default value is OFF.
         moveSketchNormalToPath
             A Boolean specifying whether to rotate the sketch so that it is normal to the path of
-            revolution when using the **pitch** option. If **moveSketchNormalToPath**=OFF, the sketch
-            plane remains parallel to the revolve axis. If **moveSketchNormalToPath**=ON, the sketch
+            revolution when using the **pitch** option. If **moveSketchNormalToPath** = OFF, the sketch
+            plane remains parallel to the revolve axis. If **moveSketchNormalToPath** = ON, the sketch
             is moved to match the angle created by the **pitch** before being revolved. The default
             value is OFF.
         keepInternalBoundaries
@@ -2353,13 +2353,13 @@ class Feature(BaseFeature):
             and **pitch** are mutually exclusive.
         profileNormal
             A Boolean specifying whether to keep the profile normal same as original or varying
-            through out the sweep path. When **profileNormal**=OFF, the profile normal will vary
-            through out the sweep path. When **profileNormal**=ON, the profile normal will be same as
+            through out the sweep path. When **profileNormal** = OFF, the profile normal will vary
+            through out the sweep path. When **profileNormal** = ON, the profile normal will be same as
             original through out the sweep path. The default value is OFF.
         flipSweepDirection
             A Boolean specifying whether to flip the direction in which sweep operation will be
-            performed. When **flipSweepDirection**=OFF, sweep operation will be performed in the
-            direction of path direction. When **flipSweepDirection**=ON, sweep operation will be
+            performed. When **flipSweepDirection** = OFF, sweep operation will be performed in the
+            direction of path direction. When **flipSweepDirection** = ON, sweep operation will be
             performed in the direction opposite to the path direction. The default value is OFF.
         keepInternalBoundaries
             A Boolean specifying whether internal boundaries will be retained. The default value is
@@ -2478,9 +2478,9 @@ class Feature(BaseFeature):
             default value is IMPRINT.
         smoothClosedSpline
             A Boolean specifying the behavior of Abaqus when the points defining a spline wire form
-            a closed loop (the start and end points are the same). If **smoothClosedSpline**=ON,
+            a closed loop (the start and end points are the same). If **smoothClosedSpline** = ON,
             Abaqus creates a smooth spline wire where the tangencies at the end point meet smoothly.
-            If **smoothClosedSpline**=OFF, Abaqus does not automatically create a smooth end
+            If **smoothClosedSpline** = OFF, Abaqus does not automatically create a smooth end
             condition. The default value in OFF.
 
         Returns
@@ -2523,7 +2523,7 @@ class Feature(BaseFeature):
             IMPRINT.
         meshable
             A Boolean specifying whether the wire should be available for selection in meshing
-            operations. If **meshable**=OFF, the wire can be used for connector section assignment.
+            operations. If **meshable** = OFF, the wire can be used for connector section assignment.
             The default value is ON.
 
         Returns

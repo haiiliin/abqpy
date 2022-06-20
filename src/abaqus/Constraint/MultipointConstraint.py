@@ -66,17 +66,17 @@ class MultipointConstraint(Constraint):
             BEAM_MPC, ELBOW_MPC, PIN_MPC, LINK_MPC, TIE_MPC, and USER_MPC.
         csys
             None or a DatumCsys object specifying the initial orientation of the local coordinate
-            system for the MultipointConstraint's degrees of freedom. If **localCsys**=None, the
+            system for the MultipointConstraint's degrees of freedom. If **localCsys** = None, the
             MultipointConstraint is defined in the global coordinate system. The default value is
             None.
         userType
             An Int specifying to differentiate between different constraint types in a user-defined
             MultipointConstraint. The default value is 0.The **userType** argument applies only when
-            **mpcType**=USER_MPC.
+            **mpcType** = USER_MPC.
         userMode
             A SymbolicConstant specifying the mode of the constraint when it is user-defined.
             Possible values are DOF_MODE_MPC and NODE_MODE_MPC. The default value is
-            DOF_MODE_MPC.The **userMode** argument applies only when **mpcType**=USER_MPC.
+            DOF_MODE_MPC.The **userMode** argument applies only when **mpcType** = USER_MPC.
 
         Returns
         -------
@@ -97,16 +97,16 @@ class MultipointConstraint(Constraint):
         ----------
         csys
             None or a DatumCsys object specifying the initial orientation of the local coordinate
-            system for the MultipointConstraint's degrees of freedom. If **localCsys**=None, the
+            system for the MultipointConstraint's degrees of freedom. If **localCsys** = None, the
             MultipointConstraint is defined in the global coordinate system. The default value is
             None.
         userType
             An Int specifying to differentiate between different constraint types in a user-defined
             MultipointConstraint. The default value is 0.The **userType** argument applies only when
-            **mpcType**=USER_MPC.
+            **mpcType** = USER_MPC.
         userMode
             A SymbolicConstant specifying the mode of the constraint when it is user-defined.
             Possible values are DOF_MODE_MPC and NODE_MODE_MPC. The default value is
-            DOF_MODE_MPC.The **userMode** argument applies only when **mpcType**=USER_MPC.
+            DOF_MODE_MPC.The **userMode** argument applies only when **mpcType** = USER_MPC.
         """
         pass

@@ -238,7 +238,7 @@ class AssemblyBase(Feature):
             offset it from existing part instances. The default value is OFF.
         dependent
             A Boolean specifying whether the part instance is dependent or independent. If
-            **dependent**=OFF, the part instance is independent. The default value is OFF.
+            **dependent** = OFF, the part instance is independent. The default value is OFF.
 
         Returns
         -------
@@ -732,7 +732,7 @@ class AssemblyBase(Feature):
             projected.
         filter
             A SymbolicConstant specifying how to limit the amount of projection. Possible values are
-            ALL_EDGES and COPLANAR_EDGES. If **filter**=COPLANAR_EDGES, edges that are coplanar to the
+            ALL_EDGES and COPLANAR_EDGES. If **filter** = COPLANAR_EDGES, edges that are coplanar to the
             sketching plane are the only candidates for projection. The default value is ALL_EDGES.
         upToFeature
             A Feature object specifying a marker in the feature-based history of the part.

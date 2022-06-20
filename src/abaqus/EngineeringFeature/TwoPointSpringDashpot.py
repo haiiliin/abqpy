@@ -74,24 +74,24 @@ class TwoPointSpringDashpot(SpringDashpot):
         dof1
             An Int specifying the degree of freedom with which the springs and/or dashpots are 
             associated at their first points. The **dof1** argument applies only when 
-            **axis**=FIXED_DOFS. The default value is 0. 
+            **axis** = FIXED_DOFS. The default value is 0. 
         dof2
             An Int specifying the degree of freedom with which the springs and/or dashpots are 
             associated at their second points. The **dof2** argument applies only when 
-            **axis**=FIXED_DOFS. The default value is 0. 
+            **axis** = FIXED_DOFS. The default value is 0. 
         orientation
             None or a DatumCsys object specifying the local directions for the spring and/or 
-            dashpot. If **orientation**=None, the spring and/or dashpot data are defined in the global 
+            dashpot. If **orientation** = None, the spring and/or dashpot data are defined in the global 
             coordinate system. The default value is None.The **orientation** argument applies only 
-            when **axis**=FIXED_DOFS. 
+            when **axis** = FIXED_DOFS. 
         springBehavior
             A Boolean specifying whether to apply spring behavior to the selected point pairs. The 
-            default value is OFF.At least one of the arguments **springBehavior**=ON or 
-            **dashpotBehavior**=ON must be specified. 
+            default value is OFF.At least one of the arguments **springBehavior** = ON or 
+            **dashpotBehavior** = ON must be specified. 
         dashpotBehavior
             A Boolean specifying whether to apply dashpot behavior to the selected point pairs. The 
-            default value is OFF.At least one of the arguments **springBehavior**=ON or 
-            **dashpotBehavior**=ON must be specified. 
+            default value is OFF.At least one of the arguments **springBehavior** = ON or 
+            **dashpotBehavior** = ON must be specified. 
         springStiffness
             A Float specifying the force per relative displacement for the springs. The default 
             value is 0.0. 
@@ -123,24 +123,24 @@ class TwoPointSpringDashpot(SpringDashpot):
         dof1
             An Int specifying the degree of freedom with which the springs and/or dashpots are
             associated at their first points. The **dof1** argument applies only when
-            **axis**=FIXED_DOFS. The default value is 0.
+            **axis** = FIXED_DOFS. The default value is 0.
         dof2
             An Int specifying the degree of freedom with which the springs and/or dashpots are
             associated at their second points. The **dof2** argument applies only when
-            **axis**=FIXED_DOFS. The default value is 0.
+            **axis** = FIXED_DOFS. The default value is 0.
         orientation
             None or a DatumCsys object specifying the local directions for the spring and/or
-            dashpot. If **orientation**=None, the spring and/or dashpot data are defined in the global
+            dashpot. If **orientation** = None, the spring and/or dashpot data are defined in the global
             coordinate system. The default value is None.The **orientation** argument applies only
-            when **axis**=FIXED_DOFS.
+            when **axis** = FIXED_DOFS.
         springBehavior
             A Boolean specifying whether to apply spring behavior to the selected point pairs. The
-            default value is OFF.At least one of the arguments **springBehavior**=ON or
-            **dashpotBehavior**=ON must be specified.
+            default value is OFF.At least one of the arguments **springBehavior** = ON or
+            **dashpotBehavior** = ON must be specified.
         dashpotBehavior
             A Boolean specifying whether to apply dashpot behavior to the selected point pairs. The
-            default value is OFF.At least one of the arguments **springBehavior**=ON or
-            **dashpotBehavior**=ON must be specified.
+            default value is OFF.At least one of the arguments **springBehavior** = ON or
+            **dashpotBehavior** = ON must be specified.
         springStiffness
             A Float specifying the force per relative displacement for the springs. The default
             value is 0.0.

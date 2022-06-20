@@ -82,9 +82,9 @@ class AssembledFastener(Fastener):
             template model at each attachment point. Possible values are NORMALS and CSYS. The
             default value is NORMALS.
         localCsys
-            None or a DatumCsys object specifying the local coordinate system. If **localCsys**=None,
+            None or a DatumCsys object specifying the local coordinate system. If **localCsys** = None,
             the global coordinate system is used. When this member is queried, it returns an Int.
-            The default value is None.This argument applies only when **orientMethod**=CSYS.
+            The default value is None.This argument applies only when **orientMethod** = CSYS.
         scriptName
             A String specifying the name of the property generation script. The default value is an
             empty string.
@@ -111,9 +111,9 @@ class AssembledFastener(Fastener):
             template model at each attachment point. Possible values are NORMALS and CSYS. The
             default value is NORMALS.
         localCsys
-            None or a DatumCsys object specifying the local coordinate system. If **localCsys**=None,
+            None or a DatumCsys object specifying the local coordinate system. If **localCsys** = None,
             the global coordinate system is used. When this member is queried, it returns an Int.
-            The default value is None.This argument applies only when **orientMethod**=CSYS.
+            The default value is None.This argument applies only when **orientMethod** = CSYS.
         scriptName
             A String specifying the name of the property generation script. The default value is an
             empty string.

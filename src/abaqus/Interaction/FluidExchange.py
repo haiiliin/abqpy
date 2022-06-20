@@ -49,7 +49,7 @@ class FluidExchange(Interaction):
             A String specifying the name of the step in which the FluidExchange object is created.
         firstCavity
             A String specifying the first FluidCavity object associated with this interaction. This
-            will be the only cavity specified if **definition**=TO_ENVIRONMENT.
+            will be the only cavity specified if **definition** = TO_ENVIRONMENT.
         interactionProperty
             A String specifying the FluidExchangeProperty object associated with this interaction.
         definition
@@ -57,7 +57,7 @@ class FluidExchange(Interaction):
             are TO_ENVIRONMENT and BETWEEN_CAVITIES. The default value is TO_ENVIRONMENT.
         secondCavity
             A String specifying the second FluidCavity object associated with this interaction. This
-            argument is applicable only when **definition**=BETWEEN_CAVITIES.
+            argument is applicable only when **definition** = BETWEEN_CAVITIES.
         exchangeArea
             A Float specifying the effective exchange area. The default value is 1.0.
 
@@ -83,7 +83,7 @@ class FluidExchange(Interaction):
             are TO_ENVIRONMENT and BETWEEN_CAVITIES. The default value is TO_ENVIRONMENT.
         secondCavity
             A String specifying the second FluidCavity object associated with this interaction. This
-            argument is applicable only when **definition**=BETWEEN_CAVITIES.
+            argument is applicable only when **definition** = BETWEEN_CAVITIES.
         exchangeArea
             A Float specifying the effective exchange area. The default value is 1.0.
         """

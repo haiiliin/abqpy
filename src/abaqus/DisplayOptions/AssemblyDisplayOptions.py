@@ -122,20 +122,20 @@ class AssemblyDisplayOptions:
     connectors: Boolean = OFF
 
     # A Boolean specifying whether the connector end points are shown. This member is
-    # applicable only if **connectors**=ON. The default value is ON.
+    # applicable only if **connectors** = ON. The default value is ON.
     cnxEndPoints: Boolean = ON
 
     # A Boolean specifying whether the connector local coordinate system axes are shown. This
-    # member is applicable only if **connectors**=ON. The default value is ON.
+    # member is applicable only if **connectors** = ON. The default value is ON.
     cnxLocalAxes: Boolean = ON
 
     # A Boolean specifying whether the connector section type labels are shown. This member is
-    # applicable only if **connectors**=ON. The default value is ON.
+    # applicable only if **connectors** = ON. The default value is ON.
     cnxTypeLabels: Boolean = ON
 
     # A Boolean specifying whether the tag information is displayed along with the connector
-    # section type labels. This member is applicable only if **connectors**=ON and if
-    # **cnxTypeLabels**=ON. The default value is OFF.
+    # section type labels. This member is applicable only if **connectors** = ON and if
+    # **cnxTypeLabels** = ON. The default value is OFF.
     cnxTagDisplay: Boolean = OFF
 
     # A Boolean specifying whether constraints are shown. The default value is OFF.
@@ -289,17 +289,17 @@ class AssemblyDisplayOptions:
             A Boolean specifying whether connectors are shown. The default value is OFF.
         cnxEndPoints
             A Boolean specifying whether the connector end points are shown. This member is
-            applicable only if **connectors**=ON. The default value is ON.
+            applicable only if **connectors** = ON. The default value is ON.
         cnxLocalAxes
             A Boolean specifying whether the connector local coordinate system axes are shown. This
-            member is applicable only if **connectors**=ON. The default value is ON.
+            member is applicable only if **connectors** = ON. The default value is ON.
         cnxTypeLabels
             A Boolean specifying whether the connector section type labels are shown. This member is
-            applicable only if **connectors**=ON. The default value is ON.
+            applicable only if **connectors** = ON. The default value is ON.
         cnxTagDisplay
             A Boolean specifying whether the tag information is displayed along with the connector
-            section type labels. This member is applicable only if **connectors**=ON and if
-            **cnxTypeLabels**=ON. The default value is OFF.
+            section type labels. This member is applicable only if **connectors** = ON and if
+            **cnxTypeLabels** = ON. The default value is OFF.
         predefinedFields
             A Boolean specifying whether fields and initial conditions are shown. The default value
             is OFF.

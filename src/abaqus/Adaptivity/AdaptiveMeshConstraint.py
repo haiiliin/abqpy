@@ -45,7 +45,7 @@ class AdaptiveMeshConstraint:
     region: Region = Region()
 
     # None or a DatumCsys object specifying the local coordinate system of the adaptive mesh
-    # constraint's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+    # constraint's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     # in the global coordinate system. The default value is None.
     localCsys: DatumCsys = None
 
@@ -81,7 +81,7 @@ class AdaptiveMeshConstraint:
             A Region object specifying the region to which the adaptive mesh constraint is applied.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the adaptive mesh  constraint's
-            degrees of freedom. If **localCsys**=None, the degrees of freedom are defined  in the global coordinate
+            degrees of freedom. If **localCsys** = None, the degrees of freedom are defined  in the global coordinate
             system. The default value is None.
         """
         pass

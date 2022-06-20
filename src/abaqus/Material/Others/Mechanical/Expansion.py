@@ -17,14 +17,14 @@ class Expansion:
 
     The table data for this object are:
 
-    - If **type**=ISOTROPIC, the table data specify the following:
+    - If **type** = ISOTROPIC, the table data specify the following:
     
         - :math:`\alpha` in Abaqus/Standard or Abaqus/Explicit analysis.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **type**=ORTHOTROPIC, the table data specify the following:
+    - If **type** = ORTHOTROPIC, the table data specify the following:
     
         - :math:`\alpha_{11}`.
         - :math:`\alpha_{22}`.
@@ -33,7 +33,7 @@ class Expansion:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **type**=ANISOTROPIC, the table data specify the following:
+    - If **type** = ANISOTROPIC, the table data specify the following:
     
         - :math:`\alpha_{11}`.
         - :math:`\alpha_{22}`.
@@ -45,7 +45,7 @@ class Expansion:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **type**=SHORT_FIBER, there is no table data.
+    - If **type** = SHORT_FIBER, there is no table data.
 
     The corresponding analysis keywords are:
 

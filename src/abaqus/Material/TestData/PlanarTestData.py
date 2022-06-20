@@ -65,7 +65,7 @@ class PlanarTestData:
         table
             A sequence of sequences of Floats specifying the items described below.
         smoothing
-            None or an Int specifying the value for smoothing. If **smoothing**=None, no smoothing is
+            None or an Int specifying the value for smoothing. If **smoothing** = None, no smoothing is
             employed. The default value is None.
         lateralNominalStrain
             A Boolean specifying whether to include lateral nominal strain. The default value is

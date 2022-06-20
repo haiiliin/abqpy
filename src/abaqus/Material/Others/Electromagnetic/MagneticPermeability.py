@@ -17,7 +17,7 @@ class MagneticPermeability:
 
     The table data for this object are:
 
-    - If **type**=ISOTROPIC, the table data specify the following:
+    - If **type** = ISOTROPIC, the table data specify the following:
     
         - Magnetic permeability.
         - Frequency, if the data depend on frequency.
@@ -25,7 +25,7 @@ class MagneticPermeability:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **type**=ISOTROPIC, and **nonlinearBH**=TRUE, the table data specify the following:
+    - If **type** = ISOTROPIC, and **nonlinearBH** = TRUE, the table data specify the following:
     
         - Magntitude of the magnetic flux density vector.
         - Magnitude of the magnetic field vector.
@@ -33,7 +33,7 @@ class MagneticPermeability:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **type**=ORTHOTROPIC, the table data specify the following:
+    - If **type** = ORTHOTROPIC, the table data specify the following:
     
         - :math:`\mu_{11}^{E}`.
         - :math:`\mu_{22}^{E}`.
@@ -43,7 +43,7 @@ class MagneticPermeability:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **type**=ORTHOTROPIC, and **nonlinearBH**=TRUE, the table data specify the following:
+    - If **type** = ORTHOTROPIC, and **nonlinearBH** = TRUE, the table data specify the following:
     
         - Magntitude of the magnetic flux density vector in the first direction.
         - Magnitude of the magnetic field vector in the second direction.
@@ -51,7 +51,7 @@ class MagneticPermeability:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **type**=ANISOTROPIC, the table data specify the following:
+    - If **type** = ANISOTROPIC, the table data specify the following:
     
         - :math:`\mu_{11}^{E}`.
         - :math:`\mu_{12}^{E}`.
@@ -96,15 +96,15 @@ class MagneticPermeability:
         ----------
         table
             A sequence of sequences of Floats specifying the items described below in “Table data.”
-            If **type**=ORTHOTROPIC and nonlinearBH=ON, the data specified in the **table** is for the
+            If **type** = ORTHOTROPIC and nonlinearBH=ON, the data specified in the **table** is for the
             first direction and **table2** and **table3** must be specified.
         table2
             A sequence of sequences of Floats specifying the items described below in “Table data”
-            in the second direction. **table2** must be specified only if **type**=ORTHOTROPIC and
+            in the second direction. **table2** must be specified only if **type** = ORTHOTROPIC and
             nonlinearBH=ON.
         table3
             A sequence of sequences of Floats specifying the items described below in “Table data”
-            in the third direction. **table3** must be specified only if **type**=ORTHOTROPIC and
+            in the third direction. **table3** must be specified only if **type** = ORTHOTROPIC and
             nonlinearBH=ON.
         type
             A SymbolicConstant specifying the type of magnetic permeability. Possible values are

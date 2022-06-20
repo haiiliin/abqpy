@@ -17,7 +17,7 @@ class ElectricalConductivity:
 
     The table data for this object are:
 
-    - If **type**=ISOTROPIC, the table data specify the following:
+    - If **type** = ISOTROPIC, the table data specify the following:
     
         - Electrical conductivity.
         - Frequency, if the data depend on frequency.
@@ -25,7 +25,7 @@ class ElectricalConductivity:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **type**=ORTHOTROPIC, the table data specify the following:
+    - If **type** = ORTHOTROPIC, the table data specify the following:
     
         - :math:`\sigma_{11}^{E}`.
         - :math:`\sigma_{22}^{E}`.
@@ -35,7 +35,7 @@ class ElectricalConductivity:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **type**=ANISOTROPIC, the table data specify the following:
+    - If **type** = ANISOTROPIC, the table data specify the following:
     
         - :math:`\sigma_{11}^{E}`.
         - :math:`\sigma_{12}^{E}`.

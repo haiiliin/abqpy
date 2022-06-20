@@ -27,7 +27,7 @@ class ConnectorDamping(ConnectorBehaviorOption):
 
         The table data for this object are:
 
-        - If **behavior**=LINEAR and **coupling**=UNCOUPLED, then each sequence of the table data specifies the following:
+        - If **behavior** = LINEAR and **coupling** = UNCOUPLED, then each sequence of the table data specifies the following:
         
             - Damping coefficient (force or moment per relative velocity).
             - Frequency (cycles/time), if the data depend on frequency.
@@ -35,7 +35,7 @@ class ConnectorDamping(ConnectorBehaviorOption):
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-        - If **behavior**=NONLINEAR and **coupling**=UNCOUPLED, then each sequence of the table data specifies the following:
+        - If **behavior** = NONLINEAR and **coupling** = UNCOUPLED, then each sequence of the table data specifies the following:
         
             - Force or moment.
             - Relative displacement or rotation.
@@ -43,7 +43,7 @@ class ConnectorDamping(ConnectorBehaviorOption):
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-        - If **behavior**=LINEAR and **coupling**=COUPLED, the table data specify the symmetric portion
+        - If **behavior** = LINEAR and **coupling** = COUPLED, the table data specify the symmetric portion
           of the damping matrix for the specified components followed by any temperature data and then
           any field data. For example, if components 2, 3, and 5 are specified, the table portion of the command is as follows: table=( (C22C22, C23C23, C25C25, C33C33, C35C35, C55C55,), )
           The following items should then be specified as comma-separated data:
@@ -52,19 +52,19 @@ class ConnectorDamping(ConnectorBehaviorOption):
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-        - If **behavior**=NONLINEAR and **coupling**=COUPLED_POSITION or COUPLED_MOTION, each sequence 
+        - If **behavior** = NONLINEAR and **coupling** = COUPLED_POSITION or COUPLED_MOTION, each sequence 
           of the table data specifies the following:
         
             - Force or moment for the directions in the **components** list.
             - Relative velocity for the directions in the **components** list.
             - Relative position or angle for the first **independentComponents** direction if 
-              **coupling**=COUPLED_POSITION.
+              **coupling** = COUPLED_POSITION.
             - Relative displacement or rotation for the first **independentComponents** direction if 
-              **coupling**=COUPLED_MOTION.
+              **coupling** = COUPLED_MOTION.
             - Relative position or angle for the second **independentComponents** direction if 
-              **coupling**=COUPLED_POSITION.
+              **coupling** = COUPLED_POSITION.
             - Relative displacement or rotation for the second **independentComponents** direction if
-              **coupling**=COUPLED_MOTION.
+              **coupling** = COUPLED_MOTION.
             - Etc. up to the Nth **independentComponents** direction.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
@@ -111,8 +111,8 @@ class ConnectorDamping(ConnectorBehaviorOption):
             values are LINEAR and NONLINEAR. The default value is LINEAR.
         coupling
             A SymbolicConstant specifying whether the damping behavior is coupled between the
-            connector's components of relative motion. If **behavior**=LINEAR, then possible values
-            are UNCOUPLED and COUPLED. If **behavior**=NONLINEAR, then possible values are UNCOUPLED,
+            connector's components of relative motion. If **behavior** = LINEAR, then possible values
+            are UNCOUPLED and COUPLED. If **behavior** = NONLINEAR, then possible values are UNCOUPLED,
             COUPLED_POSITION, and COUPLED_MOTION. Possible values are UNCOUPLED, COUPLED,
             COUPLED_POSITION, and COUPLED_MOTION. The default value is UNCOUPLED.
         dependencies
@@ -122,7 +122,7 @@ class ConnectorDamping(ConnectorBehaviorOption):
             is OFF.
         frequencyDependency
             A Boolean specifying whether the behavior data depend on frequency. This value is
-            applicable only if **behavior**= LINEAR and **coupling**=UNCOUPLED. The default value is
+            applicable only if **behavior** =  LINEAR and **coupling** = UNCOUPLED. The default value is
             OFF.
         table
             A sequence of sequences of Floats specifying damping properties. Items in the table data
@@ -130,7 +130,7 @@ class ConnectorDamping(ConnectorBehaviorOption):
         independentComponents
             A sequence of Ints specifying the list of independent components that are included in
             the definition of the connector damping data. This argument is applicable only if
-            **behavior**=NONLINEAR and **coupling**=COUPLED_POSITION or COUPLED_MOTION. When this
+            **behavior** = NONLINEAR and **coupling** = COUPLED_POSITION or COUPLED_MOTION. When this
             argument is applicable, at least one value must be specified. Only available components
             can be specified. The default value is an empty sequence.
         components

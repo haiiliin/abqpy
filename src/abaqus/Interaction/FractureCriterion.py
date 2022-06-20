@@ -20,7 +20,7 @@ class FractureCriterion:
     
     Table data for **initTable**:
     
-    If **type**=VCCT for **mixedModeBehavior**=BK or REEDER, the table data specify the following:
+    If **type** = VCCT for **mixedModeBehavior** = BK or REEDER, the table data specify the following:
     
         - Mode I critical energy release rate, GICGI⁢C.
         - Mode II critical energy release rate, GIICGI⁢I⁢C.
@@ -30,7 +30,7 @@ class FractureCriterion:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    If **type**=VCCT for **mixedModeBehavior**=POWER, the table data specify the following:
+    If **type** = VCCT for **mixedModeBehavior** = POWER, the table data specify the following:
     
         - Mode I critical energy release rate, GICGI⁢C.
         - Mode II critical energy release rate, GIICGI⁢I⁢C.
@@ -41,7 +41,7 @@ class FractureCriterion:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    If **type**=ENHANCED VCCT for **mixedModeBehavior**=BK or REEDER, the table data specify the following:
+    If **type** = ENHANCED VCCT for **mixedModeBehavior** = BK or REEDER, the table data specify the following:
     
         - Mode I critical energy release rate for onset crack, GICGI⁢C.
         - Mode II critical energy release rate for onset crack, GIICGI⁢I⁢C.
@@ -54,7 +54,7 @@ class FractureCriterion:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    If **type**=ENHANCED VCCT for **mixedModeBehavior**=POWER, the table data specify the following:
+    If **type** = ENHANCED VCCT for **mixedModeBehavior** = POWER, the table data specify the following:
     
         - Mode I critical energy release rate for onset crack, GICGI⁢C.
         - Mode II critical energy release rate for onset crack, GIICGI⁢I⁢C.
@@ -119,7 +119,7 @@ class FractureCriterion:
             fracture criterion. Possible values are ON and OFF. The default value is OFF.
         unstableTolerance
             The SymbolicConstant DEFAULT or a Float specifying the tolerance for unstable crack
-            propagation. This parameter specified only if **specifyUnstableCrackProp**=ON. The default
+            propagation. This parameter specified only if **specifyUnstableCrackProp** = ON. The default
             value is DEFAULT.
 
         Returns

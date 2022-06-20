@@ -182,7 +182,7 @@ class StepModel(ModelBase):
         maxBlocks
             The SymbolicConstant DEFAULT or an Int specifying the maximum number of Lanczos block
             steps within each Lanczos run. The default value is DEFAULT.Note:*minEigen*,
-            **blockSize**, and **maxBlocks** are ignored unless **eigensolver**=LANCZOS.
+            **blockSize**, and **maxBlocks** are ignored unless **eigensolver** = LANCZOS.
         matrixStorage
             A SymbolicConstant specifying the type of matrix storage. Possible values are SYMMETRIC,
             UNSYMMETRIC, and SOLVER_DEFAULT. The default value is SOLVER_DEFAULT.
@@ -952,11 +952,11 @@ class StepModel(ModelBase):
             value is AUTOMATIC_GLOBAL.
         maxIncrement
             None or a Float specifying the maximum time increment. If there is no upper limit,
-            **maxIncrement**=None. This argument is required only when
-            **timeIncrementationMethod**=AUTOMATIC_GLOBAL or AUTOMATIC_EBE. The default value is None.
+            **maxIncrement** = None. This argument is required only when
+            **timeIncrementationMethod** = AUTOMATIC_GLOBAL or AUTOMATIC_EBE. The default value is None.
         scaleFactor
             A Float specifying the factor that is used to scale the time increment. This argument is
-            required only when **timeIncrementationMethod**=AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
+            required only when **timeIncrementationMethod** = AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
             FIXED_EBE. The default value is 1.0.
         massScaling
             A MassScalingArray object specifying mass scaling controls. The default value is
@@ -968,7 +968,7 @@ class StepModel(ModelBase):
             1.2.
         userDefinedInc
             None or a Float specifying the user-defined time increment. This argument is required
-            only when **timeIncrementationMethod**=FIXED_USER_DEFINED_INC. The default value is None.
+            only when **timeIncrementationMethod** = FIXED_USER_DEFINED_INC. The default value is None.
         maintainAttributes
             A Boolean specifying whether to retain attributes from an existing step with the same
             name. The default value is False.
@@ -1046,11 +1046,11 @@ class StepModel(ModelBase):
             in the list of analysis steps.
         eigensolver
             A SymbolicConstant specifying the eigensolver. Possible values are LANCZOS, SUBSPACE,
-            and AMS.The following optional arguments are ignored unless **eigensolver**=LANCZOS:
+            and AMS.The following optional arguments are ignored unless **eigensolver** = LANCZOS:
             **blockSize**, **maxBlocks**, **normalization**, **propertyEvaluationFrequency**.The following
-            optional arguments are ignored unless **eigensolver**=LANCZOS or AMS: **minEigen**,
+            optional arguments are ignored unless **eigensolver** = LANCZOS or AMS: **minEigen**,
             **maxEigen**, and **acousticCoupling**.The following optional arguments are ignored unless
-            **eigensolver**=AMS: **projectDamping**, **acousticRangeFactor**,
+            **eigensolver** = AMS: **projectDamping**, **acousticRangeFactor**,
             **substructureCutoffMultiplier**, **firstCutoffMultiplier**, **secondCutoffMultiplier**,
             **residualModeRegion**, **regionalModeDof**, and **limitSavedEigenvectorRegion**.
         numEigen
@@ -1094,7 +1094,7 @@ class StepModel(ModelBase):
             value is None.
         projectDamping
             A Boolean specifying whether to include projection of viscous and structural damping
-            operators during **AMS** eigenvalue extraction. Valid only when **eigenSolver**=AMS. The
+            operators during **AMS** eigenvalue extraction. Valid only when **eigenSolver** = AMS. The
             default value is ON.
         acousticCoupling
             A SymbolicConstant specifying the type of acoustic-structural coupling in models with
@@ -1240,22 +1240,22 @@ class StepModel(ModelBase):
             default value is None.
         timePeriod
             A Float specifying the total time period. The default value is 1.0.Note:This parameter
-            is ignored unless **timeIncrementationMethod**=AUTOMATIC.
+            is ignored unless **timeIncrementationMethod** = AUTOMATIC.
         timeIncrementationMethod
             A SymbolicConstant specifying the time incrementation method to be used. Possible values
             are FIXED and AUTOMATIC. The default value is AUTOMATIC.
         initialInc
             A Float specifying the initial time increment. The default value is the total time
             period for the step.Note:This parameter is ignored unless
-            **timeIncrementationMethod**=AUTOMATIC.
+            **timeIncrementationMethod** = AUTOMATIC.
         minInc
             A Float specifying the minimum time increment allowed. The default value is the smaller
             of the suggested initial time increment or 10−5 times the total time period.Note:This
-            parameter is ignored unless **timeIncrementationMethod**=AUTOMATIC.
+            parameter is ignored unless **timeIncrementationMethod** = AUTOMATIC.
         maxInc
             A Float specifying the maximum time increment allowed. The default value is the total
             time period for the step.Note:This parameter is ignored unless
-            **timeIncrementationMethod**=AUTOMATIC.
+            **timeIncrementationMethod** = AUTOMATIC.
 
         Returns
         -------
@@ -1348,7 +1348,7 @@ class StepModel(ModelBase):
             None or a Float specifying the temperature change rate (temperature per time) used to
             define steady state. When all nodal temperatures are changing at less than this rate,
             the solution terminates. The default value is None.Note:This parameter is ignored unless
-            **response**=STEADY_STATE.
+            **response** = STEADY_STATE.
         deltmx
             A Float specifying the maximum temperature change to be allowed in an increment during a
             transient heat transfer analysis. The default value is 0.0.
@@ -1520,7 +1520,7 @@ class StepModel(ModelBase):
         noStop
             A Boolean specifying whether to accept the solution to an increment after the maximum
             number of iterations allowed have been completed, even if the equilibrium tolerances are
-            not satisfied. The default value is OFF.Warning:You should set **noStop**=OFF only in
+            not satisfied. The default value is OFF.Warning:You should set **noStop** = OFF only in
             special cases when you have a thorough understanding of how to interpret the results.
         maintainAttributes
             A Boolean specifying whether to retain attributes from an existing step with the same
@@ -2184,13 +2184,13 @@ class StepModel(ModelBase):
         maximumDisplacement
             A Float specifying the value of the total displacement (or rotation) at the node and
             degree of freedom that, if crossed during an increment, ends the step at the current
-            increment. This argument is required when **nodeOn**=ON. The default value is 0.0.
+            increment. This argument is required when **nodeOn** = ON. The default value is 0.0.
         dof
             An Int specifying the degree of freedom being monitored. This argument is required when
-            **nodeOn**=ON. The default value is 0.
+            **nodeOn** = ON. The default value is 0.
         region
             A Region object specifying the vertex at which the finishing displacement value is being
-            monitored. This argument is required when **nodeOn**=ON.
+            monitored. This argument is required when **nodeOn** = ON.
         timeIncrementationMethod
             A SymbolicConstant specifying the time incrementation method to be used. Possible values
             are FIXED and AUTOMATIC. The default value is AUTOMATIC.
@@ -2222,7 +2222,7 @@ class StepModel(ModelBase):
         noStop
             A Boolean specifying whether to accept the solution to an increment after the maximum
             number of iterations allowed have been completed, even if the equilibrium tolerances are
-            not satisfied. The default value is OFF.Warning:You should set **noStop**=ON only in
+            not satisfied. The default value is OFF.Warning:You should set **noStop** = ON only in
             special cases when you have a thorough understanding of how to interpret the results.
         maintainAttributes
             A Boolean specifying whether to retain attributes from an existing step with the same
@@ -2364,7 +2364,7 @@ class StepModel(ModelBase):
         noStop
             A Boolean specifying whether to accept the solution to an increment after the maximum
             number of iterations allowed has been completed, even if the equilibrium tolerances are
-            not satisfied. The default value is OFF.Warning:You should set **noStop**=ON only in
+            not satisfied. The default value is OFF.Warning:You should set **noStop** = ON only in
             special cases when you have a thorough understanding of how to interpret the results.
         maintainAttributes
             A Boolean specifying whether to retain attributes from an existing step with the same
@@ -2795,7 +2795,7 @@ class StepModel(ModelBase):
             are WHOLE_MODEL, REGION, and NONE. The default value is WHOLE_MODEL.
         recoveryRegion
             A Region object specifying the region for substructure recovery. This argument is
-            required when **recoveryMatrix**=REGION.
+            required when **recoveryMatrix** = REGION.
         computeGravityLoadVectors
             A Boolean specifying whether to compute the gravity load vectors. The default value is
             False.
@@ -2918,10 +2918,10 @@ class StepModel(ModelBase):
             value is AUTOMATIC_GLOBAL.
         maxIncrement
             None or a Float specifying the maximum time increment allowed. If there is no upper
-            limit, **maxIncrement**=None. The default value is None.
+            limit, **maxIncrement** = None. The default value is None.
         scaleFactor
             A Float specifying the factor that is used to scale the time increment. This argument is
-            required only when **timeIncrementationMethod**=AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
+            required only when **timeIncrementationMethod** = AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
             FIXED_EBE. The default value is 1.0.
         userDefinedInc
             None or a Float specifying the user-defined time increment. The default value is None.

@@ -48,7 +48,7 @@ class ShapePointSymmetry(GeometricRestriction):
             the default value is MODEL.
         csys
             None or a DatumCsys object specifying the symmetry point represented as the origin of a
-            local coordinate system. If **csys**=None, the global coordinate system is used. When this
+            local coordinate system. If **csys** = None, the global coordinate system is used. When this
             member is queried, it returns an Int. The default value is None.
         mainPointDetermination
             A SymbolicConstant specifying the rule for determining the main node. Possible values
@@ -88,7 +88,7 @@ class ShapePointSymmetry(GeometricRestriction):
         ----------
         csys
             None or a DatumCsys object specifying the symmetry point represented as the origin of a
-            local coordinate system. If **csys**=None, the global coordinate system is used. When this
+            local coordinate system. If **csys** = None, the global coordinate system is used. When this
             member is queried, it returns an Int. The default value is None.
         mainPointDetermination
             A SymbolicConstant specifying the rule for determining the main node. Possible values

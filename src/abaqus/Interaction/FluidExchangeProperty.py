@@ -47,7 +47,7 @@ class FluidExchangeProperty(ContactProperty):
             A String specifying the interaction property repository key.
         dataTable
             A sequence of sequences of Floats specifying the viscous and hydrodynamic resistance
-            coefficients when **definition**=BULK_VISCOSITY. Each sequence contains the following
+            coefficients when **definition** = BULK_VISCOSITY. Each sequence contains the following
             data:
             
             - The viscous resistance coefficient.
@@ -59,12 +59,12 @@ class FluidExchangeProperty(ContactProperty):
             - Etc.
             
             Alternatively, the sequence data may specify the mass flow rate. This is applicable only
-            when **definition**=MASS_FLUX. In this form, only one sequence is specified and that
+            when **definition** = MASS_FLUX. In this form, only one sequence is specified and that
             sequence contains the following data:
             
             - The mass flow rate per unit area.
               Alternatively, the sequence data may specify the mass rate leakage. This is applicable
-              only when **definition**=MASS_RATE_LEAK. Each sequence contains the following data:
+              only when **definition** = MASS_RATE_LEAK. Each sequence contains the following data:
               
               - The absolute value of the mass flow rate per unit area. (The first tabular value
                 entered must always be zero.)
@@ -77,12 +77,12 @@ class FluidExchangeProperty(ContactProperty):
               - Etc.
             
             Alternatively, the sequence data may specify the volume flow rate. This is applicable
-            only when **definition**=VOL_FLUX. In this form, only one sequence is specified and that
+            only when **definition** = VOL_FLUX. In this form, only one sequence is specified and that
             sequence contains the following data:
             
             - The volumetric flow rate per unit area.
               Alternatively, the sequence data may specify the volume rate leakage. This is applicable
-              only when **definition**=VOL_RATE_LEAK. Each sequence contains the following data:
+              only when **definition** = VOL_RATE_LEAK. Each sequence contains the following data:
               
               - The absolute value of the volumetric flow rate per unit area. (The first tabular value
                 entered must always be zero.)
@@ -99,16 +99,16 @@ class FluidExchangeProperty(ContactProperty):
             VOL_RATE_LEAK. The default value is BULK_VISCOSITY.
         pressureDependency
             A Boolean specifying whether the data will have pressure dependency. This argument is
-            applicable only when **definition**=BULK_VISCOSITY, or when **definition**=MASS_RATE_LEAK,
-            or when **definition**=VOL_RATE_LEAK. The default value is OFF.
+            applicable only when **definition** = BULK_VISCOSITY, or when **definition** = MASS_RATE_LEAK,
+            or when **definition** = VOL_RATE_LEAK. The default value is OFF.
         temperatureDependency
             A Boolean specifying whether the data will have temperature dependency. This argument is
-            applicable only when **definition**=BULK_VISCOSITY, or when **definition**=MASS_RATE_LEAK,
-            or when **definition**=VOL_RATE_LEAK. The default value is OFF.
+            applicable only when **definition** = BULK_VISCOSITY, or when **definition** = MASS_RATE_LEAK,
+            or when **definition** = VOL_RATE_LEAK. The default value is OFF.
         fieldDependencies
             An Int specifying the number of field variable dependencies in the data. This argument
-            is applicable only when **definition**=BULK_VISCOSITY, or when
-            **definition**=MASS_RATE_LEAK, or when **definition**=VOL_RATE_LEAK. The default value is 0.
+            is applicable only when **definition** = BULK_VISCOSITY, or when
+            **definition** = MASS_RATE_LEAK, or when **definition** = VOL_RATE_LEAK. The default value is 0.
 
         Returns
         -------
@@ -134,15 +134,15 @@ class FluidExchangeProperty(ContactProperty):
             VOL_RATE_LEAK. The default value is BULK_VISCOSITY.
         pressureDependency
             A Boolean specifying whether the data will have pressure dependency. This argument is
-            applicable only when **definition**=BULK_VISCOSITY, or when **definition**=MASS_RATE_LEAK,
-            or when **definition**=VOL_RATE_LEAK. The default value is OFF.
+            applicable only when **definition** = BULK_VISCOSITY, or when **definition** = MASS_RATE_LEAK,
+            or when **definition** = VOL_RATE_LEAK. The default value is OFF.
         temperatureDependency
             A Boolean specifying whether the data will have temperature dependency. This argument is
-            applicable only when **definition**=BULK_VISCOSITY, or when **definition**=MASS_RATE_LEAK,
-            or when **definition**=VOL_RATE_LEAK. The default value is OFF.
+            applicable only when **definition** = BULK_VISCOSITY, or when **definition** = MASS_RATE_LEAK,
+            or when **definition** = VOL_RATE_LEAK. The default value is OFF.
         fieldDependencies
             An Int specifying the number of field variable dependencies in the data. This argument
-            is applicable only when **definition**=BULK_VISCOSITY, or when
-            **definition**=MASS_RATE_LEAK, or when **definition**=VOL_RATE_LEAK. The default value is 0.
+            is applicable only when **definition** = BULK_VISCOSITY, or when
+            **definition** = MASS_RATE_LEAK, or when **definition** = VOL_RATE_LEAK. The default value is 0.
         """
         pass

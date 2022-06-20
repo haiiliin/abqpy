@@ -48,7 +48,7 @@ class PorePressureBC(BoundaryCondition):
     distributionType: SymbolicConstant = UNIFORM
 
     # A String specifying the name of the AnalyticalField object associated with this boundary
-    # condition. The **fieldName** argument applies only when **distributionType**=FIELD. The
+    # condition. The **fieldName** argument applies only when **distributionType** = FIELD. The
     # default value is an empty string.
     fieldName: str = ""
 
@@ -60,7 +60,7 @@ class PorePressureBC(BoundaryCondition):
     region: Region = Region()
 
     # None or a DatumCsys object specifying the local coordinate system of the boundary
-    # condition's degrees of freedom. If **localCsys**=None, the degrees of freedom are defined
+    # condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     # in the global coordinate system. The default value is None.
     localCsys: str = None
 
@@ -95,11 +95,11 @@ class PorePressureBC(BoundaryCondition):
             A Region object specifying the region to which the boundary condition is applied.
         fieldName
             A String specifying the name of the AnalyticalField object associated with this boundary
-            condition. The **fieldName** argument applies only when **distributionType**=FIELD. The
+            condition. The **fieldName** argument applies only when **distributionType** = FIELD. The
             default value is an empty string.
         magnitude
             A Float specifying the pore pressure magnitude. The default value is 0. The **magnitude**
-            argument is optional if **distributionType**=USER_DEFINED.
+            argument is optional if **distributionType** = USER_DEFINED.
         distributionType
             A SymbolicConstant specifying how the boundary condition is distributed spatially.
             Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
@@ -134,11 +134,11 @@ class PorePressureBC(BoundaryCondition):
         ----------
         fieldName
             A String specifying the name of the AnalyticalField object associated with this boundary
-            condition. The **fieldName** argument applies only when **distributionType**=FIELD. The
+            condition. The **fieldName** argument applies only when **distributionType** = FIELD. The
             default value is an empty string.
         magnitude
             A Float specifying the pore pressure magnitude. The default value is 0. The **magnitude**
-            argument is optional if **distributionType**=USER_DEFINED.
+            argument is optional if **distributionType** = USER_DEFINED.
         distributionType
             A SymbolicConstant specifying how the boundary condition is distributed spatially.
             Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.

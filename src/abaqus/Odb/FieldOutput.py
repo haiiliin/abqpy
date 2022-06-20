@@ -92,9 +92,9 @@ class FieldOutput:
             TENSOR_2D_SURFACE.
         componentLabels
             A sequence of Strings specifying the labels for each component of the value. The length
-            of the sequence must match the type. If **type**=TENSOR, the default value is **name** with
-            the suffixes ('11', '22', '33', '12', '13', '23'). If **type**=VECTOR, the default value
-            is **name** with the suffixes ('1', '2', '3'). If **type**=SCALAR, the default value is an
+            of the sequence must match the type. If **type** = TENSOR, the default value is **name** with
+            the suffixes ('11', '22', '33', '12', '13', '23'). If **type** = VECTOR, the default value
+            is **name** with the suffixes ('1', '2', '3'). If **type** = SCALAR, the default value is an
             empty sequence.
         validInvariants
             A sequence of SymbolicConstants specifying which invariants should be calculated for
@@ -664,9 +664,9 @@ class FieldOutput:
         ----------
         componentLabels
             A sequence of Strings specifying the labels for each component of the value. The length
-            of the sequence must match the type. If **type**=TENSOR, the default value is **name** with
-            the suffixes ('11', '22', '33', '12', '13', '23'). If **type**=VECTOR, the default value
-            is **name** with the suffixes ('1', '2', '3'). If **type**=SCALAR, the default value is an
+            of the sequence must match the type. If **type** = TENSOR, the default value is **name** with
+            the suffixes ('11', '22', '33', '12', '13', '23'). If **type** = VECTOR, the default value
+            is **name** with the suffixes ('1', '2', '3'). If **type** = SCALAR, the default value is an
             empty sequence.
         """
         pass

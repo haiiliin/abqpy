@@ -39,13 +39,13 @@ class SurfaceToSurfaceContactStd(Interaction):
     # tracking algorithm uses only normal projections and is specified by using ONE_CONFIG.
     # The PATH tracking algorithm uses crossing and normal projections and is specified by
     # using TWO_CONFIG. Possible values are ONE_CONFIG and TWO_CONFIG. The default value is
-    # TWO_CONFIG.This argument is valid only when **sliding**=FINITE and
-    # **enforcement**=SURFACE_TO_SURFACE.
+    # TWO_CONFIG.This argument is valid only when **sliding** = FINITE and
+    # **enforcement** = SURFACE_TO_SURFACE.
     contactTracking: SymbolicConstant = TWO_CONFIG
 
     # A SymbolicConstant specifying the manner in which midface constraints are employed.
     # Possible values are SELECTIVE, NEVER, and ALWAYS. The default value is SELECTIVE.This
-    # argument is not valid when **sliding**=FINITE and **enforcement**=SURFACE_TO_SURFACE.
+    # argument is not valid when **sliding** = FINITE and **enforcement** = SURFACE_TO_SURFACE.
     supplementaryContact: SymbolicConstant = SELECTIVE
 
     def __init__(
@@ -120,7 +120,7 @@ class SurfaceToSurfaceContactStd(Interaction):
             The default value is NONE.
         overclosure
             A Float specifying the maximum overclosure distance allowed. This argument applies only
-            when **interferenceType**=UNIFORM. The default value is 0.0.
+            when **interferenceType** = UNIFORM. The default value is 0.0.
         interferenceDirectionType
             A SymbolicConstant specifying the method used to determine the interference direction.
             Possible values are COMPUTED and DIRECTION_COSINE. The default value is COMPUTED.
@@ -131,7 +131,7 @@ class SurfaceToSurfaceContactStd(Interaction):
             - YY-direction cosine of the interference direction vector.
             - ZZ-direction cosine of the interference direction vector.
             
-            This argument is required only when **interferenceDirectionType**=DIRECTION_COSINE.
+            This argument is required only when **interferenceDirectionType** = DIRECTION_COSINE.
         amplitude
             A String specifying the name of the amplitude curve that defines the magnitude of the
             prescribed interference during the step. Use None to specify that the prescribed
@@ -139,7 +139,7 @@ class SurfaceToSurfaceContactStd(Interaction):
             linearly over the step.
         smooth
             A Float specifying the degree of smoothing used for deformable or rigid main surfaces
-            involved when **enforcement**=NODE_TO_SURFACE. The value given must lie between 0.0 and
+            involved when **enforcement** = NODE_TO_SURFACE. The value given must lie between 0.0 and
             0.5. The default value is 0.2.
         hcrit
             A Float specifying the distance by which a secondary node must penetrate the main
@@ -161,8 +161,8 @@ class SurfaceToSurfaceContactStd(Interaction):
             NODE_TO_SURFACE and SURFACE_TO_SURFACE. The default value is SURFACE_TO_SURFACE.
         thickness
             A Boolean specifying whether shell/membrane element thickness is considered. The default
-            value is ON.This argument is not valid when **sliding**=FINITE and
-            **enforcement**=NODE_TO_SURFACE.
+            value is ON.This argument is not valid when **sliding** = FINITE and
+            **enforcement** = NODE_TO_SURFACE.
         contactControls
             A String specifying the name of the ContactControl object associated with this
             interaction. The empty string indicates that the default contact controls will be used.
@@ -260,7 +260,7 @@ class SurfaceToSurfaceContactStd(Interaction):
             The default value is NONE.
         overclosure
             A Float specifying the maximum overclosure distance allowed. This argument applies only
-            when **interferenceType**=UNIFORM. The default value is 0.0.
+            when **interferenceType** = UNIFORM. The default value is 0.0.
         interferenceDirectionType
             A SymbolicConstant specifying the method used to determine the interference direction.
             Possible values are COMPUTED and DIRECTION_COSINE. The default value is COMPUTED.
@@ -271,7 +271,7 @@ class SurfaceToSurfaceContactStd(Interaction):
             - YY-direction cosine of the interference direction vector.
             - ZZ-direction cosine of the interference direction vector.
             
-            This argument is required only when **interferenceDirectionType**=DIRECTION_COSINE.
+            This argument is required only when **interferenceDirectionType** = DIRECTION_COSINE.
         amplitude
             A String specifying the name of the amplitude curve that defines the magnitude of the
             prescribed interference during the step. Use None to specify that the prescribed
@@ -279,7 +279,7 @@ class SurfaceToSurfaceContactStd(Interaction):
             linearly over the step.
         smooth
             A Float specifying the degree of smoothing used for deformable or rigid main surfaces
-            involved when **enforcement**=NODE_TO_SURFACE. The value given must lie between 0.0 and
+            involved when **enforcement** = NODE_TO_SURFACE. The value given must lie between 0.0 and
             0.5. The default value is 0.2.
         hcrit
             A Float specifying the distance by which a secondary node must penetrate the main
@@ -301,8 +301,8 @@ class SurfaceToSurfaceContactStd(Interaction):
             NODE_TO_SURFACE and SURFACE_TO_SURFACE. The default value is SURFACE_TO_SURFACE.
         thickness
             A Boolean specifying whether shell/membrane element thickness is considered. The default
-            value is ON.This argument is not valid when **sliding**=FINITE and
-            **enforcement**=NODE_TO_SURFACE.
+            value is ON.This argument is not valid when **sliding** = FINITE and
+            **enforcement** = NODE_TO_SURFACE.
         contactControls
             A String specifying the name of the ContactControl object associated with this
             interaction. The empty string indicates that the default contact controls will be used.
@@ -382,7 +382,7 @@ class SurfaceToSurfaceContactStd(Interaction):
             The default value is NONE.
         overclosure
             A Float specifying the maximum overclosure distance allowed. This argument applies only
-            when **interferenceType**=UNIFORM. The default value is 0.0.
+            when **interferenceType** = UNIFORM. The default value is 0.0.
         interferenceDirectionType
             A SymbolicConstant specifying the method used to determine the interference direction.
             Possible values are COMPUTED and DIRECTION_COSINE. The default value is COMPUTED.
@@ -393,7 +393,7 @@ class SurfaceToSurfaceContactStd(Interaction):
             - YY-direction cosine of the interference direction vector.
             - ZZ-direction cosine of the interference direction vector.
             
-            This argument is required only when **interferenceDirectionType**=DIRECTION_COSINE.
+            This argument is required only when **interferenceDirectionType** = DIRECTION_COSINE.
         amplitude
             A String specifying the name of the amplitude curve that defines the magnitude of the
             prescribed interference during the step. Use None to specify that the prescribed

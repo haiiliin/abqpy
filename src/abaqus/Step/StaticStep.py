@@ -244,7 +244,7 @@ class StaticStep(AnalysisStep):
 
     # A Boolean specifying whether to accept the solution to an increment after the maximum
     # number of iterations allowed has been completed, even if the equilibrium tolerances are
-    # not satisfied. The default value is OFF.Warning:You should set **noStop**=ON only in
+    # not satisfied. The default value is OFF.Warning:You should set **noStop** = ON only in
     # special cases when you have a thorough understanding of how to interpret the results.
     noStop: Boolean = OFF
 
@@ -477,7 +477,7 @@ class StaticStep(AnalysisStep):
         noStop
             A Boolean specifying whether to accept the solution to an increment after the maximum
             number of iterations allowed has been completed, even if the equilibrium tolerances are
-            not satisfied. The default value is OFF.Warning:You should set **noStop**=ON only in
+            not satisfied. The default value is OFF.Warning:You should set **noStop** = ON only in
             special cases when you have a thorough understanding of how to interpret the results.
         maintainAttributes
             A Boolean specifying whether to retain attributes from an existing step with the same
@@ -596,7 +596,7 @@ class StaticStep(AnalysisStep):
         noStop
             A Boolean specifying whether to accept the solution to an increment after the maximum
             number of iterations allowed has been completed, even if the equilibrium tolerances are
-            not satisfied. The default value is OFF.Warning:You should set **noStop**=ON only in
+            not satisfied. The default value is OFF.Warning:You should set **noStop** = ON only in
             special cases when you have a thorough understanding of how to interpret the results.
         useLongTermSolution
             A Boolean specifying wether to obtain the fully relaxed long-term elastic solution with

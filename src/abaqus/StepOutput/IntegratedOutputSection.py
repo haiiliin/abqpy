@@ -59,7 +59,7 @@ class IntegratedOutputSection:
             is valid only when you include the **refPoint** argument.
         localCsys
             None or a DatumCsys object specifying the local coordinate system used to express vector
-            output. If **localCsys**=None, the degrees of freedom are defined in the global coordinate
+            output. If **localCsys** = None, the degrees of freedom are defined in the global coordinate
             system. The default value is None.
         projectOrientation
             A Boolean specifying that the coordinate system be projected onto the **surface** such
@@ -106,7 +106,7 @@ class IntegratedOutputSection:
             is valid only when you include the **refPoint** argument.
         localCsys
             None or a DatumCsys object specifying the local coordinate system used to express vector
-            output. If **localCsys**=None, the degrees of freedom are defined in the global coordinate
+            output. If **localCsys** = None, the degrees of freedom are defined in the global coordinate
             system. The default value is None.
         projectOrientation
             A Boolean specifying that the coordinate system be projected onto the **surface** such

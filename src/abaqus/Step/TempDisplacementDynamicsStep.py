@@ -157,11 +157,11 @@ class TempDisplacementDynamicsStep(AnalysisStep):
     timeIncrementationMethod: SymbolicConstant = AUTOMATIC_GLOBAL
 
     # None or a Float specifying the maximum time increment allowed. If there is no upper
-    # limit, **maxIncrement**=None. The default value is None.
+    # limit, **maxIncrement** = None. The default value is None.
     maxIncrement: float = None
 
     # A Float specifying the factor that is used to scale the time increment. This argument is
-    # required only when **timeIncrementationMethod**=AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
+    # required only when **timeIncrementationMethod** = AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
     # FIXED_EBE. The default value is 1.0.
     scaleFactor: float = 1
 
@@ -326,10 +326,10 @@ class TempDisplacementDynamicsStep(AnalysisStep):
             value is AUTOMATIC_GLOBAL.
         maxIncrement
             None or a Float specifying the maximum time increment allowed. If there is no upper
-            limit, **maxIncrement**=None. The default value is None.
+            limit, **maxIncrement** = None. The default value is None.
         scaleFactor
             A Float specifying the factor that is used to scale the time increment. This argument is
-            required only when **timeIncrementationMethod**=AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
+            required only when **timeIncrementationMethod** = AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
             FIXED_EBE. The default value is 1.0.
         userDefinedInc
             None or a Float specifying the user-defined time increment. The default value is None.
@@ -386,10 +386,10 @@ class TempDisplacementDynamicsStep(AnalysisStep):
             value is AUTOMATIC_GLOBAL.
         maxIncrement
             None or a Float specifying the maximum time increment allowed. If there is no upper
-            limit, **maxIncrement**=None. The default value is None.
+            limit, **maxIncrement** = None. The default value is None.
         scaleFactor
             A Float specifying the factor that is used to scale the time increment. This argument is
-            required only when **timeIncrementationMethod**=AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
+            required only when **timeIncrementationMethod** = AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
             FIXED_EBE. The default value is 1.0.
         userDefinedInc
             None or a Float specifying the user-defined time increment. The default value is None.

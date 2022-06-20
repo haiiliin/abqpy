@@ -103,37 +103,37 @@ class ConstraintModel(ModelBase):
             value is OFF.
         localCsys
             None or a DatumCsys object specifying the initial orientation of the local coordinate
-            system for the coupling's degrees of freedom. If **localCsys**=None, the coupling is
+            system for the coupling's degrees of freedom. If **localCsys** = None, the coupling is
             defined in the global coordinate system. The default value is None.
         u1
             A Boolean specifying if the displacement component in the 1-direction is constrained to
             the reference node for a kinematic coupling constraint. The default value is ON.The **u1**
-            argument applies only when **couplingType**=KINEMATIC.
+            argument applies only when **couplingType** = KINEMATIC.
         u2
             A Boolean specifying if the displacement component in the 2-direction is constrained to
             the reference node for a kinematic coupling constraint. The default value is ON.The **u2**
-            argument applies only when **couplingType**=KINEMATIC.
+            argument applies only when **couplingType** = KINEMATIC.
         u3
             A Boolean specifying if the displacement component in the 3-direction is constrained to
             the reference node for a kinematic coupling constraint. The default value is ON.The **u3**
-            argument applies only when **couplingType**=KINEMATIC.
+            argument applies only when **couplingType** = KINEMATIC.
         ur1
             A Boolean specifying if the rotational displacement component about the 1-direction is
             constrained to the reference node for a kinematic coupling constraint. The default value
-            is ON.The **ur1** argument applies only when **couplingType**=KINEMATIC.
+            is ON.The **ur1** argument applies only when **couplingType** = KINEMATIC.
         ur2
             A Boolean specifying if the rotational displacement component about the 2-direction is
             constrained to the reference node for a kinematic coupling constraint. The default value
-            is ON.The **ur2** argument applies only when **couplingType**=KINEMATIC.
+            is ON.The **ur2** argument applies only when **couplingType** = KINEMATIC.
         ur3
             A Boolean specifying if the rotational displacement component about the 3-direction is
             constrained to the reference node for a kinematic coupling constraint. The default value
-            is ON.The **ur3** argument applies only when **couplingType**=KINEMATIC.
+            is ON.The **ur3** argument applies only when **couplingType** = KINEMATIC.
         weightingMethod
             A SymbolicConstant specifying an optional weighting method used for calculating the
             distributing weight factors. Possible values are UNIFORM, LINEAR, QUADRATIC, and CUBIC.
             The default value is UNIFORM.The **weightingMethod** argument applies only when
-            **couplingType**=DISTRIBUTING.
+            **couplingType** = DISTRIBUTING.
 
         Returns
         -------
@@ -228,15 +228,15 @@ class ConstraintModel(ModelBase):
             BOTH.
         absoluteTolerance
             A Float specifying the absolute value by which a node on the embedded region may lie
-            outside the host region. If **absoluteTolerance**=0.0, the **fractionalTolerance** value
+            outside the host region. If **absoluteTolerance** = 0.0, the **fractionalTolerance** value
             will be used. The default value is 0.0.This argument applies only when
-            **toleranceMethod**=ABSOLUTE or BOTH.
+            **toleranceMethod** = ABSOLUTE or BOTH.
         fractionalTolerance
             A Float specifying the fractional value by which a node on the embedded region may lie
             outside the host region. The fractional value is based on the average element size
             within the host region. The default value is 0.05.If both tolerance arguments are
             specified, the smaller value will be used.This argument applies only when
-            **toleranceMethod**=FRACTIONAL or BOTH.
+            **toleranceMethod** = FRACTIONAL or BOTH.
 
         Returns
         -------
@@ -317,17 +317,17 @@ class ConstraintModel(ModelBase):
             BEAM_MPC, ELBOW_MPC, PIN_MPC, LINK_MPC, TIE_MPC, and USER_MPC.
         csys
             None or a DatumCsys object specifying the initial orientation of the local coordinate
-            system for the MultipointConstraint's degrees of freedom. If **localCsys**=None, the
+            system for the MultipointConstraint's degrees of freedom. If **localCsys** = None, the
             MultipointConstraint is defined in the global coordinate system. The default value is
             None.
         userType
             An Int specifying to differentiate between different constraint types in a user-defined
             MultipointConstraint. The default value is 0.The **userType** argument applies only when
-            **mpcType**=USER_MPC.
+            **mpcType** = USER_MPC.
         userMode
             A SymbolicConstant specifying the mode of the constraint when it is user-defined.
             Possible values are DOF_MODE_MPC and NODE_MODE_MPC. The default value is
-            DOF_MODE_MPC.The **userMode** argument applies only when **mpcType**=USER_MPC.
+            DOF_MODE_MPC.The **userMode** argument applies only when **mpcType** = USER_MPC.
 
         Returns
         -------
@@ -434,14 +434,14 @@ class ConstraintModel(ModelBase):
         positionTolerance
             A Float specifying the position tolerance. The default value is 0.0.The
             **positionTolerance** argument applies only when
-            **positionToleranceMethod**=SPECIFIED.Note:Abaqus will not constrain nodes on the solid
+            **positionToleranceMethod** = SPECIFIED.Note:Abaqus will not constrain nodes on the solid
             face region outside the position tolerance.
         influenceDistanceMethod
             A SymbolicConstant specifying the method used to determine the influence distance.
             Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT.
         influenceDistance
             A Float specifying the influence distance. The **influenceDistance** argument applies only
-            when **influenceDistanceMethod**=SPECIFIED. The default value is 0.0.
+            when **influenceDistanceMethod** = SPECIFIED. The default value is 0.0.
 
         Returns
         -------
@@ -498,7 +498,7 @@ class ConstraintModel(ModelBase):
             Possible values are COMPUTED and SPECIFIED. The default value is COMPUTED.
         positionTolerance
             A Float specifying the position tolerance. The **positionTolerance** argument applies only
-            when **positionToleranceMethod**=SPECIFIED. The default value is 0.0.
+            when **positionToleranceMethod** = SPECIFIED. The default value is 0.0.
         tieRotations
             A Boolean specifying whether rotation degrees of freedom should be tied. The default
             value is ON.
@@ -508,7 +508,7 @@ class ConstraintModel(ModelBase):
         constraintRatio
             A Float specifying the fractional distance between the main reference surface and the
             secondary node at which the translational constraint should act. The **constraintRatio**
-            argument applies only when **constraintRatioMethod**=SPECIFIED. The default value is 0.0.
+            argument applies only when **constraintRatioMethod** = SPECIFIED. The default value is 0.0.
         constraintEnforcement
             A SymbolicConstant specifying the discretization method. Possible values are
             SOLVER_DEFAULT, NODE_TO_SURFACE, and SURFACE_TO_SURFACE. The default value is

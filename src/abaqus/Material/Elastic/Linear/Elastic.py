@@ -19,7 +19,7 @@ class Elastic:
 
     The table data for this object are:
 
-    - If **type**=ISOTROPIC, the table data specify the following:
+    - If **type** = ISOTROPIC, the table data specify the following:
     
         - The Young's modulus, :math:`E`.
         - The Poisson's ratio, :math:`\nu`.
@@ -28,7 +28,7 @@ class Elastic:
         - Value of the second field variable.
         - Etc.
         
-    - If **type**=SHEAR, the table data specify the following:
+    - If **type** = SHEAR, the table data specify the following:
     
         - The shear modulus, :math:`G`.
         - Temperature, if the data depend on temperature.
@@ -36,7 +36,7 @@ class Elastic:
         - Value of the second field variable.
         - Etc.
         
-    - If **type**=ENGINEERING_CONSTANTS, the table data specify the following:
+    - If **type** = ENGINEERING_CONSTANTS, the table data specify the following:
     
         - :math:`E_{1}`.
         - :math:`E_{2}`.
@@ -52,7 +52,7 @@ class Elastic:
         - Value of the second field variable.
         - Etc.
         
-    - If **type**=LAMINA, the table data specify the following:
+    - If **type** = LAMINA, the table data specify the following:
     
         - :math:`E_{1}`.
         - :math:`E_{2}`.
@@ -65,7 +65,7 @@ class Elastic:
         - Value of the second field variable.
         - Etc.
         
-    - If **type**=ORTHOTROPIC, the table data specify the following:
+    - If **type** = ORTHOTROPIC, the table data specify the following:
     
         - :math:`D_{1111}`
         - :math:`D_{1122}`
@@ -81,7 +81,7 @@ class Elastic:
         - Value of the second field variable.
         - Etc.
         
-    - If **type**=ANISOTROPIC, the table data specify the following:
+    - If **type** = ANISOTROPIC, the table data specify the following:
     
         - :math:`D_{1111}`.
         - :math:`D_{1122}`.
@@ -109,7 +109,7 @@ class Elastic:
         - Value of the second field variable.
         - Etc.
         
-    - If **type**=TRACTION, the table data specify the following:
+    - If **type** = TRACTION, the table data specify the following:
     
         - :math:`E` for warping elements; :math:`E_{nn}` for cohesive elements.
         - :math:`G_1` for warping elements; :math:`E_{ss}` for cohesive elements.
@@ -119,7 +119,7 @@ class Elastic:
         - Value of the second field variable.
         - Etc.
         
-    - If **type**=BILAMINA, the table data specify the following:
+    - If **type** = BILAMINA, the table data specify the following:
     
         - :math:`E_{n n}`.
         - :math:`E_{s s}`.
@@ -132,7 +132,7 @@ class Elastic:
         - Value of the second field variable.
         - Etc.
         
-    - If **type**=SHORT_FIBER, there is no table data.
+    - If **type** = SHORT_FIBER, there is no table data.
 
     The corresponding analysis keywords are:
 

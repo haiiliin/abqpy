@@ -20,7 +20,7 @@ class BrittleCracking:
 
     The table data for this object are:
 
-    - If **type**=STRAIN the table data specify the following:
+    - If **type** = STRAIN the table data specify the following:
     
         - Remaining direct stress after cracking.
         - Direct cracking strain.
@@ -28,7 +28,7 @@ class BrittleCracking:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **type**=DISPLACEMENT the table data specify the following:
+    - If **type** = DISPLACEMENT the table data specify the following:
     
         - Remaining direct stress after cracking.
         - Direct cracking displacement.
@@ -36,7 +36,7 @@ class BrittleCracking:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **type**=GFI the table data specify the following:
+    - If **type** = GFI the table data specify the following:
     
         - Failure stress.
         - Mode I fracture energy.

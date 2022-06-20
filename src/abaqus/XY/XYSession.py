@@ -525,7 +525,7 @@ class XYSession(XYSessionBase):
             A String specifying the label to be used in the legend. The default value is the name of
             the XYData object.
         skipFrequency
-            An Int specifying how often data frames will be skipped. If **skipFrequency**=1, Abaqus
+            An Int specifying how often data frames will be skipped. If **skipFrequency** = 1, Abaqus
             will skip every other frame. The first frame is always read. Possible values are
             **skipFrequency** ≥≥ 0. The default value is 0 (data are read from every frame).
         numericForm
@@ -534,7 +534,7 @@ class XYSession(XYSessionBase):
             and COMPLEX_VAL_AT_ANGLE. The default value is REAL.
         complexAngle
             A Float specifying the angle (in degrees) at which to display results that contain
-            complex numbers when **numericForm**=COMPLEX_VAL_AT_ANGLE. The default value is 0.
+            complex numbers when **numericForm** = COMPLEX_VAL_AT_ANGLE. The default value is 0.
         stepTuple
             A tuple of Integers specifying the steps to include when extracting data.
 
@@ -622,7 +622,7 @@ class XYSession(XYSessionBase):
             and COMPLEX_VAL_AT_ANGLE. The default value is REAL.
         complexAngle
             A Float specifying the angle (in degrees) at which to display results that contain
-            complex numbers when **numericForm**=COMPLEX_VAL_AT_ANGLE. The default value is 0.
+            complex numbers when **numericForm** = COMPLEX_VAL_AT_ANGLE. The default value is 0.
         operator
             A SymbolicConstant specifying the mathematical, trigonometric, logarithmic, exponential,
             or other operations. Possible values are ADD, SUBTRACT, MULTIPLY, DIVIDE, POWER,
@@ -792,13 +792,13 @@ class XYSession(XYSessionBase):
             and COMPLEX_VAL_AT_ANGLE. The default value is REAL.
         complexAngle
             A Float specifying the angle (in degrees) at which to display results that contain
-            complex numbers when **numericForm**=COMPLEX_VAL_AT_ANGLE. The default value is 0.
+            complex numbers when **numericForm** = COMPLEX_VAL_AT_ANGLE. The default value is 0.
         projectOntoMesh
             A Boolean to specify whether to consider the data points that do not lie on or inside
             the mesh. The default value is False.
         projectionTolerance
             A Float specifying the tolerance value for the projected distance considered for the
-            data extraction when **projectOntoMesh**= True. The default value is 0.
+            data extraction when **projectOntoMesh** =  True. The default value is 0.
 
         Returns
         -------

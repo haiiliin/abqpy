@@ -53,11 +53,11 @@ class RadiationToAmbient(Interaction):
             A Float specifying the emissivity, ϵϵ.
         field
             A String specifying the name of the AnalyticalField object associated with this
-            interaction. The **field** argument applies only when **distributionType**=ANALYTICAL_FIELD.
+            interaction. The **field** argument applies only when **distributionType** = ANALYTICAL_FIELD.
             The default value is an empty string.
         distributionType
             A SymbolicConstant specifying how the radiation is distributed. This argument applies
-            only when **radiationType**=AMBIENT. Possible values are UNIFORM and ANALYTICAL_FIELD. The
+            only when **radiationType** = AMBIENT. Possible values are UNIFORM and ANALYTICAL_FIELD. The
             default value is UNIFORM.
         radiationType
             A SymbolicConstant specifying whether to use the default surface radiation behavior, or
@@ -65,14 +65,14 @@ class RadiationToAmbient(Interaction):
             value is AMBIENT.
         ambientTemperature
             A Float specifying the reference ambient temperature, θ0θ0. This argument applies only
-            when **radiationType**=AMBIENT. The default value is 0.0.
+            when **radiationType** = AMBIENT. The default value is 0.0.
         ambientTemperatureAmp
             A String specifying the name of the Amplitude object that gives the variation of the
             ambient temperature with time.Note:Use None in an Abaqus/Standard analysis to specify
             that the reference ambient temperature is applied immediately at the beginning of the
             step or linearly over the step. Use None in an Abaqus/Explicit analysis to specify that
             the reference ambient temperature is applied throughout the step. This argument applies
-            only when **radiationType**=AMBIENT.
+            only when **radiationType** = AMBIENT.
 
         Returns
         -------
@@ -96,11 +96,11 @@ class RadiationToAmbient(Interaction):
         ----------
         field
             A String specifying the name of the AnalyticalField object associated with this
-            interaction. The **field** argument applies only when **distributionType**=ANALYTICAL_FIELD.
+            interaction. The **field** argument applies only when **distributionType** = ANALYTICAL_FIELD.
             The default value is an empty string.
         distributionType
             A SymbolicConstant specifying how the radiation is distributed. This argument applies
-            only when **radiationType**=AMBIENT. Possible values are UNIFORM and ANALYTICAL_FIELD. The
+            only when **radiationType** = AMBIENT. Possible values are UNIFORM and ANALYTICAL_FIELD. The
             default value is UNIFORM.
         radiationType
             A SymbolicConstant specifying whether to use the default surface radiation behavior, or
@@ -108,14 +108,14 @@ class RadiationToAmbient(Interaction):
             value is AMBIENT.
         ambientTemperature
             A Float specifying the reference ambient temperature, θ0θ0. This argument applies only
-            when **radiationType**=AMBIENT. The default value is 0.0.
+            when **radiationType** = AMBIENT. The default value is 0.0.
         ambientTemperatureAmp
             A String specifying the name of the Amplitude object that gives the variation of the
             ambient temperature with time.Note:Use None in an Abaqus/Standard analysis to specify
             that the reference ambient temperature is applied immediately at the beginning of the
             step or linearly over the step. Use None in an Abaqus/Explicit analysis to specify that
             the reference ambient temperature is applied throughout the step. This argument applies
-            only when **radiationType**=AMBIENT.
+            only when **radiationType** = AMBIENT.
         """
         pass
 

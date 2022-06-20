@@ -446,7 +446,7 @@ class MeshAssembly(AssemblyBase):
 
             The return value is dependent on the **attribute** argument.
 
-            - If **attribute**=EDGE_SEEDING_METHOD, the return value is a SymbolicConstant specifying
+            - If **attribute** = EDGE_SEEDING_METHOD, the return value is a SymbolicConstant specifying
               the edge seeding method used to create the seeds along the edge. Possible values are:
 
                 - UNIFORM_BY_NUMBER
@@ -455,35 +455,35 @@ class MeshAssembly(AssemblyBase):
                 - BIASED
                 - NONE
 
-            - If **attribute**=BIAS_METHOD, the return value is a SymbolicConstant specifying the bias
+            - If **attribute** = BIAS_METHOD, the return value is a SymbolicConstant specifying the bias
               type used to create the seeds along the edge. Possible values are:
 
                 - SINGLE
                 - DOUBLE
                 - NONE
 
-            - If **attribute**=NUMBER, the return value is an Int specifying the number of element
+            - If **attribute** = NUMBER, the return value is an Int specifying the number of element
               seeds along the edge.
-            - If **attribute**=AVERAGE_SIZE, the return value is a Float specifying the average
+            - If **attribute** = AVERAGE_SIZE, the return value is a Float specifying the average
               element size along the edge.
-            - If **attribute**=DEVIATION_FACTOR, the return value is a Float specifying the deviation
+            - If **attribute** = DEVIATION_FACTOR, the return value is a Float specifying the deviation
               factor h/Lh/L, where hh is the chordal deviation and LL is the element length. If edge
              seeds are not defined, the return value is zero.
-            - If **attribute**=MIN_SIZE_FACTOR, the return value is a Float specifying the size of the
+            - If **attribute** = MIN_SIZE_FACTOR, the return value is a Float specifying the size of the
               smallest allowable element as a fraction of the specified global element size. If edge
               seeds are not defined, the return value is zero.
-            - If **attribute**=BIAS_RATIO, the return value is a Float specifying the length ratio of
+            - If **attribute** = BIAS_RATIO, the return value is a Float specifying the length ratio of
               the largest element to the smallest element.
-            - If **attribute**=BIAS_MIN_SIZE, the return value is a Float specifying the length of the
+            - If **attribute** = BIAS_MIN_SIZE, the return value is a Float specifying the length of the
               largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were
               specified by minimum and maximum sizes.
-            - If **attribute**=BIAS_MAX_SIZE, the return value is a Float specifying the length of the
+            - If **attribute** = BIAS_MAX_SIZE, the return value is a Float specifying the length of the
               largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were
             specified by minimum and maximum sizes.
-            - If **attribute**=VERTEX_ADJ_TO_SMALLEST_ELEM, the return value is an Int specifying the
+            - If **attribute** = VERTEX_ADJ_TO_SMALLEST_ELEM, the return value is an Int specifying the
               ID of the vertex next to the smallest element; only applicable if the
               EDGE_SEEDING_METHOD is BIASED.
-            - If **attribute**=SMALLEST_ELEM_LOCATION, the return value is a SymbolicConstant
+            - If **attribute** = SMALLEST_ELEM_LOCATION, the return value is a SymbolicConstant
               specifying the location of smallest elements for double bias seeds; only applicable if
               the EDGE_SEEDING_METHOD is BIASED and BIAS_METHOD is DOUBLE. Possible values are:
 
@@ -491,7 +491,7 @@ class MeshAssembly(AssemblyBase):
                 - SMALLEST_ELEM_AT_ENDS
                 - NONE
 
-            - If **attribute**=CONSTRAINT, the return value is a SymbolicConstant specifying how close
+            - If **attribute** = CONSTRAINT, the return value is a SymbolicConstant specifying how close
               the seeds must be matched by the mesh. Possible values are:
 
                 - FREE
@@ -563,7 +563,7 @@ class MeshAssembly(AssemblyBase):
                 - MIN_TRANSITION
 
             The return value is dependent on the **attribute** argument.
-            - If **attribute**=ELEM_SHAPE, the return value is a SymbolicConstant specifying the
+            - If **attribute** = ELEM_SHAPE, the return value is a SymbolicConstant specifying the
               element shape used during meshing. Possible values are:
 
                 - LINE
@@ -575,7 +575,7 @@ class MeshAssembly(AssemblyBase):
                 - WEDGE
                 - HEX_DOMINATED
 
-            - If **attribute**=TECHNIQUE, the return value is a SymbolicConstant specifying the
+            - If **attribute** = TECHNIQUE, the return value is a SymbolicConstant specifying the
               meshing technique to be used during meshing. Possible values are:
 
                 - FREE
@@ -585,7 +585,7 @@ class MeshAssembly(AssemblyBase):
 
             Where UNMESHABLE indicates that no meshing technique is applicable with the currently
             assigned element shape.
-            - If **attribute**=ALGORITHM, the return value is a SymbolicConstant specifying the
+            - If **attribute** = ALGORITHM, the return value is a SymbolicConstant specifying the
               meshing algorithm to be used during meshing. Possible values are:
 
                 - MEDIAL_AXIS
@@ -595,10 +595,10 @@ class MeshAssembly(AssemblyBase):
                 - NONE
 
             Where NONE indicates that no algorithm is applicable.
-            - If **attribute**=MIN_TRANSITION, the return value is a Boolean indicating whether
+            - If **attribute** = MIN_TRANSITION, the return value is a Boolean indicating whether
               minimum transition will be used during meshing. This option is applicable only to the
             following:
-                - Free quadrilateral meshing or sweep hexahedral meshing with **algorithm**=MEDIAL_AXIS.
+                - Free quadrilateral meshing or sweep hexahedral meshing with **algorithm** = MEDIAL_AXIS.
                 - Structured quadrilateral meshing.
 
         Returns
@@ -648,14 +648,14 @@ class MeshAssembly(AssemblyBase):
             
             The return value is dependent on the value of the **attribute** argument.
             
-            - If **attribute**=SIZE, the return value is a Float specifying the assigned global
+            - If **attribute** = SIZE, the return value is a Float specifying the assigned global
               element size. If part seeds are not defined, the return value is zero.
-            - If **attribute**=DEFAULT_SIZE, the return value is a Float specifying a suggested
+            - If **attribute** = DEFAULT_SIZE, the return value is a Float specifying a suggested
               default global element size based upon the part geometry.
-            - If **attribute**=DEVIATION_FACTOR, the return value is a Float specifying the deviation
+            - If **attribute** = DEVIATION_FACTOR, the return value is a Float specifying the deviation
               factor h/Lh/L, where hh is the chordal deviation and LL is the element length. If part
               seeds are not defined, the return value is zero.
-            - If **attribute**=MIN_SIZE_FACTOR, the return value is a Float specifying the size of the
+            - If **attribute** = MIN_SIZE_FACTOR, the return value is a Float specifying the size of the
               smallest allowable element as a fraction of the specified global element size. If part
               seeds are not defined, the return value is zero.
 
@@ -742,8 +742,8 @@ class MeshAssembly(AssemblyBase):
         end1Edges
             A sequence of Edge objects specifying the edges to seed. The smallest elements will be
             positioned near the end where the normalized curve parameter=0.0. You must provide
-            either the **end1Edges** or the **end2Edges** argument or both when **biasMethod**=SINGLE and
-            omit both of them when **biasMethod**=DOUBLE.Note:You can determine which end is which by
+            either the **end1Edges** or the **end2Edges** argument or both when **biasMethod** = SINGLE and
+            omit both of them when **biasMethod** = DOUBLE.Note:You can determine which end is which by
             the order of the vertex indices returned by
             [getVertices()](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?ContextScope=all#simaker-edgegetverticespyc).
         end2Edges
@@ -752,8 +752,8 @@ class MeshAssembly(AssemblyBase):
         centerEdges
             A sequence of Edge objects specifying the edges to seed. The smallest elements will be
             positioned near edge center. You must provide either the **centerEdges** or the **endEdges**
-            argument or both when **biasMethod**=DOUBLE and omit both of them when
-            **biasMethod**=SINGLE.
+            argument or both when **biasMethod** = DOUBLE and omit both of them when
+            **biasMethod** = SINGLE.
         endEdges
             A sequence of Edge objects specifying the edges to seed. The smallest elements will be
             positioned near edge ends.
@@ -1003,7 +1003,7 @@ class MeshAssembly(AssemblyBase):
             ON. If unspecified, the existing value will remain unchanged. This option is applicable
             only in the following cases:
             
-            - Free quadrilateral meshing or hexahedral sweep meshing with **algorithm**=MEDIAL_AXIS.
+            - Free quadrilateral meshing or hexahedral sweep meshing with **algorithm** = MEDIAL_AXIS.
             - Structured quadrilateral meshing.
         sizeGrowth
             A SymbolicConstant specifying element size growth to be applied when generating the
@@ -1016,9 +1016,9 @@ class MeshAssembly(AssemblyBase):
             
             - Free triangular meshing.
             - Free quadrilateral or quadrilateral-dominated meshing with
-              **algorithm**=ADVANCING_FRONT.
-            - Hexahedral or hexahedral-dominated sweep meshing with **algorithm**=ADVANCING_FRONT.
-            - Free tetrahedral meshing. **allowMapped**=True implies that mapped triangular meshing
+              **algorithm** = ADVANCING_FRONT.
+            - Hexahedral or hexahedral-dominated sweep meshing with **algorithm** = ADVANCING_FRONT.
+            - Free tetrahedral meshing. **allowMapped** = True implies that mapped triangular meshing
               can be used on faces that bound three-dimensional **regions**.
         """
         pass
@@ -1036,7 +1036,7 @@ class MeshAssembly(AssemblyBase):
         sense
             A SymbolicConstant specifying the sweep sense. The sense will affect only how gasket
             elements will be created; it will have no effect if gasket elements are not used.
-            Possible values are FORWARD or REVERSE.If **sense**=FORWARD, the sense of the given edge's
+            Possible values are FORWARD or REVERSE.If **sense** = FORWARD, the sense of the given edge's
             underlying curve will be used.
         """
         pass

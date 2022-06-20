@@ -114,12 +114,12 @@ class AnimationOptions:
     frameCounter: Boolean = ON
 
     # A SymbolicConstant specifying the relative scaling when the AnimationController object's
-    # **animationType**=SCALE_FACTOR or HARMONIC. Possible values are FULL_CYCLE and HALF_CYCLE.
+    # **animationType** = SCALE_FACTOR or HARMONIC. Possible values are FULL_CYCLE and HALF_CYCLE.
     # The default value is HALF_CYCLE.
     relativeScaling: SymbolicConstant = HALF_CYCLE
 
     # An Int specifying the number of frames to be used when the AnimationController object's
-    # **animationType**=SCALE_FACTOR or HARMONIC. The default value is 7.
+    # **animationType** = SCALE_FACTOR or HARMONIC. The default value is 7.
     numScaleFactorFrames: int = 7
 
     # A SymbolicConstant specifying whether the time history animation is time based or frame
@@ -241,11 +241,11 @@ class AnimationOptions:
             A Boolean specifying whether to show the frame counter. The default value is ON.
         relativeScaling
             A SymbolicConstant specifying the relative scaling when the AnimationController object's
-            **animationType**=SCALE_FACTOR or HARMONIC. Possible values are FULL_CYCLE and HALF_CYCLE.
+            **animationType** = SCALE_FACTOR or HARMONIC. Possible values are FULL_CYCLE and HALF_CYCLE.
             The default value is HALF_CYCLE.
         numScaleFactorFrames
             An Int specifying the number of frames to be used when the AnimationController object's
-            **animationType**=SCALE_FACTOR or HARMONIC. The default value is 7.
+            **animationType** = SCALE_FACTOR or HARMONIC. The default value is 7.
         timeHistoryMode
             A SymbolicConstant specifying whether the time history animation is time based or frame
             based. Possible values are FRAME_BASED and TIME_BASED. The default value is FRAME_BASED.

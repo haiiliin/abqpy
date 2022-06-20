@@ -59,7 +59,7 @@ class ShapeRotationalSymmetry(GeometricRestriction):
             A Float specifying the segment size of the repeating pattern in degrees. If the **angle**
             value is 0, no repeating pattern is created. The default value is 0.0.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
         mainPoint
@@ -115,7 +115,7 @@ class ShapeRotationalSymmetry(GeometricRestriction):
             A Float specifying the segment size of the repeating pattern in degrees. If the **angle**
             value is 0, no repeating pattern is created. The default value is 0.0.
         csys
-            None or a DatumCsys object specifying the local coordinate system. If **csys**=None, the
+            None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
             default value is None.
         mainPoint

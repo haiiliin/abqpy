@@ -18,14 +18,14 @@ class GapFlow:
 
     The table data for this object are:
 
-    - If **type**=NEWTONIAN the table data specify the following:
+    - If **type** = NEWTONIAN the table data specify the following:
     
         - Pore viscosity.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **type**=POWER_LAW the table data specify the following:
+    - If **type** = POWER_LAW the table data specify the following:
     
         - Consistency.
         - Exponent.
@@ -33,7 +33,7 @@ class GapFlow:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **type**=BINGHAM_PLASTIC the table data specify the following:
+    - If **type** = BINGHAM_PLASTIC the table data specify the following:
     
         - Consistency.
         - Yield stress.
@@ -41,7 +41,7 @@ class GapFlow:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **type**=HERSCHEL-BULKLEY the table data specify the following:
+    - If **type** = HERSCHEL-BULKLEY the table data specify the following:
     
         - Consistency.
         - Exponent.
@@ -81,8 +81,8 @@ class GapFlow:
             A sequence of sequences of Floats specifying the items described below.
         kmax
             None or a Float specifying the maximum permeability value that should be used. If
-            **kmax**=None, Abaqus assumes that the permeability is not bounded. This value is
-            meaningful only when **type**=NEWTONIAN. The default value is None.
+            **kmax** = None, Abaqus assumes that the permeability is not bounded. This value is
+            meaningful only when **type** = NEWTONIAN. The default value is None.
         temperatureDependency
             A Boolean specifying whether the data depend on temperature. The default value is OFF.
         dependencies

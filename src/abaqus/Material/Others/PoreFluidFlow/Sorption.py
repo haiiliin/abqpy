@@ -18,12 +18,12 @@ class Sorption:
 
     The table data for this object are:
 
-    - If **lawAbsorption**=TABULAR or **lawExsorption**=TABULAR, the **absorptionTable** and **exsorptionTable** data respectively specify the following:
+    - If **lawAbsorption** = TABULAR or **lawExsorption** = TABULAR, the **absorptionTable** and **exsorptionTable** data respectively specify the following:
 
         - Pore pressure, :math:`u_{w}`.
         - Saturation, :math:`\boldsymbol{S}`.
 
-    - If **lawAbsorption**=LOG or **lawExsorption**=LOG, the **absorptionTable** and **exsorptionTable** data respectively specify the following:
+    - If **lawAbsorption** = LOG or **lawExsorption** = LOG, the **absorptionTable** and **exsorptionTable** data respectively specify the following:
 
         - :math:`A`.
         - :math:`B`.

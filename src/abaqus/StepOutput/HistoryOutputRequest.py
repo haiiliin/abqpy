@@ -154,7 +154,7 @@ class HistoryOutputRequest:
         kFactorDirection
             A SymbolicConstant specifying the stress intensity factor direction. Possible values are
             MTS, MERR, and K110. The **kFactorDirection** argument is valid only if
-            **contourType**=K_FACTORS. The default value is MTS.
+            **contourType** = K_FACTORS. The default value is MTS.
         rebar
             A SymbolicConstant specifying whether output is requested for rebar. Possible values are
             EXCLUDE, INCLUDE, and ONLY. The default value is EXCLUDE.
@@ -308,7 +308,7 @@ class HistoryOutputRequest:
         kFactorDirection
             A SymbolicConstant specifying the stress intensity factor direction. Possible values are
             MTS, MERR, and K110. The **kFactorDirection** argument is valid only if
-            **contourType**=K_FACTORS. The default value is MTS.
+            **contourType** = K_FACTORS. The default value is MTS.
         rebar
             A SymbolicConstant specifying whether output is requested for rebar. Possible values are
             EXCLUDE, INCLUDE, and ONLY. The default value is EXCLUDE.

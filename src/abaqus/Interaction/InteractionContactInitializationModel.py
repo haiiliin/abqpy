@@ -32,15 +32,15 @@ class InteractionContactInitializationModel(ModelBase):
             ADJUST, INTERFERENCE, and CLEARANCE. The default value is ADJUST.
         interferenceDistance
             None or a Float specifying the interference distance. This argument is valid only when
-            **overclosureType**=INTERFERENCE. The default value is None.
+            **overclosureType** = INTERFERENCE. The default value is None.
         clearanceDistance
             None or a Float specifying the initial clearance distance. This argument is valid only
-            when **overclosureType**=CLEARANCE, and must be specified in that case. The default value
+            when **overclosureType** = CLEARANCE, and must be specified in that case. The default value
             is None.
         openingTolerance
             None or a Float specifying the distance tolerance within which initial openings will
             undergo strain-free adjustments. This argument is not valid when
-            **overclosureType**=INTERFERENCE unless a value has been specified for
+            **overclosureType** = INTERFERENCE unless a value has been specified for
             **interferenceDistance**. The default value is None.
         overclosureTolerance
             None or a Float specifying the distance tolerance within which initial overclosures will

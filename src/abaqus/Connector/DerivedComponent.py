@@ -133,12 +133,12 @@ class DerivedComponent:
             A SymbolicConstant specifying whether localDependency refers to components of relative
             position or components of constitutive relative motion. Possible values are POSITION and
             MOTION. The default value is POSITION.The **indepCompType** argument applies only if
-            **localDependency**=ON.
+            **localDependency** = ON.
         indepComponents
             A sequence of Ints specifying the independent components included in the derived
             component definition. Possible values are 1 ≤≤ **indepComponents** ≤≤ 6. Only available
             components can be specified. The **indepComponents** argument applies only if
-            **localDependency**=ON. The default value is an empty sequence.
+            **localDependency** = ON. The default value is an empty sequence.
         tempDependency
             A Boolean specifying whether the table data depend on temperature. The default value is
             OFF.

@@ -442,7 +442,7 @@ class Material(MaterialBase):
         intercept
             None or a Float specifying e1e1, the intercept of the virgin consolidation line with the
             void ratio axis in a plot of void ratio versus the logarithm of pressure stress. The
-            default value is None.This argument is valid only if **hardening**=EXPONENTIAL.
+            default value is None.This argument is valid only if **hardening** = EXPONENTIAL.
         hardening
             A SymbolicConstant specifying the type of hardening/softening definition. Possible
             values are EXPONENTIAL and TABULAR. The default value is EXPONENTIAL.
@@ -783,7 +783,7 @@ class Material(MaterialBase):
         fieldName
             A String specifying the name of the AnalyticalField or DiscreteField object associated
             with this material option. The **fieldName** argument applies only when
-            **distributionType**=ANALYTICAL_FIELD or **distributionType**=DISCRETE_FIELD. The default
+            **distributionType** = ANALYTICAL_FIELD or **distributionType** = DISCRETE_FIELD. The default
             value is an empty string.
 
         Returns
@@ -957,7 +957,7 @@ class Material(MaterialBase):
             A Boolean specifying whether the material constants for the exponent model are to be
             computed by Abaqus/Standard from triaxial test data at different levels of confining
             pressure. The default value is OFF.This argument is valid only if
-            **shearCriterion**=EXPONENTIAL.
+            **shearCriterion** = EXPONENTIAL.
         temperatureDependency
             A Boolean specifying whether the data depend on temperature. The default value is OFF.
         dependencies
@@ -1004,7 +1004,7 @@ class Material(MaterialBase):
 
         The table data for this object are:
         
-        - If **type**=ISOTROPIC, the table data specify the following:
+        - If **type** = ISOTROPIC, the table data specify the following:
         
             - The Young's modulus, E.
             - The Poisson's ratio, v.
@@ -1012,14 +1012,14 @@ class Material(MaterialBase):
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-        - If **type**=SHEAR, the table data specify the following:
+        - If **type** = SHEAR, the table data specify the following:
         
             - The shear modulus,G.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-        - If **type**=ENGINEERING_CONSTANTS, the table data specify the following:
+        - If **type** = ENGINEERING_CONSTANTS, the table data specify the following:
         
             - E1.
             - E2.
@@ -1034,7 +1034,7 @@ class Material(MaterialBase):
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-        - If **type**=LAMINA, the table data specify the following:
+        - If **type** = LAMINA, the table data specify the following:
         
             - E1.
             - E2.
@@ -1046,7 +1046,7 @@ class Material(MaterialBase):
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-        - If **type**=ORTHOTROPIC, the table data specify the following:
+        - If **type** = ORTHOTROPIC, the table data specify the following:
         
             - D1111.
             - D1122.
@@ -1061,7 +1061,7 @@ class Material(MaterialBase):
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-        - If **type**=ANISOTROPIC, the table data specify the following:
+        - If **type** = ANISOTROPIC, the table data specify the following:
         
             - D1111.
             - D1122.
@@ -1088,7 +1088,7 @@ class Material(MaterialBase):
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-        - If **type**=TRACTION, the table data specify the following:
+        - If **type** = TRACTION, the table data specify the following:
         
             - EE for warping elements; En⁢n for cohesive elements.
             - G1 for warping elements; Es⁢s for cohesive elements.
@@ -1097,7 +1097,7 @@ class Material(MaterialBase):
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-        - If **type**=BILAMINA, the table data specify the following:
+        - If **type** = BILAMINA, the table data specify the following:
         
             - E1+.
             - E2+.
@@ -1110,7 +1110,7 @@ class Material(MaterialBase):
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-        - If **type**=SHORT_FIBER, there is no table data.
+        - If **type** = SHORT_FIBER, there is no table data.
 
         Parameters
         ----------
@@ -1433,8 +1433,8 @@ class Material(MaterialBase):
             A sequence of sequences of Floats specifying the items described below.
         kmax
             None or a Float specifying the maximum permeability value that should be used. If
-            **kmax**=None, Abaqus assumes that the permeability is not bounded. This value is
-            meaningful only when **type**=NEWTONIAN. The default value is None.
+            **kmax** = None, Abaqus assumes that the permeability is not bounded. This value is
+            meaningful only when **type** = NEWTONIAN. The default value is None.
         temperatureDependency
             A Boolean specifying whether the data depend on temperature. The default value is OFF.
         dependencies
@@ -1515,8 +1515,8 @@ class Material(MaterialBase):
         ----------
         table
             A sequence of sequences of Floats specifying loading data. The first sequence must
-            contain only 0. At least two sequences must be specified if **type**=DAMAGE, and at least
-            3 sequences must be specified if **type**=ELASTIC_PLASTIC. The items in the table data are
+            contain only 0. At least two sequences must be specified if **type** = DAMAGE, and at least
+            3 sequences must be specified if **type** = ELASTIC_PLASTIC. The items in the table data are
             described below.
         temperatureDependency
             A Boolean specifying whether the loading data depend on temperature. The default value
@@ -1678,7 +1678,7 @@ class Material(MaterialBase):
         ----------
         table
             A sequence of sequences of Floats specifying the items described below. This argument is
-            valid only if **testData**=OFF.
+            valid only if **testData** = OFF.
         type
             A SymbolicConstant specifying the type of strain energy potential. Possible values
             are:ARRUDA_BOYCEMARLOWMOONEY_RIVLINNEO_HOOKEOGDENPOLYNOMIALREDUCED_POLYNOMIALUSERVAN_DER_WAALSYEOHUNKNOWNThe
@@ -1690,12 +1690,12 @@ class Material(MaterialBase):
             A Boolean specifying whether the data depend on temperature. The default value is OFF.
         n
             An Int specifying the order of the strain energy potential. The default value is 1.If
-            **testData**=ON and **type**=POLYNOMIAL, **n** can take only the values 1 or 2.If
-            **testData**=ON and **type**=OGDEN or if **testData**=OFF for either type, 1 ≤n≤≤n≤ 6.If
-            **type**=USER, this argument cannot be used.
+            **testData** = ON and **type** = POLYNOMIAL, **n** can take only the values 1 or 2.If
+            **testData** = ON and **type** = OGDEN or if **testData** = OFF for either type, 1 ≤n≤≤n≤ 6.If
+            **type** = USER, this argument cannot be used.
         beta
             The SymbolicConstant FITTED_VALUE or a Float specifying the invariant mixture parameter.
-            This argument is valid only if **testData**=ON and **type**=VAN_DER_WAALS. The default value
+            This argument is valid only if **testData** = ON and **type** = VAN_DER_WAALS. The default value
             is FITTED_VALUE.
         testData
             A Boolean specifying whether test data are supplied. The default value is ON.
@@ -1714,7 +1714,7 @@ class Material(MaterialBase):
             DEFAULT.
         poissonRatio
             A Float specifying the poisson ratio. This argument is valid only if
-            **volumetricResponse**=POISSON_RATIO. The default value is 0.0.
+            **volumetricResponse** = POISSON_RATIO. The default value is 0.0.
         materialType
             A SymbolicConstant specifying the type of material. Possible values are ISOTROPIC and
             ANISOTROPIC. The default value is ISOTROPIC.
@@ -1793,7 +1793,7 @@ class Material(MaterialBase):
             A Boolean specifying whether test data are supplied. The default value is OFF.
         poisson
             None or a Float specifying the effective Poisson's ratio, νν, of the material. This
-            argument is valid only when **testData**=ON. The default value is None.
+            argument is valid only when **testData** = ON. The default value is None.
         n
             An Int specifying the order of the strain energy potential. Possible values are 1 ≤n≤≤n≤
             6. The default value is 1.
@@ -1804,7 +1804,7 @@ class Material(MaterialBase):
             values are INSTANTANEOUS and LONG_TERM. The default value is LONG_TERM.
         table
             A sequence of sequences of Floats specifying the items described below. This argument is
-            valid only when **testData**=OFF. The default value is an empty sequence.
+            valid only when **testData** = OFF. The default value is an empty sequence.
 
         Returns
         -------
@@ -2021,15 +2021,15 @@ class Material(MaterialBase):
         ----------
         table
             A sequence of sequences of Floats specifying the items described below in “Table data.”
-            If **type**=ORTHOTROPIC and nonlinearBH=ON, the data specified in the **table** is for the
+            If **type** = ORTHOTROPIC and nonlinearBH=ON, the data specified in the **table** is for the
             first direction and **table2** and **table3** must be specified.
         table2
             A sequence of sequences of Floats specifying the items described below in “Table data”
-            in the second direction. **table2** must be specified only if **type**=ORTHOTROPIC and
+            in the second direction. **table2** must be specified only if **type** = ORTHOTROPIC and
             nonlinearBH=ON.
         table3
             A sequence of sequences of Floats specifying the items described below in “Table data”
-            in the third direction. **table3** must be specified only if **type**=ORTHOTROPIC and
+            in the third direction. **table3** must be specified only if **type** = ORTHOTROPIC and
             nonlinearBH=ON.
         type
             A SymbolicConstant specifying the type of magnetic permeability. Possible values are
@@ -2090,7 +2090,7 @@ class Material(MaterialBase):
             A sequence of sequences of Floats specifying the items described below.
         deviatoricEccentricity
             None or a Float specifying the flow potential eccentricity in the deviatoric plane, e;
-            1/2 ≤ 1.0. If **deviatoricEccentricity**=None, Abaqus calculates the value using the
+            1/2 ≤ 1.0. If **deviatoricEccentricity** = None, Abaqus calculates the value using the
             specified Mohr-Coulomb angle of friction. The default value is None.
         meridionalEccentricity
             A Float specifying the flow potential eccentricity in the meridional plane, ϵϵ. The
@@ -2271,14 +2271,14 @@ class Material(MaterialBase):
             A Boolean specifying whether the data depend on rate. The default value is OFF.
         dataType
             A SymbolicConstant specifying the type of combined hardening. This argument is only
-            valid if **hardening**=COMBINED. Possible values are HALF_CYCLE, PARAMETERS, and
+            valid if **hardening** = COMBINED. Possible values are HALF_CYCLE, PARAMETERS, and
             STABILIZED. The default value is HALF_CYCLE.
         strainRangeDependency
             A Boolean specifying whether the data depend on strain range. This argument is only
-            valid if **hardening**=COMBINED and **dataType**=STABILIZED. The default value is OFF.
+            valid if **hardening** = COMBINED and **dataType** = STABILIZED. The default value is OFF.
         numBackstresses
             An Int specifying the number of backstresses. This argument is only valid if
-            **hardening**=COMBINED. The default value is 1.
+            **hardening** = COMBINED. The default value is 1.
         temperatureDependency
             A Boolean specifying whether the data depend on temperature. The default value is OFF.
         dependencies
@@ -2652,7 +2652,7 @@ class Material(MaterialBase):
         ----------
         table
             A sequence of sequences of Floats specifying the items described below.This argument is
-            valid only when **law**=INPUT.
+            valid only when **law** = INPUT.
         law
             A SymbolicConstant specifying the type of data defining the swelling behavior. Possible
             values are INPUT and USER. The default value is INPUT.
@@ -2704,11 +2704,11 @@ class Material(MaterialBase):
             value is OFF. This argument is valid only for an Abaqus/Standard analysis.
         mechanicalConstants
             A sequence of Floats specifying the mechanical constants of the material. This argument
-            is valid only when **type**=MECHANICAL or THERMOMECHANICAL. The default value is an empty
+            is valid only when **type** = MECHANICAL or THERMOMECHANICAL. The default value is an empty
             sequence.
         thermalConstants
             A sequence of Floats specifying the thermal constants of the material. This argument is
-            valid only when **type**=THERMAL or THERMOMECHANICAL. The default value is an empty
+            valid only when **type** = THERMAL or THERMOMECHANICAL. The default value is an empty
             sequence.
         effmod
             A Boolean specifying if effective bulk modulus and shear modulus are returned by user
@@ -2799,30 +2799,30 @@ class Material(MaterialBase):
             A sequence of sequences of Floats specifying the items described below.
         frequency
             A SymbolicConstant specifying the frequency domain definition. This argument is required
-            only when **domain**=FREQUENCY. Possible values are FORMULA, TABULAR, PRONY,
+            only when **domain** = FREQUENCY. Possible values are FORMULA, TABULAR, PRONY,
             CREEP_TEST_DATA, and RELAXATION_TEST_DATA. The default value is FORMULA.
         type
             A SymbolicConstant specifying the type. This argument is required only when
-            **domain**=FREQUENCY and **frequency**=TABULAR. Possible values are ISOTROPIC and TRACTION.
+            **domain** = FREQUENCY and **frequency** = TABULAR. Possible values are ISOTROPIC and TRACTION.
             The default value is ISOTROPIC.
         preload
             A SymbolicConstant specifying the preload. This argument is required only when
-            **domain**=FREQUENCY and **frequency**=TABULAR. Possible values are NONE, UNIAXIAL,
+            **domain** = FREQUENCY and **frequency** = TABULAR. Possible values are NONE, UNIAXIAL,
             VOLUMETRIC, and UNIAXIAL_VOLUMETRIC. The default value is NONE.
         time
             A SymbolicConstant specifying the time domain definition. This argument is required only
-            when **domain**=TIME. Possible values are PRONY, CREEP_TEST_DATA, RELAXATION_TEST_DATA,
+            when **domain** = TIME. Possible values are PRONY, CREEP_TEST_DATA, RELAXATION_TEST_DATA,
             and FREQUENCY_DATA. The default value is PRONY.
         errtol
             A Float specifying the allowable average root-mean-square error of the data points in
             the least-squares fit. The Float values correspond to percentages; for example, 0.01 is
-            1%. The default value is 0.01.This argument is valid only when **time**=CREEP_TEST_DATA,
-            RELAXATION_TEST_DATA or FREQUENCY_DATA; or only when **frequency**=CREEP_TEST_DATA or
+            1%. The default value is 0.01.This argument is valid only when **time** = CREEP_TEST_DATA,
+            RELAXATION_TEST_DATA or FREQUENCY_DATA; or only when **frequency** = CREEP_TEST_DATA or
             RELAXATION_TEST_DATA.
         nmax
             An Int specifying the maximum number of terms NN in the Prony series. The maximum value
-            is 13. The default value is 13.This argument is valid only when **time**=CREEP_TEST_DATA,
-            RELAXATION_TEST_DATA or FREQUENCY_DATA; or only when **frequency**=CREEP_TEST_DATA or
+            is 13. The default value is 13.This argument is valid only when **time** = CREEP_TEST_DATA,
+            RELAXATION_TEST_DATA or FREQUENCY_DATA; or only when **frequency** = CREEP_TEST_DATA or
             RELAXATION_TEST_DATA.
         volumetricTable
             A sequence of sequences of Floats specifying the items described below. The default

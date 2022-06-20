@@ -139,7 +139,7 @@ class PointFastener(Fastener):
             fastener is normal to the surface that is closest to the reference node for that
             fastener. The default value is ON.
         localCsys
-            None or a DatumCsys object specifying the local coordinate system. If **localCsys**=None,
+            None or a DatumCsys object specifying the local coordinate system. If **localCsys** = None,
             the global coordinate system is used. When this member is queried, it returns an Int.
             The default value is None.
         connectionType
@@ -150,7 +150,7 @@ class PointFastener(Fastener):
             value is an empty string.
         connectorOrientationLocalCsys1
             None or a DatumCsys object specifying the local coordinate system of the first connector
-            point in generated connectors. If **connectorOrientationLocalCsys1**=None, the degrees of
+            point in generated connectors. If **connectorOrientationLocalCsys1** = None, the degrees of
             freedom are defined in the global coordinate system. When this member is queried, it
             returns an Int. The default value is None.
         axis1
@@ -166,7 +166,7 @@ class PointFastener(Fastener):
             default value is ON.
         connectorOrientationLocalCsys2
             None or a DatumCsys object specifying the local coordinate system of the second
-            connector point in generated connectors. If **connectorOrientationLocalCsys2**=None, the
+            connector point in generated connectors. If **connectorOrientationLocalCsys2** = None, the
             degrees of freedom are defined in the global coordinate system. When this member is
             queried, it returns an Int. The default value is None.
         axis2
@@ -271,7 +271,7 @@ class PointFastener(Fastener):
             fastener is normal to the surface that is closest to the reference node for that
             fastener. The default value is ON.
         localCsys
-            None or a DatumCsys object specifying the local coordinate system. If **localCsys**=None,
+            None or a DatumCsys object specifying the local coordinate system. If **localCsys** = None,
             the global coordinate system is used. When this member is queried, it returns an Int.
             The default value is None.
         connectionType
@@ -282,7 +282,7 @@ class PointFastener(Fastener):
             value is an empty string.
         connectorOrientationLocalCsys1
             None or a DatumCsys object specifying the local coordinate system of the first connector
-            point in generated connectors. If **connectorOrientationLocalCsys1**=None, the degrees of
+            point in generated connectors. If **connectorOrientationLocalCsys1** = None, the degrees of
             freedom are defined in the global coordinate system. When this member is queried, it
             returns an Int. The default value is None.
         axis1
@@ -298,7 +298,7 @@ class PointFastener(Fastener):
             default value is ON.
         connectorOrientationLocalCsys2
             None or a DatumCsys object specifying the local coordinate system of the second
-            connector point in generated connectors. If **connectorOrientationLocalCsys2**=None, the
+            connector point in generated connectors. If **connectorOrientationLocalCsys2** = None, the
             degrees of freedom are defined in the global coordinate system. When this member is
             queried, it returns an Int. The default value is None.
         axis2

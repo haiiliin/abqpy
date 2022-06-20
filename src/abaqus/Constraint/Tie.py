@@ -72,7 +72,7 @@ class Tie(Constraint):
             Possible values are COMPUTED and SPECIFIED. The default value is COMPUTED.
         positionTolerance
             A Float specifying the position tolerance. The **positionTolerance** argument applies only
-            when **positionToleranceMethod**=SPECIFIED. The default value is 0.0.
+            when **positionToleranceMethod** = SPECIFIED. The default value is 0.0.
         tieRotations
             A Boolean specifying whether rotation degrees of freedom should be tied. The default
             value is ON.
@@ -82,7 +82,7 @@ class Tie(Constraint):
         constraintRatio
             A Float specifying the fractional distance between the main reference surface and the
             secondary node at which the translational constraint should act. The **constraintRatio**
-            argument applies only when **constraintRatioMethod**=SPECIFIED. The default value is 0.0.
+            argument applies only when **constraintRatioMethod** = SPECIFIED. The default value is 0.0.
         constraintEnforcement
             A SymbolicConstant specifying the discretization method. Possible values are
             SOLVER_DEFAULT, NODE_TO_SURFACE, and SURFACE_TO_SURFACE. The default value is
@@ -127,7 +127,7 @@ class Tie(Constraint):
             Possible values are COMPUTED and SPECIFIED. The default value is COMPUTED.
         positionTolerance
             A Float specifying the position tolerance. The **positionTolerance** argument applies only
-            when **positionToleranceMethod**=SPECIFIED. The default value is 0.0.
+            when **positionToleranceMethod** = SPECIFIED. The default value is 0.0.
         tieRotations
             A Boolean specifying whether rotation degrees of freedom should be tied. The default
             value is ON.
@@ -137,7 +137,7 @@ class Tie(Constraint):
         constraintRatio
             A Float specifying the fractional distance between the main reference surface and the
             secondary node at which the translational constraint should act. The **constraintRatio**
-            argument applies only when **constraintRatioMethod**=SPECIFIED. The default value is 0.0.
+            argument applies only when **constraintRatioMethod** = SPECIFIED. The default value is 0.0.
         constraintEnforcement
             A SymbolicConstant specifying the discretization method. Possible values are
             SOLVER_DEFAULT, NODE_TO_SURFACE, and SURFACE_TO_SURFACE. The default value is

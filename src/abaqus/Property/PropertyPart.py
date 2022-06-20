@@ -38,15 +38,15 @@ class PropertyPart(PartBase):
             A String specifying a description of the composite layup.
         offsetType
             A SymbolicConstant specifying the method used to define the shell offset. If
-            **offsetType**=OFFSET_FIELD the **offsetField** argument is required. This member is valid
-            only if **elementType**=SHELL. Possible values are SINGLE_VALUE, MIDDLE_SURFACE,
+            **offsetType** = OFFSET_FIELD the **offsetField** argument is required. This member is valid
+            only if **elementType** = SHELL. Possible values are SINGLE_VALUE, MIDDLE_SURFACE,
             TOP_SURFACE, BOTTOM_SURFACE, OFFSET_FIELD, and GLOBAL. The default value is GLOBAL.
         offsetField
             A String specifying The name of the field specifying the offset. This member is valid
-            only if **elementType**=SHELL. The default value is an empty string.
+            only if **elementType** = SHELL. The default value is an empty string.
         offsetValues
             A Float specifying The offset of the shell section. This member is valid only if
-            **elementType**=SHELL. The default value is 0.0.
+            **elementType** = SHELL. The default value is 0.0.
         elementType
             A SymbolicConstant specifying the type of element in the composite layup. Possible
             values are SHELL, CONTINUUM_SHELL, and SOLID. The default value is SHELL.
@@ -181,8 +181,8 @@ class PropertyPart(PartBase):
             default value is an empty string.
         orientationType
             A SymbolicConstant specifying the method used to define the material orientation. If
-            **orientationType**=SYSTEM, the **region** and **localCsys** arguments are required. If
-            **orientationType**=FIELD, the **fieldName** argument is required. Possible values are
+            **orientationType** = SYSTEM, the **region** and **localCsys** arguments are required. If
+            **orientationType** = FIELD, the **fieldName** argument is required. Possible values are
             GLOBAL, SYSTEM, FIELD, DISCRETE, and USER. The default value is GLOBAL.
         normalAxisDirection
             A SymbolicConstant specifying the axis that is defined by the normal axis direction for

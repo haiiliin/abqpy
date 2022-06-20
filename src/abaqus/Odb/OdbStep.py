@@ -79,7 +79,7 @@ class OdbStep(OdbStepBase):
     def Frame(self, mode: int, frequency: float, description: str = "") -> OdbFrame:
         """This constructor creates an OdbFrame object in the frequency domain and appends it to
         the frame sequence. The arguments to the constructor are valid only when
-        **domain**=FREQUENCY or **domain**=MODAL.
+        **domain** = FREQUENCY or **domain** = MODAL.
 
         Notes
         -----
@@ -92,9 +92,9 @@ class OdbStep(OdbStepBase):
         Parameters
         ----------
         mode
-            An Int specifying the eigenmode. This member is valid only if **domain**=MODAL.
+            An Int specifying the eigenmode. This member is valid only if **domain** = MODAL.
         frequency
-            A Float specifying the frequency. This member is valid only if **domain**=FREQUENCY or if
+            A Float specifying the frequency. This member is valid only if **domain** = FREQUENCY or if
             the **procedureType** member of the Step object=FREQUENCY. The default value is 0.0.
         description
             A String specifying the contents of the frame. The default value is an empty string.
@@ -127,7 +127,7 @@ class OdbStep(OdbStepBase):
         description
             A String specifying the contents of the frame. The default value is an empty string.
         frequency
-            A Float specifying the frequency. This member is valid only if **domain**=FREQUENCY or if
+            A Float specifying the frequency. This member is valid only if **domain** = FREQUENCY or if
             the **procedureType** member of the Step object=FREQUENCY. The default value is 0.0.
 
         Returns

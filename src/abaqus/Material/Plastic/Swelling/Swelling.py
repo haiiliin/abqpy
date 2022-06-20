@@ -54,7 +54,7 @@ class Swelling:
         ----------
         table
             A sequence of sequences of Floats specifying the items described below.This argument is
-            valid only when **law**=INPUT.
+            valid only when **law** = INPUT.
         law
             A SymbolicConstant specifying the type of data defining the swelling behavior. Possible
             values are INPUT and USER. The default value is INPUT.

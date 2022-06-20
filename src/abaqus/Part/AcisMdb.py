@@ -75,8 +75,8 @@ class AcisMdb(MdbBase):
         topology
             A SymbolicConstant specifying the topology of the data to be read from the file and of
             the part to be created. Possible values are SOLID , SHELL, and WIRE. If
-            **topology**=SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
-            **topology**=SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
+            **topology** = SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
+            **topology** = SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
             entity. The default value is SOLID .
         convertUnits
             A SymbolicConstant specifying whether the original units should be retained. Possible
@@ -123,8 +123,8 @@ class AcisMdb(MdbBase):
         topology
             A SymbolicConstant specifying the topology of the data to be read from the file and of
             the part to be created. Possible values are SOLID , SHELL, and WIRE. If
-            **topology**=SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
-            **topology**=SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
+            **topology** = SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
+            **topology** = SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
             entity. The default value is SOLID.
         convertUnits
             A Boolean specifying if the dimensions of the part should be converted to millimeters.
@@ -182,8 +182,8 @@ class AcisMdb(MdbBase):
         topology
             A SymbolicConstant specifying the topology of the data to be read from the file and of
             the part to be created. Possible values are SOLID , SHELL, and WIRE. If
-            **topology**=SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
-            **topology**=SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
+            **topology** = SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
+            **topology** = SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
             entity. The default value is SOLID.
         uniteWires
             A SymbolicConstant specifying whether the imported wires need to be united or not.
@@ -221,8 +221,8 @@ class AcisMdb(MdbBase):
         topology
             A SymbolicConstant specifying the topology of the data to be read from the file and of
             the part to be created. Possible values are SOLID , SHELL, and WIRE. If
-            **topology**=SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
-            **topology**=SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
+            **topology** = SOLID, Abaqus/CAE attempts to attach cells to create a solid. If
+            **topology** = SHELL, Abaqus/CAE builds the body as a shell entity and not as a solid
             entity. The default value is SOLID.
 
         Returns

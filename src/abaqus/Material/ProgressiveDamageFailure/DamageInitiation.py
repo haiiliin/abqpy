@@ -90,7 +90,7 @@ class DamageInitiation:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If constructor is MsfldDamageInitiation and **definition**=MSFLD, the table data specify the following:
+    - If constructor is MsfldDamageInitiation and **definition** = MSFLD, the table data specify the following:
     
         - Nominal strain at damage initiation in a normal-only mode.
         - Equivalent Plastic strain at initiation of localized necking.
@@ -100,7 +100,7 @@ class DamageInitiation:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If constructor is MsfldDamageInitiation and **definition**=FLD, the table data specify the following:
+    - If constructor is MsfldDamageInitiation and **definition** = FLD, the table data specify the following:
     
         - Major principal strain at initiation of localized necking.
         - Equivalent Plastic strain at initiation of localized necking.

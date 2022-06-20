@@ -50,7 +50,7 @@ class ConnectorLock(ConnectorBehaviorOption):
         lockingComponent
             The SymbolicConstant ALL or an Int specifying the motion components that are locked. If
             an Int is specified, only that motion component is locked when the locking criteria are
-            satisfied. If **lockingComponent**=ALL, all motion components are locked. The default
+            satisfied. If **lockingComponent** = ALL, all motion components are locked. The default
             value is ALL.
         minMotion
             None or a Float specifying the lower bound for the connector's relative position for all

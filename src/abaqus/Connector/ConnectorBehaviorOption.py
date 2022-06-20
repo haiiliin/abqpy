@@ -212,16 +212,16 @@ class ConnectorBehaviorOption:
             analysis. The default value is ON.
         regularize
             A Boolean specifying whether or not the tabular data will be regularized. This argument
-            is applicable only for an Abaqus/Explicit analysis and only if **useBehRegSettings**=OFF.
+            is applicable only for an Abaqus/Explicit analysis and only if **useBehRegSettings** = OFF.
             The default value is ON.
         defaultTolerance
             A Boolean specifying whether or not the analysis default regularization tolerance will
             be used. This argument is applicable only for an Abaqus/Explicit analysis and only if
-            **useBehRegSettings**=OFF and **regularize**=ON. The default value is ON.
+            **useBehRegSettings** = OFF and **regularize** = ON. The default value is ON.
         regularization
             A Float specifying the regularization increment to be used. This argument is applicable
-            only for an Abaqus/Explicit analysis and only if **useBehRegSettings**=OFF,
-            **regularize**=ON, and **defaultTolerance**=OFF. The default value is 0.03.
+            only for an Abaqus/Explicit analysis and only if **useBehRegSettings** = OFF,
+            **regularize** = ON, and **defaultTolerance** = OFF. The default value is 0.03.
         defaultRateFactor
             A Boolean specifying whether or not the analysis default rate filter factor will be
             used. This argument is applicable only for an Abaqus/Explicit analysis that includes
@@ -231,7 +231,7 @@ class ConnectorBehaviorOption:
             A Float specifying the rate filter factor to be used. This argument is applicable only
             for an Abaqus/Explicit analysis that includes isotropic hardening with tabular
             definition or damage initiation with Plastic motion criteria. This argument is also
-            applicable only if **defaultRateFactor**=OFF. The default value is 0.9.
+            applicable only if **defaultRateFactor** = OFF. The default value is 0.9.
         interpolation
             A SymbolicConstant specifying the type of interpolation increment to be used on
             rate-dependent tabular data. This argument is applicable only for an Abaqus/Explicit
@@ -243,7 +243,7 @@ class ConnectorBehaviorOption:
             options. The default value is ON.
         extrapolation
             A SymbolicConstant specifying the extrapolation technique to be used. This argument is
-            applicable only if **useBehExtSettings**=OFF. Possible values are CONSTANT and LINEAR. The
+            applicable only if **useBehExtSettings** = OFF. Possible values are CONSTANT and LINEAR. The
             default value is CONSTANT.
 
         Returns

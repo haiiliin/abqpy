@@ -31,7 +31,7 @@ class KinematicHardening(PredefinedField):
 
     # A String specifying the name of the AnalyticalField object associated with this
     # predefined field. The **field** argument applies only when
-    # **distributionType**=ANALYTICAL_FIELD. The default value is an empty string.
+    # **distributionType** = ANALYTICAL_FIELD. The default value is an empty string.
     field: str = ""
 
     def __init__(
@@ -71,14 +71,14 @@ class KinematicHardening(PredefinedField):
             hardening models. The default value is an empty sequence.
         sectPtNum
             A sequence of Ints specifying section point numbers. This argument is valid only when
-            **definition**=SECTION_PTS.
+            **definition** = SECTION_PTS.
         definition
             A SymbolicConstant specifying different types of kinematic hardening. Possible values
             are KINEMATIC_HARDENING, CRUSHABLE_FOAM, REBAR, SECTION_PTS, and USER_DEFINED. The
             default value is KINEMATIC_HARDENING.
         rebarLayerNames
             A sequence of Strings specifying rebar layer names. This argument is valid only when
-            **definition**=REBAR.
+            **definition** = REBAR.
         distributionType
             A SymbolicConstant specifying whether the load is uniform. Possible values are MAGNITUDE
             and ANALYTICAL_FIELD. The default value is MAGNITUDE.
@@ -113,14 +113,14 @@ class KinematicHardening(PredefinedField):
             hardening models. The default value is an empty sequence.
         sectPtNum
             A sequence of Ints specifying section point numbers. This argument is valid only when
-            **definition**=SECTION_PTS.
+            **definition** = SECTION_PTS.
         definition
             A SymbolicConstant specifying different types of kinematic hardening. Possible values
             are KINEMATIC_HARDENING, CRUSHABLE_FOAM, REBAR, SECTION_PTS, and USER_DEFINED. The
             default value is KINEMATIC_HARDENING.
         rebarLayerNames
             A sequence of Strings specifying rebar layer names. This argument is valid only when
-            **definition**=REBAR.
+            **definition** = REBAR.
         distributionType
             A SymbolicConstant specifying whether the load is uniform. Possible values are MAGNITUDE
             and ANALYTICAL_FIELD. The default value is MAGNITUDE.

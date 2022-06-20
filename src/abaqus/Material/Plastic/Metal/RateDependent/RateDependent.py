@@ -21,7 +21,7 @@ class RateDependent:
 
     The table data for this object are:
 
-    - If **type**=POWER_LAW, the table data specify the following:
+    - If **type** = POWER_LAW, the table data specify the following:
     
         - :math:`D`.
         - :math:`n`.
@@ -29,7 +29,7 @@ class RateDependent:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **type**=YIELD_RATIO, the table data specify the following:
+    - If **type** = YIELD_RATIO, the table data specify the following:
     
         - Yield stress ratio, :math:`R=\bar{\sigma} / \sigma^{0}`.
         - Equivalent plastic strain rate, :math:`\dot{\bar{\varepsilon}}^{p l}`.
@@ -37,7 +37,7 @@ class RateDependent:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **type**=JOHNSON_COOK, the table data specify the following:
+    - If **type** = JOHNSON_COOK, the table data specify the following:
 
         - :math:`C`.
         - :math:`\dot{\varepsilon}_{0}`.

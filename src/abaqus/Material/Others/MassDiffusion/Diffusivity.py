@@ -19,7 +19,7 @@ class Diffusivity:
 
     The table data for this object are:
 
-    - If **type**=ISOTROPIC, the table data specify the following:
+    - If **type** = ISOTROPIC, the table data specify the following:
     
         - Diffusivity, :math:`D`.
         - Concentration, :math:`c`.
@@ -27,7 +27,7 @@ class Diffusivity:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **type**=ORTHOTROPIC, the table data specify the following:
+    - If **type** = ORTHOTROPIC, the table data specify the following:
     
         - :math:`D_{11}`.
         - :math:`D_{22}`.
@@ -37,7 +37,7 @@ class Diffusivity:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **type**=ANISOTROPIC, the table data specify the following:
+    - If **type** = ANISOTROPIC, the table data specify the following:
     
         - :math:`D_{11}`.
         - :math:`D_{12}`.

@@ -17,7 +17,7 @@ class Piezoelectric:
 
     The table data for this object are:
 
-    - If **type**=STRESS, the table data specify the following:
+    - If **type** = STRESS, the table data specify the following:
     
         - :math:`e_{111}^{\varphi}`.
         - :math:`e_{122}^{\varphi}`.
@@ -41,7 +41,7 @@ class Piezoelectric:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **type**=STRAIN, the table data specify the following:
+    - If **type** = STRAIN, the table data specify the following:
     
         - :math:`d_{111}^{\varphi}`.
         - :math:`d_{122}^{\varphi}`.

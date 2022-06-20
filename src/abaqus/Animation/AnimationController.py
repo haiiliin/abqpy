@@ -45,7 +45,7 @@ class AnimationController:
         Raises
         ------
         AnimationError: animationType not set
-            If **animationType**=NONE:
+            If **animationType** = NONE:
         """
         pass
 
@@ -69,9 +69,9 @@ class AnimationController:
         frame
             An Int specifying the frame number.
         value
-            A Float specifying the frame: for **animationType**=TIME_HISTORY the frame with the time
-            nearest to this value, for **animationType**=HARMONIC the frame with the angle nearest to
-            this value, for **animationType**=SCALE_FACTOR the frame with the scale value nearest to
+            A Float specifying the frame: for **animationType** = TIME_HISTORY the frame with the time
+            nearest to this value, for **animationType** = HARMONIC the frame with the angle nearest to
+            this value, for **animationType** = SCALE_FACTOR the frame with the scale value nearest to
             this value.
         """
         pass

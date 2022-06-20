@@ -87,18 +87,18 @@ class ContourIntegral(Crack):
             **listOfRegions** is ON. The default value is **name**+Front.
         crackTipName
             A String specifying the name of the crack-tip region generated from the tuple of regions
-            specifying the crack-tip region. This parameter is valid only when **listOfRegions**=ON.
+            specifying the crack-tip region. This parameter is valid only when **listOfRegions** = ON.
             The default value is **name**+Tip.
         crackNormal
             A sequence of sequences of Floats specifying the two points of the vector that describes
             the crack normal direction. Each point is defined by a tuple of two or three coordinates
             indicating its position. This argument is required only when
-            **extensionDirectionMethod**=CRACK_NORMAL. The default value is an empty sequence.
+            **extensionDirectionMethod** = CRACK_NORMAL. The default value is an empty sequence.
         qVectors
             A sequence of sequences of sequences of Floats specifying the vectors that indicate the
             set of crack extension directions. Each vector is described by a tuple of two points,
             and each point is described by a tuple of two or three coordinates indicating its
-            position. This argument is required only when **extensionDirectionMethod**=Q_VECTORS. The
+            position. This argument is required only when **extensionDirectionMethod** = Q_VECTORS. The
             default value is an empty sequence.
         midNodePosition
             A Float specifying the position of the midside node along the edges of the second-order
@@ -142,18 +142,18 @@ class ContourIntegral(Crack):
             **listOfRegions** is ON. The default value is **name**+Front.
         crackTipName
             A String specifying the name of the crack-tip region generated from the tuple of regions
-            specifying the crack-tip region. This parameter is valid only when **listOfRegions**=ON.
+            specifying the crack-tip region. This parameter is valid only when **listOfRegions** = ON.
             The default value is **name**+Tip.
         crackNormal
             A sequence of sequences of Floats specifying the two points of the vector that describes
             the crack normal direction. Each point is defined by a tuple of two or three coordinates
             indicating its position. This argument is required only when
-            **extensionDirectionMethod**=CRACK_NORMAL. The default value is an empty sequence.
+            **extensionDirectionMethod** = CRACK_NORMAL. The default value is an empty sequence.
         qVectors
             A sequence of sequences of sequences of Floats specifying the vectors that indicate the
             set of crack extension directions. Each vector is described by a tuple of two points,
             and each point is described by a tuple of two or three coordinates indicating its
-            position. This argument is required only when **extensionDirectionMethod**=Q_VECTORS. The
+            position. This argument is required only when **extensionDirectionMethod** = Q_VECTORS. The
             default value is an empty sequence.
         midNodePosition
             A Float specifying the position of the midside node along the edges of the second-order

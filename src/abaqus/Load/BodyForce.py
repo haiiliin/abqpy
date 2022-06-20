@@ -45,7 +45,7 @@ class BodyForce(Load):
     distributionType: SymbolicConstant = UNIFORM
 
     # A String specifying the name of the AnalyticalField object associated with this load.
-    # The **field** argument applies only when **distributionType**=FIELD. The default value is an
+    # The **field** argument applies only when **distributionType** = FIELD. The default value is an
     # empty string.
     field: str = ""
 
@@ -84,7 +84,7 @@ class BodyForce(Load):
             A Region object specifying the region to which the load is applied.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         distributionType
             A SymbolicConstant specifying how the load is distributed spatially. Possible values are
@@ -92,7 +92,7 @@ class BodyForce(Load):
         comp1
             A Float or a Complex specifying the body force component in the
             1-direction.Note:Although **comp1**, **comp2**, and **comp3** are optional arguments, at least
-            one of them must be nonzero unless **distributionType**=USER_DEFINED.
+            one of them must be nonzero unless **distributionType** = USER_DEFINED.
         comp2
             A Float or a Complex specifying the body force component in the 2-direction.
         comp3
@@ -125,7 +125,7 @@ class BodyForce(Load):
         ----------
         field
             A String specifying the name of the AnalyticalField object associated with this load.
-            The **field** argument applies only when **distributionType**=FIELD. The default value is an
+            The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         distributionType
             A SymbolicConstant specifying how the load is distributed spatially. Possible values are
@@ -133,7 +133,7 @@ class BodyForce(Load):
         comp1
             A Float or a Complex specifying the body force component in the
             1-direction.Note:Although **comp1**, **comp2**, and **comp3** are optional arguments, at least
-            one of them must be nonzero unless **distributionType**=USER_DEFINED.
+            one of them must be nonzero unless **distributionType** = USER_DEFINED.
         comp2
             A Float or a Complex specifying the body force component in the 2-direction.
         comp3

@@ -116,7 +116,7 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb):
             this step is based on the value of the **domain** argument.
         timePeriod
             A Float specifying the time period of the step. **timePeriod** is required if
-            **domain**=TIME; otherwise, this argument is not applicable. The default value is 0.0.
+            **domain** = TIME; otherwise, this argument is not applicable. The default value is 0.0.
         previousStepName
             A String specifying the preceding step. If **previousStepName** is the empty string, the
             last step in the repository is used. If **previousStepName** is not the last step, this

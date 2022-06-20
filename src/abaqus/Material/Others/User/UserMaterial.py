@@ -53,11 +53,11 @@ class UserMaterial:
             value is OFF. This argument is valid only for an Abaqus/Standard analysis.
         mechanicalConstants
             A sequence of Floats specifying the mechanical constants of the material. This argument
-            is valid only when **type**=MECHANICAL or THERMOMECHANICAL. The default value is an empty
+            is valid only when **type** = MECHANICAL or THERMOMECHANICAL. The default value is an empty
             sequence.
         thermalConstants
             A sequence of Floats specifying the thermal constants of the material. This argument is
-            valid only when **type**=THERMAL or THERMOMECHANICAL. The default value is an empty
+            valid only when **type** = THERMAL or THERMOMECHANICAL. The default value is an empty
             sequence.
         effmod
             A Boolean specifying if effective bulk modulus and shear modulus are returned by user
