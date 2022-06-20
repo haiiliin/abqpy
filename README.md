@@ -9,6 +9,8 @@
 [![GitHub release](https://img.shields.io/github/release/haiiliin/abqpy.svg)](https://GitHub.com/haiiliin/abqpy/releases/)
 [![PyPI download month](https://img.shields.io/pypi/dm/ansicolortags.svg)](https://pypi.python.org/pypi/abqpy/)
 
+Migrate pyabaqus to abqpy.
+
 Type hints for Abaqus/Python scripting
 
 `abqpy` is a Python package providing type hints for Python scripting of Abaqus, you can 
