@@ -69,7 +69,7 @@ def linkcode_resolve(domain: str, info: dict):
     fullname = info['fullname']
 
     filename = modname.replace('.', '/')
-    main_release = release.split(".")[0]
+    main_release = release.split(".")[0][:4]
     baseurl = f'https://github.com/haiiliin/abqpy/blob/V{main_release}/src/{filename}.py'
 
     submod = sys.modules.get(modname)
