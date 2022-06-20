@@ -9,7 +9,7 @@
 [![GitHub release](https://img.shields.io/github/release/haiiliin/abqpy.svg)](https://GitHub.com/haiiliin/abqpy/releases/)
 [![PyPI download month](https://img.shields.io/pypi/dm/ansicolortags.svg)](https://pypi.python.org/pypi/abqpy/)
 
-Migrate pyabaqus to abqpy.
+Migrating pyabaqus to abqpy.
 
 Type hints for Abaqus/Python scripting
 
