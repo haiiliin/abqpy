@@ -25,7 +25,8 @@ class VolumetricTestData:
     
         - Pressure, :math:`p`.
         - Volume ratio, :math:`J` (current volume/original volume).
-    - For a viscoelastic material model, the values depend on the value of the **time** member of the [Viscoelastic](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viscoelasticpyc.htm?ContextScope=all) object.
+    - For a viscoelastic material model, the values depend on the value of the **time** member of the 
+      :py:class:`~abaqus.Material.Elastic.HyperElastic.ViscoElastic.Viscoelastic.Viscoelastic` object.
         - If **time** = RELAXATION_TEST_DATA, the table data specify the following:
         
             - Normalized volumetric (bulk) modulus :math:`k_{R}(t), \quad\left(0 \leq k_{R}(t) \leq 1\right)`

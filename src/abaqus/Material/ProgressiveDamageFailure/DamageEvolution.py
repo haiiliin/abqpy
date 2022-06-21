@@ -137,7 +137,7 @@ class DamageEvolution:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-    - If **type** = ENERGY, **softening** = LINEAR and constructor for [DamageInitiation](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-damageinitiationpyc.htm?ContextScope=all)=HashinDamageInitiation the table data specify the following:
+    - If **type** = ENERGY, **softening** = LINEAR and constructor for :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` = HashinDamageInitiation, the table data specify the following:
     
         - Fiber tensile fracture energy.
         - Fiber compressive fracture energy.
