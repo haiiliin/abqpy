@@ -322,7 +322,7 @@
 <h3>AbaqusBoolean<a class="headerlink" href="#abaqusboolean" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AbaqusBoolean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/AbaqusBoolean.py#L1-L47"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AbaqusBoolean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/AbaqusBoolean.py#L1-L48"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="Permalink to this definition">#</a></dt>
 <dd><p>The AbaqusBoolean object is used in a similar way to the SymbolicConstant object. If you
 pass an AbaqusBoolean object to the Python repr() function, the function returns the
 text without quotes. In effect, the text is the variable that, by convention, refers to
@@ -349,7 +349,7 @@ Python bool (True, False), or a Python int (1, 0).</p>
 <h3>BackwardCompatibility<a class="headerlink" href="#backwardcompatibility" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BackwardCompatibility</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/BackwardCompatibility.py#L4-L119"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BackwardCompatibility</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/BackwardCompatibility.py#L4-L121"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility" title="Permalink to this definition">#</a></dt>
 <dd><p>The BackwardCompatibility object enables the user to control access to deprecated
 commands in the Abaqus Scripting Interface and to collect data on which deprecated
 commands have been used. This enables the user to check that no deprecated methods,
@@ -436,13 +436,14 @@ displayed when <strong>reportDeprecated</strong> is True. The default value is F
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedArgsUsed">
-<span class="sig-name descname"><span class="pre">getDeprecatedArgsUsed</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/BackwardCompatibility.py#L81-L89"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedArgsUsed" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getDeprecatedArgsUsed</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/BackwardCompatibility.py#L82-L91"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedArgsUsed" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a list of deprecated arguments used since the last call to
 resetDeprecatedArgsUsed.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-class docutils literal notranslate"><span class="pre">python:list</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> Strings.</dt><dd></dd>
+<dt><code class="xref py py-class docutils literal notranslate"><span class="pre">python:list</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">python:str</span></code>]</dt><dd><p>A list of Strings.</p>
+</dd>
 </dl>
 </dd>
 </dl>
@@ -450,13 +451,14 @@ resetDeprecatedArgsUsed.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedMethodsUsed">
-<span class="sig-name descname"><span class="pre">getDeprecatedMethodsUsed</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/BackwardCompatibility.py#L71-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedMethodsUsed" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getDeprecatedMethodsUsed</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/BackwardCompatibility.py#L71-L80"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedMethodsUsed" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a list of deprecated methods used since the last call to
 resetDeprecatedMethodsUsed.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-class docutils literal notranslate"><span class="pre">python:list</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> Strings.</dt><dd></dd>
+<dt><code class="xref py py-class docutils literal notranslate"><span class="pre">python:list</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">python:str</span></code>]</dt><dd><p>A list of Strings.</p>
+</dd>
 </dl>
 </dd>
 </dl>
@@ -464,19 +466,19 @@ resetDeprecatedMethodsUsed.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.resetDeprecatedArgsUsed">
-<span class="sig-name descname"><span class="pre">resetDeprecatedArgsUsed</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/BackwardCompatibility.py#L95-L97"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.resetDeprecatedArgsUsed" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">resetDeprecatedArgsUsed</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/BackwardCompatibility.py#L97-L99"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.resetDeprecatedArgsUsed" title="Permalink to this definition">#</a></dt>
 <dd><p>This method clears the list of deprecated arguments used.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.resetDeprecatedMethodsUsed">
-<span class="sig-name descname"><span class="pre">resetDeprecatedMethodsUsed</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/BackwardCompatibility.py#L91-L93"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.resetDeprecatedMethodsUsed" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">resetDeprecatedMethodsUsed</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/BackwardCompatibility.py#L93-L95"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.resetDeprecatedMethodsUsed" title="Permalink to this definition">#</a></dt>
 <dd><p>This method clears the list of deprecated methods used.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">includeDeprecated</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reportDeprecated</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">showKeysInReport</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/BackwardCompatibility.py#L99-L119"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">includeDeprecated</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reportDeprecated</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">showKeysInReport</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/BackwardCompatibility.py#L101-L121"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the BackwardCompatibility object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

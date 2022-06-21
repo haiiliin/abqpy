@@ -543,7 +543,7 @@ contents.</p>
 <h3>DisplayGroupInstance<a class="headerlink" href="#displaygroupinstance" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DisplayGroupInstance</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroupInstance.py#L5-L100"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DisplayGroupInstance</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroupInstance.py#L5-L102"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance" title="Permalink to this definition">#</a></dt>
 <dd><p>A <a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance" title="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisplayGroupInstance</span></code></a> object stores the IDs of the entities displayed in a viewport.
 The DisplayGroupInstance object has no constructor. When you set a display group to be
 plotted in a viewport, Abaqus/CAE creates a DisplayGroupInstance object for each display
@@ -601,7 +601,7 @@ member of the <a class="reference internal" href="odb_display.html#abaqus.OdbDis
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.elements">
-<span class="sig-name descname"><span class="pre">elements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroupInstance.py#L72-L84"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.elements" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">elements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroupInstance.py#L73-L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.elements" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns the list of elements present in the DisplayGroupInstance object. The
 elements method returns a Dictionary object that uses part instance names for the keys.
 The value of the items in the Dictionary object is a List of user element labels that
@@ -611,7 +611,8 @@ DisplayGroupInstance repository member of the OdbDisplay object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Dictionary</span></code> object.</dt><dd></dd>
+<dt><code class="xref py py-class docutils literal notranslate"><span class="pre">python:dict</span></code></dt><dd><p>A Dictionary object.</p>
+</dd>
 </dl>
 </dd>
 </dl>
@@ -619,7 +620,7 @@ DisplayGroupInstance repository member of the OdbDisplay object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.nodes">
-<span class="sig-name descname"><span class="pre">nodes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroupInstance.py#L58-L70"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.nodes" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">nodes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroupInstance.py#L58-L71"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.nodes" title="Permalink to this definition">#</a></dt>
 <dd><p>This method is used to obtain the list of nodes present in the DisplayGroupInstance
 object. It returns a Dictionary object keyed by part instance names, the value of which
 is a list of user node labels belonging to the part instance and contained in the
@@ -629,7 +630,8 @@ object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Dictionary</span></code> object.</dt><dd></dd>
+<dt><code class="xref py py-class docutils literal notranslate"><span class="pre">python:dict</span></code></dt><dd><p>A Dictionary object.</p>
+</dd>
 </dl>
 </dd>
 </dl>
@@ -637,7 +639,7 @@ object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lockOptions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroupInstance.py#L86-L100"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lockOptions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroupInstance.py#L88-L102"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the DisplayGroupInstance object. The setValues method is available
 only for DisplayGroupInstance objects that are members of the DisplayGroupInstance
 repository member of the OdbDisplay object.</p>
