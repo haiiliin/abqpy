@@ -6,7 +6,7 @@
 abqpy documentation
 ======================
 
-Type hints for Python scripting of Abaqus.
+Type hints for Abaqus/Python scripting.
 
 `abqpy` is a Python package providing type hints for Python scripting of Abaqus, you can 
 use it to write you Python script of Abaqus fluently, even without doing anything in Abaqus. 
