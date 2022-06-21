@@ -28,6 +28,6 @@ class ConstrainedSketchGeometryArray:
 
         Returns
         -------
-        A ConstrainedSketchGeometry object.
+        A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object.
         """
         pass

@@ -28,7 +28,7 @@ class MembraneSection(Section):
     - MEMBRANE SECTION
     """
 
-    # A RebarLayers object specifying reinforcement properties.
+    # A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object specifying reinforcement properties.
     rebarLayers: RebarLayers = None
 
     def __init__(
@@ -83,7 +83,7 @@ class MembraneSection(Section):
 
         Returns
         -------
-        A MembraneSection object.
+        A :py:class:`~abaqus.Section.MembraneSection.MembraneSection` object.
 
         Raises
         ------

@@ -56,7 +56,7 @@ class NonstructuralMass(Inertia):
         name
             A String specifying the repository key.
         region
-            A Region object specifying the region to which the mass is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the mass is applied.
         units
             A SymbolicConstant specifying the units used to specify the nonstructural mass. Possible
             values are TOTAL_MASS, MASS_PER_VOLUME, MASS_PER_AREA, and MASS_PER_LENGTH.
@@ -69,7 +69,7 @@ class NonstructuralMass(Inertia):
 
         Returns
         -------
-        A NonstructuralMass object.
+        A :py:class:`~abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass` object.
         """
         super().__init__()
         pass

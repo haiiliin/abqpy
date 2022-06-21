@@ -93,7 +93,7 @@ class GapFlow:
 
         Returns
         -------
-        A GapFlow object.
+        A :py:class:`~abaqus.Material.Gap.GapFlow.GapFlow` object.
         """
         pass
 

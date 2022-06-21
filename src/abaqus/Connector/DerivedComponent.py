@@ -4,7 +4,7 @@ from .CDCTermArray import CDCTermArray
 
 
 class DerivedComponent:
-    """A DerivedComponent object describes user-customized components for use in defining
+    """A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` object describes user-customized components for use in defining
     ConnectorFriction and Potential objects.
 
     Attributes
@@ -34,7 +34,7 @@ class DerivedComponent:
     - CONNECTOR DERIVED COMPONENT
     """
 
-    # A CDCTermArray object.
+    # A :py:class:`~abaqus.Connector.CDCTermArray.CDCTermArray` object.
     cdcTerms: CDCTermArray = CDCTermArray()
 
     def __init__(self):
@@ -57,7 +57,7 @@ class DerivedComponent:
 
         Returns
         -------
-        A DerivedComponent object.
+        A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` object.
 
         Raises
         ------
@@ -147,7 +147,7 @@ class DerivedComponent:
 
         Returns
         -------
-        A CDCTerm object.
+        A :py:class:`~abaqus.Connector.CDCTerm.CDCTerm` object.
 
         Raises
         ------

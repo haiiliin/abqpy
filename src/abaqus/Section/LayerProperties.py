@@ -76,6 +76,6 @@ class LayerProperties:
 
         Returns
         -------
-        A LayerProperties object.
+        A :py:class:`~abaqus.Section.LayerProperties.LayerProperties` object.
         """
         pass

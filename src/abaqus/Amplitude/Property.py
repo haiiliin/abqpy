@@ -59,7 +59,7 @@ def assignMaterialOrientatio(
         A sequence of geomSequences of ConstrainedSketchVertex, Edge, Face, and Cell objects or a sequence of
         sequences of elements.
     localCsys
-        A Datum object specifying the local coordinate system or None, indicating the global
+        A :py:class:`~abaqus.Datum.Datum.Datum` object specifying the local coordinate system or None, indicating the global
         coordinate system.
     axis
         A SymbolicConstant specifying the axis of a cylindrical or spherical datum coordinate
@@ -91,7 +91,7 @@ def assignRebarOrientatio(
         A sequence of geomSequences of ConstrainedSketchVertex, Edge, Face, and Cell objects or a sequence of
         sequences of elements.
     localCsys
-        A Datum object specifying the local coordinate system or None, indicating the global
+        A :py:class:`~abaqus.Datum.Datum.Datum` object specifying the local coordinate system or None, indicating the global
         coordinate system.
     axis
         A SymbolicConstant specifying the axis of a cylindrical or spherical datum coordinate
@@ -119,7 +119,7 @@ def flipNorma(regions: Region, referenceRegion: str = ""):
     Parameters
     ----------
     regions
-        A Region object specifying the region on which normals are flipped. For 3D parts, the
+        A :py:class:`~abaqus.Region.Region.Region` object specifying the region on which normals are flipped. For 3D parts, the
         region contains Face objects or two-dimensional triangle or quadrilateral Element
         objects. For axisymmetric parts, the region contains Edge objects or line Elements
         objects.
@@ -147,7 +147,7 @@ def flipTangen(regions: Region):
     Parameters
     ----------
     regions
-        A Region object specifying the region on which normals are flipped. The region contains
+        A :py:class:`~abaqus.Region.Region.Region` object specifying the region on which normals are flipped. The region contains
         Edge objects or one-dimensional Element objects.
     """
     pass

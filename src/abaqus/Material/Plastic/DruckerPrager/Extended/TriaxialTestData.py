@@ -52,7 +52,7 @@ class TriaxialTestData:
 
         Returns
         -------
-        A TriaxialTestData object.
+        A :py:class:`~abaqus.Material.Plastic.DruckerPrager.Extended.TriaxialTestData.TriaxialTestData` object.
 
         Raises
         ------

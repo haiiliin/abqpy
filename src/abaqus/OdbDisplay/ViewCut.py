@@ -164,7 +164,7 @@ class ViewCut:
 
         Returns
         -------
-        A ViewCut object.
+        A :py:class:`~abaqus.OdbDisplay.ViewCut.ViewCut` object.
         """
         pass
 

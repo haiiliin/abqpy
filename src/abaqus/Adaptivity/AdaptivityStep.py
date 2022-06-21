@@ -329,7 +329,7 @@ class AdaptivityStep(StepBase):
         Parameters
         ----------
         region
-            A Region object specifying the region to which the adaptive mesh domain is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the adaptive mesh domain is applied.
         controls
             A String specifying the name of an AdaptiveMeshControl object.
         frequency
@@ -344,7 +344,7 @@ class AdaptivityStep(StepBase):
 
         Returns
         -------
-        An AdaptiveMeshDomain object
+        An :py:class:`~abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain` object
         """
         self.adaptiveMeshDomains[controls] = adaptiveMeshDomain = AdaptiveMeshDomain(
             region, controls, frequency, initialMeshSweeps, meshSweeps

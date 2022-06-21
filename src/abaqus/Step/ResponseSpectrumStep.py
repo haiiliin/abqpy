@@ -168,30 +168,30 @@ class ResponseSpectrumStep(AnalysisStep):
     # A String specifying a description of the new step. The default value is an empty string.
     description: str = ""
 
-    # A ResponseSpectrumComponentArray object.
+    # A :py:class:`~abaqus.StepMiscellaneous.ResponseSpectrumComponentArray.ResponseSpectrumComponentArray` object.
     components: ResponseSpectrumComponentArray = ResponseSpectrumComponentArray()
 
-    # A DirectDamping object.
+    # A :py:class:`~abaqus.StepMiscellaneous.DirectDamping.DirectDamping` object.
     directDamping: DirectDamping = DirectDamping()
 
-    # A CompositeDamping object.
+    # A :py:class:`~abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping` object.
     compositeDamping: CompositeDamping = CompositeDamping()
 
-    # A RayleighDamping object.
+    # A :py:class:`~abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping` object.
     rayleighDamping: RayleighDamping = RayleighDamping()
 
-    # A DirectDampingByFrequency object.
+    # A :py:class:`~abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency` object.
     directDampingByFrequency: DirectDampingByFrequency = DirectDampingByFrequency()
 
-    # A RayleighDampingByFrequency object.
+    # A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency` object.
     rayleighDampingByFrequency: RayleighDampingByFrequency = (
         RayleighDampingByFrequency()
     )
 
-    # A StructuralDamping object.
+    # A :py:class:`~abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping` object.
     structuralDamping: StructuralDamping = StructuralDamping()
 
-    # A StructuralDampingByFrequency object.
+    # A :py:class:`~abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency` object.
     structuralDampingByFrequency: StructuralDampingByFrequency = (
         StructuralDampingByFrequency()
     )
@@ -248,13 +248,13 @@ class ResponseSpectrumStep(AnalysisStep):
         str, HistoryOutputRequestState
     ]()
 
-    # A DiagnosticPrint object.
+    # A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
-    # A Monitor object.
+    # A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
     monitor: Monitor = None
 
-    # A Restart object.
+    # A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
     restart: Restart = Restart()
 
     # A repository of AdaptiveMeshConstraintState objects.
@@ -265,10 +265,10 @@ class ResponseSpectrumStep(AnalysisStep):
     # A repository of AdaptiveMeshDomain objects.
     adaptiveMeshDomains: dict[str, AdaptiveMeshDomain] = dict[str, AdaptiveMeshDomain]()
 
-    # A Control object.
+    # A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object.
     control: Control = Control()
 
-    # A SolverControl object.
+    # A :py:class:`~abaqus.StepMiscellaneous.SolverControl.SolverControl` object.
     solverControl: SolverControl = SolverControl()
 
     # A repository of BoundaryConditionState objects.
@@ -323,7 +323,7 @@ class ResponseSpectrumStep(AnalysisStep):
             A String specifying the name of the previous step. The new step appears after this step
             in the list of analysis steps.
         components
-            A ResponseSpectrumComponentArray object.
+            A :py:class:`~abaqus.StepMiscellaneous.ResponseSpectrumComponentArray.ResponseSpectrumComponentArray` object.
         description
             A String specifying a description of the new step. The default value is an empty string.
         comp
@@ -335,22 +335,22 @@ class ResponseSpectrumStep(AnalysisStep):
             A SymbolicConstant specifying the method used to sum the components. Possible values are
             ABS, CQC, NRL, SRSS, TENP, DSC, and GRP. The default value is ABS.
         directDamping
-            A DirectDamping object.
+            A :py:class:`~abaqus.StepMiscellaneous.DirectDamping.DirectDamping` object.
         compositeDamping
-            A CompositeDamping object.
+            A :py:class:`~abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping` object.
         rayleighDamping
-            A RayleighDamping object.
+            A :py:class:`~abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping` object.
         directDampingByFrequency
-            A DirectDampingByFrequency object.
+            A :py:class:`~abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency` object.
         rayleighDampingByFrequency
-            A RayleighDampingByFrequency object.
+            A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency` object.
         maintainAttributes
             A Boolean specifying whether to retain attributes from an existing step with the same
             name. The default value is False.
 
         Returns
         -------
-        A ResponseSpectrumStep object.
+        A :py:class:`~abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep` object.
 
         Raises
         ------
@@ -385,15 +385,15 @@ class ResponseSpectrumStep(AnalysisStep):
             A SymbolicConstant specifying the method used to sum the components. Possible values are
             ABS, CQC, NRL, SRSS, TENP, DSC, and GRP. The default value is ABS.
         directDamping
-            A DirectDamping object.
+            A :py:class:`~abaqus.StepMiscellaneous.DirectDamping.DirectDamping` object.
         compositeDamping
-            A CompositeDamping object.
+            A :py:class:`~abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping` object.
         rayleighDamping
-            A RayleighDamping object.
+            A :py:class:`~abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping` object.
         directDampingByFrequency
-            A DirectDampingByFrequency object.
+            A :py:class:`~abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency` object.
         rayleighDampingByFrequency
-            A RayleighDampingByFrequency object.
+            A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency` object.
 
         Raises
         ------

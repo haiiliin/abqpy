@@ -90,7 +90,7 @@ class GapElectricalConductance:
 
         Returns
         -------
-        A GapElectricalConductance object.
+        A :py:class:`~abaqus.Interaction.GapElectricalConductance.GapElectricalConductance` object.
         """
         pass
 

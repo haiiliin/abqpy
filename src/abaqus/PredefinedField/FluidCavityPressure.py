@@ -26,7 +26,7 @@ class FluidCavityPressure(PredefinedField):
     - INITIAL CONDITIONS
     """
 
-    # A Region object on which the **fluidCavity** interaction is specified.
+    # A :py:class:`~abaqus.Region.Region.Region` object on which the **fluidCavity** interaction is specified.
     region: Region = Region()
 
     def __init__(self, name: str, fluidCavity: str, fluidPressure: float):
@@ -51,7 +51,7 @@ class FluidCavityPressure(PredefinedField):
 
         Returns
         -------
-        A FluidCavityPressure object.
+        A :py:class:`~abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure` object.
         """
         super().__init__()
         pass

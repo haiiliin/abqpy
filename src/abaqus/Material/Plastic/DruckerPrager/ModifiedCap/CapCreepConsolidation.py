@@ -88,7 +88,7 @@ class CapCreepConsolidation:
 
         Returns
         -------
-        A CapCreepConsolidation object.
+        A :py:class:`~abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation` object.
         """
         pass
 

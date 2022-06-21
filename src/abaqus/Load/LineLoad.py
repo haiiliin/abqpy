@@ -52,7 +52,7 @@ class LineLoad(Load):
     # empty string.
     field: str = ""
 
-    # A Region object specifying the region to which the load is applied.
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
     def __init__(
@@ -85,7 +85,7 @@ class LineLoad(Load):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A Region object specifying the region to which the load is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
         distributionType
             A SymbolicConstant specifying how the load is distributed spatially. Possible values are
             UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
@@ -112,7 +112,7 @@ class LineLoad(Load):
 
         Returns
         -------
-        A LineLoad object.
+        A :py:class:`~abaqus.Load.LineLoad.LineLoad` object.
         """
         super().__init__()
         pass

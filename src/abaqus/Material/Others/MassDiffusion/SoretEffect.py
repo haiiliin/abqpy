@@ -54,7 +54,7 @@ class SoretEffect:
 
         Returns
         -------
-        A SoretEffect object.
+        A :py:class:`~abaqus.Material.Others.MassDiffusion.SoretEffect.SoretEffect` object.
 
         Raises
         ------

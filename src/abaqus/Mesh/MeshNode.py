@@ -76,7 +76,7 @@ class MeshNode:
         coordinates
             A sequence of three Floats specifying the coordinates of the new node.
         localCsys
-            A DatumCsys object specifying the local coordinate system. If unspecified, the global
+            A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system. If unspecified, the global
             coordinate system will be used.
         label
             An Int specifying the node label.
@@ -84,7 +84,7 @@ class MeshNode:
         Returns
         -------
         node: MeshNode
-            A MeshNode object
+            A :py:class:`~abaqus.Mesh.MeshNode.MeshNode` object
         """
         pass
 
@@ -131,7 +131,7 @@ class MeshNode:
         Returns
         -------
         nodes: MeshNodeArray
-            A MeshNodeArray object, which is a sequence of MeshNode objects
+            A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object, which is a sequence of MeshNode objects
         """
         pass
 

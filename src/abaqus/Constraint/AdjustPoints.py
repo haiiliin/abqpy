@@ -47,13 +47,13 @@ class AdjustPoints(Constraint):
         name
             A String specifying the constraint repository key.
         surface
-            A Region object specifying the surface to which the **controlPoints** are adjusted.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the surface to which the **controlPoints** are adjusted.
         controlPoints
-            A Region object specifying the constraint control points.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the constraint control points.
 
         Returns
         -------
-        An AdjustPoints object.
+        An :py:class:`~abaqus.Constraint.AdjustPoints.AdjustPoints` object.
         """
         super().__init__()
         pass

@@ -52,7 +52,7 @@ class AdaptivityProcess:
         name
             A String specifying the name of the Adaptivity Process.
         job
-            A ModelJob object specifying a job to be used as the prototype for all analysis jobs run
+            A :py:class:`~abaqus.Job.ModelJob.ModelJob` object specifying a job to be used as the prototype for all analysis jobs run
             by the adaptivity process.
         maxIterations
             An Int specifying the maximum number of analysis jobs that will be run by the Adaptivity
@@ -65,7 +65,7 @@ class AdaptivityProcess:
 
         Returns
         -------
-        An AdaptivityProcess object.
+        An :py:class:`~abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess` object.
 
         Raises
         ------
@@ -146,7 +146,7 @@ class AdaptivityProcess:
 
         Returns
         -------
-        An AdaptivityIteration object.
+        An :py:class:`~abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration` object.
         """
         self.iterations[iteration] = iteration = AdaptivityIteration(
             iteration, jobName, modelName, odbPath, remeshingErrors

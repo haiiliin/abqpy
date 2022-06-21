@@ -58,6 +58,6 @@ class NumberFormat:
 
         Returns
         -------
-        A NumberFormat object.
+        A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object.
         """
         pass

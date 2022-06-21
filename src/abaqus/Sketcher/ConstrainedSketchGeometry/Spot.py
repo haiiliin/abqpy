@@ -21,7 +21,7 @@ class Spot(ConstrainedSketchGeometry):
 
         Returns
         -------
-        A ConstrainedSketchGeometry object (None if the spot cannot be created).
+        A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the spot cannot be created).
 
         """
         pass

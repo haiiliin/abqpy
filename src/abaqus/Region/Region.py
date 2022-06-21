@@ -130,7 +130,7 @@ class Region:
 
         Returns
         -------
-        A Region object.
+        A :py:class:`~abaqus.Region.Region.Region` object.
         """
         pass
 
@@ -234,7 +234,7 @@ class Region:
 
         Returns
         -------
-        A Region object.
+        A :py:class:`~abaqus.Region.Region.Region` object.
         """
         pass
 

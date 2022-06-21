@@ -2,7 +2,7 @@ from .RayleighDampingComponentArray import RayleighDampingComponentArray
 
 
 class RayleighDamping:
-    """A RayleighDamping object contains Rayleigh Damping parameters.
+    """A :py:class:`~abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping` object contains Rayleigh Damping parameters.
 
     Attributes
     ----------
@@ -19,5 +19,5 @@ class RayleighDamping:
         mdb.models[name].steps[name].rayleighDamping
     """
 
-    # A RayleighDampingComponentArray object.
+    # A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingComponentArray.RayleighDampingComponentArray` object.
     components: RayleighDampingComponentArray = RayleighDampingComponentArray()

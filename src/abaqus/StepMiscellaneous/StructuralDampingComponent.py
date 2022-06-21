@@ -1,5 +1,5 @@
 class StructuralDampingComponent:
-    """A StructuralDampingComponent object is used to define structural damping over a range of
+    """A :py:class:`~abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent` object is used to define structural damping over a range of
     modes.
 
     Attributes

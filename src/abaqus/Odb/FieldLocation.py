@@ -39,5 +39,5 @@ class FieldLocation:
     # extrapolating results calculated at the integration points.
     position: SymbolicConstant = None
 
-    # A SectionPointArray object.
+    # A :py:class:`~abaqus.Odb.SectionPointArray.SectionPointArray` object.
     sectionPoints: SectionPointArray = SectionPointArray()

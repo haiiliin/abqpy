@@ -58,7 +58,7 @@ class AcousticImpedanceProp(ContactProperty):
 
         Returns
         -------
-        An AcousticImpedanceProp object.
+        An :py:class:`~abaqus.Interaction.AcousticImpedanceProp.AcousticImpedanceProp` object.
         """
         super().__init__(name)
         pass

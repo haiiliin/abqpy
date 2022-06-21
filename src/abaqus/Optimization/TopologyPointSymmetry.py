@@ -40,7 +40,7 @@ class TopologyPointSymmetry(GeometricRestriction):
         name
             A String specifying the geometric restriction repository key.
         region
-            A Region object specifying the region to which the geometric restriction is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         csys
@@ -52,7 +52,7 @@ class TopologyPointSymmetry(GeometricRestriction):
 
         Returns
         -------
-        A TopologyPointSymmetry object.
+        A :py:class:`~abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry` object.
         """
         super().__init__()
         pass

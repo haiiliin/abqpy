@@ -45,7 +45,7 @@ class HomogeneousSolidSection(SolidSection):
 
         Returns
         -------
-        A HomogeneousSolidSection object.
+        A :py:class:`~abaqus.Section.HomogeneousSolidSection.HomogeneousSolidSection` object.
 
         Raises
         ------

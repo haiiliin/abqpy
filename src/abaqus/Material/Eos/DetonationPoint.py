@@ -1,5 +1,5 @@
 class DetonationPoint:
-    """A DetonationPoint object specifies a suboption of the Eos object. The DetonationPoint
+    """A :py:class:`~abaqus.Material.Eos.DetonationPoint.DetonationPoint` object specifies a suboption of the Eos object. The DetonationPoint
     object defines either isotropic linear elastic shear or linear viscous shear behavior
     for a hydrodynamic material.
 
@@ -45,7 +45,7 @@ class DetonationPoint:
 
         Returns
         -------
-        A DetonationPoint object.
+        A :py:class:`~abaqus.Material.Eos.DetonationPoint.DetonationPoint` object.
         """
         pass
 

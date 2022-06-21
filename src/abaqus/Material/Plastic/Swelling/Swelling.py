@@ -29,7 +29,7 @@ class Swelling:
     - SWELLING
     """
 
-    # A Ratios object.
+    # A :py:class:`~abaqus.Material.Ratios.Ratios` object.
     ratios: Ratios = Ratios(((),))
 
     def __init__(
@@ -65,7 +65,7 @@ class Swelling:
 
         Returns
         -------
-        A Swelling object.
+        A :py:class:`~abaqus.Material.Plastic.Swelling.Swelling.Swelling` object.
 
         Raises
         ------

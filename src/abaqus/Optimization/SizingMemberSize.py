@@ -32,7 +32,7 @@ class SizingMemberSize(GeometricRestriction):
         name
             A String specifying the geometric restriction repository key.
         region
-            A Region object specifying the region to which the geometric restriction is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
         minWidth
             A Float specifying the min width.
 

@@ -104,7 +104,7 @@ class Feature:
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -200,7 +200,7 @@ class Feature:
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -326,7 +326,7 @@ class Feature:
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -350,7 +350,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -380,7 +380,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -410,7 +410,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -439,7 +439,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -474,7 +474,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -509,7 +509,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -547,7 +547,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -574,7 +574,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -604,7 +604,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -634,7 +634,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -665,7 +665,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -699,7 +699,7 @@ class Feature:
             A SymbolicConstant specifying the type of coordinate system. Possible values are
             CARTESIAN, CYLINDRICAL, and SPHERICAL.
         datumCoordSys
-            A Datum object representing a datum coordinate system from which to offset.
+            A :py:class:`~abaqus.Datum.Datum.Datum` object representing a datum coordinate system from which to offset.
         vector
             A sequence of three Floats specifying the **X**-, **Y**-, and **Z**-offsets from
             **datumCoordSys**. The arguments **vector** and **point** are mutually exclusive, and one of
@@ -714,7 +714,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -772,7 +772,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -812,7 +812,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -845,7 +845,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -879,7 +879,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -910,7 +910,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -945,7 +945,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -977,7 +977,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1007,7 +1007,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1037,7 +1037,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1067,7 +1067,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1097,7 +1097,7 @@ class Feature:
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1124,7 +1124,7 @@ class Feature:
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1150,7 +1150,7 @@ class Feature:
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1184,7 +1184,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1208,14 +1208,14 @@ class Feature:
         Parameters
         ----------
         edge
-            An Edge object.
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object.
         parameter
             A Float specifying the distance along **edge** to the DatumPoint object. Possible values
             are 0 << **parameter** << 1.
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1246,7 +1246,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1272,12 +1272,12 @@ class Feature:
         point
             A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum object representing a datum point.
         face
-            A Face object or a Datum object representing a datum plane.Note:Any other types of
+            A :py:class:`~abaqus.BasicGeometry.Face.Face` object or a Datum object representing a datum plane.Note:Any other types of
             planes are not supported.
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1293,7 +1293,7 @@ class Feature:
         sketchPlaneSide: SymbolicConstant = SIDE1,
         sketchUpEdge: str = "",
     ):
-        """This method creates a Transform object. A Transform object is a 4x3 matrix of Floats
+        """This method creates a Transform object. A :py:class:`~abaqus.BasicGeometry.Transform.Transform` object is a 4x3 matrix of Floats
         that represents the transformation from sketch coordinates to part coordinates.
 
         Notes
@@ -1324,7 +1324,7 @@ class Feature:
 
         Returns
         -------
-        A Transform object. A Transform is an object with one method that returns the transform
+        A :py:class:`~abaqus.BasicGeometry.Transform.Transform` object. A Transform is an object with one method that returns the transform
         matrix.
 
         Raises
@@ -1351,11 +1351,11 @@ class Feature:
         cells
             A sequence of Cell objects specifying the cells to partition.
         datumPlane
-            A DatumPlane object.
+            A :py:class:`~abaqus.Datum.DatumPlane.DatumPlane` object.
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1385,7 +1385,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1425,7 +1425,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1449,14 +1449,14 @@ class Feature:
         Parameters
         ----------
         cell
-            A Cell object specifying the cell to partition.
+            A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object specifying the cell to partition.
         cornerPoints
             A sequence of ConstrainedSketchVertex, InterestingPoint, or DatumPoint objects. 3 ≤≤ len(*cornerPoints*)
             ≤≤ 5. The corner points must not coincide.
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1486,7 +1486,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1514,13 +1514,13 @@ class Feature:
         cells
             A sequence of Cell objects specifying the cells to partition.
         edge
-            An Edge object specifying the normal to the plane.
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the normal to the plane.
         point
             A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object specifying a point on **edge**.
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1554,7 +1554,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1590,7 +1590,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1622,12 +1622,12 @@ class Feature:
             must form a continuous chain without branches. The Edge objects must all belong to the
             same PartInstance object.
         sweepPath
-            An Edge object specifying the sweep path. The start of **sweepPath** must be in the plane
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the sweep path. The start of **sweepPath** must be in the plane
             and perpendicular to the plane formed by **edges**. The sweep path must be planar.
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1652,11 +1652,11 @@ class Feature:
         edges
             A sequence of Edge objects specifying the edges to partition.
         datumPlane
-            A DatumPlane object specifying the location of the partition.
+            A :py:class:`~abaqus.Datum.DatumPlane.DatumPlane` object specifying the location of the partition.
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1686,7 +1686,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1709,13 +1709,13 @@ class Feature:
         Parameters
         ----------
         edge
-            An Edge object specifying the edge to partition.
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the edge to partition.
         point
             An InterestingPoint or DatumPoint object specifying a point on **edge**.
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1739,12 +1739,12 @@ class Feature:
         Parameters
         ----------
         face
-            A Face object specifying the face to partition.
+            A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face to partition.
 
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1766,21 +1766,21 @@ class Feature:
         Parameters
         ----------
         face
-            A Face object specifying the face to partition.
+            A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face to partition.
         edge1
-            An Edge object specifying the start of the partition. The edge must belong to **face**.
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the start of the partition. The edge must belong to **face**.
         parameter1
             A Float specifying the distance along **edge1** at which to partition. Possible values are
             0.0 ≤≤ **distance1** ≤≤ 1.0.
         edge2
-            An Edge object specifying the end of the partition. The edge must belong to **face**.
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the end of the partition. The edge must belong to **face**.
         parameter2
             A Float specifying the distance along **edge2** at which to partition. Possible values are
             0.0 ≤≤ **distance2** ≤≤ 1.0.
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1806,19 +1806,19 @@ class Feature:
         Parameters
         ----------
         face
-            A Face object specifying the face to partition.
+            A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face to partition.
         edge1
-            An Edge object specifying the start of the partition. The edge must belong to **face**.
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the start of the partition. The edge must belong to **face**.
         point1
             A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object specifying a point on **edge1**.
         edge2
-            An Edge object specifying the end of the partition. The edge must belong to **face**.
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the end of the partition. The edge must belong to **face**.
         point2
             A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object specifying a point on **edge2**.
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1843,12 +1843,12 @@ class Feature:
         faces
             A sequence of Face objects specifying the faces to partition.
         datumPlane
-            A DatumPlane object specifying the location of the partition.
+            A :py:class:`~abaqus.Datum.DatumPlane.DatumPlane` object specifying the location of the partition.
 
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1870,13 +1870,13 @@ class Feature:
         faces
             A sequence of Face objects specifying the faces to partition.
         extendFace
-            A Face object that is to be extended to create the partition. The face to extend can be
+            A :py:class:`~abaqus.BasicGeometry.Face.Face` object that is to be extended to create the partition. The face to extend can be
             a planar, cylindrical, conical, or spherical face.
 
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1905,7 +1905,7 @@ class Feature:
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1938,7 +1938,7 @@ class Feature:
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1968,7 +1968,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1999,7 +1999,7 @@ class Feature:
         faces
             A sequence of Face objects specifying the faces to partition.
         sketch
-            A ConstrainedSketch object specifying the partition.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the partition.
         sketchUpEdge
             An Edge or DatumAxis object specifying the orientation of **sketch**. This edge or datum
             axis must not be orthogonal to the plane defined by **faces**. If unspecified, **sketch** is
@@ -2010,7 +2010,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -2050,10 +2050,10 @@ class Feature:
             A SymbolicConstant specifying the side of the plane to be used for sketching. Possible
             values are SIDE1 and SIDE2.
         sketchUpEdge
-            An Edge object specifying the orientation of **sketch**. This edge must not be orthogonal
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the orientation of **sketch**. This edge must not be orthogonal
             to **sketchPlane**.
         sketch
-            A ConstrainedSketch object specifying the partition.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the partition.
         distance
             A Float specifying the projection distance. Possible values are **distance** >> 0.0.
         sketchOrientation
@@ -2062,7 +2062,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -2099,10 +2099,10 @@ class Feature:
         sketchPlane
             A planar Face or DatumPlane object.
         sketchUpEdge
-            An Edge object or a DatumAxis object specifying the orientation of **sketch**. This edge
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a DatumAxis object specifying the orientation of **sketch**. This edge
             or datum axis must not be orthogonal to **sketchPlane**.
         sketch
-            A ConstrainedSketch object specifying the partition.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the partition.
         point
             A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object specifying the distance to project
             **sketch**. The point must not lie on **sketchPlane**.
@@ -2112,7 +2112,7 @@ class Feature:
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -2154,14 +2154,14 @@ class Feature:
             An Edge or a DatumAxis object specifying the orientation of **sketch**. This edge or datum
             axis must not be orthogonal to **sketchPlane**.
         sketch
-            A ConstrainedSketch object specifying the partition.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the partition.
         sketchOrientation
             A SymbolicConstant specifying the orientation of **sketchUpEdge** on the sketch. Possible
             values are RIGHT, LEFT, TOP, and BOTTOM. The default value is RIGHT.
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -2198,7 +2198,7 @@ class Feature:
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         return self
 
@@ -2223,7 +2223,7 @@ class Feature:
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -2275,7 +2275,7 @@ class Feature:
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -2328,7 +2328,7 @@ class Feature:
             0.0 ≤≤ **parameter2** ≤≤ 1.0. You use this argument to modify a partition object created
             with the PartitionFaceByCurvedPathEdgeParam method.
         sketch
-            A ConstrainedSketch object specifying the partition. You use this argument to modify a
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the partition. You use this argument to modify a
             partition object created with a sketch; for example, using the PartitionFaceBySketch
             method.
         distance

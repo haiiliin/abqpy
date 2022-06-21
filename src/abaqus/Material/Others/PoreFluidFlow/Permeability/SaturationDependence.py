@@ -42,7 +42,7 @@ class SaturationDependence:
 
         Returns
         -------
-        A SaturationDependence object.
+        A :py:class:`~abaqus.Material.Others.PoreFluidFlow.Permeability.SaturationDependence.SaturationDependence` object.
 
         Raises
         ------

@@ -60,7 +60,7 @@ class LoadCase:
         Returns
         -------
         case: LoadCase
-            A LoadCase object
+            A :py:class:`~abaqus.Load.LoadCase.LoadCase` object
         """
         pass
 

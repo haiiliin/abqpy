@@ -112,11 +112,11 @@ class ConnectorSection(SectionBase):
             only if **coupling** = COUPLED, when **evolution** = ON, when **evolutionPotentialOperator** = SUM,
             when **evolutionType** = MOTION, and when **criterion** = FORCE or MOTION.
         initiationPotentials
-            A ConnectorPotentialArray object specifying one ConnectorPotential object for each
+            A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object specifying one ConnectorPotential object for each
             initiation potential contribution. This member can be specified only if
             **coupling** = COUPLED and if **criterion** = FORCE or MOTION.
         evolutionPotentials
-            A ConnectorPotentialArray object specifying one ConnectorPotential object for each
+            A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object specifying one ConnectorPotential object for each
             evolution potential contribution). This member can be specified only if
             **coupling** = COUPLED, if **evolution** = ON, if **evolutionType** = MOTION, and if
             **criterion** = FORCE or MOTION.
@@ -140,7 +140,7 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-        A ConnectorDamage object.
+        A :py:class:`~abaqus.Connector.ConnectorDamage.ConnectorDamage` object.
 
         Raises
         ------
@@ -210,7 +210,7 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-        A ConnectorDamping object.
+        A :py:class:`~abaqus.Connector.ConnectorDamping.ConnectorDamping` object.
 
         Raises
         ------
@@ -284,7 +284,7 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-        A ConnectorElasticity object.
+        A :py:class:`~abaqus.Connector.ConnectorElasticity.ConnectorElasticity` object.
 
         Raises
         ------
@@ -343,7 +343,7 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-        A ConnectorFailure object.
+        A :py:class:`~abaqus.Connector.ConnectorFailure.ConnectorFailure` object.
 
         Raises
         ------
@@ -443,7 +443,7 @@ class ConnectorSection(SectionBase):
             **frictionModel** = USER_CUSTOMIZED, if **slipStyle** = COMPUTE, and if
             **forcePotentialOperator** = SUM.
         connectorPotentials
-            A ConnectorPotentialArray object specifying one ConnectorPotential object for each force
+            A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object specifying one ConnectorPotential object for each force
             potential contribution. This member can be specified only if
             **frictionModel** = USER_CUSTOMIZED, and if **slipStyle** = COMPUTE.
         table
@@ -478,7 +478,7 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-        A ConnectorFriction object.
+        A :py:class:`~abaqus.Connector.ConnectorFriction.ConnectorFriction` object.
 
         Raises
         ------
@@ -538,7 +538,7 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-        A ConnectorLock object.
+        A :py:class:`~abaqus.Connector.ConnectorLock.ConnectorLock` object.
 
         Raises
         ------
@@ -620,7 +620,7 @@ class ConnectorSection(SectionBase):
             potential definition. The default value is 2.0.This argument is applicable only if
             **coupling** = COUPLED and if **forcePotentialOperator** = SUM.
         connectorPotentials
-            A ConnectorPotentialArray object specifying one ConnectorPotential object for each force
+            A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object specifying one ConnectorPotential object for each force
             potential contribution. This member can be specified only if **coupling** = COUPLED.
         isotropicTable
             A sequence of sequences of Floats specifying isotropic plasticity properties. Items in
@@ -638,7 +638,7 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-        A ConnectorPlasticity object.
+        A :py:class:`~abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity` object.
 
         Raises
         ------
@@ -701,7 +701,7 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-        A ConnectorPotential object.
+        A :py:class:`~abaqus.Connector.ConnectorPotential.ConnectorPotential` object.
 
         Raises
         ------
@@ -742,7 +742,7 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-        A ConnectorStop object.
+        A :py:class:`~abaqus.Connector.ConnectorStop.ConnectorStop` object.
 
         Raises
         ------
@@ -772,7 +772,7 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-        A DerivedComponent object.
+        A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` object.
 
         Raises
         ------
@@ -844,7 +844,7 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-        A TangentialBehavior object. .
+        A :py:class:`~abaqus.Connector.TangentialBehavior.TangentialBehavior` object. .
         """
         option = TangentialBehavior()
         self.behaviorOptions.append(option)

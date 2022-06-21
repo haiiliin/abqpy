@@ -102,7 +102,7 @@ class CombinedTermDesignResponse(DesignResponse):
 
         Returns
         -------
-        A CombinedTermDesignResponse object.
+        A :py:class:`~abaqus.Optimization.CombinedTermDesignResponse.CombinedTermDesignResponse` object.
         """
         super().__init__()
         pass

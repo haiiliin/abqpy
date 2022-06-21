@@ -1,5 +1,5 @@
 class DirectDampingByFrequencyComponent:
-    """A DirectDampingByFrequencyComponent object is used to define direct damping over a range
+    """A :py:class:`~abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent` object is used to define direct damping over a range
     of frequencies.
 
     Attributes

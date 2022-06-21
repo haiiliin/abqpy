@@ -1,5 +1,5 @@
 class IgnoredVertex:
-    """An IgnoredVertex object is a point region of the geometry that was abstracted away by a
+    """An :py:class:`~abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex` object is a point region of the geometry that was abstracted away by a
     virtual topology feature.
 
     Attributes

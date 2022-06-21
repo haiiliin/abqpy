@@ -32,7 +32,7 @@ class BeadPointSymmetry(GeometricRestriction):
         name
             A String specifying the geometric restriction repository key.
         region
-            A Region object specifying the region to which the geometric restriction is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
         csys
             None or a DatumCsys object specifying the position of the symmetry point defined as the
             origin of a local coordinate system. If **csys** = None, the global coordinate system is
@@ -40,7 +40,7 @@ class BeadPointSymmetry(GeometricRestriction):
 
         Returns
         -------
-        A BeadPointSymmetry object.
+        A :py:class:`~abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry` object.
         """
         super().__init__()
         pass

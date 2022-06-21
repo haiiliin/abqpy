@@ -38,11 +38,11 @@ class AssemblyModel(ModelBase):
         name
             A String specifying the repository key.
         objectToCopy
-            A PartInstance object to be copied.
+            A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object to be copied.
 
         Returns
         -------
-        A Model object.
+        A :py:class:`~abaqus.Assembly.ModelInstance.Model` object.
         """
         return self
 

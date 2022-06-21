@@ -5,7 +5,7 @@ from ..Region.Set import Set
 
 
 class PropertyAssembly(AssemblyBase):
-    """An Assembly object is a container for instances of parts. The Assembly object has no
+    """An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container for instances of parts. The Assembly object has no
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
     created.
 
@@ -42,7 +42,7 @@ class PropertyAssembly(AssemblyBase):
         Parameters
         ----------
         region
-            A Set object specifying the region to which the section is assigned.
+            A :py:class:`~abaqus.Region.Set.Set` object specifying the region to which the section is assigned.
         sectionName
             A String specifying the name of the section.
         thicknessAssignment
@@ -61,7 +61,7 @@ class PropertyAssembly(AssemblyBase):
 
         Returns
         -------
-        A SectionAssignment object.
+        A :py:class:`~abaqus.Property.SectionAssignment.SectionAssignment` object.
         """
         sectionAssignment = SectionAssignment(
             region, sectionName, thicknessAssignment, offset, offsetType, offsetField

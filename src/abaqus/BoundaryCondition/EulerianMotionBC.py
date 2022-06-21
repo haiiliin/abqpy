@@ -216,7 +216,7 @@ class EulerianMotionBC(BoundaryCondition):
     # are MECHANICAL and THERMAL.
     category: SymbolicConstant = None
 
-    # A Region object specifying the region to which the boundary condition is applied.
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
     region: Region = Region()
 
     # None or a DatumCsys object specifying the local coordinate system of the boundary
@@ -275,7 +275,7 @@ class EulerianMotionBC(BoundaryCondition):
             A Boolean specifying whether the mesh will follow a regular surface region or an
             Eulerian surface. The default value is ON.
         region
-            A Region object specifying the region to which the boundary condition is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
         materialName
             A String specifying the name of the Eulerian surface to follow. This argument applies
             only when **followRegion** = False.
@@ -351,7 +351,7 @@ class EulerianMotionBC(BoundaryCondition):
 
         Returns
         -------
-        An EulerianMotionBC object.
+        An :py:class:`~abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC` object.
         """
         super().__init__()
         pass
@@ -394,7 +394,7 @@ class EulerianMotionBC(BoundaryCondition):
             A Boolean specifying whether the mesh will follow a regular surface region or an
             Eulerian surface. The default value is ON.
         region
-            A Region object specifying the region to which the boundary condition is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
         materialName
             A String specifying the name of the Eulerian surface to follow. This argument applies
             only when **followRegion** = False.

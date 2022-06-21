@@ -190,7 +190,7 @@ class RegionPart(RegionPartBase):
         Returns
         -------
         surf: Surface
-            A Surface object
+            A :py:class:`~abaqus.Region.Surface.Surface` object
         """
         surface = Surface(
             side1Faces,
@@ -258,7 +258,7 @@ class RegionPart(RegionPartBase):
         elements
             A sequence of MeshElement objects. The default value is None.
         region
-            A Region object specifying other objects to be included in the set. The default value is
+            A :py:class:`~abaqus.Region.Region.Region` object specifying other objects to be included in the set. The default value is
             None.
         vertices
             A sequence of ConstrainedSketchVertex objects. The default value is None.
@@ -292,7 +292,7 @@ class RegionPart(RegionPartBase):
         Returns
         -------
         set: Set
-            A Set object
+            A :py:class:`~abaqus.Region.Set.Set` object
         """
         pass
 
@@ -314,12 +314,12 @@ class RegionPart(RegionPartBase):
         name
             A String specifying the name of the set.
         objectToCopy
-            A Set object to be copied.
+            A :py:class:`~abaqus.Region.Set.Set` object to be copied.
 
         Returns
         -------
         set: Set
-            A Set object
+            A :py:class:`~abaqus.Region.Set.Set` object
         """
         pass
 
@@ -342,7 +342,7 @@ class RegionPart(RegionPartBase):
         Returns
         -------
         set: Set
-            A Set object
+            A :py:class:`~abaqus.Region.Set.Set` object
         """
         self.sets[name] = aSet = Set(name, *args, **kwargs)
         return aSet
@@ -386,7 +386,7 @@ class RegionPart(RegionPartBase):
         Returns
         -------
         skin: Skin
-            A Skin object
+            A :py:class:`~abaqus.Region.Skin.Skin` object
         """
         self.skins[name] = skin = Skin(name, faces, edges, elementFaces, elementEdges)
         return skin
@@ -430,7 +430,7 @@ class RegionPart(RegionPartBase):
         Returns
         -------
         skin: Skin
-            A Skin object
+            A :py:class:`~abaqus.Region.Skin.Skin` object
         """
         self.skins[name] = skin = Skin(name, faces, edges, elementFaces, elementEdges)
         return skin
@@ -463,7 +463,7 @@ class RegionPart(RegionPartBase):
         Returns
         -------
         stringer: Stringer
-            A Stringer object
+            A :py:class:`~abaqus.Region.Stringer.Stringer` object
         """
         self.stringers[name] = stringer = Stringer(name, edges, elementEdges)
         return stringer

@@ -76,7 +76,7 @@ class DruckerPragerCreep:
 
         Returns
         -------
-        A DruckerPragerCreep object.
+        A :py:class:`~abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerCreep.DruckerPragerCreep` object.
 
         Raises
         ------

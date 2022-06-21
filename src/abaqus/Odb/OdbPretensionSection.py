@@ -27,13 +27,13 @@ class OdbPretensionSection:
         session.odbs[name].rootAssembly.pretensionSections[i]
     """
 
-    # An OdbSet object specifying the node set containing the pretension node.
+    # An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the node set containing the pretension node.
     node: OdbSet = OdbSet("set", tuple[OdbMeshNode]())
 
-    # An OdbSet object specifying the element set that defines the pretension section.
+    # An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the element set that defines the pretension section.
     element: OdbSet = OdbSet("set", tuple[OdbMeshNode]())
 
-    # An OdbSet object specifying the surface set that defines the pretension section.
+    # An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the surface set that defines the pretension section.
     surface: OdbSet = OdbSet("set", tuple[OdbMeshNode]())
 
     # A tuple of Floats specifying the components of the normal to the pretension section.

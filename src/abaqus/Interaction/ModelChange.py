@@ -57,7 +57,7 @@ class ModelChange(Interaction):
             when **isRestart** = False. Possible values are GEOMETRY, SKINS, STRINGERS, and ELEMENTS.
             The default value is GEOMETRY.
         region
-            A Region object specifying the elements to be removed or reactivated. This argument is
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the elements to be removed or reactivated. This argument is
             valid only when **isRestart** = False.
         activeInStep
             A Boolean specifying whether elements are being removed or reactivated. This argument is
@@ -69,7 +69,7 @@ class ModelChange(Interaction):
 
         Returns
         -------
-        A ModelChange object.
+        A :py:class:`~abaqus.Interaction.ModelChange.ModelChange` object.
         """
         super().__init__()
         pass
@@ -96,7 +96,7 @@ class ModelChange(Interaction):
             when **isRestart** = False. Possible values are GEOMETRY, SKINS, STRINGERS, and ELEMENTS.
             The default value is GEOMETRY.
         region
-            A Region object specifying the elements to be removed or reactivated. This argument is
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the elements to be removed or reactivated. This argument is
             valid only when **isRestart** = False.
         activeInStep
             A Boolean specifying whether elements are being removed or reactivated. This argument is

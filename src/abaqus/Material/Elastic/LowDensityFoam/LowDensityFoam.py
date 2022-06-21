@@ -21,10 +21,10 @@ class LowDensityFoam:
     - LOW DENSITY FOAM
     """
 
-    # A UniaxialTestData object.
+    # A :py:class:`~abaqus.Material.TestData.UniaxialTestData.UniaxialTestData` object.
     uniaxialTensionTestData: UniaxialTestData = UniaxialTestData(((),))
 
-    # A UniaxialTestData object.
+    # A :py:class:`~abaqus.Material.TestData.UniaxialTestData.UniaxialTestData` object.
     uniaxialCompressionTestData: UniaxialTestData = UniaxialTestData(((),))
 
     def __init__(
@@ -72,7 +72,7 @@ class LowDensityFoam:
 
         Returns
         -------
-        A LowDensityFoam object.
+        A :py:class:`~abaqus.Material.Elastic.LowDensityFoam.LowDensityFoam.LowDensityFoam` object.
 
         Raises
         ------

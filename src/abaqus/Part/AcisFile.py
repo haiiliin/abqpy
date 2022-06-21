@@ -43,7 +43,7 @@ class AcisFile:
 
         Returns
         -------
-        An AcisFile object.
+        An :py:class:`~abaqus.Part.AcisFile.AcisFile` object.
 
         Raises
         ------
@@ -92,7 +92,7 @@ class AcisFile:
 
         Returns
         -------
-        An AcisFile object.
+        An :py:class:`~abaqus.Part.AcisFile.AcisFile` object.
         """
         pass
 
@@ -136,7 +136,7 @@ class AcisFile:
 
         Returns
         -------
-        An AcisFile object.
+        An :py:class:`~abaqus.Part.AcisFile.AcisFile` object.
         """
         pass
 
@@ -196,7 +196,7 @@ class AcisFile:
 
         Returns
         -------
-        An AcisFile object.
+        An :py:class:`~abaqus.Part.AcisFile.AcisFile` object.
 
         Raises
         ------
@@ -230,7 +230,7 @@ class AcisFile:
 
         Returns
         -------
-        An AcisFile object.
+        An :py:class:`~abaqus.Part.AcisFile.AcisFile` object.
         """
         pass
 
@@ -256,7 +256,7 @@ class AcisFile:
 
         Returns
         -------
-        An AcisFile object.
+        An :py:class:`~abaqus.Part.AcisFile.AcisFile` object.
 
         Raises
         ------
@@ -284,7 +284,7 @@ class AcisFile:
 
         Returns
         -------
-        An AcisFile object.
+        An :py:class:`~abaqus.Part.AcisFile.AcisFile` object.
 
         Raises
         ------

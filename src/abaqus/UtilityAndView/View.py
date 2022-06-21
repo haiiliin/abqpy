@@ -126,7 +126,7 @@ class View:
 
         Returns
         -------
-        A View object.
+        A :py:class:`~abaqus.UtilityAndView.View.View` object.
 
         Raises
         ------
@@ -259,7 +259,7 @@ class View:
         layerTransform
             A sequence of 16 Floats specifying the transformation matrix.
         options
-            A View object from which the view settings are to be copied. If the **layerTransform**
+            A :py:class:`~abaqus.UtilityAndView.View.View` object from which the view settings are to be copied. If the **layerTransform**
             argument is also supplied to setLayerTransform, it will override the values in the View
             object specified by **view**.
         drawImmediately

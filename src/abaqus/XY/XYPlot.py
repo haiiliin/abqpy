@@ -40,7 +40,7 @@ class XYPlot(XYPlotBase):
 
         Returns
         -------
-        An AreaStyle object.
+        An :py:class:`~abaqus.XY.AreaStyle.AreaStyle` object.
 
         Raises
         ------
@@ -85,7 +85,7 @@ class XYPlot(XYPlotBase):
 
         Returns
         -------
-        A LineStyle object.
+        A :py:class:`~abaqus.XY.LineStyle.LineStyle` object.
 
         Raises
         ------
@@ -191,7 +191,7 @@ class XYPlot(XYPlotBase):
 
         Returns
         -------
-        A QuantityType object.
+        A :py:class:`~abaqus.XY.QuantityType.QuantityType` object.
         """
         quantityType = QuantityType(label, type)
         return quantityType
@@ -245,7 +245,7 @@ class XYPlot(XYPlotBase):
 
         Returns
         -------
-        A SymbolStyle object.
+        A :py:class:`~abaqus.XY.SymbolStyle.SymbolStyle` object.
 
         Raises
         ------
@@ -286,7 +286,7 @@ class XYPlot(XYPlotBase):
 
         Returns
         -------
-        A TextStyle object.
+        A :py:class:`~abaqus.XY.TextStyle.TextStyle` object.
 
         Raises
         ------
@@ -348,15 +348,15 @@ class XYPlot(XYPlotBase):
             A String specifying the label for the Y-values. This value may be overridden if the
             **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
         axis1QuantityType
-            A QuantityType object specifying the QuantityType object associated to the X -axis1-
+            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the X -axis1-
             values.
         axis2QuantityType
-            A QuantityType object specifying the QuantityType object associated to the Y -axis2-
+            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the Y -axis2-
             values.
 
         Returns
         -------
-        An XYData object.
+        An :py:class:`~abaqus.XY.XYData.XYData` object.
         """
         pass
 
@@ -378,11 +378,11 @@ class XYPlot(XYPlotBase):
         Parameters
         ----------
         objectToCopy
-            An XYData object to be copied.
+            An :py:class:`~abaqus.XY.XYData.XYData` object to be copied.
 
         Returns
         -------
-        An XYData object.
+        An :py:class:`~abaqus.XY.XYData.XYData` object.
         """
         pass
 

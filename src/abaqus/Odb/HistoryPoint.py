@@ -115,19 +115,19 @@ class HistoryPoint:
     # - WHOLE_MODEL, specifying the results for the entire model.
     position: SymbolicConstant = None
 
-    # An OdbMeshElement object specifying the element for which the data are to be collected.
+    # An :py:class:`~abaqus.Odb.OdbMeshElement.OdbMeshElement` object specifying the element for which the data are to be collected.
     element: OdbMeshElement = OdbMeshElement()
 
-    # A SectionPoint object.
+    # A :py:class:`~abaqus.Odb.SectionPoint.SectionPoint` object.
     sectionPoint: SectionPoint = None
 
-    # An OdbSet object specifying the region for which the data are to be collected.
+    # An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the region for which the data are to be collected.
     region: OdbSet = OdbSet("set", tuple[OdbMeshNode]())
 
-    # An OdbAssembly object specifying the assembly for which the data are to be collected.
+    # An :py:class:`~abaqus.Odb.OdbAssembly.OdbAssembly` object specifying the assembly for which the data are to be collected.
     assembly: OdbAssembly = OdbAssembly()
 
-    # An OdbInstance object specifying the instance for which the data are to be collected.
+    # An :py:class:`~abaqus.Odb.OdbInstance.OdbInstance` object specifying the instance for which the data are to be collected.
     instance: OdbInstance = OdbInstance(
         "instance", OdbPart("part", THREE_D, DEFORMABLE_BODY)
     )
@@ -147,11 +147,11 @@ class HistoryPoint:
         Parameters
         ----------
         node
-            An OdbMeshNode object specifying the node for which the data are to be collected.
+            An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object specifying the node for which the data are to be collected.
 
         Returns
         -------
-        A HistoryPoint object.
+        A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object.
         """
         pass
 
@@ -177,13 +177,13 @@ class HistoryPoint:
         Parameters
         ----------
         element
-            An OdbMeshElement object specifying the element for which the data are to be collected.
+            An :py:class:`~abaqus.Odb.OdbMeshElement.OdbMeshElement` object specifying the element for which the data are to be collected.
         ipNumber
             An Int specifying the integration point. This argument is used to define a history
             output position of INTEGRATION_POINT or ELEMENT_FACE_INTEGRATION_POINT. The default
             value is 0.
         sectionPoint
-            A SectionPoint object.
+            A :py:class:`~abaqus.Odb.SectionPoint.SectionPoint` object.
         face
             A SymbolicConstant specifying the element face. This argument is used to define a
             history output position of ELEMENT_FACE or ELEMENT_FACE_INTEGRATION_POINT. Possible
@@ -204,11 +204,11 @@ class HistoryPoint:
             
             The default value is FACE_UNKNOWN.
         node
-            An OdbMeshNode object specifying the node for which the data are to be collected.
+            An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object specifying the node for which the data are to be collected.
 
         Returns
         -------
-        A HistoryPoint object.
+        A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object.
         """
         pass
 
@@ -227,11 +227,11 @@ class HistoryPoint:
         Parameters
         ----------
         region
-            An OdbSet object specifying the region for which the data are to be collected.
+            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the region for which the data are to be collected.
 
         Returns
         -------
-        A HistoryPoint object.
+        A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object.
         """
         pass
 
@@ -250,11 +250,11 @@ class HistoryPoint:
         Parameters
         ----------
         assembly
-            An OdbAssembly object specifying the assembly for which the data are to be collected.
+            An :py:class:`~abaqus.Odb.OdbAssembly.OdbAssembly` object specifying the assembly for which the data are to be collected.
 
         Returns
         -------
-        A HistoryPoint object.
+        A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object.
         """
         pass
 
@@ -273,11 +273,11 @@ class HistoryPoint:
         Parameters
         ----------
         instance
-            An OdbInstance object specifying the instance for which the data are to be collected.
+            An :py:class:`~abaqus.Odb.OdbInstance.OdbInstance` object specifying the instance for which the data are to be collected.
 
         Returns
         -------
-        A HistoryPoint object.
+        A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object.
         """
         pass
 

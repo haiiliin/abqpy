@@ -34,10 +34,10 @@ class CompositeShellSection(GeometryShellSection):
             - SHELL GENERAL SECTION
     """
 
-    # A RebarLayers object specifying reinforcement properties.
+    # A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object specifying reinforcement properties.
     rebarLayers: RebarLayers = None
 
-    # A TransverseShearShell object specifying the transverse shear stiffness properties.
+    # A :py:class:`~abaqus.Section.TransverseShearShell.TransverseShearShell` object specifying the transverse shear stiffness properties.
     transverseShear: TransverseShearShell = None
 
     def __init__(
@@ -77,7 +77,7 @@ class CompositeShellSection(GeometryShellSection):
         name
             A String specifying the repository key.
         layup
-            A SectionLayerArray object specifying the shell cross-section.
+            A :py:class:`~abaqus.Section.SectionLayerArray.SectionLayerArray` object specifying the shell cross-section.
         symmetric
             A Boolean specifying whether or not the layup should be made symmetric by the analysis.
             The default value is OFF.
@@ -139,7 +139,7 @@ class CompositeShellSection(GeometryShellSection):
 
         Returns
         -------
-        A CompositeShellSection object.
+        A :py:class:`~abaqus.Section.CompositeShellSection.CompositeShellSection` object.
         """
         super().__init__()
         pass

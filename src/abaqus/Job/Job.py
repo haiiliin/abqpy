@@ -212,7 +212,7 @@ class Job:
     # value is an empty string.
     userSubroutine: str = ""
 
-    # A MessageArray object specifying the messages received during an analysis.
+    # A :py:class:`~abaqus.Job.MessageArray.MessageArray` object specifying the messages received during an analysis.
     messages: MessageArray = MessageArray()
 
     # A tuple of Strings specifying the environment variables and their values.

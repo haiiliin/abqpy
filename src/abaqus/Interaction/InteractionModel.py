@@ -232,7 +232,7 @@ class InteractionModel(
             A String specifying the name of the step in which the AcousticImpedance object is
             created.
         surface
-            A Region object specifying the acoustic boundary surface.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the acoustic boundary surface.
         definition
             A SymbolicConstant specifying the type of acoustic impedance to be defined. Possible
             values are TABULAR and NONREFLECTING. The default value is TABULAR.
@@ -267,7 +267,7 @@ class InteractionModel(
 
         Returns
         -------
-        An AcousticImpedance object.
+        An :py:class:`~abaqus.Interaction.AcousticImpedance.AcousticImpedance` object.
         """
         self.interactions[name] = interaction = AcousticImpedance(
             name,
@@ -321,7 +321,7 @@ class InteractionModel(
 
         Returns
         -------
-        An AcousticImpedanceProp object.
+        An :py:class:`~abaqus.Interaction.AcousticImpedanceProp.AcousticImpedanceProp` object.
         """
         self.interactions[name] = interaction = AcousticImpedanceProp(
             name, tableType, table, frequencyDependency
@@ -359,7 +359,7 @@ class InteractionModel(
             A String specifying the name of the step in which the actuator/sensor interaction is
             created. **createStepName** must be set to 'Initial'.
         point
-            A Region object specifying the point at which the constraint is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the point at which the constraint is applied.
         interactionProperty
             A String specifying the ActuatorSensorProp object associated with this interaction.
         noCoordComponents
@@ -379,7 +379,7 @@ class InteractionModel(
 
         Returns
         -------
-        An ActuatorSensor object.
+        An :py:class:`~abaqus.Interaction.ActuatorSensor.ActuatorSensor` object.
         """
         self.interactions[name] = interaction = ActuatorSensor(
             name,
@@ -421,7 +421,7 @@ class InteractionModel(
 
         Returns
         -------
-        An ActuatorSensorProp object.
+        An :py:class:`~abaqus.Interaction.ActuatorSensorProp.ActuatorSensorProp` object.
         """
         self.interactions[name] = interaction = ActuatorSensorProp(
             name, realProperties, integerProperties
@@ -488,7 +488,7 @@ class InteractionModel(
             A String specifying the name of the step in which the cavity radiation interaction
             should be created.
         surfaces
-            A RegionArray object specifying the surfaces for which radiation viewfactor control is
+            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the surfaces for which radiation viewfactor control is
             being specified.
         surfaceEmissivities
             A sequence of Strings specifying the names of the Cavity Radiation properties containing
@@ -502,7 +502,7 @@ class InteractionModel(
             calculations. Possible values are BLOCKING_ALL, NO_BLOCKING, and PARTIAL_BLOCKING. The
             default value is BLOCKING_ALL.
         blockingSurfaces
-            A RegionArray object specifying the surfaces that provide blocking inside the cavity.
+            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the surfaces that provide blocking inside the cavity.
             This argument applies only when **blocking** = PARTIAL_BLOCKING.
         rangeOfView
             None or a Float specifying the maximum distance between surface facets at which
@@ -534,13 +534,13 @@ class InteractionModel(
             as a result of this symmetry. This argument applies only when **cyclicSymmetry** = ON. The
             default value is 2.
         cyclicRotPt
-            A ModelDot object specifying the rotation axis point. This argument applies only when
+            A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying the rotation axis point. This argument applies only when
             **cyclicSymmetry** = ON.
         cyclicRotEndPt
-            A ModelDot object specifying the rotation axis end point. This argument applies only for
+            A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying the rotation axis end point. This argument applies only for
             three-dimensional models, and only when **cyclicSymmetry** = ON.
         cyclicSymPt
-            A ModelDot object specifying the symmetry axis end point. This argument applies only
+            A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying the symmetry axis end point. This argument applies only
             when **cyclicSymmetry** = ON.
         periodicSymmetries
             An Int specifying the number of periodic symmetries that will be applied. The default
@@ -636,7 +636,7 @@ class InteractionModel(
 
         Returns
         -------
-        A CavityRadiation object.
+        A :py:class:`~abaqus.Interaction.CavityRadiation.CavityRadiation` object.
         """
         self.interactions[name] = interaction = CavityRadiation(
             name,
@@ -713,7 +713,7 @@ class InteractionModel(
 
         Returns
         -------
-        A CavityRadiationProp object.
+        A :py:class:`~abaqus.Interaction.CavityRadiationProp.CavityRadiationProp` object.
         """
         self.interactions[name] = interaction = CavityRadiationProp(
             name, temperatureDependency, dependencies, property
@@ -755,7 +755,7 @@ class InteractionModel(
             A String specifying the name of the step in which the ConcentratedFilmCondition object
             is created.
         region
-            A Region object specifying the region to which the concentrated film condition
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the concentrated film condition
             interaction is applied. The interaction is applied to each node in the region.
         definition
             A SymbolicConstant specifying how the concentrated film condition is defined. Possible
@@ -807,7 +807,7 @@ class InteractionModel(
 
         Returns
         -------
-        A ConcentratedFilmCondition object.
+        A :py:class:`~abaqus.Interaction.ConcentratedFilmCondition.ConcentratedFilmCondition` object.
         """
         self.interactions[name] = interaction = ConcentratedFilmCondition(
             name,
@@ -858,7 +858,7 @@ class InteractionModel(
             A String specifying the name of the step in which the ConcentratedRadiationToAmbient
             object is created.
         region
-            A Region object specifying the region to which the concentrated radiation interaction is
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the concentrated radiation interaction is
             applied. The interaction is applied to each node in the region.
         ambientTemperature
             A Float specifying the reference ambient temperature, θ0θ0.
@@ -888,7 +888,7 @@ class InteractionModel(
 
         Returns
         -------
-        A ConcentratedRadiationToAmbient object.
+        A :py:class:`~abaqus.Interaction.ConcentratedRadiationToAmbient.ConcentratedRadiationToAmbient` object.
         """
         self.interactions[name] = interaction = ConcentratedRadiationToAmbient(
             name,
@@ -943,31 +943,31 @@ class InteractionModel(
             A Boolean specifying whether surface smoothing (geometric correction) is automatically
             applied to all eligible surfaces. The default value is ON.
         includedPairs
-            A RegionPairs object specifying the domain pairs included in contact.
+            A :py:class:`~abaqus.Interaction.RegionPairs.RegionPairs` object specifying the domain pairs included in contact.
         excludedPairs
-            A RegionPairs object specifying the domain pairs excluded from contact.
+            A :py:class:`~abaqus.Interaction.RegionPairs.RegionPairs` object specifying the domain pairs excluded from contact.
         contactPropertyAssignments
-            A ContactPropertyAssignment object specifying the contact property assignments in the
+            A :py:class:`~abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment` object specifying the contact property assignments in the
             contact domain.
         surfaceThicknessAssignments
-            A SurfaceThicknessAssignment object specifying the surface thickness assignments in the
+            A :py:class:`~abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment` object specifying the surface thickness assignments in the
             contact domain.
         surfaceOffsetAssignments
-            A SurfaceOffsetAssignment object specifying the surface offset fraction assignments in
+            A :py:class:`~abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment` object specifying the surface offset fraction assignments in
             the contact domain.
         surfaceFeatureAssignments
-            A SurfaceFeatureAssignment object specifying the surface feature angle assignments in
+            A :py:class:`~abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment` object specifying the surface feature angle assignments in
             the contact domain.
         smoothingAssignments
-            A SmoothingAssignment object specifying the surface smoothing assignments in the contact
+            A :py:class:`~abaqus.Interaction.SmoothingAssignment.SmoothingAssignment` object specifying the surface smoothing assignments in the contact
             domain.
         mainSecondaryAssignments
-            A MainSecondaryAssignment object specifying the main-secondary assignments in the
+            A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
             contact domain.
 
         Returns
         -------
-        A ContactExp object.
+        A :py:class:`~abaqus.Interaction.ContactExp.ContactExp` object.
         """
         self.interactions[name] = interaction = ContactExp(
             name,
@@ -1003,7 +1003,7 @@ class InteractionModel(
 
         Returns
         -------
-        A ContactProperty object.
+        A :py:class:`~abaqus.Interaction.ContactProperty.ContactProperty` object.
         """
         interactionProperties = ContactProperty(name)
         self.interactions[name] = interactionProperties
@@ -1051,32 +1051,32 @@ class InteractionModel(
             A Boolean specifying whether surface smoothing (geometric correction) is automatically
             applied to all eligible surfaces. The default value is ON.
         includedPairs
-            A RegionPairs object specifying the domain pairs included in contact.
+            A :py:class:`~abaqus.Interaction.RegionPairs.RegionPairs` object specifying the domain pairs included in contact.
         excludedPairs
-            A RegionPairs object specifying the domain pairs excluded from contact.
+            A :py:class:`~abaqus.Interaction.RegionPairs.RegionPairs` object specifying the domain pairs excluded from contact.
         contactPropertyAssignments
-            A ContactPropertyAssignment object specifying the contact property assignments in the
+            A :py:class:`~abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment` object specifying the contact property assignments in the
             contact domain.
         surfaceThicknessAssignments
-            A SurfaceThicknessAssignment object specifying the surface thickness assignments in the
+            A :py:class:`~abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment` object specifying the surface thickness assignments in the
             contact domain.
         surfaceOffsetAssignments
-            A SurfaceOffsetAssignment object specifying the surface offset fraction assignments in
+            A :py:class:`~abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment` object specifying the surface offset fraction assignments in
             the contact domain.
         surfaceFeatureAssignments
-            A SurfaceFeatureAssignment object specifying the surface feature angle assignments in
+            A :py:class:`~abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment` object specifying the surface feature angle assignments in
             the contact domain.
         mainSecondaryAssignments
-            A MainSecondaryAssignment object specifying the main-secondary assignments in the
+            A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
             contact domain.
         initializationAssignments
-            An InitializationAssignment object specifying the contact initialization assignments in
+            An :py:class:`~abaqus.Interaction.InitializationAssignment.InitializationAssignment` object specifying the contact initialization assignments in
             the contact domain.
         stabilizationAssignments
-            A StabilizationAssignment object specifying the contact stabilization assignments in the
+            A :py:class:`~abaqus.Interaction.StabilizationAssignment.StabilizationAssignment` object specifying the contact stabilization assignments in the
             contact domain.
         smoothingAssignments
-            A SmoothingAssignment object specifying the surface smoothing assignments in the contact
+            A :py:class:`~abaqus.Interaction.SmoothingAssignment.SmoothingAssignment` object specifying the surface smoothing assignments in the contact
             domain.
         slidingTransitionAssignments
             A SlidingTransitionAssignments object specifying the sliding transition assignments in
@@ -1084,7 +1084,7 @@ class InteractionModel(
 
         Returns
         -------
-        A ContactStd object.
+        A :py:class:`~abaqus.Interaction.ContactStd.ContactStd` object.
         """
         self.interactions[name] = interaction = ContactStd(
             name,
@@ -1140,18 +1140,18 @@ class InteractionModel(
             A String specifying the name of the step in which the cyclic symmetry interaction should
             be created.
         main
-            A Region object specifying the main surface.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
         secondary
-            A Region object specifying the secondary surface.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
         repetitiveSectors
             An Int specifying the total number of sectors in the cyclic symmetric model.
         axisPoint1
-            A Region object specifying the first point of the axis of symmetry. The region should
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the first point of the axis of symmetry. The region should
             contain exactly one mesh node, vertex, interesting point, reference point, or datum
             point. In a two-dimensional model **axisPoint1** is the only point used to define the axis
             of symmetry.
         axisPoint2
-            A Region object specifying the second point of the axis of symmetry. The region should
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the second point of the axis of symmetry. The region should
             contain exactly one mesh node, vertex, interesting point, reference point, or datum
             point. This point is ignored in a two-dimensional model.
         extractedNodalDiameter
@@ -1185,7 +1185,7 @@ class InteractionModel(
 
         Returns
         -------
-        A CyclicSymmetry object.
+        A :py:class:`~abaqus.Interaction.CyclicSymmetry.CyclicSymmetry` object.
         """
         self.interactions[name] = interaction = CyclicSymmetry(
             name,
@@ -1226,13 +1226,13 @@ class InteractionModel(
             A String specifying the name of the step in which the ElasticFoundation object is
             created. **createStepName** must be set to 'Initial'.
         surface
-            A Region object specifying the surface to which the foundation applies.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the surface to which the foundation applies.
         stiffness
             A Float specifying the foundation stiffness per area (or per length for beams).
 
         Returns
         -------
-        An ElasticFoundation object.
+        An :py:class:`~abaqus.Interaction.ElasticFoundation.ElasticFoundation` object.
         """
         self.interactions[name] = interaction = ElasticFoundation(
             name, createStepName, surface, stiffness
@@ -1287,7 +1287,7 @@ class InteractionModel(
 
         Returns
         -------
-        An ExpContactControl object.
+        An :py:class:`~abaqus.Interaction.ExpContactControl.ExpContactControl` object.
 
         Raises
         ------
@@ -1336,7 +1336,7 @@ class InteractionModel(
         createStepName
             A String specifying the name of the step in which the FilmCondition object is created.
         surface
-            A Region object specifying the name of the surface to which the film condition
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the surface to which the film condition
             interaction is applied.
         definition
             A SymbolicConstant specifying how the film condition is defined. Possible values are
@@ -1380,7 +1380,7 @@ class InteractionModel(
 
         Returns
         -------
-        A FilmCondition object.
+        A :py:class:`~abaqus.Interaction.FilmCondition.FilmCondition` object.
         """
         self.interactions[name] = interaction = FilmCondition(
             name,
@@ -1434,7 +1434,7 @@ class InteractionModel(
 
         Returns
         -------
-        A FilmConditionProp object.
+        A :py:class:`~abaqus.Interaction.FilmConditionProp.FilmConditionProp` object.
         """
         self.interactions[name] = interaction = FilmConditionProp(
             name, temperatureDependency, dependencies, property
@@ -1470,9 +1470,9 @@ class InteractionModel(
         createStepName
             A String specifying the name of the step in which the FluidCavity object is created.
         cavityPoint
-            A Region object specifying the fluid cavity reference point.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the fluid cavity reference point.
         cavitySurface
-            A Region object specifying the surface forming the boundary of the fluid cavity.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the surface forming the boundary of the fluid cavity.
         interactionProperty
             A String specifying the FluidCavityProperty object associated with this interaction.
         ambientPressure
@@ -1490,7 +1490,7 @@ class InteractionModel(
 
         Returns
         -------
-        A FluidCavity object.
+        A :py:class:`~abaqus.Interaction.FluidCavity.FluidCavity` object.
         """
         self.interactions[name] = interaction = FluidCavity(
             name,
@@ -1635,7 +1635,7 @@ class InteractionModel(
 
         Returns
         -------
-        A FluidCavityProperty object.
+        A :py:class:`~abaqus.Interaction.FluidCavityProperty.FluidCavityProperty` object.
         """
         self.interactions[name] = interaction = FluidCavityProperty(
             name,
@@ -1701,7 +1701,7 @@ class InteractionModel(
 
         Returns
         -------
-        A FluidExchange object.
+        A :py:class:`~abaqus.Interaction.FluidExchange.FluidExchange` object.
         """
         self.interactions[name] = interaction = FluidExchange(
             name,
@@ -1804,7 +1804,7 @@ class InteractionModel(
 
         Returns
         -------
-        A FluidExchangeProperty object.
+        A :py:class:`~abaqus.Interaction.FluidExchangeProperty.FluidExchangeProperty` object.
         """
         self.interactions[name] = interaction = FluidExchangeProperty(
             name,
@@ -1850,12 +1850,12 @@ class InteractionModel(
         createStepName
             A String specifying the name of the step in which the IncidentWave object is created.
         sourcePoint
-            A Region object specifying the incident wave source point.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the incident wave source point.
         standoffPoint
-            A Region object specifying the incident wave standoff point.This argument is not valid
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the incident wave standoff point.This argument is not valid
             when **definition** = CONWEP.
         surface
-            A Region object specifying the surface defining the incident wave interaction. In
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the surface defining the incident wave interaction. In
             problems involving fluid/surface boundaries, both the fluid surface and the solid
             surface comprising the boundary must have an incident wave interaction specified.
         interactionProperty
@@ -1895,7 +1895,7 @@ class InteractionModel(
 
         Returns
         -------
-        An IncidentWave object.
+        An :py:class:`~abaqus.Interaction.IncidentWave.IncidentWave` object.
         """
         self.interactions[name] = interaction = IncidentWave(
             name,
@@ -2082,7 +2082,7 @@ class InteractionModel(
 
         Returns
         -------
-        An IncidentWaveProperty object.
+        An :py:class:`~abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty` object.
         """
         self.interactions[name] = interaction = IncidentWaveProperty(
             name,
@@ -2155,7 +2155,7 @@ class InteractionModel(
             when **isRestart** = False. Possible values are GEOMETRY, SKINS, STRINGERS, and ELEMENTS.
             The default value is GEOMETRY.
         region
-            A Region object specifying the elements to be removed or reactivated. This argument is
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the elements to be removed or reactivated. This argument is
             valid only when **isRestart** = False.
         activeInStep
             A Boolean specifying whether elements are being removed or reactivated. This argument is
@@ -2167,7 +2167,7 @@ class InteractionModel(
 
         Returns
         -------
-        A ModelChange object.
+        A :py:class:`~abaqus.Interaction.ModelChange.ModelChange` object.
         """
         self.interactions[name] = interaction = ModelChange(
             name,
@@ -2212,10 +2212,10 @@ class InteractionModel(
         contactInteraction
             A String specifying the name of the Surface-to-surface contact (Standard) interaction.
         mainPoints
-            A RegionArray object specifying the points on the main surface that are exposed to the
+            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the main surface that are exposed to the
             fluid.
         secondaryPoints
-            A RegionArray object specifying the points on the secondary surface that are exposed to
+            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the secondary surface that are exposed to
             the fluid.
         penetrationPressure
             A tuple of Floats specifying the fluid pressure magnitude. For steady state dynamic
@@ -2234,7 +2234,7 @@ class InteractionModel(
 
         Returns
         -------
-        A PressurePenetration object.
+        A :py:class:`~abaqus.Interaction.PressurePenetration.PressurePenetration` object.
         """
         self.interactions[name] = interaction = PressurePenetration(
             name,
@@ -2279,7 +2279,7 @@ class InteractionModel(
             A String specifying the name of the step in which the RadiationToAmbient object is
             created.
         surface
-            A Region object specifying the surface to which the radiation interaction is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the surface to which the radiation interaction is applied.
         emissivity
             A Float specifying the emissivity, ϵϵ.
         field
@@ -2307,7 +2307,7 @@ class InteractionModel(
 
         Returns
         -------
-        A RadiationToAmbient object.
+        A :py:class:`~abaqus.Interaction.RadiationToAmbient.RadiationToAmbient` object.
         """
         self.interactions[name] = interaction = RadiationToAmbient(
             name,
@@ -2348,7 +2348,7 @@ class InteractionModel(
         createStepName
             A String specifying the name of the step in which the SelfContactExp object is created.
         surface
-            A Region object specifying the surface where self-contact is defined.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the surface where self-contact is defined.
         interactionProperty
             A String specifying the name of the ContactProperty object associated with this
             interaction.
@@ -2362,7 +2362,7 @@ class InteractionModel(
 
         Returns
         -------
-        A SelfContactExp object.
+        A :py:class:`~abaqus.Interaction.SelfContactExp.SelfContactExp` object.
         """
         self.interactions[name] = interaction = SelfContactExp(
             name,
@@ -2402,7 +2402,7 @@ class InteractionModel(
         createStepName
             A String specifying the name of the step in which the SelfContactStd object is created.
         surface
-            A Region object specifying the surface where self-contact is defined.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the surface where self-contact is defined.
         interactionProperty
             A String specifying the name of the ContactProperty object associated with this
             interaction.
@@ -2423,7 +2423,7 @@ class InteractionModel(
 
         Returns
         -------
-        A SelfContactStd object.
+        A :py:class:`~abaqus.Interaction.SelfContactStd.SelfContactStd` object.
         """
         self.interactions[name] = interaction = SelfContactStd(
             name,
@@ -2555,7 +2555,7 @@ class InteractionModel(
 
         Returns
         -------
-        A StdContactControl object.
+        A :py:class:`~abaqus.Interaction.StdContactControl.StdContactControl` object.
 
         Raises
         ------
@@ -2627,7 +2627,7 @@ class InteractionModel(
 
         Returns
         -------
-        A StdInitialization object.
+        A :py:class:`~abaqus.Interaction.StdInitialization.StdInitialization` object.
 
         Raises
         ------
@@ -2689,7 +2689,7 @@ class InteractionModel(
 
         Returns
         -------
-        A StdStabilization object.
+        A :py:class:`~abaqus.Interaction.StdStabilization.StdStabilization` object.
 
         Raises
         ------
@@ -2733,7 +2733,7 @@ class InteractionModel(
             A String specifying the name of the step in which the StdXplCosimulation object is
             created.
         region
-            A Region object specifying the import and export region upon which the co-simulation
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the import and export region upon which the co-simulation
             exchanges data with the coupled analysis program.
         incrementation
             A SymbolicConstant specifying whether the analysis programs use the same time increments
@@ -2750,7 +2750,7 @@ class InteractionModel(
 
         Returns
         -------
-        A StdXplCosimulation object.
+        A :py:class:`~abaqus.Interaction.StdXplCosimulation.StdXplCosimulation` object.
         """
         self.interactions[name] = interaction = StdXplCosimulation(
             name, createStepName, region, incrementation, stepSize, stepSizeDefinition
@@ -2796,9 +2796,9 @@ class InteractionModel(
             A String specifying the name of the step in which the SurfaceToSurfaceContactExp object
             is created.
         main
-            A Region object specifying the main surface.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
         secondary
-            A Region object specifying the secondary surface.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
         sliding
             A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
             SMALL.
@@ -2834,17 +2834,17 @@ class InteractionModel(
             The SymbolicConstant COMPUTED or a Float specifying the mean diameter of the bolt used
             for bolt clearance. The default value is COMPUTED.
         datumAxis
-            A DatumAxis object specifying the orientation of the bolt hole when specifying bolt
+            A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the bolt hole when specifying bolt
             clearance.
         useReverseDatumAxis
             A Boolean specifying whether to reverse the bolt clearance direction given by the datum
             axis. The default value is OFF.
         clearanceRegion
-            A Region object specifying the contact region for which clearance is specified.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the contact region for which clearance is specified.
 
         Returns
         -------
-        A SurfaceToSurfaceContactExp object.
+        A :py:class:`~abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp` object.
         """
         self.interactions[name] = interaction = SurfaceToSurfaceContactExp(
             name,
@@ -2920,9 +2920,9 @@ class InteractionModel(
             A String specifying the name of the step in which the SurfaceToSurfaceContactStd object
             is created.
         master
-            A Region object specifying the main surface.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
         slave
-            A Region object specifying the secondary surface.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
         sliding
             A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
             SMALL.
@@ -2975,7 +2975,7 @@ class InteractionModel(
         adjustTolerance
             A Float specifying the adjust tolerance. The default value is 0.0.
         adjustSet
-            A Region object specifying the Set object to which the adjustment is to be applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the Set object to which the adjustment is to be applied.
         enforcement
             A SymbolicConstant specifying the discretization method. Possible values are
             NODE_TO_SURFACE and SURFACE_TO_SURFACE. The default value is SURFACE_TO_SURFACE.
@@ -3006,24 +3006,24 @@ class InteractionModel(
             The SymbolicConstant COMPUTED or a Float specifying the mean diameter of the bolt used
             for bolt clearance. The default value is COMPUTED.
         datumAxis
-            A DatumAxis object specifying the orientation of the bolt hole when specifying bolt
+            A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the bolt hole when specifying bolt
             clearance.
         useReverseDatumAxis
             A Boolean specifying whether to reverse the bolt clearance direction given by the datum
             axis. The default value is OFF.
         clearanceRegion
-            A Region object specifying the contact region for which clearance is specified.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the contact region for which clearance is specified.
         surfaceSmoothing
             A SymbolicConstant specifying whether to use surface smoothing for geometric surfaces in
             SurfaceToSurfaceContactStd interactions. Possible values are AUTOMATIC and NONE. The
             default value is NONE.
         bondingSet
-            A Region object specifying the secondary node sub-set for bonding, used only when the
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary node sub-set for bonding, used only when the
             contact property CohesiveBehavior option specifies use.
 
         Returns
         -------
-        A SurfaceToSurfaceContactStd object.
+        A :py:class:`~abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd` object.
         """
         self.interactions[name] = interaction = SurfaceToSurfaceContactStd(
             name,
@@ -3087,7 +3087,7 @@ class InteractionModel(
 
         Returns
         -------
-        A XFEMCrackGrowth object.
+        A :py:class:`~abaqus.Interaction.XFEMCrackGrowth.XFEMCrackGrowth` object.
         """
         self.interactions[name] = interaction = XFEMCrackGrowth(
             name, createStepName, crackName, allowGrowth

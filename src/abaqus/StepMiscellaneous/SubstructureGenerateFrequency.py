@@ -1,5 +1,5 @@
 class SubstructureGenerateFrequency:
-    """A SubstructureGenerateFrequency object is used to define the modes to be used in a modal
+    """A :py:class:`~abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency` object is used to define the modes to be used in a modal
     dynamic analysis. These modes are selected from the specified frequency range including
     the frequency boundary.
 

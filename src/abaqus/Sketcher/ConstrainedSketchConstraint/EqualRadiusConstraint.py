@@ -20,13 +20,13 @@ class EqualRadiusConstraint(ConstrainedSketchConstraint):
         Parameters
         ----------
         entity1
-            A ConstrainedSketchGeometry object specifying the first arc or circle.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the first arc or circle.
         entity2
             A ConstrainedSketchGeometry specifying the second arc or circle.
 
         Returns
         -------
-        A ConstrainedSketchConstraint object.
+        A :py:class:`~abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint` object.
 
         """
         pass

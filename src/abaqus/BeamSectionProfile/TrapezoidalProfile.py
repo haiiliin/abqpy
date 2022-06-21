@@ -50,7 +50,7 @@ class TrapezoidalProfile(Profile):
 
         Returns
         -------
-        A TrapezoidalProfile object.
+        A :py:class:`~abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile` object.
 
         Raises
         ------

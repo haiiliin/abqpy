@@ -33,16 +33,16 @@ class SectionBase:
         session.odbs[name].sections[name]
     """
 
-    # A ConnectorBehaviorOptionArray object.
+    # A :py:class:`~abaqus.Connector.ConnectorBehaviorOptionArray.ConnectorBehaviorOptionArray` object.
     behaviorOptions: ConnectorBehaviorOptionArray = ConnectorBehaviorOptionArray()
 
     # A String specifying the repository key.
     name: str = ""
 
-    # A TransverseShearBeam object.
+    # A :py:class:`~abaqus.Section.TransverseShearBeam.TransverseShearBeam` object.
     beamTransverseShear: TransverseShearBeam = TransverseShearBeam(ANALYSIS_DEFAULT)
 
-    # A TransverseShearShell object.
+    # A :py:class:`~abaqus.Section.TransverseShearShell.TransverseShearShell` object.
     transverseShear: TransverseShearShell = TransverseShearShell(0, 0, 0)
 
     def sectionsFromOdb(self, fileName: str):

@@ -70,7 +70,7 @@ class SelfContactStd(Interaction):
         createStepName
             A String specifying the name of the step in which the SelfContactStd object is created.
         surface
-            A Region object specifying the surface where self-contact is defined.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the surface where self-contact is defined.
         interactionProperty
             A String specifying the name of the ContactProperty object associated with this
             interaction.
@@ -91,7 +91,7 @@ class SelfContactStd(Interaction):
 
         Returns
         -------
-        A SelfContactStd object.
+        A :py:class:`~abaqus.Interaction.SelfContactStd.SelfContactStd` object.
         """
         super().__init__()
         pass

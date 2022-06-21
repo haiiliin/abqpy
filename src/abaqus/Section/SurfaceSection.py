@@ -28,7 +28,7 @@ class SurfaceSection(Section):
     - SURFACE SECTION
     """
 
-    # A RebarLayers object specifying reinforcement properties.
+    # A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object specifying reinforcement properties.
     rebarLayers: RebarLayers = None
 
     def __init__(self, name: str, useDensity: Boolean = OFF, density: float = 0):
@@ -56,7 +56,7 @@ class SurfaceSection(Section):
 
         Returns
         -------
-        A SurfaceSection object.
+        A :py:class:`~abaqus.Section.SurfaceSection.SurfaceSection` object.
 
         Raises
         ------

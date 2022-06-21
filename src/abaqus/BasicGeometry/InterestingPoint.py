@@ -7,7 +7,7 @@ class InterestingPoint:
     - The middle of an edge.
     - The middle of an arc.
     - The center of an arc.
-    An InterestingPoint object is a temporary object and cannot be accessed from the Mdb
+    An :py:class:`~abaqus.BasicGeometry.InterestingPoint.InterestingPoint` object is a temporary object and cannot be accessed from the Mdb
     object.
 
     Notes
@@ -36,14 +36,14 @@ class InterestingPoint:
         Parameters
         ----------
         edge
-            An Edge object specifying the edge on which the interesting point is positioned.
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the edge on which the interesting point is positioned.
         rule
             A SymbolicConstant specifying the position of the interesting point. Possible values are
             MIDDLE or CENTER.
 
         Returns
         -------
-        An InterestingPoint object.
+        An :py:class:`~abaqus.BasicGeometry.InterestingPoint.InterestingPoint` object.
 
         """
         pass

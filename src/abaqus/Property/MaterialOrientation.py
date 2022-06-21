@@ -78,9 +78,9 @@ class MaterialOrientation:
         Parameters
         ----------
         region
-            A Set object specifying a region for which the material orientation is defined.
+            A :py:class:`~abaqus.Region.Set.Set` object specifying a region for which the material orientation is defined.
         localCsys
-            A DatumCsys object specifying the local coordinate system or None, describing the
+            A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system or None, describing the
             material orientation for the given region. In the ODB, this member was previously
             accessible using "csys," but support has now been added for localCsys and the csys
             member will be deprecated.
@@ -111,10 +111,10 @@ class MaterialOrientation:
             discrete orientation. Possible values are SURFACE, NORMAL_DATUM, and NORMAL_VECTOR. The
             default value is NORMAL_VECTOR.
         normalAxisRegion
-            A Surface object specifying a region whose geometric normals define the normal axis for
+            A :py:class:`~abaqus.Region.Surface.Surface` object specifying a region whose geometric normals define the normal axis for
             the discrete orientation.
         normalAxisDatum
-            A DatumAxis object specifying the Datum Axis or None, describing the normal axis
+            A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the Datum Axis or None, describing the normal axis
             direction for the discrete orientation.
         flipNormalDirection
             A Boolean specifying the flag to reverse the direction of the defined normal axis
@@ -131,10 +131,10 @@ class MaterialOrientation:
             discrete orientation. Possible values are SURFACE, PRIMARY_DATUM, and PRIMARY_VECTOR.
             The default value is PRIMARY_VECTOR.
         primaryAxisRegion
-            A Set object specifying a region whose geometric tangents define the primary axis for
+            A :py:class:`~abaqus.Region.Set.Set` object specifying a region whose geometric tangents define the primary axis for
             the discrete orientation.
         primaryAxisDatum
-            A DatumAxis object specifying the Datum Axis or None, describing the primary axis
+            A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the Datum Axis or None, describing the primary axis
             direction for the discrete orientation.
         flipPrimaryDirection
             A Boolean specifying the flag to reverse the direction of the defined primary axis
@@ -145,7 +145,7 @@ class MaterialOrientation:
 
         Returns
         -------
-        A MaterialOrientation object.
+        A :py:class:`~abaqus.Property.MaterialOrientation.MaterialOrientation` object.
         """
         pass
 
@@ -185,7 +185,7 @@ class MaterialOrientation:
         Parameters
         ----------
         localCsys
-            A DatumCsys object specifying the local coordinate system or None, describing the
+            A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system or None, describing the
             material orientation for the given region. In the ODB, this member was previously
             accessible using "csys," but support has now been added for localCsys and the csys
             member will be deprecated.
@@ -223,10 +223,10 @@ class MaterialOrientation:
             discrete orientation. Possible values are SURFACE, DATUM, and VECTOR. The default value
             is VECTOR.
         normalAxisRegion
-            A Surface object specifying a region whose geometric normals define the normal axis for
+            A :py:class:`~abaqus.Region.Surface.Surface` object specifying a region whose geometric normals define the normal axis for
             the discrete orientation.
         normalAxisDatum
-            A DatumAxis object specifying the Datum Axis or None, describing the normal axis
+            A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the Datum Axis or None, describing the normal axis
             direction for the discrete orientation.
         flipNormalDirection
             A Boolean specifying the flag to reverse the direction of the defined normal axis
@@ -243,10 +243,10 @@ class MaterialOrientation:
             discrete orientation. Possible values are EDGE, DATUM, and VECTOR. The default value is
             VECTOR.
         primaryAxisRegion
-            A Set object specifying a region whose geometric tangents define the primary axis for
+            A :py:class:`~abaqus.Region.Set.Set` object specifying a region whose geometric tangents define the primary axis for
             the discrete orientation.
         primaryAxisDatum
-            A DatumAxis object specifying the Datum Axis or None, describing the primary axis
+            A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the Datum Axis or None, describing the primary axis
             direction for the discrete orientation.
         flipPrimaryDirection
             A Boolean specifying the flag to reverse the direction of the defined primary axis
@@ -257,7 +257,7 @@ class MaterialOrientation:
 
         Returns
         -------
-        A MaterialOrientation object.
+        A :py:class:`~abaqus.Property.MaterialOrientation.MaterialOrientation` object.
         """
         pass
 

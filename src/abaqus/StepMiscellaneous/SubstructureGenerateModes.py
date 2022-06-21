@@ -1,5 +1,5 @@
 class SubstructureGenerateModes:
-    """A SubstructureGenerateModes object is used to define the modes to be used in a modal
+    """A :py:class:`~abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes` object is used to define the modes to be used in a modal
     dynamic analysis.
 
     Attributes

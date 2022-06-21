@@ -47,7 +47,7 @@ class SuperElasticHardeningModifications:
 
         Returns
         -------
-        A SuperElasticHardeningModifications object.
+        A :py:class:`~abaqus.Material.Plastic.SuperElastic.SuperElasticHardeningModifications.SuperElasticHardeningModifications` object.
 
         Raises
         ------

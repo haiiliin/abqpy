@@ -68,7 +68,7 @@ class DruckerPragerHardening:
 
         Returns
         -------
-        A DruckerPragerHardening object. 
+        A :py:class:`~abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerHardening.DruckerPragerHardening` object. 
 
         Raises
         ------

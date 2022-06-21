@@ -9,7 +9,7 @@ from ..Region.Set import Set
 
 
 class Assembly(MeshEditAssembly, MeshAssembly, PropertyAssembly, RegionAssembly):
-    """An Assembly object is a container for instances of parts. The Assembly object has no
+    """An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container for instances of parts. The Assembly object has no
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
     created.
 
@@ -117,9 +117,9 @@ class Assembly(MeshEditAssembly, MeshAssembly, PropertyAssembly, RegionAssembly)
         Parameters
         ----------
         region
-            A Set object specifying the region to which the orientation is assigned.
+            A :py:class:`~abaqus.Region.Set.Set` object specifying the region to which the orientation is assigned.
         localCsys1
-            A DatumCsys object specifying the local coordinate system of the first connector point.
+            A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the first connector point.
             This value may be None, indicating the global coordinate system.
         axis1
             A SymbolicConstant specifying the axis of a datum coordinate system about which an
@@ -131,7 +131,7 @@ class Assembly(MeshEditAssembly, MeshAssembly, PropertyAssembly, RegionAssembly)
             A Boolean specifying whether or not the second connector point is to use the same local
             coordinate system, axis, and angle as the first point. The default value is ON.
         localCsys2
-            A DatumCsys object specifying the local coordinate system of the second connector point.
+            A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the second connector point.
             This value may be None, indicating the global coordinate system.
         axis2
             A SymbolicConstant specifying the axis of a datum coordinate system about which an
@@ -142,7 +142,7 @@ class Assembly(MeshEditAssembly, MeshAssembly, PropertyAssembly, RegionAssembly)
 
         Returns
         -------
-        A ConnectorOrientation object.
+        A :py:class:`~abaqus.Assembly.ConnectorOrientation.ConnectorOrientation` object.
         """
         connectorOrientation = ConnectorOrientation(
             region, localCsys1, axis1, angle1, orient2sameAs1, localCsys2, axis2, angle2

@@ -60,7 +60,7 @@ class Monitor:
 
         Returns
         -------
-        A Monitor object.
+        A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
 
         Raises
         ------

@@ -90,7 +90,7 @@ class DiagnosticPrint:
 
         Returns
         -------
-        A DiagnosticPrint object.
+        A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object.
         """
         pass
 

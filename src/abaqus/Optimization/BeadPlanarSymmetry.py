@@ -39,7 +39,7 @@ class BeadPlanarSymmetry(GeometricRestriction):
         name
             A String specifying the geometric restriction repository key.
         region
-            A Region object specifying the region to which the geometric restriction is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
         axis
             A SymbolicConstant specifying the axis of symmetry. Possible values are AXIS_1, AXIS_2,
             and AXIS_3. The default value is AXIS_1.
@@ -50,7 +50,7 @@ class BeadPlanarSymmetry(GeometricRestriction):
 
         Returns
         -------
-        A BeadPlanarSymmetry object.
+        A :py:class:`~abaqus.Optimization.BeadPlanarSymmetry.BeadPlanarSymmetry` object.
         """
         super().__init__()
         pass

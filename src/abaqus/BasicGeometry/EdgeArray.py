@@ -57,7 +57,7 @@ class EdgeArray:
 
         Returns
         -------
-        A EdgeArray object.
+        A :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
 
         """
         pass
@@ -92,7 +92,7 @@ class EdgeArray:
 
         Returns
         -------
-        An Edge object or a sequence of Edge objects.
+        An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a sequence of Edge objects.
 
         """
         pass
@@ -138,7 +138,7 @@ class EdgeArray:
 
         Returns
         -------
-        An Edge object or a sequence of Edge objects.
+        An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a sequence of Edge objects.
 
         Raises
         ------
@@ -185,7 +185,7 @@ class EdgeArray:
 
         Returns
         -------
-        An EdgeArray object, which is a sequence of Edge objects.
+        An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is a sequence of Edge objects.
 
         """
         pass
@@ -207,7 +207,7 @@ class EdgeArray:
 
         Returns
         -------
-        An EdgeArray object, which is a sequence of Edge objects.
+        An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is a sequence of Edge objects.
 
         """
         pass
@@ -225,7 +225,7 @@ class EdgeArray:
 
         Returns
         -------
-        An EdgeArray object, which is a sequence of Edge objects.
+        An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is a sequence of Edge objects.
 
         """
         pass

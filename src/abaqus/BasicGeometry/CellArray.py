@@ -45,7 +45,7 @@ class CellArray:
 
         Returns
         -------
-        A CellArray object.
+        A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object.
 
         """
         pass
@@ -81,7 +81,7 @@ class CellArray:
 
         Returns
         -------
-        A Cell object.
+        A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object.
 
         """
         pass
@@ -92,7 +92,7 @@ class CellArray:
 
         Returns
         -------
-        A FaceArray object representing the faces on the exterior of the cells.
+        A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object representing the faces on the exterior of the cells.
 
         """
         pass
@@ -110,7 +110,7 @@ class CellArray:
 
         Returns
         -------
-        A Cell object or a sequence of Cell objects.
+        A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object or a sequence of Cell objects.
 
         Raises
         ------
@@ -157,7 +157,7 @@ class CellArray:
 
         Returns
         -------
-        A CellArray object, which is a sequence of Cell objects.
+        A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object, which is a sequence of Cell objects.
 
         """
         pass
@@ -179,7 +179,7 @@ class CellArray:
 
         Returns
         -------
-        A CellArray object, which is a sequence of Cell objects.
+        A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object, which is a sequence of Cell objects.
 
         """
         pass
@@ -197,7 +197,7 @@ class CellArray:
 
         Returns
         -------
-        A CellArray object, which is a sequence of Cell objects.
+        A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object, which is a sequence of Cell objects.
 
         """
         pass

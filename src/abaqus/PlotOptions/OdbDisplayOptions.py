@@ -44,20 +44,20 @@ class OdbDisplayOptions:
         session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions
     """
 
-    # A DGCommonOptions object.
+    # A :py:class:`~abaqus.PlotOptions.DGCommonOptions.DGCommonOptions` object.
     commonOptions: DGCommonOptions = DGCommonOptions()
 
-    # A DGSuperimposeOptions object.
+    # A :py:class:`~abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions` object.
     superimposeOptions: DGSuperimposeOptions = DGSuperimposeOptions()
 
-    # A DGContourOptions object.
+    # A :py:class:`~abaqus.PlotOptions.DGContourOptions.DGContourOptions` object.
     contourOptions: DGContourOptions = DGContourOptions()
 
-    # A DGSymbolOptions object.
+    # A :py:class:`~abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions` object.
     symbolOptions: DGSymbolOptions = DGSymbolOptions()
 
-    # A DGOrientationOptions object.
+    # A :py:class:`~abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions` object.
     materialOrientationOptions: DGOrientationOptions = DGOrientationOptions()
 
-    # A DGDisplayBodyOptions object.
+    # A :py:class:`~abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions` object.
     displayBodyOptions: DGDisplayBodyOptions = DGDisplayBodyOptions()

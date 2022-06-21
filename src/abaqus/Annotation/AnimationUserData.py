@@ -125,7 +125,7 @@ class AnimationUserData(UserDataBase):
 
         Returns
         -------
-        An Arrow object.
+        An :py:class:`~abaqus.Annotation.Arrow.Arrow` object.
         """
         self.annotations[name] = arrow = Arrow(
             name,
@@ -237,7 +237,7 @@ class AnimationUserData(UserDataBase):
 
         Returns
         -------
-        A Text object.
+        A :py:class:`~abaqus.Annotation.Text.Text` object.
         """
         self.annotations[name] = text = Text(
             name,

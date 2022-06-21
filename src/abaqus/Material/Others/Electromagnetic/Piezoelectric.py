@@ -102,7 +102,7 @@ class Piezoelectric:
 
         Returns
         -------
-        A Piezoelectric object.
+        A :py:class:`~abaqus.Material.Others.Electromagnetic.Piezoelectric.Piezoelectric` object.
         """
         pass
 

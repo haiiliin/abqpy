@@ -45,11 +45,11 @@ class TurnControl(GeometricRestriction):
         name
             A String specifying the geometric restriction repository key.
         clientDirection
-            A VertexArray object of length 2 specifying the direction of the rotation axis as a
+            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the direction of the rotation axis as a
             vector positioned at the **csys** origin. Instead of through a ConstrainedSketchVertex, each point might be
             specified through a tuple of coordinates.
         region
-            A Region object specifying the region to which the geometric restriction is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         csys
@@ -77,7 +77,7 @@ class TurnControl(GeometricRestriction):
 
         Returns
         -------
-        A TurnControl object.
+        A :py:class:`~abaqus.Optimization.TurnControl.TurnControl` object.
         """
         super().__init__()
         pass

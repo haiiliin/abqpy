@@ -45,7 +45,7 @@ class ShellEdgeLoad(Load):
     # empty string.
     field: str = ""
 
-    # A Region object specifying the region to which the load is applied.
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
     def __init__(
@@ -83,7 +83,7 @@ class ShellEdgeLoad(Load):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A Region object specifying the region to which the load is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
         magnitude
             A Float or Complex specifying the load magnitude. **magnitude** is optional if
             **distributionType** = USER_DEFINED
@@ -106,7 +106,7 @@ class ShellEdgeLoad(Load):
             **directionVector**. Possible values are AXIS_1, AXIS_2, AXIS_3. The default value is
             AXIS_1.This parameter is available only if **traction** is GENERAL.
         localCsys
-            A DatumCsys object specifying the local coordinate system of the load's degrees of
+            A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the load's degrees of
             freedom. The default value is None, indicating that the degrees of freedom are defined
             in the global coordinate system or by the **userCsys** parameter if defined. This
             parameter is available only if **traction** is GENERAL. When this member is queried, it
@@ -136,7 +136,7 @@ class ShellEdgeLoad(Load):
 
         Returns
         -------
-        A ShellEdgeLoad object.
+        A :py:class:`~abaqus.Load.ShellEdgeLoad.ShellEdgeLoad` object.
         """
         super().__init__()
         pass
@@ -179,7 +179,7 @@ class ShellEdgeLoad(Load):
             **directionVector**. Possible values are AXIS_1, AXIS_2, AXIS_3. The default value is
             AXIS_1.This parameter is available only if **traction** is GENERAL.
         localCsys
-            A DatumCsys object specifying the local coordinate system of the load's degrees of
+            A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the load's degrees of
             freedom. The default value is None, indicating that the degrees of freedom are defined
             in the global coordinate system or by the **userCsys** parameter if defined. This
             parameter is available only if **traction** is GENERAL. When this member is queried, it

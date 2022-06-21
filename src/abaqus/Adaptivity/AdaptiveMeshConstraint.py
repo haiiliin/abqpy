@@ -41,7 +41,7 @@ class AdaptiveMeshConstraint:
     # values are MECHANICAL and THERMAL.
     category: SymbolicConstant = None
 
-    # A Region object specifying the region to which the adaptive mesh constraint is applied.
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the adaptive mesh constraint is applied.
     region: Region = Region()
 
     # None or a DatumCsys object specifying the local coordinate system of the adaptive mesh
@@ -78,7 +78,7 @@ class AdaptiveMeshConstraint:
         category
             A SymbolicConstant specifying the category of the adaptive mesh constraint. Possible values are MECHANICAL and THERMAL.
         region
-            A Region object specifying the region to which the adaptive mesh constraint is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the adaptive mesh constraint is applied.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the adaptive mesh  constraint's
             degrees of freedom. If **localCsys** = None, the degrees of freedom are defined  in the global coordinate

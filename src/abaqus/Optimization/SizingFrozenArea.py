@@ -32,11 +32,11 @@ class SizingFrozenArea(GeometricRestriction):
         name
             A String specifying the geometric restriction repository key.
         region
-            A Region object specifying the region to which the geometric restriction is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
 
         Returns
         -------
-        A SizingFrozenArea object.
+        A :py:class:`~abaqus.Optimization.SizingFrozenArea.SizingFrozenArea` object.
         """
         super().__init__()
         pass

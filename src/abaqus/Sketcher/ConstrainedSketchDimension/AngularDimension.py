@@ -28,9 +28,9 @@ class AngularDimension(ConstrainedSketchDimension):
         Parameters
         ----------
         line1
-            A ConstrainedSketchGeometry object specifying the first line.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the first line.
         line2
-            A ConstrainedSketchGeometry object specifying the second line.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the second line.
         textPoint
             A pair of Floats specifying the location of the dimension text.
         value
@@ -41,7 +41,7 @@ class AngularDimension(ConstrainedSketchDimension):
 
         Returns
         -------
-        A ConstrainedSketchDimension object (None if the dimension cannot be created).
+        A :py:class:`~abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimension.ConstrainedSketchDimension` object (None if the dimension cannot be created).
 
         """
         pass

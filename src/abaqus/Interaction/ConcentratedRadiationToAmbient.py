@@ -49,7 +49,7 @@ class ConcentratedRadiationToAmbient(Interaction):
             A String specifying the name of the step in which the ConcentratedRadiationToAmbient
             object is created.
         region
-            A Region object specifying the region to which the concentrated radiation interaction is
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the concentrated radiation interaction is
             applied. The interaction is applied to each node in the region.
         ambientTemperature
             A Float specifying the reference ambient temperature, θ0θ0.
@@ -79,7 +79,7 @@ class ConcentratedRadiationToAmbient(Interaction):
 
         Returns
         -------
-        A ConcentratedRadiationToAmbient object.
+        A :py:class:`~abaqus.Interaction.ConcentratedRadiationToAmbient.ConcentratedRadiationToAmbient` object.
         """
         super().__init__()
         pass

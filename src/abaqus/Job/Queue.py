@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class Queue:
-    """A Queue object tells the job where and how to submit a job remotely. A Queue object can
+    """A :py:class:`~abaqus.Job.Queue.Queue` object tells the job where and how to submit a job remotely. A :py:class:`~abaqus.Job.Queue.Queue` object can
     be used as the **queue** argument to the Job method.
 
     Notes
@@ -71,7 +71,7 @@ class Queue:
 
         Returns
         -------
-        A Queue object.
+        A :py:class:`~abaqus.Job.Queue.Queue` object.
 
         Raises
         ------

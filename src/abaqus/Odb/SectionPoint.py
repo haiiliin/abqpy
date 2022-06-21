@@ -53,6 +53,6 @@ class SectionPoint:
 
         Returns
         -------
-        A SectionPoint object.
+        A :py:class:`~abaqus.Odb.SectionPoint.SectionPoint` object.
         """
         pass

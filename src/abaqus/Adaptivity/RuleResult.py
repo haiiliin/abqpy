@@ -58,7 +58,7 @@ class RuleResult:
 
         Returns
         -------
-        A RuleResult object.
+        A :py:class:`~abaqus.Adaptivity.RuleResult.RuleResult` object.
 
         Raises
         ------

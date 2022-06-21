@@ -71,13 +71,13 @@ class XYCurve:
     # default value is CURVE_LEGEND.
     legendSource: SymbolicConstant = CURVE_LEGEND
 
-    # An XYData object specifying the data for the curve.
+    # An :py:class:`~abaqus.XY.XYData.XYData` object specifying the data for the curve.
     data: XYData = None
 
-    # A LineStyle object specifying the line properties used to display the curve.
+    # A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties used to display the curve.
     lineStyle: LineStyle = LineStyle()
 
-    # A SymbolStyle object specifying the symbol properties used to display the curve.
+    # A :py:class:`~abaqus.XY.SymbolStyle.SymbolStyle` object specifying the symbol properties used to display the curve.
     symbolStyle: SymbolStyle = SymbolStyle()
 
     # A String specifying the label to be displayed in the legend. By default, the label is
@@ -104,11 +104,11 @@ class XYCurve:
         name
             A String specifying the repository key.
         data
-            An XYData object specifying the data for the curve.
+            An :py:class:`~abaqus.XY.XYData.XYData` object specifying the data for the curve.
 
         Returns
         -------
-        An XYCurve object.
+        An :py:class:`~abaqus.XY.XYCurve.XYCurve` object.
         """
         pass
 

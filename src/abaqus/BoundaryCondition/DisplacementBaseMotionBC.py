@@ -56,11 +56,11 @@ class DisplacementBaseMotionBC(BoundaryCondition):
     # motion record given by amplitude definition. The default value is OFF.
     useComplex: Boolean = OFF
 
-    # A ModelDot object specifying a tuple containing one center of rotation. The default
+    # A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying a tuple containing one center of rotation. The default
     # value is the global origin. This argument applies only when **dof** = UR1, UR2, or UR3.
     centerOfRotation: tuple = ()
 
-    # A CorrelationArray object.
+    # A :py:class:`~abaqus.Amplitude.CorrelationArray.CorrelationArray` object.
     correlation: CorrelationArray = CorrelationArray()
 
     # A String specifying the name of the SecondaryBaseBC object associated with this boundary
@@ -71,7 +71,7 @@ class DisplacementBaseMotionBC(BoundaryCondition):
     # are MECHANICAL and THERMAL.
     category: SymbolicConstant = None
 
-    # A Region object specifying the region to which the boundary condition is applied.
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
     region: Region = Region()
 
     # None or a DatumCsys object specifying the local coordinate system of the boundary
@@ -113,10 +113,10 @@ class DisplacementBaseMotionBC(BoundaryCondition):
         amplitudeScaleFactor
             A Float specifying the scale factor for the amplitude curve. The default value is 1.0.
         centerOfRotation
-            A ModelDot object specifying a tuple containing one center of rotation. The default
+            A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying a tuple containing one center of rotation. The default
             value is the global origin. This argument applies only when **dof** = UR1, UR2, or UR3.
         correlation
-            A CorrelationArray object.
+            A :py:class:`~abaqus.Amplitude.CorrelationArray.CorrelationArray` object.
         secondaryBase
             A String specifying the name of the SecondaryBaseBC object associated with this boundary
             condition. The default value is an empty string.
@@ -131,7 +131,7 @@ class DisplacementBaseMotionBC(BoundaryCondition):
 
         Returns
         -------
-        A DisplacementBaseMotionBC object.
+        A :py:class:`~abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC` object.
         """
         super().__init__()
         pass
@@ -153,10 +153,10 @@ class DisplacementBaseMotionBC(BoundaryCondition):
         amplitudeScaleFactor
             A Float specifying the scale factor for the amplitude curve. The default value is 1.0.
         centerOfRotation
-            A ModelDot object specifying a tuple containing one center of rotation. The default
+            A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying a tuple containing one center of rotation. The default
             value is the global origin. This argument applies only when **dof** = UR1, UR2, or UR3.
         correlation
-            A CorrelationArray object.
+            A :py:class:`~abaqus.Amplitude.CorrelationArray.CorrelationArray` object.
         secondaryBase
             A String specifying the name of the SecondaryBaseBC object associated with this boundary
             condition. The default value is an empty string.

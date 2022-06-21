@@ -111,7 +111,7 @@ def openOdb(path: str, readOnly: Boolean = OFF, readInternalSets: Boolean = OFF)
 
     Returns
     -------
-        An Odb object.
+        An :py:class:`~abaqus.Odb.Odb.Odb` object.
 
     Exceptions
     ----------
@@ -153,7 +153,7 @@ def openOdb(name: str, path: str = "", readOnly: Boolean = OFF):
 
     Returns
     -------
-        An Odb object.
+        An :py:class:`~abaqus.Odb.Odb.Odb` object.
 
     Exceptions
     ----------

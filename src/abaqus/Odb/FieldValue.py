@@ -229,12 +229,12 @@ class FieldValue:
     # indeterminate. Conjugate data will be ignored in invariant calculation.
     outOfPlanePrincipal: float = None
 
-    # An OdbInstance object specifying the part to which the labels belong.
+    # An :py:class:`~abaqus.Odb.OdbInstance.OdbInstance` object specifying the part to which the labels belong.
     instance: OdbInstance = OdbInstance(
         "instance", OdbPart("part", THREE_D, DEFORMABLE_BODY)
     )
 
-    # A SectionPoint object.
+    # A :py:class:`~abaqus.Odb.SectionPoint.SectionPoint` object.
     sectionPoint: SectionPoint = None
 
     # A tuple of tuples of Floats specifying the 3 × 3 matrix of Floats specifying the

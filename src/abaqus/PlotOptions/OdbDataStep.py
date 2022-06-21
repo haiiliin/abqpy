@@ -20,7 +20,7 @@ class OdbDataStep:
         session.odbData[name].steps[i]
     """
 
-    # An OdbDataFrameArray object specifying the list of frames. The list is read-only.
+    # An :py:class:`~abaqus.PlotOptions.OdbDataFrameArray.OdbDataFrameArray` object specifying the list of frames. The list is read-only.
     frames: OdbDataFrameArray = OdbDataFrameArray()
 
     def setValues(self, activateFrames: Boolean, update: Boolean = OFF):

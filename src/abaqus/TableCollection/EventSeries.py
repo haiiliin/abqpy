@@ -65,7 +65,7 @@ class EventSeries:
 
         Returns
         -------
-        An EventSeries object.
+        An :py:class:`~abaqus.TableCollection.EventSeries.EventSeries` object.
 
         Raises
         ------

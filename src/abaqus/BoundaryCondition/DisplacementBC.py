@@ -77,7 +77,7 @@ class DisplacementBC(BoundaryCondition):
     # are MECHANICAL and THERMAL.
     category: SymbolicConstant = None
 
-    # A Region object specifying the region to which the boundary condition is applied.
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
     region: Region = Region()
 
     # None or a DatumCsys object specifying the local coordinate system of the boundary
@@ -120,7 +120,7 @@ class DisplacementBC(BoundaryCondition):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A Region object specifying the region to which the boundary condition is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
         fieldName
             A String specifying the name of the AnalyticalField or DiscreteField object associated
             with this boundary condition. The **fieldName** argument applies only when
@@ -174,7 +174,7 @@ class DisplacementBC(BoundaryCondition):
 
         Returns
         -------
-        A DisplacementBC object.
+        A :py:class:`~abaqus.BoundaryCondition.DisplacementBC.DisplacementBC` object.
         """
         super().__init__()
         pass

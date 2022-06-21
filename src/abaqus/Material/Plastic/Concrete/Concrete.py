@@ -32,13 +32,13 @@ class Concrete:
     - CONCRETE
     """
 
-    # A FailureRatios object.
+    # A :py:class:`~abaqus.Material.Plastic.Concrete.FailureRatios.FailureRatios` object.
     failureRatios: FailureRatios = FailureRatios(((),))
 
-    # A ShearRetention object.
+    # A :py:class:`~abaqus.Material.Plastic.Concrete.ShearRetention.ShearRetention` object.
     shearRetention: ShearRetention = ShearRetention(((),))
 
-    # A TensionStiffening object.
+    # A :py:class:`~abaqus.Material.Plastic.Concrete.TensionStiffening.TensionStiffening` object.
     tensionStiffening: TensionStiffening = TensionStiffening(((),))
 
     def __init__(
@@ -66,7 +66,7 @@ class Concrete:
 
         Returns
         -------
-        A Concrete object.
+        A :py:class:`~abaqus.Material.Plastic.Concrete.Concrete.Concrete` object.
 
         Raises
         ------

@@ -48,16 +48,16 @@ class Surface:
         mdb.models[name].rootAssembly.surfaces[name]
     """
 
-    # An EdgeArray object.
+    # An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
     edges: EdgeArray = EdgeArray([])
 
-    # A FaceArray object.
+    # A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
     faces: FaceArray = FaceArray([])
 
-    # A MeshElementArray object.
+    # A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
     elements: MeshElementArray = MeshElementArray([])
 
-    # A MeshNodeArray object.
+    # A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object.
     nodes: MeshNodeArray = MeshNodeArray([])
 
     # A tuple of SymbolicConstants specifying the sides; for example, (SIDE1, SIDE2).
@@ -225,7 +225,7 @@ class Surface:
 
         Returns
         -------
-        A Surface object.
+        A :py:class:`~abaqus.Region.Surface.Surface` object.
         """
         pass
 
@@ -247,11 +247,11 @@ class Surface:
         name
             A String specifying the name of the surface.
         objectToCopy
-            A Surface object to be copied.
+            A :py:class:`~abaqus.Region.Surface.Surface` object to be copied.
 
         Returns
         -------
-        A Surface object.
+        A :py:class:`~abaqus.Region.Surface.Surface` object.
         """
         pass
 
@@ -287,7 +287,7 @@ class Surface:
 
         Returns
         -------
-        A Surface object.
+        A :py:class:`~abaqus.Region.Surface.Surface` object.
         """
         pass
 
@@ -314,6 +314,6 @@ class Surface:
 
         Returns
         -------
-        A Surface object.
+        A :py:class:`~abaqus.Region.Surface.Surface` object.
         """
         pass

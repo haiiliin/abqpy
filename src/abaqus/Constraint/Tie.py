@@ -61,9 +61,9 @@ class Tie(Constraint):
         name
             A String specifying the constraint repository key.
         main
-            A Region object specifying the name of the main surface.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the main surface.
         secondary
-            A Region object specifying the name of the secondary surface.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the secondary surface.
         adjust
             A Boolean specifying whether initial positions of tied secondary nodes are adjusted to
             lie on the main surface. The default value is ON.
@@ -93,7 +93,7 @@ class Tie(Constraint):
 
         Returns
         -------
-        A Tie object.
+        A :py:class:`~abaqus.Constraint.Tie.Tie` object.
         """
         super().__init__()
         pass

@@ -90,7 +90,7 @@ class LightOptions:
     # are 0.0 ≤≤ **polygonOffsetConstant** ≤≤ 128.0. The default value is 105.0.
     materialShininess: float = 105
 
-    # A LightArray object of length 8.
+    # A :py:class:`~abaqus.DisplayOptions.LightArray.LightArray` object of length 8.
     lights: LightArray = LightArray()
 
     # A String specifying the light applied evenly to the entire scene independent of any

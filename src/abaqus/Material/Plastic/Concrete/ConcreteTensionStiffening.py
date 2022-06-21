@@ -91,7 +91,7 @@ class ConcreteTensionStiffening:
 
         Returns
         -------
-        A ConcreteTensionStiffening object. 
+        A :py:class:`~abaqus.Material.Plastic.Concrete.ConcreteTensionStiffening.ConcreteTensionStiffening` object. 
 
         Raises
         ------

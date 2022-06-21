@@ -42,7 +42,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     # values are MECHANICAL and THERMAL.
     category: SymbolicConstant = None
 
-    # A Region object specifying the region to which the adaptive mesh constraint is applied.
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the adaptive mesh constraint is applied.
     region: Region = Region()
 
     # None or a DatumCsys object specifying the local coordinate system of the adaptive mesh
@@ -83,7 +83,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
             A String specifying the name of the step in which the adaptive mesh constraint is
             created.
         region
-            A Region object specifying the region to which the adaptive mesh constraint is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the adaptive mesh constraint is applied.
         v1
             A Float or a SymbolicConstant specifying the velocity component in the 1-direction.
             Possible values for the SymbolicConstant are UNSET and SET. The default value is
@@ -123,7 +123,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
 
         Returns
         -------
-        A VelocityAdaptiveMeshConstraint object.
+        A :py:class:`~abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint` object.
         """
         super().__init__(name=name, category=MECHANICAL, region=region)
 

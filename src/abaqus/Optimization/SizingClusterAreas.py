@@ -36,7 +36,7 @@ class SizingClusterAreas(GeometricRestriction):
 
         Returns
         -------
-        A SizingClusterAreas object.
+        A :py:class:`~abaqus.Optimization.SizingClusterAreas.SizingClusterAreas` object.
         """
         super().__init__()
         pass

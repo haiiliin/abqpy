@@ -39,7 +39,7 @@ class InelasticHeatFraction:
 
         Returns
         -------
-        An InelasticHeatFraction object.
+        An :py:class:`~abaqus.Material.Others.HeatTransfer.InelasticHeatFraction.InelasticHeatFraction` object.
 
         Raises
         ------

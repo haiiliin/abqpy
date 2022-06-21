@@ -62,7 +62,7 @@ class ConcreteCompressionHardening:
 
         Returns
         -------
-        A ConcreteCompressionHardening object.
+        A :py:class:`~abaqus.Material.Plastic.Concrete.ConcreteCompressionHardening.ConcreteCompressionHardening` object.
 
         Raises
         ------

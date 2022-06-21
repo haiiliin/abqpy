@@ -75,7 +75,7 @@ class PorousElastic:
 
         Returns
         -------
-        A PorousElastic object.
+        A :py:class:`~abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic` object.
 
         Raises
         ------

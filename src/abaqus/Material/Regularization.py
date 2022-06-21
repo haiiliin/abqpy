@@ -47,7 +47,7 @@ class Regularization:
 
         Returns
         -------
-        A Regularization object.
+        A :py:class:`~abaqus.Material.Regularization.Regularization` object.
 
         Raises
         ------

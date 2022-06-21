@@ -93,7 +93,7 @@ class Expansion:
 
         Returns
         -------
-        An Expansion object.
+        An :py:class:`~abaqus.Material.Others.Mechanical.Expansion.Expansion` object.
 
         Raises
         ------

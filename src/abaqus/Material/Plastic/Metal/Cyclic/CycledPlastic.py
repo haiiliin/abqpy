@@ -48,7 +48,7 @@ class CycledPlastic:
 
         Returns
         -------
-        A CycledPlastic object.
+        A :py:class:`~abaqus.Material.Plastic.Metal.Cyclic.CycledPlastic.CycledPlastic` object.
         """
         pass
 

@@ -51,9 +51,9 @@ class DisplayBody(Constraint):
         name
             A String specifying the constraint repository key.
         instance
-            A PartInstance object specifying the part instance that is to be used for display only.
+            A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the part instance that is to be used for display only.
         controlPoints
-            A ModelDotArray object specifying the motion of the PartInstance. The control points may
+            A :py:class:`~abaqus.BasicGeometry.ModelDotArray.ModelDotArray` object specifying the motion of the PartInstance. The control points may
             be ConstrainedSketchVertex, ReferencePoint, or MeshNode objects. Their motion will control the motion of
             the PartInstance. If this argument is set to an empty sequence, the PartInstance will
             remain fixed in space during the analysis. The sequence can have either one object or
@@ -61,7 +61,7 @@ class DisplayBody(Constraint):
 
         Returns
         -------
-        A DisplayBody object.
+        A :py:class:`~abaqus.Constraint.DisplayBody.DisplayBody` object.
         """
         super().__init__()
         pass

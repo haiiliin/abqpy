@@ -54,7 +54,7 @@ class ClayHardening:
 
         Returns
         -------
-        A ClayHardening object.
+        A :py:class:`~abaqus.Material.Plastic.CriticalStateClay.ClayHardening.ClayHardening` object.
 
         Raises
         ------

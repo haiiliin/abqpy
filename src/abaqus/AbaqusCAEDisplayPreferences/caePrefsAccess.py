@@ -126,7 +126,7 @@ def openGuiPreferences(displayName: str, fileName: str = "") -> CaeGuiPrefs:
 
     Returns
     -------
-        A CaeGuiPrefs object.
+        A :py:class:`~abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs` object.
     """
     pass
 
@@ -169,6 +169,6 @@ def openSessionOptions(
 
     Returns
     -------
-        A CaeKerPrefs object.
+        A :py:class:`~abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs` object.
     """
     pass

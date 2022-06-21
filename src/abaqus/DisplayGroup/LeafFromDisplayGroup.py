@@ -43,11 +43,11 @@ class LeafFromDisplayGroup(Leaf):
         Parameters
         ----------
         displayGroup
-            A DisplayGroupArray object.
+            A :py:class:`~abaqus.DisplayGroup.DisplayGroupArray.DisplayGroupArray` object.
 
         Returns
         -------
-        A LeafFromDisplayGroup object.
+        A :py:class:`~abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup` object.
         """
         super().__init__(DEFAULT_MODEL)
         pass

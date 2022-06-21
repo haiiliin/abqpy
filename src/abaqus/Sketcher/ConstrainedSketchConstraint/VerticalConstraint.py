@@ -20,11 +20,11 @@ class VerticalConstraint(ConstrainedSketchConstraint):
         Parameters
         ----------
         entity
-            A ConstrainedSketchGeometry object specifying the line to constrain.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the line to constrain.
 
         Returns
         -------
-        A ConstrainedSketchConstraint object.
+        A :py:class:`~abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint` object.
 
         """
         pass

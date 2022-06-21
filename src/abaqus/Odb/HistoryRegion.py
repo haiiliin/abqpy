@@ -53,14 +53,14 @@ class HistoryRegion:
         description
             A String specifying the description of the HistoryRegion object.
         point
-            A HistoryPoint object specifying the point to which the history data refer.
+            A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object specifying the point to which the history data refer.
         loadCase
             None or an OdbLoadCase object specifying the load case associated with the HistoryRegion
             object. The default value is None.
 
         Returns
         -------
-        A HistoryRegion object.
+        A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
         """
         pass
 
@@ -75,7 +75,7 @@ class HistoryRegion:
 
         Returns
         -------
-        A HistoryRegion object.
+        A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
         """
         pass
 
@@ -91,7 +91,7 @@ class HistoryRegion:
 
         Returns
         -------
-        A HistoryRegion object.
+        A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
         """
         pass
 
@@ -109,7 +109,7 @@ class HistoryRegion:
 
         Returns
         -------
-        A HistoryRegion object.
+        A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
         """
         pass
 
@@ -148,7 +148,7 @@ class HistoryRegion:
 
         Returns
         -------
-        A HistoryOutput object.
+        A :py:class:`~abaqus.Odb.HistoryOutput.HistoryOutput` object.
         """
         self.historyOutputs[name] = historyOutput = HistoryOutput(
             name, description, type, validInvariants

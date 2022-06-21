@@ -71,7 +71,7 @@ class TensileFailure:
 
         Returns
         -------
-        An TensileFailure object.
+        An :py:class:`~abaqus.Material.Plastic.TensileFailure.TensileFailure` object.
 
         Raises
         ------

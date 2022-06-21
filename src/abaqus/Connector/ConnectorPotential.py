@@ -37,7 +37,7 @@ class ConnectorPotential:
     - CONNECTOR POTENTIAL
     """
 
-    # A DerivedComponent object specifying the DerivedComponent used in the contribution. This
+    # A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` object specifying the DerivedComponent used in the contribution. This
     # argument is applicable only if **componentStyle** = DERIVED_COMPONENT.
     derivedComponent: DerivedComponent = DerivedComponent()
 
@@ -95,7 +95,7 @@ class ConnectorPotential:
 
         Returns
         -------
-        A ConnectorPotential object. 
+        A :py:class:`~abaqus.Connector.ConnectorPotential.ConnectorPotential` object. 
 
         Raises
         ------
@@ -127,7 +127,7 @@ class ConnectorPotential:
 
         Returns
         -------
-        A DerivedComponent object.
+        A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` object.
 
         Raises
         ------

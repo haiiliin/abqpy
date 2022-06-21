@@ -44,7 +44,7 @@ class SurfacePoreFluid(Load):
     # empty string.
     field: str = ""
 
-    # A Region object specifying the region to which the load is applied.
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
     def __init__(
@@ -74,7 +74,7 @@ class SurfacePoreFluid(Load):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A Region object specifying the region to which the load is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
         magnitude
             A Float specifying the surface pore fluid flow magnitude. **magnitude** is optional if
             **distributionType** = USER_DEFINED.
@@ -92,7 +92,7 @@ class SurfacePoreFluid(Load):
 
         Returns
         -------
-        A SurfacePoreFluid object.
+        A :py:class:`~abaqus.Load.SurfacePoreFluid.SurfacePoreFluid` object.
         """
         super().__init__()
         pass

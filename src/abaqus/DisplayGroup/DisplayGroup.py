@@ -79,11 +79,11 @@ class DisplayGroup:
         name
             A String specifying the repository key.
         leaf
-            A Leaf object specifying the items in the display group.
+            A :py:class:`~abaqus.DisplayGroup.Leaf.Leaf` object specifying the items in the display group.
 
         Returns
         -------
-        A DisplayGroup object.
+        A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object.
         """
         pass
 
@@ -93,7 +93,7 @@ class DisplayGroup:
         Parameters
         ----------
         leaf
-            A Leaf object specifying the items to add to the display group.
+            A :py:class:`~abaqus.DisplayGroup.Leaf.Leaf` object specifying the items to add to the display group.
         """
         pass
 
@@ -104,7 +104,7 @@ class DisplayGroup:
         Parameters
         ----------
         leaf
-            A Leaf object specifying the items to be excluded from the display group.
+            A :py:class:`~abaqus.DisplayGroup.Leaf.Leaf` object specifying the items to be excluded from the display group.
         """
         pass
 
@@ -115,7 +115,7 @@ class DisplayGroup:
         Parameters
         ----------
         leaf
-            A Leaf object specifying the items to be included in the display group.
+            A :py:class:`~abaqus.DisplayGroup.Leaf.Leaf` object specifying the items to be included in the display group.
         """
         pass
 
@@ -129,7 +129,7 @@ class DisplayGroup:
         Parameters
         ----------
         leaf
-            A Leaf object specifying the items to remove from the display group.
+            A :py:class:`~abaqus.DisplayGroup.Leaf.Leaf` object specifying the items to remove from the display group.
         """
         pass
 
@@ -139,7 +139,7 @@ class DisplayGroup:
         Parameters
         ----------
         leaf
-            A Leaf object specifying the items with which to replace the current display group
+            A :py:class:`~abaqus.DisplayGroup.Leaf.Leaf` object specifying the items with which to replace the current display group
             contents.
         """
         pass

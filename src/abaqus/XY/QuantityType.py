@@ -148,7 +148,7 @@ class QuantityType:
 
         Returns
         -------
-        A QuantityType object.
+        A :py:class:`~abaqus.XY.QuantityType.QuantityType` object.
         """
         pass
 

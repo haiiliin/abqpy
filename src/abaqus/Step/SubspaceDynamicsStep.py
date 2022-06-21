@@ -212,13 +212,13 @@ class SubspaceDynamicsStep(AnalysisStep):
         str, HistoryOutputRequestState
     ]()
 
-    # A DiagnosticPrint object.
+    # A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
-    # A Monitor object.
+    # A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
     monitor: Monitor = None
 
-    # A Restart object.
+    # A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
     restart: Restart = Restart()
 
     # A repository of AdaptiveMeshConstraintState objects.
@@ -229,10 +229,10 @@ class SubspaceDynamicsStep(AnalysisStep):
     # A repository of AdaptiveMeshDomain objects.
     adaptiveMeshDomains: dict[str, AdaptiveMeshDomain] = dict[str, AdaptiveMeshDomain]()
 
-    # A Control object.
+    # A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object.
     control: Control = Control()
 
-    # A SolverControl object.
+    # A :py:class:`~abaqus.StepMiscellaneous.SolverControl.SolverControl` object.
     solverControl: SolverControl = SolverControl()
 
     # A repository of BoundaryConditionState objects.
@@ -308,7 +308,7 @@ class SubspaceDynamicsStep(AnalysisStep):
 
         Returns
         -------
-        A SubspaceDynamicsStep object.
+        A :py:class:`~abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep` object.
 
         Raises
         ------

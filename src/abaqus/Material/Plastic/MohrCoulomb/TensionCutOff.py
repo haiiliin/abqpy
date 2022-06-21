@@ -56,7 +56,7 @@ class TensionCutOff:
 
         Returns
         -------
-        A TensionCutOff object.
+        A :py:class:`~abaqus.Material.Plastic.MohrCoulomb.TensionCutOff.TensionCutOff` object.
 
         Raises
         ------

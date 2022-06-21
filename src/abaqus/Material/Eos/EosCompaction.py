@@ -48,7 +48,7 @@ class EosCompaction:
 
         Returns
         -------
-        An EosCompaction object.
+        An :py:class:`~abaqus.Material.Eos.EosCompaction.EosCompaction` object.
 
         Raises
         ------

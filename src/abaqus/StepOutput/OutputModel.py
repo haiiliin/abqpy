@@ -140,7 +140,7 @@ class OutputModel(ModelBase):
 
         Returns
         -------
-        A FieldOutputRequest object.
+        A :py:class:`~abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest` object.
         """
         self.fieldOutputRequests[name] = FieldOutputRequest(
             name,
@@ -291,7 +291,7 @@ class OutputModel(ModelBase):
 
         Returns
         -------
-        A HistoryOutputRequest object.
+        A :py:class:`~abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest` object.
         """
         self.historyOutputRequests[name] = HistoryOutputRequest(
             name,
@@ -348,7 +348,7 @@ class OutputModel(ModelBase):
         name
             A String specifying the repository key.
         surface
-            A Region object specifying the surface over which the output is based.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the surface over which the output is based.
         refPoint
             None or a Region object specifying the anchor point about which the integrated moment
             over the output region is computed or the SymbolicConstant None representing the global
@@ -377,7 +377,7 @@ class OutputModel(ModelBase):
 
         Returns
         -------
-        An IntegratedOutputSection object.
+        An :py:class:`~abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection` object.
         """
         self.integratedOutputSections[
             name
@@ -413,7 +413,7 @@ class OutputModel(ModelBase):
 
         Returns
         -------
-        A TimePoint object.
+        A :py:class:`~abaqus.StepOutput.TimePoint.TimePoint` object.
 
         Raises
         ------

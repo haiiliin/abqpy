@@ -89,7 +89,7 @@ class DamageStabilizationCohesive:
 
         Returns
         -------
-        A DamageStabilizationCohesive object. 
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageStabilizationCohesive.DamageStabilizationCohesive` object. 
 
         Raises
         ------

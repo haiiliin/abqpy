@@ -46,7 +46,7 @@ class BeamSection(Section):
     - SECTION POINTS
     """
 
-    # A TransverseShearBeam object specifying the transverse shear stiffness properties.
+    # A :py:class:`~abaqus.Section.TransverseShearBeam.TransverseShearBeam` object specifying the transverse shear stiffness properties.
     beamTransverseShear: TransverseShearBeam = TransverseShearBeam(ANALYSIS_DEFAULT)
 
     def __init__(
@@ -183,7 +183,7 @@ class BeamSection(Section):
 
         Returns
         -------
-        A BeamSection object.
+        A :py:class:`~abaqus.Section.BeamSection.BeamSection` object.
         """
         super().__init__()
         pass

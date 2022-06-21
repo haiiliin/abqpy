@@ -101,7 +101,7 @@ class TwoPointSpringDashpot(SpringDashpot):
 
         Returns
         -------
-        A TwoPointSpringDashpot object.
+        A :py:class:`~abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot` object.
         """
         super().__init__()
         pass

@@ -70,7 +70,7 @@ class UserMaterial:
 
         Returns
         -------
-        A UserMaterial object.
+        A :py:class:`~abaqus.Material.Others.User.UserMaterial.UserMaterial` object.
 
         Raises
         ------

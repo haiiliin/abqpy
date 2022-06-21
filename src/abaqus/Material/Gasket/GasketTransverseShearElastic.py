@@ -61,7 +61,7 @@ class GasketTransverseShearElastic:
 
         Returns
         -------
-        A GasketTransverseShearElastic object.
+        A :py:class:`~abaqus.Material.Gasket.GasketTransverseShearElastic.GasketTransverseShearElastic` object.
 
         Raises
         ------

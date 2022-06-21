@@ -138,7 +138,7 @@ class Arrow(Annotation):
 
         Returns
         -------
-        An Arrow object.
+        An :py:class:`~abaqus.Annotation.Arrow.Arrow` object.
 
         """
         super().__init__()

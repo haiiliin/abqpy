@@ -59,7 +59,7 @@ class ShearRetention:
 
         Returns
         -------
-        A ShearRetention object.
+        A :py:class:`~abaqus.Material.Plastic.Concrete.ShearRetention.ShearRetention` object.
 
         Raises
         ------

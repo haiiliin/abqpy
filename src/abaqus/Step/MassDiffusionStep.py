@@ -257,13 +257,13 @@ class MassDiffusionStep(AnalysisStep):
         str, HistoryOutputRequestState
     ]()
 
-    # A DiagnosticPrint object.
+    # A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
-    # A Monitor object.
+    # A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
     monitor: Monitor = None
 
-    # A Restart object.
+    # A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
     restart: Restart = Restart()
 
     # A repository of AdaptiveMeshConstraintState objects.
@@ -274,10 +274,10 @@ class MassDiffusionStep(AnalysisStep):
     # A repository of AdaptiveMeshDomain objects.
     adaptiveMeshDomains: dict[str, AdaptiveMeshDomain] = dict[str, AdaptiveMeshDomain]()
 
-    # A Control object.
+    # A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object.
     control: Control = Control()
 
-    # A SolverControl object.
+    # A :py:class:`~abaqus.StepMiscellaneous.SolverControl.SolverControl` object.
     solverControl: SolverControl = SolverControl()
 
     # A repository of BoundaryConditionState objects.
@@ -379,7 +379,7 @@ class MassDiffusionStep(AnalysisStep):
 
         Returns
         -------
-        A MassDiffusionStep object.
+        A :py:class:`~abaqus.Step.MassDiffusionStep.MassDiffusionStep` object.
 
         Raises
         ------

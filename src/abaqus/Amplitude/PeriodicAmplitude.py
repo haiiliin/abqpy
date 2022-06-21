@@ -60,7 +60,7 @@ class PeriodicAmplitude(Amplitude):
 
         Returns
         -------
-        A PeriodicAmplitude object.
+        A :py:class:`~abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude` object.
 
         Raises
         ------

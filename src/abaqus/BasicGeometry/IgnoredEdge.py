@@ -1,5 +1,5 @@
 class IgnoredEdge:
-    """An IgnoredEdge object is a one-dimensional region of geometry that has been abstracted
+    """An :py:class:`~abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge` object is a one-dimensional region of geometry that has been abstracted
     away by a virtual topology feature.
 
     Attributes

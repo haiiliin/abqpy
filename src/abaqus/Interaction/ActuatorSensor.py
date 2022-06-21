@@ -56,7 +56,7 @@ class ActuatorSensor(Interaction):
             A String specifying the name of the step in which the actuator/sensor interaction is
             created. **createStepName** must be set to 'Initial'.
         point
-            A Region object specifying the point at which the constraint is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the point at which the constraint is applied.
         interactionProperty
             A String specifying the ActuatorSensorProp object associated with this interaction.
         noCoordComponents
@@ -76,7 +76,7 @@ class ActuatorSensor(Interaction):
 
         Returns
         -------
-        An ActuatorSensor object.
+        An :py:class:`~abaqus.Interaction.ActuatorSensor.ActuatorSensor` object.
         """
         super().__init__()
         pass

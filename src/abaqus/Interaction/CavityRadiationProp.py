@@ -53,7 +53,7 @@ class CavityRadiationProp(ContactProperty):
 
         Returns
         -------
-        A CavityRadiationProp object.
+        A :py:class:`~abaqus.Interaction.CavityRadiationProp.CavityRadiationProp` object.
         """
         super().__init__(name)
         pass

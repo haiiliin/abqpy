@@ -49,7 +49,7 @@ class IgnoredEdgeArray:
 
         Returns
         -------
-        An IgnoredEdge object or a sequence of IgnoredEdge objects.
+        An :py:class:`~abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge` object or a sequence of IgnoredEdge objects.
 
         """
         pass
@@ -67,7 +67,7 @@ class IgnoredEdgeArray:
 
         Returns
         -------
-        An IgnoredEdge object or a sequence of IgnoredEdge objects.
+        An :py:class:`~abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge` object or a sequence of IgnoredEdge objects.
 
         """
         pass

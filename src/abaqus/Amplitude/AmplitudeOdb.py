@@ -51,7 +51,7 @@ class AmplitudeOdb(OdbBase):
 
         Returns
         -------
-        An ActuatorAmplitude object.
+        An :py:class:`~abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude` object.
 
         Raises
         ------
@@ -99,7 +99,7 @@ class AmplitudeOdb(OdbBase):
 
         Returns
         -------
-        A DecayAmplitude object.
+        A :py:class:`~abaqus.Amplitude.DecayAmplitude.DecayAmplitude` object.
 
         Raises
         ------
@@ -154,7 +154,7 @@ class AmplitudeOdb(OdbBase):
 
         Returns
         -------
-        An EquallySpacedAmplitude object.
+        An :py:class:`~abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude` object.
 
         Raises
         ------
@@ -209,7 +209,7 @@ class AmplitudeOdb(OdbBase):
 
         Returns
         -------
-        A ModulatedAmplitude object.
+        A :py:class:`~abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude` object.
 
         Raises
         ------
@@ -259,7 +259,7 @@ class AmplitudeOdb(OdbBase):
 
         Returns
         -------
-        A PeriodicAmplitude object.
+        A :py:class:`~abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude` object.
 
         Raises
         ------
@@ -325,7 +325,7 @@ class AmplitudeOdb(OdbBase):
 
         Returns
         -------
-        A PsdDefinition object.
+        A :py:class:`~abaqus.Amplitude.PsdDefinition.PsdDefinition` object.
 
         Raises
         ------
@@ -371,7 +371,7 @@ class AmplitudeOdb(OdbBase):
 
         Returns
         -------
-        A SmoothStepAmplitude object.
+        A :py:class:`~abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude` object.
 
         Raises
         ------
@@ -419,7 +419,7 @@ class AmplitudeOdb(OdbBase):
 
         Returns
         -------
-        A SolutionDependentAmplitude object.
+        A :py:class:`~abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude` object.
 
         Raises
         ------
@@ -499,7 +499,7 @@ class AmplitudeOdb(OdbBase):
 
         Returns
         -------
-        A SpectrumAmplitude object.
+        A :py:class:`~abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude` object.
 
         Raises
         ------
@@ -557,7 +557,7 @@ class AmplitudeOdb(OdbBase):
 
         Returns
         -------
-        A TabularAmplitude object.
+        A :py:class:`~abaqus.Amplitude.TabularAmplitude.TabularAmplitude` object.
 
         Raises
         ------

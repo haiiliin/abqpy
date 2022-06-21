@@ -48,7 +48,7 @@ class InteractionContactInitializationModel(ModelBase):
 
         Returns
         -------
-        A StdInitialization object.
+        A :py:class:`~abaqus.Interaction.StdInitialization.StdInitialization` object.
 
         Raises
         ------

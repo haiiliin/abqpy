@@ -65,11 +65,11 @@ class SingleTermDesignResponse(DesignResponse):
             A SymbolicConstant specifying the operation used on values across steps and load cases.
             Possible values are MAXIMUM, MINIMUM, and SUM. The default value is SUM.
         stepOptions
-            A StepOptionArray object.
+            A :py:class:`~abaqus.Optimization.StepOptionArray.StepOptionArray` object.
 
         Returns
         -------
-        A SingleTermDesignResponse object.
+        A :py:class:`~abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse` object.
         """
         super().__init__()
         pass
@@ -108,6 +108,6 @@ class SingleTermDesignResponse(DesignResponse):
             A SymbolicConstant specifying the operation used on values across steps and load cases.
             Possible values are MAXIMUM, MINIMUM, and SUM. The default value is SUM.
         stepOptions
-            A StepOptionArray object.
+            A :py:class:`~abaqus.Optimization.StepOptionArray.StepOptionArray` object.
         """
         pass

@@ -81,7 +81,7 @@ class NetworkDatabaseConnector:
 
         Returns
         -------
-        A NetworkDatabaseConnector object.
+        A :py:class:`~abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector` object.
         """
         pass
 

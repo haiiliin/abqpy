@@ -79,7 +79,7 @@ class LocalStopCondition(StopCondition):
 
         Returns
         -------
-        A LocalStopCondition object.
+        A :py:class:`~abaqus.Optimization.LocalStopCondition.LocalStopCondition` object.
         """
         super().__init__()
         pass

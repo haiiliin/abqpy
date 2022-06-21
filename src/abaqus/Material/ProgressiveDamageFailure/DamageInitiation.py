@@ -223,13 +223,13 @@ class DamageInitiation:
     # A tuple of tuples of Floats specifying the items described in the "Table data" section.
     table: float = None
 
-    # A DamageEvolution object.
+    # A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageEvolution.DamageEvolution` object.
     damageEvolution: DamageEvolution = None
 
-    # A DamageStabilization object.
+    # A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageStabilization.DamageStabilization` object.
     damageStabilization: DamageStabilization = None
 
-    # A DamageStabilizationCohesive object.
+    # A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageStabilizationCohesive.DamageStabilizationCohesive` object.
     damageStabilizationCohesive: DamageStabilizationCohesive = (
         DamageStabilizationCohesive()
     )

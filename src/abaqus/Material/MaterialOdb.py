@@ -39,7 +39,7 @@ class MaterialOdb(OdbBase):
 
         Returns
         -------
-        A Material object.
+        A :py:class:`~abaqus.Material.Material.Material` object.
         """
         self.materials[name] = material = Material(
             name, description, materialIdentifier

@@ -77,7 +77,7 @@ class GasketThicknessBehavior:
     - GASKET THICKNESS BEHAVIOR
     """
 
-    # A ContactArea object.
+    # A :py:class:`~abaqus.Material.Gasket.ContactArea.ContactArea` object.
     contactArea: ContactArea = ContactArea(((),))
 
     def __init__(
@@ -148,7 +148,7 @@ class GasketThicknessBehavior:
 
         Returns
         -------
-        A GasketThicknessBehavior object.
+        A :py:class:`~abaqus.Material.Gasket.GasketThicknessBehavior.GasketThicknessBehavior` object.
 
         Raises
         ------

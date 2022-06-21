@@ -39,7 +39,7 @@ class BaselineCorrection:
 
         Returns
         -------
-        A BaselineCorrection object.
+        A :py:class:`~abaqus.Amplitude.BaselineCorrection.BaselineCorrection` object.
 
         Raises
         ------

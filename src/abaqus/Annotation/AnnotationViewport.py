@@ -21,7 +21,7 @@ class AnnotationViewport(ViewportBase):
         Parameters
         ----------
         annotation
-            An Annotation object to plot.
+            An :py:class:`~abaqus.Annotation.Annotation.Annotation` object to plot.
         index
             An Int specifying the index of the Annotation object in the sequence of annotations to
             plot. The default value is zero.

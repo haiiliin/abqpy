@@ -88,11 +88,11 @@ class ConnectorPlasticity(ConnectorBehaviorOption):
     - CONNECTOR POTENTIAL
     """
 
-    # A ConnectorOptions object specifying the ConnectorOptions used to define tabular options
+    # A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object specifying the ConnectorOptions used to define tabular options
     # for the isotropic hardening table.
     isotropicOptions: ConnectorOptions = ConnectorOptions()
 
-    # A ConnectorOptions object specifying the ConnectorOptions used to define tabular options
+    # A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object specifying the ConnectorOptions used to define tabular options
     # for the kinematic hardening table.
     kinematicOptions: ConnectorOptions = ConnectorOptions()
 
@@ -168,7 +168,7 @@ class ConnectorPlasticity(ConnectorBehaviorOption):
             potential definition. The default value is 2.0.This argument is applicable only if
             **coupling** = COUPLED and if **forcePotentialOperator** = SUM.
         connectorPotentials
-            A ConnectorPotentialArray object specifying one ConnectorPotential object for each force
+            A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object specifying one ConnectorPotential object for each force
             potential contribution. This member can be specified only if **coupling** = COUPLED.
         isotropicTable
             A sequence of sequences of Floats specifying isotropic plasticity properties. Items in
@@ -186,7 +186,7 @@ class ConnectorPlasticity(ConnectorBehaviorOption):
 
         Returns
         -------
-        A ConnectorPlasticity object.
+        A :py:class:`~abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity` object.
 
         Raises
         ------

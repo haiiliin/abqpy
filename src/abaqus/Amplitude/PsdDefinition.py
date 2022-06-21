@@ -77,7 +77,7 @@ class PsdDefinition(Amplitude):
 
         Returns
         -------
-        A PsdDefinition object.
+        A :py:class:`~abaqus.Amplitude.PsdDefinition.PsdDefinition` object.
 
         Raises
         ------

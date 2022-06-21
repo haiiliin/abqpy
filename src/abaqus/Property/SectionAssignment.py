@@ -56,7 +56,7 @@ class SectionAssignment:
         Parameters
         ----------
         region
-            A Set object specifying the region to which the section is assigned.
+            A :py:class:`~abaqus.Region.Set.Set` object specifying the region to which the section is assigned.
         sectionName
             A String specifying the name of the section.
         thicknessAssignment
@@ -75,7 +75,7 @@ class SectionAssignment:
 
         Returns
         -------
-        A SectionAssignment object.
+        A :py:class:`~abaqus.Property.SectionAssignment.SectionAssignment` object.
         """
         pass
 

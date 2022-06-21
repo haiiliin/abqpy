@@ -68,7 +68,7 @@ class FilterOdb(OdbBase):
 
         Returns
         -------
-        A ButterworthFilter object.
+        A :py:class:`~abaqus.Filter.ButterworthFilter.ButterworthFilter` object.
 
         Raises
         ------
@@ -133,7 +133,7 @@ class FilterOdb(OdbBase):
 
         Returns
         -------
-        A Chebyshev1Filter object.
+        A :py:class:`~abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter` object.
 
         Raises
         ------
@@ -205,7 +205,7 @@ class FilterOdb(OdbBase):
 
         Returns
         -------
-        A Chebyshev2Filter object.
+        A :py:class:`~abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter` object.
 
         Raises
         ------
@@ -273,7 +273,7 @@ class FilterOdb(OdbBase):
 
         Returns
         -------
-        An OperatorFilter object.
+        An :py:class:`~abaqus.Filter.OperatorFilter.OperatorFilter` object.
 
         Raises
         ------

@@ -10,7 +10,7 @@ from .SectionPoint import SectionPoint
 
 
 class FieldOutput:
-    """A FieldOutput object contains field data for a specific output variable.
+    """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object contains field data for a specific output variable.
 
     Attributes
     ----------
@@ -51,10 +51,10 @@ class FieldOutput:
     # A Boolean specifying whether the data are complex.
     isComplex: Boolean = OFF
 
-    # A FieldLocationArray object.
+    # A :py:class:`~abaqus.Odb.FieldLocationArray.FieldLocationArray` object.
     locations: FieldLocationArray = FieldLocationArray()
 
-    # A FieldValueArray object specifying the order of the objects in the array is determined
+    # A :py:class:`~abaqus.Odb.FieldValueArray.FieldValueArray` object specifying the order of the objects in the array is determined
     # by the Abaqus Scripting Interface; see the **data** argument to the addData method for a
     # description of the order.
     values: FieldValueArray = None
@@ -110,7 +110,7 @@ class FieldOutput:
 
         Returns
         -------
-        A FieldOutput object.
+        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
@@ -130,7 +130,7 @@ class FieldOutput:
         Parameters
         ----------
         field
-            A FieldOutput object.
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         name
             A String specifying the name of the FieldOutput object.
         description
@@ -139,7 +139,7 @@ class FieldOutput:
 
         Returns
         -------
-        A FieldOutput object.
+        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
@@ -175,7 +175,7 @@ class FieldOutput:
               points. Selecting this value prompts the Visualization module to calculate the sum of
             the values at the ELEMENT_FACE_INTEGRATION_POINT position from multiple surfaces.
         instance
-            An OdbInstance object specifying the namespace for labels.
+            An :py:class:`~abaqus.Odb.OdbInstance.OdbInstance` object specifying the namespace for labels.
         labels
             A sequence of Ints specifying the labels of the nodes or elements where the values in
             **data** are located. For better performance, the node or element labels are preferred to
@@ -190,7 +190,7 @@ class FieldOutput:
             the Abaqus documentation. For more information, see the Abaqus Elements Guide. These
             data create FieldValue objects internally.
         sectionPoint
-            A SectionPoint object specifying the location in the section. Although **sectionPoint** is
+            A :py:class:`~abaqus.Odb.SectionPoint.SectionPoint` object specifying the location in the section. Although **sectionPoint** is
             an optional argument to the addData method, omitting the argument does have consequences
             for visualization. If you omit the argument when you are writing field output data for a
             shell or a beam, you cannot subsequently select the section point to display when you
@@ -222,7 +222,7 @@ class FieldOutput:
         Parameters
         ----------
         field
-            A FieldOutput object specifying the data to add.
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object specifying the data to add.
 
         Raises
         ------
@@ -257,7 +257,7 @@ class FieldOutput:
             calculate the sum of the values at the ELEMENT_FACE_INTEGRATION_POINT position from
             multiple surfaces.
         set
-            An OdbSet object specifying the instance-level set defining the region for addData. The
+            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the instance-level set defining the region for addData. The
             set must be defined in the same output database as the output database into which the
             new field output data is being written. For better performance, the node or element
             labels in the set are preferred to be sorted in ascending order and must be specified in
@@ -270,7 +270,7 @@ class FieldOutput:
             order of the element nodal data, integration point data, and section point data for
             beams and shells follows the conventions defined in the Abaqus Elements Guide.
         sectionPoint
-            A SectionPoint object specifying the location in the section. Although*sectionPoint* is
+            A :py:class:`~abaqus.Odb.SectionPoint.SectionPoint` object specifying the location in the section. Although*sectionPoint* is
             an optional argument to theaddData method, omitting the argument does have consequences
             for visualization. If you omit the argument when you are writing field output data for a
             shell or a beam, you cannot subsequently select the section point to display when you
@@ -330,7 +330,7 @@ class FieldOutput:
 
         Returns
         -------
-        A FieldOutput object.
+        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
@@ -339,7 +339,7 @@ class FieldOutput:
 
     @typing.overload
     def getSubset(self, position: SymbolicConstant = None, readOnly: Boolean = OFF):
-        """A FieldOutput object with a subset of the field values.
+        """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object with a subset of the field values.
 
         Parameters
         ----------
@@ -366,13 +366,13 @@ class FieldOutput:
 
         Returns
         -------
-        A FieldOutput object.
+        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
     @typing.overload
     def getSubset(self, region: str = ""):
-        """A FieldOutput object with a subset of the field values.
+        """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object with a subset of the field values.
 
         Parameters
         ----------
@@ -382,13 +382,13 @@ class FieldOutput:
 
         Returns
         -------
-        A FieldOutput object.
+        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
     @typing.overload
     def getSubset(self, localCoordSystem: tuple = ()):
-        """A FieldOutput object with a subset of the field values.
+        """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object with a subset of the field values.
 
         Parameters
         ----------
@@ -398,43 +398,43 @@ class FieldOutput:
 
         Returns
         -------
-        A FieldOutput object.
+        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
     @typing.overload
     def getSubset(self, sectionPoint: SectionPoint = None):
-        """A FieldOutput object with a subset of the field values.
+        """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object with a subset of the field values.
 
         Parameters
         ----------
         sectionPoint
-            A SectionPoint object.
+            A :py:class:`~abaqus.Odb.SectionPoint.SectionPoint` object.
 
         Returns
         -------
-        A FieldOutput object.
+        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
     @typing.overload
     def getSubset(self, location: FieldLocation = FieldLocation()):
-        """A FieldOutput object with a subset of the field values.
+        """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object with a subset of the field values.
 
         Parameters
         ----------
         location
-            A FieldLocation object.
+            A :py:class:`~abaqus.Odb.FieldLocation.FieldLocation` object.
 
         Returns
         -------
-        A FieldOutput object.
+        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
     @typing.overload
     def getSubset(self, region: str = ""):
-        """A FieldOutput object with a subset of the field values.
+        """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object with a subset of the field values.
 
         Parameters
         ----------
@@ -443,13 +443,13 @@ class FieldOutput:
 
         Returns
         -------
-        A FieldOutput object.
+        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
     @typing.overload
     def getSubset(self, region: str = ""):
-        """A FieldOutput object with a subset of the field values.
+        """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object with a subset of the field values.
 
         Parameters
         ----------
@@ -458,13 +458,13 @@ class FieldOutput:
 
         Returns
         -------
-        A FieldOutput object.
+        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
     @typing.overload
     def getSubset(self, region: str = ""):
-        """A FieldOutput object with a subset of the field values.
+        """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object with a subset of the field values.
 
         Parameters
         ----------
@@ -473,13 +473,13 @@ class FieldOutput:
 
         Returns
         -------
-        A FieldOutput object.
+        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
     @typing.overload
     def getSubset(self, elementType: str = ""):
-        """A FieldOutput object with a subset of the field values.
+        """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object with a subset of the field values.
 
         Parameters
         ----------
@@ -489,7 +489,7 @@ class FieldOutput:
 
         Returns
         -------
-        A FieldOutput object.
+        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
@@ -524,7 +524,7 @@ class FieldOutput:
 
         Returns
         -------
-        A FieldOutput object.
+        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
 
         Raises
         ------
@@ -556,7 +556,7 @@ class FieldOutput:
             or positioned with respect to nodes on the model and can be cartesian, cylindrical, or
             spherical.
         deformationField
-            A FieldOutput object specifying the nodal displacement vectors required by moving
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object specifying the nodal displacement vectors required by moving
             coordinate systems to determine instantaneous configurations.
         projected22Axis
             An Int specifying which axis of the coordinate system will be projected as the second
@@ -569,7 +569,7 @@ class FieldOutput:
 
         Returns
         -------
-        A FieldOutput object.
+        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
 
         Raises
         ------
@@ -602,10 +602,10 @@ class FieldOutput:
             or positioned with respect to nodes on the model and can be cartesian, cylindrical, or
             spherical.
         deformationField
-            A FieldOutput object specifying the nodal displacement vectors required by moving
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object specifying the nodal displacement vectors required by moving
             coordinate systems to determine instantaneous configurations.
         rotationField
-            A FieldOutput object specifying the nodal rotational displacement vectors required by
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object specifying the nodal rotational displacement vectors required by
             moving coordinate systems that follow a 6-dof node, to determine instantaneous
             configurations.
         projected22Axis
@@ -619,7 +619,7 @@ class FieldOutput:
 
         Returns
         -------
-        A FieldOutput object.
+        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
 
         Raises
         ------
@@ -642,12 +642,12 @@ class FieldOutput:
         Parameters
         ----------
         deformationField
-            A FieldOutput object specifying the nodal displacement vectors required by moving
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object specifying the nodal displacement vectors required by moving
             coordinate systems to determine instantaneous configurations.
 
         Returns
         -------
-        A FieldOutput object.
+        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
 
         Raises
         ------

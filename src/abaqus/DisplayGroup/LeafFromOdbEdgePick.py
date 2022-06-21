@@ -49,7 +49,7 @@ class LeafFromOdbEdgePick(Leaf):
 
         Returns
         -------
-        A LeafFromOdbEdgePick object.
+        A :py:class:`~abaqus.DisplayGroup.LeafFromOdbEdgePick.LeafFromOdbEdgePick` object.
         """
         super().__init__(DEFAULT_MODEL)
         pass

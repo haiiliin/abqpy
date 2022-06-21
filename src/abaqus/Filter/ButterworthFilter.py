@@ -71,7 +71,7 @@ class ButterworthFilter(Filter):
 
         Returns
         -------
-        A ButterworthFilter object.
+        A :py:class:`~abaqus.Filter.ButterworthFilter.ButterworthFilter` object.
 
         Raises
         ------

@@ -66,7 +66,7 @@ class IProfile(Profile):
 
         Returns
         -------
-        An IProfile object.
+        An :py:class:`~abaqus.BeamSectionProfile.IProfile.IProfile` object.
 
         Raises
         ------

@@ -40,8 +40,8 @@ class RebarOrientation:
     # A Float specifying the angle of the additional rotation.
     angle: float = None
 
-    # An OdbSet object specifying a region for which the rebar orientation is defined.
+    # An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying a region for which the rebar orientation is defined.
     region: OdbSet = OdbSet("set", tuple[OdbMeshNode]())
 
-    # An OdbDatumCsys object specifying a datum coordinates system.
+    # An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object specifying a datum coordinates system.
     csys: OdbDatumCsys = OdbDatumCsys()

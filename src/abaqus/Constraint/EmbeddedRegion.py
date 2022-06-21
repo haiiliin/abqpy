@@ -57,9 +57,9 @@ class EmbeddedRegion(Constraint):
         name
             A String specifying the constraint repository key.
         embeddedRegion
-            A Region object specifying the body region to be embedded.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the body region to be embedded.
         hostRegion
-            A Region object specifying the host region. A value of None indicates that the host
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the host region. A value of None indicates that the host
             region is the whole model.
         weightFactorTolerance
             A Float specifying a small value below which the weighting factors will be zeroed out.
@@ -82,7 +82,7 @@ class EmbeddedRegion(Constraint):
 
         Returns
         -------
-        An EmbeddedRegion object.
+        An :py:class:`~abaqus.Constraint.EmbeddedRegion.EmbeddedRegion` object.
         """
         super().__init__()
         pass

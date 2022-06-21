@@ -1,5 +1,5 @@
 class DirectDampingComponent:
-    """A DirectDampingComponent object is used to define direct damping over a range of modes.
+    """A :py:class:`~abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent` object is used to define direct damping over a range of modes.
 
     Attributes
     ----------

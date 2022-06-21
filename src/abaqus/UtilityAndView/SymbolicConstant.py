@@ -41,6 +41,6 @@ class SymbolicConstant:
 
         Returns
         -------
-        A SymbolicConstant object.
+        A :py:class:`~abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant` object.
         """
         pass

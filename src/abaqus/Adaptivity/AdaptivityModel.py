@@ -31,11 +31,11 @@ class AdaptivityModel(ModelBase):
         Parameters
         ----------
         odb
-            An Odb object containing error output field results.
+            An :py:class:`~abaqus.Odb.Odb.Odb` object containing error output field results.
 
         Returns
         -------
-        An AdaptivityIteration object.
+        An :py:class:`~abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration` object.
         """
         pass
 
@@ -68,7 +68,7 @@ class AdaptivityModel(ModelBase):
             A SymbolicConstant specifying the category of the adaptive mesh constraint. Possible values are
             MECHANICAL and THERMAL.
         region
-            A Region object specifying the region to which the adaptive mesh constraint is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the adaptive mesh constraint is applied.
         localCsys
             None or a DatumCsys object specifying the local coordinate system of the adaptive mesh  constraint's
             degrees of freedom. If **localCsys** = None, the degrees of freedom are defined  in the global coordinate
@@ -160,7 +160,7 @@ class AdaptivityModel(ModelBase):
 
         Returns
         -------
-        An AdaptiveMeshControl object
+        An :py:class:`~abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl` object
         """
         self.adaptiveMeshControls[name] = adaptiveMeshControl = AdaptiveMeshControl(
             name,
@@ -214,7 +214,7 @@ class AdaptivityModel(ModelBase):
             A String specifying the name of the step in which the adaptive mesh constraint is
             created.
         region
-            A Region object specifying the region to which the adaptive mesh constraint is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the adaptive mesh constraint is applied.
         u1
             A Float or a SymbolicConstant specifying the displacement component in the 1-direction.
             Possible values for the SymbolicConstant are UNSET and SET. The default value is
@@ -254,7 +254,7 @@ class AdaptivityModel(ModelBase):
 
         Returns
         -------
-        A DisplacementAdaptiveMeshConstraint object
+        A :py:class:`~abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint` object
         """
         self.adaptiveMeshConstraints[
             name
@@ -375,7 +375,7 @@ class AdaptivityModel(ModelBase):
 
         Returns
         -------
-        A RemeshingRule object
+        A :py:class:`~abaqus.Adaptivity.RemeshingRule.RemeshingRule` object
         """
         self.remeshingRules[name] = remeshingRule = RemeshingRule(
             name,
@@ -432,7 +432,7 @@ class AdaptivityModel(ModelBase):
             A String specifying the name of the step in which the adaptive mesh constraint is
             created.
         region
-            A Region object specifying the region to which the adaptive mesh constraint is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the adaptive mesh constraint is applied.
         v1
             A Float or a SymbolicConstant specifying the velocity component in the 1-direction.
             Possible values for the SymbolicConstant are UNSET and SET. The default value is
@@ -472,7 +472,7 @@ class AdaptivityModel(ModelBase):
 
         Returns
         -------
-        A VelocityAdaptiveMeshConstraint object
+        A :py:class:`~abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint` object
         """
         self.adaptiveMeshConstraints[
             name

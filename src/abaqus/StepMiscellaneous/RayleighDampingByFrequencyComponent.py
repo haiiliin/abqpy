@@ -1,5 +1,5 @@
 class RayleighDampingByFrequencyComponent:
-    """A RayleighDampingByFrequencyComponent object is used to define Rayleigh damping over a
+    """A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent` object is used to define Rayleigh damping over a
     range of frequencies.
 
     Attributes

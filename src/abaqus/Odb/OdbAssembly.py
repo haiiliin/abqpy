@@ -46,7 +46,7 @@ class OdbAssembly(OdbAssemblyBase):
 
         Returns
         -------
-        An OdbDatumCsys object.
+        An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
         self.datumCsyses[name] = datumCsys = OdbDatumCsys()
         return datumCsys
@@ -82,15 +82,15 @@ class OdbAssembly(OdbAssemblyBase):
             A SymbolicConstant specifying the type of coordinate system. Possible values are
             CARTESIAN, CYLINDRICAL, and SPHERICAL.
         origin
-            An OdbMeshNode object specifying a node at the origin of the datum coordinate system.
+            An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object specifying a node at the origin of the datum coordinate system.
         point1
-            An OdbMeshNode object specifying a node on the local 1- or rr-axis.
+            An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object specifying a node on the local 1- or rr-axis.
         point2
-            An OdbMeshNode object specifying a node in the 1-2 or rr-θθ plane.
+            An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object specifying a node in the 1-2 or rr-θθ plane.
 
         Returns
         -------
-        An OdbDatumCsys object.
+        An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
         self.datumCsyses[name] = datumCsys = OdbDatumCsys()
         return datumCsys
@@ -126,15 +126,15 @@ class OdbAssembly(OdbAssemblyBase):
             A SymbolicConstant specifying the type of coordinate system. Possible values are
             CARTESIAN, CYLINDRICAL, and SPHERICAL.
         node1Arc
-            An OdbMeshNode object that lies on the circular arc.
+            An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object that lies on the circular arc.
         node2Arc
-            An OdbMeshNode object that lies on the circular arc.
+            An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object that lies on the circular arc.
         node3Arc
-            An OdbMeshNode object that lies on the circular arc.
+            An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object that lies on the circular arc.
 
         Returns
         -------
-        An OdbDatumCsys object.
+        An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
         self.datumCsyses[name] = datumCsys = OdbDatumCsys()
         return datumCsys
@@ -165,11 +165,11 @@ class OdbAssembly(OdbAssemblyBase):
             A SymbolicConstant specifying the type of coordinate system. Possible values are
             CARTESIAN, CYLINDRICAL, and SPHERICAL.
         origin
-            An OdbMeshNode object specifying the origin of the datum coordinate system.
+            An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object specifying the origin of the datum coordinate system.
 
         Returns
         -------
-        An OdbDatumCsys object.
+        An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
         self.datumCsyses[name] = datumCsys = OdbDatumCsys()
         return datumCsys
@@ -190,11 +190,11 @@ class OdbAssembly(OdbAssemblyBase):
         name
             A String specifying the repository key.
         datumCsys
-            An OdbDatumCsys object specifying the object to be copied.
+            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object specifying the object to be copied.
 
         Returns
         -------
-        An OdbDatumCsys object.
+        An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
         self.datumCsyses[name] = datumCsys = OdbDatumCsys()
         return datumCsys
@@ -217,7 +217,7 @@ class OdbAssembly(OdbAssemblyBase):
         name
             A String specifying the instance name.
         object
-            An OdbPart object.
+            An :py:class:`~abaqus.Odb.OdbPart.OdbPart` object.
         localCoordSystem
             A sequence of sequences of three Floats specifying the rotation and translation of the
             part instance in the global Cartesian coordinate system. The first three sequences
@@ -233,7 +233,7 @@ class OdbAssembly(OdbAssemblyBase):
 
         Returns
         -------
-        An OdbInstance object.
+        An :py:class:`~abaqus.Odb.OdbInstance.OdbInstance` object.
         """
         self.instances[name] = odbInstance = OdbInstance(name, object, localCoordSystem)
         return odbInstance
@@ -262,7 +262,7 @@ class OdbAssembly(OdbAssemblyBase):
         Parameters
         ----------
         referenceNode
-            An OdbSet object specifying the reference node set associated with the rigid body.
+            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the reference node set associated with the rigid body.
         position
             A SymbolicConstant specifying the specific location of the OdbRigidBody reference node
             relative to the rest of the rigid body. Possible values are INPUT and CENTER_OF_MASS.
@@ -272,21 +272,21 @@ class OdbAssembly(OdbAssemblyBase):
             be isothermal. This is used only for fully coupled thermal-stress analysis The default
             value is ON.
         elements
-            An OdbSet object specifying the element set whose motion is governed by the motion of
+            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the element set whose motion is governed by the motion of
             rigid body reference node.
         tieNodes
-            An OdbSet object specifying the node set which have both translational and rotational
+            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the node set which have both translational and rotational
             degrees of freedom associated with the rigid body.
         pinNodes
-            An OdbSet object specifying the node set which have only translational degrees of
+            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the node set which have only translational degrees of
             freedom associated with the rigid body.
         analyticSurface
-            An AnalyticSurface object specifying the analytic surface whose motion is governed by
+            An :py:class:`~abaqus.Odb.AnalyticSurface.AnalyticSurface` object specifying the analytic surface whose motion is governed by
             the motion of rigid body reference node.
 
         Returns
         -------
-        An OdbRigidBody object.
+        An :py:class:`~abaqus.Odb.OdbRigidBody.OdbRigidBody` object.
         """
         odbRigidBody = OdbRigidBody(
             referenceNode,
@@ -325,7 +325,7 @@ class OdbAssembly(OdbAssemblyBase):
 
         Returns
         -------
-        An OdbSet object.
+        An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
         """
         self.nodeSets[name] = odbSet = OdbSet(name, nodes)
         return odbSet

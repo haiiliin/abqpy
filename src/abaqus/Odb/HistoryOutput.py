@@ -70,7 +70,7 @@ class HistoryOutput:
 
         Returns
         -------
-        A HistoryOutput object.
+        A :py:class:`~abaqus.Odb.HistoryOutput.HistoryOutput` object.
         """
         pass
 

@@ -56,7 +56,7 @@ class PipePressure(Load):
     # empty string.
     field: str = ""
 
-    # A Region object specifying the region to which the load is applied.
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
     def __init__(
@@ -90,7 +90,7 @@ class PipePressure(Load):
         createStepName
             A String specifying the name of the step in which the pressure is created.
         region
-            A Region object specifying the region to which the load is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
         magnitude
             A Float specifying the pressure magnitude.Note:*magnitude* is optional if
             **distributionType** = USER_DEFINED.
@@ -119,7 +119,7 @@ class PipePressure(Load):
 
         Returns
         -------
-        A PipePressure object.
+        A :py:class:`~abaqus.Load.PipePressure.PipePressure` object.
         """
         super().__init__()
         pass

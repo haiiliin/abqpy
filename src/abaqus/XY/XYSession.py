@@ -46,7 +46,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        An AreaStyle object.
+        An :py:class:`~abaqus.XY.AreaStyle.AreaStyle` object.
 
         Raises
         ------
@@ -91,7 +91,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        A LineStyle object.
+        A :py:class:`~abaqus.XY.LineStyle.LineStyle` object.
 
         Raises
         ------
@@ -197,7 +197,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        A QuantityType object.
+        A :py:class:`~abaqus.XY.QuantityType.QuantityType` object.
         """
         quantityType = QuantityType(label, type)
         return quantityType
@@ -251,7 +251,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        A SymbolStyle object.
+        A :py:class:`~abaqus.XY.SymbolStyle.SymbolStyle` object.
 
         Raises
         ------
@@ -292,7 +292,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        A TextStyle object.
+        A :py:class:`~abaqus.XY.TextStyle.TextStyle` object.
 
         Raises
         ------
@@ -354,15 +354,15 @@ class XYSession(XYSessionBase):
             A String specifying the label for the Y-values. This value may be overridden if the
             **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
         axis1QuantityType
-            A QuantityType object specifying the QuantityType object associated to the X -axis1-
+            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the X -axis1-
             values.
         axis2QuantityType
-            A QuantityType object specifying the QuantityType object associated to the Y -axis2-
+            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the Y -axis2-
             values.
 
         Returns
         -------
-        An XYData object.
+        An :py:class:`~abaqus.XY.XYData.XYData` object.
         """
         pass
 
@@ -384,11 +384,11 @@ class XYSession(XYSessionBase):
         Parameters
         ----------
         objectToCopy
-            An XYData object to be copied.
+            An :py:class:`~abaqus.XY.XYData.XYData` object to be copied.
 
         Returns
         -------
-        An XYData object.
+        An :py:class:`~abaqus.XY.XYData.XYData` object.
         """
         pass
 
@@ -449,10 +449,10 @@ class XYSession(XYSessionBase):
             A String specifying the label for the Y-values. This value may be overridden if the
             **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
         axis1QuantityType
-            A QuantityType object specifying the QuantityType object associated to the X -axis1-
+            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the X -axis1-
             values.
         axis2QuantityType
-            A QuantityType object specifying the QuantityType object associated to the Y -axis2-
+            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the Y -axis2-
             values.
         xField
             An Int specifying the field from which the **X**-data will be read. Fields are delimited
@@ -467,7 +467,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        An XYData object
+        An :py:class:`~abaqus.XY.XYData.XYData` object
         """
         self.xyDataObjects[name] = xyData = XYData(())
         return xyData
@@ -501,7 +501,7 @@ class XYSession(XYSessionBase):
         Parameters
         ----------
         odb
-            An Odb object specifying the output database from which data will be read.
+            An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database from which data will be read.
         outputVariableName
             A String specifying the output variable from which the **X - Y** data will be read.
         steps
@@ -540,7 +540,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        An XYData object
+        An :py:class:`~abaqus.XY.XYData.XYData` object
         """
         self.xyDataObjects[name] = xyData = XYData(())
         return xyData
@@ -572,7 +572,7 @@ class XYSession(XYSessionBase):
         Parameters
         ----------
         odb
-            An Odb object specifying the output database from which data will be read.
+            An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database from which data will be read.
         outputPosition
             A SymbolicConstant specifying the position from which output will be read. Possible
             values are ELEMENT_CENTROID, ELEMENT_NODAL, INTEGRATION_POINT, and NODAL.
@@ -666,7 +666,7 @@ class XYSession(XYSessionBase):
         Parameters
         ----------
         odb
-            An Odb object specifying the output database from which data will be read.
+            An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database from which data will be read.
         force
             A boolean indicating whether to compute the force. The default is ON.
         moment
@@ -729,7 +729,7 @@ class XYSession(XYSessionBase):
         Parameters
         ----------
         path
-            A Path object to use in **X - Y** data generation.
+            A :py:class:`~abaqus.PathAndProbe.Path.Path` object to use in **X - Y** data generation.
         name
             A String specifying the repository key:for **session** 'name' is required argument and for
             **xyPlot** 'name' is optional argument.

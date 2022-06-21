@@ -165,30 +165,30 @@ class SteadyStateModalStep(AnalysisStep):
     # A String specifying a description of the new step. The default value is an empty string.
     description: str = ""
 
-    # A SteadyStateModalFrequencyArray object.
+    # A :py:class:`~abaqus.StepMiscellaneous.SteadyStateModalFrequencyArray.SteadyStateModalFrequencyArray` object.
     frequencyRange: SteadyStateModalFrequencyArray = SteadyStateModalFrequencyArray()
 
-    # A DirectDamping object.
+    # A :py:class:`~abaqus.StepMiscellaneous.DirectDamping.DirectDamping` object.
     directDamping: DirectDamping = DirectDamping()
 
-    # A CompositeDamping object.
+    # A :py:class:`~abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping` object.
     compositeDamping: CompositeDamping = CompositeDamping()
 
-    # A RayleighDamping object.
+    # A :py:class:`~abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping` object.
     rayleighDamping: RayleighDamping = RayleighDamping()
 
-    # A StructuralDamping object.
+    # A :py:class:`~abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping` object.
     structuralDamping: StructuralDamping = StructuralDamping()
 
-    # A DirectDampingByFrequency object.
+    # A :py:class:`~abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency` object.
     directDampingByFrequency: DirectDampingByFrequency = DirectDampingByFrequency()
 
-    # A RayleighDampingByFrequency object.
+    # A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency` object.
     rayleighDampingByFrequency: RayleighDampingByFrequency = (
         RayleighDampingByFrequency()
     )
 
-    # A StructuralDampingByFrequency object.
+    # A :py:class:`~abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency` object.
     structuralDampingByFrequency: StructuralDampingByFrequency = (
         StructuralDampingByFrequency()
     )
@@ -245,13 +245,13 @@ class SteadyStateModalStep(AnalysisStep):
         str, HistoryOutputRequestState
     ]()
 
-    # A DiagnosticPrint object.
+    # A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
-    # A Monitor object.
+    # A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
     monitor: Monitor = None
 
-    # A Restart object.
+    # A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
     restart: Restart = Restart()
 
     # A repository of AdaptiveMeshConstraintState objects.
@@ -262,10 +262,10 @@ class SteadyStateModalStep(AnalysisStep):
     # A repository of AdaptiveMeshDomain objects.
     adaptiveMeshDomains: dict[str, AdaptiveMeshDomain] = dict[str, AdaptiveMeshDomain]()
 
-    # A Control object.
+    # A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object.
     control: Control = Control()
 
-    # A SolverControl object.
+    # A :py:class:`~abaqus.StepMiscellaneous.SolverControl.SolverControl` object.
     solverControl: SolverControl = SolverControl()
 
     # A repository of BoundaryConditionState objects.
@@ -322,26 +322,26 @@ class SteadyStateModalStep(AnalysisStep):
             A String specifying the name of the previous step. The new step appears after this step
             in the list of analysis steps.
         frequencyRange
-            A SteadyStateModalFrequencyArray object.
+            A :py:class:`~abaqus.StepMiscellaneous.SteadyStateModalFrequencyArray.SteadyStateModalFrequencyArray` object.
         description
             A String specifying a description of the new step. The default value is an empty string.
         scale
             A SymbolicConstant specifying whether a logarithmic or linear scale is used for output.
             Possible values are LOGARITHMIC and LINEAR. The default value is LOGARITHMIC.
         directDamping
-            A DirectDamping object.
+            A :py:class:`~abaqus.StepMiscellaneous.DirectDamping.DirectDamping` object.
         compositeDamping
-            A CompositeDamping object.
+            A :py:class:`~abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping` object.
         rayleighDamping
-            A RayleighDamping object.
+            A :py:class:`~abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping` object.
         structuralDamping
-            A StructuralDamping object.
+            A :py:class:`~abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping` object.
         directDampingByFrequency
-            A DirectDampingByFrequency object.
+            A :py:class:`~abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency` object.
         rayleighDampingByFrequency
-            A RayleighDampingByFrequency object.
+            A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency` object.
         structuralDampingByFrequency
-            A StructuralDampingByFrequency object.
+            A :py:class:`~abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency` object.
         maintainAttributes
             A Boolean specifying whether to retain attributes from an existing step with the same
             name. The default value is False.
@@ -351,7 +351,7 @@ class SteadyStateModalStep(AnalysisStep):
 
         Returns
         -------
-        A SteadyStateModalStep object.
+        A :py:class:`~abaqus.Step.SteadyStateModalStep.SteadyStateModalStep` object.
 
         Raises
         ------
@@ -383,19 +383,19 @@ class SteadyStateModalStep(AnalysisStep):
             A SymbolicConstant specifying whether a logarithmic or linear scale is used for output.
             Possible values are LOGARITHMIC and LINEAR. The default value is LOGARITHMIC.
         directDamping
-            A DirectDamping object.
+            A :py:class:`~abaqus.StepMiscellaneous.DirectDamping.DirectDamping` object.
         compositeDamping
-            A CompositeDamping object.
+            A :py:class:`~abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping` object.
         rayleighDamping
-            A RayleighDamping object.
+            A :py:class:`~abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping` object.
         structuralDamping
-            A StructuralDamping object.
+            A :py:class:`~abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping` object.
         directDampingByFrequency
-            A DirectDampingByFrequency object.
+            A :py:class:`~abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency` object.
         rayleighDampingByFrequency
-            A RayleighDampingByFrequency object.
+            A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency` object.
         structuralDampingByFrequency
-            A StructuralDampingByFrequency object.
+            A :py:class:`~abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency` object.
         subdivideUsingEigenfrequencies
             A Boolean specifying whether to subdivide each frequency range using the
             eigenfrequencies of the system. The default value is ON.

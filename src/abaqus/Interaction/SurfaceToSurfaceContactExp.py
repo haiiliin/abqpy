@@ -60,9 +60,9 @@ class SurfaceToSurfaceContactExp(Interaction):
             A String specifying the name of the step in which the SurfaceToSurfaceContactExp object
             is created.
         main
-            A Region object specifying the main surface.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
         secondary
-            A Region object specifying the secondary surface.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
         sliding
             A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
             SMALL.
@@ -98,17 +98,17 @@ class SurfaceToSurfaceContactExp(Interaction):
             The SymbolicConstant COMPUTED or a Float specifying the mean diameter of the bolt used
             for bolt clearance. The default value is COMPUTED.
         datumAxis
-            A DatumAxis object specifying the orientation of the bolt hole when specifying bolt
+            A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the bolt hole when specifying bolt
             clearance.
         useReverseDatumAxis
             A Boolean specifying whether to reverse the bolt clearance direction given by the datum
             axis. The default value is OFF.
         clearanceRegion
-            A Region object specifying the contact region for which clearance is specified.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the contact region for which clearance is specified.
 
         Returns
         -------
-        A SurfaceToSurfaceContactExp object.
+        A :py:class:`~abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp` object.
         """
         super().__init__()
         pass
@@ -168,13 +168,13 @@ class SurfaceToSurfaceContactExp(Interaction):
             The SymbolicConstant COMPUTED or a Float specifying the mean diameter of the bolt used
             for bolt clearance. The default value is COMPUTED.
         datumAxis
-            A DatumAxis object specifying the orientation of the bolt hole when specifying bolt
+            A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the bolt hole when specifying bolt
             clearance.
         useReverseDatumAxis
             A Boolean specifying whether to reverse the bolt clearance direction given by the datum
             axis. The default value is OFF.
         clearanceRegion
-            A Region object specifying the contact region for which clearance is specified.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the contact region for which clearance is specified.
         """
         pass
 

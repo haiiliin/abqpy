@@ -2,7 +2,7 @@ from abaqusConstants import *
 
 
 class MassScaling:
-    """A MassScaling object defines the region and controls that govern mass scaling.
+    """A :py:class:`~abaqus.StepMiscellaneous.MassScaling.MassScaling` object defines the region and controls that govern mass scaling.
 
     Attributes
     ----------

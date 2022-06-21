@@ -47,10 +47,10 @@ class StampControl(GeometricRestriction):
         name
             A String specifying the geometric restriction repository key.
         clientDirection
-            A VertexArray object of length 2 specifying the stamping direction. Instead of through a
+            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the stamping direction. Instead of through a
             ConstrainedSketchVertex, each point may be specified through a tuple of coordinates.
         region
-            A Region object specifying the region to which the geometric restriction is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         csys
@@ -82,7 +82,7 @@ class StampControl(GeometricRestriction):
 
         Returns
         -------
-        A StampControl object.
+        A :py:class:`~abaqus.Optimization.StampControl.StampControl` object.
         """
         super().__init__()
         pass

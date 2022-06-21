@@ -40,16 +40,16 @@ class ConnectorFriction(ConnectorBehaviorOption):
     - CONNECTOR FRICTION
     """
 
-    # A TangentialBehavior object.
+    # A :py:class:`~abaqus.Connector.TangentialBehavior.TangentialBehavior` object.
     tangentialBehavior: TangentialBehavior = TangentialBehavior()
 
-    # A DerivedComponent object specifying the DerivedComponent used to compute the contact
+    # A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` object specifying the DerivedComponent used to compute the contact
     # force component direction. This argument applies only if
     # **frictionModel** = USER_CUSTOMIZED, if **useContactForceComponent** = ON, and if
     # **contactForceStyle** = DERIVED_COMPONENT.
     derivedComponent: DerivedComponent = DerivedComponent()
 
-    # A ConnectorOptions object specifying the ConnectorOptions used to define tabular options
+    # A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object specifying the ConnectorOptions used to define tabular options
     # for this ConnectorBehaviorOption.
     options: ConnectorOptions = ConnectorOptions()
 
@@ -143,7 +143,7 @@ class ConnectorFriction(ConnectorBehaviorOption):
             **frictionModel** = USER_CUSTOMIZED, if **slipStyle** = COMPUTE, and if
             **forcePotentialOperator** = SUM.
         connectorPotentials
-            A ConnectorPotentialArray object specifying one ConnectorPotential object for each force
+            A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object specifying one ConnectorPotential object for each force
             potential contribution. This member can be specified only if
             **frictionModel** = USER_CUSTOMIZED, and if **slipStyle** = COMPUTE.
         table
@@ -178,7 +178,7 @@ class ConnectorFriction(ConnectorBehaviorOption):
 
         Returns
         -------
-        A ConnectorFriction object.
+        A :py:class:`~abaqus.Connector.ConnectorFriction.ConnectorFriction` object.
 
         Raises
         ------

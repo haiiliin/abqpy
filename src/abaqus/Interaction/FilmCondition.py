@@ -50,7 +50,7 @@ class FilmCondition(Interaction):
         createStepName
             A String specifying the name of the step in which the FilmCondition object is created.
         surface
-            A Region object specifying the name of the surface to which the film condition
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the surface to which the film condition
             interaction is applied.
         definition
             A SymbolicConstant specifying how the film condition is defined. Possible values are
@@ -94,7 +94,7 @@ class FilmCondition(Interaction):
 
         Returns
         -------
-        A FilmCondition object.
+        A :py:class:`~abaqus.Interaction.FilmCondition.FilmCondition` object.
         """
         super().__init__()
         pass

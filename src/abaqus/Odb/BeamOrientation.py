@@ -35,7 +35,7 @@ class BeamOrientation:
     # N1_COSINES, CSYS, and VECT.
     method: SymbolicConstant = None
 
-    # An OdbSet object specifying a region for which the beam orientation is defined.
+    # An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying a region for which the beam orientation is defined.
     region: OdbSet = OdbSet("set", tuple[OdbMeshNode]())
 
     # A tuple of Floats specifying direction cosines of the n1-direction of the beam

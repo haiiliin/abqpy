@@ -90,7 +90,7 @@ class CohesiveBehavior:
 
         Returns
         -------
-        A CohesiveBehavior object.
+        A :py:class:`~abaqus.Interaction.CohesiveBehavior.CohesiveBehavior` object.
         """
         pass
 

@@ -47,7 +47,7 @@ class LeafFromSets(Leaf):
 
         Returns
         -------
-        A LeafFromSets object.
+        A :py:class:`~abaqus.DisplayGroup.LeafFromSets.LeafFromSets` object.
         """
         super().__init__(DEFAULT_MODEL)
         pass

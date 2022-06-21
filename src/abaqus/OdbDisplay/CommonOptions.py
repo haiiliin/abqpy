@@ -361,7 +361,7 @@ class CommonOptions(DGCommonOptions):
         Parameters
         ----------
         options
-            A CommonOptions object from which values are to be copied. If other arguments are also
+            A :py:class:`~abaqus.OdbDisplay.CommonOptions.CommonOptions` object from which values are to be copied. If other arguments are also
             supplied to setValues, they will override the values in **options**. The default value is
             None.
         renderStyle

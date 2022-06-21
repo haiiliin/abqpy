@@ -25,7 +25,7 @@ class MoistureSwelling:
     - MOISTURE SWELLING
     """
 
-    # A Ratios object.
+    # A :py:class:`~abaqus.Material.Ratios.Ratios` object.
     ratios: Ratios = Ratios(((),))
 
     def __init__(self, table: tuple):
@@ -47,7 +47,7 @@ class MoistureSwelling:
 
         Returns
         -------
-        A MoistureSwelling object.
+        A :py:class:`~abaqus.Material.Others.PoreFluidFlow.MoistureSwelling.MoistureSwelling.MoistureSwelling` object.
         """
         pass
 

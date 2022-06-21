@@ -149,7 +149,7 @@ class DisplayBodyOptions(DGDisplayBodyOptions):
         Parameters
         ----------
         options
-            A DisplayBodyOptions object from which values are to be copied. If other arguments are
+            A :py:class:`~abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions` object from which values are to be copied. If other arguments are
             also supplied to setValues, they will override the values in **options**. The default
             value is None.
         visibleEdges

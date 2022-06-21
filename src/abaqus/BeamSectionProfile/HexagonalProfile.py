@@ -47,7 +47,7 @@ class HexagonalProfile(Profile):
 
         Returns
         -------
-        A HexagonalProfile object.
+        A :py:class:`~abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile` object.
 
         Raises
         ------

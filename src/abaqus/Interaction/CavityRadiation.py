@@ -201,7 +201,7 @@ class CavityRadiation(Interaction):
     # should be created.
     createStepName: str = ""
 
-    # A RegionArray object specifying the surfaces for which radiation viewfactor control is
+    # A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the surfaces for which radiation viewfactor control is
     # being specified.
     surfaces: RegionArray = RegionArray()
 
@@ -210,15 +210,15 @@ class CavityRadiation(Interaction):
     # ignored when **surfaceReflection** = OFF.
     surfaceEmissivities: tuple = ()
 
-    # A ModelDot object specifying the rotation axis point. This argument applies only when
+    # A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying the rotation axis point. This argument applies only when
     # **cyclicSymmetry** = ON.
     cyclicRotPt: ModelDot = ModelDot()
 
-    # A ModelDot object specifying the rotation axis end point. This argument applies only for
+    # A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying the rotation axis end point. This argument applies only for
     # three-dimensional models, and only when **cyclicSymmetry** = ON.
     cyclicRotEndPt: ModelDot = ModelDot()
 
-    # A ModelDot object specifying the symmetry axis end point. This argument applies only
+    # A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying the symmetry axis end point. This argument applies only
     # when **cyclicSymmetry** = ON.
     cyclicSymPt: ModelDot = ModelDot()
 
@@ -300,7 +300,7 @@ class CavityRadiation(Interaction):
             A String specifying the name of the step in which the cavity radiation interaction
             should be created.
         surfaces
-            A RegionArray object specifying the surfaces for which radiation viewfactor control is
+            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the surfaces for which radiation viewfactor control is
             being specified.
         surfaceEmissivities
             A sequence of Strings specifying the names of the Cavity Radiation properties containing
@@ -314,7 +314,7 @@ class CavityRadiation(Interaction):
             calculations. Possible values are BLOCKING_ALL, NO_BLOCKING, and PARTIAL_BLOCKING. The
             default value is BLOCKING_ALL.
         blockingSurfaces
-            A RegionArray object specifying the surfaces that provide blocking inside the cavity.
+            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the surfaces that provide blocking inside the cavity.
             This argument applies only when **blocking** = PARTIAL_BLOCKING.
         rangeOfView
             None or a Float specifying the maximum distance between surface facets at which
@@ -346,13 +346,13 @@ class CavityRadiation(Interaction):
             as a result of this symmetry. This argument applies only when **cyclicSymmetry** = ON. The
             default value is 2.
         cyclicRotPt
-            A ModelDot object specifying the rotation axis point. This argument applies only when
+            A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying the rotation axis point. This argument applies only when
             **cyclicSymmetry** = ON.
         cyclicRotEndPt
-            A ModelDot object specifying the rotation axis end point. This argument applies only for
+            A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying the rotation axis end point. This argument applies only for
             three-dimensional models, and only when **cyclicSymmetry** = ON.
         cyclicSymPt
-            A ModelDot object specifying the symmetry axis end point. This argument applies only
+            A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying the symmetry axis end point. This argument applies only
             when **cyclicSymmetry** = ON.
         periodicSymmetries
             An Int specifying the number of periodic symmetries that will be applied. The default
@@ -448,7 +448,7 @@ class CavityRadiation(Interaction):
 
         Returns
         -------
-        A CavityRadiation object.
+        A :py:class:`~abaqus.Interaction.CavityRadiation.CavityRadiation` object.
         """
         super().__init__()
         pass
@@ -509,7 +509,7 @@ class CavityRadiation(Interaction):
             calculations. Possible values are BLOCKING_ALL, NO_BLOCKING, and PARTIAL_BLOCKING. The
             default value is BLOCKING_ALL.
         blockingSurfaces
-            A RegionArray object specifying the surfaces that provide blocking inside the cavity.
+            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the surfaces that provide blocking inside the cavity.
             This argument applies only when **blocking** = PARTIAL_BLOCKING.
         rangeOfView
             None or a Float specifying the maximum distance between surface facets at which
@@ -541,13 +541,13 @@ class CavityRadiation(Interaction):
             as a result of this symmetry. This argument applies only when **cyclicSymmetry** = ON. The
             default value is 2.
         cyclicRotPt
-            A ModelDot object specifying the rotation axis point. This argument applies only when
+            A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying the rotation axis point. This argument applies only when
             **cyclicSymmetry** = ON.
         cyclicRotEndPt
-            A ModelDot object specifying the rotation axis end point. This argument applies only for
+            A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying the rotation axis end point. This argument applies only for
             three-dimensional models, and only when **cyclicSymmetry** = ON.
         cyclicSymPt
-            A ModelDot object specifying the symmetry axis end point. This argument applies only
+            A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying the symmetry axis end point. This argument applies only
             when **cyclicSymmetry** = ON.
         periodicSymmetries
             An Int specifying the number of periodic symmetries that will be applied. The default
@@ -664,7 +664,7 @@ class CavityRadiation(Interaction):
             calculations. Possible values are BLOCKING_ALL, NO_BLOCKING, and PARTIAL_BLOCKING. The
             default value is BLOCKING_ALL.
         blockingSurfaces
-            A RegionArray object specifying the surfaces that provide blocking inside the cavity.
+            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the surfaces that provide blocking inside the cavity.
             This argument applies only when **blocking** = PARTIAL_BLOCKING.
         rangeOfView
             None or a Float specifying the maximum distance between surface facets at which

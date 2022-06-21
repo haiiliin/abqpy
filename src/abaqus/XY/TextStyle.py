@@ -74,7 +74,7 @@ class TextStyle:
 
         Returns
         -------
-        A TextStyle object.
+        A :py:class:`~abaqus.XY.TextStyle.TextStyle` object.
 
         Raises
         ------

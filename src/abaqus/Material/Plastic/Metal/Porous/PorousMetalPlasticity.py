@@ -32,10 +32,10 @@ class PorousMetalPlasticity:
     - POROUS METAL PLASTICITY
     """
 
-    # A PorousFailureCriteria object.
+    # A :py:class:`~abaqus.Material.Plastic.Metal.Porous.PorousFailureCriteria.PorousFailureCriteria` object.
     porousFailureCriteria: PorousFailureCriteria = PorousFailureCriteria()
 
-    # A VoidNucleation object.
+    # A :py:class:`~abaqus.Material.Plastic.Metal.Porous.VoidNucleation.VoidNucleation` object.
     voidNucleation: VoidNucleation = VoidNucleation(((),))
 
     def __init__(
@@ -70,7 +70,7 @@ class PorousMetalPlasticity:
 
         Returns
         -------
-        A PorousMetalPlasticity object.
+        A :py:class:`~abaqus.Material.Plastic.Metal.Porous.PorousMetalPlasticity.PorousMetalPlasticity` object.
 
         Raises
         ------

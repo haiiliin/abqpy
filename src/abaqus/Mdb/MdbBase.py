@@ -67,14 +67,14 @@ class MdbBase:
         str, OptimizationProcess
     ]()
 
-    # A MeshEditOptions object specifying the undo/redo behavior when editing meshes on parts
+    # A :py:class:`~abaqus.EditMesh.MeshEditOptions.MeshEditOptions` object specifying the undo/redo behavior when editing meshes on parts
     # or part instances.
     meshEditOptions: MeshEditOptions = MeshEditOptions()
 
     # A repository of Model objects.
     models: dict[str, Model] = dict[str, Model]()
 
-    # A RepositorySupport object.
+    # A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` object.
     customData: RepositorySupport = RepositorySupport()
 
     # A repository of Annotation objects.
@@ -101,7 +101,7 @@ class MdbBase:
         Returns
         -------
         Mdb
-            A Mdb object
+            A :py:class:`~abaqus.Mdb.Mdb.Mdb` object
         """
         self.pathName = pathName
         self.models["Model-1"] = Model("Model-1")
@@ -128,7 +128,7 @@ class MdbBase:
         Returns
         -------
         Mdb
-            A Mdb object
+            A :py:class:`~abaqus.Mdb.Mdb.Mdb` object
         """
         pass
 
@@ -152,7 +152,7 @@ class MdbBase:
         Returns
         -------
         Mdb
-            A Mdb object
+            A :py:class:`~abaqus.Mdb.Mdb.Mdb` object
 
         Raises
         ------

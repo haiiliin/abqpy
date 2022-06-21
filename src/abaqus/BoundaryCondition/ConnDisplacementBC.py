@@ -86,7 +86,7 @@ class ConnDisplacementBC(BoundaryCondition):
     # are MECHANICAL and THERMAL.
     category: SymbolicConstant = None
 
-    # A Region object specifying the region to which the boundary condition is applied.
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
     region: Region = Region()
 
     # None or a DatumCsys object specifying the local coordinate system of the boundary
@@ -186,7 +186,7 @@ class ConnDisplacementBC(BoundaryCondition):
 
         Returns
         -------
-        A ConnDisplacementBC object.
+        A :py:class:`~abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC` object.
         """
         super().__init__()
         pass

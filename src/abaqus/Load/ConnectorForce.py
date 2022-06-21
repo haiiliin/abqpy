@@ -49,7 +49,7 @@ class ConnectorForce(Load):
     # specified, **fastenerName** must also be specified. The default value is an empty string.
     fastenerSetName: str = ""
 
-    # A Region object specifying the region to which the load is applied.
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
     def __init__(
@@ -110,7 +110,7 @@ class ConnectorForce(Load):
 
         Returns
         -------
-        A ConnectorForce object.
+        A :py:class:`~abaqus.Load.ConnectorForce.ConnectorForce` object.
         """
         super().__init__()
         pass

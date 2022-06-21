@@ -42,6 +42,6 @@ class AnalyticSurfaceSegment:
 
         Returns
         -------
-        An AnalyticSurfaceSegment object.
+        An :py:class:`~abaqus.Odb.AnalyticSurfaceSegment.AnalyticSurfaceSegment` object.
         """
         pass

@@ -72,7 +72,7 @@ class SubmodelBC(BoundaryCondition):
     # are MECHANICAL and THERMAL.
     category: SymbolicConstant = None
 
-    # A Region object specifying the region to which the boundary condition is applied.
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
     region: Region = Region()
 
     # None or a DatumCsys object specifying the local coordinate system of the boundary
@@ -113,7 +113,7 @@ class SubmodelBC(BoundaryCondition):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A Region object specifying the region to which the boundary condition is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
         dof
             A sequence of Ints specifying the degrees of freedom to which the boundary condition is
             applied.
@@ -155,7 +155,7 @@ class SubmodelBC(BoundaryCondition):
 
         Returns
         -------
-        A SubmodelBC object.
+        A :py:class:`~abaqus.BoundaryCondition.SubmodelBC.SubmodelBC` object.
         """
         super().__init__()
         pass

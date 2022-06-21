@@ -32,13 +32,13 @@ class BeadPenetrationCheck(GeometricRestriction):
         name
             A String specifying the geometric restriction repository key.
         beadPenetrationCheckRegion
-            A Region object specifying the penetration check region.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the penetration check region.
         region
-            A Region object specifying the region to which the geometric restriction is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
 
         Returns
         -------
-        A BeadPenetrationCheck object.
+        A :py:class:`~abaqus.Optimization.BeadPenetrationCheck.BeadPenetrationCheck` object.
         """
         super().__init__()
         pass

@@ -132,7 +132,7 @@ class ConnectorOptions:
 
         Returns
         -------
-        A ConnectorOptions object.
+        A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object.
 
         Raises
         ------

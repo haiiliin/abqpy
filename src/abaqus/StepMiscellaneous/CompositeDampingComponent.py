@@ -1,5 +1,5 @@
 class CompositeDampingComponent:
-    """A CompositeDampingComponent object is used to define composite damping over a range of
+    """A :py:class:`~abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent` object is used to define composite damping over a range of
     modes.
 
     Attributes

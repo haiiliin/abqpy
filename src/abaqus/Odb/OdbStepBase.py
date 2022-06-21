@@ -67,7 +67,7 @@ class OdbStepBase:
     # A Float specifying the current value of the mass of the acoustic media of the model.
     acousticMass: float = None
 
-    # An OdbFrameArray object.
+    # An :py:class:`~abaqus.Odb.OdbFrameArray.OdbFrameArray` object.
     frames: OdbFrameArray = OdbFrameArray()
 
     # A repository of HistoryRegion objects.
@@ -191,7 +191,7 @@ class OdbStepBase:
 
         Returns
         -------
-        An OdbStep object.
+        An :py:class:`~abaqus.Odb.OdbStep.OdbStep` object.
 
         Raises
         ------
@@ -220,7 +220,7 @@ class OdbStepBase:
 
         Returns
         -------
-        An OdbFrame object.
+        An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
 
         Raises
         ------
@@ -236,11 +236,11 @@ class OdbStepBase:
         Parameters
         ----------
         loadCase
-            An OdbLoadCase object specifying a load case in the step.
+            An :py:class:`~abaqus.Odb.OdbLoadCase.OdbLoadCase` object specifying a load case in the step.
 
         Returns
         -------
-        An OdbFrame object.
+        An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
 
         Raises
         ------
@@ -259,7 +259,7 @@ class OdbStepBase:
         Parameters
         ----------
         loadCase
-            An OdbLoadCase object specifying a load case in the step.
+            An :py:class:`~abaqus.Odb.OdbLoadCase.OdbLoadCase` object specifying a load case in the step.
         frameValue
             A Double specifying the value at which the frame is required. **frameValue** can be the
             step time or frequency.
@@ -273,7 +273,7 @@ class OdbStepBase:
 
         Returns
         -------
-        An OdbFrame object.
+        An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
 
         Raises
         ------
@@ -294,13 +294,13 @@ class OdbStepBase:
         Parameters
         ----------
         point
-            A HistoryPoint object specifying the point in the model.
+            A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object specifying the point in the model.
         loadCase
-            An OdbLoadCase object specifying a load case in the step.
+            An :py:class:`~abaqus.Odb.OdbLoadCase.OdbLoadCase` object specifying a load case in the step.
 
         Returns
         -------
-        A HistoryRegion object.
+        A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
 
         Raises
         ------
@@ -315,7 +315,7 @@ class OdbStepBase:
         Parameters
         ----------
         field
-            A FieldOutput object specifying the default deformed field variable for visualization.
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object specifying the default deformed field variable for visualization.
         """
         pass
 
@@ -325,6 +325,6 @@ class OdbStepBase:
         Parameters
         ----------
         field
-            A FieldOutput object specifying the default field variable for visualization.
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object specifying the default field variable for visualization.
         """
         pass

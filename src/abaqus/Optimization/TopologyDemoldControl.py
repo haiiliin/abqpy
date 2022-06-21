@@ -44,7 +44,7 @@ class TopologyDemoldControl(GeometricRestriction):
         name
             A String specifying the geometric restriction repository key.
         region
-            A Region object specifying the region to which the geometric restriction is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         csys
@@ -59,10 +59,10 @@ class TopologyDemoldControl(GeometricRestriction):
             region. If the value is DEMOLD_REGION, then the value of **region** is used as both the
             demold region and the collision check region. The default value is DEMOLD_REGION.
         pointRegion
-            A Region object specifying the point on a plane perpendicular to the pull direction,
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the point on a plane perpendicular to the pull direction,
             used to specify the central plane when **technique** is POINT.
         pullDirection
-            A VertexArray object of length 2 specifying the demold pull direction. Instead of
+            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the demold pull direction. Instead of
             through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates.
         technique
             A SymbolicConstant specifying the demold technique. Possible values are AUTO,
@@ -70,7 +70,7 @@ class TopologyDemoldControl(GeometricRestriction):
 
         Returns
         -------
-        A TopologyDemoldControl object.
+        A :py:class:`~abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl` object.
         """
         super().__init__()
         pass
@@ -100,10 +100,10 @@ class TopologyDemoldControl(GeometricRestriction):
             region. If the value is DEMOLD_REGION, then the value of **region** is used as both the
             demold region and the collision check region. The default value is DEMOLD_REGION.
         pointRegion
-            A Region object specifying the point on a plane perpendicular to the pull direction,
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the point on a plane perpendicular to the pull direction,
             used to specify the central plane when **technique** is POINT.
         pullDirection
-            A VertexArray object of length 2 specifying the demold pull direction. Instead of
+            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the demold pull direction. Instead of
             through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates.
         technique
             A SymbolicConstant specifying the demold technique. Possible values are AUTO,

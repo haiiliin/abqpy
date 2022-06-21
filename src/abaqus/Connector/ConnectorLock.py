@@ -73,7 +73,7 @@ class ConnectorLock(ConnectorBehaviorOption):
 
         Returns
         -------
-        A ConnectorLock object.
+        A :py:class:`~abaqus.Connector.ConnectorLock.ConnectorLock` object.
 
         Raises
         ------

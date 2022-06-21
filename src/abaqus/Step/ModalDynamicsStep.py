@@ -162,19 +162,19 @@ class ModalDynamicsStep(AnalysisStep):
     # A String specifying a description of the new step. The default value is an empty string.
     description: str = ""
 
-    # A DirectDamping object.
+    # A :py:class:`~abaqus.StepMiscellaneous.DirectDamping.DirectDamping` object.
     directDamping: DirectDamping = DirectDamping()
 
-    # A CompositeDamping object.
+    # A :py:class:`~abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping` object.
     compositeDamping: CompositeDamping = CompositeDamping()
 
-    # A RayleighDamping object.
+    # A :py:class:`~abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping` object.
     rayleighDamping: RayleighDamping = RayleighDamping()
 
-    # A DirectDampingByFrequency object.
+    # A :py:class:`~abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency` object.
     directDampingByFrequency: DirectDampingByFrequency = DirectDampingByFrequency()
 
-    # A RayleighDampingByFrequency object.
+    # A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency` object.
     rayleighDampingByFrequency: RayleighDampingByFrequency = (
         RayleighDampingByFrequency()
     )
@@ -231,13 +231,13 @@ class ModalDynamicsStep(AnalysisStep):
         str, HistoryOutputRequestState
     ]()
 
-    # A DiagnosticPrint object.
+    # A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
-    # A Monitor object.
+    # A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
     monitor: Monitor = None
 
-    # A Restart object.
+    # A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
     restart: Restart = Restart()
 
     # A repository of AdaptiveMeshConstraintState objects.
@@ -248,10 +248,10 @@ class ModalDynamicsStep(AnalysisStep):
     # A repository of AdaptiveMeshDomain objects.
     adaptiveMeshDomains: dict[str, AdaptiveMeshDomain] = dict[str, AdaptiveMeshDomain]()
 
-    # A Control object.
+    # A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object.
     control: Control = Control()
 
-    # A SolverControl object.
+    # A :py:class:`~abaqus.StepMiscellaneous.SolverControl.SolverControl` object.
     solverControl: SolverControl = SolverControl()
 
     # A repository of BoundaryConditionState objects.
@@ -316,11 +316,11 @@ class ModalDynamicsStep(AnalysisStep):
         incSize
             A Float specifying the time increment to be used. The default value is 1.0.
         directDamping
-            A DirectDamping object.
+            A :py:class:`~abaqus.StepMiscellaneous.DirectDamping.DirectDamping` object.
         compositeDamping
-            A CompositeDamping object.
+            A :py:class:`~abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping` object.
         rayleighDamping
-            A RayleighDamping object.
+            A :py:class:`~abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping` object.
         amplitude
             A SymbolicConstant specifying the amplitude variation for loading magnitudes during the
             step. Possible values are STEP and RAMP. The default value is STEP.
@@ -328,13 +328,13 @@ class ModalDynamicsStep(AnalysisStep):
             A Boolean specifying whether to retain attributes from an existing step with the same
             name. The default value is False.
         directDampingByFrequency
-            A DirectDampingByFrequency object.
+            A :py:class:`~abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency` object.
         rayleighDampingByFrequency
-            A RayleighDampingByFrequency object.
+            A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency` object.
 
         Returns
         -------
-        A ModalDynamicsStep object.
+        A :py:class:`~abaqus.Step.ModalDynamicsStep.ModalDynamicsStep` object.
 
         Raises
         ------
@@ -370,18 +370,18 @@ class ModalDynamicsStep(AnalysisStep):
         incSize
             A Float specifying the time increment to be used. The default value is 1.0.
         directDamping
-            A DirectDamping object.
+            A :py:class:`~abaqus.StepMiscellaneous.DirectDamping.DirectDamping` object.
         compositeDamping
-            A CompositeDamping object.
+            A :py:class:`~abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping` object.
         rayleighDamping
-            A RayleighDamping object.
+            A :py:class:`~abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping` object.
         amplitude
             A SymbolicConstant specifying the amplitude variation for loading magnitudes during the
             step. Possible values are STEP and RAMP. The default value is STEP.
         directDampingByFrequency
-            A DirectDampingByFrequency object.
+            A :py:class:`~abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency` object.
         rayleighDampingByFrequency
-            A RayleighDampingByFrequency object.
+            A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency` object.
 
         Raises
         ------

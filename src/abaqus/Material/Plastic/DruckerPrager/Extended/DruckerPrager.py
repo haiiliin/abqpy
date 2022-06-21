@@ -57,16 +57,16 @@ class DruckerPrager:
     - DRUCKER PRAGER
     """
 
-    # A DruckerPragerCreep object.
+    # A :py:class:`~abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerCreep.DruckerPragerCreep` object.
     druckerPragerCreep: DruckerPragerCreep = DruckerPragerCreep(((),))
 
-    # A DruckerPragerHardening object.
+    # A :py:class:`~abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerHardening.DruckerPragerHardening` object.
     druckerPragerHardening: DruckerPragerHardening = DruckerPragerHardening(((),))
 
-    # A RateDependent object.
+    # A :py:class:`~abaqus.Material.Plastic.Metal.RateDependent.RateDependent.RateDependent` object.
     rateDependent: RateDependent = RateDependent(((),))
 
-    # A TriaxialTestData object.
+    # A :py:class:`~abaqus.Material.Plastic.DruckerPrager.Extended.TriaxialTestData.TriaxialTestData` object.
     triaxialTestData: TriaxialTestData = TriaxialTestData(((),))
 
     def __init__(
@@ -114,7 +114,7 @@ class DruckerPrager:
 
         Returns
         -------
-        A DruckerPrager object.
+        A :py:class:`~abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPrager.DruckerPrager` object.
 
         Raises
         ------

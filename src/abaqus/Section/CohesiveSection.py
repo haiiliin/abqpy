@@ -67,7 +67,7 @@ class CohesiveSection(Section):
 
         Returns
         -------
-        A CohesiveSection object.
+        A :py:class:`~abaqus.Section.CohesiveSection.CohesiveSection` object.
 
         Raises
         ------

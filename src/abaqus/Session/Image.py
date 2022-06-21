@@ -33,7 +33,7 @@ class Image:
 
         Returns
         -------
-        An Image object.
+        An :py:class:`~abaqus.Session.Image.Image` object.
 
         Raises
         ------
@@ -64,7 +64,7 @@ class Image:
 
         Returns
         -------
-        An Image object.
+        An :py:class:`~abaqus.Session.Image.Image` object.
 
         Raises
         ------

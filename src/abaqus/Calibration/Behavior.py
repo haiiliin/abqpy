@@ -63,7 +63,7 @@ class Behavior:
 
         Returns
         -------
-        A Behavior object.
+        A :py:class:`~abaqus.Calibration.Behavior.Behavior` object.
         """
         pass
 
@@ -199,7 +199,7 @@ class Behavior:
         Parameters
         ----------
         dataSet
-            A DataSet object.
+            A :py:class:`~abaqus.Calibration.DataSet.DataSet` object.
 
         Returns
         -------
@@ -215,7 +215,7 @@ class Behavior:
         Parameters
         ----------
         dataSet
-            A DataSet object.
+            A :py:class:`~abaqus.Calibration.DataSet.DataSet` object.
 
         Returns
         -------
@@ -231,7 +231,7 @@ class Behavior:
         Parameters
         ----------
         dataSet
-            A DataSet object.
+            A :py:class:`~abaqus.Calibration.DataSet.DataSet` object.
 
         Returns
         -------
@@ -268,7 +268,7 @@ class Behavior:
         Parameters
         ----------
         dataSet
-            A DataSet object.
+            A :py:class:`~abaqus.Calibration.DataSet.DataSet` object.
         slider_val
             A float specifying the number of values to be taken.
         start_index

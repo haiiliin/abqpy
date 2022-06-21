@@ -100,7 +100,7 @@ class LineStyle:
 
         Returns
         -------
-        A LineStyle object.
+        A :py:class:`~abaqus.XY.LineStyle.LineStyle` object.
 
         Raises
         ------

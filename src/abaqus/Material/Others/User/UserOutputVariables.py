@@ -37,7 +37,7 @@ class UserOutputVariables:
 
         Returns
         -------
-        A UserOutputVariables object.
+        A :py:class:`~abaqus.Material.Others.User.UserOutputVariables.UserOutputVariables` object.
 
         Raises
         ------

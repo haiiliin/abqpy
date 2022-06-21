@@ -48,7 +48,7 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-        An AcousticImpedanceProp object.
+        An :py:class:`~abaqus.Interaction.AcousticImpedanceProp.AcousticImpedanceProp` object.
         """
         self.interactionProperties[name] = interactionProperty = AcousticImpedanceProp(
             name, tableType, table, frequencyDependency
@@ -81,7 +81,7 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-        An ActuatorSensorProp object.
+        An :py:class:`~abaqus.Interaction.ActuatorSensorProp.ActuatorSensorProp` object.
         """
         self.interactionProperties[name] = interactionProperty = ActuatorSensorProp(
             name, realProperties, integerProperties
@@ -120,7 +120,7 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-        A CavityRadiationProp object.
+        A :py:class:`~abaqus.Interaction.CavityRadiationProp.CavityRadiationProp` object.
         """
         self.interactionProperties[name] = interactionProperty = CavityRadiationProp(
             name, temperatureDependency, dependencies, property
@@ -145,7 +145,7 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-        A ContactProperty object.
+        A :py:class:`~abaqus.Interaction.ContactProperty.ContactProperty` object.
         """
         self.interactionProperties[name] = interactionProperty = ContactProperty(name)
         return interactionProperty
@@ -186,7 +186,7 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-        A FilmConditionProp object.
+        A :py:class:`~abaqus.Interaction.FilmConditionProp.FilmConditionProp` object.
         """
         self.interactionProperties[name] = interactionProperty = FilmConditionProp(
             name, temperatureDependency, dependencies, property
@@ -324,7 +324,7 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-        A FluidCavityProperty object.
+        A :py:class:`~abaqus.Interaction.FluidCavityProperty.FluidCavityProperty` object.
         """
         self.interactionProperties[name] = interactionProperty = FluidCavityProperty(
             name,
@@ -440,7 +440,7 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-        A FluidExchangeProperty object.
+        A :py:class:`~abaqus.Interaction.FluidExchangeProperty.FluidExchangeProperty` object.
         """
         self.interactionProperties[name] = interactionProperty = FluidExchangeProperty(
             name,
@@ -619,7 +619,7 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-        An IncidentWaveProperty object.
+        An :py:class:`~abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty` object.
         """
         self.interactionProperties[name] = interactionProperty = IncidentWaveProperty(
             name,

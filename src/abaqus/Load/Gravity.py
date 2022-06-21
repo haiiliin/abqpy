@@ -45,7 +45,7 @@ class Gravity(Load):
     # empty string.
     field: str = ""
 
-    # A Region object specifying the region to which the load is applied.
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
     def __init__(
@@ -84,7 +84,7 @@ class Gravity(Load):
             The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         region
-            A Region object specifying the region to which the load is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
         comp1
             A Float or a Complex specifying the component of the load in the
             1-direction.Note:Although **comp1**, **comp2**, and **comp3** are optional arguments, at least
@@ -100,7 +100,7 @@ class Gravity(Load):
 
         Returns
         -------
-        A Gravity object.
+        A :py:class:`~abaqus.Load.Gravity.Gravity` object.
         """
         super().__init__()
         pass
@@ -128,7 +128,7 @@ class Gravity(Load):
             The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         region
-            A Region object specifying the region to which the load is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
         comp1
             A Float or a Complex specifying the component of the load in the
             1-direction.Note:Although **comp1**, **comp2**, and **comp3** are optional arguments, at least

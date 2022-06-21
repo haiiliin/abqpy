@@ -52,7 +52,7 @@ class JobFromInputFile(Job):
     # **message** member is empty, **status** is set to NONE.
     status: SymbolicConstant = None
 
-    # A MessageArray object specifying the messages received during an analysis.
+    # A :py:class:`~abaqus.Job.MessageArray.MessageArray` object specifying the messages received during an analysis.
     messages: MessageArray = MessageArray()
 
     # A tuple of Strings specifying the environment variables and their values.
@@ -166,7 +166,7 @@ class JobFromInputFile(Job):
 
         Returns
         -------
-        A JobFromInputFile object.
+        A :py:class:`~abaqus.Job.JobFromInputFile.JobFromInputFile` object.
 
         Raises
         ------

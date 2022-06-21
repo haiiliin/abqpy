@@ -160,6 +160,6 @@ class ElemType:
         Returns
         -------
         elemType: ElemType
-            An ElemType object
+            An :py:class:`~abaqus.Mesh.ElemType.ElemType` object
         """
         pass

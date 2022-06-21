@@ -61,7 +61,7 @@ class InputFile:
 
         Returns
         -------
-        An InputFile object.
+        An :py:class:`~abaqus.InputFileParser.InputFile.InputFile` object.
         """
         pass
 

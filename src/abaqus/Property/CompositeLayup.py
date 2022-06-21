@@ -38,13 +38,13 @@ class CompositeLayup:
             - SOLID SECTION
     """
 
-    # A GeometryShellSection object.
+    # A :py:class:`~abaqus.Section.GeometryShellSection.GeometryShellSection` object.
     section: GeometryShellSection = GeometryShellSection()
 
-    # A MaterialOrientation object.
+    # A :py:class:`~abaqus.Property.MaterialOrientation.MaterialOrientation` object.
     orientation: MaterialOrientation = MaterialOrientation(Set(''))
 
-    # A CompositePlyArray object specifying the plies that make up this composite layup.
+    # A :py:class:`~abaqus.Property.CompositePlyArray.CompositePlyArray` object specifying the plies that make up this composite layup.
     plies: CompositePlyArray = CompositePlyArray()
 
     def __init__(
@@ -93,7 +93,7 @@ class CompositeLayup:
 
         Returns
         -------
-        A CompositeLayup object.
+        A :py:class:`~abaqus.Property.CompositeLayup.CompositeLayup` object.
 
         Raises
         ------
@@ -180,7 +180,7 @@ class CompositeLayup:
         thickness
             A Float specifying the thickness of the section layer.
         region
-            A Region object specifying the region to which the composite ply applies.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the composite ply applies.
         material
             A String specifying the name of the material for the ply.
         plyName
@@ -234,7 +234,7 @@ class CompositeLayup:
 
         Returns
         -------
-        A CompositePly object.
+        A :py:class:`~abaqus.Property.CompositePly.CompositePly` object.
 
         Raises
         ------
@@ -294,7 +294,7 @@ class CompositeLayup:
         name
             A String specifying the repository key.
         layup
-            A SectionLayerArray object specifying the shell cross-section.
+            A :py:class:`~abaqus.Section.SectionLayerArray.SectionLayerArray` object specifying the shell cross-section.
         symmetric
             A Boolean specifying whether or not the layup should be made symmetric by the analysis.
             The default value is OFF.
@@ -356,7 +356,7 @@ class CompositeLayup:
 
         Returns
         -------
-        A CompositeShellSection object.
+        A :py:class:`~abaqus.Section.CompositeShellSection.CompositeShellSection` object.
         """
         self.section = compositeShellSection = CompositeShellSection(
             name,
@@ -456,7 +456,7 @@ class CompositeLayup:
 
         Returns
         -------
-        A GeometryShellSection object.
+        A :py:class:`~abaqus.Section.GeometryShellSection.GeometryShellSection` object.
         """
         self.section = geometryShellSection = GeometryShellSection(
             nodalThicknessField,
@@ -573,7 +573,7 @@ class CompositeLayup:
 
         Returns
         -------
-        A HomogeneousShellSection object.
+        A :py:class:`~abaqus.Section.HomogeneousShellSection.HomogeneousShellSection` object.
         """
         self.section[name] = homogeneousShellSection = HomogeneousShellSection(
             name,

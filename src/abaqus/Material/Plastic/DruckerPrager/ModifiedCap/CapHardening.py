@@ -54,7 +54,7 @@ class CapHardening:
 
         Returns
         -------
-        A CapHardening object.
+        A :py:class:`~abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapHardening.CapHardening` object.
 
         Raises
         ------

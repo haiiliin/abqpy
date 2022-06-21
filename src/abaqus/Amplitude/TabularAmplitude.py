@@ -31,7 +31,7 @@ class TabularAmplitude(Amplitude):
     - AMPLITUDE
     """
 
-    # A BaselineCorrection object.
+    # A :py:class:`~abaqus.Amplitude.BaselineCorrection.BaselineCorrection` object.
     baselineCorrection: BaselineCorrection = BaselineCorrection()
 
     def __init__(
@@ -70,7 +70,7 @@ class TabularAmplitude(Amplitude):
 
         Returns
         -------
-        A TabularAmplitude object.
+        A :py:class:`~abaqus.Amplitude.TabularAmplitude.TabularAmplitude` object.
 
         Raises
         ------

@@ -22,13 +22,13 @@ class TangentConstraint(ConstrainedSketchConstraint):
         Parameters
         ----------
         entity1
-            A ConstrainedSketchGeometry object specifying the first object.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the first object.
         entity2
-            A ConstrainedSketchGeometry object specifying the second object.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the second object.
 
         Returns
         -------
-        A ConstrainedSketchConstraint object.
+        A :py:class:`~abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint` object.
 
         """
         pass

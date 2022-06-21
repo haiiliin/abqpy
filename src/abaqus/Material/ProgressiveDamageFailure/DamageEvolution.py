@@ -226,7 +226,7 @@ class DamageEvolution:
 
         Returns
         -------
-        A DamageEvolution object. 
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageEvolution.DamageEvolution` object. 
 
         Raises
         ------

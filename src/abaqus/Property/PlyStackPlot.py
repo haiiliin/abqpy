@@ -33,13 +33,13 @@ def MdbPlyStackPlot(part: Part, region: Region):
     Parameters
     ----------
     part
-        A Part object.
+        A :py:class:`~abaqus.Part.Part.Part` object.
     region
-        A Region object which contains a composite shell layup.
+        A :py:class:`~abaqus.Region.Region.Region` object which contains a composite shell layup.
 
     Returns
     -------
-        A PlyStackPlot object.
+        A :py:class:`~abaqus.Property.PlyStackPlot.PlyStackPlot` object.
 
     Exceptions
     ----------
@@ -63,7 +63,7 @@ def OdbPlyStackPlot(odb: Odb, sectionName: str, offset: float = 0):
     Parameters
     ----------
     odb
-        An Odb object.
+        An :py:class:`~abaqus.Odb.Odb.Odb` object.
     sectionName
         A String specifying the section name that contains a composite shell section.
     offset
@@ -71,7 +71,7 @@ def OdbPlyStackPlot(odb: Odb, sectionName: str, offset: float = 0):
 
     Returns
     -------
-        A PlyStackPlot object.
+        A :py:class:`~abaqus.Property.PlyStackPlot.PlyStackPlot` object.
 
     Exceptions
     ----------

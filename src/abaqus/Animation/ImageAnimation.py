@@ -43,7 +43,7 @@ class ImageAnimation:
 
         Returns
         -------
-        An ImageAnimation object.
+        An :py:class:`~abaqus.Animation.ImageAnimation.ImageAnimation` object.
         """
         pass
 

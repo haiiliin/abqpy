@@ -67,7 +67,7 @@ class StdStabilization(ContactStabilization):
 
         Returns
         -------
-        A StdStabilization object.
+        A :py:class:`~abaqus.Interaction.StdStabilization.StdStabilization` object.
 
         Raises
         ------

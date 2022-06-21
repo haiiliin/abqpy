@@ -65,7 +65,7 @@ class FluidLeakoff:
 
         Returns
         -------
-        A FluidLeakoff object.
+        A :py:class:`~abaqus.Material.Others.PoreFluidFlow.FluidLeakoff.FluidLeakoff` object.
         """
         pass
 

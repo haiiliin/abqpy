@@ -49,6 +49,6 @@ class FreeBodyReportOptions:
 
         Returns
         -------
-        A FreeBodyReportOptions object.
+        A :py:class:`~abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions` object.
         """
         pass

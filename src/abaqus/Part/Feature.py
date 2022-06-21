@@ -39,7 +39,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -68,7 +68,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -87,12 +87,12 @@ class Feature(BaseFeature):
         Parameters
         ----------
         sketch
-            A ConstrainedSketch object specifying the planar wire.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the planar wire.
 
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -111,14 +111,14 @@ class Feature(BaseFeature):
         Parameters
         ----------
         sketch
-            A ConstrainedSketch object specifying the planar wire.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the planar wire.
         depth
             A Float specifying the extrusion depth. The default value is 1.0.
 
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -137,12 +137,12 @@ class Feature(BaseFeature):
         Parameters
         ----------
         sketch
-            A ConstrainedSketch object specifying the surface to be revolved.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the surface to be revolved.
 
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -169,7 +169,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -195,7 +195,7 @@ class Feature(BaseFeature):
         Parameters
         ----------
         sketch
-            A ConstrainedSketch object specifying the plane shape to be extruded.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the plane shape to be extruded.
         depth
             A Float specifying the extrusion depth. Possible values are 10-5 ≤≤ **depth** ≤≤ 105.
         draftAngle
@@ -214,7 +214,7 @@ class Feature(BaseFeature):
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
         """
         pass
 
@@ -243,7 +243,7 @@ class Feature(BaseFeature):
         Parameters
         ----------
         sketch
-            A ConstrainedSketch object specifying the shape to be revolved.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the shape to be revolved.
         angle
             A Float specifying the revolve angle in degrees. Possible values are 10-4 ≤≤ **angle** ≤≤
             360.Note:If **pitch** >>0, there is no upper limit for **angle**.
@@ -270,7 +270,7 @@ class Feature(BaseFeature):
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -296,14 +296,14 @@ class Feature(BaseFeature):
         Parameters
         ----------
         sketch
-            A ConstrainedSketch object specifying the profile to be swept.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the profile to be swept.
         path
-            A ConstrainedSketch object specifying the path of the sweep.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the path of the sweep.
 
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -322,12 +322,12 @@ class Feature(BaseFeature):
         Parameters
         ----------
         sketch
-            A ConstrainedSketch object specifying the planar shell.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the planar shell.
 
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -353,7 +353,7 @@ class Feature(BaseFeature):
         Parameters
         ----------
         sketch
-            A ConstrainedSketch object specifying the shape to be extruded.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the shape to be extruded.
         depth
             A Float specifying the extrusion depth. Possible values are Floats > 0.
         draftAngle
@@ -372,7 +372,7 @@ class Feature(BaseFeature):
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -405,7 +405,7 @@ class Feature(BaseFeature):
         Parameters
         ----------
         sketch
-            A ConstrainedSketch object specifying the shape to be revolved.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the shape to be revolved.
         angle
             A Float specifying the revolve angle in degrees. Possible values are 0 ≤≤ **angle** ≤≤
             360.Note:If **pitch** >> 0, there is no upper limit for **angle**.
@@ -433,7 +433,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -455,14 +455,14 @@ class Feature(BaseFeature):
         Parameters
         ----------
         sketch
-            A ConstrainedSketch object specifying the section to be swept.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the section to be swept.
         path
-            A ConstrainedSketch object specifying the path of the sweep.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the path of the sweep.
 
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -481,12 +481,12 @@ class Feature(BaseFeature):
         Parameters
         ----------
         sketch
-            A ConstrainedSketch object specifying the planar wire.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the planar wire.
 
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -524,13 +524,13 @@ class Feature(BaseFeature):
             between the two sides.SPECIFY_PATH: The blend connects the two sides along a specified
             path.
         path
-            An Edge object that connects **side1** to **side2** and specifies the path for creating the
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object that connects **side1** to **side2** and specifies the path for creating the
             blend. This argument is required if **method** = SPECIFY_PATH; otherwise, it is ignored.
 
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -556,7 +556,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -589,7 +589,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -608,7 +608,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -633,7 +633,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -660,7 +660,7 @@ class Feature(BaseFeature):
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -700,10 +700,10 @@ class Feature(BaseFeature):
             A SymbolicConstant specifying the direction of feature creation. Possible values are
             SIDE1 and SIDE2.
         sketchUpEdge
-            An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a Datum axis object specifying the vertical (*Y*) direction of the
             sketch.
         sketch
-            A ConstrainedSketch object specifying the planar cut.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the planar cut.
         sketchOrientation
             A SymbolicConstant specifying the orientation of **sketchUpEdge** on the sketch. Possible
             values are RIGHT, LEFT, TOP, and BOTTOM.
@@ -711,7 +711,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -750,13 +750,13 @@ class Feature(BaseFeature):
             A SymbolicConstant specifying the direction of feature creation. Possible values are
             SIDE1 and SIDE2.
         sketchUpEdge
-            An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a Datum axis object specifying the vertical (*Y*) direction of the
             sketch.
         sketchOrientation
             A SymbolicConstant specifying the orientation of **sketchUpEdge** on the sketch. Possible
             values are RIGHT, LEFT, TOP, and BOTTOM.
         sketch
-            A ConstrainedSketch object specifying the planar sketch to be extruded.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the planar sketch to be extruded.
         depth
             A Float specifying the extrusion depth. If **depth** is specified, the cut will be a blind
             cut. The default is to not specify a depth.
@@ -786,7 +786,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -860,7 +860,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -897,13 +897,13 @@ class Feature(BaseFeature):
             A SymbolicConstant specifying the direction of feature creation. Possible values are
             SIDE1 and SIDE2.
         sketchUpEdge
-            An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a Datum axis object specifying the vertical (*Y*) direction of the
             sketch.
         sketchOrientation
             A SymbolicConstant specifying the orientation of **sketchUpEdge** on the sketch. Possible
             values are RIGHT, LEFT, TOP, and BOTTOM.
         sketch
-            A ConstrainedSketch object specifying the planar sketch to be revolved.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the planar sketch to be revolved.
         angle
             A Float specifying the angle in degrees to be revolved.
         pitch
@@ -930,7 +930,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -976,7 +976,7 @@ class Feature(BaseFeature):
             A Datum plane object or a planar Face object. Only required when path is a
             ConstrainedSketch object.
         pathUpEdge
-            An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a Datum axis object specifying the vertical (*Y*) direction of the
             path sketch. Only required when path is a ConstrainedSketch object.
         pathOrientation
             A SymbolicConstant specifying the orientation of **pathUpEdge** on the sketch. Possible
@@ -988,7 +988,7 @@ class Feature(BaseFeature):
             ConstrainedSketch object, user may or may not give this as input. If user does not give
             this as input, the normal plane at the start of the path will be the sketchPlane.
         sketchUpEdge
-            An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a Datum axis object specifying the vertical (*Y*) direction of the
             profile sketch. Only required when profile is a ConstrainedSketch object.
         sketchOrientation
             A SymbolicConstant specifying the orientation of **sketchUpEdge** on the sketch. Possible
@@ -1021,7 +1021,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1072,7 +1072,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1097,7 +1097,7 @@ class Feature(BaseFeature):
         Parameters
         ----------
         elementFaces
-            A Region object specifying the collection of orphan element faces.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the collection of orphan element faces.
         stitch
             A Boolean specifying whether the created geometry face should be stitched with existing
             geometry faces. Default value is TRUE.
@@ -1117,7 +1117,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1155,11 +1155,11 @@ class Feature(BaseFeature):
         diameter
             A Float specifying the diameter of the hole.
         edge1
-            An Edge object specifying the edge from which **distance1** is measured.
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the edge from which **distance1** is measured.
         distance1
             A Float specifying the offset from **edge1**.
         edge2
-            An Edge object specifying the edge from which **distance2** is measured.
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the edge from which **distance2** is measured.
         distance2
             A Float specifying the offset from **edge2**.
         depth
@@ -1168,7 +1168,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1198,18 +1198,18 @@ class Feature(BaseFeature):
         diameter
             A Float specifying the diameter of the hole.
         edge1
-            An Edge object specifying the edge from which **distance1** is measured.
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the edge from which **distance1** is measured.
         distance1
             A Float specifying the offset from **edge1**.
         edge2
-            An Edge object specifying the edge from which **distance2** is measured.
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the edge from which **distance2** is measured.
         distance2
             A Float specifying the offset from **edge2**.
 
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1246,18 +1246,18 @@ class Feature(BaseFeature):
         diameter
             A Float specifying the diameter of the hole.
         edge1
-            An Edge object specifying the edge from which **distance1** is measured.
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the edge from which **distance1** is measured.
         distance1
             A Float specifying the offset from **edge1**.
         edge2
-            An Edge object specifying the edge from which **distance2** is measured.
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the edge from which **distance2** is measured.
         distance2
             A Float specifying the offset from **edge2**.
 
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1285,7 +1285,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1338,7 +1338,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1391,7 +1391,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1415,7 +1415,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1448,7 +1448,7 @@ class Feature(BaseFeature):
 
         Returns
         -------
-        A Feature object.
+        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -1479,7 +1479,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1504,7 +1504,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1526,7 +1526,7 @@ class Feature(BaseFeature):
         Parameters
         ----------
         face
-            A Face object specifying the face on which the sliver is located.
+            A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face on which the sliver is located.
         point1
             A point specifying the location for partition creation. It can be a ConstrainedSketchVertex object, an
             Interesting Point or three coordinates specifying the point on an edge of the **face**.
@@ -1540,7 +1540,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1568,7 +1568,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1596,7 +1596,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1623,7 +1623,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1655,7 +1655,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1687,10 +1687,10 @@ class Feature(BaseFeature):
             A SymbolicConstant specifying the direction of feature creation. Possible values are
             SIDE1 and SIDE2.
         sketchUpEdge
-            An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a Datum axis object specifying the vertical (*Y*) direction of the
             sketch.
         sketch
-            A ConstrainedSketch object specifying the planar shell.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the planar shell.
         sketchOrientation
             A SymbolicConstant specifying the orientation of **sketchUpEdge** on the sketch. Possible
             values are RIGHT, LEFT, TOP, and BOTTOM. The default value is RIGHT.
@@ -1698,7 +1698,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1736,10 +1736,10 @@ class Feature(BaseFeature):
             A SymbolicConstant specifying the direction of feature creation. Possible values are
             SIDE1 and SIDE2.
         sketchUpEdge
-            An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a Datum axis object specifying the vertical (*Y*) direction of the
             sketch.
         sketch
-            A ConstrainedSketch object specifying the planar sketch to be extruded.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the planar sketch to be extruded.
         depth
             A Float specifying the extrusion depth. The default is to not specify a depth. Either
             **depth** or **upToFace** must be used to define the extrusion depth.
@@ -1775,7 +1775,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1863,7 +1863,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1903,10 +1903,10 @@ class Feature(BaseFeature):
             A SymbolicConstant specifying the direction of feature creation. Possible values are
             SIDE1 and SIDE2.
         sketchUpEdge
-            An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a Datum axis object specifying the vertical (*Y*) direction of the
             sketch.
         sketch
-            A ConstrainedSketch object specifying the planar sketch to be revolved.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the planar sketch to be revolved.
         angle
             A Float specifying the angle in degrees to be revolved.
         sketchOrientation
@@ -1939,7 +1939,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1986,7 +1986,7 @@ class Feature(BaseFeature):
             A Datum plane object or a planar Face object. Only required when path is a
             ConstrainedSketch object.
         pathUpEdge
-            An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a Datum axis object specifying the vertical (*Y*) direction of the
             path sketch. Only required when path is a ConstrainedSketch object.
         pathOrientation
             A SymbolicConstant specifying the orientation of **pathUpEdge** on the sketch. Possible
@@ -1998,7 +1998,7 @@ class Feature(BaseFeature):
             ConstrainedSketch object, user may or may not give this as input. If user does not give
             this as input, the normal plane at the start of the path will be the sketchPlane.
         sketchUpEdge
-            An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a Datum axis object specifying the vertical (*Y*) direction of the
             profile sketch. Only required when profile is a ConstrainedSketch object.
         sketchOrientation
             A SymbolicConstant specifying the orientation of **sketchUpEdge** on the sketch. Possible
@@ -2034,7 +2034,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -2072,10 +2072,10 @@ class Feature(BaseFeature):
             A SymbolicConstant specifying the direction of feature creation. Possible values are
             SIDE1 and SIDE2.
         sketchUpEdge
-            An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a Datum axis object specifying the vertical (*Y*) direction of the
             sketch.
         sketch
-            A ConstrainedSketch object specifying the planar sketch to be extruded.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the planar sketch to be extruded.
         depth
             A Float specifying the extrusion depth. The default is to not specify a depth. Either
             **depth** or **upToFace** must be used to define the extrusion depth.
@@ -2111,7 +2111,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -2198,7 +2198,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -2237,10 +2237,10 @@ class Feature(BaseFeature):
             A SymbolicConstant specifying the direction of feature creation. Possible values are
             SIDE1 and SIDE2.
         sketchUpEdge
-            An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a Datum axis object specifying the vertical (*Y*) direction of the
             sketch.
         sketch
-            A ConstrainedSketch object specifying the planar sketch to be revolved.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the planar sketch to be revolved.
         angle
             A Float specifying the angle in degrees to be revolved.
         sketchOrientation
@@ -2273,7 +2273,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -2320,7 +2320,7 @@ class Feature(BaseFeature):
             A Datum plane object or a planar Face object. Only required when path is a
             ConstrainedSketch object.
         pathUpEdge
-            An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a Datum axis object specifying the vertical (*Y*) direction of the
             path sketch. Only required when path is a ConstrainedSketch object.
         pathOrientation
             A SymbolicConstant specifying the orientation of **pathUpEdge** on the sketch. Possible
@@ -2332,7 +2332,7 @@ class Feature(BaseFeature):
             ConstrainedSketch object, user may or may not give this as input. If user does not give
             this as input, the normal plane at the start of the path will be the sketchPlane.
         sketchUpEdge
-            An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a Datum axis object specifying the vertical (*Y*) direction of the
             profile sketch. Only required when profile is a ConstrainedSketch object.
         sketchOrientation
             A SymbolicConstant specifying the orientation of **sketchUpEdge** on the sketch. Possible
@@ -2368,7 +2368,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -2398,7 +2398,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -2430,10 +2430,10 @@ class Feature(BaseFeature):
             A SymbolicConstant specifying the direction of feature creation. Possible values are
             SIDE1 and SIDE2.
         sketchUpEdge
-            An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a Datum axis object specifying the vertical (*Y*) direction of the
             sketch.
         sketch
-            A ConstrainedSketch object specifying the planar sketch to be revolved.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the planar sketch to be revolved.
         sketchOrientation
             A SymbolicConstant specifying the orientation of **sketchUpEdge** on the sketch. Possible
             values are RIGHT, LEFT, TOP, and BOTTOM. The default value is RIGHT.
@@ -2441,7 +2441,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -2486,7 +2486,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -2529,7 +2529,7 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -2553,6 +2553,6 @@ class Feature(BaseFeature):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass

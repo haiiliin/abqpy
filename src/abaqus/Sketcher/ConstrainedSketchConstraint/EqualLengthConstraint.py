@@ -22,13 +22,13 @@ class EqualLengthConstraint(ConstrainedSketchConstraint):
         Parameters
         ----------
         entity1
-            A ConstrainedSketchGeometry object specifying the first line.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the first line.
         entity2
-            A ConstrainedSketchGeometry object specifying the second line.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the second line.
 
         Returns
         -------
-        A ConstrainedSketchConstraint object.
+        A :py:class:`~abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint` object.
 
         """
         pass

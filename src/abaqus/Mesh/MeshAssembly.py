@@ -15,7 +15,7 @@ from ..BasicGeometry.IgnoredVertex import IgnoredVertex
 
 
 class MeshAssembly(AssemblyBase):
-    """An Assembly object is a container for instances of parts. The Assembly object has no
+    """An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container for instances of parts. The Assembly object has no
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
     created.
 
@@ -38,7 +38,7 @@ class MeshAssembly(AssemblyBase):
         cells
             A sequence of Cell objects specifying regions where to assign the stack direction.
         referenceRegion
-            A Face object specifying the top side of the stack direction.
+            A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the top side of the stack direction.
         """
         pass
 
@@ -72,7 +72,7 @@ class MeshAssembly(AssemblyBase):
             A sequence of MeshEdge objects specifying the element edges to be associated with the
             geometric edge.
         node
-            A MeshNode object specifying the mesh node to be associated with the geometric vertex.
+            A :py:class:`~abaqus.Mesh.MeshNode.MeshNode` object specifying the mesh node to be associated with the geometric vertex.
         """
         pass
 
@@ -170,7 +170,7 @@ class MeshAssembly(AssemblyBase):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -254,7 +254,7 @@ class MeshAssembly(AssemblyBase):
         Parameters
         ----------
         cell
-            A Cell object specifying the geometric region where the mesh is to be generated. This
+            A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object specifying the geometric region where the mesh is to be generated. This
             argument is valid only for native part instances.
         numberOfLayers
             An Int specifying the number of layers to be generated along the extrusion vector.
@@ -308,7 +308,7 @@ class MeshAssembly(AssemblyBase):
         Parameters
         ----------
         cell
-            A Cell object specifying the geometric region where the mesh is to be generated. This
+            A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object specifying the geometric region where the mesh is to be generated. This
             argument is valid only for native part instances.
         geometrySourceSide
             A Region of Face objects specifying the geometric domain to be used as the source for
@@ -328,7 +328,7 @@ class MeshAssembly(AssemblyBase):
             A sequence of 2D MeshElement objects specifying connecting sides of the sweep meshing
             operation.
         targetSide
-            A Face object specifying the target side of the sweep meshing operation.
+            A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the target side of the sweep meshing operation.
         numberOfLayers
             An Int specifying the number of layers to be generated along the sweep direction.
         extendElementSets
@@ -355,7 +355,7 @@ class MeshAssembly(AssemblyBase):
         Parameters
         ----------
         cell
-            A Cell object specifying the geometric region where the mesh is to be generated. This
+            A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object specifying the geometric region where the mesh is to be generated. This
             argument is valid only for native part instances.
         numberOfLayers
             An Int specifying the number of layers of elements to be generated around the axis of
@@ -426,7 +426,7 @@ class MeshAssembly(AssemblyBase):
         Parameters
         ----------
         edge
-            An Edge object specifying the edge to be queried.
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the edge to be queried.
         attribute
             A SymbolicConstant specifying the type of edge seed attribute to return. Possible values
             are:
@@ -624,7 +624,7 @@ class MeshAssembly(AssemblyBase):
 
         Returns
         -------
-        A MeshStats object.
+        A :py:class:`~abaqus.Mesh.MeshStats.MeshStats` object.
         """
         pass
 
@@ -636,7 +636,7 @@ class MeshAssembly(AssemblyBase):
         Parameters
         ----------
         region
-            A PartInstance object specifying the part instance to be queried.
+            A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the part instance to be queried.
         attribute
             A SymbolicConstant specifying the type of part seed attribute to return. Possible values
             are:
@@ -676,7 +676,7 @@ class MeshAssembly(AssemblyBase):
 
         Returns
         -------
-        A Region object, or None.
+        A :py:class:`~abaqus.Region.Region.Region` object, or None.
         """
         pass
 
@@ -694,7 +694,7 @@ class MeshAssembly(AssemblyBase):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -711,7 +711,7 @@ class MeshAssembly(AssemblyBase):
         Returns
         -------
         feature: Feature
-            A Feature object
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object
         """
         pass
 
@@ -1032,7 +1032,7 @@ class MeshAssembly(AssemblyBase):
         region
             A sweepable region.
         edge
-            An Edge object specifying the sweep or revolve path.
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the sweep or revolve path.
         sense
             A SymbolicConstant specifying the sweep sense. The sense will affect only how gasket
             elements will be created; it will have no effect if gasket elements are not used.

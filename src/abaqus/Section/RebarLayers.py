@@ -43,11 +43,11 @@ class RebarLayers:
             A SymbolicConstant specifying the type of rebar geometry. Possible values are CONSTANT,
             ANGULAR, and LIFT_EQUATION.
         layerTable
-            A LayerPropertiesArray object specifying the layers of reinforcement.
+            A :py:class:`~abaqus.Section.LayerPropertiesArray.LayerPropertiesArray` object specifying the layers of reinforcement.
 
         Returns
         -------
-        A RebarLayers object.
+        A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object.
         """
         pass
 

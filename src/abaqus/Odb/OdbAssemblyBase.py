@@ -64,25 +64,25 @@ class OdbAssemblyBase:
     # A repository of OdbSet objects specifying surfaces.
     surfaces: dict[str, OdbSet] = dict[str, OdbSet]()
 
-    # An OdbMeshNodeArray object.
+    # An :py:class:`~abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray` object.
     nodes: OdbMeshNodeArray = OdbMeshNodeArray()
 
-    # An OdbMeshElementArray object.
+    # An :py:class:`~abaqus.Odb.OdbMeshElementArray.OdbMeshElementArray` object.
     elements: OdbMeshElementArray = OdbMeshElementArray()
 
     # A repository of OdbDatumCsys objects.
     datumCsyses: dict[str, OdbDatumCsys] = dict[str, OdbDatumCsys]()
 
-    # A SectionAssignmentArray object.
+    # A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
     sectionAssignments: SectionAssignmentArray = SectionAssignmentArray()
 
-    # An OdbRigidBodyArray object.
+    # An :py:class:`~abaqus.Odb.OdbRigidBodyArray.OdbRigidBodyArray` object.
     rigidBodies: OdbRigidBodyArray = OdbRigidBodyArray()
 
-    # An OdbPretensionSectionArray object.
+    # An :py:class:`~abaqus.Odb.OdbPretensionSectionArray.OdbPretensionSectionArray` object.
     pretensionSections: OdbPretensionSectionArray = OdbPretensionSectionArray()
 
-    # A ConnectorOrientationArray object.
+    # A :py:class:`~abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientationArray` object.
     connectorOrientations: ConnectorOrientationArray = ConnectorOrientationArray()
 
     def ConnectorOrientation(
@@ -103,7 +103,7 @@ class OdbAssemblyBase:
         region
             An OdbSet specifying a region.
         localCsys1
-            An OdbDatumCsys object specifying the first connector node local coordinate system or
+            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object specifying the first connector node local coordinate system or
             None, indicating the global coordinate system.
         axis1
             A SymbolicConstant specifying the axis of a cylindrical or spherical datum coordinate
@@ -116,7 +116,7 @@ class OdbAssemblyBase:
             A Boolean specifying whether the same orientation settings should be used for the second
             node of the connector. The default value is OFF.
         localCsys2
-            An OdbDatumCsys object specifying the second connector node local coordinate system or
+            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object specifying the second connector node local coordinate system or
             None, indicating the global coordinate system.
         axis2
             A SymbolicConstant specifying the axis of a cylindrical or spherical datum coordinate
@@ -142,7 +142,7 @@ class OdbAssemblyBase:
         region
             An OdbSet specifying a region.
         section
-            A Section object.
+            A :py:class:`~abaqus.Section.Section.Section` object.
 
         Raises
         ------
@@ -182,7 +182,7 @@ class OdbAssemblyBase:
         elementSetName
             A String specifying a name for this element set. The default value is the empty string.
         sectionCategory
-            A SectionCategory object for this element set.
+            A :py:class:`~abaqus.Odb.SectionCategory.SectionCategory` object for this element set.
 
         Raises
         ------

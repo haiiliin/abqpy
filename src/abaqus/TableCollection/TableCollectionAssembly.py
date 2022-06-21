@@ -5,7 +5,7 @@ from ..Region.Region import Region
 
 
 class TableCollectionAssembly(AssemblyBase):
-    """An Assembly object is a container for instances of parts. The Assembly object has no
+    """An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container for instances of parts. The Assembly object has no
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
     created.
 
@@ -46,7 +46,7 @@ class TableCollectionAssembly(AssemblyBase):
         name
             A String specifying the key of the repository.
         elset
-            A Region object specifying the region containing the elements that will be activated
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region containing the elements that will be activated
             during the analysis.
         deformation
             A Boolean value specifying whether the elements that have not yet been activated will
@@ -61,7 +61,7 @@ class TableCollectionAssembly(AssemblyBase):
 
         Returns
         -------
-        An ElementProgressiveActivation object.
+        An :py:class:`~abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation` object.
 
         Raises
         ------

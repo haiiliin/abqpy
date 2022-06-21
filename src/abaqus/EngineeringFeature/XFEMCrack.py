@@ -66,13 +66,13 @@ class XFEMCrack(Crack):
         name
             A String specifying the repository key.
         crackDomain
-            A Region object specifying the region that contains the crack or is likely to contain
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region that contains the crack or is likely to contain
             the crack.
         allowCrackGrowth
             A Boolean specifying whether the crack is allowed to propagate (grow). The default value
             is ON.
         crackLocation
-            A Region object specifying the initial crack location. This parameter is required when
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the initial crack location. This parameter is required when
             *allowCrackGrowth*=OFF.
         singularityCalcRadius
             None or a Float specifying the radius from the crack tips within which the elements are
@@ -104,7 +104,7 @@ class XFEMCrack(Crack):
 
         Returns
         -------
-        A XFEMCrack object.
+        A :py:class:`~abaqus.EngineeringFeature.XFEMCrack.XFEMCrack` object.
         """
         super().__init__()
         pass
@@ -130,7 +130,7 @@ class XFEMCrack(Crack):
             A Boolean specifying whether the crack is allowed to propagate (grow). The default value
             is ON.
         crackLocation
-            A Region object specifying the initial crack location. This parameter is required when
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the initial crack location. This parameter is required when
             *allowCrackGrowth*=OFF.
         singularityCalcRadius
             None or a Float specifying the radius from the crack tips within which the elements are

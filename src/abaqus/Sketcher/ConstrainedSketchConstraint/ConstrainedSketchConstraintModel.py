@@ -6,7 +6,7 @@ from ...BasicGeometry.Vertex import Vertex
 
 
 class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
-    """A ConstrainedSketch object contains the entities that are used to create a sketch. The
+    """A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object contains the entities that are used to create a sketch. The
     objects include ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository,
     such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are
     contained in their respective repositories.
@@ -39,14 +39,14 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         Parameters
         ----------
         entity1
-            A ConstrainedSketchGeometry object or a ConstrainedSketchVertex object specifying the first object.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object or a ConstrainedSketchVertex object specifying the first object.
         entity2
-            A ConstrainedSketchGeometry object or a ConstrainedSketchVertex object specifying the second object.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object or a ConstrainedSketchVertex object specifying the second object.
 
         Returns
         -------
         sketch: ConstrainedSketch
-            A ConstrainedSketch object
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
         """
         pass
 
@@ -69,16 +69,16 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         Parameters
         ----------
         entity1
-            A ConstrainedSketchGeometry object specifying the first arc, circle, ellipse, or sketch
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the first arc, circle, ellipse, or sketch
             vertex.
         entity2
-            A ConstrainedSketchGeometry object specifying the second arc, circle, ellipse, or sketch
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the second arc, circle, ellipse, or sketch
             vertex.
 
         Returns
         -------
         sketch: ConstrainedSketch
-            A ConstrainedSketch object
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
         """
         pass
 
@@ -99,14 +99,14 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         Parameters
         ----------
         entity1
-            A ConstrainedSketchGeometry object specifying the first line.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the first line.
         entity2
-            A ConstrainedSketchGeometry object specifying the second line.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the second line.
 
         Returns
         -------
         sketch: ConstrainedSketch
-            A ConstrainedSketch object
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
         """
         pass
 
@@ -125,14 +125,14 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         Parameters
         ----------
         entity1
-            A ConstrainedSketchGeometry object specifying the first arc or circle.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the first arc or circle.
         entity2
             A ConstrainedSketchGeometry specifying the second arc or circle.
 
         Returns
         -------
         sketch: ConstrainedSketch
-            A ConstrainedSketch object
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
         """
         pass
 
@@ -152,13 +152,13 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         Parameters
         ----------
         entity
-            A ConstrainedSketchGeometry object or a ConstrainedSketchVertex object specifying the item to fix in
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object or a ConstrainedSketchVertex object specifying the item to fix in
             space.
 
         Returns
         -------
         sketch: ConstrainedSketch
-            A ConstrainedSketch object
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
         """
         pass
 
@@ -177,12 +177,12 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         Parameters
         ----------
         entity
-            A ConstrainedSketchGeometry object specifying the line to constrain.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the line to constrain.
 
         Returns
         -------
         sketch: ConstrainedSketch
-            A ConstrainedSketch object
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
         """
         pass
 
@@ -201,12 +201,12 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         Parameters
         ----------
         entity
-            A ConstrainedSketchGeometry object specifying the line to constrain.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the line to constrain.
 
         Returns
         -------
         sketch: ConstrainedSketch
-            A ConstrainedSketch object
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
         """
         pass
 
@@ -227,14 +227,14 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         Parameters
         ----------
         entity1
-            A ConstrainedSketchGeometry object specifying the first line.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the first line.
         entity2
-            A ConstrainedSketchGeometry object specifying the second line.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the second line.
 
         Returns
         -------
         sketch: ConstrainedSketch
-            A ConstrainedSketch object
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
         """
         pass
 
@@ -256,14 +256,14 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         Parameters
         ----------
         entity1
-            A ConstrainedSketchGeometry object specifying the first object.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the first object.
         entity2
-            A ConstrainedSketchGeometry object specifying the second object.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the second object.
 
         Returns
         -------
         sketch: ConstrainedSketch
-            A ConstrainedSketch object
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
         """
         pass
 
@@ -290,15 +290,15 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         entity1
             AConstrainedSketchGeometry object specifying the first line or ConstrainedSketchVertex object.
         entity2
-            A ConstrainedSketchGeometry object specifying the second line or ConstrainedSketchVertex object.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the second line or ConstrainedSketchVertex object.
         midpoint
-            A ConstrainedSketchVertex object specifying the vertex that will be positioned an equal distance from
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object specifying the vertex that will be positioned an equal distance from
             **entity1** and **entity2**.
 
         Returns
         -------
         sketch: ConstrainedSketch
-            A ConstrainedSketch object
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
         """
         pass
 
@@ -319,13 +319,13 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         Parameters
         ----------
         entity1
-            A ConstrainedSketchGeometry object specifying the first object.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the first object.
         entity2
-            A ConstrainedSketchGeometry object specifying the second object.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the second object.
 
         Returns
         -------
         sketch: ConstrainedSketch
-            A ConstrainedSketch object
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
         """
         pass

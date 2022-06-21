@@ -59,17 +59,17 @@ class Legend:
     # value is OFF.
     showMinMax: Boolean = OFF
 
-    # An Area object specifying the area of the legend.
+    # An :py:class:`~abaqus.XY.Area.Area` object specifying the area of the legend.
     area: Area = Area()
 
-    # A TextStyle object specifying the text properties used to display the legend text.
+    # A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties used to display the legend text.
     textStyle: TextStyle = TextStyle()
 
     # A String specifying the title to appear on the legend. The default value is an empty
     # string.
     title: str = ""
 
-    # A TextStyle object specifying the text properties used to display the legend title.
+    # A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties used to display the legend title.
     titleStyle: TextStyle = TextStyle()
 
     def setValues(
@@ -88,7 +88,7 @@ class Legend:
         Parameters
         ----------
         legend
-            A Legend object from which attributes are to be copied.
+            A :py:class:`~abaqus.XY.Legend.Legend` object from which attributes are to be copied.
         show
             A Boolean specifying whether to show the legend. The default value is ON.
         showMinMax
@@ -105,8 +105,8 @@ class Legend:
             An Int specifying the number of significant digits displayed for the minimum and maximum
             values. Possible values are 1 to 7. The default value is 2.
         textStyle
-            A TextStyle object specifying the text properties used to display the legend text.
+            A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties used to display the legend text.
         titleStyle
-            A TextStyle object specifying the text properties used to display the legend title.
+            A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties used to display the legend title.
         """
         pass

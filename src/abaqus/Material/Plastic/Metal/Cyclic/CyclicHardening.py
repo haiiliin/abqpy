@@ -63,7 +63,7 @@ class CyclicHardening:
 
         Returns
         -------
-        A CyclicHardening object.
+        A :py:class:`~abaqus.Material.Plastic.Metal.Cyclic.CyclicHardening.CyclicHardening` object.
         """
         pass
 

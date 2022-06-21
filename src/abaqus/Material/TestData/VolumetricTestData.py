@@ -85,7 +85,7 @@ class VolumetricTestData:
 
         Returns
         -------
-        A VolumetricTestData object.
+        A :py:class:`~abaqus.Material.TestData.VolumetricTestData.VolumetricTestData` object.
         """
         pass
 

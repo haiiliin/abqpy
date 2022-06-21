@@ -28,7 +28,7 @@ class EllipseByCenterPerimeter(ConstrainedSketchGeometry):
 
         Returns
         -------
-        A ConstrainedSketchGeometry object (None if the ellipse cannot be created).
+        A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the ellipse cannot be created).
 
         """
         pass

@@ -85,10 +85,10 @@ class OdbInstanceBase:
     # instance has been changed at this frame.The default value is PROPAGATED.
     resultState: SymbolicConstant = PROPAGATED
 
-    # An OdbMeshNodeArray object.
+    # An :py:class:`~abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray` object.
     nodes: OdbMeshNodeArray = OdbMeshNodeArray()
 
-    # An OdbMeshElementArray object.
+    # An :py:class:`~abaqus.Odb.OdbMeshElementArray.OdbMeshElementArray` object.
     elements: OdbMeshElementArray = OdbMeshElementArray()
 
     # A repository of OdbSet objects specifying node sets.
@@ -100,22 +100,22 @@ class OdbInstanceBase:
     # A repository of OdbSet objects specifying surfaces.
     surfaces: dict[str, OdbSet] = dict[str, OdbSet]()
 
-    # A SectionAssignmentArray object.
+    # A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
     sectionAssignments: SectionAssignmentArray = SectionAssignmentArray()
 
-    # An OdbRigidBodyArray object.
+    # An :py:class:`~abaqus.Odb.OdbRigidBodyArray.OdbRigidBodyArray` object.
     rigidBodies: OdbRigidBodyArray = OdbRigidBodyArray()
 
-    # A BeamOrientationArray object.
+    # A :py:class:`~abaqus.Odb.BeamOrientationArray.BeamOrientationArray` object.
     beamOrientations: BeamOrientationArray = BeamOrientationArray()
 
-    # A MaterialOrientationArray object.
+    # A :py:class:`~abaqus.Property.MaterialOrientationArray.MaterialOrientationArray` object.
     materialOrientations: MaterialOrientationArray = MaterialOrientationArray()
 
-    # A RebarOrientationArray object.
+    # A :py:class:`~abaqus.Odb.RebarOrientationArray.RebarOrientationArray` object.
     rebarOrientations: RebarOrientationArray = RebarOrientationArray()
 
-    # An AnalyticSurface object specifying analytic Surface defined on the instance.
+    # An :py:class:`~abaqus.Odb.AnalyticSurface.AnalyticSurface` object specifying analytic Surface defined on the instance.
     analyticSurface: AnalyticSurface = AnalyticSurface()
 
     def __init__(self, name: str, object: OdbPart, localCoordSystem: tuple = ()):
@@ -134,7 +134,7 @@ class OdbInstanceBase:
         name
             A String specifying the instance name.
         object
-            An OdbPart object.
+            An :py:class:`~abaqus.Odb.OdbPart.OdbPart` object.
         localCoordSystem
             A sequence of sequences of three Floats specifying the rotation and translation of the
             part instance in the global Cartesian coordinate system. The first three sequences
@@ -150,7 +150,7 @@ class OdbInstanceBase:
 
         Returns
         -------
-        An OdbInstance object.
+        An :py:class:`~abaqus.Odb.OdbInstance.OdbInstance` object.
         """
         pass
 
@@ -187,7 +187,7 @@ class OdbInstanceBase:
         region
             An OdbSet specifying a region on an instance.
         localCsys
-            An OdbDatumCsys object specifying the local coordinate system or None, indicating the
+            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object specifying the local coordinate system or None, indicating the
             global coordinate system.
         axis
             A SymbolicConstant specifying the axis of a cylindrical or spherical datum coordinate
@@ -217,7 +217,7 @@ class OdbInstanceBase:
         region
             An OdbSet specifying a region on an instance.
         localCsys
-            An OdbDatumCsys object specifying the local coordinate system or None, indicating the
+            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object specifying the local coordinate system or None, indicating the
             global coordinate system.
         axis
             A SymbolicConstant specifying the axis of a cylindrical or spherical datum coordinate
@@ -240,7 +240,7 @@ class OdbInstanceBase:
 
         Returns
         -------
-        An OdbMeshElement object.
+        An :py:class:`~abaqus.Odb.OdbMeshElement.OdbMeshElement` object.
 
         Raises
         ------
@@ -276,7 +276,7 @@ class OdbInstanceBase:
         region
             An OdbSet specifying a region on an instance.
         section
-            A Section object.
+            A :py:class:`~abaqus.Section.Section.Section` object.
 
         Raises
         ------

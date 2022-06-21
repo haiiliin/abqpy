@@ -187,7 +187,7 @@ class SteadyStateSubspaceStep(AnalysisStep):
     # A String specifying a description of the new step. The default value is an empty string.
     description: str = ""
 
-    # A SteadyStateSubspaceFrequencyArray object.
+    # A :py:class:`~abaqus.StepMiscellaneous.SteadyStateSubspaceFrequencyArray.SteadyStateSubspaceFrequencyArray` object.
     frequencyRange: SteadyStateSubspaceFrequencyArray = (
         SteadyStateSubspaceFrequencyArray()
     )
@@ -244,13 +244,13 @@ class SteadyStateSubspaceStep(AnalysisStep):
         str, HistoryOutputRequestState
     ]()
 
-    # A DiagnosticPrint object.
+    # A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
-    # A Monitor object.
+    # A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
     monitor: Monitor = None
 
-    # A Restart object.
+    # A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
     restart: Restart = Restart()
 
     # A repository of AdaptiveMeshConstraintState objects.
@@ -261,10 +261,10 @@ class SteadyStateSubspaceStep(AnalysisStep):
     # A repository of AdaptiveMeshDomain objects.
     adaptiveMeshDomains: dict[str, AdaptiveMeshDomain] = dict[str, AdaptiveMeshDomain]()
 
-    # A Control object.
+    # A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object.
     control: Control = Control()
 
-    # A SolverControl object.
+    # A :py:class:`~abaqus.StepMiscellaneous.SolverControl.SolverControl` object.
     solverControl: SolverControl = SolverControl()
 
     # A repository of BoundaryConditionState objects.
@@ -320,7 +320,7 @@ class SteadyStateSubspaceStep(AnalysisStep):
             A String specifying the name of the previous step. The new step appears after this step
             in the list of analysis steps.
         frequencyRange
-            A SteadyStateSubspaceFrequencyArray object.
+            A :py:class:`~abaqus.StepMiscellaneous.SteadyStateSubspaceFrequencyArray.SteadyStateSubspaceFrequencyArray` object.
         description
             A String specifying a description of the new step. The default value is an empty string.
         factorization
@@ -355,7 +355,7 @@ class SteadyStateSubspaceStep(AnalysisStep):
 
         Returns
         -------
-        A SteadyStateSubspaceStep object.
+        A :py:class:`~abaqus.Step.SteadyStateSubspaceStep.SteadyStateSubspaceStep` object.
 
         Raises
         ------

@@ -36,7 +36,7 @@ class AdaptiveMeshDomain:
         Parameters
         ----------
         region
-            A Region object specifying the region to which the adaptive mesh domain is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the adaptive mesh domain is applied.
         controls
             A String specifying the name of an AdaptiveMeshControl object.
         frequency
@@ -51,7 +51,7 @@ class AdaptiveMeshDomain:
 
         Returns
         -------
-        An AdaptiveMeshDomain object.
+        An :py:class:`~abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain` object.
 
         Raises
         ------

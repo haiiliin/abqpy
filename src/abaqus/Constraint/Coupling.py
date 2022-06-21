@@ -66,9 +66,9 @@ class Coupling(Constraint):
         name
             A String specifying the constraint repository key.
         surface
-            A Region object specifying the surface on which the coupling nodes are located.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the surface on which the coupling nodes are located.
         controlPoint
-            A Region object specifying the constraint control point.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the constraint control point.
         influenceRadius
             The SymbolicConstant WHOLE_SURFACE or a Float specifying the influence radius.
         couplingType
@@ -114,7 +114,7 @@ class Coupling(Constraint):
 
         Returns
         -------
-        A Coupling object.
+        A :py:class:`~abaqus.Constraint.Coupling.Coupling` object.
         """
         super().__init__()
         pass

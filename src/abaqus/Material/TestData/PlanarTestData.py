@@ -77,7 +77,7 @@ class PlanarTestData:
 
         Returns
         -------
-        A PlanarTestData object.
+        A :py:class:`~abaqus.Material.TestData.PlanarTestData.PlanarTestData` object.
         """
         pass
 

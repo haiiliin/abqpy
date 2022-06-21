@@ -60,12 +60,12 @@ class AssembledFastener(Fastener):
         name
             A String specifying the repository key.
         region
-            A Region object specifying the region of attachment points to which assembled fasteners
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region of attachment points to which assembled fasteners
             are applied.
         templateModel
             A String specifying the name of the template model.
         controlSet
-            A Region object specifying the template model control point set. The set must contain a
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the template model control point set. The set must contain a
             single node or vertex.
         templateSurfaces
             A sequence of Strings specifying the names of the template model surfaces that are
@@ -91,7 +91,7 @@ class AssembledFastener(Fastener):
 
         Returns
         -------
-        An AssembledFastener object.
+        An :py:class:`~abaqus.EngineeringFeature.AssembledFastener.AssembledFastener` object.
         """
         super().__init__()
         pass

@@ -57,7 +57,7 @@ class FailStrain:
 
         Returns
         -------
-        A FailStrain object.
+        A :py:class:`~abaqus.Material.Elastic.Linear.FailStrain.FailStrain` object.
 
         Raises
         ------

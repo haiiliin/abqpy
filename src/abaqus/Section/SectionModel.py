@@ -65,7 +65,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        An AcousticInfiniteSection object.
+        An :py:class:`~abaqus.Section.AcousticInfiniteSection.AcousticInfiniteSection` object.
 
         Raises
         ------
@@ -101,7 +101,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        An AcousticInterfaceSection object.
+        An :py:class:`~abaqus.Section.AcousticInterfaceSection.AcousticInterfaceSection` object.
 
         Raises
         ------
@@ -245,7 +245,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A BeamSection object.
+        A :py:class:`~abaqus.Section.BeamSection.BeamSection` object.
         """
         self.sections[name] = section = BeamSection(
             name,
@@ -324,7 +324,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A CohesiveSection object.
+        A :py:class:`~abaqus.Section.CohesiveSection.CohesiveSection` object.
 
         Raises
         ------
@@ -377,7 +377,7 @@ class SectionModel(ModelBase):
         name
             A String specifying the repository key.
         layup
-            A SectionLayerArray object specifying the shell cross-section.
+            A :py:class:`~abaqus.Section.SectionLayerArray.SectionLayerArray` object specifying the shell cross-section.
         symmetric
             A Boolean specifying whether or not the layup should be made symmetric by the analysis.
             The default value is OFF.
@@ -439,7 +439,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A CompositeShellSection object.
+        A :py:class:`~abaqus.Section.CompositeShellSection.CompositeShellSection` object.
         """
         self.sections[name] = section = CompositeShellSection(
             name,
@@ -485,7 +485,7 @@ class SectionModel(ModelBase):
         name
             A String specifying the repository key.
         layup
-            A SectionLayerArray object specifying the solid cross-section.
+            A :py:class:`~abaqus.Section.SectionLayerArray.SectionLayerArray` object specifying the solid cross-section.
         symmetric
             A Boolean specifying whether or not the layup should be made symmetric by the analysis.
             The default value is OFF.
@@ -495,7 +495,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A CompositeSolidSection object.
+        A :py:class:`~abaqus.Section.CompositeSolidSection.CompositeSolidSection` object.
         """
         self.sections[name] = section = CompositeSolidSection(
             name, layup, symmetric, layupName
@@ -613,11 +613,11 @@ class SectionModel(ModelBase):
             data associated with the **behaviorOptions**. Possible values are CONSTANT and LINEAR. The
             default value is CONSTANT.
         behaviorOptions
-            A ConnectorBehaviorOptionArray object.
+            A :py:class:`~abaqus.Connector.ConnectorBehaviorOptionArray.ConnectorBehaviorOptionArray` object.
 
         Returns
         -------
-        A ConnectorSection object.
+        A :py:class:`~abaqus.Connector.ConnectorSection.ConnectorSection` object.
 
         Raises
         ------
@@ -669,7 +669,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        An EulerianSection object.
+        An :py:class:`~abaqus.Section.EulerianSection.EulerianSection` object.
         """
         self.sections[name] = section = EulerianSection(name, data)
         return section
@@ -722,7 +722,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A GasketSection object. and ValueError.
+        A :py:class:`~abaqus.Section.GasketSection.GasketSection` object. and ValueError.
         """
         self.sections[name] = section = GasketSection(
             name,
@@ -804,7 +804,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A GeneralStiffnessSection object.
+        A :py:class:`~abaqus.Section.GeneralStiffnessSection.GeneralStiffnessSection` object.
         """
         self.sections[name] = section = GeneralStiffnessSection(
             name,
@@ -923,7 +923,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A HomogeneousShellSection object.
+        A :py:class:`~abaqus.Section.HomogeneousShellSection.HomogeneousShellSection` object.
         """
         self.sections[name] = section = HomogeneousShellSection(
             name,
@@ -972,7 +972,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A HomogeneousSolidSection object.
+        A :py:class:`~abaqus.Section.HomogeneousSolidSection.HomogeneousSolidSection` object.
 
         Raises
         ------
@@ -1036,7 +1036,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A MembraneSection object.
+        A :py:class:`~abaqus.Section.MembraneSection.MembraneSection` object.
 
         Raises
         ------
@@ -1089,7 +1089,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A MPCSection object.
+        A :py:class:`~abaqus.Section.MPCSection.MPCSection` object.
 
         Raises
         ------
@@ -1135,7 +1135,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A PEGSection object.
+        A :py:class:`~abaqus.Section.PEGSection.PEGSection` object.
 
         Raises
         ------
@@ -1174,7 +1174,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A SurfaceSection object.
+        A :py:class:`~abaqus.Section.SurfaceSection.SurfaceSection` object.
 
         Raises
         ------
@@ -1207,7 +1207,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A TrussSection object.
+        A :py:class:`~abaqus.Section.TrussSection.TrussSection` object.
 
         Raises
         ------

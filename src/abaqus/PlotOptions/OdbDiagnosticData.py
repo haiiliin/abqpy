@@ -57,10 +57,10 @@ class OdbDiagnosticData:
     # A repository of OdbDiagnosticStep objects.
     steps: dict[str, OdbDiagnosticStep] = dict[str, OdbDiagnosticStep]()
 
-    # An OdbJobTime object.
+    # An :py:class:`~abaqus.PlotOptions.OdbJobTime.OdbJobTime` object.
     jobTime: OdbJobTime = OdbJobTime()
 
-    # An OdbNumericalProblemSummary object.
+    # An :py:class:`~abaqus.PlotOptions.OdbNumericalProblemSummary.OdbNumericalProblemSummary` object.
     numericalProblemSummary: OdbNumericalProblemSummary = OdbNumericalProblemSummary()
 
     # A boolean specifying whether or not double precision is used for the analysis. This

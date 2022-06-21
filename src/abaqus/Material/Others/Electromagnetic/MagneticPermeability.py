@@ -121,7 +121,7 @@ class MagneticPermeability:
 
         Returns
         -------
-        A MagneticPermeability object.
+        A :py:class:`~abaqus.Material.Others.Electromagnetic.MagneticPermeability.MagneticPermeability` object.
 
         Raises
         ------

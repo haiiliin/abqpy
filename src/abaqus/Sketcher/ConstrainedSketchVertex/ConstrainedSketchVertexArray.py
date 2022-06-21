@@ -27,6 +27,6 @@ class ConstrainedSketchVertexArray:
 
         Returns
         -------
-        A ConstrainedSketchVertex object.
+        A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object.
         """
         pass

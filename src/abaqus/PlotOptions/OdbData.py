@@ -171,7 +171,7 @@ class OdbData:
     # repository is read-only.
     ties: dict[str, TieConstraint] = dict[str, TieConstraint]()
 
-    # An OdbDiagnosticData object.
+    # An :py:class:`~abaqus.PlotOptions.OdbDiagnosticData.OdbDiagnosticData` object.
     diagnosticData: OdbDiagnosticData = OdbDiagnosticData()
 
     def setValues(self, activeFrames: SymbolicConstant = None, stepPeriods: tuple = ()):

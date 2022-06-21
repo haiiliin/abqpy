@@ -164,7 +164,7 @@ class SteadyStateDirectStep(AnalysisStep):
     # A String specifying a description of the new step. The default value is an empty string.
     description: str = ""
 
-    # A SteadyStateDirectFrequencyArray object.
+    # A :py:class:`~abaqus.StepMiscellaneous.SteadyStateDirectFrequencyArray.SteadyStateDirectFrequencyArray` object.
     frequencyRange: SteadyStateDirectFrequencyArray = SteadyStateDirectFrequencyArray()
 
     # A SymbolicConstant specifying whether the step has an explicit procedure type
@@ -219,13 +219,13 @@ class SteadyStateDirectStep(AnalysisStep):
         str, HistoryOutputRequestState
     ]()
 
-    # A DiagnosticPrint object.
+    # A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
-    # A Monitor object.
+    # A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
     monitor: Monitor = None
 
-    # A Restart object.
+    # A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
     restart: Restart = Restart()
 
     # A repository of AdaptiveMeshConstraintState objects.
@@ -236,10 +236,10 @@ class SteadyStateDirectStep(AnalysisStep):
     # A repository of AdaptiveMeshDomain objects.
     adaptiveMeshDomains: dict[str, AdaptiveMeshDomain] = dict[str, AdaptiveMeshDomain]()
 
-    # A Control object.
+    # A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object.
     control: Control = Control()
 
-    # A SolverControl object.
+    # A :py:class:`~abaqus.StepMiscellaneous.SolverControl.SolverControl` object.
     solverControl: SolverControl = SolverControl()
 
     # A repository of BoundaryConditionState objects.
@@ -292,7 +292,7 @@ class SteadyStateDirectStep(AnalysisStep):
             A String specifying the name of the previous step. The new step appears after this step
             in the list of analysis steps.
         frequencyRange
-            A SteadyStateDirectFrequencyArray object.
+            A :py:class:`~abaqus.StepMiscellaneous.SteadyStateDirectFrequencyArray.SteadyStateDirectFrequencyArray` object.
         description
             A String specifying a description of the new step. The default value is an empty string.
         factorization
@@ -317,7 +317,7 @@ class SteadyStateDirectStep(AnalysisStep):
 
         Returns
         -------
-        A SteadyStateDirectStep object.
+        A :py:class:`~abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep` object.
 
         Raises
         ------

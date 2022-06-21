@@ -39,7 +39,7 @@ class RetainedNodalDofsBC(BoundaryCondition):
     # are MECHANICAL and THERMAL.
     category: SymbolicConstant = None
 
-    # A Region object specifying the region to which the boundary condition is applied.
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
     region: Region = Region()
 
     # None or a DatumCsys object specifying the local coordinate system of the boundary
@@ -76,7 +76,7 @@ class RetainedNodalDofsBC(BoundaryCondition):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A Region object specifying the region to which the boundary condition is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
         u1
             A Boolean specifying whether to retain the degree of freedom in the 1-direction. The
             default value is OFF indicating that the degree of freedom is not retained.
@@ -101,7 +101,7 @@ class RetainedNodalDofsBC(BoundaryCondition):
 
         Returns
         -------
-        A RetainedNodalDofsBC object.
+        A :py:class:`~abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC` object.
         """
         super().__init__()
         pass

@@ -56,7 +56,7 @@ class OdbMeshElement:
     # A String specifying the element type.
     type: str = ""
 
-    # A SectionCategory object specifying the element section properties.
+    # A :py:class:`~abaqus.Odb.SectionCategory.SectionCategory` object specifying the element section properties.
     sectionCategory: SectionCategory = None
 
     # A tuple of Ints specifying the element connectivity. For connector elements connected to

@@ -60,7 +60,7 @@ from .TestData.MullinsEffect import MullinsEffect
 
 
 class MaterialBase:
-    """A Material object is the object used to specify a material. The Material object stores
+    """A :py:class:`~abaqus.Material.Material.Material` object is the object used to specify a material. The Material object stores
     the various settings that determine how a material behaves.
     A material is created by combining one or more individual material options and sub
     options. A particular material option is associated with the Material object through a
@@ -230,36 +230,36 @@ class MaterialBase:
     - MATERIAL
     """
 
-    # An AcousticMedium object.
+    # An :py:class:`~abaqus.Material.Others.Acoustic.AcousticMedium.AcousticMedium` object.
     acousticMedium: AcousticMedium = AcousticMedium()
 
-    # A BrittleCracking object.
+    # A :py:class:`~abaqus.Material.Plastic.Concrete.BrittleCracking.BrittleCracking` object.
     brittleCracking: BrittleCracking = BrittleCracking(((),))
 
-    # A CapPlasticity object.
+    # A :py:class:`~abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapPlasticity.CapPlasticity` object.
     capPlasticity: CapPlasticity = CapPlasticity(((),))
 
-    # A CastIronPlasticity object.
+    # A :py:class:`~abaqus.Material.Plastic.Metal.CastIron.CastIronPlasticity.CastIronPlasticity` object.
     castIronPlasticity: CastIronPlasticity = CastIronPlasticity(((),))
 
-    # A ClayPlasticity object.
+    # A :py:class:`~abaqus.Material.Plastic.CriticalStateClay.ClayPlasticity.ClayPlasticity` object.
     clayPlasticity: ClayPlasticity = ClayPlasticity(((),))
 
-    # A Concrete object.
+    # A :py:class:`~abaqus.Material.Plastic.Concrete.Concrete.Concrete` object.
     concrete: Concrete = Concrete(((),))
 
-    # A ConcreteDamagedPlasticity object.
+    # A :py:class:`~abaqus.Material.Plastic.Concrete.ConcreteDamagedPlasticity.ConcreteDamagedPlasticity` object.
     concreteDamagedPlasticity: ConcreteDamagedPlasticity = ConcreteDamagedPlasticity(
         ((),)
     )
 
-    # A Conductivity object.
+    # A :py:class:`~abaqus.Material.Others.HeatTransfer.Conductivity.Conductivity` object.
     conductivity: Conductivity = Conductivity(((),))
 
-    # A Creep object.
+    # A :py:class:`~abaqus.Material.Plastic.Creep.Creep.Creep` object.
     creep: Creep = Creep(((),))
 
-    # A CrushableFoam object.
+    # A :py:class:`~abaqus.Material.Plastic.CrushableFoam.CrushableFoam.CrushableFoam` object.
     crushableFoam: CrushableFoam = CrushableFoam(((),))
 
     # A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
@@ -304,149 +304,149 @@ class MaterialBase:
     # A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
     hashinDamageInitiation: DamageInitiation = DamageInitiation()
 
-    # A Damping object.
+    # A :py:class:`~abaqus.Material.Others.Mechanical.Damping.Damping` object.
     damping: Damping = Damping()
 
-    # A DeformationPlasticity object.
+    # A :py:class:`~abaqus.Material.Plastic.Metal.Deformation.DeformationPlasticity.DeformationPlasticity` object.
     deformationPlasticity: DeformationPlasticity = DeformationPlasticity(((),))
 
-    # A Density object.
+    # A :py:class:`~abaqus.Material.Density.Density.Density` object.
     density: Density = Density(((),))
 
-    # A Depvar object.
+    # A :py:class:`~abaqus.Material.Others.User.Depvar.Depvar` object.
     depvar: Depvar = Depvar()
 
-    # A Dielectric object.
+    # A :py:class:`~abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric` object.
     dielectric: Dielectric = Dielectric(((),))
 
-    # A Diffusivity object.
+    # A :py:class:`~abaqus.Material.Others.MassDiffusion.Diffusivity.Diffusivity` object.
     diffusivity: Diffusivity = Diffusivity(((),))
 
-    # A DruckerPrager object.
+    # A :py:class:`~abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPrager.DruckerPrager` object.
     druckerPrager: DruckerPrager = DruckerPrager(((),))
 
-    # An Elastic object.
+    # An :py:class:`~abaqus.Material.Elastic.Linear.Elastic.Elastic` object.
     elastic: Elastic = Elastic(((),))
 
-    # An ElectricalConductivity object.
+    # An :py:class:`~abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity` object.
     electricalConductivity: ElectricalConductivity = ElectricalConductivity(((),))
 
-    # An Eos object.
+    # An :py:class:`~abaqus.Material.Eos.Eos.Eos` object.
     eos: Eos = Eos()
 
-    # An Expansion object.
+    # An :py:class:`~abaqus.Material.Others.Mechanical.Expansion.Expansion` object.
     expansion: Expansion = Expansion()
 
-    # A FluidLeakoff object.
+    # A :py:class:`~abaqus.Material.Others.PoreFluidFlow.FluidLeakoff.FluidLeakoff` object.
     fluidLeakoff: FluidLeakoff = FluidLeakoff()
 
-    # A GapFlow object.
+    # A :py:class:`~abaqus.Material.Gap.GapFlow.GapFlow` object.
     gapFlow: GapFlow = GapFlow(((),))
 
-    # A GasketThicknessBehavior object.
+    # A :py:class:`~abaqus.Material.Gasket.GasketThicknessBehavior.GasketThicknessBehavior` object.
     gasketThicknessBehavior: GasketThicknessBehavior = GasketThicknessBehavior(((),))
 
-    # A GasketTransverseShearElastic object.
+    # A :py:class:`~abaqus.Material.Gasket.GasketTransverseShearElastic.GasketTransverseShearElastic` object.
     gasketTransverseShearElastic: GasketTransverseShearElastic = (
         GasketTransverseShearElastic(((),))
     )
 
-    # A GasketMembraneElastic object.
+    # A :py:class:`~abaqus.Material.Gasket.GasketMembraneElastic.GasketMembraneElastic` object.
     gasketMembraneElastic: GasketMembraneElastic = GasketMembraneElastic(((),))
 
-    # A Gel object.
+    # A :py:class:`~abaqus.Material.Others.PoreFluidFlow.Gel.Gel` object.
     gel: Gel = Gel(((),))
 
-    # A HeatGeneration object.
+    # A :py:class:`~abaqus.Material.Others.HeatTransfer.HeatGeneration.HeatGeneration` object.
     heatGeneration: HeatGeneration = HeatGeneration()
 
-    # A Hyperelastic object.
+    # A :py:class:`~abaqus.Material.Elastic.HyperElastic.Hyperelastic.Hyperelastic` object.
     hyperelastic: Hyperelastic = Hyperelastic(((),))
 
-    # A Hyperfoam object.
+    # A :py:class:`~abaqus.Material.Elastic.HyperElastic.HyperFoam.Hyperfoam.Hyperfoam` object.
     hyperfoam: Hyperfoam = Hyperfoam()
 
-    # A Hypoelastic object.
+    # A :py:class:`~abaqus.Material.Elastic.HypoElastic.Hypoelastic.Hypoelastic` object.
     hypoelastic: Hypoelastic = Hypoelastic(((),))
 
-    # An InelasticHeatFraction object.
+    # An :py:class:`~abaqus.Material.Others.HeatTransfer.InelasticHeatFraction.InelasticHeatFraction` object.
     inelasticHeatFraction: InelasticHeatFraction = InelasticHeatFraction()
 
-    # A JouleHeatFraction object.
+    # A :py:class:`~abaqus.Material.Others.HeatTransfer.JouleHeatFraction.JouleHeatFraction` object.
     jouleHeatFraction: JouleHeatFraction = JouleHeatFraction()
 
-    # A LatentHeat object.
+    # A :py:class:`~abaqus.Material.Others.HeatTransfer.LatentHeat.LatentHeat` object.
     latentHeat: LatentHeat = LatentHeat(((),))
 
-    # A LowDensityFoam object.
+    # A :py:class:`~abaqus.Material.Elastic.LowDensityFoam.LowDensityFoam.LowDensityFoam` object.
     lowDensityFoam: LowDensityFoam = LowDensityFoam()
 
-    # A MagneticPermeability object.
+    # A :py:class:`~abaqus.Material.Others.Electromagnetic.MagneticPermeability.MagneticPermeability` object.
     magneticPermeability: MagneticPermeability = MagneticPermeability(
         ((),), ((),), ((),)
     )
 
-    # A MohrCoulombPlasticity object.
+    # A :py:class:`~abaqus.Material.Plastic.MohrCoulomb.MohrCoulombPlasticity.MohrCoulombPlasticity` object.
     mohrCoulombPlasticity: MohrCoulombPlasticity = MohrCoulombPlasticity(((),))
 
-    # A MoistureSwelling object.
+    # A :py:class:`~abaqus.Material.Others.PoreFluidFlow.MoistureSwelling.MoistureSwelling.MoistureSwelling` object.
     moistureSwelling: MoistureSwelling = MoistureSwelling(((),))
 
-    # A MullinsEffect object.
+    # A :py:class:`~abaqus.Material.TestData.MullinsEffect.MullinsEffect` object.
     mullinsEffect: MullinsEffect = MullinsEffect()
 
-    # A Permeability object.
+    # A :py:class:`~abaqus.Material.Others.PoreFluidFlow.Permeability.Permeability.Permeability` object.
     permeability: Permeability = Permeability(0, 0, ((),))
 
-    # A Piezoelectric object.
+    # A :py:class:`~abaqus.Material.Others.Electromagnetic.Piezoelectric.Piezoelectric` object.
     piezoelectric: Piezoelectric = Piezoelectric(((),))
 
-    # A Plastic object.
+    # A :py:class:`~abaqus.Material.Plastic.Plastic.Plastic` object.
     plastic: Plastic = Plastic(((),))
 
-    # A PoreFluidExpansion object.
+    # A :py:class:`~abaqus.Material.Others.Mechanical.PoreFluidExpansion.PoreFluidExpansion` object.
     poreFluidExpansion: PoreFluidExpansion = PoreFluidExpansion(((),))
 
-    # A PorousBulkModuli object.
+    # A :py:class:`~abaqus.Material.Others.PoreFluidFlow.PorousBulkModuli.PorousBulkModuli` object.
     porousBulkModuli: PorousBulkModuli = PorousBulkModuli(((),))
 
-    # A PorousElastic object.
+    # A :py:class:`~abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic` object.
     porousElastic: PorousElastic = PorousElastic(((),))
 
-    # A PorousMetalPlasticity object.
+    # A :py:class:`~abaqus.Material.Plastic.Metal.Porous.PorousMetalPlasticity.PorousMetalPlasticity` object.
     porousMetalPlasticity: PorousMetalPlasticity = PorousMetalPlasticity(((),))
 
-    # A Regularization object.
+    # A :py:class:`~abaqus.Material.Regularization.Regularization` object.
     regularization: Regularization = Regularization()
 
-    # A Solubility object.
+    # A :py:class:`~abaqus.Material.Others.MassDiffusion.Solubility.Solubility` object.
     solubility: Solubility = Solubility(((),))
 
-    # A Sorption object.
+    # A :py:class:`~abaqus.Material.Others.PoreFluidFlow.Sorption.Sorption` object.
     sorption: Sorption = Sorption(((),))
 
-    # A SpecificHeat object.
+    # A :py:class:`~abaqus.Material.Others.HeatTransfer.SpecificHeat.SpecificHeat` object.
     specificHeat: SpecificHeat = SpecificHeat(((),))
 
-    # A Swelling object.
+    # A :py:class:`~abaqus.Material.Plastic.Swelling.Swelling.Swelling` object.
     swelling: Swelling = Swelling(((),))
 
-    # A UserDefinedField object.
+    # A :py:class:`~abaqus.Material.Others.User.UserDefinedField.UserDefinedField` object.
     userDefinedField: UserDefinedField = UserDefinedField()
 
-    # A UserMaterial object.
+    # A :py:class:`~abaqus.Material.Others.User.UserMaterial.UserMaterial` object.
     userMaterial: UserMaterial = UserMaterial()
 
-    # A UserOutputVariables object.
+    # A :py:class:`~abaqus.Material.Others.User.UserOutputVariables.UserOutputVariables` object.
     userOutputVariables: UserOutputVariables = UserOutputVariables()
 
-    # A Viscoelastic object.
+    # A :py:class:`~abaqus.Material.Elastic.HyperElastic.ViscoElastic.Viscoelastic.Viscoelastic` object.
     viscoelastic: Viscoelastic = Viscoelastic(FREQUENCY, ((),))
 
-    # A Viscosity object.
+    # A :py:class:`~abaqus.Material.Others.Mechanical.Viscosity.Viscosity.Viscosity` object.
     viscosity: Viscosity = Viscosity(((),))
 
-    # A Viscous object.
+    # A :py:class:`~abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous` object.
     viscous: Viscous = Viscous(((),))
 
     def __init__(self, name: str, description: str = "", materialIdentifier: str = ""):
@@ -474,7 +474,7 @@ class MaterialBase:
 
         Returns
         -------
-        A Material object.
+        A :py:class:`~abaqus.Material.Material.Material` object.
         """
         self.name, self.description, self.materialIdentifier = (
             name,

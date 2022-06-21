@@ -31,7 +31,7 @@ class EquallySpacedAmplitude(Amplitude):
     - AMPLITUDE
     """
 
-    # A BaselineCorrection object.
+    # A :py:class:`~abaqus.Amplitude.BaselineCorrection.BaselineCorrection` object.
     baselineCorrection: BaselineCorrection = BaselineCorrection()
 
     def __init__(
@@ -77,7 +77,7 @@ class EquallySpacedAmplitude(Amplitude):
 
         Returns
         -------
-        An EquallySpacedAmplitude object.
+        An :py:class:`~abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude` object.
 
         Raises
         ------

@@ -4,7 +4,7 @@ from ..Connector.ConnectorBehaviorOptionArray import ConnectorBehaviorOptionArra
 
 
 class ConnectorSection(Section):
-    """A ConnectorSection object describes the connection type and the behavior of a connector.
+    """A :py:class:`~abaqus.Connector.ConnectorSection.ConnectorSection` object describes the connection type and the behavior of a connector.
     The ConnectorSection object is derived from the Section object.
 
     Notes
@@ -136,11 +136,11 @@ class ConnectorSection(Section):
             data associated with the **behaviorOptions**. Possible values are CONSTANT and LINEAR. The
             default value is CONSTANT.
         behaviorOptions
-            A ConnectorBehaviorOptionArray object.
+            A :py:class:`~abaqus.Connector.ConnectorBehaviorOptionArray.ConnectorBehaviorOptionArray` object.
 
         Returns
         -------
-        A ConnectorSection object.
+        A :py:class:`~abaqus.Connector.ConnectorSection.ConnectorSection` object.
 
         Raises
         ------
@@ -249,7 +249,7 @@ class ConnectorSection(Section):
             data associated with the **behaviorOptions**. Possible values are CONSTANT and LINEAR. The
             default value is CONSTANT.
         behaviorOptions
-            A ConnectorBehaviorOptionArray object.
+            A :py:class:`~abaqus.Connector.ConnectorBehaviorOptionArray.ConnectorBehaviorOptionArray` object.
 
         Raises
         ------

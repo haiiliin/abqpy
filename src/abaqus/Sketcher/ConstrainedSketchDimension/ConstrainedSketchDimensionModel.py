@@ -7,7 +7,7 @@ from ..ConstrainedSketchVertex.ConstrainedSketchVertex import ConstrainedSketchV
 
 
 class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
-    """A ConstrainedSketch object contains the entities that are used to create a sketch. The
+    """A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object contains the entities that are used to create a sketch. The
     objects include ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository,
     such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are
     contained in their respective repositories.
@@ -44,9 +44,9 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         Parameters
         ----------
         line1
-            A ConstrainedSketchGeometry object specifying the first line.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the first line.
         line2
-            A ConstrainedSketchGeometry object specifying the second line.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the second line.
         textPoint
             A pair of Floats specifying the location of the dimension text.
         value
@@ -58,7 +58,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         Returns
         -------
         dimension
-            A ConstrainedSketchDimension object
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimension.ConstrainedSketchDimension` object
         """
         pass
 
@@ -85,9 +85,9 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         Parameters
         ----------
         vertex1
-            A ConstrainedSketchVertex object specifying the first endpoint.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object specifying the first endpoint.
         vertex2
-            A ConstrainedSketchVertex object specifying the second endpoint.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object specifying the second endpoint.
         textPoint
             A pair of Floats specifying the location of the dimension text.
         value
@@ -99,7 +99,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         Returns
         -------
         dimension
-            A ConstrainedSketchDimension object
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimension.ConstrainedSketchDimension` object
         """
         pass
 
@@ -125,9 +125,9 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         Parameters
         ----------
         vertex1
-            A ConstrainedSketchVertex object specifying the first endpoint.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object specifying the first endpoint.
         vertex2
-            A ConstrainedSketchVertex object specifying the second endpoint.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object specifying the second endpoint.
         textPoint
             A pair of Floats specifying the location of the dimension text.
         value
@@ -139,7 +139,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         Returns
         -------
         dimension
-            A ConstrainedSketchDimension object
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimension.ConstrainedSketchDimension` object
         """
         pass
 
@@ -167,7 +167,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         Parameters
         ----------
         curve
-            A ConstrainedSketchGeometry object specifying the circular or elliptical arc.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the circular or elliptical arc.
         textPoint
             A pair of Floats specifying the location of the dimension text.
         value
@@ -185,7 +185,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         Returns
         -------
         dimension
-            A ConstrainedSketchDimension object
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimension.ConstrainedSketchDimension` object
         """
         pass
 
@@ -211,9 +211,9 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         Parameters
         ----------
         vertex1
-            A ConstrainedSketchVertex object specifying the first endpoint.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object specifying the first endpoint.
         vertex2
-            A ConstrainedSketchVertex object specifying the second endpoint.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object specifying the second endpoint.
         textPoint
             A pair of Floats specifying the location of the dimension text.
         value
@@ -225,7 +225,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         Returns
         -------
         dimension
-            A ConstrainedSketchDimension object
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimension.ConstrainedSketchDimension` object
         """
         pass
 
@@ -252,9 +252,9 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         Parameters
         ----------
         entity1
-            A ConstrainedSketchVertex object or ConstrainedSketchGeometry object.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object or ConstrainedSketchGeometry object.
         entity2
-            A ConstrainedSketchVertex object or ConstrainedSketchGeometry object.
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object or ConstrainedSketchGeometry object.
         textPoint
             A pair of Floats specifying the location of the dimension text.
         value
@@ -266,6 +266,6 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         Returns
         -------
         dimension
-            A ConstrainedSketchDimension object
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimension.ConstrainedSketchDimension` object
         """
         pass

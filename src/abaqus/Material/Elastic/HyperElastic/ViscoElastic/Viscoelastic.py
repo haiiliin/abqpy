@@ -85,16 +85,16 @@ class Viscoelastic:
     - VISCOELASTIC
     """
 
-    # A CombinedTestData object.
+    # A :py:class:`~abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData` object.
     combinedTestData: CombinedTestData = CombinedTestData(((),))
 
-    # A ShearTestData object.
+    # A :py:class:`~abaqus.Material.TestData.ShearTestData.ShearTestData` object.
     shearTestData: ShearTestData = ShearTestData(((),))
 
-    # A Trs object.
+    # A :py:class:`~abaqus.Material.Others.Mechanical.Viscosity.Trs.Trs` object.
     trs: Trs = Trs()
 
-    # A VolumetricTestData object.
+    # A :py:class:`~abaqus.Material.TestData.VolumetricTestData.VolumetricTestData` object.
     volumetricTestData: VolumetricTestData = VolumetricTestData(((),))
 
     def __init__(
@@ -161,7 +161,7 @@ class Viscoelastic:
 
         Returns
         -------
-        A Viscoelastic object.
+        A :py:class:`~abaqus.Material.Elastic.HyperElastic.ViscoElastic.Viscoelastic.Viscoelastic` object.
 
         Raises
         ------

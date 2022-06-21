@@ -55,7 +55,7 @@ class MeshElementArray(list[MeshElement]):
 
         Returns
         -------
-        A MeshElementArray object.
+        A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
         """
         super().__init__()
 
@@ -69,7 +69,7 @@ class MeshElementArray(list[MeshElement]):
 
         Returns
         -------
-        A MeshElement object.
+        A :py:class:`~abaqus.Mesh.MeshElement.MeshElement` object.
         """
         pass
 
@@ -85,7 +85,7 @@ class MeshElementArray(list[MeshElement]):
 
         Returns
         -------
-        A MeshElementArray object.
+        A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
         """
         pass
 
@@ -127,7 +127,7 @@ class MeshElementArray(list[MeshElement]):
 
         Returns
         -------
-        A MeshElementArray object, which is a sequence of MeshElement objects.
+        A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object, which is a sequence of MeshElement objects.
         """
         pass
 
@@ -147,7 +147,7 @@ class MeshElementArray(list[MeshElement]):
 
         Returns
         -------
-        A MeshElementArray object, which is a sequence of MeshElement objects.
+        A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object, which is a sequence of MeshElement objects.
         """
         pass
 
@@ -164,7 +164,7 @@ class MeshElementArray(list[MeshElement]):
 
         Returns
         -------
-        A MeshElementArray object, which is a sequence of MeshElement objects.
+        A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object, which is a sequence of MeshElement objects.
         """
         pass
 
@@ -194,7 +194,7 @@ class MeshElementArray(list[MeshElement]):
 
         Returns
         -------
-        A MeshElementArray object.
+        A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
 
         Raises
         ------

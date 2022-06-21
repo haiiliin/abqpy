@@ -89,7 +89,7 @@ class Dielectric:
 
         Returns
         -------
-        A Dielectric object.
+        A :py:class:`~abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric` object.
         """
         pass
 

@@ -57,7 +57,7 @@ class DiscreteField(Field):
         dataWidth
             An Int specifying the width of the supplied data. The default value is 1.
         data
-            A DataTableArray object.
+            A :py:class:`~abaqus.Field.DataTableArray.DataTableArray` object.
         description
             A String specifying the description of the field. The default value is an empty string.
         orientationType
@@ -70,7 +70,7 @@ class DiscreteField(Field):
 
         Returns
         -------
-        A DiscreteField object.
+        A :py:class:`~abaqus.Field.DiscreteField.DiscreteField` object.
 
         Raises
         ------
@@ -105,10 +105,10 @@ class DiscreteField(Field):
         name
             A String specifying the repository key.
         eulerianInstance
-            A PartInstance object specifying the elements for which volume fraction values will be
+            A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the elements for which volume fraction values will be
             computed.
         referenceInstance
-            A PartInstance object specifying the region that either contains material or is empty of
+            A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the region that either contains material or is empty of
             material.
         accuracy
             A Symbolic Constant specifying the level of accuracy that will be used in computing
@@ -124,7 +124,7 @@ class DiscreteField(Field):
 
         Returns
         -------
-        A DiscreteField object.
+        A :py:class:`~abaqus.Field.DiscreteField.DiscreteField` object.
 
         Raises
         ------
@@ -159,11 +159,11 @@ class DiscreteField(Field):
         analyticFieldName
             A String specifying the name of the AnalyticalField containing the source data.
         region
-            A Region object for the field.
+            A :py:class:`~abaqus.Region.Region.Region` object for the field.
 
         Returns
         -------
-        A DiscreteField object.
+        A :py:class:`~abaqus.Field.DiscreteField.DiscreteField` object.
 
         Raises
         ------
@@ -190,7 +190,7 @@ class DiscreteField(Field):
         dataWidth
             An Int specifying the width of the supplied data. The default value is 1.
         data
-            A DataTableArray object.
+            A :py:class:`~abaqus.Field.DataTableArray.DataTableArray` object.
         description
             A String specifying the description of the field. The default value is an empty string.
         orientationType

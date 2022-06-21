@@ -52,7 +52,7 @@ class LProfile(Profile):
 
         Returns
         -------
-        A LProfile object.
+        A :py:class:`~abaqus.BeamSectionProfile.LProfile.LProfile` object.
 
         Raises
         ------

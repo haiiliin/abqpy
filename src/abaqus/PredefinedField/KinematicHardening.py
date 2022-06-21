@@ -61,7 +61,7 @@ class KinematicHardening(PredefinedField):
         name
             A String specifying the repository key.
         region
-            A Region object specifying the region to which the predefined field is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the predefined field is applied.
         numBackStress
             An Int specifying the number of backstresses. The default value is 1.
         equivPlasticStrain
@@ -85,7 +85,7 @@ class KinematicHardening(PredefinedField):
 
         Returns
         -------
-        A KinematicHardening object.
+        A :py:class:`~abaqus.PredefinedField.KinematicHardening.KinematicHardening` object.
         """
         super().__init__()
         pass

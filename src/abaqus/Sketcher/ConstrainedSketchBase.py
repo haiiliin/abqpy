@@ -18,7 +18,7 @@ from ..Amplitude.ConstrainedSketchGeometryArray import ConstrainedSketchGeometry
 
 
 class ConstrainedSketchBase:
-    """A ConstrainedSketch object contains the entities that are used to create a sketch. The
+    """A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object contains the entities that are used to create a sketch. The
     objects include ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository,
     such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are
     contained in their respective repositories.
@@ -62,7 +62,7 @@ class ConstrainedSketchBase:
         str, ConstrainedSketchDimension
     ]()
 
-    # A ConstrainedSketchGeometryArray object specifying the sketch geometry, such as lines,
+    # A :py:class:`~abaqus.Amplitude.ConstrainedSketchGeometryArray.ConstrainedSketchGeometryArray` object specifying the sketch geometry, such as lines,
     # arcs, circles, and splines.
     geometry: ConstrainedSketchGeometryArray = ConstrainedSketchGeometryArray()
 
@@ -72,11 +72,11 @@ class ConstrainedSketchBase:
         str, ConstrainedSketchParameter
     ]()
 
-    # A ConstrainedSketchOptions object specifying the sketch option settings.
+    # A :py:class:`~abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchOptions.ConstrainedSketchOptions` object specifying the sketch option settings.
     sketchOptions: ConstrainedSketchOptions = ConstrainedSketchOptions()
 
-    # A ConstrainedSketchVertexArray object.
+    # A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexArray.ConstrainedSketchVertexArray` object.
     vertices: ConstrainedSketchVertexArray = ConstrainedSketchVertexArray()
 
-    # A ConstrainedSketchImageOptions object.
+    # A :py:class:`~abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchImageOptions.ConstrainedSketchImageOptions` object.
     imageOptions: ConstrainedSketchImageOptions = ConstrainedSketchImageOptions()

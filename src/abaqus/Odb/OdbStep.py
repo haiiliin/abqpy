@@ -28,14 +28,14 @@ class OdbStep(OdbStepBase):
         description
             A String specifying the description of the HistoryRegion object.
         point
-            A HistoryPoint object specifying the point to which the history data refer.
+            A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object specifying the point to which the history data refer.
         loadCase
             None or an OdbLoadCase object specifying the load case associated with the HistoryRegion
             object. The default value is None.
 
         Returns
         -------
-        A HistoryRegion object.
+        A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
         """
         self.historyRegions[name] = historyRegion = HistoryRegion(
             name, description, point, loadCase
@@ -71,7 +71,7 @@ class OdbStep(OdbStepBase):
 
         Returns
         -------
-        An OdbFrame object.
+        An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
         """
         pass
 
@@ -101,7 +101,7 @@ class OdbStep(OdbStepBase):
 
         Returns
         -------
-        An OdbFrame object.
+        An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
         """
         pass
 
@@ -123,7 +123,7 @@ class OdbStep(OdbStepBase):
         Parameters
         ----------
         loadCase
-            An OdbLoadCase object specifying the load case for the frame.
+            An :py:class:`~abaqus.Odb.OdbLoadCase.OdbLoadCase` object specifying the load case for the frame.
         description
             A String specifying the contents of the frame. The default value is an empty string.
         frequency
@@ -132,7 +132,7 @@ class OdbStep(OdbStepBase):
 
         Returns
         -------
-        An OdbFrame object.
+        An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
         """
         pass
 
@@ -159,7 +159,7 @@ class OdbStep(OdbStepBase):
 
         Returns
         -------
-        An OdbLoadCase object.
+        An :py:class:`~abaqus.Odb.OdbLoadCase.OdbLoadCase` object.
         """
         self.loadCases[name] = odbLoadCase = OdbLoadCase(name)
         return odbLoadCase

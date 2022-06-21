@@ -48,7 +48,7 @@ class RadiationToAmbient(Interaction):
             A String specifying the name of the step in which the RadiationToAmbient object is
             created.
         surface
-            A Region object specifying the surface to which the radiation interaction is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the surface to which the radiation interaction is applied.
         emissivity
             A Float specifying the emissivity, ϵϵ.
         field
@@ -76,7 +76,7 @@ class RadiationToAmbient(Interaction):
 
         Returns
         -------
-        A RadiationToAmbient object.
+        A :py:class:`~abaqus.Interaction.RadiationToAmbient.RadiationToAmbient` object.
         """
         super().__init__()
         pass

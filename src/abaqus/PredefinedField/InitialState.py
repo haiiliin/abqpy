@@ -45,7 +45,7 @@ class InitialState(PredefinedField):
         name
             A String specifying the repository key.
         instances
-            A PartInstanceArray object specifying the instances to which the predefined field is
+            A :py:class:`~abaqus.Assembly.PartInstanceArray.PartInstanceArray` object specifying the instances to which the predefined field is
             applied.
         fileName
             A String specifying the name of the job that generated the initial state data.
@@ -63,7 +63,7 @@ class InitialState(PredefinedField):
 
         Returns
         -------
-        An InitialState object.
+        An :py:class:`~abaqus.PredefinedField.InitialState.InitialState` object.
         """
         super().__init__()
         pass

@@ -58,7 +58,7 @@ class RigidBody(Constraint):
         name
             A String specifying the constraint repository key.
         refPointRegion
-            A Region object specifying the reference point.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the reference point.
         bodyRegion
             None or a Region object specifying the elements constrained to the movement of the
             reference point. The default value is None.
@@ -80,7 +80,7 @@ class RigidBody(Constraint):
 
         Returns
         -------
-        A RigidBody object.
+        A :py:class:`~abaqus.Constraint.RigidBody.RigidBody` object.
         """
         super().__init__()
         pass

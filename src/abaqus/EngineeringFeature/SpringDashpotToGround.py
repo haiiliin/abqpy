@@ -64,7 +64,7 @@ class SpringDashpotToGround(SpringDashpot):
         name
             A String specifying the repository key. 
         region
-            A Region object specifying the region to which the springs and/or dashpots are applied. 
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the springs and/or dashpots are applied. 
         dof
             An Int specifying the degree of freedom associated with the spring and dashpot 
             behaviors. 
@@ -89,7 +89,7 @@ class SpringDashpotToGround(SpringDashpot):
 
         Returns
         -------
-        A SpringDashpotToGround object.
+        A :py:class:`~abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround` object.
         """
         super().__init__()
         pass

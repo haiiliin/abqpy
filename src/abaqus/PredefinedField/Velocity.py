@@ -49,7 +49,7 @@ class Velocity(PredefinedField):
         name
             A String specifying the repository key.
         region
-            A Region object specifying the region to which the predefined field is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the predefined field is applied.
         velocity1
             A Float specifying the first component of the velocity.
         velocity2
@@ -74,7 +74,7 @@ class Velocity(PredefinedField):
 
         Returns
         -------
-        A Velocity object.
+        A :py:class:`~abaqus.PredefinedField.Velocity.Velocity` object.
         """
         super().__init__()
         pass

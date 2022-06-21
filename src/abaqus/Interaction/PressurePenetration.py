@@ -48,11 +48,11 @@ class PressurePenetration(Interaction):
     # A String specifying the name of the Surface-to-surface contact (Standard) interaction.
     contactInteraction: str = ""
 
-    # A RegionArray object specifying the points on the main surface that are exposed to the
+    # A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the main surface that are exposed to the
     # fluid.
     mainPoints: RegionArray = RegionArray()
 
-    # A RegionArray object specifying the points on the secondary surface that are exposed to
+    # A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the secondary surface that are exposed to
     # the fluid.
     secondaryPoints: RegionArray = RegionArray()
 
@@ -88,10 +88,10 @@ class PressurePenetration(Interaction):
         contactInteraction
             A String specifying the name of the Surface-to-surface contact (Standard) interaction.
         mainPoints
-            A RegionArray object specifying the points on the main surface that are exposed to the
+            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the main surface that are exposed to the
             fluid.
         secondaryPoints
-            A RegionArray object specifying the points on the secondary surface that are exposed to
+            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the secondary surface that are exposed to
             the fluid.
         penetrationPressure
             A tuple of Floats specifying the fluid pressure magnitude. For steady state dynamic
@@ -110,7 +110,7 @@ class PressurePenetration(Interaction):
 
         Returns
         -------
-        A PressurePenetration object.
+        A :py:class:`~abaqus.Interaction.PressurePenetration.PressurePenetration` object.
         """
         super().__init__()
         pass

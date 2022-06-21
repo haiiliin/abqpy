@@ -147,7 +147,7 @@ class JobMdb(MdbBase):
 
         Returns
         -------
-        A ModelJob object.
+        A :py:class:`~abaqus.Job.ModelJob.ModelJob` object.
 
         Raises
         ------
@@ -378,7 +378,7 @@ class JobMdb(MdbBase):
 
         Returns
         -------
-        An OptimizationProcess object.
+        An :py:class:`~abaqus.Job.OptimizationProcess.OptimizationProcess` object.
 
         Raises
         ------

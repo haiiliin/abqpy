@@ -88,10 +88,10 @@ class Creep:
     - CREEP
     """
 
-    # An Ornl object.
+    # An :py:class:`~abaqus.Material.Plastic.Metal.ORNL.Ornl.Ornl` object.
     ornl: Ornl = Ornl()
 
-    # A Potential object.
+    # A :py:class:`~abaqus.Material.Plastic.Potential.Potential` object.
     potential: Potential = Potential(((),))
 
     def __init__(
@@ -131,7 +131,7 @@ class Creep:
 
         Returns
         -------
-        A Creep object.
+        A :py:class:`~abaqus.Material.Plastic.Creep.Creep.Creep` object.
 
         Raises
         ------

@@ -50,10 +50,10 @@ class BrittleCracking:
     - BRITTLE CRACKING
     """
 
-    # A BrittleShear object.
+    # A :py:class:`~abaqus.Material.Plastic.Concrete.BrittleShear.BrittleShear` object.
     brittleShear: BrittleShear = BrittleShear(((),))
 
-    # A BrittleFailure object.
+    # A :py:class:`~abaqus.Material.Plastic.Concrete.BrittleFailure.BrittleFailure` object.
     brittleFailure: BrittleFailure = BrittleFailure(((),))
 
     def __init__(
@@ -88,7 +88,7 @@ class BrittleCracking:
 
         Returns
         -------
-        A BrittleCracking object.
+        A :py:class:`~abaqus.Material.Plastic.Concrete.BrittleCracking.BrittleCracking` object.
         """
         pass
 

@@ -57,7 +57,7 @@ class ParameterColumn:
 
         Returns
         -------
-        A ParameterTable object.
+        A :py:class:`~abaqus.TableCollection.ParameterTable.ParameterTable` object.
 
         Raises
         ------

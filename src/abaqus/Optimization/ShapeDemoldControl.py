@@ -47,10 +47,10 @@ class ShapeDemoldControl(GeometricRestriction):
         name
             A String specifying the geometric restriction repository key.
         pullDirection
-            A VertexArray object of length 2 specifying the demold pull direction. Instead of
+            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the demold pull direction. Instead of
             through a ConstrainedSketchVertex, each point might be specified through a tuple of coordinates.
         region
-            A Region object specifying the region to which the geometric restriction is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         collisionCheckRegion
@@ -84,7 +84,7 @@ class ShapeDemoldControl(GeometricRestriction):
 
         Returns
         -------
-        A ShapeDemoldControl object.
+        A :py:class:`~abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl` object.
         """
         super().__init__()
         pass

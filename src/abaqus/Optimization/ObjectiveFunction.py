@@ -44,14 +44,14 @@ class ObjectiveFunction:
         name
             A String specifying the objective function repository key.
         objectives
-            An OptimizationObjectiveArray object.
+            An :py:class:`~abaqus.Optimization.OptimizationObjectiveArray.OptimizationObjectiveArray` object.
         target
             A SymbolicConstant specifying the target of the objective function. Possible values are
             MINIMIZE, MAXIMIZE, and MINIMIZE_MAXIMUM. The default value is MINIMIZE.
 
         Returns
         -------
-        An ObjectiveFunction object.
+        An :py:class:`~abaqus.Optimization.ObjectiveFunction.ObjectiveFunction` object.
 
         Raises
         ------

@@ -43,11 +43,11 @@ class LeafFromInstance(Leaf):
         Parameters
         ----------
         instances
-            A PartInstance object or a Sequence of PartInstance objects.
+            A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object or a Sequence of PartInstance objects.
 
         Returns
         -------
-        A LeafFromInstance object.
+        A :py:class:`~abaqus.DisplayGroup.LeafFromInstance.LeafFromInstance` object.
 
         Raises
         ------

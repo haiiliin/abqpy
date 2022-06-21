@@ -126,7 +126,7 @@ class RemeshingRule:
 
         Returns
         -------
-        A RemeshingRule object.
+        A :py:class:`~abaqus.Adaptivity.RemeshingRule.RemeshingRule` object.
 
         Raises
         ------

@@ -75,7 +75,7 @@ class MeshFace:
         Returns
         -------
         nodes: MeshNodeArray
-            A MeshNodeArray object, which is a sequence of MeshNode objects
+            A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object, which is a sequence of MeshNode objects
         """
         pass
 
@@ -103,7 +103,7 @@ class MeshFace:
         Returns
         -------
         faces: MeshFaceArray
-            A MeshFaceArray object, which is a sequence of MeshFace objects.
+            A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object, which is a sequence of MeshFace objects.
         """
         pass
 
@@ -120,7 +120,7 @@ class MeshFace:
         Returns
         -------
         edges: MeshEdgeArray
-            A MeshEdgeArray object, which is a sequence of MeshEdge objects.
+            A :py:class:`~abaqus.Mesh.MeshEdgeArray.MeshEdgeArray` object, which is a sequence of MeshEdge objects.
         """
         pass
 
@@ -137,7 +137,7 @@ class MeshFace:
         Returns
         -------
         elements: MeshElementArray
-            A MeshElementArray object, which is a sequence of MeshElement objects.
+            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object, which is a sequence of MeshElement objects.
         """
         pass
 
@@ -154,7 +154,7 @@ class MeshFace:
         Returns
         -------
         faces: MeshFaceArray
-            A MeshFaceArray object, which is a sequence of MeshFace objects.
+            A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object, which is a sequence of MeshFace objects.
         """
         pass
 
@@ -165,7 +165,7 @@ class MeshFace:
         Returns
         -------
         elements: MeshElementArray
-            A MeshElementArray object, which is a sequence of MeshElement objects.
+            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object, which is a sequence of MeshElement objects.
         """
         pass
 
@@ -182,6 +182,6 @@ class MeshFace:
         Returns
         -------
         faces: MeshFaceArray
-            A MeshFaceArray object, which is a sequence of MeshFace objects.
+            A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object, which is a sequence of MeshFace objects.
         """
         pass

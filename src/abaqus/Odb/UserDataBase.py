@@ -75,11 +75,11 @@ class UserDataBase:
     # **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
     yValuesLabel: str = ""
 
-    # A QuantityType object specifying the QuantityType object associated to the X -axis1-
+    # A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the X -axis1-
     # values.
     axis1QuantityType: QuantityType = QuantityType()
 
-    # A QuantityType object specifying the QuantityType object associated to the Y -axis2-
+    # A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the Y -axis2-
     # values.
     axis2QuantityType: QuantityType = QuantityType()
 
@@ -144,14 +144,14 @@ class UserDataBase:
             A String specifying the label for the Y-values. This value may be overridden if the
             **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
         axis1QuantityType
-            A QuantityType object specifying the QuantityType object associated to the X -axis1-
+            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the X -axis1-
             values.
         axis2QuantityType
-            A QuantityType object specifying the QuantityType object associated to the Y -axis2-
+            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the Y -axis2-
             values.
 
         Returns
         -------
-        An XYData object.
+        An :py:class:`~abaqus.XY.XYData.XYData` object.
         """
         pass

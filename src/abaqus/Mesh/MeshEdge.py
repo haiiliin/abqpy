@@ -38,12 +38,12 @@ class MeshEdge:
         Parameters
         ----------
         domain
-            A MeshElementArray object specifying the domain to include in the search. By default,
+            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object specifying the domain to include in the search. By default,
             all elements in the mesh are included.
 
         Returns
         -------
-        A MeshElementArray object, which is a sequence of MeshElement objects.
+        A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object, which is a sequence of MeshElement objects.
         """
         pass
 
@@ -54,12 +54,12 @@ class MeshEdge:
         Parameters
         ----------
         domain
-            A MeshElementArray object specifying the domain to include in the search. By default,
+            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object specifying the domain to include in the search. By default,
             all elements in the mesh are included.
 
         Returns
         -------
-        A MeshNodeArray object, which is a sequence of MeshNode objects.
+        A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object, which is a sequence of MeshNode objects.
         """
         pass
 

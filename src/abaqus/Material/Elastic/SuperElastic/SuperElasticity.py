@@ -70,7 +70,7 @@ class SuperElasticity:
 
         Returns
         -------
-        A SuperElasticity object.
+        A :py:class:`~abaqus.Material.Elastic.SuperElastic.SuperElasticity.SuperElasticity` object.
 
         Raises
         ------

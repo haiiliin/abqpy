@@ -50,32 +50,32 @@ class ConnectorBehaviorOption:
         session.odbs[name].sections[name].behaviorOptions[i]
     """
 
-    # A ConnectorPotentialArray object.
+    # A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object.
     connectorPotentials: ConnectorPotentialArray = ConnectorPotentialArray()
 
-    # A DerivedComponent object.
+    # A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` object.
     derivedComponent: DerivedComponent = DerivedComponent()
 
-    # A ConnectorPotentialArray object.
+    # A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object.
     evolutionPotentials: ConnectorPotentialArray = ConnectorPotentialArray()
 
-    # A ConnectorPotentialArray object.
+    # A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object.
     initiationPotentials: ConnectorPotentialArray = ConnectorPotentialArray()
 
-    # A ConnectorOptions object.
+    # A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object.
     initiationOptions: ConnectorOptions = ConnectorOptions()
 
-    # A ConnectorOptions object.
+    # A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object.
     isotropicOptions: ConnectorOptions = ConnectorOptions()
 
-    # A ConnectorOptions object.
+    # A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object.
     kinematicOptions: ConnectorOptions = ConnectorOptions()
 
-    # A ConnectorOptions object specifying the ConnectorOptions used to define tabular options
+    # A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object specifying the ConnectorOptions used to define tabular options
     # for this ConnectorBehaviorOption.
     options: ConnectorOptions = ConnectorOptions()
 
-    # A TangentialBehavior object
+    # A :py:class:`~abaqus.Connector.TangentialBehavior.TangentialBehavior` object
     tangentialBehavior: TangentialBehavior = TangentialBehavior()
 
     def TangentialBehavior(
@@ -140,7 +140,7 @@ class ConnectorBehaviorOption:
 
         Returns
         -------
-        A TangentialBehavior object.
+        A :py:class:`~abaqus.Connector.TangentialBehavior.TangentialBehavior` object.
         """
         self.tangentialBehavior = tangentialBehavior = TangentialBehavior(
             formulation,
@@ -171,7 +171,7 @@ class ConnectorBehaviorOption:
 
         Returns
         -------
-        A DerivedComponent object.
+        A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` object.
 
         Raises
         ------
@@ -248,7 +248,7 @@ class ConnectorBehaviorOption:
 
         Returns
         -------
-        A ConnectorOptions object.
+        A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object.
 
         Raises
         ------

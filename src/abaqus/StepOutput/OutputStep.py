@@ -93,7 +93,7 @@ class OutputStep(StepBase):
         Returns
         -------
         diagnosticPrint: DiagnosticPrint
-            A DiagnosticPrint object
+            A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object
         """
         self.diagnosticPrint = diagnosticPrint = DiagnosticPrint(
             allke,
@@ -153,7 +153,7 @@ class OutputStep(StepBase):
         Returns
         -------
         monitor: Monitor
-            A Monitor object
+            A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object
         """
         self.monitor = monitor = Monitor(node, dof, frequency)
         return monitor
@@ -195,7 +195,7 @@ class OutputStep(StepBase):
         Returns
         -------
         restart: Restart
-            A Restart object
+            A :py:class:`~abaqus.StepOutput.Restart.Restart` object
 
         Raises
         ------

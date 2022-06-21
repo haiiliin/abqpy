@@ -32,7 +32,7 @@ class RepositorySupport(CommandRegister):
 
         Returns
         -------
-        A RepositorySupport object.
+        A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` object.
         """
         super().__init__()
         pass

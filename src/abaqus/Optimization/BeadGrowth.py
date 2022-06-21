@@ -34,7 +34,7 @@ class BeadGrowth(GeometricRestriction):
         name
             A String specifying the geometric restriction repository key.
         region
-            A Region object specifying the region to which the geometric restriction is applied.
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
         beadGrowth
             A Float specifying the maximum optimization displacement in the growth direction. Either
             **beadGrowth** or **shrink** or both must be specified. The default value is 0.0.
@@ -44,7 +44,7 @@ class BeadGrowth(GeometricRestriction):
 
         Returns
         -------
-        A BeadGrowth object.
+        A :py:class:`~abaqus.Optimization.BeadGrowth.BeadGrowth` object.
         """
         super().__init__()
         pass

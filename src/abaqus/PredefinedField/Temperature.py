@@ -55,7 +55,7 @@ class Temperature(PredefinedField):
     # empty string.
     field: str = ""
 
-    # A Region object specifying the region to which the predefined field is applied. **Region**
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the predefined field is applied. **Region**
     # is ignored if the predefined field has an **instances** member available. **Region** is also
     # ignored if the predefined field has a **distributionType** member available, and
     # **distributionType** = FROM_FILE or FROM_FILE_AND_USER_DEFINED.
@@ -97,7 +97,7 @@ class Temperature(PredefinedField):
         createStepName
             A String specifying the name of the step in which the predefined field is created.
         region
-            A Region object specifying the region to which the predefined field is applied. **Region**
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the predefined field is applied. **Region**
             is ignored if the predefined field has a **distributionType** member available, and
             **distributionType** = FROM_FILE .
         distributionType
@@ -177,7 +177,7 @@ class Temperature(PredefinedField):
 
         Returns
         -------
-        A Temperature object.
+        A :py:class:`~abaqus.PredefinedField.Temperature.Temperature` object.
         """
         super().__init__()
         pass
