@@ -7,7 +7,7 @@
 [![made-with-sphinx-doc](https://img.shields.io/badge/Made%20with-Sphinx-1f425f.svg)](https://www.sphinx-doc.org/)
 [![Anaconda platforms](https://anaconda.org/haiiliin/abqpy/badges/platforms.svg)](https://anaconda.org/haiiliin/abqpy)
 [![GitHub release](https://img.shields.io/github/release/haiiliin/abqpy.svg)](https://GitHub.com/haiiliin/abqpy/releases/)
-[![PyPI download month](https://img.shields.io/pypi/dm/ansicolortags.svg)](https://pypi.python.org/pypi/abqpy/)
+[![PyPI download month](https://img.shields.io/pypi/dm/abqpy.svg)](https://pypi.python.org/pypi/abqpy/)
 
 Migrating pyabaqus to abqpy.
 
