@@ -1487,59 +1487,6 @@ drift of the displacement obtained from the time integration of the given accele
 </dd></dl>
 
 </section>
-<section id="constrainedsketchgeometryarray">
-<h3>ConstrainedSketchGeometryArray<a class="headerlink" href="#constrainedsketchgeometryarray" title="Permalink to this headline">#</a></h3>
-<dl class="py class">
-<dt class="sig sig-object py" id="abaqus.Amplitude.ConstrainedSketchGeometryArray.ConstrainedSketchGeometryArray">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConstrainedSketchGeometryArray</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/ConstrainedSketchGeometryArray.py#L4-L34"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.ConstrainedSketchGeometryArray.ConstrainedSketchGeometryArray" title="Permalink to this definition">#</a></dt>
-<dd><p>The ConstrainedSketchGeometryArray is a sequence of ConstrainedSketchGeometry objects.</p>
-<p class="rubric">Notes</p>
-<p>This object can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sketch</span>
-<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">sketches</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">geometry</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Amplitude.ConstrainedSketchGeometryArray.ConstrainedSketchGeometryArray.findAt" title="abaqus.Amplitude.ConstrainedSketchGeometryArray.ConstrainedSketchGeometryArray.findAt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">findAt</span></code></a>(coordinates[, printWarning])</p></td>
-<td><p>This method returns the ConstrainedSketchGeometry object located at the given coordinates.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<dl class="py method">
-<dt class="sig sig-object py" id="abaqus.Amplitude.ConstrainedSketchGeometryArray.ConstrainedSketchGeometryArray.findAt">
-<span class="sig-name descname"><span class="pre">findAt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinates</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">printWarning</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/ConstrainedSketchGeometryArray.py#L17-L34"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.ConstrainedSketchGeometryArray.ConstrainedSketchGeometryArray.findAt" title="Permalink to this definition">#</a></dt>
-<dd><p>This method returns the ConstrainedSketchGeometry object located at the given
-coordinates.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>coordinates</strong></dt><dd><p>A sequence of Floats specifying the <strong>X</strong>- and <strong>Y</strong>-coordinates of the object to find.</p>
-</dd>
-<dt><strong>printWarning</strong></dt><dd><p>A Boolean specifying whether a message is to be printed to the CLI if no entity is found
-at the specified location. The default value is True.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></dt><dd><p>A <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code> object.</p>
-</dd>
-</dl>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-</section>
 <section id="correlation">
 <h3>Correlation<a class="headerlink" href="#correlation" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
@@ -2264,7 +2211,6 @@ and TOTAL. The default value is STEP.</p>
 <li><a class="reference internal" href="#id1">Amplitude</a></li>
 <li><a class="reference internal" href="#actuatoramplitude">ActuatorAmplitude</a></li>
 <li><a class="reference internal" href="#baselinecorrection">BaselineCorrection</a></li>
-<li><a class="reference internal" href="#constrainedsketchgeometryarray">ConstrainedSketchGeometryArray</a></li>
 <li><a class="reference internal" href="#correlation">Correlation</a></li>
 <li><a class="reference internal" href="#correlationarray">CorrelationArray</a></li>
 <li><a class="reference internal" href="#decayamplitude">DecayAmplitude</a></li>

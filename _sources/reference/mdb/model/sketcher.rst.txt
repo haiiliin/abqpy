@@ -132,6 +132,17 @@ VerticalDimension
 .. autoclass:: abaqus.Sketcher.ConstrainedSketchDimension.VerticalDimension.VerticalDimension
     :members:
 
+ConstrainedSketchGeometry
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry
+    :members:
+
+ConstrainedSketchGeometryArray
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. autoclass:: abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryArray.ConstrainedSketchGeometryArray
+    :members:
 
 Arc3Points
 ~~~~~~~~~~
