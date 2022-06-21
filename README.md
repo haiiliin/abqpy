@@ -81,11 +81,11 @@ jupyter --version
 ```
 
 You may install the latest development version by cloning the 
-[GitHub repository](https://github.com/Haiiliin/abqpy) and use `python` to install from 
+[GitHub repository](https://github.com/haiiliin/abqpy) and use `python` to install from 
 the local directory:
 
 ```shell
-git clone https://github.com/Haiiliin/abqpy.git
+git clone https://github.com/haiiliin/abqpy.git
 cd abqpy
 python setup.py install
 ```
@@ -107,11 +107,11 @@ system variable named `ABAQUS_BAT_PATH`, and set the value to the file path of t
 
 - Create an Abaqus Model
 
-  ![Model](https://github.com/Haiiliin/abqpy/blob/main/docs/source/images/model-code.gif "Create an Abaqus Model")
+  ![Model](https://github.com/haiiliin/abqpy/blob/main/docs/source/images/model-code.gif "Create an Abaqus Model")
 
 - Extract Output Data
 
-  ![Output](https://github.com/Haiiliin/abqpy/blob/main/docs/source/images/output-code.gif "Extract Output Data")
+  ![Output](https://github.com/haiiliin/abqpy/blob/main/docs/source/images/output-code.gif "Extract Output Data")
 
 ## Explore more
 
