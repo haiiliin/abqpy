@@ -66,7 +66,8 @@ class Concrete:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Plastic.Concrete.Concrete.Concrete` object.
+        Concrete
+            A :py:class:`~abaqus.Material.Plastic.Concrete.Concrete.Concrete` object.
 
         Raises
         ------

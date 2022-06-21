@@ -96,7 +96,8 @@ class DiscreteFastener(Fastener):
 
         Returns
         -------
-        A :py:class:`~abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener` object.
+        DiscreteFastener
+            A :py:class:`~abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener` object.
         """
         super().__init__()
         pass

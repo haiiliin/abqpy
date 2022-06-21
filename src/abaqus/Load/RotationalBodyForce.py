@@ -135,7 +135,8 @@ class RotationalBodyForce(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.RotationalBodyForce.RotationalBodyForce` object.
+        RotationalBodyForce
+            A :py:class:`~abaqus.Load.RotationalBodyForce.RotationalBodyForce` object.
         """
         super().__init__()
         pass

@@ -107,7 +107,8 @@ class ContactDamping:
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.ContactDamping.ContactDamping` object.
+        ContactDamping
+            A :py:class:`~abaqus.Interaction.ContactDamping.ContactDamping` object.
         """
         pass
 

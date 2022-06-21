@@ -308,7 +308,8 @@ class SubspaceDynamicsStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep` object.
+        SubspaceDynamicsStep
+            A :py:class:`~abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep` object.
 
         Raises
         ------

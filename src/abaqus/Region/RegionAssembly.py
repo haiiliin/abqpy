@@ -184,7 +184,8 @@ class RegionAssembly(RegionAssemblyBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Region.Surface.Surface` object.
+        Surface
+            A :py:class:`~abaqus.Region.Surface.Surface` object.
         """
         surface = Surface(
             side1Faces,
@@ -285,7 +286,8 @@ class RegionAssembly(RegionAssemblyBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Region.Set.Set` object.
+        Set
+            A :py:class:`~abaqus.Region.Set.Set` object.
         """
         pass
 
@@ -311,7 +313,8 @@ class RegionAssembly(RegionAssemblyBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Region.Set.Set` object.
+        Set
+            A :py:class:`~abaqus.Region.Set.Set` object.
         """
         pass
 

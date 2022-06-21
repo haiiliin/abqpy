@@ -132,7 +132,8 @@ class TypeBC(BoundaryCondition):
             in the global coordinate system. The default value is None.
         Returns
         -------
-        A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
+        TypeBC
+            A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
@@ -168,7 +169,8 @@ class TypeBC(BoundaryCondition):
             in the global coordinate system. The default value is None.
         Returns
         -------
-        A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
+        TypeBC
+            A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
@@ -204,7 +206,8 @@ class TypeBC(BoundaryCondition):
             in the global coordinate system. The default value is None.
         Returns
         -------
-        A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
+        TypeBC
+            A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
@@ -240,7 +243,8 @@ class TypeBC(BoundaryCondition):
             in the global coordinate system. The default value is None.
         Returns
         -------
-        A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
+        TypeBC
+            A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
@@ -276,7 +280,8 @@ class TypeBC(BoundaryCondition):
             in the global coordinate system. The default value is None.
         Returns
         -------
-        A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
+        TypeBC
+            A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
@@ -312,7 +317,8 @@ class TypeBC(BoundaryCondition):
             in the global coordinate system. The default value is None.
         Returns
         -------
-        A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
+        TypeBC
+            A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
@@ -348,7 +354,8 @@ class TypeBC(BoundaryCondition):
             in the global coordinate system. The default value is None.
         Returns
         -------
-        A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
+        TypeBC
+            A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
@@ -384,7 +391,8 @@ class TypeBC(BoundaryCondition):
             in the global coordinate system. The default value is None.
         Returns
         -------
-        A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
+        TypeBC
+            A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 

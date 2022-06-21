@@ -112,7 +112,8 @@ class LineLoad(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.LineLoad.LineLoad` object.
+        LineLoad
+            A :py:class:`~abaqus.Load.LineLoad.LineLoad` object.
         """
         super().__init__()
         pass

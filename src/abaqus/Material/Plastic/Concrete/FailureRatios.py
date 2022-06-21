@@ -63,7 +63,8 @@ class FailureRatios:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Plastic.Concrete.FailureRatios.FailureRatios` object.
+        FailureRatios
+            A :py:class:`~abaqus.Material.Plastic.Concrete.FailureRatios.FailureRatios` object.
 
         Raises
         ------

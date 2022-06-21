@@ -163,7 +163,8 @@ class ContactExp(Interaction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.ContactExp.ContactExp` object.
+        ContactExp
+            A :py:class:`~abaqus.Interaction.ContactExp.ContactExp` object.
         """
         super().__init__()
         pass
@@ -266,7 +267,8 @@ class ContactExp(Interaction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.ContactExp.ContactExp` object.
+        ContactExp
+            A :py:class:`~abaqus.Interaction.ContactExp.ContactExp` object.
         """
         super().__init__()
         pass

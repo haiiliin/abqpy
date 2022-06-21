@@ -212,7 +212,8 @@ class ContactStd(Interaction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.ContactStd.ContactStd` object.
+        ContactStd
+            A :py:class:`~abaqus.Interaction.ContactStd.ContactStd` object.
         """
         super().__init__()
         pass
@@ -338,7 +339,8 @@ class ContactStd(Interaction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.ContactStd.ContactStd` object.
+        ContactStd
+            A :py:class:`~abaqus.Interaction.ContactStd.ContactStd` object.
         """
         super().__init__()
         pass

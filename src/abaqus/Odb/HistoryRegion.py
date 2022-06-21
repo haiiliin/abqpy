@@ -60,7 +60,8 @@ class HistoryRegion:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
+        HistoryRegion
+            A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
         """
         pass
 
@@ -75,7 +76,8 @@ class HistoryRegion:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
+        HistoryRegion
+            A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
         """
         pass
 
@@ -91,7 +93,8 @@ class HistoryRegion:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
+        HistoryRegion
+            A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
         """
         pass
 
@@ -109,7 +112,8 @@ class HistoryRegion:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
+        HistoryRegion
+            A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
         """
         pass
 
@@ -148,7 +152,8 @@ class HistoryRegion:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.HistoryOutput.HistoryOutput` object.
+        HistoryOutput
+            A :py:class:`~abaqus.Odb.HistoryOutput.HistoryOutput` object.
         """
         self.historyOutputs[name] = historyOutput = HistoryOutput(
             name, description, type, validInvariants

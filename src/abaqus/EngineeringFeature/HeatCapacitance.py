@@ -75,7 +75,8 @@ class HeatCapacitance(Inertia):
 
         Returns
         -------
-        A :py:class:`~abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance` object.
+        HeatCapacitance
+            A :py:class:`~abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance` object.
         """
         super().__init__()
         pass

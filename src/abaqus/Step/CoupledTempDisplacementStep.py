@@ -483,7 +483,8 @@ class CoupledTempDisplacementStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep` object.
+        CoupledTempDisplacementStep
+            A :py:class:`~abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep` object.
 
         Raises
         ------

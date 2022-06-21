@@ -497,7 +497,8 @@ class DirectCyclicStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.DirectCyclicStep.DirectCyclicStep` object.
+        DirectCyclicStep
+            A :py:class:`~abaqus.Step.DirectCyclicStep.DirectCyclicStep` object.
 
         Raises
         ------

@@ -100,7 +100,8 @@ class PEGLoad(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.PEGLoad.PEGLoad` object.
+        PEGLoad
+            A :py:class:`~abaqus.Load.PEGLoad.PEGLoad` object.
         """
         super().__init__()
         pass

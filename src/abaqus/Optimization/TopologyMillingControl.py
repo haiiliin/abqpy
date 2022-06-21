@@ -62,7 +62,8 @@ class TopologyMillingControl(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.TopologyMillingControl.TopologyMillingControl` object.
+        TopologyMillingControl
+            A :py:class:`~abaqus.Optimization.TopologyMillingControl.TopologyMillingControl` object.
         """
         super().__init__()
         pass

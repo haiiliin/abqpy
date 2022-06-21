@@ -89,7 +89,8 @@ class Hyperfoam:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Elastic.HyperElastic.HyperFoam.Hyperfoam.Hyperfoam` object.
+        Hyperfoam
+            A :py:class:`~abaqus.Material.Elastic.HyperElastic.HyperFoam.Hyperfoam.Hyperfoam` object.
 
         Raises
         ------

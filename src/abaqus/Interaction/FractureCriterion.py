@@ -124,7 +124,8 @@ class FractureCriterion:
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.FractureCriterion.FractureCriterion` object.
+        FractureCriterion
+            A :py:class:`~abaqus.Interaction.FractureCriterion.FractureCriterion` object.
         """
         pass
 

@@ -101,7 +101,8 @@ class Feature(FeatureBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
+        Feature
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object.
         """
         return Feature()
 
@@ -129,7 +130,8 @@ class Feature(FeatureBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
+        Feature
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -267,7 +269,8 @@ class Feature(FeatureBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
+        Feature
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -302,7 +305,8 @@ class Feature(FeatureBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
+        Feature
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------
@@ -337,7 +341,8 @@ class Feature(FeatureBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Assembly.Feature.Feature` object.
+        Feature
+            A :py:class:`~abaqus.Assembly.Feature.Feature` object.
 
         Raises
         ------

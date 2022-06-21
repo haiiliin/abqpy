@@ -342,7 +342,8 @@ class BuckleStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.BuckleStep.BuckleStep` object.
+        BuckleStep
+            A :py:class:`~abaqus.Step.BuckleStep.BuckleStep` object.
 
         Raises
         ------

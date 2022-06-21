@@ -61,7 +61,8 @@ class SolutionDependentAmplitude(Amplitude):
 
         Returns
         -------
-        A :py:class:`~abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude` object.
+        SolutionDependentAmplitude
+            A :py:class:`~abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude` object.
 
         Raises
         ------

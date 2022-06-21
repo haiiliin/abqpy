@@ -437,7 +437,8 @@ class HeatTransferStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.HeatTransferStep.HeatTransferStep` object.
+        HeatTransferStep
+            A :py:class:`~abaqus.Step.HeatTransferStep.HeatTransferStep` object.
 
         Raises
         ------

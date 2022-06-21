@@ -161,7 +161,8 @@ class Viscoelastic:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Elastic.HyperElastic.ViscoElastic.Viscoelastic.Viscoelastic` object.
+        Viscoelastic
+            A :py:class:`~abaqus.Material.Elastic.HyperElastic.ViscoElastic.Viscoelastic.Viscoelastic` object.
 
         Raises
         ------

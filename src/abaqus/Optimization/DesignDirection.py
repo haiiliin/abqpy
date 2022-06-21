@@ -81,7 +81,8 @@ class DesignDirection(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.DesignDirection.DesignDirection` object.
+        DesignDirection
+            A :py:class:`~abaqus.Optimization.DesignDirection.DesignDirection` object.
         """
         super().__init__()
         pass

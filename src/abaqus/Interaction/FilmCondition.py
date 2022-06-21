@@ -94,7 +94,8 @@ class FilmCondition(Interaction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.FilmCondition.FilmCondition` object.
+        FilmCondition
+            A :py:class:`~abaqus.Interaction.FilmCondition.FilmCondition` object.
         """
         super().__init__()
         pass

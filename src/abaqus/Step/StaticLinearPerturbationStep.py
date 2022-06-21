@@ -269,7 +269,8 @@ class StaticLinearPerturbationStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.StaticLinearPerturbationStep.StaticLinearPerturbationStep` object.
+        StaticLinearPerturbationStep
+            A :py:class:`~abaqus.Step.StaticLinearPerturbationStep.StaticLinearPerturbationStep` object.
 
         Raises
         ------

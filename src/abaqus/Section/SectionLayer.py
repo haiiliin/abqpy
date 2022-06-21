@@ -93,6 +93,7 @@ class SectionLayer:
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.SectionLayer.SectionLayer` object.
+        SectionLayer
+            A :py:class:`~abaqus.Section.SectionLayer.SectionLayer` object.
         """
         pass

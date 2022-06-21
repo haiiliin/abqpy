@@ -110,7 +110,8 @@ class ContourIntegral(Crack):
 
         Returns
         -------
-        A :py:class:`~abaqus.EngineeringFeature.ContourIntegral.ContourIntegral` object.
+        ContourIntegral
+            A :py:class:`~abaqus.EngineeringFeature.ContourIntegral.ContourIntegral` object.
         """
         super().__init__()
         pass

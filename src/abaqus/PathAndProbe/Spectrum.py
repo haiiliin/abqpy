@@ -31,6 +31,7 @@ class Spectrum:
 
         Returns
         -------
-        A :py:class:`~abaqus.PathAndProbe.Spectrum.Spectrum` object.
+        Spectrum
+            A :py:class:`~abaqus.PathAndProbe.Spectrum.Spectrum` object.
         """
         pass

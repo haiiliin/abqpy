@@ -131,7 +131,8 @@ class Moment(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.Moment.Moment` object.
+        Moment
+            A :py:class:`~abaqus.Load.Moment.Moment` object.
         """
         super().__init__()
         pass

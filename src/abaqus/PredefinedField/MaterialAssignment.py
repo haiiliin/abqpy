@@ -79,7 +79,8 @@ class MaterialAssignment(PredefinedField):
 
         Returns
         -------
-        A :py:class:`~abaqus.PredefinedField.MaterialAssignment.MaterialAssignment` object.
+        MaterialAssignment
+            A :py:class:`~abaqus.PredefinedField.MaterialAssignment.MaterialAssignment` object.
         """
         super().__init__()
         pass

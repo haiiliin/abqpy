@@ -111,7 +111,8 @@ class MagneticVectorPotentialBC(BoundaryCondition):
 
         Returns
         -------
-        A :py:class:`~abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC` object.
+        MagneticVectorPotentialBC
+            A :py:class:`~abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC` object.
         """
         super().__init__()
         pass

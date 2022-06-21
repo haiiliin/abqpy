@@ -93,7 +93,8 @@ class Tie(Constraint):
 
         Returns
         -------
-        A :py:class:`~abaqus.Constraint.Tie.Tie` object.
+        Tie
+            A :py:class:`~abaqus.Constraint.Tie.Tie` object.
         """
         super().__init__()
         pass

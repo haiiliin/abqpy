@@ -47,7 +47,8 @@ class Calibration:
 
         Returns
         -------
-        A :py:class:`~abaqus.BoundaryCondition.Calibration.Calibration` object.
+        Calibration
+            A :py:class:`~abaqus.BoundaryCondition.Calibration.Calibration` object.
         """
         pass
 
@@ -72,7 +73,8 @@ class Calibration:
 
         Returns
         -------
-        A :py:class:`~abaqus.Calibration.Behavior.Behavior` object.
+        Behavior
+            A :py:class:`~abaqus.Calibration.Behavior.Behavior` object.
         """
         self.behaviors = behavior = Behavior(name, typeName)
         return behavior
@@ -107,7 +109,8 @@ class Calibration:
 
         Returns
         -------
-        A :py:class:`~abaqus.Calibration.DataSet.DataSet` object.
+        DataSet
+            A :py:class:`~abaqus.Calibration.DataSet.DataSet` object.
         """
         self.dataSets = dataSet = DataSet(name, data, type, form)
         return dataSet

@@ -482,7 +482,8 @@ class ViscoStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.ViscoStep.ViscoStep` object.
+        ViscoStep
+            A :py:class:`~abaqus.Step.ViscoStep.ViscoStep` object.
 
         Raises
         ------

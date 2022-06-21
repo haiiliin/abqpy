@@ -89,7 +89,8 @@ class SpringDashpotToGround(SpringDashpot):
 
         Returns
         -------
-        A :py:class:`~abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround` object.
+        SpringDashpotToGround
+            A :py:class:`~abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround` object.
         """
         super().__init__()
         pass

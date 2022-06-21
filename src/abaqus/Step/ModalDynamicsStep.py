@@ -334,7 +334,8 @@ class ModalDynamicsStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.ModalDynamicsStep.ModalDynamicsStep` object.
+        ModalDynamicsStep
+            A :py:class:`~abaqus.Step.ModalDynamicsStep.ModalDynamicsStep` object.
 
         Raises
         ------

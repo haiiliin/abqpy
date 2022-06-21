@@ -147,7 +147,8 @@ class JobMdb(MdbBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Job.ModelJob.ModelJob` object.
+        ModelJob
+            A :py:class:`~abaqus.Job.ModelJob.ModelJob` object.
 
         Raises
         ------

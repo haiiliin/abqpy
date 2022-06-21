@@ -186,7 +186,8 @@ class ConnectorPlasticity(ConnectorBehaviorOption):
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity` object.
+        ConnectorPlasticity
+            A :py:class:`~abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity` object.
 
         Raises
         ------

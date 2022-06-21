@@ -57,7 +57,8 @@ class EdgeArray:
 
         Returns
         -------
-        A :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
+        EdgeArray
+            A :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
 
         """
         pass

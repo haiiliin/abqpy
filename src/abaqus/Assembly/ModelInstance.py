@@ -104,7 +104,8 @@ class ModelInstance:
 
         Returns
         -------
-        A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object.
+        ModelInstance
+            A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object.
         """
         pass
 

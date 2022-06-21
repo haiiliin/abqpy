@@ -38,6 +38,7 @@ class Leaf:
 
         Returns
         -------
-        A :py:class:`~abaqus.DisplayGroup.Leaf.Leaf` object.
+        Leaf
+            A :py:class:`~abaqus.DisplayGroup.Leaf.Leaf` object.
         """
         pass

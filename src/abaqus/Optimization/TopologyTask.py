@@ -221,7 +221,8 @@ class TopologyTask(OptimizationTask):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.TopologyTask.TopologyTask` object.
+        TopologyTask
+            A :py:class:`~abaqus.Optimization.TopologyTask.TopologyTask` object.
         """
         super().__init__()
         pass

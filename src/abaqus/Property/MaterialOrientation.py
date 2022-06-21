@@ -145,7 +145,8 @@ class MaterialOrientation:
 
         Returns
         -------
-        A :py:class:`~abaqus.Property.MaterialOrientation.MaterialOrientation` object.
+        MaterialOrientation
+            A :py:class:`~abaqus.Property.MaterialOrientation.MaterialOrientation` object.
         """
         pass
 
@@ -257,7 +258,8 @@ class MaterialOrientation:
 
         Returns
         -------
-        A :py:class:`~abaqus.Property.MaterialOrientation.MaterialOrientation` object.
+        MaterialOrientation
+            A :py:class:`~abaqus.Property.MaterialOrientation.MaterialOrientation` object.
         """
         pass
 

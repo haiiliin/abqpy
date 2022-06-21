@@ -136,7 +136,8 @@ class ShellEdgeLoad(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.ShellEdgeLoad.ShellEdgeLoad` object.
+        ShellEdgeLoad
+            A :py:class:`~abaqus.Load.ShellEdgeLoad.ShellEdgeLoad` object.
         """
         super().__init__()
         pass

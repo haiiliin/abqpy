@@ -53,7 +53,8 @@ class Solubility:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Others.MassDiffusion.Solubility.Solubility` object.
+        Solubility
+            A :py:class:`~abaqus.Material.Others.MassDiffusion.Solubility.Solubility` object.
 
         Raises
         ------

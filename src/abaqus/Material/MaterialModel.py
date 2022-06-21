@@ -38,7 +38,8 @@ class MaterialModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Material.Material` object.
+        Material
+            A :py:class:`~abaqus.Material.Material.Material` object.
         """
         self.materials[name] = material = Material(
             name, description, materialIdentifier

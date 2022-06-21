@@ -219,7 +219,8 @@ class Hyperelastic:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Elastic.HyperElastic.Hyperelastic.Hyperelastic` object.
+        Hyperelastic
+            A :py:class:`~abaqus.Material.Elastic.HyperElastic.Hyperelastic.Hyperelastic` object.
 
         Raises
         ------

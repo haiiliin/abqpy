@@ -242,7 +242,8 @@ class PartInstance:
 
         Returns
         -------
-        A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object.
+        PartInstance
+            A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object.
         """
         self.vertices = part.vertices
         self.ignoredEdges = part.ignoredEdges
@@ -295,7 +296,8 @@ class PartInstance:
 
         Returns
         -------
-        A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object.
+        PartInstance
+            A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object.
         """
         pass
 
@@ -354,7 +356,8 @@ class PartInstance:
 
         Returns
         -------
-        A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object.
+        PartInstance
+            A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object.
         """
         pass
 

@@ -47,7 +47,8 @@ class LeafFromInstance(Leaf):
 
         Returns
         -------
-        A :py:class:`~abaqus.DisplayGroup.LeafFromInstance.LeafFromInstance` object.
+        LeafFromInstance
+            A :py:class:`~abaqus.DisplayGroup.LeafFromInstance.LeafFromInstance` object.
 
         Raises
         ------

@@ -108,7 +108,8 @@ class SurfaceToSurfaceContactExp(Interaction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp` object.
+        SurfaceToSurfaceContactExp
+            A :py:class:`~abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp` object.
         """
         super().__init__()
         pass

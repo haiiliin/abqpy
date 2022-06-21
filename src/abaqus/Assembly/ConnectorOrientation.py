@@ -78,7 +78,8 @@ class ConnectorOrientation:
 
         Returns
         -------
-        A :py:class:`~abaqus.Assembly.ConnectorOrientation.ConnectorOrientation` object.
+        ConnectorOrientation
+            A :py:class:`~abaqus.Assembly.ConnectorOrientation.ConnectorOrientation` object.
         """
         pass
 

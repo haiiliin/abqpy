@@ -55,7 +55,8 @@ class FaceArray:
 
         Returns
         -------
-        A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
+        FaceArray
+            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
 
         """
         pass
@@ -96,7 +97,8 @@ class FaceArray:
 
         Returns
         -------
-        A :py:class:`~abaqus.BasicGeometry.Face.Face` object.
+        Face
+            A :py:class:`~abaqus.BasicGeometry.Face.Face` object.
 
         """
         pass
@@ -125,7 +127,8 @@ class FaceArray:
 
         Returns
         -------
-        A :py:class:`~abaqus.BasicGeometry.Face.Face` object or a sequence of Face objects.
+        Face
+            A :py:class:`~abaqus.BasicGeometry.Face.Face` object or a sequence of Face objects.
 
         """
         pass
@@ -168,7 +171,8 @@ class FaceArray:
 
         Returns
         -------
-        A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is a sequence of Face objects.
+        FaceArray
+            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is a sequence of Face objects.
 
         """
         pass
@@ -190,7 +194,8 @@ class FaceArray:
 
         Returns
         -------
-        A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is a sequence of Face objects.
+        FaceArray
+            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is a sequence of Face objects.
 
         """
         pass
@@ -208,7 +213,8 @@ class FaceArray:
 
         Returns
         -------
-        A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is a sequence of Face objects.
+        FaceArray
+            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is a sequence of Face objects.
 
         """
         pass

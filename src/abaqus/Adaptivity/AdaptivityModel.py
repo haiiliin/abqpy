@@ -254,7 +254,8 @@ class AdaptivityModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint` object
+        DisplacementAdaptiveMeshConstraint
+            A :py:class:`~abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint` object
         """
         self.adaptiveMeshConstraints[
             name
@@ -375,7 +376,8 @@ class AdaptivityModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Adaptivity.RemeshingRule.RemeshingRule` object
+        RemeshingRule
+            A :py:class:`~abaqus.Adaptivity.RemeshingRule.RemeshingRule` object
         """
         self.remeshingRules[name] = remeshingRule = RemeshingRule(
             name,
@@ -472,7 +474,8 @@ class AdaptivityModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint` object
+        VelocityAdaptiveMeshConstraint
+            A :py:class:`~abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint` object
         """
         self.adaptiveMeshConstraints[
             name

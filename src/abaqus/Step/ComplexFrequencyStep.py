@@ -336,7 +336,8 @@ class ComplexFrequencyStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep` object.
+        ComplexFrequencyStep
+            A :py:class:`~abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep` object.
 
         Raises
         ------

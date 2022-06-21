@@ -44,7 +44,8 @@ class BeadGrowth(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.BeadGrowth.BeadGrowth` object.
+        BeadGrowth
+            A :py:class:`~abaqus.Optimization.BeadGrowth.BeadGrowth` object.
         """
         super().__init__()
         pass

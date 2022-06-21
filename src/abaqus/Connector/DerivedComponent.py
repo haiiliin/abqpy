@@ -57,7 +57,8 @@ class DerivedComponent:
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` object.
+        DerivedComponent
+            A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` object.
 
         Raises
         ------
@@ -147,7 +148,8 @@ class DerivedComponent:
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.CDCTerm.CDCTerm` object.
+        CDCTerm
+            A :py:class:`~abaqus.Connector.CDCTerm.CDCTerm` object.
 
         Raises
         ------

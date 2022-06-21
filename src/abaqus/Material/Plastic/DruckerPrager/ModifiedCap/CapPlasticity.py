@@ -73,7 +73,8 @@ class CapPlasticity:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapPlasticity.CapPlasticity` object.
+        CapPlasticity
+            A :py:class:`~abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapPlasticity.CapPlasticity` object.
 
         Raises
         ------

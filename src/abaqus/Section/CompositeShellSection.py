@@ -139,7 +139,8 @@ class CompositeShellSection(GeometryShellSection):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.CompositeShellSection.CompositeShellSection` object.
+        CompositeShellSection
+            A :py:class:`~abaqus.Section.CompositeShellSection.CompositeShellSection` object.
         """
         super().__init__()
         pass

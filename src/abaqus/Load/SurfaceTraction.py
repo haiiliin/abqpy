@@ -208,7 +208,8 @@ class SurfaceTraction(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.SurfaceTraction.SurfaceTraction` object.
+        SurfaceTraction
+            A :py:class:`~abaqus.Load.SurfaceTraction.SurfaceTraction` object.
         """
         super().__init__()
         pass

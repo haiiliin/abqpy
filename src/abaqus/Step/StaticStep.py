@@ -507,7 +507,8 @@ class StaticStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.StaticStep.StaticStep` object.
+        StaticStep
+            A :py:class:`~abaqus.Step.StaticStep.StaticStep` object.
 
         Raises
         ------

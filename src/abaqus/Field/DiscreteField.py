@@ -70,7 +70,8 @@ class DiscreteField(Field):
 
         Returns
         -------
-        A :py:class:`~abaqus.Field.DiscreteField.DiscreteField` object.
+        DiscreteField
+            A :py:class:`~abaqus.Field.DiscreteField.DiscreteField` object.
 
         Raises
         ------
@@ -124,7 +125,8 @@ class DiscreteField(Field):
 
         Returns
         -------
-        A :py:class:`~abaqus.Field.DiscreteField.DiscreteField` object.
+        DiscreteField
+            A :py:class:`~abaqus.Field.DiscreteField.DiscreteField` object.
 
         Raises
         ------
@@ -163,7 +165,8 @@ class DiscreteField(Field):
 
         Returns
         -------
-        A :py:class:`~abaqus.Field.DiscreteField.DiscreteField` object.
+        DiscreteField
+            A :py:class:`~abaqus.Field.DiscreteField.DiscreteField` object.
 
         Raises
         ------

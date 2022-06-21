@@ -47,7 +47,8 @@ class LeafFromOdbElementPlies(Leaf):
 
         Returns
         -------
-        A :py:class:`~abaqus.DisplayGroup.LeafFromOdbElementPlies.LeafFromOdbElementPlies` object.
+        LeafFromOdbElementPlies
+            A :py:class:`~abaqus.DisplayGroup.LeafFromOdbElementPlies.LeafFromOdbElementPlies` object.
         """
         super().__init__(DEFAULT_MODEL)
         pass

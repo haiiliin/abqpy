@@ -91,7 +91,8 @@ class ConcPoreFluid(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.ConcPoreFluid.ConcPoreFluid` object.
+        ConcPoreFluid
+            A :py:class:`~abaqus.Load.ConcPoreFluid.ConcPoreFluid` object.
         """
         super().__init__()
         pass

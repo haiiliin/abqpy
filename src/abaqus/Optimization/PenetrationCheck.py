@@ -51,7 +51,8 @@ class PenetrationCheck(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.PenetrationCheck.PenetrationCheck` object.
+        PenetrationCheck
+            A :py:class:`~abaqus.Optimization.PenetrationCheck.PenetrationCheck` object.
         """
         super().__init__()
         pass

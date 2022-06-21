@@ -78,7 +78,8 @@ class ConcreteTensionDamage:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Plastic.Concrete.ConcreteTensionDamage.ConcreteTensionDamage` object. 
+        ConcreteTensionDamage
+            A :py:class:`~abaqus.Material.Plastic.Concrete.ConcreteTensionDamage.ConcreteTensionDamage` object. 
 
         Raises
         ------

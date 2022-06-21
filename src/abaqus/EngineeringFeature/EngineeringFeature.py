@@ -174,7 +174,8 @@ class EngineeringFeature(EngineeringFeatureBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.EngineeringFeature.ContourIntegral.ContourIntegral` object.
+        ContourIntegral
+            A :py:class:`~abaqus.EngineeringFeature.ContourIntegral.ContourIntegral` object.
         """
         self.cracks[name] = contourIntegral = ContourIntegral(
             name,
@@ -232,7 +233,8 @@ class EngineeringFeature(EngineeringFeatureBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.EngineeringFeature.DebondVCCT.DebondVCCT` object.
+        DebondVCCT
+            A :py:class:`~abaqus.EngineeringFeature.DebondVCCT.DebondVCCT` object.
         """
         self.cracks[name] = debondVCCT = DebondVCCT(
             name,
@@ -304,7 +306,8 @@ class EngineeringFeature(EngineeringFeatureBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener` object.
+        DiscreteFastener
+            A :py:class:`~abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener` object.
         """
         self.fasteners[name] = discreteFastener = DiscreteFastener(
             name,
@@ -354,7 +357,8 @@ class EngineeringFeature(EngineeringFeatureBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance` object.
+        HeatCapacitance
+            A :py:class:`~abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance` object.
         """
         self.inertias[name] = heatCapacitance = HeatCapacitance(
             name, region, table, temperatureDependency, dependencies
@@ -398,7 +402,8 @@ class EngineeringFeature(EngineeringFeatureBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass` object.
+        NonstructuralMass
+            A :py:class:`~abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass` object.
         """
         self.inertias[name] = nonstructuralMass = NonstructuralMass(
             name, region, units, magnitude, distribution
@@ -552,7 +557,8 @@ class EngineeringFeature(EngineeringFeatureBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.EngineeringFeature.PointFastener.PointFastener` object.
+        PointFastener
+            A :py:class:`~abaqus.EngineeringFeature.PointFastener.PointFastener` object.
         """
         self.fasteners[name] = pointFastener = PointFastener(
             name,
@@ -661,7 +667,8 @@ class EngineeringFeature(EngineeringFeatureBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.EngineeringFeature.PointMassInertia.PointMassInertia` object.
+        PointMassInertia
+            A :py:class:`~abaqus.EngineeringFeature.PointMassInertia.PointMassInertia` object.
         """
         self.inertias[name] = pointMassInertia = PointMassInertia(
             name,
@@ -734,7 +741,8 @@ class EngineeringFeature(EngineeringFeatureBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround` object.
+        SpringDashpotToGround
+            A :py:class:`~abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround` object.
         """
         self.springDashpots[name] = springDashpotToGround = SpringDashpotToGround(
             name,
@@ -813,7 +821,8 @@ class EngineeringFeature(EngineeringFeatureBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot` object.
+        TwoPointSpringDashpot
+            A :py:class:`~abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot` object.
         """
         self.springDashpots[name] = twoPointSpringDashpot = TwoPointSpringDashpot(
             name,
@@ -900,7 +909,8 @@ class EngineeringFeature(EngineeringFeatureBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.EngineeringFeature.XFEMCrack.XFEMCrack` object.
+        XFEMCrack
+            A :py:class:`~abaqus.EngineeringFeature.XFEMCrack.XFEMCrack` object.
         """
         self.cracks[name] = xFEMCrack = XFEMCrack(
             name,

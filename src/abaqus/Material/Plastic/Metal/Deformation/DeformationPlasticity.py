@@ -50,7 +50,8 @@ class DeformationPlasticity:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Plastic.Metal.Deformation.DeformationPlasticity.DeformationPlasticity` object.
+        DeformationPlasticity
+            A :py:class:`~abaqus.Material.Plastic.Metal.Deformation.DeformationPlasticity.DeformationPlasticity` object.
 
         Raises
         ------

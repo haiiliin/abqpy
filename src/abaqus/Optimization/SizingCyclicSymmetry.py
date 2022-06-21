@@ -57,7 +57,8 @@ class SizingCyclicSymmetry(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry` object.
+        SizingCyclicSymmetry
+            A :py:class:`~abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry` object.
         """
         super().__init__()
         pass

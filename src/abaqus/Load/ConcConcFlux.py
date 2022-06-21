@@ -91,7 +91,8 @@ class ConcConcFlux(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.ConcConcFlux.ConcConcFlux` object.
+        ConcConcFlux
+            A :py:class:`~abaqus.Load.ConcConcFlux.ConcConcFlux` object.
         """
         super().__init__()
         pass

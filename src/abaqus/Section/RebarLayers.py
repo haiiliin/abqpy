@@ -47,7 +47,8 @@ class RebarLayers:
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object.
+        RebarLayers
+            A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object.
         """
         pass
 

@@ -47,7 +47,8 @@ class MoistureSwelling:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Others.PoreFluidFlow.MoistureSwelling.MoistureSwelling.MoistureSwelling` object.
+        MoistureSwelling
+            A :py:class:`~abaqus.Material.Others.PoreFluidFlow.MoistureSwelling.MoistureSwelling.MoistureSwelling` object.
         """
         pass
 

@@ -212,7 +212,8 @@ class OdbFrame:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
+        FieldOutput
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
@@ -241,7 +242,8 @@ class OdbFrame:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
+        FieldOutput
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 

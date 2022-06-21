@@ -65,7 +65,8 @@ class Viscosity:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Others.Mechanical.Viscosity.Viscosity.Viscosity` object.
+        Viscosity
+            A :py:class:`~abaqus.Material.Others.Mechanical.Viscosity.Viscosity.Viscosity` object.
 
         Raises
         ------

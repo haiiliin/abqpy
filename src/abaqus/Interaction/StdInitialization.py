@@ -65,7 +65,8 @@ class StdInitialization(ContactInitialization):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.StdInitialization.StdInitialization` object.
+        StdInitialization
+            A :py:class:`~abaqus.Interaction.StdInitialization.StdInitialization` object.
 
         Raises
         ------

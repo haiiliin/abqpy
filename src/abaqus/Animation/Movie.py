@@ -97,7 +97,8 @@ class Movie:
 
         Returns
         -------
-        A :py:class:`~abaqus.Animation.Movie.Movie` object.
+        Movie
+            A :py:class:`~abaqus.Animation.Movie.Movie` object.
 
         Raises
         ------

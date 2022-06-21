@@ -44,7 +44,8 @@ class Hysteresis:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Elastic.HyperElastic.ViscoElastic.Hysteresis.Hysteresis` object.
+        Hysteresis
+            A :py:class:`~abaqus.Material.Elastic.HyperElastic.ViscoElastic.Hysteresis.Hysteresis` object.
 
         Raises
         ------

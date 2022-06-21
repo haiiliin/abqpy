@@ -88,7 +88,8 @@ class BrittleCracking:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Plastic.Concrete.BrittleCracking.BrittleCracking` object.
+        BrittleCracking
+            A :py:class:`~abaqus.Material.Plastic.Concrete.BrittleCracking.BrittleCracking` object.
         """
         pass
 

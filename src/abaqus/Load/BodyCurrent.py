@@ -91,7 +91,8 @@ class BodyCurrent(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.BodyCurrent.BodyCurrent` object.
+        BodyCurrent
+            A :py:class:`~abaqus.Load.BodyCurrent.BodyCurrent` object.
         """
         super().__init__()
         pass

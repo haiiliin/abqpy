@@ -91,7 +91,8 @@ class SurfaceHeatFlux(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux` object.
+        SurfaceHeatFlux
+            A :py:class:`~abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux` object.
         """
         super().__init__()
         pass

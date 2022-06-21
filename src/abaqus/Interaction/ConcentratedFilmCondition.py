@@ -105,7 +105,8 @@ class ConcentratedFilmCondition(Interaction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.ConcentratedFilmCondition.ConcentratedFilmCondition` object.
+        ConcentratedFilmCondition
+            A :py:class:`~abaqus.Interaction.ConcentratedFilmCondition.ConcentratedFilmCondition` object.
         """
         super().__init__()
         pass

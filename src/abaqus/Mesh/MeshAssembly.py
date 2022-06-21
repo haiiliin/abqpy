@@ -624,7 +624,8 @@ class MeshAssembly(AssemblyBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Mesh.MeshStats.MeshStats` object.
+        MeshStats
+            A :py:class:`~abaqus.Mesh.MeshStats.MeshStats` object.
         """
         pass
 
@@ -676,7 +677,8 @@ class MeshAssembly(AssemblyBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Region.Region.Region` object, or None.
+        Region
+            A :py:class:`~abaqus.Region.Region.Region` object, or None.
         """
         pass
 

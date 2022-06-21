@@ -91,7 +91,8 @@ class ConcCurrent(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.ConcCurrent.ConcCurrent` object.
+        ConcCurrent
+            A :py:class:`~abaqus.Load.ConcCurrent.ConcCurrent` object.
         """
         super().__init__()
         pass

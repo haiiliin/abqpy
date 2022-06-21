@@ -93,7 +93,8 @@ class Permeability:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Others.PoreFluidFlow.Permeability.Permeability.Permeability` object.
+        Permeability
+            A :py:class:`~abaqus.Material.Others.PoreFluidFlow.Permeability.Permeability.Permeability` object.
 
         Raises
         ------

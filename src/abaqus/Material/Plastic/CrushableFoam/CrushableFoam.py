@@ -82,7 +82,8 @@ class CrushableFoam:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Plastic.CrushableFoam.CrushableFoam.CrushableFoam` object.
+        CrushableFoam
+            A :py:class:`~abaqus.Material.Plastic.CrushableFoam.CrushableFoam.CrushableFoam` object.
 
         Raises
         ------

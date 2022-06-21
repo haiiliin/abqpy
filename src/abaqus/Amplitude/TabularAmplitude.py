@@ -70,7 +70,8 @@ class TabularAmplitude(Amplitude):
 
         Returns
         -------
-        A :py:class:`~abaqus.Amplitude.TabularAmplitude.TabularAmplitude` object.
+        TabularAmplitude
+            A :py:class:`~abaqus.Amplitude.TabularAmplitude.TabularAmplitude` object.
 
         Raises
         ------

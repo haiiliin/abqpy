@@ -278,7 +278,8 @@ class MappedField(AnalyticalField):
 
         Returns
         -------
-        A :py:class:`~abaqus.Field.MappedField.MappedField` object.
+        MappedField
+            A :py:class:`~abaqus.Field.MappedField.MappedField` object.
 
         Raises
         ------

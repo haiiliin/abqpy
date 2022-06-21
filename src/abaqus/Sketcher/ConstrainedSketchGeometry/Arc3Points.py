@@ -27,7 +27,8 @@ class Arc3Points(ConstrainedSketchGeometry):
 
         Returns
         -------
-        A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the arc cannot be created).
+        ConstrainedSketchGeometry
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the arc cannot be created).
 
         """
         pass

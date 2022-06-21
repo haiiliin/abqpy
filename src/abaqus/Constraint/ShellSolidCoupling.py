@@ -77,7 +77,8 @@ class ShellSolidCoupling(Constraint):
 
         Returns
         -------
-        A :py:class:`~abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling` object.
+        ShellSolidCoupling
+            A :py:class:`~abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling` object.
         """
         super().__init__()
         pass

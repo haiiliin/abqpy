@@ -57,7 +57,8 @@ class FilmConditionProp(ContactProperty):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.FilmConditionProp.FilmConditionProp` object.
+        FilmConditionProp
+            A :py:class:`~abaqus.Interaction.FilmConditionProp.FilmConditionProp` object.
         """
         super().__init__(name)
         pass

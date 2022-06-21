@@ -37,7 +37,8 @@ class JouleHeatFraction:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Others.HeatTransfer.JouleHeatFraction.JouleHeatFraction` object.
+        JouleHeatFraction
+            A :py:class:`~abaqus.Material.Others.HeatTransfer.JouleHeatFraction.JouleHeatFraction` object.
 
         Raises
         ------

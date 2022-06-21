@@ -69,7 +69,8 @@ class SingleTermDesignResponse(DesignResponse):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse` object.
+        SingleTermDesignResponse
+            A :py:class:`~abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse` object.
         """
         super().__init__()
         pass

@@ -62,7 +62,8 @@ class StdXplCosimulation(Interaction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.StdXplCosimulation.StdXplCosimulation` object.
+        StdXplCosimulation
+            A :py:class:`~abaqus.Interaction.StdXplCosimulation.StdXplCosimulation` object.
         """
         super().__init__()
         pass

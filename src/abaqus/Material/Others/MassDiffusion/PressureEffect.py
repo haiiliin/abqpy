@@ -54,7 +54,8 @@ class PressureEffect:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Others.MassDiffusion.PressureEffect.PressureEffect` object.
+        PressureEffect
+            A :py:class:`~abaqus.Material.Others.MassDiffusion.PressureEffect.PressureEffect` object.
 
         Raises
         ------

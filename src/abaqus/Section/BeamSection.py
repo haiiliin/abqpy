@@ -183,7 +183,8 @@ class BeamSection(Section):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.BeamSection.BeamSection` object.
+        BeamSection
+            A :py:class:`~abaqus.Section.BeamSection.BeamSection` object.
         """
         super().__init__()
         pass

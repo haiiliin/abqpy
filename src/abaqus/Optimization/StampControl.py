@@ -82,7 +82,8 @@ class StampControl(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.StampControl.StampControl` object.
+        StampControl
+            A :py:class:`~abaqus.Optimization.StampControl.StampControl` object.
         """
         super().__init__()
         pass

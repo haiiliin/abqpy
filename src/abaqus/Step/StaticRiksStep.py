@@ -475,7 +475,8 @@ class StaticRiksStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.StaticRiksStep.StaticRiksStep` object.
+        StaticRiksStep
+            A :py:class:`~abaqus.Step.StaticRiksStep.StaticRiksStep` object.
 
         Raises
         ------

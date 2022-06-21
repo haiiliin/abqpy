@@ -141,7 +141,8 @@ class HomogeneousShellSection(GeometryShellSection):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.HomogeneousShellSection.HomogeneousShellSection` object.
+        HomogeneousShellSection
+            A :py:class:`~abaqus.Section.HomogeneousShellSection.HomogeneousShellSection` object.
         """
         super().__init__()
         pass

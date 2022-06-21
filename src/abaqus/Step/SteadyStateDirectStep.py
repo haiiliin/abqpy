@@ -317,7 +317,8 @@ class SteadyStateDirectStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep` object.
+        SteadyStateDirectStep
+            A :py:class:`~abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep` object.
 
         Raises
         ------

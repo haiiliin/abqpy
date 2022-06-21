@@ -46,7 +46,8 @@ class LeafFromReferencePoint(Leaf):
 
         Returns
         -------
-        A :py:class:`~abaqus.DisplayGroup.LeafFromReferencePoint.LeafFromReferencePoint` object.
+        LeafFromReferencePoint
+            A :py:class:`~abaqus.DisplayGroup.LeafFromReferencePoint.LeafFromReferencePoint` object.
         """
         super().__init__(DEFAULT_MODEL)
         pass

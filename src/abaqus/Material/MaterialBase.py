@@ -474,7 +474,8 @@ class MaterialBase:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Material.Material` object.
+        Material
+            A :py:class:`~abaqus.Material.Material.Material` object.
         """
         self.name, self.description, self.materialIdentifier = (
             name,

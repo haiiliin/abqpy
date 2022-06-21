@@ -44,7 +44,8 @@ class CircularProfile(Profile):
 
         Returns
         -------
-        A :py:class:`~abaqus.BeamSectionProfile.CircularProfile.CircularProfile` object.
+        CircularProfile
+            A :py:class:`~abaqus.BeamSectionProfile.CircularProfile.CircularProfile` object.
 
         Raises
         ------

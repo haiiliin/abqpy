@@ -160,7 +160,8 @@ class ConnVelocityBC(BoundaryCondition):
 
         Returns
         -------
-        A :py:class:`~abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC` object.
+        ConnVelocityBC
+            A :py:class:`~abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC` object.
         """
         super().__init__()
         pass

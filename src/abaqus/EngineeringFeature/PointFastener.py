@@ -183,7 +183,8 @@ class PointFastener(Fastener):
 
         Returns
         -------
-        A :py:class:`~abaqus.EngineeringFeature.PointFastener.PointFastener` object.
+        PointFastener
+            A :py:class:`~abaqus.EngineeringFeature.PointFastener.PointFastener` object.
         """
         super().__init__()
         pass

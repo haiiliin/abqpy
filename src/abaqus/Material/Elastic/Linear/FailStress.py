@@ -60,7 +60,8 @@ class FailStress:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Elastic.Linear.FailStress.FailStress` object.
+        FailStress
+            A :py:class:`~abaqus.Material.Elastic.Linear.FailStress.FailStress` object.
 
         Raises
         ------

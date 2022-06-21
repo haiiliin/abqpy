@@ -63,7 +63,8 @@ class FluidExchange(Interaction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.FluidExchange.FluidExchange` object.
+        FluidExchange
+            A :py:class:`~abaqus.Interaction.FluidExchange.FluidExchange` object.
         """
         super().__init__()
         pass

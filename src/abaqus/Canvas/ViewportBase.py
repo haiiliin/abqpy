@@ -484,7 +484,8 @@ class ViewportBase:
 
         Returns
         -------
-        A :py:class:`~abaqus.Canvas.Viewport.Viewport` object.
+        Viewport
+            A :py:class:`~abaqus.Canvas.Viewport.Viewport` object.
 
         Raises
         ------

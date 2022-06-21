@@ -70,7 +70,8 @@ class TopologyDemoldControl(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl` object.
+        TopologyDemoldControl
+            A :py:class:`~abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl` object.
         """
         super().__init__()
         pass

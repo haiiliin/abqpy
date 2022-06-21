@@ -448,7 +448,8 @@ class CavityRadiation(Interaction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.CavityRadiation.CavityRadiation` object.
+        CavityRadiation
+            A :py:class:`~abaqus.Interaction.CavityRadiation.CavityRadiation` object.
         """
         super().__init__()
         pass

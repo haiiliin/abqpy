@@ -155,7 +155,8 @@ class SubmodelBC(BoundaryCondition):
 
         Returns
         -------
-        A :py:class:`~abaqus.BoundaryCondition.SubmodelBC.SubmodelBC` object.
+        SubmodelBC
+            A :py:class:`~abaqus.BoundaryCondition.SubmodelBC.SubmodelBC` object.
         """
         super().__init__()
         pass

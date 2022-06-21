@@ -186,7 +186,8 @@ class ConnDisplacementBC(BoundaryCondition):
 
         Returns
         -------
-        A :py:class:`~abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC` object.
+        ConnDisplacementBC
+            A :py:class:`~abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC` object.
         """
         super().__init__()
         pass

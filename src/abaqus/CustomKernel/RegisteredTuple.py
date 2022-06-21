@@ -33,7 +33,8 @@ class RegisteredTuple(CommandRegister):
 
         Returns
         -------
-        A :py:class:`~abaqus.CustomKernel.RegisteredTuple.RegisteredTuple` object.
+        RegisteredTuple
+            A :py:class:`~abaqus.CustomKernel.RegisteredTuple.RegisteredTuple` object.
         """
         super().__init__()
         pass

@@ -141,7 +141,8 @@ class Plastic:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Plastic.Plastic.Plastic` object.
+        Plastic
+            A :py:class:`~abaqus.Material.Plastic.Plastic.Plastic` object.
 
         Raises
         ------

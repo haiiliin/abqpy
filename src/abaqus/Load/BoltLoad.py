@@ -91,7 +91,8 @@ class BoltLoad(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.BoltLoad.BoltLoad` object.
+        BoltLoad
+            A :py:class:`~abaqus.Load.BoltLoad.BoltLoad` object.
 
         Raises
         ------

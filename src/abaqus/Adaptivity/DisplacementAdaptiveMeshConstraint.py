@@ -121,7 +121,8 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
 
         Returns
         -------
-        A :py:class:`~abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint` object.
+        DisplacementAdaptiveMeshConstraint
+            A :py:class:`~abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint` object.
         """
         super().__init__(name, region=region, category=MECHANICAL, localCsys=localCsys)
 

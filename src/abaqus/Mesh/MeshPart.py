@@ -630,7 +630,8 @@ class MeshPart(PartBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Mesh.MeshStats.MeshStats` object.
+        MeshStats
+            A :py:class:`~abaqus.Mesh.MeshStats.MeshStats` object.
         """
         pass
 
@@ -678,7 +679,8 @@ class MeshPart(PartBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Region.Region.Region` object, or None.
+        Region
+            A :py:class:`~abaqus.Region.Region.Region` object, or None.
         """
         pass
 
@@ -1146,7 +1148,8 @@ class MeshPart(PartBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Mesh.MeshNode.MeshNode` object.
+        MeshNode
+            A :py:class:`~abaqus.Mesh.MeshNode.MeshNode` object.
         """
         node = MeshNode(coordinates, localCsys, label)
         self.nodes.append(node)

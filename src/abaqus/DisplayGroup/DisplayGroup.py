@@ -83,7 +83,8 @@ class DisplayGroup:
 
         Returns
         -------
-        A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object.
+        DisplayGroup
+            A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object.
         """
         pass
 

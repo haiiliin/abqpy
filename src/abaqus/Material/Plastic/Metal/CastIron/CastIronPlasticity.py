@@ -63,7 +63,8 @@ class CastIronPlasticity:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Plastic.Metal.CastIron.CastIronPlasticity.CastIronPlasticity` object.
+        CastIronPlasticity
+            A :py:class:`~abaqus.Material.Plastic.Metal.CastIron.CastIronPlasticity.CastIronPlasticity` object.
 
         Raises
         ------

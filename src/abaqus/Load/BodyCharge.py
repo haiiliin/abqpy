@@ -91,7 +91,8 @@ class BodyCharge(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.BodyCharge.BodyCharge` object.
+        BodyCharge
+            A :py:class:`~abaqus.Load.BodyCharge.BodyCharge` object.
         """
         super().__init__()
         pass

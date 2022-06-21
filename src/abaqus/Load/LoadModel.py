@@ -96,7 +96,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.BodyCharge.BodyCharge` object.
+        BodyCharge
+            A :py:class:`~abaqus.Load.BodyCharge.BodyCharge` object.
         """
         self.loads[name] = load = BodyCharge(
             name, createStepName, region, magnitude, amplitude, distributionType, field
@@ -148,7 +149,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux` object.
+        BodyConcentrationFlux
+            A :py:class:`~abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux` object.
         """
         self.loads[name] = load = BodyConcentrationFlux(
             name, createStepName, region, magnitude, field, distributionType, amplitude
@@ -200,7 +202,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.BodyCurrent.BodyCurrent` object.
+        BodyCurrent
+            A :py:class:`~abaqus.Load.BodyCurrent.BodyCurrent` object.
         """
         self.loads[name] = load = BodyCurrent(
             name, createStepName, region, magnitude, amplitude, distributionType, field
@@ -253,7 +256,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.BodyCurrentDensity.BodyCurrentDensity` object.
+        BodyCurrentDensity
+            A :py:class:`~abaqus.Load.BodyCurrentDensity.BodyCurrentDensity` object.
         """
         self.loads[name] = load = BodyCurrentDensity(
             name,
@@ -319,7 +323,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.BodyForce.BodyForce` object.
+        BodyForce
+            A :py:class:`~abaqus.Load.BodyForce.BodyForce` object.
         """
         self.loads[name] = load = BodyForce(
             name,
@@ -379,7 +384,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.BodyHeatFlux.BodyHeatFlux` object.
+        BodyHeatFlux
+            A :py:class:`~abaqus.Load.BodyHeatFlux.BodyHeatFlux` object.
         """
         self.loads[name] = load = BodyHeatFlux(
             name, createStepName, region, magnitude, field, distributionType, amplitude
@@ -431,7 +437,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.BoltLoad.BoltLoad` object.
+        BoltLoad
+            A :py:class:`~abaqus.Load.BoltLoad.BoltLoad` object.
 
         Raises
         ------
@@ -487,7 +494,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.ConcCharge.ConcCharge` object.
+        ConcCharge
+            A :py:class:`~abaqus.Load.ConcCharge.ConcCharge` object.
         """
         self.loads[name] = load = ConcCharge(
             name, createStepName, region, magnitude, distributionType, field, amplitude
@@ -539,7 +547,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.ConcConcFlux.ConcConcFlux` object.
+        ConcConcFlux
+            A :py:class:`~abaqus.Load.ConcConcFlux.ConcConcFlux` object.
         """
         self.loads[name] = load = ConcConcFlux(
             name, createStepName, region, magnitude, distributionType, field, amplitude
@@ -591,7 +600,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.ConcCurrent.ConcCurrent` object.
+        ConcCurrent
+            A :py:class:`~abaqus.Load.ConcCurrent.ConcCurrent` object.
         """
         self.loads[name] = load = ConcCurrent(
             name, createStepName, region, magnitude, distributionType, field, amplitude
@@ -661,7 +671,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.ConcentratedForce.ConcentratedForce` object.
+        ConcentratedForce
+            A :py:class:`~abaqus.Load.ConcentratedForce.ConcentratedForce` object.
         """
         self.loads[name] = load = ConcentratedForce(
             name,
@@ -727,7 +738,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux` object.
+        ConcentratedHeatFlux
+            A :py:class:`~abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux` object.
         """
         self.loads[name] = load = ConcentratedHeatFlux(
             name,
@@ -786,7 +798,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.ConcPoreFluid.ConcPoreFluid` object.
+        ConcPoreFluid
+            A :py:class:`~abaqus.Load.ConcPoreFluid.ConcPoreFluid` object.
         """
         self.loads[name] = load = ConcPoreFluid(
             name, createStepName, region, magnitude, distributionType, field, amplitude
@@ -851,7 +864,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.ConnectorForce.ConnectorForce` object.
+        ConnectorForce
+            A :py:class:`~abaqus.Load.ConnectorForce.ConnectorForce` object.
         """
         self.loads[name] = load = ConnectorForce(
             name,
@@ -923,7 +937,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.ConnectorMoment.ConnectorMoment` object.
+        ConnectorMoment
+            A :py:class:`~abaqus.Load.ConnectorMoment.ConnectorMoment` object.
         """
         self.loads[name] = load = ConnectorMoment(
             name,
@@ -989,7 +1004,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.CoriolisForce.CoriolisForce` object.
+        CoriolisForce
+            A :py:class:`~abaqus.Load.CoriolisForce.CoriolisForce` object.
         """
         self.loads[name] = load = CoriolisForce(
             name,
@@ -1056,7 +1072,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.Gravity.Gravity` object.
+        Gravity
+            A :py:class:`~abaqus.Load.Gravity.Gravity` object.
         """
         self.loads[name] = load = Gravity(
             name,
@@ -1253,7 +1270,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.LineLoad.LineLoad` object.
+        LineLoad
+            A :py:class:`~abaqus.Load.LineLoad.LineLoad` object.
         """
         self.loads[name] = load = LineLoad(
             name,
@@ -1332,7 +1350,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.Moment.Moment` object.
+        Moment
+            A :py:class:`~abaqus.Load.Moment.Moment` object.
         """
         self.loads[name] = load = Moment(
             name,
@@ -1401,7 +1420,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.PEGLoad.PEGLoad` object.
+        PEGLoad
+            A :py:class:`~abaqus.Load.PEGLoad.PEGLoad` object.
         """
         self.loads[name] = load = PEGLoad(
             name,
@@ -1476,7 +1496,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.PipePressure.PipePressure` object.
+        PipePressure
+            A :py:class:`~abaqus.Load.PipePressure.PipePressure` object.
         """
         self.loads[name] = load = PipePressure(
             name,
@@ -1551,7 +1572,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.Pressure.Pressure` object.
+        Pressure
+            A :py:class:`~abaqus.Load.Pressure.Pressure` object.
         """
         self.loads[name] = load = Pressure(
             name,
@@ -1628,7 +1650,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.RotationalBodyForce.RotationalBodyForce` object.
+        RotationalBodyForce
+            A :py:class:`~abaqus.Load.RotationalBodyForce.RotationalBodyForce` object.
         """
         self.loads[name] = load = RotationalBodyForce(
             name,
@@ -1733,7 +1756,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.ShellEdgeLoad.ShellEdgeLoad` object.
+        ShellEdgeLoad
+            A :py:class:`~abaqus.Load.ShellEdgeLoad.ShellEdgeLoad` object.
         """
         self.loads[name] = load = ShellEdgeLoad(
             name,
@@ -1807,7 +1831,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.SubmodelSB.SubmodelSB` object.
+        SubmodelSB
+            A :py:class:`~abaqus.Load.SubmodelSB.SubmodelSB` object.
         """
         self.loads[name] = load = SubmodelSB(
             name,
@@ -1859,7 +1884,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.SubstructureLoad.SubstructureLoad` object.
+        SubstructureLoad
+            A :py:class:`~abaqus.Load.SubstructureLoad.SubstructureLoad` object.
         """
         self.loads[name] = load = SubstructureLoad(
             name, createStepName, region, loadCaseNames, magnitude, amplitude
@@ -1911,7 +1937,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.SurfaceCharge.SurfaceCharge` object.
+        SurfaceCharge
+            A :py:class:`~abaqus.Load.SurfaceCharge.SurfaceCharge` object.
         """
         self.loads[name] = load = SurfaceCharge(
             name, createStepName, region, magnitude, distributionType, field, amplitude
@@ -1964,7 +1991,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux` object.
+        SurfaceConcentrationFlux
+            A :py:class:`~abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux` object.
         """
         self.loads[name] = load = SurfaceConcentrationFlux(
             name, createStepName, region, magnitude, field, distributionType, amplitude
@@ -2016,7 +2044,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.SurfaceCurrent.SurfaceCurrent` object.
+        SurfaceCurrent
+            A :py:class:`~abaqus.Load.SurfaceCurrent.SurfaceCurrent` object.
         """
         self.loads[name] = load = SurfaceCurrent(
             name, createStepName, region, magnitude, distributionType, field, amplitude
@@ -2069,7 +2098,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity` object.
+        SurfaceCurrentDensity
+            A :py:class:`~abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity` object.
         """
         self.loads[name] = load = SurfaceCurrentDensity(
             name,
@@ -2128,7 +2158,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux` object.
+        SurfaceHeatFlux
+            A :py:class:`~abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux` object.
         """
         self.loads[name] = load = SurfaceHeatFlux(
             name, createStepName, region, magnitude, field, distributionType, amplitude
@@ -2180,7 +2211,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.SurfacePoreFluid.SurfacePoreFluid` object.
+        SurfacePoreFluid
+            A :py:class:`~abaqus.Load.SurfacePoreFluid.SurfacePoreFluid` object.
         """
         self.loads[name] = load = SurfacePoreFluid(
             name, createStepName, region, magnitude, field, distributionType, amplitude
@@ -2273,7 +2305,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.SurfaceTraction.SurfaceTraction` object.
+        SurfaceTraction
+            A :py:class:`~abaqus.Load.SurfaceTraction.SurfaceTraction` object.
         """
         self.loads[name] = load = SurfaceTraction(
             name,

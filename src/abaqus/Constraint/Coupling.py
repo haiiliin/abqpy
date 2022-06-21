@@ -114,7 +114,8 @@ class Coupling(Constraint):
 
         Returns
         -------
-        A :py:class:`~abaqus.Constraint.Coupling.Coupling` object.
+        Coupling
+            A :py:class:`~abaqus.Constraint.Coupling.Coupling` object.
         """
         super().__init__()
         pass

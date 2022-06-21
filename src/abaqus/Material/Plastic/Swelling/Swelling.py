@@ -65,7 +65,8 @@ class Swelling:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Plastic.Swelling.Swelling.Swelling` object.
+        Swelling
+            A :py:class:`~abaqus.Material.Plastic.Swelling.Swelling.Swelling` object.
 
         Raises
         ------

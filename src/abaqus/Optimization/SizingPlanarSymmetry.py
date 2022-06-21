@@ -53,7 +53,8 @@ class SizingPlanarSymmetry(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.SizingPlanarSymmetry.SizingPlanarSymmetry` object.
+        SizingPlanarSymmetry
+            A :py:class:`~abaqus.Optimization.SizingPlanarSymmetry.SizingPlanarSymmetry` object.
         """
         super().__init__()
         pass

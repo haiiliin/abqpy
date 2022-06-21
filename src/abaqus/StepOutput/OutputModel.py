@@ -140,7 +140,8 @@ class OutputModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest` object.
+        FieldOutputRequest
+            A :py:class:`~abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest` object.
         """
         self.fieldOutputRequests[name] = FieldOutputRequest(
             name,
@@ -291,7 +292,8 @@ class OutputModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest` object.
+        HistoryOutputRequest
+            A :py:class:`~abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest` object.
         """
         self.historyOutputRequests[name] = HistoryOutputRequest(
             name,
@@ -413,7 +415,8 @@ class OutputModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.StepOutput.TimePoint.TimePoint` object.
+        TimePoint
+            A :py:class:`~abaqus.StepOutput.TimePoint.TimePoint` object.
 
         Raises
         ------

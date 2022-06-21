@@ -68,7 +68,8 @@ class SubstructureLoad(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.SubstructureLoad.SubstructureLoad` object.
+        SubstructureLoad
+            A :py:class:`~abaqus.Load.SubstructureLoad.SubstructureLoad` object.
         """
         super().__init__()
         pass

@@ -42,6 +42,7 @@ def getIndentedRepr(
 
     Returns
     -------
+    str
         A String.
     """
     pass
@@ -79,6 +80,7 @@ def getPaths(
 
     Returns
     -------
+    str
         A String.
     """
     pass
@@ -114,6 +116,7 @@ def getTypes(
 
     Returns
     -------
+    str
         A String.
     """
     pass

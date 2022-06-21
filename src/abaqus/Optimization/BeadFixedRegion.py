@@ -58,7 +58,8 @@ class BeadFixedRegion(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.BeadFixedRegion.BeadFixedRegion` object.
+        BeadFixedRegion
+            A :py:class:`~abaqus.Optimization.BeadFixedRegion.BeadFixedRegion` object.
         """
         super().__init__()
         pass

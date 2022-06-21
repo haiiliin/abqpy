@@ -127,7 +127,8 @@ class Text(Annotation):
 
         Returns
         -------
-        A :py:class:`~abaqus.Annotation.Text.Text` object.
+        Text
+            A :py:class:`~abaqus.Annotation.Text.Text` object.
 
         """
         super().__init__()

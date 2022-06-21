@@ -131,7 +131,8 @@ class ConcentratedForce(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.ConcentratedForce.ConcentratedForce` object.
+        ConcentratedForce
+            A :py:class:`~abaqus.Load.ConcentratedForce.ConcentratedForce` object.
         """
         super().__init__()
         pass

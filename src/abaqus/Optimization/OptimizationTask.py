@@ -95,7 +95,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse` object.
+        SingleTermDesignResponse
+            A :py:class:`~abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse` object.
         """
         self.designResponses[
             name
@@ -240,7 +241,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.BeadFixedRegion.BeadFixedRegion` object.
+        BeadFixedRegion
+            A :py:class:`~abaqus.Optimization.BeadFixedRegion.BeadFixedRegion` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = BeadFixedRegion(
             name, region, csys, u1, u2, u3
@@ -275,7 +277,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.BeadGrowth.BeadGrowth` object.
+        BeadGrowth
+            A :py:class:`~abaqus.Optimization.BeadGrowth.BeadGrowth` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = BeadGrowth(
             name, region, beadGrowth, shrink
@@ -306,7 +309,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.BeadPenetrationCheck.BeadPenetrationCheck` object.
+        BeadPenetrationCheck
+            A :py:class:`~abaqus.Optimization.BeadPenetrationCheck.BeadPenetrationCheck` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = BeadPenetrationCheck(
             name, beadPenetrationCheckRegion, region
@@ -346,7 +350,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.BeadPlanarSymmetry.BeadPlanarSymmetry` object.
+        BeadPlanarSymmetry
+            A :py:class:`~abaqus.Optimization.BeadPlanarSymmetry.BeadPlanarSymmetry` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = BeadPlanarSymmetry(
             name, region, axis, csys
@@ -379,7 +384,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry` object.
+        BeadPointSymmetry
+            A :py:class:`~abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = BeadPointSymmetry(
             name, region, csys
@@ -422,7 +428,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.BeadRotationalSymmetry.BeadRotationalSymmetry` object.
+        BeadRotationalSymmetry
+            A :py:class:`~abaqus.Optimization.BeadRotationalSymmetry.BeadRotationalSymmetry` object.
         """
         self.geometricRestrictions[
             name
@@ -495,7 +502,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.DesignDirection.DesignDirection` object.
+        DesignDirection
+            A :py:class:`~abaqus.Optimization.DesignDirection.DesignDirection` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = DesignDirection(
             name,
@@ -577,7 +585,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.DrillControl.DrillControl` object.
+        DrillControl
+            A :py:class:`~abaqus.Optimization.DrillControl.DrillControl` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = DrillControl(
             name,
@@ -642,7 +651,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.FixedRegion.FixedRegion` object.
+        FixedRegion
+            A :py:class:`~abaqus.Optimization.FixedRegion.FixedRegion` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = FixedRegion(
             name, region, csys, presumeFeasibleRegionAtStart, u1, u2, u3
@@ -671,7 +681,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.FrozenArea.FrozenArea` object.
+        FrozenArea
+            A :py:class:`~abaqus.Optimization.FrozenArea.FrozenArea` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = FrozenArea(
             name, region
@@ -716,7 +727,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.Growth.Growth` object.
+        Growth
+            A :py:class:`~abaqus.Optimization.Growth.Growth` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = Growth(
             name, region, growth, presumeFeasibleRegionAtStart, shrink
@@ -756,7 +768,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.PenetrationCheck.PenetrationCheck` object.
+        PenetrationCheck
+            A :py:class:`~abaqus.Optimization.PenetrationCheck.PenetrationCheck` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = PenetrationCheck(
             name, penetrationCheckRegion, region, presumeFeasibleRegionAtStart
@@ -830,7 +843,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl` object.
+        ShapeDemoldControl
+            A :py:class:`~abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = ShapeDemoldControl(
             name,
@@ -890,7 +904,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.ShapeMemberSize.ShapeMemberSize` object.
+        ShapeMemberSize
+            A :py:class:`~abaqus.Optimization.ShapeMemberSize.ShapeMemberSize` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = ShapeMemberSize(
             name,
@@ -959,7 +974,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry` object.
+        ShapePlanarSymmetry
+            A :py:class:`~abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = ShapePlanarSymmetry(
             name,
@@ -1025,7 +1041,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry` object.
+        ShapePointSymmetry
+            A :py:class:`~abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = ShapePointSymmetry(
             name,
@@ -1107,7 +1124,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry` object.
+        ShapeRotationalSymmetry
+            A :py:class:`~abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry` object.
         """
         self.geometricRestrictions[
             name
@@ -1148,7 +1166,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.SizingClusterAreas.SizingClusterAreas` object.
+        SizingClusterAreas
+            A :py:class:`~abaqus.Optimization.SizingClusterAreas.SizingClusterAreas` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = SizingClusterAreas(
             name, regions
@@ -1195,7 +1214,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry` object.
+        SizingCyclicSymmetry
+            A :py:class:`~abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = SizingCyclicSymmetry(
             name, region, translation, axis, csys, ignoreFrozenArea
@@ -1222,7 +1242,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.SizingFrozenArea.SizingFrozenArea` object.
+        SizingFrozenArea
+            A :py:class:`~abaqus.Optimization.SizingFrozenArea.SizingFrozenArea` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = SizingFrozenArea(
             name, region
@@ -1298,7 +1319,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.SizingPlanarSymmetry.SizingPlanarSymmetry` object.
+        SizingPlanarSymmetry
+            A :py:class:`~abaqus.Optimization.SizingPlanarSymmetry.SizingPlanarSymmetry` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = SizingPlanarSymmetry(
             name, region, axis, csys, ignoreFrozenArea
@@ -1337,7 +1359,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry` object.
+        SizingPointSymmetry
+            A :py:class:`~abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = SizingPointSymmetry(
             name, region, csys, ignoreFrozenArea
@@ -1383,7 +1406,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry` object.
+        SizingRotationalSymmetry
+            A :py:class:`~abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry` object.
         """
         self.geometricRestrictions[
             name
@@ -1458,7 +1482,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.SlideRegionControl.SlideRegionControl` object.
+        SlideRegionControl
+            A :py:class:`~abaqus.Optimization.SlideRegionControl.SlideRegionControl` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = SlideRegionControl(
             name,
@@ -1540,7 +1565,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.StampControl.StampControl` object.
+        StampControl
+            A :py:class:`~abaqus.Optimization.StampControl.StampControl` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = StampControl(
             name,
@@ -1600,7 +1626,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry` object.
+        TopologyCyclicSymmetry
+            A :py:class:`~abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry` object.
         """
         self.geometricRestrictions[
             name
@@ -1661,7 +1688,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl` object.
+        TopologyDemoldControl
+            A :py:class:`~abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = TopologyDemoldControl(
             name,
@@ -1715,7 +1743,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.TopologyMemberSize.TopologyMemberSize` object.
+        TopologyMemberSize
+            A :py:class:`~abaqus.Optimization.TopologyMemberSize.TopologyMemberSize` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = TopologyMemberSize(
             name, region, maxThickness, minThickness, separation, sizeRestriction
@@ -1766,7 +1795,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.TopologyMillingControl.TopologyMillingControl` object.
+        TopologyMillingControl
+            A :py:class:`~abaqus.Optimization.TopologyMillingControl.TopologyMillingControl` object.
         """
         self.geometricRestrictions[
             name
@@ -1813,7 +1843,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry` object.
+        TopologyPlanarSymmetry
+            A :py:class:`~abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry` object.
         """
         self.geometricRestrictions[
             name
@@ -1856,7 +1887,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry` object.
+        TopologyPointSymmetry
+            A :py:class:`~abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = TopologyPointSymmetry(
             name, region, csys, ignoreFrozenArea
@@ -1904,7 +1936,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry` object.
+        TopologyRotationalSymmetry
+            A :py:class:`~abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry` object.
         """
         self.geometricRestrictions[
             name
@@ -1973,7 +2006,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.TurnControl.TurnControl` object.
+        TurnControl
+            A :py:class:`~abaqus.Optimization.TurnControl.TurnControl` object.
         """
         self.geometricRestrictions[name] = geometricRestriction = TurnControl(
             name,

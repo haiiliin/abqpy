@@ -83,7 +83,8 @@ class MembraneSection(Section):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.MembraneSection.MembraneSection` object.
+        MembraneSection
+            A :py:class:`~abaqus.Section.MembraneSection.MembraneSection` object.
 
         Raises
         ------

@@ -71,7 +71,8 @@ class BoxProfile(Profile):
 
         Returns
         -------
-        A :py:class:`~abaqus.BeamSectionProfile.BoxProfile.BoxProfile` object.
+        BoxProfile
+            A :py:class:`~abaqus.BeamSectionProfile.BoxProfile.BoxProfile` object.
 
         Raises
         ------

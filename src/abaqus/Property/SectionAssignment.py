@@ -75,7 +75,8 @@ class SectionAssignment:
 
         Returns
         -------
-        A :py:class:`~abaqus.Property.SectionAssignment.SectionAssignment` object.
+        SectionAssignment
+            A :py:class:`~abaqus.Property.SectionAssignment.SectionAssignment` object.
         """
         pass
 

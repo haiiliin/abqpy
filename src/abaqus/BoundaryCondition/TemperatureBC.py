@@ -117,7 +117,8 @@ class TemperatureBC(BoundaryCondition):
 
         Returns
         -------
-        A :py:class:`~abaqus.BoundaryCondition.TemperatureBC.TemperatureBC` object.
+        TemperatureBC
+            A :py:class:`~abaqus.BoundaryCondition.TemperatureBC.TemperatureBC` object.
         """
         super().__init__()
         pass

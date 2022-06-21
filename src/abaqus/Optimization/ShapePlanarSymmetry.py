@@ -73,7 +73,8 @@ class ShapePlanarSymmetry(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry` object.
+        ShapePlanarSymmetry
+            A :py:class:`~abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry` object.
         """
         super().__init__()
         pass

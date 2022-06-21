@@ -340,7 +340,8 @@ class RandomResponseStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.RandomResponseStep.RandomResponseStep` object.
+        RandomResponseStep
+            A :py:class:`~abaqus.Step.RandomResponseStep.RandomResponseStep` object.
 
         Raises
         ------

@@ -413,7 +413,8 @@ class CoupledThermalElectricStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep` object.
+        CoupledThermalElectricStep
+            A :py:class:`~abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep` object.
 
         Raises
         ------

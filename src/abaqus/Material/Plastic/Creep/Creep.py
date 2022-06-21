@@ -131,7 +131,8 @@ class Creep:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Plastic.Creep.Creep.Creep` object.
+        Creep
+            A :py:class:`~abaqus.Material.Plastic.Creep.Creep.Creep` object.
 
         Raises
         ------

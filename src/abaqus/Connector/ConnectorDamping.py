@@ -140,7 +140,8 @@ class ConnectorDamping(ConnectorBehaviorOption):
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.ConnectorDamping.ConnectorDamping` object.
+        ConnectorDamping
+            A :py:class:`~abaqus.Connector.ConnectorDamping.ConnectorDamping` object.
 
         Raises
         ------

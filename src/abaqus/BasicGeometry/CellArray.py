@@ -45,7 +45,8 @@ class CellArray:
 
         Returns
         -------
-        A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object.
+        CellArray
+            A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object.
 
         """
         pass
@@ -81,7 +82,8 @@ class CellArray:
 
         Returns
         -------
-        A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object.
+        Cell
+            A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object.
 
         """
         pass
@@ -92,7 +94,8 @@ class CellArray:
 
         Returns
         -------
-        A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object representing the faces on the exterior of the cells.
+        FaceArray
+            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object representing the faces on the exterior of the cells.
 
         """
         pass
@@ -110,7 +113,8 @@ class CellArray:
 
         Returns
         -------
-        A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object or a sequence of Cell objects.
+        Cell
+            A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object or a sequence of Cell objects.
 
         Raises
         ------
@@ -157,7 +161,8 @@ class CellArray:
 
         Returns
         -------
-        A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object, which is a sequence of Cell objects.
+        CellArray
+            A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object, which is a sequence of Cell objects.
 
         """
         pass
@@ -179,7 +184,8 @@ class CellArray:
 
         Returns
         -------
-        A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object, which is a sequence of Cell objects.
+        CellArray
+            A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object, which is a sequence of Cell objects.
 
         """
         pass
@@ -197,7 +203,8 @@ class CellArray:
 
         Returns
         -------
-        A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object, which is a sequence of Cell objects.
+        CellArray
+            A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object, which is a sequence of Cell objects.
 
         """
         pass

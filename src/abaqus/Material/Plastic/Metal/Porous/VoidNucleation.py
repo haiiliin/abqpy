@@ -55,7 +55,8 @@ class VoidNucleation:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Plastic.Metal.Porous.VoidNucleation.VoidNucleation` object. 
+        VoidNucleation
+            A :py:class:`~abaqus.Material.Plastic.Metal.Porous.VoidNucleation.VoidNucleation` object. 
 
         Raises
         ------

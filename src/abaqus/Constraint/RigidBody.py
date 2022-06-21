@@ -80,7 +80,8 @@ class RigidBody(Constraint):
 
         Returns
         -------
-        A :py:class:`~abaqus.Constraint.RigidBody.RigidBody` object.
+        RigidBody
+            A :py:class:`~abaqus.Constraint.RigidBody.RigidBody` object.
         """
         super().__init__()
         pass

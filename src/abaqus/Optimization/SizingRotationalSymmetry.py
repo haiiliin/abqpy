@@ -57,7 +57,8 @@ class SizingRotationalSymmetry(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry` object.
+        SizingRotationalSymmetry
+            A :py:class:`~abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry` object.
         """
         super().__init__()
         pass

@@ -46,6 +46,7 @@ class Stream:
 
         Returns
         -------
-        A :py:class:`~abaqus.PathAndProbe.Stream.Stream` object.
+        Stream
+            A :py:class:`~abaqus.PathAndProbe.Stream.Stream` object.
         """
         pass

@@ -26,7 +26,8 @@ class FixedConstraint(ConstrainedSketchConstraint):
 
         Returns
         -------
-        A :py:class:`~abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint` object.
+        ConstrainedSketchConstraint
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint` object.
 
         """
         pass

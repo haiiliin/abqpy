@@ -245,7 +245,8 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.BeamSection.BeamSection` object.
+        BeamSection
+            A :py:class:`~abaqus.Section.BeamSection.BeamSection` object.
         """
         self.sections[name] = section = BeamSection(
             name,
@@ -324,7 +325,8 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.CohesiveSection.CohesiveSection` object.
+        CohesiveSection
+            A :py:class:`~abaqus.Section.CohesiveSection.CohesiveSection` object.
 
         Raises
         ------
@@ -439,7 +441,8 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.CompositeShellSection.CompositeShellSection` object.
+        CompositeShellSection
+            A :py:class:`~abaqus.Section.CompositeShellSection.CompositeShellSection` object.
         """
         self.sections[name] = section = CompositeShellSection(
             name,
@@ -495,7 +498,8 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.CompositeSolidSection.CompositeSolidSection` object.
+        CompositeSolidSection
+            A :py:class:`~abaqus.Section.CompositeSolidSection.CompositeSolidSection` object.
         """
         self.sections[name] = section = CompositeSolidSection(
             name, layup, symmetric, layupName
@@ -617,7 +621,8 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.ConnectorSection.ConnectorSection` object.
+        ConnectorSection
+            A :py:class:`~abaqus.Connector.ConnectorSection.ConnectorSection` object.
 
         Raises
         ------
@@ -722,7 +727,8 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.GasketSection.GasketSection` object. and ValueError.
+        GasketSection
+            A :py:class:`~abaqus.Section.GasketSection.GasketSection` object. and ValueError.
         """
         self.sections[name] = section = GasketSection(
             name,
@@ -804,7 +810,8 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.GeneralStiffnessSection.GeneralStiffnessSection` object.
+        GeneralStiffnessSection
+            A :py:class:`~abaqus.Section.GeneralStiffnessSection.GeneralStiffnessSection` object.
         """
         self.sections[name] = section = GeneralStiffnessSection(
             name,
@@ -923,7 +930,8 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.HomogeneousShellSection.HomogeneousShellSection` object.
+        HomogeneousShellSection
+            A :py:class:`~abaqus.Section.HomogeneousShellSection.HomogeneousShellSection` object.
         """
         self.sections[name] = section = HomogeneousShellSection(
             name,
@@ -972,7 +980,8 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.HomogeneousSolidSection.HomogeneousSolidSection` object.
+        HomogeneousSolidSection
+            A :py:class:`~abaqus.Section.HomogeneousSolidSection.HomogeneousSolidSection` object.
 
         Raises
         ------
@@ -1036,7 +1045,8 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.MembraneSection.MembraneSection` object.
+        MembraneSection
+            A :py:class:`~abaqus.Section.MembraneSection.MembraneSection` object.
 
         Raises
         ------
@@ -1089,7 +1099,8 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.MPCSection.MPCSection` object.
+        MPCSection
+            A :py:class:`~abaqus.Section.MPCSection.MPCSection` object.
 
         Raises
         ------
@@ -1135,7 +1146,8 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.PEGSection.PEGSection` object.
+        PEGSection
+            A :py:class:`~abaqus.Section.PEGSection.PEGSection` object.
 
         Raises
         ------
@@ -1174,7 +1186,8 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.SurfaceSection.SurfaceSection` object.
+        SurfaceSection
+            A :py:class:`~abaqus.Section.SurfaceSection.SurfaceSection` object.
 
         Raises
         ------
@@ -1207,7 +1220,8 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.TrussSection.TrussSection` object.
+        TrussSection
+            A :py:class:`~abaqus.Section.TrussSection.TrussSection` object.
 
         Raises
         ------

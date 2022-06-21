@@ -779,7 +779,8 @@ class OdbDisplay:
 
         Returns
         -------
-        A :py:class:`~abaqus.OdbDisplay.ViewCut.ViewCut` object.
+        ViewCut
+            A :py:class:`~abaqus.OdbDisplay.ViewCut.ViewCut` object.
         """
         self.viewCuts[name] = viewCut = ViewCut(
             name,

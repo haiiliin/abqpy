@@ -348,7 +348,8 @@ class ContactDamage:
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.ContactDamage.ContactDamage` object.
+        ContactDamage
+            A :py:class:`~abaqus.Interaction.ContactDamage.ContactDamage` object.
         """
         pass
 

@@ -45,7 +45,8 @@ class TrussSection(Section):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.TrussSection.TrussSection` object.
+        TrussSection
+            A :py:class:`~abaqus.Section.TrussSection.TrussSection` object.
 
         Raises
         ------

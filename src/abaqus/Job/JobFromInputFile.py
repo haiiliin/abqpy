@@ -166,7 +166,8 @@ class JobFromInputFile(Job):
 
         Returns
         -------
-        A :py:class:`~abaqus.Job.JobFromInputFile.JobFromInputFile` object.
+        JobFromInputFile
+            A :py:class:`~abaqus.Job.JobFromInputFile.JobFromInputFile` object.
 
         Raises
         ------

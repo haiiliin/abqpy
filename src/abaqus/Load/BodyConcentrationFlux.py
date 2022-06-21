@@ -92,7 +92,8 @@ class BodyConcentrationFlux(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux` object.
+        BodyConcentrationFlux
+            A :py:class:`~abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux` object.
         """
         super().__init__()
         pass

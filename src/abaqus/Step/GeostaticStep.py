@@ -391,7 +391,8 @@ class GeostaticStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.GeostaticStep.GeostaticStep` object.
+        GeostaticStep
+            A :py:class:`~abaqus.Step.GeostaticStep.GeostaticStep` object.
 
         Raises
         ------

@@ -63,7 +63,8 @@ class Behavior:
 
         Returns
         -------
-        A :py:class:`~abaqus.Calibration.Behavior.Behavior` object.
+        Behavior
+            A :py:class:`~abaqus.Calibration.Behavior.Behavior` object.
         """
         pass
 

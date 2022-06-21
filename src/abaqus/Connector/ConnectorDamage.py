@@ -241,7 +241,8 @@ class ConnectorDamage(ConnectorBehaviorOption):
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.ConnectorDamage.ConnectorDamage` object.
+        ConnectorDamage
+            A :py:class:`~abaqus.Connector.ConnectorDamage.ConnectorDamage` object.
 
         Raises
         ------

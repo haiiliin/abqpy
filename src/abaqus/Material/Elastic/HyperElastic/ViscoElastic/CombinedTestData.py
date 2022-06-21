@@ -65,7 +65,8 @@ class CombinedTestData:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData` object.
+        CombinedTestData
+            A :py:class:`~abaqus.Material.Elastic.HyperElastic.ViscoElastic.CombinedTestData.CombinedTestData` object.
         """
         pass
 

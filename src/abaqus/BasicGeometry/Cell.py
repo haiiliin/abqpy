@@ -112,7 +112,8 @@ class Cell:
 
         Returns
         -------
-        A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object which is a sequence of Cell objects.
+        CellArray
+            A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object which is a sequence of Cell objects.
 
         """
         pass
@@ -122,7 +123,8 @@ class Cell:
 
         Returns
         -------
-        A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object which is a sequence of MeshNode objects.
+        MeshNodeArray
+            A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object which is a sequence of MeshNode objects.
 
         """
         pass
@@ -132,7 +134,8 @@ class Cell:
 
         Returns
         -------
-        A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object which is a sequence of MeshElement objects.
+        MeshElementArray
+            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object which is a sequence of MeshElement objects.
 
         """
         pass

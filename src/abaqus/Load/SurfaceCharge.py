@@ -91,7 +91,8 @@ class SurfaceCharge(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.SurfaceCharge.SurfaceCharge` object.
+        SurfaceCharge
+            A :py:class:`~abaqus.Load.SurfaceCharge.SurfaceCharge` object.
         """
         super().__init__()
         pass

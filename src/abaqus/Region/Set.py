@@ -179,7 +179,8 @@ class Set:
 
         Returns
         -------
-        A :py:class:`~abaqus.Region.Set.Set` object.
+        Set
+            A :py:class:`~abaqus.Region.Set.Set` object.
         """
         pass
 
@@ -205,7 +206,8 @@ class Set:
 
         Returns
         -------
-        A :py:class:`~abaqus.Region.Set.Set` object.
+        Set
+            A :py:class:`~abaqus.Region.Set.Set` object.
         """
         pass
 
@@ -240,7 +242,8 @@ class Set:
 
         Returns
         -------
-        A :py:class:`~abaqus.Region.Set.Set` object.
+        Set
+            A :py:class:`~abaqus.Region.Set.Set` object.
         """
         pass
 
@@ -271,7 +274,8 @@ class Set:
 
         Returns
         -------
-        A :py:class:`~abaqus.Region.Set.Set` object.
+        Set
+            A :py:class:`~abaqus.Region.Set.Set` object.
         """
         pass
 
@@ -298,7 +302,8 @@ class Set:
 
         Returns
         -------
-        A :py:class:`~abaqus.Region.Set.Set` object.
+        Set
+            A :py:class:`~abaqus.Region.Set.Set` object.
         """
         pass
 
@@ -325,7 +330,8 @@ class Set:
 
         Returns
         -------
-        A :py:class:`~abaqus.Region.Set.Set` object.
+        Set
+            A :py:class:`~abaqus.Region.Set.Set` object.
         """
         pass
 
@@ -357,6 +363,7 @@ class Set:
 
         Returns
         -------
-        A :py:class:`~abaqus.Region.Set.Set` object or a tuple of Set objects.
+        Set
+            A :py:class:`~abaqus.Region.Set.Set` object or a tuple of Set objects.
         """
         pass

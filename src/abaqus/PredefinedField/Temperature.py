@@ -177,7 +177,8 @@ class Temperature(PredefinedField):
 
         Returns
         -------
-        A :py:class:`~abaqus.PredefinedField.Temperature.Temperature` object.
+        Temperature
+            A :py:class:`~abaqus.PredefinedField.Temperature.Temperature` object.
         """
         super().__init__()
         pass

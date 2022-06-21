@@ -58,7 +58,8 @@ class LeafFromSurfaceVarRange(Leaf):
 
         Returns
         -------
-        A :py:class:`~abaqus.DisplayGroup.LeafFromSurfaceVarRange.LeafFromSurfaceVarRange` object.
+        LeafFromSurfaceVarRange
+            A :py:class:`~abaqus.DisplayGroup.LeafFromSurfaceVarRange.LeafFromSurfaceVarRange` object.
         """
         super().__init__(DEFAULT_MODEL)
         pass

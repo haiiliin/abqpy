@@ -79,7 +79,8 @@ class ConcentratedRadiationToAmbient(Interaction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.ConcentratedRadiationToAmbient.ConcentratedRadiationToAmbient` object.
+        ConcentratedRadiationToAmbient
+            A :py:class:`~abaqus.Interaction.ConcentratedRadiationToAmbient.ConcentratedRadiationToAmbient` object.
         """
         super().__init__()
         pass

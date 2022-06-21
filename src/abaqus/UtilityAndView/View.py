@@ -126,7 +126,8 @@ class View:
 
         Returns
         -------
-        A :py:class:`~abaqus.UtilityAndView.View.View` object.
+        View
+            A :py:class:`~abaqus.UtilityAndView.View.View` object.
 
         Raises
         ------

@@ -236,7 +236,8 @@ class GeometryShellSection(ShellSection):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.GeometryShellSection.GeometryShellSection` object.
+        GeometryShellSection
+            A :py:class:`~abaqus.Section.GeometryShellSection.GeometryShellSection` object.
         """
         pass
 
@@ -263,7 +264,8 @@ class GeometryShellSection(ShellSection):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object.
+        RebarLayers
+            A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object.
         """
         self.rebarLayers = rebarLayers = RebarLayers(rebarSpacing, layerTable)
         return rebarLayers

@@ -300,7 +300,8 @@ class OdbStepBase:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
+        HistoryRegion
+            A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
 
         Raises
         ------

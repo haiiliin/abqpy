@@ -115,7 +115,8 @@ class Face:
 
         Returns
         -------
-        A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object which is a sequence of MeshElement objects.
+        MeshElementArray
+            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object which is a sequence of MeshElement objects.
 
         """
         pass
@@ -133,7 +134,8 @@ class Face:
 
         Returns
         -------
-        A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object which is a sequence of MeshFace objects.
+        MeshFaceArray
+            A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object which is a sequence of MeshFace objects.
 
         """
         pass
@@ -153,7 +155,8 @@ class Face:
 
         Returns
         -------
-        A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object which is a sequence of MeshNode objects.
+        MeshNodeArray
+            A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object which is a sequence of MeshNode objects.
 
         """
         pass
@@ -233,7 +236,8 @@ class Face:
 
         Returns
         -------
-        A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object which is a sequence of Face objects.
+        FaceArray
+            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object which is a sequence of Face objects.
 
         """
         pass
@@ -249,7 +253,8 @@ class Face:
 
         Returns
         -------
-        A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is a sequence of Face objects.
+        FaceArray
+            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is a sequence of Face objects.
 
         """
         pass
@@ -260,7 +265,8 @@ class Face:
 
         Returns
         -------
-        A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is a sequence of Face objects.
+        FaceArray
+            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is a sequence of Face objects.
 
         """
         pass

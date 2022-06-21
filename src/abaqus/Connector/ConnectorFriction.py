@@ -178,7 +178,8 @@ class ConnectorFriction(ConnectorBehaviorOption):
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.ConnectorFriction.ConnectorFriction` object.
+        ConnectorFriction
+            A :py:class:`~abaqus.Connector.ConnectorFriction.ConnectorFriction` object.
 
         Raises
         ------

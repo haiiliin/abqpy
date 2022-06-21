@@ -74,7 +74,8 @@ class FieldReportOptions:
 
         Returns
         -------
-        A :py:class:`~abaqus.FieldReport.FieldReportOptions.FieldReportOptions` object.
+        FieldReportOptions
+            A :py:class:`~abaqus.FieldReport.FieldReportOptions.FieldReportOptions` object.
         """
         pass
 
@@ -116,7 +117,8 @@ class FieldReportOptions:
 
         Returns
         -------
-        A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object.
+        NumberFormat
+            A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object.
         """
         self.numberFormat = numberFormat = NumberFormat(
             blankPad, format, numDigits, precision

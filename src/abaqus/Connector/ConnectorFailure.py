@@ -72,7 +72,8 @@ class ConnectorFailure(ConnectorBehaviorOption):
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.ConnectorFailure.ConnectorFailure` object.
+        ConnectorFailure
+            A :py:class:`~abaqus.Connector.ConnectorFailure.ConnectorFailure` object.
 
         Raises
         ------

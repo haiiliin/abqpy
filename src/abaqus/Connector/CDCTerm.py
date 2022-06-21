@@ -106,7 +106,8 @@ class CDCTerm:
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.CDCTerm.CDCTerm` object.
+        CDCTerm
+            A :py:class:`~abaqus.Connector.CDCTerm.CDCTerm` object.
 
         Raises
         ------
@@ -196,7 +197,8 @@ class CDCTerm:
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object.
+        ConnectorOptions
+            A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object.
 
         Raises
         ------

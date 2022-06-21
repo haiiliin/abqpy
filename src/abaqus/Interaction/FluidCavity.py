@@ -70,7 +70,8 @@ class FluidCavity(Interaction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.FluidCavity.FluidCavity` object.
+        FluidCavity
+            A :py:class:`~abaqus.Interaction.FluidCavity.FluidCavity` object.
         """
         super().__init__()
         pass

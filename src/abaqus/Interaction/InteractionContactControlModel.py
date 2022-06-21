@@ -188,7 +188,8 @@ class InteractionContactControlModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.StdContactControl.StdContactControl` object.
+        StdContactControl
+            A :py:class:`~abaqus.Interaction.StdContactControl.StdContactControl` object.
 
         Raises
         ------

@@ -225,7 +225,8 @@ class Surface:
 
         Returns
         -------
-        A :py:class:`~abaqus.Region.Surface.Surface` object.
+        Surface
+            A :py:class:`~abaqus.Region.Surface.Surface` object.
         """
         pass
 
@@ -251,7 +252,8 @@ class Surface:
 
         Returns
         -------
-        A :py:class:`~abaqus.Region.Surface.Surface` object.
+        Surface
+            A :py:class:`~abaqus.Region.Surface.Surface` object.
         """
         pass
 
@@ -287,7 +289,8 @@ class Surface:
 
         Returns
         -------
-        A :py:class:`~abaqus.Region.Surface.Surface` object.
+        Surface
+            A :py:class:`~abaqus.Region.Surface.Surface` object.
         """
         pass
 
@@ -314,6 +317,7 @@ class Surface:
 
         Returns
         -------
-        A :py:class:`~abaqus.Region.Surface.Surface` object.
+        Surface
+            A :py:class:`~abaqus.Region.Surface.Surface` object.
         """
         pass

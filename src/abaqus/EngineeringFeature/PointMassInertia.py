@@ -108,7 +108,8 @@ class PointMassInertia(Inertia):
 
         Returns
         -------
-        A :py:class:`~abaqus.EngineeringFeature.PointMassInertia.PointMassInertia` object.
+        PointMassInertia
+            A :py:class:`~abaqus.EngineeringFeature.PointMassInertia.PointMassInertia` object.
         """
         super().__init__()
         pass

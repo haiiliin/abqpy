@@ -148,7 +148,8 @@ class GasketThicknessBehavior:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Gasket.GasketThicknessBehavior.GasketThicknessBehavior` object.
+        GasketThicknessBehavior
+            A :py:class:`~abaqus.Material.Gasket.GasketThicknessBehavior.GasketThicknessBehavior` object.
 
         Raises
         ------

@@ -55,7 +55,8 @@ class ParameterTable:
 
         Returns
         -------
-        A :py:class:`~abaqus.TableCollection.ParameterTable.ParameterTable` object.
+        ParameterTable
+            A :py:class:`~abaqus.TableCollection.ParameterTable.ParameterTable` object.
         """
         pass
 
@@ -96,7 +97,8 @@ class ParameterTable:
 
         Returns
         -------
-        A :py:class:`~abaqus.TableCollection.ParameterTable.ParameterTable` object.
+        ParameterTable
+            A :py:class:`~abaqus.TableCollection.ParameterTable.ParameterTable` object.
 
         Raises
         ------

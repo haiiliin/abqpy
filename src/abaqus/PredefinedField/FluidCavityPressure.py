@@ -51,7 +51,8 @@ class FluidCavityPressure(PredefinedField):
 
         Returns
         -------
-        A :py:class:`~abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure` object.
+        FluidCavityPressure
+            A :py:class:`~abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure` object.
         """
         super().__init__()
         pass

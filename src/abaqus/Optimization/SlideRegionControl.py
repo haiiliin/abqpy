@@ -83,7 +83,8 @@ class SlideRegionControl(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.SlideRegionControl.SlideRegionControl` object.
+        SlideRegionControl
+            A :py:class:`~abaqus.Optimization.SlideRegionControl.SlideRegionControl` object.
         """
         super().__init__()
         pass

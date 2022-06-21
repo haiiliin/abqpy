@@ -47,7 +47,8 @@ class RadialDimension(ConstrainedSketchDimension):
 
         Returns
         -------
-        A :py:class:`~abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimension.ConstrainedSketchDimension` object (None if the dimension cannot be created).
+        ConstrainedSketchDimension
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimension.ConstrainedSketchDimension` object (None if the dimension cannot be created).
 
         """
         pass

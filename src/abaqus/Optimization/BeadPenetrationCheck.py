@@ -38,7 +38,8 @@ class BeadPenetrationCheck(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.BeadPenetrationCheck.BeadPenetrationCheck` object.
+        BeadPenetrationCheck
+            A :py:class:`~abaqus.Optimization.BeadPenetrationCheck.BeadPenetrationCheck` object.
         """
         super().__init__()
         pass

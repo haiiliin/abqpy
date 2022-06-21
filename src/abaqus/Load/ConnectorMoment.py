@@ -109,7 +109,8 @@ class ConnectorMoment(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.ConnectorMoment.ConnectorMoment` object.
+        ConnectorMoment
+            A :py:class:`~abaqus.Load.ConnectorMoment.ConnectorMoment` object.
         """
         super().__init__()
         pass

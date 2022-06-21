@@ -57,7 +57,8 @@ class FieldModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Field.DiscreteField.DiscreteField` object.
+        DiscreteField
+            A :py:class:`~abaqus.Field.DiscreteField.DiscreteField` object.
 
         Raises
         ------
@@ -218,7 +219,8 @@ class FieldModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Field.MappedField.MappedField` object.
+        MappedField
+            A :py:class:`~abaqus.Field.MappedField.MappedField` object.
 
         Raises
         ------

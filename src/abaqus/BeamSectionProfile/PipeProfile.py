@@ -46,7 +46,8 @@ class PipeProfile(Profile):
 
         Returns
         -------
-        A :py:class:`~abaqus.BeamSectionProfile.PipeProfile.PipeProfile` object.
+        PipeProfile
+            A :py:class:`~abaqus.BeamSectionProfile.PipeProfile.PipeProfile` object.
 
         Raises
         ------

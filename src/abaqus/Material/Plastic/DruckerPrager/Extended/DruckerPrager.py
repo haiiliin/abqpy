@@ -114,7 +114,8 @@ class DruckerPrager:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPrager.DruckerPrager` object.
+        DruckerPrager
+            A :py:class:`~abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPrager.DruckerPrager` object.
 
         Raises
         ------

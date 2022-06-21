@@ -47,7 +47,8 @@ class LeafFromOdbElementMaterials(Leaf):
 
         Returns
         -------
-        A :py:class:`~abaqus.DisplayGroup.LeafFromOdbElementMaterials.LeafFromOdbElementMaterials` object.
+        LeafFromOdbElementMaterials
+            A :py:class:`~abaqus.DisplayGroup.LeafFromOdbElementMaterials.LeafFromOdbElementMaterials` object.
         """
         super().__init__(DEFAULT_MODEL)
         pass

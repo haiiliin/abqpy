@@ -107,7 +107,8 @@ class GeneralStiffnessSection(ShellSection):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.GeneralStiffnessSection.GeneralStiffnessSection` object.
+        GeneralStiffnessSection
+            A :py:class:`~abaqus.Section.GeneralStiffnessSection.GeneralStiffnessSection` object.
         """
         super().__init__()
         pass

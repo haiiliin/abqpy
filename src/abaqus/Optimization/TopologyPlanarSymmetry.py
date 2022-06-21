@@ -56,7 +56,8 @@ class TopologyPlanarSymmetry(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry` object.
+        TopologyPlanarSymmetry
+            A :py:class:`~abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry` object.
         """
         super().__init__()
         pass

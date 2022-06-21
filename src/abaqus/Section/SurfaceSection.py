@@ -56,7 +56,8 @@ class SurfaceSection(Section):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.SurfaceSection.SurfaceSection` object.
+        SurfaceSection
+            A :py:class:`~abaqus.Section.SurfaceSection.SurfaceSection` object.
 
         Raises
         ------

@@ -112,7 +112,8 @@ class FluidExchangeProperty(ContactProperty):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.FluidExchangeProperty.FluidExchangeProperty` object.
+        FluidExchangeProperty
+            A :py:class:`~abaqus.Interaction.FluidExchangeProperty.FluidExchangeProperty` object.
         """
         super().__init__(name)
         pass

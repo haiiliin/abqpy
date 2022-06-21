@@ -24,7 +24,8 @@ class DisplayGroupSession(SessionBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object.
+        DisplayGroup
+            A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object.
         """
         self.displayGroups[name] = displayGroup = DisplayGroup(name, leaf)
         return displayGroup

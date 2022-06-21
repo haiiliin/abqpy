@@ -68,7 +68,8 @@ class ShapePointSymmetry(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry` object.
+        ShapePointSymmetry
+            A :py:class:`~abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry` object.
         """
         super().__init__()
         pass

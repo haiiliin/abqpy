@@ -75,7 +75,8 @@ class Chebyshev1Filter(Filter):
 
         Returns
         -------
-        A :py:class:`~abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter` object.
+        Chebyshev1Filter
+            A :py:class:`~abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter` object.
 
         Raises
         ------

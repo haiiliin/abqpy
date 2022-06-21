@@ -66,7 +66,8 @@ class Density:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Density.Density.Density` object.
+        Density
+            A :py:class:`~abaqus.Material.Density.Density.Density` object.
 
         Raises
         ------

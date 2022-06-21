@@ -94,7 +94,8 @@ class FluidCavityPressureBC(BoundaryCondition):
 
         Returns
         -------
-        A :py:class:`~abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC` object.
+        FluidCavityPressureBC
+            A :py:class:`~abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC` object.
         """
         super().__init__()
         pass

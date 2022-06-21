@@ -69,7 +69,8 @@ class NonstructuralMass(Inertia):
 
         Returns
         -------
-        A :py:class:`~abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass` object.
+        NonstructuralMass
+            A :py:class:`~abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass` object.
         """
         super().__init__()
         pass

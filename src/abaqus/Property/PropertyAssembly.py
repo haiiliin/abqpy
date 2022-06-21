@@ -61,7 +61,8 @@ class PropertyAssembly(AssemblyBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Property.SectionAssignment.SectionAssignment` object.
+        SectionAssignment
+            A :py:class:`~abaqus.Property.SectionAssignment.SectionAssignment` object.
         """
         sectionAssignment = SectionAssignment(
             region, sectionName, thicknessAssignment, offset, offsetType, offsetField

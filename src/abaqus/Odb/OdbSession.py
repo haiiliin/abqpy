@@ -22,7 +22,8 @@ class OdbSession(SessionBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.ScratchOdb.ScratchOdb` object.
+        ScratchOdb
+            A :py:class:`~abaqus.Odb.ScratchOdb.ScratchOdb` object.
         """
         self.scratchOdbs["odb"] = scratchOdb = ScratchOdb(odb)
         return scratchOdb

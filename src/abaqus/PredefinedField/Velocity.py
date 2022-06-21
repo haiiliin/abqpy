@@ -74,7 +74,8 @@ class Velocity(PredefinedField):
 
         Returns
         -------
-        A :py:class:`~abaqus.PredefinedField.Velocity.Velocity` object.
+        Velocity
+            A :py:class:`~abaqus.PredefinedField.Velocity.Velocity` object.
         """
         super().__init__()
         pass

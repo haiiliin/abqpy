@@ -80,7 +80,8 @@ class Skin:
 
         Returns
         -------
-        A :py:class:`~abaqus.Region.Skin.Skin` object.
+        Skin
+            A :py:class:`~abaqus.Region.Skin.Skin` object.
         """
         pass
 
@@ -122,6 +123,7 @@ class Skin:
 
         Returns
         -------
-        A :py:class:`~abaqus.Region.Skin.Skin` object.
+        Skin
+            A :py:class:`~abaqus.Region.Skin.Skin` object.
         """
         pass

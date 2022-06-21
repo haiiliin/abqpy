@@ -40,7 +40,8 @@ class BeadPointSymmetry(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry` object.
+        BeadPointSymmetry
+            A :py:class:`~abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry` object.
         """
         super().__init__()
         pass

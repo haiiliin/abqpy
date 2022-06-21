@@ -110,7 +110,8 @@ class ConnectorForce(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.ConnectorForce.ConnectorForce` object.
+        ConnectorForce
+            A :py:class:`~abaqus.Load.ConnectorForce.ConnectorForce` object.
         """
         super().__init__()
         pass

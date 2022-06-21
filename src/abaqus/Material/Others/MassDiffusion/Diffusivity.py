@@ -98,7 +98,8 @@ class Diffusivity:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Others.MassDiffusion.Diffusivity.Diffusivity` object.
+        Diffusivity
+            A :py:class:`~abaqus.Material.Others.MassDiffusion.Diffusivity.Diffusivity` object.
 
         Raises
         ------

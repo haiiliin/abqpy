@@ -347,7 +347,8 @@ class TempDisplacementDynamicsStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep` object.
+        TempDisplacementDynamicsStep
+            A :py:class:`~abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep` object.
 
         Raises
         ------

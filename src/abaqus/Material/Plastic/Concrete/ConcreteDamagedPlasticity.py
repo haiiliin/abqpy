@@ -85,7 +85,8 @@ class ConcreteDamagedPlasticity:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Plastic.Concrete.ConcreteDamagedPlasticity.ConcreteDamagedPlasticity` object.
+        ConcreteDamagedPlasticity
+            A :py:class:`~abaqus.Material.Plastic.Concrete.ConcreteDamagedPlasticity.ConcreteDamagedPlasticity` object.
 
         Raises
         ------

@@ -61,7 +61,8 @@ class Stringer:
 
         Returns
         -------
-        A :py:class:`~abaqus.Region.Stringer.Stringer` object.
+        Stringer
+            A :py:class:`~abaqus.Region.Stringer.Stringer` object.
         """
         pass
 
@@ -92,6 +93,7 @@ class Stringer:
 
         Returns
         -------
-        A :py:class:`~abaqus.Region.Stringer.Stringer` object.
+        Stringer
+            A :py:class:`~abaqus.Region.Stringer.Stringer` object.
         """
         pass

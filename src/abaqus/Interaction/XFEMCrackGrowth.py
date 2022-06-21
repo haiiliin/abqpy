@@ -47,7 +47,8 @@ class XFEMCrackGrowth(Interaction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.XFEMCrackGrowth.XFEMCrackGrowth` object.
+        XFEMCrackGrowth
+            A :py:class:`~abaqus.Interaction.XFEMCrackGrowth.XFEMCrackGrowth` object.
         """
         super().__init__()
         pass

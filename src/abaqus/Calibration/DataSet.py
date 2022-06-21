@@ -39,7 +39,8 @@ class DataSet:
 
         Returns
         -------
-        A :py:class:`~abaqus.Calibration.DataSet.DataSet` object.
+        DataSet
+            A :py:class:`~abaqus.Calibration.DataSet.DataSet` object.
         """
         pass
 

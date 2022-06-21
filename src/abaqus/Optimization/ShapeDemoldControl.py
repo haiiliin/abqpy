@@ -84,7 +84,8 @@ class ShapeDemoldControl(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl` object.
+        ShapeDemoldControl
+            A :py:class:`~abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl` object.
         """
         super().__init__()
         pass

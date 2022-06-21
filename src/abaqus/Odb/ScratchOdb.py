@@ -36,6 +36,7 @@ class ScratchOdb:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.ScratchOdb.ScratchOdb` object.
+        ScratchOdb
+            A :py:class:`~abaqus.Odb.ScratchOdb.ScratchOdb` object.
         """
         pass

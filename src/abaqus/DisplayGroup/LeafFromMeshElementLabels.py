@@ -48,7 +48,8 @@ class LeafFromMeshElementLabels(Leaf):
 
         Returns
         -------
-        A :py:class:`~abaqus.DisplayGroup.LeafFromMeshElementLabels.LeafFromMeshElementLabels` object.
+        LeafFromMeshElementLabels
+            A :py:class:`~abaqus.DisplayGroup.LeafFromMeshElementLabels.LeafFromMeshElementLabels` object.
         """
         super().__init__(DEFAULT_MODEL)
         pass

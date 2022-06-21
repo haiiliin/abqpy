@@ -92,7 +92,8 @@ class SurfacePoreFluid(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.SurfacePoreFluid.SurfacePoreFluid` object.
+        SurfacePoreFluid
+            A :py:class:`~abaqus.Load.SurfacePoreFluid.SurfacePoreFluid` object.
         """
         super().__init__()
         pass

@@ -69,7 +69,8 @@ class ModelChange(Interaction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.ModelChange.ModelChange` object.
+        ModelChange
+            A :py:class:`~abaqus.Interaction.ModelChange.ModelChange` object.
         """
         super().__init__()
         pass

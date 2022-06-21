@@ -59,7 +59,8 @@ class ContactArea:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Gasket.ContactArea.ContactArea` object.
+        ContactArea
+            A :py:class:`~abaqus.Material.Gasket.ContactArea.ContactArea` object.
         """
         pass
 

@@ -99,7 +99,8 @@ class CompositePly:
 
         Returns
         -------
-        A :py:class:`~abaqus.Property.CompositePly.CompositePly` object.
+        CompositePly
+            A :py:class:`~abaqus.Property.CompositePly.CompositePly` object.
 
         Raises
         ------

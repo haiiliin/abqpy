@@ -53,7 +53,8 @@ class LeafFromModelNodeLabels(Leaf):
 
         Returns
         -------
-        A :py:class:`~abaqus.DisplayGroup.LeafFromModelNodeLabels.LeafFromModelNodeLabels` object.
+        LeafFromModelNodeLabels
+            A :py:class:`~abaqus.DisplayGroup.LeafFromModelNodeLabels.LeafFromModelNodeLabels` object.
         """
         super().__init__(DEFAULT_MODEL)
         pass

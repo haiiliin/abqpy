@@ -91,7 +91,8 @@ class ConcCharge(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.ConcCharge.ConcCharge` object.
+        ConcCharge
+            A :py:class:`~abaqus.Load.ConcCharge.ConcCharge` object.
         """
         super().__init__()
         pass

@@ -23,7 +23,8 @@ class Viewport(AnnotationViewport):
 
         Returns
         -------
-        A :py:class:`~abaqus.Canvas.Layer.Layer` object.
+        Layer
+            A :py:class:`~abaqus.Canvas.Layer.Layer` object.
         """
         self.layers[name] = layer = Layer(name, copyViewName)
         return layer

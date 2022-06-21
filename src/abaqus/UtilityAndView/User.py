@@ -3,7 +3,6 @@
 """
 import typing
 
-
 @typing.overload
 def getInput(prompt: str, default: str = ""):
     """This method is used to obtain a single input from a user from a dialog box. The method
@@ -34,6 +33,7 @@ def getInput(prompt: str, default: str = ""):
 
     Returns
     -------
+    str
         A String or None if the user clicks Cancel.
     """
     pass
@@ -74,6 +74,7 @@ def getInput(fields: tuple, label: str = "", dialogTitle: str = ""):
 
     Returns
     -------
+    tuple[str, ...]
         A sequence of Strings representing the data in each of the text fields in the dialog
         box. If the user clicks the Cancel button, the method returns a sequence of None
         objects.
@@ -114,6 +115,6 @@ def getWarningReply(message: str, buttons: str):
 
     Returns
     -------
-        The button that the user clicks.
+    The button that the user clicks.
     """
     pass

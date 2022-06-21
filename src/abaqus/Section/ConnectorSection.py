@@ -140,7 +140,8 @@ class ConnectorSection(Section):
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.ConnectorSection.ConnectorSection` object.
+        ConnectorSection
+            A :py:class:`~abaqus.Connector.ConnectorSection.ConnectorSection` object.
 
         Raises
         ------

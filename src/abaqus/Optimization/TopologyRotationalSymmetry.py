@@ -59,7 +59,8 @@ class TopologyRotationalSymmetry(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry` object.
+        TopologyRotationalSymmetry
+            A :py:class:`~abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry` object.
         """
         super().__init__()
         pass

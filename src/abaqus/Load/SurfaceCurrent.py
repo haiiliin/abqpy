@@ -91,7 +91,8 @@ class SurfaceCurrent(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.SurfaceCurrent.SurfaceCurrent` object.
+        SurfaceCurrent
+            A :py:class:`~abaqus.Load.SurfaceCurrent.SurfaceCurrent` object.
         """
         super().__init__()
         pass

@@ -137,7 +137,8 @@ class AdaptivityIteration:
 
         Returns
         -------
-        A :py:class:`~abaqus.Adaptivity.RuleResult.RuleResult` object.
+        RuleResult
+            A :py:class:`~abaqus.Adaptivity.RuleResult.RuleResult` object.
 
         Raises
         ------

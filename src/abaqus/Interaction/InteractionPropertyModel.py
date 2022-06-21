@@ -120,7 +120,8 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.CavityRadiationProp.CavityRadiationProp` object.
+        CavityRadiationProp
+            A :py:class:`~abaqus.Interaction.CavityRadiationProp.CavityRadiationProp` object.
         """
         self.interactionProperties[name] = interactionProperty = CavityRadiationProp(
             name, temperatureDependency, dependencies, property
@@ -145,7 +146,8 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.ContactProperty.ContactProperty` object.
+        ContactProperty
+            A :py:class:`~abaqus.Interaction.ContactProperty.ContactProperty` object.
         """
         self.interactionProperties[name] = interactionProperty = ContactProperty(name)
         return interactionProperty
@@ -186,7 +188,8 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.FilmConditionProp.FilmConditionProp` object.
+        FilmConditionProp
+            A :py:class:`~abaqus.Interaction.FilmConditionProp.FilmConditionProp` object.
         """
         self.interactionProperties[name] = interactionProperty = FilmConditionProp(
             name, temperatureDependency, dependencies, property
@@ -324,7 +327,8 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.FluidCavityProperty.FluidCavityProperty` object.
+        FluidCavityProperty
+            A :py:class:`~abaqus.Interaction.FluidCavityProperty.FluidCavityProperty` object.
         """
         self.interactionProperties[name] = interactionProperty = FluidCavityProperty(
             name,
@@ -440,7 +444,8 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.FluidExchangeProperty.FluidExchangeProperty` object.
+        FluidExchangeProperty
+            A :py:class:`~abaqus.Interaction.FluidExchangeProperty.FluidExchangeProperty` object.
         """
         self.interactionProperties[name] = interactionProperty = FluidExchangeProperty(
             name,

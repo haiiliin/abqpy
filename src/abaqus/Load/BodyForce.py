@@ -104,7 +104,8 @@ class BodyForce(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.BodyForce.BodyForce` object.
+        BodyForce
+            A :py:class:`~abaqus.Load.BodyForce.BodyForce` object.
         """
         super().__init__()
         pass

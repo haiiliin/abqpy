@@ -61,7 +61,8 @@ class DisplayBody(Constraint):
 
         Returns
         -------
-        A :py:class:`~abaqus.Constraint.DisplayBody.DisplayBody` object.
+        DisplayBody
+            A :py:class:`~abaqus.Constraint.DisplayBody.DisplayBody` object.
         """
         super().__init__()
         pass

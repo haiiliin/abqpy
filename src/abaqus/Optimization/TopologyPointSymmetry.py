@@ -52,7 +52,8 @@ class TopologyPointSymmetry(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry` object.
+        TopologyPointSymmetry
+            A :py:class:`~abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry` object.
         """
         super().__init__()
         pass

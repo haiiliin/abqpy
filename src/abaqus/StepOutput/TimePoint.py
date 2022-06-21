@@ -37,7 +37,8 @@ class TimePoint:
 
         Returns
         -------
-        A :py:class:`~abaqus.StepOutput.TimePoint.TimePoint` object.
+        TimePoint
+            A :py:class:`~abaqus.StepOutput.TimePoint.TimePoint` object.
 
         Raises
         ------

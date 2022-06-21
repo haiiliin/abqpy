@@ -104,7 +104,8 @@ class XFEMCrack(Crack):
 
         Returns
         -------
-        A :py:class:`~abaqus.EngineeringFeature.XFEMCrack.XFEMCrack` object.
+        XFEMCrack
+            A :py:class:`~abaqus.EngineeringFeature.XFEMCrack.XFEMCrack` object.
         """
         super().__init__()
         pass

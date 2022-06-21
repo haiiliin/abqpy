@@ -123,7 +123,8 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
 
         Returns
         -------
-        A :py:class:`~abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint` object.
+        VelocityAdaptiveMeshConstraint
+            A :py:class:`~abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint` object.
         """
         super().__init__(name=name, category=MECHANICAL, region=region)
 

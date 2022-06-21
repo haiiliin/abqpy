@@ -100,7 +100,8 @@ class Gravity(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.Gravity.Gravity` object.
+        Gravity
+            A :py:class:`~abaqus.Load.Gravity.Gravity` object.
         """
         super().__init__()
         pass

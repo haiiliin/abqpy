@@ -114,7 +114,8 @@ class PorePressureBC(BoundaryCondition):
 
         Returns
         -------
-        A :py:class:`~abaqus.BoundaryCondition.PorePressureBC.PorePressureBC` object.
+        PorePressureBC
+            A :py:class:`~abaqus.BoundaryCondition.PorePressureBC.PorePressureBC` object.
         """
         super().__init__()
         pass

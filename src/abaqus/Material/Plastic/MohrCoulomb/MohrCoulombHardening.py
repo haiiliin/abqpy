@@ -54,7 +54,8 @@ class MohrCoulombHardening:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Plastic.MohrCoulomb.MohrCoulombHardening.MohrCoulombHardening` object. 
+        MohrCoulombHardening
+            A :py:class:`~abaqus.Material.Plastic.MohrCoulomb.MohrCoulombHardening.MohrCoulombHardening` object. 
 
         Raises
         ------

@@ -50,7 +50,8 @@ class DataTable:
 
         Returns
         -------
-        A :py:class:`~abaqus.Field.DataTable.DataTable` object.
+        DataTable
+            A :py:class:`~abaqus.Field.DataTable.DataTable` object.
 
         Raises
         ------

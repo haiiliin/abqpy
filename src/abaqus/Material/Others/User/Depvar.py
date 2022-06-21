@@ -40,7 +40,8 @@ class Depvar:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Others.User.Depvar.Depvar` object.
+        Depvar
+            A :py:class:`~abaqus.Material.Others.User.Depvar.Depvar` object.
 
         Raises
         ------

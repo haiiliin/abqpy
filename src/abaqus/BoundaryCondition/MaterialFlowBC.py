@@ -115,7 +115,8 @@ class MaterialFlowBC(BoundaryCondition):
 
         Returns
         -------
-        A :py:class:`~abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC` object.
+        MaterialFlowBC
+            A :py:class:`~abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC` object.
         """
         super().__init__()
         pass

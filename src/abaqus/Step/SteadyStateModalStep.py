@@ -351,7 +351,8 @@ class SteadyStateModalStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.SteadyStateModalStep.SteadyStateModalStep` object.
+        SteadyStateModalStep
+            A :py:class:`~abaqus.Step.SteadyStateModalStep.SteadyStateModalStep` object.
 
         Raises
         ------

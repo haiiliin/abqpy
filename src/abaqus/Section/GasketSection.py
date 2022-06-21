@@ -72,7 +72,8 @@ class GasketSection(Section):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.GasketSection.GasketSection` object.  and ValueError.
+        GasketSection
+            A :py:class:`~abaqus.Section.GasketSection.GasketSection` object.  and ValueError.
         """
         super().__init__()
         pass

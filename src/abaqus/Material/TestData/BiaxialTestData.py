@@ -67,7 +67,8 @@ class BiaxialTestData:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.TestData.BiaxialTestData.BiaxialTestData` object.
+        BiaxialTestData
+            A :py:class:`~abaqus.Material.TestData.BiaxialTestData.BiaxialTestData` object.
         """
         pass
 

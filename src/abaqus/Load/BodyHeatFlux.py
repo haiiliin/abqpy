@@ -91,7 +91,8 @@ class BodyHeatFlux(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.BodyHeatFlux.BodyHeatFlux` object.
+        BodyHeatFlux
+            A :py:class:`~abaqus.Load.BodyHeatFlux.BodyHeatFlux` object.
         """
         super().__init__()
         pass

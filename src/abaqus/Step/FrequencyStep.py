@@ -559,7 +559,8 @@ class FrequencyStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.FrequencyStep.FrequencyStep` object.
+        FrequencyStep
+            A :py:class:`~abaqus.Step.FrequencyStep.FrequencyStep` object.
 
         Raises
         ------

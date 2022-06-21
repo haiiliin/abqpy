@@ -47,7 +47,8 @@ class PorousBulkModuli:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Others.PoreFluidFlow.PorousBulkModuli.PorousBulkModuli` object.
+        PorousBulkModuli
+            A :py:class:`~abaqus.Material.Others.PoreFluidFlow.PorousBulkModuli.PorousBulkModuli` object.
         """
         pass
 

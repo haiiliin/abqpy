@@ -54,7 +54,8 @@ class PredefinedFieldModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure` object.
+        FluidCavityPressure
+            A :py:class:`~abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure` object.
         """
         self.predefinedFields[name] = predefinedField = FluidCavityPressure(
             name, fluidCavity, fluidPressure
@@ -166,7 +167,8 @@ class PredefinedFieldModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.PredefinedField.KinematicHardening.KinematicHardening` object.
+        KinematicHardening
+            A :py:class:`~abaqus.PredefinedField.KinematicHardening.KinematicHardening` object.
         """
         self.predefinedFields[name] = predefinedField = KinematicHardening(
             name,
@@ -229,7 +231,8 @@ class PredefinedFieldModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.PredefinedField.MaterialAssignment.MaterialAssignment` object.
+        MaterialAssignment
+            A :py:class:`~abaqus.PredefinedField.MaterialAssignment.MaterialAssignment` object.
         """
         self.predefinedFields[name] = predefinedField = MaterialAssignment(
             name, instanceList, useFields, assignmentList, fieldList, colorList
@@ -352,7 +355,8 @@ class PredefinedFieldModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.PredefinedField.Temperature.Temperature` object.
+        Temperature
+            A :py:class:`~abaqus.PredefinedField.Temperature.Temperature` object.
         """
         self.predefinedFields[name] = predefinedField = Temperature(
             name,
@@ -427,7 +431,8 @@ class PredefinedFieldModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.PredefinedField.Velocity.Velocity` object.
+        Velocity
+            A :py:class:`~abaqus.PredefinedField.Velocity.Velocity` object.
         """
         self.predefinedFields[name] = predefinedField = Velocity(
             name,

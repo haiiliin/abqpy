@@ -32,7 +32,8 @@ class CalibrationModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.BoundaryCondition.Calibration.Calibration` object.
+        Calibration
+            A :py:class:`~abaqus.BoundaryCondition.Calibration.Calibration` object.
         """
         self.calibrations[name] = calibration = Calibration(name)
         return calibration

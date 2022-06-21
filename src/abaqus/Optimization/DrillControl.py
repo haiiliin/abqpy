@@ -83,7 +83,8 @@ class DrillControl(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.DrillControl.DrillControl` object.
+        DrillControl
+            A :py:class:`~abaqus.Optimization.DrillControl.DrillControl` object.
         """
         super().__init__()
         pass

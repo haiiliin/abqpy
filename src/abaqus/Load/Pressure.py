@@ -106,7 +106,8 @@ class Pressure(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.Pressure.Pressure` object.
+        Pressure
+            A :py:class:`~abaqus.Load.Pressure.Pressure` object.
         """
         super().__init__()
         pass

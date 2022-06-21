@@ -355,7 +355,8 @@ class SteadyStateSubspaceStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.SteadyStateSubspaceStep.SteadyStateSubspaceStep` object.
+        SteadyStateSubspaceStep
+            A :py:class:`~abaqus.Step.SteadyStateSubspaceStep.SteadyStateSubspaceStep` object.
 
         Raises
         ------

@@ -67,7 +67,8 @@ class FilterModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Filter.ButterworthFilter.ButterworthFilter` object.
+        ButterworthFilter
+            A :py:class:`~abaqus.Filter.ButterworthFilter.ButterworthFilter` object.
 
         Raises
         ------
@@ -132,7 +133,8 @@ class FilterModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter` object.
+        Chebyshev1Filter
+            A :py:class:`~abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter` object.
 
         Raises
         ------
@@ -204,7 +206,8 @@ class FilterModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter` object.
+        Chebyshev2Filter
+            A :py:class:`~abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter` object.
 
         Raises
         ------

@@ -474,7 +474,8 @@ class CoupledThermalElectricalStructuralStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep` object.
+        CoupledThermalElectricalStructuralStep
+            A :py:class:`~abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep` object.
 
         Raises
         ------

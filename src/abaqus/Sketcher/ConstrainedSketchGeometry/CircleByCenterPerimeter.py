@@ -23,7 +23,8 @@ class CircleByCenterPerimeter(ConstrainedSketchGeometry):
 
         Returns
         -------
-        A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the circle cannot be created).
+        ConstrainedSketchGeometry
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the circle cannot be created).
 
         """
         pass

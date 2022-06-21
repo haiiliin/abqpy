@@ -131,7 +131,8 @@ class VelocityBaseMotionBC(BoundaryCondition):
 
         Returns
         -------
-        A :py:class:`~abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC` object.
+        VelocityBaseMotionBC
+            A :py:class:`~abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC` object.
         """
         super().__init__()
         pass

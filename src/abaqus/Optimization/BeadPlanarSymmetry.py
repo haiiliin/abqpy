@@ -50,7 +50,8 @@ class BeadPlanarSymmetry(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.BeadPlanarSymmetry.BeadPlanarSymmetry` object.
+        BeadPlanarSymmetry
+            A :py:class:`~abaqus.Optimization.BeadPlanarSymmetry.BeadPlanarSymmetry` object.
         """
         super().__init__()
         pass

@@ -56,7 +56,8 @@ class MeshNodeArray(list[MeshNode]):
 
         Returns
         -------
-        A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object.
+        MeshNodeArray
+            A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object.
         """
         super().__init__()
 
@@ -70,7 +71,8 @@ class MeshNodeArray(list[MeshNode]):
 
         Returns
         -------
-        A :py:class:`~abaqus.Mesh.MeshNode.MeshNode` object.
+        MeshNode
+            A :py:class:`~abaqus.Mesh.MeshNode.MeshNode` object.
         """
         pass
 
@@ -86,7 +88,8 @@ class MeshNodeArray(list[MeshNode]):
 
         Returns
         -------
-        A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object.
+        MeshNodeArray
+            A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object.
         """
         pass
 
@@ -127,7 +130,8 @@ class MeshNodeArray(list[MeshNode]):
 
         Returns
         -------
-        A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object, which is a sequence of MeshNode objects.
+        MeshNodeArray
+            A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object, which is a sequence of MeshNode objects.
         """
         pass
 
@@ -147,7 +151,8 @@ class MeshNodeArray(list[MeshNode]):
 
         Returns
         -------
-        A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object, which is a sequence of MeshNode objects.
+        MeshNodeArray
+            A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object, which is a sequence of MeshNode objects.
         """
         pass
 
@@ -164,7 +169,8 @@ class MeshNodeArray(list[MeshNode]):
 
         Returns
         -------
-        A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object, which is a sequence of MeshNode objects.
+        MeshNodeArray
+            A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object, which is a sequence of MeshNode objects.
         """
         pass
 
@@ -221,7 +227,8 @@ class MeshNodeArray(list[MeshNode]):
 
         Returns
         -------
-        A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object.
+        MeshNodeArray
+            A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object.
 
         Raises
         ------

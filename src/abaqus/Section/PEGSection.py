@@ -58,7 +58,8 @@ class PEGSection(Section):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.PEGSection.PEGSection` object.
+        PEGSection
+            A :py:class:`~abaqus.Section.PEGSection.PEGSection` object.
 
         Raises
         ------

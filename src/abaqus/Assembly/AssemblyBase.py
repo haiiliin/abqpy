@@ -242,7 +242,8 @@ class AssemblyBase(Feature):
 
         Returns
         -------
-        A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object.
+        PartInstance
+            A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object.
         """
         pass
 
@@ -273,7 +274,8 @@ class AssemblyBase(Feature):
 
         Returns
         -------
-        A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object.
+        ModelInstance
+            A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object.
         """
         pass
 
@@ -299,7 +301,8 @@ class AssemblyBase(Feature):
 
         Returns
         -------
-        A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object.
+        PartInstance
+            A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object.
         """
         if "part" in kwargs.keys() or (len(args) > 0 and isinstance(args[0], Part)):
             instance = PartInstance(name, *args, **kwargs)

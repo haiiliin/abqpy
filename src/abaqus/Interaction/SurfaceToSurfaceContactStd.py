@@ -203,7 +203,8 @@ class SurfaceToSurfaceContactStd(Interaction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd` object.
+        SurfaceToSurfaceContactStd
+            A :py:class:`~abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd` object.
         """
         super().__init__()
         pass

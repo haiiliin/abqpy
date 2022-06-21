@@ -54,7 +54,8 @@ class BeadRotationalSymmetry(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.BeadRotationalSymmetry.BeadRotationalSymmetry` object.
+        BeadRotationalSymmetry
+            A :py:class:`~abaqus.Optimization.BeadRotationalSymmetry.BeadRotationalSymmetry` object.
         """
         super().__init__()
         pass

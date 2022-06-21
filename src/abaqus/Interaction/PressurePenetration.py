@@ -110,7 +110,8 @@ class PressurePenetration(Interaction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.PressurePenetration.PressurePenetration` object.
+        PressurePenetration
+            A :py:class:`~abaqus.Interaction.PressurePenetration.PressurePenetration` object.
         """
         super().__init__()
         pass

@@ -71,7 +71,8 @@ class DebondVCCT(Crack):
 
         Returns
         -------
-        A :py:class:`~abaqus.EngineeringFeature.DebondVCCT.DebondVCCT` object.
+        DebondVCCT
+            A :py:class:`~abaqus.EngineeringFeature.DebondVCCT.DebondVCCT` object.
         """
         super().__init__()
         pass

@@ -55,7 +55,8 @@ class Growth(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.Growth.Growth` object.
+        Growth
+            A :py:class:`~abaqus.Optimization.Growth.Growth` object.
         """
         super().__init__()
         pass

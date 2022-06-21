@@ -60,7 +60,8 @@ class JobSession(SessionBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Job.Queue.Queue` object.
+        Queue
+            A :py:class:`~abaqus.Job.Queue.Queue` object.
 
         Raises
         ------

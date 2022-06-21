@@ -151,7 +151,8 @@ class HistoryPoint:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object.
+        HistoryPoint
+            A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object.
         """
         pass
 
@@ -208,7 +209,8 @@ class HistoryPoint:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object.
+        HistoryPoint
+            A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object.
         """
         pass
 
@@ -231,7 +233,8 @@ class HistoryPoint:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object.
+        HistoryPoint
+            A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object.
         """
         pass
 
@@ -254,7 +257,8 @@ class HistoryPoint:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object.
+        HistoryPoint
+            A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object.
         """
         pass
 
@@ -277,7 +281,8 @@ class HistoryPoint:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object.
+        HistoryPoint
+            A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object.
         """
         pass
 

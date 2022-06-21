@@ -80,7 +80,8 @@ class MultipointConstraint(Constraint):
 
         Returns
         -------
-        A :py:class:`~abaqus.Constraint.MultipointConstraint.MultipointConstraint` object.
+        MultipointConstraint
+            A :py:class:`~abaqus.Constraint.MultipointConstraint.MultipointConstraint` object.
         """
         super().__init__()
         pass

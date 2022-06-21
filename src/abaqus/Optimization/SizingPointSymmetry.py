@@ -49,7 +49,8 @@ class SizingPointSymmetry(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry` object.
+        SizingPointSymmetry
+            A :py:class:`~abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry` object.
         """
         super().__init__()
         pass

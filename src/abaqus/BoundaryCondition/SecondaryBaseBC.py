@@ -86,7 +86,8 @@ class SecondaryBaseBC(BoundaryCondition):
 
         Returns
         -------
-        A :py:class:`~abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC` object.
+        SecondaryBaseBC
+            A :py:class:`~abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC` object.
         """
         super().__init__()
         pass

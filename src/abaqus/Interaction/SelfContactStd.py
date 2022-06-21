@@ -91,7 +91,8 @@ class SelfContactStd(Interaction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.SelfContactStd.SelfContactStd` object.
+        SelfContactStd
+            A :py:class:`~abaqus.Interaction.SelfContactStd.SelfContactStd` object.
         """
         super().__init__()
         pass

@@ -93,7 +93,8 @@ class CompositeLayup:
 
         Returns
         -------
-        A :py:class:`~abaqus.Property.CompositeLayup.CompositeLayup` object.
+        CompositeLayup
+            A :py:class:`~abaqus.Property.CompositeLayup.CompositeLayup` object.
 
         Raises
         ------
@@ -234,7 +235,8 @@ class CompositeLayup:
 
         Returns
         -------
-        A :py:class:`~abaqus.Property.CompositePly.CompositePly` object.
+        CompositePly
+            A :py:class:`~abaqus.Property.CompositePly.CompositePly` object.
 
         Raises
         ------
@@ -356,7 +358,8 @@ class CompositeLayup:
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.CompositeShellSection.CompositeShellSection` object.
+        CompositeShellSection
+            A :py:class:`~abaqus.Section.CompositeShellSection.CompositeShellSection` object.
         """
         self.section = compositeShellSection = CompositeShellSection(
             name,
@@ -456,7 +459,8 @@ class CompositeLayup:
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.GeometryShellSection.GeometryShellSection` object.
+        GeometryShellSection
+            A :py:class:`~abaqus.Section.GeometryShellSection.GeometryShellSection` object.
         """
         self.section = geometryShellSection = GeometryShellSection(
             nodalThicknessField,
@@ -573,7 +577,8 @@ class CompositeLayup:
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.HomogeneousShellSection.HomogeneousShellSection` object.
+        HomogeneousShellSection
+            A :py:class:`~abaqus.Section.HomogeneousShellSection.HomogeneousShellSection` object.
         """
         self.section[name] = homogeneousShellSection = HomogeneousShellSection(
             name,

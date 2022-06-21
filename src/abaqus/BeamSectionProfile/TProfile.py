@@ -55,7 +55,8 @@ class TProfile(Profile):
 
         Returns
         -------
-        A :py:class:`~abaqus.BeamSectionProfile.TProfile.TProfile` object.
+        TProfile
+            A :py:class:`~abaqus.BeamSectionProfile.TProfile.TProfile` object.
 
         Raises
         ------

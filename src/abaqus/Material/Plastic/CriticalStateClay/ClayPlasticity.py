@@ -89,7 +89,8 @@ class ClayPlasticity:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Plastic.CriticalStateClay.ClayPlasticity.ClayPlasticity` object.
+        ClayPlasticity
+            A :py:class:`~abaqus.Material.Plastic.CriticalStateClay.ClayPlasticity.ClayPlasticity` object.
 
         Raises
         ------

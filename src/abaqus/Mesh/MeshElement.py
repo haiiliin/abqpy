@@ -130,7 +130,8 @@ class MeshElement:
 
         Returns
         -------
-        A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object which is a sequence of MeshElement objects.
+        MeshElementArray
+            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object which is a sequence of MeshElement objects.
         """
         pass
 
@@ -146,7 +147,8 @@ class MeshElement:
 
         Returns
         -------
-        A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object, which is a sequence of MeshElement objects.
+        MeshElementArray
+            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object, which is a sequence of MeshElement objects.
         """
         pass
 

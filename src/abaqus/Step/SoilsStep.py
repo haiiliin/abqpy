@@ -512,7 +512,8 @@ class SoilsStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.SoilsStep.SoilsStep` object.
+        SoilsStep
+            A :py:class:`~abaqus.Step.SoilsStep.SoilsStep` object.
 
         Raises
         ------

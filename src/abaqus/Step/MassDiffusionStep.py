@@ -379,7 +379,8 @@ class MassDiffusionStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.MassDiffusionStep.MassDiffusionStep` object.
+        MassDiffusionStep
+            A :py:class:`~abaqus.Step.MassDiffusionStep.MassDiffusionStep` object.
 
         Raises
         ------

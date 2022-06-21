@@ -110,7 +110,8 @@ class FieldOutput:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
+        FieldOutput
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
@@ -139,7 +140,8 @@ class FieldOutput:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
+        FieldOutput
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
@@ -330,7 +332,8 @@ class FieldOutput:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
+        FieldOutput
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
@@ -366,7 +369,8 @@ class FieldOutput:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
+        FieldOutput
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
@@ -382,7 +386,8 @@ class FieldOutput:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
+        FieldOutput
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
@@ -398,7 +403,8 @@ class FieldOutput:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
+        FieldOutput
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
@@ -413,7 +419,8 @@ class FieldOutput:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
+        FieldOutput
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
@@ -428,7 +435,8 @@ class FieldOutput:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
+        FieldOutput
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
@@ -443,7 +451,8 @@ class FieldOutput:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
+        FieldOutput
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
@@ -458,7 +467,8 @@ class FieldOutput:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
+        FieldOutput
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
@@ -473,7 +483,8 @@ class FieldOutput:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
+        FieldOutput
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
@@ -489,7 +500,8 @@ class FieldOutput:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
+        FieldOutput
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
         """
         pass
 
@@ -524,7 +536,8 @@ class FieldOutput:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
+        FieldOutput
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
 
         Raises
         ------
@@ -569,7 +582,8 @@ class FieldOutput:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
+        FieldOutput
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
 
         Raises
         ------
@@ -619,7 +633,8 @@ class FieldOutput:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
+        FieldOutput
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
 
         Raises
         ------
@@ -647,7 +662,8 @@ class FieldOutput:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
+        FieldOutput
+            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
 
         Raises
         ------

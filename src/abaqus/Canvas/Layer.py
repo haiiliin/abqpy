@@ -69,7 +69,8 @@ class Layer:
 
         Returns
         -------
-        A :py:class:`~abaqus.Canvas.Layer.Layer` object.
+        Layer
+            A :py:class:`~abaqus.Canvas.Layer.Layer` object.
         """
         pass
 

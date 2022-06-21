@@ -35,7 +35,8 @@ class OdbStep(OdbStepBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
+        HistoryRegion
+            A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
         """
         self.historyRegions[name] = historyRegion = HistoryRegion(
             name, description, point, loadCase

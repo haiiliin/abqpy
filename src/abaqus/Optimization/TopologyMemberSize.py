@@ -57,7 +57,8 @@ class TopologyMemberSize(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.TopologyMemberSize.TopologyMemberSize` object.
+        TopologyMemberSize
+            A :py:class:`~abaqus.Optimization.TopologyMemberSize.TopologyMemberSize` object.
         """
         super().__init__()
         pass

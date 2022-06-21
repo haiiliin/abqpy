@@ -114,7 +114,8 @@ class ConcentrationBC(BoundaryCondition):
 
         Returns
         -------
-        A :py:class:`~abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC` object.
+        ConcentrationBC
+            A :py:class:`~abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC` object.
         """
         super().__init__()
         pass

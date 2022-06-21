@@ -18,7 +18,7 @@ class PlyStackPlot:
     """
 
 
-def MdbPlyStackPlot(part: Part, region: Region):
+def MdbPlyStackPlot(part: Part, region: Region) -> PlyStackPlot:
     """This method creates a PlyStackPlot object from a region of a part that contains a
     composite shell layup.
 
@@ -39,6 +39,7 @@ def MdbPlyStackPlot(part: Part, region: Region):
 
     Returns
     -------
+    PlyStackPlot
         A :py:class:`~abaqus.Property.PlyStackPlot.PlyStackPlot` object.
 
     Exceptions
@@ -71,7 +72,7 @@ def OdbPlyStackPlot(odb: Odb, sectionName: str, offset: float = 0):
 
     Returns
     -------
-        A :py:class:`~abaqus.Property.PlyStackPlot.PlyStackPlot` object.
+       A :py:class:`~abaqus.Property.PlyStackPlot.PlyStackPlot` object.
 
     Exceptions
     ----------

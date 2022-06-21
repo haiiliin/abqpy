@@ -65,7 +65,8 @@ class SectionCategory:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.SectionCategory.SectionCategory` object.
+        SectionCategory
+            A :py:class:`~abaqus.Odb.SectionCategory.SectionCategory` object.
         """
         pass
 
@@ -90,7 +91,8 @@ class SectionCategory:
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.SectionPoint.SectionPoint` object.
+        SectionPoint
+            A :py:class:`~abaqus.Odb.SectionPoint.SectionPoint` object.
         """
         sectionPoint = SectionPoint(number, description)
         self.sectionPoints.append(sectionPoint)

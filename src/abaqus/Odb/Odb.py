@@ -218,7 +218,8 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb):
 
         Returns
         -------
-        A :py:class:`~abaqus.Odb.SectionCategory.SectionCategory` object.
+        SectionCategory
+            A :py:class:`~abaqus.Odb.SectionCategory.SectionCategory` object.
         """
         self.sectionCategories[name] = sectionCategory = SectionCategory(
             name, description

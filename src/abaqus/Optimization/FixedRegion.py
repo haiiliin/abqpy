@@ -64,7 +64,8 @@ class FixedRegion(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.FixedRegion.FixedRegion` object.
+        FixedRegion
+            A :py:class:`~abaqus.Optimization.FixedRegion.FixedRegion` object.
         """
         super().__init__()
         pass

@@ -53,7 +53,8 @@ class ConnectorStop(ConnectorBehaviorOption):
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.ConnectorStop.ConnectorStop` object.
+        ConnectorStop
+            A :py:class:`~abaqus.Connector.ConnectorStop.ConnectorStop` object.
 
         Raises
         ------

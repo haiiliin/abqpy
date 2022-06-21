@@ -72,7 +72,8 @@ class BrittleShear:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Plastic.Concrete.BrittleShear.BrittleShear` object.
+        BrittleShear
+            A :py:class:`~abaqus.Material.Plastic.Concrete.BrittleShear.BrittleShear` object.
 
         Raises
         ------

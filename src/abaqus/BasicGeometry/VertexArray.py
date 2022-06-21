@@ -48,7 +48,8 @@ class VertexArray:
 
         Returns
         -------
-        A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object.
+        VertexArray
+            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object.
 
         """
         pass
@@ -80,7 +81,8 @@ class VertexArray:
 
         Returns
         -------
-        A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object or a sequence of ConstrainedSketchVertex objects..
+        ConstrainedSketchVertex
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object or a sequence of ConstrainedSketchVertex objects..
 
         """
         pass
@@ -98,7 +100,8 @@ class VertexArray:
 
         Returns
         -------
-        A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object or a sequence of ConstrainedSketchVertex objects..
+        ConstrainedSketchVertex
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object or a sequence of ConstrainedSketchVertex objects..
 
         """
         pass
@@ -142,7 +145,8 @@ class VertexArray:
 
         Returns
         -------
-        A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object, which is a sequence of ConstrainedSketchVertex objects..
+        VertexArray
+            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object, which is a sequence of ConstrainedSketchVertex objects..
 
         """
         pass
@@ -164,7 +168,8 @@ class VertexArray:
 
         Returns
         -------
-        A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object, which is a sequence of ConstrainedSketchVertex objects..
+        VertexArray
+            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object, which is a sequence of ConstrainedSketchVertex objects..
 
         """
         pass
@@ -182,7 +187,8 @@ class VertexArray:
 
         Returns
         -------
-        A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object, which is a sequence of ConstrainedSketchVertex objects..
+        VertexArray
+            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object, which is a sequence of ConstrainedSketchVertex objects..
 
         """
         pass

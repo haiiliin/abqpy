@@ -91,7 +91,8 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.XY.LineStyle.LineStyle` object.
+        LineStyle
+            A :py:class:`~abaqus.XY.LineStyle.LineStyle` object.
 
         Raises
         ------
@@ -197,7 +198,8 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.XY.QuantityType.QuantityType` object.
+        QuantityType
+            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object.
         """
         quantityType = QuantityType(label, type)
         return quantityType
@@ -251,7 +253,8 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.XY.SymbolStyle.SymbolStyle` object.
+        SymbolStyle
+            A :py:class:`~abaqus.XY.SymbolStyle.SymbolStyle` object.
 
         Raises
         ------
@@ -292,7 +295,8 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.XY.TextStyle.TextStyle` object.
+        TextStyle
+            A :py:class:`~abaqus.XY.TextStyle.TextStyle` object.
 
         Raises
         ------

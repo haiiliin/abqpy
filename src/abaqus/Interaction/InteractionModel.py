@@ -636,7 +636,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.CavityRadiation.CavityRadiation` object.
+        CavityRadiation
+            A :py:class:`~abaqus.Interaction.CavityRadiation.CavityRadiation` object.
         """
         self.interactions[name] = interaction = CavityRadiation(
             name,
@@ -713,7 +714,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.CavityRadiationProp.CavityRadiationProp` object.
+        CavityRadiationProp
+            A :py:class:`~abaqus.Interaction.CavityRadiationProp.CavityRadiationProp` object.
         """
         self.interactions[name] = interaction = CavityRadiationProp(
             name, temperatureDependency, dependencies, property
@@ -807,7 +809,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.ConcentratedFilmCondition.ConcentratedFilmCondition` object.
+        ConcentratedFilmCondition
+            A :py:class:`~abaqus.Interaction.ConcentratedFilmCondition.ConcentratedFilmCondition` object.
         """
         self.interactions[name] = interaction = ConcentratedFilmCondition(
             name,
@@ -888,7 +891,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.ConcentratedRadiationToAmbient.ConcentratedRadiationToAmbient` object.
+        ConcentratedRadiationToAmbient
+            A :py:class:`~abaqus.Interaction.ConcentratedRadiationToAmbient.ConcentratedRadiationToAmbient` object.
         """
         self.interactions[name] = interaction = ConcentratedRadiationToAmbient(
             name,
@@ -967,7 +971,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.ContactExp.ContactExp` object.
+        ContactExp
+            A :py:class:`~abaqus.Interaction.ContactExp.ContactExp` object.
         """
         self.interactions[name] = interaction = ContactExp(
             name,
@@ -1003,7 +1008,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.ContactProperty.ContactProperty` object.
+        ContactProperty
+            A :py:class:`~abaqus.Interaction.ContactProperty.ContactProperty` object.
         """
         interactionProperties = ContactProperty(name)
         self.interactions[name] = interactionProperties
@@ -1084,7 +1090,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.ContactStd.ContactStd` object.
+        ContactStd
+            A :py:class:`~abaqus.Interaction.ContactStd.ContactStd` object.
         """
         self.interactions[name] = interaction = ContactStd(
             name,
@@ -1185,7 +1192,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.CyclicSymmetry.CyclicSymmetry` object.
+        CyclicSymmetry
+            A :py:class:`~abaqus.Interaction.CyclicSymmetry.CyclicSymmetry` object.
         """
         self.interactions[name] = interaction = CyclicSymmetry(
             name,
@@ -1380,7 +1388,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.FilmCondition.FilmCondition` object.
+        FilmCondition
+            A :py:class:`~abaqus.Interaction.FilmCondition.FilmCondition` object.
         """
         self.interactions[name] = interaction = FilmCondition(
             name,
@@ -1434,7 +1443,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.FilmConditionProp.FilmConditionProp` object.
+        FilmConditionProp
+            A :py:class:`~abaqus.Interaction.FilmConditionProp.FilmConditionProp` object.
         """
         self.interactions[name] = interaction = FilmConditionProp(
             name, temperatureDependency, dependencies, property
@@ -1490,7 +1500,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.FluidCavity.FluidCavity` object.
+        FluidCavity
+            A :py:class:`~abaqus.Interaction.FluidCavity.FluidCavity` object.
         """
         self.interactions[name] = interaction = FluidCavity(
             name,
@@ -1635,7 +1646,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.FluidCavityProperty.FluidCavityProperty` object.
+        FluidCavityProperty
+            A :py:class:`~abaqus.Interaction.FluidCavityProperty.FluidCavityProperty` object.
         """
         self.interactions[name] = interaction = FluidCavityProperty(
             name,
@@ -1701,7 +1713,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.FluidExchange.FluidExchange` object.
+        FluidExchange
+            A :py:class:`~abaqus.Interaction.FluidExchange.FluidExchange` object.
         """
         self.interactions[name] = interaction = FluidExchange(
             name,
@@ -1804,7 +1817,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.FluidExchangeProperty.FluidExchangeProperty` object.
+        FluidExchangeProperty
+            A :py:class:`~abaqus.Interaction.FluidExchangeProperty.FluidExchangeProperty` object.
         """
         self.interactions[name] = interaction = FluidExchangeProperty(
             name,
@@ -2167,7 +2181,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.ModelChange.ModelChange` object.
+        ModelChange
+            A :py:class:`~abaqus.Interaction.ModelChange.ModelChange` object.
         """
         self.interactions[name] = interaction = ModelChange(
             name,
@@ -2234,7 +2249,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.PressurePenetration.PressurePenetration` object.
+        PressurePenetration
+            A :py:class:`~abaqus.Interaction.PressurePenetration.PressurePenetration` object.
         """
         self.interactions[name] = interaction = PressurePenetration(
             name,
@@ -2307,7 +2323,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.RadiationToAmbient.RadiationToAmbient` object.
+        RadiationToAmbient
+            A :py:class:`~abaqus.Interaction.RadiationToAmbient.RadiationToAmbient` object.
         """
         self.interactions[name] = interaction = RadiationToAmbient(
             name,
@@ -2362,7 +2379,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.SelfContactExp.SelfContactExp` object.
+        SelfContactExp
+            A :py:class:`~abaqus.Interaction.SelfContactExp.SelfContactExp` object.
         """
         self.interactions[name] = interaction = SelfContactExp(
             name,
@@ -2423,7 +2441,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.SelfContactStd.SelfContactStd` object.
+        SelfContactStd
+            A :py:class:`~abaqus.Interaction.SelfContactStd.SelfContactStd` object.
         """
         self.interactions[name] = interaction = SelfContactStd(
             name,
@@ -2555,7 +2574,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.StdContactControl.StdContactControl` object.
+        StdContactControl
+            A :py:class:`~abaqus.Interaction.StdContactControl.StdContactControl` object.
 
         Raises
         ------
@@ -2627,7 +2647,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.StdInitialization.StdInitialization` object.
+        StdInitialization
+            A :py:class:`~abaqus.Interaction.StdInitialization.StdInitialization` object.
 
         Raises
         ------
@@ -2689,7 +2710,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.StdStabilization.StdStabilization` object.
+        StdStabilization
+            A :py:class:`~abaqus.Interaction.StdStabilization.StdStabilization` object.
 
         Raises
         ------
@@ -2750,7 +2772,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.StdXplCosimulation.StdXplCosimulation` object.
+        StdXplCosimulation
+            A :py:class:`~abaqus.Interaction.StdXplCosimulation.StdXplCosimulation` object.
         """
         self.interactions[name] = interaction = StdXplCosimulation(
             name, createStepName, region, incrementation, stepSize, stepSizeDefinition
@@ -2844,7 +2867,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp` object.
+        SurfaceToSurfaceContactExp
+            A :py:class:`~abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp` object.
         """
         self.interactions[name] = interaction = SurfaceToSurfaceContactExp(
             name,
@@ -3023,7 +3047,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd` object.
+        SurfaceToSurfaceContactStd
+            A :py:class:`~abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd` object.
         """
         self.interactions[name] = interaction = SurfaceToSurfaceContactStd(
             name,
@@ -3087,7 +3112,8 @@ class InteractionModel(
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.XFEMCrackGrowth.XFEMCrackGrowth` object.
+        XFEMCrackGrowth
+            A :py:class:`~abaqus.Interaction.XFEMCrackGrowth.XFEMCrackGrowth` object.
         """
         self.interactions[name] = interaction = XFEMCrackGrowth(
             name, createStepName, crackName, allowGrowth

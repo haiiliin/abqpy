@@ -33,6 +33,7 @@ class ConstrainedSketchVertex:
 
         Returns
         -------
-        A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object (None if the spot cannot be created).
+        ConstrainedSketchVertex
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object (None if the spot cannot be created).
         """
         pass

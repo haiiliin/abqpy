@@ -83,7 +83,8 @@ class BodyCurrentDensity(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.BodyCurrentDensity.BodyCurrentDensity` object.
+        BodyCurrentDensity
+            A :py:class:`~abaqus.Load.BodyCurrentDensity.BodyCurrentDensity` object.
         """
         super().__init__()
         pass

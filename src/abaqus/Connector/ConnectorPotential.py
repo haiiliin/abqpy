@@ -95,7 +95,8 @@ class ConnectorPotential:
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.ConnectorPotential.ConnectorPotential` object. 
+        ConnectorPotential
+            A :py:class:`~abaqus.Connector.ConnectorPotential.ConnectorPotential` object. 
 
         Raises
         ------
@@ -127,7 +128,8 @@ class ConnectorPotential:
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` object.
+        DerivedComponent
+            A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` object.
 
         Raises
         ------

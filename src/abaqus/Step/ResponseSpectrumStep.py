@@ -350,7 +350,8 @@ class ResponseSpectrumStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep` object.
+        ResponseSpectrumStep
+            A :py:class:`~abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep` object.
 
         Raises
         ------

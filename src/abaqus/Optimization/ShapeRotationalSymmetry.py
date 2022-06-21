@@ -86,7 +86,8 @@ class ShapeRotationalSymmetry(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry` object.
+        ShapeRotationalSymmetry
+            A :py:class:`~abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry` object.
         """
         super().__init__()
         pass

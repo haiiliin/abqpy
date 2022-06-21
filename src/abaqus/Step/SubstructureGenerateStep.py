@@ -413,7 +413,8 @@ class SubstructureGenerateStep(AnalysisStep):
 
         Returns
         -------
-        A :py:class:`~abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep` object.
+        SubstructureGenerateStep
+            A :py:class:`~abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep` object.
 
         Raises
         ------

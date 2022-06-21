@@ -60,7 +60,8 @@ class PoreFluidExpansion:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Others.Mechanical.PoreFluidExpansion.PoreFluidExpansion` object.
+        PoreFluidExpansion
+            A :py:class:`~abaqus.Material.Others.Mechanical.PoreFluidExpansion.PoreFluidExpansion` object.
 
         Raises
         ------

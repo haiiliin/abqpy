@@ -72,7 +72,8 @@ class LowDensityFoam:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Elastic.LowDensityFoam.LowDensityFoam.LowDensityFoam` object.
+        LowDensityFoam
+            A :py:class:`~abaqus.Material.Elastic.LowDensityFoam.LowDensityFoam.LowDensityFoam` object.
 
         Raises
         ------

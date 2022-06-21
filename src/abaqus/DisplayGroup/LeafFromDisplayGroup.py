@@ -47,7 +47,8 @@ class LeafFromDisplayGroup(Leaf):
 
         Returns
         -------
-        A :py:class:`~abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup` object.
+        LeafFromDisplayGroup
+            A :py:class:`~abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup` object.
         """
         super().__init__(DEFAULT_MODEL)
         pass

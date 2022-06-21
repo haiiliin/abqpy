@@ -60,7 +60,8 @@ class TopologyCyclicSymmetry(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry` object.
+        TopologyCyclicSymmetry
+            A :py:class:`~abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry` object.
         """
         super().__init__()
         pass

@@ -137,7 +137,8 @@ class ConstraintModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Constraint.Coupling.Coupling` object.
+        Coupling
+            A :py:class:`~abaqus.Constraint.Coupling.Coupling` object.
         """
         self.constraints[name] = constraint = Coupling(
             name,
@@ -185,7 +186,8 @@ class ConstraintModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Constraint.DisplayBody.DisplayBody` object.
+        DisplayBody
+            A :py:class:`~abaqus.Constraint.DisplayBody.DisplayBody` object.
         """
         self.constraints[name] = constraint = DisplayBody(name, instance, controlPoints)
         return constraint
@@ -331,7 +333,8 @@ class ConstraintModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Constraint.MultipointConstraint.MultipointConstraint` object.
+        MultipointConstraint
+            A :py:class:`~abaqus.Constraint.MultipointConstraint.MultipointConstraint` object.
         """
         self.constraints[name] = constraint = MultipointConstraint(
             name, surface, controlPoint, mpcType, csys, userType, userMode
@@ -386,7 +389,8 @@ class ConstraintModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Constraint.RigidBody.RigidBody` object.
+        RigidBody
+            A :py:class:`~abaqus.Constraint.RigidBody.RigidBody` object.
         """
         self.constraints[name] = constraint = RigidBody(
             name,
@@ -445,7 +449,8 @@ class ConstraintModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling` object.
+        ShellSolidCoupling
+            A :py:class:`~abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling` object.
         """
         self.constraints[name] = constraint = ShellSolidCoupling(
             name,
@@ -519,7 +524,8 @@ class ConstraintModel(ModelBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Constraint.Tie.Tie` object.
+        Tie
+            A :py:class:`~abaqus.Constraint.Tie.Tie` object.
         """
         self.constraints[name] = constraint = Tie(
             name,

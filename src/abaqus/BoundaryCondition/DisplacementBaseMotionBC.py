@@ -131,7 +131,8 @@ class DisplacementBaseMotionBC(BoundaryCondition):
 
         Returns
         -------
-        A :py:class:`~abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC` object.
+        DisplacementBaseMotionBC
+            A :py:class:`~abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC` object.
         """
         super().__init__()
         pass

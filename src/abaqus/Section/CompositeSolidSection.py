@@ -56,7 +56,8 @@ class CompositeSolidSection(Section):
 
         Returns
         -------
-        A :py:class:`~abaqus.Section.CompositeSolidSection.CompositeSolidSection` object.
+        CompositeSolidSection
+            A :py:class:`~abaqus.Section.CompositeSolidSection.CompositeSolidSection` object.
         """
         super().__init__()
         pass

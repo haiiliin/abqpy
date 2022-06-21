@@ -38,7 +38,8 @@ class FrozenArea(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.FrozenArea.FrozenArea` object.
+        FrozenArea
+            A :py:class:`~abaqus.Optimization.FrozenArea.FrozenArea` object.
         """
         super().__init__()
         pass

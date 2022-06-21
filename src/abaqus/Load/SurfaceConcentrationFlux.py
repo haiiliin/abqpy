@@ -95,7 +95,8 @@ class SurfaceConcentrationFlux(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux` object.
+        SurfaceConcentrationFlux
+            A :py:class:`~abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux` object.
         """
         super().__init__()
         pass

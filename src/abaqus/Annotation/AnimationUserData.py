@@ -237,7 +237,8 @@ class AnimationUserData(UserDataBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Annotation.Text.Text` object.
+        Text
+            A :py:class:`~abaqus.Annotation.Text.Text` object.
         """
         self.annotations[name] = text = Text(
             name,

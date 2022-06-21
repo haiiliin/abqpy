@@ -140,7 +140,8 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.ConnectorDamage.ConnectorDamage` object.
+        ConnectorDamage
+            A :py:class:`~abaqus.Connector.ConnectorDamage.ConnectorDamage` object.
 
         Raises
         ------
@@ -210,7 +211,8 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.ConnectorDamping.ConnectorDamping` object.
+        ConnectorDamping
+            A :py:class:`~abaqus.Connector.ConnectorDamping.ConnectorDamping` object.
 
         Raises
         ------
@@ -284,7 +286,8 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.ConnectorElasticity.ConnectorElasticity` object.
+        ConnectorElasticity
+            A :py:class:`~abaqus.Connector.ConnectorElasticity.ConnectorElasticity` object.
 
         Raises
         ------
@@ -343,7 +346,8 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.ConnectorFailure.ConnectorFailure` object.
+        ConnectorFailure
+            A :py:class:`~abaqus.Connector.ConnectorFailure.ConnectorFailure` object.
 
         Raises
         ------
@@ -478,7 +482,8 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.ConnectorFriction.ConnectorFriction` object.
+        ConnectorFriction
+            A :py:class:`~abaqus.Connector.ConnectorFriction.ConnectorFriction` object.
 
         Raises
         ------
@@ -538,7 +543,8 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.ConnectorLock.ConnectorLock` object.
+        ConnectorLock
+            A :py:class:`~abaqus.Connector.ConnectorLock.ConnectorLock` object.
 
         Raises
         ------
@@ -638,7 +644,8 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity` object.
+        ConnectorPlasticity
+            A :py:class:`~abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity` object.
 
         Raises
         ------
@@ -701,7 +708,8 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.ConnectorPotential.ConnectorPotential` object.
+        ConnectorPotential
+            A :py:class:`~abaqus.Connector.ConnectorPotential.ConnectorPotential` object.
 
         Raises
         ------
@@ -742,7 +750,8 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.ConnectorStop.ConnectorStop` object.
+        ConnectorStop
+            A :py:class:`~abaqus.Connector.ConnectorStop.ConnectorStop` object.
 
         Raises
         ------
@@ -772,7 +781,8 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` object.
+        DerivedComponent
+            A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` object.
 
         Raises
         ------
@@ -844,7 +854,8 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.Connector.TangentialBehavior.TangentialBehavior` object. .
+        TangentialBehavior
+            A :py:class:`~abaqus.Connector.TangentialBehavior.TangentialBehavior` object. .
         """
         option = TangentialBehavior()
         self.behaviorOptions.append(option)

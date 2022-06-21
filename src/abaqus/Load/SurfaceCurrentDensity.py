@@ -83,7 +83,8 @@ class SurfaceCurrentDensity(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity` object.
+        SurfaceCurrentDensity
+            A :py:class:`~abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity` object.
         """
         super().__init__()
         pass

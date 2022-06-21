@@ -45,7 +45,8 @@ class DetonationPoint:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Eos.DetonationPoint.DetonationPoint` object.
+        DetonationPoint
+            A :py:class:`~abaqus.Material.Eos.DetonationPoint.DetonationPoint` object.
         """
         pass
 

@@ -31,6 +31,7 @@ class HeatGeneration:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Others.HeatTransfer.HeatGeneration.HeatGeneration` object.
+        HeatGeneration
+            A :py:class:`~abaqus.Material.Others.HeatTransfer.HeatGeneration.HeatGeneration` object.
         """
         pass

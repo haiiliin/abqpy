@@ -55,7 +55,8 @@ class GasketMembraneElastic:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Gasket.GasketMembraneElastic.GasketMembraneElastic` object.
+        GasketMembraneElastic
+            A :py:class:`~abaqus.Material.Gasket.GasketMembraneElastic.GasketMembraneElastic` object.
 
         Raises
         ------

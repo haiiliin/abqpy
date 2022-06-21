@@ -94,7 +94,8 @@ class PathSession(SessionBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.PathAndProbe.Path.Path` object.
+        Path
+            A :py:class:`~abaqus.PathAndProbe.Path.Path` object.
 
         Raises
         ------
@@ -139,7 +140,8 @@ class PathSession(SessionBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.PathAndProbe.Spectrum.Spectrum` object.
+        Spectrum
+            A :py:class:`~abaqus.PathAndProbe.Spectrum.Spectrum` object.
         """
         self.spectrums[name] = spectrum = Spectrum(name, colors)
         return spectrum
@@ -179,7 +181,8 @@ class PathSession(SessionBase):
 
         Returns
         -------
-        A :py:class:`~abaqus.PathAndProbe.Stream.Stream` object.
+        Stream
+            A :py:class:`~abaqus.PathAndProbe.Stream.Stream` object.
         """
         self.streams[name] = stream = Stream(
             name, numPointsOnRake, pointA, pointB, path

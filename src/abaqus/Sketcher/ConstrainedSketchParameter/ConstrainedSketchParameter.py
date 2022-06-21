@@ -63,7 +63,8 @@ class ConstrainedSketchParameter:
 
         Returns
         -------
-        A :py:class:`~abaqus.Sketcher.ConstrainedSketchParameter.ConstrainedSketchParameter.ConstrainedSketchParameter` object.
+        ConstrainedSketchParameter
+            A :py:class:`~abaqus.Sketcher.ConstrainedSketchParameter.ConstrainedSketchParameter.ConstrainedSketchParameter` object.
 
         """
         pass

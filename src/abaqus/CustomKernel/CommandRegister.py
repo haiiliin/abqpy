@@ -25,6 +25,7 @@ class CommandRegister:
 
         Returns
         -------
-        A :py:class:`~abaqus.CustomKernel.CommandRegister.CommandRegister` object.
+        CommandRegister
+            A :py:class:`~abaqus.CustomKernel.CommandRegister.CommandRegister` object.
         """
         pass

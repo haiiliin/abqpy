@@ -59,7 +59,8 @@ class ShapeMemberSize(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.ShapeMemberSize.ShapeMemberSize` object.
+        ShapeMemberSize
+            A :py:class:`~abaqus.Optimization.ShapeMemberSize.ShapeMemberSize` object.
         """
         super().__init__()
         pass

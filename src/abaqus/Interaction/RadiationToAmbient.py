@@ -76,7 +76,8 @@ class RadiationToAmbient(Interaction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.RadiationToAmbient.RadiationToAmbient` object.
+        RadiationToAmbient
+            A :py:class:`~abaqus.Interaction.RadiationToAmbient.RadiationToAmbient` object.
         """
         super().__init__()
         pass

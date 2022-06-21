@@ -36,7 +36,8 @@ class SizingFrozenArea(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.SizingFrozenArea.SizingFrozenArea` object.
+        SizingFrozenArea
+            A :py:class:`~abaqus.Optimization.SizingFrozenArea.SizingFrozenArea` object.
         """
         super().__init__()
         pass

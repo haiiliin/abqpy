@@ -56,7 +56,8 @@ class ShearTestData:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.TestData.ShearTestData.ShearTestData` object.
+        ShearTestData
+            A :py:class:`~abaqus.Material.TestData.ShearTestData.ShearTestData` object.
         """
         pass
 

@@ -70,7 +70,8 @@ class PorousMetalPlasticity:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Plastic.Metal.Porous.PorousMetalPlasticity.PorousMetalPlasticity` object.
+        PorousMetalPlasticity
+            A :py:class:`~abaqus.Material.Plastic.Metal.Porous.PorousMetalPlasticity.PorousMetalPlasticity` object.
 
         Raises
         ------

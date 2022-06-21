@@ -101,7 +101,8 @@ class RetainedNodalDofsBC(BoundaryCondition):
 
         Returns
         -------
-        A :py:class:`~abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC` object.
+        RetainedNodalDofsBC
+            A :py:class:`~abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC` object.
         """
         super().__init__()
         pass

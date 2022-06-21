@@ -79,7 +79,8 @@ class MohrCoulombPlasticity:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Plastic.MohrCoulomb.MohrCoulombPlasticity.MohrCoulombPlasticity` object.
+        MohrCoulombPlasticity
+            A :py:class:`~abaqus.Material.Plastic.MohrCoulomb.MohrCoulombPlasticity.MohrCoulombPlasticity` object.
 
         Raises
         ------

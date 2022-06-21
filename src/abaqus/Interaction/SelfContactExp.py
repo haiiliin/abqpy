@@ -57,7 +57,8 @@ class SelfContactExp(Interaction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.SelfContactExp.SelfContactExp` object.
+        SelfContactExp
+            A :py:class:`~abaqus.Interaction.SelfContactExp.SelfContactExp` object.
         """
         super().__init__()
         pass

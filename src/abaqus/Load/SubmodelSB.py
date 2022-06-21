@@ -108,7 +108,8 @@ class SubmodelSB(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.SubmodelSB.SubmodelSB` object.
+        SubmodelSB
+            A :py:class:`~abaqus.Load.SubmodelSB.SubmodelSB` object.
         """
         super().__init__()
         pass

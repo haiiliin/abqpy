@@ -107,7 +107,8 @@ class CoriolisForce(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.CoriolisForce.CoriolisForce` object.
+        CoriolisForce
+            A :py:class:`~abaqus.Load.CoriolisForce.CoriolisForce` object.
         """
         super().__init__()
         pass

@@ -106,7 +106,8 @@ class CyclicSymmetry(Interaction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.CyclicSymmetry.CyclicSymmetry` object.
+        CyclicSymmetry
+            A :py:class:`~abaqus.Interaction.CyclicSymmetry.CyclicSymmetry` object.
         """
         super().__init__()
         pass

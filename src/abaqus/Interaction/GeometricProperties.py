@@ -69,7 +69,8 @@ class GeometricProperties:
 
         Returns
         -------
-        A :py:class:`~abaqus.Interaction.GeometricProperties.GeometricProperties` object.
+        GeometricProperties
+            A :py:class:`~abaqus.Interaction.GeometricProperties.GeometricProperties` object.
         """
         pass
 

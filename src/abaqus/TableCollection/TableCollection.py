@@ -57,7 +57,8 @@ class TableCollection:
 
         Returns
         -------
-        A :py:class:`~abaqus.TableCollection.TableCollection.TableCollection` object.
+        TableCollection
+            A :py:class:`~abaqus.TableCollection.TableCollection.TableCollection` object.
         """
         pass
 
@@ -79,7 +80,8 @@ class TableCollection:
 
         Returns
         -------
-        A :py:class:`~abaqus.Field.DataTable.DataTable` object.
+        DataTable
+            A :py:class:`~abaqus.Field.DataTable.DataTable` object.
 
         Raises
         ------
@@ -108,7 +110,8 @@ class TableCollection:
 
         Returns
         -------
-        A :py:class:`~abaqus.TableCollection.ParameterTable.ParameterTable` object.
+        ParameterTable
+            A :py:class:`~abaqus.TableCollection.ParameterTable.ParameterTable` object.
         """
         self.parameterTables[name] = parameterTable = ParameterTable(name)
         return parameterTable
@@ -138,7 +141,8 @@ class TableCollection:
 
         Returns
         -------
-        A :py:class:`~abaqus.TableCollection.PropertyTable.PropertyTable` object.
+        PropertyTable
+            A :py:class:`~abaqus.TableCollection.PropertyTable.PropertyTable` object.
 
         Raises
         ------

@@ -85,7 +85,8 @@ class KinematicHardening(PredefinedField):
 
         Returns
         -------
-        A :py:class:`~abaqus.PredefinedField.KinematicHardening.KinematicHardening` object.
+        KinematicHardening
+            A :py:class:`~abaqus.PredefinedField.KinematicHardening.KinematicHardening` object.
         """
         super().__init__()
         pass

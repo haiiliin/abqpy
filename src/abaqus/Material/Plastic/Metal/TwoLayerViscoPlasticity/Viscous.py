@@ -130,7 +130,8 @@ class Viscous:
 
         Returns
         -------
-        A :py:class:`~abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous` object.
+        Viscous
+            A :py:class:`~abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous` object.
         """
         pass
 

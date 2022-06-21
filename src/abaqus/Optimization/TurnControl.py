@@ -77,7 +77,8 @@ class TurnControl(GeometricRestriction):
 
         Returns
         -------
-        A :py:class:`~abaqus.Optimization.TurnControl.TurnControl` object.
+        TurnControl
+            A :py:class:`~abaqus.Optimization.TurnControl.TurnControl` object.
         """
         super().__init__()
         pass

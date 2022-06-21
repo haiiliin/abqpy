@@ -102,7 +102,8 @@ class ConcentratedHeatFlux(Load):
 
         Returns
         -------
-        A :py:class:`~abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux` object.
+        ConcentratedHeatFlux
+            A :py:class:`~abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux` object.
         """
         super().__init__()
         pass
