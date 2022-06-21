@@ -58,6 +58,6 @@ class SizingPlanarSymmetry(GeometricRestriction):
         super().__init__()
         pass
 
-    def setValues(self):
+    def setValues(self, *args, **kwargs):
         """This method modifies the sizingPlanarSymmetry object."""
         pass

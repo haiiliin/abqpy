@@ -352,6 +352,6 @@ class ContactDamage:
         """
         pass
 
-    def setValues(self):
+    def setValues(self, *args, **kwargs):
         """This method modifies the ContactDamage object."""
         pass

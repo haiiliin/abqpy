@@ -113,7 +113,7 @@ class CDCTerm:
         ValueError and TextError        """
         pass
 
-    def setValues(self):
+    def setValues(self, *args, **kwargs):
         """This method modifies the CDCTerm object.
 
         Raises

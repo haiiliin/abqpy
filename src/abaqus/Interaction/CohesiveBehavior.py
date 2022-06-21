@@ -94,6 +94,6 @@ class CohesiveBehavior:
         """
         pass
 
-    def setValues(self):
+    def setValues(self, *args, **kwargs):
         """This method modifies the CohesiveBehavior object."""
         pass

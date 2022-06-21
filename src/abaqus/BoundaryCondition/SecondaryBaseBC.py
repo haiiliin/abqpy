@@ -91,7 +91,7 @@ class SecondaryBaseBC(BoundaryCondition):
         super().__init__()
         pass
 
-    def setValues(self):
+    def setValues(self, *args, **kwargs):
         """This method modifies the data for an existing SecondaryBaseBC object in the step where
         it is created.
         """

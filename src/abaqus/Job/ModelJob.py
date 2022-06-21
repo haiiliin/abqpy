@@ -382,6 +382,6 @@ class ModelJob(Job):
         """
         pass
 
-    def setValues(self):
+    def setValues(self, *args, **kwargs):
         """This method modifies the ModelJob object."""
         pass
