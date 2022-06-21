@@ -14,7 +14,9 @@ from .ConstrainedSketchParameter.ConstrainedSketchParameter import (
 from .ConstrainedSketchVertex.ConstrainedSketchVertexArray import (
     ConstrainedSketchVertexArray,
 )
-from ..Amplitude.ConstrainedSketchGeometryArray import ConstrainedSketchGeometryArray
+from .ConstrainedSketchGeometry.ConstrainedSketchGeometryArray import (
+    ConstrainedSketchGeometryArray
+)
 
 
 class ConstrainedSketchBase:

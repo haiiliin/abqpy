@@ -42,12 +42,6 @@ BaselineCorrection
 .. autoclass:: abaqus.Amplitude.BaselineCorrection.BaselineCorrection
     :members:
 
-ConstrainedSketchGeometryArray
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: abaqus.Amplitude.ConstrainedSketchGeometryArray.ConstrainedSketchGeometryArray
-    :members:
-
 Correlation
 ~~~~~~~~~~~
 
