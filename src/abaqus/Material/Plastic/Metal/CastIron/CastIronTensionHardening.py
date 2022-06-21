@@ -41,7 +41,7 @@ class CastIronTensionHardening:
             
             .. code-block:: python
             
-                mdb.models[name].materials[name].castIronPlasticity.CastIronTensionHardening.CastIronTensionHardeningrials[name].castIronPlasticity\.CastIronTensionHardening
+                mdb.models[name].materials[name].castIronPlasticity.CastIronTensionHardening.CastIronTensionHardeningrials[name].castIronPlasticity.CastIronTensionHardening
         
         Parameters
         ----------

@@ -188,12 +188,12 @@ class DamageEvolution:
                 mdb.models[name].materials[name].shearDamageInitiation.DamageEvolution
                 session.odbs[name].materials[name].ductileDamageInitiation.DamageEvolution
                 session.odbs[name].materials[name].fldDamageInitiation.DamageEvolution
-                session.odbs[name].materials[name].flsdDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].hashinDamageInitiation\.DamageEvolution.DamageEvolutioname].materials[name].johnsonCookDamageInitiation\.DamageEvolution.DamageEvolutioname].materials[name].maxeDamageInitiation\.DamageEvolution
+                session.odbs[name].materials[name].flsdDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].hashinDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].johnsonCookDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].maxeDamageInitiation.DamageEvolution
                 session.odbs[name].materials[name].maxpeDamageInitiation.DamageEvolution
                 session.odbs[name].materials[name].maxpsDamageInitiation.DamageEvolution
                 session.odbs[name].materials[name].maxsDamageInitiation.DamageEvolution
                 session.odbs[name].materials[name].mkDamageInitiation.DamageEvolution
-                session.odbs[name].materials[name].msfldDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].quadeDamageInitiation\.DamageEvolution.DamageEvolutioname].materials[name].quadsDamageInitiation.DamageEvolution
+                session.odbs[name].materials[name].msfldDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].quadeDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].quadsDamageInitiation.DamageEvolution
                 session.odbs[name].materials[name].shearDamageInitiation.DamageEvolution
         
         Parameters
