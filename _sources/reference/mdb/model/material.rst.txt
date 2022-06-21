@@ -30,13 +30,6 @@ Assign properties to the material
 Object features
 ---------------
 
-Material
-~~~~~~~~
-
-.. autoclass:: abaqus.Material.Material.Material
-    :members:
-    :inherited-members:
-
 Density
 ~~~~~~~
 
