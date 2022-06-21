@@ -38,7 +38,8 @@ class ErrorIndicatorResult(RuleResult):
 
         Returns
         -------
-        An :py:class:`~abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult` object.
+        ErrorIndicatorResult
+            An :py:class:`~abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult` object.
 
         Raises
         ------

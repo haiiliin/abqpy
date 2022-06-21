@@ -69,7 +69,8 @@ class ExpContactControl(ContactControl):
 
         Returns
         -------
-        An :py:class:`~abaqus.Interaction.ExpContactControl.ExpContactControl` object.
+        ExpContactControl
+            An :py:class:`~abaqus.Interaction.ExpContactControl.ExpContactControl` object.
 
         Raises
         ------

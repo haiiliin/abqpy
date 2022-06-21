@@ -71,7 +71,8 @@ class OperatorFilter(Filter):
 
         Returns
         -------
-        An :py:class:`~abaqus.Filter.OperatorFilter.OperatorFilter` object.
+        OperatorFilter
+            An :py:class:`~abaqus.Filter.OperatorFilter.OperatorFilter` object.
 
         Raises
         ------

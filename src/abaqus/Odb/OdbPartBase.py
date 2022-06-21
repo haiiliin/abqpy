@@ -114,7 +114,8 @@ class OdbPartBase:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbPart.OdbPart` object.
+        OdbPart
+            An :py:class:`~abaqus.Odb.OdbPart.OdbPart` object.
         """
         pass
 
@@ -299,7 +300,8 @@ class OdbPartBase:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbMeshElement.OdbMeshElement` object.
+        OdbMeshElement
+            An :py:class:`~abaqus.Odb.OdbMeshElement.OdbMeshElement` object.
 
         Raises
         ------
@@ -318,7 +320,8 @@ class OdbPartBase:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object.
+        OdbMeshNode
+            An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object.
 
         Raises
         ------

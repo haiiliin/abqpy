@@ -43,7 +43,8 @@ class Profile:
 
         Returns
         -------
-        A list of Profile objects.
+        list[Profile]
+            A list of Profile objects.
 
         """
         pass

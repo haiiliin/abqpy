@@ -93,7 +93,8 @@ class EdgeArray:
 
         Returns
         -------
-        An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a sequence of Edge objects.
+        Edge
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a sequence of Edge objects.
 
         """
         pass
@@ -139,7 +140,8 @@ class EdgeArray:
 
         Returns
         -------
-        An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a sequence of Edge objects.
+        Edge
+            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a sequence of Edge objects.
 
         Raises
         ------
@@ -153,7 +155,8 @@ class EdgeArray:
 
         Returns
         -------
-        A String specifying the object or objects.
+        str
+            A String specifying the object or objects.
 
         """
         pass
@@ -186,7 +189,8 @@ class EdgeArray:
 
         Returns
         -------
-        An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is a sequence of Edge objects.
+        EdgeArray
+            An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is a sequence of Edge objects.
 
         """
         pass
@@ -208,7 +212,8 @@ class EdgeArray:
 
         Returns
         -------
-        An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is a sequence of Edge objects.
+        EdgeArray
+            An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is a sequence of Edge objects.
 
         """
         pass
@@ -226,7 +231,8 @@ class EdgeArray:
 
         Returns
         -------
-        An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is a sequence of Edge objects.
+        EdgeArray
+            An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is a sequence of Edge objects.
 
         """
         pass
@@ -237,11 +243,12 @@ class EdgeArray:
 
         Returns
         -------
-        A Dictionary object with the following items:
-        
-        - **low**: a tuple of three floats representing the minimum **X**-, **Y**-, and **Z**-boundary
-            values of the bounding box.
-        - **high**: a tuple of three floats representing the maximum **X**-, **Y**-, and **Z**-boundary
-            values of the bounding box.
+        dict[str, tuple[float, float, float]]
+            A Dictionary object with the following items:
+            
+            - **low**: a tuple of three floats representing the minimum **X**-, **Y**-, and **Z**-boundary
+                values of the bounding box.
+            - **high**: a tuple of three floats representing the maximum **X**-, **Y**-, and **Z**-boundary
+                values of the bounding box.
         """
         pass

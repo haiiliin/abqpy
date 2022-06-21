@@ -68,7 +68,8 @@ class XYPlotBase:
 
         Returns
         -------
-        An :py:class:`~abaqus.XY.XYPlot.XYPlot` object.
+        XYPlot
+            An :py:class:`~abaqus.XY.XYPlot.XYPlot` object.
         """
         pass
 

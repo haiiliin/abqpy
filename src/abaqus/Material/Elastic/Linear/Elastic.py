@@ -199,7 +199,8 @@ class Elastic:
 
         Returns
         -------
-        An :py:class:`~abaqus.Material.Elastic.Linear.Elastic.Elastic` object.
+        Elastic
+            An :py:class:`~abaqus.Material.Elastic.Linear.Elastic.Elastic` object.
 
         Raises
         ------

@@ -56,7 +56,7 @@ class MeshPart(PartBase):
         geometricEntity
             A Cell, a Face, an Edge, or a ConstrainedSketchVertex object specifying geometric entity to be associated
             with one or more mesh entities.If the geometric entity is a Cell object then the
-            argument **elements** must be specified.If the geometric entity is a Face object then the
+            argument **elements** must be specified.If the geometric entity is a :py:class:`~abaqus.BasicGeometry.Face.Face` object then the
             argument **elemFaces** must be specified.If the geometric entity is an Edge object then
             the argument **elemEdges** must be specified.If the geometric entity is a ConstrainedSketchVertex object
             then the argument **node** must be specified.
@@ -64,7 +64,7 @@ class MeshPart(PartBase):
             A sequence of MeshElement objects specifying the elements to be associated with the
             geometric cell.
         elemFaces
-            A sequence of MeshFace objects specifying the element faces to be associated with the
+            A sequence of Mesh:py:class:`~abaqus.BasicGeometry.Face.Face` objects specifying the element faces to be associated with the
             geometric face.
         elemEdges
             A sequence of MeshEdge objects specifying the element edges to be associated with the
@@ -100,7 +100,7 @@ class MeshPart(PartBase):
         Parameters
         ----------
         regions
-            A sequence of Face objects specifying the domain to search for geometric entities that
+            A sequence of :py:class:`~abaqus.BasicGeometry.Face.Face` objects specifying the domain to search for geometric entities that
             need to be merged. Entities identified as candidates to be merged may be merged with
             entities from outside the specified region. If **regions** is not specified then the
             entire part is the domain for searching geometric entities that need to be merged.
@@ -205,7 +205,7 @@ class MeshPart(PartBase):
         Parameters
         ----------
         geometricEntities
-            A sequence of Cell objects, Face objects, Edge objects, or ConstrainedSketchVertex objects specifying the
+            A sequence of Cell objects, :py:class:`~abaqus.BasicGeometry.Face.Face` objects, Edge objects, or ConstrainedSketchVertex objects specifying the
             geometric entities that will be disassociated from the mesh.
         addBoundingEntities
             A Boolean specifying whether the mesh will also be disassociated from the geometric
@@ -296,10 +296,10 @@ class MeshPart(PartBase):
             Each point is defined by a tuple of three coordinates indicating its position. The
             direction of the mesh extrusion operation is from the first point to the second point.
         geometrySourceSide
-            A Region of Face objects specifying the geometric domain to be used as the source for
+            A Region of :py:class:`~abaqus.BasicGeometry.Face.Face` objects specifying the geometric domain to be used as the source for
             the extrude meshing operation.
         elemFacesSourceSide
-            A sequence of MeshFace objects specifying the faces of 3D elements to be used as the
+            A sequence of Mesh:py:class:`~abaqus.BasicGeometry.Face.Face` objects specifying the faces of 3D elements to be used as the
             source for the extrude meshing operation.
         elemSourceSide
             A sequence of 2D MeshElement objects specifying the elements to be used as the source
@@ -308,7 +308,7 @@ class MeshPart(PartBase):
             A Float specifying the distance of the mesh extrusion. If unspecified, the vector length
             of the **extrudeVector** argument is assumed.
         targetSide
-            A datum plane, a sequence of Face objects, a sequence of MeshFace objects, or a sequence
+            A datum plane, a sequence of :py:class:`~abaqus.BasicGeometry.Face.Face` objects, a sequence of Mesh:py:class:`~abaqus.BasicGeometry.Face.Face` objects, or a sequence
             of 2D MeshElement objects specifying the target of the extrude meshing operation. If
             specified, this argument overrides the **depth** argument, and all points on the source
             will be extruded in the direction of the extrusion vector until meeting the target.
@@ -344,18 +344,18 @@ class MeshPart(PartBase):
             A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object specifying the geometric region where the mesh is to be generated. This
             argument is valid only for native parts.
         geometrySourceSide
-            A Region of Face objects specifying the geometric domain to be used as the source for
+            A Region of :py:class:`~abaqus.BasicGeometry.Face.Face` objects specifying the geometric domain to be used as the source for
             the sweep meshing operation.
         elemFacesSourceSide
-            A sequence of MeshFace objects specifying the faces of 3D elements to be used as the
+            A sequence of Mesh:py:class:`~abaqus.BasicGeometry.Face.Face` objects specifying the faces of 3D elements to be used as the
             source for the sweep meshing operation.
         elemSourceSide
             A sequence of 2D MeshElement objects specifying the elements to be used as the source
             for the sweep meshing operation.
         geometryConnectingSides
-            A Region of Face objects specifying connecting sides of the sweep meshing operation.
+            A Region of :py:class:`~abaqus.BasicGeometry.Face.Face` objects specifying connecting sides of the sweep meshing operation.
         elemFacesConnectingSides
-            A sequence of MeshFace objects specifying connecting sides of the sweep meshing
+            A sequence of Mesh:py:class:`~abaqus.BasicGeometry.Face.Face` objects specifying connecting sides of the sweep meshing
             operation.
         elemConnectingSides
             A sequence of 2D MeshElement objects specifying connecting sides of the sweep meshing
@@ -402,10 +402,10 @@ class MeshPart(PartBase):
         angleOfRevolution
             A Float specifying the angle of revolution.
         geometrySourceSide
-            A Region of Face objects specifying the geometric domain to be used as the source for
+            A Region of :py:class:`~abaqus.BasicGeometry.Face.Face` objects specifying the geometric domain to be used as the source for
             the revolve meshing operation.
         elemFacesSourceSide
-            A sequence of MeshFace objects specifying the faces of 3D elements to be used as the
+            A sequence of Mesh:py:class:`~abaqus.BasicGeometry.Face.Face` objects specifying the faces of 3D elements to be used as the
             source for the revolve meshing operation.
         elemSourceSide
             A sequence of 2D MeshElement objects specifying the elements to be used as the source
@@ -539,7 +539,7 @@ class MeshPart(PartBase):
         pass
 
     def getIncompatibleMeshInterfaces(self, cells: tuple[Cell] = ()):
-        """This method returns a sequence of face objects that are meshed with incompatible
+        """This method returns a sequence of :py:class:`~abaqus.BasicGeometry.Face.Face` objects that are meshed with incompatible
         elements.
 
         Parameters
@@ -549,7 +549,8 @@ class MeshPart(PartBase):
 
         Returns
         -------
-        A sequence of Face objects.
+        tuple[Face, ...]
+            A sequence of :py:class:`~abaqus.BasicGeometry.Face.Face` objects.
         """
         pass
 
@@ -898,7 +899,7 @@ class MeshPart(PartBase):
             An Int specifying the number of element layers to be generated. Possible values are 1 ≤≤
             **numLayers** ≤≤ 104.
         inactiveFaces
-            A sequence of Face objects specifying the faces where boundary layer should not be
+            A sequence of :py:class:`~abaqus.BasicGeometry.Face.Face` objects specifying the faces where boundary layer should not be
             generated. By default, boundary layer mesh will be generated on all faces of the
             selected regions.
         setName
@@ -1117,9 +1118,11 @@ class MeshPart(PartBase):
 
         Returns
         -------
-        A Dictionary object containing values for some number of the following keys:
-        failedElements, warningElements, naElements (sequences of MeshElement objects);
-        numElements (Int); average, worst (Float); worstElement (MeshElement object) .
+        dict[str, int | float, MeshElement]
+            A Dictionary object containing values for some number of the following keys:
+            failedElements, warningElements, naElements (sequences of MeshElement objects);
+            numElements (Int); average, worst (Float); worstElement 
+            (:py:class:`~abaqus.Mesh.MeshElement.MeshElement` object) .
         """
         pass
 

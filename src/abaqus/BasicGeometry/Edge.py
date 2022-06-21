@@ -77,7 +77,8 @@ class Edge:
 
         Returns
         -------
-        A Boolean value of True if the tangent is flipped and False if not.
+        Boolean
+            A Boolean value of True if the tangent is flipped and False if not.
 
         """
         pass
@@ -97,10 +98,11 @@ class Edge:
 
         Returns
         -------
-        A dictionary with keys 'evaluationPoint', 'curvature', 'radius', and 'tangent', where
-        'evaluationPoint' specifies the location at which the curvature was computed;
-        'curvature' specifies the curvature vector at that location; 'radius' is the radius of
-        curvature; and 'tangent' specifies the tangent to the edge at that location.
+        dict
+            A dictionary with keys 'evaluationPoint', 'curvature', 'radius', and 'tangent', where
+            'evaluationPoint' specifies the location at which the curvature was computed;
+            'curvature' specifies the curvature vector at that location; 'radius' is the radius of
+            curvature; and 'tangent' specifies the tangent to the edge at that location.
 
         Raises
         ------
@@ -114,7 +116,8 @@ class Edge:
 
         Returns
         -------
-        A tuple of integers.
+        tuple[int, ...]
+            A tuple of integers.
 
         """
         pass
@@ -124,7 +127,8 @@ class Edge:
 
         Returns
         -------
-        An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is a sequence of Edge objects.
+        EdgeArray
+            An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is a sequence of Edge objects.
 
         """
         pass
@@ -140,7 +144,8 @@ class Edge:
 
         Returns
         -------
-        An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is a sequence of Edgeobjects.
+        EdgeArray
+            An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is a sequence of Edgeobjects.
 
         """
         pass
@@ -172,7 +177,8 @@ class Edge:
 
         Returns
         -------
-        A Float specifying the radius.
+        float
+            A Float specifying the radius.
 
         Raises
         ------
@@ -190,7 +196,8 @@ class Edge:
 
         Returns
         -------
-        A Float.
+        float
+            A Float.
 
         """
         pass
@@ -203,7 +210,8 @@ class Edge:
 
         Returns
         -------
-        A tuple of integers.
+        tuple[int, ...]
+            A tuple of integers.
 
         """
         pass

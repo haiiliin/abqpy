@@ -89,7 +89,8 @@ class AcousticImpedance(Interaction):
 
         Returns
         -------
-        An :py:class:`~abaqus.Interaction.AcousticImpedance.AcousticImpedance` object.
+        AcousticImpedance
+            An :py:class:`~abaqus.Interaction.AcousticImpedance.AcousticImpedance` object.
         """
         super().__init__()
         pass

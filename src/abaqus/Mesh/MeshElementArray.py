@@ -97,7 +97,8 @@ class MeshElementArray(list[MeshElement]):
 
         Returns
         -------
-        A String specifying the object or objects.
+        str
+            A String specifying the object or objects.
         """
         pass
 
@@ -180,6 +181,7 @@ class MeshElementArray(list[MeshElement]):
 
         Returns
         -------
+        dict[str, tuple[float, float, float]]
         A Dictionary object with the following items:
         
         - **low**: a tuple of three floats representing the minimum x, y, and z boundary values of

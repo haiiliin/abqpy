@@ -35,7 +35,8 @@ class AdaptivityModel(ModelBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration` object.
+        AdaptivityIteration
+            An :py:class:`~abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration` object.
         """
         pass
 
@@ -160,7 +161,8 @@ class AdaptivityModel(ModelBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl` object
+        AdaptiveMeshControl
+            An :py:class:`~abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl` object
         """
         self.adaptiveMeshControls[name] = adaptiveMeshControl = AdaptiveMeshControl(
             name,

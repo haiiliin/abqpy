@@ -65,7 +65,8 @@ class AdaptivityProcess:
 
         Returns
         -------
-        An :py:class:`~abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess` object.
+        AdaptivityProcess
+            An :py:class:`~abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess` object.
 
         Raises
         ------
@@ -146,7 +147,8 @@ class AdaptivityProcess:
 
         Returns
         -------
-        An :py:class:`~abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration` object.
+        AdaptivityIteration
+            An :py:class:`~abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration` object.
         """
         self.iterations[iteration] = iteration = AdaptivityIteration(
             iteration, jobName, modelName, odbPath, remeshingErrors

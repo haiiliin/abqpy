@@ -91,7 +91,8 @@ class AssembledFastener(Fastener):
 
         Returns
         -------
-        An :py:class:`~abaqus.EngineeringFeature.AssembledFastener.AssembledFastener` object.
+        AssembledFastener
+            An :py:class:`~abaqus.EngineeringFeature.AssembledFastener.AssembledFastener` object.
         """
         super().__init__()
         pass

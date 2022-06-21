@@ -251,7 +251,8 @@ class EmagTimeHarmonicStep(AnalysisStep):
 
         Returns
         -------
-        An :py:class:`~abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep` object.
+        EmagTimeHarmonicStep
+            An :py:class:`~abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep` object.
 
         Raises
         ------

@@ -364,7 +364,8 @@ class ExplicitDynamicsStep(AnalysisStep):
 
         Returns
         -------
-        An :py:class:`~abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep` object.
+        ExplicitDynamicsStep
+            An :py:class:`~abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep` object.
 
         Raises
         ------

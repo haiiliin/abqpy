@@ -42,6 +42,7 @@ class AbaqusBoolean:
 
         Returns
         -------
-        An :py:class:`~abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean` object.
+        AbaqusBoolean
+            An :py:class:`~abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean` object.
         """
         pass

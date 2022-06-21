@@ -115,7 +115,8 @@ class ElectricPotentialBC(BoundaryCondition):
 
         Returns
         -------
-        An :py:class:`~abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC` object.
+        ElectricPotentialBC
+            An :py:class:`~abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC` object.
         """
         super().__init__()
         pass

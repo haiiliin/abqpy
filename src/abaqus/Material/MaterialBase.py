@@ -505,6 +505,7 @@ class MaterialBase:
 
         Returns
         -------
-        A list of Material objects.
+        list[Material]
+            A list of :py:class:`~abaqus.Material.Material.Material` objects.
         """
         pass

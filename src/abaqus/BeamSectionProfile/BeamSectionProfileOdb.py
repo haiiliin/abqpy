@@ -47,7 +47,8 @@ class BeamSectionProfileOdb(OdbBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile` object.
+        ArbitraryProfile
+            An :py:class:`~abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile` object.
 
         Raises
         ------
@@ -291,7 +292,8 @@ class BeamSectionProfileOdb(OdbBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.BeamSectionProfile.IProfile.IProfile` object.
+        IProfile
+            An :py:class:`~abaqus.BeamSectionProfile.IProfile.IProfile` object.
 
         Raises
         ------

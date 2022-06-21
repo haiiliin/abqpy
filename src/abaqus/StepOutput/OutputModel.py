@@ -379,7 +379,8 @@ class OutputModel(ModelBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection` object.
+        IntegratedOutputSection
+            An :py:class:`~abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection` object.
         """
         self.integratedOutputSections[
             name

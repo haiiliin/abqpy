@@ -191,7 +191,8 @@ class OdbStepBase:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbStep.OdbStep` object.
+        OdbStep
+            An :py:class:`~abaqus.Odb.OdbStep.OdbStep` object.
 
         Raises
         ------
@@ -220,7 +221,8 @@ class OdbStepBase:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
+        OdbFrame
+            An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
 
         Raises
         ------
@@ -240,7 +242,8 @@ class OdbStepBase:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
+        OdbFrame
+            An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
 
         Raises
         ------
@@ -273,7 +276,8 @@ class OdbStepBase:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
+        OdbFrame
+            An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
 
         Raises
         ------

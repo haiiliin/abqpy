@@ -98,7 +98,8 @@ class InertiaRelief(Load):
 
         Returns
         -------
-        An :py:class:`~abaqus.Load.InertiaRelief.InertiaRelief` object.
+        InertiaRelief
+            An :py:class:`~abaqus.Load.InertiaRelief.InertiaRelief` object.
         """
         super().__init__()
         pass

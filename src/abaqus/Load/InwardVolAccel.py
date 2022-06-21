@@ -92,7 +92,8 @@ class InwardVolAccel(Load):
 
         Returns
         -------
-        An :py:class:`~abaqus.Load.InwardVolAccel.InwardVolAccel` object.
+        InwardVolAccel
+            An :py:class:`~abaqus.Load.InwardVolAccel.InwardVolAccel` object.
         """
         super().__init__()
         pass

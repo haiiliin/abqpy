@@ -66,7 +66,8 @@ class Vertex:
 
         Returns
         -------
-        A tuple of integers.
+        tuple[int, ...]
+            A tuple of integers.
 
         """
         pass

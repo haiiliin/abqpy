@@ -65,8 +65,9 @@ class AssemblyModel(ModelBase):
 
         Returns
         -------
-        A list of strings describing any warnings or errors encountered during the conversion
-        process.
+        list[str]
+            A list of strings describing any warnings or errors encountered during the conversion
+            process.
         """
         pass
 
@@ -84,7 +85,8 @@ class AssemblyModel(ModelBase):
 
         Returns
         -------
-        A list of strings describing any warnings or errors encountered during the conversion
-        process.
+        list[str]
+            A list of strings describing any warnings or errors encountered during the conversion
+            process.
         """
         pass

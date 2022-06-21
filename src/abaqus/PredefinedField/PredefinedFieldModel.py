@@ -104,7 +104,8 @@ class PredefinedFieldModel(
 
         Returns
         -------
-        An :py:class:`~abaqus.PredefinedField.InitialState.InitialState` object.
+        InitialState
+            An :py:class:`~abaqus.PredefinedField.InitialState.InitialState` object.
         """
         self.predefinedFields[name] = predefinedField = InitialState(
             name,

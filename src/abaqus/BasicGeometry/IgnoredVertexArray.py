@@ -46,7 +46,8 @@ class IgnoredVertexArray:
 
         Returns
         -------
-        An :py:class:`~abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex` object or a sequence of IgnoredVertex objects.
+        IgnoredVertex
+            An :py:class:`~abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex` object or a sequence of IgnoredVertex objects.
 
         """
         pass
@@ -64,7 +65,8 @@ class IgnoredVertexArray:
 
         Returns
         -------
-        An :py:class:`~abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex` object or a sequence of IgnoredVertex objects.
+        IgnoredVertex
+            An :py:class:`~abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex` object or a sequence of IgnoredVertex objects.
 
         """
         pass
@@ -74,7 +76,8 @@ class IgnoredVertexArray:
 
         Returns
         -------
-        A String specifying the object or objects.
+        str
+            A String specifying the object or objects.
 
         """
         pass

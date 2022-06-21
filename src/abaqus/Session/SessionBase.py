@@ -489,8 +489,9 @@ class SessionBase:
 
         Returns
         -------
-        A Boolean value of True if the CAD connection enabled and False if the CAD connection
-        disabled.
+        Boolean
+            A Boolean value of True if the CAD connection enabled and False if the CAD connection
+            disabled.
         """
         pass
 
@@ -747,7 +748,8 @@ class SessionBase:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.Odb.Odb` object.
+        Odb
+            An :py:class:`~abaqus.Odb.Odb.Odb` object.
 
         Raises
         ------
@@ -786,7 +788,8 @@ class SessionBase:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.Odb.Odb` object.
+        Odb
+            An :py:class:`~abaqus.Odb.Odb.Odb` object.
 
         Raises
         ------
@@ -818,7 +821,8 @@ class SessionBase:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.Odb.Odb` object.
+        Odb
+            An :py:class:`~abaqus.Odb.Odb.Odb` object.
 
         Raises
         ------

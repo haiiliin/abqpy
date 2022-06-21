@@ -46,7 +46,8 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.XY.AreaStyle.AreaStyle` object.
+        AreaStyle
+            An :py:class:`~abaqus.XY.AreaStyle.AreaStyle` object.
 
         Raises
         ------
@@ -366,7 +367,8 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.XY.XYData.XYData` object.
+        XYData
+            An :py:class:`~abaqus.XY.XYData.XYData` object.
         """
         pass
 
@@ -392,7 +394,8 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.XY.XYData.XYData` object.
+        XYData
+            An :py:class:`~abaqus.XY.XYData.XYData` object.
         """
         pass
 
@@ -471,7 +474,8 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.XY.XYData.XYData` object
+        XYData
+            An :py:class:`~abaqus.XY.XYData.XYData` object
         """
         self.xyDataObjects[name] = xyData = XYData(())
         return xyData
@@ -544,7 +548,8 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.XY.XYData.XYData` object
+        XYData
+            An :py:class:`~abaqus.XY.XYData.XYData` object
         """
         self.xyDataObjects[name] = xyData = XYData(())
         return xyData
@@ -639,7 +644,8 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        A list of XYData objects
+        list[XYData]
+            A list of XYData objects
         """
         self.xyDataObjects["name"] = xyData = XYData(())
         return [xyData]
@@ -693,7 +699,8 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        A list of XYData objects
+        list[XYData]
+            A list of XYData objects
         """
         self.xyDataObjects["name"] = xyData = XYData(())
         return [xyData]

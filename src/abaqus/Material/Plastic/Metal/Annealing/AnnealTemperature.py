@@ -46,7 +46,8 @@ class AnnealTemperature:
 
         Returns
         -------
-        An :py:class:`~abaqus.Material.Plastic.Metal.Annealing.AnnealTemperature.AnnealTemperature` object.
+        AnnealTemperature
+            An :py:class:`~abaqus.Material.Plastic.Metal.Annealing.AnnealTemperature.AnnealTemperature` object.
 
         Raises
         ------

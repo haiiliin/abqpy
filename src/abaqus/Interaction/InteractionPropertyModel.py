@@ -48,7 +48,8 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Interaction.AcousticImpedanceProp.AcousticImpedanceProp` object.
+        AcousticImpedanceProp
+            An :py:class:`~abaqus.Interaction.AcousticImpedanceProp.AcousticImpedanceProp` object.
         """
         self.interactionProperties[name] = interactionProperty = AcousticImpedanceProp(
             name, tableType, table, frequencyDependency
@@ -81,7 +82,8 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Interaction.ActuatorSensorProp.ActuatorSensorProp` object.
+        ActuatorSensorProp
+            An :py:class:`~abaqus.Interaction.ActuatorSensorProp.ActuatorSensorProp` object.
         """
         self.interactionProperties[name] = interactionProperty = ActuatorSensorProp(
             name, realProperties, integerProperties
@@ -624,7 +626,8 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty` object.
+        IncidentWaveProperty
+            An :py:class:`~abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty` object.
         """
         self.interactionProperties[name] = interactionProperty = IncidentWaveProperty(
             name,

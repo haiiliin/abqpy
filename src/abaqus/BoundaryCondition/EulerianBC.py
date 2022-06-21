@@ -109,7 +109,8 @@ class EulerianBC(BoundaryCondition):
 
         Returns
         -------
-        An :py:class:`~abaqus.BoundaryCondition.EulerianBC.EulerianBC` object.
+        EulerianBC
+            An :py:class:`~abaqus.BoundaryCondition.EulerianBC.EulerianBC` object.
         """
         super().__init__()
         pass

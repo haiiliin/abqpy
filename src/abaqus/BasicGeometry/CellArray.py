@@ -128,7 +128,8 @@ class CellArray:
 
         Returns
         -------
-        A String specifying the object or objects.
+        str
+            A String specifying the object or objects.
 
         """
         pass
@@ -215,11 +216,12 @@ class CellArray:
 
         Returns
         -------
-        A Dictionary object with the following items:
-        
-        - **low**: a tuple of three floats representing the minimum **X**-, **Y**-, and **Z**-boundary
-          values of the bounding box.
-        - **high**: a tuple of three floats representing the maximum **X**-, **Y**-, and **Z**-boundary
-          values of the bounding box.
+        dict[str, tuple[float, float, float]]
+            A Dictionary object with the following items:
+            
+            - **low**: a tuple of three floats representing the minimum **X**-, **Y**-, and **Z**-boundary
+            values of the bounding box.
+            - **high**: a tuple of three floats representing the maximum **X**-, **Y**-, and **Z**-boundary
+            values of the bounding box.
         """
         pass

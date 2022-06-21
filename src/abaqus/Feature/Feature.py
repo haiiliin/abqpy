@@ -2330,7 +2330,8 @@ class Feature:
 
         Returns
         -------
-        A Boolean value of True if the feature is suppressed and False if it is not suppressed.
+        Boolean
+            A Boolean value of True if the feature is suppressed and False if it is not suppressed.
         """
         pass
 

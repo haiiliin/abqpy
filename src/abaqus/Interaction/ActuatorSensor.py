@@ -76,7 +76,8 @@ class ActuatorSensor(Interaction):
 
         Returns
         -------
-        An :py:class:`~abaqus.Interaction.ActuatorSensor.ActuatorSensor` object.
+        ActuatorSensor
+            An :py:class:`~abaqus.Interaction.ActuatorSensor.ActuatorSensor` object.
         """
         super().__init__()
         pass

@@ -204,8 +204,9 @@ class Behavior:
 
         Returns
         -------
-        A tuple consisting of a and b values of the regression line(y = ax + b), coefficient of
-        determination(r-squared) value and the start and end-points of the line.
+        tuple[float, ...]
+            A tuple consisting of a and b values of the regression line(y = ax + b), coefficient of
+            determination(r-squared) value and the start and end-points of the line.
         """
         pass
 
@@ -220,8 +221,9 @@ class Behavior:
 
         Returns
         -------
-        A tuple consisting of a and b values of the regression line(y = ax + b), coefficient of
-        determination(r-squared) value and the start and end-points of the line.
+        tuple[float, ...]
+            A tuple consisting of a and b values of the regression line(y = ax + b), coefficient of
+            determination(r-squared) value and the start and end-points of the line.
         """
         pass
 
@@ -251,7 +253,8 @@ class Behavior:
 
         Returns
         -------
-        A float specifying the value of elastic modulus.
+        float
+            A float specifying the value of elastic modulus.
         """
         pass
 
@@ -281,7 +284,8 @@ class Behavior:
 
         Returns
         -------
-        A sequence of coordinates of the Plastic points..
+        tuple[tuple[float, ...]]
+            A sequence of coordinates of the Plastic points..
         """
         pass
 
@@ -305,7 +309,8 @@ class Behavior:
 
         Returns
         -------
-        A sequence of strings specifying names of the DataSet objects containing loading,
-        unloading, reloading and primary datasets.
+        tuple[str, ...]
+            A sequence of strings specifying names of the DataSet objects containing loading,
+            unloading, reloading and primary datasets.
         """
         pass

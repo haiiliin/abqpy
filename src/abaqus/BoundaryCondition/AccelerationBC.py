@@ -140,7 +140,8 @@ class AccelerationBC(BoundaryCondition):
 
         Returns
         -------
-        An :py:class:`~abaqus.BoundaryCondition.AccelerationBC.AccelerationBC` object.
+        AccelerationBC
+            An :py:class:`~abaqus.BoundaryCondition.AccelerationBC.AccelerationBC` object.
         """
         super().__init__()
         pass

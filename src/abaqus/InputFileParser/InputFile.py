@@ -61,7 +61,8 @@ class InputFile:
 
         Returns
         -------
-        An :py:class:`~abaqus.InputFileParser.InputFile.InputFile` object.
+        InputFile
+            An :py:class:`~abaqus.InputFileParser.InputFile.InputFile` object.
         """
         pass
 
@@ -94,7 +95,8 @@ class InputFile:
 
         Returns
         -------
-        A KeywordSequence object.
+        KeywordSequence
+            A KeywordSequence object.
 
         Raises
         ------

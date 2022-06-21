@@ -53,7 +53,8 @@ class AdjustPoints(Constraint):
 
         Returns
         -------
-        An :py:class:`~abaqus.Constraint.AdjustPoints.AdjustPoints` object.
+        AdjustPoints
+            An :py:class:`~abaqus.Constraint.AdjustPoints.AdjustPoints` object.
         """
         super().__init__()
         pass

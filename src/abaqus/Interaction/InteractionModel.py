@@ -267,7 +267,8 @@ class InteractionModel(
 
         Returns
         -------
-        An :py:class:`~abaqus.Interaction.AcousticImpedance.AcousticImpedance` object.
+        AcousticImpedance
+            An :py:class:`~abaqus.Interaction.AcousticImpedance.AcousticImpedance` object.
         """
         self.interactions[name] = interaction = AcousticImpedance(
             name,
@@ -321,7 +322,8 @@ class InteractionModel(
 
         Returns
         -------
-        An :py:class:`~abaqus.Interaction.AcousticImpedanceProp.AcousticImpedanceProp` object.
+        AcousticImpedanceProp
+            An :py:class:`~abaqus.Interaction.AcousticImpedanceProp.AcousticImpedanceProp` object.
         """
         self.interactions[name] = interaction = AcousticImpedanceProp(
             name, tableType, table, frequencyDependency
@@ -379,7 +381,8 @@ class InteractionModel(
 
         Returns
         -------
-        An :py:class:`~abaqus.Interaction.ActuatorSensor.ActuatorSensor` object.
+        ActuatorSensor
+            An :py:class:`~abaqus.Interaction.ActuatorSensor.ActuatorSensor` object.
         """
         self.interactions[name] = interaction = ActuatorSensor(
             name,
@@ -421,7 +424,8 @@ class InteractionModel(
 
         Returns
         -------
-        An :py:class:`~abaqus.Interaction.ActuatorSensorProp.ActuatorSensorProp` object.
+        ActuatorSensorProp
+            An :py:class:`~abaqus.Interaction.ActuatorSensorProp.ActuatorSensorProp` object.
         """
         self.interactions[name] = interaction = ActuatorSensorProp(
             name, realProperties, integerProperties
@@ -1240,7 +1244,8 @@ class InteractionModel(
 
         Returns
         -------
-        An :py:class:`~abaqus.Interaction.ElasticFoundation.ElasticFoundation` object.
+        ElasticFoundation
+            An :py:class:`~abaqus.Interaction.ElasticFoundation.ElasticFoundation` object.
         """
         self.interactions[name] = interaction = ElasticFoundation(
             name, createStepName, surface, stiffness
@@ -1295,7 +1300,8 @@ class InteractionModel(
 
         Returns
         -------
-        An :py:class:`~abaqus.Interaction.ExpContactControl.ExpContactControl` object.
+        ExpContactControl
+            An :py:class:`~abaqus.Interaction.ExpContactControl.ExpContactControl` object.
 
         Raises
         ------
@@ -1909,7 +1915,8 @@ class InteractionModel(
 
         Returns
         -------
-        An :py:class:`~abaqus.Interaction.IncidentWave.IncidentWave` object.
+        IncidentWave
+            An :py:class:`~abaqus.Interaction.IncidentWave.IncidentWave` object.
         """
         self.interactions[name] = interaction = IncidentWave(
             name,
@@ -2096,7 +2103,8 @@ class InteractionModel(
 
         Returns
         -------
-        An :py:class:`~abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty` object.
+        IncidentWaveProperty
+            An :py:class:`~abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty` object.
         """
         self.interactions[name] = interaction = IncidentWaveProperty(
             name,

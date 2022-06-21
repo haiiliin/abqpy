@@ -69,6 +69,7 @@ class OdbRigidBody:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbRigidBody.OdbRigidBody` object.
+        OdbRigidBody
+            An :py:class:`~abaqus.Odb.OdbRigidBody.OdbRigidBody` object.
         """
         pass

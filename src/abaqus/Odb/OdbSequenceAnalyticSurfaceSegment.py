@@ -26,7 +26,8 @@ class OdbSequenceAnalyticSurfaceSegment:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment` object.
+        OdbSequenceAnalyticSurfaceSegment
+            An :py:class:`~abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment` object.
         """
         pass
 

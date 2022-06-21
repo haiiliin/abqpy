@@ -54,7 +54,8 @@ class ArbitraryProfile(Profile):
 
         Returns
         -------
-        An :py:class:`~abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile` object.
+        ArbitraryProfile
+            An :py:class:`~abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile` object.
 
         Raises
         ------

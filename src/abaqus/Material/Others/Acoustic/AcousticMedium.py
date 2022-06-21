@@ -81,7 +81,8 @@ class AcousticMedium:
 
         Returns
         -------
-        An :py:class:`~abaqus.Material.Others.Acoustic.AcousticMedium.AcousticMedium` object.
+        AcousticMedium
+            An :py:class:`~abaqus.Material.Others.Acoustic.AcousticMedium.AcousticMedium` object.
 
         Raises
         ------

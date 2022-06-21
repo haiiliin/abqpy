@@ -71,7 +71,8 @@ class Cell:
 
         Returns
         -------
-        A Float.
+        float
+            A Float.
 
         """
         pass
@@ -82,7 +83,8 @@ class Cell:
 
         Returns
         -------
-        A tuple of integers.
+        tuple[int, ...]
+            A tuple of integers.
 
         """
         pass
@@ -92,7 +94,8 @@ class Cell:
 
         Returns
         -------
-        A tuple of integers.
+        tuple[int, ...]
+            A tuple of integers.
 
         """
         pass
@@ -102,7 +105,8 @@ class Cell:
 
         Returns
         -------
-        A tuple of integers.
+        tuple[int, ...]
+            A tuple of integers.
 
         """
         pass
@@ -146,7 +150,8 @@ class Cell:
 
         Returns
         -------
-        An array of String.
+        list[str]
+            An array of String.
 
         """
         pass

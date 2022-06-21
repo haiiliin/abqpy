@@ -82,7 +82,8 @@ class EmbeddedRegion(Constraint):
 
         Returns
         -------
-        An :py:class:`~abaqus.Constraint.EmbeddedRegion.EmbeddedRegion` object.
+        EmbeddedRegion
+            An :py:class:`~abaqus.Constraint.EmbeddedRegion.EmbeddedRegion` object.
         """
         super().__init__()
         pass

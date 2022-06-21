@@ -61,7 +61,8 @@ class TableCollectionAssembly(AssemblyBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation` object.
+        ElementProgressiveActivation
+            An :py:class:`~abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation` object.
 
         Raises
         ------

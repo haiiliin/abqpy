@@ -94,7 +94,8 @@ class SectionAssignment:
 
         Returns
         -------
-        A sequence of tuples of floats.
+        tuple[tuple[float, ...]]
+            A sequence of tuples of floats.
 
         Raises
         ------

@@ -141,7 +141,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Optimization.ObjectiveFunction.ObjectiveFunction` object.
+        ObjectiveFunction
+            An :py:class:`~abaqus.Optimization.ObjectiveFunction.ObjectiveFunction` object.
 
         Raises
         ------
@@ -186,7 +187,8 @@ class OptimizationTask(OptimizationTaskBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Optimization.OptimizationConstraint.OptimizationConstraint` object.
+        OptimizationConstraint
+            An :py:class:`~abaqus.Optimization.OptimizationConstraint.OptimizationConstraint` object.
 
         Raises
         ------

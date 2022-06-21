@@ -265,13 +265,11 @@ class MdbBase:
 
         Returns
         -------
-        A list of model names present in the auxiliaryMdb
+        list[str]
+            A list of model names present in the auxiliaryMdb
 
         Raises
         ------
-
-        Parameters
-        ----------
         MdbError
             The auxiliary Mdb was not opened;
             If the auxiliary Mdb was not opened earlier

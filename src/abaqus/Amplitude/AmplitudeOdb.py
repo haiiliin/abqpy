@@ -51,7 +51,8 @@ class AmplitudeOdb(OdbBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude` object.
+        ActuatorAmplitude
+            An :py:class:`~abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude` object.
 
         Raises
         ------
@@ -155,7 +156,8 @@ class AmplitudeOdb(OdbBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude` object.
+        EquallySpacedAmplitude
+            An :py:class:`~abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude` object.
 
         Raises
         ------

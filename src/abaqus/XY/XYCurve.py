@@ -108,7 +108,8 @@ class XYCurve:
 
         Returns
         -------
-        An :py:class:`~abaqus.XY.XYCurve.XYCurve` object.
+        XYCurve
+            An :py:class:`~abaqus.XY.XYCurve.XYCurve` object.
         """
         pass
 

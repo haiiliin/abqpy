@@ -78,8 +78,9 @@ class Face:
 
         Returns
         -------
-        A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the centroid of
-        the face.
+        tuple[float, ...]
+            A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the centroid of
+            the face.
         """
         pass
 
@@ -102,11 +103,12 @@ class Face:
 
         Returns
         -------
-        A dictionary with keys 'evaluationPoint', 'principalAxis1', 'principalAxis2',
-        'curvature1', 'curvature2' and 'gaussianCurvature'. Where the evaluationPoint specifies
-        the location at which the curvature was evaluated. 'principalAxis1' and 'principalAxis2'
-        refer to the vectors specifying the two principal axes of the face. 'curvature1' and
-        'curvature2' specify the curvatures along the two principal axes.
+        dict
+            A dictionary with keys 'evaluationPoint', 'principalAxis1', 'principalAxis2',
+            'curvature1', 'curvature2' and 'gaussianCurvature'. Where the evaluationPoint specifies
+            the location at which the curvature was evaluated. 'principalAxis1' and 'principalAxis2'
+            refer to the vectors specifying the two principal axes of the face. 'curvature1' and
+            'curvature2' specify the curvatures along the two principal axes.
         """
         pass
 
@@ -175,8 +177,9 @@ class Face:
 
         Returns
         -------
-        A sequence of Floats specifying the **X**-, **Y**-, and **Z**-components of the normal to the
-        face.
+        tuple[float, ...]
+            A sequence of Floats specifying the **X**-, **Y**-, and **Z**-components of the normal to the
+            face.
 
         Raises
         ------
@@ -195,7 +198,8 @@ class Face:
 
         Returns
         -------
-        A Float.
+        float
+            A Float.
 
         """
         pass
@@ -205,6 +209,7 @@ class Face:
 
         Returns
         -------
+        tuple[int, ...]
         A tuple of integers.
 
         """
@@ -215,7 +220,8 @@ class Face:
 
         Returns
         -------
-        A tuple of integers.
+        tuple[int, ...]
+            A tuple of integers.
 
         """
         pass
@@ -226,7 +232,8 @@ class Face:
 
         Returns
         -------
-        A tuple of integers.
+        tuple[int, ...]
+            A tuple of integers.
 
         """
         pass
@@ -277,7 +284,8 @@ class Face:
 
         Returns
         -------
-        A Boolean value of True if the normal is flipped and False if not.
+        Boolean
+            A Boolean value of True if the normal is flipped and False if not.
 
         """
         pass
@@ -288,7 +296,8 @@ class Face:
 
         Returns
         -------
-        An array of String .
+        list[str]
+            An array of String.
 
         """
         pass

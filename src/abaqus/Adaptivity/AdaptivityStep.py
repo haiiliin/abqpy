@@ -344,7 +344,8 @@ class AdaptivityStep(StepBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain` object
+        AdaptiveMeshDomain
+            An :py:class:`~abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain` object
         """
         self.adaptiveMeshDomains[controls] = adaptiveMeshDomain = AdaptiveMeshDomain(
             region, controls, frequency, initialMeshSweeps, meshSweeps

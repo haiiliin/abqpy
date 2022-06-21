@@ -129,7 +129,8 @@ class OdbBase:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.Odb.Odb` object.
+        Odb
+            An :py:class:`~abaqus.Odb.Odb.Odb` object.
         """
         pass
 
@@ -158,7 +159,8 @@ class OdbBase:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
+        OdbFrame
+            An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
 
         Raises
         ------
@@ -186,6 +188,7 @@ class OdbBase:
 
         Returns
         -------
-        A Boolean specifying whether additional steps or frames were added to the Odb object.
+        Boolean
+            A Boolean specifying whether additional steps or frames were added to the Odb object.
         """
         pass

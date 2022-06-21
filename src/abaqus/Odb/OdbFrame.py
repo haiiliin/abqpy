@@ -93,7 +93,8 @@ class OdbFrame:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
+        OdbFrame
+            An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
         """
         pass
 
@@ -123,7 +124,8 @@ class OdbFrame:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
+        OdbFrame
+            An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
         """
         pass
 
@@ -154,7 +156,8 @@ class OdbFrame:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
+        OdbFrame
+            An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
         """
         pass
 

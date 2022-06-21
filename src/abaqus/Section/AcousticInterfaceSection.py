@@ -43,7 +43,8 @@ class AcousticInterfaceSection(Section):
 
         Returns
         -------
-        An :py:class:`~abaqus.Section.AcousticInterfaceSection.AcousticInterfaceSection` object.
+        AcousticInterfaceSection
+            An :py:class:`~abaqus.Section.AcousticInterfaceSection.AcousticInterfaceSection` object.
 
         Raises
         ------

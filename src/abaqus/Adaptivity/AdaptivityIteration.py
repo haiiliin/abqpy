@@ -63,7 +63,8 @@ class AdaptivityIteration:
 
         Returns
         -------
-        An :py:class:`~abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration` object.
+        AdaptivityIteration
+            An :py:class:`~abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration` object.
         """
         pass
 
@@ -90,7 +91,8 @@ class AdaptivityIteration:
 
         Returns
         -------
-        An :py:class:`~abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult` object.
+        ErrorIndicatorResult
+            An :py:class:`~abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult` object.
 
         Raises
         ------

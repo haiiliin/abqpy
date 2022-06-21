@@ -46,7 +46,8 @@ class ActuatorSensorProp(ContactProperty):
 
         Returns
         -------
-        An :py:class:`~abaqus.Interaction.ActuatorSensorProp.ActuatorSensorProp` object.
+        ActuatorSensorProp
+            An :py:class:`~abaqus.Interaction.ActuatorSensorProp.ActuatorSensorProp` object.
         """
         super().__init__(name)
         pass

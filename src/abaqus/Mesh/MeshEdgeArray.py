@@ -66,6 +66,7 @@ class MeshEdgeArray(list[MeshEdge]):
 
         Returns
         -------
-        A String specifying the object or objects.
+        str
+            A String specifying the object or objects.
         """
         pass

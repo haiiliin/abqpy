@@ -52,7 +52,8 @@ class Equation(Constraint):
 
         Returns
         -------
-        An :py:class:`~abaqus.Constraint.Equation.Equation` object.
+        Equation
+            An :py:class:`~abaqus.Constraint.Equation.Equation` object.
 
         Raises
         ------

@@ -72,7 +72,8 @@ class OdbStep(OdbStepBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
+        OdbFrame
+            An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
         """
         pass
 
@@ -102,7 +103,8 @@ class OdbStep(OdbStepBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
+        OdbFrame
+            An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
         """
         pass
 
@@ -133,7 +135,8 @@ class OdbStep(OdbStepBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
+        OdbFrame
+            An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
         """
         pass
 
@@ -160,7 +163,8 @@ class OdbStep(OdbStepBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbLoadCase.OdbLoadCase` object.
+        OdbLoadCase
+            An :py:class:`~abaqus.Odb.OdbLoadCase.OdbLoadCase` object.
         """
         self.loadCases[name] = odbLoadCase = OdbLoadCase(name)
         return odbLoadCase

@@ -190,7 +190,8 @@ class IncidentWaveProperty(ContactProperty):
 
         Returns
         -------
-        An :py:class:`~abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty` object.
+        IncidentWaveProperty
+            An :py:class:`~abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty` object.
         """
         super().__init__(name)
         pass

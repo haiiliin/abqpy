@@ -74,7 +74,8 @@ class BackwardCompatibility:
 
         Returns
         -------
-        A list of Strings.
+        list[str]
+            A list of Strings.
         """
         pass
 
@@ -84,7 +85,8 @@ class BackwardCompatibility:
 
         Returns
         -------
-        A list of Strings.
+        list[str]
+            A list of Strings.
         """
         pass
 

@@ -388,7 +388,8 @@ class OdbMeshRegionData:
 
         Returns
         -------
-        An :py:class:`~abaqus.Field.OdbMeshRegionData.OdbMeshRegionData` object.
+        OdbMeshRegionData
+            An :py:class:`~abaqus.Field.OdbMeshRegionData.OdbMeshRegionData` object.
 
         Raises
         ------

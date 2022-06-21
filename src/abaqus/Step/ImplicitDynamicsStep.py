@@ -510,7 +510,8 @@ class ImplicitDynamicsStep(AnalysisStep):
 
         Returns
         -------
-        An :py:class:`~abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep` object.
+        ImplicitDynamicsStep
+            An :py:class:`~abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep` object.
 
         Raises
         ------

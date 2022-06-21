@@ -92,7 +92,8 @@ class OdbDatumCsys:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
+        OdbDatumCsys
+            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
         pass
 
@@ -135,7 +136,8 @@ class OdbDatumCsys:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
+        OdbDatumCsys
+            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
         pass
 
@@ -178,7 +180,8 @@ class OdbDatumCsys:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
+        OdbDatumCsys
+            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
         pass
 
@@ -212,7 +215,8 @@ class OdbDatumCsys:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
+        OdbDatumCsys
+            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
         pass
 
@@ -236,6 +240,7 @@ class OdbDatumCsys:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
+        OdbDatumCsys
+            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
         pass

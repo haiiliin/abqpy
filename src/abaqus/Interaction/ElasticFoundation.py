@@ -47,7 +47,8 @@ class ElasticFoundation(Interaction):
 
         Returns
         -------
-        An :py:class:`~abaqus.Interaction.ElasticFoundation.ElasticFoundation` object.
+        ElasticFoundation
+            An :py:class:`~abaqus.Interaction.ElasticFoundation.ElasticFoundation` object.
         """
         super().__init__()
         pass

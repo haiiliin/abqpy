@@ -54,7 +54,8 @@ class SectionOdb(OdbBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Section.AcousticInfiniteSection.AcousticInfiniteSection` object.
+        AcousticInfiniteSection
+            An :py:class:`~abaqus.Section.AcousticInfiniteSection.AcousticInfiniteSection` object.
 
         Raises
         ------
@@ -90,7 +91,8 @@ class SectionOdb(OdbBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Section.AcousticInterfaceSection.AcousticInterfaceSection` object.
+        AcousticInterfaceSection
+            An :py:class:`~abaqus.Section.AcousticInterfaceSection.AcousticInterfaceSection` object.
 
         Raises
         ------
@@ -663,7 +665,8 @@ class SectionOdb(OdbBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Section.EulerianSection.EulerianSection` object.
+        EulerianSection
+            An :py:class:`~abaqus.Section.EulerianSection.EulerianSection` object.
         """
         self.sections[name] = section = EulerianSection(name, data)
         return section

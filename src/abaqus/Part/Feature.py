@@ -1364,7 +1364,8 @@ class Feature(BaseFeature):
 
         Returns
         -------
-        A Boolean value.
+        Boolean
+            A Boolean value.
 
         Raises
         ------

@@ -43,7 +43,8 @@ class InterestingPoint:
 
         Returns
         -------
-        An :py:class:`~abaqus.BasicGeometry.InterestingPoint.InterestingPoint` object.
+        InterestingPoint
+            An :py:class:`~abaqus.BasicGeometry.InterestingPoint.InterestingPoint` object.
 
         """
         pass

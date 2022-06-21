@@ -1145,7 +1145,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Load.InertiaRelief.InertiaRelief` object.
+        InertiaRelief
+            An :py:class:`~abaqus.Load.InertiaRelief.InertiaRelief` object.
         """
         self.loads[name] = load = InertiaRelief(
             name,
@@ -1206,7 +1207,8 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Load.InwardVolAccel.InwardVolAccel` object.
+        InwardVolAccel
+            An :py:class:`~abaqus.Load.InwardVolAccel.InwardVolAccel` object.
         """
         self.loads[name] = load = InwardVolAccel(
             name, createStepName, region, magnitude, distributionType, field, amplitude

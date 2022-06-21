@@ -124,7 +124,8 @@ class XYData:
 
         Returns
         -------
-        An :py:class:`~abaqus.XY.XYData.XYData` object.
+        XYData
+            An :py:class:`~abaqus.XY.XYData.XYData` object.
         """
         pass
 
@@ -148,7 +149,8 @@ class XYData:
 
         Returns
         -------
-        An :py:class:`~abaqus.XY.XYData.XYData` object.
+        XYData
+            An :py:class:`~abaqus.XY.XYData.XYData` object.
         """
         pass
 
@@ -226,7 +228,8 @@ class XYData:
 
         Returns
         -------
-        An :py:class:`~abaqus.XY.XYData.XYData` object.
+        XYData
+            An :py:class:`~abaqus.XY.XYData.XYData` object.
 
         Raises
         ------
@@ -303,7 +306,8 @@ class XYData:
 
         Returns
         -------
-        An :py:class:`~abaqus.XY.XYData.XYData` object.
+        XYData
+            An :py:class:`~abaqus.XY.XYData.XYData` object.
 
         Raises
         ------
@@ -402,7 +406,8 @@ class XYData:
 
         Returns
         -------
-        A list of XYData objects.
+        list[XYData]
+            A list of XYData objects.
 
         Raises
         ------
@@ -460,7 +465,8 @@ class XYData:
 
         Returns
         -------
-        A list of XYData objects.
+        list[XYData]
+            A list of XYData objects.
 
         Raises
         ------
@@ -550,7 +556,8 @@ class XYData:
 
         Returns
         -------
-        A list of XYData objects.
+        list[XYData]
+            A list of XYData objects.
 
         Raises
         ------

@@ -55,7 +55,8 @@ class OdbInstance(OdbInstanceBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbRigidBody.OdbRigidBody` object.
+        OdbRigidBody
+            An :py:class:`~abaqus.Odb.OdbRigidBody.OdbRigidBody` object.
         """
         odbRigidBody = OdbRigidBody(
             referenceNode,
@@ -94,7 +95,8 @@ class OdbInstance(OdbInstanceBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
+        OdbSet
+            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
         """
         self.nodeSets[name] = odbSet = OdbSet(name, nodes)
         return odbSet

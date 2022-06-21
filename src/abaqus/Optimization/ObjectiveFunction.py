@@ -51,7 +51,8 @@ class ObjectiveFunction:
 
         Returns
         -------
-        An :py:class:`~abaqus.Optimization.ObjectiveFunction.ObjectiveFunction` object.
+        ObjectiveFunction
+            An :py:class:`~abaqus.Optimization.ObjectiveFunction.ObjectiveFunction` object.
 
         Raises
         ------

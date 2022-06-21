@@ -543,7 +543,8 @@ class MeshAssembly(AssemblyBase):
 
         Returns
         -------
-        A sequence of Face objects.
+        tuple[Face, ...]
+            A sequence of :py:class:`~abaqus.BasicGeometry.Face.Face` objects.
         """
         pass
 
@@ -1115,8 +1116,9 @@ class MeshAssembly(AssemblyBase):
 
         Returns
         -------
-        A Dictionary object containing values for some number of the following keys:
-        failedElements, warningElements, naElements (sequences of MeshElement objects);
-        numElements (Int); average, worst (Float); worstElement (MeshElement object) .
+        dict[str, int | float | MeshElement]
+            A Dictionary object containing values for some number of the following keys:
+            failedElements, warningElements, naElements (sequences of MeshElement objects);
+            numElements (Int); average, worst (Float); worstElement (MeshElement object) .
         """
         pass

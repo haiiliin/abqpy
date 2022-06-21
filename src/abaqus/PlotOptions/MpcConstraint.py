@@ -24,6 +24,7 @@ class MpcConstraint:
 
         Returns
         -------
-        A tuple containing coordinates of the nodes pertaining to the constraint.
+        tuple[float, ...]
+            A tuple containing coordinates of the nodes pertaining to the constraint.
         """
         pass

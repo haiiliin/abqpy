@@ -18,7 +18,8 @@ class Transform:
 
         Returns
         -------
-        A tuple of 12 Floats.
+        tuple[float, float, float, float, float, float, float, float, float, float, float, float]
+            A tuple of 12 Floats.
 
         """
         pass

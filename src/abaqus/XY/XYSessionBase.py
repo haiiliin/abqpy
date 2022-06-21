@@ -118,7 +118,8 @@ class XYSessionBase(SessionBase):
 
         Returns
         -------
-        A list of xyData objects.
+        list[XYData]
+            A list of xyData objects.
 
         Raises
         ------
@@ -160,7 +161,8 @@ class XYSessionBase(SessionBase):
 
         Returns
         -------
-        A Double specifying the tolerance.
+        float
+            A Double specifying the tolerance.
         """
         pass
 

@@ -291,7 +291,8 @@ class Material(MaterialBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Material.Others.Acoustic.AcousticMedium.AcousticMedium` object.
+        AcousticMedium
+            An :py:class:`~abaqus.Material.Others.Acoustic.AcousticMedium.AcousticMedium` object.
 
         Raises
         ------
@@ -1162,7 +1163,8 @@ class Material(MaterialBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Material.Elastic.Linear.Elastic.Elastic` object.
+        Elastic
+            An :py:class:`~abaqus.Material.Elastic.Linear.Elastic.Elastic` object.
 
         Raises
         ------
@@ -1214,7 +1216,8 @@ class Material(MaterialBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity` object.
+        ElectricalConductivity
+            An :py:class:`~abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity` object.
 
         Raises
         ------
@@ -1374,7 +1377,8 @@ class Material(MaterialBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Material.Others.Mechanical.Expansion.Expansion` object.
+        Expansion
+            An :py:class:`~abaqus.Material.Others.Mechanical.Expansion.Expansion` object.
 
         Raises
         ------
@@ -1893,7 +1897,8 @@ class Material(MaterialBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Material.Others.HeatTransfer.InelasticHeatFraction.InelasticHeatFraction` object.
+        InelasticHeatFraction
+            An :py:class:`~abaqus.Material.Others.HeatTransfer.InelasticHeatFraction.InelasticHeatFraction` object.
 
         Raises
         ------

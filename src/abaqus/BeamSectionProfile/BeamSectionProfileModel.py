@@ -47,7 +47,8 @@ class BeamSectionProfileModel(ModelBase):
 
         Returns
         -------
-        A list of Profile objects.
+        list[Profile]
+            A list of Profile objects.
         """
         profiles: dict[Profile] = dict[Profile]()
         self.profiles.update(profiles)
@@ -74,7 +75,8 @@ class BeamSectionProfileModel(ModelBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile` object.
+        ArbitraryProfile
+            An :py:class:`~abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile` object.
 
         Raises
         ------
@@ -318,7 +320,8 @@ class BeamSectionProfileModel(ModelBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.BeamSectionProfile.IProfile.IProfile` object.
+        IProfile
+            An :py:class:`~abaqus.BeamSectionProfile.IProfile.IProfile` object.
 
         Raises
         ------

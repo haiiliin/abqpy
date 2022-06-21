@@ -152,6 +152,7 @@ class UserDataBase:
 
         Returns
         -------
-        An :py:class:`~abaqus.XY.XYData.XYData` object.
+        XYData
+            An :py:class:`~abaqus.XY.XYData.XYData` object.
         """
         pass

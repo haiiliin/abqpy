@@ -101,7 +101,8 @@ class IncidentWave(Interaction):
 
         Returns
         -------
-        An :py:class:`~abaqus.Interaction.IncidentWave.IncidentWave` object.
+        IncidentWave
+            An :py:class:`~abaqus.Interaction.IncidentWave.IncidentWave` object.
         """
         super().__init__()
         pass

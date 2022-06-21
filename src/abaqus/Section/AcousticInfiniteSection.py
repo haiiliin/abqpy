@@ -49,7 +49,8 @@ class AcousticInfiniteSection(Section):
 
         Returns
         -------
-        An :py:class:`~abaqus.Section.AcousticInfiniteSection.AcousticInfiniteSection` object.
+        AcousticInfiniteSection
+            An :py:class:`~abaqus.Section.AcousticInfiniteSection.AcousticInfiniteSection` object.
 
         Raises
         ------

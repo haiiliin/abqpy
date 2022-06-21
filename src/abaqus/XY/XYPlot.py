@@ -40,7 +40,8 @@ class XYPlot(XYPlotBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.XY.AreaStyle.AreaStyle` object.
+        AreaStyle
+            An :py:class:`~abaqus.XY.AreaStyle.AreaStyle` object.
 
         Raises
         ------
@@ -360,7 +361,8 @@ class XYPlot(XYPlotBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.XY.XYData.XYData` object.
+        XYData
+            An :py:class:`~abaqus.XY.XYData.XYData` object.
         """
         pass
 
@@ -386,7 +388,8 @@ class XYPlot(XYPlotBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.XY.XYData.XYData` object.
+        XYData
+            An :py:class:`~abaqus.XY.XYData.XYData` object.
         """
         pass
 

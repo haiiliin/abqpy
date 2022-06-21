@@ -77,7 +77,8 @@ class EquallySpacedAmplitude(Amplitude):
 
         Returns
         -------
-        An :py:class:`~abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude` object.
+        EquallySpacedAmplitude
+            An :py:class:`~abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude` object.
 
         Raises
         ------

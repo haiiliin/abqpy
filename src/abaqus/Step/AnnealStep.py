@@ -258,7 +258,8 @@ class AnnealStep(AnalysisStep):
 
         Returns
         -------
-        An :py:class:`~abaqus.Step.AnnealStep.AnnealStep` object.
+        AnnealStep
+            An :py:class:`~abaqus.Step.AnnealStep.AnnealStep` object.
 
         Raises
         ------

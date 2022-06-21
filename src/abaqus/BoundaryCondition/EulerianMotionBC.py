@@ -351,7 +351,8 @@ class EulerianMotionBC(BoundaryCondition):
 
         Returns
         -------
-        An :py:class:`~abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC` object.
+        EulerianMotionBC
+            An :py:class:`~abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC` object.
         """
         super().__init__()
         pass

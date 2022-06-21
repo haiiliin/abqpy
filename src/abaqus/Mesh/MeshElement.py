@@ -103,7 +103,8 @@ class MeshElement:
 
         Returns
         -------
-        A tuple of MeshNode objects.
+        tuple[MeshNode, ...]
+            A tuple of :py:class:`~abaqus.Mesh.MeshNode.MeshNode` objects.
         """
         pass
 
@@ -112,7 +113,8 @@ class MeshElement:
 
         Returns
         -------
-        A tuple of MeshEdge objects.
+        tuple[MeshEdge, ...]
+            A tuple of :py:class:`~abaqus.Mesh.MeshEdge.MeshEdge` objects.
         """
         pass
 
@@ -121,7 +123,8 @@ class MeshElement:
 
         Returns
         -------
-        A tuple of MeshFace objects.
+        tuple[MeshFace, ...]
+            A tuple of :py:class:`~abaqus.Mesh.MeshFace.MeshFace` objects.
         """
         pass
 

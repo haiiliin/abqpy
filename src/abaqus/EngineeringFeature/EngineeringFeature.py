@@ -80,7 +80,8 @@ class EngineeringFeature(EngineeringFeatureBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.EngineeringFeature.AssembledFastener.AssembledFastener` object.
+        AssembledFastener
+            An :py:class:`~abaqus.EngineeringFeature.AssembledFastener.AssembledFastener` object.
         """
         self.fasteners[name] = assembledFastener = AssembledFastener(
             name,

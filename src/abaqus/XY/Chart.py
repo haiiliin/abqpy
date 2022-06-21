@@ -168,7 +168,8 @@ class Chart:
 
         Returns
         -------
-        An :py:class:`~abaqus.XY.Axis.Axis` object.
+        Axis
+            An :py:class:`~abaqus.XY.Axis.Axis` object.
 
         Raises
         ------
@@ -194,7 +195,8 @@ class Chart:
 
         Returns
         -------
-        An :py:class:`~abaqus.XY.Axis.Axis` object.
+        Axis
+            An :py:class:`~abaqus.XY.Axis.Axis` object.
 
         Raises
         ------

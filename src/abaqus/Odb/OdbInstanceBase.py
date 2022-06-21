@@ -150,7 +150,8 @@ class OdbInstanceBase:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbInstance.OdbInstance` object.
+        OdbInstance
+            An :py:class:`~abaqus.Odb.OdbInstance.OdbInstance` object.
         """
         pass
 
@@ -240,7 +241,8 @@ class OdbInstanceBase:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbMeshElement.OdbMeshElement` object.
+        OdbMeshElement
+            An :py:class:`~abaqus.Odb.OdbMeshElement.OdbMeshElement` object.
 
         Raises
         ------

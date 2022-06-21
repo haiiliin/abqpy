@@ -43,7 +43,8 @@ class EulerianSection(Section):
 
         Returns
         -------
-        An :py:class:`~abaqus.Section.EulerianSection.EulerianSection` object.
+        EulerianSection
+            An :py:class:`~abaqus.Section.EulerianSection.EulerianSection` object.
         """
         super().__init__()
         pass

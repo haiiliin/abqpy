@@ -63,7 +63,8 @@ class InitialState(PredefinedField):
 
         Returns
         -------
-        An :py:class:`~abaqus.PredefinedField.InitialState.InitialState` object.
+        InitialState
+            An :py:class:`~abaqus.PredefinedField.InitialState.InitialState` object.
         """
         super().__init__()
         pass

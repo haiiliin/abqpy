@@ -370,7 +370,7 @@ class PartInstance:
         spacing2: float,
         direction1: tuple = (),
         direction2: tuple = (),
-    ):
+    ) -> tuple['PartInstance']:
         """This method creates multiple PartInstance objects in a linear pattern and puts them into
         the instances repository.
 
@@ -407,7 +407,8 @@ class PartInstance:
 
         Returns
         -------
-        A sequence of PartInstance objects.
+        tuple[PartInstance]
+            A sequence of :py:class:`~abaqus.Assembly.PartInstance.PartInstance` objects.
         """
         pass
 
@@ -440,9 +441,9 @@ class PartInstance:
         totalAngle
             A Float specifying the total angle in degrees between the first and last instance in the
             pattern. A positive angle corresponds to a counter-clockwise direction. The values 360°
-            and −360° represent a special case where the pattern makes a full circle. In this case,
+            and -360° represent a special case where the pattern makes a full circle. In this case,
             because the copy would overlay the original, the copy is not placed at the last
-            position. Possible values are −360.0 ≤≤ **totalAngle** ≤≤ 360.0.
+            position. Possible values are -360.0 ≤≤ **totalAngle** ≤≤ 360.0.
         point
             A sequence of three Floats specifying the center of the radial pattern. The default
             value is (0.0, 0.0, 0.0).
@@ -452,7 +453,8 @@ class PartInstance:
 
         Returns
         -------
-        A sequence of PartInstance objects.
+        tuple[PartInstance]
+            A sequence of PartInstance objects.
         """
         pass
 
@@ -533,8 +535,9 @@ class PartInstance:
 
         Returns
         -------
-        A tuple including the point of rotation, axis of rotation, and rotation angle (in
-        degrees).
+        tuple
+            A tuple including the point of rotation, axis of rotation, and rotation angle (in
+            degrees).
         """
         pass
 
@@ -544,7 +547,8 @@ class PartInstance:
 
         Returns
         -------
-        A tuple of three Floats representing the translation.
+        tuple[float, float, float]
+            A tuple of three Floats representing the translation.
         """
         pass
 

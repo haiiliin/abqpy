@@ -52,7 +52,8 @@ class ConstraintModel(ModelBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Constraint.AdjustPoints.AdjustPoints` object.
+        AdjustPoints
+            An :py:class:`~abaqus.Constraint.AdjustPoints.AdjustPoints` object.
         """
         self.constraints[name] = constraint = AdjustPoints(name, surface, controlPoints)
         return constraint
@@ -242,7 +243,8 @@ class ConstraintModel(ModelBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Constraint.EmbeddedRegion.EmbeddedRegion` object.
+        EmbeddedRegion
+            An :py:class:`~abaqus.Constraint.EmbeddedRegion.EmbeddedRegion` object.
         """
         self.constraints[name] = constraint = EmbeddedRegion(
             name,
@@ -276,7 +278,8 @@ class ConstraintModel(ModelBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Constraint.Equation.Equation` object.
+        Equation
+            An :py:class:`~abaqus.Constraint.Equation.Equation` object.
 
         Raises
         ------

@@ -200,7 +200,8 @@ class Feature(FeatureBase):
 
         Returns
         -------
-        A Feature Object.
+        Feature
+            A Feature Object.
 
         Raises
         ------
@@ -239,7 +240,8 @@ class Feature(FeatureBase):
 
         Returns
         -------
-        A Feature Object.
+        Feature
+            A Feature Object.
 
         Raises
         ------

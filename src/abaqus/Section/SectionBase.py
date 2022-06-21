@@ -66,6 +66,7 @@ class SectionBase:
 
         Returns
         -------
-        A list of Section objects.
+        list[Section]
+            A list of :py:class:`~abaqus.Section.Section.Section` objects.
         """
         pass

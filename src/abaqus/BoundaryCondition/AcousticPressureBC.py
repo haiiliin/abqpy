@@ -115,7 +115,8 @@ class AcousticPressureBC(BoundaryCondition):
 
         Returns
         -------
-        An :py:class:`~abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC` object.
+        AcousticPressureBC
+            An :py:class:`~abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC` object.
         """
         super().__init__()
         pass

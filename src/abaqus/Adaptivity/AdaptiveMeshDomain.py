@@ -51,7 +51,8 @@ class AdaptiveMeshDomain:
 
         Returns
         -------
-        An :py:class:`~abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain` object.
+        AdaptiveMeshDomain
+            An :py:class:`~abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain` object.
 
         Raises
         ------

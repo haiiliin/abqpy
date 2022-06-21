@@ -44,7 +44,8 @@ class ActuatorAmplitude(Amplitude):
 
         Returns
         -------
-        An :py:class:`~abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude` object.
+        ActuatorAmplitude
+            An :py:class:`~abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude` object.
 
         Raises
         ------

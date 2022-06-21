@@ -1190,7 +1190,8 @@ class PartBase(Feature):
 
         Returns
         -------
-        A tuple of 3 Floats representing the coordinates of the specified point.
+        tuple[float, float, float]
+            A tuple of 3 Floats representing the coordinates of the specified point.
         """
         pass
 
@@ -1494,8 +1495,9 @@ class PartBase(Feature):
 
         Returns
         -------
-        A Boolean value of True if the part is aligned with the sketch and False if it is not
-        aligned.
+        Boolean
+            A Boolean value of True if the part is aligned with the sketch and False if it is not
+            aligned.
 
         Raises
         ------

@@ -46,7 +46,8 @@ class OdbAssembly(OdbAssemblyBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
+        OdbDatumCsys
+            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
         self.datumCsyses[name] = datumCsys = OdbDatumCsys()
         return datumCsys
@@ -90,7 +91,8 @@ class OdbAssembly(OdbAssemblyBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
+        OdbDatumCsys
+            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
         self.datumCsyses[name] = datumCsys = OdbDatumCsys()
         return datumCsys
@@ -134,7 +136,8 @@ class OdbAssembly(OdbAssemblyBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
+        OdbDatumCsys
+            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
         self.datumCsyses[name] = datumCsys = OdbDatumCsys()
         return datumCsys
@@ -169,7 +172,8 @@ class OdbAssembly(OdbAssemblyBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
+        OdbDatumCsys
+            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
         self.datumCsyses[name] = datumCsys = OdbDatumCsys()
         return datumCsys
@@ -194,7 +198,8 @@ class OdbAssembly(OdbAssemblyBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
+        OdbDatumCsys
+            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
         self.datumCsyses[name] = datumCsys = OdbDatumCsys()
         return datumCsys
@@ -233,7 +238,8 @@ class OdbAssembly(OdbAssemblyBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbInstance.OdbInstance` object.
+        OdbInstance
+            An :py:class:`~abaqus.Odb.OdbInstance.OdbInstance` object.
         """
         self.instances[name] = odbInstance = OdbInstance(name, object, localCoordSystem)
         return odbInstance
@@ -286,7 +292,8 @@ class OdbAssembly(OdbAssemblyBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbRigidBody.OdbRigidBody` object.
+        OdbRigidBody
+            An :py:class:`~abaqus.Odb.OdbRigidBody.OdbRigidBody` object.
         """
         odbRigidBody = OdbRigidBody(
             referenceNode,
@@ -325,7 +332,8 @@ class OdbAssembly(OdbAssemblyBase):
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
+        OdbSet
+            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
         """
         self.nodeSets[name] = odbSet = OdbSet(name, nodes)
         return odbSet

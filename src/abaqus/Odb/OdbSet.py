@@ -90,7 +90,8 @@ class OdbSet:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
+        OdbSet
+            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
         """
         pass
 
@@ -118,7 +119,8 @@ class OdbSet:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
+        OdbSet
+            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
         """
         pass
 
@@ -148,7 +150,8 @@ class OdbSet:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
+        OdbSet
+            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
         """
         pass
 
@@ -176,7 +179,8 @@ class OdbSet:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
+        OdbSet
+            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
         """
         pass
 
@@ -218,7 +222,8 @@ class OdbSet:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
+        OdbSet
+            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
         """
         pass
 
@@ -247,7 +252,8 @@ class OdbSet:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
+        OdbSet
+            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
         """
         pass
 
@@ -275,6 +281,7 @@ class OdbSet:
 
         Returns
         -------
-        An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
+        OdbSet
+            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
         """
         pass
