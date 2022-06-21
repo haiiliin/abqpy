@@ -251,7 +251,7 @@ class DamageInitiation:
         tolerance: float = 0,
         direction: SymbolicConstant = NMORI,
     ):
-        """This method creates a DamageInitiation object.
+        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Notes
         -----
@@ -308,7 +308,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A DamageInitiation object.
+            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -333,7 +333,7 @@ class DamageInitiation:
         tolerance: float = 0,
         direction: SymbolicConstant = NMORI,
     ):
-        """This method creates a DamageInitiation object.
+        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Notes
         -----
@@ -390,7 +390,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A DamageInitiation object.
+            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -415,7 +415,7 @@ class DamageInitiation:
         tolerance: float = 0,
         direction: SymbolicConstant = NMORI,
     ):
-        """This method creates a DamageInitiation object.
+        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Notes
         -----
@@ -472,7 +472,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A DamageInitiation object.
+            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -497,7 +497,7 @@ class DamageInitiation:
         tolerance: float = 0,
         direction: SymbolicConstant = NMORI,
     ):
-        """This method creates a DamageInitiation object.
+        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Notes
         -----
@@ -554,7 +554,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A DamageInitiation object.
+            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -580,7 +580,7 @@ class DamageInitiation:
         direction: SymbolicConstant = NMORI,
         position: SymbolicConstant = CENTROID,
     ):
-        """This method creates a DamageInitiation object.
+        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Notes
         -----
@@ -640,7 +640,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A DamageInitiation object.
+            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -666,7 +666,7 @@ class DamageInitiation:
         direction: SymbolicConstant = NMORI,
         position: SymbolicConstant = CENTROID,
     ):
-        """This method creates a DamageInitiation object.
+        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Notes
         -----
@@ -726,7 +726,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A DamageInitiation object.
+            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -751,7 +751,7 @@ class DamageInitiation:
         tolerance: float = 0,
         direction: SymbolicConstant = NMORI,
     ):
-        """This method creates a DamageInitiation object.
+        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Notes
         -----
@@ -808,7 +808,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A DamageInitiation object.
+            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -833,7 +833,7 @@ class DamageInitiation:
         tolerance: float = 0,
         direction: SymbolicConstant = NMORI,
     ):
-        """This method creates a DamageInitiation object.
+        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Notes
         -----
@@ -890,7 +890,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A DamageInitiation object.
+            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -916,7 +916,7 @@ class DamageInitiation:
         direction: SymbolicConstant = NMORI,
         position: SymbolicConstant = CENTROID,
     ):
-        """This method creates a DamageInitiation object.
+        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Notes
         -----
@@ -976,7 +976,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A DamageInitiation object.
+            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -1002,7 +1002,7 @@ class DamageInitiation:
         direction: SymbolicConstant = NMORI,
         position: SymbolicConstant = CENTROID,
     ):
-        """This method creates a DamageInitiation object.
+        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Notes
         -----
@@ -1062,7 +1062,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A DamageInitiation object.
+            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -1088,7 +1088,7 @@ class DamageInitiation:
         direction: SymbolicConstant = NMORI,
         position: SymbolicConstant = CENTROID,
     ):
-        """This method creates a DamageInitiation object.
+        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Notes
         -----
@@ -1148,7 +1148,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A DamageInitiation object.
+            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -1174,7 +1174,7 @@ class DamageInitiation:
         direction: SymbolicConstant = NMORI,
         position: SymbolicConstant = CENTROID,
     ):
-        """This method creates a DamageInitiation object.
+        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Notes
         -----
@@ -1234,7 +1234,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A DamageInitiation object.
+            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -1259,7 +1259,7 @@ class DamageInitiation:
         tolerance: float = 0,
         direction: SymbolicConstant = NMORI,
     ):
-        """This method creates a DamageInitiation object.
+        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Notes
         -----
@@ -1316,7 +1316,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A DamageInitiation object.
+            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -1341,7 +1341,7 @@ class DamageInitiation:
         tolerance: float = 0,
         direction: SymbolicConstant = NMORI,
     ):
-        """This method creates a DamageInitiation object.
+        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Notes
         -----
@@ -1398,7 +1398,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A DamageInitiation object.
+            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------

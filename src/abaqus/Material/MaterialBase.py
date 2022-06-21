@@ -262,46 +262,46 @@ class MaterialBase:
     # A CrushableFoam object.
     crushableFoam: CrushableFoam = CrushableFoam(((),))
 
-    # A DamageInitiation object.
+    # A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
     ductileDamageInitiation: DamageInitiation = DamageInitiation()
 
-    # A DamageInitiation object.
+    # A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
     fldDamageInitiation: DamageInitiation = DamageInitiation()
 
-    # A DamageInitiation object.
+    # A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
     flsdDamageInitiation: DamageInitiation = DamageInitiation()
 
-    # A DamageInitiation object.
+    # A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
     johnsonCookDamageInitiation: DamageInitiation = DamageInitiation()
 
-    # A DamageInitiation object.
+    # A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
     maxeDamageInitiation: DamageInitiation = DamageInitiation()
 
-    # A DamageInitiation object.
+    # A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
     maxsDamageInitiation: DamageInitiation = DamageInitiation()
 
-    # A DamageInitiation object.
+    # A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
     maxpeDamageInitiation: DamageInitiation = DamageInitiation()
 
-    # A DamageInitiation object.
+    # A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
     maxpsDamageInitiation: DamageInitiation = DamageInitiation()
 
-    # A DamageInitiation object.
+    # A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
     mkDamageInitiation: DamageInitiation = DamageInitiation()
 
-    # A DamageInitiation object.
+    # A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
     msfldDamageInitiation: DamageInitiation = DamageInitiation()
 
-    # A DamageInitiation object.
+    # A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
     quadeDamageInitiation: DamageInitiation = DamageInitiation()
 
-    # A DamageInitiation object.
+    # A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
     quadsDamageInitiation: DamageInitiation = DamageInitiation()
 
-    # A DamageInitiation object.
+    # A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
     shearDamageInitiation: DamageInitiation = DamageInitiation()
 
-    # A DamageInitiation object.
+    # A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
     hashinDamageInitiation: DamageInitiation = DamageInitiation()
 
     # A Damping object.
