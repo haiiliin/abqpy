@@ -52,16 +52,16 @@ class CombinedTestData:
             None or a Float specifying a normalized volume. The value of **volinf** depends on the
             value of the **time** member of the Viscoelastic object. The default value is None.
             If **time** = RELAXATION_TEST_DATA, **volinf** specifies the value of the long-term normalized
-            volumetric modulus, kR(∞).
+            volumetric modulus, :math:`k_R(\infty)`.
             If **time** = CREEP_TEST_DATA, **volinf** specifies the value of the long-term normalized
-            volumetric compliance, jK⁢(∞).
+            volumetric compliance, :math:`j_K(\infty)`.
         shrinf
             None or a Float specifying a normalized shear. The value of **shrinf** depends on the
             value of the **time** member of the Viscoelastic object. The default value is None.
             If **time** = RELAXATION_TEST_DATA, **shrinf** specifies the value of the long-term normalized
-            shear modulus, gR(∞)
+            shear modulus, :math:`g_R(\infty)`
             If **time** = CREEP_TEST_DATA, **shrinf** specifies the value of the long-term normalized
-            shear compliance, jS(∞).
+            shear compliance, :math:`j_S(\infty)`.
 
         Returns
         -------
