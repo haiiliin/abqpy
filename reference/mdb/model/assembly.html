@@ -340,18 +340,18 @@
 <span class="sig-name descname"><span class="pre">Instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">objectToCopy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance" title="abaqus.Assembly.PartInstance.PartInstance"><span class="pre">PartInstance</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Assembly/AssemblyModel.py#L24-L47"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.Instance" title="Permalink to this definition">#</a></dt>
 <dd><p>This method copies a PartInstance object from the specified model and creates a new
 PartInstance object.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
 </dd>
-<dt><strong>objectToCopy</strong></dt><dd><p>A PartInstance object to be copied.</p>
+<dt><strong>objectToCopy</strong></dt><dd><p>A <a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance" title="abaqus.Assembly.PartInstance.PartInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">PartInstance</span></code></a> object to be copied.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Model</span></code> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code> object.</span></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -537,7 +537,7 @@ source faces onto the target faces. The user can specify the number of projectio
 the length of projection vector for projection onto the target faces. The lines are then
 created between the source face and the closest target face. Subsequent lines are
 created between the target faces.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>name</strong></dt><dd><p>A String specifying a unique Feature name.</p>
@@ -589,8 +589,8 @@ target faces should be flipped.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -606,7 +606,7 @@ target faces should be flipped.</p>
 <em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Coaxial</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">movableAxis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixedAxis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flip</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><span class="pre">Feature</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Assembly/Feature.py#L108-L138"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.Feature.Feature.Coaxial" title="Permalink to this definition">#</a></dt>
 <dd><p>This method moves an instance so that its selected face is coaxial with the selected
 face of a fixed instance.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>movableAxis</strong></dt><dd><p>A cylindrical or conical Face on the part instance to be moved.</p>
@@ -618,8 +618,8 @@ face of a fixed instance.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -653,7 +653,7 @@ part instance to remain fixed.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt>feature: <a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A Feature object</p>
+<dt>feature: <a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A <a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -749,7 +749,7 @@ reverse aligned (ON).</p>
 <em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ParallelCsys</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">movableCsys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixedCsys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><span class="pre">Feature</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Assembly/Feature.py#L248-L276"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.Feature.Feature.ParallelCsys" title="Permalink to this definition">#</a></dt>
 <dd><p>This method moves an instance so that its Datum coordinate system is parallel to a Datum
 coordinate system of a fixed instance.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>movableCsys</strong></dt><dd><p>A Datum coordinate system on the part instance to be moved.</p>
@@ -759,8 +759,8 @@ coordinate system of a fixed instance.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -781,7 +781,7 @@ coordinate system of a fixed instance.</p>
 <em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ParallelEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">movableAxis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixedAxis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flip</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><span class="pre">Feature</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Assembly/Feature.py#L278-L311"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.Feature.Feature.ParallelEdge" title="Permalink to this definition">#</a></dt>
 <dd><p>This method moves an instance so that its edge is parallel to an edge of a fixed
 instance.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>movableAxis</strong></dt><dd><p>A straight Edge, a Datum axis, or an element edge from an orphan mesh on the part
@@ -796,8 +796,8 @@ instance to remain fixed.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -818,7 +818,7 @@ instance to remain fixed.</p>
 <em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ParallelFace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">movablePlane</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixedPlane</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flip</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><span class="pre">Feature</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Assembly/Feature.py#L313-L346"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.Feature.Feature.ParallelFace" title="Permalink to this definition">#</a></dt>
 <dd><p>This method moves an instance so that its face is parallel to a face of a fixed
 instance.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>movablePlane</strong></dt><dd><p>A planar face, a Datum plane, or a face from an orphan mesh on the part instance to be
@@ -833,8 +833,8 @@ reverse aligned (ON).</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -861,7 +861,7 @@ reverse aligned (ON).</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Assembly.PartInstance.PartInstance">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PartInstance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">part</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part.html#abaqus.Part.Part.Part" title="abaqus.Part.Part.Part"><span class="pre">Part</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">autoOffset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dependent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Assembly/PartInstance.py#L23-L620"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.PartInstance.PartInstance" title="Permalink to this definition">#</a></dt>
-<dd><p>A PartInstance object is an instance of a Part object.</p>
+<dd><p>A <a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance" title="abaqus.Assembly.PartInstance.PartInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">PartInstance</span></code></a> object is an instance of a Part object.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">assembly</span>
@@ -1028,7 +1028,7 @@ value is OFF.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt>feature: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></dt><dd><p>A Feature object</p>
+<dt>feature: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></dt><dd><p>A <a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -1048,7 +1048,7 @@ space.</p>
 <span class="sig-name descname"><span class="pre">InstanceFromBooleanCut</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instanceToBeCut</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cuttingInstances</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'PartInstance'</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">originalInstances</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SUPPRESS'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Assembly/PartInstance.py#L264-L300"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a PartInstance in the instances repository after subtracting or
 cutting the geometries of a group of part instances from that of a base part instance.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>name</strong></dt><dd><p>A String specifying the repository key. The name must be a valid Abaqus object name.</p>
@@ -1065,8 +1065,8 @@ value is SUPPRESS.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance" title="abaqus.Assembly.PartInstance.PartInstance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartInstance</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance" title="abaqus.Assembly.PartInstance.PartInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">PartInstance</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1082,7 +1082,7 @@ value is SUPPRESS.</p>
 <span class="sig-name descname"><span class="pre">InstanceFromBooleanMerge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instances</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'PartInstance'</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepIntersections</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">originalInstances</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SUPPRESS'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">domain</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'GEOMETRY'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mergeNodes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOUNDARY_ONLY'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodeMergingTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">removeDuplicateElements</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Assembly/PartInstance.py#L302-L359"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a PartInstance in the instances repository after merging two or more
 part instances.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>name</strong></dt><dd><p>A String specifying the repository key. The name must be a valid Abaqus object name.</p>
@@ -1116,8 +1116,8 @@ default value is True.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance" title="abaqus.Assembly.PartInstance.PartInstance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartInstance</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance" title="abaqus.Assembly.PartInstance.PartInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">PartInstance</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1283,7 +1283,7 @@ and <strong>Z</strong>-directions.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>instanceOf</strong></dt><dd><p>A Part object specifying which Part will be instanced in place of the original Part.</p>
+<dt><strong>instanceOf</strong></dt><dd><p>A <a class="reference internal" href="part.html#abaqus.Part.Part.Part" title="abaqus.Part.Part.Part"><code class="xref py py-class docutils literal notranslate"><span class="pre">Part</span></code></a> object specifying which Part will be instanced in place of the original Part.</p>
 </dd>
 <dt><strong>applyConstraints</strong></dt><dd><p>A Boolean specifying whether to apply existing constraints on the new instance or to
 position the new instance in the same place as the original instance. The default value
@@ -1353,7 +1353,7 @@ solving for the actual contact.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt>feature: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></dt><dd><p>A Feature object</p>
+<dt>feature: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></dt><dd><p>A <a class="reference internal" href="#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object</p>
 </dd>
 </dl>
 </dd>

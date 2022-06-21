@@ -333,7 +333,7 @@
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.PathSession.PathSession.Path">
 <span class="sig-name descname"><span class="pre">Path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expression</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">circleDefinition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numSegments</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radialAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startRadius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endRadius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.PathAndProbe.Path.Path" title="abaqus.PathAndProbe.Path.Path"><span class="pre">Path</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PathAndProbe/PathSession.py#L12-L120"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.PathSession.PathSession.Path" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Path object.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
@@ -398,8 +398,8 @@ path. This argument is valid only when <strong>type</strong> = RADIAL.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.PathAndProbe.PathSession.PathSession.Path" title="abaqus.PathAndProbe.PathSession.PathSession.Path"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.PathAndProbe.Path.Path" title="abaqus.PathAndProbe.Path.Path"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -423,7 +423,7 @@ path. This argument is valid only when <strong>type</strong> = RADIAL.</p>
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.PathSession.PathSession.Spectrum">
 <span class="sig-name descname"><span class="pre">Spectrum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.PathAndProbe.Spectrum.Spectrum" title="abaqus.PathAndProbe.Spectrum.Spectrum"><span class="pre">Spectrum</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PathAndProbe/PathSession.py#L122-L145"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.PathSession.PathSession.Spectrum" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Spectrum object and places it in the spectrums repository.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>name</strong></dt><dd><p>A string name for the spectrum.</p>
@@ -433,8 +433,8 @@ path. This argument is valid only when <strong>type</strong> = RADIAL.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.PathAndProbe.PathSession.PathSession.Spectrum" title="abaqus.PathAndProbe.PathSession.PathSession.Spectrum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.PathAndProbe.Spectrum.Spectrum" title="abaqus.PathAndProbe.Spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -449,7 +449,7 @@ path. This argument is valid only when <strong>type</strong> = RADIAL.</p>
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.PathSession.PathSession.Stream">
 <span class="sig-name descname"><span class="pre">Stream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numPointsOnRake</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointA</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointB</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.PathAndProbe.Stream.Stream" title="abaqus.PathAndProbe.Stream.Stream"><span class="pre">Stream</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PathAndProbe/PathSession.py#L147-L187"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.PathSession.PathSession.Stream" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates aStream object and places it in the streams repository.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>name</strong></dt><dd><p>A string name for the stream.</p>
@@ -467,8 +467,8 @@ representation of the node selected in the viewport.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.PathAndProbe.PathSession.PathSession.Stream" title="abaqus.PathAndProbe.PathSession.PathSession.Stream"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Stream</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.PathAndProbe.Stream.Stream" title="abaqus.PathAndProbe.Stream.Stream"><code class="xref py py-class docutils literal notranslate"><span class="pre">Stream</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -519,7 +519,7 @@ computed.</p>
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges">
 <span class="sig-name descname"><span class="pre">FreeBodyFromEdges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">summationLoc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'CENTROID'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">summationPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">componentResolution</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NORMAL_TANGENTIAL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csysName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PathAndProbe/FreeBody.py#L18-L58"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a FreeBody object and places it in the freeBodies repository.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>name</strong></dt><dd><p>A string name for the free body.</p>
@@ -539,8 +539,8 @@ NORMAL_TANGENTIAL and CSYS. The default value is NORMAL_TANGENTIAL.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.PathAndProbe.FreeBody.FreeBody" title="abaqus.PathAndProbe.FreeBody.FreeBody"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FreeBody</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.PathAndProbe.FreeBody.FreeBody" title="abaqus.PathAndProbe.FreeBody.FreeBody"><code class="xref py py-class docutils literal notranslate"><span class="pre">FreeBody</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -555,7 +555,7 @@ NORMAL_TANGENTIAL and CSYS. The default value is NORMAL_TANGENTIAL.</p>
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces">
 <span class="sig-name descname"><span class="pre">FreeBodyFromFaces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">faces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">summationLoc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'CENTROID'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">summationPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">componentResolution</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NORMAL_TANGENTIAL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csysName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PathAndProbe/FreeBody.py#L60-L100"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a FreeBody object and places it in the freeBodies repository.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>name</strong></dt><dd><p>A string name for the free body.</p>
@@ -575,8 +575,8 @@ NORMAL_TANGENTIAL and CSYS. The default value is NORMAL_TANGENTIAL.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.PathAndProbe.FreeBody.FreeBody" title="abaqus.PathAndProbe.FreeBody.FreeBody"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FreeBody</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.PathAndProbe.FreeBody.FreeBody" title="abaqus.PathAndProbe.FreeBody.FreeBody"><code class="xref py py-class docutils literal notranslate"><span class="pre">FreeBody</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -591,7 +591,7 @@ NORMAL_TANGENTIAL and CSYS. The default value is NORMAL_TANGENTIAL.</p>
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements">
 <span class="sig-name descname"><span class="pre">FreeBodyFromNodesElements</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elements</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">summationLoc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'CENTROID'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">summationPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">componentResolution</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NORMAL_TANGENTIAL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csysName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PathAndProbe/FreeBody.py#L102-L145"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a FreeBody object and places it in the freeBodies repository.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>name</strong></dt><dd><p>A string name for the free body.</p>
@@ -613,8 +613,8 @@ NORMAL_TANGENTIAL and CSYS. The default value is NORMAL_TANGENTIAL.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.PathAndProbe.FreeBody.FreeBody" title="abaqus.PathAndProbe.FreeBody.FreeBody"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FreeBody</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.PathAndProbe.FreeBody.FreeBody" title="abaqus.PathAndProbe.FreeBody.FreeBody"><code class="xref py py-class docutils literal notranslate"><span class="pre">FreeBody</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -820,7 +820,7 @@ at the nearest point on the curve. The default value is OFF.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>options</strong></dt><dd><p>A ProbeOptions object from which values are to be copied. If other arguments are also
+<dt><strong>options</strong></dt><dd><p>A <a class="reference internal" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeOptions</span></code></a> object from which values are to be copied. If other arguments are also
 supplied to setValues, they will override the values in <strong>options</strong>. The default value is
 None.</p>
 </dd>

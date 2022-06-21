@@ -356,7 +356,7 @@ for this ConnectorBehaviorOption.</p>
 <dt class="sig sig-object py" id="abaqus.Connector.CDCTerm.CDCTerm.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">intrinsicComponents</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">termOperator</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'RSS'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">termSign</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'POSITIVE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localDependency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indepCompType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'POSITION'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indepComponents</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tempDependency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fieldDependencies</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Connector/CDCTerm.py#L36-L114"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Connector.CDCTerm.CDCTerm.__init__" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a CDCTerm object.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>intrinsicComponents</strong></dt><dd><p>A sequence of Ints specifying the components of relative motion for which the
@@ -401,8 +401,8 @@ OFF.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="../../../../reference/mdb/model/section/connector.html#abaqus.Connector.CDCTerm.CDCTerm" title="abaqus.Connector.CDCTerm.CDCTerm"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CDCTerm</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../../../../reference/mdb/model/section/connector.html#abaqus.Connector.CDCTerm.CDCTerm" title="abaqus.Connector.CDCTerm.CDCTerm"><code class="xref py py-class docutils literal notranslate"><span class="pre">CDCTerm</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1073,7 +1073,7 @@ The ConnectorStop object is derived from the ConnectorBehaviorOption object.</p>
 <dl class="py class">
 <dt class="sig sig-object py">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DerivedComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Connector/DerivedComponent.py#L6-L168"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
-<dd><p>A DerivedComponent object describes user-customized components for use in defining
+<dd><p>A <code class="xref py py-class docutils literal notranslate"><span class="pre">DerivedComponent</span></code> object describes user-customized components for use in defining
 ConnectorFriction and Potential objects.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -2092,7 +2092,7 @@ The ConnectorStop object is derived from the ConnectorBehaviorOption object.</p>
 <dl class="py class">
 <dt class="sig sig-object py">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DerivedComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Connector/DerivedComponent.py#L6-L168"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
-<dd><p>A DerivedComponent object describes user-customized components for use in defining
+<dd><p>A <code class="xref py py-class docutils literal notranslate"><span class="pre">DerivedComponent</span></code> object describes user-customized components for use in defining
 ConnectorFriction and Potential objects.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>

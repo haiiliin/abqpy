@@ -586,7 +586,7 @@ object, or a tuple of Floats representing the coordinates of a point.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A Feature object</p>
+<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A <a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -665,7 +665,7 @@ should be reversed. This argument is valid only when
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A Feature object</p>
+<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A <a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -768,7 +768,7 @@ object, or a tuple of Floats representing the coordinates of a point.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A Feature object</p>
+<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A <a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -786,7 +786,7 @@ object, or a tuple of Floats representing the coordinates of a point.</p>
 <span class="sig-name descname"><span class="pre">DatumAxisByCylFace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">face</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L333-L359"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByCylFace" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Feature object and a DatumAxis object along the axis of a cylinder
 or cone.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>face</strong></dt><dd><p>A cylindrical or conical Face object.</p>
@@ -794,8 +794,8 @@ or cone.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -817,7 +817,7 @@ or cone.</p>
 <span class="sig-name descname"><span class="pre">DatumAxisByNormalToPlane</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plane</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L361-L389"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Feature object and a DatumAxis object normal to the specified
 plane and passing through the specified point.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>plane</strong></dt><dd><p>A planar Face, an ElementFace, or a Datum object representing a datum plane.</p>
@@ -827,8 +827,8 @@ plane and passing through the specified point.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -850,7 +850,7 @@ plane and passing through the specified point.</p>
 <span class="sig-name descname"><span class="pre">DatumAxisByParToEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L391-L419"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByParToEdge" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Feature object and a DatumAxis object parallel to the specified
 edge and passing through the specified point.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>edge</strong></dt><dd><p>A straight Edge, an ElementEdge, or a Datum object representing a datum axis.</p>
@@ -860,8 +860,8 @@ edge and passing through the specified point.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -883,7 +883,7 @@ edge and passing through the specified point.</p>
 <span class="sig-name descname"><span class="pre">DatumAxisByPrincipalAxis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">principalAxis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L421-L448"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByPrincipalAxis" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Feature object and a DatumAxis object along one of the three
 principal axes.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>principalAxis</strong></dt><dd><p>A SymbolicConstant specifying the principal axis. Possible values are XAXIS, YAXIS, and
@@ -892,8 +892,8 @@ ZAXIS.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -915,7 +915,7 @@ ZAXIS.</p>
 <span class="sig-name descname"><span class="pre">DatumAxisByThreePoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L523-L556"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByThreePoint" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Feature object and a DatumAxis object normal to the circle
 described by three points and through its center.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>point1</strong></dt><dd><p>A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum object representing a datum point
@@ -930,8 +930,8 @@ specifying the third point on the circle.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -952,7 +952,7 @@ specifying the third point on the circle.</p>
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumAxisByThruEdge">
 <span class="sig-name descname"><span class="pre">DatumAxisByThruEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L558-L583"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByThruEdge" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Feature object and a DatumAxis object along the specified edge.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>edge</strong></dt><dd><p>A straight Edge or an ElementEdge object.</p>
@@ -960,8 +960,8 @@ specifying the third point on the circle.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -983,7 +983,7 @@ specifying the third point on the circle.</p>
 <span class="sig-name descname"><span class="pre">DatumAxisByTwoPlane</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plane1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plane2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L585-L613"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByTwoPlane" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Feature object and a DatumAxis object at the intersection of two
 planes.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>plane1</strong></dt><dd><p>A planar Face, an ElementFace, or a Datum object representing a datum plane.</p>
@@ -993,8 +993,8 @@ planes.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1016,7 +1016,7 @@ planes.</p>
 <span class="sig-name descname"><span class="pre">DatumAxisByTwoPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L615-L643"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByTwoPoint" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Feature object and a DatumAxis object along the line joining two
 points.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>point1</strong></dt><dd><p>A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum object representing a datum point.</p>
@@ -1026,8 +1026,8 @@ points.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1049,7 +1049,7 @@ points.</p>
 <span class="sig-name descname"><span class="pre">DatumCsysByDefault</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordSysType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L645-L674"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumCsysByDefault" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Feature object and a DatumCsys object from the specified default
 coordinate system at the origin.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>coordSysType</strong></dt><dd><p>A SymbolicConstant specifying the default coordinate system to be used. Possible values
@@ -1060,8 +1060,8 @@ are CARTESIAN, CYLINDRICAL, and SPHERICAL.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1083,13 +1083,13 @@ are CARTESIAN, CYLINDRICAL, and SPHERICAL.</p>
 <span class="sig-name descname"><span class="pre">DatumCsysByOffset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordSysType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datumCoordSys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="datum.html#abaqus.Datum.Datum.Datum" title="abaqus.Datum.Datum.Datum"><span class="pre">Datum</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L676-L723"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumCsysByOffset" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Feature object and a DatumCsys object by offsetting the origin of
 an existing datum coordinate system to a specified point.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>coordSysType</strong></dt><dd><p>A SymbolicConstant specifying the type of coordinate system. Possible values are
 CARTESIAN, CYLINDRICAL, and SPHERICAL.</p>
 </dd>
-<dt><strong>datumCoordSys</strong></dt><dd><p>A Datum object representing a datum coordinate system from which to offset.</p>
+<dt><strong>datumCoordSys</strong></dt><dd><p>A <a class="reference internal" href="datum.html#abaqus.Datum.Datum.Datum" title="abaqus.Datum.Datum.Datum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Datum</span></code></a> object representing a datum coordinate system from which to offset.</p>
 </dd>
 <dt><strong>vector</strong></dt><dd><p>A sequence of three Floats specifying the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-offsets from
 <strong>datumCoordSys</strong>. The arguments <strong>vector</strong> and <strong>point</strong> are mutually exclusive, and one of
@@ -1105,8 +1105,8 @@ exclusive, and one of them must be specified.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1127,7 +1127,7 @@ exclusive, and one of them must be specified.</p>
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumCsysByThreePoints">
 <span class="sig-name descname"><span class="pre">DatumCsysByThreePoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordSysType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L725-L781"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumCsysByThreePoints" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Feature object and a DatumCsys object from three points.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>coordSysType</strong></dt><dd><p>A SymbolicConstant specifying the type of coordinate system. Possible values are
@@ -1157,8 +1157,8 @@ mutually exclusive. One of them must be specified.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1181,7 +1181,7 @@ mutually exclusive. One of them must be specified.</p>
 <dd><p>This method creates a Feature object and a DatumCsys object from two orthogonal lines.
 The origin of the new datum coordinate system is placed at the intersection of the two
 lines.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>coordSysType</strong></dt><dd><p>A SymbolicConstant specifying the type of coordinate system. Possible values are
@@ -1198,8 +1198,8 @@ a line in the <strong>X - Y</strong> plane or in the rr-θθ plane.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1221,7 +1221,7 @@ a line in the <strong>X - Y</strong> plane or in the rr-θθ plane.</p>
 <span class="sig-name descname"><span class="pre">DatumPlaneByLinePoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L988-L1016"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPlaneByLinePoint" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Feature object and a DatumPlane object that pass through the
 specified line and through the specified point that does not lie on the line.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>line</strong></dt><dd><p>A straight Edge, an ElementEdge, or a Datum object representing a datum axis.</p>
@@ -1231,8 +1231,8 @@ specified line and through the specified point that does not lie on the line.</p
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1254,7 +1254,7 @@ specified line and through the specified point that does not lie on the line.</p
 <span class="sig-name descname"><span class="pre">DatumPlaneByPointNormal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normal</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L1018-L1046"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPlaneByPointNormal" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Feature object and a DatumPlane object normal to the specified
 line and running through the specified point.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>point</strong></dt><dd><p>A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum object representing a datum point.</p>
@@ -1264,8 +1264,8 @@ line and running through the specified point.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1287,7 +1287,7 @@ line and running through the specified point.</p>
 <span class="sig-name descname"><span class="pre">DatumPlaneByPrincipalPlane</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">principalPlane</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L823-L854"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPlaneByPrincipalPlane" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Feature object and a DatumPlane object through the origin along
 one of the three principal planes.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>principalPlane</strong></dt><dd><p>A SymbolicConstant specifying the principal plane. Possible values are XYPLANE, YZPLANE,
@@ -1298,8 +1298,8 @@ and XZPLANE.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1321,7 +1321,7 @@ and XZPLANE.</p>
 <span class="sig-name descname"><span class="pre">DatumPlaneByRotation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plane</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L924-L954"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPlaneByRotation" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Feature object and a DatumPlane object by rotating a plane about
 the specified axis through the specified angle.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>plane</strong></dt><dd><p>A planar Face, an ElementFace, or a Datum object representing a datum plane.</p>
@@ -1333,8 +1333,8 @@ the specified axis through the specified angle.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1356,7 +1356,7 @@ the specified axis through the specified angle.</p>
 <span class="sig-name descname"><span class="pre">DatumPlaneByThreePoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L956-L986"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Feature object and a DatumPlane object defined by passing through
 three points.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>point1</strong></dt><dd><p>A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum object representing a datum point.</p>
@@ -1368,8 +1368,8 @@ three points.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1391,7 +1391,7 @@ three points.</p>
 <span class="sig-name descname"><span class="pre">DatumPlaneByTwoPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L1048-L1076"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPlaneByTwoPoint" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Feature object and a DatumPlane object midway between two points
 and normal to the line connecting the points.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>point1</strong></dt><dd><p>A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum object representing a datum point.</p>
@@ -1401,8 +1401,8 @@ and normal to the line connecting the points.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1434,7 +1434,7 @@ point.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A Feature object</p>
+<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A <a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -1452,10 +1452,10 @@ point.</p>
 <span class="sig-name descname"><span class="pre">DatumPointByEdgeParam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><span class="pre">Edge</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L1195-L1225"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPointByEdgeParam" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Feature object and a DatumPoint object along an edge at a selected
 distance from one end of the edge.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>edge</strong></dt><dd><p>An Edge object.</p>
+<dt><strong>edge</strong></dt><dd><p>An <a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><code class="xref py py-class docutils literal notranslate"><span class="pre">Edge</span></code></a> object.</p>
 </dd>
 <dt><strong>parameter</strong></dt><dd><p>A Float specifying the distance along <strong>edge</strong> to the DatumPoint object. Possible values
 are 0 &lt;&lt; <strong>parameter</strong> &lt;&lt; 1.</p>
@@ -1463,8 +1463,8 @@ are 0 &lt;&lt; <strong>parameter</strong> &lt;&lt; 1.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1497,7 +1497,7 @@ are 0 &lt;&lt; <strong>parameter</strong> &lt;&lt; 1.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A Feature object</p>
+<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A <a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -1526,7 +1526,7 @@ point by a vector.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A Feature object</p>
+<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A <a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -1544,7 +1544,7 @@ point by a vector.</p>
 <span class="sig-name descname"><span class="pre">DatumPointByOnFace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">face</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L1157-L1193"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPointByOnFace" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Feature object and a DatumPoint object on the specified face,
 offset from two edges.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>face</strong></dt><dd><p>A planar Face or a Datum object representing a datum plane.</p>
@@ -1560,8 +1560,8 @@ offset from two edges.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1583,7 +1583,7 @@ offset from two edges.</p>
 <span class="sig-name descname"><span class="pre">DatumPointByProjOnEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L1227-L1255"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Feature object and a DatumPoint object along an edge by projecting
 an existing point along the normal to the edge.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>point</strong></dt><dd><p>A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum object representing a datum point.</p>
@@ -1593,8 +1593,8 @@ an existing point along the normal to the edge.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1616,19 +1616,19 @@ an existing point along the normal to the edge.</p>
 <span class="sig-name descname"><span class="pre">DatumPointByProjOnFace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">face</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Face.Face" title="abaqus.BasicGeometry.Face.Face"><span class="pre">Face</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L1257-L1286"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPointByProjOnFace" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Feature object and a DatumPoint object on a specified face by
 projecting an existing point onto the face.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>point</strong></dt><dd><p>A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum object representing a datum point.</p>
 </dd>
-<dt><strong>face</strong></dt><dd><p>A Face object or a Datum object representing a datum plane.Note:Any other types of
+<dt><strong>face</strong></dt><dd><p>A <a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Face.Face" title="abaqus.BasicGeometry.Face.Face"><code class="xref py py-class docutils literal notranslate"><span class="pre">Face</span></code></a> object or a Datum object representing a datum plane.Note:Any other types of
 planes are not supported.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1648,9 +1648,9 @@ planes are not supported.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.MakeSketchTransform">
 <span class="sig-name descname"><span class="pre">MakeSketchTransform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sketchPlane</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchOrientation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'RIGHT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchPlaneSide</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SIDE1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchUpEdge</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L1288-L1335"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.MakeSketchTransform" title="Permalink to this definition">#</a></dt>
-<dd><p>This method creates a Transform object. A Transform object is a 4x3 matrix of Floats
+<dd><p>This method creates a Transform object. A <a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Transform.Transform" title="abaqus.BasicGeometry.Transform.Transform"><code class="xref py py-class docutils literal notranslate"><span class="pre">Transform</span></code></a> object is a 4x3 matrix of Floats
 that represents the transformation from sketch coordinates to part coordinates.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>sketchPlane</strong></dt><dd><p>A Datum plane object or a planar Face object specifying the sketch plane.</p>
@@ -1670,8 +1670,8 @@ the sketch is assumed to be oriented with the <strong>Y</strong>-direction point
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Transform</span></code> object. <code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Transform</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">an</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">with</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">one</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">method</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">that</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">returns</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Transform.Transform" title="abaqus.BasicGeometry.Transform.Transform"><code class="xref py py-class docutils literal notranslate"><span class="pre">Transform</span></code></a> object. <code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Transform</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">an</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">with</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">one</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">method</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">that</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">returns</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></span></dt><dd></dd>
 <dt>matrix.</dt><dd></dd>
 </dl>
 </dd>
@@ -1694,18 +1694,18 @@ the sketch is assumed to be oriented with the <strong>Y</strong>-direction point
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane">
 <span class="sig-name descname"><span class="pre">PartitionCellByDatumPlane</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Cell.Cell" title="abaqus.BasicGeometry.Cell.Cell"><span class="pre">Cell</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datumPlane</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="datum.html#abaqus.Datum.DatumPlane.DatumPlane" title="abaqus.Datum.DatumPlane.DatumPlane"><span class="pre">DatumPlane</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L1337-L1364"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane" title="Permalink to this definition">#</a></dt>
 <dd><p>This method partitions one or more cells using the given datum plane.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>cells</strong></dt><dd><p>A sequence of Cell objects specifying the cells to partition.</p>
 </dd>
-<dt><strong>datumPlane</strong></dt><dd><p>A DatumPlane object.</p>
+<dt><strong>datumPlane</strong></dt><dd><p>A <a class="reference internal" href="datum.html#abaqus.Datum.DatumPlane.DatumPlane" title="abaqus.Datum.DatumPlane.DatumPlane"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatumPlane</span></code></a> object.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1727,7 +1727,7 @@ the sketch is assumed to be oriented with the <strong>Y</strong>-direction point
 <span class="sig-name descname"><span class="pre">PartitionCellByExtendFace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Cell.Cell" title="abaqus.BasicGeometry.Cell.Cell"><span class="pre">Cell</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extendFace</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L1366-L1394"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByExtendFace" title="Permalink to this definition">#</a></dt>
 <dd><p>This method partitions one or more cells by extending the underlying geometry of a given
 face to partition the target cells.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>cells</strong></dt><dd><p>A sequence of Cell objects specifying the cells to partition.</p>
@@ -1737,8 +1737,8 @@ face to partition the target cells.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1760,7 +1760,7 @@ face to partition the target cells.</p>
 <span class="sig-name descname"><span class="pre">PartitionCellByExtrudeEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Cell.Cell" title="abaqus.BasicGeometry.Cell.Cell"><span class="pre">Cell</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sense</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L1396-L1434"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge" title="Permalink to this definition">#</a></dt>
 <dd><p>This method partitions one or more cells by extruding selected edges in the given
 direction.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>cells</strong></dt><dd><p>A sequence of Cell objects specifying the cells to partition.</p>
@@ -1778,8 +1778,8 @@ FORWARD and REVERSE. If <strong>sense</strong> = FORWARD, the extrusion is in th
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1801,10 +1801,10 @@ FORWARD and REVERSE. If <strong>sense</strong> = FORWARD, the extrusion is in th
 <span class="sig-name descname"><span class="pre">PartitionCellByPatchNCorners</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cell</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Cell.Cell" title="abaqus.BasicGeometry.Cell.Cell"><span class="pre">Cell</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">cornerPoints</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L1436-L1465"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners" title="Permalink to this definition">#</a></dt>
 <dd><p>This method partitions a cell using an N-sided cutting patch defined by the given corner
 points.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>cell</strong></dt><dd><p>A Cell object specifying the cell to partition.</p>
+<dt><strong>cell</strong></dt><dd><p>A <a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Cell.Cell" title="abaqus.BasicGeometry.Cell.Cell"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cell</span></code></a> object specifying the cell to partition.</p>
 </dd>
 <dt><strong>cornerPoints</strong></dt><dd><p>A sequence of ConstrainedSketchVertex, InterestingPoint, or DatumPoint objects. 3 ≤≤ len(<em>cornerPoints</em>)
 ≤≤ 5. The corner points must not coincide.</p>
@@ -1812,8 +1812,8 @@ points.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1834,7 +1834,7 @@ points.</p>
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges">
 <span class="sig-name descname"><span class="pre">PartitionCellByPatchNEdges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cell</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><span class="pre">Edge</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L1467-L1495"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges" title="Permalink to this definition">#</a></dt>
 <dd><p>This method partitions a cell using an N-sided cutting patch defined by the given edges.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>cell</strong></dt><dd><p>A Cell specifying the cell to partition.</p>
@@ -1845,8 +1845,8 @@ Edge objects must belong to the same PartInstance object as <strong>cell</strong
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1868,20 +1868,20 @@ Edge objects must belong to the same PartInstance object as <strong>cell</strong
 <span class="sig-name descname"><span class="pre">PartitionCellByPlaneNormalToEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Cell.Cell" title="abaqus.BasicGeometry.Cell.Cell"><span class="pre">Cell</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><span class="pre">Edge</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L1497-L1529"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge" title="Permalink to this definition">#</a></dt>
 <dd><p>This method partitions one or more cells using a plane normal to an edge at the given
 edge point.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>cells</strong></dt><dd><p>A sequence of Cell objects specifying the cells to partition.</p>
 </dd>
-<dt><strong>edge</strong></dt><dd><p>An Edge object specifying the normal to the plane.</p>
+<dt><strong>edge</strong></dt><dd><p>An <a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><code class="xref py py-class docutils literal notranslate"><span class="pre">Edge</span></code></a> object specifying the normal to the plane.</p>
 </dd>
 <dt><strong>point</strong></dt><dd><p>A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object specifying a point on <strong>edge</strong>.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1903,7 +1903,7 @@ edge point.</p>
 <span class="sig-name descname"><span class="pre">PartitionCellByPlanePointNormal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Cell.Cell" title="abaqus.BasicGeometry.Cell.Cell"><span class="pre">Cell</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normal</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L1531-L1563"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal" title="Permalink to this definition">#</a></dt>
 <dd><p>This method partitions one or more cells using a plane defined by a point and a normal
 direction.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>cells</strong></dt><dd><p>A sequence of Cell objects specifying the cells to partition.</p>
@@ -1915,8 +1915,8 @@ direction.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1937,7 +1937,7 @@ direction.</p>
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints">
 <span class="sig-name descname"><span class="pre">PartitionCellByPlaneThreePoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Cell.Cell" title="abaqus.BasicGeometry.Cell.Cell"><span class="pre">Cell</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L1565-L1599"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints" title="Permalink to this definition">#</a></dt>
 <dd><p>This method partitions one or more cells using a plane defined by three points.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>cells</strong></dt><dd><p>A sequence of Cell objects specifying the cells to partition.</p>
@@ -1952,8 +1952,8 @@ plane.Note:<em>point1</em>, <strong>point2</strong>, and <strong>point3</strong>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1975,7 +1975,7 @@ plane.Note:<em>point1</em>, <strong>point2</strong>, and <strong>point3</strong>
 <span class="sig-name descname"><span class="pre">PartitionCellBySweepEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Cell.Cell" title="abaqus.BasicGeometry.Cell.Cell"><span class="pre">Cell</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><span class="pre">Edge</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sweepPath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><span class="pre">Edge</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L1601-L1636"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge" title="Permalink to this definition">#</a></dt>
 <dd><p>This method partitions one or more cells by sweeping selected edges along the given
 sweep path.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>cells</strong></dt><dd><p>A sequence of Cell objects specifying the cells to partition.</p>
@@ -1984,14 +1984,14 @@ sweep path.</p>
 must form a continuous chain without branches. The Edge objects must all belong to the
 same PartInstance object.</p>
 </dd>
-<dt><strong>sweepPath</strong></dt><dd><p>An Edge object specifying the sweep path. The start of <strong>sweepPath</strong> must be in the plane
+<dt><strong>sweepPath</strong></dt><dd><p>An <a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><code class="xref py py-class docutils literal notranslate"><span class="pre">Edge</span></code></a> object specifying the sweep path. The start of <strong>sweepPath</strong> must be in the plane
 and perpendicular to the plane formed by <strong>edges</strong>. The sweep path must be planar.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -2012,18 +2012,18 @@ and perpendicular to the plane formed by <strong>edges</strong>. The sweep path 
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane">
 <span class="sig-name descname"><span class="pre">PartitionEdgeByDatumPlane</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edges</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><span class="pre">Edge</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datumPlane</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="datum.html#abaqus.Datum.DatumPlane.DatumPlane" title="abaqus.Datum.DatumPlane.DatumPlane"><span class="pre">DatumPlane</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L1638-L1665"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane" title="Permalink to this definition">#</a></dt>
 <dd><p>This method partitions an edge where it intersects with a datum plane.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>edges</strong></dt><dd><p>A sequence of Edge objects specifying the edges to partition.</p>
 </dd>
-<dt><strong>datumPlane</strong></dt><dd><p>A DatumPlane object specifying the location of the partition.</p>
+<dt><strong>datumPlane</strong></dt><dd><p>A <a class="reference internal" href="datum.html#abaqus.Datum.DatumPlane.DatumPlane" title="abaqus.Datum.DatumPlane.DatumPlane"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatumPlane</span></code></a> object specifying the location of the partition.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -2044,7 +2044,7 @@ and perpendicular to the plane formed by <strong>edges</strong>. The sweep path 
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionEdgeByParam">
 <span class="sig-name descname"><span class="pre">PartitionEdgeByParam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edges</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><span class="pre">Edge</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L1667-L1695"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionEdgeByParam" title="Permalink to this definition">#</a></dt>
 <dd><p>This method partitions one or more edges at the given normalized edge parameter.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>edges</strong></dt><dd><p>A sequence of Edge objects specifying the edges to partition.</p>
@@ -2055,8 +2055,8 @@ values are 0.0 &lt;&lt; <strong>parameter</strong> &lt;&lt; 1.0.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -2077,18 +2077,18 @@ values are 0.0 &lt;&lt; <strong>parameter</strong> &lt;&lt; 1.0.</p>
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionEdgeByPoint">
 <span class="sig-name descname"><span class="pre">PartitionEdgeByPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><span class="pre">Edge</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L1697-L1724"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionEdgeByPoint" title="Permalink to this definition">#</a></dt>
 <dd><p>This method partitions an edge at the given point.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>edge</strong></dt><dd><p>An Edge object specifying the edge to partition.</p>
+<dt><strong>edge</strong></dt><dd><p>An <a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><code class="xref py py-class docutils literal notranslate"><span class="pre">Edge</span></code></a> object specifying the edge to partition.</p>
 </dd>
 <dt><strong>point</strong></dt><dd><p>An InterestingPoint or DatumPoint object specifying a point on <strong>edge</strong>.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -2113,13 +2113,13 @@ meshed using a structured meshing technique.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>face</strong></dt><dd><p>A Face object specifying the face to partition.</p>
+<dt><strong>face</strong></dt><dd><p>A <a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Face.Face" title="abaqus.BasicGeometry.Face.Face"><code class="xref py py-class docutils literal notranslate"><span class="pre">Face</span></code></a> object specifying the face to partition.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A Feature object</p>
+<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A <a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -2137,17 +2137,17 @@ meshed using a structured meshing technique.</p>
 <span class="sig-name descname"><span class="pre">PartitionFaceByCurvedPathEdgeParams</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">face</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Face.Face" title="abaqus.BasicGeometry.Face.Face"><span class="pre">Face</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><span class="pre">Edge</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><span class="pre">Edge</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L1751-L1789"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams" title="Permalink to this definition">#</a></dt>
 <dd><p>This method partitions a face normal to two edges, using a curved path between the two
 given edge points defined by the normalized edge parameters.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>face</strong></dt><dd><p>A Face object specifying the face to partition.</p>
+<dt><strong>face</strong></dt><dd><p>A <a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Face.Face" title="abaqus.BasicGeometry.Face.Face"><code class="xref py py-class docutils literal notranslate"><span class="pre">Face</span></code></a> object specifying the face to partition.</p>
 </dd>
-<dt><strong>edge1</strong></dt><dd><p>An Edge object specifying the start of the partition. The edge must belong to <strong>face</strong>.</p>
+<dt><strong>edge1</strong></dt><dd><p>An <a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><code class="xref py py-class docutils literal notranslate"><span class="pre">Edge</span></code></a> object specifying the start of the partition. The edge must belong to <strong>face</strong>.</p>
 </dd>
 <dt><strong>parameter1</strong></dt><dd><p>A Float specifying the distance along <strong>edge1</strong> at which to partition. Possible values are
 0.0 ≤≤ <strong>distance1</strong> ≤≤ 1.0.</p>
 </dd>
-<dt><strong>edge2</strong></dt><dd><p>An Edge object specifying the end of the partition. The edge must belong to <strong>face</strong>.</p>
+<dt><strong>edge2</strong></dt><dd><p>An <a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><code class="xref py py-class docutils literal notranslate"><span class="pre">Edge</span></code></a> object specifying the end of the partition. The edge must belong to <strong>face</strong>.</p>
 </dd>
 <dt><strong>parameter2</strong></dt><dd><p>A Float specifying the distance along <strong>edge2</strong> at which to partition. Possible values are
 0.0 ≤≤ <strong>distance2</strong> ≤≤ 1.0.</p>
@@ -2155,8 +2155,8 @@ given edge points defined by the normalized edge parameters.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -2178,24 +2178,24 @@ given edge points defined by the normalized edge parameters.</p>
 <span class="sig-name descname"><span class="pre">PartitionFaceByCurvedPathEdgePoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">face</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Face.Face" title="abaqus.BasicGeometry.Face.Face"><span class="pre">Face</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><span class="pre">Edge</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">point1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><span class="pre">Edge</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L1791-L1827"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints" title="Permalink to this definition">#</a></dt>
 <dd><p>This method partitions a face normal to two edges, using a curved path between the two
 given edge points.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>face</strong></dt><dd><p>A Face object specifying the face to partition.</p>
+<dt><strong>face</strong></dt><dd><p>A <a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Face.Face" title="abaqus.BasicGeometry.Face.Face"><code class="xref py py-class docutils literal notranslate"><span class="pre">Face</span></code></a> object specifying the face to partition.</p>
 </dd>
-<dt><strong>edge1</strong></dt><dd><p>An Edge object specifying the start of the partition. The edge must belong to <strong>face</strong>.</p>
+<dt><strong>edge1</strong></dt><dd><p>An <a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><code class="xref py py-class docutils literal notranslate"><span class="pre">Edge</span></code></a> object specifying the start of the partition. The edge must belong to <strong>face</strong>.</p>
 </dd>
 <dt><strong>point1</strong></dt><dd><p>A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object specifying a point on <strong>edge1</strong>.</p>
 </dd>
-<dt><strong>edge2</strong></dt><dd><p>An Edge object specifying the end of the partition. The edge must belong to <strong>face</strong>.</p>
+<dt><strong>edge2</strong></dt><dd><p>An <a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><code class="xref py py-class docutils literal notranslate"><span class="pre">Edge</span></code></a> object specifying the end of the partition. The edge must belong to <strong>face</strong>.</p>
 </dd>
 <dt><strong>point2</strong></dt><dd><p>A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object specifying a point on <strong>edge2</strong>.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -2221,13 +2221,13 @@ given edge points.</p>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>faces</strong></dt><dd><p>A sequence of Face objects specifying the faces to partition.</p>
 </dd>
-<dt><strong>datumPlane</strong></dt><dd><p>A DatumPlane object specifying the location of the partition.</p>
+<dt><strong>datumPlane</strong></dt><dd><p>A <a class="reference internal" href="datum.html#abaqus.Datum.DatumPlane.DatumPlane" title="abaqus.Datum.DatumPlane.DatumPlane"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatumPlane</span></code></a> object specifying the location of the partition.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A Feature object</p>
+<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A <a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -2250,14 +2250,14 @@ given face to partition the target faces.</p>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>faces</strong></dt><dd><p>A sequence of Face objects specifying the faces to partition.</p>
 </dd>
-<dt><strong>extendFace</strong></dt><dd><p>A Face object that is to be extended to create the partition. The face to extend can be
+<dt><strong>extendFace</strong></dt><dd><p>A <a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Face.Face" title="abaqus.BasicGeometry.Face.Face"><code class="xref py py-class docutils literal notranslate"><span class="pre">Face</span></code></a> object that is to be extended to create the partition. The face to extend can be
 a planar, cylindrical, conical, or spherical face.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A Feature object</p>
+<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A <a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -2286,7 +2286,7 @@ target faces.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A Feature object</p>
+<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A <a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -2319,7 +2319,7 @@ direction before partitioning the target faces. The default value is False.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A Feature object</p>
+<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A <a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -2337,7 +2337,7 @@ direction before partitioning the target faces. The default value is False.</p>
 <span class="sig-name descname"><span class="pre">PartitionFaceByShortestPath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Face.Face" title="abaqus.BasicGeometry.Face.Face"><span class="pre">Face</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L1945-L1977"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath" title="Permalink to this definition">#</a></dt>
 <dd><p>This method partitions one or more faces using a minimum distance path between the two
 given points.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>faces</strong></dt><dd><p>A sequence of Face objects specifying the face to partition.</p>
@@ -2351,8 +2351,8 @@ the target faces.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -2373,12 +2373,12 @@ the target faces.</p>
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionFaceBySketch">
 <span class="sig-name descname"><span class="pre">PartitionFaceBySketch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Face.Face" title="abaqus.BasicGeometry.Face.Face"><span class="pre">Face</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketch</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../sketcher.html#abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch" title="abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch"><span class="pre">ConstrainedSketch</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchUpEdge</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchOrientation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'RIGHT'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L1979-L2019"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceBySketch" title="Permalink to this definition">#</a></dt>
 <dd><p>This method partitions one or more planar faces by sketching on them.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>faces</strong></dt><dd><p>A sequence of Face objects specifying the faces to partition.</p>
 </dd>
-<dt><strong>sketch</strong></dt><dd><p>A ConstrainedSketch object specifying the partition.</p>
+<dt><strong>sketch</strong></dt><dd><p>A <a class="reference internal" href="../sketcher.html#abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch" title="abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketch</span></code></a> object specifying the partition.</p>
 </dd>
 <dt><strong>sketchUpEdge</strong></dt><dd><p>An Edge or DatumAxis object specifying the orientation of <strong>sketch</strong>. This edge or datum
 axis must not be orthogonal to the plane defined by <strong>faces</strong>. If unspecified, <strong>sketch</strong> is
@@ -2390,8 +2390,8 @@ values are RIGHT, LEFT, TOP, and BOTTOM. The default value is RIGHT.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -2413,7 +2413,7 @@ values are RIGHT, LEFT, TOP, and BOTTOM. The default value is RIGHT.</p>
 <span class="sig-name descname"><span class="pre">PartitionFaceBySketchDistance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Face.Face" title="abaqus.BasicGeometry.Face.Face"><span class="pre">Face</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchPlane</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchPlaneSide</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchUpEdge</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><span class="pre">Edge</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketch</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../sketcher.html#abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch" title="abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch"><span class="pre">ConstrainedSketch</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">distance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchOrientation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'RIGHT'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L2021-L2071"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance" title="Permalink to this definition">#</a></dt>
 <dd><p>This method partitions one or more faces by sketching on a sketch plane and then
 projecting the sketch toward the target faces through the given distance.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>faces</strong></dt><dd><p>A sequence of Face objects specifying the faces to partition.</p>
@@ -2423,10 +2423,10 @@ projecting the sketch toward the target faces through the given distance.</p>
 <dt><strong>sketchPlaneSide</strong></dt><dd><p>A SymbolicConstant specifying the side of the plane to be used for sketching. Possible
 values are SIDE1 and SIDE2.</p>
 </dd>
-<dt><strong>sketchUpEdge</strong></dt><dd><p>An Edge object specifying the orientation of <strong>sketch</strong>. This edge must not be orthogonal
+<dt><strong>sketchUpEdge</strong></dt><dd><p>An <a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><code class="xref py py-class docutils literal notranslate"><span class="pre">Edge</span></code></a> object specifying the orientation of <strong>sketch</strong>. This edge must not be orthogonal
 to <strong>sketchPlane</strong>.</p>
 </dd>
-<dt><strong>sketch</strong></dt><dd><p>A ConstrainedSketch object specifying the partition.</p>
+<dt><strong>sketch</strong></dt><dd><p>A <a class="reference internal" href="../sketcher.html#abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch" title="abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketch</span></code></a> object specifying the partition.</p>
 </dd>
 <dt><strong>distance</strong></dt><dd><p>A Float specifying the projection distance. Possible values are <strong>distance</strong> &gt;&gt; 0.0.</p>
 </dd>
@@ -2436,8 +2436,8 @@ values are RIGHT, LEFT, TOP, and BOTTOM. The default value is RIGHT.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -2460,17 +2460,17 @@ values are RIGHT, LEFT, TOP, and BOTTOM. The default value is RIGHT.</p>
 <dd><p>This method partitions one or more faces by sketching on a sketch plane and then
 projecting the sketch toward the target faces through a distance governed by the
 reference point.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>faces</strong></dt><dd><p>A sequence of Face objects specifying the faces to partition.</p>
 </dd>
 <dt><strong>sketchPlane</strong></dt><dd><p>A planar Face or DatumPlane object.</p>
 </dd>
-<dt><strong>sketchUpEdge</strong></dt><dd><p>An Edge object or a DatumAxis object specifying the orientation of <strong>sketch</strong>. This edge
+<dt><strong>sketchUpEdge</strong></dt><dd><p>An <a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><code class="xref py py-class docutils literal notranslate"><span class="pre">Edge</span></code></a> object or a DatumAxis object specifying the orientation of <strong>sketch</strong>. This edge
 or datum axis must not be orthogonal to <strong>sketchPlane</strong>.</p>
 </dd>
-<dt><strong>sketch</strong></dt><dd><p>A ConstrainedSketch object specifying the partition.</p>
+<dt><strong>sketch</strong></dt><dd><p>A <a class="reference internal" href="../sketcher.html#abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch" title="abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketch</span></code></a> object specifying the partition.</p>
 </dd>
 <dt><strong>point</strong></dt><dd><p>A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object specifying the distance to project
 <strong>sketch</strong>. The point must not lie on <strong>sketchPlane</strong>.</p>
@@ -2481,8 +2481,8 @@ values are RIGHT, LEFT, TOP, and BOTTOM. The default value is RIGHT.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -2504,7 +2504,7 @@ values are RIGHT, LEFT, TOP, and BOTTOM. The default value is RIGHT.</p>
 <span class="sig-name descname"><span class="pre">PartitionFaceBySketchThruAll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Face.Face" title="abaqus.BasicGeometry.Face.Face"><span class="pre">Face</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchPlane</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchPlaneSide</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchUpEdge</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketch</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../sketcher.html#abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch" title="abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch"><span class="pre">ConstrainedSketch</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchOrientation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'RIGHT'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Feature/Feature.py#L2123-L2170"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll" title="Permalink to this definition">#</a></dt>
 <dd><p>This method partitions one or more faces by sketching on a sketch plane and then
 projecting toward the target faces through an infinite distance.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>faces</strong></dt><dd><p>A sequence of Face objects specifying the faces to partition.</p>
@@ -2517,7 +2517,7 @@ SIDE1 and SIDE2.</p>
 <dt><strong>sketchUpEdge</strong></dt><dd><p>An Edge or a DatumAxis object specifying the orientation of <strong>sketch</strong>. This edge or datum
 axis must not be orthogonal to <strong>sketchPlane</strong>.</p>
 </dd>
-<dt><strong>sketch</strong></dt><dd><p>A ConstrainedSketch object specifying the partition.</p>
+<dt><strong>sketch</strong></dt><dd><p>A <a class="reference internal" href="../sketcher.html#abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch" title="abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketch</span></code></a> object specifying the partition.</p>
 </dd>
 <dt><strong>sketchOrientation</strong></dt><dd><p>A SymbolicConstant specifying the orientation of <strong>sketchUpEdge</strong> on the sketch. Possible
 values are RIGHT, LEFT, TOP, and BOTTOM. The default value is RIGHT.</p>
@@ -2525,8 +2525,8 @@ values are RIGHT, LEFT, TOP, and BOTTOM. The default value is RIGHT.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -2561,7 +2561,7 @@ location.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A Feature object</p>
+<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A <a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -2588,7 +2588,7 @@ not a wire edge will not be removed.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A Feature object</p>
+<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A <a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -2637,7 +2637,7 @@ The default value is ON.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A Feature object</p>
+<dt>feature: <a class="reference internal" href="#abaqus.Feature.Feature.Feature" title="abaqus.Feature.Feature.Feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code></a></dt><dd><p>A <a class="reference internal" href="../assembly.html#abaqus.Assembly.Feature.Feature" title="abaqus.Assembly.Feature.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -2699,7 +2699,7 @@ with the PartitionFaceByCurvedPathEdgeParam method.</p>
 0.0 ≤≤ <strong>parameter2</strong> ≤≤ 1.0. You use this argument to modify a partition object created
 with the PartitionFaceByCurvedPathEdgeParam method.</p>
 </dd>
-<dt><strong>sketch</strong></dt><dd><p>A ConstrainedSketch object specifying the partition. You use this argument to modify a
+<dt><strong>sketch</strong></dt><dd><p>A <a class="reference internal" href="../sketcher.html#abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch" title="abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketch</span></code></a> object specifying the partition. You use this argument to modify a
 partition object created with a sketch; for example, using the PartitionFaceBySketch
 method.</p>
 </dd>

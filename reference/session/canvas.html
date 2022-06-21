@@ -329,7 +329,7 @@
 <dt class="sig sig-object py" id="abaqus.Canvas.Viewport.Viewport.Layer">
 <span class="sig-name descname"><span class="pre">Layer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyViewName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Canvas.Layer.Layer" title="abaqus.Canvas.Layer.Layer"><span class="pre">Layer</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Viewport.py#L6-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Viewport.Viewport.Layer" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Layer object in the Layer repository.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
@@ -339,8 +339,8 @@
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Canvas.Viewport.Viewport.Layer" title="abaqus.Canvas.Viewport.Viewport.Layer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Layer</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.Canvas.Layer.Layer" title="abaqus.Canvas.Layer.Layer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Layer</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -390,7 +390,7 @@ Viewport object, see Viewport object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>annotation</strong></dt><dd><p>An Annotation object to plot.</p>
+<dt><strong>annotation</strong></dt><dd><p>An <a class="reference internal" href="../mdb/annotation.html#abaqus.Annotation.Annotation.Annotation" title="abaqus.Annotation.Annotation.Annotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">Annotation</span></code></a> object to plot.</p>
 </dd>
 <dt><strong>index</strong></dt><dd><p>An Int specifying the index of the Annotation object in the sequence of annotations to
 plot. The default value is zero.</p>
@@ -1353,7 +1353,7 @@ setValues method has the following arguments:</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>displayedObject</strong></dt><dd><p>A Displayable object specifying the object to be displayed. The Displayable type is an
+<dt><strong>displayedObject</strong></dt><dd><p>A <a class="reference internal" href="#abaqus.Canvas.Displayable.Displayable" title="abaqus.Canvas.Displayable.Displayable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Displayable</span></code></a> object specifying the object to be displayed. The Displayable type is an
 abstract generalization. The concrete possible types are Part, Assembly,
 ConstrainedSketch, Odb, PlyStackPlot, or XYPlot. If <strong>displayedObject</strong> = None, Abaqus
 displays an empty viewport.</p>

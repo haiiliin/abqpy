@@ -488,7 +488,7 @@ coordinate directions when <strong>coordinateScale=ON</strong>. The default valu
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl>
-<dt><strong>options</strong></dt><dd><p>A CommonOptions object from which values are to be copied. If other arguments are also
+<dt><strong>options</strong></dt><dd><p>A <a class="reference internal" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions" title="abaqus.OdbDisplay.CommonOptions.CommonOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommonOptions</span></code></a> object from which values are to be copied. If other arguments are also
 supplied to setValues, they will override the values in <strong>options</strong>. The default value is
 None.</p>
 </dd>
@@ -800,7 +800,7 @@ default is ((SOLID, VERY_THIN), ).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>options</strong></dt><dd><p>A ContourOptions object from which values are to be copied. If other arguments are also
+<dt><strong>options</strong></dt><dd><p>A <a class="reference internal" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions" title="abaqus.OdbDisplay.ContourOptions.ContourOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ContourOptions</span></code></a> object from which values are to be copied. If other arguments are also
 supplied to setValues, they will override the values in <strong>options</strong>. The default value is
 None.</p>
 </dd>
@@ -1062,7 +1062,7 @@ coordinate directions when <strong>coordinateScale=ON</strong>. The default valu
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>options</strong></dt><dd><p>A DisplayBodyOptions object from which values are to be copied. If other arguments are
+<dt><strong>options</strong></dt><dd><p>A <a class="reference internal" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions" title="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisplayBodyOptions</span></code></a> object from which values are to be copied. If other arguments are
 also supplied to setValues, they will override the values in <strong>options</strong>. The default
 value is None.</p>
 </dd>
@@ -1405,7 +1405,7 @@ frame. This sequence is read-only.</p>
 <dt class="sig sig-object py" id="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut">
 <span class="sig-name descname"><span class="pre">ViewCut</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normal</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csysName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cylinderAxis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">followDeformation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overrideAveraging</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenceFrame</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'FIRST_FRAME'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.OdbDisplay.ViewCut.ViewCut" title="abaqus.OdbDisplay.ViewCut.ViewCut"><span class="pre">ViewCut</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/OdbDisplay/OdbDisplay.py#L711-L796"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a ViewCut object.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
@@ -1453,8 +1453,8 @@ default value is FIRST_FRAME.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ViewCut</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.OdbDisplay.ViewCut.ViewCut" title="abaqus.OdbDisplay.ViewCut.ViewCut"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewCut</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1822,7 +1822,7 @@ value is “Red”.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>options</strong></dt><dd><p>An OrientationOptions object from which values are to be copied. If other arguments are
+<dt><strong>options</strong></dt><dd><p>An <a class="reference internal" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions" title="abaqus.OdbDisplay.OrientationOptions.OrientationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrientationOptions</span></code></a> object from which values are to be copied. If other arguments are
 also supplied to setValues, they will override the values in <strong>options</strong>. The default
 value is None.</p>
 </dd>
@@ -2041,7 +2041,7 @@ coordinate directions when <strong>coordinateScale=ON</strong>. The default valu
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>options</strong></dt><dd><p>A SuperimposeOptions object from which values are to be copied. If other arguments are
+<dt><strong>options</strong></dt><dd><p>A <a class="reference internal" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions" title="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">SuperimposeOptions</span></code></a> object from which values are to be copied. If other arguments are
 also supplied to setValues, they will override the values in <strong>options</strong>. The default
 value is None.</p>
 </dd>
@@ -2342,7 +2342,7 @@ value is “Red”.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>options</strong></dt><dd><p>A SymbolOptions object from which values are to be copied. If other arguments are also
+<dt><strong>options</strong></dt><dd><p>A <a class="reference internal" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions" title="abaqus.OdbDisplay.SymbolOptions.SymbolOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolOptions</span></code></a> object from which values are to be copied. If other arguments are also
 supplied to setValues, they will override the values in <strong>options</strong>. The default value is
 None.</p>
 </dd>

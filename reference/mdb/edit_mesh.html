@@ -311,7 +311,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MeshEditAssembly</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EditMesh/MeshEditAssembly.py#L11-L288"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly" title="Permalink to this definition">#</a></dt>
-<dd><p>An Assembly object is a container for instances of parts. The Assembly object has no
+<dd><p>An <code class="xref py py-class docutils literal notranslate"><span class="pre">Assembly</span></code> object is a container for instances of parts. The Assembly object has no
 constructor command. Abaqus creates the <strong>rootAssembly</strong> member when a Model object is
 created.</p>
 <p class="rubric">Notes</p>
@@ -460,7 +460,7 @@ specified nodes.</p>
 <dt><strong>offset3</strong></dt><dd><p>A Float specifying an offset to apply to the value of the third coordinate of the
 specified nodes.</p>
 </dd>
-<dt><strong>localCsys</strong></dt><dd><p>A DatumCsys object specifying the local coordinate system. If unspecified, the global
+<dt><strong>localCsys</strong></dt><dd><p>A <a class="reference internal" href="model/part_assembly/datum.html#abaqus.Datum.DatumCsys.DatumCsys" title="abaqus.Datum.DatumCsys.DatumCsys"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatumCsys</span></code></a> object specifying the local coordinate system. If unspecified, the global
 coordinate system will be used.</p>
 </dd>
 <dt><strong>projectToGeometry</strong></dt><dd><p>A Boolean specifying whether to project nodes back to their original geometry. For
@@ -485,7 +485,7 @@ layers of elements that propagate out normal to the surface boundary.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>region</strong></dt><dd><p>A Region object specifying the domain to be offset.</p>
+<dt><strong>region</strong></dt><dd><p>A <a class="reference internal" href="model/part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the domain to be offset.</p>
 </dd>
 <dt><strong>meshType</strong></dt><dd><p>A Symbolic Constant specifying the type of mesh to be generated. Possible values are
 SOLID or SHELL.</p>
@@ -891,7 +891,7 @@ specified nodes.</p>
 <dt><strong>offset3</strong></dt><dd><p>A Float specifying an offset to apply to the value of the third coordinate of the
 specified nodes.</p>
 </dd>
-<dt><strong>localCsys</strong></dt><dd><p>A DatumCsys object specifying the local coordinate system. If unspecified, the global
+<dt><strong>localCsys</strong></dt><dd><p>A <a class="reference internal" href="model/part_assembly/datum.html#abaqus.Datum.DatumCsys.DatumCsys" title="abaqus.Datum.DatumCsys.DatumCsys"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatumCsys</span></code></a> object specifying the local coordinate system. If unspecified, the global
 coordinate system will be used.</p>
 </dd>
 <dt><strong>projectToGeometry</strong></dt><dd><p>A Boolean specifying whether to project nodes back to their original geometry. For
@@ -933,7 +933,7 @@ layers of elements that propagate out normal to the surface boundary.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>region</strong></dt><dd><p>A Region object specifying the domain to be offset.</p>
+<dt><strong>region</strong></dt><dd><p>A <a class="reference internal" href="model/part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the domain to be offset.</p>
 </dd>
 <dt><strong>meshType</strong></dt><dd><p>A Symbolic Constant specifying the type of mesh to be generated. Possible values are
 SOLID or SHELL.</p>
@@ -999,7 +999,7 @@ containing the elements to be included in the merge operation.</p>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>pickedElements</strong></dt><dd><p>A sequence of MeshElement objects specifying the elements to orient.</p>
 </dd>
-<dt><strong>referenceRegion</strong></dt><dd><p>A MeshFace object specifying a reference top face that indicates the desired
+<dt><strong>referenceRegion</strong></dt><dd><p>A <a class="reference internal" href="model/mesh.html#abaqus.Mesh.MeshFace.MeshFace" title="abaqus.Mesh.MeshFace.MeshFace"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshFace</span></code></a> object specifying a reference top face that indicates the desired
 orientation.</p>
 </dd>
 </dl>
@@ -1181,12 +1181,12 @@ direction of the subdivision. If <strong>face</strong> or <strong>edge</strong> 
 subdivided according to this number in all possible directions. Must be greater than
 one. Default is 2.</p>
 </dd>
-<dt><strong>face</strong></dt><dd><p>A MeshFace object that serves as a reference for indicating two topological directions
+<dt><strong>face</strong></dt><dd><p>A <a class="reference internal" href="model/mesh.html#abaqus.Mesh.MeshFace.MeshFace" title="abaqus.Mesh.MeshFace.MeshFace"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshFace</span></code></a> object that serves as a reference for indicating two topological directions
 for the subdivision operation. Must be a face of one of the specified elements, and all
 specified elements must be reachable by topological navigation from this element face.
 May not be combined with <strong>edge</strong>.</p>
 </dd>
-<dt><strong>edge</strong></dt><dd><p>A MeshEdge object that serves as a reference for indicating a single topological
+<dt><strong>edge</strong></dt><dd><p>A <a class="reference internal" href="model/mesh.html#abaqus.Mesh.MeshEdge.MeshEdge" title="abaqus.Mesh.MeshEdge.MeshEdge"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshEdge</span></code></a> object that serves as a reference for indicating a single topological
 direction for the subdivision operation. Must be an edge of one of the specified
 elements, and all specified elements must be reachable by topological navigation from
 this element edge. May not be combined with <strong>face</strong>.</p>

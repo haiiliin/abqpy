@@ -309,7 +309,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TableCollectionAssembly</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/TableCollection/TableCollectionAssembly.py#L7-L76"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly" title="Permalink to this definition">#</a></dt>
-<dd><p>An Assembly object is a container for instances of parts. The Assembly object has no
+<dd><p>An <code class="xref py py-class docutils literal notranslate"><span class="pre">Assembly</span></code> object is a container for instances of parts. The Assembly object has no
 constructor command. Abaqus creates the <strong>rootAssembly</strong> member when a Model object is
 created.</p>
 <p class="rubric">Notes</p>
@@ -337,12 +337,12 @@ created.</p>
 <span class="sig-name descname"><span class="pre">ElementProgressiveActivation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mdb/model/part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">deformation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">freeSurfaceType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NONE'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation" title="abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation"><span class="pre">ElementProgressiveActivation</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/TableCollection/TableCollectionAssembly.py#L26-L76"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ElementProgressiveActivation" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates an ElementProgressiveActivation object and places it in the
 elementProgressiveActivation repository.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>name</strong></dt><dd><p>A String specifying the key of the repository.</p>
 </dd>
-<dt><strong>elset</strong></dt><dd><p>A Region object specifying the region containing the elements that will be activated
+<dt><strong>elset</strong></dt><dd><p>A <a class="reference internal" href="../mdb/model/part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the region containing the elements that will be activated
 during the analysis.</p>
 </dd>
 <dt><strong>deformation</strong></dt><dd><p>A Boolean value specifying whether the elements that have not yet been activated will
@@ -358,8 +358,8 @@ exposed areas of the element facets are considered. The default value is NONE.</
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ElementProgressiveActivation" title="abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ElementProgressiveActivation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ElementProgressiveActivation</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>An</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation" title="abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation"><code class="xref py py-class docutils literal notranslate"><span class="pre">ElementProgressiveActivation</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -411,7 +411,7 @@ exposed areas of the element facets are considered. The default value is NONE.</
 <dt class="sig sig-object py" id="abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries">
 <span class="sig-name descname"><span class="pre">EventSeries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">createStepName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eventSeriesType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transformType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NONE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'STEP_TIME'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transformations</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.TableCollection.EventSeries.EventSeries" title="abaqus.TableCollection.EventSeries.EventSeries"><span class="pre">EventSeries</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/TableCollection/TableCollectionModel.py#L19-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates an EventSeries object.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
@@ -435,8 +435,8 @@ default value is STEP_TIME.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries" title="abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EventSeries</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>An</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.TableCollection.EventSeries.EventSeries" title="abaqus.TableCollection.EventSeries.EventSeries"><code class="xref py py-class docutils literal notranslate"><span class="pre">EventSeries</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -456,7 +456,7 @@ default value is STEP_TIME.</p>
 <dt class="sig sig-object py" id="abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeriesType">
 <span class="sig-name descname"><span class="pre">EventSeriesType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">createStepName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fields</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.TableCollection.EventSeriesType.EventSeriesType" title="abaqus.TableCollection.EventSeriesType.EventSeriesType"><span class="pre">EventSeriesType</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/TableCollection/TableCollectionModel.py#L81-L114"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeriesType" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates an EventSeriesType object.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
@@ -468,8 +468,8 @@ default value is STEP_TIME.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeriesType" title="abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeriesType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EventSeriesType</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.TableCollection.EventSeriesType.EventSeriesType" title="abaqus.TableCollection.EventSeriesType.EventSeriesType"><code class="xref py py-class docutils literal notranslate"><span class="pre">EventSeriesType</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -857,7 +857,7 @@ ParameterColumn may lead to data corruption.</p>
 <dd><p>ParameterColumn is a constructor method that creates a ParameterColumn object and stores
 it in the array data structure. It is accessible from the ParameterTable object using a
 column member.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>type</strong></dt><dd><p>A SymbolicConstant specifying the data type of the parameter. Possible values are
@@ -875,8 +875,8 @@ value of <strong>type</strong> argument.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.TableCollection.ParameterTable.ParameterTable" title="abaqus.TableCollection.ParameterTable.ParameterTable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParameterTable</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.TableCollection.ParameterTable.ParameterTable" title="abaqus.TableCollection.ParameterTable.ParameterTable"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParameterTable</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -950,7 +950,7 @@ corruption.</p>
 <dt class="sig sig-object py" id="abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData">
 <span class="sig-name descname"><span class="pre">PropertyTableData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regularize</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extrapolate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isTemp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fieldNums</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regularizeTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.TableCollection.PropertyTableData.PropertyTableData" title="abaqus.TableCollection.PropertyTableData.PropertyTableData"><span class="pre">PropertyTableData</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/TableCollection/PropertyTable.py#L84-L134"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a PropertyTableData object.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>label</strong></dt><dd><p>A String specifying a unique label name for the current PropertyTable object.</p>
@@ -972,8 +972,8 @@ PropertyTable, and the field variables mentioned in PropertyTableData.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData" title="abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PropertyTableData</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.TableCollection.PropertyTableData.PropertyTableData" title="abaqus.TableCollection.PropertyTableData.PropertyTableData"><code class="xref py py-class docutils literal notranslate"><span class="pre">PropertyTableData</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1122,7 +1122,7 @@ ParameterTable and PropertyTable objects.</p>
 <dt class="sig sig-object py" id="abaqus.TableCollection.TableCollection.TableCollection.DataTable">
 <span class="sig-name descname"><span class="pre">DataTable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.TableCollection.DataTable.DataTable" title="abaqus.TableCollection.DataTable.DataTable"><span class="pre">DataTable</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/TableCollection/TableCollection.py#L64-L90"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TableCollection.TableCollection.TableCollection.DataTable" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a DataTable object and places it in the dataTables array.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>label</strong></dt><dd><p>A String specifying a unique label name for the current ParameterTable object.</p>
@@ -1130,8 +1130,8 @@ ParameterTable and PropertyTable objects.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.TableCollection.TableCollection.TableCollection.DataTable" title="abaqus.TableCollection.TableCollection.TableCollection.DataTable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataTable</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../mdb/model/field.html#abaqus.Field.DataTable.DataTable" title="abaqus.Field.DataTable.DataTable"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataTable</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>
@@ -1152,7 +1152,7 @@ ParameterTable and PropertyTable objects.</p>
 <span class="sig-name descname"><span class="pre">ParameterTable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.TableCollection.ParameterTable.ParameterTable" title="abaqus.TableCollection.ParameterTable.ParameterTable"><span class="pre">ParameterTable</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/TableCollection/TableCollection.py#L92-L114"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TableCollection.TableCollection.TableCollection.ParameterTable" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a ParameterTable object and places it in the parameterTables
 repository.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
@@ -1160,8 +1160,8 @@ repository.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.TableCollection.TableCollection.TableCollection.ParameterTable" title="abaqus.TableCollection.TableCollection.TableCollection.ParameterTable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParameterTable</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.TableCollection.ParameterTable.ParameterTable" title="abaqus.TableCollection.ParameterTable.ParameterTable"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParameterTable</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1176,7 +1176,7 @@ repository.</p>
 <dt class="sig sig-object py" id="abaqus.TableCollection.TableCollection.TableCollection.PropertyTable">
 <span class="sig-name descname"><span class="pre">PropertyTable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">properties</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variables</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.TableCollection.PropertyTable.PropertyTable" title="abaqus.TableCollection.PropertyTable.PropertyTable"><span class="pre">PropertyTable</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/TableCollection/TableCollection.py#L116-L150"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TableCollection.TableCollection.TableCollection.PropertyTable" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a PropertyTable object.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
@@ -1189,8 +1189,8 @@ array.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.TableCollection.TableCollection.TableCollection.PropertyTable" title="abaqus.TableCollection.TableCollection.TableCollection.PropertyTable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PropertyTable</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.TableCollection.PropertyTable.PropertyTable" title="abaqus.TableCollection.PropertyTable.PropertyTable"><code class="xref py py-class docutils literal notranslate"><span class="pre">PropertyTable</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-odd">Raises</dt>

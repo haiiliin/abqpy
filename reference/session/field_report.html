@@ -340,7 +340,7 @@ value is ON.</p>
 </dd>
 <dt><strong>sortItem</strong></dt><dd><p>A String specifying the item by which to sort the tabular values.</p>
 </dd>
-<dt><strong>odb</strong></dt><dd><p>An Odb object from which to obtain field output values.</p>
+<dt><strong>odb</strong></dt><dd><p>An <a class="reference internal" href="../odb.html#abaqus.Odb.Odb.Odb" title="abaqus.Odb.Odb.Odb"><code class="xref py py-class docutils literal notranslate"><span class="pre">Odb</span></code></a> object from which to obtain field output values.</p>
 </dd>
 <dt><strong>step</strong></dt><dd><p>An Int (or stepIndex) specifying the step from which to obtain field output values.
 Possible values are 0 ≤≤ <strong>step</strong> ≤≤ (<em>numSteps</em> − 1).</p>
@@ -352,7 +352,7 @@ Possible values are 0 ≤≤ <strong>frame</strong> ≤≤ (<em>numFramesInStep<
 are NODAL, INTEGRATION_POINT, ELEMENT_FACE, ELEMENT_NODAL, ELEMENT_CENTROID,
 WHOLE_ELEMENT, WHOLE_REGION, WHOLE_PART_INSTANCE, WHOLE_MODEL, and GENERAL_PARTICLE.</p>
 </dd>
-<dt><strong>displayGroup</strong></dt><dd><p>A DisplayGroup object specifying the subset of the model for which to obtain data.</p>
+<dt><strong>displayGroup</strong></dt><dd><p>A <a class="reference internal" href="display.html#abaqus.DisplayGroup.DisplayGroup.DisplayGroup" title="abaqus.DisplayGroup.DisplayGroup.DisplayGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisplayGroup</span></code></a> object specifying the subset of the model for which to obtain data.</p>
 </dd>
 <dt><strong>variable</strong></dt><dd><p>A sequence of variable description sequences specifying one or more field output
 variables for which to obtain data. Each variable description sequence contains the
@@ -425,7 +425,7 @@ current frame.</p>
 from all active frames. Possible values are SPECIFY and ALL. The default value is
 SPECIFY.</p>
 </dd>
-<dt><strong>odb</strong></dt><dd><p>An Odb object specifying the output database from which data will be read.</p>
+<dt><strong>odb</strong></dt><dd><p>An <a class="reference internal" href="../odb.html#abaqus.Odb.Odb.Odb" title="abaqus.Odb.Odb.Odb"><code class="xref py py-class docutils literal notranslate"><span class="pre">Odb</span></code></a> object specifying the output database from which data will be read.</p>
 </dd>
 </dl>
 </dd>
@@ -491,7 +491,7 @@ Visualization module.</p>
 <dt class="sig sig-object py" id="abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat">
 <span class="sig-name descname"><span class="pre">NumberFormat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">blankPad</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ENGINEERING'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numDigits</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">precision</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../session.html#abaqus.Session.NumberFormat.NumberFormat" title="abaqus.Session.NumberFormat.NumberFormat"><span class="pre">NumberFormat</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/FieldReport/FieldReportOptions.py#L81-L124"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a NumberFormat object.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>blankPad</strong></dt><dd><p>A Boolean specifying whether the printed digits should be padded with blank characters
@@ -511,8 +511,8 @@ value is 0.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NumberFormat</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="../session.html#abaqus.Session.NumberFormat.NumberFormat" title="abaqus.Session.NumberFormat.NumberFormat"><code class="xref py py-class docutils literal notranslate"><span class="pre">NumberFormat</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -529,13 +529,13 @@ value is 0.</p>
 <dt class="sig sig-object py" id="abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numColumns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberFormat</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../session.html#abaqus.Session.NumberFormat.NumberFormat" title="abaqus.Session.NumberFormat.NumberFormat"><span class="pre">NumberFormat</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">printXYData</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">printTotal</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">printMinMax</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pageWidth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NO_LIMIT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columnLayout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SINGLE_TABLE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ASCENDING'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">printLocalCSYS</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/FieldReport/FieldReportOptions.py#L30-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the FieldReportOptions object.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>numColumns</strong></dt><dd><p>An Int specifying the number of columns to display for the tabular report. The default
 value is 80.</p>
 </dd>
-<dt><strong>numberFormat</strong></dt><dd><p>A NumberFormat object specifying the format type, number of digits and precision used to
+<dt><strong>numberFormat</strong></dt><dd><p>A <a class="reference internal" href="../session.html#abaqus.Session.NumberFormat.NumberFormat" title="abaqus.Session.NumberFormat.NumberFormat"><code class="xref py py-class docutils literal notranslate"><span class="pre">NumberFormat</span></code></a> object specifying the format type, number of digits and precision used to
 print the numeric output.</p>
 </dd>
 <dt><strong>printXYData</strong></dt><dd><p>A Boolean specifying whether to include <strong>X - Y</strong> data values in the tabular report. The
@@ -563,8 +563,8 @@ tabular report. The default value is OFF.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FieldReportOptions</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldReportOptions</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -607,7 +607,7 @@ FreeBodyReportOptions object has no constructor. Abaqus creates the
 <dt class="sig sig-object py" id="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numDigits</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forceThreshold</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">momentThreshold</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberFormat</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SCIENTIFIC'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reportFormat</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NORMAL_ANNOTATED'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csysType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'GLOBAL'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/FieldReport/FreeBodyReportOptions.py#L21-L54"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the FreeBodyReportOptions object.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>numDigits</strong></dt><dd><p>An Int specifying the number of decimal places. The default value is 3.</p>
@@ -628,8 +628,8 @@ LOCAL. The default value is GLOBAL.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FreeBodyReportOptions</span></code></a> object.</dt><dd></dd>
+<dd class="field-even"><dl>
+<dt><strong>A</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">py</span></code><a class="reference internal" href="#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FreeBodyReportOptions</span></code></a> object.</span></dt><dd></dd>
 </dl>
 </dd>
 </dl>
