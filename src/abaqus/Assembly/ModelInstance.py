@@ -17,7 +17,7 @@ class Model:
 
 
 class ModelInstance:
-    """A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object is an instance of a Model.
+    """A :py:class:`~abaqus.Model.Model.ModelInstance` object is an instance of a Model.
 
     Attributes
     ----------
@@ -96,7 +96,7 @@ class ModelInstance:
         name
             The repository key. The name must be a valid Abaqus object name.
         model
-            A :py:class:`~abaqus.Assembly.ModelInstance.Model` object to be instanced. If the model does not exist, no ModelInstance object is
+            A :py:class:`~abaqus.Model.Model.Model` object to be instanced. If the model does not exist, no ModelInstance object is
             created.
         autoOffset
             A Boolean specifying whether to apply an auto offset to the new instance that will
@@ -105,7 +105,7 @@ class ModelInstance:
         Returns
         -------
         ModelInstance
-            A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object.
+            A :py:class:`~abaqus.Model.Model.ModelInstance` object.
         """
         pass
 

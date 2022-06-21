@@ -393,7 +393,7 @@ class ModelBase:
         Returns
         -------
         Model
-            A :py:class:`~abaqus.Assembly.ModelInstance.Model` object.
+            A :py:class:`~abaqus.Model.Model.Model` object.
         """
         self.steps["Initial"] = InitialStep()
 
@@ -421,7 +421,7 @@ class ModelBase:
         Returns
         -------
         Model
-            A :py:class:`~abaqus.Assembly.ModelInstance.Model` object.
+            A :py:class:`~abaqus.Model.Model.Model` object.
         """
         pass
 
@@ -449,7 +449,7 @@ class ModelBase:
         Returns
         -------
         Model
-            A :py:class:`~abaqus.Assembly.ModelInstance.Model` object.
+            A :py:class:`~abaqus.Model.Model.Model` object.
         """
         pass
 
@@ -538,7 +538,7 @@ class ModelBase:
         Returns
         -------
         Model
-            A :py:class:`~abaqus.Assembly.ModelInstance.Model` object.
+            A :py:class:`~abaqus.Model.Model.Model` object.
         """
         pass
 

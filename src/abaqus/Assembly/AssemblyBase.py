@@ -194,7 +194,7 @@ class AssemblyBase(Feature):
     # A repository of ModelInstance objects.
     modelInstances: dict[str, ModelInstance] = dict[str, ModelInstance]()
 
-    # A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the PartInstances and A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object specifying
+    # A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the PartInstances and A :py:class:`~abaqus.Model.Model.ModelInstance` object specifying
     # the ModelInstances.
     allInstances: dict[str, typing.Union[PartInstance, ModelInstance]] = dict[
         str, typing.Union[PartInstance, ModelInstance]
@@ -266,7 +266,7 @@ class AssemblyBase(Feature):
         name
             The repository key. The name must be a valid Abaqus object name.
         model
-            A :py:class:`~abaqus.Assembly.ModelInstance.Model` object to be instanced. If the model does not exist, no ModelInstance object is
+            A :py:class:`~abaqus.Model.Model.Model` object to be instanced. If the model does not exist, no ModelInstance object is
             created.
         autoOffset
             A Boolean specifying whether to apply an auto offset to the new instance that will
@@ -275,7 +275,7 @@ class AssemblyBase(Feature):
         Returns
         -------
         ModelInstance
-            A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object.
+            A :py:class:`~abaqus.Model.Model.ModelInstance` object.
         """
         pass
 

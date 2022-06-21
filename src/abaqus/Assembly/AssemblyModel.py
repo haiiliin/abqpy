@@ -43,7 +43,7 @@ class AssemblyModel(ModelBase):
         Returns
         -------
         Model
-            A :py:class:`~abaqus.Assembly.ModelInstance.Model` object.
+            A :py:class:`~abaqus.Model.Model.Model` object.
         """
         return self
 
