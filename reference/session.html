@@ -2322,77 +2322,6 @@ the point color. Possible values for each component are between 0.0 and 1.0.</p>
 </tbody>
 </table>
 </div>
-<p>This method creates an empty Drawing object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Session.Drawing.Drawing" title="abaqus.Session.Drawing.Drawing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Drawing</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-<dt class="field-odd">Raises</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">ValueError</span></code></dt><dd><ul class="simple">
-<li><p>If the user attempts to create a new drawing with the name of an existing drawing:
-ValueError: There is already a drawing with this name</p></li>
-</ul>
-</dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Drawing</span>
-</pre></div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>edgeColor</strong></dt><dd></dd>
-<dt><strong>pointColor</strong></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Session.Drawing.Drawing.addArrayDraw" title="abaqus.Session.Drawing.Drawing.addArrayDraw"><code class="xref py py-obj docutils literal notranslate"><span class="pre">addArrayDraw</span></code></a>(type, startIndex, numVertices)</p></td>
-<td><p>This method adds a rendering command to the drawing and can be called multiple times to add additional rendering commands.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Session.Drawing.Drawing.addIndexDraw" title="abaqus.Session.Drawing.Drawing.addIndexDraw"><code class="xref py py-obj docutils literal notranslate"><span class="pre">addIndexDraw</span></code></a>(type, indices[, polygonMode])</p></td>
-<td><p>This method adds a rendering command to the drawing and can be called multiple times to add additional rendering commands.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Session.Drawing.Drawing.setColors" title="abaqus.Session.Drawing.Drawing.setColors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setColors</span></code></a>(colorDimension, colorData)</p></td>
-<td><p>This method accepts the color data for each vertex.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Session.Drawing.Drawing.setEdgeColor" title="abaqus.Session.Drawing.Drawing.setEdgeColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setEdgeColor</span></code></a>(edgeColor)</p></td>
-<td><p>This method allows a separate, single color to be used when rendering the edges of the drawing.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Session.Drawing.Drawing.setNormals" title="abaqus.Session.Drawing.Drawing.setNormals"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setNormals</span></code></a>(normalData)</p></td>
-<td><p>This method accepts the normal data for each vertex.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Session.Drawing.Drawing.setPointColor" title="abaqus.Session.Drawing.Drawing.setPointColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setPointColor</span></code></a>(pointColor)</p></td>
-<td><p>This method allows a separate, single color to be used when rendering the points of the drawing.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Session.Drawing.Drawing.setValues" title="abaqus.Session.Drawing.Drawing.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([show, cullBackfaces, ...])</p></td>
-<td><p>This method modifies the rendering of the Drawing object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Session.Drawing.Drawing.setVertices" title="abaqus.Session.Drawing.Drawing.setVertices"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setVertices</span></code></a>(vertexDimension, vertexData)</p></td>
-<td><p>This method accepts the vertex data that defines the Drawing object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Drawing.Drawing.addArrayDraw">
 <span class="sig-name descname"><span class="pre">addArrayDraw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startIndex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numVertices</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">polygonMode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'FILL'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Drawing.py#L306-L349"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Drawing.Drawing.addArrayDraw" title="Permalink to this definition">#</a></dt>
@@ -2764,56 +2693,6 @@ file. Upon creation, the Image object is added to the session.images repository.
 </tbody>
 </table>
 </div>
-<p>This method creates an Image object from the contents of the specified file.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the repository name for the image.</p>
-</dd>
-<dt><strong>fileName</strong></dt><dd><p>A String specifying the file from which the image is to be read. The file extension must
-be specified and indicate the image format (.bmp, .gif, .jpg, .jpeg, .ico, .pcx, .png,
-.rgb, .tga, .tif, or .xpm).</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.Session.Image.Image" title="abaqus.Session.Image.Image"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Image</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-<dt class="field-odd">Raises</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">ValueError</span></code></dt><dd><ul class="simple">
-<li><p>If <strong>fileName</strong> does not exist or can not be read:
-ValueError: Unable to open image file</p></li>
-<li><p>If <strong>fileName</strong> references an unsupported image file format:
-ValueError: Unsupported image format</p></li>
-<li><p>If the contents of <strong>fileName</strong> are corrupt or can not be decoded:
-ValueError: Unable to decode image file</p></li>
-</ul>
-</dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Image</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Session.Image.Image.ImageFromMovie" title="abaqus.Session.Image.Image.ImageFromMovie"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ImageFromMovie</span></code></a>(name, movieName, frame, time)</p></td>
-<td><p>This method creates an Image object from a given frame of an existing Movie object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Image.Image.ImageFromMovie">
 <span class="sig-name descname"><span class="pre">ImageFromMovie</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">movieName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Image.py#L50-L82"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Image.Image.ImageFromMovie" title="Permalink to this definition">#</a></dt>
@@ -3059,74 +2938,6 @@ system.</p>
 </tbody>
 </table>
 </div>
-<p>This method creates a NetworkDatabaseConnector object that you can use to access a
-remote output database. You can create a network database connector from any platform:
-Windows or Linux. However, the network database connector server must reside on a Linux
-platform; you cannot access an output database that resides on a remote Windows system.
-You can access only a remote output database; you cannot access a remote model database.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
-</dd>
-<dt><strong>hostName</strong></dt><dd><p>A String specifying the name of the remote computer.</p>
-</dd>
-<dt><strong>directory</strong></dt><dd><p>A String specifying the directory on the remote computer.</p>
-</dd>
-<dt><strong>remoteAbaqusDriverName</strong></dt><dd><p>A String specifying the name of command to execute Abaqus/CAE on the remote computer.</p>
-</dd>
-<dt><strong>remoteLoginMechanism</strong></dt><dd><p>A SymbolicConstant specifying the remote shell command on the local system. Possible
-values are RSH and SSH. The default value is SSH.</p>
-</dd>
-<dt><strong>sshPath</strong></dt><dd><p>A String specifying the path to the`ssh` command on the local system. The default value
-is an empty string.</p>
-</dd>
-<dt><strong>serverPort</strong></dt><dd><p>An Int specifying the server port on the remote computer. If <strong>serverPort</strong> =0, the host
-and remote systems are allowed to establish their own port numbers. The default value is
-0.</p>
-</dd>
-<dt><strong>connectionPort</strong></dt><dd><p>An Int specifying the connection port on the remote computer. The default value is 0.</p>
-</dd>
-<dt><strong>serverTimeout</strong></dt><dd><p>An Int specifying the timeout in seconds for the remote server. For example: 86400
-corresponds to one day. The server exits if it does not receive any communication from
-the client during the time specified. The default value is 86400.</p>
-</dd>
-<dt><strong>allowAutomaticStartup</strong></dt><dd><p>A Boolean specifying whether to start the remote network database connector server. The
-default value is ON.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector" title="abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NetworkDatabaseConnector</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">NetworkDatabaseConnector</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues" title="abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([remoteAbaqusDriverName, ...])</p></td>
-<td><p>This method modifies the NetworkDatabaseConnector object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.start" title="abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.start"><code class="xref py py-obj docutils literal notranslate"><span class="pre">start</span></code></a>([serverPort, serverTimeout])</p></td>
-<td><p>This method starts the remote network database connector server on the remote host.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.stop" title="abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.stop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stop</span></code></a>()</p></td>
-<td><p>This method stops the remote network database connector server on the remote host.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">remoteAbaqusDriverName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remoteLoginMechanism</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SSH'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sshPath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverPort</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connectionPort</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverTimeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">86400</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allowAutomaticStartup</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/NetworkDatabaseConnector.py#L108-L144"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues" title="Permalink to this definition">#</a></dt>
@@ -3205,39 +3016,6 @@ discusses:Access[NumberFormat(…)](https://help.3ds.com/2022/english/DSSIMULIA_
 <span class="n">session</span><span class="o">.</span><span class="n">journalOptions</span><span class="o">.</span><span class="n">defaultFormat</span>
 <span class="n">session</span><span class="o">.</span><span class="n">journalOptions</span><span class="o">.</span><span class="n">fieldReportFormat</span>
 <span class="n">session</span><span class="o">.</span><span class="n">journalOptions</span><span class="o">.</span><span class="n">geometryFormat</span>
-</pre></div>
-</div>
-<p>This method creates a NumberFormat object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>blankPad</strong></dt><dd><p>A Boolean specifying whether the printed digits should be padded with blank characters
-to ensure equal sized fields. The <strong>blankPad</strong> argument is useful when your printed output
-includes columns. The default value is ON.</p>
-</dd>
-<dt><strong>format</strong></dt><dd><p>A SymbolicConstant specifying the formatting type. Possible values are ENGINEERING,
-SCIENTIFIC, and AUTOMATIC. The default value is ENGINEERING.</p>
-</dd>
-<dt><strong>numDigits</strong></dt><dd><p>An Int specifying the number of digits to be displayed in the result. <strong>numDigits</strong> &gt;0&gt;0.
-The default value is 6.</p>
-</dd>
-<dt><strong>precision</strong></dt><dd><p>An Int specifying the number of decimal places to which the number is to be truncated
-for display. <strong>precision</strong> ≤0≤0. If <strong>precision</strong> =0, no truncation is applied. The default
-value is 0.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Session.NumberFormat.NumberFormat" title="abaqus.Session.NumberFormat.NumberFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NumberFormat</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">defaultFieldReportOptions</span><span class="o">.</span><span class="n">NumberFormat</span>
-<span class="n">session</span><span class="o">.</span><span class="n">fieldReportOptions</span><span class="o">.</span><span class="n">NumberFormat</span>
-<span class="n">session</span><span class="o">.</span><span class="n">journalOptions</span><span class="o">.</span><span class="n">NumberFormat</span>
 </pre></div>
 </div>
 </dd></dl>

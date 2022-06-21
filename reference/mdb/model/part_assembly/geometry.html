@@ -559,60 +559,6 @@ True.</p>
 </tbody>
 </table>
 </div>
-<p>This method creates a CellArray object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>cells</strong></dt><dd><p>A list of Cell objects.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.BasicGeometry.CellArray.CellArray" title="abaqus.BasicGeometry.CellArray.CellArray"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CellArray</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">part</span><span class="o">.</span><span class="n">CellArray</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.CellArray.CellArray.findAt" title="abaqus.BasicGeometry.CellArray.CellArray.findAt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">findAt</span></code></a>(coordinates[, printWarning])</p></td>
-<td><p>This method returns the object or objects in the CellArray located at the given coordinates.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.CellArray.CellArray.getBoundingBox" title="abaqus.BasicGeometry.CellArray.CellArray.getBoundingBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getBoundingBox</span></code></a>()</p></td>
-<td><p>This method returns a dictionary of two tuples representing minimum and maximum boundary values of the bounding box of the minimum size containing the cell sequence.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox" title="abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingBox</span></code></a>([xMin, yMin, zMin, xMax, ...])</p></td>
-<td><p>This method returns an array of cell objects that lie within the specified bounding box.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder" title="abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingCylinder</span></code></a>(center1, center2, radius)</p></td>
-<td><p>This method returns an array of cell objects that lie within the specified bounding cylinder.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.CellArray.CellArray.getByBoundingSphere" title="abaqus.BasicGeometry.CellArray.CellArray.getByBoundingSphere"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingSphere</span></code></a>(center, radius)</p></td>
-<td><p>This method returns an array of cell objects that lie within the specified bounding sphere.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.CellArray.CellArray.getExteriorFaces" title="abaqus.BasicGeometry.CellArray.CellArray.getExteriorFaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getExteriorFaces</span></code></a>()</p></td>
-<td><p>This method returns the cell faces on the exterior of the CellArray.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.CellArray.CellArray.getMask" title="abaqus.BasicGeometry.CellArray.CellArray.getMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMask</span></code></a>()</p></td>
-<td><p>This method returns a string specifying the object or objects.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.CellArray.CellArray.getSequenceFromMask" title="abaqus.BasicGeometry.CellArray.CellArray.getSequenceFromMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSequenceFromMask</span></code></a>(mask)</p></td>
-<td><p>This method returns the object or objects in the CellArray identified using the specified <strong>mask</strong>.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.CellArray.CellArray.findAt">
 <span class="sig-name descname"><span class="pre">findAt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinates</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">printWarning</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/CellArray.py#L53-L87"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.CellArray.CellArray.findAt" title="Permalink to this definition">#</a></dt>
@@ -1112,60 +1058,6 @@ must be updated for that part.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">modelInstances</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">surfaces</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">edges</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">sets</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">edges</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">surfaces</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">edges</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt" title="abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">findAt</span></code></a>(coordinates[, printWarning])</p></td>
-<td><p>This method returns the object or objects in the EdgeArray located at the given coordinates.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray.getBoundingBox" title="abaqus.BasicGeometry.EdgeArray.EdgeArray.getBoundingBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getBoundingBox</span></code></a>()</p></td>
-<td><p>This method returns a dictionary of two tuples representing minimum and maximum boundary values of the bounding box of the minimum size containing the edge sequence.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox" title="abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingBox</span></code></a>([xMin, yMin, zMin, xMax, ...])</p></td>
-<td><p>This method returns an array of edge objects that lie within the specified bounding box.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingCylinder" title="abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingCylinder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingCylinder</span></code></a>(center1, center2, radius)</p></td>
-<td><p>This method returns an array of edge objects that lie within the specified bounding cylinder.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingSphere" title="abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingSphere"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingSphere</span></code></a>(center, radius)</p></td>
-<td><p>This method returns an array of edge objects that lie within the specified bounding sphere.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest" title="abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getClosest</span></code></a>(coordinates[, searchTolerance])</p></td>
-<td><p>This method returns an object or objects in the EdgeArray closest to the given set of points, where the given points need not lie on the edges in the EdgeArray.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray.getMask" title="abaqus.BasicGeometry.EdgeArray.EdgeArray.getMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMask</span></code></a>()</p></td>
-<td><p>This method returns a string specifying the object or objects.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray.getSequenceFromMask" title="abaqus.BasicGeometry.EdgeArray.EdgeArray.getSequenceFromMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSequenceFromMask</span></code></a>(mask)</p></td>
-<td><p>This method returns the object or objects in the EdgeArray identified using the specified <strong>mask</strong>.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>This method creates an EdgeArray object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>edges</strong></dt><dd><p>A list of Edge objects.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray" title="abaqus.BasicGeometry.EdgeArray.EdgeArray"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EdgeArray</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">part</span><span class="o">.</span><span class="n">EdgeArray</span>
 </pre></div>
 </div>
 <p class="rubric">Methods</p>
@@ -1830,63 +1722,6 @@ must be updated for that part.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">modelInstances</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">surfaces</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">faces</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">sets</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">faces</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">surfaces</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">faces</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.FaceArray.FaceArray.findAt" title="abaqus.BasicGeometry.FaceArray.FaceArray.findAt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">findAt</span></code></a>(coordinates[, normal, printWarning])</p></td>
-<td><p>This method returns the object or objects in the FaceArray located at the given coordinates.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.FaceArray.FaceArray.getBoundingBox" title="abaqus.BasicGeometry.FaceArray.FaceArray.getBoundingBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getBoundingBox</span></code></a>()</p></td>
-<td><p>This method returns a dictionary of two tuples representing minimum and maximum boundary values of the bounding box of the minimum size containing the face sequence.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox" title="abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingBox</span></code></a>([xMin, yMin, zMin, xMax, ...])</p></td>
-<td><p>This method returns an array of face objects that lie within the specified bounding box.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingCylinder" title="abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingCylinder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingCylinder</span></code></a>(center1, center2, radius)</p></td>
-<td><p>This method returns an array of face objects that lie within the specified bounding cylinder.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingSphere" title="abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingSphere"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingSphere</span></code></a>(center, radius)</p></td>
-<td><p>This method returns an array of face objects that lie within the specified bounding sphere.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.FaceArray.FaceArray.getClosest" title="abaqus.BasicGeometry.FaceArray.FaceArray.getClosest"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getClosest</span></code></a>(coordinates[, searchTolerance])</p></td>
-<td><p>This method returns an object or objects in the FaceArray closest to the given set of points, where the given points need not lie on the faces in the FaceArray.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.FaceArray.FaceArray.getExteriorEdges" title="abaqus.BasicGeometry.FaceArray.FaceArray.getExteriorEdges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getExteriorEdges</span></code></a>()</p></td>
-<td><p>This method returns the edges on the exterior of the faces in the FaceArray.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.FaceArray.FaceArray.getMask" title="abaqus.BasicGeometry.FaceArray.FaceArray.getMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMask</span></code></a>()</p></td>
-<td><p>This method returns a string specifying the object or objects.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.FaceArray.FaceArray.getSequenceFromMask" title="abaqus.BasicGeometry.FaceArray.FaceArray.getSequenceFromMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSequenceFromMask</span></code></a>(mask)</p></td>
-<td><p>This method returns the object or objects in the FaceArray identified using the specified <strong>mask</strong>.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>This method creates a FaceArray object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>faces</strong></dt><dd><p>A list of Face objects.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.BasicGeometry.FaceArray.FaceArray" title="abaqus.BasicGeometry.FaceArray.FaceArray"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FaceArray</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">part</span><span class="o">.</span><span class="n">FaceArray</span>
 </pre></div>
 </div>
 <p class="rubric">Methods</p>
@@ -2640,30 +2475,6 @@ object.</p>
 <span class="kn">import</span> <span class="nn">assembly</span>
 </pre></div>
 </div>
-<p>This method creates an interesting point along an edge. An InterestingPoint is a
-temporary object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>edge</strong></dt><dd><p>An Edge object specifying the edge on which the interesting point is positioned.</p>
-</dd>
-<dt><strong>rule</strong></dt><dd><p>A SymbolicConstant specifying the position of the interesting point. Possible values are
-MIDDLE or CENTER.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.BasicGeometry.InterestingPoint.InterestingPoint" title="abaqus.BasicGeometry.InterestingPoint.InterestingPoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InterestingPoint</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="o">*</span><span class="n">name</span><span class="o">*</span><span class="p">]</span><span class="o">.</span><span class="n">InterestingPoint</span>
-<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">instances</span><span class="p">[</span><span class="o">*</span><span class="n">name</span><span class="o">*</span><span class="p">]</span><span class="o">.</span><span class="n">InterestingPoint</span>
-</pre></div>
-</div>
 </dd></dl>
 
 </section>
@@ -2727,31 +2538,6 @@ ReferencePoint object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">modelInstances</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">sets</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">referencePoints</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">referencePoints</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">sets</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">referencePoints</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-</pre></div>
-</div>
-<p>This method creates a Feature object and a ReferencePoint object at the specified
-location.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>point</strong></dt><dd><p>A ConstrainedSketchVertex, InterestingPoint, a MeshNode, or a Datum object specifying a reference point.
-<strong>point</strong> can also be a sequence of three Floats representing the <strong>X</strong>-, <strong>Y</strong>-, and
-<strong>Z</strong>-coordinates of the point.</p>
-</dd>
-<dt><strong>instanceName</strong></dt><dd><p>Used internally by the input file writer.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Feature</span></code> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">ReferencePoint</span>
-<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ReferencePoint</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -2963,60 +2749,6 @@ VertexArray must be updated for that part.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">modelInstances</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">vertices</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">sets</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">vertices</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">vertices</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.VertexArray.VertexArray.findAt" title="abaqus.BasicGeometry.VertexArray.VertexArray.findAt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">findAt</span></code></a>(coordinates[, printWarning])</p></td>
-<td><p>This method returns the object or objects in the VertexArray located at the given coordinates.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.VertexArray.VertexArray.getBoundingBox" title="abaqus.BasicGeometry.VertexArray.VertexArray.getBoundingBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getBoundingBox</span></code></a>()</p></td>
-<td><p>This method returns a dictionary of two tuples representing minimum and maximum boundary values of the bounding box of the minimum size containing the vertex sequence.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox" title="abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingBox</span></code></a>([xMin, yMin, zMin, xMax, ...])</p></td>
-<td><p>This method returns an array of vertex objects that lie within the specified bounding box.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder" title="abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingCylinder</span></code></a>(center1, center2, radius)</p></td>
-<td><p>This method returns an array of vertex objects that lie within the specified bounding cylinder.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingSphere" title="abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingSphere"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingSphere</span></code></a>(center, radius)</p></td>
-<td><p>This method returns an array of vertex objects that lie within the specified bounding sphere.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.VertexArray.VertexArray.getClosest" title="abaqus.BasicGeometry.VertexArray.VertexArray.getClosest"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getClosest</span></code></a>(coordinates[, searchTolerance])</p></td>
-<td><p>This method returns a object or objects in the VertexArray closest to the given set of points, where the given points need not lie on ConstrainedSketchVertex objects in the VertexArray.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.VertexArray.VertexArray.getMask" title="abaqus.BasicGeometry.VertexArray.VertexArray.getMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMask</span></code></a>()</p></td>
-<td><p>This method returns a string specifying the object or objects.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.VertexArray.VertexArray.getSequenceFromMask" title="abaqus.BasicGeometry.VertexArray.VertexArray.getSequenceFromMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSequenceFromMask</span></code></a>(mask)</p></td>
-<td><p>This method returns the object or objects in the VertexArray identified using the specified <strong>mask</strong>.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>This method creates a VertexArray object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>vertices</strong></dt><dd><p>A list of ConstrainedSketchVertex objects.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.BasicGeometry.VertexArray.VertexArray" title="abaqus.BasicGeometry.VertexArray.VertexArray"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VertexArray</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">part</span><span class="o">.</span><span class="n">VertexArray</span>
 </pre></div>
 </div>
 <p class="rubric">Methods</p>

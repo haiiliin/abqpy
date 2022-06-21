@@ -353,88 +353,6 @@
 </tbody>
 </table>
 </div>
-<p>This method creates a Model object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
-</dd>
-<dt><strong>description</strong></dt><dd><p>A String specifying the purpose and contents of the Model object. The default value is
-an empty string.</p>
-</dd>
-<dt><strong>stefanBoltzmann</strong></dt><dd><p>None or a Float specifying the Stefan-Boltzmann constant. The default value is None.</p>
-</dd>
-<dt><strong>absoluteZero</strong></dt><dd><p>None or a Float specifying the absolute zero constant. The default value is None.</p>
-</dd>
-<dt><strong>waveFormulation</strong></dt><dd><p>A SymbolicConstant specifying the type of incident wave formulation to be used in
-acoustic problems. Possible values are NOT_SET, SCATTERED, and TOTAL. The default value
-is NOT_SET.</p>
-</dd>
-<dt><strong>modelType</strong></dt><dd><p>A SymbolicConstant specifying the analysis model type. Possible values are
-STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is STANDARD_EXPLICIT.</p>
-</dd>
-<dt><strong>universalGas</strong></dt><dd><p>None or a Float specifying the universal gas constant. The default value is None.</p>
-</dd>
-<dt><strong>copyConstraints</strong></dt><dd><p>A boolean specifying whether to copy the constraints created in the model to the model
-that instances this model. The default value is ON.</p>
-</dd>
-<dt><strong>copyConnectors</strong></dt><dd><p>A boolean specifying whether to copy the connectors created in the model to the model
-that instances this model. The default value is ON.</p>
-</dd>
-<dt><strong>copyInteractions</strong></dt><dd><p>A boolean specifying whether to copy the interactions created in the model to the model
-that instances this model. The default value is ON.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Model</span></code> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">Model</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints" title="abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdjustPoints</span></code></a>(name, surface, controlPoints)</p></td>
-<td><p>This method creates an AdjustPoints object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling" title="abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Coupling</span></code></a>(name, surface, controlPoint, ...[, ...])</p></td>
-<td><p>This method creates a Coupling object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody" title="abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DisplayBody</span></code></a>(name, instance, controlPoints)</p></td>
-<td><p>This method creates a DisplayBody object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion" title="abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EmbeddedRegion</span></code></a>(name, embeddedRegion, hostRegion)</p></td>
-<td><p>This method creates a EmbeddedRegion object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.Equation" title="abaqus.Constraint.ConstraintModel.ConstraintModel.Equation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Equation</span></code></a>(name, terms)</p></td>
-<td><p>This method creates an Equation object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint" title="abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MultipointConstraint</span></code></a>(name, surface, ...[, ...])</p></td>
-<td><p>This method creates a MultipointConstraint object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody" title="abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RigidBody</span></code></a>(name, refPointRegion[, ...])</p></td>
-<td><p>This method creates a RigidBody object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling" title="abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShellSolidCoupling</span></code></a>(name, shellEdge, solidFace)</p></td>
-<td><p>This method creates a ShellSolidCoupling object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.Tie" title="abaqus.Constraint.ConstraintModel.ConstraintModel.Tie"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Tie</span></code></a>(name, main, secondary[, adjust, ...])</p></td>
-<td><p>This method creates a Tie object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints">
 <span class="sig-name descname"><span class="pre">AdjustPoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">controlPoints</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Constraint.AdjustPoints.AdjustPoints" title="abaqus.Constraint.AdjustPoints.AdjustPoints"><span class="pre">AdjustPoints</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/ConstraintModel.py#L31-L58"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints" title="Permalink to this definition">#</a></dt>
@@ -948,43 +866,6 @@ OFF.</p>
 </tbody>
 </table>
 </div>
-<p>This method creates an AdjustPoints object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the constraint repository key.</p>
-</dd>
-<dt><strong>surface</strong></dt><dd><p>A Region object specifying the surface to which the <strong>controlPoints</strong> are adjusted.</p>
-</dd>
-<dt><strong>controlPoints</strong></dt><dd><p>A Region object specifying the constraint control points.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.Constraint.AdjustPoints.AdjustPoints" title="abaqus.Constraint.AdjustPoints.AdjustPoints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdjustPoints</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">AdjustPoints</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.AdjustPoints.AdjustPoints.setValues" title="abaqus.Constraint.AdjustPoints.AdjustPoints.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
-<td><p>This method modifies the AdjustPoints object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.AdjustPoints.AdjustPoints.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/AdjustPoints.py#L61-L63"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.AdjustPoints.AdjustPoints.setValues" title="Permalink to this definition">#</a></dt>
@@ -1021,85 +902,6 @@ OFF.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.Coupling.Coupling.setValues" title="abaqus.Constraint.Coupling.Coupling.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([adjust, localCsys, u1, u2, u3, ...])</p></td>
-<td><p>This method modifies the Coupling object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>This method creates a Coupling object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the constraint repository key.</p>
-</dd>
-<dt><strong>surface</strong></dt><dd><p>A Region object specifying the surface on which the coupling nodes are located.</p>
-</dd>
-<dt><strong>controlPoint</strong></dt><dd><p>A Region object specifying the constraint control point.</p>
-</dd>
-<dt><strong>influenceRadius</strong></dt><dd><p>The SymbolicConstant WHOLE_SURFACE or a Float specifying the influence radius.</p>
-</dd>
-<dt><strong>couplingType</strong></dt><dd><p>A SymbolicConstant specifying the coupling constraint type. Possible values are
-KINEMATIC, DISTRIBUTING, and STRUCTURAL.</p>
-</dd>
-<dt><strong>adjust</strong></dt><dd><p>A Boolean specifying if the control point will be adjusted (moved) to the surface. The
-point will be adjusted in the direction normal to the specified surface. The default
-value is OFF.</p>
-</dd>
-<dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the initial orientation of the local coordinate
-system for the coupling’s degrees of freedom. If <strong>localCsys</strong> = None, the coupling is
-defined in the global coordinate system. The default value is None.</p>
-</dd>
-<dt><strong>u1</strong></dt><dd><p>A Boolean specifying if the displacement component in the 1-direction is constrained to
-the reference node for a kinematic coupling constraint. The default value is ON.The <strong>u1</strong>
-argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
-</dd>
-<dt><strong>u2</strong></dt><dd><p>A Boolean specifying if the displacement component in the 2-direction is constrained to
-the reference node for a kinematic coupling constraint. The default value is ON.The <strong>u2</strong>
-argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
-</dd>
-<dt><strong>u3</strong></dt><dd><p>A Boolean specifying if the displacement component in the 3-direction is constrained to
-the reference node for a kinematic coupling constraint. The default value is ON.The <strong>u3</strong>
-argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
-</dd>
-<dt><strong>ur1</strong></dt><dd><p>A Boolean specifying if the rotational displacement component about the 1-direction is
-constrained to the reference node for a kinematic coupling constraint. The default value
-is ON.The <strong>ur1</strong> argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
-</dd>
-<dt><strong>ur2</strong></dt><dd><p>A Boolean specifying if the rotational displacement component about the 2-direction is
-constrained to the reference node for a kinematic coupling constraint. The default value
-is ON.The <strong>ur2</strong> argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
-</dd>
-<dt><strong>ur3</strong></dt><dd><p>A Boolean specifying if the rotational displacement component about the 3-direction is
-constrained to the reference node for a kinematic coupling constraint. The default value
-is ON.The <strong>ur3</strong> argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
-</dd>
-<dt><strong>weightingMethod</strong></dt><dd><p>A SymbolicConstant specifying an optional weighting method used for calculating the
-distributing weight factors. Possible values are UNIFORM, LINEAR, QUADRATIC, and CUBIC.
-The default value is UNIFORM.The <strong>weightingMethod</strong> argument applies only when
-<strong>couplingType</strong> = DISTRIBUTING.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Constraint.Coupling.Coupling" title="abaqus.Constraint.Coupling.Coupling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Coupling</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Coupling</span>
-</pre></div>
-</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1209,47 +1011,6 @@ OFF.</p>
 </tbody>
 </table>
 </div>
-<p>This method creates a DisplayBody object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the constraint repository key.</p>
-</dd>
-<dt><strong>instance</strong></dt><dd><p>A PartInstance object specifying the part instance that is to be used for display only.</p>
-</dd>
-<dt><strong>controlPoints</strong></dt><dd><p>A ModelDotArray object specifying the motion of the PartInstance. The control points may
-be ConstrainedSketchVertex, ReferencePoint, or MeshNode objects. Their motion will control the motion of
-the PartInstance. If this argument is set to an empty sequence, the PartInstance will
-remain fixed in space during the analysis. The sequence can have either one object or
-three objects.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Constraint.DisplayBody.DisplayBody" title="abaqus.Constraint.DisplayBody.DisplayBody"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DisplayBody</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">DisplayBody</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.DisplayBody.DisplayBody.setValues" title="abaqus.Constraint.DisplayBody.DisplayBody.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
-<td><p>This method modifies the DisplayBody object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.DisplayBody.DisplayBody.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/DisplayBody.py#L69-L71"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.DisplayBody.DisplayBody.setValues" title="Permalink to this definition">#</a></dt>
@@ -1286,62 +1047,6 @@ OFF.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues" title="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([weightFactorTolerance, ...])</p></td>
-<td><p>This method modifies the EmbeddedRegion object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>This method creates a EmbeddedRegion object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the constraint repository key.</p>
-</dd>
-<dt><strong>embeddedRegion</strong></dt><dd><p>A Region object specifying the body region to be embedded.</p>
-</dd>
-<dt><strong>hostRegion</strong></dt><dd><p>A Region object specifying the host region. A value of None indicates that the host
-region is the whole model.</p>
-</dd>
-<dt><strong>weightFactorTolerance</strong></dt><dd><p>A Float specifying a small value below which the weighting factors will be zeroed out.
-The default value is 10-6.</p>
-</dd>
-<dt><strong>toleranceMethod</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the embedded element
-tolerance. Possible values are ABSOLUTE, FRACTIONAL, and BOTH. The default value is
-BOTH.</p>
-</dd>
-<dt><strong>absoluteTolerance</strong></dt><dd><p>A Float specifying the absolute value by which a node on the embedded region may lie
-outside the host region. If <strong>absoluteTolerance</strong> = 0.0, the <strong>fractionalTolerance</strong> value
-will be used. The default value is 0.0.This argument applies only when
-<strong>toleranceMethod</strong> = ABSOLUTE or BOTH.</p>
-</dd>
-<dt><strong>fractionalTolerance</strong></dt><dd><p>A Float specifying the fractional value by which a node on the embedded region may lie
-outside the host region. The fractional value is based on the average element size
-within the host region. The default value is 0.05.If both tolerance arguments are
-specified, the smaller value will be used.This argument applies only when
-<strong>toleranceMethod</strong> = FRACTIONAL or BOTH.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion" title="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EmbeddedRegion</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">EmbeddedRegion</span>
-</pre></div>
-</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1430,47 +1135,6 @@ OFF.</p>
 </tbody>
 </table>
 </div>
-<p>This method creates an Equation object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the constraint repository key.</p>
-</dd>
-<dt><strong>terms</strong></dt><dd><p>A sequence of (Float, String, Int, Int) sequences specifying a coefficient, Set name,
-degree of freedom, and coordinate system ID. The coordinate system ID is optional.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.Constraint.Equation.Equation" title="abaqus.Constraint.Equation.Equation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Equation</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-<dt class="field-odd">Raises</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>terms</strong> <code class="xref py py-obj docutils literal notranslate"><span class="pre">does</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">contain</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">more</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">than</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">one</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">entry</span></code>, <a class="reference internal" href="#abaqus.Constraint.Equation.Equation" title="abaqus.Constraint.Equation.Equation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Equation</span></code></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">must</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">have</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">two</span></code> or <code class="xref py py-obj docutils literal notranslate"><span class="pre">more</span></code> terms.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Equation</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.Equation.Equation.setValues" title="abaqus.Constraint.Equation.Equation.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
-<td><p>This method modifies the Equation object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.Equation.Equation.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Equation.py#L64-L71"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Equation.Equation.setValues" title="Permalink to this definition">#</a></dt>
@@ -1514,60 +1178,6 @@ OFF.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.setValues" title="abaqus.Constraint.MultipointConstraint.MultipointConstraint.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([csys, userType, userMode])</p></td>
-<td><p>This method modifies the MultipointConstraint object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>This method creates a MultipointConstraint object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the constraint repository key.</p>
-</dd>
-<dt><strong>surface</strong></dt><dd><p>A Region object specifying the surface on which the MultipointConstraint nodes are
-located.</p>
-</dd>
-<dt><strong>controlPoint</strong></dt><dd><p>A Region object specifying the constraint control point.</p>
-</dd>
-<dt><strong>mpcType</strong></dt><dd><p>A SymbolicConstant specifying the MPC type of the constraint. Possible values are
-BEAM_MPC, ELBOW_MPC, PIN_MPC, LINK_MPC, TIE_MPC, and USER_MPC.</p>
-</dd>
-<dt><strong>csys</strong></dt><dd><p>None or a DatumCsys object specifying the initial orientation of the local coordinate
-system for the MultipointConstraint’s degrees of freedom. If <strong>localCsys</strong> = None, the
-MultipointConstraint is defined in the global coordinate system. The default value is
-None.</p>
-</dd>
-<dt><strong>userType</strong></dt><dd><p>An Int specifying to differentiate between different constraint types in a user-defined
-MultipointConstraint. The default value is 0.The <strong>userType</strong> argument applies only when
-<strong>mpcType</strong> = USER_MPC.</p>
-</dd>
-<dt><strong>userMode</strong></dt><dd><p>A SymbolicConstant specifying the mode of the constraint when it is user-defined.
-Possible values are DOF_MODE_MPC and NODE_MODE_MPC. The default value is
-DOF_MODE_MPC.The <strong>userMode</strong> argument applies only when <strong>mpcType</strong> = USER_MPC.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint" title="abaqus.Constraint.MultipointConstraint.MultipointConstraint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MultipointConstraint</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">MultipointConstraint</span>
-</pre></div>
-</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1637,59 +1247,6 @@ OFF.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.RigidBody.RigidBody.setValues" title="abaqus.Constraint.RigidBody.RigidBody.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([bodyRegion, tieRegion, ...])</p></td>
-<td><p>This method modifies the RigidBody object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>This method creates a RigidBody object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the constraint repository key.</p>
-</dd>
-<dt><strong>refPointRegion</strong></dt><dd><p>A Region object specifying the reference point.</p>
-</dd>
-<dt><strong>bodyRegion</strong></dt><dd><p>None or a Region object specifying the elements constrained to the movement of the
-reference point. The default value is None.</p>
-</dd>
-<dt><strong>tieRegion</strong></dt><dd><p>None or a Region object specifying the nodes tied to the movement of the reference
-point. The default value is None.</p>
-</dd>
-<dt><strong>pinRegion</strong></dt><dd><p>None or a Region object specifying the nodes pinned to the movement of the reference
-point. The default value is None.</p>
-</dd>
-<dt><strong>surfaceRegion</strong></dt><dd><p>None or a Region object specifying the analytic surface constrained to the movement of
-the reference point. The default value is None.</p>
-</dd>
-<dt><strong>refPointAtCOM</strong></dt><dd><p>A Boolean specifying whether the analysis product should recompute the reference point
-position to be at the center of mass. The default value is OFF.</p>
-</dd>
-<dt><strong>isothermal</strong></dt><dd><p>A Boolean specifying whether the temperature degree of freedom should be constrained.
-The default value is OFF.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Constraint.RigidBody.RigidBody" title="abaqus.Constraint.RigidBody.RigidBody"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RigidBody</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">RigidBody</span>
-</pre></div>
-</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1778,57 +1335,6 @@ OFF.</p>
 </tbody>
 </table>
 </div>
-<p>This method creates a ShellSolidCoupling object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the constraint repository key.</p>
-</dd>
-<dt><strong>shellEdge</strong></dt><dd><p>A Region object specifying the name of the shell edge surface.</p>
-</dd>
-<dt><strong>solidFace</strong></dt><dd><p>A Region object specifying the name of the solid surface.</p>
-</dd>
-<dt><strong>positionToleranceMethod</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the position tolerance.
-Possible values are COMPUTED and SPECIFIED. The default value is COMPUTED.</p>
-</dd>
-<dt><strong>positionTolerance</strong></dt><dd><p>A Float specifying the position tolerance. The default value is 0.0.The
-<strong>positionTolerance</strong> argument applies only when
-<strong>positionToleranceMethod</strong> = SPECIFIED.Note:Abaqus will not constrain nodes on the solid
-face region outside the position tolerance.</p>
-</dd>
-<dt><strong>influenceDistanceMethod</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the influence distance.
-Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT.</p>
-</dd>
-<dt><strong>influenceDistance</strong></dt><dd><p>A Float specifying the influence distance. The <strong>influenceDistance</strong> argument applies only
-when <strong>influenceDistanceMethod</strong> = SPECIFIED. The default value is 0.0.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling" title="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShellSolidCoupling</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ShellSolidCoupling</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues" title="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([positionToleranceMethod, ...])</p></td>
-<td><p>This method modifies the ShellSolidCoupling object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">positionToleranceMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'COMPUTED'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">influenceDistanceMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">influenceDistance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/ShellSolidCoupling.py#L85-L111"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues" title="Permalink to this definition">#</a></dt>
@@ -1885,72 +1391,6 @@ OFF.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Constraint.Tie.Tie.setValues" title="abaqus.Constraint.Tie.Tie.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([adjust, positionToleranceMethod, ...])</p></td>
-<td><p>This method modifies the Tie object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Constraint.Tie.Tie.swapSurfaces" title="abaqus.Constraint.Tie.Tie.swapSurfaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">swapSurfaces</span></code></a>()</p></td>
-<td><p>This method switches the main and secondary surfaces of a tied constraint.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>This method creates a Tie object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the constraint repository key.</p>
-</dd>
-<dt><strong>main</strong></dt><dd><p>A Region object specifying the name of the main surface.</p>
-</dd>
-<dt><strong>secondary</strong></dt><dd><p>A Region object specifying the name of the secondary surface.</p>
-</dd>
-<dt><strong>adjust</strong></dt><dd><p>A Boolean specifying whether initial positions of tied secondary nodes are adjusted to
-lie on the main surface. The default value is ON.</p>
-</dd>
-<dt><strong>positionToleranceMethod</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the position tolerance.
-Possible values are COMPUTED and SPECIFIED. The default value is COMPUTED.</p>
-</dd>
-<dt><strong>positionTolerance</strong></dt><dd><p>A Float specifying the position tolerance. The <strong>positionTolerance</strong> argument applies only
-when <strong>positionToleranceMethod</strong> = SPECIFIED. The default value is 0.0.</p>
-</dd>
-<dt><strong>tieRotations</strong></dt><dd><p>A Boolean specifying whether rotation degrees of freedom should be tied. The default
-value is ON.</p>
-</dd>
-<dt><strong>constraintRatioMethod</strong></dt><dd><p>A SymbolicConstant specifying the method used to determine the constraint ratio.
-Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT.</p>
-</dd>
-<dt><strong>constraintRatio</strong></dt><dd><p>A Float specifying the fractional distance between the main reference surface and the
-secondary node at which the translational constraint should act. The <strong>constraintRatio</strong>
-argument applies only when <strong>constraintRatioMethod</strong> = SPECIFIED. The default value is 0.0.</p>
-</dd>
-<dt><strong>constraintEnforcement</strong></dt><dd><p>A SymbolicConstant specifying the discretization method. Possible values are
-SOLVER_DEFAULT, NODE_TO_SURFACE, and SURFACE_TO_SURFACE. The default value is
-SOLVER_DEFAULT.</p>
-</dd>
-<dt><strong>thickness</strong></dt><dd><p>A Boolean specifying whether shell element thickness is considered. The default value is
-ON.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Constraint.Tie.Tie" title="abaqus.Constraint.Tie.Tie"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Tie</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Tie</span>
-</pre></div>
-</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">

@@ -407,67 +407,6 @@ exposed areas of the element facets are considered. The default value is NONE.</
 </tbody>
 </table>
 </div>
-<p>This method creates a Model object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
-</dd>
-<dt><strong>description</strong></dt><dd><p>A String specifying the purpose and contents of the Model object. The default value is
-an empty string.</p>
-</dd>
-<dt><strong>stefanBoltzmann</strong></dt><dd><p>None or a Float specifying the Stefan-Boltzmann constant. The default value is None.</p>
-</dd>
-<dt><strong>absoluteZero</strong></dt><dd><p>None or a Float specifying the absolute zero constant. The default value is None.</p>
-</dd>
-<dt><strong>waveFormulation</strong></dt><dd><p>A SymbolicConstant specifying the type of incident wave formulation to be used in
-acoustic problems. Possible values are NOT_SET, SCATTERED, and TOTAL. The default value
-is NOT_SET.</p>
-</dd>
-<dt><strong>modelType</strong></dt><dd><p>A SymbolicConstant specifying the analysis model type. Possible values are
-STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is STANDARD_EXPLICIT.</p>
-</dd>
-<dt><strong>universalGas</strong></dt><dd><p>None or a Float specifying the universal gas constant. The default value is None.</p>
-</dd>
-<dt><strong>copyConstraints</strong></dt><dd><p>A boolean specifying whether to copy the constraints created in the model to the model
-that instances this model. The default value is ON.</p>
-</dd>
-<dt><strong>copyConnectors</strong></dt><dd><p>A boolean specifying whether to copy the connectors created in the model to the model
-that instances this model. The default value is ON.</p>
-</dd>
-<dt><strong>copyInteractions</strong></dt><dd><p>A boolean specifying whether to copy the interactions created in the model to the model
-that instances this model. The default value is ON.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Model</span></code> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">Model</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries" title="abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EventSeries</span></code></a>(name, createStepName, ...[, ...])</p></td>
-<td><p>This method creates an EventSeries object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeriesType" title="abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeriesType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EventSeriesType</span></code></a>(name, createStepName[, fields])</p></td>
-<td><p>This method creates an EventSeriesType object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries">
 <span class="sig-name descname"><span class="pre">EventSeries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">createStepName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eventSeriesType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transformType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NONE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'STEP_TIME'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transformations</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.TableCollection.EventSeries.EventSeries" title="abaqus.TableCollection.EventSeries.EventSeries"><span class="pre">EventSeries</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/TableCollection/TableCollectionModel.py#L19-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries" title="Permalink to this definition">#</a></dt>
@@ -587,52 +526,6 @@ definition.</p>
 </tbody>
 </table>
 </div>
-<p>This method creates an ActivateElements object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>tableCollection</strong></dt><dd><p>A String specifying the name of the tableCollection object.</p>
-</dd>
-<dt><strong>activation</strong></dt><dd><p>A string specifying the name of progressive element activation.</p>
-</dd>
-<dt><strong>eigenTimeConst</strong></dt><dd><p>A Double specifying the time constant used to ramp up the eigenstrains at element
-activation.</p>
-</dd>
-<dt><strong>expansionTimeConstant</strong></dt><dd><p>A Double specifying the time constant used to ramp up the thermal strains at element
-activation.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.TableCollection.ActivateElements.ActivateElements" title="abaqus.TableCollection.ActivateElements.ActivateElements"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ActivateElements</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-<dt class="field-odd">Raises</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ActivateElements</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.TableCollection.ActivateElements.ActivateElements.setValues" title="abaqus.TableCollection.ActivateElements.ActivateElements.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
-<td><p>This method modifies the ActivateElements object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.TableCollection.ActivateElements.ActivateElements.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/TableCollection/ActivateElements.py#L59-L69"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TableCollection.ActivateElements.ActivateElements.setValues" title="Permalink to this definition">#</a></dt>
@@ -681,30 +574,6 @@ current ParameterTable.</p>
 </dl>
 </dd>
 </dl>
-<p>This method creates a DataTable object and places it in the dataTables array.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>label</strong></dt><dd><p>A String specifying a unique label name for the current ParameterTable object.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.TableCollection.DataTable.DataTable" title="abaqus.TableCollection.DataTable.DataTable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataTable</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-<dt class="field-odd">Raises</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbaqusException</span></code></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">tableCollections</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">parameterTables</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">DataTable</span>
-</pre></div>
-</div>
 </dd></dl>
 
 </section>
@@ -732,59 +601,6 @@ activated during an analysis.</p>
 <ul class="simple">
 <li><p><a href="#id3"><span class="problematic" id="id4">*</span></a>ELEMENT PROGRESSIVE ACTIVATION</p></li>
 </ul>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.setValue" title="abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.setValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValue</span></code></a>()</p></td>
-<td><p>The method modifies the ElementProgressiveActivation object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>This method creates an ElementProgressiveActivation object and places it in the
-elementProgressiveActivation repository.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the key of the repository.</p>
-</dd>
-<dt><strong>elset</strong></dt><dd><p>A Region object specifying the region containing the elements that will be activated
-during the analysis.</p>
-</dd>
-<dt><strong>deformation</strong></dt><dd><p>A Boolean value specifying whether the elements that have not yet been activated will
-follow the deformations of the active elements. Set <strong>deformation</strong> = ON when the
-deformation of the active elements is excessive. The default value is OFF.</p>
-</dd>
-<dt><strong>freeSurfaceType</strong></dt><dd><p>A SymbolicConstant specifying the exposed areas of the element facets that are active
-for convection or radiation boundary conditions to be applied. Possible values are NONE
-and FACET. If <strong>freeSurfaceType</strong> = FACET, user subroutine UEPACTIVATIONFACET will be called
-at the start of the increment for each element. If <strong>freeSurfaceType</strong> = NONE, all the
-exposed areas of the element facets are considered. The default value is NONE.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation" title="abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ElementProgressiveActivation</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-<dt class="field-odd">Raises</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbaqusException</span></code></dt><dd><p>If the region does not contain only elements.</p>
-</dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">ElementProgressiveActivation</span>
-</pre></div>
-</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -838,60 +654,6 @@ corruption.</p>
 </dl>
 </li>
 </ul>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.TableCollection.EventSeries.EventSeries.setValues" title="abaqus.TableCollection.EventSeries.EventSeries.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([transformType, timeSpan, ...])</p></td>
-<td><p>This method modifies the EventSeries object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>This method creates an EventSeries object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
-</dd>
-<dt><strong>createStepName</strong></dt><dd><p>A string specifying the step name.</p>
-</dd>
-<dt><strong>eventSeriesType</strong></dt><dd><p>A string specifying the type of event series.</p>
-</dd>
-<dt><strong>transformType</strong></dt><dd><p>A Symbolic constant specifying the type of transformation. Possible values are NONE,
-BOTH, TRANSLATE, and ROTATE. The default value is NONE.</p>
-</dd>
-<dt><strong>timeSpan</strong></dt><dd><p>A Symbolic constant specifying time. Possible values are TOTAL_TIME and STEP_TIME. The
-default value is STEP_TIME.</p>
-</dd>
-<dt><strong>transformations</strong></dt><dd><p>An Array specifying the required transformations over event series data.</p>
-</dd>
-<dt><strong>fileName</strong></dt><dd><p>A String specifying the filename.</p>
-</dd>
-<dt><strong>data</strong></dt><dd><p>An Array of double specifying the values of fields provided in EventSeriesType.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.TableCollection.EventSeries.EventSeries" title="abaqus.TableCollection.EventSeries.EventSeries"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EventSeries</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-<dt class="field-odd">Raises</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">EventSeriesData</span>
-</pre></div>
-</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -983,48 +745,6 @@ default value is STEP_TIME.</p>
 </tbody>
 </table>
 </div>
-<p>This method creates an EventSeriesType object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
-</dd>
-<dt><strong>createStepName</strong></dt><dd><p>A string specifying the step name.</p>
-</dd>
-<dt><strong>fields</strong></dt><dd><p>A String array specifying fields. The default value is an empty array.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.TableCollection.EventSeriesType.EventSeriesType" title="abaqus.TableCollection.EventSeriesType.EventSeriesType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EventSeriesType</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-<dt class="field-odd">Raises</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">EventSeriesType</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.TableCollection.EventSeriesType.EventSeriesType.setValues" title="abaqus.TableCollection.EventSeriesType.EventSeriesType.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([fields])</p></td>
-<td><p>This method modifies the EventSeriesType object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.TableCollection.EventSeriesType.EventSeriesType.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fields</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/TableCollection/EventSeriesType.py#L48-L63"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TableCollection.EventSeriesType.EventSeriesType.setValues" title="Permalink to this definition">#</a></dt>
@@ -1072,42 +792,6 @@ noneditable.</p>
 </dl>
 </li>
 </ul>
-<p>ParameterColumn is a constructor method that creates a ParameterColumn object and stores
-it in the array data structure. It is accessible from the ParameterTable object using a
-column member.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>type</strong></dt><dd><p>A SymbolicConstant specifying the data type of the parameter. Possible values are
-STRING, INTEGER, and FLOAT.</p>
-</dd>
-<dt><strong>unit</strong></dt><dd><p>A String specifying the unit of the parameter.</p>
-</dd>
-<dt><strong>description</strong></dt><dd><p>A String specifying the description of the parameter.</p>
-</dd>
-<dt><strong>default</strong></dt><dd><p>The default value of the first parameter. The data type of the value depends on the
-value of <strong>type</strong> argument.</p>
-</dd>
-<dt><strong>allowedValues</strong></dt><dd><p>A Set of allowed values for the parameter.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">ParameterTable</span></code> object.</dt><dd></dd>
-</dl>
-</dd>
-<dt class="field-odd">Raises</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">Incompatible</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">are</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">given</span></code></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">tableCollections</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">parameterTables</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Column</span>
-</pre></div>
-</div>
 </dd></dl>
 
 </section>
@@ -1153,40 +837,6 @@ ParameterColumn may lead to data corruption.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.TableCollection.ParameterTable.ParameterTable.Column" title="abaqus.TableCollection.ParameterTable.ParameterTable.Column"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Column</span></code></a>(type[, unit, description, default, ...])</p></td>
-<td><p>ParameterColumn is a constructor method that creates a ParameterColumn object and stores it in the array data structure.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>This method creates a ParameterTable object and places it in the parameterTables
-repository.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.TableCollection.ParameterTable.ParameterTable" title="abaqus.TableCollection.ParameterTable.ParameterTable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParameterTable</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">tableCollections</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ParameterTable</span>
-</pre></div>
-</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1279,52 +929,6 @@ corruption.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData" title="abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PropertyTableData</span></code></a>([label, regularize, ...])</p></td>
-<td><p>This method creates a PropertyTableData object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.TableCollection.PropertyTable.PropertyTable.setValues" title="abaqus.TableCollection.PropertyTable.PropertyTable.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([variables])</p></td>
-<td><p>This method modifies the PropertyTable object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>This method creates a PropertyTable object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
-</dd>
-<dt><strong>properties</strong></dt><dd><p>A string array specifying the multiple properties to build the parameter table type.</p>
-</dd>
-<dt><strong>variables</strong></dt><dd><p>A String array specifying multiple independent variables. The default value is an empty
-array.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.TableCollection.PropertyTable.PropertyTable" title="abaqus.TableCollection.PropertyTable.PropertyTable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PropertyTable</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-<dt class="field-odd">Raises</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">tableCollections</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">PropertyTable</span>
-</pre></div>
-</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1448,58 +1052,6 @@ and variables mentioned in the PropertyTable object.</p>
 </tbody>
 </table>
 </div>
-<p>This method creates a PropertyTableData object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>label</strong></dt><dd><p>A String specifying a unique label name for the current PropertyTable object.</p>
-</dd>
-<dt><strong>regularize</strong></dt><dd><p>A SymbolicConstant specifying the type of regularize to the user-defined property data.</p>
-</dd>
-<dt><strong>extrapolate</strong></dt><dd><p>A SymbolicConstant specifying the type of extrapolation of dependent variables outside
-the specified range of the independent variables.</p>
-</dd>
-<dt><strong>isTemp</strong></dt><dd><p>A Boolean specifying the dependency of properties on temperature.</p>
-</dd>
-<dt><strong>fieldNums</strong></dt><dd><p>An Int specifying the field variables on which properties are dependent.</p>
-</dd>
-<dt><strong>regularizeTolerance</strong></dt><dd><p>A Double specifying the tolerance to be used to regularize the property table data.</p>
-</dd>
-<dt><strong>data</strong></dt><dd><p>An Array of doubles specifying the values of the properties, the variables mentioned in
-PropertyTable, and the field variables mentioned in PropertyTableData.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.TableCollection.PropertyTableData.PropertyTableData" title="abaqus.TableCollection.PropertyTableData.PropertyTableData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PropertyTableData</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-<dt class="field-odd">Raises</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">tableCollections</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">propertyTables</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">PropertTableData</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.TableCollection.PropertyTableData.PropertyTableData.setValues" title="abaqus.TableCollection.PropertyTableData.PropertyTableData.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
-<td><p>This method modifies the PropertyTableData object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.TableCollection.PropertyTableData.PropertyTableData.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/TableCollection/PropertyTableData.py#L73-L83"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TableCollection.PropertyTableData.PropertyTableData.setValues" title="Permalink to this definition">#</a></dt>
@@ -1546,46 +1098,6 @@ ParameterTable and PropertyTable objects.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.TableCollection.TableCollection.TableCollection.DataTable" title="abaqus.TableCollection.TableCollection.TableCollection.DataTable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataTable</span></code></a>(label)</p></td>
-<td><p>This method creates a DataTable object and places it in the dataTables array.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.TableCollection.TableCollection.TableCollection.ParameterTable" title="abaqus.TableCollection.TableCollection.TableCollection.ParameterTable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParameterTable</span></code></a>(name)</p></td>
-<td><p>This method creates a ParameterTable object and places it in the parameterTables repository.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.TableCollection.TableCollection.TableCollection.PropertyTable" title="abaqus.TableCollection.TableCollection.TableCollection.PropertyTable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PropertyTable</span></code></a>(name, properties[, variables])</p></td>
-<td><p>This method creates a PropertyTable object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>This method creates a TableCollection object and places it in the tableCollections
-repository.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.TableCollection.TableCollection.TableCollection" title="abaqus.TableCollection.TableCollection.TableCollection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableCollection</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">TableCollection</span>
-</pre></div>
-</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">

@@ -742,48 +742,6 @@ dimensions.</p>
 </tbody>
 </table>
 </div>
-<p>This method creates an ImageAnimation object from the specified filename and format.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>fileName</strong></dt><dd><p>A String specifying the name of the animation file to generate.</p>
-</dd>
-<dt><strong>format</strong></dt><dd><p>A SymbolicConstant specifying the format of the generated file. Possible values are AVI,
-QUICKTIME.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.Animation.ImageAnimation.ImageAnimation" title="abaqus.Animation.ImageAnimation.ImageAnimation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ImageAnimation</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">ImageAnimation</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.ImageAnimation.ImageAnimation.close" title="abaqus.Animation.ImageAnimation.ImageAnimation.close"><code class="xref py py-obj docutils literal notranslate"><span class="pre">close</span></code></a>()</p></td>
-<td><p>This method closes the ImageAnimation object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Animation.ImageAnimation.ImageAnimation.closed" title="abaqus.Animation.ImageAnimation.ImageAnimation.closed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">closed</span></code></a>()</p></td>
-<td><p>This method indicates if the ImageAnimation is open or closed for writing animation frames.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.ImageAnimation.ImageAnimation.writeFrame" title="abaqus.Animation.ImageAnimation.ImageAnimation.writeFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeFrame</span></code></a>([canvasObjects])</p></td>
-<td><p>This method adds a frame to the ImageAnimation object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Animation.ImageAnimation.ImageAnimation.close">
 <span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/ImageAnimation.py#L61-L63"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.ImageAnimation.ImageAnimation.close" title="Permalink to this definition">#</a></dt>
@@ -897,87 +855,6 @@ Upon creation, the Movie object is added to the session.movies repository.</p>
 </dd>
 <dt><strong>memory: int</strong></dt><dd><p>An Int specifying the memory taken by the movie frames as selected.</p>
 </dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Animation.Movie.Movie.setValues" title="abaqus.Animation.Movie.Movie.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([startFrame, endFrame, ...])</p></td>
-<td><p>This method modifies the Movie object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>This method creates a Movie object from the contents of the specified file.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the repository name for the movie.</p>
-</dd>
-<dt><strong>fileName</strong></dt><dd><p>A String specifying the file from which the movie is to be read. The file extension must
-be specified and indicates the movie format (.avi, .mov, .mpeg, or .wmv).</p>
-</dd>
-<dt><strong>startFrame</strong></dt><dd><p>An Int specifying the first frame to be displayed from this movie. The default value is
-0.</p>
-</dd>
-<dt><strong>endFrame</strong></dt><dd><p>An Int specifying the last frame to be displayed from this movie. A negative number will
-indicate reverse numbering: -1 is the last frame of the movie. The default value is −1.</p>
-</dd>
-<dt><strong>timelineStartFrame</strong></dt><dd><p>An Int specifying the global timeline frame number that corresponds to <strong>startFrame</strong>. A
-value of 0 will indicate the first frame to be displayed in the viewport. The default
-value is 0.</p>
-</dd>
-<dt><strong>timelineEndFrame</strong></dt><dd><p>An Int specifying the global timeline frame number that corresponds to <strong>endFrame</strong>. A
-negative number will indicate reverse numbering: -1 indicates the last frame to be
-displayed in the viewport. The default value is −1.</p>
-</dd>
-<dt><strong>timelineStartTime</strong></dt><dd><p>A Float specifying the global timeline time that corresponds to the time of
-<strong>startFrame</strong>. The default value is 0.0.</p>
-</dd>
-<dt><strong>timelineEndTime</strong></dt><dd><p>The SymbolicConstant END_FRAME_TIME or a Float specifying the global timeline time that
-corresponds to the time of <strong>endFrame</strong>. The SymbolicConstant END_FRAME_TIME indicates the
-time in this movie corresponding to <strong>endFrame</strong>. The default value is END_FRAME_TIME.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Animation.Movie.Movie" title="abaqus.Animation.Movie.Movie"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Movie</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-<dt class="field-odd">Raises</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">ValueError</span></code></dt><dd><ul class="simple">
-<li><p>If <strong>fileName</strong> does not exist or can not be read:
-ValueError: Unable to open movie file</p></li>
-<li><p>If <strong>fileName</strong> references an unsupported movie file format:
-ValueError: Unsupported movie format</p></li>
-<li><p>If the contents of <strong>fileName</strong> are corrupt or can not be decoded:
-ValueError: Unable to decode movie file</p></li>
-</ul>
-</dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Movie</span>
-</pre></div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>duration</strong></dt><dd></dd>
-<dt><strong>height</strong></dt><dd></dd>
-<dt><strong>memory</strong></dt><dd></dd>
-<dt><strong>numFrames</strong></dt><dd></dd>
-<dt><strong>width</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>

@@ -1226,71 +1226,6 @@ OFF.</p>
 </tbody>
 </table>
 </div>
-<p>This method creates an AssembledFastener object. Although the constructor is available
-both for parts and for the assembly, AssembledFastener objects are currently supported
-only under the assembly.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
-</dd>
-<dt><strong>region</strong></dt><dd><p>A Region object specifying the region of attachment points to which assembled fasteners
-are applied.</p>
-</dd>
-<dt><strong>templateModel</strong></dt><dd><p>A String specifying the name of the template model.</p>
-</dd>
-<dt><strong>controlSet</strong></dt><dd><p>A Region object specifying the template model control point set. The set must contain a
-single node or vertex.</p>
-</dd>
-<dt><strong>templateSurfaces</strong></dt><dd><p>A sequence of Strings specifying the names of the template model surfaces that are
-referenced by tie or coupling constraints.</p>
-</dd>
-<dt><strong>assignedSurfaces</strong></dt><dd><p>A sequence of Strings specifying the names of the main model surfaces that will be
-substituted for the template model constraint surfaces.</p>
-</dd>
-<dt><strong>propertyPrefix</strong></dt><dd><p>A String specifying the name of the property prefix string. This string will be
-prepended to every property name as it is copied to the main model from the template
-model.</p>
-</dd>
-<dt><strong>orientMethod</strong></dt><dd><p>A SymbolicConstant specifying the method used to orient the virtual instances of the
-template model at each attachment point. Possible values are NORMALS and CSYS. The
-default value is NORMALS.</p>
-</dd>
-<dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system. If <strong>localCsys</strong> = None,
-the global coordinate system is used. When this member is queried, it returns an Int.
-The default value is None.This argument applies only when <strong>orientMethod</strong> = CSYS.</p>
-</dd>
-<dt><strong>scriptName</strong></dt><dd><p>A String specifying the name of the property generation script. The default value is an
-empty string.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.EngineeringFeature.AssembledFastener.AssembledFastener" title="abaqus.EngineeringFeature.AssembledFastener.AssembledFastener"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AssembledFastener</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">engineeringFeatures</span><span class="o">.</span><span class="n">AssembledFastener</span>
-<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">engineeringFeatures</span><span class="o">.</span><span class="n">AssembledFastener</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues" title="abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([orientMethod, localCsys, scriptName])</p></td>
-<td><p>This method modifies the AssembledFastener object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">orientMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NORMALS'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scriptName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/AssembledFastener.py#L99-L121"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues" title="Permalink to this definition">#</a></dt>
@@ -1359,85 +1294,6 @@ The ContourIntegral object is derived from the Crack object.</p>
 </tbody>
 </table>
 </div>
-<p>This method creates a ContourIntegral object. Although the constructor is available both
-for parts and for the assembly, ContourIntegral objects are currently supported only
-under the assembly.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
-</dd>
-<dt><strong>crackFront</strong></dt><dd><p>A RegionArray object specifying the crack-front region to which the contour integral is
-applied. If the crack-front consists of a single region, a Region object may be
-specified instead of a sequence with a single item in it.</p>
-</dd>
-<dt><strong>crackTip</strong></dt><dd><p>A RegionArray object specifying the crack-tip region to which the contour integral is
-applied. If the crack-tip consists of a single region, a Region object may be specified
-instead of a sequence with a single item in it.</p>
-</dd>
-<dt><strong>extensionDirectionMethod</strong></dt><dd><p>A SymbolicConstant specifying how the virtual crack extension direction vectors are
-defined. Possible values are CRACK_NORMAL and Q_VECTORS.</p>
-</dd>
-<dt><strong>symmetric</strong></dt><dd><p>A Boolean specifying whether the crack is defined on a half model (about a symmetry
-plane) or whether it is defined on the whole model. The default value is OFF.</p>
-</dd>
-<dt><strong>listOfRegions</strong></dt><dd><p>A Boolean specifying whether the regions specified by <strong>crackFront</strong> and <strong>crackTip</strong> are
-specified using a single region or tuples of region objects. The default value is OFF.</p>
-</dd>
-<dt><strong>crackFrontName</strong></dt><dd><p>A String specifying the name of the crack-front region generated from the tuple of
-regions specifying the crack-front region. This argument is valid only when
-<strong>listOfRegions</strong> is ON. The default value is <a href="#id5"><span class="problematic" id="id6">**</span></a>name**+Front.</p>
-</dd>
-<dt><strong>crackTipName</strong></dt><dd><p>A String specifying the name of the crack-tip region generated from the tuple of regions
-specifying the crack-tip region. This parameter is valid only when <strong>listOfRegions</strong> = ON.
-The default value is <a href="#id7"><span class="problematic" id="id8">**</span></a>name**+Tip.</p>
-</dd>
-<dt><strong>crackNormal</strong></dt><dd><p>A sequence of sequences of Floats specifying the two points of the vector that describes
-the crack normal direction. Each point is defined by a tuple of two or three coordinates
-indicating its position. This argument is required only when
-<strong>extensionDirectionMethod</strong> = CRACK_NORMAL. The default value is an empty sequence.</p>
-</dd>
-<dt><strong>qVectors</strong></dt><dd><p>A sequence of sequences of sequences of Floats specifying the vectors that indicate the
-set of crack extension directions. Each vector is described by a tuple of two points,
-and each point is described by a tuple of two or three coordinates indicating its
-position. This argument is required only when <strong>extensionDirectionMethod</strong> = Q_VECTORS. The
-default value is an empty sequence.</p>
-</dd>
-<dt><strong>midNodePosition</strong></dt><dd><p>A Float specifying the position of the midside node along the edges of the second-order
-elements that radiate from the crack tip. Possible values are 0.0 &lt;&lt; <strong>midNodeParameter</strong>
-&lt;&lt; 1.0. The default value is 0.5.</p>
-</dd>
-<dt><strong>collapsedElementAtTip</strong></dt><dd><p>A SymbolicConstant specifying the crack-tip singularity. Possible values are NONE,
-SINGLE_NODE, and DUPLICATE_NODES. The default value is NONE.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.EngineeringFeature.ContourIntegral.ContourIntegral" title="abaqus.EngineeringFeature.ContourIntegral.ContourIntegral"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ContourIntegral</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">engineeringFeatures</span><span class="o">.</span><span class="n">ContourIntegral</span>
-<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">engineeringFeatures</span><span class="o">.</span><span class="n">ContourIntegral</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues" title="abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([symmetric, listOfRegions, ...])</p></td>
-<td><p>This method modifies the ContourIntegral object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">symmetric</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listOfRegions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crackFrontName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crackTipName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crackNormal</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qVectors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">midNodePosition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collapsedElementAtTip</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NONE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/ContourIntegral.py#L118-L166"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues" title="Permalink to this definition">#</a></dt>
@@ -1453,11 +1309,11 @@ specified using a single region or tuples of region objects. The default value i
 </dd>
 <dt><strong>crackFrontName</strong></dt><dd><p>A String specifying the name of the crack-front region generated from the tuple of
 regions specifying the crack-front region. This argument is valid only when
-<strong>listOfRegions</strong> is ON. The default value is <a href="#id9"><span class="problematic" id="id10">**</span></a>name**+Front.</p>
+<strong>listOfRegions</strong> is ON. The default value is <a href="#id5"><span class="problematic" id="id6">**</span></a>name**+Front.</p>
 </dd>
 <dt><strong>crackTipName</strong></dt><dd><p>A String specifying the name of the crack-tip region generated from the tuple of regions
 specifying the crack-tip region. This parameter is valid only when <strong>listOfRegions</strong> = ON.
-The default value is <a href="#id11"><span class="problematic" id="id12">**</span></a>name**+Tip.</p>
+The default value is <a href="#id7"><span class="problematic" id="id8">**</span></a>name**+Tip.</p>
 </dd>
 <dt><strong>crackNormal</strong></dt><dd><p>A sequence of sequences of Floats specifying the two points of the vector that describes
 the crack normal direction. Each point is defined by a tuple of two or three coordinates
@@ -1527,54 +1383,6 @@ The DebondVCCT object is derived from the Crack object.</p>
 </tbody>
 </table>
 </div>
-<p>This method creates a DebondVCCT object. Although the constructor is available both for
-parts and for the assembly, DebondVCCT objects are currently supported only under the
-assembly.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
-</dd>
-<dt><strong>initiationStep</strong></dt><dd><p>A String specifying the name of the step in which the DebondVCCT object is created.</p>
-</dd>
-<dt><strong>surfToSurfInteraction</strong></dt><dd><p>A String specifying the name of the SurfaceToSurfaceContactStd object that defines the
-surface to surface interaction for the crack surfaces.</p>
-</dd>
-<dt><strong>debondingForceAmplitude</strong></dt><dd><p>A SymbolicConstant specifying whether the debond force between the two surfaces at the
-crack tip is to be released immediately or gradually during the following increment
-after debonding. Possible values are STEP and RAMP. The default value is STEP.</p>
-</dd>
-<dt><strong>printToDATFrequency</strong></dt><dd><p>An Int specifying the frequency at which output will be printed to DAT file. The default
-value is 1.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.EngineeringFeature.DebondVCCT.DebondVCCT" title="abaqus.EngineeringFeature.DebondVCCT.DebondVCCT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DebondVCCT</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">engineeringFeatures</span><span class="o">.</span><span class="n">DebondVCCT</span>
-<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">engineeringFeatures</span><span class="o">.</span><span class="n">DebondVCCT</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.setValues" title="abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([debondingForceAmplitude, ...])</p></td>
-<td><p>This method modifies the DebondVCCT object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">debondingForceAmplitude</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'STEP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">printToDATFrequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/DebondVCCT.py#L79-L96"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.setValues" title="Permalink to this definition">#</a></dt>
@@ -1625,71 +1433,6 @@ OFF.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues" title="abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([ur1, ur2, ur3, coupling, ...])</p></td>
-<td><p>This method modifies the DiscreteFastener object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>This method creates a DiscreteFastener object. Although the constructor is available
-both for parts and for the assembly, DiscreteFastener objects are currently supported
-only under the assembly.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
-</dd>
-<dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the fastener is applied.</p>
-</dd>
-<dt><strong>influenceRadius</strong></dt><dd><p>The SymbolicConstant WHOLE_SURFACE or a Float specifying the coupling influence radius.</p>
-</dd>
-<dt><strong>ur1</strong></dt><dd><p>A Boolean specifying whether to constrain rotational displacement component about the
-1-direction. The default value is ON.</p>
-</dd>
-<dt><strong>ur2</strong></dt><dd><p>A Boolean specifying whether to constrain rotational displacement component about the
-2-direction. The default value is ON.</p>
-</dd>
-<dt><strong>ur3</strong></dt><dd><p>A Boolean specifying whether to constrain rotational displacement component about the
-3-direction. The default value is ON.</p>
-</dd>
-<dt><strong>coupling</strong></dt><dd><p>A SymbolicConstant specifying the coupling method used to couple the displacement and
-rotation of each attachment point to the average motion of the surface nodes within the
-radius of influence from the fastening point. Possible values are CONTINUUM and
-STRUCTURAL. The default value is CONTINUUM.</p>
-</dd>
-<dt><strong>weightingMethod</strong></dt><dd><p>A SymbolicConstant specifying the weighting scheme to be used to weight the contribution
-of the displacements of the surface nodes within the radius of influence to the motion
-of the fastening point. UNIFORM, LINEAR, QUADRATIC, and CUBIC indicate uniform, linear
-decreasing, quadratic polynomial decreasing, and cubic polynomial monotonic decreasing
-weight distributions. Possible values are UNIFORM, LINEAR, QUADRATIC, and CUBIC. The
-default value is UNIFORM.</p>
-</dd>
-<dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of fastener couplings.
-If <strong>localCsys</strong> = None, couplings are defined in the global coordinate system. When this
-member is queried, it returns an Int. The default value is None.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener" title="abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DiscreteFastener</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">engineeringFeatures</span><span class="o">.</span><span class="n">DiscreteFastener</span>
-<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">engineeringFeatures</span><span class="o">.</span><span class="n">DiscreteFastener</span>
-</pre></div>
-</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1873,49 +1616,6 @@ The HeatCapacitance object is derived from the Inertia object.</p>
 </tbody>
 </table>
 </div>
-<p>This method creates a HeatCapacitance object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
-</dd>
-<dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the heat capacitance is applied.</p>
-</dd>
-<dt><strong>table</strong></dt><dd><p>A sequence of sequences of Floats specifying heat capacitance properties. The items in
-the table data are described below.</p>
-</dd>
-<dt><strong>temperatureDependency</strong></dt><dd><p>A Boolean specifying whether the data depend on temperature. The default value is OFF.</p>
-</dd>
-<dt><strong>dependencies</strong></dt><dd><p>An Int specifying the number of field variable dependencies. The default value is 0.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance" title="abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HeatCapacitance</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">engineeringFeatures</span><span class="o">.</span><span class="n">HeatCapacitance</span>
-<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">engineeringFeatures</span><span class="o">.</span><span class="n">HeatCapacitance</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.setValues" title="abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([temperatureDependency, dependencies])</p></td>
-<td><p>This method modifies the HeatCapacitance object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">temperatureDependency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dependencies</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/HeatCapacitance.py#L83-L93"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.setValues" title="Permalink to this definition">#</a></dt>
@@ -1977,51 +1677,6 @@ The NonstructuralMass object is derived from the Inertia object.</p>
 </tbody>
 </table>
 </div>
-<p>This method creates a NonstructuralMass object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
-</dd>
-<dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the mass is applied.</p>
-</dd>
-<dt><strong>units</strong></dt><dd><p>A SymbolicConstant specifying the units used to specify the nonstructural mass. Possible
-values are TOTAL_MASS, MASS_PER_VOLUME, MASS_PER_AREA, and MASS_PER_LENGTH.</p>
-</dd>
-<dt><strong>magnitude</strong></dt><dd><p>A Float specifying the mass magnitude.</p>
-</dd>
-<dt><strong>distribution</strong></dt><dd><p>A SymbolicConstant specifying the distribution of the nonstructural mass. Possible
-values are MASS_PROPORTIONAL and VOLUME_PROPORTIONAL. The default value is
-MASS_PROPORTIONAL.The <strong>distribution</strong> argument applies only when <strong>units</strong> = TOTAL_MASS.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass" title="abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NonstructuralMass</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">engineeringFeatures</span><span class="o">.</span><span class="n">NonstructuralMass</span>
-<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">engineeringFeatures</span><span class="o">.</span><span class="n">NonstructuralMass</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.setValues" title="abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([distribution])</p></td>
-<td><p>This method modifies the NonstructuralMass object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">distribution</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'MASS_PROPORTIONAL'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/NonstructuralMass.py#L77-L87"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.setValues" title="Permalink to this definition">#</a></dt>
@@ -2069,139 +1724,6 @@ OFF.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener.setValues" title="abaqus.EngineeringFeature.PointFastener.PointFastener.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([directionVector, targetSurfaces, ...])</p></td>
-<td><p>This method modifies the PointFastener object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>This method creates a PointFastener object. Although the constructor is available both
-for parts and for the assembly, PointFastener objects are currently supported only under
-the assembly.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
-</dd>
-<dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which fasteners are applied.</p>
-</dd>
-<dt><strong>physicalRadius</strong></dt><dd><p>A Float specifying the physical fastener radius.</p>
-</dd>
-<dt><strong>directionVector</strong></dt><dd><p>A VertexArray object of length 2 specifying the direction of projection. Instead of
-through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates. The
-default value is None.</p>
-</dd>
-<dt><strong>targetSurfaces</strong></dt><dd><p>A RegionArray object specifying surfaces to be fastened. The default value is MODEL.</p>
-</dd>
-<dt><strong>ur1</strong></dt><dd><p>A Boolean specifying whether to constrain rotational displacement component about the
-1-direction. The default value is ON.</p>
-</dd>
-<dt><strong>ur2</strong></dt><dd><p>A Boolean specifying whether to constrain rotational displacement component about the
-2-direction. The default value is ON.</p>
-</dd>
-<dt><strong>ur3</strong></dt><dd><p>A Boolean specifying whether to constrain rotational displacement component about the
-3-direction. The default value is ON.</p>
-</dd>
-<dt><strong>attachmentMethod</strong></dt><dd><p>A SymbolicConstant specifying the method used to locate points for attaching fasteners.
-Possible values are FACETOFACE, EDGETOFACE, FACETOEDGE, and EDGETOEDGE. The default
-value is FACETOFACE.</p>
-</dd>
-<dt><strong>influenceRadius</strong></dt><dd><p>The SymbolicConstant DEFAULT or a Float specifying the maximum distance from the
-projection point on a connected surface within which the nodes on that surface must lie
-to contribute to the motion of the projection point. If the value is DEFAULT, a radius
-is computed from the fastener diameter and the surface facet lengths. The default value
-is DEFAULT.</p>
-</dd>
-<dt><strong>searchRadius</strong></dt><dd><p>The SymbolicConstant DEFAULT or a Float specifying the distance from the positioning
-points within which the connected points must lie. The default value is DEFAULT.</p>
-</dd>
-<dt><strong>maximumLayers</strong></dt><dd><p>The SymbolicConstant ALL or an Int specifying the maximum number of layers for each
-fastener. If the value is ALL, the maximum possible number of layers within the
-searchRadius will be used for each fastener. The default value is ALL.</p>
-</dd>
-<dt><strong>coupling</strong></dt><dd><p>A SymbolicConstant specifying the coupling method used to couple the displacement and
-rotation of each attachment point to the average motion of the surface nodes within the
-radius of influence from the fastener projection point. Possible values are CONTINUUM
-and STRUCTURAL. The default value is CONTINUUM.</p>
-</dd>
-<dt><strong>weightingMethod</strong></dt><dd><p>A SymbolicConstant specifying the weighting scheme to be used to weight the contribution
-of the displacements of the surface nodes within the radius of influence to the motion
-of the fastener projection point. UNIFORM, LINEAR, QUADRATIC, and CUBIC indicate
-uniform, linear decreasing, quadratic polynomial decreasing, and cubic polynomial
-monotonic decreasing weight distributions. Possible values are UNIFORM, LINEAR,
-QUADRATIC, and CUBIC. The default value is UNIFORM.</p>
-</dd>
-<dt><strong>additionalMass</strong></dt><dd><p>A Float specifying the mass that will be distributed to fastener attachment points. The
-default value is 0.0.</p>
-</dd>
-<dt><strong>adjustOrientation</strong></dt><dd><p>A Boolean specifying whether to adjust localCsys such that the local z-axis for each
-fastener is normal to the surface that is closest to the reference node for that
-fastener. The default value is ON.</p>
-</dd>
-<dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system. If <strong>localCsys</strong> = None,
-the global coordinate system is used. When this member is queried, it returns an Int.
-The default value is None.</p>
-</dd>
-<dt><strong>connectionType</strong></dt><dd><p>A SymbolicConstant specifying the fastener connection type. Possible values are
-CONNECTOR and BEAM_MPC. The default value is CONNECTOR.</p>
-</dd>
-<dt><strong>sectionName</strong></dt><dd><p>A String specifying the connector section assigned to generated connectors. The default
-value is an empty string.</p>
-</dd>
-<dt><strong>connectorOrientationLocalCsys1</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the first connector
-point in generated connectors. If <strong>connectorOrientationLocalCsys1</strong> = None, the degrees of
-freedom are defined in the global coordinate system. When this member is queried, it
-returns an Int. The default value is None.</p>
-</dd>
-<dt><strong>axis1</strong></dt><dd><p>A SymbolicConstant specifying the axis of a datum coordinate system about which an
-additional rotation is applied for the first point in generated connectors. Possible
-values are AXIS_1, AXIS_2, and AXIS_3. The default value is AXIS_1.</p>
-</dd>
-<dt><strong>angle1</strong></dt><dd><p>A Float specifying the angle of the additional rotation for the first point in generated
-connectors. The default value is 0.0.</p>
-</dd>
-<dt><strong>orient2SameAs1</strong></dt><dd><p>A Boolean specifying whether or not the second connector point in generated connectors
-is to use the same local coordinate system, axis, and angle as the first point. The
-default value is ON.</p>
-</dd>
-<dt><strong>connectorOrientationLocalCsys2</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system of the second
-connector point in generated connectors. If <strong>connectorOrientationLocalCsys2</strong> = None, the
-degrees of freedom are defined in the global coordinate system. When this member is
-queried, it returns an Int. The default value is None.</p>
-</dd>
-<dt><strong>axis2</strong></dt><dd><p>A SymbolicConstant specifying the axis of a datum coordinate system about which an
-additional rotation is applied for the second point in generated connectors. Possible
-values are AXIS_1, AXIS_2, and AXIS_3. The default value is AXIS_1.</p>
-</dd>
-<dt><strong>angle2</strong></dt><dd><p>A Float specifying the angle of the additional rotation for the second point in
-generated connectors. The default value is 0.0.</p>
-</dd>
-<dt><strong>unsorted</strong></dt><dd><p>A Boolean specifying whether the analysis product should leave targetSurfaces in the
-given unsorted order, or sort them by proximity to determine the connectivity of
-fastening points. The default value is OFF.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.EngineeringFeature.PointFastener.PointFastener" title="abaqus.EngineeringFeature.PointFastener.PointFastener"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PointFastener</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">engineeringFeatures</span><span class="o">.</span><span class="n">PointFastener</span>
-<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">engineeringFeatures</span><span class="o">.</span><span class="n">PointFastener</span>
-</pre></div>
-</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -2366,80 +1888,6 @@ The PointMassInertia object is derived from the Inertia object.</p>
 </tbody>
 </table>
 </div>
-<p>This method creates a PointMassInertia object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
-</dd>
-<dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the mass or rotary inertia is applied.</p>
-</dd>
-<dt><strong>mass</strong></dt><dd><p>A Float specifying the mass magnitude for isotropic mass. This parameter cannot be
-specified when anisotropic mass terms are specified. The default value is 0.0.</p>
-</dd>
-<dt><strong>mass1</strong></dt><dd><p>A Float specifying the mass in the 1-direction for anisotropic mass. This parameter
-cannot be specified when isotropic mass is also specified. The default value is 0.0.</p>
-</dd>
-<dt><strong>mass2</strong></dt><dd><p>A Float specifying the mass in the 2-direction for anisotropic mass. This parameter
-cannot be specified when isotropic mass is also specified. The default value is 0.0.</p>
-</dd>
-<dt><strong>mass3</strong></dt><dd><p>A Float specifying the mass in the 3-direction for anisotropic mass. This parameter
-cannot be specified when isotropic mass is also specified. The default value is 0.0.</p>
-</dd>
-<dt><strong>i11</strong></dt><dd><p>A Float specifying the rotary inertia about the local 1-axis, I11I11. The default value
-is 0.0.</p>
-</dd>
-<dt><strong>i22</strong></dt><dd><p>A Float specifying the rotary inertia about the local 2-axis, I22I22. The default value
-is 0.0.</p>
-</dd>
-<dt><strong>i33</strong></dt><dd><p>A Float specifying the rotary inertia about the local 3-axis, I33I33. The default value
-is 0.0.</p>
-</dd>
-<dt><strong>i12</strong></dt><dd><p>A Float specifying the product of inertia, I12I12. The default value is 0.0.</p>
-</dd>
-<dt><strong>i13</strong></dt><dd><p>A Float specifying the product of inertia, I13I13. The default value is 0.0.</p>
-</dd>
-<dt><strong>i23</strong></dt><dd><p>A Float specifying the product of inertia, I23I23. The default value is 0.0.</p>
-</dd>
-<dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system for the anisotropic
-mass terms (when specified), and the rotary inertia (when specified). If
-<strong>localCsys</strong> = None, the anisotropic mass and rotary inertia data are defined in the global
-coordinate system. The default value is None.</p>
-</dd>
-<dt><strong>alpha</strong></dt><dd><p>A Float specifying the alpha damping magnitude. The default value is 0.0.This argument
-applies only to Abaqus/Standard analyses.</p>
-</dd>
-<dt><strong>composite</strong></dt><dd><p>A Float specifying the composite damping magnitude. The default value is 0.0.This
-argument applies only to Abaqus/Standard analyses.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.EngineeringFeature.PointMassInertia.PointMassInertia" title="abaqus.EngineeringFeature.PointMassInertia.PointMassInertia"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PointMassInertia</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">engineeringFeatures</span><span class="o">.</span><span class="n">PointMassInertia</span>
-<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">engineeringFeatures</span><span class="o">.</span><span class="n">PointMassInertia</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues" title="abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([mass, mass1, mass2, mass3, i11, ...])</p></td>
-<td><p>This method modifies the PointMassInertia object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mass</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mass1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mass2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mass3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i11</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i22</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i33</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i12</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i13</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i23</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">composite</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/PointMassInertia.py#L116-L175"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues" title="Permalink to this definition">#</a></dt>
@@ -2543,63 +1991,6 @@ is OFF.</p>
 </tbody>
 </table>
 </div>
-<p>This method creates a SpringDashpotToGround object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
-</dd>
-<dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the springs and/or dashpots are applied.</p>
-</dd>
-<dt><strong>dof</strong></dt><dd><p>An Int specifying the degree of freedom associated with the spring and dashpot 
-behaviors.</p>
-</dd>
-<dt><strong>orientation</strong></dt><dd><p>None or a DatumCsys object specifying the local directions for the spring and/or 
-dashpot. If <strong>orientation</strong> = None, the spring and/or dashpot data are defined in the global 
-coordinate system. The default value is None.</p>
-</dd>
-<dt><strong>springBehavior</strong></dt><dd><p>A Boolean specifying whether to apply spring behavior to the selected points. The 
-default value is OFF.At least one of the arguments <strong>springBehavior</strong> = ON or 
-<strong>dashpotBehavior</strong> = ON must be specified.</p>
-</dd>
-<dt><strong>dashpotBehavior</strong></dt><dd><p>A Boolean specifying whether to apply dashpot behavior to the selected points. The 
-default value is OFF.At least one of the arguments <strong>springBehavior</strong> = ON or 
-<strong>dashpotBehavior</strong> = ON must be specified.</p>
-</dd>
-<dt><strong>springStiffness</strong></dt><dd><p>A Float specifying the force per relative displacement for the spring. The default value 
-is 0.0.</p>
-</dd>
-<dt><strong>dashpotCoefficient</strong></dt><dd><p>A Float specifying the force per relative velocity for the dashpot. The default value is 
-0.0.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround" title="abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SpringDashpotToGround</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">engineeringFeatures</span><span class="o">.</span><span class="n">SpringDashpotToGround</span>
-<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">engineeringFeatures</span>            <span class="o">.</span><span class="n">SpringDashpotToGround</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues" title="abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([orientation, springBehavior, ...])</p></td>
-<td><p>This method modifies the SpringDashpotToGround object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">orientation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">springBehavior</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dashpotBehavior</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">springStiffness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dashpotCoefficient</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/SpringDashpotToGround.py#L97-L128"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues" title="Permalink to this definition">#</a></dt>
@@ -2669,74 +2060,6 @@ is OFF.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues" title="abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([dof1, dof2, orientation, ...])</p></td>
-<td><p>This method modifies the TwoPointSpringDashpot object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>This method creates a TwoPointSpringDashpot object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
-</dd>
-<dt><strong>regionPairs</strong></dt><dd><p>A sequence of pairs of Region objects specifying the points between which the springs 
-and/or dashpots are applied.</p>
-</dd>
-<dt><strong>axis</strong></dt><dd><p>A SymbolicConstant specifying whether the axis of the springs and/or dashpots follows 
-the rotation of the nodes or is in a specified direction. Possible values are NODAL_LINE 
-and FIXED_DOF.</p>
-</dd>
-<dt><strong>dof1</strong></dt><dd><p>An Int specifying the degree of freedom with which the springs and/or dashpots are 
-associated at their first points. The <strong>dof1</strong> argument applies only when 
-<strong>axis</strong> = FIXED_DOFS. The default value is 0.</p>
-</dd>
-<dt><strong>dof2</strong></dt><dd><p>An Int specifying the degree of freedom with which the springs and/or dashpots are 
-associated at their second points. The <strong>dof2</strong> argument applies only when 
-<strong>axis</strong> = FIXED_DOFS. The default value is 0.</p>
-</dd>
-<dt><strong>orientation</strong></dt><dd><p>None or a DatumCsys object specifying the local directions for the spring and/or 
-dashpot. If <strong>orientation</strong> = None, the spring and/or dashpot data are defined in the global 
-coordinate system. The default value is None.The <strong>orientation</strong> argument applies only 
-when <strong>axis</strong> = FIXED_DOFS.</p>
-</dd>
-<dt><strong>springBehavior</strong></dt><dd><p>A Boolean specifying whether to apply spring behavior to the selected point pairs. The 
-default value is OFF.At least one of the arguments <strong>springBehavior</strong> = ON or 
-<strong>dashpotBehavior</strong> = ON must be specified.</p>
-</dd>
-<dt><strong>dashpotBehavior</strong></dt><dd><p>A Boolean specifying whether to apply dashpot behavior to the selected point pairs. The 
-default value is OFF.At least one of the arguments <strong>springBehavior</strong> = ON or 
-<strong>dashpotBehavior</strong> = ON must be specified.</p>
-</dd>
-<dt><strong>springStiffness</strong></dt><dd><p>A Float specifying the force per relative displacement for the springs. The default 
-value is 0.0.</p>
-</dd>
-<dt><strong>dashpotCoefficient</strong></dt><dd><p>A Float specifying the force per relative velocity for the dashpots. The default value 
-is 0.0.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot" title="abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TwoPointSpringDashpot</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">engineeringFeatures</span><span class="o">.</span><span class="n">TwoPointSpringDashpot</span>
-<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">engineeringFeatures</span>            <span class="o">.</span><span class="n">TwoPointSpringDashpot</span>
-</pre></div>
-</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -2841,78 +2164,6 @@ The XFEMCrack object is derived from the Crack object.</p>
 </tbody>
 </table>
 </div>
-<p>This method creates a XFEMCrack object. Although the constructor is available both for
-parts and for the assembly, XFEMCrack objects are currently supported only under the
-assembly.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
-</dd>
-<dt><strong>crackDomain</strong></dt><dd><p>A Region object specifying the region that contains the crack or is likely to contain
-the crack.</p>
-</dd>
-<dt><strong>allowCrackGrowth</strong></dt><dd><p>A Boolean specifying whether the crack is allowed to propagate (grow). The default value
-is ON.</p>
-</dd>
-<dt><strong>crackLocation</strong></dt><dd><p>A Region object specifying the initial crack location. This parameter is required when
-<a href="#id13"><span class="problematic" id="id14">*</span></a>allowCrackGrowth*=OFF.</p>
-</dd>
-<dt><strong>singularityCalcRadius</strong></dt><dd><p>None or a Float specifying the radius from the crack tips within which the elements are
-used for crack singularity calculations. This argument applies only when
-<a href="#id15"><span class="problematic" id="id16">*</span></a>allowCrackGrowth*=OFF. The default value is None.</p>
-</dd>
-<dt><strong>interactionProperty</strong></dt><dd><p>A String specifying the name of the ContactProperty object that defines the contact
-properties for the crack surfaces. The default value is an empty string.</p>
-</dd>
-<dt><strong>elemId</strong></dt><dd><p>A sequence of Ints specifying the labels of the elements that are intersected by the
-initial crack location. This argument is used only by the input file reader.</p>
-</dd>
-<dt><strong>nodeId</strong></dt><dd><p>A sequence of Ints specifying the position of a node in the corresponding element
-connectivity. This argument is used only by the input file reader.</p>
-</dd>
-<dt><strong>hasCrackFront</strong></dt><dd><p>A sequence of Ints specifying the values indicating the inclusion/exclusion of the
-<em>crackFrontDist</em> values. A zero value indicates that <em>crackFrontDist</em> is not specified
-for the ith pair <em>elemId</em> and <em>nodeId</em>. This argument is used only by the input file
-reader.</p>
-</dd>
-<dt><strong>crackPlaneDist</strong></dt><dd><p>A sequence of Floats specifying the values of the first signed distance function. This
-argument is used by the input file reader.</p>
-</dd>
-<dt><strong>crackFrontDist</strong></dt><dd><p>A sequence of Floats specifying the values of the second signed distance function. This
-argument is used only by the input file reader.</p>
-</dd>
-<dt><strong>autoDetectValue</strong></dt><dd><p>An integer specifying the number of element layers around the crack location, to which
-the crack domain is shrunk.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.EngineeringFeature.XFEMCrack.XFEMCrack" title="abaqus.EngineeringFeature.XFEMCrack.XFEMCrack"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XFEMCrack</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">engineeringFeatures</span><span class="o">.</span><span class="n">XFEMCrack</span>
-<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">engineeringFeatures</span><span class="o">.</span><span class="n">XFEMCrack</span>
-</pre></div>
-</div>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues" title="abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([allowCrackGrowth, crackLocation, ...])</p></td>
-<td><p>This method modifies the XFEMCrack object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">allowCrackGrowth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crackLocation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">singularityCalcRadius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interactionProperty</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemId</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodeId</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hasCrackFront</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crackPlaneDist</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crackFrontDist</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">autoDetectValue</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/EngineeringFeature/XFEMCrack.py#L112-L163"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues" title="Permalink to this definition">#</a></dt>
@@ -2924,11 +2175,11 @@ the crack domain is shrunk.</p>
 is ON.</p>
 </dd>
 <dt><strong>crackLocation</strong></dt><dd><p>A Region object specifying the initial crack location. This parameter is required when
-<a href="#id17"><span class="problematic" id="id18">*</span></a>allowCrackGrowth*=OFF.</p>
+<a href="#id9"><span class="problematic" id="id10">*</span></a>allowCrackGrowth*=OFF.</p>
 </dd>
 <dt><strong>singularityCalcRadius</strong></dt><dd><p>None or a Float specifying the radius from the crack tips within which the elements are
 used for crack singularity calculations. This argument applies only when
-<a href="#id19"><span class="problematic" id="id20">*</span></a>allowCrackGrowth*=OFF. The default value is None.</p>
+<a href="#id11"><span class="problematic" id="id12">*</span></a>allowCrackGrowth*=OFF. The default value is None.</p>
 </dd>
 <dt><strong>interactionProperty</strong></dt><dd><p>A String specifying the name of the ContactProperty object that defines the contact
 properties for the crack surfaces. The default value is an empty string.</p>

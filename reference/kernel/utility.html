@@ -342,26 +342,6 @@ Python bool (True, False), or a Python int (1, 0).</p>
 <span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
 </pre></div>
 </div>
-<p>The AbaqusBoolean method creates an AbaqusBoolean object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>value</strong></dt><dd><p>An Int specifying whether the AbaqusBoolean object will test true or false. Possible
-values are 0 and 1, which will create the AbaqusBoolean method OFF and ON, respectively.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">AbaqusBoolean</span>
-</pre></div>
-</div>
 </dd></dl>
 
 </section>
@@ -822,26 +802,6 @@ symbolicConstants module.</p>
 <span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
 </pre></div>
 </div>
-<p>The SymbolicConstant method creates a SymbolicConstant object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>text</strong></dt><dd><p>A String specifying the text of the SymbolicConstant object. The String must contain
-only capital letters, digits, or underscores and must not start with a digit.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">SymbolicConstant</span>
-</pre></div>
-</div>
 </dd></dl>
 
 </section>
@@ -884,130 +844,6 @@ clipped to the size of the viewport window.</p>
 <dt><strong>layerTransform: float</strong></dt><dd><p>A tuple of Floats specifying a transformation matrix used to position the contents of
 the Layer within a viewport.</p>
 </dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.fitView" title="abaqus.UtilityAndView.View.View.fitView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fitView</span></code></a>([drawImmediately])</p></td>
-<td><p>This method scales the displayable object (such as a part, the assembly, or an <strong>X - Y</strong> plot) to fit the viewport.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.next" title="abaqus.UtilityAndView.View.View.next"><code class="xref py py-obj docutils literal notranslate"><span class="pre">next</span></code></a>([drawImmediately])</p></td>
-<td><p>This method restores the view in the viewport to the next view setting in the list.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.pan" title="abaqus.UtilityAndView.View.View.pan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pan</span></code></a>([xFraction, yFraction, asMovie, ...])</p></td>
-<td><p>This method pans the view in the viewport using absolute, not relative, mode.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.previous" title="abaqus.UtilityAndView.View.View.previous"><code class="xref py py-obj docutils literal notranslate"><span class="pre">previous</span></code></a>([drawImmediately])</p></td>
-<td><p>This method restores the view in the viewport to the previous view setting in the list.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.rotate" title="abaqus.UtilityAndView.View.View.rotate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rotate</span></code></a>([xAngle, yAngle, zAngle, mode, ...])</p></td>
-<td><p>This method rotates the view in the viewport.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.setLayerTransform" title="abaqus.UtilityAndView.View.View.setLayerTransform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setLayerTransform</span></code></a>([layerTransform, options, ...])</p></td>
-<td><p>This method modifies the transformation used to position a Layer.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.setProjection" title="abaqus.UtilityAndView.View.View.setProjection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setProjection</span></code></a>(projection[, drawImmediately])</p></td>
-<td><p>This method modifies the appearance of three-dimensional models in the viewport.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.setRotationCenter" title="abaqus.UtilityAndView.View.View.setRotationCenter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setRotationCenter</span></code></a>(rotationCenter)</p></td>
-<td><p>This method sets the center of rotation to the specified location.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.setValues" title="abaqus.UtilityAndView.View.View.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([movieMode])</p></td>
-<td><p>This method modifies the View object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.setViewpoint" title="abaqus.UtilityAndView.View.View.setViewpoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setViewpoint</span></code></a>(viewVector[, cameraUpVector, ...])</p></td>
-<td><p>This method sets the camera's position in the viewport.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.zoom" title="abaqus.UtilityAndView.View.View.zoom"><code class="xref py py-obj docutils literal notranslate"><span class="pre">zoom</span></code></a>(zoomFactor[, mode, asMovie, ...])</p></td>
-<td><p>This method magnifies the view in the viewport.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.UtilityAndView.View.View.zoomRectangle" title="abaqus.UtilityAndView.View.View.zoomRectangle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">zoomRectangle</span></code></a>(point1, point2[, drawImmediately])</p></td>
-<td><p>This method fills the viewport with the graphics located within the given rectangle.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>This method creates a View object.
-Note:All dimensions and coordinates are specified in the model coordinate system.
-Note:This method cannot be used to create a View for a Layer object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name</strong></dt><dd><p>A String specifying the name of the view (also used as the repository key). Possible
-values are ‘Front’, ‘Back’, ‘Top’, ‘Bottom’, ‘Left’, <a href="#id15"><span class="problematic" id="id16">`</span></a>Right’, ‘Iso’, ‘User-1’, ‘User-2’,
-‘User-3’, and ‘User-4’. The object member associated with this argument is a
-SymbolicConstant. Possible values of the <strong>name</strong> member are:FRONT, BACK, TOP, BOTTOM,
-LEFT, RIGHT, ISO, USER1, USER2, USER3, and USER4.</p>
-</dd>
-<dt><strong>nearPlane</strong></dt><dd><p>A Float specifying the distance from the camera to the near clipping plane. Possible
-values are <strong>nearPlane</strong> &gt;&gt; 0.0.</p>
-</dd>
-<dt><strong>farPlane</strong></dt><dd><p>A Float specifying the distance from the camera to the far clipping plane when
-<strong>farPlaneMode</strong> =SPECIFY. Possible values are <strong>farPlane</strong> &gt;&gt; <strong>nearPlane</strong>.</p>
-</dd>
-<dt><strong>width</strong></dt><dd><p>A Float specifying the width of the front clipping plane. Possible values are <strong>width</strong> &gt;&gt;
-0.0.</p>
-</dd>
-<dt><strong>height</strong></dt><dd><p>A Float specifying the height of the front clipping plane. Possible values are <strong>height</strong>
-&gt;&gt; 0.0.</p>
-</dd>
-<dt><strong>projection</strong></dt><dd><p>A SymbolicConstant specifying the projection mode. Possible values are PERSPECTIVE and
-PARALLEL.</p>
-</dd>
-<dt><strong>cameraPosition</strong></dt><dd><p>A sequence of three Floats specifying the camera position.</p>
-</dd>
-<dt><strong>cameraUpVector</strong></dt><dd><p>A sequence of three Floats specifying the camera’s up vector (the screen’s positive
-<strong>Y</strong>-axis). The initial value is (0, 0, 0).</p>
-</dd>
-<dt><strong>cameraTarget</strong></dt><dd><p>A sequence of three Floats specifying the center of the scene.</p>
-</dd>
-<dt><strong>viewOffsetX</strong></dt><dd><p>A Float specifying the amount to pan the model in the screen <strong>X</strong>-direction as a fraction
-of the viewport width. A positive value pans the model to the right. A negative value
-pans the model to the left.The*viewOffsetX* and <strong>viewOffsetY</strong> arguments allow you to pan
-the view without changing the position of the camera or the target (<em>cameraPosition</em> and
-<strong>cameraTarget</strong> arguments to the View method). The resulting change in the view allows
-you to pan a perspective display without producing an apparent rotation of the model.</p>
-</dd>
-<dt><strong>viewOffsetY</strong></dt><dd><p>A Float specifying the amount to pan the model in the screen <strong>Y</strong>-direction as a fraction
-of the viewport height. A positive value pans the model upward. A negative value pans
-the model downward.</p>
-</dd>
-<dt><strong>autoFit</strong></dt><dd><p>A Boolean specifying whether the view is auto-fit when applied.</p>
-</dd>
-<dt><strong>movieMode</strong></dt><dd><p>A Boolean specifying whether or not the camera is in movie mode. The default value is
-OFF.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.UtilityAndView.View.View" title="abaqus.UtilityAndView.View.View"><code class="xref py py-obj docutils literal notranslate"><span class="pre">View</span></code></a> object.</dt><dd></dd>
-</dl>
-</dd>
-<dt class="field-odd">Raises</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">View</span>
-</pre></div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>displayedObjectScreenHeight</strong></dt><dd></dd>
-<dt><strong>displayedObjectScreenWidth</strong></dt><dd></dd>
-<dt><strong>layerTransform</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
