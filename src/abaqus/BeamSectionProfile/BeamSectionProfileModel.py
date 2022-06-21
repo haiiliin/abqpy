@@ -81,7 +81,6 @@ class BeamSectionProfileModel(ModelBase):
         Raises
         ------
         RangeError
-            !img
         """
         self.profiles[name] = arbitraryProfile = ArbitraryProfile(name, table)
         return arbitraryProfile
@@ -141,7 +140,6 @@ class BeamSectionProfileModel(ModelBase):
         Raises
         ------
         RangeError
-            !img
         """
         self.profiles[name] = boxProfile = BoxProfile(
             name, a, b, uniformThickness, t1, t2, t3, t4
@@ -177,7 +175,6 @@ class BeamSectionProfileModel(ModelBase):
         Raises
         ------
         RangeError
-            !img
         """
         self.profiles[name] = circularProfile = CircularProfile(name, r)
         return circularProfile
@@ -231,7 +228,6 @@ class BeamSectionProfileModel(ModelBase):
         Raises
         ------
         RangeError
-            !img
         """
         self.profiles[name] = generalizedProfile = GeneralizedProfile(
             name, area, i11, i12, i22, j, gammaO, gammaW
@@ -270,7 +266,6 @@ class BeamSectionProfileModel(ModelBase):
         Raises
         ------
         RangeError
-            !img
         """
         self.profiles[name] = hexagonalProfile = HexagonalProfile(name, r, t)
         return hexagonalProfile
@@ -326,7 +321,6 @@ class BeamSectionProfileModel(ModelBase):
         Raises
         ------
         RangeError
-            !img
         """
         self.profiles[name] = iProfile = IProfile(name, l, h, b1, b2, t1, t2, t3)
         return iProfile
@@ -368,7 +362,6 @@ class BeamSectionProfileModel(ModelBase):
         Raises
         ------
         RangeError
-            !img
         """
         self.profiles[name] = lProfile = LProfile(name, a, b, t1, t2)
         return lProfile
@@ -404,7 +397,6 @@ class BeamSectionProfileModel(ModelBase):
         Raises
         ------
         RangeError
-            !img
         """
         self.profiles[name] = pipeProfile = PipeProfile(name, r, t)
         return pipeProfile
@@ -440,7 +432,6 @@ class BeamSectionProfileModel(ModelBase):
         Raises
         ------
         RangeError
-            !img
         """
         self.profiles[name] = rectangularProfile = RectangularProfile(name, a, b)
         return rectangularProfile
@@ -487,7 +478,6 @@ class BeamSectionProfileModel(ModelBase):
         Raises
         ------
         RangeError
-            !img
         """
         self.profiles[name] = tProfile = TProfile(name, b, h, l, tf, tw)
         return tProfile
@@ -529,7 +519,6 @@ class BeamSectionProfileModel(ModelBase):
         Raises
         ------
         RangeError
-            !img
         """
         self.profiles[name] = trapezoidalProfile = TrapezoidalProfile(name, a, b, c, d)
         return trapezoidalProfile
