@@ -8,6 +8,7 @@ from .Session.Session import Session as AbaqusSession
 
 
 class Mdb(AbaqusMdb):
+
     def __init__(self, pathName: str = ""):
         super().__init__(pathName)
 
@@ -38,6 +39,7 @@ class Mdb(AbaqusMdb):
 
 
 class Session(AbaqusSession):
+
     def openOdb(self, name: str, *args, **kwargs) -> Odb:
         self.odbs[name] = odb = Odb(name, *args, **kwargs)
 
