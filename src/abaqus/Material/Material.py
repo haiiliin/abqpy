@@ -441,7 +441,7 @@ class Material(MaterialBase):
         table
             A sequence of sequences of Floats specifying the items described below.
         intercept
-            None or a Float specifying e1e1, the intercept of the virgin consolidation line with the
+            None or a Float specifying :math:`e_1`, the intercept of the virgin consolidation line with the
             void ratio axis in a plot of void ratio versus the logarithm of pressure stress. The
             default value is None.This argument is valid only if **hardening** = EXPONENTIAL.
         hardening
@@ -951,7 +951,7 @@ class Material(MaterialBase):
             Abaqus/Standard analyses. Only the linear Drucker-Prager model is available in
             Abaqus/Explicit analyses.
         eccentricity
-            A Float specifying the flow potential eccentricity, ϵϵ, a small positive number that
+            A Float specifying the flow potential eccentricity, :math:`\epsilon`, a small positive number that
             defines the rate at which the hyperbolic flow potential approaches its asymptote. The
             default value is 0.1.This argument applies only to Abaqus/Standard analyses.
         testData
@@ -1346,7 +1346,7 @@ class Material(MaterialBase):
             A Boolean specifying whether a user subroutine is used to define the increments of
             thermal strain. The default value is OFF.
         zero
-            A Float specifying the value of θ0 if the thermal expansion is temperature-dependent or
+            A Float specifying the value of :math:`\theta_0` if the thermal expansion is temperature-dependent or
             field-variable-dependent. The default value is 0.0.
         temperatureDependency
             A Boolean specifying whether the data depend on temperature. The default value is OFF.
@@ -2090,8 +2090,8 @@ class Material(MaterialBase):
         table
             A sequence of sequences of Floats specifying the items described below.
         deviatoricEccentricity
-            None or a Float specifying the flow potential eccentricity in the deviatoric plane, e;
-            1/2 ≤ 1.0. If **deviatoricEccentricity** = None, Abaqus calculates the value using the
+            None or a Float specifying the flow potential eccentricity in the deviatoric plane, 
+            :math:`e`; :math:`1 / 2 \leq e \leq 1.0`. If **deviatoricEccentricity** = None, Abaqus calculates the value using the
             specified Mohr-Coulomb angle of friction. The default value is None.
         meridionalEccentricity
             A Float specifying the flow potential eccentricity in the meridional plane, ϵϵ. The
@@ -2169,9 +2169,9 @@ class Material(MaterialBase):
         Parameters
         ----------
         specificWeight
-            A Float specifying the specific weight of the wetting liquid, γwγw.
+            A Float specifying the specific weight of the wetting liquid, :math:`\gamma_w`.
         inertialDragCoefficient
-            A Float specifying The inertial drag coefficient of the wetting liquid, γwγw.
+            A Float specifying The inertial drag coefficient of the wetting liquid, :math:`\gamma_w`.
         table
             A sequence of sequences of Floats specifying the items described below.
         type
@@ -2563,7 +2563,7 @@ class Material(MaterialBase):
             A SymbolicConstant specifying exsorption behavior. Possible values are LOG and TABULAR.
             The default value is TABULAR.
         scanning
-            A Float specifying the slope of the scanning line, (duw/ds)|s. This slope must be
+            A Float specifying the slope of the scanning line, :math:`\left.\left(d u_{w} / d s\right)\right|_{s}`. This slope must be
             positive and larger than the slope of the absorption or exsorption behaviors. The
             default value is 0.0.
         exsorptionTable
