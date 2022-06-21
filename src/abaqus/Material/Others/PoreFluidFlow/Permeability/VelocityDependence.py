@@ -50,7 +50,7 @@ class VelocityDependence:
         """
         pass
 
-    def setValues(self):
+    def setValues(self, *args, **kwargs):
         """This method modifies the VelocityDependence object.
 
         Raises

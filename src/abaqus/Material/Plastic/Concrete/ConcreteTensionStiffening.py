@@ -99,7 +99,7 @@ class ConcreteTensionStiffening:
         """
         pass
 
-    def setValues(self):
+    def setValues(self, *args, **kwargs):
         """This method modifies the ConcreteTensionStiffening object.
 
         Raises

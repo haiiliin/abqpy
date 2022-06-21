@@ -122,7 +122,7 @@ class DruckerPrager:
         """
         pass
 
-    def setValues(self):
+    def setValues(self, *args, **kwargs):
         """This method modifies the DruckerPrager object.
 
         Raises

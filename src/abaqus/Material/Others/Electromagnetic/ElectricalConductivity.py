@@ -97,7 +97,7 @@ class ElectricalConductivity:
         """
         pass
 
-    def setValues(self):
+    def setValues(self, *args, **kwargs):
         """This method modifies the ElectricalConductivity object.
 
         Raises

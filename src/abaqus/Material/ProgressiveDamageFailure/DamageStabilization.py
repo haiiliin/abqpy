@@ -109,7 +109,7 @@ class DamageStabilization:
         """
         pass
 
-    def setValues(self):
+    def setValues(self, *args, **kwargs):
         """This method modifies the DamageStabilization object.
 
         Raises

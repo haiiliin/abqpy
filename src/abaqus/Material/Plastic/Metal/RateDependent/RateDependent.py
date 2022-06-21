@@ -91,7 +91,7 @@ class RateDependent:
         """
         pass
 
-    def setValues(self):
+    def setValues(self, *args, **kwargs):
         """This method modifies the RateDependent object.
 
         Raises

@@ -69,6 +69,6 @@ class FluidLeakoff:
         """
         pass
 
-    def setValues(self):
+    def setValues(self, *args, **kwargs):
         """This method modifies the FluidLeakoff object."""
         pass

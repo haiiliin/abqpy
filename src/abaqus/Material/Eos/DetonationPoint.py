@@ -49,6 +49,6 @@ class DetonationPoint:
         """
         pass
 
-    def setValues(self):
+    def setValues(self, *args, **kwargs):
         """This method modifies the DetonationPoint object."""
         pass
