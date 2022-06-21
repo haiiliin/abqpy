@@ -21,7 +21,7 @@ import inspect
 import sys
 
 
-project = 'AbqPy'
+project = 'abqpy'
 copyright = '2022, WANG Hailin'
 author = 'WANG Hailin'
 
