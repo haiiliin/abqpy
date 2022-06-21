@@ -304,6 +304,31 @@
           <section id="abaqus-model">
 <h1>Abaqus Model<a class="headerlink" href="#abaqus-model" title="Permalink to this headline">#</a></h1>
 <p>Model commands are used to create Abaqus/CAE models. A finished model contains all the data that Abaqus/CAE needs to create and submit an analysis to Abaqus/Standard or Abaqus/Explicit. Models are stored in a model database.</p>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Objects in model</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="model/adaptivity.html">Adaptivity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model/amplitude.html">Amplitude</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model/assembly.html">Assembly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model/bc.html">Boundary Condition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model/calibration.html">Calibration of Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model/constraint.html">Constraint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model/field.html">Field</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model/filter.html">Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model/interaction.html">Interaction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model/load.html">Load</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model/material.html">Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model/optimization.html">Optimization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model/output.html">Output Request</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model/part.html">Part</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model/predefined.html">Predefined Field</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model/profile.html">Beam Section Profile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model/property.html">Property</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model/section.html">Section</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model/sketcher.html">Sketcher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model/step.html">Step</a></li>
+</ul>
+</div>
 <section id="create-models">
 <h2>Create models<a class="headerlink" href="#create-models" title="Permalink to this headline">#</a></h2>
 <dl class="py method">
@@ -344,7 +369,7 @@ that instances this model. The default value is ON.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><dl class="simple">
-<dt>model: <a class="reference internal" href="../../reference/mdb/model.html#abaqus.Mdb.Mdb.Mdb.Model" title="abaqus.Mdb.Mdb.Mdb.Model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Model</span></code></a></dt><dd><p>A <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code> object</p>
+<dt>model: <a class="reference internal" href="../../reference/mdb/model.html#abaqus.Mdb.Mdb.Mdb.Model" title="abaqus.Mdb.Mdb.Mdb.Model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Model</span></code></a></dt><dd><p>A <a class="reference internal" href="../../reference/mdb/model.html#abaqus.Model.Model.Model" title="abaqus.Model.Model.Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> object</p>
 </dd>
 </dl>
 </dd>
@@ -491,31 +516,6 @@ to the corresponding parent Part name in a different model.</p>
 </dl>
 </dd></dl>
 
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Objects in model</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="model/adaptivity.html">Adaptivity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="model/amplitude.html">Amplitude</a></li>
-<li class="toctree-l1"><a class="reference internal" href="model/assembly.html">Assembly</a></li>
-<li class="toctree-l1"><a class="reference internal" href="model/bc.html">Boundary Condition</a></li>
-<li class="toctree-l1"><a class="reference internal" href="model/calibration.html">Calibration of Material</a></li>
-<li class="toctree-l1"><a class="reference internal" href="model/constraint.html">Constraint</a></li>
-<li class="toctree-l1"><a class="reference internal" href="model/field.html">Field</a></li>
-<li class="toctree-l1"><a class="reference internal" href="model/filter.html">Filter</a></li>
-<li class="toctree-l1"><a class="reference internal" href="model/interaction.html">Interaction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="model/load.html">Load</a></li>
-<li class="toctree-l1"><a class="reference internal" href="model/material.html">Material</a></li>
-<li class="toctree-l1"><a class="reference internal" href="model/optimization.html">Optimization</a></li>
-<li class="toctree-l1"><a class="reference internal" href="model/output.html">Output Request</a></li>
-<li class="toctree-l1"><a class="reference internal" href="model/part.html">Part</a></li>
-<li class="toctree-l1"><a class="reference internal" href="model/predefined.html">Predefined Field</a></li>
-<li class="toctree-l1"><a class="reference internal" href="model/profile.html">Beam Section Profile</a></li>
-<li class="toctree-l1"><a class="reference internal" href="model/property.html">Property</a></li>
-<li class="toctree-l1"><a class="reference internal" href="model/section.html">Section</a></li>
-<li class="toctree-l1"><a class="reference internal" href="model/sketcher.html">Sketcher</a></li>
-<li class="toctree-l1"><a class="reference internal" href="model/step.html">Step</a></li>
-</ul>
-</div>
 </section>
 </section>
 
