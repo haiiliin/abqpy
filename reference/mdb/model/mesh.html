@@ -1591,6 +1591,127 @@ command.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mesh</span>
 </pre></div>
 </div>
+<p>This method creates an ElemType object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>elemCode</strong></dt><dd><p>A SymbolicConstant specifying the Abaqus element code or just the element shape.
+Possible values are:</p>
+<ul class="simple">
+<li><p>C3D8R, specifying a 8-node linear brick, reduced integration with hourglass control.</p></li>
+<li><p>CODE, specifying add more codes.</p></li>
+<li><p>UNKNOWN_TRI, specifying an unknown element type associated with a triangular shape.</p></li>
+<li><p>UNKNOWN_QUAD, specifying an unknown element type associated with a quadrilateral
+shape.</p></li>
+<li><p>UNKNOWN_HEX, specifying an unknown element type associated with a hexahedral shape.</p></li>
+<li><p>UNKNOWN_WEDGE, specifying an unknown element type associated with a wedge shape.</p></li>
+<li><p>UNKNOWN_TET, specifying an unknown element type associated with a tetrahedral shape.</p></li>
+</ul>
+</dd>
+<dt><strong>elemLibrary</strong></dt><dd><p>A SymbolicConstant specifying the Abaqus element library to use. Possible values are
+STANDARD and EXPLICIT. The default value is STANDARD.</p>
+</dd>
+<dt><strong>hourglassStiffness</strong></dt><dd><p>A Float specifying the hourglass stiffness. (For shell elements this is the membrane
+hourglass stiffness.) A value of zero indicates the default value should be used. The
+default value will be used where appropriate. The default value is 0.0.This argument is
+applicable only to some Abaqus/Standard elements.</p>
+</dd>
+<dt><strong>bendingHourglass</strong></dt><dd><p>A Float specifying the bending hourglass stiffness. A value of zero indicates the
+default value should be used. The default value will be used where appropriate. The
+default value is 0.0.This argument is applicable only to some Abaqus/Standard elements.</p>
+</dd>
+<dt><strong>drillingHourglass</strong></dt><dd><p>A Float specifying the drilling hourglass scaling factor. A value of zero indicates the
+default value should be used. The default value will be used where appropriate. The
+default value is 0.0.This argument is applicable only to some Abaqus/Standard elements.</p>
+</dd>
+<dt><strong>kinematicSplit</strong></dt><dd><p>A SymbolicConstant specifying the kinematic split control. Possible values are
+AVERAGE_STRAIN, ORTHOGONAL, and CENTROID. The default value is AVERAGE_STRAIN.This
+argument is applicable only to some Abaqus/Explicit elements.</p>
+</dd>
+<dt><strong>distortionControl</strong></dt><dd><p>A Boolean specifying whether to prevent negative element volumes or other excessive
+distortions in crushable materials. The default value is OFF.This argument is applicable
+only to some Abaqus/Explicit elements.</p>
+</dd>
+<dt><strong>lengthRatio</strong></dt><dd><p>A Float specifying the length ratio for distortion control in crushable materials.
+Possible values are 0.0 ≤≤ <strong>lengthRatio</strong> ≤≤ 1.0. The default value is
+<strong>lengthRatio</strong> = 0.10.1This argument is applicable only when <strong>distortionControl</strong> is ON.</p>
+</dd>
+<dt><strong>secondOrderAccuracy</strong></dt><dd><p>A Boolean specifying the second-order accuracy option. The default value is OFF.This
+argument is applicable only to some Abaqus/Explicit elements.</p>
+</dd>
+<dt><strong>hourglassControl</strong></dt><dd><p>A SymbolicConstant specifying the hourglass control. Possible values are
+RELAX_STIFFNESS, STIFFNESS, VISCOUS, ENHANCED, and COMBINED. The default value is
+ENHANCED.This argument is applicable only to some Abaqus/Explicit elements.</p>
+</dd>
+<dt><strong>weightFactor</strong></dt><dd><p>A Float specifying a weight factor when <strong>hourglassControl</strong> = COMBINED. The default value
+is 0.5.This argument is applicable only to some Abaqus/Explicit elements.</p>
+</dd>
+<dt><strong>displacementHourglass</strong></dt><dd><p>A Float specifying the displacement hourglass scaling factor. The default value will be
+used where appropriate. The default value is 1.0.This argument is applicable only to
+some Abaqus/Explicit elements.</p>
+</dd>
+<dt><strong>rotationalHourglass</strong></dt><dd><p>A Float specifying the rotational hourglass scaling factor. The default value will be
+used where appropriate. The default value is 1.0.This argument is applicable only to
+some Abaqus/Explicit elements.</p>
+</dd>
+<dt><strong>outOfPlaneDisplacementHourglass</strong></dt><dd><p>A Float specifying the out-of-plane displacement hourglass scaling factor. The default
+value will be used where appropriate. The default value is 1.0.This argument is
+applicable only to some Abaqus/Explicit elements.</p>
+</dd>
+<dt><strong>elemDeletion</strong></dt><dd><p>A SymbolicConstant specifying the element deletion option. Possible values are DEFAULT,
+ON, and OFF. The default value is DEFAULT.</p>
+</dd>
+<dt><strong>particleConversion</strong></dt><dd><p>A SymbolicConstant specifying the particle conversion option for smoothed particle
+hydrodynamics. When not OFF or DEFAULT this argument refers to the criterion used for
+conversion of elements to particles. Possible values are DEFAULT, OFF, TIME, STRAIN, and
+STRESS. The default value is DEFAULT.This argument is applicable only to some
+Abaqus/Explicit elements.</p>
+</dd>
+<dt><strong>particleConversionThreshold</strong></dt><dd><p>A Float specifying the threshold value for the particle conversion criterion specified
+by <strong>particleConversion</strong>. The default value is 0.0.This argument is applicable only to
+some Abaqus/Explicit elements.</p>
+</dd>
+<dt><strong>particleConversionPPD</strong></dt><dd><p>An Int specifying the number of particles per direction for element conversion when
+<strong>particleConversion</strong> is specified. The default value is 1.This argument is applicable
+only to some Abaqus/Explicit elements.</p>
+</dd>
+<dt><strong>particleConversionKernel</strong></dt><dd><p>A SymbolicConstant specifying the interpolation function for particle conversion when
+<strong>particleConversion</strong> is specified. Possible values are CUBIC, QUADRATIC, and QUINTIC.
+The default value is CUBIC.This argument is applicable only to some Abaqus/Explicit
+elements.</p>
+</dd>
+<dt><strong>maxDegradation</strong></dt><dd><p>A Float specifying the maximum degradation option for damage control. The default value
+is −1.0.</p>
+</dd>
+<dt><strong>viscosity</strong></dt><dd><p>A Float specifying the viscosity option. The default value is 0.0.This argument is
+applicable only to some Abaqus/Standard elements.</p>
+</dd>
+<dt><strong>linearBulkViscosity</strong></dt><dd><p>A Float specifying the linear bulk viscosity scaling factor option for Abaqus/Explicit.
+The default value is 1.0.</p>
+</dd>
+<dt><strong>quadraticBulkViscosity</strong></dt><dd><p>A Float specifying the quadratic bulk viscosity scaling factor option for
+Abaqus/Explicit. The default value is 1.0.</p>
+</dd>
+<dt><strong>linearKinematicCtrl</strong></dt><dd><p>A Float specifying the linear kinematic conversion value.This argument is applicable
+only to some Abaqus/Explicit elements.</p>
+</dd>
+<dt><strong>initialGapOpening</strong></dt><dd><p>A Float specifying the initial gap opening.This parameter is applicable only to some
+Abaqus/Standard elements.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>elemType: <a class="reference internal" href="#abaqus.Mesh.ElemType.ElemType" title="abaqus.Mesh.ElemType.ElemType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ElemType</span></code></a></dt><dd><p>An ElemType object</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mesh</span><span class="o">.</span><span class="n">ElemType</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </section>
@@ -1737,6 +1858,42 @@ all elements in the mesh are included.</p>
 <span class="kn">import</span> <span class="nn">assembly</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">allInstances</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">elementEdges</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">instances</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">elementEdges</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshEdgeArray.MeshEdgeArray.getMask" title="abaqus.Mesh.MeshEdgeArray.MeshEdgeArray.getMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMask</span></code></a>()</p></td>
+<td><p>This method returns a string specifying the object or objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshEdgeArray.MeshEdgeArray.getSequenceFromMask" title="abaqus.Mesh.MeshEdgeArray.MeshEdgeArray.getSequenceFromMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSequenceFromMask</span></code></a>(mask)</p></td>
+<td><p>This method returns the objects in the MeshEdgeArray identified using the specified <strong>mask</strong>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a MeshEdgeArray object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>elemEdges</strong></dt><dd><p>A list of MeshEdge objects.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Mesh.MeshEdgeArray.MeshEdgeArray" title="abaqus.Mesh.MeshEdgeArray.MeshEdgeArray"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshEdgeArray</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mesh</span><span class="o">.</span><span class="n">MeshEdgeArray</span>
 </pre></div>
 </div>
 <p class="rubric">Methods</p>
@@ -2039,6 +2196,60 @@ in use by any other element of the same part.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">modelInstances</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">surfaces</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">elements</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">sets</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">elements</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">surfaces</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">elements</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshElementArray.MeshElementArray.getBoundingBox" title="abaqus.Mesh.MeshElementArray.MeshElementArray.getBoundingBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getBoundingBox</span></code></a>()</p></td>
+<td><p>This method returns a dictionary of two tuples representing minimum and maximum boundary values of the bounding box of the minimum size containing the element sequence.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingBox" title="abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingBox</span></code></a>([xMin, yMin, zMin, xMax, ...])</p></td>
+<td><p>This method returns an array of element objects that lie within the specified bounding box.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingCylinder" title="abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingCylinder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingCylinder</span></code></a>(center1, center2, radius)</p></td>
+<td><p>This method returns an array of element objects that lie within the specified bounding cylinder.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingSphere" title="abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingSphere"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingSphere</span></code></a>(center, radius)</p></td>
+<td><p>This method returns an array of element objects that lie within the specified bounding sphere.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshElementArray.MeshElementArray.getFromLabel" title="abaqus.Mesh.MeshElementArray.MeshElementArray.getFromLabel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getFromLabel</span></code></a>(label)</p></td>
+<td><p>This method returns the object in the MeshElementArray with the given label.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshElementArray.MeshElementArray.getMask" title="abaqus.Mesh.MeshElementArray.MeshElementArray.getMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMask</span></code></a>()</p></td>
+<td><p>This method returns a string specifying the object or objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshElementArray.MeshElementArray.getSequenceFromMask" title="abaqus.Mesh.MeshElementArray.MeshElementArray.getSequenceFromMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSequenceFromMask</span></code></a>(mask)</p></td>
+<td><p>This method returns the objects in the MeshElementArray identified using the specified <strong>mask</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshElementArray.MeshElementArray.sequenceFromLabels" title="abaqus.Mesh.MeshElementArray.MeshElementArray.sequenceFromLabels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sequenceFromLabels</span></code></a>(labels)</p></td>
+<td><p>This method returns the objects in the MeshElementArray identified using the specified labels.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a MeshElementArray object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>elements</strong></dt><dd><p>A list of MeshElement objects.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Mesh.MeshElementArray.MeshElementArray" title="abaqus.Mesh.MeshElementArray.MeshElementArray"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshElementArray</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mesh</span><span class="o">.</span><span class="n">MeshElementArray</span>
 </pre></div>
 </div>
 <p class="rubric">Methods</p>
@@ -2628,6 +2839,42 @@ collapsed such that a normal cannot be computed, a zero-length vector is returne
 </tbody>
 </table>
 </div>
+<p>This method creates a MeshFaceArray object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>elemFaces</strong></dt><dd><p>A list of MeshFace objects.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Mesh.MeshFaceArray.MeshFaceArray" title="abaqus.Mesh.MeshFaceArray.MeshFaceArray"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshFaceArray</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mesh</span><span class="o">.</span><span class="n">MeshFaceArray</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshFaceArray.MeshFaceArray.getMask" title="abaqus.Mesh.MeshFaceArray.MeshFaceArray.getMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMask</span></code></a>()</p></td>
+<td><p>This method returns a string specifying the object or objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshFaceArray.MeshFaceArray.getSequenceFromMask" title="abaqus.Mesh.MeshFaceArray.MeshFaceArray.getSequenceFromMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSequenceFromMask</span></code></a>(mask)</p></td>
+<td><p>This method returns the objects in the MeshFaceArray identified using the specified <strong>mask</strong>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshFaceArray.MeshFaceArray.getMask">
 <span class="sig-name descname"><span class="pre">getMask</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFaceArray.py#L62-L69"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFaceArray.MeshFaceArray.getMask" title="Permalink to this definition">#</a></dt>
@@ -2717,6 +2964,65 @@ internal numbering of the node repository. The index does not refer to the node 
 </dd>
 <dt><strong>coordinates: float</strong></dt><dd><p>A tuple of three Floats specifying the coordinates of the new node.</p>
 </dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNode.MeshNode.getElemEdges" title="abaqus.Mesh.MeshNode.MeshNode.getElemEdges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElemEdges</span></code></a>()</p></td>
+<td><p>This method returns a tuple of element edge objects that share the node.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNode.MeshNode.getElemFaces" title="abaqus.Mesh.MeshNode.MeshNode.getElemFaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElemFaces</span></code></a>()</p></td>
+<td><p>This method returns a tuple of element face objects that share the node.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNode.MeshNode.getElements" title="abaqus.Mesh.MeshNode.MeshNode.getElements"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getElements</span></code></a>()</p></td>
+<td><p>This method returns a tuple of element objects that share the node.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNode.MeshNode.getNodesByFeatureEdge" title="abaqus.Mesh.MeshNode.MeshNode.getNodesByFeatureEdge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getNodesByFeatureEdge</span></code></a>(angle)</p></td>
+<td><p>This method returns an array of mesh node objects that are obtained by recursively finding adjacent nodes along a feature edge that are at an angle of less than or equal to the specified face angle.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNode.MeshNode.setValues" title="abaqus.Mesh.MeshNode.MeshNode.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([label])</p></td>
+<td><p>This method modifies the MeshNode object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a node on an orphan mesh part.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>coordinates</strong></dt><dd><p>A sequence of three Floats specifying the coordinates of the new node.</p>
+</dd>
+<dt><strong>localCsys</strong></dt><dd><p>A DatumCsys object specifying the local coordinate system. If unspecified, the global
+coordinate system will be used.</p>
+</dd>
+<dt><strong>label</strong></dt><dd><p>An Int specifying the node label.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>node: <a class="reference internal" href="#abaqus.Mesh.MeshNode.MeshNode" title="abaqus.Mesh.MeshNode.MeshNode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshNode</span></code></a></dt><dd><p>A MeshNode object</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="o">*</span><span class="n">name</span><span class="o">*</span><span class="p">]</span><span class="o">.</span><span class="n">Node</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>coordinates</strong></dt><dd></dd>
+<dt><strong>label</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -2863,6 +3169,63 @@ any other node of the same part.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">nodes</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">sets</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">nodes</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">surfaces</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">nodes</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNodeArray.MeshNodeArray.getBoundingBox" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray.getBoundingBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getBoundingBox</span></code></a>()</p></td>
+<td><p>This method returns a dictionary of two tuples representing minimum and maximum boundary values of the bounding box of the minimum size containing the node sequence.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingBox" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingBox</span></code></a>([xMin, yMin, zMin, xMax, ...])</p></td>
+<td><p>This method returns an array of nodes that lie within the specified bounding box.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingCylinder" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingCylinder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingCylinder</span></code></a>(center1, center2, radius)</p></td>
+<td><p>This method returns an array of node objects that lie within the specified bounding cylinder.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingSphere" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingSphere"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getByBoundingSphere</span></code></a>(center, radius)</p></td>
+<td><p>This method returns an array of node objects that lie within the specified bounding sphere.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNodeArray.MeshNodeArray.getClosest" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray.getClosest"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getClosest</span></code></a>(coordinates[, numToFind, ...])</p></td>
+<td><p>This method returns the node or nodes closest to the given point or set of points.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNodeArray.MeshNodeArray.getFromLabel" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray.getFromLabel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getFromLabel</span></code></a>(label)</p></td>
+<td><p>This method returns the object in the MeshNodeArray with the given label.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNodeArray.MeshNodeArray.getMask" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray.getMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMask</span></code></a>()</p></td>
+<td><p>This method returns a string specifying the object or objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNodeArray.MeshNodeArray.getSequenceFromMask" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray.getSequenceFromMask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSequenceFromMask</span></code></a>(mask)</p></td>
+<td><p>This method returns the objects in the MeshNodeArray identified using the specified <strong>mask</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Mesh.MeshNodeArray.MeshNodeArray.sequenceFromLabels" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray.sequenceFromLabels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sequenceFromLabels</span></code></a>(labels)</p></td>
+<td><p>This method returns the objects in the MeshNodeArray identified using the specified labels.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a MeshNodeArray object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>nodes</strong></dt><dd><p>A list of MeshNode objects.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Mesh.MeshNodeArray.MeshNodeArray" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshNodeArray</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mesh</span><span class="o">.</span><span class="n">MeshNodeArray</span>
 </pre></div>
 </div>
 <p class="rubric">Methods</p>

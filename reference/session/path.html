@@ -707,6 +707,91 @@ POINT_LIST.</p>
 </dl>
 </dd>
 </dl>
+<p>This method creates a Path object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>type</strong></dt><dd><p>A SymbolicConstant specifying the type of path being created. Possible values are
+NODE_LIST, POINT_LIST, EDGE_LIST, CIRCUMFERENTIAL, and RADIAL.</p>
+</dd>
+<dt><strong>expression</strong></dt><dd><p>A sequence specifying the nodes or points that make up the path. The definition of the
+path expression depends on the <strong>type</strong> argument.</p>
+<ul class="simple">
+<li><p>If <strong>type</strong> = NODE_LIST, <strong>expression</strong> must be a sequence of sequences. Each inner sequence
+contains two items, the first item is a String specifying the name of a part instance,
+and the second item can be either a sequence of Ints or a sequence of Strings, each
+specifying a range of Ints.</p></li>
+<li><p>If <strong>type</strong> = POINT_LIST, <strong>expression</strong> must be a sequence of tuples of three Floats,
+specifying the coordinates of each point.</p></li>
+<li><p>If <strong>type</strong> = EDGE_LIST, <strong>expression</strong> must be a sequence of sequences. Each inner sequence
+contains two items, the first item is a String specifying the name of the part instance,
+and the second item is a sequence of tuples of four Ints that uniquely identify an
+element edge. The four Ints are:</p>
+<ol class="arabic simple">
+<li><p>The element label.</p></li>
+<li><p>The element face index (one-based).</p></li>
+<li><p>The face edge index (one-based).</p></li>
+<li><p>The edge direction. A positive number specifies that the edge direction runs from the
+edge start node to the edge end node. A negative number specifies the opposite.</p></li>
+</ol>
+</li>
+<li><p>When <strong>type</strong> = CIRCUMFERENTIAL or RADIAL, <strong>expression</strong> must be a sequence of three tuples
+of three Floats, specifying the coordinates of the points used to define a coordinate
+system.</p></li>
+</ul>
+</dd>
+<dt><strong>circleDefinition</strong></dt><dd><p>A SymbolicConstant specifying the method in which the circle is being defined. This
+argument is valid only when <strong>type</strong> = CIRCUMFERENTIAL or RADIAL. Possible values are
+ORIGIN_AXIS and POINT_ARC.When the value is ORIGIN_AXIS, the first two points in
+<strong>expression</strong> are points on the rotational axis and the third point lies on the x-axis.
+When the value is POINT_ARC, the three points in <strong>expression</strong> are points lying on the
+arc of the circle.</p>
+</dd>
+<dt><strong>numSegments</strong></dt><dd><p>An Int specifying the number of equal segments in the path. This argument is valid only
+when <strong>type</strong> = CIRCUMFERENTIAL or RADIAL.</p>
+</dd>
+<dt><strong>startAngle</strong></dt><dd><p>A Float specifying the start angle of the circumferential path. This argument is valid
+only when <strong>type</strong> = CIRCUMFERENTIAL.</p>
+</dd>
+<dt><strong>endAngle</strong></dt><dd><p>A Float specifying the end angle of the circumferential path. This argument is valid
+only when <strong>type</strong> = CIRCUMFERENTIAL.</p>
+</dd>
+<dt><strong>radius</strong></dt><dd><p>The SymbolicConstant CIRCLE_RADIUS or a Float specifying the radius of the
+circumferential path. This argument is valid only when <strong>type</strong> = CIRCUMFERENTIAL.</p>
+</dd>
+<dt><strong>radialAngle</strong></dt><dd><p>A Float specifying the angle between the radial path and the <strong>X</strong>-axis of the specified
+coordinate system. This argument is valid only when <strong>type</strong> = RADIAL.</p>
+</dd>
+<dt><strong>startRadius</strong></dt><dd><p>The SymbolicConstant CIRCLE_RADIUS or a Float specifying the start radius of the radial
+path. This argument is valid only when <strong>type</strong> = RADIAL.</p>
+</dd>
+<dt><strong>endRadius</strong></dt><dd><p>The SymbolicConstant CIRCLE_RADIUS or a Float specifying the end radius of the radial
+path. This argument is valid only when <strong>type</strong> = RADIAL.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.PathAndProbe.Path.Path" title="abaqus.PathAndProbe.Path.Path"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelError</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">ErrorUnsupportedNodeData</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">ErrorUnsupportedPointData</span></code>, ErrorIncorrectPathData,</dt><dd></dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyError</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">ErrorEmptyPathName</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">ErrorPathNotFound</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">and</span></code> ErrorNoOdbPathDisplay.</dt><dd></dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">ValueError</span></code></dt><dd><p>When <strong>type</strong> = CIRCUMFERENTIAL or RADIAL, the three points specified in
+<strong>expression</strong> are collinear.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Path</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </section>
@@ -1006,6 +1091,27 @@ to writing to a file).</p>
 <span class="n">session</span><span class="o">.</span><span class="n">spectrums</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
+<p>This method creates a Spectrum object and places it in the spectrums repository.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A string name for the spectrum.</p>
+</dd>
+<dt><strong>colors</strong></dt><dd><p>A sequence of strings indicating the colors of the spectrum.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.PathAndProbe.Spectrum.Spectrum" title="abaqus.PathAndProbe.Spectrum.Spectrum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Spectrum</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </section>
@@ -1019,6 +1125,35 @@ to writing to a file).</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">visualization</span>
 <span class="n">session</span><span class="o">.</span><span class="n">streams</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>This method creates aStream object and places it in the streams repository.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A string name for the stream.</p>
+</dd>
+<dt><strong>numPointsOnRake</strong></dt><dd><p>An integer specifying the number of points along the rake.</p>
+</dd>
+<dt><strong>pointA</strong></dt><dd><p>A tuple of 3 floats specifying the starting point of the rake. Alternatively, a string
+representation of the node selected in the viewport.</p>
+</dd>
+<dt><strong>pointB</strong></dt><dd><p>A tuple of 3 floats specifying the end point of the rake. Alternatively, a string
+representation of the node selected in the viewport.</p>
+</dd>
+<dt><strong>path</strong></dt><dd><p>APath object that specifies the rake.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.PathAndProbe.Stream.Stream" title="abaqus.PathAndProbe.Stream.Stream"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Stream</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Stream</span>
 </pre></div>
 </div>
 </dd></dl>

@@ -385,6 +385,112 @@
 </tbody>
 </table>
 </div>
+<p>This method creates a Model object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>description</strong></dt><dd><p>A String specifying the purpose and contents of the Model object. The default value is
+an empty string.</p>
+</dd>
+<dt><strong>stefanBoltzmann</strong></dt><dd><p>None or a Float specifying the Stefan-Boltzmann constant. The default value is None.</p>
+</dd>
+<dt><strong>absoluteZero</strong></dt><dd><p>None or a Float specifying the absolute zero constant. The default value is None.</p>
+</dd>
+<dt><strong>waveFormulation</strong></dt><dd><p>A SymbolicConstant specifying the type of incident wave formulation to be used in
+acoustic problems. Possible values are NOT_SET, SCATTERED, and TOTAL. The default value
+is NOT_SET.</p>
+</dd>
+<dt><strong>modelType</strong></dt><dd><p>A SymbolicConstant specifying the analysis model type. Possible values are
+STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is STANDARD_EXPLICIT.</p>
+</dd>
+<dt><strong>universalGas</strong></dt><dd><p>None or a Float specifying the universal gas constant. The default value is None.</p>
+</dd>
+<dt><strong>copyConstraints</strong></dt><dd><p>A boolean specifying whether to copy the constraints created in the model to the model
+that instances this model. The default value is ON.</p>
+</dd>
+<dt><strong>copyConnectors</strong></dt><dd><p>A boolean specifying whether to copy the connectors created in the model to the model
+that instances this model. The default value is ON.</p>
+</dd>
+<dt><strong>copyInteractions</strong></dt><dd><p>A boolean specifying whether to copy the interactions created in the model to the model
+that instances this model. The default value is ON.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Model</span></code> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">Model</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#abaqus.Section.SectionModel.SectionModel.AcousticInfiniteSection" title="abaqus.Section.SectionModel.SectionModel.AcousticInfiniteSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AcousticInfiniteSection</span></code></a>(name, material[, ...])</p></td>
+<td><p>This method creates an AcousticInfiniteSection object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#abaqus.Section.SectionModel.SectionModel.AcousticInterfaceSection" title="abaqus.Section.SectionModel.SectionModel.AcousticInterfaceSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AcousticInterfaceSection</span></code></a>(name[, thickness])</p></td>
+<td><p>This method creates an AcousticInterfaceSection object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#abaqus.Section.SectionModel.SectionModel.BeamSection" title="abaqus.Section.SectionModel.SectionModel.BeamSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeamSection</span></code></a>(name, integration, profile[, ...])</p></td>
+<td><p>This method creates a BeamSection object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#abaqus.Section.SectionModel.SectionModel.CohesiveSection" title="abaqus.Section.SectionModel.SectionModel.CohesiveSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CohesiveSection</span></code></a>(name, response, material[, ...])</p></td>
+<td><p>This method creates a CohesiveSection object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#abaqus.Section.SectionModel.SectionModel.CompositeShellSection" title="abaqus.Section.SectionModel.SectionModel.CompositeShellSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CompositeShellSection</span></code></a>(name, layup[, ...])</p></td>
+<td><p>This method creates a CompositeShellSection object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#abaqus.Section.SectionModel.SectionModel.CompositeSolidSection" title="abaqus.Section.SectionModel.SectionModel.CompositeSolidSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CompositeSolidSection</span></code></a>(name, layup[, ...])</p></td>
+<td><p>This method creates a CompositeSolidSection object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#abaqus.Section.SectionModel.SectionModel.ConnectorSection" title="abaqus.Section.SectionModel.SectionModel.ConnectorSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorSection</span></code></a>(name[, assembledType, ...])</p></td>
+<td><p>This method creates a ConnectorSection object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#abaqus.Section.SectionModel.SectionModel.EulerianSection" title="abaqus.Section.SectionModel.SectionModel.EulerianSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EulerianSection</span></code></a>(name, data)</p></td>
+<td><p>This method creates a EulerianSection object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#abaqus.Section.SectionModel.SectionModel.GasketSection" title="abaqus.Section.SectionModel.SectionModel.GasketSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GasketSection</span></code></a>(name, material[, ...])</p></td>
+<td><p>This method creates a GasketSection object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#abaqus.Section.SectionModel.SectionModel.GeneralStiffnessSection" title="abaqus.Section.SectionModel.SectionModel.GeneralStiffnessSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GeneralStiffnessSection</span></code></a>(name, stiffnessMatrix)</p></td>
+<td><p>This method creates a GeneralStiffnessSection object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#abaqus.Section.SectionModel.SectionModel.HomogeneousShellSection" title="abaqus.Section.SectionModel.SectionModel.HomogeneousShellSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HomogeneousShellSection</span></code></a>(name, material[, ...])</p></td>
+<td><p>This method creates a HomogeneousShellSection object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#abaqus.Section.SectionModel.SectionModel.HomogeneousSolidSection" title="abaqus.Section.SectionModel.SectionModel.HomogeneousSolidSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HomogeneousSolidSection</span></code></a>(name, material[, ...])</p></td>
+<td><p>This method creates a HomogeneousSolidSection object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#abaqus.Section.SectionModel.SectionModel.MPCSection" title="abaqus.Section.SectionModel.SectionModel.MPCSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MPCSection</span></code></a>(name, mpcType[, userMode, userType])</p></td>
+<td><p>This method creates a MPCSection object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#abaqus.Section.SectionModel.SectionModel.MembraneSection" title="abaqus.Section.SectionModel.SectionModel.MembraneSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MembraneSection</span></code></a>(name, material[, thickness, ...])</p></td>
+<td><p>This method creates a MembraneSection object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#abaqus.Section.SectionModel.SectionModel.PEGSection" title="abaqus.Section.SectionModel.SectionModel.PEGSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PEGSection</span></code></a>(name, material[, thickness, ...])</p></td>
+<td><p>This method creates a PEGSection object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#abaqus.Section.SectionModel.SectionModel.SurfaceSection" title="abaqus.Section.SectionModel.SectionModel.SurfaceSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SurfaceSection</span></code></a>(name[, useDensity, density])</p></td>
+<td><p>This method creates a SurfaceSection object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#abaqus.Section.SectionModel.SectionModel.TrussSection" title="abaqus.Section.SectionModel.SectionModel.TrussSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TrussSection</span></code></a>(name, material[, area])</p></td>
+<td><p>This method creates a TrussSection object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </dd></dl>
 
 </section>
@@ -393,7 +499,35 @@
 <dl class="py class">
 <dt class="sig sig-object py">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SectionOdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analysisTitle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Section/SectionOdb.py#L26-L1206"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
-<dd><p class="rubric">Methods</p>
+<dd><p>This method creates a new Odb object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>analysisTitle</strong></dt><dd><p>A String specifying the title of the output database. The default value is an empty
+string.</p>
+</dd>
+<dt><strong>description</strong></dt><dd><p>A String specifying the description of the output database. The default value is an
+empty string.</p>
+</dd>
+<dt><strong>path</strong></dt><dd><p>A String specifying the path to the file where the new output database (.odb ) file will
+be written. The default value is an empty string.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Odb</span></code> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Odb</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <colgroup>
@@ -401,55 +535,55 @@
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id8" title="abaqus.Section.SectionOdb.SectionOdb.AcousticInfiniteSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AcousticInfiniteSection</span></code></a>(name, material[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id10" title="abaqus.Section.SectionOdb.SectionOdb.AcousticInfiniteSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AcousticInfiniteSection</span></code></a>(name, material[, ...])</p></td>
 <td><p>This method creates an AcousticInfiniteSection object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id9" title="abaqus.Section.SectionOdb.SectionOdb.AcousticInterfaceSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AcousticInterfaceSection</span></code></a>(name[, thickness])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id11" title="abaqus.Section.SectionOdb.SectionOdb.AcousticInterfaceSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AcousticInterfaceSection</span></code></a>(name[, thickness])</p></td>
 <td><p>This method creates an AcousticInterfaceSection object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id10" title="abaqus.Section.SectionOdb.SectionOdb.BeamSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeamSection</span></code></a>(name, integration, profile[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id12" title="abaqus.Section.SectionOdb.SectionOdb.BeamSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeamSection</span></code></a>(name, integration, profile[, ...])</p></td>
 <td><p>This method creates a BeamSection object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id11" title="abaqus.Section.SectionOdb.SectionOdb.CohesiveSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CohesiveSection</span></code></a>(name, response, material[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id13" title="abaqus.Section.SectionOdb.SectionOdb.CohesiveSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CohesiveSection</span></code></a>(name, response, material[, ...])</p></td>
 <td><p>This method creates a CohesiveSection object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id14" title="abaqus.Section.SectionOdb.SectionOdb.CompositeShellSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CompositeShellSection</span></code></a>(name, layup[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id16" title="abaqus.Section.SectionOdb.SectionOdb.CompositeShellSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CompositeShellSection</span></code></a>(name, layup[, ...])</p></td>
 <td><p>This method creates a CompositeShellSection object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id15" title="abaqus.Section.SectionOdb.SectionOdb.CompositeSolidSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CompositeSolidSection</span></code></a>(name, layup[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id17" title="abaqus.Section.SectionOdb.SectionOdb.CompositeSolidSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CompositeSolidSection</span></code></a>(name, layup[, ...])</p></td>
 <td><p>This method creates a CompositeSolidSection object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id16" title="abaqus.Section.SectionOdb.SectionOdb.ConnectorSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorSection</span></code></a>(name[, assembledType, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id18" title="abaqus.Section.SectionOdb.SectionOdb.ConnectorSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorSection</span></code></a>(name[, assembledType, ...])</p></td>
 <td><p>This method creates a ConnectorSection object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id17" title="abaqus.Section.SectionOdb.SectionOdb.EulerianSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EulerianSection</span></code></a>(name, data)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id19" title="abaqus.Section.SectionOdb.SectionOdb.EulerianSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EulerianSection</span></code></a>(name, data)</p></td>
 <td><p>This method creates a EulerianSection object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id18" title="abaqus.Section.SectionOdb.SectionOdb.GasketSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GasketSection</span></code></a>(name, material[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id20" title="abaqus.Section.SectionOdb.SectionOdb.GasketSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GasketSection</span></code></a>(name, material[, ...])</p></td>
 <td><p>This method creates a GasketSection object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id19" title="abaqus.Section.SectionOdb.SectionOdb.GeneralStiffnessSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GeneralStiffnessSection</span></code></a>(name, stiffnessMatrix)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id21" title="abaqus.Section.SectionOdb.SectionOdb.GeneralStiffnessSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GeneralStiffnessSection</span></code></a>(name, stiffnessMatrix)</p></td>
 <td><p>This method creates a GeneralStiffnessSection object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id20" title="abaqus.Section.SectionOdb.SectionOdb.HomogeneousShellSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HomogeneousShellSection</span></code></a>(name, material[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id22" title="abaqus.Section.SectionOdb.SectionOdb.HomogeneousShellSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HomogeneousShellSection</span></code></a>(name, material[, ...])</p></td>
 <td><p>This method creates a HomogeneousShellSection object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id21" title="abaqus.Section.SectionOdb.SectionOdb.HomogeneousSolidSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HomogeneousSolidSection</span></code></a>(name, material[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id23" title="abaqus.Section.SectionOdb.SectionOdb.HomogeneousSolidSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HomogeneousSolidSection</span></code></a>(name, material[, ...])</p></td>
 <td><p>This method creates a HomogeneousSolidSection object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id22" title="abaqus.Section.SectionOdb.SectionOdb.MPCSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MPCSection</span></code></a>(name, mpcType[, userMode, userType])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id24" title="abaqus.Section.SectionOdb.SectionOdb.MPCSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MPCSection</span></code></a>(name, mpcType[, userMode, userType])</p></td>
 <td><p>This method creates a MPCSection object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id23" title="abaqus.Section.SectionOdb.SectionOdb.MembraneSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MembraneSection</span></code></a>(name, material[, thickness, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id25" title="abaqus.Section.SectionOdb.SectionOdb.MembraneSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MembraneSection</span></code></a>(name, material[, thickness, ...])</p></td>
 <td><p>This method creates a MembraneSection object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id24" title="abaqus.Section.SectionOdb.SectionOdb.PEGSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PEGSection</span></code></a>(name, material[, thickness, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id26" title="abaqus.Section.SectionOdb.SectionOdb.PEGSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PEGSection</span></code></a>(name, material[, thickness, ...])</p></td>
 <td><p>This method creates a PEGSection object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id25" title="abaqus.Section.SectionOdb.SectionOdb.SurfaceSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SurfaceSection</span></code></a>(name[, useDensity, density])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id27" title="abaqus.Section.SectionOdb.SectionOdb.SurfaceSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SurfaceSection</span></code></a>(name[, useDensity, density])</p></td>
 <td><p>This method creates a SurfaceSection object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id26" title="abaqus.Section.SectionOdb.SectionOdb.TrussSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TrussSection</span></code></a>(name, material[, area])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/section.html#id28" title="abaqus.Section.SectionOdb.SectionOdb.TrussSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TrussSection</span></code></a>(name, material[, area])</p></td>
 <td><p>This method creates a TrussSection object.</p></td>
 </tr>
 </tbody>

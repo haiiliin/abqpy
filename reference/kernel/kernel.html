@@ -320,6 +320,20 @@ capable of notifying the GUI when the contents of the class change.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">customKernel</span>
 </pre></div>
 </div>
+<p>This class allows you to derive a general class that can be queried from the GUI and is
+capable of notifying the GUI when the contents of the class change.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.CustomKernel.CommandRegister.CommandRegister" title="abaqus.CustomKernel.CommandRegister.CommandRegister"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CommandRegister</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">customKernel</span><span class="o">.</span><span class="n">CommandRegister</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </section>
@@ -335,6 +349,36 @@ The RegisteredDictionary object is derived from the CommandRegister object.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">customKernel</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.Methods" title="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.Methods"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Methods</span></code></a>()</p></td>
+<td><p>The RegisteredDictionary object supports the same methods as a Python dictionary.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey" title="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey"><code class="xref py py-obj docutils literal notranslate"><span class="pre">changeKey</span></code></a>(fromName, toName)</p></td>
+<td><p>This method changes the name of a key in the dictionary.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a RegisteredDictionary object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary" title="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RegisteredDictionary</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">customKernel</span><span class="o">.</span><span class="n">RegisteredDictionary</span>
 </pre></div>
 </div>
 <p class="rubric">Methods</p>
@@ -407,6 +451,33 @@ The RegisteredList object is derived from the CommandRegister object.</p>
 </tbody>
 </table>
 </div>
+<p>This method creates a RegisteredList object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.CustomKernel.RegisteredList.RegisteredList" title="abaqus.CustomKernel.RegisteredList.RegisteredList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RegisteredList</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">customKernel</span><span class="o">.</span><span class="n">RegisteredList</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.CustomKernel.RegisteredList.RegisteredList.Methods" title="abaqus.CustomKernel.RegisteredList.RegisteredList.Methods"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Methods</span></code></a>()</p></td>
+<td><p>The RegisteredList object supports the same methods as a standard Python list object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.CustomKernel.RegisteredList.RegisteredList.Methods">
 <span class="sig-name descname"><span class="pre">Methods</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/CustomKernel/RegisteredList.py#L36-L38"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredList.RegisteredList.Methods" title="Permalink to this definition">#</a></dt>
@@ -427,6 +498,39 @@ The RegisteredTuple object is derived from the CommandRegister object.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">customKernel</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.Methods" title="abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.Methods"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Methods</span></code></a>()</p></td>
+<td><p>The RegisteredTuple object supports the same methods as a standard Python list object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a RegisteredTuple object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>tuple</strong></dt><dd><p>A tuple of objects. These objects must be derived from the CommandRegister class.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.CustomKernel.RegisteredTuple.RegisteredTuple" title="abaqus.CustomKernel.RegisteredTuple.RegisteredTuple"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RegisteredTuple</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">customKernel</span><span class="o">.</span><span class="n">RegisteredTuple</span>
 </pre></div>
 </div>
 <p class="rubric">Methods</p>
@@ -467,6 +571,33 @@ The RepositorySupport object is derived from the CommandRegister object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">customData</span>
 <span class="n">session</span><span class="o">.</span><span class="n">customData</span>
 <span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">customData</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Repository</span></code></a>(name, constructors)</p></td>
+<td><p>This method installs a repository on the class.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a RepositorySupport object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RepositorySupport</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">customKernel</span><span class="o">.</span><span class="n">RepositorySupport</span>
 </pre></div>
 </div>
 <p class="rubric">Methods</p>

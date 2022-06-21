@@ -344,6 +344,79 @@
 </tbody>
 </table>
 </div>
+<p>This method creates a Model object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>description</strong></dt><dd><p>A String specifying the purpose and contents of the Model object. The default value is
+an empty string.</p>
+</dd>
+<dt><strong>stefanBoltzmann</strong></dt><dd><p>None or a Float specifying the Stefan-Boltzmann constant. The default value is None.</p>
+</dd>
+<dt><strong>absoluteZero</strong></dt><dd><p>None or a Float specifying the absolute zero constant. The default value is None.</p>
+</dd>
+<dt><strong>waveFormulation</strong></dt><dd><p>A SymbolicConstant specifying the type of incident wave formulation to be used in
+acoustic problems. Possible values are NOT_SET, SCATTERED, and TOTAL. The default value
+is NOT_SET.</p>
+</dd>
+<dt><strong>modelType</strong></dt><dd><p>A SymbolicConstant specifying the analysis model type. Possible values are
+STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is STANDARD_EXPLICIT.</p>
+</dd>
+<dt><strong>universalGas</strong></dt><dd><p>None or a Float specifying the universal gas constant. The default value is None.</p>
+</dd>
+<dt><strong>copyConstraints</strong></dt><dd><p>A boolean specifying whether to copy the constraints created in the model to the model
+that instances this model. The default value is ON.</p>
+</dd>
+<dt><strong>copyConnectors</strong></dt><dd><p>A boolean specifying whether to copy the connectors created in the model to the model
+that instances this model. The default value is ON.</p>
+</dd>
+<dt><strong>copyInteractions</strong></dt><dd><p>A boolean specifying whether to copy the interactions created in the model to the model
+that instances this model. The default value is ON.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Model</span></code> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">Model</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure" title="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FluidCavityPressure</span></code></a>(name, fluidCavity, ...)</p></td>
+<td><p>This method creates a FluidCavityPressure object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState" title="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InitialState</span></code></a>(name, instances, fileName[, ...])</p></td>
+<td><p>This method creates an InitialState predefined field object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening" title="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KinematicHardening</span></code></a>(name, region[, ...])</p></td>
+<td><p>This method creates a KinematicHardening object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment" title="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MaterialAssignment</span></code></a>(name, instanceList[, ...])</p></td>
+<td><p>This method creates a MaterialAssignment predefined field object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature" title="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Temperature</span></code></a>(name, createStepName, region[, ...])</p></td>
+<td><p>This method creates a Temperature object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity" title="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Velocity</span></code></a>(name, region, velocity1, velocity2, ...)</p></td>
+<td><p>This method creates a Velocity predefined field object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure">
 <span class="sig-name descname"><span class="pre">FluidCavityPressure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fluidCavity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fluidPressure</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure" title="abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure"><span class="pre">FluidCavityPressure</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PredefinedField/PredefinedFieldModel.py#L33-L62"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure" title="Permalink to this definition">#</a></dt>
@@ -863,6 +936,43 @@ The FluidCavityPressure object is derived from the PredefinedField object.</p>
 </tbody>
 </table>
 </div>
+<p>This method creates a FluidCavityPressure object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>fluidCavity</strong></dt><dd><p>A String specifying the name of a Fluid Cavity Interaction.</p>
+</dd>
+<dt><strong>fluidPressure</strong></dt><dd><p>A Float specifying the initial fluid pressure.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure" title="abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FluidCavityPressure</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">FluidCavityPressure</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.setValues" title="abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
+<td><p>This method modifies the FluidCavityPressure object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PredefinedField/FluidCavityPressure.py#L59-L61"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.setValues" title="Permalink to this definition">#</a></dt>
@@ -961,6 +1071,55 @@ The InitialState object is derived from the PredefinedField object.</p>
 </tbody>
 </table>
 </div>
+<p>This method creates an InitialState predefined field object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>instances</strong></dt><dd><p>A PartInstanceArray object specifying the instances to which the predefined field is
+applied.</p>
+</dd>
+<dt><strong>fileName</strong></dt><dd><p>A String specifying the name of the job that generated the initial state data.</p>
+</dd>
+<dt><strong>endStep</strong></dt><dd><p>The SymbolicConstant LAST_STEP or an Int specifying the step from which the initial
+state values are to be read or the SymbolicConstant LAST_STEP. The default value is
+LAST_STEP.</p>
+</dd>
+<dt><strong>endIncrement</strong></dt><dd><p>The SymbolicConstant STEP_END or an Int specifying the increment, interval or iteration
+of the step set in <strong>endStep</strong> or the SymbolicConstant STEP_END. The default value is
+STEP_END.</p>
+</dd>
+<dt><strong>updateReferenceConfiguration</strong></dt><dd><p>A Boolean specifying whether to update the reference configuration based on the import
+data. The default value is OFF.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.PredefinedField.InitialState.InitialState" title="abaqus.PredefinedField.InitialState.InitialState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InitialState</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">InitialState</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PredefinedField.InitialState.InitialState.setValues" title="abaqus.PredefinedField.InitialState.InitialState.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([endStep, endIncrement, ...])</p></td>
+<td><p>This method modifies the InitialState object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.PredefinedField.InitialState.InitialState.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">endStep</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'LAST_STEP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endIncrement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'STEP_END'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">updateReferenceConfiguration</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PredefinedField/InitialState.py#L71-L93"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PredefinedField.InitialState.InitialState.setValues" title="Permalink to this definition">#</a></dt>
@@ -1015,6 +1174,61 @@ predefined field. The <strong>field</strong> argument applies only when
 </dl>
 </dd>
 </dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PredefinedField.KinematicHardening.KinematicHardening.setValues" title="abaqus.PredefinedField.KinematicHardening.KinematicHardening.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([numBackStress, ...])</p></td>
+<td><p>This method modifies the KinematicHardening object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a KinematicHardening object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the predefined field is applied.</p>
+</dd>
+<dt><strong>numBackStress</strong></dt><dd><p>An Int specifying the number of backstresses. The default value is 1.</p>
+</dd>
+<dt><strong>equivPlasticStrain</strong></dt><dd><p>A sequence of Floats specifying the initial equivalent Plastic strain.</p>
+</dd>
+<dt><strong>backStress</strong></dt><dd><p>A sequence of sequences of Floats specifying the initial backstress tensor for kinematic
+hardening models. The default value is an empty sequence.</p>
+</dd>
+<dt><strong>sectPtNum</strong></dt><dd><p>A sequence of Ints specifying section point numbers. This argument is valid only when
+<strong>definition</strong> = SECTION_PTS.</p>
+</dd>
+<dt><strong>definition</strong></dt><dd><p>A SymbolicConstant specifying different types of kinematic hardening. Possible values
+are KINEMATIC_HARDENING, CRUSHABLE_FOAM, REBAR, SECTION_PTS, and USER_DEFINED. The
+default value is KINEMATIC_HARDENING.</p>
+</dd>
+<dt><strong>rebarLayerNames</strong></dt><dd><p>A sequence of Strings specifying rebar layer names. This argument is valid only when
+<strong>definition</strong> = REBAR.</p>
+</dd>
+<dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying whether the load is uniform. Possible values are MAGNITUDE
+and ANALYTICAL_FIELD. The default value is MAGNITUDE.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.PredefinedField.KinematicHardening.KinematicHardening" title="abaqus.PredefinedField.KinematicHardening.KinematicHardening"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KinematicHardening</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">KinematicHardening</span>
+</pre></div>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1090,6 +1304,61 @@ The MaterialAssignment object is derived from the PredefinedField object.</p>
 </dl>
 </dd>
 </dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.setValues" title="abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([useFields, assignmentList, ...])</p></td>
+<td><p>This method modifies the MaterialAssignment object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a MaterialAssignment predefined field object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>instanceList</strong></dt><dd><p>A PartInstanceArray object specifying the part instances to which the predefined field
+is applied. All instances must be assigned the same Eulerian section.</p>
+</dd>
+<dt><strong>useFields</strong></dt><dd><p>A Boolean specifying whether the volume fraction data will be uniform or defined by
+discrete fields. The default value is OFF.</p>
+</dd>
+<dt><strong>assignmentList</strong></dt><dd><p>A sequence of tuples specifying the uniform volume fractions to be assigned. This
+argument is valid only when <strong>useFields</strong> = FALSE. Each tuple contains two entries:A Region
+object.A tuple of Floats specifying the uniform volume fraction values. The length of
+the tuple must match the number of material instance names specified in the Eulerain
+section assigned to part instances specified by <strong>instanceList</strong>.</p>
+</dd>
+<dt><strong>fieldList</strong></dt><dd><p>A sequence of tuples specifying the discrete volume fractions to be assigned. This
+argument is valid only when <strong>useFields</strong> = TRUE. Each tuple contains two entries:A Region
+object.A tuple of Strings specifying Discrete Field names. The length of the tuple must
+match the number of material instance names specified in the Eulerain section assigned
+to part instances specified by <strong>instanceList</strong>.</p>
+</dd>
+<dt><strong>colorList</strong></dt><dd><p>A sequence of three Ints specifying colors used to display the material instance
+assignments. This is a sequence of R,G,B colors, where the values are represented by
+integers between 0 and 255. The default value is an empty sequence.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.PredefinedField.MaterialAssignment.MaterialAssignment" title="abaqus.PredefinedField.MaterialAssignment.MaterialAssignment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MaterialAssignment</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">MaterialAssignment</span>
+</pre></div>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1183,6 +1452,130 @@ ignored if the predefined field has a <strong>distributionType</strong> member a
 </dl>
 </dd>
 </dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PredefinedField.Temperature.Temperature.move" title="abaqus.PredefinedField.Temperature.Temperature.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
+<td><p>This method moves the TemperatureState object from one step to a different step.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.PredefinedField.Temperature.Temperature.setValues" title="abaqus.PredefinedField.Temperature.Temperature.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([distributionType, ...])</p></td>
+<td><p>This method modifies the data for an existing Temperature object in the step where it is created.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PredefinedField.Temperature.Temperature.setValuesInStep" title="abaqus.PredefinedField.Temperature.Temperature.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, field, ...])</p></td>
+<td><p>This method modifies the propagating data for an existing Temperature object in the specified step.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a Temperature object.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>createStepName</strong></dt><dd><p>A String specifying the name of the step in which the predefined field is created.</p>
+</dd>
+<dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the predefined field is applied. <strong>Region</strong>
+is ignored if the predefined field has a <strong>distributionType</strong> member available, and
+<strong>distributionType</strong> = FROM_FILE .</p>
+</dd>
+<dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying how the predefined field varies spatially. Possible values
+are UNIFORM, USER_DEFINED, FROM_FILE, FIELD, FROM_FILE_AND_USER_DEFINED, and
+DISCRETE_FIELD. The default value is UNIFORM.</p>
+</dd>
+<dt><strong>crossSectionDistribution</strong></dt><dd><p>A SymbolicConstant specifying how the predefined field is distributed over the cross
+section of the region. Possible values are</p>
+<ul class="simple">
+<li><p>CONSTANT_THROUGH_THICKNESS</p></li>
+<li><p>GRADIENTS_THROUGH_SHELL_CS</p></li>
+<li><p>GRADIENTS_THROUGH_BEAM_CS</p></li>
+<li><p>POINTS_THROUGH_SECTION</p></li>
+</ul>
+<p>The default value is CONSTANT_THROUGH_THICKNESS.</p>
+</dd>
+<dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField or DiscreteField object associated
+with this predefined field. The <strong>field</strong> argument applies only when
+<strong>distributionType</strong> = FIELD or <strong>distributionType</strong> = DISCRETE_FIELD. The default value is an
+empty string.</p>
+</dd>
+<dt><strong>amplitude</strong></dt><dd><p>A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
+UNSET should be used if the predefined field has no amplitude reference. The default
+value is UNSET.Note:<em>amplitude</em> should be given only if it is valid for the specified
+step.</p>
+</dd>
+<dt><strong>fileName</strong></dt><dd><p>A String specifying the name of the file from which the temperature values are to be
+read when <strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED.</p>
+</dd>
+<dt><strong>beginStep</strong></dt><dd><p>An Int specifying the first step from which temperature values are to be read or the
+SymbolicConstant FIRST_STEP or LAST_STEP. This argument is valid only when
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
+default value is None.</p>
+</dd>
+<dt><strong>beginIncrement</strong></dt><dd><p>An Int specifying the first increment of the step set in <strong>beginStep</strong> or the
+SymbolicConstants STEP_START or STEP_END. This argument is valid only when
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
+default value is None.</p>
+</dd>
+<dt><strong>endStep</strong></dt><dd><p>An Int specifying the last step from which temperature values are to be read or the
+SymbolicConstants FIRST_STEP and LAST_STEP. This argument is valid only when
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
+default value is None.</p>
+</dd>
+<dt><strong>endIncrement</strong></dt><dd><p>An Int specifying the last increment of the step set in <strong>endStep</strong> or the
+SymbolicConstants STEP_START and STEP_END. This argument is valid only when
+<strong>distributionType</strong> = FROM_FILE or <strong>distributionType</strong> = FROM_FILE_AND_USER_DEFINED. The
+default value is None.</p>
+</dd>
+<dt><strong>interpolate</strong></dt><dd><p>A SymbolicConstant specifying whether to interpolate a field read from an output
+database or results file. Possible values are OFF, ON or MIDSIDE_ONLY. The default value
+is OFF.</p>
+</dd>
+<dt><strong>magnitudes</strong></dt><dd><p>A Sequence of Doubles specifying the temperature values when <strong>distributionType</strong> = UNIFORM
+or FIELD. The value of the <strong>magnitudes</strong> argument is a function of the
+<strong>crossSectionDistribution</strong> argument, as shown in the following list:</p>
+<ul class="simple">
+<li><p>If <strong>crossSectionDistribution</strong> = CONSTANT_THROUGH_THICKNESS then <strong>magnitudes</strong> is a Double
+specifying the temperature.</p></li>
+<li><p>If <strong>crossSectionDistribution</strong> = GRADIENTS_THROUGH_SHELL_CS then <strong>magnitudes</strong> is a
+sequence of Doubles specifying the mean value and the gradient in the thickness</p></li>
+</ul>
+<p>direction.
+- If <strong>crossSectionDistribution</strong> = GRADIENTS_THROUGH_BEAM_CS then <strong>magnitudes</strong> is a</p>
+<blockquote>
+<div><p>sequence of Doubles specifying the mean value, the gradient in the N1 direction, and the
+gradient in the N2 direction.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>If <strong>crossSectionDistribution</strong> = POINTS_THROUGH_SECTION then <strong>magnitudes</strong> is a sequence
+of Doubles specifying the temperature at each point.</p></li>
+</ul>
+</dd>
+<dt><strong>absoluteExteriorTolerance</strong></dt><dd><p>A Float specifying the absolute value by which a driven node of the field can lie
+outside the region of the elements of the global model. The default value is 0.0. This
+argument cannot be used with <strong>midside</strong>.</p>
+</dd>
+<dt><strong>exteriorTolerance</strong></dt><dd><p>A Float specifying the fraction of the average element size in the global model by which
+a driven node of the field can lie outside the region of the elements of the global
+model. The default value is 0.0. This argument cannot be used with <strong>midside</strong>.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.PredefinedField.Temperature.Temperature" title="abaqus.PredefinedField.Temperature.Temperature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Temperature</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Temperature</span>
+</pre></div>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1591,6 +1984,62 @@ The Velocity object is derived from the PredefinedField object.</p>
 <ul class="simple">
 <li><p>INITIAL CONDITIONS</p></li>
 </ul>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.PredefinedField.Velocity.Velocity.setValues" title="abaqus.PredefinedField.Velocity.Velocity.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([field, distributionType])</p></td>
+<td><p>This method modifies the Velocity object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a Velocity predefined field object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>region</strong></dt><dd><p>A Region object specifying the region to which the predefined field is applied.</p>
+</dd>
+<dt><strong>velocity1</strong></dt><dd><p>A Float specifying the first component of the velocity.</p>
+</dd>
+<dt><strong>velocity2</strong></dt><dd><p>A Float specifying the second component of the velocity.</p>
+</dd>
+<dt><strong>velocity3</strong></dt><dd><p>A Float specifying the third component of the velocity.</p>
+</dd>
+<dt><strong>omega</strong></dt><dd><p>A Float specifying the angular velocity.</p>
+</dd>
+<dt><strong>axisBegin</strong></dt><dd><p>A sequence of Floats specifying the <em>X-</em>, <em>Y-</em>, and <strong>Z</strong>- coordinates of the starting
+point of the axis about which <strong>omega</strong> is defined.</p>
+</dd>
+<dt><strong>axisEnd</strong></dt><dd><p>A sequence of Floats specifying the <em>X-</em>, <em>Y-</em>, and <strong>Z</strong>- coordinates of the end point of
+the axis about which <strong>omega</strong> is defined.</p>
+</dd>
+<dt><strong>field</strong></dt><dd><p>A String specifying the name of the AnalyticalField object associated with this
+predefined field. The <strong>field</strong> argument applies only when
+<strong>distributionType</strong> = FIELD_ANALYTICAL. The default value is an empty string.</p>
+</dd>
+<dt><strong>distributionType</strong></dt><dd><p>A SymbolicConstant specifying whether the load is uniform. Possible values are MAGNITUDE
+and FIELD_ANALYTICAL. The default value is MAGNITUDE.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.PredefinedField.Velocity.Velocity" title="abaqus.PredefinedField.Velocity.Velocity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Velocity</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Velocity</span>
+</pre></div>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">

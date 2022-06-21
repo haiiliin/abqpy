@@ -338,6 +338,73 @@
 </tbody>
 </table>
 </div>
+<p>This method creates a Model object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>description</strong></dt><dd><p>A String specifying the purpose and contents of the Model object. The default value is
+an empty string.</p>
+</dd>
+<dt><strong>stefanBoltzmann</strong></dt><dd><p>None or a Float specifying the Stefan-Boltzmann constant. The default value is None.</p>
+</dd>
+<dt><strong>absoluteZero</strong></dt><dd><p>None or a Float specifying the absolute zero constant. The default value is None.</p>
+</dd>
+<dt><strong>waveFormulation</strong></dt><dd><p>A SymbolicConstant specifying the type of incident wave formulation to be used in
+acoustic problems. Possible values are NOT_SET, SCATTERED, and TOTAL. The default value
+is NOT_SET.</p>
+</dd>
+<dt><strong>modelType</strong></dt><dd><p>A SymbolicConstant specifying the analysis model type. Possible values are
+STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is STANDARD_EXPLICIT.</p>
+</dd>
+<dt><strong>universalGas</strong></dt><dd><p>None or a Float specifying the universal gas constant. The default value is None.</p>
+</dd>
+<dt><strong>copyConstraints</strong></dt><dd><p>A boolean specifying whether to copy the constraints created in the model to the model
+that instances this model. The default value is ON.</p>
+</dd>
+<dt><strong>copyConnectors</strong></dt><dd><p>A boolean specifying whether to copy the connectors created in the model to the model
+that instances this model. The default value is ON.</p>
+</dd>
+<dt><strong>copyInteractions</strong></dt><dd><p>A boolean specifying whether to copy the interactions created in the model to the model
+that instances this model. The default value is ON.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Model</span></code> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">Model</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest" title="abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FieldOutputRequest</span></code></a>(name, createStepName[, ...])</p></td>
+<td><p>This method creates a FieldOutputRequest object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest" title="abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistoryOutputRequest</span></code></a>(name, createStepName[, ...])</p></td>
+<td><p>This method creates a HistoryOutputRequest object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.OutputModel.OutputModel.IntegratedOutputSection" title="abaqus.StepOutput.OutputModel.OutputModel.IntegratedOutputSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IntegratedOutputSection</span></code></a>(name, surface[, ...])</p></td>
+<td><p>This method creates an IntegratedOutputSection object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.OutputModel.OutputModel.TimePoint" title="abaqus.StepOutput.OutputModel.OutputModel.TimePoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TimePoint</span></code></a>(name, points)</p></td>
+<td><p>This method creates a TimePoint object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest">
 <span class="sig-name descname"><span class="pre">FieldOutputRequest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">createStepName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'MODEL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variables</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'PRESELECT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ALL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeInterval</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'EVERY_TIME_INCREMENT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numIntervals</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeMarks</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boltLoad</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sectionPoints</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interactions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rebar</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'EXCLUDE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fasteners</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">assembledFastener</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">assembledFastenerSet</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exteriorOnly</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layupNames</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layupLocationMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SPECIFIED'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputAtPlyTop</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputAtPlyMid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputAtPlyBottom</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'INTEGRATION_POINTS'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/OutputModel.py#L24-L172"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest" title="Permalink to this definition">#</a></dt>
@@ -848,6 +915,79 @@ specific diagnostic checks</p>
 </tbody>
 </table>
 </div>
+<p>This method creates a DiagnosticPrint object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>allke</strong></dt><dd><p>A Boolean specifying a request for a column containing the total kinetic energy. This
+argument is valid only for an Abaqus/Explicit analysis. The default value is ON.</p>
+</dd>
+<dt><strong>criticalElement</strong></dt><dd><p>A Boolean specifying a request for a column containing the element that has the smallest
+stable time increment and a column listing the value. This argument is valid only for an
+Abaqus/Explicit analysis. The default value is ON.</p>
+</dd>
+<dt><strong>dmass</strong></dt><dd><p>A Boolean specifying a request for a column containing the percent change in total mass
+of the model as a result of mass scaling. This argument is valid only for an
+Abaqus/Explicit analysis. The default value is OFF unless mass scaling is present in the
+model.</p>
+</dd>
+<dt><strong>etotal</strong></dt><dd><p>A Boolean specifying a request for a column containing the energy balance of the model.
+This argument is valid only for an Abaqus/Explicit analysis. The default value is OFF.</p>
+</dd>
+<dt><strong>contact</strong></dt><dd><p>A Boolean specifying a request for detailed output of points that are contacting or
+separating in interface and gap problems. This argument is valid only for an
+Abaqus/Standard analysis. The default value is ON.</p>
+</dd>
+<dt><strong>modelChange</strong></dt><dd><p>A Boolean specifying a request for detailed output of which elements are being removed
+or reactivated in the step. This argument is valid only for an Abaqus/Standard analysis.
+The default value is OFF.</p>
+</dd>
+<dt><strong>plasticity</strong></dt><dd><p>A Boolean specifying a request for detailed output of element and integration point
+numbers for which the plasticity algorithms have failed to converge in the material
+routines. This argument is valid only for an Abaqus/Standard analysis. The default value
+is OFF.</p>
+</dd>
+<dt><strong>residual</strong></dt><dd><p>A Boolean specifying a request for output of equilibrium residuals during the
+equilibrium iterations. This argument is valid only for an Abaqus/Standard analysis. The
+default value is ON.</p>
+</dd>
+<dt><strong>frequency</strong></dt><dd><p>An Int specifying the frequency of output, in increments. The default value is 1.</p>
+</dd>
+<dt><strong>solve</strong></dt><dd><p>A Boolean specifying a request for information regarding the actual number of equations
+and the wavefront in each iteration. This argument is valid only for an Abaqus/Standard
+analysis. The default value is ON.</p>
+</dd>
+<dt><strong>mass</strong></dt><dd><p>A Boolean specifying a request for a column containing the total mass of the model as a
+result of mass scaling. This argument is valid only for an Abaqus/Explicit analysis. The
+default value is OFF.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint" title="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DiagnosticPrint</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">DiagnosticPrint</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.setValues" title="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
+<td><p>This method modifies the DiagnosticPrint object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/DiagnosticPrint.py#L97-L99"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.setValues" title="Permalink to this definition">#</a></dt>
@@ -897,6 +1037,133 @@ MODEL.</p>
 <dt><strong>interactions: tuple</strong></dt><dd><p>None or a tuple of Strings specifying the interaction names. The default value is
 None.The sequence can contain only one String.</p>
 </dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.deactivate" title="abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
+<td><p>This method deactivates the field output request in the specified step and all its subsequent steps.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.move" title="abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
+<td><p>This method moves the field output request state object from one step to a different step.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.reset" title="abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
+<td><p>This method resets the field output request state of the specified step to the state of the previous step.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.resume" title="abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
+<td><p>This method resumes the field output request that was previously suppressed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.setValues" title="abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([region, variables, frequency, ...])</p></td>
+<td><p>This method modifies the data for an existing FieldOutputRequest object in the step where it is created.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.setValuesInStep" title="abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, variables, ...])</p></td>
+<td><p>This method modifies the propagating data for an existing FieldOutputRequest object in the specified step.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.suppress" title="abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
+<td><p>This method suppresses the field output request.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a FieldOutputRequest object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>createStepName</strong></dt><dd><p>A String specifying the name of the step in which the object is created.</p>
+</dd>
+<dt><strong>region</strong></dt><dd><p>The SymbolicConstant MODEL or a Region object specifying the region from which output is
+requested. The SymbolicConstant MODEL represents the whole model. The default value is
+MODEL.</p>
+</dd>
+<dt><strong>variables</strong></dt><dd><p>A sequence of Strings specifying output request variable or component names, or the
+SymbolicConstant PRESELECT or ALL. PRESELECT represents all default output variables for
+the given step. ALL represents all valid output variables. The default value is
+PRESELECT.</p>
+</dd>
+<dt><strong>frequency</strong></dt><dd><p>The SymbolicConstant LAST_INCREMENT or an Int specifying the output frequency in
+increments. The default value is 1.</p>
+</dd>
+<dt><strong>modes</strong></dt><dd><p>The SymbolicConstant ALL or a sequence of Ints specifying a list of eigenmodes for which
+output is desired. The default value is ALL.</p>
+</dd>
+<dt><strong>timeInterval</strong></dt><dd><p>The SymbolicConstant EVERY_TIME_INCREMENT or a Float specifying the time interval at
+which the output states are to be written. The default value is EVERY_TIME_INCREMENT.</p>
+</dd>
+<dt><strong>numIntervals</strong></dt><dd><p>An Int specifying the number of intervals during the step at which output database
+states are to be written. The default value is 20.</p>
+</dd>
+<dt><strong>timeMarks</strong></dt><dd><p>A Boolean specifying when to write results to the output database. OFF indicates that
+output is written immediately after the time dictated by the specified number of
+intervals. ON indicates that output is written at the exact times dictated by the
+specified number of intervals. The default value is OFF.</p>
+</dd>
+<dt><strong>boltLoad</strong></dt><dd><p>A String specifying a bolt load from which output is requested.</p>
+</dd>
+<dt><strong>sectionPoints</strong></dt><dd><p>The SymbolicConstant DEFAULT or a sequence of Ints specifying the section points for
+which output requested. The default is DEFAULT.</p>
+</dd>
+<dt><strong>interactions</strong></dt><dd><p>None or a sequence of Strings specifying the interaction names. The default value is
+None.The sequence can contain only one String.</p>
+</dd>
+<dt><strong>rebar</strong></dt><dd><p>A SymbolicConstant specifying whether output is requested for rebar. Possible values are
+EXCLUDE, INCLUDE, and ONLY. The default value is EXCLUDE.</p>
+</dd>
+<dt><strong>filter</strong></dt><dd><p>The SymbolicConstant ANTIALIASING or a String specifying the name of an output filter
+object. The default value is None.</p>
+</dd>
+<dt><strong>directions</strong></dt><dd><p>A Boolean specifying whether to output directions of the local material coordinate
+system. The default value is ON.</p>
+</dd>
+<dt><strong>fasteners</strong></dt><dd><p>A String specifying the fastener name. The default value is an empty string.</p>
+</dd>
+<dt><strong>assembledFastener</strong></dt><dd><p>A String specifying the assembled fastener name. The default value is an empty string.</p>
+</dd>
+<dt><strong>assembledFastenerSet</strong></dt><dd><p>A String specifying the set name from the model referenced by the assembled fastener,
+<strong>assembledFastener</strong>. The default value is an empty string.</p>
+</dd>
+<dt><strong>exteriorOnly</strong></dt><dd><p>A Boolean specifying whether the output domain is restricted to the exterior of the
+model. This argument is only valid if <strong>region</strong> = MODEL. The default value is OFF.</p>
+</dd>
+<dt><strong>layupNames</strong></dt><dd><p>A List of Composite Layer Names.</p>
+</dd>
+<dt><strong>layupLocationMethod</strong></dt><dd><p>A Symbolic constant specifying the method used to indicate the output locations for
+composite layups. Possible values are ALL_LOCATIONS, SPECIFIED and TYPED_IN. The default
+value is SPECIFIED.</p>
+</dd>
+<dt><strong>outputAtPlyTop</strong></dt><dd><p>A Boolean specifying whether to output at the ply top section point. The default value
+is False.</p>
+</dd>
+<dt><strong>outputAtPlyMid</strong></dt><dd><p>A Boolean specifying whether to output at the ply mid section point. The default value
+is True.</p>
+</dd>
+<dt><strong>outputAtPlyBottom</strong></dt><dd><p>A Boolean specifying whether to output at the ply bottom section point. The default
+value is False.</p>
+</dd>
+<dt><strong>position</strong></dt><dd><p>A SymbolicConstant specifying the position on an element where output needs to be
+written. Possible values are INTEGRATION_POINTS, AVERAGED_AT_NODES, CENTROIDAL, and
+NODES. The default value is INTEGRATION_POINTS.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">FieldOutputRequest</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>interactions</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1278,6 +1545,133 @@ None.The sequence can contain only one String.</p>
 </tbody>
 </table>
 </div>
+<p>This method creates a HistoryOutputRequest object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>createStepName</strong></dt><dd><p>A String specifying the name of the step in which the object is created.</p>
+</dd>
+<dt><strong>region</strong></dt><dd><p>The SymbolicConstant MODEL or a Region object specifying the region from which output is
+requested. The SymbolicConstant MODEL represents the whole model. The default value is
+MODEL.If the region is a surface region, the surface must lie within the general contact
+surface domain.</p>
+</dd>
+<dt><strong>variables</strong></dt><dd><p>A sequence of Strings specifying output request variable or component names, or the
+SymbolicConstant PRESELECT or ALL. PRESELECT represents all default output variables for
+the given step. ALL represents all valid output variables. The default value is
+PRESELECT.</p>
+</dd>
+<dt><strong>frequency</strong></dt><dd><p>The SymbolicConstant LAST_INCREMENT or an Int specifying the output frequency in
+increments. The default value is 1.</p>
+</dd>
+<dt><strong>modes</strong></dt><dd><p>The SymbolicConstant ALL or a sequence of Ints specifying a list of eigenmodes for which
+output is desired. The default value is ALL.</p>
+</dd>
+<dt><strong>timeInterval</strong></dt><dd><p>The SymbolicConstant EVERY_TIME_INCREMENT or a Float specifying the time interval at
+which the output states are to be written. The default value is EVERY_TIME_INCREMENT.</p>
+</dd>
+<dt><strong>numIntervals</strong></dt><dd><p>An Int specifying the number of intervals during the step at which output database
+states are to be written. The default value is 20.</p>
+</dd>
+<dt><strong>boltLoad</strong></dt><dd><p>A String specifying a bolt load from which output is requested. The default value is an
+empty string.</p>
+</dd>
+<dt><strong>sectionPoints</strong></dt><dd><p>The SymbolicConstant DEFAULT or a sequence of Ints specifying the section points for
+which output is requested. The default value is DEFAULT.</p>
+</dd>
+<dt><strong>stepName</strong></dt><dd><p>A String specifying the name of the step. The default value is an empty string.</p>
+</dd>
+<dt><strong>interactions</strong></dt><dd><p>None or a sequence of Strings specifying the interaction names. The default value is
+None.The sequence can contain only one String.</p>
+</dd>
+<dt><strong>contourIntegral</strong></dt><dd><p>A String specifying the contour integral name. The default value is None.</p>
+</dd>
+<dt><strong>numberOfContours</strong></dt><dd><p>An Int specifying the number of contour integrals to output for the contour integral
+object. The default value is 0.</p>
+</dd>
+<dt><strong>stressInitializationStep</strong></dt><dd><p>A String specifying the name of the stress initialization step. The default value is
+None.</p>
+</dd>
+<dt><strong>contourType</strong></dt><dd><p>A SymbolicConstant specifying the type of contour integral. Possible values are
+J_INTEGRAL, C_INTEGRAL, T_STRESS, and K_FACTORS. The default value is J_INTEGRAL.</p>
+</dd>
+<dt><strong>kFactorDirection</strong></dt><dd><p>A SymbolicConstant specifying the stress intensity factor direction. Possible values are
+MTS, MERR, and K110. The <strong>kFactorDirection</strong> argument is valid only if
+<strong>contourType</strong> = K_FACTORS. The default value is MTS.</p>
+</dd>
+<dt><strong>rebar</strong></dt><dd><p>A SymbolicConstant specifying whether output is requested for rebar. Possible values are
+EXCLUDE, INCLUDE, and ONLY. The default value is EXCLUDE.</p>
+</dd>
+<dt><strong>integratedOutputSection</strong></dt><dd><p>A String specifying the integrated output section. The default value is an empty string.</p>
+</dd>
+<dt><strong>springs</strong></dt><dd><p>A sequence of Strings specifying the springs/dashpots names. The default value is None.
+The sequence can contain only one String.</p>
+</dd>
+<dt><strong>filter</strong></dt><dd><p>The SymbolicConstant ANTIALIASING or a String specifying the name of an output filter
+object. The default value is None.</p>
+</dd>
+<dt><strong>fasteners</strong></dt><dd><p>A String specifying the fastener name. The default value is an empty string.</p>
+</dd>
+<dt><strong>assembledFastener</strong></dt><dd><p>A String specifying the assembled fastener name. The default value is an empty string.</p>
+</dd>
+<dt><strong>assembledFastenerSet</strong></dt><dd><p>A String specifying the set name from the model referenced by the assembled fastener,
+<strong>assembledFastener</strong>. The default value is an empty string.</p>
+</dd>
+<dt><strong>sensor</strong></dt><dd><p>A Boolean specifying whether to associate the output request with a sensor definition.
+The default value is OFF.</p>
+</dd>
+<dt><strong>useGlobal</strong></dt><dd><p>A Boolean specifying whether to output vector-valued nodal variables in the global
+directions. The default value is True.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">HistoryOutputRequest</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>interactions</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.deactivate" title="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
+<td><p>This method deactivates the history output request in the specified step and all subsequent steps.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.move" title="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
+<td><p>This method moves the history output request state object from one step to a different step.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.reset" title="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
+<td><p>This method resets the history output request state of the specified step to the state of the previous step.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.resume" title="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
+<td><p>This method resumes the history output request that was previously suppressed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.setValues" title="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([region, variables, frequency, ...])</p></td>
+<td><p>This method modifies the data for an existing HistoryOutputRequest object in the step where it is created.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.setValuesInStep" title="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, variables, ...])</p></td>
+<td><p>This method modifies the propagating data for an existing HistoryOutputRequest object in the specified step.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.suppress" title="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
+<td><p>This method suppresses the history output request.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.deactivate">
 <span class="sig-name descname"><span class="pre">deactivate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stepName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/HistoryOutputRequest.py#L185-L195"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.deactivate" title="Permalink to this definition">#</a></dt>
@@ -1563,6 +1957,66 @@ an empty string.</p>
 </tbody>
 </table>
 </div>
+<p>This method creates an IntegratedOutputSection object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>surface</strong></dt><dd><p>A Region object specifying the surface over which the output is based.</p>
+</dd>
+<dt><strong>refPoint</strong></dt><dd><p>None or a Region object specifying the anchor point about which the integrated moment
+over the output region is computed or the SymbolicConstant None representing the global
+origin. The default value is None.</p>
+</dd>
+<dt><strong>refPointAtCenter</strong></dt><dd><p>A Boolean specifying that the <strong>refPoint</strong> be adjusted so that it coincides with the
+center of the output region in the initial configuration. This argument is valid only
+when you include the <strong>refPoint</strong> argument. The default value is OFF.</p>
+</dd>
+<dt><strong>refPointMotion</strong></dt><dd><p>A SymbolicConstant specifying how to relate the motion of <strong>refPoint</strong> to the average
+motion of the output region. A value of INDEPENDENT will allow the <strong>refPoint</strong> to move
+independent of the output region. A value of AVERAGE_TRANSLATION will set the
+displacement of the <strong>refPoint</strong> equal to the average translation of the output region. A
+value of AVERAGE will set the displacement and rotation of the <strong>refPoint</strong> equal to the
+average translation of the output region. The default value is INDEPENDENT.This argument
+is valid only when you include the <strong>refPoint</strong> argument.</p>
+</dd>
+<dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system used to express vector
+output. If <strong>localCsys</strong> = None, the degrees of freedom are defined in the global coordinate
+system. The default value is None.</p>
+</dd>
+<dt><strong>projectOrientation</strong></dt><dd><p>A Boolean specifying that the coordinate system be projected onto the <strong>surface</strong> such
+that the 1-axis is normal to the <strong>surface</strong>. Projection onto a planar <strong>surface</strong> is such
+that the 1-axis is normal to the surface, and a projection onto a nonplanar <strong>surface</strong> is
+such that a least-squares fit surface will be used. The default value is OFF.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection" title="abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IntegratedOutputSection</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">IntegratedOutputSection</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.setValues" title="abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(surface[, refPoint, ...])</p></td>
+<td><p>This method modifies the IntegratedOutputSection object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">surface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointAtCenter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointMotion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'INDEPENDENT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOrientation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/IntegratedOutputSection.py#L76-L117"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.setValues" title="Permalink to this definition">#</a></dt>
@@ -1635,6 +2089,68 @@ such that a least-squares fit surface will be used. The default value is OFF.</p
 </tbody>
 </table>
 </div>
+<p>This method creates a request for a degree of freedom to be monitored in a general or
+modal procedure.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><strong>node</strong></dt><dd><p>A String specifying the name of the region to be monitored.</p>
+</dd>
+<dt><strong>dof</strong></dt><dd><p>A SymbolicConstant specifying the degree of freedom to be monitored at the node.
+Possible values are:</p>
+<ul class="simple">
+<li><p>U1</p></li>
+<li><p>U2</p></li>
+<li><p>U3</p></li>
+<li><p>UR1</p></li>
+<li><p>UR2</p></li>
+<li><p>UR3</p></li>
+<li><p>WARP</p></li>
+<li><p>FLUID_PRESSURE</p></li>
+<li><p>ELECTRICAL_POTENTIAL</p></li>
+<li><p>NT11</p></li>
+<li><p>NT30</p></li>
+<li><p>NN11</p></li>
+<li><p>NN30</p></li>
+</ul>
+<p>The NT identifiers are not available for mass diffusion. The NN identifiers are
+available only for mass diffusion.</p>
+</dd>
+<dt><strong>frequency</strong></dt><dd><p>An Int specifying the output frequency in increments. This argument is valid only for an
+Abaqus/Standard analysis.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.StepOutput.Monitor.Monitor" title="abaqus.StepOutput.Monitor.Monitor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Monitor</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Monitor</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.Monitor.Monitor.setValues" title="abaqus.StepOutput.Monitor.Monitor.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
+<td><p>This method modifies the Monitor object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.StepOutput.Monitor.Monitor.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/Monitor.py#L71-L78"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Monitor.Monitor.setValues" title="Permalink to this definition">#</a></dt>
@@ -1667,6 +2183,56 @@ such that a least-squares fit surface will be used. The default value is OFF.</p
 <ul class="simple">
 <li><p>RESTART</p></li>
 </ul>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.Restart.Restart.setValues" title="abaqus.StepOutput.Restart.Restart.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
+<td><p>This method modifies the Restart object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a restart request.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>numberIntervals</strong></dt><dd><p>An Int specifying the number of intervals during the step at which restart information
+will be written. The default value is 0. The default value is 1.</p>
+</dd>
+<dt><strong>timeMarks</strong></dt><dd><p>A Boolean specifying whether to use exact time marks for writing during an analysis. The
+default value is OFF. The default value is OFF.</p>
+</dd>
+<dt><strong>overlay</strong></dt><dd><p>A Boolean specifying that only one increment per step should be retained on the restart
+file, thus minimizing the size of the restart file. The default value is OFF. The
+default value is ON.</p>
+</dd>
+<dt><strong>frequency</strong></dt><dd><p>An Int specifying the increments at which restart information will be written. The
+default value is 0. The default value is 0.This argument applies only to Abaqus/Standard
+analyses.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.StepOutput.Restart.Restart" title="abaqus.StepOutput.Restart.Restart"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Restart</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Restart</span>
+</pre></div>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1714,6 +2280,48 @@ database or restart files.</p>
 <ul class="simple">
 <li><p>TIME POINTS</p></li>
 </ul>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.TimePoint.TimePoint.setValues" title="abaqus.StepOutput.TimePoint.TimePoint.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
+<td><p>This method modifies the TimePoint object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a TimePoint object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>points</strong></dt><dd><p>A sequence of sequences of Floats specifying time points at which data are written to
+the output database or restart files.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.StepOutput.TimePoint.TimePoint" title="abaqus.StepOutput.TimePoint.TimePoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TimePoint</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">InvalidNameError</span></code></dt><dd></dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">TimePoint</span>
+</pre></div>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">

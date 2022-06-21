@@ -1440,6 +1440,52 @@ AreaStyle objects can be created using the methods described below.</p>
 </tbody>
 </table>
 </div>
+<p>This method creates an AreaStyle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>color</strong></dt><dd><p>A String specifying the color to be used when filling an area with this AreaStyle
+object. The default value is “White”.</p>
+</dd>
+<dt><strong>fill</strong></dt><dd><p>A Boolean specifying whether to fill the area when using this AreaStyle. The default
+value is ON.</p>
+</dd>
+<dt><strong>style</strong></dt><dd><p>A SymbolicConstant specifying the area pattern style to be used when filling an area
+using this AreaStyle. The default value is SOLID.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.XY.AreaStyle.AreaStyle" title="abaqus.XY.AreaStyle.AreaStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AreaStyle</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">ColorError</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">AreaStyle</span>
+<span class="n">xyPlot</span><span class="o">.</span><span class="n">AreaStyle</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.AreaStyle.AreaStyle.setValues" title="abaqus.XY.AreaStyle.AreaStyle.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([color, fill, style])</p></td>
+<td><p>This method modifies the AreaStyle object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.AreaStyle.AreaStyle.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fill</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SOLID'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AreaStyle.py#L71-L88"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AreaStyle.AreaStyle.setValues" title="Permalink to this definition">#</a></dt>
@@ -2379,6 +2425,56 @@ LineStyle objects can be created using the methods described below.</p>
 </tbody>
 </table>
 </div>
+<p>This method creates a LineStyle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>color</strong></dt><dd><p>A String specifying the color to be used when drawing a line with this LineStyle object.
+The default value is “White”.</p>
+</dd>
+<dt><strong>show</strong></dt><dd><p>A Boolean specifying whether to draw the line when using this LineStyle. The default
+value is ON.</p>
+</dd>
+<dt><strong>style</strong></dt><dd><p>A SymbolicConstant specifying the line style to be used when drawing lines using this
+LineStyle. Possible values are SOLID, DASHED, DOTTED, and DOT_DASH. The default value is
+SOLID.</p>
+</dd>
+<dt><strong>thickness</strong></dt><dd><p>A Float specifying the line thickness in mm to be used when drawing lines using this
+LineStyle. The default value is 0.2.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LineStyle</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">ColorError</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">LineStyle</span>
+<span class="n">xyPlot</span><span class="o">.</span><span class="n">LineStyle</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle.setValues" title="abaqus.XY.LineStyle.LineStyle.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([color, show, style, thickness])</p></td>
+<td><p>This method modifies the LineStyle object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.LineStyle.LineStyle.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SOLID'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/LineStyle.py#L111-L136"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.LineStyle.LineStyle.setValues" title="Permalink to this definition">#</a></dt>
@@ -2471,6 +2567,117 @@ QuantityType objects can be created using the methods described below.</p>
 </tbody>
 </table>
 </div>
+<p>This method creates a QuantityType object.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><strong>label</strong></dt><dd><p>A String specifying the label for this quantity type.</p>
+</dd>
+<dt><strong>type</strong></dt><dd><p>A SymbolicConstant specifying the physical dimension of the axis. Possible values are:</p>
+<ul class="simple">
+<li><p>NONE.</p></li>
+<li><p>ACCELERATION.</p></li>
+<li><p>ACOUSTIC_INTENSITY.</p></li>
+<li><p>ANGLE.</p></li>
+<li><p>ANGULAR_MOMENTUM.</p></li>
+<li><p>ARC_LENGTH.</p></li>
+<li><p>AREA.</p></li>
+<li><p>AREA_VELOCITY_SQUARED, specifying “Velocity squared per area”.</p></li>
+<li><p>BIMOMENT.</p></li>
+<li><p>CURVATURE.</p></li>
+<li><p>CORIOLIS_LOAD.</p></li>
+<li><p>DAMAGE.</p></li>
+<li><p>DAMAGE_CRITERION.</p></li>
+<li><p>DENSITY.</p></li>
+<li><p>DENSITY_ROTATIONAL_ACCELERATION, specifying “Density * Angular acceleration”.</p></li>
+<li><p>DISPLACEMENT.</p></li>
+<li><p>ECURRENT_AREA_TIME, specifying “Time integrated electric current per area”.</p></li>
+<li><p>ELECTRIC_CHARGE.</p></li>
+<li><p>ELECTRIC_CURRENT.</p></li>
+<li><p>ELECTRIC_CURRENT_AREA, specifying “Electric current per unit area”.</p></li>
+<li><p>ELECTRIC_POTENTIAL.</p></li>
+<li><p>ENERGY.</p></li>
+<li><p>ENERGY_DENSITY.</p></li>
+<li><p>ENERGY_RELEASE_RATE.</p></li>
+<li><p>EPOTENTIAL_GRADIENT, specifying “Electric potential gradient”.</p></li>
+<li><p>FREQUENCY.</p></li>
+<li><p>FORCE.</p></li>
+<li><p>FORCE_VOLUME, specifying “Force per volume”.</p></li>
+<li><p>HEAT_FLUX.</p></li>
+<li><p>HEAT_FLUX_AREA, specifying “Heat flux per area”.</p></li>
+<li><p>HEAT_FLUX_RATE.</p></li>
+<li><p>HEAT_FLUX_VOLUME, specifying “Heat flux per volume”.</p></li>
+<li><p>LENGTH.</p></li>
+<li><p>LINEAR_PRESSURE.</p></li>
+<li><p>LUMIN, specifying “Luminous intensity”.</p></li>
+<li><p>MASS.</p></li>
+<li><p>MASS_FLOW_AREA, specifying “Mass flow per area”.</p></li>
+<li><p>MASS_FLOW_AREA_RATE, specifying “Mass flow rate per area”.</p></li>
+<li><p>MASS_FLOW_RATE.</p></li>
+<li><p>MODE_NUMBER.</p></li>
+<li><p>MOMENT.</p></li>
+<li><p>NUMBER.</p></li>
+<li><p>PATH.</p></li>
+<li><p>PHASE.</p></li>
+<li><p>POSITION.</p></li>
+<li><p>PRESSURE.</p></li>
+<li><p>PRESSURE_GRADIENT.</p></li>
+<li><p>RATE.</p></li>
+<li><p>ROTARY_INERTIA.</p></li>
+<li><p>ROTATIONAL_ACCELERATION.</p></li>
+<li><p>ROTATIONAL_VELOCITY.</p></li>
+<li><p>STATUS.</p></li>
+<li><p>STRAIN.</p></li>
+<li><p>STRAIN_RATE.</p></li>
+<li><p>STRESS.</p></li>
+<li><p>STRESS_INTENS_FACTOR, specifying “Stress intensity factor”.</p></li>
+<li><p>SUBSTANCE, specifying “Amount of substance”.</p></li>
+<li><p>TEMPERATURE.</p></li>
+<li><p>THICKNESS.</p></li>
+<li><p>TIME.</p></li>
+<li><p>TIME_INCREMENT.</p></li>
+<li><p>TIME_HEAT_FLUX, specifying “Time integrated heat flux”.</p></li>
+<li><p>TIME_HEAT_FLUX_AREA, specifying “Time integrated heat flux per area”.</p></li>
+<li><p>TIME_VOLUME, specifying “Time integrated volume”.</p></li>
+<li><p>TIME_VOLUME_FLUX, specifying “Time integrated volume flux per area”.</p></li>
+<li><p>TWIST.</p></li>
+<li><p>VELOCITY.</p></li>
+<li><p>VELOCITY_SQUARED.</p></li>
+<li><p>VOLUME.</p></li>
+<li><p>VOLUME_FLUX.</p></li>
+<li><p>VOLUME_FLUX_AREA, specifying “Volume flux per area”.</p></li>
+<li><p>VOLUME_FRACTION.</p></li>
+</ul>
+<p>The default value is NONE</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.XY.QuantityType.QuantityType" title="abaqus.XY.QuantityType.QuantityType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">QuantityType</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">QuantityType</span>
+<span class="n">xyPlot</span><span class="o">.</span><span class="n">QuantityType</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.QuantityType.QuantityType.setValues" title="abaqus.XY.QuantityType.QuantityType.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
+<td><p>This method modifies the QuantityType object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.QuantityType.QuantityType.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/QuantityType.py#L155-L157"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.QuantityType.QuantityType.setValues" title="Permalink to this definition">#</a></dt>
@@ -2501,6 +2708,69 @@ SymbolStyle objects can be created using the methods described below.</p>
 <span class="n">session</span><span class="o">.</span><span class="n">xyPlots</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">charts</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">axes2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">axisData</span><span class="o">.</span><span class="n">curves</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">symbolStyle</span>
 <span class="n">session</span><span class="o">.</span><span class="n">xyPlots</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">charts</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">curves</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">symbolStyle</span>
 <span class="n">session</span><span class="o">.</span><span class="n">xyPlots</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">curves</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">symbolStyle</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.SymbolStyle.SymbolStyle.setValues" title="abaqus.XY.SymbolStyle.SymbolStyle.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([color, show, marker, size])</p></td>
+<td><p>This method modifies the SymbolStyle object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a SymbolStyle object.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><strong>color</strong></dt><dd><p>A String specifying the color to be used when drawing a marker with this SymbolStyle
+object. The default value is “White”.</p>
+</dd>
+<dt><strong>show</strong></dt><dd><p>A Boolean specifying whether to draw the marker when using this SymbolStyle object. The
+default value is ON.</p>
+</dd>
+<dt><strong>marker</strong></dt><dd><p>A SymbolicConstant specifying the marker type be used when drawing symbols using this
+SymbolStyle object. Possible values are:</p>
+<ul class="simple">
+<li><p>FILLED_CIRCLE</p></li>
+<li><p>FILLED_SQUARE</p></li>
+<li><p>FILLED_DIAMOND</p></li>
+<li><p>FILLED_TRI</p></li>
+<li><p>HOLLOW_CIRCLE</p></li>
+<li><p>HOLLOW_SQUARE</p></li>
+<li><p>HOLLOW_DIAMOND</p></li>
+<li><p>HOLLOW_TRI</p></li>
+<li><p>CROSS</p></li>
+<li><p>XMARKER</p></li>
+<li><p>POINT</p></li>
+</ul>
+<p>The default value is FILLED_CIRCLE.</p>
+</dd>
+<dt><strong>size</strong></dt><dd><p>A Float specifying the marker size to be used when drawing markers using this
+SymbolStyle object. The default value is 2.0.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.XY.SymbolStyle.SymbolStyle" title="abaqus.XY.SymbolStyle.SymbolStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SymbolStyle</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">ColorError</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">SymbolStyle</span>
+<span class="n">xyPlot</span><span class="o">.</span><span class="n">SymbolStyle</span>
 </pre></div>
 </div>
 <p class="rubric">Methods</p>
@@ -2593,6 +2863,55 @@ methods described below.</p>
 <span class="n">session</span><span class="o">.</span><span class="n">xyPlots</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">charts</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="o">.</span><span class="n">titleStyle</span>
 <span class="n">session</span><span class="o">.</span><span class="n">xyPlots</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">charts</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">tagTextStyle</span>
 <span class="n">session</span><span class="o">.</span><span class="n">xyPlots</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">titleStyle</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle.setValues" title="abaqus.XY.TextStyle.TextStyle.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([color, show, font, rotationAngle])</p></td>
+<td><p>This method modifies the TextStyle object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a TextStyle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>color</strong></dt><dd><p>A String specifying the color to be used when drawing text with this TextStyle object.
+The default value is “White”.</p>
+</dd>
+<dt><strong>show</strong></dt><dd><p>A Boolean specifying whether to draw the text when using this TextStyle object. The
+default value is ON.</p>
+</dd>
+<dt><strong>font</strong></dt><dd><p>A String specifying the name of the font to be used when drawing text with this
+TextStyle object. The default value is “-<em>-verdana-medium-r-normal-</em>-<em>-120-</em>-<em>-p-</em>-<em>-</em>“.</p>
+</dd>
+<dt><strong>rotationAngle</strong></dt><dd><p>A Float specifying the angle in degrees used for displaying the text. The default value
+is 0.0.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TextStyle</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">ColorError</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">TextStyle</span>
+<span class="n">xyPlot</span><span class="o">.</span><span class="n">TextStyle</span>
 </pre></div>
 </div>
 <p class="rubric">Methods</p>
@@ -3456,7 +3775,26 @@ on the data, and the data will be saved as is.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.XY.XYPlot.XYPlot">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">XYPlot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYPlot.py#L13-L391"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYPlot.XYPlot" title="Permalink to this definition">#</a></dt>
-<dd><p class="rubric">Methods</p>
+<dd><p>This method creates an empty XYPlot object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the name of the XYPlot object.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.XY.XYPlot.XYPlot" title="abaqus.XY.XYPlot.XYPlot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYPlot</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">XYPlot</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <colgroup>
@@ -3799,6 +4137,61 @@ object.</p>
 <dt><strong>transform: float</strong></dt><dd><p>A tuple of Floats specifying a transformation matrix used to scale or pan along the axes
 of the active <a class="reference internal" href="#abaqus.XY.Chart.Chart" title="abaqus.XY.Chart.Chart"><code class="xref py py-class docutils literal notranslate"><span class="pre">Chart</span></code></a> object of this XYPlot.</p>
 </dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYPlotBase.XYPlotBase.autoColor" title="abaqus.XY.XYPlotBase.XYPlotBase.autoColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoColor</span></code></a>([lines, symbols])</p></td>
+<td><p>This method distributes the colors on all curves displayed in the XYPlot using the color palette defined by the xyColors AutoColors object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYPlotBase.XYPlotBase.autoSymbol" title="abaqus.XY.XYPlotBase.XYPlotBase.autoSymbol"><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoSymbol</span></code></a>()</p></td>
+<td><p>This method distributes the symbols on all curves displayed in the XYPlot.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYPlotBase.XYPlotBase.fitCurves" title="abaqus.XY.XYPlotBase.XYPlotBase.fitCurves"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fitCurves</span></code></a>()</p></td>
+<td><p>This method resets the transform of all the charts of the XYPlot object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYPlotBase.XYPlotBase.next" title="abaqus.XY.XYPlotBase.XYPlotBase.next"><code class="xref py py-obj docutils literal notranslate"><span class="pre">next</span></code></a>([drawImmediately])</p></td>
+<td><p>This method restores the <strong>transform</strong> member of the active Chart object to the next setting in the transform list.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.XY.XYPlotBase.XYPlotBase.previous" title="abaqus.XY.XYPlotBase.XYPlotBase.previous"><code class="xref py py-obj docutils literal notranslate"><span class="pre">previous</span></code></a>([drawImmediately])</p></td>
+<td><p>This method restores the <strong>transform</strong> member of the active Chart object to the previous setting in the transform list.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.XY.XYPlotBase.XYPlotBase.setValues" title="abaqus.XY.XYPlotBase.XYPlotBase.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(title, transform)</p></td>
+<td><p>This method modifies the XYPlot object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates an empty XYPlot object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the name of the XYPlot object.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">XYPlot</span></code> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">XYPlot</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>transform</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>

@@ -340,6 +340,73 @@
 </tbody>
 </table>
 </div>
+<p>This method creates a Model object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>description</strong></dt><dd><p>A String specifying the purpose and contents of the Model object. The default value is
+an empty string.</p>
+</dd>
+<dt><strong>stefanBoltzmann</strong></dt><dd><p>None or a Float specifying the Stefan-Boltzmann constant. The default value is None.</p>
+</dd>
+<dt><strong>absoluteZero</strong></dt><dd><p>None or a Float specifying the absolute zero constant. The default value is None.</p>
+</dd>
+<dt><strong>waveFormulation</strong></dt><dd><p>A SymbolicConstant specifying the type of incident wave formulation to be used in
+acoustic problems. Possible values are NOT_SET, SCATTERED, and TOTAL. The default value
+is NOT_SET.</p>
+</dd>
+<dt><strong>modelType</strong></dt><dd><p>A SymbolicConstant specifying the analysis model type. Possible values are
+STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is STANDARD_EXPLICIT.</p>
+</dd>
+<dt><strong>universalGas</strong></dt><dd><p>None or a Float specifying the universal gas constant. The default value is None.</p>
+</dd>
+<dt><strong>copyConstraints</strong></dt><dd><p>A boolean specifying whether to copy the constraints created in the model to the model
+that instances this model. The default value is ON.</p>
+</dd>
+<dt><strong>copyConnectors</strong></dt><dd><p>A boolean specifying whether to copy the connectors created in the model to the model
+that instances this model. The default value is ON.</p>
+</dd>
+<dt><strong>copyInteractions</strong></dt><dd><p>A boolean specifying whether to copy the interactions created in the model to the model
+that instances this model. The default value is ON.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Model</span></code> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">Model</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.FilterModel.FilterModel.ButterworthFilter" title="abaqus.Filter.FilterModel.FilterModel.ButterworthFilter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ButterworthFilter</span></code></a>(name, cutoffFrequency[, ...])</p></td>
+<td><p>This method creates a ButterworthFilter object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.FilterModel.FilterModel.Chebyshev1Filter" title="abaqus.Filter.FilterModel.FilterModel.Chebyshev1Filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chebyshev1Filter</span></code></a>(name, cutoffFrequency[, ...])</p></td>
+<td><p>This method creates a Chebyshev1Filter object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.FilterModel.FilterModel.Chebyshev2Filter" title="abaqus.Filter.FilterModel.FilterModel.Chebyshev2Filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chebyshev2Filter</span></code></a>(name, cutoffFrequency[, ...])</p></td>
+<td><p>This method creates a Chebyshev2Filter object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.FilterModel.FilterModel.OperatorFilter" title="abaqus.Filter.FilterModel.FilterModel.OperatorFilter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OperatorFilter</span></code></a>(name, cutoffFrequency[, ...])</p></td>
+<td><p>This method creates an OperatorFilter object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Filter.FilterModel.FilterModel.ButterworthFilter">
 <span class="sig-name descname"><span class="pre">ButterworthFilter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cutoffFrequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">order</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">operation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NONE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">halt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">invariant</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NONE'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.Filter.ButterworthFilter.ButterworthFilter" title="abaqus.Filter.ButterworthFilter.ButterworthFilter"><span class="pre">ButterworthFilter</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Filter/FilterModel.py#L21-L80"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Filter.FilterModel.FilterModel.ButterworthFilter" title="Permalink to this definition">#</a></dt>
@@ -567,6 +634,57 @@ values are NONE, FIRST, and SECOND. The default value is NONE.</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">odbAccess</span>
 <span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter" title="abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ButterworthFilter</span></code></a>(name, cutoffFrequency[, ...])</p></td>
+<td><p>This method creates a ButterworthFilter object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter" title="abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chebyshev1Filter</span></code></a>(name, cutoffFrequency[, ...])</p></td>
+<td><p>This method creates a Chebyshev1Filter object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter" title="abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chebyshev2Filter</span></code></a>(name, cutoffFrequency[, ...])</p></td>
+<td><p>This method creates a Chebyshev2Filter object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter" title="abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OperatorFilter</span></code></a>(name, cutoffFrequency[, ...])</p></td>
+<td><p>This method creates an OperatorFilter object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a new Odb object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>analysisTitle</strong></dt><dd><p>A String specifying the title of the output database. The default value is an empty
+string.</p>
+</dd>
+<dt><strong>description</strong></dt><dd><p>A String specifying the description of the output database. The default value is an
+empty string.</p>
+</dd>
+<dt><strong>path</strong></dt><dd><p>A String specifying the path to the file where the new output database (.odb ) file will
+be written. The default value is an empty string.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Odb</span></code> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Odb</span>
 </pre></div>
 </div>
 <p class="rubric">Methods</p>
@@ -893,6 +1011,67 @@ The ButterworthFilter object is derived from the Filter object.</p>
 </tbody>
 </table>
 </div>
+<p>This method creates a ButterworthFilter object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key. This name ANTIALIASING is reserved for filters
+generated internally by the program.</p>
+</dd>
+<dt><strong>cutoffFrequency</strong></dt><dd><p>A Float specifying the attenuation point of the filter. Possible values are non-negative
+numbers. Order is not available for OperatorFilter.</p>
+</dd>
+<dt><strong>order</strong></dt><dd><p>An Int specifying the highest power of the filter transfer function. Possible values are
+non-negative numbers less than or equal to 20. Order is not available for
+OperatorFilter. The default value is 2.</p>
+</dd>
+<dt><strong>operation</strong></dt><dd><p>A SymbolicConstant specifying the filter operator. Possible values are NONE, MIN, MAX,
+and ABS. The default value is NONE.</p>
+</dd>
+<dt><strong>halt</strong></dt><dd><p>A Boolean specifying whether to stop the analysis if the specified limit is reached. The
+default value is OFF.</p>
+</dd>
+<dt><strong>limit</strong></dt><dd><p>None or a Float specifying the threshold limit, an upper or lower bound for output
+values depending on the operation, or a bound for stopping the analysis when Halt is
+used. The default value is None.</p>
+</dd>
+<dt><strong>invariant</strong></dt><dd><p>A SymbolicConstant specifying the invariant to which filtering is applied. Possible
+values are NONE, FIRST, and SECOND. The default value is NONE.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Filter.ButterworthFilter.ButterworthFilter" title="abaqus.Filter.ButterworthFilter.ButterworthFilter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ButterworthFilter</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">InvalidNameError</span></code></dt><dd></dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ButterworthFilter</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ButterworthFilter</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.ButterworthFilter.ButterworthFilter.setValues" title="abaqus.Filter.ButterworthFilter.ButterworthFilter.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([order, operation, halt, limit, ...])</p></td>
+<td><p>This method modifies the ButterworthFilter object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Filter.ButterworthFilter.ButterworthFilter.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">order</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">operation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NONE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">halt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">invariant</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NONE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Filter/ButterworthFilter.py#L84-L118"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Filter.ButterworthFilter.ButterworthFilter.setValues" title="Permalink to this definition">#</a></dt>
@@ -949,6 +1128,70 @@ The Chebyshev1Filter object is derived from the Filter object.</p>
 <ul class="simple">
 <li><p>FILTER</p></li>
 </ul>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.setValues" title="abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([rippleFactor, order, operation, ...])</p></td>
+<td><p>This method modifies the Chebyshev1Filter object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a Chebyshev1Filter object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key. This name ANTIALIASING is reserved for filters
+generated internally by the program.</p>
+</dd>
+<dt><strong>cutoffFrequency</strong></dt><dd><p>A Float specifying the attenuation point of the filter. Possible values are non-negative
+numbers. Order is not available for OperatorFilter.</p>
+</dd>
+<dt><strong>rippleFactor</strong></dt><dd><p>A Float specifying the amount of allowable ripple in the filter. Possible values are
+non-negative numbers. The default value is 0.225.</p>
+</dd>
+<dt><strong>order</strong></dt><dd><p>An Int specifying the highest power of the filter transfer function. Possible values are
+non-negative numbers less than or equal to 20. Order is not available for
+OperatorFilter. The default value is 2.</p>
+</dd>
+<dt><strong>operation</strong></dt><dd><p>A SymbolicConstant specifying the filter operator. Possible values are NONE, MIN, MAX,
+and ABS. The default value is NONE.</p>
+</dd>
+<dt><strong>halt</strong></dt><dd><p>A Boolean specifying whether to stop the analysis if the specified limit is reached. The
+default value is OFF.</p>
+</dd>
+<dt><strong>limit</strong></dt><dd><p>None or a Float specifying the threshold limit, an upper or lower bound for output
+values depending on the operation, or a bound for stopping the analysis when Halt is
+used. The default value is None.</p>
+</dd>
+<dt><strong>invariant</strong></dt><dd><p>A SymbolicConstant specifying the invariant to which filtering is applied. Possible
+values are NONE, FIRST, and SECOND. The default value is NONE.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter" title="abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chebyshev1Filter</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">InvalidNameError</span></code></dt><dd></dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Chebyshev1Filter</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Chebyshev1Filter</span>
+</pre></div>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1036,6 +1279,70 @@ The Chebyshev2Filter object is derived from the Filter object.</p>
 </tbody>
 </table>
 </div>
+<p>This method creates a Chebyshev2Filter object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key. This name ANTIALIASING is reserved for filters
+generated internally by the program.</p>
+</dd>
+<dt><strong>cutoffFrequency</strong></dt><dd><p>A Float specifying the attenuation point of the filter. Possible values are non-negative
+numbers. Order is not available for OperatorFilter.</p>
+</dd>
+<dt><strong>rippleFactor</strong></dt><dd><p>A Float specifying the amount of allowable ripple in the filter. Possible values are
+non-negative numbers less than 1. The default value is 0.025.</p>
+</dd>
+<dt><strong>order</strong></dt><dd><p>An Int specifying the highest power of the filter transfer function. Possible values are
+non-negative numbers less than or equal to 20. Order is not available for
+OperatorFilter. The default value is 2.</p>
+</dd>
+<dt><strong>operation</strong></dt><dd><p>A SymbolicConstant specifying the filter operator. Possible values are NONE, MIN, MAX,
+and ABS. The default value is NONE.</p>
+</dd>
+<dt><strong>halt</strong></dt><dd><p>A Boolean specifying whether to stop the analysis if the specified limit is reached. The
+default value is OFF.</p>
+</dd>
+<dt><strong>limit</strong></dt><dd><p>None or a Float specifying the threshold limit, an upper or lower bound for output
+values depending on the operation, or a bound for stopping the analysis when Halt is
+used. The default value is None.</p>
+</dd>
+<dt><strong>invariant</strong></dt><dd><p>A SymbolicConstant specifying the invariant to which filtering is applied. Possible
+values are NONE, FIRST, and SECOND. The default value is NONE.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter" title="abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chebyshev2Filter</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">InvalidNameError</span></code></dt><dd></dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Chebyshev2Filter</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Chebyshev2Filter</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.setValues" title="abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([rippleFactor, order, operation, ...])</p></td>
+<td><p>This method modifies the Chebyshev2Filter object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rippleFactor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">order</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">operation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NONE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">halt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">invariant</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NONE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Filter/Chebyshev2Filter.py#L88-L126"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.setValues" title="Permalink to this definition">#</a></dt>
@@ -1095,6 +1402,67 @@ The OperatorFilter object is derived from the Filter object.</p>
 <ul class="simple">
 <li><p>FILTER</p></li>
 </ul>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Filter.OperatorFilter.OperatorFilter.setValues" title="abaqus.Filter.OperatorFilter.OperatorFilter.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([order, operation, halt, limit, ...])</p></td>
+<td><p>This method modifies the OperatorFilter object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates an OperatorFilter object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key. This name ANTIALIASING is reserved for filters
+generated internally by the program.</p>
+</dd>
+<dt><strong>cutoffFrequency</strong></dt><dd><p>A Float specifying the attenuation point of the filter. Possible values are non-negative
+numbers. Order is not available for OperatorFilter.</p>
+</dd>
+<dt><strong>order</strong></dt><dd><p>An Int specifying the highest power of the filter transfer function. Possible values are
+non-negative numbers less than or equal to 20. Order is not available for
+OperatorFilter. The default value is 2.</p>
+</dd>
+<dt><strong>operation</strong></dt><dd><p>A SymbolicConstant specifying the filter operator. Possible values are NONE, MIN, MAX,
+and ABS. The default value is NONE.</p>
+</dd>
+<dt><strong>halt</strong></dt><dd><p>A Boolean specifying whether to stop the analysis if the specified limit is reached. The
+default value is OFF.</p>
+</dd>
+<dt><strong>limit</strong></dt><dd><p>None or a Float specifying the threshold limit, an upper or lower bound for output
+values depending on the operation, or a bound for stopping the analysis when Halt is
+used. The default value is None.</p>
+</dd>
+<dt><strong>invariant</strong></dt><dd><p>A SymbolicConstant specifying the invariant to which filtering is applied. Possible
+values are NONE, FIRST, and SECOND. The default value is NONE.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.Filter.OperatorFilter.OperatorFilter" title="abaqus.Filter.OperatorFilter.OperatorFilter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OperatorFilter</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">InvalidNameError</span></code></dt><dd></dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">OperatorFilter</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">OperatorFilter</span>
+</pre></div>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">

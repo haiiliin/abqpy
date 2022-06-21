@@ -857,6 +857,80 @@ Viewport object, see Viewport object.</p>
 </tbody>
 </table>
 </div>
+<p>This method creates a Viewport object with the specified origin and dimensions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>origin</strong></dt><dd><p>A pair of Floats specifying the <strong>X</strong>- and <strong>Y</strong>-coordinates in millimeters in the canvas
+coordinate system of the lower left corner of the viewport. The default origin is (0,
+0).</p>
+</dd>
+<dt><strong>width</strong></dt><dd><p>A Float specifying the width in millimeters of the viewport. Possible values are 30 ≤≤
+<strong>width</strong> ≤≤ (<em>maxWidth</em>). The default value is 120.0.Note:The maximum value of width
+(<em>maxWidth</em>) is the width of the screen in millimeters.</p>
+</dd>
+<dt><strong>height</strong></dt><dd><p>A Float specifying the height in millimeters of the viewport. This height includes the
+title bar. Possible values are 30 ≤≤ <strong>height</strong> ≤≤ (<em>maxHeight</em>). The default value is
+80.0.Note:The maximum value of height (<em>maxHeight</em>) is the height of the screen in
+millimeters.</p>
+</dd>
+<dt><strong>border</strong></dt><dd><p>A Boolean specifying whether the viewport border is visible in a printed image. The
+default value is ON.</p>
+</dd>
+<dt><strong>titleBar</strong></dt><dd><p>A Boolean specifying whether the viewport title should be displayed in a printed image.
+The default value is ON.If <strong>border</strong> = OFF, the title will not be visible, even if
+<strong>titleBar</strong> =ON.</p>
+</dd>
+<dt><strong>titleStyle</strong></dt><dd><p>A SymbolicConstant specifying which title to use for the viewport title. Possible values
+are CUSTOM and SYSTEM. The default value is SYSTEM.If <strong>titleStyle</strong> = CUSTOM,
+<strong>customTitleString</strong> will be used. If <strong>titleStyle</strong> =  SYSTEM, a system-generated string
+will be used.</p>
+</dd>
+<dt><strong>customTitleString</strong></dt><dd><p>A String specifying the viewport title when <strong>titleStyle</strong> =CUSTOM. The default value is
+an empty string.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Viewport</span></code> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd><ul class="simple">
+<li><p>If the user attempts to delete the only viewport:
+SystemError: the current viewport may not be deleted.</p></li>
+<li><p>If <strong>width</strong> is out of range:
+RangeError: width must be a Float in the range: 30 &lt;= width &lt;= <strong>maxWidth</strong></p></li>
+<li><p>If <strong>height</strong> is out of range:
+RangeError: height must be a Float in the range: 30 &lt;= width &lt;= <strong>maxHeight</strong></p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Viewport</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../session/canvas.html#abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation" title="abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plotAnnotation</span></code></a>(annotation[, index])</p></td>
+<td><p>This method plots an Annotation object in aViewport.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation">
 <span class="sig-name descname"><span class="pre">plotAnnotation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">annotation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.Annotation.Annotation.Annotation" title="abaqus.Annotation.Annotation.Annotation"><span class="pre">Annotation</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/AnnotationViewport.py#L18-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation" title="Permalink to this definition">#</a></dt>
@@ -890,6 +964,131 @@ The Arrow object is derived from the Annotation object.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">annotations</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 <span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">userData</span><span class="o">.</span><span class="n">annotations</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 <span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">annotationsToPlot</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow.setValues" title="abaqus.Annotation.Arrow.Arrow.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([startPoint, endPoint, ...])</p></td>
+<td><p>This method modifies the Arrow object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow.translateEndPoint" title="abaqus.Annotation.Arrow.Arrow.translateEndPoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translateEndPoint</span></code></a>([x, y])</p></td>
+<td><p>This method translates the end point of the Arrow object on the viewport plane.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow.translateStartPoint" title="abaqus.Annotation.Arrow.Arrow.translateStartPoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translateStartPoint</span></code></a>([x, y])</p></td>
+<td><p>This method translates the start point of the Arrow object on the viewport plane.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates an Arrow object.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><strong>name</strong></dt><dd><p>A String specifying the annotation repository key.</p>
+</dd>
+<dt><strong>startPoint</strong></dt><dd><p>A pair of Floats specifying the start point <strong>X</strong>- and <strong>Y</strong>-offsets in millimeters from
+<strong>startAnchor</strong>. The default value is (0, 0).</p>
+</dd>
+<dt><strong>endPoint</strong></dt><dd><p>A pair of Floats specifying the end point <strong>X</strong>- and <strong>Y</strong>-offsets in millimeters from
+<strong>endAnchor</strong>. The default value is (0, 0).</p>
+</dd>
+<dt><strong>startAnchor</strong></dt><dd><p>A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
+specifies the <strong>X</strong>- and <strong>Y</strong>-coordinates as percentages of the viewport width and height.
+A sequence of three Floats specifies the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point in
+the model coordinate system. A SymbolicConstant indicates a relative position. Possible
+values are:</p>
+<ul class="simple">
+<li><p>BOTTOM_LEFT</p></li>
+<li><p>BOTTOM_CENTER</p></li>
+<li><p>BOTTOM_RIGHT</p></li>
+<li><p>CENTER_LEFT</p></li>
+<li><p>CENTER</p></li>
+<li><p>CENTER_RIGHT</p></li>
+<li><p>TOP_LEFT</p></li>
+<li><p>TOP_CENTER</p></li>
+<li><p>TOP_RIGHT</p></li>
+</ul>
+<p>The default value is BOTTOM_LEFT.</p>
+</dd>
+<dt><strong>endAnchor</strong></dt><dd><p>A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
+specifies the <strong>X</strong>- and <strong>Y</strong>-coordinates as percentages of the viewport width and height.
+A Sequence of three Floats specifies the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point in
+the model coordinate system. A SymbolicConstant indicates a relative position. Possible
+values are:</p>
+<ul class="simple">
+<li><p>BOTTOM_LEFT</p></li>
+<li><p>BOTTOM_CENTER</p></li>
+<li><p>BOTTOM_RIGHT</p></li>
+<li><p>CENTER_LEFT</p></li>
+<li><p>CENTER</p></li>
+<li><p>CENTER_RIGHT</p></li>
+<li><p>TOP_LEFT</p></li>
+<li><p>TOP_CENTER</p></li>
+<li><p>TOP_RIGHT</p></li>
+</ul>
+<p>The default value is BOTTOM_LEFT.</p>
+</dd>
+<dt><strong>startHeadStyle</strong></dt><dd><p>A SymbolicConstant specifying the style of the start head. Possible values are:</p>
+<ul class="simple">
+<li><p>ARROW</p></li>
+<li><p>FILLED_ARROW</p></li>
+<li><p>HOLLOW_CIRCLE</p></li>
+<li><p>FILLED_CIRCLE</p></li>
+<li><p>HOLLOW_DIAMOND</p></li>
+<li><p>FILLED_DIAMOND</p></li>
+<li><p>HOLLOW_SQUARE</p></li>
+<li><p>FILLED_SQUARE</p></li>
+<li><p>NONE</p></li>
+</ul>
+<p>The default value is NONE.</p>
+</dd>
+<dt><strong>endHeadStyle</strong></dt><dd><p>A SymbolicConstant specifying the style of the end head. Possible values are:</p>
+<ul class="simple">
+<li><p>ARROW</p></li>
+<li><p>FILLED_ARROW</p></li>
+<li><p>HOLLOW_CIRCLE</p></li>
+<li><p>FILLED_CIRCLE</p></li>
+<li><p>HOLLOW_DIAMOND</p></li>
+<li><p>FILLED_DIAMOND</p></li>
+<li><p>HOLLOW_SQUARE</p></li>
+<li><p>FILLED_SQUARE</p></li>
+<li><p>NONE</p></li>
+</ul>
+<p>The default value is FILLED_ARROW.</p>
+</dd>
+<dt><strong>startGap</strong></dt><dd><p>A Float specifying the distance in millimeters between the arrow start point and the
+arrow start head. The default value is 0.0.</p>
+</dd>
+<dt><strong>endGap</strong></dt><dd><p>A Float specifying the distance in millimeters between the arrow end point and the arrow
+end head. The default value is 0.0.</p>
+</dd>
+<dt><strong>color</strong></dt><dd><p>A String specifying the color of the arrow. Possible string values are any valid color.
+The default value is “White”.</p>
+</dd>
+<dt><strong>lineStyle</strong></dt><dd><p>A SymbolicConstant specifying the line style of the arrow. Possible values are SOLID,
+DASHED, DOTTED, and DOT_DASH. The default value is SOLID.</p>
+</dd>
+<dt><strong>lineThickness</strong></dt><dd><p>A SymbolicConstant specifying the line thickness of the arrow. Possible values are
+VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.Annotation.Arrow.Arrow" title="abaqus.Annotation.Arrow.Arrow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Arrow</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">Arrow</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="o">*</span><span class="n">name</span><span class="o">*</span><span class="p">]</span><span class="o">.</span><span class="n">userData</span><span class="o">.</span><span class="n">Arrow</span>
 </pre></div>
 </div>
 <p class="rubric">Methods</p>
@@ -1027,6 +1226,109 @@ The Text object is derived from the Annotation object.</p>
 </dd>
 <dt><strong>height: float</strong></dt><dd><p>A Float specifying the height in millimeters of the <a class="reference internal" href="#abaqus.Annotation.Text.Text" title="abaqus.Annotation.Text.Text"><code class="xref py py-class docutils literal notranslate"><span class="pre">Text</span></code></a> object.</p>
 </dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Annotation.Text.Text.setValues" title="abaqus.Annotation.Text.Text.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([text, offset, anchor, ...])</p></td>
+<td><p>This method modifies the Text object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a Text object.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><strong>name</strong></dt><dd><p>A String specifying the annotation repository key.</p>
+</dd>
+<dt><strong>text</strong></dt><dd><p>A String specifying the text of the Text object. The default value is an empty string.</p>
+</dd>
+<dt><strong>offset</strong></dt><dd><p>A pair of Floats specifying the <strong>X</strong>- and <strong>Y</strong>-offsets in millimeters of the Text object
+from <strong>anchor</strong>. The default value is (0, 0).</p>
+</dd>
+<dt><strong>anchor</strong></dt><dd><p>A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
+specifies the <strong>X</strong>- and <strong>Y</strong> coordinates as percentages of the viewport width and height.
+A Sequence of three Floats specifies the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point in
+the model coordinate system. A SymbolicConstant specifies a relative position. Possible
+values are:</p>
+<ul class="simple">
+<li><p>BOTTOM_LEFT</p></li>
+<li><p>BOTTOM_CENTER</p></li>
+<li><p>BOTTOM_RIGHT</p></li>
+<li><p>CENTER_LEFT</p></li>
+<li><p>CENTER</p></li>
+<li><p>CENTER_RIGHT</p></li>
+<li><p>TOP_LEFT</p></li>
+<li><p>TOP_CENTER</p></li>
+<li><p>TOP_RIGHT</p></li>
+</ul>
+<p>The default value is BOTTOM_LEFT.</p>
+</dd>
+<dt><strong>referencePoint</strong></dt><dd><p>A SymbolicConstant or a sequence of Floats specifying a point. The sequence of two
+Floats specifies the <strong>X</strong>- and <strong>Y</strong>-coordinates of the reference point of the Text
+annotation given as percentages of its width and height. The SymbolicConstant indicates
+a relative position. Possible values are:</p>
+<ul class="simple">
+<li><p>BOTTOM_LEFT</p></li>
+<li><p>BOTTOM_CENTER</p></li>
+<li><p>BOTTOM_RIGHT</p></li>
+<li><p>CENTER_LEFT</p></li>
+<li><p>CENTER</p></li>
+<li><p>CENTER_RIGHT</p></li>
+<li><p>TOP_LEFT</p></li>
+<li><p>TOP_CENTER</p></li>
+<li><p>TOP_RIGHT</p></li>
+</ul>
+<p>The default value is BOTTOM_LEFT.</p>
+</dd>
+<dt><strong>rotationAngle</strong></dt><dd><p>A Float specifying the amount of rotation in degrees about <strong>referencePoint</strong>. The default
+value is 0.0.</p>
+</dd>
+<dt><strong>color</strong></dt><dd><p>A String specifying the color of the Text object. Possible string values are any valid
+color. The default value is “White”.</p>
+</dd>
+<dt><strong>font</strong></dt><dd><p>A String specifying the font of the Text object. Possible string values are any valid
+font specification. The default value is “-<em>-verdana-medium-r-normal–120-</em>“.</p>
+</dd>
+<dt><strong>backgroundStyle</strong></dt><dd><p>A SymbolicConstant specifying the Text object background style. Possible values are
+MATCH, TRANSPARENT, and OTHER. The default value is TRANSPARENT.</p>
+</dd>
+<dt><strong>backgroundColor</strong></dt><dd><p>A String specifying the color of the Text object background. Possible string values are
+any valid color. The default value matches the viewport background.</p>
+</dd>
+<dt><strong>box</strong></dt><dd><p>A Boolean specifying whether the box around the text is shown. The default value is OFF.</p>
+</dd>
+<dt><strong>justification</strong></dt><dd><p>A SymbolicConstant specifying the Text object justification for multiline text. Possible
+values are JUSTIFY_LEFT, JUSTIFY_CENTER, and JUSTIFY_RIGHT. The default value is
+JUSTIFY_LEFT.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Annotation.Text.Text" title="abaqus.Annotation.Text.Text"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Text</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">Text</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="o">*</span><span class="n">name</span><span class="o">*</span><span class="p">]</span><span class="o">.</span><span class="n">userData</span><span class="o">.</span><span class="n">Text</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>height</strong></dt><dd></dd>
+<dt><strong>width</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>

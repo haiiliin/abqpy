@@ -449,6 +449,61 @@ connector.</p>
 </tbody>
 </table>
 </div>
+<p>This method creates a ConnectorOrientation object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>region</strong></dt><dd><p>A Set object specifying the region to which the orientation is assigned.</p>
+</dd>
+<dt><strong>localCsys1</strong></dt><dd><p>A DatumCsys object specifying the local coordinate system of the first connector point.
+This value may be None, indicating the global coordinate system.</p>
+</dd>
+<dt><strong>axis1</strong></dt><dd><p>A SymbolicConstant specifying the axis of a datum coordinate system about which an
+additional rotation is applied. Possible values are AXIS_1, AXIS_2, and AXIS_3. The
+default value is AXIS_1.</p>
+</dd>
+<dt><strong>angle1</strong></dt><dd><p>A Float specifying the angle of the additional rotation. The default value is 0.0.</p>
+</dd>
+<dt><strong>orient2sameAs1</strong></dt><dd><p>A Boolean specifying whether or not the second connector point is to use the same local
+coordinate system, axis, and angle as the first point. The default value is ON.</p>
+</dd>
+<dt><strong>localCsys2</strong></dt><dd><p>A DatumCsys object specifying the local coordinate system of the second connector point.
+This value may be None, indicating the global coordinate system.</p>
+</dd>
+<dt><strong>axis2</strong></dt><dd><p>A SymbolicConstant specifying the axis of a datum coordinate system about which an
+additional rotation is applied. Possible values are AXIS_1, AXIS_2, and AXIS_3. The
+default value is AXIS_1.</p>
+</dd>
+<dt><strong>angle2</strong></dt><dd><p>A Float specifying the angle of the additional rotation. The default value is 0.0.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Assembly.ConnectorOrientation.ConnectorOrientation" title="abaqus.Assembly.ConnectorOrientation.ConnectorOrientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorOrientation</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">ConnectorOrientation</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">ConnectorOrientation</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.setValues" title="abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
+<td><p>This method modifies the ConnectorOrientation object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Assembly/ConnectorOrientation.py#L85-L87"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.setValues" title="Permalink to this definition">#</a></dt>
@@ -947,6 +1002,96 @@ indices, respectively.</p>
 </dd>
 <dt><strong>partName: str</strong></dt><dd><p>A String specifying the name of the part from which the instance was created.</p>
 </dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.Contact" title="abaqus.Assembly.PartInstance.PartInstance.Contact"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Contact</span></code></a>(movableList, fixedList, direction, ...)</p></td>
+<td><p>This method translates an instance along the specified direction until it is in contact with a fixed instance.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.ConvertConstraints" title="abaqus.Assembly.PartInstance.PartInstance.ConvertConstraints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConvertConstraints</span></code></a>()</p></td>
+<td><p>This method converts the position constraints of an instance to absolute positions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut" title="abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InstanceFromBooleanCut</span></code></a>(name, ...[, ...])</p></td>
+<td><p>This method creates a PartInstance in the instances repository after subtracting or cutting the geometries of a group of part instances from that of a base part instance.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge" title="abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InstanceFromBooleanMerge</span></code></a>(name, instances[, ...])</p></td>
+<td><p>This method creates a PartInstance in the instances repository after merging two or more part instances.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern" title="abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LinearInstancePattern</span></code></a>(instanceList, number1, ...)</p></td>
+<td><p>This method creates multiple PartInstance objects in a linear pattern and puts them into the instances repository.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern" title="abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RadialInstancePattern</span></code></a>(instanceList, number, ...)</p></td>
+<td><p>This method creates multiple PartInstance objects in a radial pattern and puts them into the instances repository.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.checkGeometry" title="abaqus.Assembly.PartInstance.PartInstance.checkGeometry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">checkGeometry</span></code></a>([detailed, level])</p></td>
+<td><p>This method checks the validity of the geometry of the part instance and prints a count of all topological entities on the part instance (faces, edges, vertices, etc.).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.getPosition" title="abaqus.Assembly.PartInstance.PartInstance.getPosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPosition</span></code></a>()</p></td>
+<td><p>This method prints the sum of the translations and rotations applied to the PartInstance object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.getRotation" title="abaqus.Assembly.PartInstance.PartInstance.getRotation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getRotation</span></code></a>()</p></td>
+<td><p>This method returns a tuple including the point of rotation, axis of rotation, and rotation angle (in degrees).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.getTranslation" title="abaqus.Assembly.PartInstance.PartInstance.getTranslation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getTranslation</span></code></a>()</p></td>
+<td><p>This method returns a tuple of three Floats representing translation in the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-directions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.replace" title="abaqus.Assembly.PartInstance.PartInstance.replace"><code class="xref py py-obj docutils literal notranslate"><span class="pre">replace</span></code></a>(instanceOf[, applyConstraints])</p></td>
+<td><p>This method replaces one instance with an instance of another part.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.rotateAboutAxis" title="abaqus.Assembly.PartInstance.PartInstance.rotateAboutAxis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rotateAboutAxis</span></code></a>(axisPoint, axisDirection, angle)</p></td>
+<td><p>This method translates an instance by the specified amount.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.translate" title="abaqus.Assembly.PartInstance.PartInstance.translate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translate</span></code></a>(vector)</p></td>
+<td><p>This method translates an instance by the specified amount.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance.translateTo" title="abaqus.Assembly.PartInstance.PartInstance.translateTo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">translateTo</span></code></a>(movableList, fixedList, ...[, ...])</p></td>
+<td><p>This method translates an instance along the specified direction until it is in contact with a fixed instance.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a PartInstance object and puts it into the instances repository.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key. The name must be a valid Abaqus object name.</p>
+</dd>
+<dt><strong>part</strong></dt><dd><p>A Part object to be instanced. If the part does not exist, no PartInstance object is
+created.</p>
+</dd>
+<dt><strong>autoOffset</strong></dt><dd><p>A Boolean specifying whether to apply an auto offset to the new part instance that will
+offset it from existing part instances. The default value is OFF.</p>
+</dd>
+<dt><strong>dependent</strong></dt><dd><p>A Boolean specifying whether the part instance is dependent or independent. If
+<strong>dependent</strong> = OFF, the part instance is independent. The default value is OFF.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Assembly.PartInstance.PartInstance" title="abaqus.Assembly.PartInstance.PartInstance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartInstance</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">Instance</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>analysisType</strong></dt><dd></dd>
+<dt><strong>part</strong></dt><dd></dd>
+<dt><strong>referenceNode</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>

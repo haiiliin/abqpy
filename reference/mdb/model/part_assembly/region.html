@@ -1502,6 +1502,52 @@ example, for a part:<cite>nodeLabels=(2,3,5,7)`For an assembly:`nodeLabels=((‘
 </tbody>
 </table>
 </div>
+<p>This method creates a skin from a sequence of objects in a model database. At least one
+of the optional arguments needs to be specified.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key. The default value is an empty string.</p>
+</dd>
+<dt><strong>faces</strong></dt><dd><p>A sequence of Face objects specifying the faces on which skins should be created.
+Applicable to three and two dimensional parts.</p>
+</dd>
+<dt><strong>edges</strong></dt><dd><p>A sequence of Edge objects specifying the edges on which skins should be created.
+Applicable to axisymmetric parts.</p>
+</dd>
+<dt><strong>elementFaces</strong></dt><dd><p>A sequence of MeshFace objects specifying the mesh faces on which skins should be
+created. Applicable to three and two dimensional parts.</p>
+</dd>
+<dt><strong>elementEdges</strong></dt><dd><p>A sequence of MeshEdge objects specifying the mesh edges on which skins should be
+created. Applicable to axisymmetric parts.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Region.Skin.Skin" title="abaqus.Region.Skin.Skin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Skin</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="o">*</span><span class="n">name</span><span class="o">*</span><span class="p">]</span><span class="o">.</span><span class="n">Skin</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Region.Skin.Skin.EditSkin" title="abaqus.Region.Skin.Skin.EditSkin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EditSkin</span></code></a>([name, faces, edges, elementFaces, ...])</p></td>
+<td><p>This method modifies underlying entities of the selected skin.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Region.Skin.Skin.EditSkin">
 <span class="sig-name descname"><span class="pre">EditSkin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">faces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Face.Face" title="abaqus.BasicGeometry.Face.Face"><span class="pre">Face</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><span class="pre">Edge</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementFaces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../mesh.html#abaqus.Mesh.MeshFace.MeshFace" title="abaqus.Mesh.MeshFace.MeshFace"><span class="pre">MeshFace</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementEdges</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../mesh.html#abaqus.Mesh.MeshEdge.MeshEdge" title="abaqus.Mesh.MeshEdge.MeshEdge"><span class="pre">MeshEdge</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Region/Skin.py#L87-L127"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Region.Skin.Skin.EditSkin" title="Permalink to this definition">#</a></dt>
@@ -1568,6 +1614,46 @@ created. Applicable to axisymmetric parts.</p>
 </dl>
 </dd>
 </dl>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Region.Stringer.Stringer.EditStringer" title="abaqus.Region.Stringer.Stringer.EditStringer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EditStringer</span></code></a>(name[, edges, elementEdges])</p></td>
+<td><p>This method modifies underlying entities of the selected stringer.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a stringer from a sequence of objects in a model database. At least
+one of the optional arguments needs to be specified.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key. The default value is an empty string.</p>
+</dd>
+<dt><strong>edges</strong></dt><dd><p>A sequence of Edge objects specifying the edges on which stringers should be created.
+Applicable to three and two dimensional parts.</p>
+</dd>
+<dt><strong>elementEdges</strong></dt><dd><p>A sequence of MeshEdge objects specifying the mesh edges on which stringers should be
+created. Applicable to three and two dimensional parts.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.Region.Stringer.Stringer" title="abaqus.Region.Stringer.Stringer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Stringer</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="o">*</span><span class="n">name</span><span class="o">*</span><span class="p">]</span><span class="o">.</span><span class="n">Stringer</span>
+</pre></div>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">

@@ -329,6 +329,64 @@
 </tbody>
 </table>
 </div>
+<p>This method creates a Model object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>description</strong></dt><dd><p>A String specifying the purpose and contents of the Model object. The default value is
+an empty string.</p>
+</dd>
+<dt><strong>stefanBoltzmann</strong></dt><dd><p>None or a Float specifying the Stefan-Boltzmann constant. The default value is None.</p>
+</dd>
+<dt><strong>absoluteZero</strong></dt><dd><p>None or a Float specifying the absolute zero constant. The default value is None.</p>
+</dd>
+<dt><strong>waveFormulation</strong></dt><dd><p>A SymbolicConstant specifying the type of incident wave formulation to be used in
+acoustic problems. Possible values are NOT_SET, SCATTERED, and TOTAL. The default value
+is NOT_SET.</p>
+</dd>
+<dt><strong>modelType</strong></dt><dd><p>A SymbolicConstant specifying the analysis model type. Possible values are
+STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is STANDARD_EXPLICIT.</p>
+</dd>
+<dt><strong>universalGas</strong></dt><dd><p>None or a Float specifying the universal gas constant. The default value is None.</p>
+</dd>
+<dt><strong>copyConstraints</strong></dt><dd><p>A boolean specifying whether to copy the constraints created in the model to the model
+that instances this model. The default value is ON.</p>
+</dd>
+<dt><strong>copyConnectors</strong></dt><dd><p>A boolean specifying whether to copy the connectors created in the model to the model
+that instances this model. The default value is ON.</p>
+</dd>
+<dt><strong>copyInteractions</strong></dt><dd><p>A boolean specifying whether to copy the interactions created in the model to the model
+that instances this model. The default value is ON.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Model</span></code> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">Model</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Part.PartModel.PartModel.Part" title="abaqus.Part.PartModel.PartModel.Part"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Part</span></code></a>(name, dimensionality, type[, twist])</p></td>
+<td><p>This method creates a Part object and places it in the parts repository.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Part.PartModel.PartModel.Part">
 <span class="sig-name descname"><span class="pre">Part</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dimensionality</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">twist</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Part/PartModel.py#L18-L55"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.PartModel.PartModel.Part" title="Permalink to this definition">#</a></dt>
@@ -11203,6 +11261,60 @@ and analysis controls.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Part.AcisMdb.AcisMdb.openAcis" title="abaqus.Part.AcisMdb.AcisMdb.openAcis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openAcis</span></code></a>(fileName[, scaleFromFile])</p></td>
+<td><p>This method creates an AcisFile object from a file containing ACIS-format geometry.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Part.AcisMdb.AcisMdb.openCatia" title="abaqus.Part.AcisMdb.AcisMdb.openCatia"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openCatia</span></code></a>(fileName[, topology, ...])</p></td>
+<td><p>This method creates an AcisFile object from a file containing V5-format geometry.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Part.AcisMdb.AcisMdb.openEnf" title="abaqus.Part.AcisMdb.AcisMdb.openEnf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openEnf</span></code></a>(fileName, fileType[, topology, ...])</p></td>
+<td><p>This method creates an AcisFile object from a file containing Elysium Neutral File-format geometry that was created by CATIA V5, I-DEAS, or Pro/ENGINEER.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Part.AcisMdb.AcisMdb.openIges" title="abaqus.Part.AcisMdb.AcisMdb.openIges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openIges</span></code></a>(fileName[, trimCurve, ...])</p></td>
+<td><p>This method creates an AcisFile object from a file containing IGES-format geometry.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Part.AcisMdb.AcisMdb.openParasolid" title="abaqus.Part.AcisMdb.AcisMdb.openParasolid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openParasolid</span></code></a>(fileName[, topology])</p></td>
+<td><p>This method creates an AcisFile object from a file containing Parasolid-format geometry.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Part.AcisMdb.AcisMdb.openStep" title="abaqus.Part.AcisMdb.AcisMdb.openStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openStep</span></code></a>(fileName[, scale])</p></td>
+<td><p>This method creates an AcisFile object from a file containing STEP-format geometry.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Part.AcisMdb.AcisMdb.openVda" title="abaqus.Part.AcisMdb.AcisMdb.openVda"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openVda</span></code></a>(fileName)</p></td>
+<td><p>This method creates an AcisFile object from a file containing VDA-FS-format geometry.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This constructor creates an empty Mdb object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>pathName: str</strong></dt><dd><p>A String specifying the path to be used when the model database is saved to a file. If
+you do not provide a file extension, .cae is appended automatically to the path. The
+default value is an empty string.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">Mdb</span></code></dt><dd><p>A Mdb object</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Mdb</span>
 </pre></div>
 </div>
 <p class="rubric">Methods</p>

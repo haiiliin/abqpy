@@ -364,6 +364,97 @@
 </tbody>
 </table>
 </div>
+<p>This method creates a Model object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>description</strong></dt><dd><p>A String specifying the purpose and contents of the Model object. The default value is
+an empty string.</p>
+</dd>
+<dt><strong>stefanBoltzmann</strong></dt><dd><p>None or a Float specifying the Stefan-Boltzmann constant. The default value is None.</p>
+</dd>
+<dt><strong>absoluteZero</strong></dt><dd><p>None or a Float specifying the absolute zero constant. The default value is None.</p>
+</dd>
+<dt><strong>waveFormulation</strong></dt><dd><p>A SymbolicConstant specifying the type of incident wave formulation to be used in
+acoustic problems. Possible values are NOT_SET, SCATTERED, and TOTAL. The default value
+is NOT_SET.</p>
+</dd>
+<dt><strong>modelType</strong></dt><dd><p>A SymbolicConstant specifying the analysis model type. Possible values are
+STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is STANDARD_EXPLICIT.</p>
+</dd>
+<dt><strong>universalGas</strong></dt><dd><p>None or a Float specifying the universal gas constant. The default value is None.</p>
+</dd>
+<dt><strong>copyConstraints</strong></dt><dd><p>A boolean specifying whether to copy the constraints created in the model to the model
+that instances this model. The default value is ON.</p>
+</dd>
+<dt><strong>copyConnectors</strong></dt><dd><p>A boolean specifying whether to copy the connectors created in the model to the model
+that instances this model. The default value is ON.</p>
+</dd>
+<dt><strong>copyInteractions</strong></dt><dd><p>A boolean specifying whether to copy the interactions created in the model to the model
+that instances this model. The default value is ON.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Model</span></code> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">Model</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.ArbitraryProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.ArbitraryProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ArbitraryProfile</span></code></a>(name, table)</p></td>
+<td><p>This method creates a ArbitraryProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.BoxProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.BoxProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BoxProfile</span></code></a>(name, a, b, uniformThickness, t1)</p></td>
+<td><p>This method creates a BoxProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.CircularProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.CircularProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CircularProfile</span></code></a>(name, r)</p></td>
+<td><p>This method creates a CircularProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.GeneralizedProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.GeneralizedProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GeneralizedProfile</span></code></a>(name, area, i11, i12, ...)</p></td>
+<td><p>This method creates a GeneralizedProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.HexagonalProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.HexagonalProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HexagonalProfile</span></code></a>(name, r, t)</p></td>
+<td><p>This method creates a HexagonalProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.IProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.IProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IProfile</span></code></a>(name, l, h, b1, b2, t1, t2, t3)</p></td>
+<td><p>This method creates an IProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.LProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.LProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LProfile</span></code></a>(name, a, b, t1, t2)</p></td>
+<td><p>This method creates a LProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.PipeProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.PipeProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PipeProfile</span></code></a>(name, r, t)</p></td>
+<td><p>This method creates a PipeProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.RectangularProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.RectangularProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RectangularProfile</span></code></a>(name, a, b)</p></td>
+<td><p>This method creates a RectangularProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TProfile</span></code></a>(name, b, h, l, tf, tw)</p></td>
+<td><p>This method creates a TProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TrapezoidalProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TrapezoidalProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TrapezoidalProfile</span></code></a>(name, a, b, c, d)</p></td>
+<td><p>This method creates a TrapezoidalProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.beamProfilesFromOdb" title="abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.beamProfilesFromOdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamProfilesFromOdb</span></code></a>(fileName)</p></td>
+<td><p>This method creates Profile objects by reading an output database.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.ArbitraryProfile">
 <span class="sig-name descname"><span class="pre">ArbitraryProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile" title="abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile"><span class="pre">ArbitraryProfile</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py#L57-L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.ArbitraryProfile" title="Permalink to this definition">#</a></dt>
@@ -858,6 +949,78 @@ located in another directory.</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">odbAccess</span>
 <span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../odb.html#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.ArbitraryProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.ArbitraryProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ArbitraryProfile</span></code></a>(name, table)</p></td>
+<td><p>This method creates a ArbitraryProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../odb.html#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.BoxProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.BoxProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BoxProfile</span></code></a>(name, a, b, uniformThickness, t1)</p></td>
+<td><p>This method creates a BoxProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../odb.html#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.CircularProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.CircularProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CircularProfile</span></code></a>(name, r)</p></td>
+<td><p>This method creates a CircularProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../odb.html#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.GeneralizedProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.GeneralizedProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GeneralizedProfile</span></code></a>(name, area, i11, i12, ...)</p></td>
+<td><p>This method creates a GeneralizedProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../odb.html#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.HexagonalProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.HexagonalProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HexagonalProfile</span></code></a>(name, r, t)</p></td>
+<td><p>This method creates a HexagonalProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../odb.html#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.IProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.IProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IProfile</span></code></a>(name, l, h, b1, b2, t1, t2, t3)</p></td>
+<td><p>This method creates an IProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../odb.html#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.LProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.LProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LProfile</span></code></a>(name, a, b, t1, t2)</p></td>
+<td><p>This method creates a LProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../odb.html#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.PipeProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.PipeProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PipeProfile</span></code></a>(name, r, t)</p></td>
+<td><p>This method creates a PipeProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../odb.html#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.RectangularProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.RectangularProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RectangularProfile</span></code></a>(name, a, b)</p></td>
+<td><p>This method creates a RectangularProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../odb.html#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TProfile</span></code></a>(name, b, h, l, tf, tw)</p></td>
+<td><p>This method creates a TProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../odb.html#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile" title="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TrapezoidalProfile</span></code></a>(name, a, b, c, d)</p></td>
+<td><p>This method creates a TrapezoidalProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a new Odb object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>analysisTitle</strong></dt><dd><p>A String specifying the title of the output database. The default value is an empty
+string.</p>
+</dd>
+<dt><strong>description</strong></dt><dd><p>A String specifying the description of the output database. The default value is an
+empty string.</p>
+</dd>
+<dt><strong>path</strong></dt><dd><p>A String specifying the path to the file where the new output database (.odb ) file will
+be written. The default value is an empty string.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Odb</span></code> object.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Odb</span>
 </pre></div>
 </div>
 <p class="rubric">Methods</p>
@@ -1475,6 +1638,47 @@ The first sequence in the table specifies the following:</p>
 </tbody>
 </table>
 </div>
+<p>This method creates a ArbitraryProfile object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>table</strong></dt><dd><p>A sequence of sequences of Floats specifying the items described below.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile" title="abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ArbitraryProfile</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ArbitraryProfile</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ArbitraryProfile</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.setValues" title="abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
+<td><p>This method modifies the ArbitraryProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/ArbitraryProfile.py#L67-L75"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.setValues" title="Permalink to this definition">#</a></dt>
@@ -1510,6 +1714,65 @@ The BoxProfile object is derived from the Profile object.</p>
 <ul class="simple">
 <li><p>BEAM SECTION</p></li>
 </ul>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.BoxProfile.BoxProfile.setValues" title="abaqus.BeamSectionProfile.BoxProfile.BoxProfile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([t2, t3, t4])</p></td>
+<td><p>This method modifies the BoxProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a BoxProfile object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>a</strong></dt><dd><p>A Float specifying the <strong>a</strong> dimension of the box profile. For more information, see [Beam
+cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd>
+<dt><strong>b</strong></dt><dd><p>A Float specifying the <strong>b</strong> dimension of the box profile.</p>
+</dd>
+<dt><strong>uniformThickness</strong></dt><dd><p>A Boolean specifying whether the thickness is uniform.</p>
+</dd>
+<dt><strong>t1</strong></dt><dd><p>A Float specifying the uniform wall thickness if <strong>uniformThickness</strong> = ON, and the wall
+thickness of the first segment if <strong>uniformThickness</strong> = OFF.</p>
+</dd>
+<dt><strong>t2</strong></dt><dd><p>A Float specifying the wall thickness of the second segment. <strong>t2</strong> is required only when
+<strong>uniformThickness</strong> = OFF. The default value is 0.0.</p>
+</dd>
+<dt><strong>t3</strong></dt><dd><p>A Float specifying the wall thickness of the third segment. <strong>t3</strong> is required only when
+<strong>uniformThickness</strong> = OFF. The default value is 0.0.</p>
+</dd>
+<dt><strong>t4</strong></dt><dd><p>A Float specifying the wall thickness of the fourth segment. <strong>t4</strong> is required only when
+<strong>uniformThickness</strong> = OFF. The default value is 0.0.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.BeamSectionProfile.BoxProfile.BoxProfile" title="abaqus.BeamSectionProfile.BoxProfile.BoxProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BoxProfile</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">BoxProfile</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">BoxProfile</span>
+</pre></div>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1586,6 +1849,49 @@ The CircularProfile object is derived from the Profile object.</p>
 </tbody>
 </table>
 </div>
+<p>This method creates a CircularProfile object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>r</strong></dt><dd><p>A positive Float specifying the <strong>r</strong> dimension (outer radius) of the circular profile.
+For more information, see [Beam cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.BeamSectionProfile.CircularProfile.CircularProfile" title="abaqus.BeamSectionProfile.CircularProfile.CircularProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CircularProfile</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">CircularProfile</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">CircularProfile</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.CircularProfile.CircularProfile.setValues" title="abaqus.BeamSectionProfile.CircularProfile.CircularProfile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
+<td><p>This method modifies the CircularProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.CircularProfile.CircularProfile.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/CircularProfile.py#L57-L65"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.CircularProfile.CircularProfile.setValues" title="Permalink to this definition">#</a></dt>
@@ -1622,6 +1928,59 @@ The GeneralizedProfile object is derived from the Profile object.</p>
 <ul class="simple">
 <li><p>BEAM GENERAL SECTION</p></li>
 </ul>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.setValues" title="abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
+<td><p>This method modifies the GeneralizedProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a GeneralizedProfile object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>area</strong></dt><dd><p>A Float specifying the cross-sectional area for the profile.</p>
+</dd>
+<dt><strong>i11</strong></dt><dd><p>A Float specifying the moment of inertia for bending about the 1-axis, I11I11.</p>
+</dd>
+<dt><strong>i12</strong></dt><dd><p>A Float specifying the moment of inertia for cross bending, I12I12.</p>
+</dd>
+<dt><strong>i22</strong></dt><dd><p>A Float specifying the moment of inertia for bending about the 2-axis, I22I22.</p>
+</dd>
+<dt><strong>j</strong></dt><dd><p>A Float specifying the torsional constant, JJ.</p>
+</dd>
+<dt><strong>gammaO</strong></dt><dd><p>A Float specifying the sectorial moment, Γ0Γ0.</p>
+</dd>
+<dt><strong>gammaW</strong></dt><dd><p>A Float specifying the warping constant, ΓWΓW.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile" title="abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GeneralizedProfile</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">GeneralizedProfile</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">GeneralizedProfile</span>
+</pre></div>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1685,6 +2044,52 @@ The HexagonalProfile object is derived from the Profile object.</p>
 </tbody>
 </table>
 </div>
+<p>This method creates a HexagonalProfile object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>r</strong></dt><dd><p>A positive Float specifying the <strong>r</strong> dimension (outer radius) of the hexagonal profile.
+For more information, see [Beam cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd>
+<dt><strong>t</strong></dt><dd><p>A positive Float specifying the <strong>t</strong> dimension (wall thickness) of the hexagonal profile,
+<em>t &lt; (sqrt(3)/2)r</em>.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile" title="abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HexagonalProfile</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">HexagonalProfile</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">HexagonalProfile</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.setValues" title="abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
+<td><p>This method modifies the HexagonalProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/HexagonalProfile.py#L60-L68"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.setValues" title="Permalink to this definition">#</a></dt>
@@ -1720,6 +2125,61 @@ The IProfile object is derived from the Profile object.</p>
 <ul class="simple">
 <li><p>BEAM SECTION</p></li>
 </ul>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.IProfile.IProfile.setValues" title="abaqus.BeamSectionProfile.IProfile.IProfile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
+<td><p>This method modifies the IProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates an IProfile object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>l</strong></dt><dd><p>A Float specifying the <strong>l</strong> dimension (offset of 1-axis from the bottom flange surface)
+of the I profile. For more information, see [Beam cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd>
+<dt><strong>h</strong></dt><dd><p>A Float specifying the <strong>h</strong> dimension (height) of the I profile.</p>
+</dd>
+<dt><strong>b1</strong></dt><dd><p>A Float specifying the <strong>b1</strong> dimension (bottom flange width) of the I profile.</p>
+</dd>
+<dt><strong>b2</strong></dt><dd><p>A Float specifying the <strong>b2</strong> dimension (top flange width) of the I profile.</p>
+</dd>
+<dt><strong>t1</strong></dt><dd><p>A Float specifying the <strong>t1</strong> dimension (bottom flange thickness) of the I profile.</p>
+</dd>
+<dt><strong>t2</strong></dt><dd><p>A Float specifying the <strong>t2</strong> dimension (top flange thickness) of the I profile.</p>
+</dd>
+<dt><strong>t3</strong></dt><dd><p>A Float specifying the <strong>t3</strong> dimension (web thickness) of the I profile.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">An</span></code> <a class="reference internal" href="#abaqus.BeamSectionProfile.IProfile.IProfile" title="abaqus.BeamSectionProfile.IProfile.IProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IProfile</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">IProfile</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">IProfile</span>
+</pre></div>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1783,6 +2243,57 @@ The LProfile object is derived from the Profile object.</p>
 </tbody>
 </table>
 </div>
+<p>This method creates a LProfile object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>a</strong></dt><dd><p>A positive Float specifying the <strong>a</strong> dimension (flange length) of the L profile. For more
+information, see [Beam cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd>
+<dt><strong>b</strong></dt><dd><p>A positive Float specifying the <strong>b</strong> dimension (flange length) of the L profile.</p>
+</dd>
+<dt><strong>t1</strong></dt><dd><p>A positive Float specifying the <strong>t1</strong> dimension (flange thickness) of the L profile (<em>t1
+&lt; b</em>).</p>
+</dd>
+<dt><strong>t2</strong></dt><dd><p>A positive Float specifying the <strong>t2</strong> dimension (flange thickness) of the L profile (<em>t2&lt;
+a</em>).</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.BeamSectionProfile.LProfile.LProfile" title="abaqus.BeamSectionProfile.LProfile.LProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LProfile</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">LProfile</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">LProfile</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.LProfile.LProfile.setValues" title="abaqus.BeamSectionProfile.LProfile.LProfile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
+<td><p>This method modifies the LProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.LProfile.LProfile.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/LProfile.py#L65-L73"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.LProfile.LProfile.setValues" title="Permalink to this definition">#</a></dt>
@@ -1818,6 +2329,51 @@ The PipeProfile object is derived from the Profile object.</p>
 <ul class="simple">
 <li><p>BEAM SECTION</p></li>
 </ul>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.PipeProfile.PipeProfile.setValues" title="abaqus.BeamSectionProfile.PipeProfile.PipeProfile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
+<td><p>This method modifies the PipeProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a PipeProfile object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>r</strong></dt><dd><p>A Float specifying the outer radius of the pipe. For more information, see [Beam
+cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd>
+<dt><strong>t</strong></dt><dd><p>A Float specifying the wall thickness of the pipe.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.BeamSectionProfile.PipeProfile.PipeProfile" title="abaqus.BeamSectionProfile.PipeProfile.PipeProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PipeProfile</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">PipeProfile</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">PipeProfile</span>
+</pre></div>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1881,6 +2437,51 @@ The RectangularProfile object is derived from the Profile object.</p>
 </tbody>
 </table>
 </div>
+<p>This method creates a RectangularProfile object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>a</strong></dt><dd><p>A positive Float specifying the <strong>a</strong> dimension of the rectangular profile. For more
+information, see [Beam cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd>
+<dt><strong>b</strong></dt><dd><p>A positive Float specifying the <strong>b</strong> dimension of the rectangular profile.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile" title="abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RectangularProfile</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">RectangularProfile</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">RectangularProfile</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.setValues" title="abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
+<td><p>This method modifies the RectangularProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/RectangularProfile.py#L59-L67"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.setValues" title="Permalink to this definition">#</a></dt>
@@ -1930,6 +2531,60 @@ The TProfile object is derived from the Profile object.</p>
 </tbody>
 </table>
 </div>
+<p>This method creates a TProfile object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>b</strong></dt><dd><p>A positive Float specifying the <strong>b</strong> dimension (flange width) of the T profile. For more
+information, see [Beam cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd>
+<dt><strong>h</strong></dt><dd><p>A positive Float specifying the <strong>h</strong> dimension (height) of the T profile.</p>
+</dd>
+<dt><strong>l</strong></dt><dd><p>A positive Float specifying the <strong>l</strong> dimension (offset of 1-axis from the edge of web) of
+the T profile.</p>
+</dd>
+<dt><strong>tf</strong></dt><dd><p>A positive Float specifying the <strong>tf</strong> dimension (flange thickness) of the T profile (<em>tf
+&lt; h</em>).</p>
+</dd>
+<dt><strong>tw</strong></dt><dd><p>A positive Float specifying the <strong>tw</strong> dimension (web thickness) of the T profile (<em>tw&lt;
+b</em>).</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.BeamSectionProfile.TProfile.TProfile" title="abaqus.BeamSectionProfile.TProfile.TProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TProfile</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">TProfile</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">TProfile</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.TProfile.TProfile.setValues" title="abaqus.BeamSectionProfile.TProfile.TProfile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
+<td><p>This method modifies the TProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.TProfile.TProfile.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/TProfile.py#L68-L76"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.TProfile.TProfile.setValues" title="Permalink to this definition">#</a></dt>
@@ -1965,6 +2620,55 @@ The TrapezoidalProfile object is derived from the Profile object.</p>
 <ul class="simple">
 <li><p>BEAM SECTION</p></li>
 </ul>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.setValues" title="abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>()</p></td>
+<td><p>This method modifies the TrapezoidalProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This method creates a TrapezoidalProfile object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>a</strong></dt><dd><p>A positive Float specifying the <strong>a</strong> dimension of the Trapezoidal profile. For more
+information, see [Beam cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd>
+<dt><strong>b</strong></dt><dd><p>A positive Float specifying the <strong>b</strong> dimension of the Trapezoidal profile.</p>
+</dd>
+<dt><strong>c</strong></dt><dd><p>A positive Float specifying the <strong>c</strong> dimension of the Trapezoidal profile.</p>
+</dd>
+<dt><strong>d</strong></dt><dd><p>A Float specifying the <strong>d</strong> dimension of the Trapezoidal profile.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <a class="reference internal" href="#abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile" title="abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TrapezoidalProfile</span></code></a> object.</dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">RangeError</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">TrapezoidalProfile</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">TrapezoidalProfile</span>
+</pre></div>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
