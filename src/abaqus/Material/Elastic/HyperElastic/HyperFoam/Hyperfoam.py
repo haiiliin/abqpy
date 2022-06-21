@@ -24,7 +24,7 @@ class Hyperfoam:
     The items in the table data specify the following for values of nn:
 
     - :math:`\mu_i` and :math:`\alpha_i` for :math:`i` from 1 to :math:`n`.
-    - :math:nu_i`.
+    - :math:\nu_i`.
     - Temperature, if the data depend on temperature. Temperature dependence is not allowed for :math:`4\le n\le 6` in an
       Abaqus/Explicit analysis.
 

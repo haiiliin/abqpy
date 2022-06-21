@@ -38,10 +38,10 @@ class CapCreepCohesion:
         - Etc.
     - If **law** = POWER_LAW or **law** = TIME_POWER_LAW, the table data specify the following:
     
-        - q0.
-        - n.
-        - m.
-        - ε0.
+        - :math:`q_0`.
+        - :math:`n`.
+        - :math:`m`.
+        - :math:`\epsilon_0`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.

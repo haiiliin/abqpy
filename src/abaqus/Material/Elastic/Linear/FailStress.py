@@ -21,8 +21,8 @@ class FailStress:
     - Compressive stress limit in fiber direction, :math:`X_{c}`.
     - Tensile stress limit in transverse direction, :math:`Y_{t}`
     - Compressive stress limit in transverse direction, :math:`Y_{c}`.
-    - Shear strength in the :math:`X_{-} Y` plane, :math:`S`.
-    - Cross product term coefficient, :math:`\left.f_{(}^{*}-1.0 \leq f^{*} \leq 1.0\right)`. 
+    - Shear strength in the :math:`X - Y` plane, :math:`S`.
+    - Cross product term coefficient, :math:`f^{*} (-1.0 \leq f^{*} \leq 1.0)`. 
       The default value is zero.
     - Biaxial stress limit, :math:`\sigma_{b i a x}`.
     - Temperature, if the data depend on temperature.
