@@ -101,7 +101,7 @@ class DamageStabilization:
 
         Returns
         -------
-            A DamageStabilization object. 
+        A DamageStabilization object. 
 
         Raises
         ------

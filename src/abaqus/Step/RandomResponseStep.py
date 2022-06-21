@@ -340,7 +340,7 @@ class RandomResponseStep(AnalysisStep):
 
         Returns
         -------
-            A RandomResponseStep object.
+        A RandomResponseStep object.
 
         Raises
         ------

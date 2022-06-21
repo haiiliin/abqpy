@@ -80,7 +80,7 @@ class RigidBody(Constraint):
 
         Returns
         -------
-            A RigidBody object.
+        A RigidBody object.
         """
         super().__init__()
         pass

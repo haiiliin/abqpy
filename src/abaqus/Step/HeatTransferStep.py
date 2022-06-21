@@ -437,7 +437,7 @@ class HeatTransferStep(AnalysisStep):
 
         Returns
         -------
-            A HeatTransferStep object.
+        A HeatTransferStep object.
 
         Raises
         ------

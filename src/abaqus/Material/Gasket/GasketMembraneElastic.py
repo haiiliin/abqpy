@@ -55,7 +55,7 @@ class GasketMembraneElastic:
 
         Returns
         -------
-            A GasketMembraneElastic object.
+        A GasketMembraneElastic object.
 
         Raises
         ------

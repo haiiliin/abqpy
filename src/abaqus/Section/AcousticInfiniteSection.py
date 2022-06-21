@@ -49,7 +49,7 @@ class AcousticInfiniteSection(Section):
 
         Returns
         -------
-            An AcousticInfiniteSection object.
+        An AcousticInfiniteSection object.
 
         Raises
         ------

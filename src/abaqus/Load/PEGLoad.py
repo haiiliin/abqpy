@@ -100,7 +100,7 @@ class PEGLoad(Load):
 
         Returns
         -------
-            A PEGLoad object.
+        A PEGLoad object.
         """
         super().__init__()
         pass

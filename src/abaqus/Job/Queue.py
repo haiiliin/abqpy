@@ -71,7 +71,7 @@ class Queue:
 
         Returns
         -------
-            A Queue object.
+        A Queue object.
 
         Raises
         ------

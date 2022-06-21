@@ -95,7 +95,7 @@ class SurfaceConcentrationFlux(Load):
 
         Returns
         -------
-            A SurfaceConcentrationFlux object.
+        A SurfaceConcentrationFlux object.
         """
         super().__init__()
         pass

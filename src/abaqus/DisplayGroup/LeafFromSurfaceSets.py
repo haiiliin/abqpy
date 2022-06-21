@@ -47,7 +47,7 @@ class LeafFromSurfaceSets(Leaf):
 
         Returns
         -------
-            A LeafFromSurfaceSets object.
+        A LeafFromSurfaceSets object.
         """
         super().__init__(DEFAULT_MODEL)
         pass

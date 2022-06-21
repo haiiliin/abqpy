@@ -186,7 +186,7 @@ class ConnectorPlasticity(ConnectorBehaviorOption):
 
         Returns
         -------
-            A ConnectorPlasticity object.
+        A ConnectorPlasticity object.
 
         Raises
         ------

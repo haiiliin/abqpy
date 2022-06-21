@@ -24,6 +24,6 @@ class TieConstraint:
 
         Returns
         -------
-            A tuple containing coordinates of the nodes pertaining to the constraint.
+        A tuple containing coordinates of the nodes pertaining to the constraint.
         """
         pass

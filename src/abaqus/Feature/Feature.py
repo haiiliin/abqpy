@@ -350,7 +350,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -380,7 +380,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -410,7 +410,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -439,7 +439,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -474,7 +474,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -509,7 +509,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -547,7 +547,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -574,7 +574,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -604,7 +604,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -634,7 +634,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -665,7 +665,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -714,7 +714,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -772,7 +772,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -812,7 +812,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -845,7 +845,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -879,7 +879,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -910,7 +910,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -945,7 +945,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -977,7 +977,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -1007,7 +1007,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -1037,7 +1037,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -1067,7 +1067,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -1184,7 +1184,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -1215,7 +1215,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -1246,7 +1246,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -1277,7 +1277,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -1324,8 +1324,8 @@ class Feature:
 
         Returns
         -------
-            A Transform object. A Transform is an object with one method that returns the transform
-            matrix.
+        A Transform object. A Transform is an object with one method that returns the transform
+        matrix.
 
         Raises
         ------
@@ -1355,7 +1355,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -1385,7 +1385,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -1425,7 +1425,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -1456,7 +1456,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -1486,7 +1486,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -1520,7 +1520,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -1554,7 +1554,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -1590,7 +1590,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -1627,7 +1627,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -1656,7 +1656,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -1686,7 +1686,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -1715,7 +1715,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -1780,7 +1780,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -1818,7 +1818,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -1968,7 +1968,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -2010,7 +2010,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -2062,7 +2062,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -2112,7 +2112,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -2161,7 +2161,7 @@ class Feature:
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -2284,7 +2284,7 @@ class Feature:
 
         Returns
         -------
-            A Boolean value of True if the feature is suppressed and False if it is not suppressed.
+        A Boolean value of True if the feature is suppressed and False if it is not suppressed.
         """
         pass
 

@@ -43,7 +43,7 @@ class AcousticInterfaceSection(Section):
 
         Returns
         -------
-            An AcousticInterfaceSection object.
+        An AcousticInterfaceSection object.
 
         Raises
         ------

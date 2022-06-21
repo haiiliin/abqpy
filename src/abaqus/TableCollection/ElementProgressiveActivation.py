@@ -57,7 +57,7 @@ class ElementProgressiveActivation:
 
         Returns
         -------
-            An ElementProgressiveActivation object.
+        An ElementProgressiveActivation object.
 
         Raises
         ------

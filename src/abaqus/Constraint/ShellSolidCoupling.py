@@ -77,7 +77,7 @@ class ShellSolidCoupling(Constraint):
 
         Returns
         -------
-            A ShellSolidCoupling object.
+        A ShellSolidCoupling object.
         """
         super().__init__()
         pass

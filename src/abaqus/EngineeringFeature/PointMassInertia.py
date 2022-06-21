@@ -108,7 +108,7 @@ class PointMassInertia(Inertia):
 
         Returns
         -------
-            A PointMassInertia object.
+        A PointMassInertia object.
         """
         super().__init__()
         pass

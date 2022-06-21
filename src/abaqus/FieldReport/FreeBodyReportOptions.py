@@ -49,6 +49,6 @@ class FreeBodyReportOptions:
 
         Returns
         -------
-            A FreeBodyReportOptions object.
+        A FreeBodyReportOptions object.
         """
         pass

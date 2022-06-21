@@ -35,7 +35,7 @@ class OdbStep(OdbStepBase):
 
         Returns
         -------
-            A HistoryRegion object.
+        A HistoryRegion object.
         """
         self.historyRegions[name] = historyRegion = HistoryRegion(
             name, description, point, loadCase
@@ -71,7 +71,7 @@ class OdbStep(OdbStepBase):
 
         Returns
         -------
-            An OdbFrame object.
+        An OdbFrame object.
         """
         pass
 
@@ -101,7 +101,7 @@ class OdbStep(OdbStepBase):
 
         Returns
         -------
-            An OdbFrame object.
+        An OdbFrame object.
         """
         pass
 
@@ -132,7 +132,7 @@ class OdbStep(OdbStepBase):
 
         Returns
         -------
-            An OdbFrame object.
+        An OdbFrame object.
         """
         pass
 
@@ -159,7 +159,7 @@ class OdbStep(OdbStepBase):
 
         Returns
         -------
-            An OdbLoadCase object.
+        An OdbLoadCase object.
         """
         self.loadCases[name] = odbLoadCase = OdbLoadCase(name)
         return odbLoadCase

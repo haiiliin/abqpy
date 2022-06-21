@@ -93,7 +93,7 @@ class GapFlow:
 
         Returns
         -------
-            A GapFlow object.
+        A GapFlow object.
         """
         pass
 

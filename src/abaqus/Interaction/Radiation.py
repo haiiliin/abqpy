@@ -38,7 +38,7 @@ class Radiation:
 
         Returns
         -------
-            A Radiation object.
+        A Radiation object.
         """
         pass
 

@@ -82,7 +82,7 @@ class EmbeddedRegion(Constraint):
 
         Returns
         -------
-            An EmbeddedRegion object.
+        An EmbeddedRegion object.
         """
         super().__init__()
         pass

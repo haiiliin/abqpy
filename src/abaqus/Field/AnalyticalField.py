@@ -198,7 +198,7 @@ class AnalyticalField(Field):
 
         Returns
         -------
-            An OdbMeshRegionData object.
+        An OdbMeshRegionData object.
 
         Raises
         ------

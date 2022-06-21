@@ -50,7 +50,7 @@ class BeadPlanarSymmetry(GeometricRestriction):
 
         Returns
         -------
-            A BeadPlanarSymmetry object.
+        A BeadPlanarSymmetry object.
         """
         super().__init__()
         pass

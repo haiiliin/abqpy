@@ -31,6 +31,6 @@ class UserDefinedField:
 
         Returns
         -------
-            A UserDefinedField object.
+        A UserDefinedField object.
         """
         pass

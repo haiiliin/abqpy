@@ -58,6 +58,6 @@ class NumberFormat:
 
         Returns
         -------
-            A NumberFormat object.
+        A NumberFormat object.
         """
         pass

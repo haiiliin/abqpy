@@ -121,7 +121,7 @@ class NormalBehavior:
 
         Returns
         -------
-            A NormalBehavior object.
+        A NormalBehavior object.
         """
         pass
 

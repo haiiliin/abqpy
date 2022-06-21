@@ -79,7 +79,7 @@ class MohrCoulombPlasticity:
 
         Returns
         -------
-            A MohrCoulombPlasticity object.
+        A MohrCoulombPlasticity object.
 
         Raises
         ------

@@ -85,7 +85,7 @@ class ConcreteDamagedPlasticity:
 
         Returns
         -------
-            A ConcreteDamagedPlasticity object.
+        A ConcreteDamagedPlasticity object.
 
         Raises
         ------

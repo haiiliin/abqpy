@@ -90,7 +90,7 @@ class GapElectricalConductance:
 
         Returns
         -------
-            A GapElectricalConductance object.
+        A GapElectricalConductance object.
         """
         pass
 

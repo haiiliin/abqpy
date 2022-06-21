@@ -46,7 +46,7 @@ class AnnealTemperature:
 
         Returns
         -------
-            An AnnealTemperature object.
+        An AnnealTemperature object.
 
         Raises
         ------

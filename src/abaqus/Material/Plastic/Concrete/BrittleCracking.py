@@ -88,7 +88,7 @@ class BrittleCracking:
 
         Returns
         -------
-            A BrittleCracking object.
+        A BrittleCracking object.
         """
         pass
 

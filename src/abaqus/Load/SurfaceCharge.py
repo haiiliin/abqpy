@@ -91,7 +91,7 @@ class SurfaceCharge(Load):
 
         Returns
         -------
-            A SurfaceCharge object.
+        A SurfaceCharge object.
         """
         super().__init__()
         pass

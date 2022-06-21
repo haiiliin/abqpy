@@ -51,7 +51,7 @@ class ObjectiveFunction:
 
         Returns
         -------
-            An ObjectiveFunction object.
+        An ObjectiveFunction object.
 
         Raises
         ------

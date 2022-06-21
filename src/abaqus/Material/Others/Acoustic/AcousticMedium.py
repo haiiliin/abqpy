@@ -81,7 +81,7 @@ class AcousticMedium:
 
         Returns
         -------
-            An AcousticMedium object.
+        An AcousticMedium object.
 
         Raises
         ------

@@ -110,7 +110,7 @@ class ContourIntegral(Crack):
 
         Returns
         -------
-            A ContourIntegral object.
+        A ContourIntegral object.
         """
         super().__init__()
         pass

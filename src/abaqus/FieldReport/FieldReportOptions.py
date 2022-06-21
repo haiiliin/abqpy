@@ -74,7 +74,7 @@ class FieldReportOptions:
 
         Returns
         -------
-            A FieldReportOptions object.
+        A FieldReportOptions object.
         """
         pass
 
@@ -116,7 +116,7 @@ class FieldReportOptions:
 
         Returns
         -------
-            A NumberFormat object.
+        A NumberFormat object.
         """
         self.numberFormat = numberFormat = NumberFormat(
             blankPad, format, numDigits, precision

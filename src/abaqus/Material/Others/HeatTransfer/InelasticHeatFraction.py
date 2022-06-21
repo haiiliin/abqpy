@@ -39,7 +39,7 @@ class InelasticHeatFraction:
 
         Returns
         -------
-            An InelasticHeatFraction object.
+        An InelasticHeatFraction object.
 
         Raises
         ------

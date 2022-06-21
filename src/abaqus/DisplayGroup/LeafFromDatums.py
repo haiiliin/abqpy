@@ -48,7 +48,7 @@ class LeafFromDatums(Leaf):
 
         Returns
         -------
-            A LeafFromDatums object.
+        A LeafFromDatums object.
         """
         super().__init__(DEFAULT_MODEL)
         pass

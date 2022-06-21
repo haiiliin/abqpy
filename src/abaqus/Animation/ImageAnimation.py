@@ -43,7 +43,7 @@ class ImageAnimation:
 
         Returns
         -------
-            An ImageAnimation object.
+        An ImageAnimation object.
         """
         pass
 

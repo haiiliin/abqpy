@@ -308,7 +308,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -390,7 +390,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -472,7 +472,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -554,7 +554,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -640,7 +640,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -726,7 +726,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -808,7 +808,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -890,7 +890,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -976,7 +976,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -1062,7 +1062,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -1148,7 +1148,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -1234,7 +1234,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -1316,7 +1316,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -1398,7 +1398,7 @@ class DamageInitiation:
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------

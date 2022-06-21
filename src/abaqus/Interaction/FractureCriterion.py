@@ -124,7 +124,7 @@ class FractureCriterion:
 
         Returns
         -------
-            A FractureCriterion object.
+        A FractureCriterion object.
         """
         pass
 

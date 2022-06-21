@@ -77,7 +77,7 @@ class PlanarTestData:
 
         Returns
         -------
-            A PlanarTestData object.
+        A PlanarTestData object.
         """
         pass
 

@@ -391,7 +391,7 @@ class GeostaticStep(AnalysisStep):
 
         Returns
         -------
-            A GeostaticStep object.
+        A GeostaticStep object.
 
         Raises
         ------

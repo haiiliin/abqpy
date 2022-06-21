@@ -39,7 +39,7 @@ class PorousFailureCriteria:
 
         Returns
         -------
-            A PorousFailureCriteria object. 
+        A PorousFailureCriteria object. 
 
         Raises
         ------

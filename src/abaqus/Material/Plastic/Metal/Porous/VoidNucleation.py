@@ -55,7 +55,7 @@ class VoidNucleation:
 
         Returns
         -------
-            A VoidNucleation object. 
+        A VoidNucleation object. 
 
         Raises
         ------

@@ -183,7 +183,7 @@ class PointFastener(Fastener):
 
         Returns
         -------
-            A PointFastener object.
+        A PointFastener object.
         """
         super().__init__()
         pass

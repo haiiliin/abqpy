@@ -497,7 +497,7 @@ class DirectCyclicStep(AnalysisStep):
 
         Returns
         -------
-            A DirectCyclicStep object.
+        A DirectCyclicStep object.
 
         Raises
         ------

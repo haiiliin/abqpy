@@ -47,7 +47,7 @@ class HexagonalProfile(Profile):
 
         Returns
         -------
-            A HexagonalProfile object.
+        A HexagonalProfile object.
 
         Raises
         ------

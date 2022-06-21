@@ -73,7 +73,7 @@ class ConnectorLock(ConnectorBehaviorOption):
 
         Returns
         -------
-            A ConnectorLock object.
+        A ConnectorLock object.
 
         Raises
         ------

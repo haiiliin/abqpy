@@ -95,7 +95,7 @@ class ConnectorPotential:
 
         Returns
         -------
-            A ConnectorPotential object. 
+        A ConnectorPotential object. 
 
         Raises
         ------
@@ -127,7 +127,7 @@ class ConnectorPotential:
 
         Returns
         -------
-            A DerivedComponent object.
+        A DerivedComponent object.
 
         Raises
         ------

@@ -114,7 +114,7 @@ class Path:
 
         Returns
         -------
-            A Path object.
+        A Path object.
 
         Raises
         ------

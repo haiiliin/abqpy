@@ -109,7 +109,7 @@ class ContactProperty(InteractionProperty):
 
         Returns
         -------
-            A ContactProperty object.
+        A ContactProperty object.
         """
         super().__init__()
         pass
@@ -187,7 +187,7 @@ class ContactProperty(InteractionProperty):
 
         Returns
         -------
-            A ContactTangentialBehavior object.
+        A ContactTangentialBehavior object.
         """
         self.tangentialBehavior = ContactTangentialBehavior(
             formulation,
@@ -298,7 +298,7 @@ class ContactProperty(InteractionProperty):
 
         Returns
         -------
-            A NormalBehavior object.
+        A NormalBehavior object.
         """
         self.normalBehavior = NormalBehavior(
             contactStiffness,
@@ -355,7 +355,7 @@ class ContactProperty(InteractionProperty):
 
         Returns
         -------
-            A ContactDamping object.
+        A ContactDamping object.
         """
         self.damping = ContactDamping(
             definition, tangentFraction, clearanceDependence, table
@@ -452,7 +452,7 @@ class ContactProperty(InteractionProperty):
 
         Returns
         -------
-            A ContactDamage object.
+        A ContactDamage object.
         """
         self.damage = ContactDamage(
             initTable,
@@ -524,7 +524,7 @@ class ContactProperty(InteractionProperty):
 
         Returns
         -------
-            A FractureCriterion object.
+        A FractureCriterion object.
         """
         self.fractureCriterion = FractureCriterion(
             initTable,
@@ -586,7 +586,7 @@ class ContactProperty(InteractionProperty):
 
         Returns
         -------
-            A CohesiveBehavior object.
+        A CohesiveBehavior object.
         """
         self.cohesiveBehavior = CohesiveBehavior(
             repeatedContacts,
@@ -659,7 +659,7 @@ class ContactProperty(InteractionProperty):
 
         Returns
         -------
-            A ThermalConductance object.
+        A ThermalConductance object.
         """
         self.thermalConductance = ThermalConductance(
             definition,
@@ -700,7 +700,7 @@ class ContactProperty(InteractionProperty):
 
         Returns
         -------
-            A GapHeatGeneration object.
+        A GapHeatGeneration object.
         """
         self.heatGeneration = GapHeatGeneration(conversionFraction, secondaryFraction)
         return self.heatGeneration
@@ -730,7 +730,7 @@ class ContactProperty(InteractionProperty):
 
         Returns
         -------
-            A Radiation object.
+        A Radiation object.
         """
         self.radiation = Radiation(mainEmissivity, secondaryEmissivity, table)
         return self.radiation
@@ -786,7 +786,7 @@ class ContactProperty(InteractionProperty):
 
         Returns
         -------
-            A GeometricProperties object.
+        A GeometricProperties object.
         """
         self.geometricProperties = GeometricProperties(
             contactArea,
@@ -851,7 +851,7 @@ class ContactProperty(InteractionProperty):
 
         Returns
         -------
-            A GapElectricalConductance object.
+        A GapElectricalConductance object.
         """
         self.electricalConductance = GapElectricalConductance(
             definition,

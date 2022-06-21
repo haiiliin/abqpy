@@ -46,7 +46,7 @@ class LeafFromPartInstance(Leaf):
 
         Returns
         -------
-            A LeafFromPartInstance object.
+        A LeafFromPartInstance object.
         """
         super().__init__(DEFAULT_MODEL)
         pass

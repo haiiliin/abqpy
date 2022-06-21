@@ -35,7 +35,7 @@ class MeshFaceArray(list[MeshFace]):
 
         Returns
         -------
-            A MeshFaceArray object.
+        A MeshFaceArray object.
         """
         super().__init__()
 
@@ -50,7 +50,7 @@ class MeshFaceArray(list[MeshFace]):
 
         Returns
         -------
-            A MeshFaceArray object.
+        A MeshFaceArray object.
 
         Raises
         ------
@@ -64,6 +64,6 @@ class MeshFaceArray(list[MeshFace]):
 
         Returns
         -------
-            A String specifying the object or objects.
+        A String specifying the object or objects.
         """
         pass

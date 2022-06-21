@@ -47,8 +47,7 @@ class BeamSectionProfileModel(ModelBase):
 
         Returns
         -------
-            A list of Profile objects..
-            !img
+        A list of Profile objects.
         """
         profiles: dict[Profile] = dict[Profile]()
         self.profiles.update(profiles)
@@ -75,7 +74,7 @@ class BeamSectionProfileModel(ModelBase):
 
         Returns
         -------
-            An ArbitraryProfile object.
+        An ArbitraryProfile object.
 
         Raises
         ------
@@ -134,7 +133,7 @@ class BeamSectionProfileModel(ModelBase):
 
         Returns
         -------
-            A BoxProfile object.
+        A BoxProfile object.
 
         Raises
         ------
@@ -169,7 +168,7 @@ class BeamSectionProfileModel(ModelBase):
 
         Returns
         -------
-            A CircularProfile object.
+        A CircularProfile object.
 
         Raises
         ------
@@ -222,7 +221,7 @@ class BeamSectionProfileModel(ModelBase):
 
         Returns
         -------
-            A GeneralizedProfile object.
+        A GeneralizedProfile object.
 
         Raises
         ------
@@ -260,7 +259,7 @@ class BeamSectionProfileModel(ModelBase):
 
         Returns
         -------
-            A HexagonalProfile object.
+        A HexagonalProfile object.
 
         Raises
         ------
@@ -315,7 +314,7 @@ class BeamSectionProfileModel(ModelBase):
 
         Returns
         -------
-            An IProfile object.
+        An IProfile object.
 
         Raises
         ------
@@ -356,7 +355,7 @@ class BeamSectionProfileModel(ModelBase):
 
         Returns
         -------
-            A LProfile object.
+        A LProfile object.
 
         Raises
         ------
@@ -391,7 +390,7 @@ class BeamSectionProfileModel(ModelBase):
 
         Returns
         -------
-            A PipeProfile object.
+        A PipeProfile object.
 
         Raises
         ------
@@ -426,7 +425,7 @@ class BeamSectionProfileModel(ModelBase):
 
         Returns
         -------
-            A RectangularProfile object.
+        A RectangularProfile object.
 
         Raises
         ------
@@ -472,7 +471,7 @@ class BeamSectionProfileModel(ModelBase):
 
         Returns
         -------
-            A TProfile object.
+        A TProfile object.
 
         Raises
         ------
@@ -513,7 +512,7 @@ class BeamSectionProfileModel(ModelBase):
 
         Returns
         -------
-            A TrapezoidalProfile object.
+        A TrapezoidalProfile object.
 
         Raises
         ------

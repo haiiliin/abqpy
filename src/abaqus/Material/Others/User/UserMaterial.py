@@ -70,7 +70,7 @@ class UserMaterial:
 
         Returns
         -------
-            A UserMaterial object.
+        A UserMaterial object.
 
         Raises
         ------

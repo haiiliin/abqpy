@@ -242,7 +242,7 @@ class PartInstance:
 
         Returns
         -------
-            A PartInstance object.
+        A PartInstance object.
         """
         self.vertices = part.vertices
         self.ignoredEdges = part.ignoredEdges
@@ -295,7 +295,7 @@ class PartInstance:
 
         Returns
         -------
-            A PartInstance object.
+        A PartInstance object.
         """
         pass
 
@@ -354,7 +354,7 @@ class PartInstance:
 
         Returns
         -------
-            A PartInstance object.
+        A PartInstance object.
         """
         pass
 
@@ -404,7 +404,7 @@ class PartInstance:
 
         Returns
         -------
-            A sequence of PartInstance objects.
+        A sequence of PartInstance objects.
         """
         pass
 
@@ -449,7 +449,7 @@ class PartInstance:
 
         Returns
         -------
-            A sequence of PartInstance objects.
+        A sequence of PartInstance objects.
         """
         pass
 
@@ -530,8 +530,8 @@ class PartInstance:
 
         Returns
         -------
-            A tuple including the point of rotation, axis of rotation, and rotation angle (in
-            degrees).
+        A tuple including the point of rotation, axis of rotation, and rotation angle (in
+        degrees).
         """
         pass
 
@@ -541,7 +541,7 @@ class PartInstance:
 
         Returns
         -------
-            A tuple of three Floats representing the translation.
+        A tuple of three Floats representing the translation.
         """
         pass
 

@@ -126,7 +126,7 @@ class View:
 
         Returns
         -------
-            A View object.
+        A View object.
 
         Raises
         ------

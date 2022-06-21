@@ -101,7 +101,7 @@ class TwoPointSpringDashpot(SpringDashpot):
 
         Returns
         -------
-            A TwoPointSpringDashpot object.
+        A TwoPointSpringDashpot object.
         """
         super().__init__()
         pass

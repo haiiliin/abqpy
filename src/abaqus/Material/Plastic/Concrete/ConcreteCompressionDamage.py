@@ -63,7 +63,7 @@ class ConcreteCompressionDamage:
 
         Returns
         -------
-            A ConcreteCompressionDamage object.
+        A ConcreteCompressionDamage object.
 
         Raises
         ------

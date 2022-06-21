@@ -89,7 +89,7 @@ class ElectricalConductivity:
 
         Returns
         -------
-            An ElectricalConductivity object.
+        An ElectricalConductivity object.
 
         Raises
         ------

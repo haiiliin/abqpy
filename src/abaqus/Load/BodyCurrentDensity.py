@@ -83,7 +83,7 @@ class BodyCurrentDensity(Load):
 
         Returns
         -------
-            A BodyCurrentDensity object.
+        A BodyCurrentDensity object.
         """
         super().__init__()
         pass

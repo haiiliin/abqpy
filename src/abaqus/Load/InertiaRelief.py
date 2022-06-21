@@ -98,7 +98,7 @@ class InertiaRelief(Load):
 
         Returns
         -------
-            An InertiaRelief object.
+        An InertiaRelief object.
         """
         super().__init__()
         pass

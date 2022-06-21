@@ -60,7 +60,7 @@ class JobSession(SessionBase):
 
         Returns
         -------
-            A Queue object.
+        A Queue object.
 
         Raises
         ------

@@ -355,7 +355,7 @@ class SteadyStateSubspaceStep(AnalysisStep):
 
         Returns
         -------
-            A SteadyStateSubspaceStep object.
+        A SteadyStateSubspaceStep object.
 
         Raises
         ------

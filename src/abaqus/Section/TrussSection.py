@@ -45,7 +45,7 @@ class TrussSection(Section):
 
         Returns
         -------
-            A TrussSection object.
+        A TrussSection object.
 
         Raises
         ------

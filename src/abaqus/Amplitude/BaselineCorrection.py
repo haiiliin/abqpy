@@ -39,7 +39,7 @@ class BaselineCorrection:
 
         Returns
         -------
-            A BaselineCorrection object.
+        A BaselineCorrection object.
 
         Raises
         ------

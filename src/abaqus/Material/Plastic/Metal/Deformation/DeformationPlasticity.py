@@ -50,7 +50,7 @@ class DeformationPlasticity:
 
         Returns
         -------
-            A DeformationPlasticity object.
+        A DeformationPlasticity object.
 
         Raises
         ------

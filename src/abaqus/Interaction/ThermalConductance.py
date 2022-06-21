@@ -100,7 +100,7 @@ class ThermalConductance:
 
         Returns
         -------
-            A ThermalConductance object.
+        A ThermalConductance object.
         """
         pass
 

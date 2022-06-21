@@ -45,7 +45,7 @@ class HomogeneousSolidSection(SolidSection):
 
         Returns
         -------
-            A HomogeneousSolidSection object.
+        A HomogeneousSolidSection object.
 
         Raises
         ------

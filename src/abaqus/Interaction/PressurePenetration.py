@@ -110,7 +110,7 @@ class PressurePenetration(Interaction):
 
         Returns
         -------
-            A PressurePenetration object.
+        A PressurePenetration object.
         """
         super().__init__()
         pass

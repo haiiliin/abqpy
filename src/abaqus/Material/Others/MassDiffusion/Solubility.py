@@ -53,7 +53,7 @@ class Solubility:
 
         Returns
         -------
-            A Solubility object.
+        A Solubility object.
 
         Raises
         ------

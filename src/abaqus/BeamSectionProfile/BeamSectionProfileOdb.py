@@ -47,7 +47,7 @@ class BeamSectionProfileOdb(OdbBase):
 
         Returns
         -------
-            An ArbitraryProfile object.
+        An ArbitraryProfile object.
 
         Raises
         ------
@@ -106,7 +106,7 @@ class BeamSectionProfileOdb(OdbBase):
 
         Returns
         -------
-            A BoxProfile object.
+        A BoxProfile object.
 
         Raises
         ------
@@ -141,7 +141,7 @@ class BeamSectionProfileOdb(OdbBase):
 
         Returns
         -------
-            A CircularProfile object.
+        A CircularProfile object.
 
         Raises
         ------
@@ -194,7 +194,7 @@ class BeamSectionProfileOdb(OdbBase):
 
         Returns
         -------
-            A GeneralizedProfile object.
+        A GeneralizedProfile object.
 
         Raises
         ------
@@ -232,7 +232,7 @@ class BeamSectionProfileOdb(OdbBase):
 
         Returns
         -------
-            A HexagonalProfile object.
+        A HexagonalProfile object.
 
         Raises
         ------
@@ -287,7 +287,7 @@ class BeamSectionProfileOdb(OdbBase):
 
         Returns
         -------
-            An IProfile object.
+        An IProfile object.
 
         Raises
         ------
@@ -328,7 +328,7 @@ class BeamSectionProfileOdb(OdbBase):
 
         Returns
         -------
-            A LProfile object.
+        A LProfile object.
 
         Raises
         ------
@@ -363,7 +363,7 @@ class BeamSectionProfileOdb(OdbBase):
 
         Returns
         -------
-            A PipeProfile object.
+        A PipeProfile object.
 
         Raises
         ------
@@ -398,7 +398,7 @@ class BeamSectionProfileOdb(OdbBase):
 
         Returns
         -------
-            A RectangularProfile object.
+        A RectangularProfile object.
 
         Raises
         ------
@@ -444,7 +444,7 @@ class BeamSectionProfileOdb(OdbBase):
 
         Returns
         -------
-            A TProfile object.
+        A TProfile object.
 
         Raises
         ------
@@ -485,7 +485,7 @@ class BeamSectionProfileOdb(OdbBase):
 
         Returns
         -------
-            A TrapezoidalProfile object.
+        A TrapezoidalProfile object.
 
         Raises
         ------

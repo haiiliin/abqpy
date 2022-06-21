@@ -37,7 +37,7 @@ class UserOutputVariables:
 
         Returns
         -------
-            A UserOutputVariables object.
+        A UserOutputVariables object.
 
         Raises
         ------

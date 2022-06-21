@@ -104,7 +104,7 @@ class ModelInstance:
 
         Returns
         -------
-            A ModelInstance object.
+        A ModelInstance object.
         """
         pass
 

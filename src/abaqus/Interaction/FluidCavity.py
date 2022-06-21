@@ -70,7 +70,7 @@ class FluidCavity(Interaction):
 
         Returns
         -------
-            A FluidCavity object.
+        A FluidCavity object.
         """
         super().__init__()
         pass

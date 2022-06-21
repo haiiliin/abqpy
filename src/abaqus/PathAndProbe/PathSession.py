@@ -94,7 +94,7 @@ class PathSession(SessionBase):
 
         Returns
         -------
-            A Path object.
+        A Path object.
 
         Raises
         ------
@@ -139,7 +139,7 @@ class PathSession(SessionBase):
 
         Returns
         -------
-            A Spectrum object.
+        A Spectrum object.
         """
         self.spectrums[name] = spectrum = Spectrum(name, colors)
         return spectrum
@@ -179,7 +179,7 @@ class PathSession(SessionBase):
 
         Returns
         -------
-            A Stream object.
+        A Stream object.
         """
         self.streams[name] = stream = Stream(
             name, numPointsOnRake, pointA, pointB, path

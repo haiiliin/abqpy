@@ -39,7 +39,7 @@ class AcisMdb(MdbBase):
 
         Returns
         -------
-            An AcisFile object.
+        An AcisFile object.
 
         Raises
         ------
@@ -88,7 +88,7 @@ class AcisMdb(MdbBase):
 
         Returns
         -------
-            An AcisFile object.
+        An AcisFile object.
         """
         return AcisFile()
 
@@ -132,7 +132,7 @@ class AcisMdb(MdbBase):
 
         Returns
         -------
-            An AcisFile object.
+        An AcisFile object.
         """
         return AcisFile()
 
@@ -192,7 +192,7 @@ class AcisMdb(MdbBase):
 
         Returns
         -------
-            An AcisFile object.
+        An AcisFile object.
 
         Raises
         ------
@@ -227,7 +227,7 @@ class AcisMdb(MdbBase):
 
         Returns
         -------
-            An AcisFile object.
+        An AcisFile object.
         """
         return AcisFile()
 
@@ -254,7 +254,7 @@ class AcisMdb(MdbBase):
 
         Returns
         -------
-            An AcisFile object.
+        An AcisFile object.
 
         Raises
         ------
@@ -283,7 +283,7 @@ class AcisMdb(MdbBase):
 
         Returns
         -------
-            An AcisFile object.
+        An AcisFile object.
 
         Raises
         ------

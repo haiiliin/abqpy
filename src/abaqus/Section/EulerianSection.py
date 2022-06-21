@@ -43,7 +43,7 @@ class EulerianSection(Section):
 
         Returns
         -------
-            An EulerianSection object.
+        An EulerianSection object.
         """
         super().__init__()
         pass

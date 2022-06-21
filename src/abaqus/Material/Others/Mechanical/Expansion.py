@@ -93,7 +93,7 @@ class Expansion:
 
         Returns
         -------
-            An Expansion object.
+        An Expansion object.
 
         Raises
         ------

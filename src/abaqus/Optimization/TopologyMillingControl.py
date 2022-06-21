@@ -62,7 +62,7 @@ class TopologyMillingControl(GeometricRestriction):
 
         Returns
         -------
-            A TopologyMillingControl object.
+        A TopologyMillingControl object.
         """
         super().__init__()
         pass

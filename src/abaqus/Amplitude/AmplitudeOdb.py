@@ -51,7 +51,7 @@ class AmplitudeOdb(OdbBase):
 
         Returns
         -------
-            An ActuatorAmplitude object.
+        An ActuatorAmplitude object.
 
         Raises
         ------
@@ -99,7 +99,7 @@ class AmplitudeOdb(OdbBase):
 
         Returns
         -------
-            A DecayAmplitude object.
+        A DecayAmplitude object.
 
         Raises
         ------
@@ -154,7 +154,7 @@ class AmplitudeOdb(OdbBase):
 
         Returns
         -------
-            An EquallySpacedAmplitude object.
+        An EquallySpacedAmplitude object.
 
         Raises
         ------
@@ -209,7 +209,7 @@ class AmplitudeOdb(OdbBase):
 
         Returns
         -------
-            A ModulatedAmplitude object.
+        A ModulatedAmplitude object.
 
         Raises
         ------
@@ -259,7 +259,7 @@ class AmplitudeOdb(OdbBase):
 
         Returns
         -------
-            A PeriodicAmplitude object.
+        A PeriodicAmplitude object.
 
         Raises
         ------
@@ -325,7 +325,7 @@ class AmplitudeOdb(OdbBase):
 
         Returns
         -------
-            A PsdDefinition object.
+        A PsdDefinition object.
 
         Raises
         ------
@@ -371,7 +371,7 @@ class AmplitudeOdb(OdbBase):
 
         Returns
         -------
-            A SmoothStepAmplitude object.
+        A SmoothStepAmplitude object.
 
         Raises
         ------
@@ -419,7 +419,7 @@ class AmplitudeOdb(OdbBase):
 
         Returns
         -------
-            A SolutionDependentAmplitude object.
+        A SolutionDependentAmplitude object.
 
         Raises
         ------
@@ -499,7 +499,7 @@ class AmplitudeOdb(OdbBase):
 
         Returns
         -------
-            A SpectrumAmplitude object.
+        A SpectrumAmplitude object.
 
         Raises
         ------
@@ -557,7 +557,7 @@ class AmplitudeOdb(OdbBase):
 
         Returns
         -------
-            A TabularAmplitude object.
+        A TabularAmplitude object.
 
         Raises
         ------

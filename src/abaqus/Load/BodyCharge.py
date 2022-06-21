@@ -91,7 +91,7 @@ class BodyCharge(Load):
 
         Returns
         -------
-            A BodyCharge object.
+        A BodyCharge object.
         """
         super().__init__()
         pass

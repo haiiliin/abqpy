@@ -46,7 +46,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-            An AreaStyle object.
+        An AreaStyle object.
 
         Raises
         ------
@@ -91,7 +91,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-            A LineStyle object.
+        A LineStyle object.
 
         Raises
         ------
@@ -197,7 +197,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-            A QuantityType object.
+        A QuantityType object.
         """
         quantityType = QuantityType(label, type)
         return quantityType
@@ -251,7 +251,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-            A SymbolStyle object.
+        A SymbolStyle object.
 
         Raises
         ------
@@ -292,7 +292,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-            A TextStyle object.
+        A TextStyle object.
 
         Raises
         ------
@@ -362,7 +362,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-            An XYData object.
+        An XYData object.
         """
         pass
 
@@ -388,7 +388,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-            An XYData object.
+        An XYData object.
         """
         pass
 
@@ -467,7 +467,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-            An XYData object
+        An XYData object
         """
         self.xyDataObjects[name] = xyData = XYData(())
         return xyData
@@ -540,7 +540,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-            An XYData object
+        An XYData object
         """
         self.xyDataObjects[name] = xyData = XYData(())
         return xyData
@@ -635,7 +635,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-            A list of XYData objects
+        A list of XYData objects
         """
         self.xyDataObjects["name"] = xyData = XYData(())
         return [xyData]
@@ -689,7 +689,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-            A list of XYData objects
+        A list of XYData objects
         """
         self.xyDataObjects["name"] = xyData = XYData(())
         return [xyData]
@@ -802,8 +802,8 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-            If **variable** specified has one fieldoutput: Returns an XYData object.
-            If **variable** specified has more than one fieldoutputs: Returns list of XYData objects.
+        If **variable** specified has one fieldoutput: Returns an XYData object.
+        If **variable** specified has more than one fieldoutputs: Returns list of XYData objects.
 
         Raises
         ------

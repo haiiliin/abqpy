@@ -86,7 +86,7 @@ class ShapeRotationalSymmetry(GeometricRestriction):
 
         Returns
         -------
-            A ShapeRotationalSymmetry object.
+        A ShapeRotationalSymmetry object.
         """
         super().__init__()
         pass

@@ -51,7 +51,7 @@ class PenetrationCheck(GeometricRestriction):
 
         Returns
         -------
-            A PenetrationCheck object.
+        A PenetrationCheck object.
         """
         super().__init__()
         pass

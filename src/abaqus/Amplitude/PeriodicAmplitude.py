@@ -60,7 +60,7 @@ class PeriodicAmplitude(Amplitude):
 
         Returns
         -------
-            A PeriodicAmplitude object.
+        A PeriodicAmplitude object.
 
         Raises
         ------

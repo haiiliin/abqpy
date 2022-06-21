@@ -48,7 +48,7 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-            An AcousticImpedanceProp object.
+        An AcousticImpedanceProp object.
         """
         self.interactionProperties[name] = interactionProperty = AcousticImpedanceProp(
             name, tableType, table, frequencyDependency
@@ -81,7 +81,7 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-            An ActuatorSensorProp object.
+        An ActuatorSensorProp object.
         """
         self.interactionProperties[name] = interactionProperty = ActuatorSensorProp(
             name, realProperties, integerProperties
@@ -120,7 +120,7 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-            A CavityRadiationProp object.
+        A CavityRadiationProp object.
         """
         self.interactionProperties[name] = interactionProperty = CavityRadiationProp(
             name, temperatureDependency, dependencies, property
@@ -145,7 +145,7 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-            A ContactProperty object.
+        A ContactProperty object.
         """
         self.interactionProperties[name] = interactionProperty = ContactProperty(name)
         return interactionProperty
@@ -186,7 +186,7 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-            A FilmConditionProp object.
+        A FilmConditionProp object.
         """
         self.interactionProperties[name] = interactionProperty = FilmConditionProp(
             name, temperatureDependency, dependencies, property
@@ -324,7 +324,7 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-            A FluidCavityProperty object.
+        A FluidCavityProperty object.
         """
         self.interactionProperties[name] = interactionProperty = FluidCavityProperty(
             name,
@@ -440,7 +440,7 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-            A FluidExchangeProperty object.
+        A FluidExchangeProperty object.
         """
         self.interactionProperties[name] = interactionProperty = FluidExchangeProperty(
             name,
@@ -619,7 +619,7 @@ class InteractionPropertyModel(ModelBase):
 
         Returns
         -------
-            An IncidentWaveProperty object.
+        An IncidentWaveProperty object.
         """
         self.interactionProperties[name] = interactionProperty = IncidentWaveProperty(
             name,

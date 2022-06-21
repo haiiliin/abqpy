@@ -507,7 +507,7 @@ class StaticStep(AnalysisStep):
 
         Returns
         -------
-            A StaticStep object.
+        A StaticStep object.
 
         Raises
         ------

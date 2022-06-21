@@ -140,7 +140,7 @@ class ConnectorDamping(ConnectorBehaviorOption):
 
         Returns
         -------
-            A ConnectorDamping object.
+        A ConnectorDamping object.
 
         Raises
         ------

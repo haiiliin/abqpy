@@ -91,7 +91,7 @@ class SelfContactStd(Interaction):
 
         Returns
         -------
-            A SelfContactStd object.
+        A SelfContactStd object.
         """
         super().__init__()
         pass

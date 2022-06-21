@@ -87,7 +87,7 @@ class UniaxialTestData:
 
         Returns
         -------
-            A UniaxialTestData object.
+        A UniaxialTestData object.
         """
         pass
 

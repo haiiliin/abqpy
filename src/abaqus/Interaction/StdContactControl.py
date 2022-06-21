@@ -138,7 +138,7 @@ class StdContactControl(ContactControl):
 
         Returns
         -------
-            A StdContactControl object.
+        A StdContactControl object.
 
         Raises
         ------

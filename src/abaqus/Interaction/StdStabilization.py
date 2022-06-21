@@ -67,7 +67,7 @@ class StdStabilization(ContactStabilization):
 
         Returns
         -------
-            A StdStabilization object.
+        A StdStabilization object.
 
         Raises
         ------

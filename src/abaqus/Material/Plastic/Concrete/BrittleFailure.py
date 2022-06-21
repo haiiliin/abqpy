@@ -69,7 +69,7 @@ class BrittleFailure:
 
         Returns
         -------
-            A BrittleFailure object.
+        A BrittleFailure object.
 
         Raises
         ------

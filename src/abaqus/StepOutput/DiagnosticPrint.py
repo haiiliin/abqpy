@@ -90,7 +90,7 @@ class DiagnosticPrint:
 
         Returns
         -------
-            A DiagnosticPrint object.
+        A DiagnosticPrint object.
         """
         pass
 

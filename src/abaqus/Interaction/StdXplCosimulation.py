@@ -62,7 +62,7 @@ class StdXplCosimulation(Interaction):
 
         Returns
         -------
-            A StdXplCosimulation object.
+        A StdXplCosimulation object.
         """
         super().__init__()
         pass

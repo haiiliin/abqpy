@@ -482,7 +482,7 @@ class ViscoStep(AnalysisStep):
 
         Returns
         -------
-            A ViscoStep object.
+        A ViscoStep object.
 
         Raises
         ------

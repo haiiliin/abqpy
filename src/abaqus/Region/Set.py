@@ -179,7 +179,7 @@ class Set:
 
         Returns
         -------
-            A Set object.
+        A Set object.
         """
         pass
 
@@ -205,7 +205,7 @@ class Set:
 
         Returns
         -------
-            A Set object.
+        A Set object.
         """
         pass
 
@@ -240,7 +240,7 @@ class Set:
 
         Returns
         -------
-            A Set object.
+        A Set object.
         """
         pass
 
@@ -271,7 +271,7 @@ class Set:
 
         Returns
         -------
-            A Set object.
+        A Set object.
         """
         pass
 
@@ -298,7 +298,7 @@ class Set:
 
         Returns
         -------
-            A Set object.
+        A Set object.
         """
         pass
 
@@ -325,7 +325,7 @@ class Set:
 
         Returns
         -------
-            A Set object.
+        A Set object.
         """
         pass
 
@@ -357,6 +357,6 @@ class Set:
 
         Returns
         -------
-            A Set object or a tuple of Set objects.
+        A Set object or a tuple of Set objects.
         """
         pass

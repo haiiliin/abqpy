@@ -392,7 +392,7 @@ class ModelBase:
 
         Returns
         -------
-            A Model object.
+        A Model object.
         """
         self.steps["Initial"] = InitialStep()
 
@@ -419,7 +419,7 @@ class ModelBase:
 
         Returns
         -------
-            A Model object.
+        A Model object.
         """
         pass
 
@@ -446,7 +446,7 @@ class ModelBase:
 
         Returns
         -------
-            A Model object.
+        A Model object.
         """
         pass
 
@@ -534,7 +534,7 @@ class ModelBase:
 
         Returns
         -------
-            A Model object.
+        A Model object.
         """
         pass
 

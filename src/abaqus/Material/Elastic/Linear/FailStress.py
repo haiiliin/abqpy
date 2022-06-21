@@ -60,7 +60,7 @@ class FailStress:
 
         Returns
         -------
-            A FailStress object.
+        A FailStress object.
 
         Raises
         ------

@@ -27,7 +27,7 @@ class MeshEdge:
 
         Returns
         -------
-            A tuple of MeshElement objects.
+        A tuple of MeshElement objects.
         """
         pass
 
@@ -43,7 +43,7 @@ class MeshEdge:
 
         Returns
         -------
-            A MeshElementArray object, which is a sequence of MeshElement objects.
+        A MeshElementArray object, which is a sequence of MeshElement objects.
         """
         pass
 
@@ -59,7 +59,7 @@ class MeshEdge:
 
         Returns
         -------
-            A MeshNodeArray object, which is a sequence of MeshNode objects.
+        A MeshNodeArray object, which is a sequence of MeshNode objects.
         """
         pass
 
@@ -68,7 +68,7 @@ class MeshEdge:
 
         Returns
         -------
-            A tuple of MeshFace objects.
+        A tuple of MeshFace objects.
         """
         pass
 
@@ -77,6 +77,6 @@ class MeshEdge:
 
         Returns
         -------
-            A tuple of MeshNode objects.
+        A tuple of MeshNode objects.
         """
         pass

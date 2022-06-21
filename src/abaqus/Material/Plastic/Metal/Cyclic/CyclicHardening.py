@@ -63,7 +63,7 @@ class CyclicHardening:
 
         Returns
         -------
-            A CyclicHardening object.
+        A CyclicHardening object.
         """
         pass
 

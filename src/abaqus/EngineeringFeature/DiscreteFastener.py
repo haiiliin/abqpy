@@ -96,7 +96,7 @@ class DiscreteFastener(Fastener):
 
         Returns
         -------
-            A DiscreteFastener object.
+        A DiscreteFastener object.
         """
         super().__init__()
         pass

@@ -115,7 +115,7 @@ class MaterialFlowBC(BoundaryCondition):
 
         Returns
         -------
-            A MaterialFlowBC object.
+        A MaterialFlowBC object.
         """
         super().__init__()
         pass

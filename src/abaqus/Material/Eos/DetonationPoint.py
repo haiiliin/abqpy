@@ -45,7 +45,7 @@ class DetonationPoint:
 
         Returns
         -------
-            A DetonationPoint object.
+        A DetonationPoint object.
         """
         pass
 

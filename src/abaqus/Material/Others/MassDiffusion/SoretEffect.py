@@ -54,7 +54,7 @@ class SoretEffect:
 
         Returns
         -------
-            A SoretEffect object.
+        A SoretEffect object.
 
         Raises
         ------

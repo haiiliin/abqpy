@@ -216,7 +216,7 @@ class ContactTangentialBehavior:
 
         Returns
         -------
-            A ContactTangentialBehavior object.
+        A ContactTangentialBehavior object.
         """
         pass
 

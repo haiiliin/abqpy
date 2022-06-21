@@ -69,7 +69,7 @@ class GeometricProperties:
 
         Returns
         -------
-            A GeometricProperties object.
+        A GeometricProperties object.
         """
         pass
 

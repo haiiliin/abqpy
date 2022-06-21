@@ -37,7 +37,7 @@ class LoadStep(StepBase):
 
         Returns
         -------
-            A LoadCase object.
+        A LoadCase object.
 
         Raises
         ------

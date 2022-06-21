@@ -41,7 +41,7 @@ class TransverseShearShell:
 
         Returns
         -------
-            A TransverseShearShell object.
+        A TransverseShearShell object.
         """
         pass
 

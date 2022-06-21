@@ -74,7 +74,7 @@ class SymbolStyle:
 
         Returns
         -------
-            A SymbolStyle object.
+        A SymbolStyle object.
 
         Raises
         ------

@@ -140,7 +140,7 @@ class OutputModel(ModelBase):
 
         Returns
         -------
-            A FieldOutputRequest object.
+        A FieldOutputRequest object.
         """
         self.fieldOutputRequests[name] = FieldOutputRequest(
             name,
@@ -291,7 +291,7 @@ class OutputModel(ModelBase):
 
         Returns
         -------
-            A HistoryOutputRequest object.
+        A HistoryOutputRequest object.
         """
         self.historyOutputRequests[name] = HistoryOutputRequest(
             name,
@@ -377,7 +377,7 @@ class OutputModel(ModelBase):
 
         Returns
         -------
-            An IntegratedOutputSection object.
+        An IntegratedOutputSection object.
         """
         self.integratedOutputSections[
             name
@@ -413,7 +413,7 @@ class OutputModel(ModelBase):
 
         Returns
         -------
-            A TimePoint object.
+        A TimePoint object.
 
         Raises
         ------

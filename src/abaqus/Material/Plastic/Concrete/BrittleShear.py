@@ -72,7 +72,7 @@ class BrittleShear:
 
         Returns
         -------
-            A BrittleShear object.
+        A BrittleShear object.
 
         Raises
         ------

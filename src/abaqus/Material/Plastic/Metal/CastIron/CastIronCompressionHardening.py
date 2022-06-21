@@ -54,7 +54,7 @@ class CastIronCompressionHardening:
 
         Returns
         -------
-            A CastIronCompressionHardening object. 
+        A CastIronCompressionHardening object. 
 
         Raises
         ------

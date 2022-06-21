@@ -110,7 +110,7 @@ class FieldOutput:
 
         Returns
         -------
-            A FieldOutput object.
+        A FieldOutput object.
         """
         pass
 
@@ -139,7 +139,7 @@ class FieldOutput:
 
         Returns
         -------
-            A FieldOutput object.
+        A FieldOutput object.
         """
         pass
 
@@ -311,7 +311,7 @@ class FieldOutput:
 
         Returns
         -------
-            AFieldOutput object.
+        AFieldOutput object.
         """
         pass
 
@@ -330,7 +330,7 @@ class FieldOutput:
 
         Returns
         -------
-            A FieldOutput object.
+        A FieldOutput object.
         """
         pass
 
@@ -366,7 +366,7 @@ class FieldOutput:
 
         Returns
         -------
-            A FieldOutput object.
+        A FieldOutput object.
         """
         pass
 
@@ -382,7 +382,7 @@ class FieldOutput:
 
         Returns
         -------
-            A FieldOutput object.
+        A FieldOutput object.
         """
         pass
 
@@ -398,7 +398,7 @@ class FieldOutput:
 
         Returns
         -------
-            A FieldOutput object.
+        A FieldOutput object.
         """
         pass
 
@@ -413,7 +413,7 @@ class FieldOutput:
 
         Returns
         -------
-            A FieldOutput object.
+        A FieldOutput object.
         """
         pass
 
@@ -428,7 +428,7 @@ class FieldOutput:
 
         Returns
         -------
-            A FieldOutput object.
+        A FieldOutput object.
         """
         pass
 
@@ -443,7 +443,7 @@ class FieldOutput:
 
         Returns
         -------
-            A FieldOutput object.
+        A FieldOutput object.
         """
         pass
 
@@ -458,7 +458,7 @@ class FieldOutput:
 
         Returns
         -------
-            A FieldOutput object.
+        A FieldOutput object.
         """
         pass
 
@@ -473,7 +473,7 @@ class FieldOutput:
 
         Returns
         -------
-            A FieldOutput object.
+        A FieldOutput object.
         """
         pass
 
@@ -489,7 +489,7 @@ class FieldOutput:
 
         Returns
         -------
-            A FieldOutput object.
+        A FieldOutput object.
         """
         pass
 
@@ -524,7 +524,7 @@ class FieldOutput:
 
         Returns
         -------
-            A FieldOutput object.
+        A FieldOutput object.
 
         Raises
         ------
@@ -569,7 +569,7 @@ class FieldOutput:
 
         Returns
         -------
-            A FieldOutput object.
+        A FieldOutput object.
 
         Raises
         ------
@@ -619,7 +619,7 @@ class FieldOutput:
 
         Returns
         -------
-            A FieldOutput object.
+        A FieldOutput object.
 
         Raises
         ------
@@ -647,7 +647,7 @@ class FieldOutput:
 
         Returns
         -------
-            A FieldOutput object.
+        A FieldOutput object.
 
         Raises
         ------

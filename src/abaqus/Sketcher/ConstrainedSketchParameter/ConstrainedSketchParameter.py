@@ -63,7 +63,7 @@ class ConstrainedSketchParameter:
 
         Returns
         -------
-            A ConstrainedSketchParameter object.
+        A ConstrainedSketchParameter object.
 
         """
         pass

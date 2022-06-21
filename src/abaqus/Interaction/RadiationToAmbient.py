@@ -76,7 +76,7 @@ class RadiationToAmbient(Interaction):
 
         Returns
         -------
-            A RadiationToAmbient object.
+        A RadiationToAmbient object.
         """
         super().__init__()
         pass

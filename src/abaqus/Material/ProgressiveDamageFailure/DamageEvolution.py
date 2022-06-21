@@ -226,7 +226,7 @@ class DamageEvolution:
 
         Returns
         -------
-            A DamageEvolution object. 
+        A DamageEvolution object. 
 
         Raises
         ------

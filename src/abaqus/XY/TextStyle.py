@@ -74,7 +74,7 @@ class TextStyle:
 
         Returns
         -------
-            A TextStyle object.
+        A TextStyle object.
 
         Raises
         ------

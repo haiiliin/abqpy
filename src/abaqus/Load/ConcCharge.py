@@ -91,7 +91,7 @@ class ConcCharge(Load):
 
         Returns
         -------
-            A ConcCharge object.
+        A ConcCharge object.
         """
         super().__init__()
         pass

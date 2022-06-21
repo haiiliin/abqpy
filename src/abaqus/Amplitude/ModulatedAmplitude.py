@@ -65,7 +65,7 @@ class ModulatedAmplitude(Amplitude):
 
         Returns
         -------
-            A ModulatedAmplitude object.
+        A ModulatedAmplitude object.
 
         Raises
         ------

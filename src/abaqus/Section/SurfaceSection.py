@@ -56,7 +56,7 @@ class SurfaceSection(Section):
 
         Returns
         -------
-            A SurfaceSection object.
+        A SurfaceSection object.
 
         Raises
         ------

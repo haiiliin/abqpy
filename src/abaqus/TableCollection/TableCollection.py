@@ -57,7 +57,7 @@ class TableCollection:
 
         Returns
         -------
-            A TableCollection object.
+        A TableCollection object.
         """
         pass
 
@@ -79,7 +79,7 @@ class TableCollection:
 
         Returns
         -------
-            A DataTable object.
+        A DataTable object.
 
         Raises
         ------
@@ -108,7 +108,7 @@ class TableCollection:
 
         Returns
         -------
-            A ParameterTable object.
+        A ParameterTable object.
         """
         self.parameterTables[name] = parameterTable = ParameterTable(name)
         return parameterTable
@@ -138,7 +138,7 @@ class TableCollection:
 
         Returns
         -------
-            A PropertyTable object.
+        A PropertyTable object.
 
         Raises
         ------

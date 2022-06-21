@@ -474,7 +474,7 @@ class MaterialBase:
 
         Returns
         -------
-            A Material object.
+        A Material object.
         """
         self.name, self.description, self.materialIdentifier = (
             name,
@@ -504,6 +504,6 @@ class MaterialBase:
 
         Returns
         -------
-            A list of Material objects.
+        A list of Material objects.
         """
         pass

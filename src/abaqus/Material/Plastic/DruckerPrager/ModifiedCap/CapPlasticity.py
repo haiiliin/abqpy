@@ -73,7 +73,7 @@ class CapPlasticity:
 
         Returns
         -------
-            A CapPlasticity object.
+        A CapPlasticity object.
 
         Raises
         ------

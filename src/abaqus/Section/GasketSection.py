@@ -72,7 +72,7 @@ class GasketSection(Section):
 
         Returns
         -------
-            A GasketSection object.  and ValueError.
+        A GasketSection object.  and ValueError.
         """
         super().__init__()
         pass

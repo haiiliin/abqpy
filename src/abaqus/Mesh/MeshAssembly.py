@@ -503,8 +503,8 @@ class MeshAssembly(AssemblyBase):
 
         Returns
         -------
-            The return value is a Float, an Int, or a SymbolicConstant depending on the value of the
-            **attribute** argument.
+        The return value is a Float, an Int, or a SymbolicConstant depending on the value of the
+        **attribute** argument.
         """
         pass
 
@@ -522,7 +522,7 @@ class MeshAssembly(AssemblyBase):
 
         Returns
         -------
-            ElemType object.
+        ElemType object.
 
         Raises
         ------
@@ -543,7 +543,7 @@ class MeshAssembly(AssemblyBase):
 
         Returns
         -------
-            A sequence of Face objects.
+        A sequence of Face objects.
         """
         pass
 
@@ -603,8 +603,8 @@ class MeshAssembly(AssemblyBase):
 
         Returns
         -------
-            The return value is a SymbolicConstant or a Boolean depending on the value of the
-            **attribute** argument.
+        The return value is a SymbolicConstant or a Boolean depending on the value of the
+        **attribute** argument.
 
         Raises
         ------
@@ -624,7 +624,7 @@ class MeshAssembly(AssemblyBase):
 
         Returns
         -------
-            A MeshStats object.
+        A MeshStats object.
         """
         pass
 
@@ -661,7 +661,7 @@ class MeshAssembly(AssemblyBase):
 
         Returns
         -------
-            The return value is a Float, and its value is dependent on the **attribute** argument.
+        The return value is a Float, and its value is dependent on the **attribute** argument.
 
         Raises
         ------
@@ -676,7 +676,7 @@ class MeshAssembly(AssemblyBase):
 
         Returns
         -------
-            A Region object, or None.
+        A Region object, or None.
         """
         pass
 
@@ -1113,8 +1113,8 @@ class MeshAssembly(AssemblyBase):
 
         Returns
         -------
-            A Dictionary object containing values for some number of the following keys:
-            failedElements, warningElements, naElements (sequences of MeshElement objects);
-            numElements (Int); average, worst (Float); worstElement (MeshElement object) .
+        A Dictionary object containing values for some number of the following keys:
+        failedElements, warningElements, naElements (sequences of MeshElement objects);
+        numElements (Int); average, worst (Float); worstElement (MeshElement object) .
         """
         pass

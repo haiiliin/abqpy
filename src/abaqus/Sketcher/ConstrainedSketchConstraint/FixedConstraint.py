@@ -26,7 +26,7 @@ class FixedConstraint(ConstrainedSketchConstraint):
 
         Returns
         -------
-            A ConstrainedSketchConstraint object.
+        A ConstrainedSketchConstraint object.
 
         """
         pass

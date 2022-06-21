@@ -77,7 +77,7 @@ class Sorption:
 
         Returns
         -------
-            A Sorption object.
+        A Sorption object.
 
         Raises
         ------

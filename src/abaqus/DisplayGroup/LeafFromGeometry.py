@@ -53,7 +53,7 @@ class LeafFromGeometry(Leaf):
 
         Returns
         -------
-            A LeafFromGeometry object.
+        A LeafFromGeometry object.
 
         Raises
         ------

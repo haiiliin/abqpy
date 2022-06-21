@@ -48,7 +48,7 @@ class EosCompaction:
 
         Returns
         -------
-            An EosCompaction object.
+        An EosCompaction object.
 
         Raises
         ------

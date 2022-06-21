@@ -25,7 +25,7 @@ class ArcByStartEndTangent(ConstrainedSketchGeometry):
 
         Returns
         -------
-            A ConstrainedSketchGeometry object (None if the arc cannot be created).
+        A ConstrainedSketchGeometry object (None if the arc cannot be created).
 
         """
         pass

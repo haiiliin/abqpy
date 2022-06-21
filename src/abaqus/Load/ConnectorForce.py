@@ -110,7 +110,7 @@ class ConnectorForce(Load):
 
         Returns
         -------
-            A ConnectorForce object.
+        A ConnectorForce object.
         """
         super().__init__()
         pass

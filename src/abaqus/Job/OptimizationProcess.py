@@ -80,7 +80,7 @@ class OptimizationProcess:
 
         Returns
         -------
-            An OptimizationProcess object.
+        An OptimizationProcess object.
 
         Raises
         ------

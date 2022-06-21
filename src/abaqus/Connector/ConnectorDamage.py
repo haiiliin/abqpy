@@ -241,7 +241,7 @@ class ConnectorDamage(ConnectorBehaviorOption):
 
         Returns
         -------
-            A ConnectorDamage object.
+        A ConnectorDamage object.
 
         Raises
         ------

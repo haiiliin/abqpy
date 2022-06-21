@@ -55,7 +55,7 @@ class OdbInstance(OdbInstanceBase):
 
         Returns
         -------
-            An OdbRigidBody object.
+        An OdbRigidBody object.
         """
         odbRigidBody = OdbRigidBody(
             referenceNode,
@@ -94,7 +94,7 @@ class OdbInstance(OdbInstanceBase):
 
         Returns
         -------
-            An OdbSet object.
+        An OdbSet object.
         """
         self.nodeSets[name] = odbSet = OdbSet(name, nodes)
         return odbSet

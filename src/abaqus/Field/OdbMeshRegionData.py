@@ -388,7 +388,7 @@ class OdbMeshRegionData:
 
         Returns
         -------
-            An OdbMeshRegionData object.
+        An OdbMeshRegionData object.
 
         Raises
         ------

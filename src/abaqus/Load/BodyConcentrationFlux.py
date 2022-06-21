@@ -92,7 +92,7 @@ class BodyConcentrationFlux(Load):
 
         Returns
         -------
-            A BodyConcentrationFlux object.
+        A BodyConcentrationFlux object.
         """
         super().__init__()
         pass

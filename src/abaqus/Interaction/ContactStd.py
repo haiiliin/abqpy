@@ -212,7 +212,7 @@ class ContactStd(Interaction):
 
         Returns
         -------
-            A ContactStd object.
+        A ContactStd object.
         """
         super().__init__()
         pass
@@ -338,7 +338,7 @@ class ContactStd(Interaction):
 
         Returns
         -------
-            A ContactStd object.
+        A ContactStd object.
         """
         super().__init__()
         pass

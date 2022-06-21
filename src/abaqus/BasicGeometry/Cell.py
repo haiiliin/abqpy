@@ -71,7 +71,7 @@ class Cell:
 
         Returns
         -------
-            A Float.
+        A Float.
 
         """
         pass
@@ -82,7 +82,7 @@ class Cell:
 
         Returns
         -------
-            A tuple of integers.
+        A tuple of integers.
 
         """
         pass
@@ -92,7 +92,7 @@ class Cell:
 
         Returns
         -------
-            A tuple of integers.
+        A tuple of integers.
 
         """
         pass
@@ -102,7 +102,7 @@ class Cell:
 
         Returns
         -------
-            A tuple of integers.
+        A tuple of integers.
 
         """
         pass
@@ -112,7 +112,7 @@ class Cell:
 
         Returns
         -------
-            A CellArray object which is a sequence of Cell objects.
+        A CellArray object which is a sequence of Cell objects.
 
         """
         pass
@@ -122,7 +122,7 @@ class Cell:
 
         Returns
         -------
-            A MeshNodeArray object which is a sequence of MeshNode objects.
+        A MeshNodeArray object which is a sequence of MeshNode objects.
 
         """
         pass
@@ -132,7 +132,7 @@ class Cell:
 
         Returns
         -------
-            A MeshElementArray object which is a sequence of MeshElement objects.
+        A MeshElementArray object which is a sequence of MeshElement objects.
 
         """
         pass
@@ -143,7 +143,7 @@ class Cell:
 
         Returns
         -------
-            An array of String.
+        An array of String.
 
         """
         pass

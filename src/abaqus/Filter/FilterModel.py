@@ -67,7 +67,7 @@ class FilterModel(ModelBase):
 
         Returns
         -------
-            A ButterworthFilter object.
+        A ButterworthFilter object.
 
         Raises
         ------
@@ -132,7 +132,7 @@ class FilterModel(ModelBase):
 
         Returns
         -------
-            A Chebyshev1Filter object.
+        A Chebyshev1Filter object.
 
         Raises
         ------
@@ -204,7 +204,7 @@ class FilterModel(ModelBase):
 
         Returns
         -------
-            A Chebyshev2Filter object.
+        A Chebyshev2Filter object.
 
         Raises
         ------
@@ -272,7 +272,7 @@ class FilterModel(ModelBase):
 
         Returns
         -------
-            An OperatorFilter object.
+        An OperatorFilter object.
 
         Raises
         ------

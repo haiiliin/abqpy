@@ -90,7 +90,7 @@ class AnimationSession(SessionBase):
 
         Returns
         -------
-            A Movie object.
+        A Movie object.
 
         Raises
         ------

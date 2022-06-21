@@ -131,7 +131,7 @@ class Moment(Load):
 
         Returns
         -------
-            A Moment object.
+        A Moment object.
         """
         super().__init__()
         pass

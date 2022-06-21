@@ -112,7 +112,7 @@ class LineLoad(Load):
 
         Returns
         -------
-            A LineLoad object.
+        A LineLoad object.
         """
         super().__init__()
         pass

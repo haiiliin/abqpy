@@ -40,7 +40,7 @@ class Depvar:
 
         Returns
         -------
-            A Depvar object.
+        A Depvar object.
 
         Raises
         ------

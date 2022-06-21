@@ -334,7 +334,7 @@ class ModalDynamicsStep(AnalysisStep):
 
         Returns
         -------
-            A ModalDynamicsStep object.
+        A ModalDynamicsStep object.
 
         Raises
         ------

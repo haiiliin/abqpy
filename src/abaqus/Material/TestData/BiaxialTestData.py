@@ -67,7 +67,7 @@ class BiaxialTestData:
 
         Returns
         -------
-            A BiaxialTestData object.
+        A BiaxialTestData object.
         """
         pass
 

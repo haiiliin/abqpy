@@ -219,7 +219,7 @@ class Hyperelastic:
 
         Returns
         -------
-            A Hyperelastic object.
+        A Hyperelastic object.
 
         Raises
         ------

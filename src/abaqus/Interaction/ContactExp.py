@@ -163,7 +163,7 @@ class ContactExp(Interaction):
 
         Returns
         -------
-            A ContactExp object.
+        A ContactExp object.
         """
         super().__init__()
         pass
@@ -266,7 +266,7 @@ class ContactExp(Interaction):
 
         Returns
         -------
-            A ContactExp object.
+        A ContactExp object.
         """
         super().__init__()
         pass

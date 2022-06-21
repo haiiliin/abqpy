@@ -135,7 +135,7 @@ class RotationalBodyForce(Load):
 
         Returns
         -------
-            A RotationalBodyForce object.
+        A RotationalBodyForce object.
         """
         super().__init__()
         pass

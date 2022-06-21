@@ -44,7 +44,7 @@ class Hysteresis:
 
         Returns
         -------
-            A Hysteresis object.
+        A Hysteresis object.
 
         Raises
         ------

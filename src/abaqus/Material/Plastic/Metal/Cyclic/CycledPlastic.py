@@ -48,7 +48,7 @@ class CycledPlastic:
 
         Returns
         -------
-            A CycledPlastic object.
+        A CycledPlastic object.
         """
         pass
 

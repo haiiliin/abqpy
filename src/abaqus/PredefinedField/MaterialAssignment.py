@@ -79,7 +79,7 @@ class MaterialAssignment(PredefinedField):
 
         Returns
         -------
-            A MaterialAssignment object.
+        A MaterialAssignment object.
         """
         super().__init__()
         pass

@@ -148,7 +148,7 @@ class QuantityType:
 
         Returns
         -------
-            A QuantityType object.
+        A QuantityType object.
         """
         pass
 

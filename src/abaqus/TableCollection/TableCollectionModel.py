@@ -60,7 +60,7 @@ class TableCollectionModel(ModelBase):
 
         Returns
         -------
-            An EventSeries object.
+        An EventSeries object.
 
         Raises
         ------
@@ -102,7 +102,7 @@ class TableCollectionModel(ModelBase):
 
         Returns
         -------
-            A EventSeriesType object.
+        A EventSeriesType object.
 
         Raises
         ------

@@ -251,7 +251,7 @@ class EmagTimeHarmonicStep(AnalysisStep):
 
         Returns
         -------
-            An EmagTimeHarmonicStep object.
+        An EmagTimeHarmonicStep object.
 
         Raises
         ------

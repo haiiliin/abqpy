@@ -88,7 +88,7 @@ class CapCreepCohesion:
 
         Returns
         -------
-            A CapCreepCohesion object.
+        A CapCreepCohesion object.
         """
         pass
 

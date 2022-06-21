@@ -47,7 +47,7 @@ class LeafFromInstance(Leaf):
 
         Returns
         -------
-            A LeafFromInstance object.
+        A LeafFromInstance object.
 
         Raises
         ------

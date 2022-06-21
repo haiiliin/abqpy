@@ -90,7 +90,7 @@ class CohesiveBehavior:
 
         Returns
         -------
-            A CohesiveBehavior object.
+        A CohesiveBehavior object.
         """
         pass
 

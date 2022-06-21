@@ -161,7 +161,7 @@ class ConnAccelerationBC(BoundaryCondition):
 
         Returns
         -------
-            A ConnAccelerationBC object.
+        A ConnAccelerationBC object.
         """
         super().__init__()
         pass

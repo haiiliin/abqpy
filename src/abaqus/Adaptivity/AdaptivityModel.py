@@ -35,7 +35,7 @@ class AdaptivityModel(ModelBase):
 
         Returns
         -------
-            An AdaptivityIteration object.
+        An AdaptivityIteration object.
         """
         pass
 
@@ -160,7 +160,7 @@ class AdaptivityModel(ModelBase):
 
         Returns
         -------
-            An AdaptiveMeshControl object
+        An AdaptiveMeshControl object
         """
         self.adaptiveMeshControls[name] = adaptiveMeshControl = AdaptiveMeshControl(
             name,
@@ -254,7 +254,7 @@ class AdaptivityModel(ModelBase):
 
         Returns
         -------
-            A DisplacementAdaptiveMeshConstraint object
+        A DisplacementAdaptiveMeshConstraint object
         """
         self.adaptiveMeshConstraints[
             name
@@ -375,7 +375,7 @@ class AdaptivityModel(ModelBase):
 
         Returns
         -------
-            A RemeshingRule object
+        A RemeshingRule object
         """
         self.remeshingRules[name] = remeshingRule = RemeshingRule(
             name,
@@ -472,7 +472,7 @@ class AdaptivityModel(ModelBase):
 
         Returns
         -------
-            A VelocityAdaptiveMeshConstraint object
+        A VelocityAdaptiveMeshConstraint object
         """
         self.adaptiveMeshConstraints[
             name

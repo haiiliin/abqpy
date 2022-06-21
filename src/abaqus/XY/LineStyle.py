@@ -100,7 +100,7 @@ class LineStyle:
 
         Returns
         -------
-            A LineStyle object.
+        A LineStyle object.
 
         Raises
         ------

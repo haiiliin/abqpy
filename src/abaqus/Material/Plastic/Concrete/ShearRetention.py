@@ -59,7 +59,7 @@ class ShearRetention:
 
         Returns
         -------
-            A ShearRetention object.
+        A ShearRetention object.
 
         Raises
         ------

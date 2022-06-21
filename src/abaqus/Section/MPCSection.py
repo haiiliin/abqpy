@@ -58,7 +58,7 @@ class MPCSection(Section):
 
         Returns
         -------
-            A MPCSection object.
+        A MPCSection object.
 
         Raises
         ------

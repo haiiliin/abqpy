@@ -91,7 +91,7 @@ class SpectrumAmplitude(Amplitude):
 
         Returns
         -------
-            A SpectrumAmplitude object.
+        A SpectrumAmplitude object.
 
         Raises
         ------

@@ -39,7 +39,7 @@ class MaterialOdb(OdbBase):
 
         Returns
         -------
-            A Material object.
+        A Material object.
         """
         self.materials[name] = material = Material(
             name, description, materialIdentifier

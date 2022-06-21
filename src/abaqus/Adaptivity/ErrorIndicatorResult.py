@@ -38,7 +38,7 @@ class ErrorIndicatorResult(RuleResult):
 
         Returns
         -------
-            An ErrorIndicatorResult object.
+        An ErrorIndicatorResult object.
 
         Raises
         ------

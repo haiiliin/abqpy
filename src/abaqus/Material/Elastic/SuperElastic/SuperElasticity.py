@@ -70,7 +70,7 @@ class SuperElasticity:
 
         Returns
         -------
-            A SuperElasticity object.
+        A SuperElasticity object.
 
         Raises
         ------

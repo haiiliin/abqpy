@@ -63,7 +63,7 @@ class CastIronPlasticity:
 
         Returns
         -------
-            A CastIronPlasticity object.
+        A CastIronPlasticity object.
 
         Raises
         ------

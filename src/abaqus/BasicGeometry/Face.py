@@ -78,9 +78,8 @@ class Face:
 
         Returns
         -------
-            A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the centroid of
-            the face.
-
+        A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the centroid of
+        the face.
         """
         pass
 
@@ -103,12 +102,11 @@ class Face:
 
         Returns
         -------
-            A dictionary with keys 'evaluationPoint', 'principalAxis1', 'principalAxis2',
-            'curvature1', 'curvature2' and 'gaussianCurvature'. Where the evaluationPoint specifies
-            the location at which the curvature was evaluated. 'principalAxis1' and 'principalAxis2'
-            refer to the vectors specifying the two principal axes of the face. 'curvature1' and
-            'curvature2' specify the curvatures along the two principal axes.
-
+        A dictionary with keys 'evaluationPoint', 'principalAxis1', 'principalAxis2',
+        'curvature1', 'curvature2' and 'gaussianCurvature'. Where the evaluationPoint specifies
+        the location at which the curvature was evaluated. 'principalAxis1' and 'principalAxis2'
+        refer to the vectors specifying the two principal axes of the face. 'curvature1' and
+        'curvature2' specify the curvatures along the two principal axes.
         """
         pass
 
@@ -117,7 +115,7 @@ class Face:
 
         Returns
         -------
-            A MeshElementArray object which is a sequence of MeshElement objects.
+        A MeshElementArray object which is a sequence of MeshElement objects.
 
         """
         pass
@@ -135,7 +133,7 @@ class Face:
 
         Returns
         -------
-            A MeshFaceArray object which is a sequence of MeshFace objects.
+        A MeshFaceArray object which is a sequence of MeshFace objects.
 
         """
         pass
@@ -155,7 +153,7 @@ class Face:
 
         Returns
         -------
-            A MeshNodeArray object which is a sequence of MeshNode objects.
+        A MeshNodeArray object which is a sequence of MeshNode objects.
 
         """
         pass
@@ -174,8 +172,8 @@ class Face:
 
         Returns
         -------
-            A sequence of Floats specifying the **X**-, **Y**-, and **Z**-components of the normal to the
-            face.
+        A sequence of Floats specifying the **X**-, **Y**-, and **Z**-components of the normal to the
+        face.
 
         Raises
         ------
@@ -194,7 +192,7 @@ class Face:
 
         Returns
         -------
-            A Float.
+        A Float.
 
         """
         pass
@@ -204,7 +202,7 @@ class Face:
 
         Returns
         -------
-            A tuple of integers.
+        A tuple of integers.
 
         """
         pass
@@ -214,7 +212,7 @@ class Face:
 
         Returns
         -------
-            A tuple of integers.
+        A tuple of integers.
 
         """
         pass
@@ -225,7 +223,7 @@ class Face:
 
         Returns
         -------
-            A tuple of integers.
+        A tuple of integers.
 
         """
         pass
@@ -235,7 +233,7 @@ class Face:
 
         Returns
         -------
-            A FaceArray object which is a sequence of Face objects.
+        A FaceArray object which is a sequence of Face objects.
 
         """
         pass
@@ -251,7 +249,7 @@ class Face:
 
         Returns
         -------
-            A FaceArray object, which is a sequence of Face objects.
+        A FaceArray object, which is a sequence of Face objects.
 
         """
         pass
@@ -262,7 +260,7 @@ class Face:
 
         Returns
         -------
-            A FaceArray object, which is a sequence of Face objects.
+        A FaceArray object, which is a sequence of Face objects.
 
         """
         pass
@@ -273,7 +271,7 @@ class Face:
 
         Returns
         -------
-            A Boolean value of True if the normal is flipped and False if not.
+        A Boolean value of True if the normal is flipped and False if not.
 
         """
         pass
@@ -284,7 +282,7 @@ class Face:
 
         Returns
         -------
-            An array of String .
+        An array of String .
 
         """
         pass

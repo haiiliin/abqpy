@@ -42,7 +42,7 @@ class VelocityDependence:
 
         Returns
         -------
-            A VelocityDependence object.
+        A VelocityDependence object.
 
         Raises
         ------

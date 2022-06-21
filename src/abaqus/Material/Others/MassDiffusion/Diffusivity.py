@@ -98,7 +98,7 @@ class Diffusivity:
 
         Returns
         -------
-            A Diffusivity object.
+        A Diffusivity object.
 
         Raises
         ------

@@ -413,7 +413,7 @@ class CoupledThermalElectricStep(AnalysisStep):
 
         Returns
         -------
-            A CoupledThermalElectricStep object.
+        A CoupledThermalElectricStep object.
 
         Raises
         ------

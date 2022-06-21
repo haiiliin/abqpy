@@ -72,7 +72,7 @@ class ConnectorFailure(ConnectorBehaviorOption):
 
         Returns
         -------
-            A ConnectorFailure object.
+        A ConnectorFailure object.
 
         Raises
         ------

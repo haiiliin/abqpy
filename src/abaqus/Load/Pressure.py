@@ -106,7 +106,7 @@ class Pressure(Load):
 
         Returns
         -------
-            A Pressure object.
+        A Pressure object.
         """
         super().__init__()
         pass

@@ -63,7 +63,7 @@ class FailureRatios:
 
         Returns
         -------
-            A FailureRatios object.
+        A FailureRatios object.
 
         Raises
         ------

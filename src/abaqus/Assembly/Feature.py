@@ -101,7 +101,7 @@ class Feature(FeatureBase):
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
         """
         return Feature()
 
@@ -129,7 +129,7 @@ class Feature(FeatureBase):
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -198,7 +198,7 @@ class Feature(FeatureBase):
 
         Returns
         -------
-            A Feature Object.
+        A Feature Object.
 
         Raises
         ------
@@ -237,7 +237,7 @@ class Feature(FeatureBase):
 
         Returns
         -------
-            A Feature Object.
+        A Feature Object.
 
         Raises
         ------
@@ -267,7 +267,7 @@ class Feature(FeatureBase):
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -302,7 +302,7 @@ class Feature(FeatureBase):
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -337,7 +337,7 @@ class Feature(FeatureBase):
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------

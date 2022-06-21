@@ -66,7 +66,7 @@ class Concrete:
 
         Returns
         -------
-            A Concrete object.
+        A Concrete object.
 
         Raises
         ------

@@ -63,7 +63,7 @@ class InitialState(PredefinedField):
 
         Returns
         -------
-            An InitialState object.
+        An InitialState object.
         """
         super().__init__()
         pass

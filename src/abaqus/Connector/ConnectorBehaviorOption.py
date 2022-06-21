@@ -140,7 +140,7 @@ class ConnectorBehaviorOption:
 
         Returns
         -------
-            A TangentialBehavior object.
+        A TangentialBehavior object.
         """
         self.tangentialBehavior = tangentialBehavior = TangentialBehavior(
             formulation,
@@ -171,7 +171,7 @@ class ConnectorBehaviorOption:
 
         Returns
         -------
-            A DerivedComponent object.
+        A DerivedComponent object.
 
         Raises
         ------
@@ -248,7 +248,7 @@ class ConnectorBehaviorOption:
 
         Returns
         -------
-            A ConnectorOptions object.
+        A ConnectorOptions object.
 
         Raises
         ------

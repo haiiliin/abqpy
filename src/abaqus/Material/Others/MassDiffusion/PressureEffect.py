@@ -54,7 +54,7 @@ class PressureEffect:
 
         Returns
         -------
-            A PressureEffect object.
+        A PressureEffect object.
 
         Raises
         ------

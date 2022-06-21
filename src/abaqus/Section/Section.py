@@ -42,7 +42,7 @@ class Section(ConnectorSection):
 
         Returns
         -------
-            A TransverseShearBeam object.
+        A TransverseShearBeam object.
         """
         self.beamTransverseShear = transverseShearBeam = TransverseShearBeam(
             scfDefinition, k23, k13, slendernessCompensation
@@ -74,7 +74,7 @@ class Section(ConnectorSection):
 
         Returns
         -------
-            A TransverseShearShell object.
+        A TransverseShearShell object.
         """
         self.transverseShear = transverseShearShell = TransverseShearShell(
             k11, k22, k12

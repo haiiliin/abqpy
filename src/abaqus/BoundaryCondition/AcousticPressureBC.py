@@ -115,7 +115,7 @@ class AcousticPressureBC(BoundaryCondition):
 
         Returns
         -------
-            An AcousticPressureBC object.
+        An AcousticPressureBC object.
         """
         super().__init__()
         pass

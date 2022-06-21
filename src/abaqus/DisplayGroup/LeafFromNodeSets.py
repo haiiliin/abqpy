@@ -46,7 +46,7 @@ class LeafFromNodeSets(Leaf):
 
         Returns
         -------
-            A LeafFromNodeSets object.
+        A LeafFromNodeSets object.
         """
         super().__init__(DEFAULT_MODEL)
         pass

@@ -83,7 +83,7 @@ class SurfaceCurrentDensity(Load):
 
         Returns
         -------
-            A SurfaceCurrentDensity object.
+        A SurfaceCurrentDensity object.
         """
         super().__init__()
         pass

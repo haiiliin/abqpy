@@ -48,7 +48,7 @@ class InteractionContactInitializationModel(ModelBase):
 
         Returns
         -------
-            A StdInitialization object.
+        A StdInitialization object.
 
         Raises
         ------

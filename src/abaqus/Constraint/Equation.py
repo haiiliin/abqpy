@@ -52,7 +52,7 @@ class Equation(Constraint):
 
         Returns
         -------
-            An Equation object.
+        An Equation object.
 
         Raises
         ------

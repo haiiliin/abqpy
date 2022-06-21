@@ -60,7 +60,7 @@ class HistoryRegion:
 
         Returns
         -------
-            A HistoryRegion object.
+        A HistoryRegion object.
         """
         pass
 
@@ -75,7 +75,7 @@ class HistoryRegion:
 
         Returns
         -------
-            A HistoryRegion object.
+        A HistoryRegion object.
         """
         pass
 
@@ -91,7 +91,7 @@ class HistoryRegion:
 
         Returns
         -------
-            A HistoryRegion object.
+        A HistoryRegion object.
         """
         pass
 
@@ -109,7 +109,7 @@ class HistoryRegion:
 
         Returns
         -------
-            A HistoryRegion object.
+        A HistoryRegion object.
         """
         pass
 
@@ -148,7 +148,7 @@ class HistoryRegion:
 
         Returns
         -------
-            A HistoryOutput object.
+        A HistoryOutput object.
         """
         self.historyOutputs[name] = historyOutput = HistoryOutput(
             name, description, type, validInvariants

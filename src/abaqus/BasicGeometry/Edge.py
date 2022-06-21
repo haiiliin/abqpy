@@ -77,7 +77,7 @@ class Edge:
 
         Returns
         -------
-            A Boolean value of True if the tangent is flipped and False if not.
+        A Boolean value of True if the tangent is flipped and False if not.
 
         """
         pass
@@ -97,10 +97,10 @@ class Edge:
 
         Returns
         -------
-            A dictionary with keys 'evaluationPoint', 'curvature', 'radius', and 'tangent', where
-            'evaluationPoint' specifies the location at which the curvature was computed;
-            'curvature' specifies the curvature vector at that location; 'radius' is the radius of
-            curvature; and 'tangent' specifies the tangent to the edge at that location.
+        A dictionary with keys 'evaluationPoint', 'curvature', 'radius', and 'tangent', where
+        'evaluationPoint' specifies the location at which the curvature was computed;
+        'curvature' specifies the curvature vector at that location; 'radius' is the radius of
+        curvature; and 'tangent' specifies the tangent to the edge at that location.
 
         Raises
         ------
@@ -114,7 +114,7 @@ class Edge:
 
         Returns
         -------
-            A tuple of integers.
+        A tuple of integers.
 
         """
         pass
@@ -124,7 +124,7 @@ class Edge:
 
         Returns
         -------
-            An EdgeArray object, which is a sequence of Edge objects.
+        An EdgeArray object, which is a sequence of Edge objects.
 
         """
         pass
@@ -140,7 +140,7 @@ class Edge:
 
         Returns
         -------
-            An EdgeArray object, which is a sequence of Edgeobjects.
+        An EdgeArray object, which is a sequence of Edgeobjects.
 
         """
         pass
@@ -150,7 +150,7 @@ class Edge:
 
         Returns
         -------
-            A MeshNodeArray object, which is a sequence of MeshNode objects.
+        A MeshNodeArray object, which is a sequence of MeshNode objects.
 
         """
         pass
@@ -160,7 +160,7 @@ class Edge:
 
         Returns
         -------
-            A MeshElementArray object which is a sequence of MeshElement objects.
+        A MeshElementArray object which is a sequence of MeshElement objects.
 
         """
         pass
@@ -170,7 +170,7 @@ class Edge:
 
         Returns
         -------
-            A Float specifying the radius.
+        A Float specifying the radius.
 
         Raises
         ------
@@ -188,7 +188,7 @@ class Edge:
 
         Returns
         -------
-            A Float.
+        A Float.
 
         """
         pass
@@ -201,7 +201,7 @@ class Edge:
 
         Returns
         -------
-            A tuple of integers.
+        A tuple of integers.
 
         """
         pass

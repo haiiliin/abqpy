@@ -448,7 +448,7 @@ class CavityRadiation(Interaction):
 
         Returns
         -------
-            A CavityRadiation object.
+        A CavityRadiation object.
         """
         super().__init__()
         pass

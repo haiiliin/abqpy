@@ -38,7 +38,7 @@ class OdbPart(OdbPartBase):
 
         Returns
         -------
-            None.
+        None.
 
         Raises
         ------
@@ -72,7 +72,7 @@ class OdbPart(OdbPartBase):
 
         Returns
         -------
-            An OdbSet object.
+        An OdbSet object.
         """
         self.nodeSets[name] = odbSet = OdbSet(name, nodes)
         return odbSet

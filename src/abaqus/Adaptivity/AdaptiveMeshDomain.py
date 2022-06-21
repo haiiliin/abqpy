@@ -51,7 +51,7 @@ class AdaptiveMeshDomain:
 
         Returns
         -------
-            An AdaptiveMeshDomain object.
+        An AdaptiveMeshDomain object.
 
         Raises
         ------

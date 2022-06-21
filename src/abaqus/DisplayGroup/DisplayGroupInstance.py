@@ -65,7 +65,7 @@ class DisplayGroupInstance:
 
         Returns
         -------
-            A Dictionary object.
+        A Dictionary object.
         """
         pass
 
@@ -79,7 +79,7 @@ class DisplayGroupInstance:
 
         Returns
         -------
-            A Dictionary object.
+        A Dictionary object.
         """
         pass
 

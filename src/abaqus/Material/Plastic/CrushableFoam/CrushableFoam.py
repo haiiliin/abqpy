@@ -82,7 +82,7 @@ class CrushableFoam:
 
         Returns
         -------
-            A CrushableFoam object.
+        A CrushableFoam object.
 
         Raises
         ------

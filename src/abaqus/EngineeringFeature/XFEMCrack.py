@@ -104,7 +104,7 @@ class XFEMCrack(Crack):
 
         Returns
         -------
-            A XFEMCrack object.
+        A XFEMCrack object.
         """
         super().__init__()
         pass

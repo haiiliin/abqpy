@@ -91,7 +91,7 @@ class SurfaceHeatFlux(Load):
 
         Returns
         -------
-            A SurfaceHeatFlux object.
+        A SurfaceHeatFlux object.
         """
         super().__init__()
         pass

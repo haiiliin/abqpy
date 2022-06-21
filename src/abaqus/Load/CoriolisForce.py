@@ -107,7 +107,7 @@ class CoriolisForce(Load):
 
         Returns
         -------
-            A CoriolisForce object.
+        A CoriolisForce object.
         """
         super().__init__()
         pass

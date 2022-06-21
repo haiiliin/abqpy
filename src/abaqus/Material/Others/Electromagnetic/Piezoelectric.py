@@ -102,7 +102,7 @@ class Piezoelectric:
 
         Returns
         -------
-            A Piezoelectric object.
+        A Piezoelectric object.
         """
         pass
 

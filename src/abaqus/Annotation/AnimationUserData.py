@@ -125,7 +125,7 @@ class AnimationUserData(UserDataBase):
 
         Returns
         -------
-            An Arrow object.
+        An Arrow object.
         """
         self.annotations[name] = arrow = Arrow(
             name,
@@ -237,8 +237,7 @@ class AnimationUserData(UserDataBase):
 
         Returns
         -------
-            A Text object.
-            !img
+        A Text object.
         """
         self.annotations[name] = text = Text(
             name,

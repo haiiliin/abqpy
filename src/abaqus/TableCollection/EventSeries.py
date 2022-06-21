@@ -65,7 +65,7 @@ class EventSeries:
 
         Returns
         -------
-            An EventSeries object.
+        An EventSeries object.
 
         Raises
         ------

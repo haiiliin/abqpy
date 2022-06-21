@@ -54,7 +54,7 @@ class BeadRotationalSymmetry(GeometricRestriction):
 
         Returns
         -------
-            A BeadRotationalSymmetry object.
+        A BeadRotationalSymmetry object.
         """
         super().__init__()
         pass

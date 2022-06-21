@@ -413,7 +413,7 @@ class SubstructureGenerateStep(AnalysisStep):
 
         Returns
         -------
-            A SubstructureGenerateStep object.
+        A SubstructureGenerateStep object.
 
         Raises
         ------

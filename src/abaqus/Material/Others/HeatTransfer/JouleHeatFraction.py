@@ -37,7 +37,7 @@ class JouleHeatFraction:
 
         Returns
         -------
-            A JouleHeatFraction object.
+        A JouleHeatFraction object.
 
         Raises
         ------

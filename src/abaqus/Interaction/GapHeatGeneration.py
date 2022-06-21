@@ -55,7 +55,7 @@ class GapHeatGeneration:
 
         Returns
         -------
-            A GapHeatGeneration object.
+        A GapHeatGeneration object.
         """
         pass
 

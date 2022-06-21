@@ -134,7 +134,7 @@ class ConnectorElasticity(ConnectorBehaviorOption):
 
         Returns
         -------
-            A ConnectorElasticity object.
+        A ConnectorElasticity object.
 
         Raises
         ------

@@ -55,7 +55,7 @@ class ParameterTable:
 
         Returns
         -------
-            A ParameterTable object.
+        A ParameterTable object.
         """
         pass
 
@@ -96,7 +96,7 @@ class ParameterTable:
 
         Returns
         -------
-            A ParameterTable object.
+        A ParameterTable object.
 
         Raises
         ------

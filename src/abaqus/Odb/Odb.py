@@ -79,7 +79,7 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb):
 
         Returns
         -------
-            An OdbPart object.
+        An OdbPart object.
         """
         self.parts[name] = odbPart = OdbPart(name, embeddedSpace, type)
         return odbPart
@@ -180,7 +180,7 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb):
 
         Returns
         -------
-            An OdbStep object.
+        An OdbStep object.
 
         Raises
         ------
@@ -218,7 +218,7 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb):
 
         Returns
         -------
-            A SectionCategory object.
+        A SectionCategory object.
         """
         self.sectionCategories[name] = sectionCategory = SectionCategory(
             name, description

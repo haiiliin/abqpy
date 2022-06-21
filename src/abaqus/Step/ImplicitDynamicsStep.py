@@ -510,7 +510,7 @@ class ImplicitDynamicsStep(AnalysisStep):
 
         Returns
         -------
-            An ImplicitDynamicsStep object.
+        An ImplicitDynamicsStep object.
 
         Raises
         ------

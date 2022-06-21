@@ -484,7 +484,7 @@ class ViewportBase:
 
         Returns
         -------
-            A Viewport object.
+        A Viewport object.
 
         Raises
         ------
@@ -555,8 +555,8 @@ class ViewportBase:
 
         Returns
         -------
-            A Dictionary object of element labels, keyed by OdbInstance name. Returns None if the
-            **displayedObject** member is not an Odb object.
+        A Dictionary object of element labels, keyed by OdbInstance name. Returns None if the
+        **displayedObject** member is not an Odb object.
         """
         pass
 
@@ -577,8 +577,8 @@ class ViewportBase:
 
         Returns
         -------
-            A Dictionary object of node labels, keyed by OdbInstance name. Returns None if the
-            **displayedObject** member is not an Odb object.
+        A Dictionary object of node labels, keyed by OdbInstance name. Returns None if the
+        **displayedObject** member is not an Odb object.
         """
         pass
 
@@ -589,8 +589,8 @@ class ViewportBase:
 
         Returns
         -------
-            A dictionary with keys 'minPartInstanceName', 'minElementLabel', 'minNodeLabel',
-            'minPosition', 'maxPartInstanceName', 'maxElementLabel', 'maxNodeLabel', 'maxPosition' .
+        A dictionary with keys 'minPartInstanceName', 'minElementLabel', 'minNodeLabel',
+        'minPosition', 'maxPartInstanceName', 'maxElementLabel', 'maxNodeLabel', 'maxPosition' .
         """
         pass
 

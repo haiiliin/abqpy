@@ -127,7 +127,7 @@ class Text(Annotation):
 
         Returns
         -------
-            A Text object.
+        A Text object.
 
         """
         super().__init__()

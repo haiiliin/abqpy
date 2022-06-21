@@ -96,7 +96,7 @@ class JournalOptions:
 
         Returns
         -------
-            A NumberFormat object.
+        A NumberFormat object.
         """
         self.numberFormat = numberFormat = NumberFormat(
             blankPad, format, numDigits, precision

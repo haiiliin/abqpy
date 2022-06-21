@@ -54,7 +54,7 @@ class ArbitraryProfile(Profile):
 
         Returns
         -------
-            An ArbitraryProfile object.
+        An ArbitraryProfile object.
 
         Raises
         ------

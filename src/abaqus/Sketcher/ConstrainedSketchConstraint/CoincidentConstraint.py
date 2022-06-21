@@ -29,7 +29,7 @@ class CoincidentConstraint(ConstrainedSketchConstraint):
 
         Returns
         -------
-            A ConstrainedSketchConstraint object.
+        A ConstrainedSketchConstraint object.
 
         """
         pass

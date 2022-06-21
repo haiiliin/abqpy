@@ -91,7 +91,7 @@ class AssembledFastener(Fastener):
 
         Returns
         -------
-            An AssembledFastener object.
+        An AssembledFastener object.
         """
         super().__init__()
         pass

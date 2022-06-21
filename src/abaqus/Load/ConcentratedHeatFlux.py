@@ -102,7 +102,7 @@ class ConcentratedHeatFlux(Load):
 
         Returns
         -------
-            A ConcentratedHeatFlux object.
+        A ConcentratedHeatFlux object.
         """
         super().__init__()
         pass

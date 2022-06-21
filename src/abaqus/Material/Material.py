@@ -291,7 +291,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            An AcousticMedium object.
+        An AcousticMedium object.
 
         Raises
         ------
@@ -340,7 +340,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A BrittleCracking object.
+        A BrittleCracking object.
         """
         self.brittleCracking = BrittleCracking(
             table, temperatureDependency, dependencies, type
@@ -372,7 +372,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A CapPlasticity object.
+        A CapPlasticity object.
 
         Raises
         ------
@@ -406,7 +406,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A CastIronPlasticity object.
+        A CastIronPlasticity object.
 
         Raises
         ------
@@ -454,7 +454,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A ClayPlasticity object.
+        A ClayPlasticity object.
 
         Raises
         ------
@@ -490,7 +490,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A Concrete object.
+        A Concrete object.
 
         Raises
         ------
@@ -524,7 +524,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A ConcreteDamagedPlasticity object.
+        A ConcreteDamagedPlasticity object.
 
         Raises
         ------
@@ -567,7 +567,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A Conductivity object.
+        A Conductivity object.
 
         Raises
         ------
@@ -615,7 +615,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A Creep object.
+        A Creep object.
 
         Raises
         ------
@@ -656,7 +656,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A CrushableFoam object.
+        A CrushableFoam object.
 
         Raises
         ------
@@ -703,7 +703,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A Damping object.
+        A Damping object.
 
         Raises
         ------
@@ -735,7 +735,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A DeformationPlasticity object.
+        A DeformationPlasticity object.
 
         Raises
         ------
@@ -789,7 +789,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A Density object.
+        A Density object.
 
         Raises
         ------
@@ -823,7 +823,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A Depvar object.
+        A Depvar object.
 
         Raises
         ------
@@ -867,7 +867,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A Dielectric object.
+        A Dielectric object.
         """
         self.dielectric = Dielectric(
             table, type, frequencyDependency, temperatureDependency, dependencies
@@ -910,7 +910,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A Diffusivity object.
+        A Diffusivity object.
 
         Raises
         ------
@@ -966,7 +966,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A DruckerPrager object.
+        A DruckerPrager object.
 
         Raises
         ------
@@ -1146,7 +1146,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            An Elastic object.
+        An Elastic object.
 
         Raises
         ------
@@ -1198,7 +1198,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            An ElectricalConductivity object.
+        An ElectricalConductivity object.
 
         Raises
         ------
@@ -1358,7 +1358,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            An Expansion object.
+        An Expansion object.
 
         Raises
         ------
@@ -1402,7 +1402,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A FluidLeakoff object.
+        A FluidLeakoff object.
         """
         self.fluidLeakoff = FluidLeakoff(
             temperatureDependency, dependencies, type, table
@@ -1446,7 +1446,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A GapFlow object.
+        A GapFlow object.
         """
         self.gapFlow = GapFlow(table, kmax, temperatureDependency, dependencies, type)
         return self.gapFlow
@@ -1476,7 +1476,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A GasketMembraneElastic object.
+        A GasketMembraneElastic object.
 
         Raises
         ------
@@ -1555,7 +1555,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A GasketThicknessBehavior object.
+        A GasketThicknessBehavior object.
 
         Raises
         ------
@@ -1608,7 +1608,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A GasketTransverseShearElastic object.
+        A GasketTransverseShearElastic object.
 
         Raises
         ------
@@ -1638,7 +1638,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A Gel object.
+        A Gel object.
         """
         self.gel = Gel(table)
         return self.gel
@@ -1739,7 +1739,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A Hyperelastic object.
+        A Hyperelastic object.
 
         Raises
         ------
@@ -1809,7 +1809,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A Hyperfoam object.
+        A Hyperfoam object.
 
         Raises
         ------
@@ -1842,7 +1842,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A Hypoelastic object.
+        A Hypoelastic object.
         """
         self.hypoelastic = Hypoelastic(table, user)
         return self.hypoelastic
@@ -1868,7 +1868,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            An InelasticHeatFraction object.
+        An InelasticHeatFraction object.
 
         Raises
         ------
@@ -1897,7 +1897,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A JouleHeatFraction object.
+        A JouleHeatFraction object.
 
         Raises
         ------
@@ -1925,7 +1925,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A LatentHeat object.
+        A LatentHeat object.
 
         Raises
         ------
@@ -1979,7 +1979,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A LowDensityFoam object.
+        A LowDensityFoam object.
 
         Raises
         ------
@@ -2047,7 +2047,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A MagneticPermeability object.
+        A MagneticPermeability object.
 
         Raises
         ------
@@ -2106,7 +2106,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A MohrCoulombPlasticity object.
+        A MohrCoulombPlasticity object.
 
         Raises
         ------
@@ -2141,7 +2141,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A MoistureSwelling object.
+        A MoistureSwelling object.
         """
         self.moistureSwelling = MoistureSwelling(table)
         return self.moistureSwelling
@@ -2184,7 +2184,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A Permeability object.
+        A Permeability object.
 
         Raises
         ------
@@ -2232,7 +2232,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A Piezoelectric object.
+        A Piezoelectric object.
         """
         self.piezoelectric = Piezoelectric(
             table, type, temperatureDependency, dependencies
@@ -2287,7 +2287,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A Plastic object.
+        A Plastic object.
 
         Raises
         ------
@@ -2336,7 +2336,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A PoreFluidExpansion object.
+        A PoreFluidExpansion object.
 
         Raises
         ------
@@ -2370,7 +2370,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A PorousBulkModuli object.
+        A PorousBulkModuli object.
         """
         self.porousBulkModuli = PorousBulkModuli(table, temperatureDependency)
         return self.porousBulkModuli
@@ -2407,7 +2407,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A PorousElastic object.
+        A PorousElastic object.
 
         Raises
         ------
@@ -2450,7 +2450,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A PorousMetalPlasticity object.
+        A PorousMetalPlasticity object.
 
         Raises
         ------
@@ -2487,7 +2487,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A Regularization object.
+        A Regularization object.
 
         Raises
         ------
@@ -2521,7 +2521,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A Solubility object.
+        A Solubility object.
 
         Raises
         ------
@@ -2572,7 +2572,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A Sorption object.
+        A Sorption object.
 
         Raises
         ------
@@ -2620,7 +2620,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A SpecificHeat object.
+        A SpecificHeat object.
 
         Raises
         ------
@@ -2664,7 +2664,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A Swelling object.
+        A Swelling object.
 
         Raises
         ------
@@ -2722,7 +2722,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A UserMaterial object.
+        A UserMaterial object.
 
         Raises
         ------
@@ -2758,7 +2758,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A UserOutputVariables object.
+        A UserOutputVariables object.
 
         Raises
         ------
@@ -2831,7 +2831,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A Viscoelastic object.
+        A Viscoelastic object.
 
         Raises
         ------
@@ -2873,7 +2873,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A Viscosity object.
+        A Viscosity object.
 
         Raises
         ------
@@ -2919,7 +2919,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A Viscous object.
+        A Viscous object.
         """
         self.viscous = Viscous(table, law, temperatureDependency, dependencies, time)
         return self.viscous
@@ -2998,7 +2998,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -3080,7 +3080,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -3162,7 +3162,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -3244,7 +3244,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -3330,7 +3330,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -3416,7 +3416,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -3498,7 +3498,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -3580,7 +3580,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -3666,7 +3666,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -3752,7 +3752,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -3838,7 +3838,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -3924,7 +3924,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -4006,7 +4006,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------
@@ -4088,7 +4088,7 @@ class Material(MaterialBase):
 
         Returns
         -------
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
         Raises
         ------

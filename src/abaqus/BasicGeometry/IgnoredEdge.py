@@ -40,7 +40,7 @@ class IgnoredEdge:
 
         Returns
         -------
-            A Float.
+        A Float.
 
         """
         pass
@@ -50,7 +50,7 @@ class IgnoredEdge:
 
         Returns
         -------
-            A Float specifying the radius.
+        A Float specifying the radius.
 
         Raises
         ------
@@ -74,10 +74,10 @@ class IgnoredEdge:
 
         Returns
         -------
-            A dictionary with keys 'evaluationPoint', 'curvature', 'radius', 'tangent'. Where
-            'evaluationPoint' specifies the location at which the curvature was computed.
-            'curvature' specifies the curvature vector at that location. 'radius' is the Radius of
-            curvature and 'tangent' specifies the tangent to the IgnoredEdge at that location.
+        A dictionary with keys 'evaluationPoint', 'curvature', 'radius', 'tangent'. Where
+        'evaluationPoint' specifies the location at which the curvature was computed.
+        'curvature' specifies the curvature vector at that location. 'radius' is the Radius of
+        curvature and 'tangent' specifies the tangent to the IgnoredEdge at that location.
 
         Raises
         ------

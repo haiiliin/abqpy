@@ -71,7 +71,7 @@ class ButterworthFilter(Filter):
 
         Returns
         -------
-            A ButterworthFilter object.
+        A ButterworthFilter object.
 
         Raises
         ------

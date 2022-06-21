@@ -41,6 +41,6 @@ class SymbolicConstant:
 
         Returns
         -------
-            A SymbolicConstant object.
+        A SymbolicConstant object.
         """
         pass

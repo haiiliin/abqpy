@@ -44,7 +44,7 @@ class BeadGrowth(GeometricRestriction):
 
         Returns
         -------
-            A BeadGrowth object.
+        A BeadGrowth object.
         """
         super().__init__()
         pass

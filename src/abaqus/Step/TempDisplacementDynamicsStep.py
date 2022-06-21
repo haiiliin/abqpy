@@ -347,7 +347,7 @@ class TempDisplacementDynamicsStep(AnalysisStep):
 
         Returns
         -------
-            A TempDisplacementDynamicsStep object.
+        A TempDisplacementDynamicsStep object.
 
         Raises
         ------

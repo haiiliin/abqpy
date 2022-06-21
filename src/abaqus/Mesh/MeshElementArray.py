@@ -55,7 +55,7 @@ class MeshElementArray(list[MeshElement]):
 
         Returns
         -------
-            A MeshElementArray object.
+        A MeshElementArray object.
         """
         super().__init__()
 
@@ -69,7 +69,7 @@ class MeshElementArray(list[MeshElement]):
 
         Returns
         -------
-            A MeshElement object.
+        A MeshElement object.
         """
         pass
 
@@ -85,7 +85,7 @@ class MeshElementArray(list[MeshElement]):
 
         Returns
         -------
-            A MeshElementArray object.
+        A MeshElementArray object.
         """
         pass
 
@@ -94,7 +94,7 @@ class MeshElementArray(list[MeshElement]):
 
         Returns
         -------
-            A String specifying the object or objects.
+        A String specifying the object or objects.
         """
         pass
 
@@ -127,7 +127,7 @@ class MeshElementArray(list[MeshElement]):
 
         Returns
         -------
-            A MeshElementArray object, which is a sequence of MeshElement objects.
+        A MeshElementArray object, which is a sequence of MeshElement objects.
         """
         pass
 
@@ -147,7 +147,7 @@ class MeshElementArray(list[MeshElement]):
 
         Returns
         -------
-            A MeshElementArray object, which is a sequence of MeshElement objects.
+        A MeshElementArray object, which is a sequence of MeshElement objects.
         """
         pass
 
@@ -164,7 +164,7 @@ class MeshElementArray(list[MeshElement]):
 
         Returns
         -------
-            A MeshElementArray object, which is a sequence of MeshElement objects.
+        A MeshElementArray object, which is a sequence of MeshElement objects.
         """
         pass
 
@@ -174,11 +174,12 @@ class MeshElementArray(list[MeshElement]):
 
         Returns
         -------
-            A Dictionary object with the following items:
-            **low**: a tuple of three floats representing the minimum x, y, and z boundary values of
-            the bounding box.
-            **high**: a tuple of three floats representing the maximum x, y, and z boundary values of
-            the bounding box.
+        A Dictionary object with the following items:
+        
+        - **low**: a tuple of three floats representing the minimum x, y, and z boundary values of
+          the bounding box.
+        - **high**: a tuple of three floats representing the maximum x, y, and z boundary values of
+          the bounding box.
         """
         pass
 
@@ -193,7 +194,7 @@ class MeshElementArray(list[MeshElement]):
 
         Returns
         -------
-            A MeshElementArray object.
+        A MeshElementArray object.
 
         Raises
         ------

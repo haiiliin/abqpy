@@ -77,7 +77,7 @@ class PsdDefinition(Amplitude):
 
         Returns
         -------
-            A PsdDefinition object.
+        A PsdDefinition object.
 
         Raises
         ------

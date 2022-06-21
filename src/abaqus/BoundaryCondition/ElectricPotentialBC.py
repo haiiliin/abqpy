@@ -115,7 +115,7 @@ class ElectricPotentialBC(BoundaryCondition):
 
         Returns
         -------
-            An ElectricPotentialBC object.
+        An ElectricPotentialBC object.
         """
         super().__init__()
         pass

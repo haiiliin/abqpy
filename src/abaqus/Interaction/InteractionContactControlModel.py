@@ -53,7 +53,7 @@ class InteractionContactControlModel(ModelBase):
 
         Returns
         -------
-            An ExpContactControl object.
+        An ExpContactControl object.
 
         Raises
         ------
@@ -188,7 +188,7 @@ class InteractionContactControlModel(ModelBase):
 
         Returns
         -------
-            A StdContactControl object.
+        A StdContactControl object.
 
         Raises
         ------

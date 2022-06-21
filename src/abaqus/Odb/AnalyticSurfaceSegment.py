@@ -42,6 +42,6 @@ class AnalyticSurfaceSegment:
 
         Returns
         -------
-            An AnalyticSurfaceSegment object.
+        An AnalyticSurfaceSegment object.
         """
         pass

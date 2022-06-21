@@ -47,7 +47,7 @@ class XFEMCrackGrowth(Interaction):
 
         Returns
         -------
-            A XFEMCrackGrowth object.
+        A XFEMCrackGrowth object.
         """
         super().__init__()
         pass

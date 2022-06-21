@@ -124,7 +124,7 @@ class XYData:
 
         Returns
         -------
-            An XYData object.
+        An XYData object.
         """
         pass
 
@@ -148,7 +148,7 @@ class XYData:
 
         Returns
         -------
-            An XYData object.
+        An XYData object.
         """
         pass
 
@@ -226,7 +226,7 @@ class XYData:
 
         Returns
         -------
-            An XYData object.
+        An XYData object.
 
         Raises
         ------
@@ -303,7 +303,7 @@ class XYData:
 
         Returns
         -------
-            An XYData object.
+        An XYData object.
 
         Raises
         ------
@@ -402,7 +402,7 @@ class XYData:
 
         Returns
         -------
-            A list of XYData objects.
+        A list of XYData objects.
 
         Raises
         ------
@@ -460,7 +460,7 @@ class XYData:
 
         Returns
         -------
-            A list of XYData objects.
+        A list of XYData objects.
 
         Raises
         ------
@@ -550,7 +550,7 @@ class XYData:
 
         Returns
         -------
-            A list of XYData objects.
+        A list of XYData objects.
 
         Raises
         ------
@@ -659,8 +659,8 @@ class XYData:
 
         Returns
         -------
-            If **variable** specified has one fieldoutput: Returns an XYData object.
-            If **variable** specified has more than one fieldoutputs: Returns list of XYData objects.
+        If **variable** specified has one fieldoutput: Returns an XYData object.
+        If **variable** specified has more than one fieldoutputs: Returns list of XYData objects.
 
         Raises
         ------

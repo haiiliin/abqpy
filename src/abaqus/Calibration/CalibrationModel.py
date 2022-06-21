@@ -32,7 +32,7 @@ class CalibrationModel(ModelBase):
 
         Returns
         -------
-            A Calibration object.
+        A Calibration object.
         """
         self.calibrations[name] = calibration = Calibration(name)
         return calibration

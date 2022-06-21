@@ -66,7 +66,7 @@ class Vertex:
 
         Returns
         -------
-            A tuple of integers.
+        A tuple of integers.
 
         """
         pass
@@ -76,7 +76,7 @@ class Vertex:
 
         Returns
         -------
-            A MeshNodeArray object which is a sequence of MeshNode objects.
+        A MeshNodeArray object which is a sequence of MeshNode objects.
 
         """
         pass
@@ -86,7 +86,7 @@ class Vertex:
 
         Returns
         -------
-            A MeshElementArray object which is a sequence of MeshElement objects.
+        A MeshElementArray object which is a sequence of MeshElement objects.
 
         """
         pass

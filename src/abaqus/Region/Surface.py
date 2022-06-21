@@ -225,7 +225,7 @@ class Surface:
 
         Returns
         -------
-            A Surface object.
+        A Surface object.
         """
         pass
 
@@ -251,7 +251,7 @@ class Surface:
 
         Returns
         -------
-            A Surface object.
+        A Surface object.
         """
         pass
 
@@ -287,7 +287,7 @@ class Surface:
 
         Returns
         -------
-            A Surface object.
+        A Surface object.
         """
         pass
 
@@ -314,6 +314,6 @@ class Surface:
 
         Returns
         -------
-            A Surface object.
+        A Surface object.
         """
         pass

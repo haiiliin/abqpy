@@ -47,7 +47,7 @@ class LeafFromOdbElementMaterials(Leaf):
 
         Returns
         -------
-            A LeafFromOdbElementMaterials object.
+        A LeafFromOdbElementMaterials object.
         """
         super().__init__(DEFAULT_MODEL)
         pass

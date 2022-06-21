@@ -80,7 +80,7 @@ class MultipointConstraint(Constraint):
 
         Returns
         -------
-            A MultipointConstraint object.
+        A MultipointConstraint object.
         """
         super().__init__()
         pass

@@ -61,7 +61,7 @@ class SolutionDependentAmplitude(Amplitude):
 
         Returns
         -------
-            A SolutionDependentAmplitude object.
+        A SolutionDependentAmplitude object.
 
         Raises
         ------

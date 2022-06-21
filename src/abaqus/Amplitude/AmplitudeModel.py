@@ -50,7 +50,7 @@ class AmplitudeModel(ModelBase):
 
         Returns
         -------
-            An ActuatorAmplitude object.
+        An ActuatorAmplitude object.
 
         Raises
         ------
@@ -98,7 +98,7 @@ class AmplitudeModel(ModelBase):
 
         Returns
         -------
-            A DecayAmplitude object.
+        A DecayAmplitude object.
 
         Raises
         ------
@@ -153,7 +153,7 @@ class AmplitudeModel(ModelBase):
 
         Returns
         -------
-            An EquallySpacedAmplitude object.
+        An EquallySpacedAmplitude object.
 
         Raises
         ------
@@ -208,7 +208,7 @@ class AmplitudeModel(ModelBase):
 
         Returns
         -------
-            A ModulatedAmplitude object.
+        A ModulatedAmplitude object.
 
         Raises
         ------
@@ -258,7 +258,7 @@ class AmplitudeModel(ModelBase):
 
         Returns
         -------
-            A PeriodicAmplitude object.
+        A PeriodicAmplitude object.
 
         Raises
         ------
@@ -324,7 +324,7 @@ class AmplitudeModel(ModelBase):
 
         Returns
         -------
-            A PsdDefinition object.
+        A PsdDefinition object.
 
         Raises
         ------
@@ -370,7 +370,7 @@ class AmplitudeModel(ModelBase):
 
         Returns
         -------
-            A SmoothStepAmplitude object.
+        A SmoothStepAmplitude object.
 
         Raises
         ------
@@ -418,7 +418,7 @@ class AmplitudeModel(ModelBase):
 
         Returns
         -------
-            A SolutionDependentAmplitude object.
+        A SolutionDependentAmplitude object.
 
         Raises
         ------
@@ -498,7 +498,7 @@ class AmplitudeModel(ModelBase):
 
         Returns
         -------
-            A SpectrumAmplitude object.
+        A SpectrumAmplitude object.
 
         Raises
         ------
@@ -556,7 +556,7 @@ class AmplitudeModel(ModelBase):
 
         Returns
         -------
-            A TabularAmplitude object.
+        A TabularAmplitude object.
 
         Raises
         ------

@@ -559,7 +559,7 @@ class FrequencyStep(AnalysisStep):
 
         Returns
         -------
-            A FrequencyStep object.
+        A FrequencyStep object.
 
         Raises
         ------

@@ -58,7 +58,7 @@ class Ratios:
 
         Returns
         -------
-            A Ratios object.
+        A Ratios object.
 
         Raises
         ------

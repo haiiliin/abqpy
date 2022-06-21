@@ -102,7 +102,7 @@ class CombinedTermDesignResponse(DesignResponse):
 
         Returns
         -------
-            A CombinedTermDesignResponse object.
+        A CombinedTermDesignResponse object.
         """
         super().__init__()
         pass

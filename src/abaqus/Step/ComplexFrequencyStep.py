@@ -336,7 +336,7 @@ class ComplexFrequencyStep(AnalysisStep):
 
         Returns
         -------
-            A ComplexFrequencyStep object.
+        A ComplexFrequencyStep object.
 
         Raises
         ------

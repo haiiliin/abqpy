@@ -91,7 +91,7 @@ class ConcCurrent(Load):
 
         Returns
         -------
-            A ConcCurrent object.
+        A ConcCurrent object.
         """
         super().__init__()
         pass

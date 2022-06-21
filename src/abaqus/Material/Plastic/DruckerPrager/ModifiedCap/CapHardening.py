@@ -54,7 +54,7 @@ class CapHardening:
 
         Returns
         -------
-            A CapHardening object.
+        A CapHardening object.
 
         Raises
         ------

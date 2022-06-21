@@ -57,7 +57,7 @@ class SelfContactExp(Interaction):
 
         Returns
         -------
-            A SelfContactExp object.
+        A SelfContactExp object.
         """
         super().__init__()
         pass

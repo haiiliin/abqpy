@@ -150,7 +150,7 @@ class BeadTask(OptimizationTask):
 
         Returns
         -------
-            A BeadTask object.
+        A BeadTask object.
         """
         super().__init__()
         pass

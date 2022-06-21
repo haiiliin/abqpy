@@ -474,7 +474,7 @@ class CoupledThermalElectricalStructuralStep(AnalysisStep):
 
         Returns
         -------
-            A CoupledThermalElectricalStructuralStep object.
+        A CoupledThermalElectricalStructuralStep object.
 
         Raises
         ------

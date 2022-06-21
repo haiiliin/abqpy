@@ -65,7 +65,7 @@ class Swelling:
 
         Returns
         -------
-            A Swelling object.
+        A Swelling object.
 
         Raises
         ------

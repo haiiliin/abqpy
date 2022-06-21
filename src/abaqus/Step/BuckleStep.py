@@ -342,7 +342,7 @@ class BuckleStep(AnalysisStep):
 
         Returns
         -------
-            A BuckleStep object.
+        A BuckleStep object.
 
         Raises
         ------

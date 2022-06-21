@@ -89,7 +89,7 @@ class AcousticImpedance(Interaction):
 
         Returns
         -------
-            An AcousticImpedance object.
+        An AcousticImpedance object.
         """
         super().__init__()
         pass

@@ -57,7 +57,7 @@ class SizingCyclicSymmetry(GeometricRestriction):
 
         Returns
         -------
-            A SizingCyclicSymmetry object.
+        A SizingCyclicSymmetry object.
         """
         super().__init__()
         pass

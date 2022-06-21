@@ -381,7 +381,7 @@ class ConstrainedSketch(
 
         Returns
         -------
-            None.
+        None.
 
         Raises
         ------

@@ -38,7 +38,7 @@ class BeadPenetrationCheck(GeometricRestriction):
 
         Returns
         -------
-            A BeadPenetrationCheck object.
+        A BeadPenetrationCheck object.
         """
         super().__init__()
         pass

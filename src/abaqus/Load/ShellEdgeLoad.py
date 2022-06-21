@@ -136,7 +136,7 @@ class ShellEdgeLoad(Load):
 
         Returns
         -------
-            A ShellEdgeLoad object.
+        A ShellEdgeLoad object.
         """
         super().__init__()
         pass

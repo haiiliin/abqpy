@@ -83,7 +83,7 @@ class Conductivity:
 
         Returns
         -------
-            A Conductivity object.
+        A Conductivity object.
 
         Raises
         ------

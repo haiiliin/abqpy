@@ -61,7 +61,7 @@ class InputFile:
 
         Returns
         -------
-            An InputFile object.
+        An InputFile object.
         """
         pass
 
@@ -94,7 +94,7 @@ class InputFile:
 
         Returns
         -------
-            A KeywordSequence object.
+        A KeywordSequence object.
 
         Raises
         ------

@@ -131,7 +131,7 @@ class Creep:
 
         Returns
         -------
-            A Creep object.
+        A Creep object.
 
         Raises
         ------

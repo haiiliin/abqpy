@@ -75,7 +75,7 @@ class PorousElastic:
 
         Returns
         -------
-            A PorousElastic object.
+        A PorousElastic object.
 
         Raises
         ------

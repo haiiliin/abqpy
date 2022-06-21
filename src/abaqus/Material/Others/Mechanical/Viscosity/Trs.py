@@ -54,7 +54,7 @@ class Trs:
 
         Returns
         -------
-            A Trs object.
+        A Trs object.
         """
         pass
 

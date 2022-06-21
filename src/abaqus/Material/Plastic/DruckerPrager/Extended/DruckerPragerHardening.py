@@ -68,7 +68,7 @@ class DruckerPragerHardening:
 
         Returns
         -------
-            A DruckerPragerHardening object. 
+        A DruckerPragerHardening object. 
 
         Raises
         ------

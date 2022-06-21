@@ -40,7 +40,7 @@ class BeadPointSymmetry(GeometricRestriction):
 
         Returns
         -------
-            A BeadPointSymmetry object.
+        A BeadPointSymmetry object.
         """
         super().__init__()
         pass

@@ -183,7 +183,7 @@ class BeamSection(Section):
 
         Returns
         -------
-            A BeamSection object.
+        A BeamSection object.
         """
         super().__init__()
         pass

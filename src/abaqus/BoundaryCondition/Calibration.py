@@ -47,6 +47,6 @@ class Calibration:
 
         Returns
         -------
-            A Calibration object.
+        A Calibration object.
         """
         pass

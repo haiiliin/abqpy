@@ -75,7 +75,7 @@ class Chebyshev2Filter(Filter):
 
         Returns
         -------
-            A Chebyshev2Filter object.
+        A Chebyshev2Filter object.
 
         Raises
         ------

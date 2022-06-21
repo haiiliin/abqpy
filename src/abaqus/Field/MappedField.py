@@ -278,7 +278,7 @@ class MappedField(AnalyticalField):
 
         Returns
         -------
-            A MappedField object.
+        A MappedField object.
 
         Raises
         ------

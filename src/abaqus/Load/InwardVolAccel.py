@@ -92,7 +92,7 @@ class InwardVolAccel(Load):
 
         Returns
         -------
-            An InwardVolAccel object.
+        An InwardVolAccel object.
         """
         super().__init__()
         pass

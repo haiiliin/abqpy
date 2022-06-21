@@ -57,7 +57,7 @@ class FilmConditionProp(ContactProperty):
 
         Returns
         -------
-            A FilmConditionProp object.
+        A FilmConditionProp object.
         """
         super().__init__(name)
         pass

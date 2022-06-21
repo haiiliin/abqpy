@@ -66,7 +66,7 @@ class Density:
 
         Returns
         -------
-            A Density object.
+        A Density object.
 
         Raises
         ------

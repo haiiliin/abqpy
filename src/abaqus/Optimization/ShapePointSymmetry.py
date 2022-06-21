@@ -68,7 +68,7 @@ class ShapePointSymmetry(GeometricRestriction):
 
         Returns
         -------
-            A ShapePointSymmetry object.
+        A ShapePointSymmetry object.
         """
         super().__init__()
         pass

@@ -46,6 +46,6 @@ class Stream:
 
         Returns
         -------
-            A Stream object.
+        A Stream object.
         """
         pass

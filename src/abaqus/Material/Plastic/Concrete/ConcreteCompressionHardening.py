@@ -62,7 +62,7 @@ class ConcreteCompressionHardening:
 
         Returns
         -------
-            A ConcreteCompressionHardening object.
+        A ConcreteCompressionHardening object.
 
         Raises
         ------

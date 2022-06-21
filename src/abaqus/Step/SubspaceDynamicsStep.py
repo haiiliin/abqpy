@@ -308,7 +308,7 @@ class SubspaceDynamicsStep(AnalysisStep):
 
         Returns
         -------
-            A SubspaceDynamicsStep object.
+        A SubspaceDynamicsStep object.
 
         Raises
         ------

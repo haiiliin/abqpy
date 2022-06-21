@@ -56,7 +56,7 @@ class ShearTestData:
 
         Returns
         -------
-            A ShearTestData object.
+        A ShearTestData object.
         """
         pass
 

@@ -269,7 +269,7 @@ class StaticLinearPerturbationStep(AnalysisStep):
 
         Returns
         -------
-            A StaticLinearPerturbationStep object.
+        A StaticLinearPerturbationStep object.
 
         Raises
         ------

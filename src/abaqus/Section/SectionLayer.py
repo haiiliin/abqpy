@@ -93,6 +93,6 @@ class SectionLayer:
 
         Returns
         -------
-            A SectionLayer object.
+        A SectionLayer object.
         """
         pass

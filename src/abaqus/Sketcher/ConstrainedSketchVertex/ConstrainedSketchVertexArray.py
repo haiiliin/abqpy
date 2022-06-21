@@ -27,6 +27,6 @@ class ConstrainedSketchVertexArray:
 
         Returns
         -------
-            A ConstrainedSketchVertex object.
+        A ConstrainedSketchVertex object.
         """
         pass

@@ -56,7 +56,7 @@ class TensionCutOff:
 
         Returns
         -------
-            A TensionCutOff object.
+        A TensionCutOff object.
 
         Raises
         ------

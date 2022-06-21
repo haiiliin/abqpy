@@ -186,7 +186,7 @@ class ConnDisplacementBC(BoundaryCondition):
 
         Returns
         -------
-            A ConnDisplacementBC object.
+        A ConnDisplacementBC object.
         """
         super().__init__()
         pass

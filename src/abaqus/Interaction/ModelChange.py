@@ -69,7 +69,7 @@ class ModelChange(Interaction):
 
         Returns
         -------
-            A ModelChange object.
+        A ModelChange object.
         """
         super().__init__()
         pass

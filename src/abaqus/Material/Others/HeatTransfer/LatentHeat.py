@@ -42,7 +42,7 @@ class LatentHeat:
 
         Returns
         -------
-            A LatentHeat object.
+        A LatentHeat object.
 
         Raises
         ------

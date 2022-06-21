@@ -366,7 +366,7 @@ class ModelJob(Job):
 
         Returns
         -------
-            A ModelJob object.
+        A ModelJob object.
         """
         pass
 

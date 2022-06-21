@@ -66,7 +66,7 @@ class Potential:
 
         Returns
         -------
-            A Potential object.
+        A Potential object.
 
         Raises
         ------

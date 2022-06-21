@@ -78,7 +78,7 @@ class ConcreteTensionDamage:
 
         Returns
         -------
-            A ConcreteTensionDamage object. 
+        A ConcreteTensionDamage object. 
 
         Raises
         ------

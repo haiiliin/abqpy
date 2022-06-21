@@ -44,7 +44,7 @@ class CircularProfile(Profile):
 
         Returns
         -------
-            A CircularProfile object.
+        A CircularProfile object.
 
         Raises
         ------

@@ -190,7 +190,7 @@ class IncidentWaveProperty(ContactProperty):
 
         Returns
         -------
-            An IncidentWaveProperty object.
+        An IncidentWaveProperty object.
         """
         super().__init__(name)
         pass

@@ -475,7 +475,7 @@ class StaticRiksStep(AnalysisStep):
 
         Returns
         -------
-            A StaticRiksStep object.
+        A StaticRiksStep object.
 
         Raises
         ------

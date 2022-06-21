@@ -69,7 +69,7 @@ class SingleTermDesignResponse(DesignResponse):
 
         Returns
         -------
-            A SingleTermDesignResponse object.
+        A SingleTermDesignResponse object.
         """
         super().__init__()
         pass

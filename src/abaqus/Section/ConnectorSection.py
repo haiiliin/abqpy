@@ -140,7 +140,7 @@ class ConnectorSection(Section):
 
         Returns
         -------
-            A ConnectorSection object.
+        A ConnectorSection object.
 
         Raises
         ------

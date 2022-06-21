@@ -40,7 +40,7 @@ class FilletByRadius(ConstrainedSketchGeometry):
 
         Returns
         -------
-            A ConstrainedSketchGeometry object (None if the fillet cannot be created).
+        A ConstrainedSketchGeometry object (None if the fillet cannot be created).
 
         Raises
         ------

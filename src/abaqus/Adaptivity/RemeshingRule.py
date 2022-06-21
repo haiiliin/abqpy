@@ -126,7 +126,7 @@ class RemeshingRule:
 
         Returns
         -------
-            A RemeshingRule object.
+        A RemeshingRule object.
 
         Raises
         ------

@@ -214,7 +214,7 @@ class Feature(BaseFeature):
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
         """
         pass
 
@@ -270,7 +270,7 @@ class Feature(BaseFeature):
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -372,7 +372,7 @@ class Feature(BaseFeature):
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -660,7 +660,7 @@ class Feature(BaseFeature):
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------
@@ -1360,7 +1360,7 @@ class Feature(BaseFeature):
 
         Returns
         -------
-            A Boolean value.
+        A Boolean value.
 
         Raises
         ------
@@ -1448,7 +1448,7 @@ class Feature(BaseFeature):
 
         Returns
         -------
-            A Feature object.
+        A Feature object.
 
         Raises
         ------

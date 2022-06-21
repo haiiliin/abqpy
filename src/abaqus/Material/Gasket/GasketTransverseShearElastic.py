@@ -61,7 +61,7 @@ class GasketTransverseShearElastic:
 
         Returns
         -------
-            A GasketTransverseShearElastic object.
+        A GasketTransverseShearElastic object.
 
         Raises
         ------

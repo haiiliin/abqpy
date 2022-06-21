@@ -203,7 +203,7 @@ class SurfaceToSurfaceContactStd(Interaction):
 
         Returns
         -------
-            A SurfaceToSurfaceContactStd object.
+        A SurfaceToSurfaceContactStd object.
         """
         super().__init__()
         pass

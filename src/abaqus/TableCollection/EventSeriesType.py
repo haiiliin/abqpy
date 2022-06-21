@@ -37,7 +37,7 @@ class EventSeriesType:
 
         Returns
         -------
-            A EventSeriesType object.
+        A EventSeriesType object.
 
         Raises
         ------

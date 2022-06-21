@@ -93,7 +93,7 @@ class CompositeLayup:
 
         Returns
         -------
-            A CompositeLayup object.
+        A CompositeLayup object.
 
         Raises
         ------
@@ -234,7 +234,7 @@ class CompositeLayup:
 
         Returns
         -------
-            A CompositePly object.
+        A CompositePly object.
 
         Raises
         ------
@@ -356,7 +356,7 @@ class CompositeLayup:
 
         Returns
         -------
-            A CompositeShellSection object.
+        A CompositeShellSection object.
         """
         self.section = compositeShellSection = CompositeShellSection(
             name,
@@ -456,7 +456,7 @@ class CompositeLayup:
 
         Returns
         -------
-            A GeometryShellSection object.
+        A GeometryShellSection object.
         """
         self.section = geometryShellSection = GeometryShellSection(
             nodalThicknessField,
@@ -573,7 +573,7 @@ class CompositeLayup:
 
         Returns
         -------
-            A HomogeneousShellSection object.
+        A HomogeneousShellSection object.
         """
         self.section[name] = homogeneousShellSection = HomogeneousShellSection(
             name,

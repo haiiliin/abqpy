@@ -52,7 +52,7 @@ class TopologyPointSymmetry(GeometricRestriction):
 
         Returns
         -------
-            A TopologyPointSymmetry object.
+        A TopologyPointSymmetry object.
         """
         super().__init__()
         pass

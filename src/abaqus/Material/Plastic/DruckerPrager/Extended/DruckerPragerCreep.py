@@ -76,7 +76,7 @@ class DruckerPragerCreep:
 
         Returns
         -------
-            A DruckerPragerCreep object.
+        A DruckerPragerCreep object.
 
         Raises
         ------

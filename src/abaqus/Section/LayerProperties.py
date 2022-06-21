@@ -76,6 +76,6 @@ class LayerProperties:
 
         Returns
         -------
-            A LayerProperties object.
+        A LayerProperties object.
         """
         pass

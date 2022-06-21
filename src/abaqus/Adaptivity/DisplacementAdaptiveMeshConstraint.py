@@ -121,7 +121,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
 
         Returns
         -------
-            A DisplacementAdaptiveMeshConstraint object.
+        A DisplacementAdaptiveMeshConstraint object.
         """
         super().__init__(name, region=region, category=MECHANICAL, localCsys=localCsys)
 

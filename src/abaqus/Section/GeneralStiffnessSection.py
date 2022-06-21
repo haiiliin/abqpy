@@ -107,7 +107,7 @@ class GeneralStiffnessSection(ShellSection):
 
         Returns
         -------
-            A GeneralStiffnessSection object.
+        A GeneralStiffnessSection object.
         """
         super().__init__()
         pass

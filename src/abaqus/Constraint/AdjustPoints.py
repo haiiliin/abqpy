@@ -53,7 +53,7 @@ class AdjustPoints(Constraint):
 
         Returns
         -------
-            An AdjustPoints object.
+        An AdjustPoints object.
         """
         super().__init__()
         pass

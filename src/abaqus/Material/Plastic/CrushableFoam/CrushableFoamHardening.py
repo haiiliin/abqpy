@@ -56,7 +56,7 @@ class CrushableFoamHardening:
 
         Returns
         -------
-            A CrushableFoamHardening object. 
+        A CrushableFoamHardening object. 
 
         Raises
         ------

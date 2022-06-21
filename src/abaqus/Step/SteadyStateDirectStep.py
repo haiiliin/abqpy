@@ -317,7 +317,7 @@ class SteadyStateDirectStep(AnalysisStep):
 
         Returns
         -------
-            A SteadyStateDirectStep object.
+        A SteadyStateDirectStep object.
 
         Raises
         ------

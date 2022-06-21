@@ -49,7 +49,7 @@ class PartModel(ModelBase):
 
         Returns
         -------
-            A Part object.
+        A Part object.
         """
         self.parts[name] = part = Part(name, dimensionality, type, twist)
         return part

@@ -55,7 +55,7 @@ class FaceArray:
 
         Returns
         -------
-            A FaceArray object.
+        A FaceArray object.
 
         """
         pass
@@ -96,7 +96,7 @@ class FaceArray:
 
         Returns
         -------
-            A Face object.
+        A Face object.
 
         """
         pass
@@ -107,7 +107,7 @@ class FaceArray:
 
         Returns
         -------
-            An EdgeArray object specifying the exterior edges.
+        An EdgeArray object specifying the exterior edges.
 
         """
         pass
@@ -125,7 +125,7 @@ class FaceArray:
 
         Returns
         -------
-            A Face object or a sequence of Face objects.
+        A Face object or a sequence of Face objects.
 
         """
         pass
@@ -135,7 +135,7 @@ class FaceArray:
 
         Returns
         -------
-            A String specifying the object or objects.
+        A String specifying the object or objects.
 
         """
         pass
@@ -168,7 +168,7 @@ class FaceArray:
 
         Returns
         -------
-            A FaceArray object, which is a sequence of Face objects.
+        A FaceArray object, which is a sequence of Face objects.
 
         """
         pass
@@ -190,7 +190,7 @@ class FaceArray:
 
         Returns
         -------
-            A FaceArray object, which is a sequence of Face objects.
+        A FaceArray object, which is a sequence of Face objects.
 
         """
         pass
@@ -208,7 +208,7 @@ class FaceArray:
 
         Returns
         -------
-            A FaceArray object, which is a sequence of Face objects.
+        A FaceArray object, which is a sequence of Face objects.
 
         """
         pass
@@ -219,12 +219,12 @@ class FaceArray:
 
         Returns
         -------
-            A Dictionary object with the following items:
-            **low**: a tuple of three floats representing the minimum **X**-, **Y**-, and **Z**-boundary
-            values of the bounding box.
-            **high**: a tuple of three floats representing the maximum **X**-, **Y**-, and **Z**-boundary
-            values of the bounding box.
-
+        A Dictionary object with the following items:
+        
+        - **low**: a tuple of three floats representing the minimum **X**-, **Y**-, and **Z**-boundary
+          values of the bounding box.
+        - **high**: a tuple of three floats representing the maximum **X**-, **Y**-, and **Z**-boundary
+          values of the bounding box.
         """
         pass
 
@@ -246,13 +246,13 @@ class FaceArray:
 
         Returns
         -------
-            This method returns a dictionary object. The key to the dictionary object is the
-            position of the input point in the tuple specified in the **coordinates** starting at
-            index 0. If a closest face could be found then the value is a sequence consisting of two
-            objects. The first object in the sequence is a Face that is close to the input point
-            referred to by the key. The second object in the sequence is a sequence of floats that
-            specifies the **X**-, **Y**-, and **Z**-location of the closest point on the Face to the given
-            point. See program listing above.
+        This method returns a dictionary object. The key to the dictionary object is the
+        position of the input point in the tuple specified in the **coordinates** starting at
+        index 0. If a closest face could be found then the value is a sequence consisting of two
+        objects. The first object in the sequence is a Face that is close to the input point
+        referred to by the key. The second object in the sequence is a sequence of floats that
+        specifies the **X**-, **Y**-, and **Z**-location of the closest point on the Face to the given
+        point. See program listing above.
 
         Raises
         ------

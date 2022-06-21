@@ -179,7 +179,7 @@ class InteractionModel(
 
         Returns
         -------
-            None.
+        None.
         """
         pass
 
@@ -189,13 +189,14 @@ class InteractionModel(
 
         Returns
         -------
-            Tuple of tuples, where each tuple holds information, to be used in contact creation as
-            follows:
-            A string specifying the name of the main surface used in contact.
-            A string specifying the name of the secondary surface used in contact.
-            A float specifying the separation distance between the main surface and the secondary
-            surface.
-            A boolean specifying whether or not contact surfaces are overclosed..
+        Tuple of tuples, where each tuple holds information, to be used in contact creation as
+        follows:
+        
+        - A string specifying the name of the main surface used in contact.
+        - A string specifying the name of the secondary surface used in contact.
+        - A float specifying the separation distance between the main surface and the secondary
+          surface.
+        - A boolean specifying whether or not contact surfaces are overclosed..
         """
         pass
 
@@ -266,7 +267,7 @@ class InteractionModel(
 
         Returns
         -------
-            An AcousticImpedance object.
+        An AcousticImpedance object.
         """
         self.interactions[name] = interaction = AcousticImpedance(
             name,
@@ -320,7 +321,7 @@ class InteractionModel(
 
         Returns
         -------
-            An AcousticImpedanceProp object.
+        An AcousticImpedanceProp object.
         """
         self.interactions[name] = interaction = AcousticImpedanceProp(
             name, tableType, table, frequencyDependency
@@ -378,7 +379,7 @@ class InteractionModel(
 
         Returns
         -------
-            An ActuatorSensor object.
+        An ActuatorSensor object.
         """
         self.interactions[name] = interaction = ActuatorSensor(
             name,
@@ -420,7 +421,7 @@ class InteractionModel(
 
         Returns
         -------
-            An ActuatorSensorProp object.
+        An ActuatorSensorProp object.
         """
         self.interactions[name] = interaction = ActuatorSensorProp(
             name, realProperties, integerProperties
@@ -635,7 +636,7 @@ class InteractionModel(
 
         Returns
         -------
-            A CavityRadiation object.
+        A CavityRadiation object.
         """
         self.interactions[name] = interaction = CavityRadiation(
             name,
@@ -712,7 +713,7 @@ class InteractionModel(
 
         Returns
         -------
-            A CavityRadiationProp object.
+        A CavityRadiationProp object.
         """
         self.interactions[name] = interaction = CavityRadiationProp(
             name, temperatureDependency, dependencies, property
@@ -806,7 +807,7 @@ class InteractionModel(
 
         Returns
         -------
-            A ConcentratedFilmCondition object.
+        A ConcentratedFilmCondition object.
         """
         self.interactions[name] = interaction = ConcentratedFilmCondition(
             name,
@@ -887,7 +888,7 @@ class InteractionModel(
 
         Returns
         -------
-            A ConcentratedRadiationToAmbient object.
+        A ConcentratedRadiationToAmbient object.
         """
         self.interactions[name] = interaction = ConcentratedRadiationToAmbient(
             name,
@@ -966,7 +967,7 @@ class InteractionModel(
 
         Returns
         -------
-            A ContactExp object.
+        A ContactExp object.
         """
         self.interactions[name] = interaction = ContactExp(
             name,
@@ -1002,7 +1003,7 @@ class InteractionModel(
 
         Returns
         -------
-            A ContactProperty object.
+        A ContactProperty object.
         """
         interactionProperties = ContactProperty(name)
         self.interactions[name] = interactionProperties
@@ -1083,7 +1084,7 @@ class InteractionModel(
 
         Returns
         -------
-            A ContactStd object.
+        A ContactStd object.
         """
         self.interactions[name] = interaction = ContactStd(
             name,
@@ -1184,7 +1185,7 @@ class InteractionModel(
 
         Returns
         -------
-            A CyclicSymmetry object.
+        A CyclicSymmetry object.
         """
         self.interactions[name] = interaction = CyclicSymmetry(
             name,
@@ -1231,7 +1232,7 @@ class InteractionModel(
 
         Returns
         -------
-            An ElasticFoundation object.
+        An ElasticFoundation object.
         """
         self.interactions[name] = interaction = ElasticFoundation(
             name, createStepName, surface, stiffness
@@ -1286,7 +1287,7 @@ class InteractionModel(
 
         Returns
         -------
-            An ExpContactControl object.
+        An ExpContactControl object.
 
         Raises
         ------
@@ -1379,7 +1380,7 @@ class InteractionModel(
 
         Returns
         -------
-            A FilmCondition object.
+        A FilmCondition object.
         """
         self.interactions[name] = interaction = FilmCondition(
             name,
@@ -1433,7 +1434,7 @@ class InteractionModel(
 
         Returns
         -------
-            A FilmConditionProp object.
+        A FilmConditionProp object.
         """
         self.interactions[name] = interaction = FilmConditionProp(
             name, temperatureDependency, dependencies, property
@@ -1489,7 +1490,7 @@ class InteractionModel(
 
         Returns
         -------
-            A FluidCavity object.
+        A FluidCavity object.
         """
         self.interactions[name] = interaction = FluidCavity(
             name,
@@ -1634,7 +1635,7 @@ class InteractionModel(
 
         Returns
         -------
-            A FluidCavityProperty object.
+        A FluidCavityProperty object.
         """
         self.interactions[name] = interaction = FluidCavityProperty(
             name,
@@ -1700,7 +1701,7 @@ class InteractionModel(
 
         Returns
         -------
-            A FluidExchange object.
+        A FluidExchange object.
         """
         self.interactions[name] = interaction = FluidExchange(
             name,
@@ -1803,7 +1804,7 @@ class InteractionModel(
 
         Returns
         -------
-            A FluidExchangeProperty object.
+        A FluidExchangeProperty object.
         """
         self.interactions[name] = interaction = FluidExchangeProperty(
             name,
@@ -1894,7 +1895,7 @@ class InteractionModel(
 
         Returns
         -------
-            An IncidentWave object.
+        An IncidentWave object.
         """
         self.interactions[name] = interaction = IncidentWave(
             name,
@@ -2081,7 +2082,7 @@ class InteractionModel(
 
         Returns
         -------
-            An IncidentWaveProperty object.
+        An IncidentWaveProperty object.
         """
         self.interactions[name] = interaction = IncidentWaveProperty(
             name,
@@ -2166,7 +2167,7 @@ class InteractionModel(
 
         Returns
         -------
-            A ModelChange object.
+        A ModelChange object.
         """
         self.interactions[name] = interaction = ModelChange(
             name,
@@ -2233,7 +2234,7 @@ class InteractionModel(
 
         Returns
         -------
-            A PressurePenetration object.
+        A PressurePenetration object.
         """
         self.interactions[name] = interaction = PressurePenetration(
             name,
@@ -2306,7 +2307,7 @@ class InteractionModel(
 
         Returns
         -------
-            A RadiationToAmbient object.
+        A RadiationToAmbient object.
         """
         self.interactions[name] = interaction = RadiationToAmbient(
             name,
@@ -2361,7 +2362,7 @@ class InteractionModel(
 
         Returns
         -------
-            A SelfContactExp object.
+        A SelfContactExp object.
         """
         self.interactions[name] = interaction = SelfContactExp(
             name,
@@ -2422,7 +2423,7 @@ class InteractionModel(
 
         Returns
         -------
-            A SelfContactStd object.
+        A SelfContactStd object.
         """
         self.interactions[name] = interaction = SelfContactStd(
             name,
@@ -2554,7 +2555,7 @@ class InteractionModel(
 
         Returns
         -------
-            A StdContactControl object.
+        A StdContactControl object.
 
         Raises
         ------
@@ -2626,7 +2627,7 @@ class InteractionModel(
 
         Returns
         -------
-            A StdInitialization object.
+        A StdInitialization object.
 
         Raises
         ------
@@ -2688,7 +2689,7 @@ class InteractionModel(
 
         Returns
         -------
-            A StdStabilization object.
+        A StdStabilization object.
 
         Raises
         ------
@@ -2749,7 +2750,7 @@ class InteractionModel(
 
         Returns
         -------
-            A StdXplCosimulation object.
+        A StdXplCosimulation object.
         """
         self.interactions[name] = interaction = StdXplCosimulation(
             name, createStepName, region, incrementation, stepSize, stepSizeDefinition
@@ -2843,7 +2844,7 @@ class InteractionModel(
 
         Returns
         -------
-            A SurfaceToSurfaceContactExp object.
+        A SurfaceToSurfaceContactExp object.
         """
         self.interactions[name] = interaction = SurfaceToSurfaceContactExp(
             name,
@@ -3022,7 +3023,7 @@ class InteractionModel(
 
         Returns
         -------
-            A SurfaceToSurfaceContactStd object.
+        A SurfaceToSurfaceContactStd object.
         """
         self.interactions[name] = interaction = SurfaceToSurfaceContactStd(
             name,
@@ -3086,7 +3087,7 @@ class InteractionModel(
 
         Returns
         -------
-            A XFEMCrackGrowth object.
+        A XFEMCrackGrowth object.
         """
         self.interactions[name] = interaction = XFEMCrackGrowth(
             name, createStepName, crackName, allowGrowth

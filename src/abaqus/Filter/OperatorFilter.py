@@ -71,7 +71,7 @@ class OperatorFilter(Filter):
 
         Returns
         -------
-            An OperatorFilter object.
+        An OperatorFilter object.
 
         Raises
         ------

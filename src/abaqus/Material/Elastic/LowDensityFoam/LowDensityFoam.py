@@ -72,7 +72,7 @@ class LowDensityFoam:
 
         Returns
         -------
-            A LowDensityFoam object.
+        A LowDensityFoam object.
 
         Raises
         ------

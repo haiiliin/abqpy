@@ -94,7 +94,7 @@ class FluidCavityPressureBC(BoundaryCondition):
 
         Returns
         -------
-            A FluidCavityPressureBC object.
+        A FluidCavityPressureBC object.
         """
         super().__init__()
         pass

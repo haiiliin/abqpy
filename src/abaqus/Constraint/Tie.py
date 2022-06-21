@@ -93,7 +93,7 @@ class Tie(Constraint):
 
         Returns
         -------
-            A Tie object.
+        A Tie object.
         """
         super().__init__()
         pass

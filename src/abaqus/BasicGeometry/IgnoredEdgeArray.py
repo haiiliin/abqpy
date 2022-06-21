@@ -49,7 +49,7 @@ class IgnoredEdgeArray:
 
         Returns
         -------
-            An IgnoredEdge object or a sequence of IgnoredEdge objects.
+        An IgnoredEdge object or a sequence of IgnoredEdge objects.
 
         """
         pass
@@ -67,7 +67,7 @@ class IgnoredEdgeArray:
 
         Returns
         -------
-            An IgnoredEdge object or a sequence of IgnoredEdge objects.
+        An IgnoredEdge object or a sequence of IgnoredEdge objects.
 
         """
         pass
@@ -77,7 +77,7 @@ class IgnoredEdgeArray:
 
         Returns
         -------
-            A String specifying the object or objects.
+        A String specifying the object or objects.
 
         """
         pass
@@ -100,13 +100,13 @@ class IgnoredEdgeArray:
 
         Returns
         -------
-            This method returns a dictionary object. The key to the dictionary object is the
-            position of the input point in the tuple specified in the **coordinates** starting at
-            index 0. If a closest IgnoredEdge could be found then the value is a sequence consisting
-            of two objects. The first object in the sequence is an IgnoredEdge that is close to the
-            input point referred to by the key. The second object in the sequence, is a sequence of
-            floats which specify the **X**-, **Y**-, and **Z**-location of the closest point on the
-            IgnoredEdge to the given point. See program listing above.
+        This method returns a dictionary object. The key to the dictionary object is the
+        position of the input point in the tuple specified in the **coordinates** starting at
+        index 0. If a closest IgnoredEdge could be found then the value is a sequence consisting
+        of two objects. The first object in the sequence is an IgnoredEdge that is close to the
+        input point referred to by the key. The second object in the sequence, is a sequence of
+        floats which specify the **X**-, **Y**-, and **Z**-location of the closest point on the
+        IgnoredEdge to the given point. See program listing above.
 
         Raises
         ------

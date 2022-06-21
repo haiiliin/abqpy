@@ -24,7 +24,7 @@ class DisplayGroupSession(SessionBase):
 
         Returns
         -------
-            A DisplayGroup object.
+        A DisplayGroup object.
         """
         self.displayGroups[name] = displayGroup = DisplayGroup(name, leaf)
         return displayGroup

@@ -91,7 +91,7 @@ class BodyHeatFlux(Load):
 
         Returns
         -------
-            A BodyHeatFlux object.
+        A BodyHeatFlux object.
         """
         super().__init__()
         pass

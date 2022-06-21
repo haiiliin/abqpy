@@ -114,7 +114,7 @@ class Coupling(Constraint):
 
         Returns
         -------
-            A Coupling object.
+        A Coupling object.
         """
         super().__init__()
         pass

@@ -89,7 +89,7 @@ class Dielectric:
 
         Returns
         -------
-            A Dielectric object.
+        A Dielectric object.
         """
         pass
 

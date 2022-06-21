@@ -58,7 +58,7 @@ class AcousticImpedanceProp(ContactProperty):
 
         Returns
         -------
-            An AcousticImpedanceProp object.
+        An AcousticImpedanceProp object.
         """
         super().__init__(name)
         pass

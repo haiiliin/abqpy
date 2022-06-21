@@ -54,7 +54,7 @@ class ClayHardening:
 
         Returns
         -------
-            A ClayHardening object.
+        A ClayHardening object.
 
         Raises
         ------

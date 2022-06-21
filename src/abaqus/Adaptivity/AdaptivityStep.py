@@ -344,7 +344,7 @@ class AdaptivityStep(StepBase):
 
         Returns
         -------
-            An AdaptiveMeshDomain object
+        An AdaptiveMeshDomain object
         """
         self.adaptiveMeshDomains[controls] = adaptiveMeshDomain = AdaptiveMeshDomain(
             region, controls, frequency, initialMeshSweeps, meshSweeps

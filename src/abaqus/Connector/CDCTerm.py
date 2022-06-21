@@ -106,7 +106,7 @@ class CDCTerm:
 
         Returns
         -------
-            A CDCTerm object.
+        A CDCTerm object.
 
         Raises
         ------
@@ -196,7 +196,7 @@ class CDCTerm:
 
         Returns
         -------
-            A ConnectorOptions object.
+        A ConnectorOptions object.
 
         Raises
         ------

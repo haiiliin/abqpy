@@ -48,7 +48,7 @@ class OptimizationConstraint:
 
         Returns
         -------
-            An OptimizationConstraint object.
+        An OptimizationConstraint object.
 
         Raises
         ------

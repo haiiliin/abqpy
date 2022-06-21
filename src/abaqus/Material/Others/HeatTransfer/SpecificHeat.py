@@ -60,7 +60,7 @@ class SpecificHeat:
 
         Returns
         -------
-            A SpecificHeat object.
+        A SpecificHeat object.
 
         Raises
         ------

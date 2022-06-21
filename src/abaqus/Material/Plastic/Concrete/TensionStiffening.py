@@ -71,7 +71,7 @@ class TensionStiffening:
 
         Returns
         -------
-            A TensionStiffening object.
+        A TensionStiffening object.
 
         Raises
         ------

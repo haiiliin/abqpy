@@ -50,7 +50,7 @@ class LeafFromPartNodeLabels(Leaf):
 
         Returns
         -------
-            A LeafFromPartNodeLabels object.
+        A LeafFromPartNodeLabels object.
         """
         super().__init__(DEFAULT_MODEL)
         pass

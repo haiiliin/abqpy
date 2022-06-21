@@ -89,7 +89,7 @@ class ClayPlasticity:
 
         Returns
         -------
-            A ClayPlasticity object.
+        A ClayPlasticity object.
 
         Raises
         ------

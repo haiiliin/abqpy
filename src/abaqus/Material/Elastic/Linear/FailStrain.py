@@ -57,7 +57,7 @@ class FailStrain:
 
         Returns
         -------
-            A FailStrain object.
+        A FailStrain object.
 
         Raises
         ------

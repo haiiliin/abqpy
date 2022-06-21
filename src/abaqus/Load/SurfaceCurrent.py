@@ -91,7 +91,7 @@ class SurfaceCurrent(Load):
 
         Returns
         -------
-            A SurfaceCurrent object.
+        A SurfaceCurrent object.
         """
         super().__init__()
         pass

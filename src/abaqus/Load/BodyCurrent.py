@@ -91,7 +91,7 @@ class BodyCurrent(Load):
 
         Returns
         -------
-            A BodyCurrent object.
+        A BodyCurrent object.
         """
         super().__init__()
         pass

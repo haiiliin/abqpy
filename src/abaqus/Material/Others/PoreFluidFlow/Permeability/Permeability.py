@@ -93,7 +93,7 @@ class Permeability:
 
         Returns
         -------
-            A Permeability object.
+        A Permeability object.
 
         Raises
         ------

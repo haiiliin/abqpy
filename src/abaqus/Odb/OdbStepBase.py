@@ -191,7 +191,7 @@ class OdbStepBase:
 
         Returns
         -------
-            An OdbStep object.
+        An OdbStep object.
 
         Raises
         ------
@@ -220,7 +220,7 @@ class OdbStepBase:
 
         Returns
         -------
-            An OdbFrame object.
+        An OdbFrame object.
 
         Raises
         ------
@@ -240,7 +240,7 @@ class OdbStepBase:
 
         Returns
         -------
-            An OdbFrame object.
+        An OdbFrame object.
 
         Raises
         ------
@@ -273,7 +273,7 @@ class OdbStepBase:
 
         Returns
         -------
-            An OdbFrame object.
+        An OdbFrame object.
 
         Raises
         ------
@@ -300,7 +300,7 @@ class OdbStepBase:
 
         Returns
         -------
-            A HistoryRegion object.
+        A HistoryRegion object.
 
         Raises
         ------

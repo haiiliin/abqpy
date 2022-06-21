@@ -31,6 +31,6 @@ class Spectrum:
 
         Returns
         -------
-            A Spectrum object.
+        A Spectrum object.
         """
         pass

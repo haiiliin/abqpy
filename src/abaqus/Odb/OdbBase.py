@@ -129,7 +129,7 @@ class OdbBase:
 
         Returns
         -------
-            An Odb object.
+        An Odb object.
         """
         pass
 
@@ -158,7 +158,7 @@ class OdbBase:
 
         Returns
         -------
-            An OdbFrame object.
+        An OdbFrame object.
 
         Raises
         ------
@@ -186,6 +186,6 @@ class OdbBase:
 
         Returns
         -------
-            A Boolean specifying whether additional steps or frames were added to the Odb object.
+        A Boolean specifying whether additional steps or frames were added to the Odb object.
         """
         pass

@@ -62,7 +62,7 @@ class PropertyTableData:
 
         Returns
         -------
-            A PropertyTableData object.
+        A PropertyTableData object.
 
         Raises
         ------

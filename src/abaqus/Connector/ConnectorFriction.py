@@ -178,7 +178,7 @@ class ConnectorFriction(ConnectorBehaviorOption):
 
         Returns
         -------
-            A ConnectorFriction object.
+        A ConnectorFriction object.
 
         Raises
         ------

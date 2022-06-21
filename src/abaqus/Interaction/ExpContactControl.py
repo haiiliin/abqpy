@@ -69,7 +69,7 @@ class ExpContactControl(ContactControl):
 
         Returns
         -------
-            An ExpContactControl object.
+        An ExpContactControl object.
 
         Raises
         ------

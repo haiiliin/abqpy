@@ -43,7 +43,7 @@ class InterestingPoint:
 
         Returns
         -------
-            An InterestingPoint object.
+        An InterestingPoint object.
 
         """
         pass

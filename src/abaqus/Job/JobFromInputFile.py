@@ -166,7 +166,7 @@ class JobFromInputFile(Job):
 
         Returns
         -------
-            A JobFromInputFile object.
+        A JobFromInputFile object.
 
         Raises
         ------

@@ -150,7 +150,7 @@ class OdbInstanceBase:
 
         Returns
         -------
-            An OdbInstance object.
+        An OdbInstance object.
         """
         pass
 
@@ -240,7 +240,7 @@ class OdbInstanceBase:
 
         Returns
         -------
-            An OdbMeshElement object.
+        An OdbMeshElement object.
 
         Raises
         ------
@@ -259,7 +259,7 @@ class OdbInstanceBase:
 
         Returns
         -------
-            AnOdbMeshNode object.
+        AnOdbMeshNode object.
 
         Raises
         ------

@@ -54,7 +54,7 @@ class MohrCoulombHardening:
 
         Returns
         -------
-            A MohrCoulombHardening object. 
+        A MohrCoulombHardening object. 
 
         Raises
         ------

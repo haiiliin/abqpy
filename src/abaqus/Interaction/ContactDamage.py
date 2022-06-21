@@ -348,7 +348,7 @@ class ContactDamage:
 
         Returns
         -------
-            A ContactDamage object.
+        A ContactDamage object.
         """
         pass
 

@@ -53,7 +53,7 @@ class LeafFromModelNodeLabels(Leaf):
 
         Returns
         -------
-            A LeafFromModelNodeLabels object.
+        A LeafFromModelNodeLabels object.
         """
         super().__init__(DEFAULT_MODEL)
         pass

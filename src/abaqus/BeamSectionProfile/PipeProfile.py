@@ -46,7 +46,7 @@ class PipeProfile(Profile):
 
         Returns
         -------
-            A PipeProfile object.
+        A PipeProfile object.
 
         Raises
         ------

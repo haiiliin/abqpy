@@ -84,7 +84,7 @@ class ShapeDemoldControl(GeometricRestriction):
 
         Returns
         -------
-            A ShapeDemoldControl object.
+        A ShapeDemoldControl object.
         """
         super().__init__()
         pass

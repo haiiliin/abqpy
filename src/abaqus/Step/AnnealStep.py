@@ -258,7 +258,7 @@ class AnnealStep(AnalysisStep):
 
         Returns
         -------
-            An AnnealStep object.
+        An AnnealStep object.
 
         Raises
         ------

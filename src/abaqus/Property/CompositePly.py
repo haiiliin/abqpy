@@ -99,7 +99,7 @@ class CompositePly:
 
         Returns
         -------
-            A CompositePly object.
+        A CompositePly object.
 
         Raises
         ------

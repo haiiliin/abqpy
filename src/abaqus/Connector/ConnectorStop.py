@@ -53,7 +53,7 @@ class ConnectorStop(ConnectorBehaviorOption):
 
         Returns
         -------
-            A ConnectorStop object.
+        A ConnectorStop object.
 
         Raises
         ------

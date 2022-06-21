@@ -63,7 +63,7 @@ class AdaptivityIteration:
 
         Returns
         -------
-            An AdaptivityIteration object.
+        An AdaptivityIteration object.
         """
         pass
 
@@ -90,7 +90,7 @@ class AdaptivityIteration:
 
         Returns
         -------
-            An ErrorIndicatorResult object.
+        An ErrorIndicatorResult object.
 
         Raises
         ------
@@ -137,7 +137,7 @@ class AdaptivityIteration:
 
         Returns
         -------
-            A RuleResult object.
+        A RuleResult object.
 
         Raises
         ------

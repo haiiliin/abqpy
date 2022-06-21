@@ -70,7 +70,7 @@ class DiscreteField(Field):
 
         Returns
         -------
-            A DiscreteField object.
+        A DiscreteField object.
 
         Raises
         ------
@@ -124,7 +124,7 @@ class DiscreteField(Field):
 
         Returns
         -------
-            A DiscreteField object.
+        A DiscreteField object.
 
         Raises
         ------
@@ -163,7 +163,7 @@ class DiscreteField(Field):
 
         Returns
         -------
-            A DiscreteField object.
+        A DiscreteField object.
 
         Raises
         ------

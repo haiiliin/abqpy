@@ -50,7 +50,7 @@ class DataTable:
 
         Returns
         -------
-            A DataTable object.
+        A DataTable object.
 
         Raises
         ------

@@ -68,7 +68,7 @@ class SubstructureLoad(Load):
 
         Returns
         -------
-            A SubstructureLoad object.
+        A SubstructureLoad object.
         """
         super().__init__()
         pass

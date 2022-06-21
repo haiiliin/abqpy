@@ -47,7 +47,7 @@ class ElasticFoundation(Interaction):
 
         Returns
         -------
-            An ElasticFoundation object.
+        An ElasticFoundation object.
         """
         super().__init__()
         pass

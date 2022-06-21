@@ -59,7 +59,7 @@ class ContactArea:
 
         Returns
         -------
-            A ContactArea object.
+        A ContactArea object.
         """
         pass
 

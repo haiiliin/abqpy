@@ -96,7 +96,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A BodyCharge object.
+        A BodyCharge object.
         """
         self.loads[name] = load = BodyCharge(
             name, createStepName, region, magnitude, amplitude, distributionType, field
@@ -148,7 +148,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A BodyConcentrationFlux object.
+        A BodyConcentrationFlux object.
         """
         self.loads[name] = load = BodyConcentrationFlux(
             name, createStepName, region, magnitude, field, distributionType, amplitude
@@ -200,7 +200,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A BodyCurrent object.
+        A BodyCurrent object.
         """
         self.loads[name] = load = BodyCurrent(
             name, createStepName, region, magnitude, amplitude, distributionType, field
@@ -253,7 +253,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A BodyCurrentDensity object.
+        A BodyCurrentDensity object.
         """
         self.loads[name] = load = BodyCurrentDensity(
             name,
@@ -319,7 +319,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A BodyForce object.
+        A BodyForce object.
         """
         self.loads[name] = load = BodyForce(
             name,
@@ -379,7 +379,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A BodyHeatFlux object.
+        A BodyHeatFlux object.
         """
         self.loads[name] = load = BodyHeatFlux(
             name, createStepName, region, magnitude, field, distributionType, amplitude
@@ -431,7 +431,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A BoltLoad object.
+        A BoltLoad object.
 
         Raises
         ------
@@ -487,7 +487,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A ConcCharge object.
+        A ConcCharge object.
         """
         self.loads[name] = load = ConcCharge(
             name, createStepName, region, magnitude, distributionType, field, amplitude
@@ -539,7 +539,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A ConcConcFlux object.
+        A ConcConcFlux object.
         """
         self.loads[name] = load = ConcConcFlux(
             name, createStepName, region, magnitude, distributionType, field, amplitude
@@ -591,7 +591,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A ConcCurrent object.
+        A ConcCurrent object.
         """
         self.loads[name] = load = ConcCurrent(
             name, createStepName, region, magnitude, distributionType, field, amplitude
@@ -661,7 +661,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A ConcentratedForce object.
+        A ConcentratedForce object.
         """
         self.loads[name] = load = ConcentratedForce(
             name,
@@ -727,7 +727,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A ConcentratedHeatFlux object.
+        A ConcentratedHeatFlux object.
         """
         self.loads[name] = load = ConcentratedHeatFlux(
             name,
@@ -786,7 +786,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A ConcPoreFluid object.
+        A ConcPoreFluid object.
         """
         self.loads[name] = load = ConcPoreFluid(
             name, createStepName, region, magnitude, distributionType, field, amplitude
@@ -851,7 +851,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A ConnectorForce object.
+        A ConnectorForce object.
         """
         self.loads[name] = load = ConnectorForce(
             name,
@@ -923,7 +923,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A ConnectorMoment object.
+        A ConnectorMoment object.
         """
         self.loads[name] = load = ConnectorMoment(
             name,
@@ -989,7 +989,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A CoriolisForce object.
+        A CoriolisForce object.
         """
         self.loads[name] = load = CoriolisForce(
             name,
@@ -1056,7 +1056,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A Gravity object.
+        A Gravity object.
         """
         self.loads[name] = load = Gravity(
             name,
@@ -1128,7 +1128,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            An InertiaRelief object.
+        An InertiaRelief object.
         """
         self.loads[name] = load = InertiaRelief(
             name,
@@ -1189,7 +1189,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            An InwardVolAccel object.
+        An InwardVolAccel object.
         """
         self.loads[name] = load = InwardVolAccel(
             name, createStepName, region, magnitude, distributionType, field, amplitude
@@ -1253,7 +1253,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A LineLoad object.
+        A LineLoad object.
         """
         self.loads[name] = load = LineLoad(
             name,
@@ -1332,7 +1332,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A Moment object.
+        A Moment object.
         """
         self.loads[name] = load = Moment(
             name,
@@ -1401,7 +1401,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A PEGLoad object.
+        A PEGLoad object.
         """
         self.loads[name] = load = PEGLoad(
             name,
@@ -1476,7 +1476,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A PipePressure object.
+        A PipePressure object.
         """
         self.loads[name] = load = PipePressure(
             name,
@@ -1551,7 +1551,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A Pressure object.
+        A Pressure object.
         """
         self.loads[name] = load = Pressure(
             name,
@@ -1628,7 +1628,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A RotationalBodyForce object.
+        A RotationalBodyForce object.
         """
         self.loads[name] = load = RotationalBodyForce(
             name,
@@ -1733,7 +1733,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A ShellEdgeLoad object.
+        A ShellEdgeLoad object.
         """
         self.loads[name] = load = ShellEdgeLoad(
             name,
@@ -1807,7 +1807,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A SubmodelSB object.
+        A SubmodelSB object.
         """
         self.loads[name] = load = SubmodelSB(
             name,
@@ -1859,7 +1859,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A SubstructureLoad object.
+        A SubstructureLoad object.
         """
         self.loads[name] = load = SubstructureLoad(
             name, createStepName, region, loadCaseNames, magnitude, amplitude
@@ -1911,7 +1911,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A SurfaceCharge object.
+        A SurfaceCharge object.
         """
         self.loads[name] = load = SurfaceCharge(
             name, createStepName, region, magnitude, distributionType, field, amplitude
@@ -1964,7 +1964,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A SurfaceConcentrationFlux object.
+        A SurfaceConcentrationFlux object.
         """
         self.loads[name] = load = SurfaceConcentrationFlux(
             name, createStepName, region, magnitude, field, distributionType, amplitude
@@ -2016,7 +2016,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A SurfaceCurrent object.
+        A SurfaceCurrent object.
         """
         self.loads[name] = load = SurfaceCurrent(
             name, createStepName, region, magnitude, distributionType, field, amplitude
@@ -2069,7 +2069,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A SurfaceCurrentDensity object.
+        A SurfaceCurrentDensity object.
         """
         self.loads[name] = load = SurfaceCurrentDensity(
             name,
@@ -2128,7 +2128,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A SurfaceHeatFlux object.
+        A SurfaceHeatFlux object.
         """
         self.loads[name] = load = SurfaceHeatFlux(
             name, createStepName, region, magnitude, field, distributionType, amplitude
@@ -2180,7 +2180,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A SurfacePoreFluid object.
+        A SurfacePoreFluid object.
         """
         self.loads[name] = load = SurfacePoreFluid(
             name, createStepName, region, magnitude, field, distributionType, amplitude
@@ -2273,7 +2273,7 @@ class LoadModel(ModelBase):
 
         Returns
         -------
-            A SurfaceTraction object.
+        A SurfaceTraction object.
         """
         self.loads[name] = load = SurfaceTraction(
             name,

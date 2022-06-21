@@ -59,7 +59,7 @@ class ShapeMemberSize(GeometricRestriction):
 
         Returns
         -------
-            A ShapeMemberSize object.
+        A ShapeMemberSize object.
         """
         super().__init__()
         pass

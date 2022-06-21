@@ -77,7 +77,7 @@ class EquallySpacedAmplitude(Amplitude):
 
         Returns
         -------
-            An EquallySpacedAmplitude object.
+        An EquallySpacedAmplitude object.
 
         Raises
         ------

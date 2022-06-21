@@ -100,7 +100,7 @@ class Gravity(Load):
 
         Returns
         -------
-            A Gravity object.
+        A Gravity object.
         """
         super().__init__()
         pass

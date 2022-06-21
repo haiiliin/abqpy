@@ -70,7 +70,7 @@ class TabularAmplitude(Amplitude):
 
         Returns
         -------
-            A TabularAmplitude object.
+        A TabularAmplitude object.
 
         Raises
         ------

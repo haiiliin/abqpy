@@ -85,7 +85,7 @@ class KinematicHardening(PredefinedField):
 
         Returns
         -------
-            A KinematicHardening object.
+        A KinematicHardening object.
         """
         super().__init__()
         pass

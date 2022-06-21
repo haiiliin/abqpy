@@ -199,7 +199,7 @@ class Elastic:
 
         Returns
         -------
-            An Elastic object.
+        An Elastic object.
 
         Raises
         ------

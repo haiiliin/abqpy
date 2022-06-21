@@ -54,7 +54,7 @@ class SectionOdb(OdbBase):
 
         Returns
         -------
-            An AcousticInfiniteSection object.
+        An AcousticInfiniteSection object.
 
         Raises
         ------
@@ -90,7 +90,7 @@ class SectionOdb(OdbBase):
 
         Returns
         -------
-            An AcousticInterfaceSection object.
+        An AcousticInterfaceSection object.
 
         Raises
         ------
@@ -234,7 +234,7 @@ class SectionOdb(OdbBase):
 
         Returns
         -------
-            A BeamSection object.
+        A BeamSection object.
         """
         self.sections[name] = section = BeamSection(
             name,
@@ -313,7 +313,7 @@ class SectionOdb(OdbBase):
 
         Returns
         -------
-            A CohesiveSection object.
+        A CohesiveSection object.
 
         Raises
         ------
@@ -428,7 +428,7 @@ class SectionOdb(OdbBase):
 
         Returns
         -------
-            A CompositeShellSection object.
+        A CompositeShellSection object.
         """
         self.sections[name] = section = CompositeShellSection(
             name,
@@ -484,7 +484,7 @@ class SectionOdb(OdbBase):
 
         Returns
         -------
-            A CompositeSolidSection object.
+        A CompositeSolidSection object.
         """
         self.sections[name] = section = CompositeSolidSection(
             name, layup, symmetric, layupName
@@ -606,7 +606,7 @@ class SectionOdb(OdbBase):
 
         Returns
         -------
-            A ConnectorSection object.
+        A ConnectorSection object.
 
         Raises
         ------
@@ -658,7 +658,7 @@ class SectionOdb(OdbBase):
 
         Returns
         -------
-            An EulerianSection object.
+        An EulerianSection object.
         """
         self.sections[name] = section = EulerianSection(name, data)
         return section
@@ -711,7 +711,7 @@ class SectionOdb(OdbBase):
 
         Returns
         -------
-            A GasketSection object. and ValueError.
+        A GasketSection object. and ValueError.
         """
         self.sections[name] = section = GasketSection(
             name,
@@ -793,7 +793,7 @@ class SectionOdb(OdbBase):
 
         Returns
         -------
-            A GeneralStiffnessSection object.
+        A GeneralStiffnessSection object.
         """
         self.sections[name] = section = GeneralStiffnessSection(
             name,
@@ -912,7 +912,7 @@ class SectionOdb(OdbBase):
 
         Returns
         -------
-            A HomogeneousShellSection object.
+        A HomogeneousShellSection object.
         """
         self.sections[name] = section = HomogeneousShellSection(
             name,
@@ -961,7 +961,7 @@ class SectionOdb(OdbBase):
 
         Returns
         -------
-            A HomogeneousSolidSection object.
+        A HomogeneousSolidSection object.
 
         Raises
         ------
@@ -1025,7 +1025,7 @@ class SectionOdb(OdbBase):
 
         Returns
         -------
-            A MembraneSection object.
+        A MembraneSection object.
 
         Raises
         ------
@@ -1078,7 +1078,7 @@ class SectionOdb(OdbBase):
 
         Returns
         -------
-            A MPCSection object.
+        A MPCSection object.
 
         Raises
         ------
@@ -1124,7 +1124,7 @@ class SectionOdb(OdbBase):
 
         Returns
         -------
-            A PEGSection object.
+        A PEGSection object.
 
         Raises
         ------
@@ -1163,7 +1163,7 @@ class SectionOdb(OdbBase):
 
         Returns
         -------
-            A SurfaceSection object.
+        A SurfaceSection object.
 
         Raises
         ------
@@ -1196,7 +1196,7 @@ class SectionOdb(OdbBase):
 
         Returns
         -------
-            A TrussSection object.
+        A TrussSection object.
 
         Raises
         ------

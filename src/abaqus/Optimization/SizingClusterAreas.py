@@ -36,7 +36,7 @@ class SizingClusterAreas(GeometricRestriction):
 
         Returns
         -------
-            A SizingClusterAreas object.
+        A SizingClusterAreas object.
         """
         super().__init__()
         pass

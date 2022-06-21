@@ -44,7 +44,7 @@ class ActuatorAmplitude(Amplitude):
 
         Returns
         -------
-            An ActuatorAmplitude object.
+        An ActuatorAmplitude object.
 
         Raises
         ------

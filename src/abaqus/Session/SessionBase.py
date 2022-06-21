@@ -480,7 +480,7 @@ class SessionBase:
 
         Returns
         -------
-            The connection port number used for the CAD connection.
+        The connection port number used for the CAD connection.
         """
         pass
 
@@ -489,8 +489,8 @@ class SessionBase:
 
         Returns
         -------
-            A Boolean value of True if the CAD connection enabled and False if the CAD connection
-            disabled.
+        A Boolean value of True if the CAD connection enabled and False if the CAD connection
+        disabled.
         """
         pass
 
@@ -747,7 +747,7 @@ class SessionBase:
 
         Returns
         -------
-            An Odb object.
+        An Odb object.
 
         Raises
         ------
@@ -786,7 +786,7 @@ class SessionBase:
 
         Returns
         -------
-            An Odb object.
+        An Odb object.
 
         Raises
         ------
@@ -818,7 +818,7 @@ class SessionBase:
 
         Returns
         -------
-            An Odb object.
+        An Odb object.
 
         Raises
         ------

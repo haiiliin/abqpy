@@ -148,7 +148,7 @@ class GasketThicknessBehavior:
 
         Returns
         -------
-            A GasketThicknessBehavior object.
+        A GasketThicknessBehavior object.
 
         Raises
         ------

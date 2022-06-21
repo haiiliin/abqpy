@@ -78,7 +78,7 @@ class ConnectorOrientation:
 
         Returns
         -------
-            A ConnectorOrientation object.
+        A ConnectorOrientation object.
         """
         pass
 

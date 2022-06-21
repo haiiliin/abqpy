@@ -71,7 +71,7 @@ class TensileFailure:
 
         Returns
         -------
-            An TensileFailure object.
+        An TensileFailure object.
 
         Raises
         ------

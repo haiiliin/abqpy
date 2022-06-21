@@ -242,7 +242,7 @@ class AssemblyBase(Feature):
 
         Returns
         -------
-            A PartInstance object.
+        A PartInstance object.
         """
         pass
 
@@ -273,7 +273,7 @@ class AssemblyBase(Feature):
 
         Returns
         -------
-            A ModelInstance object.
+        A ModelInstance object.
         """
         pass
 
@@ -299,7 +299,7 @@ class AssemblyBase(Feature):
 
         Returns
         -------
-            A PartInstance object.
+        A PartInstance object.
         """
         if "part" in kwargs.keys() or (len(args) > 0 and isinstance(args[0], Part)):
             instance = PartInstance(name, *args, **kwargs)
@@ -500,8 +500,8 @@ class AssemblyBase(Feature):
 
         Returns
         -------
-            A Float specifying the angle between the specified entities. If you provide a plane as
-            an argument, Abaqus/CAE computes the angle using the normal to the plane.
+        A Float specifying the angle between the specified entities. If you provide a plane as
+        an argument, Abaqus/CAE computes the angle using the normal to the plane.
         """
         pass
 
@@ -515,7 +515,7 @@ class AssemblyBase(Feature):
 
         Returns
         -------
-            A tuple of three Floats representing the coordinates of the specified point.
+        A tuple of three Floats representing the coordinates of the specified point.
         """
         pass
 
@@ -539,7 +539,7 @@ class AssemblyBase(Feature):
 
         Returns
         -------
-            A Float specifying the calculated distance.
+        A Float specifying the calculated distance.
         """
         pass
 
@@ -555,17 +555,18 @@ class AssemblyBase(Feature):
 
         Returns
         -------
-            A tuple of dictionary objects. Each dictionary contains five items with the following
-            keys:
-            **edge**: An Edge object specifying the attachment line.
-            **startFace**: A Face object specifying the face associated with one end of the attachment
-            line.
-            **endFace**: A Face object specifying the face associated with the other end of the
-            attachment line.
-            **startVertex**: A ConstrainedSketchVertex object specifying the vertex associated with one end of the
-            attachment line. This end is also associated with the startFace.
-            **endVertex**: A ConstrainedSketchVertex object specifying the vertex associated with the other end of the
-            attachment line. This end is also associated with the endFace.
+        A tuple of dictionary objects. Each dictionary contains five items with the following
+        keys:
+        
+        - **edge**: An Edge object specifying the attachment line.
+        - **startFace**: A Face object specifying the face associated with one end of the attachment
+          line.
+        - **endFace**: A Face object specifying the face associated with the other end of the
+          attachment line.
+        - **startVertex**: A ConstrainedSketchVertex object specifying the vertex associated with one end of the
+          attachment line. This end is also associated with the startFace.
+        - **endVertex**: A ConstrainedSketchVertex object specifying the vertex associated with the other end of the
+          attachment line. This end is also associated with the endFace.
         """
         pass
 
@@ -580,8 +581,8 @@ class AssemblyBase(Feature):
 
         Returns
         -------
-            A tuple of strings representing the section names. If no section names are found, the
-            tuple will contain one empty string.
+        A tuple of strings representing the section names. If no section names are found, the
+        tuple will contain one empty string.
         """
         pass
 

@@ -91,7 +91,7 @@ class ConcConcFlux(Load):
 
         Returns
         -------
-            A ConcConcFlux object.
+        A ConcConcFlux object.
         """
         super().__init__()
         pass

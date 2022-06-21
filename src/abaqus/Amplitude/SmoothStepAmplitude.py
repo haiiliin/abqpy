@@ -48,7 +48,7 @@ class SmoothStepAmplitude(Amplitude):
 
         Returns
         -------
-            A SmoothStepAmplitude object.
+        A SmoothStepAmplitude object.
 
         Raises
         ------

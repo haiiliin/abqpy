@@ -1906,7 +1906,7 @@ class BoundaryConditionModel(ModelBase):
             in the global coordinate system. The default value is None.
         Returns
         -------
-            A TypeBC object.
+        A TypeBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = TypeBC.EncastreBC(
             name,
@@ -1952,7 +1952,7 @@ class BoundaryConditionModel(ModelBase):
             in the global coordinate system. The default value is None.
         Returns
         -------
-            A TypeBC object.
+        A TypeBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = TypeBC.PinnedBC(
             name,
@@ -1999,7 +1999,7 @@ class BoundaryConditionModel(ModelBase):
             in the global coordinate system. The default value is None.
         Returns
         -------
-            A TypeBC object.
+        A TypeBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = TypeBC.XsymmBC(
             name,
@@ -2046,7 +2046,7 @@ class BoundaryConditionModel(ModelBase):
             in the global coordinate system. The default value is None.
         Returns
         -------
-            A TypeBC object.
+        A TypeBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = TypeBC.YsymmBC(
             name,
@@ -2093,7 +2093,7 @@ class BoundaryConditionModel(ModelBase):
             in the global coordinate system. The default value is None.
         Returns
         -------
-            A TypeBC object.
+        A TypeBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = TypeBC.ZsymmBC(
             name,
@@ -2140,7 +2140,7 @@ class BoundaryConditionModel(ModelBase):
             in the global coordinate system. The default value is None.
         Returns
         -------
-            A TypeBC object.
+        A TypeBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = TypeBC.XasymmBC(
             name,
@@ -2187,7 +2187,7 @@ class BoundaryConditionModel(ModelBase):
             in the global coordinate system. The default value is None.
         Returns
         -------
-            A TypeBC object.
+        A TypeBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = TypeBC.YasymmBC(
             name,
@@ -2234,7 +2234,7 @@ class BoundaryConditionModel(ModelBase):
             in the global coordinate system. The default value is None.
         Returns
         -------
-            A TypeBC object.
+        A TypeBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = TypeBC.ZasymmBC(
             name,

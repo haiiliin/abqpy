@@ -50,7 +50,7 @@ class TrapezoidalProfile(Profile):
 
         Returns
         -------
-            A TrapezoidalProfile object.
+        A TrapezoidalProfile object.
 
         Raises
         ------

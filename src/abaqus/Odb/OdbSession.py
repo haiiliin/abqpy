@@ -22,7 +22,7 @@ class OdbSession(SessionBase):
 
         Returns
         -------
-            A ScratchOdb object.
+        A ScratchOdb object.
         """
         self.scratchOdbs["odb"] = scratchOdb = ScratchOdb(odb)
         return scratchOdb

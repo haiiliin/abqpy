@@ -108,7 +108,7 @@ class SubmodelSB(Load):
 
         Returns
         -------
-            A SubmodelSB object.
+        A SubmodelSB object.
         """
         super().__init__()
         pass

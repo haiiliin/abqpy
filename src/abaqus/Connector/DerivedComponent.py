@@ -57,7 +57,7 @@ class DerivedComponent:
 
         Returns
         -------
-            A DerivedComponent object.
+        A DerivedComponent object.
 
         Raises
         ------
@@ -147,7 +147,7 @@ class DerivedComponent:
 
         Returns
         -------
-            A CDCTerm object.
+        A CDCTerm object.
 
         Raises
         ------

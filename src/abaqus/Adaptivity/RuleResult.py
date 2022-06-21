@@ -58,7 +58,7 @@ class RuleResult:
 
         Returns
         -------
-            A RuleResult object.
+        A RuleResult object.
 
         Raises
         ------

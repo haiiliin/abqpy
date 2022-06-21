@@ -47,7 +47,7 @@ class Regularization:
 
         Returns
         -------
-            A Regularization object.
+        A Regularization object.
 
         Raises
         ------

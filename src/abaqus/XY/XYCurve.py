@@ -108,7 +108,7 @@ class XYCurve:
 
         Returns
         -------
-            An XYCurve object.
+        An XYCurve object.
         """
         pass
 

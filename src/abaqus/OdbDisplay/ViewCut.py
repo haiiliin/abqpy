@@ -164,7 +164,7 @@ class ViewCut:
 
         Returns
         -------
-            A ViewCut object.
+        A ViewCut object.
         """
         pass
 

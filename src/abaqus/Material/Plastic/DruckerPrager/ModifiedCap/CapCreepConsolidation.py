@@ -88,7 +88,7 @@ class CapCreepConsolidation:
 
         Returns
         -------
-            A CapCreepConsolidation object.
+        A CapCreepConsolidation object.
         """
         pass
 

@@ -25,6 +25,6 @@ class CommandRegister:
 
         Returns
         -------
-            A CommandRegister object.
+        A CommandRegister object.
         """
         pass

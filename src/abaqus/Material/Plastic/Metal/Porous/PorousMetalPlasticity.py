@@ -70,7 +70,7 @@ class PorousMetalPlasticity:
 
         Returns
         -------
-            A PorousMetalPlasticity object.
+        A PorousMetalPlasticity object.
 
         Raises
         ------

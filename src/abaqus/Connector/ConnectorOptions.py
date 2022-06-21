@@ -132,7 +132,7 @@ class ConnectorOptions:
 
         Returns
         -------
-            A ConnectorOptions object.
+        A ConnectorOptions object.
 
         Raises
         ------

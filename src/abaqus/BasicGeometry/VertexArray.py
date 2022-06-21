@@ -48,7 +48,7 @@ class VertexArray:
 
         Returns
         -------
-            A VertexArray object.
+        A VertexArray object.
 
         """
         pass
@@ -80,7 +80,7 @@ class VertexArray:
 
         Returns
         -------
-            A ConstrainedSketchVertex object or a sequence of ConstrainedSketchVertex objects..
+        A ConstrainedSketchVertex object or a sequence of ConstrainedSketchVertex objects..
 
         """
         pass
@@ -98,7 +98,7 @@ class VertexArray:
 
         Returns
         -------
-            A ConstrainedSketchVertex object or a sequence of ConstrainedSketchVertex objects..
+        A ConstrainedSketchVertex object or a sequence of ConstrainedSketchVertex objects..
 
         """
         pass
@@ -108,7 +108,7 @@ class VertexArray:
 
         Returns
         -------
-            A String specifying the object or objects.
+        A String specifying the object or objects.
 
         """
         pass
@@ -142,7 +142,7 @@ class VertexArray:
 
         Returns
         -------
-            A VertexArray object, which is a sequence of ConstrainedSketchVertex objects..
+        A VertexArray object, which is a sequence of ConstrainedSketchVertex objects..
 
         """
         pass
@@ -164,7 +164,7 @@ class VertexArray:
 
         Returns
         -------
-            A VertexArray object, which is a sequence of ConstrainedSketchVertex objects..
+        A VertexArray object, which is a sequence of ConstrainedSketchVertex objects..
 
         """
         pass
@@ -182,7 +182,7 @@ class VertexArray:
 
         Returns
         -------
-            A VertexArray object, which is a sequence of ConstrainedSketchVertex objects..
+        A VertexArray object, which is a sequence of ConstrainedSketchVertex objects..
 
         """
         pass
@@ -193,11 +193,12 @@ class VertexArray:
 
         Returns
         -------
-            A Dictionary object with the following items:
-            **low**: a tuple of three floats representing the minimum **X**-, **Y**-, and **Z**-boundary
-            values of the bounding box.
-            **high**: a tuple of three floats representing the maximum **X**-, **Y**-, and **Z**-boundary
-            values of the bounding box.
+        A Dictionary object with the following items:
+        
+        - **low**: a tuple of three floats representing the minimum **X**-, **Y**-, and **Z**-boundary
+          values of the bounding box.
+        - **high**: a tuple of three floats representing the maximum **X**-, **Y**-, and **Z**-boundary
+          values of the bounding box.
 
         """
         pass
@@ -220,13 +221,13 @@ class VertexArray:
 
         Returns
         -------
-            This method returns a dictionary object. The key to the dictionary object is the
-            position of the input point in the tuple specified in the **coordinates** starting at
-            index 0. If a closest vertex could be found then the value is a sequence consisting of
-            two objects. The first object in the sequence is a ConstrainedSketchVertex that is close to the input
-            point referred to by the key. The second object in the sequence is a sequence of floats
-            that specifies the **X**-, **Y**-, and **Z**-location of the ConstrainedSketchVertex. See program listing
-            above.
+        This method returns a dictionary object. The key to the dictionary object is the
+        position of the input point in the tuple specified in the **coordinates** starting at
+        index 0. If a closest vertex could be found then the value is a sequence consisting of
+        two objects. The first object in the sequence is a ConstrainedSketchVertex that is close to the input
+        point referred to by the key. The second object in the sequence is a sequence of floats
+        that specifies the **X**-, **Y**-, and **Z**-location of the ConstrainedSketchVertex. See program listing
+        above.
 
         Raises
         ------

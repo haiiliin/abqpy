@@ -364,7 +364,7 @@ class ExplicitDynamicsStep(AnalysisStep):
 
         Returns
         -------
-            An ExplicitDynamicsStep object.
+        An ExplicitDynamicsStep object.
 
         Raises
         ------

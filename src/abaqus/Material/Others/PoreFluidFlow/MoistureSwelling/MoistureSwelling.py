@@ -47,7 +47,7 @@ class MoistureSwelling:
 
         Returns
         -------
-            A MoistureSwelling object.
+        A MoistureSwelling object.
         """
         pass
 

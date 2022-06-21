@@ -91,7 +91,7 @@ class ConcreteTensionStiffening:
 
         Returns
         -------
-            A ConcreteTensionStiffening object. 
+        A ConcreteTensionStiffening object. 
 
         Raises
         ------

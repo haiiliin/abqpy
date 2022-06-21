@@ -79,7 +79,7 @@ class LocalStopCondition(StopCondition):
 
         Returns
         -------
-            A LocalStopCondition object.
+        A LocalStopCondition object.
         """
         super().__init__()
         pass

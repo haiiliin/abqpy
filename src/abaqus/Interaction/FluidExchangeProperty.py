@@ -112,7 +112,7 @@ class FluidExchangeProperty(ContactProperty):
 
         Returns
         -------
-            A FluidExchangeProperty object.
+        A FluidExchangeProperty object.
         """
         super().__init__(name)
         pass

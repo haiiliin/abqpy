@@ -71,7 +71,7 @@ class BoxProfile(Profile):
 
         Returns
         -------
-            A BoxProfile object.
+        A BoxProfile object.
 
         Raises
         ------

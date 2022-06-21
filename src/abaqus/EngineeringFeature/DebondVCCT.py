@@ -71,7 +71,7 @@ class DebondVCCT(Crack):
 
         Returns
         -------
-            A DebondVCCT object.
+        A DebondVCCT object.
         """
         super().__init__()
         pass

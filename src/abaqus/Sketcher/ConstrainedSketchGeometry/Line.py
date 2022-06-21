@@ -22,7 +22,7 @@ class Line(ConstrainedSketchGeometry):
 
         Returns
         -------
-            A ConstrainedSketchGeometry object (None if the line cannot be created).
+        A ConstrainedSketchGeometry object (None if the line cannot be created).
 
         """
         pass

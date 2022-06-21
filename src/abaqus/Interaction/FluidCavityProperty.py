@@ -156,7 +156,7 @@ class FluidCavityProperty(ContactProperty):
 
         Returns
         -------
-            A FluidCavityProperty object.
+        A FluidCavityProperty object.
         """
         super().__init__(name)
         pass

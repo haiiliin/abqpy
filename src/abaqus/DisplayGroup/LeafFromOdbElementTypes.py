@@ -47,7 +47,7 @@ class LeafFromOdbElementTypes(Leaf):
 
         Returns
         -------
-            A LeafFromOdbElementTypes object.
+        A LeafFromOdbElementTypes object.
         """
         super().__init__(DEFAULT_MODEL)
         pass

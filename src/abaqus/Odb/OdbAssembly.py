@@ -46,7 +46,7 @@ class OdbAssembly(OdbAssemblyBase):
 
         Returns
         -------
-            An OdbDatumCsys object.
+        An OdbDatumCsys object.
         """
         self.datumCsyses[name] = datumCsys = OdbDatumCsys()
         return datumCsys
@@ -90,7 +90,7 @@ class OdbAssembly(OdbAssemblyBase):
 
         Returns
         -------
-            An OdbDatumCsys object.
+        An OdbDatumCsys object.
         """
         self.datumCsyses[name] = datumCsys = OdbDatumCsys()
         return datumCsys
@@ -134,7 +134,7 @@ class OdbAssembly(OdbAssemblyBase):
 
         Returns
         -------
-            An OdbDatumCsys object.
+        An OdbDatumCsys object.
         """
         self.datumCsyses[name] = datumCsys = OdbDatumCsys()
         return datumCsys
@@ -169,7 +169,7 @@ class OdbAssembly(OdbAssemblyBase):
 
         Returns
         -------
-            An OdbDatumCsys object.
+        An OdbDatumCsys object.
         """
         self.datumCsyses[name] = datumCsys = OdbDatumCsys()
         return datumCsys
@@ -194,7 +194,7 @@ class OdbAssembly(OdbAssemblyBase):
 
         Returns
         -------
-            An OdbDatumCsys object.
+        An OdbDatumCsys object.
         """
         self.datumCsyses[name] = datumCsys = OdbDatumCsys()
         return datumCsys
@@ -233,7 +233,7 @@ class OdbAssembly(OdbAssemblyBase):
 
         Returns
         -------
-            An OdbInstance object.
+        An OdbInstance object.
         """
         self.instances[name] = odbInstance = OdbInstance(name, object, localCoordSystem)
         return odbInstance
@@ -286,7 +286,7 @@ class OdbAssembly(OdbAssemblyBase):
 
         Returns
         -------
-            An OdbRigidBody object.
+        An OdbRigidBody object.
         """
         odbRigidBody = OdbRigidBody(
             referenceNode,
@@ -325,7 +325,7 @@ class OdbAssembly(OdbAssemblyBase):
 
         Returns
         -------
-            An OdbSet object.
+        An OdbSet object.
         """
         self.nodeSets[name] = odbSet = OdbSet(name, nodes)
         return odbSet

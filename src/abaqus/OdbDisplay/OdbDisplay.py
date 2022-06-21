@@ -779,7 +779,7 @@ class OdbDisplay:
 
         Returns
         -------
-            A ViewCut object.
+        A ViewCut object.
         """
         self.viewCuts[name] = viewCut = ViewCut(
             name,

@@ -69,7 +69,7 @@ class NonstructuralMass(Inertia):
 
         Returns
         -------
-            A NonstructuralMass object.
+        A NonstructuralMass object.
         """
         super().__init__()
         pass

@@ -158,7 +158,7 @@ class Drawing:
 
         Returns
         -------
-            A Drawing object.
+        A Drawing object.
 
         Raises
         ------
@@ -184,7 +184,7 @@ class Drawing:
 
         Returns
         -------
-            The number of vertices described.
+        The number of vertices described.
 
         Raises
         ------
@@ -212,7 +212,7 @@ class Drawing:
 
         Returns
         -------
-            The number of normals described.
+        The number of normals described.
 
         Raises
         ------
@@ -246,7 +246,7 @@ class Drawing:
 
         Returns
         -------
-            The number of colors described.
+        The number of colors described.
 
         Raises
         ------
@@ -332,7 +332,7 @@ class Drawing:
 
         Returns
         -------
-            The total number of rendering commands that have been specified.
+        The total number of rendering commands that have been specified.
 
         Raises
         ------
@@ -374,7 +374,7 @@ class Drawing:
 
         Returns
         -------
-            The total number of rendering commands that have been specified.
+        The total number of rendering commands that have been specified.
 
         Raises
         ------

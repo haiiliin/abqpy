@@ -151,7 +151,7 @@ class HistoryPoint:
 
         Returns
         -------
-            A HistoryPoint object.
+        A HistoryPoint object.
         """
         pass
 
@@ -208,7 +208,7 @@ class HistoryPoint:
 
         Returns
         -------
-            A HistoryPoint object.
+        A HistoryPoint object.
         """
         pass
 
@@ -231,7 +231,7 @@ class HistoryPoint:
 
         Returns
         -------
-            A HistoryPoint object.
+        A HistoryPoint object.
         """
         pass
 
@@ -254,7 +254,7 @@ class HistoryPoint:
 
         Returns
         -------
-            A HistoryPoint object.
+        A HistoryPoint object.
         """
         pass
 
@@ -277,7 +277,7 @@ class HistoryPoint:
 
         Returns
         -------
-            A HistoryPoint object.
+        A HistoryPoint object.
         """
         pass
 

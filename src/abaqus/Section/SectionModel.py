@@ -65,7 +65,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-            An AcousticInfiniteSection object.
+        An AcousticInfiniteSection object.
 
         Raises
         ------
@@ -101,7 +101,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-            An AcousticInterfaceSection object.
+        An AcousticInterfaceSection object.
 
         Raises
         ------
@@ -245,7 +245,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-            A BeamSection object.
+        A BeamSection object.
         """
         self.sections[name] = section = BeamSection(
             name,
@@ -324,7 +324,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-            A CohesiveSection object.
+        A CohesiveSection object.
 
         Raises
         ------
@@ -439,7 +439,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-            A CompositeShellSection object.
+        A CompositeShellSection object.
         """
         self.sections[name] = section = CompositeShellSection(
             name,
@@ -495,7 +495,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-            A CompositeSolidSection object.
+        A CompositeSolidSection object.
         """
         self.sections[name] = section = CompositeSolidSection(
             name, layup, symmetric, layupName
@@ -617,7 +617,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-            A ConnectorSection object.
+        A ConnectorSection object.
 
         Raises
         ------
@@ -669,7 +669,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-            An EulerianSection object.
+        An EulerianSection object.
         """
         self.sections[name] = section = EulerianSection(name, data)
         return section
@@ -722,7 +722,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-            A GasketSection object. and ValueError.
+        A GasketSection object. and ValueError.
         """
         self.sections[name] = section = GasketSection(
             name,
@@ -804,7 +804,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-            A GeneralStiffnessSection object.
+        A GeneralStiffnessSection object.
         """
         self.sections[name] = section = GeneralStiffnessSection(
             name,
@@ -923,7 +923,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-            A HomogeneousShellSection object.
+        A HomogeneousShellSection object.
         """
         self.sections[name] = section = HomogeneousShellSection(
             name,
@@ -972,7 +972,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-            A HomogeneousSolidSection object.
+        A HomogeneousSolidSection object.
 
         Raises
         ------
@@ -1036,7 +1036,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-            A MembraneSection object.
+        A MembraneSection object.
 
         Raises
         ------
@@ -1089,7 +1089,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-            A MPCSection object.
+        A MPCSection object.
 
         Raises
         ------
@@ -1135,7 +1135,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-            A PEGSection object.
+        A PEGSection object.
 
         Raises
         ------
@@ -1174,7 +1174,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-            A SurfaceSection object.
+        A SurfaceSection object.
 
         Raises
         ------
@@ -1207,7 +1207,7 @@ class SectionModel(ModelBase):
 
         Returns
         -------
-            A TrussSection object.
+        A TrussSection object.
 
         Raises
         ------

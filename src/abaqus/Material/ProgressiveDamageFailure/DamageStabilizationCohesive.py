@@ -89,7 +89,7 @@ class DamageStabilizationCohesive:
 
         Returns
         -------
-            A DamageStabilizationCohesive object. 
+        A DamageStabilizationCohesive object. 
 
         Raises
         ------

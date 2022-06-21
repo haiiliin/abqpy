@@ -63,7 +63,7 @@ class FluidExchange(Interaction):
 
         Returns
         -------
-            A FluidExchange object.
+        A FluidExchange object.
         """
         super().__init__()
         pass

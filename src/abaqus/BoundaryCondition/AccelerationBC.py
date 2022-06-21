@@ -140,7 +140,7 @@ class AccelerationBC(BoundaryCondition):
 
         Returns
         -------
-            An AccelerationBC object.
+        An AccelerationBC object.
         """
         super().__init__()
         pass

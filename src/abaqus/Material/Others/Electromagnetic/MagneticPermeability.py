@@ -121,7 +121,7 @@ class MagneticPermeability:
 
         Returns
         -------
-            A MagneticPermeability object.
+        A MagneticPermeability object.
 
         Raises
         ------

@@ -265,7 +265,7 @@ class MdbBase:
 
         Returns
         -------
-            A list of model names present in the auxiliaryMdb
+        A list of model names present in the auxiliaryMdb
 
         Raises
         ------

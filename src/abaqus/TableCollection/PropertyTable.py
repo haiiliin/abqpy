@@ -55,7 +55,7 @@ class PropertyTable:
 
         Returns
         -------
-            A PropertyTable object.
+        A PropertyTable object.
 
         Raises
         ------
@@ -122,7 +122,7 @@ class PropertyTable:
 
         Returns
         -------
-            A PropertyTableData object.
+        A PropertyTableData object.
 
         Raises
         ------

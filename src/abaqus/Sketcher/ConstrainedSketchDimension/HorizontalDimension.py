@@ -40,7 +40,7 @@ class HorizontalDimension(ConstrainedSketchDimension):
 
         Returns
         -------
-            A ConstrainedSketchDimension object (None if the dimension cannot be created).
+        A ConstrainedSketchDimension object (None if the dimension cannot be created).
 
         """
         pass

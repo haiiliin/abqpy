@@ -58,7 +58,7 @@ class LeafFromNodeVarRange(Leaf):
 
         Returns
         -------
-            A LeafFromNodeVarRange object.
+        A LeafFromNodeVarRange object.
         """
         super().__init__(DEFAULT_MODEL)
         pass

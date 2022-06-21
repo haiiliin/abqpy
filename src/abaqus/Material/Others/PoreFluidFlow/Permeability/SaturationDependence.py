@@ -42,7 +42,7 @@ class SaturationDependence:
 
         Returns
         -------
-            A SaturationDependence object.
+        A SaturationDependence object.
 
         Raises
         ------

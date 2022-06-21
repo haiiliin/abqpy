@@ -118,7 +118,7 @@ class SizingTask(OptimizationTask):
 
         Returns
         -------
-            A SizingTask object.
+        A SizingTask object.
         """
         super().__init__()
         pass

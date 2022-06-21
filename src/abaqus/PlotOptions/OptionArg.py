@@ -82,7 +82,7 @@ class OptionArg:
 
         Returns
         -------
-            An OptionArg object.
+        An OptionArg object.
 
         Raises
         ------

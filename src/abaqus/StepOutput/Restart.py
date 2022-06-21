@@ -54,7 +54,7 @@ class Restart:
 
         Returns
         -------
-            A Restart object.
+        A Restart object.
 
         Raises
         ------

@@ -65,7 +65,7 @@ class CombinedTestData:
 
         Returns
         -------
-            A CombinedTestData object.
+        A CombinedTestData object.
         """
         pass
 

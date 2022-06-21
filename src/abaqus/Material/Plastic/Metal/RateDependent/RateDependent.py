@@ -83,7 +83,7 @@ class RateDependent:
 
         Returns
         -------
-            A RateDependent object.
+        A RateDependent object.
 
         Raises
         ------

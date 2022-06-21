@@ -89,7 +89,7 @@ class SpringDashpotToGround(SpringDashpot):
 
         Returns
         -------
-            A SpringDashpotToGround object.
+        A SpringDashpotToGround object.
         """
         super().__init__()
         pass

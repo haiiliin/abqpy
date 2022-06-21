@@ -106,7 +106,7 @@ class TangentialBehavior:
 
         Returns
         -------
-            A TangentialBehavior object.
+        A TangentialBehavior object.
         """
         pass
 

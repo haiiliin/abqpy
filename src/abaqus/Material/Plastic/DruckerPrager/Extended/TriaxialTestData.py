@@ -52,7 +52,7 @@ class TriaxialTestData:
 
         Returns
         -------
-            A TriaxialTestData object.
+        A TriaxialTestData object.
 
         Raises
         ------

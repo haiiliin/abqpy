@@ -47,7 +47,7 @@ class SuperElasticHardeningModifications:
 
         Returns
         -------
-            A SuperElasticHardeningModifications object.
+        A SuperElasticHardeningModifications object.
 
         Raises
         ------

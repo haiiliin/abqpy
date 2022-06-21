@@ -80,7 +80,7 @@ class EngineeringFeature(EngineeringFeatureBase):
 
         Returns
         -------
-            An AssembledFastener object.
+        An AssembledFastener object.
         """
         self.fasteners[name] = assembledFastener = AssembledFastener(
             name,
@@ -174,7 +174,7 @@ class EngineeringFeature(EngineeringFeatureBase):
 
         Returns
         -------
-            A ContourIntegral object.
+        A ContourIntegral object.
         """
         self.cracks[name] = contourIntegral = ContourIntegral(
             name,
@@ -232,7 +232,7 @@ class EngineeringFeature(EngineeringFeatureBase):
 
         Returns
         -------
-            A DebondVCCT object.
+        A DebondVCCT object.
         """
         self.cracks[name] = debondVCCT = DebondVCCT(
             name,
@@ -304,7 +304,7 @@ class EngineeringFeature(EngineeringFeatureBase):
 
         Returns
         -------
-            A DiscreteFastener object.
+        A DiscreteFastener object.
         """
         self.fasteners[name] = discreteFastener = DiscreteFastener(
             name,
@@ -354,7 +354,7 @@ class EngineeringFeature(EngineeringFeatureBase):
 
         Returns
         -------
-            A HeatCapacitance object.
+        A HeatCapacitance object.
         """
         self.inertias[name] = heatCapacitance = HeatCapacitance(
             name, region, table, temperatureDependency, dependencies
@@ -398,7 +398,7 @@ class EngineeringFeature(EngineeringFeatureBase):
 
         Returns
         -------
-            A NonstructuralMass object.
+        A NonstructuralMass object.
         """
         self.inertias[name] = nonstructuralMass = NonstructuralMass(
             name, region, units, magnitude, distribution
@@ -552,7 +552,7 @@ class EngineeringFeature(EngineeringFeatureBase):
 
         Returns
         -------
-            A PointFastener object.
+        A PointFastener object.
         """
         self.fasteners[name] = pointFastener = PointFastener(
             name,
@@ -661,7 +661,7 @@ class EngineeringFeature(EngineeringFeatureBase):
 
         Returns
         -------
-            A PointMassInertia object.
+        A PointMassInertia object.
         """
         self.inertias[name] = pointMassInertia = PointMassInertia(
             name,
@@ -734,7 +734,7 @@ class EngineeringFeature(EngineeringFeatureBase):
 
         Returns
         -------
-            A SpringDashpotToGround object.
+        A SpringDashpotToGround object.
         """
         self.springDashpots[name] = springDashpotToGround = SpringDashpotToGround(
             name,
@@ -813,7 +813,7 @@ class EngineeringFeature(EngineeringFeatureBase):
 
         Returns
         -------
-            A TwoPointSpringDashpot object.
+        A TwoPointSpringDashpot object.
         """
         self.springDashpots[name] = twoPointSpringDashpot = TwoPointSpringDashpot(
             name,
@@ -900,7 +900,7 @@ class EngineeringFeature(EngineeringFeatureBase):
 
         Returns
         -------
-            A XFEMCrack object.
+        A XFEMCrack object.
         """
         self.cracks[name] = xFEMCrack = XFEMCrack(
             name,

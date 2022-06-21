@@ -43,7 +43,7 @@ class Gel:
 
         Returns
         -------
-            A Gel object.
+        A Gel object.
         """
         pass
 

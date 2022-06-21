@@ -57,7 +57,7 @@ class TransverseShearBeam:
 
         Returns
         -------
-            A TransverseShearBeam object.
+        A TransverseShearBeam object.
         """
         pass
 

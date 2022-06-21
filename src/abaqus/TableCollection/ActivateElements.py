@@ -48,7 +48,7 @@ class ActivateElements:
 
         Returns
         -------
-            An ActivateElements object.
+        An ActivateElements object.
 
         Raises
         ------

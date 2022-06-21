@@ -123,7 +123,7 @@ class OptimizationTaskModel(ModelBase):
 
         Returns
         -------
-            A BeadTask object.
+        A BeadTask object.
         """
         self.optimizationTasks[name] = optimizationTask = BeadTask(
             name,
@@ -356,7 +356,7 @@ class OptimizationTaskModel(ModelBase):
 
         Returns
         -------
-            A ShapeTask object.
+        A ShapeTask object.
         """
         self.optimizationTasks[name] = optimizationTask = ShapeTask(
             name,
@@ -471,7 +471,7 @@ class OptimizationTaskModel(ModelBase):
 
         Returns
         -------
-            A SizingTask object.
+        A SizingTask object.
         """
         self.optimizationTasks[name] = optimizationTask = SizingTask(
             name,
@@ -655,7 +655,7 @@ class OptimizationTaskModel(ModelBase):
 
         Returns
         -------
-            A TopologyTask object.
+        A TopologyTask object.
         """
         self.optimizationTasks[name] = optimizationTask = TopologyTask(
             name,

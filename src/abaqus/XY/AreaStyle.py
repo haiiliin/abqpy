@@ -60,7 +60,7 @@ class AreaStyle:
 
         Returns
         -------
-            An AreaStyle object.
+        An AreaStyle object.
 
         Raises
         ------

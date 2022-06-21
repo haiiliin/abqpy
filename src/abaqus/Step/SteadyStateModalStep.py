@@ -351,7 +351,7 @@ class SteadyStateModalStep(AnalysisStep):
 
         Returns
         -------
-            A SteadyStateModalStep object.
+        A SteadyStateModalStep object.
 
         Raises
         ------

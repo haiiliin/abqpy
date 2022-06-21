@@ -91,7 +91,7 @@ class BoltLoad(Load):
 
         Returns
         -------
-            A BoltLoad object.
+        A BoltLoad object.
 
         Raises
         ------

@@ -139,7 +139,7 @@ class CompositeShellSection(GeometryShellSection):
 
         Returns
         -------
-            A CompositeShellSection object.
+        A CompositeShellSection object.
         """
         super().__init__()
         pass

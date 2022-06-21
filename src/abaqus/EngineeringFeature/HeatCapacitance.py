@@ -75,7 +75,7 @@ class HeatCapacitance(Inertia):
 
         Returns
         -------
-            A HeatCapacitance object.
+        A HeatCapacitance object.
         """
         super().__init__()
         pass

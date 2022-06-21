@@ -40,7 +40,7 @@ class XYPlot(XYPlotBase):
 
         Returns
         -------
-            An AreaStyle object.
+        An AreaStyle object.
 
         Raises
         ------
@@ -85,7 +85,7 @@ class XYPlot(XYPlotBase):
 
         Returns
         -------
-            A LineStyle object.
+        A LineStyle object.
 
         Raises
         ------
@@ -191,7 +191,7 @@ class XYPlot(XYPlotBase):
 
         Returns
         -------
-            A QuantityType object.
+        A QuantityType object.
         """
         quantityType = QuantityType(label, type)
         return quantityType
@@ -245,7 +245,7 @@ class XYPlot(XYPlotBase):
 
         Returns
         -------
-            A SymbolStyle object.
+        A SymbolStyle object.
 
         Raises
         ------
@@ -286,7 +286,7 @@ class XYPlot(XYPlotBase):
 
         Returns
         -------
-            A TextStyle object.
+        A TextStyle object.
 
         Raises
         ------
@@ -356,7 +356,7 @@ class XYPlot(XYPlotBase):
 
         Returns
         -------
-            An XYData object.
+        An XYData object.
         """
         pass
 
@@ -382,7 +382,7 @@ class XYPlot(XYPlotBase):
 
         Returns
         -------
-            An XYData object.
+        An XYData object.
         """
         pass
 

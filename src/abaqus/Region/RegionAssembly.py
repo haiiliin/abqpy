@@ -184,7 +184,7 @@ class RegionAssembly(RegionAssemblyBase):
 
         Returns
         -------
-            A Surface object.
+        A Surface object.
         """
         surface = Surface(
             side1Faces,
@@ -285,7 +285,7 @@ class RegionAssembly(RegionAssemblyBase):
 
         Returns
         -------
-            A Set object.
+        A Set object.
         """
         pass
 
@@ -311,7 +311,7 @@ class RegionAssembly(RegionAssemblyBase):
 
         Returns
         -------
-            A Set object.
+        A Set object.
         """
         pass
 

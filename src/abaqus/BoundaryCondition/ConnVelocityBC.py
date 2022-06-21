@@ -160,7 +160,7 @@ class ConnVelocityBC(BoundaryCondition):
 
         Returns
         -------
-            A ConnVelocityBC object.
+        A ConnVelocityBC object.
         """
         super().__init__()
         pass

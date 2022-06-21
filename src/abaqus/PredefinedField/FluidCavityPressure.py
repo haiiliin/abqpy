@@ -51,7 +51,7 @@ class FluidCavityPressure(PredefinedField):
 
         Returns
         -------
-            A FluidCavityPressure object.
+        A FluidCavityPressure object.
         """
         super().__init__()
         pass

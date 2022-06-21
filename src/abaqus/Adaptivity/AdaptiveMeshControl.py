@@ -95,7 +95,7 @@ class AdaptiveMeshControl:
 
         Returns
         -------
-            An AdaptiveMeshControl object.
+        An AdaptiveMeshControl object.
 
         Raises
         ------

@@ -119,7 +119,7 @@ class PipePressure(Load):
 
         Returns
         -------
-            A PipePressure object.
+        A PipePressure object.
         """
         super().__init__()
         pass

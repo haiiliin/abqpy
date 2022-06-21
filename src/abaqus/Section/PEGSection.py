@@ -58,7 +58,7 @@ class PEGSection(Section):
 
         Returns
         -------
-            A PEGSection object.
+        A PEGSection object.
 
         Raises
         ------

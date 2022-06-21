@@ -45,7 +45,7 @@ class CellArray:
 
         Returns
         -------
-            A CellArray object.
+        A CellArray object.
 
         """
         pass
@@ -81,7 +81,7 @@ class CellArray:
 
         Returns
         -------
-            A Cell object.
+        A Cell object.
 
         """
         pass
@@ -92,7 +92,7 @@ class CellArray:
 
         Returns
         -------
-            A FaceArray object representing the faces on the exterior of the cells.
+        A FaceArray object representing the faces on the exterior of the cells.
 
         """
         pass
@@ -110,7 +110,7 @@ class CellArray:
 
         Returns
         -------
-            A Cell object or a sequence of Cell objects.
+        A Cell object or a sequence of Cell objects.
 
         Raises
         ------
@@ -124,7 +124,7 @@ class CellArray:
 
         Returns
         -------
-            A String specifying the object or objects.
+        A String specifying the object or objects.
 
         """
         pass
@@ -157,7 +157,7 @@ class CellArray:
 
         Returns
         -------
-            A CellArray object, which is a sequence of Cell objects.
+        A CellArray object, which is a sequence of Cell objects.
 
         """
         pass
@@ -179,7 +179,7 @@ class CellArray:
 
         Returns
         -------
-            A CellArray object, which is a sequence of Cell objects.
+        A CellArray object, which is a sequence of Cell objects.
 
         """
         pass
@@ -197,7 +197,7 @@ class CellArray:
 
         Returns
         -------
-            A CellArray object, which is a sequence of Cell objects.
+        A CellArray object, which is a sequence of Cell objects.
 
         """
         pass
@@ -208,11 +208,11 @@ class CellArray:
 
         Returns
         -------
-            A Dictionary object with the following items:
-            **low**: a tuple of three floats representing the minimum **X**-, **Y**-, and **Z**-boundary
-            values of the bounding box.
-            **high**: a tuple of three floats representing the maximum **X**-, **Y**-, and **Z**-boundary
-            values of the bounding box.
-
+        A Dictionary object with the following items:
+        
+        - **low**: a tuple of three floats representing the minimum **X**-, **Y**-, and **Z**-boundary
+          values of the bounding box.
+        - **high**: a tuple of three floats representing the maximum **X**-, **Y**-, and **Z**-boundary
+          values of the bounding box.
         """
         pass

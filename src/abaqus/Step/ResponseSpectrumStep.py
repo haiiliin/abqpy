@@ -350,7 +350,7 @@ class ResponseSpectrumStep(AnalysisStep):
 
         Returns
         -------
-            A ResponseSpectrumStep object.
+        A ResponseSpectrumStep object.
 
         Raises
         ------

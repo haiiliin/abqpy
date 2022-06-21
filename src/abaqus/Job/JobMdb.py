@@ -147,7 +147,7 @@ class JobMdb(MdbBase):
 
         Returns
         -------
-            A ModelJob object.
+        A ModelJob object.
 
         Raises
         ------
@@ -378,7 +378,7 @@ class JobMdb(MdbBase):
 
         Returns
         -------
-            An OptimizationProcess object.
+        An OptimizationProcess object.
 
         Raises
         ------

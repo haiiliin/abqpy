@@ -55,7 +55,7 @@ class Ornl:
 
         Returns
         -------
-            An Ornl object.
+        An Ornl object.
 
         Raises
         ------

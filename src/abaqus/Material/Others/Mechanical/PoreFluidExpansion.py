@@ -60,7 +60,7 @@ class PoreFluidExpansion:
 
         Returns
         -------
-            A PoreFluidExpansion object.
+        A PoreFluidExpansion object.
 
         Raises
         ------

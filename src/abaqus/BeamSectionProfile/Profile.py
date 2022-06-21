@@ -43,7 +43,7 @@ class Profile:
 
         Returns
         -------
-            A list of Profile objects.
+        A list of Profile objects.
 
         """
         pass

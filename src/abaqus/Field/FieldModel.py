@@ -57,7 +57,7 @@ class FieldModel(ModelBase):
 
         Returns
         -------
-            A DiscreteField object.
+        A DiscreteField object.
 
         Raises
         ------
@@ -105,7 +105,7 @@ class FieldModel(ModelBase):
 
         Returns
         -------
-            An ExpressionField object.
+        An ExpressionField object.
 
         Raises
         ------
@@ -218,7 +218,7 @@ class FieldModel(ModelBase):
 
         Returns
         -------
-            A MappedField object.
+        A MappedField object.
 
         Raises
         ------

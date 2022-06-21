@@ -61,7 +61,7 @@ class PropertyAssembly(AssemblyBase):
 
         Returns
         -------
-            A SectionAssignment object.
+        A SectionAssignment object.
         """
         sectionAssignment = SectionAssignment(
             region, sectionName, thicknessAssignment, offset, offsetType, offsetField

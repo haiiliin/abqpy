@@ -36,6 +36,6 @@ class ScratchOdb:
 
         Returns
         -------
-            A ScratchOdb object.
+        A ScratchOdb object.
         """
         pass

@@ -101,7 +101,7 @@ class IncidentWave(Interaction):
 
         Returns
         -------
-            An IncidentWave object.
+        An IncidentWave object.
         """
         super().__init__()
         pass

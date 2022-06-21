@@ -42,7 +42,7 @@ class SuperElasticHardening:
 
         Returns
         -------
-            A SuperElasticHardening object.
+        A SuperElasticHardening object.
 
         Raises
         ------

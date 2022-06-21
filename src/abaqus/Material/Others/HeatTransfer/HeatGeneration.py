@@ -31,6 +31,6 @@ class HeatGeneration:
 
         Returns
         -------
-            A HeatGeneration object.
+        A HeatGeneration object.
         """
         pass

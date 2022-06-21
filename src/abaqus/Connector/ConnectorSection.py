@@ -140,7 +140,7 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-            A ConnectorDamage object.
+        A ConnectorDamage object.
 
         Raises
         ------
@@ -210,7 +210,7 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-            A ConnectorDamping object.
+        A ConnectorDamping object.
 
         Raises
         ------
@@ -284,7 +284,7 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-            A ConnectorElasticity object.
+        A ConnectorElasticity object.
 
         Raises
         ------
@@ -343,7 +343,7 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-            A ConnectorFailure object.
+        A ConnectorFailure object.
 
         Raises
         ------
@@ -478,7 +478,7 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-            A ConnectorFriction object.
+        A ConnectorFriction object.
 
         Raises
         ------
@@ -538,7 +538,7 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-            A ConnectorLock object.
+        A ConnectorLock object.
 
         Raises
         ------
@@ -638,7 +638,7 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-            A ConnectorPlasticity object.
+        A ConnectorPlasticity object.
 
         Raises
         ------
@@ -701,7 +701,7 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-            A ConnectorPotential object.
+        A ConnectorPotential object.
 
         Raises
         ------
@@ -742,7 +742,7 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-            A ConnectorStop object.
+        A ConnectorStop object.
 
         Raises
         ------
@@ -772,7 +772,7 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-            A DerivedComponent object.
+        A DerivedComponent object.
 
         Raises
         ------
@@ -844,7 +844,7 @@ class ConnectorSection(SectionBase):
 
         Returns
         -------
-            A TangentialBehavior object. .
+        A TangentialBehavior object. .
         """
         option = TangentialBehavior()
         self.behaviorOptions.append(option)

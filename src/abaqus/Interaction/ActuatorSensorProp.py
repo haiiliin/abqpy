@@ -46,7 +46,7 @@ class ActuatorSensorProp(ContactProperty):
 
         Returns
         -------
-            An ActuatorSensorProp object.
+        An ActuatorSensorProp object.
         """
         super().__init__(name)
         pass

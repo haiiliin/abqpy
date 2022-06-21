@@ -138,7 +138,7 @@ class Arrow(Annotation):
 
         Returns
         -------
-            An Arrow object.
+        An Arrow object.
 
         """
         super().__init__()

@@ -60,7 +60,7 @@ class DecayAmplitude(Amplitude):
 
         Returns
         -------
-            A DecayAmplitude object.
+        A DecayAmplitude object.
 
         Raises
         ------

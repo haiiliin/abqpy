@@ -106,7 +106,7 @@ class CyclicSymmetry(Interaction):
 
         Returns
         -------
-            A CyclicSymmetry object.
+        A CyclicSymmetry object.
         """
         super().__init__()
         pass

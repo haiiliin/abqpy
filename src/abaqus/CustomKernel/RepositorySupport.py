@@ -32,7 +32,7 @@ class RepositorySupport(CommandRegister):
 
         Returns
         -------
-            A RepositorySupport object.
+        A RepositorySupport object.
         """
         super().__init__()
         pass

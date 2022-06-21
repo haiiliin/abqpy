@@ -141,7 +141,7 @@ class HomogeneousShellSection(GeometryShellSection):
 
         Returns
         -------
-            A HomogeneousShellSection object.
+        A HomogeneousShellSection object.
         """
         super().__init__()
         pass

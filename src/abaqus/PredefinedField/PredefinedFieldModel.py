@@ -54,7 +54,7 @@ class PredefinedFieldModel(
 
         Returns
         -------
-            A FluidCavityPressure object.
+        A FluidCavityPressure object.
         """
         self.predefinedFields[name] = predefinedField = FluidCavityPressure(
             name, fluidCavity, fluidPressure
@@ -103,7 +103,7 @@ class PredefinedFieldModel(
 
         Returns
         -------
-            An InitialState object.
+        An InitialState object.
         """
         self.predefinedFields[name] = predefinedField = InitialState(
             name,
@@ -166,7 +166,7 @@ class PredefinedFieldModel(
 
         Returns
         -------
-            A KinematicHardening object.
+        A KinematicHardening object.
         """
         self.predefinedFields[name] = predefinedField = KinematicHardening(
             name,
@@ -229,7 +229,7 @@ class PredefinedFieldModel(
 
         Returns
         -------
-            A MaterialAssignment object.
+        A MaterialAssignment object.
         """
         self.predefinedFields[name] = predefinedField = MaterialAssignment(
             name, instanceList, useFields, assignmentList, fieldList, colorList
@@ -352,7 +352,7 @@ class PredefinedFieldModel(
 
         Returns
         -------
-            A Temperature object.
+        A Temperature object.
         """
         self.predefinedFields[name] = predefinedField = Temperature(
             name,
@@ -427,7 +427,7 @@ class PredefinedFieldModel(
 
         Returns
         -------
-            A Velocity object.
+        A Velocity object.
         """
         self.predefinedFields[name] = predefinedField = Velocity(
             name,

@@ -69,6 +69,6 @@ class OdbRigidBody:
 
         Returns
         -------
-            An OdbRigidBody object.
+        An OdbRigidBody object.
         """
         pass

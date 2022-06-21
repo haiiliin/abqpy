@@ -56,7 +56,7 @@ class CompositeSolidSection(Section):
 
         Returns
         -------
-            A CompositeSolidSection object.
+        A CompositeSolidSection object.
         """
         super().__init__()
         pass

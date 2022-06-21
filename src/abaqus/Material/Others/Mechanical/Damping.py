@@ -53,7 +53,7 @@ class Damping:
 
         Returns
         -------
-            A Damping object.
+        A Damping object.
 
         Raises
         ------

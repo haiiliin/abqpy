@@ -104,7 +104,7 @@ class BodyForce(Load):
 
         Returns
         -------
-            A BodyForce object.
+        A BodyForce object.
         """
         super().__init__()
         pass

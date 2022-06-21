@@ -512,7 +512,7 @@ class SoilsStep(AnalysisStep):
 
         Returns
         -------
-            A SoilsStep object.
+        A SoilsStep object.
 
         Raises
         ------

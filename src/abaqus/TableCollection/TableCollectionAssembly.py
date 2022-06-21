@@ -61,7 +61,7 @@ class TableCollectionAssembly(AssemblyBase):
 
         Returns
         -------
-            An ElementProgressiveActivation object.
+        An ElementProgressiveActivation object.
 
         Raises
         ------

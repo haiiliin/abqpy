@@ -57,7 +57,7 @@ class ParameterColumn:
 
         Returns
         -------
-            A ParameterTable object.
+        A ParameterTable object.
 
         Raises
         ------

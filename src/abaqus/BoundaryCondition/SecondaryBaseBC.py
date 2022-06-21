@@ -86,7 +86,7 @@ class SecondaryBaseBC(BoundaryCondition):
 
         Returns
         -------
-            A SecondaryBaseBC object.
+        A SecondaryBaseBC object.
         """
         super().__init__()
         pass

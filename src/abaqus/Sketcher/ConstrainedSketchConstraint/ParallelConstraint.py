@@ -28,7 +28,7 @@ class ParallelConstraint(ConstrainedSketchConstraint):
 
         Returns
         -------
-            A ConstrainedSketchConstraint object.
+        A ConstrainedSketchConstraint object.
 
         """
         pass

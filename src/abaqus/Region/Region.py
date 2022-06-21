@@ -130,7 +130,7 @@ class Region:
 
         Returns
         -------
-            A Region object.
+        A Region object.
         """
         pass
 
@@ -234,7 +234,7 @@ class Region:
 
         Returns
         -------
-            A Region object.
+        A Region object.
         """
         pass
 

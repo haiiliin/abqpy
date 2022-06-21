@@ -47,7 +47,7 @@ class LeafFromDisplayGroup(Leaf):
 
         Returns
         -------
-            A LeafFromDisplayGroup object.
+        A LeafFromDisplayGroup object.
         """
         super().__init__(DEFAULT_MODEL)
         pass

@@ -83,7 +83,7 @@ class MembraneSection(Section):
 
         Returns
         -------
-            A MembraneSection object.
+        A MembraneSection object.
 
         Raises
         ------

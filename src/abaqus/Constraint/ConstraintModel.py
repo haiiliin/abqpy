@@ -52,7 +52,7 @@ class ConstraintModel(ModelBase):
 
         Returns
         -------
-            An AdjustPoints object.
+        An AdjustPoints object.
         """
         self.constraints[name] = constraint = AdjustPoints(name, surface, controlPoints)
         return constraint
@@ -137,7 +137,7 @@ class ConstraintModel(ModelBase):
 
         Returns
         -------
-            A Coupling object.
+        A Coupling object.
         """
         self.constraints[name] = constraint = Coupling(
             name,
@@ -185,7 +185,7 @@ class ConstraintModel(ModelBase):
 
         Returns
         -------
-            A DisplayBody object.
+        A DisplayBody object.
         """
         self.constraints[name] = constraint = DisplayBody(name, instance, controlPoints)
         return constraint
@@ -240,7 +240,7 @@ class ConstraintModel(ModelBase):
 
         Returns
         -------
-            An EmbeddedRegion object.
+        An EmbeddedRegion object.
         """
         self.constraints[name] = constraint = EmbeddedRegion(
             name,
@@ -274,7 +274,7 @@ class ConstraintModel(ModelBase):
 
         Returns
         -------
-            An Equation object.
+        An Equation object.
 
         Raises
         ------
@@ -331,7 +331,7 @@ class ConstraintModel(ModelBase):
 
         Returns
         -------
-            A MultipointConstraint object.
+        A MultipointConstraint object.
         """
         self.constraints[name] = constraint = MultipointConstraint(
             name, surface, controlPoint, mpcType, csys, userType, userMode
@@ -386,7 +386,7 @@ class ConstraintModel(ModelBase):
 
         Returns
         -------
-            A RigidBody object.
+        A RigidBody object.
         """
         self.constraints[name] = constraint = RigidBody(
             name,
@@ -445,7 +445,7 @@ class ConstraintModel(ModelBase):
 
         Returns
         -------
-            A ShellSolidCoupling object.
+        A ShellSolidCoupling object.
         """
         self.constraints[name] = constraint = ShellSolidCoupling(
             name,
@@ -519,7 +519,7 @@ class ConstraintModel(ModelBase):
 
         Returns
         -------
-            A Tie object.
+        A Tie object.
         """
         self.constraints[name] = constraint = Tie(
             name,

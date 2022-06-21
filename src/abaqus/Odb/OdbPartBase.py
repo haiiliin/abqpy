@@ -114,7 +114,7 @@ class OdbPartBase:
 
         Returns
         -------
-            An OdbPart object.
+        An OdbPart object.
         """
         pass
 
@@ -299,7 +299,7 @@ class OdbPartBase:
 
         Returns
         -------
-            An OdbMeshElement object.
+        An OdbMeshElement object.
 
         Raises
         ------
@@ -318,7 +318,7 @@ class OdbPartBase:
 
         Returns
         -------
-            An OdbMeshNode object.
+        An OdbMeshNode object.
 
         Raises
         ------

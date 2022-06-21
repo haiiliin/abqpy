@@ -37,7 +37,7 @@ class TimePoint:
 
         Returns
         -------
-            A TimePoint object.
+        A TimePoint object.
 
         Raises
         ------

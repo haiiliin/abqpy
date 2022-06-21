@@ -50,7 +50,7 @@ class Hypoelastic:
 
         Returns
         -------
-            A Hypoelastic object.
+        A Hypoelastic object.
         """
         pass
 

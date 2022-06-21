@@ -75,7 +75,7 @@ class SectionAssignment:
 
         Returns
         -------
-            A SectionAssignment object.
+        A SectionAssignment object.
         """
         pass
 
@@ -93,7 +93,7 @@ class SectionAssignment:
 
         Returns
         -------
-            A sequence of tuples of floats.
+        A sequence of tuples of floats.
 
         Raises
         ------

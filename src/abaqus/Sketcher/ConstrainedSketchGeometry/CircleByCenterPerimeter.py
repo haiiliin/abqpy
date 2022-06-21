@@ -23,7 +23,7 @@ class CircleByCenterPerimeter(ConstrainedSketchGeometry):
 
         Returns
         -------
-            A ConstrainedSketchGeometry object (None if the circle cannot be created).
+        A ConstrainedSketchGeometry object (None if the circle cannot be created).
 
         """
         pass

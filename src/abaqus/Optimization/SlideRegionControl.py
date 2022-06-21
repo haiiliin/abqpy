@@ -83,7 +83,7 @@ class SlideRegionControl(GeometricRestriction):
 
         Returns
         -------
-            A SlideRegionControl object.
+        A SlideRegionControl object.
         """
         super().__init__()
         pass

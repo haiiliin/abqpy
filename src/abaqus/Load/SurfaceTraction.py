@@ -208,7 +208,7 @@ class SurfaceTraction(Load):
 
         Returns
         -------
-            A SurfaceTraction object.
+        A SurfaceTraction object.
         """
         super().__init__()
         pass

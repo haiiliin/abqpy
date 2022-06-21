@@ -114,7 +114,7 @@ class DruckerPrager:
 
         Returns
         -------
-            A DruckerPrager object.
+        A DruckerPrager object.
 
         Raises
         ------

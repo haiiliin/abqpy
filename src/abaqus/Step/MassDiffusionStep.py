@@ -379,7 +379,7 @@ class MassDiffusionStep(AnalysisStep):
 
         Returns
         -------
-            A MassDiffusionStep object.
+        A MassDiffusionStep object.
 
         Raises
         ------

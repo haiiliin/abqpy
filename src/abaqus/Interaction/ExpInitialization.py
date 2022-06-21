@@ -82,7 +82,7 @@ class ExpInitialization(ContactInitialization):
 
         Returns
         -------
-            An ExpInitialization object.
+        An ExpInitialization object.
 
         Raises
         ------

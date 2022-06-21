@@ -42,7 +42,7 @@ class SimpleShearTestData:
 
         Returns
         -------
-            A SimpleShearTestData object.
+        A SimpleShearTestData object.
         """
         pass
 

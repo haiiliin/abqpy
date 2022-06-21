@@ -168,7 +168,7 @@ class Chart:
 
         Returns
         -------
-            An Axis object.
+        An Axis object.
 
         Raises
         ------
@@ -194,7 +194,7 @@ class Chart:
 
         Returns
         -------
-            An Axis object.
+        An Axis object.
 
         Raises
         ------

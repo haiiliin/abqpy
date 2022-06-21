@@ -83,7 +83,7 @@ class DrillControl(GeometricRestriction):
 
         Returns
         -------
-            A DrillControl object.
+        A DrillControl object.
         """
         super().__init__()
         pass

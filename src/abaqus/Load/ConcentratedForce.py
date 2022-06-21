@@ -131,7 +131,7 @@ class ConcentratedForce(Load):
 
         Returns
         -------
-            A ConcentratedForce object.
+        A ConcentratedForce object.
         """
         super().__init__()
         pass

@@ -89,7 +89,7 @@ class Hyperfoam:
 
         Returns
         -------
-            A Hyperfoam object.
+        A Hyperfoam object.
 
         Raises
         ------

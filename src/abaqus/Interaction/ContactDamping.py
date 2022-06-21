@@ -107,7 +107,7 @@ class ContactDamping:
 
         Returns
         -------
-            A ContactDamping object.
+        A ContactDamping object.
         """
         pass
 

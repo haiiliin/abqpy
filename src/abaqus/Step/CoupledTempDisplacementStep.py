@@ -483,7 +483,7 @@ class CoupledTempDisplacementStep(AnalysisStep):
 
         Returns
         -------
-            A CoupledTempDisplacementStep object.
+        A CoupledTempDisplacementStep object.
 
         Raises
         ------

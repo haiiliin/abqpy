@@ -132,7 +132,7 @@ class TypeBC(BoundaryCondition):
             in the global coordinate system. The default value is None.
         Returns
         -------
-            A TypeBC object.
+        A TypeBC object.
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
@@ -168,7 +168,7 @@ class TypeBC(BoundaryCondition):
             in the global coordinate system. The default value is None.
         Returns
         -------
-            A TypeBC object.
+        A TypeBC object.
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
@@ -204,7 +204,7 @@ class TypeBC(BoundaryCondition):
             in the global coordinate system. The default value is None.
         Returns
         -------
-            A TypeBC object.
+        A TypeBC object.
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
@@ -240,7 +240,7 @@ class TypeBC(BoundaryCondition):
             in the global coordinate system. The default value is None.
         Returns
         -------
-            A TypeBC object.
+        A TypeBC object.
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
@@ -276,7 +276,7 @@ class TypeBC(BoundaryCondition):
             in the global coordinate system. The default value is None.
         Returns
         -------
-            A TypeBC object.
+        A TypeBC object.
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
@@ -312,7 +312,7 @@ class TypeBC(BoundaryCondition):
             in the global coordinate system. The default value is None.
         Returns
         -------
-            A TypeBC object.
+        A TypeBC object.
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
@@ -348,7 +348,7 @@ class TypeBC(BoundaryCondition):
             in the global coordinate system. The default value is None.
         Returns
         -------
-            A TypeBC object.
+        A TypeBC object.
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
@@ -384,7 +384,7 @@ class TypeBC(BoundaryCondition):
             in the global coordinate system. The default value is None.
         Returns
         -------
-            A TypeBC object.
+        A TypeBC object.
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 

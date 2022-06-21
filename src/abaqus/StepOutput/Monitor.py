@@ -60,7 +60,7 @@ class Monitor:
 
         Returns
         -------
-            A Monitor object.
+        A Monitor object.
 
         Raises
         ------

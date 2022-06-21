@@ -97,7 +97,7 @@ class Movie:
 
         Returns
         -------
-            A Movie object.
+        A Movie object.
 
         Raises
         ------

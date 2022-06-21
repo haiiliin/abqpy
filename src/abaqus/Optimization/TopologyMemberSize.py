@@ -57,7 +57,7 @@ class TopologyMemberSize(GeometricRestriction):
 
         Returns
         -------
-            A TopologyMemberSize object.
+        A TopologyMemberSize object.
         """
         super().__init__()
         pass

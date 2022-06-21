@@ -109,7 +109,7 @@ class ConnectorMoment(Load):
 
         Returns
         -------
-            A ConnectorMoment object.
+        A ConnectorMoment object.
         """
         super().__init__()
         pass
