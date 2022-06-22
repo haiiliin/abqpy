@@ -1,5 +1,6 @@
 # abqpy 2016a0
 
+[![OSCS Status](https://www.oscs1024.com/platform/badge/haiiliin/abqpy.svg?size=small)](https://www.oscs1024.com/project/haiiliin/abqpy?ref=badge_small)
 [![Maintainer](https://img.shields.io/badge/maintainer-haiiliin-blue)](https://github.com/haiiliin)
 [![Documentation Status](https://readthedocs.org/projects/abqpy/badge/?version=latest)](https://abqpy.haiiliin.com/en/latest/?badge=latest)
 [![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://github.com/haiiliin/abqpy/blob/main/LICENSE)
