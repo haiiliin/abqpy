@@ -23,10 +23,10 @@ class SizingFrozenArea(GeometricRestriction):
         mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
 
-    # A String specifying the geometric restriction repository key.
+    #: A String specifying the geometric restriction repository key.
     name: str
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
     region: Region
 
     def __init__(self, name: str, region: Region):

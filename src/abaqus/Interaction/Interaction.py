@@ -25,7 +25,7 @@ class Interaction:
         mdb.models[name].interactions[name]
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str = ""
 
     def deactivate(self, stepName: str):

@@ -169,67 +169,67 @@ class DamageInitiation:
     - DAMAGE INITIATION
     """
 
-    # A SymbolicConstant specifying the damage initiation definition. Possible values are FLD
-    # and MSFLD. The default value is MSFLD.
+    #: A SymbolicConstant specifying the damage initiation definition. Possible values are FLD
+    #: and MSFLD. The default value is MSFLD.
     definition: SymbolicConstant = MSFLD
 
-    # A Float specifying the critical value of the deformation severity index for equivalent
-    # Plastic strains. The default value is 10.0.
+    #: A Float specifying the critical value of the deformation severity index for equivalent
+    #: Plastic strains. The default value is 10.0.
     feq: float = 10
 
-    # A Float specifying the critical value of the deformation severity index for strains
-    # normal to the groove direction. The default value is 10.0.
+    #: A Float specifying the critical value of the deformation severity index for strains
+    #: normal to the groove direction. The default value is 10.0.
     fnn: float = 10
 
-    # A Float specifying the critical value of the deformation severity index for shear
-    # strains. The default value is 10.0.
+    #: A Float specifying the critical value of the deformation severity index for shear
+    #: strains. The default value is 10.0.
     fnt: float = 10
 
-    # An Int specifying the frequency, in increments, at which the Marciniak-Kuczynski
-    # analysis is going to be performed. The default value is 1.
+    #: An Int specifying the frequency, in increments, at which the Marciniak-Kuczynski
+    #: analysis is going to be performed. The default value is 1.
     frequency: int = 1
 
-    # A Float specifying the value of Ks. The default value is 0.0.
+    #: A Float specifying the value of Ks. The default value is 0.0.
     ks: float = 0
 
-    # An Int specifying the number of imperfections to be considered for the evaluation of the
-    # Marciniak-Kuczynski analysis. These imperfections are assumed to be equally spaced in
-    # the angular direction. The default value is 4.
+    #: An Int specifying the number of imperfections to be considered for the evaluation of the
+    #: Marciniak-Kuczynski analysis. These imperfections are assumed to be equally spaced in
+    #: the angular direction. The default value is 4.
     numberImperfections: int = 4
 
-    # A Boolean specifying whether the data depend on temperature. The default value is OFF.
+    #: A Boolean specifying whether the data depend on temperature. The default value is OFF.
     temperatureDependency: Boolean = OFF
 
-    # An Int specifying the number of field variable dependencies. The default value is 0.
+    #: An Int specifying the number of field variable dependencies. The default value is 0.
     dependencies: int = 0
 
-    # A Float specifying the value of the coefficient that will multiply the shear
-    # contribution to the Hashin's fiber initiation criterion. The default value is 0.0.
+    #: A Float specifying the value of the coefficient that will multiply the shear
+    #: contribution to the Hashin's fiber initiation criterion. The default value is 0.0.
     alpha: float = 0
 
-    # A Float specifying the factor used for filtering the ratio of principal strain rates
-    # used for the evaluation of the MSFLD damage initiation criterion. The default value is
-    # 1.0.
+    #: A Float specifying the factor used for filtering the ratio of principal strain rates
+    #: used for the evaluation of the MSFLD damage initiation criterion. The default value is
+    #: 1.0.
     omega: float = 1
 
-    # A Float specifying the tolerance within which the damage initiation criterion must be
-    # satisfied. The default value is 0.05.
+    #: A Float specifying the tolerance within which the damage initiation criterion must be
+    #: satisfied. The default value is 0.05.
     tolerance: float = 0
 
-    # A SymbolicConstant specifying the damage initiation direction. Possible values are NMORI
-    # and TMORI. The default value is NMORI.
+    #: A SymbolicConstant specifying the damage initiation direction. Possible values are NMORI
+    #: and TMORI. The default value is NMORI.
     direction: SymbolicConstant = NMORI
 
-    # A tuple of tuples of Floats specifying the items described in the "Table data" section.
+    #: A tuple of tuples of Floats specifying the items described in the "Table data" section.
     table: float = None
 
-    # A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageEvolution.DamageEvolution` object.
+    #: A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageEvolution.DamageEvolution` object.
     damageEvolution: DamageEvolution = None
 
-    # A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageStabilization.DamageStabilization` object.
+    #: A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageStabilization.DamageStabilization` object.
     damageStabilization: DamageStabilization = None
 
-    # A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageStabilizationCohesive.DamageStabilizationCohesive` object.
+    #: A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageStabilizationCohesive.DamageStabilizationCohesive` object.
     damageStabilizationCohesive: DamageStabilizationCohesive = (
         DamageStabilizationCohesive()
     )

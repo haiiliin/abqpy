@@ -53,22 +53,22 @@ class ContactDamping:
     - CONTACT DAMPING
     """
 
-    # A SymbolicConstant specifying the method used to define the damping. Possible values are
-    # DAMPING_COEFFICIENT and CRITICAL_DAMPING_FRACTION. The default value is
-    # DAMPING_COEFFICIENT.
+    #: A SymbolicConstant specifying the method used to define the damping. Possible values are
+    #: DAMPING_COEFFICIENT and CRITICAL_DAMPING_FRACTION. The default value is
+    #: DAMPING_COEFFICIENT.
     definition: SymbolicConstant = DAMPING_COEFFICIENT
 
-    # The SymbolicConstant DEFAULT or a Float specifying the tangential damping coefficient
-    # divided by the normal damping coefficient. The default value is DEFAULT.
+    #: The SymbolicConstant DEFAULT or a Float specifying the tangential damping coefficient
+    #: divided by the normal damping coefficient. The default value is DEFAULT.
     tangentFraction: typing.Union[SymbolicConstant, float] = DEFAULT
 
-    # A SymbolicConstant specifying the variation of the damping coefficient or fraction with
-    # respect to clearance. Possible values are STEP, LINEAR, and BILINEAR. The default value
-    # is STEP.If **definition** = CRITICAL_DAMPING_FRACTION, the only possible value is STEP.
+    #: A SymbolicConstant specifying the variation of the damping coefficient or fraction with
+    #: respect to clearance. Possible values are STEP, LINEAR, and BILINEAR. The default value
+    #: is STEP.If **definition** = CRITICAL_DAMPING_FRACTION, the only possible value is STEP.
     clearanceDependence: SymbolicConstant = STEP
 
-    # A tuple of pairs of Floats specifying the damping properties. The items in the table
-    # data are described below.
+    #: A tuple of pairs of Floats specifying the damping properties. The items in the table
+    #: data are described below.
     table: float = None
 
     def __init__(

@@ -40,28 +40,28 @@ class OptimizationTaskBase:
         mdb.models[name].optimizationTasks[name]
     """
 
-    # A String specifying the optimization task repository key.
+    #: A String specifying the optimization task repository key.
     name: str = ""
 
-    # The SymbolicConstant MODEL or a Region object specifying the region to which the
-    # optimization task is applied. The default value is MODEL.
+    #: The SymbolicConstant MODEL or a Region object specifying the region to which the
+    #: optimization task is applied. The default value is MODEL.
     region: SymbolicConstant = MODEL
 
-    # A repository of DesignResponse objects.
+    #: A repository of DesignResponse objects.
     designResponses: dict[str, DesignResponse] = dict[str, DesignResponse]()
 
-    # A repository of ObjectiveFunction objects.
+    #: A repository of ObjectiveFunction objects.
     objectiveFunctions: dict[str, ObjectiveFunction] = dict[str, ObjectiveFunction]()
 
-    # A repository of OptimizationConstraint objects.
+    #: A repository of OptimizationConstraint objects.
     optimizationConstraints: dict[str, OptimizationConstraint] = dict[
         str, OptimizationConstraint
     ]()
 
-    # A repository of GeometricRestriction objects.
+    #: A repository of GeometricRestriction objects.
     geometricRestrictions: dict[str, GeometricRestriction] = dict[
         str, GeometricRestriction
     ]()
 
-    # A repository of StopCondition objects.
+    #: A repository of StopCondition objects.
     stopConditions: dict[str, StopCondition] = dict[str, StopCondition]()

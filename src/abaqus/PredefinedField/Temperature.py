@@ -41,24 +41,24 @@ class Temperature(PredefinedField):
             - TEMPERATURE
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str = ""
 
-    # A SymbolicConstant specifying how the predefined field varies spatially. Possible values
-    # are UNIFORM, USER_DEFINED, FROM_FILE, FIELD, FROM_FILE_AND_USER_DEFINED, and
-    # DISCRETE_FIELD. The default value is UNIFORM.
+    #: A SymbolicConstant specifying how the predefined field varies spatially. Possible values
+    #: are UNIFORM, USER_DEFINED, FROM_FILE, FIELD, FROM_FILE_AND_USER_DEFINED, and
+    #: DISCRETE_FIELD. The default value is UNIFORM.
     distributionType: SymbolicConstant = UNIFORM
 
-    # A String specifying the name of the AnalyticalField or DiscreteField object associated
-    # with this predefined field. The **field** argument applies only when
-    # **distributionType** = FIELD or **distributionType** = DISCRETE_FIELD. The default value is an
-    # empty string.
+    #: A String specifying the name of the AnalyticalField or DiscreteField object associated
+    #: with this predefined field. The **field** argument applies only when
+    #: **distributionType** = FIELD or **distributionType** = DISCRETE_FIELD. The default value is an
+    #: empty string.
     field: str = ""
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the predefined field is applied. **Region**
-    # is ignored if the predefined field has an **instances** member available. **Region** is also
-    # ignored if the predefined field has a **distributionType** member available, and
-    # **distributionType** = FROM_FILE or FROM_FILE_AND_USER_DEFINED.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the predefined field is applied. **Region**
+    #: is ignored if the predefined field has an **instances** member available. **Region** is also
+    #: ignored if the predefined field has a **distributionType** member available, and
+    #: **distributionType** = FROM_FILE or FROM_FILE_AND_USER_DEFINED.
     region: Region = Region()
 
     def __init__(

@@ -77,34 +77,34 @@ class Set:
         mdb.models[name].rootAssembly.sets[name]
     """
 
-    # A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
+    #: A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
     elements: MeshElementArray = MeshElementArray([])
 
-    # A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object.
+    #: A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object.
     nodes: MeshNodeArray = MeshNodeArray([])
 
-    # A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object.
+    #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object.
     vertices: VertexArray = VertexArray([])
 
-    # An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
+    #: An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
     edges: EdgeArray = EdgeArray([])
 
-    # A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
+    #: A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
     faces: FaceArray = FaceArray([])
 
-    # A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object.
+    #: A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object.
     cells: CellArray = CellArray([])
 
-    # A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object.
+    #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object.
     xVertices: VertexArray = VertexArray([])
 
-    # An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
+    #: An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
     xEdges: EdgeArray = EdgeArray([])
 
-    # A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
+    #: A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
     xFaces: FaceArray = FaceArray([])
 
-    # A :py:class:`~abaqus.BasicGeometry.ReferencePointArray.ReferencePointArray` object.
+    #: A :py:class:`~abaqus.BasicGeometry.ReferencePointArray.ReferencePointArray` object.
     referencePoints: ReferencePointArray = ReferencePointArray()
 
     @typing.overload

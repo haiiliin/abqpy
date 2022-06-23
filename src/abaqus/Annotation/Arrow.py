@@ -110,103 +110,103 @@ class Arrow(Annotation):
         session.viewports[name].annotationsToPlot[i]
     """
 
-    # A String specifying the annotation repository key.
+    #: A String specifying the annotation repository key.
     name: str
 
-    # A pair of Floats specifying the start point **X**- and **Y**-offsets in millimeters from
-    # **startAnchor**. The default value is (0, 0).
+    #: A pair of Floats specifying the start point **X**- and **Y**-offsets in millimeters from
+    #: **startAnchor**. The default value is (0, 0).
     startPoint: tuple[float] = ()
 
-    # A pair of Floats specifying the end point **X**- and **Y**-offsets in millimeters from
-    # **endAnchor**. The default value is (0, 0).
+    #: A pair of Floats specifying the end point **X**- and **Y**-offsets in millimeters from
+    #: **endAnchor**. The default value is (0, 0).
     endPoint: tuple[float] = ()
 
-    # A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
-    # specifies the **X**- and **Y**-coordinates as percentages of the viewport width and height.
-    # A sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
-    # the model coordinate system. A SymbolicConstant indicates a relative position. Possible
-    # values are:
-    # 
-    # - BOTTOM_LEFT
-    # - BOTTOM_CENTER
-    # - BOTTOM_RIGHT
-    # - CENTER_LEFT
-    # - CENTER
-    # - CENTER_RIGHT
-    # - TOP_LEFT
-    # - TOP_CENTER
-    # - TOP_RIGHT
-    # 
-    # The default value is BOTTOM_LEFT.
+    #: A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
+    #: specifies the **X**- and **Y**-coordinates as percentages of the viewport width and height.
+    #: A sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
+    #: the model coordinate system. A SymbolicConstant indicates a relative position. Possible
+    #: values are:
+    #: 
+    #: - BOTTOM_LEFT
+    #: - BOTTOM_CENTER
+    #: - BOTTOM_RIGHT
+    #: - CENTER_LEFT
+    #: - CENTER
+    #: - CENTER_RIGHT
+    #: - TOP_LEFT
+    #: - TOP_CENTER
+    #: - TOP_RIGHT
+    #: 
+    #: The default value is BOTTOM_LEFT.
     startAnchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT
 
-    # A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
-    # specifies the **X**- and **Y**-coordinates as percentages of the viewport width and height.
-    # A Sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
-    # the model coordinate system. A SymbolicConstant indicates a relative position. Possible
-    # values are:
-    # 
-    # - BOTTOM_LEFT
-    # - BOTTOM_CENTER
-    # - BOTTOM_RIGHT
-    # - CENTER_LEFT
-    # - CENTER
-    # - CENTER_RIGHT
-    # - TOP_LEFT
-    # - TOP_CENTER
-    # - TOP_RIGHT
-    # 
-    # The default value is BOTTOM_LEFT.
+    #: A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
+    #: specifies the **X**- and **Y**-coordinates as percentages of the viewport width and height.
+    #: A Sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
+    #: the model coordinate system. A SymbolicConstant indicates a relative position. Possible
+    #: values are:
+    #: 
+    #: - BOTTOM_LEFT
+    #: - BOTTOM_CENTER
+    #: - BOTTOM_RIGHT
+    #: - CENTER_LEFT
+    #: - CENTER
+    #: - CENTER_RIGHT
+    #: - TOP_LEFT
+    #: - TOP_CENTER
+    #: - TOP_RIGHT
+    #: 
+    #: The default value is BOTTOM_LEFT.
     endAnchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT
 
-    # A SymbolicConstant specifying the style of the start head. Possible values are:
-    # 
-    # - ARROW
-    # - FILLED_ARROW
-    # - HOLLOW_CIRCLE
-    # - FILLED_CIRCLE
-    # - HOLLOW_DIAMOND
-    # - FILLED_DIAMOND
-    # - HOLLOW_SQUARE
-    # - FILLED_SQUARE
-    # - NONE
-    # 
-    # The default value is NONE.
+    #: A SymbolicConstant specifying the style of the start head. Possible values are:
+    #: 
+    #: - ARROW
+    #: - FILLED_ARROW
+    #: - HOLLOW_CIRCLE
+    #: - FILLED_CIRCLE
+    #: - HOLLOW_DIAMOND
+    #: - FILLED_DIAMOND
+    #: - HOLLOW_SQUARE
+    #: - FILLED_SQUARE
+    #: - NONE
+    #: 
+    #: The default value is NONE.
     startHeadStyle: SymbolicConstant = NONE
 
-    # A SymbolicConstant specifying the style of the end head. Possible values are:
-    # 
-    # - ARROW
-    # - FILLED_ARROW
-    # - HOLLOW_CIRCLE
-    # - FILLED_CIRCLE
-    # - HOLLOW_DIAMOND
-    # - FILLED_DIAMOND
-    # - HOLLOW_SQUARE
-    # - FILLED_SQUARE
-    # - NONE
-    # 
-    # The default value is FILLED_ARROW.
+    #: A SymbolicConstant specifying the style of the end head. Possible values are:
+    #: 
+    #: - ARROW
+    #: - FILLED_ARROW
+    #: - HOLLOW_CIRCLE
+    #: - FILLED_CIRCLE
+    #: - HOLLOW_DIAMOND
+    #: - FILLED_DIAMOND
+    #: - HOLLOW_SQUARE
+    #: - FILLED_SQUARE
+    #: - NONE
+    #: 
+    #: The default value is FILLED_ARROW.
     endHeadStyle: SymbolicConstant = FILLED_ARROW
 
-    # A Float specifying the distance in millimeters between the arrow start point and the
-    # arrow start head. The default value is 0.0.
+    #: A Float specifying the distance in millimeters between the arrow start point and the
+    #: arrow start head. The default value is 0.0.
     startGap: float = 0
 
-    # A Float specifying the distance in millimeters between the arrow end point and the arrow
-    # end head. The default value is 0.0.
+    #: A Float specifying the distance in millimeters between the arrow end point and the arrow
+    #: end head. The default value is 0.0.
     endGap: float = 0
 
-    # A String specifying the color of the arrow. Possible string values are any valid color.
-    # The default value is "White".
+    #: A String specifying the color of the arrow. Possible string values are any valid color.
+    #: The default value is "White".
     color: str = ""
 
-    # A SymbolicConstant specifying the line style of the arrow. Possible values are SOLID,
-    # DASHED, DOTTED, and DOT_DASH. The default value is SOLID.
+    #: A SymbolicConstant specifying the line style of the arrow. Possible values are SOLID,
+    #: DASHED, DOTTED, and DOT_DASH. The default value is SOLID.
     lineStyle: SymbolicConstant = SOLID
 
-    # A SymbolicConstant specifying the line thickness of the arrow. Possible values are
-    # VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN.
+    #: A SymbolicConstant specifying the line thickness of the arrow. Possible values are
+    #: VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN.
     lineThickness: SymbolicConstant = VERY_THIN
 
     def __init__(

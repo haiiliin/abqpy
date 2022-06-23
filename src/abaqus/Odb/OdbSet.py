@@ -46,23 +46,23 @@ class OdbSet:
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.surfaces[name]
     """
 
-    # A String specifying the name of the set and the repository key.
+    #: A String specifying the name of the set and the repository key.
     name: str = ""
 
-    # A tuple of Strings specifying the namespaces for the nodes, elements, and faces; None if
-    # the set is on a Part or an OdbInstance object.
+    #: A tuple of Strings specifying the namespaces for the nodes, elements, and faces; None if
+    #: the set is on a Part or an OdbInstance object.
     instanceNames: tuple = ()
 
-    # An :py:class:`~abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray` object specifying the nodes of an OdbSet. If a set spans more than
-    # one part instance, this member is a sequence of sequences for each part instance.
+    #: An :py:class:`~abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray` object specifying the nodes of an OdbSet. If a set spans more than
+    #: one part instance, this member is a sequence of sequences for each part instance.
     nodes: OdbMeshNodeArray = OdbMeshNodeArray()
 
-    # An :py:class:`~abaqus.Odb.OdbMeshElementArray.OdbMeshElementArray` object specifying the elements of an OdbSet. If a set spans more
-    # than one part instance, this member is a sequence of sequences for each part instance.
+    #: An :py:class:`~abaqus.Odb.OdbMeshElementArray.OdbMeshElementArray` object specifying the elements of an OdbSet. If a set spans more
+    #: than one part instance, this member is a sequence of sequences for each part instance.
     elements: OdbMeshElementArray = OdbMeshElementArray()
 
-    # A tuple of SymbolicConstants specifying the element face. If a set spans more than one
-    # part instance, this member is a sequence of sequences for each part instance.
+    #: A tuple of SymbolicConstants specifying the element face. If a set spans more than one
+    #: part instance, this member is a sequence of sequences for each part instance.
     faces: SymbolicConstant = None
 
     def __init__(self, name: str, nodes: tuple[OdbMeshNode]):

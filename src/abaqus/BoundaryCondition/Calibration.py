@@ -25,13 +25,13 @@ class Calibration:
         mdb.models[name].calibrations[name]
     """
 
-    # A :py:class:`~abaqus.Calibration.DataSet.DataSet` object.
+    #: A :py:class:`~abaqus.Calibration.DataSet.DataSet` object.
     dataSets: DataSet = None
 
-    # A :py:class:`~abaqus.Calibration.Behavior.Behavior` object.
+    #: A :py:class:`~abaqus.Calibration.Behavior.Behavior` object.
     behaviors: Behavior = None
 
-    # A String specifying the name of the new calibration.
+    #: A String specifying the name of the new calibration.
     name: str
 
     def __init__(self, name: str):

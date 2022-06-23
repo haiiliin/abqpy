@@ -35,21 +35,21 @@ class ParameterColumn:
             - *PARAMETER TABLE
     """
 
-    # A SymbolicConstant specifying the data type of the parameter. Possible values are
-    # STRING, INTEGER, and FLOAT.
+    #: A SymbolicConstant specifying the data type of the parameter. Possible values are
+    #: STRING, INTEGER, and FLOAT.
     type: SymbolicConstant
 
-    # A String specifying the unit of the parameter.
+    #: A String specifying the unit of the parameter.
     unit: str = ""
 
-    # A String specifying the description of the parameter.
+    #: A String specifying the description of the parameter.
     description: str = ""
 
-    # The default value of the first parameter. The data type of the value depends on the
-    # value of **type** argument.
+    #: The default value of the first parameter. The data type of the value depends on the
+    #: value of **type** argument.
     default: str = ""
 
-    # A Set of allowed values for the parameter.
+    #: A Set of allowed values for the parameter.
     allowedValues: str = ""
 
     def __init__(

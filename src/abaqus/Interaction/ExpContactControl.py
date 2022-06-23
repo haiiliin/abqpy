@@ -47,34 +47,34 @@ class ExpContactControl(ContactControl):
     - CONTACT CONTROLS
     """
 
-    # A String specifying the contact controls repository key.
+    #: A String specifying the contact controls repository key.
     name: str
 
-    # A SymbolicConstant specifying whether or not the default value will be used for the
-    # maximum number of increments between global contact searches. Possible values are
-    # DEFAULT and SPECIFY. The default value is DEFAULT.
+    #: A SymbolicConstant specifying whether or not the default value will be used for the
+    #: maximum number of increments between global contact searches. Possible values are
+    #: DEFAULT and SPECIFY. The default value is DEFAULT.
     globTrkChoice: SymbolicConstant = DEFAULT
 
-    # An Int specifying the maximum number of increments between global contact searches. The
-    # **globTrkInc** argument applies only when **globTrkChoice** = SPECIFY. The default value is
-    # 100 for surface-to-surface contact and 4 for self-contact.
+    #: An Int specifying the maximum number of increments between global contact searches. The
+    #: **globTrkInc** argument applies only when **globTrkChoice** = SPECIFY. The default value is
+    #: 100 for surface-to-surface contact and 4 for self-contact.
     globTrkInc: int = None
 
-    # A Boolean specifying whether to use the more computationally efficient local tracking
-    # method. The default value is ON.
+    #: A Boolean specifying whether to use the more computationally efficient local tracking
+    #: method. The default value is ON.
     fastLocalTrk: Boolean = ON
 
-    # A Float specifying the factor by which Abaqus/Explicit will scale the default penalty
-    # stiffness to obtain the stiffnesses used for the penalty contact pairs. The default
-    # value is 1.0.
+    #: A Float specifying the factor by which Abaqus/Explicit will scale the default penalty
+    #: stiffness to obtain the stiffnesses used for the penalty contact pairs. The default
+    #: value is 1.0.
     scalePenalty: float = 1
 
-    # An Int specifying the number of increments between checks for highly warped facets on
-    # main surfaces. The default value is 20.
+    #: An Int specifying the number of increments between checks for highly warped facets on
+    #: main surfaces. The default value is 20.
     warpCheckPeriod: int = 20
 
-    # A Float specifying the out-of-plane warping angle (in degrees), at which a facet will be
-    # considered to be highly warped. The default value is 20.0.
+    #: A Float specifying the out-of-plane warping angle (in degrees), at which a facet will be
+    #: considered to be highly warped. The default value is 20.0.
     warpCutoff: float = 20
 
     def __init__(

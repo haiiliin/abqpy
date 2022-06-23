@@ -54,35 +54,35 @@ class ConnectorOrientation:
     axis2: SymbolicConstant = AXIS_1
     angle2: float = 0
 
-    # A :py:class:`~abaqus.Region.Set.Set` object specifying the region to which the orientation is assigned.
+    #: A :py:class:`~abaqus.Region.Set.Set` object specifying the region to which the orientation is assigned.
     region: Set
 
-    # A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the first connector point.
-    # This value may be None, indicating the global coordinate system.
+    #: A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the first connector point.
+    #: This value may be None, indicating the global coordinate system.
     localCsys1: DatumCsys = None
 
-    # A SymbolicConstant specifying the axis of a datum coordinate system about which an
-    # additional rotation is applied. Possible values are AXIS_1, AXIS_2, and AXIS_3. The
-    # default value is AXIS_1.
+    #: A SymbolicConstant specifying the axis of a datum coordinate system about which an
+    #: additional rotation is applied. Possible values are AXIS_1, AXIS_2, and AXIS_3. The
+    #: default value is AXIS_1.
     axis1: SymbolicConstant = AXIS_1
 
-    # A Float specifying the angle of the additional rotation. The default value is 0.0.
+    #: A Float specifying the angle of the additional rotation. The default value is 0.0.
     angle1: float = 0
 
-    # A Boolean specifying whether or not the second connector point is to use the same local
-    # coordinate system, axis, and angle as the first point. The default value is ON.
+    #: A Boolean specifying whether or not the second connector point is to use the same local
+    #: coordinate system, axis, and angle as the first point. The default value is ON.
     orient2sameAs1: Boolean = ON
 
-    # A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the second connector point.
-    # This value may be None, indicating the global coordinate system.
+    #: A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the second connector point.
+    #: This value may be None, indicating the global coordinate system.
     localCsys2: DatumCsys = None
 
-    # A SymbolicConstant specifying the axis of a datum coordinate system about which an
-    # additional rotation is applied. Possible values are AXIS_1, AXIS_2, and AXIS_3. The
-    # default value is AXIS_1.
+    #: A SymbolicConstant specifying the axis of a datum coordinate system about which an
+    #: additional rotation is applied. Possible values are AXIS_1, AXIS_2, and AXIS_3. The
+    #: default value is AXIS_1.
     axis2: SymbolicConstant = AXIS_1
 
-    # A Float specifying the angle of the additional rotation. The default value is 0.0.
+    #: A Float specifying the angle of the additional rotation. The default value is 0.0.
     angle2: float = 0
 
     def __init__(

@@ -90,7 +90,7 @@ class Viscous:
     - VISCOUS
     """
 
-    # A :py:class:`~abaqus.Material.Plastic.Potential.Potential` object.
+    #: A :py:class:`~abaqus.Material.Plastic.Potential.Potential` object.
     potential: Potential = Potential(((),))
 
     def __init__(

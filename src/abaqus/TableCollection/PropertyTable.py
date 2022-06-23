@@ -36,17 +36,17 @@ class PropertyTable:
             - PROPERTY TABLE
     """
 
-    # A repository of PropertyTableData. Specifies all the propertyTableData in PropertyTable
+    #: A repository of PropertyTableData. Specifies all the propertyTableData in PropertyTable
     propertyTableDatas: dict[str, PropertyTableData] = dict[str, PropertyTableData]()
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A string array specifying the multiple properties to build the parameter table type.
+    #: A string array specifying the multiple properties to build the parameter table type.
     properties: str
 
-    # A String array specifying multiple independent variables. The default value is an empty
-    # array.
+    #: A String array specifying multiple independent variables. The default value is an empty
+    #: array.
     variables: str = ""
 
     def __init__(self, name: str, properties: str, variables: str = ""):

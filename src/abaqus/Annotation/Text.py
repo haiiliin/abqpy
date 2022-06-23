@@ -90,85 +90,85 @@ class Text(Annotation):
         session.viewports[name].annotationsToPlot[i]
     """
 
-    # A Float specifying the width in millimeters of the Text object.
+    #: A Float specifying the width in millimeters of the Text object.
     width: float = None
 
-    # A Float specifying the height in millimeters of the Text object.
+    #: A Float specifying the height in millimeters of the Text object.
     height: float = None
 
-    # A String specifying the annotation repository key.
+    #: A String specifying the annotation repository key.
     name: str
 
-    # A String specifying the text of the Text object. The default value is an empty string.
+    #: A String specifying the text of the Text object. The default value is an empty string.
     text: str = ""
 
-    # A pair of Floats specifying the **X**- and **Y**-offsets in millimeters of the Text object
-    # from **anchor**. The default value is (0, 0).
+    #: A pair of Floats specifying the **X**- and **Y**-offsets in millimeters of the Text object
+    #: from **anchor**. The default value is (0, 0).
     offset: tuple[float] = ()
 
-    # A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
-    # specifies the **X**- and **Y** coordinates as percentages of the viewport width and height.
-    # A Sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
-    # the model coordinate system. A SymbolicConstant specifies a relative position. Possible
-    # values are:
-    # 
-    # - BOTTOM_LEFT
-    # - BOTTOM_CENTER
-    # - BOTTOM_RIGHT
-    # - CENTER_LEFT
-    # - CENTER
-    # - CENTER_RIGHT
-    # - TOP_LEFT
-    # - TOP_CENTER
-    # - TOP_RIGHT
-    # 
-    # The default value is BOTTOM_LEFT.
+    #: A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
+    #: specifies the **X**- and **Y** coordinates as percentages of the viewport width and height.
+    #: A Sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
+    #: the model coordinate system. A SymbolicConstant specifies a relative position. Possible
+    #: values are:
+    #: 
+    #: - BOTTOM_LEFT
+    #: - BOTTOM_CENTER
+    #: - BOTTOM_RIGHT
+    #: - CENTER_LEFT
+    #: - CENTER
+    #: - CENTER_RIGHT
+    #: - TOP_LEFT
+    #: - TOP_CENTER
+    #: - TOP_RIGHT
+    #: 
+    #: The default value is BOTTOM_LEFT.
     anchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT
 
-    # A SymbolicConstant or a sequence of Floats specifying a point. The sequence of two
-    # Floats specifies the **X**- and **Y**-coordinates of the reference point of the Text
-    # annotation given as percentages of its width and height. The SymbolicConstant indicates
-    # a relative position. Possible values are:
-    # 
-    # - BOTTOM_LEFT
-    # - BOTTOM_CENTER
-    # - BOTTOM_RIGHT
-    # - CENTER_LEFT
-    # - CENTER
-    # - CENTER_RIGHT
-    # - TOP_LEFT
-    # - TOP_CENTER
-    # - TOP_RIGHT
-    # 
-    # The default value is BOTTOM_LEFT.
+    #: A SymbolicConstant or a sequence of Floats specifying a point. The sequence of two
+    #: Floats specifies the **X**- and **Y**-coordinates of the reference point of the Text
+    #: annotation given as percentages of its width and height. The SymbolicConstant indicates
+    #: a relative position. Possible values are:
+    #: 
+    #: - BOTTOM_LEFT
+    #: - BOTTOM_CENTER
+    #: - BOTTOM_RIGHT
+    #: - CENTER_LEFT
+    #: - CENTER
+    #: - CENTER_RIGHT
+    #: - TOP_LEFT
+    #: - TOP_CENTER
+    #: - TOP_RIGHT
+    #: 
+    #: The default value is BOTTOM_LEFT.
     referencePoint: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT
 
-    # A Float specifying the amount of rotation in degrees about **referencePoint**. The default
-    # value is 0.0.
+    #: A Float specifying the amount of rotation in degrees about **referencePoint**. The default
+    #: value is 0.0.
     rotationAngle: float = 0
 
-    # A String specifying the color of the Text object. Possible string values are any valid
-    # color. The default value is "White".
+    #: A String specifying the color of the Text object. Possible string values are any valid
+    #: color. The default value is "White".
     color: str = ""
 
-    # A String specifying the font of the Text object. Possible string values are any valid
-    # font specification. The default value is "-*-verdana-medium-r-normal--120-*".
+    #: A String specifying the font of the Text object. Possible string values are any valid
+    #: font specification. The default value is "-*-verdana-medium-r-normal--120-*".
     font: str = ""
 
-    # A SymbolicConstant specifying the Text object background style. Possible values are
-    # MATCH, TRANSPARENT, and OTHER. The default value is TRANSPARENT.
+    #: A SymbolicConstant specifying the Text object background style. Possible values are
+    #: MATCH, TRANSPARENT, and OTHER. The default value is TRANSPARENT.
     backgroundStyle: SymbolicConstant = TRANSPARENT
 
-    # A String specifying the color of the Text object background. Possible string values are
-    # any valid color. The default value matches the viewport background.
+    #: A String specifying the color of the Text object background. Possible string values are
+    #: any valid color. The default value matches the viewport background.
     backgroundColor: str = ""
 
-    # A Boolean specifying whether the box around the text is shown. The default value is OFF.
+    #: A Boolean specifying whether the box around the text is shown. The default value is OFF.
     box: Boolean = OFF
 
-    # A SymbolicConstant specifying the Text object justification for multiline text. Possible
-    # values are JUSTIFY_LEFT, JUSTIFY_CENTER, and JUSTIFY_RIGHT. The default value is
-    # JUSTIFY_LEFT.
+    #: A SymbolicConstant specifying the Text object justification for multiline text. Possible
+    #: values are JUSTIFY_LEFT, JUSTIFY_CENTER, and JUSTIFY_RIGHT. The default value is
+    #: JUSTIFY_LEFT.
     justification: SymbolicConstant = JUSTIFY_LEFT
 
     def __init__(

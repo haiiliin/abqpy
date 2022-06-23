@@ -67,54 +67,54 @@ class FieldOutput:
         session.odbs[name].steps[name].frames[i].fieldOutputs[name]
     """
 
-    # An Int specifying the dimension of vector or the first dimension (number of rows) of
-    # matrix.
+    #: An Int specifying the dimension of vector or the first dimension (number of rows) of
+    #: matrix.
     dim: int = None
 
-    # An Int specifying the second dimension (number of columns) of matrix.
+    #: An Int specifying the second dimension (number of columns) of matrix.
     dim2: int = None
 
-    # A Boolean specifying whether the data are complex.
+    #: A Boolean specifying whether the data are complex.
     isComplex: Boolean = OFF
 
-    # A :py:class:`~abaqus.Odb.FieldLocationArray.FieldLocationArray` object.
+    #: A :py:class:`~abaqus.Odb.FieldLocationArray.FieldLocationArray` object.
     locations: FieldLocationArray = FieldLocationArray()
 
-    # A :py:class:`~abaqus.Odb.FieldValueArray.FieldValueArray` object specifying the order of the objects in the array is determined
-    # by the Abaqus Scripting Interface; see the **data** argument to the addData method for a
-    # description of the order.
+    #: A :py:class:`~abaqus.Odb.FieldValueArray.FieldValueArray` object specifying the order of the objects in the array is determined
+    #: by the Abaqus Scripting Interface; see the **data** argument to the addData method for a
+    #: description of the order.
     values: FieldValueArray = None
 
-    # A String specifying the output variable name.
+    #: A String specifying the output variable name.
     name: str
 
-    # A String specifying the output variable. Colon (:) should not be used as a part of the
-    # field output description.
+    #: A String specifying the output variable. Colon (:) should not be used as a part of the
+    #: field output description.
     description: str
 
-    # A SymbolicConstant specifying the output type. Possible values are SCALAR, VECTOR,
-    # TENSOR_3D_FULL, TENSOR_3D_PLANAR, TENSOR_3D_SURFACE, TENSOR_2D_PLANAR, and
-    # TENSOR_2D_SURFACE.
+    #: A SymbolicConstant specifying the output type. Possible values are SCALAR, VECTOR,
+    #: TENSOR_3D_FULL, TENSOR_3D_PLANAR, TENSOR_3D_SURFACE, TENSOR_2D_PLANAR, and
+    #: TENSOR_2D_SURFACE.
     type: SymbolicConstant
 
-    # A sequence of Strings specifying the labels for each component of the value. The length
-    # of the sequence must match the type. If **type** = TENSOR, the default value is **name** with
-    # the suffixes ('11', '22', '33', '12', '13', '23'). If **type** = VECTOR, the default value
-    # is **name** with the suffixes ('1', '2', '3'). If **type** = SCALAR, the default value is an
-    # empty sequence.
+    #: A sequence of Strings specifying the labels for each component of the value. The length
+    #: of the sequence must match the type. If **type** = TENSOR, the default value is **name** with
+    #: the suffixes ('11', '22', '33', '12', '13', '23'). If **type** = VECTOR, the default value
+    #: is **name** with the suffixes ('1', '2', '3'). If **type** = SCALAR, the default value is an
+    #: empty sequence.
     componentLabels: tuple = ()
 
-    # A sequence of SymbolicConstants specifying which invariants should be calculated for
-    # this field. An empty sequence indicates that no invariants are valid for this field.
-    # Possible values
-    # are:MAGNITUDEMISESTRESCAPRESSINV3MAX_PRINCIPALMID_PRINCIPALMIN_PRINCIPALMAX_INPLANE_PRINCIPALMIN_INPLANE_PRINCIPALOUTOFPLANE_PRINCIPALThe
-    # default value is an empty sequence.
+    #: A sequence of SymbolicConstants specifying which invariants should be calculated for
+    #: this field. An empty sequence indicates that no invariants are valid for this field.
+    #: Possible values
+    #: are:MAGNITUDEMISESTRESCAPRESSINV3MAX_PRINCIPALMID_PRINCIPALMIN_PRINCIPALMAX_INPLANE_PRINCIPALMIN_INPLANE_PRINCIPALOUTOFPLANE_PRINCIPALThe
+    #: default value is an empty sequence.
     validInvariants: SymbolicConstant = None
 
-    # A Boolean specifying whether the field is an engineering tensor or not. Setting
-    # isEngineeringTensor to true makes a tensor field behave as a strain like quantity where
-    # the off-diagonal components of tensor are halved for invariants computation. This
-    # parameter applies only to tensor field outputs. The default value is OFF.
+    #: A Boolean specifying whether the field is an engineering tensor or not. Setting
+    #: isEngineeringTensor to true makes a tensor field behave as a strain like quantity where
+    #: the off-diagonal components of tensor are halved for invariants computation. This
+    #: parameter applies only to tensor field outputs. The default value is OFF.
     isEngineeringTensor: Boolean = OFF
 
     def __init__(

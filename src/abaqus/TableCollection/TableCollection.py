@@ -29,13 +29,13 @@ class TableCollection:
     - *TABLE COLLECTION
     """
 
-    # A repository of the PropertyTable object.
+    #: A repository of the PropertyTable object.
     propertyTables: dict[str, PropertyTable] = dict[str, PropertyTable]()
 
-    # A repository of the ParameterTable object
+    #: A repository of the ParameterTable object
     parameterTables: dict[str, ParameterTable] = dict[str, ParameterTable]()
 
-    # sequence of the DataTable object
+    #: sequence of the DataTable object
     dataTables: list[DataTable] = []
 
     def __init__(self, name: str):

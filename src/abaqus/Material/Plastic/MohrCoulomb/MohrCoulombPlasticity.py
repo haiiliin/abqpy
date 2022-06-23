@@ -32,10 +32,10 @@ class MohrCoulombPlasticity:
     - MOHR COULOMB
     """
 
-    # A :py:class:`~abaqus.Material.Plastic.MohrCoulomb.MohrCoulombHardening.MohrCoulombHardening` object.
+    #: A :py:class:`~abaqus.Material.Plastic.MohrCoulomb.MohrCoulombHardening.MohrCoulombHardening` object.
     mohrCoulombHardening: MohrCoulombHardening = MohrCoulombHardening(((),))
 
-    # A :py:class:`~abaqus.Material.Plastic.MohrCoulomb.TensionCutOff.TensionCutOff` object.
+    #: A :py:class:`~abaqus.Material.Plastic.MohrCoulomb.TensionCutOff.TensionCutOff` object.
     tensionCutOff: TensionCutOff = TensionCutOff(((),))
 
     def __init__(

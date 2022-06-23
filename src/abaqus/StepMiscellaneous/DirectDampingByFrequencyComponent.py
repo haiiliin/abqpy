@@ -19,8 +19,8 @@ class DirectDampingByFrequencyComponent:
         mdb.models[name].steps[name].directDampingByFrequency.components[i]
     """
 
-    # A Float specifying the frequency value in cycles/time.
+    #: A Float specifying the frequency value in cycles/time.
     frequency: float = None
 
-    # A Float specifying the fraction of critical damping.
+    #: A Float specifying the fraction of critical damping.
     fraction: float = None

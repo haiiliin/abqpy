@@ -52,37 +52,37 @@ class OdbAssemblyBase:
         session.odbs[name].rootAssembly
     """
 
-    # A repository of OdbInstance objects.
+    #: A repository of OdbInstance objects.
     instances: dict[str, OdbInstance] = dict[str, OdbInstance]()
 
-    # A repository of OdbSet objects specifying node sets.
+    #: A repository of OdbSet objects specifying node sets.
     nodeSets: dict[str, OdbSet] = dict[str, OdbSet]()
 
-    # A repository of OdbSet objects specifying element sets.
+    #: A repository of OdbSet objects specifying element sets.
     elementSets: dict[str, OdbSet] = dict[str, OdbSet]()
 
-    # A repository of OdbSet objects specifying surfaces.
+    #: A repository of OdbSet objects specifying surfaces.
     surfaces: dict[str, OdbSet] = dict[str, OdbSet]()
 
-    # An :py:class:`~abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray` object.
+    #: An :py:class:`~abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray` object.
     nodes: OdbMeshNodeArray = OdbMeshNodeArray()
 
-    # An :py:class:`~abaqus.Odb.OdbMeshElementArray.OdbMeshElementArray` object.
+    #: An :py:class:`~abaqus.Odb.OdbMeshElementArray.OdbMeshElementArray` object.
     elements: OdbMeshElementArray = OdbMeshElementArray()
 
-    # A repository of OdbDatumCsys objects.
+    #: A repository of OdbDatumCsys objects.
     datumCsyses: dict[str, OdbDatumCsys] = dict[str, OdbDatumCsys]()
 
-    # A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
+    #: A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
     sectionAssignments: SectionAssignmentArray = SectionAssignmentArray()
 
-    # An :py:class:`~abaqus.Odb.OdbRigidBodyArray.OdbRigidBodyArray` object.
+    #: An :py:class:`~abaqus.Odb.OdbRigidBodyArray.OdbRigidBodyArray` object.
     rigidBodies: OdbRigidBodyArray = OdbRigidBodyArray()
 
-    # An :py:class:`~abaqus.Odb.OdbPretensionSectionArray.OdbPretensionSectionArray` object.
+    #: An :py:class:`~abaqus.Odb.OdbPretensionSectionArray.OdbPretensionSectionArray` object.
     pretensionSections: OdbPretensionSectionArray = OdbPretensionSectionArray()
 
-    # A :py:class:`~abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientationArray` object.
+    #: A :py:class:`~abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientationArray` object.
     connectorOrientations: ConnectorOrientationArray = ConnectorOrientationArray()
 
     def ConnectorOrientation(

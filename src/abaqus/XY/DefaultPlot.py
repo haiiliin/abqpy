@@ -26,10 +26,10 @@ class DefaultPlot:
         session.defaultPlot
     """
 
-    # An :py:class:`~abaqus.XY.Area.Area` object specifying an Area used to hold on to the default display properties for
-    # the plot area.
+    #: An :py:class:`~abaqus.XY.Area.Area` object specifying an Area used to hold on to the default display properties for
+    #: the plot area.
     area: Area = Area()
 
-    # A :py:class:`~abaqus.XY.Title.Title` object specifying a Title object used to hold on to the default properties of
-    # the XY-Plot title.
+    #: A :py:class:`~abaqus.XY.Title.Title` object specifying a Title object used to hold on to the default properties of
+    #: the XY-Plot title.
     title: Title = Title()

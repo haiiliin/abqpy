@@ -38,21 +38,21 @@ class MPCSection(Section):
     - MPC
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A SymbolicConstant specifying the MPC type of the section. Possible values are BEAM_MPC,
-    # ELBOW_MPC, PIN_MPC, LINK_MPC, TIE_MPC, and USER_DEFINED.
+    #: A SymbolicConstant specifying the MPC type of the section. Possible values are BEAM_MPC,
+    #: ELBOW_MPC, PIN_MPC, LINK_MPC, TIE_MPC, and USER_DEFINED.
     mpcType: SymbolicConstant
 
-    # A SymbolicConstant specifying the mode of the MPC when it is user-defined. Possible
-    # values are DOF_MODE and NODE_MODE. The default value is DOF_MODE.The **userMode** argument
-    # applies only when **mpcType** = USER_DEFINED.
+    #: A SymbolicConstant specifying the mode of the MPC when it is user-defined. Possible
+    #: values are DOF_MODE and NODE_MODE. The default value is DOF_MODE.The **userMode** argument
+    #: applies only when **mpcType** = USER_DEFINED.
     userMode: SymbolicConstant = DOF_MODE
 
-    # An Int specifying to differentiate between different constraint types in a user-defined
-    # MPCSection. The default value is 0.The **userType** argument applies only when
-    # **mpcType** = USER_DEFINED.
+    #: An Int specifying to differentiate between different constraint types in a user-defined
+    #: MPCSection. The default value is 0.The **userType** argument applies only when
+    #: **mpcType** = USER_DEFINED.
     userType: int = 0
 
     def __init__(

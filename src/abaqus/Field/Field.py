@@ -19,8 +19,8 @@ class Field:
         import fields
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str = ""
 
-    # A String specifying the description of the field. The default value is an empty string.
+    #: A String specifying the description of the field. The default value is an empty string.
     description: str = ""

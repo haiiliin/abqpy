@@ -20,12 +20,12 @@ class Image:
         session.images[name]
     """
 
-    # A String specifying the repository name for the image.
+    #: A String specifying the repository name for the image.
     name: str
 
-    # A String specifying the file from which the image is to be read. The file extension must
-    # be specified and indicate the image format (.bmp, .gif, .jpg, .jpeg, .ico, .pcx, .png,
-    # .rgb, .tga, .tif, or .xpm).
+    #: A String specifying the file from which the image is to be read. The file extension must
+    #: be specified and indicate the image format (.bmp, .gif, .jpg, .jpeg, .ico, .pcx, .png,
+    #: .rgb, .tga, .tif, or .xpm).
     fileName: str
 
     def __init__(self, name: str, fileName: str):

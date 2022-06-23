@@ -43,35 +43,35 @@ class RotationalBodyForce(Load):
         mdb.models[name].loads[name]
     """
 
-    # A String specifying the load repository key.
+    #: A String specifying the load repository key.
     name: str = ""
 
-    # A SymbolicConstant specifying how the load is distributed spatially. Possible values are
-    # UNIFORM and FIELD. The default value is UNIFORM.
+    #: A SymbolicConstant specifying how the load is distributed spatially. Possible values are
+    #: UNIFORM and FIELD. The default value is UNIFORM.
     distributionType: SymbolicConstant = UNIFORM
 
-    # A Boolean specifying whether or not the effect of the load is centrifugal. The default
-    # value is OFF.Note:At least one of **centrifugal** or **rotaryAcceleration** must be
-    # specified and only one must have the value ON.
+    #: A Boolean specifying whether or not the effect of the load is centrifugal. The default
+    #: value is OFF.Note:At least one of **centrifugal** or **rotaryAcceleration** must be
+    #: specified and only one must have the value ON.
     centrifugal: Boolean = OFF
 
-    # A Boolean specifying whether or not the effect of the load is rotary acceleration. The
-    # default value is OFF.Note:At least one of **centrifugal** or **rotaryAcceleration** must be
-    # specified and only one must have the value ON.
+    #: A Boolean specifying whether or not the effect of the load is rotary acceleration. The
+    #: default value is OFF.Note:At least one of **centrifugal** or **rotaryAcceleration** must be
+    #: specified and only one must have the value ON.
     rotaryAcceleration: Boolean = OFF
 
-    # A tuple of Floats specifying the first point on the axis of rotation for the load.
+    #: A tuple of Floats specifying the first point on the axis of rotation for the load.
     point1: float = None
 
-    # A tuple of Floats specifying the second point on the axis of rotation for the load.
+    #: A tuple of Floats specifying the second point on the axis of rotation for the load.
     point2: float = None
 
-    # A String specifying the name of the AnalyticalField object associated with this load.
-    # The **field** argument applies only when **distributionType** = FIELD. The default value is an
-    # empty string.
+    #: A String specifying the name of the AnalyticalField object associated with this load.
+    #: The **field** argument applies only when **distributionType** = FIELD. The default value is an
+    #: empty string.
     field: str = ""
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
     def __init__(

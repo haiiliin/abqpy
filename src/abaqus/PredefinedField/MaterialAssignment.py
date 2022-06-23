@@ -52,37 +52,37 @@ class MaterialAssignment(PredefinedField):
     - INITIAL CONDITIONS
     """
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the predefined field is applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the predefined field is applied.
     region: Region = Region()
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A :py:class:`~abaqus.Assembly.PartInstanceArray.PartInstanceArray` object specifying the part instances to which the predefined field
-    # is applied. All instances must be assigned the same Eulerian section.
+    #: A :py:class:`~abaqus.Assembly.PartInstanceArray.PartInstanceArray` object specifying the part instances to which the predefined field
+    #: is applied. All instances must be assigned the same Eulerian section.
     instanceList: PartInstanceArray
 
-    # A Boolean specifying whether the volume fraction data will be uniform or defined by
-    # discrete fields. The default value is OFF.
+    #: A Boolean specifying whether the volume fraction data will be uniform or defined by
+    #: discrete fields. The default value is OFF.
     useFields: Boolean = OFF
 
-    # A sequence of tuples specifying the uniform volume fractions to be assigned. This
-    # argument is valid only when **useFields** = FALSE. Each tuple contains two entries:A Region
-    # object.A tuple of Floats specifying the uniform volume fraction values. The length of
-    # the tuple must match the number of material instance names specified in the Eulerain
-    # section assigned to part instances specified by **instanceList**.
+    #: A sequence of tuples specifying the uniform volume fractions to be assigned. This
+    #: argument is valid only when **useFields** = FALSE. Each tuple contains two entries:A Region
+    #: object.A tuple of Floats specifying the uniform volume fraction values. The length of
+    #: the tuple must match the number of material instance names specified in the Eulerain
+    #: section assigned to part instances specified by **instanceList**.
     assignmentList: tuple = ()
 
-    # A sequence of tuples specifying the discrete volume fractions to be assigned. This
-    # argument is valid only when **useFields** = TRUE. Each tuple contains two entries:A Region
-    # object.A tuple of Strings specifying Discrete Field names. The length of the tuple must
-    # match the number of material instance names specified in the Eulerain section assigned
-    # to part instances specified by **instanceList**.
+    #: A sequence of tuples specifying the discrete volume fractions to be assigned. This
+    #: argument is valid only when **useFields** = TRUE. Each tuple contains two entries:A Region
+    #: object.A tuple of Strings specifying Discrete Field names. The length of the tuple must
+    #: match the number of material instance names specified in the Eulerain section assigned
+    #: to part instances specified by **instanceList**.
     fieldList: tuple = ()
 
-    # A sequence of three Ints specifying colors used to display the material instance
-    # assignments. This is a sequence of R,G,B colors, where the values are represented by
-    # integers between 0 and 255. The default value is an empty sequence.
+    #: A sequence of three Ints specifying colors used to display the material instance
+    #: assignments. This is a sequence of R,G,B colors, where the values are represented by
+    #: integers between 0 and 255. The default value is an empty sequence.
     colorList: tuple = ()
 
     def __init__(

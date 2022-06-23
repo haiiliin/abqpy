@@ -28,10 +28,10 @@ class Stringer:
         mdb.models[name].rootAssembly.stringers[name]
     """
 
-    # A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
+    #: A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
     elements: MeshElementArray = MeshElementArray([])
 
-    # An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
+    #: An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
     edges: EdgeArray = EdgeArray([])
 
     def __init__(

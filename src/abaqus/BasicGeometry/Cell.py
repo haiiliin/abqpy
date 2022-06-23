@@ -42,22 +42,22 @@ class Cell:
         mdb.models[name].rootAssembly.sets[name].cells[i]
     """
 
-    # An Int specifying the index of the cell in the CellArray.
+    #: An Int specifying the index of the cell in the CellArray.
     index: int = None
 
-    # A Boolean specifying whether the cell belongs to the reference representation of the
-    # Part or Instance.
+    #: A Boolean specifying whether the cell belongs to the reference representation of the
+    #: Part or Instance.
     isReferenceRep: Boolean = OFF
 
-    # A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point located on
-    # the cell.
+    #: A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point located on
+    #: the cell.
     pointOn: float = None
 
-    # A tuple of Floats specifying the name of the feature that created this cell.
+    #: A tuple of Floats specifying the name of the feature that created this cell.
     featureName: float = None
 
-    # A tuple of Floats specifying the name of the part instance for this cell (if
-    # applicable).
+    #: A tuple of Floats specifying the name of the part instance for this cell (if
+    #: applicable).
     instanceName: float = None
 
     def getSize(self, printResults: Boolean = True):

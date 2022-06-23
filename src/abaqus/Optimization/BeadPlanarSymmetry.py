@@ -31,19 +31,19 @@ class BeadPlanarSymmetry(GeometricRestriction):
         mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
 
-    # A String specifying the geometric restriction repository key.
+    #: A String specifying the geometric restriction repository key.
     name: str
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
     region: Region
 
-    # A SymbolicConstant specifying the axis of symmetry. Possible values are AXIS_1, AXIS_2,
-    # and AXIS_3. The default value is AXIS_1.
+    #: A SymbolicConstant specifying the axis of symmetry. Possible values are AXIS_1, AXIS_2,
+    #: and AXIS_3. The default value is AXIS_1.
     axis: SymbolicConstant = AXIS_1
 
-    # None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
-    # global coordinate system is used. When this member is queried, it returns an Int. The
-    # default value is None.
+    #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
+    #: global coordinate system is used. When this member is queried, it returns an Int. The
+    #: default value is None.
     csys: int = None
 
     def __init__(

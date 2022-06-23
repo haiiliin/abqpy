@@ -25,12 +25,12 @@ class AnimationController:
         session.viewports[name].animationController
     """
 
-    # A SymbolicConstant specifying the type of movie to play. Possible values are
-    # SCALE_FACTOR, HARMONIC, TIME_HISTORY, and NONE. The default value is NONE.
+    #: A SymbolicConstant specifying the type of movie to play. Possible values are
+    #: SCALE_FACTOR, HARMONIC, TIME_HISTORY, and NONE. The default value is NONE.
     animationType: SymbolicConstant = NONE
 
-    # A SymbolicConstant specifying the state of the animation controller. Possible values are
-    # STOP and PLAY. The default value is STOP.
+    #: A SymbolicConstant specifying the state of the animation controller. Possible values are
+    #: STOP and PLAY. The default value is STOP.
     state: SymbolicConstant = STOP
 
     def play(self, duration: SymbolicConstant = UNLIMITED):

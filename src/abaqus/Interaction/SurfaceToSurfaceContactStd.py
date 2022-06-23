@@ -141,155 +141,155 @@ class SurfaceToSurfaceContactStd(Interaction):
         mdb.models[name].interactions[name]
     """
 
-    # A SymbolicConstant specifying the choice of contact tracking algorithm. The STATE
-    # tracking algorithm uses only normal projections and is specified by using ONE_CONFIG.
-    # The PATH tracking algorithm uses crossing and normal projections and is specified by
-    # using TWO_CONFIG. Possible values are ONE_CONFIG and TWO_CONFIG. The default value is
-    # TWO_CONFIG.This argument is valid only when **sliding** = FINITE and
-    # **enforcement** = SURFACE_TO_SURFACE.
+    #: A SymbolicConstant specifying the choice of contact tracking algorithm. The STATE
+    #: tracking algorithm uses only normal projections and is specified by using ONE_CONFIG.
+    #: The PATH tracking algorithm uses crossing and normal projections and is specified by
+    #: using TWO_CONFIG. Possible values are ONE_CONFIG and TWO_CONFIG. The default value is
+    #: TWO_CONFIG.This argument is valid only when **sliding** = FINITE and
+    #: **enforcement** = SURFACE_TO_SURFACE.
     contactTracking: SymbolicConstant = TWO_CONFIG
 
-    # A SymbolicConstant specifying the manner in which midface constraints are employed.
-    # Possible values are SELECTIVE, NEVER, and ALWAYS. The default value is SELECTIVE.This
-    # argument is not valid when **sliding** = FINITE and **enforcement** = SURFACE_TO_SURFACE.
+    #: A SymbolicConstant specifying the manner in which midface constraints are employed.
+    #: Possible values are SELECTIVE, NEVER, and ALWAYS. The default value is SELECTIVE.This
+    #: argument is not valid when **sliding** = FINITE and **enforcement** = SURFACE_TO_SURFACE.
     supplementaryContact: SymbolicConstant = SELECTIVE
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A String specifying the name of the step in which the SurfaceToSurfaceContactStd object
-    # is created.
+    #: A String specifying the name of the step in which the SurfaceToSurfaceContactStd object
+    #: is created.
     createStepName: str
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
     master: Region
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
     slave: Region
 
-    # A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
-    # SMALL.
+    #: A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
+    #: SMALL.
     sliding: SymbolicConstant
 
-    # A String specifying the name of the ContactProperty object associated with this
-    # interaction.
+    #: A String specifying the name of the ContactProperty object associated with this
+    #: interaction.
     interactionProperty: str
 
-    # A SymbolicConstant specifying the type of time-dependent allowable interference for
-    # contact pairs and contact elements. Possible values are:
+    #: A SymbolicConstant specifying the type of time-dependent allowable interference for
+    #: contact pairs and contact elements. Possible values are:
     
 
-    # - NONE, specifying no allowable contact interference.
-    # - SHRINK_FIT.
-    # - UNIFORM.
-    # 
-    # The default value is NONE.
+    #: - NONE, specifying no allowable contact interference.
+    #: - SHRINK_FIT.
+    #: - UNIFORM.
+    #: 
+    #: The default value is NONE.
     interferenceType: SymbolicConstant = NONE
 
-    # A Float specifying the maximum overclosure distance allowed. This argument applies only
-    # when **interferenceType** = UNIFORM. The default value is 0.0.
+    #: A Float specifying the maximum overclosure distance allowed. This argument applies only
+    #: when **interferenceType** = UNIFORM. The default value is 0.0.
     overclosure: float = 0
 
-    # A SymbolicConstant specifying the method used to determine the interference direction.
-    # Possible values are COMPUTED and DIRECTION_COSINE. The default value is COMPUTED.
+    #: A SymbolicConstant specifying the method used to determine the interference direction.
+    #: Possible values are COMPUTED and DIRECTION_COSINE. The default value is COMPUTED.
     interferenceDirectionType: SymbolicConstant = COMPUTED
 
-    # A sequence of three Floats specifying the following:
-    # 
-    # - XX-direction cosine of the interference direction vector.
-    # - YY-direction cosine of the interference direction vector.
-    # - ZZ-direction cosine of the interference direction vector.
-    # 
-    # This argument is required only when **interferenceDirectionType** = DIRECTION_COSINE.
+    #: A sequence of three Floats specifying the following:
+    #: 
+    #: - XX-direction cosine of the interference direction vector.
+    #: - YY-direction cosine of the interference direction vector.
+    #: - ZZ-direction cosine of the interference direction vector.
+    #: 
+    #: This argument is required only when **interferenceDirectionType** = DIRECTION_COSINE.
     direction: tuple = ()
 
-    # A String specifying the name of the amplitude curve that defines the magnitude of the
-    # prescribed interference during the step. Use None to specify that the prescribed
-    # interference is applied immediately at the beginning of the step and ramped down to zero
-    # linearly over the step.
+    #: A String specifying the name of the amplitude curve that defines the magnitude of the
+    #: prescribed interference during the step. Use None to specify that the prescribed
+    #: interference is applied immediately at the beginning of the step and ramped down to zero
+    #: linearly over the step.
     amplitude: str = ""
 
-    # A Float specifying the degree of smoothing used for deformable or rigid main surfaces
-    # involved when **enforcement** = NODE_TO_SURFACE. The value given must lie between 0.0 and
-    # 0.5. The default value is 0.2.
+    #: A Float specifying the degree of smoothing used for deformable or rigid main surfaces
+    #: involved when **enforcement** = NODE_TO_SURFACE. The value given must lie between 0.0 and
+    #: 0.5. The default value is 0.2.
     smooth: float = 0
 
-    # A Float specifying the distance by which a secondary node must penetrate the main
-    # surface before Abaqus/Standard abandons the current increment and tries again with a
-    # smaller increment. The default value is 0.0.
+    #: A Float specifying the distance by which a secondary node must penetrate the main
+    #: surface before Abaqus/Standard abandons the current increment and tries again with a
+    #: smaller increment. The default value is 0.0.
     hcrit: float = 0
 
-    # A Float specifying a fraction of the end segment or facet edge length by which the main
-    # surface is to be extended to avoid numerical round-off errors associated with contact
-    # modeling. The value given must lie between 0.0 and 0.2. The default value is 0.1.
+    #: A Float specifying a fraction of the end segment or facet edge length by which the main
+    #: surface is to be extended to avoid numerical round-off errors associated with contact
+    #: modeling. The value given must lie between 0.0 and 0.2. The default value is 0.1.
     extensionZone: float = 0
 
-    # A SymbolicConstant specifying the adjust method. Possible values are NONE, OVERCLOSED,
-    # TOLERANCE, and SET. The default value is NONE.
+    #: A SymbolicConstant specifying the adjust method. Possible values are NONE, OVERCLOSED,
+    #: TOLERANCE, and SET. The default value is NONE.
     adjustMethod: SymbolicConstant = NONE
 
-    # A Float specifying the adjust tolerance. The default value is 0.0.
+    #: A Float specifying the adjust tolerance. The default value is 0.0.
     adjustTolerance: float = 0
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the Set object to which the adjustment is to be applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the Set object to which the adjustment is to be applied.
     adjustSet: Region = None
 
-    # A SymbolicConstant specifying the discretization method. Possible values are
-    # NODE_TO_SURFACE and SURFACE_TO_SURFACE. The default value is SURFACE_TO_SURFACE.
+    #: A SymbolicConstant specifying the discretization method. Possible values are
+    #: NODE_TO_SURFACE and SURFACE_TO_SURFACE. The default value is SURFACE_TO_SURFACE.
     enforcement: SymbolicConstant = SURFACE_TO_SURFACE
 
-    # A Boolean specifying whether shell/membrane element thickness is considered. The default
-    # value is ON.This argument is not valid when **sliding** = FINITE and
-    # **enforcement** = NODE_TO_SURFACE.
+    #: A Boolean specifying whether shell/membrane element thickness is considered. The default
+    #: value is ON.This argument is not valid when **sliding** = FINITE and
+    #: **enforcement** = NODE_TO_SURFACE.
     thickness: Boolean = ON
 
-    # A String specifying the name of the ContactControl object associated with this
-    # interaction. The empty string indicates that the default contact controls will be used.
-    # The default value is an empty string.
+    #: A String specifying the name of the ContactControl object associated with this
+    #: interaction. The empty string indicates that the default contact controls will be used.
+    #: The default value is an empty string.
     contactControls: str = ""
 
-    # A Boolean specifying whether the surfaces are to be "tied" together for the duration of
-    # the simulation. The default value is OFF.
+    #: A Boolean specifying whether the surfaces are to be "tied" together for the duration of
+    #: the simulation. The default value is OFF.
     tied: Boolean = OFF
 
-    # A SymbolicConstant or a Float specifying the initial clearance at regions of contact.
-    # Possible values are OMIT and COMPUTED. The default value is OMIT.
+    #: A SymbolicConstant or a Float specifying the initial clearance at regions of contact.
+    #: Possible values are OMIT and COMPUTED. The default value is OMIT.
     initialClearance: typing.Union[SymbolicConstant, float] = OMIT
 
-    # None or a sequence of Floats specifying the half thread angle used for bolt clearance.
-    # The default value is None.
+    #: None or a sequence of Floats specifying the half thread angle used for bolt clearance.
+    #: The default value is None.
     halfThreadAngle: str = None
 
-    # None or a sequence of Floats specifying the pitch used for bolt clearance. The default
-    # value is None.
+    #: None or a sequence of Floats specifying the pitch used for bolt clearance. The default
+    #: value is None.
     pitch: str = None
 
-    # The SymbolicConstant COMPUTED or a Float specifying the major diameter of the bolt used
-    # for bolt clearance. The default value is COMPUTED.
+    #: The SymbolicConstant COMPUTED or a Float specifying the major diameter of the bolt used
+    #: for bolt clearance. The default value is COMPUTED.
     majorBoltDiameter: typing.Union[SymbolicConstant, float] = COMPUTED
 
-    # The SymbolicConstant COMPUTED or a Float specifying the mean diameter of the bolt used
-    # for bolt clearance. The default value is COMPUTED.
+    #: The SymbolicConstant COMPUTED or a Float specifying the mean diameter of the bolt used
+    #: for bolt clearance. The default value is COMPUTED.
     meanBoltDiameter: typing.Union[SymbolicConstant, float] = COMPUTED
 
-    # A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the bolt hole when specifying bolt
-    # clearance.
+    #: A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the bolt hole when specifying bolt
+    #: clearance.
     datumAxis: DatumAxis = None
 
-    # A Boolean specifying whether to reverse the bolt clearance direction given by the datum
-    # axis. The default value is OFF.
+    #: A Boolean specifying whether to reverse the bolt clearance direction given by the datum
+    #: axis. The default value is OFF.
     useReverseDatumAxis: Boolean = OFF
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the contact region for which clearance is specified.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the contact region for which clearance is specified.
     clearanceRegion: Region = None
 
-    # A SymbolicConstant specifying whether to use surface smoothing for geometric surfaces in
-    # SurfaceToSurfaceContactStd interactions. Possible values are AUTOMATIC and NONE. The
-    # default value is NONE.
+    #: A SymbolicConstant specifying whether to use surface smoothing for geometric surfaces in
+    #: SurfaceToSurfaceContactStd interactions. Possible values are AUTOMATIC and NONE. The
+    #: default value is NONE.
     surfaceSmoothing: SymbolicConstant = NONE
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary node sub-set for bonding, used only when the
-    # contact property CohesiveBehavior option specifies use.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary node sub-set for bonding, used only when the
+    #: contact property CohesiveBehavior option specifies use.
     bondingSet: Region = None
 
     def __init__(

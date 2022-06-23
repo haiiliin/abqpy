@@ -50,38 +50,38 @@ class RigidBody(Constraint):
     - RIGID BODY
     """
 
-    # A Boolean specifying whether the constraint is suppressed or not. The default value is
-    # OFF.
+    #: A Boolean specifying whether the constraint is suppressed or not. The default value is
+    #: OFF.
     suppressed: Boolean = OFF
 
-    # A String specifying the constraint repository key.
+    #: A String specifying the constraint repository key.
     name: str
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the reference point.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the reference point.
     refPointRegion: Region
 
-    # None or a Region object specifying the elements constrained to the movement of the
-    # reference point. The default value is None.
+    #: None or a Region object specifying the elements constrained to the movement of the
+    #: reference point. The default value is None.
     bodyRegion: str = None
 
-    # None or a Region object specifying the nodes tied to the movement of the reference
-    # point. The default value is None.
+    #: None or a Region object specifying the nodes tied to the movement of the reference
+    #: point. The default value is None.
     tieRegion: str = None
 
-    # None or a Region object specifying the nodes pinned to the movement of the reference
-    # point. The default value is None.
+    #: None or a Region object specifying the nodes pinned to the movement of the reference
+    #: point. The default value is None.
     pinRegion: str = None
 
-    # None or a Region object specifying the analytic surface constrained to the movement of
-    # the reference point. The default value is None.
+    #: None or a Region object specifying the analytic surface constrained to the movement of
+    #: the reference point. The default value is None.
     surfaceRegion: str = None
 
-    # A Boolean specifying whether the analysis product should recompute the reference point
-    # position to be at the center of mass. The default value is OFF.
+    #: A Boolean specifying whether the analysis product should recompute the reference point
+    #: position to be at the center of mass. The default value is OFF.
     refPointAtCOM: Boolean = OFF
 
-    # A Boolean specifying whether the temperature degree of freedom should be constrained.
-    # The default value is OFF.
+    #: A Boolean specifying whether the temperature degree of freedom should be constrained.
+    #: The default value is OFF.
     isothermal: Boolean = OFF
 
     def __init__(

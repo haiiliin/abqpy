@@ -101,36 +101,36 @@ class FractureCriterion:
     - FRACTURE CRITERION
     """
 
-    # A sequence of sequences of Floats specifying the value defining the fracture criterion.
-    # The items in the table data are described below.
+    #: A sequence of sequences of Floats specifying the value defining the fracture criterion.
+    #: The items in the table data are described below.
     initTable: tuple
 
-    # A SymbolicConstant specifying the type of data used to define the fracture criterion.
-    # Possible values are VCCT and ENHANCED VCCT. The default value is VCCT.
+    #: A SymbolicConstant specifying the type of data used to define the fracture criterion.
+    #: Possible values are VCCT and ENHANCED VCCT. The default value is VCCT.
     type: SymbolicConstant = VCCT
 
-    # A SymbolicConstant specifying the mixed mode behavior type used to define fracture
-    # criterion. Possible values are BK, POWER, and REEDER. The default value is BK.
+    #: A SymbolicConstant specifying the mixed mode behavior type used to define fracture
+    #: criterion. Possible values are BK, POWER, and REEDER. The default value is BK.
     mixedModeBehavior: SymbolicConstant = BK
 
-    # A Boolean specifying whether the fracture criterion data depend on temperature. The
-    # default value is OFF.
+    #: A Boolean specifying whether the fracture criterion data depend on temperature. The
+    #: default value is OFF.
     temperatureDependency: Boolean = OFF
 
-    # An Int specifying the number of fracture criterion data field variables. The default
-    # value is 0.
+    #: An Int specifying the number of fracture criterion data field variables. The default
+    #: value is 0.
     dependencies: int = 0
 
-    # A Float specifying the tolerance for VCCT\Enhanced VCCT type. The default value is 0.2.
+    #: A Float specifying the tolerance for VCCT\Enhanced VCCT type. The default value is 0.2.
     tolerance: float = 0
 
-    # A SymbolicConstant specifying whether to include unstable crack growth tolerance in
-    # fracture criterion. Possible values are ON and OFF. The default value is OFF.
+    #: A SymbolicConstant specifying whether to include unstable crack growth tolerance in
+    #: fracture criterion. Possible values are ON and OFF. The default value is OFF.
     specifyUnstableCrackProp: SymbolicConstant = OFF
 
-    # The SymbolicConstant DEFAULT or a Float specifying the tolerance for unstable crack
-    # propagation. This parameter specified only if **specifyUnstableCrackProp** = ON. The default
-    # value is DEFAULT.
+    #: The SymbolicConstant DEFAULT or a Float specifying the tolerance for unstable crack
+    #: propagation. This parameter specified only if **specifyUnstableCrackProp** = ON. The default
+    #: value is DEFAULT.
     unstableTolerance: typing.Union[SymbolicConstant, float] = DEFAULT
 
     def __init__(

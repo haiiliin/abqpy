@@ -29,16 +29,16 @@ class InertiaRelief(Load):
         mdb.models[name].loads[name]
     """
 
-    # A String specifying the load repository key.
+    #: A String specifying the load repository key.
     name: str = ""
 
-    # None or a DatumCsys object specifying the local coordinate system of the rigid body
-    # degrees of freedom for the inertia relief load. If **localCoordinates** = None, the free
-    # directions are defined in the global coordinate system. When this member is queried, it
-    # returns an Int. The default value is None.
+    #: None or a DatumCsys object specifying the local coordinate system of the rigid body
+    #: degrees of freedom for the inertia relief load. If **localCoordinates** = None, the free
+    #: directions are defined in the global coordinate system. When this member is queried, it
+    #: returns an Int. The default value is None.
     localCoordinates: int = None
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
     def __init__(

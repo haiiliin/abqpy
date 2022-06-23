@@ -31,22 +31,22 @@ class AdaptiveMeshDomain:
         mdb.models[name].steps[name].adaptiveMeshDomains[name]
     """
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the adaptive mesh domain is applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the adaptive mesh domain is applied.
     region: Region
 
-    # A String specifying the name of an AdaptiveMeshControl object.
+    #: A String specifying the name of an AdaptiveMeshControl object.
     controls: str = ""
 
-    # An Int specifying the frequency in increments at which adaptive meshing will be
-    # performed. The default value is 10.
+    #: An Int specifying the frequency in increments at which adaptive meshing will be
+    #: performed. The default value is 10.
     frequency: int = 10
 
-    # An Int specifying the number of mesh sweeps to be performed at the beginning of the
-    # first step in which this adaptive mesh definition is active. The default value is 5.
+    #: An Int specifying the number of mesh sweeps to be performed at the beginning of the
+    #: first step in which this adaptive mesh definition is active. The default value is 5.
     initialMeshSweeps: int = 5
 
-    # An Int specifying the number of mesh sweeps to be performed in each adaptive mesh
-    # increment. The default value is 1.
+    #: An Int specifying the number of mesh sweeps to be performed in each adaptive mesh
+    #: increment. The default value is 1.
     meshSweeps: int = 1
 
     def __init__(

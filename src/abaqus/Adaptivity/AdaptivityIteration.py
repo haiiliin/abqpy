@@ -35,26 +35,26 @@ class AdaptivityIteration:
         mdb.adaptivityProcesses[name].iterations[i]
     """
 
-    # A repository of RuleResult objects specifying the calculated results from sizing
-    # functions corresponding to the RemeshingRule objects for this iteration of an adaptivity
-    # process.
+    #: A repository of RuleResult objects specifying the calculated results from sizing
+    #: functions corresponding to the RemeshingRule objects for this iteration of an adaptivity
+    #: process.
     ruleResults: dict[str, RuleResult] = dict[str, RuleResult]()
 
-    # An Int specifying the sequence number for this iteration in the adaptivity process.
+    #: An Int specifying the sequence number for this iteration in the adaptivity process.
     iteration: int
 
-    # A String specifying the name of the job that was run for this iteration.
+    #: A String specifying the name of the job that was run for this iteration.
     jobName: str
 
-    # A String specifying the name of the model that was analyzed and remeshed in this
-    # iteration.
+    #: A String specifying the name of the model that was analyzed and remeshed in this
+    #: iteration.
     modelName: str
 
-    # A String specifying the path to the ODB file that was created for this iteration.
+    #: A String specifying the path to the ODB file that was created for this iteration.
     odbPath: str
 
-    # An Int specifying the number of part instances which generated errors while remeshing
-    # the model in this iteration of the adaptivity process.
+    #: An Int specifying the number of part instances which generated errors while remeshing
+    #: the model in this iteration of the adaptivity process.
     remeshingErrors: int
 
     def __init__(

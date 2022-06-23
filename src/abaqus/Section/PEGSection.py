@@ -37,22 +37,22 @@ class PEGSection(Section):
     - SOLID SECTION
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A String specifying the name of the material.
+    #: A String specifying the name of the material.
     material: str
 
-    # A Float specifying the thickness of the section. Possible values are **thickness** >> 0.0.
-    # The default value is 1.0.
+    #: A Float specifying the thickness of the section. Possible values are **thickness** >> 0.0.
+    #: The default value is 1.0.
     thickness: float = 1
 
-    # A Float specifying the value of the x component of the angle between the bounding
-    # planes, ΔϕxΔ⁢ϕx. The default value is 0.0.
+    #: A Float specifying the value of the x component of the angle between the bounding
+    #: planes, ΔϕxΔ⁢ϕx. The default value is 0.0.
     wedgeAngle1: float = 0
 
-    # A Float specifying the value of the y component of the angle between the bounding
-    # planes, ΔϕyΔ⁢ϕy. The default value is 0.0.
+    #: A Float specifying the value of the y component of the angle between the bounding
+    #: planes, ΔϕyΔ⁢ϕy. The default value is 0.0.
     wedgeAngle2: float = 0
 
     def __init__(

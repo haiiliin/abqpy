@@ -37,27 +37,27 @@ class BeadFixedRegion(GeometricRestriction):
         mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
 
-    # A String specifying the geometric restriction repository key.
+    #: A String specifying the geometric restriction repository key.
     name: str
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
     region: Region
 
-    # None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
-    # global coordinate system is used. When this member is queried, it returns an Int. The
-    # default value is None.
+    #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
+    #: global coordinate system is used. When this member is queried, it returns an Int. The
+    #: default value is None.
     csys: int = None
 
-    # A Boolean specifying whether to fix the region in the 1-direction. The default value is
-    # OFF.
+    #: A Boolean specifying whether to fix the region in the 1-direction. The default value is
+    #: OFF.
     u1: Boolean = OFF
 
-    # A Boolean specifying whether to fix the region in the 2-direction. The default value is
-    # OFF.
+    #: A Boolean specifying whether to fix the region in the 2-direction. The default value is
+    #: OFF.
     u2: Boolean = OFF
 
-    # A Boolean specifying whether to fix the region in the 3-direction. The default value is
-    # OFF.
+    #: A Boolean specifying whether to fix the region in the 3-direction. The default value is
+    #: OFF.
     u3: Boolean = OFF
 
     def __init__(

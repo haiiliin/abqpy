@@ -25,14 +25,14 @@ class Radiation:
     - GAP RADIATION
     """
 
-    # A Float specifying the emissivity of the main surface.
+    #: A Float specifying the emissivity of the main surface.
     mainEmissivity: float
 
-    # A Float specifying the emissivity of the secondary surface.
+    #: A Float specifying the emissivity of the secondary surface.
     secondaryEmissivity: float
 
-    # A sequence of sequences of Floats specifying the following:Effective viewfactor, FF.Gap
-    # clearance, dd.
+    #: A sequence of sequences of Floats specifying the following:Effective viewfactor, FF.Gap
+    #: clearance, dd.
     table: tuple
 
     def __init__(self, mainEmissivity: float, secondaryEmissivity: float, table: tuple):

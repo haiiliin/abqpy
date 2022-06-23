@@ -16,7 +16,7 @@ class TieConstraint:
         session.odbData[name].ties[i]
     """
 
-    # A String specifying the tie constraint name. This attribute is read-only.
+    #: A String specifying the tie constraint name. This attribute is read-only.
     name: str = ""
 
     def constraintData(self):

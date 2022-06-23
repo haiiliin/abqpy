@@ -136,138 +136,138 @@ class ComplexFrequencyStep(AnalysisStep):
             - STEP
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str = ""
 
-    # The SymbolicConstant ALL or an Int specifying the number of complex eigenmodes to be
-    # calculated or a SymbolicConstant ALL. The default value is ALL.
+    #: The SymbolicConstant ALL or an Int specifying the number of complex eigenmodes to be
+    #: calculated or a SymbolicConstant ALL. The default value is ALL.
     numEigen: SymbolicConstant = ALL
 
-    # None or a Float specifying the shift point in cycles per time. The default value is
-    # None.
+    #: None or a Float specifying the shift point in cycles per time. The default value is
+    #: None.
     shift: float = None
 
-    # A Boolean specifying whether to add to the damping matrix contributions due to friction
-    # effects. The default value is OFF.
+    #: A Boolean specifying whether to add to the damping matrix contributions due to friction
+    #: effects. The default value is OFF.
     frictionDamping: Boolean = OFF
 
-    # A SymbolicConstant specifying the type of matrix storage. Possible values are SYMMETRIC,
-    # UNSYMMETRIC, and SOLVER_DEFAULT. The default value is SOLVER_DEFAULT.
+    #: A SymbolicConstant specifying the type of matrix storage. Possible values are SYMMETRIC,
+    #: UNSYMMETRIC, and SOLVER_DEFAULT. The default value is SOLVER_DEFAULT.
     matrixStorage: SymbolicConstant = SOLVER_DEFAULT
 
-    # None or a Float specifying the minimum frequency of interest in cycles per time. The
-    # default value is None.
+    #: None or a Float specifying the minimum frequency of interest in cycles per time. The
+    #: default value is None.
     minEigen: float = None
 
-    # None or a Float specifying the maximum frequency of interest in cycles per time. The
-    # default value is None.
+    #: None or a Float specifying the maximum frequency of interest in cycles per time. The
+    #: default value is None.
     maxEigen: float = None
 
-    # None or a Float specifying the frequency at which to evaluate frequency-dependent
-    # properties for viscoelasticity, springs, and dashpots during the eigenvalue extraction.
-    # If the value is None, the analysis product will evaluate the stiffness associated with
-    # frequency-dependent springs and dashpots at zero frequency and will not consider the
-    # stiffness contributions from frequency-domain viscoelasticity in the step. The default
-    # value is None.
+    #: None or a Float specifying the frequency at which to evaluate frequency-dependent
+    #: properties for viscoelasticity, springs, and dashpots during the eigenvalue extraction.
+    #: If the value is None, the analysis product will evaluate the stiffness associated with
+    #: frequency-dependent springs and dashpots at zero frequency and will not consider the
+    #: stiffness contributions from frequency-domain viscoelasticity in the step. The default
+    #: value is None.
     propertyEvaluationFrequency: float = None
 
-    # A String specifying the name of the previous step. The new step appears after this step
-    # in the list of analysis steps.
+    #: A String specifying the name of the previous step. The new step appears after this step
+    #: in the list of analysis steps.
     previous: str = ""
 
-    # A String specifying a description of the new step. The default value is an empty string.
+    #: A String specifying a description of the new step. The default value is an empty string.
     description: str = ""
 
-    # A SymbolicConstant specifying whether the step has an explicit procedure type
-    # (*procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
+    #: A SymbolicConstant specifying whether the step has an explicit procedure type
+    #: (*procedureType*=ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
     explicit: SymbolicConstant = None
 
-    # A Boolean specifying whether the step has a perturbation procedure type.
+    #: A Boolean specifying whether the step has a perturbation procedure type.
     perturbation: Boolean = OFF
 
-    # A Boolean specifying whether the step has a mechanical procedure type.
+    #: A Boolean specifying whether the step has a mechanical procedure type.
     nonmechanical: Boolean = OFF
 
-    # A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    # - ANNEAL
-    # - BUCKLE
-    # - COMPLEX_FREQUENCY
-    # - COUPLED_TEMP_DISPLACEMENT
-    # - COUPLED_THERMAL_ELECTRIC
-    # - DIRECT_CYCLIC
-    # - DYNAMIC_IMPLICIT
-    # - DYNAMIC_EXPLICIT
-    # - DYNAMIC_SUBSPACE
-    # - DYNAMIC_TEMP_DISPLACEMENT
-    # - COUPLED_THERMAL_ELECTRICAL_STRUCTURAL
-    # - FREQUENCY
-    # - GEOSTATIC
-    # - HEAT_TRANSFER
-    # - MASS_DIFFUSION
-    # - MODAL_DYNAMICS
-    # - RANDOM_RESPONSE
-    # - RESPONSE_SPECTRUM
-    # - SOILS
-    # - STATIC_GENERAL
-    # - STATIC_LINEAR_PERTURBATION
-    # - STATIC_RIKS
-    # - STEADY_STATE_DIRECT
-    # - STEADY_STATE_MODAL
-    # - STEADY_STATE_SUBSPACE
-    # - VISCO
+    #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
+    #: - ANNEAL
+    #: - BUCKLE
+    #: - COMPLEX_FREQUENCY
+    #: - COUPLED_TEMP_DISPLACEMENT
+    #: - COUPLED_THERMAL_ELECTRIC
+    #: - DIRECT_CYCLIC
+    #: - DYNAMIC_IMPLICIT
+    #: - DYNAMIC_EXPLICIT
+    #: - DYNAMIC_SUBSPACE
+    #: - DYNAMIC_TEMP_DISPLACEMENT
+    #: - COUPLED_THERMAL_ELECTRICAL_STRUCTURAL
+    #: - FREQUENCY
+    #: - GEOSTATIC
+    #: - HEAT_TRANSFER
+    #: - MASS_DIFFUSION
+    #: - MODAL_DYNAMICS
+    #: - RANDOM_RESPONSE
+    #: - RESPONSE_SPECTRUM
+    #: - SOILS
+    #: - STATIC_GENERAL
+    #: - STATIC_LINEAR_PERTURBATION
+    #: - STATIC_RIKS
+    #: - STEADY_STATE_DIRECT
+    #: - STEADY_STATE_MODAL
+    #: - STEADY_STATE_SUBSPACE
+    #: - VISCO
     procedureType: SymbolicConstant = None
 
-    # A Boolean specifying whether the step is suppressed or not. The default value is OFF.
+    #: A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
 
-    # A repository of FieldOutputRequestState objects.
+    #: A repository of FieldOutputRequestState objects.
     fieldOutputRequestState: dict[str, FieldOutputRequestState] = dict[
         str, FieldOutputRequestState
     ]()
 
-    # A repository of HistoryOutputRequestState objects.
+    #: A repository of HistoryOutputRequestState objects.
     historyOutputRequestState: dict[str, HistoryOutputRequestState] = dict[
         str, HistoryOutputRequestState
     ]()
 
-    # A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object.
+    #: A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
-    # A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
+    #: A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
     monitor: Monitor = None
 
-    # A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
+    #: A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
     restart: Restart = Restart()
 
-    # A repository of AdaptiveMeshConstraintState objects.
+    #: A repository of AdaptiveMeshConstraintState objects.
     adaptiveMeshConstraintStates: dict[str, AdaptiveMeshConstraintState] = dict[
         str, AdaptiveMeshConstraintState
     ]()
 
-    # A repository of AdaptiveMeshDomain objects.
+    #: A repository of AdaptiveMeshDomain objects.
     adaptiveMeshDomains: dict[str, AdaptiveMeshDomain] = dict[str, AdaptiveMeshDomain]()
 
-    # A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object.
+    #: A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object.
     control: Control = Control()
 
-    # A :py:class:`~abaqus.StepMiscellaneous.SolverControl.SolverControl` object.
+    #: A :py:class:`~abaqus.StepMiscellaneous.SolverControl.SolverControl` object.
     solverControl: SolverControl = SolverControl()
 
-    # A repository of BoundaryConditionState objects.
+    #: A repository of BoundaryConditionState objects.
     boundaryConditionStates: dict[str, BoundaryConditionState] = dict[
         str, BoundaryConditionState
     ]()
 
-    # A repository of InteractionState objects.
+    #: A repository of InteractionState objects.
     interactionStates: int = None
 
-    # A repository of LoadState objects.
+    #: A repository of LoadState objects.
     loadStates: dict[str, LoadState] = dict[str, LoadState]()
 
-    # A repository of LoadCase objects.
+    #: A repository of LoadCase objects.
     loadCases: dict[str, LoadCase] = dict[str, LoadCase]()
 
-    # A repository of PredefinedFieldState objects.
+    #: A repository of PredefinedFieldState objects.
     predefinedFieldStates: dict[str, PredefinedFieldState] = dict[
         str, PredefinedFieldState
     ]()

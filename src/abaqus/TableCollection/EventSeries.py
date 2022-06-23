@@ -42,30 +42,30 @@ class EventSeries:
             - EVENT SERIES
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A string specifying the step name.
+    #: A string specifying the step name.
     createStepName: str
 
-    # A string specifying the type of event series.
+    #: A string specifying the type of event series.
     eventSeriesType: str
 
-    # A Symbolic constant specifying the type of transformation. Possible values are NONE,
-    # BOTH, TRANSLATE, and ROTATE. The default value is NONE.
+    #: A Symbolic constant specifying the type of transformation. Possible values are NONE,
+    #: BOTH, TRANSLATE, and ROTATE. The default value is NONE.
     transformType: str = NONE
 
-    # A Symbolic constant specifying time. Possible values are TOTAL_TIME and STEP_TIME. The
-    # default value is STEP_TIME.
+    #: A Symbolic constant specifying time. Possible values are TOTAL_TIME and STEP_TIME. The
+    #: default value is STEP_TIME.
     timeSpan: str = STEP_TIME
 
-    # An Array specifying the required transformations over event series data.
+    #: An Array specifying the required transformations over event series data.
     transformations: str = ""
 
-    # A String specifying the filename.
+    #: A String specifying the filename.
     fileName: str = ""
 
-    # An Array of double specifying the values of fields provided in EventSeriesType.
+    #: An Array of double specifying the values of fields provided in EventSeriesType.
     data: str = ""
 
     def __init__(

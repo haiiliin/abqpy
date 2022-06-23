@@ -55,37 +55,37 @@ class RadiationToAmbientState(InteractionState):
     - SRADIATE
     """
 
-    # A Float specifying the ambient temperature.
+    #: A Float specifying the ambient temperature.
     ambientTemperature: float = None
 
-    # A SymbolicConstant specifying the propagation state of the **ambientTemperature** member.
-    # Possible values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the **ambientTemperature** member.
+    #: Possible values are UNSET, SET, UNCHANGED, and FREED.
     ambientTemperatureState: SymbolicConstant = None
 
-    # A SymbolicConstant specifying the propagation state of the **ambientTemperatureAmp**
-    # member. Possible values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the **ambientTemperatureAmp**
+    #: member. Possible values are UNSET, SET, UNCHANGED, and FREED.
     ambientTemperatureAmpState: SymbolicConstant = None
 
-    # A Float specifying the emissivity.
+    #: A Float specifying the emissivity.
     emissivity: float = None
 
-    # A SymbolicConstant specifying the propagation state of the **emissivity** member. Possible
-    # values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the **emissivity** member. Possible
+    #: values are UNSET, SET, UNCHANGED, and FREED.
     emissivityState: SymbolicConstant = None
 
-    # A String specifying the name of the Amplitude object that gives the variation of the
-    # ambient temperature with time.
+    #: A String specifying the name of the Amplitude object that gives the variation of the
+    #: ambient temperature with time.
     ambientTemperatureAmp: str = ""
 
-    # A SymbolicConstant specifying the propagation state of the InteractionState object.
-    # Possible values are:
-    # - NOT_YET_ACTIVE
-    # - CREATED
-    # - PROPAGATED
-    # - MODIFIED
-    # - DEACTIVATED
-    # - NO_LONGER_ACTIVE
-    # - TYPE_NOT_APPLICABLE
-    # - INSTANCE_NOT_APPLICABLE
-    # - BUILT_INTO_BASE_STATE
+    #: A SymbolicConstant specifying the propagation state of the InteractionState object.
+    #: Possible values are:
+    #: - NOT_YET_ACTIVE
+    #: - CREATED
+    #: - PROPAGATED
+    #: - MODIFIED
+    #: - DEACTIVATED
+    #: - NO_LONGER_ACTIVE
+    #: - TYPE_NOT_APPLICABLE
+    #: - INSTANCE_NOT_APPLICABLE
+    #: - BUILT_INTO_BASE_STATE
     status: SymbolicConstant = None

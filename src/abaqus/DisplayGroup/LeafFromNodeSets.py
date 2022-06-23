@@ -26,11 +26,11 @@ class LeafFromNodeSets(Leaf):
         import displayGroupOdbToolset
     """
 
-    # A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-    # DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
+    #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
+    #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: SymbolicConstant = None
 
-    # A sequence of Strings specifying node sets or a String specifying a single node set.
+    #: A sequence of Strings specifying node sets or a String specifying a single node set.
     nodeSets: tuple
 
     def __init__(self, nodeSets: tuple):

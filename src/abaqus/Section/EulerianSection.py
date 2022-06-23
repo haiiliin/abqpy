@@ -29,11 +29,11 @@ class EulerianSection(Section):
     - EULERIAN SECTION
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A String-to-String Dictionary specifying a dictionary mapping Material instance names to
-    # Material names. Internally the specified mapping gets sorted on Material instance name.
+    #: A String-to-String Dictionary specifying a dictionary mapping Material instance names to
+    #: Material names. Internally the specified mapping gets sorted on Material instance name.
     data: str
 
     def __init__(self, name: str, data: str):

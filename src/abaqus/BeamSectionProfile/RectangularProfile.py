@@ -32,15 +32,15 @@ class RectangularProfile(Profile):
     - BEAM SECTION
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A positive Float specifying the **a** dimension of the rectangular profile. For more
-    # information, see [Beam cross-section
-    # library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all).
+    #: A positive Float specifying the **a** dimension of the rectangular profile. For more
+    #: information, see [Beam cross-section
+    #: library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all).
     a: float
 
-    # A positive Float specifying the **b** dimension of the rectangular profile.
+    #: A positive Float specifying the **b** dimension of the rectangular profile.
     b: float
 
     def __init__(self, name: str, a: float, b: float):

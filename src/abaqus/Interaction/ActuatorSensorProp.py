@@ -31,15 +31,15 @@ class ActuatorSensorProp(ContactProperty):
     - UEL PROPERTY
     """
 
-    # A String specifying the interaction property repository key.
+    #: A String specifying the interaction property repository key.
     name: str
 
-    # A sequence of Floats specifying the PROPS array used by user subroutine UEL. The default
-    # value is an empty sequence.
+    #: A sequence of Floats specifying the PROPS array used by user subroutine UEL. The default
+    #: value is an empty sequence.
     realProperties: tuple = ()
 
-    # A sequence of Ints specifying the JPROPS array used by user subroutine UEL. The default
-    # value is an empty sequence.
+    #: A sequence of Ints specifying the JPROPS array used by user subroutine UEL. The default
+    #: value is an empty sequence.
     integerProperties: tuple = ()
 
     def __init__(

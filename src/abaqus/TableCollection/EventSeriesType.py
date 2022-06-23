@@ -24,13 +24,13 @@ class EventSeriesType:
             - EVENT SERIES
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A string specifying the step name.
+    #: A string specifying the step name.
     createStepName: str
 
-    # A String array specifying fields. The default value is an empty array.
+    #: A String array specifying fields. The default value is an empty array.
     fields: str = ""
 
     def __init__(self, name: str, createStepName: str, fields: str = ""):

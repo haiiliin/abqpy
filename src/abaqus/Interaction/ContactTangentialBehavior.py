@@ -88,59 +88,59 @@ class ContactTangentialBehavior:
     - CHANGE FRICTION
     """
 
-    # A SymbolicConstant specifying the friction formulation. Possible values are
-    # FRICTIONLESS, PENALTY, EXPONENTIAL_DECAY, ROUGH, LAGRANGE, and USER_DEFINED. The default
-    # value is FRICTIONLESS.
+    #: A SymbolicConstant specifying the friction formulation. Possible values are
+    #: FRICTIONLESS, PENALTY, EXPONENTIAL_DECAY, ROUGH, LAGRANGE, and USER_DEFINED. The default
+    #: value is FRICTIONLESS.
     formulation: SymbolicConstant = FRICTIONLESS
 
-    # A SymbolicConstant specifying the directionality of the friction. Possible values are
-    # ISOTROPIC and ANISOTROPIC. The default value is ISOTROPIC.
+    #: A SymbolicConstant specifying the directionality of the friction. Possible values are
+    #: ISOTROPIC and ANISOTROPIC. The default value is ISOTROPIC.
     directionality: SymbolicConstant = ISOTROPIC
 
-    # A Boolean specifying whether the data depend on slip rate. The default value is OFF.
+    #: A Boolean specifying whether the data depend on slip rate. The default value is OFF.
     slipRateDependency: Boolean = OFF
 
-    # A Boolean specifying whether the data depend on contact pressure. The default value is
-    # OFF.
+    #: A Boolean specifying whether the data depend on contact pressure. The default value is
+    #: OFF.
     pressureDependency: Boolean = OFF
 
-    # A Boolean specifying whether the data depend on temperature. The default value is OFF.
+    #: A Boolean specifying whether the data depend on temperature. The default value is OFF.
     temperatureDependency: Boolean = OFF
 
-    # An Int specifying the number of field variables. The default value is 0.
+    #: An Int specifying the number of field variables. The default value is 0.
     dependencies: int = 0
 
-    # A SymbolicConstant specifying the exponential decay definition. Possible values are
-    # COEFFICIENTS and TEST_DATA. The default value is COEFFICIENTS.
+    #: A SymbolicConstant specifying the exponential decay definition. Possible values are
+    #: COEFFICIENTS and TEST_DATA. The default value is COEFFICIENTS.
     exponentialDecayDefinition: SymbolicConstant = COEFFICIENTS
 
-    # None or a Float specifying the shear stress limit. If **shearStressLimit** = None, there is
-    # no upper limit. The default value is None.
+    #: None or a Float specifying the shear stress limit. If **shearStressLimit** = None, there is
+    #: no upper limit. The default value is None.
     shearStressLimit: float = None
 
-    # A SymbolicConstant specifying what the maximum elastic slip will be. Possible values are
-    # FRACTION and ABSOLUTE_DISTANCE. The default value is FRACTION.
+    #: A SymbolicConstant specifying what the maximum elastic slip will be. Possible values are
+    #: FRACTION and ABSOLUTE_DISTANCE. The default value is FRACTION.
     maximumElasticSlip: SymbolicConstant = FRACTION
 
-    # A Float specifying the fraction of a characteristic surface dimension. The default value
-    # is 0.0.
+    #: A Float specifying the fraction of a characteristic surface dimension. The default value
+    #: is 0.0.
     fraction: float = 0
 
-    # A Float specifying the absolute distance. The default value is 0.0.
+    #: A Float specifying the absolute distance. The default value is 0.0.
     absoluteDistance: float = 0
 
-    # None or a Float specifying the elastic slip stiffness. If **elasticSlipStiffness** = None,
-    # there is no upper limit. The default value is None.
+    #: None or a Float specifying the elastic slip stiffness. If **elasticSlipStiffness** = None,
+    #: there is no upper limit. The default value is None.
     elasticSlipStiffness: float = None
 
-    # An Int specifying the number of state-dependent variables. The default value is 0.
+    #: An Int specifying the number of state-dependent variables. The default value is 0.
     nStateDependentVars: int = 0
 
-    # A Boolean specifying whether property values will be used. The default value is OFF.
+    #: A Boolean specifying whether property values will be used. The default value is OFF.
     useProperties: Boolean = OFF
 
-    # A tuple of tuples of Floats specifying tangential behavior. The items in the table data
-    # are described below.
+    #: A tuple of tuples of Floats specifying tangential behavior. The items in the table data
+    #: are described below.
     table: float = None
 
     def __init__(

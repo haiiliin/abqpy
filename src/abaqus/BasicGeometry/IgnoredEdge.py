@@ -23,11 +23,11 @@ class IgnoredEdge:
         mdb.models[name].rootAssembly.instances[name].ignoredEdges[i]
     """
 
-    # An Int specifying the index of the IgnoredEdge in the IgnoredEdgeArray.
+    #: An Int specifying the index of the IgnoredEdge in the IgnoredEdgeArray.
     index: int = None
 
-    # A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point located on
-    # the edge.
+    #: A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point located on
+    #: the edge.
     pointOn: float = None
 
     def getSize(self, printResults: str = True):

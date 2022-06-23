@@ -53,42 +53,42 @@ class KinematicHardening(PredefinedField):
     - INITIAL CONDITIONS
     """
 
-    # A String specifying the name of the AnalyticalField object associated with this
-    # predefined field. The **field** argument applies only when
-    # **distributionType** = ANALYTICAL_FIELD. The default value is an empty string.
+    #: A String specifying the name of the AnalyticalField object associated with this
+    #: predefined field. The **field** argument applies only when
+    #: **distributionType** = ANALYTICAL_FIELD. The default value is an empty string.
     field: str = ""
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the predefined field is applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the predefined field is applied.
     region: Region
 
-    # An Int specifying the number of backstresses. The default value is 1.
+    #: An Int specifying the number of backstresses. The default value is 1.
     numBackStress: int = 1
 
-    # A sequence of Floats specifying the initial equivalent Plastic strain.
+    #: A sequence of Floats specifying the initial equivalent Plastic strain.
     equivPlasticStrain: tuple = ()
 
-    # A sequence of sequences of Floats specifying the initial backstress tensor for kinematic
-    # hardening models. The default value is an empty sequence.
+    #: A sequence of sequences of Floats specifying the initial backstress tensor for kinematic
+    #: hardening models. The default value is an empty sequence.
     backStress: tuple = ()
 
-    # A sequence of Ints specifying section point numbers. This argument is valid only when
-    # **definition** = SECTION_PTS.
+    #: A sequence of Ints specifying section point numbers. This argument is valid only when
+    #: **definition** = SECTION_PTS.
     sectPtNum: tuple = ()
 
-    # A SymbolicConstant specifying different types of kinematic hardening. Possible values
-    # are KINEMATIC_HARDENING, CRUSHABLE_FOAM, REBAR, SECTION_PTS, and USER_DEFINED. The
-    # default value is KINEMATIC_HARDENING.
+    #: A SymbolicConstant specifying different types of kinematic hardening. Possible values
+    #: are KINEMATIC_HARDENING, CRUSHABLE_FOAM, REBAR, SECTION_PTS, and USER_DEFINED. The
+    #: default value is KINEMATIC_HARDENING.
     definition: SymbolicConstant = KINEMATIC_HARDENING
 
-    # A sequence of Strings specifying rebar layer names. This argument is valid only when
-    # **definition** = REBAR.
+    #: A sequence of Strings specifying rebar layer names. This argument is valid only when
+    #: **definition** = REBAR.
     rebarLayerNames: tuple = ()
 
-    # A SymbolicConstant specifying whether the load is uniform. Possible values are MAGNITUDE
-    # and ANALYTICAL_FIELD. The default value is MAGNITUDE.
+    #: A SymbolicConstant specifying whether the load is uniform. Possible values are MAGNITUDE
+    #: and ANALYTICAL_FIELD. The default value is MAGNITUDE.
     distributionType: SymbolicConstant = MAGNITUDE
 
     def __init__(

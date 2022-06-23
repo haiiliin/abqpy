@@ -22,10 +22,10 @@ class NodeQuery:
         session.nodeQuery
     """
 
-    # An Int specifying the ID of the most recently queried node. If the last query was
-    # unsuccessful, **nodeID** = −1.
+    #: An Int specifying the ID of the most recently queried node. If the last query was
+    #: unsuccessful, **nodeID** = −1.
     nodeId: int = None
 
-    # A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the most recently
-    # queried node.
+    #: A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the most recently
+    #: queried node.
     nodePos: float = None

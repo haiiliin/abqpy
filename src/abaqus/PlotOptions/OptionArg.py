@@ -57,44 +57,44 @@ class OptionArg:
         session.viewports[name].odbDisplay.viewCutOptions.onOptions
     """
 
-    # A SymbolicConstant specifying the render style of the plot. Possible values are
-    # WIREFRAME, FILLED, HIDDEN, and SHADED. The default value is WIREFRAME.
+    #: A SymbolicConstant specifying the render style of the plot. Possible values are
+    #: WIREFRAME, FILLED, HIDDEN, and SHADED. The default value is WIREFRAME.
     renderStyle: SymbolicConstant = WIREFRAME
 
-    # A SymbolicConstant specifying which edges to plot. Possible values are ALL, EXTERIOR,
-    # FEATURE, FREE, and NONE. The default value is FEATURE.NONE can be used only when
-    # **renderStyle** = SHADED.
+    #: A SymbolicConstant specifying which edges to plot. Possible values are ALL, EXTERIOR,
+    #: FEATURE, FREE, and NONE. The default value is FEATURE.NONE can be used only when
+    #: **renderStyle** = SHADED.
     visibleEdges: SymbolicConstant = FEATURE
 
-    # A String specifying the color to be used to plot the edges of the undeformed plot when
-    # **renderStyle** = WIREFRAME or HIDDEN. The default value is "Green".
+    #: A String specifying the color to be used to plot the edges of the undeformed plot when
+    #: **renderStyle** = WIREFRAME or HIDDEN. The default value is "Green".
     edgeColorWireHide: str = ""
 
-    # A String specifying the color to be used to plot the edges of the undeformed plot when
-    # **renderStyle** = FILLED or SHADED. The default value is "Black".
+    #: A String specifying the color to be used to plot the edges of the undeformed plot when
+    #: **renderStyle** = FILLED or SHADED. The default value is "Black".
     edgeColorFillShade: str = ""
 
-    # A SymbolicConstant specifying the edge line style. Possible values are SOLID, DASHED,
-    # DOTTED, and DOT_DASH. The default value is SOLID.
+    #: A SymbolicConstant specifying the edge line style. Possible values are SOLID, DASHED,
+    #: DOTTED, and DOT_DASH. The default value is SOLID.
     edgeLineStyle: SymbolicConstant = SOLID
 
-    # A SymbolicConstant specifying the edge line thickness. Possible values are VERY_THIN,
-    # THIN, MEDIUM, and THICK. The default value is VERY_THIN.
+    #: A SymbolicConstant specifying the edge line thickness. Possible values are VERY_THIN,
+    #: THIN, MEDIUM, and THICK. The default value is VERY_THIN.
     edgeLineThickness: SymbolicConstant = VERY_THIN
 
-    # A Boolean specifying whether to allow color coded items in the output database to
-    # override the edge and fill color settings. The default value is ON.
+    #: A Boolean specifying whether to allow color coded items in the output database to
+    #: override the edge and fill color settings. The default value is ON.
     colorCodeOverride: Boolean = ON
 
-    # A String specifying the color to be used to fill elements when **renderStyle** = FILLED or
-    # SHADED. The default value is "Green".
+    #: A String specifying the color to be used to fill elements when **renderStyle** = FILLED or
+    #: SHADED. The default value is "Green".
     fillColor: str = ""
 
-    # A Boolean specifying whether to set translucency. The default value is OFF.
+    #: A Boolean specifying whether to set translucency. The default value is OFF.
     translucency: Boolean = OFF
 
-    # A Float specifying the translucency factor when **translucency** = ON. Possible values are
-    # 0.0 ≤≤ **translucencyFactor** ≤≤ 1.0. The default value is 0.3.
+    #: A Float specifying the translucency factor when **translucency** = ON. Possible values are
+    #: 0.0 ≤≤ **translucencyFactor** ≤≤ 1.0. The default value is 0.3.
     translucencyFactor: float = 0
 
     def __init__(

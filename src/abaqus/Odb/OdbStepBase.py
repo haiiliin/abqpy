@@ -54,45 +54,45 @@ class OdbStepBase:
         session.odbs[name].steps[name]
     """
 
-    # An Int specifying the step number.
+    #: An Int specifying the step number.
     number: int = None
 
-    # A Boolean specifying whether geometric nonlinearity can occur in this step.
+    #: A Boolean specifying whether geometric nonlinearity can occur in this step.
     nlgeom: Boolean = OFF
 
-    # A Float specifying the current value of the mass of the model. This does not include the
-    # mass of the acoustic media if any present.
+    #: A Float specifying the current value of the mass of the model. This does not include the
+    #: mass of the acoustic media if any present.
     mass: float = None
 
-    # A Float specifying the current value of the mass of the acoustic media of the model.
+    #: A Float specifying the current value of the mass of the acoustic media of the model.
     acousticMass: float = None
 
-    # An :py:class:`~abaqus.Odb.OdbFrameArray.OdbFrameArray` object.
+    #: An :py:class:`~abaqus.Odb.OdbFrameArray.OdbFrameArray` object.
     frames: OdbFrameArray = OdbFrameArray()
 
-    # A repository of HistoryRegion objects.
+    #: A repository of HistoryRegion objects.
     historyRegions: dict[str, HistoryRegion] = dict[str, HistoryRegion]()
 
-    # A repository of OdbLoadCase objects.
+    #: A repository of OdbLoadCase objects.
     loadCases: dict[str, OdbLoadCase] = dict[str, OdbLoadCase]()
 
-    # A tuple of Floats specifying the coordinates of the center of mass.
+    #: A tuple of Floats specifying the coordinates of the center of mass.
     massCenter: float = None
 
-    # A tuple of Floats specifying the moments and products of inertia about the center of
-    # mass. For 3-D models inertia quantities are written in the following order: I(XX),
-    # I(YY), I(ZZ), I(XY), I(XZ), and I(YZ). For 2-D models only I(ZZ) and I(XY) are
-    # outputted.
+    #: A tuple of Floats specifying the moments and products of inertia about the center of
+    #: mass. For 3-D models inertia quantities are written in the following order: I(XX),
+    #: I(YY), I(ZZ), I(XY), I(XZ), and I(YZ). For 2-D models only I(ZZ) and I(XY) are
+    #: outputted.
     inertiaAboutCenter: float = None
 
-    # A tuple of Floats specifying the moments and products of inertia about the origin of the
-    # global coordinate system. For 3-D models inertia quantities are written in the following
-    # order: I(XX), I(YY), I(ZZ), I(XY), I(XZ), and I(YZ). For 2-D models only I(ZZ) and I(XY)
-    # are outputted.
+    #: A tuple of Floats specifying the moments and products of inertia about the origin of the
+    #: global coordinate system. For 3-D models inertia quantities are written in the following
+    #: order: I(XX), I(YY), I(ZZ), I(XY), I(XZ), and I(YZ). For 2-D models only I(ZZ) and I(XY)
+    #: are outputted.
     inertiaAboutOrigin: float = None
 
-    # A tuple of Floats specifying the coordinates of the center of mass of the acoustic
-    # media.
+    #: A tuple of Floats specifying the coordinates of the center of mass of the acoustic
+    #: media.
     acousticMassCenter: float = None
 
     def __init__(

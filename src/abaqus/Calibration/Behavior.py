@@ -33,25 +33,25 @@ class Behavior:
         mdb.models[name].calibrations[name].behaviors[name]
     """
 
-    # A string specifying the name of the model to which the behavior belongs.
+    #: A string specifying the name of the model to which the behavior belongs.
     modelName: str = ""
 
-    # A string specifying the name of calibration to which the behavior belongs.
+    #: A string specifying the name of calibration to which the behavior belongs.
     calibrationName: str = ""
 
-    # A String specifying the name of the dataset containing all the raw data in the test data
-    # file. Only valid if the behavior is of type FeFpBehavior
+    #: A String specifying the name of the dataset containing all the raw data in the test data
+    #: file. Only valid if the behavior is of type FeFpBehavior
     biAxialAllName: str = ""
 
-    # A String specifying the name of the dataset containing all the raw data in the test data
-    # file. Only valid if the behavior is of type FeFpBehavior
+    #: A String specifying the name of the dataset containing all the raw data in the test data
+    #: file. Only valid if the behavior is of type FeFpBehavior
     uniAxialAllName: str = ""
 
-    # A String specifying the name of the new behavior.
+    #: A String specifying the name of the new behavior.
     name: str
 
-    # A String specifying the type of the new Behavior. Values can be "ElasIsoBehavior",
-    # "ElasPlasIsoBehavior", "FeFpBehavior", or a user plug-in behavior type.
+    #: A String specifying the type of the new Behavior. Values can be "ElasIsoBehavior",
+    #: "ElasPlasIsoBehavior", "FeFpBehavior", or a user plug-in behavior type.
     typeName: str
 
     def __init__(self, name: str, typeName: str):

@@ -46,31 +46,31 @@ class SectionAssignment:
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.sectionAssignments[i]
     """
 
-    # A Boolean specifying whether the section assignment is suppressed or not. The default
-    # value is OFF.
+    #: A Boolean specifying whether the section assignment is suppressed or not. The default
+    #: value is OFF.
     suppressed: Boolean = OFF
 
-    # A :py:class:`~abaqus.Region.Set.Set` object specifying the region to which the section is assigned.
+    #: A :py:class:`~abaqus.Region.Set.Set` object specifying the region to which the section is assigned.
     region: Set
 
-    # A String specifying the name of the section.
+    #: A String specifying the name of the section.
     sectionName: str
 
-    # A SymbolicConstant specifying section thickness assignment method. Possible values are
-    # FROM_SECTION and FROM_GEOMETRY. The default value is FROM_SECTION.
+    #: A SymbolicConstant specifying section thickness assignment method. Possible values are
+    #: FROM_SECTION and FROM_GEOMETRY. The default value is FROM_SECTION.
     thicknessAssignment: SymbolicConstant = FROM_SECTION
 
-    # A Float specifying the offset of the shell section. The default value is 0.0.
+    #: A Float specifying the offset of the shell section. The default value is 0.0.
     offset: float = 0
 
-    # A SymbolicConstant specifying the method used to define the shell offset. If
-    # **offsetType** is set to OFFSET_FIELD the **offsetField** must have a value. Possible values
-    # are SINGLE_VALUE, MIDDLE_SURFACE, TOP_SURFACE, BOTTOM_SURFACE, FROM_GEOMETRY, and
-    # OFFSET_FIELD. The default value is SINGLE_VALUE.
+    #: A SymbolicConstant specifying the method used to define the shell offset. If
+    #: **offsetType** is set to OFFSET_FIELD the **offsetField** must have a value. Possible values
+    #: are SINGLE_VALUE, MIDDLE_SURFACE, TOP_SURFACE, BOTTOM_SURFACE, FROM_GEOMETRY, and
+    #: OFFSET_FIELD. The default value is SINGLE_VALUE.
     offsetType: SymbolicConstant = SINGLE_VALUE
 
-    # A String specifying the name of the field specifying the offset. The default value is
-    # "".
+    #: A String specifying the name of the field specifying the offset. The default value is
+    #: "".
     offsetField: str = ""
 
     def __init__(

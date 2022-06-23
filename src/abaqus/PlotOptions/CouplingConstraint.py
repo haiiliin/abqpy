@@ -20,10 +20,10 @@ class CouplingConstraint:
         session.odbData[name].shellSolidCouplings[i]
     """
 
-    # A String specifying the coupling name. This attribute is read-only.
+    #: A String specifying the coupling name. This attribute is read-only.
     name: str = ""
 
-    # A String specifying the type of coupling. This attribute is read-only.
+    #: A String specifying the type of coupling. This attribute is read-only.
     type: str = ""
 
     def constraintData(self):

@@ -58,46 +58,46 @@ class OdbBase:
         session.odbs[name]
     """
 
-    # A Boolean specifying whether the output database was opened with read-only access.
+    #: A Boolean specifying whether the output database was opened with read-only access.
     isReadOnly: Boolean = OFF
 
-    # A repository of Amplitude objects.
+    #: A repository of Amplitude objects.
     amplitudes: dict[str, Amplitude] = dict[str, Amplitude]()
 
-    # A repository of Filter objects.
+    #: A repository of Filter objects.
     filters: dict[str, Filter] = dict[str, Filter]()
 
-    # An :py:class:`~abaqus.Odb.OdbAssembly.OdbAssembly` object.
+    #: An :py:class:`~abaqus.Odb.OdbAssembly.OdbAssembly` object.
     rootAssembly: OdbAssembly = OdbAssembly()
 
-    # A :py:class:`~abaqus.Odb.JobData.JobData` object.
+    #: A :py:class:`~abaqus.Odb.JobData.JobData` object.
     jobData: JobData = JobData()
 
-    # A repository of OdbPart objects.
+    #: A repository of OdbPart objects.
     parts: dict[str, OdbPart] = dict[str, OdbPart]()
 
-    # A repository of Material objects.
+    #: A repository of Material objects.
     materials: dict[str, Material] = dict[str, Material]()
 
-    # A repository of OdbStep objects.
+    #: A repository of OdbStep objects.
     steps: dict[str, OdbStep] = dict[str, OdbStep]()
 
-    # A repository of Section objects.
+    #: A repository of Section objects.
     sections: dict[str, Section] = dict[str, Section]()
 
-    # A repository of SectionCategory objects.
+    #: A repository of SectionCategory objects.
     sectionCategories: dict[str, SectionCategory] = dict[str, SectionCategory]()
 
-    # A :py:class:`~abaqus.Odb.SectorDefinition.SectorDefinition` object.
+    #: A :py:class:`~abaqus.Odb.SectorDefinition.SectorDefinition` object.
     sectorDefinition: SectorDefinition = SectorDefinition()
 
-    # A :py:class:`~abaqus.Odb.UserData.UserData` object.
+    #: A :py:class:`~abaqus.Odb.UserData.UserData` object.
     userData: UserData = UserData()
 
-    # A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` object.
+    #: A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` object.
     customData: RepositorySupport = RepositorySupport()
 
-    # A repository of Profile objects.
+    #: A repository of Profile objects.
     profiles: dict[str, Profile] = dict[str, Profile]()
 
     def __init__(

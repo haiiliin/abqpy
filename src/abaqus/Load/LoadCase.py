@@ -22,8 +22,8 @@ class LoadCase:
         mdb.models[name].steps[name].loadCases[name]
     """
 
-    # A Boolean specifying whether the load case is suppressed or not. The default value is
-    # OFF.
+    #: A Boolean specifying whether the load case is suppressed or not. The default value is
+    #: OFF.
     suppressed: Boolean = OFF
 
     def __init__(

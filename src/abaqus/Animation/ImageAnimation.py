@@ -19,7 +19,7 @@ class ImageAnimation:
         session.imageAnimation
     """
 
-    # A String specifying the file to which the animation frames is to be written.
+    #: A String specifying the file to which the animation frames is to be written.
     fileName: str = ""
 
     def __init__(self, fileName: str, format: SymbolicConstant):

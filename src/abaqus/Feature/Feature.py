@@ -41,10 +41,10 @@ class Feature:
         mdb.models[name].rootAssembly.featuresById[i]
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str = ""
 
-    # An Int specifying the ID of the feature.
+    #: An Int specifying the ID of the feature.
     id: int = None
 
     def AttachmentPoints(

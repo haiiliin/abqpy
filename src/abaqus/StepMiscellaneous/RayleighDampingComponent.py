@@ -23,14 +23,14 @@ class RayleighDampingComponent:
         mdb.models[name].steps[name].rayleighDamping.components[i]
     """
 
-    # An Int specifying the mode number of the lowest mode of a range.
+    #: An Int specifying the mode number of the lowest mode of a range.
     start: int = None
 
-    # An Int specifying the mode number of the highest mode of a range.
+    #: An Int specifying the mode number of the highest mode of a range.
     end: int = None
 
-    # A Float specifying the mass proportional damping, αM.
+    #: A Float specifying the mass proportional damping, αM.
     alpha: float = None
 
-    # A Float specifying the stiffness proportional damping, βM.
+    #: A Float specifying the stiffness proportional damping, βM.
     beta: float = None

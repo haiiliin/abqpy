@@ -20,8 +20,8 @@ class CaeKerPrefs:
         caePrefsAccess.openSessionOptions(...)
     """
 
-    # A String specifying the path to the preferences file that the CaeKerPrefs object
-    # represents.
+    #: A String specifying the path to the preferences file that the CaeKerPrefs object
+    #: represents.
     fileName: str = ""
 
     def save(self, backupFile: Boolean = OFF):

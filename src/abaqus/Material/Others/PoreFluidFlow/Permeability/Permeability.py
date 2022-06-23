@@ -47,12 +47,12 @@ class Permeability:
     - PERMEABILITY
     """
 
-    # A :py:class:`~abaqus.Material.Others.PoreFluidFlow.Permeability.SaturationDependence.SaturationDependence` object specifying the dependence of the permeability of a
-    # material on the saturation of the wetting liquid.
+    #: A :py:class:`~abaqus.Material.Others.PoreFluidFlow.Permeability.SaturationDependence.SaturationDependence` object specifying the dependence of the permeability of a
+    #: material on the saturation of the wetting liquid.
     saturationDependence: SaturationDependence = SaturationDependence(((),))
 
-    # A :py:class:`~abaqus.Material.Others.PoreFluidFlow.Permeability.VelocityDependence.VelocityDependence` object specifying the dependence of the permeability of a material
-    # on the velocity of fluid flow.
+    #: A :py:class:`~abaqus.Material.Others.PoreFluidFlow.Permeability.VelocityDependence.VelocityDependence` object specifying the dependence of the permeability of a material
+    #: on the velocity of fluid flow.
     velocityDependence: VelocityDependence = VelocityDependence(((),))
 
     def __init__(

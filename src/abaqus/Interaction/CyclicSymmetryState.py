@@ -71,53 +71,53 @@ class CyclicSymmetryState(InteractionState):
             - SELECT CYCLIC SYMMETRY MODES
     """
 
-    # A SymbolicConstant specifying whether Abaqus should extract all possible nodal diameters
-    # or the nodal diameters between the user-specified values for **lowestNodalDiameter** and
-    # **highestNodalDiameter**. Possible values are ALL_NODAL_DIAMETER and
-    # SPECIFIED_NODAL_DIAMETER. The default value is ALL_NODAL_DIAMETER.
+    #: A SymbolicConstant specifying whether Abaqus should extract all possible nodal diameters
+    #: or the nodal diameters between the user-specified values for **lowestNodalDiameter** and
+    #: **highestNodalDiameter**. Possible values are ALL_NODAL_DIAMETER and
+    #: SPECIFIED_NODAL_DIAMETER. The default value is ALL_NODAL_DIAMETER.
     extractedNodalDiameter: SymbolicConstant = ALL_NODAL_DIAMETER
 
-    # A SymbolicConstant specifying the propagation state of the **extractedNodalDiameter**
-    # member. Possible values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the **extractedNodalDiameter**
+    #: member. Possible values are UNSET, SET, UNCHANGED, and FREED.
     extractedNodalDiameterState: SymbolicConstant = None
 
-    # An Int specifying the lowest nodal diameter to be used in the eigenfrequency analysis.
-    # The default value is 0.
+    #: An Int specifying the lowest nodal diameter to be used in the eigenfrequency analysis.
+    #: The default value is 0.
     lowestNodalDiameter: int = 0
 
-    # A SymbolicConstant specifying the propagation state of the **lowestNodalDiameter** member.
-    # Possible values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the **lowestNodalDiameter** member.
+    #: Possible values are UNSET, SET, UNCHANGED, and FREED.
     lowestNodalDiameterState: SymbolicConstant = None
 
-    # An Int specifying the highest nodal diameter to be used in the eigenfrequency analysis.
-    # This argument value should be less than or equal to the half of the total number of
-    # sectors. The default value is 0.
+    #: An Int specifying the highest nodal diameter to be used in the eigenfrequency analysis.
+    #: This argument value should be less than or equal to the half of the total number of
+    #: sectors. The default value is 0.
     highestNodalDiameter: int = 0
 
-    # A SymbolicConstant specifying the propagation state of the **highestNodalDiameter**
-    # member. Possible values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the **highestNodalDiameter**
+    #: member. Possible values are UNSET, SET, UNCHANGED, and FREED.
     highestNodalDiameterState: SymbolicConstant = None
 
-    # An Int specifying the nodal diameter for which the modal-based steady-state dynamic
-    # analysis will be performed. This value should be greater than or equal to the lowest
-    # nodal diameter (specified in the **lowestNodalDiameter** parameter), and less than or
-    # equal to the highest nodal diameter (specified in the **highestNodalDiameter** parameter).
-    # The default value is 0.
+    #: An Int specifying the nodal diameter for which the modal-based steady-state dynamic
+    #: analysis will be performed. This value should be greater than or equal to the lowest
+    #: nodal diameter (specified in the **lowestNodalDiameter** parameter), and less than or
+    #: equal to the highest nodal diameter (specified in the **highestNodalDiameter** parameter).
+    #: The default value is 0.
     excitiationNodalDiameter: int = 0
 
-    # A SymbolicConstant specifying the propagation state of the **excitiationNodalDiameter**
-    # member. Possible values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the **excitiationNodalDiameter**
+    #: member. Possible values are UNSET, SET, UNCHANGED, and FREED.
     excitiationNodalDiameterState: SymbolicConstant = None
 
-    # A SymbolicConstant specifying the propagation state of the InteractionState object.
-    # Possible values are:
-    # - NOT_YET_ACTIVE
-    # - CREATED
-    # - PROPAGATED
-    # - MODIFIED
-    # - DEACTIVATED
-    # - NO_LONGER_ACTIVE
-    # - TYPE_NOT_APPLICABLE
-    # - INSTANCE_NOT_APPLICABLE
-    # - BUILT_INTO_BASE_STATE
+    #: A SymbolicConstant specifying the propagation state of the InteractionState object.
+    #: Possible values are:
+    #: - NOT_YET_ACTIVE
+    #: - CREATED
+    #: - PROPAGATED
+    #: - MODIFIED
+    #: - DEACTIVATED
+    #: - NO_LONGER_ACTIVE
+    #: - TYPE_NOT_APPLICABLE
+    #: - INSTANCE_NOT_APPLICABLE
+    #: - BUILT_INTO_BASE_STATE
     status: SymbolicConstant = None

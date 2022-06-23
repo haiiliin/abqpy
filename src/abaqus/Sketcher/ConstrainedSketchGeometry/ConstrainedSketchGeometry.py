@@ -16,17 +16,17 @@ class ConstrainedSketchGeometry:
         mdb.models[name].sketches[name].geometry[i][i]
     """
 
-    # An Int specifying the index of the sketch entity in the ConstrainedSketchGeometryArray.
+    #: An Int specifying the index of the sketch entity in the ConstrainedSketchGeometryArray.
     id: int = None
 
-    # A SymbolicConstant specifying the geometry of the sketch entity. Possible values are
-    # ARC, CIRCLE, ELLIPSE, LINE, and SPLINE.
+    #: A SymbolicConstant specifying the geometry of the sketch entity. Possible values are
+    #: ARC, CIRCLE, ELLIPSE, LINE, and SPLINE.
     curveType: SymbolicConstant = None
 
-    # A SymbolicConstant specifying the type of sketch entity. Possible values are REGULAR,
-    # REFERENCE, and CONSTRUCTION.
+    #: A SymbolicConstant specifying the type of sketch entity. Possible values are REGULAR,
+    #: REFERENCE, and CONSTRUCTION.
     type: SymbolicConstant = None
 
-    # A tuple of Floats specifying the **X**- and*Y*-coordinates of a point located on the
-    # geometry.
+    #: A tuple of Floats specifying the **X**- and*Y*-coordinates of a point located on the
+    #: geometry.
     pointOn: float = None

@@ -72,66 +72,66 @@ class Chart:
         session.xyPlots[name].charts[name]
     """
 
-    # A String specifying the name of the Chart object.
+    #: A String specifying the name of the Chart object.
     name: str = ""
 
-    # A Boolean specifying whether to use the QuantityType to associate curves with axes. The
-    # default value is ON.
+    #: A Boolean specifying whether to use the QuantityType to associate curves with axes. The
+    #: default value is ON.
     useQuantityType: Boolean = ON
 
-    # A Float specifying the aspect ratio of the grid area. A value of -1 specifies that the
-    # gridArea will take up all available space. The default value is −1.
+    #: A Float specifying the aspect ratio of the grid area. A value of -1 specifies that the
+    #: gridArea will take up all available space. The default value is −1.
     aspectRatio: float = None
 
-    # A repository of XYCurve objects specifying a repository of XYCurve objects to display in
-    # the Chart.
+    #: A repository of XYCurve objects specifying a repository of XYCurve objects to display in
+    #: the Chart.
     curves: dict[str, XYCurve] = dict[str, XYCurve]()
 
-    # An :py:class:`~abaqus.XY.AxisArray.AxisArray` object specifying a read-only sequence of axis objects displayed as axes1 -
-    # the abscissa for a Cartesian chart.
+    #: An :py:class:`~abaqus.XY.AxisArray.AxisArray` object specifying a read-only sequence of axis objects displayed as axes1 -
+    #: the abscissa for a Cartesian chart.
     axes1: AxisArray = AxisArray()
 
-    # An :py:class:`~abaqus.XY.AxisArray.AxisArray` object specifying a read-only sequence of axis objects displayed as axes2 -
-    # the ordinate for a Cartesian chart.
+    #: An :py:class:`~abaqus.XY.AxisArray.AxisArray` object specifying a read-only sequence of axis objects displayed as axes2 -
+    #: the ordinate for a Cartesian chart.
     axes2: AxisArray = AxisArray()
 
-    # An :py:class:`~abaqus.XY.Area.Area` object specifying position, padding, background and borders of the chart.
+    #: An :py:class:`~abaqus.XY.Area.Area` object specifying position, padding, background and borders of the chart.
     area: Area = Area()
 
-    # An :py:class:`~abaqus.XY.Area.Area` object specifying how to display the grid area.
+    #: An :py:class:`~abaqus.XY.Area.Area` object specifying how to display the grid area.
     gridArea: Area = Area()
 
-    # A :py:class:`~abaqus.XY.Legend.Legend` object specifying the attributes for the legend of the chart.
+    #: A :py:class:`~abaqus.XY.Legend.Legend` object specifying the attributes for the legend of the chart.
     legend: Legend = Legend()
 
-    # A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties to be used when drawing major
-    # gridlines along axis 1.
+    #: A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties to be used when drawing major
+    #: gridlines along axis 1.
     majorAxis1GridStyle: LineStyle = LineStyle()
 
-    # A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties to be used when drawing major
-    # gridlines along axis 2.
+    #: A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties to be used when drawing major
+    #: gridlines along axis 2.
     majorAxis2GridStyle: LineStyle = LineStyle()
 
-    # A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties to be used when drawing minor
-    # gridlines along axis 1.
+    #: A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties to be used when drawing minor
+    #: gridlines along axis 1.
     minorAxis1GridStyle: LineStyle = LineStyle()
 
-    # A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties to be used when drawing minor
-    # gridlines along axis 2.
+    #: A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties to be used when drawing minor
+    #: gridlines along axis 2.
     minorAxis2GridStyle: LineStyle = LineStyle()
 
-    # A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties to be used when creating tags.
+    #: A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties to be used when creating tags.
     tagTextStyle: TextStyle = TextStyle()
 
-    # An :py:class:`~abaqus.XY.AreaStyle.AreaStyle` object specifying the area properties to be used when creating tags.
+    #: An :py:class:`~abaqus.XY.AreaStyle.AreaStyle` object specifying the area properties to be used when creating tags.
     tagAreaStyle: AreaStyle = AreaStyle()
 
-    # A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the tag area border properties to be used when creating
-    # tags.
+    #: A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the tag area border properties to be used when creating
+    #: tags.
     tagBorder: LineStyle = LineStyle()
 
-    # A tuple of Floats specifying a transformation matrix used to scale or pan along the axes
-    # of the Chart.
+    #: A tuple of Floats specifying a transformation matrix used to scale or pan along the axes
+    #: of the Chart.
     transform: float = None
 
     def autoColor(self, lines: Boolean = OFF, symbols: Boolean = OFF):

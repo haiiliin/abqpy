@@ -68,34 +68,34 @@ class CohesiveBehavior:
     - COHESIVE BEHAVIOR
     """
 
-    # A Boolean specifying whether to enforce cohesive behavior for recurrent contacts at
-    # nodes on the secondary surface subsequent to ultimate failure. The default value is OFF.
+    #: A Boolean specifying whether to enforce cohesive behavior for recurrent contacts at
+    #: nodes on the secondary surface subsequent to ultimate failure. The default value is OFF.
     repeatedContacts: Boolean = OFF
 
-    # A SymbolicConstant specifying the eligible secondary nodes. Possible values are
-    # ALL_NODES, INITIAL_NODES, and SPECIFIED. The default value is ALL_NODES.
+    #: A SymbolicConstant specifying the eligible secondary nodes. Possible values are
+    #: ALL_NODES, INITIAL_NODES, and SPECIFIED. The default value is ALL_NODES.
     eligibility: SymbolicConstant = ALL_NODES
 
-    # A Boolean specifying whether to use the default contact penalties. The default value is
-    # ON.
+    #: A Boolean specifying whether to use the default contact penalties. The default value is
+    #: ON.
     defaultPenalties: Boolean = ON
 
-    # A SymbolicConstant specifying whether the traction-separation coefficients are coupled
-    # or uncoupled. This argument is valid only for **defaultPenalties** = OFF. Possible values
-    # are UNCOUPLED and COUPLED. The default value is UNCOUPLED.
+    #: A SymbolicConstant specifying whether the traction-separation coefficients are coupled
+    #: or uncoupled. This argument is valid only for **defaultPenalties** = OFF. Possible values
+    #: are UNCOUPLED and COUPLED. The default value is UNCOUPLED.
     coupling: SymbolicConstant = UNCOUPLED
 
-    # A Boolean specifying whether the coefficient data depend on temperature. This argument
-    # is valid only for **defaultPenalties** = OFF. The default value is OFF.
+    #: A Boolean specifying whether the coefficient data depend on temperature. This argument
+    #: is valid only for **defaultPenalties** = OFF. The default value is OFF.
     temperatureDependency: Boolean = OFF
 
-    # An Int specifying the number of field variables. This argument is valid only for
-    # **defaultPenalties** = OFF. The default value is 0.
+    #: An Int specifying the number of field variables. This argument is valid only for
+    #: **defaultPenalties** = OFF. The default value is 0.
     dependencies: int = 0
 
-    # A sequence of sequences of Floats specifying the traction-separation coefficients. The
-    # items in the table data are described below. This argument is valid only for
-    # **defaultPenalties** = OFF.
+    #: A sequence of sequences of Floats specifying the traction-separation coefficients. The
+    #: items in the table data are described below. This argument is valid only for
+    #: **defaultPenalties** = OFF.
     table: tuple = ()
 
     def __init__(

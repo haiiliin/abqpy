@@ -31,14 +31,14 @@ class TrussSection(Section):
     - SOLID SECTION
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A String specifying the name of the material.
+    #: A String specifying the name of the material.
     material: str
 
-    # A Float specifying the cross-sectional area for the section. Possible values are **area**
-    # >> 0. The default value is 1.0.
+    #: A Float specifying the cross-sectional area for the section. Possible values are **area**
+    #: >> 0. The default value is 1.0.
     area: float = 1
 
     def __init__(self, name: str, material: str, area: float = 1):

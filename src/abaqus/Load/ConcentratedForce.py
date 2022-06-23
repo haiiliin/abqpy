@@ -42,30 +42,30 @@ class ConcentratedForce(Load):
         mdb.models[name].loads[name]
     """
 
-    # A String specifying the load repository key.
+    #: A String specifying the load repository key.
     name: str = ""
 
-    # A SymbolicConstant specifying how the load is distributed spatially. Possible values are
-    # UNIFORM and FIELD. The default value is UNIFORM.
+    #: A SymbolicConstant specifying how the load is distributed spatially. Possible values are
+    #: UNIFORM and FIELD. The default value is UNIFORM.
     distributionType: SymbolicConstant = UNIFORM
 
-    # A Boolean specifying whether the direction of the force rotates with the rotation at
-    # each node of the region. You should provide the **follower** argument only if it is valid
-    # for the specified step. The default value is OFF.
+    #: A Boolean specifying whether the direction of the force rotates with the rotation at
+    #: each node of the region. You should provide the **follower** argument only if it is valid
+    #: for the specified step. The default value is OFF.
     follower: Boolean = OFF
 
-    # None or a DatumCsys object specifying the local coordinate system of the load's degrees
-    # of freedom. If **localCsys** = None, the degrees of freedom are defined in the global
-    # coordinate system. When this member is queried, it returns an Int. The default value is
-    # None.
+    #: None or a DatumCsys object specifying the local coordinate system of the load's degrees
+    #: of freedom. If **localCsys** = None, the degrees of freedom are defined in the global
+    #: coordinate system. When this member is queried, it returns an Int. The default value is
+    #: None.
     localCsys: int = None
 
-    # A String specifying the name of the AnalyticalField object associated with this load.
-    # The **field** argument applies only when **distributionType** = FIELD. The default value is an
-    # empty string.
+    #: A String specifying the name of the AnalyticalField object associated with this load.
+    #: The **field** argument applies only when **distributionType** = FIELD. The default value is an
+    #: empty string.
     field: str = ""
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
     def __init__(

@@ -26,11 +26,11 @@ class LeafFromPartInstance(Leaf):
         import displayGroupOdbToolset
     """
 
-    # A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-    # DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
+    #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
+    #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: SymbolicConstant = None
 
-    # A sequence of Strings specifying the names of the part instances.
+    #: A sequence of Strings specifying the names of the part instances.
     partInstanceName: tuple
 
     def __init__(self, partInstanceName: tuple):

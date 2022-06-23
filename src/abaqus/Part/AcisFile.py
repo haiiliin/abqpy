@@ -18,7 +18,7 @@ class AcisFile:
         import part
     """
 
-    # An Int specifying the number of parts in the object.
+    #: An Int specifying the number of parts in the object.
     numberOfParts: int = None
 
     def openAcis(self, fileName: str, scaleFromFile: Boolean = OFF):

@@ -49,13 +49,13 @@ class MeshNode:
         mdb.models[name].rootAssembly.surfaces[name].nodes[i]
     """
 
-    # An Int specifying the node label.
+    #: An Int specifying the node label.
     label: int = None
 
-    # A String specifying the name of the part instance that owns this node.
+    #: A String specifying the name of the part instance that owns this node.
     instanceName: str = ""
 
-    # A tuple of three Floats specifying the coordinates of the new node.
+    #: A tuple of three Floats specifying the coordinates of the new node.
     coordinates: float = None
 
     def __init__(

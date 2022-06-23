@@ -52,48 +52,48 @@ class UserDataBase:
         session.odbs[name].userData
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str = ""
 
-    # A String specifying the source of the **X - Y** data (e.g., “Entered from keyboard”, “Taken
-    # from ASCII file”, “Read from an ODB”, etc.). The default value is an empty string.
+    #: A String specifying the source of the **X - Y** data (e.g., “Entered from keyboard”, “Taken
+    #: from ASCII file”, “Read from an ODB”, etc.). The default value is an empty string.
     sourceDescription: str = ""
 
-    # A String specifying the content of the **X - Y** data (e.g., “field 1 vs. field 2”). The
-    # default value is an empty string.
+    #: A String specifying the content of the **X - Y** data (e.g., “field 1 vs. field 2”). The
+    #: default value is an empty string.
     contentDescription: str = ""
 
-    # A String specifying additional information about the **X - Y** data (e.g., “for whole
-    # model”). The default value is an empty string.
+    #: A String specifying additional information about the **X - Y** data (e.g., “for whole
+    #: model”). The default value is an empty string.
     positionDescription: str = ""
 
-    # A String specifying the label for the X-values. This value may be overridden if the
-    # **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
+    #: A String specifying the label for the X-values. This value may be overridden if the
+    #: **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
     xValuesLabel: str = ""
 
-    # A String specifying the label for the Y-values. This value may be overridden if the
-    # **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
+    #: A String specifying the label for the Y-values. This value may be overridden if the
+    #: **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
     yValuesLabel: str = ""
 
-    # A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the X -axis1-
-    # values.
+    #: A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the X -axis1-
+    #: values.
     axis1QuantityType: QuantityType = QuantityType()
 
-    # A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the Y -axis2-
-    # values.
+    #: A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the Y -axis2-
+    #: values.
     axis2QuantityType: QuantityType = QuantityType()
 
-    # A String specifying the label to be used in the legend. The default value is the name of
-    # the XYData object.
+    #: A String specifying the label to be used in the legend. The default value is the name of
+    #: the XYData object.
     legendLabel: str = ""
 
-    # A repository of XYData objects.
+    #: A repository of XYData objects.
     xyDataObjects: dict[str, XYData] = dict[str, XYData]()
 
-    # A repository of Annotation objects.
+    #: A repository of Annotation objects.
     annotations: dict[str, Annotation] = dict[str, Annotation]()
 
-    # A tuple of pairs of Floats specifying the **X - Y** data pairs.
+    #: A tuple of pairs of Floats specifying the **X - Y** data pairs.
     data: float = None
 
     def XYData(

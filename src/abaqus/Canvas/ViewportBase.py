@@ -216,216 +216,216 @@ class ViewportBase:
         session.viewports[name]
     """
 
-    # A SymbolicConstant specifying the display mode of the viewport. Possible values
-    # are:SINGLE, specifying a single **displayedObject**.OVERLAY, specifying one or more layers
-    # to be displayed simultaneously—each layer contains one **displayedObject**.
+    #: A SymbolicConstant specifying the display mode of the viewport. Possible values
+    #: are:SINGLE, specifying a single **displayedObject**.OVERLAY, specifying one or more layers
+    #: to be displayed simultaneously—each layer contains one **displayedObject**.
     displayMode: SymbolicConstant = None
 
-    # A SymbolicConstant specifying which layer or layers will be controlled by the view
-    # manipulation tools when **displayMode** = OVERLAY. Possible values are ALL and CURRENT.
+    #: A SymbolicConstant specifying which layer or layers will be controlled by the view
+    #: manipulation tools when **displayMode** = OVERLAY. Possible values are ALL and CURRENT.
     viewManipLayers: SymbolicConstant = None
 
-    # A Float specifying a factor to be used in offsetting layers in the screen Z direction.
-    # Possible values are -1 to 1. A negative value reverses the apparent order in which the
-    # layers are plotted.
+    #: A Float specifying a factor to be used in offsetting layers in the screen Z direction.
+    #: Possible values are -1 to 1. A negative value reverses the apparent order in which the
+    #: layers are plotted.
     layerOffset: float = None
 
-    # A SymbolicConstant specifying the current state of a viewport. Possible values are
-    # NORMAL, MAXIMIZED, and MINIMIZED.
+    #: A SymbolicConstant specifying the current state of a viewport. Possible values are
+    #: NORMAL, MAXIMIZED, and MINIMIZED.
     windowState: SymbolicConstant = None
 
-    # A Float specifying the width in millimeters of the current viewport, regardless of the
-    # value of **windowState**.
+    #: A Float specifying the width in millimeters of the current viewport, regardless of the
+    #: value of **windowState**.
     currentWidth: float = None
 
-    # A Float specifying the height in millimeters of the current viewport, regardless of the
-    # value of **windowState**, and including the title bar.
+    #: A Float specifying the height in millimeters of the current viewport, regardless of the
+    #: value of **windowState**, and including the title bar.
     currentHeight: float = None
 
-    # A Boolean specifying whether the viewport is linked for synchronization. The default
-    # value is ON.
+    #: A Boolean specifying whether the viewport is linked for synchronization. The default
+    #: value is ON.
     applyLinkedCommands: Boolean = ON
 
-    # A SymbolicConstant specifying the currently active color mappings. Possible values
-    # are:
-    # DEFAULT_COLORS
-    # PART_GEOM_MAP_COLORS
-    # ASSEMBLY_MAP_COLORS
-    # PART_MAP_COLORS
-    # INSTANCE_MAP_COLORS
-    # INSTANCE_TYPE_MAP_COLORS
-    # SECTION_MAP_COLORS
-    # MATERIAL_MAP_COLORS
-    # LOAD_MAP_COLORS
-    # BC_MAP_COLORS
-    # INTERACTION_MAP_COLORS
-    # CONSTRAINT_MAP_COLORS
-    # SET_MAP_COLORS
-    # SURFACE_MAP_COLORS
-    # INTERNAL_SET_MAP_COLORS
-    # INTERNAL_SURFACE_MAP_COLORS
-    # DISPLAY_GRP_MAP_COLORS
-    # SELECTION_GRP_MAP_COLORS
-    # ELTYPE_MAP_COLORS
-    # PLOT_MAP_COLORS
-    # MESH_MAP_COLORS
-    # The default value is DEFAULT_COLORS.
+    #: A SymbolicConstant specifying the currently active color mappings. Possible values
+    #: are:
+    #: DEFAULT_COLORS
+    #: PART_GEOM_MAP_COLORS
+    #: ASSEMBLY_MAP_COLORS
+    #: PART_MAP_COLORS
+    #: INSTANCE_MAP_COLORS
+    #: INSTANCE_TYPE_MAP_COLORS
+    #: SECTION_MAP_COLORS
+    #: MATERIAL_MAP_COLORS
+    #: LOAD_MAP_COLORS
+    #: BC_MAP_COLORS
+    #: INTERACTION_MAP_COLORS
+    #: CONSTRAINT_MAP_COLORS
+    #: SET_MAP_COLORS
+    #: SURFACE_MAP_COLORS
+    #: INTERNAL_SET_MAP_COLORS
+    #: INTERNAL_SURFACE_MAP_COLORS
+    #: DISPLAY_GRP_MAP_COLORS
+    #: SELECTION_GRP_MAP_COLORS
+    #: ELTYPE_MAP_COLORS
+    #: PLOT_MAP_COLORS
+    #: MESH_MAP_COLORS
+    #: The default value is DEFAULT_COLORS.
     activeColorModes: SymbolicConstant = DEFAULT_COLORS
 
-    # A SymbolicConstant specifying the last applied color mapping. Possible values
-    # are:
-    # DEFAULT_COLORS
-    # PART_GEOM_MAP_COLORS
-    # ASSEMBLY_MAP_COLORS
-    # PART_MAP_COLORS
-    # INSTANCE_MAP_COLORS
-    # INSTANCE_TYPE_MAP_COLORS
-    # SECTION_MAP_COLORS
-    # MATERIAL_MAP_COLORS
-    # LOAD_MAP_COLORS
-    # BC_MAP_COLORS
-    # INTERACTION_MAP_COLORS
-    # CONSTRAINT_MAP_COLORS
-    # SET_MAP_COLORS
-    # SURFACE_MAP_COLORS
-    # INTERNAL_SET_MAP_COLORS
-    # INTERNAL_SURFACE_MAP_COLORS
-    # DISPLAY_GRP_MAP_COLORS
-    # SELECTION_GRP_MAP_COLORS
-    # ELTYPE_MAP_COLORS
-    # PLOT_MAP_COLORS
-    # MESH_MAP_COLORS
-    # The default value is DEFAULT_COLORS.
+    #: A SymbolicConstant specifying the last applied color mapping. Possible values
+    #: are:
+    #: DEFAULT_COLORS
+    #: PART_GEOM_MAP_COLORS
+    #: ASSEMBLY_MAP_COLORS
+    #: PART_MAP_COLORS
+    #: INSTANCE_MAP_COLORS
+    #: INSTANCE_TYPE_MAP_COLORS
+    #: SECTION_MAP_COLORS
+    #: MATERIAL_MAP_COLORS
+    #: LOAD_MAP_COLORS
+    #: BC_MAP_COLORS
+    #: INTERACTION_MAP_COLORS
+    #: CONSTRAINT_MAP_COLORS
+    #: SET_MAP_COLORS
+    #: SURFACE_MAP_COLORS
+    #: INTERNAL_SET_MAP_COLORS
+    #: INTERNAL_SURFACE_MAP_COLORS
+    #: DISPLAY_GRP_MAP_COLORS
+    #: SELECTION_GRP_MAP_COLORS
+    #: ELTYPE_MAP_COLORS
+    #: PLOT_MAP_COLORS
+    #: MESH_MAP_COLORS
+    #: The default value is DEFAULT_COLORS.
     colorMode: SymbolicConstant = DEFAULT_COLORS
 
-    # A Float specifying the translucency that will be applied to objects colored using
-    # **initialColor** and it needs to be set along with **initialColor**. If **initialColor** is
-    # set to 'As is' then translucency will have no effect.
+    #: A Float specifying the translucency that will be applied to objects colored using
+    #: **initialColor** and it needs to be set along with **initialColor**. If **initialColor** is
+    #: set to 'As is' then translucency will have no effect.
     translucency: float = None
 
-    # A Boolean specifying whether an animation is connected to the viewport.
+    #: A Boolean specifying whether an animation is connected to the viewport.
     animationConnect: Boolean = OFF
 
-    # A repository of AttributeColorMap objects specifying the objects cannot be constructed
-    # but the following attribute maps are supported:
-    #     "type"
-    #     "Element set"
-    #     "Material"
-    #     "Section"
-    #     "Default"
-    #     "Part"
-    #     "Part instance"
-    #     "Element type"
-    #     "Averaging region"
-    #     "Assembly"
-    #     "Property"
-    #     "Set"
-    #     "Surface"
-    #     "Skin"
-    #     "Profile"
-    #     "Part shape"
-    #     "Part status"
-    #     "Part geometry"
-    #     "Meshability"
-    #     "Instance type"
-    #     "Load"
-    #     "Boundary condition"
-    #     "Interaction"
-    #     "Constraint"
-    #     "Interaction type"
-    #     "Constraint type"
-    #     "Display group"
-    #     "Selection group"
-    #     "Interaction property"
-    #     "Connector"
-    #     "Connector type"
-    #     "Connector property"
-    #     "Internal set"
-    #     "Internal surface"
-    #     "mapColors"
-    #     "autoColors"
-    #     "overrides"
-    #     "defaultAutoColors"
-    #     "defaultOverrides"
-    #     "objectToCopy"
-    #     "colorMapping"
-    #     "colorMappings"
-    #     "colorMode"
-    #     "attributeColors"
-    #     "updateOverrides"
-    #     "colorCodeOverride"
-    #     "initialColor"
-    #     "Layup"
-    #     "Ply"
+    #: A repository of AttributeColorMap objects specifying the objects cannot be constructed
+    #: but the following attribute maps are supported:
+    #:     "type"
+    #:     "Element set"
+    #:     "Material"
+    #:     "Section"
+    #:     "Default"
+    #:     "Part"
+    #:     "Part instance"
+    #:     "Element type"
+    #:     "Averaging region"
+    #:     "Assembly"
+    #:     "Property"
+    #:     "Set"
+    #:     "Surface"
+    #:     "Skin"
+    #:     "Profile"
+    #:     "Part shape"
+    #:     "Part status"
+    #:     "Part geometry"
+    #:     "Meshability"
+    #:     "Instance type"
+    #:     "Load"
+    #:     "Boundary condition"
+    #:     "Interaction"
+    #:     "Constraint"
+    #:     "Interaction type"
+    #:     "Constraint type"
+    #:     "Display group"
+    #:     "Selection group"
+    #:     "Interaction property"
+    #:     "Connector"
+    #:     "Connector type"
+    #:     "Connector property"
+    #:     "Internal set"
+    #:     "Internal surface"
+    #:     "mapColors"
+    #:     "autoColors"
+    #:     "overrides"
+    #:     "defaultAutoColors"
+    #:     "defaultOverrides"
+    #:     "objectToCopy"
+    #:     "colorMapping"
+    #:     "colorMappings"
+    #:     "colorMode"
+    #:     "attributeColors"
+    #:     "updateOverrides"
+    #:     "colorCodeOverride"
+    #:     "initialColor"
+    #:     "Layup"
+    #:     "Ply"
     colorMappings: dict[str, AttributeColorMap] = dict[str, AttributeColorMap]()
 
-    # A String specifying the color that will be applied to all objects in the viewport at the
-    # start of color coding. The possible values are 'As is', 'Default' or a string with a
-    # hexadecimal representation of a color.
+    #: A String specifying the color that will be applied to all objects in the viewport at the
+    #: start of color coding. The possible values are 'As is', 'Default' or a string with a
+    #: hexadecimal representation of a color.
     initialColor: str = ""
 
-    # A String specifying which layer is affected by options settings when **displayMode**
-    # =OVERLAY. The current layer is also the only layer affected by view manipulations
-    # when*viewManipLayers* =CURRENT.
+    #: A String specifying which layer is affected by options settings when **displayMode**
+    #: =OVERLAY. The current layer is also the only layer affected by view manipulations
+    #: when*viewManipLayers* =CURRENT.
     currentLayer: str = ""
 
-    # A :py:class:`~abaqus.Canvas.Displayable.Displayable` object specifying the object to be displayed. The Displayable type is an
-    # abstract generalization. The concrete possible types are Part, Assembly,
-    # ConstrainedSketch, Odb, PlyStackPlot, or XYPlot. If **displayedObject** = None, Abaqus
-    # displays an empty viewport.
+    #: A :py:class:`~abaqus.Canvas.Displayable.Displayable` object specifying the object to be displayed. The Displayable type is an
+    #: abstract generalization. The concrete possible types are Part, Assembly,
+    #: ConstrainedSketch, Odb, PlyStackPlot, or XYPlot. If **displayedObject** = None, Abaqus
+    #: displays an empty viewport.
     displayedObject: Displayable = Displayable()
 
-    # A repository of Layer objects specifying the key to the repository is a String with the
-    # name of the layer.
+    #: A repository of Layer objects specifying the key to the repository is a String with the
+    #: name of the layer.
     layers: dict[str, Layer] = dict[str, Layer]()
 
-    # A :py:class:`~abaqus.UtilityAndView.View.View` object specifying the object that controls viewing of the viewport content.
+    #: A :py:class:`~abaqus.UtilityAndView.View.View` object specifying the object that controls viewing of the viewport content.
     view: View = None
 
-    # An :py:class:`~abaqus.OdbDisplay.OdbDisplay.OdbDisplay` object specifying the display options for the Odb object.
+    #: An :py:class:`~abaqus.OdbDisplay.OdbDisplay.OdbDisplay` object specifying the display options for the Odb object.
     odbDisplay: OdbDisplay = OdbDisplay()
 
-    # A :py:class:`~abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions` object specifying the display options for the Part object.
+    #: A :py:class:`~abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions` object specifying the display options for the Part object.
     partDisplay: PartDisplayOptions = PartDisplayOptions()
 
-    # An :py:class:`~abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions` object specifying the display options for the Assembly object.
+    #: An :py:class:`~abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions` object specifying the display options for the Assembly object.
     assemblyDisplay: AssemblyDisplayOptions = AssemblyDisplayOptions()
 
-    # A :py:class:`~abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions` object.
+    #: A :py:class:`~abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions` object.
     viewportAnnotationOptions: ViewportAnnotationOptions = ViewportAnnotationOptions()
 
-    # A :py:class:`~abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions` object.
+    #: A :py:class:`~abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions` object.
     detailPlotOptions: DetailPlotOptions = DetailPlotOptions()
 
-    # An :py:class:`~abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray` object.
+    #: An :py:class:`~abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray` object.
     annotationsToPlot: AnnotationsToPlotArray = AnnotationsToPlotArray()
 
-    # A tuple of Strings specifying the names of layers that will be displayed in the viewport
-    # when **displayMode** = OVERLAY.
+    #: A tuple of Strings specifying the names of layers that will be displayed in the viewport
+    #: when **displayMode** = OVERLAY.
     visibleLayers: tuple = ()
 
-    # A pair of Floats specifying the **X**- and **Y**-coordinates in millimeters in the canvas
-    # coordinate system of the lower left corner of the current viewport, regardless of the
-    # value of **windowState**.
+    #: A pair of Floats specifying the **X**- and **Y**-coordinates in millimeters in the canvas
+    #: coordinate system of the lower left corner of the current viewport, regardless of the
+    #: value of **windowState**.
     currentOrigin: tuple[float] = ()
 
-    # A pair of Floats specifying the **X**- and **Y**-coordinates in millimeters of the lower
-    # left corner of the current viewport from a coordinate system having its origin in the
-    # lower left corner of the drawing area. This origin refers to the viewport location when
-    # **windowState** =MINIMIZED.
+    #: A pair of Floats specifying the **X**- and **Y**-coordinates in millimeters of the lower
+    #: left corner of the current viewport from a coordinate system having its origin in the
+    #: lower left corner of the drawing area. This origin refers to the viewport location when
+    #: **windowState** =MINIMIZED.
     iconOrigin: tuple[float] = ()
 
-    # A :py:class:`~abaqus.DisplayOptions.LightOptions.LightOptions` object.
+    #: A :py:class:`~abaqus.DisplayOptions.LightOptions.LightOptions` object.
     lightOptions: LightOptions = LightOptions()
 
-    # An :py:class:`~abaqus.Canvas.ImageOptions.ImageOptions` object.
+    #: An :py:class:`~abaqus.Canvas.ImageOptions.ImageOptions` object.
     imageOptions: ImageOptions = ImageOptions()
 
-    # A :py:class:`~abaqus.Canvas.MovieOptions.MovieOptions` object.
+    #: A :py:class:`~abaqus.Canvas.MovieOptions.MovieOptions` object.
     movieOptions: MovieOptions = MovieOptions()
 
-    # A tuple of Strings specifying keys to the session.drawings repository. The default value
-    # is an empty sequence.
+    #: A tuple of Strings specifying keys to the session.drawings repository. The default value
+    #: is an empty sequence.
     drawings: tuple = ()
 
     def __init__(

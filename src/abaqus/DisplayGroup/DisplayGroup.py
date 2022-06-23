@@ -42,25 +42,25 @@ class DisplayGroup:
         session.viewports[name].partDisplay.displayGroup
     """
 
-    # A Boolean specifying whether Undo is possible or not.
+    #: A Boolean specifying whether Undo is possible or not.
     canUndo: Boolean = OFF
 
-    # A Boolean specifying whether Redo is possible or not.
+    #: A Boolean specifying whether Redo is possible or not.
     canRedo: Boolean = OFF
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str = ""
 
-    # A SymbolicConstant specifying the module in which the display group has been created.
-    # The possible values are PART, ASSEMBLY, PART_ASSEMBLY, ODB, and ALL.
+    #: A SymbolicConstant specifying the module in which the display group has been created.
+    #: The possible values are PART, ASSEMBLY, PART_ASSEMBLY, ODB, and ALL.
     module: SymbolicConstant = None
 
-    # A String specifying the name of the model to which the display group belongs when the
-    # module is part- or assembly-based.
+    #: A String specifying the name of the model to which the display group belongs when the
+    #: module is part- or assembly-based.
     modelName: str = ""
 
-    # A String specifying the name of the part to which the display group belongs when the
-    # module is part-based.
+    #: A String specifying the name of the part to which the display group belongs when the
+    #: module is part-based.
     partName: str = ""
 
     def __init__(self, name: str, leaf: Leaf):

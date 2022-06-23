@@ -58,47 +58,47 @@ class ExpInitialization(ContactInitialization):
     - CONTACT INITIALIZATION DATA
     """
 
-    # A String specifying the contact initialization repository key.
+    #: A String specifying the contact initialization repository key.
     name: str
 
-    # A SymbolicConstant specifying the type of overclosure to be defined. Possible values are
-    # ADJUST, INTERFERENCE, and CLEARANCE. The default value is ADJUST.
+    #: A SymbolicConstant specifying the type of overclosure to be defined. Possible values are
+    #: ADJUST, INTERFERENCE, and CLEARANCE. The default value is ADJUST.
     overclosureType: SymbolicConstant = ADJUST
 
-    # None or a Float specifying the interference distance. This argument is valid only when
-    # **overclosureType** = INTERFERENCE. The default value is None.
+    #: None or a Float specifying the interference distance. This argument is valid only when
+    #: **overclosureType** = INTERFERENCE. The default value is None.
     interferenceDistance: float = None
 
-    # None or a Float specifying the initial clearance distance. This argument is valid only
-    # when **overclosureType** = CLEARANCE and must be specified in that case. The default value
-    # is None.
+    #: None or a Float specifying the initial clearance distance. This argument is valid only
+    #: when **overclosureType** = CLEARANCE and must be specified in that case. The default value
+    #: is None.
     clearanceDistance: float = None
 
-    # None or a Float specifying the distance tolerance within which initial openings will
-    # undergo strain-free adjustments. This argument is not valid when
-    # **overclosureType** = INTERFERENCE unless a value has been specified for
-    # **interferenceDistance**. The default value is None.
+    #: None or a Float specifying the distance tolerance within which initial openings will
+    #: undergo strain-free adjustments. This argument is not valid when
+    #: **overclosureType** = INTERFERENCE unless a value has been specified for
+    #: **interferenceDistance**. The default value is None.
     openingTolerance: float = None
 
-    # None or a Float specifying the distance tolerance within which initial overclosures will
-    # undergo strain-free adjustments. The default value is None.
+    #: None or a Float specifying the distance tolerance within which initial overclosures will
+    #: undergo strain-free adjustments. The default value is None.
     overclosureTolerance: float = None
 
-    # A Boolean specifying whether to resolve clearances/overclosures by adjusting the nodal
-    # coordinates without creating strain in the model. **adjustNodalCoords** = True can be used
-    # only for clearances/overclosures defined in the first step of an analysis. The default
-    # value is True.
+    #: A Boolean specifying whether to resolve clearances/overclosures by adjusting the nodal
+    #: coordinates without creating strain in the model. **adjustNodalCoords** = True can be used
+    #: only for clearances/overclosures defined in the first step of an analysis. The default
+    #: value is True.
     adjustNodalCoords: Boolean = True
 
-    # A String specifying the name of the node set containing the secondary nodes to be
-    # included in the initial clearance specification. This argument is not valid when
-    # **overclosureType** = INTERFERENCE and if **openingTolerance** or **overclosureTolerance** is
-    # specified. The default value is None.
+    #: A String specifying the name of the node set containing the secondary nodes to be
+    #: included in the initial clearance specification. This argument is not valid when
+    #: **overclosureType** = INTERFERENCE and if **openingTolerance** or **overclosureTolerance** is
+    #: specified. The default value is None.
     secondaryNodesetName: str = None
 
-    # A Float specifying the fraction of the step time (between 0.0 and 1.0) in which the
-    # interference fit has to be solved. The default value is 1.0. This argument is valid only
-    # when **overclosureType** = INTERFERENCE.
+    #: A Float specifying the fraction of the step time (between 0.0 and 1.0) in which the
+    #: interference fit has to be solved. The default value is 1.0. This argument is valid only
+    #: when **overclosureType** = INTERFERENCE.
     stepFraction: float = 1
 
     def __init__(

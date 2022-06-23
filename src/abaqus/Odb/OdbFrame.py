@@ -50,43 +50,43 @@ class OdbFrame:
         session.odbs[name].steps[name].frames[i]
     """
 
-    # An Int specifying the cyclic mode number associated with the data stored on this frame.
-    # Only frequency analyses of cyclic symmetry models possess cyclic mode numbers.
+    #: An Int specifying the cyclic mode number associated with the data stored on this frame.
+    #: Only frequency analyses of cyclic symmetry models possess cyclic mode numbers.
     cyclicModeNumber: int = None
 
-    # A SymbolicConstant specifying the domain of the step of which the frame is a member.
-    # Possible values are TIME, FREQUENCY, and MODAL.
+    #: A SymbolicConstant specifying the domain of the step of which the frame is a member.
+    #: Possible values are TIME, FREQUENCY, and MODAL.
     domain: SymbolicConstant = None
 
-    # A Float specifying the frequency. This member is valid only if **domain** = FREQUENCY or if
-    # the **procedureType** member of the Step object=FREQUENCY. The default value is 0.0.
+    #: A Float specifying the frequency. This member is valid only if **domain** = FREQUENCY or if
+    #: the **procedureType** member of the Step object=FREQUENCY. The default value is 0.0.
     frequency: float = 0
 
-    # An Int specifying the eigenmode. This member is valid only if **domain** = MODAL.
+    #: An Int specifying the eigenmode. This member is valid only if **domain** = MODAL.
     mode: int = None
 
-    # An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object specifying the real or imaginary portion of the data corresponding to
-    # this cyclic symmetry mode.
+    #: An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object specifying the real or imaginary portion of the data corresponding to
+    #: this cyclic symmetry mode.
     associatedFrame: "OdbFrame" = None
 
-    # A repository of FieldOutput objects specifying the key to the **fieldOutputs**repository
-    # is a String representing an output variable.
+    #: A repository of FieldOutput objects specifying the key to the **fieldOutputs**repository
+    #: is a String representing an output variable.
     fieldOutputs: dict[str, FieldOutput] = dict[str, FieldOutput]()
 
-    # An :py:class:`~abaqus.Odb.OdbLoadCase.OdbLoadCase` object specifying the load case for the frame.
+    #: An :py:class:`~abaqus.Odb.OdbLoadCase.OdbLoadCase` object specifying the load case for the frame.
     loadCase: OdbLoadCase = OdbLoadCase("loadCase")
 
-    # An Int specifying the frame increment number within the step. The base frame has
-    # normally increment number 0, and the results run from 1. In case of multiple load cases,
-    # the same increment number is duplicated for each loadcase.
+    #: An Int specifying the frame increment number within the step. The base frame has
+    #: normally increment number 0, and the results run from 1. In case of multiple load cases,
+    #: the same increment number is duplicated for each loadcase.
     incrementNumber: int
 
-    # A Float specifying the value in units determined by the **domain** member of the Step
-    # object. The equivalent in the time domain is **stepTime**; in the frequency domain the
-    # equivalent is **frequency**; and in the modal domain the equivalent is **mode**.
+    #: A Float specifying the value in units determined by the **domain** member of the Step
+    #: object. The equivalent in the time domain is **stepTime**; in the frequency domain the
+    #: equivalent is **frequency**; and in the modal domain the equivalent is **mode**.
     frameValue: float
 
-    # A String specifying the contents of the frame. The default value is an empty string.
+    #: A String specifying the contents of the frame. The default value is an empty string.
     description: str = ""
 
     @typing.overload

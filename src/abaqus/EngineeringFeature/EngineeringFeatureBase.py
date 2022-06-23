@@ -32,16 +32,16 @@ class EngineeringFeatureBase:
         mdb.models[name].rootAssembly.engineeringFeatures
     """
 
-    # A repository of Inertia objects.
+    #: A repository of Inertia objects.
     inertias: dict[str, Inertia] = dict[str, Inertia]()
 
-    # A repository of Crack objects.
+    #: A repository of Crack objects.
     cracks: dict[str, Crack] = dict[str, Crack]()
 
-    # A repository of Fastener objects.
+    #: A repository of Fastener objects.
     fasteners: dict[str, Fastener] = dict[str, Fastener]()
 
-    # A repository of SpringDashpot objects.
+    #: A repository of SpringDashpot objects.
     springDashpots: dict[str, SpringDashpot] = dict[str, SpringDashpot]()
 
     def assignSeam(self, regions: tuple[Region]):

@@ -69,70 +69,70 @@ class SizingTask(OptimizationTask):
         mdb.models[name].optimizationTasks[name]
     """
 
-    # A repository of DesignResponse objects.
+    #: A repository of DesignResponse objects.
     designResponses: dict[str, DesignResponse] = dict[str, DesignResponse]()
 
-    # A repository of ObjectiveFunction objects.
+    #: A repository of ObjectiveFunction objects.
     objectiveFunctions: dict[str, ObjectiveFunction] = dict[str, ObjectiveFunction]()
 
-    # A repository of OptimizationConstraint objects.
+    #: A repository of OptimizationConstraint objects.
     optimizationConstraints: dict[str, OptimizationConstraint] = dict[
         str, OptimizationConstraint
     ]()
 
-    # A repository of GeometricRestriction objects.
+    #: A repository of GeometricRestriction objects.
     geometricRestrictions: dict[str, GeometricRestriction] = dict[
         str, GeometricRestriction
     ]()
 
-    # A repository of StopCondition objects.
+    #: A repository of StopCondition objects.
     stopConditions: dict[str, StopCondition] = dict[str, StopCondition]()
 
-    # A String specifying the optimization task repository key.
+    #: A String specifying the optimization task repository key.
     name: str
 
-    # A Float specifying the stop criteria based on the change in element thickness. The
-    # default value is 0.5 × 10-2.
+    #: A Float specifying the stop criteria based on the change in element thickness. The
+    #: default value is 0.5 × 10-2.
     elementThicknessDeltaStopCriteria: float = 0
 
-    # A Boolean specifying whether to exclude elements with boundary conditions from the
-    # optimization. The default value is OFF.
+    #: A Boolean specifying whether to exclude elements with boundary conditions from the
+    #: optimization. The default value is OFF.
     freezeBoundaryConditionRegions: Boolean = OFF
 
-    # A Boolean specifying whether to exclude elements with loads and elements with loaded
-    # nodes from the optimization. The default value is ON.
+    #: A Boolean specifying whether to exclude elements with loads and elements with loaded
+    #: nodes from the optimization. The default value is ON.
     freezeLoadRegions: Boolean = ON
 
-    # The SymbolicConstatnt MODEL or a Region object specifying the region to use for mode
-    # tracking. The default value is MODEL.
+    #: The SymbolicConstatnt MODEL or a Region object specifying the region to use for mode
+    #: tracking. The default value is MODEL.
     modeTrackingRegion: str = MODEL
 
-    # An Int specifying the number of stop criteria. The default value is 2.
+    #: An Int specifying the number of stop criteria. The default value is 2.
     numFulfilledStopCriteria: int = 2
 
-    # An Int specifying the number of modes included in mode tracking. The default value is 5.
+    #: An Int specifying the number of modes included in mode tracking. The default value is 5.
     numTrackedModes: int = 5
 
-    # A Float specifying the stop criteria based on the change in objective function. The
-    # default value is 0.001.
+    #: A Float specifying the stop criteria based on the change in objective function. The
+    #: default value is 0.001.
     objectiveFunctionDeltaStopCriteria: float = 0
 
-    # An Int specifying the first design cycle used to evaluate convergence criteria. The
-    # default value is 4.
+    #: An Int specifying the first design cycle used to evaluate convergence criteria. The
+    #: default value is 4.
     stopCriteriaDesignCycle: int = 4
 
-    # A Float specifying the maximum change in thickness per design cycle. The default value
-    # is 0.25.
+    #: A Float specifying the maximum change in thickness per design cycle. The default value
+    #: is 0.25.
     thicknessMoveLimit: float = 0
 
-    # A SymbolicConstant specifying the strategy for how the thickness is updated in the
-    # method of moving asymptotes. Possible values are NORMAL, CONSERVATIVE, and AGGRESSIVE.
-    # The default value is NORMAL.
+    #: A SymbolicConstant specifying the strategy for how the thickness is updated in the
+    #: method of moving asymptotes. Possible values are NORMAL, CONSERVATIVE, and AGGRESSIVE.
+    #: The default value is NORMAL.
     thicknessUpdateStrategy: SymbolicConstant = NORMAL
 
-    # A Boolean specifying whether the group in the design response will be evaluated using
-    # the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
-    # value of False means that the existing algorithm will be used.
+    #: A Boolean specifying whether the group in the design response will be evaluated using
+    #: the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
+    #: value of False means that the existing algorithm will be used.
     groupOperator: Boolean = OFF
 
     def __init__(

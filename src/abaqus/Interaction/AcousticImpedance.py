@@ -63,53 +63,53 @@ class AcousticImpedance(Interaction):
     - SIMPEDANCE
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A String specifying the name of the step in which the AcousticImpedance object is
-    # created.
+    #: A String specifying the name of the step in which the AcousticImpedance object is
+    #: created.
     createStepName: str
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the acoustic boundary surface.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the acoustic boundary surface.
     surface: Region
 
-    # A SymbolicConstant specifying the type of acoustic impedance to be defined. Possible
-    # values are TABULAR and NONREFLECTING. The default value is TABULAR.
+    #: A SymbolicConstant specifying the type of acoustic impedance to be defined. Possible
+    #: values are TABULAR and NONREFLECTING. The default value is TABULAR.
     definition: SymbolicConstant = TABULAR
 
-    # A String specifying the AcousticImpedanceProp object associated with this interaction.
+    #: A String specifying the AcousticImpedanceProp object associated with this interaction.
     interactionProperty: str = ""
 
-    # A SymbolicConstant specifying the type of nonreflecting geometry to be defined. Possible
-    # values are PLANE, IMPROVED, CIRCULAR, SPHERICAL, ELLIPTICAL, and PROLATE. The default
-    # value is PLANE.This argument is valid only when **definition** = NONREFLECTING.
+    #: A SymbolicConstant specifying the type of nonreflecting geometry to be defined. Possible
+    #: values are PLANE, IMPROVED, CIRCULAR, SPHERICAL, ELLIPTICAL, and PROLATE. The default
+    #: value is PLANE.This argument is valid only when **definition** = NONREFLECTING.
     nonreflectingType: SymbolicConstant = PLANE
 
-    # A Float specifying the radius of the circle or sphere defining the boundary surface. The
-    # default value is 1.0.This argument is valid only when **definition** = NONREFLECTING, and
-    # **nonreflectingType** = CIRCULAR or SPHERICAL.
+    #: A Float specifying the radius of the circle or sphere defining the boundary surface. The
+    #: default value is 1.0.This argument is valid only when **definition** = NONREFLECTING, and
+    #: **nonreflectingType** = CIRCULAR or SPHERICAL.
     radius: float = 1
 
-    # A Float specifying the semimajor axis length of the ellipse or prolate spheroid defining
-    # the boundary surface. The default value is 1.0.This argument is valid only when
-    # **definition** = NONREFLECTING, and **nonreflectingType** = ELLIPTICAL or PROLATE.
+    #: A Float specifying the semimajor axis length of the ellipse or prolate spheroid defining
+    #: the boundary surface. The default value is 1.0.This argument is valid only when
+    #: **definition** = NONREFLECTING, and **nonreflectingType** = ELLIPTICAL or PROLATE.
     semimajorAxis: float = 1
 
-    # A Float specifying the eccentricity of the ellipse or prolate spheroid defining the
-    # boundary surface. The default value is 0.0.This argument is valid only when
-    # **definition** = NONREFLECTING, and **nonreflectingType** = ELLIPTICAL or PROLATE.
+    #: A Float specifying the eccentricity of the ellipse or prolate spheroid defining the
+    #: boundary surface. The default value is 0.0.This argument is valid only when
+    #: **definition** = NONREFLECTING, and **nonreflectingType** = ELLIPTICAL or PROLATE.
     eccentricity: float = 0
 
-    # A sequence of three Floats specifying the X, Y, and Z coordinates of the center of the
-    # ellipse or prolate spheroid defining the boundary surface. The default value is (0, 0,
-    # 0).This argument is valid only when **definition** = NONREFLECTING, and
-    # **nonreflectingType** = ELLIPTICAL or PROLATE.
+    #: A sequence of three Floats specifying the X, Y, and Z coordinates of the center of the
+    #: ellipse or prolate spheroid defining the boundary surface. The default value is (0, 0,
+    #: 0).This argument is valid only when **definition** = NONREFLECTING, and
+    #: **nonreflectingType** = ELLIPTICAL or PROLATE.
     centerCoordinates: tuple = ()
 
-    # A sequence of three Floats specifying the X, Y, and Z components of the direction cosine
-    # of the major axis of the ellipse or prolate spheroid defining the boundary surface. The
-    # default value is (0, 0, 1).This argument is valid only when **definition** = NONREFLECTING,
-    # and **nonreflectingType** = ELLIPTICAL or PROLATE.
+    #: A sequence of three Floats specifying the X, Y, and Z components of the direction cosine
+    #: of the major axis of the ellipse or prolate spheroid defining the boundary surface. The
+    #: default value is (0, 0, 1).This argument is valid only when **definition** = NONREFLECTING,
+    #: and **nonreflectingType** = ELLIPTICAL or PROLATE.
     directionCosine: tuple = ()
 
     def __init__(

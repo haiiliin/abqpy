@@ -36,18 +36,18 @@ class CompositeSolidSection(Section):
     - SOLID SECTION
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A :py:class:`~abaqus.Section.SectionLayerArray.SectionLayerArray` object specifying the solid cross-section.
+    #: A :py:class:`~abaqus.Section.SectionLayerArray.SectionLayerArray` object specifying the solid cross-section.
     layup: SectionLayerArray
 
-    # A Boolean specifying whether or not the layup should be made symmetric by the analysis.
-    # The default value is OFF.
+    #: A Boolean specifying whether or not the layup should be made symmetric by the analysis.
+    #: The default value is OFF.
     symmetric: Boolean = OFF
 
-    # A String specifying the layup name for this section. The default value is an empty
-    # string.
+    #: A String specifying the layup name for this section. The default value is an empty
+    #: string.
     layupName: str = ""
 
     def __init__(

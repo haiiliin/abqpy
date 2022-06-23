@@ -88,10 +88,10 @@ class Creep:
     - CREEP
     """
 
-    # An :py:class:`~abaqus.Material.Plastic.Metal.ORNL.Ornl.Ornl` object.
+    #: An :py:class:`~abaqus.Material.Plastic.Metal.ORNL.Ornl.Ornl` object.
     ornl: Ornl = Ornl()
 
-    # A :py:class:`~abaqus.Material.Plastic.Potential.Potential` object.
+    #: A :py:class:`~abaqus.Material.Plastic.Potential.Potential` object.
     potential: Potential = Potential(((),))
 
     def __init__(

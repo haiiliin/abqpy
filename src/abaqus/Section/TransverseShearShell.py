@@ -27,13 +27,13 @@ class TransverseShearShell:
     - TRANSVERSE SHEAR STIFFNESS
     """
 
-    # A Float specifying the shear stiffness of the section in the first direction.
+    #: A Float specifying the shear stiffness of the section in the first direction.
     k11: float
 
-    # A Float specifying the shear stiffness of the section in the second direction.
+    #: A Float specifying the shear stiffness of the section in the second direction.
     k22: float
 
-    # A Float specifying the coupling term in the shear stiffness of the section.
+    #: A Float specifying the coupling term in the shear stiffness of the section.
     k12: float
 
     def __init__(self, k11: float, k22: float, k12: float):

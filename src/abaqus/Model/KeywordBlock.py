@@ -34,22 +34,22 @@ class KeywordBlock:
         mdb.models[name].keywordBlock
     """
 
-    # A Boolean specifying whether the Keywords Editor has been used to change the model.
+    #: A Boolean specifying whether the Keywords Editor has been used to change the model.
     edited: Boolean = OFF
 
-    # A Float specifying the value of the counter associated with the Mdb object at the most
-    # recent synchronization.
+    #: A Float specifying the value of the counter associated with the Mdb object at the most
+    #: recent synchronization.
     lastSynchCount: float = None
 
-    # A tuple of Strings specifying a sequence of Strings that is identical to the information
-    # written to the Abaqus input file. Each String in the sequence represents an Abaqus input
-    # file keyword along with the parameters and data lines associated with the keyword. A
-    # String can also be a comment in the input file. You initialize this data member by
-    # calling synchVersions. After you initialize the data member, you use calls to replace
-    # and insert to record your edits in the correct location. If the last call to
-    # synchVersions used the argument **storeNodesAndElements** = False, the entry for the
-    # keywords NODE and ELEMENT will contain only the keyword and its parameters, not the data
-    # lines.
+    #: A tuple of Strings specifying a sequence of Strings that is identical to the information
+    #: written to the Abaqus input file. Each String in the sequence represents an Abaqus input
+    #: file keyword along with the parameters and data lines associated with the keyword. A
+    #: String can also be a comment in the input file. You initialize this data member by
+    #: calling synchVersions. After you initialize the data member, you use calls to replace
+    #: and insert to record your edits in the correct location. If the last call to
+    #: synchVersions used the argument **storeNodesAndElements** = False, the entry for the
+    #: keywords NODE and ELEMENT will contain only the keyword and its parameters, not the data
+    #: lines.
     sieBlocks: tuple = ()
 
     def setValues(self, edited: Boolean = OFF):

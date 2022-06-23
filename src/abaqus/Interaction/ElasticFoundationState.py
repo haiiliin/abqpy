@@ -40,22 +40,22 @@ class ElasticFoundationState(InteractionState):
         mdb.models[name].steps[name].interactionStates[name]
     """
 
-    # A Float specifying the foundation stiffness per area.
+    #: A Float specifying the foundation stiffness per area.
     stiffness: float = None
 
-    # A SymbolicConstant specifying the propagation state of the stiffness member. Possible
-    # values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the stiffness member. Possible
+    #: values are UNSET, SET, UNCHANGED, and FREED.
     stiffnessState: SymbolicConstant = None
 
-    # A SymbolicConstant specifying the propagation state of the InteractionState object.
-    # Possible values are:
-    # - NOT_YET_ACTIVE
-    # - CREATED
-    # - PROPAGATED
-    # - MODIFIED
-    # - DEACTIVATED
-    # - NO_LONGER_ACTIVE
-    # - TYPE_NOT_APPLICABLE
-    # - INSTANCE_NOT_APPLICABLE
-    # - BUILT_INTO_BASE_STATE
+    #: A SymbolicConstant specifying the propagation state of the InteractionState object.
+    #: Possible values are:
+    #: - NOT_YET_ACTIVE
+    #: - CREATED
+    #: - PROPAGATED
+    #: - MODIFIED
+    #: - DEACTIVATED
+    #: - NO_LONGER_ACTIVE
+    #: - TYPE_NOT_APPLICABLE
+    #: - INSTANCE_NOT_APPLICABLE
+    #: - BUILT_INTO_BASE_STATE
     status: SymbolicConstant = None

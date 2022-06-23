@@ -41,32 +41,32 @@ class EulerianBC(BoundaryCondition):
         mdb.models[name].boundaryConditions[name]
     """
 
-    # A String specifying the boundary condition repository key.
+    #: A String specifying the boundary condition repository key.
     name: str = ""
 
-    # A SymbolicConstant specifying the flow conditions to be defined. Possible values are
-    # INFLOW, OUTFLOW, and BOTH. The default value is INFLOW.
+    #: A SymbolicConstant specifying the flow conditions to be defined. Possible values are
+    #: INFLOW, OUTFLOW, and BOTH. The default value is INFLOW.
     definition: SymbolicConstant = INFLOW
 
-    # A SymbolicConstant specifying the control of material flow into the Eulerian domain.
-    # Possible values are FREE, NONE, and VOID. The default value is FREE.
+    #: A SymbolicConstant specifying the control of material flow into the Eulerian domain.
+    #: Possible values are FREE, NONE, and VOID. The default value is FREE.
     inflowType: SymbolicConstant = FREE
 
-    # A SymbolicConstant specifying the control of flow of material out of the Eulerian
-    # domain. Possible values are ZERO_PRESSURE, FREE, NON_REFLECTING, and EQUILIBRIUM. The
-    # default value is ZERO_PRESSURE.
+    #: A SymbolicConstant specifying the control of flow of material out of the Eulerian
+    #: domain. Possible values are ZERO_PRESSURE, FREE, NON_REFLECTING, and EQUILIBRIUM. The
+    #: default value is ZERO_PRESSURE.
     outflowType: SymbolicConstant = ZERO_PRESSURE
 
-    # A SymbolicConstant specifying the category of the boundary condition. Possible values
-    # are MECHANICAL and THERMAL.
+    #: A SymbolicConstant specifying the category of the boundary condition. Possible values
+    #: are MECHANICAL and THERMAL.
     category: SymbolicConstant = None
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
     region: Region = Region()
 
-    # None or a DatumCsys object specifying the local coordinate system of the boundary
-    # condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
-    # in the global coordinate system. The default value is None.
+    #: None or a DatumCsys object specifying the local coordinate system of the boundary
+    #: condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
+    #: in the global coordinate system. The default value is None.
     localCsys: str = None
 
     def __init__(

@@ -21,7 +21,7 @@ class StructuralDampingByFrequency:
         mdb.models[name].steps[name].structuralDampingByFrequency
     """
 
-    # A :py:class:`~abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponentArray.StructuralDampingByFrequencyComponentArray` object.
+    #: A :py:class:`~abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponentArray.StructuralDampingByFrequencyComponentArray` object.
     components: StructuralDampingByFrequencyComponentArray = (
         StructuralDampingByFrequencyComponentArray()
     )

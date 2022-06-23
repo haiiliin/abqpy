@@ -80,21 +80,21 @@ class LineStyle:
         session.xyPlots[name].title.area.border
     """
 
-    # A String specifying the color to be used when drawing a line with this LineStyle object.
-    # The default value is "White".
+    #: A String specifying the color to be used when drawing a line with this LineStyle object.
+    #: The default value is "White".
     color: str = ""
 
-    # A Boolean specifying whether to draw the line when using this LineStyle. The default
-    # value is ON.
+    #: A Boolean specifying whether to draw the line when using this LineStyle. The default
+    #: value is ON.
     show: Boolean = ON
 
-    # A SymbolicConstant specifying the line style to be used when drawing lines using this
-    # LineStyle. Possible values are SOLID, DASHED, DOTTED, and DOT_DASH. The default value is
-    # SOLID.
+    #: A SymbolicConstant specifying the line style to be used when drawing lines using this
+    #: LineStyle. Possible values are SOLID, DASHED, DOTTED, and DOT_DASH. The default value is
+    #: SOLID.
     style: SymbolicConstant = SOLID
 
-    # A Float specifying the line thickness in mm to be used when drawing lines using this
-    # LineStyle. The default value is 0.2.
+    #: A Float specifying the line thickness in mm to be used when drawing lines using this
+    #: LineStyle. The default value is 0.2.
     thickness: float = 0
 
     def __init__(

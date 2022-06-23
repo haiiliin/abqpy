@@ -35,21 +35,21 @@ class ConnectorMoment(Load):
         mdb.models[name].loads[name]
     """
 
-    # A String specifying the load repository key.
+    #: A String specifying the load repository key.
     name: str = ""
 
-    # A String specifying the name of the assembled fastener to which the load will be
-    # applied. This argument is not valid when **region** is specified. When this argument is
-    # specified, **fastenerSetName** must also be specified. The default value is an empty
-    # string.
+    #: A String specifying the name of the assembled fastener to which the load will be
+    #: applied. This argument is not valid when **region** is specified. When this argument is
+    #: specified, **fastenerSetName** must also be specified. The default value is an empty
+    #: string.
     fastenerName: str = ""
 
-    # A String specifying the assembled fastener template model set to which the load will be
-    # applied. This argument is not valid when **region** is specified. When this argument is
-    # specified, **fastenerName** must also be specified. The default value is an empty string.
+    #: A String specifying the assembled fastener template model set to which the load will be
+    #: applied. This argument is not valid when **region** is specified. When this argument is
+    #: specified, **fastenerName** must also be specified. The default value is an empty string.
     fastenerSetName: str = ""
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
     def __init__(

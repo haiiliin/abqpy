@@ -12,19 +12,19 @@ class ConstrainedSketchParameter:
         mdb.models[name].sketches[name].parameters[i]
     """
 
-    # A String specifying the name of the ConstrainedSketchParameter object.
+    #: A String specifying the name of the ConstrainedSketchParameter object.
     name: str = ""
 
-    # A String specifying the path to the ConstrainedSketchDimension that depends on this
-    # ConstrainedSketchParameter.
+    #: A String specifying the path to the ConstrainedSketchDimension that depends on this
+    #: ConstrainedSketchParameter.
     path: str = ""
 
-    # A String specifying an expression or value associated with this
-    # ConstrainedSketchParameter.
+    #: A String specifying an expression or value associated with this
+    #: ConstrainedSketchParameter.
     expression: str = ""
 
-    # A String specifying the name of the ConstrainedSketchParameter that appears before this
-    # one in the ordered list.
+    #: A String specifying the name of the ConstrainedSketchParameter that appears before this
+    #: one in the ordered list.
     previousParameter: str = ""
 
     def Parameter(

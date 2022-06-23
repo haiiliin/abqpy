@@ -115,127 +115,127 @@ class AssemblyDisplayOptions:
         session.viewports[name].layers[name].assemblyDisplay
     """
 
-    # A Boolean specifying whether boundary conditions are shown. The default value is OFF.
+    #: A Boolean specifying whether boundary conditions are shown. The default value is OFF.
     bcs: Boolean = OFF
 
-    # A Boolean specifying whether connectors are shown. The default value is OFF.
+    #: A Boolean specifying whether connectors are shown. The default value is OFF.
     connectors: Boolean = OFF
 
-    # A Boolean specifying whether the connector end points are shown. This member is
-    # applicable only if **connectors** = ON. The default value is ON.
+    #: A Boolean specifying whether the connector end points are shown. This member is
+    #: applicable only if **connectors** = ON. The default value is ON.
     cnxEndPoints: Boolean = ON
 
-    # A Boolean specifying whether the connector local coordinate system axes are shown. This
-    # member is applicable only if **connectors** = ON. The default value is ON.
+    #: A Boolean specifying whether the connector local coordinate system axes are shown. This
+    #: member is applicable only if **connectors** = ON. The default value is ON.
     cnxLocalAxes: Boolean = ON
 
-    # A Boolean specifying whether the connector section type labels are shown. This member is
-    # applicable only if **connectors** = ON. The default value is ON.
+    #: A Boolean specifying whether the connector section type labels are shown. This member is
+    #: applicable only if **connectors** = ON. The default value is ON.
     cnxTypeLabels: Boolean = ON
 
-    # A Boolean specifying whether the tag information is displayed along with the connector
-    # section type labels. This member is applicable only if **connectors** = ON and if
-    # **cnxTypeLabels** = ON. The default value is OFF.
+    #: A Boolean specifying whether the tag information is displayed along with the connector
+    #: section type labels. This member is applicable only if **connectors** = ON and if
+    #: **cnxTypeLabels** = ON. The default value is OFF.
     cnxTagDisplay: Boolean = OFF
 
-    # A Boolean specifying whether constraints are shown. The default value is OFF.
+    #: A Boolean specifying whether constraints are shown. The default value is OFF.
     constraints: Boolean = OFF
 
-    # A Boolean specifying whether to display engineering features. The default value is OFF.
+    #: A Boolean specifying whether to display engineering features. The default value is OFF.
     engineeringFeatures: Boolean = OFF
 
-    # A Boolean specifying whether geometric restrictions are shown. The default value is OFF.
+    #: A Boolean specifying whether geometric restrictions are shown. The default value is OFF.
     geometricRestrictions: Boolean = OFF
 
-    # A Boolean specifying whether to render the beam profiles. The default value is OFF.
+    #: A Boolean specifying whether to render the beam profiles. The default value is OFF.
     renderBeamProfiles: Boolean = OFF
 
-    # A Float specifying the beam profile scale factor. The beamScaleFactor must be greater
-    # than zero. The default value is 1.0.
+    #: A Float specifying the beam profile scale factor. The beamScaleFactor must be greater
+    #: than zero. The default value is 1.0.
     beamScaleFactor: float = 1
 
-    # A Boolean specifying whether fields and initial conditions are shown. The default value
-    # is OFF.
+    #: A Boolean specifying whether fields and initial conditions are shown. The default value
+    #: is OFF.
     predefinedFields: Boolean = OFF
 
-    # A Boolean specifying whether interactions are shown. The default value is OFF.
+    #: A Boolean specifying whether interactions are shown. The default value is OFF.
     interactions: Boolean = OFF
 
-    # A Boolean specifying whether loads are shown. The default value is OFF.
+    #: A Boolean specifying whether loads are shown. The default value is OFF.
     loads: Boolean = OFF
 
-    # A Boolean specifying whether the mesh is shown. The default value is OFF.
+    #: A Boolean specifying whether the mesh is shown. The default value is OFF.
     mesh: Boolean = OFF
 
-    # A Boolean specifying whether optimization tasks are shown. The default value is OFF.
+    #: A Boolean specifying whether optimization tasks are shown. The default value is OFF.
     optimizationTasks: Boolean = OFF
 
-    # A Boolean specifying whether stop conditions are shown. The default value is OFF.
+    #: A Boolean specifying whether stop conditions are shown. The default value is OFF.
     stopConditions: Boolean = OFF
 
-    # A SymbolicConstant specifying how the image in the viewport is rendered. Possible values
-    # are WIREFRAME, HIDDEN, SHADED, and FILLED. The default value is WIREFRAME.
+    #: A SymbolicConstant specifying how the image in the viewport is rendered. Possible values
+    #: are WIREFRAME, HIDDEN, SHADED, and FILLED. The default value is WIREFRAME.
     renderStyle: SymbolicConstant = WIREFRAME
 
-    # A :py:class:`~abaqus.DisplayOptions.BCDisplayOptions.BCDisplayOptions` object.
+    #: A :py:class:`~abaqus.DisplayOptions.BCDisplayOptions.BCDisplayOptions` object.
     bcOptions: BCDisplayOptions = BCDisplayOptions()
 
-    # A :py:class:`~abaqus.DisplayOptions.ConstraintDisplayOptions.ConstraintDisplayOptions` object.
+    #: A :py:class:`~abaqus.DisplayOptions.ConstraintDisplayOptions.ConstraintDisplayOptions` object.
     constraintOptions: ConstraintDisplayOptions = ConstraintDisplayOptions()
 
-    # A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object specifying the current display group and referring to an object in
-    # the **displayGroups** member of Session.
+    #: A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object specifying the current display group and referring to an object in
+    #: the **displayGroups** member of Session.
     displayGroup: DisplayGroup = DisplayGroup("dg", Leaf(EMPTY_LEAF))
 
-    # A repository of DisplayGroupInstance objects.
+    #: A repository of DisplayGroupInstance objects.
     displayGroupInstances: dict[str, DisplayGroupInstance] = dict[
         str, DisplayGroupInstance
     ]()
 
-    # An :py:class:`~abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions` object.
+    #: An :py:class:`~abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions` object.
     engineeringFeatureOptions: EngineeringFeatureDisplayOptions = (
         EngineeringFeatureDisplayOptions()
     )
 
-    # A :py:class:`~abaqus.DisplayOptions.PredefinedFieldDisplayOptions.PredefinedFieldDisplayOptions` object.
+    #: A :py:class:`~abaqus.DisplayOptions.PredefinedFieldDisplayOptions.PredefinedFieldDisplayOptions` object.
     predefinedFieldOptions: PredefinedFieldDisplayOptions = (
         PredefinedFieldDisplayOptions()
     )
 
-    # A :py:class:`~abaqus.DisplayOptions.GeometricRestrictionDisplayOptions.GeometricRestrictionDisplayOptions` object.
+    #: A :py:class:`~abaqus.DisplayOptions.GeometricRestrictionDisplayOptions.GeometricRestrictionDisplayOptions` object.
     geometricRestrictionOptions: GeometricRestrictionDisplayOptions = (
         GeometricRestrictionDisplayOptions()
     )
 
-    # A :py:class:`~abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions` object.
+    #: A :py:class:`~abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions` object.
     geometryOptions: GeometryDisplayOptions = GeometryDisplayOptions()
 
-    # An :py:class:`~abaqus.DisplayOptions.InteractionDisplayOptions.InteractionDisplayOptions` object.
+    #: An :py:class:`~abaqus.DisplayOptions.InteractionDisplayOptions.InteractionDisplayOptions` object.
     interactionOptions: InteractionDisplayOptions = InteractionDisplayOptions()
 
-    # A :py:class:`~abaqus.DisplayOptions.LoadDisplayOptions.LoadDisplayOptions` object.
+    #: A :py:class:`~abaqus.DisplayOptions.LoadDisplayOptions.LoadDisplayOptions` object.
     loadOptions: LoadDisplayOptions = LoadDisplayOptions()
 
-    # A :py:class:`~abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions` object.
+    #: A :py:class:`~abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions` object.
     meshOptions: MeshDisplayOptions = MeshDisplayOptions()
 
-    # An :py:class:`~abaqus.DisplayOptions.OptimizationTaskDisplayOptions.OptimizationTaskDisplayOptions` object.
+    #: An :py:class:`~abaqus.DisplayOptions.OptimizationTaskDisplayOptions.OptimizationTaskDisplayOptions` object.
     optimizationTaskOptions: OptimizationTaskDisplayOptions = (
         OptimizationTaskDisplayOptions()
     )
 
-    # A :py:class:`~abaqus.DisplayOptions.StopConditionDisplayOptions.StopConditionDisplayOptions` object.
+    #: A :py:class:`~abaqus.DisplayOptions.StopConditionDisplayOptions.StopConditionDisplayOptions` object.
     stopConditionOptions: StopConditionDisplayOptions = StopConditionDisplayOptions()
 
-    # A :py:class:`~abaqus.DisplayOptions.SymbolDisplayOptions.SymbolDisplayOptions` object.
+    #: A :py:class:`~abaqus.DisplayOptions.SymbolDisplayOptions.SymbolDisplayOptions` object.
     symbolOptions: SymbolDisplayOptions = SymbolDisplayOptions()
 
-    # A tuple of Strings specifying the names of the part instances that are visible in the
-    # viewport. The default value is an empty sequence.
+    #: A tuple of Strings specifying the names of the part instances that are visible in the
+    #: viewport. The default value is an empty sequence.
     visibleInstances: tuple = ()
 
-    # A String specifying the step for which objects are to be displayed. Possible values are
-    # any valid step name. The default value is "Initial".
+    #: A String specifying the step for which objects are to be displayed. Possible values are
+    #: any valid step name. The default value is "Initial".
     step: str = ""
 
     def setValues(

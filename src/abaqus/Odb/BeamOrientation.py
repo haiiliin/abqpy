@@ -31,13 +31,13 @@ class BeamOrientation:
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.beamOrientations[i]
     """
 
-    # A SymbolicConstant specifying the orientation assignment method. Possible values are
-    # N1_COSINES, CSYS, and VECT.
+    #: A SymbolicConstant specifying the orientation assignment method. Possible values are
+    #: N1_COSINES, CSYS, and VECT.
     method: SymbolicConstant = None
 
-    # An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying a region for which the beam orientation is defined.
+    #: An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying a region for which the beam orientation is defined.
     region: OdbSet = OdbSet("set", tuple[OdbMeshNode]())
 
-    # A tuple of Floats specifying direction cosines of the n1-direction of the beam
-    # cross-section.
+    #: A tuple of Floats specifying direction cosines of the n1-direction of the beam
+    #: cross-section.
     vector: float = None

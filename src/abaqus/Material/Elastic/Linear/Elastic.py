@@ -139,10 +139,10 @@ class Elastic:
     - ELASTIC
     """
 
-    # A :py:class:`~abaqus.Material.Elastic.Linear.FailStress.FailStress` object.
+    #: A :py:class:`~abaqus.Material.Elastic.Linear.FailStress.FailStress` object.
     failStress: FailStress = FailStress(((),))
 
-    # A :py:class:`~abaqus.Material.Elastic.Linear.FailStrain.FailStrain` object.
+    #: A :py:class:`~abaqus.Material.Elastic.Linear.FailStrain.FailStrain` object.
     failStrain: FailStrain = FailStrain(((),))
 
     def __init__(

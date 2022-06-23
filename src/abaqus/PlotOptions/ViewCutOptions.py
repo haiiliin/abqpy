@@ -88,84 +88,84 @@ class ViewCutOptions:
         session.viewports[name].odbDisplay.viewCutOptions
     """
 
-    # A Boolean specifying whether to use the options defined for displaying the model below
-    # the cut. The default value is OFF.
+    #: A Boolean specifying whether to use the options defined for displaying the model below
+    #: the cut. The default value is OFF.
     useBelowOptions: Boolean = OFF
 
-    # A Boolean specifying whether to use the options defined for displaying the model on the
-    # cut. The default value is OFF.
+    #: A Boolean specifying whether to use the options defined for displaying the model on the
+    #: cut. The default value is OFF.
     useOnOptions: Boolean = OFF
 
-    # A Boolean specifying whether to use the options defined for displaying the model above
-    # the cut. The default value is OFF.
+    #: A Boolean specifying whether to use the options defined for displaying the model above
+    #: the cut. The default value is OFF.
     useAboveOptions: Boolean = OFF
 
-    # An Int specifying number of free bodies per view cut. The default value is 1.
+    #: An Int specifying number of free bodies per view cut. The default value is 1.
     numCutFreeBody: int = 1
 
-    # A Boolean specifying whether to display slicing. The default value is OFF.
+    #: A Boolean specifying whether to display slicing. The default value is OFF.
     displaySlicing: Boolean = OFF
 
-    # A Boolean specifying whether to slice at path nodes. The default value is OFF.
+    #: A Boolean specifying whether to slice at path nodes. The default value is OFF.
     slicingAtPathNodes: Boolean = OFF
 
-    # A Boolean specifying whether to put the summation point at the path. The default value
-    # is ON.
+    #: A Boolean specifying whether to put the summation point at the path. The default value
+    #: is ON.
     freeBodySumOnPath: Boolean = ON
 
-    # A Float specifying free body minimum value. The default value is 0.0.
+    #: A Float specifying free body minimum value. The default value is 0.0.
     cutFreeBodyMin: float = 0
 
-    # A Float specifying free body maximum value. The default value is 0.0.
+    #: A Float specifying free body maximum value. The default value is 0.0.
     cutFreeBodyMax: float = 0
 
-    # A SymbolicConstant specifying the domain through which the free body cuts. Possible
-    # values are CURRENT_DISPLAY_GROUP and WHOLE_MODEL. The default value is
-    # CURRENT_DISPLAY_GROUP.
+    #: A SymbolicConstant specifying the domain through which the free body cuts. Possible
+    #: values are CURRENT_DISPLAY_GROUP and WHOLE_MODEL. The default value is
+    #: CURRENT_DISPLAY_GROUP.
     freeBodyCutThru: SymbolicConstant = CURRENT_DISPLAY_GROUP
 
-    # A SymbolicConstant specifying the domain through which the free body steps. Possible
-    # values are ACTIVE_CUT_RANGE and PREDEFINED_PATH. The default value is ACTIVE_CUT_RANGE.
+    #: A SymbolicConstant specifying the domain through which the free body steps. Possible
+    #: values are ACTIVE_CUT_RANGE and PREDEFINED_PATH. The default value is ACTIVE_CUT_RANGE.
     freeBodyStepThru: SymbolicConstant = ACTIVE_CUT_RANGE
 
-    # A SymbolicConstant specifying whether to show the heat flow rate when available.
-    # Possible values are ON and OFF. The default value is ON.
+    #: A SymbolicConstant specifying whether to show the heat flow rate when available.
+    #: Possible values are ON and OFF. The default value is ON.
     showHeatFlowRate: SymbolicConstant = ON
 
-    # A SymbolicConstant specifying the summation location for the free body cut. Possible
-    # values are CENTROID and SPECIFY. The default value is CENTROID.
+    #: A SymbolicConstant specifying the summation location for the free body cut. Possible
+    #: values are CENTROID and SPECIFY. The default value is CENTROID.
     summationLoc: SymbolicConstant = CENTROID
 
-    # A SymbolicConstant specifying the component resolution choice for the free body cut.
-    # Possible values are NORMAL_TANGENTIAL and CSYS. The default value is NORMAL_TANGENTIAL.
+    #: A SymbolicConstant specifying the component resolution choice for the free body cut.
+    #: Possible values are NORMAL_TANGENTIAL and CSYS. The default value is NORMAL_TANGENTIAL.
     componentResolution: SymbolicConstant = NORMAL_TANGENTIAL
 
-    # None or an OptionArg object specifying values to be used for defining the options
-    # applicable on the model below the cut. The default value is None.
+    #: None or an OptionArg object specifying values to be used for defining the options
+    #: applicable on the model below the cut. The default value is None.
     belowOptions: str = None
 
-    # None or an OptionArg object specifying values to be used for defining the options
-    # applicable on the model on the cut. The default value is None.
+    #: None or an OptionArg object specifying values to be used for defining the options
+    #: applicable on the model on the cut. The default value is None.
     onOptions: str = None
 
-    # None or an OptionArg object specifying values to be used for defining the options
-    # applicable on the model above the cut. The default value is None.
+    #: None or an OptionArg object specifying values to be used for defining the options
+    #: applicable on the model above the cut. The default value is None.
     aboveOptions: str = None
 
-    # The SymbolicConstant GLOBAL or a String specifying the coordinate system name for the
-    # free body cut's component resolution. The default value is GLOBAL.
+    #: The SymbolicConstant GLOBAL or a String specifying the coordinate system name for the
+    #: free body cut's component resolution. The default value is GLOBAL.
     csysName: SymbolicConstant = GLOBAL
 
-    # A String specifying the name of the path along which slicing occurs. The default value
-    # is an empty string.
+    #: A String specifying the name of the path along which slicing occurs. The default value
+    #: is an empty string.
     pathName: str = ""
 
-    # A tuple of three Floats specifying the summation point for the free body cut. The
-    # default value is (0, 0, 0).
+    #: A tuple of three Floats specifying the summation point for the free body cut. The
+    #: default value is (0, 0, 0).
     summationPoint: float = None
 
-    # A tuple of three Floats specifying the Y axis for free body component resolution. The
-    # default value is (0, 1, 0).
+    #: A tuple of three Floats specifying the Y axis for free body component resolution. The
+    #: default value is (0, 1, 0).
     yAxis: float = None
 
     def setValues(

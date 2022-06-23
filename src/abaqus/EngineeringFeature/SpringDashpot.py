@@ -25,11 +25,11 @@ class SpringDashpot:
         mdb.models[name].rootAssembly.engineeringFeatures.springDashpots[name]
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str = ""
 
-    # A Boolean specifying whether the spring/dashpot is suppressed or not. The default value
-    # is OFF.
+    #: A Boolean specifying whether the spring/dashpot is suppressed or not. The default value
+    #: is OFF.
     suppressed: Boolean = OFF
 
     def resume(self):

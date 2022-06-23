@@ -45,41 +45,41 @@ class Queue:
         session.queues[name]
     """
 
-    # A String specifying the name of the new Queue object.
+    #: A String specifying the name of the new Queue object.
     name: str
 
-    # A String specifying the name of the remote analysis queue.
+    #: A String specifying the name of the remote analysis queue.
     queueName: str
 
-    # A String specifying the name of the remote host. The default value is an empty string.
+    #: A String specifying the name of the remote host. The default value is an empty string.
     hostName: str = ""
 
-    # A Boolean specifying if the results files are to be copied from the remote machine to
-    # the local machine. The default value is ON.
+    #: A Boolean specifying if the results files are to be copied from the remote machine to
+    #: the local machine. The default value is ON.
     fileCopy: Boolean = ON
 
-    # A String specifying the remote location for the execution of the simulation. The default
-    # value is an empty string.
+    #: A String specifying the remote location for the execution of the simulation. The default
+    #: value is an empty string.
     directory: str = ""
 
-    # A String specifying the designation of the remote driver. The default value is "abaqus".
+    #: A String specifying the designation of the remote driver. The default value is "abaqus".
     driver: str = ""
 
-    # A SymbolicConstant specifying the type of operating system on the remote machine. The
-    # default value is Linux.
+    #: A SymbolicConstant specifying the type of operating system on the remote machine. The
+    #: default value is Linux.
     remotePlatform: SymbolicConstant = "Linux"
 
-    # A list of Strings specifying the files to be copied from the remote location to the
-    # local machine, or ALL. Strings specified in a list are the extensions of the job files
-    # that will be copied, such as ('log', 'dat', 'msg', 'sta', 'odb'). The default value is
-    # ALL.
+    #: A list of Strings specifying the files to be copied from the remote location to the
+    #: local machine, or ALL. Strings specified in a list are the extensions of the job files
+    #: that will be copied, such as ('log', 'dat', 'msg', 'sta', 'odb'). The default value is
+    #: ALL.
     filesToCopy: str = ALL
 
-    # A Boolean specifying whether remote files are to be deleted after they are copied to the
-    # local machine. The default value is OFF.
+    #: A Boolean specifying whether remote files are to be deleted after they are copied to the
+    #: local machine. The default value is OFF.
     deleteAfterCopy: Boolean = OFF
 
-    # A String specifying a description of the queue. The default value is an empty string.
+    #: A String specifying a description of the queue. The default value is an empty string.
     description: str = ""
 
     def __init__(

@@ -152,116 +152,116 @@ class PartBase(Feature):
         mdb.models[name].parts[name]
     """
 
-    # A Boolean specifying the validity of the geometry of the part. The value is computed,
-    # but it can be set to ON to perform feature and mesh operations on an invalid part. There
-    # is no guarantee that such operations will work if the part was originally invalid.
+    #: A Boolean specifying the validity of the geometry of the part. The value is computed,
+    #: but it can be set to ON to perform feature and mesh operations on an invalid part. There
+    #: is no guarantee that such operations will work if the part was originally invalid.
     geometryValidity: Boolean = OFF
 
-    # An Int specifying that feature parameters have been modified but that the part has not
-    # been regenerated. Possible values are 0 and 1.
+    #: An Int specifying that feature parameters have been modified but that the part has not
+    #: been regenerated. Possible values are 0 and 1.
     isOutOfDate: int = None
 
-    # A Float specifying when the part was last modified.
+    #: A Float specifying when the part was last modified.
     timeStamp: float = None
 
-    # A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object specifying all the vertices in the part.
+    #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object specifying all the vertices in the part.
     vertices: VertexArray = VertexArray([])
 
-    # An :py:class:`~abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray` object specifying all the ignored vertices in the part.
+    #: An :py:class:`~abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray` object specifying all the ignored vertices in the part.
     ignoredVertices: IgnoredVertexArray = IgnoredVertexArray()
 
-    # An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object specifying all the edges in the part.
+    #: An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object specifying all the edges in the part.
     edges: EdgeArray = EdgeArray([])
 
-    # An :py:class:`~abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray` object specifying all the ignored edges in the part.
+    #: An :py:class:`~abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray` object specifying all the ignored edges in the part.
     ignoredEdges: IgnoredEdgeArray = IgnoredEdgeArray()
 
-    # A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object specifying all the faces in the part.
+    #: A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object specifying all the faces in the part.
     faces: FaceArray = FaceArray([])
 
-    # A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object specifying all the cells in the part.
+    #: A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object specifying all the cells in the part.
     cells: CellArray = CellArray([])
 
-    # A repository of Feature objects specifying all the features in the part.
+    #: A repository of Feature objects specifying all the features in the part.
     features: dict[str, Feature] = dict[str, Feature]()
 
-    # A repository of Feature objects specifying all Feature objects in the part. The Feature
-    # objects in the featuresById repository are the same as the Feature objects in the
-    # features' repository. However, the key to the objects in the featuresById repository is
-    # an integer specifying the **ID**, whereas the key to the objects in the features
-    # repository is a string specifying the **name**.
+    #: A repository of Feature objects specifying all Feature objects in the part. The Feature
+    #: objects in the featuresById repository are the same as the Feature objects in the
+    #: features' repository. However, the key to the objects in the featuresById repository is
+    #: an integer specifying the **ID**, whereas the key to the objects in the features
+    #: repository is a string specifying the **name**.
     featuresById: dict[str, Feature] = dict[str, Feature]()
 
-    # A repository of Datum objects specifying all the datums in the part.
+    #: A repository of Datum objects specifying all the datums in the part.
     datums: list[Datum] = list[Datum]()
 
-    # A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object specifying all the elements in the part.
+    #: A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object specifying all the elements in the part.
     elements: MeshElementArray = MeshElementArray([])
 
-    # A repository of MeshFace objects specifying all the element faces in the part. For a
-    # given element and a given face index within that element, the corresponding MeshFace
-    # object can be retrieved from the repository by using the key calculated as (i*8 + j),
-    # where i and j are zero-based element and face indices, respectively.
+    #: A repository of MeshFace objects specifying all the element faces in the part. For a
+    #: given element and a given face index within that element, the corresponding MeshFace
+    #: object can be retrieved from the repository by using the key calculated as (i*8 + j),
+    #: where i and j are zero-based element and face indices, respectively.
     elemFaces: dict[str, MeshFace] = dict[str, MeshFace]()
 
-    # A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object specifying all the unique element faces in the part.
+    #: A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object specifying all the unique element faces in the part.
     elementFaces: MeshFaceArray = MeshFaceArray([])
 
-    # A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object specifying all the nodes in the part.
+    #: A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object specifying all the nodes in the part.
     nodes: MeshNodeArray = MeshNodeArray([])
 
-    # A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object specifying all the retained nodes in the substructure part.
+    #: A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object specifying all the retained nodes in the substructure part.
     retainedNodes: MeshNodeArray = MeshNodeArray([])
 
-    # A repository of Set objects specifying for more information, see Set.
+    #: A repository of Set objects specifying for more information, see Set.
     sets: dict[str, Set] = dict[str, Set]()
 
-    # A repository of Set objects specifying the contents of the **allSets** repository is the
-    # same as the contents of the **sets** repository.
+    #: A repository of Set objects specifying the contents of the **allSets** repository is the
+    #: same as the contents of the **sets** repository.
     allSets: dict[str, Set] = dict[str, Set]()
 
-    # A repository of Set objects specifying picked regions.
+    #: A repository of Set objects specifying picked regions.
     allInternalSets: dict[str, Set] = dict[str, Set]()
 
-    # A repository of Surface objects specifying for more information, see Surface.
+    #: A repository of Surface objects specifying for more information, see Surface.
     surfaces: dict[str, Surface] = dict[str, Surface]()
 
-    # A repository of Surface objects specifying the contents of the **allSurfaces** repository
-    # is the same as the contents of the **surfaces** repository.
+    #: A repository of Surface objects specifying the contents of the **allSurfaces** repository
+    #: is the same as the contents of the **surfaces** repository.
     allSurfaces: dict[str, Surface] = dict[str, Surface]()
 
-    # A repository of Surface objects specifying picked regions.
+    #: A repository of Surface objects specifying picked regions.
     allInternalSurfaces: dict[str, Surface] = dict[str, Surface]()
 
-    # A repository of Skin objects specifying the skins created on the part.
+    #: A repository of Skin objects specifying the skins created on the part.
     skins: dict[str, Skin] = dict[str, Skin]()
 
-    # A repository of Stringer objects specifying the stringers created on the part.
+    #: A repository of Stringer objects specifying the stringers created on the part.
     stringers: dict[str, Stringer] = dict[str, Stringer]()
 
-    # A repository of ReferencePoint objects.
+    #: A repository of ReferencePoint objects.
     referencePoints: ReferencePoints = ReferencePoints()
 
-    # An :py:class:`~abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature` object.
+    #: An :py:class:`~abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature` object.
     engineeringFeatures: EngineeringFeature = EngineeringFeature()
 
-    # A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
+    #: A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
     sectionAssignments: SectionAssignmentArray = SectionAssignmentArray()
 
-    # A :py:class:`~abaqus.Property.MaterialOrientationArray.MaterialOrientationArray` object.
+    #: A :py:class:`~abaqus.Property.MaterialOrientationArray.MaterialOrientationArray` object.
     materialOrientations: MaterialOrientationArray = MaterialOrientationArray()
 
-    # A repository of CompositeLayup objects.
+    #: A repository of CompositeLayup objects.
     compositeLayups: dict[str, CompositeLayup] = dict[str, CompositeLayup]()
 
-    # A repository of MeshEdge objects specifying all the element edges in the part. For a
-    # given element and a given edge index on a given face within that element, the
-    # corresponding MeshEdge object can be retrieved from the repository by using the key
-    # calculated as (i*32 + j*4 + k), where i, j, and k are zero-based element, face, and edge
-    # indices, respectively.
+    #: A repository of MeshEdge objects specifying all the element edges in the part. For a
+    #: given element and a given edge index on a given face within that element, the
+    #: corresponding MeshEdge object can be retrieved from the repository by using the key
+    #: calculated as (i*32 + j*4 + k), where i, j, and k are zero-based element, face, and edge
+    #: indices, respectively.
     elemEdges: dict[str, MeshEdge] = dict[str, MeshEdge]()
 
-    # A :py:class:`~abaqus.Mesh.MeshEdgeArray.MeshEdgeArray` object specifying all the unique element edges in the part.
+    #: A :py:class:`~abaqus.Mesh.MeshEdgeArray.MeshEdgeArray` object specifying all the unique element edges in the part.
     elementEdges: MeshEdgeArray = MeshEdgeArray([])
 
     @typing.overload

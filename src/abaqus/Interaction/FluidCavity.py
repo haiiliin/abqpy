@@ -46,35 +46,35 @@ class FluidCavity(Interaction):
     - FLUID CAVITY
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A String specifying the name of the step in which the FluidCavity object is created.
+    #: A String specifying the name of the step in which the FluidCavity object is created.
     createStepName: str
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the fluid cavity reference point.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the fluid cavity reference point.
     cavityPoint: Region
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the surface forming the boundary of the fluid cavity.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the surface forming the boundary of the fluid cavity.
     cavitySurface: Region
 
-    # A String specifying the FluidCavityProperty object associated with this interaction.
+    #: A String specifying the FluidCavityProperty object associated with this interaction.
     interactionProperty: str
 
-    # A Float specifying the magnitude of the ambient pressure. The default value is 0.0.
+    #: A Float specifying the magnitude of the ambient pressure. The default value is 0.0.
     ambientPressure: float = 0
 
-    # A Float specifying the out-of-plane thickness of the surface for two-dimensional models.
-    # This argument is valid only when using two-dimensional models. The default value is 1.0.
+    #: A Float specifying the out-of-plane thickness of the surface for two-dimensional models.
+    #: This argument is valid only when using two-dimensional models. The default value is 1.0.
     thickness: float = 1
 
-    # A Boolean specifying whether adiabatic behavior is assumed for the ideal gas. This
-    # argument is valid only when **interactionProperty** specifies a pneumatic definition. The
-    # default value is OFF.
+    #: A Boolean specifying whether adiabatic behavior is assumed for the ideal gas. This
+    #: argument is valid only when **interactionProperty** specifies a pneumatic definition. The
+    #: default value is OFF.
     useAdiabatic: Boolean = OFF
 
-    # A Boolean specifying whether the analysis will check the consistency of the surface
-    # normals. The default value is ON.
+    #: A Boolean specifying whether the analysis will check the consistency of the surface
+    #: normals. The default value is ON.
     checkNormals: Boolean = ON
 
     def __init__(

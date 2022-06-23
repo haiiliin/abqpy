@@ -32,17 +32,17 @@ class XFEMCrackGrowth(Interaction):
     - ENRICHMENT ACTIVATION
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A String specifying the name of the step in which the XFEMCrackGrowth object is created.
+    #: A String specifying the name of the step in which the XFEMCrackGrowth object is created.
     createStepName: str
 
-    # A String specifying the XFEMCrack object associated with this interaction.
+    #: A String specifying the XFEMCrack object associated with this interaction.
     crackName: str
 
-    # A Boolean specifying whether the crack is allowed to grow (propagate) during this
-    # analysis step. The default value is ON.
+    #: A Boolean specifying whether the crack is allowed to grow (propagate) during this
+    #: analysis step. The default value is ON.
     allowGrowth: Boolean = ON
 
     def __init__(

@@ -43,33 +43,33 @@ class Legend:
         session.xyPlots[name].charts[name].legend
     """
 
-    # A SymbolicConstant specifying how the minimum and maximum values are formatted. Possible
-    # values are AUTOMATIC, DECIMAL, SCIENTIFIC, and ENGINEERING. The default value is
-    # AUTOMATIC.
+    #: A SymbolicConstant specifying how the minimum and maximum values are formatted. Possible
+    #: values are AUTOMATIC, DECIMAL, SCIENTIFIC, and ENGINEERING. The default value is
+    #: AUTOMATIC.
     numberFormat: SymbolicConstant = AUTOMATIC
 
-    # An Int specifying the number of significant digits displayed for the minimum and maximum
-    # values. Possible values are 1 to 7. The default value is 2.
+    #: An Int specifying the number of significant digits displayed for the minimum and maximum
+    #: values. Possible values are 1 to 7. The default value is 2.
     numDigits: int = 2
 
-    # A Boolean specifying whether to show the legend. The default value is ON.
+    #: A Boolean specifying whether to show the legend. The default value is ON.
     show: Boolean = ON
 
-    # A Boolean specifying whether to display the minimum and maximum values. The default
-    # value is OFF.
+    #: A Boolean specifying whether to display the minimum and maximum values. The default
+    #: value is OFF.
     showMinMax: Boolean = OFF
 
-    # An :py:class:`~abaqus.XY.Area.Area` object specifying the area of the legend.
+    #: An :py:class:`~abaqus.XY.Area.Area` object specifying the area of the legend.
     area: Area = Area()
 
-    # A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties used to display the legend text.
+    #: A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties used to display the legend text.
     textStyle: TextStyle = TextStyle()
 
-    # A String specifying the title to appear on the legend. The default value is an empty
-    # string.
+    #: A String specifying the title to appear on the legend. The default value is an empty
+    #: string.
     title: str = ""
 
-    # A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties used to display the legend title.
+    #: A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties used to display the legend title.
     titleStyle: TextStyle = TextStyle()
 
     def setValues(

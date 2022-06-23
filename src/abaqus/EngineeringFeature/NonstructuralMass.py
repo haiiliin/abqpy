@@ -42,25 +42,25 @@ class NonstructuralMass(Inertia):
     - NONSTRUCTURAL MASS
     """
 
-    # A Boolean specifying whether the inertia is suppressed or not. The default value is OFF.
+    #: A Boolean specifying whether the inertia is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the mass is applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the mass is applied.
     region: Region
 
-    # A SymbolicConstant specifying the units used to specify the nonstructural mass. Possible
-    # values are TOTAL_MASS, MASS_PER_VOLUME, MASS_PER_AREA, and MASS_PER_LENGTH.
+    #: A SymbolicConstant specifying the units used to specify the nonstructural mass. Possible
+    #: values are TOTAL_MASS, MASS_PER_VOLUME, MASS_PER_AREA, and MASS_PER_LENGTH.
     units: SymbolicConstant
 
-    # A Float specifying the mass magnitude.
+    #: A Float specifying the mass magnitude.
     magnitude: float
 
-    # A SymbolicConstant specifying the distribution of the nonstructural mass. Possible
-    # values are MASS_PROPORTIONAL and VOLUME_PROPORTIONAL. The default value is
-    # MASS_PROPORTIONAL.The **distribution** argument applies only when **units** = TOTAL_MASS.
+    #: A SymbolicConstant specifying the distribution of the nonstructural mass. Possible
+    #: values are MASS_PROPORTIONAL and VOLUME_PROPORTIONAL. The default value is
+    #: MASS_PROPORTIONAL.The **distribution** argument applies only when **units** = TOTAL_MASS.
     distribution: SymbolicConstant = MASS_PROPORTIONAL
 
     def __init__(

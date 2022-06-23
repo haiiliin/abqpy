@@ -52,46 +52,46 @@ class TurnControl(GeometricRestriction):
         mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
 
-    # A String specifying the geometric restriction repository key.
+    #: A String specifying the geometric restriction repository key.
     name: str
 
-    # A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the direction of the rotation axis as a
-    # vector positioned at the **csys** origin. Instead of through a ConstrainedSketchVertex, each point might be
-    # specified through a tuple of coordinates.
+    #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the direction of the rotation axis as a
+    #: vector positioned at the **csys** origin. Instead of through a ConstrainedSketchVertex, each point might be
+    #: specified through a tuple of coordinates.
     clientDirection: tuple
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
-    # When used with a TopologyTask, there is no default value. When used with a ShapeTask,
-    # the default value is MODEL.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    #: When used with a TopologyTask, there is no default value. When used with a ShapeTask,
+    #: the default value is MODEL.
     region: Region
 
-    # None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
-    # global coordinate system is used. When this member is queried, it returns an Int. The
-    # default value is None.
+    #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
+    #: global coordinate system is used. When this member is queried, it returns an Int. The
+    #: default value is None.
     csys: int = None
 
-    # None or a Region object specifying the main point used when **mainPointDetermination** is
-    # SPECIFY. The default value is None.
+    #: None or a Region object specifying the main point used when **mainPointDetermination** is
+    #: SPECIFY. The default value is None.
     mainPoint: str = None
 
-    # A SymbolicConstant specifying the rule for assigning point priority. Possible values are
-    # MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
+    #: A SymbolicConstant specifying the rule for assigning point priority. Possible values are
+    #: MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
     mainPointDetermination: SymbolicConstant = MAXIMUM
 
-    # A Boolean specifying whether to ignore the geometric restriction in the first design
-    # cycle. The default value is ON.
+    #: A Boolean specifying whether to ignore the geometric restriction in the first design
+    #: cycle. The default value is ON.
     presumeFeasibleRegionAtStart: Boolean = ON
 
-    # A Float specifying the geometric tolerance in the 1-direction. The default value is
-    # 0.01.
+    #: A Float specifying the geometric tolerance in the 1-direction. The default value is
+    #: 0.01.
     tolerance1: float = 0
 
-    # A Float specifying the geometric tolerance in the 2-direction. The default value is
-    # 0.01.
+    #: A Float specifying the geometric tolerance in the 2-direction. The default value is
+    #: 0.01.
     tolerance2: float = 0
 
-    # A Float specifying the geometric tolerance in the 3-direction. The default value is
-    # 0.01.
+    #: A Float specifying the geometric tolerance in the 3-direction. The default value is
+    #: 0.01.
     tolerance3: float = 0
 
     def __init__(

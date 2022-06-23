@@ -37,20 +37,20 @@ class TransverseShearBeam:
     - TRANSVERSE SHEAR STIFFNESS
     """
 
-    # A SymbolicConstant specifying how slenderness compensation factor of the section is
-    # given. Possible values are ANALYSIS_DEFAULT, COMPUTED, and VALUE.
+    #: A SymbolicConstant specifying how slenderness compensation factor of the section is
+    #: given. Possible values are ANALYSIS_DEFAULT, COMPUTED, and VALUE.
     scfDefinition: SymbolicConstant
 
-    # None or a Float specifying the k23 shear stiffness of the section. The default value is
-    # None.
+    #: None or a Float specifying the k23 shear stiffness of the section. The default value is
+    #: None.
     k23: float = None
 
-    # None or a Float specifying the k13 shear stiffness of the section. The default value is
-    # None.
+    #: None or a Float specifying the k13 shear stiffness of the section. The default value is
+    #: None.
     k13: float = None
 
-    # The SymbolicConstant COMPUTED or a Float specifying the slenderness compensation factor
-    # of the section. The default value is 0.25.
+    #: The SymbolicConstant COMPUTED or a Float specifying the slenderness compensation factor
+    #: of the section. The default value is 0.25.
     slendernessCompensation: typing.Union[SymbolicConstant, float] = 0
 
     def __init__(

@@ -59,44 +59,44 @@ class PEGLoadState(LoadState):
     - CLOAD
     """
 
-    # A Float or a Complex specifying the load component at dof 1 of reference node 1.
+    #: A Float or a Complex specifying the load component at dof 1 of reference node 1.
     comp1: float = None
 
-    # A Float or a Complex specifying the load component at dof 1 of reference node 2.
+    #: A Float or a Complex specifying the load component at dof 1 of reference node 2.
     comp2: float = None
 
-    # A Float or a Complex specifying the load component at dof 2 of reference node 2.
+    #: A Float or a Complex specifying the load component at dof 2 of reference node 2.
     comp3: float = None
 
-    # A SymbolicConstant specifying the propagation state of the load component at dof 1 of
-    # reference node 1. Possible values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the load component at dof 1 of
+    #: reference node 1. Possible values are UNSET, SET, UNCHANGED, and FREED.
     comp1State: SymbolicConstant = None
 
-    # A SymbolicConstant specifying the propagation state of the load component at dof 1 of
-    # reference node 2. Possible values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the load component at dof 1 of
+    #: reference node 2. Possible values are UNSET, SET, UNCHANGED, and FREED.
     comp2State: SymbolicConstant = None
 
-    # A SymbolicConstant specifying the propagation state of the load component at dof 2 of
-    # reference node 2. Possible values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the load component at dof 2 of
+    #: reference node 2. Possible values are UNSET, SET, UNCHANGED, and FREED.
     comp3State: SymbolicConstant = None
 
-    # A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible
-    # values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible
+    #: values are UNSET, SET, UNCHANGED, and FREED.
     amplitudeState: SymbolicConstant = None
 
-    # A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-    # values are:
-    # - NOT_YET_ACTIVE
-    # - CREATED
-    # - PROPAGATED
-    # - MODIFIED
-    # - DEACTIVATED
-    # - NO_LONGER_ACTIVE
-    # - TYPE_NOT_APPLICABLE
-    # - INSTANCE_NOT_APPLICABLE
-    # - BUILT_INTO_BASE_STATE
+    #: A SymbolicConstant specifying the propagation state of the LoadState object. Possible
+    #: values are:
+    #: - NOT_YET_ACTIVE
+    #: - CREATED
+    #: - PROPAGATED
+    #: - MODIFIED
+    #: - DEACTIVATED
+    #: - NO_LONGER_ACTIVE
+    #: - TYPE_NOT_APPLICABLE
+    #: - INSTANCE_NOT_APPLICABLE
+    #: - BUILT_INTO_BASE_STATE
     status: SymbolicConstant = None
 
-    # A String specifying the name of the amplitude reference. The String is empty if the load
-    # has no amplitude reference.
+    #: A String specifying the name of the amplitude reference. The String is empty if the load
+    #: has no amplitude reference.
     amplitude: str = ""

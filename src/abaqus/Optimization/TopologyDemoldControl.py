@@ -47,38 +47,38 @@ class TopologyDemoldControl(GeometricRestriction):
         mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
 
-    # A String specifying the geometric restriction repository key.
+    #: A String specifying the geometric restriction repository key.
     name: str
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
-    # When used with a TopologyTask, there is no default value. When used with a ShapeTask,
-    # the default value is MODEL.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    #: When used with a TopologyTask, there is no default value. When used with a ShapeTask,
+    #: the default value is MODEL.
     region: Region
 
-    # None or a DatumCsys object specifying the local coordinate system of the
-    # **pullDirection**. If **csys** = None, the global coordinate system is used. When this member
-    # is queried, it returns an Int indicating the identifier of the DatumCsys. The default
-    # value is None.
+    #: None or a DatumCsys object specifying the local coordinate system of the
+    #: **pullDirection**. If **csys** = None, the global coordinate system is used. When this member
+    #: is queried, it returns an Int indicating the identifier of the DatumCsys. The default
+    #: value is None.
     csys: int = None
 
-    # A Float specifying the draft angle. The default value is 0.0.
+    #: A Float specifying the draft angle. The default value is 0.0.
     draftAngle: float = 0
 
-    # The SymbolicConstant DEMOLD_REGION or a Region object specifying the collision check
-    # region. If the value is DEMOLD_REGION, then the value of **region** is used as both the
-    # demold region and the collision check region. The default value is DEMOLD_REGION.
+    #: The SymbolicConstant DEMOLD_REGION or a Region object specifying the collision check
+    #: region. If the value is DEMOLD_REGION, then the value of **region** is used as both the
+    #: demold region and the collision check region. The default value is DEMOLD_REGION.
     collisionCheckRegion: SymbolicConstant = DEMOLD_REGION
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the point on a plane perpendicular to the pull direction,
-    # used to specify the central plane when **technique** is POINT.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the point on a plane perpendicular to the pull direction,
+    #: used to specify the central plane when **technique** is POINT.
     pointRegion: Region = None
 
-    # A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the demold pull direction. Instead of
-    # through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates.
+    #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the demold pull direction. Instead of
+    #: through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates.
     pullDirection: tuple = ()
 
-    # A SymbolicConstant specifying the demold technique. Possible values are AUTO,
-    # AUTO_TIGHT, POINT, SURFACE, and STAMP. The default value is AUTO.
+    #: A SymbolicConstant specifying the demold technique. Possible values are AUTO,
+    #: AUTO_TIGHT, POINT, SURFACE, and STAMP. The default value is AUTO.
     technique: SymbolicConstant = AUTO
 
     def __init__(

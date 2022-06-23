@@ -21,7 +21,7 @@ class RayleighDampingByFrequency:
         mdb.models[name].steps[name].rayleighDampingByFrequency
     """
 
-    # A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponentArray.RayleighDampingByFrequencyComponentArray` object.
+    #: A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponentArray.RayleighDampingByFrequencyComponentArray` object.
     components: RayleighDampingByFrequencyComponentArray = (
         RayleighDampingByFrequencyComponentArray()
     )

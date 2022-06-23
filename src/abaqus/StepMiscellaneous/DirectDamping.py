@@ -19,5 +19,5 @@ class DirectDamping:
         mdb.models[name].steps[name].directDamping
     """
 
-    # A :py:class:`~abaqus.StepMiscellaneous.DirectDampingComponentArray.DirectDampingComponentArray` object.
+    #: A :py:class:`~abaqus.StepMiscellaneous.DirectDampingComponentArray.DirectDampingComponentArray` object.
     components: DirectDampingComponentArray = DirectDampingComponentArray()

@@ -164,177 +164,177 @@ class ModelBase:
     - PHYSICAL CONSTANTS
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str = ""
 
-    # None or a Float specifying the Stefan-Boltzmann constant. The default value is None.
+    #: None or a Float specifying the Stefan-Boltzmann constant. The default value is None.
     stefanBoltzmann: float = None
 
-    # None or a Float specifying the absolute zero constant. The default value is None.
+    #: None or a Float specifying the absolute zero constant. The default value is None.
     absoluteZero: float = None
 
-    # A SymbolicConstant specifying the type of incident wave formulation to be used in
-    # acoustic problems. Possible values are NOT_SET, SCATTERED, and TOTAL. The default value
-    # is NOT_SET.
+    #: A SymbolicConstant specifying the type of incident wave formulation to be used in
+    #: acoustic problems. Possible values are NOT_SET, SCATTERED, and TOTAL. The default value
+    #: is NOT_SET.
     waveFormulation: SymbolicConstant = NOT_SET
 
-    # None or a Float specifying the universal gas constant. The default value is None.
+    #: None or a Float specifying the universal gas constant. The default value is None.
     universalGas: float = None
 
-    # A Boolean specifying whether an input file should be written without parts and
-    # assemblies. The default value is OFF.
+    #: A Boolean specifying whether an input file should be written without parts and
+    #: assemblies. The default value is OFF.
     noPartsInputFile: Boolean = OFF
 
-    # An Int specifying the increment, interval, iteration or cycle where the restart analysis
-    # will start. To select the end of the step use the SymbolicConstant STEP_END.
+    #: An Int specifying the increment, interval, iteration or cycle where the restart analysis
+    #: will start. To select the end of the step use the SymbolicConstant STEP_END.
     restartIncrement: SymbolicConstant = None
 
-    # A Boolean specifying that the step specified by **restartStep** should be terminated at
-    # the increment specified by **restartIncrement**.
+    #: A Boolean specifying that the step specified by **restartStep** should be terminated at
+    #: the increment specified by **restartIncrement**.
     endRestartStep: Boolean = OFF
 
-    # A Boolean specifying that a shell global model drives a solid submodel.
+    #: A Boolean specifying that a shell global model drives a solid submodel.
     shellToSolid: Boolean = OFF
 
-    # A Float specifying the time stamp that indicates when the model was last changed.
+    #: A Float specifying the time stamp that indicates when the model was last changed.
     lastChangedCount: float = None
 
-    # A String specifying the purpose and contents of the Model object. The default value is
-    # an empty string.
+    #: A String specifying the purpose and contents of the Model object. The default value is
+    #: an empty string.
     description: str = ""
 
-    # A String specifying the name of the job that generated the restart data.
+    #: A String specifying the name of the job that generated the restart data.
     restartJob: str = ""
 
-    # A String specifying the name of the step where the restart analysis will start.
+    #: A String specifying the name of the step where the restart analysis will start.
     restartStep: str = ""
 
-    # A String specifying the name of the job that generated the results for the global model.
+    #: A String specifying the name of the job that generated the results for the global model.
     globalJob: str = ""
 
-    # A boolean specifying the status of constraints created in a model, in the model which
-    # instances this model.
+    #: A boolean specifying the status of constraints created in a model, in the model which
+    #: instances this model.
     copyConstraints: Boolean = OFF
 
-    # A boolean specifying the status of connectors created in a model, in the model which
-    # instances this model.
+    #: A boolean specifying the status of connectors created in a model, in the model which
+    #: instances this model.
     copyConnectors: Boolean = OFF
 
-    # A boolean specifying the status of interactions created in a model, in the model which
-    # instances this model.
+    #: A boolean specifying the status of interactions created in a model, in the model which
+    #: instances this model.
     copyInteractions: Boolean = OFF
 
-    # A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object.
+    #: A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object.
     keywordBlock: KeywordBlock = KeywordBlock()
 
-    # An :py:class:`~abaqus.Assembly.Assembly.Assembly` object.
+    #: An :py:class:`~abaqus.Assembly.Assembly.Assembly` object.
     rootAssembly: Assembly = Assembly()
 
-    # A repository of Amplitude objects.
+    #: A repository of Amplitude objects.
     amplitudes: dict[str, Amplitude] = dict[str, Amplitude]()
 
-    # A repository of Profile objects.
+    #: A repository of Profile objects.
     profiles: dict[str, Profile] = dict[str, Profile]()
 
-    # A repository of BoundaryCondition objects.
+    #: A repository of BoundaryCondition objects.
     boundaryConditions: dict[str, BoundaryCondition] = dict[str, BoundaryCondition]()
 
-    # A repository of ConstrainedSketchConstraint objects.
+    #: A repository of ConstrainedSketchConstraint objects.
     constraints: dict[str, Constraint] = dict[str, Constraint]()
 
-    # A repository of AnalyticalField objects.
+    #: A repository of AnalyticalField objects.
     analyticalFields: dict[str, AnalyticalField] = dict[str, AnalyticalField]()
 
-    # A repository of DiscreteField objects.
+    #: A repository of DiscreteField objects.
     discreteFields: dict[str, DiscreteField] = dict[str, DiscreteField]()
 
-    # A repository of PredefinedField objects.
+    #: A repository of PredefinedField objects.
     predefinedFields: dict[str, PredefinedField] = dict[str, PredefinedField]()
 
-    # A repository of Interaction objects.
+    #: A repository of Interaction objects.
     interactions: dict[str, Interaction] = dict[str, Interaction]()
 
-    # A repository of InteractionProperty objects.
+    #: A repository of InteractionProperty objects.
     interactionProperties: dict[str, ContactProperty] = dict[str, ContactProperty]()
 
-    # A repository of ContactControl objects.
+    #: A repository of ContactControl objects.
     contactControls: dict[str, ContactControl] = dict[str, ContactControl]()
 
-    # A repository of ContactInitialization objects.
+    #: A repository of ContactInitialization objects.
     contactInitializations: dict[str, ContactInitialization] = dict[
         str, ContactInitialization
     ]()
 
-    # A repository of ContactStabilization objects.
+    #: A repository of ContactStabilization objects.
     contactStabilizations: dict[str, ContactStabilization] = dict[
         str, ContactStabilization
     ]()
 
-    # A tuple of tuples of Strings specifying the linked child PartInstance name in the
-    # current model to the corresponding parent PartInstance name in a different model.
+    #: A tuple of tuples of Strings specifying the linked child PartInstance name in the
+    #: current model to the corresponding parent PartInstance name in a different model.
     linkedInstances: tuple = ()
 
-    # A tuple of tuples of Strings specifying the linked child Part name in the current model
-    # to the corresponding parent Part name in a different model.
+    #: A tuple of tuples of Strings specifying the linked child Part name in the current model
+    #: to the corresponding parent Part name in a different model.
     linkedParts: tuple = ()
 
-    # A repository of Load objects.
+    #: A repository of Load objects.
     loads: dict[str, Load] = dict[str, Load]()
 
-    # A repository of Material objects.
+    #: A repository of Material objects.
     materials: dict[str, Material] = dict[str, Material]()
 
-    # A repository of Calibration objects.
+    #: A repository of Calibration objects.
     calibrations: dict[str, Calibration] = dict[str, Calibration]()
 
-    # A repository of Section objects.
+    #: A repository of Section objects.
     sections: dict[str, Section] = dict[str, Section]()
 
-    # A repository of RemeshingRule objects.
+    #: A repository of RemeshingRule objects.
     remeshingRules: dict[str, RemeshingRule] = dict[str, RemeshingRule]()
 
-    # A repository of ConstrainedSketch objects.
+    #: A repository of ConstrainedSketch objects.
     sketches: dict[str, ConstrainedSketch] = dict[str, ConstrainedSketch]()
 
-    # A repository of Part objects.
+    #: A repository of Part objects.
     parts: dict[str, Part] = dict[str, Part]()
 
-    # A repository of Step objects.
+    #: A repository of Step objects.
     steps: dict[str, Step] = dict[str, Step]()
 
-    # A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object.
+    #: A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object.
     featureOptions: FeatureOptions = FeatureOptions()
 
-    # A repository of AdaptiveMeshConstraint objects.
+    #: A repository of AdaptiveMeshConstraint objects.
     adaptiveMeshConstraints: dict[str, AdaptiveMeshConstraint] = dict[
         str, AdaptiveMeshConstraint
     ]()
 
-    # A repository of AdaptiveMeshControl objects.
+    #: A repository of AdaptiveMeshControl objects.
     adaptiveMeshControls: dict[str, AdaptiveMeshControl] = dict[
         str, AdaptiveMeshControl
     ]()
 
-    # A repository of TimePoint objects.
+    #: A repository of TimePoint objects.
     timePoints: dict[str, TimePoint] = dict[str, TimePoint]()
 
-    # A repository of Filter objects.
+    #: A repository of Filter objects.
     filters: dict[str, Filter] = dict[str, Filter]()
 
-    # A repository of IntegratedOutputSection objects.
+    #: A repository of IntegratedOutputSection objects.
     integratedOutputSections: dict[str, IntegratedOutputSection] = dict[
         str, IntegratedOutputSection
     ]()
 
-    # A repository of FieldOutputRequest objects.
+    #: A repository of FieldOutputRequest objects.
     fieldOutputRequests: dict[str, FieldOutputRequest] = dict[str, FieldOutputRequest]()
 
-    # A repository of HistoryOutputRequest objects.
+    #: A repository of HistoryOutputRequest objects.
     historyOutputRequests: dict[str, HistoryOutputRequest] = dict[
         str, HistoryOutputRequest
     ]()
 
-    # A repository of OptimizationTask objects.
+    #: A repository of OptimizationTask objects.
     optimizationTasks: dict[str, OptimizationTask] = dict[str, OptimizationTask]()
 
     def __init__(

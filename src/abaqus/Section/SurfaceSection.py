@@ -36,18 +36,18 @@ class SurfaceSection(Section):
     - SURFACE SECTION
     """
 
-    # A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object specifying reinforcement properties.
+    #: A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object specifying reinforcement properties.
     rebarLayers: RebarLayers = None
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A Boolean specifying whether or not to use the value of **density**. The default value is
-    # OFF.
+    #: A Boolean specifying whether or not to use the value of **density**. The default value is
+    #: OFF.
     useDensity: Boolean = OFF
 
-    # A Float specifying the value of density to apply to this section. The default value is
-    # 0.0.
+    #: A Float specifying the value of density to apply to this section. The default value is
+    #: 0.0.
     density: float = 0
 
     def __init__(self, name: str, useDensity: Boolean = OFF, density: float = 0):

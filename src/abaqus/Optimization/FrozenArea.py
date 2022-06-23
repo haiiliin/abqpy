@@ -25,12 +25,12 @@ class FrozenArea(GeometricRestriction):
         mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
 
-    # A String specifying the geometric restriction repository key.
+    #: A String specifying the geometric restriction repository key.
     name: str
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
-    # When used with a TopologyTask, there is no default value. When used with a ShapeTask,
-    # the default value is MODEL.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    #: When used with a TopologyTask, there is no default value. When used with a ShapeTask,
+    #: the default value is MODEL.
     region: Region = Region()
 
     def __init__(self, name: str, region: Region = Region()):

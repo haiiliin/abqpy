@@ -37,22 +37,22 @@ class NumberFormat:
         session.journalOptions.geometryFormat
     """
 
-    # A Boolean specifying whether the printed digits should be padded with blank characters
-    # to ensure equal sized fields. The **blankPad** argument is useful when your printed output
-    # includes columns. The default value is ON.
+    #: A Boolean specifying whether the printed digits should be padded with blank characters
+    #: to ensure equal sized fields. The **blankPad** argument is useful when your printed output
+    #: includes columns. The default value is ON.
     blankPad: Boolean = ON
 
-    # A SymbolicConstant specifying the formatting type. Possible values are ENGINEERING,
-    # SCIENTIFIC, and AUTOMATIC. The default value is ENGINEERING.
+    #: A SymbolicConstant specifying the formatting type. Possible values are ENGINEERING,
+    #: SCIENTIFIC, and AUTOMATIC. The default value is ENGINEERING.
     format: SymbolicConstant = ENGINEERING
 
-    # An Int specifying the number of digits to be displayed in the result. **numDigits** >0>0.
-    # The default value is 6.
+    #: An Int specifying the number of digits to be displayed in the result. **numDigits** >0>0.
+    #: The default value is 6.
     numDigits: int = 6
 
-    # An Int specifying the number of decimal places to which the number is to be truncated
-    # for display. **precision** ≤0≤0. If **precision** =0, no truncation is applied. The default
-    # value is 0.
+    #: An Int specifying the number of decimal places to which the number is to be truncated
+    #: for display. **precision** ≤0≤0. If **precision** =0, no truncation is applied. The default
+    #: value is 0.
     precision: int = 0
 
     def __init__(

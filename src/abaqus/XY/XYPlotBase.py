@@ -33,21 +33,21 @@ class XYPlotBase:
         session.xyPlots[name]
     """
 
-    # An :py:class:`~abaqus.XY.Area.Area` object specifying position, padding, background and borders of the XYPlot
-    # object.
+    #: An :py:class:`~abaqus.XY.Area.Area` object specifying position, padding, background and borders of the XYPlot
+    #: object.
     area: Area = Area()
 
-    # A :py:class:`~abaqus.XY.Title.Title` object specifying the title of the XYPlot object.
+    #: A :py:class:`~abaqus.XY.Title.Title` object specifying the title of the XYPlot object.
     title: Title = Title()
 
-    # A repository of Chart objects.
+    #: A repository of Chart objects.
     charts: dict[str, Chart] = dict[str, Chart]()
 
-    # A repository of XYCurve objects.
+    #: A repository of XYCurve objects.
     curves: dict[str, XYCurve] = dict[str, XYCurve]()
 
-    # A tuple of Floats specifying a transformation matrix used to scale or pan along the axes
-    # of the active Chart object of this XYPlot.
+    #: A tuple of Floats specifying a transformation matrix used to scale or pan along the axes
+    #: of the active Chart object of this XYPlot.
     transform: float = None
 
     def __init__(self, name: str):

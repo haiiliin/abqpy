@@ -49,33 +49,33 @@ class GasketSection(Section):
     - GASKET SECTION
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A String specifying the name of the material of which the gasket is made or material
-    # that defines gasket behavior.
+    #: A String specifying the name of the material of which the gasket is made or material
+    #: that defines gasket behavior.
     material: str
 
-    # A Float specifying the cross-sectional area, width, or out-of-plane thickness, if
-    # applicable, depending on the gasket element type. The default value is 1.0.
+    #: A Float specifying the cross-sectional area, width, or out-of-plane thickness, if
+    #: applicable, depending on the gasket element type. The default value is 1.0.
     crossSection: float = 1
 
-    # A Float specifying the initial gap. The default value is 0.0.
+    #: A Float specifying the initial gap. The default value is 0.0.
     initialGap: float = 0
 
-    # The SymbolicConstant DEFAULT or a Float specifying the initial gasket thickness. If
-    # DEFAULT is specified, the initial thickness is determined using nodal coordinates. The
-    # default value is DEFAULT.
+    #: The SymbolicConstant DEFAULT or a Float specifying the initial gasket thickness. If
+    #: DEFAULT is specified, the initial thickness is determined using nodal coordinates. The
+    #: default value is DEFAULT.
     initialThickness: typing.Union[SymbolicConstant, float] = DEFAULT
 
-    # A Float specifying the initial void. The default value is 0.0.
+    #: A Float specifying the initial void. The default value is 0.0.
     initialVoid: float = 0
 
-    # The SymbolicConstant DEFAULT or a Float specifying the default stabilization stiffness
-    # used in all but link elements to stabilize gasket elements that are not supported at all
-    # nodes, such as those that extend outside neighboring components. If DEFAULT is
-    # specified, a value is used equal to 10-9 times the initial compressive stiffness in the
-    # thickness direction. The default value is DEFAULT.
+    #: The SymbolicConstant DEFAULT or a Float specifying the default stabilization stiffness
+    #: used in all but link elements to stabilize gasket elements that are not supported at all
+    #: nodes, such as those that extend outside neighboring components. If DEFAULT is
+    #: specified, a value is used equal to 10-9 times the initial compressive stiffness in the
+    #: thickness direction. The default value is DEFAULT.
     stabilizationStiffness: typing.Union[SymbolicConstant, float] = DEFAULT
 
     def __init__(

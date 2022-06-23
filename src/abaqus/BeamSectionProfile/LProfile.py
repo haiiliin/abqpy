@@ -38,23 +38,23 @@ class LProfile(Profile):
     - BEAM SECTION
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A positive Float specifying the **a** dimension (flange length) of the L profile. For more
-    # information, see [Beam cross-section
-    # library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all).
+    #: A positive Float specifying the **a** dimension (flange length) of the L profile. For more
+    #: information, see [Beam cross-section
+    #: library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all).
     a: float
 
-    # A positive Float specifying the **b** dimension (flange length) of the L profile.
+    #: A positive Float specifying the **b** dimension (flange length) of the L profile.
     b: float
 
-    # A positive Float specifying the **t1** dimension (flange thickness) of the L profile (*t1
-    # < b*).
+    #: A positive Float specifying the **t1** dimension (flange thickness) of the L profile (*t1
+    #: < b*).
     t1: float
 
-    # A positive Float specifying the **t2** dimension (flange thickness) of the L profile (*t2<
-    # a*).
+    #: A positive Float specifying the **t2** dimension (flange thickness) of the L profile (*t2<
+    #: a*).
     t2: float
 
     def __init__(self, name: str, a: float, b: float, t1: float, t2: float):

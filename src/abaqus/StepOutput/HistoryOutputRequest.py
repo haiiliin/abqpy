@@ -44,22 +44,22 @@ class HistoryOutputRequest:
             - RADIATION OUTPUT
     """
 
-    # A String specifying a bolt load from which output is requested. The default value is an
-    # empty string.
+    #: A String specifying a bolt load from which output is requested. The default value is an
+    #: empty string.
     boltLoad: str = ""
 
-    # The SymbolicConstant MODEL or a Region object specifying the region from which output is
-    # requested. The SymbolicConstant MODEL represents the whole model. The default value is
-    # MODEL.If the region is a surface region, the surface must lie within the general contact
-    # surface domain.
+    #: The SymbolicConstant MODEL or a Region object specifying the region from which output is
+    #: requested. The SymbolicConstant MODEL represents the whole model. The default value is
+    #: MODEL.If the region is a surface region, the surface must lie within the general contact
+    #: surface domain.
     region: SymbolicConstant = MODEL
 
-    # The SymbolicConstant DEFAULT or a tuple of Ints specifying the section points for which
-    # output is requested. The default value is DEFAULT.
+    #: The SymbolicConstant DEFAULT or a tuple of Ints specifying the section points for which
+    #: output is requested. The default value is DEFAULT.
     sectionPoints: SymbolicConstant = DEFAULT
 
-    # None or a tuple of Strings specifying the interaction names. The default value is
-    # None.The sequence can contain only one String.
+    #: None or a tuple of Strings specifying the interaction names. The default value is
+    #: None.The sequence can contain only one String.
     interactions: tuple = None
 
     def __init__(

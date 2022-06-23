@@ -39,16 +39,16 @@ class FieldOutputRequest:
             - RADIATION OUTPUT
     """
 
-    # A String specifying a bolt load from which output is requested.
+    #: A String specifying a bolt load from which output is requested.
     boltLoad: str = ""
 
-    # The SymbolicConstant MODEL or a Region object specifying the region from which output is
-    # requested. The SymbolicConstant MODEL represents the whole model. The default value is
-    # MODEL.
+    #: The SymbolicConstant MODEL or a Region object specifying the region from which output is
+    #: requested. The SymbolicConstant MODEL represents the whole model. The default value is
+    #: MODEL.
     region: SymbolicConstant = MODEL
 
-    # None or a tuple of Strings specifying the interaction names. The default value is
-    # None.The sequence can contain only one String.
+    #: None or a tuple of Strings specifying the interaction names. The default value is
+    #: None.The sequence can contain only one String.
     interactions: tuple = None
 
     def __init__(

@@ -20,7 +20,7 @@ class Annotation:
         session.viewports[name].annotationsToPlot[i]
     """
 
-    # A String specifying the annotation repository key.
+    #: A String specifying the annotation repository key.
     name: str = ""
 
     def bringToFront(self):

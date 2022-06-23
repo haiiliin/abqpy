@@ -53,24 +53,24 @@ class Face:
         mdb.models[name].rootAssembly.surfaces[name].faces[i]
     """
 
-    # An Int specifying the index of the face in the FaceArray.
+    #: An Int specifying the index of the face in the FaceArray.
     index: int = None
 
-    # A Boolean specifying whether the face belongs to the reference representation of the
-    # Part or Instance.
+    #: A Boolean specifying whether the face belongs to the reference representation of the
+    #: Part or Instance.
     isReferenceRep: Boolean = OFF
 
-    # A tuple of tuples of Floats specifying the coordinates. For a face of a shell **pointOn**
-    # specifies the **X**-, **Y**-, and **Z**-coordinates of a point located on the face and the
-    # **X**-, **Y**-, and **Z**-components of the normal to the face.For a face of a solid **pointOn**
-    # specifies the **X**-, **Y**-, and **Z**-coordinates of a point located on the face.
+    #: A tuple of tuples of Floats specifying the coordinates. For a face of a shell **pointOn**
+    #: specifies the **X**-, **Y**-, and **Z**-coordinates of a point located on the face and the
+    #: **X**-, **Y**-, and **Z**-components of the normal to the face.For a face of a solid **pointOn**
+    #: specifies the **X**-, **Y**-, and **Z**-coordinates of a point located on the face.
     pointOn: float = None
 
-    # A tuple of Floats specifying the name of the feature that created this face.
+    #: A tuple of Floats specifying the name of the feature that created this face.
     featureName: float = None
 
-    # A tuple of Floats specifying the name of the part instance for this face (if
-    # applicable).
+    #: A tuple of Floats specifying the name of the part instance for this face (if
+    #: applicable).
     instanceName: float = None
 
     def getCentroid(self):

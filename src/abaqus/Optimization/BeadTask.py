@@ -95,105 +95,105 @@ class BeadTask(OptimizationTask):
         mdb.models[name].optimizationTasks[name]
     """
 
-    # A repository of DesignResponse objects.
+    #: A repository of DesignResponse objects.
     designResponses: dict[str, DesignResponse] = dict[str, DesignResponse]()
 
-    # A repository of ObjectiveFunction objects.
+    #: A repository of ObjectiveFunction objects.
     objectiveFunctions: dict[str, ObjectiveFunction] = dict[str, ObjectiveFunction]()
 
-    # A repository of OptimizationConstraint objects.
+    #: A repository of OptimizationConstraint objects.
     optimizationConstraints: dict[str, OptimizationConstraint] = dict[
         str, OptimizationConstraint
     ]()
 
-    # A repository of GeometricRestriction objects.
+    #: A repository of GeometricRestriction objects.
     geometricRestrictions: dict[str, GeometricRestriction] = dict[
         str, GeometricRestriction
     ]()
 
-    # A String specifying the optimization task repository key.
+    #: A String specifying the optimization task repository key.
     name: str
 
-    # A SymbolicConstant specifying the optimization task algorithm. Possible values are
-    # GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is
-    # GENERAL_OPTIMIZATION.
+    #: A SymbolicConstant specifying the optimization task algorithm. Possible values are
+    #: GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is
+    #: GENERAL_OPTIMIZATION.
     algorithm: SymbolicConstant = GENERAL_OPTIMIZATION
 
-    # A Boolean specifying whether to exclude elements with boundary conditions from the
-    # optimization. The default value is OFF.
+    #: A Boolean specifying whether to exclude elements with boundary conditions from the
+    #: optimization. The default value is OFF.
     areBCRegionsFrozen: Boolean = OFF
 
-    # An int specifying the step size of the optimization. The default value is 1.
+    #: An int specifying the step size of the optimization. The default value is 1.
     beadIter: str = 1
 
-    # A float specifying maximum membrane/bending stress. The default value is 0.1.
+    #: A float specifying maximum membrane/bending stress. The default value is 0.1.
     beadMaxMembraneStress: str = 0
 
-    # A float specifying minimum stress. The default value is 0.001.
+    #: A float specifying minimum stress. The default value is 0.001.
     beadMinStress: str = 0
 
-    # A Sets perturbation size for finite differences. The default value is 0.0001.
+    #: A Sets perturbation size for finite differences. The default value is 0.0001.
     beadPerturbation: str = 0
 
-    # A SymbolicConstant specifying the Optimization product default or a float specifying the
-    # bead width. The default value is DEFAULT.
+    #: A SymbolicConstant specifying the Optimization product default or a float specifying the
+    #: bead width. The default value is DEFAULT.
     beadWidth: SymbolicConstant = DEFAULT
 
-    # A float specifying relative value to the middle element edge length such that normals in
-    # this area do not cross each other. The default value is 5.
+    #: A float specifying relative value to the middle element edge length such that normals in
+    #: this area do not cross each other. The default value is 5.
     curveSmooth: str = 5
 
-    # A float specifying the filter radius. The default value is 4.
+    #: A float specifying the filter radius. The default value is 4.
     filterRadius: str = 4
 
-    # A SymbolicConstant specifying the method used to define filter radius. Possible values
-    # are VALUE and REFERENCE. The default is VALUE.
+    #: A SymbolicConstant specifying the method used to define filter radius. Possible values
+    #: are VALUE and REFERENCE. The default is VALUE.
     filterRadiusBy: SymbolicConstant = VALUE
 
-    # A Boolean specifying whether the growth direction is along the normal direction of
-    # elements or opposite to the normal direction. The default value is OFF
+    #: A Boolean specifying whether the growth direction is along the normal direction of
+    #: elements or opposite to the normal direction. The default value is OFF
     flipNormalDir: Boolean = OFF
 
-    # When nodes with boundary conditions are excluded from the optimization
-    # (*frozenBoundaryConditionRegions* = ON). you can specify that this exclusion apply to
-    # nodes throughout the model or only to those nodes from a specific region. Set this
-    # parameter to the SymbolicConstant MODEL to apply the freeze to the entire model, or set
-    # this parameter to a Region object to specify an individual region over which nodes with
-    # boundary conditions should be frozen. The default value is MODEL.
+    #: When nodes with boundary conditions are excluded from the optimization
+    #: (*frozenBoundaryConditionRegions* = ON). you can specify that this exclusion apply to
+    #: nodes throughout the model or only to those nodes from a specific region. Set this
+    #: parameter to the SymbolicConstant MODEL to apply the freeze to the entire model, or set
+    #: this parameter to a Region object to specify an individual region over which nodes with
+    #: boundary conditions should be frozen. The default value is MODEL.
     frozenBoundaryConditionRegion: SymbolicConstant = MODEL
 
-    # A Boolean specifying whether to calculate the sensitivities only on design nodes or the
-    # whole model. The default value is ON
+    #: A Boolean specifying whether to calculate the sensitivities only on design nodes or the
+    #: whole model. The default value is ON
     isSensCalcOnlyOnDesignNodes: Boolean = OFF
 
-    # The SymbolicConstant MODEL or a Region object specifying the region to use for mode
-    # tracking. The default value is MODEL.
+    #: The SymbolicConstant MODEL or a Region object specifying the region to use for mode
+    #: tracking. The default value is MODEL.
     modeTrackingRegion: SymbolicConstant = MODEL
 
-    # A Float specifying the maximum change in nodal displacement per design cycle. The
-    # default value is 0.1.
+    #: A Float specifying the maximum change in nodal displacement per design cycle. The
+    #: default value is 0.1.
     nodalMoveLimit: float = 0
 
-    # A SymbolicConstant specifying the Optimization product default or a float specifying the
-    # node smooth. The default value is DEFAULT.
+    #: A SymbolicConstant specifying the Optimization product default or a float specifying the
+    #: node smooth. The default value is DEFAULT.
     nodeSmooth: SymbolicConstant = DEFAULT
 
-    # A SymbolicConstant specifying the strategy for how the nodal displacements are updated
-    # in the method of moving asymptotes. Possible values are NORMAL, CONSERVATIVE, and
-    # AGGRESSIVE. The default value is CONSERVATIVE.
+    #: A SymbolicConstant specifying the strategy for how the nodal displacements are updated
+    #: in the method of moving asymptotes. Possible values are NORMAL, CONSERVATIVE, and
+    #: AGGRESSIVE. The default value is CONSERVATIVE.
     nodeUpdateStrategy: SymbolicConstant = CONSERVATIVE
 
-    # An Int specifying the number of modes included in mode tracking. The default value is 5.
+    #: An Int specifying the number of modes included in mode tracking. The default value is 5.
     numTrackedModes: int = 5
 
-    # A SymbolicConstant specifying whether to update shape basis vectors in the first design
-    # cycle or every design cycle. Possible values are EVERY_CYCLE and FIRST_CYCLE. The
-    # default value is EVERY_CYCLE.
+    #: A SymbolicConstant specifying whether to update shape basis vectors in the first design
+    #: cycle or every design cycle. Possible values are EVERY_CYCLE and FIRST_CYCLE. The
+    #: default value is EVERY_CYCLE.
     updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE
 
-    # A Boolean specifying whether the group in the design response will be evaluated using
-    # the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
-    # value of False means that the existing algorithm will be used.
+    #: A Boolean specifying whether the group in the design response will be evaluated using
+    #: the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
+    #: value of False means that the existing algorithm will be used.
     groupOperator: Boolean = OFF
 
     def __init__(

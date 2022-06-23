@@ -32,19 +32,19 @@ class PenetrationCheck(GeometricRestriction):
         mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
 
-    # A String specifying the geometric restriction repository key.
+    #: A String specifying the geometric restriction repository key.
     name: str
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the penetration check region.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the penetration check region.
     penetrationCheckRegion: Region
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
-    # When used with a TopologyTask, there is no default value. When used with a ShapeTask,
-    # the default value is MODEL.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    #: When used with a TopologyTask, there is no default value. When used with a ShapeTask,
+    #: the default value is MODEL.
     region: Region
 
-    # A Boolean specifying whether to ignore the geometric restriction in the first design
-    # cycle. The default value is ON.
+    #: A Boolean specifying whether to ignore the geometric restriction in the first design
+    #: cycle. The default value is ON.
     presumeFeasibleRegionAtStart: Boolean = ON
 
     def __init__(

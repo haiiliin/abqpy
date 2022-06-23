@@ -52,32 +52,32 @@ class ModelInstance:
         mdb.models[name].rootAssembly.modelInstances[i]
     """
 
-    # A repository of Set objects specifying the sets created on the assembly. For more
-    # information, see [Region
-    # commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
+    #: A repository of Set objects specifying the sets created on the assembly. For more
+    #: information, see [Region
+    #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
     sets: dict[str, Set] = dict[str, Set]()
 
-    # A repository of Surface objects specifying the surfaces created on the assembly. For
-    # more information, see [Region
-    # commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
+    #: A repository of Surface objects specifying the surfaces created on the assembly. For
+    #: more information, see [Region
+    #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
     surfaces: dict[str, Surface] = dict[str, Surface]()
 
-    # A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object.
+    #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object.
     vertices: VertexArray = VertexArray([])
 
-    # An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
+    #: An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
     edges: EdgeArray = EdgeArray([])
 
-    # A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
+    #: A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
     elements: MeshElementArray = MeshElementArray([])
 
-    # A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object.
+    #: A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object.
     nodes: MeshNodeArray = MeshNodeArray([])
 
-    # A repository of Datum objects.
+    #: A repository of Datum objects.
     datums: dict[str, Datum] = dict[str, Datum]()
 
-    # A repository of ReferencePoint objects.
+    #: A repository of ReferencePoint objects.
     referencePoints: dict[str, ReferencePoint] = dict[str, ReferencePoint]()
 
     def __init__(self, name: str, model: Model, autoOffset: Boolean = OFF):

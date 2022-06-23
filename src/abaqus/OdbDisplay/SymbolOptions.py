@@ -156,164 +156,164 @@ class SymbolOptions(DGSymbolOptions):
         session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.symbolOptions
     """
 
-    # A SymbolicConstant specifying the vector quantity to display. Possible values are
-    # RESULTANT and VECTOR_COMPONENT. The default value is RESULTANT.
+    #: A SymbolicConstant specifying the vector quantity to display. Possible values are
+    #: RESULTANT and VECTOR_COMPONENT. The default value is RESULTANT.
     vectorQuantity: SymbolicConstant = RESULTANT
 
-    # A Boolean specifying whether the maximum vector value is to be computed automatically.
-    # The default value is ON.
+    #: A Boolean specifying whether the maximum vector value is to be computed automatically.
+    #: The default value is ON.
     vectorMaxValueAutoCompute: Boolean = ON
 
-    # A Float specifying the user-specified maximum vector value. The default value is
-    # **autoVectorMaxValue**.
+    #: A Float specifying the user-specified maximum vector value. The default value is
+    #: **autoVectorMaxValue**.
     vectorMaxValue: float = None
 
-    # A Boolean specifying whether the minimum vector value is to be computed automatically.
-    # The default value is ON.
+    #: A Boolean specifying whether the minimum vector value is to be computed automatically.
+    #: The default value is ON.
     vectorMinValueAutoCompute: Boolean = ON
 
-    # A Float specifying the user-specified minimum vector value. The default value is
-    # **autoVectorMinValue**.
+    #: A Float specifying the user-specified minimum vector value. The default value is
+    #: **autoVectorMinValue**.
     vectorMinValue: float = None
 
-    # A SymbolicConstant specifying the tensor quantity to display. Possible values are
-    # ALL_PRINCIPAL_COMPONENTS, PRINCIPAL_COMPONENT, ALL_DIRECT_COMPONENTS, and
-    # DIRECT_COMPONENT. The default value is ALL_PRINCIPAL_COMPONENTS.
+    #: A SymbolicConstant specifying the tensor quantity to display. Possible values are
+    #: ALL_PRINCIPAL_COMPONENTS, PRINCIPAL_COMPONENT, ALL_DIRECT_COMPONENTS, and
+    #: DIRECT_COMPONENT. The default value is ALL_PRINCIPAL_COMPONENTS.
     tensorQuantity: SymbolicConstant = ALL_PRINCIPAL_COMPONENTS
 
-    # A Boolean specifying whether the maximum tensor value is to be computed automatically.
-    # The default value is ON.
+    #: A Boolean specifying whether the maximum tensor value is to be computed automatically.
+    #: The default value is ON.
     tensorMaxValueAutoCompute: Boolean = ON
 
-    # A Float specifying the user-specified maximum tensor value. The default value is
-    # **autoTensorMaxValue**.
+    #: A Float specifying the user-specified maximum tensor value. The default value is
+    #: **autoTensorMaxValue**.
     tensorMaxValue: float = None
 
-    # A Boolean specifying whether the minimum tensor value is to be computed automatically.
-    # The default value is ON.
+    #: A Boolean specifying whether the minimum tensor value is to be computed automatically.
+    #: The default value is ON.
     tensorMinValueAutoCompute: Boolean = ON
 
-    # A Float specifying the user-specified minimum tensor value. The default value is
-    # **autoTensorMinValue**.
+    #: A Float specifying the user-specified minimum tensor value. The default value is
+    #: **autoTensorMinValue**.
     tensorMinValue: float = None
 
-    # The SymbolicConstant NOT_SET or a Float specifying the vector maximum value when
-    # **vectorMaxValueAutoCompute** = ON. This value is read-only. The default value is NOT_SET.
+    #: The SymbolicConstant NOT_SET or a Float specifying the vector maximum value when
+    #: **vectorMaxValueAutoCompute** = ON. This value is read-only. The default value is NOT_SET.
     autoVectorMaxValue: typing.Union[SymbolicConstant, float] = NOT_SET
 
-    # The SymbolicConstant NOT_SET or a Float specifying the vector minimum value when
-    # **vectorMinValueAutoCompute** = ON. This value is read-only. The default value is NOT_SET.
+    #: The SymbolicConstant NOT_SET or a Float specifying the vector minimum value when
+    #: **vectorMinValueAutoCompute** = ON. This value is read-only. The default value is NOT_SET.
     autoVectorMinValue: typing.Union[SymbolicConstant, float] = NOT_SET
 
-    # The SymbolicConstant NOT_SET or a Float specifying the tensor maximum value when
-    # **tensorMaxValueAutoCompute** = ON. This value is read-only. The default value is NOT_SET.
+    #: The SymbolicConstant NOT_SET or a Float specifying the tensor maximum value when
+    #: **tensorMaxValueAutoCompute** = ON. This value is read-only. The default value is NOT_SET.
     autoTensorMaxValue: typing.Union[SymbolicConstant, float] = NOT_SET
 
-    # The SymbolicConstant NOT_SET or a Float specifying the tensor minimum value when
-    # **tensorMinValueAutoCompute** = ON. This value is read-only. The default value is NOT_SET.
+    #: The SymbolicConstant NOT_SET or a Float specifying the tensor minimum value when
+    #: **tensorMinValueAutoCompute** = ON. This value is read-only. The default value is NOT_SET.
     autoTensorMinValue: typing.Union[SymbolicConstant, float] = NOT_SET
 
-    # A SymbolicConstant specifying the vector line thickness. Possible values are VERY_THIN,
-    # THIN, MEDIUM, and THICK. The default value is VERY_THIN.
+    #: A SymbolicConstant specifying the vector line thickness. Possible values are VERY_THIN,
+    #: THIN, MEDIUM, and THICK. The default value is VERY_THIN.
     vectorLineThickness: SymbolicConstant = VERY_THIN
 
-    # A SymbolicConstant specifying the vector color method. Possible values are UNIFORM and
-    # SPECTRUM. The default value is SPECTRUM.
+    #: A SymbolicConstant specifying the vector color method. Possible values are UNIFORM and
+    #: SPECTRUM. The default value is SPECTRUM.
     vectorColorMethod: SymbolicConstant = SPECTRUM
 
-    # A SymbolicConstant specifying the tensor color method. Possible values are UNIFORM and
-    # SPECTRUM. The default value is SPECTRUM.
+    #: A SymbolicConstant specifying the tensor color method. Possible values are UNIFORM and
+    #: SPECTRUM. The default value is SPECTRUM.
     tensorColorMethod: SymbolicConstant = SPECTRUM
 
-    # A SymbolicConstant specifying the vector arrowhead style. Possible values are NONE,
-    # FILLED, and WIRE. The default value is WIRE.
+    #: A SymbolicConstant specifying the vector arrowhead style. Possible values are NONE,
+    #: FILLED, and WIRE. The default value is WIRE.
     vectorArrowheadStyle: SymbolicConstant = WIRE
 
-    # An Int specifying the length of vector and tensor symbols. The default value is 6.
+    #: An Int specifying the length of vector and tensor symbols. The default value is 6.
     arrowSymbolSize: int = 6
 
-    # An Int specifying the number of color intervals for vector symbols. The default value is
-    # 12.
+    #: An Int specifying the number of color intervals for vector symbols. The default value is
+    #: 12.
     vectorIntervalNumber: int = 12
 
-    # A Float specifying the factor for randomized sampling. The default value is 1.0.
+    #: A Float specifying the factor for randomized sampling. The default value is 1.0.
     symbolDensity: float = 1
 
-    # A Boolean specifying whether to use constant-length arrows for vector symbols. The
-    # default value is OFF.
+    #: A Boolean specifying whether to use constant-length arrows for vector symbols. The
+    #: default value is OFF.
     constantLengthArrows: Boolean = OFF
 
-    # An Int specifying the number of color intervals for tensor symbols. The default value is
-    # 12.
+    #: An Int specifying the number of color intervals for tensor symbols. The default value is
+    #: 12.
     tensorIntervalNumber: int = 12
 
-    # A SymbolicConstant specifying the line thickness of the tensor symbols. Possible values
-    # are VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN.
+    #: A SymbolicConstant specifying the line thickness of the tensor symbols. Possible values
+    #: are VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN.
     tensorLineThickness: SymbolicConstant = VERY_THIN
 
-    # A SymbolicConstant specifying the arrowhead style of the tensor symbols. Possible values
-    # are NONE, FILLED, and WIRE. The default value is WIRE.
+    #: A SymbolicConstant specifying the arrowhead style of the tensor symbols. Possible values
+    #: are NONE, FILLED, and WIRE. The default value is WIRE.
     tensorArrowheadStyle: SymbolicConstant = WIRE
 
-    # A SymbolicConstant specifying the number format for tensor. Possible values are
-    # SCIENTIFIC, FIXED, and ENGINEERING. The default value is SCIENTIFIC.
+    #: A SymbolicConstant specifying the number format for tensor. Possible values are
+    #: SCIENTIFIC, FIXED, and ENGINEERING. The default value is SCIENTIFIC.
     numberFormatT: SymbolicConstant = SCIENTIFIC
 
-    # A SymbolicConstant specifying the number format for vector. Possible values are
-    # SCIENTIFIC, FIXED, and ENGINEERING. The default value is SCIENTIFIC.
+    #: A SymbolicConstant specifying the number format for vector. Possible values are
+    #: SCIENTIFIC, FIXED, and ENGINEERING. The default value is SCIENTIFIC.
     numberFormatV: SymbolicConstant = SCIENTIFIC
 
-    # A SymbolicConstant specifying the arrow scaling mode. Possible values are MODEL_SIZE and
-    # SCREEN_SIZE. The default value is MODEL_SIZE.
+    #: A SymbolicConstant specifying the arrow scaling mode. Possible values are MODEL_SIZE and
+    #: SCREEN_SIZE. The default value is MODEL_SIZE.
     arrowScaleMode: SymbolicConstant = MODEL_SIZE
 
-    # A Boolean specifying whether to draw tensor labels. The default value is OFF.
+    #: A Boolean specifying whether to draw tensor labels. The default value is OFF.
     drawLabelT: Boolean = OFF
 
-    # A Boolean specifying whether to draw vector labels. The default value is OFF.
+    #: A Boolean specifying whether to draw vector labels. The default value is OFF.
     drawLabelV: Boolean = OFF
 
-    # An Int specifying the number of digits in the tensor label. The default value is 2.
+    #: An Int specifying the number of digits in the tensor label. The default value is 2.
     numDigitsT: int = 2
 
-    # An Int specifying the number of digits in the vector label. The default value is 2.
+    #: An Int specifying the number of digits in the vector label. The default value is 2.
     numDigitsV: int = 2
 
-    # A String specifying the vector color. The default value is "Red".
+    #: A String specifying the vector color. The default value is "Red".
     vectorColor: str = ""
 
-    # A String specifying the vector color spectrum name. The default value is "Rainbow".
+    #: A String specifying the vector color spectrum name. The default value is "Rainbow".
     vectorColorSpectrum: str = ""
 
-    # A String specifying the tensor color spectrum name. The default value is "Rainbow".
+    #: A String specifying the tensor color spectrum name. The default value is "Rainbow".
     tensorColorSpectrum: str = ""
 
-    # A String specifying the text color for tensor. The default value is "Yellow".
+    #: A String specifying the text color for tensor. The default value is "Yellow".
     textColorT: str = ""
 
-    # A String specifying the text color for vector. The default value is "Yellow".
+    #: A String specifying the text color for vector. The default value is "Yellow".
     textColorV: str = ""
 
-    # A String specifying the text font for tensor. The default value is "verdana".
+    #: A String specifying the text font for tensor. The default value is "verdana".
     textFontT: str = ""
 
-    # A String specifying the text font for vector. The default value is "verdana".
+    #: A String specifying the text font for vector. The default value is "verdana".
     textFontV: str = ""
 
-    # A String specifying the color of the maximum principal tensor symbols. The default value
-    # is "Red".
+    #: A String specifying the color of the maximum principal tensor symbols. The default value
+    #: is "Red".
     tensorMaxPrinColor: str = ""
 
-    # A String specifying the color of the minimum principal tensor symbols. The default value
-    # is "Cyan".
+    #: A String specifying the color of the minimum principal tensor symbols. The default value
+    #: is "Cyan".
     tensorMinPrinColor: str = ""
 
-    # A String specifying the color of the intermediate principal tensor symbols. The default
-    # value is "Yellow".
+    #: A String specifying the color of the intermediate principal tensor symbols. The default
+    #: value is "Yellow".
     tensorMidPrinColor: str = ""
 
-    # A String specifying the color of the selected principal tensor symbols. The default
-    # value is "Red".
+    #: A String specifying the color of the selected principal tensor symbols. The default
+    #: value is "Red".
     tensorSelectedPrinColor: str = ""
 
     def setValues(

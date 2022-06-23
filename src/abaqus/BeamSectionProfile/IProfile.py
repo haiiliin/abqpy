@@ -42,30 +42,30 @@ class IProfile(Profile):
     - BEAM SECTION
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A Float specifying the **l** dimension (offset of 1-axis from the bottom flange surface)
-    # of the I profile. For more information, see [Beam cross-section
-    # library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all).
+    #: A Float specifying the **l** dimension (offset of 1-axis from the bottom flange surface)
+    #: of the I profile. For more information, see [Beam cross-section
+    #: library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all).
     l: float
 
-    # A Float specifying the **h** dimension (height) of the I profile.
+    #: A Float specifying the **h** dimension (height) of the I profile.
     h: float
 
-    # A Float specifying the **b1** dimension (bottom flange width) of the I profile.
+    #: A Float specifying the **b1** dimension (bottom flange width) of the I profile.
     b1: float
 
-    # A Float specifying the **b2** dimension (top flange width) of the I profile.
+    #: A Float specifying the **b2** dimension (top flange width) of the I profile.
     b2: float
 
-    # A Float specifying the **t1** dimension (bottom flange thickness) of the I profile.
+    #: A Float specifying the **t1** dimension (bottom flange thickness) of the I profile.
     t1: float
 
-    # A Float specifying the **t2** dimension (top flange thickness) of the I profile.
+    #: A Float specifying the **t2** dimension (top flange thickness) of the I profile.
     t2: float
 
-    # A Float specifying the **t3** dimension (web thickness) of the I profile.
+    #: A Float specifying the **t3** dimension (web thickness) of the I profile.
     t3: float
 
     def __init__(

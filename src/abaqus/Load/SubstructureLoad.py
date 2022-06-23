@@ -24,10 +24,10 @@ class SubstructureLoad(Load):
         mdb.models[name].loads[name]
     """
 
-    # A String specifying the load repository key.
+    #: A String specifying the load repository key.
     name: str = ""
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
     def __init__(

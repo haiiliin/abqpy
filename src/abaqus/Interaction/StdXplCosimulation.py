@@ -41,30 +41,30 @@ class StdXplCosimulation(Interaction):
         mdb.models[name].interactions[name]
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A String specifying the name of the step in which the StdXplCosimulation object is
-    # created.
+    #: A String specifying the name of the step in which the StdXplCosimulation object is
+    #: created.
     createStepName: str
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the import and export region upon which the co-simulation
-    # exchanges data with the coupled analysis program.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the import and export region upon which the co-simulation
+    #: exchanges data with the coupled analysis program.
     region: Region
 
-    # A SymbolicConstant specifying whether the analysis programs use the same time increments
-    # or one is allowed to use more time increments than the other before exchanging data.
-    # Possible values are ALLOW_SUBCYCLING and LOCKSTEP. The default value is
-    # ALLOW_SUBCYCLING.
+    #: A SymbolicConstant specifying whether the analysis programs use the same time increments
+    #: or one is allowed to use more time increments than the other before exchanging data.
+    #: Possible values are ALLOW_SUBCYCLING and LOCKSTEP. The default value is
+    #: ALLOW_SUBCYCLING.
     incrementation: SymbolicConstant = ALLOW_SUBCYCLING
 
-    # A Float specifying the size of the increments to be used by Abaqus/Standard and
-    # Abaqus/Explicit. The default value is 0.0.
+    #: A Float specifying the size of the increments to be used by Abaqus/Standard and
+    #: Abaqus/Explicit. The default value is 0.0.
     stepSize: float = 0
 
-    # A SymbolicConstant specifying whether the increment size is the analysis default or a
-    # supplied variable. Possible values are DEFAULT and SPECIFIED. The default value is
-    # DEFAULT.
+    #: A SymbolicConstant specifying whether the increment size is the analysis default or a
+    #: supplied variable. Possible values are DEFAULT and SPECIFIED. The default value is
+    #: DEFAULT.
     stepSizeDefinition: SymbolicConstant = DEFAULT
 
     def __init__(

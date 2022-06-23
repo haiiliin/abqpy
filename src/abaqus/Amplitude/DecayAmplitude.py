@@ -38,23 +38,23 @@ class DecayAmplitude(Amplitude):
     - AMPLITUDE
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A Float specifying the constant A0A0.
+    #: A Float specifying the constant A0A0.
     initial: float
 
-    # A Float specifying the coefficient AA.
+    #: A Float specifying the coefficient AA.
     maximum: float
 
-    # A Float specifying the starting time t0t0. Possible values are non-negative numbers.
+    #: A Float specifying the starting time t0t0. Possible values are non-negative numbers.
     start: float
 
-    # A Float specifying the decay time tdtd. Possible values are non-negative numbers.
+    #: A Float specifying the decay time tdtd. Possible values are non-negative numbers.
     decayTime: float
 
-    # A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
-    # and TOTAL. The default value is STEP.
+    #: A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+    #: and TOTAL. The default value is STEP.
     timeSpan: SymbolicConstant = STEP
 
     def __init__(

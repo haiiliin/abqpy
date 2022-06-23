@@ -56,49 +56,49 @@ class AssembledFastener(Fastener):
         mdb.models[name].rootAssembly.engineeringFeatures.fasteners[name]
     """
 
-    # A Boolean specifying whether the fastener is suppressed or not. The default value is
-    # OFF.
+    #: A Boolean specifying whether the fastener is suppressed or not. The default value is
+    #: OFF.
     suppressed: Boolean = OFF
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region of attachment points to which assembled fasteners
-    # are applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region of attachment points to which assembled fasteners
+    #: are applied.
     region: Region
 
-    # A String specifying the name of the template model.
+    #: A String specifying the name of the template model.
     templateModel: str
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the template model control point set. The set must contain a
-    # single node or vertex.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the template model control point set. The set must contain a
+    #: single node or vertex.
     controlSet: Region
 
-    # A sequence of Strings specifying the names of the template model surfaces that are
-    # referenced by tie or coupling constraints.
+    #: A sequence of Strings specifying the names of the template model surfaces that are
+    #: referenced by tie or coupling constraints.
     templateSurfaces: tuple
 
-    # A sequence of Strings specifying the names of the main model surfaces that will be
-    # substituted for the template model constraint surfaces.
+    #: A sequence of Strings specifying the names of the main model surfaces that will be
+    #: substituted for the template model constraint surfaces.
     assignedSurfaces: tuple
 
-    # A String specifying the name of the property prefix string. This string will be
-    # prepended to every property name as it is copied to the main model from the template
-    # model.
+    #: A String specifying the name of the property prefix string. This string will be
+    #: prepended to every property name as it is copied to the main model from the template
+    #: model.
     propertyPrefix: str
 
-    # A SymbolicConstant specifying the method used to orient the virtual instances of the
-    # template model at each attachment point. Possible values are NORMALS and CSYS. The
-    # default value is NORMALS.
+    #: A SymbolicConstant specifying the method used to orient the virtual instances of the
+    #: template model at each attachment point. Possible values are NORMALS and CSYS. The
+    #: default value is NORMALS.
     orientMethod: SymbolicConstant = NORMALS
 
-    # None or a DatumCsys object specifying the local coordinate system. If **localCsys** = None,
-    # the global coordinate system is used. When this member is queried, it returns an Int.
-    # The default value is None.This argument applies only when **orientMethod** = CSYS.
+    #: None or a DatumCsys object specifying the local coordinate system. If **localCsys** = None,
+    #: the global coordinate system is used. When this member is queried, it returns an Int.
+    #: The default value is None.This argument applies only when **orientMethod** = CSYS.
     localCsys: int = None
 
-    # A String specifying the name of the property generation script. The default value is an
-    # empty string.
+    #: A String specifying the name of the property generation script. The default value is an
+    #: empty string.
     scriptName: str = ""
 
     def __init__(

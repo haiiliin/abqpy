@@ -18,7 +18,7 @@ class OdbLoadCase:
         session.odbs[name].steps[name].loadCases[name]
     """
 
-    # A String specifying the name of the OdbLoadCase object.
+    #: A String specifying the name of the OdbLoadCase object.
     name: str
 
     def __init__(self, name: str):

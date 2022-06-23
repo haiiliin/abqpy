@@ -74,75 +74,75 @@ class Drawing:
         session.drawings[name]
     """
 
-    # An Int specifying the number of vertices in the vertex array after a call to the
-    # setVertices method. The default value is 0.
+    #: An Int specifying the number of vertices in the vertex array after a call to the
+    #: setVertices method. The default value is 0.
     vertexCount: int = 0
 
-    # An Int specifying the number of normal vectors in the normal array after a call to the
-    # setNormals method. The default value is 0.
+    #: An Int specifying the number of normal vectors in the normal array after a call to the
+    #: setNormals method. The default value is 0.
     normalCount: int = 0
 
-    # An Int specifying the number of colors in the color array after a call to the setColors
-    # method. The default value is 0.
+    #: An Int specifying the number of colors in the color array after a call to the setColors
+    #: method. The default value is 0.
     colorCount: int = 0
 
-    # A Boolean specifying whether the drawing object will be rendered when referenced. The
-    # default value is OFF.
+    #: A Boolean specifying whether the drawing object will be rendered when referenced. The
+    #: default value is OFF.
     show: Boolean = OFF
 
-    # A Boolean specifying whether polygonal graphics primitives facing away from the viewer
-    # should be culled (not rendered). The default value is OFF.The winding order, and not the
-    # normal, of the graphics primitive is used to determine its facing.
+    #: A Boolean specifying whether polygonal graphics primitives facing away from the viewer
+    #: should be culled (not rendered). The default value is OFF.The winding order, and not the
+    #: normal, of the graphics primitive is used to determine its facing.
     cullBackfaces: Boolean = OFF
 
-    # A SymbolicConstant specifying the winding order for polygonal graphics primitives that
-    # face the viewer. Possible values are:CCW, specifying front face winding order is
-    # counter-clockwise.CW, specifying front face winding order is clockwise.The default value
-    # is CCW.
+    #: A SymbolicConstant specifying the winding order for polygonal graphics primitives that
+    #: face the viewer. Possible values are:CCW, specifying front face winding order is
+    #: counter-clockwise.CW, specifying front face winding order is clockwise.The default value
+    #: is CCW.
     frontFaceOrder: SymbolicConstant = CCW
 
-    # A Float specifying the opacity for polygonal graphics primitives. Possible values are
-    # 0.0 ≤ **translucency** ≤ 1.0 with 0.0 being completely transparent (invisible) and 1.0
-    # being opaque. The default value is 1.0.A value greater than 0.3 will cause the
-    # translucent facets to be sorted by depth before being rendered and has the side effect
-    # of disabling two-sided lighting for those facets.
+    #: A Float specifying the opacity for polygonal graphics primitives. Possible values are
+    #: 0.0 ≤ **translucency** ≤ 1.0 with 0.0 being completely transparent (invisible) and 1.0
+    #: being opaque. The default value is 1.0.A value greater than 0.3 will cause the
+    #: translucent facets to be sorted by depth before being rendered and has the side effect
+    #: of disabling two-sided lighting for those facets.
     translucency: float = 1
 
-    # A Float specifying the width of the line, in millimeters, used to render edges. Possible
-    # values are 0.0 ≤ **lineSize** ≤ 5.0 with 0.0 being interpreted as the thinnest possible
-    # line. The default value is 0.0.A value of 0.0 will be one pixel on the output device.
-    # One pixel on the screen is generally visible but one pixel on a 1200 DPI printer may not
-    # be clear.
+    #: A Float specifying the width of the line, in millimeters, used to render edges. Possible
+    #: values are 0.0 ≤ **lineSize** ≤ 5.0 with 0.0 being interpreted as the thinnest possible
+    #: line. The default value is 0.0.A value of 0.0 will be one pixel on the output device.
+    #: One pixel on the screen is generally visible but one pixel on a 1200 DPI printer may not
+    #: be clear.
     lineSize: float = 0
 
-    # A Float specifying the width of points, in millimeters, used to render points. Possible
-    # values are 0.0 ≤ **lineSize** ≤ 5.0 with 0.0 being interpreted as the smallest possible
-    # point. The default value is 0.0.A value of 0.0 will be one pixel on the output device.
-    # One pixel on the screen is generally visible but one pixel on a 1200 DPI printer may not
-    # be clear.
+    #: A Float specifying the width of points, in millimeters, used to render points. Possible
+    #: values are 0.0 ≤ **lineSize** ≤ 5.0 with 0.0 being interpreted as the smallest possible
+    #: point. The default value is 0.0.A value of 0.0 will be one pixel on the output device.
+    #: One pixel on the screen is generally visible but one pixel on a 1200 DPI printer may not
+    #: be clear.
     pointSize: float = 0
 
-    # A Boolean specifying whether the lighting of polygonal graphics primitives is consistent
-    # for each facet or calculated for each displayed pixel. The default value is ON.When
-    # False, only the last normal for each facet will be used in the lighting calculation.
+    #: A Boolean specifying whether the lighting of polygonal graphics primitives is consistent
+    #: for each facet or calculated for each displayed pixel. The default value is ON.When
+    #: False, only the last normal for each facet will be used in the lighting calculation.
     smoothShade: Boolean = ON
 
-    # A Boolean specifying whether edge and point drawing commands will be issued in a FILLED
-    # or SHADED display. The default value is ON.If no edge or point drawing commands have
-    # been defined, the polygonal drawing commands will be issued in WIREFRAME and HIDDEN_LINE
-    # displays with the **polygonMode** set to EDGES. If only edge and point drawing commands
-    # have been defined, the Drawing will not be rendered in FILLED or SHADED displays.
+    #: A Boolean specifying whether edge and point drawing commands will be issued in a FILLED
+    #: or SHADED display. The default value is ON.If no edge or point drawing commands have
+    #: been defined, the polygonal drawing commands will be issued in WIREFRAME and HIDDEN_LINE
+    #: displays with the **polygonMode** set to EDGES. If only edge and point drawing commands
+    #: have been defined, the Drawing will not be rendered in FILLED or SHADED displays.
     edgesInShaded: Boolean = ON
 
-    # A tuple of three Floats specifying the **Red**, **Green**, and **Blue** component values for
-    # the edge color. Possible values for each component are between 0.0 and 1.0.
+    #: A tuple of three Floats specifying the **Red**, **Green**, and **Blue** component values for
+    #: the edge color. Possible values for each component are between 0.0 and 1.0.
     edgeColor: float = None
 
-    # A tuple of three Floats specifying the **Red**, **Green**, and **Blue** component values for
-    # the point color. Possible values for each component are between 0.0 and 1.0.
+    #: A tuple of three Floats specifying the **Red**, **Green**, and **Blue** component values for
+    #: the point color. Possible values for each component are between 0.0 and 1.0.
     pointColor: float = None
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
     def __init__(self, name: str):

@@ -72,65 +72,65 @@ class IncidentWave(Interaction):
     - INCIDENT WAVE INTERACTION
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A String specifying the name of the step in which the IncidentWave object is created.
+    #: A String specifying the name of the step in which the IncidentWave object is created.
     createStepName: str
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the incident wave source point.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the incident wave source point.
     sourcePoint: Region
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the incident wave standoff point.This argument is not valid
-    # when **definition** = CONWEP.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the incident wave standoff point.This argument is not valid
+    #: when **definition** = CONWEP.
     standoffPoint: Region
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the surface defining the incident wave interaction. In
-    # problems involving fluid/surface boundaries, both the fluid surface and the solid
-    # surface comprising the boundary must have an incident wave interaction specified.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the surface defining the incident wave interaction. In
+    #: problems involving fluid/surface boundaries, both the fluid surface and the solid
+    #: surface comprising the boundary must have an incident wave interaction specified.
     surface: Region
 
-    # A String specifying the IncidentWaveProperty object associated with this interaction.
+    #: A String specifying the IncidentWaveProperty object associated with this interaction.
     interactionProperty: str
 
-    # A SymbolicConstant specifying the type of incident wave to be defined. The value must be
-    # PRESSURE for linear perturbation steps. An Explicit step is required when the value is
-    # set to CONWEP. Possible values are PRESSURE, ACCELERATION, UNDEX, and CONWEP. The
-    # default value is PRESSURE.
+    #: A SymbolicConstant specifying the type of incident wave to be defined. The value must be
+    #: PRESSURE for linear perturbation steps. An Explicit step is required when the value is
+    #: set to CONWEP. Possible values are PRESSURE, ACCELERATION, UNDEX, and CONWEP. The
+    #: default value is PRESSURE.
     definition: SymbolicConstant = PRESSURE
 
-    # A String specifying the name of the Amplitude object that defines the fluid pressure
-    # time history at the standoff point, if **definition** = PRESSURE. If
-    # **definition** = ACCELERATION, then this string specifies the name of the Amplitude object
-    # that defines the fluid particle acceleration time history at the standoff point. This
-    # member can be specified only if **definition** = PRESSURE or ACCELERATION. The default value
-    # is an empty string.
+    #: A String specifying the name of the Amplitude object that defines the fluid pressure
+    #: time history at the standoff point, if **definition** = PRESSURE. If
+    #: **definition** = ACCELERATION, then this string specifies the name of the Amplitude object
+    #: that defines the fluid particle acceleration time history at the standoff point. This
+    #: member can be specified only if **definition** = PRESSURE or ACCELERATION. The default value
+    #: is an empty string.
     amplitude: str = ""
 
-    # A String specifying the name of the Amplitude object that defines the imaginary
-    # component of the fluid pressure time history at the standoff point. This member is
-    # applicable only for linear perturbation steps and if **definition** = PRESSURE. The default
-    # value is an empty string.
+    #: A String specifying the name of the Amplitude object that defines the imaginary
+    #: component of the fluid pressure time history at the standoff point. This member is
+    #: applicable only for linear perturbation steps and if **definition** = PRESSURE. The default
+    #: value is an empty string.
     imaginaryAmplitude: str = ""
 
-    # A sequence of three Floats specifying the X, Y, and Z components of the direction cosine
-    # of the fluid surface normal.This argument is valid only when **definition** = UNDEX.
+    #: A sequence of three Floats specifying the X, Y, and Z components of the direction cosine
+    #: of the fluid surface normal.This argument is valid only when **definition** = UNDEX.
     surfaceNormal: tuple = ()
 
-    # None or a Float specifying the initial depth of the UNDEX bubble. The default value is
-    # None.This argument is valid only when **definition** = UNDEX.
+    #: None or a Float specifying the initial depth of the UNDEX bubble. The default value is
+    #: None.This argument is valid only when **definition** = UNDEX.
     initialDepth: float = None
 
-    # A Float specifying the reference magnitude.This argument is not valid when
-    # **definition** = CONWEP.
+    #: A Float specifying the reference magnitude.This argument is not valid when
+    #: **definition** = CONWEP.
     referenceMagnitude: float = None
 
-    # A Float specifying the time of detonation, given in total time.This argument is valid
-    # only when **definition** = CONWEP.
+    #: A Float specifying the time of detonation, given in total time.This argument is valid
+    #: only when **definition** = CONWEP.
     detonationTime: float = None
 
-    # A Float specifying the magnitude scale factor. The default value is 1.0.This argument is
-    # valid only when **definition** = CONWEP.
+    #: A Float specifying the magnitude scale factor. The default value is 1.0.This argument is
+    #: valid only when **definition** = CONWEP.
     magnitudeFactor: float = 1
 
     def __init__(

@@ -32,15 +32,15 @@ class PipeProfile(Profile):
     - BEAM SECTION
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A Float specifying the outer radius of the pipe. For more information, see [Beam
-    # cross-section
-    # library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all).
+    #: A Float specifying the outer radius of the pipe. For more information, see [Beam
+    #: cross-section
+    #: library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all).
     r: float
 
-    # A Float specifying the wall thickness of the pipe.
+    #: A Float specifying the wall thickness of the pipe.
     t: float
 
     def __init__(self, name: str, r: float, t: float):

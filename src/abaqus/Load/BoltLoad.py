@@ -35,15 +35,15 @@ class BoltLoad(Load):
             - NSET
     """
 
-    # A String specifying the load repository key.
+    #: A String specifying the load repository key.
     name: str = ""
 
-    # A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the pre-tension section
-    # normal.Note:*datumAxis* is required only for Solid and Shell regions; it has no meaning
-    # for Wire regions.
+    #: A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the pre-tension section
+    #: normal.Note:*datumAxis* is required only for Solid and Shell regions; it has no meaning
+    #: for Wire regions.
     datumAxis: DatumAxis = DatumAxis()
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
     def __init__(

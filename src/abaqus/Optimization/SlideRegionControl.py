@@ -57,52 +57,52 @@ class SlideRegionControl(GeometricRestriction):
         mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
 
-    # A String specifying the geometric restriction repository key.
+    #: A String specifying the geometric restriction repository key.
     name: str
 
-    # A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the axis of revolution. Instead of through a
-    # ConstrainedSketchVertex, each point may be specified through a tuple of coordinates. This is used when
-    # **approach** is TURN.
+    #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the axis of revolution. Instead of through a
+    #: ConstrainedSketchVertex, each point may be specified through a tuple of coordinates. This is used when
+    #: **approach** is TURN.
     clientDirection: tuple
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
-    # When used with a TopologyTask, there is no default value. When used with a ShapeTask,
-    # the default value is MODEL.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    #: When used with a TopologyTask, there is no default value. When used with a ShapeTask,
+    #: the default value is MODEL.
     region: Region
 
-    # A SymbolicConstant specifying the restriction approach. The SymbolicConstant FREE_FORM
-    # indicates a free-form slide region, and the SymbolicConstant TURN indicates that the
-    # restriction should conserve a turnable surface. Possible values are FREE_FORM and TURN.
-    # The default value is FREE_FORM.
+    #: A SymbolicConstant specifying the restriction approach. The SymbolicConstant FREE_FORM
+    #: indicates a free-form slide region, and the SymbolicConstant TURN indicates that the
+    #: restriction should conserve a turnable surface. Possible values are FREE_FORM and TURN.
+    #: The default value is FREE_FORM.
     approach: SymbolicConstant = FREE_FORM
 
-    # None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
-    # global coordinate system is used. When this member is queried, it returns an Int. This
-    # is used when **approach** is TURN. The default value is None.
+    #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
+    #: global coordinate system is used. When this member is queried, it returns an Int. This
+    #: is used when **approach** is TURN. The default value is None.
     csys: int = None
 
-    # None or a Region object specifying the free-form region. This is used when **approach** is
-    # FREE_FORM. The default value is None.
+    #: None or a Region object specifying the free-form region. This is used when **approach** is
+    #: FREE_FORM. The default value is None.
     freeFormRegion: str = None
 
-    # A Boolean specifying whether to ignore the geometric restriction in the first design
-    # cycle. The default value is ON.
+    #: A Boolean specifying whether to ignore the geometric restriction in the first design
+    #: cycle. The default value is ON.
     presumeFeasibleRegionAtStart: Boolean = ON
 
-    # None or a Region object specifying the region to revolve into a slide region. This is
-    # used when **approach** is TURN. The default value is None.
+    #: None or a Region object specifying the region to revolve into a slide region. This is
+    #: used when **approach** is TURN. The default value is None.
     revolvedRegion: str = None
 
-    # A Float specifying the geometric tolerance in the 1-direction. This is used when
-    # **approach** is TURN. The default value is 0.01.
+    #: A Float specifying the geometric tolerance in the 1-direction. This is used when
+    #: **approach** is TURN. The default value is 0.01.
     tolerance1: float = 0
 
-    # A Float specifying the geometric tolerance in the 2-direction. This is used when
-    # **approach** is TURN. The default value is 0.01.
+    #: A Float specifying the geometric tolerance in the 2-direction. This is used when
+    #: **approach** is TURN. The default value is 0.01.
     tolerance2: float = 0
 
-    # A Float specifying the geometric tolerance in the 3-direction. This is used when
-    # **approach** is TURN. The default value is 0.01.
+    #: A Float specifying the geometric tolerance in the 3-direction. This is used when
+    #: **approach** is TURN. The default value is 0.01.
     tolerance3: float = 0
 
     def __init__(

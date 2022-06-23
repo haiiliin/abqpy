@@ -58,37 +58,37 @@ class ContactProperty(InteractionProperty):
     - SURFACE INTERACTION
     """
 
-    # A :py:class:`~abaqus.Interaction.ContactTangentialBehavior.ContactTangentialBehavior` object.
+    #: A :py:class:`~abaqus.Interaction.ContactTangentialBehavior.ContactTangentialBehavior` object.
     tangentialBehavior: ContactTangentialBehavior = ContactTangentialBehavior()
 
-    # A :py:class:`~abaqus.Interaction.NormalBehavior.NormalBehavior` object.
+    #: A :py:class:`~abaqus.Interaction.NormalBehavior.NormalBehavior` object.
     normalBehavior: NormalBehavior = NormalBehavior()
 
-    # A :py:class:`~abaqus.Interaction.ContactDamping.ContactDamping` object.
+    #: A :py:class:`~abaqus.Interaction.ContactDamping.ContactDamping` object.
     damping: ContactDamping = ContactDamping()
 
-    # A :py:class:`~abaqus.Interaction.ContactDamage.ContactDamage` object.
+    #: A :py:class:`~abaqus.Interaction.ContactDamage.ContactDamage` object.
     damage: ContactDamage = ContactDamage(((),))
 
-    # A :py:class:`~abaqus.Interaction.FractureCriterion.FractureCriterion` object.
+    #: A :py:class:`~abaqus.Interaction.FractureCriterion.FractureCriterion` object.
     fractureCriterion: FractureCriterion = FractureCriterion(((),))
 
-    # A :py:class:`~abaqus.Interaction.CohesiveBehavior.CohesiveBehavior` object.
+    #: A :py:class:`~abaqus.Interaction.CohesiveBehavior.CohesiveBehavior` object.
     cohesiveBehavior: CohesiveBehavior = CohesiveBehavior()
 
-    # A :py:class:`~abaqus.Interaction.ThermalConductance.ThermalConductance` object.
+    #: A :py:class:`~abaqus.Interaction.ThermalConductance.ThermalConductance` object.
     thermalConductance: ThermalConductance = ThermalConductance()
 
-    # A :py:class:`~abaqus.Interaction.GapHeatGeneration.GapHeatGeneration` object.
+    #: A :py:class:`~abaqus.Interaction.GapHeatGeneration.GapHeatGeneration` object.
     heatGeneration: GapHeatGeneration = GapHeatGeneration()
 
-    # A :py:class:`~abaqus.Interaction.Radiation.Radiation` object.
+    #: A :py:class:`~abaqus.Interaction.Radiation.Radiation` object.
     radiation: Radiation = None
 
-    # A :py:class:`~abaqus.Interaction.GeometricProperties.GeometricProperties` object.
+    #: A :py:class:`~abaqus.Interaction.GeometricProperties.GeometricProperties` object.
     geometricProperties: GeometricProperties = GeometricProperties()
 
-    # A :py:class:`~abaqus.Interaction.GapElectricalConductance.GapElectricalConductance` object.
+    #: A :py:class:`~abaqus.Interaction.GapElectricalConductance.GapElectricalConductance` object.
     electricalConductance: GapElectricalConductance = GapElectricalConductance()
 
     def __init__(self, name: str):

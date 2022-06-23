@@ -43,21 +43,21 @@ class Vertex:
         mdb.models[name].rootAssembly.vertices[i]
     """
 
-    # An Int specifying the index of the ConstrainedSketchVertex in the VertexArray.
+    #: An Int specifying the index of the ConstrainedSketchVertex in the VertexArray.
     index: int = None
 
-    # A Boolean specifying whether the vertex belongs to the reference representation of the
-    # Part or Instance.
+    #: A Boolean specifying whether the vertex belongs to the reference representation of the
+    #: Part or Instance.
     isReferenceRep: Boolean = OFF
 
-    # A tuple of Floats specifying the **X** -, **Y** -, and **Z** -coordinates of the vertex.
+    #: A tuple of Floats specifying the **X** -, **Y** -, and **Z** -coordinates of the vertex.
     pointOn: float = None
 
-    # A tuple of Floats specifying the name of the feature that created this vertex.
+    #: A tuple of Floats specifying the name of the feature that created this vertex.
     featureName: float = None
 
-    # A tuple of Floats specifying the name of the part instance for this vertex (if
-    # applicable).
+    #: A tuple of Floats specifying the name of the part instance for this vertex (if
+    #: applicable).
     instanceName: float = None
 
     def getEdges(self):

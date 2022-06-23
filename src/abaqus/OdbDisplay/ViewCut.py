@@ -94,97 +94,97 @@ class ViewCut:
         session.viewports[name].odbDisplay.viewCuts[name]
     """
 
-    # A Float specifying the rotation angle of the cut defined with a **shape** set to PLANE.
+    #: A Float specifying the rotation angle of the cut defined with a **shape** set to PLANE.
     angle: float = None
 
-    # A SymbolicConstant specifying the type of motion for the cut defined with a **shape** set
-    # to PLANE. Possible values are TRANSLATE and ROTATE. The default value is TRANSLATE.
+    #: A SymbolicConstant specifying the type of motion for the cut defined with a **shape** set
+    #: to PLANE. Possible values are TRANSLATE and ROTATE. The default value is TRANSLATE.
     motion: SymbolicConstant = TRANSLATE
 
-    # A Float specifying the position of the cut defined with a **shape** set to PLANE.
+    #: A Float specifying the position of the cut defined with a **shape** set to PLANE.
     position: float = None
 
-    # A Float specifying the radius of the cut defined with a **shape** set to CYLINDER or
-    # SPHERE.
+    #: A Float specifying the radius of the cut defined with a **shape** set to CYLINDER or
+    #: SPHERE.
     radius: float = None
 
-    # A SymbolicConstant specifying the rotation axis for the cut defined with a **shape** set
-    # to PLANE. Possible values are AXIS_1, AXIS_2, and AXIS_3. The default value is AXIS_2.
+    #: A SymbolicConstant specifying the rotation axis for the cut defined with a **shape** set
+    #: to PLANE. Possible values are AXIS_1, AXIS_2, and AXIS_3. The default value is AXIS_2.
     rotationAxis: SymbolicConstant = AXIS_2
 
-    # A Float specifying the value of the cut defined with a **shape** set to ISOSURFACE.
+    #: A Float specifying the value of the cut defined with a **shape** set to ISOSURFACE.
     value: float = None
 
-    # A Boolean specifying whether to display the model above the cut. The default value is
-    # OFF.
+    #: A Boolean specifying whether to display the model above the cut. The default value is
+    #: OFF.
     showModelAboveCut: Boolean = OFF
 
-    # A Boolean specifying whether to display the model on the cut. The default value is ON.
+    #: A Boolean specifying whether to display the model on the cut. The default value is ON.
     showModelOnCut: Boolean = ON
 
-    # A Boolean specifying whether to display the model below the cut. The default value is
-    # ON.
+    #: A Boolean specifying whether to display the model below the cut. The default value is
+    #: ON.
     showModelBelowCut: Boolean = ON
 
-    # A Boolean specifying whether to display the free body cut. The default value is OFF.
+    #: A Boolean specifying whether to display the free body cut. The default value is OFF.
     showFreeBodyCut: Boolean = OFF
 
-    # A Boolean specifying whether the cut is displayed.
+    #: A Boolean specifying whether the cut is displayed.
     active: Boolean = OFF
 
-    # A pair of Floats specifying the acceptable range for positioning the cut.
+    #: A pair of Floats specifying the acceptable range for positioning the cut.
     cutRange: tuple[float] = ()
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A SymbolicConstant specifying the shape of the ViewCut object. Possible values are
-    # PLANE, CYLINDER, SPHERE, and ISOSURFACE.
+    #: A SymbolicConstant specifying the shape of the ViewCut object. Possible values are
+    #: PLANE, CYLINDER, SPHERE, and ISOSURFACE.
     shape: SymbolicConstant
 
-    # A sequence of three Floats specifying the X-, Y-, and Z-coordinates of the origin of the
-    # plane, cylinder or sphere cut. This origin is not required if the cut shape is
-    # ISOSURFACE or if the cut is defined by the **csysName** argument.
+    #: A sequence of three Floats specifying the X-, Y-, and Z-coordinates of the origin of the
+    #: plane, cylinder or sphere cut. This origin is not required if the cut shape is
+    #: ISOSURFACE or if the cut is defined by the **csysName** argument.
     origin: tuple
 
-    # A sequence of Floats specifying the X-, Y-, and Z-coordinates of the normal axis to the
-    # plane defining the cut, when the plane is defined using the **origin** argument or a
-    # SymbolicConstant defining this normal axis, when the cut is defined by the **csysName**
-    # argument. Possible values are AXIS_1, AXIS_2, AXIS_3. This axis is not required if the
-    # cut **shape** is CYLINDER, SPHERE or ISOSURFACE.
+    #: A sequence of Floats specifying the X-, Y-, and Z-coordinates of the normal axis to the
+    #: plane defining the cut, when the plane is defined using the **origin** argument or a
+    #: SymbolicConstant defining this normal axis, when the cut is defined by the **csysName**
+    #: argument. Possible values are AXIS_1, AXIS_2, AXIS_3. This axis is not required if the
+    #: cut **shape** is CYLINDER, SPHERE or ISOSURFACE.
     normal: typing.Union[SymbolicConstant, float]
 
-    # A sequence of three Floats specifying the X-, Y-, and Z-coordinates of the second axis
-    # of the plane defining the cut, when the plane is defined using the **origin** argument or
-    # a SymbolicConstant defining this second axis, when the cut is defined by the **csysName**
-    # argument. Possible values are AXIS_1, AXIS_2, AXIS_3. This axis is used to rotate the
-    # plane cut. It is not required if the cut **shape** is CYLINDER, SPHERE or ISOSURFACE.
+    #: A sequence of three Floats specifying the X-, Y-, and Z-coordinates of the second axis
+    #: of the plane defining the cut, when the plane is defined using the **origin** argument or
+    #: a SymbolicConstant defining this second axis, when the cut is defined by the **csysName**
+    #: argument. Possible values are AXIS_1, AXIS_2, AXIS_3. This axis is used to rotate the
+    #: plane cut. It is not required if the cut **shape** is CYLINDER, SPHERE or ISOSURFACE.
     axis2: typing.Union[SymbolicConstant, float]
 
-    # A String specifying the name of the DatumCsys object to be used to define the cut. This
-    # name is not required if the cut **shape** is ISOSURFACE or if the cut is defined by the
-    # **origin** argument.
+    #: A String specifying the name of the DatumCsys object to be used to define the cut. This
+    #: name is not required if the cut **shape** is ISOSURFACE or if the cut is defined by the
+    #: **origin** argument.
     csysName: str
 
-    # A sequence of Floats specifying the X-, Y-, and Z-coordinates of the cylinder axis
-    # defining the cut, when the cut is defined using the **origin** argument or a
-    # SymbolicConstant defining this cylinder axis, when the cut is defined by the **csysName**
-    # argument. Possible values are AXIS_1, AXIS_2, AXIS_3. This axis is not required if the
-    # cut **shape** is PLANE, SPHERE, or ISOSURFACE.
+    #: A sequence of Floats specifying the X-, Y-, and Z-coordinates of the cylinder axis
+    #: defining the cut, when the cut is defined using the **origin** argument or a
+    #: SymbolicConstant defining this cylinder axis, when the cut is defined by the **csysName**
+    #: argument. Possible values are AXIS_1, AXIS_2, AXIS_3. This axis is not required if the
+    #: cut **shape** is PLANE, SPHERE, or ISOSURFACE.
     cylinderAxis: typing.Union[SymbolicConstant, float]
 
-    # A Boolean specifying whether the cut will follow the deformation or be static. The
-    # default value is OFF.
+    #: A Boolean specifying whether the cut will follow the deformation or be static. The
+    #: default value is OFF.
     followDeformation: Boolean = OFF
 
-    # A Boolean specifying averaging for element based fields associated with isosurface cuts
-    # will be set to compute-average with a threshold of 100% when true. The current field
-    # options will be used when false. The default value is ON.
+    #: A Boolean specifying averaging for element based fields associated with isosurface cuts
+    #: will be set to compute-average with a threshold of 100% when true. The current field
+    #: options will be used when false. The default value is ON.
     overrideAveraging: Boolean = ON
 
-    # A SymbolicConstant specifying which reference frame will be used when the cut follows
-    # the deformation. Possible values are FIRST_FRAME, LAST_FRAME, and CURRENT_FRAME. The
-    # default value is FIRST_FRAME.
+    #: A SymbolicConstant specifying which reference frame will be used when the cut follows
+    #: the deformation. Possible values are FIRST_FRAME, LAST_FRAME, and CURRENT_FRAME. The
+    #: default value is FIRST_FRAME.
     referenceFrame: SymbolicConstant = FIRST_FRAME
 
     def __init__(

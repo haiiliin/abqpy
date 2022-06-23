@@ -34,15 +34,15 @@ class SmoothStepAmplitude(Amplitude):
     - AMPLITUDE
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A sequence of pairs of Floats specifying time/frequency and amplitude pairs. Possible
-    # values for time/frequency are positive numbers.
+    #: A sequence of pairs of Floats specifying time/frequency and amplitude pairs. Possible
+    #: values for time/frequency are positive numbers.
     data: tuple
 
-    # A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
-    # and TOTAL. The default value is STEP.
+    #: A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+    #: and TOTAL. The default value is STEP.
     timeSpan: SymbolicConstant = STEP
 
     def __init__(self, name: str, data: tuple, timeSpan: SymbolicConstant = STEP):

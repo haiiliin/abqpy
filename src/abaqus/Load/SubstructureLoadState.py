@@ -51,33 +51,33 @@ class SubstructureLoadState(LoadState):
     - SLOAD
     """
 
-    # A tuple of strings specifying the names of the load cases to be activated.
+    #: A tuple of strings specifying the names of the load cases to be activated.
     loadCaseNames: tuple = ()
 
-    # A Float or a Complex specifying the load magnitude.
+    #: A Float or a Complex specifying the load magnitude.
     magnitude: float = None
 
-    # A SymbolicConstant specifying the propagation state of the load magnitude. Possible
-    # values are UNSET, SET, UNCHANGED, and MODIFIED.
+    #: A SymbolicConstant specifying the propagation state of the load magnitude. Possible
+    #: values are UNSET, SET, UNCHANGED, and MODIFIED.
     magnitudeState: SymbolicConstant = None
 
-    # A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible
-    # values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible
+    #: values are UNSET, SET, UNCHANGED, and FREED.
     amplitudeState: SymbolicConstant = None
 
-    # A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-    # values are:
-    # - NOT_YET_ACTIVE
-    # - CREATED
-    # - PROPAGATED
-    # - MODIFIED
-    # - DEACTIVATED
-    # - NO_LONGER_ACTIVE
-    # - TYPE_NOT_APPLICABLE
-    # - INSTANCE_NOT_APPLICABLE
-    # - BUILT_INTO_BASE_STATE
+    #: A SymbolicConstant specifying the propagation state of the LoadState object. Possible
+    #: values are:
+    #: - NOT_YET_ACTIVE
+    #: - CREATED
+    #: - PROPAGATED
+    #: - MODIFIED
+    #: - DEACTIVATED
+    #: - NO_LONGER_ACTIVE
+    #: - TYPE_NOT_APPLICABLE
+    #: - INSTANCE_NOT_APPLICABLE
+    #: - BUILT_INTO_BASE_STATE
     status: SymbolicConstant = None
 
-    # A String specifying the name of the amplitude reference. The String is empty if the load
-    # has no amplitude reference.
+    #: A String specifying the name of the amplitude reference. The String is empty if the load
+    #: has no amplitude reference.
     amplitude: str = ""

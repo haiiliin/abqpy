@@ -30,9 +30,9 @@ class OdbMeshNode:
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.surfaces[name].nodes[i]
     """
 
-    # An Int specifying the node label.
+    #: An Int specifying the node label.
     label: int = None
 
-    # A tuple of Floats specifying the nodal coordinates in the global Cartesian coordinate
-    # system.
+    #: A tuple of Floats specifying the nodal coordinates in the global Cartesian coordinate
+    #: system.
     coordinates: float = None

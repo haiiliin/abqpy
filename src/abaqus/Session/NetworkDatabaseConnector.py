@@ -46,44 +46,44 @@ class NetworkDatabaseConnector:
         session.networkDatabaseConnectors[name]
     """
 
-    # A Boolean specifying if the connection between the client and the server is established.
+    #: A Boolean specifying if the connection between the client and the server is established.
     connected: Boolean = OFF
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A String specifying the name of the remote computer.
+    #: A String specifying the name of the remote computer.
     hostName: str
 
-    # A String specifying the directory on the remote computer.
+    #: A String specifying the directory on the remote computer.
     directory: str
 
-    # A String specifying the name of command to execute Abaqus/CAE on the remote computer.
+    #: A String specifying the name of command to execute Abaqus/CAE on the remote computer.
     remoteAbaqusDriverName: str = ""
 
-    # A SymbolicConstant specifying the remote shell command on the local system. Possible
-    # values are RSH and SSH. The default value is SSH.
+    #: A SymbolicConstant specifying the remote shell command on the local system. Possible
+    #: values are RSH and SSH. The default value is SSH.
     remoteLoginMechanism: SymbolicConstant = SSH
 
-    # A String specifying the path to the`ssh` command on the local system. The default value
-    # is an empty string.
+    #: A String specifying the path to the`ssh` command on the local system. The default value
+    #: is an empty string.
     sshPath: str = ""
 
-    # An Int specifying the server port on the remote computer. If **serverPort** =0, the host
-    # and remote systems are allowed to establish their own port numbers. The default value is
-    # 0.
+    #: An Int specifying the server port on the remote computer. If **serverPort** =0, the host
+    #: and remote systems are allowed to establish their own port numbers. The default value is
+    #: 0.
     serverPort: int = 0
 
-    # An Int specifying the connection port on the remote computer. The default value is 0.
+    #: An Int specifying the connection port on the remote computer. The default value is 0.
     connectionPort: int = 0
 
-    # An Int specifying the timeout in seconds for the remote server. For example: 86400
-    # corresponds to one day. The server exits if it does not receive any communication from
-    # the client during the time specified. The default value is 86400.
+    #: An Int specifying the timeout in seconds for the remote server. For example: 86400
+    #: corresponds to one day. The server exits if it does not receive any communication from
+    #: the client during the time specified. The default value is 86400.
     serverTimeout: int = 86400
 
-    # A Boolean specifying whether to start the remote network database connector server. The
-    # default value is ON.
+    #: A Boolean specifying whether to start the remote network database connector server. The
+    #: default value is ON.
     allowAutomaticStartup: Boolean = ON
 
     def __init__(

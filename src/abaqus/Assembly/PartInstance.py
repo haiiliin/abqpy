@@ -112,105 +112,105 @@ class PartInstance:
         mdb.models[name].rootAssembly.instances[name]
     """
 
-    # A String specifying the repository key. The name must be a valid Abaqus object name.
+    #: A String specifying the repository key. The name must be a valid Abaqus object name.
     name: str = ""
 
-    # A Boolean specifying whether the part instance is dependent or independent. If
-    # **dependent** = OFF, the part instance is independent. The default value is OFF.
+    #: A Boolean specifying whether the part instance is dependent or independent. If
+    #: **dependent** = OFF, the part instance is independent. The default value is OFF.
     dependent: Boolean = OFF
 
-    # A Boolean specifying whether the part instance is excluded from the simulation. If
-    # **excludedFromSimulation** = ON, the part instance is excluded from the simulation. The
-    # default value is OFF.
+    #: A Boolean specifying whether the part instance is excluded from the simulation. If
+    #: **excludedFromSimulation** = ON, the part instance is excluded from the simulation. The
+    #: default value is OFF.
     excludedFromSimulation: Boolean = OFF
 
-    # A Boolean specifying the validity of the geometry of the instance. The value is
-    # computed, but it can be set to ON to perform feature and mesh operations on an invalid
-    # instance. There is no guarantee that such operations will work if the instance was
-    # originally invalid.
+    #: A Boolean specifying the validity of the geometry of the instance. The value is
+    #: computed, but it can be set to ON to perform feature and mesh operations on an invalid
+    #: instance. There is no guarantee that such operations will work if the instance was
+    #: originally invalid.
     geometryValidity: Boolean = OFF
 
-    # A SymbolicConstant specifying the part type. Possible values are DEFORMABLE_BODY,
-    # EULERIAN, DISCRETE_RIGID_SURFACE, and ANALYTIC_RIGID_SURFACE.
+    #: A SymbolicConstant specifying the part type. Possible values are DEFORMABLE_BODY,
+    #: EULERIAN, DISCRETE_RIGID_SURFACE, and ANALYTIC_RIGID_SURFACE.
     analysisType: SymbolicConstant = None
 
-    # An Int specifying the reference node number. This member is valid only if
-    # **analysisType** = DISCRETE_RIGID_SURFACE or ANALYTIC_RIGID_SURFACE.
+    #: An Int specifying the reference node number. This member is valid only if
+    #: **analysisType** = DISCRETE_RIGID_SURFACE or ANALYTIC_RIGID_SURFACE.
     referenceNode: int = None
 
-    # A :py:class:`~abaqus.Part.Part.Part` object specifying the instanced part.
+    #: A :py:class:`~abaqus.Part.Part.Part` object specifying the instanced part.
     part: Part = None
 
-    # A repository of Set objects specifying the sets created on the part. For more
-    # information, see [Region
-    # commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
+    #: A repository of Set objects specifying the sets created on the part. For more
+    #: information, see [Region
+    #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
     sets: dict[str, Set] = dict[str, Set]()
 
-    # A repository of Surface objects specifying the surfaces created on the part. For more
-    # information, see [Region
-    # commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
+    #: A repository of Surface objects specifying the surfaces created on the part. For more
+    #: information, see [Region
+    #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
     surfaces: dict[str, Surface] = dict[str, Surface]()
 
-    # A repository of Skin objects specifying the skins created on the part. For more
-    # information, see [Region
-    # commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
+    #: A repository of Skin objects specifying the skins created on the part. For more
+    #: information, see [Region
+    #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
     skins: dict[str, Skin] = dict[str, Skin]()
 
-    # A repository of Stringer objects specifying the stringers created on the part. For more
-    # information, see [Region
-    # commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
+    #: A repository of Stringer objects specifying the stringers created on the part. For more
+    #: information, see [Region
+    #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
     stringers: dict[str, Stringer] = dict[str, Stringer]()
 
-    # A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object.
+    #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object.
     vertices: VertexArray = VertexArray([])
 
-    # An :py:class:`~abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray` object.
+    #: An :py:class:`~abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray` object.
     ignoredVertices: IgnoredVertexArray = IgnoredVertexArray()
 
-    # An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
+    #: An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
     edges: EdgeArray = EdgeArray([])
 
-    # An :py:class:`~abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray` object.
+    #: An :py:class:`~abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray` object.
     ignoredEdges: IgnoredEdgeArray = IgnoredEdgeArray()
 
-    # A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
+    #: A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
     faces: FaceArray = FaceArray([])
 
-    # A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object.
+    #: A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object.
     cells: CellArray = CellArray([])
 
-    # A repository of Datum objects.
+    #: A repository of Datum objects.
     datums: list[Datum] = list[Datum]()
 
-    # A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
+    #: A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
     elements: MeshElementArray = MeshElementArray([])
 
-    # A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object.
+    #: A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object.
     nodes: MeshNodeArray = MeshNodeArray([])
 
-    # A repository of MeshFace objects specifying all the element faces in the part instance.
-    # For a given element and a given face index within that element, the corresponding
-    # MeshFace object can be retrieved from the repository by using the key calculated as (i*8
-    # + j), where i and j are zero-based element and face indices, respectively.
+    #: A repository of MeshFace objects specifying all the element faces in the part instance.
+    #: For a given element and a given face index within that element, the corresponding
+    #: MeshFace object can be retrieved from the repository by using the key calculated as (i*8
+    #: + j), where i and j are zero-based element and face indices, respectively.
     elemFaces: dict[str, MeshFace] = dict[str, MeshFace]()
 
-    # A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object.
+    #: A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object.
     elementFaces: MeshFaceArray = MeshFaceArray([])
 
-    # A repository of MeshEdge objects specifying all the element edges in the part instance.
-    # For a given element and a given edge index on a given face within that element, the
-    # corresponding MeshEdge object can be retrieved from the repository by using the key
-    # calculated as (i*32 + j*4 + k), where i, j, and k are zero-based element, face, and edge
-    # indices, respectively.
+    #: A repository of MeshEdge objects specifying all the element edges in the part instance.
+    #: For a given element and a given edge index on a given face within that element, the
+    #: corresponding MeshEdge object can be retrieved from the repository by using the key
+    #: calculated as (i*32 + j*4 + k), where i, j, and k are zero-based element, face, and edge
+    #: indices, respectively.
     elemEdges: dict[str, MeshEdge] = dict[str, MeshEdge]()
 
-    # A :py:class:`~abaqus.Mesh.MeshEdgeArray.MeshEdgeArray` object.
+    #: A :py:class:`~abaqus.Mesh.MeshEdgeArray.MeshEdgeArray` object.
     elementEdges: MeshEdgeArray = MeshEdgeArray([])
 
-    # A repository of ReferencePoint objects.
+    #: A repository of ReferencePoint objects.
     referencePoints: dict[str, ReferencePoint] = dict[str, ReferencePoint]()
 
-    # A String specifying the name of the part from which the instance was created.
+    #: A String specifying the name of the part from which the instance was created.
     partName: str = ""
 
     def __init__(

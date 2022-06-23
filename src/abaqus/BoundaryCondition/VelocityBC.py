@@ -40,28 +40,28 @@ class VelocityBC(BoundaryCondition):
         mdb.models[name].boundaryConditions[name]
     """
 
-    # A String specifying the boundary condition repository key.
+    #: A String specifying the boundary condition repository key.
     name: str = ""
 
-    # A SymbolicConstant specifying how the boundary condition is distributed spatially.
-    # Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
+    #: A SymbolicConstant specifying how the boundary condition is distributed spatially.
+    #: Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
     distributionType: SymbolicConstant = UNIFORM
 
-    # A String specifying the name of the AnalyticalField object associated with this boundary
-    # condition. The **fieldName** argument applies only when **distributionType** = FIELD. The
-    # default value is an empty string.
+    #: A String specifying the name of the AnalyticalField object associated with this boundary
+    #: condition. The **fieldName** argument applies only when **distributionType** = FIELD. The
+    #: default value is an empty string.
     fieldName: str = ""
 
-    # A SymbolicConstant specifying the category of the boundary condition. Possible values
-    # are MECHANICAL and THERMAL.
+    #: A SymbolicConstant specifying the category of the boundary condition. Possible values
+    #: are MECHANICAL and THERMAL.
     category: SymbolicConstant = None
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
     region: Region = Region()
 
-    # None or a DatumCsys object specifying the local coordinate system of the boundary
-    # condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
-    # in the global coordinate system. The default value is None.
+    #: None or a DatumCsys object specifying the local coordinate system of the boundary
+    #: condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
+    #: in the global coordinate system. The default value is None.
     localCsys: str = None
 
     def __init__(

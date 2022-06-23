@@ -30,7 +30,7 @@ class IncidentWaveState(InteractionState):
     - INCIDENT WAVE INTERACTION
     """
 
-    # A SymbolicConstant specifying the propagation state of the InteractionState object.
-    # Possible values
-    # are:NOT_YET_ACTIVECREATEDPROPAGATEDMODIFIEDDEACTIVATEDNO_LONGER_ACTIVETYPE_NOT_APPLICABLEINSTANCE_NOT_APPLICABLEBUILT_INTO_BASE_STATE
+    #: A SymbolicConstant specifying the propagation state of the InteractionState object.
+    #: Possible values
+    #: are:NOT_YET_ACTIVECREATEDPROPAGATEDMODIFIEDDEACTIVATEDNO_LONGER_ACTIVETYPE_NOT_APPLICABLEINSTANCE_NOT_APPLICABLEBUILT_INTO_BASE_STATE
     status: SymbolicConstant = None

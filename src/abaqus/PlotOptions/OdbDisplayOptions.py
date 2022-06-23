@@ -44,20 +44,20 @@ class OdbDisplayOptions:
         session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions
     """
 
-    # A :py:class:`~abaqus.PlotOptions.DGCommonOptions.DGCommonOptions` object.
+    #: A :py:class:`~abaqus.PlotOptions.DGCommonOptions.DGCommonOptions` object.
     commonOptions: DGCommonOptions = DGCommonOptions()
 
-    # A :py:class:`~abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions` object.
+    #: A :py:class:`~abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions` object.
     superimposeOptions: DGSuperimposeOptions = DGSuperimposeOptions()
 
-    # A :py:class:`~abaqus.PlotOptions.DGContourOptions.DGContourOptions` object.
+    #: A :py:class:`~abaqus.PlotOptions.DGContourOptions.DGContourOptions` object.
     contourOptions: DGContourOptions = DGContourOptions()
 
-    # A :py:class:`~abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions` object.
+    #: A :py:class:`~abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions` object.
     symbolOptions: DGSymbolOptions = DGSymbolOptions()
 
-    # A :py:class:`~abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions` object.
+    #: A :py:class:`~abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions` object.
     materialOrientationOptions: DGOrientationOptions = DGOrientationOptions()
 
-    # A :py:class:`~abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions` object.
+    #: A :py:class:`~abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions` object.
     displayBodyOptions: DGDisplayBodyOptions = DGDisplayBodyOptions()

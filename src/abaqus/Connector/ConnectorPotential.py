@@ -63,41 +63,41 @@ class ConnectorPotential:
     - CONNECTOR POTENTIAL
     """
 
-    # A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` object specifying the DerivedComponent used in the contribution. This
-    # argument is applicable only if **componentStyle** = DERIVED_COMPONENT.
+    #: A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` object specifying the DerivedComponent used in the contribution. This
+    #: argument is applicable only if **componentStyle** = DERIVED_COMPONENT.
     derivedComponent: DerivedComponent = DerivedComponent()
 
-    # A SymbolicConstant specifying whether a component number or the name of the
-    # DerivedComponent object will be used in the contribution. Possible values are
-    # COMPONENT_NUMBER and DERIVED_COMPONENT. The default value is COMPONENT_NUMBER.
+    #: A SymbolicConstant specifying whether a component number or the name of the
+    #: DerivedComponent object will be used in the contribution. Possible values are
+    #: COMPONENT_NUMBER and DERIVED_COMPONENT. The default value is COMPONENT_NUMBER.
     componentStyle: SymbolicConstant = COMPONENT_NUMBER
 
-    # An Int specifying the component number used in the contribution. This argument is
-    # applicable only if **componentStyle** = COMPONENT_NUMBER. Possible values are 1 ≤≤
-    # **componentNumber** ≤≤ 6. Only available components can be specified. The default value is
-    # 0.
+    #: An Int specifying the component number used in the contribution. This argument is
+    #: applicable only if **componentStyle** = COMPONENT_NUMBER. Possible values are 1 ≤≤
+    #: **componentNumber** ≤≤ 6. Only available components can be specified. The default value is
+    #: 0.
     componentNumber: int = 0
 
-    # A SymbolicConstant specifying the sign of the contribution. Possible values are POSITIVE
-    # and NEGATIVE. The default value is POSITIVE.
+    #: A SymbolicConstant specifying the sign of the contribution. Possible values are POSITIVE
+    #: and NEGATIVE. The default value is POSITIVE.
     sign: SymbolicConstant = POSITIVE
 
-    # A Float specifying the scaling factor for the contribution. The default value is 1.0.
+    #: A Float specifying the scaling factor for the contribution. The default value is 1.0.
     scaleFactor: float = 1
 
-    # A Float specifying the positive exponent for the contribution. The default value is
-    # 2.0.This argument is ignored if the potential operator of the invoking behavior option
-    # is set to MAXIMUM.
+    #: A Float specifying the positive exponent for the contribution. The default value is
+    #: 2.0.This argument is ignored if the potential operator of the invoking behavior option
+    #: is set to MAXIMUM.
     positiveExponent: float = 2
 
-    # A Float specifying the shift factor for the contribution. The default value is 0.0.
+    #: A Float specifying the shift factor for the contribution. The default value is 0.0.
     shiftFactor: float = 0
 
-    # A SymbolicConstant specifying the H function of the contribution: either absolute value,
-    # Macauley bracket, or the identity function. Possible values are ABS, MACAULEY, and
-    # IDENTITY. The default value is ABS.The value of IDENTITY can be used only if
-    # **positiveExponent** = 1.0 and the potential exponent of the invoking behavior option is
-    # also 1.0 (i.e., the potential operator of the invoking behavior option must be SUM).
+    #: A SymbolicConstant specifying the H function of the contribution: either absolute value,
+    #: Macauley bracket, or the identity function. Possible values are ABS, MACAULEY, and
+    #: IDENTITY. The default value is ABS.The value of IDENTITY can be used only if
+    #: **positiveExponent** = 1.0 and the potential exponent of the invoking behavior option is
+    #: also 1.0 (i.e., the potential operator of the invoking behavior option must be SUM).
     hFunction: SymbolicConstant = ABS
 
     def __init__(

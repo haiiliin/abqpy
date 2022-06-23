@@ -27,14 +27,14 @@ class BodyCurrentDensity(Load):
         mdb.models[name].loads[name]
     """
 
-    # A String specifying the load repository key.
+    #: A String specifying the load repository key.
     name: str = ""
 
-    # A SymbolicConstant specifying how the load is distributed spatially. Possible values are
-    # UNIFORM and USER_DEFINED. The default value is UNIFORM.
+    #: A SymbolicConstant specifying how the load is distributed spatially. Possible values are
+    #: UNIFORM and USER_DEFINED. The default value is UNIFORM.
     distributionType: SymbolicConstant = UNIFORM
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
     def __init__(

@@ -29,11 +29,11 @@ class AcousticInterfaceSection(Section):
     - INTERFACE
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A Float specifying the thickness of the section. Possible values are **thickness** >> 0.0.
-    # The default value is 1.0.
+    #: A Float specifying the thickness of the section. Possible values are **thickness** >> 0.0.
+    #: The default value is 1.0.
     thickness: float = 1
 
     def __init__(self, name: str, thickness: float = 1):

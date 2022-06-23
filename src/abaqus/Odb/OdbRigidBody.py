@@ -46,33 +46,33 @@ class OdbRigidBody:
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.rigidBodies[i]
     """
 
-    # An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the reference node set associated with the rigid body.
+    #: An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the reference node set associated with the rigid body.
     referenceNode: OdbSet
 
-    # A SymbolicConstant specifying the specific location of the OdbRigidBody reference node
-    # relative to the rest of the rigid body. Possible values are INPUT and CENTER_OF_MASS.
-    # The default value is INPUT.
+    #: A SymbolicConstant specifying the specific location of the OdbRigidBody reference node
+    #: relative to the rest of the rigid body. Possible values are INPUT and CENTER_OF_MASS.
+    #: The default value is INPUT.
     position: SymbolicConstant = INPUT
 
-    # A Boolean specifying specify whether the OdbRigidBody can have temperature gradients or
-    # be isothermal. This is used only for fully coupled thermal-stress analysis The default
-    # value is ON.
+    #: A Boolean specifying specify whether the OdbRigidBody can have temperature gradients or
+    #: be isothermal. This is used only for fully coupled thermal-stress analysis The default
+    #: value is ON.
     isothermal: Boolean = ON
 
-    # An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the element set whose motion is governed by the motion of
-    # rigid body reference node.
+    #: An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the element set whose motion is governed by the motion of
+    #: rigid body reference node.
     elements: OdbSet = OdbSet("set", tuple[OdbMeshNode]())
 
-    # An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the node set which have both translational and rotational
-    # degrees of freedom associated with the rigid body.
+    #: An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the node set which have both translational and rotational
+    #: degrees of freedom associated with the rigid body.
     tieNodes: OdbSet = OdbSet("set", tuple[OdbMeshNode]())
 
-    # An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the node set which have only translational degrees of
-    # freedom associated with the rigid body.
+    #: An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the node set which have only translational degrees of
+    #: freedom associated with the rigid body.
     pinNodes: OdbSet = OdbSet("set", tuple[OdbMeshNode]())
 
-    # An :py:class:`~abaqus.Odb.AnalyticSurface.AnalyticSurface` object specifying the analytic surface whose motion is governed by
-    # the motion of rigid body reference node.
+    #: An :py:class:`~abaqus.Odb.AnalyticSurface.AnalyticSurface` object specifying the analytic surface whose motion is governed by
+    #: the motion of rigid body reference node.
     analyticSurface: AnalyticSurface = None
 
     def __init__(

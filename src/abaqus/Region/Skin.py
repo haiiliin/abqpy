@@ -33,13 +33,13 @@ class Skin:
         mdb.models[name].rootAssembly.skins[name]
     """
 
-    # A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
+    #: A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
     elements: MeshElementArray = MeshElementArray([])
 
-    # An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
+    #: An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
     edges: EdgeArray = EdgeArray([])
 
-    # A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
+    #: A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
     faces: FaceArray = FaceArray([])
 
     def __init__(

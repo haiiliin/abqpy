@@ -34,7 +34,7 @@ class DerivedComponent:
     - CONNECTOR DERIVED COMPONENT
     """
 
-    # A :py:class:`~abaqus.Connector.CDCTermArray.CDCTermArray` object.
+    #: A :py:class:`~abaqus.Connector.CDCTermArray.CDCTermArray` object.
     cdcTerms: CDCTermArray = CDCTermArray()
 
     def __init__(self):

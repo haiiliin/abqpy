@@ -30,17 +30,17 @@ class Title:
         session.xyPlots[name].title
     """
 
-    # A Boolean specifying whether to show the default title. The default value is OFF.
+    #: A Boolean specifying whether to show the default title. The default value is OFF.
     useDefault: Boolean = OFF
 
-    # An :py:class:`~abaqus.XY.Area.Area` object specifying the area of the title.
+    #: An :py:class:`~abaqus.XY.Area.Area` object specifying the area of the title.
     area: Area = Area()
 
-    # A String specifying the text to appear as a title. By default the title is set to the
-    # XYPlot object name. The default value is an empty string.
+    #: A String specifying the text to appear as a title. By default the title is set to the
+    #: XYPlot object name. The default value is an empty string.
     text: str = ""
 
-    # A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties used to display the legend title.
+    #: A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties used to display the legend title.
     titleStyle: TextStyle = TextStyle()
 
     def setValues(

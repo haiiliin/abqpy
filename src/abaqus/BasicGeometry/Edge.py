@@ -53,22 +53,22 @@ class Edge:
         mdb.models[name].rootAssembly.surfaces[name].edges[i]
     """
 
-    # An Int specifying the index of the edge in the EdgeArray.
+    #: An Int specifying the index of the edge in the EdgeArray.
     index: int = None
 
-    # A Boolean specifying whether the edge belongs to the reference representation of the
-    # Part or Instance.
+    #: A Boolean specifying whether the edge belongs to the reference representation of the
+    #: Part or Instance.
     isReferenceRep: Boolean = OFF
 
-    # A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point located on
-    # the edge.
+    #: A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point located on
+    #: the edge.
     pointOn: float = None
 
-    # A tuple of Floats specifying the name of the feature that created this edge.
+    #: A tuple of Floats specifying the name of the feature that created this edge.
     featureName: float = None
 
-    # A tuple of Floats specifying the name of the part instance for this edge (if
-    # applicable).
+    #: A tuple of Floats specifying the name of the part instance for this edge (if
+    #: applicable).
     instanceName: float = None
 
     def isTangentFlipped(self):

@@ -75,22 +75,22 @@ class Plastic:
     - PLASTIC
     """
 
-    # A :py:class:`~abaqus.Material.Plastic.Metal.RateDependent.RateDependent.RateDependent` object.
+    #: A :py:class:`~abaqus.Material.Plastic.Metal.RateDependent.RateDependent.RateDependent` object.
     rateDependent: RateDependent = RateDependent(((),))
 
-    # A :py:class:`~abaqus.Material.Plastic.Potential.Potential` object.
+    #: A :py:class:`~abaqus.Material.Plastic.Potential.Potential` object.
     potential: Potential = Potential(((),))
 
-    # A :py:class:`~abaqus.Material.Plastic.Metal.Cyclic.CyclicHardening.CyclicHardening` object.
+    #: A :py:class:`~abaqus.Material.Plastic.Metal.Cyclic.CyclicHardening.CyclicHardening` object.
     cyclicHardening: CyclicHardening = CyclicHardening(((),))
 
-    # An :py:class:`~abaqus.Material.Plastic.Metal.ORNL.Ornl.Ornl` object.
+    #: An :py:class:`~abaqus.Material.Plastic.Metal.ORNL.Ornl.Ornl` object.
     ornl: Ornl = Ornl()
 
-    # A :py:class:`~abaqus.Material.Plastic.Metal.Cyclic.CycledPlastic.CycledPlastic` object.
+    #: A :py:class:`~abaqus.Material.Plastic.Metal.Cyclic.CycledPlastic.CycledPlastic` object.
     cycledPlastic: CycledPlastic = CycledPlastic(((),))
 
-    # An :py:class:`~abaqus.Material.Plastic.Metal.Annealing.AnnealTemperature.AnnealTemperature` object.
+    #: An :py:class:`~abaqus.Material.Plastic.Metal.Annealing.AnnealTemperature.AnnealTemperature` object.
     annealTemperature: AnnealTemperature = AnnealTemperature(((),))
 
     def __init__(

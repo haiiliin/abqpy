@@ -36,23 +36,23 @@ class LineLoad(Load):
         mdb.models[name].loads[name]
     """
 
-    # A String specifying the load repository key.
+    #: A String specifying the load repository key.
     name: str = ""
 
-    # A SymbolicConstant specifying how the load is distributed spatially. Possible values are
-    # UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
+    #: A SymbolicConstant specifying how the load is distributed spatially. Possible values are
+    #: UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
     distributionType: SymbolicConstant = UNIFORM
 
-    # A SymbolicConstant specifying whether the load is applied in a global or the beam local
-    # frame of reference. Possible values are GLOBAL and LOCAL. The default value is GLOBAL.
+    #: A SymbolicConstant specifying whether the load is applied in a global or the beam local
+    #: frame of reference. Possible values are GLOBAL and LOCAL. The default value is GLOBAL.
     system: SymbolicConstant = GLOBAL
 
-    # A String specifying the name of the AnalyticalField object associated with this load.
-    # The **field** argument applies only when **distributionType** = FIELD. The default value is an
-    # empty string.
+    #: A String specifying the name of the AnalyticalField object associated with this load.
+    #: The **field** argument applies only when **distributionType** = FIELD. The default value is an
+    #: empty string.
     field: str = ""
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
     def __init__(

@@ -31,14 +31,14 @@ class HomogeneousSolidSection(SolidSection):
     - SOLID SECTION
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A String specifying the name of the material.
+    #: A String specifying the name of the material.
     material: str
 
-    # None or a Float specifying the thickness of the section. Possible values
-    # are None or a floating point value such that thickness >  0.0. The default value is None.
+    #: None or a Float specifying the thickness of the section. Possible values
+    #: are None or a floating point value such that thickness >  0.0. The default value is None.
     thickness: float = None
 
     def __init__(self, name: str, material: str, thickness: float = None):

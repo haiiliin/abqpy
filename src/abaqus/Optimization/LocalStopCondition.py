@@ -56,49 +56,49 @@ class LocalStopCondition(StopCondition):
         mdb.models[name].optimizationTasks[name].stopConditions[name]
     """
 
-    # A String specifying the stop condition repository key.
+    #: A String specifying the stop condition repository key.
     name: str
 
-    # A Float specifying the factor used to modify the reference value.
+    #: A Float specifying the factor used to modify the reference value.
     referenceFactor: float
 
-    # A SymbolicConstant specifying the operation used to compare the selected value to the
-    # reference value. Possible values are LESS_THAN, LESS_THAN_EQUAL, EQUAL,
-    # GREATER_THAN_EQUAL, and GREATER_THAN. The default value is LESS_THAN.
+    #: A SymbolicConstant specifying the operation used to compare the selected value to the
+    #: reference value. Possible values are LESS_THAN, LESS_THAN_EQUAL, EQUAL,
+    #: GREATER_THAN_EQUAL, and GREATER_THAN. The default value is LESS_THAN.
     comparisonOperation: SymbolicConstant = LESS_THAN
 
-    # A SymbolicConstant specifying the variable identifier of the compared value. Possible
-    # values are:
-    # - ABSOLUTE_GROWTH_MOVEMENT
-    # - ABSOLUTE_SHRINK_MOVEMENT
-    # - GROWTH_MOVEMENT
-    # - SHRINK_MOVEMENT
-    # - MOVEMENT
-    # - TOTAL_ABSOLUTE_MOVEMENT
-    # - EQUIV_STRESS
-    # - FREE_TASK_REGION_EQUIV_STRESS
-    # - RESTRICTED_TASK_REGION_EQUIV_STRESS
-    # - SURFACE_POINT_EQUIV_STRESS
-    # - TASK_REGION_EQUIV_STRESS
-    # 
-    # The default value is MOVEMENT.
+    #: A SymbolicConstant specifying the variable identifier of the compared value. Possible
+    #: values are:
+    #: - ABSOLUTE_GROWTH_MOVEMENT
+    #: - ABSOLUTE_SHRINK_MOVEMENT
+    #: - GROWTH_MOVEMENT
+    #: - SHRINK_MOVEMENT
+    #: - MOVEMENT
+    #: - TOTAL_ABSOLUTE_MOVEMENT
+    #: - EQUIV_STRESS
+    #: - FREE_TASK_REGION_EQUIV_STRESS
+    #: - RESTRICTED_TASK_REGION_EQUIV_STRESS
+    #: - SURFACE_POINT_EQUIV_STRESS
+    #: - TASK_REGION_EQUIV_STRESS
+    #: 
+    #: The default value is MOVEMENT.
     identifier: SymbolicConstant = MOVEMENT
 
-    # A SymbolicConstant specifying the operation used to evaluate values in the region.
-    # Possible values are MAXIMUM, MINIMUM, and SUM. The default value is MAXIMUM.
+    #: A SymbolicConstant specifying the operation used to evaluate values in the region.
+    #: Possible values are MAXIMUM, MINIMUM, and SUM. The default value is MAXIMUM.
     identifierOperation: SymbolicConstant = MAXIMUM
 
-    # A SymbolicConstant specifying the iteration from which a value is compared to the
-    # reference value. Possible values are FIRST and PREVIOUS. The default value is PREVIOUS.
+    #: A SymbolicConstant specifying the iteration from which a value is compared to the
+    #: reference value. Possible values are FIRST and PREVIOUS. The default value is PREVIOUS.
     referenceDesignCycle: SymbolicConstant = PREVIOUS
 
-    # A SymbolicConstant specifying the operation used to modify the reference value by the
-    # reference factor. Possible values are ADD, DIVIDE, MULTIPLY, and SUBTRACT. The default
-    # value is ADD.
+    #: A SymbolicConstant specifying the operation used to modify the reference value by the
+    #: reference factor. Possible values are ADD, DIVIDE, MULTIPLY, and SUBTRACT. The default
+    #: value is ADD.
     referenceOperation: SymbolicConstant = ADD
 
-    # The SymbolicConstant MODEL or a Region object specifying the region to which the stop
-    # condition is applied. The default value is MODEL.
+    #: The SymbolicConstant MODEL or a Region object specifying the region to which the stop
+    #: condition is applied. The default value is MODEL.
     region: SymbolicConstant = MODEL
 
     def __init__(

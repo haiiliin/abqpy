@@ -38,28 +38,28 @@ class HistoryOutput:
         session.odbs[name].steps[name].historyRegions[name].historyOutputs[name]
     """
 
-    # A tuple of pairs of Floats specifying the pairs (*frameValue*, **value**) where
-    # **frameValue** is either time, frequency, or mode and **value** is the value of the
-    # specified variable at **frameValue**. (This value depends on the type of the variable.)
+    #: A tuple of pairs of Floats specifying the pairs (*frameValue*, **value**) where
+    #: **frameValue** is either time, frequency, or mode and **value** is the value of the
+    #: specified variable at **frameValue**. (This value depends on the type of the variable.)
     data: float = None
 
-    # A tuple of pairs of Floats specifying the imaginary portion of a specified complex
-    # variable at each frame value (time, frequency, or mode). The pairs have the form
-    # (*frameValue*, **value**).
+    #: A tuple of pairs of Floats specifying the imaginary portion of a specified complex
+    #: variable at each frame value (time, frequency, or mode). The pairs have the form
+    #: (*frameValue*, **value**).
     conjugateData: float = None
 
-    # A String specifying the output variable name.
+    #: A String specifying the output variable name.
     name: str
 
-    # A String specifying the output variable.
+    #: A String specifying the output variable.
     description: str
 
-    # A SymbolicConstant specifying the output type. Only SCALAR is currently supported.
+    #: A SymbolicConstant specifying the output type. Only SCALAR is currently supported.
     type: SymbolicConstant
 
-    # A sequence of SymbolicConstants specifying which invariants should be calculated for
-    # this field. Possible values are MAGNITUDE, MISES, TRESCA, PRESS, INV3, MAX_PRINCIPAL,
-    # MID_PRINCIPAL, and MIN_PRINCIPAL. The default value is an empty sequence.
+    #: A sequence of SymbolicConstants specifying which invariants should be calculated for
+    #: this field. Possible values are MAGNITUDE, MISES, TRESCA, PRESS, INV3, MAX_PRINCIPAL,
+    #: MID_PRINCIPAL, and MIN_PRINCIPAL. The default value is an empty sequence.
     validInvariants: SymbolicConstant = None
 
     def __init__(

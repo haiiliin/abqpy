@@ -91,76 +91,76 @@ class NormalBehavior:
     - SURFACE BEHAVIOR
     """
 
-    # The SymbolicConstant DEFAULT or a Float specifying the contact stiffness. This argument
-    # is valid for **pressureOverclosure** = LINEAR. This argument is also valid for
-    # **pressureOverclosure** = HARD when **constraintEnforcementMethod** = AUGMENTED_LAGRANGE or
-    # PENALTY. A value of DEFAULT is valid only when the later conditions are met. A value of
-    # zero is equivalent to specifying DEFAULT. The default value is DEFAULT.
+    #: The SymbolicConstant DEFAULT or a Float specifying the contact stiffness. This argument
+    #: is valid for **pressureOverclosure** = LINEAR. This argument is also valid for
+    #: **pressureOverclosure** = HARD when **constraintEnforcementMethod** = AUGMENTED_LAGRANGE or
+    #: PENALTY. A value of DEFAULT is valid only when the later conditions are met. A value of
+    #: zero is equivalent to specifying DEFAULT. The default value is DEFAULT.
     contactStiffness: typing.Union[SymbolicConstant, float] = DEFAULT
 
-    # A SymbolicConstant specifying the pressure-overclosure relationship to be used. Possible
-    # values are HARD, EXPONENTIAL, LINEAR, TABULAR, and SCALE_FACTOR. The default value is
-    # HARD.
+    #: A SymbolicConstant specifying the pressure-overclosure relationship to be used. Possible
+    #: values are HARD, EXPONENTIAL, LINEAR, TABULAR, and SCALE_FACTOR. The default value is
+    #: HARD.
     pressureOverclosure: SymbolicConstant = HARD
 
-    # A Boolean specifying whether to allow separation after contact. The default value is ON.
+    #: A Boolean specifying whether to allow separation after contact. The default value is ON.
     allowSeparation: Boolean = ON
 
-    # None or a Float specifying the maximum stiffness. If **maxStiffness** = None, there is no
-    # upper limit. The default value is None.
+    #: None or a Float specifying the maximum stiffness. If **maxStiffness** = None, there is no
+    #: upper limit. The default value is None.
     maxStiffness: float = None
 
-    # A sequence of sequences of Floats specifying the normal behavior properties. This
-    # argument is valid only for **pressureOverclosure** = EXPONENTIAL or TABULAR. The items in
-    # the table data are described below.
+    #: A sequence of sequences of Floats specifying the normal behavior properties. This
+    #: argument is valid only for **pressureOverclosure** = EXPONENTIAL or TABULAR. The items in
+    #: the table data are described below.
     table: tuple = ()
 
-    # A SymbolicConstant specifying the method for enforcement of the contact constraint.
-    # Possible values are DEFAULT, AUGMENTED_LAGRANGE, PENALTY, and DIRECT. The default value
-    # is DEFAULT.
+    #: A SymbolicConstant specifying the method for enforcement of the contact constraint.
+    #: Possible values are DEFAULT, AUGMENTED_LAGRANGE, PENALTY, and DIRECT. The default value
+    #: is DEFAULT.
     constraintEnforcementMethod: SymbolicConstant = DEFAULT
 
-    # A Float specifying the overclosure measure (used to delineate the segments of the
-    # pressure-overclosure curve) as a percentage of the minimum element size in the contact
-    # region. The default value is 0.0.
+    #: A Float specifying the overclosure measure (used to delineate the segments of the
+    #: pressure-overclosure curve) as a percentage of the minimum element size in the contact
+    #: region. The default value is 0.0.
     overclosureFactor: float = 0
 
-    # A Float specifying the overclosure measure (used to delineate the segments of the
-    # pressure-overclosure curve) directly. The default value is 0.0.
+    #: A Float specifying the overclosure measure (used to delineate the segments of the
+    #: pressure-overclosure curve) directly. The default value is 0.0.
     overclosureMeasure: float = 0
 
-    # A Float specifying scale factor for the penalty stiffness or the geometric scaling of
-    # the "base" stiffness. The default value is 1.0.
+    #: A Float specifying scale factor for the penalty stiffness or the geometric scaling of
+    #: the "base" stiffness. The default value is 1.0.
     contactStiffnessScaleFactor: float = 1
 
-    # A Float specifying an additional scale factor for the "base" default contact stiffness.
-    # The default value is 1.0.
+    #: A Float specifying an additional scale factor for the "base" default contact stiffness.
+    #: The default value is 1.0.
     initialStiffnessScaleFactor: float = 1
 
-    # A Float specifying the clearance at which the contact pressure is zero. The default
-    # value is 0.0.
+    #: A Float specifying the clearance at which the contact pressure is zero. The default
+    #: value is 0.0.
     clearanceAtZeroContactPressure: float = 0
 
-    # A SymbolicConstant specifying the type of penalty stiffness to be defined. This argument
-    # is valid only when **constraintEnforcementMethod** = PENALTY. Possible values are LINEAR and
-    # NONLINEAR. The default value is LINEAR.
+    #: A SymbolicConstant specifying the type of penalty stiffness to be defined. This argument
+    #: is valid only when **constraintEnforcementMethod** = PENALTY. Possible values are LINEAR and
+    #: NONLINEAR. The default value is LINEAR.
     stiffnessBehavior: SymbolicConstant = LINEAR
 
-    # A Float specifying the ratio of the initial stiffness divided by the final stiffness.
-    # This argument is valid only when **stiffnessBehavior** = NONLINEAR. Possible values are 0 ≤≤
-    # **stiffnessRatio** << 1. The default value is 0.01.
+    #: A Float specifying the ratio of the initial stiffness divided by the final stiffness.
+    #: This argument is valid only when **stiffnessBehavior** = NONLINEAR. Possible values are 0 ≤≤
+    #: **stiffnessRatio** << 1. The default value is 0.01.
     stiffnessRatio: float = 0
 
-    # A Float specifying the ratio of the overclosure at the maximum stiffness divided by the
-    # characteristic facet length. This argument is valid only when
-    # **stiffnessBehavior** = NONLINEAR. The default value is 0.03.
+    #: A Float specifying the ratio of the overclosure at the maximum stiffness divided by the
+    #: characteristic facet length. This argument is valid only when
+    #: **stiffnessBehavior** = NONLINEAR. The default value is 0.03.
     upperQuadraticFactor: float = 0
 
-    # A Float specifying the ratio of the overclosure at the initial stiffness divided by the
-    # overclosure at the maximum stiffness, both relative to the clearance at which the
-    # contact pressure is zero. This argument is valid only when
-    # **stiffnessBehavior** = NONLINEAR. Possible values are 0 ≤≤ **stiffnessRatio** << 1. The
-    # default value is 0.33333.
+    #: A Float specifying the ratio of the overclosure at the initial stiffness divided by the
+    #: overclosure at the maximum stiffness, both relative to the clearance at which the
+    #: contact pressure is zero. This argument is valid only when
+    #: **stiffnessBehavior** = NONLINEAR. Possible values are 0 ≤≤ **stiffnessRatio** << 1. The
+    #: default value is 0.33333.
     lowerQuadraticRatio: float = 0
 
     def __init__(

@@ -25,18 +25,18 @@ class DataTable:
         mdb.models[name].discreteFields[name].data[i]
     """
 
-    # An Int specifying the width of the data. Valid widths are 1, 6, 21, corresponding to
-    # scalar data, orientations and 4D tensors.
+    #: An Int specifying the width of the data. Valid widths are 1, 6, 21, corresponding to
+    #: scalar data, orientations and 4D tensors.
     dataWidth: int = None
 
-    # A String specifying the index.
+    #: A String specifying the index.
     name: str = ""
 
-    # A String specifying the instance name.
+    #: A String specifying the instance name.
     instanceName: str = ""
 
-    # A tuple of Ints specifying the domain node, element or integration point identifiers.
+    #: A tuple of Ints specifying the domain node, element or integration point identifiers.
     domain: int = None
 
-    # A tuple of Floats specifying the data within the domain.
+    #: A tuple of Floats specifying the data within the domain.
     table: float = None

@@ -49,41 +49,41 @@ class PartDisplayOptions:
         session.viewports[name].partDisplay
     """
 
-    # A Boolean specifying whether engineering features are shown. The default value is OFF.
+    #: A Boolean specifying whether engineering features are shown. The default value is OFF.
     engineeringFeatures: Boolean = OFF
 
-    # A Boolean specifying whether to render the beam profiles. The default value is OFF.
+    #: A Boolean specifying whether to render the beam profiles. The default value is OFF.
     renderBeamProfiles: Boolean = OFF
 
-    # A Float specifying the beam profile scale factor. The beamScaleFactor must be greater
-    # than zero. The default value is 1.0.
+    #: A Float specifying the beam profile scale factor. The beamScaleFactor must be greater
+    #: than zero. The default value is 1.0.
     beamScaleFactor: float = 1
 
-    # A Boolean specifying whether the mesh should be displayed.
+    #: A Boolean specifying whether the mesh should be displayed.
     mesh: Boolean = OFF
 
-    # A SymbolicConstant specifying how the image in the viewport is rendered. Possible values
-    # are WIREFRAME, HIDDEN, and SHADED. The default value is WIREFRAME.
+    #: A SymbolicConstant specifying how the image in the viewport is rendered. Possible values
+    #: are WIREFRAME, HIDDEN, and SHADED. The default value is WIREFRAME.
     renderStyle: SymbolicConstant = WIREFRAME
 
-    # A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object specifying the current display group and referring to an object in
-    # the **displayGroups** member of Session.
+    #: A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object specifying the current display group and referring to an object in
+    #: the **displayGroups** member of Session.
     displayGroup: DisplayGroup = DisplayGroup("dg", Leaf(EMPTY_LEAF))
 
-    # A repository of DisplayGroupInstance objects.
+    #: A repository of DisplayGroupInstance objects.
     displayGroupInstances: dict[str, DisplayGroupInstance] = dict[
         str, DisplayGroupInstance
     ]()
 
-    # An :py:class:`~abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions` object.
+    #: An :py:class:`~abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions` object.
     engineeringFeatureOptions: EngineeringFeatureDisplayOptions = (
         EngineeringFeatureDisplayOptions()
     )
 
-    # A :py:class:`~abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions` object.
+    #: A :py:class:`~abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions` object.
     geometryOptions: GeometryDisplayOptions = GeometryDisplayOptions()
 
-    # A :py:class:`~abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions` object.
+    #: A :py:class:`~abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions` object.
     meshOptions: MeshDisplayOptions = MeshDisplayOptions()
 
     def setValues(

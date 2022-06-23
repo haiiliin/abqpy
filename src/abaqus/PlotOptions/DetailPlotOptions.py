@@ -20,5 +20,5 @@ class DetailPlotOptions:
         session.viewports[name].detailPlotOptions
     """
 
-    # A :py:class:`~abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions` object.
+    #: A :py:class:`~abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions` object.
     plyStackPlotOptions: PlyStackPlotOptions = PlyStackPlotOptions()

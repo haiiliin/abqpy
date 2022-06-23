@@ -29,18 +29,18 @@ class ActivateElements:
             - ElementProgressiveActivation
     """
 
-    # A String specifying the name of the tableCollection object.
+    #: A String specifying the name of the tableCollection object.
     tableCollection: str
 
-    # A string specifying the name of progressive element activation.
+    #: A string specifying the name of progressive element activation.
     activation: str
 
-    # A Double specifying the time constant used to ramp up the eigenstrains at element
-    # activation.
+    #: A Double specifying the time constant used to ramp up the eigenstrains at element
+    #: activation.
     eigenTimeConst: str = ""
 
-    # A Double specifying the time constant used to ramp up the thermal strains at element
-    # activation.
+    #: A Double specifying the time constant used to ramp up the thermal strains at element
+    #: activation.
     expansionTimeConstant: str = ""
 
     def __init__(

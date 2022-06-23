@@ -24,7 +24,7 @@ class FieldReportOptions:
         session.fieldReportOptions
     """
 
-    # Format of the number
+    #: Format of the number
     numberFormat: NumberFormat = NumberFormat()
 
     def setValues(

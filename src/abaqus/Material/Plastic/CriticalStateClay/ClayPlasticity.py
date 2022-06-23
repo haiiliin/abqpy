@@ -49,7 +49,7 @@ class ClayPlasticity:
     - CLAY PLASTICITY
     """
 
-    # A :py:class:`~abaqus.Material.Plastic.CriticalStateClay.ClayHardening.ClayHardening` object.
+    #: A :py:class:`~abaqus.Material.Plastic.CriticalStateClay.ClayHardening.ClayHardening` object.
     clayHardening: ClayHardening = ClayHardening(((),))
 
     def __init__(

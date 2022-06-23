@@ -30,11 +30,11 @@ class ActuatorAmplitude(Amplitude):
     - AMPLITUDE
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
-    # and TOTAL. The default value is STEP.
+    #: A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+    #: and TOTAL. The default value is STEP.
     timeSpan: SymbolicConstant = STEP
 
     def __init__(self, name: str, timeSpan: SymbolicConstant = STEP):

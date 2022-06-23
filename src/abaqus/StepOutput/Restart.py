@@ -35,22 +35,22 @@ class Restart:
     - RESTART
     """
 
-    # An Int specifying the number of intervals during the step at which restart information
-    # will be written. The default value is 0. The default value is 1.
+    #: An Int specifying the number of intervals during the step at which restart information
+    #: will be written. The default value is 0. The default value is 1.
     numberIntervals: int = 0
 
-    # A Boolean specifying whether to use exact time marks for writing during an analysis. The
-    # default value is OFF. The default value is OFF.
+    #: A Boolean specifying whether to use exact time marks for writing during an analysis. The
+    #: default value is OFF. The default value is OFF.
     timeMarks: Boolean = OFF
 
-    # A Boolean specifying that only one increment per step should be retained on the restart
-    # file, thus minimizing the size of the restart file. The default value is OFF. The
-    # default value is ON.
+    #: A Boolean specifying that only one increment per step should be retained on the restart
+    #: file, thus minimizing the size of the restart file. The default value is OFF. The
+    #: default value is ON.
     overlay: Boolean = OFF
 
-    # An Int specifying the increments at which restart information will be written. The
-    # default value is 0. The default value is 0.This argument applies only to Abaqus/Standard
-    # analyses.
+    #: An Int specifying the increments at which restart information will be written. The
+    #: default value is 0. The default value is 0.This argument applies only to Abaqus/Standard
+    #: analyses.
     frequency: int = 0
 
     def __init__(

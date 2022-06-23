@@ -19,5 +19,5 @@ class CompositeDamping:
         mdb.models[name].steps[name].compositeDamping
     """
 
-    # A :py:class:`~abaqus.StepMiscellaneous.CompositeDampingComponentArray.CompositeDampingComponentArray` object.
+    #: A :py:class:`~abaqus.StepMiscellaneous.CompositeDampingComponentArray.CompositeDampingComponentArray` object.
     components: CompositeDampingComponentArray = CompositeDampingComponentArray()

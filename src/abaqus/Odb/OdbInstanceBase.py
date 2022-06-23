@@ -67,55 +67,55 @@ class OdbInstanceBase:
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance
     """
 
-    # A String specifying the instance name.
+    #: A String specifying the instance name.
     name: str = ""
 
-    # A SymbolicConstant specifying the type of the Part object. Only a value of
-    # DEFORMABLE_BODY is currently supported.
+    #: A SymbolicConstant specifying the type of the Part object. Only a value of
+    #: DEFORMABLE_BODY is currently supported.
     type: SymbolicConstant = None
 
-    # A SymbolicConstant specifying the dimensionality of the Part object. Possible values are
-    # THREE_D, TWO_D_PLANAR, AXISYMMETRIC, and UNKNOWN_DIMENSION.
+    #: A SymbolicConstant specifying the dimensionality of the Part object. Possible values are
+    #: THREE_D, TWO_D_PLANAR, AXISYMMETRIC, and UNKNOWN_DIMENSION.
     embeddedSpace: SymbolicConstant = None
 
-    # A SymbolicConstant specifying the state of the Instance as modified by the analysis.
-    # This member is only present if the Instance is part of the RootAssemblyState tree.
-    # Possible values are:PROPAGATED, specifying that the value is the same as the previous
-    # frame or the original rootAssembly.MODIFIED, specifying that the geometry of the
-    # instance has been changed at this frame.The default value is PROPAGATED.
+    #: A SymbolicConstant specifying the state of the Instance as modified by the analysis.
+    #: This member is only present if the Instance is part of the RootAssemblyState tree.
+    #: Possible values are:PROPAGATED, specifying that the value is the same as the previous
+    #: frame or the original rootAssembly.MODIFIED, specifying that the geometry of the
+    #: instance has been changed at this frame.The default value is PROPAGATED.
     resultState: SymbolicConstant = PROPAGATED
 
-    # An :py:class:`~abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray` object.
+    #: An :py:class:`~abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray` object.
     nodes: OdbMeshNodeArray = OdbMeshNodeArray()
 
-    # An :py:class:`~abaqus.Odb.OdbMeshElementArray.OdbMeshElementArray` object.
+    #: An :py:class:`~abaqus.Odb.OdbMeshElementArray.OdbMeshElementArray` object.
     elements: OdbMeshElementArray = OdbMeshElementArray()
 
-    # A repository of OdbSet objects specifying node sets.
+    #: A repository of OdbSet objects specifying node sets.
     nodeSets: dict[str, OdbSet] = dict[str, OdbSet]()
 
-    # A repository of OdbSet objects specifying element sets.
+    #: A repository of OdbSet objects specifying element sets.
     elementSets: dict[str, OdbSet] = dict[str, OdbSet]()
 
-    # A repository of OdbSet objects specifying surfaces.
+    #: A repository of OdbSet objects specifying surfaces.
     surfaces: dict[str, OdbSet] = dict[str, OdbSet]()
 
-    # A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
+    #: A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
     sectionAssignments: SectionAssignmentArray = SectionAssignmentArray()
 
-    # An :py:class:`~abaqus.Odb.OdbRigidBodyArray.OdbRigidBodyArray` object.
+    #: An :py:class:`~abaqus.Odb.OdbRigidBodyArray.OdbRigidBodyArray` object.
     rigidBodies: OdbRigidBodyArray = OdbRigidBodyArray()
 
-    # A :py:class:`~abaqus.Odb.BeamOrientationArray.BeamOrientationArray` object.
+    #: A :py:class:`~abaqus.Odb.BeamOrientationArray.BeamOrientationArray` object.
     beamOrientations: BeamOrientationArray = BeamOrientationArray()
 
-    # A :py:class:`~abaqus.Property.MaterialOrientationArray.MaterialOrientationArray` object.
+    #: A :py:class:`~abaqus.Property.MaterialOrientationArray.MaterialOrientationArray` object.
     materialOrientations: MaterialOrientationArray = MaterialOrientationArray()
 
-    # A :py:class:`~abaqus.Odb.RebarOrientationArray.RebarOrientationArray` object.
+    #: A :py:class:`~abaqus.Odb.RebarOrientationArray.RebarOrientationArray` object.
     rebarOrientations: RebarOrientationArray = RebarOrientationArray()
 
-    # An :py:class:`~abaqus.Odb.AnalyticSurface.AnalyticSurface` object specifying analytic Surface defined on the instance.
+    #: An :py:class:`~abaqus.Odb.AnalyticSurface.AnalyticSurface` object specifying analytic Surface defined on the instance.
     analyticSurface: AnalyticSurface = AnalyticSurface()
 
     def __init__(self, name: str, object: OdbPart, localCoordSystem: tuple = ()):

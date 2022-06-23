@@ -29,18 +29,18 @@ class BeadGrowth(GeometricRestriction):
         mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
 
-    # A String specifying the geometric restriction repository key.
+    #: A String specifying the geometric restriction repository key.
     name: str
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
     region: Region
 
-    # A Float specifying the maximum optimization displacement in the growth direction. Either
-    # **beadGrowth** or **shrink** or both must be specified. The default value is 0.0.
+    #: A Float specifying the maximum optimization displacement in the growth direction. Either
+    #: **beadGrowth** or **shrink** or both must be specified. The default value is 0.0.
     beadGrowth: float = 0
 
-    # A Float specifying the maximum optimization displacement in the shrink direction. Either
-    # **beadGrowth** or **shrink** or both must be specified The default value is 0.0.
+    #: A Float specifying the maximum optimization displacement in the shrink direction. Either
+    #: **beadGrowth** or **shrink** or both must be specified The default value is 0.0.
     shrink: float = 0
 
     def __init__(

@@ -43,18 +43,18 @@ class DatumCsys(Datum):
         session.odbs[name].rootAssembly.connectorOrientations[i].localCsys2
     """
 
-    # A SymbolicConstant specifying the type of the coordinate system. Possible values are
-    # CARTESIAN, CYLINDRICAL, and SPHERICAL.
+    #: A SymbolicConstant specifying the type of the coordinate system. Possible values are
+    #: CARTESIAN, CYLINDRICAL, and SPHERICAL.
     coordSysType: SymbolicConstant = None
 
-    # A :py:class:`~abaqus.Datum.DatumPoint.DatumPoint` object specifying the origin of the coordinate system.
+    #: A :py:class:`~abaqus.Datum.DatumPoint.DatumPoint` object specifying the origin of the coordinate system.
     origin: DatumPoint = DatumPoint()
 
-    # A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the 1-direction of the coordinate system.
+    #: A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the 1-direction of the coordinate system.
     axis1: DatumAxis = DatumAxis()
 
-    # A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the 2-direction of the coordinate system.
+    #: A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the 2-direction of the coordinate system.
     axis2: DatumAxis = DatumAxis()
 
-    # A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the 3-direction of the coordinate system.
+    #: A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the 3-direction of the coordinate system.
     axis3: DatumAxis = DatumAxis()

@@ -24,5 +24,5 @@ class SolidSection(Section):
         session.odbs[name].sections[name]
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str = ""

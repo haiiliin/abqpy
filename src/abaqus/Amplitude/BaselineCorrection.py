@@ -25,9 +25,9 @@ class BaselineCorrection:
     - BASELINE CORRECTION
     """
 
-    # A sequence of Floats specifying the correction time interval end points. Possible values
-    # are positive and monotonically increasing Floats. The default value is an empty
-    # sequence.
+    #: A sequence of Floats specifying the correction time interval end points. Possible values
+    #: are positive and monotonically increasing Floats. The default value is an empty
+    #: sequence.
     intervals: tuple = ()
 
     def __init__(self, intervals: tuple = ()):

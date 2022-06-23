@@ -32,17 +32,17 @@ class ElasticFoundation(Interaction):
     - FOUNDATION
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A String specifying the name of the step in which the ElasticFoundation object is
-    # created. **createStepName** must be set to 'Initial'.
+    #: A String specifying the name of the step in which the ElasticFoundation object is
+    #: created. **createStepName** must be set to 'Initial'.
     createStepName: str
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the surface to which the foundation applies.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the surface to which the foundation applies.
     surface: Region
 
-    # A Float specifying the foundation stiffness per area (or per length for beams).
+    #: A Float specifying the foundation stiffness per area (or per length for beams).
     stiffness: float
 
     def __init__(

@@ -20,8 +20,8 @@ class SubstructureGenerateFrequency:
         mdb.models[name].steps[name].frequencyRange[i]
     """
 
-    # A Float specifying the lower limit of the frequency range, in cycles/time.
+    #: A Float specifying the lower limit of the frequency range, in cycles/time.
     lower: float = None
 
-    # A Float specifying the upper limit of the frequency range, in cycles/time.
+    #: A Float specifying the upper limit of the frequency range, in cycles/time.
     upper: float = None

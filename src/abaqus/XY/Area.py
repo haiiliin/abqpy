@@ -85,71 +85,71 @@ class Area:
         session.xyPlots[name].title.area
     """
 
-    # A Boolean specifying whether the area is inset or occupies a reserved area. The default
-    # value is OFF.
+    #: A Boolean specifying whether the area is inset or occupies a reserved area. The default
+    #: value is OFF.
     inset: Boolean = OFF
 
-    # A SymbolicConstant specifying how the area is positioned. Possible values are AUTO_ALIGN
-    # and MANUAL. The default value is AUTO_ALIGN.
+    #: A SymbolicConstant specifying how the area is positioned. Possible values are AUTO_ALIGN
+    #: and MANUAL. The default value is AUTO_ALIGN.
     positionMethod: SymbolicConstant = AUTO_ALIGN
 
-    # A SymbolicConstant specifying the relative position of the area in its parent when
-    # **positionMethod** = AUTO_ALIGN. Possible values are:
-    # - BOTTOM_LEFT
-    # - BOTTOM_CENTER
-    # - BOTTOM_RIGHT
-    # - CENTER_LEFT
-    # - CENTER
-    # - CENTER_RIGHT
-    # - TOP_LEFT
-    # - TOP_CENTER
-    # - TOP_RIGHT
-    # The default value is BOTTOM_LEFT.
+    #: A SymbolicConstant specifying the relative position of the area in its parent when
+    #: **positionMethod** = AUTO_ALIGN. Possible values are:
+    #: - BOTTOM_LEFT
+    #: - BOTTOM_CENTER
+    #: - BOTTOM_RIGHT
+    #: - CENTER_LEFT
+    #: - CENTER
+    #: - CENTER_RIGHT
+    #: - TOP_LEFT
+    #: - TOP_CENTER
+    #: - TOP_RIGHT
+    #: The default value is BOTTOM_LEFT.
     alignment: SymbolicConstant = BOTTOM_LEFT
 
-    # A SymbolicConstant specifying how the area size is defined. Possible values are
-    # AUTOMATIC and MANUAL. The default value is AUTOMATIC.
+    #: A SymbolicConstant specifying how the area size is defined. Possible values are
+    #: AUTOMATIC and MANUAL. The default value is AUTOMATIC.
     sizeMethod: SymbolicConstant = AUTOMATIC
 
-    # A Float specifying the width of the area in mm. The default value is 1.0.
+    #: A Float specifying the width of the area in mm. The default value is 1.0.
     width: float = 1
 
-    # A Float specifying the height of the area in mm. The default value is 1.0.
+    #: A Float specifying the height of the area in mm. The default value is 1.0.
     height: float = 1
 
-    # A Float specifying the scale as a fraction of the width of the available area when the
-    # sizeMethod=MANUAL. The valid range is (0, 1). The default value is 1.0.
+    #: A Float specifying the scale as a fraction of the width of the available area when the
+    #: sizeMethod=MANUAL. The valid range is (0, 1). The default value is 1.0.
     widthScale: float = 1
 
-    # A Float specifying the scale as a fraction of the height of the available area when the
-    # **sizeMethod** = MANUAL. The valid range is (0, 1). The default value is 1.0.
+    #: A Float specifying the scale as a fraction of the height of the available area when the
+    #: **sizeMethod** = MANUAL. The valid range is (0, 1). The default value is 1.0.
     heightScale: float = 1
 
-    # A Float specifying the left padding of the area in mm. The default value is 1.0.
+    #: A Float specifying the left padding of the area in mm. The default value is 1.0.
     pl: float = 1
 
-    # A Float specifying the right padding of the area in mm. The default value is 1.0.
+    #: A Float specifying the right padding of the area in mm. The default value is 1.0.
     pr: float = 1
 
-    # A Float specifying the top padding of the area in mm. The default value is 1.0.
+    #: A Float specifying the top padding of the area in mm. The default value is 1.0.
     pt: float = 1
 
-    # A Float specifying the bottom padding of the area in mm. The default value is 1.0.
+    #: A Float specifying the bottom padding of the area in mm. The default value is 1.0.
     pb: float = 1
 
-    # An :py:class:`~abaqus.XY.AreaStyle.AreaStyle` object specifying whether and how to fill the area.
+    #: An :py:class:`~abaqus.XY.AreaStyle.AreaStyle` object specifying whether and how to fill the area.
     style: AreaStyle = AreaStyle()
 
-    # A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying whether and how to draw the border of the area.
+    #: A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying whether and how to draw the border of the area.
     border: LineStyle = LineStyle()
 
-    # A pair of Floats specifying the X- and Y-offsets in millimeters from the lower-left
-    # corner of the XYPlot.
+    #: A pair of Floats specifying the X- and Y-offsets in millimeters from the lower-left
+    #: corner of the XYPlot.
     origin: tuple[float] = ()
 
-    # A pair of Floats specifying the X- and Y-offsets of the origin as a fraction of the
-    # available area. The **originOffset** argument is ignored unless **positionMethod** = MANUAL.
-    # The default value is (-1, 0). The valid range for each float is (0, 1).
+    #: A pair of Floats specifying the X- and Y-offsets of the origin as a fraction of the
+    #: available area. The **originOffset** argument is ignored unless **positionMethod** = MANUAL.
+    #: The default value is (-1, 0). The valid range for each float is (0, 1).
     originOffset: tuple[float] = ()
 
     def setValues(

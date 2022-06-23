@@ -38,27 +38,27 @@ class TopologyRotationalSymmetry(GeometricRestriction):
         mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
 
-    # A String specifying the geometric restriction repository key.
+    #: A String specifying the geometric restriction repository key.
     name: str
 
-    # A Float specifying the repeating segment size, an angle in degrees.
+    #: A Float specifying the repeating segment size, an angle in degrees.
     angle: float
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
-    # When used with a TopologyTask, there is no default value. When used with a ShapeTask,
-    # the default value is MODEL.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    #: When used with a TopologyTask, there is no default value. When used with a ShapeTask,
+    #: the default value is MODEL.
     region: Region
 
-    # A SymbolicConstant specifying the axis of symmetry. Possible values are AXIS_1, AXIS_2,
-    # and AXIS_3. The default value is AXIS_1.
+    #: A SymbolicConstant specifying the axis of symmetry. Possible values are AXIS_1, AXIS_2,
+    #: and AXIS_3. The default value is AXIS_1.
     axis: SymbolicConstant = AXIS_1
 
-    # None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
-    # global coordinate system is used. When this member is queried, it returns an Int. The
-    # default value is None.
+    #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
+    #: global coordinate system is used. When this member is queried, it returns an Int. The
+    #: default value is None.
     csys: int = None
 
-    # A Boolean specifying whether to ignore frozen areas. The default value is OFF.
+    #: A Boolean specifying whether to ignore frozen areas. The default value is OFF.
     ignoreFrozenArea: Boolean = OFF
 
     def __init__(

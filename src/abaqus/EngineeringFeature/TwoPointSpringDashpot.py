@@ -67,54 +67,54 @@ class TwoPointSpringDashpot(SpringDashpot):
             - DASHPOT
     """
 
-    # A Boolean specifying whether the spring/dashpot is suppressed or not. The default value
-    # is OFF.
+    #: A Boolean specifying whether the spring/dashpot is suppressed or not. The default value
+    #: is OFF.
     suppressed: Boolean = OFF
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A sequence of pairs of Region objects specifying the points between which the springs
-    # and/or dashpots are applied.
+    #: A sequence of pairs of Region objects specifying the points between which the springs
+    #: and/or dashpots are applied.
     regionPairs: tuple
 
-    # A SymbolicConstant specifying whether the axis of the springs and/or dashpots follows
-    # the rotation of the nodes or is in a specified direction. Possible values are NODAL_LINE
-    # and FIXED_DOF.
+    #: A SymbolicConstant specifying whether the axis of the springs and/or dashpots follows
+    #: the rotation of the nodes or is in a specified direction. Possible values are NODAL_LINE
+    #: and FIXED_DOF.
     axis: SymbolicConstant
 
-    # An Int specifying the degree of freedom with which the springs and/or dashpots are
-    # associated at their first points. The **dof1** argument applies only when
-    # **axis** = FIXED_DOFS. The default value is 0.
+    #: An Int specifying the degree of freedom with which the springs and/or dashpots are
+    #: associated at their first points. The **dof1** argument applies only when
+    #: **axis** = FIXED_DOFS. The default value is 0.
     dof1: int = 0
 
-    # An Int specifying the degree of freedom with which the springs and/or dashpots are
-    # associated at their second points. The **dof2** argument applies only when
-    # **axis** = FIXED_DOFS. The default value is 0.
+    #: An Int specifying the degree of freedom with which the springs and/or dashpots are
+    #: associated at their second points. The **dof2** argument applies only when
+    #: **axis** = FIXED_DOFS. The default value is 0.
     dof2: int = 0
 
-    # None or a DatumCsys object specifying the local directions for the spring and/or
-    # dashpot. If **orientation** = None, the spring and/or dashpot data are defined in the global
-    # coordinate system. The default value is None.The **orientation** argument applies only
-    # when **axis** = FIXED_DOFS.
+    #: None or a DatumCsys object specifying the local directions for the spring and/or
+    #: dashpot. If **orientation** = None, the spring and/or dashpot data are defined in the global
+    #: coordinate system. The default value is None.The **orientation** argument applies only
+    #: when **axis** = FIXED_DOFS.
     orientation: str = None
 
-    # A Boolean specifying whether to apply spring behavior to the selected point pairs. The
-    # default value is OFF.At least one of the arguments **springBehavior** = ON or
-    # **dashpotBehavior** = ON must be specified.
+    #: A Boolean specifying whether to apply spring behavior to the selected point pairs. The
+    #: default value is OFF.At least one of the arguments **springBehavior** = ON or
+    #: **dashpotBehavior** = ON must be specified.
     springBehavior: Boolean = OFF
 
-    # A Boolean specifying whether to apply dashpot behavior to the selected point pairs. The
-    # default value is OFF.At least one of the arguments **springBehavior** = ON or
-    # **dashpotBehavior** = ON must be specified.
+    #: A Boolean specifying whether to apply dashpot behavior to the selected point pairs. The
+    #: default value is OFF.At least one of the arguments **springBehavior** = ON or
+    #: **dashpotBehavior** = ON must be specified.
     dashpotBehavior: Boolean = OFF
 
-    # A Float specifying the force per relative displacement for the springs. The default
-    # value is 0.0.
+    #: A Float specifying the force per relative displacement for the springs. The default
+    #: value is 0.0.
     springStiffness: float = 0
 
-    # A Float specifying the force per relative velocity for the dashpots. The default value
-    # is 0.0.
+    #: A Float specifying the force per relative velocity for the dashpots. The default value
+    #: is 0.0.
     dashpotCoefficient: float = 0
 
     def __init__(

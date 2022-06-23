@@ -40,27 +40,27 @@ class PropertyTableData:
             - PROPERTY TABLE
     """
 
-    # A String specifying a unique label name for the current PropertyTable object.
+    #: A String specifying a unique label name for the current PropertyTable object.
     label: str = ""
 
-    # A SymbolicConstant specifying the type of regularize to the user-defined property data.
+    #: A SymbolicConstant specifying the type of regularize to the user-defined property data.
     regularize: SymbolicConstant = None
 
-    # A SymbolicConstant specifying the type of extrapolation of dependent variables outside
-    # the specified range of the independent variables.
+    #: A SymbolicConstant specifying the type of extrapolation of dependent variables outside
+    #: the specified range of the independent variables.
     extrapolate: SymbolicConstant = None
 
-    # A Boolean specifying the dependency of properties on temperature.
+    #: A Boolean specifying the dependency of properties on temperature.
     isTemp: Boolean = OFF
 
-    # An Int specifying the field variables on which properties are dependent.
+    #: An Int specifying the field variables on which properties are dependent.
     fieldNums: int = None
 
-    # A Double specifying the tolerance to be used to regularize the property table data.
+    #: A Double specifying the tolerance to be used to regularize the property table data.
     regularizeTolerance: str = ""
 
-    # An Array of doubles specifying the values of the properties, the variables mentioned in
-    # PropertyTable, and the field variables mentioned in PropertyTableData.
+    #: An Array of doubles specifying the values of the properties, the variables mentioned in
+    #: PropertyTable, and the field variables mentioned in PropertyTableData.
     data: str = ""
 
     def __init__(

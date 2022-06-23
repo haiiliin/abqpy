@@ -66,38 +66,38 @@ class GapElectricalConductance:
     - GAP ELECTRICAL CONDUCTANCE
     """
 
-    # A SymbolicConstant specifying how the electrical conductance is defined. Possible values
-    # are TABULAR and USER_DEFINED. The default value is TABULAR.
+    #: A SymbolicConstant specifying how the electrical conductance is defined. Possible values
+    #: are TABULAR and USER_DEFINED. The default value is TABULAR.
     definition: SymbolicConstant = TABULAR
 
-    # A Boolean specifying whether to use clearance-dependent data. The default value is ON.
+    #: A Boolean specifying whether to use clearance-dependent data. The default value is ON.
     clearanceDependency: Boolean = ON
 
-    # A Boolean specifying whether to use pressure-dependent data. The default value is OFF.
+    #: A Boolean specifying whether to use pressure-dependent data. The default value is OFF.
     pressureDependency: Boolean = OFF
 
-    # A Boolean specifying whether to use temperature-dependent data with clearance
-    # dependency. The default value is OFF.
+    #: A Boolean specifying whether to use temperature-dependent data with clearance
+    #: dependency. The default value is OFF.
     temperatureDependencyC: Boolean = OFF
 
-    # An Int specifying the number of field variables to use with clearance dependency. The
-    # default value is 0.
+    #: An Int specifying the number of field variables to use with clearance dependency. The
+    #: default value is 0.
     dependenciesC: int = 0
 
-    # A sequence of sequences of Floats specifying clearance dependency data. The items in the
-    # table data are described below.
+    #: A sequence of sequences of Floats specifying clearance dependency data. The items in the
+    #: table data are described below.
     clearanceDepTable: tuple = ()
 
-    # A Boolean specifying whether to use temperature-dependent data with pressure dependency.
-    # The default value is OFF.
+    #: A Boolean specifying whether to use temperature-dependent data with pressure dependency.
+    #: The default value is OFF.
     temperatureDependencyP: Boolean = OFF
 
-    # An Int specifying the number of field variables to use with pressure dependency. The
-    # default value is 0.
+    #: An Int specifying the number of field variables to use with pressure dependency. The
+    #: default value is 0.
     dependenciesP: int = 0
 
-    # A sequence of sequences of Floats specifying pressure dependency data. The items in the
-    # table data are described below.
+    #: A sequence of sequences of Floats specifying pressure dependency data. The items in the
+    #: table data are described below.
     pressureDepTable: tuple = ()
 
     def __init__(

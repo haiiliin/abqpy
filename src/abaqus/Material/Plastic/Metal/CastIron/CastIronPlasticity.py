@@ -30,10 +30,10 @@ class CastIronPlasticity:
     - CAST IRON PLASTICITY
     """
 
-    # A :py:class:`~abaqus.Material.Plastic.Metal.CastIron.CastIronTensionHardening.CastIronTensionHardening` object.
+    #: A :py:class:`~abaqus.Material.Plastic.Metal.CastIron.CastIronTensionHardening.CastIronTensionHardening` object.
     castIronTensionHardening: CastIronTensionHardening = CastIronTensionHardening(((),))
 
-    # A :py:class:`~abaqus.Material.Plastic.Metal.CastIron.CastIronCompressionHardening.CastIronCompressionHardening` object.
+    #: A :py:class:`~abaqus.Material.Plastic.Metal.CastIron.CastIronCompressionHardening.CastIronCompressionHardening` object.
     castIronCompressionHardening: CastIronCompressionHardening = (
         CastIronCompressionHardening(((),))
     )

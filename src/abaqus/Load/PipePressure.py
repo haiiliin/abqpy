@@ -37,26 +37,26 @@ class PipePressure(Load):
         mdb.models[name].loads[name]
     """
 
-    # A String specifying the load repository key.
+    #: A String specifying the load repository key.
     name: str = ""
 
-    # A SymbolicConstant specifying whether the load is uniform. Possible values are UNIFORM,
-    # HYDROSTATIC, USER_DEFINED, and FIELD. The default value is UNIFORM.
+    #: A SymbolicConstant specifying whether the load is uniform. Possible values are UNIFORM,
+    #: HYDROSTATIC, USER_DEFINED, and FIELD. The default value is UNIFORM.
     distributionType: SymbolicConstant = UNIFORM
 
-    # A SymbolicConstant specifying whether the pressure is applied internally or externally.
-    # Possible values are INTERNAL and EXTERNAL. The default value is INTERNAL.
+    #: A SymbolicConstant specifying whether the pressure is applied internally or externally.
+    #: Possible values are INTERNAL and EXTERNAL. The default value is INTERNAL.
     side: SymbolicConstant = INTERNAL
 
-    # A Float specifying the effective inner or outer diameter.
+    #: A Float specifying the effective inner or outer diameter.
     diameter: float = None
 
-    # A String specifying the name of the AnalyticalField object associated with this load.
-    # The **field** argument applies only when **distributionType** = FIELD. The default value is an
-    # empty string.
+    #: A String specifying the name of the AnalyticalField object associated with this load.
+    #: The **field** argument applies only when **distributionType** = FIELD. The default value is an
+    #: empty string.
     field: str = ""
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
     def __init__(

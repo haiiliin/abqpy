@@ -222,207 +222,207 @@ class OdbDisplay:
         session.viewports[name].odbDisplay
     """
 
-    # A String specifying the name of the output database associated with the OdbDisplay
-    # object.
+    #: A String specifying the name of the output database associated with the OdbDisplay
+    #: object.
     name: str = ""
 
-    # A tuple of Strings specifying field steps.
-    # Each item in the sequence consists of a tuple that contains the following step
-    # information:
-    # - **element0**: A String specifying the step name.
-    # - **element1**: A String specifying the step description.
-    # - **element2**: A Float specifying the time value at the start of the step.
-    # - **element3**: A Float specifying the time period of the step.
-    # - **element4**: A Float specifying the user modified time period of the step.
-    # - **element5**: An Int specifying the domain type of the step. Possible values are:
-    # - 0: Time domain
-    # - 1: Frequency domain
-    # - 2: Modal domain
-    # - 3: Arc Length (Riks) domain
-    # - **element6**: A String specifying the default frame label.
-    # - **element7**: A sequence of strings specifying the frame labels for all available frames
-    # in the step.
-    # - **element8**: A sequence of floats specifying the frame values for all available frames
-    # in the step.
-    # - **element9**: A Int specifying whether the step is user defined. Possible values are 0
-    # indicating the step is defined in the analysis and 1 indicating the step is user
-    # defined.
-    # - **element10**: A sequence of machine readable strings encoding the currently active
-    # frame numbers.
+    #: A tuple of Strings specifying field steps.
+    #: Each item in the sequence consists of a tuple that contains the following step
+    #: information:
+    #: - **element0**: A String specifying the step name.
+    #: - **element1**: A String specifying the step description.
+    #: - **element2**: A Float specifying the time value at the start of the step.
+    #: - **element3**: A Float specifying the time period of the step.
+    #: - **element4**: A Float specifying the user modified time period of the step.
+    #: - **element5**: An Int specifying the domain type of the step. Possible values are:
+    #: - 0: Time domain
+    #: - 1: Frequency domain
+    #: - 2: Modal domain
+    #: - 3: Arc Length (Riks) domain
+    #: - **element6**: A String specifying the default frame label.
+    #: - **element7**: A sequence of strings specifying the frame labels for all available frames
+    #: in the step.
+    #: - **element8**: A sequence of floats specifying the frame values for all available frames
+    #: in the step.
+    #: - **element9**: A Int specifying whether the step is user defined. Possible values are 0
+    #: indicating the step is defined in the analysis and 1 indicating the step is user
+    #: defined.
+    #: - **element10**: A sequence of machine readable strings encoding the currently active
+    #: frame numbers.
     fieldSteps: tuple = ()
 
-    # An :py:class:`~abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList` object.
+    #: An :py:class:`~abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList` object.
     fieldVariables: OdbFieldVarList = OdbFieldVarList()
 
-    # An :py:class:`~abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList` object.
+    #: An :py:class:`~abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList` object.
     modelVariableList: OdbModelFieldVarList = OdbModelFieldVarList()
 
-    # A repository of OdbSet objects specifying the set label. The repository is read-only.
+    #: A repository of OdbSet objects specifying the set label. The repository is read-only.
     nodeSet: dict[str, OdbSet] = dict[str, OdbSet]()
 
-    # A repository of OdbSet objects specifying the set label. The repository is read-only.
+    #: A repository of OdbSet objects specifying the set label. The repository is read-only.
     elementSet: dict[str, OdbSet] = dict[str, OdbSet]()
 
-    # A repository of OdbSet objects specifying the set label. The repository is read-only.
+    #: A repository of OdbSet objects specifying the set label. The repository is read-only.
     surfaceSet: dict[str, OdbSet] = dict[str, OdbSet]()
 
-    # A :py:class:`~abaqus.PlotOptions.DisplayOptions.DisplayOptions` object.
+    #: A :py:class:`~abaqus.PlotOptions.DisplayOptions.DisplayOptions` object.
     display: DisplayOptions = DisplayOptions()
 
-    # A :py:class:`~abaqus.OdbDisplay.ContourOptions.ContourOptions` object.
+    #: A :py:class:`~abaqus.OdbDisplay.ContourOptions.ContourOptions` object.
     contourOptions: ContourOptions = ContourOptions()
 
-    # A :py:class:`~abaqus.OdbDisplay.CommonOptions.CommonOptions` object.
+    #: A :py:class:`~abaqus.OdbDisplay.CommonOptions.CommonOptions` object.
     commonOptions: CommonOptions = CommonOptions()
 
-    # A :py:class:`~abaqus.OdbDisplay.SymbolOptions.SymbolOptions` object.
+    #: A :py:class:`~abaqus.OdbDisplay.SymbolOptions.SymbolOptions` object.
     symbolOptions: SymbolOptions = SymbolOptions()
 
-    # A :py:class:`~abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions` object.
+    #: A :py:class:`~abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions` object.
     superimposeOptions: SuperimposeOptions = SuperimposeOptions()
 
-    # A :py:class:`~abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions` object.
+    #: A :py:class:`~abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions` object.
     displayBodyOptions: DisplayBodyOptions = DisplayBodyOptions()
 
-    # A :py:class:`~abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions` object.
+    #: A :py:class:`~abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions` object.
     freeBodyOptions: FreeBodyOptions = FreeBodyOptions()
 
-    # A :py:class:`~abaqus.PlotOptions.StreamOptions.StreamOptions` object.
+    #: A :py:class:`~abaqus.PlotOptions.StreamOptions.StreamOptions` object.
     streamOptions: StreamOptions = StreamOptions()
 
-    # A :py:class:`~abaqus.PlotOptions.ViewCutOptions.ViewCutOptions` object.
+    #: A :py:class:`~abaqus.PlotOptions.ViewCutOptions.ViewCutOptions` object.
     viewCutOptions: ViewCutOptions = ViewCutOptions()
 
-    # A repository of ViewCut objects.
+    #: A repository of ViewCut objects.
     viewCuts: dict[str, ViewCut] = dict[str, ViewCut]()
 
-    # A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object specifying the current display group and referring to an object in
-    # the **displayGroups** member of Session.
+    #: A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object specifying the current display group and referring to an object in
+    #: the **displayGroups** member of Session.
     displayGroup: DisplayGroup = DisplayGroup("dg", Leaf(EMPTY_LEAF))
 
-    # A :py:class:`~abaqus.DisplayGroup.DisplayGroupInstanceRepository.DisplayGroupInstanceRepository` object.
+    #: A :py:class:`~abaqus.DisplayGroup.DisplayGroupInstanceRepository.DisplayGroupInstanceRepository` object.
     displayGroupInstances: DisplayGroupInstanceRepository = (
         DisplayGroupInstanceRepository()
     )
 
-    # A :py:class:`~abaqus.PlotOptions.BasicOptions.BasicOptions` object.
+    #: A :py:class:`~abaqus.PlotOptions.BasicOptions.BasicOptions` object.
     basicOptions: BasicOptions = BasicOptions()
 
-    # An :py:class:`~abaqus.OdbDisplay.OrientationOptions.OrientationOptions` object.
+    #: An :py:class:`~abaqus.OdbDisplay.OrientationOptions.OrientationOptions` object.
     materialOrientationOptions: OrientationOptions = OrientationOptions()
 
-    # A tuple of Strings specifying the step label and the frame label when the current step
-    # is user defined. Alternatively, **fieldFrame** maybe specified as a pair of Ints with the
-    # step index and the frame index, when the current step is defined in the analysis.
+    #: A tuple of Strings specifying the step label and the frame label when the current step
+    #: is user defined. Alternatively, **fieldFrame** maybe specified as a pair of Ints with the
+    #: step index and the frame index, when the current step is defined in the analysis.
     fieldFrame: tuple[str] = ()
 
-    # A tuple specifying variables.
-    # Each item in the sequence consists of a tuple containing the following elements:
-    # - Element 0: A String specifying the variable label.
-    # - Element 1: An Int specifying the output position. Possible integer values are:
-    # - 0: UNDEFINED_POSITION
-    # - 1: NODAL
-    # - 2: INTEGRATION_POINT
-    # - 3: ELEMENT_FACE
-    # - 4: ELEMENT_NODAL
-    # - 5: WHOLE_ELEMENT
-    # - 6: ELEMENT_CENTROID
-    # - 7: WHOLE_REGION
-    # - 8: WHOLE_PART_INSTANCE
-    # - 9: WHOLE_MODEL
-    # - 10: GENERAL_PARTICLE
-    # - Element 2: An Int specifying the data type. Possible values are:
-    # - 0: ENUMERATION
-    # - 1: BOOLEAN
-    # - 2: INTEGER
-    # - 3: SCALAR
-    # - 4: VECTOR
-    # - 5: QUATERNION_2D
-    # - 6: QUATERNION_3D
-    # - 7: TENSOR
-    # - 8: TENSOR_3D_FULL
-    # - 9: TENSOR_3D_PLANAR
-    # - 10: TENSOR_3D_SURFACE
-    # - 11: TENSOR_2D_PLANAR
-    # - 12: TENSOR_2D_SURFACE
-    # - Element 3: An Int specifying the storage type. Possible values are:
-    # - 0: FLOAT
-    # - 1: DOUBLE
-    # - 2: INTEGER
-    # - 3: BOOLEAN
-    # - Element 4: An Int specifying the refinement type. Possible values are:
-    # - 0: NO_REFINEMENT
-    # - 1: INVARIANT
-    # - 2: COMPONENT
-    # - Element 5: A String specifying the refinement label.
-    # - Element 6: An Int specifying the refinement index.
-    # - Element 7: An Int specifying whether section point information is available. Possible
-    # values are 1 when section point information is available; 0, when this information is
-    # unavailable.
-    # - Element 8: A sequence of a String specifying the name of the ply and category
-    # selection tuples (see below) specifying the section point information.
-    # A category selection tuple consists of the following elements:
-    # - Element 0: A String specifying the category label.
-    # - Element 1: An Int specifying whether to use both top and bottom section points to
-    # obtain results. Possible values are 1 to use both section points and 0 to use only the
-    # top section point.
-    # - Element 2: An Int specifying the top section point index.
-    # - Element 3: A String specifying the top section label.
-    # - Element 4: An Int specifying the bottom section point index.
-    # - Element 5: A String specifying the bottom section label.
-    # - Element 6: An Int specifying the category id.
-    # - Element 9: An Int specifying whether the data are complex. Possible values are 1 when
-    # the data are complex; 0, when the data is not complex.
-    # - Element 10: A Float specifying the minimum possible value for the data.
-    # - Element 11: A Float specifying the maximum possible value for the data.
-    # - Element 12: An Int specifying whether the data is derived. Possible values are 1 when
-    # the data is derived; 0, when the data is not derived.
+    #: A tuple specifying variables.
+    #: Each item in the sequence consists of a tuple containing the following elements:
+    #: - Element 0: A String specifying the variable label.
+    #: - Element 1: An Int specifying the output position. Possible integer values are:
+    #: - 0: UNDEFINED_POSITION
+    #: - 1: NODAL
+    #: - 2: INTEGRATION_POINT
+    #: - 3: ELEMENT_FACE
+    #: - 4: ELEMENT_NODAL
+    #: - 5: WHOLE_ELEMENT
+    #: - 6: ELEMENT_CENTROID
+    #: - 7: WHOLE_REGION
+    #: - 8: WHOLE_PART_INSTANCE
+    #: - 9: WHOLE_MODEL
+    #: - 10: GENERAL_PARTICLE
+    #: - Element 2: An Int specifying the data type. Possible values are:
+    #: - 0: ENUMERATION
+    #: - 1: BOOLEAN
+    #: - 2: INTEGER
+    #: - 3: SCALAR
+    #: - 4: VECTOR
+    #: - 5: QUATERNION_2D
+    #: - 6: QUATERNION_3D
+    #: - 7: TENSOR
+    #: - 8: TENSOR_3D_FULL
+    #: - 9: TENSOR_3D_PLANAR
+    #: - 10: TENSOR_3D_SURFACE
+    #: - 11: TENSOR_2D_PLANAR
+    #: - 12: TENSOR_2D_SURFACE
+    #: - Element 3: An Int specifying the storage type. Possible values are:
+    #: - 0: FLOAT
+    #: - 1: DOUBLE
+    #: - 2: INTEGER
+    #: - 3: BOOLEAN
+    #: - Element 4: An Int specifying the refinement type. Possible values are:
+    #: - 0: NO_REFINEMENT
+    #: - 1: INVARIANT
+    #: - 2: COMPONENT
+    #: - Element 5: A String specifying the refinement label.
+    #: - Element 6: An Int specifying the refinement index.
+    #: - Element 7: An Int specifying whether section point information is available. Possible
+    #: values are 1 when section point information is available; 0, when this information is
+    #: unavailable.
+    #: - Element 8: A sequence of a String specifying the name of the ply and category
+    #: selection tuples (see below) specifying the section point information.
+    #: A category selection tuple consists of the following elements:
+    #: - Element 0: A String specifying the category label.
+    #: - Element 1: An Int specifying whether to use both top and bottom section points to
+    #: obtain results. Possible values are 1 to use both section points and 0 to use only the
+    #: top section point.
+    #: - Element 2: An Int specifying the top section point index.
+    #: - Element 3: A String specifying the top section label.
+    #: - Element 4: An Int specifying the bottom section point index.
+    #: - Element 5: A String specifying the bottom section label.
+    #: - Element 6: An Int specifying the category id.
+    #: - Element 9: An Int specifying whether the data are complex. Possible values are 1 when
+    #: the data are complex; 0, when the data is not complex.
+    #: - Element 10: A Float specifying the minimum possible value for the data.
+    #: - Element 11: A Float specifying the maximum possible value for the data.
+    #: - Element 12: An Int specifying whether the data is derived. Possible values are 1 when
+    #: the data is derived; 0, when the data is not derived.
     primaryVariable: tuple = ()
 
-    # A tuple specifying variables.For information on the sequence, see the member
-    # **primaryVariable**.
+    #: A tuple specifying variables.For information on the sequence, see the member
+    #: **primaryVariable**.
     deformedVariable: tuple = ()
 
-    # A tuple of SymbolicConstants specifying variables.For information on the sequence, see
-    # the member **primaryVariable**.
+    #: A tuple of SymbolicConstants specifying variables.For information on the sequence, see
+    #: the member **primaryVariable**.
     statusVariable: SymbolicConstant = None
 
-    # A tuple of SymbolicConstants specifying variables.For information on the sequence, see
-    # the member **primaryVariable**.
+    #: A tuple of SymbolicConstants specifying variables.For information on the sequence, see
+    #: the member **primaryVariable**.
     symbolVariable: SymbolicConstant = None
 
-    # A tuple of SymbolicConstants specifying a Boolean to specify if elements are to be
-    # removed in undeformed states based on an active status variable
+    #: A tuple of SymbolicConstants specifying a Boolean to specify if elements are to be
+    #: removed in undeformed states based on an active status variable
     applyStatusToUndeformed: SymbolicConstant = None
 
-    # A tuple of SymbolicConstants specifying a Boolean to specify if the status range should
-    # be inside a specified minimum and maximum. The range will be outside when false.
+    #: A tuple of SymbolicConstants specifying a Boolean to specify if the status range should
+    #: be inside a specified minimum and maximum. The range will be outside when false.
     statusInsideRange: SymbolicConstant = None
 
-    # A tuple of Floats specifying a Float value for the minimum status range value.
+    #: A tuple of Floats specifying a Float value for the minimum status range value.
     statusMinimum: float = None
 
-    # A tuple of Floats specifying a Float value for the maximum status range value.
+    #: A tuple of Floats specifying a Float value for the maximum status range value.
     statusMaximum: float = None
 
-    # A tuple of SymbolicConstants specifying a Boolean to specify if elements are to be
-    # removed based on the status variable
+    #: A tuple of SymbolicConstants specifying a Boolean to specify if elements are to be
+    #: removed based on the status variable
     useStatus: SymbolicConstant = None
 
-    # A pair of Ints specifying the step index and the frame index of the first available
-    # frame. This sequence is read-only.
+    #: A pair of Ints specifying the step index and the frame index of the first available
+    #: frame. This sequence is read-only.
     firstFrame: str = ""
 
-    # A pair of Ints specifying the step index and the frame index of the frame previous to
-    # the current frame. This sequence is read-only.
+    #: A pair of Ints specifying the step index and the frame index of the frame previous to
+    #: the current frame. This sequence is read-only.
     prevFrame: str = ""
 
-    # A pair of Ints specifying the step index and the frame index of the frame following the
-    # current frame. This sequence is read-only.
+    #: A pair of Ints specifying the step index and the frame index of the frame following the
+    #: current frame. This sequence is read-only.
     nextFrame: str = ""
 
-    # A pair of Ints specifying the step index and the frame index of the last available
-    # frame. This sequence is read-only.
+    #: A pair of Ints specifying the step index and the frame index of the last available
+    #: frame. This sequence is read-only.
     lastFrame: str = ""
 
     def moveCameraToCsys(self):

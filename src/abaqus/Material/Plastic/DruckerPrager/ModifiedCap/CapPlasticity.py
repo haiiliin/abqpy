@@ -39,13 +39,13 @@ class CapPlasticity:
     - CAP PLASTICITY
     """
 
-    # A :py:class:`~abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion` object.
+    #: A :py:class:`~abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion` object.
     capCreepCohesion: CapCreepCohesion = CapCreepCohesion(((),))
 
-    # A :py:class:`~abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation` object.
+    #: A :py:class:`~abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation` object.
     capCreepConsolidation: CapCreepConsolidation = CapCreepConsolidation(((),))
 
-    # A :py:class:`~abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapHardening.CapHardening` object.
+    #: A :py:class:`~abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapHardening.CapHardening` object.
     capHardening: CapHardening = CapHardening(((),))
 
     def __init__(

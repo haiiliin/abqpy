@@ -27,12 +27,12 @@ class LeafFromSurfaceSets(Leaf):
         import displayGroupOdbToolset
     """
 
-    # A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-    # DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
+    #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
+    #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: SymbolicConstant = None
 
-    # A sequence of Strings specifying surface sets, or a String specifying a single surface
-    # set.
+    #: A sequence of Strings specifying surface sets, or a String specifying a single surface
+    #: set.
     surfaceSets: tuple
 
     def __init__(self, surfaceSets: tuple):

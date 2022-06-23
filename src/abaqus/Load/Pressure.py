@@ -32,20 +32,20 @@ class Pressure(Load):
         mdb.models[name].loads[name]
     """
 
-    # A String specifying the load repository key.
+    #: A String specifying the load repository key.
     name: str = ""
 
-    # A SymbolicConstant specifying how the pressure is distributed spatially. Possible values
-    # are UNIFORM, USER_DEFINED, FIELD, HYDROSTATIC, STAGNATION, VISCOUS, TOTAL_FORCE, and
-    # DISCRETE_FIELD. The default value is UNIFORM.
+    #: A SymbolicConstant specifying how the pressure is distributed spatially. Possible values
+    #: are UNIFORM, USER_DEFINED, FIELD, HYDROSTATIC, STAGNATION, VISCOUS, TOTAL_FORCE, and
+    #: DISCRETE_FIELD. The default value is UNIFORM.
     distributionType: SymbolicConstant = UNIFORM
 
-    # A String specifying the name of the AnalyticalField or DiscreteField object associated
-    # with this load. The **field** argument applies only when **distributionType** = FIELD or
-    # **distributionType** = DISCRETE_FIELD. The default value is an empty string.
+    #: A String specifying the name of the AnalyticalField or DiscreteField object associated
+    #: with this load. The **field** argument applies only when **distributionType** = FIELD or
+    #: **distributionType** = DISCRETE_FIELD. The default value is an empty string.
     field: str = ""
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
     region: Region = Region()
 
     def __init__(

@@ -60,51 +60,51 @@ class Tie(Constraint):
     - TIE
     """
 
-    # A Boolean specifying whether the constraint is suppressed or not. The default value is
-    # OFF.
+    #: A Boolean specifying whether the constraint is suppressed or not. The default value is
+    #: OFF.
     suppressed: Boolean = OFF
 
-    # A String specifying the constraint repository key.
+    #: A String specifying the constraint repository key.
     name: str
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the main surface.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the main surface.
     main: Region
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the secondary surface.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the secondary surface.
     secondary: Region
 
-    # A Boolean specifying whether initial positions of tied secondary nodes are adjusted to
-    # lie on the main surface. The default value is ON.
+    #: A Boolean specifying whether initial positions of tied secondary nodes are adjusted to
+    #: lie on the main surface. The default value is ON.
     adjust: Boolean = ON
 
-    # A SymbolicConstant specifying the method used to determine the position tolerance.
-    # Possible values are COMPUTED and SPECIFIED. The default value is COMPUTED.
+    #: A SymbolicConstant specifying the method used to determine the position tolerance.
+    #: Possible values are COMPUTED and SPECIFIED. The default value is COMPUTED.
     positionToleranceMethod: SymbolicConstant = COMPUTED
 
-    # A Float specifying the position tolerance. The **positionTolerance** argument applies only
-    # when **positionToleranceMethod** = SPECIFIED. The default value is 0.0.
+    #: A Float specifying the position tolerance. The **positionTolerance** argument applies only
+    #: when **positionToleranceMethod** = SPECIFIED. The default value is 0.0.
     positionTolerance: float = 0
 
-    # A Boolean specifying whether rotation degrees of freedom should be tied. The default
-    # value is ON.
+    #: A Boolean specifying whether rotation degrees of freedom should be tied. The default
+    #: value is ON.
     tieRotations: Boolean = ON
 
-    # A SymbolicConstant specifying the method used to determine the constraint ratio.
-    # Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT.
+    #: A SymbolicConstant specifying the method used to determine the constraint ratio.
+    #: Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT.
     constraintRatioMethod: SymbolicConstant = DEFAULT
 
-    # A Float specifying the fractional distance between the main reference surface and the
-    # secondary node at which the translational constraint should act. The **constraintRatio**
-    # argument applies only when **constraintRatioMethod** = SPECIFIED. The default value is 0.0.
+    #: A Float specifying the fractional distance between the main reference surface and the
+    #: secondary node at which the translational constraint should act. The **constraintRatio**
+    #: argument applies only when **constraintRatioMethod** = SPECIFIED. The default value is 0.0.
     constraintRatio: float = 0
 
-    # A SymbolicConstant specifying the discretization method. Possible values are
-    # SOLVER_DEFAULT, NODE_TO_SURFACE, and SURFACE_TO_SURFACE. The default value is
-    # SOLVER_DEFAULT.
+    #: A SymbolicConstant specifying the discretization method. Possible values are
+    #: SOLVER_DEFAULT, NODE_TO_SURFACE, and SURFACE_TO_SURFACE. The default value is
+    #: SOLVER_DEFAULT.
     constraintEnforcement: SymbolicConstant = SOLVER_DEFAULT
 
-    # A Boolean specifying whether shell element thickness is considered. The default value is
-    # ON.
+    #: A Boolean specifying whether shell element thickness is considered. The default value is
+    #: ON.
     thickness: Boolean = ON
 
     def __init__(

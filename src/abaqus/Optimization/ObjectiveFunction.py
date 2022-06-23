@@ -27,17 +27,17 @@ class ObjectiveFunction:
         mdb.models[name].optimizationTasks[name].objectiveFunctions[name]
     """
 
-    # Optimization objectives
+    #: Optimization objectives
     objectives: OptimizationObjectiveArray = OptimizationObjectiveArray()
 
-    # A String specifying the objective function repository key.
+    #: A String specifying the objective function repository key.
     name: str
 
-    # An :py:class:`~abaqus.Optimization.OptimizationObjectiveArray.OptimizationObjectiveArray` object.
+    #: An :py:class:`~abaqus.Optimization.OptimizationObjectiveArray.OptimizationObjectiveArray` object.
     objectives: OptimizationObjectiveArray
 
-    # A SymbolicConstant specifying the target of the objective function. Possible values are
-    # MINIMIZE, MAXIMIZE, and MINIMIZE_MAXIMUM. The default value is MINIMIZE.
+    #: A SymbolicConstant specifying the target of the objective function. Possible values are
+    #: MINIMIZE, MAXIMIZE, and MINIMIZE_MAXIMUM. The default value is MINIMIZE.
     target: SymbolicConstant = MINIMIZE
 
     def __init__(

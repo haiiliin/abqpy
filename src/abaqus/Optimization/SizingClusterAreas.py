@@ -23,11 +23,11 @@ class SizingClusterAreas(GeometricRestriction):
         mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
 
-    # A String specifying the geometric restriction repository key.
+    #: A String specifying the geometric restriction repository key.
     name: str
 
-    # Tuple of Region objects specifying the regions to which the geometric restriction is
-    # applied.
+    #: Tuple of Region objects specifying the regions to which the geometric restriction is
+    #: applied.
     regions: tuple
 
     def __init__(self, name: str, regions: tuple):

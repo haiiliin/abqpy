@@ -34,32 +34,32 @@ class MeshStats:
         import mesh
     """
 
-    # An Int specifying the number of point elements.
+    #: An Int specifying the number of point elements.
     numPointElems: int = None
 
-    # An Int specifying the number of line elements.
+    #: An Int specifying the number of line elements.
     numLineElems: int = None
 
-    # An Int specifying the number of quadrilateral elements.
+    #: An Int specifying the number of quadrilateral elements.
     numQuadElems: int = None
 
-    # An Int specifying the number of triangular elements.
+    #: An Int specifying the number of triangular elements.
     numTriElems: int = None
 
-    # An Int specifying the number of hexahedral elements.
+    #: An Int specifying the number of hexahedral elements.
     numHexElems: int = None
 
-    # An Int specifying the number of wedge elements.
+    #: An Int specifying the number of wedge elements.
     numWedgeElems: int = None
 
-    # An Int specifying the number of tetrahedral elements.
+    #: An Int specifying the number of tetrahedral elements.
     numTetElems: int = None
 
-    # An Int specifying the number of pyramid elements.
+    #: An Int specifying the number of pyramid elements.
     numPyramidElems: int = None
 
-    # An Int specifying the number of nodes.
+    #: An Int specifying the number of nodes.
     numNodes: int = None
 
-    # An Int specifying the number of regions that contain a mesh.
+    #: An Int specifying the number of regions that contain a mesh.
     numMeshedRegions: int = None

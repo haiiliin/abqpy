@@ -27,18 +27,18 @@ class InputFile:
         import inpParser
     """
 
-    # A String specifying the source file name of the Abaqus input file.
+    #: A String specifying the source file name of the Abaqus input file.
     file: str = ""
 
-    # A String specifying the directory where the input file is located.
+    #: A String specifying the directory where the input file is located.
     directory: str = ""
 
-    # A sequence of Strings specifying any additional input files included in the specified
-    # input file.
+    #: A sequence of Strings specifying any additional input files included in the specified
+    #: input file.
     includes: tuple = ()
 
-    # A sequence of Strings for input files included in the specified input file that could
-    # not be located.
+    #: A sequence of Strings for input files included in the specified input file that could
+    #: not be located.
     missingIncludes: tuple = ()
 
     def __init__(self, file: str, directory: str = ""):

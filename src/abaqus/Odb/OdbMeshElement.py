@@ -50,24 +50,24 @@ class OdbMeshElement:
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.surfaces[name].elements[i]
     """
 
-    # An Int specifying the element label.
+    #: An Int specifying the element label.
     label: int = None
 
-    # A String specifying the element type.
+    #: A String specifying the element type.
     type: str = ""
 
-    # A :py:class:`~abaqus.Odb.SectionCategory.SectionCategory` object specifying the element section properties.
+    #: A :py:class:`~abaqus.Odb.SectionCategory.SectionCategory` object specifying the element section properties.
     sectionCategory: SectionCategory = None
 
-    # A tuple of Ints specifying the element connectivity. For connector elements connected to
-    # ground, the other node is repeated in the connectivity data. The position of the ground
-    # node cannot be ascertained. This is a limitation. It is important to note the difference
-    # with MeshElement object of MDB where the connectivity is node indices instead of node
-    # labels.
+    #: A tuple of Ints specifying the element connectivity. For connector elements connected to
+    #: ground, the other node is repeated in the connectivity data. The position of the ground
+    #: node cannot be ascertained. This is a limitation. It is important to note the difference
+    #: with MeshElement object of MDB where the connectivity is node indices instead of node
+    #: labels.
     connectivity: int = None
 
-    # A tuple of Strings specifying the instance names for nodes in the element connectivity.
+    #: A tuple of Strings specifying the instance names for nodes in the element connectivity.
     instanceNames: tuple = ()
 
-    # A String specifying the instance name.
+    #: A String specifying the instance name.
     instanceName: str = ""

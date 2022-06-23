@@ -35,21 +35,21 @@ class AnalyticSurface:
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.analyticSurface
     """
 
-    # A String specifying the name of the analytic surface.
+    #: A String specifying the name of the analytic surface.
     name: str = ""
 
-    # A SymbolicConstant specifying the type of AnalyticSurface object. Possible values are
-    # SEGMENTS, CYLINDER, and REVOLUTION.
+    #: A SymbolicConstant specifying the type of AnalyticSurface object. Possible values are
+    #: SEGMENTS, CYLINDER, and REVOLUTION.
     type: SymbolicConstant = None
 
-    # A Float specifying radius of curvature to smooth discontinuities between adjoining
-    # segments. The default value is 0.0.
+    #: A Float specifying radius of curvature to smooth discontinuities between adjoining
+    #: segments. The default value is 0.0.
     filletRadius: float = 0
 
-    # An :py:class:`~abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment` object specifying the profile associated with the
-    # surface.
+    #: An :py:class:`~abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment` object specifying the profile associated with the
+    #: surface.
     segments: OdbSequenceAnalyticSurfaceSegment = OdbSequenceAnalyticSurfaceSegment()
 
-    # A tuple of tuples of Floats specifying the global coordinates of points representing the
-    # local coordinate system, if used.
+    #: A tuple of tuples of Floats specifying the global coordinates of points representing the
+    #: local coordinate system, if used.
     localCoordData: float = None

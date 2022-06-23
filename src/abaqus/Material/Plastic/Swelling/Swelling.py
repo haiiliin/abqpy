@@ -29,7 +29,7 @@ class Swelling:
     - SWELLING
     """
 
-    # A :py:class:`~abaqus.Material.Ratios.Ratios` object.
+    #: A :py:class:`~abaqus.Material.Ratios.Ratios` object.
     ratios: Ratios = Ratios(((),))
 
     def __init__(

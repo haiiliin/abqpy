@@ -42,28 +42,28 @@ class InitialState(PredefinedField):
     - INSTANCE
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A :py:class:`~abaqus.Assembly.PartInstanceArray.PartInstanceArray` object specifying the instances to which the predefined field is
-    # applied.
+    #: A :py:class:`~abaqus.Assembly.PartInstanceArray.PartInstanceArray` object specifying the instances to which the predefined field is
+    #: applied.
     instances: PartInstanceArray
 
-    # A String specifying the name of the job that generated the initial state data.
+    #: A String specifying the name of the job that generated the initial state data.
     fileName: str
 
-    # The SymbolicConstant LAST_STEP or an Int specifying the step from which the initial
-    # state values are to be read or the SymbolicConstant LAST_STEP. The default value is
-    # LAST_STEP.
+    #: The SymbolicConstant LAST_STEP or an Int specifying the step from which the initial
+    #: state values are to be read or the SymbolicConstant LAST_STEP. The default value is
+    #: LAST_STEP.
     endStep: SymbolicConstant = LAST_STEP
 
-    # The SymbolicConstant STEP_END or an Int specifying the increment, interval or iteration
-    # of the step set in **endStep** or the SymbolicConstant STEP_END. The default value is
-    # STEP_END.
+    #: The SymbolicConstant STEP_END or an Int specifying the increment, interval or iteration
+    #: of the step set in **endStep** or the SymbolicConstant STEP_END. The default value is
+    #: STEP_END.
     endIncrement: SymbolicConstant = STEP_END
 
-    # A Boolean specifying whether to update the reference configuration based on the import
-    # data. The default value is OFF.
+    #: A Boolean specifying whether to update the reference configuration based on the import
+    #: data. The default value is OFF.
     updateReferenceConfiguration: Boolean = OFF
 
     def __init__(

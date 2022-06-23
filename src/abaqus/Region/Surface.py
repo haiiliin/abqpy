@@ -48,23 +48,23 @@ class Surface:
         mdb.models[name].rootAssembly.surfaces[name]
     """
 
-    # An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
+    #: An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
     edges: EdgeArray = EdgeArray([])
 
-    # A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
+    #: A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
     faces: FaceArray = FaceArray([])
 
-    # A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
+    #: A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
     elements: MeshElementArray = MeshElementArray([])
 
-    # A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object.
+    #: A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object.
     nodes: MeshNodeArray = MeshNodeArray([])
 
-    # A tuple of SymbolicConstants specifying the sides; for example, (SIDE1, SIDE2).
+    #: A tuple of SymbolicConstants specifying the sides; for example, (SIDE1, SIDE2).
     sides: SymbolicConstant = None
 
-    # A tuple of Ints specifying the instances. This member is not applicable for a Surface
-    # object on an output database.
+    #: A tuple of Ints specifying the instances. This member is not applicable for a Surface
+    #: object on an output database.
     instances: int = None
 
     @typing.overload

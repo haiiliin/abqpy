@@ -16,5 +16,5 @@ class OdbDataInstance:
         session.odbData[name].instances[i]
     """
 
-    # A String specifying the instance name. This attribute is read-only.
+    #: A String specifying the instance name. This attribute is read-only.
     name: str = ""

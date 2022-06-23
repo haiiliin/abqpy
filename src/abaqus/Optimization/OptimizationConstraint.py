@@ -29,19 +29,19 @@ class OptimizationConstraint:
         mdb.models[name].optimizationTasks[name].optimizationConstraints[name]
     """
 
-    # A String specifying the optimization constraint repository key.
+    #: A String specifying the optimization constraint repository key.
     name: str
 
-    # A String specifying the name of the design response to constrain.
+    #: A String specifying the name of the design response to constrain.
     designResponse: str
 
-    # A Float specifying the value to which the design response should be constrained.
+    #: A Float specifying the value to which the design response should be constrained.
     restrictionValue: float
 
-    # A SymbolicConstant specifying the method used to constrain the design response. Possible
-    # values are ABSOLUTE_EQUAL, ABSOLUTE_GREATER_THAN_EQUAL, ABSOLUTE_LESS_THAN_EQUAL,
-    # RELATIVE_EQUAL, RELATIVE_GREATER_THAN_EQUAL, and RELATIVE_LESS_THAN_EQUAL. The default
-    # value is ABSOLUTE_EQUAL.
+    #: A SymbolicConstant specifying the method used to constrain the design response. Possible
+    #: values are ABSOLUTE_EQUAL, ABSOLUTE_GREATER_THAN_EQUAL, ABSOLUTE_LESS_THAN_EQUAL,
+    #: RELATIVE_EQUAL, RELATIVE_GREATER_THAN_EQUAL, and RELATIVE_LESS_THAN_EQUAL. The default
+    #: value is ABSOLUTE_EQUAL.
     restrictionMethod: SymbolicConstant = ABSOLUTE_EQUAL
 
     def __init__(

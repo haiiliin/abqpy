@@ -54,35 +54,35 @@ class SymbolStyle:
         session.xyPlots[name].curves[name].symbolStyle
     """
 
-    # A String specifying the color to be used when drawing a marker with this SymbolStyle
-    # object. The default value is "White".
+    #: A String specifying the color to be used when drawing a marker with this SymbolStyle
+    #: object. The default value is "White".
     color: str = ""
 
-    # A Boolean specifying whether to draw the marker when using this SymbolStyle object. The
-    # default value is ON.
+    #: A Boolean specifying whether to draw the marker when using this SymbolStyle object. The
+    #: default value is ON.
     show: Boolean = ON
 
-    # A SymbolicConstant specifying the marker type be used when drawing symbols using this
-    # SymbolStyle object. Possible values are:
+    #: A SymbolicConstant specifying the marker type be used when drawing symbols using this
+    #: SymbolStyle object. Possible values are:
     
 
-    # - FILLED_CIRCLE
-    # - FILLED_SQUARE
-    # - FILLED_DIAMOND
-    # - FILLED_TRI
-    # - HOLLOW_CIRCLE
-    # - HOLLOW_SQUARE
-    # - HOLLOW_DIAMOND
-    # - HOLLOW_TRI
-    # - CROSS
-    # - XMARKER
-    # - POINT
-    # 
-    # The default value is FILLED_CIRCLE.
+    #: - FILLED_CIRCLE
+    #: - FILLED_SQUARE
+    #: - FILLED_DIAMOND
+    #: - FILLED_TRI
+    #: - HOLLOW_CIRCLE
+    #: - HOLLOW_SQUARE
+    #: - HOLLOW_DIAMOND
+    #: - HOLLOW_TRI
+    #: - CROSS
+    #: - XMARKER
+    #: - POINT
+    #: 
+    #: The default value is FILLED_CIRCLE.
     marker: SymbolicConstant = FILLED_CIRCLE
 
-    # A Float specifying the marker size to be used when drawing markers using this
-    # SymbolStyle object. The default value is 2.0.
+    #: A Float specifying the marker size to be used when drawing markers using this
+    #: SymbolStyle object. The default value is 2.0.
     size: float = 2
 
     def __init__(

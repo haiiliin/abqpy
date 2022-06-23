@@ -40,10 +40,10 @@ class ArbitraryProfile(Profile):
     - BEAM SECTION
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A sequence of sequences of Floats specifying the items described below.
+    #: A sequence of sequences of Floats specifying the items described below.
     table: tuple
 
     def __init__(self, name: str, table: tuple):

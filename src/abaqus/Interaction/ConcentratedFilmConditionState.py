@@ -72,60 +72,60 @@ class ConcentratedFilmConditionState(InteractionState):
     - CFILM
     """
 
-    # A SymbolicConstant specifying the propagation state of the **interactionProperty** member.
-    # Possible values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the **interactionProperty** member.
+    #: Possible values are UNSET, SET, UNCHANGED, and FREED.
     interactionPropertyState: SymbolicConstant = None
 
-    # A Float specifying the sink temperature.
+    #: A Float specifying the sink temperature.
     sinkTemperature: float = None
 
-    # A SymbolicConstant specifying the propagation state of the **sinkTemperature** member.
-    # Possible values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the **sinkTemperature** member.
+    #: Possible values are UNSET, SET, UNCHANGED, and FREED.
     sinkTemperatureState: SymbolicConstant = None
 
-    # A SymbolicConstant specifying the propagation state of the **sinkAmplitude** member.
-    # Possible values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the **sinkAmplitude** member.
+    #: Possible values are UNSET, SET, UNCHANGED, and FREED.
     sinkAmplitudeState: SymbolicConstant = None
 
-    # A Float specifying the film coefficient.
+    #: A Float specifying the film coefficient.
     filmCoeff: float = None
 
-    # A SymbolicConstant specifying the propagation state of the **filmCoeff** member. Possible
-    # values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the **filmCoeff** member. Possible
+    #: values are UNSET, SET, UNCHANGED, and FREED.
     filmCoeffState: SymbolicConstant = None
 
-    # A SymbolicConstant specifying the propagation state of the **filmCoeffAmplitude** member.
-    # Possible values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the **filmCoeffAmplitude** member.
+    #: Possible values are UNSET, SET, UNCHANGED, and FREED.
     filmCoeffAmplitudeState: SymbolicConstant = None
 
-    # A Float specifying the area associated with the node where the concentrated film
-    # condition is applied.
+    #: A Float specifying the area associated with the node where the concentrated film
+    #: condition is applied.
     nodalArea: float = None
 
-    # A SymbolicConstant specifying the propagation state of the **nodalArea** member. Possible
-    # values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the **nodalArea** member. Possible
+    #: values are UNSET, SET, UNCHANGED, and FREED.
     nodalAreaState: SymbolicConstant = None
 
-    # A String specifying the FilmConditionProp object associated with this interaction.
+    #: A String specifying the FilmConditionProp object associated with this interaction.
     interactionProperty: str = ""
 
-    # A String specifying the name of the Amplitude object that gives the variation of the
-    # sink temperature.
+    #: A String specifying the name of the Amplitude object that gives the variation of the
+    #: sink temperature.
     sinkAmplitude: str = ""
 
-    # A String specifying the name of the Amplitude object that gives the variation of the
-    # film coefficient.
+    #: A String specifying the name of the Amplitude object that gives the variation of the
+    #: film coefficient.
     filmCoeffAmplitude: str = ""
 
-    # A SymbolicConstant specifying the propagation state of the InteractionState object.
-    # Possible values are:
-    # - NOT_YET_ACTIVE
-    # - CREATED
-    # - PROPAGATED
-    # - MODIFIED
-    # - DEACTIVATED
-    # - NO_LONGER_ACTIVE
-    # - TYPE_NOT_APPLICABLE
-    # - INSTANCE_NOT_APPLICABLE
-    # - BUILT_INTO_BASE_STATE
+    #: A SymbolicConstant specifying the propagation state of the InteractionState object.
+    #: Possible values are:
+    #: - NOT_YET_ACTIVE
+    #: - CREATED
+    #: - PROPAGATED
+    #: - MODIFIED
+    #: - DEACTIVATED
+    #: - NO_LONGER_ACTIVE
+    #: - TYPE_NOT_APPLICABLE
+    #: - INSTANCE_NOT_APPLICABLE
+    #: - BUILT_INTO_BASE_STATE
     status: SymbolicConstant = None

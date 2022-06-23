@@ -26,18 +26,18 @@ class SteadyStateModalFrequency:
         mdb.models[name].steps[name].frequencyRange[i]
     """
 
-    # A Float specifying the lower limit of frequency range or a single frequency, in
-    # cycles/time.
+    #: A Float specifying the lower limit of frequency range or a single frequency, in
+    #: cycles/time.
     lower: float = None
 
-    # A Float specifying the upper limit of frequency range, in cycles/time.
+    #: A Float specifying the upper limit of frequency range, in cycles/time.
     upper: float = None
 
-    # An Int specifying the number of points in the frequency range at which results should be
-    # given.
+    #: An Int specifying the number of points in the frequency range at which results should be
+    #: given.
     nPoints: int = None
 
-    # A Float specifying the bias parameter. When results are requested at four or more
-    # frequency points, Abaqus biases the results toward the ends of the intervals to obtain
-    # better resolution. The default value is 3.0.
+    #: A Float specifying the bias parameter. When results are requested at four or more
+    #: frequency points, Abaqus biases the results toward the ends of the intervals to obtain
+    #: better resolution. The default value is 3.0.
     bias: float = 3

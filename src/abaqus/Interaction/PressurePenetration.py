@@ -38,22 +38,22 @@ class PressurePenetration(Interaction):
     - PRESSURE PENETRATION
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str = ""
 
-    # A String specifying the name of the step in which the PressurePenetration object is
-    # created.
+    #: A String specifying the name of the step in which the PressurePenetration object is
+    #: created.
     createStepName: str = ""
 
-    # A String specifying the name of the Surface-to-surface contact (Standard) interaction.
+    #: A String specifying the name of the Surface-to-surface contact (Standard) interaction.
     contactInteraction: str = ""
 
-    # A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the main surface that are exposed to the
-    # fluid.
+    #: A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the main surface that are exposed to the
+    #: fluid.
     mainPoints: RegionArray = RegionArray()
 
-    # A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the secondary surface that are exposed to
-    # the fluid.
+    #: A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the secondary surface that are exposed to
+    #: the fluid.
     secondaryPoints: RegionArray = RegionArray()
 
     def __init__(

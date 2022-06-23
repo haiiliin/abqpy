@@ -36,24 +36,24 @@ class OdbDatumCsys:
         session.odbs[name].rootAssembly.datumCsyses[name]
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str = ""
 
-    # A SymbolicConstant specifying the type of coordinate system. Possible values are
-    # CARTESIAN, CYLINDRICAL, and SPHERICAL.
+    #: A SymbolicConstant specifying the type of coordinate system. Possible values are
+    #: CARTESIAN, CYLINDRICAL, and SPHERICAL.
     coordSysType: SymbolicConstant = None
 
-    # A tuple of Floats specifying the coordinates of the origin of the datum coordinate
-    # system.
+    #: A tuple of Floats specifying the coordinates of the origin of the datum coordinate
+    #: system.
     origin: float = None
 
-    # A tuple of Floats specifying a point on the **X**-axis.
+    #: A tuple of Floats specifying a point on the **X**-axis.
     xAxis: float = None
 
-    # A tuple of Floats specifying a point on the **Y**-axis.
+    #: A tuple of Floats specifying a point on the **Y**-axis.
     yAxis: float = None
 
-    # A tuple of Floats specifying a point on the **Z**-axis.
+    #: A tuple of Floats specifying a point on the **Z**-axis.
     zAxis: float = None
 
     def DatumCsysByThreePoints(

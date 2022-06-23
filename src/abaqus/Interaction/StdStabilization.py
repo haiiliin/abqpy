@@ -45,32 +45,32 @@ class StdStabilization(ContactStabilization):
     - CONTACT STABILIZATION
     """
 
-    # A String specifying the contact stabilization repository key.
+    #: A String specifying the contact stabilization repository key.
     name: str
 
-    # None or a Float specifying the clearance distance at which the stabilization becomes
-    # zero. The default value is None.
+    #: None or a Float specifying the clearance distance at which the stabilization becomes
+    #: zero. The default value is None.
     zeroDistance: float = None
 
-    # A Float specifying the factor by which the analysis will reduce the contact
-    # stabilization coefficient per increment. The default value is 0.1.
+    #: A Float specifying the factor by which the analysis will reduce the contact
+    #: stabilization coefficient per increment. The default value is 0.1.
     reductionFactor: float = 0
 
-    # A Float specifying the factor by which the analysis will scale the contact stabilization
-    # coefficient. The default value is 1.0.
+    #: A Float specifying the factor by which the analysis will scale the contact stabilization
+    #: coefficient. The default value is 1.0.
     scaleFactor: float = 1
 
-    # A Float specifying the factor that scales the contact stabilization coefficient in the
-    # tangential direction. The default value is 0.0.
+    #: A Float specifying the factor that scales the contact stabilization coefficient in the
+    #: tangential direction. The default value is 0.0.
     tangentialFactor: float = 0
 
-    # A String specifying the name of the Amplitude object that defines a time-dependent scale
-    # factor for contact stabilization over the step. The default value is an empty string.
+    #: A String specifying the name of the Amplitude object that defines a time-dependent scale
+    #: factor for contact stabilization over the step. The default value is an empty string.
     amplitude: str = ""
 
-    # A Boolean specifying whether to cancel carryover effects from contact stabilization
-    # specifications involving nondefault amplitudes that appeared in previous steps. The
-    # default value is OFF.
+    #: A Boolean specifying whether to cancel carryover effects from contact stabilization
+    #: specifications involving nondefault amplitudes that appeared in previous steps. The
+    #: default value is OFF.
     reset: Boolean = OFF
 
     def __init__(

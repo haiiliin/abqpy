@@ -54,38 +54,38 @@ class XYCurve:
         session.xyPlots[name].curves[name]
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str = ""
 
-    # An Int specifying the frequency of plotting the markers. Possible values are
-    # **symbolFrequency** >> 0. If **symbolFrequency** = 1, then markers are plotted at every point.
-    # The default value is 1.
+    #: An Int specifying the frequency of plotting the markers. Possible values are
+    #: **symbolFrequency** >> 0. If **symbolFrequency** = 1, then markers are plotted at every point.
+    #: The default value is 1.
     symbolFrequency: int = 1
 
-    # A Boolean specifying whether to use the system supplied legend label. The default value
-    # is ON.
+    #: A Boolean specifying whether to use the system supplied legend label. The default value
+    #: is ON.
     useDefault: Boolean = ON
 
-    # A SymbolicConstant specifying how the system supplied, default legend label is to be
-    # generated. Possible values are CURVE_LEGEND, CURVE_NAME, and CURVE_NAME_LEGEND. The
-    # default value is CURVE_LEGEND.
+    #: A SymbolicConstant specifying how the system supplied, default legend label is to be
+    #: generated. Possible values are CURVE_LEGEND, CURVE_NAME, and CURVE_NAME_LEGEND. The
+    #: default value is CURVE_LEGEND.
     legendSource: SymbolicConstant = CURVE_LEGEND
 
-    # An :py:class:`~abaqus.XY.XYData.XYData` object specifying the data for the curve.
+    #: An :py:class:`~abaqus.XY.XYData.XYData` object specifying the data for the curve.
     data: XYData = None
 
-    # A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties used to display the curve.
+    #: A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties used to display the curve.
     lineStyle: LineStyle = LineStyle()
 
-    # A :py:class:`~abaqus.XY.SymbolStyle.SymbolStyle` object specifying the symbol properties used to display the curve.
+    #: A :py:class:`~abaqus.XY.SymbolStyle.SymbolStyle` object specifying the symbol properties used to display the curve.
     symbolStyle: SymbolStyle = SymbolStyle()
 
-    # A String specifying the label to be displayed in the legend. By default, the label is
-    # system defined.
+    #: A String specifying the label to be displayed in the legend. By default, the label is
+    #: system defined.
     legendLabel: str = ""
 
-    # A tuple of SymbolicConstants specifying that describe how curves are to be displayed.
-    # Possible values are LINE and SYMBOL. The default value is (LINE).
+    #: A tuple of SymbolicConstants specifying that describe how curves are to be displayed.
+    #: Possible values are LINE and SYMBOL. The default value is (LINE).
     displayTypes: SymbolicConstant = None
 
     def Curve(self, name: str, data: XYData):

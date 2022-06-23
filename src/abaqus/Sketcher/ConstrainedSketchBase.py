@@ -54,31 +54,31 @@ class ConstrainedSketchBase:
         mdb.models[name].sketches[name]
     """
 
-    # A repository of ConstrainedSketchConstraint objects.
+    #: A repository of ConstrainedSketchConstraint objects.
     constraints: dict[str, ConstrainedSketchConstraint] = dict[
         str, ConstrainedSketchConstraint
     ]()
 
-    # A repository of ConstrainedSketchDimension objects.
+    #: A repository of ConstrainedSketchDimension objects.
     dimensions: dict[str, ConstrainedSketchDimension] = dict[
         str, ConstrainedSketchDimension
     ]()
 
-    # A :py:class:`~abaqus.Amplitude.ConstrainedSketchGeometryArray.ConstrainedSketchGeometryArray` object specifying the sketch geometry, such as lines,
-    # arcs, circles, and splines.
+    #: A :py:class:`~abaqus.Amplitude.ConstrainedSketchGeometryArray.ConstrainedSketchGeometryArray` object specifying the sketch geometry, such as lines,
+    #: arcs, circles, and splines.
     geometry: ConstrainedSketchGeometryArray = ConstrainedSketchGeometryArray()
 
-    # A repository of ConstrainedSketchParameter objects specifying sketch parameters, which
-    # may be associated with dimensions.
+    #: A repository of ConstrainedSketchParameter objects specifying sketch parameters, which
+    #: may be associated with dimensions.
     parameters: dict[str, ConstrainedSketchParameter] = dict[
         str, ConstrainedSketchParameter
     ]()
 
-    # A :py:class:`~abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchOptions.ConstrainedSketchOptions` object specifying the sketch option settings.
+    #: A :py:class:`~abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchOptions.ConstrainedSketchOptions` object specifying the sketch option settings.
     sketchOptions: ConstrainedSketchOptions = ConstrainedSketchOptions()
 
-    # A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexArray.ConstrainedSketchVertexArray` object.
+    #: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexArray.ConstrainedSketchVertexArray` object.
     vertices: ConstrainedSketchVertexArray = ConstrainedSketchVertexArray()
 
-    # A :py:class:`~abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchImageOptions.ConstrainedSketchImageOptions` object.
+    #: A :py:class:`~abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchImageOptions.ConstrainedSketchImageOptions` object.
     imageOptions: ConstrainedSketchImageOptions = ConstrainedSketchImageOptions()

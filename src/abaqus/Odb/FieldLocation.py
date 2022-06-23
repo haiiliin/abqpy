@@ -31,13 +31,13 @@ class FieldLocation:
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].locations[i]
     """
 
-    # A SymbolicConstant specifying the position of the output in the element. Possible values
-    # are:NODAL, specifying the values calculated at the nodes.INTEGRATION_POINT, specifying
-    # the values calculated at the integration points.ELEMENT_NODAL, specifying the values
-    # obtained by extrapolating results calculated at the integration
-    # points.ELEMENT_FACE.CENTROID, specifying the value at the centroid obtained by
-    # extrapolating results calculated at the integration points.
+    #: A SymbolicConstant specifying the position of the output in the element. Possible values
+    #: are:NODAL, specifying the values calculated at the nodes.INTEGRATION_POINT, specifying
+    #: the values calculated at the integration points.ELEMENT_NODAL, specifying the values
+    #: obtained by extrapolating results calculated at the integration
+    #: points.ELEMENT_FACE.CENTROID, specifying the value at the centroid obtained by
+    #: extrapolating results calculated at the integration points.
     position: SymbolicConstant = None
 
-    # A :py:class:`~abaqus.Odb.SectionPointArray.SectionPointArray` object.
+    #: A :py:class:`~abaqus.Odb.SectionPointArray.SectionPointArray` object.
     sectionPoints: SectionPointArray = SectionPointArray()

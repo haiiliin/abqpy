@@ -19,7 +19,7 @@ class Profile:
         session.odbs[name].profiles[name]
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str = ""
 
     def beamProfilesFromOdb(self, fileName: str):

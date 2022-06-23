@@ -46,37 +46,37 @@ class DisplacementBaseMotionBC(BoundaryCondition):
         mdb.models[name].boundaryConditions[name]
     """
 
-    # A String specifying the boundary condition repository key.
+    #: A String specifying the boundary condition repository key.
     name: str = ""
 
-    # A Float specifying the scale factor for the amplitude curve. The default value is 1.0.
+    #: A Float specifying the scale factor for the amplitude curve. The default value is 1.0.
     amplitudeScaleFactor: float = 1
 
-    # A Boolean specifying whether to define the imaginary (out-of-plane) portion of the base
-    # motion record given by amplitude definition. The default value is OFF.
+    #: A Boolean specifying whether to define the imaginary (out-of-plane) portion of the base
+    #: motion record given by amplitude definition. The default value is OFF.
     useComplex: Boolean = OFF
 
-    # A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying a tuple containing one center of rotation. The default
-    # value is the global origin. This argument applies only when **dof** = UR1, UR2, or UR3.
+    #: A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying a tuple containing one center of rotation. The default
+    #: value is the global origin. This argument applies only when **dof** = UR1, UR2, or UR3.
     centerOfRotation: tuple = ()
 
-    # A :py:class:`~abaqus.Amplitude.CorrelationArray.CorrelationArray` object.
+    #: A :py:class:`~abaqus.Amplitude.CorrelationArray.CorrelationArray` object.
     correlation: CorrelationArray = CorrelationArray()
 
-    # A String specifying the name of the SecondaryBaseBC object associated with this boundary
-    # condition. The default value is an empty string.
+    #: A String specifying the name of the SecondaryBaseBC object associated with this boundary
+    #: condition. The default value is an empty string.
     secondaryBase: str = ""
 
-    # A SymbolicConstant specifying the category of the boundary condition. Possible values
-    # are MECHANICAL and THERMAL.
+    #: A SymbolicConstant specifying the category of the boundary condition. Possible values
+    #: are MECHANICAL and THERMAL.
     category: SymbolicConstant = None
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
     region: Region = Region()
 
-    # None or a DatumCsys object specifying the local coordinate system of the boundary
-    # condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
-    # in the global coordinate system. The default value is None.
+    #: None or a DatumCsys object specifying the local coordinate system of the boundary
+    #: condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
+    #: in the global coordinate system. The default value is None.
     localCsys: str = None
 
     def __init__(

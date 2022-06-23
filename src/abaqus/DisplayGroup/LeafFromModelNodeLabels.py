@@ -32,17 +32,17 @@ class LeafFromModelNodeLabels(Leaf):
         import displayGroupOdbToolset
     """
 
-    # A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-    # DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
+    #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
+    #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: SymbolicConstant = None
 
-    # A sequence of Strings specifying expressions that denote node labels per part instance
-    # in the model. Each part instance node expression is a sequence of a String specifying
-    # the part instance name and a sequence of node expressions; for example,
-    # `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The node expressions
-    # can be any of the following:An Int specifying a single node label; for example, `1`.A
-    # String specifying a single node label; for example, `'7'`.A String specifying a sequence
-    # of node labels; for example, `'3:5'` and `'3:15:3'`.
+    #: A sequence of Strings specifying expressions that denote node labels per part instance
+    #: in the model. Each part instance node expression is a sequence of a String specifying
+    #: the part instance name and a sequence of node expressions; for example,
+    #: `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The node expressions
+    #: can be any of the following:An Int specifying a single node label; for example, `1`.A
+    #: String specifying a single node label; for example, `'7'`.A String specifying a sequence
+    #: of node labels; for example, `'3:5'` and `'3:15:3'`.
     nodeLabels: tuple
 
     def __init__(self, nodeLabels: tuple):

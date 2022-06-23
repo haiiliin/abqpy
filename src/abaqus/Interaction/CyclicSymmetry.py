@@ -77,66 +77,66 @@ class CyclicSymmetry(Interaction):
             - TIE
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A String specifying the name of the step in which the cyclic symmetry interaction should
-    # be created.
+    #: A String specifying the name of the step in which the cyclic symmetry interaction should
+    #: be created.
     createStepName: str
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
     main: Region
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
     secondary: Region
 
-    # An Int specifying the total number of sectors in the cyclic symmetric model.
+    #: An Int specifying the total number of sectors in the cyclic symmetric model.
     repetitiveSectors: int
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the first point of the axis of symmetry. The region should
-    # contain exactly one mesh node, vertex, interesting point, reference point, or datum
-    # point. In a two-dimensional model **axisPoint1** is the only point used to define the axis
-    # of symmetry.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the first point of the axis of symmetry. The region should
+    #: contain exactly one mesh node, vertex, interesting point, reference point, or datum
+    #: point. In a two-dimensional model **axisPoint1** is the only point used to define the axis
+    #: of symmetry.
     axisPoint1: Region
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the second point of the axis of symmetry. The region should
-    # contain exactly one mesh node, vertex, interesting point, reference point, or datum
-    # point. This point is ignored in a two-dimensional model.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the second point of the axis of symmetry. The region should
+    #: contain exactly one mesh node, vertex, interesting point, reference point, or datum
+    #: point. This point is ignored in a two-dimensional model.
     axisPoint2: Region
 
-    # A SymbolicConstant specifying whether Abaqus should extract all possible nodal diameters
-    # or the nodal diameters between the user-specified values for **lowestNodalDiameter** and
-    # **highestNodalDiameter**. Possible values are ALL_NODAL_DIAMETER and
-    # SPECIFIED_NODAL_DIAMETER. The default value is ALL_NODAL_DIAMETER.
+    #: A SymbolicConstant specifying whether Abaqus should extract all possible nodal diameters
+    #: or the nodal diameters between the user-specified values for **lowestNodalDiameter** and
+    #: **highestNodalDiameter**. Possible values are ALL_NODAL_DIAMETER and
+    #: SPECIFIED_NODAL_DIAMETER. The default value is ALL_NODAL_DIAMETER.
     extractedNodalDiameter: SymbolicConstant = ALL_NODAL_DIAMETER
 
-    # An Int specifying the lowest nodal diameter to be used in the eigenfrequency analysis.
-    # The default value is 0.
+    #: An Int specifying the lowest nodal diameter to be used in the eigenfrequency analysis.
+    #: The default value is 0.
     lowestNodalDiameter: int = 0
 
-    # An Int specifying the highest nodal diameter to be used in the eigenfrequency analysis.
-    # This argument value should be less than or equal to the half of the total number of
-    # sectors (as specified in the **repetitiveSectors** parameter). The default value is 0.
+    #: An Int specifying the highest nodal diameter to be used in the eigenfrequency analysis.
+    #: This argument value should be less than or equal to the half of the total number of
+    #: sectors (as specified in the **repetitiveSectors** parameter). The default value is 0.
     highestNodalDiameter: int = 0
 
-    # An Int specifying the nodal diameter for which the modal-based steady-state dynamic
-    # analysis will be performed. This value should be greater than or equal to the lowest
-    # nodal diameter (specified in the **lowestNodalDiameter** parameter), and less than or
-    # equal to the highest nodal diameter (specified in the **highestNodalDiameter** parameter).
-    # The default value is 0.
+    #: An Int specifying the nodal diameter for which the modal-based steady-state dynamic
+    #: analysis will be performed. This value should be greater than or equal to the lowest
+    #: nodal diameter (specified in the **lowestNodalDiameter** parameter), and less than or
+    #: equal to the highest nodal diameter (specified in the **highestNodalDiameter** parameter).
+    #: The default value is 0.
     excitationNodalDiameter: int = 0
 
-    # A Boolean specifying whether or not to adjust the secondary surface of the cyclic
-    # symmetry to tie it to the main surface. The default value is ON.
+    #: A Boolean specifying whether or not to adjust the secondary surface of the cyclic
+    #: symmetry to tie it to the main surface. The default value is ON.
     adjustTie: Boolean = ON
 
-    # A Float specifying the position tolerance. The*positionTolerance* argument applies only
-    # when **positionToleranceMethod** = SPECIFY_TOLERANCE. The default value is 0.0.
+    #: A Float specifying the position tolerance. The*positionTolerance* argument applies only
+    #: when **positionToleranceMethod** = SPECIFY_TOLERANCE. The default value is 0.0.
     positionTolerance: float = 0
 
-    # A SymbolicConstant specifying the method used to determine the position tolerance.
-    # Possible values are COMPUTED_TOLERANCE and SPECIFY_TOLERANCE. The default value is
-    # COMPUTED_TOLERANCE.
+    #: A SymbolicConstant specifying the method used to determine the position tolerance.
+    #: Possible values are COMPUTED_TOLERANCE and SPECIFY_TOLERANCE. The default value is
+    #: COMPUTED_TOLERANCE.
     positionToleranceMethod: SymbolicConstant = COMPUTED_TOLERANCE
 
     def __init__(

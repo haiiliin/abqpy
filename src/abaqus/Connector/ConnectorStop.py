@@ -35,17 +35,17 @@ class ConnectorStop(ConnectorBehaviorOption):
     - CONNECTOR STOP
     """
 
-    # None or a Float specifying the lower bound for the connector's relative position for all
-    # specified components, or no lower bound. The default value is None.
+    #: None or a Float specifying the lower bound for the connector's relative position for all
+    #: specified components, or no lower bound. The default value is None.
     minMotion: float = None
 
-    # None or a Float specifying the upper bound for the connector's relative position for all
-    # specified components, or no upper bound. The default value is None.
+    #: None or a Float specifying the upper bound for the connector's relative position for all
+    #: specified components, or no upper bound. The default value is None.
     maxMotion: float = None
 
-    # A sequence of Ints specifying the components of relative motion for which the behavior
-    # is defined. Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be
-    # specified. The default value is an empty sequence.
+    #: A sequence of Ints specifying the components of relative motion for which the behavior
+    #: is defined. Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be
+    #: specified. The default value is an empty sequence.
     components: tuple = ()
 
     def __init__(

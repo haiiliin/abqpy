@@ -84,55 +84,55 @@ class XYData:
         session.xyPlots[name].curves[name].data
     """
 
-    # A SymbolicConstant specifying the source type of the XYData object. Possible values are
-    # FROM_ODB, FROM_KEYBOARD, FROM_ASCII_FILE, FROM_OPERATION, and FROM_USER_DEFINED.
+    #: A SymbolicConstant specifying the source type of the XYData object. Possible values are
+    #: FROM_ODB, FROM_KEYBOARD, FROM_ASCII_FILE, FROM_OPERATION, and FROM_USER_DEFINED.
     sourceType: SymbolicConstant = None
 
-    # A String specifying the source file name of the XYData object.
+    #: A String specifying the source file name of the XYData object.
     fileName: str = ""
 
-    # A String specifying the complete description of the XYData object.
+    #: A String specifying the complete description of the XYData object.
     description: str = ""
 
-    # A sequence of pairs of Floats specifying the **X - Y** data pairs.
+    #: A sequence of pairs of Floats specifying the **X - Y** data pairs.
     data: tuple
 
-    # The repository key. If the name is not supplied while creating the XYData object using
-    # xyPlot.XYData, a default name in the form _temp#_ is generated and the XYData object is
-    # temporary. (This argument is required if the method is accessed from the session
-    # object.)
+    #: The repository key. If the name is not supplied while creating the XYData object using
+    #: xyPlot.XYData, a default name in the form _temp#_ is generated and the XYData object is
+    #: temporary. (This argument is required if the method is accessed from the session
+    #: object.)
     name: str = ""
 
-    # A String specifying the source of the **X - Y** data (e.g., “Entered from keyboard”, “Taken
-    # from ASCII file”, “Read from an ODB”, etc.). The default value is an empty string.
+    #: A String specifying the source of the **X - Y** data (e.g., “Entered from keyboard”, “Taken
+    #: from ASCII file”, “Read from an ODB”, etc.). The default value is an empty string.
     sourceDescription: str = ""
 
-    # A String specifying the content of the **X - Y** data (e.g., “field 1 vs. field 2”). The
-    # default value is an empty string.
+    #: A String specifying the content of the **X - Y** data (e.g., “field 1 vs. field 2”). The
+    #: default value is an empty string.
     contentDescription: str = ""
 
-    # A String specifying additional information about the **X - Y** data (e.g., “for whole
-    # model”). The default value is an empty string.
+    #: A String specifying additional information about the **X - Y** data (e.g., “for whole
+    #: model”). The default value is an empty string.
     positionDescription: str = ""
 
-    # A String specifying the label to be used in the legend. The default value is the name of
-    # the XYData object.
+    #: A String specifying the label to be used in the legend. The default value is the name of
+    #: the XYData object.
     legendLabel: str = ""
 
-    # A String specifying the label for the X-values. This value may be overridden if the
-    # **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
+    #: A String specifying the label for the X-values. This value may be overridden if the
+    #: **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
     xValuesLabel: str = ""
 
-    # A String specifying the label for the Y-values. This value may be overridden if the
-    # **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
+    #: A String specifying the label for the Y-values. This value may be overridden if the
+    #: **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
     yValuesLabel: str = ""
 
-    # A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the X -axis1-
-    # values.
+    #: A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the X -axis1-
+    #: values.
     axis1QuantityType: QuantityType = None
 
-    # A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the Y -axis2-
-    # values.
+    #: A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the Y -axis2-
+    #: values.
     axis2QuantityType: QuantityType = None
 
     @typing.overload

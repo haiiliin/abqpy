@@ -40,11 +40,11 @@ class SectionPoint:
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].sectionPoint
     """
 
-    # An Int specifying the number of the section point. See Beam elements and Shell elements
-    # for the numbering convention.
+    #: An Int specifying the number of the section point. See Beam elements and Shell elements
+    #: for the numbering convention.
     number: int
 
-    # A String specifying the description of the section point.
+    #: A String specifying the description of the section point.
     description: str
 
     def __init__(self, number: int, description: str):

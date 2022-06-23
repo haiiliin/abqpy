@@ -54,20 +54,20 @@ class TextStyle:
         session.xyPlots[name].title.titleStyle
     """
 
-    # A String specifying the color to be used when drawing text with this TextStyle object.
-    # The default value is "White".
+    #: A String specifying the color to be used when drawing text with this TextStyle object.
+    #: The default value is "White".
     color: str = ""
 
-    # A Boolean specifying whether to draw the text when using this TextStyle object. The
-    # default value is ON.
+    #: A Boolean specifying whether to draw the text when using this TextStyle object. The
+    #: default value is ON.
     show: Boolean = ON
 
-    # A String specifying the name of the font to be used when drawing text with this
-    # TextStyle object. The default value is "-*-verdana-medium-r-normal-*-*-120-*-*-p-*-*-*".
+    #: A String specifying the name of the font to be used when drawing text with this
+    #: TextStyle object. The default value is "-*-verdana-medium-r-normal-*-*-120-*-*-p-*-*-*".
     font: str = ""
 
-    # A Float specifying the angle in degrees used for displaying the text. The default value
-    # is 0.0.
+    #: A Float specifying the angle in degrees used for displaying the text. The default value
+    #: is 0.0.
     rotationAngle: float = 0
 
     def __init__(

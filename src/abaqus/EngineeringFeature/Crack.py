@@ -23,10 +23,10 @@ class Crack:
         mdb.models[name].rootAssembly.engineeringFeatures.cracks[name]
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str = ""
 
-    # A Boolean specifying whether the crack is suppressed or not. The default value is OFF.
+    #: A Boolean specifying whether the crack is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
 
     def resume(self):

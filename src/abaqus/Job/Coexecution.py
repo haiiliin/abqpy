@@ -73,66 +73,66 @@ class Coexecution:
             - PREPRINT
     """
 
-    # A String specifying the name of the new job. The name must be a valid Abaqus/CAE object
-    # name.
+    #: A String specifying the name of the new job. The name must be a valid Abaqus/CAE object
+    #: name.
     name: str = ""
 
-    # A SymbolicConstant specifying the type of analysis to execute for the co-execution.
-    # Possible values are ANALYSIS, SYNTAXCHECK, RECOVER, and RESTART. The default value is
-    # ANALYSIS.
+    #: A SymbolicConstant specifying the type of analysis to execute for the co-execution.
+    #: Possible values are ANALYSIS, SYNTAXCHECK, RECOVER, and RESTART. The default value is
+    #: ANALYSIS.
     type: SymbolicConstant = ANALYSIS
 
-    # A SymbolicConstant specifying the analysis product type of the main model for the
-    # co-execution. The default value is ABAQUS.
+    #: A SymbolicConstant specifying the analysis product type of the main model for the
+    #: co-execution. The default value is ABAQUS.
     mainAnalysisProduct: SymbolicConstant = ABAQUS
 
-    # An Int specifying the number of hours to wait before submitting the co-execution. This
-    # argument is ignored if **queue** is set. The default value is 0.This argument works in
-    # conjunction with **waitMinutes**. **waitHours** and **atTime** are mutually exclusive.
+    #: An Int specifying the number of hours to wait before submitting the co-execution. This
+    #: argument is ignored if **queue** is set. The default value is 0.This argument works in
+    #: conjunction with **waitMinutes**. **waitHours** and **atTime** are mutually exclusive.
     waitHours: int = 0
 
-    # An Int specifying the number of minutes to wait before submitting the job. This argument
-    # is ignored if **queue** is set. The default value is 0.This argument works in conjunction
-    # with **waitHours**. **waitMinutes** and **atTime** are mutually exclusive.
+    #: An Int specifying the number of minutes to wait before submitting the job. This argument
+    #: is ignored if **queue** is set. The default value is 0.This argument works in conjunction
+    #: with **waitHours**. **waitMinutes** and **atTime** are mutually exclusive.
     waitMinutes: int = 0
 
-    # A SymbolicConstant specifying the status of the co-execution. Possible values are
-    # SUBMITTED, RUNNING, ABORTED, TERMINATED, COMPLETED, CHECK_SUBMITTED, CHECK_RUNNING, and
-    # CHECK_COMPLETED.If the **message** member of all the jobs are empty, **status** is set to
-    # NONE.
+    #: A SymbolicConstant specifying the status of the co-execution. Possible values are
+    #: SUBMITTED, RUNNING, ABORTED, TERMINATED, COMPLETED, CHECK_SUBMITTED, CHECK_RUNNING, and
+    #: CHECK_COMPLETED.If the **message** member of all the jobs are empty, **status** is set to
+    #: NONE.
     status: SymbolicConstant = None
 
-    # A String specifying the name of the queue to which to submit the co-execution. The
-    # default value is an empty string.Note:You can use the **queue** argument when creating a
-    # Coexecution object on a Windows workstation; however, remote queues are available only
-    # on Linux platforms.
+    #: A String specifying the name of the queue to which to submit the co-execution. The
+    #: default value is an empty string.Note:You can use the **queue** argument when creating a
+    #: Coexecution object on a Windows workstation; however, remote queues are available only
+    #: on Linux platforms.
     queue: str = ""
 
-    # A String specifying the time at which to submit the co-execution. If **queue** is empty,
-    # the string syntax must be valid for the Linux `at` command. If **queue** is set, the
-    # syntax must be valid according to the system administrator. The default value is an
-    # empty string.Note:You can use the **atTime** argument when creating a Coexecution object
-    # on a Windows workstation; however, the `at` command is available only on Linux
-    # platforms.
+    #: A String specifying the time at which to submit the co-execution. If **queue** is empty,
+    #: the string syntax must be valid for the Linux `at` command. If **queue** is set, the
+    #: syntax must be valid according to the system administrator. The default value is an
+    #: empty string.Note:You can use the **atTime** argument when creating a Coexecution object
+    #: on a Windows workstation; however, the `at` command is available only on Linux
+    #: platforms.
     atTime: str = ""
 
-    # A repository of Job objects specifying the jobs that comprise this co-execution.
+    #: A repository of Job objects specifying the jobs that comprise this co-execution.
     jobs: dict[str, Job] = dict[str, Job]()
 
-    # A tuple of Strings specifying the names of the secondary models for the co-execution.
+    #: A tuple of Strings specifying the names of the secondary models for the co-execution.
     secondaryModels: tuple = ()
 
-    # A tuple of SymbolicConstants specifying the analysis product types of the secondary
-    # models for the co-execution. The default value is an empty sequence.
+    #: A tuple of SymbolicConstants specifying the analysis product types of the secondary
+    #: models for the co-execution. The default value is an empty sequence.
     secondaryAnalysisProducts: SymbolicConstant = None
 
-    # A String specifying the name of the main model for the co-execution.
+    #: A String specifying the name of the main model for the co-execution.
     mainModel: str = ""
 
-    # A SymbolicConstant specifying the type of license type being used in case of DSLS
-    # SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default value
-    # is DEFAULT.If the license model is not DSLS SimUnit then the licenseType is not
-    # available.
+    #: A SymbolicConstant specifying the type of license type being used in case of DSLS
+    #: SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default value
+    #: is DEFAULT.If the license model is not DSLS SimUnit then the licenseType is not
+    #: available.
     licenseType: SymbolicConstant = DEFAULT
 
     def kill(self):

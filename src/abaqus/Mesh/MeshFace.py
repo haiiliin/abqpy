@@ -26,10 +26,10 @@ class MeshFace:
         mdb.models[name].rootAssembly.instances[name].elemFaces[i]
     """
 
-    # An Int specifying an Int specifying the element label.
+    #: An Int specifying an Int specifying the element label.
     label: int = None
 
-    # An Int specifying a symbolic constant specifying the side of the element.
+    #: An Int specifying a symbolic constant specifying the side of the element.
     face: int = None
 
     def getElemEdges(self):

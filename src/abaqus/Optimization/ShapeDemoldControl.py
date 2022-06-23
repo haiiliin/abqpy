@@ -57,53 +57,53 @@ class ShapeDemoldControl(GeometricRestriction):
         mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
 
-    # A String specifying the geometric restriction repository key.
+    #: A String specifying the geometric restriction repository key.
     name: str
 
-    # A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the demold pull direction. Instead of
-    # through a ConstrainedSketchVertex, each point might be specified through a tuple of coordinates.
+    #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the demold pull direction. Instead of
+    #: through a ConstrainedSketchVertex, each point might be specified through a tuple of coordinates.
     pullDirection: tuple
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
-    # When used with a TopologyTask, there is no default value. When used with a ShapeTask,
-    # the default value is MODEL.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    #: When used with a TopologyTask, there is no default value. When used with a ShapeTask,
+    #: the default value is MODEL.
     region: Region
 
-    # The SymbolicConstant DEMOLD_REGION or a Region object specifying the collision check
-    # region. If the value is DEMOLD_REGION, then the value of **region** is used as both the
-    # demold region and the collision check region. The default value is DEMOLD_REGION.
+    #: The SymbolicConstant DEMOLD_REGION or a Region object specifying the collision check
+    #: region. If the value is DEMOLD_REGION, then the value of **region** is used as both the
+    #: demold region and the collision check region. The default value is DEMOLD_REGION.
     collisionCheckRegion: SymbolicConstant = DEMOLD_REGION
 
-    # None or a DatumCsys object specifying the local coordinate system of the
-    # **pullDirection**. If **csys** = None, the global coordinate system is used. When this member
-    # is queried, it returns an Int indicating the identifier of the DatumCsys. The default
-    # value is None.
+    #: None or a DatumCsys object specifying the local coordinate system of the
+    #: **pullDirection**. If **csys** = None, the global coordinate system is used. When this member
+    #: is queried, it returns an Int indicating the identifier of the DatumCsys. The default
+    #: value is None.
     csys: int = None
 
-    # A Float specifying the draw angle. The default value is 0.0.
+    #: A Float specifying the draw angle. The default value is 0.0.
     drawAngle: float = 0
 
-    # A SymbolicConstant specifying the rule for assigning point priority. Possible values are
-    # MAXIMUM and MINIMUM. The default value is MAXIMUM.
+    #: A SymbolicConstant specifying the rule for assigning point priority. Possible values are
+    #: MAXIMUM and MINIMUM. The default value is MAXIMUM.
     mainPointDetermination: SymbolicConstant = MAXIMUM
 
-    # A Boolean specifying whether to ignore the geometric restriction in the first design
-    # cycle. The default value is ON.
+    #: A Boolean specifying whether to ignore the geometric restriction in the first design
+    #: cycle. The default value is ON.
     presumeFeasibleRegionAtStart: Boolean = ON
 
-    # A Float specifying the geometric tolerance in the 1-direction. The default value is
-    # 0.01.
+    #: A Float specifying the geometric tolerance in the 1-direction. The default value is
+    #: 0.01.
     tolerance1: float = 0
 
-    # A Float specifying the geometric tolerance in the 2-direction. The default value is
-    # 0.01.
+    #: A Float specifying the geometric tolerance in the 2-direction. The default value is
+    #: 0.01.
     tolerance2: float = 0
 
-    # A Float specifying the geometric tolerance in the 3-direction. The default value is
-    # 0.01.
+    #: A Float specifying the geometric tolerance in the 3-direction. The default value is
+    #: 0.01.
     tolerance3: float = 0
 
-    # A Float specifying the undercut tolerance. The default value is 0.0.
+    #: A Float specifying the undercut tolerance. The default value is 0.0.
     undercutTolerance: float = 0
 
     def __init__(

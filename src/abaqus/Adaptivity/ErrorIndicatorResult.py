@@ -24,12 +24,12 @@ class ErrorIndicatorResult(RuleResult):
         mdb.adaptivityProcesses[name].iterations[i].ruleResults[name].indicatorResults[name]
     """
 
-    # A String specifying the name of the error indicator variable to which these results
-    # correspond.
+    #: A String specifying the name of the error indicator variable to which these results
+    #: correspond.
     name: str
 
-    # A String-to-Float Dictionary specifying the calculated results from the sizing function
-    # corresponding to the error indicator variable represented by this ErrorIndicatorResult.
+    #: A String-to-Float Dictionary specifying the calculated results from the sizing function
+    #: corresponding to the error indicator variable represented by this ErrorIndicatorResult.
     results: str
 
     def __init__(self, name: str, results: str):

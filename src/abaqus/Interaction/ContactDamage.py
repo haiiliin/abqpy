@@ -186,76 +186,76 @@ class ContactDamage:
     - DAMAGE STABILIZATION
     """
 
-    # A SymbolicConstant specifying the type of data used to define the initiation of damage.
-    # Possible values are MAX_STRESS, MAX_SEPARATION, QUAD_TRACTION, and QUAD_SEPARATION. The
-    # default value is MAX_STRESS.
+    #: A SymbolicConstant specifying the type of data used to define the initiation of damage.
+    #: Possible values are MAX_STRESS, MAX_SEPARATION, QUAD_TRACTION, and QUAD_SEPARATION. The
+    #: default value is MAX_STRESS.
     criterion: SymbolicConstant = MAX_STRESS
 
-    # A Boolean specifying whether the initiation data depend on temperature. The default
-    # value is OFF.
+    #: A Boolean specifying whether the initiation data depend on temperature. The default
+    #: value is OFF.
     initTempDep: Boolean = OFF
 
-    # An Int specifying the number of initiation data field variables. The default value is 0.
+    #: An Int specifying the number of initiation data field variables. The default value is 0.
     initDependencies: int = 0
 
-    # A Boolean specifying whether evolution data will be defined. The default value is OFF.
+    #: A Boolean specifying whether evolution data will be defined. The default value is OFF.
     useEvolution: Boolean = OFF
 
-    # A SymbolicConstant specifying the type of data used to define the evolution of damage.
-    # This argument is valid only when **useEvolution** = ON. Possible values are DISPLACEMENT and
-    # ENERGY. The default value is DISPLACEMENT.
+    #: A SymbolicConstant specifying the type of data used to define the evolution of damage.
+    #: This argument is valid only when **useEvolution** = ON. Possible values are DISPLACEMENT and
+    #: ENERGY. The default value is DISPLACEMENT.
     evolutionType: SymbolicConstant = DISPLACEMENT
 
-    # A SymbolicConstant specifying the type of data used to define the evolution softening
-    # response. This argument is valid only when **useEvolution** = ON. The TABULAR value can be
-    # used only when **evolutionType** = DISPLACEMENT. Possible values are LINEAR, EXPONENTIAL,
-    # and TABULAR. The default value is LINEAR.
+    #: A SymbolicConstant specifying the type of data used to define the evolution softening
+    #: response. This argument is valid only when **useEvolution** = ON. The TABULAR value can be
+    #: used only when **evolutionType** = DISPLACEMENT. Possible values are LINEAR, EXPONENTIAL,
+    #: and TABULAR. The default value is LINEAR.
     softening: SymbolicConstant = LINEAR
 
-    # A Boolean specifying whether evolution data be defined using dependent behavior modes.
-    # This argument is valid only when **useEvolution** = ON. The default value is OFF.
+    #: A Boolean specifying whether evolution data be defined using dependent behavior modes.
+    #: This argument is valid only when **useEvolution** = ON. The default value is OFF.
     useMixedMode: Boolean = OFF
 
-    # A SymbolicConstant specifying the mode mix fracture criterion. This argument is valid
-    # only when **useEvolution** = ON and when **useMixedMode** = ON. The POWER_LAW and BK values can
-    # be used only when **evolutionType** = ENERGY. Possible values are TABULAR, POWER_LAW, and
-    # BK. The default value is TABULAR.
+    #: A SymbolicConstant specifying the mode mix fracture criterion. This argument is valid
+    #: only when **useEvolution** = ON and when **useMixedMode** = ON. The POWER_LAW and BK values can
+    #: be used only when **evolutionType** = ENERGY. Possible values are TABULAR, POWER_LAW, and
+    #: BK. The default value is TABULAR.
     mixedModeType: SymbolicConstant = TABULAR
 
-    # A SymbolicConstant specifying the mode mix ratio type. This argument is valid only when
-    # **useEvolution** = ON and when **useMixedMode** = ON. The TRACTION value can be used only when
-    # **mixedModeType** = TABULAR. Possible values are ENERGY and TRACTION. The default value is
-    # ENERGY.
+    #: A SymbolicConstant specifying the mode mix ratio type. This argument is valid only when
+    #: **useEvolution** = ON and when **useMixedMode** = ON. The TRACTION value can be used only when
+    #: **mixedModeType** = TABULAR. Possible values are ENERGY and TRACTION. The default value is
+    #: ENERGY.
     modeMixRatio: SymbolicConstant = ENERGY
 
-    # None or a Float specifying the exponent in the power-law or BK criterion that defines
-    # the variation of fracture energy with mode mix. This argument is valid only when
-    # **useEvolution** = ON and when **mixedModeType** = POWER_LAW or BK. The default value is None.
+    #: None or a Float specifying the exponent in the power-law or BK criterion that defines
+    #: the variation of fracture energy with mode mix. This argument is valid only when
+    #: **useEvolution** = ON and when **mixedModeType** = POWER_LAW or BK. The default value is None.
     exponent: float = None
 
-    # A Boolean specifying whether the evolution data depend on temperature. This argument is
-    # valid only when **useEvolution** = ON. The default value is OFF.
+    #: A Boolean specifying whether the evolution data depend on temperature. This argument is
+    #: valid only when **useEvolution** = ON. The default value is OFF.
     evolTempDep: Boolean = OFF
 
-    # An Int specifying the number of evolution data field variables. This argument is valid
-    # only when **useEvolution** = ON. The default value is 0.
+    #: An Int specifying the number of evolution data field variables. This argument is valid
+    #: only when **useEvolution** = ON. The default value is 0.
     evolDependencies: int = 0
 
-    # A Boolean specifying whether stabilization data will be defined. This argument is valid
-    # only when **useEvolution** = ON. The default value is OFF.
+    #: A Boolean specifying whether stabilization data will be defined. This argument is valid
+    #: only when **useEvolution** = ON. The default value is OFF.
     useStabilization: Boolean = OFF
 
-    # None or a Float specifying the viscosity coefficient. This argument is valid only when
-    # **useStabilization** = ON. The default value is None.
+    #: None or a Float specifying the viscosity coefficient. This argument is valid only when
+    #: **useStabilization** = ON. The default value is None.
     viscosityCoef: float = None
 
-    # A tuple of tuples of Floats specifying the values defining the damage initiation. The
-    # items in the table data are described below.
+    #: A tuple of tuples of Floats specifying the values defining the damage initiation. The
+    #: items in the table data are described below.
     initTable: float = None
 
-    # A tuple of tuples of Floats specifying the values defining the damage evolution. The
-    # items in the table data are described below. This argument is valid only when
-    # **useEvolution** = ON.
+    #: A tuple of tuples of Floats specifying the values defining the damage evolution. The
+    #: items in the table data are described below. This argument is valid only when
+    #: **useEvolution** = ON.
     evolTable: float = None
 
     def __init__(

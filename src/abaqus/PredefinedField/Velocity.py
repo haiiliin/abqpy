@@ -49,39 +49,39 @@ class Velocity(PredefinedField):
     - INITIAL CONDITIONS
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the predefined field is applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the predefined field is applied.
     region: Region
 
-    # A Float specifying the first component of the velocity.
+    #: A Float specifying the first component of the velocity.
     velocity1: float
 
-    # A Float specifying the second component of the velocity.
+    #: A Float specifying the second component of the velocity.
     velocity2: float
 
-    # A Float specifying the third component of the velocity.
+    #: A Float specifying the third component of the velocity.
     velocity3: float
 
-    # A Float specifying the angular velocity.
+    #: A Float specifying the angular velocity.
     omega: float
 
-    # A sequence of Floats specifying the *X-*, *Y-*, and **Z**- coordinates of the starting
-    # point of the axis about which **omega** is defined.
+    #: A sequence of Floats specifying the *X-*, *Y-*, and **Z**- coordinates of the starting
+    #: point of the axis about which **omega** is defined.
     axisBegin: tuple
 
-    # A sequence of Floats specifying the *X-*, *Y-*, and **Z**- coordinates of the end point of
-    # the axis about which **omega** is defined.
+    #: A sequence of Floats specifying the *X-*, *Y-*, and **Z**- coordinates of the end point of
+    #: the axis about which **omega** is defined.
     axisEnd: tuple
 
-    # A String specifying the name of the AnalyticalField object associated with this
-    # predefined field. The **field** argument applies only when
-    # **distributionType** = FIELD_ANALYTICAL. The default value is an empty string.
+    #: A String specifying the name of the AnalyticalField object associated with this
+    #: predefined field. The **field** argument applies only when
+    #: **distributionType** = FIELD_ANALYTICAL. The default value is an empty string.
     field: str = ""
 
-    # A SymbolicConstant specifying whether the load is uniform. Possible values are MAGNITUDE
-    # and FIELD_ANALYTICAL. The default value is MAGNITUDE.
+    #: A SymbolicConstant specifying whether the load is uniform. Possible values are MAGNITUDE
+    #: and FIELD_ANALYTICAL. The default value is MAGNITUDE.
     distributionType: SymbolicConstant = MAGNITUDE
 
     def __init__(

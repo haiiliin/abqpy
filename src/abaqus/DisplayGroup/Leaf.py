@@ -25,8 +25,8 @@ class Leaf:
         import displayGroupOdbToolset
     """
 
-    # A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-    # DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
+    #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
+    #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: SymbolicConstant
 
     def __init__(self, leafType: SymbolicConstant):

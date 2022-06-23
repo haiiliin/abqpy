@@ -44,10 +44,10 @@ class CrushableFoam:
     - CRUSHABLE FOAM
     """
 
-    # A :py:class:`~abaqus.Material.Plastic.CrushableFoam.CrushableFoamHardening.CrushableFoamHardening` object.
+    #: A :py:class:`~abaqus.Material.Plastic.CrushableFoam.CrushableFoamHardening.CrushableFoamHardening` object.
     crushableFoamHardening: CrushableFoamHardening = CrushableFoamHardening(((),))
 
-    # A :py:class:`~abaqus.Material.Plastic.Metal.RateDependent.RateDependent.RateDependent` object.
+    #: A :py:class:`~abaqus.Material.Plastic.Metal.RateDependent.RateDependent.RateDependent` object.
     rateDependent: RateDependent = RateDependent(((),))
 
     def __init__(

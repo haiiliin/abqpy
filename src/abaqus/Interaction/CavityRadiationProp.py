@@ -34,18 +34,18 @@ class CavityRadiationProp(ContactProperty):
     - EMISSIVITY
     """
 
-    # A String specifying the interaction property repository key.
+    #: A String specifying the interaction property repository key.
     name: str
 
-    # A Boolean specifying whether the data depend on temperature. The default value is OFF.
+    #: A Boolean specifying whether the data depend on temperature. The default value is OFF.
     temperatureDependency: Boolean = OFF
 
-    # An Int specifying the number of field variable dependencies. The default value is 0.
+    #: An Int specifying the number of field variable dependencies. The default value is 0.
     dependencies: int = 0
 
-    # A sequence of sequences of Floats specifying the following:The emissivity,
-    # ϵϵ.Temperature, if the data depend on temperature.Value of the first field variable, if
-    # the data depend on field variables.Value of the second field variable.Etc.
+    #: A sequence of sequences of Floats specifying the following:The emissivity,
+    #: ϵϵ.Temperature, if the data depend on temperature.Value of the first field variable, if
+    #: the data depend on field variables.Value of the second field variable.Etc.
     property: tuple = ()
 
     def __init__(

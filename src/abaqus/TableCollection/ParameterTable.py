@@ -30,10 +30,10 @@ class ParameterTable:
             - *PARAMETER TABLE
     """
 
-    # A ParameterColumnArray specifying all the columns in the ParameterTable.
+    #: A ParameterColumnArray specifying all the columns in the ParameterTable.
     columns: ParameterColumnArray = ParameterColumnArray()
 
-    # A DataTableArray specifying all the dataTables in the ParameterTable.
+    #: A DataTableArray specifying all the dataTables in the ParameterTable.
     dataTables: str = ""
 
     def __init__(self, name: str):

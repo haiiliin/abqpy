@@ -42,26 +42,26 @@ class DebondVCCT(Crack):
     - DEBOND
     """
 
-    # A Boolean specifying whether the crack is suppressed or not. The default value is OFF.
+    #: A Boolean specifying whether the crack is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A String specifying the name of the step in which the DebondVCCT object is created.
+    #: A String specifying the name of the step in which the DebondVCCT object is created.
     initiationStep: str
 
-    # A String specifying the name of the SurfaceToSurfaceContactStd object that defines the
-    # surface to surface interaction for the crack surfaces.
+    #: A String specifying the name of the SurfaceToSurfaceContactStd object that defines the
+    #: surface to surface interaction for the crack surfaces.
     surfToSurfInteraction: str
 
-    # A SymbolicConstant specifying whether the debond force between the two surfaces at the
-    # crack tip is to be released immediately or gradually during the following increment
-    # after debonding. Possible values are STEP and RAMP. The default value is STEP.
+    #: A SymbolicConstant specifying whether the debond force between the two surfaces at the
+    #: crack tip is to be released immediately or gradually during the following increment
+    #: after debonding. Possible values are STEP and RAMP. The default value is STEP.
     debondingForceAmplitude: SymbolicConstant = STEP
 
-    # An Int specifying the frequency at which output will be printed to DAT file. The default
-    # value is 1.
+    #: An Int specifying the frequency at which output will be printed to DAT file. The default
+    #: value is 1.
     printToDATFrequency: int = 1
 
     def __init__(

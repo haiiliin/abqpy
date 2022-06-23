@@ -113,103 +113,103 @@ class AssemblyBase(Feature):
         mdb.models[name].rootAssembly
     """
 
-    # An Int specifying that feature parameters have been modified but that the assembly has
-    # not been regenerated. Possible values are 0 and 1.
+    #: An Int specifying that feature parameters have been modified but that the assembly has
+    #: not been regenerated. Possible values are 0 and 1.
     isOutOfDate: int = None
 
-    # A Float specifying which gives an indication when the assembly was last modified.
+    #: A Float specifying which gives an indication when the assembly was last modified.
     timeStamp: float = None
 
-    # An Int specifying whether the assembly is locked or not. Possible values are 0 and 1.
+    #: An Int specifying whether the assembly is locked or not. Possible values are 0 and 1.
     isLocked: int = None
 
-    # A Boolean specifying whether the positioning constraints in the assembly should be
-    # regenerated together before regenerating other assembly features. The default value is
-    # ON.If the assembly has position constraint features and you modify the value of
-    # **regenerateConstraintsTogether**, Abaqus/CAE will regenerate the assembly features.
+    #: A Boolean specifying whether the positioning constraints in the assembly should be
+    #: regenerated together before regenerating other assembly features. The default value is
+    #: ON.If the assembly has position constraint features and you modify the value of
+    #: **regenerateConstraintsTogether**, Abaqus/CAE will regenerate the assembly features.
     regenerateConstraintsTogether: Boolean = ON
 
-    # A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object specifying all the vertices existing at the assembly level. This
-    # member does not provide access to the vertices at the instance level.
+    #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object specifying all the vertices existing at the assembly level. This
+    #: member does not provide access to the vertices at the instance level.
     vertices: VertexArray = VertexArray([])
 
-    # An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object specifying all the edges existing at the assembly level. This member
-    # does not provide access to the edges at the instance level.
+    #: An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object specifying all the edges existing at the assembly level. This member
+    #: does not provide access to the edges at the instance level.
     edges: EdgeArray = EdgeArray([])
 
-    # A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object specifying all the elements existing at the assembly level.
-    # This member does not provide access to the elements at the instance level.
+    #: A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object specifying all the elements existing at the assembly level.
+    #: This member does not provide access to the elements at the instance level.
     elements: MeshElementArray = MeshElementArray([])
 
-    # A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object specifying all the nodes existing at the assembly level. This
-    # member does not provide access to the nodes at the instance level.
+    #: A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object specifying all the nodes existing at the assembly level. This
+    #: member does not provide access to the nodes at the instance level.
     nodes: MeshNodeArray = MeshNodeArray([])
 
-    # A repository of PartInstance objects.
+    #: A repository of PartInstance objects.
     instances: dict[str, PartInstance] = dict[str, PartInstance]()
 
-    # A repository of Datum objects specifying all Datum objects in the assembly.
+    #: A repository of Datum objects specifying all Datum objects in the assembly.
     datums: list[Datum] = list[Datum]()
 
-    # A repository of Feature objects specifying all Feature objects in the assembly.
+    #: A repository of Feature objects specifying all Feature objects in the assembly.
     features: dict[str, Feature] = dict[str, Feature]()
 
-    # A repository of Feature objects specifying all Feature objects in the assembly.The
-    # Feature objects in the featuresById repository are the same as the Feature objects in
-    # the features repository. However, the key to the objects in the featuresById repository
-    # is an integer specifying the **ID**, whereas the key to the objects in the features
-    # repository is a string specifying the **name**.
+    #: A repository of Feature objects specifying all Feature objects in the assembly.The
+    #: Feature objects in the featuresById repository are the same as the Feature objects in
+    #: the features repository. However, the key to the objects in the featuresById repository
+    #: is an integer specifying the **ID**, whereas the key to the objects in the features
+    #: repository is a string specifying the **name**.
     featuresById: dict[str, Feature] = dict[str, Feature]()
 
-    # A repository of Surface objects specifying for more information, see [Region
-    # commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
+    #: A repository of Surface objects specifying for more information, see [Region
+    #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
     surfaces: dict[str, Surface] = dict[str, Surface]()
 
-    # A repository of Surface objects specifying for more information, see [Region
-    # commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
+    #: A repository of Surface objects specifying for more information, see [Region
+    #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
     allSurfaces: dict[str, Surface] = dict[str, Surface]()
 
-    # A repository of Surface objects specifying picked regions.
+    #: A repository of Surface objects specifying picked regions.
     allInternalSurfaces: dict[str, Surface] = dict[str, Surface]()
 
-    # A repository of Set objects.
+    #: A repository of Set objects.
     sets: dict[str, Set] = dict[str, Set]()
 
-    # A repository of Set objects specifying for more information, see [Region
-    # commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
+    #: A repository of Set objects specifying for more information, see [Region
+    #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
     allSets: dict[str, Set] = dict[str, Set]()
 
-    # A repository of Set objects specifying picked regions.
+    #: A repository of Set objects specifying picked regions.
     allInternalSets: dict[str, Set] = dict[str, Set]()
 
-    # A repository of Skin objects specifying the skins created on the assembly.
+    #: A repository of Skin objects specifying the skins created on the assembly.
     skins: dict[str, Skin] = dict[str, Skin]()
 
-    # A repository of Stringer objects specifying the stringers created on the assembly.
+    #: A repository of Stringer objects specifying the stringers created on the assembly.
     stringers: dict[str, Stringer] = dict[str, Stringer]()
 
-    # A repository of ReferencePoint objects.
+    #: A repository of ReferencePoint objects.
     referencePoints: dict[str, ReferencePoint] = dict[str, ReferencePoint]()
 
-    # A repository of ModelInstance objects.
+    #: A repository of ModelInstance objects.
     modelInstances: dict[str, ModelInstance] = dict[str, ModelInstance]()
 
-    # A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the PartInstances and A :py:class:`~abaqus.Model.Model.ModelInstance` object specifying
-    # the ModelInstances.
+    #: A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the PartInstances and A :py:class:`~abaqus.Model.Model.ModelInstance` object specifying
+    #: the ModelInstances.
     allInstances: dict[str, typing.Union[PartInstance, ModelInstance]] = dict[
         str, typing.Union[PartInstance, ModelInstance]
     ]()
 
-    # An :py:class:`~abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature` object.
+    #: An :py:class:`~abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature` object.
     engineeringFeatures: EngineeringFeature = EngineeringFeature()
 
-    # A String specifying the name of the model to which the assembly belongs.
+    #: A String specifying the name of the model to which the assembly belongs.
     modelName: str = ""
 
-    # A :py:class:`~abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientationArray` object.
+    #: A :py:class:`~abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientationArray` object.
     connectorOrientations: ConnectorOrientationArray = ConnectorOrientationArray()
 
-    # A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
+    #: A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
     sectionAssignments: SectionAssignmentArray = SectionAssignmentArray()
 
     @typing.overload

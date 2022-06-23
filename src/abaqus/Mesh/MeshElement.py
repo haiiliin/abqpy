@@ -54,18 +54,18 @@ class MeshElement:
         mdb.models[name].rootAssembly.surfaces[name].elements[i]
     """
 
-    # An Int specifying the element label.
+    #: An Int specifying the element label.
     label: int = None
 
-    # A SymbolicConstant specifying the Abaqus element code.
+    #: A SymbolicConstant specifying the Abaqus element code.
     type: SymbolicConstant = None
 
-    # A String specifying the name of the part instance that owns this element.
+    #: A String specifying the name of the part instance that owns this element.
     instanceName: str = ""
 
-    # A tuple of Ints specifying the internal node indices that define the nodal connectivity.
-    # It is important to note the difference with OdbMeshElement object of ODB where the
-    # connectivity is node labels instead of node indices.
+    #: A tuple of Ints specifying the internal node indices that define the nodal connectivity.
+    #: It is important to note the difference with OdbMeshElement object of ODB where the
+    #: connectivity is node labels instead of node indices.
     connectivity: int = None
 
     def Element(

@@ -35,24 +35,24 @@ class HistoryRegion:
         session.odbs[name].steps[name].historyRegions[name]
     """
 
-    # A SymbolicConstant specifying the position of the history output. Possible values are
-    # NODAL, INTEGRATION_POINT, WHOLE_ELEMENT, WHOLE_REGION, and WHOLE_MODEL.
+    #: A SymbolicConstant specifying the position of the history output. Possible values are
+    #: NODAL, INTEGRATION_POINT, WHOLE_ELEMENT, WHOLE_REGION, and WHOLE_MODEL.
     position: SymbolicConstant = None
 
-    # A repository of HistoryOutput objects.
+    #: A repository of HistoryOutput objects.
     historyOutputs: dict[str, HistoryOutput] = dict[str, HistoryOutput]()
 
-    # A String specifying the name of the HistoryRegion object.
+    #: A String specifying the name of the HistoryRegion object.
     name: str
 
-    # A String specifying the description of the HistoryRegion object.
+    #: A String specifying the description of the HistoryRegion object.
     description: str
 
-    # A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object specifying the point to which the history data refer.
+    #: A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object specifying the point to which the history data refer.
     point: HistoryPoint
 
-    # None or an OdbLoadCase object specifying the load case associated with the HistoryRegion
-    # object. The default value is None.
+    #: None or an OdbLoadCase object specifying the load case associated with the HistoryRegion
+    #: object. The default value is None.
     loadCase: str = None
 
     def __init__(

@@ -18,5 +18,5 @@ class DesignResponse:
         mdb.models[name].optimizationTasks[name].designResponses[name]
     """
 
-    # A String specifying the design response repository key.
+    #: A String specifying the design response repository key.
     name: str = ""

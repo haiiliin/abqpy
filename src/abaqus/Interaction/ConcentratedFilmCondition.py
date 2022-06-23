@@ -76,73 +76,73 @@ class ConcentratedFilmCondition(Interaction):
         mdb.models[name].interactions[name]
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A String specifying the name of the step in which the ConcentratedFilmCondition object
-    # is created.
+    #: A String specifying the name of the step in which the ConcentratedFilmCondition object
+    #: is created.
     createStepName: str
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the concentrated film condition
-    # interaction is applied. The interaction is applied to each node in the region.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the concentrated film condition
+    #: interaction is applied. The interaction is applied to each node in the region.
     region: Region
 
-    # A SymbolicConstant specifying how the concentrated film condition is defined. Possible
-    # values are EMBEDDED_COEFF, PROPERTY_REF, USER_SUB, and FIELD.
+    #: A SymbolicConstant specifying how the concentrated film condition is defined. Possible
+    #: values are EMBEDDED_COEFF, PROPERTY_REF, USER_SUB, and FIELD.
     definition: SymbolicConstant
 
-    # A Float specifying the area associated with the node where the concentrated film
-    # condition is applied. The default value is 1.0.
+    #: A Float specifying the area associated with the node where the concentrated film
+    #: condition is applied. The default value is 1.0.
     nodalArea: float = 1
 
-    # A SymbolicConstant specifying how the concentrated film condition is applied to the
-    # boundary of an adaptive mesh domain. Possible values are LAGRANGIAN, SLIDING, and
-    # EULERIAN. The default value is LAGRANGIAN. This argument applies only during an
-    # Abaqus/Explicit analysis.
+    #: A SymbolicConstant specifying how the concentrated film condition is applied to the
+    #: boundary of an adaptive mesh domain. Possible values are LAGRANGIAN, SLIDING, and
+    #: EULERIAN. The default value is LAGRANGIAN. This argument applies only during an
+    #: Abaqus/Explicit analysis.
     explicitRegionType: SymbolicConstant = LAGRANGIAN
 
-    # A String specifying the name of the FilmConditionProp object associated with this
-    # interaction. The **interactionProperty** argument applies only when
-    # **definition** = PROPERTY_REF. The default value is an empty string.
+    #: A String specifying the name of the FilmConditionProp object associated with this
+    #: interaction. The **interactionProperty** argument applies only when
+    #: **definition** = PROPERTY_REF. The default value is an empty string.
     interactionProperty: str = ""
 
-    # A String specifying the name of the AnalyticalField object associated with this
-    # interaction. The **field** argument applies only when **definition** = FIELD. The default
-    # value is an empty string.
+    #: A String specifying the name of the AnalyticalField object associated with this
+    #: interaction. The **field** argument applies only when **definition** = FIELD. The default
+    #: value is an empty string.
     field: str = ""
 
-    # A Float specifying the reference sink temperature, θ0θ0. The default value is 0.0.
+    #: A Float specifying the reference sink temperature, θ0θ0. The default value is 0.0.
     sinkTemperature: float = 0
 
-    # A String specifying the name of the Amplitude object that gives the variation of the
-    # sink temperature, θ0θ0, with time. The default value is an empty string.Note:Use None in
-    # an Abaqus/Standard analysis to specify that the reference sink temperature is applied
-    # immediately at the beginning of the step or linearly over the step. Use None in an
-    # Abaqus/Explicit analysis to specify that the reference sink temperature is applied
-    # throughout the step.
+    #: A String specifying the name of the Amplitude object that gives the variation of the
+    #: sink temperature, θ0θ0, with time. The default value is an empty string.Note:Use None in
+    #: an Abaqus/Standard analysis to specify that the reference sink temperature is applied
+    #: immediately at the beginning of the step or linearly over the step. Use None in an
+    #: Abaqus/Explicit analysis to specify that the reference sink temperature is applied
+    #: throughout the step.
     sinkAmplitude: str = ""
 
-    # A Float specifying the reference film coefficient value, hh. The **filmCoeff** argument
-    # applies when **definition** = EMBEDDED_COEFF, **definition** = USER_SUB, or **definition** = FIELD.
-    # The default value is 0.0.
+    #: A Float specifying the reference film coefficient value, hh. The **filmCoeff** argument
+    #: applies when **definition** = EMBEDDED_COEFF, **definition** = USER_SUB, or **definition** = FIELD.
+    #: The default value is 0.0.
     filmCoeff: float = 0
 
-    # A String specifying the name of the Amplitude object that gives the variation of the
-    # film coefficient, hh, with time. The default value is an empty string.Note:Use None in
-    # an Abaqus/Standard analysis to specify that the reference film coefficient is applied
-    # immediately at the beginning of the step or linearly over the step. Use None in an
-    # Abaqus/Explicit analysis to specify that the reference film coefficient is applied
-    # throughout the step.
+    #: A String specifying the name of the Amplitude object that gives the variation of the
+    #: film coefficient, hh, with time. The default value is an empty string.Note:Use None in
+    #: an Abaqus/Standard analysis to specify that the reference film coefficient is applied
+    #: immediately at the beginning of the step or linearly over the step. Use None in an
+    #: Abaqus/Explicit analysis to specify that the reference film coefficient is applied
+    #: throughout the step.
     filmCoeffAmplitude: str = ""
 
-    # A String specifying the name of the AnalyticalField or DiscreteField object associated
-    # with the sink temperature. The **sinkFieldName** argument applies only when
-    # **sinkDistributionType** = ANALYTICAL_FIELD or **sinkDistributionType** = DISCRETE_FIELD. The
-    # default value is an empty string.
+    #: A String specifying the name of the AnalyticalField or DiscreteField object associated
+    #: with the sink temperature. The **sinkFieldName** argument applies only when
+    #: **sinkDistributionType** = ANALYTICAL_FIELD or **sinkDistributionType** = DISCRETE_FIELD. The
+    #: default value is an empty string.
     sinkFieldName: str = ""
 
-    # A SymbolicConstant specifying how the sink temperature is distributed. Possible values
-    # are UNIFORM, ANALYTICAL_FIELD, and DISCRETE_FIELD. The default value is UNIFORM.
+    #: A SymbolicConstant specifying how the sink temperature is distributed. Possible values
+    #: are UNIFORM, ANALYTICAL_FIELD, and DISCRETE_FIELD. The default value is UNIFORM.
     sinkDistributionType: SymbolicConstant = UNIFORM
 
     def __init__(

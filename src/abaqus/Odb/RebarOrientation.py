@@ -32,16 +32,16 @@ class RebarOrientation:
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.rebarOrientations[i]
     """
 
-    # A SymbolicConstant specifying the axis of a cylindrical or spherical datum coordinate
-    # system about which an additional rotation is applied. Possible values are AXIS_1,
-    # AXIS_2, and AXIS_3.
+    #: A SymbolicConstant specifying the axis of a cylindrical or spherical datum coordinate
+    #: system about which an additional rotation is applied. Possible values are AXIS_1,
+    #: AXIS_2, and AXIS_3.
     axis: SymbolicConstant = None
 
-    # A Float specifying the angle of the additional rotation.
+    #: A Float specifying the angle of the additional rotation.
     angle: float = None
 
-    # An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying a region for which the rebar orientation is defined.
+    #: An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying a region for which the rebar orientation is defined.
     region: OdbSet = OdbSet("set", tuple[OdbMeshNode]())
 
-    # An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object specifying a datum coordinates system.
+    #: An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object specifying a datum coordinates system.
     csys: OdbDatumCsys = OdbDatumCsys()

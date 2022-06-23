@@ -16,7 +16,7 @@ class RigidBodyConstraint:
         session.odbData[name].rigidbodies[i]
     """
 
-    # A String specifying the rigidbody constraint name. This attribute is read-only.
+    #: A String specifying the rigidbody constraint name. This attribute is read-only.
     name: str = ""
 
     def constraintData(self):

@@ -191,116 +191,116 @@ class ConnectorDamage(ConnectorBehaviorOption):
     - CONNECTOR DAMAGE INITIATION
     """
 
-    # A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object specifying the ConnectorOptions used to define tabular options
-    # for the damage initiation table.
+    #: A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object specifying the ConnectorOptions used to define tabular options
+    #: for the damage initiation table.
     initiationOptions: ConnectorOptions = ConnectorOptions()
 
-    # A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object specifying the ConnectorOptions used to define tabular options
-    # for the damage evolution table.
+    #: A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object specifying the ConnectorOptions used to define tabular options
+    #: for the damage evolution table.
     evolutionOptions: ConnectorOptions = ConnectorOptions()
 
-    # A SymbolicConstant specifying whether or not the behavior is coupled. Possible values
-    # are UNCOUPLED and COUPLED. The default value is UNCOUPLED.
+    #: A SymbolicConstant specifying whether or not the behavior is coupled. Possible values
+    #: are UNCOUPLED and COUPLED. The default value is UNCOUPLED.
     coupling: SymbolicConstant = UNCOUPLED
 
-    # A SymbolicConstant specifying the damage initiation criterion to be used. Possible
-    # values are FORCE, MOTION, and PLASTIC_MOTION. The default value is FORCE.
+    #: A SymbolicConstant specifying the damage initiation criterion to be used. Possible
+    #: values are FORCE, MOTION, and PLASTIC_MOTION. The default value is FORCE.
     criterion: SymbolicConstant = FORCE
 
-    # A Boolean specifying whether the initiation data depend on temperature. The default
-    # value is OFF.
+    #: A Boolean specifying whether the initiation data depend on temperature. The default
+    #: value is OFF.
     initiationTemperature: Boolean = OFF
 
-    # A SymbolicConstant specifying the contribution operator for the initiation potential
-    # contributions. Possible values are SUM and MAXIMUM. The default value is SUM.This
-    # argument is only if **coupling** = COUPLED and if **criterion** = FORCE or MOTION.
+    #: A SymbolicConstant specifying the contribution operator for the initiation potential
+    #: contributions. Possible values are SUM and MAXIMUM. The default value is SUM.This
+    #: argument is only if **coupling** = COUPLED and if **criterion** = FORCE or MOTION.
     initiationPotentialOperator: SymbolicConstant = SUM
 
-    # A Float specifying the number equal to the inverse of the overall exponent in the
-    # initiation potential definition. The default value is 2.0.This argument is applicable
-    # only if **coupling** = COUPLED, when **initiationPotentialOperator** = SUM, and when
-    # **criterion** = FORCE or MOTION.
+    #: A Float specifying the number equal to the inverse of the overall exponent in the
+    #: initiation potential definition. The default value is 2.0.This argument is applicable
+    #: only if **coupling** = COUPLED, when **initiationPotentialOperator** = SUM, and when
+    #: **criterion** = FORCE or MOTION.
     initiationPotentialExponent: float = 2
 
-    # An Int specifying the number of field variable dependencies for the initiation data. The
-    # default value is 0.
+    #: An Int specifying the number of field variable dependencies for the initiation data. The
+    #: default value is 0.
     initiationDependencies: int = 0
 
-    # A Boolean specifying whether damage evolution data will be used. The default value is
-    # ON.
+    #: A Boolean specifying whether damage evolution data will be used. The default value is
+    #: ON.
     evolution: Boolean = ON
 
-    # A SymbolicConstant specifying the type of damage evolution to be specified. Possible
-    # values are MOTION_TYPE and ENERGY_TYPE. The default value is MOTION_TYPE.This argument
-    # is applicable only if **evolution** = ON.
+    #: A SymbolicConstant specifying the type of damage evolution to be specified. Possible
+    #: values are MOTION_TYPE and ENERGY_TYPE. The default value is MOTION_TYPE.This argument
+    #: is applicable only if **evolution** = ON.
     evolutionType: SymbolicConstant = MOTION_TYPE
 
-    # A SymbolicConstant specifying the damage evolution law to be specified. Possible values
-    # are LINEAR, EXPONENTIAL, and TABULAR. The default value is LINEAR.This argument is
-    # applicable only if **evolution** = ON and when **evolutionType** = MOTION_TYPE.
+    #: A SymbolicConstant specifying the damage evolution law to be specified. Possible values
+    #: are LINEAR, EXPONENTIAL, and TABULAR. The default value is LINEAR.This argument is
+    #: applicable only if **evolution** = ON and when **evolutionType** = MOTION_TYPE.
     softening: SymbolicConstant = LINEAR
 
-    # A Boolean specifying whether or not **affectedComponents** will be specified. If
-    # **useAffected** = OFF, then only the components of relative motion specified by **components**
-    # will undergo damage. The default value is OFF.This argument is applicable only if
-    # **evolution** = ON.
+    #: A Boolean specifying whether or not **affectedComponents** will be specified. If
+    #: **useAffected** = OFF, then only the components of relative motion specified by **components**
+    #: will undergo damage. The default value is OFF.This argument is applicable only if
+    #: **evolution** = ON.
     useAffected: Boolean = OFF
 
-    # A SymbolicConstant specifying the contribution of each damage mechanism when more than
-    # one damage mechanism is defined. Possible values are MAXIMUM and MULTIPLICATIVE. The
-    # default value is MAXIMUM.This argument is applicable if **evolution** = ON.
+    #: A SymbolicConstant specifying the contribution of each damage mechanism when more than
+    #: one damage mechanism is defined. Possible values are MAXIMUM and MULTIPLICATIVE. The
+    #: default value is MAXIMUM.This argument is applicable if **evolution** = ON.
     degradation: SymbolicConstant = MAXIMUM
 
-    # A Boolean specifying whether the evolution data depend on temperature. The default value
-    # is OFF.This argument is applicable only if **evolution** = ON.
+    #: A Boolean specifying whether the evolution data depend on temperature. The default value
+    #: is OFF.This argument is applicable only if **evolution** = ON.
     evolutionTemperature: Boolean = OFF
 
-    # An Int specifying the number of field variable dependencies for the evolution data. The
-    # default value is 0.This argument is applicable only if **evolution** = ON.
+    #: An Int specifying the number of field variable dependencies for the evolution data. The
+    #: default value is 0.This argument is applicable only if **evolution** = ON.
     evolutionDependencies: int = 0
 
-    # A SymbolicConstant specifying the contribution operator for the evolution potential
-    # contributions. Possible values are SUM and MAXIMUM. The default value is SUM.This
-    # argument is applicable only if **coupling** = COUPLED, when **evolution** = ON, when
-    # **evolutionType** = MOTION_TYPE, and when **criterion** = FORCE or MOTION.
+    #: A SymbolicConstant specifying the contribution operator for the evolution potential
+    #: contributions. Possible values are SUM and MAXIMUM. The default value is SUM.This
+    #: argument is applicable only if **coupling** = COUPLED, when **evolution** = ON, when
+    #: **evolutionType** = MOTION_TYPE, and when **criterion** = FORCE or MOTION.
     evolutionPotentialOperator: SymbolicConstant = SUM
 
-    # A Float specifying the number equal to the inverse of the overall exponent in the
-    # evolution potential definition. The default value is 2.0.This argument is applicable
-    # only if **coupling** = COUPLED, when **evolution** = ON, when **evolutionPotentialOperator** = SUM,
-    # when **evolutionType** = MOTION, and when **criterion** = FORCE or MOTION.
+    #: A Float specifying the number equal to the inverse of the overall exponent in the
+    #: evolution potential definition. The default value is 2.0.This argument is applicable
+    #: only if **coupling** = COUPLED, when **evolution** = ON, when **evolutionPotentialOperator** = SUM,
+    #: when **evolutionType** = MOTION, and when **criterion** = FORCE or MOTION.
     evolutionPotentialExponent: float = 2
 
-    # A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object specifying one ConnectorPotential object for each
-    # initiation potential contribution. This member can be specified only if
-    # **coupling** = COUPLED and if **criterion** = FORCE or MOTION.
+    #: A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object specifying one ConnectorPotential object for each
+    #: initiation potential contribution. This member can be specified only if
+    #: **coupling** = COUPLED and if **criterion** = FORCE or MOTION.
     initiationPotentials: ConnectorPotentialArray = None
 
-    # A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object specifying one ConnectorPotential object for each
-    # evolution potential contribution). This member can be specified only if
-    # **coupling** = COUPLED, if **evolution** = ON, if **evolutionType** = MOTION, and if
-    # **criterion** = FORCE or MOTION.
+    #: A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object specifying one ConnectorPotential object for each
+    #: evolution potential contribution). This member can be specified only if
+    #: **coupling** = COUPLED, if **evolution** = ON, if **evolutionType** = MOTION, and if
+    #: **criterion** = FORCE or MOTION.
     evolutionPotentials: ConnectorPotentialArray = None
 
-    # A sequence of sequences of Floats specifying the initiation properties. The default
-    # value is an empty sequence.Items in the **initiationTable** data are described below.
+    #: A sequence of sequences of Floats specifying the initiation properties. The default
+    #: value is an empty sequence.Items in the **initiationTable** data are described below.
     initiationTable: tuple = ()
 
-    # A sequence of sequences of Floats specifying the evolution properties. The default value
-    # is an empty sequence.Items in the **evolutionTable** data are described below. This
-    # argument is only applicable if **evolution** = ON.
+    #: A sequence of sequences of Floats specifying the evolution properties. The default value
+    #: is an empty sequence.Items in the **evolutionTable** data are described below. This
+    #: argument is only applicable if **evolution** = ON.
     evolutionTable: tuple = ()
 
-    # A sequence of Ints specifying the components of relative motion that will be damaged.
-    # Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be specified.
-    # This argument is applicable only if **evolution** = ON and **useAffected** = ON. The default
-    # value is an empty sequence.
+    #: A sequence of Ints specifying the components of relative motion that will be damaged.
+    #: Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be specified.
+    #: This argument is applicable only if **evolution** = ON and **useAffected** = ON. The default
+    #: value is an empty sequence.
     affectedComponents: tuple = ()
 
-    # A sequence of Ints specifying the components of relative motion for which the behavior
-    # is defined. Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be
-    # specified. This argument can be specified only if **coupling** = UNCOUPLED. The default
-    # value is an empty sequence.
+    #: A sequence of Ints specifying the components of relative motion for which the behavior
+    #: is defined. Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be
+    #: specified. This argument can be specified only if **coupling** = UNCOUPLED. The default
+    #: value is an empty sequence.
     components: tuple = ()
 
     def __init__(

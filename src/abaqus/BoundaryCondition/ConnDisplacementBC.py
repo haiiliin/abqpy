@@ -54,44 +54,44 @@ class ConnDisplacementBC(BoundaryCondition):
         mdb.models[name].boundaryConditions[name]
     """
 
-    # A String specifying the boundary condition repository key.
+    #: A String specifying the boundary condition repository key.
     name: str = ""
 
-    # A Boolean specifying whether the boundary condition should remain fixed at the current
-    # values at the start of the step. The default value is OFF.
+    #: A Boolean specifying whether the boundary condition should remain fixed at the current
+    #: values at the start of the step. The default value is OFF.
     fixed: Boolean = OFF
 
-    # A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE
-    # analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and
-    # PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.
+    #: A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE
+    #: analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and
+    #: PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.
     buckleCase: SymbolicConstant = NOT_APPLICABLE
 
-    # A SymbolicConstant specifying how the boundary condition is distributed spatially.
-    # Possible values are UNIFORM and USER_DEFINED. The default value is UNIFORM.
+    #: A SymbolicConstant specifying how the boundary condition is distributed spatially.
+    #: Possible values are UNIFORM and USER_DEFINED. The default value is UNIFORM.
     distributionType: SymbolicConstant = UNIFORM
 
-    # A String specifying the name of the assembled fastener to which the boundary condition
-    # will be applied. This argument is not valid when **region** is specified. When this
-    # argument is specified, **fastenerSetName** must also be specified. The default value is an
-    # empty string.
+    #: A String specifying the name of the assembled fastener to which the boundary condition
+    #: will be applied. This argument is not valid when **region** is specified. When this
+    #: argument is specified, **fastenerSetName** must also be specified. The default value is an
+    #: empty string.
     fastenerName: str = ""
 
-    # A String specifying the assembled fastener template model set to which the boundary
-    # condition will be applied. This argument is not valid when **region** is specified. When
-    # this argument is specified, **fastenerName** must also be specified. The default value is
-    # an empty string.
+    #: A String specifying the assembled fastener template model set to which the boundary
+    #: condition will be applied. This argument is not valid when **region** is specified. When
+    #: this argument is specified, **fastenerName** must also be specified. The default value is
+    #: an empty string.
     fastenerSetName: str = ""
 
-    # A SymbolicConstant specifying the category of the boundary condition. Possible values
-    # are MECHANICAL and THERMAL.
+    #: A SymbolicConstant specifying the category of the boundary condition. Possible values
+    #: are MECHANICAL and THERMAL.
     category: SymbolicConstant = None
 
-    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
     region: Region = Region()
 
-    # None or a DatumCsys object specifying the local coordinate system of the boundary
-    # condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
-    # in the global coordinate system. The default value is None.
+    #: None or a DatumCsys object specifying the local coordinate system of the boundary
+    #: condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
+    #: in the global coordinate system. The default value is None.
     localCsys: str = None
 
     def __init__(

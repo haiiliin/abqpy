@@ -35,19 +35,19 @@ class AcousticInfiniteSection(Section):
     - SOLID SECTION
     """
 
-    # A String specifying the repository key.
+    #: A String specifying the repository key.
     name: str
 
-    # A String specifying the name of the material.
+    #: A String specifying the name of the material.
     material: str
 
-    # A Float specifying the thickness of the section. Possible values are **thickness** >> 0.0.
-    # The default value is 1.0.
+    #: A Float specifying the thickness of the section. Possible values are **thickness** >> 0.0.
+    #: The default value is 1.0.
     thickness: float = 1
 
-    # An Int specifying the number of ninth-order polynomials that will be used to resolve the
-    # variation of the acoustic field in the infinite direction. Possible values are 0 <<
-    # **order** ≤≤ 10. The default value is 10.
+    #: An Int specifying the number of ninth-order polynomials that will be used to resolve the
+    #: variation of the acoustic field in the infinite direction. Possible values are 0 <<
+    #: **order** ≤≤ 10. The default value is 10.
     order: int = 10
 
     def __init__(self, name: str, material: str, thickness: float = 1, order: int = 10):

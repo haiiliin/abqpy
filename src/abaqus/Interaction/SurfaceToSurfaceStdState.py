@@ -85,72 +85,72 @@ class SurfaceToSurfaceStdState(InteractionState):
             - CONTACT INTERFERENCE
     """
 
-    # A SymbolicConstant specifying the propagation state of the **interactionProperty** member.
-    # Possible values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the **interactionProperty** member.
+    #: Possible values are UNSET, SET, UNCHANGED, and FREED.
     interactionPropertyState: SymbolicConstant = None
 
-    # A SymbolicConstant specifying the interference type. Possible values are NONE,
-    # SHRINK_FIT, and UNIFORM.
+    #: A SymbolicConstant specifying the interference type. Possible values are NONE,
+    #: SHRINK_FIT, and UNIFORM.
     interferenceType: SymbolicConstant = None
 
-    # A SymbolicConstant specifying the propagation state of the **interferenceType** member.
-    # Possible values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the **interferenceType** member.
+    #: Possible values are UNSET, SET, UNCHANGED, and FREED.
     interferenceTypeState: SymbolicConstant = None
 
-    # A Float specifying the allowable overclosure.
+    #: A Float specifying the allowable overclosure.
     overclosure: float = None
 
-    # A SymbolicConstant specifying the propagation state of the **overclosure** member.
-    # Possible values are COMPUTED and DIRECTION_COSINE.
+    #: A SymbolicConstant specifying the propagation state of the **overclosure** member.
+    #: Possible values are COMPUTED and DIRECTION_COSINE.
     overclosureState: SymbolicConstant = None
 
-    # A SymbolicConstant specifying the interference direction type. Possible values are
-    # COMPUTED and DIRECTION_COSINE.
+    #: A SymbolicConstant specifying the interference direction type. Possible values are
+    #: COMPUTED and DIRECTION_COSINE.
     interferenceDirectionType: SymbolicConstant = None
 
-    # A SymbolicConstant specifying the propagation state of the **interferenceDirectionType**
-    # member. Possible values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the **interferenceDirectionType**
+    #: member. Possible values are UNSET, SET, UNCHANGED, and FREED.
     interferenceDirectionTypeState: SymbolicConstant = None
 
-    # A SymbolicConstant specifying the propagation state of the **direction** member. Possible
-    # values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the **direction** member. Possible
+    #: values are UNSET, SET, UNCHANGED, and FREED.
     directionState: SymbolicConstant = None
 
-    # A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible
-    # values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible
+    #: values are UNSET, SET, UNCHANGED, and FREED.
     amplitudeState: SymbolicConstant = None
 
-    # A SymbolicConstant specifying the propagation state of the **contactControls** member.
-    # Possible values are UNSET, SET, UNCHANGED, and FREED.
+    #: A SymbolicConstant specifying the propagation state of the **contactControls** member.
+    #: Possible values are UNSET, SET, UNCHANGED, and FREED.
     contactControlsState: SymbolicConstant = None
 
-    # A String specifying the name of the ContactProperty object associated with this
-    # interaction.
+    #: A String specifying the name of the ContactProperty object associated with this
+    #: interaction.
     interactionProperty: str = ""
 
-    # A String specifying the name of the Amplitude object that defines the magnitude of the
-    # prescribed interference during the step.
+    #: A String specifying the name of the Amplitude object that defines the magnitude of the
+    #: prescribed interference during the step.
     amplitude: str = ""
 
-    # A String specifying the name of the ContactControl object associated with this
-    # interaction.
+    #: A String specifying the name of the ContactControl object associated with this
+    #: interaction.
     contactControls: str = ""
 
-    # A tuple of three Floats specifying the following:
-    # - X-direction cosine of the interference direction vector.
-    # - Y-direction cosine of the interference direction vector.
-    # - Z-direction cosine of the interference direction vector.
+    #: A tuple of three Floats specifying the following:
+    #: - X-direction cosine of the interference direction vector.
+    #: - Y-direction cosine of the interference direction vector.
+    #: - Z-direction cosine of the interference direction vector.
     direction: float = None
 
-    # A SymbolicConstant specifying the propagation state of the InteractionState object.
-    # Possible values are:
-    # - NOT_YET_ACTIVE
-    # - CREATED
-    # - PROPAGATED
-    # - MODIFIED
-    # - DEACTIVATED
-    # - NO_LONGER_ACTIVE
-    # - TYPE_NOT_APPLICABLE
-    # - INSTANCE_NOT_APPLICABLE
-    # - BUILT_INTO_BASE_STATE
+    #: A SymbolicConstant specifying the propagation state of the InteractionState object.
+    #: Possible values are:
+    #: - NOT_YET_ACTIVE
+    #: - CREATED
+    #: - PROPAGATED
+    #: - MODIFIED
+    #: - DEACTIVATED
+    #: - NO_LONGER_ACTIVE
+    #: - TYPE_NOT_APPLICABLE
+    #: - INSTANCE_NOT_APPLICABLE
+    #: - BUILT_INTO_BASE_STATE
     status: SymbolicConstant = None
