@@ -69,6 +69,7 @@ class LocalStopCondition(StopCondition):
 
     #: A SymbolicConstant specifying the variable identifier of the compared value. Possible
     #: values are:
+    #: 
     #: - ABSOLUTE_GROWTH_MOVEMENT
     #: - ABSOLUTE_SHRINK_MOVEMENT
     #: - GROWTH_MOVEMENT

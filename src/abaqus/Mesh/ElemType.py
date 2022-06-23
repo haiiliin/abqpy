@@ -121,6 +121,7 @@ class ElemType:
 
     #: A SymbolicConstant specifying the Abaqus element code or just the element shape.
     #: Possible values are:
+    #: 
     #: - C3D8R, specifying a 8-node linear brick, reduced integration with hourglass control.
     #: - CODE, specifying add more codes.
     #: - UNKNOWN_TRI, specifying an unknown element type associated with a triangular shape.

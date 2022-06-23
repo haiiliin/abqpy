@@ -63,6 +63,7 @@ class InwardVolAccelState(LoadState):
 
     #: A SymbolicConstant specifying the propagation state of the LoadState object. Possible
     #: values are:
+    #: 
     #: - NOT_YET_ACTIVE
     #: - CREATED
     #: - PROPAGATED

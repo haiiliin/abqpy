@@ -129,6 +129,7 @@ class OdbMeshRegionData:
     #: obtained only from the position at which they were written to the output database during
     #: the analysis. This position should be aligned with the field output variable. Possible
     #: values are:
+    #: 
     #: - UNDEFINED_POSITION
     #: - NODAL
     #: - INTEGRATION_POINT
@@ -145,6 +146,7 @@ class OdbMeshRegionData:
 
     #: A SymbolicConstant specifying the data type of the field output variable which should be
     #: aligned with the variable. Currently only SCALAR is supported. Possible values are:
+    #: 
     #: - ENUMERATION
     #: - BOOLEAN
     #: - INTEGER

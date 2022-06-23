@@ -203,6 +203,7 @@ class SteadyStateSubspaceStep(AnalysisStep):
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
+    #: 
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY

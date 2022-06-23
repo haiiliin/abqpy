@@ -235,6 +235,7 @@ class OdbDisplay:
     #: - **element3**: A Float specifying the time period of the step.
     #: - **element4**: A Float specifying the user modified time period of the step.
     #: - **element5**: An Int specifying the domain type of the step. Possible values are:
+    #: 
     #: - 0: Time domain
     #: - 1: Frequency domain
     #: - 2: Modal domain
@@ -320,6 +321,7 @@ class OdbDisplay:
     #: Each item in the sequence consists of a tuple containing the following elements:
     #: - Element 0: A String specifying the variable label.
     #: - Element 1: An Int specifying the output position. Possible integer values are:
+    #: 
     #: - 0: UNDEFINED_POSITION
     #: - 1: NODAL
     #: - 2: INTEGRATION_POINT
@@ -332,6 +334,7 @@ class OdbDisplay:
     #: - 9: WHOLE_MODEL
     #: - 10: GENERAL_PARTICLE
     #: - Element 2: An Int specifying the data type. Possible values are:
+    #: 
     #: - 0: ENUMERATION
     #: - 1: BOOLEAN
     #: - 2: INTEGER
@@ -346,11 +349,13 @@ class OdbDisplay:
     #: - 11: TENSOR_2D_PLANAR
     #: - 12: TENSOR_2D_SURFACE
     #: - Element 3: An Int specifying the storage type. Possible values are:
+    #: 
     #: - 0: FLOAT
     #: - 1: DOUBLE
     #: - 2: INTEGER
     #: - 3: BOOLEAN
     #: - Element 4: An Int specifying the refinement type. Possible values are:
+    #: 
     #: - 0: NO_REFINEMENT
     #: - 1: INVARIANT
     #: - 2: COMPONENT

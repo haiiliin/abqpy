@@ -78,6 +78,7 @@ class FieldBulkData:
 
     #: A SymbolicConstant specifying the position of the output in the element. Possible values
     #: are:
+    #: 
     #: - NODAL, specifying the values calculated at the nodes.
     #: - INTEGRATION_POINT, specifying the values calculated at the integration points.
     #: - ELEMENT_NODAL, specifying the values obtained by extrapolating results calculated at

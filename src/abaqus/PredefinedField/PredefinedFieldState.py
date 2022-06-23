@@ -42,6 +42,7 @@ class PredefinedFieldState:
 
     #: A SymbolicConstant specifying the propagation state of the PredefinedFieldState object.
     #: Possible values are:
+    #: 
     #: - NOT_YET_ACTIVE
     #: - CREATED
     #: - PROPAGATED

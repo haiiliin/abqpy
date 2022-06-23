@@ -137,6 +137,7 @@ class FieldValue:
 
     #: A SymbolicConstant specifying the position of the output in the element. Possible values
     #: are:
+    #: 
     #: - NODAL, specifying the values calculated at the nodes.
     #: - INTEGRATION_POINT, specifying the values calculated at the integration points.
     #: - ELEMENT_NODAL, specifying the values obtained by extrapolating results calculated at
@@ -149,6 +150,7 @@ class FieldValue:
 
     #: A SymbolicConstant specifying the precision of the output in the element. Possible
     #: values are:
+    #: 
     #: - SINGLE_PRECISION, specifying that the output values are in single precision.
     #: - DOUBLE_PRECISION, specifying that the output values are in double precision.
     precision: SymbolicConstant = None

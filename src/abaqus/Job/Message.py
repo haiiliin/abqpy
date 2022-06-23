@@ -50,6 +50,7 @@ class Message:
     """
 
     #: A SymbolicConstant specifying the type of message. Possible values are:
+    #: 
     #: - ABORTED
     #: - ANY_JOB
     #: - ANY_MESSAGE_TYPE

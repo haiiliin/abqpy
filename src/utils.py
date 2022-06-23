@@ -56,4 +56,82 @@ def replaceUserType(searchDir: str):
                     f.write(text)
 
 
-replaceUserType('abaqus')
+# replaceUserType('abaqus')
+
+def addAttributes(searchDir: str):
+    print(f'# Processing dir: {searchDir}')
+    if not os.path.isdir(searchDir):
+        return ''
+
+    files = os.listdir(searchDir)
+    for file in files:
+        if os.path.isdir(os.path.join(searchDir, file)):
+            addAttributes(os.path.join(searchDir, file))
+        elif os.path.isfile(os.path.join(searchDir, file)) and file.endswith('.md'):
+            print(f'    # Processing file: {file}')
+            filePath = os.path.join(searchDir, file)
+            with open(filePath, 'r+', encoding='utf-8') as f:
+                text = f.read()
+                strings: list[str] = re.findall(
+                    r'The \w+ object has members with the same names and descriptions as the arguments to the ', text)
+
+            if len(strings) > 0:
+                pyFilePath = filePath.replace('markdown', 'abaqus').replace('.md', '.py')
+                if not os.path.exists(pyFilePath):
+                    continue
+                with open(pyFilePath, 'r+', encoding='utf-8') as f:
+                    text = f.read()
+                    strings = re.findall(r'def __init__[\w\W]+?Parameters\s+-+\s+([\w\W]+?)\s+Returns', text)
+
+                if len(strings) > 0:
+                    signatures = re.findall(r'def __init__\(([\w\W]+?)\):', text)
+                    if len(signatures) == 0:
+                        continue
+
+                    signatureString = signatures[0].lstrip().rstrip().replace('\n', ' ')
+                    signatureString = re.sub(r'\n\s+', r'\n', signatureString)
+                    # signatures = signatures.split(', ')[1:]
+
+                    argStrings = strings[0].replace('\n        ', '\n')
+                    lines = argStrings.splitlines()
+                    keys, docs = [], []
+                    doc = ''
+                    for line in lines:
+                        if not line.startswith('    '):
+                            keys.append(line.lstrip().rstrip().split(': ')[0])
+                            if not doc == '':
+                                docs.append(doc.rstrip())
+                            doc = ''
+                        else:
+                            doc += line.lstrip().rstrip() + '\n'
+                    docs.append(doc)
+                    attr_docstring = '    Attributes\n    ----------'
+                    atts = ''
+                    for key, doc in zip(keys, docs):
+                        doc = doc.rstrip()
+                        att_doc = doc.replace('\n', '\n        ')
+                        attr_docstring += f'\n    {key}\n        {att_doc}'
+
+                        index = signatureString.index(key + ': ')
+                        if key == keys[-1]:
+                            signature = signatureString[index:]
+                        else:
+                            next_index = signatureString.index(keys[keys.index(key) + 1] + ': ')
+                            signature = signatureString[index:next_index]
+
+                        signature = signature.lstrip().rstrip()
+                        if signature.endswith(','):
+                            signature = signature[:-1]
+                        att_doc = '# ' + doc.replace('\n', '\n    # ')
+                        atts += f'\n\n    {att_doc}\n    {signature}'
+                    atts = atts.lstrip()
+                    new_text = text.replace('    Notes\n    -----',
+                                            f'{attr_docstring}\n\n    Notes\n    -----')\
+                        .replace('def __init__(', f'{atts}\n\n    def __init__(')
+                    if '\\' in atts:
+                        new_text = re.sub(r'(class \w+[\w\W]+?:\n\s+)"""', r'\g<1>r"""', new_text)
+                    with open(pyFilePath, 'w+', encoding='utf-8') as f:
+                        f.write(new_text)
+
+
+addAttributes('markdown')

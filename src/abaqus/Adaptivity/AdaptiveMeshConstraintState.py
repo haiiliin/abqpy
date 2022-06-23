@@ -49,6 +49,7 @@ class AdaptiveMeshConstraintState:
 
     #: A SymbolicConstant specifying the propagation state of the AdaptiveMeshConstraintState
     #: object. Possible values are:
+    #: 
     #: - NOT_YET_ACTIVE
     #: - CREATED
     #: - PROPAGATED

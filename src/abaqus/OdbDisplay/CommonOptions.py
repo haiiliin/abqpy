@@ -208,6 +208,7 @@ class CommonOptions(DGCommonOptions):
     nodeSymbols: Boolean = OFF
 
     #: A SymbolicConstant specifying the node symbol types. Possible values are:
+    #: 
     #: - FILLED_CIRCLE
     #: - FILLED_SQUARE
     #: - FILLED_DIAMOND

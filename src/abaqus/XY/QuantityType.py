@@ -138,6 +138,7 @@ class QuantityType:
     label: str = ""
 
     #: A SymbolicConstant specifying the physical dimension of the axis. Possible values are:
+    #: 
     #: - NONE.
     #: - ACCELERATION.
     #: - ACOUSTIC_INTENSITY.

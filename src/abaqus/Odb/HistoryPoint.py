@@ -85,6 +85,7 @@ class HistoryPoint:
     #: A SymbolicConstant specifying the element face. This argument is used to define a
     #: history output position of ELEMENT_FACE or ELEMENT_FACE_INTEGRATION_POINT. Possible
     #: values are:
+    #: 
     #: - FACE_UNKOWN, specifying this value indicates that no value has been specified.
     #: - FACE1, specifying this value indicates that element face 1 has been specified.
     #: - FACE2, specifying this value indicates that element face 2 has been specified.
@@ -102,6 +103,7 @@ class HistoryPoint:
 
     #: A SymbolicConstant specifying the result position of the history point. Possible values
     #: are:
+    #: 
     #: - NODAL, specifying the values calculated at the nodes.
     #: - ELEMENT_NODAL, specifying the values obtained by extrapolating results calculated at
     #: the integration points.

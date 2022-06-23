@@ -49,6 +49,7 @@ class ElasticFoundationState(InteractionState):
 
     #: A SymbolicConstant specifying the propagation state of the InteractionState object.
     #: Possible values are:
+    #: 
     #: - NOT_YET_ACTIVE
     #: - CREATED
     #: - PROPAGATED

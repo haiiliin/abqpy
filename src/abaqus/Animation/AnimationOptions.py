@@ -177,6 +177,7 @@ class AnimationOptions:
     #: A SymbolicConstant specifying the marker type to be used for all animation capable **X - Y**
     #: curve or the SymbolicConstant DEFAULT specifying that the system will take the marker
     #: associated to each curve Possible values are:
+    #: 
     #: - FILLED_CIRCLE
     #: - FILLED_SQUARE
     #: - FILLED_DIAMOND

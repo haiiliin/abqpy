@@ -51,6 +51,7 @@ class Monitor:
 
     #: A SymbolicConstant specifying the degree of freedom to be monitored at the node.
     #: Possible values are:
+    #: 
     #: - U1
     #: - U2
     #: - U3
