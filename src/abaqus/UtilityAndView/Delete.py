@@ -5,10 +5,13 @@ that will be invoked when specified Abaqus Scripting Interface objects are about
 deleted. This callback allows you to examine an object before it is deleted. 
 For example, in the following script the myCallback function is executed when any Job 
 object is about to be deleted: 
-import deleteObjectCallback 
-def myCallback(path, userData): 
-    print 'About to delete', path 
-deleteObjectCallback.addCallback(path='mdb.jobs[*]') 
+
+.. code-block:: python
+
+    import deleteObjectCallback 
+    def myCallback(path, userData): 
+        print 'About to delete', path 
+    deleteObjectCallback.addCallback(path='mdb.jobs[*]') 
 
 Notes
 -----
