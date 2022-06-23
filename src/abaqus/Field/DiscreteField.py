@@ -10,6 +10,32 @@ class DiscreteField(Field):
     points within a domain.
     The DiscreteField object is derived from the Field object.
 
+    Attributes
+    ----------
+    name
+        A String specifying the repository key.
+    defaultValues
+        A sequence of Floats specifying a sequence of floats specifying the default values.
+    fieldType
+        A SymbolicConstant or an Int specifying the type of data represented by this discrete
+        field. Possible values are SCALAR, ORIENTATION, and PRESCRIBEDCONDITION_DOF.
+    location
+        A SymbolicConstant or an Int specifying the location of the domain data. Possible values
+        are NODES and ELEMENTS. The default value is NODES.
+    dataWidth
+        An Int specifying the width of the supplied data. The default value is 1.
+    data
+        A :py:class:`~abaqus.Field.DataTableArray.DataTableArray` object.
+    description
+        A String specifying the description of the field. The default value is an empty string.
+    orientationType
+        A SymbolicConstant specifying the type of the system being described by a discrete field
+        used for an orientation. Possible values are CARTESIAN, CYLINDRICAL, and SPHERICAL. The
+        default value is CARTESIAN.
+    partLevelOrientation
+        A Boolean specifying whether or not the orientations are described in terms of part
+        level coordinates. The default value is OFF.
+
     Notes
     -----
     This object can be accessed by:
@@ -19,6 +45,38 @@ class DiscreteField(Field):
         import fields
         mdb.models[name].discreteFields[name]
     """
+
+    # A String specifying the repository key.
+    name: str
+
+    # A sequence of Floats specifying a sequence of floats specifying the default values.
+    defaultValues: tuple
+
+    # A SymbolicConstant or an Int specifying the type of data represented by this discrete
+    # field. Possible values are SCALAR, ORIENTATION, and PRESCRIBEDCONDITION_DOF.
+    fieldType: SymbolicConstant
+
+    # A SymbolicConstant or an Int specifying the location of the domain data. Possible values
+    # are NODES and ELEMENTS. The default value is NODES.
+    location: SymbolicConstant = NODES
+
+    # An Int specifying the width of the supplied data. The default value is 1.
+    dataWidth: int = 1
+
+    # A :py:class:`~abaqus.Field.DataTableArray.DataTableArray` object.
+    data: DataTableArray = None
+
+    # A String specifying the description of the field. The default value is an empty string.
+    description: str = ""
+
+    # A SymbolicConstant specifying the type of the system being described by a discrete field
+    # used for an orientation. Possible values are CARTESIAN, CYLINDRICAL, and SPHERICAL. The
+    # default value is CARTESIAN.
+    orientationType: SymbolicConstant = CARTESIAN
+
+    # A Boolean specifying whether or not the orientations are described in terms of part
+    # level coordinates. The default value is OFF.
+    partLevelOrientation: Boolean = OFF
 
     def __init__(
         self,

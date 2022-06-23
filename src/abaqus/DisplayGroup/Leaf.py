@@ -9,6 +9,12 @@ class Leaf:
     the DisplayGroup expression is evaluated, and they can have SymbolicConstant values
     (which are also evaluated when the DisplayGroup expression is evaluated).
 
+    Attributes
+    ----------
+    leafType
+        A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
+        DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
+
     Notes
     -----
     This object can be accessed by:
@@ -18,6 +24,10 @@ class Leaf:
         import displayGroupMdbToolset
         import displayGroupOdbToolset
     """
+
+    # A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
+    # DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
+    leafType: SymbolicConstant
 
     def __init__(self, leafType: SymbolicConstant):
         """This method creates a Leaf object.

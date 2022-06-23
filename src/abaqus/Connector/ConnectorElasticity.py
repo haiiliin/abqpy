@@ -13,6 +13,40 @@ class ConnectorElasticity(ConnectorBehaviorOption):
     options: ConnectorOptions
         A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object specifying the :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` used to define tabular options
         for this ConnectorBehaviorOption.
+    behavior
+        A SymbolicConstant specifying whether the elastic behavior is linear, nonlinear, or
+        rigid. Possible values are LINEAR, NONLINEAR, and RIGID. The default value is LINEAR.
+    coupling
+        A SymbolicConstant specifying whether the elastic behavior is coupled between the
+        connector's components of relative motion. If **behavior** = LINEAR, then possible values
+        are UNCOUPLED and COUPLED. If **behavior** = NONLINEAR, then possible values are UNCOUPLED,
+        COUPLED_POSITION, and COUPLED_MOTION. Possible values are UNCOUPLED, COUPLED,
+        COUPLED_POSITION, and COUPLED_MOTION. The default value is UNCOUPLED.This argument is
+        not applicable if **behavior** = RIGID.
+    dependencies
+        An Int specifying the number of field variable dependencies. The default value is 0.This
+        argument is not applicable if **behavior** = RIGID.
+    temperatureDependency
+        A Boolean specifying whether the behavior data depend on temperature. The default value
+        is OFF.This argument is not applicable if **behavior** = RIGID.
+    frequencyDependency
+        A Boolean specifying whether the behavior data depend on frequency. This value is
+        applicable only if **behavior** = LINEAR and **coupling** = UNCOUPLED. The default value is
+        OFF.This argument is not applicable if **behavior** = RIGID.
+    table
+        A sequence of sequences of Floats specifying elasticity properties. Items in the table
+        data are described below. This argument is not applicable if **behavior** = RIGID. The
+        default value is an empty sequence.
+    independentComponents
+        A sequence of Ints specifying the list of independent components that are included in
+        the definition of the connector elasticity data. This argument is applicable only if
+        **behavior** = NONLINEAR and **coupling** = COUPLED_POSITION or COUPLED_MOTION. If this argument
+        is applicable, at least one value must be specified. Only available components can be
+        specified. The default value is an empty sequence.
+    components
+        A sequence of Ints specifying the components of relative motion for which the behavior
+        is defined. Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be
+        specified. The default value is an empty sequence.
 
     Notes
     -----
@@ -69,6 +103,48 @@ class ConnectorElasticity(ConnectorBehaviorOption):
     # A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object specifying the ConnectorOptions used to define tabular options
     # for this ConnectorBehaviorOption.
     options: ConnectorOptions = ConnectorOptions()
+
+    # A SymbolicConstant specifying whether the elastic behavior is linear, nonlinear, or
+    # rigid. Possible values are LINEAR, NONLINEAR, and RIGID. The default value is LINEAR.
+    behavior: SymbolicConstant = LINEAR
+
+    # A SymbolicConstant specifying whether the elastic behavior is coupled between the
+    # connector's components of relative motion. If **behavior** = LINEAR, then possible values
+    # are UNCOUPLED and COUPLED. If **behavior** = NONLINEAR, then possible values are UNCOUPLED,
+    # COUPLED_POSITION, and COUPLED_MOTION. Possible values are UNCOUPLED, COUPLED,
+    # COUPLED_POSITION, and COUPLED_MOTION. The default value is UNCOUPLED.This argument is
+    # not applicable if **behavior** = RIGID.
+    coupling: SymbolicConstant = UNCOUPLED
+
+    # An Int specifying the number of field variable dependencies. The default value is 0.This
+    # argument is not applicable if **behavior** = RIGID.
+    dependencies: int = 0
+
+    # A Boolean specifying whether the behavior data depend on temperature. The default value
+    # is OFF.This argument is not applicable if **behavior** = RIGID.
+    temperatureDependency: Boolean = OFF
+
+    # A Boolean specifying whether the behavior data depend on frequency. This value is
+    # applicable only if **behavior** = LINEAR and **coupling** = UNCOUPLED. The default value is
+    # OFF.This argument is not applicable if **behavior** = RIGID.
+    frequencyDependency: Boolean = OFF
+
+    # A sequence of sequences of Floats specifying elasticity properties. Items in the table
+    # data are described below. This argument is not applicable if **behavior** = RIGID. The
+    # default value is an empty sequence.
+    table: tuple = ()
+
+    # A sequence of Ints specifying the list of independent components that are included in
+    # the definition of the connector elasticity data. This argument is applicable only if
+    # **behavior** = NONLINEAR and **coupling** = COUPLED_POSITION or COUPLED_MOTION. If this argument
+    # is applicable, at least one value must be specified. Only available components can be
+    # specified. The default value is an empty sequence.
+    independentComponents: tuple = ()
+
+    # A sequence of Ints specifying the components of relative motion for which the behavior
+    # is defined. Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be
+    # specified. The default value is an empty sequence.
+    components: tuple = ()
 
     def __init__(
         self,

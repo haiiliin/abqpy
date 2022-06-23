@@ -2,6 +2,14 @@ class TimePoint:
     """The TimePoint object defines time points at which data are written to the output
     database or restart files.
 
+    Attributes
+    ----------
+    name
+        A String specifying the repository key.
+    points
+        A sequence of sequences of Floats specifying time points at which data are written to
+        the output database or restart files.
+
     Notes
     -----
     This object can be accessed by:
@@ -15,6 +23,13 @@ class TimePoint:
 
     - TIME POINTS
     """
+
+    # A String specifying the repository key.
+    name: str
+
+    # A sequence of sequences of Floats specifying time points at which data are written to
+    # the output database or restart files.
+    points: tuple
 
     def __init__(self, name: str, points: tuple):
         """This method creates a TimePoint object.

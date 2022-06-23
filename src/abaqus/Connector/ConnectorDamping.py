@@ -13,6 +13,37 @@ class ConnectorDamping(ConnectorBehaviorOption):
     options: ConnectorOptions
         A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object specifying the :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` used to define tabular options
         for this ConnectorBehaviorOption.
+    behavior
+        A SymbolicConstant specifying if the damping behavior is linear or nonlinear. Possible
+        values are LINEAR and NONLINEAR. The default value is LINEAR.
+    coupling
+        A SymbolicConstant specifying whether the damping behavior is coupled between the
+        connector's components of relative motion. If **behavior** = LINEAR, then possible values
+        are UNCOUPLED and COUPLED. If **behavior** = NONLINEAR, then possible values are UNCOUPLED,
+        COUPLED_POSITION, and COUPLED_MOTION. Possible values are UNCOUPLED, COUPLED,
+        COUPLED_POSITION, and COUPLED_MOTION. The default value is UNCOUPLED.
+    dependencies
+        An Int specifying the number of field variable dependencies. The default value is 0.
+    temperatureDependency
+        A Boolean specifying whether the behavior data depend on temperature. The default value
+        is OFF.
+    frequencyDependency
+        A Boolean specifying whether the behavior data depend on frequency. This value is
+        applicable only if **behavior** =  LINEAR and **coupling** = UNCOUPLED. The default value is
+        OFF.
+    table
+        A sequence of sequences of Floats specifying damping properties. Items in the table data
+        are described below. The default value is an empty sequence.
+    independentComponents
+        A sequence of Ints specifying the list of independent components that are included in
+        the definition of the connector damping data. This argument is applicable only if
+        **behavior** = NONLINEAR and **coupling** = COUPLED_POSITION or COUPLED_MOTION. When this
+        argument is applicable, at least one value must be specified. Only available components
+        can be specified. The default value is an empty sequence.
+    components
+        A sequence of Ints specifying the components of relative motion for which the behavior
+        is defined. Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be
+        specified. The default value is an empty sequence.
 
     Notes
     -----
@@ -79,6 +110,45 @@ class ConnectorDamping(ConnectorBehaviorOption):
     # A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object specifying the ConnectorOptions used to define tabular options
     # for this ConnectorBehaviorOption.
     options: ConnectorOptions = ConnectorOptions()
+
+    # A SymbolicConstant specifying if the damping behavior is linear or nonlinear. Possible
+    # values are LINEAR and NONLINEAR. The default value is LINEAR.
+    behavior: SymbolicConstant = LINEAR
+
+    # A SymbolicConstant specifying whether the damping behavior is coupled between the
+    # connector's components of relative motion. If **behavior** = LINEAR, then possible values
+    # are UNCOUPLED and COUPLED. If **behavior** = NONLINEAR, then possible values are UNCOUPLED,
+    # COUPLED_POSITION, and COUPLED_MOTION. Possible values are UNCOUPLED, COUPLED,
+    # COUPLED_POSITION, and COUPLED_MOTION. The default value is UNCOUPLED.
+    coupling: SymbolicConstant = UNCOUPLED
+
+    # An Int specifying the number of field variable dependencies. The default value is 0.
+    dependencies: int = 0
+
+    # A Boolean specifying whether the behavior data depend on temperature. The default value
+    # is OFF.
+    temperatureDependency: Boolean = OFF
+
+    # A Boolean specifying whether the behavior data depend on frequency. This value is
+    # applicable only if **behavior** =  LINEAR and **coupling** = UNCOUPLED. The default value is
+    # OFF.
+    frequencyDependency: Boolean = OFF
+
+    # A sequence of sequences of Floats specifying damping properties. Items in the table data
+    # are described below. The default value is an empty sequence.
+    table: tuple = ()
+
+    # A sequence of Ints specifying the list of independent components that are included in
+    # the definition of the connector damping data. This argument is applicable only if
+    # **behavior** = NONLINEAR and **coupling** = COUPLED_POSITION or COUPLED_MOTION. When this
+    # argument is applicable, at least one value must be specified. Only available components
+    # can be specified. The default value is an empty sequence.
+    independentComponents: tuple = ()
+
+    # A sequence of Ints specifying the components of relative motion for which the behavior
+    # is defined. Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be
+    # specified. The default value is an empty sequence.
+    components: tuple = ()
 
     def __init__(
         self,

@@ -14,6 +14,19 @@ class TabularAmplitude(Amplitude):
     ----------
     baselineCorrection: BaselineCorrection
         A :py:class:`~abaqus.Amplitude.BaselineCorrection.BaselineCorrection` object.
+    name
+        A String specifying the repository key.
+    data
+        A sequence of pairs of Floats specifying time/frequency and amplitude pairs. Possible
+        values for time/frequency are positive numbers.
+    smooth
+        The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing.
+        Possible float values are between 0 and 0.5. If **smooth** = SOLVER_DEFAULT, the default
+        degree of smoothing will be determined by the solver. The default value is
+        SOLVER_DEFAULT.
+    timeSpan
+        A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+        and TOTAL. The default value is STEP.
 
     Notes
     -----
@@ -33,6 +46,23 @@ class TabularAmplitude(Amplitude):
 
     # A :py:class:`~abaqus.Amplitude.BaselineCorrection.BaselineCorrection` object.
     baselineCorrection: BaselineCorrection = BaselineCorrection()
+
+    # A String specifying the repository key.
+    name: str
+
+    # A sequence of pairs of Floats specifying time/frequency and amplitude pairs. Possible
+    # values for time/frequency are positive numbers.
+    data: tuple
+
+    # The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing.
+    # Possible float values are between 0 and 0.5. If **smooth** = SOLVER_DEFAULT, the default
+    # degree of smoothing will be determined by the solver. The default value is
+    # SOLVER_DEFAULT.
+    smooth: typing.Union[SymbolicConstant, float] = SOLVER_DEFAULT
+
+    # A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+    # and TOTAL. The default value is STEP.
+    timeSpan: SymbolicConstant = STEP
 
     def __init__(
         self,

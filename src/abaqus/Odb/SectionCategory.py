@@ -14,6 +14,10 @@ class SectionCategory:
     ----------
     sectionPoints: SectionPointArray
         A :py:class:`~abaqus.Odb.SectionPointArray.SectionPointArray` object.
+    name
+        A String specifying the name of the category.
+    description
+        A String specifying the description of the category.
 
     Notes
     -----
@@ -44,6 +48,12 @@ class SectionCategory:
 
     # A :py:class:`~abaqus.Odb.SectionPointArray.SectionPointArray` object.
     sectionPoints: SectionPointArray = SectionPointArray()
+
+    # A String specifying the name of the category.
+    name: str
+
+    # A String specifying the description of the category.
+    description: str
 
     def __init__(self, name: str, description: str):
         """This method creates a SectionCategory object.

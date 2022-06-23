@@ -14,6 +14,8 @@ class LeafFromDisplayGroup(Leaf):
     leafType: SymbolicConstant
         A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
         DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
+    displayGroup
+        A :py:class:`~abaqus.DisplayGroup.DisplayGroupArray.DisplayGroupArray` object.
 
     Notes
     -----
@@ -28,6 +30,9 @@ class LeafFromDisplayGroup(Leaf):
     # A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
     # DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: SymbolicConstant = None
+
+    # A :py:class:`~abaqus.DisplayGroup.DisplayGroupArray.DisplayGroupArray` object.
+    displayGroup: DisplayGroupArray
 
     def __init__(self, displayGroup: DisplayGroupArray):
         """This method creates a Leaf object from a sequence of Display Group objects.

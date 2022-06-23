@@ -6,6 +6,18 @@ class ElasticFoundation(Interaction):
     """The ElasticFoundation object defines a mechanical foundation.
     The ElasticFoundation object is derived from the Interaction object.
 
+    Attributes
+    ----------
+    name
+        A String specifying the repository key.
+    createStepName
+        A String specifying the name of the step in which the ElasticFoundation object is
+        created. **createStepName** must be set to 'Initial'.
+    surface
+        A :py:class:`~abaqus.Region.Region.Region` object specifying the surface to which the foundation applies.
+    stiffness
+        A Float specifying the foundation stiffness per area (or per length for beams).
+
     Notes
     -----
     This object can be accessed by:
@@ -19,6 +31,19 @@ class ElasticFoundation(Interaction):
 
     - FOUNDATION
     """
+
+    # A String specifying the repository key.
+    name: str
+
+    # A String specifying the name of the step in which the ElasticFoundation object is
+    # created. **createStepName** must be set to 'Initial'.
+    createStepName: str
+
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the surface to which the foundation applies.
+    surface: Region
+
+    # A Float specifying the foundation stiffness per area (or per length for beams).
+    stiffness: float
 
     def __init__(
         self, name: str, createStepName: str, surface: Region, stiffness: float

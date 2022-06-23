@@ -5,6 +5,21 @@ class TrapezoidalProfile(Profile):
     """The TrapezoidalProfile object defines the properties of a trapezoidal profile.
     The TrapezoidalProfile object is derived from the Profile object.
 
+    Attributes
+    ----------
+    name
+        A String specifying the repository key.
+    a
+        A positive Float specifying the **a** dimension of the Trapezoidal profile. For more
+        information, see [Beam cross-section
+        library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all).
+    b
+        A positive Float specifying the **b** dimension of the Trapezoidal profile.
+    c
+        A positive Float specifying the **c** dimension of the Trapezoidal profile.
+    d
+        A Float specifying the **d** dimension of the Trapezoidal profile.
+
     Notes
     -----
     This object can be accessed by:
@@ -20,6 +35,23 @@ class TrapezoidalProfile(Profile):
 
     - BEAM SECTION
     """
+
+    # A String specifying the repository key.
+    name: str
+
+    # A positive Float specifying the **a** dimension of the Trapezoidal profile. For more
+    # information, see [Beam cross-section
+    # library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all).
+    a: float
+
+    # A positive Float specifying the **b** dimension of the Trapezoidal profile.
+    b: float
+
+    # A positive Float specifying the **c** dimension of the Trapezoidal profile.
+    c: float
+
+    # A Float specifying the **d** dimension of the Trapezoidal profile.
+    d: float
 
     def __init__(self, name: str, a: float, b: float, c: float, d: float):
         """This method creates a TrapezoidalProfile object.

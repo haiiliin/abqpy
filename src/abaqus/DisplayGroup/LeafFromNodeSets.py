@@ -14,6 +14,8 @@ class LeafFromNodeSets(Leaf):
     leafType: SymbolicConstant
         A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
         DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
+    nodeSets
+        A sequence of Strings specifying node sets or a String specifying a single node set.
 
     Notes
     -----
@@ -27,6 +29,9 @@ class LeafFromNodeSets(Leaf):
     # A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
     # DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: SymbolicConstant = None
+
+    # A sequence of Strings specifying node sets or a String specifying a single node set.
+    nodeSets: tuple
 
     def __init__(self, nodeSets: tuple):
         """This method creates a Leaf object from a sequence of node sets.

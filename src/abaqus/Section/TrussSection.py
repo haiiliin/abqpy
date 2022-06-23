@@ -5,6 +5,16 @@ class TrussSection(Section):
     """The TrussSection object defines the properties of a truss section.
     The TrussSection object is derived from the Section object.
 
+    Attributes
+    ----------
+    name
+        A String specifying the repository key.
+    material
+        A String specifying the name of the material.
+    area
+        A Float specifying the cross-sectional area for the section. Possible values are **area**
+        >> 0. The default value is 1.0.
+
     Notes
     -----
     This object can be accessed by:
@@ -20,6 +30,16 @@ class TrussSection(Section):
 
     - SOLID SECTION
     """
+
+    # A String specifying the repository key.
+    name: str
+
+    # A String specifying the name of the material.
+    material: str
+
+    # A Float specifying the cross-sectional area for the section. Possible values are **area**
+    # >> 0. The default value is 1.0.
+    area: float = 1
 
     def __init__(self, name: str, material: str, area: float = 1):
         """This method creates a TrussSection object.

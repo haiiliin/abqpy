@@ -29,6 +29,16 @@ class OdbFrame:
         is a String representing an output variable.
     loadCase: OdbLoadCase
         An :py:class:`~abaqus.Odb.OdbLoadCase.OdbLoadCase` object specifying the load case for the frame.
+    incrementNumber
+        An Int specifying the frame increment number within the step. The base frame has
+        normally increment number 0, and the results run from 1. In case of multiple load cases,
+        the same increment number is duplicated for each loadcase.
+    frameValue
+        A Float specifying the value in units determined by the **domain** member of the Step
+        object. The equivalent in the time domain is **stepTime**; in the frequency domain the
+        equivalent is **frequency**; and in the modal domain the equivalent is **mode**.
+    description
+        A String specifying the contents of the frame. The default value is an empty string.
 
     Notes
     -----
@@ -65,6 +75,19 @@ class OdbFrame:
 
     # An :py:class:`~abaqus.Odb.OdbLoadCase.OdbLoadCase` object specifying the load case for the frame.
     loadCase: OdbLoadCase = OdbLoadCase("loadCase")
+
+    # An Int specifying the frame increment number within the step. The base frame has
+    # normally increment number 0, and the results run from 1. In case of multiple load cases,
+    # the same increment number is duplicated for each loadcase.
+    incrementNumber: int
+
+    # A Float specifying the value in units determined by the **domain** member of the Step
+    # object. The equivalent in the time domain is **stepTime**; in the frequency domain the
+    # equivalent is **frequency**; and in the modal domain the equivalent is **mode**.
+    frameValue: float
+
+    # A String specifying the contents of the frame. The default value is an empty string.
+    description: str = ""
 
     @typing.overload
     def __init__(self, incrementNumber: int, frameValue: float, description: str = ""):

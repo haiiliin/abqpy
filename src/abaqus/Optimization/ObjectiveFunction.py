@@ -9,6 +9,13 @@ class ObjectiveFunction:
     ----------
     objectives: OptimizationObjectiveArray
         :py:class:`~.Optimization` objectives
+    name
+        A String specifying the objective function repository key.
+    objectives
+        An :py:class:`~abaqus.Optimization.OptimizationObjectiveArray.OptimizationObjectiveArray` object.
+    target
+        A SymbolicConstant specifying the target of the objective function. Possible values are
+        MINIMIZE, MAXIMIZE, and MINIMIZE_MAXIMUM. The default value is MINIMIZE.
 
     Notes
     -----
@@ -22,6 +29,16 @@ class ObjectiveFunction:
 
     # Optimization objectives
     objectives: OptimizationObjectiveArray = OptimizationObjectiveArray()
+
+    # A String specifying the objective function repository key.
+    name: str
+
+    # An :py:class:`~abaqus.Optimization.OptimizationObjectiveArray.OptimizationObjectiveArray` object.
+    objectives: OptimizationObjectiveArray
+
+    # A SymbolicConstant specifying the target of the objective function. Possible values are
+    # MINIMIZE, MAXIMIZE, and MINIMIZE_MAXIMUM. The default value is MINIMIZE.
+    target: SymbolicConstant = MINIMIZE
 
     def __init__(
         self,

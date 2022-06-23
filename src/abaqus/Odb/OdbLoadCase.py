@@ -1,6 +1,11 @@
 class OdbLoadCase:
     """The OdbLoadCase object describes a load case.
 
+    Attributes
+    ----------
+    name
+        A String specifying the name of the OdbLoadCase object.
+
     Notes
     -----
     This object can be accessed by:
@@ -12,6 +17,9 @@ class OdbLoadCase:
         session.odbs[name].steps[name].historyRegions[name].loadCase
         session.odbs[name].steps[name].loadCases[name]
     """
+
+    # A String specifying the name of the OdbLoadCase object.
+    name: str
 
     def __init__(self, name: str):
         """This method creates an OdbLoadCase object.

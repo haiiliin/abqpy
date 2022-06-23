@@ -7,6 +7,47 @@ class SpectrumAmplitude(Amplitude):
     velocity, or acceleration to be used in a response spectrum analysis.
     The SpectrumAmplitude object is derived from the Amplitude object.
 
+    Attributes
+    ----------
+    name
+        A String specifying the repository key.
+    method
+        A SymbolicConstant specifying the method for specifying the spectrum. Possible values
+        are DEFINE and CALCULATE.
+    data
+        A sequence of sequences of Floats specifying the magnitude, frequency, and damping
+        values.
+    specificationUnits
+        A SymbolicConstant specifying the units used for specifying the spectrum. Possible
+        values are DISPLACEMENT, VELOCITY, ACCELERATION, and GRAVITY. The default value is
+        ACCELERATION.
+    eventUnits
+        A SymbolicConstant specifying the units used to describe the dynamic event in the
+        amplitude used for the calculation. Possible values are EVENT_DISPLACEMENT,
+        EVENT_VELOCITY, EVENT_ACCELERATION, and EVENT_GRAVITY. The default value is
+        EVENT_ACCELERATION.
+    solution
+        A SymbolicConstant specifying the solution method for the dynamic equations. Possible
+        values are ABSOLUTE_VALUE and RELATIVE_VALUE. The default value is ABSOLUTE_VALUE.
+    timeIncrement
+        A Float specifying the implicit time increment used to calculate the spectrum. This
+        argument is required when the **method** = CALCULATE. The default value is 0.0.
+    gravity
+        A Float specifying the acceleration due to gravity. This argument applies only when
+        **specificationUnits** = GRAVITY or*eventUnits* = GRAVITY. The default value is 1.0.
+    criticalDamping
+        A Boolean specifying whether to calculate the spectrum for only the specified range of
+        critical damping values or a list of values. If **criticalDamping** = ON, the spectrum is
+        calculated only for the specified range of critical damping values. If **criticalDamping**
+        = OFF, the spectrum is calculated for a list of damping values. The default value is
+        OFF.
+    timeSpan
+        A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+        and TOTAL. The default value is STEP.
+    amplitude
+        A String specifying the name of the amplitude that describes the dynamic event used to
+        calculate the spectrum. The default value is an empty string.
+
     Notes
     -----
     This object can be accessed by:
@@ -22,6 +63,55 @@ class SpectrumAmplitude(Amplitude):
 
     - SPECTRUM
     """
+
+    # A String specifying the repository key.
+    name: str
+
+    # A SymbolicConstant specifying the method for specifying the spectrum. Possible values
+    # are DEFINE and CALCULATE.
+    method: SymbolicConstant
+
+    # A sequence of sequences of Floats specifying the magnitude, frequency, and damping
+    # values.
+    data: tuple
+
+    # A SymbolicConstant specifying the units used for specifying the spectrum. Possible
+    # values are DISPLACEMENT, VELOCITY, ACCELERATION, and GRAVITY. The default value is
+    # ACCELERATION.
+    specificationUnits: SymbolicConstant = ACCELERATION
+
+    # A SymbolicConstant specifying the units used to describe the dynamic event in the
+    # amplitude used for the calculation. Possible values are EVENT_DISPLACEMENT,
+    # EVENT_VELOCITY, EVENT_ACCELERATION, and EVENT_GRAVITY. The default value is
+    # EVENT_ACCELERATION.
+    eventUnits: SymbolicConstant = EVENT_ACCELERATION
+
+    # A SymbolicConstant specifying the solution method for the dynamic equations. Possible
+    # values are ABSOLUTE_VALUE and RELATIVE_VALUE. The default value is ABSOLUTE_VALUE.
+    solution: SymbolicConstant = ABSOLUTE_VALUE
+
+    # A Float specifying the implicit time increment used to calculate the spectrum. This
+    # argument is required when the **method** = CALCULATE. The default value is 0.0.
+    timeIncrement: float = 0
+
+    # A Float specifying the acceleration due to gravity. This argument applies only when
+    # **specificationUnits** = GRAVITY or*eventUnits* = GRAVITY. The default value is 1.0.
+    gravity: float = 1
+
+    # A Boolean specifying whether to calculate the spectrum for only the specified range of
+    # critical damping values or a list of values. If **criticalDamping** = ON, the spectrum is
+    # calculated only for the specified range of critical damping values. If **criticalDamping**
+    # = OFF, the spectrum is calculated for a list of damping values. The default value is
+    # OFF.
+    criticalDamping: Boolean = OFF
+
+    # A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+    # and TOTAL. The default value is STEP.
+    timeSpan: SymbolicConstant = STEP
+
+    # A String specifying the name of the amplitude that describes the dynamic event used to
+    # calculate the spectrum. The default value is an empty string.
+    amplitude: str = ""
 
     def __init__(
         self,

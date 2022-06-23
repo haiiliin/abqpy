@@ -6,6 +6,35 @@ class SymbolStyle:
     curves.
     SymbolStyle objects can be created using the methods described below.
 
+    Attributes
+    ----------
+    color
+        A String specifying the color to be used when drawing a marker with this SymbolStyle
+        object. The default value is "White".
+    show
+        A Boolean specifying whether to draw the marker when using this SymbolStyle object. The
+        default value is ON.
+    marker
+        A SymbolicConstant specifying the marker type be used when drawing symbols using this
+        SymbolStyle object. Possible values are:
+    
+        - FILLED_CIRCLE
+        - FILLED_SQUARE
+        - FILLED_DIAMOND
+        - FILLED_TRI
+        - HOLLOW_CIRCLE
+        - HOLLOW_SQUARE
+        - HOLLOW_DIAMOND
+        - HOLLOW_TRI
+        - CROSS
+        - XMARKER
+        - POINT
+        
+        The default value is FILLED_CIRCLE.
+    size
+        A Float specifying the marker size to be used when drawing markers using this
+        SymbolStyle object. The default value is 2.0.
+
     Notes
     -----
     This object can be accessed by:
@@ -24,6 +53,37 @@ class SymbolStyle:
         session.xyPlots[name].charts[name].curves[name].symbolStyle
         session.xyPlots[name].curves[name].symbolStyle
     """
+
+    # A String specifying the color to be used when drawing a marker with this SymbolStyle
+    # object. The default value is "White".
+    color: str = ""
+
+    # A Boolean specifying whether to draw the marker when using this SymbolStyle object. The
+    # default value is ON.
+    show: Boolean = ON
+
+    # A SymbolicConstant specifying the marker type be used when drawing symbols using this
+    # SymbolStyle object. Possible values are:
+    
+
+    # - FILLED_CIRCLE
+    # - FILLED_SQUARE
+    # - FILLED_DIAMOND
+    # - FILLED_TRI
+    # - HOLLOW_CIRCLE
+    # - HOLLOW_SQUARE
+    # - HOLLOW_DIAMOND
+    # - HOLLOW_TRI
+    # - CROSS
+    # - XMARKER
+    # - POINT
+    # 
+    # The default value is FILLED_CIRCLE.
+    marker: SymbolicConstant = FILLED_CIRCLE
+
+    # A Float specifying the marker size to be used when drawing markers using this
+    # SymbolStyle object. The default value is 2.0.
+    size: float = 2
 
     def __init__(
         self,

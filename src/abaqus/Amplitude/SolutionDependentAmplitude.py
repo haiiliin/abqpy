@@ -7,6 +7,23 @@ class SolutionDependentAmplitude(Amplitude):
     superplastic forming analysis.
     The SolutionDependentAmplitude object is derived from the Amplitude object.
 
+    Attributes
+    ----------
+    name
+        A String specifying the repository key.
+    initial
+        A Float specifying the initial amplitude value. Possible values are those between
+        **minimum** and **maximum**. The default value is 1.0.
+    minimum
+        A Float specifying the minimum amplitude value. Possible values are those smaller than
+        **maximum** and **initial**. The default value is 0.1.
+    maximum
+        A Float specifying the maximum amplitude value. Possible values are those larger than
+        **minimum** and **initial**. The default value is 1000.0.
+    timeSpan
+        A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+        and TOTAL. The default value is STEP.
+
     Notes
     -----
     This object can be accessed by:
@@ -22,6 +39,25 @@ class SolutionDependentAmplitude(Amplitude):
 
     - AMPLITUDE
     """
+
+    # A String specifying the repository key.
+    name: str
+
+    # A Float specifying the initial amplitude value. Possible values are those between
+    # **minimum** and **maximum**. The default value is 1.0.
+    initial: float = 1
+
+    # A Float specifying the minimum amplitude value. Possible values are those smaller than
+    # **maximum** and **initial**. The default value is 0.1.
+    minimum: float = 0
+
+    # A Float specifying the maximum amplitude value. Possible values are those larger than
+    # **minimum** and **initial**. The default value is 1000.0.
+    maximum: float = 1000
+
+    # A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+    # and TOTAL. The default value is STEP.
+    timeSpan: SymbolicConstant = STEP
 
     def __init__(
         self,

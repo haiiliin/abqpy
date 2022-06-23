@@ -5,6 +5,16 @@ class HomogeneousSolidSection(SolidSection):
     """The HomogeneousSolidSection object defines the properties of a solid section.
     The HomogeneousSolidSection object is derived from the SolidSection object.
 
+    Attributes
+    ----------
+    name
+        A String specifying the repository key.
+    material
+        A String specifying the name of the material.
+    thickness
+        None or a Float specifying the thickness of the section. Possible values
+        are None or a floating point value such that thickness >  0.0. The default value is None.
+
     Notes
     -----
     This object can be accessed by:
@@ -20,6 +30,16 @@ class HomogeneousSolidSection(SolidSection):
 
     - SOLID SECTION
     """
+
+    # A String specifying the repository key.
+    name: str
+
+    # A String specifying the name of the material.
+    material: str
+
+    # None or a Float specifying the thickness of the section. Possible values
+    # are None or a floating point value such that thickness >  0.0. The default value is None.
+    thickness: float = None
 
     def __init__(self, name: str, material: str, thickness: float = None):
         """This method creates a HomogeneousSolidSection object.

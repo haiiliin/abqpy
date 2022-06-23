@@ -6,6 +6,22 @@ class DecayAmplitude(Amplitude):
     """The DecayAmplitude object defines an amplitude curve using an exponential decay.
     The DecayAmplitude object is derived from the Amplitude object.
 
+    Attributes
+    ----------
+    name
+        A String specifying the repository key.
+    initial
+        A Float specifying the constant A0A0.
+    maximum
+        A Float specifying the coefficient AA.
+    start
+        A Float specifying the starting time t0t0. Possible values are non-negative numbers.
+    decayTime
+        A Float specifying the decay time tdtd. Possible values are non-negative numbers.
+    timeSpan
+        A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+        and TOTAL. The default value is STEP.
+
     Notes
     -----
     This object can be accessed by:
@@ -21,6 +37,25 @@ class DecayAmplitude(Amplitude):
 
     - AMPLITUDE
     """
+
+    # A String specifying the repository key.
+    name: str
+
+    # A Float specifying the constant A0A0.
+    initial: float
+
+    # A Float specifying the coefficient AA.
+    maximum: float
+
+    # A Float specifying the starting time t0t0. Possible values are non-negative numbers.
+    start: float
+
+    # A Float specifying the decay time tdtd. Possible values are non-negative numbers.
+    decayTime: float
+
+    # A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+    # and TOTAL. The default value is STEP.
+    timeSpan: SymbolicConstant = STEP
 
     def __init__(
         self,

@@ -5,6 +5,17 @@ class RectangularProfile(Profile):
     """The RectangularProfile object defines the properties of a solid rectangular profile.
     The RectangularProfile object is derived from the Profile object.
 
+    Attributes
+    ----------
+    name
+        A String specifying the repository key.
+    a
+        A positive Float specifying the **a** dimension of the rectangular profile. For more
+        information, see [Beam cross-section
+        library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all).
+    b
+        A positive Float specifying the **b** dimension of the rectangular profile.
+
     Notes
     -----
     This object can be accessed by:
@@ -20,6 +31,17 @@ class RectangularProfile(Profile):
 
     - BEAM SECTION
     """
+
+    # A String specifying the repository key.
+    name: str
+
+    # A positive Float specifying the **a** dimension of the rectangular profile. For more
+    # information, see [Beam cross-section
+    # library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all).
+    a: float
+
+    # A positive Float specifying the **b** dimension of the rectangular profile.
+    b: float
 
     def __init__(self, name: str, a: float, b: float):
         """This method creates a RectangularProfile object.

@@ -7,6 +7,23 @@ class FilmConditionProp(ContactProperty):
     as a function of temperature and field variables.
     The FilmConditionProp object is derived from the InteractionProperty object.
 
+    Attributes
+    ----------
+    name
+        A String specifying the interaction property repository key.
+    temperatureDependency
+        A Boolean specifying whether the data depend on temperature. The default value is OFF.
+    dependencies
+        An Int specifying the number of field variable dependencies. The default value is 0.
+    property
+        A sequence of sequences of Floats specifying the following:
+        
+        - The film coefficient, hh.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
+
     Notes
     -----
     This object can be accessed by:
@@ -20,6 +37,24 @@ class FilmConditionProp(ContactProperty):
 
     - FILM PROPERTY
     """
+
+    # A String specifying the interaction property repository key.
+    name: str
+
+    # A Boolean specifying whether the data depend on temperature. The default value is OFF.
+    temperatureDependency: Boolean = OFF
+
+    # An Int specifying the number of field variable dependencies. The default value is 0.
+    dependencies: int = 0
+
+    # A sequence of sequences of Floats specifying the following:
+    # 
+    # - The film coefficient, hh.
+    # - Temperature, if the data depend on temperature.
+    # - Value of the first field variable, if the data depend on field variables.
+    # - Value of the second field variable.
+    # - Etc.
+    property: tuple = ()
 
     def __init__(
         self,

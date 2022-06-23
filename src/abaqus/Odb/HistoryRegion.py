@@ -15,6 +15,15 @@ class HistoryRegion:
         NODAL, INTEGRATION_POINT, WHOLE_ELEMENT, WHOLE_REGION, and WHOLE_MODEL.
     historyOutputs: dict[str, HistoryOutput]
         A repository of :py:class:`~abaqus.Odb.HistoryOutput.HistoryOutput` objects.
+    name
+        A String specifying the name of the HistoryRegion object.
+    description
+        A String specifying the description of the HistoryRegion object.
+    point
+        A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object specifying the point to which the history data refer.
+    loadCase
+        None or an OdbLoadCase object specifying the load case associated with the HistoryRegion
+        object. The default value is None.
 
     Notes
     -----
@@ -32,6 +41,19 @@ class HistoryRegion:
 
     # A repository of HistoryOutput objects.
     historyOutputs: dict[str, HistoryOutput] = dict[str, HistoryOutput]()
+
+    # A String specifying the name of the HistoryRegion object.
+    name: str
+
+    # A String specifying the description of the HistoryRegion object.
+    description: str
+
+    # A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object specifying the point to which the history data refer.
+    point: HistoryPoint
+
+    # None or an OdbLoadCase object specifying the load case associated with the HistoryRegion
+    # object. The default value is None.
+    loadCase: str = None
 
     def __init__(
         self, name: str, description: str, point: HistoryPoint, loadCase: str = None

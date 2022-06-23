@@ -1,6 +1,15 @@
 class EventSeriesType:
     """The EventSeriesType object is used to define a type of event in a process.
 
+    Attributes
+    ----------
+    name
+        A String specifying the repository key.
+    createStepName
+        A string specifying the step name.
+    fields
+        A String array specifying fields. The default value is an empty array.
+
     Notes
     -----
     This object can be accessed by:
@@ -14,6 +23,15 @@ class EventSeriesType:
     - EVENT SERIES TYPE
             - EVENT SERIES
     """
+
+    # A String specifying the repository key.
+    name: str
+
+    # A string specifying the step name.
+    createStepName: str
+
+    # A String array specifying fields. The default value is an empty array.
+    fields: str = ""
 
     def __init__(self, name: str, createStepName: str, fields: str = ""):
         """This method creates an EventSeriesType object.

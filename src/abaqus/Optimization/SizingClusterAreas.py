@@ -5,6 +5,14 @@ class SizingClusterAreas(GeometricRestriction):
     """The SizingClusterAreas object defines a sizing cluster areas geometric restriction.
     The SizingClusterAreas object is derived from the GeometricRestriction object.
 
+    Attributes
+    ----------
+    name
+        A String specifying the geometric restriction repository key.
+    regions
+        Tuple of Region objects specifying the regions to which the geometric restriction is
+        applied.
+
     Notes
     -----
     This object can be accessed by:
@@ -14,6 +22,13 @@ class SizingClusterAreas(GeometricRestriction):
         import optimization
         mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
+
+    # A String specifying the geometric restriction repository key.
+    name: str
+
+    # Tuple of Region objects specifying the regions to which the geometric restriction is
+    # applied.
+    regions: tuple
 
     def __init__(self, name: str, regions: tuple):
         """This method creates a SizingClusterAreas object.

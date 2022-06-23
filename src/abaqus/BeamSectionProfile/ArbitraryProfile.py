@@ -5,6 +5,13 @@ class ArbitraryProfile(Profile):
     """The ArbitraryProfile object defines the properties of an arbitrary profile.
     The ArbitraryProfile object is derived from the Profile object.
 
+    Attributes
+    ----------
+    name
+        A String specifying the repository key.
+    table
+        A sequence of sequences of Floats specifying the items described below.
+
     Notes
     -----
     This object can be accessed by:
@@ -32,6 +39,12 @@ class ArbitraryProfile(Profile):
 
     - BEAM SECTION
     """
+
+    # A String specifying the repository key.
+    name: str
+
+    # A sequence of sequences of Floats specifying the items described below.
+    table: tuple
 
     def __init__(self, name: str, table: tuple):
         """This method creates a ArbitraryProfile object.

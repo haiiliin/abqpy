@@ -6,6 +6,21 @@ class ParameterColumn:
     collectively build the type of parameter table. Once the object is created, it is
     noneditable.
 
+    Attributes
+    ----------
+    type
+        A SymbolicConstant specifying the data type of the parameter. Possible values are
+        STRING, INTEGER, and FLOAT.
+    unit
+        A String specifying the unit of the parameter.
+    description
+        A String specifying the description of the parameter.
+    default
+        The default value of the first parameter. The data type of the value depends on the
+        value of **type** argument.
+    allowedValues
+        A Set of allowed values for the parameter.
+
     Notes
     -----
     This object can be accessed by:
@@ -19,6 +34,23 @@ class ParameterColumn:
     - *PARAMETER TABLE TYPE
             - *PARAMETER TABLE
     """
+
+    # A SymbolicConstant specifying the data type of the parameter. Possible values are
+    # STRING, INTEGER, and FLOAT.
+    type: SymbolicConstant
+
+    # A String specifying the unit of the parameter.
+    unit: str = ""
+
+    # A String specifying the description of the parameter.
+    description: str = ""
+
+    # The default value of the first parameter. The data type of the value depends on the
+    # value of **type** argument.
+    default: str = ""
+
+    # A Set of allowed values for the parameter.
+    allowedValues: str = ""
 
     def __init__(
         self,

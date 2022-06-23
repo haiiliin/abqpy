@@ -12,6 +12,12 @@ class AdjustPoints(Constraint):
     suppressed: Boolean
         A Boolean specifying whether the constraint is suppressed or not. The default value is
         OFF.
+    name
+        A String specifying the constraint repository key.
+    surface
+        A :py:class:`~abaqus.Region.Region.Region` object specifying the surface to which the **controlPoints** are adjusted.
+    controlPoints
+        A :py:class:`~abaqus.Region.Region.Region` object specifying the constraint control points.
 
     Notes
     -----
@@ -30,6 +36,15 @@ class AdjustPoints(Constraint):
     # A Boolean specifying whether the constraint is suppressed or not. The default value is
     # OFF.
     suppressed: Boolean = OFF
+
+    # A String specifying the constraint repository key.
+    name: str
+
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the surface to which the **controlPoints** are adjusted.
+    surface: Region
+
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the constraint control points.
+    controlPoints: Region
 
     def __init__(self, name: str, surface: Region, controlPoints: Region):
         """This method creates an AdjustPoints object.

@@ -11,6 +11,12 @@ class FluidCavityPressure(PredefinedField):
     ----------
     region: Region
         A :py:class:`~abaqus.Region.Region.Region` object on which the **fluidCavity** interaction is specified.
+    name
+        A String specifying the repository key.
+    fluidCavity
+        A String specifying the name of a Fluid Cavity Interaction.
+    fluidPressure
+        A Float specifying the initial fluid pressure.
 
     Notes
     -----
@@ -28,6 +34,15 @@ class FluidCavityPressure(PredefinedField):
 
     # A :py:class:`~abaqus.Region.Region.Region` object on which the **fluidCavity** interaction is specified.
     region: Region = Region()
+
+    # A String specifying the repository key.
+    name: str
+
+    # A String specifying the name of a Fluid Cavity Interaction.
+    fluidCavity: str
+
+    # A Float specifying the initial fluid pressure.
+    fluidPressure: float
 
     def __init__(self, name: str, fluidCavity: str, fluidPressure: float):
         """This method creates a FluidCavityPressure object.

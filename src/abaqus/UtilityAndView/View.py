@@ -23,6 +23,50 @@ class View:
     layerTransform: float
         A tuple of Floats specifying a transformation matrix used to position the contents of
         the Layer within a viewport.
+    name
+        A String specifying the name of the view (also used as the repository key). Possible
+        values are 'Front', 'Back', 'Top', 'Bottom', 'Left', `Right', 'Iso', 'User-1', 'User-2',
+        'User-3', and 'User-4'. The object member associated with this argument is a
+        SymbolicConstant. Possible values of the **name** member are:FRONT, BACK, TOP, BOTTOM,
+        LEFT, RIGHT, ISO, USER1, USER2, USER3, and USER4.
+    nearPlane
+        A Float specifying the distance from the camera to the near clipping plane. Possible
+        values are **nearPlane** >> 0.0.
+    farPlane
+        A Float specifying the distance from the camera to the far clipping plane when
+        **farPlaneMode** =SPECIFY. Possible values are **farPlane** >> **nearPlane**.
+    width
+        A Float specifying the width of the front clipping plane. Possible values are **width** >>
+        0.0.
+    height
+        A Float specifying the height of the front clipping plane. Possible values are **height**
+        >> 0.0.
+    projection
+        A SymbolicConstant specifying the projection mode. Possible values are PERSPECTIVE and
+        PARALLEL.
+    cameraPosition
+        A sequence of three Floats specifying the camera position.
+    cameraUpVector
+        A sequence of three Floats specifying the camera's up vector (the screen's positive
+        **Y**-axis). The initial value is (0, 0, 0).
+    cameraTarget
+        A sequence of three Floats specifying the center of the scene.
+    viewOffsetX
+        A Float specifying the amount to pan the model in the screen **X**-direction as a fraction
+        of the viewport width. A positive value pans the model to the right. A negative value
+        pans the model to the left.The*viewOffsetX* and **viewOffsetY** arguments allow you to pan
+        the view without changing the position of the camera or the target (*cameraPosition* and
+        **cameraTarget** arguments to the View method). The resulting change in the view allows
+        you to pan a perspective display without producing an apparent rotation of the model.
+    viewOffsetY
+        A Float specifying the amount to pan the model in the screen **Y**-direction as a fraction
+        of the viewport height. A positive value pans the model upward. A negative value pans
+        the model downward.
+    autoFit
+        A Boolean specifying whether the view is auto-fit when applied.
+    movieMode
+        A Boolean specifying whether or not the camera is in movie mode. The default value is
+        OFF.
 
     Notes
     -----
@@ -48,6 +92,63 @@ class View:
     # A tuple of Floats specifying a transformation matrix used to position the contents of
     # the Layer within a viewport.
     layerTransform: float = None
+
+    # A String specifying the name of the view (also used as the repository key). Possible
+    # values are 'Front', 'Back', 'Top', 'Bottom', 'Left', `Right', 'Iso', 'User-1', 'User-2',
+    # 'User-3', and 'User-4'. The object member associated with this argument is a
+    # SymbolicConstant. Possible values of the **name** member are:FRONT, BACK, TOP, BOTTOM,
+    # LEFT, RIGHT, ISO, USER1, USER2, USER3, and USER4.
+    name: str
+
+    # A Float specifying the distance from the camera to the near clipping plane. Possible
+    # values are **nearPlane** >> 0.0.
+    nearPlane: float
+
+    # A Float specifying the distance from the camera to the far clipping plane when
+    # **farPlaneMode** =SPECIFY. Possible values are **farPlane** >> **nearPlane**.
+    farPlane: float
+
+    # A Float specifying the width of the front clipping plane. Possible values are **width** >>
+    # 0.0.
+    width: float
+
+    # A Float specifying the height of the front clipping plane. Possible values are **height**
+    # >> 0.0.
+    height: float
+
+    # A SymbolicConstant specifying the projection mode. Possible values are PERSPECTIVE and
+    # PARALLEL.
+    projection: SymbolicConstant
+
+    # A sequence of three Floats specifying the camera position.
+    cameraPosition: tuple
+
+    # A sequence of three Floats specifying the camera's up vector (the screen's positive
+    # **Y**-axis). The initial value is (0, 0, 0).
+    cameraUpVector: tuple
+
+    # A sequence of three Floats specifying the center of the scene.
+    cameraTarget: tuple
+
+    # A Float specifying the amount to pan the model in the screen **X**-direction as a fraction
+    # of the viewport width. A positive value pans the model to the right. A negative value
+    # pans the model to the left.The*viewOffsetX* and **viewOffsetY** arguments allow you to pan
+    # the view without changing the position of the camera or the target (*cameraPosition* and
+    # **cameraTarget** arguments to the View method). The resulting change in the view allows
+    # you to pan a perspective display without producing an apparent rotation of the model.
+    viewOffsetX: float
+
+    # A Float specifying the amount to pan the model in the screen **Y**-direction as a fraction
+    # of the viewport height. A positive value pans the model upward. A negative value pans
+    # the model downward.
+    viewOffsetY: float
+
+    # A Boolean specifying whether the view is auto-fit when applied.
+    autoFit: Boolean
+
+    # A Boolean specifying whether or not the camera is in movie mode. The default value is
+    # OFF.
+    movieMode: Boolean = OFF
 
     def __init__(
         self,

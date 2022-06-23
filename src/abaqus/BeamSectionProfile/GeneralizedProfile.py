@@ -6,6 +6,25 @@ class GeneralizedProfile(Profile):
     of inertia, etc.
     The GeneralizedProfile object is derived from the Profile object.
 
+    Attributes
+    ----------
+    name
+        A String specifying the repository key.
+    area
+        A Float specifying the cross-sectional area for the profile.
+    i11
+        A Float specifying the moment of inertia for bending about the 1-axis, I11I11.
+    i12
+        A Float specifying the moment of inertia for cross bending, I12I12.
+    i22
+        A Float specifying the moment of inertia for bending about the 2-axis, I22I22.
+    j
+        A Float specifying the torsional constant, JJ.
+    gammaO
+        A Float specifying the sectorial moment, Γ0Γ0.
+    gammaW
+        A Float specifying the warping constant, ΓWΓW.
+
     Notes
     -----
     This object can be accessed by:
@@ -21,6 +40,30 @@ class GeneralizedProfile(Profile):
 
     - BEAM GENERAL SECTION
     """
+
+    # A String specifying the repository key.
+    name: str
+
+    # A Float specifying the cross-sectional area for the profile.
+    area: float
+
+    # A Float specifying the moment of inertia for bending about the 1-axis, I11I11.
+    i11: float
+
+    # A Float specifying the moment of inertia for cross bending, I12I12.
+    i12: float
+
+    # A Float specifying the moment of inertia for bending about the 2-axis, I22I22.
+    i22: float
+
+    # A Float specifying the torsional constant, JJ.
+    j: float
+
+    # A Float specifying the sectorial moment, Γ0Γ0.
+    gammaO: float
+
+    # A Float specifying the warping constant, ΓWΓW.
+    gammaW: float
 
     def __init__(
         self,

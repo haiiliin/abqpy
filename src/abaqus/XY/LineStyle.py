@@ -6,6 +6,22 @@ class LineStyle:
     objects.
     LineStyle objects can be created using the methods described below.
 
+    Attributes
+    ----------
+    color
+        A String specifying the color to be used when drawing a line with this LineStyle object.
+        The default value is "White".
+    show
+        A Boolean specifying whether to draw the line when using this LineStyle. The default
+        value is ON.
+    style
+        A SymbolicConstant specifying the line style to be used when drawing lines using this
+        LineStyle. Possible values are SOLID, DASHED, DOTTED, and DOT_DASH. The default value is
+        SOLID.
+    thickness
+        A Float specifying the line thickness in mm to be used when drawing lines using this
+        LineStyle. The default value is 0.2.
+
     Notes
     -----
     This object can be accessed by:
@@ -63,6 +79,23 @@ class LineStyle:
         session.xyPlots[name].curves[name].lineStyle
         session.xyPlots[name].title.area.border
     """
+
+    # A String specifying the color to be used when drawing a line with this LineStyle object.
+    # The default value is "White".
+    color: str = ""
+
+    # A Boolean specifying whether to draw the line when using this LineStyle. The default
+    # value is ON.
+    show: Boolean = ON
+
+    # A SymbolicConstant specifying the line style to be used when drawing lines using this
+    # LineStyle. Possible values are SOLID, DASHED, DOTTED, and DOT_DASH. The default value is
+    # SOLID.
+    style: SymbolicConstant = SOLID
+
+    # A Float specifying the line thickness in mm to be used when drawing lines using this
+    # LineStyle. The default value is 0.2.
+    thickness: float = 0
 
     def __init__(
         self,

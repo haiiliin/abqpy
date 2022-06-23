@@ -14,6 +14,13 @@ class LeafFromNodeLabels(Leaf):
     leafType: SymbolicConstant
         A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
         DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
+    partInstanceName
+        A String specifying the name of the part instance to which **nodeLabels** refers.
+    nodeLabels
+        A sequence of Strings specifying expressions that denote node labels. The expression can
+        be any of the following:An Int specifying a single node label; for example, `1`.A String
+        specifying a single node label; for example, `'7'`.A String specifying a sequence of
+        node labels; for example, `'3:5'` and `'3:15:3'`.
 
     Notes
     -----
@@ -27,6 +34,15 @@ class LeafFromNodeLabels(Leaf):
     # A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
     # DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: SymbolicConstant = None
+
+    # A String specifying the name of the part instance to which **nodeLabels** refers.
+    partInstanceName: str
+
+    # A sequence of Strings specifying expressions that denote node labels. The expression can
+    # be any of the following:An Int specifying a single node label; for example, `1`.A String
+    # specifying a single node label; for example, `'7'`.A String specifying a sequence of
+    # node labels; for example, `'3:5'` and `'3:15:3'`.
+    nodeLabels: tuple
 
     def __init__(self, partInstanceName: str, nodeLabels: tuple):
         """This method creates a Leaf object from a sequence of node labels that belong to a single

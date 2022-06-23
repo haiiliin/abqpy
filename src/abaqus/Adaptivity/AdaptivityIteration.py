@@ -12,6 +12,18 @@ class AdaptivityIteration:
         A repository of :py:class:`~abaqus.Adaptivity.RuleResult.RuleResult` objects specifying the calculated results from sizing
         functions corresponding to the :py:class:`~abaqus.Adaptivity.RemeshingRule.RemeshingRule` objects for this iteration of an adaptivity
         process.
+    iteration
+        An Int specifying the sequence number for this iteration in the adaptivity process.
+    jobName
+        A String specifying the name of the job that was run for this iteration.
+    modelName
+        A String specifying the name of the model that was analyzed and remeshed in this
+        iteration.
+    odbPath
+        A String specifying the path to the ODB file that was created for this iteration.
+    remeshingErrors
+        An Int specifying the number of part instances which generated errors while remeshing
+        the model in this iteration of the adaptivity process.
 
     Notes
     -----
@@ -27,6 +39,23 @@ class AdaptivityIteration:
     # functions corresponding to the RemeshingRule objects for this iteration of an adaptivity
     # process.
     ruleResults: dict[str, RuleResult] = dict[str, RuleResult]()
+
+    # An Int specifying the sequence number for this iteration in the adaptivity process.
+    iteration: int
+
+    # A String specifying the name of the job that was run for this iteration.
+    jobName: str
+
+    # A String specifying the name of the model that was analyzed and remeshed in this
+    # iteration.
+    modelName: str
+
+    # A String specifying the path to the ODB file that was created for this iteration.
+    odbPath: str
+
+    # An Int specifying the number of part instances which generated errors while remeshing
+    # the model in this iteration of the adaptivity process.
+    remeshingErrors: int
 
     def __init__(
         self,

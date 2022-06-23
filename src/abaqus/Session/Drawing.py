@@ -62,6 +62,8 @@ class Drawing:
     pointColor: float
         A tuple of three Floats specifying the **Red**, **Green**, and **Blue** component values for
         the point color. Possible values for each component are between 0.0 and 1.0.
+    name
+        A String specifying the repository key.
 
     Notes
     -----
@@ -139,6 +141,9 @@ class Drawing:
     # A tuple of three Floats specifying the **Red**, **Green**, and **Blue** component values for
     # the point color. Possible values for each component are between 0.0 and 1.0.
     pointColor: float = None
+
+    # A String specifying the repository key.
+    name: str
 
     def __init__(self, name: str):
         """This method creates an empty Drawing object.

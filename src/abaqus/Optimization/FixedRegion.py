@@ -7,6 +7,31 @@ class FixedRegion(GeometricRestriction):
     """The FixedRegion object defines a fixed region geometric restriction.
     The FixedRegion object is derived from the GeometricRestriction object.
 
+    Attributes
+    ----------
+    name
+        A String specifying the geometric restriction repository key.
+    region
+        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+        When used with a TopologyTask, there is no default value. When used with a ShapeTask,
+        the default value is MODEL.
+    csys
+        None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
+        global coordinate system is used. When this member is queried, it returns an Int. The
+        default value is None.
+    presumeFeasibleRegionAtStart
+        A Boolean specifying whether to ignore the geometric restriction in the first design
+        cycle. The default value is ON.
+    u1
+        A Boolean specifying whether to fix the region in the 1-direction. The default value is
+        OFF.
+    u2
+        A Boolean specifying whether to fix the region in the 2-direction. The default value is
+        OFF.
+    u3
+        A Boolean specifying whether to fix the region in the 3-direction. The default value is
+        OFF.
+
     Notes
     -----
     This object can be accessed by:
@@ -16,6 +41,35 @@ class FixedRegion(GeometricRestriction):
         import optimization
         mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
+
+    # A String specifying the geometric restriction repository key.
+    name: str
+
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    # When used with a TopologyTask, there is no default value. When used with a ShapeTask,
+    # the default value is MODEL.
+    region: Region
+
+    # None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
+    # global coordinate system is used. When this member is queried, it returns an Int. The
+    # default value is None.
+    csys: int = None
+
+    # A Boolean specifying whether to ignore the geometric restriction in the first design
+    # cycle. The default value is ON.
+    presumeFeasibleRegionAtStart: Boolean = ON
+
+    # A Boolean specifying whether to fix the region in the 1-direction. The default value is
+    # OFF.
+    u1: Boolean = OFF
+
+    # A Boolean specifying whether to fix the region in the 2-direction. The default value is
+    # OFF.
+    u2: Boolean = OFF
+
+    # A Boolean specifying whether to fix the region in the 3-direction. The default value is
+    # OFF.
+    u3: Boolean = OFF
 
     def __init__(
         self,

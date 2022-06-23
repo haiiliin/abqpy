@@ -14,6 +14,24 @@ class EquallySpacedAmplitude(Amplitude):
     ----------
     baselineCorrection: BaselineCorrection
         A :py:class:`~abaqus.Amplitude.BaselineCorrection.BaselineCorrection` object.
+    name
+        A String specifying the repository key.
+    fixedInterval
+        A Float specifying the fixed time interval at which the amplitude data are given.
+        Possible values are positive numbers.
+    data
+        A sequence of Floats specifying the amplitude values.
+    begin
+        A Float specifying the time at which the first amplitude data are given. Possible values
+        are non-negative numbers. The default value is 0.0.
+    smooth
+        The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing.
+        Possible float values are 0 ≤≤ **smoothing** ≤≤ 0.5. If **smooth** = SOLVER_DEFAULT, the
+        default degree of smoothing will be determined by the solver. The default value is
+        SOLVER_DEFAULT.
+    timeSpan
+        A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+        and TOTAL. The default value is STEP.
 
     Notes
     -----
@@ -33,6 +51,30 @@ class EquallySpacedAmplitude(Amplitude):
 
     # A :py:class:`~abaqus.Amplitude.BaselineCorrection.BaselineCorrection` object.
     baselineCorrection: BaselineCorrection = BaselineCorrection()
+
+    # A String specifying the repository key.
+    name: str
+
+    # A Float specifying the fixed time interval at which the amplitude data are given.
+    # Possible values are positive numbers.
+    fixedInterval: float
+
+    # A sequence of Floats specifying the amplitude values.
+    data: tuple
+
+    # A Float specifying the time at which the first amplitude data are given. Possible values
+    # are non-negative numbers. The default value is 0.0.
+    begin: float = 0
+
+    # The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing.
+    # Possible float values are 0 ≤≤ **smoothing** ≤≤ 0.5. If **smooth** = SOLVER_DEFAULT, the
+    # default degree of smoothing will be determined by the solver. The default value is
+    # SOLVER_DEFAULT.
+    smooth: typing.Union[SymbolicConstant, float] = SOLVER_DEFAULT
+
+    # A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+    # and TOTAL. The default value is STEP.
+    timeSpan: SymbolicConstant = STEP
 
     def __init__(
         self,

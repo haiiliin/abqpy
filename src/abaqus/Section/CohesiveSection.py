@@ -6,6 +6,29 @@ class CohesiveSection(Section):
     """The CohesiveSection object defines the properties of a cohesive section.
     The CohesiveSection object is derived from the Section object.
 
+    Attributes
+    ----------
+    name
+        A String specifying the repository key.
+    response
+        A SymbolicConstant specifying the geometric assumption that defines the constitutive
+        behavior of the cohesive elements. Possible values are TRACTION_SEPARATION, CONTINUUM,
+        and GASKET.
+    material
+        A String specifying the name of the material.
+    initialThicknessType
+        A SymbolicConstant specifying the method used to compute the initial thickness. Possible
+        values are:SOLVER_DEFAULT, specifying that Abaqus will use the analysis product
+        defaultGEOMETRY, specifying that Abaqus will compute the thickness from the nodal
+        coordinates of the elements.SPECIFY, specifying that Abaqus will use the value given for
+        **initialThickness**The default value is SOLVER_DEFAULT.
+    initialThickness
+        A Float specifying the initial thickness for the section. The **initialThickness**
+        argument applies only when **initialThicknessType** = SPECIFY. The default value is 1.0.
+    outOfPlaneThickness
+        None or a Float specifying the out-of-plane thickness for the section. The default value
+        is None.
+
     Notes
     -----
     This object can be accessed by:
@@ -21,6 +44,32 @@ class CohesiveSection(Section):
 
     - COHESIVE SECTION
     """
+
+    # A String specifying the repository key.
+    name: str
+
+    # A SymbolicConstant specifying the geometric assumption that defines the constitutive
+    # behavior of the cohesive elements. Possible values are TRACTION_SEPARATION, CONTINUUM,
+    # and GASKET.
+    response: SymbolicConstant
+
+    # A String specifying the name of the material.
+    material: str
+
+    # A SymbolicConstant specifying the method used to compute the initial thickness. Possible
+    # values are:SOLVER_DEFAULT, specifying that Abaqus will use the analysis product
+    # defaultGEOMETRY, specifying that Abaqus will compute the thickness from the nodal
+    # coordinates of the elements.SPECIFY, specifying that Abaqus will use the value given for
+    # **initialThickness**The default value is SOLVER_DEFAULT.
+    initialThicknessType: SymbolicConstant = SOLVER_DEFAULT
+
+    # A Float specifying the initial thickness for the section. The **initialThickness**
+    # argument applies only when **initialThicknessType** = SPECIFY. The default value is 1.0.
+    initialThickness: float = 1
+
+    # None or a Float specifying the out-of-plane thickness for the section. The default value
+    # is None.
+    outOfPlaneThickness: float = None
 
     def __init__(
         self,

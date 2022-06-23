@@ -5,6 +5,14 @@ from .LayerPropertiesArray import LayerPropertiesArray
 class RebarLayers:
     """The RebarLayers object defines the rebar properties of a section.
 
+    Attributes
+    ----------
+    rebarSpacing
+        A SymbolicConstant specifying the type of rebar geometry. Possible values are CONSTANT,
+        ANGULAR, and LIFT_EQUATION.
+    layerTable
+        A :py:class:`~abaqus.Section.LayerPropertiesArray.LayerPropertiesArray` object specifying the layers of reinforcement.
+
     Notes
     -----
     This object can be accessed by:
@@ -21,6 +29,13 @@ class RebarLayers:
 
     - REBAR LAYER
     """
+
+    # A SymbolicConstant specifying the type of rebar geometry. Possible values are CONSTANT,
+    # ANGULAR, and LIFT_EQUATION.
+    rebarSpacing: SymbolicConstant
+
+    # A :py:class:`~abaqus.Section.LayerPropertiesArray.LayerPropertiesArray` object specifying the layers of reinforcement.
+    layerTable: LayerPropertiesArray
 
     def __init__(
         self, rebarSpacing: SymbolicConstant, layerTable: LayerPropertiesArray

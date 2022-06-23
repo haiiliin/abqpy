@@ -7,6 +7,19 @@ class SizingPointSymmetry(GeometricRestriction):
     """The SizingPointSymmetry object defines a sizing point symmetry geometric restriction.
     The SizingPointSymmetry object is derived from the GeometricRestriction object.
 
+    Attributes
+    ----------
+    name
+        A String specifying the geometric restriction repository key.
+    region
+        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    csys
+        None or a DatumCsys object specifying the position of the symmetry point defined as the
+        origin of a local coordinate system. If **csys** = None, the global coordinate system is
+        used. When this member is queried, it returns an Int. The default value is None.
+    ignoreFrozenArea
+        A Boolean specifying whether to ignore frozen areas. The default value is OFF.
+
     Notes
     -----
     This object can be accessed by:
@@ -16,6 +29,20 @@ class SizingPointSymmetry(GeometricRestriction):
         import optimization
         mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
+
+    # A String specifying the geometric restriction repository key.
+    name: str
+
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    region: Region
+
+    # None or a DatumCsys object specifying the position of the symmetry point defined as the
+    # origin of a local coordinate system. If **csys** = None, the global coordinate system is
+    # used. When this member is queried, it returns an Int. The default value is None.
+    csys: int = None
+
+    # A Boolean specifying whether to ignore frozen areas. The default value is OFF.
+    ignoreFrozenArea: Boolean = OFF
 
     def __init__(
         self,

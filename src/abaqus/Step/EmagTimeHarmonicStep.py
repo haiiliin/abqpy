@@ -97,6 +97,19 @@ class EmagTimeHarmonicStep(AnalysisStep):
         A repository of :py:class:`~abaqus.Load.LoadCase.LoadCase` objects.
     predefinedFieldStates: dict[str, PredefinedFieldState]
         A repository of :py:class:`~abaqus.PredefinedField.PredefinedFieldState.PredefinedFieldState` objects.
+    name
+        A String specifying the repository key.
+    previous
+        A String specifying the name of the previous step. The new step appears after this step
+        in the list of analysis steps.
+    frequencyRange
+        An :py:class:`~abaqus.StepMiscellaneous.EmagTimeHarmonicFrequencyArray.EmagTimeHarmonicFrequencyArray` object.
+    description
+        A String specifying a description of the new step. The default value is an empty string.
+    factorization
+        A SymbolicConstant specifying whether damping terms are to be ignored so that a real,
+        rather than a complex, system matrix is factored. Possible values are REAL_ONLY and
+        COMPLEX. The default value is COMPLEX.
 
     Notes
     -----
@@ -214,6 +227,24 @@ class EmagTimeHarmonicStep(AnalysisStep):
     predefinedFieldStates: dict[str, PredefinedFieldState] = dict[
         str, PredefinedFieldState
     ]()
+
+    # A String specifying the repository key.
+    name: str
+
+    # A String specifying the name of the previous step. The new step appears after this step
+    # in the list of analysis steps.
+    previous: str
+
+    # An :py:class:`~abaqus.StepMiscellaneous.EmagTimeHarmonicFrequencyArray.EmagTimeHarmonicFrequencyArray` object.
+    frequencyRange: EmagTimeHarmonicFrequencyArray
+
+    # A String specifying a description of the new step. The default value is an empty string.
+    description: str = ""
+
+    # A SymbolicConstant specifying whether damping terms are to be ignored so that a real,
+    # rather than a complex, system matrix is factored. Possible values are REAL_ONLY and
+    # COMPLEX. The default value is COMPLEX.
+    factorization: SymbolicConstant = COMPLEX
 
     def __init__(
         self,

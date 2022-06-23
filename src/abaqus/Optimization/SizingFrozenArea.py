@@ -6,6 +6,13 @@ class SizingFrozenArea(GeometricRestriction):
     """The SizingFrozenArea object defines a sizing frozen area geometric restriction.
     The SizingFrozenArea object is derived from the GeometricRestriction object.
 
+    Attributes
+    ----------
+    name
+        A String specifying the geometric restriction repository key.
+    region
+        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+
     Notes
     -----
     This object can be accessed by:
@@ -15,6 +22,12 @@ class SizingFrozenArea(GeometricRestriction):
         import optimization
         mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
+
+    # A String specifying the geometric restriction repository key.
+    name: str
+
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    region: Region
 
     def __init__(self, name: str, region: Region):
         """This method creates a SizingFrozenArea object.

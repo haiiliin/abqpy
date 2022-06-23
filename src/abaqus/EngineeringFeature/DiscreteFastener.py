@@ -14,6 +14,37 @@ class DiscreteFastener(Fastener):
     suppressed: Boolean
         A Boolean specifying whether the fastener is suppressed or not. The default value is
         OFF.
+    name
+        A String specifying the repository key.
+    region
+        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the fastener is applied.
+    influenceRadius
+        The SymbolicConstant WHOLE_SURFACE or a Float specifying the coupling influence radius.
+    ur1
+        A Boolean specifying whether to constrain rotational displacement component about the
+        1-direction. The default value is ON.
+    ur2
+        A Boolean specifying whether to constrain rotational displacement component about the
+        2-direction. The default value is ON.
+    ur3
+        A Boolean specifying whether to constrain rotational displacement component about the
+        3-direction. The default value is ON.
+    coupling
+        A SymbolicConstant specifying the coupling method used to couple the displacement and
+        rotation of each attachment point to the average motion of the surface nodes within the
+        radius of influence from the fastening point. Possible values are CONTINUUM and
+        STRUCTURAL. The default value is CONTINUUM.
+    weightingMethod
+        A SymbolicConstant specifying the weighting scheme to be used to weight the contribution
+        of the displacements of the surface nodes within the radius of influence to the motion
+        of the fastening point. UNIFORM, LINEAR, QUADRATIC, and CUBIC indicate uniform, linear
+        decreasing, quadratic polynomial decreasing, and cubic polynomial monotonic decreasing
+        weight distributions. Possible values are UNIFORM, LINEAR, QUADRATIC, and CUBIC. The
+        default value is UNIFORM.
+    localCsys
+        None or a DatumCsys object specifying the local coordinate system of fastener couplings.
+        If **localCsys** = None, couplings are defined in the global coordinate system. When this
+        member is queried, it returns an Int. The default value is None.
 
     Notes
     -----
@@ -34,6 +65,46 @@ class DiscreteFastener(Fastener):
     # A Boolean specifying whether the fastener is suppressed or not. The default value is
     # OFF.
     suppressed: Boolean = OFF
+
+    # A String specifying the repository key.
+    name: str
+
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the fastener is applied.
+    region: Region
+
+    # The SymbolicConstant WHOLE_SURFACE or a Float specifying the coupling influence radius.
+    influenceRadius: typing.Union[SymbolicConstant, float]
+
+    # A Boolean specifying whether to constrain rotational displacement component about the
+    # 1-direction. The default value is ON.
+    ur1: Boolean = ON
+
+    # A Boolean specifying whether to constrain rotational displacement component about the
+    # 2-direction. The default value is ON.
+    ur2: Boolean = ON
+
+    # A Boolean specifying whether to constrain rotational displacement component about the
+    # 3-direction. The default value is ON.
+    ur3: Boolean = ON
+
+    # A SymbolicConstant specifying the coupling method used to couple the displacement and
+    # rotation of each attachment point to the average motion of the surface nodes within the
+    # radius of influence from the fastening point. Possible values are CONTINUUM and
+    # STRUCTURAL. The default value is CONTINUUM.
+    coupling: SymbolicConstant = CONTINUUM
+
+    # A SymbolicConstant specifying the weighting scheme to be used to weight the contribution
+    # of the displacements of the surface nodes within the radius of influence to the motion
+    # of the fastening point. UNIFORM, LINEAR, QUADRATIC, and CUBIC indicate uniform, linear
+    # decreasing, quadratic polynomial decreasing, and cubic polynomial monotonic decreasing
+    # weight distributions. Possible values are UNIFORM, LINEAR, QUADRATIC, and CUBIC. The
+    # default value is UNIFORM.
+    weightingMethod: SymbolicConstant = UNIFORM
+
+    # None or a DatumCsys object specifying the local coordinate system of fastener couplings.
+    # If **localCsys** = None, couplings are defined in the global coordinate system. When this
+    # member is queried, it returns an Int. The default value is None.
+    localCsys: int = None
 
     def __init__(
         self,

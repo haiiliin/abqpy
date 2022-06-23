@@ -7,6 +7,24 @@ class Growth(GeometricRestriction):
     """The Growth object defines a growth geometric restriction.
     The Growth object is derived from the GeometricRestriction object.
 
+    Attributes
+    ----------
+    name
+        A String specifying the geometric restriction repository key.
+    region
+        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+        When used with a TopologyTask, there is no default value. When used with a ShapeTask,
+        the default value is MODEL.
+    growth
+        A Float specifying the maximum optimization displacement in the growth direction. Either
+        **growth** or **shrink** or both must be specified. The default value is 0.0.
+    presumeFeasibleRegionAtStart
+        A Boolean specifying whether to ignore the geometric restriction in the first design
+        cycle. The default value is ON.
+    shrink
+        A Float specifying the maximum optimization displacement in the shrink direction. Either
+        **growth** or **shrink** or both must be specified The default value is 0.0.
+
     Notes
     -----
     This object can be accessed by:
@@ -16,6 +34,26 @@ class Growth(GeometricRestriction):
         import optimization
         mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
+
+    # A String specifying the geometric restriction repository key.
+    name: str
+
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    # When used with a TopologyTask, there is no default value. When used with a ShapeTask,
+    # the default value is MODEL.
+    region: Region
+
+    # A Float specifying the maximum optimization displacement in the growth direction. Either
+    # **growth** or **shrink** or both must be specified. The default value is 0.0.
+    growth: float = 0
+
+    # A Boolean specifying whether to ignore the geometric restriction in the first design
+    # cycle. The default value is ON.
+    presumeFeasibleRegionAtStart: Boolean = ON
+
+    # A Float specifying the maximum optimization displacement in the shrink direction. Either
+    # **growth** or **shrink** or both must be specified The default value is 0.0.
+    shrink: float = 0
 
     def __init__(
         self,

@@ -1,6 +1,16 @@
 class Radiation:
     """The Radiation object specifies radiation for a contact interaction property.
 
+    Attributes
+    ----------
+    mainEmissivity
+        A Float specifying the emissivity of the main surface.
+    secondaryEmissivity
+        A Float specifying the emissivity of the secondary surface.
+    table
+        A sequence of sequences of Floats specifying the following:Effective viewfactor, FF.Gap
+        clearance, dd.
+
     Notes
     -----
     This object can be accessed by:
@@ -14,6 +24,16 @@ class Radiation:
 
     - GAP RADIATION
     """
+
+    # A Float specifying the emissivity of the main surface.
+    mainEmissivity: float
+
+    # A Float specifying the emissivity of the secondary surface.
+    secondaryEmissivity: float
+
+    # A sequence of sequences of Floats specifying the following:Effective viewfactor, FF.Gap
+    # clearance, dd.
+    table: tuple
 
     def __init__(self, mainEmissivity: float, secondaryEmissivity: float, table: tuple):
         """This method creates a Radiation object.

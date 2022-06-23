@@ -7,6 +7,19 @@ class CompositeSolidSection(Section):
     """The CompositeSolidSection object defines the properties of a composite solid section.
     The CompositeSolidSection object is derived from the Section object.
 
+    Attributes
+    ----------
+    name
+        A String specifying the repository key.
+    layup
+        A :py:class:`~abaqus.Section.SectionLayerArray.SectionLayerArray` object specifying the solid cross-section.
+    symmetric
+        A Boolean specifying whether or not the layup should be made symmetric by the analysis.
+        The default value is OFF.
+    layupName
+        A String specifying the layup name for this section. The default value is an empty
+        string.
+
     Notes
     -----
     This object can be accessed by:
@@ -22,6 +35,20 @@ class CompositeSolidSection(Section):
 
     - SOLID SECTION
     """
+
+    # A String specifying the repository key.
+    name: str
+
+    # A :py:class:`~abaqus.Section.SectionLayerArray.SectionLayerArray` object specifying the solid cross-section.
+    layup: SectionLayerArray
+
+    # A Boolean specifying whether or not the layup should be made symmetric by the analysis.
+    # The default value is OFF.
+    symmetric: Boolean = OFF
+
+    # A String specifying the layup name for this section. The default value is an empty
+    # string.
+    layupName: str = ""
 
     def __init__(
         self,

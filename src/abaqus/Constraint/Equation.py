@@ -12,6 +12,11 @@ class Equation(Constraint):
     suppressed: Boolean
         A Boolean specifying whether the constraint is suppressed or not. The default value is
         OFF.
+    name
+        A String specifying the constraint repository key.
+    terms
+        A sequence of (Float, String, Int, Int) sequences specifying a coefficient, Set name,
+        degree of freedom, and coordinate system ID. The coordinate system ID is optional.
 
     Notes
     -----
@@ -30,6 +35,13 @@ class Equation(Constraint):
     # A Boolean specifying whether the constraint is suppressed or not. The default value is
     # OFF.
     suppressed: Boolean = OFF
+
+    # A String specifying the constraint repository key.
+    name: str
+
+    # A sequence of (Float, String, Int, Int) sequences specifying a coefficient, Set name,
+    # degree of freedom, and coordinate system ID. The coordinate system ID is optional.
+    terms: tuple
 
     def __init__(self, name: str, terms: tuple):
         """This method creates an Equation object.

@@ -14,6 +14,8 @@ class LeafFromPartInstance(Leaf):
     leafType: SymbolicConstant
         A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
         DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
+    partInstanceName
+        A sequence of Strings specifying the names of the part instances.
 
     Notes
     -----
@@ -27,6 +29,9 @@ class LeafFromPartInstance(Leaf):
     # A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
     # DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: SymbolicConstant = None
+
+    # A sequence of Strings specifying the names of the part instances.
+    partInstanceName: tuple
 
     def __init__(self, partInstanceName: tuple):
         """This method creates a Leaf object from a list of part instance names.

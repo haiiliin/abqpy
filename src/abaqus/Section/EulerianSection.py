@@ -5,6 +5,14 @@ class EulerianSection(Section):
     """The EulerianSection object defines the properties of a Eulerian section.
     The EulerianSection object is derived from the Section object.
 
+    Attributes
+    ----------
+    name
+        A String specifying the repository key.
+    data
+        A String-to-String Dictionary specifying a dictionary mapping Material instance names to
+        Material names. Internally the specified mapping gets sorted on Material instance name.
+
     Notes
     -----
     This object can be accessed by:
@@ -20,6 +28,13 @@ class EulerianSection(Section):
 
     - EULERIAN SECTION
     """
+
+    # A String specifying the repository key.
+    name: str
+
+    # A String-to-String Dictionary specifying a dictionary mapping Material instance names to
+    # Material names. Internally the specified mapping gets sorted on Material instance name.
+    data: str
 
     def __init__(self, name: str, data: str):
         """This method creates a EulerianSection object.

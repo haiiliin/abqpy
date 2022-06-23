@@ -17,6 +17,11 @@ class Behavior:
     uniAxialAllName: str
         A String specifying the name of the dataset containing all the raw data in the test data
         file. Only valid if the behavior is of type FeFpBehavior
+    name
+        A String specifying the name of the new behavior.
+    typeName
+        A String specifying the type of the new Behavior. Values can be "ElasIsoBehavior",
+        "ElasPlasIsoBehavior", "FeFpBehavior", or a user plug-in behavior type.
 
     Notes
     -----
@@ -41,6 +46,13 @@ class Behavior:
     # A String specifying the name of the dataset containing all the raw data in the test data
     # file. Only valid if the behavior is of type FeFpBehavior
     uniAxialAllName: str = ""
+
+    # A String specifying the name of the new behavior.
+    name: str
+
+    # A String specifying the type of the new Behavior. Values can be "ElasIsoBehavior",
+    # "ElasPlasIsoBehavior", "FeFpBehavior", or a user plug-in behavior type.
+    typeName: str
 
     def __init__(self, name: str, typeName: str):
         """This method creates a Behavior object.

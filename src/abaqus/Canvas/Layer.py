@@ -22,6 +22,10 @@ class Layer:
         A :py:class:`~abaqus.DisplayOptions.:py:class:`~abaqus.Part.Part.Part`DisplayOptions.:py:class:`~abaqus.Part.Part.Part`DisplayOptions` object specifying the display options for the :py:class:`~abaqus.Part.Part.Part` object.
     assemblyDisplay: AssemblyDisplayOptions
         An :py:class:`~abaqus.DisplayOptions.:py:class:`~abaqus.Assembly.Assembly.Assembly`DisplayOptions.:py:class:`~abaqus.Assembly.Assembly.Assembly`DisplayOptions` object specifying the display options for the :py:class:`~abaqus.Assembly.Assembly.Assembly` object.
+    name
+        A String specifying the repository key.
+    copyViewName
+        A String specifying the name of the layer to copy.
 
     Notes
     -----
@@ -48,6 +52,12 @@ class Layer:
 
     # An :py:class:`~abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions` object specifying the display options for the Assembly object.
     assemblyDisplay: AssemblyDisplayOptions = AssemblyDisplayOptions()
+
+    # A String specifying the repository key.
+    name: str
+
+    # A String specifying the name of the layer to copy.
+    copyViewName: str = ""
 
     def __init__(self, name: str, copyViewName: str = ""):
         """This method creates a Layer object in the Layer repository.

@@ -40,6 +40,48 @@ class ViewCut:
         A Boolean specifying whether the cut is displayed.
     cutRange: tuple[float]
         A pair of Floats specifying the acceptable range for positioning the cut.
+    name
+        A String specifying the repository key.
+    shape
+        A SymbolicConstant specifying the shape of the ViewCut object. Possible values are
+        PLANE, CYLINDER, SPHERE, and ISOSURFACE.
+    origin
+        A sequence of three Floats specifying the X-, Y-, and Z-coordinates of the origin of the
+        plane, cylinder or sphere cut. This origin is not required if the cut shape is
+        ISOSURFACE or if the cut is defined by the **csysName** argument.
+    normal
+        A sequence of Floats specifying the X-, Y-, and Z-coordinates of the normal axis to the
+        plane defining the cut, when the plane is defined using the **origin** argument or a
+        SymbolicConstant defining this normal axis, when the cut is defined by the **csysName**
+        argument. Possible values are AXIS_1, AXIS_2, AXIS_3. This axis is not required if the
+        cut **shape** is CYLINDER, SPHERE or ISOSURFACE.
+    axis2
+        A sequence of three Floats specifying the X-, Y-, and Z-coordinates of the second axis
+        of the plane defining the cut, when the plane is defined using the **origin** argument or
+        a SymbolicConstant defining this second axis, when the cut is defined by the **csysName**
+        argument. Possible values are AXIS_1, AXIS_2, AXIS_3. This axis is used to rotate the
+        plane cut. It is not required if the cut **shape** is CYLINDER, SPHERE or ISOSURFACE.
+    csysName
+        A String specifying the name of the DatumCsys object to be used to define the cut. This
+        name is not required if the cut **shape** is ISOSURFACE or if the cut is defined by the
+        **origin** argument.
+    cylinderAxis
+        A sequence of Floats specifying the X-, Y-, and Z-coordinates of the cylinder axis
+        defining the cut, when the cut is defined using the **origin** argument or a
+        SymbolicConstant defining this cylinder axis, when the cut is defined by the **csysName**
+        argument. Possible values are AXIS_1, AXIS_2, AXIS_3. This axis is not required if the
+        cut **shape** is PLANE, SPHERE, or ISOSURFACE.
+    followDeformation
+        A Boolean specifying whether the cut will follow the deformation or be static. The
+        default value is OFF.
+    overrideAveraging
+        A Boolean specifying averaging for element based fields associated with isosurface cuts
+        will be set to compute-average with a threshold of 100% when true. The current field
+        options will be used when false. The default value is ON.
+    referenceFrame
+        A SymbolicConstant specifying which reference frame will be used when the cut follows
+        the deformation. Possible values are FIRST_FRAME, LAST_FRAME, and CURRENT_FRAME. The
+        default value is FIRST_FRAME.
 
     Notes
     -----
@@ -92,6 +134,58 @@ class ViewCut:
 
     # A pair of Floats specifying the acceptable range for positioning the cut.
     cutRange: tuple[float] = ()
+
+    # A String specifying the repository key.
+    name: str
+
+    # A SymbolicConstant specifying the shape of the ViewCut object. Possible values are
+    # PLANE, CYLINDER, SPHERE, and ISOSURFACE.
+    shape: SymbolicConstant
+
+    # A sequence of three Floats specifying the X-, Y-, and Z-coordinates of the origin of the
+    # plane, cylinder or sphere cut. This origin is not required if the cut shape is
+    # ISOSURFACE or if the cut is defined by the **csysName** argument.
+    origin: tuple
+
+    # A sequence of Floats specifying the X-, Y-, and Z-coordinates of the normal axis to the
+    # plane defining the cut, when the plane is defined using the **origin** argument or a
+    # SymbolicConstant defining this normal axis, when the cut is defined by the **csysName**
+    # argument. Possible values are AXIS_1, AXIS_2, AXIS_3. This axis is not required if the
+    # cut **shape** is CYLINDER, SPHERE or ISOSURFACE.
+    normal: typing.Union[SymbolicConstant, float]
+
+    # A sequence of three Floats specifying the X-, Y-, and Z-coordinates of the second axis
+    # of the plane defining the cut, when the plane is defined using the **origin** argument or
+    # a SymbolicConstant defining this second axis, when the cut is defined by the **csysName**
+    # argument. Possible values are AXIS_1, AXIS_2, AXIS_3. This axis is used to rotate the
+    # plane cut. It is not required if the cut **shape** is CYLINDER, SPHERE or ISOSURFACE.
+    axis2: typing.Union[SymbolicConstant, float]
+
+    # A String specifying the name of the DatumCsys object to be used to define the cut. This
+    # name is not required if the cut **shape** is ISOSURFACE or if the cut is defined by the
+    # **origin** argument.
+    csysName: str
+
+    # A sequence of Floats specifying the X-, Y-, and Z-coordinates of the cylinder axis
+    # defining the cut, when the cut is defined using the **origin** argument or a
+    # SymbolicConstant defining this cylinder axis, when the cut is defined by the **csysName**
+    # argument. Possible values are AXIS_1, AXIS_2, AXIS_3. This axis is not required if the
+    # cut **shape** is PLANE, SPHERE, or ISOSURFACE.
+    cylinderAxis: typing.Union[SymbolicConstant, float]
+
+    # A Boolean specifying whether the cut will follow the deformation or be static. The
+    # default value is OFF.
+    followDeformation: Boolean = OFF
+
+    # A Boolean specifying averaging for element based fields associated with isosurface cuts
+    # will be set to compute-average with a threshold of 100% when true. The current field
+    # options will be used when false. The default value is ON.
+    overrideAveraging: Boolean = ON
+
+    # A SymbolicConstant specifying which reference frame will be used when the cut follows
+    # the deformation. Possible values are FIRST_FRAME, LAST_FRAME, and CURRENT_FRAME. The
+    # default value is FIRST_FRAME.
+    referenceFrame: SymbolicConstant = FIRST_FRAME
 
     def __init__(
         self,

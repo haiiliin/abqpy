@@ -2,6 +2,13 @@ class BaselineCorrection:
     """The BaselineCorrection object modifies an acceleration history to minimize the overall
     drift of the displacement obtained from the time integration of the given acceleration.
 
+    Attributes
+    ----------
+    intervals
+        A sequence of Floats specifying the correction time interval end points. Possible values
+        are positive and monotonically increasing Floats. The default value is an empty
+        sequence.
+
     Notes
     -----
     This object can be accessed by:
@@ -17,6 +24,11 @@ class BaselineCorrection:
 
     - BASELINE CORRECTION
     """
+
+    # A sequence of Floats specifying the correction time interval end points. Possible values
+    # are positive and monotonically increasing Floats. The default value is an empty
+    # sequence.
+    intervals: tuple = ()
 
     def __init__(self, intervals: tuple = ()):
         """This method creates a BaselineCorrection object.

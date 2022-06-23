@@ -7,6 +7,21 @@ class TextStyle:
     TextStyle objects are automatically created when creating a chart or can be created with
     methods described below.
 
+    Attributes
+    ----------
+    color
+        A String specifying the color to be used when drawing text with this TextStyle object.
+        The default value is "White".
+    show
+        A Boolean specifying whether to draw the text when using this TextStyle object. The
+        default value is ON.
+    font
+        A String specifying the name of the font to be used when drawing text with this
+        TextStyle object. The default value is "-*-verdana-medium-r-normal-*-*-120-*-*-p-*-*-*".
+    rotationAngle
+        A Float specifying the angle in degrees used for displaying the text. The default value
+        is 0.0.
+
     Notes
     -----
     This object can be accessed by:
@@ -38,6 +53,22 @@ class TextStyle:
         session.xyPlots[name].charts[name].tagTextStyle
         session.xyPlots[name].title.titleStyle
     """
+
+    # A String specifying the color to be used when drawing text with this TextStyle object.
+    # The default value is "White".
+    color: str = ""
+
+    # A Boolean specifying whether to draw the text when using this TextStyle object. The
+    # default value is ON.
+    show: Boolean = ON
+
+    # A String specifying the name of the font to be used when drawing text with this
+    # TextStyle object. The default value is "-*-verdana-medium-r-normal-*-*-120-*-*-p-*-*-*".
+    font: str = ""
+
+    # A Float specifying the angle in degrees used for displaying the text. The default value
+    # is 0.0.
+    rotationAngle: float = 0
 
     def __init__(
         self,

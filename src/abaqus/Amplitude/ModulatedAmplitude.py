@@ -6,6 +6,26 @@ class ModulatedAmplitude(Amplitude):
     """The ModulatedAmplitude object defines a modulated amplitude curve.
     The ModulatedAmplitude object is derived from the Amplitude object.
 
+    Attributes
+    ----------
+    name
+        A String specifying the repository key.
+    initial
+        A Float specifying the constant A0A0.
+    magnitude
+        A Float specifying the coefficient AA.
+    start
+        A Float specifying the starting time t0t0. Possible values are non-negative numbers.
+    frequency1
+        A Float specifying the circular frequency 1 (ω1ω1). Possible values are positive
+        numbers.
+    frequency2
+        A Float specifying the circular frequency 2 (ω2ω2). Possible values are positive
+        numbers.
+    timeSpan
+        A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+        and TOTAL. The default value is STEP.
+
     Notes
     -----
     This object can be accessed by:
@@ -21,6 +41,30 @@ class ModulatedAmplitude(Amplitude):
 
     - AMPLITUDE
     """
+
+    # A String specifying the repository key.
+    name: str
+
+    # A Float specifying the constant A0A0.
+    initial: float
+
+    # A Float specifying the coefficient AA.
+    magnitude: float
+
+    # A Float specifying the starting time t0t0. Possible values are non-negative numbers.
+    start: float
+
+    # A Float specifying the circular frequency 1 (ω1ω1). Possible values are positive
+    # numbers.
+    frequency1: float
+
+    # A Float specifying the circular frequency 2 (ω2ω2). Possible values are positive
+    # numbers.
+    frequency2: float
+
+    # A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+    # and TOTAL. The default value is STEP.
+    timeSpan: SymbolicConstant = STEP
 
     def __init__(
         self,

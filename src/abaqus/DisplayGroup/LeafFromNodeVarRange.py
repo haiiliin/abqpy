@@ -14,6 +14,15 @@ class LeafFromNodeVarRange(Leaf):
     leafType: SymbolicConstant
         A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
         DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
+    minimumRange
+        A Float specifying the minimum value for the variable range. The default value is
+        −3.40282346639E38.
+    maximumRange
+        A Float specifying the maximum value for the variable range. The default value is
+        3.40282346639e+038.
+    insideRange
+        A Boolean specifying the method used to evaluate the range. If **insideRange** = ON, the
+        range falls inside the specified minimum and maximum values. The default value is ON.
 
     Notes
     -----
@@ -27,6 +36,18 @@ class LeafFromNodeVarRange(Leaf):
     # A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
     # DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: SymbolicConstant = None
+
+    # A Float specifying the minimum value for the variable range. The default value is
+    # −3.40282346639E38.
+    minimumRange: float = None
+
+    # A Float specifying the maximum value for the variable range. The default value is
+    # 3.40282346639e+038.
+    maximumRange: float = 3
+
+    # A Boolean specifying the method used to evaluate the range. If **insideRange** = ON, the
+    # range falls inside the specified minimum and maximum values. The default value is ON.
+    insideRange: Boolean = ON
 
     def __init__(
         self,

@@ -7,6 +7,26 @@ class FluidExchange(Interaction):
     between a fluid cavity and its environment.
     The FluidExchange object is derived from the Interaction object.
 
+    Attributes
+    ----------
+    name
+        A String specifying the repository key.
+    createStepName
+        A String specifying the name of the step in which the FluidExchange object is created.
+    firstCavity
+        A String specifying the first FluidCavity object associated with this interaction. This
+        will be the only cavity specified if **definition** = TO_ENVIRONMENT.
+    interactionProperty
+        A String specifying the FluidExchangeProperty object associated with this interaction.
+    definition
+        A SymbolicConstant specifying the type of fluid exchange to be defined. Possible values
+        are TO_ENVIRONMENT and BETWEEN_CAVITIES. The default value is TO_ENVIRONMENT.
+    secondCavity
+        A String specifying the second FluidCavity object associated with this interaction. This
+        argument is applicable only when **definition** = BETWEEN_CAVITIES.
+    exchangeArea
+        A Float specifying the effective exchange area. The default value is 1.0.
+
     Notes
     -----
     This object can be accessed by:
@@ -20,6 +40,30 @@ class FluidExchange(Interaction):
 
     - FLUID EXCHANGE
     """
+
+    # A String specifying the repository key.
+    name: str
+
+    # A String specifying the name of the step in which the FluidExchange object is created.
+    createStepName: str
+
+    # A String specifying the first FluidCavity object associated with this interaction. This
+    # will be the only cavity specified if **definition** = TO_ENVIRONMENT.
+    firstCavity: str
+
+    # A String specifying the FluidExchangeProperty object associated with this interaction.
+    interactionProperty: str
+
+    # A SymbolicConstant specifying the type of fluid exchange to be defined. Possible values
+    # are TO_ENVIRONMENT and BETWEEN_CAVITIES. The default value is TO_ENVIRONMENT.
+    definition: SymbolicConstant = TO_ENVIRONMENT
+
+    # A String specifying the second FluidCavity object associated with this interaction. This
+    # argument is applicable only when **definition** = BETWEEN_CAVITIES.
+    secondCavity: str = ""
+
+    # A Float specifying the effective exchange area. The default value is 1.0.
+    exchangeArea: float = 1
 
     def __init__(
         self,

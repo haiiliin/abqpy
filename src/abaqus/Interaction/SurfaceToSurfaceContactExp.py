@@ -11,6 +11,60 @@ class SurfaceToSurfaceContactExp(Interaction):
     Abaqus/Explicit analysis.
     The SurfaceToSurfaceContactExp object is derived from the Interaction object.
 
+    Attributes
+    ----------
+    name
+        A String specifying the repository key.
+    createStepName
+        A String specifying the name of the step in which the SurfaceToSurfaceContactExp object
+        is created.
+    main
+        A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
+    secondary
+        A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
+    sliding
+        A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
+        SMALL.
+    interactionProperty
+        A String specifying the name of the ContactProperty object associated with this
+        interaction.
+    mechanicalConstraint
+        A SymbolicConstant specifying the mechanical constraint formulation. Possible values are
+        KINEMATIC and PENALTY. The default value is KINEMATIC.
+    weightingFactorType
+        A SymbolicConstant specifying the weighting for node-to-face contact. Possible values
+        are DEFAULT and SPECIFIED. The default value is DEFAULT.
+    weightingFactor
+        A Float specifying the weighting factor for the contact surfaces when
+        **weightingFactorType** = SPECIFIED. The default value is 0.0.
+    contactControls
+        A String specifying the name of the ContactControl object associated with this
+        interaction. An empty string indicates that the default contact controls will be used.
+        The default value is an empty string.
+    initialClearance
+        A SymbolicConstant or a Float specifying the initial clearance at regions of contact.
+        Possible values are OMIT and COMPUTED. The default value is OMIT.
+    halfThreadAngle
+        None or a sequence of Floats specifying the half thread angle used for bolt clearance.
+        The default value is None.
+    pitch
+        None or a sequence of Floats specifying the pitch used for bolt clearance. The default
+        value is None.
+    majorBoltDiameter
+        The SymbolicConstant COMPUTED or a Float specifying the major diameter of the bolt used
+        for bolt clearance. The default value is COMPUTED.
+    meanBoltDiameter
+        The SymbolicConstant COMPUTED or a Float specifying the mean diameter of the bolt used
+        for bolt clearance. The default value is COMPUTED.
+    datumAxis
+        A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the bolt hole when specifying bolt
+        clearance.
+    useReverseDatumAxis
+        A Boolean specifying whether to reverse the bolt clearance direction given by the datum
+        axis. The default value is OFF.
+    clearanceRegion
+        A :py:class:`~abaqus.Region.Region.Region` object specifying the contact region for which clearance is specified.
+
     Notes
     -----
     This object can be accessed by:
@@ -20,6 +74,75 @@ class SurfaceToSurfaceContactExp(Interaction):
         import interaction
         mdb.models[name].interactions[name]
     """
+
+    # A String specifying the repository key.
+    name: str
+
+    # A String specifying the name of the step in which the SurfaceToSurfaceContactExp object
+    # is created.
+    createStepName: str
+
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
+    main: Region
+
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
+    secondary: Region
+
+    # A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
+    # SMALL.
+    sliding: SymbolicConstant
+
+    # A String specifying the name of the ContactProperty object associated with this
+    # interaction.
+    interactionProperty: str
+
+    # A SymbolicConstant specifying the mechanical constraint formulation. Possible values are
+    # KINEMATIC and PENALTY. The default value is KINEMATIC.
+    mechanicalConstraint: SymbolicConstant = KINEMATIC
+
+    # A SymbolicConstant specifying the weighting for node-to-face contact. Possible values
+    # are DEFAULT and SPECIFIED. The default value is DEFAULT.
+    weightingFactorType: SymbolicConstant = DEFAULT
+
+    # A Float specifying the weighting factor for the contact surfaces when
+    # **weightingFactorType** = SPECIFIED. The default value is 0.0.
+    weightingFactor: float = 0
+
+    # A String specifying the name of the ContactControl object associated with this
+    # interaction. An empty string indicates that the default contact controls will be used.
+    # The default value is an empty string.
+    contactControls: str = ""
+
+    # A SymbolicConstant or a Float specifying the initial clearance at regions of contact.
+    # Possible values are OMIT and COMPUTED. The default value is OMIT.
+    initialClearance: typing.Union[SymbolicConstant, float] = OMIT
+
+    # None or a sequence of Floats specifying the half thread angle used for bolt clearance.
+    # The default value is None.
+    halfThreadAngle: str = None
+
+    # None or a sequence of Floats specifying the pitch used for bolt clearance. The default
+    # value is None.
+    pitch: str = None
+
+    # The SymbolicConstant COMPUTED or a Float specifying the major diameter of the bolt used
+    # for bolt clearance. The default value is COMPUTED.
+    majorBoltDiameter: typing.Union[SymbolicConstant, float] = COMPUTED
+
+    # The SymbolicConstant COMPUTED or a Float specifying the mean diameter of the bolt used
+    # for bolt clearance. The default value is COMPUTED.
+    meanBoltDiameter: typing.Union[SymbolicConstant, float] = COMPUTED
+
+    # A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the bolt hole when specifying bolt
+    # clearance.
+    datumAxis: DatumAxis = None
+
+    # A Boolean specifying whether to reverse the bolt clearance direction given by the datum
+    # axis. The default value is OFF.
+    useReverseDatumAxis: Boolean = OFF
+
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the contact region for which clearance is specified.
+    clearanceRegion: Region = None
 
     def __init__(
         self,

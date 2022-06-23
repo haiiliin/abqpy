@@ -64,6 +64,8 @@ class HistoryPoint:
         An :py:class:`~abaqus.Odb.OdbAssembly.OdbAssembly` object specifying the assembly for which the data are to be collected.
     instance: OdbInstance
         An :py:class:`~abaqus.Odb.OdbInstance.OdbInstance` object specifying the instance for which the data are to be collected.
+    node
+        An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object specifying the node for which the data are to be collected.
 
     Notes
     -----
@@ -132,7 +134,9 @@ class HistoryPoint:
         "instance", OdbPart("part", THREE_D, DEFORMABLE_BODY)
     )
 
-    @typing.overload
+    # An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object specifying the node for which the data are to be collected.
+    node: OdbMeshNode
+
     def __init__(self, node: OdbMeshNode):
         """This method creates a HistoryPoint object for a node.
 
@@ -156,7 +160,6 @@ class HistoryPoint:
         """
         pass
 
-    @typing.overload
     def __init__(
         self,
         element: OdbMeshElement,
@@ -214,7 +217,6 @@ class HistoryPoint:
         """
         pass
 
-    @typing.overload
     def __init__(self, region: OdbSet):
         """This method creates a HistoryPoint object for a region.
 
@@ -238,7 +240,6 @@ class HistoryPoint:
         """
         pass
 
-    @typing.overload
     def __init__(self, assembly: OdbAssembly):
         """This method creates a HistoryPoint object for the OdbAssembly object.
 
@@ -262,7 +263,6 @@ class HistoryPoint:
         """
         pass
 
-    @typing.overload
     def __init__(self, instance: OdbInstance):
         """This method creates a HistoryPoint object for the OdbInstance object.
 

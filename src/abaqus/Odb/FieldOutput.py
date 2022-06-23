@@ -29,6 +29,32 @@ class FieldOutput:
         by :py:class:`~.the` Abaqus Scripting Interface; see :py:class:`~.the` **data** argument to
         :py:class:`~.the` addData method for a
         description of :py:class:`~.the` order.
+    name
+        A String specifying the output variable name.
+    description
+        A String specifying the output variable. Colon (:) should not be used as a part of the
+        field output description.
+    type
+        A SymbolicConstant specifying the output type. Possible values are SCALAR, VECTOR,
+        TENSOR_3D_FULL, TENSOR_3D_PLANAR, TENSOR_3D_SURFACE, TENSOR_2D_PLANAR, and
+        TENSOR_2D_SURFACE.
+    componentLabels
+        A sequence of Strings specifying the labels for each component of the value. The length
+        of the sequence must match the type. If **type** = TENSOR, the default value is **name** with
+        the suffixes ('11', '22', '33', '12', '13', '23'). If **type** = VECTOR, the default value
+        is **name** with the suffixes ('1', '2', '3'). If **type** = SCALAR, the default value is an
+        empty sequence.
+    validInvariants
+        A sequence of SymbolicConstants specifying which invariants should be calculated for
+        this field. An empty sequence indicates that no invariants are valid for this field.
+        Possible values
+        are:MAGNITUDEMISESTRESCAPRESSINV3MAX_PRINCIPALMID_PRINCIPALMIN_PRINCIPALMAX_INPLANE_PRINCIPALMIN_INPLANE_PRINCIPALOUTOFPLANE_PRINCIPALThe
+        default value is an empty sequence.
+    isEngineeringTensor
+        A Boolean specifying whether the field is an engineering tensor or not. Setting
+        isEngineeringTensor to true makes a tensor field behave as a strain like quantity where
+        the off-diagonal components of tensor are halved for invariants computation. This
+        parameter applies only to tensor field outputs. The default value is OFF.
 
     Notes
     -----
@@ -59,7 +85,38 @@ class FieldOutput:
     # description of the order.
     values: FieldValueArray = None
 
-    @typing.overload
+    # A String specifying the output variable name.
+    name: str
+
+    # A String specifying the output variable. Colon (:) should not be used as a part of the
+    # field output description.
+    description: str
+
+    # A SymbolicConstant specifying the output type. Possible values are SCALAR, VECTOR,
+    # TENSOR_3D_FULL, TENSOR_3D_PLANAR, TENSOR_3D_SURFACE, TENSOR_2D_PLANAR, and
+    # TENSOR_2D_SURFACE.
+    type: SymbolicConstant
+
+    # A sequence of Strings specifying the labels for each component of the value. The length
+    # of the sequence must match the type. If **type** = TENSOR, the default value is **name** with
+    # the suffixes ('11', '22', '33', '12', '13', '23'). If **type** = VECTOR, the default value
+    # is **name** with the suffixes ('1', '2', '3'). If **type** = SCALAR, the default value is an
+    # empty sequence.
+    componentLabels: tuple = ()
+
+    # A sequence of SymbolicConstants specifying which invariants should be calculated for
+    # this field. An empty sequence indicates that no invariants are valid for this field.
+    # Possible values
+    # are:MAGNITUDEMISESTRESCAPRESSINV3MAX_PRINCIPALMID_PRINCIPALMIN_PRINCIPALMAX_INPLANE_PRINCIPALMIN_INPLANE_PRINCIPALOUTOFPLANE_PRINCIPALThe
+    # default value is an empty sequence.
+    validInvariants: SymbolicConstant = None
+
+    # A Boolean specifying whether the field is an engineering tensor or not. Setting
+    # isEngineeringTensor to true makes a tensor field behave as a strain like quantity where
+    # the off-diagonal components of tensor are halved for invariants computation. This
+    # parameter applies only to tensor field outputs. The default value is OFF.
+    isEngineeringTensor: Boolean = OFF
+
     def __init__(
         self,
         name: str,
@@ -115,7 +172,6 @@ class FieldOutput:
         """
         pass
 
-    @typing.overload
     def __init__(self, field: "FieldOutput", name: str = "", description: str = ""):
         """This method creates a FieldOutput object from an existing FieldOutput object of the same
         output database.

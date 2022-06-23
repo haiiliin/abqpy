@@ -2,6 +2,14 @@ class SectionPoint:
     """The SectionPoint object describes the location of a section point within a section
     category. 
 
+    Attributes
+    ----------
+    number
+        An Int specifying the number of the section point. See Beam elements and Shell elements
+        for the numbering convention.
+    description
+        A String specifying the description of the section point.
+
     Notes
     -----
     This object can be accessed by:
@@ -31,6 +39,13 @@ class SectionPoint:
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.surfaces[name].elements[i].sectionCategory.sectionPoints[i]
         session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].sectionPoint
     """
+
+    # An Int specifying the number of the section point. See Beam elements and Shell elements
+    # for the numbering convention.
+    number: int
+
+    # A String specifying the description of the section point.
+    description: str
 
     def __init__(self, number: int, description: str):
         """This method creates a SectionPoint object.

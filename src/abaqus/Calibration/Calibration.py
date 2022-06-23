@@ -12,6 +12,8 @@ class Calibration:
         A :py:class:`~abaqus.Calibration.DataSet.DataSet` object.
     behaviors: Behavior
         A :py:class:`~abaqus.Calibration.Behavior.Behavior` object.
+    name
+        A String specifying the name of the new calibration.
 
     Notes
     -----
@@ -28,6 +30,9 @@ class Calibration:
 
     # A :py:class:`~abaqus.Calibration.Behavior.Behavior` object.
     behaviors: Behavior = None
+
+    # A String specifying the name of the new calibration.
+    name: str
 
     def __init__(self, name: str):
         """This method creates a Calibration object.

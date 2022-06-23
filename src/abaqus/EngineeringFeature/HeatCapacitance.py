@@ -12,6 +12,17 @@ class HeatCapacitance(Inertia):
     ----------
     suppressed: Boolean
         A Boolean specifying whether the inertia is suppressed or not. The default value is OFF.
+    name
+        A String specifying the repository key.
+    region
+        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the heat capacitance is applied.
+    table
+        A sequence of sequences of Floats specifying heat capacitance properties. The items in
+        the table data are described below.
+    temperatureDependency
+        A Boolean specifying whether the data depend on temperature. The default value is OFF.
+    dependencies
+        An Int specifying the number of field variable dependencies. The default value is 0.
 
     Notes
     -----
@@ -39,6 +50,22 @@ class HeatCapacitance(Inertia):
 
     # A Boolean specifying whether the inertia is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
+
+    # A String specifying the repository key.
+    name: str
+
+    # A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the heat capacitance is applied.
+    region: Region
+
+    # A sequence of sequences of Floats specifying heat capacitance properties. The items in
+    # the table data are described below.
+    table: tuple
+
+    # A Boolean specifying whether the data depend on temperature. The default value is OFF.
+    temperatureDependency: Boolean = OFF
+
+    # An Int specifying the number of field variable dependencies. The default value is 0.
+    dependencies: int = 0
 
     def __init__(
         self,
