@@ -2285,7 +2285,7 @@ general analysis step.</p>
 <h4>LoadState<a class="headerlink" href="#loadstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.LoadState.LoadState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LoadState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/LoadState.py#L4-L59"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.LoadState.LoadState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LoadState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/LoadState.py#L4-L60"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.LoadState.LoadState" title="Permalink to this definition">#</a></dt>
 <dd><p>The LoadState object is the abstract base type for other LoadState objects. The
 LoadState object has no explicit constructor or methods. The members of the LoadState
 object are common to all objects derived from LoadState.</p>
@@ -2341,16 +2341,18 @@ values are UNSET, SET, UNCHANGED, and FREED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.LoadState.LoadState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/LoadState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.LoadState.LoadState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -2484,7 +2486,7 @@ argument only if it is valid for the specified step.</p>
 <h4>BodyChargeState<a class="headerlink" href="#bodychargestate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.BodyChargeState.BodyChargeState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BodyChargeState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/BodyChargeState.py#L5-L78"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.BodyChargeState.BodyChargeState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BodyChargeState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/BodyChargeState.py#L5-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.BodyChargeState.BodyChargeState" title="Permalink to this definition">#</a></dt>
 <dd><p>The BodyChargeState object stores the propagating data of a body charge in a step. One
 instance of this object is created internally by the BodyCharge object for each step.
 The instance is also deleted internally by the BodyCharge object.
@@ -2564,16 +2566,18 @@ values are UNSET, SET, UNCHANGED, and FREED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.BodyChargeState.BodyChargeState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/BodyChargeState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.BodyChargeState.BodyChargeState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -2708,7 +2712,7 @@ is valid for the specified step.</p>
 <h4>BodyConcentrationFluxState<a class="headerlink" href="#bodyconcentrationfluxstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.BodyConcentrationFluxState.BodyConcentrationFluxState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BodyConcentrationFluxState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/BodyConcentrationFluxState.py#L5-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.BodyConcentrationFluxState.BodyConcentrationFluxState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BodyConcentrationFluxState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/BodyConcentrationFluxState.py#L5-L80"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.BodyConcentrationFluxState.BodyConcentrationFluxState" title="Permalink to this definition">#</a></dt>
 <dd><p>The BodyConcentrationFluxState object stores the propagating data for a
 BodyConcentrationFlux object in a step. One instance of this object is created
 internally by the BodyConcentrationFlux object for each step. The instance is also
@@ -2789,16 +2793,18 @@ magnitude. Possible values are UNSET, SET, UNCHANGED, and MODIFIED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.BodyConcentrationFluxState.BodyConcentrationFluxState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/BodyConcentrationFluxState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.BodyConcentrationFluxState.BodyConcentrationFluxState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -3044,7 +3050,7 @@ argument only if it is valid for the specified step.</p>
 <h4>BodyCurrentState<a class="headerlink" href="#bodycurrentstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.BodyCurrentState.BodyCurrentState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BodyCurrentState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/BodyCurrentState.py#L5-L78"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.BodyCurrentState.BodyCurrentState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BodyCurrentState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/BodyCurrentState.py#L5-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.BodyCurrentState.BodyCurrentState" title="Permalink to this definition">#</a></dt>
 <dd><p>The BodyCurrentState object stores the propagating data of a body current in a step. One
 instance of this object is created internally by the BodyCurrent object for each step.
 The instance is also deleted internally by the BodyCurrent object.
@@ -3124,16 +3130,18 @@ values are UNSET, SET, UNCHANGED, and FREED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.BodyCurrentState.BodyCurrentState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/BodyCurrentState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.BodyCurrentState.BodyCurrentState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -3289,7 +3297,7 @@ argument only if it is valid for the specified step.</p>
 <h4>BodyForceState<a class="headerlink" href="#bodyforcestate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.BodyForceState.BodyForceState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BodyForceState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/BodyForceState.py#L5-L102"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.BodyForceState.BodyForceState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BodyForceState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/BodyForceState.py#L5-L103"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.BodyForceState.BodyForceState" title="Permalink to this definition">#</a></dt>
 <dd><p>The BodyForceState object stores the propagating data of a body force in a step. One
 instance of this object is created internally by the BodyForce object for each step. The
 instance is also deleted internally by the BodyForce object.
@@ -3405,16 +3413,18 @@ values are UNSET, SET, UNCHANGED, and FREED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.BodyForceState.BodyForceState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/BodyForceState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.BodyForceState.BodyForceState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -3548,7 +3558,7 @@ is valid for the specified step.</p>
 <h4>BodyHeatFluxState<a class="headerlink" href="#bodyheatfluxstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.BodyHeatFluxState.BodyHeatFluxState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BodyHeatFluxState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/BodyHeatFluxState.py#L5-L78"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.BodyHeatFluxState.BodyHeatFluxState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BodyHeatFluxState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/BodyHeatFluxState.py#L5-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.BodyHeatFluxState.BodyHeatFluxState" title="Permalink to this definition">#</a></dt>
 <dd><p>The BodyHeatFluxState object stores the propagating data for a Body BodyHeatFlux object
 in a step. One instance of this object is created internally by the BodyHeatFlux object
 for each step. The instance is also deleted internally by the BodyHeatFlux object.
@@ -3628,16 +3638,18 @@ Possible values are UNSET, SET, UNCHANGED, and MODIFIED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.BodyHeatFluxState.BodyHeatFluxState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/BodyHeatFluxState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.BodyHeatFluxState.BodyHeatFluxState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -3780,7 +3792,7 @@ argument only if it is valid for the specified step.</p>
 <h4>BoltLoadState<a class="headerlink" href="#boltloadstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.BoltLoadState.BoltLoadState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BoltLoadState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/BoltLoadState.py#L5-L93"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.BoltLoadState.BoltLoadState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BoltLoadState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/BoltLoadState.py#L5-L94"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.BoltLoadState.BoltLoadState" title="Permalink to this definition">#</a></dt>
 <dd><p>The BoltLoadState object stores the propagating data of a bolt load in a step. One
 instance of this object is created internally by the BoltLoad object for each step. The
 instance is also deleted internally by the BoltLoad object.
@@ -3886,16 +3898,18 @@ values are UNSET, SET, UNCHANGED, and MODIFIED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.BoltLoadState.BoltLoadState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/BoltLoadState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.BoltLoadState.BoltLoadState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -4277,7 +4291,7 @@ argument only if it is valid for the specified step.</p>
 <h4>ConcCurrentState<a class="headerlink" href="#conccurrentstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.ConcCurrentState.ConcCurrentState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConcCurrentState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ConcCurrentState.py#L5-L78"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ConcCurrentState.ConcCurrentState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConcCurrentState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ConcCurrentState.py#L5-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ConcCurrentState.ConcCurrentState" title="Permalink to this definition">#</a></dt>
 <dd><p>The ConcCurrentState object stores the propagating data of a concentrated current in a
 step. One instance of this object is created internally by the ConcCurrent object for
 each step. The instance is also deleted internally by the ConcCurrent object.
@@ -4357,16 +4371,18 @@ values are UNSET, SET, UNCHANGED, and FREED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.ConcCurrentState.ConcCurrentState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ConcCurrentState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ConcCurrentState.ConcCurrentState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -4376,7 +4392,7 @@ values are:
 <h4>ConcentratedChargeState<a class="headerlink" href="#concentratedchargestate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.ConcentratedChargeState.ConcentratedChargeState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConcentratedChargeState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ConcentratedChargeState.py#L5-L78"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ConcentratedChargeState.ConcentratedChargeState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConcentratedChargeState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ConcentratedChargeState.py#L5-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ConcentratedChargeState.ConcentratedChargeState" title="Permalink to this definition">#</a></dt>
 <dd><p>The ConcentratedChargeState object stores the propagating data of a concentrated charge
 in a step. One instance of this object is created internally by the ConcCharge object
 for each step. The instance is also deleted internally by the ConcCharge object.
@@ -4456,16 +4472,18 @@ values are UNSET, SET, UNCHANGED, and FREED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.ConcentratedChargeState.ConcentratedChargeState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ConcentratedChargeState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ConcentratedChargeState.ConcentratedChargeState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -4475,7 +4493,7 @@ values are:
 <h4>ConcentratedConcentrationFluxState<a class="headerlink" href="#concentratedconcentrationfluxstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.ConcentratedConcentrationFluxState.ConcentratedConcentrationFluxState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConcentratedConcentrationFluxState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ConcentratedConcentrationFluxState.py#L5-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ConcentratedConcentrationFluxState.ConcentratedConcentrationFluxState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConcentratedConcentrationFluxState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ConcentratedConcentrationFluxState.py#L5-L80"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ConcentratedConcentrationFluxState.ConcentratedConcentrationFluxState" title="Permalink to this definition">#</a></dt>
 <dd><p>The ConcentratedConcentrationFluxState object stores the propagating data of a
 concentrated concentration flux in a step. One instance of this object is created
 internally by the ConcConcFlux object for each step. The instance is also deleted
@@ -4556,16 +4574,18 @@ values are UNSET, SET, UNCHANGED, and FREED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.ConcentratedConcentrationFluxState.ConcentratedConcentrationFluxState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ConcentratedConcentrationFluxState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ConcentratedConcentrationFluxState.ConcentratedConcentrationFluxState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -5029,7 +5049,7 @@ argument only if it is valid for the specified step.</p>
 <h4>ConcentratedHeatFluxState<a class="headerlink" href="#concentratedheatfluxstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.ConcentratedHeatFluxState.ConcentratedHeatFluxState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConcentratedHeatFluxState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ConcentratedHeatFluxState.py#L5-L80"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ConcentratedHeatFluxState.ConcentratedHeatFluxState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConcentratedHeatFluxState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ConcentratedHeatFluxState.py#L5-L81"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ConcentratedHeatFluxState.ConcentratedHeatFluxState" title="Permalink to this definition">#</a></dt>
 <dd><dl class="simple">
 <dt>The ConcentratedHeatFluxState object stores the propagating data of a concentrated heat</dt><dd><p>flux load in a step. One instance of this object is created internally by the
 ConcentratedHeatFlux object for each step. The instance is also deleted internally by
@@ -5110,16 +5130,18 @@ values are UNSET, SET, UNCHANGED, and FREED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.ConcentratedHeatFluxState.ConcentratedHeatFluxState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ConcentratedHeatFluxState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ConcentratedHeatFluxState.ConcentratedHeatFluxState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -5129,7 +5151,7 @@ values are:
 <h4>ConcentratedPoreFluidState<a class="headerlink" href="#concentratedporefluidstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.ConcentratedPoreFluidState.ConcentratedPoreFluidState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConcentratedPoreFluidState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ConcentratedPoreFluidState.py#L5-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ConcentratedPoreFluidState.ConcentratedPoreFluidState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConcentratedPoreFluidState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ConcentratedPoreFluidState.py#L5-L80"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ConcentratedPoreFluidState.ConcentratedPoreFluidState" title="Permalink to this definition">#</a></dt>
 <dd><p>The ConcentratedPoreFluidState object stores the propagating data of a concentrated pore
 fluid flow load in a step. One instance of this object is created internally by the
 ConcPoreFluid object for each step. The instance is also deleted internally by the
@@ -5210,16 +5232,18 @@ values are UNSET, SET, UNCHANGED, and FREED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.ConcentratedPoreFluidState.ConcentratedPoreFluidState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ConcentratedPoreFluidState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ConcentratedPoreFluidState.ConcentratedPoreFluidState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -5506,7 +5530,7 @@ argument only if it is valid for the specified step.</p>
 <h4>ConnectorForceState<a class="headerlink" href="#connectorforcestate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.ConnectorForceState.ConnectorForceState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConnectorForceState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ConnectorForceState.py#L5-L114"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ConnectorForceState.ConnectorForceState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConnectorForceState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ConnectorForceState.py#L5-L115"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ConnectorForceState.ConnectorForceState" title="Permalink to this definition">#</a></dt>
 <dd><p>The ConnectorForceState object stores the propagating data for a connector force in a
 step. One instance of this object is created internally by the ConnectorForce object for
 each step. The instance is also deleted internally by the ConnectorForce object.
@@ -5634,16 +5658,18 @@ MODIFIED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.ConnectorForceState.ConnectorForceState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ConnectorForceState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ConnectorForceState.ConnectorForceState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -5808,7 +5834,7 @@ argument only if it is valid for the specified step.</p>
 <h4>ConnectorMomentState<a class="headerlink" href="#connectormomentstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.ConnectorMomentState.ConnectorMomentState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConnectorMomentState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ConnectorMomentState.py#L5-L110"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ConnectorMomentState.ConnectorMomentState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConnectorMomentState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ConnectorMomentState.py#L5-L111"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ConnectorMomentState.ConnectorMomentState" title="Permalink to this definition">#</a></dt>
 <dd><p>The ConnectorMomentState object stores the propagating data for a connector moment in a
 step. One instance of this object is created internally by the ConnectorMoment object
 for each step. The instance is also deleted internally by the ConnectorMoment object.
@@ -5932,16 +5958,18 @@ connector’s local 6-direction. Possible values are UNSET, SET, UNCHANGED, and 
 <dt class="sig sig-object py" id="abaqus.Load.ConnectorMomentState.ConnectorMomentState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ConnectorMomentState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ConnectorMomentState.ConnectorMomentState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -6091,7 +6119,7 @@ argument only if it is valid for the specified step.</p>
 <h4>CoriolisForceState<a class="headerlink" href="#coriolisforcestate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.CoriolisForceState.CoriolisForceState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CoriolisForceState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/CoriolisForceState.py#L5-L78"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.CoriolisForceState.CoriolisForceState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CoriolisForceState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/CoriolisForceState.py#L5-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.CoriolisForceState.CoriolisForceState" title="Permalink to this definition">#</a></dt>
 <dd><p>The CoriolisForceState object stores the propagating data of a coriolis force in a step.
 One instance of this object is created internally by the CoriolisForce object for each
 step. The instance is also deleted internally by the CoriolisForce object.
@@ -6171,16 +6199,18 @@ values are UNSET, SET, UNCHANGED, and FREED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.CoriolisForceState.CoriolisForceState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/CoriolisForceState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.CoriolisForceState.CoriolisForceState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -6333,7 +6363,7 @@ argument only if it is valid for the specified step.</p>
 <h4>GravityState<a class="headerlink" href="#gravitystate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.GravityState.GravityState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">GravityState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/GravityState.py#L5-L102"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.GravityState.GravityState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">GravityState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/GravityState.py#L5-L103"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.GravityState.GravityState" title="Permalink to this definition">#</a></dt>
 <dd><p>The GravityState object stores the propagating data for a gravity load in a step. One
 instance of this object is created internally by the Gravity object for each step. The
 instance is also deleted internally by the Gravity object.
@@ -6449,16 +6479,18 @@ values are UNSET, SET, UNCHANGED, and FREED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.GravityState.GravityState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/GravityState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.GravityState.GravityState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -6468,7 +6500,7 @@ values are:
 <h4>HydrostaticFluidFlowState<a class="headerlink" href="#hydrostaticfluidflowstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.HydrostaticFluidFlowState.HydrostaticFluidFlowState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HydrostaticFluidFlowState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/HydrostaticFluidFlowState.py#L5-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.HydrostaticFluidFlowState.HydrostaticFluidFlowState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HydrostaticFluidFlowState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/HydrostaticFluidFlowState.py#L5-L80"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.HydrostaticFluidFlowState.HydrostaticFluidFlowState" title="Permalink to this definition">#</a></dt>
 <dd><p>The HydrostaticFluidFlowState object stores the propagating data for a concentrated
 HydrostaticFluidFlow object in a step. One instance of this object is created internally
 by the HydrostaticFluidFlow object for each step. The instance is also deleted
@@ -6549,16 +6581,18 @@ values are UNSET, SET, UNCHANGED, and FREED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.HydrostaticFluidFlowState.HydrostaticFluidFlowState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/HydrostaticFluidFlowState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.HydrostaticFluidFlowState.HydrostaticFluidFlowState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -6714,7 +6748,7 @@ current loading at the start of the step. The default value is OFF.</p>
 <h4>InertiaReliefState<a class="headerlink" href="#inertiareliefstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.InertiaReliefState.InertiaReliefState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">InertiaReliefState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/InertiaReliefState.py#L5-L189"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.InertiaReliefState.InertiaReliefState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">InertiaReliefState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/InertiaReliefState.py#L5-L190"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.InertiaReliefState.InertiaReliefState" title="Permalink to this definition">#</a></dt>
 <dd><p>The InertiaReliefState object stores the propagating data for an inertia relief load in
 a step. One instance of this object is created internally by the InertiaRelief object
 for each step. The instance is also deleted internally by the InertiaRelief object.
@@ -6864,16 +6898,18 @@ inertia relief load. Possible values are UNSET, SET, UNCHANGED, and MODIFIED.</p
 <dt class="sig sig-object py" id="abaqus.Load.InertiaReliefState.InertiaReliefState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/InertiaReliefState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.InertiaReliefState.InertiaReliefState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 <dl class="py attribute">
@@ -7092,7 +7128,7 @@ argument only if it is valid for the specified step.</p>
 <h4>InwardVolAccelState<a class="headerlink" href="#inwardvolaccelstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.InwardVolAccelState.InwardVolAccelState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">InwardVolAccelState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/InwardVolAccelState.py#L5-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.InwardVolAccelState.InwardVolAccelState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">InwardVolAccelState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/InwardVolAccelState.py#L5-L80"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.InwardVolAccelState.InwardVolAccelState" title="Permalink to this definition">#</a></dt>
 <dd><p>The InwardVolAccelState object stores the propagating data of an inward volume
 acceleration acoustic load in a step. One instance of this object is created internally
 by the InwardVolAccel object for each step. The instance is also deleted internally by
@@ -7173,16 +7209,18 @@ values are UNSET, SET, UNCHANGED, and FREED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.InwardVolAccelState.InwardVolAccelState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/InwardVolAccelState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.InwardVolAccelState.InwardVolAccelState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -7347,7 +7385,7 @@ frame of reference. Possible values are GLOBAL and LOCAL. The default value is G
 <h4>LineLoadState<a class="headerlink" href="#lineloadstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.LineLoadState.LineLoadState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LineLoadState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/LineLoadState.py#L5-L106"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.LineLoadState.LineLoadState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LineLoadState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/LineLoadState.py#L5-L107"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.LineLoadState.LineLoadState" title="Permalink to this definition">#</a></dt>
 <dd><p>The LineLoadState object stores the propagating data of a line load in a step. One
 instance of this object is created internally by the LineLoad object for each step. The
 instance is also deleted internally by the LineLoad object.
@@ -7467,16 +7505,18 @@ or the beam local 2-direction. Possible values are UNSET, SET, UNCHANGED, and FR
 <dt class="sig sig-object py" id="abaqus.Load.LineLoadState.LineLoadState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/LineLoadState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.LineLoadState.LineLoadState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -7723,7 +7763,7 @@ argument only if it is valid for the specified step.</p>
 <h4>MomentState<a class="headerlink" href="#momentstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.MomentState.MomentState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MomentState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/MomentState.py#L5-L102"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.MomentState.MomentState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MomentState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/MomentState.py#L5-L103"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.MomentState.MomentState" title="Permalink to this definition">#</a></dt>
 <dd><p>The MomentState object stores the propagating data for a moment in a step. One instance
 of this object is created internally by the Moment object for each step. The instance is
 also deleted internally by the Moment object.
@@ -7839,16 +7879,18 @@ values are UNSET, SET, UNCHANGED, and FREED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.MomentState.MomentState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/MomentState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.MomentState.MomentState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -7999,7 +8041,7 @@ argument only if it is valid for the specified step.</p>
 <h4>PEGLoadState<a class="headerlink" href="#pegloadstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.PEGLoadState.PEGLoadState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PEGLoadState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/PEGLoadState.py#L5-L102"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.PEGLoadState.PEGLoadState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PEGLoadState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/PEGLoadState.py#L5-L103"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.PEGLoadState.PEGLoadState" title="Permalink to this definition">#</a></dt>
 <dd><p>The PEGLoadState object stores the propagating data for a concentrated force in a step.
 One instance of this object is created internally by the PEGLoad object for each step.
 The instance is also deleted internally by the PEGLoad object.
@@ -8115,16 +8157,18 @@ reference node 2. Possible values are UNSET, SET, UNCHANGED, and FREED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.PEGLoadState.PEGLoadState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/PEGLoadState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.PEGLoadState.PEGLoadState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -8286,7 +8330,7 @@ Possible values are INTERNAL and EXTERNAL. The default value is INTERNAL.</p>
 <h4>PipePressureState<a class="headerlink" href="#pipepressurestate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.PipePressureState.PipePressureState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PipePressureState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/PipePressureState.py#L5-L107"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.PipePressureState.PipePressureState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PipePressureState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/PipePressureState.py#L5-L108"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.PipePressureState.PipePressureState" title="Permalink to this definition">#</a></dt>
 <dd><p>The PipePressureState object stores the propagating data for a pipe pressure in a step.
 One instance of this object is created internally by the PipePressure object for each
 step. The instance is also deleted internally by the PipePressure object.
@@ -8412,16 +8456,18 @@ values are UNSET, SET, UNCHANGED, and FREED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.PipePressureState.PipePressureState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/PipePressureState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.PipePressureState.PipePressureState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -8567,7 +8613,7 @@ is valid for the specified step.</p>
 <h4>PressureState<a class="headerlink" href="#pressurestate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.PressureState.PressureState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PressureState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/PressureState.py#L5-L107"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.PressureState.PressureState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PressureState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/PressureState.py#L5-L108"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.PressureState.PressureState" title="Permalink to this definition">#</a></dt>
 <dd><p>The PressureState object stores the propagating data for a pressure in a step. One
 instance of this object is created internally by the Pressure object for each step. The
 instance is also deleted internally by the Pressure object.
@@ -8693,16 +8739,18 @@ values are UNSET, SET, UNCHANGED, and MODIFIED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.PressureState.PressureState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/PressureState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.PressureState.PressureState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -8884,7 +8932,7 @@ argument only if it is valid for the specified step.</p>
 <h4>RotationalBodyForceState<a class="headerlink" href="#rotationalbodyforcestate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.RotationalBodyForceState.RotationalBodyForceState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RotationalBodyForceState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/RotationalBodyForceState.py#L5-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.RotationalBodyForceState.RotationalBodyForceState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RotationalBodyForceState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/RotationalBodyForceState.py#L5-L80"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.RotationalBodyForceState.RotationalBodyForceState" title="Permalink to this definition">#</a></dt>
 <dd><p>The RotationalBodyForceState object stores the propagating data of a rotational body
 force in a step. One instance of this object is created internally by the
 RotationalBodyForce object for each step. The instance is also deleted internally by the
@@ -8965,16 +9013,18 @@ values are UNSET, SET, UNCHANGED, and FREED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.RotationalBodyForceState.RotationalBodyForceState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/RotationalBodyForceState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.RotationalBodyForceState.RotationalBodyForceState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -9145,7 +9195,7 @@ is valid for the specified step.</p>
 <h4>ShellEdgeLoadState<a class="headerlink" href="#shelledgeloadstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.ShellEdgeLoadState.ShellEdgeLoadState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ShellEdgeLoadState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ShellEdgeLoadState.py#L5-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ShellEdgeLoadState.ShellEdgeLoadState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ShellEdgeLoadState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ShellEdgeLoadState.py#L5-L80"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ShellEdgeLoadState.ShellEdgeLoadState" title="Permalink to this definition">#</a></dt>
 <dd><p>The ShellEdgeLoadState object stores the propagating data for a ShellEdgeLoad object in
 a step. One instance of this object is created internally by the ShellEdgeLoad object
 for each step. The instance is also deleted internally by the ShellEdgeLoad object.
@@ -9231,16 +9281,18 @@ values are UNSET, SET, UNCHANGED, and MODIFIED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.ShellEdgeLoadState.ShellEdgeLoadState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/ShellEdgeLoadState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.ShellEdgeLoadState.ShellEdgeLoadState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -9397,7 +9449,7 @@ applicable only for linear perturbation steps and if <strong>fixed</strong> = OF
 <h4>SubmodelSBState<a class="headerlink" href="#submodelsbstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.SubmodelSBState.SubmodelSBState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SubmodelSBState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SubmodelSBState.py#L5-L101"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SubmodelSBState.SubmodelSBState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SubmodelSBState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SubmodelSBState.py#L5-L102"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SubmodelSBState.SubmodelSBState" title="Permalink to this definition">#</a></dt>
 <dd><p>The SubmodelSBState object stores the propagating data for a Submodel load in a step.
 One instance of this object is created internally by the SubmodelSB object for each
 step. The instance is also deleted internally by the SubmodelSB object.
@@ -9511,16 +9563,18 @@ values are SET and UNCHANGED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.SubmodelSBState.SubmodelSBState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SubmodelSBState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SubmodelSBState.SubmodelSBState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -9627,7 +9681,7 @@ is valid for the specified step.</p>
 <h4>SubstructureLoadState<a class="headerlink" href="#substructureloadstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.SubstructureLoadState.SubstructureLoadState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SubstructureLoadState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SubstructureLoadState.py#L5-L83"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SubstructureLoadState.SubstructureLoadState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SubstructureLoadState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SubstructureLoadState.py#L5-L84"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SubstructureLoadState.SubstructureLoadState" title="Permalink to this definition">#</a></dt>
 <dd><p>The SubstructureLoadState object stores the propagating data for a substructure load in
 a step. One instance of this object is created internally by the SubstructureLoad object
 for each step. The instance is also deleted internally by the SubstructureLoad object.
@@ -9715,16 +9769,18 @@ values are UNSET, SET, UNCHANGED, and MODIFIED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.SubstructureLoadState.SubstructureLoadState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SubstructureLoadState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SubstructureLoadState.SubstructureLoadState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -9858,7 +9914,7 @@ argument only if it is valid for the specified step.</p>
 <h4>SurfaceChargeState<a class="headerlink" href="#surfacechargestate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.SurfaceChargeState.SurfaceChargeState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SurfaceChargeState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SurfaceChargeState.py#L5-L78"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SurfaceChargeState.SurfaceChargeState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SurfaceChargeState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SurfaceChargeState.py#L5-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SurfaceChargeState.SurfaceChargeState" title="Permalink to this definition">#</a></dt>
 <dd><p>The SurfaceChargeState object stores the propagating data of a surface charge in a step.
 One instance of this object is created internally by the SurfaceCharge object for each
 step. The instance is also deleted internally by the SurfaceCharge object.
@@ -9938,16 +9994,18 @@ values are UNSET, SET, UNCHANGED, and FREED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.SurfaceChargeState.SurfaceChargeState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SurfaceChargeState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SurfaceChargeState.SurfaceChargeState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -10086,7 +10144,7 @@ is valid for the specified step.</p>
 <h4>SurfaceConcentrationFluxState<a class="headerlink" href="#surfaceconcentrationfluxstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.SurfaceConcentrationFluxState.SurfaceConcentrationFluxState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SurfaceConcentrationFluxState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SurfaceConcentrationFluxState.py#L5-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SurfaceConcentrationFluxState.SurfaceConcentrationFluxState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SurfaceConcentrationFluxState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SurfaceConcentrationFluxState.py#L5-L80"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SurfaceConcentrationFluxState.SurfaceConcentrationFluxState" title="Permalink to this definition">#</a></dt>
 <dd><p>The SurfaceConcentrationFluxState object stores the propagating data for a
 SurfaceConcentrationFlux object in a step. One instance of this object is created
 internally by the SurfaceConcentrationFlux object for each step. The instance is also
@@ -10167,16 +10225,18 @@ magnitude. Possible values are UNSET, SET, UNCHANGED, and MODIFIED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.SurfaceConcentrationFluxState.SurfaceConcentrationFluxState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SurfaceConcentrationFluxState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SurfaceConcentrationFluxState.SurfaceConcentrationFluxState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -10422,7 +10482,7 @@ argument only if it is valid for the specified step.</p>
 <h4>SurfaceCurrentState<a class="headerlink" href="#surfacecurrentstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.SurfaceCurrentState.SurfaceCurrentState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SurfaceCurrentState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SurfaceCurrentState.py#L5-L78"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SurfaceCurrentState.SurfaceCurrentState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SurfaceCurrentState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SurfaceCurrentState.py#L5-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SurfaceCurrentState.SurfaceCurrentState" title="Permalink to this definition">#</a></dt>
 <dd><p>The SurfaceCurrentState object stores the propagating data of a surface current in a
 step. One instance of this object is created internally by the SurfaceCurrent object for
 each step. The instance is also deleted internally by the SurfaceCurrent object.
@@ -10502,16 +10562,18 @@ values are UNSET, SET, UNCHANGED, and FREED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.SurfaceCurrentState.SurfaceCurrentState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SurfaceCurrentState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SurfaceCurrentState.SurfaceCurrentState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -10645,7 +10707,7 @@ is valid for the specified step.</p>
 <h4>SurfaceHeatFluxState<a class="headerlink" href="#surfaceheatfluxstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.SurfaceHeatFluxState.SurfaceHeatFluxState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SurfaceHeatFluxState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SurfaceHeatFluxState.py#L5-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SurfaceHeatFluxState.SurfaceHeatFluxState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SurfaceHeatFluxState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SurfaceHeatFluxState.py#L5-L80"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SurfaceHeatFluxState.SurfaceHeatFluxState" title="Permalink to this definition">#</a></dt>
 <dd><p>The SurfaceHeatFluxState object stores the propagating data for a surface
 SurfaceHeatFlux object in a step. One instance of this object is created internally by
 the SurfaceHeatFlux object for each step. The instance is also deleted internally by the
@@ -10726,16 +10788,18 @@ Possible values are UNSET, SET, UNCHANGED, and MODIFIED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.SurfaceHeatFluxState.SurfaceHeatFluxState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SurfaceHeatFluxState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SurfaceHeatFluxState.SurfaceHeatFluxState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -10871,7 +10935,7 @@ is valid for the specified step.</p>
 <h4>SurfacePoreFluidState<a class="headerlink" href="#surfaceporefluidstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.SurfacePoreFluidState.SurfacePoreFluidState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SurfacePoreFluidState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SurfacePoreFluidState.py#L5-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SurfacePoreFluidState.SurfacePoreFluidState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SurfacePoreFluidState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SurfacePoreFluidState.py#L5-L80"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SurfacePoreFluidState.SurfacePoreFluidState" title="Permalink to this definition">#</a></dt>
 <dd><p>The SurfacePoreFluidState object stores the propagating data for a SurfacePoreFluid
 object in a step. One instance of this object is created internally by the
 SurfacePoreFluid object for each step. The instance is also deleted internally by the
@@ -10952,16 +11016,18 @@ magnitude. Possible values are UNSET, SET, UNCHANGED, and MODIFIED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.SurfacePoreFluidState.SurfacePoreFluidState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SurfacePoreFluidState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SurfacePoreFluidState.SurfacePoreFluidState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
@@ -11227,7 +11293,7 @@ if defined. The default value is “None”.</p>
 <h4>SurfaceTractionState<a class="headerlink" href="#surfacetractionstate" title="Permalink to this headline">#</a></h4>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Load.SurfaceTractionState.SurfaceTractionState">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SurfaceTractionState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SurfaceTractionState.py#L5-L80"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SurfaceTractionState.SurfaceTractionState" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SurfaceTractionState</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SurfaceTractionState.py#L5-L81"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SurfaceTractionState.SurfaceTractionState" title="Permalink to this definition">#</a></dt>
 <dd><p>The SurfaceTractionState object stores the propagating data for a SurfaceTraction object
 in a step. One instance of this object is created internally by the SurfaceTraction
 object for each step. The instance is also deleted internally by the SurfaceTraction
@@ -11314,16 +11380,18 @@ values are UNSET, SET, UNCHANGED, and MODIFIED.</p>
 <dt class="sig sig-object py" id="abaqus.Load.SurfaceTractionState.SurfaceTractionState.status">
 <span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Load/SurfaceTractionState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Load.SurfaceTractionState.SurfaceTractionState.status" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the propagation state of the LoadState object. Possible
-values are:
-- NOT_YET_ACTIVE
-- CREATED
-- PROPAGATED
-- MODIFIED
-- DEACTIVATED
-- NO_LONGER_ACTIVE
-- TYPE_NOT_APPLICABLE
-- INSTANCE_NOT_APPLICABLE
-- BUILT_INTO_BASE_STATE</p>
+values are:</p>
+<ul class="simple">
+<li><p>NOT_YET_ACTIVE</p></li>
+<li><p>CREATED</p></li>
+<li><p>PROPAGATED</p></li>
+<li><p>MODIFIED</p></li>
+<li><p>DEACTIVATED</p></li>
+<li><p>NO_LONGER_ACTIVE</p></li>
+<li><p>TYPE_NOT_APPLICABLE</p></li>
+<li><p>INSTANCE_NOT_APPLICABLE</p></li>
+<li><p>BUILT_INTO_BASE_STATE</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>

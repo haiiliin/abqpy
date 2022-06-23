@@ -2101,7 +2101,7 @@ such that a least-squares fit surface will be used. The default value is OFF.</p
 <h3>Monitor<a class="headerlink" href="#monitor" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepOutput.Monitor.Monitor">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Monitor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dof</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/Monitor.py#L4-L134"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Monitor.Monitor" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Monitor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dof</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/Monitor.py#L4-L135"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Monitor.Monitor" title="Permalink to this definition">#</a></dt>
 <dd><p>The Monitor object defines a degree of freedom to monitor.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -2162,20 +2162,22 @@ Abaqus/Standard analysis.</p>
 <dt class="sig sig-object py" id="abaqus.StepOutput.Monitor.Monitor.dof">
 <span class="sig-name descname"><span class="pre">dof</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/Monitor.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Monitor.Monitor.dof" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the degree of freedom to be monitored at the node.
-Possible values are:
-- U1
-- U2
-- U3
-- UR1
-- UR2
-- UR3
-- WARP
-- FLUID_PRESSURE
-- ELECTRICAL_POTENTIAL
-- NT11
-- NT30
-- NN11
-- NN30</p>
+Possible values are:</p>
+<ul class="simple">
+<li><p>U1</p></li>
+<li><p>U2</p></li>
+<li><p>U3</p></li>
+<li><p>UR1</p></li>
+<li><p>UR2</p></li>
+<li><p>UR3</p></li>
+<li><p>WARP</p></li>
+<li><p>FLUID_PRESSURE</p></li>
+<li><p>ELECTRICAL_POTENTIAL</p></li>
+<li><p>NT11</p></li>
+<li><p>NT30</p></li>
+<li><p>NN11</p></li>
+<li><p>NN30</p></li>
+</ul>
 <p>The NT identifiers are not available for mass diffusion. The NN identifiers are
 available only for mass diffusion.</p>
 </dd></dl>
@@ -2195,7 +2197,7 @@ Abaqus/Standard analysis.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.StepOutput.Monitor.Monitor.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/Monitor.py#L127-L134"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Monitor.Monitor.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/Monitor.py#L128-L135"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Monitor.Monitor.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the Monitor object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises</dt>

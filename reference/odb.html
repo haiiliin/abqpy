@@ -2064,7 +2064,7 @@ cross-section.</p>
 <h3>FieldBulkData<a class="headerlink" href="#fieldbulkdata" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.FieldBulkData.FieldBulkData">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FieldBulkData</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Odb/FieldBulkData.py#L7-L146"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.FieldBulkData.FieldBulkData" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FieldBulkData</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Odb/FieldBulkData.py#L7-L147"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.FieldBulkData.FieldBulkData" title="Permalink to this definition">#</a></dt>
 <dd><p>The FieldBulkData object represents the entire field data for a class of elements or
 nodes. All elements in a class correspond to the same element type and material.</p>
 <p class="rubric">Notes</p>
@@ -2221,11 +2221,13 @@ valid only if <strong>position</strong> = ELEMENT_NODAL or NODAL.</p>
 <dt class="sig sig-object py" id="abaqus.Odb.FieldBulkData.FieldBulkData.position">
 <span class="sig-name descname"><span class="pre">position</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Odb/FieldBulkData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.FieldBulkData.FieldBulkData.position" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the position of the output in the element. Possible values
-are:
-- NODAL, specifying the values calculated at the nodes.
-- INTEGRATION_POINT, specifying the values calculated at the integration points.
-- ELEMENT_NODAL, specifying the values obtained by extrapolating results calculated at
-the integration points.
+are:</p>
+<ul class="simple">
+<li><p>NODAL, specifying the values calculated at the nodes.</p></li>
+<li><p>INTEGRATION_POINT, specifying the values calculated at the integration points.</p></li>
+<li><p>ELEMENT_NODAL, specifying the values obtained by extrapolating results calculated at</p></li>
+</ul>
+<p>the integration points.
 - ELEMENT_FACE.
 - CENTROID, specifying the value at the centroid obtained by extrapolating results
 calculated at the integration points.</p>
@@ -2612,7 +2614,7 @@ description of the order.</p>
 <h3>FieldValue<a class="headerlink" href="#fieldvalue" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.FieldValue.FieldValue">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FieldValue</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Odb/FieldValue.py#L7-L276"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.FieldValue.FieldValue" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FieldValue</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Odb/FieldValue.py#L7-L278"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.FieldValue.FieldValue" title="Permalink to this definition">#</a></dt>
 <dd><p>The FieldValue object represents the field data at a point. The FieldValue object has no
 constructor; it is created by the Odb object when data are added to the FieldOutput
 object using the addData method. For faster, bulk-data access, see Using bulk data
@@ -2921,11 +2923,13 @@ indeterminate. Conjugate data will be ignored in invariant calculation.</p>
 <dt class="sig sig-object py" id="abaqus.Odb.FieldValue.FieldValue.position">
 <span class="sig-name descname"><span class="pre">position</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Odb/FieldValue.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.FieldValue.FieldValue.position" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the position of the output in the element. Possible values
-are:
-- NODAL, specifying the values calculated at the nodes.
-- INTEGRATION_POINT, specifying the values calculated at the integration points.
-- ELEMENT_NODAL, specifying the values obtained by extrapolating results calculated at
-the integration points.
+are:</p>
+<ul class="simple">
+<li><p>NODAL, specifying the values calculated at the nodes.</p></li>
+<li><p>INTEGRATION_POINT, specifying the values calculated at the integration points.</p></li>
+<li><p>ELEMENT_NODAL, specifying the values obtained by extrapolating results calculated at</p></li>
+</ul>
+<p>the integration points.
 - ELEMENT_FACE, specifying the results obtained for surface variables such as cavity
 radiation that are defined for the surface facets of an element.
 - CENTROID, specifying the value at the centroid obtained by extrapolating results
@@ -2936,9 +2940,11 @@ calculated at the integration points.</p>
 <dt class="sig sig-object py" id="abaqus.Odb.FieldValue.FieldValue.precision">
 <span class="sig-name descname"><span class="pre">precision</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Odb/FieldValue.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.FieldValue.FieldValue.precision" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the precision of the output in the element. Possible
-values are:
-- SINGLE_PRECISION, specifying that the output values are in single precision.
-- DOUBLE_PRECISION, specifying that the output values are in double precision.</p>
+values are:</p>
+<ul class="simple">
+<li><p>SINGLE_PRECISION, specifying that the output values are in single precision.</p></li>
+<li><p>DOUBLE_PRECISION, specifying that the output values are in double precision.</p></li>
+</ul>
 </dd></dl>
 
 <dl class="py attribute">
@@ -3074,7 +3080,7 @@ MID_PRINCIPAL, and MIN_PRINCIPAL. The default value is an empty sequence.</p>
 <h3>HistoryPoint<a class="headerlink" href="#historypoint" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.HistoryPoint.HistoryPoint">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HistoryPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Odb/HistoryPoint.py#L13-L290"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.HistoryPoint.HistoryPoint" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HistoryPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Odb/HistoryPoint.py#L13-L292"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.HistoryPoint.HistoryPoint" title="Permalink to this definition">#</a></dt>
 <dd><p>The HistoryPoint object specifies the point at which history data will be collected. The
 HistoryPoint object is a temporary object used as an argument to the HistoryRegion
 method.</p>
@@ -3174,20 +3180,22 @@ surface facets have integration points.</p>
 <span class="sig-name descname"><span class="pre">face</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'FACE_UNKNOWN'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Odb/HistoryPoint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.HistoryPoint.HistoryPoint.face" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the element face. This argument is used to define a
 history output position of ELEMENT_FACE or ELEMENT_FACE_INTEGRATION_POINT. Possible
-values are:
-- FACE_UNKOWN, specifying this value indicates that no value has been specified.
-- FACE1, specifying this value indicates that element face 1 has been specified.
-- FACE2, specifying this value indicates that element face 2 has been specified.
-- FACE3, specifying this value indicates that element face 3 has been specified.
-- FACE4, specifying this value indicates that element face 4 has been specified.
-- FACE5, specifying this value indicates that element face 5 has been specified.
-- FACE6, specifying this value indicates that element face 6 has been specified.
-- SIDE1, specifying this value indicates that element side 1 has been specified.
-- SIDE2, specifying this value indicates element side 2 has been specified.
-- END1, specifying this value indicates that element end 1 has been specified.
-- END2, specifying this value indicates that element end 2 has been specified.
-- END3, specifying this value indicates that element end 3 has been specified.
-The default value is FACE_UNKNOWN.</p>
+values are:</p>
+<ul class="simple">
+<li><p>FACE_UNKOWN, specifying this value indicates that no value has been specified.</p></li>
+<li><p>FACE1, specifying this value indicates that element face 1 has been specified.</p></li>
+<li><p>FACE2, specifying this value indicates that element face 2 has been specified.</p></li>
+<li><p>FACE3, specifying this value indicates that element face 3 has been specified.</p></li>
+<li><p>FACE4, specifying this value indicates that element face 4 has been specified.</p></li>
+<li><p>FACE5, specifying this value indicates that element face 5 has been specified.</p></li>
+<li><p>FACE6, specifying this value indicates that element face 6 has been specified.</p></li>
+<li><p>SIDE1, specifying this value indicates that element side 1 has been specified.</p></li>
+<li><p>SIDE2, specifying this value indicates element side 2 has been specified.</p></li>
+<li><p>END1, specifying this value indicates that element end 1 has been specified.</p></li>
+<li><p>END2, specifying this value indicates that element end 2 has been specified.</p></li>
+<li><p>END3, specifying this value indicates that element end 3 has been specified.</p></li>
+</ul>
+<p>The default value is FACE_UNKNOWN.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -3214,10 +3222,12 @@ value is 0.</p>
 <dt class="sig sig-object py" id="abaqus.Odb.HistoryPoint.HistoryPoint.position">
 <span class="sig-name descname"><span class="pre">position</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Odb/HistoryPoint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.HistoryPoint.HistoryPoint.position" title="Permalink to this definition">#</a></dt>
 <dd><p>A SymbolicConstant specifying the result position of the history point. Possible values
-are:
-- NODAL, specifying the values calculated at the nodes.
-- ELEMENT_NODAL, specifying the values obtained by extrapolating results calculated at
-the integration points.
+are:</p>
+<ul class="simple">
+<li><p>NODAL, specifying the values calculated at the nodes.</p></li>
+<li><p>ELEMENT_NODAL, specifying the values obtained by extrapolating results calculated at</p></li>
+</ul>
+<p>the integration points.
 - INTEGRATION_POINT, specifying the values calculated at the integration points.
 - ELEMENT_FACE, specifying the results obtained for surface variables such as cavity
 radiation that are defined for the surface facets of an element.
