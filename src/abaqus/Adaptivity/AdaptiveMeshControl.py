@@ -34,7 +34,7 @@ class AdaptiveMeshControl:
         originalConfigurationProjectionWeight: float = 1,
         standardVolumetricSmoothingWeight: float = 0,
     ):
-        """This method creates an AdaptiveMeshControl object.
+        r"""This method creates an AdaptiveMeshControl object.
 
         Notes
         -----
@@ -59,11 +59,11 @@ class AdaptiveMeshControl:
             A SymbolicConstant specifying the type of smoothing to perform. Possible values are
             UNIFORM and GRADED. The default value is UNIFORM.
         initialFeatureAngle
-            A Float specifying the initial geometric feature angle, θI, in degrees. Possible values
-            are 0° ≤θI≤ 180°. The default value is 30.0.
+            A Float specifying the initial geometric feature angle, :math:`\theta_I`, in degrees. Possible values
+            are :math:`0^\circ\le\theta_I\le 180^\circ`. The default value is 30.0.
         transitionFeatureAngle
-            A Float specifying the transitional feature angle, θT, in degrees. Possible values are
-            0° ≤θT≤ 180°. The default value is 30.0.
+            A Float specifying the transitional feature angle, :math:`\theta_T`, in degrees. Possible values are
+            :math:`0^\circ\le\theta_T\le 180^\circ`. The default value is 30.0.
         momentumAdvection
             A SymbolicConstant specifying the type of momentum advection algorithm. Possible values
             are ELEMENT_CENTER_PROJECTION and HALF_INDEX_SHIFT. The default value is
@@ -72,8 +72,8 @@ class AdaptiveMeshControl:
             A SymbolicConstant specifying the nodal starting location to use for remeshing. Possible
             values are CURRENT and PREVIOUS. The default value is CURRENT.
         curvatureRefinement
-            A Float specifying the solution dependence weight, αC. Possible values are 0.0 ≤αC≤ 1.0.
-            The default value is 1.0.
+            A Float specifying the solution dependence weight, :math:`\alpha_C`. Possible values are
+            :math:`0.0\le\alpha_C\le 1.0`. The default value is 1.0.
         volumetricSmoothingWeight
             A Float specifying the weight used by Abaqus/Explicit for the volumetric smoothing
             method. The default value is 1.0.
@@ -84,8 +84,8 @@ class AdaptiveMeshControl:
             A Float specifying the weight for the equipotential smoothing method. The default value
             is 0.0.
         meshConstraintAngle
-            A Float specifying the initial geometric feature angle, θC. Possible values are 0° ≤θC≤
-            180°. The default value is 60.0.
+            A Float specifying the initial geometric feature angle, :math:`\theta_C`. Possible values
+            are :math:`0^\circ\le\theta_C\le 180^\circ`. The default value is 60.0.
         originalConfigurationProjectionWeight
             A Float specifying the weight for the original configuration projection method. The
             default value is 1.0.
@@ -121,7 +121,7 @@ class AdaptiveMeshControl:
         originalConfigurationProjectionWeight: float = 1,
         standardVolumetricSmoothingWeight: float = 0,
     ):
-        """This method modifies the AdaptiveMeshControl object.
+        r"""This method modifies the AdaptiveMeshControl object.
 
         Parameters
         ----------
@@ -136,11 +136,11 @@ class AdaptiveMeshControl:
             A SymbolicConstant specifying the type of smoothing to perform. Possible values are
             UNIFORM and GRADED. The default value is UNIFORM.
         initialFeatureAngle
-            A Float specifying the initial geometric feature angle, θI, in degrees. Possible values
-            are 0° ≤θI≤ 180°. The default value is 30.0.
+            A Float specifying the initial geometric feature angle, :math:`\theta_I`, in degrees. Possible values
+            are :math:`0^\circ\le\theta_I\le 180^\circ`. The default value is 30.0.
         transitionFeatureAngle
-            A Float specifying the transitional feature angle, θT, in degrees. Possible values are
-            0° ≤θT≤ 180°. The default value is 30.0.
+            A Float specifying the transitional feature angle, :math:`\theta_T`, in degrees. Possible values are
+            :math:`0^\circ\le\theta_T\le 180^\circ`. The default value is 30.0.
         momentumAdvection
             A SymbolicConstant specifying the type of momentum advection algorithm. Possible values
             are ELEMENT_CENTER_PROJECTION and HALF_INDEX_SHIFT. The default value is
@@ -149,8 +149,8 @@ class AdaptiveMeshControl:
             A SymbolicConstant specifying the nodal starting location to use for remeshing. Possible
             values are CURRENT and PREVIOUS. The default value is CURRENT.
         curvatureRefinement
-            A Float specifying the solution dependence weight, αC. Possible values are 0.0 ≤αC≤ 1.0.
-            The default value is 1.0.
+            A Float specifying the solution dependence weight, :math:`\alpha_C`. Possible values are
+            :math:`0.0\le\alpha_C\le 1.0`. The default value is 1.0.
         volumetricSmoothingWeight
             A Float specifying the weight used by Abaqus/Explicit for the volumetric smoothing
             method. The default value is 1.0.
@@ -161,8 +161,8 @@ class AdaptiveMeshControl:
             A Float specifying the weight for the equipotential smoothing method. The default value
             is 0.0.
         meshConstraintAngle
-            A Float specifying the initial geometric feature angle, θC. Possible values are 0° ≤θC≤
-            180°. The default value is 60.0.
+            A Float specifying the initial geometric feature angle, :math:`\theta_c`. Possible values are
+            :math:`0^\circ\le\theta_C\le 180^\circ`. The default value is 60.0.
         originalConfigurationProjectionWeight
             A Float specifying the weight for the original configuration projection method. The
             default value is 1.0.
