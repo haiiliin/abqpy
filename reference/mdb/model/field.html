@@ -541,6 +541,18 @@ objects derived from the Field.</p>
 </dl>
 </dd>
 </dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.Field.Field.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/Field.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.Field.Field.description" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the description of the field. The default value is an empty string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.Field.Field.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/Field.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.Field.Field.name" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the repository key.</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -728,6 +740,32 @@ WHOLE_ELEMENT, WHOLE_REGION, WHOLE_PART_INSTANCE, WHOLE_MODEL, and GENERAL_PARTI
 </div>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.AnalyticalField.AnalyticalField.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/AnalyticalField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.AnalyticalField.AnalyticalField.description" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the description of the field. The default value is an empty string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.AnalyticalField.AnalyticalField.localCsys">
+<span class="sig-name descname"><span class="pre">localCsys</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/datum.html#abaqus.Datum.DatumCsys.DatumCsys" title="abaqus.Datum.DatumCsys.DatumCsys"><span class="pre">DatumCsys</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Datum.DatumCsys.DatumCsys</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/AnalyticalField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.AnalyticalField.AnalyticalField.localCsys" title="Permalink to this definition">#</a></dt>
+<dd><p>None or a DatumCsys object specifying the local coordinate system of the field. If
+<strong>localCsys</strong> = None, the field is defined in the global coordinate system. The default
+value is None.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.AnalyticalField.AnalyticalField.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/AnalyticalField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.AnalyticalField.AnalyticalField.name" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the repository key.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.AnalyticalField.AnalyticalField.odbMeshRegionData">
+<span class="sig-name descname"><span class="pre">odbMeshRegionData</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData"><span class="pre">OdbMeshRegionData</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Field.OdbMeshRegionData.OdbMeshRegionData</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/AnalyticalField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.AnalyticalField.AnalyticalField.odbMeshRegionData" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbMeshRegionData</span></code></a> object.</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -760,6 +798,37 @@ scalar data, orientations and 4D tensors.</p>
 </dl>
 </dd>
 </dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.DataTable.DataTable.dataWidth">
+<span class="sig-name descname"><span class="pre">dataWidth</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/DataTable.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.DataTable.DataTable.dataWidth" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the width of the data. Valid widths are 1, 6, 21, corresponding to
+scalar data, orientations and 4D tensors.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.DataTable.DataTable.domain">
+<span class="sig-name descname"><span class="pre">domain</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/DataTable.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.DataTable.DataTable.domain" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of Ints specifying the domain node, element or integration point identifiers.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.DataTable.DataTable.instanceName">
+<span class="sig-name descname"><span class="pre">instanceName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/DataTable.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.DataTable.DataTable.instanceName" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the instance name.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.DataTable.DataTable.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/DataTable.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.DataTable.DataTable.name" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the index.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.DataTable.DataTable.table">
+<span class="sig-name descname"><span class="pre">table</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/DataTable.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.DataTable.DataTable.table" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of Floats specifying the data within the domain.</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -933,6 +1002,59 @@ are NODES and ELEMENTS. The default value is NODES.</p>
 </div>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.DiscreteField.DiscreteField.data">
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Field.DataTableArray.DataTableArray" title="abaqus.Field.DataTableArray.DataTableArray"><span class="pre">DataTableArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/DiscreteField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.DiscreteField.DiscreteField.data" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.Field.DataTableArray.DataTableArray" title="abaqus.Field.DataTableArray.DataTableArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataTableArray</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.DiscreteField.DiscreteField.dataWidth">
+<span class="sig-name descname"><span class="pre">dataWidth</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/DiscreteField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.DiscreteField.DiscreteField.dataWidth" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the width of the supplied data. The default value is 1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.DiscreteField.DiscreteField.defaultValues">
+<span class="sig-name descname"><span class="pre">defaultValues</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/DiscreteField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.DiscreteField.DiscreteField.defaultValues" title="Permalink to this definition">#</a></dt>
+<dd><p>A sequence of Floats specifying a sequence of floats specifying the default values.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.DiscreteField.DiscreteField.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/DiscreteField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.DiscreteField.DiscreteField.description" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the description of the field. The default value is an empty string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.DiscreteField.DiscreteField.fieldType">
+<span class="sig-name descname"><span class="pre">fieldType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/DiscreteField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.DiscreteField.DiscreteField.fieldType" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant or an Int specifying the type of data represented by this discrete
+field. Possible values are SCALAR, ORIENTATION, and PRESCRIBEDCONDITION_DOF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.DiscreteField.DiscreteField.location">
+<span class="sig-name descname"><span class="pre">location</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'NODES'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/DiscreteField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.DiscreteField.DiscreteField.location" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant or an Int specifying the location of the domain data. Possible values
+are NODES and ELEMENTS. The default value is NODES.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.DiscreteField.DiscreteField.orientationType">
+<span class="sig-name descname"><span class="pre">orientationType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'CARTESIAN'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/DiscreteField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.DiscreteField.DiscreteField.orientationType" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the type of the system being described by a discrete field
+used for an orientation. Possible values are CARTESIAN, CYLINDRICAL, and SPHERICAL. The
+default value is CARTESIAN.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.DiscreteField.DiscreteField.partLevelOrientation">
+<span class="sig-name descname"><span class="pre">partLevelOrientation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/DiscreteField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.DiscreteField.DiscreteField.partLevelOrientation" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether or not the orientations are described in terms of part
+level coordinates. The default value is OFF.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Field.DiscreteField.DiscreteField.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">location</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NODES'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataWidth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#abaqus.Field.DataTableArray.DataTableArray" title="abaqus.Field.DataTableArray.DataTableArray"><span class="pre">DataTableArray</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">orientationType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'CARTESIAN'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">partLevelOrientation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/DiscreteField.py#L235-L265"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.DiscreteField.DiscreteField.setValues" title="Permalink to this definition">#</a></dt>
@@ -1010,9 +1132,25 @@ value is None.</p>
 </table>
 </div>
 <dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.ExpressionField.ExpressionField.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/ExpressionField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.ExpressionField.ExpressionField.description" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the description of the field. The default value is an empty string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.ExpressionField.ExpressionField.expression">
+<span class="sig-name descname"><span class="pre">expression</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/ExpressionField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.ExpressionField.ExpressionField.expression" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the Python expression to evaluate in space. Variables are X, Y, and
+Z; R, Th, and Z; or R, Th, and P based on the selected coordinate system.</p>
+</dd></dl>
+
+<dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Field.ExpressionField.ExpressionField.localCsys">
 <span class="sig-name descname"><span class="pre">localCsys</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/ExpressionField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.ExpressionField.ExpressionField.localCsys" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>None or a DatumCsys object specifying the local coordinate system of the field. If
+<strong>localCsys</strong> = None, the field is defined in the global coordinate system. The default
+value is None.</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Field.ExpressionField.ExpressionField.setValues">
@@ -1138,14 +1276,140 @@ value is None.</p>
 </table>
 </div>
 <dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.MappedField.MappedField.boundarySearchTol">
+<span class="sig-name descname"><span class="pre">boundarySearchTol</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/MappedField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.MappedField.MappedField.boundarySearchTol" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the search distance tolerance value on the exterior boundary of
+target model region. Source points within this distance will be included in computing
+the parameter value of target region. This tolerance applies to both surface and
+volumetric mapping. The default value is 0.01.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.MappedField.MappedField.coordinateScalingFactors">
+<span class="sig-name descname"><span class="pre">coordinateScalingFactors</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/MappedField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.MappedField.MappedField.coordinateScalingFactors" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of Floats specifying the scaling factors for the global 1, 2 and 3 directions.
+The default value is (1.0, 1.0, 1.0).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.MappedField.MappedField.defaultUnMappedValue">
+<span class="sig-name descname"><span class="pre">defaultUnMappedValue</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/MappedField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.MappedField.MappedField.defaultUnMappedValue" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying default parameter (field) value of target model region while its
+value cannot be calculated from the data source. The default value is 0.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.MappedField.MappedField.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/MappedField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.MappedField.MappedField.description" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the description of the field. The default value is an empty string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.MappedField.MappedField.gridPointData">
+<span class="sig-name descname"><span class="pre">gridPointData</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/MappedField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.MappedField.MappedField.gridPointData" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of tuples of Floats specifying the point cloud source data of grid format. The
+default value is an empty sequence.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.MappedField.MappedField.gridPointPlane">
+<span class="sig-name descname"><span class="pre">gridPointPlane</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'XYPLANE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/MappedField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.MappedField.MappedField.gridPointPlane" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the plane on which the point cloud source data of grid
+format are described. Possible values are XYPLANE, YZPLANE, and XZPLANE. The default
+value is XYPLANE.</p>
+</dd></dl>
+
+<dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Field.MappedField.MappedField.localCsys">
 <span class="sig-name descname"><span class="pre">localCsys</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/MappedField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.MappedField.MappedField.localCsys" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>None or a DatumCsys object specifying the local coordinate system of the field. If
+<strong>localCsys</strong> = None, the field is defined in the global coordinate system. The default
+value is None.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.MappedField.MappedField.mappingAlgorithm">
+<span class="sig-name descname"><span class="pre">mappingAlgorithm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'SURFACE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/MappedField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.MappedField.MappedField.mappingAlgorithm" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the mapping algorithm for target surface, or on mesh
+target model when the parameter value are located at nodes, for example nodal
+temperatures. Possible values are SURFACE and VOLUMETRIC. The default value is SURFACE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.MappedField.MappedField.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/MappedField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.MappedField.MappedField.name" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the repository key.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.MappedField.MappedField.negativeNormalSearchTol">
+<span class="sig-name descname"><span class="pre">negativeNormalSearchTol</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/MappedField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.MappedField.MappedField.negativeNormalSearchTol" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the search distance tolerance value in the negative normal of target
+surface region. Source points within this distance will be included in computing the
+parameter value of target region. This tolerance only applies to surface mapping. The
+default value is 0.15.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.MappedField.MappedField.neighborhoodSearchTol">
+<span class="sig-name descname"><span class="pre">neighborhoodSearchTol</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1000000</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/MappedField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.MappedField.MappedField.neighborhoodSearchTol" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the search distance tolerance value used for distance weighting
+algorithm. Source points within this distance will be included in computing the
+parameter value of target region. This tolerance only applies to surface mapping. The
+default value is 1000000.0.</p>
+</dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Field.MappedField.MappedField.odbMeshRegionData">
 <span class="sig-name descname"><span class="pre">odbMeshRegionData</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData"><span class="pre">OdbMeshRegionData</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/MappedField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.MappedField.MappedField.odbMeshRegionData" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>An <a class="reference internal" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData" title="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbMeshRegionData</span></code></a> object specifying the external source data from ODB mesh region.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.MappedField.MappedField.partLevelData">
+<span class="sig-name descname"><span class="pre">partLevelData</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/MappedField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.MappedField.MappedField.partLevelData" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether or not the point cloud source data are described in terms
+of part level coordinates. If part level coordinates is employed, the local coordinate
+system defined in <strong>localCsys</strong> will be ignored. The default value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.MappedField.MappedField.pointDataFormat">
+<span class="sig-name descname"><span class="pre">pointDataFormat</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'XYZ'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/MappedField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.MappedField.MappedField.pointDataFormat" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying point cloud source data format. Possible values are GRID
+and XYZ. The default value is XYZ.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.MappedField.MappedField.positiveNormalSearchTol">
+<span class="sig-name descname"><span class="pre">positiveNormalSearchTol</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/MappedField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.MappedField.MappedField.positiveNormalSearchTol" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the search distance tolerance value in the positive normal of target
+surface region. Source points within this distance will be included in computing the
+parameter value of target region. This tolerance only applies to surface mapping. The
+default value is 0.05.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.MappedField.MappedField.regionType">
+<span class="sig-name descname"><span class="pre">regionType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'POINT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/MappedField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.MappedField.MappedField.regionType" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the data source region type. It can be either an ODB mesh
+or a cloud of points. Possible values are MESH and POINT. The default value is POINT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.MappedField.MappedField.scaleCoordinates">
+<span class="sig-name descname"><span class="pre">scaleCoordinates</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/MappedField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.MappedField.MappedField.scaleCoordinates" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether or not to scale the user-supplied coordinate values from
+the point cloud or indicated ODB. The default value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.MappedField.MappedField.searchTolType">
+<span class="sig-name descname"><span class="pre">searchTolType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'RELATIVE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/MappedField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.MappedField.MappedField.searchTolType" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying searching tolerance type in terms of absolute value or a
+fraction of the average of all element characteristic length in target model region.
+Possible values are ABSOLUTE and RELATIVE. The default value is RELATIVE.</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Field.MappedField.MappedField.setValues">
@@ -1221,6 +1485,14 @@ value is None.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.MappedField.MappedField.xyzPointData">
+<span class="sig-name descname"><span class="pre">xyzPointData</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/MappedField.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.MappedField.MappedField.xyzPointData" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of tuples of Floats specifying the point cloud source data of XYZ format. Each
+data item is defining the XYZ coordinates of a point and its field value. The default
+value is an empty sequence.</p>
 </dd></dl>
 
 </dd></dl>
@@ -1362,10 +1634,187 @@ default value is UNDEFINED_POSITION.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.averageElementOutput">
+<span class="sig-name descname"><span class="pre">averageElementOutput</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.averageElementOutput" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to average the element output. The default value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.averageOnlyDisplayed">
+<span class="sig-name descname"><span class="pre">averageOnlyDisplayed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.averageOnlyDisplayed" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to average only values on displayed elements. The default
+value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.averagingThreshold">
+<span class="sig-name descname"><span class="pre">averagingThreshold</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">75</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.averagingThreshold" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the nodal averaging threshold percentage. 0 ≤≤ <strong>averagingThreshold</strong>
+≤≤100. The default value is 75.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.complexAngle">
+<span class="sig-name descname"><span class="pre">complexAngle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.complexAngle" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the angle (in degrees) at which to display results that contain
+complex numbers when <a href="#id6"><span class="problematic" id="id7">*</span></a>numericForm=COMPLEX_MAG_AT_ANGLE*=COMPLEX_MAG_AT_ANGLE. The
+default value is 0.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.computeOrder">
+<span class="sig-name descname"><span class="pre">computeOrder</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'EXTRAPOLATE_COMPUTE_AVERAGE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.computeOrder" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the order or the computations to be performed on the
+interested field output variable. Possible values are EXTRAPOLATE_AVERAGE_COMPUTE,
+EXTRAPOLATE_COMPUTE_AVERAGE, EXTRAPOLATE_COMPUTE, EXTRAPOLATE_COMPUTE_DISCONTINUITIES,
+and RAW_DATA. The default value is EXTRAPOLATE_COMPUTE_AVERAGE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.dataType">
+<span class="sig-name descname"><span class="pre">dataType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'SCALAR'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.dataType" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the data type of the field output variable which should be
+aligned with the variable. Currently only SCALAR is supported. Possible values are:
+- ENUMERATION
+- BOOLEAN
+- INTEGER
+- SCALAR
+- VECTOR
+- QUATERNION_2D
+- QUATERNION_3D
+- TENSOR
+- TENSOR_3D_FULL
+- TENSOR_3D_PLANAR
+- TENSOR_3D_SURFACE
+- TENSOR_2D_PLANAR
+- TENSOR_2D_SURFACE
+The default value is SCALAR.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.displayOutputPosition">
+<span class="sig-name descname"><span class="pre">displayOutputPosition</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'UNDEFINED_POSITION'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.displayOutputPosition" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the position where the output is displayed in the
+viewport. Possible values
+are:UNDEFINED_POSITIONNODALINTEGRATION_POINTELEMENT_FACEELEMENT_NODALELEMENT_CENTROIDWHOLE_ELEMENTWHOLE_REGIONWHOLE_PART_INSTANCEWHOLE_MODELGENERAL_PARTICLEThe
+default value is UNDEFINED_POSITION.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.featureAngle">
+<span class="sig-name descname"><span class="pre">featureAngle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">20</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.featureAngle" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the feature angle to be used when <strong>includeFeatureBoundaries</strong> = ON. The
+default value is 20.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.frameIndex">
+<span class="sig-name descname"><span class="pre">frameIndex</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.frameIndex" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the frame in the specified step. Valid values are 0 ≤≤ <strong>frameIndex</strong> ≤≤
+(<em>numFramesInStep</em> − 1). The default value is 0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.includeFeatureBoundaries">
+<span class="sig-name descname"><span class="pre">includeFeatureBoundaries</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.includeFeatureBoundaries" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to include additional averaging boundaries for shells and
+membranes based on feature edges. The default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.numericForm">
+<span class="sig-name descname"><span class="pre">numericForm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'REAL'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.numericForm" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the numeric form in which to display results that contain
+complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
+and COMPLEX_MAG_AT_ANGLE. The default value is REAL.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.odbFileName">
+<span class="sig-name descname"><span class="pre">odbFileName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.odbFileName" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the output database file (including the .odb extension)
+to be read into as the source data. This String can also be the full path to the output
+database file if it is located in another directory.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.outputPosition">
+<span class="sig-name descname"><span class="pre">outputPosition</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'UNDEFINED_POSITION'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.outputPosition" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the position from which to obtain data. Data can be
+obtained only from the position at which they were written to the output database during
+the analysis. This position should be aligned with the field output variable. Possible
+values are:
+- UNDEFINED_POSITION
+- NODAL
+- INTEGRATION_POINT
+- ELEMENT_FACE
+- ELEMENT_NODAL
+- ELEMENT_CENTROID
+- WHOLE_ELEMENT
+- WHOLE_REGION
+- WHOLE_PART_INSTANCE
+- WHOLE_MODEL
+- GENERAL_PARTICLE
+The default value is UNDEFINED_POSITION.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.quantityToPlot">
+<span class="sig-name descname"><span class="pre">quantityToPlot</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'FIELD_OUTPUT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.quantityToPlot" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the quantity to plot. Currently only FIELD_OUTPUT is
+supported. Possible values are FIELD_OUTPUT and DISCONTINUITIES. The default value is
+FIELD_OUTPUT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.regionBoundaries">
+<span class="sig-name descname"><span class="pre">regionBoundaries</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'NONE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.regionBoundaries" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the type of averaging region boundaries. Currently only
+NONE and ODB_REGIONS are supported. Possible values are NONE, ODB_REGIONS, ELEMENT_SET,
+and DISPLAY_GROUPS. The default value is NONE.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py#L400-L402"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the OdbMeshRegionData object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.stepIndex">
+<span class="sig-name descname"><span class="pre">stepIndex</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.stepIndex" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the step index. Possible values are 0 ≤≤ <strong>stepIndex</strong> ≤≤ (<em>numSteps</em> −
+1). The default value is 0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.storageType">
+<span class="sig-name descname"><span class="pre">storageType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'FLOAT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.storageType" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the storage type of the field output variable which should
+be aligned with the variable. Possible values are FLOAT, DOUBLE, INTEGER, and BOOLEAN.
+The default value is FLOAT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.transformationType">
+<span class="sig-name descname"><span class="pre">transformationType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'DEFAULT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.transformationType" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the type of the transformation to apply to the output.
+Possible values are DEFAULT, NODAL, ANGULAR, and LAYUP_ORIENTATION.
+The default is Default(Respect element orientations but supress nodal transformations)</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.useRegionBoundaries">
+<span class="sig-name descname"><span class="pre">useRegionBoundaries</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.useRegionBoundaries" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to use region boundaries when averaging. The default value
+is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.variableLabel">
+<span class="sig-name descname"><span class="pre">variableLabel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Field/OdbMeshRegionData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.variableLabel" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the field output variable.</p>
 </dd></dl>
 
 </dd></dl>

@@ -423,6 +423,85 @@ the color associated to each curve. The default value is “Default”.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.frameCounter">
+<span class="sig-name descname"><span class="pre">frameCounter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.frameCounter" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to show the frame counter. The default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.frameRate">
+<span class="sig-name descname"><span class="pre">frameRate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">50</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.frameRate" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the animation rate in frames/second. Possible values are 1 ≤≤
+<strong>frameRate</strong> ≤≤ 100. The default value is 50.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.maxTime">
+<span class="sig-name descname"><span class="pre">maxTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.maxTime" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the maximum time for time based time history animation when
+<strong>maxTimeAutoCompute</strong> = False.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.maxTimeAutoCompute">
+<span class="sig-name descname"><span class="pre">maxTimeAutoCompute</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.maxTimeAutoCompute" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the animation maximum time value should be computed from
+the active frames when <strong>timeHistoryMode</strong> is set to TIME_BASED. The default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.maxTimeAutoValue">
+<span class="sig-name descname"><span class="pre">maxTimeAutoValue</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.maxTimeAutoValue" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the maximum time when <strong>timeHistoryMode</strong> is set to TIME_BASED and the
+<strong>maxTimeAutoCompute</strong> value is True. This value is computed as the maximum time of all
+active frames displayed in viewports where the animation is active.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.minTime">
+<span class="sig-name descname"><span class="pre">minTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.minTime" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the minimum time for time based time history animation when
+<strong>minTimeAutoCompute</strong> = False.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.minTimeAutoCompute">
+<span class="sig-name descname"><span class="pre">minTimeAutoCompute</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.minTimeAutoCompute" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the animation minimum time value should be computed from
+the active frames when <strong>timeHistoryMode</strong> is set to TIME_BASED. The default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.minTimeAutoValue">
+<span class="sig-name descname"><span class="pre">minTimeAutoValue</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.minTimeAutoValue" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the minimum time when <strong>timeHistoryMode</strong> is set to TIME_BASED and the
+<strong>minTimeAutoCompute</strong> value is True. This value is computed as the minimum time of all
+active frames displayed in viewports where the animation is active.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.mode">
+<span class="sig-name descname"><span class="pre">mode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'LOOP'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.mode" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the animation mode. Possible values are PLAY_ONCE, LOOP,
+LOOP_BACKWARD, and SWING. The default value is LOOP.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.numScaleFactorFrames">
+<span class="sig-name descname"><span class="pre">numScaleFactorFrames</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.numScaleFactorFrames" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of frames to be used when the AnimationController object’s
+<strong>animationType</strong> = SCALE_FACTOR or HARMONIC. The default value is 7.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.relativeScaling">
+<span class="sig-name descname"><span class="pre">relativeScaling</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'HALF_CYCLE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.relativeScaling" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the relative scaling when the AnimationController object’s
+<strong>animationType</strong> = SCALE_FACTOR or HARMONIC. Possible values are FULL_CYCLE and HALF_CYCLE.
+The default value is HALF_CYCLE.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'LOOP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frameRate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frameCounter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">relativeScaling</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'HALF_CYCLE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numScaleFactorFrames</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">7</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeHistoryMode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'FRAME_BASED'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxTime</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxTimeAutoCompute</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minTime</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minTimeAutoCompute</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeIncrement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyUseHighlightMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyShowLine</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyLineStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SOLID'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyLineThickness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'MEDIUM'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyLineColor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyShowSymbol</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xySymbolMarker</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xySymbolSize</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'MEDIUM'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xySymbolColor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py#L207-L309"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.setValues" title="Permalink to this definition">#</a></dt>
@@ -507,6 +586,95 @@ the color associated to each curve. The default value is “Default”.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.timeHistoryMode">
+<span class="sig-name descname"><span class="pre">timeHistoryMode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'FRAME_BASED'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.timeHistoryMode" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying whether the time history animation is time based or frame
+based. Possible values are FRAME_BASED and TIME_BASED. The default value is FRAME_BASED.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.timeIncrement">
+<span class="sig-name descname"><span class="pre">timeIncrement</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.timeIncrement" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the time increment for frame selection when <strong>timeHistoryMode</strong> is set
+to TIME_BASED.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.xyLineColor">
+<span class="sig-name descname"><span class="pre">xyLineColor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xyLineColor" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the color used to plot the <strong>X - Y</strong> time tracker line when
+<strong>xyUseHighlightMethod</strong> = False. The default value is “Yellow”.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.xyLineStyle">
+<span class="sig-name descname"><span class="pre">xyLineStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'SOLID'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xyLineStyle" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the <strong>X - Y</strong> time tracker line style. Possible values are
+SOLID, DASHED, DOTTED, and DOT_DASH. The default value is SOLID.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.xyLineThickness">
+<span class="sig-name descname"><span class="pre">xyLineThickness</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'MEDIUM'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xyLineThickness" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the <strong>X - Y</strong> time tracker line thickness. Possible values are
+VERY_THIN, THIN, MEDIUM, and THICK. The default value is MEDIUM.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.xyShowLine">
+<span class="sig-name descname"><span class="pre">xyShowLine</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xyShowLine" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to show the time tracker line. The default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.xyShowSymbol">
+<span class="sig-name descname"><span class="pre">xyShowSymbol</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xyShowSymbol" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to show the time tracker symbols. The default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.xySymbolColor">
+<span class="sig-name descname"><span class="pre">xySymbolColor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xySymbolColor" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the color used to plot <strong>X - Y</strong> time tracker symbols when
+<strong>xyUseHighlightMethod</strong> = False. When setting the color to ‘Default’ the system will take
+the color associated to each curve. The default value is “Default”.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.xySymbolMarker">
+<span class="sig-name descname"><span class="pre">xySymbolMarker</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'DEFAULT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xySymbolMarker" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the marker type to be used for all animation capable <strong>X - Y</strong>
+curve or the SymbolicConstant DEFAULT specifying that the system will take the marker
+associated to each curve Possible values are:
+- FILLED_CIRCLE
+- FILLED_SQUARE
+- FILLED_DIAMOND
+- FILLED_TRI
+- HOLLOW_CIRCLE
+- HOLLOW_SQUARE
+- HOLLOW_DIAMOND
+- HOLLOW_TRI
+- CROSS
+- XMARKER
+- DEFAULT
+The default value is DEFAULT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.xySymbolSize">
+<span class="sig-name descname"><span class="pre">xySymbolSize</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'MEDIUM'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xySymbolSize" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the size of the markers. Possible values are SMALL,
+MEDIUM, and LARGE. The default value is MEDIUM.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.xyUseHighlightMethod">
+<span class="sig-name descname"><span class="pre">xyUseHighlightMethod</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/AnimationOptions.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xyUseHighlightMethod" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to use the highlight method to draw the time tracker line
+and symbols. The default value is ON.</p>
 </dd></dl>
 
 </dd></dl>
@@ -756,6 +924,12 @@ dimensions.</p>
 frames.</p>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.ImageAnimation.ImageAnimation.fileName">
+<span class="sig-name descname"><span class="pre">fileName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/ImageAnimation.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.ImageAnimation.ImageAnimation.fileName" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the file to which the animation frames is to be written.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Animation.ImageAnimation.ImageAnimation.writeFrame">
 <span class="sig-name descname"><span class="pre">writeFrame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">canvasObjects</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/ImageAnimation.py#L51-L60"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.ImageAnimation.ImageAnimation.writeFrame" title="Permalink to this definition">#</a></dt>
@@ -899,6 +1073,50 @@ time in this movie corresponding to <strong>endFrame</strong>. The default value
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.duration">
+<span class="sig-name descname"><span class="pre">duration</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/Movie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.duration" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the duration of the movie in seconds.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.endFrame">
+<span class="sig-name descname"><span class="pre">endFrame</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/Movie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.endFrame" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the last frame to be displayed from this movie. A negative number will
+indicate reverse numbering: -1 is the last frame of the movie. The default value is −1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.fileName">
+<span class="sig-name descname"><span class="pre">fileName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/Movie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.fileName" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the file from which the movie is to be read. The file extension must
+be specified and indicates the movie format (.avi, .mov, .mpeg, or .wmv).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.height">
+<span class="sig-name descname"><span class="pre">height</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/Movie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.height" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the height of the movie in pixels.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.memory">
+<span class="sig-name descname"><span class="pre">memory</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/Movie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.memory" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the memory taken by the movie frames as selected.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/Movie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.name" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the repository name for the movie.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.numFrames">
+<span class="sig-name descname"><span class="pre">numFrames</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/Movie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.numFrames" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the total number of frames on the movie file.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">startFrame</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endFrame</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineStartFrame</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineEndFrame</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineStartTime</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineEndTime</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'END_FRAME_TIME'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/Movie.py#L175-L218"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.setValues" title="Permalink to this definition">#</a></dt>
@@ -943,6 +1161,50 @@ or*timelineEndTime* are outside their respective valid range.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.startFrame">
+<span class="sig-name descname"><span class="pre">startFrame</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/Movie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.startFrame" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the first frame to be displayed from this movie. The default value is
+0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.timelineEndFrame">
+<span class="sig-name descname"><span class="pre">timelineEndFrame</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/Movie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.timelineEndFrame" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the global timeline frame number that corresponds to <strong>endFrame</strong>. A
+negative number will indicate reverse numbering: -1 indicates the last frame to be
+displayed in the viewport. The default value is −1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.timelineEndTime">
+<span class="sig-name descname"><span class="pre">timelineEndTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">abaqusConstants.SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'END_FRAME_TIME'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/Movie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.timelineEndTime" title="Permalink to this definition">#</a></dt>
+<dd><p>The SymbolicConstant END_FRAME_TIME or a Float specifying the global timeline time that
+corresponds to the time of <strong>endFrame</strong>. The SymbolicConstant END_FRAME_TIME indicates the
+time in this movie corresponding to <strong>endFrame</strong>. The default value is END_FRAME_TIME.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.timelineStartFrame">
+<span class="sig-name descname"><span class="pre">timelineStartFrame</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/Movie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.timelineStartFrame" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the global timeline frame number that corresponds to <strong>startFrame</strong>. A
+value of 0 will indicate the first frame to be displayed in the viewport. The default
+value is 0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.timelineStartTime">
+<span class="sig-name descname"><span class="pre">timelineStartTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/Movie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.timelineStartTime" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the global timeline time that corresponds to the time of
+<strong>startFrame</strong>. The default value is 0.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.width">
+<span class="sig-name descname"><span class="pre">width</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Animation/Movie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.width" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the width of the movie in pixels.</p>
 </dd></dl>
 
 </dd></dl>

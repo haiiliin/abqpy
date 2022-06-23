@@ -1339,6 +1339,95 @@ The default value is (-1, 0). The valid range for each float is (0, 1).</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Area.Area.alignment">
+<span class="sig-name descname"><span class="pre">alignment</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'BOTTOM_LEFT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Area.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Area.Area.alignment" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the relative position of the area in its parent when
+<strong>positionMethod</strong> = AUTO_ALIGN. Possible values are:
+- BOTTOM_LEFT
+- BOTTOM_CENTER
+- BOTTOM_RIGHT
+- CENTER_LEFT
+- CENTER
+- CENTER_RIGHT
+- TOP_LEFT
+- TOP_CENTER
+- TOP_RIGHT
+The default value is BOTTOM_LEFT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Area.Area.border">
+<span class="sig-name descname"><span class="pre">border</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><span class="pre">LineStyle</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.LineStyle.LineStyle</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Area.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Area.Area.border" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">LineStyle</span></code></a> object specifying whether and how to draw the border of the area.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Area.Area.height">
+<span class="sig-name descname"><span class="pre">height</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Area.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Area.Area.height" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the height of the area in mm. The default value is 1.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Area.Area.heightScale">
+<span class="sig-name descname"><span class="pre">heightScale</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Area.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Area.Area.heightScale" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the scale as a fraction of the height of the available area when the
+<strong>sizeMethod</strong> = MANUAL. The valid range is (0, 1). The default value is 1.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Area.Area.inset">
+<span class="sig-name descname"><span class="pre">inset</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Area.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Area.Area.inset" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the area is inset or occupies a reserved area. The default
+value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Area.Area.origin">
+<span class="sig-name descname"><span class="pre">origin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Area.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Area.Area.origin" title="Permalink to this definition">#</a></dt>
+<dd><p>A pair of Floats specifying the X- and Y-offsets in millimeters from the lower-left
+corner of the XYPlot.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Area.Area.originOffset">
+<span class="sig-name descname"><span class="pre">originOffset</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Area.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Area.Area.originOffset" title="Permalink to this definition">#</a></dt>
+<dd><p>A pair of Floats specifying the X- and Y-offsets of the origin as a fraction of the
+available area. The <strong>originOffset</strong> argument is ignored unless <strong>positionMethod</strong> = MANUAL.
+The default value is (-1, 0). The valid range for each float is (0, 1).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Area.Area.pb">
+<span class="sig-name descname"><span class="pre">pb</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Area.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Area.Area.pb" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the bottom padding of the area in mm. The default value is 1.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Area.Area.pl">
+<span class="sig-name descname"><span class="pre">pl</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Area.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Area.Area.pl" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the left padding of the area in mm. The default value is 1.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Area.Area.positionMethod">
+<span class="sig-name descname"><span class="pre">positionMethod</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'AUTO_ALIGN'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Area.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Area.Area.positionMethod" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying how the area is positioned. Possible values are AUTO_ALIGN
+and MANUAL. The default value is AUTO_ALIGN.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Area.Area.pr">
+<span class="sig-name descname"><span class="pre">pr</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Area.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Area.Area.pr" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the right padding of the area in mm. The default value is 1.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Area.Area.pt">
+<span class="sig-name descname"><span class="pre">pt</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Area.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Area.Area.pt" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the top padding of the area in mm. The default value is 1.0.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.Area.Area.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">area</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><span class="pre">Area</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.XY.AreaStyle.AreaStyle" title="abaqus.XY.AreaStyle.AreaStyle"><span class="pre">AreaStyle</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">border</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><span class="pre">LineStyle</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'AUTO_ALIGN'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alignment</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOTTOM_LEFT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sizeMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'AUTOMATIC'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">originOffset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">widthScale</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">heightScale</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pl</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pb</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Area.py#L155-L229"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Area.Area.setValues" title="Permalink to this definition">#</a></dt>
@@ -1404,6 +1493,32 @@ value is OFF.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Area.Area.sizeMethod">
+<span class="sig-name descname"><span class="pre">sizeMethod</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'AUTOMATIC'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Area.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Area.Area.sizeMethod" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying how the area size is defined. Possible values are
+AUTOMATIC and MANUAL. The default value is AUTOMATIC.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Area.Area.style">
+<span class="sig-name descname"><span class="pre">style</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.AreaStyle.AreaStyle" title="abaqus.XY.AreaStyle.AreaStyle"><span class="pre">AreaStyle</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.AreaStyle.AreaStyle</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Area.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Area.Area.style" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="#abaqus.XY.AreaStyle.AreaStyle" title="abaqus.XY.AreaStyle.AreaStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">AreaStyle</span></code></a> object specifying whether and how to fill the area.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Area.Area.width">
+<span class="sig-name descname"><span class="pre">width</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Area.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Area.Area.width" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the width of the area in mm. The default value is 1.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Area.Area.widthScale">
+<span class="sig-name descname"><span class="pre">widthScale</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Area.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Area.Area.widthScale" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the scale as a fraction of the width of the available area when the
+sizeMethod=MANUAL. The valid range is (0, 1). The default value is 1.0.</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -1466,6 +1581,20 @@ using this AreaStyle. The default value is SOLID.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AreaStyle.AreaStyle.color">
+<span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AreaStyle.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AreaStyle.AreaStyle.color" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the color to be used when filling an area with this AreaStyle
+object. The default value is “White”.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AreaStyle.AreaStyle.fill">
+<span class="sig-name descname"><span class="pre">fill</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AreaStyle.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AreaStyle.AreaStyle.fill" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to fill the area when using this AreaStyle. The default
+value is ON.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.AreaStyle.AreaStyle.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fill</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SOLID'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AreaStyle.py#L96-L113"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AreaStyle.AreaStyle.setValues" title="Permalink to this definition">#</a></dt>
@@ -1485,6 +1614,13 @@ using this AreaStyle. The default value is SOLID.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AreaStyle.AreaStyle.style">
+<span class="sig-name descname"><span class="pre">style</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'SOLID'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AreaStyle.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AreaStyle.AreaStyle.style" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the area pattern style to be used when filling an area
+using this AreaStyle. The default value is SOLID.</p>
 </dd></dl>
 
 </dd></dl>
@@ -1565,6 +1701,54 @@ title.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Axis.Axis.axisData">
+<span class="sig-name descname"><span class="pre">axisData</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.AxisData.AxisData" title="abaqus.XY.AxisData.AxisData"><span class="pre">AxisData</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.AxisData.AxisData</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Axis.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Axis.Axis.axisData" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="#abaqus.XY.AxisData.AxisData" title="abaqus.XY.AxisData.AxisData"><code class="xref py py-class docutils literal notranslate"><span class="pre">AxisData</span></code></a> object specifying the numerical data of the axis.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Axis.Axis.labelFrequency">
+<span class="sig-name descname"><span class="pre">labelFrequency</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Axis.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Axis.Axis.labelFrequency" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the frequency of the labels with respect to the tick marks. The
+default value is 1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Axis.Axis.labelPlacement">
+<span class="sig-name descname"><span class="pre">labelPlacement</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'INSIDE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Axis.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Axis.Axis.labelPlacement" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying how labels are placed on the axis. Possible values
+are:NONE, specifying that no labels are displayed.INSIDE, specifying that the labels are
+placed on the inside of the axis.OUTSIDE, specifying that the labels are placed on the
+outside of the axis.The default value is INSIDE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Axis.Axis.labelStyle">
+<span class="sig-name descname"><span class="pre">labelStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><span class="pre">TextStyle</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.TextStyle.TextStyle</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Axis.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Axis.Axis.labelStyle" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextStyle</span></code></a> object specifying the text properties to be used when displaying axis
+labels.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Axis.Axis.lineStyle">
+<span class="sig-name descname"><span class="pre">lineStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><span class="pre">LineStyle</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.LineStyle.LineStyle</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Axis.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Axis.Axis.lineStyle" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">LineStyle</span></code></a> object specifying the line properties used to display the axis.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Axis.Axis.placement">
+<span class="sig-name descname"><span class="pre">placement</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'MIN_MAX_EDGE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Axis.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Axis.Axis.placement" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the placement of the axis on the grid. Possible values
+are:MIN_EDGE, specifying that the axis is placed at the minimum edge - for an abscissa
+at the bottom, for an ordinate to the left.MAX_EDGE, specifying that the axis is placed
+at the maximum edge - for an abscissa at the top, for an ordinate at the
+right.MIN_MAX_EDGE, specifying that the axis is placed at the minimum edge - for an
+abscissa at the bottom, for an ordinate to the left - and repeated without labels and
+title at the maximum edge.CENTER, specifying that the axis is placed at the center of
+the grid.The default value is MIN_MAX_EDGE.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.Axis.Axis.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.XY.Axis.Axis" title="abaqus.XY.Axis.Axis"><span class="pre">Axis</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">labelFrequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">labelPlacement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'INSIDE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">labelStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><span class="pre">TextStyle</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><span class="pre">LineStyle</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">placement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'MIN_MAX_EDGE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tickLength</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tickPlacement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'INSIDE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tickStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><span class="pre">LineStyle</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">titleStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><span class="pre">TextStyle</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Axis.py#L113-L168"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Axis.Axis.setValues" title="Permalink to this definition">#</a></dt>
@@ -1612,6 +1796,35 @@ title.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Axis.Axis.tickLength">
+<span class="sig-name descname"><span class="pre">tickLength</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Axis.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Axis.Axis.tickLength" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the length of the ticks in mm. The default value is 2.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Axis.Axis.tickPlacement">
+<span class="sig-name descname"><span class="pre">tickPlacement</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'INSIDE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Axis.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Axis.Axis.tickPlacement" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying how tick marks are placed on the axis. Possible values
+are:NONE, specifying that no tick marks are displayed.INSIDE, specifying that the tick
+marcks are placed on the inside of the axis.OUTSIDE, specifying that the tick marcks are
+placed on the outside of the axis.ACROSS, specifying that the tick marcks are placed
+across the axis.The default value is INSIDE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Axis.Axis.tickStyle">
+<span class="sig-name descname"><span class="pre">tickStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><span class="pre">LineStyle</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.LineStyle.LineStyle</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Axis.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Axis.Axis.tickStyle" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">LineStyle</span></code></a> object specifying the line properties to be used when displaying axis ticks.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Axis.Axis.titleStyle">
+<span class="sig-name descname"><span class="pre">titleStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><span class="pre">TextStyle</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.TextStyle.TextStyle</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Axis.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Axis.Axis.titleStyle" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextStyle</span></code></a> object specifying the text properties to be used when displaying the axis
+title.</p>
 </dd></dl>
 
 </dd></dl>
@@ -1766,6 +1979,123 @@ the axis and associated curves.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.curves">
+<span class="sig-name descname"><span class="pre">curves</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.XYCurveArray.XYCurveArray" title="abaqus.XY.XYCurveArray.XYCurveArray"><span class="pre">XYCurveArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.curves" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="#abaqus.XY.XYCurveArray.XYCurveArray" title="abaqus.XY.XYCurveArray.XYCurveArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYCurveArray</span></code></a> object specifying a read-only sequence of Curve objects associated to
+this axis.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.dbReference">
+<span class="sig-name descname"><span class="pre">dbReference</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.dbReference" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the reference value for decibel computation. The default value is
+1.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.direction">
+<span class="sig-name descname"><span class="pre">direction</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.direction" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the direction of the axis. Possible values are ABSCISSA
+and ORDINATE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.labelFormat">
+<span class="sig-name descname"><span class="pre">labelFormat</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'AUTOMATIC'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.labelFormat" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying how tick labels are formatted. Possible values are
+AUTOMATIC, DECIMAL, SCIENTIFIC, and ENGINEERING. The default value is AUTOMATIC.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.labelNumDigits">
+<span class="sig-name descname"><span class="pre">labelNumDigits</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.labelNumDigits" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of significant digits displayed for the labels. Possible
+values are 1 to 7. The default value is 2.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.maxAutoCompute">
+<span class="sig-name descname"><span class="pre">maxAutoCompute</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.maxAutoCompute" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether or not to use the automatically computed maximum value for
+the axis. The default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.maxAutoValue">
+<span class="sig-name descname"><span class="pre">maxAutoValue</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.maxAutoValue" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the maximum value when <strong>maxAutoCompute</strong> is true.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.maxShownValue">
+<span class="sig-name descname"><span class="pre">maxShownValue</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.maxShownValue" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the current maximum value displayed for this axis. This value is
+different from <strong>maxAutoValue</strong> or <strong>maxValue</strong> when the axis is being transformed (zoom or
+pan).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.maxValue">
+<span class="sig-name descname"><span class="pre">maxValue</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.maxValue" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the maximum value when <strong>maxAutoCompute</strong> is false. By default,
+<strong>maxValue</strong> is set to <strong>maxAutoValue</strong>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.minAutoCompute">
+<span class="sig-name descname"><span class="pre">minAutoCompute</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.minAutoCompute" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether or not to use the automatically computed minimum value for
+the axis. The default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.minAutoValue">
+<span class="sig-name descname"><span class="pre">minAutoValue</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.minAutoValue" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the minimum value when <strong>minAutoCompute</strong> is true.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.minShownValue">
+<span class="sig-name descname"><span class="pre">minShownValue</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.minShownValue" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the current minimum value displayed for this axis. This value is
+different from <strong>minAutoValue</strong> or <strong>minValue</strong> when the axis is being transformed (zoom or
+pan).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.minValue">
+<span class="sig-name descname"><span class="pre">minValue</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.minValue" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the minimum value when <strong>minAutoCompute</strong> is false. By default,
+<strong>minValue</strong> is set to <strong>minAutoValue</strong>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.minorTickCount">
+<span class="sig-name descname"><span class="pre">minorTickCount</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.minorTickCount" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number the number of minor tick marks between major ticks.
+Possible values are 0 ≤≤ <strong>minorTickCount</strong> ≤≤ 20. When the <strong>scale</strong> is set to LOG, the
+minorTickCount is interpreted as the number of ticks per decade and limited to 0, 1, 4,
+8, and 17. The default value is 1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.quantityType">
+<span class="sig-name descname"><span class="pre">quantityType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.QuantityType.QuantityType" title="abaqus.XY.QuantityType.QuantityType"><span class="pre">QuantityType</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.QuantityType.QuantityType</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.quantityType" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.XY.QuantityType.QuantityType" title="abaqus.XY.QuantityType.QuantityType"><code class="xref py py-class docutils literal notranslate"><span class="pre">QuantityType</span></code></a> object specifying the quantity type: i.e. the physical dimension and
+associated label of the data represented by this axis.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.scale">
+<span class="sig-name descname"><span class="pre">scale</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'LINEAR'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.scale" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the type of scale to use for the axis. Possible values
+are:LINEAR, specifying tickmarks and labels are linearly distributed.LOG, specifying
+tickmarks and labels are logarithmically distributed.DB, specifying tickmarks and labels
+are distributed on a decibel scale.DB2, specifying tickmarks and labels are distributed
+on a 2*decibel scale.The default value is LINEAR.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">axisData</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#abaqus.XY.AxisData.AxisData" title="abaqus.XY.AxisData.AxisData"><span class="pre">AxisData</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">labelFormat</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'AUTOMATIC'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">labelNumDigits</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'LINEAR'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dbReference</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minAutoCompute</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minValue</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxAutoCompute</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxValue</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tickMode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'AUTOCOMPUTE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tickIncrement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tickCount</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minorTickCount</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useSystemTitle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py#L232-L316"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.setValues" title="Permalink to this definition">#</a></dt>
@@ -1838,6 +2168,82 @@ user defined. The default value is ON.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.systemTitle">
+<span class="sig-name descname"><span class="pre">systemTitle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.systemTitle" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the system title. The system title is based on the <strong>quantityType</strong> of
+the axis and associated curves.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.tickCount">
+<span class="sig-name descname"><span class="pre">tickCount</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.tickCount" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of major tick marks on the axis when <strong>tickMode</strong>
+=TOTAL_NUMBER. Possible values are 0 ≤≤ <strong>tickCount</strong> ≤≤ 30. The default value is computed
+based on the range of the axis. When the <strong>scale</strong> is set to LOG, the tickCount is
+interpreted as the number of ticks per decade and acceptable values are 1, 4, 8, and 17.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.tickCountShown">
+<span class="sig-name descname"><span class="pre">tickCountShown</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.tickCountShown" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of major ticks effectively shown. This value takes zoom,
+pan and rounding into account.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.tickIncrement">
+<span class="sig-name descname"><span class="pre">tickIncrement</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.tickIncrement" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the increment of the major tick marks on the axis when <strong>tickMode</strong> =
+INCREMENT. Valid values are 0 &lt;&lt; <strong>tickIncrement</strong>. The default value is computed based on
+the results of the automatic method and the range being plotted. When the <strong>scale</strong> is set
+to LOG, the tickIncrement is interpreted as a value per decade and should be between
+0.05 and 1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.tickIncrementShown">
+<span class="sig-name descname"><span class="pre">tickIncrementShown</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.tickIncrementShown" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the shown tick increment of the major ticks. This value takes
+zoom/pan into account.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.tickLabels">
+<span class="sig-name descname"><span class="pre">tickLabels</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.tickLabels" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of Strings specifying the read-only major tick labels shown.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.tickMode">
+<span class="sig-name descname"><span class="pre">tickMode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'AUTOCOMPUTE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.tickMode" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the type of scale to use for the axis. Possible values
+are:AUTOCOMPUTE, specifying tickmarks and labels are automatically computed.INCREMENT,
+specifying tickmarks and labels are defined by a given increment.TOTAL_NUMBER,
+specifying tickmarks and labels are defined by the total number of ticks.The default
+value is AUTOCOMPUTE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.tickValues">
+<span class="sig-name descname"><span class="pre">tickValues</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.tickValues" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of Floats specifying the read-only major tick values shown.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.title">
+<span class="sig-name descname"><span class="pre">title</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.title" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the title of the axis. By default, the title is set to the
+<strong>systemTitle</strong>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.AxisData.AxisData.useSystemTitle">
+<span class="sig-name descname"><span class="pre">useSystemTitle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/AxisData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.AxisData.AxisData.useSystemTitle" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the title to use for the axis title is system defined or
+user defined. The default value is ON.</p>
 </dd></dl>
 
 </dd></dl>
@@ -1946,6 +2352,19 @@ of the Chart.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Chart.Chart.area">
+<span class="sig-name descname"><span class="pre">area</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><span class="pre">Area</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.Area.Area</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Chart.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Chart.Chart.area" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><code class="xref py py-class docutils literal notranslate"><span class="pre">Area</span></code></a> object specifying position, padding, background and borders of the chart.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Chart.Chart.aspectRatio">
+<span class="sig-name descname"><span class="pre">aspectRatio</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Chart.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Chart.Chart.aspectRatio" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the aspect ratio of the grid area. A value of -1 specifies that the
+gridArea will take up all available space. The default value is −1.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.Chart.Chart.autoColor">
 <span class="sig-name descname"><span class="pre">autoColor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lines</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Chart.py#L137-L148"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Chart.Chart.autoColor" title="Permalink to this definition">#</a></dt>
@@ -1967,6 +2386,27 @@ palette defined by the xyColors object.</p>
 <dt class="sig sig-object py" id="abaqus.XY.Chart.Chart.autoSymbol">
 <span class="sig-name descname"><span class="pre">autoSymbol</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Chart.py#L150-L152"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Chart.Chart.autoSymbol" title="Permalink to this definition">#</a></dt>
 <dd><p>This method distributes the symbols on all curves displayed in the chart.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Chart.Chart.axes1">
+<span class="sig-name descname"><span class="pre">axes1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.AxisArray.AxisArray" title="abaqus.XY.AxisArray.AxisArray"><span class="pre">AxisArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Chart.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Chart.Chart.axes1" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="#abaqus.XY.AxisArray.AxisArray" title="abaqus.XY.AxisArray.AxisArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">AxisArray</span></code></a> object specifying a read-only sequence of axis objects displayed as axes1 -
+the abscissa for a Cartesian chart.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Chart.Chart.axes2">
+<span class="sig-name descname"><span class="pre">axes2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.AxisArray.AxisArray" title="abaqus.XY.AxisArray.AxisArray"><span class="pre">AxisArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Chart.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Chart.Chart.axes2" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="#abaqus.XY.AxisArray.AxisArray" title="abaqus.XY.AxisArray.AxisArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">AxisArray</span></code></a> object specifying a read-only sequence of axis objects displayed as axes2 -
+the ordinate for a Cartesian chart.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Chart.Chart.curves">
+<span class="sig-name descname"><span class="pre">curves</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.XYCurve.XYCurve" title="abaqus.XY.XYCurve.XYCurve"><span class="pre">XYCurve</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Chart.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Chart.Chart.curves" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of XYCurve objects specifying a repository of XYCurve objects to display in
+the Chart.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -2045,6 +2485,46 @@ specified by name or object or used for the given QuantityType object.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Chart.Chart.gridArea">
+<span class="sig-name descname"><span class="pre">gridArea</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><span class="pre">Area</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.Area.Area</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Chart.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Chart.Chart.gridArea" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><code class="xref py py-class docutils literal notranslate"><span class="pre">Area</span></code></a> object specifying how to display the grid area.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Chart.Chart.legend">
+<span class="sig-name descname"><span class="pre">legend</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.Legend.Legend" title="abaqus.XY.Legend.Legend"><span class="pre">Legend</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.Legend.Legend</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Chart.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Chart.Chart.legend" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.XY.Legend.Legend" title="abaqus.XY.Legend.Legend"><code class="xref py py-class docutils literal notranslate"><span class="pre">Legend</span></code></a> object specifying the attributes for the legend of the chart.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Chart.Chart.majorAxis1GridStyle">
+<span class="sig-name descname"><span class="pre">majorAxis1GridStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><span class="pre">LineStyle</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.LineStyle.LineStyle</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Chart.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Chart.Chart.majorAxis1GridStyle" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">LineStyle</span></code></a> object specifying the line properties to be used when drawing major
+gridlines along axis 1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Chart.Chart.majorAxis2GridStyle">
+<span class="sig-name descname"><span class="pre">majorAxis2GridStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><span class="pre">LineStyle</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.LineStyle.LineStyle</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Chart.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Chart.Chart.majorAxis2GridStyle" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">LineStyle</span></code></a> object specifying the line properties to be used when drawing major
+gridlines along axis 2.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Chart.Chart.minorAxis1GridStyle">
+<span class="sig-name descname"><span class="pre">minorAxis1GridStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><span class="pre">LineStyle</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.LineStyle.LineStyle</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Chart.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Chart.Chart.minorAxis1GridStyle" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">LineStyle</span></code></a> object specifying the line properties to be used when drawing minor
+gridlines along axis 1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Chart.Chart.minorAxis2GridStyle">
+<span class="sig-name descname"><span class="pre">minorAxis2GridStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><span class="pre">LineStyle</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.LineStyle.LineStyle</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Chart.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Chart.Chart.minorAxis2GridStyle" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">LineStyle</span></code></a> object specifying the line properties to be used when drawing minor
+gridlines along axis 2.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.Chart.Chart.moveAxisDown">
 <span class="sig-name descname"><span class="pre">moveAxisDown</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Chart.py#L223-L232"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Chart.Chart.moveAxisDown" title="Permalink to this definition">#</a></dt>
@@ -2073,6 +2553,12 @@ of the Chart.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Chart.Chart.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Chart.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Chart.Chart.name" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the Chart object.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -2123,6 +2609,39 @@ default value is ON.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Chart.Chart.tagAreaStyle">
+<span class="sig-name descname"><span class="pre">tagAreaStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.AreaStyle.AreaStyle" title="abaqus.XY.AreaStyle.AreaStyle"><span class="pre">AreaStyle</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.AreaStyle.AreaStyle</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Chart.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Chart.Chart.tagAreaStyle" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="#abaqus.XY.AreaStyle.AreaStyle" title="abaqus.XY.AreaStyle.AreaStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">AreaStyle</span></code></a> object specifying the area properties to be used when creating tags.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Chart.Chart.tagBorder">
+<span class="sig-name descname"><span class="pre">tagBorder</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><span class="pre">LineStyle</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.LineStyle.LineStyle</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Chart.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Chart.Chart.tagBorder" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">LineStyle</span></code></a> object specifying the tag area border properties to be used when creating
+tags.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Chart.Chart.tagTextStyle">
+<span class="sig-name descname"><span class="pre">tagTextStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><span class="pre">TextStyle</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.TextStyle.TextStyle</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Chart.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Chart.Chart.tagTextStyle" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextStyle</span></code></a> object specifying the text properties to be used when creating tags.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Chart.Chart.transform">
+<span class="sig-name descname"><span class="pre">transform</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Chart.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Chart.Chart.transform" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of Floats specifying a transformation matrix used to scale or pan along the axes
+of the Chart.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Chart.Chart.useQuantityType">
+<span class="sig-name descname"><span class="pre">useQuantityType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Chart.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Chart.Chart.useQuantityType" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to use the QuantityType to associate curves with axes. The
+default value is ON.</p>
 </dd></dl>
 
 </dd></dl>
@@ -2236,6 +2755,20 @@ the XY-Plot title.</p>
 </dl>
 </dd>
 </dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.DefaultPlot.DefaultPlot.area">
+<span class="sig-name descname"><span class="pre">area</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><span class="pre">Area</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.Area.Area</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/DefaultPlot.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.DefaultPlot.DefaultPlot.area" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><code class="xref py py-class docutils literal notranslate"><span class="pre">Area</span></code></a> object specifying an Area used to hold on to the default display properties for
+the plot area.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.DefaultPlot.DefaultPlot.title">
+<span class="sig-name descname"><span class="pre">title</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.Title.Title" title="abaqus.XY.Title.Title"><span class="pre">Title</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.Title.Title</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/DefaultPlot.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.DefaultPlot.DefaultPlot.title" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.XY.Title.Title" title="abaqus.XY.Title.Title"><code class="xref py py-class docutils literal notranslate"><span class="pre">Title</span></code></a> object specifying a Title object used to hold on to the default properties of
+the XY-Plot title.</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -2295,6 +2828,27 @@ string.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Legend.Legend.area">
+<span class="sig-name descname"><span class="pre">area</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><span class="pre">Area</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.Area.Area</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Legend.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Legend.Legend.area" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><code class="xref py py-class docutils literal notranslate"><span class="pre">Area</span></code></a> object specifying the area of the legend.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Legend.Legend.numDigits">
+<span class="sig-name descname"><span class="pre">numDigits</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Legend.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Legend.Legend.numDigits" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of significant digits displayed for the minimum and maximum
+values. Possible values are 1 to 7. The default value is 2.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Legend.Legend.numberFormat">
+<span class="sig-name descname"><span class="pre">numberFormat</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'AUTOMATIC'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Legend.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Legend.Legend.numberFormat" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying how the minimum and maximum values are formatted. Possible
+values are AUTOMATIC, DECIMAL, SCIENTIFIC, and ENGINEERING. The default value is
+AUTOMATIC.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.Legend.Legend.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">legend</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.XY.Legend.Legend" title="abaqus.XY.Legend.Legend"><span class="pre">Legend</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">showMinMax</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberFormat</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'AUTOMATIC'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numDigits</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">textStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><span class="pre">TextStyle</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">titleStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><span class="pre">TextStyle</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Legend.py#L75-L112"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Legend.Legend.setValues" title="Permalink to this definition">#</a></dt>
@@ -2326,6 +2880,38 @@ values. Possible values are 1 to 7. The default value is 2.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Legend.Legend.show">
+<span class="sig-name descname"><span class="pre">show</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Legend.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Legend.Legend.show" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to show the legend. The default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Legend.Legend.showMinMax">
+<span class="sig-name descname"><span class="pre">showMinMax</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Legend.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Legend.Legend.showMinMax" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to display the minimum and maximum values. The default
+value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Legend.Legend.textStyle">
+<span class="sig-name descname"><span class="pre">textStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><span class="pre">TextStyle</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.TextStyle.TextStyle</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Legend.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Legend.Legend.textStyle" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextStyle</span></code></a> object specifying the text properties used to display the legend text.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Legend.Legend.title">
+<span class="sig-name descname"><span class="pre">title</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Legend.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Legend.Legend.title" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the title to appear on the legend. The default value is an empty
+string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Legend.Legend.titleStyle">
+<span class="sig-name descname"><span class="pre">titleStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><span class="pre">TextStyle</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.TextStyle.TextStyle</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Legend.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Legend.Legend.titleStyle" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextStyle</span></code></a> object specifying the text properties used to display the legend title.</p>
 </dd></dl>
 
 </dd></dl>
@@ -2426,6 +3012,13 @@ LineStyle. The default value is 0.2.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.LineStyle.LineStyle.color">
+<span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/LineStyle.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.LineStyle.LineStyle.color" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the color to be used when drawing a line with this LineStyle object.
+The default value is “White”.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.LineStyle.LineStyle.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SOLID'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/LineStyle.py#L145-L170"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.LineStyle.LineStyle.setValues" title="Permalink to this definition">#</a></dt>
@@ -2449,6 +3042,28 @@ LineStyle. The default value is 0.2.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.LineStyle.LineStyle.show">
+<span class="sig-name descname"><span class="pre">show</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/LineStyle.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.LineStyle.LineStyle.show" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to draw the line when using this LineStyle. The default
+value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.LineStyle.LineStyle.style">
+<span class="sig-name descname"><span class="pre">style</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'SOLID'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/LineStyle.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.LineStyle.LineStyle.style" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the line style to be used when drawing lines using this
+LineStyle. Possible values are SOLID, DASHED, DOTTED, and DOT_DASH. The default value is
+SOLID.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.LineStyle.LineStyle.thickness">
+<span class="sig-name descname"><span class="pre">thickness</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/LineStyle.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.LineStyle.LineStyle.thickness" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the line thickness in mm to be used when drawing lines using this
+LineStyle. The default value is 0.2.</p>
 </dd></dl>
 
 </dd></dl>
@@ -2603,10 +3218,95 @@ QuantityType objects can be created using the methods described below.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.QuantityType.QuantityType.label">
+<span class="sig-name descname"><span class="pre">label</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/QuantityType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.QuantityType.QuantityType.label" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the label for this quantity type.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.QuantityType.QuantityType.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/QuantityType.py#L318-L320"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.QuantityType.QuantityType.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the QuantityType object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.QuantityType.QuantityType.type">
+<span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/QuantityType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.QuantityType.QuantityType.type" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the physical dimension of the axis. Possible values are:
+- NONE.
+- ACCELERATION.
+- ACOUSTIC_INTENSITY.
+- ANGLE.
+- ANGULAR_MOMENTUM.
+- ARC_LENGTH.
+- AREA.
+- AREA_VELOCITY_SQUARED, specifying “Velocity squared per area”.
+- BIMOMENT.
+- CURVATURE.
+- CORIOLIS_LOAD.
+- DAMAGE.
+- DAMAGE_CRITERION.
+- DENSITY.
+- DENSITY_ROTATIONAL_ACCELERATION, specifying “Density * Angular acceleration”.
+- DISPLACEMENT.
+- ECURRENT_AREA_TIME, specifying “Time integrated electric current per area”.
+- ELECTRIC_CHARGE.
+- ELECTRIC_CURRENT.
+- ELECTRIC_CURRENT_AREA, specifying “Electric current per unit area”.
+- ELECTRIC_POTENTIAL.
+- ENERGY.
+- ENERGY_DENSITY.
+- ENERGY_RELEASE_RATE.
+- EPOTENTIAL_GRADIENT, specifying “Electric potential gradient”.
+- FREQUENCY.
+- FORCE.
+- FORCE_VOLUME, specifying “Force per volume”.
+- HEAT_FLUX.
+- HEAT_FLUX_AREA, specifying “Heat flux per area”.
+- HEAT_FLUX_RATE.
+- HEAT_FLUX_VOLUME, specifying “Heat flux per volume”.
+- LENGTH.
+- LINEAR_PRESSURE.
+- LUMIN, specifying “Luminous intensity”.
+- MASS.
+- MASS_FLOW_AREA, specifying “Mass flow per area”.
+- MASS_FLOW_AREA_RATE, specifying “Mass flow rate per area”.
+- MASS_FLOW_RATE.
+- MODE_NUMBER.
+- MOMENT.
+- NUMBER.
+- PATH.
+- PHASE.
+- POSITION.
+- PRESSURE.
+- PRESSURE_GRADIENT.
+- RATE.
+- ROTARY_INERTIA.
+- ROTATIONAL_ACCELERATION.
+- ROTATIONAL_VELOCITY.
+- STATUS.
+- STRAIN.
+- STRAIN_RATE.
+- STRESS.
+- STRESS_INTENS_FACTOR, specifying “Stress intensity factor”.
+- SUBSTANCE, specifying “Amount of substance”.
+- TEMPERATURE.
+- THICKNESS.
+- TIME.
+- TIME_INCREMENT.
+- TIME_HEAT_FLUX, specifying “Time integrated heat flux”.
+- TIME_HEAT_FLUX_AREA, specifying “Time integrated heat flux per area”.
+- TIME_VOLUME, specifying “Time integrated volume”.
+- TIME_VOLUME_FLUX, specifying “Time integrated volume flux per area”.
+- TWIST.
+- VELOCITY.
+- VELOCITY_SQUARED.
+- VOLUME.
+- VOLUME_FLUX.
+- VOLUME_FLUX_AREA, specifying “Volume flux per area”.
+- VOLUME_FRACTION.</p>
+<p>The default value is NONE</p>
 </dd></dl>
 
 </dd></dl>
@@ -2681,6 +3381,32 @@ SymbolStyle object. The default value is 2.0.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.SymbolStyle.SymbolStyle.color">
+<span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/SymbolStyle.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.SymbolStyle.SymbolStyle.color" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the color to be used when drawing a marker with this SymbolStyle
+object. The default value is “White”.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.SymbolStyle.SymbolStyle.marker">
+<span class="sig-name descname"><span class="pre">marker</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'FILLED_CIRCLE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/SymbolStyle.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.SymbolStyle.SymbolStyle.marker" title="Permalink to this definition">#</a></dt>
+<dd><ul class="simple">
+<li><p>FILLED_CIRCLE</p></li>
+<li><p>FILLED_SQUARE</p></li>
+<li><p>FILLED_DIAMOND</p></li>
+<li><p>FILLED_TRI</p></li>
+<li><p>HOLLOW_CIRCLE</p></li>
+<li><p>HOLLOW_SQUARE</p></li>
+<li><p>HOLLOW_DIAMOND</p></li>
+<li><p>HOLLOW_TRI</p></li>
+<li><p>CROSS</p></li>
+<li><p>XMARKER</p></li>
+<li><p>POINT</p></li>
+</ul>
+<p>The default value is FILLED_CIRCLE.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.SymbolStyle.SymbolStyle.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">marker</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'FILLED_CIRCLE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/SymbolStyle.py#L146-L184"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.SymbolStyle.SymbolStyle.setValues" title="Permalink to this definition">#</a></dt>
@@ -2717,6 +3443,20 @@ SymbolStyle object. The default value is 2.0.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.SymbolStyle.SymbolStyle.show">
+<span class="sig-name descname"><span class="pre">show</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/SymbolStyle.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.SymbolStyle.SymbolStyle.show" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to draw the marker when using this SymbolStyle object. The
+default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.SymbolStyle.SymbolStyle.size">
+<span class="sig-name descname"><span class="pre">size</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/SymbolStyle.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.SymbolStyle.SymbolStyle.size" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the marker size to be used when drawing markers using this
+SymbolStyle object. The default value is 2.0.</p>
 </dd></dl>
 
 </dd></dl>
@@ -2791,6 +3531,27 @@ is 0.0.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.TextStyle.TextStyle.color">
+<span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/TextStyle.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.TextStyle.TextStyle.color" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the color to be used when drawing text with this TextStyle object.
+The default value is “White”.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.TextStyle.TextStyle.font">
+<span class="sig-name descname"><span class="pre">font</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/TextStyle.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.TextStyle.TextStyle.font" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the font to be used when drawing text with this
+TextStyle object. The default value is “-<em>-verdana-medium-r-normal-</em>-<em>-120-</em>-<em>-p-</em>-<em>-</em>“.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.TextStyle.TextStyle.rotationAngle">
+<span class="sig-name descname"><span class="pre">rotationAngle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/TextStyle.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.TextStyle.TextStyle.rotationAngle" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the angle in degrees used for displaying the text. The default value
+is 0.0.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.TextStyle.TextStyle.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rotationAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/TextStyle.py#L117-L141"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.TextStyle.TextStyle.setValues" title="Permalink to this definition">#</a></dt>
@@ -2813,6 +3574,13 @@ is 0.0.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.TextStyle.TextStyle.show">
+<span class="sig-name descname"><span class="pre">show</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/TextStyle.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.TextStyle.TextStyle.show" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to draw the text when using this TextStyle object. The
+default value is ON.</p>
 </dd></dl>
 
 </dd></dl>
@@ -2861,6 +3629,12 @@ object is automatically created when creating a XYPlot object.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Title.Title.area">
+<span class="sig-name descname"><span class="pre">area</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><span class="pre">Area</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.Area.Area</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Title.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Title.Title.area" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><code class="xref py py-class docutils literal notranslate"><span class="pre">Area</span></code></a> object specifying the area of the title.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.Title.Title.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.XY.Title.Title" title="abaqus.XY.Title.Title"><span class="pre">Title</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">area</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><span class="pre">Area</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useDefault</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">titleStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><span class="pre">TextStyle</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Title.py#L46-L70"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Title.Title.setValues" title="Permalink to this definition">#</a></dt>
@@ -2882,6 +3656,25 @@ XYPlot object name. The default value is an empty string.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Title.Title.text">
+<span class="sig-name descname"><span class="pre">text</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Title.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Title.Title.text" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the text to appear as a title. By default the title is set to the
+XYPlot object name. The default value is an empty string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Title.Title.titleStyle">
+<span class="sig-name descname"><span class="pre">titleStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><span class="pre">TextStyle</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.TextStyle.TextStyle</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Title.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Title.Title.titleStyle" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.XY.TextStyle.TextStyle" title="abaqus.XY.TextStyle.TextStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextStyle</span></code></a> object specifying the text properties used to display the legend title.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.Title.Title.useDefault">
+<span class="sig-name descname"><span class="pre">useDefault</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/Title.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.Title.Title.useDefault" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to show the default title. The default value is OFF.</p>
 </dd></dl>
 
 </dd></dl>
@@ -2986,6 +3779,46 @@ Possible values are LINE and SYMBOL. The default value is (LINE).</p>
 </div>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYCurve.XYCurve.data">
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.XYData.XYData" title="abaqus.XY.XYData.XYData"><span class="pre">XYData</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYCurve.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYCurve.XYCurve.data" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="#abaqus.XY.XYData.XYData" title="abaqus.XY.XYData.XYData"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYData</span></code></a> object specifying the data for the curve.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYCurve.XYCurve.displayTypes">
+<span class="sig-name descname"><span class="pre">displayTypes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYCurve.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYCurve.XYCurve.displayTypes" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of SymbolicConstants specifying that describe how curves are to be displayed.
+Possible values are LINE and SYMBOL. The default value is (LINE).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYCurve.XYCurve.legendLabel">
+<span class="sig-name descname"><span class="pre">legendLabel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYCurve.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYCurve.XYCurve.legendLabel" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the label to be displayed in the legend. By default, the label is
+system defined.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYCurve.XYCurve.legendSource">
+<span class="sig-name descname"><span class="pre">legendSource</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'CURVE_LEGEND'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYCurve.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYCurve.XYCurve.legendSource" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying how the system supplied, default legend label is to be
+generated. Possible values are CURVE_LEGEND, CURVE_NAME, and CURVE_NAME_LEGEND. The
+default value is CURVE_LEGEND.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYCurve.XYCurve.lineStyle">
+<span class="sig-name descname"><span class="pre">lineStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><span class="pre">LineStyle</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.LineStyle.LineStyle</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYCurve.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYCurve.XYCurve.lineStyle" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.XY.LineStyle.LineStyle" title="abaqus.XY.LineStyle.LineStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">LineStyle</span></code></a> object specifying the line properties used to display the curve.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYCurve.XYCurve.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYCurve.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYCurve.XYCurve.name" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the repository key.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.XYCurve.XYCurve.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">displayTypes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legendLabel</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbolFrequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useDefault</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYCurve.py#L116-L141"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYCurve.XYCurve.setValues" title="Permalink to this definition">#</a></dt>
@@ -3009,6 +3842,27 @@ is ON.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYCurve.XYCurve.symbolFrequency">
+<span class="sig-name descname"><span class="pre">symbolFrequency</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYCurve.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYCurve.XYCurve.symbolFrequency" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the frequency of plotting the markers. Possible values are
+<strong>symbolFrequency</strong> &gt;&gt; 0. If <strong>symbolFrequency</strong> = 1, then markers are plotted at every point.
+The default value is 1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYCurve.XYCurve.symbolStyle">
+<span class="sig-name descname"><span class="pre">symbolStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.SymbolStyle.SymbolStyle" title="abaqus.XY.SymbolStyle.SymbolStyle"><span class="pre">SymbolStyle</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.SymbolStyle.SymbolStyle</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYCurve.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYCurve.XYCurve.symbolStyle" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.XY.SymbolStyle.SymbolStyle" title="abaqus.XY.SymbolStyle.SymbolStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolStyle</span></code></a> object specifying the symbol properties used to display the curve.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYCurve.XYCurve.useDefault">
+<span class="sig-name descname"><span class="pre">useDefault</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYCurve.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYCurve.XYCurve.useDefault" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to use the system supplied legend label. The default value
+is ON.</p>
 </dd></dl>
 
 </dd></dl>
@@ -3425,11 +4279,11 @@ data extraction when <strong>projectOntoMesh</strong> =  True. The default value
 </dd>
 <dt>ErrorInvalidUserStepAndFrame: <code class="xref py py-obj docutils literal notranslate"><span class="pre">The</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">user</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">step</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">and</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">frame</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specified</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">have</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">been</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">defined</span></code></dt><dd><p>If <strong>step</strong> and/or <strong>frame</strong> are invalid.</p>
 </dd>
-<dt>ErrorNoVarInPathExtract: <code class="xref py py-obj docutils literal notranslate"><span class="pre">No</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">variable</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">selection</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">for</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">XY</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">extraction</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">from</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">path</span></code></dt><dd><p>If the <strong>variable</strong> argument is empty.</p>
+<dt>ErrorNoVarInPathExtract: <code class="xref py py-obj docutils literal notranslate"><span class="pre">No</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">variable</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">selection</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">for</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">XY</span></code> <a class="reference internal" href="#abaqus.XY.XYData.XYData.data" title="abaqus.XY.XYData.XYData.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">extraction</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">from</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">path</span></code></dt><dd><p>If the <strong>variable</strong> argument is empty.</p>
 </dd>
 <dt>ErrorUnavailableSelectedVariable: <code class="xref py py-obj docutils literal notranslate"><span class="pre">The</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">selected</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">variable</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">available</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">for</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">current</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">frame</span></code></dt><dd><p>If the specified output variable is not available in the output database.</p>
 </dd>
-<dt>ErrorUnusableVarInPathExtract: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Specified</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">variable</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">cannot</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">be</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">used</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">in</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">XY</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">extraction</span></code></dt><dd><p>If the specified output variable cannot be used to obtain <strong>X - Y</strong> data from path.</p>
+<dt>ErrorUnusableVarInPathExtract: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Specified</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">variable</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">cannot</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">be</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">used</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">in</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">XY</span></code> <a class="reference internal" href="#abaqus.XY.XYData.XYData.data" title="abaqus.XY.XYData.XYData.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">extraction</span></code></dt><dd><p>If the specified output variable cannot be used to obtain <strong>X - Y</strong> data from path.</p>
 </dd>
 <dt>ErrorUnsupportedRefinementType: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Unsupported</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">refinement</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">type</span></code></dt><dd><p>If the SymbolicConstant specifying the refinement type is invalid.</p>
 </dd>
@@ -3531,6 +4385,68 @@ complex numbers when <strong>numericForm</strong> = COMPLEX_VAL_AT_ANGLE. The de
 </div>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYData.XYData.axis1QuantityType">
+<span class="sig-name descname"><span class="pre">axis1QuantityType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.QuantityType.QuantityType" title="abaqus.XY.QuantityType.QuantityType"><span class="pre">QuantityType</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYData.XYData.axis1QuantityType" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.XY.QuantityType.QuantityType" title="abaqus.XY.QuantityType.QuantityType"><code class="xref py py-class docutils literal notranslate"><span class="pre">QuantityType</span></code></a> object specifying the QuantityType object associated to the X -axis1-
+values.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYData.XYData.axis2QuantityType">
+<span class="sig-name descname"><span class="pre">axis2QuantityType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.QuantityType.QuantityType" title="abaqus.XY.QuantityType.QuantityType"><span class="pre">QuantityType</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYData.XYData.axis2QuantityType" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.XY.QuantityType.QuantityType" title="abaqus.XY.QuantityType.QuantityType"><code class="xref py py-class docutils literal notranslate"><span class="pre">QuantityType</span></code></a> object specifying the QuantityType object associated to the Y -axis2-
+values.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYData.XYData.contentDescription">
+<span class="sig-name descname"><span class="pre">contentDescription</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYData.XYData.contentDescription" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the content of the <strong>X - Y</strong> data (e.g., “field 1 vs. field 2”). The
+default value is an empty string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYData.XYData.data">
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYData.XYData.data" title="Permalink to this definition">#</a></dt>
+<dd><p>A sequence of pairs of Floats specifying the <strong>X - Y</strong> data pairs.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYData.XYData.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYData.XYData.description" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the complete description of the XYData object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYData.XYData.fileName">
+<span class="sig-name descname"><span class="pre">fileName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYData.XYData.fileName" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the source file name of the XYData object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYData.XYData.legendLabel">
+<span class="sig-name descname"><span class="pre">legendLabel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYData.XYData.legendLabel" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the label to be used in the legend. The default value is the name of
+the XYData object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYData.XYData.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYData.XYData.name" title="Permalink to this definition">#</a></dt>
+<dd><p>The repository key. If the name is not supplied while creating the XYData object using
+xyPlot.XYData, a default name in the form _temp#_ is generated and the XYData object is
+temporary. (This argument is required if the method is accessed from the session
+object.)</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYData.XYData.positionDescription">
+<span class="sig-name descname"><span class="pre">positionDescription</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYData.XYData.positionDescription" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying additional information about the <strong>X - Y</strong> data (e.g., “for whole
+model”). The default value is an empty string.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.XYData.XYData.save">
 <span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYData.py#L767-L771"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYData.XYData.save" title="Permalink to this definition">#</a></dt>
@@ -3572,6 +4488,27 @@ values.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYData.XYData.sourceDescription">
+<span class="sig-name descname"><span class="pre">sourceDescription</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYData.XYData.sourceDescription" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the source of the <strong>X - Y</strong> data (e.g., “Entered from keyboard”, “Taken
+from ASCII file”, “Read from an ODB”, etc.). The default value is an empty string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYData.XYData.sourceType">
+<span class="sig-name descname"><span class="pre">sourceType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYData.XYData.sourceType" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the source type of the XYData object. Possible values are
+FROM_ODB, FROM_KEYBOARD, FROM_ASCII_FILE, FROM_OPERATION, and FROM_USER_DEFINED.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYData.XYData.xValuesLabel">
+<span class="sig-name descname"><span class="pre">xValuesLabel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYData.XYData.xValuesLabel" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the label for the X-values. This value may be overridden if the
+<strong>X - Y</strong> data are combined with other <strong>X - Y</strong> data. The default value is an empty string.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -3665,6 +4602,13 @@ on the data, and the data will be saved as is.</p>
 <span class="n">xyPlot</span><span class="o">.</span><span class="n">XYData</span>
 </pre></div>
 </div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYData.XYData.yValuesLabel">
+<span class="sig-name descname"><span class="pre">yValuesLabel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYData.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYData.XYData.yValuesLabel" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the label for the Y-values. This value may be overridden if the
+<strong>X - Y</strong> data are combined with other <strong>X - Y</strong> data. The default value is an empty string.</p>
 </dd></dl>
 
 </dd></dl>
@@ -4055,6 +4999,13 @@ of the active <a class="reference internal" href="#abaqus.XY.Chart.Chart" title=
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYPlotBase.XYPlotBase.area">
+<span class="sig-name descname"><span class="pre">area</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><span class="pre">Area</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.Area.Area</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYPlotBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYPlotBase.XYPlotBase.area" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="#abaqus.XY.Area.Area" title="abaqus.XY.Area.Area"><code class="xref py py-class docutils literal notranslate"><span class="pre">Area</span></code></a> object specifying position, padding, background and borders of the XYPlot
+object.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.XY.XYPlotBase.XYPlotBase.autoColor">
 <span class="sig-name descname"><span class="pre">autoColor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lines</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYPlotBase.py#L76-L87"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYPlotBase.XYPlotBase.autoColor" title="Permalink to this definition">#</a></dt>
@@ -4076,6 +5027,18 @@ palette defined by the xyColors AutoColors object.</p>
 <dt class="sig sig-object py" id="abaqus.XY.XYPlotBase.XYPlotBase.autoSymbol">
 <span class="sig-name descname"><span class="pre">autoSymbol</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYPlotBase.py#L89-L91"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYPlotBase.XYPlotBase.autoSymbol" title="Permalink to this definition">#</a></dt>
 <dd><p>This method distributes the symbols on all curves displayed in the XYPlot.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYPlotBase.XYPlotBase.charts">
+<span class="sig-name descname"><span class="pre">charts</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.Chart.Chart" title="abaqus.XY.Chart.Chart"><span class="pre">Chart</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYPlotBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYPlotBase.XYPlotBase.charts" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Chart objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYPlotBase.XYPlotBase.curves">
+<span class="sig-name descname"><span class="pre">curves</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.XYCurve.XYCurve" title="abaqus.XY.XYCurve.XYCurve"><span class="pre">XYCurve</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYPlotBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYPlotBase.XYPlotBase.curves" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of XYCurve objects.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -4136,6 +5099,19 @@ axes of the active Chart object of this XYPlot.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYPlotBase.XYPlotBase.title">
+<span class="sig-name descname"><span class="pre">title</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.XY.Title.Title" title="abaqus.XY.Title.Title"><span class="pre">Title</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.XY.Title.Title</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYPlotBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYPlotBase.XYPlotBase.title" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.XY.Title.Title" title="abaqus.XY.Title.Title"><code class="xref py py-class docutils literal notranslate"><span class="pre">Title</span></code></a> object specifying the title of the XYPlot object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.XY.XYPlotBase.XYPlotBase.transform">
+<span class="sig-name descname"><span class="pre">transform</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/XY/XYPlotBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.XY.XYPlotBase.XYPlotBase.transform" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of Floats specifying a transformation matrix used to scale or pan along the axes
+of the active Chart object of this XYPlot.</p>
 </dd></dl>
 
 </dd></dl>

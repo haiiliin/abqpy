@@ -463,6 +463,42 @@ created. When the key is created, it gets the appropriate values from this mappi
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.AttributeColorMap.AttributeColorMap.attributeColors">
+<span class="sig-name descname"><span class="pre">attributeColors</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/AttributeColorMap.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.AttributeColorMap.AttributeColorMap.attributeColors" title="Permalink to this definition">#</a></dt>
+<dd><p>A Dictionary object specifying the color settings of each attribute as described in the
+[updateOverrides
+](<a class="reference external" href="https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-attributecolormappyc.htm?ContextScope=all#simaker-attributecolormapupdateoverridespyc)method">https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-attributecolormappyc.htm?ContextScope=all#simaker-attributecolormapupdateoverridespyc)method</a>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.AttributeColorMap.AttributeColorMap.defaultOverrides">
+<span class="sig-name descname"><span class="pre">defaultOverrides</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/AttributeColorMap.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.AttributeColorMap.AttributeColorMap.defaultOverrides" title="Permalink to this definition">#</a></dt>
+<dd><p>A Dictionary object specifying a custom color mapping similar to overrides. For
+example:<a href="#id3"><span class="problematic" id="id4">`</span></a>defaultOverrides={                        ‘Copper’:(1,’’#00FF00’, ‘#00CCFF’,</p>
+<blockquote>
+<div><p>‘#00FF00’)}`The color mapping can contain keys that have not been</p>
+</div></blockquote>
+<p>created. When the key is created, it gets the appropriate values from this mapping.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.AttributeColorMap.AttributeColorMap.mapType">
+<span class="sig-name descname"><span class="pre">mapType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/AttributeColorMap.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.AttributeColorMap.AttributeColorMap.mapType" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the type of AttributeColorMap . Possible values are
+MATERIAL_MAP, SECTION_MAP, PART_MAP, ELSET_MAP, AVERAGING_REGION_MAP, and ELTYPE_MAP.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.AttributeColorMap.AttributeColorMap.overrides">
+<span class="sig-name descname"><span class="pre">overrides</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/AttributeColorMap.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.AttributeColorMap.AttributeColorMap.overrides" title="Permalink to this definition">#</a></dt>
+<dd><p>A Dictionary object specifying a color mapping. Each key is of String type and specifies
+an attribute in the map; the corresponding values specify the color definition to apply
+to that attribute in the form (0|1, wire color, edge color, face color). The 0|1 defines
+the active status for the attribute. For example:<cite>overrides={
+‘Part-1’:(1,’#00FF00’, ‘#00CCFF’,                        ‘#00FF00’)}</cite></p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.AttributeColorMap.AttributeColorMap.setDefaults">
 <span class="sig-name descname"><span class="pre">setDefaults</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/AttributeColorMap.py#L63-L65"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.AttributeColorMap.AttributeColorMap.setDefaults" title="Permalink to this definition">#</a></dt>
@@ -483,7 +519,7 @@ the active status for the attribute. For example:<cite>overrides={
 ‘Part-1’:(1,’#00FF00’, ‘#00CCFF’,                        ‘#00FF00’)}</cite></p>
 </dd>
 <dt><strong>defaultOverrides</strong></dt><dd><p>A Dictionary object specifying a custom color mapping similar to overrides. For
-example:<a href="#id3"><span class="problematic" id="id4">`</span></a>defaultOverrides={                        ‘Copper’:(1,’’#00FF00’, ‘#00CCFF’,</p>
+example:<a href="#id5"><span class="problematic" id="id6">`</span></a>defaultOverrides={                        ‘Copper’:(1,’’#00FF00’, ‘#00CCFF’,</p>
 <blockquote>
 <div><p>‘#00FF00’)}`The color mapping can contain keys that have not been</p>
 </div></blockquote>
@@ -508,7 +544,7 @@ the active status for the attribute. For example:<cite>overrides={
 ‘Part-1’:(1,’#00FF00’, ‘#00CCFF’,                        ‘#00FF00’)}</cite></p>
 </dd>
 <dt><strong>defaultOverrides</strong></dt><dd><p>A Dictionary object specifying a custom color mapping similar to overrides. For
-example:<a href="#id5"><span class="problematic" id="id6">`</span></a>defaultOverrides={                        ‘Copper’:(1,’’#00FF00’, ‘#00CCFF’,</p>
+example:<a href="#id7"><span class="problematic" id="id8">`</span></a>defaultOverrides={                        ‘Copper’:(1,’’#00FF00’, ‘#00CCFF’,</p>
 <blockquote>
 <div><p>‘#00FF00’)}`The color mapping can contain keys that have not been</p>
 </div></blockquote>
@@ -522,8 +558,8 @@ example:<a href="#id5"><span class="problematic" id="id6">`</span></a>defaultOve
 </dd></dl>
 
 </section>
-<section id="id7">
-<h3>Canvas<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h3>
+<section id="id9">
+<h3>Canvas<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Canvas.Canvas.Canvas">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Canvas</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Canvas.py#L1-L2"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Canvas.Canvas" title="Permalink to this definition">#</a></dt>
@@ -563,6 +599,25 @@ millimeters.</p>
 </dl>
 </dd>
 </dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.DrawingArea.DrawingArea.height">
+<span class="sig-name descname"><span class="pre">height</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/DrawingArea.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.DrawingArea.DrawingArea.height" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the height in millimeters.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.DrawingArea.DrawingArea.origin">
+<span class="sig-name descname"><span class="pre">origin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/DrawingArea.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.DrawingArea.DrawingArea.origin" title="Permalink to this definition">#</a></dt>
+<dd><p>A pair of Floats specifying the coordinates of the bottom left hand corner in
+millimeters.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.DrawingArea.DrawingArea.width">
+<span class="sig-name descname"><span class="pre">width</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/DrawingArea.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.DrawingArea.DrawingArea.width" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the width in millimeters.</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -716,6 +771,26 @@ ConstrainedSketch, Odb, or XYPlot.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.Layer.Layer.assemblyDisplay">
+<span class="sig-name descname"><span class="pre">assemblyDisplay</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="display_options.html#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions"><span class="pre">AssemblyDisplayOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Layer.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Layer.Layer.assemblyDisplay" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AssemblyDisplayOptions</span></code></a> object specifying the display options for the Assembly object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.Layer.Layer.copyViewName">
+<span class="sig-name descname"><span class="pre">copyViewName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Layer.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Layer.Layer.copyViewName" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the layer to copy.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.Layer.Layer.displayedObject">
+<span class="sig-name descname"><span class="pre">displayedObject</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Canvas.Displayable.Displayable" title="abaqus.Canvas.Displayable.Displayable"><span class="pre">Displayable</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Canvas.Displayable.Displayable</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Layer.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Layer.Layer.displayedObject" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.Canvas.Displayable.Displayable" title="abaqus.Canvas.Displayable.Displayable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Displayable</span></code></a> object specifying the object to be displayed. The Displayable type is an
+abstract generalization. The concrete possible types are Part, Assembly,
+ConstrainedSketch, Odb, or XYPlot.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.Layer.Layer.moveAfter">
 <span class="sig-name descname"><span class="pre">moveAfter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Layer.py#L97-L105"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Layer.Layer.moveAfter" title="Permalink to this definition">#</a></dt>
@@ -742,6 +817,30 @@ ConstrainedSketch, Odb, or XYPlot.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.Layer.Layer.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Layer.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Layer.Layer.name" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the repository key.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.Layer.Layer.odbDisplay">
+<span class="sig-name descname"><span class="pre">odbDisplay</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="odb_display.html#abaqus.OdbDisplay.OdbDisplay.OdbDisplay" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay"><span class="pre">OdbDisplay</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.OdbDisplay.OdbDisplay.OdbDisplay</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Layer.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Layer.Layer.odbDisplay" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="odb_display.html#abaqus.OdbDisplay.OdbDisplay.OdbDisplay" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbDisplay</span></code></a> object specifying the display options for the Odb object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.Layer.Layer.partDisplay">
+<span class="sig-name descname"><span class="pre">partDisplay</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="display_options.html#abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions" title="abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions"><span class="pre">PartDisplayOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Layer.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Layer.Layer.partDisplay" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions" title="abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PartDisplayOptions</span></code></a> object specifying the display options for the Part object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.Layer.Layer.view">
+<span class="sig-name descname"><span class="pre">view</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.View.View" title="abaqus.UtilityAndView.View.View"><span class="pre">View</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Layer.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Layer.Layer.view" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.View.View" title="abaqus.UtilityAndView.View.View"><code class="xref py py-class docutils literal notranslate"><span class="pre">View</span></code></a> object specifying the object that controls viewing of the layer.</p>
 </dd></dl>
 
 </dd></dl>
@@ -1134,6 +1233,35 @@ is an empty sequence.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.activeColorModes">
+<span class="sig-name descname"><span class="pre">activeColorModes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'DEFAULT_COLORS'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.activeColorModes" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the currently active color mappings. Possible values
+are:
+DEFAULT_COLORS
+PART_GEOM_MAP_COLORS
+ASSEMBLY_MAP_COLORS
+PART_MAP_COLORS
+INSTANCE_MAP_COLORS
+INSTANCE_TYPE_MAP_COLORS
+SECTION_MAP_COLORS
+MATERIAL_MAP_COLORS
+LOAD_MAP_COLORS
+BC_MAP_COLORS
+INTERACTION_MAP_COLORS
+CONSTRAINT_MAP_COLORS
+SET_MAP_COLORS
+SURFACE_MAP_COLORS
+INTERNAL_SET_MAP_COLORS
+INTERNAL_SURFACE_MAP_COLORS
+DISPLAY_GRP_MAP_COLORS
+SELECTION_GRP_MAP_COLORS
+ELTYPE_MAP_COLORS
+PLOT_MAP_COLORS
+MESH_MAP_COLORS
+The default value is DEFAULT_COLORS.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.addDrawings">
 <span class="sig-name descname"><span class="pre">addDrawings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L760-L772"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.addDrawings" title="Permalink to this definition">#</a></dt>
@@ -1153,10 +1281,158 @@ is an empty sequence.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.animationConnect">
+<span class="sig-name descname"><span class="pre">animationConnect</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.animationConnect" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether an animation is connected to the viewport.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.annotationsToPlot">
+<span class="sig-name descname"><span class="pre">annotationsToPlot</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../mdb/annotation.html#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray"><span class="pre">AnnotationsToPlotArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.annotationsToPlot" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="../mdb/annotation.html#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnnotationsToPlotArray</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.applyLinkedCommands">
+<span class="sig-name descname"><span class="pre">applyLinkedCommands</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.applyLinkedCommands" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the viewport is linked for synchronization. The default
+value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.assemblyDisplay">
+<span class="sig-name descname"><span class="pre">assemblyDisplay</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="display_options.html#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions"><span class="pre">AssemblyDisplayOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.assemblyDisplay" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AssemblyDisplayOptions</span></code></a> object specifying the display options for the Assembly object.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.bringToFront">
 <span class="sig-name descname"><span class="pre">bringToFront</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L502-L504"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.bringToFront" title="Permalink to this definition">#</a></dt>
 <dd><p>This method moves the Viewport object to the front.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.colorMappings">
+<span class="sig-name descname"><span class="pre">colorMappings</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Canvas.AttributeColorMap.AttributeColorMap" title="abaqus.Canvas.AttributeColorMap.AttributeColorMap"><span class="pre">AttributeColorMap</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.colorMappings" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of AttributeColorMap objects specifying the objects cannot be constructed
+but the following attribute maps are supported:</p>
+<blockquote>
+<div><p>“type”
+“Element set”
+“Material”
+“Section”
+“Default”
+“Part”
+“Part instance”
+“Element type”
+“Averaging region”
+“Assembly”
+“Property”
+“Set”
+“Surface”
+“Skin”
+“Profile”
+“Part shape”
+“Part status”
+“Part geometry”
+“Meshability”
+“Instance type”
+“Load”
+“Boundary condition”
+“Interaction”
+“Constraint”
+“Interaction type”
+“Constraint type”
+“Display group”
+“Selection group”
+“Interaction property”
+“Connector”
+“Connector type”
+“Connector property”
+“Internal set”
+“Internal surface”
+“mapColors”
+“autoColors”
+“overrides”
+“defaultAutoColors”
+“defaultOverrides”
+“objectToCopy”
+“colorMapping”
+“colorMappings”
+“colorMode”
+“attributeColors”
+“updateOverrides”
+“colorCodeOverride”
+“initialColor”
+“Layup”
+“Ply”</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.colorMode">
+<span class="sig-name descname"><span class="pre">colorMode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'DEFAULT_COLORS'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.colorMode" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the last applied color mapping. Possible values
+are:
+DEFAULT_COLORS
+PART_GEOM_MAP_COLORS
+ASSEMBLY_MAP_COLORS
+PART_MAP_COLORS
+INSTANCE_MAP_COLORS
+INSTANCE_TYPE_MAP_COLORS
+SECTION_MAP_COLORS
+MATERIAL_MAP_COLORS
+LOAD_MAP_COLORS
+BC_MAP_COLORS
+INTERACTION_MAP_COLORS
+CONSTRAINT_MAP_COLORS
+SET_MAP_COLORS
+SURFACE_MAP_COLORS
+INTERNAL_SET_MAP_COLORS
+INTERNAL_SURFACE_MAP_COLORS
+DISPLAY_GRP_MAP_COLORS
+SELECTION_GRP_MAP_COLORS
+ELTYPE_MAP_COLORS
+PLOT_MAP_COLORS
+MESH_MAP_COLORS
+The default value is DEFAULT_COLORS.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.currentHeight">
+<span class="sig-name descname"><span class="pre">currentHeight</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.currentHeight" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the height in millimeters of the current viewport, regardless of the
+value of <strong>windowState</strong>, and including the title bar.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.currentLayer">
+<span class="sig-name descname"><span class="pre">currentLayer</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.currentLayer" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying which layer is affected by options settings when <strong>displayMode</strong>
+=OVERLAY. The current layer is also the only layer affected by view manipulations
+when*viewManipLayers* =CURRENT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.currentOrigin">
+<span class="sig-name descname"><span class="pre">currentOrigin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.currentOrigin" title="Permalink to this definition">#</a></dt>
+<dd><p>A pair of Floats specifying the <strong>X</strong>- and <strong>Y</strong>-coordinates in millimeters in the canvas
+coordinate system of the lower left corner of the current viewport, regardless of the
+value of <strong>windowState</strong>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.currentWidth">
+<span class="sig-name descname"><span class="pre">currentWidth</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.currentWidth" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the width in millimeters of the current viewport, regardless of the
+value of <strong>windowState</strong>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.detailPlotOptions">
+<span class="sig-name descname"><span class="pre">detailPlotOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="plot_options.html#abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions" title="abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions"><span class="pre">DetailPlotOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.detailPlotOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="plot_options.html#abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions" title="abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DetailPlotOptions</span></code></a> object.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1180,6 +1456,30 @@ enableMultipleColors</p>
 <span class="sig-name descname"><span class="pre">disableRefresh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L512-L516"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.disableRefresh" title="Permalink to this definition">#</a></dt>
 <dd><p>This method disables Viewport refresh. Some methods that require the Viewport to be
 up-to-date will override this setting. It is advisable to use this method sparingly.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.displayMode">
+<span class="sig-name descname"><span class="pre">displayMode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.displayMode" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the display mode of the viewport. Possible values
+are:SINGLE, specifying a single <strong>displayedObject</strong>.OVERLAY, specifying one or more layers
+to be displayed simultaneously—each layer contains one <strong>displayedObject</strong>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.displayedObject">
+<span class="sig-name descname"><span class="pre">displayedObject</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Canvas.Displayable.Displayable" title="abaqus.Canvas.Displayable.Displayable"><span class="pre">Displayable</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Canvas.Displayable.Displayable</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.displayedObject" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.Canvas.Displayable.Displayable" title="abaqus.Canvas.Displayable.Displayable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Displayable</span></code></a> object specifying the object to be displayed. The Displayable type is an
+abstract generalization. The concrete possible types are Part, Assembly,
+ConstrainedSketch, Odb, PlyStackPlot, or XYPlot. If <strong>displayedObject</strong> = None, Abaqus
+displays an empty viewport.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.drawings">
+<span class="sig-name descname"><span class="pre">drawings</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.drawings" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of Strings specifying keys to the session.drawings repository. The default value
+is an empty sequence.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1282,6 +1582,50 @@ or else the method will return <strong>None</strong>.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.iconOrigin">
+<span class="sig-name descname"><span class="pre">iconOrigin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.iconOrigin" title="Permalink to this definition">#</a></dt>
+<dd><p>A pair of Floats specifying the <strong>X</strong>- and <strong>Y</strong>-coordinates in millimeters of the lower
+left corner of the current viewport from a coordinate system having its origin in the
+lower left corner of the drawing area. This origin refers to the viewport location when
+<strong>windowState</strong> =MINIMIZED.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.imageOptions">
+<span class="sig-name descname"><span class="pre">imageOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Canvas.ImageOptions.ImageOptions" title="abaqus.Canvas.ImageOptions.ImageOptions"><span class="pre">ImageOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Canvas.ImageOptions.ImageOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.imageOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="#abaqus.Canvas.ImageOptions.ImageOptions" title="abaqus.Canvas.ImageOptions.ImageOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageOptions</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.initialColor">
+<span class="sig-name descname"><span class="pre">initialColor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.initialColor" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the color that will be applied to all objects in the viewport at the
+start of color coding. The possible values are ‘As is’, ‘Default’ or a string with a
+hexadecimal representation of a color.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.layerOffset">
+<span class="sig-name descname"><span class="pre">layerOffset</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.layerOffset" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying a factor to be used in offsetting layers in the screen Z direction.
+Possible values are -1 to 1. A negative value reverses the apparent order in which the
+layers are plotted.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.layers">
+<span class="sig-name descname"><span class="pre">layers</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Canvas.Layer.Layer" title="abaqus.Canvas.Layer.Layer"><span class="pre">Layer</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.layers" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Layer objects specifying the key to the repository is a String with the
+name of the layer.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.lightOptions">
+<span class="sig-name descname"><span class="pre">lightOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="display_options.html#abaqus.DisplayOptions.LightOptions.LightOptions" title="abaqus.DisplayOptions.LightOptions.LightOptions"><span class="pre">LightOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.DisplayOptions.LightOptions.LightOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.lightOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.LightOptions.LightOptions" title="abaqus.DisplayOptions.LightOptions.LightOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">LightOptions</span></code></a> object.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.makeCurrent">
 <span class="sig-name descname"><span class="pre">makeCurrent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L601-L603"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.makeCurrent" title="Permalink to this definition">#</a></dt>
@@ -1298,6 +1642,18 @@ or else the method will return <strong>None</strong>.</p>
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.minimize">
 <span class="sig-name descname"><span class="pre">minimize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L609-L611"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.minimize" title="Permalink to this definition">#</a></dt>
 <dd><p>This method minimizes the Viewport object to appear as an abbreviated title bar.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.movieOptions">
+<span class="sig-name descname"><span class="pre">movieOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Canvas.MovieOptions.MovieOptions" title="abaqus.Canvas.MovieOptions.MovieOptions"><span class="pre">MovieOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Canvas.MovieOptions.MovieOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.movieOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.Canvas.MovieOptions.MovieOptions" title="abaqus.Canvas.MovieOptions.MovieOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MovieOptions</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.odbDisplay">
+<span class="sig-name descname"><span class="pre">odbDisplay</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="odb_display.html#abaqus.OdbDisplay.OdbDisplay.OdbDisplay" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay"><span class="pre">OdbDisplay</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.OdbDisplay.OdbDisplay.OdbDisplay</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.odbDisplay" title="Permalink to this definition">#</a></dt>
+<dd><p>An <a class="reference internal" href="odb_display.html#abaqus.OdbDisplay.OdbDisplay.OdbDisplay" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbDisplay</span></code></a> object specifying the display options for the Odb object.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1317,6 +1673,12 @@ origin. The default value is 0.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.partDisplay">
+<span class="sig-name descname"><span class="pre">partDisplay</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="display_options.html#abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions" title="abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions"><span class="pre">PartDisplayOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.partDisplay" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions" title="abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PartDisplayOptions</span></code></a> object specifying the display options for the Part object.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1419,6 +1781,47 @@ before each refresh. The default value is 0.0.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.translucency">
+<span class="sig-name descname"><span class="pre">translucency</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.translucency" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the translucency that will be applied to objects colored using
+<strong>initialColor</strong> and it needs to be set along with <strong>initialColor</strong>. If <strong>initialColor</strong> is
+set to ‘As is’ then translucency will have no effect.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.view">
+<span class="sig-name descname"><span class="pre">view</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.View.View" title="abaqus.UtilityAndView.View.View"><span class="pre">View</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.view" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.View.View" title="abaqus.UtilityAndView.View.View"><code class="xref py py-class docutils literal notranslate"><span class="pre">View</span></code></a> object specifying the object that controls viewing of the viewport content.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.viewManipLayers">
+<span class="sig-name descname"><span class="pre">viewManipLayers</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.viewManipLayers" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying which layer or layers will be controlled by the view
+manipulation tools when <strong>displayMode</strong> = OVERLAY. Possible values are ALL and CURRENT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.viewportAnnotationOptions">
+<span class="sig-name descname"><span class="pre">viewportAnnotationOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="display_options.html#abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions" title="abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions"><span class="pre">ViewportAnnotationOptions</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.viewportAnnotationOptions" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions" title="abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewportAnnotationOptions</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.visibleLayers">
+<span class="sig-name descname"><span class="pre">visibleLayers</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.visibleLayers" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of Strings specifying the names of layers that will be displayed in the viewport
+when <strong>displayMode</strong> = OVERLAY.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.windowState">
+<span class="sig-name descname"><span class="pre">windowState</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.windowState" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the current state of a viewport. Possible values are
+NORMAL, MAXIMIZED, and MINIMIZED.</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -1490,7 +1893,7 @@ before each refresh. The default value is 0.0.</p>
 <li><a class="reference internal" href="#object-features">Object features</a><ul>
 <li><a class="reference internal" href="#annotation-features-of-viewport">Annotation features of Viewport</a></li>
 <li><a class="reference internal" href="#attributecolormap">AttributeColorMap</a></li>
-<li><a class="reference internal" href="#id7">Canvas</a></li>
+<li><a class="reference internal" href="#id9">Canvas</a></li>
 <li><a class="reference internal" href="#displayable">Displayable</a></li>
 <li><a class="reference internal" href="#drawingarea">DrawingArea</a></li>
 <li><a class="reference internal" href="#highlight">Highlight</a></li>

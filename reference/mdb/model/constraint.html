@@ -820,6 +820,12 @@ OFF.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Constraint.Constraint.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Constraint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Constraint.Constraint.name" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the constraint repository key.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.Constraint.Constraint.resume">
 <span class="sig-name descname"><span class="pre">resume</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Constraint.py#L34-L36"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Constraint.Constraint.resume" title="Permalink to this definition">#</a></dt>
@@ -830,6 +836,13 @@ OFF.</p>
 <dt class="sig sig-object py" id="abaqus.Constraint.Constraint.Constraint.suppress">
 <span class="sig-name descname"><span class="pre">suppress</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Constraint.py#L38-L40"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Constraint.Constraint.suppress" title="Permalink to this definition">#</a></dt>
 <dd><p>This method suppresses the constraint.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Constraint.Constraint.suppressed">
+<span class="sig-name descname"><span class="pre">suppressed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Constraint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Constraint.Constraint.suppressed" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the constraint is suppressed or not. The default value is
+OFF.</p>
 </dd></dl>
 
 </dd></dl>
@@ -881,10 +894,29 @@ OFF.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.AdjustPoints.AdjustPoints.controlPoints">
+<span class="sig-name descname"><span class="pre">controlPoints</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/AdjustPoints.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.AdjustPoints.AdjustPoints.controlPoints" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the constraint control points.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.AdjustPoints.AdjustPoints.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/AdjustPoints.py#L77-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.AdjustPoints.AdjustPoints.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the AdjustPoints object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.AdjustPoints.AdjustPoints.suppressed">
+<span class="sig-name descname"><span class="pre">suppressed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/AdjustPoints.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.AdjustPoints.AdjustPoints.suppressed" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the constraint is suppressed or not. The default value is
+OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.AdjustPoints.AdjustPoints.surface">
+<span class="sig-name descname"><span class="pre">surface</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/AdjustPoints.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.AdjustPoints.AdjustPoints.surface" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the surface to which the <strong>controlPoints</strong> are adjusted.</p>
 </dd></dl>
 
 </dd></dl>
@@ -979,6 +1011,41 @@ The default value is UNIFORM.The <strong>weightingMethod</strong> argument appli
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Coupling.Coupling.adjust">
+<span class="sig-name descname"><span class="pre">adjust</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Coupling.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Coupling.Coupling.adjust" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying if the control point will be adjusted (moved) to the surface. The
+point will be adjusted in the direction normal to the specified surface. The default
+value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Coupling.Coupling.controlPoint">
+<span class="sig-name descname"><span class="pre">controlPoint</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Coupling.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Coupling.Coupling.controlPoint" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the constraint control point.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Coupling.Coupling.couplingType">
+<span class="sig-name descname"><span class="pre">couplingType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Coupling.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Coupling.Coupling.couplingType" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the coupling constraint type. Possible values are
+KINEMATIC, DISTRIBUTING, and STRUCTURAL.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Coupling.Coupling.influenceRadius">
+<span class="sig-name descname"><span class="pre">influenceRadius</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">abaqusConstants.SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Coupling.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Coupling.Coupling.influenceRadius" title="Permalink to this definition">#</a></dt>
+<dd><p>The SymbolicConstant WHOLE_SURFACE or a Float specifying the influence radius.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Coupling.Coupling.localCsys">
+<span class="sig-name descname"><span class="pre">localCsys</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Coupling.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Coupling.Coupling.localCsys" title="Permalink to this definition">#</a></dt>
+<dd><p>None or a DatumCsys object specifying the initial orientation of the local coordinate
+system for the coupling’s degrees of freedom. If <strong>localCsys</strong> = None, the coupling is
+defined in the global coordinate system. The default value is None.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.Coupling.Coupling.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">adjust</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weightingMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'UNIFORM'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Coupling.py#L233-L287"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Coupling.Coupling.setValues" title="Permalink to this definition">#</a></dt>
@@ -1026,6 +1093,76 @@ The default value is UNIFORM.The <strong>weightingMethod</strong> argument appli
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Coupling.Coupling.suppressed">
+<span class="sig-name descname"><span class="pre">suppressed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Coupling.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Coupling.Coupling.suppressed" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the constraint is suppressed or not. The default value is
+OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Coupling.Coupling.surface">
+<span class="sig-name descname"><span class="pre">surface</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Coupling.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Coupling.Coupling.surface" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the surface on which the coupling nodes are located.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Coupling.Coupling.u1">
+<span class="sig-name descname"><span class="pre">u1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Coupling.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Coupling.Coupling.u1" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying if the displacement component in the 1-direction is constrained to
+the reference node for a kinematic coupling constraint. The default value is ON.The <strong>u1</strong>
+argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Coupling.Coupling.u2">
+<span class="sig-name descname"><span class="pre">u2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Coupling.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Coupling.Coupling.u2" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying if the displacement component in the 2-direction is constrained to
+the reference node for a kinematic coupling constraint. The default value is ON.The <strong>u2</strong>
+argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Coupling.Coupling.u3">
+<span class="sig-name descname"><span class="pre">u3</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Coupling.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Coupling.Coupling.u3" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying if the displacement component in the 3-direction is constrained to
+the reference node for a kinematic coupling constraint. The default value is ON.The <strong>u3</strong>
+argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Coupling.Coupling.ur1">
+<span class="sig-name descname"><span class="pre">ur1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Coupling.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Coupling.Coupling.ur1" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying if the rotational displacement component about the 1-direction is
+constrained to the reference node for a kinematic coupling constraint. The default value
+is ON.The <strong>ur1</strong> argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Coupling.Coupling.ur2">
+<span class="sig-name descname"><span class="pre">ur2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Coupling.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Coupling.Coupling.ur2" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying if the rotational displacement component about the 2-direction is
+constrained to the reference node for a kinematic coupling constraint. The default value
+is ON.The <strong>ur2</strong> argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Coupling.Coupling.ur3">
+<span class="sig-name descname"><span class="pre">ur3</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Coupling.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Coupling.Coupling.ur3" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying if the rotational displacement component about the 3-direction is
+constrained to the reference node for a kinematic coupling constraint. The default value
+is ON.The <strong>ur3</strong> argument applies only when <strong>couplingType</strong> = KINEMATIC.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Coupling.Coupling.weightingMethod">
+<span class="sig-name descname"><span class="pre">weightingMethod</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'UNIFORM'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Coupling.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Coupling.Coupling.weightingMethod" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying an optional weighting method used for calculating the
+distributing weight factors. Possible values are UNIFORM, LINEAR, QUADRATIC, and CUBIC.
+The default value is UNIFORM.The <strong>weightingMethod</strong> argument applies only when
+<strong>couplingType</strong> = DISTRIBUTING.</p>
 </dd></dl>
 
 </dd></dl>
@@ -1084,10 +1221,33 @@ three objects.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.DisplayBody.DisplayBody.controlPoints">
+<span class="sig-name descname"><span class="pre">controlPoints</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.ModelDotArray.ModelDotArray" title="abaqus.BasicGeometry.ModelDotArray.ModelDotArray"><span class="pre">ModelDotArray</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/DisplayBody.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.DisplayBody.DisplayBody.controlPoints" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.ModelDotArray.ModelDotArray" title="abaqus.BasicGeometry.ModelDotArray.ModelDotArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModelDotArray</span></code></a> object specifying the motion of the PartInstance. The control points may
+be ConstrainedSketchVertex, ReferencePoint, or MeshNode objects. Their motion will control the motion of
+the PartInstance. If this argument is set to an empty sequence, the PartInstance will
+remain fixed in space during the analysis. The sequence can have either one object or
+three objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.DisplayBody.DisplayBody.instance">
+<span class="sig-name descname"><span class="pre">instance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="assembly.html#abaqus.Assembly.PartInstance.PartInstance" title="abaqus.Assembly.PartInstance.PartInstance"><span class="pre">PartInstance</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/DisplayBody.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.DisplayBody.DisplayBody.instance" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="assembly.html#abaqus.Assembly.PartInstance.PartInstance" title="abaqus.Assembly.PartInstance.PartInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">PartInstance</span></code></a> object specifying the part instance that is to be used for display only.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.DisplayBody.DisplayBody.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/DisplayBody.py#L93-L95"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.DisplayBody.DisplayBody.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the DisplayBody object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.DisplayBody.DisplayBody.suppressed">
+<span class="sig-name descname"><span class="pre">suppressed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/DisplayBody.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.DisplayBody.DisplayBody.suppressed" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the constraint is suppressed or not. The default value is
+OFF.</p>
 </dd></dl>
 
 </dd></dl>
@@ -1159,6 +1319,38 @@ specified, the smaller value will be used.This argument applies only when
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.absoluteTolerance">
+<span class="sig-name descname"><span class="pre">absoluteTolerance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/EmbeddedRegion.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.absoluteTolerance" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the absolute value by which a node on the embedded region may lie
+outside the host region. If <strong>absoluteTolerance</strong> = 0.0, the <strong>fractionalTolerance</strong> value
+will be used. The default value is 0.0.This argument applies only when
+<strong>toleranceMethod</strong> = ABSOLUTE or BOTH.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.embeddedRegion">
+<span class="sig-name descname"><span class="pre">embeddedRegion</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/EmbeddedRegion.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.embeddedRegion" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the body region to be embedded.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.fractionalTolerance">
+<span class="sig-name descname"><span class="pre">fractionalTolerance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/EmbeddedRegion.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.fractionalTolerance" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the fractional value by which a node on the embedded region may lie
+outside the host region. The fractional value is based on the average element size
+within the host region. The default value is 0.05.If both tolerance arguments are
+specified, the smaller value will be used.This argument applies only when
+<strong>toleranceMethod</strong> = FRACTIONAL or BOTH.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.hostRegion">
+<span class="sig-name descname"><span class="pre">hostRegion</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/EmbeddedRegion.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.hostRegion" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the host region. A value of None indicates that the host
+region is the whole model.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">weightFactorTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">toleranceMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOTH'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">absoluteTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fractionalTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/EmbeddedRegion.py#L148-L178"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues" title="Permalink to this definition">#</a></dt>
@@ -1187,6 +1379,28 @@ specified, the smaller value will be used.This argument applies only when
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.suppressed">
+<span class="sig-name descname"><span class="pre">suppressed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/EmbeddedRegion.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.suppressed" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the constraint is suppressed or not. The default value is
+OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.toleranceMethod">
+<span class="sig-name descname"><span class="pre">toleranceMethod</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'BOTH'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/EmbeddedRegion.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.toleranceMethod" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the method used to determine the embedded element
+tolerance. Possible values are ABSOLUTE, FRACTIONAL, and BOTH. The default value is
+BOTH.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.weightFactorTolerance">
+<span class="sig-name descname"><span class="pre">weightFactorTolerance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/EmbeddedRegion.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.weightFactorTolerance" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying a small value below which the weighting factors will be zeroed out.
+The default value is 10-6.</p>
 </dd></dl>
 
 </dd></dl>
@@ -1249,6 +1463,20 @@ degree of freedom, and coordinate system ID. The coordinate system ID is optiona
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Equation.Equation.suppressed">
+<span class="sig-name descname"><span class="pre">suppressed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Equation.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Equation.Equation.suppressed" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the constraint is suppressed or not. The default value is
+OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Equation.Equation.terms">
+<span class="sig-name descname"><span class="pre">terms</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Equation.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Equation.Equation.terms" title="Permalink to this definition">#</a></dt>
+<dd><p>A sequence of (Float, String, Int, Int) sequences specifying a coefficient, Set name,
+degree of freedom, and coordinate system ID. The coordinate system ID is optional.</p>
 </dd></dl>
 
 </dd></dl>
@@ -1318,6 +1546,28 @@ DOF_MODE_MPC.The <strong>userMode</strong> argument applies only when <strong>mp
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.MultipointConstraint.MultipointConstraint.controlPoint">
+<span class="sig-name descname"><span class="pre">controlPoint</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/MultipointConstraint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.controlPoint" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the constraint control point.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.MultipointConstraint.MultipointConstraint.csys">
+<span class="sig-name descname"><span class="pre">csys</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/MultipointConstraint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.csys" title="Permalink to this definition">#</a></dt>
+<dd><p>None or a DatumCsys object specifying the initial orientation of the local coordinate
+system for the MultipointConstraint’s degrees of freedom. If <strong>localCsys</strong> = None, the
+MultipointConstraint is defined in the global coordinate system. The default value is
+None.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.MultipointConstraint.MultipointConstraint.mpcType">
+<span class="sig-name descname"><span class="pre">mpcType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/MultipointConstraint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.mpcType" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the MPC type of the constraint. Possible values are
+BEAM_MPC, ELBOW_MPC, PIN_MPC, LINK_MPC, TIE_MPC, and USER_MPC.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.MultipointConstraint.MultipointConstraint.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">csys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userMode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DOF_MODE_MPC'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/MultipointConstraint.py#L142-L166"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.setValues" title="Permalink to this definition">#</a></dt>
@@ -1341,6 +1591,36 @@ DOF_MODE_MPC.The <strong>userMode</strong> argument applies only when <strong>mp
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.MultipointConstraint.MultipointConstraint.suppressed">
+<span class="sig-name descname"><span class="pre">suppressed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/MultipointConstraint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.suppressed" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the constraint is suppressed or not. The default value is
+OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.MultipointConstraint.MultipointConstraint.surface">
+<span class="sig-name descname"><span class="pre">surface</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/MultipointConstraint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.surface" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the surface on which the MultipointConstraint nodes are
+located.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.MultipointConstraint.MultipointConstraint.userMode">
+<span class="sig-name descname"><span class="pre">userMode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'DOF_MODE_MPC'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/MultipointConstraint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.userMode" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the mode of the constraint when it is user-defined.
+Possible values are DOF_MODE_MPC and NODE_MODE_MPC. The default value is
+DOF_MODE_MPC.The <strong>userMode</strong> argument applies only when <strong>mpcType</strong> = USER_MPC.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.MultipointConstraint.MultipointConstraint.userType">
+<span class="sig-name descname"><span class="pre">userType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/MultipointConstraint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.userType" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying to differentiate between different constraint types in a user-defined
+MultipointConstraint. The default value is 0.The <strong>userType</strong> argument applies only when
+<strong>mpcType</strong> = USER_MPC.</p>
 </dd></dl>
 
 </dd></dl>
@@ -1409,6 +1689,40 @@ The default value is OFF.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.RigidBody.RigidBody.bodyRegion">
+<span class="sig-name descname"><span class="pre">bodyRegion</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/RigidBody.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.RigidBody.RigidBody.bodyRegion" title="Permalink to this definition">#</a></dt>
+<dd><p>None or a Region object specifying the elements constrained to the movement of the
+reference point. The default value is None.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.RigidBody.RigidBody.isothermal">
+<span class="sig-name descname"><span class="pre">isothermal</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/RigidBody.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.RigidBody.RigidBody.isothermal" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the temperature degree of freedom should be constrained.
+The default value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.RigidBody.RigidBody.pinRegion">
+<span class="sig-name descname"><span class="pre">pinRegion</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/RigidBody.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.RigidBody.RigidBody.pinRegion" title="Permalink to this definition">#</a></dt>
+<dd><p>None or a Region object specifying the nodes pinned to the movement of the reference
+point. The default value is None.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.RigidBody.RigidBody.refPointAtCOM">
+<span class="sig-name descname"><span class="pre">refPointAtCOM</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/RigidBody.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.RigidBody.RigidBody.refPointAtCOM" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the analysis product should recompute the reference point
+position to be at the center of mass. The default value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.RigidBody.RigidBody.refPointRegion">
+<span class="sig-name descname"><span class="pre">refPointRegion</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/RigidBody.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.RigidBody.RigidBody.refPointRegion" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the reference point.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.RigidBody.RigidBody.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bodyRegion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tieRegion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pinRegion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surfaceRegion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointAtCOM</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isothermal</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/RigidBody.py#L141-L173"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.RigidBody.RigidBody.setValues" title="Permalink to this definition">#</a></dt>
@@ -1437,6 +1751,27 @@ The default value is OFF.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.RigidBody.RigidBody.suppressed">
+<span class="sig-name descname"><span class="pre">suppressed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/RigidBody.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.RigidBody.RigidBody.suppressed" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the constraint is suppressed or not. The default value is
+OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.RigidBody.RigidBody.surfaceRegion">
+<span class="sig-name descname"><span class="pre">surfaceRegion</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/RigidBody.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.RigidBody.RigidBody.surfaceRegion" title="Permalink to this definition">#</a></dt>
+<dd><p>None or a Region object specifying the analytic surface constrained to the movement of
+the reference point. The default value is None.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.RigidBody.RigidBody.tieRegion">
+<span class="sig-name descname"><span class="pre">tieRegion</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/RigidBody.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.RigidBody.RigidBody.tieRegion" title="Permalink to this definition">#</a></dt>
+<dd><p>None or a Region object specifying the nodes tied to the movement of the reference
+point. The default value is None.</p>
 </dd></dl>
 
 </dd></dl>
@@ -1503,6 +1838,36 @@ when <strong>influenceDistanceMethod</strong> = SPECIFIED. The default value is 
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.influenceDistance">
+<span class="sig-name descname"><span class="pre">influenceDistance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/ShellSolidCoupling.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.influenceDistance" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the influence distance. The <strong>influenceDistance</strong> argument applies only
+when <strong>influenceDistanceMethod</strong> = SPECIFIED. The default value is 0.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.influenceDistanceMethod">
+<span class="sig-name descname"><span class="pre">influenceDistanceMethod</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'DEFAULT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/ShellSolidCoupling.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.influenceDistanceMethod" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the method used to determine the influence distance.
+Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.positionTolerance">
+<span class="sig-name descname"><span class="pre">positionTolerance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/ShellSolidCoupling.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.positionTolerance" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the position tolerance. The default value is 0.0.The
+<strong>positionTolerance</strong> argument applies only when
+<strong>positionToleranceMethod</strong> = SPECIFIED.Note:Abaqus will not constrain nodes on the solid
+face region outside the position tolerance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.positionToleranceMethod">
+<span class="sig-name descname"><span class="pre">positionToleranceMethod</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'COMPUTED'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/ShellSolidCoupling.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.positionToleranceMethod" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the method used to determine the position tolerance.
+Possible values are COMPUTED and SPECIFIED. The default value is COMPUTED.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">positionToleranceMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'COMPUTED'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">influenceDistanceMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">influenceDistance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/ShellSolidCoupling.py#L133-L159"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues" title="Permalink to this definition">#</a></dt>
@@ -1527,6 +1892,25 @@ when <strong>influenceDistanceMethod</strong> = SPECIFIED. The default value is 
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.shellEdge">
+<span class="sig-name descname"><span class="pre">shellEdge</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/ShellSolidCoupling.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.shellEdge" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the name of the shell edge surface.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.solidFace">
+<span class="sig-name descname"><span class="pre">solidFace</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/ShellSolidCoupling.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.solidFace" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the name of the solid surface.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.suppressed">
+<span class="sig-name descname"><span class="pre">suppressed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/ShellSolidCoupling.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.suppressed" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the constraint is suppressed or not. The default value is
+OFF.</p>
 </dd></dl>
 
 </dd></dl>
@@ -1608,6 +1992,62 @@ ON.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Tie.Tie.adjust">
+<span class="sig-name descname"><span class="pre">adjust</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Tie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Tie.Tie.adjust" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether initial positions of tied secondary nodes are adjusted to
+lie on the main surface. The default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Tie.Tie.constraintEnforcement">
+<span class="sig-name descname"><span class="pre">constraintEnforcement</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'SOLVER_DEFAULT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Tie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Tie.Tie.constraintEnforcement" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the discretization method. Possible values are
+SOLVER_DEFAULT, NODE_TO_SURFACE, and SURFACE_TO_SURFACE. The default value is
+SOLVER_DEFAULT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Tie.Tie.constraintRatio">
+<span class="sig-name descname"><span class="pre">constraintRatio</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Tie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Tie.Tie.constraintRatio" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the fractional distance between the main reference surface and the
+secondary node at which the translational constraint should act. The <strong>constraintRatio</strong>
+argument applies only when <strong>constraintRatioMethod</strong> = SPECIFIED. The default value is 0.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Tie.Tie.constraintRatioMethod">
+<span class="sig-name descname"><span class="pre">constraintRatioMethod</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'DEFAULT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Tie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Tie.Tie.constraintRatioMethod" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the method used to determine the constraint ratio.
+Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Tie.Tie.main">
+<span class="sig-name descname"><span class="pre">main</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Tie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Tie.Tie.main" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the name of the main surface.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Tie.Tie.positionTolerance">
+<span class="sig-name descname"><span class="pre">positionTolerance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Tie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Tie.Tie.positionTolerance" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the position tolerance. The <strong>positionTolerance</strong> argument applies only
+when <strong>positionToleranceMethod</strong> = SPECIFIED. The default value is 0.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Tie.Tie.positionToleranceMethod">
+<span class="sig-name descname"><span class="pre">positionToleranceMethod</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'COMPUTED'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Tie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Tie.Tie.positionToleranceMethod" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the method used to determine the position tolerance.
+Possible values are COMPUTED and SPECIFIED. The default value is COMPUTED.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Tie.Tie.secondary">
+<span class="sig-name descname"><span class="pre">secondary</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Tie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Tie.Tie.secondary" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the name of the secondary surface.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.Tie.Tie.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">adjust</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionToleranceMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'COMPUTED'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionTolerance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tieRotations</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraintRatioMethod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraintRatio</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraintEnforcement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SOLVER_DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Tie.py#L183-L225"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Tie.Tie.setValues" title="Permalink to this definition">#</a></dt>
@@ -1646,11 +2086,32 @@ ON.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Tie.Tie.suppressed">
+<span class="sig-name descname"><span class="pre">suppressed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Tie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Tie.Tie.suppressed" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the constraint is suppressed or not. The default value is
+OFF.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.Tie.Tie.swapSurfaces">
 <span class="sig-name descname"><span class="pre">swapSurfaces</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Tie.py#L177-L181"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Tie.Tie.swapSurfaces" title="Permalink to this definition">#</a></dt>
 <dd><p>This method switches the main and secondary surfaces of a tied constraint. This command
 is valid only during the step in which the interaction is created.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Tie.Tie.thickness">
+<span class="sig-name descname"><span class="pre">thickness</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Tie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Tie.Tie.thickness" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether shell element thickness is considered. The default value is
+ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Tie.Tie.tieRotations">
+<span class="sig-name descname"><span class="pre">tieRotations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Constraint/Tie.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Tie.Tie.tieRotations" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether rotation degrees of freedom should be tied. The default
+value is ON.</p>
 </dd></dl>
 
 </dd></dl>

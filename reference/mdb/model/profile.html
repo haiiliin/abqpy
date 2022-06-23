@@ -1428,6 +1428,12 @@ located in another directory.</p>
 </div>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.Profile.Profile.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/Profile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.Profile.Profile.name" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the repository key.</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -1499,6 +1505,12 @@ The first sequence in the table specifies the following:</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.table">
+<span class="sig-name descname"><span class="pre">table</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/ArbitraryProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.table" title="Permalink to this definition">#</a></dt>
+<dd><p>A sequence of sequences of Floats specifying the items described below.</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -1563,6 +1575,20 @@ thickness of the first segment if <strong>uniformThickness</strong> = OFF.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.BoxProfile.BoxProfile.a">
+<span class="sig-name descname"><span class="pre">a</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/BoxProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.BoxProfile.BoxProfile.a" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the <strong>a</strong> dimension of the box profile. For more information, see [Beam
+cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.BoxProfile.BoxProfile.b">
+<span class="sig-name descname"><span class="pre">b</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/BoxProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.BoxProfile.BoxProfile.b" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the <strong>b</strong> dimension of the box profile.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.BoxProfile.BoxProfile.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t4</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/BoxProfile.py#L140-L160"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.BoxProfile.BoxProfile.setValues" title="Permalink to this definition">#</a></dt>
@@ -1587,6 +1613,40 @@ thickness of the first segment if <strong>uniformThickness</strong> = OFF.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.BoxProfile.BoxProfile.t1">
+<span class="sig-name descname"><span class="pre">t1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/BoxProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.BoxProfile.BoxProfile.t1" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the uniform wall thickness if <strong>uniformThickness</strong> = ON, and the wall
+thickness of the first segment if <strong>uniformThickness</strong> = OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.BoxProfile.BoxProfile.t2">
+<span class="sig-name descname"><span class="pre">t2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/BoxProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.BoxProfile.BoxProfile.t2" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the wall thickness of the second segment. <strong>t2</strong> is required only when
+<strong>uniformThickness</strong> = OFF. The default value is 0.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.BoxProfile.BoxProfile.t3">
+<span class="sig-name descname"><span class="pre">t3</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/BoxProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.BoxProfile.BoxProfile.t3" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the wall thickness of the third segment. <strong>t3</strong> is required only when
+<strong>uniformThickness</strong> = OFF. The default value is 0.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.BoxProfile.BoxProfile.t4">
+<span class="sig-name descname"><span class="pre">t4</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/BoxProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.BoxProfile.BoxProfile.t4" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the wall thickness of the fourth segment. <strong>t4</strong> is required only when
+<strong>uniformThickness</strong> = OFF. The default value is 0.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.BoxProfile.BoxProfile.uniformThickness">
+<span class="sig-name descname"><span class="pre">uniformThickness</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/BoxProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.BoxProfile.BoxProfile.uniformThickness" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the thickness is uniform.</p>
 </dd></dl>
 
 </dd></dl>
@@ -1637,6 +1697,14 @@ library](<a class="reference external" href="https://help.3ds.com/2021/English/D
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.CircularProfile.CircularProfile.r">
+<span class="sig-name descname"><span class="pre">r</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/CircularProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.CircularProfile.CircularProfile.r" title="Permalink to this definition">#</a></dt>
+<dd><p>A positive Float specifying the <strong>r</strong> dimension (outer radius) of the circular profile.
+For more information, see [Beam cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.CircularProfile.CircularProfile.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/CircularProfile.py#L75-L83"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.CircularProfile.CircularProfile.setValues" title="Permalink to this definition">#</a></dt>
@@ -1709,6 +1777,48 @@ The GeneralizedProfile object is derived from the Profile object.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.area">
+<span class="sig-name descname"><span class="pre">area</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/GeneralizedProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.area" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the cross-sectional area for the profile.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.gammaO">
+<span class="sig-name descname"><span class="pre">gammaO</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/GeneralizedProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.gammaO" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the sectorial moment, Γ0Γ0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.gammaW">
+<span class="sig-name descname"><span class="pre">gammaW</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/GeneralizedProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.gammaW" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the warping constant, ΓWΓW.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.i11">
+<span class="sig-name descname"><span class="pre">i11</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/GeneralizedProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.i11" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the moment of inertia for bending about the 1-axis, I11I11.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.i12">
+<span class="sig-name descname"><span class="pre">i12</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/GeneralizedProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.i12" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the moment of inertia for cross bending, I12I12.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.i22">
+<span class="sig-name descname"><span class="pre">i22</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/GeneralizedProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.i22" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the moment of inertia for bending about the 2-axis, I22I22.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.j">
+<span class="sig-name descname"><span class="pre">j</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/GeneralizedProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.j" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the torsional constant, JJ.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/GeneralizedProfile.py#L122-L130"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.setValues" title="Permalink to this definition">#</a></dt>
@@ -1773,6 +1883,14 @@ library](<a class="reference external" href="https://help.3ds.com/2021/English/D
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.r">
+<span class="sig-name descname"><span class="pre">r</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/HexagonalProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.r" title="Permalink to this definition">#</a></dt>
+<dd><p>A positive Float specifying the <strong>r</strong> dimension (outer radius) of the hexagonal profile.
+For more information, see [Beam cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/HexagonalProfile.py#L85-L93"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.setValues" title="Permalink to this definition">#</a></dt>
@@ -1784,6 +1902,13 @@ library](<a class="reference external" href="https://help.3ds.com/2021/English/D
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.t">
+<span class="sig-name descname"><span class="pre">t</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/HexagonalProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.t" title="Permalink to this definition">#</a></dt>
+<dd><p>A positive Float specifying the <strong>t</strong> dimension (wall thickness) of the hexagonal profile,
+<em>t &lt; (sqrt(3)/2)r</em>.</p>
 </dd></dl>
 
 </dd></dl>
@@ -1846,6 +1971,32 @@ library](<a class="reference external" href="https://help.3ds.com/2021/English/D
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.IProfile.IProfile.b1">
+<span class="sig-name descname"><span class="pre">b1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/IProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.IProfile.IProfile.b1" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the <strong>b1</strong> dimension (bottom flange width) of the I profile.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.IProfile.IProfile.b2">
+<span class="sig-name descname"><span class="pre">b2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/IProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.IProfile.IProfile.b2" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the <strong>b2</strong> dimension (top flange width) of the I profile.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.IProfile.IProfile.h">
+<span class="sig-name descname"><span class="pre">h</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/IProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.IProfile.IProfile.h" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the <strong>h</strong> dimension (height) of the I profile.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.IProfile.IProfile.l">
+<span class="sig-name descname"><span class="pre">l</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/IProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.IProfile.IProfile.l" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the <strong>l</strong> dimension (offset of 1-axis from the bottom flange surface)
+of the I profile. For more information, see [Beam cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.IProfile.IProfile.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/IProfile.py#L127-L135"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.IProfile.IProfile.setValues" title="Permalink to this definition">#</a></dt>
@@ -1857,6 +2008,24 @@ library](<a class="reference external" href="https://help.3ds.com/2021/English/D
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.IProfile.IProfile.t1">
+<span class="sig-name descname"><span class="pre">t1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/IProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.IProfile.IProfile.t1" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the <strong>t1</strong> dimension (bottom flange thickness) of the I profile.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.IProfile.IProfile.t2">
+<span class="sig-name descname"><span class="pre">t2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/IProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.IProfile.IProfile.t2" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the <strong>t2</strong> dimension (top flange thickness) of the I profile.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.IProfile.IProfile.t3">
+<span class="sig-name descname"><span class="pre">t3</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/IProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.IProfile.IProfile.t3" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the <strong>t3</strong> dimension (web thickness) of the I profile.</p>
 </dd></dl>
 
 </dd></dl>
@@ -1915,6 +2084,20 @@ a</em>).</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.LProfile.LProfile.a">
+<span class="sig-name descname"><span class="pre">a</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/LProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.LProfile.LProfile.a" title="Permalink to this definition">#</a></dt>
+<dd><p>A positive Float specifying the <strong>a</strong> dimension (flange length) of the L profile. For more
+information, see [Beam cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.LProfile.LProfile.b">
+<span class="sig-name descname"><span class="pre">b</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/LProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.LProfile.LProfile.b" title="Permalink to this definition">#</a></dt>
+<dd><p>A positive Float specifying the <strong>b</strong> dimension (flange length) of the L profile.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.LProfile.LProfile.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/LProfile.py#L102-L110"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.LProfile.LProfile.setValues" title="Permalink to this definition">#</a></dt>
@@ -1926,6 +2109,20 @@ a</em>).</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.LProfile.LProfile.t1">
+<span class="sig-name descname"><span class="pre">t1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/LProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.LProfile.LProfile.t1" title="Permalink to this definition">#</a></dt>
+<dd><p>A positive Float specifying the <strong>t1</strong> dimension (flange thickness) of the L profile (<em>t1
+&lt; b</em>).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.LProfile.LProfile.t2">
+<span class="sig-name descname"><span class="pre">t2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/LProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.LProfile.LProfile.t2" title="Permalink to this definition">#</a></dt>
+<dd><p>A positive Float specifying the <strong>t2</strong> dimension (flange thickness) of the L profile (<em>t2&lt;
+a</em>).</p>
 </dd></dl>
 
 </dd></dl>
@@ -1978,6 +2175,14 @@ library](<a class="reference external" href="https://help.3ds.com/2021/English/D
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.PipeProfile.PipeProfile.r">
+<span class="sig-name descname"><span class="pre">r</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/PipeProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.PipeProfile.PipeProfile.r" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the outer radius of the pipe. For more information, see [Beam
+cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.PipeProfile.PipeProfile.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/PipeProfile.py#L82-L90"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.PipeProfile.PipeProfile.setValues" title="Permalink to this definition">#</a></dt>
@@ -1989,6 +2194,12 @@ library](<a class="reference external" href="https://help.3ds.com/2021/English/D
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.PipeProfile.PipeProfile.t">
+<span class="sig-name descname"><span class="pre">t</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/PipeProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.PipeProfile.PipeProfile.t" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the wall thickness of the pipe.</p>
 </dd></dl>
 
 </dd></dl>
@@ -2041,6 +2252,20 @@ library](<a class="reference external" href="https://help.3ds.com/2021/English/D
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.a">
+<span class="sig-name descname"><span class="pre">a</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/RectangularProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.a" title="Permalink to this definition">#</a></dt>
+<dd><p>A positive Float specifying the <strong>a</strong> dimension of the rectangular profile. For more
+information, see [Beam cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.b">
+<span class="sig-name descname"><span class="pre">b</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/RectangularProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.b" title="Permalink to this definition">#</a></dt>
+<dd><p>A positive Float specifying the <strong>b</strong> dimension of the rectangular profile.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/RectangularProfile.py#L82-L90"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.setValues" title="Permalink to this definition">#</a></dt>
@@ -2113,6 +2338,27 @@ b</em>).</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.TProfile.TProfile.b">
+<span class="sig-name descname"><span class="pre">b</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/TProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.TProfile.TProfile.b" title="Permalink to this definition">#</a></dt>
+<dd><p>A positive Float specifying the <strong>b</strong> dimension (flange width) of the T profile. For more
+information, see [Beam cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.TProfile.TProfile.h">
+<span class="sig-name descname"><span class="pre">h</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/TProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.TProfile.TProfile.h" title="Permalink to this definition">#</a></dt>
+<dd><p>A positive Float specifying the <strong>h</strong> dimension (height) of the T profile.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.TProfile.TProfile.l">
+<span class="sig-name descname"><span class="pre">l</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/TProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.TProfile.TProfile.l" title="Permalink to this definition">#</a></dt>
+<dd><p>A positive Float specifying the <strong>l</strong> dimension (offset of 1-axis from the edge of web) of
+the T profile.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.TProfile.TProfile.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/TProfile.py#L112-L120"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.TProfile.TProfile.setValues" title="Permalink to this definition">#</a></dt>
@@ -2124,6 +2370,20 @@ b</em>).</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.TProfile.TProfile.tf">
+<span class="sig-name descname"><span class="pre">tf</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/TProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.TProfile.TProfile.tf" title="Permalink to this definition">#</a></dt>
+<dd><p>A positive Float specifying the <strong>tf</strong> dimension (flange thickness) of the T profile (<em>tf
+&lt; h</em>).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.TProfile.TProfile.tw">
+<span class="sig-name descname"><span class="pre">tw</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/TProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.TProfile.TProfile.tw" title="Permalink to this definition">#</a></dt>
+<dd><p>A positive Float specifying the <strong>tw</strong> dimension (web thickness) of the T profile (<em>tw&lt;
+b</em>).</p>
 </dd></dl>
 
 </dd></dl>
@@ -2180,6 +2440,32 @@ library](<a class="reference external" href="https://help.3ds.com/2021/English/D
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.a">
+<span class="sig-name descname"><span class="pre">a</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/TrapezoidalProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.a" title="Permalink to this definition">#</a></dt>
+<dd><p>A positive Float specifying the <strong>a</strong> dimension of the Trapezoidal profile. For more
+information, see [Beam cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.b">
+<span class="sig-name descname"><span class="pre">b</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/TrapezoidalProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.b" title="Permalink to this definition">#</a></dt>
+<dd><p>A positive Float specifying the <strong>b</strong> dimension of the Trapezoidal profile.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.c">
+<span class="sig-name descname"><span class="pre">c</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/TrapezoidalProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.c" title="Permalink to this definition">#</a></dt>
+<dd><p>A positive Float specifying the <strong>c</strong> dimension of the Trapezoidal profile.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.d">
+<span class="sig-name descname"><span class="pre">d</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/TrapezoidalProfile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.d" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the <strong>d</strong> dimension of the Trapezoidal profile.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/TrapezoidalProfile.py#L96-L104"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.setValues" title="Permalink to this definition">#</a></dt>

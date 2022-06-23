@@ -900,6 +900,84 @@ default value is OFF.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.allke">
+<span class="sig-name descname"><span class="pre">allke</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/DiagnosticPrint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.allke" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying a request for a column containing the total kinetic energy. This
+argument is valid only for an Abaqus/Explicit analysis. The default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.contact">
+<span class="sig-name descname"><span class="pre">contact</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/DiagnosticPrint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.contact" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying a request for detailed output of points that are contacting or
+separating in interface and gap problems. This argument is valid only for an
+Abaqus/Standard analysis. The default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.criticalElement">
+<span class="sig-name descname"><span class="pre">criticalElement</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/DiagnosticPrint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.criticalElement" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying a request for a column containing the element that has the smallest
+stable time increment and a column listing the value. This argument is valid only for an
+Abaqus/Explicit analysis. The default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.dmass">
+<span class="sig-name descname"><span class="pre">dmass</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/DiagnosticPrint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.dmass" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying a request for a column containing the percent change in total mass
+of the model as a result of mass scaling. This argument is valid only for an
+Abaqus/Explicit analysis. The default value is OFF unless mass scaling is present in the
+model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.etotal">
+<span class="sig-name descname"><span class="pre">etotal</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/DiagnosticPrint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.etotal" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying a request for a column containing the energy balance of the model.
+This argument is valid only for an Abaqus/Explicit analysis. The default value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.frequency">
+<span class="sig-name descname"><span class="pre">frequency</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/DiagnosticPrint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.frequency" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the frequency of output, in increments. The default value is 1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.mass">
+<span class="sig-name descname"><span class="pre">mass</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/DiagnosticPrint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.mass" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying a request for a column containing the total mass of the model as a
+result of mass scaling. This argument is valid only for an Abaqus/Explicit analysis. The
+default value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.modelChange">
+<span class="sig-name descname"><span class="pre">modelChange</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/DiagnosticPrint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.modelChange" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying a request for detailed output of which elements are being removed
+or reactivated in the step. This argument is valid only for an Abaqus/Standard analysis.
+The default value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.plasticity">
+<span class="sig-name descname"><span class="pre">plasticity</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/DiagnosticPrint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.plasticity" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying a request for detailed output of element and integration point
+numbers for which the plasticity algorithms have failed to converge in the material
+routines. This argument is valid only for an Abaqus/Standard analysis. The default value
+is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.residual">
+<span class="sig-name descname"><span class="pre">residual</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/DiagnosticPrint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.residual" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying a request for output of equilibrium residuals during the
+equilibrium iterations. This argument is valid only for an Abaqus/Standard analysis. The
+default value is ON.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/DiagnosticPrint.py#L196-L198"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.setValues" title="Permalink to this definition">#</a></dt>
@@ -984,6 +1062,12 @@ None.The sequence can contain only one String.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.boltLoad">
+<span class="sig-name descname"><span class="pre">boltLoad</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/FieldOutputRequest.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.boltLoad" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying a bolt load from which output is requested.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.deactivate">
 <span class="sig-name descname"><span class="pre">deactivate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stepName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/FieldOutputRequest.py#L173-L183"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.deactivate" title="Permalink to this definition">#</a></dt>
@@ -998,6 +1082,13 @@ deactivated.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.interactions">
+<span class="sig-name descname"><span class="pre">interactions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/FieldOutputRequest.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.interactions" title="Permalink to this definition">#</a></dt>
+<dd><p>None or a tuple of Strings specifying the interaction names. The default value is
+None.The sequence can contain only one String.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1017,6 +1108,14 @@ moved.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.region">
+<span class="sig-name descname"><span class="pre">region</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'MODEL'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/FieldOutputRequest.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.region" title="Permalink to this definition">#</a></dt>
+<dd><p>The SymbolicConstant MODEL or a Region object specifying the region from which output is
+requested. The SymbolicConstant MODEL represents the whole model. The default value is
+MODEL.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1247,6 +1346,122 @@ an empty string.</p>
 </dl>
 </dd>
 </dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.frequency">
+<span class="sig-name descname"><span class="pre">frequency</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/FieldOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.frequency" title="Permalink to this definition">#</a></dt>
+<dd><p>The SymbolicConstant LAST_INCREMENT or an Int specifying the output frequency in
+increments. The default value is 1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.frequencyState">
+<span class="sig-name descname"><span class="pre">frequencyState</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/FieldOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.frequencyState" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the propagation state of the field output request
+frequency. Possible values are UNSET, SET, and UNCHANGED.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.frequencyType">
+<span class="sig-name descname"><span class="pre">frequencyType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/FieldOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.frequencyType" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying a read-only SymbolicConstant describing which type of frequency of
+output is used. Possible values areFREQUENCY, NUMBER_INTERVALS, TIME_INTERVAL,
+TIME_POINT and MODES. The default value depends on the procedure. The default value is
+an empty string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.modes">
+<span class="sig-name descname"><span class="pre">modes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'ALL'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/FieldOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.modes" title="Permalink to this definition">#</a></dt>
+<dd><p>The SymbolicConstant ALL or a tuple of Ints specifying a list of eigenmodes for which
+output is desired. The default value is ALL.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.modesState">
+<span class="sig-name descname"><span class="pre">modesState</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/FieldOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.modesState" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the propagation state of the field output request modes.
+Possible values are UNSET, SET, and UNCHANGED.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.numIntervals">
+<span class="sig-name descname"><span class="pre">numIntervals</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">20</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/FieldOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.numIntervals" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of intervals during the step at which output database
+states are to be written. The default value is 20.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.numIntervalsState">
+<span class="sig-name descname"><span class="pre">numIntervalsState</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/FieldOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.numIntervalsState" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the propagation state of the field output request.
+Possible values are UNSET, SET, and UNCHANGED.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.status">
+<span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/FieldOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.status" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the propagation state of the FieldOutputRequestState
+object. Possible values are NOT_YET_ACTIVE, CREATED, PROPAGATED, MODIFIED, DEACTIVATED,
+NO_LONGER_ACTIVE, TYPE_NOT_APPLICABLE, and INSTANCE_NOT_APPLICABLE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.timeInterval">
+<span class="sig-name descname"><span class="pre">timeInterval</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">abaqusConstants.SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'EVERY_TIME_INCREMENT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/FieldOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.timeInterval" title="Permalink to this definition">#</a></dt>
+<dd><p>The SymbolicConstant EVERY_TIME_INCREMENT or a Float specifying the time interval at
+which the output states are to be written. The default value is EVERY_TIME_INCREMENT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.timeIntervalState">
+<span class="sig-name descname"><span class="pre">timeIntervalState</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/FieldOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.timeIntervalState" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the propagation state of the field output request time
+interval. Possible values are UNSET, SET, and UNCHANGED.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.timeMarks">
+<span class="sig-name descname"><span class="pre">timeMarks</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/FieldOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.timeMarks" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying when to write results to the output database. The default value is
+OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.timeMarksState">
+<span class="sig-name descname"><span class="pre">timeMarksState</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/FieldOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.timeMarksState" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the propagation state of the field output request.
+Possible values are UNSET, SET, and UNCHANGED.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.timePoint">
+<span class="sig-name descname"><span class="pre">timePoint</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/FieldOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.timePoint" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of a time point object used to determine which output
+database states are to be written. The default value is an empty string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.timePointState">
+<span class="sig-name descname"><span class="pre">timePointState</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/FieldOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.timePointState" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the propagation state of the field output request.
+Possible values are UNSET, SET, and UNCHANGED.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.variables">
+<span class="sig-name descname"><span class="pre">variables</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/FieldOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.variables" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of Strings specifying output request variable or component names, or the
+SymbolicConstant PRESELECT or ALL. PRESELECT represents all default output variables for
+the given step. ALL represents all valid output variables.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.variablesState">
+<span class="sig-name descname"><span class="pre">variablesState</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/FieldOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState.variablesState" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the propagation state of the field output request
+variables. Possible values are UNSET, SET, and UNCHANGED.</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -1330,6 +1545,13 @@ None.The sequence can contain only one String.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.boltLoad">
+<span class="sig-name descname"><span class="pre">boltLoad</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/HistoryOutputRequest.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.boltLoad" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying a bolt load from which output is requested. The default value is an
+empty string.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.deactivate">
 <span class="sig-name descname"><span class="pre">deactivate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stepName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/HistoryOutputRequest.py#L185-L195"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.deactivate" title="Permalink to this definition">#</a></dt>
@@ -1344,6 +1566,13 @@ deactivated.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.interactions">
+<span class="sig-name descname"><span class="pre">interactions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/HistoryOutputRequest.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.interactions" title="Permalink to this definition">#</a></dt>
+<dd><p>None or a tuple of Strings specifying the interaction names. The default value is
+None.The sequence can contain only one String.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1363,6 +1592,15 @@ moved.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.region">
+<span class="sig-name descname"><span class="pre">region</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'MODEL'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/HistoryOutputRequest.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.region" title="Permalink to this definition">#</a></dt>
+<dd><p>The SymbolicConstant MODEL or a Region object specifying the region from which output is
+requested. The SymbolicConstant MODEL represents the whole model. The default value is
+MODEL.If the region is a surface region, the surface must lie within the general contact
+surface domain.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1385,6 +1623,13 @@ reset.</p>
 <dt class="sig sig-object py" id="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.resume">
 <span class="sig-name descname"><span class="pre">resume</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/HistoryOutputRequest.py#L224-L226"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.resume" title="Permalink to this definition">#</a></dt>
 <dd><p>This method resumes the history output request that was previously suppressed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.sectionPoints">
+<span class="sig-name descname"><span class="pre">sectionPoints</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'DEFAULT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/HistoryOutputRequest.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.sectionPoints" title="Permalink to this definition">#</a></dt>
+<dd><p>The SymbolicConstant DEFAULT or a tuple of Ints specifying the section points for which
+output is requested. The default value is DEFAULT.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1586,6 +1831,109 @@ an empty string.</p>
 </dl>
 </dd>
 </dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.frequency">
+<span class="sig-name descname"><span class="pre">frequency</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/HistoryOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.frequency" title="Permalink to this definition">#</a></dt>
+<dd><p>The SymbolicConstant LAST_INCREMENT or an Int specifying the output frequency in
+increments. The default value is 1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.frequencyState">
+<span class="sig-name descname"><span class="pre">frequencyState</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/HistoryOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.frequencyState" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the propagation state of the history output request
+frequency. Possible values are UNSET, SET, and UNCHANGED.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.frequencyType">
+<span class="sig-name descname"><span class="pre">frequencyType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/HistoryOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.frequencyType" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying a read-only SymbolicConstant describing which type of frequency of
+output is used. Possible values areFREQUENCY, NUMBER_INTERVALS, TIME_INTERVAL,
+TIME_POINT and MODES. The default value depends on the procedure. The default value is
+an empty string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.modes">
+<span class="sig-name descname"><span class="pre">modes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'ALL'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/HistoryOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.modes" title="Permalink to this definition">#</a></dt>
+<dd><p>The SymbolicConstant ALL or a tuple of Ints specifying a list of eigenmodes for which
+output is desired. The default value is ALL.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.modesState">
+<span class="sig-name descname"><span class="pre">modesState</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/HistoryOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.modesState" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the propagation state of the history output request modes.
+Possible values are UNSET, SET, and UNCHANGED.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.numIntervals">
+<span class="sig-name descname"><span class="pre">numIntervals</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">20</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/HistoryOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.numIntervals" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of intervals during the step at which output database
+states are to be written. The default value is 20.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.numIntervalsState">
+<span class="sig-name descname"><span class="pre">numIntervalsState</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/HistoryOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.numIntervalsState" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the propagation state of the history output request.
+Possible values are UNSET, SET, and UNCHANGED.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.status">
+<span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/HistoryOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.status" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the propagation state of the HistoryOutputRequestState
+object. Possible values are NOT_YET_ACTIVE, CREATED, PROPAGATED, MODIFIED, DEACTIVATED,
+NO_LONGER_ACTIVE, TYPE_NOT_APPLICABLE, and INSTANCE_NOT_APPLICABLE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.timeInterval">
+<span class="sig-name descname"><span class="pre">timeInterval</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">abaqusConstants.SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'EVERY_TIME_INCREMENT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/HistoryOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.timeInterval" title="Permalink to this definition">#</a></dt>
+<dd><p>The SymbolicConstant EVERY_TIME_INCREMENT or a Float specifying the time interval at
+which the output states are to be written. The default value is EVERY_TIME_INCREMENT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.timeIntervalState">
+<span class="sig-name descname"><span class="pre">timeIntervalState</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/HistoryOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.timeIntervalState" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the propagation state of the history output request time
+interval. Possible values are UNSET, SET, and UNCHANGED.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.timePoint">
+<span class="sig-name descname"><span class="pre">timePoint</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/HistoryOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.timePoint" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of a time point object used to determine at which points in
+the time period data is written to the output database. The default value is an empty
+string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.timePointState">
+<span class="sig-name descname"><span class="pre">timePointState</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/HistoryOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.timePointState" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the propagation state of the history output request.
+Possible values are UNSET, SET, and UNCHANGED.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.variables">
+<span class="sig-name descname"><span class="pre">variables</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/HistoryOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.variables" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of Strings specifying output request variable or component names, or the
+SymbolicConstant PRESELECT or ALL. PRESELECT represents all default output variables for
+the given step. ALL represents all valid output variables.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.variablesState">
+<span class="sig-name descname"><span class="pre">variablesState</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/HistoryOutputRequestState.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.variablesState" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the propagation state of the history output request
+variables. Possible values are UNSET, SET, and UNCHANGED.</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -1650,6 +1998,57 @@ such that a least-squares fit surface will be used. The default value is OFF.</p
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.localCsys">
+<span class="sig-name descname"><span class="pre">localCsys</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/IntegratedOutputSection.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.localCsys" title="Permalink to this definition">#</a></dt>
+<dd><p>None or a DatumCsys object specifying the local coordinate system used to express vector
+output. If <strong>localCsys</strong> = None, the degrees of freedom are defined in the global coordinate
+system. The default value is None.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/IntegratedOutputSection.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.name" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the repository key.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.projectOrientation">
+<span class="sig-name descname"><span class="pre">projectOrientation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/IntegratedOutputSection.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.projectOrientation" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying that the coordinate system be projected onto the <strong>surface</strong> such
+that the 1-axis is normal to the <strong>surface</strong>. Projection onto a planar <strong>surface</strong> is such
+that the 1-axis is normal to the surface, and a projection onto a nonplanar <strong>surface</strong> is
+such that a least-squares fit surface will be used. The default value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.refPoint">
+<span class="sig-name descname"><span class="pre">refPoint</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/IntegratedOutputSection.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.refPoint" title="Permalink to this definition">#</a></dt>
+<dd><p>None or a Region object specifying the anchor point about which the integrated moment
+over the output region is computed or the SymbolicConstant None representing the global
+origin. The default value is None.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.refPointAtCenter">
+<span class="sig-name descname"><span class="pre">refPointAtCenter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/IntegratedOutputSection.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.refPointAtCenter" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying that the <strong>refPoint</strong> be adjusted so that it coincides with the
+center of the output region in the initial configuration. This argument is valid only
+when you include the <strong>refPoint</strong> argument. The default value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.refPointMotion">
+<span class="sig-name descname"><span class="pre">refPointMotion</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'INDEPENDENT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/IntegratedOutputSection.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.refPointMotion" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying how to relate the motion of <strong>refPoint</strong> to the average
+motion of the output region. A value of INDEPENDENT will allow the <strong>refPoint</strong> to move
+independent of the output region. A value of AVERAGE_TRANSLATION will set the
+displacement of the <strong>refPoint</strong> equal to the average translation of the output region. A
+value of AVERAGE will set the displacement and rotation of the <strong>refPoint</strong> equal to the
+average translation of the output region. The default value is INDEPENDENT.This argument
+is valid only when you include the <strong>refPoint</strong> argument.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">surface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointAtCenter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointMotion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'INDEPENDENT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOrientation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/IntegratedOutputSection.py#L145-L186"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.setValues" title="Permalink to this definition">#</a></dt>
@@ -1687,6 +2086,12 @@ such that a least-squares fit surface will be used. The default value is OFF.</p
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.surface">
+<span class="sig-name descname"><span class="pre">surface</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/IntegratedOutputSection.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.surface" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the surface over which the output is based.</p>
 </dd></dl>
 
 </dd></dl>
@@ -1753,6 +2158,41 @@ Abaqus/Standard analysis.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.Monitor.Monitor.dof">
+<span class="sig-name descname"><span class="pre">dof</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/Monitor.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Monitor.Monitor.dof" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the degree of freedom to be monitored at the node.
+Possible values are:
+- U1
+- U2
+- U3
+- UR1
+- UR2
+- UR3
+- WARP
+- FLUID_PRESSURE
+- ELECTRICAL_POTENTIAL
+- NT11
+- NT30
+- NN11
+- NN30</p>
+<p>The NT identifiers are not available for mass diffusion. The NN identifiers are
+available only for mass diffusion.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.Monitor.Monitor.frequency">
+<span class="sig-name descname"><span class="pre">frequency</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/Monitor.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Monitor.Monitor.frequency" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the output frequency in increments. This argument is valid only for an
+Abaqus/Standard analysis.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.Monitor.Monitor.node">
+<span class="sig-name descname"><span class="pre">node</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/Monitor.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Monitor.Monitor.node" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the region to be monitored.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.StepOutput.Monitor.Monitor.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/Monitor.py#L127-L134"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Monitor.Monitor.setValues" title="Permalink to this definition">#</a></dt>
@@ -1819,6 +2259,29 @@ analyses.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.Restart.Restart.frequency">
+<span class="sig-name descname"><span class="pre">frequency</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/Restart.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Restart.Restart.frequency" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the increments at which restart information will be written. The
+default value is 0. The default value is 0.This argument applies only to Abaqus/Standard
+analyses.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.Restart.Restart.numberIntervals">
+<span class="sig-name descname"><span class="pre">numberIntervals</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/Restart.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Restart.Restart.numberIntervals" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of intervals during the step at which restart information
+will be written. The default value is 0. The default value is 1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.Restart.Restart.overlay">
+<span class="sig-name descname"><span class="pre">overlay</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/Restart.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Restart.Restart.overlay" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying that only one increment per step should be retained on the restart
+file, thus minimizing the size of the restart file. The default value is OFF. The
+default value is ON.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.StepOutput.Restart.Restart.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/Restart.py#L101-L108"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Restart.Restart.setValues" title="Permalink to this definition">#</a></dt>
@@ -1830,6 +2293,13 @@ analyses.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.Restart.Restart.timeMarks">
+<span class="sig-name descname"><span class="pre">timeMarks</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/Restart.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Restart.Restart.timeMarks" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to use exact time marks for writing during an analysis. The
+default value is OFF. The default value is OFF.</p>
 </dd></dl>
 
 </dd></dl>
@@ -1877,6 +2347,19 @@ the output database or restart files.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.TimePoint.TimePoint.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/TimePoint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.TimePoint.TimePoint.name" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the repository key.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.StepOutput.TimePoint.TimePoint.points">
+<span class="sig-name descname"><span class="pre">points</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/TimePoint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.TimePoint.TimePoint.points" title="Permalink to this definition">#</a></dt>
+<dd><p>A sequence of sequences of Floats specifying time points at which data are written to
+the output database or restart files.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.StepOutput.TimePoint.TimePoint.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/TimePoint.py#L65-L72"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.TimePoint.TimePoint.setValues" title="Permalink to this definition">#</a></dt>

@@ -12122,6 +12122,20 @@ indicator results from a previous analysis.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Model.Model.Model.axisBegin">
+<span class="sig-name descname"><span class="pre">axisBegin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Model/Model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Model.Model.Model.axisBegin" title="Permalink to this definition">#</a></dt>
+<dd><p>A sequence of Floats specifying the <em>X-</em>, <em>Y-</em>, and <strong>Z</strong>- coordinates of the starting
+point of the axis about which <strong>omega</strong> is defined.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Model.Model.Model.axisEnd">
+<span class="sig-name descname"><span class="pre">axisEnd</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Model/Model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Model.Model.Model.axisEnd" title="Permalink to this definition">#</a></dt>
+<dd><p>A sequence of Floats specifying the <em>X-</em>, <em>Y-</em>, and <strong>Z</strong>- coordinates of the end point of
+the axis about which <strong>omega</strong> is defined.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Model.Model.Model.beamProfilesFromOdb">
 <span class="sig-name descname"><span class="pre">beamProfilesFromOdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Model/Model.py#L29-L55"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Model.Model.Model.beamProfilesFromOdb" title="Permalink to this definition">#</a></dt>
@@ -12283,6 +12297,24 @@ process.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Model.Model.Model.fileName">
+<span class="sig-name descname"><span class="pre">fileName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Model/Model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Model.Model.Model.fileName" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the job that generated the initial state data.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Model.Model.Model.fluidCavity">
+<span class="sig-name descname"><span class="pre">fluidCavity</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Model/Model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Model.Model.Model.fluidCavity" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of a Fluid Cavity Interaction.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Model.Model.Model.fluidPressure">
+<span class="sig-name descname"><span class="pre">fluidPressure</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Model/Model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Model.Model.Model.fluidPressure" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the initial fluid pressure.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Model.Model.Model.getSurfaceSeparation">
 <span class="sig-name descname"><span class="pre">getSurfaceSeparation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Model/Model.py#L186-L201"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Model.Model.Model.getSurfaceSeparation" title="Permalink to this definition">#</a></dt>
@@ -12315,6 +12347,20 @@ ContactDetection method.</p>
 </ul>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Model.Model.Model.instanceList">
+<span class="sig-name descname"><span class="pre">instanceList</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="model/assembly.html#abaqus.Assembly.PartInstanceArray.PartInstanceArray" title="abaqus.Assembly.PartInstanceArray.PartInstanceArray"><span class="pre">PartInstanceArray</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Model/Model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Model.Model.Model.instanceList" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="model/assembly.html#abaqus.Assembly.PartInstanceArray.PartInstanceArray" title="abaqus.Assembly.PartInstanceArray.PartInstanceArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">PartInstanceArray</span></code></a> object specifying the part instances to which the predefined field
+is applied. All instances must be assigned the same Eulerian section.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Model.Model.Model.instances">
+<span class="sig-name descname"><span class="pre">instances</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="model/assembly.html#abaqus.Assembly.PartInstanceArray.PartInstanceArray" title="abaqus.Assembly.PartInstanceArray.PartInstanceArray"><span class="pre">PartInstanceArray</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Model/Model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Model.Model.Model.instances" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="model/assembly.html#abaqus.Assembly.PartInstanceArray.PartInstanceArray" title="abaqus.Assembly.PartInstanceArray.PartInstanceArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">PartInstanceArray</span></code></a> object specifying the instances to which the predefined field is
+applied.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -12361,6 +12407,12 @@ process.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Model.Model.Model.omega">
+<span class="sig-name descname"><span class="pre">omega</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Model/Model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Model.Model.Model.omega" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the angular velocity.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -12502,6 +12554,24 @@ model. The default value is 0.0. This argument cannot be used with <strong>midsi
 <dd><p>This method suppresses the predefined field.</p>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Model.Model.Model.velocity1">
+<span class="sig-name descname"><span class="pre">velocity1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Model/Model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Model.Model.Model.velocity1" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the first component of the velocity.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Model.Model.Model.velocity2">
+<span class="sig-name descname"><span class="pre">velocity2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Model/Model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Model.Model.Model.velocity2" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the second component of the velocity.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Model.Model.Model.velocity3">
+<span class="sig-name descname"><span class="pre">velocity3</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Model/Model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Model.Model.Model.velocity3" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the third component of the velocity.</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -12566,6 +12636,12 @@ lines.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Model.KeywordBlock.KeywordBlock.edited">
+<span class="sig-name descname"><span class="pre">edited</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Model/KeywordBlock.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Model.KeywordBlock.KeywordBlock.edited" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the Keywords Editor has been used to change the model.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Model.KeywordBlock.KeywordBlock.insert">
 <span class="sig-name descname"><span class="pre">insert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Model/KeywordBlock.py#L67-L83"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Model.KeywordBlock.KeywordBlock.insert" title="Permalink to this definition">#</a></dt>
@@ -12587,6 +12663,13 @@ keyword and its associated data</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Model.KeywordBlock.KeywordBlock.lastSynchCount">
+<span class="sig-name descname"><span class="pre">lastSynchCount</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Model/KeywordBlock.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Model.KeywordBlock.KeywordBlock.lastSynchCount" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the value of the counter associated with the Mdb object at the most
+recent synchronization.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -12625,6 +12708,20 @@ previous edits.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Model.KeywordBlock.KeywordBlock.sieBlocks">
+<span class="sig-name descname"><span class="pre">sieBlocks</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Model/KeywordBlock.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Model.KeywordBlock.KeywordBlock.sieBlocks" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of Strings specifying a sequence of Strings that is identical to the information
+written to the Abaqus input file. Each String in the sequence represents an Abaqus input
+file keyword along with the parameters and data lines associated with the keyword. A
+String can also be a comment in the input file. You initialize this data member by
+calling synchVersions. After you initialize the data member, you use calls to replace
+and insert to record your edits in the correct location. If the last call to
+synchVersions used the argument <strong>storeNodesAndElements</strong> = False, the entry for the
+keywords NODE and ELEMENT will contain only the keyword and its parameters, not the data
+lines.</p>
 </dd></dl>
 
 <dl class="py method">

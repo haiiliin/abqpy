@@ -1704,6 +1704,207 @@ Abaqus/Standard elements.</p>
 </dl>
 </dd>
 </dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.bendingHourglass">
+<span class="sig-name descname"><span class="pre">bendingHourglass</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.bendingHourglass" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the bending hourglass stiffness. A value of zero indicates the
+default value should be used. The default value will be used where appropriate. The
+default value is 0.0.This argument is applicable only to some Abaqus/Standard elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.displacementHourglass">
+<span class="sig-name descname"><span class="pre">displacementHourglass</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.displacementHourglass" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the displacement hourglass scaling factor. The default value will be
+used where appropriate. The default value is 1.0.This argument is applicable only to
+some Abaqus/Explicit elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.distortionControl">
+<span class="sig-name descname"><span class="pre">distortionControl</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.distortionControl" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to prevent negative element volumes or other excessive
+distortions in crushable materials. The default value is OFF.This argument is applicable
+only to some Abaqus/Explicit elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.drillingHourglass">
+<span class="sig-name descname"><span class="pre">drillingHourglass</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.drillingHourglass" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the drilling hourglass scaling factor. A value of zero indicates the
+default value should be used. The default value will be used where appropriate. The
+default value is 0.0.This argument is applicable only to some Abaqus/Standard elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.elemCode">
+<span class="sig-name descname"><span class="pre">elemCode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.elemCode" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the Abaqus element code or just the element shape.
+Possible values are:
+- C3D8R, specifying a 8-node linear brick, reduced integration with hourglass control.
+- CODE, specifying add more codes.
+- UNKNOWN_TRI, specifying an unknown element type associated with a triangular shape.
+- UNKNOWN_QUAD, specifying an unknown element type associated with a quadrilateral
+shape.
+- UNKNOWN_HEX, specifying an unknown element type associated with a hexahedral shape.
+- UNKNOWN_WEDGE, specifying an unknown element type associated with a wedge shape.
+- UNKNOWN_TET, specifying an unknown element type associated with a tetrahedral shape.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.elemDeletion">
+<span class="sig-name descname"><span class="pre">elemDeletion</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'DEFAULT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.elemDeletion" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the element deletion option. Possible values are DEFAULT,
+ON, and OFF. The default value is DEFAULT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.elemLibrary">
+<span class="sig-name descname"><span class="pre">elemLibrary</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'STANDARD'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.elemLibrary" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the Abaqus element library to use. Possible values are
+STANDARD and EXPLICIT. The default value is STANDARD.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.hourglassControl">
+<span class="sig-name descname"><span class="pre">hourglassControl</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'ENHANCED'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.hourglassControl" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the hourglass control. Possible values are
+RELAX_STIFFNESS, STIFFNESS, VISCOUS, ENHANCED, and COMBINED. The default value is
+ENHANCED.This argument is applicable only to some Abaqus/Explicit elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.hourglassStiffness">
+<span class="sig-name descname"><span class="pre">hourglassStiffness</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.hourglassStiffness" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the hourglass stiffness. (For shell elements this is the membrane
+hourglass stiffness.) A value of zero indicates the default value should be used. The
+default value will be used where appropriate. The default value is 0.0.This argument is
+applicable only to some Abaqus/Standard elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.initialGapOpening">
+<span class="sig-name descname"><span class="pre">initialGapOpening</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.initialGapOpening" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the initial gap opening.This parameter is applicable only to some
+Abaqus/Standard elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.kinematicSplit">
+<span class="sig-name descname"><span class="pre">kinematicSplit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'AVERAGE_STRAIN'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.kinematicSplit" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the kinematic split control. Possible values are
+AVERAGE_STRAIN, ORTHOGONAL, and CENTROID. The default value is AVERAGE_STRAIN.This
+argument is applicable only to some Abaqus/Explicit elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.lengthRatio">
+<span class="sig-name descname"><span class="pre">lengthRatio</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.lengthRatio" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the length ratio for distortion control in crushable materials.
+Possible values are 0.0 ≤≤ <strong>lengthRatio</strong> ≤≤ 1.0. The default value is
+<strong>lengthRatio</strong> = 0.10.1This argument is applicable only when <strong>distortionControl</strong> is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.linearBulkViscosity">
+<span class="sig-name descname"><span class="pre">linearBulkViscosity</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.linearBulkViscosity" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the linear bulk viscosity scaling factor option for Abaqus/Explicit.
+The default value is 1.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.linearKinematicCtrl">
+<span class="sig-name descname"><span class="pre">linearKinematicCtrl</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.linearKinematicCtrl" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the linear kinematic conversion value.This argument is applicable
+only to some Abaqus/Explicit elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.maxDegradation">
+<span class="sig-name descname"><span class="pre">maxDegradation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.maxDegradation" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the maximum degradation option for damage control. The default value
+is −1.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.outOfPlaneDisplacementHourglass">
+<span class="sig-name descname"><span class="pre">outOfPlaneDisplacementHourglass</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.outOfPlaneDisplacementHourglass" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the out-of-plane displacement hourglass scaling factor. The default
+value will be used where appropriate. The default value is 1.0.This argument is
+applicable only to some Abaqus/Explicit elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.particleConversion">
+<span class="sig-name descname"><span class="pre">particleConversion</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'DEFAULT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.particleConversion" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the particle conversion option for smoothed particle
+hydrodynamics. When not OFF or DEFAULT this argument refers to the criterion used for
+conversion of elements to particles. Possible values are DEFAULT, OFF, TIME, STRAIN, and
+STRESS. The default value is DEFAULT.This argument is applicable only to some
+Abaqus/Explicit elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.particleConversionKernel">
+<span class="sig-name descname"><span class="pre">particleConversionKernel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'CUBIC'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.particleConversionKernel" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the interpolation function for particle conversion when
+<strong>particleConversion</strong> is specified. Possible values are CUBIC, QUADRATIC, and QUINTIC.
+The default value is CUBIC.This argument is applicable only to some Abaqus/Explicit
+elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.particleConversionPPD">
+<span class="sig-name descname"><span class="pre">particleConversionPPD</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.particleConversionPPD" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of particles per direction for element conversion when
+<strong>particleConversion</strong> is specified. The default value is 1.This argument is applicable
+only to some Abaqus/Explicit elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.particleConversionThreshold">
+<span class="sig-name descname"><span class="pre">particleConversionThreshold</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.particleConversionThreshold" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the threshold value for the particle conversion criterion specified
+by <strong>particleConversion</strong>. The default value is 0.0.This argument is applicable only to
+some Abaqus/Explicit elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.quadraticBulkViscosity">
+<span class="sig-name descname"><span class="pre">quadraticBulkViscosity</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.quadraticBulkViscosity" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the quadratic bulk viscosity scaling factor option for
+Abaqus/Explicit. The default value is 1.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.rotationalHourglass">
+<span class="sig-name descname"><span class="pre">rotationalHourglass</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.rotationalHourglass" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the rotational hourglass scaling factor. The default value will be
+used where appropriate. The default value is 1.0.This argument is applicable only to
+some Abaqus/Explicit elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.secondOrderAccuracy">
+<span class="sig-name descname"><span class="pre">secondOrderAccuracy</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.secondOrderAccuracy" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying the second-order accuracy option. The default value is OFF.This
+argument is applicable only to some Abaqus/Explicit elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.viscosity">
+<span class="sig-name descname"><span class="pre">viscosity</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.viscosity" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the viscosity option. The default value is 0.0.This argument is
+applicable only to some Abaqus/Standard elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType.weightFactor">
+<span class="sig-name descname"><span class="pre">weightFactor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType.weightFactor" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying a weight factor when <strong>hourglassControl</strong> = COMBINED. The default value
+is 0.5.This argument is applicable only to some Abaqus/Explicit elements.</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -2034,6 +2235,14 @@ LINE3, TRI3, TRI6, QUAD4, QUAD8, TET4, TET10, WEDGE6, WEDGE15, HEX8, and HEX20.<
 </div>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.MeshElement.MeshElement.connectivity">
+<span class="sig-name descname"><span class="pre">connectivity</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshElement.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshElement.MeshElement.connectivity" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of Ints specifying the internal node indices that define the nodal connectivity.
+It is important to note the difference with OdbMeshElement object of ODB where the
+connectivity is node labels instead of node indices.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshElement.MeshElement.getAdjacentElements">
 <span class="sig-name descname"><span class="pre">getAdjacentElements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshElement.py#L131-L139"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshElement.MeshElement.getAdjacentElements" title="Permalink to this definition">#</a></dt>
@@ -2112,6 +2321,18 @@ to the specified angle.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.MeshElement.MeshElement.instanceName">
+<span class="sig-name descname"><span class="pre">instanceName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshElement.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshElement.MeshElement.instanceName" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the part instance that owns this element.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.MeshElement.MeshElement.label">
+<span class="sig-name descname"><span class="pre">label</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshElement.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshElement.MeshElement.label" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the element label.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshElement.MeshElement.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshElement.py#L158-L168"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshElement.MeshElement.setValues" title="Permalink to this definition">#</a></dt>
@@ -2126,6 +2347,12 @@ in use by any other element of the same part.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.MeshElement.MeshElement.type">
+<span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshElement.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshElement.MeshElement.type" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the Abaqus element code.</p>
 </dd></dl>
 
 </dd></dl>
@@ -2530,6 +2757,12 @@ instance.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.MeshFace.MeshFace.face">
+<span class="sig-name descname"><span class="pre">face</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.face" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying a symbolic constant specifying the side of the element.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshFace.MeshFace.getElemEdges">
 <span class="sig-name descname"><span class="pre">getElemEdges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L35-L43"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.getElemEdges" title="Permalink to this definition">#</a></dt>
@@ -2734,6 +2967,12 @@ collapsed such that a normal cannot be computed, a zero-length vector is returne
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.MeshFace.MeshFace.label">
+<span class="sig-name descname"><span class="pre">label</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.label" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying an Int specifying the element label.</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -2889,6 +3128,12 @@ internal numbering of the node repository. The index does not refer to the node 
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.MeshNode.MeshNode.coordinates">
+<span class="sig-name descname"><span class="pre">coordinates</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshNode.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshNode.MeshNode.coordinates" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of three Floats specifying the coordinates of the new node.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshNode.MeshNode.getElemEdges">
 <span class="sig-name descname"><span class="pre">getElemEdges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshNode.py#L91-L99"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshNode.MeshNode.getElemEdges" title="Permalink to this definition">#</a></dt>
@@ -2951,6 +3196,18 @@ to the specified face angle.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.MeshNode.MeshNode.instanceName">
+<span class="sig-name descname"><span class="pre">instanceName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshNode.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshNode.MeshNode.instanceName" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the part instance that owns this node.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.MeshNode.MeshNode.label">
+<span class="sig-name descname"><span class="pre">label</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshNode.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshNode.MeshNode.label" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the node label.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -4607,6 +4864,66 @@ the getMeshStats command. The object does not have any methods.</p>
 </dl>
 </dd>
 </dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.MeshStats.MeshStats.numHexElems">
+<span class="sig-name descname"><span class="pre">numHexElems</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshStats.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshStats.MeshStats.numHexElems" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of hexahedral elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.MeshStats.MeshStats.numLineElems">
+<span class="sig-name descname"><span class="pre">numLineElems</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshStats.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshStats.MeshStats.numLineElems" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of line elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.MeshStats.MeshStats.numMeshedRegions">
+<span class="sig-name descname"><span class="pre">numMeshedRegions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshStats.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshStats.MeshStats.numMeshedRegions" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of regions that contain a mesh.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.MeshStats.MeshStats.numNodes">
+<span class="sig-name descname"><span class="pre">numNodes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshStats.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshStats.MeshStats.numNodes" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of nodes.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.MeshStats.MeshStats.numPointElems">
+<span class="sig-name descname"><span class="pre">numPointElems</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshStats.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshStats.MeshStats.numPointElems" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of point elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.MeshStats.MeshStats.numPyramidElems">
+<span class="sig-name descname"><span class="pre">numPyramidElems</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshStats.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshStats.MeshStats.numPyramidElems" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of pyramid elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.MeshStats.MeshStats.numQuadElems">
+<span class="sig-name descname"><span class="pre">numQuadElems</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshStats.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshStats.MeshStats.numQuadElems" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of quadrilateral elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.MeshStats.MeshStats.numTetElems">
+<span class="sig-name descname"><span class="pre">numTetElems</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshStats.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshStats.MeshStats.numTetElems" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of tetrahedral elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.MeshStats.MeshStats.numTriElems">
+<span class="sig-name descname"><span class="pre">numTriElems</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshStats.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshStats.MeshStats.numTriElems" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of triangular elements.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mesh.MeshStats.MeshStats.numWedgeElems">
+<span class="sig-name descname"><span class="pre">numWedgeElems</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshStats.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshStats.MeshStats.numWedgeElems" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of wedge elements.</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>

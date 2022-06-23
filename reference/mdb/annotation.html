@@ -654,6 +654,12 @@ object are common to all objects derived from Annotation.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Annotation.Annotation.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Annotation.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Annotation.Annotation.name" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the annotation repository key.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Annotation.Annotation.Annotation.sendBackward">
 <span class="sig-name descname"><span class="pre">sendBackward</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Annotation.py#L38-L40"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Annotation.Annotation.sendBackward" title="Permalink to this definition">#</a></dt>
@@ -1007,6 +1013,81 @@ VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Arrow.Arrow.color">
+<span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Arrow.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Arrow.Arrow.color" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the color of the arrow. Possible string values are any valid color.
+The default value is “White”.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Arrow.Arrow.endAnchor">
+<span class="sig-name descname"><span class="pre">endAnchor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">abaqusConstants.SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'BOTTOM_LEFT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Arrow.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Arrow.Arrow.endAnchor" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
+specifies the <strong>X</strong>- and <strong>Y</strong>-coordinates as percentages of the viewport width and height.
+A Sequence of three Floats specifies the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point in
+the model coordinate system. A SymbolicConstant indicates a relative position. Possible
+values are:</p>
+<ul class="simple">
+<li><p>BOTTOM_LEFT</p></li>
+<li><p>BOTTOM_CENTER</p></li>
+<li><p>BOTTOM_RIGHT</p></li>
+<li><p>CENTER_LEFT</p></li>
+<li><p>CENTER</p></li>
+<li><p>CENTER_RIGHT</p></li>
+<li><p>TOP_LEFT</p></li>
+<li><p>TOP_CENTER</p></li>
+<li><p>TOP_RIGHT</p></li>
+</ul>
+<p>The default value is BOTTOM_LEFT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Arrow.Arrow.endGap">
+<span class="sig-name descname"><span class="pre">endGap</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Arrow.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Arrow.Arrow.endGap" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the distance in millimeters between the arrow end point and the arrow
+end head. The default value is 0.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Arrow.Arrow.endHeadStyle">
+<span class="sig-name descname"><span class="pre">endHeadStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'FILLED_ARROW'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Arrow.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Arrow.Arrow.endHeadStyle" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the style of the end head. Possible values are:</p>
+<ul class="simple">
+<li><p>ARROW</p></li>
+<li><p>FILLED_ARROW</p></li>
+<li><p>HOLLOW_CIRCLE</p></li>
+<li><p>FILLED_CIRCLE</p></li>
+<li><p>HOLLOW_DIAMOND</p></li>
+<li><p>FILLED_DIAMOND</p></li>
+<li><p>HOLLOW_SQUARE</p></li>
+<li><p>FILLED_SQUARE</p></li>
+<li><p>NONE</p></li>
+</ul>
+<p>The default value is FILLED_ARROW.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Arrow.Arrow.endPoint">
+<span class="sig-name descname"><span class="pre">endPoint</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Arrow.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Arrow.Arrow.endPoint" title="Permalink to this definition">#</a></dt>
+<dd><p>A pair of Floats specifying the end point <strong>X</strong>- and <strong>Y</strong>-offsets in millimeters from
+<strong>endAnchor</strong>. The default value is (0, 0).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Arrow.Arrow.lineStyle">
+<span class="sig-name descname"><span class="pre">lineStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'SOLID'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Arrow.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Arrow.Arrow.lineStyle" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the line style of the arrow. Possible values are SOLID,
+DASHED, DOTTED, and DOT_DASH. The default value is SOLID.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Arrow.Arrow.lineThickness">
+<span class="sig-name descname"><span class="pre">lineThickness</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'VERY_THIN'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Arrow.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Arrow.Arrow.lineThickness" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the line thickness of the arrow. Possible values are
+VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Annotation.Arrow.Arrow.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">startPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startAnchor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOTTOM_LEFT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endAnchor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOTTOM_LEFT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startHeadStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NONE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endHeadStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'FILLED_ARROW'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startGap</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endGap</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SOLID'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineThickness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'VERY_THIN'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Arrow.py#L363-L429"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Arrow.Arrow.setValues" title="Permalink to this definition">#</a></dt>
@@ -1063,6 +1144,60 @@ VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Arrow.Arrow.startAnchor">
+<span class="sig-name descname"><span class="pre">startAnchor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">abaqusConstants.SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'BOTTOM_LEFT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Arrow.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Arrow.Arrow.startAnchor" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
+specifies the <strong>X</strong>- and <strong>Y</strong>-coordinates as percentages of the viewport width and height.
+A sequence of three Floats specifies the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point in
+the model coordinate system. A SymbolicConstant indicates a relative position. Possible
+values are:</p>
+<ul class="simple">
+<li><p>BOTTOM_LEFT</p></li>
+<li><p>BOTTOM_CENTER</p></li>
+<li><p>BOTTOM_RIGHT</p></li>
+<li><p>CENTER_LEFT</p></li>
+<li><p>CENTER</p></li>
+<li><p>CENTER_RIGHT</p></li>
+<li><p>TOP_LEFT</p></li>
+<li><p>TOP_CENTER</p></li>
+<li><p>TOP_RIGHT</p></li>
+</ul>
+<p>The default value is BOTTOM_LEFT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Arrow.Arrow.startGap">
+<span class="sig-name descname"><span class="pre">startGap</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Arrow.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Arrow.Arrow.startGap" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the distance in millimeters between the arrow start point and the
+arrow start head. The default value is 0.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Arrow.Arrow.startHeadStyle">
+<span class="sig-name descname"><span class="pre">startHeadStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'NONE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Arrow.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Arrow.Arrow.startHeadStyle" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the style of the start head. Possible values are:</p>
+<ul class="simple">
+<li><p>ARROW</p></li>
+<li><p>FILLED_ARROW</p></li>
+<li><p>HOLLOW_CIRCLE</p></li>
+<li><p>FILLED_CIRCLE</p></li>
+<li><p>HOLLOW_DIAMOND</p></li>
+<li><p>FILLED_DIAMOND</p></li>
+<li><p>HOLLOW_SQUARE</p></li>
+<li><p>FILLED_SQUARE</p></li>
+<li><p>NONE</p></li>
+</ul>
+<p>The default value is NONE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Arrow.Arrow.startPoint">
+<span class="sig-name descname"><span class="pre">startPoint</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Arrow.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Arrow.Arrow.startPoint" title="Permalink to this definition">#</a></dt>
+<dd><p>A pair of Floats specifying the start point <strong>X</strong>- and <strong>Y</strong>-offsets in millimeters from
+<strong>startAnchor</strong>. The default value is (0, 0).</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1202,6 +1337,111 @@ JUSTIFY_LEFT.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Text.Text.anchor">
+<span class="sig-name descname"><span class="pre">anchor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">abaqusConstants.SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'BOTTOM_LEFT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Text.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Text.Text.anchor" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
+specifies the <strong>X</strong>- and <strong>Y</strong> coordinates as percentages of the viewport width and height.
+A Sequence of three Floats specifies the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point in
+the model coordinate system. A SymbolicConstant specifies a relative position. Possible
+values are:</p>
+<ul class="simple">
+<li><p>BOTTOM_LEFT</p></li>
+<li><p>BOTTOM_CENTER</p></li>
+<li><p>BOTTOM_RIGHT</p></li>
+<li><p>CENTER_LEFT</p></li>
+<li><p>CENTER</p></li>
+<li><p>CENTER_RIGHT</p></li>
+<li><p>TOP_LEFT</p></li>
+<li><p>TOP_CENTER</p></li>
+<li><p>TOP_RIGHT</p></li>
+</ul>
+<p>The default value is BOTTOM_LEFT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Text.Text.backgroundColor">
+<span class="sig-name descname"><span class="pre">backgroundColor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Text.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Text.Text.backgroundColor" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the color of the Text object background. Possible string values are
+any valid color. The default value matches the viewport background.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Text.Text.backgroundStyle">
+<span class="sig-name descname"><span class="pre">backgroundStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'TRANSPARENT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Text.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Text.Text.backgroundStyle" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the Text object background style. Possible values are
+MATCH, TRANSPARENT, and OTHER. The default value is TRANSPARENT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Text.Text.box">
+<span class="sig-name descname"><span class="pre">box</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Text.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Text.Text.box" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the box around the text is shown. The default value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Text.Text.color">
+<span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Text.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Text.Text.color" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the color of the Text object. Possible string values are any valid
+color. The default value is “White”.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Text.Text.font">
+<span class="sig-name descname"><span class="pre">font</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Text.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Text.Text.font" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the font of the Text object. Possible string values are any valid
+font specification. The default value is “-<em>-verdana-medium-r-normal–120-</em>“.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Text.Text.height">
+<span class="sig-name descname"><span class="pre">height</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Text.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Text.Text.height" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the height in millimeters of the Text object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Text.Text.justification">
+<span class="sig-name descname"><span class="pre">justification</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'JUSTIFY_LEFT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Text.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Text.Text.justification" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the Text object justification for multiline text. Possible
+values are JUSTIFY_LEFT, JUSTIFY_CENTER, and JUSTIFY_RIGHT. The default value is
+JUSTIFY_LEFT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Text.Text.offset">
+<span class="sig-name descname"><span class="pre">offset</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Text.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Text.Text.offset" title="Permalink to this definition">#</a></dt>
+<dd><p>A pair of Floats specifying the <strong>X</strong>- and <strong>Y</strong>-offsets in millimeters of the Text object
+from <strong>anchor</strong>. The default value is (0, 0).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Text.Text.referencePoint">
+<span class="sig-name descname"><span class="pre">referencePoint</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">abaqusConstants.SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'BOTTOM_LEFT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Text.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Text.Text.referencePoint" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant or a sequence of Floats specifying a point. The sequence of two
+Floats specifies the <strong>X</strong>- and <strong>Y</strong>-coordinates of the reference point of the Text
+annotation given as percentages of its width and height. The SymbolicConstant indicates
+a relative position. Possible values are:</p>
+<ul class="simple">
+<li><p>BOTTOM_LEFT</p></li>
+<li><p>BOTTOM_CENTER</p></li>
+<li><p>BOTTOM_RIGHT</p></li>
+<li><p>CENTER_LEFT</p></li>
+<li><p>CENTER</p></li>
+<li><p>CENTER_RIGHT</p></li>
+<li><p>TOP_LEFT</p></li>
+<li><p>TOP_CENTER</p></li>
+<li><p>TOP_RIGHT</p></li>
+</ul>
+<p>The default value is BOTTOM_LEFT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Text.Text.rotationAngle">
+<span class="sig-name descname"><span class="pre">rotationAngle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Text.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Text.Text.rotationAngle" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the amount of rotation in degrees about <strong>referencePoint</strong>. The default
+value is 0.0.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Annotation.Text.Text.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anchor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOTTOM_LEFT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referencePoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOTTOM_LEFT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rotationAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backgroundStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'TRANSPARENT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backgroundColor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">box</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">justification</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'JUSTIFY_LEFT'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Text.py#L275-L336"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Text.Text.setValues" title="Permalink to this definition">#</a></dt>
@@ -1253,6 +1493,18 @@ JUSTIFY_LEFT.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Text.Text.text">
+<span class="sig-name descname"><span class="pre">text</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Text.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Text.Text.text" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the text of the Text object. The default value is an empty string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Annotation.Text.Text.width">
+<span class="sig-name descname"><span class="pre">width</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/Text.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.Text.Text.width" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the width in millimeters of the Text object.</p>
 </dd></dl>
 
 </dd></dl>

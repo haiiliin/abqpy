@@ -1379,6 +1379,19 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.Amplitude.Amplitude.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/Amplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.Amplitude.Amplitude.name" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the repository key.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.Amplitude.Amplitude.timeSpan">
+<span class="sig-name descname"><span class="pre">timeSpan</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'STEP'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/Amplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.Amplitude.Amplitude.timeSpan" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+and TOTAL. The default value is STEP.</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -1446,6 +1459,13 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.timeSpan">
+<span class="sig-name descname"><span class="pre">timeSpan</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'STEP'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/ActuatorAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.timeSpan" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+and TOTAL. The default value is STEP.</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -1492,6 +1512,14 @@ sequence.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.BaselineCorrection.BaselineCorrection.intervals">
+<span class="sig-name descname"><span class="pre">intervals</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/BaselineCorrection.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.BaselineCorrection.BaselineCorrection.intervals" title="Permalink to this definition">#</a></dt>
+<dd><p>A sequence of Floats specifying the correction time interval end points. Possible values
+are positive and monotonically increasing Floats. The default value is an empty
+sequence.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.BaselineCorrection.BaselineCorrection.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/BaselineCorrection.py#L63-L70"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.BaselineCorrection.BaselineCorrection.setValues" title="Permalink to this definition">#</a></dt>
@@ -1541,6 +1569,35 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.Correlation.Correlation.approach">
+<span class="sig-name descname"><span class="pre">approach</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'CORRELATED'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/Correlation.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.Correlation.Correlation.approach" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the approach used in the correlation data representation.
+Possible values are CORRELATED, MOVING_NOISE, UNCORRELATED, and USER. The default value
+is CORRELATED.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.Correlation.Correlation.data">
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/Correlation.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.Correlation.Correlation.data" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of tuples of Floats specifying the real and imaginary part of the scaling
+factor. If <strong>approach</strong> = MOVING_NOISE, then <strong>data</strong> represents the noise velocity components
+1, 2, and 3.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.Correlation.Correlation.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/Correlation.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.Correlation.Correlation.name" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the repository key.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.Correlation.Correlation.timeSpan">
+<span class="sig-name descname"><span class="pre">timeSpan</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'STEP'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/Correlation.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.Correlation.Correlation.timeSpan" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+and TOTAL. The default value is STEP.</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -1618,6 +1675,24 @@ and TOTAL. The default value is STEP.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.DecayAmplitude.DecayAmplitude.decayTime">
+<span class="sig-name descname"><span class="pre">decayTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/DecayAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.DecayAmplitude.DecayAmplitude.decayTime" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the decay time tdtd. Possible values are non-negative numbers.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.DecayAmplitude.DecayAmplitude.initial">
+<span class="sig-name descname"><span class="pre">initial</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/DecayAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.DecayAmplitude.DecayAmplitude.initial" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the constant A0A0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.DecayAmplitude.DecayAmplitude.maximum">
+<span class="sig-name descname"><span class="pre">maximum</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/DecayAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.DecayAmplitude.DecayAmplitude.maximum" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the coefficient AA.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.DecayAmplitude.DecayAmplitude.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/DecayAmplitude.py#L109-L122"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.DecayAmplitude.DecayAmplitude.setValues" title="Permalink to this definition">#</a></dt>
@@ -1636,6 +1711,19 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.DecayAmplitude.DecayAmplitude.start">
+<span class="sig-name descname"><span class="pre">start</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/DecayAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.DecayAmplitude.DecayAmplitude.start" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the starting time t0t0. Possible values are non-negative numbers.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.DecayAmplitude.DecayAmplitude.timeSpan">
+<span class="sig-name descname"><span class="pre">timeSpan</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'STEP'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/DecayAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.DecayAmplitude.DecayAmplitude.timeSpan" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+and TOTAL. The default value is STEP.</p>
 </dd></dl>
 
 </dd></dl>
@@ -1701,6 +1789,32 @@ and TOTAL. The default value is STEP.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.baselineCorrection">
+<span class="sig-name descname"><span class="pre">baselineCorrection</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Amplitude.BaselineCorrection.BaselineCorrection" title="abaqus.Amplitude.BaselineCorrection.BaselineCorrection"><span class="pre">BaselineCorrection</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Amplitude.BaselineCorrection.BaselineCorrection</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/EquallySpacedAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.baselineCorrection" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.Amplitude.BaselineCorrection.BaselineCorrection" title="abaqus.Amplitude.BaselineCorrection.BaselineCorrection"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaselineCorrection</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.begin">
+<span class="sig-name descname"><span class="pre">begin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/EquallySpacedAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.begin" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the time at which the first amplitude data are given. Possible values
+are non-negative numbers. The default value is 0.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.data">
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/EquallySpacedAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.data" title="Permalink to this definition">#</a></dt>
+<dd><p>A sequence of Floats specifying the amplitude values.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.fixedInterval">
+<span class="sig-name descname"><span class="pre">fixedInterval</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/EquallySpacedAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.fixedInterval" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the fixed time interval at which the amplitude data are given.
+Possible values are positive numbers.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">begin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smooth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SOLVER_DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/EquallySpacedAmplitude.py#L133-L159"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.setValues" title="Permalink to this definition">#</a></dt>
@@ -1727,6 +1841,22 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.smooth">
+<span class="sig-name descname"><span class="pre">smooth</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">abaqusConstants.SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'SOLVER_DEFAULT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/EquallySpacedAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.smooth" title="Permalink to this definition">#</a></dt>
+<dd><p>The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing.
+Possible float values are 0 ≤≤ <strong>smoothing</strong> ≤≤ 0.5. If <strong>smooth</strong> = SOLVER_DEFAULT, the
+default degree of smoothing will be determined by the solver. The default value is
+SOLVER_DEFAULT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.timeSpan">
+<span class="sig-name descname"><span class="pre">timeSpan</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'STEP'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/EquallySpacedAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.timeSpan" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+and TOTAL. The default value is STEP.</p>
 </dd></dl>
 
 </dd></dl>
@@ -1788,6 +1918,32 @@ and TOTAL. The default value is STEP.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.frequency1">
+<span class="sig-name descname"><span class="pre">frequency1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/ModulatedAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.frequency1" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the circular frequency 1 (ω1ω1). Possible values are positive
+numbers.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.frequency2">
+<span class="sig-name descname"><span class="pre">frequency2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/ModulatedAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.frequency2" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the circular frequency 2 (ω2ω2). Possible values are positive
+numbers.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.initial">
+<span class="sig-name descname"><span class="pre">initial</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/ModulatedAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.initial" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the constant A0A0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.magnitude">
+<span class="sig-name descname"><span class="pre">magnitude</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/ModulatedAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.magnitude" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the coefficient AA.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/ModulatedAmplitude.py#L123-L136"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.setValues" title="Permalink to this definition">#</a></dt>
@@ -1806,6 +1962,19 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.start">
+<span class="sig-name descname"><span class="pre">start</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/ModulatedAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.start" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the starting time t0t0. Possible values are non-negative numbers.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.timeSpan">
+<span class="sig-name descname"><span class="pre">timeSpan</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'STEP'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/ModulatedAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.timeSpan" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+and TOTAL. The default value is STEP.</p>
 </dd></dl>
 
 </dd></dl>
@@ -1863,6 +2032,24 @@ and TOTAL. The default value is STEP.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.a_0">
+<span class="sig-name descname"><span class="pre">a_0</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PeriodicAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.a_0" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the constant A0A0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.data">
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PeriodicAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.data" title="Permalink to this definition">#</a></dt>
+<dd><p>A sequence of pairs of Floats specifying AiAi and BiBi pairs.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.frequency">
+<span class="sig-name descname"><span class="pre">frequency</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PeriodicAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.frequency" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the circular frequency ωω. Possible values are positive numbers.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PeriodicAmplitude.py#L109-L122"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.setValues" title="Permalink to this definition">#</a></dt>
@@ -1881,6 +2068,19 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.start">
+<span class="sig-name descname"><span class="pre">start</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PeriodicAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.start" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the starting time t0t0. Possible values are positive numbers.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.timeSpan">
+<span class="sig-name descname"><span class="pre">timeSpan</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'STEP'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PeriodicAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.timeSpan" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+and TOTAL. The default value is STEP.</p>
 </dd></dl>
 
 </dd></dl>
@@ -1956,6 +2156,36 @@ string.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.PsdDefinition.PsdDefinition.amplitude">
+<span class="sig-name descname"><span class="pre">amplitude</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PsdDefinition.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PsdDefinition.PsdDefinition.amplitude" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the amplitude that describes the dynamic event used to
+define the cross-spectral density frequency function. The default value is an empty
+string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.PsdDefinition.PsdDefinition.data">
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PsdDefinition.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PsdDefinition.PsdDefinition.data" title="Permalink to this definition">#</a></dt>
+<dd><p>A sequence of sequences of Floats specifying the real part of the frequency function,
+the imaginary part of the frequency function, and the frequency or frequency band number
+values, depending on the value of <strong>unitType</strong>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.PsdDefinition.PsdDefinition.referenceGravityAcceleration">
+<span class="sig-name descname"><span class="pre">referenceGravityAcceleration</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PsdDefinition.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PsdDefinition.PsdDefinition.referenceGravityAcceleration" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the reference gravity acceleration. This argument applies when
+<strong>unitType</strong> = BASE. The default value is 1.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.PsdDefinition.PsdDefinition.referenecePower">
+<span class="sig-name descname"><span class="pre">referenecePower</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PsdDefinition.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PsdDefinition.PsdDefinition.referenecePower" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the reference power value, in load units squared. This argument
+applies when <strong>unitType</strong> = DB. The default value is 0.0.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.PsdDefinition.PsdDefinition.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">unitType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'FORCE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenceGravityAcceleration</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenecePower</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'STEP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PsdDefinition.py#L156-L195"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PsdDefinition.PsdDefinition.setValues" title="Permalink to this definition">#</a></dt>
@@ -1992,6 +2222,29 @@ string.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.PsdDefinition.PsdDefinition.timeSpan">
+<span class="sig-name descname"><span class="pre">timeSpan</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'STEP'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PsdDefinition.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PsdDefinition.PsdDefinition.timeSpan" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+and TOTAL. The default value is STEP.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.PsdDefinition.PsdDefinition.unitType">
+<span class="sig-name descname"><span class="pre">unitType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'FORCE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PsdDefinition.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PsdDefinition.PsdDefinition.unitType" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the type of units for specifying the frequency function.
+FORCE implies power units. BASE implies gravity used to define base motion. DB implies
+decibel units. Possible values are FORCE, BASE, and DB. The default value is FORCE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.PsdDefinition.PsdDefinition.user">
+<span class="sig-name descname"><span class="pre">user</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PsdDefinition.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PsdDefinition.PsdDefinition.user" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the frequency function is defined in user subroutine UPSD.
+If specified, then <strong>data</strong> is not applicable, and the <strong>unitType</strong> value must not be DB.
+The default value is OFF.</p>
 </dd></dl>
 
 </dd></dl>
@@ -2045,6 +2298,13 @@ and TOTAL. The default value is STEP.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.data">
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SmoothStepAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.data" title="Permalink to this definition">#</a></dt>
+<dd><p>A sequence of pairs of Floats specifying time/frequency and amplitude pairs. Possible
+values for time/frequency are positive numbers.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SmoothStepAmplitude.py#L84-L97"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.setValues" title="Permalink to this definition">#</a></dt>
@@ -2063,6 +2323,13 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.timeSpan">
+<span class="sig-name descname"><span class="pre">timeSpan</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'STEP'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SmoothStepAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.timeSpan" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+and TOTAL. The default value is STEP.</p>
 </dd></dl>
 
 </dd></dl>
@@ -2122,6 +2389,27 @@ and TOTAL. The default value is STEP.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.initial">
+<span class="sig-name descname"><span class="pre">initial</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SolutionDependentAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.initial" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the initial amplitude value. Possible values are those between
+<strong>minimum</strong> and <strong>maximum</strong>. The default value is 1.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.maximum">
+<span class="sig-name descname"><span class="pre">maximum</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1000</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SolutionDependentAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.maximum" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the maximum amplitude value. Possible values are those larger than
+<strong>minimum</strong> and <strong>initial</strong>. The default value is 1000.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.minimum">
+<span class="sig-name descname"><span class="pre">minimum</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SolutionDependentAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.minimum" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the minimum amplitude value. Possible values are those smaller than
+<strong>maximum</strong> and <strong>initial</strong>. The default value is 0.1.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">initial</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimum</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SolutionDependentAmplitude.py#L111-L139"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.setValues" title="Permalink to this definition">#</a></dt>
@@ -2149,6 +2437,13 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.timeSpan">
+<span class="sig-name descname"><span class="pre">timeSpan</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'STEP'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SolutionDependentAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.timeSpan" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+and TOTAL. The default value is STEP.</p>
 </dd></dl>
 
 </dd></dl>
@@ -2232,6 +2527,53 @@ calculate the spectrum. The default value is an empty string.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.amplitude">
+<span class="sig-name descname"><span class="pre">amplitude</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SpectrumAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.amplitude" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the amplitude that describes the dynamic event used to
+calculate the spectrum. The default value is an empty string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.criticalDamping">
+<span class="sig-name descname"><span class="pre">criticalDamping</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SpectrumAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.criticalDamping" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to calculate the spectrum for only the specified range of
+critical damping values or a list of values. If <strong>criticalDamping</strong> = ON, the spectrum is
+calculated only for the specified range of critical damping values. If <strong>criticalDamping</strong>
+= OFF, the spectrum is calculated for a list of damping values. The default value is
+OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.data">
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SpectrumAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.data" title="Permalink to this definition">#</a></dt>
+<dd><p>A sequence of sequences of Floats specifying the magnitude, frequency, and damping
+values.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.eventUnits">
+<span class="sig-name descname"><span class="pre">eventUnits</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'EVENT_ACCELERATION'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SpectrumAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.eventUnits" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the units used to describe the dynamic event in the
+amplitude used for the calculation. Possible values are EVENT_DISPLACEMENT,
+EVENT_VELOCITY, EVENT_ACCELERATION, and EVENT_GRAVITY. The default value is
+EVENT_ACCELERATION.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.gravity">
+<span class="sig-name descname"><span class="pre">gravity</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SpectrumAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.gravity" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the acceleration due to gravity. This argument applies only when
+<strong>specificationUnits</strong> = GRAVITY or*eventUnits* = GRAVITY. The default value is 1.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.method">
+<span class="sig-name descname"><span class="pre">method</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SpectrumAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.method" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the method for specifying the spectrum. Possible values
+are DEFINE and CALCULATE.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">specificationUnits</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ACCELERATION'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eventUnits</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'EVENT_ACCELERATION'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solution</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ABSOLUTE_VALUE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeIncrement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gravity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criticalDamping</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'STEP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SpectrumAmplitude.py#L195-L245"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.setValues" title="Permalink to this definition">#</a></dt>
@@ -2277,6 +2619,35 @@ calculate the spectrum. The default value is an empty string.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.solution">
+<span class="sig-name descname"><span class="pre">solution</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'ABSOLUTE_VALUE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SpectrumAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.solution" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the solution method for the dynamic equations. Possible
+values are ABSOLUTE_VALUE and RELATIVE_VALUE. The default value is ABSOLUTE_VALUE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.specificationUnits">
+<span class="sig-name descname"><span class="pre">specificationUnits</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'ACCELERATION'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SpectrumAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.specificationUnits" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the units used for specifying the spectrum. Possible
+values are DISPLACEMENT, VELOCITY, ACCELERATION, and GRAVITY. The default value is
+ACCELERATION.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.timeIncrement">
+<span class="sig-name descname"><span class="pre">timeIncrement</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SpectrumAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.timeIncrement" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the implicit time increment used to calculate the spectrum. This
+argument is required when the <strong>method</strong> = CALCULATE. The default value is 0.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.timeSpan">
+<span class="sig-name descname"><span class="pre">timeSpan</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'STEP'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SpectrumAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.timeSpan" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+and TOTAL. The default value is STEP.</p>
 </dd></dl>
 
 </dd></dl>
@@ -2337,6 +2708,19 @@ and TOTAL. The default value is STEP.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.TabularAmplitude.TabularAmplitude.baselineCorrection">
+<span class="sig-name descname"><span class="pre">baselineCorrection</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Amplitude.BaselineCorrection.BaselineCorrection" title="abaqus.Amplitude.BaselineCorrection.BaselineCorrection"><span class="pre">BaselineCorrection</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Amplitude.BaselineCorrection.BaselineCorrection</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/TabularAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.TabularAmplitude.TabularAmplitude.baselineCorrection" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.Amplitude.BaselineCorrection.BaselineCorrection" title="abaqus.Amplitude.BaselineCorrection.BaselineCorrection"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaselineCorrection</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.TabularAmplitude.TabularAmplitude.data">
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/TabularAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.TabularAmplitude.TabularAmplitude.data" title="Permalink to this definition">#</a></dt>
+<dd><p>A sequence of pairs of Floats specifying time/frequency and amplitude pairs. Possible
+values for time/frequency are positive numbers.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.TabularAmplitude.TabularAmplitude.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">smooth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SOLVER_DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/TabularAmplitude.py#L114-L136"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.TabularAmplitude.TabularAmplitude.setValues" title="Permalink to this definition">#</a></dt>
@@ -2360,6 +2744,22 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.TabularAmplitude.TabularAmplitude.smooth">
+<span class="sig-name descname"><span class="pre">smooth</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">abaqusConstants.SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'SOLVER_DEFAULT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/TabularAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.TabularAmplitude.TabularAmplitude.smooth" title="Permalink to this definition">#</a></dt>
+<dd><p>The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing.
+Possible float values are between 0 and 0.5. If <strong>smooth</strong> = SOLVER_DEFAULT, the default
+degree of smoothing will be determined by the solver. The default value is
+SOLVER_DEFAULT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Amplitude.TabularAmplitude.TabularAmplitude.timeSpan">
+<span class="sig-name descname"><span class="pre">timeSpan</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'STEP'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/TabularAmplitude.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.TabularAmplitude.TabularAmplitude.timeSpan" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
+and TOTAL. The default value is STEP.</p>
 </dd></dl>
 
 </dd></dl>

@@ -472,10 +472,87 @@ available.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.atTime">
+<span class="sig-name descname"><span class="pre">atTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Coexecution.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.atTime" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the time at which to submit the co-execution. If <strong>queue</strong> is empty,
+the string syntax must be valid for the Linux <cite>at</cite> command. If <strong>queue</strong> is set, the
+syntax must be valid according to the system administrator. The default value is an
+empty string.Note:You can use the <strong>atTime</strong> argument when creating a Coexecution object
+on a Windows workstation; however, the <cite>at</cite> command is available only on Linux
+platforms.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.jobs">
+<span class="sig-name descname"><span class="pre">jobs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Job.Job.Job" title="abaqus.Job.Job.Job"><span class="pre">Job</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Coexecution.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.jobs" title="Permalink to this definition">#</a></dt>
+<dd><p>A repository of Job objects specifying the jobs that comprise this co-execution.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.kill">
 <span class="sig-name descname"><span class="pre">kill</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Coexecution.py#L138-L140"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.kill" title="Permalink to this definition">#</a></dt>
 <dd><p>This method kills the analysis of a co-execution.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.licenseType">
+<span class="sig-name descname"><span class="pre">licenseType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'DEFAULT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Coexecution.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.licenseType" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the type of license type being used in case of DSLS
+SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default value
+is DEFAULT.If the license model is not DSLS SimUnit then the licenseType is not
+available.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.mainAnalysisProduct">
+<span class="sig-name descname"><span class="pre">mainAnalysisProduct</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'ABAQUS'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Coexecution.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.mainAnalysisProduct" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the analysis product type of the main model for the
+co-execution. The default value is ABAQUS.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.mainModel">
+<span class="sig-name descname"><span class="pre">mainModel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Coexecution.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.mainModel" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the main model for the co-execution.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Coexecution.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.name" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the new job. The name must be a valid Abaqus/CAE object
+name.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.queue">
+<span class="sig-name descname"><span class="pre">queue</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Coexecution.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.queue" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the queue to which to submit the co-execution. The
+default value is an empty string.Note:You can use the <strong>queue</strong> argument when creating a
+Coexecution object on a Windows workstation; however, remote queues are available only
+on Linux platforms.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.secondaryAnalysisProducts">
+<span class="sig-name descname"><span class="pre">secondaryAnalysisProducts</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Coexecution.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.secondaryAnalysisProducts" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of SymbolicConstants specifying the analysis product types of the secondary
+models for the co-execution. The default value is an empty sequence.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.secondaryModels">
+<span class="sig-name descname"><span class="pre">secondaryModels</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Coexecution.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.secondaryModels" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of Strings specifying the names of the secondary models for the co-execution.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.status">
+<span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Coexecution.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.status" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the status of the co-execution. Possible values are
+SUBMITTED, RUNNING, ABORTED, TERMINATED, COMPLETED, CHECK_SUBMITTED, CHECK_RUNNING, and
+CHECK_COMPLETED.If the <strong>message</strong> member of all the jobs are empty, <strong>status</strong> is set to
+NONE.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -502,6 +579,14 @@ True.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.type">
+<span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'ANALYSIS'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Coexecution.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.type" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the type of analysis to execute for the co-execution.
+Possible values are ANALYSIS, SYNTAXCHECK, RECOVER, and RESTART. The default value is
+ANALYSIS.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.waitForCompletion">
 <span class="sig-name descname"><span class="pre">waitForCompletion</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Coexecution.py#L179-L185"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.waitForCompletion" title="Permalink to this definition">#</a></dt>
@@ -509,6 +594,22 @@ True.</p>
 you call the waitForCompletion method and the <strong>status</strong> member is neither SUBMITTED nor
 RUNNING, Abaqus assumes the analysis has either completed or aborted and returns
 immediately.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.waitHours">
+<span class="sig-name descname"><span class="pre">waitHours</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Coexecution.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.waitHours" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of hours to wait before submitting the co-execution. This
+argument is ignored if <strong>queue</strong> is set. The default value is 0.This argument works in
+conjunction with <strong>waitMinutes</strong>. <strong>waitHours</strong> and <strong>atTime</strong> are mutually exclusive.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.waitMinutes">
+<span class="sig-name descname"><span class="pre">waitMinutes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Coexecution.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.waitMinutes" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of minutes to wait before submitting the job. This argument
+is ignored if <strong>queue</strong> is set. The default value is 0.This argument works in conjunction
+with <strong>waitHours</strong>. <strong>waitMinutes</strong> and <strong>atTime</strong> are mutually exclusive.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -671,16 +772,168 @@ available.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.activateLoadBalancing">
+<span class="sig-name descname"><span class="pre">activateLoadBalancing</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.activateLoadBalancing" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to activate dyanmic load balancing for jobs running on
+multiple processors with multiple domains in Abaqus/Explicit. The default value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.analysis">
+<span class="sig-name descname"><span class="pre">analysis</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.analysis" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying whether the job will be analyzed by Abaqus/Standard or
+Abaqus/Explicit. Possible values are STANDARD, EXPLICIT, and UNKNOWN.If the object has
+the type JobFromInputFile, <strong>analysis</strong> = UNKNOWN.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.atTime">
+<span class="sig-name descname"><span class="pre">atTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.atTime" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the time at which to submit the job. If <strong>queue</strong> is empty, the string
+syntax must be valid for the Linux <cite>at</cite> command. If <strong>queue</strong> is set, the syntax must be
+valid according to the system administrator. The default value is an empty
+string.Note:You can use the <strong>atTime</strong> argument when creating a Job object on a Windows
+workstation; however, the <cite>at</cite> command is available only on Linux platforms.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Job.Job.Job.clearMessage">
 <span class="sig-name descname"><span class="pre">clearMessage</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py#L262-L264"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.clearMessage" title="Permalink to this definition">#</a></dt>
 <dd><p>This method clears <strong>messages</strong> and sets the <strong>status</strong> to NONE.</p>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.environment">
+<span class="sig-name descname"><span class="pre">environment</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.environment" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of Strings specifying the environment variables and their values.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.explicitPrecision">
+<span class="sig-name descname"><span class="pre">explicitPrecision</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'SINGLE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.explicitPrecision" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying whether to use the double precision version of
+Abaqus/Explicit. Possible values are SINGLE, FORCE_SINGLE, DOUBLE,
+DOUBLE_CONSTRAINT_ONLY, and DOUBLE_PLUS_PACK. The default value is SINGLE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.getMemoryFromAnalysis">
+<span class="sig-name descname"><span class="pre">getMemoryFromAnalysis</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.getMemoryFromAnalysis" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to retrieve the recommended memory settings from the last
+datacheck or analysis run and use those values in subsequent submissions. The default
+value is ON.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Job.Job.Job.kill">
 <span class="sig-name descname"><span class="pre">kill</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py#L227-L229"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.kill" title="Permalink to this definition">#</a></dt>
 <dd><p>This method kills the analysis of a job.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.licenseType">
+<span class="sig-name descname"><span class="pre">licenseType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'DEFAULT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.licenseType" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the type of license type being used in the case of the
+DSLS SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default
+value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not
+available.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.memory">
+<span class="sig-name descname"><span class="pre">memory</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">90</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.memory" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the amount of memory available to Abaqus analysis. The value should be
+expressed in the units supplied in <strong>memoryUnits</strong>. The default value is 90.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.memoryUnits">
+<span class="sig-name descname"><span class="pre">memoryUnits</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'PERCENTAGE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.memoryUnits" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the units for the amount of memory used in an Abaqus
+analysis. Possible values are PERCENTAGE, MEGA_BYTES, and GIGA_BYTES. The default value
+is PERCENTAGE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.messages">
+<span class="sig-name descname"><span class="pre">messages</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Job.MessageArray.MessageArray" title="abaqus.Job.MessageArray.MessageArray"><span class="pre">MessageArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.messages" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.Job.MessageArray.MessageArray" title="abaqus.Job.MessageArray.MessageArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageArray</span></code></a> object specifying the messages received during an analysis.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.multiprocessingMode">
+<span class="sig-name descname"><span class="pre">multiprocessingMode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'DEFAULT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.multiprocessingMode" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying whether an analysis is decomposed into threads or into
+multiple processes that communicate through a message passing interface (MPI). Possible
+values are DEFAULT, THREADS,MPI, and HYBRID. The default value is DEFAULT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.name" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the new job. The name must be a valid Abaqus/CAE object
+name.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.nodalOutputPrecision">
+<span class="sig-name descname"><span class="pre">nodalOutputPrecision</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'SINGLE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.nodalOutputPrecision" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the precision of the nodal output written to the output
+database. Possible values are SINGLE and FULL. The default value is SINGLE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.numCpus">
+<span class="sig-name descname"><span class="pre">numCpus</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.numCpus" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of CPUs to use for this analysis if parallel processing is
+available. Possible values are <strong>numCpus</strong> &gt;&gt; 0. The default value is 1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.numDomains">
+<span class="sig-name descname"><span class="pre">numDomains</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.numDomains" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
+<strong>parallelizationMethodExplicit</strong> = DOMAIN, <strong>numDomains</strong> must be a multiple of <strong>numCpus</strong>.
+The default value is 1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.numThreadsPerMpiProcess">
+<span class="sig-name descname"><span class="pre">numThreadsPerMpiProcess</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.numThreadsPerMpiProcess" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of threads per MPI process to use for this analysis if
+parallel processing is available. Possible values are <strong>numThreadsPerMpiProcess</strong> &gt;&gt; 0.
+The default value is 1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.parallelizationMethodExplicit">
+<span class="sig-name descname"><span class="pre">parallelizationMethodExplicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'DOMAIN'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.parallelizationMethodExplicit" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the parallelization method for Abaqus/Explicit.
+Possible values are LOOP and DOMAIN. The default value is LOOP.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.queue">
+<span class="sig-name descname"><span class="pre">queue</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.queue" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the queue to which to submit the job. The default value
+is an empty string.Note:You can use the <strong>queue</strong> argument when creating a Job object on a
+Windows workstation; however, remote queues are available only on Linux platforms.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.scratch">
+<span class="sig-name descname"><span class="pre">scratch</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.scratch" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the location of the scratch directory. The default value is an empty
+string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.status">
+<span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.status" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the status of the analysis. Possible values are SUBMITTED,
+RUNNING, ABORTED, TERMINATED, COMPLETED, CHECK_RUNNING, and CHECK_COMPLETED.If the
+<strong>message</strong> member is empty, <strong>status</strong> is set to NONE.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -705,6 +958,21 @@ value is False. The datacheckJob and continueJob arguments cannot both be True.<
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.type">
+<span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'ANALYSIS'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.type" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the type of job. Possible values are ANALYSIS,
+SYNTAXCHECK, RECOVER, and RESTART. The default value is ANALYSIS.If the object has the
+type JobFromInputFile, <strong>type</strong> = RESTART is not available.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.userSubroutine">
+<span class="sig-name descname"><span class="pre">userSubroutine</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.userSubroutine" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the file containing the user’s subroutine definitions. The default
+value is an empty string.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Job.Job.Job.waitForCompletion">
 <span class="sig-name descname"><span class="pre">waitForCompletion</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py#L254-L260"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.waitForCompletion" title="Permalink to this definition">#</a></dt>
@@ -712,6 +980,22 @@ value is False. The datacheckJob and continueJob arguments cannot both be True.<
 call the waitForCompletion method and the <strong>status</strong> member is neither SUBMITTED nor
 RUNNING, Abaqus assumes the analysis has either completed or aborted and returns
 immediately.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.waitHours">
+<span class="sig-name descname"><span class="pre">waitHours</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.waitHours" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of hours to wait before submitting the job. This argument
+is ignored if <strong>queue</strong> is set. The default value is 0.This argument works in conjunction
+with <strong>waitMinutes</strong>. <strong>waitHours</strong> and <strong>atTime</strong> are mutually exclusive.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.waitMinutes">
+<span class="sig-name descname"><span class="pre">waitMinutes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.waitMinutes" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of minutes to wait before submitting the job. This argument
+is ignored if <strong>queue</strong> is set. The default value is 0.This argument works in conjunction
+with <strong>waitHours</strong>. <strong>waitMinutes</strong> and <strong>atTime</strong> are mutually exclusive.</p>
 </dd></dl>
 
 </dd></dl>
@@ -838,6 +1122,143 @@ available.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.activateLoadBalancing">
+<span class="sig-name descname"><span class="pre">activateLoadBalancing</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.activateLoadBalancing" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to activate dyanmic load balancing for jobs running on
+multiple processors with multiple domains in Abaqus/Explicit. The default value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.analysis">
+<span class="sig-name descname"><span class="pre">analysis</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.analysis" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying whether the job will be analyzed by Abaqus/Standard or
+Abaqus/Explicit. Possible values are STANDARD, EXPLICIT, and UNKNOWN.If the object has
+the type JobFromInputFile, <strong>analysis</strong> = UNKNOWN.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.atTime">
+<span class="sig-name descname"><span class="pre">atTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.atTime" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the time at which to submit the job. If <strong>queue</strong> is empty, the string
+syntax must be valid for the Linux <cite>at</cite> command. If <strong>queue</strong> is set, the syntax must be
+valid according to the system administrator. The default value is an empty string.Note:
+You can use the <strong>atTime</strong> argument when creating a Job object on a Windows workstation;
+however, the <cite>at</cite> command is available only on Linux platforms.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.environment">
+<span class="sig-name descname"><span class="pre">environment</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.environment" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of Strings specifying the environment variables and their values.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.explicitPrecision">
+<span class="sig-name descname"><span class="pre">explicitPrecision</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'SINGLE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.explicitPrecision" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying whether to use the double precision version of
+Abaqus/Explicit. Possible values are SINGLE, FORCE_SINGLE, DOUBLE,
+DOUBLE_CONSTRAINT_ONLY, and DOUBLE_PLUS_PACK. The default value is SINGLE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.getMemoryFromAnalysis">
+<span class="sig-name descname"><span class="pre">getMemoryFromAnalysis</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.getMemoryFromAnalysis" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to retrieve the recommended memory settings from the last
+datacheck or analysis run and use those values in subsequent submissions. The default
+value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.inputFileName">
+<span class="sig-name descname"><span class="pre">inputFileName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.inputFileName" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the input file to read. Possible values are any valid file name. If
+the .inp extension is not included in the value of the argument, the system will append
+it for the user.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.licenseType">
+<span class="sig-name descname"><span class="pre">licenseType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'DEFAULT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.licenseType" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the type of license type being used in the case of the
+DSLS SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default
+value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not
+available.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.memory">
+<span class="sig-name descname"><span class="pre">memory</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">90</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.memory" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the amount of memory available to Abaqus analysis. The value should be
+expressed in the units supplied in <strong>memoryUnits</strong>. The default value is 90.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.memoryUnits">
+<span class="sig-name descname"><span class="pre">memoryUnits</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'PERCENTAGE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.memoryUnits" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the units for the amount of memory used in an Abaqus
+analysis. Possible values are PERCENTAGE, MEGA_BYTES, and GIGA_BYTES. The default value
+is PERCENTAGE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.messages">
+<span class="sig-name descname"><span class="pre">messages</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Job.MessageArray.MessageArray" title="abaqus.Job.MessageArray.MessageArray"><span class="pre">MessageArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.messages" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.Job.MessageArray.MessageArray" title="abaqus.Job.MessageArray.MessageArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageArray</span></code></a> object specifying the messages received during an analysis.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.multiprocessingMode">
+<span class="sig-name descname"><span class="pre">multiprocessingMode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'DEFAULT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.multiprocessingMode" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying whether an analysis is decomposed into threads or into
+multiple processes that communicate through a message passing interface (MPI). Possible
+values are DEFAULT, THREADS, and MPI. The default value is DEFAULT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.nodalOutputPrecision">
+<span class="sig-name descname"><span class="pre">nodalOutputPrecision</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'SINGLE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.nodalOutputPrecision" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the precision of the nodal output written to the output
+database. Possible values are SINGLE and FULL. The default value is SINGLE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.numCpus">
+<span class="sig-name descname"><span class="pre">numCpus</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.numCpus" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of CPUs to use for this analysis if parallel processing is
+available. Possible values are <strong>numCpus</strong> &gt;&gt; 0. The default value is 1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.numDomains">
+<span class="sig-name descname"><span class="pre">numDomains</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.numDomains" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
+<strong>parallelizationMethodExplicit</strong> = DOMAIN, <strong>numDomains</strong> must be a multiple of <strong>numCpus</strong>.
+The default value is 1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.parallelizationMethodExplicit">
+<span class="sig-name descname"><span class="pre">parallelizationMethodExplicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'DOMAIN'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.parallelizationMethodExplicit" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the parallelization method for Abaqus/Explicit.
+Possible values are LOOP and DOMAIN. The default value is LOOP.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.queue">
+<span class="sig-name descname"><span class="pre">queue</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.queue" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the queue to which to submit the job. The default value
+is an empty string.Note: You can use the <strong>queue</strong> argument when creating a Job object on
+a Windows workstation; however, remote queues are available only on Linux platforms.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.scratch">
+<span class="sig-name descname"><span class="pre">scratch</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.scratch" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the location of the scratch directory. The default value is an empty
+string.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ANALYSIS'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queue</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitHours</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitMinutes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atTime</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scratch</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userSubroutine</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numCpus</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">90</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memoryUnits</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'PERCENTAGE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">explicitPrecision</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SINGLE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodalOutputPrecision</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SINGLE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parallelizationMethodExplicit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DOMAIN'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numDomains</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">activateLoadBalancing</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multiprocessingMode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">licenseType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py#L343-L432"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.setValues" title="Permalink to this definition">#</a></dt>
@@ -914,6 +1335,45 @@ available.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.status">
+<span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.status" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the status of the analysis. Possible values are SUBMITTED,
+RUNNING, ABORTED, TERMINATED, COMPLETED, CHECK_RUNNING, and CHECK_COMPLETED.If the
+<strong>message</strong> member is empty, <strong>status</strong> is set to NONE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.type">
+<span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'ANALYSIS'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.type" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the type of job. Possible values are ANALYSIS,
+SYNTAXCHECK, and RECOVER. The default value is ANALYSIS.For theJobFromInputFile object,
+<strong>type</strong> = RESTART is not currently supported.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.userSubroutine">
+<span class="sig-name descname"><span class="pre">userSubroutine</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.userSubroutine" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the file containing the user’s subroutine definitions. The default
+value is an empty string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.waitHours">
+<span class="sig-name descname"><span class="pre">waitHours</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.waitHours" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of hours to wait before submitting the job. This argument
+is ignored if <strong>queue</strong> is set. The default value is 0.This argument works in conjunction
+with <strong>waitMinutes</strong>. <strong>waitHours</strong> and <strong>atTime</strong> are mutually exclusive.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.waitMinutes">
+<span class="sig-name descname"><span class="pre">waitMinutes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/JobFromInputFile.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.waitMinutes" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of minutes to wait before submitting the job. This argument
+is ignored if <strong>queue</strong> is set. The default value is 0.This argument works in conjunction
+with <strong>waitHours</strong>. <strong>waitMinutes</strong> and <strong>atTime</strong> are mutually exclusive.</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -971,6 +1431,43 @@ DataObject.</p>
 </dl>
 </dd>
 </dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Message.Message.data">
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Message.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Message.Message.data" title="Permalink to this definition">#</a></dt>
+<dd><p>A Dictionary object specifying the data returned by the analysis product. The value
+depends on the message returned. For a list of the possible entries, see the members of
+DataObject.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Message.Message.type">
+<span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Message.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Message.Message.type" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the type of message. Possible values are:
+- ABORTED
+- ANY_JOB
+- ANY_MESSAGE_TYPE
+- COMPLETED
+- END_STEP
+- ERROR
+- HEADING
+- HEALER_JOB
+- HEALER_TYPE
+- INTERRUPTED
+- ITERATION
+- JOB_ABORTED
+- JOB_COMPLETED
+- JOB_INTERRUPTED
+- JOB_SUBMITTED
+- MONITOR_DATA
+- ODB_FILE
+- ODB_FRAME
+- STARTED
+- STATE_FRAME
+- STATUS
+- STEP
+- WARNING</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -1128,10 +1625,216 @@ value is an empty string.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.activateLoadBalancing">
+<span class="sig-name descname"><span class="pre">activateLoadBalancing</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.activateLoadBalancing" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to activate dyanmic load balancing for jobs running on
+multiple processors with multiple domains in Abaqus/Explicit. The default value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.analysis">
+<span class="sig-name descname"><span class="pre">analysis</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.analysis" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying whether the job will be analyzed by Abaqus/Standard or
+Abaqus/Explicit. Possible values are STANDARD, EXPLICIT, and UNKNOWN.If the object has
+the type JobFromInputFile, <strong>analysis</strong> = UNKNOWN.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.atTime">
+<span class="sig-name descname"><span class="pre">atTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.atTime" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the time at which to submit the job. If <strong>queue</strong> is empty, the string
+syntax must be valid for the Linux <cite>at</cite> command. If <strong>queue</strong> is set, the syntax must be
+valid according to the system administrator. The default value is an empty
+string.Note:You can use the <strong>atTime</strong> argument when creating a Job object on a Windows
+workstation; however, the <cite>at</cite> command is available only on Linux platforms.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.contactPrint">
+<span class="sig-name descname"><span class="pre">contactPrint</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.contactPrint" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether contact constraint data are printed. The default value is
+OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.description" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying a description of the job.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.echoPrint">
+<span class="sig-name descname"><span class="pre">echoPrint</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.echoPrint" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether an echo of the input data is printed. The default value is
+OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.environment">
+<span class="sig-name descname"><span class="pre">environment</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.environment" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of Strings specifying the environment variables and their values.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.explicitPrecision">
+<span class="sig-name descname"><span class="pre">explicitPrecision</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'SINGLE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.explicitPrecision" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying whether to use the double precision version of
+Abaqus/Explicit. Possible values are SINGLE, FORCE_SINGLE, DOUBLE,
+DOUBLE_CONSTRAINT_ONLY, and DOUBLE_PLUS_PACK. The default value is SINGLE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.getMemoryFromAnalysis">
+<span class="sig-name descname"><span class="pre">getMemoryFromAnalysis</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.getMemoryFromAnalysis" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether to retrieve the recommended memory settings from the last
+datacheck or analysis run and use those values in subsequent submissions. The default
+value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.historyPrint">
+<span class="sig-name descname"><span class="pre">historyPrint</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.historyPrint" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether history data are printed. The default value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.memory">
+<span class="sig-name descname"><span class="pre">memory</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">90</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.memory" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the amount of memory available to Abaqus analysis. The value should be
+expressed in the units supplied in <strong>memoryUnits</strong>. The default value is 90.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.memoryUnits">
+<span class="sig-name descname"><span class="pre">memoryUnits</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'PERCENTAGE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.memoryUnits" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the units for the amount of memory used in an Abaqus
+analysis. Possible values are PERCENTAGE, MEGA_BYTES, and GIGA_BYTES. The default value
+is PERCENTAGE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.messages">
+<span class="sig-name descname"><span class="pre">messages</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.Job.MessageArray.MessageArray" title="abaqus.Job.MessageArray.MessageArray"><span class="pre">MessageArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.messages" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="reference internal" href="#abaqus.Job.MessageArray.MessageArray" title="abaqus.Job.MessageArray.MessageArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageArray</span></code></a> object specifying the messages received during an analysis.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.model">
+<span class="sig-name descname"><span class="pre">model</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.model" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the model to be analyzed or a Model object specifying
+the model to be analyzed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.modelPrint">
+<span class="sig-name descname"><span class="pre">modelPrint</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.modelPrint" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether model definition data are printed. The default value is
+OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.multiprocessingMode">
+<span class="sig-name descname"><span class="pre">multiprocessingMode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'DEFAULT'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.multiprocessingMode" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying whether an analysis is decomposed into threads or into
+multiple processes that communicate through a message passing interface (MPI). Possible
+values are DEFAULT, THREADS, and MPI. The default value is DEFAULT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.name" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the new job. The name must be a valid Abaqus/CAE object
+name.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.nodalOutputPrecision">
+<span class="sig-name descname"><span class="pre">nodalOutputPrecision</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'SINGLE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.nodalOutputPrecision" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the precision of the nodal output written to the output
+database. Possible values are SINGLE and FULL. The default value is SINGLE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.numCpus">
+<span class="sig-name descname"><span class="pre">numCpus</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.numCpus" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of CPUs to use for this analysis if parallel processing is
+available. Possible values are <strong>numCpus</strong> &gt;&gt; 0. The default value is 1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.numDomains">
+<span class="sig-name descname"><span class="pre">numDomains</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.numDomains" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
+<strong>parallelizationMethodExplicit</strong> = DOMAIN, <strong>numDomains</strong> must be a multiple of <strong>numCpus</strong>.
+The default value is 1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.parallelizationMethodExplicit">
+<span class="sig-name descname"><span class="pre">parallelizationMethodExplicit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'DOMAIN'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.parallelizationMethodExplicit" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the parallelization method for Abaqus/Explicit.
+Possible values are LOOP and DOMAIN. The default value is LOOP.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.queue">
+<span class="sig-name descname"><span class="pre">queue</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.queue" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the queue to which to submit the job. The default value
+is an empty string.Note:You can use the <strong>queue</strong> argument when creating a Job object on a
+Windows workstation; however, remote queues are available only on Linux platforms.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.scratch">
+<span class="sig-name descname"><span class="pre">scratch</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.scratch" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the location of the scratch directory. The default value is an empty
+string.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py#L386-L388"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the ModelJob object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.status">
+<span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.status" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the status of the analysis. Possible values are SUBMITTED,
+RUNNING, ABORTED, TERMINATED, COMPLETED, CHECK_RUNNING, and CHECK_COMPLETED.If the
+<strong>message</strong> member is empty, <strong>status</strong> is set to NONE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.type">
+<span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'ANALYSIS'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.type" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the type of job. Possible values are ANALYSIS,
+SYNTAXCHECK, RECOVER, and RESTART. The default value is ANALYSIS.If the object has the
+type JobFromInputFile, <strong>type</strong> = RESTART is not available.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.userSubroutine">
+<span class="sig-name descname"><span class="pre">userSubroutine</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.userSubroutine" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the file containing the user’s subroutine definitions. The default
+value is an empty string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.waitHours">
+<span class="sig-name descname"><span class="pre">waitHours</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.waitHours" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of hours to wait before submitting the job. This argument
+is ignored if <strong>queue</strong> is set. The default value is 0.This argument works in conjunction
+with <strong>waitMinutes</strong>. <strong>waitHours</strong> and <strong>atTime</strong> are mutually exclusive.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.waitMinutes">
+<span class="sig-name descname"><span class="pre">waitMinutes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/ModelJob.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.waitMinutes" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of minutes to wait before submitting the job. This argument
+is ignored if <strong>queue</strong> is set. The default value is 0.This argument works in conjunction
+with <strong>waitHours</strong>. <strong>waitMinutes</strong> and <strong>atTime</strong> are mutually exclusive.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1234,6 +1937,23 @@ and so on. The default value is None.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess.dataSaveFrequency">
+<span class="sig-name descname"><span class="pre">dataSaveFrequency</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'OPT_DATASAVE_SPECIFY_CYCLE'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/OptimizationProcess.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.dataSaveFrequency" title="Permalink to this definition">#</a></dt>
+<dd><p>An Enum specifying whether Abaqus should save every iteration file in the optimization
+process or a selection of iteration files saved at a user-specified frequency. If you
+set <strong>dataSaveFrequency</strong> = OPT_DATASAVE_EVERY_CYCLE, Abaqus saves every iteration file; if
+you set <strong>dataSaveFrequency</strong> = OPT_DATASAVE_SPECIFY_CYCLE, Abaqus saves iteration files
+according to the frequency defined by the <strong>saveEvery</strong> parameter. The default value is
+OPT_DATASAVE_SPECIFY_CYCLE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/OptimizationProcess.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.description" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying a description of the optimization process.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess.extract">
 <span class="sig-name descname"><span class="pre">extract</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">outputFileName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">designCycle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isoValue</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smoothCycles</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reductionPercent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reductionAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">targetVolume</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extractFormat</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'OPT_EXTRACT_SMOOTH_ABAQUS_INPUT_FILE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resultFiltering</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instances</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/OptimizationProcess.py#L201-L252"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.extract" title="Permalink to this definition">#</a></dt>
@@ -1277,6 +1997,62 @@ specified, no part instance is selected and surface is generated for the whole m
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess.maxDesignCycle">
+<span class="sig-name descname"><span class="pre">maxDesignCycle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">15</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/OptimizationProcess.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.maxDesignCycle" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the maximum number of allowed design cycles for the optimization
+process. The default value is 15.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess.model">
+<span class="sig-name descname"><span class="pre">model</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/OptimizationProcess.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.model" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying name of the model to be used for the optimization process.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/OptimizationProcess.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.name" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying name of the optimization process.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess.prototypeJob">
+<span class="sig-name descname"><span class="pre">prototypeJob</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/OptimizationProcess.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.prototypeJob" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying name of the job to be used as the prototype for all analysis jobs
+run by the optimization process.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess.saveEvery">
+<span class="sig-name descname"><span class="pre">saveEvery</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/OptimizationProcess.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.saveEvery" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying every nth cycle iterations to be saved when <strong>dataSaveFrequency</strong> is
+OPT_DATASAVE_SPECIFY_CYCLE. Abaqus saves file iterations for every nth iteration after
+iteration 1; if you set <strong>saveEvery</strong> = 3, Abaqus saves file iterations for cycles 1, 4, 7,
+and so on. The default value is None.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess.saveFirst">
+<span class="sig-name descname"><span class="pre">saveFirst</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/OptimizationProcess.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.saveFirst" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the first cycle should be saved when <strong>dataSaveFrequency</strong> is
+OPT_DATASAVE_SPECIFY_CYCLE. The default value is True.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess.saveInitial">
+<span class="sig-name descname"><span class="pre">saveInitial</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/OptimizationProcess.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.saveInitial" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the initial cycle should be saved when <strong>dataSaveFrequency</strong>
+is OPT_DATASAVE_SPECIFY_CYCLE. The default value is True.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess.saveLast">
+<span class="sig-name descname"><span class="pre">saveLast</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/OptimizationProcess.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.saveLast" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the last cycle should be saved when <strong>dataSaveFrequency</strong> is
+OPT_DATASAVE_SPECIFY_CYCLE. The default value is True.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1330,6 +2106,13 @@ process only. The default value is False.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess.task">
+<span class="sig-name descname"><span class="pre">task</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/OptimizationProcess.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.task" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying name of the optimization task to be used for the optimization
+process.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1396,6 +2179,73 @@ local machine. The default value is OFF.</p>
 </dl>
 </dd>
 </dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Queue.Queue.deleteAfterCopy">
+<span class="sig-name descname"><span class="pre">deleteAfterCopy</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Queue.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Queue.Queue.deleteAfterCopy" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether remote files are to be deleted after they are copied to the
+local machine. The default value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Queue.Queue.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Queue.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Queue.Queue.description" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying a description of the queue. The default value is an empty string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Queue.Queue.directory">
+<span class="sig-name descname"><span class="pre">directory</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Queue.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Queue.Queue.directory" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the remote location for the execution of the simulation. The default
+value is an empty string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Queue.Queue.driver">
+<span class="sig-name descname"><span class="pre">driver</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Queue.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Queue.Queue.driver" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the designation of the remote driver. The default value is “abaqus”.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Queue.Queue.fileCopy">
+<span class="sig-name descname"><span class="pre">fileCopy</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Queue.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Queue.Queue.fileCopy" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying if the results files are to be copied from the remote machine to
+the local machine. The default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Queue.Queue.filesToCopy">
+<span class="sig-name descname"><span class="pre">filesToCopy</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'ALL'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Queue.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Queue.Queue.filesToCopy" title="Permalink to this definition">#</a></dt>
+<dd><p>A list of Strings specifying the files to be copied from the remote location to the
+local machine, or ALL. Strings specified in a list are the extensions of the job files
+that will be copied, such as (‘log’, ‘dat’, ‘msg’, ‘sta’, ‘odb’). The default value is
+ALL.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Queue.Queue.hostName">
+<span class="sig-name descname"><span class="pre">hostName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Queue.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Queue.Queue.hostName" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the remote host. The default value is an empty string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Queue.Queue.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Queue.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Queue.Queue.name" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the new Queue object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Queue.Queue.queueName">
+<span class="sig-name descname"><span class="pre">queueName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Queue.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Queue.Queue.queueName" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the remote analysis queue.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Queue.Queue.remotePlatform">
+<span class="sig-name descname"><span class="pre">remotePlatform</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Linux'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Queue.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Queue.Queue.remotePlatform" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the type of operating system on the remote machine. The
+default value is Linux.</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>

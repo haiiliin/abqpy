@@ -464,6 +464,20 @@ resetDeprecatedMethodsUsed.</p>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.includeDeprecated">
+<span class="sig-name descname"><span class="pre">includeDeprecated</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/BackwardCompatibility.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.includeDeprecated" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether deprecated members, methods, and arguments can be seen and
+used. Possible values are ON and OFF. The default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.reportDeprecated">
+<span class="sig-name descname"><span class="pre">reportDeprecated</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/BackwardCompatibility.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.reportDeprecated" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether a warning is displayed after running a script that contains
+deprecated commands. The default value is True.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.resetDeprecatedArgsUsed">
 <span class="sig-name descname"><span class="pre">resetDeprecatedArgsUsed</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/BackwardCompatibility.py#L97-L99"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.resetDeprecatedArgsUsed" title="Permalink to this definition">#</a></dt>
@@ -495,6 +509,13 @@ displayed when <strong>reportDeprecated</strong> is True. The default value is F
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.showKeysInReport">
+<span class="sig-name descname"><span class="pre">showKeysInReport</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/BackwardCompatibility.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.showKeysInReport" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the keys and indices are included in the report that is
+displayed when <strong>reportDeprecated</strong> is True. The default value is False.</p>
 </dd></dl>
 
 </dd></dl>
@@ -940,6 +961,54 @@ OFF.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.UtilityAndView.View.View.autoFit">
+<span class="sig-name descname"><span class="pre">autoFit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/View.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.View.View.autoFit" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether the view is auto-fit when applied.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.UtilityAndView.View.View.cameraPosition">
+<span class="sig-name descname"><span class="pre">cameraPosition</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/View.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.View.View.cameraPosition" title="Permalink to this definition">#</a></dt>
+<dd><p>A sequence of three Floats specifying the camera position.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.UtilityAndView.View.View.cameraTarget">
+<span class="sig-name descname"><span class="pre">cameraTarget</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/View.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.View.View.cameraTarget" title="Permalink to this definition">#</a></dt>
+<dd><p>A sequence of three Floats specifying the center of the scene.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.UtilityAndView.View.View.cameraUpVector">
+<span class="sig-name descname"><span class="pre">cameraUpVector</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/View.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.View.View.cameraUpVector" title="Permalink to this definition">#</a></dt>
+<dd><p>A sequence of three Floats specifying the camera’s up vector (the screen’s positive
+<strong>Y</strong>-axis). The initial value is (0, 0, 0).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.UtilityAndView.View.View.displayedObjectScreenHeight">
+<span class="sig-name descname"><span class="pre">displayedObjectScreenHeight</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/View.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.View.View.displayedObjectScreenHeight" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the height in viewport millimeters of the bounding rectangle around
+the viewport contents. This value does not include annotations or symbols and it is not
+clipped to the size of the viewport window.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.UtilityAndView.View.View.displayedObjectScreenWidth">
+<span class="sig-name descname"><span class="pre">displayedObjectScreenWidth</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/View.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.View.View.displayedObjectScreenWidth" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the width in viewport millimeters of the bounding rectangle around
+the viewport contents. This value does not include annotations or symbols and it is not
+clipped to the size of the viewport window.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.UtilityAndView.View.View.farPlane">
+<span class="sig-name descname"><span class="pre">farPlane</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/View.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.View.View.farPlane" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the distance from the camera to the far clipping plane when
+<strong>farPlaneMode</strong> =SPECIFY. Possible values are <strong>farPlane</strong> &gt;&gt; <strong>nearPlane</strong>.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.UtilityAndView.View.View.fitView">
 <span class="sig-name descname"><span class="pre">fitView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">drawImmediately</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/View.py#L239-L250"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.View.View.fitView" title="Permalink to this definition">#</a></dt>
@@ -955,6 +1024,44 @@ intermediate results before the script completes. The default value is False.</p
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.UtilityAndView.View.View.height">
+<span class="sig-name descname"><span class="pre">height</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/View.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.View.View.height" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the height of the front clipping plane. Possible values are <strong>height</strong>
+&gt;&gt; 0.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.UtilityAndView.View.View.layerTransform">
+<span class="sig-name descname"><span class="pre">layerTransform</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/View.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.View.View.layerTransform" title="Permalink to this definition">#</a></dt>
+<dd><p>A tuple of Floats specifying a transformation matrix used to position the contents of
+the Layer within a viewport.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.UtilityAndView.View.View.movieMode">
+<span class="sig-name descname"><span class="pre">movieMode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.BooleanType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/View.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.View.View.movieMode" title="Permalink to this definition">#</a></dt>
+<dd><p>A Boolean specifying whether or not the camera is in movie mode. The default value is
+OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.UtilityAndView.View.View.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/View.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.View.View.name" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the view (also used as the repository key). Possible
+values are ‘Front’, ‘Back’, ‘Top’, ‘Bottom’, ‘Left’, <a href="#id17"><span class="problematic" id="id18">`</span></a>Right’, ‘Iso’, ‘User-1’, ‘User-2’,
+‘User-3’, and ‘User-4’. The object member associated with this argument is a
+SymbolicConstant. Possible values of the <strong>name</strong> member are:FRONT, BACK, TOP, BOTTOM,
+LEFT, RIGHT, ISO, USER1, USER2, USER3, and USER4.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.UtilityAndView.View.View.nearPlane">
+<span class="sig-name descname"><span class="pre">nearPlane</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/View.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.View.View.nearPlane" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the distance from the camera to the near clipping plane. Possible
+values are <strong>nearPlane</strong> &gt;&gt; 0.0.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1022,6 +1129,13 @@ False.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.UtilityAndView.View.View.projection">
+<span class="sig-name descname"><span class="pre">projection</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/View.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.View.View.projection" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the projection mode. Possible values are PERSPECTIVE and
+PARALLEL.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1174,6 +1288,32 @@ False.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.UtilityAndView.View.View.viewOffsetX">
+<span class="sig-name descname"><span class="pre">viewOffsetX</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/View.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.View.View.viewOffsetX" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the amount to pan the model in the screen <strong>X</strong>-direction as a fraction
+of the viewport width. A positive value pans the model to the right. A negative value
+pans the model to the left.The*viewOffsetX* and <strong>viewOffsetY</strong> arguments allow you to pan
+the view without changing the position of the camera or the target (<em>cameraPosition</em> and
+<strong>cameraTarget</strong> arguments to the View method). The resulting change in the view allows
+you to pan a perspective display without producing an apparent rotation of the model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.UtilityAndView.View.View.viewOffsetY">
+<span class="sig-name descname"><span class="pre">viewOffsetY</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/View.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.View.View.viewOffsetY" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the amount to pan the model in the screen <strong>Y</strong>-direction as a fraction
+of the viewport height. A positive value pans the model upward. A negative value pans
+the model downward.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.UtilityAndView.View.View.width">
+<span class="sig-name descname"><span class="pre">width</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/UtilityAndView/View.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.UtilityAndView.View.View.width" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the width of the front clipping plane. Possible values are <strong>width</strong> &gt;&gt;
+0.0.</p>
 </dd></dl>
 
 <dl class="py method">
