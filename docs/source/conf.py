@@ -37,6 +37,7 @@ release = '2016a0'
 extensions = [
     'sphinx_toolbox.more_autodoc.overloads',
     'sphinx.ext.autodoc',
+    'sphinx_autodoc_typehints',
     'numpydoc',
     'sphinx.ext.mathjax',
     'sphinx.ext.linkcode',
@@ -93,6 +94,7 @@ def linkcode_resolve(domain: str, info: dict):
 # Show short type hints for user-defined classes and defaults for parameters
 python_use_unqualified_type_names = True
 autodoc_typehints_format = 'short'
+typehints_defaults = 'comma'
 
 numpydoc_show_class_members = True
 numpydoc_show_inherited_class_members = False
