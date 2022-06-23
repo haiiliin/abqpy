@@ -6,11 +6,6 @@ from .RayleighDampingByFrequencyComponentArray import (
 class RayleighDampingByFrequency:
     """A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency` object contains Rayleigh Damping parameters.
 
-    Attributes
-    ----------
-    components: RayleighDampingByFrequencyComponentArray
-        A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponentArray.RayleighDampingByFrequencyComponentArray` object.
-
     Notes
     -----
     This object can be accessed by:

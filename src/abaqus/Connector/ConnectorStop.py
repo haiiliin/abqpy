@@ -6,19 +6,6 @@ class ConnectorStop(ConnectorBehaviorOption):
     connector's relative motion.
     The ConnectorStop object is derived from the ConnectorBehaviorOption object.
 
-    Attributes
-    ----------
-    minMotion
-        None or a Float specifying the lower bound for the connector's relative position for all
-        specified components, or no lower bound. The default value is None.
-    maxMotion
-        None or a Float specifying the upper bound for the connector's relative position for all
-        specified components, or no upper bound. The default value is None.
-    components
-        A sequence of Ints specifying the components of relative motion for which the behavior
-        is defined. Possible values are 1 ≤≤ **components** ≤≤ 6. Only available components can be
-        specified. The default value is an empty sequence.
-
     Notes
     -----
     This object can be accessed by:

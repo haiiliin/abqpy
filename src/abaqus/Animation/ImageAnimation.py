@@ -4,11 +4,6 @@ from abaqusConstants import *
 class ImageAnimation:
     """The ImageAnimation object is used to build frame by frame animation.
 
-    Attributes
-    ----------
-    fileName: str
-        A String specifying the file to which the animation frames is to be written.
-
     Notes
     -----
     This object can be accessed by:

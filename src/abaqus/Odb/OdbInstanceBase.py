@@ -17,45 +17,6 @@ from ..Section.Section import Section
 class OdbInstanceBase:
     """A part instance is the usage of a part within an assembly.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the instance name.
-    type: SymbolicConstant
-        A SymbolicConstant specifying the type of the :py:class:`~abaqus.Part.Part.Part` object. Only a value of
-        DEFORMABLE_BODY is currently supported.
-    embeddedSpace: SymbolicConstant
-        A SymbolicConstant specifying the dimensionality of the :py:class:`~abaqus.Part.Part.Part` object. Possible values are
-        THREE_D, TWO_D_PLANAR, AXISYMMETRIC, and UNKNOWN_DIMENSION.
-    resultState: SymbolicConstant
-        A SymbolicConstant specifying the state of the Instance as modified by the analysis.
-        This member is only present if the Instance is part of the RootAssemblyState tree.
-        Possible values are:PROPAGATED, specifying that the value is the same as the previous
-        frame or the original rootAssembly.MODIFIED, specifying that the geometry of the
-        instance has been changed at this frame.The default value is PROPAGATED.
-    nodes: OdbMeshNodeArray
-        An :py:class:`~abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray` object.
-    elements: OdbMeshElementArray
-        An :py:class:`~abaqus.Odb.OdbMeshElementArray.OdbMeshElementArray` object.
-    nodeSets: dict[str, OdbSet]
-        A repository of :py:class:`~abaqus.Odb.OdbSet.OdbSet` objects specifying node sets.
-    elementSets: dict[str, OdbSet]
-        A repository of :py:class:`~abaqus.Odb.OdbSet.OdbSet` objects specifying element sets.
-    surfaces: dict[str, OdbSet]
-        A repository of :py:class:`~abaqus.Odb.OdbSet.OdbSet` objects specifying surfaces.
-    sectionAssignments: SectionAssignmentArray
-        A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
-    rigidBodies: OdbRigidBodyArray
-        An :py:class:`~abaqus.Odb.OdbRigidBodyArray.OdbRigidBodyArray` object.
-    beamOrientations: BeamOrientationArray
-        A :py:class:`~abaqus.Odb.BeamOrientationArray.BeamOrientationArray` object.
-    materialOrientations: MaterialOrientationArray
-        A :py:class:`~abaqus.Property.MaterialOrientationArray.MaterialOrientationArray` object.
-    rebarOrientations: RebarOrientationArray
-        A :py:class:`~abaqus.Odb.RebarOrientationArray.RebarOrientationArray` object.
-    analyticSurface: AnalyticSurface
-        An :py:class:`~abaqus.Odb.AnalyticSurface.AnalyticSurface` object specifying analytic Surface defined on the instance.
-
     Notes
     -----
     This object can be accessed by:

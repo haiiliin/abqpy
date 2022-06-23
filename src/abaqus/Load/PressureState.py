@@ -9,44 +9,6 @@ class PressureState(LoadState):
     The PressureState object has no constructor or methods.
     The PressureState object is derived from the LoadState object.
 
-    Attributes
-    ----------
-    magnitude: float
-        A Float or a Complex specifying the pressure magnitude.
-    magnitudeState: SymbolicConstant
-        A SymbolicConstant specifying the propagation state of the pressure magnitude. Possible
-        values are UNSET, SET, UNCHANGED, and MODIFIED.
-    hZero: float
-        A Float specifying the height of the zero pressure level when the pressure
-        **distributionType=HYDROSTATIC**.
-    hZeroState: SymbolicConstant
-        A SymbolicConstant specifying the propagation state of **hZero**. Possible values are
-        UNSET, SET, UNCHANGED, and FREED.
-    hReference: float
-        A Float specifying the height of the reference pressure level when the pressure
-        **distributionType=HYDROSTATIC**.
-    hReferenceState: SymbolicConstant
-        A SymbolicConstant specifying the propagation state of **hReference**. Possible values are
-        UNSET, SET, UNCHANGED, and FREED.
-    amplitudeState: SymbolicConstant
-        A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible
-        values are UNSET, SET, UNCHANGED, and FREED.
-    status: SymbolicConstant
-        A SymbolicConstant specifying the propagation state of the :py:class:`~abaqus.Load.LoadState.LoadState` object. Possible
-        values are:
-            - NOT_YET_ACTIVE
-            - CREATED
-            - PROPAGATED
-            - MODIFIED
-            - DEACTIVATED
-            - NO_LONGER_ACTIVE
-            - TYPE_NOT_APPLICABLE
-            - INSTANCE_NOT_APPLICABLE
-            - BUILT_INTO_BASE_STATE
-    amplitude: str
-        A String specifying the name of the amplitude reference. The String is empty if the load
-        has no amplitude reference.
-
     Notes
     -----
     This object can be accessed by:

@@ -7,25 +7,6 @@ class SelfContactExp(Interaction):
     """The SelfContactExp object defines self-contact during an Abaqus/Explicit analysis.
     The SelfContactExp object is derived from the Interaction object.
 
-    Attributes
-    ----------
-    name
-        A String specifying the repository key.
-    createStepName
-        A String specifying the name of the step in which the SelfContactExp object is created.
-    surface
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the surface where self-contact is defined.
-    interactionProperty
-        A String specifying the name of the ContactProperty object associated with this
-        interaction.
-    mechanicalConstraint
-        A SymbolicConstant specifying the mechanical constraint formulation. Possible values are
-        KINEMATIC and PENALTY. The default value is KINEMATIC.
-    contactControls
-        A String specifying the name of the ContactControl object associated with this
-        interaction. An empty string indicates that the default contact controls will be used.
-        The default value is an empty string.
-
     Notes
     -----
     This object can be accessed by:

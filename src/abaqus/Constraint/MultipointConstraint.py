@@ -8,35 +8,6 @@ class MultipointConstraint(Constraint):
     MultipointConstraint nodes located on a region and a reference point.
     The MultipointConstraint object is derived from the ConstrainedSketchConstraint object.
 
-    Attributes
-    ----------
-    suppressed: Boolean
-        A Boolean specifying whether the constraint is suppressed or not. The default value is
-        OFF.
-    name
-        A String specifying the constraint repository key.
-    surface
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the surface on which the MultipointConstraint nodes are
-        located.
-    controlPoint
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the constraint control point.
-    mpcType
-        A SymbolicConstant specifying the MPC type of the constraint. Possible values are
-        BEAM_MPC, ELBOW_MPC, PIN_MPC, LINK_MPC, TIE_MPC, and USER_MPC.
-    csys
-        None or a DatumCsys object specifying the initial orientation of the local coordinate
-        system for the MultipointConstraint's degrees of freedom. If **localCsys** = None, the
-        MultipointConstraint is defined in the global coordinate system. The default value is
-        None.
-    userType
-        An Int specifying to differentiate between different constraint types in a user-defined
-        MultipointConstraint. The default value is 0.The **userType** argument applies only when
-        **mpcType** = USER_MPC.
-    userMode
-        A SymbolicConstant specifying the mode of the constraint when it is user-defined.
-        Possible values are DOF_MODE_MPC and NODE_MODE_MPC. The default value is
-        DOF_MODE_MPC.The **userMode** argument applies only when **mpcType** = USER_MPC.
-
     Notes
     -----
     This object can be accessed by:

@@ -6,11 +6,6 @@ from .DirectDampingByFrequencyComponentArray import (
 class DirectDampingByFrequency:
     """A :py:class:`~abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency` object contains direct damping parameters.
 
-    Attributes
-    ----------
-    components: DirectDampingByFrequencyComponentArray
-        A :py:class:`~abaqus.StepMiscellaneous.DirectDampingByFrequencyComponentArray.DirectDampingByFrequencyComponentArray` object.
-
     Notes
     -----
     This object can be accessed by:

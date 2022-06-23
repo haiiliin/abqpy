@@ -16,28 +16,6 @@ class ConnectorBehaviorOption:
     constructor. The members of the ConnectorBehaviorOption object are common to all objects
     derived from the ConnectorBehaviorOption.
 
-    Attributes
-    ----------
-    connectorPotentials: ConnectorPotentialArray
-        A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object.
-    derivedComponent: DerivedComponent
-        A :py:class:`~abaqus.Connector.DerivedComponent.DerivedComponent` object.
-    evolutionPotentials: ConnectorPotentialArray
-        A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object.
-    initiationPotentials: ConnectorPotentialArray
-        A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object.
-    initiationOptions: ConnectorOptions
-        A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object.
-    isotropicOptions: ConnectorOptions
-        A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object.
-    kinematicOptions: ConnectorOptions
-        A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object.
-    options: ConnectorOptions
-        A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object specifying the :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` used to define tabular options
-        for this ConnectorBehaviorOption.
-    tangentialBehavior: TangentialBehavior
-        A :py:class:`~abaqus.Connector.TangentialBehavior.TangentialBehavior` object
-
     Notes
     -----
     This object can be accessed by:

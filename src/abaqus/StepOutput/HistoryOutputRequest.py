@@ -6,23 +6,6 @@ from abaqusConstants import *
 class HistoryOutputRequest:
     """The HistoryOutputRequest object defines a history output request.
 
-    Attributes
-    ----------
-    boltLoad: str
-        A String specifying a bolt load from which output is requested. The default value is an
-        empty string.
-    region: SymbolicConstant
-        The SymbolicConstant MODEL or a :py:class:`~abaqus.Region.Region.Region` object specifying the region from which output is
-        requested. The SymbolicConstant MODEL represents the whole model. The default value is
-        MODEL.If the region is a surface region, the surface must lie within the general contact
-        surface domain.
-    sectionPoints: SymbolicConstant
-        The SymbolicConstant DEFAULT or a tuple of Ints specifying the section points for which
-        output is requested. The default value is DEFAULT.
-    interactions: tuple
-        None or a tuple of Strings specifying the interaction names. The default value is
-        None.The sequence can contain only one String.
-
     Notes
     -----
     This object can be accessed by:

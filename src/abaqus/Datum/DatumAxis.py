@@ -7,15 +7,6 @@ class DatumAxis(Datum):
     creates a DatumAxis object.
     The DatumAxis object is derived from the Datum object.
 
-    Attributes
-    ----------
-    pointOn: float
-        A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point located on
-        the datum.
-    direction: tuple
-        A tuple of Floats specifying a sequence of three Floats specifying the direction of the
-        axis.
-
     Notes
     -----
     This object can be accessed by:

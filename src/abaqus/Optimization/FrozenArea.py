@@ -6,15 +6,6 @@ class FrozenArea(GeometricRestriction):
     """The FrozenArea object defines a frozen area geometric restriction.
     The FrozenArea object is derived from the GeometricRestriction object.
 
-    Attributes
-    ----------
-    name
-        A String specifying the geometric restriction repository key.
-    region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
-        When used with a TopologyTask, there is no default value. When used with a ShapeTask,
-        the default value is MODEL.
-
     Notes
     -----
     This object can be accessed by:

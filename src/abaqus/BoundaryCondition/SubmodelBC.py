@@ -7,35 +7,6 @@ class SubmodelBC(BoundaryCondition):
     """The SubmodelBC object stores the data for a submodel boundary condition.
     The SubmodelBC object is derived from the BoundaryCondition object.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the boundary condition repository key.
-    shellThickness: float
-        A Float specifying the thickness of the shell in the global model. This argument is
-        required for shell-to-solid submodeling and is not applicable to other submodels. The
-        default value is 0.0.
-    absoluteExteriorTolerance: float
-        None or a Float specifying the absolute value by which a driven node of the submodel can
-        lie outside the region of the elements of the global model. The default value is None.
-    exteriorTolerance: float
-        None or a Float specifying the fraction of the average element size in the global model
-        by which a driven node of the submodel can lie outside the region of the elements of the
-        global model. The default value is 0.05.
-    globalDrivingRegion: str
-        A String specifying the element set in the global model that will be searched for
-        elements whose responses will be used to drive the submodel. An empty string indicates
-        that the entire global model will be searched. The default value is an empty string.
-    category: SymbolicConstant
-        A SymbolicConstant specifying the category of the boundary condition. Possible values
-        are MECHANICAL and THERMAL.
-    region: Region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
-    localCsys: str
-        None or a :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the boundary
-        condition's degrees of freedom. If **localCsys=None**, the degrees of freedom are defined
-        in the global coordinate system. The default value is None.
-
     Notes
     -----
     This object can be accessed by:

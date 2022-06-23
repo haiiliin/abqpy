@@ -10,15 +10,6 @@ class SectionCategory:
     in the output database. For more information, see Beam Section profile commands and
     Section commands.
 
-    Attributes
-    ----------
-    sectionPoints: SectionPointArray
-        A :py:class:`~abaqus.Odb.SectionPointArray.SectionPointArray` object.
-    name
-        A String specifying the name of the category.
-    description
-        A String specifying the description of the category.
-
     Notes
     -----
     This object can be accessed by:

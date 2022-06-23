@@ -17,31 +17,6 @@ class OdbAssemblyBase:
     object is created. Abaqus creates the **rootAssembly** member when an Odb object is
     created.
 
-    Attributes
-    ----------
-    instances: dict[str, OdbInstance]
-        A repository of :py:class:`~abaqus.Odb.OdbInstance.OdbInstance` objects.
-    nodeSets: dict[str, OdbSet]
-        A repository of :py:class:`~abaqus.Odb.OdbSet.OdbSet` objects specifying node sets.
-    elementSets: dict[str, OdbSet]
-        A repository of :py:class:`~abaqus.Odb.OdbSet.OdbSet` objects specifying element sets.
-    surfaces: dict[str, OdbSet]
-        A repository of :py:class:`~abaqus.Odb.OdbSet.OdbSet` objects specifying surfaces.
-    nodes: OdbMeshNodeArray
-        An :py:class:`~abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray` object.
-    elements: OdbMeshElementArray
-        An :py:class:`~abaqus.Odb.OdbMeshElementArray.OdbMeshElementArray` object.
-    datumCsyses: dict[str, OdbDatumCsys]
-        A repository of :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` objects.
-    sectionAssignments: SectionAssignmentArray
-        A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
-    rigidBodies: OdbRigidBodyArray
-        An :py:class:`~abaqus.Odb.OdbRigidBodyArray.OdbRigidBodyArray` object.
-    pretensionSections: OdbPretensionSectionArray
-        An :py:class:`~abaqus.Odb.OdbPretensionSectionArray.OdbPretensionSectionArray` object.
-    connectorOrientations: ConnectorOrientationArray
-        A :py:class:`~abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientationArray` object.
-
     Notes
     -----
     This object can be accessed by:

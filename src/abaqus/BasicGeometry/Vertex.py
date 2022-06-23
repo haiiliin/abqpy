@@ -4,21 +4,6 @@ from abaqusConstants import *
 class Vertex:
     """Vertices are point regions of geometry.
 
-    Attributes
-    ----------
-    index: int
-        An Int specifying the index of the ConstrainedSketchVertex in the VertexArray.
-    isReferenceRep: Boolean
-        A Boolean specifying whether the vertex belongs to the reference representation of the
-        Part or Instance.
-    pointOn: float
-        A tuple of Floats specifying the **X** -, **Y** -, and **Z** -coordinates of the vertex.
-    featureName: float
-        A tuple of Floats specifying the name of the feature that created this vertex.
-    instanceName: float
-        A tuple of Floats specifying the name of the part instance for this vertex (if
-        applicable).
-
     Notes
     -----
     This object can be accessed by:

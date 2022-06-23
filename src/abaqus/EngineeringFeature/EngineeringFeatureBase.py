@@ -9,17 +9,6 @@ class EngineeringFeatureBase:
     """The EngineeringFeature object is a container for various specific engineering feature
     repositories. The EngineeringFeature object has no explicit constructor or methods.
 
-    Attributes
-    ----------
-    inertias: dict[str, Inertia]
-        A repository of :py:class:`~abaqus.EngineeringFeature.Inertia.Inertia` objects.
-    cracks: dict[str, Crack]
-        A repository of :py:class:`~abaqus.EngineeringFeature.Crack.Crack` objects.
-    fasteners: dict[str, Fastener]
-        A repository of :py:class:`~abaqus.EngineeringFeature.Fastener.Fastener` objects.
-    springDashpots: dict[str, SpringDashpot]
-        A repository of :py:class:`~abaqus.EngineeringFeature.SpringDashpot.SpringDashpot` objects.
-
     Notes
     -----
     This object can be accessed by:

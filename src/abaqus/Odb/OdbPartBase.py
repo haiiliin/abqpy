@@ -19,31 +19,6 @@ class OdbPartBase:
     """The OdbPart object is similar to the kernel Part object and contains nodes and elements,
     but not geometry.
 
-    Attributes
-    ----------
-    nodes: OdbMeshNodeArray
-        An :py:class:`~abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray` object.
-    elements: OdbMeshElementArray
-        An :py:class:`~abaqus.Odb.OdbMeshElementArray.OdbMeshElementArray` object.
-    nodeSets: dict[str, OdbSet]
-        A repository of :py:class:`~abaqus.Odb.OdbSet.OdbSet` objects specifying node sets.
-    elementSets: dict[str, OdbSet]
-        A repository of :py:class:`~abaqus.Odb.OdbSet.OdbSet` objects specifying element sets.
-    surfaces: dict[str, OdbSet]
-        A repository of :py:class:`~abaqus.Odb.OdbSet.OdbSet` objects specifying surfaces.
-    sectionAssignments: SectionAssignmentArray
-        A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
-    beamOrientations: BeamOrientationArray
-        A :py:class:`~abaqus.Odb.BeamOrientationArray.BeamOrientationArray` object.
-    materialOrientations: MaterialOrientationArray
-        A :py:class:`~abaqus.Property.MaterialOrientationArray.MaterialOrientationArray` object.
-    rebarOrientations: RebarOrientationArray
-        A :py:class:`~abaqus.Odb.RebarOrientationArray.RebarOrientationArray` object.
-    rigidBodies: OdbRigidBodyArray
-        An :py:class:`~abaqus.Odb.OdbRigidBodyArray.OdbRigidBodyArray` object.
-    analyticSurface: AnalyticSurface
-        An :py:class:`~abaqus.Odb.AnalyticSurface.AnalyticSurface` object specifying analytic Surface defined on the instance.
-
     Notes
     -----
     This object can be accessed by:

@@ -8,11 +8,6 @@ class FieldReportOptions:
     constructor. Abaqus creates the **fieldReportOptions** member when you import the
     Visualization module.
 
-    Attributes
-    ----------
-    numberFormat: NumberFormat
-        Format of the number
-
     Notes
     -----
     This object can be accessed by:

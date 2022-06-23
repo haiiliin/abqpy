@@ -3,11 +3,6 @@ class Annotation:
     Annotation object has no explicit constructor. The methods and members of the Annotation
     object are common to all objects derived from Annotation.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the annotation repository key.
-
     Notes
     -----
     This object can be accessed by:

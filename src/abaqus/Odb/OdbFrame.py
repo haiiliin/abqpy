@@ -8,38 +8,6 @@ from .OdbLoadCase import OdbLoadCase
 class OdbFrame:
     """The domain of the OdbFrame object is taken from the parent step.
 
-    Attributes
-    ----------
-    cyclicModeNumber: int
-        An Int specifying the cyclic mode number associated with the data stored on this frame.
-        Only frequency analyses of cyclic symmetry models possess cyclic mode numbers.
-    domain: SymbolicConstant
-        A SymbolicConstant specifying the domain of the step of which the frame is a member.
-        Possible values are TIME, FREQUENCY, and MODAL.
-    frequency: float
-        A Float specifying the frequency. This member is valid only if **domain=FREQUENCY** or if
-        the **procedureType** member of the :py:class:`~abaqus.Step.Step.Step` object=FREQUENCY. The default value is 0.0.
-    mode: int
-        An Int specifying the eigenmode. This member is valid only if **domain=MODAL**.
-    associatedFrame: 'OdbFrame'
-        An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object specifying the real or imaginary portion of the data corresponding to
-        this cyclic symmetry mode.
-    fieldOutputs: dict[str, FieldOutput]
-        A repository of :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` objects specifying the key to the **fieldOutputs**repository
-        is a String representing an output variable.
-    loadCase: OdbLoadCase
-        An :py:class:`~abaqus.Odb.OdbLoadCase.OdbLoadCase` object specifying the load case for the frame.
-    incrementNumber
-        An Int specifying the frame increment number within the step. The base frame has
-        normally increment number 0, and the results run from 1. In case of multiple load cases,
-        the same increment number is duplicated for each loadcase.
-    frameValue
-        A Float specifying the value in units determined by the **domain** member of the Step
-        object. The equivalent in the time domain is **stepTime**; in the frequency domain the
-        equivalent is **frequency**; and in the modal domain the equivalent is **mode**.
-    description
-        A String specifying the contents of the frame. The default value is an empty string.
-
     Notes
     -----
     This object can be accessed by:

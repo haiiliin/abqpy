@@ -12,50 +12,6 @@ from .SectionPoint import SectionPoint
 class FieldOutput:
     """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object contains field data for a specific output variable.
 
-    Attributes
-    ----------
-    dim: int
-        An Int specifying the dimension of vector or the first dimension (number of rows) of
-        matrix.
-    dim2: int
-        An Int specifying the second dimension (number of columns) of matrix.
-    isComplex: Boolean
-        A Boolean specifying whether the data are complex.
-    locations: FieldLocationArray
-        A :py:class:`~abaqus.Odb.FieldLocationArray.FieldLocationArray` object.
-    values: FieldValueArray
-        A :py:class:`~.FieldValueArray` object specifying :py:class:`~.the` order of :py:class:`~.the` objects in
-        :py:class:`~.the` array is determined
-        by :py:class:`~.the` Abaqus Scripting Interface; see :py:class:`~.the` **data** argument to
-        :py:class:`~.the` addData method for a
-        description of :py:class:`~.the` order.
-    name
-        A String specifying the output variable name.
-    description
-        A String specifying the output variable. Colon (:) should not be used as a part of the
-        field output description.
-    type
-        A SymbolicConstant specifying the output type. Possible values are SCALAR, VECTOR,
-        TENSOR_3D_FULL, TENSOR_3D_PLANAR, TENSOR_3D_SURFACE, TENSOR_2D_PLANAR, and
-        TENSOR_2D_SURFACE.
-    componentLabels
-        A sequence of Strings specifying the labels for each component of the value. The length
-        of the sequence must match the type. If **type** = TENSOR, the default value is **name** with
-        the suffixes ('11', '22', '33', '12', '13', '23'). If **type** = VECTOR, the default value
-        is **name** with the suffixes ('1', '2', '3'). If **type** = SCALAR, the default value is an
-        empty sequence.
-    validInvariants
-        A sequence of SymbolicConstants specifying which invariants should be calculated for
-        this field. An empty sequence indicates that no invariants are valid for this field.
-        Possible values
-        are:MAGNITUDEMISESTRESCAPRESSINV3MAX_PRINCIPALMID_PRINCIPALMIN_PRINCIPALMAX_INPLANE_PRINCIPALMIN_INPLANE_PRINCIPALOUTOFPLANE_PRINCIPALThe
-        default value is an empty sequence.
-    isEngineeringTensor
-        A Boolean specifying whether the field is an engineering tensor or not. Setting
-        isEngineeringTensor to true makes a tensor field behave as a strain like quantity where
-        the off-diagonal components of tensor are halved for invariants computation. This
-        parameter applies only to tensor field outputs. The default value is OFF.
-
     Notes
     -----
     This object can be accessed by:

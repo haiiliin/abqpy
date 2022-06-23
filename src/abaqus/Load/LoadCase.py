@@ -6,12 +6,6 @@ class LoadCase:
     loading condition and the linear response of a structure subjected to that loading
     condition.
 
-    Attributes
-    ----------
-    suppressed: Boolean
-        A Boolean specifying whether the load case is suppressed or not. The default value is
-        OFF.
-
     Notes
     -----
     This object can be accessed by:

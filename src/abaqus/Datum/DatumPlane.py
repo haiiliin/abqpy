@@ -7,14 +7,6 @@ class DatumPlane(Datum):
     that creates a DatumPlane object.
     The DatumPlane object is derived from the Datum object.
 
-    Attributes
-    ----------
-    pointOn: float
-        A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point located on
-        the datum.
-    normal: tuple
-        A tuple of Floats specifying a sequence of three Floats specifying the normal.
-
     Notes
     -----
     This object can be accessed by:

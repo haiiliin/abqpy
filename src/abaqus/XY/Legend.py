@@ -7,30 +7,6 @@ class Legend:
     """The Legend object is used to store the display attributes of the chart legend. A legend
     object is automatically created when creating a Chart object.
 
-    Attributes
-    ----------
-    numberFormat: SymbolicConstant
-        A SymbolicConstant specifying how the minimum and maximum values are formatted. Possible
-        values are AUTOMATIC, DECIMAL, SCIENTIFIC, and ENGINEERING. The default value is
-        AUTOMATIC.
-    numDigits: int
-        An Int specifying the number of significant digits displayed for the minimum and maximum
-        values. Possible values are 1 to 7. The default value is 2.
-    show: Boolean
-        A Boolean specifying whether to show the legend. The default value is ON.
-    showMinMax: Boolean
-        A Boolean specifying whether to display the minimum and maximum values. The default
-        value is OFF.
-    area: Area
-        An :py:class:`~abaqus.XY.Area.Area` object specifying the area of the legend.
-    textStyle: TextStyle
-        A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties used to display the legend text.
-    title: str
-        A String specifying the title to appear on the legend. The default value is an empty
-        string.
-    titleStyle: TextStyle
-        A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties used to display the legend title.
-
     Notes
     -----
     This object can be accessed by:

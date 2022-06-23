@@ -8,22 +8,6 @@ class PressurePenetration(Interaction):
     surface-to-surface contact.
     The PressurePenetration object is derived from the Interaction object.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the repository key.
-    createStepName: str
-        A String specifying the name of the step in which the :py:class:`~abaqus.Interaction.PressurePenetration.PressurePenetration` object is
-        created.
-    contactInteraction: str
-        A String specifying the name of the Surface-to-surface contact (Standard) interaction.
-    mainPoints: RegionArray
-        A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the main surface that are exposed to the
-        fluid.
-    secondaryPoints: RegionArray
-        A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the secondary surface that are exposed to
-        the fluid.
-
     Notes
     -----
     This object can be accessed by:

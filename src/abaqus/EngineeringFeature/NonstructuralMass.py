@@ -8,24 +8,6 @@ class NonstructuralMass(Inertia):
     into the model.
     The NonstructuralMass object is derived from the Inertia object.
 
-    Attributes
-    ----------
-    suppressed: Boolean
-        A Boolean specifying whether the inertia is suppressed or not. The default value is OFF.
-    name
-        A String specifying the repository key.
-    region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the mass is applied.
-    units
-        A SymbolicConstant specifying the units used to specify the nonstructural mass. Possible
-        values are TOTAL_MASS, MASS_PER_VOLUME, MASS_PER_AREA, and MASS_PER_LENGTH.
-    magnitude
-        A Float specifying the mass magnitude.
-    distribution
-        A SymbolicConstant specifying the distribution of the nonstructural mass. Possible
-        values are MASS_PROPORTIONAL and VOLUME_PROPORTIONAL. The default value is
-        MASS_PROPORTIONAL.The **distribution** argument applies only when **units** = TOTAL_MASS.
-
     Notes
     -----
     This object can be accessed by:

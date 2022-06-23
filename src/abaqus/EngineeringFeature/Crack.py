@@ -4,13 +4,6 @@ from abaqusConstants import *
 class Crack:
     """The Crack object is the abstract base type for ContourIntegral and future crack objects.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the repository key.
-    suppressed: Boolean
-        A Boolean specifying whether the crack is suppressed or not. The default value is OFF.
-
     Notes
     -----
     This object can be accessed by:

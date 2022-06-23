@@ -5,15 +5,6 @@ class ErrorIndicatorResult(RuleResult):
     """The ErrorIndicatorResult object contains result information corresponding to an error
     indicator variable in a RemeshingRule object for an adaptivity iteration.
 
-    Attributes
-    ----------
-    name
-        A String specifying the name of the error indicator variable to which these results
-        correspond.
-    results
-        A String-to-Float Dictionary specifying the calculated results from the sizing function
-        corresponding to the error indicator variable represented by this ErrorIndicatorResult.
-
     Notes
     -----
     This object can be accessed by:

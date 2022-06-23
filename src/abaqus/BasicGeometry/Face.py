@@ -4,24 +4,6 @@ from abaqusConstants import *
 class Face:
     """Faces are two-dimensional regions of geometry.
 
-    Attributes
-    ----------
-    index: int
-        An Int specifying the index of the face in the FaceArray.
-    isReferenceRep: Boolean
-        A Boolean specifying whether the face belongs to the reference representation of the
-        Part or Instance.
-    pointOn: float
-        A tuple of tuples of Floats specifying the coordinates. For a face of a shell **pointOn**
-        specifies the **X**-, **Y**-, and **Z**-coordinates of a point located on the face and the
-        **X**-, **Y**-, and **Z**-components of the normal to the face.For a face of a solid **pointOn**
-        specifies the **X**-, **Y**-, and **Z**-coordinates of a point located on the face.
-    featureName: float
-        A tuple of Floats specifying the name of the feature that created this face.
-    instanceName: float
-        A tuple of Floats specifying the name of the part instance for this face (if
-        applicable).
-
     Notes
     -----
     This object can be accessed by:

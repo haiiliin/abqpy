@@ -17,42 +17,6 @@ class OrientationOptions(DGOrientationOptions):
     - The material orientation options associated with a particular viewport.
     The OrientationOptions object is derived from the DGOrientationOptions object.
 
-    Attributes
-    ----------
-    showAxis1: Boolean
-        A Boolean specifying whether axis 1 of the material orientation triad should be
-        displayed. The default value is ON.
-    showAxis2: Boolean
-        A Boolean specifying whether axis 2 of the material orientation triad should be
-        displayed. The default value is ON.
-    showAxis3: Boolean
-        A Boolean specifying whether axis 3 of the material orientation triad should be
-        displayed. The default value is ON.
-    symbolSize: float
-        A Float specifying the size of the material orientation triad. The default value is
-        12.0.
-    lineThickness: SymbolicConstant
-        A SymbolicConstant specifying the thickness of the material orientation triad. Possible
-        values are VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN.
-    orientation: SymbolicConstant
-        A SymbolicConstant specifying the orientation used for composites. Possible values are
-        PLY and LAYUP. The default value is PLY.
-    arrowheadStyle: SymbolicConstant
-        A SymbolicConstant specifying the arrowhead style for the material orientation triad.
-        Possible values are NONE, FILLED, and WIRE. The default value is NONE.
-    scaleMode: SymbolicConstant
-        A SymbolicConstant specifying the scaling basis for the material orientation triad.
-        Possible values are MODEL_SIZE and SCREEN_SIZE. The default value is MODEL_SIZE.
-    axis1Color: str
-        A String specifying the color of axis 1 of the material orientation triad. The default
-        value is "Cyan".
-    axis2Color: str
-        A String specifying the color of axis 2 of the material orientation triad. The default
-        value is "Yellow".
-    axis3Color: str
-        A String specifying the color of axis 3 of the material orientation triad. The default
-        value is "Red".
-
     Notes
     -----
     This object can be accessed by:

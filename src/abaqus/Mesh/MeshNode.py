@@ -6,15 +6,6 @@ class MeshNode:
     object can be accessed via a part or part instance using an index that refers to the
     internal numbering of the node repository. The index does not refer to the node label.
 
-    Attributes
-    ----------
-    label: int
-        An Int specifying the node label.
-    instanceName: str
-        A String specifying the name of the part instance that owns this node.
-    coordinates: float
-        A tuple of three Floats specifying the coordinates of the new node.
-
     Notes
     -----
     This object can be accessed by:

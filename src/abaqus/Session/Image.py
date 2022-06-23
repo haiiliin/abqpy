@@ -2,15 +2,6 @@ class Image:
     """The Image object is used to store color values and attributes associated with a raster
     file. Upon creation, the Image object is added to the session.images repository.
 
-    Attributes
-    ----------
-    name
-        A String specifying the repository name for the image.
-    fileName
-        A String specifying the file from which the image is to be read. The file extension must
-        be specified and indicate the image format (.bmp, .gif, .jpg, .jpeg, .ico, .pcx, .png,
-        .rgb, .tga, .tif, or .xpm).
-
     Notes
     -----
     This object can be accessed by:

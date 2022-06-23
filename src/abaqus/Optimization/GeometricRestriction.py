@@ -7,15 +7,6 @@ class GeometricRestriction:
     members of the GeometricRestriction object are common to all objects derived from
     GeometricRestriction.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the geometric restriction repository key.
-    region: Region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
-        When used with a TopologyTask, there is no default value. When used with a ShapeTask,
-        the default value is MODEL.
-
     Notes
     -----
     This object can be accessed by:

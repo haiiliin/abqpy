@@ -7,18 +7,6 @@ class AreaStyle:
     AreaStyle objects are automatically created whenever an Area object is created.
     AreaStyle objects can be created using the methods described below.
 
-    Attributes
-    ----------
-    color
-        A String specifying the color to be used when filling an area with this AreaStyle
-        object. The default value is "White".
-    fill
-        A Boolean specifying whether to fill the area when using this AreaStyle. The default
-        value is ON.
-    style
-        A SymbolicConstant specifying the area pattern style to be used when filling an area
-        using this AreaStyle. The default value is SOLID.
-
     Notes
     -----
     This object can be accessed by:

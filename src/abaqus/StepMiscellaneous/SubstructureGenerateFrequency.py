@@ -3,13 +3,6 @@ class SubstructureGenerateFrequency:
     dynamic analysis. These modes are selected from the specified frequency range including
     the frequency boundary.
 
-    Attributes
-    ----------
-    lower: float
-        A Float specifying the lower limit of the frequency range, in cycles/time.
-    upper: float
-        A Float specifying the upper limit of the frequency range, in cycles/time.
-
     Notes
     -----
     This object can be accessed by:

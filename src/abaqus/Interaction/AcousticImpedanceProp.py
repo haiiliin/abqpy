@@ -7,24 +7,6 @@ class AcousticImpedanceProp(ContactProperty):
     referred to by an AcousticImpedance object.
     The AcousticImpedanceProp object is derived from the InteractionProperty object.
 
-    Attributes
-    ----------
-    name
-        A String specifying the interaction property repository key.
-    tableType
-        A SymbolicConstant specifying the type of tabular data to be defined. Possible values
-        are IMPEDANCE and ADMITTANCE.
-    table
-        A sequence of sequences of Floats specifying acoustic impedance properties.If
-        **tableType** = IMPEDANCE, each sequence of the table data specifies:The real part of the
-        complex impedance.The imaginary part of the complex impedance.Frequency, if the data
-        depend on frequency.If **tableType** = ADMITTANCE, each sequence of the table data
-        specifies:The real part of the complex admittance.The imaginary part of the complex
-        admittance.Frequency, if the data depend on frequency.
-    frequencyDependency
-        A Boolean specifying whether the **table** data depend on frequency. The default value is
-        OFF.
-
     Notes
     -----
     This object can be accessed by:

@@ -1,16 +1,6 @@
 class Radiation:
     """The Radiation object specifies radiation for a contact interaction property.
 
-    Attributes
-    ----------
-    mainEmissivity
-        A Float specifying the emissivity of the main surface.
-    secondaryEmissivity
-        A Float specifying the emissivity of the secondary surface.
-    table
-        A sequence of sequences of Floats specifying the following:Effective viewfactor, FF.Gap
-        clearance, dd.
-
     Notes
     -----
     This object can be accessed by:

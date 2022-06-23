@@ -6,15 +6,6 @@ class Calibration:
     """A :py:class:`~abaqus.BoundaryCondition.Calibration.Calibration` object is the object used to specify a material calibration. The
     Calibration object stores the data that is used for specifying materials from test data.
 
-    Attributes
-    ----------
-    dataSets: DataSet
-        A :py:class:`~abaqus.Calibration.DataSet.DataSet` object.
-    behaviors: Behavior
-        A :py:class:`~abaqus.Calibration.Behavior.Behavior` object.
-    name
-        A String specifying the name of the new calibration.
-
     Notes
     -----
     This object can be accessed by:

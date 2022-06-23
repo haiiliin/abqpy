@@ -8,55 +8,6 @@ class FilmCondition(Interaction):
     coupled temperature-displacement analyses.
     The FilmCondition object is derived from the Interaction object.
 
-    Attributes
-    ----------
-    name
-        A String specifying the repository key.
-    createStepName
-        A String specifying the name of the step in which the FilmCondition object is created.
-    surface
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the surface to which the film condition
-        interaction is applied.
-    definition
-        A SymbolicConstant specifying how the film condition is defined. Possible values are
-        EMBEDDED_COEFF, PROPERTY_REF, USER_SUB, and FIELD.
-    interactionProperty
-        A String specifying the name of the FilmConditionProp object associated with this
-        interaction. The **interactionProperty** argument applies only when
-        **definition** = PROPERTY_REF. The default value is an empty string.
-    sinkTemperature
-        A Float specifying the reference sink temperature, θ0θ0. The default value is 0.0.
-    sinkAmplitude
-        A String specifying the name of the Amplitude object that gives the variation of the
-        sink temperature, θ0θ0, with time. The default value is an empty string.Note:Use empty
-        string in an Abaqus/Standard analysis to specify that the reference sink temperature is
-        applied immediately at the beginning of the step or linearly over the step. Use empty
-        string in an Abaqus/Explicit analysis to specify that the reference sink temperature is
-        applied throughout the step.
-    filmCoeff
-        A Float specifying the reference film coefficient value, hh. The **filmCoeff** argument
-        applies when **definition** = EMBEDDED_COEFF, **definition** = USER_SUB, or **definition** = FIELD.
-        The default value is 0.0.
-    filmCoeffAmplitude
-        A String specifying the name of the Amplitude object that gives the variation of the
-        film coefficient, hh, with time. The default value is an empty string. Note: Use empty
-        string in an Abaqus/Standard analysis to specify that the reference film coefficient is
-        applied immediately at the beginning of the step or linearly over the step. Use empty
-        string in an Abaqus/Explicit analysis to specify that the reference film coefficient is
-        applied throughout the step.
-    field
-        A String specifying the name of the AnalyticalField object associated with this
-        interaction. The **field** argument applies only when **definition** = FIELD. The default
-        value is an empty string.
-    sinkFieldName
-        A String specifying the name of the AnalyticalField or DiscreteField object associated
-        with the sink temperature. The **sinkFieldName** argument applies only when
-        **sinkDistributionType** = ANALYTICAL_FIELD or **sinkDistributionType** = DISCRETE_FIELD. The
-        default value is an empty string.
-    sinkDistributionType
-        A SymbolicConstant specifying how the sink temperature is distributed. Possible values
-        are UNIFORM, ANALYTICAL_FIELD, and DISCRETE_FIELD. The default value is UNIFORM.
-
     Notes
     -----
     This object can be accessed by:

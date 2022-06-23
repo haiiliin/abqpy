@@ -7,34 +7,6 @@ class SingleTermDesignResponse(DesignResponse):
     """The SingleTermDesignResponse object defines a single-term design response.
     The SingleTermDesignResponse object is derived from the DesignResponse object.
 
-    Attributes
-    ----------
-    name
-        A String specifying the design response repository key.
-    identifier
-        A String specifying the name of the variable identifier.
-    csys
-        None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
-        global coordinate system is used. When this member is queried, it returns an Int. The
-        default value is None.
-    drivingRegion
-        None or a sequence of Floats specifying the driving region used when **identifier** is an
-        internal nodal variable. The default value is None.
-    operation
-        A SymbolicConstant specifying the operation used on values in the region. Possible
-        values are MAXIMUM, MINIMUM, and SUM. The default value is SUM.
-    region
-        The SymbolicConstant MODEL or a Region object specifying the region of the design
-        response variable. The default value is MODEL.
-    shellLayer
-        A SymbolicConstant specifying the location used for shell layer values. Possible values
-        are BOTTOM, MAXIMUM, MIDDLE, MINIMUM, and TOP. The default value is MAXIMUM.
-    stepOperation
-        A SymbolicConstant specifying the operation used on values across steps and load cases.
-        Possible values are MAXIMUM, MINIMUM, and SUM. The default value is SUM.
-    stepOptions
-        A :py:class:`~abaqus.Optimization.StepOptionArray.StepOptionArray` object.
-
     Notes
     -----
     This object can be accessed by:

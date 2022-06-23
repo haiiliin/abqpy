@@ -2,14 +2,6 @@ class IgnoredEdge:
     """An :py:class:`~abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge` object is a one-dimensional region of geometry that has been abstracted
     away by a virtual topology feature.
 
-    Attributes
-    ----------
-    index: int
-        An Int specifying the index of the IgnoredEdge in the IgnoredEdgeArray.
-    pointOn: float
-        A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point located on
-        the edge.
-
     Notes
     -----
     This object can be accessed by:

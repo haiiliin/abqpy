@@ -7,12 +7,6 @@ class DatumPoint(Datum):
     creates a DatumPoint object.
     The DatumPoint object is derived from the Datum object.
 
-    Attributes
-    ----------
-    pointOn: float
-        A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point located on
-        the datum.
-
     Notes
     -----
     This object can be accessed by:

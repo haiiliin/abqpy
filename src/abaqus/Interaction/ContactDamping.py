@@ -6,23 +6,6 @@ from abaqusConstants import *
 class ContactDamping:
     """The ContactDamping object specifies damping for a contact interaction property.
 
-    Attributes
-    ----------
-    definition: SymbolicConstant
-        A SymbolicConstant specifying the method used to define the damping. Possible values are
-        DAMPING_COEFFICIENT and CRITICAL_DAMPING_FRACTION. The default value is
-        DAMPING_COEFFICIENT.
-    tangentFraction: typing.Union[SymbolicConstant, float]
-        The SymbolicConstant DEFAULT or a Float specifying the tangential damping coefficient
-        divided by the normal damping coefficient. The default value is DEFAULT.
-    clearanceDependence: SymbolicConstant
-        A SymbolicConstant specifying the variation of the damping coefficient or fraction with
-        respect to clearance. Possible values are STEP, LINEAR, and BILINEAR. The default value
-        is STEP.If **definition=CRITICAL_DAMPING_FRACTION**, the only possible value is STEP.
-    table: float
-        A tuple of pairs of Floats specifying the damping properties. The items in the table
-        data are described below.
-
     Notes
     -----
     This object can be accessed by:

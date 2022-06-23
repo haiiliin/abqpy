@@ -6,35 +6,6 @@ class Chebyshev2Filter(Filter):
     """The Chebyshev2Filter object defines a Chebyshev type 2 filter.
     The Chebyshev2Filter object is derived from the Filter object.
 
-    Attributes
-    ----------
-    name
-        A String specifying the repository key. This name ANTIALIASING is reserved for filters
-        generated internally by the program.
-    cutoffFrequency
-        A Float specifying the attenuation point of the filter. Possible values are non-negative
-        numbers. Order is not available for OperatorFilter.
-    rippleFactor
-        A Float specifying the amount of allowable ripple in the filter. Possible values are
-        non-negative numbers less than 1. The default value is 0.025.
-    order
-        An Int specifying the highest power of the filter transfer function. Possible values are
-        non-negative numbers less than or equal to 20. Order is not available for
-        OperatorFilter. The default value is 2.
-    operation
-        A SymbolicConstant specifying the filter operator. Possible values are NONE, MIN, MAX,
-        and ABS. The default value is NONE.
-    halt
-        A Boolean specifying whether to stop the analysis if the specified limit is reached. The
-        default value is OFF.
-    limit
-        None or a Float specifying the threshold limit, an upper or lower bound for output
-        values depending on the operation, or a bound for stopping the analysis when Halt is
-        used. The default value is None.
-    invariant
-        A SymbolicConstant specifying the invariant to which filtering is applied. Possible
-        values are NONE, FIRST, and SECOND. The default value is NONE.
-
     Notes
     -----
     This object can be accessed by:

@@ -6,21 +6,6 @@ from abaqusConstants import *
 class TransverseShearBeam:
     """The TransverseShearBeam object defines the transverse shear stiffness properties of a beam section.
 
-    Attributes
-    ----------
-    scfDefinition
-        A SymbolicConstant specifying how slenderness compensation factor of the section is
-        given. Possible values are ANALYSIS_DEFAULT, COMPUTED, and VALUE.
-    k23
-        None or a Float specifying the k23 shear stiffness of the section. The default value is
-        None.
-    k13
-        None or a Float specifying the k13 shear stiffness of the section. The default value is
-        None.
-    slendernessCompensation
-        The SymbolicConstant COMPUTED or a Float specifying the slenderness compensation factor
-        of the section. The default value is 0.25.
-
     Notes
     -----
     This object can be accessed by:

@@ -7,32 +7,6 @@ class RotationalBodyForce(Load):
     """The RotationalBodyForce object stores the data for a rotational body force.
     The RotationalBodyForce object is derived from the Load object.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the load repository key.
-    distributionType: SymbolicConstant
-        A SymbolicConstant specifying how the load is distributed spatially. Possible values are
-        UNIFORM and FIELD. The default value is UNIFORM.
-    centrifugal: Boolean
-        A Boolean specifying whether or not the effect of the load is centrifugal. The default
-        value is OFF.Note:At least one of **centrifugal** or **rotaryAcceleration** must be
-        specified and only one must have the value ON.
-    rotaryAcceleration: Boolean
-        A Boolean specifying whether or not the effect of the load is rotary acceleration. The
-        default value is OFF.Note:At least one of **centrifugal** or **rotaryAcceleration** must be
-        specified and only one must have the value ON.
-    point1: float
-        A tuple of Floats specifying the first point on the axis of rotation for the load.
-    point2: float
-        A tuple of Floats specifying the second point on the axis of rotation for the load.
-    field: str
-        A String specifying the name of the :py:class:`~abaqus.Field.AnalyticalField.AnalyticalField` object associated with this load.
-        The **field** argument applies only when **distributionType=FIELD**. The default value is an
-        empty string.
-    region: Region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
-
     Notes
     -----
     This object can be accessed by:

@@ -10,19 +10,6 @@ class AnalyticalField(Field):
     AnalyticalField object are common to all objects derived from the AnalyticalField.
     The AnalyticalField object is derived from the Field object.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the repository key.
-    localCsys: DatumCsys
-        None or a :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the field. If
-        **localCsys=None**, the field is defined in the global coordinate system. The default
-        value is None.
-    description: str
-        A String specifying the description of the field. The default value is an empty string.
-    odbMeshRegionData: OdbMeshRegionData
-        An :py:class:`~abaqus.Field.OdbMeshRegionData.OdbMeshRegionData` object.
-
     Notes
     -----
     This object can be accessed by:

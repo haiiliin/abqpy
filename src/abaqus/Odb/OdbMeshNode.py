@@ -1,14 +1,6 @@
 class OdbMeshNode:
     """OdbMeshNode objects are created with the part.addNodes method.
 
-    Attributes
-    ----------
-    label: int
-        An Int specifying the node label.
-    coordinates: float
-        A tuple of Floats specifying the nodal coordinates in the global Cartesian coordinate
-        system.
-
     Notes
     -----
     This object can be accessed by:

@@ -2,29 +2,6 @@ class MeshStats:
     """The MeshStats object is a query object for holding mesh statistics and is returned by
     the getMeshStats command. The object does not have any methods.
 
-    Attributes
-    ----------
-    numPointElems: int
-        An Int specifying the number of point elements.
-    numLineElems: int
-        An Int specifying the number of line elements.
-    numQuadElems: int
-        An Int specifying the number of quadrilateral elements.
-    numTriElems: int
-        An Int specifying the number of triangular elements.
-    numHexElems: int
-        An Int specifying the number of hexahedral elements.
-    numWedgeElems: int
-        An Int specifying the number of wedge elements.
-    numTetElems: int
-        An Int specifying the number of tetrahedral elements.
-    numPyramidElems: int
-        An Int specifying the number of pyramid elements.
-    numNodes: int
-        An Int specifying the number of nodes.
-    numMeshedRegions: int
-        An Int specifying the number of regions that contain a mesh.
-
     Notes
     -----
     This object can be accessed by:

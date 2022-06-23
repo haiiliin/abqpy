@@ -10,15 +10,6 @@ from ..Mesh.MeshFace import MeshFace
 class Skin:
     """The Skin object stores information on skin reinforcements created on entities.
 
-    Attributes
-    ----------
-    elements: MeshElementArray
-        A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
-    edges: EdgeArray
-        An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
-    faces: FaceArray
-        A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
-
     Notes
     -----
     This object can be accessed by:

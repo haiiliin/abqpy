@@ -5,14 +5,6 @@ class AcousticInterfaceSection(Section):
     """The AcousticInterfaceSection object defines the properties of an acoustic section.
     The AcousticInterfaceSection object is derived from the Section object.
 
-    Attributes
-    ----------
-    name
-        A String specifying the repository key.
-    thickness
-        A Float specifying the thickness of the section. Possible values are **thickness** >> 0.0.
-        The default value is 1.0.
-
     Notes
     -----
     This object can be accessed by:

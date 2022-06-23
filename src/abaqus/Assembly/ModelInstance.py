@@ -19,29 +19,6 @@ class Model:
 class ModelInstance:
     """A :py:class:`~abaqus.Model.Model.ModelInstance` object is an instance of a Model.
 
-    Attributes
-    ----------
-    sets: dict[str, Set]
-        A repository of :py:class:`~abaqus.Region.Set.Set` objects specifying the sets created on the assembly. For more
-        information, see [Region
-        commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
-    surfaces: dict[str, Surface]
-        A repository of :py:class:`~abaqus.Region.Surface.Surface` objects specifying the surfaces created on the assembly. For
-        more information, see [Region
-        commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
-    vertices: VertexArray
-        A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object.
-    edges: EdgeArray
-        An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
-    elements: MeshElementArray
-        A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
-    nodes: MeshNodeArray
-        A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object.
-    datums: dict[str, Datum]
-        A repository of :py:class:`~abaqus.Datum.Datum.Datum` objects.
-    referencePoints: dict[str, ReferencePoint]
-        A repository of :py:class:`~abaqus.BasicGeometry.ReferencePoint.ReferencePoint` objects.
-
     Notes
     -----
     This object can be accessed by:

@@ -10,18 +10,6 @@ class PropertyTable:
     After PropertyTableDatais instantiated, making changes to PropertyTable may lead to data
     corruption.
 
-    Attributes
-    ----------
-    propertyTableDatas: dict[str, PropertyTableData]
-        A repository of PropertyTableData. Specifies all the propertyTableData in PropertyTable
-    name
-        A String specifying the repository key.
-    properties
-        A string array specifying the multiple properties to build the parameter table type.
-    variables
-        A String array specifying multiple independent variables. The default value is an empty
-        array.
-
     Notes
     -----
     This object can be accessed by:

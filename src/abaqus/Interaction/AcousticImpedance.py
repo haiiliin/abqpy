@@ -8,47 +8,6 @@ class AcousticImpedance(Interaction):
     boundaries for acoustic and coupled acoustic-structural analyses.
     The AcousticImpedance object is derived from the Interaction object.
 
-    Attributes
-    ----------
-    name
-        A String specifying the repository key.
-    createStepName
-        A String specifying the name of the step in which the AcousticImpedance object is
-        created.
-    surface
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the acoustic boundary surface.
-    definition
-        A SymbolicConstant specifying the type of acoustic impedance to be defined. Possible
-        values are TABULAR and NONREFLECTING. The default value is TABULAR.
-    interactionProperty
-        A String specifying the AcousticImpedanceProp object associated with this interaction.
-    nonreflectingType
-        A SymbolicConstant specifying the type of nonreflecting geometry to be defined. Possible
-        values are PLANE, IMPROVED, CIRCULAR, SPHERICAL, ELLIPTICAL, and PROLATE. The default
-        value is PLANE.This argument is valid only when **definition** = NONREFLECTING.
-    radius
-        A Float specifying the radius of the circle or sphere defining the boundary surface. The
-        default value is 1.0.This argument is valid only when **definition** = NONREFLECTING, and
-        **nonreflectingType** = CIRCULAR or SPHERICAL.
-    semimajorAxis
-        A Float specifying the semimajor axis length of the ellipse or prolate spheroid defining
-        the boundary surface. The default value is 1.0.This argument is valid only when
-        **definition** = NONREFLECTING, and **nonreflectingType** = ELLIPTICAL or PROLATE.
-    eccentricity
-        A Float specifying the eccentricity of the ellipse or prolate spheroid defining the
-        boundary surface. The default value is 0.0.This argument is valid only when
-        **definition** = NONREFLECTING, and **nonreflectingType** = ELLIPTICAL or PROLATE.
-    centerCoordinates
-        A sequence of three Floats specifying the X, Y, and Z coordinates of the center of the
-        ellipse or prolate spheroid defining the boundary surface. The default value is (0, 0,
-        0).This argument is valid only when **definition** = NONREFLECTING, and
-        **nonreflectingType** = ELLIPTICAL or PROLATE.
-    directionCosine
-        A sequence of three Floats specifying the X, Y, and Z components of the direction cosine
-        of the major axis of the ellipse or prolate spheroid defining the boundary surface. The
-        default value is (0, 0, 1).This argument is valid only when **definition** = NONREFLECTING,
-        and **nonreflectingType** = ELLIPTICAL or PROLATE.
-
     Notes
     -----
     This object can be accessed by:

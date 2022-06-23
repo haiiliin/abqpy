@@ -5,36 +5,6 @@ class Queue:
     """A :py:class:`~abaqus.Job.Queue.Queue` object tells the job where and how to submit a job remotely. A :py:class:`~abaqus.Job.Queue.Queue` object can
     be used as the **queue** argument to the Job method.
 
-    Attributes
-    ----------
-    name
-        A String specifying the name of the new Queue object.
-    queueName
-        A String specifying the name of the remote analysis queue.
-    hostName
-        A String specifying the name of the remote host. The default value is an empty string.
-    fileCopy
-        A Boolean specifying if the results files are to be copied from the remote machine to
-        the local machine. The default value is ON.
-    directory
-        A String specifying the remote location for the execution of the simulation. The default
-        value is an empty string.
-    driver
-        A String specifying the designation of the remote driver. The default value is "abaqus".
-    remotePlatform
-        A SymbolicConstant specifying the type of operating system on the remote machine. The
-        default value is Linux.
-    filesToCopy
-        A list of Strings specifying the files to be copied from the remote location to the
-        local machine, or ALL. Strings specified in a list are the extensions of the job files
-        that will be copied, such as ('log', 'dat', 'msg', 'sta', 'odb'). The default value is
-        ALL.
-    deleteAfterCopy
-        A Boolean specifying whether remote files are to be deleted after they are copied to the
-        local machine. The default value is OFF.
-    description
-        A String specifying a description of the queue. The default value is an empty string.
-
     Notes
     -----
     This object can be accessed by:

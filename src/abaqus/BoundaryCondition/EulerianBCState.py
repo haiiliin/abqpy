@@ -9,49 +9,6 @@ class EulerianBCState(BoundaryConditionState):
     The EulerianBCState object has no constructor or methods.
     The EulerianBCState object is derived from the BoundaryConditionState object.
 
-    Attributes
-    ----------
-    definition: SymbolicConstant
-        A SymbolicConstant specifying the material flow conditions to be defined. Possible
-        values are INFLOW, OUTFLOW, and BOTH. The default value is INFLOW.
-    definitionState: SymbolicConstant
-        A SymbolicConstant specifying the propagation state of the definition member. Possible
-        values are UNSET, SET, and UNCHANGED.
-    inflowType: SymbolicConstant
-        A SymbolicConstant specifying the material flow conditions to be defined. Possible
-        values are FREE, NONE, and VOID. The default value is FREE.
-    inflowTypeState: SymbolicConstant
-        A SymbolicConstant specifying the propagation state of the definition member. Possible
-        values are UNSET, SET, and UNCHANGED.
-    outflowType: SymbolicConstant
-        A SymbolicConstant specifying the material flow conditions to be defined. Possible
-        values are ZERO_PRESSURE, FREE, NON_REFLECTING, and EQUILIBRIUM. The default value is
-        ZERO_PRESSURE.
-    outflowTypeState: SymbolicConstant
-        A SymbolicConstant specifying the propagation state of the definition member. Possible
-        values are UNSET, SET, and UNCHANGED.
-    amplitudeState: SymbolicConstant
-        A SymbolicConstant specifying the propagation state of the amplitude reference. Possible
-        values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    status: SymbolicConstant
-        A SymbolicConstant specifying the propagation state of the :py:class:`~abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState` object. Possible values are:
-        
-        - NOT_YET_ACTIVE
-        - CREATED
-        - PROPAGATED
-        - MODIFIED
-        - DEACTIVATED
-        - NO_LONGER_ACTIVE
-        - TYPE_NOT_APPLICABLE
-        - INSTANCE_NOT_APPLICABLE
-        - PROPAGATED_FROM_BASE_STATE
-        - MODIFIED_FROM_BASE_STATE
-        - DEACTIVATED_FROM_BASE_STATE
-        - BUILT_INTO_MODES
-    amplitude: str
-        A String specifying the name of the amplitude reference. The String is empty if the
-        boundary condition has no amplitude reference.
-
     Notes
     -----
     This object can be accessed by:

@@ -4,11 +4,6 @@ from .DirectDampingComponentArray import DirectDampingComponentArray
 class DirectDamping:
     """A :py:class:`~abaqus.StepMiscellaneous.DirectDamping.DirectDamping` object contains direct modal damping parameters.
 
-    Attributes
-    ----------
-    components: DirectDampingComponentArray
-        A :py:class:`~abaqus.StepMiscellaneous.DirectDampingComponentArray.DirectDampingComponentArray` object.
-
     Notes
     -----
     This object can be accessed by:

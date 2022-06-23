@@ -7,13 +7,6 @@ from ..Mesh.MeshElementArray import MeshElementArray
 class Stringer:
     """The Stringer object stores information on stringer reinforcements created on entities.
 
-    Attributes
-    ----------
-    elements: MeshElementArray
-        A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
-    edges: EdgeArray
-        An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
-
     Notes
     -----
     This object can be accessed by:

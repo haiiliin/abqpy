@@ -4,32 +4,6 @@ from abaqusConstants import *
 class CohesiveBehavior:
     """The CohesiveBehaviour
 
-    Attributes
-    ----------
-    repeatedContacts
-        A Boolean specifying whether to enforce cohesive behavior for recurrent contacts at
-        nodes on the secondary surface subsequent to ultimate failure. The default value is OFF.
-    eligibility
-        A SymbolicConstant specifying the eligible secondary nodes. Possible values are
-        ALL_NODES, INITIAL_NODES, and SPECIFIED. The default value is ALL_NODES.
-    defaultPenalties
-        A Boolean specifying whether to use the default contact penalties. The default value is
-        ON.
-    coupling
-        A SymbolicConstant specifying whether the traction-separation coefficients are coupled
-        or uncoupled. This argument is valid only for **defaultPenalties** = OFF. Possible values
-        are UNCOUPLED and COUPLED. The default value is UNCOUPLED.
-    temperatureDependency
-        A Boolean specifying whether the coefficient data depend on temperature. This argument
-        is valid only for **defaultPenalties** = OFF. The default value is OFF.
-    dependencies
-        An Int specifying the number of field variables. This argument is valid only for
-        **defaultPenalties** = OFF. The default value is 0.
-    table
-        A sequence of sequences of Floats specifying the traction-separation coefficients. The
-        items in the table data are described below. This argument is valid only for
-        **defaultPenalties** = OFF.
-
     Notes
     -----
     This object can be accessed by:

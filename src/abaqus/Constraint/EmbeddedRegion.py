@@ -8,37 +8,6 @@ class EmbeddedRegion(Constraint):
     region of the model or within the whole model.
     The EmbeddedRegion object is derived from the ConstrainedSketchConstraint object.
 
-    Attributes
-    ----------
-    suppressed: Boolean
-        A Boolean specifying whether the constraint is suppressed or not. The default value is
-        OFF.
-    name
-        A String specifying the constraint repository key.
-    embeddedRegion
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the body region to be embedded.
-    hostRegion
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the host region. A value of None indicates that the host
-        region is the whole model.
-    weightFactorTolerance
-        A Float specifying a small value below which the weighting factors will be zeroed out.
-        The default value is 10-6.
-    toleranceMethod
-        A SymbolicConstant specifying the method used to determine the embedded element
-        tolerance. Possible values are ABSOLUTE, FRACTIONAL, and BOTH. The default value is
-        BOTH.
-    absoluteTolerance
-        A Float specifying the absolute value by which a node on the embedded region may lie
-        outside the host region. If **absoluteTolerance** = 0.0, the **fractionalTolerance** value
-        will be used. The default value is 0.0.This argument applies only when
-        **toleranceMethod** = ABSOLUTE or BOTH.
-    fractionalTolerance
-        A Float specifying the fractional value by which a node on the embedded region may lie
-        outside the host region. The fractional value is based on the average element size
-        within the host region. The default value is 0.05.If both tolerance arguments are
-        specified, the smaller value will be used.This argument applies only when
-        **toleranceMethod** = FRACTIONAL or BOTH.
-
     Notes
     -----
     This object can be accessed by:

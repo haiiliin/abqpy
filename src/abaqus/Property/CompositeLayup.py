@@ -13,36 +13,6 @@ from ..Section.SectionLayerArray import SectionLayerArray
 class CompositeLayup:
     """The CompositeLayup object is used to specify a composite layup on a part.
 
-    Attributes
-    ----------
-    section: GeometryShellSection
-        A :py:class:`~abaqus.Section.GeometryShellSection.GeometryShellSection` object.
-    orientation: MaterialOrientation
-        A :py:class:`~abaqus.Property.MaterialOrientation.MaterialOrientation` object.
-    plies: CompositePlyArray
-        A :py:class:`~abaqus.Property.CompositePlyArray.CompositePlyArray` object specifying the plies that make up this composite layup.
-    name
-        A String specifying the repository key.
-    description
-        A String specifying a description of the composite layup.
-    offsetType
-        A SymbolicConstant specifying the method used to define the shell offset. If
-        **offsetType** = OFFSET_FIELD the **offsetField** argument is required. This member is valid
-        only if **elementType** = SHELL. Possible values are SINGLE_VALUE, MIDDLE_SURFACE,
-        TOP_SURFACE, BOTTOM_SURFACE, OFFSET_FIELD, and GLOBAL. The default value is GLOBAL.
-    offsetField
-        A String specifying The name of the field specifying the offset. This member is valid
-        only if **elementType** = SHELL. The default value is an empty string.
-    offsetValues
-        A Float specifying The offset of the shell section. This member is valid only if
-        **elementType** = SHELL. The default value is 0.0.
-    elementType
-        A SymbolicConstant specifying the type of element in the composite layup. Possible
-        values are SHELL, CONTINUUM_SHELL, and SOLID. The default value is SHELL.
-    symmetric
-        A Boolean specifying whether or not the layup should be made symmetric by the analysis.
-        The default value is OFF.
-
     Notes
     -----
     This object can be accessed by:

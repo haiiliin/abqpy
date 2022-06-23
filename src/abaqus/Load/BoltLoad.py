@@ -8,17 +8,6 @@ class BoltLoad(Load):
     """The BoltLoad object defines a bolt load.
     The BoltLoad object is derived from the Load object.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the load repository key.
-    datumAxis: DatumAxis
-        A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the pre-tension section
-        normal.Note:**datumAxis** is required only for Solid and Shell regions; it has no meaning
-        for Wire regions.
-    region: Region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
-
     Notes
     -----
     This object can be accessed by:

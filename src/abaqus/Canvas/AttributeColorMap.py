@@ -8,27 +8,6 @@ class AttributeColorMap:
     AttributeColorMap object to be updated in the session.viewports[name].colorMappings
     repository.
 
-    Attributes
-    ----------
-    mapType: SymbolicConstant
-        A SymbolicConstant specifying the type of AttributeColorMap . Possible values are
-        MATERIAL_MAP, SECTION_MAP, PART_MAP, ELSET_MAP, AVERAGING_REGION_MAP, and ELTYPE_MAP.
-    overrides: dict
-        A :py:class:`~.Dictionary` object specifying a color mapping. Each key is of String type and specifies
-        an attribute in the map; the corresponding values specify the color definition to apply
-        to that attribute in the form (0|1, wire color, edge color, face color). The 0|1 defines
-        the active status for the attribute. For example:`overrides={
-        'Part-1':(1,'00FF00', '00CCFF',                        '00FF00')}`
-    defaultOverrides: dict
-        A :py:class:`~.Dictionary` object specifying a custom color mapping similar to overrides. For
-        example:`defaultOverrides={                        'Copper':(1,''00FF00', '00CCFF',
-        '00FF00')}`The color mapping can contain keys that have not been
-        created. When the key is created, it gets the appropriate values from this mapping.
-    attributeColors: dict
-        A :py:class:`~.Dictionary` object specifying the color settings of each attribute as described in the
-        [updateOverrides
-        ](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-attributecolormappyc.htm?ContextScope=allsimaker-attributecolormapupdateoverridespyc)method.
-
     Notes
     -----
     This object can be accessed by:

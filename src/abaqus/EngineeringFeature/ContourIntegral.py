@@ -8,56 +8,6 @@ class ContourIntegral(Crack):
     assembly regions are supported.
     The ContourIntegral object is derived from the Crack object.
 
-    Attributes
-    ----------
-    suppressed: Boolean
-        A Boolean specifying whether the crack is suppressed or not. The default value is OFF.
-    name
-        A String specifying the repository key.
-    crackFront
-        A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the crack-front region to which the contour integral is
-        applied. If the crack-front consists of a single region, a Region object may be
-        specified instead of a sequence with a single item in it.
-    crackTip
-        A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the crack-tip region to which the contour integral is
-        applied. If the crack-tip consists of a single region, a Region object may be specified
-        instead of a sequence with a single item in it.
-    extensionDirectionMethod
-        A SymbolicConstant specifying how the virtual crack extension direction vectors are
-        defined. Possible values are CRACK_NORMAL and Q_VECTORS.
-    symmetric
-        A Boolean specifying whether the crack is defined on a half model (about a symmetry
-        plane) or whether it is defined on the whole model. The default value is OFF.
-    listOfRegions
-        A Boolean specifying whether the regions specified by **crackFront** and **crackTip** are
-        specified using a single region or tuples of region objects. The default value is OFF.
-    crackFrontName
-        A String specifying the name of the crack-front region generated from the tuple of
-        regions specifying the crack-front region. This argument is valid only when
-        **listOfRegions** is ON. The default value is **name**+Front.
-    crackTipName
-        A String specifying the name of the crack-tip region generated from the tuple of regions
-        specifying the crack-tip region. This parameter is valid only when **listOfRegions** = ON.
-        The default value is **name**+Tip.
-    crackNormal
-        A sequence of sequences of Floats specifying the two points of the vector that describes
-        the crack normal direction. Each point is defined by a tuple of two or three coordinates
-        indicating its position. This argument is required only when
-        **extensionDirectionMethod** = CRACK_NORMAL. The default value is an empty sequence.
-    qVectors
-        A sequence of sequences of sequences of Floats specifying the vectors that indicate the
-        set of crack extension directions. Each vector is described by a tuple of two points,
-        and each point is described by a tuple of two or three coordinates indicating its
-        position. This argument is required only when **extensionDirectionMethod** = Q_VECTORS. The
-        default value is an empty sequence.
-    midNodePosition
-        A Float specifying the position of the midside node along the edges of the second-order
-        elements that radiate from the crack tip. Possible values are 0.0 << **midNodeParameter**
-        << 1.0. The default value is 0.5.
-    collapsedElementAtTip
-        A SymbolicConstant specifying the crack-tip singularity. Possible values are NONE,
-        SINGLE_NODE, and DUPLICATE_NODES. The default value is NONE.
-
     Notes
     -----
     This object can be accessed by:

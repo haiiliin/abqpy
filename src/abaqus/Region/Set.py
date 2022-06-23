@@ -35,29 +35,6 @@ class Set:
 
     transmissionSet.elements[6]=mdb.models['Transmission'].rootAssembly.instances['housing-'].elements[47]
 
-    Attributes
-    ----------
-    elements: MeshElementArray
-        A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
-    nodes: MeshNodeArray
-        A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object.
-    vertices: VertexArray
-        A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object.
-    edges: EdgeArray
-        An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
-    faces: FaceArray
-        A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
-    cells: CellArray
-        A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object.
-    xVertices: VertexArray
-        A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object.
-    xEdges: EdgeArray
-        An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
-    xFaces: FaceArray
-        A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
-    referencePoints: ReferencePointArray
-        A :py:class:`~abaqus.BasicGeometry.ReferencePointArray.ReferencePointArray` object.
-
     Notes
     -----
     This object can be accessed by:

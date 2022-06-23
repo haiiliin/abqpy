@@ -9,34 +9,6 @@ class SubstructureLoadState(LoadState):
     The SubstructureLoadState object has no constructor or methods.
     The SubstructureLoadState object is derived from the LoadState object.
 
-    Attributes
-    ----------
-    loadCaseNames: tuple
-        A tuple of strings specifying the names of the load cases to be activated.
-    magnitude: float
-        A Float or a Complex specifying the load magnitude.
-    magnitudeState: SymbolicConstant
-        A SymbolicConstant specifying the propagation state of the load magnitude. Possible
-        values are UNSET, SET, UNCHANGED, and MODIFIED.
-    amplitudeState: SymbolicConstant
-        A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible
-        values are UNSET, SET, UNCHANGED, and FREED.
-    status: SymbolicConstant
-        A SymbolicConstant specifying the propagation state of the :py:class:`~abaqus.Load.LoadState.LoadState` object. Possible
-        values are:
-            - NOT_YET_ACTIVE
-            - CREATED
-            - PROPAGATED
-            - MODIFIED
-            - DEACTIVATED
-            - NO_LONGER_ACTIVE
-            - TYPE_NOT_APPLICABLE
-            - INSTANCE_NOT_APPLICABLE
-            - BUILT_INTO_BASE_STATE
-    amplitude: str
-        A String specifying the name of the amplitude reference. The String is empty if the load
-        has no amplitude reference.
-
     Notes
     -----
     This object can be accessed by:

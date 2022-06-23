@@ -2,14 +2,6 @@ class SectionPoint:
     """The SectionPoint object describes the location of a section point within a section
     category. 
 
-    Attributes
-    ----------
-    number
-        An Int specifying the number of the section point. See Beam elements and Shell elements
-        for the numbering convention.
-    description
-        A String specifying the description of the section point.
-
     Notes
     -----
     This object can be accessed by:

@@ -9,19 +9,6 @@ class LeafFromNodeLabels(Leaf):
     commands.
     The LeafFromNodeLabels object is derived from the Leaf object.
 
-    Attributes
-    ----------
-    leafType: SymbolicConstant
-        A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-        DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
-    partInstanceName
-        A String specifying the name of the part instance to which **nodeLabels** refers.
-    nodeLabels
-        A sequence of Strings specifying expressions that denote node labels. The expression can
-        be any of the following:An Int specifying a single node label; for example, `1`.A String
-        specifying a single node label; for example, `'7'`.A String specifying a sequence of
-        node labels; for example, `'3:5'` and `'3:15:3'`.
-
     Notes
     -----
     This object can be accessed by:

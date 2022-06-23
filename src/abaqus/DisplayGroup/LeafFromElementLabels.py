@@ -10,19 +10,6 @@ class LeafFromElementLabels(Leaf):
     The LeafFromElementLabels object is derived from the Leaf object.
     This page discusses:
 
-    Attributes
-    ----------
-    leafType: SymbolicConstant
-        A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-        DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
-    partInstanceName
-        A String specifying the name of the part instance to which **elementLabels** refers.
-    elementLabels
-        A sequence of Strings specifying expressions that denote element labels. The expression
-        can be any of the following:An Int specifying a single element label; for example, `1`.A
-        String specifying a single element label; for example, `'7'`.A String specifying a
-        sequence of element labels; for example, `'3:5'` and `'3:15:3'`.
-
     Notes
     -----
     This object can be accessed by:

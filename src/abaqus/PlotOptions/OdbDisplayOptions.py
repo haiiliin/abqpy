@@ -12,21 +12,6 @@ class OdbDisplayOptions:
     object when an OdbInstance object is created using the display options associated with
     the current viewport at the time of creation.
 
-    Attributes
-    ----------
-    commonOptions: DGCommonOptions
-        A :py:class:`~abaqus.PlotOptions.DGCommonOptions.DGCommonOptions` object.
-    superimposeOptions: DGSuperimposeOptions
-        A :py:class:`~abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions` object.
-    contourOptions: DGContourOptions
-        A :py:class:`~abaqus.PlotOptions.DGContourOptions.DGContourOptions` object.
-    symbolOptions: DGSymbolOptions
-        A :py:class:`~abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions` object.
-    materialOrientationOptions: DGOrientationOptions
-        A :py:class:`~abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions` object.
-    displayBodyOptions: DGDisplayBodyOptions
-        A :py:class:`~abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions` object.
-
     Notes
     -----
     This object can be accessed by:

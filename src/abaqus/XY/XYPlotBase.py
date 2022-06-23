@@ -8,21 +8,6 @@ from .XYCurve import XYCurve
 class XYPlotBase:
     """The XYPlot object is used to display Chart objects.
 
-    Attributes
-    ----------
-    area: Area
-        An :py:class:`~abaqus.XY.Area.Area` object specifying position, padding, background and borders of the XYPlot
-        object.
-    title: Title
-        A :py:class:`~abaqus.XY.Title.Title` object specifying the title of the :py:class:`~abaqus.XY.XYPlot.XYPlot` object.
-    charts: dict[str, Chart]
-        A repository of :py:class:`~abaqus.XY.Chart.Chart` objects.
-    curves: dict[str, XYCurve]
-        A repository of :py:class:`~abaqus.XY.XYCurve.XYCurve` objects.
-    transform: float
-        A tuple of Floats specifying a transformation matrix used to scale or pan along the axes
-        of the active :py:class:`~abaqus.XY.Chart.Chart` object of this XYPlot.
-
     Notes
     -----
     This object can be accessed by:

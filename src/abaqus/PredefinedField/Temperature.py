@@ -7,25 +7,6 @@ class Temperature(PredefinedField):
     """The Temperature object stores the data for temperature predefined fields.
     The Temperature object is derived from the PredefinedField object.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the repository key.
-    distributionType: SymbolicConstant
-        A SymbolicConstant specifying how the predefined field varies spatially. Possible values
-        are UNIFORM, USER_DEFINED, FROM_FILE, FIELD, FROM_FILE_AND_USER_DEFINED, and
-        DISCRETE_FIELD. The default value is UNIFORM.
-    field: str
-        A String specifying the name of the AnalyticalField or :py:class:`~abaqus.Field.DiscreteField.DiscreteField` object associated
-        with this predefined field. The **field** argument applies only when
-        **distributionType=FIELD** or **distributionType=DISCRETE_FIELD**. The default value is an
-        empty string.
-    region: Region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the predefined field is applied. **:py:class:`~abaqus.Region.Region.Region`**
-        is ignored if the predefined field has an **instances** member available. **:py:class:`~abaqus.Region.Region.Region`** is also
-        ignored if the predefined field has a **distributionType** member available, and
-        **distributionType=FROM_FILE** or FROM_FILE_AND_USER_DEFINED.
-
     Notes
     -----
     This object can be accessed by:

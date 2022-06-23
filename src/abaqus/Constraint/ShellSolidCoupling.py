@@ -8,32 +8,6 @@ class ShellSolidCoupling(Constraint):
     of a simulation.
     The ShellSolidCoupling object is derived from the ConstrainedSketchConstraint object.
 
-    Attributes
-    ----------
-    suppressed: Boolean
-        A Boolean specifying whether the constraint is suppressed or not. The default value is
-        OFF.
-    name
-        A String specifying the constraint repository key.
-    shellEdge
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the shell edge surface.
-    solidFace
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the solid surface.
-    positionToleranceMethod
-        A SymbolicConstant specifying the method used to determine the position tolerance.
-        Possible values are COMPUTED and SPECIFIED. The default value is COMPUTED.
-    positionTolerance
-        A Float specifying the position tolerance. The default value is 0.0.The
-        **positionTolerance** argument applies only when
-        **positionToleranceMethod** = SPECIFIED.Note:Abaqus will not constrain nodes on the solid
-        face region outside the position tolerance.
-    influenceDistanceMethod
-        A SymbolicConstant specifying the method used to determine the influence distance.
-        Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT.
-    influenceDistance
-        A Float specifying the influence distance. The **influenceDistance** argument applies only
-        when **influenceDistanceMethod** = SPECIFIED. The default value is 0.0.
-
     Notes
     -----
     This object can be accessed by:

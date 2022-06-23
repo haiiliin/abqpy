@@ -35,18 +35,6 @@ class BackwardCompatibility:
     print backwardCompatibility.getDeprecatedMembersUsed()
     print backwardCompatibility.getDeprecatedArgsUsed()
 
-    Attributes
-    ----------
-    includeDeprecated: Boolean
-        A Boolean specifying whether deprecated members, methods, and arguments can be seen and
-        used. Possible values are ON and OFF. The default value is ON.
-    reportDeprecated: Boolean
-        A Boolean specifying whether a warning is displayed after running a script that contains
-        deprecated commands. The default value is True.
-    showKeysInReport: Boolean
-        A Boolean specifying whether the keys and indices are included in the report that is
-        displayed when **reportDeprecated** is True. The default value is False.
-
     Notes
     -----
     This object can be accessed by:

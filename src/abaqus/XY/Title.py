@@ -7,18 +7,6 @@ class Title:
     """The Title object is used to store the display attributes of the XYPlot title. An Title
     object is automatically created when creating a XYPlot object.
 
-    Attributes
-    ----------
-    useDefault: Boolean
-        A Boolean specifying whether to show the default title. The default value is OFF.
-    area: Area
-        An :py:class:`~abaqus.XY.Area.Area` object specifying the area of the title.
-    text: str
-        A String specifying the text to appear as a title. By default the title is set to the
-        :py:class:`~abaqus.XY.XYPlot.XYPlot` object name. The default value is an empty string.
-    titleStyle: TextStyle
-        A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties used to display the legend title.
-
     Notes
     -----
     This object can be accessed by:

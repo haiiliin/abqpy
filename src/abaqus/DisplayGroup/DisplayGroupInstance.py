@@ -8,21 +8,6 @@ class DisplayGroupInstance:
     plotted in a viewport, Abaqus/CAE creates a DisplayGroupInstance object for each display
     group and places it in the DisplayGroupInstanceRepository object.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the repository key.
-    lockOptions: Boolean
-        A Boolean specifying whether the display options stored on the :py:class:`~abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance`
-        object should be synchronized with changes to the viewport display options. This member
-        is available only for :py:class:`~abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance` objects that are members of the
-        :py:class:`~abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance` repository member of the :py:class:`~abaqus.OdbDisplay.OdbDisplay.OdbDisplay` object. The default value is
-        OFF.
-    odbDisplayOptions: OdbDisplayOptions
-        An :py:class:`~abaqus.PlotOptions.:py:class:`~abaqus.OdbDisplay.OdbDisplay.OdbDisplay`Options.:py:class:`~abaqus.OdbDisplay.OdbDisplay.OdbDisplay`Options` object specifying this member is available only for
-        :py:class:`~abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance` objects that are members of the :py:class:`~abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance` repository
-        member of the :py:class:`~abaqus.OdbDisplay.OdbDisplay.OdbDisplay` object.
-
     Notes
     -----
     This object can be accessed by:

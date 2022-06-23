@@ -5,18 +5,6 @@ from .OptimizationObjectiveArray import OptimizationObjectiveArray
 class ObjectiveFunction:
     """The ObjectiveFunction object defines the objective of the optimization.
 
-    Attributes
-    ----------
-    objectives: OptimizationObjectiveArray
-        :py:class:`~.Optimization` objectives
-    name
-        A String specifying the objective function repository key.
-    objectives
-        An :py:class:`~abaqus.Optimization.OptimizationObjectiveArray.OptimizationObjectiveArray` object.
-    target
-        A SymbolicConstant specifying the target of the objective function. Possible values are
-        MINIMIZE, MAXIMIZE, and MINIMIZE_MAXIMUM. The default value is MINIMIZE.
-
     Notes
     -----
     This object can be accessed by:

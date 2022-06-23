@@ -12,31 +12,6 @@ class MdbBase:
     """The Mdb object is the high-level Abaqus model database. A model database stores models
     and analysis controls.
 
-    Attributes
-    ----------
-    version: int
-        An Int specifying the release number of the :py:class:`~abaqus.Mdb.Mdb.Mdb` object in memory.
-    lastChangedCount: float
-        A Float specifying the value of a counter associated with the :py:class:`~abaqus.Mdb.Mdb.Mdb` object. The counter
-        indicates when the :py:class:`~abaqus.Mdb.Mdb.Mdb` object was last changed.
-    jobs: dict[str, Job]
-        A repository of :py:class:`~abaqus.Job.Job.Job` objects.
-    adaptivityProcesses: dict[str, AdaptivityProcess]
-        A repository of :py:class:`~abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess` objects.
-    coexecutions: dict[str, Coexecution]
-        A repository of :py:class:`~abaqus.Job.Coexecution.Coexecution` objects.
-    optimizationProcesses: dict[str, OptimizationProcess]
-        A repository of :py:class:`~abaqus.Job.OptimizationProcess.OptimizationProcess` objects.
-    meshEditOptions: MeshEditOptions
-        A :py:class:`~abaqus.EditMesh.MeshEditOptions.MeshEditOptions` object specifying the undo/redo behavior when editing meshes on parts
-        or part instances.
-    models: dict[str, Model]
-        A repository of :py:class:`~abaqus.Model.Model.Model` objects.
-    customData: RepositorySupport
-        A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` object.
-    annotations: dict[str, Annotation]
-        A repository of :py:class:`~abaqus.Annotation.Annotation.Annotation` objects.
-
     Notes
     -----
     This object can be accessed by:

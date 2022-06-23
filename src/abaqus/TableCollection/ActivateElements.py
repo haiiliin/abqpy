@@ -2,19 +2,6 @@ class ActivateElements:
     """The ActivateElements object is used turn on progressive element activation within a step
     definition.
 
-    Attributes
-    ----------
-    tableCollection
-        A String specifying the name of the tableCollection object.
-    activation
-        A string specifying the name of progressive element activation.
-    eigenTimeConst
-        A Double specifying the time constant used to ramp up the eigenstrains at element
-        activation.
-    expansionTimeConstant
-        A Double specifying the time constant used to ramp up the thermal strains at element
-        activation.
-
     Notes
     -----
     This object can be accessed by:

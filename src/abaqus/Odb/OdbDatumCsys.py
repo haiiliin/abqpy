@@ -9,23 +9,6 @@ class OdbDatumCsys:
     you exit Abaqus/CAE. Alternatively, the analysis code can write the datum coordinate
     system to the output database.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the repository key.
-    coordSysType: SymbolicConstant
-        A SymbolicConstant specifying the type of coordinate system. Possible values are
-        CARTESIAN, CYLINDRICAL, and SPHERICAL.
-    origin: float
-        A tuple of Floats specifying the coordinates of the origin of the datum coordinate
-        system.
-    xAxis: float
-        A tuple of Floats specifying a point on the **X**-axis.
-    yAxis: float
-        A tuple of Floats specifying a point on the **Y**-axis.
-    zAxis: float
-        A tuple of Floats specifying a point on the **Z**-axis.
-
     Notes
     -----
     This object can be accessed by:

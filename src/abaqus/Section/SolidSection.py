@@ -7,11 +7,6 @@ class SolidSection(Section):
     constructor and no methods or members.
     The ShellSection object is derived from the Section object.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the repository key.
-
     Notes
     -----
     This object can be accessed by:

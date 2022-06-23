@@ -5,21 +5,6 @@ class TrapezoidalProfile(Profile):
     """The TrapezoidalProfile object defines the properties of a trapezoidal profile.
     The TrapezoidalProfile object is derived from the Profile object.
 
-    Attributes
-    ----------
-    name
-        A String specifying the repository key.
-    a
-        A positive Float specifying the **a** dimension of the Trapezoidal profile. For more
-        information, see [Beam cross-section
-        library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all).
-    b
-        A positive Float specifying the **b** dimension of the Trapezoidal profile.
-    c
-        A positive Float specifying the **c** dimension of the Trapezoidal profile.
-    d
-        A Float specifying the **d** dimension of the Trapezoidal profile.
-
     Notes
     -----
     This object can be accessed by:

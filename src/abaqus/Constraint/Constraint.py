@@ -6,14 +6,6 @@ class Constraint:
     ConstrainedSketchConstraint object has no explicit constructor. The members of the ConstrainedSketchConstraint object are
     common to all objects derived from the ConstrainedSketchConstraint.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the constraint repository key.
-    suppressed: Boolean
-        A Boolean specifying whether the constraint is suppressed or not. The default value is
-        OFF.
-
     Notes
     -----
     This object can be accessed by:

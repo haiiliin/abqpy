@@ -12,32 +12,6 @@ class PartDisplayOptions:
     in a particular viewport. The PartDisplayOptions object has no constructor. When you
     create a new viewport, the settings are copied from the current viewport.
 
-    Attributes
-    ----------
-    engineeringFeatures: Boolean
-        A Boolean specifying whether engineering features are shown. The default value is OFF.
-    renderBeamProfiles: Boolean
-        A Boolean specifying whether to render the beam profiles. The default value is OFF.
-    beamScaleFactor: float
-        A Float specifying the beam profile scale factor. The beamScaleFactor must be greater
-        than zero. The default value is 1.0.
-    mesh: Boolean
-        A Boolean specifying whether the mesh should be displayed.
-    renderStyle: SymbolicConstant
-        A SymbolicConstant specifying how the image in the viewport is rendered. Possible values
-        are WIREFRAME, HIDDEN, and SHADED. The default value is WIREFRAME.
-    displayGroup: DisplayGroup
-        A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object specifying the current display group :py:class:`~.an`d referring to :py:class:`~.an` object in
-        the **displayGroups** member of Session.
-    displayGroupInstances: dict[str, DisplayGroupInstance]
-        A repository of :py:class:`~abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance` objects.
-    engineeringFeatureOptions: EngineeringFeatureDisplayOptions
-        An :py:class:`~abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions` object.
-    geometryOptions: GeometryDisplayOptions
-        A :py:class:`~abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions` object.
-    meshOptions: MeshDisplayOptions
-        A :py:class:`~abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions` object.
-
     Notes
     -----
     This object can be accessed by:

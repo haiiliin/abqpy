@@ -10,41 +10,6 @@ class TemperatureBCState(BoundaryConditionState):
     The TemperatureBCState object has no constructor or methods.
     The TemperatureBCState object is derived from the BoundaryConditionState object.
 
-    Attributes
-    ----------
-    magnitude: float
-        A Float specifying the temperature magnitude.
-    magnitudeState: SymbolicConstant
-        A SymbolicConstant specifying the propagation state of the temperature magnitude.
-        Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    dofState: SymbolicConstant
-        A SymbolicConstant specifying the propagation state of the **dof** member. Possible values
-        are SET and UNCHANGED.
-    dof: int
-        A tuple of Ints specifying the degrees of freedom to which the boundary condition is
-        applied.
-    amplitudeState: SymbolicConstant
-        A SymbolicConstant specifying the propagation state of the amplitude reference. Possible
-        values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    status: SymbolicConstant
-        A SymbolicConstant specifying the propagation state of the :py:class:`~abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState` object. Possible values are:
-        
-        - NOT_YET_ACTIVE
-        - CREATED
-        - PROPAGATED
-        - MODIFIED
-        - DEACTIVATED
-        - NO_LONGER_ACTIVE
-        - TYPE_NOT_APPLICABLE
-        - INSTANCE_NOT_APPLICABLE
-        - PROPAGATED_FROM_BASE_STATE
-        - MODIFIED_FROM_BASE_STATE
-        - DEACTIVATED_FROM_BASE_STATE
-        - BUILT_INTO_MODES
-    amplitude: str
-        A String specifying the name of the amplitude reference. The String is empty if the
-        boundary condition has no amplitude reference.
-
     Notes
     -----
     This object can be accessed by:

@@ -6,25 +6,6 @@ class AdaptivityIteration:
     """The AdaptivityIteration object contains information about a given iteration of the
     varying topology adaptivity process (adaptive remeshing).
 
-    Attributes
-    ----------
-    ruleResults: dict[str, RuleResult]
-        A repository of :py:class:`~abaqus.Adaptivity.RuleResult.RuleResult` objects specifying the calculated results from sizing
-        functions corresponding to the :py:class:`~abaqus.Adaptivity.RemeshingRule.RemeshingRule` objects for this iteration of an adaptivity
-        process.
-    iteration
-        An Int specifying the sequence number for this iteration in the adaptivity process.
-    jobName
-        A String specifying the name of the job that was run for this iteration.
-    modelName
-        A String specifying the name of the model that was analyzed and remeshed in this
-        iteration.
-    odbPath
-        A String specifying the path to the ODB file that was created for this iteration.
-    remeshingErrors
-        An Int specifying the number of part instances which generated errors while remeshing
-        the model in this iteration of the adaptivity process.
-
     Notes
     -----
     This object can be accessed by:

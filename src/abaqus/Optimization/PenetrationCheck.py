@@ -8,20 +8,6 @@ class PenetrationCheck(GeometricRestriction):
     The PenetrationCheck object is derived from the GeometricRestriction object.
     This page discusses:
 
-    Attributes
-    ----------
-    name
-        A String specifying the geometric restriction repository key.
-    penetrationCheckRegion
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the penetration check region.
-    region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
-        When used with a TopologyTask, there is no default value. When used with a ShapeTask,
-        the default value is MODEL.
-    presumeFeasibleRegionAtStart
-        A Boolean specifying whether to ignore the geometric restriction in the first design
-        cycle. The default value is ON.
-
     Notes
     -----
     This object can be accessed by:

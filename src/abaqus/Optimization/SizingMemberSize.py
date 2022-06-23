@@ -6,15 +6,6 @@ class SizingMemberSize(GeometricRestriction):
     """The SizingMemberSize object defines a sizing member size geometric restriction.
     The SizingMemberSize object is derived from the GeometricRestriction object.
 
-    Attributes
-    ----------
-    name
-        A String specifying the geometric restriction repository key.
-    region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
-    minWidth
-        A Float specifying the min width.
-
     Notes
     -----
     This object can be accessed by:

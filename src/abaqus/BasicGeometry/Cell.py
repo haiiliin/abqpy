@@ -4,22 +4,6 @@ from abaqusConstants import *
 class Cell:
     """Cells are volumetric regions of geometry.
 
-    Attributes
-    ----------
-    index: int
-        An Int specifying the index of the cell in the CellArray.
-    isReferenceRep: Boolean
-        A Boolean specifying whether the cell belongs to the reference representation of the
-        Part or Instance.
-    pointOn: float
-        A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point located on
-        the cell.
-    featureName: float
-        A tuple of Floats specifying the name of the feature that created this cell.
-    instanceName: float
-        A tuple of Floats specifying the name of the part instance for this cell (if
-        applicable).
-
     Notes
     -----
     This object can be accessed by:

@@ -9,22 +9,6 @@ class ConnectorForce(Load):
     """The ConnectorForce object defines a connector force.
     The ConnectorForce object is derived from the Load object.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the load repository key.
-    fastenerName: str
-        A String specifying the name of the assembled fastener to which the load will be
-        applied. This argument is not valid when **region** is specified. When this argument is
-        specified, **fastenerSetName** must also be specified. The default value is an empty
-        string.
-    fastenerSetName: str
-        A String specifying the assembled fastener template model set to which the load will be
-        applied. This argument is not valid when **region** is specified. When this argument is
-        specified, **fastenerName** must also be specified. The default value is an empty string.
-    region: Region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
-
     Notes
     -----
     This object can be accessed by:

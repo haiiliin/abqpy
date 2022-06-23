@@ -11,38 +11,6 @@ class ConnectorPotential:
     for damage evolution), there are two ConnectorPotential constructors associated with
     that behavior—IniPotential and EvoPotential.
 
-    Attributes
-    ----------
-    derivedComponent: DerivedComponent
-        A :py:class:`~abaqus.Connector.DerivedComponent.DerivedComponent` object specifying the :py:class:`~abaqus.Connector.DerivedComponent.DerivedComponent` used in the contribution. This
-        argument is applicable only if **componentStyle=DERIVED_COMPONENT**.
-    componentStyle
-        A SymbolicConstant specifying whether a component number or the name of the
-        DerivedComponent object will be used in the contribution. Possible values are
-        COMPONENT_NUMBER and DERIVED_COMPONENT. The default value is COMPONENT_NUMBER.
-    componentNumber
-        An Int specifying the component number used in the contribution. This argument is
-        applicable only if **componentStyle** = COMPONENT_NUMBER. Possible values are 1 ≤≤
-        **componentNumber** ≤≤ 6. Only available components can be specified. The default value is
-        0.
-    sign
-        A SymbolicConstant specifying the sign of the contribution. Possible values are POSITIVE
-        and NEGATIVE. The default value is POSITIVE.
-    scaleFactor
-        A Float specifying the scaling factor for the contribution. The default value is 1.0.
-    positiveExponent
-        A Float specifying the positive exponent for the contribution. The default value is
-        2.0.This argument is ignored if the potential operator of the invoking behavior option
-        is set to MAXIMUM.
-    shiftFactor
-        A Float specifying the shift factor for the contribution. The default value is 0.0.
-    hFunction
-        A SymbolicConstant specifying the H function of the contribution: either absolute value,
-        Macauley bracket, or the identity function. Possible values are ABS, MACAULEY, and
-        IDENTITY. The default value is ABS.The value of IDENTITY can be used only if
-        **positiveExponent** = 1.0 and the potential exponent of the invoking behavior option is
-        also 1.0 (i.e., the potential operator of the invoking behavior option must be SUM).
-
     Notes
     -----
     This object can be accessed by:

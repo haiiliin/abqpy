@@ -5,19 +5,6 @@ class InputFile:
     """The InputFile object is used to store the definitions in an Abaqus input file. InputFile
     objects can be created using the methods described in this section.
 
-    Attributes
-    ----------
-    file: str
-        A String specifying the source file name of the Abaqus input file.
-    directory: str
-        A String specifying the directory where the input file is located.
-    includes: tuple
-        A sequence of Strings specifying any additional input files included in the specified
-        input file.
-    missingIncludes: tuple
-        A sequence of Strings for input files included in the specified input file that could
-        not be located.
-
     Notes
     -----
     This object can be accessed by:

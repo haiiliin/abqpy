@@ -1,15 +1,6 @@
 class EventSeriesType:
     """The EventSeriesType object is used to define a type of event in a process.
 
-    Attributes
-    ----------
-    name
-        A String specifying the repository key.
-    createStepName
-        A string specifying the step name.
-    fields
-        A String array specifying fields. The default value is an empty array.
-
     Notes
     -----
     This object can be accessed by:

@@ -5,11 +5,6 @@ from .OdbDataFrameArray import OdbDataFrameArray
 class OdbDataStep:
     """The OdbDataStep object.
 
-    Attributes
-    ----------
-    frames: OdbDataFrameArray
-        An :py:class:`~abaqus.PlotOptions.OdbDataFrameArray.OdbDataFrameArray` object specifying the list of frames. The list is read-only.
-
     Notes
     -----
     This object can be accessed by:

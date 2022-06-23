@@ -2,15 +2,6 @@ class TransverseShearShell:
     """The TransverseShearShell object defines the transverse shear stiffness properties of a
     shell section.
 
-    Attributes
-    ----------
-    k11
-        A Float specifying the shear stiffness of the section in the first direction.
-    k22
-        A Float specifying the shear stiffness of the section in the second direction.
-    k12
-        A Float specifying the coupling term in the shear stiffness of the section.
-
     Notes
     -----
     This object can be accessed by:

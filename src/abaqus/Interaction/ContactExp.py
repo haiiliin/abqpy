@@ -16,36 +16,6 @@ class ContactExp(Interaction):
     contact in an Abaqus/Explicit analysis.
     The ContactExp object is derived from the Interaction object.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the repository key.
-    globalSmoothing: Boolean
-        A Boolean specifying whether surface smoothing (geometric correction) is automatically
-        applied to all eligible surfaces. The default value is ON.
-    includedPairs: RegionPairs
-        A :py:class:`~abaqus.Interaction.RegionPairs.RegionPairs` object specifying the domain pairs included in contact.
-    excludedPairs: RegionPairs
-        A :py:class:`~abaqus.Interaction.RegionPairs.RegionPairs` object specifying the domain pairs excluded from contact.
-    contactPropertyAssignments: ContactPropertyAssignment
-        A :py:class:`~abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment` object specifying the contact property assignments in the
-        contact domain.
-    surfaceThicknessAssignments: SurfaceThicknessAssignment
-        A :py:class:`~abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment` object specifying the surface thickness assignments in the
-        contact domain.
-    surfaceOffsetAssignments: SurfaceOffsetAssignment
-        A :py:class:`~abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment` object specifying the surface offset fraction assignments in
-        the contact domain.
-    surfaceFeatureAssignments: SurfaceFeatureAssignment
-        A :py:class:`~abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment` object specifying the surface feature angle assignments in
-        the contact domain.
-    smoothingAssignments: SmoothingAssignment
-        A :py:class:`~abaqus.Interaction.SmoothingAssignment.SmoothingAssignment` object specifying the surface smoothing assignments in the contact
-        domain.
-    mainSecondaryAssignments: MainSecondaryAssignment
-        A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
-        contact domain.
-
     Notes
     -----
     This object can be accessed by:

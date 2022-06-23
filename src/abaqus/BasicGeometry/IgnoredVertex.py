@@ -2,13 +2,6 @@ class IgnoredVertex:
     """An :py:class:`~abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex` object is a point region of the geometry that was abstracted away by a
     virtual topology feature.
 
-    Attributes
-    ----------
-    index: int
-        An Int specifying the index of the IgnoredVertex in the IgnoredVertexArray.
-    pointOn: float
-        A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the vertex.
-
     Notes
     -----
     This object can be accessed by:

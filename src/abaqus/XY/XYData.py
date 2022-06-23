@@ -21,47 +21,6 @@ class XYData:
     they are not used anymore. Temporary XYData objects are also created as a result of math
     operations found in the abaqusMath module.
 
-    Attributes
-    ----------
-    sourceType: SymbolicConstant
-        A SymbolicConstant specifying the source type of the :py:class:`~abaqus.XY.XYData.XYData` object. Possible values are
-        FROM_ODB, FROM_KEYBOARD, FROM_ASCII_FILE, FROM_OPERATION, and FROM_USER_DEFINED.
-    fileName: str
-        A String specifying the source file name of the :py:class:`~abaqus.XY.XYData.XYData` object.
-    description: str
-        A String specifying the complete description of the :py:class:`~abaqus.XY.XYData.XYData` object.
-    data
-        A sequence of pairs of Floats specifying the **X - Y** data pairs.
-    name
-        The repository key. If the name is not supplied while creating the XYData object using
-        xyPlot.XYData, a default name in the form _temp#_ is generated and the XYData object is
-        temporary. (This argument is required if the method is accessed from the session
-        object.)
-    sourceDescription
-        A String specifying the source of the **X - Y** data (e.g., “Entered from keyboard”, “Taken
-        from ASCII file”, “Read from an ODB”, etc.). The default value is an empty string.
-    contentDescription
-        A String specifying the content of the **X - Y** data (e.g., “field 1 vs. field 2”). The
-        default value is an empty string.
-    positionDescription
-        A String specifying additional information about the **X - Y** data (e.g., “for whole
-        model”). The default value is an empty string.
-    legendLabel
-        A String specifying the label to be used in the legend. The default value is the name of
-        the XYData object.
-    xValuesLabel
-        A String specifying the label for the X-values. This value may be overridden if the
-        **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
-    yValuesLabel
-        A String specifying the label for the Y-values. This value may be overridden if the
-        **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
-    axis1QuantityType
-        A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the X -axis1-
-        values.
-    axis2QuantityType
-        A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the Y -axis2-
-        values.
-
     Notes
     -----
     This object can be accessed by:

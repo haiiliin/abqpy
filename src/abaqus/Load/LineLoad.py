@@ -9,23 +9,6 @@ class LineLoad(Load):
     """The LineLoad object stores the data of an applied line load.
     The LineLoad object is derived from the Load object.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the load repository key.
-    distributionType: SymbolicConstant
-        A SymbolicConstant specifying how the load is distributed spatially. Possible values are
-        UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
-    system: SymbolicConstant
-        A SymbolicConstant specifying whether the load is applied in a global or the beam local
-        frame of reference. Possible values are GLOBAL and LOCAL. The default value is GLOBAL.
-    field: str
-        A String specifying the name of the :py:class:`~abaqus.Field.AnalyticalField.AnalyticalField` object associated with this load.
-        The **field** argument applies only when **distributionType=FIELD**. The default value is an
-        empty string.
-    region: Region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
-
     Notes
     -----
     This object can be accessed by:

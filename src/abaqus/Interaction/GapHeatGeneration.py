@@ -2,15 +2,6 @@ class GapHeatGeneration:
     """The GapHeatGeneration object specifies heat generation for a contact interaction
     property.
 
-    Attributes
-    ----------
-    conversionFraction: float
-        A Float specifying the fraction of dissipated energy caused by friction or electric
-        currents that is converted to heat. The default value is 1.0.
-    secondaryFraction: float
-        A Float specifying the fraction of converted heat distributed to the secondary surface.
-        The default value is 0.5.
-
     Notes
     -----
     This object can be accessed by:

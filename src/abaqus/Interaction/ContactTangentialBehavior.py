@@ -5,49 +5,6 @@ class ContactTangentialBehavior:
     """The ContactTangentialBehavior object specifies tangential behavior for a contact
     interaction property.
 
-    Attributes
-    ----------
-    formulation: SymbolicConstant
-        A SymbolicConstant specifying the friction formulation. Possible values are
-        FRICTIONLESS, PENALTY, EXPONENTIAL_DECAY, ROUGH, LAGRANGE, and USER_DEFINED. The default
-        value is FRICTIONLESS.
-    directionality: SymbolicConstant
-        A SymbolicConstant specifying the directionality of the friction. Possible values are
-        ISOTROPIC and ANISOTROPIC. The default value is ISOTROPIC.
-    slipRateDependency: Boolean
-        A Boolean specifying whether the data depend on slip rate. The default value is OFF.
-    pressureDependency: Boolean
-        A Boolean specifying whether the data depend on contact pressure. The default value is
-        OFF.
-    temperatureDependency: Boolean
-        A Boolean specifying whether the data depend on temperature. The default value is OFF.
-    dependencies: int
-        An Int specifying the number of field variables. The default value is 0.
-    exponentialDecayDefinition: SymbolicConstant
-        A SymbolicConstant specifying the exponential decay definition. Possible values are
-        COEFFICIENTS and TEST_DATA. The default value is COEFFICIENTS.
-    shearStressLimit: float
-        None or a Float specifying the shear stress limit. If **shearStressLimit=None**, there is
-        no upper limit. The default value is None.
-    maximumElasticSlip: SymbolicConstant
-        A SymbolicConstant specifying what the maximum elastic slip will be. Possible values are
-        FRACTION and ABSOLUTE_DISTANCE. The default value is FRACTION.
-    fraction: float
-        A Float specifying the fraction of a characteristic surface dimension. The default value
-        is 0.0.
-    absoluteDistance: float
-        A Float specifying the absolute distance. The default value is 0.0.
-    elasticSlipStiffness: float
-        None or a Float specifying the elastic slip stiffness. If **elasticSlipStiffness=None**,
-        there is no upper limit. The default value is None.
-    nStateDependentVars: int
-        An Int specifying the number of state-dependent variables. The default value is 0.
-    useProperties: Boolean
-        A Boolean specifying whether property values will be used. The default value is OFF.
-    table: float
-        A tuple of tuples of Floats specifying tangential behavior. The items in the table data
-        are described below.
-
     Notes
     -----
     This object can be accessed by:

@@ -1,21 +1,6 @@
 class DataSet:
     """The DataSetobject specifies material test data.
 
-    Attributes
-    ----------
-    name
-        A String specifying the name of the new dataset.
-    data
-        A sequence of pairs of Floats specifying data set type pairs. Possible values are for
-        stress/strain, force/displacement, or transverse strain/axial strain pairs.
-    type
-        A String specifying the type of the new dataset. Values can be "STRESS/STRAIN",
-        "FORCE/DISPLACEMENT", or "AXIALSTRAIN/TRANSVERSESTRAIN". The default value is
-        "STRESS/STRAIN".
-    form
-        A String specifying the form of the new dataset. Values can be "NOMINAL" or "TRUE". The
-        default value is "NOMINAl".
-
     Notes
     -----
     This object can be accessed by:

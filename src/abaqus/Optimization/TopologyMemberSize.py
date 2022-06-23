@@ -7,25 +7,6 @@ class TopologyMemberSize(GeometricRestriction):
     """The TopologyMemberSize object defines a topology member size geometric restriction.
     The TopologyMemberSize object is derived from the GeometricRestriction object.
 
-    Attributes
-    ----------
-    name
-        A String specifying the geometric restriction repository key.
-    region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
-        When used with a TopologyTask, there is no default value. When used with a ShapeTask,
-        the default value is MODEL.
-    maxThickness
-        A Float specifying the maximum thickness. The default value is 0.0.
-    minThickness
-        A Float specifying the minimum thickness. The default value is 0.0.
-    separation
-        A Float specifying the minimum gap. The default value is 0.0.
-    sizeRestriction
-        A SymbolicConstant specifying whether to restrict the minimum or maximum thickness or an
-        envelope of both. Possible values are ENVELOPE, MAXIMUM, and MINIMUM. The default value
-        is MINIMUM.
-
     Notes
     -----
     This object can be accessed by:

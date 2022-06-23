@@ -2,11 +2,6 @@ class Profile:
     """The Profile object defines the geometrical properties of a beam cross-section. Profile
     is an abstract base type.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the repository key.
-
     Notes
     -----
     This object can be accessed by:

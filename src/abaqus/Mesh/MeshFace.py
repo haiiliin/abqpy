@@ -3,13 +3,6 @@ class MeshFace:
     MeshFace object can be accessed via a MeshFaceArray or a repository on a part or part
     instance.
 
-    Attributes
-    ----------
-    label: int
-        An Int specifying an Int specifying the element label.
-    face: int
-        An Int specifying a symbolic constant specifying the side of the element.
-
     Notes
     -----
     This object can be accessed by:

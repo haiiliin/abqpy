@@ -9,33 +9,6 @@ class ConnVelocityBC(BoundaryCondition):
     """The ConnVelocityBC object stores the data for a connector velocity boundary condition.
     The ConnVelocityBC object is derived from the BoundaryCondition object.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the boundary condition repository key.
-    distributionType: SymbolicConstant
-        A SymbolicConstant specifying how the boundary condition is distributed spatially.
-        Possible values are UNIFORM and USER_DEFINED. The default value is UNIFORM.
-    fastenerName: str
-        A String specifying the name of the assembled fastener to which the boundary condition
-        will be applied. This argument is not valid when **region** is specified. When this
-        argument is specified, **fastenerSetName** must also be specified. The default value is an
-        empty string.
-    fastenerSetName: str
-        A String specifying the assembled fastener template model set to which the boundary
-        condition will be applied. This argument is not valid when **region** is specified. When
-        this argument is specified, **fastenerName** must also be specified. The default value is
-        an empty string.
-    category: SymbolicConstant
-        A SymbolicConstant specifying the category of the boundary condition. Possible values
-        are MECHANICAL and THERMAL.
-    region: Region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
-    localCsys: str
-        None or a :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the boundary
-        condition's degrees of freedom. If **localCsys=None**, the degrees of freedom are defined
-        in the global coordinate system. The default value is None.
-
     Notes
     -----
     This object can be accessed by:

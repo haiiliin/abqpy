@@ -6,20 +6,6 @@ class ExpressionField(AnalyticalField):
     from a user-supplied mathematical expression.
     The ExpressionField object is derived from the AnalyticalField object.
 
-    Attributes
-    ----------
-    name
-        A String specifying the repository key.
-    expression
-        A String specifying the Python expression to evaluate in space. Variables are X, Y, and
-        Z; R, Th, and Z; or R, Th, and P based on the selected coordinate system.
-    localCsys
-        None or a DatumCsys object specifying the local coordinate system of the field. If
-        **localCsys** = None, the field is defined in the global coordinate system. The default
-        value is None.
-    description
-        A String specifying the description of the field. The default value is an empty string.
-
     Notes
     -----
     This object can be accessed by:

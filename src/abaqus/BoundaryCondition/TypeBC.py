@@ -8,24 +8,6 @@ class TypeBC(BoundaryCondition):
     that are commonly used in stress/displacement analyses.
     The TypeBC object is derived from the BoundaryCondition object.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the boundary condition repository key.
-    buckleCase: SymbolicConstant
-        A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE
-        analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and
-        PERTURBATION_AND_BUCKLING. The default value is NOT_APPLICABLE.
-    category: SymbolicConstant
-        A SymbolicConstant specifying the category of the boundary condition. Possible values
-        are MECHANICAL and THERMAL.
-    region: Region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
-    localCsys: str
-        None or a :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the boundary
-        condition's degrees of freedom. If **localCsys=None**, the degrees of freedom are defined
-        in the global coordinate system. The default value is None.
-
     Notes
     -----
     This object can be accessed by:

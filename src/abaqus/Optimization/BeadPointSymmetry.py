@@ -6,17 +6,6 @@ class BeadPointSymmetry(GeometricRestriction):
     """The BeadPointSymmetry object defines a point symmetry geometric restriction.
     The BeadPointSymmetry object is derived from the GeometricRestriction object.
 
-    Attributes
-    ----------
-    name
-        A String specifying the geometric restriction repository key.
-    region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
-    csys
-        None or a DatumCsys object specifying the position of the symmetry point defined as the
-        origin of a local coordinate system. If **csys** = None, the global coordinate system is
-        used. When this member is queried, it returns an Int. The default value is None.
-
     Notes
     -----
     This object can be accessed by:

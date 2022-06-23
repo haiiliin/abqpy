@@ -8,23 +8,6 @@ from .HistoryPoint import HistoryPoint
 class HistoryRegion:
     """The HistoryRegion object contains history data for a single location in the model.
 
-    Attributes
-    ----------
-    position: SymbolicConstant
-        A SymbolicConstant specifying the position of the history output. Possible values are
-        NODAL, INTEGRATION_POINT, WHOLE_ELEMENT, WHOLE_REGION, and WHOLE_MODEL.
-    historyOutputs: dict[str, HistoryOutput]
-        A repository of :py:class:`~abaqus.Odb.HistoryOutput.HistoryOutput` objects.
-    name
-        A String specifying the name of the HistoryRegion object.
-    description
-        A String specifying the description of the HistoryRegion object.
-    point
-        A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object specifying the point to which the history data refer.
-    loadCase
-        None or an OdbLoadCase object specifying the load case associated with the HistoryRegion
-        object. The default value is None.
-
     Notes
     -----
     This object can be accessed by:

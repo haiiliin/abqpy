@@ -7,17 +7,6 @@ class SmoothStepAmplitude(Amplitude):
     one data point to another.
     The SmoothStepAmplitude object is derived from the Amplitude object.
 
-    Attributes
-    ----------
-    name
-        A String specifying the repository key.
-    data
-        A sequence of pairs of Floats specifying time/frequency and amplitude pairs. Possible
-        values for time/frequency are positive numbers.
-    timeSpan
-        A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
-        and TOTAL. The default value is STEP.
-
     Notes
     -----
     This object can be accessed by:

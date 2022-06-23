@@ -5,24 +5,6 @@ from .DataSet import DataSet
 class Behavior:
     """The Behavior object specifies the method used for calibrating a material.
 
-    Attributes
-    ----------
-    modelName: str
-        A string specifying the name of the model to which the behavior belongs.
-    calibrationName: str
-        A string specifying the name of calibration to which the behavior belongs.
-    biAxialAllName: str
-        A String specifying the name of the dataset containing all the raw data in the test data
-        file. Only valid if the behavior is of type FeFpBehavior
-    uniAxialAllName: str
-        A String specifying the name of the dataset containing all the raw data in the test data
-        file. Only valid if the behavior is of type FeFpBehavior
-    name
-        A String specifying the name of the new behavior.
-    typeName
-        A String specifying the type of the new Behavior. Values can be "ElasIsoBehavior",
-        "ElasPlasIsoBehavior", "FeFpBehavior", or a user plug-in behavior type.
-
     Notes
     -----
     This object can be accessed by:

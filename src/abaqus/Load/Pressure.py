@@ -7,21 +7,6 @@ class Pressure(Load):
     """The Pressure object defines a pressure load.
     The Pressure object is derived from the Load object.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the load repository key.
-    distributionType: SymbolicConstant
-        A SymbolicConstant specifying how the pressure is distributed spatially. Possible values
-        are UNIFORM, USER_DEFINED, FIELD, HYDROSTATIC, STAGNATION, VISCOUS, TOTAL_FORCE, and
-        DISCRETE_FIELD. The default value is UNIFORM.
-    field: str
-        A String specifying the name of the AnalyticalField or :py:class:`~abaqus.Field.DiscreteField.DiscreteField` object associated
-        with this load. The **field** argument applies only when **distributionType=FIELD** or
-        **distributionType=DISCRETE_FIELD**. The default value is an empty string.
-    region: Region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
-
     Notes
     -----
     This object can be accessed by:

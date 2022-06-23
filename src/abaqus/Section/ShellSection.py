@@ -8,13 +8,6 @@ class ShellSection(Section):
     constructor and no methods or members.
     The ShellSection object is derived from the Section object.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the repository key.
-    transverseShear: TransverseShearShell
-        A :py:class:`~abaqus.Section.TransverseShearShell.TransverseShearShell` object specifying the transverse shear stiffness properties.
-
     Notes
     -----
     This object can be accessed by:

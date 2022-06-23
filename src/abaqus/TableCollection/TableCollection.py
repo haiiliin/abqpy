@@ -7,15 +7,6 @@ class TableCollection:
     """A TableCollection is an object used to define the containers that encapsulate the
     ParameterTable and PropertyTable objects.
 
-    Attributes
-    ----------
-    propertyTables: dict[str, PropertyTable]
-        A repository of the :py:class:`~abaqus.TableCollection.PropertyTable.PropertyTable` object.
-    parameterTables: dict[str, ParameterTable]
-        A repository of the :py:class:`~abaqus.TableCollection.ParameterTable.ParameterTable` object
-    dataTables: list[DataTable]
-        sequence of the :py:class:`~abaqus.Field.DataTable.DataTable` object
-
     Notes
     -----
     This object can be accessed by:

@@ -5,11 +5,6 @@ class CaeGuiPrefs:
     """The CaeGuiPrefs object contains the details of the graphical preferences in a
     guiPreferences section of the abaqus_2021.gpr file.
 
-    Attributes
-    ----------
-    fileName: str
-        A String specifying the path to the preferences file.
-
     Notes
     -----
     This object can be accessed by:

@@ -10,20 +10,6 @@ class AdaptiveMeshConstraint:
     the AdaptiveMeshConstraint object are common to all objects derived from the
     AdaptiveMeshConstraint object.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the adaptive mesh constraint repository key.
-    category: SymbolicConstant
-        A SymbolicConstant specifying the category of the adaptive mesh constraint. Possible
-        values are MECHANICAL and THERMAL.
-    region: Region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the adaptive mesh constraint is applied.
-    localCsys: DatumCsys
-        None or a :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the adaptive mesh
-        constraint's degrees of freedom. If **localCsys=None**, the degrees of freedom are defined
-        in the global coordinate system. The default value is None.
-
     Notes
     -----
     This object can be accessed by:

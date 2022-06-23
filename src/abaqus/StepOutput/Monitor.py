@@ -4,34 +4,6 @@ from abaqusConstants import *
 class Monitor:
     """The Monitor object defines a degree of freedom to monitor.
 
-    Attributes
-    ----------
-    node
-        A String specifying the name of the region to be monitored.
-    dof
-        A SymbolicConstant specifying the degree of freedom to be monitored at the node.
-        Possible values are:
-    
-        - U1
-        - U2
-        - U3
-        - UR1
-        - UR2
-        - UR3
-        - WARP
-        - FLUID_PRESSURE
-        - ELECTRICAL_POTENTIAL
-        - NT11
-        - NT30
-        - NN11
-        - NN30
-        
-        The NT identifiers are not available for mass diffusion. The NN identifiers are
-        available only for mass diffusion.
-    frequency
-        An Int specifying the output frequency in increments. This argument is valid only for an
-        Abaqus/Standard analysis.
-
     Notes
     -----
     This object can be accessed by:

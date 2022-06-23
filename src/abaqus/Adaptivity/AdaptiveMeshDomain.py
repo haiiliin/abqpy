@@ -5,22 +5,6 @@ class AdaptiveMeshDomain:
     """The AdaptiveMeshDomain object defines the region and controls that govern an Arbitrary
     Lagrangian Eularian (ALE) style adaptive smoothing mesh domain.
 
-    Attributes
-    ----------
-    region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the adaptive mesh domain is applied.
-    controls
-        A String specifying the name of an AdaptiveMeshControl object.
-    frequency
-        An Int specifying the frequency in increments at which adaptive meshing will be
-        performed. The default value is 10.
-    initialMeshSweeps
-        An Int specifying the number of mesh sweeps to be performed at the beginning of the
-        first step in which this adaptive mesh definition is active. The default value is 5.
-    meshSweeps
-        An Int specifying the number of mesh sweeps to be performed in each adaptive mesh
-        increment. The default value is 1.
-
     Notes
     -----
     This object can be accessed by:

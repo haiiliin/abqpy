@@ -5,13 +5,6 @@ class ArbitraryProfile(Profile):
     """The ArbitraryProfile object defines the properties of an arbitrary profile.
     The ArbitraryProfile object is derived from the Profile object.
 
-    Attributes
-    ----------
-    name
-        A String specifying the repository key.
-    table
-        A sequence of sequences of Floats specifying the items described below.
-
     Notes
     -----
     This object can be accessed by:

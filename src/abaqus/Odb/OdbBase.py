@@ -17,37 +17,6 @@ from ..Section.Section import Section
 class OdbBase:
     """The Odb object is the in-memory representation of an output database (ODB) file.
 
-    Attributes
-    ----------
-    isReadOnly: Boolean
-        A Boolean specifying whether the output database was opened with read-only access.
-    amplitudes: dict[str, Amplitude]
-        A repository of :py:class:`~abaqus.Amplitude.Amplitude.Amplitude` objects.
-    filters: dict[str, Filter]
-        A repository of :py:class:`~abaqus.Filter.Filter.Filter` objects.
-    rootAssembly: OdbAssembly
-        An :py:class:`~abaqus.Odb.OdbAssembly.OdbAssembly` object.
-    jobData: JobData
-        A :py:class:`~abaqus.Odb.JobData.JobData` object.
-    parts: dict[str, OdbPart]
-        A repository of :py:class:`~abaqus.Odb.OdbPart.OdbPart` objects.
-    materials: dict[str, Material]
-        A repository of :py:class:`~abaqus.Material.Material.Material` objects.
-    steps: dict[str, OdbStep]
-        A repository of :py:class:`~abaqus.Odb.OdbStep.OdbStep` objects.
-    sections: dict[str, Section]
-        A repository of :py:class:`~abaqus.Section.Section.Section` objects.
-    sectionCategories: dict[str, SectionCategory]
-        A repository of :py:class:`~abaqus.Odb.SectionCategory.SectionCategory` objects.
-    sectorDefinition: SectorDefinition
-        A :py:class:`~abaqus.Odb.SectorDefinition.SectorDefinition` object.
-    userData: UserData
-        A :py:class:`~abaqus.Odb.UserData.UserData` object.
-    customData: RepositorySupport
-        A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` object.
-    profiles: dict[str, Profile]
-        A repository of :py:class:`~abaqus.BeamSectionProfile.Profile.Profile` objects.
-
     Notes
     -----
     This object can be accessed by:

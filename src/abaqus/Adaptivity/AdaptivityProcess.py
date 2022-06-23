@@ -7,28 +7,6 @@ class AdaptivityProcess:
     """The AdaptivityProcess object defines a series of jobs that will be submitted for
     analysis. Abaqus performs adaptive remeshing between each job.
 
-    Attributes
-    ----------
-    status: SymbolicConstant
-        A SymbolicConstant specifying the status of the adaptivity process. Possible values are
-        SUBMITTED, RUNNING, ABORTED, TERMINATED, and COMPLETED.
-    iterations: dict[int, AdaptivityIteration]
-        A repository of :py:class:`~abaqus.Adaptivity.:py:class:`~abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration`.:py:class:`~abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration`` objects specifying the :py:class:`~abaqus.Adaptivity.:py:class:`~abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration`.:py:class:`~abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration`` objects
-        received during running the adaptivity process.
-    name
-        A String specifying the name of the Adaptivity Process.
-    job
-        A :py:class:`~abaqus.Job.ModelJob.ModelJob` object specifying a job to be used as the prototype for all analysis jobs run
-        by the adaptivity process.
-    maxIterations
-        An Int specifying the maximum number of analysis jobs that will be run by the Adaptivity
-        Process. Abaqus performs adaptive remeshing between each analysis. The default value is
-        3.
-    jobPrefix
-        A String specifying the prefix to use for jobs created by the adaptivity process. An
-        empty string indicates that the name of the adaptivity process should be used. The
-        default value is an empty string.
-
     Notes
     -----
     This object can be accessed by:

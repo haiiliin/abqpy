@@ -14,29 +14,6 @@ class DefaultOdbDisplay:
     """The DefaultOdbDisplay object is a limited-functionality version of the OdbDisplay
     object.
 
-    Attributes
-    ----------
-    basicOptions: BasicOptions
-        A :py:class:`~abaqus.PlotOptions.BasicOptions.BasicOptions` object.
-    commonOptions: CommonOptions
-        A :py:class:`~abaqus.OdbDisplay.CommonOptions.CommonOptions` object.
-    contourOptions: ContourOptions
-        A :py:class:`~abaqus.OdbDisplay.ContourOptions.ContourOptions` object.
-    displayBodyOptions: DisplayBodyOptions
-        A :py:class:`~abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions` object.
-    freeBodyOptions: FreeBodyOptions
-        A :py:class:`~abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions` object.
-    streamOptions: StreamOptions
-        A :py:class:`~abaqus.PlotOptions.StreamOptions.StreamOptions` object.
-    materialOrientationOptions: OrientationOptions
-        An :py:class:`~abaqus.OdbDisplay.OrientationOptions.OrientationOptions` object.
-    superimposeOptions: SuperimposeOptions
-        A :py:class:`~abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions` object.
-    symbolOptions: SymbolOptions
-        A :py:class:`~abaqus.OdbDisplay.SymbolOptions.SymbolOptions` object.
-    viewCutOptions: ViewCutOptions
-        A :py:class:`~abaqus.PlotOptions.ViewCutOptions.ViewCutOptions` object.
-
     Notes
     -----
     This object can be accessed by:

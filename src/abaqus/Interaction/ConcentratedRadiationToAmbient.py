@@ -8,42 +8,6 @@ class ConcentratedRadiationToAmbient(Interaction):
     and its nonreflecting environment.
     The ConcentratedRadiationToAmbient object is derived from the Interaction object.
 
-    Attributes
-    ----------
-    name
-        A String specifying the repository key.
-    createStepName
-        A String specifying the name of the step in which the ConcentratedRadiationToAmbient
-        object is created.
-    region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the concentrated radiation interaction is
-        applied. The interaction is applied to each node in the region.
-    ambientTemperature
-        A Float specifying the reference ambient temperature, θ0θ0.
-    ambientTemperatureAmp
-        A String specifying the name of the Amplitude object that gives the variation of the
-        ambient temperature with time.Note:Use None in an Abaqus/Standard analysis to specify
-        that the reference ambient temperature is applied immediately at the beginning of the
-        step or linearly over the step. Use None in an Abaqus/Explicit analysis to specify that
-        the reference ambient temperature is applied throughout the step.
-    emissivity
-        A Float specifying the emissivity, ϵϵ.
-    nodalArea
-        A Float specifying the area associated with the node where the concentrated radiation
-        interaction is applied. The default value is 1.0.
-    explicitRegionType
-        A SymbolicConstant specifying how the concentrated radiation is applied to the boundary
-        of an adaptive mesh domain. Possible values are LAGRANGIAN, SLIDING, and EULERIAN. The
-        default value is LAGRANGIAN.Note:*explicitRegionType* applies only during an
-        Abaqus/Explicit analysis.
-    field
-        A String specifying the name of the AnalyticalField object associated with this
-        interaction. The **field** argument applies only when **distributionType** = ANALYTICAL_FIELD.
-        The default value is an empty string.
-    distributionType
-        A SymbolicConstant specifying how the radiation is defined. Possible values are UNIFORM
-        and ANALYTICAL_FIELD. The default value is UNIFORM.
-
     Notes
     -----
     This object can be accessed by:

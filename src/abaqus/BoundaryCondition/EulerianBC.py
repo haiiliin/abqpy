@@ -7,30 +7,6 @@ class EulerianBC(BoundaryCondition):
     """The EulerianBC object stores the data for an Eulerian boundary condition.
     The EulerianBC object is derived from the BoundaryCondition object.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the boundary condition repository key.
-    definition: SymbolicConstant
-        A SymbolicConstant specifying the flow conditions to be defined. Possible values are
-        INFLOW, OUTFLOW, and BOTH. The default value is INFLOW.
-    inflowType: SymbolicConstant
-        A SymbolicConstant specifying the control of material flow into the Eulerian domain.
-        Possible values are FREE, NONE, and VOID. The default value is FREE.
-    outflowType: SymbolicConstant
-        A SymbolicConstant specifying the control of flow of material out of the Eulerian
-        domain. Possible values are ZERO_PRESSURE, FREE, NON_REFLECTING, and EQUILIBRIUM. The
-        default value is ZERO_PRESSURE.
-    category: SymbolicConstant
-        A SymbolicConstant specifying the category of the boundary condition. Possible values
-        are MECHANICAL and THERMAL.
-    region: Region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
-    localCsys: str
-        None or a :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the boundary
-        condition's degrees of freedom. If **localCsys=None**, the degrees of freedom are defined
-        in the global coordinate system. The default value is None.
-
     Notes
     -----
     This object can be accessed by:

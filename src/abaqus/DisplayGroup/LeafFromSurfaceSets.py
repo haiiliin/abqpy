@@ -9,15 +9,6 @@ class LeafFromSurfaceSets(Leaf):
     commands.
     The LeafFromSurfaceSets object is derived from the Leaf object.
 
-    Attributes
-    ----------
-    leafType: SymbolicConstant
-        A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-        DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
-    surfaceSets
-        A sequence of Strings specifying surface sets, or a String specifying a single surface
-        set.
-
     Notes
     -----
     This object can be accessed by:

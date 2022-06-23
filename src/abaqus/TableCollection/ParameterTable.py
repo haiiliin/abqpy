@@ -9,13 +9,6 @@ class ParameterTable:
     contents of ParameterColumn. After DataTable is instantiated, making changes to
     ParameterColumn may lead to data corruption.
 
-    Attributes
-    ----------
-    columns: ParameterColumnArray
-        A ParameterColumnArray specifying all the columns in the ParameterTable.
-    dataTables: str
-        A DataTableArray specifying all the dataTables in the ParameterTable.
-
     Notes
     -----
     This object can be accessed by:

@@ -6,15 +6,6 @@ class AnimationController:
     the viewports. The AnimationController object has no constructor. Abaqus creates the
     **animationController** member when it creates the Session object.
 
-    Attributes
-    ----------
-    animationType: SymbolicConstant
-        A SymbolicConstant specifying the type of movie to play. Possible values are
-        SCALE_FACTOR, HARMONIC, TIME_HISTORY, and NONE. The default value is NONE.
-    state: SymbolicConstant
-        A SymbolicConstant specifying the state of the animation controller. Possible values are
-        STOP and PLAY. The default value is STOP.
-
     Notes
     -----
     This object can be accessed by:

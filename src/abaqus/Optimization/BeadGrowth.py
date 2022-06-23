@@ -6,19 +6,6 @@ class BeadGrowth(GeometricRestriction):
     """The BeadGrowth object defines a growth geometric restriction.
     The BeadGrowth object is derived from the GeometricRestriction object.
 
-    Attributes
-    ----------
-    name
-        A String specifying the geometric restriction repository key.
-    region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
-    beadGrowth
-        A Float specifying the maximum optimization displacement in the growth direction. Either
-        **beadGrowth** or **shrink** or both must be specified. The default value is 0.0.
-    shrink
-        A Float specifying the maximum optimization displacement in the shrink direction. Either
-        **beadGrowth** or **shrink** or both must be specified The default value is 0.0.
-
     Notes
     -----
     This object can be accessed by:

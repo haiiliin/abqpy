@@ -5,16 +5,6 @@ class TrussSection(Section):
     """The TrussSection object defines the properties of a truss section.
     The TrussSection object is derived from the Section object.
 
-    Attributes
-    ----------
-    name
-        A String specifying the repository key.
-    material
-        A String specifying the name of the material.
-    area
-        A Float specifying the cross-sectional area for the section. Possible values are **area**
-        >> 0. The default value is 1.0.
-
     Notes
     -----
     This object can be accessed by:

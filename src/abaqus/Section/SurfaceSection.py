@@ -7,19 +7,6 @@ class SurfaceSection(Section):
     """The SurfaceSection object defines the properties of a surface section.
     The SurfaceSection object is derived from the Section object.
 
-    Attributes
-    ----------
-    rebarLayers: RebarLayers
-        A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object specifying reinforcement properties.
-    name
-        A String specifying the repository key.
-    useDensity
-        A Boolean specifying whether or not to use the value of **density**. The default value is
-        OFF.
-    density
-        A Float specifying the value of density to apply to this section. The default value is
-        0.0.
-
     Notes
     -----
     This object can be accessed by:

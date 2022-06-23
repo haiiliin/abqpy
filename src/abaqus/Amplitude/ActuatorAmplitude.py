@@ -6,14 +6,6 @@ class ActuatorAmplitude(Amplitude):
     """The ActuatorAmplitude object defines an actuator amplitude curve.
     The ActuatorAmplitude object is derived from the Amplitude object.
 
-    Attributes
-    ----------
-    name
-        A String specifying the repository key.
-    timeSpan
-        A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
-        and TOTAL. The default value is STEP.
-
     Notes
     -----
     This object can be accessed by:

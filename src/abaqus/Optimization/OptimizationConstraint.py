@@ -5,20 +5,6 @@ class OptimizationConstraint:
     """The OptimizationConstraint object constrains an optimization from making changes to the
     topology of the model.
 
-    Attributes
-    ----------
-    name
-        A String specifying the optimization constraint repository key.
-    designResponse
-        A String specifying the name of the design response to constrain.
-    restrictionValue
-        A Float specifying the value to which the design response should be constrained.
-    restrictionMethod
-        A SymbolicConstant specifying the method used to constrain the design response. Possible
-        values are ABSOLUTE_EQUAL, ABSOLUTE_GREATER_THAN_EQUAL, ABSOLUTE_LESS_THAN_EQUAL,
-        RELATIVE_EQUAL, RELATIVE_GREATER_THAN_EQUAL, and RELATIVE_LESS_THAN_EQUAL. The default
-        value is ABSOLUTE_EQUAL.
-
     Notes
     -----
     This object can be accessed by:

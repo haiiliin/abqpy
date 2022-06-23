@@ -10,17 +10,6 @@ class SectionBase:
     constructor. The methods and members of the Section object are common to all objects
     derived from the Section.
 
-    Attributes
-    ----------
-    behaviorOptions: ConnectorBehaviorOptionArray
-        A :py:class:`~abaqus.Connector.ConnectorBehaviorOptionArray.ConnectorBehaviorOptionArray` object.
-    name: str
-        A String specifying the repository key.
-    beamTransverseShear: TransverseShearBeam
-        A :py:class:`~abaqus.Section.TransverseShearBeam.TransverseShearBeam` object.
-    transverseShear: TransverseShearShell
-        A :py:class:`~abaqus.Section.TransverseShearShell.TransverseShearShell` object.
-
     Notes
     -----
     This object can be accessed by:

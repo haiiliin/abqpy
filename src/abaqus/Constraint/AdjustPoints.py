@@ -7,18 +7,6 @@ class AdjustPoints(Constraint):
     """The AdjustPoints constraint object is used to adjust points (nodes) to a surface.
     The AdjustPoints object is derived from the ConstrainedSketchConstraint object.
 
-    Attributes
-    ----------
-    suppressed: Boolean
-        A Boolean specifying whether the constraint is suppressed or not. The default value is
-        OFF.
-    name
-        A String specifying the constraint repository key.
-    surface
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the surface to which the **controlPoints** are adjusted.
-    controlPoints
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the constraint control points.
-
     Notes
     -----
     This object can be accessed by:

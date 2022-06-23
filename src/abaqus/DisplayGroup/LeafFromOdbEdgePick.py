@@ -9,12 +9,6 @@ class LeafFromOdbEdgePick(Leaf):
     commands.
     The LeafFromOdbEdgePick object is derived from the Leaf object.
 
-    Attributes
-    ----------
-    leafType: SymbolicConstant
-        A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-        DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
-
     Notes
     -----
     This object can be accessed by:

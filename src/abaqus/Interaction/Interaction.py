@@ -10,11 +10,6 @@ class Interaction:
     - delete
     The methods are described below.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the repository key.
-
     Notes
     -----
     This object can be accessed by:

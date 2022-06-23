@@ -8,19 +8,6 @@ class MeshElement:
     refers to the internal numbering of the element repository. The index does not refer to
     the element label.
 
-    Attributes
-    ----------
-    label: int
-        An Int specifying the element label.
-    type: SymbolicConstant
-        A SymbolicConstant specifying the Abaqus element code.
-    instanceName: str
-        A String specifying the name of the part instance that owns this element.
-    connectivity: int
-        A tuple of Ints specifying the internal node indices that define the nodal connectivity.
-        It is important to note the difference with :py:class:`~abaqus.Odb.OdbMeshElement.OdbMeshElement` object of ODB where the
-        connectivity is node labels instead of node indices.
-
     Notes
     -----
     This object can be accessed by:

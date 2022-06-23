@@ -8,25 +8,6 @@ from ..UtilityAndView.View import View
 class Layer:
     """Objects can be superimposed by displaying them in different layers of a viewport.
 
-    Attributes
-    ----------
-    displayedObject: Displayable
-        A :py:class:`~abaqus.Canvas.Displayable.Displayable` object specifying :py:class:`~.the` object to be displayed. The :py:class:`~abaqus.Canvas.Displayable.Displayable` type is an
-        abstract generalization. The concrete possible types are Part, Assembly,
-        ConstrainedSketch, Odb, or XYPlot.
-    view: View
-        A :py:class:`~abaqus.UtilityAndView.View.View` object specifying :py:class:`~.the` object that controls viewing of :py:class:`~.the` layer.
-    odbDisplay: OdbDisplay
-        An :py:class:`~abaqus.:py:class:`~abaqus.Odb.Odb.Odb`Display.:py:class:`~abaqus.Odb.Odb.Odb`Display.:py:class:`~abaqus.Odb.Odb.Odb`Display` object specifying the display options for the :py:class:`~abaqus.Odb.Odb.Odb` object.
-    partDisplay: PartDisplayOptions
-        A :py:class:`~abaqus.DisplayOptions.:py:class:`~abaqus.Part.Part.Part`DisplayOptions.:py:class:`~abaqus.Part.Part.Part`DisplayOptions` object specifying the display options for the :py:class:`~abaqus.Part.Part.Part` object.
-    assemblyDisplay: AssemblyDisplayOptions
-        An :py:class:`~abaqus.DisplayOptions.:py:class:`~abaqus.Assembly.Assembly.Assembly`DisplayOptions.:py:class:`~abaqus.Assembly.Assembly.Assembly`DisplayOptions` object specifying the display options for the :py:class:`~abaqus.Assembly.Assembly.Assembly` object.
-    name
-        A String specifying the repository key.
-    copyViewName
-        A String specifying the name of the layer to copy.
-
     Notes
     -----
     This object can be accessed by:

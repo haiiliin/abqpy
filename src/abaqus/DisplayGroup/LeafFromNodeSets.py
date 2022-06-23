@@ -9,14 +9,6 @@ class LeafFromNodeSets(Leaf):
     commands.
     The LeafFromNodeSets object is derived from the Leaf object.
 
-    Attributes
-    ----------
-    leafType: SymbolicConstant
-        A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-        DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
-    nodeSets
-        A sequence of Strings specifying node sets or a String specifying a single node set.
-
     Notes
     -----
     This object can be accessed by:

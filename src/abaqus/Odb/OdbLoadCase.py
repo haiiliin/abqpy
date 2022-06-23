@@ -1,11 +1,6 @@
 class OdbLoadCase:
     """The OdbLoadCase object describes a load case.
 
-    Attributes
-    ----------
-    name
-        A String specifying the name of the OdbLoadCase object.
-
     Notes
     -----
     This object can be accessed by:

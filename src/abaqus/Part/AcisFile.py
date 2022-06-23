@@ -4,11 +4,6 @@ from abaqusConstants import *
 class AcisFile:
     """The AcisFile object is a file object used to open ACIS-, STEP-, and IGES-format files.
 
-    Attributes
-    ----------
-    numberOfParts: int
-        An Int specifying :py:class:`~.the` number of parts in :py:class:`~.the` object.
-
     Notes
     -----
     This object can be accessed by:

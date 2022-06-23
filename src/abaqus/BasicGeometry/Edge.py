@@ -4,22 +4,6 @@ from abaqusConstants import *
 class Edge:
     """Edges are one-dimensional regions of geometry.
 
-    Attributes
-    ----------
-    index: int
-        An Int specifying the index of the edge in the EdgeArray.
-    isReferenceRep: Boolean
-        A Boolean specifying whether the edge belongs to the reference representation of the
-        Part or Instance.
-    pointOn: float
-        A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point located on
-        the edge.
-    featureName: float
-        A tuple of Floats specifying the name of the feature that created this edge.
-    instanceName: float
-        A tuple of Floats specifying the name of the part instance for this edge (if
-        applicable).
-
     Notes
     -----
     This object can be accessed by:

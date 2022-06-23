@@ -3,13 +3,6 @@ class Field:
     no explicit constructor. The methods and members of the Field object are common to all
     objects derived from the Field.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the repository key.
-    description: str
-        A String specifying the description of the field. The default value is an empty string.
-
     Notes
     -----
     This object can be accessed by:

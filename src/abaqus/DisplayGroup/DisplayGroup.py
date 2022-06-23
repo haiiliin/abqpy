@@ -6,24 +6,6 @@ class DisplayGroup:
     """DisplayGroup objects are used to select a subset of the entities displayed in the
     viewport.
 
-    Attributes
-    ----------
-    canUndo: Boolean
-        A Boolean specifying whether Undo is possible or not.
-    canRedo: Boolean
-        A Boolean specifying whether Redo is possible or not.
-    name: str
-        A String specifying the repository key.
-    module: SymbolicConstant
-        A SymbolicConstant specifying the module in which the display group has been created.
-        The possible values are PART, ASSEMBLY, PART_ASSEMBLY, ODB, and ALL.
-    modelName: str
-        A String specifying the name of the model to which the display group belongs when the
-        module is part- or assembly-based.
-    partName: str
-        A String specifying the name of the part to which the display group belongs when the
-        module is part-based.
-
     Notes
     -----
     This object can be accessed by:

@@ -6,18 +6,6 @@ class XFEMCrackGrowth(Interaction):
     """The XFEMCrackGrowth object defines the enrichment activation state for an XFEMCrack.
     The XFEMCrackGrowth object is derived from the Interaction object.
 
-    Attributes
-    ----------
-    name
-        A String specifying the repository key.
-    createStepName
-        A String specifying the name of the step in which the XFEMCrackGrowth object is created.
-    crackName
-        A String specifying the XFEMCrack object associated with this interaction.
-    allowGrowth
-        A Boolean specifying whether the crack is allowed to grow (propagate) during this
-        analysis step. The default value is ON.
-
     Notes
     -----
     This object can be accessed by:

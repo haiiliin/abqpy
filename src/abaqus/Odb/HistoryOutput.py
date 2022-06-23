@@ -7,27 +7,6 @@ class HistoryOutput:
     """The HistoryOutput object contains the history output at a point for the specified
     variable.
 
-    Attributes
-    ----------
-    data: float
-        A tuple of pairs of Floats specifying the pairs (**frameValue**, **value**) where
-        **frameValue** is either time, frequency, or mode and **value** is the value of the
-        specified variable at **frameValue**. (This value depends on the type of the variable.)
-    conjugateData: float
-        A tuple of pairs of Floats specifying the imaginary portion of a specified complex
-        variable at each frame value (time, frequency, or mode). The pairs have the form
-        (**frameValue**, **value**).
-    name
-        A String specifying the output variable name.
-    description
-        A String specifying the output variable.
-    type
-        A SymbolicConstant specifying the output type. Only SCALAR is currently supported.
-    validInvariants
-        A sequence of SymbolicConstants specifying which invariants should be calculated for
-        this field. Possible values are MAGNITUDE, MISES, TRESCA, PRESS, INV3, MAX_PRINCIPAL,
-        MID_PRINCIPAL, and MIN_PRINCIPAL. The default value is an empty sequence.
-
     Notes
     -----
     This object can be accessed by:

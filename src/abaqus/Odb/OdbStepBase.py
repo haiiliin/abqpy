@@ -11,39 +11,6 @@ from .OdbLoadCase import OdbLoadCase
 class OdbStepBase:
     """An output database contains the same steps of the model database that originated it.
 
-    Attributes
-    ----------
-    number: int
-        An Int specifying the step number.
-    nlgeom: Boolean
-        A Boolean specifying whether geometric nonlinearity can occur in this step.
-    mass: float
-        A Float specifying the current value of the mass of the model. This does not include the
-        mass of the acoustic media if any present.
-    acousticMass: float
-        A Float specifying the current value of the mass of the acoustic media of the model.
-    frames: OdbFrameArray
-        An :py:class:`~abaqus.Odb.OdbFrameArray.OdbFrameArray` object.
-    historyRegions: dict[str, HistoryRegion]
-        A repository of :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` objects.
-    loadCases: dict[str, OdbLoadCase]
-        A repository of :py:class:`~abaqus.Odb.OdbLoadCase.OdbLoadCase` objects.
-    massCenter: float
-        A tuple of Floats specifying the coordinates of the center of mass.
-    inertiaAboutCenter: float
-        A tuple of Floats specifying the moments and products of inertia about the center of
-        mass. For 3-D models inertia quantities are written in the following order: I(XX),
-        I(YY), I(ZZ), I(XY), I(XZ), and I(YZ). For 2-D models only I(ZZ) and I(XY) are
-        outputted.
-    inertiaAboutOrigin: float
-        A tuple of Floats specifying the moments and products of inertia about the origin of the
-        global coordinate system. For 3-D models inertia quantities are written in the following
-        order: I(XX), I(YY), I(ZZ), I(XY), I(XZ), and I(YZ). For 2-D models only I(ZZ) and I(XY)
-        are outputted.
-    acousticMassCenter: float
-        A tuple of Floats specifying the coordinates of the center of mass of the acoustic
-        media.
-
     Notes
     -----
     This object can be accessed by:

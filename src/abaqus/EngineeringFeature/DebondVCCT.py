@@ -7,25 +7,6 @@ class DebondVCCT(Crack):
     VCCT.
     The DebondVCCT object is derived from the Crack object.
 
-    Attributes
-    ----------
-    suppressed: Boolean
-        A Boolean specifying whether the crack is suppressed or not. The default value is OFF.
-    name
-        A String specifying the repository key.
-    initiationStep
-        A String specifying the name of the step in which the DebondVCCT object is created.
-    surfToSurfInteraction
-        A String specifying the name of the SurfaceToSurfaceContactStd object that defines the
-        surface to surface interaction for the crack surfaces.
-    debondingForceAmplitude
-        A SymbolicConstant specifying whether the debond force between the two surfaces at the
-        crack tip is to be released immediately or gradually during the following increment
-        after debonding. Possible values are STEP and RAMP. The default value is STEP.
-    printToDATFrequency
-        An Int specifying the frequency at which output will be printed to DAT file. The default
-        value is 1.
-
     Notes
     -----
     This object can be accessed by:

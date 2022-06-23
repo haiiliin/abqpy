@@ -9,53 +9,6 @@ class SurfaceTraction(Load):
     """The SurfaceTraction object defines surface traction on a region.
     The SurfaceTraction object is derived from the Load object.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the load repository key.
-    angle: float
-        A Float specifying an additional rotation of **directionVector** about an axis. The
-        default value is 0.0.
-    axis: SymbolicConstant
-        A SymbolicConstant specifying the axis about which to apply an additional rotation of
-        **directionVector**. Possible values are AXIS_1, AXIS_2, and AXIS_3. The default value is
-        AXIS_1.
-    follower: Boolean
-        A Boolean specifying whether the direction of the force changes with rotation. The
-        default value is ON.This parameter may be modified only if **traction** is GENERAL. You
-        should provide the **follower** argument only if it is valid for the specified step.
-    resultant: Boolean
-        A Boolean specifying whether the to maintain a constant resultant force by defining
-        traction per unit undeformed area. If **resultant** is OFF, traction is defined per unit
-        deformed area. The default value is OFF.You should provide the **resultant** argument only
-        if it is valid for the specified step.
-    traction: SymbolicConstant
-        A SymbolicConstant specifying how to apply surface traction. Possible values are SHEAR
-        and GENERAL. The default value is SHEAR.
-    distributionType: SymbolicConstant
-        A SymbolicConstant specifying how the surface traction is distributed spatially.
-        Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
-    field: str
-        A String specifying the name of the :py:class:`~abaqus.Field.AnalyticalField.AnalyticalField` object associated with this load.
-        The **field** argument applies only when **distributionType=FIELD**. The default value is an
-        empty string.
-    userCsys: str
-        A String specifying a CSYS defined by a user-subroutine. If **userCsys=None**, the degrees
-        of freedom are defined in the global coordinate system or by the **localCsys** parameter
-        if defined. The default value is "None".
-    localCsys: int
-        None or a :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the load's degrees
-        of freedom. If **localCsys=None**, the degrees of freedom are defined in the global
-        coordinate system or by the **userCsys** parameter if defined. When this member is
-        queried, it returns an Int. The default value is None.
-    directionVector: tuple
-        A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the direction of the load. Instead of
-        through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates. If
-        **traction** is SHEAR, then **directionVector** will be projected onto the region surface.
-        This parameter is available only if **traction** is GENERAL or SHEAR.
-    region: Region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
-
     Notes
     -----
     This object can be accessed by:

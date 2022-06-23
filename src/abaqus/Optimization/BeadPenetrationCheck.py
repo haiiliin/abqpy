@@ -6,15 +6,6 @@ class BeadPenetrationCheck(GeometricRestriction):
     """The BeadPenetrationCheck object defines a penetration check geometric restriction.
     The BeadPenetrationCheck object is derived from the GeometricRestriction object.
 
-    Attributes
-    ----------
-    name
-        A String specifying the geometric restriction repository key.
-    beadPenetrationCheckRegion
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the penetration check region.
-    region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
-
     Notes
     -----
     This object can be accessed by:

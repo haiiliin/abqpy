@@ -1,14 +1,6 @@
 class Color:
     """The Color object contains the RGB definition of a system color.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the name of the color.
-    rgb: float
-        A tuple of three Floats specifying the RGB value of the color. The Float values must be
-        between 0.0 and 1.0.
-
     Notes
     -----
     This object can be accessed by:

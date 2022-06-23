@@ -7,15 +7,6 @@ class DefaultPlot:
     object attributes are used whenever an XYPlot object is created. A :py:class:`~abaqus.XY.DefaultPlot.DefaultPlot` object is
     automatically created when opening a session.
 
-    Attributes
-    ----------
-    area: Area
-        An :py:class:`~abaqus.XY.Area.Area` object specifying an :py:class:`~abaqus.XY.Area.Area` used to hold on to the default display properties for
-        the plot area.
-    title: Title
-        A :py:class:`~abaqus.XY.:py:class:`~abaqus.XY.Title.Title`.:py:class:`~abaqus.XY.Title.Title`` object specifying a :py:class:`~abaqus.XY.:py:class:`~abaqus.XY.Title.Title`.:py:class:`~abaqus.XY.Title.Title`` object used to hold on to the default properties of
-        the XY-Plot title.
-
     Notes
     -----
     This object can be accessed by:

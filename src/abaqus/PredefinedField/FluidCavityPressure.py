@@ -7,17 +7,6 @@ class FluidCavityPressure(PredefinedField):
     base class*region* argument can not be specifed with this object.
     The FluidCavityPressure object is derived from the PredefinedField object.
 
-    Attributes
-    ----------
-    region: Region
-        A :py:class:`~abaqus.Region.Region.Region` object on which the **fluidCavity** interaction is specified.
-    name
-        A String specifying the repository key.
-    fluidCavity
-        A String specifying the name of a Fluid Cavity Interaction.
-    fluidPressure
-        A Float specifying the initial fluid pressure.
-
     Notes
     -----
     This object can be accessed by:

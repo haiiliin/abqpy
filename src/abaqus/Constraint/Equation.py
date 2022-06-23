@@ -7,17 +7,6 @@ class Equation(Constraint):
     freedom.
     The Equation object is derived from the ConstrainedSketchConstraint object.
 
-    Attributes
-    ----------
-    suppressed: Boolean
-        A Boolean specifying whether the constraint is suppressed or not. The default value is
-        OFF.
-    name
-        A String specifying the constraint repository key.
-    terms
-        A sequence of (Float, String, Int, Int) sequences specifying a coefficient, Set name,
-        degree of freedom, and coordinate system ID. The coordinate system ID is optional.
-
     Notes
     -----
     This object can be accessed by:

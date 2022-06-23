@@ -8,20 +8,6 @@ class SurfacePoreFluid(Load):
     region.
     The SurfacePoreFluid object is derived from the Load object.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the load repository key.
-    distributionType: SymbolicConstant
-        A SymbolicConstant specifying whether the load is uniform. Possible values are UNIFORM,
-        USER_DEFINED, and FIELD. The default value is UNIFORM.
-    field: str
-        A String specifying the name of the :py:class:`~abaqus.Field.AnalyticalField.AnalyticalField` object associated with this load.
-        The **field** argument applies only when **distributionType=FIELD**. The default value is an
-        empty string.
-    region: Region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
-
     Notes
     -----
     This object can be accessed by:

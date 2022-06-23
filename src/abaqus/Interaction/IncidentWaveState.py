@@ -9,13 +9,6 @@ class IncidentWaveState(InteractionState):
     The IncidentWaveState object has no constructor or methods.
     The IncidentWaveState object is derived from the InteractionState object.
 
-    Attributes
-    ----------
-    status: SymbolicConstant
-        A SymbolicConstant specifying the propagation state of the :py:class:`~abaqus.Interaction.InteractionState.InteractionState` object.
-        Possible values
-        are:NOT_YET_ACTIVECREATEDPROPAGATEDMODIFIEDDEACTIVATEDNO_LONGER_ACTIVETYPE_NOT_APPLICABLEINSTANCE_NOT_APPLICABLEBUILT_INTO_BASE_STATE
-
     Notes
     -----
     This object can be accessed by:

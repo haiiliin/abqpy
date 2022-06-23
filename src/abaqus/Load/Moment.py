@@ -9,29 +9,6 @@ class Moment(Load):
     """The Moment object stores the data for a moment.
     The Moment object is derived from the Load object.
 
-    Attributes
-    ----------
-    name: str
-        A String specifying the load repository key.
-    distributionType: SymbolicConstant
-        A SymbolicConstant specifying how the load is distributed spatially. Possible values are
-        UNIFORM and FIELD. The default value is UNIFORM.
-    follower: Boolean
-        A Boolean specifying whether the direction of the force rotates with the rotation of the
-        node. You should provide the **follower** argument only if it is valid for the specified
-        step. The default value is OFF.
-    localCsys: int
-        None or a :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the ID of the Datum coordinate system used as the
-        local coordinate system of the load. If **localCsys=None**, the load is defined in the
-        global coordinate system. When this member is queried, it returns an Int. The default
-        value is None.
-    field: str
-        A String specifying the name of the :py:class:`~abaqus.Field.AnalyticalField.AnalyticalField` object associated with this load.
-        The **field** argument applies only when **distributionType=FIELD**. The default value is an
-        empty string.
-    region: Region
-        A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
-
     Notes
     -----
     This object can be accessed by:
