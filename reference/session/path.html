@@ -694,7 +694,7 @@ queried node.</p>
 <h3>Path<a class="headerlink" href="#path" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.Path.Path">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expression</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">circleDefinition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numSegments</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radialAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startRadius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endRadius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PathAndProbe/Path.py#L6-L128"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.Path.Path" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expression</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">circleDefinition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numSegments</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radialAngle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startRadius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endRadius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/PathAndProbe/Path.py#L6-L251"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.Path.Path" title="Permalink to this definition">#</a></dt>
 <dd><p>The Path object defines a line through your model by specifying a series of nodes or
 points.</p>
 <p class="rubric">Notes</p>
@@ -703,12 +703,70 @@ points.</p>
 <span class="n">session</span><span class="o">.</span><span class="n">paths</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
+<dd class="field-odd"><dl>
 <dt><strong>coordinates: list[tuple[float]]</strong></dt><dd><p>If <strong>type=NODE_LIST</strong>, <strong>coordinates</strong> is a sequence of tuples of three Floats. This can be
 used as the value for the <strong>expression</strong> argument when creating a <a class="reference internal" href="#abaqus.PathAndProbe.Path.Path" title="abaqus.PathAndProbe.Path.Path"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a> object of <strong>type</strong> =
 POINT_LIST.</p>
+</dd>
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>type</strong></dt><dd><p>A SymbolicConstant specifying the type of path being created. Possible values are
+NODE_LIST, POINT_LIST, EDGE_LIST, CIRCUMFERENTIAL, and RADIAL.</p>
+</dd>
+<dt><strong>expression</strong></dt><dd><p>A sequence specifying the nodes or points that make up the path. The definition of the
+path expression depends on the <strong>type</strong> argument.</p>
+<ul class="simple">
+<li><p>If <strong>type</strong> = NODE_LIST, <strong>expression</strong> must be a sequence of sequences. Each inner sequence</p></li>
+</ul>
+<p>contains two items, the first item is a String specifying the name of a part instance,
+and the second item can be either a sequence of Ints or a sequence of Strings, each
+specifying a range of Ints.
+- If <strong>type</strong> = POINT_LIST, <strong>expression</strong> must be a sequence of tuples of three Floats,
+specifying the coordinates of each point.
+- If <strong>type</strong> = EDGE_LIST, <strong>expression</strong> must be a sequence of sequences. Each inner sequence
+contains two items, the first item is a String specifying the name of the part instance,
+and the second item is a sequence of tuples of four Ints that uniquely identify an
+element edge. The four Ints are:</p>
+<ol class="arabic simple">
+<li><p>The element label.</p></li>
+<li><p>The element face index (one-based).</p></li>
+<li><p>The face edge index (one-based).</p></li>
+</ol>
+<p>4. The edge direction. A positive number specifies that the edge direction runs from the
+edge start node to the edge end node. A negative number specifies the opposite.
+- When <strong>type</strong> = CIRCUMFERENTIAL or RADIAL, <strong>expression</strong> must be a sequence of three tuples
+of three Floats, specifying the coordinates of the points used to define a coordinate
+system.</p>
+</dd>
+<dt><strong>circleDefinition</strong></dt><dd><p>A SymbolicConstant specifying the method in which the circle is being defined. This
+argument is valid only when <strong>type</strong> = CIRCUMFERENTIAL or RADIAL. Possible values are
+ORIGIN_AXIS and POINT_ARC.When the value is ORIGIN_AXIS, the first two points in
+<strong>expression</strong> are points on the rotational axis and the third point lies on the x-axis.
+When the value is POINT_ARC, the three points in <strong>expression</strong> are points lying on the
+arc of the circle.</p>
+</dd>
+<dt><strong>numSegments</strong></dt><dd><p>An Int specifying the number of equal segments in the path. This argument is valid only
+when <strong>type</strong> = CIRCUMFERENTIAL or RADIAL.</p>
+</dd>
+<dt><strong>startAngle</strong></dt><dd><p>A Float specifying the start angle of the circumferential path. This argument is valid
+only when <strong>type</strong> = CIRCUMFERENTIAL.</p>
+</dd>
+<dt><strong>endAngle</strong></dt><dd><p>A Float specifying the end angle of the circumferential path. This argument is valid
+only when <strong>type</strong> = CIRCUMFERENTIAL.</p>
+</dd>
+<dt><strong>radius</strong></dt><dd><p>The SymbolicConstant CIRCLE_RADIUS or a Float specifying the radius of the
+circumferential path. This argument is valid only when <strong>type</strong> = CIRCUMFERENTIAL.</p>
+</dd>
+<dt><strong>radialAngle</strong></dt><dd><p>A Float specifying the angle between the radial path and the <strong>X</strong>-axis of the specified
+coordinate system. This argument is valid only when <strong>type</strong> = RADIAL.</p>
+</dd>
+<dt><strong>startRadius</strong></dt><dd><p>The SymbolicConstant CIRCLE_RADIUS or a Float specifying the start radius of the radial
+path. This argument is valid only when <strong>type</strong> = RADIAL.</p>
+</dd>
+<dt><strong>endRadius</strong></dt><dd><p>The SymbolicConstant CIRCLE_RADIUS or a Float specifying the end radius of the radial
+path. This argument is valid only when <strong>type</strong> = RADIAL.</p>
 </dd>
 </dl>
 </dd>

@@ -12737,7 +12737,7 @@ damage model for surface-based cohesive behavior or enriched cohesive behavior.<
 <h3>Ratios<a class="headerlink" href="#ratios" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Material.Ratios.Ratios">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Ratios</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temperatureDependency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dependencies</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Material/Ratios.py#L4-L77"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Material.Ratios.Ratios" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Ratios</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temperatureDependency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dependencies</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Material/Ratios.py#L4-L95"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Material.Ratios.Ratios" title="Permalink to this definition">#</a></dt>
 <dd><p>The Ratios object specifies ratios that define anisotropic swelling.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -12762,6 +12762,18 @@ damage model for surface-based cohesive behavior or enriched cohesive behavior.<
 <ul class="simple">
 <li><p>RATIOS</p></li>
 </ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>table</strong></dt><dd><p>A sequence of sequences of Floats specifying the items described below.</p>
+</dd>
+<dt><strong>temperatureDependency</strong></dt><dd><p>A Boolean specifying whether the data depend on temperature. The default value is OFF.</p>
+</dd>
+<dt><strong>dependencies</strong></dt><dd><p>An Int specifying the number of field variable dependencies. The default value is 0.</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -12778,7 +12790,7 @@ damage model for surface-based cohesive behavior or enriched cohesive behavior.<
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Material.Ratios.Ratios.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Material/Ratios.py#L70-L77"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Material.Ratios.Ratios.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Material/Ratios.py#L88-L95"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Material.Ratios.Ratios.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the Ratios object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises</dt>
@@ -12796,7 +12808,7 @@ damage model for surface-based cohesive behavior or enriched cohesive behavior.<
 <h3>Regularization<a class="headerlink" href="#regularization" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Material.Regularization.Regularization">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Regularization</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rtol</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strainRateRegularization</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'LOGARITHMIC'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Material/Regularization.py#L4-L66"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Material.Regularization.Regularization" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Regularization</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rtol</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strainRateRegularization</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'LOGARITHMIC'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Material/Regularization.py#L4-L85"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Material.Regularization.Regularization" title="Permalink to this definition">#</a></dt>
 <dd><p>The Regularization object defines the tolerance to be used for regularizing material
 data.</p>
 <p class="rubric">Notes</p>
@@ -12811,6 +12823,19 @@ data.</p>
 <ul class="simple">
 <li><p>DASHPOT</p></li>
 </ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>rtol</strong></dt><dd><p>A Float specifying the tolerance to be used for regularizing material data. The default
+value is 0.03.</p>
+</dd>
+<dt><strong>strainRateRegularization</strong></dt><dd><p>A SymbolicConstant specifying the form of regularization of strain-rate-dependent
+material data. Possible values are LOGARITHMIC and LINEAR. The default value is
+LOGARITHMIC.</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -12827,7 +12852,7 @@ data.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Material.Regularization.Regularization.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Material/Regularization.py#L59-L66"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Material.Regularization.Regularization.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Material/Regularization.py#L78-L85"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Material.Regularization.Regularization.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the Regularization object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises</dt>

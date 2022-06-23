@@ -1435,7 +1435,7 @@ located in another directory.</p>
 <h3>ArbitraryProfile<a class="headerlink" href="#arbitraryprofile" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ArbitraryProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/ArbitraryProfile.py#L4-L76"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ArbitraryProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/ArbitraryProfile.py#L4-L89"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile" title="Permalink to this definition">#</a></dt>
 <dd><p>The ArbitraryProfile object defines the properties of an arbitrary profile.
 The ArbitraryProfile object is derived from the Profile object.</p>
 <p class="rubric">Notes</p>
@@ -1462,6 +1462,16 @@ The first sequence in the table specifies the following:</p>
 <ul class="simple">
 <li><p>BEAM SECTION</p></li>
 </ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>table</strong></dt><dd><p>A sequence of sequences of Floats specifying the items described below.</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1478,7 +1488,7 @@ The first sequence in the table specifies the following:</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/ArbitraryProfile.py#L68-L76"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/ArbitraryProfile.py#L81-L89"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the ArbitraryProfile object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises</dt>
@@ -1496,7 +1506,7 @@ The first sequence in the table specifies the following:</p>
 <h3>BoxProfile<a class="headerlink" href="#boxprofile" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.BoxProfile.BoxProfile">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BoxProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uniformThickness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t4</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/BoxProfile.py#L5-L105"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.BoxProfile.BoxProfile" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BoxProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uniformThickness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t4</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/BoxProfile.py#L5-L160"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.BoxProfile.BoxProfile" title="Permalink to this definition">#</a></dt>
 <dd><p>The BoxProfile object defines the properties of a box profile.
 The BoxProfile object is derived from the Profile object.</p>
 <p class="rubric">Notes</p>
@@ -1511,6 +1521,34 @@ The BoxProfile object is derived from the Profile object.</p>
 <ul class="simple">
 <li><p>BEAM SECTION</p></li>
 </ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>a</strong></dt><dd><p>A Float specifying the <strong>a</strong> dimension of the box profile. For more information, see [Beam
+cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd>
+<dt><strong>b</strong></dt><dd><p>A Float specifying the <strong>b</strong> dimension of the box profile.</p>
+</dd>
+<dt><strong>uniformThickness</strong></dt><dd><p>A Boolean specifying whether the thickness is uniform.</p>
+</dd>
+<dt><strong>t1</strong></dt><dd><p>A Float specifying the uniform wall thickness if <strong>uniformThickness</strong> = ON, and the wall
+thickness of the first segment if <strong>uniformThickness</strong> = OFF.</p>
+</dd>
+<dt><strong>t2</strong></dt><dd><p>A Float specifying the wall thickness of the second segment. <strong>t2</strong> is required only when
+<strong>uniformThickness</strong> = OFF. The default value is 0.0.</p>
+</dd>
+<dt><strong>t3</strong></dt><dd><p>A Float specifying the wall thickness of the third segment. <strong>t3</strong> is required only when
+<strong>uniformThickness</strong> = OFF. The default value is 0.0.</p>
+</dd>
+<dt><strong>t4</strong></dt><dd><p>A Float specifying the wall thickness of the fourth segment. <strong>t4</strong> is required only when
+<strong>uniformThickness</strong> = OFF. The default value is 0.0.</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1527,7 +1565,7 @@ The BoxProfile object is derived from the Profile object.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.BoxProfile.BoxProfile.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t4</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/BoxProfile.py#L85-L105"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.BoxProfile.BoxProfile.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t4</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/BoxProfile.py#L140-L160"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.BoxProfile.BoxProfile.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the BoxProfile object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1558,7 +1596,7 @@ The BoxProfile object is derived from the Profile object.</p>
 <h3>CircularProfile<a class="headerlink" href="#circularprofile" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.CircularProfile.CircularProfile">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CircularProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/CircularProfile.py#L4-L66"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.CircularProfile.CircularProfile" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CircularProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/CircularProfile.py#L4-L83"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.CircularProfile.CircularProfile" title="Permalink to this definition">#</a></dt>
 <dd><p>The CircularProfile object defines the properties of a solid circular profile.
 The CircularProfile object is derived from the Profile object.</p>
 <p class="rubric">Notes</p>
@@ -1573,6 +1611,18 @@ The CircularProfile object is derived from the Profile object.</p>
 <ul class="simple">
 <li><p>BEAM SECTION</p></li>
 </ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>r</strong></dt><dd><p>A positive Float specifying the <strong>r</strong> dimension (outer radius) of the circular profile.
+For more information, see [Beam cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1589,7 +1639,7 @@ The CircularProfile object is derived from the Profile object.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.CircularProfile.CircularProfile.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/CircularProfile.py#L58-L66"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.CircularProfile.CircularProfile.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/CircularProfile.py#L75-L83"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.CircularProfile.CircularProfile.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the CircularProfile object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises</dt>
@@ -1607,7 +1657,7 @@ The CircularProfile object is derived from the Profile object.</p>
 <h3>GeneralizedProfile<a class="headerlink" href="#generalizedprofile" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">GeneralizedProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">area</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i11</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i12</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i22</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">j</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gammaO</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gammaW</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/GeneralizedProfile.py#L4-L87"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">GeneralizedProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">area</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i11</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i12</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i22</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">j</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gammaO</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gammaW</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/GeneralizedProfile.py#L4-L130"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile" title="Permalink to this definition">#</a></dt>
 <dd><p>The GeneralizedProfile object defines the properties of a profile via its area, moment
 of inertia, etc.
 The GeneralizedProfile object is derived from the Profile object.</p>
@@ -1623,6 +1673,28 @@ The GeneralizedProfile object is derived from the Profile object.</p>
 <ul class="simple">
 <li><p>BEAM GENERAL SECTION</p></li>
 </ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>area</strong></dt><dd><p>A Float specifying the cross-sectional area for the profile.</p>
+</dd>
+<dt><strong>i11</strong></dt><dd><p>A Float specifying the moment of inertia for bending about the 1-axis, I11I11.</p>
+</dd>
+<dt><strong>i12</strong></dt><dd><p>A Float specifying the moment of inertia for cross bending, I12I12.</p>
+</dd>
+<dt><strong>i22</strong></dt><dd><p>A Float specifying the moment of inertia for bending about the 2-axis, I22I22.</p>
+</dd>
+<dt><strong>j</strong></dt><dd><p>A Float specifying the torsional constant, JJ.</p>
+</dd>
+<dt><strong>gammaO</strong></dt><dd><p>A Float specifying the sectorial moment, Γ0Γ0.</p>
+</dd>
+<dt><strong>gammaW</strong></dt><dd><p>A Float specifying the warping constant, ΓWΓW.</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1639,7 +1711,7 @@ The GeneralizedProfile object is derived from the Profile object.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/GeneralizedProfile.py#L79-L87"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/GeneralizedProfile.py#L122-L130"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the GeneralizedProfile object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises</dt>
@@ -1657,7 +1729,7 @@ The GeneralizedProfile object is derived from the Profile object.</p>
 <h3>HexagonalProfile<a class="headerlink" href="#hexagonalprofile" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HexagonalProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/HexagonalProfile.py#L4-L69"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HexagonalProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/HexagonalProfile.py#L4-L93"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile" title="Permalink to this definition">#</a></dt>
 <dd><p>The HexagonalProfile object defines the properties of a hexagonal profile.
 The HexagonalProfile object is derived from the Profile object.</p>
 <p class="rubric">Notes</p>
@@ -1672,6 +1744,21 @@ The HexagonalProfile object is derived from the Profile object.</p>
 <ul class="simple">
 <li><p>BEAM SECTION</p></li>
 </ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>r</strong></dt><dd><p>A positive Float specifying the <strong>r</strong> dimension (outer radius) of the hexagonal profile.
+For more information, see [Beam cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd>
+<dt><strong>t</strong></dt><dd><p>A positive Float specifying the <strong>t</strong> dimension (wall thickness) of the hexagonal profile,
+<em>t &lt; (sqrt(3)/2)r</em>.</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1688,7 +1775,7 @@ The HexagonalProfile object is derived from the Profile object.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/HexagonalProfile.py#L61-L69"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/HexagonalProfile.py#L85-L93"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the HexagonalProfile object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises</dt>
@@ -1706,7 +1793,7 @@ The HexagonalProfile object is derived from the Profile object.</p>
 <h3>IProfile<a class="headerlink" href="#iprofile" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.IProfile.IProfile">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/IProfile.py#L4-L88"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.IProfile.IProfile" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/IProfile.py#L4-L135"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.IProfile.IProfile" title="Permalink to this definition">#</a></dt>
 <dd><p>The IProfile object defines the properties of an I profile.
 The IProfile object is derived from the Profile object.</p>
 <p class="rubric">Notes</p>
@@ -1721,6 +1808,30 @@ The IProfile object is derived from the Profile object.</p>
 <ul class="simple">
 <li><p>BEAM SECTION</p></li>
 </ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>l</strong></dt><dd><p>A Float specifying the <strong>l</strong> dimension (offset of 1-axis from the bottom flange surface)
+of the I profile. For more information, see [Beam cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd>
+<dt><strong>h</strong></dt><dd><p>A Float specifying the <strong>h</strong> dimension (height) of the I profile.</p>
+</dd>
+<dt><strong>b1</strong></dt><dd><p>A Float specifying the <strong>b1</strong> dimension (bottom flange width) of the I profile.</p>
+</dd>
+<dt><strong>b2</strong></dt><dd><p>A Float specifying the <strong>b2</strong> dimension (top flange width) of the I profile.</p>
+</dd>
+<dt><strong>t1</strong></dt><dd><p>A Float specifying the <strong>t1</strong> dimension (bottom flange thickness) of the I profile.</p>
+</dd>
+<dt><strong>t2</strong></dt><dd><p>A Float specifying the <strong>t2</strong> dimension (top flange thickness) of the I profile.</p>
+</dd>
+<dt><strong>t3</strong></dt><dd><p>A Float specifying the <strong>t3</strong> dimension (web thickness) of the I profile.</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1737,7 +1848,7 @@ The IProfile object is derived from the Profile object.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.IProfile.IProfile.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/IProfile.py#L80-L88"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.IProfile.IProfile.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/IProfile.py#L127-L135"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.IProfile.IProfile.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the IProfile object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises</dt>
@@ -1755,7 +1866,7 @@ The IProfile object is derived from the Profile object.</p>
 <h3>LProfile<a class="headerlink" href="#lprofile" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.LProfile.LProfile">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/LProfile.py#L4-L74"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.LProfile.LProfile" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/LProfile.py#L4-L110"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.LProfile.LProfile" title="Permalink to this definition">#</a></dt>
 <dd><p>The LProfile object defines the properties of a L profile.
 The LProfile object is derived from the Profile object.</p>
 <p class="rubric">Notes</p>
@@ -1770,6 +1881,26 @@ The LProfile object is derived from the Profile object.</p>
 <ul class="simple">
 <li><p>BEAM SECTION</p></li>
 </ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>a</strong></dt><dd><p>A positive Float specifying the <strong>a</strong> dimension (flange length) of the L profile. For more
+information, see [Beam cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd>
+<dt><strong>b</strong></dt><dd><p>A positive Float specifying the <strong>b</strong> dimension (flange length) of the L profile.</p>
+</dd>
+<dt><strong>t1</strong></dt><dd><p>A positive Float specifying the <strong>t1</strong> dimension (flange thickness) of the L profile (<em>t1
+&lt; b</em>).</p>
+</dd>
+<dt><strong>t2</strong></dt><dd><p>A positive Float specifying the <strong>t2</strong> dimension (flange thickness) of the L profile (<em>t2&lt;
+a</em>).</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1786,7 +1917,7 @@ The LProfile object is derived from the Profile object.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.LProfile.LProfile.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/LProfile.py#L66-L74"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.LProfile.LProfile.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/LProfile.py#L102-L110"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.LProfile.LProfile.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the LProfile object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises</dt>
@@ -1804,7 +1935,7 @@ The LProfile object is derived from the Profile object.</p>
 <h3>PipeProfile<a class="headerlink" href="#pipeprofile" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.PipeProfile.PipeProfile">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PipeProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/PipeProfile.py#L4-L68"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.PipeProfile.PipeProfile" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PipeProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/PipeProfile.py#L4-L90"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.PipeProfile.PipeProfile" title="Permalink to this definition">#</a></dt>
 <dd><p>The PipeProfile object defines the properties of a circular pipe profile.
 The PipeProfile object is derived from the Profile object.</p>
 <p class="rubric">Notes</p>
@@ -1819,6 +1950,20 @@ The PipeProfile object is derived from the Profile object.</p>
 <ul class="simple">
 <li><p>BEAM SECTION</p></li>
 </ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>r</strong></dt><dd><p>A Float specifying the outer radius of the pipe. For more information, see [Beam
+cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd>
+<dt><strong>t</strong></dt><dd><p>A Float specifying the wall thickness of the pipe.</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1835,7 +1980,7 @@ The PipeProfile object is derived from the Profile object.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.PipeProfile.PipeProfile.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/PipeProfile.py#L60-L68"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.PipeProfile.PipeProfile.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/PipeProfile.py#L82-L90"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.PipeProfile.PipeProfile.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the PipeProfile object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises</dt>
@@ -1853,7 +1998,7 @@ The PipeProfile object is derived from the Profile object.</p>
 <h3>RectangularProfile<a class="headerlink" href="#rectangularprofile" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RectangularProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/RectangularProfile.py#L4-L68"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RectangularProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/RectangularProfile.py#L4-L90"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile" title="Permalink to this definition">#</a></dt>
 <dd><p>The RectangularProfile object defines the properties of a solid rectangular profile.
 The RectangularProfile object is derived from the Profile object.</p>
 <p class="rubric">Notes</p>
@@ -1868,6 +2013,20 @@ The RectangularProfile object is derived from the Profile object.</p>
 <ul class="simple">
 <li><p>BEAM SECTION</p></li>
 </ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>a</strong></dt><dd><p>A positive Float specifying the <strong>a</strong> dimension of the rectangular profile. For more
+information, see [Beam cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd>
+<dt><strong>b</strong></dt><dd><p>A positive Float specifying the <strong>b</strong> dimension of the rectangular profile.</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1884,7 +2043,7 @@ The RectangularProfile object is derived from the Profile object.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/RectangularProfile.py#L60-L68"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/RectangularProfile.py#L82-L90"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the RectangularProfile object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises</dt>
@@ -1902,7 +2061,7 @@ The RectangularProfile object is derived from the Profile object.</p>
 <h3>TProfile<a class="headerlink" href="#tprofile" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.TProfile.TProfile">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tf</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tw</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/TProfile.py#L4-L77"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.TProfile.TProfile" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tf</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tw</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/TProfile.py#L4-L120"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.TProfile.TProfile" title="Permalink to this definition">#</a></dt>
 <dd><p>The TProfile object defines the properties of a T profile.
 The TProfile object is derived from the Profile object.</p>
 <p class="rubric">Notes</p>
@@ -1917,6 +2076,29 @@ The TProfile object is derived from the Profile object.</p>
 <ul class="simple">
 <li><p>BEAM SECTION</p></li>
 </ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>b</strong></dt><dd><p>A positive Float specifying the <strong>b</strong> dimension (flange width) of the T profile. For more
+information, see [Beam cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd>
+<dt><strong>h</strong></dt><dd><p>A positive Float specifying the <strong>h</strong> dimension (height) of the T profile.</p>
+</dd>
+<dt><strong>l</strong></dt><dd><p>A positive Float specifying the <strong>l</strong> dimension (offset of 1-axis from the edge of web) of
+the T profile.</p>
+</dd>
+<dt><strong>tf</strong></dt><dd><p>A positive Float specifying the <strong>tf</strong> dimension (flange thickness) of the T profile (<em>tf
+&lt; h</em>).</p>
+</dd>
+<dt><strong>tw</strong></dt><dd><p>A positive Float specifying the <strong>tw</strong> dimension (web thickness) of the T profile (<em>tw&lt;
+b</em>).</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1933,7 +2115,7 @@ The TProfile object is derived from the Profile object.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.TProfile.TProfile.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/TProfile.py#L69-L77"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.TProfile.TProfile.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/TProfile.py#L112-L120"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.TProfile.TProfile.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the TProfile object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises</dt>
@@ -1951,7 +2133,7 @@ The TProfile object is derived from the Profile object.</p>
 <h3>TrapezoidalProfile<a class="headerlink" href="#trapezoidalprofile" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TrapezoidalProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/TrapezoidalProfile.py#L4-L72"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TrapezoidalProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/TrapezoidalProfile.py#L4-L104"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile" title="Permalink to this definition">#</a></dt>
 <dd><p>The TrapezoidalProfile object defines the properties of a trapezoidal profile.
 The TrapezoidalProfile object is derived from the Profile object.</p>
 <p class="rubric">Notes</p>
@@ -1966,6 +2148,24 @@ The TrapezoidalProfile object is derived from the Profile object.</p>
 <ul class="simple">
 <li><p>BEAM SECTION</p></li>
 </ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>a</strong></dt><dd><p>A positive Float specifying the <strong>a</strong> dimension of the Trapezoidal profile. For more
+information, see [Beam cross-section
+library](<a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all">https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all</a>).</p>
+</dd>
+<dt><strong>b</strong></dt><dd><p>A positive Float specifying the <strong>b</strong> dimension of the Trapezoidal profile.</p>
+</dd>
+<dt><strong>c</strong></dt><dd><p>A positive Float specifying the <strong>c</strong> dimension of the Trapezoidal profile.</p>
+</dd>
+<dt><strong>d</strong></dt><dd><p>A Float specifying the <strong>d</strong> dimension of the Trapezoidal profile.</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1982,7 +2182,7 @@ The TrapezoidalProfile object is derived from the Profile object.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/TrapezoidalProfile.py#L64-L72"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BeamSectionProfile/TrapezoidalProfile.py#L96-L104"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the TrapezoidalProfile object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises</dt>

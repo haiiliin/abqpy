@@ -670,7 +670,7 @@ If other arguments are also supplied to setValues, they will override the values
 <h3>Layer<a class="headerlink" href="#layer" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Canvas.Layer.Layer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Layer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyViewName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Layer.py#L8-L95"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Layer.Layer" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Layer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyViewName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Layer.py#L8-L105"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Layer.Layer" title="Permalink to this definition">#</a></dt>
 <dd><p>Objects can be superimposed by displaying them in different layers of a viewport.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -691,6 +691,10 @@ ConstrainedSketch, Odb, or XYPlot.</p>
 <dt><strong>partDisplay: PartDisplayOptions</strong></dt><dd><p>A <code class="xref py py-class docutils literal notranslate"><span class="pre">Part`DisplayOptions</span></code> object specifying the display options for the <a class="reference internal" href="../mdb/model/part.html#abaqus.Part.Part.Part" title="abaqus.Part.Part.Part"><code class="xref py py-class docutils literal notranslate"><span class="pre">Part</span></code></a> object.</p>
 </dd>
 <dt><strong>assemblyDisplay: AssemblyDisplayOptions</strong></dt><dd><p>An <code class="xref py py-class docutils literal notranslate"><span class="pre">Assembly`DisplayOptions</span></code> object specifying the display options for the <code class="xref py py-class docutils literal notranslate"><span class="pre">Assembly</span></code> object.</p>
+</dd>
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>copyViewName</strong></dt><dd><p>A String specifying the name of the layer to copy.</p>
 </dd>
 </dl>
 </dd>
@@ -714,7 +718,7 @@ ConstrainedSketch, Odb, or XYPlot.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.Layer.Layer.moveAfter">
-<span class="sig-name descname"><span class="pre">moveAfter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Layer.py#L87-L95"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Layer.Layer.moveAfter" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">moveAfter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Layer.py#L97-L105"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Layer.Layer.moveAfter" title="Permalink to this definition">#</a></dt>
 <dd><p>This method moves the layer object after another object in the layer repository.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -728,7 +732,7 @@ ConstrainedSketch, Odb, or XYPlot.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.Layer.Layer.moveBefore">
-<span class="sig-name descname"><span class="pre">moveBefore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Layer.py#L77-L85"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Layer.Layer.moveBefore" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">moveBefore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Layer.py#L87-L95"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Layer.Layer.moveBefore" title="Permalink to this definition">#</a></dt>
 <dd><p>This method moves the layer object before another object in the layer repository.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

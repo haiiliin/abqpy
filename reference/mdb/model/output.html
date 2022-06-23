@@ -825,7 +825,7 @@ analyses.</p>
 <h3>DiagnosticPrint<a class="headerlink" href="#diagnosticprint" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DiagnosticPrint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">allke</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criticalElement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dmass</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">etotal</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contact</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelChange</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plasticity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">residual</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solve</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mass</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/DiagnosticPrint.py#L4-L100"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DiagnosticPrint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">allke</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criticalElement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dmass</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">etotal</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contact</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelChange</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plasticity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">residual</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solve</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mass</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/DiagnosticPrint.py#L4-L198"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint" title="Permalink to this definition">#</a></dt>
 <dd><p>The DiagnosticPrint object is used to request detailed diagnostic output or to disable
 specific diagnostic checks</p>
 <p class="rubric">Notes</p>
@@ -838,6 +838,54 @@ specific diagnostic checks</p>
 <ul class="simple">
 <li><p>DIAGNOSTICS</p></li>
 </ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>allke</strong></dt><dd><p>A Boolean specifying a request for a column containing the total kinetic energy. This
+argument is valid only for an Abaqus/Explicit analysis. The default value is ON.</p>
+</dd>
+<dt><strong>criticalElement</strong></dt><dd><p>A Boolean specifying a request for a column containing the element that has the smallest
+stable time increment and a column listing the value. This argument is valid only for an
+Abaqus/Explicit analysis. The default value is ON.</p>
+</dd>
+<dt><strong>dmass</strong></dt><dd><p>A Boolean specifying a request for a column containing the percent change in total mass
+of the model as a result of mass scaling. This argument is valid only for an
+Abaqus/Explicit analysis. The default value is OFF unless mass scaling is present in the
+model.</p>
+</dd>
+<dt><strong>etotal</strong></dt><dd><p>A Boolean specifying a request for a column containing the energy balance of the model.
+This argument is valid only for an Abaqus/Explicit analysis. The default value is OFF.</p>
+</dd>
+<dt><strong>contact</strong></dt><dd><p>A Boolean specifying a request for detailed output of points that are contacting or
+separating in interface and gap problems. This argument is valid only for an
+Abaqus/Standard analysis. The default value is ON.</p>
+</dd>
+<dt><strong>modelChange</strong></dt><dd><p>A Boolean specifying a request for detailed output of which elements are being removed
+or reactivated in the step. This argument is valid only for an Abaqus/Standard analysis.
+The default value is OFF.</p>
+</dd>
+<dt><strong>plasticity</strong></dt><dd><p>A Boolean specifying a request for detailed output of element and integration point
+numbers for which the plasticity algorithms have failed to converge in the material
+routines. This argument is valid only for an Abaqus/Standard analysis. The default value
+is OFF.</p>
+</dd>
+<dt><strong>residual</strong></dt><dd><p>A Boolean specifying a request for output of equilibrium residuals during the
+equilibrium iterations. This argument is valid only for an Abaqus/Standard analysis. The
+default value is ON.</p>
+</dd>
+<dt><strong>frequency</strong></dt><dd><p>An Int specifying the frequency of output, in increments. The default value is 1.</p>
+</dd>
+<dt><strong>solve</strong></dt><dd><p>A Boolean specifying a request for information regarding the actual number of equations
+and the wavefront in each iteration. This argument is valid only for an Abaqus/Standard
+analysis. The default value is ON.</p>
+</dd>
+<dt><strong>mass</strong></dt><dd><p>A Boolean specifying a request for a column containing the total mass of the model as a
+result of mass scaling. This argument is valid only for an Abaqus/Explicit analysis. The
+default value is OFF.</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -854,7 +902,7 @@ specific diagnostic checks</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/DiagnosticPrint.py#L98-L100"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/DiagnosticPrint.py#L196-L198"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the DiagnosticPrint object.</p>
 </dd></dl>
 
@@ -1545,7 +1593,7 @@ an empty string.</p>
 <h3>IntegratedOutputSection<a class="headerlink" href="#integratedoutputsection" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IntegratedOutputSection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointAtCenter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointMotion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'INDEPENDENT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOrientation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/IntegratedOutputSection.py#L5-L118"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IntegratedOutputSection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointAtCenter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointMotion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'INDEPENDENT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOrientation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/IntegratedOutputSection.py#L5-L186"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection" title="Permalink to this definition">#</a></dt>
 <dd><p>The IntegratedOutputSection object specifies parameters used for integrated output.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -1553,6 +1601,41 @@ an empty string.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">integratedOutputSections</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>surface</strong></dt><dd><p>A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the surface over which the output is based.</p>
+</dd>
+<dt><strong>refPoint</strong></dt><dd><p>None or a Region object specifying the anchor point about which the integrated moment
+over the output region is computed or the SymbolicConstant None representing the global
+origin. The default value is None.</p>
+</dd>
+<dt><strong>refPointAtCenter</strong></dt><dd><p>A Boolean specifying that the <strong>refPoint</strong> be adjusted so that it coincides with the
+center of the output region in the initial configuration. This argument is valid only
+when you include the <strong>refPoint</strong> argument. The default value is OFF.</p>
+</dd>
+<dt><strong>refPointMotion</strong></dt><dd><p>A SymbolicConstant specifying how to relate the motion of <strong>refPoint</strong> to the average
+motion of the output region. A value of INDEPENDENT will allow the <strong>refPoint</strong> to move
+independent of the output region. A value of AVERAGE_TRANSLATION will set the
+displacement of the <strong>refPoint</strong> equal to the average translation of the output region. A
+value of AVERAGE will set the displacement and rotation of the <strong>refPoint</strong> equal to the
+average translation of the output region. The default value is INDEPENDENT.This argument
+is valid only when you include the <strong>refPoint</strong> argument.</p>
+</dd>
+<dt><strong>localCsys</strong></dt><dd><p>None or a DatumCsys object specifying the local coordinate system used to express vector
+output. If <strong>localCsys</strong> = None, the degrees of freedom are defined in the global coordinate
+system. The default value is None.</p>
+</dd>
+<dt><strong>projectOrientation</strong></dt><dd><p>A Boolean specifying that the coordinate system be projected onto the <strong>surface</strong> such
+that the 1-axis is normal to the <strong>surface</strong>. Projection onto a planar <strong>surface</strong> is such
+that the 1-axis is normal to the surface, and a projection onto a nonplanar <strong>surface</strong> is
+such that a least-squares fit surface will be used. The default value is OFF.</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1569,7 +1652,7 @@ an empty string.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">surface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointAtCenter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointMotion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'INDEPENDENT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOrientation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/IntegratedOutputSection.py#L77-L118"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">surface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><span class="pre">Region</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">SymbolicConstantType</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointAtCenter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointMotion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'INDEPENDENT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOrientation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/IntegratedOutputSection.py#L145-L186"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the IntegratedOutputSection object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1613,7 +1696,7 @@ such that a least-squares fit surface will be used. The default value is OFF.</p
 <h3>Monitor<a class="headerlink" href="#monitor" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepOutput.Monitor.Monitor">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Monitor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dof</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/Monitor.py#L4-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Monitor.Monitor" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Monitor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dof</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/Monitor.py#L4-L134"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Monitor.Monitor" title="Permalink to this definition">#</a></dt>
 <dd><p>The Monitor object defines a degree of freedom to monitor.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -1625,6 +1708,37 @@ such that a least-squares fit surface will be used. The default value is OFF.</p
 <ul class="simple">
 <li><p>MONITOR</p></li>
 </ul>
+<dl class="field-list">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl>
+<dt><strong>node</strong></dt><dd><p>A String specifying the name of the region to be monitored.</p>
+</dd>
+<dt><strong>dof</strong></dt><dd><p>A SymbolicConstant specifying the degree of freedom to be monitored at the node.
+Possible values are:</p>
+<ul class="simple">
+<li><p>U1</p></li>
+<li><p>U2</p></li>
+<li><p>U3</p></li>
+<li><p>UR1</p></li>
+<li><p>UR2</p></li>
+<li><p>UR3</p></li>
+<li><p>WARP</p></li>
+<li><p>FLUID_PRESSURE</p></li>
+<li><p>ELECTRICAL_POTENTIAL</p></li>
+<li><p>NT11</p></li>
+<li><p>NT30</p></li>
+<li><p>NN11</p></li>
+<li><p>NN30</p></li>
+</ul>
+<p>The NT identifiers are not available for mass diffusion. The NN identifiers are
+available only for mass diffusion.</p>
+</dd>
+<dt><strong>frequency</strong></dt><dd><p>An Int specifying the output frequency in increments. This argument is valid only for an
+Abaqus/Standard analysis.</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1641,7 +1755,7 @@ such that a least-squares fit surface will be used. The default value is OFF.</p
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.StepOutput.Monitor.Monitor.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/Monitor.py#L72-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Monitor.Monitor.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/Monitor.py#L127-L134"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Monitor.Monitor.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the Monitor object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises</dt>
@@ -1659,7 +1773,7 @@ such that a least-squares fit surface will be used. The default value is OFF.</p
 <h3>Restart<a class="headerlink" href="#restart" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepOutput.Restart.Restart">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Restart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numberIntervals</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeMarks</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overlay</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/Restart.py#L4-L73"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Restart.Restart" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Restart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numberIntervals</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeMarks</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overlay</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/Restart.py#L4-L108"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Restart.Restart" title="Permalink to this definition">#</a></dt>
 <dd><p>The Restart object defines a restart request.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -1671,6 +1785,26 @@ such that a least-squares fit surface will be used. The default value is OFF.</p
 <ul class="simple">
 <li><p>RESTART</p></li>
 </ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>numberIntervals</strong></dt><dd><p>An Int specifying the number of intervals during the step at which restart information
+will be written. The default value is 0. The default value is 1.</p>
+</dd>
+<dt><strong>timeMarks</strong></dt><dd><p>A Boolean specifying whether to use exact time marks for writing during an analysis. The
+default value is OFF. The default value is OFF.</p>
+</dd>
+<dt><strong>overlay</strong></dt><dd><p>A Boolean specifying that only one increment per step should be retained on the restart
+file, thus minimizing the size of the restart file. The default value is OFF. The
+default value is ON.</p>
+</dd>
+<dt><strong>frequency</strong></dt><dd><p>An Int specifying the increments at which restart information will be written. The
+default value is 0. The default value is 0.This argument applies only to Abaqus/Standard
+analyses.</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1687,7 +1821,7 @@ such that a least-squares fit surface will be used. The default value is OFF.</p
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.StepOutput.Restart.Restart.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/Restart.py#L66-L73"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Restart.Restart.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/Restart.py#L101-L108"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Restart.Restart.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the Restart object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises</dt>
@@ -1705,7 +1839,7 @@ such that a least-squares fit surface will be used. The default value is OFF.</p
 <h3>TimePoint<a class="headerlink" href="#timepoint" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepOutput.TimePoint.TimePoint">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TimePoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/TimePoint.py#L1-L57"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.TimePoint.TimePoint" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TimePoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/TimePoint.py#L1-L72"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.TimePoint.TimePoint" title="Permalink to this definition">#</a></dt>
 <dd><p>The TimePoint object defines time points at which data are written to the output
 database or restart files.</p>
 <p class="rubric">Notes</p>
@@ -1718,6 +1852,17 @@ database or restart files.</p>
 <ul class="simple">
 <li><p>TIME POINTS</p></li>
 </ul>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong></dt><dd><p>A String specifying the repository key.</p>
+</dd>
+<dt><strong>points</strong></dt><dd><p>A sequence of sequences of Floats specifying time points at which data are written to
+the output database or restart files.</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1734,7 +1879,7 @@ database or restart files.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.StepOutput.TimePoint.TimePoint.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/TimePoint.py#L50-L57"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.TimePoint.TimePoint.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepOutput/TimePoint.py#L65-L72"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.TimePoint.TimePoint.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the TimePoint object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises</dt>
