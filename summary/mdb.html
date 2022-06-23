@@ -312,7 +312,7 @@
 </div>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Mdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pathName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mdb/Mdb.py#L7-L115"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Mdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pathName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mdb/Mdb.py#L7-L90"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>The Mdb object is the high-level Abaqus model database. A model database stores models
 and analysis controls.</p>
 <p class="rubric">Notes</p>
@@ -320,34 +320,6 @@ and analysis controls.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span>
 </pre></div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>version: int</strong></dt><dd><p>An Int specifying the release number of the <a class="reference internal" href="../reference/mdb.html#abaqus.Mdb.Mdb.Mdb" title="abaqus.Mdb.Mdb.Mdb"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mdb</span></code></a> object in memory.</p>
-</dd>
-<dt><strong>lastChangedCount: float</strong></dt><dd><p>A Float specifying the value of a counter associated with the <code class="xref py py-class docutils literal notranslate"><span class="pre">Mdb</span></code> object. The counter
-indicates when the <a class="reference internal" href="../reference/mdb.html#abaqus.Mdb.Mdb.Mdb" title="abaqus.Mdb.Mdb.Mdb"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mdb</span></code></a> object was last changed.</p>
-</dd>
-<dt><strong>jobs: dict[str, Job]</strong></dt><dd><p>A repository of <a class="reference internal" href="../reference/mdb/job.html#abaqus.Job.Job.Job" title="abaqus.Job.Job.Job"><code class="xref py py-class docutils literal notranslate"><span class="pre">Job</span></code></a> objects.</p>
-</dd>
-<dt><strong>adaptivityProcesses: dict[str, AdaptivityProcess]</strong></dt><dd><p>A repository of <a class="reference internal" href="../reference/mdb/model/adaptivity.html#abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess" title="abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess"><code class="xref py py-class docutils literal notranslate"><span class="pre">AdaptivityProcess</span></code></a> objects.</p>
-</dd>
-<dt><strong>coexecutions: dict[str, Coexecution]</strong></dt><dd><p>A repository of <a class="reference internal" href="../reference/mdb/job.html#abaqus.Job.Coexecution.Coexecution" title="abaqus.Job.Coexecution.Coexecution"><code class="xref py py-class docutils literal notranslate"><span class="pre">Coexecution</span></code></a> objects.</p>
-</dd>
-<dt><strong>optimizationProcesses: dict[str, OptimizationProcess]</strong></dt><dd><p>A repository of <a class="reference internal" href="../reference/mdb/job.html#abaqus.Job.OptimizationProcess.OptimizationProcess" title="abaqus.Job.OptimizationProcess.OptimizationProcess"><code class="xref py py-class docutils literal notranslate"><span class="pre">OptimizationProcess</span></code></a> objects.</p>
-</dd>
-<dt><strong>meshEditOptions: MeshEditOptions</strong></dt><dd><p>A <a class="reference internal" href="../reference/mdb/edit_mesh.html#abaqus.EditMesh.MeshEditOptions.MeshEditOptions" title="abaqus.EditMesh.MeshEditOptions.MeshEditOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshEditOptions</span></code></a> object specifying the undo/redo behavior when editing meshes on parts
-or part instances.</p>
-</dd>
-<dt><strong>models: dict[str, Model]</strong></dt><dd><p>A repository of <a class="reference internal" href="../reference/mdb/model.html#abaqus.Model.Model.Model" title="abaqus.Model.Model.Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a> objects.</p>
-</dd>
-<dt><strong>customData: RepositorySupport</strong></dt><dd><p>A <a class="reference internal" href="../reference/kernel/kernel.html#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport"><code class="xref py py-class docutils literal notranslate"><span class="pre">RepositorySupport</span></code></a> object.</p>
-</dd>
-<dt><strong>annotations: dict[str, Annotation]</strong></dt><dd><p>A repository of <a class="reference internal" href="../reference/mdb/annotation.html#abaqus.Annotation.Annotation.Annotation" title="abaqus.Annotation.Annotation.Annotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">Annotation</span></code></a> objects.</p>
-</dd>
-</dl>
-</dd>
-</dl>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">

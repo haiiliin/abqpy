@@ -486,7 +486,7 @@ local machine. The default value is OFF.</p>
 <h2>Job<a class="headerlink" href="#job" title="Permalink to this headline">#</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Job</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py#L5-L264"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Job</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Job/Job.py#L5-L174"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>The Job object is the abstract base type for other Job objects. The Job object has no
 explicit constructor. The methods and members of the Job object are common to all
 objects derived from Job.</p>
@@ -510,93 +510,8 @@ objects derived from Job.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>name: str</strong></dt><dd><p>A String specifying the name of the new job. The name must be a valid Abaqus/<code class="xref py py-class docutils literal notranslate"><span class="pre">CAE</span></code> object
-name.</p>
-</dd>
-<dt><strong>type: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying <code class="xref py py-class docutils literal notranslate"><span class="pre">the</span></code> type of job. Possible values are ANALYSIS,
-SYNTAXCHECK, RECOVER, and RESTART. The default value is ANALYSIS.If <code class="xref py py-class docutils literal notranslate"><span class="pre">the</span></code> object has <code class="xref py py-class docutils literal notranslate"><span class="pre">the</span></code>
-type JobFromInputFile, <strong>type=RESTART</strong> is not available.</p>
-</dd>
-<dt><strong>waitHours: int</strong></dt><dd><p>An Int specifying the number of hours to wait before submitting the job. This argument
-is ignored if <strong>queue</strong> is set. The default value is 0.This argument works in conjunction
-with <strong>waitMinutes</strong>. <strong>waitHours</strong> and <strong>atTime</strong> are mutually exclusive.</p>
-</dd>
-<dt><strong>waitMinutes: int</strong></dt><dd><p>An Int specifying the number of minutes to wait before submitting the job. This argument
-is ignored if <strong>queue</strong> is set. The default value is 0.This argument works in conjunction
-with <strong>waitHours</strong>. <strong>waitMinutes</strong> and <strong>atTime</strong> are mutually exclusive.</p>
-</dd>
-<dt><strong>numCpus: int</strong></dt><dd><p>An Int specifying the number of CPUs to use for this analysis if parallel processing is
-available. Possible values are <strong>numCpus</strong> &gt;&gt; 0. The default value is 1.</p>
-</dd>
-<dt><strong>memory: int</strong></dt><dd><p>An Int specifying the amount of memory available to Abaqus analysis. The value should be
-expressed in the units supplied in <strong>memoryUnits</strong>. The default value is 90.</p>
-</dd>
-<dt><strong>memoryUnits: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the units for the amount of memory used in an Abaqus
-analysis. Possible values are PERCENTAGE, MEGA_BYTES, and GIGA_BYTES. The default value
-is PERCENTAGE.</p>
-</dd>
-<dt><strong>getMemoryFromAnalysis: Boolean</strong></dt><dd><p>A Boolean specifying whether to retrieve the recommended memory settings from the last
-datacheck or analysis run and use those values in subsequent submissions. The default
-value is ON.</p>
-</dd>
-<dt><strong>explicitPrecision: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying whether to use the double precision version of
-Abaqus/Explicit. Possible values are SINGLE, FORCE_SINGLE, DOUBLE,
-DOUBLE_CONSTRAINT_ONLY, and DOUBLE_PLUS_PACK. The default value is SINGLE.</p>
-</dd>
-<dt><strong>nodalOutputPrecision: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the precision of the nodal output written to the output
-database. Possible values are SINGLE and FULL. The default value is SINGLE.</p>
-</dd>
-<dt><strong>parallelizationMethodExplicit: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the parallelization method for Abaqus/Explicit. Possible
-values are LOOP and DOMAIN. The default value is LOOP.</p>
-</dd>
-<dt><strong>numDomains: int</strong></dt><dd><p>An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
-<strong>parallelizationMethodExplicit=DOMAIN</strong>, <strong>numDomains</strong> must be a multiple of <strong>numCpus</strong>.
-The default value is 1.</p>
-</dd>
-<dt><strong>activateLoadBalancing: Boolean</strong></dt><dd><p>A Boolean specifying whether to activate dyanmic load balancing for jobs running on
-multiple processors with multiple domains in Abaqus/Explicit. The default value is OFF.</p>
-</dd>
-<dt><strong>multiprocessingMode: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying whether an analysis is decomposed into threads or into
-multiple processes that communicate through a message passing interface (MPI). Possible
-values are DEFAULT, THREADS,MPI, and HYBRID. The default value is DEFAULT.</p>
-</dd>
-<dt><strong>numThreadsPerMpiProcess: int</strong></dt><dd><p>An Int specifying the number of threads per MPI process to use for this analysis if
-parallel processing is available. Possible values are <strong>numThreadsPerMpiProcess</strong> &gt;&gt; 0.
-The default value is 1.</p>
-</dd>
-<dt><strong>analysis: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying whe:py:class:<cite>~.the`r :py:class:`~.the</cite> job will be analyzed by Abaqus/Standard or
-Abaqus/Explicit. Possible values are STANDARD, EXPLICIT, and UNKNOWN.If <code class="xref py py-class docutils literal notranslate"><span class="pre">the</span></code> object has
-<code class="xref py py-class docutils literal notranslate"><span class="pre">the</span></code> type JobFromInputFile, <strong>analysis=UNKNOWN</strong>.</p>
-</dd>
-<dt><strong>status: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the status of the analysis. Possible values are SUBMITTED,
-RUNNING, ABORTED, TERMINATED, COMPLETED, CHECK_RUNNING, and CHECK_COMPLETED.If the
-<strong>message</strong> member is empty, <strong>status</strong> is set to NONE.</p>
-</dd>
-<dt><strong>queue: str</strong></dt><dd><p>A String specifying the name of the queue to which to submit the job. The default value
-is an empty string.Note:You can use the <strong>queue</strong> argument when creating a <a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job" title="abaqus.Job.Job.Job"><code class="xref py py-class docutils literal notranslate"><span class="pre">Job</span></code></a> object on a
-Windows workstation; however, remote queues are available only on Linux platforms.</p>
-</dd>
-<dt><strong>atTime: str</strong></dt><dd><p>A String specifying the time at which to submit the job. If <strong>queue</strong> is empty, the string
-syntax must be valid for the Linux <cite>at</cite> command. If <strong>queue</strong> is set, the syntax must be
-valid according to the system administrator. The default value is an empty
-string.Note:You can use the <strong>atTime</strong> argument when creating a <a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.Job.Job" title="abaqus.Job.Job.Job"><code class="xref py py-class docutils literal notranslate"><span class="pre">Job</span></code></a> object on a Windows
-workstation; however, the <cite>at</cite> command is available only on Linux platforms.</p>
-</dd>
-<dt><strong>scratch: str</strong></dt><dd><p>A String specifying the location of the scratch directory. The default value is an empty
-string.</p>
-</dd>
-<dt><strong>userSubroutine: str</strong></dt><dd><p>A String specifying the file containing the user’s subroutine definitions. The default
-value is an empty string.</p>
-</dd>
-<dt><strong>messages: MessageArray</strong></dt><dd><p>A <a class="reference internal" href="../../reference/mdb/job.html#abaqus.Job.MessageArray.MessageArray" title="abaqus.Job.MessageArray.MessageArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageArray</span></code></a> object specifying the messages received during an analysis.</p>
-</dd>
-<dt><strong>environment: tuple</strong></dt><dd><p>A tuple of Strings specifying the environment variables and their values.</p>
-</dd>
-<dt><strong>licenseType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the type of license type being used in the case of the
-DSLS SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default
-value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not
-available.</p>
-</dd>
+<dt><strong>analysis</strong></dt><dd></dd>
+<dt><strong>status</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>

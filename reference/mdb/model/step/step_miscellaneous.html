@@ -310,7 +310,7 @@
 <h3>CompositeDamping<a class="headerlink" href="#compositedamping" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CompositeDamping</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/CompositeDamping.py#L4-L23"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CompositeDamping</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/CompositeDamping.py#L4-L18"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping" title="Permalink to this definition">#</a></dt>
 <dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping" title="abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping"><code class="xref py py-class docutils literal notranslate"><span class="pre">CompositeDamping</span></code></a> object contains composite modal damping parameters.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -318,14 +318,6 @@
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">compositeDamping</span>
 </pre></div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>components: CompositeDampingComponentArray</strong></dt><dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.CompositeDampingComponentArray.CompositeDampingComponentArray" title="abaqus.StepMiscellaneous.CompositeDampingComponentArray.CompositeDampingComponentArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">CompositeDampingComponentArray</span></code></a> object.</p>
-</dd>
-</dl>
-</dd>
-</dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping.components">
 <span class="sig-name descname"><span class="pre">components</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.StepMiscellaneous.CompositeDampingComponentArray.CompositeDampingComponentArray" title="abaqus.StepMiscellaneous.CompositeDampingComponentArray.CompositeDampingComponentArray"><span class="pre">CompositeDampingComponentArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/CompositeDamping.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping.components" title="Permalink to this definition">#</a></dt>
@@ -339,7 +331,7 @@
 <h3>CompositeDampingComponent<a class="headerlink" href="#compositedampingcomponent" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CompositeDampingComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/CompositeDampingComponent.py#L1-L26"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CompositeDampingComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/CompositeDampingComponent.py#L1-L19"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent" title="Permalink to this definition">#</a></dt>
 <dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent" title="abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">CompositeDampingComponent</span></code></a> object is used to define composite damping over a range of
 modes.</p>
 <p class="rubric">Notes</p>
@@ -351,10 +343,8 @@ modes.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>start: int</strong></dt><dd><p>An Int specifying the mode number of the lowest mode of a range.</p>
-</dd>
-<dt><strong>end: int</strong></dt><dd><p>An Int specifying the mode number of the highest mode of a range.</p>
-</dd>
+<dt><strong>end</strong></dt><dd></dd>
+<dt><strong>start</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -521,7 +511,7 @@ value. The value can also be the SymbolicConstant DEFAULT. The default value is 
 <h3>DirectDamping<a class="headerlink" href="#directdamping" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.DirectDamping.DirectDamping">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DirectDamping</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDamping.py#L4-L23"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.DirectDamping.DirectDamping" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DirectDamping</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDamping.py#L4-L18"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.DirectDamping.DirectDamping" title="Permalink to this definition">#</a></dt>
 <dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.DirectDamping.DirectDamping" title="abaqus.StepMiscellaneous.DirectDamping.DirectDamping"><code class="xref py py-class docutils literal notranslate"><span class="pre">DirectDamping</span></code></a> object contains direct modal damping parameters.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -529,14 +519,6 @@ value. The value can also be the SymbolicConstant DEFAULT. The default value is 
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">directDamping</span>
 </pre></div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>components: DirectDampingComponentArray</strong></dt><dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.DirectDampingComponentArray.DirectDampingComponentArray" title="abaqus.StepMiscellaneous.DirectDampingComponentArray.DirectDampingComponentArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">DirectDampingComponentArray</span></code></a> object.</p>
-</dd>
-</dl>
-</dd>
-</dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.DirectDamping.DirectDamping.components">
 <span class="sig-name descname"><span class="pre">components</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.StepMiscellaneous.DirectDampingComponentArray.DirectDampingComponentArray" title="abaqus.StepMiscellaneous.DirectDampingComponentArray.DirectDampingComponentArray"><span class="pre">DirectDampingComponentArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDamping.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.DirectDamping.DirectDamping.components" title="Permalink to this definition">#</a></dt>
@@ -550,7 +532,7 @@ value. The value can also be the SymbolicConstant DEFAULT. The default value is 
 <h3>DirectDampingByFrequency<a class="headerlink" href="#directdampingbyfrequency" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DirectDampingByFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDampingByFrequency.py#L6-L27"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DirectDampingByFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDampingByFrequency.py#L6-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency" title="Permalink to this definition">#</a></dt>
 <dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency" title="abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">DirectDampingByFrequency</span></code></a> object contains direct damping parameters.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -558,14 +540,6 @@ value. The value can also be the SymbolicConstant DEFAULT. The default value is 
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">directDampingByFrequency</span>
 </pre></div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>components: DirectDampingByFrequencyComponentArray</strong></dt><dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.DirectDampingByFrequencyComponentArray.DirectDampingByFrequencyComponentArray" title="abaqus.StepMiscellaneous.DirectDampingByFrequencyComponentArray.DirectDampingByFrequencyComponentArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">DirectDampingByFrequencyComponentArray</span></code></a> object.</p>
-</dd>
-</dl>
-</dd>
-</dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency.components">
 <span class="sig-name descname"><span class="pre">components</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.StepMiscellaneous.DirectDampingByFrequencyComponentArray.DirectDampingByFrequencyComponentArray" title="abaqus.StepMiscellaneous.DirectDampingByFrequencyComponentArray.DirectDampingByFrequencyComponentArray"><span class="pre">DirectDampingByFrequencyComponentArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDampingByFrequency.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency.components" title="Permalink to this definition">#</a></dt>
@@ -579,7 +553,7 @@ value. The value can also be the SymbolicConstant DEFAULT. The default value is 
 <h3>DirectDampingByFrequencyComponent<a class="headerlink" href="#directdampingbyfrequencycomponent" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DirectDampingByFrequencyComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDampingByFrequencyComponent.py#L1-L26"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DirectDampingByFrequencyComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDampingByFrequencyComponent.py#L1-L19"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent" title="Permalink to this definition">#</a></dt>
 <dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent" title="abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">DirectDampingByFrequencyComponent</span></code></a> object is used to define direct damping over a range
 of frequencies.</p>
 <p class="rubric">Notes</p>
@@ -591,10 +565,8 @@ of frequencies.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>frequency: float</strong></dt><dd><p>A Float specifying the frequency value in cycles/time.</p>
-</dd>
-<dt><strong>fraction: float</strong></dt><dd><p>A Float specifying the fraction of critical damping.</p>
-</dd>
+<dt><strong>fraction</strong></dt><dd></dd>
+<dt><strong>frequency</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -639,7 +611,7 @@ of frequencies.</p>
 <h3>DirectDampingComponent<a class="headerlink" href="#directdampingcomponent" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DirectDampingComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDampingComponent.py#L1-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DirectDampingComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDampingComponent.py#L1-L21"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent" title="Permalink to this definition">#</a></dt>
 <dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent" title="abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">DirectDampingComponent</span></code></a> object is used to define direct damping over a range of modes.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -650,12 +622,9 @@ of frequencies.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>start: int</strong></dt><dd><p>An Int specifying the mode number of the lowest mode of a range.</p>
-</dd>
-<dt><strong>end: int</strong></dt><dd><p>An Int specifying the mode number of the highest mode of a range.</p>
-</dd>
-<dt><strong>fraction: float</strong></dt><dd><p>A Float specifying the fraction of critical damping.</p>
-</dd>
+<dt><strong>end</strong></dt><dd></dd>
+<dt><strong>fraction</strong></dt><dd></dd>
+<dt><strong>start</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -706,7 +675,7 @@ of frequencies.</p>
 <h3>EmagTimeHarmonicFrequency<a class="headerlink" href="#emagtimeharmonicfrequency" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EmagTimeHarmonicFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/EmagTimeHarmonicFrequency.py#L1-L34"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EmagTimeHarmonicFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/EmagTimeHarmonicFrequency.py#L1-L23"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency" title="Permalink to this definition">#</a></dt>
 <dd><p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
@@ -716,14 +685,9 @@ of frequencies.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>lower: float</strong></dt><dd><p>A Float specifying the lower limit of frequency range or a single frequency, in
-cycles/time.</p>
-</dd>
-<dt><strong>upper: float</strong></dt><dd><p>A Float specifying the upper limit of frequency range, in cycles/time.</p>
-</dd>
-<dt><strong>nPoints: int</strong></dt><dd><p>An Int specifying the number of points in the frequency range at which results should be
-given.</p>
-</dd>
+<dt><strong>lower</strong></dt><dd></dd>
+<dt><strong>nPoints</strong></dt><dd></dd>
+<dt><strong>upper</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -776,7 +740,7 @@ given.</p>
 <h3>MassScaling<a class="headerlink" href="#massscaling" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.MassScaling.MassScaling">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MassScaling</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/MassScaling.py#L4-L96"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.MassScaling.MassScaling" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MassScaling</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/MassScaling.py#L4-L60"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.MassScaling.MassScaling" title="Permalink to this definition">#</a></dt>
 <dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.MassScaling.MassScaling" title="abaqus.StepMiscellaneous.MassScaling.MassScaling"><code class="xref py py-class docutils literal notranslate"><span class="pre">MassScaling</span></code></a> object defines the region and controls that govern mass scaling.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -787,39 +751,14 @@ given.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>objective: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying <code class="xref py py-class docutils literal notranslate"><span class="pre">the</span></code> objective of <code class="xref py py-class docutils literal notranslate"><span class="pre">the</span></code> mass scaling definition. Possible
-values are SEMI_AUTOMATIC, AUTOMATIC, and REINITIALIZE. The default value is
-SEMI_AUTOMATIC.</p>
-</dd>
-<dt><strong>occurs: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying whether mass scaling should be performed at the beginning
-of the step or throughout the step. Possible values are AT_BEGINNING and
-THROUGHOUT_STEP.</p>
-</dd>
-<dt><strong>type: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the type of scaling. Possible values are UNIFORM,
-BELOW_MIN, SET_EQUAL_DT, and ROLLING. The default value is BELOW_MIN.</p>
-</dd>
-<dt><strong>factor: float</strong></dt><dd><p>A Float specifying a scaling factor.</p>
-</dd>
-<dt><strong>dt: float</strong></dt><dd><p>A Float specifying a target time increment.</p>
-</dd>
-<dt><strong>frequency: int</strong></dt><dd><p>An Int specifying the frequency at which mass scaling calculations are performed.</p>
-</dd>
-<dt><strong>numberInterval: int</strong></dt><dd><p>An Int specifying the number of intervals at which mass scaling calculations are
-performed.</p>
-</dd>
-<dt><strong>feedRate: float</strong></dt><dd><p>A Float specifying the estimated average velocity of the workpiece in the rolling
-direction at steady-state conditions.</p>
-</dd>
-<dt><strong>extrudedLength: float</strong></dt><dd><p>A Float specifying the average element length in the extruded direction.</p>
-</dd>
-<dt><strong>crossSection: int</strong></dt><dd><p>An Int specifying the number of nodes in the cross-section of the workpiece.</p>
-</dd>
-<dt><strong>direction: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the rolling direction. Possible values are GLOBAL_X,
-GLOBAL_Y, GLOBAL_Z, and GLOBAL_NONE. The default value is GLOBAL_X.</p>
-</dd>
-<dt><strong>region: SymbolicConstant</strong></dt><dd><p>The SymbolicConstant MODEL or a <a class="reference internal" href="../part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying where the mass scaling is
-applied. The default value is MODEL.</p>
-</dd>
+<dt><strong>crossSection</strong></dt><dd></dd>
+<dt><strong>dt</strong></dt><dd></dd>
+<dt><strong>extrudedLength</strong></dt><dd></dd>
+<dt><strong>factor</strong></dt><dd></dd>
+<dt><strong>feedRate</strong></dt><dd></dd>
+<dt><strong>frequency</strong></dt><dd></dd>
+<dt><strong>numberInterval</strong></dt><dd></dd>
+<dt><strong>occurs</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -933,7 +872,7 @@ BELOW_MIN, SET_EQUAL_DT, and ROLLING. The default value is BELOW_MIN.</p>
 <h3>RandomResponseFrequency<a class="headerlink" href="#randomresponsefrequency" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RandomResponseFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RandomResponseFrequency.py#L1-L38"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RandomResponseFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RandomResponseFrequency.py#L1-L26"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency" title="Permalink to this definition">#</a></dt>
 <dd><p>A RandomResponseFrequency is an object used to define frequency over a range of modes.
 This page discusses:</p>
 <p class="rubric">Notes</p>
@@ -945,15 +884,10 @@ This page discusses:</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>lower: float</strong></dt><dd><p>A Float specifying the lower limit of the frequency range in cycles per time.</p>
-</dd>
-<dt><strong>upper: float</strong></dt><dd><p>A Float specifying the upper limit of the frequency range in cycles per time.</p>
-</dd>
-<dt><strong>nCalcs: int</strong></dt><dd><p>An Int specifying the number of points between eigenfrequencies at which the response
-should be calculated.</p>
-</dd>
-<dt><strong>bias: float</strong></dt><dd><p>A Float specifying the bias parameter.</p>
-</dd>
+<dt><strong>bias</strong></dt><dd></dd>
+<dt><strong>lower</strong></dt><dd></dd>
+<dt><strong>nCalcs</strong></dt><dd></dd>
+<dt><strong>upper</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1011,7 +945,7 @@ should be calculated.</p>
 <h3>RayleighDamping<a class="headerlink" href="#rayleighdamping" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RayleighDamping</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDamping.py#L4-L23"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RayleighDamping</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDamping.py#L4-L18"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping" title="Permalink to this definition">#</a></dt>
 <dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping" title="abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping"><code class="xref py py-class docutils literal notranslate"><span class="pre">RayleighDamping</span></code></a> object contains Rayleigh Damping parameters.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -1019,14 +953,6 @@ should be calculated.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rayleighDamping</span>
 </pre></div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>components: RayleighDampingComponentArray</strong></dt><dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.RayleighDampingComponentArray.RayleighDampingComponentArray" title="abaqus.StepMiscellaneous.RayleighDampingComponentArray.RayleighDampingComponentArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">RayleighDampingComponentArray</span></code></a> object.</p>
-</dd>
-</dl>
-</dd>
-</dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping.components">
 <span class="sig-name descname"><span class="pre">components</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.StepMiscellaneous.RayleighDampingComponentArray.RayleighDampingComponentArray" title="abaqus.StepMiscellaneous.RayleighDampingComponentArray.RayleighDampingComponentArray"><span class="pre">RayleighDampingComponentArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDamping.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping.components" title="Permalink to this definition">#</a></dt>
@@ -1040,7 +966,7 @@ should be calculated.</p>
 <h3>RayleighDampingByFrequency<a class="headerlink" href="#rayleighdampingbyfrequency" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RayleighDampingByFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDampingByFrequency.py#L6-L27"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RayleighDampingByFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDampingByFrequency.py#L6-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency" title="Permalink to this definition">#</a></dt>
 <dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency" title="abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">RayleighDampingByFrequency</span></code></a> object contains Rayleigh Damping parameters.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -1048,14 +974,6 @@ should be calculated.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rayleighDampingByFrequency</span>
 </pre></div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>components: RayleighDampingByFrequencyComponentArray</strong></dt><dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponentArray.RayleighDampingByFrequencyComponentArray" title="abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponentArray.RayleighDampingByFrequencyComponentArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">RayleighDampingByFrequencyComponentArray</span></code></a> object.</p>
-</dd>
-</dl>
-</dd>
-</dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency.components">
 <span class="sig-name descname"><span class="pre">components</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponentArray.RayleighDampingByFrequencyComponentArray" title="abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponentArray.RayleighDampingByFrequencyComponentArray"><span class="pre">RayleighDampingByFrequencyComponentArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDampingByFrequency.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency.components" title="Permalink to this definition">#</a></dt>
@@ -1069,7 +987,7 @@ should be calculated.</p>
 <h3>RayleighDampingByFrequencyComponent<a class="headerlink" href="#rayleighdampingbyfrequencycomponent" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RayleighDampingByFrequencyComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDampingByFrequencyComponent.py#L1-L31"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RayleighDampingByFrequencyComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDampingByFrequencyComponent.py#L1-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent" title="Permalink to this definition">#</a></dt>
 <dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent" title="abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">RayleighDampingByFrequencyComponent</span></code></a> object is used to define Rayleigh damping over a
 range of frequencies.</p>
 <p class="rubric">Notes</p>
@@ -1081,12 +999,9 @@ range of frequencies.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>frequency: float</strong></dt><dd><p>A Float specifying the frequency value in cycles/time.</p>
-</dd>
-<dt><strong>alpha: float</strong></dt><dd><p>A Float specifying the mass proportional damping, αM.</p>
-</dd>
-<dt><strong>beta: float</strong></dt><dd><p>A Float specifying the stiffness proportional damping, βM.</p>
-</dd>
+<dt><strong>alpha</strong></dt><dd></dd>
+<dt><strong>beta</strong></dt><dd></dd>
+<dt><strong>frequency</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1137,7 +1052,7 @@ range of frequencies.</p>
 <h3>RayleighDampingComponent<a class="headerlink" href="#rayleighdampingcomponent" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RayleighDampingComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDampingComponent.py#L1-L36"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RayleighDampingComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDampingComponent.py#L1-L25"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent" title="Permalink to this definition">#</a></dt>
 <dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent" title="abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">RayleighDampingComponent</span></code></a> object is used to define Rayleigh damping over a range of
 modes.</p>
 <p class="rubric">Notes</p>
@@ -1149,14 +1064,10 @@ modes.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>start: int</strong></dt><dd><p>An Int specifying the mode number of the lowest mode of a range.</p>
-</dd>
-<dt><strong>end: int</strong></dt><dd><p>An Int specifying the mode number of the highest mode of a range.</p>
-</dd>
-<dt><strong>alpha: float</strong></dt><dd><p>A Float specifying the mass proportional damping, αM.</p>
-</dd>
-<dt><strong>beta: float</strong></dt><dd><p>A Float specifying the stiffness proportional damping, βM.</p>
-</dd>
+<dt><strong>alpha</strong></dt><dd></dd>
+<dt><strong>beta</strong></dt><dd></dd>
+<dt><strong>end</strong></dt><dd></dd>
+<dt><strong>start</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1213,7 +1124,7 @@ modes.</p>
 <h3>ResponseSpectrumComponent<a class="headerlink" href="#responsespectrumcomponent" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ResponseSpectrumComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/ResponseSpectrumComponent.py#L1-L49"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ResponseSpectrumComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/ResponseSpectrumComponent.py#L1-L32"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent" title="Permalink to this definition">#</a></dt>
 <dd><p>A ResponseSpectrumComponent is an element of the ResponseSpectrumComponentArray.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -1224,20 +1135,11 @@ modes.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>x: float</strong></dt><dd><p>A Float specifying the <strong>X</strong>-direction cosine.</p>
-</dd>
-<dt><strong>y: float</strong></dt><dd><p>A Float specifying the <strong>Y</strong>-direction cosine.</p>
-</dd>
-<dt><strong>z: float</strong></dt><dd><p>A Float specifying the <strong>Z</strong>-direction cosine.</p>
-</dd>
-<dt><strong>scale: float</strong></dt><dd><p>A Float specifying the scale factor.</p>
-</dd>
-<dt><strong>timeDuration: float</strong></dt><dd><p>A Float specifying the time duration of the dynamic event, from which this spectrum was
-created.Note:This parameter is ignored unless used with the DSC modal summation rule.</p>
-</dd>
-<dt><strong>respSpectrum: str</strong></dt><dd><p>A String specifying the name of the response spectrum specified with the keyword
-SPECTRUM.</p>
-</dd>
+<dt><strong>scale</strong></dt><dd></dd>
+<dt><strong>timeDuration</strong></dt><dd></dd>
+<dt><strong>x</strong></dt><dd></dd>
+<dt><strong>y</strong></dt><dd></dd>
+<dt><strong>z</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1370,7 +1272,7 @@ fill-in level (for geostatic and soil analysis only). The default value is DEFAU
 <h3>SteadyStateDirectFrequency<a class="headerlink" href="#steadystatedirectfrequency" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SteadyStateDirectFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SteadyStateDirectFrequency.py#L1-L43"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SteadyStateDirectFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SteadyStateDirectFrequency.py#L1-L28"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency" title="Permalink to this definition">#</a></dt>
 <dd><p>A SteadyStateDirectFrequency is an object used to define frequency over range of modes.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -1381,18 +1283,9 @@ fill-in level (for geostatic and soil analysis only). The default value is DEFAU
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>lower: float</strong></dt><dd><p>A Float specifying the lower limit of frequency range or a single frequency, in
-cycles/time.</p>
-</dd>
-<dt><strong>upper: float</strong></dt><dd><p>A Float specifying the upper limit of frequency range, in cycles/time.</p>
-</dd>
-<dt><strong>nPoints: int</strong></dt><dd><p>An Int specifying the number of points in the frequency range at which results should be
-given.</p>
-</dd>
-<dt><strong>bias: float</strong></dt><dd><p>A Float specifying the Bias parameter. When results are requested at four or more
-frequency points, Abaqus biases the results toward the ends of the intervals to obtain
-better resolution. The default value is 3.0.</p>
-</dd>
+<dt><strong>lower</strong></dt><dd></dd>
+<dt><strong>nPoints</strong></dt><dd></dd>
+<dt><strong>upper</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1453,7 +1346,7 @@ given.</p>
 <h3>SteadyStateModalFrequency<a class="headerlink" href="#steadystatemodalfrequency" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SteadyStateModalFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SteadyStateModalFrequency.py#L1-L43"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SteadyStateModalFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SteadyStateModalFrequency.py#L1-L28"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency" title="Permalink to this definition">#</a></dt>
 <dd><p>A SteadyStateModalFrequency is an object used to define frequency over a range of modes.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -1464,18 +1357,9 @@ given.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>lower: float</strong></dt><dd><p>A Float specifying the lower limit of frequency range or a single frequency, in
-cycles/time.</p>
-</dd>
-<dt><strong>upper: float</strong></dt><dd><p>A Float specifying the upper limit of frequency range, in cycles/time.</p>
-</dd>
-<dt><strong>nPoints: int</strong></dt><dd><p>An Int specifying the number of points in the frequency range at which results should be
-given.</p>
-</dd>
-<dt><strong>bias: float</strong></dt><dd><p>A Float specifying the bias parameter. When results are requested at four or more
-frequency points, Abaqus biases the results toward the ends of the intervals to obtain
-better resolution. The default value is 3.0.</p>
-</dd>
+<dt><strong>lower</strong></dt><dd></dd>
+<dt><strong>nPoints</strong></dt><dd></dd>
+<dt><strong>upper</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1536,7 +1420,7 @@ given.</p>
 <h3>SteadyStateSubspaceFrequency<a class="headerlink" href="#steadystatesubspacefrequency" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SteadyStateSubspaceFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SteadyStateSubspaceFrequency.py#L1-L44"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SteadyStateSubspaceFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SteadyStateSubspaceFrequency.py#L1-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency" title="Permalink to this definition">#</a></dt>
 <dd><p>A SteadyStateSubspaceFrequency is an object used to define frequency over range of
 modes.</p>
 <p class="rubric">Notes</p>
@@ -1548,18 +1432,9 @@ modes.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>lower: float</strong></dt><dd><p>A Float specifying the lower limit of frequency range or a single frequency, in
-cycles/time.</p>
-</dd>
-<dt><strong>upper: float</strong></dt><dd><p>A Float specifying the upper limit of frequency range, in cycles/time.</p>
-</dd>
-<dt><strong>nPoints: int</strong></dt><dd><p>An Int specifying the number of points in the frequency range at which results should be
-given.</p>
-</dd>
-<dt><strong>bias: float</strong></dt><dd><p>A Float specifying the Bias parameter. When results are requested at four or more
-frequency points, Abaqus biases the results toward the ends of the intervals to obtain
-better resolution. The default value is 3.0.</p>
-</dd>
+<dt><strong>lower</strong></dt><dd></dd>
+<dt><strong>nPoints</strong></dt><dd></dd>
+<dt><strong>upper</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1620,7 +1495,7 @@ given.</p>
 <h3>StructuralDamping<a class="headerlink" href="#structuraldamping" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StructuralDamping</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDamping.py#L4-L23"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StructuralDamping</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDamping.py#L4-L18"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping" title="Permalink to this definition">#</a></dt>
 <dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping" title="abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping"><code class="xref py py-class docutils literal notranslate"><span class="pre">StructuralDamping</span></code></a> object contains structural damping parameters.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -1628,14 +1503,6 @@ given.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">structuralDamping</span>
 </pre></div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>components: StructuralDampingComponentArray</strong></dt><dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.StructuralDampingComponentArray.StructuralDampingComponentArray" title="abaqus.StepMiscellaneous.StructuralDampingComponentArray.StructuralDampingComponentArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">StructuralDampingComponentArray</span></code></a> object.</p>
-</dd>
-</dl>
-</dd>
-</dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping.components">
 <span class="sig-name descname"><span class="pre">components</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.StepMiscellaneous.StructuralDampingComponentArray.StructuralDampingComponentArray" title="abaqus.StepMiscellaneous.StructuralDampingComponentArray.StructuralDampingComponentArray"><span class="pre">StructuralDampingComponentArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDamping.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping.components" title="Permalink to this definition">#</a></dt>
@@ -1649,7 +1516,7 @@ given.</p>
 <h3>StructuralDampingByFrequency<a class="headerlink" href="#structuraldampingbyfrequency" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StructuralDampingByFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDampingByFrequency.py#L6-L27"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StructuralDampingByFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDampingByFrequency.py#L6-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency" title="Permalink to this definition">#</a></dt>
 <dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency" title="abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">StructuralDampingByFrequency</span></code></a> object contains structural damping parameters.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -1657,14 +1524,6 @@ given.</p>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">structuralDampingByFrequency</span>
 </pre></div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>components: StructuralDampingByFrequencyComponentArray</strong></dt><dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponentArray.StructuralDampingByFrequencyComponentArray" title="abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponentArray.StructuralDampingByFrequencyComponentArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">StructuralDampingByFrequencyComponentArray</span></code></a> object.</p>
-</dd>
-</dl>
-</dd>
-</dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency.components">
 <span class="sig-name descname"><span class="pre">components</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponentArray.StructuralDampingByFrequencyComponentArray" title="abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponentArray.StructuralDampingByFrequencyComponentArray"><span class="pre">StructuralDampingByFrequencyComponentArray</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDampingByFrequency.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency.components" title="Permalink to this definition">#</a></dt>
@@ -1678,7 +1537,7 @@ given.</p>
 <h3>StructuralDampingByFrequencyComponent<a class="headerlink" href="#structuraldampingbyfrequencycomponent" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StructuralDampingByFrequencyComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDampingByFrequencyComponent.py#L1-L26"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StructuralDampingByFrequencyComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDampingByFrequencyComponent.py#L1-L19"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent" title="Permalink to this definition">#</a></dt>
 <dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent" title="abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">StructuralDampingByFrequencyComponent</span></code></a> object is used to define structural damping over
 a range of frequencies.</p>
 <p class="rubric">Notes</p>
@@ -1690,10 +1549,8 @@ a range of frequencies.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>frequency: float</strong></dt><dd><p>A Float specifying the frequency value in cycles/time.</p>
-</dd>
-<dt><strong>factor: float</strong></dt><dd><p>A Float specifying the damping factor, s.</p>
-</dd>
+<dt><strong>factor</strong></dt><dd></dd>
+<dt><strong>frequency</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1738,7 +1595,7 @@ a range of frequencies.</p>
 <h3>StructuralDampingComponent<a class="headerlink" href="#structuraldampingcomponent" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StructuralDampingComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDampingComponent.py#L1-L31"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StructuralDampingComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDampingComponent.py#L1-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent" title="Permalink to this definition">#</a></dt>
 <dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent" title="abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">StructuralDampingComponent</span></code></a> object is used to define structural damping over a range of
 modes.</p>
 <p class="rubric">Notes</p>
@@ -1750,12 +1607,9 @@ modes.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>start: int</strong></dt><dd><p>An Int specifying the mode number of the lowest mode of a range.</p>
-</dd>
-<dt><strong>end: int</strong></dt><dd><p>An Int specifying the mode number of the highest mode of a range.</p>
-</dd>
-<dt><strong>factor: float</strong></dt><dd><p>A Float specifying the damping factor, s.</p>
-</dd>
+<dt><strong>end</strong></dt><dd></dd>
+<dt><strong>factor</strong></dt><dd></dd>
+<dt><strong>start</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1806,7 +1660,7 @@ modes.</p>
 <h3>SubstructureGenerateFrequency<a class="headerlink" href="#substructuregeneratefrequency" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SubstructureGenerateFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SubstructureGenerateFrequency.py#L1-L27"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SubstructureGenerateFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SubstructureGenerateFrequency.py#L1-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency" title="Permalink to this definition">#</a></dt>
 <dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency" title="abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">SubstructureGenerateFrequency</span></code></a> object is used to define the modes to be used in a modal
 dynamic analysis. These modes are selected from the specified frequency range including
 the frequency boundary.</p>
@@ -1819,10 +1673,8 @@ the frequency boundary.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>lower: float</strong></dt><dd><p>A Float specifying the lower limit of the frequency range, in cycles/time.</p>
-</dd>
-<dt><strong>upper: float</strong></dt><dd><p>A Float specifying the upper limit of the frequency range, in cycles/time.</p>
-</dd>
+<dt><strong>lower</strong></dt><dd></dd>
+<dt><strong>upper</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1867,7 +1719,7 @@ the frequency boundary.</p>
 <h3>SubstructureGenerateModes<a class="headerlink" href="#substructuregeneratemodes" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SubstructureGenerateModes</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SubstructureGenerateModes.py#L1-L33"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SubstructureGenerateModes</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SubstructureGenerateModes.py#L1-L23"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes" title="Permalink to this definition">#</a></dt>
 <dd><p>A <a class="reference internal" href="#abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes" title="abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes"><code class="xref py py-class docutils literal notranslate"><span class="pre">SubstructureGenerateModes</span></code></a> object is used to define the modes to be used in a modal
 dynamic analysis.</p>
 <p class="rubric">Notes</p>
@@ -1879,13 +1731,9 @@ dynamic analysis.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>start: int</strong></dt><dd><p>An Int specifying the mode number of the lowest mode of a range.</p>
-</dd>
-<dt><strong>end: int</strong></dt><dd><p>An Int specifying the mode number of the highest mode of a range.</p>
-</dd>
-<dt><strong>increment: int</strong></dt><dd><p>An Int specifying the increment used to define the intermediate mode numbers beginning
-from the lowest mode to the highest mode.</p>
-</dd>
+<dt><strong>end</strong></dt><dd></dd>
+<dt><strong>increment</strong></dt><dd></dd>
+<dt><strong>start</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>

@@ -1587,7 +1587,7 @@ numElements (Int); average, worst (Float); worstElement (MeshElement object) .</
 <h3>ElemType<a class="headerlink" href="#elemtype" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Mesh.ElemType.ElemType">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ElemType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elemCode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemLibrary</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'STANDARD'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hourglassStiffness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bendingHourglass</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drillingHourglass</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kinematicSplit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'AVERAGE_STRAIN'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distortionControl</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lengthRatio</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">secondOrderAccuracy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hourglassControl</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ENHANCED'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weightFactor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacementHourglass</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rotationalHourglass</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outOfPlaneDisplacementHourglass</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemDeletion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">particleConversion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">particleConversionThreshold</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">particleConversionPPD</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">particleConversionKernel</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'CUBIC'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxDegradation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">viscosity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">linearBulkViscosity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quadraticBulkViscosity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">linearKinematicCtrl</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initialGapOpening</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py#L4-L397"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ElemType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elemCode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemLibrary</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'STANDARD'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hourglassStiffness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bendingHourglass</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drillingHourglass</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kinematicSplit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'AVERAGE_STRAIN'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distortionControl</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lengthRatio</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">secondOrderAccuracy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hourglassControl</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ENHANCED'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weightFactor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacementHourglass</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rotationalHourglass</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outOfPlaneDisplacementHourglass</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemDeletion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">particleConversion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">particleConversionThreshold</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">particleConversionPPD</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">particleConversionKernel</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'CUBIC'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxDegradation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">viscosity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">linearBulkViscosity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quadraticBulkViscosity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">linearKinematicCtrl</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initialGapOpening</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/ElemType.py#L4-L292"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.ElemType.ElemType" title="Permalink to this definition">#</a></dt>
 <dd><p>The ElemType object is an argument object used as an argument in the setElementType
 command.</p>
 <p class="rubric">Notes</p>
@@ -1595,112 +1595,12 @@ command.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mesh</span>
 </pre></div>
 </div>
-<dl class="field-list">
+<dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl>
-<dt><strong>elemCode</strong></dt><dd><p>A SymbolicConstant specifying the Abaqus element code or just the element shape.
-Possible values are:</p>
-<ul class="simple">
-<li><p>C3D8R, specifying a 8-node linear brick, reduced integration with hourglass control.</p></li>
-<li><p>CODE, specifying add more codes.</p></li>
-<li><p>UNKNOWN_TRI, specifying an unknown element type associated with a triangular shape.</p></li>
-<li><p>UNKNOWN_QUAD, specifying an unknown element type associated with a quadrilateral</p></li>
-</ul>
-<p>shape.
-- UNKNOWN_HEX, specifying an unknown element type associated with a hexahedral shape.
-- UNKNOWN_WEDGE, specifying an unknown element type associated with a wedge shape.
-- UNKNOWN_TET, specifying an unknown element type associated with a tetrahedral shape.</p>
-</dd>
-<dt><strong>elemLibrary</strong></dt><dd><p>A SymbolicConstant specifying the Abaqus element library to use. Possible values are
-STANDARD and EXPLICIT. The default value is STANDARD.</p>
-</dd>
-<dt><strong>hourglassStiffness</strong></dt><dd><p>A Float specifying the hourglass stiffness. (For shell elements this is the membrane
-hourglass stiffness.) A value of zero indicates the default value should be used. The
-default value will be used where appropriate. The default value is 0.0.This argument is
-applicable only to some Abaqus/Standard elements.</p>
-</dd>
-<dt><strong>bendingHourglass</strong></dt><dd><p>A Float specifying the bending hourglass stiffness. A value of zero indicates the
-default value should be used. The default value will be used where appropriate. The
-default value is 0.0.This argument is applicable only to some Abaqus/Standard elements.</p>
-</dd>
-<dt><strong>drillingHourglass</strong></dt><dd><p>A Float specifying the drilling hourglass scaling factor. A value of zero indicates the
-default value should be used. The default value will be used where appropriate. The
-default value is 0.0.This argument is applicable only to some Abaqus/Standard elements.</p>
-</dd>
-<dt><strong>kinematicSplit</strong></dt><dd><p>A SymbolicConstant specifying the kinematic split control. Possible values are
-AVERAGE_STRAIN, ORTHOGONAL, and CENTROID. The default value is AVERAGE_STRAIN.This
-argument is applicable only to some Abaqus/Explicit elements.</p>
-</dd>
-<dt><strong>distortionControl</strong></dt><dd><p>A Boolean specifying whether to prevent negative element volumes or other excessive
-distortions in crushable materials. The default value is OFF.This argument is applicable
-only to some Abaqus/Explicit elements.</p>
-</dd>
-<dt><strong>lengthRatio</strong></dt><dd><p>A Float specifying the length ratio for distortion control in crushable materials.
-Possible values are 0.0 ≤≤ <strong>lengthRatio</strong> ≤≤ 1.0. The default value is
-<strong>lengthRatio</strong> = 0.10.1This argument is applicable only when <strong>distortionControl</strong> is ON.</p>
-</dd>
-<dt><strong>secondOrderAccuracy</strong></dt><dd><p>A Boolean specifying the second-order accuracy option. The default value is OFF.This
-argument is applicable only to some Abaqus/Explicit elements.</p>
-</dd>
-<dt><strong>hourglassControl</strong></dt><dd><p>A SymbolicConstant specifying the hourglass control. Possible values are
-RELAX_STIFFNESS, STIFFNESS, VISCOUS, ENHANCED, and COMBINED. The default value is
-ENHANCED.This argument is applicable only to some Abaqus/Explicit elements.</p>
-</dd>
-<dt><strong>weightFactor</strong></dt><dd><p>A Float specifying a weight factor when <strong>hourglassControl</strong> = COMBINED. The default value
-is 0.5.This argument is applicable only to some Abaqus/Explicit elements.</p>
-</dd>
-<dt><strong>displacementHourglass</strong></dt><dd><p>A Float specifying the displacement hourglass scaling factor. The default value will be
-used where appropriate. The default value is 1.0.This argument is applicable only to
-some Abaqus/Explicit elements.</p>
-</dd>
-<dt><strong>rotationalHourglass</strong></dt><dd><p>A Float specifying the rotational hourglass scaling factor. The default value will be
-used where appropriate. The default value is 1.0.This argument is applicable only to
-some Abaqus/Explicit elements.</p>
-</dd>
-<dt><strong>outOfPlaneDisplacementHourglass</strong></dt><dd><p>A Float specifying the out-of-plane displacement hourglass scaling factor. The default
-value will be used where appropriate. The default value is 1.0.This argument is
-applicable only to some Abaqus/Explicit elements.</p>
-</dd>
-<dt><strong>elemDeletion</strong></dt><dd><p>A SymbolicConstant specifying the element deletion option. Possible values are DEFAULT,
-ON, and OFF. The default value is DEFAULT.</p>
-</dd>
-<dt><strong>particleConversion</strong></dt><dd><p>A SymbolicConstant specifying the particle conversion option for smoothed particle
-hydrodynamics. When not OFF or DEFAULT this argument refers to the criterion used for
-conversion of elements to particles. Possible values are DEFAULT, OFF, TIME, STRAIN, and
-STRESS. The default value is DEFAULT.This argument is applicable only to some
-Abaqus/Explicit elements.</p>
-</dd>
-<dt><strong>particleConversionThreshold</strong></dt><dd><p>A Float specifying the threshold value for the particle conversion criterion specified
-by <strong>particleConversion</strong>. The default value is 0.0.This argument is applicable only to
-some Abaqus/Explicit elements.</p>
-</dd>
-<dt><strong>particleConversionPPD</strong></dt><dd><p>An Int specifying the number of particles per direction for element conversion when
-<strong>particleConversion</strong> is specified. The default value is 1.This argument is applicable
-only to some Abaqus/Explicit elements.</p>
-</dd>
-<dt><strong>particleConversionKernel</strong></dt><dd><p>A SymbolicConstant specifying the interpolation function for particle conversion when
-<strong>particleConversion</strong> is specified. Possible values are CUBIC, QUADRATIC, and QUINTIC.
-The default value is CUBIC.This argument is applicable only to some Abaqus/Explicit
-elements.</p>
-</dd>
-<dt><strong>maxDegradation</strong></dt><dd><p>A Float specifying the maximum degradation option for damage control. The default value
-is −1.0.</p>
-</dd>
-<dt><strong>viscosity</strong></dt><dd><p>A Float specifying the viscosity option. The default value is 0.0.This argument is
-applicable only to some Abaqus/Standard elements.</p>
-</dd>
-<dt><strong>linearBulkViscosity</strong></dt><dd><p>A Float specifying the linear bulk viscosity scaling factor option for Abaqus/Explicit.
-The default value is 1.0.</p>
-</dd>
-<dt><strong>quadraticBulkViscosity</strong></dt><dd><p>A Float specifying the quadratic bulk viscosity scaling factor option for
-Abaqus/Explicit. The default value is 1.0.</p>
-</dd>
-<dt><strong>linearKinematicCtrl</strong></dt><dd><p>A Float specifying the linear kinematic conversion value.This argument is applicable
-only to some Abaqus/Explicit elements.</p>
-</dd>
-<dt><strong>initialGapOpening</strong></dt><dd><p>A Float specifying the initial gap opening.This parameter is applicable only to some
-Abaqus/Standard elements.</p>
-</dd>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>initialGapOpening</strong></dt><dd></dd>
+<dt><strong>linearKinematicCtrl</strong></dt><dd></dd>
+<dt><strong>maxDegradation</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -2125,7 +2025,7 @@ all elements in the mesh are included.</p>
 <h3>MeshElement<a class="headerlink" href="#meshelement" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshElement.MeshElement">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MeshElement</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshElement.py#L5-L168"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshElement.MeshElement" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MeshElement</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshElement.py#L5-L155"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshElement.MeshElement" title="Permalink to this definition">#</a></dt>
 <dd><p>The MeshElement object refers to an element of a native mesh or an orphan mesh. A
 MeshElement object can be accessed via a part or part instance using an index that
 refers to the internal numbering of the element repository. The index does not refer to
@@ -2162,16 +2062,9 @@ the element label.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>label: int</strong></dt><dd><p>An Int specifying the element label.</p>
-</dd>
-<dt><strong>type: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the Abaqus element code.</p>
-</dd>
-<dt><strong>instanceName: str</strong></dt><dd><p>A String specifying the name of the part instance that owns this element.</p>
-</dd>
-<dt><strong>connectivity: int</strong></dt><dd><p>A tuple of Ints specifying the internal node indices that define the nodal connectivity.
-It is important to note the difference with <a class="reference internal" href="../../odb.html#abaqus.Odb.OdbMeshElement.OdbMeshElement" title="abaqus.Odb.OdbMeshElement.OdbMeshElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbMeshElement</span></code></a> object of ODB where the
-connectivity is node labels instead of node indices.</p>
-</dd>
+<dt><strong>connectivity</strong></dt><dd></dd>
+<dt><strong>label</strong></dt><dd></dd>
+<dt><strong>type</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -2209,7 +2102,7 @@ connectivity is node labels instead of node indices.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshElement.MeshElement.Element">
-<span class="sig-name descname"><span class="pre">Element</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#abaqus.Mesh.MeshNode.MeshNode" title="abaqus.Mesh.MeshNode.MeshNode"><span class="pre">MeshNode</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemShape</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshElement.py#L71-L99"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshElement.MeshElement.Element" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">Element</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#abaqus.Mesh.MeshNode.MeshNode" title="abaqus.Mesh.MeshNode.MeshNode"><span class="pre">MeshNode</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemShape</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshElement.py#L58-L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshElement.MeshElement.Element" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates an element on an orphan mesh part from a sequence of nodes.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2247,7 +2140,7 @@ connectivity is node labels instead of node indices.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshElement.MeshElement.getAdjacentElements">
-<span class="sig-name descname"><span class="pre">getAdjacentElements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshElement.py#L131-L139"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshElement.MeshElement.getAdjacentElements" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getAdjacentElements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshElement.py#L118-L126"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshElement.MeshElement.getAdjacentElements" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of element objects adjacent to the mesh element.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -2261,7 +2154,7 @@ connectivity is node labels instead of node indices.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshElement.MeshElement.getElemEdges">
-<span class="sig-name descname"><span class="pre">getElemEdges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshElement.py#L111-L119"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshElement.MeshElement.getElemEdges" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getElemEdges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshElement.py#L98-L106"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshElement.MeshElement.getElemEdges" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a tuple of unique element edge objects on the element.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -2275,7 +2168,7 @@ connectivity is node labels instead of node indices.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshElement.MeshElement.getElemFaces">
-<span class="sig-name descname"><span class="pre">getElemFaces</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshElement.py#L121-L129"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshElement.MeshElement.getElemFaces" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getElemFaces</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshElement.py#L108-L116"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshElement.MeshElement.getElemFaces" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a tuple of unique element face objects on the element.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -2289,7 +2182,7 @@ connectivity is node labels instead of node indices.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshElement.MeshElement.getElementsByFeatureEdge">
-<span class="sig-name descname"><span class="pre">getElementsByFeatureEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshElement.py#L141-L156"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshElement.MeshElement.getElementsByFeatureEdge" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getElementsByFeatureEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshElement.py#L128-L143"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshElement.MeshElement.getElementsByFeatureEdge" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of mesh element objects that are obtained by recursively
 finding adjacent elements along a feature edge with a face angle of less than or equal
 to the specified angle.</p>
@@ -2311,7 +2204,7 @@ to the specified angle.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshElement.MeshElement.getNodes">
-<span class="sig-name descname"><span class="pre">getNodes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshElement.py#L101-L109"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshElement.MeshElement.getNodes" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getNodes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshElement.py#L88-L96"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshElement.MeshElement.getNodes" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a tuple of node objects of the element.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -2337,7 +2230,7 @@ to the specified angle.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshElement.MeshElement.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshElement.py#L158-L168"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshElement.MeshElement.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshElement.py#L145-L155"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshElement.MeshElement.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the MeshElement object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2689,7 +2582,7 @@ when it moves from a coarse mesh to a fine mesh. The default value is ON.</p>
 <h3>MeshFace<a class="headerlink" href="#meshface" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshFace.MeshFace">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MeshFace</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L1-L187"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MeshFace</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L1-L180"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace" title="Permalink to this definition">#</a></dt>
 <dd><p>The MeshFace object refers to an element face. It has no constructor or members. A
 MeshFace object can be accessed via a MeshFaceArray or a repository on a part or part
 instance.</p>
@@ -2708,10 +2601,8 @@ instance.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>label: int</strong></dt><dd><p>An Int specifying an Int specifying the element label.</p>
-</dd>
-<dt><strong>face: int</strong></dt><dd><p>An Int specifying a symbolic constant specifying the side of the element.</p>
-</dd>
+<dt><strong>face</strong></dt><dd></dd>
+<dt><strong>label</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -2767,7 +2658,7 @@ instance.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshFace.MeshFace.getElemEdges">
-<span class="sig-name descname"><span class="pre">getElemEdges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L35-L43"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.getElemEdges" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getElemEdges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L28-L36"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.getElemEdges" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a tuple of unique element edges on the element face.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -2781,7 +2672,7 @@ instance.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshFace.MeshFace.getElemEdgesByFaceAngle">
-<span class="sig-name descname"><span class="pre">getElemEdgesByFaceAngle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L110-L125"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.getElemEdgesByFaceAngle" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getElemEdgesByFaceAngle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L103-L118"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.getElemEdgesByFaceAngle" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of element edge objects that are obtained by recursively
 finding adjacent element edges that are at an angle of less than or equal to the
 specified face angle.</p>
@@ -2803,7 +2694,7 @@ specified face angle.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshFace.MeshFace.getElemFacesByFaceAngle">
-<span class="sig-name descname"><span class="pre">getElemFacesByFaceAngle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L93-L108"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.getElemFacesByFaceAngle" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getElemFacesByFaceAngle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L86-L101"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.getElemFacesByFaceAngle" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of element face objects that are obtained by recursively
 finding adjacent element faces that are at an angle of less than or equal to the
 specified angle.</p>
@@ -2825,7 +2716,7 @@ specified angle.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshFace.MeshFace.getElemFacesByLayer">
-<span class="sig-name descname"><span class="pre">getElemFacesByLayer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numLayers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L172-L187"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.getElemFacesByLayer" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getElemFacesByLayer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numLayers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L165-L180"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.getElemFacesByLayer" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of element face objects, obtained by traversing shell
 elements or the exterior of a solid mesh, and recursively finding adjacent element faces
 by layer.</p>
@@ -2847,7 +2738,7 @@ by layer.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshFace.MeshFace.getElemFacesByLimitingAngle">
-<span class="sig-name descname"><span class="pre">getElemFacesByLimitingAngle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L144-L159"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.getElemFacesByLimitingAngle" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getElemFacesByLimitingAngle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L137-L152"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.getElemFacesByLimitingAngle" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of element edge objects that are obtained by recursively
 finding adjacent element faces that are at an angle of less than or equal to the
 specified face angle with the seed face.</p>
@@ -2869,7 +2760,7 @@ specified face angle with the seed face.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshFace.MeshFace.getElements">
-<span class="sig-name descname"><span class="pre">getElements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L45-L53"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.getElements" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getElements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L38-L46"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.getElements" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a tuple of elements that share the element face.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -2883,7 +2774,7 @@ specified face angle with the seed face.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshFace.MeshFace.getElementsByFaceAngle">
-<span class="sig-name descname"><span class="pre">getElementsByFaceAngle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L127-L142"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.getElementsByFaceAngle" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getElementsByFaceAngle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L120-L135"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.getElementsByFaceAngle" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of mesh Element objects that are obtained by recursively
 finding adjacent element faces that are at an angle of less than or equal to the
 specified angle.</p>
@@ -2905,7 +2796,7 @@ specified angle.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshFace.MeshFace.getElementsViaTopology">
-<span class="sig-name descname"><span class="pre">getElementsViaTopology</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L161-L170"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.getElementsViaTopology" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getElementsViaTopology</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L154-L163"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.getElementsViaTopology" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of mesh Element objects that are obtained by recursively
 finding adjacent elements via topology.</p>
 <dl class="field-list simple">
@@ -2920,7 +2811,7 @@ finding adjacent elements via topology.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshFace.MeshFace.getNodes">
-<span class="sig-name descname"><span class="pre">getNodes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L55-L63"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.getNodes" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getNodes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L48-L56"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.getNodes" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a tuple of nodes on the element face.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -2934,7 +2825,7 @@ finding adjacent elements via topology.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshFace.MeshFace.getNodesByFaceAngle">
-<span class="sig-name descname"><span class="pre">getNodesByFaceAngle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L65-L80"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.getNodesByFaceAngle" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getNodesByFaceAngle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L58-L73"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.getNodesByFaceAngle" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of mesh node objects that are obtained by recursively
 finding adjacent element faces that are at an angle of less than or equal to the
 specified angle.</p>
@@ -2956,7 +2847,7 @@ specified angle.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshFace.MeshFace.getNormal">
-<span class="sig-name descname"><span class="pre">getNormal</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L82-L91"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.getNormal" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getNormal</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshFace.py#L75-L84"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshFace.MeshFace.getNormal" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns the normal direction for the element face.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -3058,7 +2949,7 @@ collapsed such that a normal cannot be computed, a zero-length vector is returne
 <h3>MeshNode<a class="headerlink" href="#meshnode" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshNode.MeshNode">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MeshNode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinates</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="part_assembly/datum.html#abaqus.Datum.DatumCsys.DatumCsys" title="abaqus.Datum.DatumCsys.DatumCsys"><span class="pre">DatumCsys</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshNode.py#L4-L148"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshNode.MeshNode" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MeshNode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinates</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="part_assembly/datum.html#abaqus.Datum.DatumCsys.DatumCsys" title="abaqus.Datum.DatumCsys.DatumCsys"><span class="pre">DatumCsys</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshNode.py#L4-L139"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshNode.MeshNode" title="Permalink to this definition">#</a></dt>
 <dd><p>The MeshNode object refers to a node of a native mesh or an orphan mesh. A MeshNode
 object can be accessed via a part or part instance using an index that refers to the
 internal numbering of the node repository. The index does not refer to the node label.</p>
@@ -3095,12 +2986,8 @@ internal numbering of the node repository. The index does not refer to the node 
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>label: int</strong></dt><dd><p>An Int specifying the node label.</p>
-</dd>
-<dt><strong>instanceName: str</strong></dt><dd><p>A String specifying the name of the part instance that owns this node.</p>
-</dd>
-<dt><strong>coordinates: float</strong></dt><dd><p>A tuple of three Floats specifying the coordinates of the new node.</p>
-</dd>
+<dt><strong>coordinates</strong></dt><dd></dd>
+<dt><strong>label</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -3138,7 +3025,7 @@ internal numbering of the node repository. The index does not refer to the node 
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshNode.MeshNode.getElemEdges">
-<span class="sig-name descname"><span class="pre">getElemEdges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshNode.py#L91-L99"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshNode.MeshNode.getElemEdges" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getElemEdges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshNode.py#L82-L90"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshNode.MeshNode.getElemEdges" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a tuple of element edge objects that share the node.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -3152,7 +3039,7 @@ internal numbering of the node repository. The index does not refer to the node 
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshNode.MeshNode.getElemFaces">
-<span class="sig-name descname"><span class="pre">getElemFaces</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshNode.py#L101-L109"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshNode.MeshNode.getElemFaces" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getElemFaces</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshNode.py#L92-L100"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshNode.MeshNode.getElemFaces" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a tuple of element face objects that share the node.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -3166,7 +3053,7 @@ internal numbering of the node repository. The index does not refer to the node 
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshNode.MeshNode.getElements">
-<span class="sig-name descname"><span class="pre">getElements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshNode.py#L111-L119"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshNode.MeshNode.getElements" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getElements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshNode.py#L102-L110"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshNode.MeshNode.getElements" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a tuple of element objects that share the node.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -3180,7 +3067,7 @@ internal numbering of the node repository. The index does not refer to the node 
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshNode.MeshNode.getNodesByFeatureEdge">
-<span class="sig-name descname"><span class="pre">getNodesByFeatureEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshNode.py#L121-L136"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshNode.MeshNode.getNodesByFeatureEdge" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getNodesByFeatureEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshNode.py#L112-L127"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshNode.MeshNode.getNodesByFeatureEdge" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of mesh node objects that are obtained by recursively
 finding adjacent nodes along a feature edge that are at an angle of less than or equal
 to the specified face angle.</p>
@@ -3214,7 +3101,7 @@ to the specified face angle.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshNode.MeshNode.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshNode.py#L138-L148"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshNode.MeshNode.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshNode.py#L129-L139"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshNode.MeshNode.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the MeshNode object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -4832,7 +4719,7 @@ numElements (Int); average, worst (Float); worstElement
 <h3>MeshStats<a class="headerlink" href="#meshstats" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshStats.MeshStats">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MeshStats</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshStats.py#L1-L65"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshStats.MeshStats" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MeshStats</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshStats.py#L1-L42"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshStats.MeshStats" title="Permalink to this definition">#</a></dt>
 <dd><p>The MeshStats object is a query object for holding mesh statistics and is returned by
 the getMeshStats command. The object does not have any methods.</p>
 <p class="rubric">Notes</p>
@@ -4843,26 +4730,16 @@ the getMeshStats command. The object does not have any methods.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>numPointElems: int</strong></dt><dd><p>An Int specifying the number of point elements.</p>
-</dd>
-<dt><strong>numLineElems: int</strong></dt><dd><p>An Int specifying the number of line elements.</p>
-</dd>
-<dt><strong>numQuadElems: int</strong></dt><dd><p>An Int specifying the number of quadrilateral elements.</p>
-</dd>
-<dt><strong>numTriElems: int</strong></dt><dd><p>An Int specifying the number of triangular elements.</p>
-</dd>
-<dt><strong>numHexElems: int</strong></dt><dd><p>An Int specifying the number of hexahedral elements.</p>
-</dd>
-<dt><strong>numWedgeElems: int</strong></dt><dd><p>An Int specifying the number of wedge elements.</p>
-</dd>
-<dt><strong>numTetElems: int</strong></dt><dd><p>An Int specifying the number of tetrahedral elements.</p>
-</dd>
-<dt><strong>numPyramidElems: int</strong></dt><dd><p>An Int specifying the number of pyramid elements.</p>
-</dd>
-<dt><strong>numNodes: int</strong></dt><dd><p>An Int specifying the number of nodes.</p>
-</dd>
-<dt><strong>numMeshedRegions: int</strong></dt><dd><p>An Int specifying the number of regions that contain a mesh.</p>
-</dd>
+<dt><strong>numHexElems</strong></dt><dd></dd>
+<dt><strong>numLineElems</strong></dt><dd></dd>
+<dt><strong>numMeshedRegions</strong></dt><dd></dd>
+<dt><strong>numNodes</strong></dt><dd></dd>
+<dt><strong>numPointElems</strong></dt><dd></dd>
+<dt><strong>numPyramidElems</strong></dt><dd></dd>
+<dt><strong>numQuadElems</strong></dt><dd></dd>
+<dt><strong>numTetElems</strong></dt><dd></dd>
+<dt><strong>numTriElems</strong></dt><dd></dd>
+<dt><strong>numWedgeElems</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>

@@ -359,7 +359,7 @@
 <h3>DisplayGroup<a class="headerlink" href="#displaygroup" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.DisplayGroup.DisplayGroup">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DisplayGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leaf</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.DisplayGroup.Leaf.Leaf" title="abaqus.DisplayGroup.Leaf.Leaf"><span class="pre">Leaf</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroup.py#L5-L150"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DisplayGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leaf</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.DisplayGroup.Leaf.Leaf" title="abaqus.DisplayGroup.Leaf.Leaf"><span class="pre">Leaf</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroup.py#L5-L132"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup" title="Permalink to this definition">#</a></dt>
 <dd><p>DisplayGroup objects are used to select a subset of the entities displayed in the
 viewport.</p>
 <p class="rubric">Notes</p>
@@ -379,21 +379,7 @@ viewport.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>canUndo: Boolean</strong></dt><dd><p>A Boolean specifying whether Undo is possible or not.</p>
-</dd>
-<dt><strong>canRedo: Boolean</strong></dt><dd><p>A Boolean specifying whether Redo is possible or not.</p>
-</dd>
-<dt><strong>name: str</strong></dt><dd><p>A String specifying the repository key.</p>
-</dd>
-<dt><strong>module: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the module in which the display group has been created.
-The possible values are PART, ASSEMBLY, PART_ASSEMBLY, ODB, and ALL.</p>
-</dd>
-<dt><strong>modelName: str</strong></dt><dd><p>A String specifying the name of the model to which the display group belongs when the
-module is part- or assembly-based.</p>
-</dd>
-<dt><strong>partName: str</strong></dt><dd><p>A String specifying the name of the part to which the display group belongs when the
-module is part-based.</p>
-</dd>
+<dt><strong>module</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -431,7 +417,7 @@ module is part-based.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.DisplayGroup.DisplayGroup.add">
-<span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">leaf</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.DisplayGroup.Leaf.Leaf" title="abaqus.DisplayGroup.Leaf.Leaf"><span class="pre">Leaf</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroup.py#L91-L99"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.add" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">leaf</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.DisplayGroup.Leaf.Leaf" title="abaqus.DisplayGroup.Leaf.Leaf"><span class="pre">Leaf</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroup.py#L73-L81"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.add" title="Permalink to this definition">#</a></dt>
 <dd><p>This method adds the specified items to the display group.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -457,7 +443,7 @@ module is part-based.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.DisplayGroup.DisplayGroup.either">
-<span class="sig-name descname"><span class="pre">either</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">leaf</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.DisplayGroup.Leaf.Leaf" title="abaqus.DisplayGroup.Leaf.Leaf"><span class="pre">Leaf</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroup.py#L101-L110"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.either" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">either</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">leaf</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.DisplayGroup.Leaf.Leaf" title="abaqus.DisplayGroup.Leaf.Leaf"><span class="pre">Leaf</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroup.py#L83-L92"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.either" title="Permalink to this definition">#</a></dt>
 <dd><p>This method redefines the display group to be only those items that are not shared by
 the <strong>leaf</strong> argument and by the display group.</p>
 <dl class="field-list simple">
@@ -472,7 +458,7 @@ the <strong>leaf</strong> argument and by the display group.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.DisplayGroup.DisplayGroup.intersect">
-<span class="sig-name descname"><span class="pre">intersect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">leaf</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.DisplayGroup.Leaf.Leaf" title="abaqus.DisplayGroup.Leaf.Leaf"><span class="pre">Leaf</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroup.py#L112-L121"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.intersect" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">intersect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">leaf</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.DisplayGroup.Leaf.Leaf" title="abaqus.DisplayGroup.Leaf.Leaf"><span class="pre">Leaf</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroup.py#L94-L103"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.intersect" title="Permalink to this definition">#</a></dt>
 <dd><p>This method redefines the display group to be only those items that are shared by the
 <strong>leaf</strong> argument and the display group.</p>
 <dl class="field-list simple">
@@ -514,13 +500,13 @@ module is part-based.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.DisplayGroup.DisplayGroup.redoLast">
-<span class="sig-name descname"><span class="pre">redoLast</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroup.py#L123-L125"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.redoLast" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">redoLast</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroup.py#L105-L107"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.redoLast" title="Permalink to this definition">#</a></dt>
 <dd><p>This method redoes the last undone operation on the display group.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.DisplayGroup.DisplayGroup.remove">
-<span class="sig-name descname"><span class="pre">remove</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">leaf</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.DisplayGroup.Leaf.Leaf" title="abaqus.DisplayGroup.Leaf.Leaf"><span class="pre">Leaf</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroup.py#L127-L135"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.remove" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">remove</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">leaf</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.DisplayGroup.Leaf.Leaf" title="abaqus.DisplayGroup.Leaf.Leaf"><span class="pre">Leaf</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroup.py#L109-L117"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.remove" title="Permalink to this definition">#</a></dt>
 <dd><p>This method removes the specified items from the display group.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -534,7 +520,7 @@ module is part-based.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.DisplayGroup.DisplayGroup.replace">
-<span class="sig-name descname"><span class="pre">replace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">leaf</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.DisplayGroup.Leaf.Leaf" title="abaqus.DisplayGroup.Leaf.Leaf"><span class="pre">Leaf</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroup.py#L137-L146"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.replace" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">replace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">leaf</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.DisplayGroup.Leaf.Leaf" title="abaqus.DisplayGroup.Leaf.Leaf"><span class="pre">Leaf</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroup.py#L119-L128"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.replace" title="Permalink to this definition">#</a></dt>
 <dd><p>This method replaces the contents of the display group with the specified items.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -549,7 +535,7 @@ contents.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.DisplayGroup.DisplayGroup.undoLast">
-<span class="sig-name descname"><span class="pre">undoLast</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroup.py#L148-L150"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.undoLast" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">undoLast</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroup.py#L130-L132"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroup.DisplayGroup.undoLast" title="Permalink to this definition">#</a></dt>
 <dd><p>This method undoes the last operation performed on the display group.</p>
 </dd></dl>
 
@@ -582,7 +568,7 @@ contents.</p>
 <h3>DisplayGroupInstance<a class="headerlink" href="#displaygroupinstance" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DisplayGroupInstance</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroupInstance.py#L5-L102"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DisplayGroupInstance</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroupInstance.py#L5-L87"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance" title="Permalink to this definition">#</a></dt>
 <dd><p>A <a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance" title="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisplayGroupInstance</span></code></a> object stores the IDs of the entities displayed in a viewport.
 The DisplayGroupInstance object has no constructor. When you set a display group to be
 plotted in a viewport, Abaqus/CAE creates a DisplayGroupInstance object for each display
@@ -600,24 +586,6 @@ group and places it in the DisplayGroupInstanceRepository object.</p>
 <span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">partDisplay</span><span class="o">.</span><span class="n">displayGroupInstances</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>name: str</strong></dt><dd><p>A String specifying the repository key.</p>
-</dd>
-<dt><strong>lockOptions: Boolean</strong></dt><dd><p>A Boolean specifying whether the display options stored on the <a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance" title="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisplayGroupInstance</span></code></a>
-object should be synchronized with changes to the viewport display options. This member
-is available only for <a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance" title="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisplayGroupInstance</span></code></a> objects that are members of the
-<a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance" title="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisplayGroupInstance</span></code></a> repository member of the <a class="reference internal" href="odb_display.html#abaqus.OdbDisplay.OdbDisplay.OdbDisplay" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbDisplay</span></code></a> object. The default value is
-OFF.</p>
-</dd>
-<dt><strong>odbDisplayOptions: OdbDisplayOptions</strong></dt><dd><p>An <code class="xref py py-class docutils literal notranslate"><span class="pre">OdbDisplay`Options</span></code> object specifying this member is available only for
-<a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance" title="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisplayGroupInstance</span></code></a> objects that are members of the <a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance" title="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisplayGroupInstance</span></code></a> repository
-member of the <a class="reference internal" href="odb_display.html#abaqus.OdbDisplay.OdbDisplay.OdbDisplay" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbDisplay</span></code></a> object.</p>
-</dd>
-</dl>
-</dd>
-</dl>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -640,7 +608,7 @@ member of the <a class="reference internal" href="odb_display.html#abaqus.OdbDis
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.elements">
-<span class="sig-name descname"><span class="pre">elements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroupInstance.py#L73-L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.elements" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">elements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroupInstance.py#L58-L71"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.elements" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns the list of elements present in the DisplayGroupInstance object. The
 elements method returns a Dictionary object that uses part instance names for the keys.
 The value of the items in the Dictionary object is a List of user element labels that
@@ -675,7 +643,7 @@ OFF.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.nodes">
-<span class="sig-name descname"><span class="pre">nodes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroupInstance.py#L58-L71"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.nodes" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">nodes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroupInstance.py#L43-L56"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.nodes" title="Permalink to this definition">#</a></dt>
 <dd><p>This method is used to obtain the list of nodes present in the DisplayGroupInstance
 object. It returns a Dictionary object keyed by part instance names, the value of which
 is a list of user node labels belonging to the part instance and contained in the
@@ -702,7 +670,7 @@ member of the OdbDisplay object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lockOptions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroupInstance.py#L88-L102"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lockOptions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/DisplayGroupInstance.py#L73-L87"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the DisplayGroupInstance object. The setValues method is available
 only for DisplayGroupInstance objects that are members of the DisplayGroupInstance
 repository member of the OdbDisplay object.</p>
@@ -778,7 +746,7 @@ DisplayGroupInstance objects stored in the DisplayGroupInstanceRepository for wh
 <h3>Leaf<a class="headerlink" href="#leaf" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.Leaf.Leaf">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Leaf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">leafType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/Leaf.py#L4-L54"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.Leaf.Leaf" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Leaf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">leafType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/Leaf.py#L4-L48"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.Leaf.Leaf" title="Permalink to this definition">#</a></dt>
 <dd><p>Leaf objects are used to specify the items in a display group. Leaf objects are
 constructed as temporary objects, which are then used as arguments to DisplayGroup
 commands.
@@ -791,15 +759,6 @@ the DisplayGroup expression is evaluated, and they can have SymbolicConstant val
 <span class="kn">import</span> <span class="nn">displayGroupOdbToolset</span>
 </pre></div>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Attributes</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>leafType</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
-</dl>
-</dd>
-</dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.Leaf.Leaf.leafType">
 <span class="sig-name descname"><span class="pre">leafType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">abaqusConstants.SymbolicConstantType</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/Leaf.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.Leaf.Leaf.leafType" title="Permalink to this definition">#</a></dt>
@@ -817,7 +776,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromDatums<a class="headerlink" href="#leaffromdatums" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromDatums.LeafFromDatums">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromDatums</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datumSeq</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../mdb/model/part_assembly/datum.html#abaqus.Datum.Datum.Datum" title="abaqus.Datum.Datum.Datum"><span class="pre">Datum</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromDatums.py#L6-L55"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromDatums.LeafFromDatums" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromDatums</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datumSeq</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../mdb/model/part_assembly/datum.html#abaqus.Datum.Datum.Datum" title="abaqus.Datum.Datum.Datum"><span class="pre">Datum</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromDatums.py#L6-L49"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromDatums.LeafFromDatums" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromDatums object can be used whenever a Leaf object is expected as an argument.
 Leaf objects are used to specify the items in a display group. Leaf objects are
 constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -831,9 +790,7 @@ The LeafFromDatums object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -851,7 +808,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromDisplayGroup<a class="headerlink" href="#leaffromdisplaygroup" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromDisplayGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">displayGroup</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroupArray.DisplayGroupArray" title="abaqus.DisplayGroup.DisplayGroupArray.DisplayGroupArray"><span class="pre">DisplayGroupArray</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromDisplayGroup.py#L6-L59"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromDisplayGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">displayGroup</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroupArray.DisplayGroupArray" title="abaqus.DisplayGroup.DisplayGroupArray.DisplayGroupArray"><span class="pre">DisplayGroupArray</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromDisplayGroup.py#L6-L51"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromDisplayGroup object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -865,11 +822,7 @@ commands.The LeafFromDisplayGroup object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
-<dt><strong>displayGroup</strong></dt><dd><p>A <a class="reference internal" href="#abaqus.DisplayGroup.DisplayGroupArray.DisplayGroupArray" title="abaqus.DisplayGroup.DisplayGroupArray.DisplayGroupArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisplayGroupArray</span></code></a> object.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -893,7 +846,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromElementLabels<a class="headerlink" href="#leaffromelementlabels" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromElementLabels.LeafFromElementLabels">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromElementLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">partInstanceName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementLabels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromElementLabels.py#L5-L76"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromElementLabels.LeafFromElementLabels" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromElementLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">partInstanceName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementLabels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromElementLabels.py#L5-L63"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromElementLabels.LeafFromElementLabels" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromElementLabels object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -908,16 +861,7 @@ This page discusses:</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
-<dt><strong>partInstanceName</strong></dt><dd><p>A String specifying the name of the part instance to which <strong>elementLabels</strong> refers.</p>
-</dd>
-<dt><strong>elementLabels</strong></dt><dd><p>A sequence of Strings specifying expressions that denote element labels. The expression
-can be any of the following:An Int specifying a single element label; for example, <cite>1</cite>.A
-String specifying a single element label; for example, <cite>‘7’</cite>.A String specifying a
-sequence of element labels; for example, <cite>‘3:5’</cite> and <cite>‘3:15:3’</cite>.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -950,7 +894,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromElementSets<a class="headerlink" href="#leaffromelementsets" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromElementSets.LeafFromElementSets">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromElementSets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elementSets</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromElementSets.py#L5-L61"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromElementSets.LeafFromElementSets" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromElementSets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elementSets</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromElementSets.py#L5-L52"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromElementSets.LeafFromElementSets" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromElementSets object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -964,12 +908,7 @@ The LeafFromElementSets object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
-<dt><strong>elementSets</strong></dt><dd><p>A sequence of Strings specifying element sets or a String specifying a single element
-set.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -994,7 +933,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromElementVarRange<a class="headerlink" href="#leaffromelementvarrange" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromElementVarRange.LeafFromElementVarRange">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromElementVarRange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">minimumRange</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximumRange</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">insideRange</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromElementVarRange.py#L5-L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromElementVarRange.LeafFromElementVarRange" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromElementVarRange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">minimumRange</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximumRange</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">insideRange</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromElementVarRange.py#L5-L71"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromElementVarRange.LeafFromElementVarRange" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromElementVarRange object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1008,18 +947,8 @@ The LeafFromElementVarRange object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
-<dt><strong>minimumRange</strong></dt><dd><p>A Float specifying the minimum value for the variable range. The default value is
-−3.40282346639E38.</p>
-</dd>
-<dt><strong>maximumRange</strong></dt><dd><p>A Float specifying the maximum value for the variable range. The default value is
-3.40282346639e+038.</p>
-</dd>
-<dt><strong>insideRange</strong></dt><dd><p>A Boolean specifying the method used to evaluate the range. If <strong>insideRange</strong> = ON, the
-range falls inside the specified minimum and maximum values. The default value is ON.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
+<dt><strong>minimumRange</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1058,7 +987,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromGeometry<a class="headerlink" href="#leaffromgeometry" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromGeometry.LeafFromGeometry">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromGeometry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edgeSeq</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">faceSeq</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cellSeq</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromGeometry.py#L5-L65"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromGeometry.LeafFromGeometry" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromGeometry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edgeSeq</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">faceSeq</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cellSeq</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromGeometry.py#L5-L59"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromGeometry.LeafFromGeometry" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromGeometry object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1072,9 +1001,7 @@ The LeafFromGeometry object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1092,7 +1019,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromInstance<a class="headerlink" href="#leaffrominstance" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromInstance.LeafFromInstance">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromInstance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instances</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mdb/model/assembly.html#abaqus.Assembly.PartInstance.PartInstance" title="abaqus.Assembly.PartInstance.PartInstance"><span class="pre">PartInstance</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromInstance.py#L6-L59"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromInstance.LeafFromInstance" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromInstance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instances</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mdb/model/assembly.html#abaqus.Assembly.PartInstance.PartInstance" title="abaqus.Assembly.PartInstance.PartInstance"><span class="pre">PartInstance</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromInstance.py#L6-L53"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromInstance.LeafFromInstance" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromInstance object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1106,9 +1033,7 @@ The LeafFromInstance object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1126,7 +1051,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromInstanceElementLabels<a class="headerlink" href="#leaffrominstanceelementlabels" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromInstanceElementLabels.LeafFromInstanceElementLabels">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromInstanceElementLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elementLabels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromInstanceElementLabels.py#L5-L55"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromInstanceElementLabels.LeafFromInstanceElementLabels" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromInstanceElementLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elementLabels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromInstanceElementLabels.py#L5-L49"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromInstanceElementLabels.LeafFromInstanceElementLabels" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromInstanceElementLabels object can be used whenever a Leaf object is expected
 as an argument. Leaf objects are used to specify the items in a display group. Leaf
 objects are constructed as temporary objects, which are then used as arguments to
@@ -1140,9 +1065,7 @@ The LeafFromInstanceElementLabels object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1160,7 +1083,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromInstanceNodeLabels<a class="headerlink" href="#leaffrominstancenodelabels" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromInstanceNodeLabels.LeafFromInstanceNodeLabels">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromInstanceNodeLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodeLabels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromInstanceNodeLabels.py#L5-L55"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromInstanceNodeLabels.LeafFromInstanceNodeLabels" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromInstanceNodeLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodeLabels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromInstanceNodeLabels.py#L5-L49"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromInstanceNodeLabels.LeafFromInstanceNodeLabels" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromInstanceNodeLabels object can be used whenever a Leaf object is expected as
 an argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1174,9 +1097,7 @@ The LeafFromInstanceNodeLabels object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1194,7 +1115,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromMeshElementLabels<a class="headerlink" href="#leaffrommeshelementlabels" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromMeshElementLabels.LeafFromMeshElementLabels">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromMeshElementLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elementSeq</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../mdb/model/mesh.html#abaqus.Mesh.MeshElement.MeshElement" title="abaqus.Mesh.MeshElement.MeshElement"><span class="pre">MeshElement</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromMeshElementLabels.py#L6-L55"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromMeshElementLabels.LeafFromMeshElementLabels" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromMeshElementLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elementSeq</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../mdb/model/mesh.html#abaqus.Mesh.MeshElement.MeshElement" title="abaqus.Mesh.MeshElement.MeshElement"><span class="pre">MeshElement</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromMeshElementLabels.py#L6-L49"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromMeshElementLabels.LeafFromMeshElementLabels" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromMeshElementLabels object can be used whenever a Leaf object is expected as
 an argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1208,9 +1129,7 @@ The LeafFromMeshElementLabels object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1228,7 +1147,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromMeshNodeLabels<a class="headerlink" href="#leaffrommeshnodelabels" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromMeshNodeLabels.LeafFromMeshNodeLabels">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromMeshNodeLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodeSeq</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../mdb/model/mesh.html#abaqus.Mesh.MeshNode.MeshNode" title="abaqus.Mesh.MeshNode.MeshNode"><span class="pre">MeshNode</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromMeshNodeLabels.py#L6-L55"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromMeshNodeLabels.LeafFromMeshNodeLabels" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromMeshNodeLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodeSeq</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../mdb/model/mesh.html#abaqus.Mesh.MeshNode.MeshNode" title="abaqus.Mesh.MeshNode.MeshNode"><span class="pre">MeshNode</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromMeshNodeLabels.py#L6-L49"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromMeshNodeLabels.LeafFromMeshNodeLabels" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromMeshNodeLabels object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1242,9 +1161,7 @@ The LeafFromMeshNodeLabels object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1262,7 +1179,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromMeshSurfaceSets<a class="headerlink" href="#leaffrommeshsurfacesets" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromMeshSurfaceSets.LeafFromMeshSurfaceSets">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromMeshSurfaceSets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">surfaceSets</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../mdb/model/part_assembly/region.html#abaqus.Region.Surface.Surface" title="abaqus.Region.Surface.Surface"><span class="pre">Surface</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromMeshSurfaceSets.py#L6-L54"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromMeshSurfaceSets.LeafFromMeshSurfaceSets" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromMeshSurfaceSets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">surfaceSets</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../mdb/model/part_assembly/region.html#abaqus.Region.Surface.Surface" title="abaqus.Region.Surface.Surface"><span class="pre">Surface</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromMeshSurfaceSets.py#L6-L48"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromMeshSurfaceSets.LeafFromMeshSurfaceSets" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromMeshSurfaceSets object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1276,9 +1193,7 @@ The LeafFromMeshSurfaceSets object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1296,7 +1211,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromModelElemLabels<a class="headerlink" href="#leaffrommodelelemlabels" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromModelElemLabels.LeafFromModelElemLabels">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromModelElemLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elementLabels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromModelElemLabels.py#L5-L77"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromModelElemLabels.LeafFromModelElemLabels" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromModelElemLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elementLabels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromModelElemLabels.py#L5-L63"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromModelElemLabels.LeafFromModelElemLabels" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromModelElemLabels object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1310,17 +1225,7 @@ The LeafFromModelElemLabels object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
-<dt><strong>elementLabels</strong></dt><dd><p>A sequence of Strings specifying expressions that denote element labels per part
-instance in the model. Each part instance element expression is a sequence of a String
-specifying the part instance name and a sequence of element expressions; for example,
-<cite>((‘partInstance1’,(1,’7’,’3:15;3’),), (‘partInstance2’,’8’),))</cite>. The element
-expressions can be any of the following:An Int specifying a single element label; for
-example, <cite>1</cite>.A String specifying a single element label; for example, <cite>‘7’</cite>.A String
-specifying a sequence of element labels; for example, <cite>‘3:5’</cite> and <cite>‘3:15:3’</cite>.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1350,7 +1255,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromModelNodeLabels<a class="headerlink" href="#leaffrommodelnodelabels" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromModelNodeLabels.LeafFromModelNodeLabels">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromModelNodeLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodeLabels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromModelNodeLabels.py#L5-L77"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromModelNodeLabels.LeafFromModelNodeLabels" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromModelNodeLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodeLabels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromModelNodeLabels.py#L5-L63"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromModelNodeLabels.LeafFromModelNodeLabels" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromModelNodeLabels object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1364,17 +1269,7 @@ The LeafFromModelNodeLabels object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
-<dt><strong>nodeLabels</strong></dt><dd><p>A sequence of Strings specifying expressions that denote node labels per part instance
-in the model. Each part instance node expression is a sequence of a String specifying
-the part instance name and a sequence of node expressions; for example,
-<cite>((‘partInstance1’,(1,’7’,’3:15;3’),), (‘partInstance2’,’8’),))</cite>. The node expressions
-can be any of the following:An Int specifying a single node label; for example, <cite>1</cite>.A
-String specifying a single node label; for example, <cite>‘7’</cite>.A String specifying a sequence
-of node labels; for example, <cite>‘3:5’</cite> and <cite>‘3:15:3’</cite>.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1404,7 +1299,7 @@ of node labels; for example, <cite>‘3:5’</cite> and <cite>‘3:15:3’</cite
 <h3>LeafFromNodeLabels<a class="headerlink" href="#leaffromnodelabels" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromNodeLabels.LeafFromNodeLabels">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromNodeLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">partInstanceName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodeLabels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromNodeLabels.py#L5-L75"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromNodeLabels.LeafFromNodeLabels" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromNodeLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">partInstanceName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodeLabels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromNodeLabels.py#L5-L62"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromNodeLabels.LeafFromNodeLabels" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromNodeLabels object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1418,16 +1313,7 @@ The LeafFromNodeLabels object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
-<dt><strong>partInstanceName</strong></dt><dd><p>A String specifying the name of the part instance to which <strong>nodeLabels</strong> refers.</p>
-</dd>
-<dt><strong>nodeLabels</strong></dt><dd><p>A sequence of Strings specifying expressions that denote node labels. The expression can
-be any of the following:An Int specifying a single node label; for example, <cite>1</cite>.A String
-specifying a single node label; for example, <cite>‘7’</cite>.A String specifying a sequence of
-node labels; for example, <cite>‘3:5’</cite> and <cite>‘3:15:3’</cite>.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1460,7 +1346,7 @@ node labels; for example, <cite>‘3:5’</cite> and <cite>‘3:15:3’</cite>.<
 <h3>LeafFromNodeSets<a class="headerlink" href="#leaffromnodesets" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromNodeSets.LeafFromNodeSets">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromNodeSets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodeSets</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromNodeSets.py#L5-L58"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromNodeSets.LeafFromNodeSets" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromNodeSets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodeSets</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromNodeSets.py#L5-L50"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromNodeSets.LeafFromNodeSets" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromNodeSets object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1474,11 +1360,7 @@ The LeafFromNodeSets object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
-<dt><strong>nodeSets</strong></dt><dd><p>A sequence of Strings specifying node sets or a String specifying a single node set.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1502,7 +1384,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromNodeVarRange<a class="headerlink" href="#leaffromnodevarrange" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromNodeVarRange.LeafFromNodeVarRange">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromNodeVarRange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">minimumRange</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximumRange</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">insideRange</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromNodeVarRange.py#L5-L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromNodeVarRange.LeafFromNodeVarRange" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromNodeVarRange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">minimumRange</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximumRange</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">insideRange</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromNodeVarRange.py#L5-L71"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromNodeVarRange.LeafFromNodeVarRange" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromNodeVarRange object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1516,18 +1398,8 @@ The LeafFromNodeVarRange object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
-<dt><strong>minimumRange</strong></dt><dd><p>A Float specifying the minimum value for the variable range. The default value is
-−3.40282346639E38.</p>
-</dd>
-<dt><strong>maximumRange</strong></dt><dd><p>A Float specifying the maximum value for the variable range. The default value is
-3.40282346639e+038.</p>
-</dd>
-<dt><strong>insideRange</strong></dt><dd><p>A Boolean specifying the method used to evaluate the range. If <strong>insideRange</strong> = ON, the
-range falls inside the specified minimum and maximum values. The default value is ON.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
+<dt><strong>minimumRange</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1566,7 +1438,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromOdbEdgePick<a class="headerlink" href="#leaffromodbedgepick" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromOdbEdgePick.LeafFromOdbEdgePick">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromOdbEdgePick</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edgePick</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbEdgePick.py#L5-L56"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbEdgePick.LeafFromOdbEdgePick" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromOdbEdgePick</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edgePick</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbEdgePick.py#L5-L50"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbEdgePick.LeafFromOdbEdgePick" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromOdbEdgePick object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1580,9 +1452,7 @@ The LeafFromOdbEdgePick object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1600,7 +1470,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromOdbElementLayups<a class="headerlink" href="#leaffromodbelementlayups" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromOdbElementLayups.LeafFromOdbElementLayups">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromOdbElementLayups</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elementLayups</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbElementLayups.py#L5-L54"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbElementLayups.LeafFromOdbElementLayups" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromOdbElementLayups</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elementLayups</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbElementLayups.py#L5-L48"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbElementLayups.LeafFromOdbElementLayups" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromOdbElementLayups object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1614,9 +1484,7 @@ The LeafFromOdbElementLayups object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1634,7 +1502,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromOdbElementMaterials<a class="headerlink" href="#leaffromodbelementmaterials" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromOdbElementMaterials.LeafFromOdbElementMaterials">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromOdbElementMaterials</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elementMaterials</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbElementMaterials.py#L5-L54"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbElementMaterials.LeafFromOdbElementMaterials" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromOdbElementMaterials</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elementMaterials</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbElementMaterials.py#L5-L48"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbElementMaterials.LeafFromOdbElementMaterials" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromOdbElementMaterials object can be used whenever a Leaf object is expected as
 an argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1648,9 +1516,7 @@ The LeafFromOdbElementMaterials object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1668,7 +1534,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromOdbElementPick<a class="headerlink" href="#leaffromodbelementpick" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromOdbElementPick.LeafFromOdbElementPick">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromOdbElementPick</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elementPick</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbElementPick.py#L5-L56"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbElementPick.LeafFromOdbElementPick" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromOdbElementPick</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elementPick</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbElementPick.py#L5-L50"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbElementPick.LeafFromOdbElementPick" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromOdbElementPick object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1682,9 +1548,7 @@ The LeafFromOdbElementPick object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1702,7 +1566,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromOdbElementPlies<a class="headerlink" href="#leaffromodbelementplies" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromOdbElementPlies.LeafFromOdbElementPlies">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromOdbElementPlies</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elementPlies</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbElementPlies.py#L5-L54"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbElementPlies.LeafFromOdbElementPlies" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromOdbElementPlies</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elementPlies</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbElementPlies.py#L5-L48"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbElementPlies.LeafFromOdbElementPlies" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromOdbElementPlies object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1716,9 +1580,7 @@ The LeafFromOdbElementPlies object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1736,7 +1598,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromOdbElementSections<a class="headerlink" href="#leaffromodbelementsections" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromOdbElementSections.LeafFromOdbElementSections">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromOdbElementSections</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elementSections</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbElementSections.py#L5-L54"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbElementSections.LeafFromOdbElementSections" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromOdbElementSections</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elementSections</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbElementSections.py#L5-L48"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbElementSections.LeafFromOdbElementSections" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromOdbElementSections object can be used whenever a Leaf object is expected as
 an argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1750,9 +1612,7 @@ The LeafFromOdbElementSections object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1770,7 +1630,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromOdbElementTypes<a class="headerlink" href="#leaffromodbelementtypes" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromOdbElementTypes.LeafFromOdbElementTypes">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromOdbElementTypes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elementTypes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbElementTypes.py#L5-L54"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbElementTypes.LeafFromOdbElementTypes" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromOdbElementTypes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elementTypes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbElementTypes.py#L5-L48"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbElementTypes.LeafFromOdbElementTypes" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromOdbElementTypes object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1784,9 +1644,7 @@ The LeafFromOdbElementTypes object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1804,7 +1662,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromOdbNodePick<a class="headerlink" href="#leaffromodbnodepick" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromOdbNodePick.LeafFromOdbNodePick">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromOdbNodePick</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodePick</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbNodePick.py#L5-L56"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbNodePick.LeafFromOdbNodePick" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromOdbNodePick</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodePick</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromOdbNodePick.py#L5-L50"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromOdbNodePick.LeafFromOdbNodePick" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromOdbNodePick object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1818,9 +1676,7 @@ The LeafFromOdbNodePick object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1838,7 +1694,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromPartElementLabels<a class="headerlink" href="#leaffrompartelementlabels" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromPartElementLabels.LeafFromPartElementLabels">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromPartElementLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">part</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mdb/model/part.html#abaqus.Part.Part.Part" title="abaqus.Part.Part.Part"><span class="pre">Part</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementLabels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromPartElementLabels.py#L6-L57"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromPartElementLabels.LeafFromPartElementLabels" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromPartElementLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">part</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mdb/model/part.html#abaqus.Part.Part.Part" title="abaqus.Part.Part.Part"><span class="pre">Part</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementLabels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromPartElementLabels.py#L6-L51"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromPartElementLabels.LeafFromPartElementLabels" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromPartElementLabels object can be used whenever a Leaf object is expected as
 an argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1852,9 +1708,7 @@ The LeafFromPartElementLabels object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1872,7 +1726,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromPartInstance<a class="headerlink" href="#leaffrompartinstance" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromPartInstance.LeafFromPartInstance">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromPartInstance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">partInstanceName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromPartInstance.py#L5-L58"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromPartInstance.LeafFromPartInstance" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromPartInstance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">partInstanceName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromPartInstance.py#L5-L50"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromPartInstance.LeafFromPartInstance" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromPartInstance object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1886,11 +1740,7 @@ The LeafFromPartInstance object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
-<dt><strong>partInstanceName</strong></dt><dd><p>A sequence of Strings specifying the names of the part instances.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1914,7 +1764,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromPartNodeLabels<a class="headerlink" href="#leaffrompartnodelabels" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromPartNodeLabels.LeafFromPartNodeLabels">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromPartNodeLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">part</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mdb/model/part.html#abaqus.Part.Part.Part" title="abaqus.Part.Part.Part"><span class="pre">Part</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodeLabels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromPartNodeLabels.py#L6-L57"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromPartNodeLabels.LeafFromPartNodeLabels" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromPartNodeLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">part</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mdb/model/part.html#abaqus.Part.Part.Part" title="abaqus.Part.Part.Part"><span class="pre">Part</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodeLabels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromPartNodeLabels.py#L6-L51"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromPartNodeLabels.LeafFromPartNodeLabels" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromPartNodeLabels object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1928,9 +1778,7 @@ The LeafFromPartNodeLabels object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1948,7 +1796,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromReferencePoint<a class="headerlink" href="#leaffromreferencepoint" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromReferencePoint.LeafFromReferencePoint">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromReferencePoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">refPtSeq</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromReferencePoint.py#L5-L53"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromReferencePoint.LeafFromReferencePoint" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromReferencePoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">refPtSeq</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromReferencePoint.py#L5-L47"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromReferencePoint.LeafFromReferencePoint" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromReferencePoint object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1962,9 +1810,7 @@ The LeafFromReferencePoint object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1982,7 +1828,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromSets<a class="headerlink" href="#leaffromsets" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromSets.LeafFromSets">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromSets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sets</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../mdb/model/part_assembly/region.html#abaqus.Region.Set.Set" title="abaqus.Region.Set.Set"><span class="pre">Set</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromSets.py#L6-L54"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromSets.LeafFromSets" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromSets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sets</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../mdb/model/part_assembly/region.html#abaqus.Region.Set.Set" title="abaqus.Region.Set.Set"><span class="pre">Set</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromSets.py#L6-L48"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromSets.LeafFromSets" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromSets object can be used whenever a Leaf object is expected as an argument.
 Leaf objects are used to specify the items in a display group. Leaf objects are
 constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -1996,9 +1842,7 @@ The LeafFromSets object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -2016,7 +1860,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <h3>LeafFromSurfaceSets<a class="headerlink" href="#leaffromsurfacesets" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromSurfaceSets.LeafFromSurfaceSets">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromSurfaceSets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">surfaceSets</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromSurfaceSets.py#L5-L61"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromSurfaceSets.LeafFromSurfaceSets" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromSurfaceSets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">surfaceSets</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromSurfaceSets.py#L5-L52"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromSurfaceSets.LeafFromSurfaceSets" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromSurfaceSets object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -2030,12 +1874,7 @@ The LeafFromSurfaceSets object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
-<dt><strong>surfaceSets</strong></dt><dd><p>A sequence of Strings specifying surface sets, or a String specifying a single surface
-set.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -2060,7 +1899,7 @@ set.</p>
 <h3>LeafFromSurfaceVarRange<a class="headerlink" href="#leaffromsurfacevarrange" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.DisplayGroup.LeafFromSurfaceVarRange.LeafFromSurfaceVarRange">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromSurfaceVarRange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">minimumRange</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximumRange</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">insideRange</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromSurfaceVarRange.py#L5-L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromSurfaceVarRange.LeafFromSurfaceVarRange" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeafFromSurfaceVarRange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">minimumRange</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximumRange</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">insideRange</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/DisplayGroup/LeafFromSurfaceVarRange.py#L5-L71"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromSurfaceVarRange.LeafFromSurfaceVarRange" title="Permalink to this definition">#</a></dt>
 <dd><p>The LeafFromSurfaceVarRange object can be used whenever a Leaf object is expected as an
 argument. Leaf objects are used to specify the items in a display group. Leaf objects
 are constructed as temporary objects, which are then used as arguments to DisplayGroup
@@ -2074,18 +1913,8 @@ The LeafFromSurfaceVarRange object is derived from the Leaf object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>leafType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
-DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
-</dd>
-<dt><strong>minimumRange</strong></dt><dd><p>A Float specifying the minimum value for the variable range. The default value is
-−3.40282346639E38.</p>
-</dd>
-<dt><strong>maximumRange</strong></dt><dd><p>A Float specifying the maximum value for the variable range. The default value is
-3.40282346639e+038.</p>
-</dd>
-<dt><strong>insideRange</strong></dt><dd><p>A Boolean specifying the method used to evaluate the range. If <strong>insideRange</strong> = ON, the
-range falls inside the specified minimum and maximum values. The default value is ON.</p>
-</dd>
+<dt><strong>leafType</strong></dt><dd></dd>
+<dt><strong>minimumRange</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>

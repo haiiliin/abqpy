@@ -310,7 +310,7 @@
 <h3>Cell<a class="headerlink" href="#cell" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Cell.Cell">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Cell</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Cell.py#L4-L157"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Cell.Cell" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Cell</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Cell.py#L4-L141"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Cell.Cell" title="Permalink to this definition">#</a></dt>
 <dd><p>Cells are volumetric regions of geometry.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -333,19 +333,10 @@
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>index: int</strong></dt><dd><p>An Int specifying the index of the cell in the CellArray.</p>
-</dd>
-<dt><strong>isReferenceRep: Boolean</strong></dt><dd><p>A Boolean specifying whether the cell belongs to the reference representation of the
-Part or Instance.</p>
-</dd>
-<dt><strong>pointOn: float</strong></dt><dd><p>A tuple of Floats specifying the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point located on
-the cell.</p>
-</dd>
-<dt><strong>featureName: float</strong></dt><dd><p>A tuple of Floats specifying the name of the feature that created this cell.</p>
-</dd>
-<dt><strong>instanceName: float</strong></dt><dd><p>A tuple of Floats specifying the name of the part instance for this cell (if
-applicable).</p>
-</dd>
+<dt><strong>featureName</strong></dt><dd></dd>
+<dt><strong>index</strong></dt><dd></dd>
+<dt><strong>instanceName</strong></dt><dd></dd>
+<dt><strong>pointOn</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -392,7 +383,7 @@ applicable).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Cell.Cell.getAdjacentCells">
-<span class="sig-name descname"><span class="pre">getAdjacentCells</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Cell.py#L114-L123"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Cell.Cell.getAdjacentCells" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getAdjacentCells</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Cell.py#L98-L107"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Cell.Cell.getAdjacentCells" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of cell objects that share at least one face of the cell.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -406,7 +397,7 @@ applicable).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Cell.Cell.getCADAttributes">
-<span class="sig-name descname"><span class="pre">getCADAttributes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Cell.py#L147-L157"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Cell.Cell.getCADAttributes" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getCADAttributes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Cell.py#L131-L141"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Cell.Cell.getCADAttributes" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of CAD attribute strings associated with the cell when the
 part was created from CAD data.</p>
 <dl class="field-list simple">
@@ -421,7 +412,7 @@ part was created from CAD data.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Cell.Cell.getEdges">
-<span class="sig-name descname"><span class="pre">getEdges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Cell.py#L92-L101"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Cell.Cell.getEdges" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getEdges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Cell.py#L76-L85"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Cell.Cell.getEdges" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a sequence consisting of the edge IDs of the edges on the cell.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -435,7 +426,7 @@ part was created from CAD data.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Cell.Cell.getElements">
-<span class="sig-name descname"><span class="pre">getElements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Cell.py#L136-L145"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Cell.Cell.getElements" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getElements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Cell.py#L120-L129"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Cell.Cell.getElements" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of element objects that are associated with the cell.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -449,7 +440,7 @@ part was created from CAD data.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Cell.Cell.getFaces">
-<span class="sig-name descname"><span class="pre">getFaces</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Cell.py#L80-L90"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Cell.Cell.getFaces" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getFaces</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Cell.py#L64-L74"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Cell.Cell.getFaces" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a sequence consisting of the face IDs of the faces which bound the
 cell.</p>
 <dl class="field-list simple">
@@ -464,7 +455,7 @@ cell.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Cell.Cell.getNodes">
-<span class="sig-name descname"><span class="pre">getNodes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Cell.py#L125-L134"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Cell.Cell.getNodes" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getNodes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Cell.py#L109-L118"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Cell.Cell.getNodes" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of node objects that are associated with the cell.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -478,7 +469,7 @@ cell.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Cell.Cell.getSize">
-<span class="sig-name descname"><span class="pre">getSize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">printResults</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Cell.py#L63-L78"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Cell.Cell.getSize" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getSize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">printResults</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Cell.py#L47-L62"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Cell.Cell.getSize" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a Float indicating the volume of the cell.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -499,7 +490,7 @@ True.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Cell.Cell.getVertices">
-<span class="sig-name descname"><span class="pre">getVertices</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Cell.py#L103-L112"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Cell.Cell.getVertices" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getVertices</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Cell.py#L87-L96"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Cell.Cell.getVertices" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a sequence consisting of the vertex IDs of the vertices on the cell.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -809,7 +800,7 @@ efficient.</p>
 <h3>Edge<a class="headerlink" href="#edge" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Edge.Edge">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Edge</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Edge.py#L4-L217"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Edge</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Edge.py#L4-L201"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge" title="Permalink to this definition">#</a></dt>
 <dd><p>Edges are one-dimensional regions of geometry.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -843,19 +834,10 @@ efficient.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>index: int</strong></dt><dd><p>An Int specifying the index of the edge in the EdgeArray.</p>
-</dd>
-<dt><strong>isReferenceRep: Boolean</strong></dt><dd><p>A Boolean specifying whether the edge belongs to the reference representation of the
-Part or Instance.</p>
-</dd>
-<dt><strong>pointOn: float</strong></dt><dd><p>A tuple of Floats specifying the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point located on
-the edge.</p>
-</dd>
-<dt><strong>featureName: float</strong></dt><dd><p>A tuple of Floats specifying the name of the feature that created this edge.</p>
-</dd>
-<dt><strong>instanceName: float</strong></dt><dd><p>A tuple of Floats specifying the name of the part instance for this edge (if
-applicable).</p>
-</dd>
+<dt><strong>featureName</strong></dt><dd></dd>
+<dt><strong>index</strong></dt><dd></dd>
+<dt><strong>instanceName</strong></dt><dd></dd>
+<dt><strong>pointOn</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -908,7 +890,7 @@ applicable).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Edge.Edge.getAdjacentEdges">
-<span class="sig-name descname"><span class="pre">getAdjacentEdges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Edge.py#L125-L134"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.getAdjacentEdges" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getAdjacentEdges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Edge.py#L109-L118"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.getAdjacentEdges" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of Edge objects that share at least one vertex of the edge.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -922,7 +904,7 @@ applicable).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Edge.Edge.getCurvature">
-<span class="sig-name descname"><span class="pre">getCurvature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parameter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Edge.py#L86-L111"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.getCurvature" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getCurvature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parameter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Edge.py#L70-L95"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.getCurvature" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns curvature information at a location on the edge.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -955,7 +937,7 @@ curvature; and ‘tangent’ specifies the tangent to the edge at that location.
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Edge.Edge.getEdgesByEdgeAngle">
-<span class="sig-name descname"><span class="pre">getEdgesByEdgeAngle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Edge.py#L136-L151"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.getEdgesByEdgeAngle" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getEdgesByEdgeAngle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Edge.py#L120-L135"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.getEdgesByEdgeAngle" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of Edge objects that are obtained by recursively finding
 adjacent edges that are at an angle of less than or equal to the specified face angle.</p>
 <dl class="field-list simple">
@@ -976,7 +958,7 @@ adjacent edges that are at an angle of less than or equal to the specified face 
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Edge.Edge.getElements">
-<span class="sig-name descname"><span class="pre">getElements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Edge.py#L164-L173"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.getElements" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getElements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Edge.py#L148-L157"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.getElements" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of element objects that are associated with the edge.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -990,7 +972,7 @@ adjacent edges that are at an angle of less than or equal to the specified face 
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Edge.Edge.getFaces">
-<span class="sig-name descname"><span class="pre">getFaces</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Edge.py#L113-L123"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.getFaces" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getFaces</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Edge.py#L97-L107"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.getFaces" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a sequence consisting of the face ids of the faces which share this
 edge.</p>
 <dl class="field-list simple">
@@ -1005,7 +987,7 @@ edge.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Edge.Edge.getNodes">
-<span class="sig-name descname"><span class="pre">getNodes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Edge.py#L153-L162"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.getNodes" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getNodes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Edge.py#L137-L146"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.getNodes" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of node objects that are associated with the edge.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -1019,7 +1001,7 @@ edge.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Edge.Edge.getRadius">
-<span class="sig-name descname"><span class="pre">getRadius</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Edge.py#L175-L187"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.getRadius" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getRadius</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Edge.py#L159-L171"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.getRadius" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns the radius of circular edges.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -1038,7 +1020,7 @@ edge.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Edge.Edge.getSize">
-<span class="sig-name descname"><span class="pre">getSize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">printResults</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Edge.py#L189-L203"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.getSize" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getSize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">printResults</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Edge.py#L173-L187"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.getSize" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a Float indicating the length of the edge.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1058,7 +1040,7 @@ edge.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Edge.Edge.getVertices">
-<span class="sig-name descname"><span class="pre">getVertices</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Edge.py#L205-L217"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.getVertices" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getVertices</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Edge.py#L189-L201"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.getVertices" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a sequence of indices of the vertices that bound this edge. The
 first index refers to the vertex where the normalized curve parameter = 0.0, and the
 second index refers to the vertex where the normalized curve parameter = 1.0. If the
@@ -1095,7 +1077,7 @@ Part or Instance.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Edge.Edge.isTangentFlipped">
-<span class="sig-name descname"><span class="pre">isTangentFlipped</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Edge.py#L74-L84"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.isTangentFlipped" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">isTangentFlipped</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Edge.py#L58-L68"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.isTangentFlipped" title="Permalink to this definition">#</a></dt>
 <dd><p>This method determines whether the tangent to the edge is flipped from its default
 direction by the use of the flipTangent method on a Part object.</p>
 <dl class="field-list simple">
@@ -1421,7 +1403,7 @@ efficient.</p>
 <h3>Face<a class="headerlink" href="#face" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Face.Face">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Face</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L4-L303"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Face</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L4-L285"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face" title="Permalink to this definition">#</a></dt>
 <dd><p>Faces are two-dimensional regions of geometry.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -1453,21 +1435,10 @@ efficient.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>index: int</strong></dt><dd><p>An Int specifying the index of the face in the FaceArray.</p>
-</dd>
-<dt><strong>isReferenceRep: Boolean</strong></dt><dd><p>A Boolean specifying whether the face belongs to the reference representation of the
-Part or Instance.</p>
-</dd>
-<dt><strong>pointOn: float</strong></dt><dd><p>A tuple of tuples of Floats specifying the coordinates. For a face of a shell <strong>pointOn</strong>
-specifies the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point located on the face and the
-<strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-components of the normal to the face.For a face of a solid <strong>pointOn</strong>
-specifies the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point located on the face.</p>
-</dd>
-<dt><strong>featureName: float</strong></dt><dd><p>A tuple of Floats specifying the name of the feature that created this face.</p>
-</dd>
-<dt><strong>instanceName: float</strong></dt><dd><p>A tuple of Floats specifying the name of the part instance for this face (if
-applicable).</p>
-</dd>
+<dt><strong>featureName</strong></dt><dd></dd>
+<dt><strong>index</strong></dt><dd></dd>
+<dt><strong>instanceName</strong></dt><dd></dd>
+<dt><strong>pointOn</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1535,7 +1506,7 @@ applicable).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Face.Face.getAdjacentFaces">
-<span class="sig-name descname"><span class="pre">getAdjacentFaces</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L241-L250"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getAdjacentFaces" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getAdjacentFaces</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L223-L232"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getAdjacentFaces" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of face objects that share at least one edge of the face.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -1549,7 +1520,7 @@ applicable).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Face.Face.getCADAttributes">
-<span class="sig-name descname"><span class="pre">getCADAttributes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L293-L303"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getCADAttributes" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getCADAttributes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L275-L285"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getCADAttributes" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of CAD attribute strings associated with the Face when the
 part was created from CAD data.</p>
 <dl class="field-list simple">
@@ -1564,7 +1535,7 @@ part was created from CAD data.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Face.Face.getCells">
-<span class="sig-name descname"><span class="pre">getCells</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L229-L239"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getCells" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getCells</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L211-L221"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getCells" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a sequence consisting of the cell ids of the cells to which this
 face belongs.</p>
 <dl class="field-list simple">
@@ -1579,7 +1550,7 @@ face belongs.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Face.Face.getCentroid">
-<span class="sig-name descname"><span class="pre">getCentroid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L76-L85"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getCentroid" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getCentroid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L58-L67"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getCentroid" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns the centroid of a face.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -1594,7 +1565,7 @@ the face.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Face.Face.getCurvature">
-<span class="sig-name descname"><span class="pre">getCurvature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uParam</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vParam</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L87-L113"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getCurvature" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getCurvature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uParam</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vParam</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L69-L95"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getCurvature" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns information about the curvature at a location on the face.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1627,7 +1598,7 @@ refer to the vectors specifying the two principal axes of the face. ‘curvature
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Face.Face.getEdges">
-<span class="sig-name descname"><span class="pre">getEdges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L207-L216"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getEdges" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getEdges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L189-L198"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getEdges" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a sequence consisting of the edge ids of the edges on the face.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -1641,7 +1612,7 @@ refer to the vectors specifying the two principal axes of the face. ‘curvature
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Face.Face.getElementFaces">
-<span class="sig-name descname"><span class="pre">getElementFaces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faceSide</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOTH_SIDES'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L126-L143"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getElementFaces" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getElementFaces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faceSide</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOTH_SIDES'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L108-L125"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getElementFaces" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of mesh face objects. Each mesh face object contains the
 element label and the side of the element that lies on the geometric face.</p>
 <dl class="field-list simple">
@@ -1664,7 +1635,7 @@ element faces should be retrieved. Possible values are <strong>SIDE1</strong>, <
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Face.Face.getElements">
-<span class="sig-name descname"><span class="pre">getElements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L115-L124"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getElements" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getElements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L97-L106"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getElements" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of element objects that are associated with the face.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -1678,7 +1649,7 @@ element faces should be retrieved. Possible values are <strong>SIDE1</strong>, <
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Face.Face.getFacesByCurvature">
-<span class="sig-name descname"><span class="pre">getFacesByCurvature</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L269-L279"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getFacesByCurvature" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getFacesByCurvature</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L251-L261"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getFacesByCurvature" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of Face objects that are obtained by recursively finding
 adjacent faces that share the same curvature.</p>
 <dl class="field-list simple">
@@ -1693,7 +1664,7 @@ adjacent faces that share the same curvature.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Face.Face.getFacesByFaceAngle">
-<span class="sig-name descname"><span class="pre">getFacesByFaceAngle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L252-L267"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getFacesByFaceAngle" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getFacesByFaceAngle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L234-L249"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getFacesByFaceAngle" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of Face objects that are obtained by recursively finding
 adjacent faces that are at an angle of less than or equal to the specified angle.</p>
 <dl class="field-list simple">
@@ -1714,7 +1685,7 @@ adjacent faces that are at an angle of less than or equal to the specified angle
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Face.Face.getNodes">
-<span class="sig-name descname"><span class="pre">getNodes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faceSide</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOTH_SIDES'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L145-L164"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getNodes" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getNodes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faceSide</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'BOTH_SIDES'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L127-L146"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getNodes" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of mesh node objects. Each mesh node object contains the
 label of the node that lies on the geometric face.</p>
 <dl class="field-list simple">
@@ -1739,7 +1710,7 @@ the face are output.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Face.Face.getNormal">
-<span class="sig-name descname"><span class="pre">getNormal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L166-L189"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getNormal" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getNormal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L148-L171"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getNormal" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns the normal to a face at the location specified by the <strong>pointOn</strong>
 member. The normal at a different location on the face can be obtained by specifying the
 optional <strong>point</strong> argument.</p>
@@ -1770,7 +1741,7 @@ face.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Face.Face.getSize">
-<span class="sig-name descname"><span class="pre">getSize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">printResults</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L191-L205"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getSize" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getSize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">printResults</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L173-L187"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getSize" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a Float indicating the area of the face.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1790,7 +1761,7 @@ face.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Face.Face.getVertices">
-<span class="sig-name descname"><span class="pre">getVertices</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L218-L227"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getVertices" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getVertices</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L200-L209"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.getVertices" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a sequence consisting of the vertex ids of the vertices of the face.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -1817,7 +1788,7 @@ applicable).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Face.Face.isNormalFlipped">
-<span class="sig-name descname"><span class="pre">isNormalFlipped</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L281-L291"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.isNormalFlipped" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">isNormalFlipped</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Face.py#L263-L273"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.isNormalFlipped" title="Permalink to this definition">#</a></dt>
 <dd><p>This method determines whether the normal to the face is flipped from its default
 direction by the use of the flipNormal method on a Part object.</p>
 <dl class="field-list simple">
@@ -2166,7 +2137,7 @@ efficient.</p>
 <h3>IgnoredEdge<a class="headerlink" href="#ignorededge" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IgnoredEdge</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/IgnoredEdge.py#L1-L89"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IgnoredEdge</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/IgnoredEdge.py#L1-L81"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge" title="Permalink to this definition">#</a></dt>
 <dd><p>An <a class="reference internal" href="#abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge" title="abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge"><code class="xref py py-class docutils literal notranslate"><span class="pre">IgnoredEdge</span></code></a> object is a one-dimensional region of geometry that has been abstracted
 away by a virtual topology feature.</p>
 <p class="rubric">Notes</p>
@@ -2181,11 +2152,8 @@ away by a virtual topology feature.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>index: int</strong></dt><dd><p>An Int specifying the index of the IgnoredEdge in the IgnoredEdgeArray.</p>
-</dd>
-<dt><strong>pointOn: float</strong></dt><dd><p>A tuple of Floats specifying the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point located on
-the edge.</p>
-</dd>
+<dt><strong>index</strong></dt><dd></dd>
+<dt><strong>pointOn</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -2211,7 +2179,7 @@ the edge.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getCurvature">
-<span class="sig-name descname"><span class="pre">getCurvature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parameter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/IgnoredEdge.py#L63-L89"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getCurvature" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getCurvature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parameter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/IgnoredEdge.py#L55-L81"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getCurvature" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns curvature information at a location on the IgnoredEdge object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2245,7 +2213,7 @@ curvature and ‘tangent’ specifies the tangent to the IgnoredEdge at that loc
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getRadius">
-<span class="sig-name descname"><span class="pre">getRadius</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/IgnoredEdge.py#L49-L61"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getRadius" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getRadius</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/IgnoredEdge.py#L41-L53"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getRadius" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns the radius of a circular IgnoredEdge object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -2264,7 +2232,7 @@ curvature and ‘tangent’ specifies the tangent to the IgnoredEdge at that loc
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getSize">
-<span class="sig-name descname"><span class="pre">getSize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">printResults</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/IgnoredEdge.py#L33-L47"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getSize" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getSize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">printResults</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/IgnoredEdge.py#L25-L39"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getSize" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a Float indicating the length of the edge.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2465,7 +2433,7 @@ efficient.</p>
 <h3>IgnoredVertex<a class="headerlink" href="#ignoredvertex" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IgnoredVertex</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/IgnoredVertex.py#L1-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IgnoredVertex</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/IgnoredVertex.py#L1-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex" title="Permalink to this definition">#</a></dt>
 <dd><p>An <a class="reference internal" href="#abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex" title="abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex"><code class="xref py py-class docutils literal notranslate"><span class="pre">IgnoredVertex</span></code></a> object is a point region of the geometry that was abstracted away by a
 virtual topology feature.</p>
 <p class="rubric">Notes</p>
@@ -2480,10 +2448,8 @@ virtual topology feature.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>index: int</strong></dt><dd><p>An Int specifying the index of the IgnoredVertex in the IgnoredVertexArray.</p>
-</dd>
-<dt><strong>pointOn: float</strong></dt><dd><p>A tuple of Floats specifying the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of the vertex.</p>
-</dd>
+<dt><strong>index</strong></dt><dd></dd>
+<dt><strong>pointOn</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -2825,7 +2791,7 @@ transformation from sketch coordinates to assembly coordinates or to part coordi
 <h3>Vertex<a class="headerlink" href="#vertex" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Vertex.Vertex">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Vertex</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Vertex.py#L4-L95"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Vertex.Vertex" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Vertex</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Vertex.py#L4-L80"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Vertex.Vertex" title="Permalink to this definition">#</a></dt>
 <dd><p>Vertices are point regions of geometry.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -2850,18 +2816,10 @@ transformation from sketch coordinates to assembly coordinates or to part coordi
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>index: int</strong></dt><dd><p>An Int specifying the index of the ConstrainedSketchVertex in the VertexArray.</p>
-</dd>
-<dt><strong>isReferenceRep: Boolean</strong></dt><dd><p>A Boolean specifying whether the vertex belongs to the reference representation of the
-Part or Instance.</p>
-</dd>
-<dt><strong>pointOn: float</strong></dt><dd><p>A tuple of Floats specifying the <strong>X</strong> -, <strong>Y</strong> -, and <strong>Z</strong> -coordinates of the vertex.</p>
-</dd>
-<dt><strong>featureName: float</strong></dt><dd><p>A tuple of Floats specifying the name of the feature that created this vertex.</p>
-</dd>
-<dt><strong>instanceName: float</strong></dt><dd><p>A tuple of Floats specifying the name of the part instance for this vertex (if
-applicable).</p>
-</dd>
+<dt><strong>featureName</strong></dt><dd></dd>
+<dt><strong>index</strong></dt><dd></dd>
+<dt><strong>instanceName</strong></dt><dd></dd>
+<dt><strong>pointOn</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -2893,7 +2851,7 @@ applicable).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Vertex.Vertex.getEdges">
-<span class="sig-name descname"><span class="pre">getEdges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Vertex.py#L63-L73"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Vertex.Vertex.getEdges" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getEdges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Vertex.py#L48-L58"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Vertex.Vertex.getEdges" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a sequence consisting of the edge ids of the edges which share this
 vertex.</p>
 <dl class="field-list simple">
@@ -2908,7 +2866,7 @@ vertex.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Vertex.Vertex.getElements">
-<span class="sig-name descname"><span class="pre">getElements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Vertex.py#L86-L95"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Vertex.Vertex.getElements" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getElements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Vertex.py#L71-L80"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Vertex.Vertex.getElements" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of element objects that are associated with the vertex.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -2922,7 +2880,7 @@ vertex.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Vertex.Vertex.getNodes">
-<span class="sig-name descname"><span class="pre">getNodes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Vertex.py#L75-L84"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Vertex.Vertex.getNodes" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getNodes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/BasicGeometry/Vertex.py#L60-L69"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Vertex.Vertex.getNodes" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an array of node objects that are associated with the vertex.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>

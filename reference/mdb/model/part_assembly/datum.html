@@ -333,7 +333,7 @@ objects derived from the Datum.</p>
 <h3>DatumAxis<a class="headerlink" href="#datumaxis" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Datum.DatumAxis.DatumAxis">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DatumAxis</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Datum/DatumAxis.py#L4-L39"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Datum.DatumAxis.DatumAxis" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DatumAxis</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Datum/DatumAxis.py#L4-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Datum.DatumAxis.DatumAxis" title="Permalink to this definition">#</a></dt>
 <dd><p>The DatumAxis object has no direct constructor; it is created when a Feature object is
 created. For example, the DatumAxisByCylFace method creates a Feature object that
 creates a DatumAxis object.
@@ -351,12 +351,7 @@ The DatumAxis object is derived from the Datum object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>pointOn: float</strong></dt><dd><p>A tuple of Floats specifying the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point located on
-the datum.</p>
-</dd>
-<dt><strong>direction: tuple</strong></dt><dd><p>A tuple of Floats specifying a sequence of three Floats specifying the direction of the
-axis.</p>
-</dd>
+<dt><strong>pointOn</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -381,7 +376,7 @@ the datum.</p>
 <h3>DatumCsys<a class="headerlink" href="#datumcsys" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Datum.DatumCsys.DatumCsys">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DatumCsys</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Datum/DatumCsys.py#L7-L60"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Datum.DatumCsys.DatumCsys" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DatumCsys</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Datum/DatumCsys.py#L7-L46"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Datum.DatumCsys.DatumCsys" title="Permalink to this definition">#</a></dt>
 <dd><p>The DatumCsys object has no direct constructor; it is created when a Feature object is
 created. For example, the DatumCsysByOffset method creates a Feature object that creates
 a DatumCsys object.
@@ -404,17 +399,7 @@ The DatumCsys object is derived from the Datum object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>coordSysType: SymbolicConstant</strong></dt><dd><p>A SymbolicConstant specifying the type of the coordinate system. Possible values are
-CARTESIAN, CYLINDRICAL, and SPHERICAL.</p>
-</dd>
-<dt><strong>origin: DatumPoint</strong></dt><dd><p>A <a class="reference internal" href="#abaqus.Datum.DatumPoint.DatumPoint" title="abaqus.Datum.DatumPoint.DatumPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatumPoint</span></code></a> object specifying the origin of the coordinate system.</p>
-</dd>
-<dt><strong>axis1: DatumAxis</strong></dt><dd><p>A <a class="reference internal" href="#abaqus.Datum.DatumAxis.DatumAxis" title="abaqus.Datum.DatumAxis.DatumAxis"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatumAxis</span></code></a> object specifying the 1-direction of the coordinate system.</p>
-</dd>
-<dt><strong>axis2: DatumAxis</strong></dt><dd><p>A <a class="reference internal" href="#abaqus.Datum.DatumAxis.DatumAxis" title="abaqus.Datum.DatumAxis.DatumAxis"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatumAxis</span></code></a> object specifying the 2-direction of the coordinate system.</p>
-</dd>
-<dt><strong>axis3: DatumAxis</strong></dt><dd><p>A <a class="reference internal" href="#abaqus.Datum.DatumAxis.DatumAxis" title="abaqus.Datum.DatumAxis.DatumAxis"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatumAxis</span></code></a> object specifying the 3-direction of the coordinate system.</p>
-</dd>
+<dt><strong>coordSysType</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -456,7 +441,7 @@ CARTESIAN, CYLINDRICAL, and SPHERICAL.</p>
 <h3>DatumPlane<a class="headerlink" href="#datumplane" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Datum.DatumPlane.DatumPlane">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DatumPlane</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Datum/DatumPlane.py#L4-L37"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Datum.DatumPlane.DatumPlane" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DatumPlane</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Datum/DatumPlane.py#L4-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Datum.DatumPlane.DatumPlane" title="Permalink to this definition">#</a></dt>
 <dd><p>The DatumPlane object has no direct constructor; it is created when a Feature object is
 created. For example, the DatumPlaneByPrincipalPlane method creates a Feature object
 that creates a DatumPlane object.
@@ -474,11 +459,7 @@ The DatumPlane object is derived from the Datum object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>pointOn: float</strong></dt><dd><p>A tuple of Floats specifying the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point located on
-the datum.</p>
-</dd>
-<dt><strong>normal: tuple</strong></dt><dd><p>A tuple of Floats specifying a sequence of three Floats specifying the normal.</p>
-</dd>
+<dt><strong>pointOn</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -502,7 +483,7 @@ the datum.</p>
 <h3>DatumPoint<a class="headerlink" href="#datumpoint" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Datum.DatumPoint.DatumPoint">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DatumPoint</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Datum/DatumPoint.py#L4-L32"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Datum.DatumPoint.DatumPoint" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DatumPoint</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Datum/DatumPoint.py#L4-L26"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Datum.DatumPoint.DatumPoint" title="Permalink to this definition">#</a></dt>
 <dd><p>The DatumPoint object has no direct constructor; it is created when a Feature object is
 created. For example, the DatumPointByCoordinate method creates a Feature object that
 creates a DatumPoint object.
@@ -520,9 +501,7 @@ The DatumPoint object is derived from the Datum object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>pointOn: float</strong></dt><dd><p>A tuple of Floats specifying the <strong>X</strong>-, <strong>Y</strong>-, and <strong>Z</strong>-coordinates of a point located on
-the datum.</p>
-</dd>
+<dt><strong>pointOn</strong></dt><dd></dd>
 </dl>
 </dd>
 </dl>
