@@ -15,9 +15,10 @@ class CaeGuiPrefs:
         caePrefsAccess.openGuiPreferences(...)
     """
 
+    #: A String specifying the path to the preferences file.
     fileName:str = ""
 
-    def save(self, backupFile: Boolean = OFF):
+    def save(self, backupFile: Boolean = True):
         """This method saves the guiPreferences section specified in the current **fileName**.
 
         Parameters

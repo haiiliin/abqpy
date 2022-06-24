@@ -1,5 +1,7 @@
 from abaqusConstants import *
 
+import typing
+
 
 class CaeKerPrefs:
     """The CaeKerPrefs object contains the details of the sessionOptions.
@@ -28,8 +30,8 @@ class CaeKerPrefs:
             **fileName**. Default is True.
         """
         pass
-
-    def saveAs(self, fileName: str, directory: SymbolicConstant):
+    
+    def saveAs(self, fileName: str = '', directory: typing.Literal["CURRENT", "HOME"] = HOME):
         """This method saves the sessionOptions to the specified location.
 
         Parameters

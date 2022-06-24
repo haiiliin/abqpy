@@ -164,9 +164,9 @@ def openSessionOptions(
         are:
 
         - CURRENT to open the preferences file in the current directory
-        (caePrefsAccess.CURRENT)
+          (caePrefsAccess.CURRENT)
         - HOME to open the preferences file in your home directory
-        (caePrefsAccess.HOME)
+          (caePrefsAccess.HOME)
 
         The default value is HOME. Either **fileName** or **directory** must be
         supplied. The **fileName** or **directory** arguments are mutually exclusive.
