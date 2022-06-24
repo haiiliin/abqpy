@@ -388,14 +388,14 @@ Results of above example
 
 The distribution of `U3` of above model is showed as follows:
 
-.. image:: images/output.png
+.. image:: /images/output.png
     :width: 70%
     :align: center
 
 
 The distribution of the vertical displacement of a point in the top surface is showed as follows:
 
-.. image:: images/compression.png
+.. image:: /images/compression.png
     :width: 70%
     :align: center
 
