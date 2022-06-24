@@ -19,12 +19,4 @@ Python is the standard programming language for Abaqus products and is used in s
     - The command line interface (CLI).
         
 - You can access the output database (.odb) using a Python script.
-    
-
-Total Results:
-
-Results per page
-
-This page cannot be found.
-
-The page might not exist or is temporarily unavailable. Try again or try searching for the topic.
+  
