@@ -14,7 +14,7 @@ Python is the standard programming language for Abaqus products and is used in s
     
 - You can execute Abaqus/CAE tasks directly using a Python script. You can execute a script from Abaqus/CAE using the following:
     
-    - from the main menu bar.
+    - From the main menu bar.
     - The Macro Manager.
     - The command line interface (CLI).
         

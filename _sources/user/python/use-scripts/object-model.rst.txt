@@ -213,13 +213,21 @@ The following table describes the relationship between some of the modules in th
 | **Module**   | **Abaqus/CAE functionality**       |
 +==============+====================================+
 | assembly     | The Assembly module                |
++--------------+------------------------------------+
 | datum        | The Datum toolset                  |
++--------------+------------------------------------+
 | interaction  | The Interaction module             |
++--------------+------------------------------------+
 | job          | The Job module                     |
++--------------+------------------------------------+
 | load         | The Load module                    |
++--------------+------------------------------------+
 | material     | Materials in the Property module   |
++--------------+------------------------------------+
 | mesh         | The Mesh module                    |
++--------------+------------------------------------+
 | part         | The Part module                    |
++--------------+------------------------------------+
 | partition    | The Partition toolset              |
 +--------------+------------------------------------+
 

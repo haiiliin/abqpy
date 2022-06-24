@@ -1,0 +1,586 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
+
+    <meta name="generator" content="sphinx-4.5.0, furo 2022.06.21"/>
+        <title>Abaqus PDE basics - abqpy 2016a0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">abqpy 2016a0 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  
+  
+  <span class="sidebar-brand-text">abqpy 2016a0 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../user.html">User’s Guide</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../about.html">About the Abaqus Scripting Interface</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../about/interface.html">Abaqus/CAE and the Abaqus Scripting Interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../about/interact.html">How does the Abaqus Scripting Interface interact with Abaqus/CAE?</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../about/examples.html">Simple examples</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../about/examples/create-part.html">Creating a part</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../about/examples/read-output.html">Reading from an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../about/examples/summary.html">Summary</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../python.html">Using the Abaqus Scripting Interface</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../python/introduction.html">Introduction to Python</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../python/introduction/python-abaqus.html">Python and Abaqus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/introduction/python-resources.html">Python resources</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/introduction/python-basics.html">The basics of Python</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/introduction/programming.html">Programming techniques</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/introduction/further-reading.html">Further reading</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../python/python-abaqus.html">Using Python and the Abaqus Scripting Interface</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../python/python-abaqus/executing.html">Executing scripts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/python-abaqus/style.html">Abaqus Scripting Interface documentation style</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/python-abaqus/types.html">Abaqus Scripting Interface data types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/python-abaqus/oop.html">Object-oriented programming and the Abaqus Scripting Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/python-abaqus/errors.html">Error handling in the Abaqus Scripting Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/python-abaqus/extending.html">Extending the Abaqus Scripting Interface</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../python/use-scripts.html">Using the Abaqus Scripting Interface with Abaqus/CAE</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../python/use-scripts/object-model.html">The Abaqus object model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/use-scripts/modify-objects.html">Copying, deleting, and renaming Abaqus Scripting Interface objects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/use-scripts/sequences.html">Abaqus/CAE sequences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/use-scripts/namespace.html">Namespace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/use-scripts/specify-viewport.html">Specifying what is displayed in the viewport</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/use-scripts/specify-region.html">Specifying a region</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/use-scripts/user-input.html">Prompting the user for input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/use-scripts/interact.html">Interacting with Abaqus/Standard and Abaqus/Explicit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/use-scripts/environment-file.html">Using Abaqus Scripting Interface commands in your environment file</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../summary.html">API Summary</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../summary/header.html">Header of the Python script</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../summary/mdb.html">Abaqus Model Database</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../summary/mdb/model.html">Abaqus Model</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/adaptivity.html">Adaptivity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/amplitude.html">Amplitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/assembly.html">Assembly</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/bc.html">Boundary Condition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/calibration.html">Calibration of Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/constraint.html">Constraint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/field.html">Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/filter.html">Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/interaction.html">Interaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/load.html">Load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/material.html">Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/optimization.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/output.html">Output Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/part.html">Part</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/predefined.html">Predefined Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/profile.html">Beam Section Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/property.html">Property</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../summary/mdb/model/section.html">Section</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../summary/mdb/model/section/connector.html">Connector</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../summary/mdb/model/sketcher.html">Sketcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../summary/mdb/model/step.html">Step</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../summary/mdb/model/step/step_miscellaneous.html">Step Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../summary/mdb/job.html">Abaqus Job</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../summary/odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../summary/session.html">Abaqus Session</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../references.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reference/mdb.html">Abaqus Model Database</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" role="switch" type="checkbox"/><label for="toctree-checkbox-14"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../reference/mdb/model.html">Model</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" role="switch" type="checkbox"/><label for="toctree-checkbox-15"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../reference/mdb/model/adaptivity.html">Adaptivity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reference/mdb/model/amplitude.html">Amplitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reference/mdb/model/bc.html">Boundary Condition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reference/mdb/model/calibration.html">Calibration of Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reference/mdb/model/constraint.html">Constraint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reference/mdb/model/field.html">Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reference/mdb/model/filter.html">Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reference/mdb/model/interaction.html">Interaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reference/mdb/model/load.html">Load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reference/mdb/model/material.html">Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reference/mdb/model/mesh.html">Mesh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reference/mdb/model/optimization.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reference/mdb/model/output.html">Output Request</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../reference/mdb/model/part_assembly.html">Part and Assembly</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" role="switch" type="checkbox"/><label for="toctree-checkbox-16"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../reference/mdb/model/part.html">Part</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../reference/mdb/model/assembly.html">Assembly</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../reference/mdb/model/part_assembly/datum.html">Datum</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../reference/mdb/model/part_assembly/engineering.html">Engineering Feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../reference/mdb/model/part_assembly/feature.html">Feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../reference/mdb/model/part_assembly/geometry.html">Basic Geometry</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../reference/mdb/model/part_assembly/region.html">Region</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../reference/mdb/model/predefined.html">Predefined Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reference/mdb/model/profile.html">Beam Section Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reference/mdb/model/property.html">Property</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../reference/mdb/model/section.html">Section</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" role="switch" type="checkbox"/><label for="toctree-checkbox-17"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../reference/mdb/model/section/connector.html">Connector</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../reference/mdb/model/sketcher.html">Sketcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../reference/mdb/model/step.html">Step</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" role="switch" type="checkbox"/><label for="toctree-checkbox-18"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../reference/mdb/model/step/step_miscellaneous.html">Step Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../reference/mdb/job.html">Job</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reference/mdb/annotation.html">Annotation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reference/mdb/edit_mesh.html">Edit Mesh</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../reference/odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reference/session.html">Abaqus Session</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" role="switch" type="checkbox"/><label for="toctree-checkbox-19"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reference/session/animation.html">Animation Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reference/session/canvas.html">Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reference/session/display_options.html">Display Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reference/session/display.html">Display Group</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reference/session/field_report.html">FieldReport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reference/session/odb_display.html">Odb Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reference/session/path.html">Path and Probe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reference/session/plot_options.html">Plot Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reference/session/print.html">Print</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reference/session/xy.html">XY</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reference/kernel.html">Kernel</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" role="switch" type="checkbox"/><label for="toctree-checkbox-20"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reference/kernel/cae_display_preferences.html">Abaqus CAE Display Preferences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reference/kernel/input.html">Input File Parser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reference/kernel/kernel.html">Custom Kernel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reference/kernel/messaging.html">Messaging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reference/kernel/table_collection.html">Table Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reference/kernel/text_representation.html">Text Representation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reference/kernel/utility.html">Utility and View</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="abaqus-pde-basics">
+<h1>Abaqus PDE basics<a class="headerlink" href="#abaqus-pde-basics" title="Permalink to this headline">#</a></h1>
+<p>The following sections describe the basic functions of the PDE.</p>
+<section id="starting-the-abaqus-python-development-environment">
+<h2>Starting the Abaqus Python development environment<a class="headerlink" href="#starting-the-abaqus-python-development-environment" title="Permalink to this headline">#</a></h2>
+<p>You can choose from several methods to start the Abaqus Python development environment. If you plan to work on scripts that use the Abaqus/CAE GUI, you should start the Abaqus PDE from within an Abaqus/CAE session or start it from the command prompt when you start Abaqus/CAE. These startup methods link the Abaqus PDE to the corresponding Abaqus/CAE session. Alternatively, you can start the Abaqus PDE independently to save system memory or avoid using an Abaqus license.</p>
+<p>Use one of the following methods to start the Abaqus PDE. The first two methods start the Abaqus PDE with a link to an Abaqus/CAE session. The last method starts the Abaqus PDE independently from Abaqus/CAE:</p>
+<ul>
+<li><p>In Abaqus/CAE, select FileAbaqus PDE from the main menu bar.</p></li>
+<li><p>From a system command prompt, enter</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus cae -pde
+</pre></div>
+</div>
+<p>where <em>abaqus</em> is the command used to start Abaqus.</p>
+<p>Note:</p>
+<p>Using this method starts Abaqus/CAE without any local user preference settings. Ignoring user preferences allows you to record and run .guiLog tests using the consistent default startup settings.</p>
+</li>
+<li><p>From a system command prompt, enter</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus pde <span class="o">[</span>filenames<span class="o">]</span> <span class="o">[</span>-script filename<span class="o">]</span> <span class="o">[</span>-pde Abaqus/CAE <span class="nb">command</span> line arguments<span class="o">]</span>
+</pre></div>
+</div>
+<p>where <em>abaqus</em> is the command used to start Abaqus, and <em>filenames</em> are the names, including the directory paths, of scripts to be opened at startup.</p>
+<p>The <cite>-script</cite> option allows you to enter the name, including the directory path, of a main file to be opened at startup. The Abaqus PDE will create a new blank script if the named file does not exist in the specified directory. If the directory does not exist, the Abaqus PDE generates an error message.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>File names and paths specified without the <cite>-script</cite> option are opened for editing—not as the main file.</p>
+<p>The -pde option is used to specify options for use with Abaqus/CAE if you run a script in the Abaqus PDE that requires the Abaqus/CAE kernel or user interface. You can also add command line options for Abaqus/CAE using the Settings menu. For more information, see <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-pdesettings.htm?contextscope=all">Selecting the settings for use with a file</a>.</p>
+</div>
+</li>
+</ul>
+<p>The sections that follow describe how to use the menus and tools within the Abaqus PDE.</p>
+</section>
+<section id="managing-files-in-the-abaqus-pde">
+<h2>Managing files in the Abaqus PDE<a class="headerlink" href="#managing-files-in-the-abaqus-pde" title="Permalink to this headline">#</a></h2>
+<p>You can use the File menu and tools to manage files in the Abaqus PDE. You can work with multiple scripts, but you can test only one script at a time. The file to be tested is called the Main File. The path and file name of the main file are displayed near the upper left corner of the Abaqus PDE window. You can open the main file by using the Select Main File or Recent Main Files items in the File menu. You can also create a new main file or select an open file to be the main file.</p>
+<p>Note:</p>
+<p>When the Set Last Main File on Startup setting is toggled on, the Abaqus PDE automatically reopens the main file that was open when you closed your last session.</p>
+<p>The default file extensions for use with the Abaqus PDE are .py and .guiLog. A .py file typically designates a standard Python or Abaqus Scripting Interface script, and a .guiLog file is a specialized Python script that records actions in the Abaqus/CAE GUI.</p>
+<p>As you play a main file script, the Abaqus PDE automatically opens any files that contain functions called by the script, if the files are available in the current path (sys.path). These files are added to the recently used files list in the File menu. The Abaqus PDE also saves a list of recently used files and other files (dependent files) called when you run a main file. This list is saved in the current directory as abaqus_pde.deps.</p>
+<p>Figure 1 shows the items in the Abaqus PDE File menu.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../_images/cmd-pde-filemenu-nls.png"><img alt="../../_images/cmd-pde-filemenu-nls.png" src="../../_images/cmd-pde-filemenu-nls.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-text">Figure 1. The File menu</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The following options are available from the File menu:</p>
+<ul>
+<li><p><strong>New</strong></p>
+<p>Create a new file. The Abaqus PDE creates a new main file and displays it in the main window. The file is created using the default naming convention <cite>_abaqus*#*_.guiLog</cite>, where # starts at 1 and is incremented as you create more files in the current directory. You can also click the New guiLog  icon to create a new file.Abaqus automatically designates the new script as the main file.</p>
+</li>
+<li><p><strong>Open</strong></p>
+<p>Open a script. You can also click the Open file  icon to open a script.If you have not yet opened or created another script, Abaqus automatically makes the first opened file the main file for testing. Otherwise, the file opened becomes the current file viewed in the main window, but it is not the main file used for testing.**Tip:** You can drag and drop script files from the desktop or from Windows Explorer into the Abaqus PDE for editing.You can navigate to the file you want to open by entering its full path, or you can specify a path using environment variables.</p>
+</li>
+<li><p><strong>Select Main File</strong></p>
+<p>Open a script as the main file for testing. You can also click the Open main file  icon to open a script as the main file.</p>
+</li>
+<li><p><strong>Make Current Main</strong></p>
+<p>Designate the current script in the main window as the main file for testing.</p>
+</li>
+<li><p><strong>Save</strong></p>
+<p>Save changes to the current file. You can also click Save  to save the current file.</p>
+</li>
+<li><p><strong>Save As</strong></p>
+<p>Save the current file with a new name.</p>
+</li>
+<li><p><strong>Reload Modules</strong></p>
+<p>Reload user interface modules to capture any changes that you made since they were first loaded. You can also click Reload Modules  to reload the user interface modules. The Abaqus PDE reloads user interface modules in the Abaqus/CAE GUI and Abaqus/CAE kernel processes unless the current setting for the Run Script In option is local, in which case any changed modules are reloaded in the local PDE process.</p>
+</li>
+<li><p><strong>Close File</strong></p>
+<p>Close the current file.</p>
+</li>
+<li><p><strong>Filename.py</strong></p>
+<p>The name and file extension of the current main file, if one is selected.Clicking here shows a list of dependent files that were found when the main file was run. If the current main file has not been run in the Abaqus PDE, this list will be empty.</p>
+</li>
+<li><p><strong>Recent Main Files</strong></p>
+<p>A list of the files that you have opened as the main file for testing. Recent Files from previous sessions will be read from the abaqus_pde.deps file, if it exists in the current directory.</p>
+</li>
+<li><p><strong>Recent Traced Files</strong></p>
+<p>A list of files that were opened by the Abaqus PDE to trace a function called by one of the main files that you tested. Recent Files from previous sessions will be read from the abaqus_pde.deps file, if it exists in the current directory.</p>
+</li>
+<li><p><strong>Recent Files</strong></p>
+<p>A list of all files that you have opened, regardless of whether you opened them to view and edit them or opened them as the main file for testing. Recent Files from previous sessions will be read from the <cite>abaqus_pde.deps</cite> file, if it exists in the current directory.</p>
+</li>
+</ul>
+<p>The recently used files lists are stored in the <cite>abaqus_pde.deps</cite> file in the directory from which you start the current Abaqus PDE session. If you start an Abaqus PDE session from another location, the lists contain only the files that you used the last time you opened a session in that directory. If you have not previously used the Abaqus PDE in the current directory, a new set of recently used files is recorded as you work.</p>
+</section>
+<section id="editing-files-in-the-abaqus-pde">
+<h2>Editing files in the Abaqus PDE<a class="headerlink" href="#editing-files-in-the-abaqus-pde" title="Permalink to this headline">#</a></h2>
+<p>You can use the <strong>Edit</strong> menu to edit scripts in the Abaqus PDE. The <strong>Edit</strong> menu contains common editing tools, including <strong>Undo</strong>, <strong>Redo</strong>, <strong>Copy</strong>, <strong>Cut</strong>, <strong>Paste</strong>, <strong>Find</strong>, and <strong>Replace</strong>. It also contains the following tools for editing scripts:</p>
+<ul class="simple">
+<li><p><strong>Indent Region &gt;</strong></p></li>
+<li><p><strong>Unindent Region &lt;</strong></p></li>
+<li><p><strong>Comment Region ##</strong></p></li>
+<li><p><strong>Uncomment Region</strong></p></li>
+</ul>
+<p>To use these tools, highlight one or more lines of code in the main window and select the desired option from the <strong>Edit</strong> menu. The <strong>Edit</strong> menu also contains a keyboard shortcut for each of the editing tools.</p>
+</section>
+<section id="id1">
+<h2>Selecting the settings for use with a file<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<p>Use the <strong>Settings</strong> menu and tools to change some of the options in the Abaqus PDE.</p>
+<p>Figure 1 shows the items and default selections in the Abaqus PDE <strong>Settings</strong> menu.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../../_images/cmd-pde-settingsmenu-nls.png"><img alt="../../_images/cmd-pde-settingsmenu-nls.png" src="../../_images/cmd-pde-settingsmenu-nls.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-text">Figure 1. The Settings menu.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The following items are available from the <strong>Settings</strong> menu:</p>
+<ul>
+<li><p><strong>Recording Options</strong></p>
+<p>Set the display of the triad, state block, and title block and whether the legend background matches the viewport. These options affect the commands recorded for an output database.</p>
+</li>
+<li><p><strong>Allow Editing of Files</strong></p>
+<p>Toggle between edit and read-only modes for all files. Editing is allowed by default.</p>
+</li>
+<li><p><strong>Show File Line Numbers</strong></p>
+<p>Display line numbers for any open files on the left side of the main window. Line numbers are displayed by default.</p>
+</li>
+<li><p><strong>Ignore Breakpoints During Play</strong></p>
+<p>Run the main file continuously, skipping any breakpoints, until it completes or stops for an error. Breaks are not skipped by default. You can also skip breakpoints by toggling on Ignore breaks, located in the toolbar above the main window.</p>
+</li>
+<li><p><strong>Allow Pause in Play</strong></p>
+<p>Pause a running file by clicking the <strong>Pause</strong> button. Pause is allowed by default. Allowing pause also causes the main file to run in the debugger. (For more information, see <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-pdedebug.htm?contextscope=all">Using the debugger</a>.)</p>
+</li>
+<li><p><strong>Set Last Main File on Startup</strong></p>
+<p>Upon startup, automatically reopen the main file that was open when you last closed the Abaqus PDE.</p>
+</li>
+<li><p><strong>Run Script In</strong></p>
+<p>Select whether the main file is run in the Abaqus/CAE GUI, the Abaqus/CAE kernel, or run locally. By default, <cite>.guiLog</cite> files are run in the GUI, and <cite>.py</cite> and other file types are run in the kernel. You can also set this option using the GUI, Kernel, and Local radio buttons located above the main window.If the Abaqus PDE was opened without Abaqus/CAE and you run a script with the <strong>GUI</strong> or <strong>Kernel</strong> process, the Abaqus PDE will start Abaqus/CAE to run the script.</p>
+</li>
+<li><p><strong>.py Default to Kernel</strong></p>
+<p>Set <cite>.py</cite> files to run in the Abaqus/CAE kernel. This option is selected by default. If <cite>.py</cite> Default to Kernel is not selected, <cite>.py</cite> files are run locally. Select the <strong>GUI</strong> or <strong>Local</strong> radio button to run a Python script in one of these modes without changing the default behavior.</p>
+</li>
+<li><p><strong>Line Animation</strong></p>
+<p>Highlight the line currently being executed in the main window. The following animation settings are available:</p>
+<ul class="simple">
+<li><p>No animation.</p></li>
+<li><p>Animate main file (default). Highlights only the statements in the main function or method. Functions called from the main script are not highlighted.</p></li>
+<li><p>Animate main file functions. Highlights the main script statements and the statements in functions that are defined within the main file.</p></li>
+<li><p>Animate all files. Highlights the main script statements and statements within all functions for which the source code is available.</p></li>
+</ul>
+</li>
+<li><p><strong>Python Code</strong></p>
+<p>Control the appearance and editing behavior of Python scripts in the Abaqus PDE main window.</p>
+<ul>
+<li><p><strong>Syntax Coloring</strong></p>
+<p>Display the code using various font colors according to its purpose. This option is selected by default.You can view or change the color selections with the Choose Syntax Colors option.</p>
+</li>
+<li><p><strong>Python Editing</strong></p>
+<p>Edit scripts with Python formatting, such as indentation, included automatically. This option is selected by default.</p>
+</li>
+<li><p><strong>Choose Syntax Colors</strong></p>
+<p>Opens the <strong>PDE Syntax Colors</strong> dialog box in which you can view or change the color selections for editing scripts. Click <strong>Reset Defaults</strong> to restore the default colors.</p>
+</li>
+</ul>
+</li>
+<li><p><strong>CAE Command Line Extra Args…</strong></p>
+<p>Enter extra arguments for use when Abaqus/CAE is launched from the Abaqus PDE.</p>
+</li>
+<li><p><strong>Auto Trace in CAE</strong></p>
+<p>Automatically trace code in GUI and kernel processes of Abaqus/CAE. The script will be traced until it returns from the frame in which the trace started. The trace will therefore stop when the function returns or the end of the script is reached. This option is selected by default.</p>
+</li>
+</ul>
+</section>
+<section id="the-message-area-and-gui-command-line-interface">
+<h2>The message area and GUI command line interface<a class="headerlink" href="#the-message-area-and-gui-command-line-interface" title="Permalink to this headline">#</a></h2>
+<p>The message area and the GUI command line interface share the space at the bottom of the Abaqus PDE, similar to the kernel command line interface in Abaqus/CAE. (For more information, see <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECAERefMap/simacae-c-topmainabqwindow.htm?contextscope=all">Components of the main window</a>.) The message area is displayed by default. It displays messages and warnings as you run scripts in the Abaqus PDE.</p>
+<p>The GUI command line interface is hidden by default, but it uses the same space occupied by the message area. Click <a class="reference internal" href="../../_images/ico_guiCli.png"><img alt="ico_guiCli" src="../../_images/ico_guiCli.png" style="height: 20pt;" /></a> in the bottom left corner of the Abaqus PDE main window to switch from the message area to the GUI command line interface. The GUI and kernel processes in Abaqus/CAE run separately, each using its own Python interpreter. You can use the GUI command line interface to type Python commands and to evaluate mathematical expressions using the Python interpreter that is built into the Abaqus/CAE GUI. You can use the kernel command line interface in Abaqus/CAE for similar tasks. Each command line interface includes primary (&gt;&gt;&gt;) and secondary (…) prompts to indicate when you must indent commands to comply with Python syntax. After you use the GUI command line interface, click <a class="reference internal" href="../../_images/afxI_messageArea.png"><img alt="afxI_messageArea" src="../../_images/afxI_messageArea.png" style="height: 20pt;" /></a> to display the message area.</p>
+<p>If new messages are generated in the message area while the GUI command line interface is active, the background around the message area icon turns red. The background reverts to its normal color when you display the message area.</p>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, WANG Hailin
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Abaqus PDE basics</a><ul>
+<li><a class="reference internal" href="#starting-the-abaqus-python-development-environment">Starting the Abaqus Python development environment</a></li>
+<li><a class="reference internal" href="#managing-files-in-the-abaqus-pde">Managing files in the Abaqus PDE</a></li>
+<li><a class="reference internal" href="#editing-files-in-the-abaqus-pde">Editing files in the Abaqus PDE</a></li>
+<li><a class="reference internal" href="#id1">Selecting the settings for use with a file</a></li>
+<li><a class="reference internal" href="#the-message-area-and-gui-command-line-interface">The message area and GUI command line interface</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/furo.js"></script>
+    </body>
+</html>
