@@ -2,7 +2,7 @@
 Continuation lines and comments
 ===============================
 
-You can continue a statement on the following line if you break the statement between a set of (), {}, or [] delimiters. For example, look at the tuple that was used in :doc:`user/about/examples/creat-part`_ to assign the coordinates of the vertices to a variable:
+You can continue a statement on the following line if you break the statement between a set of (), {}, or [] delimiters. For example, look at the tuple that was used in :doc:`user/about/examples/creat-part` to assign the coordinates of the vertices to a variable:
 
 .. code-block:: python
 
