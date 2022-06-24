@@ -1,4 +1,4 @@
-============
+p============
 User's Guide
 ============
 
@@ -12,7 +12,7 @@ The guide consists of the following sections:
 
   - An introduction to the Abaqus Scripting Interface
 
-  This section provides an overview of the Abaqus Scripting Interface and describes how Abaqus/CAE executes scripts.
+    This section provides an overview of the Abaqus Scripting Interface and describes how Abaqus/CAE executes scripts.
 
   - Simple examples
 
