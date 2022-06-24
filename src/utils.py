@@ -1,6 +1,8 @@
 import os
 import re
 
+from ObjectParser.ObjectParser import ObjectParser
+
 
 def findUserTypePath(type: str, searchDir: str):
     if not os.path.isdir(searchDir):
@@ -126,7 +128,7 @@ def addAttributes(searchDir: str):
                         atts += f'\n\n    {att_doc}\n    {signature}'
                     atts = atts.lstrip()
                     new_text = text.replace('    Notes\n    -----',
-                                            f'{attr_docstring}\n\n    Notes\n    -----')\
+                                            f'{attr_docstring}\n\n    Notes\n    -----') \
                         .replace('def __init__(', f'{atts}\n\n    def __init__(')
                     if '\\' in atts:
                         new_text = re.sub(r'(class \w+[\w\W]+?:\n\s+)"""', r'\g<1>r"""', new_text)
@@ -134,4 +136,38 @@ def addAttributes(searchDir: str):
                         f.write(new_text)
 
 
-addAttributes('markdown')
+# addAttributes('markdown')
+
+
+def fixDefaults(searchDir: str):
+    print(f'# Processing dir: {searchDir}')
+    if not os.path.isdir(searchDir):
+        return ''
+
+    files = os.listdir(searchDir)
+    for file in files:
+        if os.path.isdir(os.path.join(searchDir, file)):
+            fixDefaults(os.path.join(searchDir, file))
+        elif os.path.isfile(os.path.join(searchDir, file)) and file.endswith('.md') and 'README.md' not in file:
+            print(f'    # Processing file: {file}')
+            filePath = os.path.join(searchDir, file)
+            pyFilePath = filePath.replace('markdown', 'abaqus').replace('.md', '.py')
+            if not os.path.exists(pyFilePath):
+                continue
+            with open(pyFilePath, 'r+') as f:
+                text = f.read()
+
+            md = ObjectParser(filePath=filePath)
+            abq = md.parse().toAbaqusObject()
+            for method in abq.methods:
+                strings = re.findall(r'(\s+def {}\([\w\W\r]+?\):[\w\W\r]+?)def '.format(method.name), text)
+                if len(strings) > 0:
+                    string = strings[0]
+                    for arg in method.args:
+                        if arg.required:
+                            argStrings = re.findall(r'{}: [\w\W\r]+ = [\w\W\r]+,', string)
+                            if len(argStrings) > 0:
+                                argString = argStrings[0]
+
+
+fixDefaults('markdown\\Adaptivity')
