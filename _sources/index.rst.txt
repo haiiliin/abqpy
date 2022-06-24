@@ -124,7 +124,7 @@ Documentation
 
    getting_started
    tutorials
-   scripting
+   user
    summary
    references
 
