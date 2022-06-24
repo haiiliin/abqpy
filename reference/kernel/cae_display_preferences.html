@@ -309,7 +309,7 @@
 <h3>CaeGuiPrefs<a class="headerlink" href="#caeguiprefs" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CaeGuiPrefs</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/AbaqusCAEDisplayPreferences/CaeGuiPrefs.py#L4-L39"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CaeGuiPrefs</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/AbaqusCAEDisplayPreferences/CaeGuiPrefs.py#L4-L40"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs" title="Permalink to this definition">#</a></dt>
 <dd><p>The CaeGuiPrefs object contains the details of the graphical preferences in a
 guiPreferences section of the abaqus_2021.gpr file.</p>
 <p class="rubric">Notes</p>
@@ -335,9 +335,15 @@ guiPreferences section of the abaqus_2021.gpr file.</p>
 </tbody>
 </table>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.fileName">
+<span class="sig-name descname"><span class="pre">fileName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/AbaqusCAEDisplayPreferences/CaeGuiPrefs.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.fileName" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the path to the preferences file.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.save">
-<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">backupFile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/AbaqusCAEDisplayPreferences/CaeGuiPrefs.py#L20-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.save" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">backupFile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/AbaqusCAEDisplayPreferences/CaeGuiPrefs.py#L21-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.save" title="Permalink to this definition">#</a></dt>
 <dd><p>This method saves the guiPreferences section specified in the current <strong>fileName</strong>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -352,7 +358,7 @@ preferences file, <strong>fileName</strong>. Default is True.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.saveAs">
-<span class="sig-name descname"><span class="pre">saveAs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/AbaqusCAEDisplayPreferences/CaeGuiPrefs.py#L31-L39"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.saveAs" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">saveAs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/AbaqusCAEDisplayPreferences/CaeGuiPrefs.py#L32-L40"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.saveAs" title="Permalink to this definition">#</a></dt>
 <dd><p>This method saves the guiPreferences settings to the specified location.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -371,7 +377,7 @@ preferences file, <strong>fileName</strong>. Default is True.</p>
 <h3>CaeKerPrefs<a class="headerlink" href="#caekerprefs" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CaeKerPrefs</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/AbaqusCAEDisplayPreferences/CaeKerPrefs.py#L4-L51"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CaeKerPrefs</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/AbaqusCAEDisplayPreferences/CaeKerPrefs.py#L6-L53"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs" title="Permalink to this definition">#</a></dt>
 <dd><p>The CaeKerPrefs object contains the details of the sessionOptions.</p>
 <p class="rubric">Notes</p>
 <p>This object can be accessed by:</p>
@@ -390,7 +396,7 @@ preferences file, <strong>fileName</strong>. Default is True.</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.save" title="abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code></a>([backupFile])</p></td>
 <td><p>This method saves the sessionOptions in the current <strong>fileName</strong>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs" title="abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveAs</span></code></a>(fileName, directory)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs" title="abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveAs</span></code></a>([fileName, directory])</p></td>
 <td><p>This method saves the sessionOptions to the specified location.</p></td>
 </tr>
 </tbody>
@@ -405,7 +411,7 @@ represents.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.save">
-<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">backupFile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/AbaqusCAEDisplayPreferences/CaeKerPrefs.py#L21-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.save" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">backupFile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/AbaqusCAEDisplayPreferences/CaeKerPrefs.py#L23-L32"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.save" title="Permalink to this definition">#</a></dt>
 <dd><p>This method saves the sessionOptions in the current <strong>fileName</strong>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -420,7 +426,7 @@ represents.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs">
-<span class="sig-name descname"><span class="pre">saveAs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/AbaqusCAEDisplayPreferences/CaeKerPrefs.py#L32-L51"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">saveAs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'HOME'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/AbaqusCAEDisplayPreferences/CaeKerPrefs.py#L34-L53"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs" title="Permalink to this definition">#</a></dt>
 <dd><p>This method saves the sessionOptions to the specified location.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
@@ -549,11 +555,11 @@ opened.</p>
 <dt><strong>directory: typing.Literal[‘CURRENT’, ‘HOME’]</strong></dt><dd><p>A SymbolicConstant specifying the location of the preferences file. Possible values
 are:</p>
 <ul class="simple">
-<li><p>CURRENT to open the preferences file in the current directory</p></li>
+<li><p>CURRENT to open the preferences file in the current directory
+(caePrefsAccess.CURRENT)</p></li>
+<li><p>HOME to open the preferences file in your home directory
+(caePrefsAccess.HOME)</p></li>
 </ul>
-<p>(caePrefsAccess.CURRENT)
-- HOME to open the preferences file in your home directory
-(caePrefsAccess.HOME)</p>
 <p>The default value is HOME. Either <strong>fileName</strong> or <strong>directory</strong> must be
 supplied. The <strong>fileName</strong> or <strong>directory</strong> arguments are mutually exclusive.</p>
 </dd>
