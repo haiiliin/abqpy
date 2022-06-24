@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="&lt;no title&gt;" href="environment-file.html" /><link rel="prev" title="Prompting the user for input" href="user-input.html" />
+<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="Using Abaqus Scripting Interface commands in your environment file" href="environment-file.html" /><link rel="prev" title="Prompting the user for input" href="user-input.html" />
 
     <meta name="generator" content="sphinx-4.5.0, furo 2022.06.21"/>
-        <title>&lt;no title&gt; - abqpy 2016a0 documentation</title>
+        <title>Interacting with Abaqus/Standard and Abaqus/Explicit - abqpy 2016a0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
@@ -134,7 +134,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -155,10 +155,10 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../tutorials.html">Tutorials</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../user.html">User’s Guide</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../../../user.html">User’s Guide</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../about.html">About the Abaqus Scripting Interface</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../about/interface.html">Abaqus/CAE and the Abaqus Scripting Interface</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../about/interact.html">How does the Abaqus Scripting Interface interact with Abaqus/CAE?</a></li>
@@ -170,7 +170,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../python.html">Using the Abaqus Scripting Interface</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../../python.html">Using the Abaqus Scripting Interface</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l3 has-children"><a class="reference internal" href="../introduction.html">Introduction to Python</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../introduction/python-abaqus.html">Python and Abaqus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../introduction/python-resources.html">Python resources</a></li>
@@ -189,7 +189,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../python-abaqus/extending.html">Extending the Abaqus Scripting Interface</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../use-scripts.html">Using the Abaqus Scripting Interface with Abaqus/CAE</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 current has-children"><a class="reference internal" href="../use-scripts.html">Using the Abaqus Scripting Interface with Abaqus/CAE</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="object-model.html">The Abaqus object model</a></li>
 <li class="toctree-l4"><a class="reference internal" href="modify-objects.html">Copying, deleting, and renaming Abaqus Scripting Interface objects</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sequences.html">Abaqus/CAE sequences</a></li>
@@ -197,6 +197,8 @@
 <li class="toctree-l4"><a class="reference internal" href="specify-viewport.html">Specifying what is displayed in the viewport</a></li>
 <li class="toctree-l4"><a class="reference internal" href="specify-region.html">Specifying a region</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user-input.html">Prompting the user for input</a></li>
+<li class="toctree-l4 current current-page"><a class="current reference internal" href="#">Interacting with Abaqus/Standard and Abaqus/Explicit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="environment-file.html">Using Abaqus Scripting Interface commands in your environment file</a></li>
 </ul>
 </li>
 </ul>
@@ -340,13 +342,210 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main">
-          
+          <section id="interacting-with-abaqus-standard-and-abaqus-explicit">
+<h1>Interacting with Abaqus/Standard and Abaqus/Explicit<a class="headerlink" href="#interacting-with-abaqus-standard-and-abaqus-explicit" title="Permalink to this headline">#</a></h1>
+<p>The Job commands include methods that allow you to submit jobs to Abaqus/Standard and Abaqus/Explicit. This section describes how you can interact with Abaqus/Standard and Abaqus/Explicit and synchronize your scripts with the analysis job.</p>
+<section id="processing-messages-from-abaqus-standard-and-abaqus-explicit">
+<h2>Processing messages from Abaqus/Standard and Abaqus/Explicit<a class="headerlink" href="#processing-messages-from-abaqus-standard-and-abaqus-explicit" title="Permalink to this headline">#</a></h2>
+<p>You can use the <cite>addMessageCallback</cite> method to associate an event-driven function with a particular message that is retrieved from Abaqus/Standard or Abaqus/Explicit. When Abaqus/CAE retrieves the specific message from Abaqus/Standard or Abaqus/Explicit, the function executes and takes the necessary action. This type of function is called a callback function. The <cite>addMessageCallback</cite> method specifies which callback function to use for which message.</p>
+<p>The arguments to <cite>addMessageCallback</cite> are:</p>
+<ul class="simple">
+<li><p>The name of the job to monitor for messages.</p></li>
+<li><p>The message from Abaqus/Standard or Abaqus/Explicit that causes the callback function to execute.</p></li>
+<li><p>The name of the callback function.</p></li>
+<li><p>An object to pass to the callback function.</p></li>
+</ul>
+<p>These arguments allow you to associate the callback function with both a particular job and a particular message. Alternatively, you can associate the callback function with all jobs and all messages. The commands are described in <span class="xref std std-doc">reference/kernel/messaging</span>.</p>
+<p>The interface definition of the callback function is</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">functionName</span><span class="p">(</span><span class="n">jobName</span><span class="p">,</span> <span class="n">messageType</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">userData</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The arguments to the callback function are:</p>
+<ul class="simple">
+<li><p><strong>jobName</strong>: A String specifying the name of the job to be monitored. You can also use the SymbolicConstant ANY_JOB that specifies that the callback function will monitor messages from all jobs.</p></li>
+<li><p><strong>messageType</strong>: A SymbolicConstant specifying the message type that will call the callback function. You can also use the SymbolicConstant ANY_MESSAGE_TYPE that specifies that all messages will call the callback function. The following is a list of the message types issued by Abaqus/Standard and Abaqus/Explicit:</p>
+<ul>
+<li><p>ABORTED</p></li>
+<li><p>ANY_JOB</p></li>
+<li><p>ANY_MESSAGE_TYPE</p></li>
+<li><p>COMPLETED</p></li>
+<li><p>END_STEP</p></li>
+<li><p>ERROR</p></li>
+<li><p>HEADING</p></li>
+<li><p>HEALER_JOB</p></li>
+<li><p>HEALER_TYPE</p></li>
+<li><p>INTERRUPTED</p></li>
+<li><p>ITERATION</p></li>
+<li><p>JOB_ABORTED</p></li>
+<li><p>JOB_COMPLETED</p></li>
+<li><p>JOB_INTERRUPTED</p></li>
+<li><p>JOB_SUBMITTED</p></li>
+<li><p>MONITOR_DATA</p></li>
+<li><p>ODB_FILE</p></li>
+<li><p>ODB_FRAME</p></li>
+<li><p>SIMULATION_ABORTED</p></li>
+<li><p>SIMULATION_COMPLETED</p></li>
+<li><p>SIMULATION_INTERRUPTED</p></li>
+<li><p>SIMULATION_SUBMITTED</p></li>
+<li><p>STARTED</p></li>
+<li><p>STATUS</p></li>
+<li><p>STEP</p></li>
+<li><p>WARNING</p></li>
+</ul>
+</li>
+<li><p><strong>data</strong>: A DataObject object containing the message data. The following list describes the members of the DataObject object:</p>
+<ul>
+<li><p><strong>clientHost</strong>: A String specifying the host name of the machine that is running the analysis.</p></li>
+<li><p><strong>clientName</strong>: A String specifying the name of the client that sent the message. Possible values are</p>
+<ul>
+<li><p>“BatchPre” (the input file preprocessor)</p></li>
+<li><p>“Packager” (the Abaqus/Explicit preprocessor packager)</p></li>
+<li><p>“Standard” (the Abaqus/Standard analysis)</p></li>
+<li><p>“Explicit” (the Abaqus/Explicit analysis)</p></li>
+<li><p>“Calculator” (the postprocessing calculator)</p></li>
+</ul>
+</li>
+<li><p><strong>phase</strong>: A SymbolicConstant specifying the phase of the analysis. Possible values are</p>
+<ul>
+<li><p>BATCHPRE_PHASE</p></li>
+<li><p>PACKAGER_PHASE</p></li>
+<li><p>STANDARD_PHASE</p></li>
+<li><p>EXPLICIT_PHASE</p></li>
+<li><p>CALCULATOR_PHASE</p></li>
+<li><p>HEALER_PHASE</p></li>
+</ul>
+</li>
+<li><p><strong>processId</strong>: An Int specifying the process ID of the analysis program.</p></li>
+<li><p><strong>threadId</strong>: An Int specifying the thread ID of the analysis program. Threads are used for parallel or multiprocessing; in most cases <em>threadId</em> is set to zero.</p></li>
+<li><p><strong>timeStamp</strong>: An Int specifying the time the message was sent in seconds since 00:00:00 UTC, January 1, 1970.</p></li>
+</ul>
+</li>
+<li><p><strong>userData</strong>: Any Python object or <cite>None</cite>. This object is passed as the <strong>userData</strong> argument to <cite>addMessageCallback</cite>.</p></li>
+</ul>
+<p>The following script is an example of how you can use the messaging capability of the Abaqus Scripting Interface. The callback function will intercept all messages from Abaqus/Standard or Abaqus/Explicit and print the messages in the Abaqus/CAE command line interface. Use the following command to retrieve the example script:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus fetch <span class="nv">job</span><span class="o">=</span>simpleMonitor
+</pre></div>
+</div>
+<p>To execute the script, do the following:</p>
+<ul class="simple">
+<li><p>From the Abaqus/CAE command line interface type from simpleMonitor import printMessages</p></li>
+<li><p>Submit an analysis job as usual.</p></li>
+<li><p>To start printing the messages, type <cite>printMessages(ON)</cite> from the Abaqus/CAE command line interface.</p></li>
+<li><p>To stop printing the messages, type <cite>printMessages(OFF)</cite> from the Abaqus/CAE command line interface.</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">simpleMonitor.py</span>
+
+<span class="sd">Print all messages issued during an Abaqus;</span>
+<span class="sd">analysis to the Abaqus/CAE command line interface</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">jobMessage</span> <span class="kn">import</span> <span class="n">ANY_JOB</span><span class="p">,</span> <span class="n">ANY_MESSAGE_TYPE</span>
+
+<span class="c1">#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span class="k">def</span> <span class="nf">simpleCB</span><span class="p">(</span><span class="n">jobName</span><span class="p">,</span> <span class="n">messageType</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">userData</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This callback prints out all the</span>
+<span class="sd">    members of the data objects</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="nb">format</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%-18s</span><span class="s1">  </span><span class="si">%-18s</span><span class="s1">  </span><span class="si">%s</span><span class="s1">&#39;</span>
+
+    <span class="nb">print</span> <span class="s1">&#39;Message type: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="o">%</span><span class="p">(</span><span class="n">messageType</span><span class="p">)</span>
+    <span class="nb">print</span>
+    <span class="nb">print</span> <span class="s1">&#39;data members:&#39;</span>
+    <span class="nb">print</span> <span class="nb">format</span><span class="o">%</span><span class="p">(</span><span class="s1">&#39;member&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+
+    <span class="n">members</span> <span class="o">=</span>  <span class="nb">dir</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">member</span> <span class="ow">in</span> <span class="n">members</span><span class="p">:</span>
+        <span class="n">memberValue</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">member</span><span class="p">)</span>
+        <span class="n">memberType</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">memberValue</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span>
+        <span class="nb">print</span> <span class="nb">format</span><span class="o">%</span><span class="p">(</span><span class="n">member</span><span class="p">,</span> <span class="n">memberType</span><span class="p">,</span> <span class="n">memberValue</span><span class="p">)</span>
+
+<span class="c1">#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span class="k">def</span> <span class="nf">printMessages</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">ON</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Switch message printing ON or OFF</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">if</span> <span class="n">start</span><span class="p">:</span>
+        <span class="n">monitorManager</span><span class="o">.</span><span class="n">addMessageCallback</span><span class="p">(</span><span class="n">ANY_JOB</span><span class="p">,</span>
+            <span class="n">ANY_MESSAGE_TYPE</span><span class="p">,</span> <span class="n">simpleCB</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">monitorManager</span><span class="o">.</span><span class="n">removeMessageCallback</span><span class="p">(</span><span class="n">ANY_JOB</span><span class="p">,</span>
+            <span class="n">ANY_MESSAGE_TYPE</span><span class="p">,</span> <span class="n">simpleCB</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="waiting-for-a-job-to-complete">
+<h2>Waiting for a job to complete<a class="headerlink" href="#waiting-for-a-job-to-complete" title="Permalink to this headline">#</a></h2>
+<p>You can use the Job object’s <cite>waitForCompletion</cite> method to synchronize your script with a job that has been submitted. If you call the <cite>waitForCompletion</cite> method after you submit a job, the script waits until the analysis is complete before continuing. When the script continues, you should check the status of the job to ensure that the job completed successfully and did not abort. For example, the script described in Reproducing the cantilever beam tutorial uses <cite>waitForCompletion</cite> to ensure that the analysis job has finished executing successfully before the script opens the resulting output database and displays a contour plot of the results.</p>
+<p>In the following example, the script submits myJob1 and waits for it to complete before submitting myJob2.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">myJob1</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">Job</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Job-1&#39;</span><span class="p">)</span>
+<span class="n">myJob2</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">Job</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Job-2&#39;</span><span class="p">)</span>
+<span class="n">myJob1</span><span class="o">.</span><span class="n">submit</span><span class="p">()</span>
+<span class="n">myJob1</span><span class="o">.</span><span class="n">waitForCompletion</span><span class="p">()</span>
+<span class="n">myJob2</span><span class="o">.</span><span class="n">submit</span><span class="p">()</span>
+<span class="n">myJob2</span><span class="o">.</span><span class="n">waitForCompletion</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>If you submit more than one job and then issue a <cite>waitForCompletion</cite> statement, Abaqus waits until the job associated with the <cite>waitForCompletion</cite> statement is complete before checking the status of the second job. If the second job has already completed, the <cite>waitForCompletion</cite> method returns immediately. In the following example the script will not check the status of <cite>myJob2</cite> until <cite>myJob1</cite> has completed.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">myJob1</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">Job</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Job-1&#39;</span><span class="p">)</span>
+<span class="n">myJob2</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">Job</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Job-2&#39;</span><span class="p">)</span>
+<span class="n">myJob1</span><span class="o">.</span><span class="n">submit</span><span class="p">()</span>
+<span class="n">myJob2</span><span class="o">.</span><span class="n">submit</span><span class="p">()</span>
+<span class="n">myJob1</span><span class="o">.</span><span class="n">waitForCompletion</span><span class="p">()</span>
+<span class="n">myJob2</span><span class="o">.</span><span class="n">waitForCompletion</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="an-example-of-a-callback-function">
+<h2>An example of a callback function<a class="headerlink" href="#an-example-of-a-callback-function" title="Permalink to this headline">#</a></h2>
+<p>The following section describes how you can use a callback function as an alternative to the <cite>waitForCompletion</cite> method described in <span class="xref std std-doc">/user/python/use-scripts/interact:waiting for a job to complete</span>. The example uses messaging commands to synchronize a script with an Abaqus/Standard or Abaqus/Explicit analysis. Messaging commands set up a callback function that monitors messages from Abaqus/Standard and Abaqus/Explicit. When the desired message is received, the callback function executes.</p>
+<p>he example uses a callback function that responds to all messages from Abaqus/Standard and Abaqus/Explicit. The function decides what action to take based on the messages received from a job called Deform. If the message indicates that the analysis job is complete, the function opens the output database created by the job and displays a default contour plot.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span class="c1"># Define the callback function</span>
+
+<span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="kn">import</span> <span class="nn">visualization</span>
+
+<span class="k">def</span> <span class="nf">onMessage</span><span class="p">(</span><span class="n">jobName</span><span class="p">,</span> <span class="n">messageType</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">viewport</span><span class="p">):</span>
+<span class="k">if</span> <span class="p">((</span><span class="n">messageType</span><span class="o">==</span><span class="n">ABORTED</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">messageType</span><span class="o">==</span><span class="n">ERROR</span><span class="p">)):</span>
+    <span class="nb">print</span> <span class="s1">&#39;Solver problem; stop execution of callback function&#39;</span>
+<span class="k">elif</span> <span class="p">(</span><span class="n">messageType</span><span class="o">==</span><span class="n">JOB_COMPLETED</span><span class="p">):</span>
+    <span class="n">odb</span> <span class="o">=</span> <span class="n">visualization</span><span class="o">.</span><span class="n">openOdb</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">jobName</span> <span class="o">+</span> <span class="s1">&#39;.odb&#39;</span><span class="p">)</span>
+    <span class="n">viewport</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">displayedObject</span><span class="o">=</span><span class="n">odb</span><span class="p">)</span>
+    <span class="n">viewport</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">plotState</span><span class="o">=</span><span class="n">CONTOURS_ON_DEF</span><span class="p">)</span>
+
+    <span class="n">viewport</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">commonOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">renderStyle</span><span class="o">=</span><span class="n">FILLED</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The following statements show how the example script can be modified to use the callback function. After the first statement is executed, the callback function responds to all messages from the job named <cite>Deform</cite>. The final two statements create the job and submit it for analysis; the example script has now finished executing. When the job is complete, the callback function opens the resulting output database and displays a contour plot.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">...</span>
+<span class="n">myJobName</span> <span class="o">=</span> <span class="s1">&#39;Deform&#39;</span>
+<span class="n">monitorManager</span><span class="o">.</span><span class="n">addMessageCallback</span><span class="p">(</span><span class="n">jobName</span><span class="o">=</span><span class="n">myJobName</span><span class="p">,</span>
+    <span class="n">messageType</span><span class="o">=</span><span class="n">ANY_MESSAGE_TYPE</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="n">onMessage</span><span class="p">,</span>
+    <span class="n">userData</span><span class="o">=</span><span class="n">myViewport</span><span class="p">)</span>
+<span class="n">myJob</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">Job</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">myJobName</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="s1">&#39;Beam&#39;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="n">jobDescription</span><span class="p">)</span>
+<span class="n">myJob</span><span class="o">.</span><span class="n">submit</span><span class="p">()</span>
+<span class="c1"># End of example script.</span>
+</pre></div>
+</div>
+<p>You can use the <cite>removeMessageCallback</cite> method at the end of the callback function to remove it from the system. The arguments to the <cite>removeMessageCallback</cite> method must be identical to the arguments to the corresponding <cite>addMessageCallback</cite> command that set up the callback function.</p>
+</section>
+</section>
+
         </article>
       </div>
       <footer>
@@ -357,7 +556,7 @@
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">&lt;no title&gt;</div>
+                <div class="title">Using Abaqus Scripting Interface commands in your environment file</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -392,8 +591,29 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Interacting with Abaqus/Standard and Abaqus/Explicit</a><ul>
+<li><a class="reference internal" href="#processing-messages-from-abaqus-standard-and-abaqus-explicit">Processing messages from Abaqus/Standard and Abaqus/Explicit</a></li>
+<li><a class="reference internal" href="#waiting-for-a-job-to-complete">Waiting for a job to complete</a></li>
+<li><a class="reference internal" href="#an-example-of-a-callback-function">An example of a callback function</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

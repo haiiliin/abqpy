@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="&lt;no title&gt;" href="interact.html" /><link rel="prev" title="Specifying a region" href="specify-region.html" />
+<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="Interacting with Abaqus/Standard and Abaqus/Explicit" href="interact.html" /><link rel="prev" title="Specifying a region" href="specify-region.html" />
 
     <meta name="generator" content="sphinx-4.5.0, furo 2022.06.21"/>
         <title>Prompting the user for input - abqpy 2016a0 documentation</title>
@@ -134,7 +134,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -197,6 +197,8 @@
 <li class="toctree-l4"><a class="reference internal" href="specify-viewport.html">Specifying what is displayed in the viewport</a></li>
 <li class="toctree-l4"><a class="reference internal" href="specify-region.html">Specifying a region</a></li>
 <li class="toctree-l4 current current-page"><a class="current reference internal" href="#">Prompting the user for input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interact.html">Interacting with Abaqus/Standard and Abaqus/Explicit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="environment-file.html">Using Abaqus Scripting Interface commands in your environment file</a></li>
 </ul>
 </li>
 </ul>
@@ -340,7 +342,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
@@ -358,6 +360,82 @@
 <p class="admonition-title">Note</p>
 <p>Note: You cannot use a script that contains getInput, getInputs or getWarningReply if you are running the script from the command line and passing the script name to the command line options -start,-replay or -noGUI.</p>
 </div>
+<section id="requesting-a-single-input-from-the-user">
+<h2>Requesting a single input from the user<a class="headerlink" href="#requesting-a-single-input-from-the-user" title="Permalink to this headline">#</a></h2>
+<p>The <cite>getInput</cite> function displays a dialog box in the center of the main window, and the user enters the requested value in the text field in the dialog box. The value is returned to the executing script as a String after the user presses the <strong>[Enter]</strong> key or clicks <strong>[OK]</strong>. Optionally, you can specify a default value to be displayed in the text field. The <cite>getInput</cite> function does not provide any error checking; it is the script author’s responsibility to verify the user input. For more information, see <code class="xref py py-func docutils literal notranslate"><span class="pre">getInput()</span></code>.</p>
+<p>The following examples illustrate the use of the <cite>getInput</cite> function. The first example shows a script that uses the <cite>getInput</cite> function to obtain a number from the user. The script then prints the square root of that number.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="n">getInput</span>
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sqrt</span>
+<span class="n">number</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">getInput</span><span class="p">(</span><span class="s1">&#39;Enter a number:&#39;</span><span class="p">))</span>
+<span class="nb">print</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The <cite>float</cite> function on the third line converts the string returned by <cite>getInput</cite> into a floating point number. The following figure shows the dialog box that appears when this script is executed:</p>
+<p>The next example shows how to modify a macro recorded by the <strong>Macro Manager</strong> in Abaqus/CAE to use the getInput function. The following text shows a macro named <cite>createViewport</cite> that was recorded by Abaqus/CAE while the user created a viewport. Macros are stored in the file <cite>abaqusMacros.py</cite> in your local or home directory.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">def</span> <span class="nf">createViewport</span><span class="p">():</span>
+    <span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Viewport: 2&#39;</span><span class="p">,</span>
+        <span class="n">origin</span><span class="o">=</span><span class="p">(</span><span class="mf">15.0</span><span class="p">,</span><span class="mf">15.0</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mf">145.0</span><span class="p">,</span>
+        <span class="n">height</span><span class="o">=</span><span class="mf">90.0</span><span class="p">)</span>
+    <span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="s1">&#39;Viewport: 2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">makeCurrent</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The following shows how you can modify the macro to accept input from the user. Default values for the viewport width and height have been added to the input request.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">def</span> <span class="nf">createViewport</span><span class="p">():</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">getInput</span><span class="p">(</span><span class="s1">&#39;Enter viewport name:&#39;</span><span class="p">)</span>
+    <span class="n">prompt</span> <span class="o">=</span> <span class="s1">&#39;Enter viewport width, height (mm):&#39;</span>
+    <span class="n">w</span><span class="p">,</span> <span class="n">h</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">getInput</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="s1">&#39;100,50&#39;</span><span class="p">))</span>
+    <span class="n">vp</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="n">w</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="n">h</span><span class="p">)</span>
+    <span class="n">vp</span><span class="o">.</span><span class="n">restore</span><span class="p">()</span>
+    <span class="n">vp</span><span class="o">.</span><span class="n">makeCurrent</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The <cite>eval</cite> function in the third line of the macro converts the string returned by the <cite>getInput</cite> function into two integers. When you supply the default values shown in this example to the <cite>getInput</cite> function, the prompt and the text field in the dialog box that appears are shown in the following figure. If the user clicks <strong>[OK]</strong> or presses <strong>[Enter]</strong>, the default values are accepted and returned to the <cite>getInput</cite> function. If the user clicks <strong>[Cancel]</strong>, None is returned.</p>
+</section>
+<section id="requesting-multiple-inputs-from-the-user">
+<h2>Requesting multiple inputs from the user<a class="headerlink" href="#requesting-multiple-inputs-from-the-user" title="Permalink to this headline">#</a></h2>
+<p>The <cite>getInputs</cite> function displays a dialog box in the center of the main window, and the user enters the requested values in text fields in the dialog box. The values are returned to the executing script as a sequence of Strings after the user clicks the <strong>[OK]</strong> button or presses <strong>[Enter]</strong>. Optionally, you can specify default values to be displayed in the text fields. For more information, see <code class="xref py py-func docutils literal notranslate"><span class="pre">getInputs()</span></code>.</p>
+<p>The following examples illustrate the use of the <cite>getInputs</cite> function to obtain a sequence of numbers from the user:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="n">getInputs</span>
+<span class="n">fields</span> <span class="o">=</span> <span class="p">((</span><span class="s1">&#39;Width:&#39;</span><span class="p">,</span><span class="s1">&#39;10&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Length:&#39;</span><span class="p">,</span> <span class="s1">&#39;20&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Height:&#39;</span><span class="p">,</span> <span class="s1">&#39;30&#39;</span><span class="p">))</span>
+<span class="n">length</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span>
+    <span class="n">getInputs</span><span class="p">(</span><span class="n">fields</span><span class="o">=</span><span class="n">fields</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Specify block dimensions:&#39;</span><span class="p">,</span>
+        <span class="n">dialogTitle</span><span class="o">=</span><span class="s1">&#39;Create Block&#39;</span><span class="p">,</span> <span class="p">)</span>
+<span class="nb">print</span> <span class="n">length</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span>
+</pre></div>
+</div>
+<p>The following figure shows the dialog box that these statements create:</p>
+<p>The <cite>fields</cite> argument to the <cite>getInputs</cite> method is a sequence of sequences of Strings. The inner sequence is a pair of Strings that specifies the description of the text field and the default value of the field. If the text field does not have a default value, you must specify an empty string; for example,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fields</span> <span class="o">=</span> <span class="p">((</span><span class="s1">&#39;Width&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Length&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Height&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">))</span>
+<span class="n">length</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span>
+    <span class="n">getInputs</span><span class="p">(</span><span class="n">fields</span><span class="o">=</span><span class="n">fields</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Specify block dimensions:&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The <cite>label</cite> argument to the <cite>getInputs</cite> method is an optional label that appears across the top of the dialog box. The dialogTitle argument is an optional string that appears in the title bar of the dialog box.</p>
+<p>If the user clicks <strong>[Cancel]</strong>, the <cite>getInputs</cite> method returns a sequence of <cite>None</cite> objects. You can check the first value in the sequence to determine if the user clicked <strong>[Cancel]</strong>; for example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fields</span> <span class="o">=</span> <span class="p">((</span><span class="s1">&#39;Density&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Youngs modulus&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">))</span>
+<span class="n">density</span><span class="p">,</span> <span class="n">modulus</span> <span class="o">=</span> <span class="n">getInputs</span><span class="p">(</span><span class="n">fields</span><span class="p">,</span> <span class="s1">&#39;Material properties&#39;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">density</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="s1">&#39;User pressed Cancel&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="requesting-a-warning-reply-from-the-user">
+<h2>Requesting a warning reply from the user<a class="headerlink" href="#requesting-a-warning-reply-from-the-user" title="Permalink to this headline">#</a></h2>
+<p>The <cite>getWarningReply</cite> function displays a warning dialog box in the center of the main window, and the user clicks on one of the standard reply buttons in the dialog box. The clicked button value is returned to the executing script. For more information, see <code class="xref py py-func docutils literal notranslate"><span class="pre">getWarningReply()</span></code>.</p>
+<p>The following example illustrates the use of the <cite>getWarningReply</cite> function:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="n">getWarningReply</span><span class="p">,</span> <span class="n">YES</span><span class="p">,</span> <span class="n">NO</span>
+
+<span class="n">reply</span> <span class="o">=</span> <span class="n">getWarningReply</span><span class="p">(</span><span class="n">message</span><span class="o">=</span><span class="s1">&#39;Okay to continue?&#39;</span><span class="p">,</span> <span class="n">buttons</span><span class="o">=</span><span class="p">(</span><span class="n">YES</span><span class="p">,</span><span class="n">NO</span><span class="p">))</span>
+<span class="k">if</span> <span class="n">reply</span> <span class="o">==</span> <span class="n">YES</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="s1">&#39;YES clicked&#39;</span>
+<span class="k">elif</span> <span class="n">reply</span> <span class="o">==</span> <span class="n">NO</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="s1">&#39;NO clicked&#39;</span>
+</pre></div>
+</div>
+<p>The following figure shows the dialog box that appears when this script is executed:</p>
+</section>
 </section>
 
         </article>
@@ -370,7 +448,7 @@
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">&lt;no title&gt;</div>
+                <div class="title">Interacting with Abaqus/Standard and Abaqus/Explicit</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -405,8 +483,29 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Prompting the user for input</a><ul>
+<li><a class="reference internal" href="#requesting-a-single-input-from-the-user">Requesting a single input from the user</a></li>
+<li><a class="reference internal" href="#requesting-multiple-inputs-from-the-user">Requesting multiple inputs from the user</a></li>
+<li><a class="reference internal" href="#requesting-a-warning-reply-from-the-user">Requesting a warning reply from the user</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
