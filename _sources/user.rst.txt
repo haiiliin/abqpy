@@ -65,3 +65,6 @@ The guide consists of the following sections:
    
    user/about
    user/python
+   user/environment
+   user/examples
+   user/output
