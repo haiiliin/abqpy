@@ -357,12 +357,14 @@
 <h3>In Mdb<a class="headerlink" href="#in-mdb" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Amplitude.AmplitudeModel.AmplitudeModel">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AmplitudeModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stefanBoltzmann</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">absoluteZero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waveFormulation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'NOT_SET'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STANDARD_EXPLICIT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">universalGas</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyConstraints</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyConnectors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyInteractions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeModel.py#L17-L579"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeModel.AmplitudeModel" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AmplitudeModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stefanBoltzmann</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">absoluteZero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waveFormulation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'NOT_SET'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STANDARD_EXPLICIT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">universalGas</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyConstraints</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyConnectors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyInteractions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeModel.py#L17-L568"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeModel.AmplitudeModel" title="Permalink to this definition">#</a></dt>
 <dd><p>Abaqus creates a Model object named <cite>Model-1</cite> when a session is started.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -407,8 +409,16 @@
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ActuatorAmplitude">
-<span class="sig-name descname"><span class="pre">ActuatorAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeModel.py#L29-L62"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ActuatorAmplitude" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">ActuatorAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeModel.py#L28-L60"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ActuatorAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a ActuatorAmplitude object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ActuatorAmplitude</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ActuatorAmplitude</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -433,18 +443,20 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ActuatorAmplitude</span>
-<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ActuatorAmplitude</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.AmplitudeModel.AmplitudeModel.DecayAmplitude">
-<span class="sig-name descname"><span class="pre">DecayAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decayTime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeModel.py#L64-L113"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeModel.AmplitudeModel.DecayAmplitude" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">DecayAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decayTime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeModel.py#L62-L110"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeModel.AmplitudeModel.DecayAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a DecayAmplitude object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">DecayAmplitude</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">DecayAmplitude</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -477,18 +489,20 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">DecayAmplitude</span>
-<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">DecayAmplitude</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.AmplitudeModel.AmplitudeModel.EquallySpacedAmplitude">
-<span class="sig-name descname"><span class="pre">EquallySpacedAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixedInterval</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">begin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smooth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SOLVER_DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeModel.py#L115-L169"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeModel.AmplitudeModel.EquallySpacedAmplitude" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">EquallySpacedAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixedInterval</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">begin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smooth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SOLVER_DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeModel.py#L112-L165"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeModel.AmplitudeModel.EquallySpacedAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates an EquallySpacedAmplitude object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">EquallySpacedAmplitude</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">EquallySpacedAmplitude</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -526,18 +540,20 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">EquallySpacedAmplitude</span>
-<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">EquallySpacedAmplitude</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ModulatedAmplitude">
-<span class="sig-name descname"><span class="pre">ModulatedAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">magnitude</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeModel.py#L171-L225"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ModulatedAmplitude" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">ModulatedAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">magnitude</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeModel.py#L167-L220"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ModulatedAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a ModulatedAmplitude object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ModulatedAmplitude</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ModulatedAmplitude</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -574,18 +590,20 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ModulatedAmplitude</span>
-<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ModulatedAmplitude</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PeriodicAmplitude">
-<span class="sig-name descname"><span class="pre">PeriodicAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a_0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeModel.py#L227-L276"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PeriodicAmplitude" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">PeriodicAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a_0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeModel.py#L222-L270"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PeriodicAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a PeriodicAmplitude object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">PeriodicAmplitude</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">PeriodicAmplitude</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -618,18 +636,20 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">PeriodicAmplitude</span>
-<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">PeriodicAmplitude</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PsdDefinition">
-<span class="sig-name descname"><span class="pre">PsdDefinition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unitType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FORCE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenceGravityAcceleration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenecePower</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeModel.py#L278-L350"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PsdDefinition" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">PsdDefinition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unitType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FORCE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenceGravityAcceleration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenecePower</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeModel.py#L272-L343"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PsdDefinition" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a PsdDefinition object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">PsdDefinition</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">PsdDefinition</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -676,18 +696,20 @@ string.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">PsdDefinition</span>
-<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">PsdDefinition</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SmoothStepAmplitude">
-<span class="sig-name descname"><span class="pre">SmoothStepAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeModel.py#L352-L388"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SmoothStepAmplitude" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">SmoothStepAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeModel.py#L345-L380"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SmoothStepAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a SmoothStepAmplitude object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SmoothStepAmplitude</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SmoothStepAmplitude</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -715,18 +737,20 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SmoothStepAmplitude</span>
-<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SmoothStepAmplitude</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SolutionDependentAmplitude">
-<span class="sig-name descname"><span class="pre">SolutionDependentAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeModel.py#L390-L439"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SolutionDependentAmplitude" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">SolutionDependentAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeModel.py#L382-L430"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SolutionDependentAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a SolutionDependentAmplitude object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SolutionDependentAmplitude</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SolutionDependentAmplitude</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -760,18 +784,20 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SolutionDependentAmplitude</span>
-<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SolutionDependentAmplitude</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SpectrumAmplitude">
-<span class="sig-name descname"><span class="pre">SpectrumAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">specificationUnits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ACCELERATION'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eventUnits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'EVENT_ACCELERATION'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ABSOLUTE_VALUE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeIncrement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gravity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criticalDamping</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeModel.py#L441-L530"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SpectrumAmplitude" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">SpectrumAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">specificationUnits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ACCELERATION'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eventUnits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'EVENT_ACCELERATION'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ABSOLUTE_VALUE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeIncrement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gravity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criticalDamping</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeModel.py#L432-L520"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SpectrumAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a SpectrumAmplitude object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SpectrumAmplitude</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SpectrumAmplitude</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -829,18 +855,20 @@ calculate the spectrum. The default value is an empty string.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SpectrumAmplitude</span>
-<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SpectrumAmplitude</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.AmplitudeModel.AmplitudeModel.TabularAmplitude">
-<span class="sig-name descname"><span class="pre">TabularAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smooth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SOLVER_DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeModel.py#L532-L579"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeModel.AmplitudeModel.TabularAmplitude" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">TabularAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smooth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SOLVER_DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeModel.py#L522-L568"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeModel.AmplitudeModel.TabularAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a TabularAmplitude object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">TabularAmplitude</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">TabularAmplitude</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -873,12 +901,6 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">TabularAmplitude</span>
-<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">TabularAmplitude</span>
-</pre></div>
-</div>
 </dd></dl>
 
 </dd></dl>
@@ -888,13 +910,15 @@ and TOTAL. The default value is STEP.</p>
 <h3>In Odb<a class="headerlink" href="#in-odb" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AmplitudeOdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analysisTitle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeOdb.py#L17-L580"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AmplitudeOdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analysisTitle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeOdb.py#L17-L569"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb" title="Permalink to this definition">#</a></dt>
 <dd><p>The Odb object is the in-memory representation of an output database (ODB) file.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">odbAccess</span>
 <span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -939,8 +963,16 @@ and TOTAL. The default value is STEP.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ActuatorAmplitude">
-<span class="sig-name descname"><span class="pre">ActuatorAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeOdb.py#L30-L63"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ActuatorAmplitude" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">ActuatorAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeOdb.py#L29-L61"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ActuatorAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a ActuatorAmplitude object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ActuatorAmplitude</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ActuatorAmplitude</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -965,18 +997,20 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ActuatorAmplitude</span>
-<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ActuatorAmplitude</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.DecayAmplitude">
-<span class="sig-name descname"><span class="pre">DecayAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decayTime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeOdb.py#L65-L114"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.DecayAmplitude" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">DecayAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decayTime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeOdb.py#L63-L111"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.DecayAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a DecayAmplitude object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">DecayAmplitude</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">DecayAmplitude</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -1009,18 +1043,20 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">DecayAmplitude</span>
-<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">DecayAmplitude</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.EquallySpacedAmplitude">
-<span class="sig-name descname"><span class="pre">EquallySpacedAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixedInterval</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">begin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smooth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SOLVER_DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeOdb.py#L116-L170"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.EquallySpacedAmplitude" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">EquallySpacedAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixedInterval</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">begin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smooth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SOLVER_DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeOdb.py#L113-L166"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.EquallySpacedAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates an EquallySpacedAmplitude object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">EquallySpacedAmplitude</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">EquallySpacedAmplitude</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -1058,18 +1094,20 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">EquallySpacedAmplitude</span>
-<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">EquallySpacedAmplitude</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ModulatedAmplitude">
-<span class="sig-name descname"><span class="pre">ModulatedAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">magnitude</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeOdb.py#L172-L226"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ModulatedAmplitude" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">ModulatedAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">magnitude</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeOdb.py#L168-L221"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ModulatedAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a ModulatedAmplitude object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ModulatedAmplitude</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ModulatedAmplitude</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -1106,18 +1144,20 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ModulatedAmplitude</span>
-<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">ModulatedAmplitude</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PeriodicAmplitude">
-<span class="sig-name descname"><span class="pre">PeriodicAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a_0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeOdb.py#L228-L277"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PeriodicAmplitude" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">PeriodicAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a_0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeOdb.py#L223-L271"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PeriodicAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a PeriodicAmplitude object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">PeriodicAmplitude</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">PeriodicAmplitude</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -1150,18 +1190,20 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">PeriodicAmplitude</span>
-<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">PeriodicAmplitude</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PsdDefinition">
-<span class="sig-name descname"><span class="pre">PsdDefinition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unitType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FORCE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenceGravityAcceleration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenecePower</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeOdb.py#L279-L351"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PsdDefinition" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">PsdDefinition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unitType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FORCE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenceGravityAcceleration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenecePower</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeOdb.py#L273-L344"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PsdDefinition" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a PsdDefinition object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">PsdDefinition</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">PsdDefinition</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -1208,18 +1250,20 @@ string.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">PsdDefinition</span>
-<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">PsdDefinition</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SmoothStepAmplitude">
-<span class="sig-name descname"><span class="pre">SmoothStepAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeOdb.py#L353-L389"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SmoothStepAmplitude" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">SmoothStepAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeOdb.py#L346-L381"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SmoothStepAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a SmoothStepAmplitude object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SmoothStepAmplitude</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SmoothStepAmplitude</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -1247,18 +1291,20 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SmoothStepAmplitude</span>
-<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SmoothStepAmplitude</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SolutionDependentAmplitude">
-<span class="sig-name descname"><span class="pre">SolutionDependentAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeOdb.py#L391-L440"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SolutionDependentAmplitude" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">SolutionDependentAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeOdb.py#L383-L431"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SolutionDependentAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a SolutionDependentAmplitude object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SolutionDependentAmplitude</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SolutionDependentAmplitude</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -1292,18 +1338,20 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SolutionDependentAmplitude</span>
-<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SolutionDependentAmplitude</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude">
-<span class="sig-name descname"><span class="pre">SpectrumAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">specificationUnits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ACCELERATION'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eventUnits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'EVENT_ACCELERATION'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ABSOLUTE_VALUE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeIncrement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gravity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criticalDamping</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeOdb.py#L442-L531"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">SpectrumAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">specificationUnits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ACCELERATION'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eventUnits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'EVENT_ACCELERATION'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ABSOLUTE_VALUE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeIncrement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gravity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criticalDamping</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeOdb.py#L433-L521"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a SpectrumAmplitude object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SpectrumAmplitude</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SpectrumAmplitude</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -1361,18 +1409,20 @@ calculate the spectrum. The default value is an empty string.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SpectrumAmplitude</span>
-<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">SpectrumAmplitude</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.TabularAmplitude">
-<span class="sig-name descname"><span class="pre">TabularAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smooth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SOLVER_DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeOdb.py#L533-L580"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.TabularAmplitude" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">TabularAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smooth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SOLVER_DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/AmplitudeOdb.py#L523-L569"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.TabularAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a TabularAmplitude object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">TabularAmplitude</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">TabularAmplitude</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -1405,12 +1455,6 @@ and TOTAL. The default value is STEP.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">TabularAmplitude</span>
-<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">TabularAmplitude</span>
-</pre></div>
-</div>
 </dd></dl>
 
 </dd></dl>
@@ -1423,17 +1467,19 @@ and TOTAL. The default value is STEP.</p>
 <h3>Amplitude<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Amplitude.Amplitude.Amplitude">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Amplitude</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/Amplitude.py#L4-L26"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.Amplitude.Amplitude" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Amplitude</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/Amplitude.py#L4-L25"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.Amplitude.Amplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>The Amplitude object is the abstract base type for other Amplitude objects. The
 Amplitude object has no explicit constructor. The methods and members of the Amplitude
 object are common to all objects derived from the Amplitude.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">amplitude</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">amplitudes</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 <span class="kn">import</span> <span class="nn">odbAmplitude</span>
 <span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">amplitudes</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Amplitude.Amplitude.Amplitude.name">
@@ -1455,10 +1501,11 @@ and TOTAL. The default value is STEP.</p>
 <h3>ActuatorAmplitude<a class="headerlink" href="#actuatoramplitude" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ActuatorAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/ActuatorAmplitude.py#L5-L78"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ActuatorAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/ActuatorAmplitude.py#L5-L76"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>The ActuatorAmplitude object defines an actuator amplitude curve.
 The ActuatorAmplitude object is derived from the Amplitude object.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">amplitude</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">amplitudes</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
@@ -1470,6 +1517,7 @@ The ActuatorAmplitude object is derived from the Amplitude object.</p>
 <ul class="simple">
 <li><p>AMPLITUDE</p></li>
 </ul>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1486,7 +1534,7 @@ The ActuatorAmplitude object is derived from the Amplitude object.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/ActuatorAmplitude.py#L65-L78"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/ActuatorAmplitude.py#L63-L76"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the ActuatorAmplitude object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1518,10 +1566,11 @@ and TOTAL. The default value is STEP.</p>
 <h3>BaselineCorrection<a class="headerlink" href="#baselinecorrection" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Amplitude.BaselineCorrection.BaselineCorrection">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BaselineCorrection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">intervals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/BaselineCorrection.py#L1-L63"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.BaselineCorrection.BaselineCorrection" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BaselineCorrection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">intervals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/BaselineCorrection.py#L1-L61"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.BaselineCorrection.BaselineCorrection" title="Permalink to this definition">#</a></dt>
 <dd><p>The BaselineCorrection object modifies an acceleration history to minimize the overall
 drift of the displacement obtained from the time integration of the given acceleration.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">amplitude</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">amplitudes</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">baselineCorrection</span>
@@ -1533,6 +1582,7 @@ drift of the displacement obtained from the time integration of the given accele
 <ul class="simple">
 <li><p>BASELINE CORRECTION</p></li>
 </ul>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1557,7 +1607,7 @@ sequence.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.BaselineCorrection.BaselineCorrection.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/BaselineCorrection.py#L56-L63"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.BaselineCorrection.BaselineCorrection.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/BaselineCorrection.py#L54-L61"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.BaselineCorrection.BaselineCorrection.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the BaselineCorrection object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises</dt>
@@ -1575,15 +1625,17 @@ sequence.</p>
 <h3>Correlation<a class="headerlink" href="#correlation" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Amplitude.Correlation.Correlation">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Correlation</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/Correlation.py#L5-L35"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.Correlation.Correlation" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Correlation</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/Correlation.py#L5-L34"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.Correlation.Correlation" title="Permalink to this definition">#</a></dt>
 <dd><p>A Correlation is an object used to define the cross-correlation as part of the
 definition of random loading.
 The Correlation object is derived from the Amplitude object.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">load</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">boundaryConditions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">correlation</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -1650,10 +1702,11 @@ and TOTAL. The default value is STEP.</p>
 <h3>DecayAmplitude<a class="headerlink" href="#decayamplitude" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Amplitude.DecayAmplitude.DecayAmplitude">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DecayAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decayTime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/DecayAmplitude.py#L5-L106"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.DecayAmplitude.DecayAmplitude" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DecayAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decayTime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/DecayAmplitude.py#L5-L104"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.DecayAmplitude.DecayAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>The DecayAmplitude object defines an amplitude curve using an exponential decay.
 The DecayAmplitude object is derived from the Amplitude object.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">amplitude</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">amplitudes</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
@@ -1665,6 +1718,7 @@ The DecayAmplitude object is derived from the Amplitude object.</p>
 <ul class="simple">
 <li><p>AMPLITUDE</p></li>
 </ul>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1699,7 +1753,7 @@ The DecayAmplitude object is derived from the Amplitude object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.DecayAmplitude.DecayAmplitude.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/DecayAmplitude.py#L93-L106"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.DecayAmplitude.DecayAmplitude.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/DecayAmplitude.py#L91-L104"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.DecayAmplitude.DecayAmplitude.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the DecayAmplitude object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1737,11 +1791,12 @@ and TOTAL. The default value is STEP.</p>
 <h3>EquallySpacedAmplitude<a class="headerlink" href="#equallyspacedamplitude" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EquallySpacedAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixedInterval</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">begin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smooth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SOLVER_DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/EquallySpacedAmplitude.py#L8-L136"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EquallySpacedAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixedInterval</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">begin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smooth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SOLVER_DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/EquallySpacedAmplitude.py#L8-L134"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>The EquallySpacedAmplitude object defines a list of amplitude values at fixed time
 intervals beginning at a specified value of time.
 The EquallySpacedAmplitude object is derived from the Amplitude object.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">amplitude</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">amplitudes</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
@@ -1753,6 +1808,7 @@ The EquallySpacedAmplitude object is derived from the Amplitude object.</p>
 <ul class="simple">
 <li><p>AMPLITUDE</p></li>
 </ul>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1795,7 +1851,7 @@ Possible values are positive numbers.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">begin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smooth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SOLVER_DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/EquallySpacedAmplitude.py#L110-L136"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">begin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smooth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SOLVER_DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/EquallySpacedAmplitude.py#L108-L134"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the EquallySpacedAmplitude object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1844,10 +1900,11 @@ and TOTAL. The default value is STEP.</p>
 <h3>ModulatedAmplitude<a class="headerlink" href="#modulatedamplitude" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ModulatedAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">magnitude</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/ModulatedAmplitude.py#L5-L116"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ModulatedAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">magnitude</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/ModulatedAmplitude.py#L5-L114"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>The ModulatedAmplitude object defines a modulated amplitude curve.
 The ModulatedAmplitude object is derived from the Amplitude object.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">amplitude</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">amplitudes</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
@@ -1859,6 +1916,7 @@ The ModulatedAmplitude object is derived from the Amplitude object.</p>
 <ul class="simple">
 <li><p>AMPLITUDE</p></li>
 </ul>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1901,7 +1959,7 @@ numbers.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/ModulatedAmplitude.py#L103-L116"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/ModulatedAmplitude.py#L101-L114"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the ModulatedAmplitude object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1939,10 +1997,11 @@ and TOTAL. The default value is STEP.</p>
 <h3>PeriodicAmplitude<a class="headerlink" href="#periodicamplitude" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PeriodicAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a_0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PeriodicAmplitude.py#L5-L106"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PeriodicAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a_0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PeriodicAmplitude.py#L5-L104"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>The PeriodicAmplitude object defines an amplitude curve using a Fourier series.
 The PeriodicAmplitude object is derived from the Amplitude object.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">amplitude</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">amplitudes</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
@@ -1954,6 +2013,7 @@ The PeriodicAmplitude object is derived from the Amplitude object.</p>
 <ul class="simple">
 <li><p>AMPLITUDE</p></li>
 </ul>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1988,7 +2048,7 @@ The PeriodicAmplitude object is derived from the Amplitude object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PeriodicAmplitude.py#L93-L106"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PeriodicAmplitude.py#L91-L104"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the PeriodicAmplitude object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2029,11 +2089,12 @@ and TOTAL. The default value is STEP.</p>
 <h3>PsdDefinition<a class="headerlink" href="#psddefinition" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Amplitude.PsdDefinition.PsdDefinition">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PsdDefinition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unitType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FORCE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenceGravityAcceleration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenecePower</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PsdDefinition.py#L5-L165"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PsdDefinition.PsdDefinition" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PsdDefinition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unitType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FORCE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenceGravityAcceleration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenecePower</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PsdDefinition.py#L5-L163"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PsdDefinition.PsdDefinition" title="Permalink to this definition">#</a></dt>
 <dd><p>The PsdDefinition object defines the cross-spectral density frequency function for
 random response loading.
 The PsdDefinition object is derived from the Amplitude object.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">amplitude</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">amplitudes</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
@@ -2045,6 +2106,7 @@ The PsdDefinition object is derived from the Amplitude object.</p>
 <ul class="simple">
 <li><p>PSD-DEFINITION</p></li>
 </ul>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -2091,7 +2153,7 @@ applies when <strong>unitType</strong> = DB. The default value is 0.0.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.PsdDefinition.PsdDefinition.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">unitType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FORCE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenceGravityAcceleration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenecePower</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PsdDefinition.py#L126-L165"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PsdDefinition.PsdDefinition.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">unitType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FORCE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenceGravityAcceleration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenecePower</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/PsdDefinition.py#L124-L163"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.PsdDefinition.PsdDefinition.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the PsdDefinition object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2157,11 +2219,12 @@ The default value is OFF.</p>
 <h3>SmoothStepAmplitude<a class="headerlink" href="#smoothstepamplitude" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SmoothStepAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SmoothStepAmplitude.py#L5-L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SmoothStepAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SmoothStepAmplitude.py#L5-L84"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>The SmoothStepAmplitude object defines an amplitude that ramps up or down smoothly from
 one data point to another.
 The SmoothStepAmplitude object is derived from the Amplitude object.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">amplitude</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">amplitudes</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
@@ -2173,6 +2236,7 @@ The SmoothStepAmplitude object is derived from the Amplitude object.</p>
 <ul class="simple">
 <li><p>AMPLITUDE</p></li>
 </ul>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -2196,7 +2260,7 @@ values for time/frequency are positive numbers.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SmoothStepAmplitude.py#L73-L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SmoothStepAmplitude.py#L71-L84"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the SmoothStepAmplitude object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2228,11 +2292,12 @@ and TOTAL. The default value is STEP.</p>
 <h3>SolutionDependentAmplitude<a class="headerlink" href="#solutiondependentamplitude" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SolutionDependentAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SolutionDependentAmplitude.py#L5-L122"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SolutionDependentAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SolutionDependentAmplitude.py#L5-L120"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>The SolutionDependentAmplitude object defines a solution-dependent amplitude for
 superplastic forming analysis.
 The SolutionDependentAmplitude object is derived from the Amplitude object.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">amplitude</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">amplitudes</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
@@ -2244,6 +2309,7 @@ The SolutionDependentAmplitude object is derived from the Amplitude object.</p>
 <ul class="simple">
 <li><p>AMPLITUDE</p></li>
 </ul>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -2281,7 +2347,7 @@ The SolutionDependentAmplitude object is derived from the Amplitude object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">initial</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SolutionDependentAmplitude.py#L94-L122"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">initial</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SolutionDependentAmplitude.py#L92-L120"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the SolutionDependentAmplitude object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2322,11 +2388,12 @@ and TOTAL. The default value is STEP.</p>
 <h3>SpectrumAmplitude<a class="headerlink" href="#spectrumamplitude" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SpectrumAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">specificationUnits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ACCELERATION'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eventUnits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'EVENT_ACCELERATION'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ABSOLUTE_VALUE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeIncrement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gravity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criticalDamping</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SpectrumAmplitude.py#L5-L204"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SpectrumAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">specificationUnits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ACCELERATION'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eventUnits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'EVENT_ACCELERATION'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ABSOLUTE_VALUE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeIncrement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gravity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criticalDamping</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SpectrumAmplitude.py#L5-L202"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>The SpectrumAmplitude object defines the spectrum of responses for displacement,
 velocity, or acceleration to be used in a response spectrum analysis.
 The SpectrumAmplitude object is derived from the Amplitude object.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">amplitude</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">amplitudes</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
@@ -2338,6 +2405,7 @@ The SpectrumAmplitude object is derived from the Amplitude object.</p>
 <ul class="simple">
 <li><p>SPECTRUM</p></li>
 </ul>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -2401,7 +2469,7 @@ are DEFINE and CALCULATE.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">specificationUnits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ACCELERATION'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eventUnits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'EVENT_ACCELERATION'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ABSOLUTE_VALUE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeIncrement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gravity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criticalDamping</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SpectrumAmplitude.py#L154-L204"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">specificationUnits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ACCELERATION'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eventUnits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'EVENT_ACCELERATION'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ABSOLUTE_VALUE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeIncrement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gravity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criticalDamping</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/SpectrumAmplitude.py#L152-L202"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the SpectrumAmplitude object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2482,11 +2550,12 @@ and TOTAL. The default value is STEP.</p>
 <h3>TabularAmplitude<a class="headerlink" href="#tabularamplitude" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Amplitude.TabularAmplitude.TabularAmplitude">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TabularAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smooth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SOLVER_DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/TabularAmplitude.py#L8-L118"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.TabularAmplitude.TabularAmplitude" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TabularAmplitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smooth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SOLVER_DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/TabularAmplitude.py#L8-L116"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.TabularAmplitude.TabularAmplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>The TabularAmplitude object defines an amplitude curve as a table of values at
 convenient points on the time scale.
 The TabularAmplitude object is derived from the Amplitude object.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">amplitude</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">amplitudes</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
@@ -2498,6 +2567,7 @@ The TabularAmplitude object is derived from the Amplitude object.</p>
 <ul class="simple">
 <li><p>AMPLITUDE</p></li>
 </ul>
+</div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -2527,7 +2597,7 @@ values for time/frequency are positive numbers.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Amplitude.TabularAmplitude.TabularAmplitude.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">smooth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SOLVER_DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/TabularAmplitude.py#L96-L118"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.TabularAmplitude.TabularAmplitude.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">smooth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SOLVER_DEFAULT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeSpan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'STEP'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Amplitude/TabularAmplitude.py#L94-L116"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Amplitude.TabularAmplitude.TabularAmplitude.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the TabularAmplitude object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

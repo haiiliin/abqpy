@@ -372,18 +372,28 @@
 <h3>Session<a class="headerlink" href="#session" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Session</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L31"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Session</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L10-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session" title="Permalink to this definition">#</a></dt>
 <dd><p>The Session object has no constructor. Abaqus creates the <strong>session</strong> member when a
 session is started.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span>
 </pre></div>
 </div>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.AreaStyle">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AreaStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fill</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SOLID'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L20-L57"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.AreaStyle" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AreaStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fill</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SOLID'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L20-L56"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.AreaStyle" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates an AreaStyle.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">AreaStyle</span>
+<span class="n">xyPlot</span><span class="o">.</span><span class="n">AreaStyle</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -411,18 +421,19 @@ using this AreaStyle. The default value is SOLID.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">AreaStyle</span>
-<span class="n">xyPlot</span><span class="o">.</span><span class="n">AreaStyle</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.DisplayGroup">
-<span class="sig-name descname"><span class="pre">DisplayGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leaf</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L7-L31"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.DisplayGroup" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">DisplayGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leaf</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L7-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.DisplayGroup" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a DisplayGroup object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">DisplayGroup</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -440,17 +451,20 @@ using this AreaStyle. The default value is SOLID.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">DisplayGroup</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.LineStyle">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LineStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SOLID'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L59-L103"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.LineStyle" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LineStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SOLID'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L58-L101"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.LineStyle" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a LineStyle.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">LineStyle</span>
+<span class="n">xyPlot</span><span class="o">.</span><span class="n">LineStyle</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -482,18 +496,19 @@ LineStyle. The default value is 0.2.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">LineStyle</span>
-<span class="n">xyPlot</span><span class="o">.</span><span class="n">LineStyle</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.Movie">
-<span class="sig-name descname"><span class="pre">Movie</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineStartFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineEndFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineStartTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineEndTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'END_FRAME_TIME'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L41-L116"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.Movie" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">Movie</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineStartFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineEndFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineStartTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineEndTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'END_FRAME_TIME'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L40-L114"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.Movie" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Movie object from the contents of the specified file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Movie</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -546,17 +561,19 @@ ValueError: Unable to decode movie file</p></li>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Movie</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.Path">
-<span class="sig-name descname"><span class="pre">Path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expression</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">circleDefinition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numSegments</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startAngle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endAngle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radialAngle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startRadius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endRadius</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L12-L121"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.Path" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">Path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expression</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">circleDefinition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numSegments</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startAngle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endAngle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radialAngle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startRadius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endRadius</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L12-L120"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.Path" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Path object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Path</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -638,17 +655,20 @@ path. This argument is valid only when <strong>type</strong> = RADIAL.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Path</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.QuantityType">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">QuantityType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L105-L206"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.QuantityType" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">QuantityType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L103-L203"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.QuantityType" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a QuantityType object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">QuantityType</span>
+<span class="n">xyPlot</span><span class="o">.</span><span class="n">QuantityType</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl>
@@ -741,19 +761,20 @@ path. This argument is valid only when <strong>type</strong> = RADIAL.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">QuantityType</span>
-<span class="n">xyPlot</span><span class="o">.</span><span class="n">QuantityType</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.Queue">
-<span class="sig-name descname"><span class="pre">Queue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queueName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hostName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileCopy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">driver</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remotePlatform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Linux'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filesToCopy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ALL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deleteAfterCopy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L7-L85"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.Queue" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">Queue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queueName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hostName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileCopy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">driver</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remotePlatform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Linux'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filesToCopy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ALL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deleteAfterCopy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L7-L84"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.Queue" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Queue object.
 Note:Remote queues are available only on Linux platforms.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Queue</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -802,17 +823,19 @@ local machine. The default value is OFF.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Queue</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.ScratchOdb">
-<span class="sig-name descname"><span class="pre">ScratchOdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">odb</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L7-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.ScratchOdb" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">ScratchOdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">odb</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L7-L28"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.ScratchOdb" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a new ScratchOdb object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">ScratchOdb</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -828,17 +851,19 @@ local machine. The default value is OFF.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">ScratchOdb</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.Spectrum">
-<span class="sig-name descname"><span class="pre">Spectrum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L123-L147"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.Spectrum" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">Spectrum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L122-L145"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.Spectrum" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Spectrum object and places it in the spectrums repository.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Spectrum</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -856,17 +881,19 @@ local machine. The default value is OFF.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Spectrum</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.Stream">
-<span class="sig-name descname"><span class="pre">Stream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numPointsOnRake</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointA</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointB</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L149-L190"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.Stream" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">Stream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numPointsOnRake</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointA</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointB</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L147-L187"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.Stream" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates aStream object and places it in the streams repository.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Stream</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -892,17 +919,20 @@ representation of the node selected in the viewport.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Stream</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.SymbolStyle">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SymbolStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">marker</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FILLED_CIRCLE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L208-L265"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.SymbolStyle" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SymbolStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">marker</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FILLED_CIRCLE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L205-L261"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.SymbolStyle" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a SymbolStyle object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">SymbolStyle</span>
+<span class="n">xyPlot</span><span class="o">.</span><span class="n">SymbolStyle</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl>
@@ -947,18 +977,20 @@ SymbolStyle object. The default value is 2.0.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">SymbolStyle</span>
-<span class="n">xyPlot</span><span class="o">.</span><span class="n">SymbolStyle</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.TextStyle">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TextStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rotationAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L267-L307"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.TextStyle" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TextStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rotationAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L263-L302"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.TextStyle" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a TextStyle.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">TextStyle</span>
+<span class="n">xyPlot</span><span class="o">.</span><span class="n">TextStyle</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -989,18 +1021,20 @@ is 0.0.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">TextStyle</span>
-<span class="n">xyPlot</span><span class="o">.</span><span class="n">TextStyle</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.XYDataFromFile">
-<span class="sig-name descname"><span class="pre">XYDataFromFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sourceDescription</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contentDescription</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionDescription</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legendLabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xValuesLabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yValuesLabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis1QuantityType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis2QuantityType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xField</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yField</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skipFrequency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L406-L481"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.XYDataFromFile" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">XYDataFromFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sourceDescription</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contentDescription</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionDescription</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legendLabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xValuesLabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yValuesLabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis1QuantityType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis2QuantityType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xField</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yField</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skipFrequency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L399-L473"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.XYDataFromFile" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates an XYData object from data in an ASCII file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">XYDataFromFile</span>
+<span class="n">xyPlot</span><span class="o">.</span><span class="n">XYDataFromFile</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -1052,19 +1086,21 @@ The default value is 0 (data are read from every row).</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">XYDataFromFile</span>
-<span class="n">xyPlot</span><span class="o">.</span><span class="n">XYDataFromFile</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.XYDataFromFreeBody">
-<span class="sig-name descname"><span class="pre">XYDataFromFreeBody</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">odb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">moment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">heatFlowRate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resultant</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L653-L706"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.XYDataFromFreeBody" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">XYDataFromFreeBody</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">odb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">moment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">heatFlowRate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resultant</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L643-L695"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.XYDataFromFreeBody" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a list of XYData objects by computing free body data from an Odb
 object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">XYDataFromFreeBody</span>
+<span class="n">xyPlot</span><span class="o">.</span><span class="n">XYDataFromFreeBody</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -1098,18 +1134,20 @@ and <strong>moment</strong>. The default is OFF.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">XYDataFromFreeBody</span>
-<span class="n">xyPlot</span><span class="o">.</span><span class="n">XYDataFromFreeBody</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.XYDataFromHistory">
-<span class="sig-name descname"><span class="pre">XYDataFromHistory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">odb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputVariableName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">steps</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sourceDescription</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contentDescription</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionDescription</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legendLabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skipFrequency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numericForm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'REAL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">complexAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stepTuple</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L483-L555"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.XYDataFromHistory" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">XYDataFromHistory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">odb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputVariableName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">steps</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sourceDescription</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contentDescription</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionDescription</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legendLabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skipFrequency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numericForm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'REAL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">complexAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stepTuple</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L475-L546"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.XYDataFromHistory" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates an XYData object by reading history data from an Odb object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">XYDataFromHistory</span>
+<span class="n">xyPlot</span><span class="o">.</span><span class="n">XYDataFromHistory</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -1159,18 +1197,20 @@ complex numbers when <strong>numericForm</strong> = COMPLEX_VAL_AT_ANGLE. The de
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">XYDataFromHistory</span>
-<span class="n">xyPlot</span><span class="o">.</span><span class="n">XYDataFromHistory</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.XYDataFromPath">
-<span class="sig-name descname"><span class="pre">XYDataFromPath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">includeIntersections</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pathStyle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numIntervals</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">labelType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">viewport</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">removeDuplicateXYPairs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">includeAllElements</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deformedMag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numericForm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'REAL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">complexAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOntoMesh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionTolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L708-L841"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.XYDataFromPath" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">XYDataFromPath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">includeIntersections</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pathStyle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numIntervals</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">labelType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">viewport</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">removeDuplicateXYPairs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">includeAllElements</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deformedMag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numericForm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'REAL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">complexAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOntoMesh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionTolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L697-L829"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.XYDataFromPath" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates an XYData object from path information.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">XYDataFromPath</span>
+<span class="n">xyPlot</span><span class="o">.</span><span class="n">XYDataFromPath</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -1276,17 +1316,11 @@ data extraction when <strong>projectOntoMesh</strong> =  True. The default value
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">XYDataFromPath</span>
-<span class="n">xyPlot</span><span class="o">.</span><span class="n">XYDataFromPath</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.disableCADConnection">
-<span class="sig-name descname"><span class="pre">disableCADConnection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">CADName</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L349-L358"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.disableCADConnection" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">disableCADConnection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">CADName</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L348-L357"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.disableCADConnection" title="Permalink to this definition">#</a></dt>
 <dd><p>This method disables an associative import CAD connection that was enabled.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1301,7 +1335,7 @@ Available options are Pro/ENGINEER, CATIA V5, and CATIA V6, NX and SolidWorks.</
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.disableParameterUpdate">
-<span class="sig-name descname"><span class="pre">disableParameterUpdate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">CADName</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L433-L442"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.disableParameterUpdate" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">disableParameterUpdate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">CADName</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L432-L441"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.disableParameterUpdate" title="Permalink to this definition">#</a></dt>
 <dd><p>This method disables an associative CAD connection using parameters.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1316,7 +1350,7 @@ Available option is Pro/ENGINEER.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.enableCADConnection">
-<span class="sig-name descname"><span class="pre">enableCADConnection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">CADName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">portNum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L318-L336"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.enableCADConnection" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">enableCADConnection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">CADName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">portNum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L317-L335"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.enableCADConnection" title="Permalink to this definition">#</a></dt>
 <dd><p>This method enables the Abaqus/CAE listening port for the specified <strong>CAD</strong> system.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1341,7 +1375,7 @@ V6 : 49182</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.enableParameterUpdate">
-<span class="sig-name descname"><span class="pre">enableParameterUpdate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">CADName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CADVersion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CADPort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L360-L379"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.enableParameterUpdate" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">enableParameterUpdate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">CADName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CADVersion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CADPort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L359-L378"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.enableParameterUpdate" title="Permalink to this definition">#</a></dt>
 <dd><p>This method enables parameter updates for ProE and NX by establishing a connection with
 the listening port previously setup by the CAD application.</p>
 <dl class="field-list simple">
@@ -1366,7 +1400,7 @@ default CAD listening ports are as follow:ProE : 3344NX : 3344</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.getLimitForXYDataPlots">
-<span class="sig-name descname"><span class="pre">getLimitForXYDataPlots</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L185-L193"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.getLimitForXYDataPlots" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getLimitForXYDataPlots</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L184-L192"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.getLimitForXYDataPlots" title="Permalink to this definition">#</a></dt>
 <dd><p>This method is used to get the <strong>limit</strong> for number of XY data objects while creating
 XYData from field output.</p>
 <dl class="field-list simple">
@@ -1380,7 +1414,7 @@ XYData from field output.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.getPathTolerance">
-<span class="sig-name descname"><span class="pre">getPathTolerance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L158-L167"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.getPathTolerance" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getPathTolerance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L157-L166"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.getPathTolerance" title="Permalink to this definition">#</a></dt>
 <dd><p>This method is used to get the <strong>tolerance</strong> used when creating XYData objects by
 extracting results along Path objects.</p>
 <dl class="field-list simple">
@@ -1395,7 +1429,7 @@ extracting results along Path objects.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.isCADConnectionEnabled">
-<span class="sig-name descname"><span class="pre">isCADConnectionEnabled</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L338-L347"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.isCADConnectionEnabled" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">isCADConnectionEnabled</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L337-L346"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.isCADConnectionEnabled" title="Permalink to this definition">#</a></dt>
 <dd><p>This method checks the status of CAD Connection.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -1410,7 +1444,7 @@ disabled.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.linearizeStress">
-<span class="sig-name descname"><span class="pre">linearizeStress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startPoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endPoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelShape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">components</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyMembraneComps</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyBendingComps</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">invariantBendingComps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">intervals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radiusOfCurvature</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">oopRadiusOfCurvature</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">curvatureCorrection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">curvatureCsys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useCurvatureCsysForOrient</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saveXy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">writeReport</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reportFile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">appendToFile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saveToPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L18-L139"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.linearizeStress" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">linearizeStress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startPoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endPoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelShape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">components</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyMembraneComps</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyBendingComps</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">invariantBendingComps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">intervals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radiusOfCurvature</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">oopRadiusOfCurvature</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">curvatureCorrection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">curvatureCsys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useCurvatureCsysForOrient</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saveXy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">writeReport</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reportFile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">appendToFile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saveToPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L17-L138"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.linearizeStress" title="Permalink to this definition">#</a></dt>
 <dd><p>This method is used to perform stress linearization along a defined stress line.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1517,7 +1551,7 @@ the stress linearization plot.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.openOdb">
-<span class="sig-name descname"><span class="pre">openOdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L658-L688"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.openOdb" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">openOdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L657-L687"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.openOdb" title="Permalink to this definition">#</a></dt>
 <dd><p>This method opens an existing output database (.odb) file and creates a new Odb object.
 You typically execute this method outside Abaqus/CAE when, in most cases, only one
 output database is open at any time. For example
@@ -1555,7 +1589,7 @@ installation of Abaqus needs upgrading.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.printToFile">
-<span class="sig-name descname"><span class="pre">printToFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'PNG'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">canvasObjects</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compression</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L444-L470"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.printToFile" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">printToFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'PNG'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">canvasObjects</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compression</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L443-L469"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.printToFile" title="Permalink to this definition">#</a></dt>
 <dd><p>This method prints canvas objects to a file using the attributes stored in the
 PrintOptions object and the appropriate format options object.</p>
 <dl class="field-list simple">
@@ -1581,7 +1615,7 @@ when <strong>format</strong> is SVG. Possible values are False (Uncompressed) an
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.printToPrinter">
-<span class="sig-name descname"><span class="pre">printToPrinter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">printCommand</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numCopies</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">canvasObjects</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L472-L514"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.printToPrinter" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">printToPrinter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">printCommand</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numCopies</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">canvasObjects</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L471-L513"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.printToPrinter" title="Permalink to this definition">#</a></dt>
 <dd><p>This method prints canvas objects to a Windows printer or to a PostScript printer. The
 attributes used for printing to a Windows printer are stored in the PrintOptions object
 and the PageSetupOptions object; the attributes used for printing to a PostScript
@@ -1625,7 +1659,7 @@ is to print all canvas objects.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.saveOptions">
-<span class="sig-name descname"><span class="pre">saveOptions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">directory</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L516-L526"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.saveOptions" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">saveOptions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">directory</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L515-L525"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.saveOptions" title="Permalink to this definition">#</a></dt>
 <dd><p>This method saves your customized display settings.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1641,7 +1675,7 @@ CURRENT.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.setCADPortNumber">
-<span class="sig-name descname"><span class="pre">setCADPortNumber</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">CADName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Port</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L381-L395"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.setCADPortNumber" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setCADPortNumber</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">CADName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Port</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L380-L394"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.setCADPortNumber" title="Permalink to this definition">#</a></dt>
 <dd><p>This method enables parameter updates for CATIA V5 and CATIA V6 by establishing a
 connection with the listening port previously setup by the CAD application. This port
 number is used to send the parameter information to the CAD system.</p>
@@ -1661,7 +1695,7 @@ parameters to the CAD system.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.setLimitForXYDataPlots">
-<span class="sig-name descname"><span class="pre">setLimitForXYDataPlots</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L169-L183"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.setLimitForXYDataPlots" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setLimitForXYDataPlots</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L168-L182"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.setLimitForXYDataPlots" title="Permalink to this definition">#</a></dt>
 <dd><p>This method is used to set the <strong>limit</strong> for number of XY data objects while creating
 XYData from field output.</p>
 <dl class="field-list simple">
@@ -1682,7 +1716,7 @@ no limit</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.setPathTolerance">
-<span class="sig-name descname"><span class="pre">setPathTolerance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L141-L156"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.setPathTolerance" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setPathTolerance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L140-L155"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.setPathTolerance" title="Permalink to this definition">#</a></dt>
 <dd><p>This method is used to set the <strong>tolerance</strong> to be used when creating XYData objects by
 extracting results along Path objects. This command should be exercised with caution
 since setting a value too low or too high may result in getting no results or
@@ -1704,7 +1738,7 @@ unpredictable results.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kernelMemoryLimit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L298-L316"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kernelMemoryLimit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L297-L315"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the Session object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1728,7 +1762,7 @@ less than the physical amount of memory on the machine.The minimum setting allow
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.updateCADParameters">
-<span class="sig-name descname"><span class="pre">updateCADParameters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">modelName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CADName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameterFile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CADPartFile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CADPartName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L397-L431"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.updateCADParameters" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">updateCADParameters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">modelName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CADName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameterFile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CADPartFile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CADPartName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L396-L430"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.updateCADParameters" title="Permalink to this definition">#</a></dt>
 <dd><p>This method updates the parameters for the specified model using the specified parameter
 file.</p>
 <dl class="field-list simple">
@@ -1761,7 +1795,7 @@ the parts in the specified file.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.write3DXMLFile">
-<span class="sig-name descname"><span class="pre">write3DXMLFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">canvasObjects</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L546-L562"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.write3DXMLFile" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">write3DXMLFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">canvasObjects</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L545-L561"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.write3DXMLFile" title="Permalink to this definition">#</a></dt>
 <dd><p>This method exports the current viewport objects to a file.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1781,8 +1815,15 @@ extension is supplied, (.3dxml) will be added.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.writeFieldRepor">
-<span class="sig-name descname"><span class="pre">writeFieldRepor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">append</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sortItem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputPosition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displayGroup</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numericForm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">complexAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stepFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SPECIFY'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L8-L96"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.writeFieldRepor" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">writeFieldRepor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">append</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sortItem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputPosition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displayGroup</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numericForm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">complexAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stepFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SPECIFY'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L8-L95"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.writeFieldRepor" title="Permalink to this definition">#</a></dt>
 <dd><p>This method writes a FieldOutput object to a user-defined ASCII file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">writeFieldReport</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl>
@@ -1849,17 +1890,19 @@ SPECIFY.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">writeFieldReport</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.writeFreeBodyRepor">
-<span class="sig-name descname"><span class="pre">writeFreeBodyRepor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">append</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stepFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SPECIFY'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L98-L143"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.writeFreeBodyRepor" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">writeFreeBodyRepor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">append</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stepFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SPECIFY'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L97-L141"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.writeFreeBodyRepor" title="Permalink to this definition">#</a></dt>
 <dd><p>This method writes a FreeBody object to a user-defined ASCII file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">writeFreeBodyReport</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -1887,16 +1930,11 @@ SPECIFY.</p>
 <dt class="field-odd">Raises</dt>
 <dd class="field-odd"></dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">writeFreeBodyReport</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.writeImageAnimation">
-<span class="sig-name descname"><span class="pre">writeImageAnimation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">canvasObjects</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L21-L39"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.writeImageAnimation" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">writeImageAnimation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">canvasObjects</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L20-L38"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.writeImageAnimation" title="Permalink to this definition">#</a></dt>
 <dd><p>This method writes the animations present in the list of canvas objects to a file. It
 generates an animation file using the given file name and file format and uses the
 values in the appropriate options object.</p>
@@ -1918,7 +1956,7 @@ all canvas objects.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.writeOBJFile">
-<span class="sig-name descname"><span class="pre">writeOBJFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">canvasObjects</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L564-L575"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.writeOBJFile" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">writeOBJFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">canvasObjects</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L563-L574"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.writeOBJFile" title="Permalink to this definition">#</a></dt>
 <dd><p>This method exports the current viewport objects to a file.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1935,7 +1973,7 @@ extension is supplied, (.obj) will be added.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.writeVrmlFile">
-<span class="sig-name descname"><span class="pre">writeVrmlFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">canvasObjects</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L528-L544"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.writeVrmlFile" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">writeVrmlFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">canvasObjects</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L527-L543"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.writeVrmlFile" title="Permalink to this definition">#</a></dt>
 <dd><p>This method exports the current viewport objects to a file.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1955,8 +1993,16 @@ extension is supplied, an extension is added based on the selected format (.wrl,
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.xyDataListFromField">
-<span class="sig-name descname"><span class="pre">xyDataListFromField</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">odb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputPosition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementSets</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementLabels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodeSets</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodeLabels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numericForm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'REAL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">complexAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L557-L651"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.xyDataListFromField" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">xyDataListFromField</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">odb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputPosition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementSets</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementLabels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodeSets</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodeLabels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numericForm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'REAL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">complexAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L548-L641"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.xyDataListFromField" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a list of XYData objects by reading field data from an Odb object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">xyDataListFromField</span>
+<span class="n">xyPlot</span><span class="o">.</span><span class="n">xyDataListFromField</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl>
@@ -2033,12 +2079,6 @@ on the data, and the data will be saved as is.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">xyDataListFromField</span>
-<span class="n">xyPlot</span><span class="o">.</span><span class="n">xyDataListFromField</span>
-</pre></div>
-</div>
 </dd></dl>
 
 </dd></dl>
@@ -2048,12 +2088,14 @@ on the data, and the data will be saved as is.</p>
 <h3>AutoColors<a class="headerlink" href="#autocolors" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Session.AutoColors.AutoColors">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AutoColors</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/AutoColors.py#L1-L23"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.AutoColors.AutoColors" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AutoColors</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/AutoColors.py#L1-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.AutoColors.AutoColors" title="Permalink to this definition">#</a></dt>
 <dd><p>The AutoColors object defines a color palette.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">autoColors</span>
 </pre></div>
+</div>
 </div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -2071,7 +2113,7 @@ on the data, and the data will be saved as is.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.AutoColors.AutoColors.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">colors</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/AutoColors.py#L13-L23"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.AutoColors.AutoColors.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">colors</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/AutoColors.py#L12-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.AutoColors.AutoColors.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method changes the color palette.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2092,12 +2134,14 @@ for red, ‘#00FF00’ for green and ‘#0000FF’ for blue</p>
 <h3>Color<a class="headerlink" href="#color" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Session.Color.Color">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Color</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Color.py#L1-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Color.Color" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Color</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Color.py#L1-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Color.Color" title="Permalink to this definition">#</a></dt>
 <dd><p>The Color object contains the RGB definition of a system color.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">colors</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -2135,7 +2179,7 @@ between 0.0 and 1.0.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Color.Color.setByRGB">
-<span class="sig-name descname"><span class="pre">setByRGB</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rgb</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Color.py#L20-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Color.Color.setByRGB" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setByRGB</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rgb</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Color.py#L19-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Color.Color.setByRGB" title="Permalink to this definition">#</a></dt>
 <dd><p>This method changes the RGB value of a user-defined color. However, users cannot define
 colors, and this method does not modify system-defined colors.</p>
 <dl class="field-list simple">
@@ -2156,13 +2200,15 @@ be between 0.0 and 1.0.</p>
 <h3>Drawing<a class="headerlink" href="#drawing" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Session.Drawing.Drawing">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Drawing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Drawing.py#L4-L407"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Drawing.Drawing" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Drawing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Drawing.py#L4-L405"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Drawing.Drawing" title="Permalink to this definition">#</a></dt>
 <dd><p>A drawing is the container for a geometric object. The Drawing object stores the vertex
 data and various settings that determine how the drawing will be displayed.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">drawings</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -2209,7 +2255,7 @@ data and various settings that determine how the drawing will be displayed.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Drawing.Drawing.addArrayDraw">
-<span class="sig-name descname"><span class="pre">addArrayDraw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startIndex</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numVertices</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">polygonMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FILL'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Drawing.py#L252-L295"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Drawing.Drawing.addArrayDraw" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">addArrayDraw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startIndex</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numVertices</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">polygonMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FILL'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Drawing.py#L250-L293"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Drawing.Drawing.addArrayDraw" title="Permalink to this definition">#</a></dt>
 <dd><p>This method adds a rendering command to the drawing and can be called multiple times to
 add additional rendering commands. When the drawing is referenced by a Viewport, the
 drawing commands are used the render the Drawing.
@@ -2258,7 +2304,7 @@ Drawing request extends past array size of colors.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Drawing.Drawing.addIndexDraw">
-<span class="sig-name descname"><span class="pre">addIndexDraw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indices</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">polygonMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FILL'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Drawing.py#L297-L339"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Drawing.Drawing.addIndexDraw" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">addIndexDraw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indices</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">polygonMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FILL'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Drawing.py#L295-L337"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Drawing.Drawing.addIndexDraw" title="Permalink to this definition">#</a></dt>
 <dd><p>This method adds a rendering command to the drawing and can be called multiple times to
 add additional rendering commands. When the drawing is referenced by a Viewport, the
 drawing commands are used the render the Drawing.
@@ -2388,7 +2434,7 @@ be clear.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Drawing.Drawing.setColors">
-<span class="sig-name descname"><span class="pre">setColors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">colorDimension</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colorData</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Drawing.py#L174-L208"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Drawing.Drawing.setColors" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setColors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">colorDimension</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colorData</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Drawing.py#L172-L206"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Drawing.Drawing.setColors" title="Permalink to this definition">#</a></dt>
 <dd><p>This method accepts the color data for each vertex. It defines in an array of colors
 with a length equal to the length of the <strong>colorData</strong> sequence divided by
 <strong>colorDimension</strong>.</p>
@@ -2434,7 +2480,7 @@ ValueError: <strong>colorData</strong> cannot be reduced</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Drawing.Drawing.setEdgeColor">
-<span class="sig-name descname"><span class="pre">setEdgeColor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edgeColor</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Drawing.py#L210-L229"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Drawing.Drawing.setEdgeColor" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setEdgeColor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edgeColor</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Drawing.py#L208-L227"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Drawing.Drawing.setEdgeColor" title="Permalink to this definition">#</a></dt>
 <dd><p>This method allows a separate, single color to be used when rendering the edges of the
 drawing. Once called, edges will be rendered using the specified color but facets will
 continue to use the colors specified in the setColors method. An empty sequence can be
@@ -2462,7 +2508,7 @@ ValueError: <strong>edgeColor</strong> must be a tuple with 3 values</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Drawing.Drawing.setNormals">
-<span class="sig-name descname"><span class="pre">setNormals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">normalData</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Drawing.py#L148-L172"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Drawing.Drawing.setNormals" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setNormals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">normalData</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Drawing.py#L146-L170"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Drawing.Drawing.setNormals" title="Permalink to this definition">#</a></dt>
 <dd><p>This method accepts the normal data for each vertex. It defines in an array of normal
 vectors with a length equal to the length of the <strong>normalData</strong> sequence divided by 3.</p>
 <dl class="field-list">
@@ -2498,7 +2544,7 @@ ValueError: <strong>normalData</strong> cannot be reduced.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Drawing.Drawing.setPointColor">
-<span class="sig-name descname"><span class="pre">setPointColor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pointColor</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Drawing.py#L231-L250"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Drawing.Drawing.setPointColor" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setPointColor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pointColor</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Drawing.py#L229-L248"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Drawing.Drawing.setPointColor" title="Permalink to this definition">#</a></dt>
 <dd><p>This method allows a separate, single color to be used when rendering the points of the
 drawing. Once called, points will be rendered using the specified color but facets will
 continue to use the colors specified in the setColors method. An empty sequence can be
@@ -2526,7 +2572,7 @@ ValueError: <strong>pointColor</strong> must be a tuple with 3 values</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Drawing.Drawing.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cullBackfaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frontFaceOrder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'CCW'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smoothShade</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edgesInShaded</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">translucency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Drawing.py#L341-L407"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Drawing.Drawing.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cullBackfaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frontFaceOrder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'CCW'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smoothShade</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edgesInShaded</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">translucency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Drawing.py#L339-L405"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Drawing.Drawing.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the rendering of the Drawing object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2591,7 +2637,7 @@ RangeError: <strong>pointSize</strong> must be in the range 0.0 &lt;= value &lt;
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Drawing.Drawing.setVertices">
-<span class="sig-name descname"><span class="pre">setVertices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vertexDimension</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vertexData</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Drawing.py#L117-L146"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Drawing.Drawing.setVertices" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setVertices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vertexDimension</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vertexData</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Drawing.py#L115-L144"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Drawing.Drawing.setVertices" title="Permalink to this definition">#</a></dt>
 <dd><p>This method accepts the vertex data that defines the Drawing object. It defines in an
 array of vertices with a length equal to the length of the <strong>vertexData</strong> sequence divided
 by <strong>vertexDimension</strong>.</p>
@@ -2669,13 +2715,15 @@ setVertices method. The default value is 0.</p>
 <h3>Image<a class="headerlink" href="#image" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Session.Image.Image">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Image.py#L1-L92"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Image.Image" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Image.py#L1-L90"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Image.Image" title="Permalink to this definition">#</a></dt>
 <dd><p>The Image object is used to store color values and attributes associated with a raster
 file. Upon creation, the Image object is added to the session.images repository.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">images</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -2693,7 +2741,7 @@ file. Upon creation, the Image object is added to the session.images repository.
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Image.Image.ImageFromMovie">
-<span class="sig-name descname"><span class="pre">ImageFromMovie</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">movieName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Image.py#L59-L92"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Image.Image.ImageFromMovie" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">ImageFromMovie</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">movieName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Image.py#L57-L90"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Image.Image.ImageFromMovie" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates an Image object from a given frame of an existing Movie object.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
@@ -2757,16 +2805,18 @@ be specified and indicate the image format (.bmp, .gif, .jpg, .jpeg, .ico, .pcx,
 <h3>JournalOptions<a class="headerlink" href="#journaloptions" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Session.JournalOptions.JournalOptions">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">JournalOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/JournalOptions.py#L5-L100"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.JournalOptions.JournalOptions" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">JournalOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/JournalOptions.py#L5-L98"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.JournalOptions.JournalOptions" title="Permalink to this definition">#</a></dt>
 <dd><p>A <a class="reference internal" href="#abaqus.Session.JournalOptions.JournalOptions" title="abaqus.Session.JournalOptions.JournalOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">JournalOptions</span></code></a> object specifies how to record selection of geometry in the journal and
 replay files. <strong>journalOptions</strong> can also be used to set the numeric formatting options
 for field report output, geometry commands output, and a default format for other
 numeric output. The JournalOptions object has no constructor. Abaqus creates the
 <strong>journalOptions</strong> member when a session is started.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">journalOptions</span>
 </pre></div>
+</div>
 </div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -2787,8 +2837,17 @@ numeric output. The JournalOptions object has no constructor. Abaqus creates the
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.JournalOptions.JournalOptions.NumberFormat">
-<span class="sig-name descname"><span class="pre">NumberFormat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">blankPad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ENGINEERING'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numDigits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">precision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/JournalOptions.py#L56-L100"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.JournalOptions.JournalOptions.NumberFormat" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">NumberFormat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">blankPad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ENGINEERING'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numDigits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">precision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/JournalOptions.py#L55-L98"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.JournalOptions.JournalOptions.NumberFormat" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a NumberFormat object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">defaultFieldReportOptions</span><span class="o">.</span><span class="n">NumberFormat</span>
+<span class="n">session</span><span class="o">.</span><span class="n">fieldReportOptions</span><span class="o">.</span><span class="n">NumberFormat</span>
+<span class="n">session</span><span class="o">.</span><span class="n">journalOptions</span><span class="o">.</span><span class="n">NumberFormat</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -2816,13 +2875,6 @@ value is 0.</p>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">defaultFieldReportOptions</span><span class="o">.</span><span class="n">NumberFormat</span>
-<span class="n">session</span><span class="o">.</span><span class="n">fieldReportOptions</span><span class="o">.</span><span class="n">NumberFormat</span>
-<span class="n">session</span><span class="o">.</span><span class="n">journalOptions</span><span class="o">.</span><span class="n">NumberFormat</span>
-</pre></div>
-</div>
 </dd></dl>
 
 <dl class="py attribute">
@@ -2833,7 +2885,7 @@ value is 0.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.JournalOptions.JournalOptions.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">replayGeometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'COMPRESSEDINDEX'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recoverGeometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'COMPRESSEDINDEX'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaultFormat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fieldReportFormat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">geometryFormat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/JournalOptions.py#L24-L54"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.JournalOptions.JournalOptions.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">replayGeometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'COMPRESSEDINDEX'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recoverGeometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'COMPRESSEDINDEX'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaultFormat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fieldReportFormat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">geometryFormat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/JournalOptions.py#L23-L53"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.JournalOptions.JournalOptions.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the JournalOptions object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2867,14 +2919,16 @@ object.</p>
 <h3>MemoryReductionOptions<a class="headerlink" href="#memoryreductionoptions" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Session.MemoryReductionOptions.MemoryReductionOptions">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MemoryReductionOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/MemoryReductionOptions.py#L4-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.MemoryReductionOptions.MemoryReductionOptions" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MemoryReductionOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/MemoryReductionOptions.py#L4-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.MemoryReductionOptions.MemoryReductionOptions" title="Permalink to this definition">#</a></dt>
 <dd><p>The MemoryReductionOptions object controls the default settings that Abaqus/CAE uses for
 running in reduced memory mode. The MemoryReductionOptions object has no constructor.
 Abaqus creates the <strong>MemoryReductionOptions</strong> member when a session is started.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">memoryReductionOptions</span>
 </pre></div>
+</div>
 </div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -2892,7 +2946,7 @@ Abaqus creates the <strong>MemoryReductionOptions</strong> member when a session
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.MemoryReductionOptions.MemoryReductionOptions.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reducedMemoryMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">percentThreshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">75</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/MemoryReductionOptions.py#L18-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.MemoryReductionOptions.MemoryReductionOptions.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reducedMemoryMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">percentThreshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">75</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/MemoryReductionOptions.py#L17-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.MemoryReductionOptions.MemoryReductionOptions.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the MemoryReductionOptions object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2915,13 +2969,15 @@ starts. The default value is 75.0.</p>
 <h3>NetworkDatabaseConnector<a class="headerlink" href="#networkdatabaseconnector" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">NetworkDatabaseConnector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hostName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remoteAbaqusDriverName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remoteLoginMechanism</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SSH'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sshPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverPort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connectionPort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverTimeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">86400</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allowAutomaticStartup</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/NetworkDatabaseConnector.py#L4-L177"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">NetworkDatabaseConnector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hostName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remoteAbaqusDriverName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remoteLoginMechanism</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SSH'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sshPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverPort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connectionPort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverTimeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">86400</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allowAutomaticStartup</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/NetworkDatabaseConnector.py#L4-L175"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector" title="Permalink to this definition">#</a></dt>
 <dd><p>The NetworkDatabaseConnector object allows you to access an output database on a remote
 system.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">networkDatabaseConnectors</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -3011,7 +3067,7 @@ the client during the time specified. The default value is 86400.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">remoteAbaqusDriverName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remoteLoginMechanism</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SSH'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sshPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverPort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connectionPort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverTimeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">86400</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allowAutomaticStartup</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/NetworkDatabaseConnector.py#L141-L177"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">remoteAbaqusDriverName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remoteLoginMechanism</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SSH'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sshPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverPort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connectionPort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverTimeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">86400</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allowAutomaticStartup</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/NetworkDatabaseConnector.py#L139-L175"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the NetworkDatabaseConnector object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -3051,7 +3107,7 @@ is an empty string.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.start">
-<span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">serverPort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverTimeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">86400</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/NetworkDatabaseConnector.py#L121-L135"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.start" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">serverPort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverTimeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">86400</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/NetworkDatabaseConnector.py#L119-L133"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.start" title="Permalink to this definition">#</a></dt>
 <dd><p>This method starts the remote network database connector server on the remote host.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -3071,7 +3127,7 @@ the client during the time specified. The default value is 86400.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.stop">
-<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/NetworkDatabaseConnector.py#L137-L139"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.stop" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/NetworkDatabaseConnector.py#L135-L137"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.stop" title="Permalink to this definition">#</a></dt>
 <dd><p>This method stops the remote network database connector server on the remote host.</p>
 </dd></dl>
 
@@ -3082,11 +3138,12 @@ the client during the time specified. The default value is 86400.</p>
 <h3>NumberFormat<a class="headerlink" href="#numberformat" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Session.NumberFormat.NumberFormat">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">NumberFormat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">blankPad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ENGINEERING'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numDigits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">precision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/NumberFormat.py#L4-L82"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.NumberFormat.NumberFormat" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">NumberFormat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">blankPad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ENGINEERING'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numDigits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">precision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/NumberFormat.py#L4-L80"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.NumberFormat.NumberFormat" title="Permalink to this definition">#</a></dt>
 <dd><p>The NumberFormat object is a formatting template used to define formatting options for
 certain numeric output.This page
 discusses:Access[NumberFormat(…)](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-numberformatpyc.htm?ContextScope=all#simaker-numberformatnumberformatpyc)Members</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">visualization</span>
 <span class="n">session</span><span class="o">.</span><span class="n">defaultFieldReportOptions</span><span class="o">.</span><span class="n">numberFormat</span>
@@ -3095,6 +3152,7 @@ discusses:Access[NumberFormat(…)](https://help.3ds.com/2022/english/DSSIMULIA_
 <span class="n">session</span><span class="o">.</span><span class="n">journalOptions</span><span class="o">.</span><span class="n">fieldReportFormat</span>
 <span class="n">session</span><span class="o">.</span><span class="n">journalOptions</span><span class="o">.</span><span class="n">geometryFormat</span>
 </pre></div>
+</div>
 </div>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Session.NumberFormat.NumberFormat.blankPad">

@@ -357,7 +357,7 @@
 <h3>Viewport<a class="headerlink" href="#viewport" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Canvas.Viewport.Viewport">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Viewport</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">120</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">border</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">titleBar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">titleStyle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SYSTEM'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">customTitleString</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Viewport.py#L5-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Viewport.Viewport" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Viewport</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">120</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">border</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">titleBar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">titleStyle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SYSTEM'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">customTitleString</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Viewport.py#L5-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Viewport.Viewport" title="Permalink to this definition">#</a></dt>
 <dd><p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -374,8 +374,15 @@
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.Viewport.Viewport.Layer">
-<span class="sig-name descname"><span class="pre">Layer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyViewName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Viewport.py#L6-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Viewport.Viewport.Layer" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">Layer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyViewName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Viewport.py#L6-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Viewport.Viewport.Layer" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Layer object in the Layer repository.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Layer</span>
+</pre></div>
+</div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
@@ -393,11 +400,6 @@
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Layer</span>
-</pre></div>
-</div>
 </dd></dl>
 
 </dd></dl>
@@ -410,13 +412,15 @@
 <h3>Annotation features of Viewport<a class="headerlink" href="#annotation-features-of-viewport" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Annotation.AnnotationViewport.AnnotationViewport">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AnnotationViewport</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">120</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">border</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">titleBar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">titleStyle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SYSTEM'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">customTitleString</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/AnnotationViewport.py#L5-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.AnnotationViewport.AnnotationViewport" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AnnotationViewport</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">120</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">border</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">titleBar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">titleStyle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SYSTEM'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">customTitleString</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/AnnotationViewport.py#L5-L28"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.AnnotationViewport.AnnotationViewport" title="Permalink to this definition">#</a></dt>
 <dd><p>The following commands operate on Viewport objects. For more information about the
 Viewport object, see Viewport object.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">annotationToolset</span>
 </pre></div>
+</div>
 </div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -434,7 +438,7 @@ Viewport object, see Viewport object.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation">
-<span class="sig-name descname"><span class="pre">plotAnnotation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">annotation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/AnnotationViewport.py#L18-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">plotAnnotation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">annotation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Annotation/AnnotationViewport.py#L17-L28"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation" title="Permalink to this definition">#</a></dt>
 <dd><p>This method plots an Annotation object in aViewport.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -754,12 +758,14 @@ If other arguments are also supplied to setValues, they will override the values
 <h3>Layer<a class="headerlink" href="#layer" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Canvas.Layer.Layer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Layer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyViewName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Layer.py#L8-L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Layer.Layer" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Layer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyViewName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Layer.py#L8-L84"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Layer.Layer" title="Permalink to this definition">#</a></dt>
 <dd><p>Objects can be superimposed by displaying them in different layers of a viewport.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">layers</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -807,7 +813,7 @@ ConstrainedSketch, Odb, or XYPlot.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.Layer.Layer.moveAfter">
-<span class="sig-name descname"><span class="pre">moveAfter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Layer.py#L78-L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Layer.Layer.moveAfter" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">moveAfter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Layer.py#L76-L84"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Layer.Layer.moveAfter" title="Permalink to this definition">#</a></dt>
 <dd><p>This method moves the layer object after another object in the layer repository.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -821,7 +827,7 @@ ConstrainedSketch, Odb, or XYPlot.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.Layer.Layer.moveBefore">
-<span class="sig-name descname"><span class="pre">moveBefore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Layer.py#L68-L76"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Layer.Layer.moveBefore" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">moveBefore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/Layer.py#L66-L74"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.Layer.Layer.moveBefore" title="Permalink to this definition">#</a></dt>
 <dd><p>This method moves the layer object before another object in the layer repository.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -963,14 +969,16 @@ If other arguments are also supplied to setValues, they will override the values
 <h3>ViewportBase<a class="headerlink" href="#viewportbase" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ViewportBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">120</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">border</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">titleBar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">titleStyle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SYSTEM'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">customTitleString</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L20-L625"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ViewportBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">120</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">border</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">titleBar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">titleStyle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SYSTEM'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">customTitleString</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L20-L623"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase" title="Permalink to this definition">#</a></dt>
 <dd><p>A viewport is the container for the graphics generated by the application. TheViewport
 object stores the various settings that determine how objects are displayed within that
 viewport.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -1104,7 +1112,7 @@ The default value is DEFAULT_COLORS.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.addDrawings">
-<span class="sig-name descname"><span class="pre">addDrawings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L575-L587"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.addDrawings" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">addDrawings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L573-L585"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.addDrawings" title="Permalink to this definition">#</a></dt>
 <dd><p>This method identifies the names of Drawing objects to be rendered in the Viewport.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1148,7 +1156,7 @@ value is ON.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.bringToFront">
-<span class="sig-name descname"><span class="pre">bringToFront</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L317-L319"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.bringToFront" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">bringToFront</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L315-L317"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.bringToFront" title="Permalink to this definition">#</a></dt>
 <dd><p>This method moves the Viewport object to the front.</p>
 </dd></dl>
 
@@ -1277,7 +1285,7 @@ value of <strong>windowState</strong>.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.disableColorCodeUpdates">
-<span class="sig-name descname"><span class="pre">disableColorCodeUpdates</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L333-L339"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.disableColorCodeUpdates" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">disableColorCodeUpdates</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L331-L337"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.disableColorCodeUpdates" title="Permalink to this definition">#</a></dt>
 <dd><p>This method disables Viewport updates and internal computations triggered because of
 color coding. Performance improvement will be significant when color coding is ON and
 repeating operations are performed using a script each of which requires color code
@@ -1286,14 +1294,14 @@ updates. No benefit will be had when color coding is OFF.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.disableMultipleColors">
-<span class="sig-name descname"><span class="pre">disableMultipleColors</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L321-L325"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.disableMultipleColors" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">disableMultipleColors</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L319-L323"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.disableMultipleColors" title="Permalink to this definition">#</a></dt>
 <dd><p>This method disables applying multiple color mappings that was enabled using
 enableMultipleColors</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.disableRefresh">
-<span class="sig-name descname"><span class="pre">disableRefresh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L327-L331"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.disableRefresh" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">disableRefresh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L325-L329"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.disableRefresh" title="Permalink to this definition">#</a></dt>
 <dd><p>This method disables Viewport refresh. Some methods that require the Viewport to be
 up-to-date will override this setting. It is advisable to use this method sparingly.</p>
 </dd></dl>
@@ -1324,26 +1332,26 @@ is an empty sequence.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.enableColorCodeUpdates">
-<span class="sig-name descname"><span class="pre">enableColorCodeUpdates</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L351-L353"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.enableColorCodeUpdates" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">enableColorCodeUpdates</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L349-L351"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.enableColorCodeUpdates" title="Permalink to this definition">#</a></dt>
 <dd><p>This method enables Viewport color code updates disabled using disableColorCodeUpdates.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.enableMultipleColors">
-<span class="sig-name descname"><span class="pre">enableMultipleColors</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L341-L345"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.enableMultipleColors" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">enableMultipleColors</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L339-L343"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.enableMultipleColors" title="Permalink to this definition">#</a></dt>
 <dd><p>This method enables multiple color mappings to be applied at the same time. It also
 ensures that the Viewport is updated correctly when <strong>initialColor</strong> is set.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.enableRefresh">
-<span class="sig-name descname"><span class="pre">enableRefresh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L347-L349"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.enableRefresh" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">enableRefresh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L345-L347"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.enableRefresh" title="Permalink to this definition">#</a></dt>
 <dd><p>This method enables Viewport refresh disabled using disableRefresh.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.forceRefresh">
-<span class="sig-name descname"><span class="pre">forceRefresh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L523-L528"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.forceRefresh" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">forceRefresh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L521-L526"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.forceRefresh" title="Permalink to this definition">#</a></dt>
 <dd><p>This method causes the Viewport to refresh immediately. It is provided to allow scripts
 to refresh the Viewport before the script terminates. Normally, there would only be a
 single cumulative refresh that takes place immediately after the script completes.</p>
@@ -1351,7 +1359,7 @@ single cumulative refresh that takes place immediately after the script complete
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels">
-<span class="sig-name descname"><span class="pre">getActiveElementLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">useCut</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">printResults</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L355-L378"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getActiveElementLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">useCut</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">printResults</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L353-L376"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns the element labels currently active in the viewport based on the
 current display group. The element labels are printed only when the <strong>displayedObject</strong>
 member in the Viewport object is set to an Odb. The getActiveElementLabels method has
@@ -1379,7 +1387,7 @@ file.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels">
-<span class="sig-name descname"><span class="pre">getActiveNodeLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">useCut</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">printResults</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L380-L401"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getActiveNodeLabels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">useCut</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">printResults</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L378-L399"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns the node labels currently active in the viewport based on the
 current display group. The node labels are printed only when the <strong>displayedObject</strong>
 member in the Viewport object is set to an Odb. The getActiveNodeLabels method has the
@@ -1407,7 +1415,7 @@ file.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.getPrimVarMinMaxLoc">
-<span class="sig-name descname"><span class="pre">getPrimVarMinMaxLoc</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L403-L414"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.getPrimVarMinMaxLoc" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getPrimVarMinMaxLoc</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L401-L412"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.getPrimVarMinMaxLoc" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a dictionary containing the minimum, maximum and their location for
 the current primary variable. A contour plot should be displayed in the current viewport
 or else the method will return <strong>None</strong>.</p>
@@ -1468,19 +1476,19 @@ name of the layer.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.makeCurrent">
-<span class="sig-name descname"><span class="pre">makeCurrent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L416-L418"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.makeCurrent" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">makeCurrent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L414-L416"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.makeCurrent" title="Permalink to this definition">#</a></dt>
 <dd><p>This method makes theViewport object the current viewport.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.maximize">
-<span class="sig-name descname"><span class="pre">maximize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L420-L422"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.maximize" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">maximize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L418-L420"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.maximize" title="Permalink to this definition">#</a></dt>
 <dd><p>This method maximizes the Viewport object to fill the drawing area.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.minimize">
-<span class="sig-name descname"><span class="pre">minimize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L424-L426"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.minimize" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">minimize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L422-L424"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.minimize" title="Permalink to this definition">#</a></dt>
 <dd><p>This method minimizes the Viewport object to appear as an abbreviated title bar.</p>
 </dd></dl>
 
@@ -1498,7 +1506,7 @@ name of the layer.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.offset">
-<span class="sig-name descname"><span class="pre">offset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deltaX</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deltaY</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L428-L441"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.offset" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">offset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deltaX</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deltaY</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L426-L439"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.offset" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the current <strong>X</strong>-<em>Y</em> location of the viewport by the specified
 distance.</p>
 <dl class="field-list simple">
@@ -1523,7 +1531,7 @@ origin. The default value is 0.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.removeDrawings">
-<span class="sig-name descname"><span class="pre">removeDrawings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L589-L602"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.removeDrawings" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">removeDrawings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L587-L600"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.removeDrawings" title="Permalink to this definition">#</a></dt>
 <dd><p>This method identifies the names of Drawing objects to no longer be rendered in the
 Viewport.</p>
 <dl class="field-list simple">
@@ -1543,20 +1551,20 @@ Viewport.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.restore">
-<span class="sig-name descname"><span class="pre">restore</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L443-L447"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.restore" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">restore</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L441-L445"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.restore" title="Permalink to this definition">#</a></dt>
 <dd><p>This method restores a maximized or minimized Viewport object to its previous size and
 location.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.sendToBack">
-<span class="sig-name descname"><span class="pre">sendToBack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L449-L451"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.sendToBack" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">sendToBack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L447-L449"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.sendToBack" title="Permalink to this definition">#</a></dt>
 <dd><p>This method moves the Viewport object to the back.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">displayedObject</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displayMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">visibleLayers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">viewManipLayers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">currentLayer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layerOffset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L530-L573"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.setValues" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">displayedObject</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displayMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">visibleLayers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">viewManipLayers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">currentLayer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layerOffset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L528-L571"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.setValues" title="Permalink to this definition">#</a></dt>
 <dd><p>This method modifies the Viewport object. The arguments to setValues are the same as the
 arguments to the Viewport method, except for the <strong>name</strong> argument. In addition, the
 setValues method has the following arguments:</p>
@@ -1598,7 +1606,7 @@ layers are plotted.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.timeDisplay">
-<span class="sig-name descname"><span class="pre">timeDisplay</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numFrames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numSeconds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">degreesPerFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L604-L625"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.timeDisplay" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">timeDisplay</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numFrames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numSeconds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">degreesPerFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Canvas/ViewportBase.py#L602-L623"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.timeDisplay" title="Permalink to this definition">#</a></dt>
 <dd><p>This method refreshes the Viewport display <strong>numFrames</strong> times and then checks to see if
 <strong>numSeconds</strong> seconds have elapsed. If not, it will continue refreshing the Viewport
 until the time has elapsed. At completion, the actual number of refreshes (frames)

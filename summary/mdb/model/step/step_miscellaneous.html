@@ -357,13 +357,15 @@
 <h3>CompositeDamping<a class="headerlink" href="#compositedamping" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CompositeDamping</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/CompositeDamping.py#L4-L18"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CompositeDamping</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/CompositeDamping.py#L4-L17"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping" title="abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping"><code class="xref py py-class docutils literal notranslate"><span class="pre">CompositeDamping</span></code></a> object contains composite modal damping parameters.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">compositeDamping</span>
 </pre></div>
+</div>
 </div>
 </dd></dl>
 
@@ -372,14 +374,16 @@
 <h3>CompositeDampingComponent<a class="headerlink" href="#compositedampingcomponent" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CompositeDampingComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/CompositeDampingComponent.py#L1-L19"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CompositeDampingComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/CompositeDampingComponent.py#L1-L18"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent" title="abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">CompositeDampingComponent</span></code></a> object is used to define composite damping over a range of
 modes.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">compositeDamping</span><span class="o">.</span><span class="n">components</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -418,13 +422,15 @@ modes.</p>
 <h3>Control<a class="headerlink" href="#control" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Control</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/Control.py#L6-L123"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Control</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/Control.py#L6-L122"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>The Control object is used to provide additional optional general solution controls.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">control</span>
 </pre></div>
+</div>
 </div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -447,13 +453,15 @@ modes.</p>
 <h3>DirectDamping<a class="headerlink" href="#directdamping" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DirectDamping</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDamping.py#L4-L18"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DirectDamping</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDamping.py#L4-L17"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.DirectDamping.DirectDamping" title="abaqus.StepMiscellaneous.DirectDamping.DirectDamping"><code class="xref py py-class docutils literal notranslate"><span class="pre">DirectDamping</span></code></a> object contains direct modal damping parameters.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">directDamping</span>
 </pre></div>
+</div>
 </div>
 </dd></dl>
 
@@ -462,13 +470,15 @@ modes.</p>
 <h3>DirectDampingByFrequency<a class="headerlink" href="#directdampingbyfrequency" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DirectDampingByFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDampingByFrequency.py#L6-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DirectDampingByFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDampingByFrequency.py#L6-L21"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency" title="abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">DirectDampingByFrequency</span></code></a> object contains direct damping parameters.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">directDampingByFrequency</span>
 </pre></div>
+</div>
 </div>
 </dd></dl>
 
@@ -477,14 +487,16 @@ modes.</p>
 <h3>DirectDampingByFrequencyComponent<a class="headerlink" href="#directdampingbyfrequencycomponent" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DirectDampingByFrequencyComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDampingByFrequencyComponent.py#L1-L19"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DirectDampingByFrequencyComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDampingByFrequencyComponent.py#L1-L18"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent" title="abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">DirectDampingByFrequencyComponent</span></code></a> object is used to define direct damping over a range
 of frequencies.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">directDampingByFrequency</span><span class="o">.</span><span class="n">components</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -523,13 +535,15 @@ of frequencies.</p>
 <h3>DirectDampingComponent<a class="headerlink" href="#directdampingcomponent" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DirectDampingComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDampingComponent.py#L1-L21"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DirectDampingComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDampingComponent.py#L1-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent" title="abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">DirectDampingComponent</span></code></a> object is used to define direct damping over a range of modes.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">directDamping</span><span class="o">.</span><span class="n">components</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -569,12 +583,14 @@ of frequencies.</p>
 <h3>EmagTimeHarmonicFrequency<a class="headerlink" href="#emagtimeharmonicfrequency" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EmagTimeHarmonicFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/EmagTimeHarmonicFrequency.py#L1-L23"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
-<dd><p class="rubric">Notes</p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EmagTimeHarmonicFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/EmagTimeHarmonicFrequency.py#L1-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">frequencyRange</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -614,13 +630,15 @@ of frequencies.</p>
 <h3>MassScaling<a class="headerlink" href="#massscaling" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MassScaling</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/MassScaling.py#L4-L60"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MassScaling</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/MassScaling.py#L4-L59"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.MassScaling.MassScaling" title="abaqus.StepMiscellaneous.MassScaling.MassScaling"><code class="xref py py-class docutils literal notranslate"><span class="pre">MassScaling</span></code></a> object defines the region and controls that govern mass scaling.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">massScaling</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -665,14 +683,16 @@ of frequencies.</p>
 <h3>RandomResponseFrequency<a class="headerlink" href="#randomresponsefrequency" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RandomResponseFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RandomResponseFrequency.py#L1-L26"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RandomResponseFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RandomResponseFrequency.py#L1-L25"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>A RandomResponseFrequency is an object used to define frequency over a range of modes.
 This page discusses:</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">freq</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -713,13 +733,15 @@ This page discusses:</p>
 <h3>RayleighDamping<a class="headerlink" href="#rayleighdamping" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RayleighDamping</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDamping.py#L4-L18"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RayleighDamping</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDamping.py#L4-L17"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping" title="abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping"><code class="xref py py-class docutils literal notranslate"><span class="pre">RayleighDamping</span></code></a> object contains Rayleigh Damping parameters.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rayleighDamping</span>
 </pre></div>
+</div>
 </div>
 </dd></dl>
 
@@ -728,13 +750,15 @@ This page discusses:</p>
 <h3>RayleighDampingByFrequency<a class="headerlink" href="#rayleighdampingbyfrequency" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RayleighDampingByFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDampingByFrequency.py#L6-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RayleighDampingByFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDampingByFrequency.py#L6-L21"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency" title="abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">RayleighDampingByFrequency</span></code></a> object contains Rayleigh Damping parameters.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rayleighDampingByFrequency</span>
 </pre></div>
+</div>
 </div>
 </dd></dl>
 
@@ -743,14 +767,16 @@ This page discusses:</p>
 <h3>RayleighDampingByFrequencyComponent<a class="headerlink" href="#rayleighdampingbyfrequencycomponent" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RayleighDampingByFrequencyComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDampingByFrequencyComponent.py#L1-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RayleighDampingByFrequencyComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDampingByFrequencyComponent.py#L1-L21"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent" title="abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">RayleighDampingByFrequencyComponent</span></code></a> object is used to define Rayleigh damping over a
 range of frequencies.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rayleighDampingByFrequency</span><span class="o">.</span><span class="n">components</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -790,14 +816,16 @@ range of frequencies.</p>
 <h3>RayleighDampingComponent<a class="headerlink" href="#rayleighdampingcomponent" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RayleighDampingComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDampingComponent.py#L1-L25"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RayleighDampingComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDampingComponent.py#L1-L24"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent" title="abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">RayleighDampingComponent</span></code></a> object is used to define Rayleigh damping over a range of
 modes.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rayleighDamping</span><span class="o">.</span><span class="n">components</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -838,13 +866,15 @@ modes.</p>
 <h3>ResponseSpectrumComponent<a class="headerlink" href="#responsespectrumcomponent" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ResponseSpectrumComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/ResponseSpectrumComponent.py#L1-L32"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ResponseSpectrumComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/ResponseSpectrumComponent.py#L1-L31"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>A ResponseSpectrumComponent is an element of the ResponseSpectrumComponentArray.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">components</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -886,13 +916,15 @@ modes.</p>
 <h3>SolverControl<a class="headerlink" href="#solvercontrol" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SolverControl</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SolverControl.py#L6-L52"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SolverControl</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SolverControl.py#L6-L51"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>The SolverControl object is used to provide additional optional solver controls.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">solverControl</span>
 </pre></div>
+</div>
 </div>
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -915,13 +947,15 @@ modes.</p>
 <h3>SteadyStateDirectFrequency<a class="headerlink" href="#steadystatedirectfrequency" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SteadyStateDirectFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SteadyStateDirectFrequency.py#L1-L28"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SteadyStateDirectFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SteadyStateDirectFrequency.py#L1-L27"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>A SteadyStateDirectFrequency is an object used to define frequency over range of modes.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">frequencyRange</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -961,13 +995,15 @@ modes.</p>
 <h3>SteadyStateModalFrequency<a class="headerlink" href="#steadystatemodalfrequency" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SteadyStateModalFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SteadyStateModalFrequency.py#L1-L28"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SteadyStateModalFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SteadyStateModalFrequency.py#L1-L27"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>A SteadyStateModalFrequency is an object used to define frequency over a range of modes.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">frequencyRange</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -1007,14 +1043,16 @@ modes.</p>
 <h3>SteadyStateSubspaceFrequency<a class="headerlink" href="#steadystatesubspacefrequency" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SteadyStateSubspaceFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SteadyStateSubspaceFrequency.py#L1-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SteadyStateSubspaceFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SteadyStateSubspaceFrequency.py#L1-L28"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>A SteadyStateSubspaceFrequency is an object used to define frequency over range of
 modes.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">frequencyRange</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -1054,13 +1092,15 @@ modes.</p>
 <h3>StructuralDamping<a class="headerlink" href="#structuraldamping" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StructuralDamping</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDamping.py#L4-L18"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StructuralDamping</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDamping.py#L4-L17"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping" title="abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping"><code class="xref py py-class docutils literal notranslate"><span class="pre">StructuralDamping</span></code></a> object contains structural damping parameters.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">structuralDamping</span>
 </pre></div>
+</div>
 </div>
 </dd></dl>
 
@@ -1069,13 +1109,15 @@ modes.</p>
 <h3>StructuralDampingByFrequency<a class="headerlink" href="#structuraldampingbyfrequency" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StructuralDampingByFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDampingByFrequency.py#L6-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StructuralDampingByFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDampingByFrequency.py#L6-L21"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency" title="abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">StructuralDampingByFrequency</span></code></a> object contains structural damping parameters.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">structuralDampingByFrequency</span>
 </pre></div>
+</div>
 </div>
 </dd></dl>
 
@@ -1084,14 +1126,16 @@ modes.</p>
 <h3>StructuralDampingByFrequencyComponent<a class="headerlink" href="#structuraldampingbyfrequencycomponent" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StructuralDampingByFrequencyComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDampingByFrequencyComponent.py#L1-L19"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StructuralDampingByFrequencyComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDampingByFrequencyComponent.py#L1-L18"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent" title="abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">StructuralDampingByFrequencyComponent</span></code></a> object is used to define structural damping over
 a range of frequencies.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">structuralDampingByFrequency</span><span class="o">.</span><span class="n">components</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -1130,14 +1174,16 @@ a range of frequencies.</p>
 <h3>StructuralDampingComponent<a class="headerlink" href="#structuraldampingcomponent" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StructuralDampingComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDampingComponent.py#L1-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StructuralDampingComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDampingComponent.py#L1-L21"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent" title="abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">StructuralDampingComponent</span></code></a> object is used to define structural damping over a range of
 modes.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">structuralDamping</span><span class="o">.</span><span class="n">components</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -1177,15 +1223,17 @@ modes.</p>
 <h3>SubstructureGenerateFrequency<a class="headerlink" href="#substructuregeneratefrequency" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SubstructureGenerateFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SubstructureGenerateFrequency.py#L1-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SubstructureGenerateFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SubstructureGenerateFrequency.py#L1-L19"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency" title="abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">SubstructureGenerateFrequency</span></code></a> object is used to define the modes to be used in a modal
 dynamic analysis. These modes are selected from the specified frequency range including
 the frequency boundary.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">frequencyRange</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -1224,14 +1272,16 @@ the frequency boundary.</p>
 <h3>SubstructureGenerateModes<a class="headerlink" href="#substructuregeneratemodes" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SubstructureGenerateModes</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SubstructureGenerateModes.py#L1-L23"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SubstructureGenerateModes</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SubstructureGenerateModes.py#L1-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes" title="abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes"><code class="xref py py-class docutils literal notranslate"><span class="pre">SubstructureGenerateModes</span></code></a> object is used to define the modes to be used in a modal
 dynamic analysis.</p>
-<p class="rubric">Notes</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
 <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">modeRange</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
+</div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
