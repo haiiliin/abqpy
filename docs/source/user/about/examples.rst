@@ -10,5 +10,5 @@ Programming with the Abaqus Scripting Interface is straightforward and logical. 
    :caption: Contents
 
    examples/create-part
-   examples/read
+   examples/read-output
    examples/summary

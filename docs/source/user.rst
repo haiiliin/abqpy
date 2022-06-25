@@ -18,8 +18,8 @@ The guide consists of the following sections:
 
     Two simple examples are provided to introduce you to programming with the Abaqus Scripting Interface.
 
-    * Creating a part.   
-    * Reading from an output database.
+    - :doc:`/user/about/examples/create-part` 
+    - :doc:`/user/about/examples/read-output`
     
 - :doc:`/user/python`
 
