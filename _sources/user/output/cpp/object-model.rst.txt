@@ -7,7 +7,7 @@ You need to understand the object model for the output database both to read dat
 For example, consider the object model for field output data shown in Figure 1. The Odb object at the top of the figure is created when you issue the command to open or create an output database. As you move down the object model, an OdbStep object is a member of the Odb object; similarly, a Frame object is a member of the OdbStep object. The FieldOutput object has two members—fieldValue and fieldLocation.
 
 .. figure:: /images/odb-overview-nls.png
-    :width: 50%
+    :width: 100%
     :align: center
 
     Figure 1. The output database object model.
