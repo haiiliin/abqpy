@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="&lt;no title&gt;" href="exceptions.html" /><link rel="prev" title="Executing a script that accesses an output database" href="execute-script.html" />
+<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="Writing to an output database" href="write-output.html" /><link rel="prev" title="Executing a script that accesses an output database" href="execute-script.html" />
 
     <meta name="generator" content="sphinx-4.5.0, furo 2022.06.21"/>
         <title>Reading from an output database - abqpy 2016a0 documentation</title>
@@ -213,6 +213,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../examples/cantilever.html">Reproducing the cantilever beam tutorial</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../examples/plot.html">Generating a customized plot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../examples/sensitivity.html">Investigating the skew sensitivity of shell elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../examples/settings.html">Editing display preferences and GUI settings</a></li>
 </ul>
 </li>
 <li class="toctree-l2 current has-children"><a class="reference internal" href="../../output.html">Accessing an Output Database</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
@@ -222,6 +223,11 @@
 <li class="toctree-l4"><a class="reference internal" href="output-object-model.html">Object model for the output database</a></li>
 <li class="toctree-l4"><a class="reference internal" href="execute-script.html">Executing a script that accesses an output database</a></li>
 <li class="toctree-l4 current current-page"><a class="current reference internal" href="#">Reading from an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="write-output.html">Writing to an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exceptions.html">Exception handling in an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="computations.html">Computations with Abaqus results</a></li>
+<li class="toctree-l4"><a class="reference internal" href="improve-efficiency.html">Improving the efficiency of your scripts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="example-scripts.html">Example scripts that access data from an output database</a></li>
 </ul>
 </li>
 </ul>
@@ -802,7 +808,7 @@
 </div>
 <p>The history data object model is shown in Figure 1.</p>
 <figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../../../_images/odb-history-nls.png"><img alt="../../../_images/odb-history-nls.png" src="../../../_images/odb-history-nls.png" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../../../_images/odb-history-nls.png"><img alt="../../../_images/odb-history-nls.png" src="../../../_images/odb-history-nls.png" style="width: 100%;" /></a>
 <figcaption>
 <p><span class="caption-text">Figure 1. The history data object model.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -1000,6 +1006,7 @@ abaqus fetch job=viewer_tutorial</p>
 <span class="n">odb</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
+<p>The resulting output is</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Position</span> <span class="o">=</span>  <span class="n">NODAL</span> <span class="n">Type</span> <span class="o">=</span>  <span class="n">VECTOR</span>
 <span class="n">Node</span> <span class="n">label</span> <span class="o">=</span>  <span class="mi">1000</span>
 <span class="n">X</span> <span class="n">displacement</span> <span class="o">=</span>  <span class="o">-</span><span class="mf">8.29017850095e-34</span>
@@ -1015,12 +1022,12 @@ abaqus fetch job=viewer_tutorial</p>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="exceptions.html">
+          <a class="next-page" href="write-output.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">&lt;no title&gt;</div>
+                <div class="title">Writing to an output database</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>

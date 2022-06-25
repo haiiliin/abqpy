@@ -8,7 +8,7 @@ For example, consider the object model for field output data shown in Figure 1. 
 
 
 .. figure:: /images/odb-overview-nls.png
-    :width: 50%
+    :width: 100%
     :align: center
 
     Figure 1. The output database object model.

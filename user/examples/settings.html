@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Accessing an Output Database" href="../output.html" /><link rel="prev" title="Investigating the skew sensitivity of shell elements" href="sensitivity.html" />
 
     <meta name="generator" content="sphinx-4.5.0, furo 2022.06.21"/>
-        <title>&lt;no title&gt; - abqpy 2016a0 documentation</title>
+        <title>Editing display preferences and GUI settings - abqpy 2016a0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
@@ -155,10 +155,10 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials.html">Tutorials</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../user.html">User’s Guide</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../../user.html">User’s Guide</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="../about.html">About the Abaqus Scripting Interface</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../about/interface.html">Abaqus/CAE and the Abaqus Scripting Interface</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../about/interact.html">How does the Abaqus Scripting Interface interact with Abaqus/CAE?</a></li>
@@ -209,10 +209,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../environment/use-pde.html">Using the Abaqus PDE</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../examples.html">Putting it all Together: Abaqus Scripting Interface Examples</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../examples.html">Putting it all Together: Abaqus Scripting Interface Examples</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="cantilever.html">Reproducing the cantilever beam tutorial</a></li>
 <li class="toctree-l3"><a class="reference internal" href="plot.html">Generating a customized plot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sensitivity.html">Investigating the skew sensitivity of shell elements</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Editing display preferences and GUI settings</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../output.html">Accessing an Output Database</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -222,6 +223,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../output/python/output-object-model.html">Object model for the output database</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../output/python/execute-script.html">Executing a script that accesses an output database</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../output/python/read-output.html">Reading from an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../output/python/write-output.html">Writing to an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../output/python/exceptions.html">Exception handling in an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../output/python/computations.html">Computations with Abaqus results</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../output/python/improve-efficiency.html">Improving the efficiency of your scripts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../output/python/example-scripts.html">Example scripts that access data from an output database</a></li>
 </ul>
 </li>
 </ul>
@@ -371,7 +377,9 @@
           </label>
         </div>
         <article role="main">
-          <p>You can use the Abaqus Scripting Interface to edit the abaqus_2021.gpr file, which includes settings that control many default display preferences and GUI settings in the Abaqus/CAE user interface. To enable editing of this file, you must import the caePrefsAccess module. This section describes the structure of the abaqus_2021.gpr file and provides an overview of customizing its settings; for more detailed information about the functions available in the caePrefsAccess module, see <span class="xref std std-doc">reference/kernel/cae_display_preferences</span>.</p>
+          <section id="editing-display-preferences-and-gui-settings">
+<h1>Editing display preferences and GUI settings<a class="headerlink" href="#editing-display-preferences-and-gui-settings" title="Permalink to this headline">#</a></h1>
+<p>You can use the Abaqus Scripting Interface to edit the abaqus_2021.gpr file, which includes settings that control many default display preferences and GUI settings in the Abaqus/CAE user interface. To enable editing of this file, you must import the caePrefsAccess module. This section describes the structure of the abaqus_2021.gpr file and provides an overview of customizing its settings; for more detailed information about the functions available in the caePrefsAccess module, see <span class="xref std std-doc">reference/kernel/cae_display_preferences</span>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Editing the <cite>abaqus_2021.gpr</cite> file is for experienced users only. Do not use the functions in the <cite>caePrefsAccess</cite> module unless you are comfortable with the Abaqus Scripting Interface and understand the structure of the <cite>abaqus_2021.gpr</cite> file. In addition, you should not have Abaqus/CAE running when you make changes to the graphical preferences file.</p>
@@ -459,6 +467,7 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">guiPrefs</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
 </pre></div>
 </div>
+</section>
 
         </article>
       </div>

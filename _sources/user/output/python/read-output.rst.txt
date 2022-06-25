@@ -521,7 +521,7 @@ History output is output defined for a single point or for values calculated for
 The history data object model is shown in Figure 1.
 
 .. figure:: /images/odb-history-nls.png
-    :width: 50%
+    :width: 100%
     :align: center
 
     Figure 1. The history data object model.
@@ -723,6 +723,8 @@ The following script combines many of the commands you have already seen and ill
         print 'Displacement magnitude =', v.magnitude
 
     odb.close()
+
+The resulting output is
 
 .. code-block:: python
     

@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="&lt;no title&gt;" href="computations.html" /><link rel="prev" title="Reading from an output database" href="read-output.html" />
+<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="Computations with Abaqus results" href="computations.html" /><link rel="prev" title="Writing to an output database" href="write-output.html" />
 
     <meta name="generator" content="sphinx-4.5.0, furo 2022.06.21"/>
-        <title>&lt;no title&gt; - abqpy 2016a0 documentation</title>
+        <title>Exception handling in an output database - abqpy 2016a0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
@@ -155,10 +155,10 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../tutorials.html">Tutorials</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../user.html">User’s Guide</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../../../user.html">User’s Guide</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../about.html">About the Abaqus Scripting Interface</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../about/interface.html">Abaqus/CAE and the Abaqus Scripting Interface</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../about/interact.html">How does the Abaqus Scripting Interface interact with Abaqus/CAE?</a></li>
@@ -213,15 +213,21 @@
 <li class="toctree-l3"><a class="reference internal" href="../../examples/cantilever.html">Reproducing the cantilever beam tutorial</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../examples/plot.html">Generating a customized plot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../examples/sensitivity.html">Investigating the skew sensitivity of shell elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../examples/settings.html">Editing display preferences and GUI settings</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../output.html">Accessing an Output Database</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../python.html">Using the Abaqus Scripting Interface to access an output database</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../../output.html">Accessing an Output Database</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 current has-children"><a class="reference internal" href="../python.html">Using the Abaqus Scripting Interface to access an output database</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="need-what-to-understand.html">What do you need to access the output database?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="object-model.html">How the object model for the output database relates to commands</a></li>
 <li class="toctree-l4"><a class="reference internal" href="output-object-model.html">Object model for the output database</a></li>
 <li class="toctree-l4"><a class="reference internal" href="execute-script.html">Executing a script that accesses an output database</a></li>
 <li class="toctree-l4"><a class="reference internal" href="read-output.html">Reading from an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="write-output.html">Writing to an output database</a></li>
+<li class="toctree-l4 current current-page"><a class="current reference internal" href="#">Exception handling in an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="computations.html">Computations with Abaqus results</a></li>
+<li class="toctree-l4"><a class="reference internal" href="improve-efficiency.html">Improving the efficiency of your scripts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="example-scripts.html">Example scripts that access data from an output database</a></li>
 </ul>
 </li>
 </ul>
@@ -371,7 +377,22 @@
           </label>
         </div>
         <article role="main">
-          
+          <section id="exception-handling-in-an-output-database">
+<h1>Exception handling in an output database<a class="headerlink" href="#exception-handling-in-an-output-database" title="Permalink to this headline">#</a></h1>
+<p>Python exception handling in the output database is identical to that in the model database. Python exception handling is described in <span class="xref std std-doc">user/python/python-abaqus/errors:exceptions handling</span>.</p>
+<p>The exceptions thrown are of type OdbError; for example, the following script catches exceptions thrown when the python interface in not successful in opening an output database:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">invalidOdbName</span> <span class="o">=</span> <span class="s2">&quot;invalid.odb&quot;</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">myOdb</span> <span class="o">=</span> <span class="n">openOdb</span><span class="p">(</span><span class="n">invalidOdbName</span><span class="p">)</span>
+<span class="k">except</span> <span class="n">OdbError</span><span class="p">,</span><span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="s1">&#39;Abaqus error message: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+    <span class="nb">print</span> <span class="s1">&#39;customized error message here&#39;</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="s1">&#39;Unknown Exception. &#39;</span>
+</pre></div>
+</div>
+</section>
+
         </article>
       </div>
       <footer>
@@ -382,18 +403,18 @@
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">&lt;no title&gt;</div>
+                <div class="title">Computations with Abaqus results</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="read-output.html">
+          <a class="prev-page" href="write-output.html">
               <svg><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Reading from an output database</div>
+                <div class="title">Writing to an output database</div>
                 
               </div>
             </a>

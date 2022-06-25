@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="&lt;no title&gt;" href="example-scripts.html" /><link rel="prev" title="&lt;no title&gt;" href="computations.html" />
+<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="Example scripts that access data from an output database" href="example-scripts.html" /><link rel="prev" title="Computations with Abaqus results" href="computations.html" />
 
     <meta name="generator" content="sphinx-4.5.0, furo 2022.06.21"/>
-        <title>&lt;no title&gt; - abqpy 2016a0 documentation</title>
+        <title>Improving the efficiency of your scripts - abqpy 2016a0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
@@ -155,10 +155,10 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../tutorials.html">Tutorials</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../user.html">User’s Guide</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../../../user.html">User’s Guide</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../about.html">About the Abaqus Scripting Interface</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../about/interface.html">Abaqus/CAE and the Abaqus Scripting Interface</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../about/interact.html">How does the Abaqus Scripting Interface interact with Abaqus/CAE?</a></li>
@@ -213,15 +213,21 @@
 <li class="toctree-l3"><a class="reference internal" href="../../examples/cantilever.html">Reproducing the cantilever beam tutorial</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../examples/plot.html">Generating a customized plot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../examples/sensitivity.html">Investigating the skew sensitivity of shell elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../examples/settings.html">Editing display preferences and GUI settings</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../output.html">Accessing an Output Database</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../python.html">Using the Abaqus Scripting Interface to access an output database</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../../output.html">Accessing an Output Database</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 current has-children"><a class="reference internal" href="../python.html">Using the Abaqus Scripting Interface to access an output database</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="need-what-to-understand.html">What do you need to access the output database?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="object-model.html">How the object model for the output database relates to commands</a></li>
 <li class="toctree-l4"><a class="reference internal" href="output-object-model.html">Object model for the output database</a></li>
 <li class="toctree-l4"><a class="reference internal" href="execute-script.html">Executing a script that accesses an output database</a></li>
 <li class="toctree-l4"><a class="reference internal" href="read-output.html">Reading from an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="write-output.html">Writing to an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exceptions.html">Exception handling in an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="computations.html">Computations with Abaqus results</a></li>
+<li class="toctree-l4 current current-page"><a class="current reference internal" href="#">Improving the efficiency of your scripts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="example-scripts.html">Example scripts that access data from an output database</a></li>
 </ul>
 </li>
 </ul>
@@ -371,7 +377,60 @@
           </label>
         </div>
         <article role="main">
-          
+          <section id="improving-the-efficiency-of-your-scripts">
+<h1>Improving the efficiency of your scripts<a class="headerlink" href="#improving-the-efficiency-of-your-scripts" title="Permalink to this headline">#</a></h1>
+<p>If you are accessing large amounts of data from an output database, you should be aware of potential inefficiencies in your script and techniques that will help to speed up your scripts.</p>
+<p>To improve the efficiency of scripts that access an output database, you should create objects that will be used to hold temporary variables that are accessed multiple times while the script is executing. For example, if the script accesses the temporary variable while inside a loop that is executed many times, creating an object to hold the variable will speed up your script significantly.</p>
+<p>The following example examines the von Mises stress in each element during a particular frame of field output. If the stress is greater than a certain maximum value, the script prints the strain components for the element.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">stressField</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;MISES&#39;</span><span class="p">]</span>
+<span class="n">strainField</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;LE&#39;</span><span class="p">]</span>
+<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">stressField</span><span class="o">.</span><span class="n">values</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">v</span><span class="o">.</span><span class="n">mises</span> <span class="o">&gt;</span> <span class="n">stressCap</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">v</span><span class="o">.</span><span class="n">integrationPoint</span><span class="p">:</span>
+            <span class="nb">print</span> <span class="s1">&#39;Element label = &#39;</span><span class="p">,</span> <span class="n">v</span><span class="o">.</span><span class="n">elementLabel</span><span class="p">,</span> \
+                <span class="s1">&#39;Integration Point = &#39;</span><span class="p">,</span> <span class="n">v</span><span class="o">.</span><span class="n">integrationPoint</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span> <span class="s1">&#39;Element label = &#39;</span><span class="p">,</span> <span class="n">v</span><span class="o">.</span><span class="n">elementLabel</span>
+        <span class="k">for</span> <span class="n">component</span> <span class="ow">in</span> <span class="n">strainField</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">count</span><span class="p">]</span><span class="o">.</span><span class="n">data</span><span class="p">:</span>
+            <span class="nb">print</span> <span class="s1">&#39;</span><span class="si">%-10.5f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">component</span><span class="p">,</span>
+        <span class="nb">print</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>In this example every time the script accesses a strain component from <em>strainField.value</em>, Abaqus must reconstruct the sequence of FieldValue objects. This reconstruction could result in a significant performance degradation, particularly for a large model.</p>
+<p>A slight change in the script greatly improves its performance, as shown in the following example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">stressField</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;MISES&#39;</span><span class="p">]</span>
+<span class="n">strainFieldValues</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;LE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">stressField</span><span class="o">.</span><span class="n">values</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">v</span><span class="o">.</span><span class="n">mises</span> <span class="o">&gt;</span> <span class="n">stressCap</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">v</span><span class="o">.</span><span class="n">integrationPoint</span><span class="p">:</span>
+            <span class="nb">print</span> <span class="s1">&#39;Element label = &#39;</span><span class="p">,</span> <span class="n">v</span><span class="o">.</span><span class="n">elementLabel</span><span class="p">,</span> \
+                <span class="s1">&#39;Integration Point = &#39;</span><span class="p">,</span> <span class="n">v</span><span class="o">.</span><span class="n">integrationPoint</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span> <span class="s1">&#39;Element label = &#39;</span><span class="p">,</span> <span class="n">v</span><span class="o">.</span><span class="n">elementLabel</span>
+        <span class="k">for</span> <span class="n">component</span> <span class="ow">in</span> <span class="n">strainFieldValues</span><span class="p">[</span><span class="n">count</span><span class="p">]</span><span class="o">.</span><span class="n">data</span><span class="p">:</span>
+            <span class="nb">print</span> <span class="s1">&#39;</span><span class="si">%-10.5f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">component</span><span class="p">,</span>
+        <span class="nb">print</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>The second script replaces the statement strainField = frame.fieldOutputs[‘LE’] with the statement strainFieldValues = frame.fieldOutputs[‘LE’].values. As a result, Abaqus does not need to reconstruct the sequence of FieldValue objects each time the script accesses a strain component.</p>
+<p>Similarly, if you expect to retrieve more than one frame from an output database, you should create a temporary variable that holds the entire frame repository. You can then provide the logic to retrieve the desired frames from the repository and avoid recreating the repository each time. For example, executing the following statements could be very slow:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">odb</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">frames</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">frame</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">frames</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Creating a temporary variable to hold the frame repository provides the same functionality and speeds up the process:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">frameRepository</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">frames</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">frameRepository</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">frame</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">frameRepository</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Such a potential loss of performance will not be a problem when accessing a load case frame. Accessing a load case frame does not result in the creation of a frame repository and, thus, does not suffer from a corresponding loss of performance.</p>
+</section>
+
         </article>
       </div>
       <footer>
@@ -382,7 +441,7 @@
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">&lt;no title&gt;</div>
+                <div class="title">Example scripts that access data from an output database</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -393,7 +452,7 @@
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">&lt;no title&gt;</div>
+                <div class="title">Computations with Abaqus results</div>
                 
               </div>
             </a>
