@@ -9,7 +9,7 @@ It is intended primarily for use with scripts that use the Abaqus/CAE graphical 
 Figure 1 shows a `.guiLog` file in the Abaqus PDE. The script creates an extruded solid rectangular part named box1 and was recorded by logging the actions to complete the task in the Abaqus/CAE user interface.
 
 .. figure:: /images/cmd-pde-nls.png
-    :width: 50%
+    :width: 100%
     :align: center
 
     Figure 1. The Abaqus PDE.
