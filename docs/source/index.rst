@@ -14,6 +14,9 @@ It also provides some simple APIs to execute the Abaqus commands so that you can
 Python script to build the model, submit the job and extract the output data in just one 
 Python script, even without opening the Abaqus/CAE.
 
+.. note::
+    The abqpy is built in Python 3 but the Python interpreter of Abaqus is Python 2, so you must write codes that are compatiable with Python 2 and Python 3.
+
 .. you can use it to run Abaqus fluently, it is a package to make Abaqus 
 .. modeling, calculation, visualization easily. Using `abqpy`, you can simply build the Abaqus 
 .. model, submit and monitor the job, and visualize the results in just one python script, you 
