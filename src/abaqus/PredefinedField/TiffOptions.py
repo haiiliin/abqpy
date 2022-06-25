@@ -6,13 +6,12 @@ class TiffOptions:
     format. The TiffOptions object has no constructor. Abaqus creates the **tiffOptions**
     member when a session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        session.tiffOptions
+            session.tiffOptions
     """
 
     def setValues(self, imageSize: SymbolicConstant = SIZE_ON_SCREEN):

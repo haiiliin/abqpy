@@ -5,14 +5,13 @@ class RemeshingRule:
     """The RemeshingRule object controls the adaptive remeshing resizing and the error
     indicators written to the output database for a specified region of the model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import mesh
-        mdb.models[name].remeshingRules[name]
+            import mesh
+            mdb.models[name].remeshingRules[name]
     """
 
     #: A Boolean specifying whether the remeshing rule is suppressed. Remeshing of the
@@ -125,13 +124,12 @@ class RemeshingRule:
     ):
         """This method creates a RemeshingRule object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].RemeshingRule
+                mdb.models[name].RemeshingRule
 
         Parameters
         ----------

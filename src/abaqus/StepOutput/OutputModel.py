@@ -12,13 +12,12 @@ from ..Region.Region import Region
 class OutputModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name]
+            mdb.models[name]
     """
 
     def FieldOutputRequest(
@@ -51,13 +50,12 @@ class OutputModel(ModelBase):
     ):
         """This method creates a FieldOutputRequest object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].FieldOutputRequest
+                mdb.models[name].FieldOutputRequest
 
         Parameters
         ----------
@@ -203,13 +201,12 @@ class OutputModel(ModelBase):
     ):
         """This method creates a HistoryOutputRequest object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].HistoryOutputRequest
+                mdb.models[name].HistoryOutputRequest
 
         Parameters
         ----------
@@ -337,13 +334,12 @@ class OutputModel(ModelBase):
     ) -> IntegratedOutputSection:
         """This method creates an IntegratedOutputSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].IntegratedOutputSection
+                mdb.models[name].IntegratedOutputSection
 
         Parameters
         ----------
@@ -398,13 +394,12 @@ class OutputModel(ModelBase):
     def TimePoint(self, name: str, points: tuple) -> TimePoint:
         """This method creates a TimePoint object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].TimePoint
+                mdb.models[name].TimePoint
 
         Parameters
         ----------

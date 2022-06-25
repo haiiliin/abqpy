@@ -6,14 +6,13 @@ class LoadState:
     LoadState object has no explicit constructor or methods. The members of the LoadState
     object are common to all objects derived from LoadState.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].steps[name].loadStates[name]
+            import load
+            mdb.models[name].steps[name].loadStates[name]
     """
 
     #: A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible

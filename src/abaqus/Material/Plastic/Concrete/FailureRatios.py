@@ -5,37 +5,36 @@ class FailureRatios:
     """The FailureRatios object specifies the shape of the failure surface for a Concrete
     model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].concrete.failureRatios
-        import odbMaterial
-        session.odbs[name].materials[name].concrete.failureRatios
+            import material
+            mdb.models[name].materials[name].concrete.failureRatios
+            import odbMaterial
+            session.odbs[name].materials[name].concrete.failureRatios
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Ratio of the ultimate biaxial compressive stress to the uniaxial compressive ultimate
-      stress. The default value is 1.16.
-    - Absolute value of the ratio of the uniaxial tensile stress at failure to the uniaxial 
-      compressive stress at failure. The default value is 0.09.
-    - Ratio of the magnitude of a principal component of Plastic strain at ultimate stress in 
-      biaxial compression to the Plastic strain at ultimate stress in uniaxial compression. 
-      The default value is 1.28.
-    - Ratio of the tensile principal stress value at shear in plane stress, when the other 
-      nonzero principal stress component is at the ultimate compressive stress value, to the 
-      tensile cracking stress under uniaxial tension. The default value is 1/3.
-    - Temperature, if the data depend on temperature.
-    - Value of the first field variable, if the data depend on field variables.
-    - Value of the second field variable.
-    - Etc.
+        - Ratio of the ultimate biaxial compressive stress to the uniaxial compressive ultimate
+          stress. The default value is 1.16.
+        - Absolute value of the ratio of the uniaxial tensile stress at failure to the uniaxial 
+          compressive stress at failure. The default value is 0.09.
+        - Ratio of the magnitude of a principal component of Plastic strain at ultimate stress in 
+          biaxial compression to the Plastic strain at ultimate stress in uniaxial compression. 
+          The default value is 1.28.
+        - Ratio of the tensile principal stress value at shear in plane stress, when the other 
+          nonzero principal stress component is at the ultimate compressive stress value, to the 
+          tensile cracking stress under uniaxial tension. The default value is 1/3.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - FAILURE RATIOS
+        - FAILURE RATIOS
     """
 
     def __init__(
@@ -43,14 +42,13 @@ class FailureRatios:
     ):
         """This method creates a FailureRatios object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].concrete.FailureRatios
-            session.odbs[name].materials[name].concrete.FailureRatios
+                mdb.models[name].materials[name].concrete.FailureRatios
+                session.odbs[name].materials[name].concrete.FailureRatios
 
         Parameters
         ----------

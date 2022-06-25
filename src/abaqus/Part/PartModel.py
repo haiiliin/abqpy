@@ -6,13 +6,12 @@ from ..Part.Part import Part
 class PartModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name]
+            mdb.models[name]
     """
 
     def Part(
@@ -24,13 +23,12 @@ class PartModel(ModelBase):
     ):
         """This method creates a Part object and places it in the parts repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Part
+                mdb.models[name].Part
 
         Parameters
         ----------

@@ -21,14 +21,13 @@ class StepBase:
     constructor. The methods and members of the Step object are common to all objects
     derived from the Step.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name]
+            import step
+            mdb.models[name].steps[name]
     """
 
     #: A String specifying the repository key.

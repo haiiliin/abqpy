@@ -8,15 +8,14 @@ class FieldReportOptions:
     constructor. Abaqus creates the **fieldReportOptions** member when you import the
     Visualization module.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.defaultFieldReportOptions
-        session.fieldReportOptions
+            import visualization
+            session.defaultFieldReportOptions
+            session.fieldReportOptions
     """
 
     #: Format of the number
@@ -83,15 +82,14 @@ class FieldReportOptions:
     ) -> NumberFormat:
         """This method creates a NumberFormat object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.defaultFieldReportOptions.NumberFormat
-            session.fieldReportOptions.NumberFormat
-            session.journalOptions.NumberFormat
+                session.defaultFieldReportOptions.NumberFormat
+                session.fieldReportOptions.NumberFormat
+                session.journalOptions.NumberFormat
 
         Parameters
         ----------

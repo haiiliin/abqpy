@@ -8,14 +8,13 @@ class Part(MeshEditPart, MeshPart, PropertyPart, RegionPart):
     """The Part object defines the physical attributes of a structure. Parts are instanced into
     the assembly and positioned before an analysis.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name]
+            import part
+            mdb.models[name].parts[name]
     """
 
     pass

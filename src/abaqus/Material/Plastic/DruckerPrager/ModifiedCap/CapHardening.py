@@ -4,29 +4,28 @@ from abaqusConstants import *
 class CapHardening:
     """The CapHardening object specifies Drucker-Prager/Cap plasticity hardening.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].capPlasticity.capHardening
-        import odbMaterial
-        session.odbs[name].materials[name].capPlasticity.capHardening
+            import material
+            mdb.models[name].materials[name].capPlasticity.capHardening
+            import odbMaterial
+            session.odbs[name].materials[name].capPlasticity.capHardening
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Hydrostatic pressure yield stress.
-    - Absolute value of the corresponding volumetric inelastic strain.
-    - Temperature, if the data depend on temperature.
-    - Value of the first field variable, if the data depend on field variables.
-    - Value of the second field variable.
-    - Etc.
+        - Hydrostatic pressure yield stress.
+        - Absolute value of the corresponding volumetric inelastic strain.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CAP HARDENING
+        - CAP HARDENING
     """
 
     def __init__(
@@ -34,14 +33,13 @@ class CapHardening:
     ):
         """This method creates a CapHardening object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].capPlasticity.CapHardening
-            session.odbs[name].materials[name].capPlasticity.CapHardening
+                mdb.models[name].materials[name].capPlasticity.CapHardening
+                session.odbs[name].materials[name].capPlasticity.CapHardening
 
         Parameters
         ----------

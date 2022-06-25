@@ -5,20 +5,19 @@ class TProfile(Profile):
     """The TProfile object defines the properties of a T profile.
     The TProfile object is derived from the Profile object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].profiles[name]
-        import odbSection
-        session.odbs[name].profiles[name]
+            import section
+            mdb.models[name].profiles[name]
+            import odbSection
+            session.odbs[name].profiles[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - BEAM SECTION
+        - BEAM SECTION
     """
 
     #: A String specifying the repository key.
@@ -47,14 +46,13 @@ class TProfile(Profile):
     def __init__(self, name: str, b: float, h: float, l: float, tf: float, tw: float):
         """This method creates a TProfile object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].TProfile
-            session.odbs[name].TProfile
+                mdb.models[name].TProfile
+                session.odbs[name].TProfile
 
         Parameters
         ----------

@@ -9,14 +9,13 @@ class PropertyAssembly(AssemblyBase):
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
     created.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import assembly
-        mdb.models[name].rootAssembly
+            import assembly
+            mdb.models[name].rootAssembly
     """
 
     def SectionAssignment(
@@ -30,14 +29,13 @@ class PropertyAssembly(AssemblyBase):
     ):
         """This method creates a SectionAssignment object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].SectionAssignment
-            mdb.models[name].rootAssembly.SectionAssignment
+                mdb.models[name].parts[name].SectionAssignment
+                mdb.models[name].rootAssembly.SectionAssignment
 
         Parameters
         ----------

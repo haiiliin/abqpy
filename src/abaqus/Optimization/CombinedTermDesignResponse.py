@@ -6,14 +6,13 @@ class CombinedTermDesignResponse(DesignResponse):
     """The CombinedTermDesignResponse object defines a combined-term design response.
     The CombinedTermDesignResponse object is derived from the DesignResponse object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import optimization
-        mdb.models[name].optimizationTasks[name].designResponses[name]
+            import optimization
+            mdb.models[name].optimizationTasks[name].designResponses[name]
     """
 
     #: A String specifying the design response repository key.
@@ -99,13 +98,12 @@ class CombinedTermDesignResponse(DesignResponse):
     ):
         """This method creates a CombinedTermDesignResponse object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      mdb.models[name].optimizationTasks[name].CombinedTermDesignResponse
+                mdb.models[name].optimizationTasks[name].CombinedTermDesignResponse
 
         Parameters
         ----------

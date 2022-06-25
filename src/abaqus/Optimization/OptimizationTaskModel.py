@@ -11,13 +11,12 @@ from ..Model.ModelBase import ModelBase
 class OptimizationTaskModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name]
+            mdb.models[name]
     """
 
     def BeadTask(
@@ -46,13 +45,12 @@ class OptimizationTaskModel(ModelBase):
     ) -> BeadTask:
         """This method creates a BeadTask object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].BeadTask
+                mdb.models[name].BeadTask
 
         Parameters
         ----------
@@ -200,13 +198,12 @@ class OptimizationTaskModel(ModelBase):
     ) -> ShapeTask:
         """This method creates a ShapeTask object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ShapeTask
+                mdb.models[name].ShapeTask
 
         Parameters
         ----------
@@ -425,13 +422,12 @@ class OptimizationTaskModel(ModelBase):
     ) -> SizingTask:
         """This method creates a SizingTask object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SizingTask
+                mdb.models[name].SizingTask
 
         Parameters
         ----------
@@ -533,13 +529,12 @@ class OptimizationTaskModel(ModelBase):
     ) -> TopologyTask:
         """This method creates a TopologyTask object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].TopologyTask
+                mdb.models[name].TopologyTask
 
         Parameters
         ----------

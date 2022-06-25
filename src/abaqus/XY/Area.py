@@ -8,25 +8,24 @@ class Area:
     no constructor. Area objects are automatically created whenever a XYPlot, Chart,
     PlotTitle, or Legend objects are created.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.charts[name].area
-        session.charts[name].gridArea
-        session.charts[name].legend.area
-        session.defaultChartOptions.gridArea
-        session.defaultChartOptions.legend.area
-        session.defaultPlot.area
-        session.defaultPlot.title.area
-        session.xyPlots[name].area
-        session.xyPlots[name].charts[name].area
-        session.xyPlots[name].charts[name].gridArea
-        session.xyPlots[name].charts[name].legend.area
-        session.xyPlots[name].title.area
+            import visualization
+            session.charts[name].area
+            session.charts[name].gridArea
+            session.charts[name].legend.area
+            session.defaultChartOptions.gridArea
+            session.defaultChartOptions.legend.area
+            session.defaultPlot.area
+            session.defaultPlot.title.area
+            session.xyPlots[name].area
+            session.xyPlots[name].charts[name].area
+            session.xyPlots[name].charts[name].gridArea
+            session.xyPlots[name].charts[name].legend.area
+            session.xyPlots[name].title.area
     """
 
     #: A Boolean specifying whether the area is inset or occupies a reserved area. The default

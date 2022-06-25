@@ -4,15 +4,14 @@ from abaqusConstants import *
 class DisplayOptions:
     """The DisplayOptions object stores a plot state.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.viewports[name].layers[name].odbDisplay.display
-        session.viewports[name].odbDisplay.display
+            import visualization
+            session.viewports[name].layers[name].odbDisplay.display
+            session.viewports[name].odbDisplay.display
     """
 
     #: A tuple of SymbolicConstants specifying the plot state of the display. Possible values

@@ -11,14 +11,13 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
     such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are
     contained in their respective repositories.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import sketch
-        mdb.models[name].sketches[name]
+            import sketch
+            mdb.models[name].sketches[name]
     """
 
     def CoincidentConstraint(
@@ -28,13 +27,12 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         a vertex and a ConstrainedSketchGeometry object, or to two ConstrainedSketchGeometry
         objects of the same type and constrains them to be coincident.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].CoincidentConstraint
+                mdb.models[name].sketches[name].CoincidentConstraint
 
         Parameters
         ----------
@@ -58,13 +56,12 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         concentric constraint implies that the center of ConstrainedSketchGeometry objects
         coincide.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].ConcentricConstraint
+                mdb.models[name].sketches[name].ConcentricConstraint
 
         Parameters
         ----------
@@ -88,13 +85,12 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         """This method creates an equal length constraint. This constraint applies to lines and
         constrains them such that their lengths are equal.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].EqualLengthConstraint
+                mdb.models[name].sketches[name].EqualLengthConstraint
 
         Parameters
         ----------
@@ -114,13 +110,12 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         """This method creates an equal radius constraint. This constraint applies to circles and
         arcs and constrains them such that their radii are equal.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].EqualRadiusConstraint
+                mdb.models[name].sketches[name].EqualRadiusConstraint
 
         Parameters
         ----------
@@ -141,13 +136,12 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         ConstrainedSketchGeometry object or a ConstrainedSketchVertex object and constrains them to be fixed in
         space. Both the location and the shape of the sketch geometry is fixed.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].FixedConstraint
+                mdb.models[name].sketches[name].FixedConstraint
 
         Parameters
         ----------
@@ -166,13 +160,12 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         """This method creates a horizontal constraint. This constraint applies to a line and
         constrains it to be horizontal.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].HorizontalConstraint
+                mdb.models[name].sketches[name].HorizontalConstraint
 
         Parameters
         ----------
@@ -190,13 +183,12 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         """This method creates a vertical constraint. This constraint applies to a line and
         constrains it to be vertical.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].VerticalConstraint
+                mdb.models[name].sketches[name].VerticalConstraint
 
         Parameters
         ----------
@@ -216,13 +208,12 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         """This method creates a parallel constraint. This constraint applies to lines and
         constrains them to be parallel.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].ParallelConstraint
+                mdb.models[name].sketches[name].ParallelConstraint
 
         Parameters
         ----------
@@ -245,13 +236,12 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         types of ConstrainedSketchGeometry objects and constrains them to be perpendicular to
         each other.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].PerpendicularConstraint
+                mdb.models[name].sketches[name].PerpendicularConstraint
 
         Parameters
         ----------
@@ -277,13 +267,12 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         constraint forces the midpoint vertex to remain at an equal distance from the two other
         vertices or lines.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].EqualDistanceConstraint
+                mdb.models[name].sketches[name].EqualDistanceConstraint
 
         Parameters
         ----------
@@ -308,13 +297,12 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
         """This method creates a tangent constraint. This constraint applies to different types of
         ConstrainedSketchGeometry objects and constrains them to remain tangential.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].TangentConstraint
+                mdb.models[name].sketches[name].TangentConstraint
 
         Parameters
         ----------

@@ -10,18 +10,17 @@ class AcousticImpedanceState(InteractionState):
     The AcousticImpedanceState object has no constructor or methods.
     The AcousticImpedanceState object is derived from the InteractionState object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].steps[name].interactionStates[name]
+            import interaction
+            mdb.models[name].steps[name].interactionStates[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - SIMPEDANCE
+        - SIMPEDANCE
     """
 
     #: A SymbolicConstant specifying the propagation state of the **interactionProperty** member.

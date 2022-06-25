@@ -7,29 +7,28 @@ from .TensionStiffening import TensionStiffening
 class Concrete:
     """The Concrete object defines concrete properties beyond the elastic range.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].concrete
-        import odbMaterial
-        session.odbs[name].materials[name].concrete
+            import material
+            mdb.models[name].materials[name].concrete
+            import odbMaterial
+            session.odbs[name].materials[name].concrete
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Absolute value of compressive stress.
-    - Absolute value of Plastic strain.
-    - Temperature, if the data depend on temperature.
-    - Value of the first field variable, if the data depend on field variables.
-    - Value of the second field variable.
-    - Etc.
+        - Absolute value of compressive stress.
+        - Absolute value of Plastic strain.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONCRETE
+        - CONCRETE
     """
 
     #: A :py:class:`~abaqus.Material.Plastic.Concrete.FailureRatios.FailureRatios` object.
@@ -46,14 +45,13 @@ class Concrete:
     ):
         """This method creates a Concrete object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].Concrete
-            session.odbs[name].materials[name].Concrete
+                mdb.models[name].materials[name].Concrete
+                session.odbs[name].materials[name].Concrete
 
         Parameters
         ----------

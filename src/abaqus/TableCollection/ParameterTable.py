@@ -9,18 +9,17 @@ class ParameterTable:
     contents of ParameterColumn. After DataTable is instantiated, making changes to
     ParameterColumn may lead to data corruption.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name].tableCollections[name].parameterTables[name]
+            mdb.models[name].tableCollections[name].parameterTables[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - *PARAMETER TABLE TYPE
-            - *PARAMETER TABLE
+        - *PARAMETER TABLE TYPE
+                - *PARAMETER TABLE
     """
 
     #: A ParameterColumnArray specifying all the columns in the ParameterTable.
@@ -33,13 +32,12 @@ class ParameterTable:
         """This method creates a ParameterTable object and places it in the parameterTables
         repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].tableCollections[name].ParameterTable
+                mdb.models[name].tableCollections[name].ParameterTable
 
         Parameters
         ----------
@@ -65,13 +63,12 @@ class ParameterTable:
         it in the array data structure. It is accessible from the ParameterTable object using a
         column member.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].tableCollections[name].ParameterTable
+                mdb.models[name].tableCollections[name].ParameterTable
 
         Parameters
         ----------

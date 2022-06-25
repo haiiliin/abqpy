@@ -7,18 +7,17 @@ from ..Mesh.MeshElementArray import MeshElementArray
 class Stringer:
     """The Stringer object stores information on stringer reinforcements created on entities.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].stringers[name]
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name].stringers[name]
-        mdb.models[name].rootAssembly.instances[name].stringers[name]
-        mdb.models[name].rootAssembly.stringers[name]
+            import part
+            mdb.models[name].parts[name].stringers[name]
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name].stringers[name]
+            mdb.models[name].rootAssembly.instances[name].stringers[name]
+            mdb.models[name].rootAssembly.stringers[name]
     """
 
     #: A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
@@ -33,13 +32,12 @@ class Stringer:
         """This method creates a stringer from a sequence of objects in a model database. At least
         one of the optional arguments needs to be specified.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].Stringer
+                mdb.models[name].parts[*name*].Stringer
 
         Parameters
         ----------
@@ -65,13 +63,12 @@ class Stringer:
         """This method modifies underlying entities of the selected stringer. At least one of the
         optional arguments needs to be specified.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].Stringer
+                mdb.models[name].parts[*name*].Stringer
 
         Parameters
         ----------

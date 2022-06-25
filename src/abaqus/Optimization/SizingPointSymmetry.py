@@ -7,14 +7,13 @@ class SizingPointSymmetry(GeometricRestriction):
     """The SizingPointSymmetry object defines a sizing point symmetry geometric restriction.
     The SizingPointSymmetry object is derived from the GeometricRestriction object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import optimization
-        mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
+            import optimization
+            mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
 
     #: A String specifying the geometric restriction repository key.
@@ -40,13 +39,12 @@ class SizingPointSymmetry(GeometricRestriction):
     ):
         """This method creates a SizingPointSymmetry object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      mdb.models[name].optimizationTasks[name].SizingPointSymmetry
+                mdb.models[name].optimizationTasks[name].SizingPointSymmetry
 
         Parameters
         ----------

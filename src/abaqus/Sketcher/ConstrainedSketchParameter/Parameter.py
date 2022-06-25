@@ -8,13 +8,12 @@ class Parameter(ConstrainedSketchParameter):
         """This method creates a parameter and optionally associates a dimension with this
         parameter.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].Parameter
+                mdb.models[name].sketches[name].Parameter
 
         ----------
 

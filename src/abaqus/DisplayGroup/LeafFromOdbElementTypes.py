@@ -9,13 +9,12 @@ class LeafFromOdbElementTypes(Leaf):
     commands.
     The LeafFromOdbElementTypes object is derived from the Leaf object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import displayGroupOdbToolset
+            import displayGroupOdbToolset
     """
 
     #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
@@ -26,13 +25,12 @@ class LeafFromOdbElementTypes(Leaf):
         """This method creates a Leaf object from a sequence of Strings specifying element names.
         Leaf objects specify the items in a display group.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            LeafFromOdbElementTypes
+                LeafFromOdbElementTypes
 
         Parameters
         ----------

@@ -9,13 +9,12 @@ class LeafFromGeometry(Leaf):
     commands.
     The LeafFromGeometry object is derived from the Leaf object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import displayGroupMdbToolset
+            import displayGroupMdbToolset
     """
 
     #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
@@ -28,13 +27,12 @@ class LeafFromGeometry(Leaf):
         arguments must specify at least one object--it is not permissible to create an empty
         leaf.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            LeafFromGeometry
+                LeafFromGeometry
 
         Parameters
         ----------

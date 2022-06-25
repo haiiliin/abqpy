@@ -6,75 +6,74 @@ class GasketThicknessBehavior:
     """The GasketThicknessBehavior object defines the behavior in the thickness direction for a
     gasket.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].gasketThicknessBehavior
-        import odbMaterial
-        session.odbs[name].materials[name].gasketThicknessBehavior
+            import material
+            mdb.models[name].materials[name].gasketThicknessBehavior
+            import odbMaterial
+            session.odbs[name].materials[name].gasketThicknessBehavior
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **variableUnits** = STRESS, the loading table data specify the following:
-    
-        - Pressure; this value must be positive.
-        - Closure; this value must be positive.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **variableUnits** = FORCE, the loading table data specify the following:
-    
-        - Force or force per unit length; this value must be positive.
-        - Closure; this value must be positive.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **variableUnits** = STRESS and **type** = ELASTIC_PLASTIC, the **unloadingTable** data specify the following:
-    
-        - Pressure; this value must be positive.
-        - Closure; this value must be positive.
-        - Plastic closure; this value must be positive.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **variableUnits** = FORCE and **type** = ELASTIC_PLASTIC, the **unloadingTable** data specify the following:
-    
-        - Pressure; this value must be positive.
-        - Closure; this value must be positive.
-        - Plastic closure; this value must be positive.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **variableUnits** = STRESS and **type** = DAMAGE, the **unloadingTable** data specify the following:
-    
-        - Pressure; this value must be positive.
-        - Closure; this value must be positive.
-        - Maximum closure reached while loading the gasket; this value must be positive.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **variableUnits** = FORCE and **type** = DAMAGE, the **unloadingTable** data specify the following:
-    
-        - Force or force per unit length; this value must be positive.
-        - Closure; this value must be positive.
-        - Maximum closure reached while loading the gasket; this value must be positive.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+        - If **variableUnits** = STRESS, the loading table data specify the following:
+        
+            - Pressure; this value must be positive.
+            - Closure; this value must be positive.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **variableUnits** = FORCE, the loading table data specify the following:
+        
+            - Force or force per unit length; this value must be positive.
+            - Closure; this value must be positive.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **variableUnits** = STRESS and **type** = ELASTIC_PLASTIC, the **unloadingTable** data specify the following:
+        
+            - Pressure; this value must be positive.
+            - Closure; this value must be positive.
+            - Plastic closure; this value must be positive.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **variableUnits** = FORCE and **type** = ELASTIC_PLASTIC, the **unloadingTable** data specify the following:
+        
+            - Pressure; this value must be positive.
+            - Closure; this value must be positive.
+            - Plastic closure; this value must be positive.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **variableUnits** = STRESS and **type** = DAMAGE, the **unloadingTable** data specify the following:
+        
+            - Pressure; this value must be positive.
+            - Closure; this value must be positive.
+            - Maximum closure reached while loading the gasket; this value must be positive.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **variableUnits** = FORCE and **type** = DAMAGE, the **unloadingTable** data specify the following:
+        
+            - Force or force per unit length; this value must be positive.
+            - Closure; this value must be positive.
+            - Maximum closure reached while loading the gasket; this value must be positive.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - GASKET THICKNESS BEHAVIOR
+        - GASKET THICKNESS BEHAVIOR
     """
 
     #: A :py:class:`~abaqus.Material.Gasket.ContactArea.ContactArea` object.
@@ -96,14 +95,13 @@ class GasketThicknessBehavior:
     ):
         """This method creates a GasketThicknessBehavior object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].GasketThicknessBehavior
-            session.odbs[name].materials[name].GasketThicknessBehavior
+                mdb.models[name].materials[name].GasketThicknessBehavior
+                session.odbs[name].materials[name].GasketThicknessBehavior
 
         Parameters
         ----------

@@ -3,20 +3,19 @@ class MeshFace:
     MeshFace object can be accessed via a MeshFaceArray or a repository on a part or part
     instance.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].elementFaces[i]
-        mdb.models[name].parts[name].elemFaces[i]
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name].elementFaces[i]
-        mdb.models[name].rootAssembly.allInstances[name].elemFaces[i]
-        mdb.models[name].rootAssembly.instances[name].elementFaces[i]
-        mdb.models[name].rootAssembly.instances[name].elemFaces[i]
+            import part
+            mdb.models[name].parts[name].elementFaces[i]
+            mdb.models[name].parts[name].elemFaces[i]
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name].elementFaces[i]
+            mdb.models[name].rootAssembly.allInstances[name].elemFaces[i]
+            mdb.models[name].rootAssembly.instances[name].elementFaces[i]
+            mdb.models[name].rootAssembly.instances[name].elemFaces[i]
     """
 
     #: An Int specifying an Int specifying the element label.

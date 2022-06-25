@@ -9,13 +9,12 @@ class LeafFromModelNodeLabels(Leaf):
     commands.
     The LeafFromModelNodeLabels object is derived from the Leaf object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import displayGroupOdbToolset
+            import displayGroupOdbToolset
     """
 
     #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
@@ -35,13 +34,12 @@ class LeafFromModelNodeLabels(Leaf):
         """This method creates a Leaf object from a sequence of node labels spanning several part
         instances.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            LeafFromModelNodeLabels
+                LeafFromModelNodeLabels
 
         Parameters
         ----------

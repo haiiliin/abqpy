@@ -7,20 +7,19 @@ class SolutionDependentAmplitude(Amplitude):
     superplastic forming analysis.
     The SolutionDependentAmplitude object is derived from the Amplitude object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import amplitude
-        mdb.models[name].amplitudes[name]
-        import odbAmplitude
-        session.odbs[name].amplitudes[name]
+            import amplitude
+            mdb.models[name].amplitudes[name]
+            import odbAmplitude
+            session.odbs[name].amplitudes[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - AMPLITUDE
+        - AMPLITUDE
     """
 
     #: A String specifying the repository key.
@@ -52,14 +51,13 @@ class SolutionDependentAmplitude(Amplitude):
     ):
         """This method creates a SolutionDependentAmplitude object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SolutionDependentAmplitude
-            session.odbs[name].SolutionDependentAmplitude
+                mdb.models[name].SolutionDependentAmplitude
+                session.odbs[name].SolutionDependentAmplitude
 
         Parameters
         ----------

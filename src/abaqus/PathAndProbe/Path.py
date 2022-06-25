@@ -7,14 +7,13 @@ class Path:
     """The Path object defines a line through your model by specifying a series of nodes or
     points.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.paths[name]
+            import visualization
+            session.paths[name]
     """
 
     #: If **type** = NODE_LIST, **coordinates** is a sequence of tuples of three Floats. This can be
@@ -105,13 +104,12 @@ class Path:
     ):
         """This method creates a Path object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.Path
+                session.Path
 
         Parameters
         ----------

@@ -10,14 +10,13 @@ class FieldOutputRequestState:
     FieldOutputRequest object.
     The FieldOutputRequestState object has no constructor or methods.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name].fieldOutputRequestState[name]
+            import step
+            mdb.models[name].steps[name].fieldOutputRequestState[name]
     """
 
     #: A SymbolicConstant specifying the propagation state of the field output request

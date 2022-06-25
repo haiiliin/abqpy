@@ -5,14 +5,13 @@ class ErrorIndicatorResult(RuleResult):
     """The ErrorIndicatorResult object contains result information corresponding to an error
     indicator variable in a RemeshingRule object for an adaptivity iteration.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import job
-        mdb.adaptivityProcesses[name].iterations[i].ruleResults[name].indicatorResults[name]
+            import job
+            mdb.adaptivityProcesses[name].iterations[i].ruleResults[name].indicatorResults[name]
     """
 
     #: A String specifying the name of the error indicator variable to which these results
@@ -27,13 +26,12 @@ class ErrorIndicatorResult(RuleResult):
         """This method creates an ErrorIndicatorResult with data for an error indicator variable in
         a RemeshingRule for a given adaptivity iteration.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.adaptivityProcesses[name].iterations[i].ruleResults[name].ErrorIndicatorResult
+                mdb.adaptivityProcesses[name].iterations[i].ruleResults[name].ErrorIndicatorResult
 
         Parameters
         ----------

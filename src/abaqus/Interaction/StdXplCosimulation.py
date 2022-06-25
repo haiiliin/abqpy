@@ -8,14 +8,13 @@ class StdXplCosimulation(Interaction):
     Abaqus/Explicit.
     The StdXplCosimulation object is derived from the Interaction object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactions[name]
+            import interaction
+            mdb.models[name].interactions[name]
     """
 
     #: A String specifying the repository key.
@@ -55,13 +54,12 @@ class StdXplCosimulation(Interaction):
     ):
         """This method creates a StdXplCosimulation object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].StdXplCosimulation
+                mdb.models[name].StdXplCosimulation
 
         Parameters
         ----------

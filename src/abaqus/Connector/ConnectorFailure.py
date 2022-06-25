@@ -7,20 +7,19 @@ class ConnectorFailure(ConnectorBehaviorOption):
     connector's relative motion.
     The ConnectorFailure object is derived from the ConnectorBehaviorOption object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].sections[name].behaviorOptions[i]
-        import odbSection
-        session.odbs[name].sections[name].behaviorOptions[i]
+            import section
+            mdb.models[name].sections[name].behaviorOptions[i]
+            import odbSection
+            session.odbs[name].sections[name].behaviorOptions[i]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONNECTOR FAILURE
+        - CONNECTOR FAILURE
     """
 
     #: The SymbolicConstant ALL or an Int specifying the motion components that fail. If an Int
@@ -62,16 +61,15 @@ class ConnectorFailure(ConnectorBehaviorOption):
     ):
         """This method creates a connector failure behavior option for a ConnectorSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      import connectorBehavior
-                      connectorBehavior.ConnectorFailure
-                      import odbConnectorBehavior
-                      odbConnectorBehavior.ConnectorFailure
+                import connectorBehavior
+                          connectorBehavior.ConnectorFailure
+                          import odbConnectorBehavior
+                          odbConnectorBehavior.ConnectorFailure
 
         Parameters
         ----------

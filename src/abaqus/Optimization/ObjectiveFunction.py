@@ -5,14 +5,13 @@ from .OptimizationObjectiveArray import OptimizationObjectiveArray
 class ObjectiveFunction:
     """The ObjectiveFunction object defines the objective of the optimization.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import optimization
-        mdb.models[name].optimizationTasks[name].objectiveFunctions[name]
+            import optimization
+            mdb.models[name].optimizationTasks[name].objectiveFunctions[name]
     """
 
     #: Optimization objectives
@@ -36,13 +35,12 @@ class ObjectiveFunction:
     ):
         """This method creates an ObjectiveFunction object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      mdb.models[name].optimizationTasks[name].ObjectiveFunction
+                mdb.models[name].optimizationTasks[name].ObjectiveFunction
 
         Parameters
         ----------

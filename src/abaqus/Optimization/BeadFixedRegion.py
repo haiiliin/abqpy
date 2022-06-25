@@ -7,14 +7,13 @@ class BeadFixedRegion(GeometricRestriction):
     """The BeadFixedRegion object defines a fixed region geometric restriction.
     The BeadFixedRegion object is derived from the GeometricRestriction object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import optimization
-        mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
+            import optimization
+            mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
 
     #: A String specifying the geometric restriction repository key.
@@ -51,13 +50,12 @@ class BeadFixedRegion(GeometricRestriction):
     ):
         """This method creates a BeadFixedRegion object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      mdb.models[name].optimizationTasks[name].BeadFixedRegion
+                mdb.models[name].optimizationTasks[name].BeadFixedRegion
 
         Parameters
         ----------

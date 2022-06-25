@@ -19,13 +19,12 @@ def journalMethodCall(objectPath: str, methodName: str, args: tuple, kargs: str)
     default. A command that changes the mdb customData is one example of a command that
     should call journalMethodCall.
 
-    Notes
-    -----
-        This function can be accessed by:
+    .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            journalMethodCall
+                journalMethodCall
 
     Parameters
     ----------

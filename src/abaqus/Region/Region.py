@@ -47,13 +47,12 @@ class Region:
     The flags indicate the region space, the type of region and the whether the region is an
     internal set.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import regionToolset
+            import regionToolset
     """
 
     @typing.overload
@@ -85,13 +84,12 @@ class Region:
         edges:
         region = regionToolset.Region(faces=f[3:4], xEdges=e[1:3])
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            Region
+                Region
 
         Parameters
         ----------
@@ -164,13 +162,12 @@ class Region:
         The arguments are the same as the arguments to the Surface method, except for the **name**
         argument.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            Region
+                Region
 
         Parameters
         ----------

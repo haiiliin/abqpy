@@ -2,13 +2,12 @@ class MeshStats:
     """The MeshStats object is a query object for holding mesh statistics and is returned by
     the getMeshStats command. The object does not have any methods.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import mesh
+            import mesh
     """
 
     #: An Int specifying the number of point elements.

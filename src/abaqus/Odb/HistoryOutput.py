@@ -7,14 +7,13 @@ class HistoryOutput:
     """The HistoryOutput object contains the history output at a point for the specified
     variable.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name].steps[name].historyRegions[name].historyOutputs[name]
+            import odbAccess
+            session.odbs[name].steps[name].historyRegions[name].historyOutputs[name]
     """
 
     #: A tuple of pairs of Floats specifying the pairs (*frameValue*, **value**) where
@@ -50,13 +49,12 @@ class HistoryOutput:
     ):
         """This method creates a HistoryOutput object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].steps[name].historyRegions[name].HistoryOutput
+                session.odbs[name].steps[name].historyRegions[name].HistoryOutput
 
         Parameters
         ----------

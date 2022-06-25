@@ -2,13 +2,12 @@ class Image:
     """The Image object is used to store color values and attributes associated with a raster
     file. Upon creation, the Image object is added to the session.images repository.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        session.images[name]
+            session.images[name]
     """
 
     #: A String specifying the repository name for the image.
@@ -22,13 +21,12 @@ class Image:
     def __init__(self, name: str, fileName: str):
         """This method creates an Image object from the contents of the specified file.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.Image
+                session.Image
 
         Parameters
         ----------

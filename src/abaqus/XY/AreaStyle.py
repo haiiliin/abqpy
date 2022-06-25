@@ -7,29 +7,28 @@ class AreaStyle:
     AreaStyle objects are automatically created whenever an Area object is created.
     AreaStyle objects can be created using the methods described below.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.charts[name].area.style
-        session.charts[name].gridArea.style
-        session.charts[name].legend.area.style
-        session.charts[name].tagAreaStyle
-        session.defaultChartOptions.areaStyle
-        session.defaultChartOptions.gridArea.style
-        session.defaultChartOptions.legend.area.style
-        session.defaultChartOptions.tagAreaStyle
-        session.defaultPlot.area.style
-        session.defaultPlot.title.area.style
-        session.xyPlots[name].area.style
-        session.xyPlots[name].charts[name].area.style
-        session.xyPlots[name].charts[name].gridArea.style
-        session.xyPlots[name].charts[name].legend.area.style
-        session.xyPlots[name].charts[name].tagAreaStyle
-        session.xyPlots[name].title.area.style
+            import visualization
+            session.charts[name].area.style
+            session.charts[name].gridArea.style
+            session.charts[name].legend.area.style
+            session.charts[name].tagAreaStyle
+            session.defaultChartOptions.areaStyle
+            session.defaultChartOptions.gridArea.style
+            session.defaultChartOptions.legend.area.style
+            session.defaultChartOptions.tagAreaStyle
+            session.defaultPlot.area.style
+            session.defaultPlot.title.area.style
+            session.xyPlots[name].area.style
+            session.xyPlots[name].charts[name].area.style
+            session.xyPlots[name].charts[name].gridArea.style
+            session.xyPlots[name].charts[name].legend.area.style
+            session.xyPlots[name].charts[name].tagAreaStyle
+            session.xyPlots[name].title.area.style
     """
 
     #: A String specifying the color to be used when filling an area with this AreaStyle
@@ -49,14 +48,13 @@ class AreaStyle:
     ):
         """This method creates an AreaStyle.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.AreaStyle
-            xyPlot.AreaStyle
+                session.AreaStyle
+                xyPlot.AreaStyle
 
         Parameters
         ----------

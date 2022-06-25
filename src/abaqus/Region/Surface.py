@@ -13,23 +13,22 @@ class Surface:
     geometric or discrete entities but not both. An instance of a Surface object is
     available from the **surface** member of the Assembly object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].allInternalSurfaces[name]
-        mdb.models[name].parts[name].allSurfaces[name]
-        mdb.models[name].parts[name].surfaces[name]
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name].surfaces[name]
-        mdb.models[name].rootAssembly.allInternalSurfaces[name]
-        mdb.models[name].rootAssembly.allSurfaces[name]
-        mdb.models[name].rootAssembly.instances[name].surfaces[name]
-        mdb.models[name].rootAssembly.modelInstances[i].surfaces[name]
-        mdb.models[name].rootAssembly.surfaces[name]
+            import part
+            mdb.models[name].parts[name].allInternalSurfaces[name]
+            mdb.models[name].parts[name].allSurfaces[name]
+            mdb.models[name].parts[name].surfaces[name]
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name].surfaces[name]
+            mdb.models[name].rootAssembly.allInternalSurfaces[name]
+            mdb.models[name].rootAssembly.allSurfaces[name]
+            mdb.models[name].rootAssembly.instances[name].surfaces[name]
+            mdb.models[name].rootAssembly.modelInstances[i].surfaces[name]
+            mdb.models[name].rootAssembly.surfaces[name]
     """
 
     #: An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
@@ -82,14 +81,13 @@ class Surface:
         surface=mdb.models['Model-1'].parts['Part-1'].Surface(side1Faces=side1Faces,
         name='Surf-1')
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].Surface
-            mdb.models[name].rootAssembly.Surface
+                mdb.models[name].parts[name].Surface
+                mdb.models[name].rootAssembly.Surface
 
         Parameters
         ----------
@@ -218,14 +216,13 @@ class Surface:
     def __init__(self, name: str, objectToCopy: "Surface"):
         """This method copies a surface from an existing surface.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].Surface
-            mdb.models[name].rootAssembly.Surface
+                mdb.models[name].parts[name].Surface
+                mdb.models[name].rootAssembly.Surface
 
         Parameters
         ----------
@@ -250,14 +247,13 @@ class Surface:
         """This method creates a surface by performing a boolean operation on two or more input
         surfaces.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].Surface
-            mdb.models[name].rootAssembly.Surface
+                mdb.models[name].parts[name].Surface
+                mdb.models[name].rootAssembly.Surface
 
         Parameters
         ----------
@@ -281,14 +277,13 @@ class Surface:
     def SurfaceFromElsets(self, name: str, elementSetSeq: tuple):
         """This method creates a surface from a sequence of element sets in a model database.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].Surface
-            mdb.models[name].rootAssembly.Surface
+                mdb.models[name].parts[name].Surface
+                mdb.models[name].rootAssembly.Surface
 
         Parameters
         ----------

@@ -4,22 +4,21 @@ from abaqusConstants import *
 class SectionLayer:
     """The SectionLayer object defines the material layer in a composite shell.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].parts[name].compositeLayups[i].section.layup[i]
-        mdb.models[name].sections[name].layup[i]
-        import odbSection
-        session.odbs[name].sections[name].layup[i]
+            import section
+            mdb.models[name].parts[name].compositeLayups[i].section.layup[i]
+            mdb.models[name].sections[name].layup[i]
+            import odbSection
+            session.odbs[name].sections[name].layup[i]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - SHELL SECTION
-            - SHELL GENERAL SECTION
+        - SHELL SECTION
+                - SHELL GENERAL SECTION
     """
 
     #: A Float specifying the thickness of the section layer.
@@ -91,14 +90,13 @@ class SectionLayer:
     ):
         """This method creates a SectionLayer object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            section.SectionLayer
-            odbSection.SectionLayer
+                section.SectionLayer
+                odbSection.SectionLayer
 
         Parameters
         ----------

@@ -2,14 +2,13 @@ class SectorDefinition:
     """The SectorDefinition object describes the number of symmetry sectors and axis of
     symmetry for a cyclic symmetry model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name].sectorDefinition
+            import odbAccess
+            session.odbs[name].sectorDefinition
     """
 
     #: An Int specifying the number of sectors in the cyclic symmetry model.

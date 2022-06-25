@@ -7,20 +7,19 @@ class CompositeSolidSection(Section):
     """The CompositeSolidSection object defines the properties of a composite solid section.
     The CompositeSolidSection object is derived from the Section object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].sections[name]
-        import odbSection
-        session.odbs[name].sections[name]
+            import section
+            mdb.models[name].sections[name]
+            import odbSection
+            session.odbs[name].sections[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - SOLID SECTION
+        - SOLID SECTION
     """
 
     #: A String specifying the repository key.
@@ -46,14 +45,13 @@ class CompositeSolidSection(Section):
     ):
         """This method creates a CompositeSolidSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].CompositeSolidSection
-            session.odbs[name].CompositeSolidSection
+                mdb.models[name].CompositeSolidSection
+                session.odbs[name].CompositeSolidSection
 
         Parameters
         ----------

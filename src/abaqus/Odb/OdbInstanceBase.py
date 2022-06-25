@@ -17,15 +17,14 @@ from ..Section.Section import Section
 class OdbInstanceBase:
     """A part instance is the usage of a part within an assembly.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name].rootAssembly.instances[name]
-        session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance
+            import odbAccess
+            session.odbs[name].rootAssembly.instances[name]
+            session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance
     """
 
     #: A String specifying the instance name.
@@ -82,13 +81,12 @@ class OdbInstanceBase:
     def __init__(self, name: str, object: OdbPart, localCoordSystem: tuple = ()):
         """This method creates an OdbInstance object from an OdbPart object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[*name*].rootAssembly.Instance
+                session.odbs[*name*].rootAssembly.Instance
 
         Parameters
         ----------

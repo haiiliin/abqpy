@@ -9,28 +9,27 @@ from ....TestData.VolumetricTestData import VolumetricTestData
 class Hyperfoam:
     r"""The Hyperfoam object specifies elastic properties for a hyperelastic foam.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].hyperfoam
-        import odbMaterial
-        session.odbs[name].materials[name].hyperfoam
+            import material
+            mdb.models[name].materials[name].hyperfoam
+            import odbMaterial
+            session.odbs[name].materials[name].hyperfoam
 
-    The table data for this object are:
-    The items in the table data specify the following for values of nn:
+        The table data for this object are:
+        The items in the table data specify the following for values of nn:
 
-    - :math:`\mu_i` and :math:`\alpha_i` for :math:`i` from 1 to :math:`n`.
-    - :math:\nu_i`.
-    - Temperature, if the data depend on temperature. Temperature dependence is not allowed for :math:`4\le n\le 6` in an
-      Abaqus/Explicit analysis.
+        - :math:`\mu_i` and :math:`\alpha_i` for :math:`i` from 1 to :math:`n`.
+        - :math:\nu_i`.
+        - Temperature, if the data depend on temperature. Temperature dependence is not allowed for :math:`4\le n\le 6` in an
+          Abaqus/Explicit analysis.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - HYPERFOAM
+        - HYPERFOAM
     """
 
     #: A :py:class:`~abaqus.Material.TestData.BiaxialTestData.BiaxialTestData` object.
@@ -59,14 +58,13 @@ class Hyperfoam:
     ):
         """This method creates a Hyperfoam object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].Hyperfoam
-            session.odbs[name].materials[name].Hyperfoam
+                mdb.models[name].materials[name].Hyperfoam
+                session.odbs[name].materials[name].Hyperfoam
 
         Parameters
         ----------

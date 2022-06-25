@@ -8,18 +8,17 @@ class FluidExchangeProperty(ContactProperty):
     its environment.
     The FluidExchangeProperty object is derived from the InteractionProperty object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactionProperties[name]
+            import interaction
+            mdb.models[name].interactionProperties[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - FLUID EXCHANGE PROPERTY
+        - FLUID EXCHANGE PROPERTY
     """
 
     #: A String specifying the interaction property repository key.
@@ -105,13 +104,12 @@ class FluidExchangeProperty(ContactProperty):
     ):
         """This method creates a FluidExchangeProperty object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].FluidExchangeProperty
+                mdb.models[name].FluidExchangeProperty
 
         Parameters
         ----------

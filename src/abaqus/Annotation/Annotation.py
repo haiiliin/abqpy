@@ -3,16 +3,15 @@ class Annotation:
     Annotation object has no explicit constructor. The methods and members of the Annotation
     object are common to all objects derived from Annotation.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import annotationToolset
-        mdb.annotations[name]
-        session.odbs[name].userData.annotations[name]
-        session.viewports[name].annotationsToPlot[i]
+            import annotationToolset
+            mdb.annotations[name]
+            session.odbs[name].userData.annotations[name]
+            session.viewports[name].annotationsToPlot[i]
     """
 
     #: A String specifying the annotation repository key.

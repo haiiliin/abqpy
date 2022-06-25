@@ -1,14 +1,13 @@
 class MpcConstraint:
     """The MpcConstraint object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.odbData[name].multiPointConstraints[i]
+            import visualization
+            session.odbData[name].multiPointConstraints[i]
     """
 
     #: A String specifying the multipoint constraint name. This attribute is read-only.

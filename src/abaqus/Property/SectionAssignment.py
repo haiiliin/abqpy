@@ -6,21 +6,20 @@ class SectionAssignment:
     """The SectionAssignment object is used to specify a section assignment on an assembly or
     part. Section assignments on the assembly are limited to connector elements only.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].parts[name].sectionAssignments[i]
-        import assembly
-        mdb.models[name].rootAssembly.sectionAssignments[i]
-        import odbAccess
-        session.odbs[name].parts[name].sectionAssignments[i]
-        session.odbs[name].rootAssembly.instances[name].sectionAssignments[i]
-        session.odbs[name].rootAssembly.sectionAssignments[i]
-        session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.sectionAssignments[i]
+            import section
+            mdb.models[name].parts[name].sectionAssignments[i]
+            import assembly
+            mdb.models[name].rootAssembly.sectionAssignments[i]
+            import odbAccess
+            session.odbs[name].parts[name].sectionAssignments[i]
+            session.odbs[name].rootAssembly.instances[name].sectionAssignments[i]
+            session.odbs[name].rootAssembly.sectionAssignments[i]
+            session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.sectionAssignments[i]
     """
 
     #: A Boolean specifying whether the section assignment is suppressed or not. The default
@@ -61,14 +60,13 @@ class SectionAssignment:
     ):
         """This method creates a SectionAssignment object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].SectionAssignment
-            mdb.models[name].rootAssembly.SectionAssignment
+                mdb.models[name].parts[*name*].SectionAssignment
+                mdb.models[name].rootAssembly.SectionAssignment
 
         Parameters
         ----------

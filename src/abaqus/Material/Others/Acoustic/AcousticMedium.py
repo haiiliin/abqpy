@@ -4,20 +4,19 @@ from abaqusConstants import *
 class AcousticMedium:
     """The AcousticMedium object specifies the acoustic properties of a material.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].acousticMedium
-        import odbMaterial
-        session.odbs[name].materials[name].acousticMedium
+            import material
+            mdb.models[name].materials[name].acousticMedium
+            import odbMaterial
+            session.odbs[name].materials[name].acousticMedium
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - ACOUSTIC MEDIUM
+        - ACOUSTIC MEDIUM
     """
 
     def __init__(
@@ -32,14 +31,13 @@ class AcousticMedium:
     ):
         """This method creates an AcousticMedium object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].AcousticMedium
-            session.odbs[name].materials[name].AcousticMedium
+                mdb.models[name].materials[name].AcousticMedium
+                session.odbs[name].materials[name].AcousticMedium
 
         Parameters
         ----------

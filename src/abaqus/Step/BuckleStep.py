@@ -19,19 +19,18 @@ class BuckleStep(AnalysisStep):
     """The BuckleStep object controls eigenvalue buckling estimation.
     The BuckleStep object is derived from the AnalysisStep object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name]
+            import step
+            mdb.models[name].steps[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - BUCKLE
-            - STEP
+        - BUCKLE
+                - STEP
     """
 
     #: A String specifying the repository key.
@@ -192,13 +191,12 @@ class BuckleStep(AnalysisStep):
     ):
         """This method creates a BuckleStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].BuckleStep
+                mdb.models[name].BuckleStep
 
         Parameters
         ----------

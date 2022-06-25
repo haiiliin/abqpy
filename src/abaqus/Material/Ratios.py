@@ -4,31 +4,30 @@ from abaqusConstants import *
 class Ratios:
     """The Ratios object specifies ratios that define anisotropic swelling.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].moistureSwelling.ratios
-        mdb.models[name].materials[name].swelling.ratios
-        import odbMaterial
-        session.odbs[name].materials[name].moistureSwelling.ratios
-        session.odbs[name].materials[name].swelling.ratios
+            import material
+            mdb.models[name].materials[name].moistureSwelling.ratios
+            mdb.models[name].materials[name].swelling.ratios
+            import odbMaterial
+            session.odbs[name].materials[name].moistureSwelling.ratios
+            session.odbs[name].materials[name].swelling.ratios
 
-        The table data for this object are:
-            - r11.
-            - r22.
-            - r33.
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
+            The table data for this object are:
+                - r11.
+                - r22.
+                - r33.
+                - Temperature, if the data depend on temperature.
+                - Value of the first field variable, if the data depend on field variables.
+                - Value of the second field variable.
+                - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - RATIOS
+        - RATIOS
     """
 
     #: A sequence of sequences of Floats specifying the items described below.
@@ -45,16 +44,15 @@ class Ratios:
     ):
         """This method creates a Ratios object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].moistureSwelling.Ratios
-            mdb.models[name].materials[name].swelling.Ratios
-            session.odbs[name].materials[name].moistureSwelling.Ratios
-            session.odbs[name].materials[name].swelling.Ratios
+                mdb.models[name].materials[name].moistureSwelling.Ratios
+                mdb.models[name].materials[name].swelling.Ratios
+                session.odbs[name].materials[name].moistureSwelling.Ratios
+                session.odbs[name].materials[name].swelling.Ratios
 
         Parameters
         ----------

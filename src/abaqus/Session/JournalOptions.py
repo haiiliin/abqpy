@@ -9,13 +9,12 @@ class JournalOptions:
     numeric output. The JournalOptions object has no constructor. Abaqus creates the
     **journalOptions** member when a session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        session.journalOptions
+            session.journalOptions
     """
 
     #: Format of the number
@@ -62,15 +61,14 @@ class JournalOptions:
     ) -> NumberFormat:
         """This method creates a NumberFormat object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.defaultFieldReportOptions.NumberFormat
-            session.fieldReportOptions.NumberFormat
-            session.journalOptions.NumberFormat
+                session.defaultFieldReportOptions.NumberFormat
+                session.fieldReportOptions.NumberFormat
+                session.journalOptions.NumberFormat
 
         Parameters
         ----------

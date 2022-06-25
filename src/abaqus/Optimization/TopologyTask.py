@@ -13,14 +13,13 @@ class TopologyTask(OptimizationTask):
     """The TopologyTask object defines a topology task.
     The TopologyTask object is derived from the OptimizationTask object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import optimization
-        mdb.models[name].optimizationTasks[name]
+            import optimization
+            mdb.models[name].optimizationTasks[name]
     """
 
     #: A repository of DesignResponse objects.
@@ -229,13 +228,12 @@ class TopologyTask(OptimizationTask):
     ):
         """This method creates a TopologyTask object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      mdb.models[name].TopologyTask
+                mdb.models[name].TopologyTask
 
         Parameters
         ----------

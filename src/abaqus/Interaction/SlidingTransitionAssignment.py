@@ -6,18 +6,17 @@ class SlidingTransitionAssignment:
     definition for surfaces in ContactStd objects. The SlidingTransitionAssignment object
     has no constructor or members.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactions[name].slidingTransitionAssignments
+            import interaction
+            mdb.models[name].interactions[name].slidingTransitionAssignments
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONTACT FORMULATION
+        - CONTACT FORMULATION
     """
 
     def changeValuesInStep(self, stepName: str, index: int, value: SymbolicConstant):

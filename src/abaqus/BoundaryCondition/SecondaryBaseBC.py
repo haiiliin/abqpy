@@ -8,14 +8,13 @@ class SecondaryBaseBC(BoundaryCondition):
     """The SecondaryBaseBC object stores the data for a secondary base boundary condition.
     The SecondaryBaseBC object is derived from the BoundaryCondition object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].boundaryConditions[name]
+            import load
+            mdb.models[name].boundaryConditions[name]
     """
 
     #: A String specifying the boundary condition repository key.
@@ -45,13 +44,12 @@ class SecondaryBaseBC(BoundaryCondition):
     ):
         """This method creates a SecondaryBaseBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SecondaryBaseBC
+                mdb.models[name].SecondaryBaseBC
 
         Parameters
         ----------

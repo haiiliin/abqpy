@@ -3,40 +3,38 @@ class DetonationPoint:
     object defines either isotropic linear elastic shear or linear viscous shear behavior
     for a hydrodynamic material.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].eos.detonationPoint
-        import odbMaterial
-        session.odbs[name].materials[name].eos.detonationPoint
+            import material
+            mdb.models[name].materials[name].eos.detonationPoint
+            import odbMaterial
+            session.odbs[name].materials[name].eos.detonationPoint
 
-    The table data for this object are:
-    
-    - X value for coordinate of detonation point.
-    - Y value for coordinate of detonation point.
-    - Z value for coordinate of detonation point.
-    - Detonation delay time.
+        The table data for this object are:
+        
+        - X value for coordinate of detonation point.
+        - Y value for coordinate of detonation point.
+        - Z value for coordinate of detonation point.
+        - Detonation delay time.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - DETONATION POINT
+        - DETONATION POINT
     """
 
     def __init__(self, table: tuple):
         """This method creates a DetonationPoint object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].eos.DetonationPoint
-            session.odbs[name].materials[name].eos.DetonationPoint
+                mdb.models[name].materials[name].eos.DetonationPoint
+                session.odbs[name].materials[name].eos.DetonationPoint
 
         Parameters
         ----------

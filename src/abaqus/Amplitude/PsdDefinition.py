@@ -7,20 +7,19 @@ class PsdDefinition(Amplitude):
     random response loading.
     The PsdDefinition object is derived from the Amplitude object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import amplitude
-        mdb.models[name].amplitudes[name]
-        import odbAmplitude
-        session.odbs[name].amplitudes[name]
+            import amplitude
+            mdb.models[name].amplitudes[name]
+            import odbAmplitude
+            session.odbs[name].amplitudes[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - PSD-DEFINITION
+        - PSD-DEFINITION
     """
 
     #: A String specifying the repository key.
@@ -71,14 +70,13 @@ class PsdDefinition(Amplitude):
     ):
         """This method creates a PsdDefinition object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].PsdDefinition
-            session.odbs[name].PsdDefinition
+                mdb.models[name].PsdDefinition
+                session.odbs[name].PsdDefinition
 
         Parameters
         ----------

@@ -4,52 +4,51 @@ from abaqusConstants import *
 class Expansion:
     r"""The Expansion object specifies thermal expansion.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].expansion
-        import odbMaterial
-        session.odbs[name].materials[name].expansion
+            import material
+            mdb.models[name].materials[name].expansion
+            import odbMaterial
+            session.odbs[name].materials[name].expansion
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **type** = ISOTROPIC, the table data specify the following:
-    
-        - :math:`\alpha` in Abaqus/Standard or Abaqus/Explicit analysis.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **type** = ORTHOTROPIC, the table data specify the following:
-    
-        - :math:`\alpha_{11}`.
-        - :math:`\alpha_{22}`.
-        - :math:`\alpha_{33}`.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **type** = ANISOTROPIC, the table data specify the following:
-    
-        - :math:`\alpha_{11}`.
-        - :math:`\alpha_{22}`.
-        - :math:`\alpha_{33}`. (Not used for plane stress case.)
-        - :math:`\alpha_{12}`.
-        - :math:`\alpha_{13}`.
-        - :math:`\alpha_{23}`.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **type** = SHORT_FIBER, there is no table data.
+        - If **type** = ISOTROPIC, the table data specify the following:
+        
+            - :math:`\alpha` in Abaqus/Standard or Abaqus/Explicit analysis.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **type** = ORTHOTROPIC, the table data specify the following:
+        
+            - :math:`\alpha_{11}`.
+            - :math:`\alpha_{22}`.
+            - :math:`\alpha_{33}`.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **type** = ANISOTROPIC, the table data specify the following:
+        
+            - :math:`\alpha_{11}`.
+            - :math:`\alpha_{22}`.
+            - :math:`\alpha_{33}`. (Not used for plane stress case.)
+            - :math:`\alpha_{12}`.
+            - :math:`\alpha_{13}`.
+            - :math:`\alpha_{23}`.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **type** = SHORT_FIBER, there is no table data.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - EXPANSION
+        - EXPANSION
     """
 
     def __init__(
@@ -63,14 +62,13 @@ class Expansion:
     ):
         r"""This method creates an Expansion object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].Expansion
-            session.odbs[name].materials[name].Expansion
+                mdb.models[name].materials[name].Expansion
+                session.odbs[name].materials[name].Expansion
 
         Parameters
         ----------

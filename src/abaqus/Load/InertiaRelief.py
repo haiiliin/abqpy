@@ -7,14 +7,13 @@ class InertiaRelief(Load):
     """The InertiaRelief object defines an inertia relief load.
     The InertiaRelief object is derived from the Load object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].loads[name]
+            import load
+            mdb.models[name].loads[name]
     """
 
     #: A String specifying the load repository key.
@@ -44,13 +43,12 @@ class InertiaRelief(Load):
     ):
         """This method creates an InertiaRelief object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].InertiaRelief
+                mdb.models[name].InertiaRelief
 
         Parameters
         ----------

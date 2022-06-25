@@ -69,20 +69,19 @@ class MaterialBase:
     MaterialOptions was rejected because it would make it more difficult to enforce the fact
     that one Material object cannot contain two AcousticMedium objects, for example.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name]
-        import odbMaterial
-        session.odbs[name].materials[name]
+            import material
+            mdb.models[name].materials[name]
+            import odbMaterial
+            session.odbs[name].materials[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - MATERIAL
+        - MATERIAL
     """
 
     #: An :py:class:`~abaqus.Material.Others.Acoustic.AcousticMedium.AcousticMedium` object.
@@ -307,14 +306,13 @@ class MaterialBase:
     def __init__(self, name: str, description: str = "", materialIdentifier: str = ""):
         """This method creates a Material object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Material
-            session.odbs[name].Material
+                mdb.models[name].Material
+                session.odbs[name].Material
 
         Parameters
         ----------
@@ -342,14 +340,13 @@ class MaterialBase:
         """This methods creates Material objects by reading an output database. The new materials
         are placed in the materials repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Material
-            session.odbs[name].Material
+                mdb.models[name].Material
+                session.odbs[name].Material
 
         Parameters
         ----------

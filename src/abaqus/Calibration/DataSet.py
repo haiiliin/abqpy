@@ -1,14 +1,13 @@
 class DataSet:
     """The DataSetobject specifies material test data.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import calibration
-        mdb.models[name].calibrations[name].dataSets[name]
+            import calibration
+            mdb.models[name].calibrations[name].dataSets[name]
     """
 
     #: A String specifying the name of the new dataset.
@@ -30,13 +29,12 @@ class DataSet:
     def __init__(self, name: str, data: tuple = (), type: str = "", form: str = ""):
         """This method creates a DataSet object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      mdb.models[name].calibrations[name].DataSet
+                mdb.models[name].calibrations[name].DataSet
 
         Parameters
         ----------

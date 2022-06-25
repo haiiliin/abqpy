@@ -1,14 +1,13 @@
 class RigidBodyConstraint:
     """The RigidBodyConstraint object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.odbData[name].rigidbodies[i]
+            import visualization
+            session.odbData[name].rigidbodies[i]
     """
 
     #: A String specifying the rigidbody constraint name. This attribute is read-only.

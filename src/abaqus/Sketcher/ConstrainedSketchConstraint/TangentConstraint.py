@@ -11,13 +11,12 @@ class TangentConstraint(ConstrainedSketchConstraint):
         """This method creates a tangent constraint. This constraint applies to different types of
         ConstrainedSketchGeometry objects and constrains them to remain tangential.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].TangentConstraint
+                mdb.models[name].sketches[name].TangentConstraint
 
         Parameters
         ----------

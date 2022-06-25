@@ -1,28 +1,26 @@
 class OdbSequenceAnalyticSurfaceSegment:
     """A sequence of AnalyticSurfaceSegment describing an analytic surface profile.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name].parts[name].analyticSurface.segments
-        session.odbs[name].rootAssembly.instances[name].analyticSurface.segments
-        session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.analyticSurface.segments
+            import odbAccess
+            session.odbs[name].parts[name].analyticSurface.segments
+            session.odbs[name].rootAssembly.instances[name].analyticSurface.segments
+            session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.analyticSurface.segments
     """
 
     def __init__(self):
         """This method creates a OdbSequenceAnalyticSurfaceSegment object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            odbAccess.AnalyticSurfaceProfile
+                odbAccess.AnalyticSurfaceProfile
 
         Returns
         -------

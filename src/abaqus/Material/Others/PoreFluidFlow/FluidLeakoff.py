@@ -5,31 +5,30 @@ class FluidLeakoff:
     """The FluidLeakoff object specifies leak-off coefficients for pore pressure cohesive
     elements.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].fluidLeakoff
-        import odbMaterial
-        session.odbs[name].materials[name].fluidLeakoff
+            import material
+            mdb.models[name].materials[name].fluidLeakoff
+            import odbMaterial
+            session.odbs[name].materials[name].fluidLeakoff
 
-    The table data for this object are:
-    
-    The table data specify the following:
+        The table data for this object are:
+        
+        The table data specify the following:
 
-    - Fluid leak-off coefficient at top element surface.
-    - Fluid leak-off coefficient at bottom element surface.
-    - Temperature, if the data depend on temperature.
-    - Value of the first field variable, if the data depend on field variables.
-    - Value of the second field variable.
-    - Etc.
+        - Fluid leak-off coefficient at top element surface.
+        - Fluid leak-off coefficient at bottom element surface.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - FLUID LEAKOFF
+        - FLUID LEAKOFF
     """
 
     def __init__(
@@ -41,14 +40,13 @@ class FluidLeakoff:
     ):
         """This method creates a FluidLeakoff object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].FluidLeakoff
-            session.odbs[name].materials[name].FluidLeakoff
+                mdb.models[name].materials[name].FluidLeakoff
+                session.odbs[name].materials[name].FluidLeakoff
 
         Parameters
         ----------

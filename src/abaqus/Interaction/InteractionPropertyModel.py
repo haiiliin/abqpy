@@ -20,13 +20,12 @@ class InteractionPropertyModel(ModelBase):
     ) -> AcousticImpedanceProp:
         """This method creates an AcousticImpedanceProp object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].AcousticImpedanceProp
+                mdb.models[name].AcousticImpedanceProp
 
         Parameters
         ----------
@@ -61,13 +60,12 @@ class InteractionPropertyModel(ModelBase):
     ) -> ActuatorSensorProp:
         """This method creates an ActuatorSensorProp object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ActuatorSensorProp
+                mdb.models[name].ActuatorSensorProp
 
         Parameters
         ----------
@@ -99,13 +97,12 @@ class InteractionPropertyModel(ModelBase):
     ) -> CavityRadiationProp:
         """This method creates a CavityRadiationProp object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].CavityRadiationProp
+                mdb.models[name].CavityRadiationProp
 
         Parameters
         ----------
@@ -133,13 +130,12 @@ class InteractionPropertyModel(ModelBase):
     def ContactProperty(self, name: str) -> ContactProperty:
         """This method creates a ContactProperty object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ContactProperty
+                mdb.models[name].ContactProperty
 
         Parameters
         ----------
@@ -163,13 +159,12 @@ class InteractionPropertyModel(ModelBase):
     ) -> FilmConditionProp:
         """This method creates a FilmConditionProp object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].FilmConditionProp
+                mdb.models[name].FilmConditionProp
 
         Parameters
         ----------
@@ -221,13 +216,12 @@ class InteractionPropertyModel(ModelBase):
     ) -> FluidCavityProperty:
         """This method creates a FluidCavityProperty object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].FluidCavityProperty
+                mdb.models[name].FluidCavityProperty
 
         Parameters
         ----------
@@ -365,13 +359,12 @@ class InteractionPropertyModel(ModelBase):
     ) -> FluidExchangeProperty:
         """This method creates a FluidExchangeProperty object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].FluidExchangeProperty
+                mdb.models[name].FluidExchangeProperty
 
         Parameters
         ----------
@@ -496,13 +489,12 @@ class InteractionPropertyModel(ModelBase):
     ) -> IncidentWaveProperty:
         """This method creates an IncidentWaveProperty object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].IncidentWaveProperty
+                mdb.models[name].IncidentWaveProperty
 
         Parameters
         ----------

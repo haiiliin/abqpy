@@ -11,14 +11,13 @@ class OutputStep(StepBase):
     constructor. The methods and members of the Step object are common to all objects
     derived from the Step.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name]
+            import step
+            mdb.models[name].steps[name]
     """
 
     def DiagnosticPrint(
@@ -37,13 +36,12 @@ class OutputStep(StepBase):
     ) -> DiagnosticPrint:
         """This method creates a DiagnosticPrint object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].steps[name].DiagnosticPrint
+                mdb.models[name].steps[name].DiagnosticPrint
 
         Parameters
         ----------
@@ -114,13 +112,12 @@ class OutputStep(StepBase):
         """This method creates a request for a degree of freedom to be monitored in a general or
         modal procedure.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].steps[name].Monitor
+                mdb.models[name].steps[name].Monitor
 
         Parameters
         ----------
@@ -167,13 +164,12 @@ class OutputStep(StepBase):
     ) -> Restart:
         """This method creates a restart request.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].steps[name].Restart
+                mdb.models[name].steps[name].Restart
 
         Parameters
         ----------

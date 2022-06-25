@@ -1,14 +1,13 @@
 class TieConstraint:
     """The TieConstraint object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.odbData[name].ties[i]
+            import visualization
+            session.odbData[name].ties[i]
     """
 
     #: A String specifying the tie constraint name. This attribute is read-only.

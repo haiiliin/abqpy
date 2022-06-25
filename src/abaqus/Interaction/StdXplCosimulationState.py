@@ -10,20 +10,19 @@ class StdXplCosimulationState(InteractionState):
     The StdXplCosimulationState object has no constructor or methods.
     The StdXplCosimulationState object is derived from the InteractionState object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].steps[name].interactionStates[name]
+            import interaction
+            mdb.models[name].steps[name].interactionStates[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CO-SIMULATION
-            - CO-SIMULATION REGION
-            - CO-SIMULATION CONTROLS
+        - CO-SIMULATION
+                - CO-SIMULATION REGION
+                - CO-SIMULATION CONTROLS
     """
 
     #: A SymbolicConstant specifying the propagation state of the InteractionState object.

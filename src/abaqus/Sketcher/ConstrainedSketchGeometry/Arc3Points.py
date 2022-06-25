@@ -8,13 +8,12 @@ class Arc3Points(ConstrainedSketchGeometry):
         """This method constructs an arc using a two endpoints and an intermediate third point on
         the arc.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].Arc3Points
+                mdb.models[name].sketches[name].Arc3Points
 
         Parameters
         ----------

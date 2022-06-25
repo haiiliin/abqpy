@@ -17,22 +17,21 @@ class DisplayBodyOptions(DGDisplayBodyOptions):
     - The display body options associated with a particular viewport.
     The DisplayBodyOptions object is derived from the DGDisplayBodyOptions object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.defaultOdbDisplay.displayBodyOptions
-        session.viewports[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.displayBodyOptions
-        session.viewports[name].layers[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.displayBodyOptions
-        session.viewports[name].layers[name].odbDisplay.displayBodyOptions
-        session.viewports[name].layers[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.displayBodyOptions
-        session.viewports[name].layers[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.displayBodyOptions
-        session.viewports[name].odbDisplay.displayBodyOptions
-        session.viewports[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.displayBodyOptions
-        session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.displayBodyOptions
+            import visualization
+            session.defaultOdbDisplay.displayBodyOptions
+            session.viewports[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.displayBodyOptions
+            session.viewports[name].layers[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.displayBodyOptions
+            session.viewports[name].layers[name].odbDisplay.displayBodyOptions
+            session.viewports[name].layers[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.displayBodyOptions
+            session.viewports[name].layers[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.displayBodyOptions
+            session.viewports[name].odbDisplay.displayBodyOptions
+            session.viewports[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.displayBodyOptions
+            session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.displayBodyOptions
     """
 
     #: A SymbolicConstant specifying which edges to plot. Possible values are ALL, EXTERIOR,

@@ -6,14 +6,13 @@ class ExpressionField(AnalyticalField):
     from a user-supplied mathematical expression.
     The ExpressionField object is derived from the AnalyticalField object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import fields
-        mdb.models[name].analyticalFields[name]
+            import fields
+            mdb.models[name].analyticalFields[name]
     """
 
     #: A String specifying the repository key.
@@ -36,13 +35,12 @@ class ExpressionField(AnalyticalField):
     ):
         """This method creates an ExpressionField object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ExpressionField
+                mdb.models[name].ExpressionField
 
         Parameters
         ----------

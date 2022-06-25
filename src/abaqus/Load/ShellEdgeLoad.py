@@ -9,14 +9,13 @@ class ShellEdgeLoad(Load):
     """The ShellEdgeLoad object defines shell edge loads on a region.
     The ShellEdgeLoad object is derived from the Load object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].loads[name]
+            import load
+            mdb.models[name].loads[name]
     """
 
     #: A String specifying the load repository key.
@@ -54,13 +53,12 @@ class ShellEdgeLoad(Load):
     ):
         """This method creates a ShellEdgeLoad object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ShellEdgeLoad
+                mdb.models[name].ShellEdgeLoad
 
         Parameters
         ----------

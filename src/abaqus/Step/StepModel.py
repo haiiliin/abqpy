@@ -72,13 +72,12 @@ from ..StepMiscellaneous.SubstructureGenerateModesArray import (
 class StepModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name]
+            mdb.models[name]
     """
 
     def AnnealStep(
@@ -91,13 +90,12 @@ class StepModel(ModelBase):
     ) -> AnnealStep:
         """This method creates an AnnealStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].AnnealStep
+                mdb.models[name].AnnealStep
 
         Parameters
         ----------
@@ -143,13 +141,12 @@ class StepModel(ModelBase):
     ) -> BuckleStep:
         """This method creates a BuckleStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].BuckleStep
+                mdb.models[name].BuckleStep
 
         Parameters
         ----------
@@ -228,13 +225,12 @@ class StepModel(ModelBase):
     ) -> ComplexFrequencyStep:
         """This method creates a ComplexFrequencyStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ComplexFrequencyStep
+                mdb.models[name].ComplexFrequencyStep
 
         Parameters
         ----------
@@ -323,13 +319,12 @@ class StepModel(ModelBase):
     ) -> CoupledTempDisplacementStep:
         """This method creates a CoupledTempDisplacementStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].CoupledTempDisplacementStep
+                mdb.models[name].CoupledTempDisplacementStep
 
         Parameters
         ----------
@@ -470,13 +465,12 @@ class StepModel(ModelBase):
     ) -> CoupledThermalElectricalStructuralStep:
         """This method creates a CoupledThermalElectricalStructuralStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].CoupledThermalElectricalStructuralStep
+                mdb.models[name].CoupledThermalElectricalStructuralStep
 
         Parameters
         ----------
@@ -609,13 +603,12 @@ class StepModel(ModelBase):
     ) -> CoupledThermalElectricStep:
         """This method creates a CoupledThermalElectricStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].CoupledThermalElectricStep
+                mdb.models[name].CoupledThermalElectricStep
 
         Parameters
         ----------
@@ -734,13 +727,12 @@ class StepModel(ModelBase):
     ) -> DirectCyclicStep:
         """This method creates a DirectCyclicStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].DirectCyclicStep
+                mdb.models[name].DirectCyclicStep
 
         Parameters
         ----------
@@ -868,13 +860,12 @@ class StepModel(ModelBase):
     ) -> EmagTimeHarmonicStep:
         """This method creates a EmagTimeHarmonicStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].EmagTimeHarmonicStep
+                mdb.models[name].EmagTimeHarmonicStep
 
         Parameters
         ----------
@@ -921,13 +912,12 @@ class StepModel(ModelBase):
     ) -> ExplicitDynamicsStep:
         """This method creates an ExplicitDynamicsStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ExplicitDynamicsStep
+                mdb.models[name].ExplicitDynamicsStep
 
         Parameters
         ----------
@@ -1029,13 +1019,12 @@ class StepModel(ModelBase):
     ) -> FrequencyStep:
         """This method creates a FrequencyStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].FrequencyStep
+                mdb.models[name].FrequencyStep
 
         Parameters
         ----------
@@ -1196,13 +1185,12 @@ class StepModel(ModelBase):
     ) -> GeostaticStep:
         """This method creates a GeostaticStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].GeostaticStep
+                mdb.models[name].GeostaticStep
 
         Parameters
         ----------
@@ -1308,13 +1296,12 @@ class StepModel(ModelBase):
     ) -> HeatTransferStep:
         """This method creates a HeatTransferStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].HeatTransferStep
+                mdb.models[name].HeatTransferStep
 
         Parameters
         ----------
@@ -1443,13 +1430,12 @@ class StepModel(ModelBase):
     ) -> ImplicitDynamicsStep:
         """This method creates an ImplicitDynamicsStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ImplicitDynamicsStep
+                mdb.models[name].ImplicitDynamicsStep
 
         Parameters
         ----------
@@ -1592,13 +1578,12 @@ class StepModel(ModelBase):
     ) -> MassDiffusionStep:
         """This method creates a MassDiffusionStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].MassDiffusionStep
+                mdb.models[name].MassDiffusionStep
 
         Parameters
         ----------
@@ -1692,13 +1677,12 @@ class StepModel(ModelBase):
     ) -> ModalDynamicsStep:
         """This method creates a ModalDynamicsStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ModalDynamicsStep
+                mdb.models[name].ModalDynamicsStep
 
         Parameters
         ----------
@@ -1773,13 +1757,12 @@ class StepModel(ModelBase):
     ) -> RandomResponseStep:
         """This method creates a RandomResponseStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].RandomResponseStep
+                mdb.models[name].RandomResponseStep
 
         Parameters
         ----------
@@ -1852,13 +1835,12 @@ class StepModel(ModelBase):
     ) -> ResponseSpectrumStep:
         """This method creates a ResponseSpectrumStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ResponseSpectrumStep
+                mdb.models[name].ResponseSpectrumStep
 
         Parameters
         ----------
@@ -1946,13 +1928,12 @@ class StepModel(ModelBase):
     ) -> SoilsStep:
         """This method creates a SoilsStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SoilsStep
+                mdb.models[name].SoilsStep
 
         Parameters
         ----------
@@ -2087,13 +2068,12 @@ class StepModel(ModelBase):
     ) -> StaticLinearPerturbationStep:
         """This method creates a StaticLinearPerturbationStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].StaticLinearPerturbationStep
+                mdb.models[name].StaticLinearPerturbationStep
 
         Parameters
         ----------
@@ -2152,13 +2132,12 @@ class StepModel(ModelBase):
     ) -> StaticRiksStep:
         """This method creates a StaticRiksStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].StaticRiksStep
+                mdb.models[name].StaticRiksStep
 
         Parameters
         ----------
@@ -2299,13 +2278,12 @@ class StepModel(ModelBase):
     ) -> StaticStep:
         """This method creates a StaticStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].StaticStep
+                mdb.models[name].StaticStep
 
         Parameters
         ----------
@@ -2442,13 +2420,12 @@ class StepModel(ModelBase):
     ) -> SteadyStateDirectStep:
         """This method creates a SteadyStateDirectStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SteadyStateDirectStep
+                mdb.models[name].SteadyStateDirectStep
 
         Parameters
         ----------
@@ -2519,13 +2496,12 @@ class StepModel(ModelBase):
     ) -> SteadyStateModalStep:
         """This method creates a SteadyStateModalStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SteadyStateModalStep
+                mdb.models[name].SteadyStateModalStep
 
         Parameters
         ----------
@@ -2603,13 +2579,12 @@ class StepModel(ModelBase):
     ) -> SteadyStateSubspaceStep:
         """This method creates a SteadyStateSubspaceStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SteadyStateSubspaceStep
+                mdb.models[name].SteadyStateSubspaceStep
 
         Parameters
         ----------
@@ -2689,13 +2664,12 @@ class StepModel(ModelBase):
     ) -> SubspaceDynamicsStep:
         """This method creates a SubspaceDynamicsStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SubspaceDynamicsStep
+                mdb.models[name].SubspaceDynamicsStep
 
         Parameters
         ----------
@@ -2771,13 +2745,12 @@ class StepModel(ModelBase):
     ) -> SubstructureGenerateStep:
         """This method creates a SubstructureGenerateStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SubstructureGenerateStep
+                mdb.models[name].SubstructureGenerateStep
 
         Parameters
         ----------
@@ -2890,13 +2863,12 @@ class StepModel(ModelBase):
     ) -> TempDisplacementDynamicsStep:
         """This method creates a TempDisplacementDynamicsStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].TempDisplacementDynamicsStep
+                mdb.models[name].TempDisplacementDynamicsStep
 
         Parameters
         ----------
@@ -2988,13 +2960,12 @@ class StepModel(ModelBase):
     ) -> ViscoStep:
         """This method creates a ViscoStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ViscoStep
+                mdb.models[name].ViscoStep
 
         Parameters
         ----------

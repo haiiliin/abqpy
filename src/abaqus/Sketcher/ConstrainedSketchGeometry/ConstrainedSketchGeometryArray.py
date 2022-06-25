@@ -4,14 +4,13 @@ from abaqusConstants import *
 class ConstrainedSketchGeometryArray:
     """The ConstrainedSketchGeometryArray is a sequence of ConstrainedSketchGeometry objects.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import sketch
-        mdb.models[name].sketches[name].geometry[i]
+            import sketch
+            mdb.models[name].sketches[name].geometry[i]
     """
 
     def findAt(self, coordinates: tuple, printWarning: Boolean = True):

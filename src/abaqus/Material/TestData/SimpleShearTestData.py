@@ -1,39 +1,37 @@
 class SimpleShearTestData:
     r"""The SimpleShearTestData object provides simple shear test data.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].hyperfoam.simpleShearTestData
-        import odbMaterial
-        session.odbs[name].materials[name].hyperfoam.simpleShearTestData
+            import material
+            mdb.models[name].materials[name].hyperfoam.simpleShearTestData
+            import odbMaterial
+            session.odbs[name].materials[name].hyperfoam.simpleShearTestData
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Nominal shear stress, :math:`T_{S}`.
-    - Nominal shear strain, :math:`\gamma`
-    - Nominal transverse stress, :math:`T_{T}` (normal to edge with shear stress). This stress value is optional.
+        - Nominal shear stress, :math:`T_{S}`.
+        - Nominal shear strain, :math:`\gamma`
+        - Nominal transverse stress, :math:`T_{T}` (normal to edge with shear stress). This stress value is optional.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - SIMPLE SHEAR TEST DATA
+        - SIMPLE SHEAR TEST DATA
     """
 
     def __init__(self, table: tuple):
         """This method creates a SimpleShearTestData object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].hyperfoam.SimpleShearTestData
-            session.odbs[name].materials[name].hyperfoam.SimpleShearTestData
+                mdb.models[name].materials[name].hyperfoam.SimpleShearTestData
+                session.odbs[name].materials[name].hyperfoam.SimpleShearTestData
 
         Parameters
         ----------

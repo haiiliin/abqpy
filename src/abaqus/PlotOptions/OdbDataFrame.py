@@ -4,14 +4,13 @@ from abaqusConstants import *
 class OdbDataFrame:
     """The OdbDataFrame object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.odbData[name].steps[i].frames[i]
+            import visualization
+            session.odbData[name].steps[i].frames[i]
     """
 
     def setValues(self, activateFrame: Boolean, update: Boolean = OFF):

@@ -22,13 +22,12 @@ class ViewportBase:
     object stores the various settings that determine how objects are displayed within that
     viewport.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        session.viewports[name]
+            session.viewports[name]
     """
 
     #: A SymbolicConstant specifying the display mode of the viewport. Possible values
@@ -256,13 +255,12 @@ class ViewportBase:
     ):
         """This method creates a Viewport object with the specified origin and dimensions.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.Viewport
+                session.Viewport
 
         Parameters
         ----------

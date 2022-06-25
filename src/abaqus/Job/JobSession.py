@@ -20,13 +20,12 @@ class JobSession(SessionBase):
         """This method creates a Queue object.
         Note:Remote queues are available only on Linux platforms.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.Queue
+                session.Queue
 
         Parameters
         ----------

@@ -8,21 +8,20 @@ class XFEMCrack(Crack):
     growth using XFEM technology. Currently only assembly regions are supported.
     The XFEMCrack object is derived from the Crack object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].engineeringFeatures.cracks[name]
-        import assembly
-        mdb.models[name].rootAssembly.engineeringFeatures.cracks[name]
+            import part
+            mdb.models[name].parts[name].engineeringFeatures.cracks[name]
+            import assembly
+            mdb.models[name].rootAssembly.engineeringFeatures.cracks[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - ENRICHMENT
-            - INITIAL CONDITIONS
+        - ENRICHMENT
+                - INITIAL CONDITIONS
     """
 
     #: A Boolean specifying whether the crack is suppressed or not. The default value is OFF.
@@ -97,14 +96,13 @@ class XFEMCrack(Crack):
         parts and for the assembly, XFEMCrack objects are currently supported only under the
         assembly.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].engineeringFeatures.XFEMCrack
-            mdb.models[name].rootAssembly.engineeringFeatures.XFEMCrack
+                mdb.models[name].parts[name].engineeringFeatures.XFEMCrack
+                mdb.models[name].rootAssembly.engineeringFeatures.XFEMCrack
 
         Parameters
         ----------

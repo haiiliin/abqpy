@@ -8,14 +8,13 @@ class AdaptiveMeshConstraintState:
     of the AdaptiveMeshConstraintState object are common to all objects derived from the
     AdaptiveMeshConstraintState object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name].adaptiveMeshConstraintStates[name]
+            import step
+            mdb.models[name].steps[name].adaptiveMeshConstraintStates[name]
     """
 
     #: A SymbolicConstant specifying the propagation state of the amplitude reference. Possible
@@ -55,13 +54,12 @@ class AdaptiveMeshConstraintState:
         of the AdaptiveMeshConstraintState object are common to all objects derived from the
         AdaptiveMeshConstraintState object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].steps[name].AdaptiveMeshConstraintState
+                mdb.models[name].steps[name].AdaptiveMeshConstraintState
 
         Parameters
         ----------

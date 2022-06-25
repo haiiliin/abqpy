@@ -5,43 +5,42 @@ class TangentialBehavior:
     """The TangentialBehavior object specifies tangential behavior for a connector friction
     behavior option.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].sections[name].behaviorOptions[i].tangentialBehavior
-        import odbSection
-        session.odbs[name].sections[name].behaviorOptions[i].tangentialBehavior
+            import section
+            mdb.models[name].sections[name].behaviorOptions[i].tangentialBehavior
+            import odbSection
+            session.odbs[name].sections[name].behaviorOptions[i].tangentialBehavior
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **formulation** = PENALTY, the table data specify the following:
-    
-        - Friction coefficient in the slip direction, μμ.
-        - Slip rate, if the data depend on slip rate.
-        - Contact pressure, if the data depend on contact pressure.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **formulation** = EXPONENTIAL_DECAY and **exponentialDecayDefinition** = COEFFICIENTS, the table data specify the following:
-    
-        - Static friction coefficient, μsμs.
-        - Kinetic friction coefficient, μkμk.
-        - Decay coefficient, dcdc.
-    - If **formulation** = EXPONENTIAL_DECAY and **exponentialDecayDefinition** = TEST_DATA, the table data specify the following:
-    
-        - Static coefficient of friction.
-        - Dynamic friction coefficient measured at the reference slip rate, ˙γ2γ˙2.
-        - Reference slip rate, ˙γ2γ˙2, used to measure the dynamic friction coefficient.
-        - Kinetic friction coefficient, μ∞μ∞. This value corresponds to the asymptotic value of the friction coefficient at infinite slip rate, ˙γ∞γ˙∞.
+        - If **formulation** = PENALTY, the table data specify the following:
+        
+            - Friction coefficient in the slip direction, μμ.
+            - Slip rate, if the data depend on slip rate.
+            - Contact pressure, if the data depend on contact pressure.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **formulation** = EXPONENTIAL_DECAY and **exponentialDecayDefinition** = COEFFICIENTS, the table data specify the following:
+        
+            - Static friction coefficient, μsμs.
+            - Kinetic friction coefficient, μkμk.
+            - Decay coefficient, dcdc.
+        - If **formulation** = EXPONENTIAL_DECAY and **exponentialDecayDefinition** = TEST_DATA, the table data specify the following:
+        
+            - Static coefficient of friction.
+            - Dynamic friction coefficient measured at the reference slip rate, ˙γ2γ˙2.
+            - Reference slip rate, ˙γ2γ˙2, used to measure the dynamic friction coefficient.
+            - Kinetic friction coefficient, μ∞μ∞. This value corresponds to the asymptotic value of the friction coefficient at infinite slip rate, ˙γ∞γ˙∞.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - FRICTION
+        - FRICTION
     """
 
     #: A SymbolicConstant specifying the friction coefficient formulation. Possible values are
@@ -103,14 +102,13 @@ class TangentialBehavior:
     ):
         """This method creates a TangentialBehavior object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sections[name].behaviorOptions[i].TangentialBehavior
-            session.odbs[name].sections[name].behaviorOptions[i].TangentialBehavior
+                mdb.models[name].sections[name].behaviorOptions[i].TangentialBehavior
+                session.odbs[name].sections[name].behaviorOptions[i].TangentialBehavior
 
         Parameters
         ----------

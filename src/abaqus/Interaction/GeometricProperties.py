@@ -4,18 +4,17 @@ from abaqusConstants import *
 class GeometricProperties:
     """The GeometricProperties object specifies surface interaction properties.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactionProperties[name].geometricProperties
+            import interaction
+            mdb.models[name].interactionProperties[name].geometricProperties
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - SURFACE INTERACTION
+        - SURFACE INTERACTION
     """
 
     #: A Float specifying the out-of-plane thickness of the surface for a two-dimensional model
@@ -63,13 +62,12 @@ class GeometricProperties:
     ):
         """This method creates a GeometricProperties object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].interactionProperties[name].GeometricProperties
+                mdb.models[name].interactionProperties[name].GeometricProperties
 
         Parameters
         ----------

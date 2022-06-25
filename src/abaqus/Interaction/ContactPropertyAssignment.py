@@ -6,18 +6,17 @@ class ContactPropertyAssignment:
     for domain pairs in ContactExp and ContactStd objects. The ContactPropertyAssignment
     object has no constructor or members.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactions[name].contactPropertyAssignments
+            import interaction
+            mdb.models[name].interactions[name].contactPropertyAssignments
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONTACT PROPERTY ASSIGNMENT
+        - CONTACT PROPERTY ASSIGNMENT
     """
 
     def changeValuesInStep(self, stepName: str, index: int, value: str):

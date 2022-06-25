@@ -12,18 +12,17 @@ class DisplacementAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
     The DisplacementAdaptiveMeshConstraintState object is derived from the
     AdaptiveMeshConstraintState object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name].adaptiveMeshConstraintStates[name]
+            import step
+            mdb.models[name].steps[name].adaptiveMeshConstraintStates[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - ADAPTIVE MESH CONSTRAINT
+        - ADAPTIVE MESH CONSTRAINT
     """
 
     #: A Float or a Complex specifying the displacement component in the 1-direction.
@@ -109,13 +108,12 @@ class DisplacementAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
     ):
         """
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].steps[name].DisplacementAdaptiveMeshConstraintState
+                mdb.models[name].steps[name].DisplacementAdaptiveMeshConstraintState
 
         Parameters
         ----------

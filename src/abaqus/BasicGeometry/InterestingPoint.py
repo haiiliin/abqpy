@@ -10,28 +10,26 @@ class InterestingPoint:
     An :py:class:`~abaqus.BasicGeometry.InterestingPoint.InterestingPoint` object is a temporary object and cannot be accessed from the Mdb
     object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        import assembly
+            import part
+            import assembly
     """
 
     def __init__(self, edge: Edge, rule: SymbolicConstant):
         """This method creates an interesting point along an edge. An InterestingPoint is a
         temporary object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].InterestingPoint
-            mdb.models[name].rootAssembly.instances[*name*].InterestingPoint
+                mdb.models[name].parts[*name*].InterestingPoint
+                mdb.models[name].rootAssembly.instances[*name*].InterestingPoint
 
         Parameters
         ----------

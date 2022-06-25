@@ -7,18 +7,17 @@ class AdjustPoints(Constraint):
     """The AdjustPoints constraint object is used to adjust points (nodes) to a surface.
     The AdjustPoints object is derived from the ConstrainedSketchConstraint object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].constraints[name]
+            import interaction
+            mdb.models[name].constraints[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - ADJUST
+        - ADJUST
     """
 
     #: A Boolean specifying whether the constraint is suppressed or not. The default value is
@@ -37,13 +36,12 @@ class AdjustPoints(Constraint):
     def __init__(self, name: str, surface: Region, controlPoints: Region):
         """This method creates an AdjustPoints object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].AdjustPoints
+                mdb.models[name].AdjustPoints
 
         Parameters
         ----------

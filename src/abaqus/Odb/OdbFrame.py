@@ -8,14 +8,13 @@ from .OdbLoadCase import OdbLoadCase
 class OdbFrame:
     """The domain of the OdbFrame object is taken from the parent step.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name].steps[name].frames[i]
+            import odbAccess
+            session.odbs[name].steps[name].frames[i]
     """
 
     #: An Int specifying the cyclic mode number associated with the data stored on this frame.
@@ -61,13 +60,12 @@ class OdbFrame:
     def __init__(self, incrementNumber: int, frameValue: float, description: str = ""):
         """This method creates an OdbFrame object and appends it to the frame sequence.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].steps[name].Frame
+                session.odbs[name].steps[name].Frame
 
         Parameters
         ----------
@@ -95,13 +93,12 @@ class OdbFrame:
         the frame sequence. The arguments to the constructor are valid only when
         **domain** = FREQUENCY or **domain** = MODAL.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].steps[name].Frame
+                session.odbs[name].steps[name].Frame
 
         Parameters
         ----------
@@ -127,13 +124,12 @@ class OdbFrame:
         """This constructor creates an OdbFrame object for a specific load case and appends it to
         the frame sequence.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].steps[name].Frame
+                session.odbs[name].steps[name].Frame
 
         Parameters
         ----------
@@ -167,13 +163,12 @@ class OdbFrame:
     ):
         """This method creates a FieldOutput object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].steps[name].Frame
+                session.odbs[name].steps[name].Frame
 
         Parameters
         ----------
@@ -216,13 +211,12 @@ class OdbFrame:
         """This method creates a FieldOutput object from an existing FieldOutput object of the same
         output database.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].steps[name].Frame
+                session.odbs[name].steps[name].Frame
 
         Parameters
         ----------

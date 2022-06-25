@@ -8,14 +8,13 @@ from .HistoryPoint import HistoryPoint
 class HistoryRegion:
     """The HistoryRegion object contains history data for a single location in the model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name].steps[name].historyRegions[name]
+            import odbAccess
+            session.odbs[name].steps[name].historyRegions[name]
     """
 
     #: A SymbolicConstant specifying the position of the history output. Possible values are
@@ -43,13 +42,12 @@ class HistoryRegion:
     ):
         """This method creates a HistoryRegion object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].steps[name].HistoryRegion
+                session.odbs[name].steps[name].HistoryRegion
 
         Parameters
         ----------
@@ -134,13 +132,12 @@ class HistoryRegion:
     ):
         """This method creates a HistoryOutput object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].steps[name].HistoryRegion
+                session.odbs[name].steps[name].HistoryRegion
 
         Parameters
         ----------

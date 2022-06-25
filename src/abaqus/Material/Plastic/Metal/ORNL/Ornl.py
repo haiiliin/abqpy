@@ -5,37 +5,35 @@ class Ornl:
     """The Ornl object specifies the constitutive model developed by Oak Ridge National
     Laboratory.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].creep.ornl
-        mdb.models[name].materials[name].Plastic.ornl
-        import odbMaterial
-        session.odbs[name].materials[name].creep.ornl
-        session.odbs[name].materials[name].Plastic.ornl
+            import material
+            mdb.models[name].materials[name].creep.ornl
+            mdb.models[name].materials[name].Plastic.ornl
+            import odbMaterial
+            session.odbs[name].materials[name].creep.ornl
+            session.odbs[name].materials[name].Plastic.ornl
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - ORNL
+        - ORNL
     """
 
     def __init__(self, a: float = 0, h: float = None, reset: Boolean = OFF):
         """This method creates an Ornl object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].creep.Ornl
-            mdb.models[name].materials[name].Plastic.Ornl
-            session.odbs[name].materials[name].creep.Ornl
-            session.odbs[name].materials[name].Plastic.Ornl
+                mdb.models[name].materials[name].creep.Ornl
+                mdb.models[name].materials[name].Plastic.Ornl
+                session.odbs[name].materials[name].creep.Ornl
+                session.odbs[name].materials[name].Plastic.Ornl
 
         Parameters
         ----------

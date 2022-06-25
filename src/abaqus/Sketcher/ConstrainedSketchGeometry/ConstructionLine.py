@@ -5,13 +5,12 @@ class ConstructionLine(ConstrainedSketchGeometry):
     def __init__(self, point1: tuple[float], point2: tuple[float]):
         """This method creates an oblique construction line that runs between two given points.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].ConstructionLine
+                mdb.models[name].sketches[name].ConstructionLine
 
         Parameters
         ----------

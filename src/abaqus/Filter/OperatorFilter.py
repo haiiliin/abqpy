@@ -6,20 +6,19 @@ class OperatorFilter(Filter):
     """The OperatorFilter object defines an operator filter.
     The OperatorFilter object is derived from the Filter object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import filter
-        mdb.models[name].filters[name]
-        import odbFilter
-        session.odbs[name].filters[name]
+            import filter
+            mdb.models[name].filters[name]
+            import odbFilter
+            session.odbs[name].filters[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - FILTER
+        - FILTER
     """
 
     #: A String specifying the repository key. This name ANTIALIASING is reserved for filters
@@ -64,14 +63,13 @@ class OperatorFilter(Filter):
     ):
         """This method creates an OperatorFilter object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].OperatorFilter
-            session.odbs[name].OperatorFilter
+                mdb.models[name].OperatorFilter
+                session.odbs[name].OperatorFilter
 
         Parameters
         ----------

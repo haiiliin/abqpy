@@ -9,14 +9,13 @@ class FieldLocation:
     automatically as an element of the **location** member of a FieldOutput object by the
     addData method of a FieldOutput object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name].steps[name].frames[i].fieldOutputs[name].locations[i]
+            import odbAccess
+            session.odbs[name].steps[name].frames[i].fieldOutputs[name].locations[i]
     """
 
     #: A SymbolicConstant specifying the position of the output in the element. Possible values

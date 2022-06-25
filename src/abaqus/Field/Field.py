@@ -3,13 +3,12 @@ class Field:
     no explicit constructor. The methods and members of the Field object are common to all
     objects derived from the Field.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import fields
+            import fields
     """
 
     #: A String specifying the repository key.

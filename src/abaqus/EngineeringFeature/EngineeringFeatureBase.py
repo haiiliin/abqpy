@@ -9,16 +9,15 @@ class EngineeringFeatureBase:
     """The EngineeringFeature object is a container for various specific engineering feature
     repositories. The EngineeringFeature object has no explicit constructor or methods.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].engineeringFeatures
-        import assembly
-        mdb.models[name].rootAssembly.engineeringFeatures
+            import part
+            mdb.models[name].parts[name].engineeringFeatures
+            import assembly
+            mdb.models[name].rootAssembly.engineeringFeatures
     """
 
     #: A repository of Inertia objects.

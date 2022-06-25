@@ -8,14 +8,13 @@ class TypeBC(BoundaryCondition):
     that are commonly used in stress/displacement analyses.
     The TypeBC object is derived from the BoundaryCondition object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].boundaryConditions[name]
+            import load
+            mdb.models[name].boundaryConditions[name]
     """
 
     #: A String specifying the boundary condition repository key.
@@ -47,18 +46,20 @@ class TypeBC(BoundaryCondition):
         localCsys: str = None,
     ) -> None:
         """This method creates an TypeBC object.
-        Notes
-        -----
-        This function can be accessed by:
-        .. code-block:: python
-            mdb.models[name].EncastreBC
-            mdb.models[name].PinnedBC
-            mdb.models[name].XsymmBC
-            mdb.models[name].YsymmBC
-            mdb.models[name].ZsymmBC
-            mdb.models[name].XasymmBC
-            mdb.models[name].YasymmBC
-            mdb.models[name].ZasymmBC
+        .. note:: 
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                mdb.models[name].EncastreBC
+                mdb.models[name].PinnedBC
+                mdb.models[name].XsymmBC
+                mdb.models[name].YsymmBC
+                mdb.models[name].ZsymmBC
+                mdb.models[name].XasymmBC
+                mdb.models[name].YasymmBC
+                mdb.models[name].ZasymmBC
+
         Parameters
         ----------
         name
@@ -82,8 +83,8 @@ class TypeBC(BoundaryCondition):
         self.region = region
         self.localCsys = localCsys
 
+    @staticmethod
     def EncastreBC(
-        self,
         name: str,
         createStepName: str,
         region: Region,
@@ -91,11 +92,13 @@ class TypeBC(BoundaryCondition):
         localCsys: str = None,
     ) -> "TypeBC":
         """This method creates an encastre TypeBC object.
-        Notes
-        -----
-        This function can be accessed by:
-        .. code-block:: python
-            mdb.models[name].EncastreBC
+        .. note:: 
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                mdb.models[name].EncastreBC
+
         Parameters
         ----------
         name
@@ -112,7 +115,7 @@ class TypeBC(BoundaryCondition):
             None or a DatumCsys object specifying the local coordinate system of the boundary
             condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
-        
+
         Returns
         -------
         TypeBC
@@ -120,8 +123,8 @@ class TypeBC(BoundaryCondition):
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
+    @staticmethod
     def PinnedBC(
-        self,
         name: str,
         createStepName: str,
         region: Region,
@@ -129,11 +132,13 @@ class TypeBC(BoundaryCondition):
         localCsys: str = None,
     ) -> "TypeBC":
         """This method creates a pinned TypeBC object.
-        Notes
-        -----
-        This function can be accessed by:
-        .. code-block:: python
-            mdb.models[name].PinnedBC
+        .. note:: 
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                mdb.models[name].PinnedBC
+
         Parameters
         ----------
         name
@@ -150,7 +155,7 @@ class TypeBC(BoundaryCondition):
             None or a DatumCsys object specifying the local coordinate system of the boundary
             condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
-        
+
         Returns
         -------
         TypeBC
@@ -158,8 +163,8 @@ class TypeBC(BoundaryCondition):
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
+    @staticmethod
     def XsymmBC(
-        self,
         name: str,
         createStepName: str,
         region: Region,
@@ -167,11 +172,13 @@ class TypeBC(BoundaryCondition):
         localCsys: str = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies symmetry about the **X**-axis.
-        Notes
-        -----
-        This function can be accessed by:
-        .. code-block:: python
-            mdb.models[name].XsymmBC
+        .. note:: 
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                mdb.models[name].XsymmBC
+
         Parameters
         ----------
         name
@@ -188,7 +195,7 @@ class TypeBC(BoundaryCondition):
             None or a DatumCsys object specifying the local coordinate system of the boundary
             condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
-        
+
         Returns
         -------
         TypeBC
@@ -196,8 +203,8 @@ class TypeBC(BoundaryCondition):
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
+    @staticmethod
     def YsymmBC(
-        self,
         name: str,
         createStepName: str,
         region: Region,
@@ -205,11 +212,13 @@ class TypeBC(BoundaryCondition):
         localCsys: str = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies symmetry about the **Y**-axis.
-        Notes
-        -----
-        This function can be accessed by:
-        .. code-block:: python
-            mdb.models[name].YsymmBC
+        .. note:: 
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                mdb.models[name].YsymmBC
+
         Parameters
         ----------
         name
@@ -226,7 +235,7 @@ class TypeBC(BoundaryCondition):
             None or a DatumCsys object specifying the local coordinate system of the boundary
             condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
-        
+
         Returns
         -------
         TypeBC
@@ -234,8 +243,8 @@ class TypeBC(BoundaryCondition):
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
+    @staticmethod
     def ZsymmBC(
-        self,
         name: str,
         createStepName: str,
         region: Region,
@@ -243,11 +252,13 @@ class TypeBC(BoundaryCondition):
         localCsys: str = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies symmetry about the **Z**-axis.
-        Notes
-        -----
-        This function can be accessed by:
-        .. code-block:: python
-            mdb.models[name].ZsymmBC
+        .. note:: 
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                mdb.models[name].ZsymmBC
+
         Parameters
         ----------
         name
@@ -264,7 +275,7 @@ class TypeBC(BoundaryCondition):
             None or a DatumCsys object specifying the local coordinate system of the boundary
             condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
-        
+
         Returns
         -------
         TypeBC
@@ -272,8 +283,8 @@ class TypeBC(BoundaryCondition):
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
+    @staticmethod
     def XasymmBC(
-        self,
         name: str,
         createStepName: str,
         region: Region,
@@ -281,11 +292,13 @@ class TypeBC(BoundaryCondition):
         localCsys: str = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies antisymmetry about the **X**-axis.
-        Notes
-        -----
-        This function can be accessed by:
-        .. code-block:: python
-            mdb.models[name].XasymmBC
+        .. note:: 
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                mdb.models[name].XasymmBC
+
         Parameters
         ----------
         name
@@ -302,7 +315,7 @@ class TypeBC(BoundaryCondition):
             None or a DatumCsys object specifying the local coordinate system of the boundary
             condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
-        
+
         Returns
         -------
         TypeBC
@@ -310,8 +323,8 @@ class TypeBC(BoundaryCondition):
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
+    @staticmethod
     def YasymmBC(
-        self,
         name: str,
         createStepName: str,
         region: Region,
@@ -319,11 +332,13 @@ class TypeBC(BoundaryCondition):
         localCsys: str = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies antisymmetry about the **Y**-axis.
-        Notes
-        -----
-        This function can be accessed by:
-        .. code-block:: python
-            mdb.models[name].YasymmBC
+        .. note:: 
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                mdb.models[name].YasymmBC
+
         Parameters
         ----------
         name
@@ -340,7 +355,7 @@ class TypeBC(BoundaryCondition):
             None or a DatumCsys object specifying the local coordinate system of the boundary
             condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
-        
+
         Returns
         -------
         TypeBC
@@ -348,8 +363,8 @@ class TypeBC(BoundaryCondition):
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
+    @staticmethod
     def ZasymmBC(
-        self,
         name: str,
         createStepName: str,
         region: Region,
@@ -357,11 +372,13 @@ class TypeBC(BoundaryCondition):
         localCsys: str = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies antisymmetry about the **Z**-axis.
-        Notes
-        -----
-        This function can be accessed by:
-        .. code-block:: python
-            mdb.models[name].ZasymmBC
+        .. note:: 
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                mdb.models[name].ZasymmBC
+
         Parameters
         ----------
         name
@@ -378,7 +395,7 @@ class TypeBC(BoundaryCondition):
             None or a DatumCsys object specifying the local coordinate system of the boundary
             condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
-        
+
         Returns
         -------
         TypeBC

@@ -6,14 +6,13 @@ class AnnotationsToPlotArray(list[Annotation]):
     annotations. By adding annotations to and removing annotations from this sequence, you
     can control which annotations are displayed in a particular viewport.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import annotationToolset
-        session.viewports[name].annotationsToPlot
+            import annotationToolset
+            session.viewports[name].annotationsToPlot
     """
 
     def bringForward(self, index: str):

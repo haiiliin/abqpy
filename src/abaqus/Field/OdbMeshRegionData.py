@@ -5,14 +5,13 @@ class OdbMeshRegionData:
     """The OdbMeshRegionData object defines the external source data of MappedField from an ODB
     file.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import field
-        mdb.models[name].analyticalFields[name].odbMeshRegionData
+            import field
+            mdb.models[name].analyticalFields[name].odbMeshRegionData
     """
 
     #: An Int specifying the step index. Possible values are 0 ≤≤ **stepIndex** ≤≤ (*numSteps* −
@@ -162,13 +161,12 @@ class OdbMeshRegionData:
     ):
         """This method creates an OdbMeshRegionData object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].analyticalFields[name].OdbMeshRegionData
+                mdb.models[name].analyticalFields[name].OdbMeshRegionData
 
         Parameters
         ----------

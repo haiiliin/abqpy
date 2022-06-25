@@ -6,20 +6,19 @@ class MeshEdge:
     MeshEdge object can be accessed via a MeshEdgeArray or a repository on a part or part
     instance.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].elemEdges[i]
-        mdb.models[name].parts[name].elementEdges[i]
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name].elemEdges[i]
-        mdb.models[name].rootAssembly.allInstances[name].elementEdges[i]
-        mdb.models[name].rootAssembly.instances[name].elemEdges[i]
-        mdb.models[name].rootAssembly.instances[name].elementEdges[i]
+            import part
+            mdb.models[name].parts[name].elemEdges[i]
+            mdb.models[name].parts[name].elementEdges[i]
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name].elemEdges[i]
+            mdb.models[name].rootAssembly.allInstances[name].elementEdges[i]
+            mdb.models[name].rootAssembly.instances[name].elemEdges[i]
+            mdb.models[name].rootAssembly.instances[name].elementEdges[i]
     """
 
     def getElements(self):

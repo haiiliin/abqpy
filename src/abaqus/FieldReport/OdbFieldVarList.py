@@ -3,15 +3,14 @@ class OdbFieldVarList(list[str]):
     the current step and frame. Each item in the sequence is itself a sequence fully
     describing the given variable.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.viewports[name].layers[name].odbDisplay.fieldVariables
-        session.viewports[name].odbDisplay.fieldVariables
+            import visualization
+            session.viewports[name].layers[name].odbDisplay.fieldVariables
+            session.viewports[name].odbDisplay.fieldVariables
     """
 
     pass

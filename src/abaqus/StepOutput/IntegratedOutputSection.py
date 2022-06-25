@@ -5,14 +5,13 @@ from ..Region.Region import Region
 class IntegratedOutputSection:
     """The IntegratedOutputSection object specifies parameters used for integrated output.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].integratedOutputSections[name]
+            import step
+            mdb.models[name].integratedOutputSections[name]
     """
 
     #: A String specifying the repository key.
@@ -63,13 +62,12 @@ class IntegratedOutputSection:
     ):
         """This method creates an IntegratedOutputSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].IntegratedOutputSection
+                mdb.models[name].IntegratedOutputSection
 
         Parameters
         ----------

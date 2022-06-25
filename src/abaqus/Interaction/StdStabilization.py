@@ -7,18 +7,17 @@ class StdStabilization(ContactStabilization):
     analyses to specify contact stabilization.
     The StdStabilization object is derived from the ContactStabilization object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].contactStabilizations[name]
+            import interaction
+            mdb.models[name].contactStabilizations[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONTACT STABILIZATION
+        - CONTACT STABILIZATION
     """
 
     #: A String specifying the contact stabilization repository key.
@@ -61,13 +60,12 @@ class StdStabilization(ContactStabilization):
     ):
         """This method creates a StdStabilization object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].StdStabilization
+                mdb.models[name].StdStabilization
 
         Parameters
         ----------

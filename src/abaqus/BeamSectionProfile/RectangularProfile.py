@@ -5,20 +5,19 @@ class RectangularProfile(Profile):
     """The RectangularProfile object defines the properties of a solid rectangular profile.
     The RectangularProfile object is derived from the Profile object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].profiles[name]
-        import odbSection
-        session.odbs[name].profiles[name]
+            import section
+            mdb.models[name].profiles[name]
+            import odbSection
+            session.odbs[name].profiles[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - BEAM SECTION
+        - BEAM SECTION
     """
 
     #: A String specifying the repository key.
@@ -35,14 +34,13 @@ class RectangularProfile(Profile):
     def __init__(self, name: str, a: float, b: float):
         """This method creates a RectangularProfile object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].RectangularProfile
-            session.odbs[name].RectangularProfile
+                mdb.models[name].RectangularProfile
+                session.odbs[name].RectangularProfile
 
         Parameters
         ----------

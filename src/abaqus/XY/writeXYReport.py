@@ -9,13 +9,12 @@ from .XYData import XYData
 def writeXYRepor(fileName: str, xyData: tuple[XYData], appendMode: Boolean = ON):
     """This method writes an XYData object to a user-defined ASCII file.
 
-    Notes
-    -----
-        This function can be accessed by:
+    .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.writeXYReport
+                session.writeXYReport
 
     Parameters
     ----------

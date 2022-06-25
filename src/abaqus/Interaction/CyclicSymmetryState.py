@@ -9,21 +9,20 @@ class CyclicSymmetryState(InteractionState):
     The CyclicSymmetryState object has no constructor or methods.
     The CyclicSymmetryState object is derived from the InteractionState object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].steps[name].interactionStates[name]
+            import interaction
+            mdb.models[name].steps[name].interactionStates[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CLOAD
-            - DLOAD
-            - DSLOAD
-            - SELECT CYCLIC SYMMETRY MODES
+        - CLOAD
+                - DLOAD
+                - DSLOAD
+                - SELECT CYCLIC SYMMETRY MODES
     """
 
     #: A SymbolicConstant specifying whether Abaqus should extract all possible nodal diameters

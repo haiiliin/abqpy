@@ -7,14 +7,13 @@ class CoriolisForce(Load):
     """The CoriolisForce object stores the data for a coriolis force.
     The CoriolisForce object is derived from the Load object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].loads[name]
+            import load
+            mdb.models[name].loads[name]
     """
 
     #: A String specifying the load repository key.
@@ -52,13 +51,12 @@ class CoriolisForce(Load):
     ):
         """This method creates a CoriolisForce object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].CoriolisForce
+                mdb.models[name].CoriolisForce
 
         Parameters
         ----------

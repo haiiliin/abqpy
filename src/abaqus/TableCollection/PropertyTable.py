@@ -10,18 +10,17 @@ class PropertyTable:
     After PropertyTableDatais instantiated, making changes to PropertyTable may lead to data
     corruption.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name].tableCollections[name].propertyTables[name]
+            mdb.models[name].tableCollections[name].propertyTables[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - PROPERTY TABLE TYPE
-            - PROPERTY TABLE
+        - PROPERTY TABLE TYPE
+                - PROPERTY TABLE
     """
 
     #: A repository of PropertyTableData. Specifies all the propertyTableData in PropertyTable
@@ -40,13 +39,12 @@ class PropertyTable:
     def __init__(self, name: str, properties: str, variables: str = ""):
         """This method creates a PropertyTable object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].tableCollections[name].PropertyTable
+                mdb.models[name].tableCollections[name].PropertyTable
 
         Parameters
         ----------
@@ -99,13 +97,12 @@ class PropertyTable:
     ) -> PropertyTableData:
         """This method creates a PropertyTableData object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].tableCollections[name].PropertyTable
+                mdb.models[name].tableCollections[name].PropertyTable
 
         Parameters
         ----------

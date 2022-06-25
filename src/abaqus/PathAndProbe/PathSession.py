@@ -25,13 +25,12 @@ class PathSession(SessionBase):
     ) -> Path:
         """This method creates a Path object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.Path
+                session.Path
 
         Parameters
         ----------
@@ -123,13 +122,12 @@ class PathSession(SessionBase):
     def Spectrum(self, name: str, colors: tuple) -> Spectrum:
         """This method creates a Spectrum object and places it in the spectrums repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.Spectrum
+                session.Spectrum
 
         Parameters
         ----------
@@ -156,13 +154,12 @@ class PathSession(SessionBase):
     ) -> Stream:
         """This method creates aStream object and places it in the streams repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.Stream
+                session.Stream
 
         Parameters
         ----------

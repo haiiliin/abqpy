@@ -10,14 +10,13 @@ class BeadTask(OptimizationTask):
     """The BeadTask object defines a bead task.
     The BeadTask object is derived from the OptimizationTask object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import optimization
-        mdb.models[name].optimizationTasks[name]
+            import optimization
+            mdb.models[name].optimizationTasks[name]
     """
 
     #: A repository of DesignResponse objects.
@@ -147,13 +146,12 @@ class BeadTask(OptimizationTask):
     ):
         """This method creates a BeadTask object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      mdb.models[name].BeadTask
+                mdb.models[name].BeadTask
 
         Parameters
         ----------

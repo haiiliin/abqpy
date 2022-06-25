@@ -4,30 +4,29 @@ from abaqusConstants import *
 class TensileFailure:
     """The TensileFailure object specifies the material tensile failure.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].Plastic.tensileFailure
-        mdb.models[name].materials[name].eos.tensileFailure
-        import odbMaterial
-        session.odbs[name].materials[name].Plastic.tensileFailure
-        session.odbs[name].materials[name].eos.tensileFailure
+            import material
+            mdb.models[name].materials[name].Plastic.tensileFailure
+            mdb.models[name].materials[name].eos.tensileFailure
+            import odbMaterial
+            session.odbs[name].materials[name].Plastic.tensileFailure
+            session.odbs[name].materials[name].eos.tensileFailure
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - The Hydrostatic cutoff stress (positive in tension).
-    - Temperature, if the data depend on temperature.
-    - Value of the first field variable if the data depend on field variables.
-    - Value of the second field variable.
-    - Etc.
+        - The Hydrostatic cutoff stress (positive in tension).
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - TENSILE FAILURE
+        - TENSILE FAILURE
     """
 
     def tensileFailure(
@@ -41,16 +40,15 @@ class TensileFailure:
     ):
         """This method creates a tensileFailure object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].Plastic.TensileFailure
-            mdb.models[name].materials[name].eos.TensileFailure
-            session.odbs[name].materials[name].Plastic.TensileFailure
-            session.odbs[name].materials[name].eos.TensileFailure
+                mdb.models[name].materials[name].Plastic.TensileFailure
+                mdb.models[name].materials[name].eos.TensileFailure
+                session.odbs[name].materials[name].Plastic.TensileFailure
+                session.odbs[name].materials[name].eos.TensileFailure
 
         Parameters
         ----------

@@ -4,49 +4,47 @@ from .MeshElement import MeshElement
 class MeshElementArray(list[MeshElement]):
     """The MeshElementArray is a sequence of MeshElement objects.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].allInternalSets[name].elements
-        mdb.models[name].parts[name].allInternalSurfaces[name].elements
-        mdb.models[name].parts[name].allSets[name].elements
-        mdb.models[name].parts[name].allSurfaces[name].elements
-        mdb.models[name].parts[name].elements
-        mdb.models[name].parts[name].sets[name].elements
-        mdb.models[name].parts[name].surfaces[name].elements
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name].elements
-        mdb.models[name].rootAssembly.allInstances[name].sets[name].elements
-        mdb.models[name].rootAssembly.allInstances[name].surfaces[name].elements
-        mdb.models[name].rootAssembly.allInternalSets[name].elements
-        mdb.models[name].rootAssembly.allInternalSurfaces[name].elements
-        mdb.models[name].rootAssembly.allSets[name].elements
-        mdb.models[name].rootAssembly.allSurfaces[name].elements
-        mdb.models[name].rootAssembly.elements
-        mdb.models[name].rootAssembly.instances[name].elements
-        mdb.models[name].rootAssembly.instances[name].sets[name].elements
-        mdb.models[name].rootAssembly.instances[name].surfaces[name].elements
-        mdb.models[name].rootAssembly.modelInstances[i].elements
-        mdb.models[name].rootAssembly.modelInstances[i].sets[name].elements
-        mdb.models[name].rootAssembly.modelInstances[i].surfaces[name].elements
-        mdb.models[name].rootAssembly.sets[name].elements
-        mdb.models[name].rootAssembly.surfaces[name].elements
+            import part
+            mdb.models[name].parts[name].allInternalSets[name].elements
+            mdb.models[name].parts[name].allInternalSurfaces[name].elements
+            mdb.models[name].parts[name].allSets[name].elements
+            mdb.models[name].parts[name].allSurfaces[name].elements
+            mdb.models[name].parts[name].elements
+            mdb.models[name].parts[name].sets[name].elements
+            mdb.models[name].parts[name].surfaces[name].elements
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name].elements
+            mdb.models[name].rootAssembly.allInstances[name].sets[name].elements
+            mdb.models[name].rootAssembly.allInstances[name].surfaces[name].elements
+            mdb.models[name].rootAssembly.allInternalSets[name].elements
+            mdb.models[name].rootAssembly.allInternalSurfaces[name].elements
+            mdb.models[name].rootAssembly.allSets[name].elements
+            mdb.models[name].rootAssembly.allSurfaces[name].elements
+            mdb.models[name].rootAssembly.elements
+            mdb.models[name].rootAssembly.instances[name].elements
+            mdb.models[name].rootAssembly.instances[name].sets[name].elements
+            mdb.models[name].rootAssembly.instances[name].surfaces[name].elements
+            mdb.models[name].rootAssembly.modelInstances[i].elements
+            mdb.models[name].rootAssembly.modelInstances[i].sets[name].elements
+            mdb.models[name].rootAssembly.modelInstances[i].surfaces[name].elements
+            mdb.models[name].rootAssembly.sets[name].elements
+            mdb.models[name].rootAssembly.surfaces[name].elements
     """
 
     def __init__(self, elements: list[MeshElement]):
         """This method creates a MeshElementArray object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mesh.MeshElementArray
+                mesh.MeshElementArray
 
         Parameters
         ----------

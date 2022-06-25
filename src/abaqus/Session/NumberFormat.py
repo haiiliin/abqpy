@@ -6,18 +6,17 @@ class NumberFormat:
     certain numeric output.This page
     discusses:Access[NumberFormat(...)](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-numberformatpyc.htm?ContextScope=all#simaker-numberformatnumberformatpyc)Members
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.defaultFieldReportOptions.numberFormat
-        session.fieldReportOptions.numberFormat
-        session.journalOptions.defaultFormat
-        session.journalOptions.fieldReportFormat
-        session.journalOptions.geometryFormat
+            import visualization
+            session.defaultFieldReportOptions.numberFormat
+            session.fieldReportOptions.numberFormat
+            session.journalOptions.defaultFormat
+            session.journalOptions.fieldReportFormat
+            session.journalOptions.geometryFormat
     """
 
     #: A Boolean specifying whether the printed digits should be padded with blank characters
@@ -47,15 +46,14 @@ class NumberFormat:
     ):
         """This method creates a NumberFormat object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.defaultFieldReportOptions.NumberFormat
-            session.fieldReportOptions.NumberFormat
-            session.journalOptions.NumberFormat
+                session.defaultFieldReportOptions.NumberFormat
+                session.fieldReportOptions.NumberFormat
+                session.journalOptions.NumberFormat
 
         Parameters
         ----------

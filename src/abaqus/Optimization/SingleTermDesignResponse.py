@@ -7,14 +7,13 @@ class SingleTermDesignResponse(DesignResponse):
     """The SingleTermDesignResponse object defines a single-term design response.
     The SingleTermDesignResponse object is derived from the DesignResponse object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import optimization
-        mdb.models[name].optimizationTasks[name].designResponses[name]
+            import optimization
+            mdb.models[name].optimizationTasks[name].designResponses[name]
     """
 
     #: A String specifying the design response repository key.
@@ -65,13 +64,12 @@ class SingleTermDesignResponse(DesignResponse):
     ):
         """This method creates a SingleTermDesignResponse object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      mdb.models[name].optimizationTasks[name].SingleTermDesignResponse
+                mdb.models[name].optimizationTasks[name].SingleTermDesignResponse
 
         Parameters
         ----------

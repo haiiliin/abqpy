@@ -6,14 +6,13 @@ from abaqusConstants import *
 class SolverControl:
     """The SolverControl object is used to provide additional optional solver controls.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name].solverControl
+            import step
+            mdb.models[name].steps[name].solverControl
     """
 
     def setValues(

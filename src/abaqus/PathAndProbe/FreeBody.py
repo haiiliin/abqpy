@@ -5,14 +5,13 @@ class FreeBody:
     """The FreeBody object defines a section across which resultant forces and moments are
     computed.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.freeBodies[name]
+            import visualization
+            session.freeBodies[name]
     """
 
     def FreeBodyFromEdges(
@@ -26,13 +25,12 @@ class FreeBody:
     ):
         """This method creates a FreeBody object and places it in the freeBodies repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.FreeBodyFromEdges
+                session.FreeBodyFromEdges
 
         Parameters
         ----------
@@ -69,13 +67,12 @@ class FreeBody:
     ):
         """This method creates a FreeBody object and places it in the freeBodies repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.FreeBodyFromEdges
+                session.FreeBodyFromEdges
 
         Parameters
         ----------
@@ -113,13 +110,12 @@ class FreeBody:
     ):
         """This method creates a FreeBody object and places it in the freeBodies repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.FreeBodyFromEdges
+                session.FreeBodyFromEdges
 
         Parameters
         ----------

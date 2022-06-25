@@ -10,14 +10,13 @@ class ElasticFoundationState(InteractionState):
     The ElasticFoundationState object has no constructor or methods.
     The ElasticFoundationState object is derived from the InteractionState object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].steps[name].interactionStates[name]
+            import interaction
+            mdb.models[name].steps[name].interactionStates[name]
     """
 
     #: A Float specifying the foundation stiffness per area.

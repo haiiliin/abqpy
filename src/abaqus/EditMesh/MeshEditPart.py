@@ -18,13 +18,12 @@ class MeshEditPart(PartBase):
     """The following commands operate on Part objects. For more information about the Part
     object, see Part object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import meshEdit
+            import meshEdit
     """
 
     def adjustMidsideNode(self, cornerNodes: tuple[Node], parameter: float):

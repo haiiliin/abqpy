@@ -8,18 +8,17 @@ class EmbeddedRegion(Constraint):
     region of the model or within the whole model.
     The EmbeddedRegion object is derived from the ConstrainedSketchConstraint object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].constraints[name]
+            import interaction
+            mdb.models[name].constraints[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - EMBEDDED ELEMENT
+        - EMBEDDED ELEMENT
     """
 
     #: A Boolean specifying whether the constraint is suppressed or not. The default value is
@@ -70,13 +69,12 @@ class EmbeddedRegion(Constraint):
     ):
         """This method creates a EmbeddedRegion object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].EmbeddedRegion
+                mdb.models[name].EmbeddedRegion
 
         Parameters
         ----------

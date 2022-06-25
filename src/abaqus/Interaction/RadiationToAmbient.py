@@ -8,14 +8,13 @@ class RadiationToAmbient(Interaction):
     environment.
     The RadiationToAmbient object is derived from the Interaction object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactions[name]
+            import interaction
+            mdb.models[name].interactions[name]
     """
 
     #: A String specifying the repository key.
@@ -72,13 +71,12 @@ class RadiationToAmbient(Interaction):
     ):
         """This method creates a RadiationToAmbient object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].RadiationToAmbient
+                mdb.models[name].RadiationToAmbient
 
         Parameters
         ----------

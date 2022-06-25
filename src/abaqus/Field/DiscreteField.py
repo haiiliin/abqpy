@@ -10,14 +10,13 @@ class DiscreteField(Field):
     points within a domain.
     The DiscreteField object is derived from the Field object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import fields
-        mdb.models[name].discreteFields[name]
+            import fields
+            mdb.models[name].discreteFields[name]
     """
 
     #: A String specifying the repository key.
@@ -66,13 +65,12 @@ class DiscreteField(Field):
     ):
         """This method creates a DiscreteField object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].DiscreteField
+                mdb.models[name].DiscreteField
 
         Parameters
         ----------
@@ -125,13 +123,12 @@ class DiscreteField(Field):
         """This method creates a DiscreteField object that represents the volume fraction of each
         element of an Eulerian Instance that is occupied by a reference instance.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].DiscreteField
+                mdb.models[name].DiscreteField
 
         Parameters
         ----------
@@ -175,13 +172,12 @@ class DiscreteField(Field):
     ):
         """This method creates a DiscreteField object from a AnalyticalField object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].DiscreteField
+                mdb.models[name].DiscreteField
 
         Parameters
         ----------

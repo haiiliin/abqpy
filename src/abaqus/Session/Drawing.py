@@ -5,13 +5,12 @@ class Drawing:
     """A drawing is the container for a geometric object. The Drawing object stores the vertex
     data and various settings that determine how the drawing will be displayed.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        session.drawings[name]
+            session.drawings[name]
     """
 
     #: An Int specifying the number of vertices in the vertex array after a call to the
@@ -88,13 +87,12 @@ class Drawing:
     def __init__(self, name: str):
         """This method creates an empty Drawing object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.Drawing
+                session.Drawing
 
         Parameters
         ----------

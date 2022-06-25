@@ -10,13 +10,12 @@ class LeafFromSets(Leaf):
     commands.
     The LeafFromSets object is derived from the Leaf object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import displayGroupMdbToolset
+            import displayGroupMdbToolset
     """
 
     #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
@@ -26,13 +25,12 @@ class LeafFromSets(Leaf):
     def __init__(self, sets: tuple[Set]):
         """This method creates a Leaf object from a sequence of Set objects.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            LeafFromSets
+                LeafFromSets
 
         Parameters
         ----------

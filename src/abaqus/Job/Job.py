@@ -7,20 +7,19 @@ class Job:
     explicit constructor. The methods and members of the Job object are common to all
     objects derived from Job.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import job
-        mdb.coexecutions[name].jobs[name]
-        mdb.jobs[name]
+            import job
+            mdb.coexecutions[name].jobs[name]
+            mdb.jobs[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - HEADING
-            - PREPRINT
+        - HEADING
+                - PREPRINT
     """
 
     #: A String specifying the name of the new job. The name must be a valid Abaqus/CAE object

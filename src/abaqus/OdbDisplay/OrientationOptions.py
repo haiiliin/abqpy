@@ -17,22 +17,21 @@ class OrientationOptions(DGOrientationOptions):
     - The material orientation options associated with a particular viewport.
     The OrientationOptions object is derived from the DGOrientationOptions object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.defaultOdbDisplay.materialOrientationOptions
-        session.viewports[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.materialOrientationOptions
-        session.viewports[name].layers[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.materialOrientationOptions
-        session.viewports[name].layers[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.materialOrientationOptions
-        session.viewports[name].layers[name].odbDisplay.materialOrientationOptions
-        session.viewports[name].layers[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.materialOrientationOptions
-        session.viewports[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.materialOrientationOptions
-        session.viewports[name].odbDisplay.materialOrientationOptions
-        session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.materialOrientationOptions
+            import visualization
+            session.defaultOdbDisplay.materialOrientationOptions
+            session.viewports[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.materialOrientationOptions
+            session.viewports[name].layers[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.materialOrientationOptions
+            session.viewports[name].layers[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.materialOrientationOptions
+            session.viewports[name].layers[name].odbDisplay.materialOrientationOptions
+            session.viewports[name].layers[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.materialOrientationOptions
+            session.viewports[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.materialOrientationOptions
+            session.viewports[name].odbDisplay.materialOrientationOptions
+            session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.materialOrientationOptions
     """
 
     #: A Boolean specifying whether axis 1 of the material orientation triad should be

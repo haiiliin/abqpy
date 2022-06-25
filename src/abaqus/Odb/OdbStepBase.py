@@ -11,14 +11,13 @@ from .OdbLoadCase import OdbLoadCase
 class OdbStepBase:
     """An output database contains the same steps of the model database that originated it.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name].steps[name]
+            import odbAccess
+            session.odbs[name].steps[name]
     """
 
     #: An Int specifying the step number.
@@ -74,13 +73,12 @@ class OdbStepBase:
     ):
         """This method creates an OdbStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].Step
+                session.odbs[name].Step
 
         Parameters
         ----------

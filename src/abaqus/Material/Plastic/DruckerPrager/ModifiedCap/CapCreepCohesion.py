@@ -4,52 +4,51 @@ from abaqusConstants import *
 class CapCreepCohesion:
     r"""The CapCreepCohesion object specifies a cap creep model and material properties.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].capPlasticity.capCreepCohesion
-        import odbMaterial
-        session.odbs[name].materials[name].capPlasticity.capCreepCohesion
+            import material
+            mdb.models[name].materials[name].capPlasticity.capCreepCohesion
+            import odbMaterial
+            session.odbs[name].materials[name].capPlasticity.capCreepCohesion
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **law** = STRAIN or **law** = TIME, the table data specify the following:
-    
-        - :math:`A`.
-        - :math:`n`.
-        - :math:`m`.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **law** = SINGHM, the table data specify the following:
-    
-        - :math:`A`.
-        - :math:`\alpha`.
-        - :math:`m`.
-        - :math:`t_{1}`.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **law** = POWER_LAW or **law** = TIME_POWER_LAW, the table data specify the following:
-    
-        - :math:`q_0`.
-        - :math:`n`.
-        - :math:`m`.
-        - :math:`\epsilon_0`.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+        - If **law** = STRAIN or **law** = TIME, the table data specify the following:
+        
+            - :math:`A`.
+            - :math:`n`.
+            - :math:`m`.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **law** = SINGHM, the table data specify the following:
+        
+            - :math:`A`.
+            - :math:`\alpha`.
+            - :math:`m`.
+            - :math:`t_{1}`.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **law** = POWER_LAW or **law** = TIME_POWER_LAW, the table data specify the following:
+        
+            - :math:`q_0`.
+            - :math:`n`.
+            - :math:`m`.
+            - :math:`\epsilon_0`.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CAP CREEP
+        - CAP CREEP
     """
 
     def __init__(
@@ -62,14 +61,13 @@ class CapCreepCohesion:
     ):
         """This method creates a CapCreepCohesion object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].capPlasticity.CapCreepCohesion
-            session.odbs[name].materials[name].capPlasticity.CapCreepCohesion
+                mdb.models[name].materials[name].capPlasticity.CapCreepCohesion
+                session.odbs[name].materials[name].capPlasticity.CapCreepCohesion
 
         Parameters
         ----------

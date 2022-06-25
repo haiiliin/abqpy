@@ -2,14 +2,13 @@ class CompositeDampingComponent:
     """A :py:class:`~abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent` object is used to define composite damping over a range of
     modes.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name].compositeDamping.components[i]
+            import step
+            mdb.models[name].steps[name].compositeDamping.components[i]
     """
 
     #: An Int specifying the mode number of the lowest mode of a range.

@@ -25,21 +25,20 @@ class ModalDynamicsStep(AnalysisStep):
     linear perturbation procedure using modal superposition.
     The ModalDynamicsStep object is derived from the AnalysisStep object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name]
+            import step
+            mdb.models[name].steps[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - DAMPING
-            - MODAL DAMPING
-            - MODAL DYNAMIC
-            - STEP
+        - DAMPING
+                - MODAL DAMPING
+                - MODAL DYNAMIC
+                - STEP
     """
 
     #: A String specifying the repository key.
@@ -196,13 +195,12 @@ class ModalDynamicsStep(AnalysisStep):
     ):
         """This method creates a ModalDynamicsStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ModalDynamicsStep
+                mdb.models[name].ModalDynamicsStep
 
         Parameters
         ----------

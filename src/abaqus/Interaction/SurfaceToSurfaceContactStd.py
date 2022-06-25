@@ -11,14 +11,13 @@ class SurfaceToSurfaceContactStd(Interaction):
     Abaqus/Standard analysis.
     The SurfaceToSurfaceContactStd object is derived from the Interaction object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactions[name]
+            import interaction
+            mdb.models[name].interactions[name]
     """
 
     #: A SymbolicConstant specifying the choice of contact tracking algorithm. The STATE
@@ -208,13 +207,12 @@ class SurfaceToSurfaceContactStd(Interaction):
     ):
         """This method creates a SurfaceToSurfaceContactStd object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SurfaceToSurfaceContactStd
+                mdb.models[name].SurfaceToSurfaceContactStd
 
         Parameters
         ----------

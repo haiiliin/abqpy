@@ -25,14 +25,13 @@ class ConstrainedSketchBase:
     such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are
     contained in their respective repositories.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import sketch
-        mdb.models[name].sketches[name]
+            import sketch
+            mdb.models[name].sketches[name]
     """
 
     #: A repository of ConstrainedSketchConstraint objects.

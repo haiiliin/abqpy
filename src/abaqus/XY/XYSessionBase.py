@@ -6,13 +6,12 @@ class XYSessionBase(SessionBase):
     """The following commands operate on Session objects. For more information about the
     Session object, see Session object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
+            import visualization
     """
 
     def linearizeStress(

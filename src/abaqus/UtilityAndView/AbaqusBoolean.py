@@ -13,26 +13,24 @@ class AbaqusBoolean:
     Scripting Interface commands that expect an AbaqusBoolean object will also accept a
     Python bool (True, False), or a Python int (1, 0).
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        from symbolicConstants import *
-        from abaqusConstants import *
+            from symbolicConstants import *
+            from abaqusConstants import *
     """
 
     def __init__(self, value: int):
         """The AbaqusBoolean method creates an AbaqusBoolean object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            AbaqusBoolean
+                AbaqusBoolean
 
         Parameters
         ----------

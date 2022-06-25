@@ -15,13 +15,12 @@ class InteractionContactInitializationModel(ModelBase):
     ) -> StdInitialization:
         """This method creates a StdInitialization object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].StdInitialization
+                mdb.models[name].StdInitialization
 
         Parameters
         ----------

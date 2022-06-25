@@ -13,13 +13,12 @@ class FilletByRadius(ConstrainedSketchGeometry):
         """This method constructs a fillet arc of a given radius between two curves. The fillet is
         added to the geometry repository of the ConstrainedSketch object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].FilletByRadius
+                mdb.models[name].sketches[name].FilletByRadius
 
         Parameters
         ----------

@@ -5,44 +5,43 @@ class ContactTangentialBehavior:
     """The ContactTangentialBehavior object specifies tangential behavior for a contact
     interaction property.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactionProperties[name].tangentialBehavior
+            import interaction
+            mdb.models[name].interactionProperties[name].tangentialBehavior
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **formulation** = PENALTY or LAGRANGE, the table data specify the following:
-    
-        - Friction coefficient in the first slip direction, μ1μ1.
-        - Friction coefficient in the second slip direction, μ2μ2 (if **directionality** = ANISOTROPIC).
-        - Slip rate, if the data depend on slip rate.
-        - Contact pressure, if the data depend on contact pressure.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **formulation** = EXPONENTIAL_DECAY and **exponentialDecayDefinition** = COEFFICIENTS, the table data specify the following:
-    
-        - Static friction coefficient.
-        - Kinetic friction coefficient.
-        - Decay coefficient.
-    - If **formulation** = EXPONENTIAL_DECAY and **exponentialDecayDefinition** = TEST_DATA, the table data specify the following:
-    
-        - Friction coefficient.
-        - Slip rate.
-    - If **formulation** = USER_DEFINED, the table data specify the following:
-    
-        - Friction property.
+        - If **formulation** = PENALTY or LAGRANGE, the table data specify the following:
+        
+            - Friction coefficient in the first slip direction, μ1μ1.
+            - Friction coefficient in the second slip direction, μ2μ2 (if **directionality** = ANISOTROPIC).
+            - Slip rate, if the data depend on slip rate.
+            - Contact pressure, if the data depend on contact pressure.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **formulation** = EXPONENTIAL_DECAY and **exponentialDecayDefinition** = COEFFICIENTS, the table data specify the following:
+        
+            - Static friction coefficient.
+            - Kinetic friction coefficient.
+            - Decay coefficient.
+        - If **formulation** = EXPONENTIAL_DECAY and **exponentialDecayDefinition** = TEST_DATA, the table data specify the following:
+        
+            - Friction coefficient.
+            - Slip rate.
+        - If **formulation** = USER_DEFINED, the table data specify the following:
+        
+            - Friction property.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - FRICTION
-    - CHANGE FRICTION
+        - FRICTION
+        - CHANGE FRICTION
     """
 
     #: A SymbolicConstant specifying the friction formulation. Possible values are
@@ -120,13 +119,12 @@ class ContactTangentialBehavior:
     ):
         """This method creates a ContactTangentialBehavior object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].interactionProperties[name].TangentialBehavior
+                mdb.models[name].interactionProperties[name].TangentialBehavior
 
         Parameters
         ----------

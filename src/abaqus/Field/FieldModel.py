@@ -21,13 +21,12 @@ class FieldModel(ModelBase):
     ) -> DiscreteField:
         """This method creates a DiscreteField object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].DiscreteField
+                mdb.models[name].DiscreteField
 
         Parameters
         ----------
@@ -82,13 +81,12 @@ class FieldModel(ModelBase):
     ) -> ExpressionField:
         """This method creates an ExpressionField object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ExpressionField
+                mdb.models[name].ExpressionField
 
         Parameters
         ----------
@@ -141,13 +139,12 @@ class FieldModel(ModelBase):
     ) -> MappedField:
         """This method creates an MappedField object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].MappedField
+                mdb.models[name].MappedField
 
         Parameters
         ----------

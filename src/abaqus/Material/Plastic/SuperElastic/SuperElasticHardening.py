@@ -2,38 +2,36 @@ class SuperElasticHardening:
     """The SuperElasticHardening object specifies the dependence of the yield stress on the
     total strain to define the piecewise linear hardening of a martensite material model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].superElasticity.SuperElasticHardening
-        import odbMaterial
-        session.odbs[name].materials[name].superElasticity.SuperElasticHardening
+            import material
+            mdb.models[name].materials[name].superElasticity.SuperElasticHardening
+            import odbMaterial
+            session.odbs[name].materials[name].superElasticity.SuperElasticHardening
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Yield Stress.
-    - Total Strain.
+        - Yield Stress.
+        - Total Strain.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - SUPERELASTIC HARDENING
+        - SUPERELASTIC HARDENING
     """
 
     def __init__(self, table: tuple):
         """This method creates a SuperElasticHardening object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].superElasticity.SuperElasticHardening
-            session.odbs[name].materials[name].superElasticity.SuperElasticHardening
+                mdb.models[name].materials[name].superElasticity.SuperElasticHardening
+                session.odbs[name].materials[name].superElasticity.SuperElasticHardening
 
         Parameters
         ----------

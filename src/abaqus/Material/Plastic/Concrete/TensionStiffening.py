@@ -5,38 +5,37 @@ class TensionStiffening:
     """The TensionStiffening object defines the retained tensile stress normal to a crack in a
     Concrete model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].concrete.tensionStiffening
-        import odbMaterial
-        session.odbs[name].materials[name].concrete.tensionStiffening
+            import material
+            mdb.models[name].materials[name].concrete.tensionStiffening
+            import odbMaterial
+            session.odbs[name].materials[name].concrete.tensionStiffening
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **type** = STRAIN, the table data specify the following:
-    
-        - Fraction of remaining stress to stress at cracking.
-        - Absolute value of the direct strain minus the direct strain at cracking.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **type** = DISPLACEMENT, the table data specify the following:
-    
-        - Displacement, u0u0, at which a linear loss of strength after cracking gives zero stress.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+        - If **type** = STRAIN, the table data specify the following:
+        
+            - Fraction of remaining stress to stress at cracking.
+            - Absolute value of the direct strain minus the direct strain at cracking.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **type** = DISPLACEMENT, the table data specify the following:
+        
+            - Displacement, u0u0, at which a linear loss of strength after cracking gives zero stress.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - TENSION STIFFENING
+        - TENSION STIFFENING
     """
 
     def __init__(
@@ -48,14 +47,13 @@ class TensionStiffening:
     ):
         """This method creates a TensionStiffening object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].concrete.TensionStiffening
-            session.odbs[name].materials[name].concrete.TensionStiffening
+                mdb.models[name].materials[name].concrete.TensionStiffening
+                session.odbs[name].materials[name].concrete.TensionStiffening
 
         Parameters
         ----------

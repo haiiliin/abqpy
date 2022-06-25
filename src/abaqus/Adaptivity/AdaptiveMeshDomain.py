@@ -5,14 +5,13 @@ class AdaptiveMeshDomain:
     """The AdaptiveMeshDomain object defines the region and controls that govern an Arbitrary
     Lagrangian Eularian (ALE) style adaptive smoothing mesh domain.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name].adaptiveMeshDomains[name]
+            import step
+            mdb.models[name].steps[name].adaptiveMeshDomains[name]
     """
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the adaptive mesh domain is applied.
@@ -43,13 +42,12 @@ class AdaptiveMeshDomain:
     ):
         """This method creates an AdaptiveMeshDomain object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].steps[name].AdaptiveMeshDomain
+                mdb.models[name].steps[name].AdaptiveMeshDomain
 
         Parameters
         ----------

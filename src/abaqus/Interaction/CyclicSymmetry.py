@@ -7,23 +7,22 @@ class CyclicSymmetry(Interaction):
     """The CyclicSymmetry object defines a cyclic symmetry analysis.
     The CyclicSymmetry object is derived from the Interaction object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactions[name]
+            import interaction
+            mdb.models[name].interactions[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CLOAD
-            - CYCLIC SYMMETRY MODEL
-            - DLOAD
-            - DSLOAD
-            - SELECT CYCLIC SYMMETRY MODES
-            - TIE
+        - CLOAD
+                - CYCLIC SYMMETRY MODEL
+                - DLOAD
+                - DSLOAD
+                - SELECT CYCLIC SYMMETRY MODES
+                - TIE
     """
 
     #: A String specifying the repository key.
@@ -107,13 +106,12 @@ class CyclicSymmetry(Interaction):
     ):
         """This method creates a CyclicSymmetry object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].CyclicSymmetry
+                mdb.models[name].CyclicSymmetry
 
         Parameters
         ----------

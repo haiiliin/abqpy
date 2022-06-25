@@ -35,13 +35,12 @@ class BackwardCompatibility:
     print backwardCompatibility.getDeprecatedMembersUsed()
     print backwardCompatibility.getDeprecatedArgsUsed()
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        backwardCompatibility
+            backwardCompatibility
     """
 
     #: A Boolean specifying whether deprecated members, methods, and arguments can be seen and

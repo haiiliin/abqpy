@@ -4,14 +4,13 @@ from abaqusConstants import *
 class OdbNumericalProblemSummary:
     """The OdbNumericalProblemSummary object stores the numerical problem summary of a job.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.odbData[name].diagnosticData.numericalProblemSummary
+            import visualization
+            session.odbData[name].diagnosticData.numericalProblemSummary
     """
 
     #: A boolean specifying whether negative eigenvalues converged during the analysis. This

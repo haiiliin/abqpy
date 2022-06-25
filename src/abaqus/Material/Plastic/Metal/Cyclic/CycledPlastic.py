@@ -5,39 +5,37 @@ class CycledPlastic:
     """The CycledPlastic object specifies cycled yield stress data for the ORNL constitutive
     model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].Plastic.cycledPlastic
-        import odbMaterial
-        session.odbs[name].materials[name].Plastic.cycledPlastic
+            import material
+            mdb.models[name].materials[name].Plastic.cycledPlastic
+            import odbMaterial
+            session.odbs[name].materials[name].Plastic.cycledPlastic
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Yield stress.
-    - Plastic strain.
-    - Temperature, if the data depend on temperature.
+        - Yield stress.
+        - Plastic strain.
+        - Temperature, if the data depend on temperature.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CYCLED PLASTIC
+        - CYCLED PLASTIC
     """
 
     def __init__(self, table: tuple, temperatureDependency: Boolean = OFF):
         """This method creates a CycledPlastic object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].Plastic.CycledPlastic
-            session.odbs[name].materials[name].Plastic.CycledPlastic
+                mdb.models[name].materials[name].Plastic.CycledPlastic
+                session.odbs[name].materials[name].Plastic.CycledPlastic
 
         Parameters
         ----------

@@ -5,18 +5,17 @@ class PolarityAssignments:
     """The PolarityAssignments object stores the polarity assignment definition for surfaces in
     ContactExp objects. The PolarityAssignments object has no constructor or members.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactions[name].polarityAssignments
+            import interaction
+            mdb.models[name].interactions[name].polarityAssignments
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONTACT FORMULATION
+        - CONTACT FORMULATION
     """
 
     def changeValuesInStep(self, stepName: str, index: int, value: SymbolicConstant):

@@ -6,25 +6,24 @@ from abaqusConstants import *
 class FieldOutputRequest:
     """The FieldOutputRequest object defines a field output request.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].fieldOutputRequests[name]
+            import step
+            mdb.models[name].fieldOutputRequests[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONTACT OUTPUT
-            - ELEMENT OUTPUT
-            - ENERGY OUTPUT
-            - INCREMENTATION OUTPUT
-            - MODAL OUTPUT
-            - NODE OUTPUT
-            - OUTPUT
-            - RADIATION OUTPUT
+        - CONTACT OUTPUT
+                - ELEMENT OUTPUT
+                - ENERGY OUTPUT
+                - INCREMENTATION OUTPUT
+                - MODAL OUTPUT
+                - NODE OUTPUT
+                - OUTPUT
+                - RADIATION OUTPUT
     """
 
     #: A String specifying a bolt load from which output is requested.
@@ -69,13 +68,12 @@ class FieldOutputRequest:
     ):
         """This method creates a FieldOutputRequest object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].FieldOutputRequest
+                mdb.models[name].FieldOutputRequest
 
         Parameters
         ----------

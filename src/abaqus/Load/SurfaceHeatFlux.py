@@ -7,14 +7,13 @@ class SurfaceHeatFlux(Load):
     """The SurfaceHeatFlux object defines surface heat flux from a region or into a region.
     The SurfaceHeatFlux object is derived from the Load object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].loads[name]
+            import load
+            mdb.models[name].loads[name]
     """
 
     #: A String specifying the load repository key.
@@ -44,13 +43,12 @@ class SurfaceHeatFlux(Load):
     ):
         """This method creates a SurfaceHeatFlux object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SurfaceHeatFlux
+                mdb.models[name].SurfaceHeatFlux
 
         Parameters
         ----------

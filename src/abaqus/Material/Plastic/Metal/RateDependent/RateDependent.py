@@ -4,47 +4,46 @@ from abaqusConstants import *
 class RateDependent:
     r"""The RateDependent object defines a rate-dependent viscoplastic model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].crushableFoam.rateDependent
-        mdb.models[name].materials[name].druckerPrager.rateDependent
-        mdb.models[name].materials[name].Plastic.rateDependent
-        import odbMaterial
-        session.odbs[name].materials[name].crushableFoam.rateDependent
-        session.odbs[name].materials[name].druckerPrager.rateDependent
-        session.odbs[name].materials[name].Plastic.rateDependent
+            import material
+            mdb.models[name].materials[name].crushableFoam.rateDependent
+            mdb.models[name].materials[name].druckerPrager.rateDependent
+            mdb.models[name].materials[name].Plastic.rateDependent
+            import odbMaterial
+            session.odbs[name].materials[name].crushableFoam.rateDependent
+            session.odbs[name].materials[name].druckerPrager.rateDependent
+            session.odbs[name].materials[name].Plastic.rateDependent
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **type** = POWER_LAW, the table data specify the following:
-    
-        - :math:`D`.
-        - :math:`n`.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **type** = YIELD_RATIO, the table data specify the following:
-    
-        - Yield stress ratio, :math:`R=\bar{\sigma} / \sigma^{0}`.
-        - Equivalent plastic strain rate, :math:`\dot{\bar{\varepsilon}}^{p l}`.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **type** = JOHNSON_COOK, the table data specify the following:
+        - If **type** = POWER_LAW, the table data specify the following:
+        
+            - :math:`D`.
+            - :math:`n`.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **type** = YIELD_RATIO, the table data specify the following:
+        
+            - Yield stress ratio, :math:`R=\bar{\sigma} / \sigma^{0}`.
+            - Equivalent plastic strain rate, :math:`\dot{\bar{\varepsilon}}^{p l}`.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **type** = JOHNSON_COOK, the table data specify the following:
 
-        - :math:`C`.
-        - :math:`\dot{\varepsilon}_{0}`.
+            - :math:`C`.
+            - :math:`\dot{\varepsilon}_{0}`.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - RATE DEPENDENT
+        - RATE DEPENDENT
     """
 
     def __init__(
@@ -56,18 +55,17 @@ class RateDependent:
     ):
         """This method creates a RateDependent object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].crushableFoam.RateDependent
-            mdb.models[name].materials[name].druckerPrager.RateDependent
-            mdb.models[name].materials[name].Plastic.RateDependent
-            session.odbs[name].materials[name].crushableFoam.RateDependent
-            session.odbs[name].materials[name].druckerPrager.RateDependent
-            session.odbs[name].materials[name].Plastic.RateDependent
+                mdb.models[name].materials[name].crushableFoam.RateDependent
+                mdb.models[name].materials[name].druckerPrager.RateDependent
+                mdb.models[name].materials[name].Plastic.RateDependent
+                session.odbs[name].materials[name].crushableFoam.RateDependent
+                session.odbs[name].materials[name].druckerPrager.RateDependent
+                session.odbs[name].materials[name].Plastic.RateDependent
 
         Parameters
         ----------

@@ -5,29 +5,28 @@ class GasketMembraneElastic:
     r"""The GasketMembraneElastic object defines the elastic parameters for the membrane shear
     behavior of a gasket.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].gasketMembraneElastic
-        import odbMaterial
-        session.odbs[name].materials[name].gasketMembraneElastic
+            import material
+            mdb.models[name].materials[name].gasketMembraneElastic
+            import odbMaterial
+            session.odbs[name].materials[name].gasketMembraneElastic
 
-    The table data for this object are:
-    
-    - Young's modulus, :math:`E`.
-    - Poisson's ratio, :math:`\nu`.
-    - Temperature, if the data depend on temperature.
-    - Value of the first field variable, if the data depend on field variables.
-    - Value of the second field variable.
-    - Etc.
+        The table data for this object are:
+        
+        - Young's modulus, :math:`E`.
+        - Poisson's ratio, :math:`\nu`.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - GASKET ELASTICITY
+        - GASKET ELASTICITY
     """
 
     def __init__(
@@ -35,14 +34,13 @@ class GasketMembraneElastic:
     ):
         """This method creates a GasketMembraneElastic object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].GasketMembraneElastic
-            session.odbs[name].materials[name].GasketMembraneElastic
+                mdb.models[name].materials[name].GasketMembraneElastic
+                session.odbs[name].materials[name].GasketMembraneElastic
 
         Parameters
         ----------

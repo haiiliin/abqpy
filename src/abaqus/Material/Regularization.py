@@ -5,20 +5,19 @@ class Regularization:
     """The Regularization object defines the tolerance to be used for regularizing material
     data.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].regularization
-        import odbMaterial
-        session.odbs[name].materials[name].regularization
+            import material
+            mdb.models[name].materials[name].regularization
+            import odbMaterial
+            session.odbs[name].materials[name].regularization
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - DASHPOT
+        - DASHPOT
     """
 
     #: A Float specifying the tolerance to be used for regularizing material data. The default
@@ -35,14 +34,13 @@ class Regularization:
     ):
         """This method creates a Regularization object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].Regularization
-            session.odbs[name].materials[name].Regularization
+                mdb.models[name].materials[name].Regularization
+                session.odbs[name].materials[name].Regularization
 
         Parameters
         ----------

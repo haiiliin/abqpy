@@ -8,14 +8,13 @@ class PenetrationCheck(GeometricRestriction):
     The PenetrationCheck object is derived from the GeometricRestriction object.
     This page discusses:
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import optimization
-        mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
+            import optimization
+            mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
 
     #: A String specifying the geometric restriction repository key.
@@ -42,13 +41,12 @@ class PenetrationCheck(GeometricRestriction):
     ):
         """This method creates a PenetrationCheck object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      mdb.models[name].optimizationTasks[name].PenetrationCheck
+                mdb.models[name].optimizationTasks[name].PenetrationCheck
 
         Parameters
         ----------

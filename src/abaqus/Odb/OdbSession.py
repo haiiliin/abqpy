@@ -7,13 +7,12 @@ class OdbSession(SessionBase):
     def ScratchOdb(self, odb: Odb) -> ScratchOdb:
         """This method creates a new ScratchOdb object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.ScratchOdb
+                session.ScratchOdb
 
         Parameters
         ----------

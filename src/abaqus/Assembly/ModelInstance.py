@@ -19,14 +19,13 @@ class Model:
 class ModelInstance:
     """A :py:class:`~abaqus.Model.Model.ModelInstance` object is an instance of a Model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import assembly
-        mdb.models[name].rootAssembly.modelInstances[i]
+            import assembly
+            mdb.models[name].rootAssembly.modelInstances[i]
     """
 
     #: A repository of Set objects specifying the sets created on the assembly. For more
@@ -60,13 +59,12 @@ class ModelInstance:
     def __init__(self, name: str, model: Model, autoOffset: Boolean = OFF):
         """This method creates a ModelInstance object and puts it into the instances repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].rootAssembly.Instance
+                mdb.models[name].rootAssembly.Instance
 
         Parameters
         ----------

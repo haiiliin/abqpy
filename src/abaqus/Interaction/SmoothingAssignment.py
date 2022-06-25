@@ -6,18 +6,17 @@ class SmoothingAssignment:
     surfaces in ContactExp and ContactStd objects. The SmoothingAssignment object has no
     constructor or members.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactions[name].smoothingAssignments
+            import interaction
+            mdb.models[name].interactions[name].smoothingAssignments
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - SURFACE PROPERTY ASSIGNMENT
+        - SURFACE PROPERTY ASSIGNMENT
     """
 
     def changeValuesInStep(self, stepName: str, index: int, value: SymbolicConstant):

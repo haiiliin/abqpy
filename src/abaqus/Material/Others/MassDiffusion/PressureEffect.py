@@ -4,29 +4,28 @@ from abaqusConstants import *
 class PressureEffect:
     r"""The PressureEffect object defines equivalent pressure stress driven mass diffusion.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].diffusivity.pressureEffect
-        import odbMaterial
-        session.odbs[name].materials[name].diffusivity.pressureEffect
+            import material
+            mdb.models[name].materials[name].diffusivity.pressureEffect
+            import odbMaterial
+            session.odbs[name].materials[name].diffusivity.pressureEffect
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Pressure stress factor, :math:`\kappa_p`.
-    - Concentration.
-    - Temperature, if the data depend on temperature.
-    - Value of the first field variable, if the data depend on field variables.
-    - Value of the second field variable.
-    - Etc.
+        - Pressure stress factor, :math:`\kappa_p`.
+        - Concentration.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - KAPPA
+        - KAPPA
     """
 
     def __init__(
@@ -34,14 +33,13 @@ class PressureEffect:
     ):
         """This method creates a PressureEffect object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].diffusivity.PressureEffect
-            session.odbs[name].materials[name].diffusivity.PressureEffect
+                mdb.models[name].materials[name].diffusivity.PressureEffect
+                session.odbs[name].materials[name].diffusivity.PressureEffect
 
         Parameters
         ----------

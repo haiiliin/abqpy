@@ -7,14 +7,13 @@ class RotationalBodyForce(Load):
     """The RotationalBodyForce object stores the data for a rotational body force.
     The RotationalBodyForce object is derived from the Load object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].loads[name]
+            import load
+            mdb.models[name].loads[name]
     """
 
     #: A String specifying the load repository key.
@@ -64,13 +63,12 @@ class RotationalBodyForce(Load):
     ):
         """This method creates a RotationalBodyForce object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].RotationalBodyForce
+                mdb.models[name].RotationalBodyForce
 
         Parameters
         ----------

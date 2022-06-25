@@ -7,14 +7,13 @@ class ConcPoreFluid(Load):
     """The ConcPoreFluid object stores the data for a concentrated pore fluid flow load.
     The ConcPoreFluid object is derived from the Load object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].loads[name]
+            import load
+            mdb.models[name].loads[name]
     """
 
     #: A String specifying the load repository key.
@@ -44,13 +43,12 @@ class ConcPoreFluid(Load):
     ):
         """This method creates a ConcPoreFluid object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ConcPoreFluid
+                mdb.models[name].ConcPoreFluid
 
         Parameters
         ----------

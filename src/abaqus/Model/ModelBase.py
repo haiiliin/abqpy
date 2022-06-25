@@ -37,17 +37,16 @@ from ..StepOutput.TimePoint import TimePoint
 class ModelBase:
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name]
+            mdb.models[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - PHYSICAL CONSTANTS
+        - PHYSICAL CONSTANTS
     """
 
     #: A String specifying the repository key.
@@ -238,13 +237,12 @@ class ModelBase:
     ):
         """This method creates a Model object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.Model
+                mdb.Model
 
         Parameters
         ----------
@@ -287,13 +285,12 @@ class ModelBase:
         """This method creates a Model object by reading the keywords in an input file and creating
         the corresponding Abaqus/CAE objects.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.Model
+                mdb.Model
 
         Parameters
         ----------
@@ -315,13 +312,12 @@ class ModelBase:
         """This method creates a Model object by reading an output database and creating any
         corresponding Abaqus/CAE objects.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.Model
+                mdb.Model
 
         Parameters
         ----------
@@ -360,13 +356,12 @@ class ModelBase:
         environment file as the one used for the translator from Nastran to Abaqus. For more
         information, see Translating Nastran data to Abaqus files.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.Model
+                mdb.Model
 
         Parameters
         ----------

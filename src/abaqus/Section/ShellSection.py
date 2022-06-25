@@ -8,16 +8,15 @@ class ShellSection(Section):
     constructor and no methods or members.
     The ShellSection object is derived from the Section object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].sections[name]
-        import odbSection
-        session.odbs[name].sections[name]
+            import section
+            mdb.models[name].sections[name]
+            import odbSection
+            session.odbs[name].sections[name]
     """
 
     #: A String specifying the repository key.

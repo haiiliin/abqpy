@@ -5,16 +5,15 @@ class SpringDashpot:
     """The SpringDashpot object is the abstract base type for the SpringDashpotToGround and
     TwoPointSpringDashpot objects.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].engineeringFeatures.springDashpots[name]
-        import assembly
-        mdb.models[name].rootAssembly.engineeringFeatures.springDashpots[name]
+            import part
+            mdb.models[name].parts[name].engineeringFeatures.springDashpots[name]
+            import assembly
+            mdb.models[name].rootAssembly.engineeringFeatures.springDashpots[name]
     """
 
     #: A String specifying the repository key.

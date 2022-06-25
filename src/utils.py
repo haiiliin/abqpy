@@ -1,8 +1,6 @@
 import os
 import re
 
-from ObjectParser.ObjectParser import ObjectParser
-
 
 def findUserTypePath(type: str, searchDir: str):
     if not os.path.isdir(searchDir):
@@ -138,8 +136,7 @@ def addAttributes(searchDir: str):
 
 # addAttributes('markdown')
 
-
-def fixDefaults(searchDir: str):
+def replaceNotes(searchDir: str):
     print(f'# Processing dir: {searchDir}')
     if not os.path.isdir(searchDir):
         return ''
@@ -147,27 +144,38 @@ def fixDefaults(searchDir: str):
     files = os.listdir(searchDir)
     for file in files:
         if os.path.isdir(os.path.join(searchDir, file)):
-            fixDefaults(os.path.join(searchDir, file))
-        elif os.path.isfile(os.path.join(searchDir, file)) and file.endswith('.md') and 'README.md' not in file:
+            replaceNotes(os.path.join(searchDir, file))
+        elif os.path.isfile(os.path.join(searchDir, file)) and file.endswith('.py'):
             print(f'    # Processing file: {file}')
             filePath = os.path.join(searchDir, file)
-            pyFilePath = filePath.replace('markdown', 'abaqus').replace('.md', '.py')
-            if not os.path.exists(pyFilePath):
-                continue
-            with open(pyFilePath, 'r+') as f:
+            with open(filePath, 'r+', encoding='utf-8') as f:
                 text = f.read()
 
-            md = ObjectParser(filePath=filePath)
-            abq = md.parse().toAbaqusObject()
-            for method in abq.methods:
-                strings = re.findall(r'(\s+def {}\([\w\W\r]+?\):[\w\W\r]+?)def '.format(method.name), text)
-                if len(strings) > 0:
-                    string = strings[0]
-                    for arg in method.args:
-                        if arg.required:
-                            argStrings = re.findall(r'{}: [\w\W\r]+ = [\w\W\r]+,', string)
-                            if len(argStrings) > 0:
-                                argString = argStrings[0]
+            # Replace Class Notes
+            class_notes = re.findall(r'(Notes\s+-----\s+This object can be accessed by:\s+\.\. code-block:: python\s+)'
+                                     r'([\w\W]+?)\n\s+"""', text)
+            for head, code in class_notes:
+                new_head = '.. note:: \n        This object can be accessed by:\n\n        '\
+                           '.. code-block:: python\n\n        '
+                new_code = '    ' + code.replace('\n    ', '\n        ')
+                string = head + code
+                new_string = new_head + new_code
+                text = text.replace(string, new_string)
+
+            # Replace Method Notes
+            method_notes = re.findall(r'(Notes\s+-----\s+This function can be accessed by:\s+\.\. code-block:: python\s+)'
+                                      r'([\w\W]+?)\n\n', text)
+            for head, code in method_notes:
+                new_head = '.. note:: \n            This function can be accessed by:\n\n'\
+                           '            .. code-block:: python\n\n            '
+                new_code = '    ' + code.replace('\n    ', '\n        ')
+                string = head + code
+                new_string = new_head + new_code
+                text = text.replace(string, new_string)
+
+            if len(class_notes) + len(method_notes) > 0:
+                with open(filePath, 'r+', encoding='utf-8') as f:
+                    f.write(text)
 
 
-fixDefaults('markdown\\Adaptivity')
+replaceNotes('abaqus')

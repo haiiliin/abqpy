@@ -6,14 +6,13 @@ class AdaptivityIteration:
     """The AdaptivityIteration object contains information about a given iteration of the
     varying topology adaptivity process (adaptive remeshing).
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import job
-        mdb.adaptivityProcesses[name].iterations[i]
+            import job
+            mdb.adaptivityProcesses[name].iterations[i]
     """
 
     #: A repository of RuleResult objects specifying the calculated results from sizing
@@ -48,13 +47,12 @@ class AdaptivityIteration:
     ):
         """This method creates an AdaptivityIteration object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.adaptivityProcesses[name].AdaptivityIteration
+                mdb.adaptivityProcesses[name].AdaptivityIteration
 
         Parameters
         ----------
@@ -82,13 +80,12 @@ class AdaptivityIteration:
         """This method creates an ErrorIndicatorResult with data for an error indicator variable in
         a RemeshingRule for a given adaptivity iteration.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.adaptivityProcesses[name].AdaptivityIteration
+                mdb.adaptivityProcesses[name].AdaptivityIteration
 
         Parameters
         ----------
@@ -122,13 +119,12 @@ class AdaptivityIteration:
         """This method creates a RuleResult with data for a RemeshingRule for a given adaptivity
         iteration.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.adaptivityProcesses[name].AdaptivityIteration
+                mdb.adaptivityProcesses[name].AdaptivityIteration
 
         Parameters
         ----------

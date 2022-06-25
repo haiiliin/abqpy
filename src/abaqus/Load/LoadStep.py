@@ -13,13 +13,12 @@ class LoadStep(StepBase):
     ) -> LoadCase:
         """This method creates a load case in a step.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].steps[name].LoadCase
+                mdb.models[name].steps[name].LoadCase
 
         Parameters
         ----------

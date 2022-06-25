@@ -8,18 +8,17 @@ class KinematicHardening(PredefinedField):
     and, if relevant, the initial backstress tensor.
     The KinematicHardening object is derived from the PredefinedField object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].predefinedFields[name]
+            import load
+            mdb.models[name].predefinedFields[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - INITIAL CONDITIONS
+        - INITIAL CONDITIONS
     """
 
     #: A String specifying the name of the AnalyticalField object associated with this
@@ -74,13 +73,12 @@ class KinematicHardening(PredefinedField):
     ):
         """This method creates a KinematicHardening object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].KinematicHardening
+                mdb.models[name].KinematicHardening
 
         Parameters
         ----------

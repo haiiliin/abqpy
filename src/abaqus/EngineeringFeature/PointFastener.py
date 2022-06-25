@@ -10,20 +10,19 @@ class PointFastener(Fastener):
     """The PointFastener object defines a point fastener.
     The PointFastener object is derived from the Fastener object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].engineeringFeatures.fasteners[name]
-        import assembly
-        mdb.models[name].rootAssembly.engineeringFeatures.fasteners[name]
+            import part
+            mdb.models[name].parts[name].engineeringFeatures.fasteners[name]
+            import assembly
+            mdb.models[name].rootAssembly.engineeringFeatures.fasteners[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - FASTENER
+        - FASTENER
     """
 
     #: A Boolean specifying whether the fastener is suppressed or not. The default value is
@@ -190,14 +189,13 @@ class PointFastener(Fastener):
         for parts and for the assembly, PointFastener objects are currently supported only under
         the assembly.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].engineeringFeatures.PointFastener
-            mdb.models[name].rootAssembly.engineeringFeatures.PointFastener
+                mdb.models[name].parts[name].engineeringFeatures.PointFastener
+                mdb.models[name].rootAssembly.engineeringFeatures.PointFastener
 
         Parameters
         ----------

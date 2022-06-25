@@ -10,18 +10,17 @@ from ..Mesh.MeshFace import MeshFace
 class Skin:
     """The Skin object stores information on skin reinforcements created on entities.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].skins[name]
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name].skins[name]
-        mdb.models[name].rootAssembly.instances[name].skins[name]
-        mdb.models[name].rootAssembly.skins[name]
+            import part
+            mdb.models[name].parts[name].skins[name]
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name].skins[name]
+            mdb.models[name].rootAssembly.instances[name].skins[name]
+            mdb.models[name].rootAssembly.skins[name]
     """
 
     #: A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
@@ -44,13 +43,12 @@ class Skin:
         """This method creates a skin from a sequence of objects in a model database. At least one
         of the optional arguments needs to be specified.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].Skin
+                mdb.models[name].parts[*name*].Skin
 
         Parameters
         ----------
@@ -87,13 +85,12 @@ class Skin:
         """This method modifies underlying entities of the selected skin. At least one of the
         optional arguments needs to be specified.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].Skin
+                mdb.models[name].parts[*name*].Skin
 
         Parameters
         ----------

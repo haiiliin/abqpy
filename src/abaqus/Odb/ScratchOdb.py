@@ -8,26 +8,24 @@ class ScratchOdb:
     objects during an Abaqus/CAE session. Abaqus deletes the scratch output database when
     the associated output database is closed.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.scratchOdbs[name]
+            import odbAccess
+            session.scratchOdbs[name]
     """
 
     def __init__(self, odb: Odb):
         """This method creates a new ScratchOdb object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.ScratchOdb
+                session.ScratchOdb
 
         Parameters
         ----------

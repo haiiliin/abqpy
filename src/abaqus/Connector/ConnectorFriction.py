@@ -11,20 +11,19 @@ class ConnectorFriction(ConnectorBehaviorOption):
     one or more components of a connector's relative motion.
     The ConnectorFriction object is derived from the ConnectorBehaviorOption object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].sections[name].behaviorOptions[i]
-        import odbSection
-        session.odbs[name].sections[name].behaviorOptions[i]
+            import section
+            mdb.models[name].sections[name].behaviorOptions[i]
+            import odbSection
+            session.odbs[name].sections[name].behaviorOptions[i]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONNECTOR FRICTION
+        - CONNECTOR FRICTION
     """
 
     #: A :py:class:`~abaqus.Connector.TangentialBehavior.TangentialBehavior` object.
@@ -165,16 +164,15 @@ class ConnectorFriction(ConnectorBehaviorOption):
         Depending upon the arguments provided, the friction behavior can be Coulomb-like or
         hysteretic in nature.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      import connectorBehavior
-                      connectorBehavior.ConnectorFriction
-                      import odbConnectorBehavior
-                      odbConnectorBehavior.ConnectorFriction
+                import connectorBehavior
+                          connectorBehavior.ConnectorFriction
+                          import odbConnectorBehavior
+                          odbConnectorBehavior.ConnectorFriction
 
         Parameters
         ----------

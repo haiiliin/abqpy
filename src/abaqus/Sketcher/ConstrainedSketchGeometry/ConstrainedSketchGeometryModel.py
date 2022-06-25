@@ -8,14 +8,13 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
     such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are
     contained in their respective repositories.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import sketch
-        mdb.models[name].sketches[name]
+            import sketch
+            mdb.models[name].sketches[name]
     """
 
     def Arc3Points(
@@ -24,13 +23,12 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """This method constructs an arc using a two endpoints and an intermediate third point on
         the arc.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].Arc3Points
+                mdb.models[name].sketches[name].Arc3Points
 
         Parameters
         ----------
@@ -59,13 +57,12 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         added to the geometry repository of the ConstrainedSketch object. The arc is created in
         a clockwise fashion from **point1** to **point2**.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].ArcByCenterEnds
+                mdb.models[name].sketches[name].ArcByCenterEnds
 
         Parameters
         ----------
@@ -96,13 +93,12 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """This method constructs an arc using two vertices. The Arc object is added to the
         geometry repository of the ConstrainedSketch object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].ArcByStartEndTangent
+                mdb.models[name].sketches[name].ArcByStartEndTangent
 
         Parameters
         ----------
@@ -124,13 +120,12 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """This method constructs a circle using a center point and a point on the perimeter. The
         circle is added to the geometry repository of the ConstrainedSketch object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].CircleByCenterPerimeter
+                mdb.models[name].sketches[name].CircleByCenterPerimeter
 
         Parameters
         ----------
@@ -153,13 +148,12 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         perimeter. The circle is added to the geometry repository of the ConstrainedSketch
         object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].ConstructionCircleByCenterPerimeter
+                mdb.models[name].sketches[name].ConstructionCircleByCenterPerimeter
 
         Parameters
         ----------
@@ -182,13 +176,12 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         axis point. The ellipse is added to the geometry repository of the ConstrainedSketch
         object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].EllipseByCenterPerimeter
+                mdb.models[name].sketches[name].EllipseByCenterPerimeter
 
         Parameters
         ----------
@@ -217,13 +210,12 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """This method constructs a fillet arc of a given radius between two curves. The fillet is
         added to the geometry repository of the ConstrainedSketch object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].FilletByRadius
+                mdb.models[name].sketches[name].FilletByRadius
 
         Parameters
         ----------
@@ -257,13 +249,12 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
     def Line(self, point1: tuple[float], point2: tuple[float]):
         """This method creates a line between two given points.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].Line
+                mdb.models[name].sketches[name].Line
 
         Parameters
         ----------
@@ -282,13 +273,12 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
     def ConstructionLine(self, point1: tuple[float], point2: tuple[float]):
         """This method creates an oblique construction line that runs between two given points.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].ConstructionLine
+                mdb.models[name].sketches[name].ConstructionLine
 
         Parameters
         ----------
@@ -307,13 +297,12 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
     def Spline(self, points: tuple, constrainPoints: Boolean = True):
         """This method creates a spline curve running through a sequence of points.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].Spline
+                mdb.models[name].sketches[name].Spline
 
         Parameters
         ----------
@@ -335,13 +324,12 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """This method creates a spot construction point located at the specified coordinates. The
         spot is added to the vertex repository of the ConstrainedSketch object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].Spot
+                mdb.models[name].sketches[name].Spot
 
         Parameters
         ----------

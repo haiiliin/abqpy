@@ -4,13 +4,12 @@ from abaqusConstants import *
 class AcisFile:
     """The AcisFile object is a file object used to open ACIS-, STEP-, and IGES-format files.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
+            import part
     """
 
     #: An Int specifying the number of parts in the object.
@@ -20,13 +19,12 @@ class AcisFile:
         """This method creates an AcisFile object from a file containing ACIS-format geometry. This
         object is subsequently used by the PartFromGeometryFile method.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.openAcis
+                mdb.openAcis
 
         Parameters
         ----------
@@ -60,13 +58,12 @@ class AcisFile:
         """This method creates an AcisFile object from a file containing V5-format geometry. This
         object is subsequently used by the PartFromGeometryFile method.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.openAcis
+                mdb.openAcis
 
         Parameters
         ----------
@@ -104,13 +101,12 @@ class AcisFile:
         File-format geometry that was created by CATIA V5, I-DEAS, or Pro/ENGINEER. This object
         is subsequently used by the PartFromGeometryFile method.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.openAcis
+                mdb.openAcis
 
         Parameters
         ----------
@@ -151,13 +147,12 @@ class AcisFile:
         """This method creates an AcisFile object from a file containing IGES-format geometry. This
         object is subsequently used by the PartFromGeometryFile method.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.openAcis
+                mdb.openAcis
 
         Parameters
         ----------
@@ -208,13 +203,12 @@ class AcisFile:
         """This method creates an AcisFile object from a file containing Parasolid-format geometry.
         This object is subsequently used by the PartFromGeometryFile method.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.openAcis
+                mdb.openAcis
 
         Parameters
         ----------
@@ -238,13 +232,12 @@ class AcisFile:
         """This method creates an AcisFile object from a file containing STEP-format geometry. This
         object is subsequently used by the PartFromGeometryFile method.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.openAcis
+                mdb.openAcis
 
         Parameters
         ----------
@@ -270,13 +263,12 @@ class AcisFile:
         """This method creates an AcisFile object from a file containing VDA-FS-format geometry.
         This object is subsequently used by the PartFromGeometryFile method.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.openAcis
+                mdb.openAcis
 
         Parameters
         ----------

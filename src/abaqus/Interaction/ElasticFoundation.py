@@ -6,18 +6,17 @@ class ElasticFoundation(Interaction):
     """The ElasticFoundation object defines a mechanical foundation.
     The ElasticFoundation object is derived from the Interaction object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactions[name]
+            import interaction
+            mdb.models[name].interactions[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - FOUNDATION
+        - FOUNDATION
     """
 
     #: A String specifying the repository key.
@@ -38,13 +37,12 @@ class ElasticFoundation(Interaction):
     ):
         """This method creates an ElasticFoundation object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ElasticFoundation
+                mdb.models[name].ElasticFoundation
 
         Parameters
         ----------

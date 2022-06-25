@@ -9,20 +9,19 @@ class ActuatorSensor(Interaction):
     as the actuator.
     The ActuatorSensor object is derived from the Interaction object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactions[name]
+            import interaction
+            mdb.models[name].interactions[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - ELEMENT
-            - USER ELEMENT
-            - INITIAL CONDITIONS
+        - ELEMENT
+                - USER ELEMENT
+                - INITIAL CONDITIONS
     """
 
     #: A String specifying the repository key.
@@ -73,13 +72,12 @@ class ActuatorSensor(Interaction):
     ):
         """This method creates an ActuatorSensor object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ActuatorSensor
+                mdb.models[name].ActuatorSensor
 
         Parameters
         ----------

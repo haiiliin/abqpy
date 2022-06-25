@@ -10,20 +10,19 @@ class TabularAmplitude(Amplitude):
     convenient points on the time scale.
     The TabularAmplitude object is derived from the Amplitude object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import amplitude
-        mdb.models[name].amplitudes[name]
-        import odbAmplitude
-        session.odbs[name].amplitudes[name]
+            import amplitude
+            mdb.models[name].amplitudes[name]
+            import odbAmplitude
+            session.odbs[name].amplitudes[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - AMPLITUDE
+        - AMPLITUDE
     """
 
     #: A :py:class:`~abaqus.Amplitude.BaselineCorrection.BaselineCorrection` object.
@@ -55,14 +54,13 @@ class TabularAmplitude(Amplitude):
     ):
         """This method creates a TabularAmplitude object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].TabularAmplitude
-            session.odbs[name].TabularAmplitude
+                mdb.models[name].TabularAmplitude
+                session.odbs[name].TabularAmplitude
 
         Parameters
         ----------

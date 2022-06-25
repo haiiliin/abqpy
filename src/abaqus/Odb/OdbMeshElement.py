@@ -6,29 +6,28 @@ class OdbMeshElement:
     """OdbMeshElement objects are created with the part.addElements or rootAssembly.addElements
     methods.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name].parts[name].elements[i]
-        session.odbs[name].parts[name].elementSets[name].elements[i]
-        session.odbs[name].parts[name].nodeSets[name].elements[i]
-        session.odbs[name].parts[name].surfaces[name].elements[i]
-        session.odbs[name].rootAssembly.elements[i]
-        session.odbs[name].rootAssembly.elementSets[name].elements[i]
-        session.odbs[name].rootAssembly.instances[name].elements[i]
-        session.odbs[name].rootAssembly.instances[name].elementSets[name].elements[i]
-        session.odbs[name].rootAssembly.instances[name].nodeSets[name].elements[i]
-        session.odbs[name].rootAssembly.instances[name].surfaces[name].elements[i]
-        session.odbs[name].rootAssembly.nodeSets[name].elements[i]
-        session.odbs[name].rootAssembly.surfaces[name].elements[i]
-        session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.elements[i]
-        session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.elementSets[name].elements[i]
-        session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.nodeSets[name].elements[i]
-        session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.surfaces[name].elements[i]
+            import odbAccess
+            session.odbs[name].parts[name].elements[i]
+            session.odbs[name].parts[name].elementSets[name].elements[i]
+            session.odbs[name].parts[name].nodeSets[name].elements[i]
+            session.odbs[name].parts[name].surfaces[name].elements[i]
+            session.odbs[name].rootAssembly.elements[i]
+            session.odbs[name].rootAssembly.elementSets[name].elements[i]
+            session.odbs[name].rootAssembly.instances[name].elements[i]
+            session.odbs[name].rootAssembly.instances[name].elementSets[name].elements[i]
+            session.odbs[name].rootAssembly.instances[name].nodeSets[name].elements[i]
+            session.odbs[name].rootAssembly.instances[name].surfaces[name].elements[i]
+            session.odbs[name].rootAssembly.nodeSets[name].elements[i]
+            session.odbs[name].rootAssembly.surfaces[name].elements[i]
+            session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.elements[i]
+            session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.elementSets[name].elements[i]
+            session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.nodeSets[name].elements[i]
+            session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.surfaces[name].elements[i]
     """
 
     #: An Int specifying the element label.

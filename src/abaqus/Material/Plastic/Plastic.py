@@ -10,69 +10,68 @@ from .Potential import Potential
 class Plastic:
     r"""The Plastic object specifies a metal plasticity model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].Plastic
-        import odbMaterial
-        session.odbs[name].materials[name].Plastic
+            import material
+            mdb.models[name].materials[name].Plastic
+            import odbMaterial
+            session.odbs[name].materials[name].Plastic
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **hardening** = ISOTROPIC, or if **hardening** = COMBINED and **dataType** = HALF_CYCLE, the table data specify the following:
-    
-        - Yield stress.
-        - Plastic strain.
-        - Equivalent plastic strain rate, :math:`\dot{\bar{\varepsilon}} p l`.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **hardening** = COMBINED and **dataType** = STABILIZED, the table data specify the following:
-    
-        - Yield stress.
-        - Plastic strain.
-        - Strain range, if the data depend on strain range.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **hardening** = COMBINED and **dataType** = PARAMETERS, the table data specify the following:
-    
-        - Yield stress at zero Plastic strain.
-        - The first kinematic hardening parameter, :math:`C_{1}`.
-        - The first kinematic hardening parameter, :math:`\gamma_{1}`.
-        - If applicable, the second kinematic hardening parameter, :math:`C_{2}`.
-        - If applicable, the second kinematic hardening parameter, :math:`\gamma_{2}`.
-        - Etc.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **hardening** = KINEMATIC, the table data specify the following:
-    
-        - Yield stress.
-        - Plastic strain.
-        - Temperature, if the data depend on temperature.
-    - If **hardening** = JOHNSON_COOK, the table data specify the following:
-    
-        - :math:`A`.
-        - :math:`B`.
-        - :math:`\mathrm{n}`.
-        - :math:`\mathrm{m}`.
-        - Melting temperature.
-        - Transition temperature.
-    - If **hardening** = USER, the table data specify the following:
-    
-        - Hardening properties.
+        - If **hardening** = ISOTROPIC, or if **hardening** = COMBINED and **dataType** = HALF_CYCLE, the table data specify the following:
+        
+            - Yield stress.
+            - Plastic strain.
+            - Equivalent plastic strain rate, :math:`\dot{\bar{\varepsilon}} p l`.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **hardening** = COMBINED and **dataType** = STABILIZED, the table data specify the following:
+        
+            - Yield stress.
+            - Plastic strain.
+            - Strain range, if the data depend on strain range.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **hardening** = COMBINED and **dataType** = PARAMETERS, the table data specify the following:
+        
+            - Yield stress at zero Plastic strain.
+            - The first kinematic hardening parameter, :math:`C_{1}`.
+            - The first kinematic hardening parameter, :math:`\gamma_{1}`.
+            - If applicable, the second kinematic hardening parameter, :math:`C_{2}`.
+            - If applicable, the second kinematic hardening parameter, :math:`\gamma_{2}`.
+            - Etc.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **hardening** = KINEMATIC, the table data specify the following:
+        
+            - Yield stress.
+            - Plastic strain.
+            - Temperature, if the data depend on temperature.
+        - If **hardening** = JOHNSON_COOK, the table data specify the following:
+        
+            - :math:`A`.
+            - :math:`B`.
+            - :math:`\mathrm{n}`.
+            - :math:`\mathrm{m}`.
+            - Melting temperature.
+            - Transition temperature.
+        - If **hardening** = USER, the table data specify the following:
+        
+            - Hardening properties.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - PLASTIC
+        - PLASTIC
     """
 
     #: A :py:class:`~abaqus.Material.Plastic.Metal.RateDependent.RateDependent.RateDependent` object.
@@ -106,14 +105,13 @@ class Plastic:
     ):
         """This method creates a Plastic object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].Plastic
-            session.odbs[name].materials[name].Plastic
+                mdb.models[name].materials[name].Plastic
+                session.odbs[name].materials[name].Plastic
 
         Parameters
         ----------

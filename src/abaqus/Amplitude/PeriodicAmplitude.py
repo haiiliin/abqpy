@@ -6,20 +6,19 @@ class PeriodicAmplitude(Amplitude):
     """The PeriodicAmplitude object defines an amplitude curve using a Fourier series.
     The PeriodicAmplitude object is derived from the Amplitude object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import amplitude
-        mdb.models[name].amplitudes[name]
-        import odbAmplitude
-        session.odbs[name].amplitudes[name]
+            import amplitude
+            mdb.models[name].amplitudes[name]
+            import odbAmplitude
+            session.odbs[name].amplitudes[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - AMPLITUDE
+        - AMPLITUDE
     """
 
     #: A String specifying the repository key.
@@ -52,14 +51,13 @@ class PeriodicAmplitude(Amplitude):
     ):
         """This method creates a PeriodicAmplitude object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].PeriodicAmplitude
-            session.odbs[name].PeriodicAmplitude
+                mdb.models[name].PeriodicAmplitude
+                session.odbs[name].PeriodicAmplitude
 
         Parameters
         ----------

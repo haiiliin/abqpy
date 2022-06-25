@@ -7,14 +7,13 @@ class SelfContactExp(Interaction):
     """The SelfContactExp object defines self-contact during an Abaqus/Explicit analysis.
     The SelfContactExp object is derived from the Interaction object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactions[name]
+            import interaction
+            mdb.models[name].interactions[name]
     """
 
     #: A String specifying the repository key.
@@ -50,13 +49,12 @@ class SelfContactExp(Interaction):
     ):
         """This method creates a SelfContactExp object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SelfContactExp
+                mdb.models[name].SelfContactExp
 
         Parameters
         ----------

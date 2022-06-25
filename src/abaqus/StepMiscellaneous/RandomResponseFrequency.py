@@ -2,14 +2,13 @@ class RandomResponseFrequency:
     """A RandomResponseFrequency is an object used to define frequency over a range of modes.
     This page discusses:
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name].freq[i]
+            import step
+            mdb.models[name].steps[name].freq[i]
     """
 
     #: A Float specifying the lower limit of the frequency range in cycles per time.

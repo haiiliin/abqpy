@@ -24,19 +24,18 @@ class SteadyStateSubspaceStep(AnalysisStep):
     method.
     The SteadyStateSubspaceStep object is derived from the AnalysisStep object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name]
+            import step
+            mdb.models[name].steps[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - STEADY STATE DYNAMICS
-            - STEP
+        - STEADY STATE DYNAMICS
+                - STEP
     """
 
     #: A String specifying the repository key.
@@ -201,13 +200,12 @@ class SteadyStateSubspaceStep(AnalysisStep):
     ):
         """This method creates a SteadyStateSubspaceStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SteadyStateSubspaceStep
+                mdb.models[name].SteadyStateSubspaceStep
 
         Parameters
         ----------

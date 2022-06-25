@@ -19,14 +19,13 @@ class OdbPartBase:
     """The OdbPart object is similar to the kernel Part object and contains nodes and elements,
     but not geometry.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name].parts[name]
+            import odbAccess
+            session.odbs[name].parts[name]
     """
 
     #: An :py:class:`~abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray` object.
@@ -68,13 +67,12 @@ class OdbPartBase:
         """This method creates an OdbPart object. Nodes and elements are added to this object at a
         later stage.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].Part
+                session.odbs[name].Part
 
         Parameters
         ----------

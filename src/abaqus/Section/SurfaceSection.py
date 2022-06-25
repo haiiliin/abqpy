@@ -7,20 +7,19 @@ class SurfaceSection(Section):
     """The SurfaceSection object defines the properties of a surface section.
     The SurfaceSection object is derived from the Section object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].sections[name]
-        import odbSection
-        session.odbs[name].sections[name]
+            import section
+            mdb.models[name].sections[name]
+            import odbSection
+            session.odbs[name].sections[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - SURFACE SECTION
+        - SURFACE SECTION
     """
 
     #: A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object specifying reinforcement properties.
@@ -40,14 +39,13 @@ class SurfaceSection(Section):
     def __init__(self, name: str, useDensity: Boolean = OFF, density: float = 0):
         """This method creates a SurfaceSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SurfaceSection
-            session.odbs[name].SurfaceSection
+                mdb.models[name].SurfaceSection
+                session.odbs[name].SurfaceSection
 
         Parameters
         ----------

@@ -30,14 +30,13 @@ class AssemblyBase(Feature):
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
     created.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import assembly
-        mdb.models[name].rootAssembly
+            import assembly
+            mdb.models[name].rootAssembly
     """
 
     #: An Int specifying that feature parameters have been modified but that the assembly has
@@ -145,13 +144,12 @@ class AssemblyBase(Feature):
     ) -> PartInstance:
         """This method creates a PartInstance object and puts it into the instances repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].rootAssembly.Instance
+                mdb.models[name].rootAssembly.Instance
 
         Parameters
         ----------
@@ -180,13 +178,12 @@ class AssemblyBase(Feature):
     ) -> ModelInstance:
         """This method creates a ModelInstance object and puts it into the instances repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].rootAssembly.Instance
+                mdb.models[name].rootAssembly.Instance
 
         Parameters
         ----------
@@ -211,13 +208,12 @@ class AssemblyBase(Feature):
     ) -> typing.Union[PartInstance, ModelInstance]:
         """This method creates a PartInstance object and puts it into the instances repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].rootAssembly.Instance
+                mdb.models[name].rootAssembly.Instance
 
         Parameters
         ----------

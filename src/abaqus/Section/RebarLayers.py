@@ -5,21 +5,20 @@ from .LayerPropertiesArray import LayerPropertiesArray
 class RebarLayers:
     """The RebarLayers object defines the rebar properties of a section.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].parts[name].compositeLayups[i].section.rebarLayers
-        mdb.models[name].sections[name].rebarLayers
-        import odbSection
-        session.odbs[name].sections[name].rebarLayers
+            import section
+            mdb.models[name].parts[name].compositeLayups[i].section.rebarLayers
+            mdb.models[name].sections[name].rebarLayers
+            import odbSection
+            session.odbs[name].sections[name].rebarLayers
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - REBAR LAYER
+        - REBAR LAYER
     """
 
     #: A SymbolicConstant specifying the type of rebar geometry. Possible values are CONSTANT,
@@ -34,15 +33,14 @@ class RebarLayers:
     ):
         """This method creates a RebarLayers object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].compositeLayups[i].section.RebarLayers
-            mdb.models[name].sections[name].RebarLayers
-            session.odbs[name].sections[name].RebarLayers
+                mdb.models[name].parts[name].compositeLayups[i].section.RebarLayers
+                mdb.models[name].sections[name].RebarLayers
+                session.odbs[name].sections[name].RebarLayers
 
         Parameters
         ----------

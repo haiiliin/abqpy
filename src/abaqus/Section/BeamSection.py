@@ -7,38 +7,37 @@ class BeamSection(Section):
     """The BeamSection object defines the properties of a beam section.
     The BeamSection object is derived from the Section object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].sections[name]
-        import odbSection
-        session.odbs[name].sections[name]
+            import section
+            mdb.models[name].sections[name]
+            import odbSection
+            session.odbs[name].sections[name]
 
-        The table data for this object are:
-        
-        The table data specify the following:
-        
-            - E, the Young's modulus of the section.
-            - G, the torsional shear modulus of the section.
-            - Thermal expansion coefficient, if using thermal expansion.
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
+            The table data for this object are:
+            
+            The table data specify the following:
+            
+                - E, the Young's modulus of the section.
+                - G, the torsional shear modulus of the section.
+                - Thermal expansion coefficient, if using thermal expansion.
+                - Temperature, if the data depend on temperature.
+                - Value of the first field variable, if the data depend on field variables.
+                - Value of the second field variable.
+                - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - BEAM GENERAL SECTION
-    - BEAM SECTION
-    - BEAM FLUID INERTIA
-    - CENTROID
-    - DAMPING
-    - SHEAR CENTER
-    - SECTION POINTS
+        - BEAM GENERAL SECTION
+        - BEAM SECTION
+        - BEAM FLUID INERTIA
+        - CENTROID
+        - DAMPING
+        - SHEAR CENTER
+        - SECTION POINTS
     """
 
     #: A :py:class:`~abaqus.Section.TransverseShearBeam.TransverseShearBeam` object specifying the transverse shear stiffness properties.
@@ -192,14 +191,13 @@ class BeamSection(Section):
     ):
         """This method creates a BeamSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].BeamSection
-            session.odbs[name].BeamSection
+                mdb.models[name].BeamSection
+                session.odbs[name].BeamSection
 
         Parameters
         ----------

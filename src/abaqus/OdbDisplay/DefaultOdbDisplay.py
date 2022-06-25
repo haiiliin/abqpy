@@ -14,14 +14,13 @@ class DefaultOdbDisplay:
     """The DefaultOdbDisplay object is a limited-functionality version of the OdbDisplay
     object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.defaultOdbDisplay
+            import visualization
+            session.defaultOdbDisplay
     """
 
     #: A :py:class:`~abaqus.PlotOptions.BasicOptions.BasicOptions` object.

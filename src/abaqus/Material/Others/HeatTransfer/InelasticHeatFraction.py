@@ -2,33 +2,31 @@ class InelasticHeatFraction:
     """The InelasticHeatFraction object defines the fraction of the rate of inelastic
     dissipation that appears as a heat source.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].inelasticHeatFraction
-        import odbMaterial
-        session.odbs[name].materials[name].inelasticHeatFraction
+            import material
+            mdb.models[name].materials[name].inelasticHeatFraction
+            import odbMaterial
+            session.odbs[name].materials[name].inelasticHeatFraction
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - INELASTIC HEAT FRACTION
+        - INELASTIC HEAT FRACTION
     """
 
     def __init__(self, fraction: float = 0):
         """This method creates an InelasticHeatFraction object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].InelasticHeatFraction
-            session.odbs[name].materials[name].InelasticHeatFraction
+                mdb.models[name].materials[name].InelasticHeatFraction
+                session.odbs[name].materials[name].InelasticHeatFraction
 
         Parameters
         ----------

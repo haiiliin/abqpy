@@ -17,26 +17,24 @@ from ..Model.ModelBase import ModelBase
 class BeamSectionProfileModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name]
+            mdb.models[name]
     """
 
     def beamProfilesFromOdb(self, fileName: str):
         """This method creates Profile objects by reading an output database. The new profiles are
         placed in the profiles repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].beamProfilesFromOdb
+                mdb.models[name].beamProfilesFromOdb
 
         Parameters
         ----------
@@ -57,14 +55,13 @@ class BeamSectionProfileModel(ModelBase):
     def ArbitraryProfile(self, name: str, table: tuple) -> ArbitraryProfile:
         """This method creates a ArbitraryProfile object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ArbitraryProfile
-            session.odbs[name].ArbitraryProfile
+                mdb.models[name].ArbitraryProfile
+                session.odbs[name].ArbitraryProfile
 
         Parameters
         ----------
@@ -98,14 +95,13 @@ class BeamSectionProfileModel(ModelBase):
     ) -> BoxProfile:
         """This method creates a BoxProfile object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].BoxProfile
-            session.odbs[name].BoxProfile
+                mdb.models[name].BoxProfile
+                session.odbs[name].BoxProfile
 
         Parameters
         ----------
@@ -149,14 +145,13 @@ class BeamSectionProfileModel(ModelBase):
     def CircularProfile(self, name: str, r: float) -> CircularProfile:
         """This method creates a CircularProfile object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].CircularProfile
-            session.odbs[name].CircularProfile
+                mdb.models[name].CircularProfile
+                session.odbs[name].CircularProfile
 
         Parameters
         ----------
@@ -192,14 +187,13 @@ class BeamSectionProfileModel(ModelBase):
     ) -> GeneralizedProfile:
         """This method creates a GeneralizedProfile object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].GeneralizedProfile
-            session.odbs[name].GeneralizedProfile
+                mdb.models[name].GeneralizedProfile
+                session.odbs[name].GeneralizedProfile
 
         Parameters
         ----------
@@ -237,14 +231,13 @@ class BeamSectionProfileModel(ModelBase):
     def HexagonalProfile(self, name: str, r: float, t: float) -> HexagonalProfile:
         """This method creates a HexagonalProfile object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].HexagonalProfile
-            session.odbs[name].HexagonalProfile
+                mdb.models[name].HexagonalProfile
+                session.odbs[name].HexagonalProfile
 
         Parameters
         ----------
@@ -283,14 +276,13 @@ class BeamSectionProfileModel(ModelBase):
     ) -> IProfile:
         """This method creates an IProfile object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].IProfile
-            session.odbs[name].IProfile
+                mdb.models[name].IProfile
+                session.odbs[name].IProfile
 
         Parameters
         ----------
@@ -328,14 +320,13 @@ class BeamSectionProfileModel(ModelBase):
     def LProfile(self, name: str, a: float, b: float, t1: float, t2: float) -> LProfile:
         """This method creates a LProfile object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].LProfile
-            session.odbs[name].LProfile
+                mdb.models[name].LProfile
+                session.odbs[name].LProfile
 
         Parameters
         ----------
@@ -369,14 +360,13 @@ class BeamSectionProfileModel(ModelBase):
     def PipeProfile(self, name: str, r: float, t: float) -> PipeProfile:
         """This method creates a PipeProfile object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].PipeProfile
-            session.odbs[name].PipeProfile
+                mdb.models[name].PipeProfile
+                session.odbs[name].PipeProfile
 
         Parameters
         ----------
@@ -404,14 +394,13 @@ class BeamSectionProfileModel(ModelBase):
     def RectangularProfile(self, name: str, a: float, b: float) -> RectangularProfile:
         """This method creates a RectangularProfile object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].RectangularProfile
-            session.odbs[name].RectangularProfile
+                mdb.models[name].RectangularProfile
+                session.odbs[name].RectangularProfile
 
         Parameters
         ----------
@@ -441,14 +430,13 @@ class BeamSectionProfileModel(ModelBase):
     ) -> TProfile:
         """This method creates a TProfile object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].TProfile
-            session.odbs[name].TProfile
+                mdb.models[name].TProfile
+                session.odbs[name].TProfile
 
         Parameters
         ----------
@@ -487,14 +475,13 @@ class BeamSectionProfileModel(ModelBase):
     ) -> TrapezoidalProfile:
         """This method creates a TrapezoidalProfile object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].TrapezoidalProfile
-            session.odbs[name].TrapezoidalProfile
+                mdb.models[name].TrapezoidalProfile
+                session.odbs[name].TrapezoidalProfile
 
         Parameters
         ----------

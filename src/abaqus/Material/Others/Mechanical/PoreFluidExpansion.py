@@ -5,28 +5,27 @@ class PoreFluidExpansion:
     r"""The PoreFluidExpansion object specifies the thermal expansion coefficient for a
     hydraulic fluid.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].poreFluidExpansion
-        import odbMaterial
-        session.odbs[name].materials[name].poreFluidExpansion
+            import material
+            mdb.models[name].materials[name].poreFluidExpansion
+            import odbMaterial
+            session.odbs[name].materials[name].poreFluidExpansion
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Mean coefficient of thermal expansion, :math:`\theta_0`.
-    - Temperature, if the data depend on temperature.
-    - Value of the first field variable, if the data depend on field variables.
-    - Value of the second field variable.
-    - Etc.
+        - Mean coefficient of thermal expansion, :math:`\theta_0`.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - EXPANSION
+        - EXPANSION
     """
 
     def __init__(
@@ -38,14 +37,13 @@ class PoreFluidExpansion:
     ):
         """This method creates a PoreFluidExpansion object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].PoreFluidExpansion
-            session.odbs[name].materials[name].PoreFluidExpansion
+                mdb.models[name].materials[name].PoreFluidExpansion
+                session.odbs[name].materials[name].PoreFluidExpansion
 
         Parameters
         ----------

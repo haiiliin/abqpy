@@ -6,25 +6,24 @@ from abaqusConstants import *
 class HistoryOutputRequest:
     """The HistoryOutputRequest object defines a history output request.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].historyOutputRequests[name]
+            import step
+            mdb.models[name].historyOutputRequests[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONTACT OUTPUT
-            - ELEMENT OUTPUT
-            - ENERGY OUTPUT
-            - INCREMENTATION OUTPUT
-            - MODAL OUTPUT
-            - NODE OUTPUT
-            - OUTPUT
-            - RADIATION OUTPUT
+        - CONTACT OUTPUT
+                - ELEMENT OUTPUT
+                - ENERGY OUTPUT
+                - INCREMENTATION OUTPUT
+                - MODAL OUTPUT
+                - NODE OUTPUT
+                - OUTPUT
+                - RADIATION OUTPUT
     """
 
     #: A String specifying a bolt load from which output is requested. The default value is an
@@ -76,13 +75,12 @@ class HistoryOutputRequest:
     ):
         """This method creates a HistoryOutputRequest object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].HistoryOutputRequest
+                mdb.models[name].HistoryOutputRequest
 
         Parameters
         ----------

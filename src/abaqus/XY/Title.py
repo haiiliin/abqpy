@@ -7,15 +7,14 @@ class Title:
     """The Title object is used to store the display attributes of the XYPlot title. An Title
     object is automatically created when creating a XYPlot object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.defaultPlot.title
-        session.xyPlots[name].title
+            import visualization
+            session.defaultPlot.title
+            session.xyPlots[name].title
     """
 
     #: A Boolean specifying whether to show the default title. The default value is OFF.

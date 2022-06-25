@@ -7,14 +7,13 @@ class EulerianBC(BoundaryCondition):
     """The EulerianBC object stores the data for an Eulerian boundary condition.
     The EulerianBC object is derived from the BoundaryCondition object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].boundaryConditions[name]
+            import load
+            mdb.models[name].boundaryConditions[name]
     """
 
     #: A String specifying the boundary condition repository key.
@@ -56,13 +55,12 @@ class EulerianBC(BoundaryCondition):
     ):
         """This method creates a EulerianBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].EulerianBC
+                mdb.models[name].EulerianBC
 
         Parameters
         ----------

@@ -24,19 +24,18 @@ class SteadyStateDirectStep(AnalysisStep):
     freedom of the model.
     The SteadyStateDirectStep object is derived from the AnalysisStep object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name]
+            import step
+            mdb.models[name].steps[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - STEADY STATE DYNAMICS
-            - STEP
+        - STEADY STATE DYNAMICS
+                - STEP
     """
 
     #: A String specifying the repository key.
@@ -183,13 +182,12 @@ class SteadyStateDirectStep(AnalysisStep):
     ):
         """This method creates a SteadyStateDirectStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SteadyStateDirectStep
+                mdb.models[name].SteadyStateDirectStep
 
         Parameters
         ----------

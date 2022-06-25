@@ -22,19 +22,18 @@ class DirectCyclicStep(AnalysisStep):
     at the interfaces in laminated composites in a low-cycle fatigue analysis.
     The DirectCyclicStep object is derived from the AnalysisStep object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name]
+            import step
+            mdb.models[name].steps[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - DIRECT CYCLIC
-            - STEP
+        - DIRECT CYCLIC
+                - STEP
     """
 
     #: A String specifying the repository key.
@@ -263,13 +262,12 @@ class DirectCyclicStep(AnalysisStep):
     ):
         """This method creates a DirectCyclicStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].DirectCyclicStep
+                mdb.models[name].DirectCyclicStep
 
         Parameters
         ----------

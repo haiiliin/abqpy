@@ -9,19 +9,18 @@ class MaterialOrientation:
     """The MaterialOrientation object represents the orientation of the material properties and
     composite layups.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].parts[name].compositeLayups[i].orientation
-        mdb.models[name].parts[name].materialOrientations[i]
-        import odbAccess
-        session.odbs[name].parts[name].materialOrientations[i]
-        session.odbs[name].rootAssembly.instances[name].materialOrientations[i]
-        session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.materialOrientations[i]
+            import section
+            mdb.models[name].parts[name].compositeLayups[i].orientation
+            mdb.models[name].parts[name].materialOrientations[i]
+            import odbAccess
+            session.odbs[name].parts[name].materialOrientations[i]
+            session.odbs[name].rootAssembly.instances[name].materialOrientations[i]
+            session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.materialOrientations[i]
     """
 
     #: A SymbolicConstant specifying the method used to describe the additional rotation when a
@@ -141,13 +140,12 @@ class MaterialOrientation:
     ):
         """This method creates a MaterialOrientation object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].MaterialOrientation
+                mdb.models[name].parts[*name*].MaterialOrientation
 
         Parameters
         ----------
@@ -249,13 +247,12 @@ class MaterialOrientation:
     ):
         """This method creates a MaterialOrientation object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].MaterialOrientation
+                mdb.models[name].parts[*name*].MaterialOrientation
 
         Parameters
         ----------

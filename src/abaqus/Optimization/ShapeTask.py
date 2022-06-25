@@ -11,14 +11,13 @@ class ShapeTask(OptimizationTask):
     """The ShapeTask object defines a shape task.
     The ShapeTask object is derived from the OptimizationTask object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import optimization
-        mdb.models[name].optimizationTasks[name]
+            import optimization
+            mdb.models[name].optimizationTasks[name]
     """
 
     #: A repository of DesignResponse objects.
@@ -277,13 +276,12 @@ class ShapeTask(OptimizationTask):
     ):
         """This method creates a ShapeTask object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      mdb.models[name].ShapeTask
+                mdb.models[name].ShapeTask
 
         Parameters
         ----------

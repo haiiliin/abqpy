@@ -6,15 +6,14 @@ class Message:
     messages are not returned if a script is run without the Abaqus/CAE GUI (using the noGUI
     option).
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import job
-        mdb.coexecutions[name].jobs[name].messages[i]
-        mdb.jobs[name].messages[i]
+            import job
+            mdb.coexecutions[name].jobs[name].messages[i]
+            mdb.jobs[name].messages[i]
     """
 
     #: A SymbolicConstant specifying the type of message. Possible values are:

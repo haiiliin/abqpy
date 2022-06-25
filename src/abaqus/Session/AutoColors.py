@@ -1,13 +1,12 @@
 class AutoColors:
     """The AutoColors object defines a color palette.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        session.autoColors
+            session.autoColors
     """
 
     def setValues(self, colors: tuple):

@@ -2,14 +2,13 @@ class ConstrainedSketchParameter:
     """The ConstrainedSketchParameter object stores the definition of a parameter in the
     sketch.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import sketch
-        mdb.models[name].sketches[name].parameters[i]
+            import sketch
+            mdb.models[name].sketches[name].parameters[i]
     """
 
     #: A String specifying the name of the ConstrainedSketchParameter object.
@@ -37,13 +36,12 @@ class ConstrainedSketchParameter:
         """This method creates a parameter and optionally associates a dimension with this
         parameter.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].ConstrainedSketchParameter
+                mdb.models[name].sketches[name].ConstrainedSketchParameter
 
         Parameters
         ----------

@@ -9,14 +9,13 @@ class ConcentratedForce(Load):
     """The ConcentratedForce object defines a concentrated force.
     The ConcentratedForce object is derived from the Load object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].loads[name]
+            import load
+            mdb.models[name].loads[name]
     """
 
     #: A String specifying the load repository key.
@@ -61,13 +60,12 @@ class ConcentratedForce(Load):
     ):
         """This method creates a ConcentratedForce object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ConcentratedForce
+                mdb.models[name].ConcentratedForce
 
         Parameters
         ----------

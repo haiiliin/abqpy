@@ -8,16 +8,15 @@ class Arrow(Annotation):
     """The Arrow object stores the visual settings and location of an arrow annotation.
     The Arrow object is derived from the Annotation object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import annotationToolset
-        mdb.annotations[name]
-        session.odbs[name].userData.annotations[name]
-        session.viewports[name].annotationsToPlot[i]
+            import annotationToolset
+            mdb.annotations[name]
+            session.odbs[name].userData.annotations[name]
+            session.viewports[name].annotationsToPlot[i]
     """
 
     #: A String specifying the annotation repository key.
@@ -136,14 +135,13 @@ class Arrow(Annotation):
     ):
         """This method creates an Arrow object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.Arrow
-            session.odbs[*name*].userData.Arrow
+                mdb.Arrow
+                session.odbs[*name*].userData.Arrow
 
         Parameters
         ----------

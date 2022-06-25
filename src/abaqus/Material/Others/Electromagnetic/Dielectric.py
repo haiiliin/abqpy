@@ -4,54 +4,53 @@ from abaqusConstants import *
 class Dielectric:
     r"""The Dielectric object specifies dielectric material properties.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].dielectric
-        import odbMaterial
-        session.odbs[name].materials[name].dielectric
+            import material
+            mdb.models[name].materials[name].dielectric
+            import odbMaterial
+            session.odbs[name].materials[name].dielectric
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **type** = ISOTROPIC, the table data specify the following:
-    
-        - Dielectric constant.
-        - Frequency, if the data depend on frequency.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **type** = ORTHOTROPIC, the table data specify the following:
-    
-        - :math:`D_{11}^{\varphi}`
-        - :math:`D_{22}^{\varphi}`.
-        - :math:`D_{33}^{\varphi}`
-        - Frequency, if the data depend on frequency.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **type** = ANISOTROPIC, the table data specify the following:
-    
-        - :math:`D_{11}^{\varphi}`
-        - :math:`D_{12}^{\varphi}`
-        - :math:`D_{22}^{\varphi}`
-        - :math:`D_{13}^{\varphi}`
-        - :math:`D_{23}^{\varphi}`
-        - :math:`D_{33}^{\varphi}`
-        - Frequency, if the data depend on frequency.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+        - If **type** = ISOTROPIC, the table data specify the following:
+        
+            - Dielectric constant.
+            - Frequency, if the data depend on frequency.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **type** = ORTHOTROPIC, the table data specify the following:
+        
+            - :math:`D_{11}^{\varphi}`
+            - :math:`D_{22}^{\varphi}`.
+            - :math:`D_{33}^{\varphi}`
+            - Frequency, if the data depend on frequency.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **type** = ANISOTROPIC, the table data specify the following:
+        
+            - :math:`D_{11}^{\varphi}`
+            - :math:`D_{12}^{\varphi}`
+            - :math:`D_{22}^{\varphi}`
+            - :math:`D_{13}^{\varphi}`
+            - :math:`D_{23}^{\varphi}`
+            - :math:`D_{33}^{\varphi}`
+            - Frequency, if the data depend on frequency.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - DIELECTRIC
+        - DIELECTRIC
     """
 
     def __init__(
@@ -64,14 +63,13 @@ class Dielectric:
     ):
         """This method creates a Dielectric object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].Dielectric
-            session.odbs[name].materials[name].Dielectric
+                mdb.models[name].materials[name].Dielectric
+                session.odbs[name].materials[name].Dielectric
 
         Parameters
         ----------

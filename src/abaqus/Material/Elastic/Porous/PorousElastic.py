@@ -4,43 +4,42 @@ from abaqusConstants import *
 class PorousElastic:
     r"""The PorousElastic object specifies elastic material properties for porous materials.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].porousElastic
-        import odbMaterial
-        session.odbs[name].materials[name].porousElastic
+            import material
+            mdb.models[name].materials[name].porousElastic
+            import odbMaterial
+            session.odbs[name].materials[name].porousElastic
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **shear** = :math:`G`, the table data specify the following:
-    
-        - The logarithmic bulk modulus, :math:`\kappa`. (Dimensionless.)
-        - The shear modulus, :math:`G`.
-        - The elastic tensile limit, :math:`p_{t}^{e l}`.
-          (This value cannot be negative.)
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+        - If **shear** = :math:`G`, the table data specify the following:
         
-    - If **shear** = POISSON, the table data specify the following:
-    
-        - The logarithmic bulk modulus, :math:`\kappa`. (Dimensionless.)
-        - The Poisson's ratio, :math:`\nu`.
-        - The elastic tensile limit, :math:`p_{t}^{e l}`. (This value cannot be negative.)
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+            - The logarithmic bulk modulus, :math:`\kappa`. (Dimensionless.)
+            - The shear modulus, :math:`G`.
+            - The elastic tensile limit, :math:`p_{t}^{e l}`.
+              (This value cannot be negative.)
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+            
+        - If **shear** = POISSON, the table data specify the following:
+        
+            - The logarithmic bulk modulus, :math:`\kappa`. (Dimensionless.)
+            - The Poisson's ratio, :math:`\nu`.
+            - The elastic tensile limit, :math:`p_{t}^{e l}`. (This value cannot be negative.)
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - POROUS ELASTIC
+        - POROUS ELASTIC
     """
 
     def __init__(
@@ -52,14 +51,13 @@ class PorousElastic:
     ):
         """This method creates a PorousElastic object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].PorousElastic
-            session.odbs[name].materials[name].PorousElastic
+                mdb.models[name].materials[name].PorousElastic
+                session.odbs[name].materials[name].PorousElastic
 
         Parameters
         ----------

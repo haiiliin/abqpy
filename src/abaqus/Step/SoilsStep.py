@@ -20,19 +20,18 @@ class SoilsStep(AnalysisStep):
     response analysis of partially or fully saturated fluid-filled porous media.
     The SoilsStep object is derived from the AnalysisStep object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name]
+            import step
+            mdb.models[name].steps[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - SOILS
-            - STEP
+        - SOILS
+                - STEP
     """
 
     #: A String specifying the repository key.
@@ -268,13 +267,12 @@ class SoilsStep(AnalysisStep):
     ):
         """This method creates a SoilsStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SoilsStep
+                mdb.models[name].SoilsStep
 
         Parameters
         ----------

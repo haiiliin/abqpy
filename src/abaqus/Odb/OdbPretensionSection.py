@@ -6,14 +6,13 @@ class OdbPretensionSection:
     """The pretension section object is used to define an assembly load. It associates a
     pretension node with a pretension section.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name].rootAssembly.pretensionSections[i]
+            import odbAccess
+            session.odbs[name].rootAssembly.pretensionSections[i]
     """
 
     #: An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the node set containing the pretension node.

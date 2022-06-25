@@ -7,14 +7,13 @@ class BodyCurrentDensity(Load):
     """The BodyCurrentDensity object stores the data for a body current.
     The BodyCurrentDensity object is derived from the Load object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].loads[name]
+            import load
+            mdb.models[name].loads[name]
     """
 
     #: A String specifying the load repository key.
@@ -40,13 +39,12 @@ class BodyCurrentDensity(Load):
     ):
         """This method creates a BodyCurrentDensity object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].BodyCurrentDensity
+                mdb.models[name].BodyCurrentDensity
 
         Parameters
         ----------

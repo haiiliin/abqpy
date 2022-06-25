@@ -22,13 +22,12 @@ class PropertyPart(PartBase):
     ) -> CompositeLayup:
         """This method creates a CompositeLayup object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].CompositeLayup
+                mdb.models[name].parts[name].CompositeLayup
 
         Parameters
         ----------
@@ -85,14 +84,13 @@ class PropertyPart(PartBase):
     ):
         """This method creates a SectionAssignment object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].SectionAssignment
-            mdb.models[name].rootAssembly.SectionAssignment
+                mdb.models[name].parts[name].SectionAssignment
+                mdb.models[name].rootAssembly.SectionAssignment
 
         Parameters
         ----------
@@ -149,13 +147,12 @@ class PropertyPart(PartBase):
     ) -> MaterialOrientation:
         """This method creates a MaterialOrientation object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].MaterialOrientation
+                mdb.models[name].parts[name].MaterialOrientation
 
         Parameters
         ----------

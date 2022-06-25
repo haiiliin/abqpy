@@ -2,16 +2,15 @@ class Profile:
     """The Profile object defines the geometrical properties of a beam cross-section. Profile
     is an abstract base type.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].profiles[name]
-        import odbSection
-        session.odbs[name].profiles[name]
+            import section
+            mdb.models[name].profiles[name]
+            import odbSection
+            session.odbs[name].profiles[name]
     """
 
     #: A String specifying the repository key.
@@ -21,13 +20,12 @@ class Profile:
         """This method creates Profile objects by reading an output database. The new profiles are
         placed in the profiles repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].beamProfilesFromOdb
+                mdb.models[name].beamProfilesFromOdb
 
         Parameters
         ----------

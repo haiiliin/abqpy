@@ -7,14 +7,13 @@ class AdaptivityProcess:
     """The AdaptivityProcess object defines a series of jobs that will be submitted for
     analysis. Abaqus performs adaptive remeshing between each job.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import job
-        mdb.adaptivityProcesses[name]
+            import job
+            mdb.adaptivityProcesses[name]
     """
 
     #: A SymbolicConstant specifying the status of the adaptivity process. Possible values are
@@ -47,13 +46,12 @@ class AdaptivityProcess:
     ):
         """This method creates an AdaptivityProcess object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.AdaptivityProcess
+                mdb.AdaptivityProcess
 
         Parameters
         ----------
@@ -130,13 +128,12 @@ class AdaptivityProcess:
     ) -> AdaptivityIteration:
         """This method creates an AdaptivityIteration object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.AdaptivityProcess
+                mdb.AdaptivityProcess
 
         Parameters
         ----------

@@ -6,18 +6,17 @@ class ParameterColumn:
     collectively build the type of parameter table. Once the object is created, it is
     noneditable.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name].tableCollections[name].parameterTables[name].columns[i]
+            mdb.models[name].tableCollections[name].parameterTables[name].columns[i]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - *PARAMETER TABLE TYPE
-            - *PARAMETER TABLE
+        - *PARAMETER TABLE TYPE
+                - *PARAMETER TABLE
     """
 
     #: A SymbolicConstant specifying the data type of the parameter. Possible values are
@@ -49,13 +48,12 @@ class ParameterColumn:
         it in the array data structure. It is accessible from the ParameterTable object using a
         column member.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].tableCollections[name].parameterTables[name].Column
+                mdb.models[name].tableCollections[name].parameterTables[name].Column
 
         Parameters
         ----------

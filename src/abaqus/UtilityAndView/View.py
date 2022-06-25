@@ -10,15 +10,14 @@ class View:
     The Layer View objects store a transformation matrix used to position the contents of
     the Layer within a viewport.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        session.viewports[name].layers[name].view
-        session.viewports[name].view
-        session.views[name]
+            session.viewports[name].layers[name].view
+            session.viewports[name].view
+            session.views[name]
     """
 
     #: A Float specifying the width in viewport millimeters of the bounding rectangle around
@@ -112,13 +111,12 @@ class View:
         Note:All dimensions and coordinates are specified in the model coordinate system.
         Note:This method cannot be used to create a View for a Layer object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.View
+                session.View
 
         Parameters
         ----------

@@ -11,14 +11,13 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     The VelocityAdaptiveMeshConstraint object is derived from the AdaptiveMeshConstraint
     object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].adaptiveMeshConstraints[name]
+            import step
+            mdb.models[name].adaptiveMeshConstraints[name]
     """
 
     #: A String specifying the adaptive mesh constraint repository key.
@@ -53,13 +52,12 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     ):
         """This method creates a VelocityAdaptiveMeshConstraint object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].VelocityAdaptiveMeshConstraint
+                mdb.models[name].VelocityAdaptiveMeshConstraint
 
         Parameters
         ----------

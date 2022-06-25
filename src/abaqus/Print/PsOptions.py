@@ -6,13 +6,12 @@ class PsOptions:
     format. The PsOptions object has no constructor. Abaqus creates the **psOptions** member
     when a session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        session.psOptions
+            session.psOptions
     """
 
     def setValues(

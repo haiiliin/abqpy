@@ -16,16 +16,15 @@ class ConnectorBehaviorOption:
     constructor. The members of the ConnectorBehaviorOption object are common to all objects
     derived from the ConnectorBehaviorOption.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].sections[name].behaviorOptions[i]
-        import odbSection
-        session.odbs[name].sections[name].behaviorOptions[i]
+            import section
+            mdb.models[name].sections[name].behaviorOptions[i]
+            import odbSection
+            session.odbs[name].sections[name].behaviorOptions[i]
     """
 
     #: A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object.
@@ -72,14 +71,13 @@ class ConnectorBehaviorOption:
     ) -> TangentialBehavior:
         """This method creates a TangentialBehavior object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sections[name].behaviorOptions[i].TangentialBehavior
-            session.odbs[name].sections[name].behaviorOptions[i].TangentialBehavior
+                mdb.models[name].sections[name].behaviorOptions[i].TangentialBehavior
+                session.odbs[name].sections[name].behaviorOptions[i].TangentialBehavior
 
         Parameters
         ----------
@@ -139,14 +137,13 @@ class ConnectorBehaviorOption:
     def DerivedComponent(self) -> DerivedComponent:
         """This method creates a DerivedComponent object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sections[name].behaviorOptions[i].TangentialBehavior
-            session.odbs[name].sections[name].behaviorOptions[i].TangentialBehavior
+                mdb.models[name].sections[name].behaviorOptions[i].TangentialBehavior
+                session.odbs[name].sections[name].behaviorOptions[i].TangentialBehavior
 
         Returns
         -------
@@ -175,14 +172,13 @@ class ConnectorBehaviorOption:
         """This method creates a connector options object to be used in conjunction with an
         allowable connector behavior option, derived component term, or connector section.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sections[name].behaviorOptions[i].TangentialBehavior
-            session.odbs[name].sections[name].behaviorOptions[i].TangentialBehavior
+                mdb.models[name].sections[name].behaviorOptions[i].TangentialBehavior
+                session.odbs[name].sections[name].behaviorOptions[i].TangentialBehavior
 
         Parameters
         ----------

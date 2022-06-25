@@ -19,16 +19,15 @@ class BasicOptions:
     preferences.
     - The basic options associated with a particular viewport.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.defaultOdbDisplay.basicOptions
-        session.viewports[name].layers[name].odbDisplay.basicOptions
-        session.viewports[name].odbDisplay.basicOptions
+            import visualization
+            session.defaultOdbDisplay.basicOptions
+            session.viewports[name].layers[name].odbDisplay.basicOptions
+            session.viewports[name].odbDisplay.basicOptions
     """
 
     #: A Boolean specifying whether to ignore region boundaries when computing values. The

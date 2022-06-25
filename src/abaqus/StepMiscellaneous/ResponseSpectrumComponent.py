@@ -1,14 +1,13 @@
 class ResponseSpectrumComponent:
     """A ResponseSpectrumComponent is an element of the ResponseSpectrumComponentArray.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name].components[i]
+            import step
+            mdb.models[name].steps[name].components[i]
     """
 
     #: A Float specifying the **X**-direction cosine.

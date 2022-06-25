@@ -9,24 +9,23 @@ class CavityRadiation(Interaction):
     controls the calculation of viewfactors.
     The CavityRadiation object is derived from the Interaction object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactions[name]
+            import interaction
+            mdb.models[name].interactions[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CAVITY DEFINITION
-            - CYCLIC
-            - EMISSIVITY
-            - PERIODIC
-            - RADIATION SYMMETRY
-            - RADIATION VIEWFACTOR
-            - REFLECTION
+        - CAVITY DEFINITION
+                - CYCLIC
+                - EMISSIVITY
+                - PERIODIC
+                - RADIATION SYMMETRY
+                - RADIATION VIEWFACTOR
+                - REFLECTION
     """
 
     #: A String specifying the repository key.
@@ -189,13 +188,12 @@ class CavityRadiation(Interaction):
     ):
         """This method creates a CavityRadiation object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].CavityRadiation
+                mdb.models[name].CavityRadiation
 
         Parameters
         ----------

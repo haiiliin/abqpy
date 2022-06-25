@@ -5,14 +5,13 @@ class IMAField:
     """A IMAField is an object used to define material instance name volume fractions for the
     MaterialAssignment predefined field.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].predefinedFields[name].fieldList
+            import load
+            mdb.models[name].predefinedFields[name].fieldList
     """
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the sub-region of the selected part instance to which the

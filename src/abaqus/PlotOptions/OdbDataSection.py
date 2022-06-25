@@ -1,14 +1,13 @@
 class OdbDataSection:
     """The OdbDataSection object stores section data.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.odbData[name].sections[i]
+            import visualization
+            session.odbData[name].sections[i]
     """
 
     #: A String specifying the set name. This attribute is read-only.

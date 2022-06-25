@@ -19,13 +19,12 @@ from ..Region.Region import Region
 class ConstraintModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name]
+            mdb.models[name]
     """
 
     def AdjustPoints(
@@ -33,13 +32,12 @@ class ConstraintModel(ModelBase):
     ) -> AdjustPoints:
         """This method creates an AdjustPoints object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].AdjustPoints
+                mdb.models[name].AdjustPoints
 
         Parameters
         ----------
@@ -77,13 +75,12 @@ class ConstraintModel(ModelBase):
     ) -> Coupling:
         """This method creates a Coupling object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Coupling
+                mdb.models[name].Coupling
 
         Parameters
         ----------
@@ -164,13 +161,12 @@ class ConstraintModel(ModelBase):
     ) -> DisplayBody:
         """This method creates a DisplayBody object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].DisplayBody
+                mdb.models[name].DisplayBody
 
         Parameters
         ----------
@@ -205,13 +201,12 @@ class ConstraintModel(ModelBase):
     ) -> EmbeddedRegion:
         """This method creates a EmbeddedRegion object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].EmbeddedRegion
+                mdb.models[name].EmbeddedRegion
 
         Parameters
         ----------
@@ -260,13 +255,12 @@ class ConstraintModel(ModelBase):
     def Equation(self, name: str, terms: tuple) -> Equation:
         """This method creates an Equation object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Equation
+                mdb.models[name].Equation
 
         Parameters
         ----------
@@ -300,13 +294,12 @@ class ConstraintModel(ModelBase):
     ) -> MultipointConstraint:
         """This method creates a MultipointConstraint object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].MultipointConstraint
+                mdb.models[name].MultipointConstraint
 
         Parameters
         ----------
@@ -357,13 +350,12 @@ class ConstraintModel(ModelBase):
     ) -> RigidBody:
         """This method creates a RigidBody object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].RigidBody
+                mdb.models[name].RigidBody
 
         Parameters
         ----------
@@ -419,13 +411,12 @@ class ConstraintModel(ModelBase):
     ) -> ShellSolidCoupling:
         """This method creates a ShellSolidCoupling object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ShellSolidCoupling
+                mdb.models[name].ShellSolidCoupling
 
         Parameters
         ----------
@@ -482,13 +473,12 @@ class ConstraintModel(ModelBase):
     ) -> Tie:
         """This method creates a Tie object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Tie
+                mdb.models[name].Tie
 
         Parameters
         ----------

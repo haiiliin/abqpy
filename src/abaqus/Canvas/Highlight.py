@@ -7,13 +7,12 @@ remove the highlighting.
 def highlight(object: str):
     """This method highlights an object in the current viewport.
 
-    Notes
-    -----
-        This function can be accessed by:
+    .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            highlight
+                highlight
 
     Parameters
     ----------
@@ -53,13 +52,12 @@ def highlight(object: str):
 def unhighlight(object: str):
     """This method removes highlighting from an object in the current viewport.
 
-    Notes
-    -----
-        This function can be accessed by:
+    .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            unhighlight
+                unhighlight
 
     Parameters
     ----------

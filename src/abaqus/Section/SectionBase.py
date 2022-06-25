@@ -10,16 +10,15 @@ class SectionBase:
     constructor. The methods and members of the Section object are common to all objects
     derived from the Section.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].sections[name]
-        import odbSection
-        session.odbs[name].sections[name]
+            import section
+            mdb.models[name].sections[name]
+            import odbSection
+            session.odbs[name].sections[name]
     """
 
     #: A :py:class:`~abaqus.Connector.ConnectorBehaviorOptionArray.ConnectorBehaviorOptionArray` object.
@@ -38,13 +37,12 @@ class SectionBase:
         """This method creates Section objects by reading an output database. The new sections are
         placed in the sections repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sectionsFromOdb
+                mdb.models[name].sectionsFromOdb
 
         Parameters
         ----------

@@ -4,29 +4,27 @@ from .MeshEdge import MeshEdge
 class MeshEdgeArray(list[MeshEdge]):
     """The MeshEdgeArray is a sequence of MeshEdge objects.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].elementEdges
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name].elementEdges
-        mdb.models[name].rootAssembly.instances[name].elementEdges
+            import part
+            mdb.models[name].parts[name].elementEdges
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name].elementEdges
+            mdb.models[name].rootAssembly.instances[name].elementEdges
     """
 
     def __init__(self, elemEdges: list[MeshEdge]):
         """This method creates a MeshEdgeArray object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mesh.MeshEdgeArray
+                mesh.MeshEdgeArray
 
         Parameters
         ----------

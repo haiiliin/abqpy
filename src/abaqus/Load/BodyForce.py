@@ -9,18 +9,17 @@ class BodyForce(Load):
     """The BodyForce object defines a distributed load.
     The BodyForce object is derived from the Load object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].loads[name]
+            import load
+            mdb.models[name].loads[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - DLOAD
+        - DLOAD
     """
 
     #: A String specifying the load repository key.
@@ -52,13 +51,12 @@ class BodyForce(Load):
     ):
         """This method creates a BodyForce object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].BodyForce
+                mdb.models[name].BodyForce
 
         Parameters
         ----------

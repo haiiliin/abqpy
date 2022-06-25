@@ -20,19 +20,18 @@ class AnnealStep(AnalysisStep):
     state variables to zero.
     The AnnealStep object is derived from the AnalysisStep object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name]
+            import step
+            mdb.models[name].steps[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - ANNEAL
-            - STEP
+        - ANNEAL
+                - STEP
     """
 
     #: A String specifying the repository key.
@@ -154,13 +153,12 @@ class AnnealStep(AnalysisStep):
     ):
         """This method creates an AnnealStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].AnnealStep
+                mdb.models[name].AnnealStep
 
         Parameters
         ----------

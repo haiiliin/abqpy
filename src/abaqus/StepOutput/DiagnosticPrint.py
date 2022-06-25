@@ -5,18 +5,17 @@ class DiagnosticPrint:
     """The DiagnosticPrint object is used to request detailed diagnostic output or to disable
     specific diagnostic checks
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name].diagnosticPrint
+            import step
+            mdb.models[name].steps[name].diagnosticPrint
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - DIAGNOSTICS
+        - DIAGNOSTICS
     """
 
     #: A Boolean specifying a request for a column containing the total kinetic energy. This
@@ -88,13 +87,12 @@ class DiagnosticPrint:
     ):
         """This method creates a DiagnosticPrint object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].steps[name].DiagnosticPrint
+                mdb.models[name].steps[name].DiagnosticPrint
 
         Parameters
         ----------

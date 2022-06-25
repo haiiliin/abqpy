@@ -9,13 +9,12 @@ class LeafFromNodeVarRange(Leaf):
     commands.
     The LeafFromNodeVarRange object is derived from the Leaf object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import displayGroupOdbToolset
+            import displayGroupOdbToolset
     """
 
     #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
@@ -42,13 +41,12 @@ class LeafFromNodeVarRange(Leaf):
     ):
         """This method creates a Leaf object from nodes with values lying in a variable range.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            LeafFromNodeVarRange
+                LeafFromNodeVarRange
 
         Parameters
         ----------

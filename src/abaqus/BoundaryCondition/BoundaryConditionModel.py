@@ -54,13 +54,12 @@ from ..Region.RegionArray import RegionArray
 class BoundaryConditionModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name]
+            mdb.models[name]
     """
 
     def AccelerationBaseMotionBC(
@@ -77,13 +76,12 @@ class BoundaryConditionModel(ModelBase):
     ) -> AccelerationBaseMotionBC:
         """This method creates a AccelerationBaseMotionBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].AccelerationBaseMotionBC
+                mdb.models[name].AccelerationBaseMotionBC
 
         Parameters
         ----------
@@ -152,13 +150,12 @@ class BoundaryConditionModel(ModelBase):
     ) -> AccelerationBC:
         """This method creates an AccelerationBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].AccelerationBC
+                mdb.models[name].AccelerationBC
 
         Parameters
         ----------
@@ -244,13 +241,12 @@ class BoundaryConditionModel(ModelBase):
     ) -> AcousticPressureBC:
         """This method creates a AcousticPressureBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].AcousticPressureBC
+                mdb.models[name].AcousticPressureBC
 
         Parameters
         ----------
@@ -302,13 +298,12 @@ class BoundaryConditionModel(ModelBase):
     def Calibration(self, name: str) -> Calibration:
         """This method creates a Calibration object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Calibration
+                mdb.models[name].Calibration
 
         Parameters
         ----------
@@ -336,13 +331,12 @@ class BoundaryConditionModel(ModelBase):
     ) -> ConcentrationBC:
         """This method creates a ConcentrationBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ConcentrationBC
+                mdb.models[name].ConcentrationBC
 
         Parameters
         ----------
@@ -411,13 +405,12 @@ class BoundaryConditionModel(ModelBase):
         boundary condition may also be applied to a wire set referenced from an assembled
         fastener template model.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ConnAccelerationBC
+                mdb.models[name].ConnAccelerationBC
 
         Parameters
         ----------
@@ -519,13 +512,12 @@ class BoundaryConditionModel(ModelBase):
         boundary condition may also be applied to a wire set referenced from an assembled
         fastener template model.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ConnDisplacementBC
+                mdb.models[name].ConnDisplacementBC
 
         Parameters
         ----------
@@ -634,13 +626,12 @@ class BoundaryConditionModel(ModelBase):
         boundary condition may also be applied to a wire set referenced from an assembled
         fastener template model.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ConnVelocityBC
+                mdb.models[name].ConnVelocityBC
 
         Parameters
         ----------
@@ -732,13 +723,12 @@ class BoundaryConditionModel(ModelBase):
     ) -> DisplacementBaseMotionBC:
         """This method creates a DisplacementBaseMotionBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].DisplacementBaseMotionBC
+                mdb.models[name].DisplacementBaseMotionBC
 
         Parameters
         ----------
@@ -809,13 +799,12 @@ class BoundaryConditionModel(ModelBase):
     ) -> DisplacementBC:
         """This method creates a DisplacementBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].DisplacementBC
+                mdb.models[name].DisplacementBC
 
         Parameters
         ----------
@@ -914,13 +903,12 @@ class BoundaryConditionModel(ModelBase):
     ) -> ElectricPotentialBC:
         """This method creates an ElectricPotentialBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ElectricPotentialBC
+                mdb.models[name].ElectricPotentialBC
 
         Parameters
         ----------
@@ -980,13 +968,12 @@ class BoundaryConditionModel(ModelBase):
     ) -> EulerianBC:
         """This method creates a EulerianBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].EulerianBC
+                mdb.models[name].EulerianBC
 
         Parameters
         ----------
@@ -1049,13 +1036,12 @@ class BoundaryConditionModel(ModelBase):
     ) -> EulerianMotionBC:
         """This method creates an EulerianMotionBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].EulerianMotionBC
+                mdb.models[name].EulerianMotionBC
 
         Parameters
         ----------
@@ -1192,13 +1178,12 @@ class BoundaryConditionModel(ModelBase):
     ) -> FluidCavityPressureBC:
         """This method creates a FluidCavityPressureBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].FluidCavityPressureBC
+                mdb.models[name].FluidCavityPressureBC
 
         Parameters
         ----------
@@ -1246,13 +1231,12 @@ class BoundaryConditionModel(ModelBase):
     ) -> MagneticVectorPotentialBC:
         """This method creates a MagneticVectorPotentialBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].MagneticVectorPotentialBC
+                mdb.models[name].MagneticVectorPotentialBC
 
         Parameters
         ----------
@@ -1318,13 +1302,12 @@ class BoundaryConditionModel(ModelBase):
     ) -> MaterialFlowBC:
         """This method creates a MaterialFlowBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].MaterialFlowBC
+                mdb.models[name].MaterialFlowBC
 
         Parameters
         ----------
@@ -1384,13 +1367,12 @@ class BoundaryConditionModel(ModelBase):
     ) -> PorePressureBC:
         """This method creates a PorePressureBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].PorePressureBC
+                mdb.models[name].PorePressureBC
 
         Parameters
         ----------
@@ -1451,13 +1433,12 @@ class BoundaryConditionModel(ModelBase):
     ) -> RetainedNodalDofsBC:
         """This method creates a RetainedNodalDofsBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].RetainedNodalDofsBC
+                mdb.models[name].RetainedNodalDofsBC
 
         Parameters
         ----------
@@ -1504,13 +1485,12 @@ class BoundaryConditionModel(ModelBase):
     ) -> SecondaryBaseBC:
         """This method creates a SecondaryBaseBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SecondaryBaseBC
+                mdb.models[name].SecondaryBaseBC
 
         Parameters
         ----------
@@ -1555,13 +1535,12 @@ class BoundaryConditionModel(ModelBase):
     ) -> SubmodelBC:
         """This method creates a SubmodelBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SubmodelBC
+                mdb.models[name].SubmodelBC
 
         Parameters
         ----------
@@ -1647,13 +1626,12 @@ class BoundaryConditionModel(ModelBase):
     ) -> TemperatureBC:
         """This method creates a TemperatureBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].TemperatureBC
+                mdb.models[name].TemperatureBC
 
         Parameters
         ----------
@@ -1717,13 +1695,12 @@ class BoundaryConditionModel(ModelBase):
     ) -> VelocityBaseMotionBC:
         """This method creates a VelocityBaseMotionBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].VelocityBaseMotionBC
+                mdb.models[name].VelocityBaseMotionBC
 
         Parameters
         ----------
@@ -1792,13 +1769,12 @@ class BoundaryConditionModel(ModelBase):
     ) -> VelocityBC:
         """This method creates a VelocityBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].VelocityBC
+                mdb.models[name].VelocityBC
 
         Parameters
         ----------
@@ -1881,13 +1857,13 @@ class BoundaryConditionModel(ModelBase):
     ) -> TypeBC:
         """This method creates an encastre TypeBC object.
         
-        Notes
-        -----
-        This function can be accessed by:
-        
-        .. code-block:: python
-        
-            mdb.models[name].EncastreBC
+        .. note:: 
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                mdb.models[name].EncastreBC
+
         Parameters
         ----------
         name
@@ -1928,13 +1904,13 @@ class BoundaryConditionModel(ModelBase):
     ) -> TypeBC:
         """This method creates a pinned TypeBC object.
         
-        Notes
-        -----
-        This function can be accessed by:
-        
-        .. code-block:: python
-        
-            mdb.models[name].PinnedBC
+        .. note:: 
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                mdb.models[name].PinnedBC
+
         Parameters
         ----------
         name
@@ -1975,14 +1951,13 @@ class BoundaryConditionModel(ModelBase):
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies symmetry about the **X**-axis.
         
-        Notes
-        -----
-        This function can be accessed by:
-        
-        .. code-block:: python
-        
-            mdb.models[name].EncastreBC
-            
+        .. note:: 
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                mdb.models[name].EncastreBC
+                
         Parameters
         ----------
         name
@@ -1999,7 +1974,7 @@ class BoundaryConditionModel(ModelBase):
             None or a DatumCsys object specifying the local coordinate system of the boundary
             condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
-        
+
         Returns
         -------
         TypeBC
@@ -2024,14 +1999,13 @@ class BoundaryConditionModel(ModelBase):
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies symmetry about the **Y**-axis.
         
-        Notes
-        -----
-        This function can be accessed by:
-        
-        .. code-block:: python
-        
-            mdb.models[name].YsymmBC
-            
+        .. note:: 
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                mdb.models[name].YsymmBC
+                
         Parameters
         ----------
         name
@@ -2048,7 +2022,7 @@ class BoundaryConditionModel(ModelBase):
             None or a DatumCsys object specifying the local coordinate system of the boundary
             condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
-        
+
         Returns
         -------
         TypeBC
@@ -2073,14 +2047,13 @@ class BoundaryConditionModel(ModelBase):
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies symmetry about the **Z**-axis.
         
-        Notes
-        -----
-        This function can be accessed by:
-        
-        .. code-block:: python
-        
-            mdb.models[name].EncastreBC
-            
+        .. note:: 
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                mdb.models[name].EncastreBC
+                
         Parameters
         ----------
         name
@@ -2097,7 +2070,7 @@ class BoundaryConditionModel(ModelBase):
             None or a DatumCsys object specifying the local coordinate system of the boundary
             condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
-        
+
         Returns
         -------
         TypeBC
@@ -2122,14 +2095,13 @@ class BoundaryConditionModel(ModelBase):
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies antisymmetry about the **X**-axis.
         
-        Notes
-        -----
-        This function can be accessed by:
-        
-        .. code-block:: python
-        
-            mdb.models[name].EncastreBC
-            
+        .. note:: 
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                mdb.models[name].EncastreBC
+                
         Parameters
         ----------
         name
@@ -2146,7 +2118,7 @@ class BoundaryConditionModel(ModelBase):
             None or a DatumCsys object specifying the local coordinate system of the boundary
             condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
-        
+
         Returns
         -------
         TypeBC
@@ -2171,14 +2143,13 @@ class BoundaryConditionModel(ModelBase):
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies antisymmetry about the **Y**-axis.
         
-        Notes
-        -----
-        This function can be accessed by:
-        
-        .. code-block:: python
-        
-            mdb.models[name].YasymmBC
-            
+        .. note:: 
+            This function can be accessed by:
+
+            .. code-block:: python
+
+                mdb.models[name].YasymmBC
+                
         Parameters
         ----------
         name
@@ -2195,7 +2166,7 @@ class BoundaryConditionModel(ModelBase):
             None or a DatumCsys object specifying the local coordinate system of the boundary
             condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
-        
+
         Returns
         -------
         TypeBC

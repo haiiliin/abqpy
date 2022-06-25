@@ -17,14 +17,13 @@ from ..Section.Section import Section
 class OdbBase:
     """The Odb object is the in-memory representation of an output database (ODB) file.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name]
+            import odbAccess
+            session.odbs[name]
     """
 
     #: A Boolean specifying whether the output database was opened with read-only access.
@@ -74,13 +73,12 @@ class OdbBase:
     ):
         """This method creates a new Odb object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.Odb
+                session.Odb
 
         Parameters
         ----------

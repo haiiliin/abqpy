@@ -2,13 +2,12 @@ class Keyword:
     """The Keyword object is used to store a keyword definition from an Abaqus input file.
     Keyword objects are returned via the InputFile.parse() method.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import inpParser
+            import inpParser
     """
 
     #: A String specifying the name of the keyword.

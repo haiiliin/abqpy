@@ -8,17 +8,16 @@ class OdbRigidBody:
     """The Rigid body object is used to bind a set of elements and/or a set of nodes and/or an
     analytical surface with a reference node.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name].parts[name].rigidBodies[i]
-        session.odbs[name].rootAssembly.instances[name].rigidBodies[i]
-        session.odbs[name].rootAssembly.rigidBodies[i]
-        session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.rigidBodies[i]
+            import odbAccess
+            session.odbs[name].parts[name].rigidBodies[i]
+            session.odbs[name].rootAssembly.instances[name].rigidBodies[i]
+            session.odbs[name].rootAssembly.rigidBodies[i]
+            session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.rigidBodies[i]
     """
 
     #: An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the reference node set associated with the rigid body.
@@ -62,14 +61,13 @@ class OdbRigidBody:
     ):
         """This method creates a OdbRigidBody object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[*name*].rootAssembly.instances[*name*].RigidBody
-            session.odbs[*name*].rootAssembly.RigidBody
+                session.odbs[*name*].rootAssembly.instances[*name*].RigidBody
+                session.odbs[*name*].rootAssembly.RigidBody
 
         Parameters
         ----------

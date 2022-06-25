@@ -19,18 +19,17 @@ class ContactStd(Interaction):
     contact in an Abaqus/Standard analysis.
     The ContactStd object is derived from the Interaction object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactions[name]
+            import interaction
+            mdb.models[name].interactions[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONTACT
+        - CONTACT
     """
 
     #: A String specifying the repository key.
@@ -114,13 +113,12 @@ class ContactStd(Interaction):
     ):
         """This method creates a ContactStd object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ContactStd
+                mdb.models[name].ContactStd
 
         Parameters
         ----------
@@ -195,13 +193,12 @@ class ContactStd(Interaction):
     ):
         """This method creates a ContactStd object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ContactStd
+                mdb.models[name].ContactStd
 
         Parameters
         ----------

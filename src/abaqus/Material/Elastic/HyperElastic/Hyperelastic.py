@@ -12,87 +12,86 @@ class Hyperelastic:
     r"""The Hyperelastic object specifies elastic properties for approximately incompressible
     elastomers.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].hyperelastic
-        import odbMaterial
-        session.odbs[name].materials[name].hyperelastic
+            import material
+            mdb.models[name].materials[name].hyperelastic
+            import odbMaterial
+            session.odbs[name].materials[name].hyperelastic
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **type** = ARRUDA_BOYCE, the table data specify the following:
-    
-        - :math:`\mu`.
-        - :math:`\lambda_{m}`.
-        - :math:`D`.
-        - Temperature, if the data depend on temperature.
+        - If **type** = ARRUDA_BOYCE, the table data specify the following:
         
-    - If **type** = MOONEY_RIVLIN, the table data specify the following:
-    
-        - :math:`C_{10}`
-        - :math:`C_{01}`.
-        - :math:`D_{1}`.
-        - Temperature, if the data depend on temperature.
+            - :math:`\mu`.
+            - :math:`\lambda_{m}`.
+            - :math:`D`.
+            - Temperature, if the data depend on temperature.
+            
+        - If **type** = MOONEY_RIVLIN, the table data specify the following:
         
-    - If **type** = NEO_HOOKE, the table data specify the following:
-    
-        - :math:`C_{10}`
-        - :math:`D_{1}`.
-        - Temperature, if the data depend on temperature.
+            - :math:`C_{10}`
+            - :math:`C_{01}`.
+            - :math:`D_{1}`.
+            - Temperature, if the data depend on temperature.
+            
+        - If **type** = NEO_HOOKE, the table data specify the following:
         
-    - If **type** = OGDEN, the table data specify the following for values of nn:
-    
-        - :math:`\mu_{i}` and :math:`\alpha_{i}` for :math:`i` from 1 to :math:`n`.
-        - :math:`n` coefficients :math:`D_{i}`.
-        - Temperature, if the data depend on temperature. Temperature dependence is not 
-          allowed for :math:`4 \leq n \leq 6` in an Abaqus/Explicit analysis.
-          
-    - If **type** = POLYNOMIAL, the table data specify the following for values of nn:
-    
-        - :math:`C_{i j}` for each value of :math:`(i+j)` from 1 to :math:`n` with 
-          :math:`i` decreasing from :math:`(i+j)` to zero and :math:`j` increasing 
-          from zero to :math:`(i+j)`.
-        - :math:`n` coefficients :math:`D_{i}`
-        - Temperature, if the data depend on temperature. Temperature dependence is
-          not allowed for :math:`3 \leq n \leq 6` in an Abaqus/Explicit analysis.
-    
-    - If **type** = REDUCED_POLYNOMIAL, the table data specify the following for values of nn:
-    
-        - :math:`C_{i 0}` for :math:`i` from 1 to :math:`n`.
-        - :math:`n` coefficients :math:`D_{i}`
-        - Temperature, if the data depend on temperature. Temperature dependence 
-          is not allowed for :math:`4 \leq n \leq 6` in an Abaqus/Explicit analysis.
-          
-    - If **type** = VAN_DER_WAALS, the table data specify the following:
-    
-        - :math:`\mu`.
-        - :math:`\lambda_{m}`.
-        - :math:`a`.
-        - :math:`\beta`.
-        - :math:`D`.
-        - Temperature, if the data depend on temperature.
+            - :math:`C_{10}`
+            - :math:`D_{1}`.
+            - Temperature, if the data depend on temperature.
+            
+        - If **type** = OGDEN, the table data specify the following for values of nn:
         
-    - If **type** = YEOH, the table data specify the following:
-    
-        - :math:`C_{10}`
-        - :math:`C_{20}`
-        - :math:`C_{30}`
-        - :math:`D_{1}`.
-        - :math:`D_{2}`
-        - :math:`D_{3}`.
-        - Temperature, if the data depend on temperature. Temperature dependence 
-          is not allowed in an Abaqus/Explicit analysis.
-    
-    The None object is the default value if **testData** = ON.
+            - :math:`\mu_{i}` and :math:`\alpha_{i}` for :math:`i` from 1 to :math:`n`.
+            - :math:`n` coefficients :math:`D_{i}`.
+            - Temperature, if the data depend on temperature. Temperature dependence is not 
+              allowed for :math:`4 \leq n \leq 6` in an Abaqus/Explicit analysis.
+              
+        - If **type** = POLYNOMIAL, the table data specify the following for values of nn:
+        
+            - :math:`C_{i j}` for each value of :math:`(i+j)` from 1 to :math:`n` with 
+              :math:`i` decreasing from :math:`(i+j)` to zero and :math:`j` increasing 
+              from zero to :math:`(i+j)`.
+            - :math:`n` coefficients :math:`D_{i}`
+            - Temperature, if the data depend on temperature. Temperature dependence is
+              not allowed for :math:`3 \leq n \leq 6` in an Abaqus/Explicit analysis.
+        
+        - If **type** = REDUCED_POLYNOMIAL, the table data specify the following for values of nn:
+        
+            - :math:`C_{i 0}` for :math:`i` from 1 to :math:`n`.
+            - :math:`n` coefficients :math:`D_{i}`
+            - Temperature, if the data depend on temperature. Temperature dependence 
+              is not allowed for :math:`4 \leq n \leq 6` in an Abaqus/Explicit analysis.
+              
+        - If **type** = VAN_DER_WAALS, the table data specify the following:
+        
+            - :math:`\mu`.
+            - :math:`\lambda_{m}`.
+            - :math:`a`.
+            - :math:`\beta`.
+            - :math:`D`.
+            - Temperature, if the data depend on temperature.
+            
+        - If **type** = YEOH, the table data specify the following:
+        
+            - :math:`C_{10}`
+            - :math:`C_{20}`
+            - :math:`C_{30}`
+            - :math:`D_{1}`.
+            - :math:`D_{2}`
+            - :math:`D_{3}`.
+            - Temperature, if the data depend on temperature. Temperature dependence 
+              is not allowed in an Abaqus/Explicit analysis.
+        
+        The None object is the default value if **testData** = ON.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - HYPERELASTIC
+        - HYPERELASTIC
     """
 
     #: A :py:class:`~abaqus.Material.TestData.BiaxialTestData.BiaxialTestData` object.
@@ -133,14 +132,13 @@ class Hyperelastic:
     ):
         """This method creates a Hyperelastic object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].Hyperelastic
-            session.odbs[name].materials[name].Hyperelastic
+                mdb.models[name].materials[name].Hyperelastic
+                session.odbs[name].materials[name].Hyperelastic
 
         Parameters
         ----------

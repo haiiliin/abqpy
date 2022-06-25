@@ -9,13 +9,12 @@ class HorizontalConstraint(ConstrainedSketchConstraint):
         """This method creates a horizontal constraint. This constraint applies to a line and
         constrains it to be horizontal.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].HorizontalConstraint
+                mdb.models[name].sketches[name].HorizontalConstraint
 
         Parameters
         ----------

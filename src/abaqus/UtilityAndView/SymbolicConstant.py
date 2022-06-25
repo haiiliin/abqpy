@@ -12,26 +12,24 @@ class SymbolicConstant:
     in the abaqus module. The SymbolicConstant constructor is also defined in the
     symbolicConstants module.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        from symbolicConstants import *
-        from abaqusConstants import *
+            from symbolicConstants import *
+            from abaqusConstants import *
     """
 
     def __init__(self, text: str):
         """The SymbolicConstant method creates a SymbolicConstant object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            SymbolicConstant
+                SymbolicConstant
 
         Parameters
         ----------

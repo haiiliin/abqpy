@@ -6,13 +6,12 @@ class SvgOptions:
     The SvgOptions object has no constructor. Abaqus creates the **svgOptions** member when a
     session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        session.svgOptions
+            session.svgOptions
     """
 
     def setValues(self, imageSize: SymbolicConstant = SIZE_ON_SCREEN):

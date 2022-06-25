@@ -15,14 +15,13 @@ class HistoryPoint:
     HistoryPoint object is a temporary object used as an argument to the HistoryRegion
     method.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name].steps[name].historyRegions[name].point
+            import odbAccess
+            session.odbs[name].steps[name].historyRegions[name].point
     """
 
     #: An Int specifying the integration point. This argument is used to define a history
@@ -90,13 +89,12 @@ class HistoryPoint:
     def __init__(self, node: OdbMeshNode):
         """This method creates a HistoryPoint object for a node.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            odbAccess.HistoryPoint
+                odbAccess.HistoryPoint
 
         Parameters
         ----------
@@ -120,13 +118,12 @@ class HistoryPoint:
     ):
         """This method creates a HistoryPoint object for an element.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            odbAccess.HistoryPoint
+                odbAccess.HistoryPoint
 
         Parameters
         ----------
@@ -170,13 +167,12 @@ class HistoryPoint:
     def __init__(self, region: OdbSet):
         """This method creates a HistoryPoint object for a region.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            odbAccess.HistoryPoint
+                odbAccess.HistoryPoint
 
         Parameters
         ----------
@@ -193,13 +189,12 @@ class HistoryPoint:
     def __init__(self, assembly: OdbAssembly):
         """This method creates a HistoryPoint object for the OdbAssembly object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            odbAccess.HistoryPoint
+                odbAccess.HistoryPoint
 
         Parameters
         ----------
@@ -216,13 +211,12 @@ class HistoryPoint:
     def __init__(self, instance: OdbInstance):
         """This method creates a HistoryPoint object for the OdbInstance object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            odbAccess.HistoryPoint
+                odbAccess.HistoryPoint
 
         Parameters
         ----------

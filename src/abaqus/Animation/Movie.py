@@ -7,14 +7,13 @@ class Movie:
     """The Movie object is used to store values and attributes associated with a movie file.
     Upon creation, the Movie object is added to the session.movies repository.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import animation
-        session.movies[name]
+            import animation
+            session.movies[name]
     """
 
     #: An Int specifying the width of the movie in pixels.
@@ -79,13 +78,12 @@ class Movie:
     ):
         """This method creates a Movie object from the contents of the specified file.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.Movie
+                session.Movie
 
         Parameters
         ----------

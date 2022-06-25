@@ -5,55 +5,54 @@ class GapFlow:
     """The GapFlow object specifies tangential flow constitutive parameters for pore pressure
     cohesive elements.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].gapFlow
-        import odbMaterial
-        session.odbs[name].materials[name].gapFlow
+            import material
+            mdb.models[name].materials[name].gapFlow
+            import odbMaterial
+            session.odbs[name].materials[name].gapFlow
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **type** = NEWTONIAN the table data specify the following:
-    
-        - Pore viscosity.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **type** = POWER_LAW the table data specify the following:
-    
-        - Consistency.
-        - Exponent.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **type** = BINGHAM_PLASTIC the table data specify the following:
-    
-        - Consistency.
-        - Yield stress.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **type** = HERSCHEL-BULKLEY the table data specify the following:
-    
-        - Consistency.
-        - Exponent.
-        - Yield stress.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+        - If **type** = NEWTONIAN the table data specify the following:
+        
+            - Pore viscosity.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **type** = POWER_LAW the table data specify the following:
+        
+            - Consistency.
+            - Exponent.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **type** = BINGHAM_PLASTIC the table data specify the following:
+        
+            - Consistency.
+            - Yield stress.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **type** = HERSCHEL-BULKLEY the table data specify the following:
+        
+            - Consistency.
+            - Exponent.
+            - Yield stress.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - GAP FLOW
+        - GAP FLOW
     """
 
     def __init__(
@@ -66,14 +65,13 @@ class GapFlow:
     ):
         """This method creates a GapFlow object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].GapFlow
-            session.odbs[name].materials[name].GapFlow
+                mdb.models[name].materials[name].GapFlow
+                session.odbs[name].materials[name].GapFlow
 
         Parameters
         ----------

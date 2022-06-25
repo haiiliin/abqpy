@@ -6,20 +6,19 @@ class ModulatedAmplitude(Amplitude):
     """The ModulatedAmplitude object defines a modulated amplitude curve.
     The ModulatedAmplitude object is derived from the Amplitude object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import amplitude
-        mdb.models[name].amplitudes[name]
-        import odbAmplitude
-        session.odbs[name].amplitudes[name]
+            import amplitude
+            mdb.models[name].amplitudes[name]
+            import odbAmplitude
+            session.odbs[name].amplitudes[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - AMPLITUDE
+        - AMPLITUDE
     """
 
     #: A String specifying the repository key.
@@ -58,14 +57,13 @@ class ModulatedAmplitude(Amplitude):
     ):
         """This method creates a ModulatedAmplitude object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ModulatedAmplitude
-            session.odbs[name].ModulatedAmplitude
+                mdb.models[name].ModulatedAmplitude
+                session.odbs[name].ModulatedAmplitude
 
         Parameters
         ----------

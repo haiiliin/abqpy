@@ -4,28 +4,27 @@ from abaqusConstants import *
 class Vertex:
     """Vertices are point regions of geometry.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].allInternalSets[name].vertices[i]
-        mdb.models[name].parts[name].allSets[name].vertices[i]
-        mdb.models[name].parts[name].sets[name].vertices[i]
-        mdb.models[name].parts[name].vertices[i]
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name].sets[name].vertices[i]
-        mdb.models[name].rootAssembly.allInstances[name].vertices[i]
-        mdb.models[name].rootAssembly.allInternalSets[name].vertices[i]
-        mdb.models[name].rootAssembly.allSets[name].vertices[i]
-        mdb.models[name].rootAssembly.instances[name].sets[name].vertices[i]
-        mdb.models[name].rootAssembly.instances[name].vertices[i]
-        mdb.models[name].rootAssembly.modelInstances[i].sets[name].vertices[i]
-        mdb.models[name].rootAssembly.modelInstances[i].vertices[i]
-        mdb.models[name].rootAssembly.sets[name].vertices[i]
-        mdb.models[name].rootAssembly.vertices[i]
+            import part
+            mdb.models[name].parts[name].allInternalSets[name].vertices[i]
+            mdb.models[name].parts[name].allSets[name].vertices[i]
+            mdb.models[name].parts[name].sets[name].vertices[i]
+            mdb.models[name].parts[name].vertices[i]
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name].sets[name].vertices[i]
+            mdb.models[name].rootAssembly.allInstances[name].vertices[i]
+            mdb.models[name].rootAssembly.allInternalSets[name].vertices[i]
+            mdb.models[name].rootAssembly.allSets[name].vertices[i]
+            mdb.models[name].rootAssembly.instances[name].sets[name].vertices[i]
+            mdb.models[name].rootAssembly.instances[name].vertices[i]
+            mdb.models[name].rootAssembly.modelInstances[i].sets[name].vertices[i]
+            mdb.models[name].rootAssembly.modelInstances[i].vertices[i]
+            mdb.models[name].rootAssembly.sets[name].vertices[i]
+            mdb.models[name].rootAssembly.vertices[i]
     """
 
     #: An Int specifying the index of the ConstrainedSketchVertex in the VertexArray.

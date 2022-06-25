@@ -21,19 +21,18 @@ class GeostaticStep(AnalysisStep):
     if needed, to obtain equilibrium.
     The GeostaticStep object is derived from the AnalysisStep object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import
-        step mdb.models[name].steps[name]
+            import
+            step mdb.models[name].steps[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - GEOSTATIC
-            - STEP
+        - GEOSTATIC
+                - STEP
     """
 
     #: A String specifying the repository key.
@@ -213,13 +212,12 @@ class GeostaticStep(AnalysisStep):
     ):
         """This method creates a GeostaticStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].GeostaticStep
+                mdb.models[name].GeostaticStep
 
         Parameters
         ----------

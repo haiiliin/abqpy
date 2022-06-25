@@ -4,18 +4,17 @@ from abaqusConstants import *
 class Monitor:
     """The Monitor object defines a degree of freedom to monitor.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name].monitor
+            import step
+            mdb.models[name].steps[name].monitor
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - MONITOR
+        - MONITOR
     """
 
     #: A String specifying the name of the region to be monitored.
@@ -50,13 +49,12 @@ class Monitor:
         """This method creates a request for a degree of freedom to be monitored in a general or
         modal procedure.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].steps[name].Monitor
+                mdb.models[name].steps[name].Monitor
 
         Parameters
         ----------

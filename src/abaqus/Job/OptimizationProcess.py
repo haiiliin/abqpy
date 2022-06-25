@@ -5,14 +5,13 @@ class OptimizationProcess:
     """The OptimizationProcess object defines a process to perform an optimization of a model
     defined using an optimization task.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import job
-        mdb.optimizationProcesses[name]
+            import job
+            mdb.optimizationProcesses[name]
     """
 
     #: A String specifying name of the optimization process.
@@ -78,13 +77,12 @@ class OptimizationProcess:
     ):
         """This method creates an OptimizationProcess object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.OptimizationProcess
+                mdb.OptimizationProcess
 
         Parameters
         ----------

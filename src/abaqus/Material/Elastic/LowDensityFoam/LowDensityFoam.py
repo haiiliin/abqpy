@@ -5,20 +5,19 @@ from ...TestData.UniaxialTestData import UniaxialTestData
 class LowDensityFoam:
     """The LowDensityFoam object specifies properties for low-density foam.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].lowDensityFoam
-        import odbMaterial
-        session.odbs[name].materials[name].lowDensityFoam
+            import material
+            mdb.models[name].materials[name].lowDensityFoam
+            import odbMaterial
+            session.odbs[name].materials[name].lowDensityFoam
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - LOW DENSITY FOAM
+        - LOW DENSITY FOAM
     """
 
     #: A :py:class:`~abaqus.Material.TestData.UniaxialTestData.UniaxialTestData` object.
@@ -39,14 +38,13 @@ class LowDensityFoam:
     ):
         """This method creates a LowDensityFoam object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].LowDensityFoam
-            session.odbs[name].materials[name].LowDensityFoam
+                mdb.models[name].materials[name].LowDensityFoam
+                session.odbs[name].materials[name].LowDensityFoam
 
         Parameters
         ----------

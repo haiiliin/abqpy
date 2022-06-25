@@ -1,18 +1,17 @@
 class EventSeriesType:
     """The EventSeriesType object is used to define a type of event in a process.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name].eventSeriesTypes[name]
+            mdb.models[name].eventSeriesTypes[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - EVENT SERIES TYPE
-            - EVENT SERIES
+        - EVENT SERIES TYPE
+                - EVENT SERIES
     """
 
     #: A String specifying the repository key.
@@ -27,13 +26,12 @@ class EventSeriesType:
     def __init__(self, name: str, createStepName: str, fields: str = ""):
         """This method creates an EventSeriesType object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].EventSeriesType
+                mdb.models[name].EventSeriesType
 
         Parameters
         ----------

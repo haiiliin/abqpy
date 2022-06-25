@@ -12,14 +12,13 @@ class OptimizationTaskBase:
     members of the OptimizationTask object are common to all objects derived from
     OptimizationTask.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import optimization
-        mdb.models[name].optimizationTasks[name]
+            import optimization
+            mdb.models[name].optimizationTasks[name]
     """
 
     #: A String specifying the optimization task repository key.

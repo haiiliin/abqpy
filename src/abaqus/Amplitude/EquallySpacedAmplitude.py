@@ -10,20 +10,19 @@ class EquallySpacedAmplitude(Amplitude):
     intervals beginning at a specified value of time.
     The EquallySpacedAmplitude object is derived from the Amplitude object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import amplitude
-        mdb.models[name].amplitudes[name]
-        import odbAmplitude
-        session.odbs[name].amplitudes[name]
+            import amplitude
+            mdb.models[name].amplitudes[name]
+            import odbAmplitude
+            session.odbs[name].amplitudes[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - AMPLITUDE
+        - AMPLITUDE
     """
 
     #: A :py:class:`~abaqus.Amplitude.BaselineCorrection.BaselineCorrection` object.
@@ -64,14 +63,13 @@ class EquallySpacedAmplitude(Amplitude):
     ):
         """This method creates an EquallySpacedAmplitude object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].EquallySpacedAmplitude
-            session.odbs[name].EquallySpacedAmplitude
+                mdb.models[name].EquallySpacedAmplitude
+                session.odbs[name].EquallySpacedAmplitude
 
         Parameters
         ----------

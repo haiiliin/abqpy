@@ -11,18 +11,17 @@ class DisplayBody(Constraint):
     and rotation of the specified control points.
     The DisplayBody object is derived from the ConstrainedSketchConstraint object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].constraints[name]
+            import interaction
+            mdb.models[name].constraints[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - DISPLAY BODY
+        - DISPLAY BODY
     """
 
     #: A Boolean specifying whether the constraint is suppressed or not. The default value is
@@ -45,13 +44,12 @@ class DisplayBody(Constraint):
     def __init__(self, name: str, instance: PartInstance, controlPoints: ModelDotArray):
         """This method creates a DisplayBody object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].DisplayBody
+                mdb.models[name].DisplayBody
 
         Parameters
         ----------

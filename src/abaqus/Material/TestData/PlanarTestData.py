@@ -5,36 +5,35 @@ class PlanarTestData:
     r"""The PlanarTestData object specifies planar test (or pure shear) data (compression and/or
     tension).
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].hyperelastic.planarTestData
-        mdb.models[name].materials[name].hyperfoam.planarTestData
-        mdb.models[name].materials[name].mullinsEffect.planarTests[i]
-        import odbMaterial
-        session.odbs[name].materials[name].hyperelastic.planarTestData
-        session.odbs[name].materials[name].hyperfoam.planarTestData
-        session.odbs[name].materials[name].mullinsEffect.planarTests[i]
+            import material
+            mdb.models[name].materials[name].hyperelastic.planarTestData
+            mdb.models[name].materials[name].hyperfoam.planarTestData
+            mdb.models[name].materials[name].mullinsEffect.planarTests[i]
+            import odbMaterial
+            session.odbs[name].materials[name].hyperelastic.planarTestData
+            session.odbs[name].materials[name].hyperfoam.planarTestData
+            session.odbs[name].materials[name].mullinsEffect.planarTests[i]
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - For a hyperelastic material model, the table data specify the following:
-    
-        - Nominal stress, :math:`T_{S}`
-        - Nominal strain in the direction of loading, :math:`\epsilon_{S}`.
-    - For a hyperfoam material model, the table data specify the following:
-    
-        - Nominal stress, :math:`T_{L}`.
-        - Nominal strain in the direction of loading, :math:`\epsilon_{p}`.
-        - Nominal transverse strain, :math:`\epsilon_{3}`. The default value is 0 .
+        - For a hyperelastic material model, the table data specify the following:
+        
+            - Nominal stress, :math:`T_{S}`
+            - Nominal strain in the direction of loading, :math:`\epsilon_{S}`.
+        - For a hyperfoam material model, the table data specify the following:
+        
+            - Nominal stress, :math:`T_{L}`.
+            - Nominal strain in the direction of loading, :math:`\epsilon_{p}`.
+            - Nominal transverse strain, :math:`\epsilon_{3}`. The default value is 0 .
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - PLANAR TEST DATA
+        - PLANAR TEST DATA
     """
 
     def __init__(
@@ -47,18 +46,17 @@ class PlanarTestData:
     ):
         """This method creates a PlanarTestData object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].hyperelastic.PlanarTestData
-            mdb.models[name].materials[name].hyperfoam.PlanarTestData
-            mdb.models[name].materials[name].mullinsEffect.PlanarTestData
-            session.odbs[name].materials[name].hyperelastic.PlanarTestData
-            session.odbs[name].materials[name].hyperfoam.PlanarTestData
-            session.odbs[name].materials[name].mullinsEffect.PlanarTestData
+                mdb.models[name].materials[name].hyperelastic.PlanarTestData
+                mdb.models[name].materials[name].hyperfoam.PlanarTestData
+                mdb.models[name].materials[name].mullinsEffect.PlanarTestData
+                session.odbs[name].materials[name].hyperelastic.PlanarTestData
+                session.odbs[name].materials[name].hyperfoam.PlanarTestData
+                session.odbs[name].materials[name].mullinsEffect.PlanarTestData
 
         Parameters
         ----------

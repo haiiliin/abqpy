@@ -2,20 +2,19 @@ class TransverseShearShell:
     """The TransverseShearShell object defines the transverse shear stiffness properties of a
     shell section.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].sections[name].transverseShear
-        import odbSection
-        session.odbs[name].sections[name].transverseShear
+            import section
+            mdb.models[name].sections[name].transverseShear
+            import odbSection
+            session.odbs[name].sections[name].transverseShear
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - TRANSVERSE SHEAR STIFFNESS
+        - TRANSVERSE SHEAR STIFFNESS
     """
 
     #: A Float specifying the shear stiffness of the section in the first direction.
@@ -30,14 +29,13 @@ class TransverseShearShell:
     def __init__(self, k11: float, k22: float, k12: float):
         """This method creates a TransverseShearShell object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sections[name].TransverseShearShell
-            session.odbs[name].sections[name].TransverseShearShell
+                mdb.models[name].sections[name].TransverseShearShell
+                session.odbs[name].sections[name].TransverseShearShell
 
         Parameters
         ----------

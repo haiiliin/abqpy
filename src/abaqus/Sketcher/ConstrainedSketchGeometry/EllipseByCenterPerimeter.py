@@ -9,13 +9,12 @@ class EllipseByCenterPerimeter(ConstrainedSketchGeometry):
         axis point. The ellipse is added to the geometry repository of the ConstrainedSketch
         object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].EllipseByCenterPerimeter
+                mdb.models[name].sketches[name].EllipseByCenterPerimeter
 
         Parameters
         ----------

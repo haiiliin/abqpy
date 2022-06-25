@@ -35,14 +35,13 @@ class EngineeringFeature(EngineeringFeatureBase):
         both for parts and for the assembly, AssembledFastener objects are currently supported
         only under the assembly.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].engineeringFeatures.AssembledFastener
-            mdb.models[name].rootAssembly.engineeringFeatures.AssembledFastener
+                mdb.models[name].parts[name].engineeringFeatures.AssembledFastener
+                mdb.models[name].rootAssembly.engineeringFeatures.AssembledFastener
 
         Parameters
         ----------
@@ -116,14 +115,13 @@ class EngineeringFeature(EngineeringFeatureBase):
         for parts and for the assembly, ContourIntegral objects are currently supported only
         under the assembly.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].engineeringFeatures.ContourIntegral
-            mdb.models[name].rootAssembly.engineeringFeatures.ContourIntegral
+                mdb.models[name].parts[name].engineeringFeatures.ContourIntegral
+                mdb.models[name].rootAssembly.engineeringFeatures.ContourIntegral
 
         Parameters
         ----------
@@ -206,14 +204,13 @@ class EngineeringFeature(EngineeringFeatureBase):
         parts and for the assembly, DebondVCCT objects are currently supported only under the
         assembly.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].engineeringFeatures.DebondVCCT
-            mdb.models[name].rootAssembly.engineeringFeatures.DebondVCCT
+                mdb.models[name].parts[name].engineeringFeatures.DebondVCCT
+                mdb.models[name].rootAssembly.engineeringFeatures.DebondVCCT
 
         Parameters
         ----------
@@ -262,14 +259,13 @@ class EngineeringFeature(EngineeringFeatureBase):
         both for parts and for the assembly, DiscreteFastener objects are currently supported
         only under the assembly.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].engineeringFeatures.DiscreteFastener
-            mdb.models[name].rootAssembly.engineeringFeatures.DiscreteFastener
+                mdb.models[name].parts[name].engineeringFeatures.DiscreteFastener
+                mdb.models[name].rootAssembly.engineeringFeatures.DiscreteFastener
 
         Parameters
         ----------
@@ -333,14 +329,13 @@ class EngineeringFeature(EngineeringFeatureBase):
     ) -> HeatCapacitance:
         """This method creates a HeatCapacitance object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].engineeringFeatures.HeatCapacitance
-            mdb.models[name].rootAssembly.engineeringFeatures.HeatCapacitance
+                mdb.models[name].parts[name].engineeringFeatures.HeatCapacitance
+                mdb.models[name].rootAssembly.engineeringFeatures.HeatCapacitance
 
         Parameters
         ----------
@@ -376,14 +371,13 @@ class EngineeringFeature(EngineeringFeatureBase):
     ) -> NonstructuralMass:
         """This method creates a NonstructuralMass object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].engineeringFeatures.NonstructuralMass
-            mdb.models[name].rootAssembly.engineeringFeatures.NonstructuralMass
+                mdb.models[name].parts[name].engineeringFeatures.NonstructuralMass
+                mdb.models[name].rootAssembly.engineeringFeatures.NonstructuralMass
 
         Parameters
         ----------
@@ -445,14 +439,13 @@ class EngineeringFeature(EngineeringFeatureBase):
         for parts and for the assembly, PointFastener objects are currently supported only under
         the assembly.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].engineeringFeatures.PointFastener
-            mdb.models[name].rootAssembly.engineeringFeatures.PointFastener
+                mdb.models[name].parts[name].engineeringFeatures.PointFastener
+                mdb.models[name].rootAssembly.engineeringFeatures.PointFastener
 
         Parameters
         ----------
@@ -612,14 +605,13 @@ class EngineeringFeature(EngineeringFeatureBase):
     ) -> PointMassInertia:
         """This method creates a PointMassInertia object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].engineeringFeatures.PointMassInertia
-            mdb.models[name].rootAssembly.engineeringFeatures.PointMassInertia
+                mdb.models[name].parts[name].engineeringFeatures.PointMassInertia
+                mdb.models[name].rootAssembly.engineeringFeatures.PointMassInertia
 
         Parameters
         ----------
@@ -703,42 +695,41 @@ class EngineeringFeature(EngineeringFeatureBase):
     ) -> SpringDashpotToGround:
         """This method creates a SpringDashpotToGround object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
-            
+
             .. code-block:: python
-            
+
                 mdb.models[name].parts[name].engineeringFeatures.SpringDashpotToGround
-                mdb.models[name].rootAssembly.engineeringFeatures.SpringDashpotToGround
-        
-        Parameters
-        ----------
-        name
-            A String specifying the repository key.
-        region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the springs and/or dashpots are applied.
-        dof
-            An Int specifying the degree of freedom associated with the spring and dashpot
-            behaviors.
-        orientation
-            None or a DatumCsys object specifying the local directions for the spring and/or
-            dashpot. If **orientation** = None, the spring and/or dashpot data are defined in the global
-            coordinate system. The default value is None.
-        springBehavior
-            A Boolean specifying whether to apply spring behavior to the selected points. The
-            default value is OFF.At least one of the arguments **springBehavior** = ON or
-            **dashpotBehavior** = ON must be specified.
-        dashpotBehavior
-            A Boolean specifying whether to apply dashpot behavior to the selected points. The
-            default value is OFF.At least one of the arguments **springBehavior** = ON or
-            **dashpotBehavior** = ON must be specified.
-        springStiffness
-            A Float specifying the force per relative displacement for the spring. The default value
-            is 0.0.
-        dashpotCoefficient
-            A Float specifying the force per relative velocity for the dashpot. The default value is
-            0.0.
+                    mdb.models[name].rootAssembly.engineeringFeatures.SpringDashpotToGround
+            
+            Parameters
+            ----------
+            name
+                A String specifying the repository key.
+            region
+                A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the springs and/or dashpots are applied.
+            dof
+                An Int specifying the degree of freedom associated with the spring and dashpot
+                behaviors.
+            orientation
+                None or a DatumCsys object specifying the local directions for the spring and/or
+                dashpot. If **orientation** = None, the spring and/or dashpot data are defined in the global
+                coordinate system. The default value is None.
+            springBehavior
+                A Boolean specifying whether to apply spring behavior to the selected points. The
+                default value is OFF.At least one of the arguments **springBehavior** = ON or
+                **dashpotBehavior** = ON must be specified.
+            dashpotBehavior
+                A Boolean specifying whether to apply dashpot behavior to the selected points. The
+                default value is OFF.At least one of the arguments **springBehavior** = ON or
+                **dashpotBehavior** = ON must be specified.
+            springStiffness
+                A Float specifying the force per relative displacement for the spring. The default value
+                is 0.0.
+            dashpotCoefficient
+                A Float specifying the force per relative velocity for the dashpot. The default value is
+                0.0.
 
         Returns
         -------
@@ -772,53 +763,52 @@ class EngineeringFeature(EngineeringFeatureBase):
     ) -> TwoPointSpringDashpot:
         """This method creates a TwoPointSpringDashpot object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
-            
+
             .. code-block:: python
-            
+
                 mdb.models[name].parts[name].engineeringFeatures.TwoPointSpringDashpot
-                mdb.models[name].rootAssembly.engineeringFeatures.TwoPointSpringDashpot
-        
-        Parameters
-        ----------
-        name
-            A String specifying the repository key.
-        regionPairs
-            A sequence of pairs of Region objects specifying the points between which the springs
-            and/or dashpots are applied.
-        axis
-            A SymbolicConstant specifying whether the axis of the springs and/or dashpots follows
-            the rotation of the nodes or is in a specified direction. Possible values are NODAL_LINE
-            and FIXED_DOF.
-        dof1
-            An Int specifying the degree of freedom with which the springs and/or dashpots are
-            associated at their first points. The **dof1** argument applies only when
-            **axis** = FIXED_DOFS. The default value is 0.
-        dof2
-            An Int specifying the degree of freedom with which the springs and/or dashpots are
-            associated at their second points. The **dof2** argument applies only when
-            **axis** = FIXED_DOFS. The default value is 0.
-        orientation
-            None or a DatumCsys object specifying the local directions for the spring and/or
-            dashpot. If **orientation** = None, the spring and/or dashpot data are defined in the global
-            coordinate system. The default value is None.The **orientation** argument applies only
-            when **axis** = FIXED_DOFS.
-        springBehavior
-            A Boolean specifying whether to apply spring behavior to the selected point pairs. The
-            default value is OFF.At least one of the arguments **springBehavior** = ON or
-            **dashpotBehavior** = ON must be specified.
-        dashpotBehavior
-            A Boolean specifying whether to apply dashpot behavior to the selected point pairs. The
-            default value is OFF.At least one of the arguments **springBehavior** = ON or
-            **dashpotBehavior** = ON must be specified.
-        springStiffness
-            A Float specifying the force per relative displacement for the springs. The default
-            value is 0.0.
-        dashpotCoefficient
-            A Float specifying the force per relative velocity for the dashpots. The default value
-            is 0.0.
+                    mdb.models[name].rootAssembly.engineeringFeatures.TwoPointSpringDashpot
+            
+            Parameters
+            ----------
+            name
+                A String specifying the repository key.
+            regionPairs
+                A sequence of pairs of Region objects specifying the points between which the springs
+                and/or dashpots are applied.
+            axis
+                A SymbolicConstant specifying whether the axis of the springs and/or dashpots follows
+                the rotation of the nodes or is in a specified direction. Possible values are NODAL_LINE
+                and FIXED_DOF.
+            dof1
+                An Int specifying the degree of freedom with which the springs and/or dashpots are
+                associated at their first points. The **dof1** argument applies only when
+                **axis** = FIXED_DOFS. The default value is 0.
+            dof2
+                An Int specifying the degree of freedom with which the springs and/or dashpots are
+                associated at their second points. The **dof2** argument applies only when
+                **axis** = FIXED_DOFS. The default value is 0.
+            orientation
+                None or a DatumCsys object specifying the local directions for the spring and/or
+                dashpot. If **orientation** = None, the spring and/or dashpot data are defined in the global
+                coordinate system. The default value is None.The **orientation** argument applies only
+                when **axis** = FIXED_DOFS.
+            springBehavior
+                A Boolean specifying whether to apply spring behavior to the selected point pairs. The
+                default value is OFF.At least one of the arguments **springBehavior** = ON or
+                **dashpotBehavior** = ON must be specified.
+            dashpotBehavior
+                A Boolean specifying whether to apply dashpot behavior to the selected point pairs. The
+                default value is OFF.At least one of the arguments **springBehavior** = ON or
+                **dashpotBehavior** = ON must be specified.
+            springStiffness
+                A Float specifying the force per relative displacement for the springs. The default
+                value is 0.0.
+            dashpotCoefficient
+                A Float specifying the force per relative velocity for the dashpots. The default value
+                is 0.0.
 
         Returns
         -------
@@ -858,14 +848,13 @@ class EngineeringFeature(EngineeringFeatureBase):
         parts and for the assembly, XFEMCrack objects are currently supported only under the
         assembly.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].engineeringFeatures.XFEMCrack
-            mdb.models[name].rootAssembly.engineeringFeatures.XFEMCrack
+                mdb.models[name].parts[name].engineeringFeatures.XFEMCrack
+                mdb.models[name].rootAssembly.engineeringFeatures.XFEMCrack
 
         Parameters
         ----------

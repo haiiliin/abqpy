@@ -9,13 +9,12 @@ class LeafFromReferencePoint(Leaf):
     commands.
     The LeafFromReferencePoint object is derived from the Leaf object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import displayGroupMdbToolset
+            import displayGroupMdbToolset
     """
 
     #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
@@ -25,13 +24,12 @@ class LeafFromReferencePoint(Leaf):
     def __init__(self, refPtSeq: tuple):
         """This method creates a Leaf object from a sequence of ReferencePoint objects.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            LeafFromReferencePoint
+                LeafFromReferencePoint
 
         Parameters
         ----------

@@ -1,16 +1,15 @@
 class OdbLoadCase:
     """The OdbLoadCase object describes a load case.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name].steps[name].frames[i].loadCase
-        session.odbs[name].steps[name].historyRegions[name].loadCase
-        session.odbs[name].steps[name].loadCases[name]
+            import odbAccess
+            session.odbs[name].steps[name].frames[i].loadCase
+            session.odbs[name].steps[name].historyRegions[name].loadCase
+            session.odbs[name].steps[name].loadCases[name]
     """
 
     #: A String specifying the name of the OdbLoadCase object.
@@ -19,13 +18,12 @@ class OdbLoadCase:
     def __init__(self, name: str):
         """This method creates an OdbLoadCase object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[*name*].steps[*name*].LoadCase
+                session.odbs[*name*].steps[*name*].LoadCase
 
         Parameters
         ----------

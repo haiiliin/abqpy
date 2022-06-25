@@ -6,17 +6,16 @@ class ElementProgressiveActivation:
     """The ElementProgressiveActivation object is used to specify elements that can be
     activated during an analysis.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name].rootAssembly.elementProgressiveActivations[name]
+            mdb.models[name].rootAssembly.elementProgressiveActivations[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - *ELEMENT PROGRESSIVE ACTIVATION
+        - *ELEMENT PROGRESSIVE ACTIVATION
     """
 
     #: A String specifying the key of the repository.
@@ -48,13 +47,12 @@ class ElementProgressiveActivation:
         """This method creates an ElementProgressiveActivation object and places it in the
         elementProgressiveActivation repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].rootAssembly.ElementProgressiveActivation
+                mdb.models[name].rootAssembly.ElementProgressiveActivation
 
         Parameters
         ----------

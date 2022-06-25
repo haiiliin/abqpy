@@ -44,14 +44,13 @@ class PartBase(Feature):
     """The Part object defines the physical attributes of a structure. Parts are instanced into
     the assembly and positioned before an analysis.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name]
+            import part
+            mdb.models[name].parts[name]
     """
 
     #: A Boolean specifying the validity of the geometry of the part. The value is computed,
@@ -176,13 +175,12 @@ class PartBase(Feature):
     ):
         """This method creates a Part object and places it in the parts repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Part
+                mdb.models[name].Part
 
         Parameters
         ----------
@@ -218,13 +216,12 @@ class PartBase(Feature):
     ):
         """This method copies a Part object and places the copy in the parts repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Part
+                mdb.models[name].Part
 
         Parameters
         ----------
@@ -266,13 +263,12 @@ class PartBase(Feature):
         """This method creates a Part in the parts repository after subtracting or cutting the
         geometries of a group of part instances from that of a base part instance.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Part
+                mdb.models[name].Part
 
         Parameters
         ----------
@@ -305,13 +301,12 @@ class PartBase(Feature):
         instances. The part instances can be either Abaqus native parts or orphan mesh parts,
         but they cannot be a combination of both.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Part
+                mdb.models[name].Part
 
         Parameters
         ----------
@@ -351,13 +346,12 @@ class PartBase(Feature):
         """This method creates a Part object by extruding an existing two-dimensional orphan mesh
         Part object in the positive **Z**-direction and places it in the parts repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Part
+                mdb.models[name].Part
 
         Parameters
         ----------
@@ -402,13 +396,12 @@ class PartBase(Feature):
     ):
         """This method creates a Part object and places it in the parts repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Part
+                mdb.models[name].Part
 
         Parameters
         ----------
@@ -486,13 +479,12 @@ class PartBase(Feature):
         """This method creates a Part object containing the mesh found in the supplied PartInstance
         objects and places the new Part object in the parts repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Part
+                mdb.models[name].Part
 
         Parameters
         ----------
@@ -528,13 +520,12 @@ class PartBase(Feature):
         """This method creates a Part object containing the mesh found in the part and places the
         new Part object in the parts repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Part
+                mdb.models[name].Part
 
         Parameters
         ----------
@@ -562,13 +553,12 @@ class PartBase(Feature):
         **mirrorPlane** argument of the Part copy constructor. The **mirrorPlane** argument creates
         only the second half of the part but does not unite the two halves.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Part
+                mdb.models[name].Part
 
         Parameters
         ----------
@@ -611,13 +601,12 @@ class PartBase(Feature):
         """This method creates a Part object from nodes and elements and places it in the parts
         repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Part
+                mdb.models[name].Part
 
         Parameters
         ----------
@@ -665,13 +654,12 @@ class PartBase(Feature):
         """This method creates an orphan mesh Part object by reading an output database. The new
         part is placed in the parts repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Part
+                mdb.models[name].Part
 
         Parameters
         ----------
@@ -735,13 +723,12 @@ class PartBase(Feature):
         Part object by a plane and places it in the parts repository. This method is valid only
         for orphan mesh parts composed of 8-node brick elements.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Part
+                mdb.models[name].Part
 
         Parameters
         ----------
@@ -782,13 +769,12 @@ class PartBase(Feature):
         """This method creates a substructure Part object by reading a substructure sim file and
         places it in the parts repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Part
+                mdb.models[name].Part
 
         Parameters
         ----------
@@ -828,13 +814,12 @@ class PartBase(Feature):
         two-dimensional mesh, the method fails and creates an empty geometry part with a failed
         base shell feature.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Part
+                mdb.models[name].Part
 
         Parameters
         ----------

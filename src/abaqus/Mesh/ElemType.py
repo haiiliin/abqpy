@@ -5,13 +5,12 @@ class ElemType:
     """The ElemType object is an argument object used as an argument in the setElementType
     command.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import mesh
+            import mesh
     """
 
     #: A SymbolicConstant specifying the Abaqus element code or just the element shape.
@@ -171,13 +170,12 @@ class ElemType:
     ):
         """This method creates an ElemType object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mesh.ElemType
+                mesh.ElemType
 
         Parameters
         ----------

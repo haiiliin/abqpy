@@ -10,14 +10,13 @@ class ConnAccelerationBC(BoundaryCondition):
     condition.
     The ConnAccelerationBC object is derived from the BoundaryCondition object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].boundaryConditions[name]
+            import load
+            mdb.models[name].boundaryConditions[name]
     """
 
     #: A String specifying the boundary condition repository key.
@@ -71,13 +70,12 @@ class ConnAccelerationBC(BoundaryCondition):
         boundary condition may also be applied to a wire set referenced from an assembled
         fastener template model.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ConnAccelerationBC
+                mdb.models[name].ConnAccelerationBC
 
         Parameters
         ----------

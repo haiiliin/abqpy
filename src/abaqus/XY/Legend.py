@@ -7,16 +7,15 @@ class Legend:
     """The Legend object is used to store the display attributes of the chart legend. A legend
     object is automatically created when creating a Chart object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.charts[name].legend
-        session.defaultChartOptions.legend
-        session.xyPlots[name].charts[name].legend
+            import visualization
+            session.charts[name].legend
+            session.defaultChartOptions.legend
+            session.xyPlots[name].charts[name].legend
     """
 
     #: A SymbolicConstant specifying how the minimum and maximum values are formatted. Possible

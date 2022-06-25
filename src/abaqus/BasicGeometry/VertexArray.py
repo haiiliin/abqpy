@@ -6,40 +6,38 @@ class VertexArray:
     """The VertexArray is a sequence of ConstrainedSketchVertex objects. If the part is modified, then
     VertexArray must be updated for that part.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].allInternalSets[name].vertices
-        mdb.models[name].parts[name].allSets[name].vertices
-        mdb.models[name].parts[name].sets[name].vertices
-        mdb.models[name].parts[name].vertices
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name].sets[name].vertices
-        mdb.models[name].rootAssembly.allInstances[name].vertices
-        mdb.models[name].rootAssembly.allInternalSets[name].vertices
-        mdb.models[name].rootAssembly.allSets[name].vertices
-        mdb.models[name].rootAssembly.instances[name].sets[name].vertices
-        mdb.models[name].rootAssembly.instances[name].vertices
-        mdb.models[name].rootAssembly.modelInstances[i].sets[name].vertices
-        mdb.models[name].rootAssembly.modelInstances[i].vertices
-        mdb.models[name].rootAssembly.sets[name].vertices
-        mdb.models[name].rootAssembly.vertices
+            import part
+            mdb.models[name].parts[name].allInternalSets[name].vertices
+            mdb.models[name].parts[name].allSets[name].vertices
+            mdb.models[name].parts[name].sets[name].vertices
+            mdb.models[name].parts[name].vertices
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name].sets[name].vertices
+            mdb.models[name].rootAssembly.allInstances[name].vertices
+            mdb.models[name].rootAssembly.allInternalSets[name].vertices
+            mdb.models[name].rootAssembly.allSets[name].vertices
+            mdb.models[name].rootAssembly.instances[name].sets[name].vertices
+            mdb.models[name].rootAssembly.instances[name].vertices
+            mdb.models[name].rootAssembly.modelInstances[i].sets[name].vertices
+            mdb.models[name].rootAssembly.modelInstances[i].vertices
+            mdb.models[name].rootAssembly.sets[name].vertices
+            mdb.models[name].rootAssembly.vertices
     """
 
     def __init__(self, vertices: list[Vertex]):
         """This method creates a VertexArray object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            part.VertexArray
+                part.VertexArray
 
         Parameters
         ----------

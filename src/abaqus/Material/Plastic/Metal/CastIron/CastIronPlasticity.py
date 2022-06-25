@@ -6,28 +6,27 @@ from .CastIronTensionHardening import CastIronTensionHardening
 class CastIronPlasticity:
     r"""The CastIronPlasticity object specifies the Cast Iron plasticity model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].castIronPlasticity
-        import odbMaterial
-        session.odbs[name].materials[name].castIronPlasticity
+            import material
+            mdb.models[name].materials[name].castIronPlasticity
+            import odbMaterial
+            session.odbs[name].materials[name].castIronPlasticity
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Plastic Poisson's ratio, :math:`\nu_{pl}` (dimensionless).
-    - Temperature, if the data depend on temperature.
-    - Value of the first field variable, if the data depend on field variables.
-    - Value of the second field variable.
-    - Etc.
+        - Plastic Poisson's ratio, :math:`\nu_{pl}` (dimensionless).
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CAST IRON PLASTICITY
+        - CAST IRON PLASTICITY
     """
 
     #: A :py:class:`~abaqus.Material.Plastic.Metal.CastIron.CastIronTensionHardening.CastIronTensionHardening` object.
@@ -43,14 +42,13 @@ class CastIronPlasticity:
     ):
         """This method creates a CastIronPlasticity object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].CastIronPlasticity
-            session.odbs[name].materials[name].CastIronPlasticity
+                mdb.models[name].materials[name].CastIronPlasticity
+                session.odbs[name].materials[name].CastIronPlasticity
 
         Parameters
         ----------

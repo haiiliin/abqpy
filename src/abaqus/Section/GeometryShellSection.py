@@ -11,17 +11,16 @@ class GeometryShellSection(ShellSection):
     GeometryShellSection object is an abstract base type.
     The GeometryShellSection object is derived from the ShellSection object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].parts[name].compositeLayups[i].section
-        mdb.models[name].sections[name]
-        import odbSection
-        session.odbs[name].sections[name]
+            import section
+            mdb.models[name].parts[name].compositeLayups[i].section
+            mdb.models[name].sections[name]
+            import odbSection
+            session.odbs[name].sections[name]
     """
 
     #: A String specifying the repository key.
@@ -115,13 +114,12 @@ class GeometryShellSection(ShellSection):
     ):
         """This method creates a GeometryShellSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].compositeLayups[*name*].Section
+                mdb.models[name].parts[*name*].compositeLayups[*name*].Section
 
         Parameters
         ----------
@@ -185,13 +183,12 @@ class GeometryShellSection(ShellSection):
     ) -> RebarLayers:
         """This method creates a RebarLayers object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].compositeLayups[*name*].Section
+                mdb.models[name].parts[*name*].compositeLayups[*name*].Section
 
         Parameters
         ----------

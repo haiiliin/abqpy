@@ -4,14 +4,13 @@ from abaqusConstants import *
 class ImageAnimation:
     """The ImageAnimation object is used to build frame by frame animation.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import animation
-        session.imageAnimation
+            import animation
+            session.imageAnimation
     """
 
     #: A String specifying the file to which the animation frames is to be written.
@@ -20,13 +19,12 @@ class ImageAnimation:
     def __init__(self, fileName: str, format: SymbolicConstant):
         """This method creates an ImageAnimation object from the specified filename and format.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.ImageAnimation
+                session.ImageAnimation
 
         Parameters
         ----------

@@ -16,13 +16,12 @@ class DistanceDimension(ConstrainedSketchDimension):
         ConstrainedSketchGeometry, or aConstrainedSketchVertex and ConstrainedSketchGeometry
         object. A distance dimension specifies the shortest distance between two entities.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].DistanceDimension
+                mdb.models[name].sketches[name].DistanceDimension
 
         Parameters
         ----------

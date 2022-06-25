@@ -10,14 +10,13 @@ class AnalyticalField(Field):
     AnalyticalField object are common to all objects derived from the AnalyticalField.
     The AnalyticalField object is derived from the Field object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import fields
-        mdb.models[name].analyticalFields[name]
+            import fields
+            mdb.models[name].analyticalFields[name]
     """
 
     #: A String specifying the repository key.
@@ -61,13 +60,12 @@ class AnalyticalField(Field):
     ) -> OdbMeshRegionData:
         """This method creates an OdbMeshRegionData object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].analyticalFields[name].OdbMeshRegionData
+                mdb.models[name].analyticalFields[name].OdbMeshRegionData
 
         Parameters
         ----------

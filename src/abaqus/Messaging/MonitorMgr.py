@@ -7,13 +7,12 @@ class MonitorMgr:
     be confused with the degree of freedom (DOF) monitor that is constructed from the Step
     object.)
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        monitorManager
+            monitorManager
     """
 
     def addMessageCallback(

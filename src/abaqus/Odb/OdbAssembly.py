@@ -21,13 +21,12 @@ class OdbAssembly(OdbAssemblyBase):
         """This method creates an OdbDatumCsys object using three points. A datum coordinate system
         created with this method results in a fixed system.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].rootAssembly.DatumCsysByThreePoints
+                session.odbs[name].rootAssembly.DatumCsysByThreePoints
 
         Parameters
         ----------
@@ -67,13 +66,12 @@ class OdbAssembly(OdbAssemblyBase):
         position of its origin. The last three arguments are given in the form of an OdbMeshNode
         object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].rootAssembly.DatumCsysByThreeNodes
+                session.odbs[name].rootAssembly.DatumCsysByThreeNodes
 
         Parameters
         ----------
@@ -112,13 +110,12 @@ class OdbAssembly(OdbAssemblyBase):
         cylindrical coordinate system or to the ϕϕ-axis of a spherical coordinate system. The
         line from the origin to the first node defines the rr-axis.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].rootAssembly.DatumCsysByThreeCircNodes
+                session.odbs[name].rootAssembly.DatumCsysByThreeCircNodes
 
         Parameters
         ----------
@@ -152,13 +149,12 @@ class OdbAssembly(OdbAssemblyBase):
         orientation of the datum coordinate system without regard to the position of its origin.
         The last argument is given in the form of an OdbMeshNode object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].rootAssembly.DatumCsysBy6dofNode
+                session.odbs[name].rootAssembly.DatumCsysBy6dofNode
 
         Parameters
         ----------
@@ -181,13 +177,12 @@ class OdbAssembly(OdbAssemblyBase):
     def DatumCsys(self, name: str, datumCsys: OdbDatumCsys):
         """This method copies oneOdbDatumCsys object to a new OdbDatumCsys object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].rootAssembly.DatumCsys
+                session.odbs[name].rootAssembly.DatumCsys
 
         Parameters
         ----------
@@ -209,13 +204,12 @@ class OdbAssembly(OdbAssemblyBase):
     ) -> OdbInstance:
         """This method creates an OdbInstance object from an OdbPart object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].rootAssembly.Instance
+                session.odbs[name].rootAssembly.Instance
 
         Parameters
         ----------
@@ -256,14 +250,13 @@ class OdbAssembly(OdbAssemblyBase):
     ) -> OdbRigidBody:
         """This method creates a OdbRigidBody object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].rootAssembly.instances[name].RigidBody
-            session.odbs[name].rootAssembly.RigidBody
+                session.odbs[name].rootAssembly.instances[name].RigidBody
+                session.odbs[name].rootAssembly.RigidBody
 
         Parameters
         ----------
@@ -312,15 +305,14 @@ class OdbAssembly(OdbAssemblyBase):
         instance-level sets) or from a sequence of arrays of OdbMeshNode objects (for
         assembly-level sets).
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].parts[name].NodeSet
-            session.odbs[name].rootAssembly.instances[name].NodeSet
-            session.odbs[name].rootAssembly.NodeSet
+                session.odbs[name].parts[name].NodeSet
+                session.odbs[name].rootAssembly.instances[name].NodeSet
+                session.odbs[name].rootAssembly.NodeSet
 
         Parameters
         ----------

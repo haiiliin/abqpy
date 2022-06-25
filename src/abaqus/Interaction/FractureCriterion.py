@@ -7,71 +7,70 @@ class FractureCriterion:
     """The FractureCriterion object specifies fractureCriterion options for a contact
     interaction property.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactionProperties[name].fractureCriterion
+            import interaction
+            mdb.models[name].interactionProperties[name].fractureCriterion
 
-    The table data for this object are:
-    
-    Table data for **initTable**:
-    
-    If **type** = VCCT for **mixedModeBehavior** = BK or REEDER, the table data specify the following:
-    
-        - Mode I critical energy release rate, GICGI⁢C.
-        - Mode II critical energy release rate, GIICGI⁢I⁢C.
-        - Mode III critical energy release rate, GIIICGI⁢I⁢I⁢C.
-        - Exponent, ηη.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    If **type** = VCCT for **mixedModeBehavior** = POWER, the table data specify the following:
-    
-        - Mode I critical energy release rate, GICGI⁢C.
-        - Mode II critical energy release rate, GIICGI⁢I⁢C.
-        - Mode III critical energy release rate, GIIICGI⁢I⁢I⁢C.
-        - Exponent, ama⁢m.
-        - Exponent, ana⁢n.
-        - Exponent, aoa⁢o.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    If **type** = ENHANCED VCCT for **mixedModeBehavior** = BK or REEDER, the table data specify the following:
-    
-        - Mode I critical energy release rate for onset crack, GICGI⁢C.
-        - Mode II critical energy release rate for onset crack, GIICGI⁢I⁢C.
-        - Mode III critical energy release rate for onset crack, GIIICGI⁢I⁢I⁢C.
-        - Mode I critical energy release rate for crack propagation, GICGI⁢C.
-        - Mode II critical energy release rate for crack propagation, GIICGI⁢I⁢C.
-        - Mode III critical energy release rate for crack propagation, GIIICGI⁢I⁢I⁢C.
-        - Exponent, ηη.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    If **type** = ENHANCED VCCT for **mixedModeBehavior** = POWER, the table data specify the following:
-    
-        - Mode I critical energy release rate for onset crack, GICGI⁢C.
-        - Mode II critical energy release rate for onset crack, GIICGI⁢I⁢C.
-        - Mode III critical energy release rate for onset crack, GIIICGI⁢I⁢I⁢C.
-        - Mode I critical energy release rate for crack propagation, GICGI⁢C.
-        - Mode II critical energy release rate for crack propagation, GIICGI⁢I⁢C.
-        - Mode III critical energy release rate for crack propagation, GIIICGI⁢I⁢I⁢C.
-        - Exponent, ama⁢m.
-        - Exponent, ana⁢n.
-        - Exponent, aoa⁢o.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+        The table data for this object are:
+        
+        Table data for **initTable**:
+        
+        If **type** = VCCT for **mixedModeBehavior** = BK or REEDER, the table data specify the following:
+        
+            - Mode I critical energy release rate, GICGI⁢C.
+            - Mode II critical energy release rate, GIICGI⁢I⁢C.
+            - Mode III critical energy release rate, GIIICGI⁢I⁢I⁢C.
+            - Exponent, ηη.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        If **type** = VCCT for **mixedModeBehavior** = POWER, the table data specify the following:
+        
+            - Mode I critical energy release rate, GICGI⁢C.
+            - Mode II critical energy release rate, GIICGI⁢I⁢C.
+            - Mode III critical energy release rate, GIIICGI⁢I⁢I⁢C.
+            - Exponent, ama⁢m.
+            - Exponent, ana⁢n.
+            - Exponent, aoa⁢o.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        If **type** = ENHANCED VCCT for **mixedModeBehavior** = BK or REEDER, the table data specify the following:
+        
+            - Mode I critical energy release rate for onset crack, GICGI⁢C.
+            - Mode II critical energy release rate for onset crack, GIICGI⁢I⁢C.
+            - Mode III critical energy release rate for onset crack, GIIICGI⁢I⁢I⁢C.
+            - Mode I critical energy release rate for crack propagation, GICGI⁢C.
+            - Mode II critical energy release rate for crack propagation, GIICGI⁢I⁢C.
+            - Mode III critical energy release rate for crack propagation, GIIICGI⁢I⁢I⁢C.
+            - Exponent, ηη.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        If **type** = ENHANCED VCCT for **mixedModeBehavior** = POWER, the table data specify the following:
+        
+            - Mode I critical energy release rate for onset crack, GICGI⁢C.
+            - Mode II critical energy release rate for onset crack, GIICGI⁢I⁢C.
+            - Mode III critical energy release rate for onset crack, GIIICGI⁢I⁢I⁢C.
+            - Mode I critical energy release rate for crack propagation, GICGI⁢C.
+            - Mode II critical energy release rate for crack propagation, GIICGI⁢I⁢C.
+            - Mode III critical energy release rate for crack propagation, GIIICGI⁢I⁢I⁢C.
+            - Exponent, ama⁢m.
+            - Exponent, ana⁢n.
+            - Exponent, aoa⁢o.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - FRACTURE CRITERION
+        - FRACTURE CRITERION
     """
 
     #: A sequence of sequences of Floats specifying the value defining the fracture criterion.
@@ -119,13 +118,12 @@ class FractureCriterion:
     ):
         r"""This method creates a FractureCriterion object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].interactionProperties[name].FractureCriterion
+                mdb.models[name].interactionProperties[name].FractureCriterion
 
         Parameters
         ----------

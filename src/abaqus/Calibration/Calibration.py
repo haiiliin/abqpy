@@ -6,14 +6,13 @@ class Calibration:
     """A :py:class:`~abaqus.BoundaryCondition.Calibration.Calibration` object is the object used to specify a material calibration. The
     Calibration object stores the data that is used for specifying materials from test data.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import calibration
-        mdb.models[name].calibrations[name]
+            import calibration
+            mdb.models[name].calibrations[name]
     """
 
     #: A :py:class:`~abaqus.Calibration.DataSet.DataSet` object.
@@ -28,13 +27,12 @@ class Calibration:
     def __init__(self, name: str):
         """This method creates a Calibration object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      mdb.models[name].Calibration
+                mdb.models[name].Calibration
 
         Parameters
         ----------
@@ -51,13 +49,12 @@ class Calibration:
     def Behavior(self, name: str, typeName: str) -> Behavior:
         """This method creates a Behavior object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      mdb.models[name].Calibration
+                mdb.models[name].Calibration
 
         Parameters
         ----------
@@ -80,13 +77,12 @@ class Calibration:
     ) -> DataSet:
         """This method creates a DataSet object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      mdb.models[name].Calibration
+                mdb.models[name].Calibration
 
         Parameters
         ----------

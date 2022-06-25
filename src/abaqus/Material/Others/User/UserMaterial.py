@@ -5,20 +5,19 @@ class UserMaterial:
     """The UserMaterial object defines material constants for use in subroutines UMAT, UMATHT,
     or VUMAT.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].userMaterial
-        import odbMaterial
-        session.odbs[name].materials[name].userMaterial
+            import material
+            mdb.models[name].materials[name].userMaterial
+            import odbMaterial
+            session.odbs[name].materials[name].userMaterial
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - USER MATERIAL
+        - USER MATERIAL
     """
 
     def __init__(
@@ -32,14 +31,13 @@ class UserMaterial:
     ):
         """This method creates a UserMaterial object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].UserMaterial
-            session.odbs[name].materials[name].UserMaterial
+                mdb.models[name].materials[name].UserMaterial
+                session.odbs[name].materials[name].UserMaterial
 
         Parameters
         ----------

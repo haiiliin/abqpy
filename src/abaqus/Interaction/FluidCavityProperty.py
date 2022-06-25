@@ -7,23 +7,22 @@ class FluidCavityProperty(ContactProperty):
     behavior for a surface-based fluid cavity.
     The FluidCavityProperty object is derived from the InteractionProperty object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactionProperties[name]
+            import interaction
+            mdb.models[name].interactionProperties[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - FLUID BEHAVIOR
-            - CAPACITY
-            - FLUID BULK MODULUS
-            - FLUID DENSITY
-            - FLUID EXPANSION
-            - MOLECULAR WEIGHT
+        - FLUID BEHAVIOR
+                - CAPACITY
+                - FLUID BULK MODULUS
+                - FLUID DENSITY
+                - FLUID EXPANSION
+                - MOLECULAR WEIGHT
     """
 
     #: A String specifying the interaction property repository key.
@@ -161,13 +160,12 @@ class FluidCavityProperty(ContactProperty):
     ):
         """This method creates a FluidCavityProperty object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].FluidCavityProperty
+                mdb.models[name].FluidCavityProperty
 
         Parameters
         ----------

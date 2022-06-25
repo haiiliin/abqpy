@@ -5,14 +5,13 @@ from .DataSet import DataSet
 class Behavior:
     """The Behavior object specifies the method used for calibrating a material.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import calibration
-        mdb.models[name].calibrations[name].behaviors[name]
+            import calibration
+            mdb.models[name].calibrations[name].behaviors[name]
     """
 
     #: A string specifying the name of the model to which the behavior belongs.
@@ -39,13 +38,12 @@ class Behavior:
     def __init__(self, name: str, typeName: str):
         """This method creates a Behavior object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      mdb.models[name].calibrations[name].Behavior
+                mdb.models[name].calibrations[name].Behavior
 
         Parameters
         ----------

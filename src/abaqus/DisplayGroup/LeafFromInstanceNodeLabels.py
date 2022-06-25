@@ -9,13 +9,12 @@ class LeafFromInstanceNodeLabels(Leaf):
     commands.
     The LeafFromInstanceNodeLabels object is derived from the Leaf object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import displayGroupMdbToolset
+            import displayGroupMdbToolset
     """
 
     #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
@@ -26,13 +25,12 @@ class LeafFromInstanceNodeLabels(Leaf):
         """This method creates a Leaf object from a sequence of Strings specifying the node labels.
         Leaf objects specify the items in a display group.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            LeafFromInstanceNodeLabels
+                LeafFromInstanceNodeLabels
 
         Parameters
         ----------

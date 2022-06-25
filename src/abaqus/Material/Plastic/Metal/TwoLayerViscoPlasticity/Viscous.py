@@ -6,88 +6,87 @@ class Viscous:
     r"""The Viscous object specifies the viscous properties for a two-layer viscoplastic
     material model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].viscous
-        import odbMaterial
-        session.odbs[name].materials[name].viscous
+            import material
+            mdb.models[name].materials[name].viscous
+            import odbMaterial
+            session.odbs[name].materials[name].viscous
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **law** = STRAIN or **law** = TIME, the table data specify the following:
-    
-        - :math:`A`.
-        - :math:`n`.
-        - :math:`m`.
-        - :math:`f`.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **law** = USER, the table data specify the following:
-    
-        - :math:`f`.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **law** = ANAND, the table data specify the following:
-    
-        - :math:`s_{1}`.
-        - :math:`\frac{Q}{R}`.
-        - :math:`A`.
-        - :math:`\xi`.
-        - :math:`m`.
-        - :math:`A_{0}`.
-        - :math:`\hat{s}`.
-        - :math:`n`.
-        - :math:`a`.
-        - :math:`S_{2}`.
-        - :math:`S_{3}`.
-        - :math:`A_{1}`.
-        - :math:`A_{2}`.
-        - :math:`A_{3}`.
-        - :math:`A_{4}`.
-        - :math:`f`.
-    - If **law** = DARVEAUX, the table data specify the following:
-    
-        - :math:`C_{s s}`.
-        - :math:`\frac{Q}{R}`.
-        - :math:`\alpha`.
-        - :math:`n`.
-        - :math:`\epsilon_{T}`.
-        - :math:`B`.
-        - :math:`f`.
-    - If **law** = DOUBLE_POWER, the table data specify the following:
-    
-        - :math:`A_{1}`.
-        - :math:`B_{1}`.
-        - :math:`C_{1}`.
-        - :math:`A_{2}`.
-        - :math:`B_{2}`.
-        - :math:`C_{2}`.
-        - :math:`\sigma_{0}`.
-        - :math:`f`.
-    - If **law** = POWER_LAW or **law** = TIME_POWER_LAW, the table data specify the following:
-    
-        - :math:`q_{0}`.
-        - :math:`n`.
-        - :math:`m`.
-        - :math:`\varepsilon_{0}`.
-        - :math:`f`.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+        - If **law** = STRAIN or **law** = TIME, the table data specify the following:
+        
+            - :math:`A`.
+            - :math:`n`.
+            - :math:`m`.
+            - :math:`f`.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **law** = USER, the table data specify the following:
+        
+            - :math:`f`.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **law** = ANAND, the table data specify the following:
+        
+            - :math:`s_{1}`.
+            - :math:`\frac{Q}{R}`.
+            - :math:`A`.
+            - :math:`\xi`.
+            - :math:`m`.
+            - :math:`A_{0}`.
+            - :math:`\hat{s}`.
+            - :math:`n`.
+            - :math:`a`.
+            - :math:`S_{2}`.
+            - :math:`S_{3}`.
+            - :math:`A_{1}`.
+            - :math:`A_{2}`.
+            - :math:`A_{3}`.
+            - :math:`A_{4}`.
+            - :math:`f`.
+        - If **law** = DARVEAUX, the table data specify the following:
+        
+            - :math:`C_{s s}`.
+            - :math:`\frac{Q}{R}`.
+            - :math:`\alpha`.
+            - :math:`n`.
+            - :math:`\epsilon_{T}`.
+            - :math:`B`.
+            - :math:`f`.
+        - If **law** = DOUBLE_POWER, the table data specify the following:
+        
+            - :math:`A_{1}`.
+            - :math:`B_{1}`.
+            - :math:`C_{1}`.
+            - :math:`A_{2}`.
+            - :math:`B_{2}`.
+            - :math:`C_{2}`.
+            - :math:`\sigma_{0}`.
+            - :math:`f`.
+        - If **law** = POWER_LAW or **law** = TIME_POWER_LAW, the table data specify the following:
+        
+            - :math:`q_{0}`.
+            - :math:`n`.
+            - :math:`m`.
+            - :math:`\varepsilon_{0}`.
+            - :math:`f`.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - VISCOUS
+        - VISCOUS
     """
 
     #: A :py:class:`~abaqus.Material.Plastic.Potential.Potential` object.
@@ -103,14 +102,13 @@ class Viscous:
     ):
         """This method creates a Viscous object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].Viscous
-            session.odbs[name].materials[name].Viscous
+                mdb.models[name].materials[name].Viscous
+                session.odbs[name].materials[name].Viscous
 
         Parameters
         ----------

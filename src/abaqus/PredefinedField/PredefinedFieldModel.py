@@ -21,13 +21,12 @@ class PredefinedFieldModel(
 ):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name]
+            mdb.models[name]
     """
 
     def FluidCavityPressure(
@@ -35,13 +34,12 @@ class PredefinedFieldModel(
     ) -> FluidCavityPressure:
         """This method creates a FluidCavityPressure object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].FluidCavityPressure
+                mdb.models[name].FluidCavityPressure
 
         Parameters
         ----------
@@ -73,13 +71,12 @@ class PredefinedFieldModel(
     ) -> InitialState:
         """This method creates an InitialState predefined field object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].InitialState
+                mdb.models[name].InitialState
 
         Parameters
         ----------
@@ -131,13 +128,12 @@ class PredefinedFieldModel(
     ) -> KinematicHardening:
         """This method creates a KinematicHardening object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].KinematicHardening
+                mdb.models[name].KinematicHardening
 
         Parameters
         ----------
@@ -195,13 +191,12 @@ class PredefinedFieldModel(
     ) -> MaterialAssignment:
         """This method creates a MaterialAssignment predefined field object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].MaterialAssignment
+                mdb.models[name].MaterialAssignment
 
         Parameters
         ----------
@@ -261,13 +256,12 @@ class PredefinedFieldModel(
     ) -> Temperature:
         """This method creates a Temperature object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Temperature
+                mdb.models[name].Temperature
 
         Parameters
         ----------
@@ -394,13 +388,12 @@ class PredefinedFieldModel(
     ) -> Velocity:
         """This method creates a Velocity predefined field object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Velocity
+                mdb.models[name].Velocity
 
         Parameters
         ----------

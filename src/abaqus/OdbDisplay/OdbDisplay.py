@@ -35,15 +35,14 @@ class OdbDisplay:
     other **odbDisplay** members are created and can be set to customize user preferences.
     - The output database display options associated with a particular viewport.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        session.viewports[name].layers[name].odbDisplay
-        import visualization
-        session.viewports[name].odbDisplay
+            session.viewports[name].layers[name].odbDisplay
+            import visualization
+            session.viewports[name].odbDisplay
     """
 
     #: A String specifying the name of the output database associated with the OdbDisplay
@@ -552,14 +551,13 @@ class OdbDisplay:
     ) -> ViewCut:
         """This method creates a ViewCut object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.viewports[name].layers[name].odbDisplay.ViewCut
-            session.viewports[name].odbDisplay.ViewCut
+                session.viewports[name].layers[name].odbDisplay.ViewCut
+                session.viewports[name].odbDisplay.ViewCut
 
         Parameters
         ----------

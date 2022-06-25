@@ -21,14 +21,13 @@ class OdbData:
     **odbData** repository when you import the Visualization module. Abaqus creates a OdbData
     object when an odb is opened.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.odbData[name]
+            import visualization
+            session.odbData[name]
     """
 
     #: A tuple specifying the active frames, or the SymbolicConstant ALL. Each item in the

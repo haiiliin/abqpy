@@ -8,20 +8,19 @@ class GasketSection(Section):
     """The GasketSection object defines the properties of a gasket section.
     The GasketSection object is derived from the Section object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].sections[name]
-        import odbSection
-        session.odbs[name].sections[name]
+            import section
+            mdb.models[name].sections[name]
+            import odbSection
+            session.odbs[name].sections[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - GASKET SECTION
+        - GASKET SECTION
     """
 
     #: A String specifying the repository key.
@@ -65,14 +64,13 @@ class GasketSection(Section):
     ):
         """This method creates a GasketSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].GasketSection
-            session.odbs[name].GasketSection
+                mdb.models[name].GasketSection
+                session.odbs[name].GasketSection
 
         Parameters
         ----------

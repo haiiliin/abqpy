@@ -9,15 +9,14 @@ class ViewCut:
     accessed via the OdbDisplay object cause the ViewCut object to be added to the
     session.viewports[name].odbDisplay.viewCuts repository.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.viewports[name].layers[name].odbDisplay.viewCuts[name]
-        session.viewports[name].odbDisplay.viewCuts[name]
+            import visualization
+            session.viewports[name].layers[name].odbDisplay.viewCuts[name]
+            session.viewports[name].odbDisplay.viewCuts[name]
     """
 
     #: A Float specifying the rotation angle of the cut defined with a **shape** set to PLANE.
@@ -128,14 +127,13 @@ class ViewCut:
     ):
         """This method creates a ViewCut object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.viewports[name].layers[name].odbDisplay.ViewCut
-            session.viewports[name].odbDisplay.ViewCut
+                session.viewports[name].layers[name].odbDisplay.ViewCut
+                session.viewports[name].odbDisplay.ViewCut
 
         Parameters
         ----------

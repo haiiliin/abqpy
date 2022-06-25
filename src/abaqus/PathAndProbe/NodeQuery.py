@@ -3,14 +3,13 @@ class NodeQuery:
     object has no constructor or methods. Abaqus creates the **nodeQuery** member when you
     import the visualization module.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.nodeQuery
+            import visualization
+            session.nodeQuery
     """
 
     #: An Int specifying the ID of the most recently queried node. If the last query was

@@ -4,18 +4,17 @@ from abaqusConstants import *
 class Restart:
     """The Restart object defines a restart request.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name].restart
+            import step
+            mdb.models[name].steps[name].restart
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - RESTART
+        - RESTART
     """
 
     #: An Int specifying the number of intervals during the step at which restart information
@@ -45,13 +44,12 @@ class Restart:
     ):
         """This method creates a restart request.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].steps[name].Restart
+                mdb.models[name].steps[name].Restart
 
         Parameters
         ----------

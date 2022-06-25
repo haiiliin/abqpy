@@ -6,13 +6,12 @@ class AnnotationViewport(ViewportBase):
     """The following commands operate on Viewport objects. For more information about the
     Viewport object, see Viewport object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import annotationToolset
+            import annotationToolset
     """
 
     def plotAnnotation(self, annotation: Annotation, index: str = 0.0):

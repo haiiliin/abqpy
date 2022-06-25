@@ -4,14 +4,13 @@ from abaqusConstants import *
 class StepOption:
     """A StepOption is an object used to define step options in a design response.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import optimization
-        mdb.models[name].optimizationTasks[name].designResponses[name].stepOptions[i]
+            import optimization
+            mdb.models[name].optimizationTasks[name].designResponses[name].stepOptions[i]
     """
 
     #: The SymbolicConstant ALL or an Int specifying the lower mode in the range of modes to

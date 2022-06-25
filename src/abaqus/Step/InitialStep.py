@@ -21,14 +21,13 @@ class InitialStep(AnalysisStep):
     boundary conditions and interactions to be defined in the model.
     The InitialStep object is derived from the AnalysisStep object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name]
+            import step
+            mdb.models[name].steps[name]
     """
 
     #: A String specifying the repository key.

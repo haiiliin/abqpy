@@ -7,36 +7,35 @@ class TextStyle:
     TextStyle objects are automatically created when creating a chart or can be created with
     methods described below.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.charts[name].axes1[i].labelStyle
-        session.charts[name].axes1[i].titleStyle
-        session.charts[name].axes2[i].labelStyle
-        session.charts[name].axes2[i].titleStyle
-        session.charts[name].legend.textStyle
-        session.charts[name].legend.titleStyle
-        session.charts[name].tagTextStyle
-        session.defaultChartOptions.defaultAxis1Options.labelStyle
-        session.defaultChartOptions.defaultAxis1Options.titleStyle
-        session.defaultChartOptions.defaultAxis2Options.labelStyle
-        session.defaultChartOptions.defaultAxis2Options.titleStyle
-        session.defaultChartOptions.legend.textStyle
-        session.defaultChartOptions.legend.titleStyle
-        session.defaultChartOptions.tagTextStyle
-        session.defaultPlot.title.titleStyle
-        session.xyPlots[name].charts[name].axes1[i].labelStyle
-        session.xyPlots[name].charts[name].axes1[i].titleStyle
-        session.xyPlots[name].charts[name].axes2[i].labelStyle
-        session.xyPlots[name].charts[name].axes2[i].titleStyle
-        session.xyPlots[name].charts[name].legend.textStyle
-        session.xyPlots[name].charts[name].legend.titleStyle
-        session.xyPlots[name].charts[name].tagTextStyle
-        session.xyPlots[name].title.titleStyle
+            import visualization
+            session.charts[name].axes1[i].labelStyle
+            session.charts[name].axes1[i].titleStyle
+            session.charts[name].axes2[i].labelStyle
+            session.charts[name].axes2[i].titleStyle
+            session.charts[name].legend.textStyle
+            session.charts[name].legend.titleStyle
+            session.charts[name].tagTextStyle
+            session.defaultChartOptions.defaultAxis1Options.labelStyle
+            session.defaultChartOptions.defaultAxis1Options.titleStyle
+            session.defaultChartOptions.defaultAxis2Options.labelStyle
+            session.defaultChartOptions.defaultAxis2Options.titleStyle
+            session.defaultChartOptions.legend.textStyle
+            session.defaultChartOptions.legend.titleStyle
+            session.defaultChartOptions.tagTextStyle
+            session.defaultPlot.title.titleStyle
+            session.xyPlots[name].charts[name].axes1[i].labelStyle
+            session.xyPlots[name].charts[name].axes1[i].titleStyle
+            session.xyPlots[name].charts[name].axes2[i].labelStyle
+            session.xyPlots[name].charts[name].axes2[i].titleStyle
+            session.xyPlots[name].charts[name].legend.textStyle
+            session.xyPlots[name].charts[name].legend.titleStyle
+            session.xyPlots[name].charts[name].tagTextStyle
+            session.xyPlots[name].title.titleStyle
     """
 
     #: A String specifying the color to be used when drawing text with this TextStyle object.
@@ -64,14 +63,13 @@ class TextStyle:
     ):
         """This method creates a TextStyle.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.TextStyle
-            xyPlot.TextStyle
+                session.TextStyle
+                xyPlot.TextStyle
 
         Parameters
         ----------

@@ -4,24 +4,23 @@ from abaqusConstants import *
 class BiaxialTestData:
     """The BiaxialTestData object provides equibiaxial test data (compression and/or tension).
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].hyperelastic.biaxialTestData
-        mdb.models[name].materials[name].hyperfoam.biaxialTestData
-        mdb.models[name].materials[name].mullinsEffect.biaxialTests[i]
-        import odbMaterial
-        session.odbs[name].materials[name].hyperelastic.biaxialTestData
-        session.odbs[name].materials[name].hyperfoam.biaxialTestData
-        session.odbs[name].materials[name].mullinsEffect.biaxialTests[i]
+            import material
+            mdb.models[name].materials[name].hyperelastic.biaxialTestData
+            mdb.models[name].materials[name].hyperfoam.biaxialTestData
+            mdb.models[name].materials[name].mullinsEffect.biaxialTests[i]
+            import odbMaterial
+            session.odbs[name].materials[name].hyperelastic.biaxialTestData
+            session.odbs[name].materials[name].hyperfoam.biaxialTestData
+            session.odbs[name].materials[name].mullinsEffect.biaxialTests[i]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - BIAXIAL TEST DATA
+        - BIAXIAL TEST DATA
     """
 
     def __init__(
@@ -34,18 +33,17 @@ class BiaxialTestData:
     ):
         """This method creates a BiaxialTestData object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].hyperelastic.BiaxialTestData
-            mdb.models[name].materials[name].hyperfoam.BiaxialTestData
-            mdb.models[name].materials[name].mullinsEffect.BiaxialTestData
-            session.odbs[name].materials[name].hyperelastic.BiaxialTestData
-            session.odbs[name].materials[name].hyperfoam.BiaxialTestData
-            session.odbs[name].materials[name].mullinsEffect.BiaxialTestData
+                mdb.models[name].materials[name].hyperelastic.BiaxialTestData
+                mdb.models[name].materials[name].hyperfoam.BiaxialTestData
+                mdb.models[name].materials[name].mullinsEffect.BiaxialTestData
+                session.odbs[name].materials[name].hyperelastic.BiaxialTestData
+                session.odbs[name].materials[name].hyperfoam.BiaxialTestData
+                session.odbs[name].materials[name].mullinsEffect.BiaxialTestData
 
         Parameters
         ----------

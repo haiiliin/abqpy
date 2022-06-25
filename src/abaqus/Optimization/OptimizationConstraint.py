@@ -5,14 +5,13 @@ class OptimizationConstraint:
     """The OptimizationConstraint object constrains an optimization from making changes to the
     topology of the model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import optimization
-        mdb.models[name].optimizationTasks[name].optimizationConstraints[name]
+            import optimization
+            mdb.models[name].optimizationTasks[name].optimizationConstraints[name]
     """
 
     #: A String specifying the optimization constraint repository key.
@@ -39,13 +38,12 @@ class OptimizationConstraint:
     ):
         """This method creates an OptimizationConstraint object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      mdb.models[name].optimizationTasks[name].OptimizationConstraint
+                mdb.models[name].optimizationTasks[name].OptimizationConstraint
 
         Parameters
         ----------

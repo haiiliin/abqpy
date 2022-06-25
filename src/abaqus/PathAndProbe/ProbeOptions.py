@@ -8,15 +8,14 @@ class ProbeOptions:
     module. When probing is initiated for the first time, the values in the **probeOptions**
     member are initialized using the values from the **defaultProbeOptions** member.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.defaultProbeOptions
-        session.probeOptions
+            import visualization
+            session.defaultProbeOptions
+            session.probeOptions
     """
 
     #: A SymbolicConstant specifying the entity being probed when **probeObject** = "ODB". Possible

@@ -5,17 +5,16 @@ class IgnoredVertexArray:
     """The IgnoredVertexArray is a sequence of IgnoredVertex objects. If the part is modified,
     then IgnoredVertexArray must be updated for that part.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].ignoredVertices
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name].ignoredVertices
-        mdb.models[name].rootAssembly.instances[name].ignoredVertices
+            import part
+            mdb.models[name].parts[name].ignoredVertices
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name].ignoredVertices
+            mdb.models[name].rootAssembly.instances[name].ignoredVertices
     """
 
     def findAt(self, coordinates: tuple, printWarning: Boolean = True):

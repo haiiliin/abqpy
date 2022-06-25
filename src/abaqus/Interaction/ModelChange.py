@@ -8,18 +8,17 @@ class ModelChange(Interaction):
     reactivation.
     The ModelChange object is derived from the Interaction object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactions[name]
+            import interaction
+            mdb.models[name].interactions[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - MODEL CHANGE
+        - MODEL CHANGE
     """
 
     #: A String specifying the repository key.
@@ -63,13 +62,12 @@ class ModelChange(Interaction):
     ):
         """This method creates a ModelChange object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ModelChange
+                mdb.models[name].ModelChange
 
         Parameters
         ----------

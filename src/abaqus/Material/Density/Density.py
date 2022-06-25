@@ -4,28 +4,27 @@ from abaqusConstants import *
 class Density:
     """The Density object specifies the material density.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].density
-        import odbMaterial
-        session.odbs[name].materials[name].density
+            import material
+            mdb.models[name].materials[name].density
+            import odbMaterial
+            session.odbs[name].materials[name].density
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - The mass density.
-    - Temperature, if the data depend on temperature.
-    - Value of the first field variable, if the data depend on field variables.
-    - Value of the second field variable.
-    - Etc.
+        - The mass density.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - DENSITY
+        - DENSITY
     """
 
     def __init__(
@@ -38,14 +37,13 @@ class Density:
     ):
         """This method creates a Density object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].Density
-            session.odbs[name].materials[name].Density
+                mdb.models[name].materials[name].Density
+                session.odbs[name].materials[name].Density
 
         Parameters
         ----------

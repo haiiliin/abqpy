@@ -12,13 +12,12 @@ class MdbBase:
     """The Mdb object is the high-level Abaqus model database. A model database stores models
     and analysis controls.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb
+            mdb
     """
 
     #: An Int specifying the release number of the Mdb object in memory.
@@ -58,13 +57,12 @@ class MdbBase:
     def __init__(self, pathName: str = ""):
         """This constructor creates an empty Mdb object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            Mdb
+                Mdb
 
         Parameters
         ----------
@@ -87,13 +85,12 @@ class MdbBase:
         (AutoCAD) geometry. Only a limited number of entities are supported. This format should
         be used only if no other formats are available.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            Mdb
+                Mdb
 
         Parameters
         ----------
@@ -110,13 +107,12 @@ class MdbBase:
     def openMdb(self, pathName: str):
         """This method opens an existing model database file.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            Mdb
+                Mdb
 
         Parameters
         ----------

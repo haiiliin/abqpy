@@ -6,14 +6,13 @@ import typing
 class CaeKerPrefs:
     """The CaeKerPrefs object contains the details of the sessionOptions.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import caePrefsAccess
-        caePrefsAccess.openSessionOptions(...)
+            import caePrefsAccess
+            caePrefsAccess.openSessionOptions(...)
     """
 
     #: A String specifying the path to the preferences file that the CaeKerPrefs object

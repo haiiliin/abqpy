@@ -9,14 +9,13 @@ class TableCollectionAssembly(AssemblyBase):
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
     created.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import assembly
-        mdb.models[name].rootAssembly
+            import assembly
+            mdb.models[name].rootAssembly
     """
 
     elementProgressiveActivations: dict[str, ElementProgressiveActivation] = dict[
@@ -33,13 +32,12 @@ class TableCollectionAssembly(AssemblyBase):
         """This method creates an ElementProgressiveActivation object and places it in the
         elementProgressiveActivation repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].rootAssembly.ElementProgressiveActivation
+                mdb.models[name].rootAssembly.ElementProgressiveActivation
 
         Parameters
         ----------

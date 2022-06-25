@@ -7,36 +7,35 @@ from .CapHardening import CapHardening
 class CapPlasticity:
     r"""The CapPlasticity object specifies the modified Drucker-Prager/Cap plasticity model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].capPlasticity
-        import odbMaterial
-        session.odbs[name].materials[name].capPlasticity
+            import material
+            mdb.models[name].materials[name].capPlasticity
+            import odbMaterial
+            session.odbs[name].materials[name].capPlasticity
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Material cohesion, :math:`d`, in the :math:`p-t` plane (Abaqus/Standard) or in the :math:`p-q` 
-      plane (Abaqus/Explicit).
-    - Material angle of friction, :math:`\beta`, in the :math:`p-t` plane (Abaqus/Standard) or 
-      in the :math:`p-q` plane (Abaqus/Explicit). Give the value in degrees.
-    - Cap eccentricity parameter, :math:`R`. Its value must be greater than zero (typically 
-      :math:`0.0<R<1.0)`.
-    - Initial cap yield surface position, :math:`\left.\varepsilon_{v o l}^{p l}\right|_{0}`
-    - Transition surface radius parameter, :math:`\alpha`. The default value is :math:`0.0` (i.e., 
-      no transition surface). Abaqus/Standard assumes :math:`K=1.0`.
-    - Temperature, if the data depend on temperature.
-    - Value of the first field variable, if the data depend on field variables.
-    - Value of the second field variable.
-    - Etc.
+        - Material cohesion, :math:`d`, in the :math:`p-t` plane (Abaqus/Standard) or in the :math:`p-q` 
+          plane (Abaqus/Explicit).
+        - Material angle of friction, :math:`\beta`, in the :math:`p-t` plane (Abaqus/Standard) or 
+          in the :math:`p-q` plane (Abaqus/Explicit). Give the value in degrees.
+        - Cap eccentricity parameter, :math:`R`. Its value must be greater than zero (typically 
+          :math:`0.0<R<1.0)`.
+        - Initial cap yield surface position, :math:`\left.\varepsilon_{v o l}^{p l}\right|_{0}`
+        - Transition surface radius parameter, :math:`\alpha`. The default value is :math:`0.0` (i.e., 
+          no transition surface). Abaqus/Standard assumes :math:`K=1.0`.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CAP PLASTICITY
+        - CAP PLASTICITY
     """
 
     #: A :py:class:`~abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion` object.
@@ -53,14 +52,13 @@ class CapPlasticity:
     ):
         """This method creates a CapPlasticity object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].CapPlasticity
-            session.odbs[name].materials[name].CapPlasticity
+                mdb.models[name].materials[name].CapPlasticity
+                session.odbs[name].materials[name].CapPlasticity
 
         Parameters
         ----------

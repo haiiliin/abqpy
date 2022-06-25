@@ -6,13 +6,12 @@ class MemoryReductionOptions:
     running in reduced memory mode. The MemoryReductionOptions object has no constructor.
     Abaqus creates the **MemoryReductionOptions** member when a session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        session.memoryReductionOptions
+            session.memoryReductionOptions
     """
 
     def setValues(self, reducedMemoryMode: Boolean = ON, percentThreshold: float = 75):

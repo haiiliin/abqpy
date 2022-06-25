@@ -10,13 +10,12 @@ class FixedConstraint(ConstrainedSketchConstraint):
         ConstrainedSketchGeometry object or a ConstrainedSketchVertex object and constrains them to be fixed in
         space. Both the location and the shape of the sketch geometry is fixed.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].FixedConstraint
+                mdb.models[name].sketches[name].FixedConstraint
 
         Parameters
         ----------

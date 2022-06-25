@@ -2,46 +2,44 @@ class CombinedTestData:
     r"""The CombinedTestData object specifies simultaneously the normalized shear and bulk
     compliances or relaxation moduli as functions of time.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].viscoelastic.combinedTestData
-        import odbMaterial
-        session.odbs[name].materials[name].viscoelastic.combinedTestData
+            import material
+            mdb.models[name].materials[name].viscoelastic.combinedTestData
+            import odbMaterial
+            session.odbs[name].materials[name].viscoelastic.combinedTestData
 
-    The table data for this object are:
+        The table data for this object are:
 
-    If **time** = RELAXATION_TEST_DATA, the table data specify the following:
-    
-        - Normalized shear modulus, :math:`g_R(t)` (:math:`0\le g_R(t)\le 1`).
-        - Normalized volumetric (bulk) modulus, :math:`k_R(t)` (:math:`0\le k_R(t)\le 1`).
-        - Time :math:`t` (:math:`t>0`).
-    If **time** = CREEP_TEST_DATA, the table data specify the following:
-    
-        - Normalized shear compliance, :math:`j_S(t)` (:math:`j_S(t)\ge 1`).
-        - Normalized volumetric (bulk) compliance, :math:`j_K(t)` (:math:`j_K(t)\ge 1`).
-        - Time :math:`t` (:math:`t>0`).
+        If **time** = RELAXATION_TEST_DATA, the table data specify the following:
+        
+            - Normalized shear modulus, :math:`g_R(t)` (:math:`0\le g_R(t)\le 1`).
+            - Normalized volumetric (bulk) modulus, :math:`k_R(t)` (:math:`0\le k_R(t)\le 1`).
+            - Time :math:`t` (:math:`t>0`).
+        If **time** = CREEP_TEST_DATA, the table data specify the following:
+        
+            - Normalized shear compliance, :math:`j_S(t)` (:math:`j_S(t)\ge 1`).
+            - Normalized volumetric (bulk) compliance, :math:`j_K(t)` (:math:`j_K(t)\ge 1`).
+            - Time :math:`t` (:math:`t>0`).
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - COMBINED TEST DATA
+        - COMBINED TEST DATA
     """
 
     def __init__(self, table: tuple, volinf: float = None, shrinf: float = None):
         """This method creates a CombinedTestData object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].viscoelastic.CombinedTestData
-            session.odbs[name].materials[name].viscoelastic.CombinedTestData
+                mdb.models[name].materials[name].viscoelastic.CombinedTestData
+                session.odbs[name].materials[name].viscoelastic.CombinedTestData
 
         Parameters
         ----------

@@ -2,18 +2,17 @@ class TimePoint:
     """The TimePoint object defines time points at which data are written to the output
     database or restart files.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].timePoints[name]
+            import step
+            mdb.models[name].timePoints[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - TIME POINTS
+        - TIME POINTS
     """
 
     #: A String specifying the repository key.
@@ -26,13 +25,12 @@ class TimePoint:
     def __init__(self, name: str, points: tuple):
         """This method creates a TimePoint object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].TimePoint
+                mdb.models[name].TimePoint
 
         Parameters
         ----------

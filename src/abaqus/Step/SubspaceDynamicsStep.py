@@ -21,19 +21,18 @@ class SubspaceDynamicsStep(AnalysisStep):
     method.
     The SubspaceDynamicsStep object is derived from the AnalysisStep object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name]
+            import step
+            mdb.models[name].steps[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - DYNAMIC
-            - STEP
+        - DYNAMIC
+                - STEP
     """
 
     #: A String specifying the repository key.
@@ -178,13 +177,12 @@ class SubspaceDynamicsStep(AnalysisStep):
     ):
         """This method creates a SubspaceDynamicsStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SubspaceDynamicsStep
+                mdb.models[name].SubspaceDynamicsStep
 
         Parameters
         ----------

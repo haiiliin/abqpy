@@ -13,13 +13,12 @@ object is about to be deleted:
         print 'About to delete', path 
     deleteObjectCallback.addCallback(path='mdb.jobs[*]') 
 
-Notes
------
-    This object can be accessed by:
-    
-    .. code-block:: python
-    
-        import deleteObjectCallback
+.. note:: 
+        This object can be accessed by:
+
+        .. code-block:: python
+
+            import deleteObjectCallback
 
 """
 
@@ -33,13 +32,12 @@ def deleteObjectCallback(
     when the object is deleted using an Abaqus Scripting Interface command such as
     mdb.models[name].parts[name].deleteFeature().
 
-    Notes
-    -----
-        This function can be accessed by:
+    .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            deleteObjectCallback.addCallback
+                deleteObjectCallback.addCallback
 
     Parameters
     ----------

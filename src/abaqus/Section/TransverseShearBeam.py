@@ -6,20 +6,19 @@ from abaqusConstants import *
 class TransverseShearBeam:
     """The TransverseShearBeam object defines the transverse shear stiffness properties of a beam section.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].sections[name].beamTransverseShear
-        import odbSection
-        session.odbs[name].sections[name].beamTransverseShear
+            import section
+            mdb.models[name].sections[name].beamTransverseShear
+            import odbSection
+            session.odbs[name].sections[name].beamTransverseShear
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - TRANSVERSE SHEAR STIFFNESS
+        - TRANSVERSE SHEAR STIFFNESS
     """
 
     #: A SymbolicConstant specifying how slenderness compensation factor of the section is
@@ -47,14 +46,13 @@ class TransverseShearBeam:
     ):
         """This method creates a TransverseShearBeam object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sections[name].TransverseShearBeam
-            session.odbs[name].sections[name].TransverseShearBeam
+                mdb.models[name].sections[name].TransverseShearBeam
+                session.odbs[name].sections[name].TransverseShearBeam
 
         Parameters
         ----------

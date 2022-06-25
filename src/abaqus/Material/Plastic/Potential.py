@@ -4,37 +4,36 @@ from abaqusConstants import *
 class Potential:
     """The Potential object defines an anisotropic yield/creep model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].creep.potential
-        mdb.models[name].materials[name].Plastic.potential
-        mdb.models[name].materials[name].viscous.potential
-        import odbMaterial
-        session.odbs[name].materials[name].creep.potential
-        session.odbs[name].materials[name].Plastic.potential
-        session.odbs[name].materials[name].viscous.potential
+            import material
+            mdb.models[name].materials[name].creep.potential
+            mdb.models[name].materials[name].Plastic.potential
+            mdb.models[name].materials[name].viscous.potential
+            import odbMaterial
+            session.odbs[name].materials[name].creep.potential
+            session.odbs[name].materials[name].Plastic.potential
+            session.odbs[name].materials[name].viscous.potential
 
-    The table data for this object are:
-    
-    - :math:`R_{11}`.
-    - :math:`R_{22}`.
-    - :math:`R_{33}`.
-    - :math:`R_{12}`.
-    - :math:`R_{13}`.
-    - :math:`R_{23}`.
-    - Temperature, if the data depend on temperature.
-    - Value of the first field variable, if the data depend on field variables.
-    - Value of the second field variable.
-    - Etc.
+        The table data for this object are:
+        
+        - :math:`R_{11}`.
+        - :math:`R_{22}`.
+        - :math:`R_{33}`.
+        - :math:`R_{12}`.
+        - :math:`R_{13}`.
+        - :math:`R_{23}`.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - POTENTIAL
+        - POTENTIAL
     """
 
     def __init__(
@@ -42,18 +41,17 @@ class Potential:
     ):
         """This method creates a Potential object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].creep.Potential
-            mdb.models[name].materials[name].Plastic.Potential
-            mdb.models[name].materials[name].viscous.Potential
-            session.odbs[name].materials[name].creep.Potential
-            session.odbs[name].materials[name].Plastic.Potential
-            session.odbs[name].materials[name].viscous.Potential
+                mdb.models[name].materials[name].creep.Potential
+                mdb.models[name].materials[name].Plastic.Potential
+                mdb.models[name].materials[name].viscous.Potential
+                session.odbs[name].materials[name].creep.Potential
+                session.odbs[name].materials[name].Plastic.Potential
+                session.odbs[name].materials[name].viscous.Potential
 
         Parameters
         ----------

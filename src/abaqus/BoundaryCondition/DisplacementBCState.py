@@ -10,18 +10,17 @@ class DisplacementBCState(BoundaryConditionState):
     The DisplacementBCState object has no constructor or methods.
     The DisplacementBCState object is derived from the BoundaryConditionState object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].steps[name].boundaryConditionStates[name]
+            import load
+            mdb.models[name].steps[name].boundaryConditionStates[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - BOUNDARY
+        - BOUNDARY
     """
 
     #: A Float or a Complex specifying the displacement component in the 1-direction.

@@ -7,29 +7,28 @@ class ContactArea:
     defines the contact area or contact width versus closure curves to output an average
     pressure through variable CS11.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].gasketThicknessBehavior.contactArea
-        import odbMaterial
-        session.odbs[name].materials[name].gasketThicknessBehavior.contactArea
+            import material
+            mdb.models[name].materials[name].gasketThicknessBehavior.contactArea
+            import odbMaterial
+            session.odbs[name].materials[name].gasketThicknessBehavior.contactArea
 
-    The table data for this object are:
-    
-    - Contact area or width; this value must be positive.
-    - Closure; this value must be positive.
-    - Temperature, if the data depend on temperature.
-    - Value of the first field variable, if the data depend on field variables.
-    - Value of the second field variable.
-    - Etc.
+        The table data for this object are:
+        
+        - Contact area or width; this value must be positive.
+        - Closure; this value must be positive.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - GASKET CONTACT AREA
+        - GASKET CONTACT AREA
     """
 
     def __init__(
@@ -37,14 +36,13 @@ class ContactArea:
     ):
         """This method creates a ContactArea object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].gasketThicknessBehavior.ContactArea
-            session.odbs[name].materials[name].gasketThicknessBehavior.ContactArea
+                mdb.models[name].materials[name].gasketThicknessBehavior.ContactArea
+                session.odbs[name].materials[name].gasketThicknessBehavior.ContactArea
 
         Parameters
         ----------

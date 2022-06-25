@@ -1,40 +1,38 @@
 class Gel:
     r"""The Gel object defines a swelling gel.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].gel
-        import odbMaterial
-        session.odbs[name].materials[name].gel
+            import material
+            mdb.models[name].materials[name].gel
+            import odbMaterial
+            session.odbs[name].materials[name].gel
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Radius of gel particles when completely dry, :math:`r_{a}^{\mathrm{dry}}`.
-    - Fully swollen radius of gel particles, :math:`r_{a}^{f}`.
-    - Number of gel particles per unit volume, :math:`k_{a}`.
-    - Relaxation time constant for long-term swelling of gel particles, :math:`\tau_{1}`.
+        - Radius of gel particles when completely dry, :math:`r_{a}^{\mathrm{dry}}`.
+        - Fully swollen radius of gel particles, :math:`r_{a}^{f}`.
+        - Number of gel particles per unit volume, :math:`k_{a}`.
+        - Relaxation time constant for long-term swelling of gel particles, :math:`\tau_{1}`.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - GEL
+        - GEL
     """
 
     def __init__(self, table: tuple):
         """This method creates a Gel object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].Gel
-            session.odbs[name].materials[name].Gel
+                mdb.models[name].materials[name].Gel
+                session.odbs[name].materials[name].Gel
 
         Parameters
         ----------

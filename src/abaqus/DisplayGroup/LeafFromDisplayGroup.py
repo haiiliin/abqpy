@@ -9,14 +9,13 @@ class LeafFromDisplayGroup(Leaf):
     are constructed as temporary objects, which are then used as arguments to DisplayGroup
     commands.The LeafFromDisplayGroup object is derived from the Leaf object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import displayGroupMdbToolset
-        import displayGroupOdbToolset
+            import displayGroupMdbToolset
+            import displayGroupOdbToolset
     """
 
     #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
@@ -29,13 +28,12 @@ class LeafFromDisplayGroup(Leaf):
     def __init__(self, displayGroup: DisplayGroupArray):
         """This method creates a Leaf object from a sequence of Display Group objects.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            LeafFromDisplayGroup
+                LeafFromDisplayGroup
 
         Parameters
         ----------

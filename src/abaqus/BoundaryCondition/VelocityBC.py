@@ -9,14 +9,13 @@ class VelocityBC(BoundaryCondition):
     """The VelocityBC object stores the data for a velocity boundary condition.
     The VelocityBC object is derived from the BoundaryCondition object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].boundaryConditions[name]
+            import load
+            mdb.models[name].boundaryConditions[name]
     """
 
     #: A String specifying the boundary condition repository key.
@@ -61,13 +60,12 @@ class VelocityBC(BoundaryCondition):
     ):
         """This method creates a VelocityBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].VelocityBC
+                mdb.models[name].VelocityBC
 
         Parameters
         ----------

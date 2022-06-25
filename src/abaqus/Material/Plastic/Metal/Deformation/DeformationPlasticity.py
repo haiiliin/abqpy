@@ -4,42 +4,40 @@ from abaqusConstants import *
 class DeformationPlasticity:
     r"""The DeformationPlasticity object specifies the deformation plasticity model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].deformationPlasticity
-        import odbMaterial
-        session.odbs[name].materials[name].deformationPlasticity
+            import material
+            mdb.models[name].materials[name].deformationPlasticity
+            import odbMaterial
+            session.odbs[name].materials[name].deformationPlasticity
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Young's modulus, :math:`E`.
-    - Poisson's ratio, :math:`\nu`.
-    - Yield stress, :math:`\sigma^{0}`
-    - Exponent, :math:`n`.
-    - Yield offset, :math:`\alpha`.
-    - Temperature, if the data depend on temperature.
+        - Young's modulus, :math:`E`.
+        - Poisson's ratio, :math:`\nu`.
+        - Yield stress, :math:`\sigma^{0}`
+        - Exponent, :math:`n`.
+        - Yield offset, :math:`\alpha`.
+        - Temperature, if the data depend on temperature.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - DEFORMATION PLASTICITY
+        - DEFORMATION PLASTICITY
     """
 
     def __init__(self, table: tuple, temperatureDependency: Boolean = OFF):
         """This method creates a DeformationPlasticity object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].DeformationPlasticity
-            session.odbs[name].materials[name].DeformationPlasticity
+                mdb.models[name].materials[name].DeformationPlasticity
+                session.odbs[name].materials[name].DeformationPlasticity
 
         Parameters
         ----------

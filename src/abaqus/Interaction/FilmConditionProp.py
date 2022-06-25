@@ -7,18 +7,17 @@ class FilmConditionProp(ContactProperty):
     as a function of temperature and field variables.
     The FilmConditionProp object is derived from the InteractionProperty object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactionProperties[name]
+            import interaction
+            mdb.models[name].interactionProperties[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - FILM PROPERTY
+        - FILM PROPERTY
     """
 
     #: A String specifying the interaction property repository key.
@@ -48,13 +47,12 @@ class FilmConditionProp(ContactProperty):
     ):
         """This method creates a FilmConditionProp object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].FilmConditionProp
+                mdb.models[name].FilmConditionProp
 
         Parameters
         ----------

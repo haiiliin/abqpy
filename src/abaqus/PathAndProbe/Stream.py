@@ -1,14 +1,13 @@
 class Stream:
     """TheStream object defines a set of streamlines in fluid mechanics.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.streams[name]
+            import visualization
+            session.streams[name]
     """
 
     def __init__(
@@ -21,13 +20,12 @@ class Stream:
     ):
         """This method creates aStream object and places it in the streams repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.Stream
+                session.Stream
 
         Parameters
         ----------

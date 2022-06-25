@@ -3,14 +3,13 @@ class Transform:
     direct constructor. A :py:class:`~abaqus.BasicGeometry.Transform.Transform` object is a 4×3 matrix of Floats that represents the
     transformation from sketch coordinates to assembly coordinates or to part coordinates.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        import assembly
+            import part
+            import assembly
     """
 
     def matrix(self):

@@ -6,20 +6,19 @@ class DecayAmplitude(Amplitude):
     """The DecayAmplitude object defines an amplitude curve using an exponential decay.
     The DecayAmplitude object is derived from the Amplitude object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import amplitude
-        mdb.models[name].amplitudes[name]
-        import odbAmplitude
-        session.odbs[name].amplitudes[name]
+            import amplitude
+            mdb.models[name].amplitudes[name]
+            import odbAmplitude
+            session.odbs[name].amplitudes[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - AMPLITUDE
+        - AMPLITUDE
     """
 
     #: A String specifying the repository key.
@@ -52,14 +51,13 @@ class DecayAmplitude(Amplitude):
     ):
         """This method creates a DecayAmplitude object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].DecayAmplitude
-            session.odbs[name].DecayAmplitude
+                mdb.models[name].DecayAmplitude
+                session.odbs[name].DecayAmplitude
 
         Parameters
         ----------

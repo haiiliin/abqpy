@@ -8,14 +8,13 @@ from .XYCurve import XYCurve
 class XYPlotBase:
     """The XYPlot object is used to display Chart objects.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.xyPlots[name]
+            import visualization
+            session.xyPlots[name]
     """
 
     #: An :py:class:`~abaqus.XY.Area.Area` object specifying position, padding, background and borders of the XYPlot
@@ -38,13 +37,12 @@ class XYPlotBase:
     def __init__(self, name: str):
         """This method creates an empty XYPlot object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.XYPlot
+                session.XYPlot
 
         Parameters
         ----------

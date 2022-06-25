@@ -16,13 +16,12 @@ def getInput(prompt: str, default: str = ""):
     the command line and passing the script name to the command line options **-start**,
     **-script**, **-replay**, or **-noGUI**.
 
-    Notes
-    -----
-        This function can be accessed by:
+    .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            getInput
+                getInput
 
     Parameters
     ----------
@@ -50,13 +49,12 @@ def getInput(fields: tuple, label: str = "", dialogTitle: str = ""):
     the command line and passing the script name to the command line options **-start**,
     **-script**, **-replay**, or **-noGUI**.
 
-    Notes
-    -----
-        This function can be accessed by:
+    .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            getInputs
+                getInputs
 
     Parameters
     ----------
@@ -97,13 +95,12 @@ def getWarningReply(message: str, buttons: str):
     from the command line and passing the script name to the command line options
     **-start**, **-script**, **-replay**, or **-noGUI**.
 
-    Notes
-    -----
-        This function can be accessed by:
+    .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            getWarningReply
+                getWarningReply
 
     Parameters
     ----------

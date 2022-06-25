@@ -7,14 +7,13 @@ class DrillControl(GeometricRestriction):
     """The DrillControl object defines a drill control geometric restriction.
     The DrillControl object is derived from the GeometricRestriction object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import optimization
-        mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
+            import optimization
+            mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
 
     #: A String specifying the geometric restriction repository key.
@@ -82,13 +81,12 @@ class DrillControl(GeometricRestriction):
     ):
         """This method creates a DrillControl object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      mdb.models[name].optimizationTasks[name].DrillControl
+                mdb.models[name].optimizationTasks[name].DrillControl
 
         Parameters
         ----------

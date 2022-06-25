@@ -4,37 +4,36 @@ from abaqusConstants import *
 class BrittleFailure:
     """The BrittleFailure object specifies the brittle failure of the material.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].brittleCracking.brittleFailure
-        import odbMaterial
-        session.odbs[name].materials[name].brittleCracking.brittleFailure
+            import material
+            mdb.models[name].materials[name].brittleCracking.brittleFailure
+            import odbMaterial
+            session.odbs[name].materials[name].brittleCracking.brittleFailure
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If parent :py:class:`~abaqus.Material.Plastic.Concrete.BrittleCracking.BrittleCracking` member **type** = STRAIN the table data specify the following:
-    
-        - Direct cracking failure strain.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If parent :py:class:`~abaqus.Material.Plastic.Concrete.BrittleCracking.BrittleCracking` member **type** = DISPLACEMENT or **type** = GFI the table data specify the following:
-    
-        - Direct cracking failure displacement.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+        - If parent :py:class:`~abaqus.Material.Plastic.Concrete.BrittleCracking.BrittleCracking` member **type** = STRAIN the table data specify the following:
+        
+            - Direct cracking failure strain.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If parent :py:class:`~abaqus.Material.Plastic.Concrete.BrittleCracking.BrittleCracking` member **type** = DISPLACEMENT or **type** = GFI the table data specify the following:
+        
+            - Direct cracking failure displacement.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - BRITTLE FAILURE
+        - BRITTLE FAILURE
     """
 
     def __init__(
@@ -46,14 +45,13 @@ class BrittleFailure:
     ):
         """This method creates a BrittleFailure object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].brittleCracking.BrittleFailure
-            session.odbs[name].materials[name].brittleCracking.BrittleFailure
+                mdb.models[name].materials[name].brittleCracking.BrittleFailure
+                session.odbs[name].materials[name].brittleCracking.BrittleFailure
 
         Parameters
         ----------

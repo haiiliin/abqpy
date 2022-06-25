@@ -2,17 +2,16 @@ class IgnoredVertex:
     """An :py:class:`~abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex` object is a point region of the geometry that was abstracted away by a
     virtual topology feature.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].ignoredVertices[i]
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name].ignoredVertices[i]
-        mdb.models[name].rootAssembly.instances[name].ignoredVertices[i]
+            import part
+            mdb.models[name].parts[name].ignoredVertices[i]
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name].ignoredVertices[i]
+            mdb.models[name].rootAssembly.instances[name].ignoredVertices[i]
     """
 
     #: An Int specifying the index of the IgnoredVertex in the IgnoredVertexArray.

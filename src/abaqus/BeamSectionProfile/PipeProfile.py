@@ -5,20 +5,19 @@ class PipeProfile(Profile):
     """The PipeProfile object defines the properties of a circular pipe profile.
     The PipeProfile object is derived from the Profile object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].profiles[name]
-        import odbSection
-        session.odbs[name].profiles[name]
+            import section
+            mdb.models[name].profiles[name]
+            import odbSection
+            session.odbs[name].profiles[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - BEAM SECTION
+        - BEAM SECTION
     """
 
     #: A String specifying the repository key.
@@ -35,14 +34,13 @@ class PipeProfile(Profile):
     def __init__(self, name: str, r: float, t: float):
         """This method creates a PipeProfile object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].PipeProfile
-            session.odbs[name].PipeProfile
+                mdb.models[name].PipeProfile
+                session.odbs[name].PipeProfile
 
         Parameters
         ----------

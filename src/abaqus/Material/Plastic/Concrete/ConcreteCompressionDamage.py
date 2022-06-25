@@ -5,29 +5,28 @@ class ConcreteCompressionDamage:
     r"""The ConcreteCompressionDamage object specifies hardening for the concrete damaged
     plasticity model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].concreteDamagedPlasticity.concreteCompressionDamage
-        import odbMaterial
-        session.odbs[name].materials[name].concreteDamagedPlasticity.concreteCompressionDamage
+            import material
+            mdb.models[name].materials[name].concreteDamagedPlasticity.concreteCompressionDamage
+            import odbMaterial
+            session.odbs[name].materials[name].concreteDamagedPlasticity.concreteCompressionDamage
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Compressive damage variable, :math:`d_{c}`.
-    - Inelastic (crushing) strain, :math:`\epsilon_{c}^{i n}`.
-    - Temperature, if the data depend on temperature.
-    - Value of the first field variable, if the data depend on field variables.
-    - Value of the second field variable.
-    - Etc.
+        - Compressive damage variable, :math:`d_{c}`.
+        - Inelastic (crushing) strain, :math:`\epsilon_{c}^{i n}`.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONCRETE COMPRESSION DAMAGE
+        - CONCRETE COMPRESSION DAMAGE
     """
 
     def __init__(
@@ -39,14 +38,13 @@ class ConcreteCompressionDamage:
     ):
         """This method creates a ConcreteCompressionDamage object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].concreteDamagedPlasticity.ConcreteCompressionDamage
-            session.odbs[name].materials[name].concreteDamagedPlasticity.ConcreteCompressionDamage
+                mdb.models[name].materials[name].concreteDamagedPlasticity.ConcreteCompressionDamage
+                session.odbs[name].materials[name].concreteDamagedPlasticity.ConcreteCompressionDamage
 
         Parameters
         ----------

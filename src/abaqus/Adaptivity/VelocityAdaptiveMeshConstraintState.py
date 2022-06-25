@@ -12,18 +12,17 @@ class VelocityAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
     The VelocityAdaptiveMeshConstraintState object is derived from the
     AdaptiveMeshConstraintState object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name].adaptiveMeshConstraintStates[name]
+            import step
+            mdb.models[name].steps[name].adaptiveMeshConstraintStates[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - ADAPTIVE MESH CONSTRAINT
+        - ADAPTIVE MESH CONSTRAINT
     """
 
     #: A Float specifying the velocity component in the 1-direction.
@@ -110,13 +109,12 @@ class VelocityAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
         The VelocityAdaptiveMeshConstraintState object is derived from the
         AdaptiveMeshConstraintState object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].steps[name].VelocityAdaptiveMeshConstraintState
+                mdb.models[name].steps[name].VelocityAdaptiveMeshConstraintState
 
         Parameters
         ----------

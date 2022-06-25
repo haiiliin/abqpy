@@ -2,18 +2,17 @@ class ActivateElements:
     """The ActivateElements object is used turn on progressive element activation within a step
     definition.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name].steps[name].activateElements[key]
+            mdb.models[name].steps[name].activateElements[key]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - ActivateElements
-            - ElementProgressiveActivation
+        - ActivateElements
+                - ElementProgressiveActivation
     """
 
     #: A String specifying the name of the tableCollection object.
@@ -39,13 +38,12 @@ class ActivateElements:
     ):
         """This method creates an ActivateElements object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ActivateElements
+                mdb.models[name].ActivateElements
 
         Parameters
         ----------

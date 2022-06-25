@@ -7,23 +7,22 @@ from .XYData import XYData
 class XYCurve:
     """The XYCurve object is used to plot **X - Y** data and to store its display attributes.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.charts[name].axes1[i].axisData.curves[i]
-        session.charts[name].axes2[i].axisData.curves[i]
-        session.charts[name].curves[name]
-        session.curves[name]
-        session.defaultChartOptions.defaultAxis1Options.axisData.curves[i]
-        session.defaultChartOptions.defaultAxis2Options.axisData.curves[i]
-        session.xyPlots[name].charts[name].axes1[i].axisData.curves[i]
-        session.xyPlots[name].charts[name].axes2[i].axisData.curves[i]
-        session.xyPlots[name].charts[name].curves[name]
-        session.xyPlots[name].curves[name]
+            import visualization
+            session.charts[name].axes1[i].axisData.curves[i]
+            session.charts[name].axes2[i].axisData.curves[i]
+            session.charts[name].curves[name]
+            session.curves[name]
+            session.defaultChartOptions.defaultAxis1Options.axisData.curves[i]
+            session.defaultChartOptions.defaultAxis2Options.axisData.curves[i]
+            session.xyPlots[name].charts[name].axes1[i].axisData.curves[i]
+            session.xyPlots[name].charts[name].axes2[i].axisData.curves[i]
+            session.xyPlots[name].charts[name].curves[name]
+            session.xyPlots[name].curves[name]
     """
 
     #: A String specifying the repository key.
@@ -63,13 +62,12 @@ class XYCurve:
     def Curve(self, name: str, data: XYData):
         """This method creates an XYCurve object from an XYData object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.Curve
+                session.Curve
 
         Parameters
         ----------

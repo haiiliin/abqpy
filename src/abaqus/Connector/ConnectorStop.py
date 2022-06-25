@@ -6,20 +6,19 @@ class ConnectorStop(ConnectorBehaviorOption):
     connector's relative motion.
     The ConnectorStop object is derived from the ConnectorBehaviorOption object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].sections[name].behaviorOptions[i]
-        import odbSection
-        session.odbs[name].sections[name].behaviorOptions[i]
+            import section
+            mdb.models[name].sections[name].behaviorOptions[i]
+            import odbSection
+            session.odbs[name].sections[name].behaviorOptions[i]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONNECTOR STOP
+        - CONNECTOR STOP
     """
 
     #: None or a Float specifying the lower bound for the connector's relative position for all
@@ -40,16 +39,15 @@ class ConnectorStop(ConnectorBehaviorOption):
     ):
         """This method creates a connector stop behavior option for a ConnectorSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            import connectorBehavior
-            connectorBehavior.ConnectorStop
-            import odbConnectorBehavior
-            odbConnectorBehavior.ConnectorStop
+                import connectorBehavior
+                connectorBehavior.ConnectorStop
+                import odbConnectorBehavior
+                odbConnectorBehavior.ConnectorStop
 
         Parameters
         ----------

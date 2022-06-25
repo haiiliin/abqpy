@@ -6,38 +6,37 @@ class MeshNode:
     object can be accessed via a part or part instance using an index that refers to the
     internal numbering of the node repository. The index does not refer to the node label.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].allInternalSets[name].nodes[i]
-        mdb.models[name].parts[name].allInternalSurfaces[name].nodes[i]
-        mdb.models[name].parts[name].allSets[name].nodes[i]
-        mdb.models[name].parts[name].allSurfaces[name].nodes[i]
-        mdb.models[name].parts[name].nodes[i]
-        mdb.models[name].parts[name].retainedNodes[i]
-        mdb.models[name].parts[name].sets[name].nodes[i]
-        mdb.models[name].parts[name].surfaces[name].nodes[i]
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name].nodes[i]
-        mdb.models[name].rootAssembly.allInstances[name].sets[name].nodes[i]
-        mdb.models[name].rootAssembly.allInstances[name].surfaces[name].nodes[i]
-        mdb.models[name].rootAssembly.allInternalSets[name].nodes[i]
-        mdb.models[name].rootAssembly.allInternalSurfaces[name].nodes[i]
-        mdb.models[name].rootAssembly.allSets[name].nodes[i]
-        mdb.models[name].rootAssembly.allSurfaces[name].nodes[i]
-        mdb.models[name].rootAssembly.instances[name].nodes[i]
-        mdb.models[name].rootAssembly.instances[name].sets[name].nodes[i]
-        mdb.models[name].rootAssembly.instances[name].surfaces[name].nodes[i]
-        mdb.models[name].rootAssembly.modelInstances[i].nodes[i]
-        mdb.models[name].rootAssembly.modelInstances[i].sets[name].nodes[i]
-        mdb.models[name].rootAssembly.modelInstances[i].surfaces[name].nodes[i]
-        mdb.models[name].rootAssembly.nodes[i]
-        mdb.models[name].rootAssembly.sets[name].nodes[i]
-        mdb.models[name].rootAssembly.surfaces[name].nodes[i]
+            import part
+            mdb.models[name].parts[name].allInternalSets[name].nodes[i]
+            mdb.models[name].parts[name].allInternalSurfaces[name].nodes[i]
+            mdb.models[name].parts[name].allSets[name].nodes[i]
+            mdb.models[name].parts[name].allSurfaces[name].nodes[i]
+            mdb.models[name].parts[name].nodes[i]
+            mdb.models[name].parts[name].retainedNodes[i]
+            mdb.models[name].parts[name].sets[name].nodes[i]
+            mdb.models[name].parts[name].surfaces[name].nodes[i]
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name].nodes[i]
+            mdb.models[name].rootAssembly.allInstances[name].sets[name].nodes[i]
+            mdb.models[name].rootAssembly.allInstances[name].surfaces[name].nodes[i]
+            mdb.models[name].rootAssembly.allInternalSets[name].nodes[i]
+            mdb.models[name].rootAssembly.allInternalSurfaces[name].nodes[i]
+            mdb.models[name].rootAssembly.allSets[name].nodes[i]
+            mdb.models[name].rootAssembly.allSurfaces[name].nodes[i]
+            mdb.models[name].rootAssembly.instances[name].nodes[i]
+            mdb.models[name].rootAssembly.instances[name].sets[name].nodes[i]
+            mdb.models[name].rootAssembly.instances[name].surfaces[name].nodes[i]
+            mdb.models[name].rootAssembly.modelInstances[i].nodes[i]
+            mdb.models[name].rootAssembly.modelInstances[i].sets[name].nodes[i]
+            mdb.models[name].rootAssembly.modelInstances[i].surfaces[name].nodes[i]
+            mdb.models[name].rootAssembly.nodes[i]
+            mdb.models[name].rootAssembly.sets[name].nodes[i]
+            mdb.models[name].rootAssembly.surfaces[name].nodes[i]
     """
 
     #: An Int specifying the node label.
@@ -54,13 +53,12 @@ class MeshNode:
     ):
         """This method creates a node on an orphan mesh part.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].Node
+                mdb.models[name].parts[*name*].Node
 
         Parameters
         ----------

@@ -7,14 +7,13 @@ class ConcentratedHeatFlux(Load):
     """The ConcentratedHeatFlux object stores the data for a concentrated heat flux load.
     The ConcentratedHeatFlux object is derived from the Load object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].loads[name]
+            import load
+            mdb.models[name].loads[name]
     """
 
     #: A String specifying the load repository key.
@@ -49,13 +48,12 @@ class ConcentratedHeatFlux(Load):
     ):
         """This method creates a ConcentratedHeatFlux object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ConcentratedHeatFlux
+                mdb.models[name].ConcentratedHeatFlux
 
         Parameters
         ----------

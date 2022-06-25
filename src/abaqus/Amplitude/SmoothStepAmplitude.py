@@ -7,20 +7,19 @@ class SmoothStepAmplitude(Amplitude):
     one data point to another.
     The SmoothStepAmplitude object is derived from the Amplitude object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import amplitude
-        mdb.models[name].amplitudes[name]
-        import odbAmplitude
-        session.odbs[name].amplitudes[name]
+            import amplitude
+            mdb.models[name].amplitudes[name]
+            import odbAmplitude
+            session.odbs[name].amplitudes[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - AMPLITUDE
+        - AMPLITUDE
     """
 
     #: A String specifying the repository key.
@@ -37,14 +36,13 @@ class SmoothStepAmplitude(Amplitude):
     def __init__(self, name: str, data: tuple, timeSpan: SymbolicConstant = STEP):
         """This method creates a SmoothStepAmplitude object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SmoothStepAmplitude
-            session.odbs[name].SmoothStepAmplitude
+                mdb.models[name].SmoothStepAmplitude
+                session.odbs[name].SmoothStepAmplitude
 
         Parameters
         ----------

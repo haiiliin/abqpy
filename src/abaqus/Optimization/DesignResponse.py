@@ -3,14 +3,13 @@ class DesignResponse:
     The DesponseResponse object has no explicit constructor. The methods and members of the
     DesignResponse object are common to all objects derived from DesignResponse.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import optimization
-        mdb.models[name].optimizationTasks[name].designResponses[name]
+            import optimization
+            mdb.models[name].optimizationTasks[name].designResponses[name]
     """
 
     #: A String specifying the design response repository key.

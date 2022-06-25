@@ -4,16 +4,15 @@ from abaqusConstants import *
 class OdbAuxiliaryData:
     """The OdbAuxiliaryData object stores auxiliary data related to the steps in the analysis.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.odbData[name].diagnosticData.analysisErrors[i].data[i]
-        session.odbData[name].diagnosticData.analysisWarnings[i].data[i]
-        session.odbData[name].diagnosticData.steps[i].contactDiagnostics[i].data[i]
+            import visualization
+            session.odbData[name].diagnosticData.analysisErrors[i].data[i]
+            session.odbData[name].diagnosticData.analysisWarnings[i].data[i]
+            session.odbData[name].diagnosticData.steps[i].contactDiagnostics[i].data[i]
     """
 
     #: A tuple consisting of element instance names. This attribute is read-only.

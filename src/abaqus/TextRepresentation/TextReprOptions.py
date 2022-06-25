@@ -9,15 +9,14 @@ class TextReprOptions:
     The TextReprOptions object has no constructor. Abaqus creates the **textReprOptions**
     member when a session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import textRepr
-        - textReprOptions
-        session.textReprOptions
+            import textRepr
+            - textReprOptions
+            session.textReprOptions
     """
 
     def setValues(

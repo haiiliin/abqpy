@@ -8,15 +8,14 @@ class ModelJob(Job):
     (MDB).
     The ModelJob object is derived from the Job object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import job
-        mdb.adaptivityProcesses[name].job
-        mdb.jobs[name]
+            import job
+            mdb.adaptivityProcesses[name].job
+            mdb.jobs[name]
     """
 
     #: A String specifying the name of the new job. The name must be a valid Abaqus/CAE object
@@ -173,13 +172,12 @@ class ModelJob(Job):
         """This method creates an analysis job using a model on a model database (MDB) for the
         model definition.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.Job
+                mdb.Job
 
         Parameters
         ----------

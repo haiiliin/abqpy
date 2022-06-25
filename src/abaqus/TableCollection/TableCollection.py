@@ -7,17 +7,16 @@ class TableCollection:
     """A TableCollection is an object used to define the containers that encapsulate the
     ParameterTable and PropertyTable objects.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name].tableCollections[name]
+            mdb.models[name].tableCollections[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - *TABLE COLLECTION
+        - *TABLE COLLECTION
     """
 
     #: A repository of the PropertyTable object.
@@ -33,13 +32,12 @@ class TableCollection:
         """This method creates a TableCollection object and places it in the tableCollections
         repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].TableCollection
+                mdb.models[name].TableCollection
 
         Parameters
         ----------
@@ -56,13 +54,12 @@ class TableCollection:
     def DataTable(self, label: str) -> DataTable:
         """This method creates a DataTable object and places it in the dataTables array.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].TableCollection
+                mdb.models[name].TableCollection
 
         Parameters
         ----------
@@ -86,13 +83,12 @@ class TableCollection:
         """This method creates a ParameterTable object and places it in the parameterTables
         repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].TableCollection
+                mdb.models[name].TableCollection
 
         Parameters
         ----------
@@ -112,13 +108,12 @@ class TableCollection:
     ) -> PropertyTable:
         """This method creates a PropertyTable object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].TableCollection
+                mdb.models[name].TableCollection
 
         Parameters
         ----------

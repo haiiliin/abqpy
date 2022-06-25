@@ -4,14 +4,13 @@ from abaqusConstants import *
 class ConstrainedSketchVertexArray:
     """The ConstrainedSketchVertexArray is a sequence of ConstrainedSketchVertex objects.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import sketch
-        mdb.models[name].sketches[name].vertices[i]
+            import sketch
+            mdb.models[name].sketches[name].vertices[i]
     """
 
     def findAt(self, coordinates: tuple, printWarning: Boolean = True):

@@ -1,16 +1,15 @@
 class CouplingConstraint:
     """The CouplingConstraint object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.odbData[name].kinematicCouplings[i]
-        session.odbData[name].distributingCouplings[i]
-        session.odbData[name].shellSolidCouplings[i]
+            import visualization
+            session.odbData[name].kinematicCouplings[i]
+            session.odbData[name].distributingCouplings[i]
+            session.odbData[name].shellSolidCouplings[i]
     """
 
     #: A String specifying the coupling name. This attribute is read-only.

@@ -7,19 +7,18 @@ class AxisData:
     """The AxisData object is used to store the data attributes of axes. An :py:class:`~abaqus.XY.AxisData.AxisData` object is
     automatically created when creating an Axis object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.charts[name].axes1[i].axisData
-        session.charts[name].axes2[i].axisData
-        session.defaultChartOptions.defaultAxis1Options.axisData
-        session.defaultChartOptions.defaultAxis2Options.axisData
-        session.xyPlots[name].charts[name].axes1[i].axisData
-        session.xyPlots[name].charts[name].axes2[i].axisData
+            import visualization
+            session.charts[name].axes1[i].axisData
+            session.charts[name].axes2[i].axisData
+            session.defaultChartOptions.defaultAxis1Options.axisData
+            session.defaultChartOptions.defaultAxis2Options.axisData
+            session.xyPlots[name].charts[name].axes1[i].axisData
+            session.xyPlots[name].charts[name].axes2[i].axisData
     """
 
     #: A Float specifying the reference value for decibel computation. The default value is

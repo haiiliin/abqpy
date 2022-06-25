@@ -6,14 +6,13 @@ class StopCondition:
     StopCondition object has no explicit constructor. The methods and members of the
     StopCondition object are common to all objects derived from StopCondition.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import optimization
-        mdb.models[name].optimizationTasks[name].stopConditions[name]
+            import optimization
+            mdb.models[name].optimizationTasks[name].stopConditions[name]
     """
 
     #: A String specifying the stop condition repository key.

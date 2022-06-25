@@ -8,16 +8,15 @@ class Text(Annotation):
     """The Text object stores the text settings and location of a text annotation.
     The Text object is derived from the Annotation object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import annotationToolset
-        mdb.annotations[name]
-        session.odbs[name].userData.annotations[name]
-        session.viewports[name].annotationsToPlot[i]
+            import annotationToolset
+            mdb.annotations[name]
+            session.odbs[name].userData.annotations[name]
+            session.viewports[name].annotationsToPlot[i]
     """
 
     #: A Float specifying the width in millimeters of the Text object.
@@ -118,14 +117,13 @@ class Text(Annotation):
     ):
         """This method creates a Text object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.Text
-            session.odbs[*name*].userData.Text
+                mdb.Text
+                session.odbs[*name*].userData.Text
 
         Parameters
         ----------

@@ -7,16 +7,15 @@ class AssembledFastener(Fastener):
     """The AssembledFastener object defines an assembled fastener.
     The AssembledFastener object is derived from the Fastener object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].engineeringFeatures.fasteners[name]
-        import assembly
-        mdb.models[name].rootAssembly.engineeringFeatures.fasteners[name]
+            import part
+            mdb.models[name].parts[name].engineeringFeatures.fasteners[name]
+            import assembly
+            mdb.models[name].rootAssembly.engineeringFeatures.fasteners[name]
     """
 
     #: A Boolean specifying whether the fastener is suppressed or not. The default value is
@@ -81,14 +80,13 @@ class AssembledFastener(Fastener):
         both for parts and for the assembly, AssembledFastener objects are currently supported
         only under the assembly.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].engineeringFeatures.AssembledFastener
-            mdb.models[name].rootAssembly.engineeringFeatures.AssembledFastener
+                mdb.models[name].parts[name].engineeringFeatures.AssembledFastener
+                mdb.models[name].rootAssembly.engineeringFeatures.AssembledFastener
 
         Parameters
         ----------

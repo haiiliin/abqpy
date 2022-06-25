@@ -8,53 +8,52 @@ from ...Metal.RateDependent.RateDependent import RateDependent
 class DruckerPrager:
     r"""The DruckerPrager object specifies the extended Drucker-Prager plasticity model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].druckerPrager
-        import odbMaterial
-        session.odbs[name].materials[name].druckerPrager
+            import material
+            mdb.models[name].materials[name].druckerPrager
+            import odbMaterial
+            session.odbs[name].materials[name].druckerPrager
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **shearCriterion** = LINEAR (the only option allowed in an Abaqus/Explicit analysis), the table data specify the following:
-    
-        - Material angle of friction, :math:`\beta`, in the :math:`p-t` plane. Give the value in degrees.
-        - :math:`K`, the ratio of the flow stress in triaxial tension to the flow stress in triaxial 
-          compression. :math:`0.778 \leq K \leq 1.0`. If the default value of :math:`0.0` is accepted, a 
-          value of :math:`1.0` is assumed.
-        - Dilation angle, :math:`\psi`, in the :math:`p-t` plane. Give the value in degrees.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **shearCriterion** = HYPERBOLIC, the table data specify the following:
-    
-        - Material angle of friction, :math:`\beta`, at high confining pressure in the :math:`p-q` plane. 
-          Give the value in degrees.
-        - Initial hydrostatic tension strength, :math:`\left.p_{t}\right|_{0}`.
-        - Dilation angle, :math:`\psi`, at high confining pressure in the :math:`p-q` plane. Give the value 
-          in degrees.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **shearCriterion** = EXPONENTIAL, the table data specify the following:
-    
-        - Dilation angle, :math:`\psi`, at high confining pressure in the :math:`p-q` plane. Give 
-          the value in degrees.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+        - If **shearCriterion** = LINEAR (the only option allowed in an Abaqus/Explicit analysis), the table data specify the following:
+        
+            - Material angle of friction, :math:`\beta`, in the :math:`p-t` plane. Give the value in degrees.
+            - :math:`K`, the ratio of the flow stress in triaxial tension to the flow stress in triaxial 
+              compression. :math:`0.778 \leq K \leq 1.0`. If the default value of :math:`0.0` is accepted, a 
+              value of :math:`1.0` is assumed.
+            - Dilation angle, :math:`\psi`, in the :math:`p-t` plane. Give the value in degrees.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **shearCriterion** = HYPERBOLIC, the table data specify the following:
+        
+            - Material angle of friction, :math:`\beta`, at high confining pressure in the :math:`p-q` plane. 
+              Give the value in degrees.
+            - Initial hydrostatic tension strength, :math:`\left.p_{t}\right|_{0}`.
+            - Dilation angle, :math:`\psi`, at high confining pressure in the :math:`p-q` plane. Give the value 
+              in degrees.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **shearCriterion** = EXPONENTIAL, the table data specify the following:
+        
+            - Dilation angle, :math:`\psi`, at high confining pressure in the :math:`p-q` plane. Give 
+              the value in degrees.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - DRUCKER PRAGER
+        - DRUCKER PRAGER
     """
 
     #: A :py:class:`~abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerCreep.DruckerPragerCreep` object.
@@ -80,14 +79,13 @@ class DruckerPrager:
     ):
         r"""This method creates a DruckerPrager object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].DruckerPrager
-            session.odbs[name].materials[name].DruckerPrager
+                mdb.models[name].materials[name].DruckerPrager
+                session.odbs[name].materials[name].DruckerPrager
 
         Parameters
         ----------

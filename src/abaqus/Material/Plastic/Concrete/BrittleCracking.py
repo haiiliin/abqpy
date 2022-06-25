@@ -7,47 +7,46 @@ class BrittleCracking:
     """The BrittleCracking object specifies cracking and postcracking properties for the
     brittle cracking material model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].brittleCracking
-        import odbMaterial
-        session.odbs[name].materials[name].brittleCracking
+            import material
+            mdb.models[name].materials[name].brittleCracking
+            import odbMaterial
+            session.odbs[name].materials[name].brittleCracking
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **type** = STRAIN the table data specify the following:
-    
-        - Remaining direct stress after cracking.
-        - Direct cracking strain.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **type** = DISPLACEMENT the table data specify the following:
-    
-        - Remaining direct stress after cracking.
-        - Direct cracking displacement.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **type** = GFI the table data specify the following:
-    
-        - Failure stress.
-        - Mode I fracture energy.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+        - If **type** = STRAIN the table data specify the following:
+        
+            - Remaining direct stress after cracking.
+            - Direct cracking strain.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **type** = DISPLACEMENT the table data specify the following:
+        
+            - Remaining direct stress after cracking.
+            - Direct cracking displacement.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **type** = GFI the table data specify the following:
+        
+            - Failure stress.
+            - Mode I fracture energy.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - BRITTLE CRACKING
+        - BRITTLE CRACKING
     """
 
     #: A :py:class:`~abaqus.Material.Plastic.Concrete.BrittleShear.BrittleShear` object.
@@ -65,14 +64,13 @@ class BrittleCracking:
     ):
         """This method creates a BrittleCracking object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].BrittleCracking
-            session.odbs[name].materials[name].BrittleCracking
+                mdb.models[name].materials[name].BrittleCracking
+                session.odbs[name].materials[name].BrittleCracking
 
         Parameters
         ----------

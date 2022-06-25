@@ -9,14 +9,13 @@ class OdbDatumCsys:
     you exit Abaqus/CAE. Alternatively, the analysis code can write the datum coordinate
     system to the output database.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name].rootAssembly.datumCsyses[name]
+            import odbAccess
+            session.odbs[name].rootAssembly.datumCsyses[name]
     """
 
     #: A String specifying the repository key.
@@ -50,13 +49,12 @@ class OdbDatumCsys:
         """This method creates an OdbDatumCsys object using three points. A datum coordinate system
         created with this method results in a fixed system.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].rootAssembly.DatumCsysByThreePoints
+                session.odbs[name].rootAssembly.DatumCsysByThreePoints
 
         Parameters
         ----------
@@ -95,13 +93,12 @@ class OdbDatumCsys:
         position of its origin. The last three arguments are given in the form of an OdbMeshNode
         object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].rootAssembly.DatumCsysByThreePoints
+                session.odbs[name].rootAssembly.DatumCsysByThreePoints
 
         Parameters
         ----------
@@ -139,13 +136,12 @@ class OdbDatumCsys:
         cylindrical coordinate system or to the ϕϕ-axis of a spherical coordinate system. The
         line from the origin to the first node defines the rr-axis.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].rootAssembly.DatumCsysByThreePoints
+                session.odbs[name].rootAssembly.DatumCsysByThreePoints
 
         Parameters
         ----------
@@ -178,13 +174,12 @@ class OdbDatumCsys:
         orientation of the datum coordinate system without regard to the position of its origin.
         The last argument is given in the form of an OdbMeshNode object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].rootAssembly.DatumCsysByThreePoints
+                session.odbs[name].rootAssembly.DatumCsysByThreePoints
 
         Parameters
         ----------
@@ -206,13 +201,12 @@ class OdbDatumCsys:
     def DatumCsys(self, name: str, datumCsys: "OdbDatumCsys"):
         """This method copies oneOdbDatumCsys object to a new OdbDatumCsys object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].rootAssembly.DatumCsysByThreePoints
+                session.odbs[name].rootAssembly.DatumCsysByThreePoints
 
         Parameters
         ----------

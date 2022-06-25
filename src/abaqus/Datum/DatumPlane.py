@@ -7,18 +7,17 @@ class DatumPlane(Datum):
     that creates a DatumPlane object.
     The DatumPlane object is derived from the Datum object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].datums[i]
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name].datums[i]
-        mdb.models[name].rootAssembly.datums[i]
-        mdb.models[name].rootAssembly.instances[name].datums[i]
+            import part
+            mdb.models[name].parts[name].datums[i]
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name].datums[i]
+            mdb.models[name].rootAssembly.datums[i]
+            mdb.models[name].rootAssembly.instances[name].datums[i]
     """
 
     #: A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point located on

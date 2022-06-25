@@ -37,18 +37,17 @@ class ConcentratedHeatFluxState(LoadState):
             A String specifying the name of the amplitude reference. The String is empty if the load
             has no amplitude reference.
 
-    Notes
-    -----
+    .. note:: 
         This object can be accessed by:
 
         .. code-block:: python
 
             import load
-            mdb.models[name].steps[name].loadStates[name]
+                mdb.models[name].steps[name].loadStates[name]
 
-        The corresponding analysis keywords are:
+            The corresponding analysis keywords are:
 
-        - CFLUX
+            - CFLUX
     """
 
     #: A Float specifying the load magnitude.

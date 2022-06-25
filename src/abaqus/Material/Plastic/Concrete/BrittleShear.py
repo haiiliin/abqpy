@@ -5,39 +5,38 @@ class BrittleShear:
     """The BrittleShear object specifies the postcracking shear behavior of a material used in
     a brittle cracking model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].brittleCracking.brittleShear
-        import odbMaterial
-        session.odbs[name].materials[name].brittleCracking.brittleShear
+            import material
+            mdb.models[name].materials[name].brittleCracking.brittleShear
+            import odbMaterial
+            session.odbs[name].materials[name].brittleCracking.brittleShear
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **type** = RETENTION_FACTOR the table data specify the following:
-    
-        - Shear retention factor.
-        - Crack opening strain.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **type** = POWER_LAW the table data specify the following:
-    
-        - :math:`e`.
-        - :math:`p`.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+        - If **type** = RETENTION_FACTOR the table data specify the following:
+        
+            - Shear retention factor.
+            - Crack opening strain.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **type** = POWER_LAW the table data specify the following:
+        
+            - :math:`e`.
+            - :math:`p`.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - BRITTLE SHEAR
+        - BRITTLE SHEAR
     """
 
     def __init__(
@@ -49,14 +48,13 @@ class BrittleShear:
     ):
         """This method creates a BrittleShear object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].brittleCracking.BrittleShear
-            session.odbs[name].materials[name].brittleCracking.BrittleShear
+                mdb.models[name].materials[name].brittleCracking.BrittleShear
+                session.odbs[name].materials[name].brittleCracking.BrittleShear
 
         Parameters
         ----------

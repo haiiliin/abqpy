@@ -7,13 +7,12 @@ from .CaeKerPrefs import CaeKerPrefs
 """The Python module caePrefsAccess contains functions that enable you to edit the 
 Abaqus/CAE preferences file, abaqus_2021.gpr. 
 
-Notes
------
-This object can be accessed by:
-        
-.. code-block:: python
+.. note:: 
+    This object can be accessed by:
 
-    import caePrefsAccess
+    .. code-block:: python
+
+        import caePrefsAccess
 
 """
 
@@ -21,13 +20,12 @@ This object can be accessed by:
 def getGuiPrefsFileName() -> str:
     """This function enables you to retrieve the location of your abaqus_2021.gpr file.
 
-    Notes
-    -----
-    This function can be accessed by:
+    .. note:: 
+            This function can be accessed by:
 
-    .. code-block:: python
+            .. code-block:: python
 
-        caePrefsAccess.getGuiPrefsFileName
+                caePrefsAccess.getGuiPrefsFileName
 
     Returns
     -------
@@ -42,13 +40,12 @@ def getDisplayNamesInGuiPreferences(fileName: str) -> list[str]:
     you use. This function returns a list of every displayName recorded in the preferences
     file.
 
-    Notes
-    -----
-    This function can be accessed by:
+    .. note:: 
+            This function can be accessed by:
 
-    .. code-block:: python
+            .. code-block:: python
 
-        caePrefsAccess.getDisplayNamesInGuiPreferences
+                caePrefsAccess.getDisplayNamesInGuiPreferences
 
     Parameters
     ----------
@@ -71,14 +68,12 @@ def printValuesList(
     """This function enables you to print all of the options and their values for a set of
     guiPreferences or sessionOptions settings derived from the abaqus_2021.gpr file.
 
-    Notes
-    -----
+    .. note:: 
+            This function can be accessed by:
 
-    This function can be accessed by:
+            .. code-block:: python
 
-    .. code-block:: python
-
-        caePrefsAccess.printValuesList
+                caePrefsAccess.printValuesList
 
     Parameters
     ----------
@@ -107,13 +102,12 @@ def openGuiPreferences(displayName: str, fileName: str = "") -> CaeGuiPrefs:
     graphical user interface. Abaqus stores preferences for each display you use in a
     separate guiPreferences section of the abaqus_2021.gpr file.
 
-    Notes
-    -----
-    This function can be accessed by:
+    .. note:: 
+            This function can be accessed by:
 
-    .. code-block:: python
+            .. code-block:: python
 
-        caePrefsAccess.openGuiPreferences
+                caePrefsAccess.openGuiPreferences
 
     Parameters
     ----------
@@ -143,14 +137,12 @@ def openSessionOptions(
     FileSave Display ConstrainedSketchOptions menu option. Abaqus stores default session options in the
     sessionOptions section of the abaqus_2021.gpr file.
 
-    Notes
-    -----
+    .. note:: 
+            This function can be accessed by:
 
-    This function can be accessed by:
+            .. code-block:: python
 
-    .. code-block:: python
-
-        caePrefsAccess.openSessionOptions
+                caePrefsAccess.openSessionOptions
 
     Parameters
     ----------

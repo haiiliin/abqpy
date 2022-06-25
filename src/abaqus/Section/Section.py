@@ -16,14 +16,13 @@ class Section(ConnectorSection):
     ) -> TransverseShearBeam:
         """This method creates a TransverseShearBeam object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sections[name].TransverseShearBeam
-            session.odbs[name].sections[name].TransverseShearBeam
+                mdb.models[name].sections[name].TransverseShearBeam
+                session.odbs[name].sections[name].TransverseShearBeam
 
         Parameters
         ----------
@@ -55,14 +54,13 @@ class Section(ConnectorSection):
     ) -> TransverseShearShell:
         """This method creates a TransverseShearShell object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sections[name].TransverseShearShell
-            session.odbs[name].sections[name].TransverseShearShell
+                mdb.models[name].sections[name].TransverseShearShell
+                session.odbs[name].sections[name].TransverseShearShell
 
         Parameters
         ----------

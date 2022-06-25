@@ -5,30 +5,29 @@ class TensionCutOff:
     """The TensionCutOff object specifies tension cutoff for different material models for
     example the Mohr-Coulomb plasticity model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].mohrCoulombPlasticity.tensionCutOff
-        import odbMaterial
-        session.odbs[name].materials[name].mohrCoulombPlasticity.tensionCutOff
+            import material
+            mdb.models[name].materials[name].mohrCoulombPlasticity.tensionCutOff
+            import odbMaterial
+            session.odbs[name].materials[name].mohrCoulombPlasticity.tensionCutOff
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Tension cutoff stress.
-    - The value of the corresponding tensile Plastic strain.(The first tabular value
-      entered must always be zero.)
-    - Temperature, if the data depend on temperature.
-    - Value of the first field variable, if the data depend on field variables.
-    - Value of the second field variable.
-    - Etc.
+        - Tension cutoff stress.
+        - The value of the corresponding tensile Plastic strain.(The first tabular value
+          entered must always be zero.)
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - TENSION CUTOFF
+        - TENSION CUTOFF
     """
 
     def __init__(
@@ -36,14 +35,13 @@ class TensionCutOff:
     ):
         """This method creates a TensionCutOff object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].mohrCoulombPlasticity.TensionCutOff
-            session.odbs[name].materials[name].mohrCoulombPlasticity.TensionCutOff
+                mdb.models[name].materials[name].mohrCoulombPlasticity.TensionCutOff
+                session.odbs[name].materials[name].mohrCoulombPlasticity.TensionCutOff
 
         Parameters
         ----------

@@ -5,39 +5,38 @@ class ThermalConductance:
     """The ThermalConductance object specifies thermal conductance for a contact interaction
     property.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactionProperties[name].thermalConductance
+            import interaction
+            mdb.models[name].interactionProperties[name].thermalConductance
 
-    The table data for this object are:
-    
-    The **clearanceDepTable** data specify the following:
-    
-        - Conductivity.
-        - Clearance.
-        - Temperature, if the data depend on temperature.
-        - Mass flow rate, if the data depend on mass flow rate.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    The **pressureDepTable** data specify the following:
-    
-        - Conductivity.
-        - Pressure.
-        - Temperature, if the data depend on temperature.
-        - Mass flow rate, if the data depend on mass flow rate.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+        The table data for this object are:
+        
+        The **clearanceDepTable** data specify the following:
+        
+            - Conductivity.
+            - Clearance.
+            - Temperature, if the data depend on temperature.
+            - Mass flow rate, if the data depend on mass flow rate.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        The **pressureDepTable** data specify the following:
+        
+            - Conductivity.
+            - Pressure.
+            - Temperature, if the data depend on temperature.
+            - Mass flow rate, if the data depend on mass flow rate.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - GAP CONDUCTANCE
+        - GAP CONDUCTANCE
     """
 
     #: A SymbolicConstant specifying how the thermal conductance is defined. Possible values
@@ -98,13 +97,12 @@ class ThermalConductance:
     ):
         """This method creates a ThermalConductance object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].interactionProperties[name].ThermalConductance
+                mdb.models[name].interactionProperties[name].ThermalConductance
 
         Parameters
         ----------

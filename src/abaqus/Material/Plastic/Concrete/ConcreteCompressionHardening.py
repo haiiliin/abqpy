@@ -5,30 +5,29 @@ class ConcreteCompressionHardening:
     """The ConcreteCompressionHardening object specifies hardening for the concrete damaged
     plasticity model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].concreteDamagedPlasticity.concreteCompressionHardening
-        import odbMaterial
-        session.odbs[name].materials[name].concreteDamagedPlasticity.concreteCompressionHardening
+            import material
+            mdb.models[name].materials[name].concreteDamagedPlasticity.concreteCompressionHardening
+            import odbMaterial
+            session.odbs[name].materials[name].concreteDamagedPlasticity.concreteCompressionHardening
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Yield stress in compression, :math:`\sigma_{c}`.
-    - Inelastic (crushing) strain, :math:`\epsilon_{c}^{i n}`.
-    - Inelastic (crushing) strain rate, :math:`\dot{\epsilon}_{c}^{i n}`.
-    - Temperature, if the data depend on temperature.
-    - Value of the first field variable, if the data depend on field variables.
-    - Value of the second field variable.
-    - Etc.
+        - Yield stress in compression, :math:`\sigma_{c}`.
+        - Inelastic (crushing) strain, :math:`\epsilon_{c}^{i n}`.
+        - Inelastic (crushing) strain rate, :math:`\dot{\epsilon}_{c}^{i n}`.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONCRETE COMPRESSION HARDENING
+        - CONCRETE COMPRESSION HARDENING
     """
 
     def __init__(
@@ -40,14 +39,13 @@ class ConcreteCompressionHardening:
     ):
         """This method creates a ConcreteCompressionHardening object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].concreteDamagedPlasticity.ConcreteCompressionHardening
-            session.odbs[name].materials[name].concreteDamagedPlasticity.ConcreteCompressionHardening
+                mdb.models[name].materials[name].concreteDamagedPlasticity.ConcreteCompressionHardening
+                session.odbs[name].materials[name].concreteDamagedPlasticity.ConcreteCompressionHardening
 
         Parameters
         ----------

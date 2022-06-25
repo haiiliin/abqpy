@@ -6,20 +6,19 @@ class Chebyshev2Filter(Filter):
     """The Chebyshev2Filter object defines a Chebyshev type 2 filter.
     The Chebyshev2Filter object is derived from the Filter object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import filter
-        mdb.models[name].filters[name]
-        import odbFilter
-        session.odbs[name].filters[name]
+            import filter
+            mdb.models[name].filters[name]
+            import odbFilter
+            session.odbs[name].filters[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - FILTER
+        - FILTER
     """
 
     #: A String specifying the repository key. This name ANTIALIASING is reserved for filters
@@ -69,14 +68,13 @@ class Chebyshev2Filter(Filter):
     ):
         """This method creates a Chebyshev2Filter object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Chebyshev2Filter
-            session.odbs[name].Chebyshev2Filter
+                mdb.models[name].Chebyshev2Filter
+                session.odbs[name].Chebyshev2Filter
 
         Parameters
         ----------

@@ -3,14 +3,13 @@ class ContactStabilization:
     objects. The ContactStabilization object has no explicit constructor, members, or
     methods.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].contactStabilizations[name]
+            import interaction
+            mdb.models[name].contactStabilizations[name]
     """
 
     pass

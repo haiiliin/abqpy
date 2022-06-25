@@ -7,20 +7,19 @@ class ConnectorLock(ConnectorBehaviorOption):
     of a connector's relative motion.
     The ConnectorLock object is derived from the ConnectorBehaviorOption object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].sections[name].behaviorOptions[i]
-        import odbSection
-        session.odbs[name].sections[name].behaviorOptions[i]
+            import section
+            mdb.models[name].sections[name].behaviorOptions[i]
+            import odbSection
+            session.odbs[name].sections[name].behaviorOptions[i]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONNECTOR LOCK
+        - CONNECTOR LOCK
     """
 
     #: The SymbolicConstant ALL or an Int specifying the motion components that are locked. If
@@ -63,16 +62,15 @@ class ConnectorLock(ConnectorBehaviorOption):
     ):
         """This method creates a connector lock behavior option for a ConnectorSection.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      import connectorBehavior
-                      connectorBehavior.ConnectorLock
-                      import odbConnectorBehavior
-                      odbConnectorBehavior.ConnectorLock
+                import connectorBehavior
+                          connectorBehavior.ConnectorLock
+                          import odbConnectorBehavior
+                          odbConnectorBehavior.ConnectorLock
 
         Parameters
         ----------

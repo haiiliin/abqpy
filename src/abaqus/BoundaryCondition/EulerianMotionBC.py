@@ -8,14 +8,13 @@ class EulerianMotionBC(BoundaryCondition):
     condition.
     The EulerianMotionBC object is derived from the BoundaryCondition object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].boundaryConditions[name]
+            import load
+            mdb.models[name].boundaryConditions[name]
     """
 
     #: A String specifying the boundary condition repository key.
@@ -164,13 +163,12 @@ class EulerianMotionBC(BoundaryCondition):
     ):
         """This method creates an EulerianMotionBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].EulerianMotionBC
+                mdb.models[name].EulerianMotionBC
 
         Parameters
         ----------

@@ -8,14 +8,13 @@ class MappedField(AnalyticalField):
     an external source data.
     The MappedField object is derived from the AnalyticalField object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import fields
-        mdb.models[name].analyticalFields[name]
+            import fields
+            mdb.models[name].analyticalFields[name]
     """
 
     #: A String specifying the repository key.
@@ -128,13 +127,12 @@ class MappedField(AnalyticalField):
     ):
         """This method creates an MappedField object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].MappedField
+                mdb.models[name].MappedField
 
         Parameters
         ----------

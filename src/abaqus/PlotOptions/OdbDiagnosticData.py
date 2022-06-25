@@ -9,14 +9,13 @@ from .OdbNumericalProblemSummary import OdbNumericalProblemSummary
 class OdbDiagnosticData:
     """The OdbDiagnosticData object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.odbData[name].diagnosticData
+            import visualization
+            session.odbData[name].diagnosticData
     """
 
     #: A repository of OdbAnalysisError objects.

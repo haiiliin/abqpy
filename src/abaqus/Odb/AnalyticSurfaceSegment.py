@@ -4,16 +4,15 @@ from abaqusConstants import *
 class AnalyticSurfaceSegment:
     """An individual segment of the analytic surface.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name].parts[name].analyticSurface.segments[i]
-        session.odbs[name].rootAssembly.instances[name].analyticSurface.segments[i]
-        session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.analyticSurface.segments[i]
+            import odbAccess
+            session.odbs[name].parts[name].analyticSurface.segments[i]
+            session.odbs[name].rootAssembly.instances[name].analyticSurface.segments[i]
+            session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.analyticSurface.segments[i]
     """
 
     #: A SymbolicConstant specifying the type of AnalyticSurfaceSegment. Possible values are
@@ -31,13 +30,12 @@ class AnalyticSurfaceSegment:
     def __init__(self, type: SymbolicConstant, data: tuple):
         """This method creates an AnalyticSurfaceSegment object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            odbAccess.AnalyticSurfaceSegment
+                odbAccess.AnalyticSurfaceSegment
 
         Parameters
         ----------

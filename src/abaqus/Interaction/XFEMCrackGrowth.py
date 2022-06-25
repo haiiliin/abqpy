@@ -6,18 +6,17 @@ class XFEMCrackGrowth(Interaction):
     """The XFEMCrackGrowth object defines the enrichment activation state for an XFEMCrack.
     The XFEMCrackGrowth object is derived from the Interaction object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactions[name]
+            import interaction
+            mdb.models[name].interactions[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - ENRICHMENT ACTIVATION
+        - ENRICHMENT ACTIVATION
     """
 
     #: A String specifying the repository key.
@@ -38,13 +37,12 @@ class XFEMCrackGrowth(Interaction):
     ):
         """This method creates an XFEMCrackGrowth object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].XFEMCrackGrowth
+                mdb.models[name].XFEMCrackGrowth
 
         Parameters
         ----------

@@ -5,14 +5,13 @@ class FeatureOptions:
     """The FeatureOptions object stores the options that control the behavior of feature
     regeneration for all features in a model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].featureOptions
+            import part
+            mdb.models[name].featureOptions
     """
 
     def setValues(

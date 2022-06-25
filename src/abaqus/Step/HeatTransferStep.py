@@ -20,19 +20,18 @@ class HeatTransferStep(AnalysisStep):
     transient or steady-state response.
     The HeatTransferStep object is derived from the AnalysisStep object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name]
+            import step
+            mdb.models[name].steps[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - HEAT TRANSFER
-            - STEP
+        - HEAT TRANSFER
+                - STEP
     """
 
     #: A String specifying the repository key.
@@ -234,13 +233,12 @@ class HeatTransferStep(AnalysisStep):
     ):
         """This method creates a HeatTransferStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].HeatTransferStep
+                mdb.models[name].HeatTransferStep
 
         Parameters
         ----------

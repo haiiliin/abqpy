@@ -12,14 +12,13 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
     such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are
     contained in their respective repositories.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import sketch
-        mdb.models[name].sketches[name]
+            import sketch
+            mdb.models[name].sketches[name]
     """
 
     def AngularDimension(
@@ -33,13 +32,12 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         """This method constructs a ConstrainedSketchDimension object between two
         ConstrainedSketchGeometry objects, with the given angle between them.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].AngularDimension
+                mdb.models[name].sketches[name].AngularDimension
 
         Parameters
         ----------
@@ -74,13 +72,12 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         horizontal dimension indicates the horizontal distance along the **X**-axis between two
         vertices.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].HorizontalDimension
+                mdb.models[name].sketches[name].HorizontalDimension
 
         Parameters
         ----------
@@ -114,13 +111,12 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         """This method constructs a ConstrainedSketchDimension object between two vertices. An
         oblique dimension indicates the distance between two vertices.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].ObliqueDimension
+                mdb.models[name].sketches[name].ObliqueDimension
 
         Parameters
         ----------
@@ -156,13 +152,12 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         arc. A radial dimension indicates the radius of an arc or circle or the major or minor
         radius of an ellipse.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].RadialDimension
+                mdb.models[name].sketches[name].RadialDimension
 
         Parameters
         ----------
@@ -200,13 +195,12 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         """This method constructs a ConstrainedSketchDimension between two vertices. A vertical
         dimension controls the vertical distance along the **Y**-axis between two vertices.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].VerticalDimension
+                mdb.models[name].sketches[name].VerticalDimension
 
         Parameters
         ----------
@@ -241,13 +235,12 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         ConstrainedSketchGeometry, or aConstrainedSketchVertex and ConstrainedSketchGeometry
         object. A distance dimension specifies the shortest distance between two entities.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].DistanceDimension
+                mdb.models[name].sketches[name].DistanceDimension
 
         Parameters
         ----------

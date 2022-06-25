@@ -7,18 +7,17 @@ class ExpContactControl(ContactControl):
     solution controls for problems involving contact between bodies.
     The ExpContactControl object is derived from the ContactControl object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].contactControls[name]
+            import interaction
+            mdb.models[name].contactControls[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONTACT CONTROLS
+        - CONTACT CONTROLS
     """
 
     #: A String specifying the contact controls repository key.
@@ -63,13 +62,12 @@ class ExpContactControl(ContactControl):
     ):
         """This method creates an ExpContactControl object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ExpContactControl
+                mdb.models[name].ExpContactControl
 
         Parameters
         ----------

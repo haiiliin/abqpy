@@ -11,14 +11,13 @@ class SizingTask(OptimizationTask):
     """The SizingTask object defines a Sizing task.
     The SizingTask object is derived from the OptimizationTask object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import optimization
-        mdb.models[name].optimizationTasks[name]
+            import optimization
+            mdb.models[name].optimizationTasks[name]
     """
 
     #: A repository of DesignResponse objects.
@@ -104,13 +103,12 @@ class SizingTask(OptimizationTask):
     ):
         """This method creates a SizingTask object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      mdb.models[name].SizingTask
+                mdb.models[name].SizingTask
 
         Parameters
         ----------

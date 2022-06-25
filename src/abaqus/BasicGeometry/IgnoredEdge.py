@@ -2,17 +2,16 @@ class IgnoredEdge:
     """An :py:class:`~abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge` object is a one-dimensional region of geometry that has been abstracted
     away by a virtual topology feature.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].ignoredEdges[i]
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name].ignoredEdges[i]
-        mdb.models[name].rootAssembly.instances[name].ignoredEdges[i]
+            import part
+            mdb.models[name].parts[name].ignoredEdges[i]
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name].ignoredEdges[i]
+            mdb.models[name].rootAssembly.instances[name].ignoredEdges[i]
     """
 
     #: An Int specifying the index of the IgnoredEdge in the IgnoredEdgeArray.

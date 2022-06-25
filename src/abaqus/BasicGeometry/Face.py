@@ -4,35 +4,34 @@ from abaqusConstants import *
 class Face:
     """Faces are two-dimensional regions of geometry.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].allInternalSets[name].faces[i]
-        mdb.models[name].parts[name].allInternalSurfaces[name].faces[i]
-        mdb.models[name].parts[name].allSets[name].faces[i]
-        mdb.models[name].parts[name].allSurfaces[name].faces[i]
-        mdb.models[name].parts[name].faces[i]
-        mdb.models[name].parts[name].sets[name].faces[i]
-        mdb.models[name].parts[name].surfaces[name].faces[i]
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name].faces[i]
-        mdb.models[name].rootAssembly.allInstances[name].sets[name].faces[i]
-        mdb.models[name].rootAssembly.allInstances[name].surfaces[name].faces[i]
-        mdb.models[name].rootAssembly.allInternalSets[name].faces[i]
-        mdb.models[name].rootAssembly.allInternalSurfaces[name].faces[i]
-        mdb.models[name].rootAssembly.allSets[name].faces[i]
-        mdb.models[name].rootAssembly.allSurfaces[name].faces[i]
-        mdb.models[name].rootAssembly.instances[name].faces[i]
-        mdb.models[name].rootAssembly.instances[name].sets[name].faces[i]
-        mdb.models[name].rootAssembly.instances[name].surfaces[name].faces[i]
-        mdb.models[name].rootAssembly.modelInstances[i].sets[name].faces[i]
-        mdb.models[name].rootAssembly.modelInstances[i].surfaces[name].faces[i]
-        mdb.models[name].rootAssembly.sets[name].faces[i]
-        mdb.models[name].rootAssembly.surfaces[name].faces[i]
+            import part
+            mdb.models[name].parts[name].allInternalSets[name].faces[i]
+            mdb.models[name].parts[name].allInternalSurfaces[name].faces[i]
+            mdb.models[name].parts[name].allSets[name].faces[i]
+            mdb.models[name].parts[name].allSurfaces[name].faces[i]
+            mdb.models[name].parts[name].faces[i]
+            mdb.models[name].parts[name].sets[name].faces[i]
+            mdb.models[name].parts[name].surfaces[name].faces[i]
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name].faces[i]
+            mdb.models[name].rootAssembly.allInstances[name].sets[name].faces[i]
+            mdb.models[name].rootAssembly.allInstances[name].surfaces[name].faces[i]
+            mdb.models[name].rootAssembly.allInternalSets[name].faces[i]
+            mdb.models[name].rootAssembly.allInternalSurfaces[name].faces[i]
+            mdb.models[name].rootAssembly.allSets[name].faces[i]
+            mdb.models[name].rootAssembly.allSurfaces[name].faces[i]
+            mdb.models[name].rootAssembly.instances[name].faces[i]
+            mdb.models[name].rootAssembly.instances[name].sets[name].faces[i]
+            mdb.models[name].rootAssembly.instances[name].surfaces[name].faces[i]
+            mdb.models[name].rootAssembly.modelInstances[i].sets[name].faces[i]
+            mdb.models[name].rootAssembly.modelInstances[i].surfaces[name].faces[i]
+            mdb.models[name].rootAssembly.sets[name].faces[i]
+            mdb.models[name].rootAssembly.surfaces[name].faces[i]
     """
 
     #: An Int specifying the index of the face in the FaceArray.

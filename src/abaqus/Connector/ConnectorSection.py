@@ -41,16 +41,15 @@ class ConnectorSection(SectionBase):
     ):
         """This method creates a connector damage behavior option for a ConnectorSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      import connectorBehavior
-                      connectorBehavior.ConnectorDamage
-                      import odbConnectorBehavior
-                      odbConnectorBehavior.ConnectorDamage
+                import connectorBehavior
+                          connectorBehavior.ConnectorDamage
+                          import odbConnectorBehavior
+                          odbConnectorBehavior.ConnectorDamage
 
         Parameters
         ----------
@@ -164,16 +163,15 @@ class ConnectorSection(SectionBase):
     ):
         """This method creates a connector damping behavior option for a ConnectorSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      import connectorBehavior
-                      connectorBehavior.ConnectorDamping
-                      import odbConnectorBehavior
-                      odbConnectorBehavior.ConnectorDamping
+                import connectorBehavior
+                          connectorBehavior.ConnectorDamping
+                          import odbConnectorBehavior
+                          odbConnectorBehavior.ConnectorDamping
 
         Parameters
         ----------
@@ -236,16 +234,15 @@ class ConnectorSection(SectionBase):
         """This method creates a connector elasticity behavior option for a ConnectorSection
         object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      import connectorBehavior
-                      connectorBehavior.ConnectorElasticity
-                      import odbConnectorBehavior
-                      odbConnectorBehavior.ConnectorElasticity
+                import connectorBehavior
+                          connectorBehavior.ConnectorElasticity
+                          import odbConnectorBehavior
+                          odbConnectorBehavior.ConnectorElasticity
 
         Parameters
         ----------
@@ -308,16 +305,15 @@ class ConnectorSection(SectionBase):
     ):
         """This method creates a connector failure behavior option for a ConnectorSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      import connectorBehavior
-                      connectorBehavior.ConnectorFailure
-                      import odbConnectorBehavior
-                      odbConnectorBehavior.ConnectorFailure
+                import connectorBehavior
+                          connectorBehavior.ConnectorFailure
+                          import odbConnectorBehavior
+                          odbConnectorBehavior.ConnectorFailure
 
         Parameters
         ----------
@@ -380,16 +376,15 @@ class ConnectorSection(SectionBase):
         Depending upon the arguments provided, the friction behavior can be Coulomb-like or
         hysteretic in nature.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      import connectorBehavior
-                      connectorBehavior.ConnectorFriction
-                      import odbConnectorBehavior
-                      odbConnectorBehavior.ConnectorFriction
+                import connectorBehavior
+                          connectorBehavior.ConnectorFriction
+                          import odbConnectorBehavior
+                          odbConnectorBehavior.ConnectorFriction
 
         Parameters
         ----------
@@ -504,16 +499,15 @@ class ConnectorSection(SectionBase):
     ):
         """This method creates a connector lock behavior option for a ConnectorSection.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      import connectorBehavior
-                      connectorBehavior.ConnectorLock
-                      import odbConnectorBehavior
-                      odbConnectorBehavior.ConnectorLock
+                import connectorBehavior
+                          connectorBehavior.ConnectorLock
+                          import odbConnectorBehavior
+                          odbConnectorBehavior.ConnectorLock
 
         Parameters
         ----------
@@ -575,16 +569,15 @@ class ConnectorSection(SectionBase):
         """This method creates a connector plasticity behavior option for a ConnectorSection
         object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      import connectorBehavior
-                      connectorBehavior.ConnectorPlasticity
-                      import odbConnectorBehavior
-                      odbConnectorBehavior.ConnectorPlasticity
+                import connectorBehavior
+                          connectorBehavior.ConnectorPlasticity
+                          import odbConnectorBehavior
+                          odbConnectorBehavior.ConnectorPlasticity
 
         Parameters
         ----------
@@ -668,14 +661,13 @@ class ConnectorSection(SectionBase):
         """This method creates a connector potential object to be used in conjunction with an
         allowable connector behavior option.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sections[name].behaviorOptions[i].ConnectorPotential
-            session.odbs[name].sections[name].behaviorOptions[i].ConnectorPotential
+                mdb.models[name].sections[name].behaviorOptions[i].ConnectorPotential
+                session.odbs[name].sections[name].behaviorOptions[i].ConnectorPotential
 
         Parameters
         ----------
@@ -724,16 +716,15 @@ class ConnectorSection(SectionBase):
     ):
         """This method creates a connector stop behavior option for a ConnectorSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            import connectorBehavior
-            connectorBehavior.ConnectorStop
-            import odbConnectorBehavior
-            odbConnectorBehavior.ConnectorStop
+                import connectorBehavior
+                connectorBehavior.ConnectorStop
+                import odbConnectorBehavior
+                odbConnectorBehavior.ConnectorStop
 
         Parameters
         ----------
@@ -764,20 +755,19 @@ class ConnectorSection(SectionBase):
     def DerivedComponent(self):
         """This method creates a DerivedComponent object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sections[name].behaviorOptions[i].connectorPotentials[i].DerivedComponent
-            mdb.models[name].sections[name].behaviorOptions[i].DerivedComponent
-            mdb.models[name].sections[name].behaviorOptions[i].evolutionPotentials[i].DerivedComponent
-            mdb.models[name].sections[name].behaviorOptions[i].initiationPotentials[i].DerivedComponent
-            session.odbs[name].sections[name].behaviorOptions[i].connectorPotentials[i].DerivedComponent
-            session.odbs[name].sections[name].behaviorOptions[i].DerivedComponent
-            session.odbs[name].sections[name].behaviorOptions[i].evolutionPotentials[i].DerivedComponent
-            session.odbs[name].sections[name].behaviorOptions[i].initiationPotentials[i].DerivedComponent
+                mdb.models[name].sections[name].behaviorOptions[i].connectorPotentials[i].DerivedComponent
+                mdb.models[name].sections[name].behaviorOptions[i].DerivedComponent
+                mdb.models[name].sections[name].behaviorOptions[i].evolutionPotentials[i].DerivedComponent
+                mdb.models[name].sections[name].behaviorOptions[i].initiationPotentials[i].DerivedComponent
+                session.odbs[name].sections[name].behaviorOptions[i].connectorPotentials[i].DerivedComponent
+                session.odbs[name].sections[name].behaviorOptions[i].DerivedComponent
+                session.odbs[name].sections[name].behaviorOptions[i].evolutionPotentials[i].DerivedComponent
+                session.odbs[name].sections[name].behaviorOptions[i].initiationPotentials[i].DerivedComponent
 
         Returns
         -------
@@ -808,14 +798,13 @@ class ConnectorSection(SectionBase):
     ):
         """This method creates a TangentialBehavior object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sections[name].behaviorOptions[i].TangentialBehavior
-            session.odbs[name].sections[name].behaviorOptions[i].TangentialBehavior
+                mdb.models[name].sections[name].behaviorOptions[i].TangentialBehavior
+                session.odbs[name].sections[name].behaviorOptions[i].TangentialBehavior
 
         Parameters
         ----------

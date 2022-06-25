@@ -7,14 +7,13 @@ class MdbData:
     is opened or a new model is created. There is one MdbData for each model in session.
     MdbData is updated when it is displayed in a viewport.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.mdbData[name]
+            import visualization
+            session.mdbData[name]
     """
 
     #: A tuple of (String, Float) tuples specifying the stepName and the stepPeriod.

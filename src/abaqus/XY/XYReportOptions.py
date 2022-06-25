@@ -6,15 +6,14 @@ class XYReportOptions:
     write an XYData object to an ASCII file. The XYReportOptions object has no constructor.
     Abaqus creates the **xyReportOptions** member when you import the Visualization module.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.defaultXYReportOptions
-        session.xyReportOptions
+            import visualization
+            session.defaultXYReportOptions
+            session.xyReportOptions
     """
 
     def setValues(

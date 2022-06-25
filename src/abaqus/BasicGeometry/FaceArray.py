@@ -6,47 +6,45 @@ class FaceArray:
     """The FaceArray is a sequence of Face objects. If the part is modified, then FaceArray
     must be updated for that part.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].allInternalSets[name].faces
-        mdb.models[name].parts[name].allInternalSurfaces[name].faces
-        mdb.models[name].parts[name].allSets[name].faces
-        mdb.models[name].parts[name].allSurfaces[name].faces
-        mdb.models[name].parts[name].faces
-        mdb.models[name].parts[name].sets[name].faces
-        mdb.models[name].parts[name].surfaces[name].faces
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name].faces
-        mdb.models[name].rootAssembly.allInstances[name].sets[name].faces
-        mdb.models[name].rootAssembly.allInstances[name].surfaces[name].faces
-        mdb.models[name].rootAssembly.allInternalSets[name].faces
-        mdb.models[name].rootAssembly.allInternalSurfaces[name].faces
-        mdb.models[name].rootAssembly.allSets[name].faces
-        mdb.models[name].rootAssembly.allSurfaces[name].faces
-        mdb.models[name].rootAssembly.instances[name].faces
-        mdb.models[name].rootAssembly.instances[name].sets[name].faces
-        mdb.models[name].rootAssembly.instances[name].surfaces[name].faces
-        mdb.models[name].rootAssembly.modelInstances[i].sets[name].faces
-        mdb.models[name].rootAssembly.modelInstances[i].surfaces[name].faces
-        mdb.models[name].rootAssembly.sets[name].faces
-        mdb.models[name].rootAssembly.surfaces[name].faces
+            import part
+            mdb.models[name].parts[name].allInternalSets[name].faces
+            mdb.models[name].parts[name].allInternalSurfaces[name].faces
+            mdb.models[name].parts[name].allSets[name].faces
+            mdb.models[name].parts[name].allSurfaces[name].faces
+            mdb.models[name].parts[name].faces
+            mdb.models[name].parts[name].sets[name].faces
+            mdb.models[name].parts[name].surfaces[name].faces
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name].faces
+            mdb.models[name].rootAssembly.allInstances[name].sets[name].faces
+            mdb.models[name].rootAssembly.allInstances[name].surfaces[name].faces
+            mdb.models[name].rootAssembly.allInternalSets[name].faces
+            mdb.models[name].rootAssembly.allInternalSurfaces[name].faces
+            mdb.models[name].rootAssembly.allSets[name].faces
+            mdb.models[name].rootAssembly.allSurfaces[name].faces
+            mdb.models[name].rootAssembly.instances[name].faces
+            mdb.models[name].rootAssembly.instances[name].sets[name].faces
+            mdb.models[name].rootAssembly.instances[name].surfaces[name].faces
+            mdb.models[name].rootAssembly.modelInstances[i].sets[name].faces
+            mdb.models[name].rootAssembly.modelInstances[i].surfaces[name].faces
+            mdb.models[name].rootAssembly.sets[name].faces
+            mdb.models[name].rootAssembly.surfaces[name].faces
     """
 
     def __init__(self, faces: list[Face]):
         """This method creates a FaceArray object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            part.FaceArray
+                part.FaceArray
 
         Parameters
         ----------

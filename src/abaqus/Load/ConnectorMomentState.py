@@ -9,18 +9,17 @@ class ConnectorMomentState(LoadState):
     The ConnectorMomentState object has no constructor or methods.
     The ConnectorMomentState object is derived from the LoadState object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].steps[name].loadStates[name]
+            import load
+            mdb.models[name].steps[name].loadStates[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONNECTOR LOAD
+        - CONNECTOR LOAD
     """
 
     #: A Float or a Complex specifying the connector moment component in the connector's local

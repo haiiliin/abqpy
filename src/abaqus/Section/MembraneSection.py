@@ -7,20 +7,19 @@ class MembraneSection(Section):
     """The MembraneSection object defines the properties of a membrane section.
     The MembraneSection object is derived from the Section object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].sections[name]
-        import odbSection
-        session.odbs[name].sections[name]
+            import section
+            mdb.models[name].sections[name]
+            import odbSection
+            session.odbs[name].sections[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - MEMBRANE SECTION
+        - MEMBRANE SECTION
     """
 
     #: A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object specifying reinforcement properties.
@@ -71,14 +70,13 @@ class MembraneSection(Section):
     ):
         """This method creates a MembraneSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].MembraneSection
-            session.odbs[name].MembraneSection
+                mdb.models[name].MembraneSection
+                session.odbs[name].MembraneSection
 
         Parameters
         ----------

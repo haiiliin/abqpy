@@ -7,14 +7,13 @@ class SurfaceCurrent(Load):
     """The SurfaceCurrent object stores the data for a surface current.
     The SurfaceCurrent object is derived from the Load object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].loads[name]
+            import load
+            mdb.models[name].loads[name]
     """
 
     #: A String specifying the load repository key.
@@ -44,13 +43,12 @@ class SurfaceCurrent(Load):
     ):
         """This method creates a SurfaceCurrent object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SurfaceCurrent
+                mdb.models[name].SurfaceCurrent
 
         Parameters
         ----------

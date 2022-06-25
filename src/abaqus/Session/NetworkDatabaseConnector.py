@@ -5,13 +5,12 @@ class NetworkDatabaseConnector:
     """The NetworkDatabaseConnector object allows you to access an output database on a remote
     system.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        session.networkDatabaseConnectors[name]
+            session.networkDatabaseConnectors[name]
     """
 
     #: A Boolean specifying if the connection between the client and the server is established.
@@ -73,13 +72,12 @@ class NetworkDatabaseConnector:
         platform; you cannot access an output database that resides on a remote Windows system.
         You can access only a remote output database; you cannot access a remote model database.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.NetworkDatabaseConnector
+                session.NetworkDatabaseConnector
 
         Parameters
         ----------

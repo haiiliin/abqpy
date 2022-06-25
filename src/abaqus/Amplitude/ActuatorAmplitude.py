@@ -6,20 +6,19 @@ class ActuatorAmplitude(Amplitude):
     """The ActuatorAmplitude object defines an actuator amplitude curve.
     The ActuatorAmplitude object is derived from the Amplitude object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import amplitude
-        mdb.models[name].amplitudes[name]
-        import odbAmplitude
-        session.odbs[name].amplitudes[name]
+            import amplitude
+            mdb.models[name].amplitudes[name]
+            import odbAmplitude
+            session.odbs[name].amplitudes[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - AMPLITUDE
+        - AMPLITUDE
     """
 
     #: A String specifying the repository key.
@@ -32,14 +31,13 @@ class ActuatorAmplitude(Amplitude):
     def __init__(self, name: str, timeSpan: SymbolicConstant = STEP):
         """This method creates a ActuatorAmplitude object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ActuatorAmplitude
-            session.odbs[name].ActuatorAmplitude
+                mdb.models[name].ActuatorAmplitude
+                session.odbs[name].ActuatorAmplitude
 
         Parameters
         ----------

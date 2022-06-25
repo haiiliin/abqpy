@@ -18,13 +18,12 @@ class MeshPart(PartBase):
     """The following commands operate on Part objects. For more information about the Part
     object, see Part object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import mesh
+            import mesh
     """
 
     def assignStackDirection(self, cells: tuple[Cell], referenceRegion: Face):
@@ -1131,13 +1130,12 @@ class MeshPart(PartBase):
     ):
         """This method creates a node on an orphan mesh part.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].Node
+                mdb.models[name].parts[*name*].Node
 
         Parameters
         ----------

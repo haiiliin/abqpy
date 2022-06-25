@@ -5,14 +5,13 @@ from ..Region.Region import Region
 class CompositePly:
     """The CompositePly object defines the material layers in a composite layup.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].parts[name].compositeLayups[i].plies[i]
+            import section
+            mdb.models[name].parts[name].compositeLayups[i].plies[i]
     """
 
     #: A Float specifying the thickness of the section layer.
@@ -100,13 +99,12 @@ class CompositePly:
     ):
         """This method creates a CompositePly object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].compositeLayups[*name*].CompositePly
+                mdb.models[name].parts[*name*].compositeLayups[*name*].CompositePly
 
         Parameters
         ----------

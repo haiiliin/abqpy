@@ -2,21 +2,20 @@ class LayerProperties:
     """The LayerProperties object defines the properties of a layer of reinforcement for
     membrane, shell, and surface sections.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].parts[name].compositeLayups[i].section.rebarLayers.layerTable[i]
-        mdb.models[name].sections[name].rebarLayers.layerTable[i]
-        import odbSection
-        session.odbs[name].sections[name].rebarLayers.layerTable[i]
+            import section
+            mdb.models[name].parts[name].compositeLayups[i].section.rebarLayers.layerTable[i]
+            mdb.models[name].sections[name].rebarLayers.layerTable[i]
+            import odbSection
+            session.odbs[name].sections[name].rebarLayers.layerTable[i]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - REBAR LAYER
+        - REBAR LAYER
     """
 
     #: A Float specifying the area per bar.
@@ -71,14 +70,13 @@ class LayerProperties:
     ):
         """This method creates a LayerProperties object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            section.LayerProperties
-            odbSection.LayerProperties
+                section.LayerProperties
+                odbSection.LayerProperties
 
         Parameters
         ----------

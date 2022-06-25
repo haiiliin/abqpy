@@ -4,26 +4,25 @@ from abaqusConstants import *
 class Cell:
     """Cells are volumetric regions of geometry.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].allInternalSets[name].cells[i]
-        mdb.models[name].parts[name].allSets[name].cells[i]
-        mdb.models[name].parts[name].cells[i]
-        mdb.models[name].parts[name].sets[name].cells[i]
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name].cells[i]
-        mdb.models[name].rootAssembly.allInstances[name].sets[name].cells[i]
-        mdb.models[name].rootAssembly.allInternalSets[name].cells[i]
-        mdb.models[name].rootAssembly.allSets[name].cells[i]
-        mdb.models[name].rootAssembly.instances[name].cells[i]
-        mdb.models[name].rootAssembly.instances[name].sets[name].cells[i]
-        mdb.models[name].rootAssembly.modelInstances[i].sets[name].cells[i]
-        mdb.models[name].rootAssembly.sets[name].cells[i]
+            import part
+            mdb.models[name].parts[name].allInternalSets[name].cells[i]
+            mdb.models[name].parts[name].allSets[name].cells[i]
+            mdb.models[name].parts[name].cells[i]
+            mdb.models[name].parts[name].sets[name].cells[i]
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name].cells[i]
+            mdb.models[name].rootAssembly.allInstances[name].sets[name].cells[i]
+            mdb.models[name].rootAssembly.allInternalSets[name].cells[i]
+            mdb.models[name].rootAssembly.allSets[name].cells[i]
+            mdb.models[name].rootAssembly.instances[name].cells[i]
+            mdb.models[name].rootAssembly.instances[name].sets[name].cells[i]
+            mdb.models[name].rootAssembly.modelInstances[i].sets[name].cells[i]
+            mdb.models[name].rootAssembly.sets[name].cells[i]
     """
 
     #: An Int specifying the index of the cell in the CellArray.

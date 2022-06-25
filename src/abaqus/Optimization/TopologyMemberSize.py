@@ -7,14 +7,13 @@ class TopologyMemberSize(GeometricRestriction):
     """The TopologyMemberSize object defines a topology member size geometric restriction.
     The TopologyMemberSize object is derived from the GeometricRestriction object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import optimization
-        mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
+            import optimization
+            mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
 
     #: A String specifying the geometric restriction repository key.
@@ -50,13 +49,12 @@ class TopologyMemberSize(GeometricRestriction):
     ):
         """This method creates a TopologyMemberSize object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      mdb.models[name].optimizationTasks[name].TopologyMemberSize
+                mdb.models[name].optimizationTasks[name].TopologyMemberSize
 
         Parameters
         ----------

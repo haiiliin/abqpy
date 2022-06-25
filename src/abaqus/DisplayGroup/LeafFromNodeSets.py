@@ -9,13 +9,12 @@ class LeafFromNodeSets(Leaf):
     commands.
     The LeafFromNodeSets object is derived from the Leaf object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import displayGroupOdbToolset
+            import displayGroupOdbToolset
     """
 
     #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
@@ -28,13 +27,12 @@ class LeafFromNodeSets(Leaf):
     def __init__(self, nodeSets: tuple):
         """This method creates a Leaf object from a sequence of node sets.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            LeafFromNodeSets
+                LeafFromNodeSets
 
         Parameters
         ----------

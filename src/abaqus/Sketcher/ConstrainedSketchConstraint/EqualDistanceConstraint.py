@@ -15,13 +15,12 @@ class EqualDistanceConstraint(ConstrainedSketchConstraint):
         constraint forces the midpoint vertex to remain at an equal distance from the two other
         vertices or lines.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].EqualDistanceConstraint
+                mdb.models[name].sketches[name].EqualDistanceConstraint
 
         Parameters
         ----------

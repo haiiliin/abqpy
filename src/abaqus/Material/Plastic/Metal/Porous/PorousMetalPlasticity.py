@@ -6,30 +6,29 @@ from .VoidNucleation import VoidNucleation
 class PorousMetalPlasticity:
     """The PorousMetalPlasticity object specifies a porous metal plasticity model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].porousMetalPlasticity
-        import odbMaterial
-        session.odbs[name].materials[name].porousMetalPlasticity
+            import material
+            mdb.models[name].materials[name].porousMetalPlasticity
+            import odbMaterial
+            session.odbs[name].materials[name].porousMetalPlasticity
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - :math:`q_1`.
-    - :math:`q_2`.
-    - :math:`q_3`.
-    - Temperature, if the data depend on temperature.
-    - Value of the first field variable, if the data depend on field variables.
-    - Value of the second field variable.
-    - Etc.
+        - :math:`q_1`.
+        - :math:`q_2`.
+        - :math:`q_3`.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - POROUS METAL PLASTICITY
+        - POROUS METAL PLASTICITY
     """
 
     #: A :py:class:`~abaqus.Material.Plastic.Metal.Porous.PorousFailureCriteria.PorousFailureCriteria` object.
@@ -47,14 +46,13 @@ class PorousMetalPlasticity:
     ):
         """This method creates a PorousMetalPlasticity object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].PorousMetalPlasticity
-            session.odbs[name].materials[name].PorousMetalPlasticity
+                mdb.models[name].materials[name].PorousMetalPlasticity
+                session.odbs[name].materials[name].PorousMetalPlasticity
 
         Parameters
         ----------

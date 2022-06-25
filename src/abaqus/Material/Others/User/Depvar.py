@@ -1,33 +1,31 @@
 class Depvar:
     """The Depvar object specifies solution-dependent state variables.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].depvar
-        import odbMaterial
-        session.odbs[name].materials[name].depvar
+            import material
+            mdb.models[name].materials[name].depvar
+            import odbMaterial
+            session.odbs[name].materials[name].depvar
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - DEPVAR
+        - DEPVAR
     """
 
     def __init__(self, deleteVar: int = 0, n: int = 0):
         """This method creates a Depvar object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].Depvar
-            session.odbs[name].materials[name].Depvar
+                mdb.models[name].materials[name].Depvar
+                session.odbs[name].materials[name].Depvar
 
         Parameters
         ----------

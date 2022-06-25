@@ -7,18 +7,17 @@ class AcousticImpedanceProp(ContactProperty):
     referred to by an AcousticImpedance object.
     The AcousticImpedanceProp object is derived from the InteractionProperty object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactionProperties[name]
+            import interaction
+            mdb.models[name].interactionProperties[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - IMPEDANCE PROPERTY
+        - IMPEDANCE PROPERTY
     """
 
     #: A String specifying the interaction property repository key.
@@ -49,13 +48,12 @@ class AcousticImpedanceProp(ContactProperty):
     ):
         """This method creates an AcousticImpedanceProp object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].AcousticImpedanceProp
+                mdb.models[name].AcousticImpedanceProp
 
         Parameters
         ----------

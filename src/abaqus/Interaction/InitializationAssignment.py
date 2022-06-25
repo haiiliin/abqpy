@@ -6,18 +6,17 @@ class InitializationAssignment:
     definition for domain pairs in a ContactStd or ContactExp object. The
     InitializationAssignment object has no constructor or members.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactions[name].initializationAssignments
+            import interaction
+            mdb.models[name].interactions[name].initializationAssignments
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONTACT INITIALIZATION ASSIGNMENT
+        - CONTACT INITIALIZATION ASSIGNMENT
     """
 
     def changeValuesInStep(self, stepName: str, index: int, value: str):

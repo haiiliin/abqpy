@@ -15,13 +15,12 @@ class VerticalDimension(ConstrainedSketchDimension):
         """This method constructs a ConstrainedSketchDimension between two vertices. A vertical
         dimension controls the vertical distance along the **Y**-axis between two vertices.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].VerticalDimension
+                mdb.models[name].sketches[name].VerticalDimension
 
         Parameters
         ----------

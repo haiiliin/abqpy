@@ -17,14 +17,13 @@ from ..Odb.OdbBase import OdbBase
 class AmplitudeOdb(OdbBase):
     """The Odb object is the in-memory representation of an output database (ODB) file.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name]
+            import odbAccess
+            session.odbs[name]
     """
 
     def ActuatorAmplitude(
@@ -32,14 +31,13 @@ class AmplitudeOdb(OdbBase):
     ) -> ActuatorAmplitude:
         """This method creates a ActuatorAmplitude object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ActuatorAmplitude
-            session.odbs[name].ActuatorAmplitude
+                mdb.models[name].ActuatorAmplitude
+                session.odbs[name].ActuatorAmplitude
 
         Parameters
         ----------
@@ -73,14 +71,13 @@ class AmplitudeOdb(OdbBase):
     ) -> DecayAmplitude:
         """This method creates a DecayAmplitude object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].DecayAmplitude
-            session.odbs[name].DecayAmplitude
+                mdb.models[name].DecayAmplitude
+                session.odbs[name].DecayAmplitude
 
         Parameters
         ----------
@@ -124,14 +121,13 @@ class AmplitudeOdb(OdbBase):
     ) -> EquallySpacedAmplitude:
         """This method creates an EquallySpacedAmplitude object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].EquallySpacedAmplitude
-            session.odbs[name].EquallySpacedAmplitude
+                mdb.models[name].EquallySpacedAmplitude
+                session.odbs[name].EquallySpacedAmplitude
 
         Parameters
         ----------
@@ -181,14 +177,13 @@ class AmplitudeOdb(OdbBase):
     ) -> ModulatedAmplitude:
         """This method creates a ModulatedAmplitude object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ModulatedAmplitude
-            session.odbs[name].ModulatedAmplitude
+                mdb.models[name].ModulatedAmplitude
+                session.odbs[name].ModulatedAmplitude
 
         Parameters
         ----------
@@ -236,14 +231,13 @@ class AmplitudeOdb(OdbBase):
     ) -> PeriodicAmplitude:
         """This method creates a PeriodicAmplitude object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].PeriodicAmplitude
-            session.odbs[name].PeriodicAmplitude
+                mdb.models[name].PeriodicAmplitude
+                session.odbs[name].PeriodicAmplitude
 
         Parameters
         ----------
@@ -289,14 +283,13 @@ class AmplitudeOdb(OdbBase):
     ) -> PsdDefinition:
         """This method creates a PsdDefinition object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].PsdDefinition
-            session.odbs[name].PsdDefinition
+                mdb.models[name].PsdDefinition
+                session.odbs[name].PsdDefinition
 
         Parameters
         ----------
@@ -355,14 +348,13 @@ class AmplitudeOdb(OdbBase):
     ) -> SmoothStepAmplitude:
         """This method creates a SmoothStepAmplitude object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SmoothStepAmplitude
-            session.odbs[name].SmoothStepAmplitude
+                mdb.models[name].SmoothStepAmplitude
+                session.odbs[name].SmoothStepAmplitude
 
         Parameters
         ----------
@@ -398,14 +390,13 @@ class AmplitudeOdb(OdbBase):
     ) -> SolutionDependentAmplitude:
         """This method creates a SolutionDependentAmplitude object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SolutionDependentAmplitude
-            session.odbs[name].SolutionDependentAmplitude
+                mdb.models[name].SolutionDependentAmplitude
+                session.odbs[name].SolutionDependentAmplitude
 
         Parameters
         ----------
@@ -455,14 +446,13 @@ class AmplitudeOdb(OdbBase):
     ) -> SpectrumAmplitude:
         """This method creates a SpectrumAmplitude object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SpectrumAmplitude
-            session.odbs[name].SpectrumAmplitude
+                mdb.models[name].SpectrumAmplitude
+                session.odbs[name].SpectrumAmplitude
 
         Parameters
         ----------
@@ -539,14 +529,13 @@ class AmplitudeOdb(OdbBase):
     ) -> TabularAmplitude:
         """This method creates a TabularAmplitude object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].TabularAmplitude
-            session.odbs[name].TabularAmplitude
+                mdb.models[name].TabularAmplitude
+                session.odbs[name].TabularAmplitude
 
         Parameters
         ----------

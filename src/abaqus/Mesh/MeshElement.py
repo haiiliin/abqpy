@@ -8,37 +8,36 @@ class MeshElement:
     refers to the internal numbering of the element repository. The index does not refer to
     the element label.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].allInternalSets[name].elements[i]
-        mdb.models[name].parts[name].allInternalSurfaces[name].elements[i]
-        mdb.models[name].parts[name].allSets[name].elements[i]
-        mdb.models[name].parts[name].allSurfaces[name].elements[i]
-        mdb.models[name].parts[name].elements[i]
-        mdb.models[name].parts[name].sets[name].elements[i]
-        mdb.models[name].parts[name].surfaces[name].elements[i]
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name].elements[i]
-        mdb.models[name].rootAssembly.allInstances[name].sets[name].elements[i]
-        mdb.models[name].rootAssembly.allInstances[name].surfaces[name].elements[i]
-        mdb.models[name].rootAssembly.allInternalSets[name].elements[i]
-        mdb.models[name].rootAssembly.allInternalSurfaces[name].elements[i]
-        mdb.models[name].rootAssembly.allSets[name].elements[i]
-        mdb.models[name].rootAssembly.allSurfaces[name].elements[i]
-        mdb.models[name].rootAssembly.elements[i]
-        mdb.models[name].rootAssembly.instances[name].elements[i]
-        mdb.models[name].rootAssembly.instances[name].sets[name].elements[i]
-        mdb.models[name].rootAssembly.instances[name].surfaces[name].elements[i]
-        mdb.models[name].rootAssembly.modelInstances[i].elements[i]
-        mdb.models[name].rootAssembly.modelInstances[i].sets[name].elements[i]
-        mdb.models[name].rootAssembly.modelInstances[i].surfaces[name].elements[i]
-        mdb.models[name].rootAssembly.sets[name].elements[i]
-        mdb.models[name].rootAssembly.surfaces[name].elements[i]
+            import part
+            mdb.models[name].parts[name].allInternalSets[name].elements[i]
+            mdb.models[name].parts[name].allInternalSurfaces[name].elements[i]
+            mdb.models[name].parts[name].allSets[name].elements[i]
+            mdb.models[name].parts[name].allSurfaces[name].elements[i]
+            mdb.models[name].parts[name].elements[i]
+            mdb.models[name].parts[name].sets[name].elements[i]
+            mdb.models[name].parts[name].surfaces[name].elements[i]
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name].elements[i]
+            mdb.models[name].rootAssembly.allInstances[name].sets[name].elements[i]
+            mdb.models[name].rootAssembly.allInstances[name].surfaces[name].elements[i]
+            mdb.models[name].rootAssembly.allInternalSets[name].elements[i]
+            mdb.models[name].rootAssembly.allInternalSurfaces[name].elements[i]
+            mdb.models[name].rootAssembly.allSets[name].elements[i]
+            mdb.models[name].rootAssembly.allSurfaces[name].elements[i]
+            mdb.models[name].rootAssembly.elements[i]
+            mdb.models[name].rootAssembly.instances[name].elements[i]
+            mdb.models[name].rootAssembly.instances[name].sets[name].elements[i]
+            mdb.models[name].rootAssembly.instances[name].surfaces[name].elements[i]
+            mdb.models[name].rootAssembly.modelInstances[i].elements[i]
+            mdb.models[name].rootAssembly.modelInstances[i].sets[name].elements[i]
+            mdb.models[name].rootAssembly.modelInstances[i].surfaces[name].elements[i]
+            mdb.models[name].rootAssembly.sets[name].elements[i]
+            mdb.models[name].rootAssembly.surfaces[name].elements[i]
     """
 
     #: An Int specifying the element label.
@@ -60,13 +59,12 @@ class MeshElement:
     ):
         """This method creates an element on an orphan mesh part from a sequence of nodes.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].Element
+                mdb.models[name].parts[*name*].Element
 
         Parameters
         ----------

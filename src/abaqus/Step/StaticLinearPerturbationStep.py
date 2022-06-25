@@ -20,19 +20,18 @@ class StaticLinearPerturbationStep(AnalysisStep):
     be analyzed as a linear perturbation load step.
     The StaticLinearPerturbationStep object is derived from the AnalysisStep object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name]
+            import step
+            mdb.models[name].steps[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - STATIC
-            - STEP
+        - STATIC
+                - STEP
     """
 
     #: A String specifying the repository key.
@@ -159,13 +158,12 @@ class StaticLinearPerturbationStep(AnalysisStep):
     ):
         """This method creates a StaticLinearPerturbationStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].StaticLinearPerturbationStep
+                mdb.models[name].StaticLinearPerturbationStep
 
         Parameters
         ----------

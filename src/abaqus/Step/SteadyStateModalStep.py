@@ -32,21 +32,20 @@ class SteadyStateModalStep(AnalysisStep):
     of the system to harmonic excitation.
     The SteadyStateModalStep object is derived from the AnalysisStep object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name]
+            import step
+            mdb.models[name].steps[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - DAMPING
-            - MODAL DAMPING
-            - STEADY STATE DYNAMICS
-            - STEP
+        - DAMPING
+                - MODAL DAMPING
+                - STEADY STATE DYNAMICS
+                - STEP
     """
 
     #: A String specifying the repository key.
@@ -209,13 +208,12 @@ class SteadyStateModalStep(AnalysisStep):
     ):
         """This method creates a SteadyStateModalStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SteadyStateModalStep
+                mdb.models[name].SteadyStateModalStep
 
         Parameters
         ----------

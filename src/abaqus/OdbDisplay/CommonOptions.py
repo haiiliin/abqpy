@@ -16,22 +16,21 @@ class CommonOptions(DGCommonOptions):
     - The common options associated with a particular viewport.
     The CommonOptions object is derived from the DGCommonOptions object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.defaultOdbDisplay.commonOptions
-        session.viewports[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.commonOptions
-        session.viewports[name].layers[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.commonOptions
-        session.viewports[name].layers[name].odbDisplay.commonOptions
-        session.viewports[name].layers[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.commonOptions
-        session.viewports[name].layers[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.commonOptions
-        session.viewports[name].odbDisplay.commonOptions
-        session.viewports[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.commonOptions
-        session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.commonOptions
+            import visualization
+            session.defaultOdbDisplay.commonOptions
+            session.viewports[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.commonOptions
+            session.viewports[name].layers[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.commonOptions
+            session.viewports[name].layers[name].odbDisplay.commonOptions
+            session.viewports[name].layers[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.commonOptions
+            session.viewports[name].layers[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.commonOptions
+            session.viewports[name].odbDisplay.commonOptions
+            session.viewports[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.commonOptions
+            session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.commonOptions
     """
 
     #: A SymbolicConstant specifying the deformation scale factor mode. Possible values are

@@ -4,70 +4,69 @@ from abaqusConstants import *
 class Piezoelectric:
     r"""The Piezoelectric object specifies piezoelectric material properties.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].piezoelectric
-        import odbMaterial
-        session.odbs[name].materials[name].piezoelectric
+            import material
+            mdb.models[name].materials[name].piezoelectric
+            import odbMaterial
+            session.odbs[name].materials[name].piezoelectric
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **type** = STRESS, the table data specify the following:
-    
-        - :math:`e_{111}^{\varphi}`.
-        - :math:`e_{122}^{\varphi}`.
-        - :math:`e_{133}^{\varphi}`.
-        - :math:`e_{112}^{\varphi}`.
-        - :math:`e_{113}^{\varphi}`.
-        - :math:`e_{123}^{\varphi}`.
-        - :math:`e_{211}^{\varphi}`.
-        - :math:`e_{222}^{\varphi}`.
-        - :math:`e_{233}^{\varphi}`.
-        - :math:`e_{212}^{\varphi}`.
-        - :math:`e_{213}^{\varphi}`.
-        - :math:`e_{223}^{\varphi}`.
-        - :math:`e_{311}^{\varphi}`.
-        - :math:`e_{322}^{\varphi}`.
-        - :math:`e_{333}^{\varphi}`.
-        - :math:`e_{312}^{\varphi}`.
-        - :math:`e_{313}^{\varphi}`.
-        - :math:`e_{323}^{\varphi}`.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **type** = STRAIN, the table data specify the following:
-    
-        - :math:`d_{111}^{\varphi}`.
-        - :math:`d_{122}^{\varphi}`.
-        - :math:`d_{133}^{\varphi}`.
-        - :math:`d_{112}^{\varphi}`.
-        - :math:`d_{113}^{\varphi}`.
-        - :math:`d_{123}^{\varphi}`.
-        - :math:`d_{211}^{\varphi}`.
-        - :math:`d_{222}^{\varphi}`.
-        - :math:`d_{233}^{\varphi}`.
-        - :math:`d_{212}^{\varphi}`.
-        - :math:`d_{213}^{\varphi}`.
-        - :math:`d_{223}^{\varphi}`.
-        - :math:`d_{311}^{\varphi}`.
-        - :math:`d_{322}^{\varphi}`.
-        - :math:`d_{333}^{\varphi}`.
-        - :math:`d_{313}^{\varphi}`.
-        - :math:`d_{323}^{\varphi}`.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+        - If **type** = STRESS, the table data specify the following:
+        
+            - :math:`e_{111}^{\varphi}`.
+            - :math:`e_{122}^{\varphi}`.
+            - :math:`e_{133}^{\varphi}`.
+            - :math:`e_{112}^{\varphi}`.
+            - :math:`e_{113}^{\varphi}`.
+            - :math:`e_{123}^{\varphi}`.
+            - :math:`e_{211}^{\varphi}`.
+            - :math:`e_{222}^{\varphi}`.
+            - :math:`e_{233}^{\varphi}`.
+            - :math:`e_{212}^{\varphi}`.
+            - :math:`e_{213}^{\varphi}`.
+            - :math:`e_{223}^{\varphi}`.
+            - :math:`e_{311}^{\varphi}`.
+            - :math:`e_{322}^{\varphi}`.
+            - :math:`e_{333}^{\varphi}`.
+            - :math:`e_{312}^{\varphi}`.
+            - :math:`e_{313}^{\varphi}`.
+            - :math:`e_{323}^{\varphi}`.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **type** = STRAIN, the table data specify the following:
+        
+            - :math:`d_{111}^{\varphi}`.
+            - :math:`d_{122}^{\varphi}`.
+            - :math:`d_{133}^{\varphi}`.
+            - :math:`d_{112}^{\varphi}`.
+            - :math:`d_{113}^{\varphi}`.
+            - :math:`d_{123}^{\varphi}`.
+            - :math:`d_{211}^{\varphi}`.
+            - :math:`d_{222}^{\varphi}`.
+            - :math:`d_{233}^{\varphi}`.
+            - :math:`d_{212}^{\varphi}`.
+            - :math:`d_{213}^{\varphi}`.
+            - :math:`d_{223}^{\varphi}`.
+            - :math:`d_{311}^{\varphi}`.
+            - :math:`d_{322}^{\varphi}`.
+            - :math:`d_{333}^{\varphi}`.
+            - :math:`d_{313}^{\varphi}`.
+            - :math:`d_{323}^{\varphi}`.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - PIEZOELECTRIC
+        - PIEZOELECTRIC
     """
 
     def __init__(
@@ -79,14 +78,13 @@ class Piezoelectric:
     ):
         """This method creates a Piezoelectric object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].Piezoelectric
-            session.odbs[name].materials[name].Piezoelectric
+                mdb.models[name].materials[name].Piezoelectric
+                session.odbs[name].materials[name].Piezoelectric
 
         Parameters
         ----------

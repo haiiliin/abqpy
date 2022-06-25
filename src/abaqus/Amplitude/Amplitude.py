@@ -6,16 +6,15 @@ class Amplitude:
     Amplitude object has no explicit constructor. The methods and members of the Amplitude
     object are common to all objects derived from the Amplitude.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import amplitude
-        mdb.models[name].amplitudes[name]
-        import odbAmplitude
-        session.odbs[name].amplitudes[name]
+            import amplitude
+            mdb.models[name].amplitudes[name]
+            import odbAmplitude
+            session.odbs[name].amplitudes[name]
     """
 
     #: A String specifying the repository key.

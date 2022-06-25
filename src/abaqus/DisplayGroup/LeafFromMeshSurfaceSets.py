@@ -10,13 +10,12 @@ class LeafFromMeshSurfaceSets(Leaf):
     commands.
     The LeafFromMeshSurfaceSets object is derived from the Leaf object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import displayGroupMdbToolset
+            import displayGroupMdbToolset
     """
 
     #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
@@ -26,13 +25,12 @@ class LeafFromMeshSurfaceSets(Leaf):
     def __init__(self, surfaceSets: tuple[Surface]):
         """This method creates a Leaf object from a sequence of surface sets.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            LeafFromMeshSurfaceSets
+                LeafFromMeshSurfaceSets
 
         Parameters
         ----------

@@ -7,14 +7,13 @@ class Pressure(Load):
     """The Pressure object defines a pressure load.
     The Pressure object is derived from the Load object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].loads[name]
+            import load
+            mdb.models[name].loads[name]
     """
 
     #: A String specifying the load repository key.
@@ -48,13 +47,12 @@ class Pressure(Load):
     ):
         """This method creates a Pressure object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Pressure
+                mdb.models[name].Pressure
 
         Parameters
         ----------

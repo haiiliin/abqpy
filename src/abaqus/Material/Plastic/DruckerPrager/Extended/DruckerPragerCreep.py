@@ -4,42 +4,41 @@ from abaqusConstants import *
 class DruckerPragerCreep:
     r"""The DruckerPragerCreep object specifies creep for Drucker-Prager plasticity models.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].druckerPrager.druckerPragerCreep
-        import odbMaterial
-        session.odbs[name].materials[name].druckerPrager.druckerPragerCreep
+            import material
+            mdb.models[name].materials[name].druckerPrager.druckerPragerCreep
+            import odbMaterial
+            session.odbs[name].materials[name].druckerPrager.druckerPragerCreep
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **law** = TIME or **law** = STRAIN, the table data specify the following:
-    
-        - A. (Units of :math:`\mathrm{F}^{-n} \mathrm{~L}^{2 n} \mathrm{~T}^{-1-m}`.)
-        - :math:`n`.
-        - :math:`m`.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **law** = SINGHM, the table data specify the following:
-    
-        - A. (Units of :math:`\mathrm{T}^{-1} .` )
-        - :math:`\alpha`. (Units of :math:`F^{-1} L^{2}`.)
-        - :math:`m`.
-        - :math:`t_{1} \cdot` (Units of :math:`\mathrm{T}`.)
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+        - If **law** = TIME or **law** = STRAIN, the table data specify the following:
+        
+            - A. (Units of :math:`\mathrm{F}^{-n} \mathrm{~L}^{2 n} \mathrm{~T}^{-1-m}`.)
+            - :math:`n`.
+            - :math:`m`.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **law** = SINGHM, the table data specify the following:
+        
+            - A. (Units of :math:`\mathrm{T}^{-1} .` )
+            - :math:`\alpha`. (Units of :math:`F^{-1} L^{2}`.)
+            - :math:`m`.
+            - :math:`t_{1} \cdot` (Units of :math:`\mathrm{T}`.)
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - DRUCKER PRAGER CREEP
+        - DRUCKER PRAGER CREEP
     """
 
     def __init__(
@@ -51,14 +50,13 @@ class DruckerPragerCreep:
     ):
         """This method creates a DruckerPragerCreep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].druckerPrager.DruckerPragerCreep
-            session.odbs[name].materials[name].druckerPrager.DruckerPragerCreep
+                mdb.models[name].materials[name].druckerPrager.DruckerPragerCreep
+                session.odbs[name].materials[name].druckerPrager.DruckerPragerCreep
 
         Parameters
         ----------

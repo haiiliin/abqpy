@@ -9,13 +9,12 @@ class LeafFromOdbEdgePick(Leaf):
     commands.
     The LeafFromOdbEdgePick object is derived from the Leaf object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import displayGroupOdbToolset
+            import displayGroupOdbToolset
     """
 
     #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
@@ -27,13 +26,12 @@ class LeafFromOdbEdgePick(Leaf):
         strings defining the edges picked for each part instance. Leaf objects specify the items
         in a display group.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            LeafFromOdbEdgePick
+                LeafFromOdbEdgePick
 
         Parameters
         ----------

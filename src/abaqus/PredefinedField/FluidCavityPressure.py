@@ -7,18 +7,17 @@ class FluidCavityPressure(PredefinedField):
     base class*region* argument can not be specifed with this object.
     The FluidCavityPressure object is derived from the PredefinedField object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].predefinedFields[name]
+            import load
+            mdb.models[name].predefinedFields[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - INITIAL CONDITIONS
+        - INITIAL CONDITIONS
     """
 
     #: A :py:class:`~abaqus.Region.Region.Region` object on which the **fluidCavity** interaction is specified.
@@ -36,13 +35,12 @@ class FluidCavityPressure(PredefinedField):
     def __init__(self, name: str, fluidCavity: str, fluidPressure: float):
         """This method creates a FluidCavityPressure object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].FluidCavityPressure
+                mdb.models[name].FluidCavityPressure
 
         Parameters
         ----------

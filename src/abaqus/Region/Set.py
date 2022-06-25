@@ -35,23 +35,22 @@ class Set:
 
     transmissionSet.elements[6]=mdb.models['Transmission'].rootAssembly.instances['housing-'].elements[47]
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].allInternalSets[name]
-        mdb.models[name].parts[name].allSets[name]
-        mdb.models[name].parts[name].sets[name]
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name].sets[name]
-        mdb.models[name].rootAssembly.allInternalSets[name]
-        mdb.models[name].rootAssembly.allSets[name]
-        mdb.models[name].rootAssembly.instances[name].sets[name]
-        mdb.models[name].rootAssembly.modelInstances[i].sets[name]
-        mdb.models[name].rootAssembly.sets[name]
+            import part
+            mdb.models[name].parts[name].allInternalSets[name]
+            mdb.models[name].parts[name].allSets[name]
+            mdb.models[name].parts[name].sets[name]
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name].sets[name]
+            mdb.models[name].rootAssembly.allInternalSets[name]
+            mdb.models[name].rootAssembly.allSets[name]
+            mdb.models[name].rootAssembly.instances[name].sets[name]
+            mdb.models[name].rootAssembly.modelInstances[i].sets[name]
+            mdb.models[name].rootAssembly.sets[name]
     """
 
     #: A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
@@ -105,14 +104,13 @@ class Set:
     ):
         """This method creates a set from a sequence of objects in a model database.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].Set
-            mdb.models[name].rootAssembly.Set
+                mdb.models[name].parts[*name*].Set
+                mdb.models[name].rootAssembly.Set
 
         Parameters
         ----------
@@ -165,14 +163,13 @@ class Set:
     def __init__(self, name: str, objectToCopy: "Set"):
         """This method copies a set from an existing set.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].Set
-            mdb.models[name].rootAssembly.Set
+                mdb.models[name].parts[*name*].Set
+                mdb.models[name].rootAssembly.Set
 
         Parameters
         ----------
@@ -196,14 +193,13 @@ class Set:
     ):
         """This method creates a set by performing a boolean operation on two or more input sets.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].Set
-            mdb.models[name].rootAssembly.Set
+                mdb.models[name].parts[*name*].Set
+                mdb.models[name].rootAssembly.Set
 
         Parameters
         ----------
@@ -231,14 +227,13 @@ class Set:
         create sets only on parts; however, you can access the sets from instances of the parts
         in the assembly.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].Set
-            mdb.models[name].rootAssembly.Set
+                mdb.models[name].parts[*name*].Set
+                mdb.models[name].rootAssembly.Set
 
         Parameters
         ----------
@@ -259,14 +254,13 @@ class Set:
     def SetFromElementLabels(self, name: str, elementLabels: tuple):
         """This method creates a set from a sequence of element labels in a model database.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].Set
-            mdb.models[name].rootAssembly.Set
+                mdb.models[name].parts[*name*].Set
+                mdb.models[name].rootAssembly.Set
 
         Parameters
         ----------
@@ -287,14 +281,13 @@ class Set:
     def SetFromNodeLabels(self, name: str, nodeLabels: tuple):
         """This method creates a set from a sequence of node labels in a model database.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].Set
-            mdb.models[name].rootAssembly.Set
+                mdb.models[name].parts[*name*].Set
+                mdb.models[name].rootAssembly.Set
 
         Parameters
         ----------
@@ -318,14 +311,13 @@ class Set:
         """This method creates sets based on mapping sets from element centroid locations in an
         Odb.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].Set
-            mdb.models[name].rootAssembly.Set
+                mdb.models[name].parts[*name*].Set
+                mdb.models[name].rootAssembly.Set
 
         Parameters
         ----------

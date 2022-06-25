@@ -2,20 +2,19 @@ class BaselineCorrection:
     """The BaselineCorrection object modifies an acceleration history to minimize the overall
     drift of the displacement obtained from the time integration of the given acceleration.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import amplitude
-        mdb.models[name].amplitudes[name].baselineCorrection
-        import odbAmplitude
-        session.odbs[name].amplitudes[name].baselineCorrection
+            import amplitude
+            mdb.models[name].amplitudes[name].baselineCorrection
+            import odbAmplitude
+            session.odbs[name].amplitudes[name].baselineCorrection
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - BASELINE CORRECTION
+        - BASELINE CORRECTION
     """
 
     #: A sequence of Floats specifying the correction time interval end points. Possible values
@@ -26,14 +25,13 @@ class BaselineCorrection:
     def __init__(self, intervals: tuple = ()):
         """This method creates a BaselineCorrection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].amplitudes[name].BaselineCorrection
-            session.odbs[name].amplitudes[name].BaselineCorrection
+                mdb.models[name].amplitudes[name].BaselineCorrection
+                session.odbs[name].amplitudes[name].BaselineCorrection
 
         Parameters
         ----------

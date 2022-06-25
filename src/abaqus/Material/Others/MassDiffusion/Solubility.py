@@ -4,28 +4,27 @@ from abaqusConstants import *
 class Solubility:
     """The Solubility object specifies solubility.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].solubility
-        import odbMaterial
-        session.odbs[name].materials[name].solubility
+            import material
+            mdb.models[name].materials[name].solubility
+            import odbMaterial
+            session.odbs[name].materials[name].solubility
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Solubility.
-    - Temperature, if the data depend on temperature.
-    - Value of the first field variable, if the data depend on field variables.
-    - Value of the second field variable.
-    - Etc.
+        - Solubility.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - SOLUBILITY
+        - SOLUBILITY
     """
 
     def __init__(
@@ -33,14 +32,13 @@ class Solubility:
     ):
         """This method creates a Solubility object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].Solubility
-            session.odbs[name].materials[name].Solubility
+                mdb.models[name].materials[name].Solubility
+                session.odbs[name].materials[name].Solubility
 
         Parameters
         ----------

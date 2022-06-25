@@ -8,25 +8,24 @@ from .OdbMeshNodeArray import OdbMeshNodeArray
 class OdbSet:
     """The set objects are used to identify regions of a model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name].parts[name].elementSets[name]
-        session.odbs[name].parts[name].nodeSets[name]
-        session.odbs[name].parts[name].surfaces[name]
-        session.odbs[name].rootAssembly.elementSets[name]
-        session.odbs[name].rootAssembly.instances[name].elementSets[name]
-        session.odbs[name].rootAssembly.instances[name].nodeSets[name]
-        session.odbs[name].rootAssembly.instances[name].surfaces[name]
-        session.odbs[name].rootAssembly.nodeSets[name]
-        session.odbs[name].rootAssembly.surfaces[name]
-        session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.elementSets[name]
-        session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.nodeSets[name]
-        session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.surfaces[name]
+            import odbAccess
+            session.odbs[name].parts[name].elementSets[name]
+            session.odbs[name].parts[name].nodeSets[name]
+            session.odbs[name].parts[name].surfaces[name]
+            session.odbs[name].rootAssembly.elementSets[name]
+            session.odbs[name].rootAssembly.instances[name].elementSets[name]
+            session.odbs[name].rootAssembly.instances[name].nodeSets[name]
+            session.odbs[name].rootAssembly.instances[name].surfaces[name]
+            session.odbs[name].rootAssembly.nodeSets[name]
+            session.odbs[name].rootAssembly.surfaces[name]
+            session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.elementSets[name]
+            session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.nodeSets[name]
+            session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.surfaces[name]
     """
 
     #: A String specifying the name of the set and the repository key.
@@ -53,15 +52,14 @@ class OdbSet:
         instance-level sets) or from a sequence of arrays of OdbMeshNode objects (for
         assembly-level sets).
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[*name*].parts[*name*].NodeSet
-            session.odbs[*name*].rootAssembly.instances[*name*].NodeSet
-            session.odbs[*name*].rootAssembly.NodeSet
+                session.odbs[*name*].parts[*name*].NodeSet
+                session.odbs[*name*].rootAssembly.instances[*name*].NodeSet
+                session.odbs[*name*].rootAssembly.NodeSet
 
         Parameters
         ----------
@@ -81,15 +79,14 @@ class OdbSet:
     def NodeSetFromNodeLabels(self, name: str, nodeLabels: tuple):
         """This method creates a node set from a sequence of node labels.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[*name*].parts[*name*].NodeSet
-            session.odbs[*name*].rootAssembly.instances[*name*].NodeSet
-            session.odbs[*name*].rootAssembly.NodeSet
+                session.odbs[*name*].parts[*name*].NodeSet
+                session.odbs[*name*].rootAssembly.instances[*name*].NodeSet
+                session.odbs[*name*].rootAssembly.NodeSet
 
         Parameters
         ----------
@@ -112,15 +109,14 @@ class OdbSet:
         instance-level sets) or from a sequence of arrays of OdbMeshElement objects (for
         assembly-level sets).
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[*name*].parts[*name*].NodeSet
-            session.odbs[*name*].rootAssembly.instances[*name*].NodeSet
-            session.odbs[*name*].rootAssembly.NodeSet
+                session.odbs[*name*].parts[*name*].NodeSet
+                session.odbs[*name*].rootAssembly.instances[*name*].NodeSet
+                session.odbs[*name*].rootAssembly.NodeSet
 
         Parameters
         ----------
@@ -141,15 +137,14 @@ class OdbSet:
     def ElementSetFromElementLabels(self, name: str, elementLabels: tuple):
         """This method creates an element set from a sequence of element labels.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[*name*].parts[*name*].NodeSet
-            session.odbs[*name*].rootAssembly.instances[*name*].NodeSet
-            session.odbs[*name*].rootAssembly.NodeSet
+                session.odbs[*name*].parts[*name*].NodeSet
+                session.odbs[*name*].rootAssembly.instances[*name*].NodeSet
+                session.odbs[*name*].rootAssembly.NodeSet
 
         Parameters
         ----------
@@ -170,15 +165,14 @@ class OdbSet:
     def MeshSurface(self, name: str, meshSurfaces: tuple):
         """This method creates a surface from the element and side identifiers for the assembly.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[*name*].parts[*name*].NodeSet
-            session.odbs[*name*].rootAssembly.instances[*name*].NodeSet
-            session.odbs[*name*].rootAssembly.NodeSet
+                session.odbs[*name*].parts[*name*].NodeSet
+                session.odbs[*name*].rootAssembly.instances[*name*].NodeSet
+                session.odbs[*name*].rootAssembly.NodeSet
 
         Parameters
         ----------
@@ -213,15 +207,14 @@ class OdbSet:
     def MeshSurfaceFromElsets(self, name: str, elementSetSeq: tuple):
         """This method creates a mesh surface from a sequence of element sets.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[*name*].parts[*name*].NodeSet
-            session.odbs[*name*].rootAssembly.instances[*name*].NodeSet
-            session.odbs[*name*].rootAssembly.NodeSet
+                session.odbs[*name*].parts[*name*].NodeSet
+                session.odbs[*name*].rootAssembly.instances[*name*].NodeSet
+                session.odbs[*name*].rootAssembly.NodeSet
 
         Parameters
         ----------
@@ -243,15 +236,14 @@ class OdbSet:
     def MeshSurfaceFromLabels(self, name: str, surfaceLabels: tuple):
         """This method creates a mesh surface from a sequence of surface labels.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[*name*].parts[*name*].NodeSet
-            session.odbs[*name*].rootAssembly.instances[*name*].NodeSet
-            session.odbs[*name*].rootAssembly.NodeSet
+                session.odbs[*name*].parts[*name*].NodeSet
+                session.odbs[*name*].rootAssembly.instances[*name*].NodeSet
+                session.odbs[*name*].rootAssembly.NodeSet
 
         Parameters
         ----------

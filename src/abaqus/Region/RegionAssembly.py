@@ -18,14 +18,13 @@ class RegionAssembly(RegionAssemblyBase):
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
     created.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import assembly
-        mdb.models[name].rootAssembly
+            import assembly
+            mdb.models[name].rootAssembly
     """
 
     def Surface(
@@ -57,14 +56,13 @@ class RegionAssembly(RegionAssemblyBase):
         surface=mdb.models['Model-1'].parts['Part-1'].Surface(side1Faces=side1Faces,
         name='Surf-1')
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].Surface
-            mdb.models[name].rootAssembly.Surface
+                mdb.models[name].parts[name].Surface
+                mdb.models[name].rootAssembly.Surface
 
         Parameters
         ----------
@@ -235,14 +233,13 @@ class RegionAssembly(RegionAssemblyBase):
     ) -> Set:
         """This method creates a set from a sequence of objects in a model database.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].Set
-            mdb.models[name].rootAssembly.Set
+                mdb.models[name].parts[name].Set
+                mdb.models[name].rootAssembly.Set
 
         Parameters
         ----------
@@ -295,14 +292,13 @@ class RegionAssembly(RegionAssemblyBase):
     def Set(self, name: str, objectToCopy: Set) -> Set:
         """This method copies a set from an existing set.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].Set
-            mdb.models[name].rootAssembly.Set
+                mdb.models[name].parts[name].Set
+                mdb.models[name].rootAssembly.Set
 
         Parameters
         ----------

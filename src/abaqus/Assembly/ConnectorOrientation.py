@@ -7,16 +7,15 @@ class ConnectorOrientation:
     """The ConnectorOrientation object is used to assign a connector orientation to a
     connector.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import assembly
-        mdb.models[name].rootAssembly.connectorOrientations[i]
-        import odbAccess
-        session.odbs[name].rootAssembly.connectorOrientations[i]
+            import assembly
+            mdb.models[name].rootAssembly.connectorOrientations[i]
+            import odbAccess
+            session.odbs[name].rootAssembly.connectorOrientations[i]
     """
 
     region: Set
@@ -72,14 +71,13 @@ class ConnectorOrientation:
     ):
         """This method creates a ConnectorOrientation object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].rootAssembly.ConnectorOrientation
-            session.odbs[name].rootAssembly.ConnectorOrientation
+                mdb.models[name].rootAssembly.ConnectorOrientation
+                session.odbs[name].rootAssembly.ConnectorOrientation
 
         Parameters
         ----------

@@ -23,15 +23,14 @@ from ..Region.Surface import Surface
 class PartInstance:
     """A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object is an instance of a Part object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name]
-        mdb.models[name].rootAssembly.instances[name]
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name]
+            mdb.models[name].rootAssembly.instances[name]
     """
 
     #: A String specifying the repository key. The name must be a valid Abaqus object name.
@@ -140,13 +139,12 @@ class PartInstance:
     ):
         """This method creates a PartInstance object and puts it into the instances repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].rootAssembly.Instance
+                mdb.models[name].rootAssembly.Instance
 
         Parameters
         ----------
@@ -194,13 +192,12 @@ class PartInstance:
         """This method creates a PartInstance in the instances repository after subtracting or
         cutting the geometries of a group of part instances from that of a base part instance.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].rootAssembly.Instance
+                mdb.models[name].rootAssembly.Instance
 
         Parameters
         ----------
@@ -237,13 +234,12 @@ class PartInstance:
         """This method creates a PartInstance in the instances repository after merging two or more
         part instances.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].rootAssembly.Instance
+                mdb.models[name].rootAssembly.Instance
 
         Parameters
         ----------
@@ -296,13 +292,12 @@ class PartInstance:
         """This method creates multiple PartInstance objects in a linear pattern and puts them into
         the instances repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].rootAssembly.Instance
+                mdb.models[name].rootAssembly.Instance
 
         Parameters
         ----------
@@ -345,13 +340,12 @@ class PartInstance:
         """This method creates multiple PartInstance objects in a radial pattern and puts them into
         the instances repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].rootAssembly.Instance
+                mdb.models[name].rootAssembly.Instance
 
         Parameters
         ----------

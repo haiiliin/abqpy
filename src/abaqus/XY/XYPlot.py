@@ -17,14 +17,13 @@ class XYPlot(XYPlotBase):
     ) -> AreaStyle:
         """This method creates an AreaStyle.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.AreaStyle
-            xyPlot.AreaStyle
+                session.AreaStyle
+                xyPlot.AreaStyle
 
         Parameters
         ----------
@@ -59,14 +58,13 @@ class XYPlot(XYPlotBase):
     ) -> LineStyle:
         """This method creates a LineStyle.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.LineStyle
-            xyPlot.LineStyle
+                session.LineStyle
+                xyPlot.LineStyle
 
         Parameters
         ----------
@@ -100,14 +98,13 @@ class XYPlot(XYPlotBase):
     def QuantityType(label: str = "", type: SymbolicConstant = None) -> QuantityType:
         """This method creates a QuantityType object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.QuantityType
-            xyPlot.QuantityType
+                session.QuantityType
+                xyPlot.QuantityType
 
         Parameters
         ----------
@@ -208,14 +205,13 @@ class XYPlot(XYPlotBase):
     ) -> SymbolStyle:
         """This method creates a SymbolStyle object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.SymbolStyle
-            xyPlot.SymbolStyle
+                session.SymbolStyle
+                xyPlot.SymbolStyle
 
         Parameters
         ----------
@@ -264,14 +260,13 @@ class XYPlot(XYPlotBase):
     ) -> TextStyle:
         """This method creates a TextStyle.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.TextStyle
-            xyPlot.TextStyle
+                session.TextStyle
+                xyPlot.TextStyle
 
         Parameters
         ----------
@@ -316,14 +311,13 @@ class XYPlot(XYPlotBase):
     ) -> XYData:
         """This method creates an XYData object from a sequence of **X - Y** data pairs.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.XYData
-            xyPlot.XYData
+                session.XYData
+                xyPlot.XYData
 
         Parameters
         ----------
@@ -371,15 +365,14 @@ class XYPlot(XYPlotBase):
     def XYData(objectToCopy: XYData) -> XYData:
         """This method creates an XYData object by copying an existing XYData object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].userData.XYData
-            session.XYData
-            xyPlot.XYData
+                session.odbs[name].userData.XYData
+                session.XYData
+                xyPlot.XYData
 
         Parameters
         ----------

@@ -7,18 +7,17 @@ class InitialState(PredefinedField):
     """The InitialState object stores the data for an initial state predefined field.
     The InitialState object is derived from the PredefinedField object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].predefinedFields[name]
+            import load
+            mdb.models[name].predefinedFields[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - INSTANCE
+        - INSTANCE
     """
 
     #: A String specifying the repository key.
@@ -56,13 +55,12 @@ class InitialState(PredefinedField):
     ):
         """This method creates an InitialState predefined field object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].InitialState
+                mdb.models[name].InitialState
 
         Parameters
         ----------

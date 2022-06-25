@@ -10,14 +10,13 @@ class DisplacementBC(BoundaryCondition):
     condition.
     The DisplacementBC object is derived from the BoundaryCondition object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].boundaryConditions[name]
+            import load
+            mdb.models[name].boundaryConditions[name]
     """
 
     #: A String specifying the boundary condition repository key.
@@ -75,13 +74,12 @@ class DisplacementBC(BoundaryCondition):
     ):
         """This method creates a DisplacementBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].DisplacementBC
+                mdb.models[name].DisplacementBC
 
         Parameters
         ----------

@@ -7,13 +7,12 @@ from ..Model.ModelBase import ModelBase
 class TableCollectionModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name]
+            mdb.models[name]
     """
 
     def EventSeries(
@@ -29,13 +28,12 @@ class TableCollectionModel(ModelBase):
     ) -> EventSeries:
         """This method creates an EventSeries object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].EventSeriesData
+                mdb.models[name].EventSeriesData
 
         Parameters
         ----------
@@ -84,13 +82,12 @@ class TableCollectionModel(ModelBase):
     ) -> EventSeriesType:
         """This method creates an EventSeriesType object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].EventSeriesType
+                mdb.models[name].EventSeriesType
 
         Parameters
         ----------

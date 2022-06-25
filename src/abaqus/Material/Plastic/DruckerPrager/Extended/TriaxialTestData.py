@@ -1,25 +1,24 @@
 class TriaxialTestData:
     """The TriaxialTestData object provides triaxial test data.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].druckerPrager.triaxialTestData
-        import odbMaterial
-        session.odbs[name].materials[name].druckerPrager.triaxialTestData
+            import material
+            mdb.models[name].materials[name].druckerPrager.triaxialTestData
+            import odbMaterial
+            session.odbs[name].materials[name].druckerPrager.triaxialTestData
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Sign and magnitude of confining stress, :math:`\sigma_1=\sigma_2`.
-    - Sign and magnitude of the stress in loading direction, :math:`\sigma_3`.
+        - Sign and magnitude of confining stress, :math:`\sigma_1=\sigma_2`.
+        - Sign and magnitude of the stress in loading direction, :math:`\sigma_3`.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - TRIAXIAL TEST DATA
+        - TRIAXIAL TEST DATA
     """
 
     def __init__(
@@ -27,14 +26,13 @@ class TriaxialTestData:
     ):
         """This method creates a TriaxialTestData object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].druckerPrager.TriaxialTestData
-            session.odbs[name].materials[name].druckerPrager.TriaxialTestData
+                mdb.models[name].materials[name].druckerPrager.TriaxialTestData
+                session.odbs[name].materials[name].druckerPrager.TriaxialTestData
 
         Parameters
         ----------

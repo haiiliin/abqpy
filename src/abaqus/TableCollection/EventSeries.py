@@ -7,18 +7,17 @@ class EventSeries:
     After EventSeries is instantiated, making changes to EventSeriesType may lead to data
     corruption.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name].eventSeriesDatas[name]
+            mdb.models[name].eventSeriesDatas[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - EVENT SERIES TYPE
-            - EVENT SERIES
+        - EVENT SERIES TYPE
+                - EVENT SERIES
     """
 
     #: A String specifying the repository key.
@@ -60,13 +59,12 @@ class EventSeries:
     ):
         """This method creates an EventSeries object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].EventSeriesData
+                mdb.models[name].EventSeriesData
 
         Parameters
         ----------

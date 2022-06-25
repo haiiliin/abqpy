@@ -1,33 +1,31 @@
 class JouleHeatFraction:
     """The JouleHeatFraction object defines the fraction of electric energy released as heat.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].jouleHeatFraction
-        import odbMaterial
-        session.odbs[name].materials[name].jouleHeatFraction
+            import material
+            mdb.models[name].materials[name].jouleHeatFraction
+            import odbMaterial
+            session.odbs[name].materials[name].jouleHeatFraction
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - JOULE HEAT FRACTION
+        - JOULE HEAT FRACTION
     """
 
     def __init__(self, fraction: float = 1):
         """This method creates a JouleHeatFraction object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].JouleHeatFraction
-            session.odbs[name].materials[name].JouleHeatFraction
+                mdb.models[name].materials[name].JouleHeatFraction
+                session.odbs[name].materials[name].JouleHeatFraction
 
         Parameters
         ----------

@@ -8,20 +8,19 @@ class ContourIntegral(Crack):
     assembly regions are supported.
     The ContourIntegral object is derived from the Crack object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].engineeringFeatures.cracks[name]
-        import assembly
-        mdb.models[name].rootAssembly.engineeringFeatures.cracks[name]
+            import part
+            mdb.models[name].parts[name].engineeringFeatures.cracks[name]
+            import assembly
+            mdb.models[name].rootAssembly.engineeringFeatures.cracks[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONTOUR INTEGRAL
+        - CONTOUR INTEGRAL
     """
 
     #: A Boolean specifying whether the crack is suppressed or not. The default value is OFF.
@@ -103,14 +102,13 @@ class ContourIntegral(Crack):
         for parts and for the assembly, ContourIntegral objects are currently supported only
         under the assembly.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].engineeringFeatures.ContourIntegral
-            mdb.models[name].rootAssembly.engineeringFeatures.ContourIntegral
+                mdb.models[name].parts[name].engineeringFeatures.ContourIntegral
+                mdb.models[name].rootAssembly.engineeringFeatures.ContourIntegral
 
         Parameters
         ----------

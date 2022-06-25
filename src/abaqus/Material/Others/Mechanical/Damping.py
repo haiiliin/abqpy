@@ -1,20 +1,19 @@
 class Damping:
     """The Damping object specifies material damping.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].damping
-        import odbMaterial
-        session.odbs[name].materials[name].damping
+            import material
+            mdb.models[name].materials[name].damping
+            import odbMaterial
+            session.odbs[name].materials[name].damping
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - DAMPING
+        - DAMPING
     """
 
     def __init__(
@@ -26,14 +25,13 @@ class Damping:
     ):
         """This method creates a Damping object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].Damping
-            session.odbs[name].materials[name].Damping
+                mdb.models[name].materials[name].Damping
+                session.odbs[name].materials[name].Damping
 
         Parameters
         ----------

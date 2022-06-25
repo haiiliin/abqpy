@@ -6,14 +6,13 @@ class BeadPointSymmetry(GeometricRestriction):
     """The BeadPointSymmetry object defines a point symmetry geometric restriction.
     The BeadPointSymmetry object is derived from the GeometricRestriction object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import optimization
-        mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
+            import optimization
+            mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
 
     #: A String specifying the geometric restriction repository key.
@@ -30,13 +29,12 @@ class BeadPointSymmetry(GeometricRestriction):
     def __init__(self, name: str, region: Region, csys: int = None):
         """This method creates a BeadPointSymmetry object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      mdb.models[name].optimizationTasks[name].BeadPointSymmetry
+                mdb.models[name].optimizationTasks[name].BeadPointSymmetry
 
         Parameters
         ----------

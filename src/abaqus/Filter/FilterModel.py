@@ -9,13 +9,12 @@ from ..Model.ModelBase import ModelBase
 class FilterModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name]
+            mdb.models[name]
     """
 
     def ButterworthFilter(
@@ -30,14 +29,13 @@ class FilterModel(ModelBase):
     ) -> ButterworthFilter:
         """This method creates a ButterworthFilter object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ButterworthFilter
-            session.odbs[name].ButterworthFilter
+                mdb.models[name].ButterworthFilter
+                session.odbs[name].ButterworthFilter
 
         Parameters
         ----------
@@ -93,14 +91,13 @@ class FilterModel(ModelBase):
     ) -> Chebyshev1Filter:
         """This method creates a Chebyshev1Filter object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Chebyshev1Filter
-            session.odbs[name].Chebyshev1Filter
+                mdb.models[name].Chebyshev1Filter
+                session.odbs[name].Chebyshev1Filter
 
         Parameters
         ----------
@@ -166,14 +163,13 @@ class FilterModel(ModelBase):
     ) -> Chebyshev2Filter:
         """This method creates a Chebyshev2Filter object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Chebyshev2Filter
-            session.odbs[name].Chebyshev2Filter
+                mdb.models[name].Chebyshev2Filter
+                session.odbs[name].Chebyshev2Filter
 
         Parameters
         ----------
@@ -238,14 +234,13 @@ class FilterModel(ModelBase):
     ) -> OperatorFilter:
         """This method creates an OperatorFilter object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].OperatorFilter
-            session.odbs[name].OperatorFilter
+                mdb.models[name].OperatorFilter
+                session.odbs[name].OperatorFilter
 
         Parameters
         ----------

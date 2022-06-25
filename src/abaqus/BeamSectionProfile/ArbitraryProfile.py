@@ -5,32 +5,31 @@ class ArbitraryProfile(Profile):
     """The ArbitraryProfile object defines the properties of an arbitrary profile.
     The ArbitraryProfile object is derived from the Profile object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].profiles[name]
-        import odbSection
-        session.odbs[name].profiles[name]
+            import section
+            mdb.models[name].profiles[name]
+            import odbSection
+            session.odbs[name].profiles[name]
 
-    The table data for this object are:
-    The first sequence in the table specifies the following:
-    
-    - 1-coordinate of the first point defining the profile.
-    - 2-coordinate of the first point defining the profile.
+        The table data for this object are:
+        The first sequence in the table specifies the following:
         
-    All other sequences in the table specify the following:
-    
-    - 1-coordinate of the next point defining the profile.
-    - 2-coordinate of the next point defining the profile.
-    - The thickness of the segment ending at that point.
+        - 1-coordinate of the first point defining the profile.
+        - 2-coordinate of the first point defining the profile.
+            
+        All other sequences in the table specify the following:
+        
+        - 1-coordinate of the next point defining the profile.
+        - 2-coordinate of the next point defining the profile.
+        - The thickness of the segment ending at that point.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - BEAM SECTION
+        - BEAM SECTION
     """
 
     #: A String specifying the repository key.
@@ -42,14 +41,13 @@ class ArbitraryProfile(Profile):
     def __init__(self, name: str, table: tuple):
         """This method creates a ArbitraryProfile object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ArbitraryProfile
-            session.odbs[name].ArbitraryProfile
+                mdb.models[name].ArbitraryProfile
+                session.odbs[name].ArbitraryProfile
 
         Parameters
         ----------

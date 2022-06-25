@@ -5,34 +5,33 @@ class Sorption:
     r"""The Sorption object defines absorption and exsorption behaviors of a partially saturated
     porous medium in the analysis of coupled wetting liquid flow and porous medium stress.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].sorption
-        import odbMaterial
-        session.odbs[name].materials[name].sorption
+            import material
+            mdb.models[name].materials[name].sorption
+            import odbMaterial
+            session.odbs[name].materials[name].sorption
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **lawAbsorption** = TABULAR or **lawExsorption** = TABULAR, the **absorptionTable** and **exsorptionTable** data respectively specify the following:
+        - If **lawAbsorption** = TABULAR or **lawExsorption** = TABULAR, the **absorptionTable** and **exsorptionTable** data respectively specify the following:
 
-        - Pore pressure, :math:`u_{w}`.
-        - Saturation, :math:`\boldsymbol{S}`.
+            - Pore pressure, :math:`u_{w}`.
+            - Saturation, :math:`\boldsymbol{S}`.
 
-    - If **lawAbsorption** = LOG or **lawExsorption** = LOG, the **absorptionTable** and **exsorptionTable** data respectively specify the following:
+        - If **lawAbsorption** = LOG or **lawExsorption** = LOG, the **absorptionTable** and **exsorptionTable** data respectively specify the following:
 
-        - :math:`A`.
-        - :math:`B`.
-        - :math:`\boldsymbol{s}_{0}`.
-        - :math:`\boldsymbol{s}_{1}`.
+            - :math:`A`.
+            - :math:`B`.
+            - :math:`\boldsymbol{s}_{0}`.
+            - :math:`\boldsymbol{s}_{1}`.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - SORPTION
+        - SORPTION
     """
 
     def __init__(
@@ -46,14 +45,13 @@ class Sorption:
     ):
         r"""This method creates a Sorption object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].Sorption
-            session.odbs[name].materials[name].Sorption
+                mdb.models[name].materials[name].Sorption
+                session.odbs[name].materials[name].Sorption
 
         Parameters
         ----------

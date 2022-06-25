@@ -4,14 +4,13 @@ from abaqusConstants import *
 class OdbDiagnosticAttempt:
     """The OdbDiagnosticAttempt object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.odbData[name].diagnosticData.steps[i].increments[i].attempts[i]
+            import visualization
+            session.odbData[name].diagnosticData.steps[i].increments[i].attempts[i]
     """
 
     #: A boolean specifying the state of Auto-stablilization. This attribute is read-only.

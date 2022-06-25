@@ -7,14 +7,13 @@ class UserDataBase:
     """The UserData object contains user-defined XY data. The UserData object has no
     constructor; it is created automatically when an Odb object is created.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name].userData
+            import odbAccess
+            session.odbs[name].userData
     """
 
     #: A String specifying the repository key.
@@ -76,13 +75,12 @@ class UserDataBase:
     ):
         """This method creates an XYData object from a sequence of **X - Y** data pairs.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].userData.XYData
+                session.odbs[name].userData.XYData
 
         Parameters
         ----------

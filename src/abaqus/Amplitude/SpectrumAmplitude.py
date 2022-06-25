@@ -7,20 +7,19 @@ class SpectrumAmplitude(Amplitude):
     velocity, or acceleration to be used in a response spectrum analysis.
     The SpectrumAmplitude object is derived from the Amplitude object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import amplitude
-        mdb.models[name].amplitudes[name]
-        import odbAmplitude
-        session.odbs[name].amplitudes[name]
+            import amplitude
+            mdb.models[name].amplitudes[name]
+            import odbAmplitude
+            session.odbs[name].amplitudes[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - SPECTRUM
+        - SPECTRUM
     """
 
     #: A String specifying the repository key.
@@ -88,14 +87,13 @@ class SpectrumAmplitude(Amplitude):
     ):
         """This method creates a SpectrumAmplitude object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SpectrumAmplitude
-            session.odbs[name].SpectrumAmplitude
+                mdb.models[name].SpectrumAmplitude
+                session.odbs[name].SpectrumAmplitude
 
         Parameters
         ----------

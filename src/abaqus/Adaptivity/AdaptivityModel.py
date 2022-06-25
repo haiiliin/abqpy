@@ -15,13 +15,12 @@ from ..Region.Region import Region
 class AdaptivityModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name]
+            mdb.models[name]
     """
 
     def adaptiveRemesh(self, odb: Odb):
@@ -53,13 +52,12 @@ class AdaptivityModel(ModelBase):
         the AdaptiveMeshConstraint object are common to all objects derived from the
         AdaptiveMeshConstraint object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].AdaptiveMeshConstraint
+                mdb.models[name].AdaptiveMeshConstraint
 
         Parameters
         ----------
@@ -102,13 +100,12 @@ class AdaptivityModel(ModelBase):
     ) -> AdaptiveMeshControl:
         """This method creates an AdaptiveMeshControl object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].AdaptiveMeshConstraint
+                mdb.models[name].AdaptiveMeshConstraint
 
         Parameters
         ----------
@@ -200,13 +197,12 @@ class AdaptivityModel(ModelBase):
     ) -> DisplacementAdaptiveMeshConstraint:
         """This method creates a DisplacementAdaptiveMeshConstraint object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].AdaptiveMeshConstraint
+                mdb.models[name].AdaptiveMeshConstraint
 
         Parameters
         ----------
@@ -300,13 +296,12 @@ class AdaptivityModel(ModelBase):
     ) -> RemeshingRule:
         """This method creates a RemeshingRule object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].AdaptiveMeshConstraint
+                mdb.models[name].AdaptiveMeshConstraint
 
         Parameters
         ----------
@@ -420,13 +415,12 @@ class AdaptivityModel(ModelBase):
     ) -> VelocityAdaptiveMeshConstraint:
         """This method creates a VelocityAdaptiveMeshConstraint object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].AdaptiveMeshConstraint
+                mdb.models[name].AdaptiveMeshConstraint
 
         Parameters
         ----------

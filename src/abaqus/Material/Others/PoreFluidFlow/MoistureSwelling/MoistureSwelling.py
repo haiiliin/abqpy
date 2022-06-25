@@ -4,25 +4,24 @@ from ....Ratios import Ratios
 class MoistureSwelling:
     r"""The MoistureSwelling object defines moisture-driven swelling.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].moistureSwelling
-        import odbMaterial
-        session.odbs[name].materials[name].moistureSwelling
+            import material
+            mdb.models[name].materials[name].moistureSwelling
+            import odbMaterial
+            session.odbs[name].materials[name].moistureSwelling
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Volumetric moisture swelling strain, :math:`\varepsilon^{m s}`.
-    - Saturation, :math:`s`. This value must lie in the range :math:`0.0 \leq s \leq 1.0`.
+        - Volumetric moisture swelling strain, :math:`\varepsilon^{m s}`.
+        - Saturation, :math:`s`. This value must lie in the range :math:`0.0 \leq s \leq 1.0`.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - MOISTURE SWELLING
+        - MOISTURE SWELLING
     """
 
     #: A :py:class:`~abaqus.Material.Ratios.Ratios` object.
@@ -31,14 +30,13 @@ class MoistureSwelling:
     def __init__(self, table: tuple):
         """This method creates a MoistureSwelling object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].MoistureSwelling
-            session.odbs[name].materials[name].MoistureSwelling
+                mdb.models[name].materials[name].MoistureSwelling
+                session.odbs[name].materials[name].MoistureSwelling
 
         Parameters
         ----------

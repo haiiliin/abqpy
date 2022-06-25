@@ -5,20 +5,19 @@ class EulerianSection(Section):
     """The EulerianSection object defines the properties of a Eulerian section.
     The EulerianSection object is derived from the Section object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].sections[name]
-        import odbSection
-        session.odbs[name].sections[name]
+            import section
+            mdb.models[name].sections[name]
+            import odbSection
+            session.odbs[name].sections[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - EULERIAN SECTION
+        - EULERIAN SECTION
     """
 
     #: A String specifying the repository key.
@@ -31,14 +30,13 @@ class EulerianSection(Section):
     def __init__(self, name: str, data: str):
         """This method creates a EulerianSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].EulerianSection
-            session.odbs[name].EulerianSection
+                mdb.models[name].EulerianSection
+                session.odbs[name].EulerianSection
 
         Parameters
         ----------

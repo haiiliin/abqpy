@@ -3,14 +3,13 @@ class SubstructureGenerateFrequency:
     dynamic analysis. These modes are selected from the specified frequency range including
     the frequency boundary.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name].frequencyRange[i]
+            import step
+            mdb.models[name].steps[name].frequencyRange[i]
     """
 
     #: A Float specifying the lower limit of the frequency range, in cycles/time.

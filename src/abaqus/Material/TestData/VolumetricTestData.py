@@ -4,41 +4,40 @@ from abaqusConstants import *
 class VolumetricTestData:
     r"""The VolumetricTestData object provides volumetric test data.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].hyperelastic.volumetricTestData
-        mdb.models[name].materials[name].hyperfoam.volumetricTestData
-        mdb.models[name].materials[name].viscoelastic.volumetricTestData
-        import odbMaterial
-        session.odbs[name].materials[name].hyperelastic.volumetricTestData
-        session.odbs[name].materials[name].hyperfoam.volumetricTestData
-        session.odbs[name].materials[name].viscoelastic.volumetricTestData
+            import material
+            mdb.models[name].materials[name].hyperelastic.volumetricTestData
+            mdb.models[name].materials[name].hyperfoam.volumetricTestData
+            mdb.models[name].materials[name].viscoelastic.volumetricTestData
+            import odbMaterial
+            session.odbs[name].materials[name].hyperelastic.volumetricTestData
+            session.odbs[name].materials[name].hyperfoam.volumetricTestData
+            session.odbs[name].materials[name].viscoelastic.volumetricTestData
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - For a hyperelastic or hyperfoam material model, the table data specify the following:
-    
-        - Pressure, :math:`p`.
-        - Volume ratio, :math:`J` (current volume/original volume).
-    - For a viscoelastic material model, the values depend on the value of the **time** member of the 
-      :py:class:`~abaqus.Material.Elastic.HyperElastic.ViscoElastic.Viscoelastic.Viscoelastic` object.
-        - If **time** = RELAXATION_TEST_DATA, the table data specify the following:
+        - For a hyperelastic or hyperfoam material model, the table data specify the following:
         
-            - Normalized volumetric (bulk) modulus :math:`k_{R}(t), \quad\left(0 \leq k_{R}(t) \leq 1\right)`
-            - Time :math:`t (t>0)`.
-        - If **time** = CREEP_TEST_DATA, the table data specify the following:
-        
-            - Normalized volumetric (bulk) compliance :math:`j_{K}(t), \quad\left(j_{K}(t) \geq 1\right)`.
-            - Time :math:`t(t>0)`
+            - Pressure, :math:`p`.
+            - Volume ratio, :math:`J` (current volume/original volume).
+        - For a viscoelastic material model, the values depend on the value of the **time** member of the 
+          :py:class:`~abaqus.Material.Elastic.HyperElastic.ViscoElastic.Viscoelastic.Viscoelastic` object.
+            - If **time** = RELAXATION_TEST_DATA, the table data specify the following:
+            
+                - Normalized volumetric (bulk) modulus :math:`k_{R}(t), \quad\left(0 \leq k_{R}(t) \leq 1\right)`
+                - Time :math:`t (t>0)`.
+            - If **time** = CREEP_TEST_DATA, the table data specify the following:
+            
+                - Normalized volumetric (bulk) compliance :math:`j_{K}(t), \quad\left(j_{K}(t) \geq 1\right)`.
+                - Time :math:`t(t>0)`
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - VOLUMETRIC TEST DATA
+        - VOLUMETRIC TEST DATA
     """
 
     def __init__(
@@ -51,18 +50,17 @@ class VolumetricTestData:
     ):
         """This method creates a VolumetricTestData object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].hyperelastic.VolumetricTestData
-            mdb.models[name].materials[name].hyperfoam.VolumetricTestData
-            mdb.models[name].materials[name].viscoelastic.VolumetricTestData
-            session.odbs[name].materials[name].hyperelastic.VolumetricTestData
-            session.odbs[name].materials[name].hyperfoam.VolumetricTestData
-            session.odbs[name].materials[name].viscoelastic.VolumetricTestData
+                mdb.models[name].materials[name].hyperelastic.VolumetricTestData
+                mdb.models[name].materials[name].hyperfoam.VolumetricTestData
+                mdb.models[name].materials[name].viscoelastic.VolumetricTestData
+                session.odbs[name].materials[name].hyperelastic.VolumetricTestData
+                session.odbs[name].materials[name].hyperfoam.VolumetricTestData
+                session.odbs[name].materials[name].viscoelastic.VolumetricTestData
 
         Parameters
         ----------

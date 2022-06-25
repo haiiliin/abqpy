@@ -1,18 +1,17 @@
 class Radiation:
     """The Radiation object specifies radiation for a contact interaction property.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactionProperties[name].radiation
+            import interaction
+            mdb.models[name].interactionProperties[name].radiation
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - GAP RADIATION
+        - GAP RADIATION
     """
 
     #: A Float specifying the emissivity of the main surface.
@@ -28,13 +27,12 @@ class Radiation:
     def __init__(self, mainEmissivity: float, secondaryEmissivity: float, table: tuple):
         """This method creates a Radiation object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].interactionProperties[name].Radiation
+                mdb.models[name].interactionProperties[name].Radiation
 
         Parameters
         ----------

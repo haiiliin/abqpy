@@ -23,19 +23,18 @@ class EmagTimeHarmonicStep(AnalysisStep):
     system to harmonic excitation of the model.
     The EmagTimeHarmonicStep object is derived from the AnalysisStep object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name]
+            import step
+            mdb.models[name].steps[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - ELECTROMAGNETIC TIME HARMONIC
-            - STEP
+        - ELECTROMAGNETIC TIME HARMONIC
+                - STEP
     """
 
     #: A SymbolicConstant specifying the type of matrix storage. Possible values are SYMMETRIC,
@@ -169,13 +168,12 @@ class EmagTimeHarmonicStep(AnalysisStep):
     ):
         """This method creates a EmagTimeHarmonicStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].EmagTimeHarmonicStep
+                mdb.models[name].EmagTimeHarmonicStep
 
         Parameters
         ----------

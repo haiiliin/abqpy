@@ -8,18 +8,17 @@ class PressurePenetration(Interaction):
     surface-to-surface contact.
     The PressurePenetration object is derived from the Interaction object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactions[name]
+            import interaction
+            mdb.models[name].interactions[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - PRESSURE PENETRATION
+        - PRESSURE PENETRATION
     """
 
     #: A String specifying the repository key.
@@ -54,13 +53,12 @@ class PressurePenetration(Interaction):
     ):
         """This method creates a PressurePenetration object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].PressurePenetration
+                mdb.models[name].PressurePenetration
 
         Parameters
         ----------

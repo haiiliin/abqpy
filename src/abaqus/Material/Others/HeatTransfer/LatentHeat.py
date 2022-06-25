@@ -1,39 +1,37 @@
 class LatentHeat:
     """The LatentHeat object specifies a material's latent heat.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].latentHeat
-        import odbMaterial
-        session.odbs[name].materials[name].latentHeat
+            import material
+            mdb.models[name].materials[name].latentHeat
+            import odbMaterial
+            session.odbs[name].materials[name].latentHeat
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Latent heat per unit mass.
-    - Solidus temperature.
-    - Liquidus temperature.
+        - Latent heat per unit mass.
+        - Solidus temperature.
+        - Liquidus temperature.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - LATENT HEAT
+        - LATENT HEAT
     """
 
     def __init__(self, table: tuple):
         """This method creates a LatentHeat object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].LatentHeat
-            session.odbs[name].materials[name].LatentHeat
+                mdb.models[name].materials[name].LatentHeat
+                session.odbs[name].materials[name].LatentHeat
 
         Parameters
         ----------

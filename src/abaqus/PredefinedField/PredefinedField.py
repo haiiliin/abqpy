@@ -10,14 +10,13 @@ class PredefinedField:
     repository of the Model object. An instance of any PredefinedFieldState object can be
     obtained through the predefined field repository of the Step object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].predefinedFields[name]
+            import load
+            mdb.models[name].predefinedFields[name]
     """
 
     #: A String specifying the repository key.

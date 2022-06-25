@@ -9,13 +9,12 @@ class AnimationSession(SessionBase):
     """The following commands operate on Session objects. For more information about the
     Session object, see Session object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import animation
+            import animation
     """
 
     def writeImageAnimation(
@@ -51,13 +50,12 @@ class AnimationSession(SessionBase):
     ) -> Movie:
         """This method creates a Movie object from the contents of the specified file.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.Movie
+                session.Movie
 
         Parameters
         ----------

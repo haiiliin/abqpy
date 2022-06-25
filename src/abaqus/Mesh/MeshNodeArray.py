@@ -4,50 +4,48 @@ from .MeshNode import MeshNode
 class MeshNodeArray(list[MeshNode]):
     """The MeshNodeArray is a sequence of MeshNode objects.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].allInternalSets[name].nodes
-        mdb.models[name].parts[name].allInternalSurfaces[name].nodes
-        mdb.models[name].parts[name].allSets[name].nodes
-        mdb.models[name].parts[name].allSurfaces[name].nodes
-        mdb.models[name].parts[name].nodes
-        mdb.models[name].parts[name].retainedNodes
-        mdb.models[name].parts[name].sets[name].nodes
-        mdb.models[name].parts[name].surfaces[name].nodes
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name].nodes
-        mdb.models[name].rootAssembly.allInstances[name].sets[name].nodes
-        mdb.models[name].rootAssembly.allInstances[name].surfaces[name].nodes
-        mdb.models[name].rootAssembly.allInternalSets[name].nodes
-        mdb.models[name].rootAssembly.allInternalSurfaces[name].nodes
-        mdb.models[name].rootAssembly.allSets[name].nodes
-        mdb.models[name].rootAssembly.allSurfaces[name].nodes
-        mdb.models[name].rootAssembly.instances[name].nodes
-        mdb.models[name].rootAssembly.instances[name].sets[name].nodes
-        mdb.models[name].rootAssembly.instances[name].surfaces[name].nodes
-        mdb.models[name].rootAssembly.modelInstances[i].nodes
-        mdb.models[name].rootAssembly.modelInstances[i].sets[name].nodes
-        mdb.models[name].rootAssembly.modelInstances[i].surfaces[name].nodes
-        mdb.models[name].rootAssembly.nodes
-        mdb.models[name].rootAssembly.sets[name].nodes
-        mdb.models[name].rootAssembly.surfaces[name].nodes
+            import part
+            mdb.models[name].parts[name].allInternalSets[name].nodes
+            mdb.models[name].parts[name].allInternalSurfaces[name].nodes
+            mdb.models[name].parts[name].allSets[name].nodes
+            mdb.models[name].parts[name].allSurfaces[name].nodes
+            mdb.models[name].parts[name].nodes
+            mdb.models[name].parts[name].retainedNodes
+            mdb.models[name].parts[name].sets[name].nodes
+            mdb.models[name].parts[name].surfaces[name].nodes
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name].nodes
+            mdb.models[name].rootAssembly.allInstances[name].sets[name].nodes
+            mdb.models[name].rootAssembly.allInstances[name].surfaces[name].nodes
+            mdb.models[name].rootAssembly.allInternalSets[name].nodes
+            mdb.models[name].rootAssembly.allInternalSurfaces[name].nodes
+            mdb.models[name].rootAssembly.allSets[name].nodes
+            mdb.models[name].rootAssembly.allSurfaces[name].nodes
+            mdb.models[name].rootAssembly.instances[name].nodes
+            mdb.models[name].rootAssembly.instances[name].sets[name].nodes
+            mdb.models[name].rootAssembly.instances[name].surfaces[name].nodes
+            mdb.models[name].rootAssembly.modelInstances[i].nodes
+            mdb.models[name].rootAssembly.modelInstances[i].sets[name].nodes
+            mdb.models[name].rootAssembly.modelInstances[i].surfaces[name].nodes
+            mdb.models[name].rootAssembly.nodes
+            mdb.models[name].rootAssembly.sets[name].nodes
+            mdb.models[name].rootAssembly.surfaces[name].nodes
     """
 
     def __init__(self, nodes: list[MeshNode]):
         """This method creates a MeshNodeArray object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mesh.MeshNodeArray
+                mesh.MeshNodeArray
 
         Parameters
         ----------

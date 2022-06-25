@@ -8,13 +8,12 @@ class Mdb(AcisMdb, JobMdb):
     """The Mdb object is the high-level Abaqus model database. A model database stores models
     and analysis controls.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb
+            mdb
     """
 
     def Model(
@@ -32,13 +31,12 @@ class Mdb(AcisMdb, JobMdb):
     ) -> Model:
         """This method creates a Model object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.Model
+                mdb.Model
 
         Parameters
         ----------

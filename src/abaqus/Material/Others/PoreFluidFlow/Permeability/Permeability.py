@@ -6,45 +6,44 @@ from .VelocityDependence import VelocityDependence
 class Permeability:
     """The Permeability object defines permeability for pore fluid flow.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].permeability
-        import odbMaterial
-        session.odbs[name].materials[name].permeability
+            import material
+            mdb.models[name].materials[name].permeability
+            import odbMaterial
+            session.odbs[name].materials[name].permeability
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **type** = ISOTROPIC, the table data specify the following:
-    
-        - :math:`k`.
-        - Void ratio, :math:`e`.
-        - Temperature, if the data depend on temperature.
-    - If **type** = ORTHOTROPIC, the table data specify the following:
-    
-        - :math:`k_{11}`.
-        - :math:`k_{22}`.
-        - :math:`k_{33}`.
-        - Void ratio, :math:`e`.
-        - Temperature, if the data depend on temperature.
-    - If **type** = ANISOTROPIC, the table data specify the following:
-    
-        - :math:`k_{11}`.
-        - :math:`k_{12}`.
-        - :math:`k_{22}`.
-        - :math:`k_{13}`.
-        - :math:`k_{23}`.
-        - :math:`k_{33}`.
-        - Void ratio, :math:`e`.
-        - Temperature, if the data depend on temperature.
+        - If **type** = ISOTROPIC, the table data specify the following:
+        
+            - :math:`k`.
+            - Void ratio, :math:`e`.
+            - Temperature, if the data depend on temperature.
+        - If **type** = ORTHOTROPIC, the table data specify the following:
+        
+            - :math:`k_{11}`.
+            - :math:`k_{22}`.
+            - :math:`k_{33}`.
+            - Void ratio, :math:`e`.
+            - Temperature, if the data depend on temperature.
+        - If **type** = ANISOTROPIC, the table data specify the following:
+        
+            - :math:`k_{11}`.
+            - :math:`k_{12}`.
+            - :math:`k_{22}`.
+            - :math:`k_{13}`.
+            - :math:`k_{23}`.
+            - :math:`k_{33}`.
+            - Void ratio, :math:`e`.
+            - Temperature, if the data depend on temperature.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - PERMEABILITY
+        - PERMEABILITY
     """
 
     #: A :py:class:`~abaqus.Material.Others.PoreFluidFlow.Permeability.SaturationDependence.SaturationDependence` object specifying the dependence of the permeability of a
@@ -66,14 +65,13 @@ class Permeability:
     ):
         r"""This method creates a Permeability object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].Permeability
-            session.odbs[name].materials[name].Permeability
+                mdb.models[name].materials[name].Permeability
+                session.odbs[name].materials[name].Permeability
 
         Parameters
         ----------

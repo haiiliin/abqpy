@@ -5,28 +5,27 @@ from ...Ratios import Ratios
 class Swelling:
     """The Swelling object specifies time-dependent volumetric swelling for a material.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].swelling
-        import odbMaterial
-        session.odbs[name].materials[name].swelling
+            import material
+            mdb.models[name].materials[name].swelling
+            import odbMaterial
+            session.odbs[name].materials[name].swelling
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Volumetric swelling strain rate.
-    - Temperature, if the data depend on temperature.
-    - Value of the first field variable, if the data depend on field variables.
-    - Value of the second field variable.
-    - Etc.
+        - Volumetric swelling strain rate.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - SWELLING
+        - SWELLING
     """
 
     #: A :py:class:`~abaqus.Material.Ratios.Ratios` object.
@@ -41,14 +40,13 @@ class Swelling:
     ):
         """This method creates a Swelling object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].Swelling
-            session.odbs[name].materials[name].Swelling
+                mdb.models[name].materials[name].Swelling
+                session.odbs[name].materials[name].Swelling
 
         Parameters
         ----------

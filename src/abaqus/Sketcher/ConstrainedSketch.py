@@ -41,13 +41,12 @@ class ConstrainedSketch(
         """This method creates a ConstrainedSketch object. If the sketch cannot be created, the
         method returns None.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ConstrainedSketch
+                mdb.models[name].ConstrainedSketch
 
         Parameters
         ----------
@@ -81,13 +80,12 @@ class ConstrainedSketch(
         Sketch copy constructor strips the reference geometry from the copied sketch and sets
         the transform matrix to identity, creating a standalone copy.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ConstrainedSketch
+                mdb.models[name].ConstrainedSketch
 
         Parameters
         ----------
@@ -109,13 +107,12 @@ class ConstrainedSketch(
     def ConstrainedSketchFromGeometryFile(self, name: str, geometryFile: AcisFile):
         """This method creates a ConstrainedSketch object and places it in the sketches repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ConstrainedSketchFromGeometryFile
+                mdb.models[name].ConstrainedSketchFromGeometryFile
 
         Parameters
         ----------

@@ -1,20 +1,19 @@
 class EosCompaction:
     """The EosCompaction object specifies material eos compaction.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].eos.eosCompaction
-        import odbMaterial
-        session.odbs[name].materials[name].eos.eosCompaction
+            import material
+            mdb.models[name].materials[name].eos.eosCompaction
+            import odbMaterial
+            session.odbs[name].materials[name].eos.eosCompaction
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - EOS COMPACTION
+        - EOS COMPACTION
     """
 
     def __init__(
@@ -26,14 +25,13 @@ class EosCompaction:
     ):
         """This method creates an EosCompaction object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].eos.EosCompaction
-            session.odbs[name].materials[name].eos.EosCompaction
+                mdb.models[name].materials[name].eos.EosCompaction
+                session.odbs[name].materials[name].eos.EosCompaction
 
         Parameters
         ----------

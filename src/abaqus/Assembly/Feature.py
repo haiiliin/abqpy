@@ -8,13 +8,12 @@ class Feature(FeatureBase):
     """The following commands operate on Feature objects. For more information about the
     Feature object, see Feature object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import assembly
+            import assembly
     """
 
     @staticmethod
@@ -42,13 +41,12 @@ class Feature(FeatureBase):
         created between the source face and the closest target face. Subsequent lines are
         created between the target faces.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].rootAssembly.AttachmentLines
+                mdb.models[name].rootAssembly.AttachmentLines
 
         Parameters
         ----------
@@ -111,13 +109,12 @@ class Feature(FeatureBase):
         """This method moves an instance so that its selected face is coaxial with the selected
         face of a fixed instance.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].rootAssembly.AttachmentLines
+                mdb.models[name].rootAssembly.AttachmentLines
 
         Parameters
         ----------
@@ -144,13 +141,12 @@ class Feature(FeatureBase):
         """This method moves an instance so that a specified point is coincident with a specified
         point of a fixed instance.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].rootAssembly.AttachmentLines
+                mdb.models[name].rootAssembly.AttachmentLines
 
         Parameters
         ----------
@@ -175,13 +171,12 @@ class Feature(FeatureBase):
         """This method moves an instance so that its edge is parallel to an edge of a fixed
         instance.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].rootAssembly.AttachmentLines
+                mdb.models[name].rootAssembly.AttachmentLines
 
         Parameters
         ----------
@@ -216,13 +211,12 @@ class Feature(FeatureBase):
         """This method moves an instance so that its face is coincident with a face of a fixed
         instance.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].rootAssembly.AttachmentLines
+                mdb.models[name].rootAssembly.AttachmentLines
 
         Parameters
         ----------
@@ -254,13 +248,12 @@ class Feature(FeatureBase):
         """This method moves an instance so that its Datum coordinate system is parallel to a Datum
         coordinate system of a fixed instance.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].rootAssembly.AttachmentLines
+                mdb.models[name].rootAssembly.AttachmentLines
 
         Parameters
         ----------
@@ -285,13 +278,12 @@ class Feature(FeatureBase):
         """This method moves an instance so that its edge is parallel to an edge of a fixed
         instance.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].rootAssembly.AttachmentLines
+                mdb.models[name].rootAssembly.AttachmentLines
 
         Parameters
         ----------
@@ -321,13 +313,12 @@ class Feature(FeatureBase):
         """This method moves an instance so that its face is parallel to a face of a fixed
         instance.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].rootAssembly.AttachmentLines
+                mdb.models[name].rootAssembly.AttachmentLines
 
         Parameters
         ----------

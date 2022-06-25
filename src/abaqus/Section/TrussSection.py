@@ -5,20 +5,19 @@ class TrussSection(Section):
     """The TrussSection object defines the properties of a truss section.
     The TrussSection object is derived from the Section object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].sections[name]
-        import odbSection
-        session.odbs[name].sections[name]
+            import section
+            mdb.models[name].sections[name]
+            import odbSection
+            session.odbs[name].sections[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - SOLID SECTION
+        - SOLID SECTION
     """
 
     #: A String specifying the repository key.
@@ -34,14 +33,13 @@ class TrussSection(Section):
     def __init__(self, name: str, material: str, area: float = 1):
         """This method creates a TrussSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].TrussSection
-            session.odbs[name].TrussSection
+                mdb.models[name].TrussSection
+                session.odbs[name].TrussSection
 
         Parameters
         ----------

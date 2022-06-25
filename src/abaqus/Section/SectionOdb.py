@@ -29,14 +29,13 @@ class SectionOdb(OdbBase):
     ) -> AcousticInfiniteSection:
         """This method creates an AcousticInfiniteSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].AcousticInfiniteSection
-            session.odbs[name].AcousticInfiniteSection
+                mdb.models[name].AcousticInfiniteSection
+                session.odbs[name].AcousticInfiniteSection
 
         Parameters
         ----------
@@ -72,14 +71,13 @@ class SectionOdb(OdbBase):
     ) -> AcousticInterfaceSection:
         """This method creates an AcousticInterfaceSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].AcousticInterfaceSection
-            session.odbs[name].AcousticInterfaceSection
+                mdb.models[name].AcousticInterfaceSection
+                session.odbs[name].AcousticInterfaceSection
 
         Parameters
         ----------
@@ -135,14 +133,13 @@ class SectionOdb(OdbBase):
     ) -> BeamSection:
         """This method creates a BeamSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].BeamSection
-            session.odbs[name].BeamSection
+                mdb.models[name].BeamSection
+                session.odbs[name].BeamSection
 
         Parameters
         ----------
@@ -282,14 +279,13 @@ class SectionOdb(OdbBase):
     ) -> CohesiveSection:
         """This method creates a CohesiveSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].CohesiveSection
-            session.odbs[name].CohesiveSection
+                mdb.models[name].CohesiveSection
+                session.odbs[name].CohesiveSection
 
         Parameters
         ----------
@@ -355,15 +351,14 @@ class SectionOdb(OdbBase):
     ) -> CompositeShellSection:
         """This method creates a CompositeShellSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].compositeLayups[i].CompositeShellSection
-            mdb.models[name].CompositeShellSection
-            session.odbs[name].CompositeShellSection
+                mdb.models[name].parts[name].compositeLayups[i].CompositeShellSection
+                mdb.models[name].CompositeShellSection
+                session.odbs[name].CompositeShellSection
 
         Parameters
         ----------
@@ -465,14 +460,13 @@ class SectionOdb(OdbBase):
     ) -> CompositeSolidSection:
         """This method creates a CompositeSolidSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].CompositeSolidSection
-            session.odbs[name].CompositeSolidSection
+                mdb.models[name].CompositeSolidSection
+                session.odbs[name].CompositeSolidSection
 
         Parameters
         ----------
@@ -521,14 +515,13 @@ class SectionOdb(OdbBase):
     ) -> ConnectorSection:
         """This method creates a ConnectorSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ConnectorSection
-            session.odbs[name].ConnectorSection
+                mdb.models[name].ConnectorSection
+                session.odbs[name].ConnectorSection
 
         Parameters
         ----------
@@ -646,14 +639,13 @@ class SectionOdb(OdbBase):
     def EulerianSection(self, name: str, data: str) -> EulerianSection:
         """This method creates a EulerianSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].EulerianSection
-            session.odbs[name].EulerianSection
+                mdb.models[name].EulerianSection
+                session.odbs[name].EulerianSection
 
         Parameters
         ----------
@@ -683,14 +675,13 @@ class SectionOdb(OdbBase):
     ) -> GasketSection:
         """This method creates a GasketSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].GasketSection
-            session.odbs[name].GasketSection
+                mdb.models[name].GasketSection
+                session.odbs[name].GasketSection
 
         Parameters
         ----------
@@ -750,14 +741,13 @@ class SectionOdb(OdbBase):
     ) -> GeneralStiffnessSection:
         """This method creates a GeneralStiffnessSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].GeneralStiffnessSection
-            session.odbs[name].GeneralStiffnessSection
+                mdb.models[name].GeneralStiffnessSection
+                session.odbs[name].GeneralStiffnessSection
 
         Parameters
         ----------
@@ -843,82 +833,81 @@ class SectionOdb(OdbBase):
     ) -> HomogeneousShellSection:
         """This method creates a HomogeneousShellSection object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
-            
+
             .. code-block:: python
-            
+
                 mdb.models[name].parts[name].compositeLayups[i].HomogeneousShellSection
-                mdb.models[name].HomogeneousShellSection
-                session.odbs[name].HomogeneousShellSection
-        
-        Parameters
-        ----------
-        name
-            A String specifying the repository key.
-        material
-            A String specifying the name of the section material.
-        thickness
-            A Float specifying the thickness of the section. The **thickness** argument applies only
-            when **thicknessType** = UNIFORM. The default value is 0.0.
-        numIntPts
-            An Int specifying the number of integration points to be used through the section.
-            Possible values are **numIntPts** >> 0. The default value is 5.To use the default settings
-            of the analysis products, set **numIntPts** to 5 if **integrationRule** = SIMPSON or set
-            **numIntPts** to 7 if **integrationRule** = GAUSS.
-        thicknessType
-            A SymbolicConstant specifying the distribution used for defining the thickness of the
-            elements. Possible values are UNIFORM, ANALYTICAL_FIELD, DISCRETE_FIELD,
-            NODAL_ANALYTICAL_FIELD, and NODAL_DISCRETE_FIELD. The default value is UNIFORM.
-        preIntegrate
-            A Boolean specifying whether the shell section properties are specified by the user
-            prior to the analysis (ON) or integrated during the analysis (OFF). The default value is
-            OFF.
-        poissonDefinition
-            A SymbolicConstant specifying whether to use the default value for the Poisson's ratio.
-            Possible values are:DEFAULT, specifying that the default value for the Poisson's ratio
-            is 0.5 in an Abaqus/Standard analysis and is obtained from the material definition in an
-            Abaqus/Explicit analysis.VALUE, specifying that the Poisson's ratio used in the analysis
-            is the value provided in **poisson**.The default value is DEFAULT.
-        poisson
-            A Float specifying the Poisson's ratio. Possible values are −1.0 ≤≤ **poisson** ≤≤ 0.5.
-            This argument is valid only when **poissonDefinition** = VALUE. The default value is 0.5.
-        integrationRule
-            A SymbolicConstant specifying the shell section integration rule. Possible values are
-            SIMPSON and GAUSS. The default value is SIMPSON.
-        temperature
-            A SymbolicConstant specifying the mode used for temperature and field variable input
-            across the section thickness. Possible values are GRADIENT and POINTWISE. The default
-            value is GRADIENT.
-        idealization
-            A SymbolicConstant specifying the mechanical idealization used for the section
-            calculations. This member is only applicable when **preIntegrate** is set to ON. Possible
-            values are NO_IDEALIZATION, SMEAR_ALL_LAYERS, MEMBRANE, and BENDING. The default value
-            is NO_IDEALIZATION.
-        nTemp
-            None or an Int specifying the number of temperature points to be input. This argument is
-            valid only when **temperature** = POINTWISE. The default value is None.
-        thicknessModulus
-            None or a Float specifying the effective thickness modulus. This argument is relevant
-            only for continuum shells and must be used in conjunction with the argument **poisson**.
-            The default value is None.
-        useDensity
-            A Boolean specifying whether or not to use the value of **density**. The default value is
-            OFF.
-        density
-            A Float specifying the value of density to apply to this section. The default value is
-            0.0.
-        thicknessField
-            A String specifying the name of the AnalyticalField or DiscreteField object used to
-            define the thickness of the shell elements. The **thicknessField** argument applies only
-            when **thicknessType** = ANALYTICAL_FIELD or **thicknessType** = DISCRETE_FIELD. The default
-            value is an empty string.
-        nodalThicknessField
-            A String specifying the name of the AnalyticalField or DiscreteField object used to
-            define the thickness of the shell elements at each node. The **nodalThicknessField**
-            argument applies only when **thicknessType** = NODAL_ANALYTICAL_FIELD or
-            **thicknessType** = NODAL_DISCRETE_FIELD. The default value is an empty string.
+                    mdb.models[name].HomogeneousShellSection
+                    session.odbs[name].HomogeneousShellSection
+            
+            Parameters
+            ----------
+            name
+                A String specifying the repository key.
+            material
+                A String specifying the name of the section material.
+            thickness
+                A Float specifying the thickness of the section. The **thickness** argument applies only
+                when **thicknessType** = UNIFORM. The default value is 0.0.
+            numIntPts
+                An Int specifying the number of integration points to be used through the section.
+                Possible values are **numIntPts** >> 0. The default value is 5.To use the default settings
+                of the analysis products, set **numIntPts** to 5 if **integrationRule** = SIMPSON or set
+                **numIntPts** to 7 if **integrationRule** = GAUSS.
+            thicknessType
+                A SymbolicConstant specifying the distribution used for defining the thickness of the
+                elements. Possible values are UNIFORM, ANALYTICAL_FIELD, DISCRETE_FIELD,
+                NODAL_ANALYTICAL_FIELD, and NODAL_DISCRETE_FIELD. The default value is UNIFORM.
+            preIntegrate
+                A Boolean specifying whether the shell section properties are specified by the user
+                prior to the analysis (ON) or integrated during the analysis (OFF). The default value is
+                OFF.
+            poissonDefinition
+                A SymbolicConstant specifying whether to use the default value for the Poisson's ratio.
+                Possible values are:DEFAULT, specifying that the default value for the Poisson's ratio
+                is 0.5 in an Abaqus/Standard analysis and is obtained from the material definition in an
+                Abaqus/Explicit analysis.VALUE, specifying that the Poisson's ratio used in the analysis
+                is the value provided in **poisson**.The default value is DEFAULT.
+            poisson
+                A Float specifying the Poisson's ratio. Possible values are −1.0 ≤≤ **poisson** ≤≤ 0.5.
+                This argument is valid only when **poissonDefinition** = VALUE. The default value is 0.5.
+            integrationRule
+                A SymbolicConstant specifying the shell section integration rule. Possible values are
+                SIMPSON and GAUSS. The default value is SIMPSON.
+            temperature
+                A SymbolicConstant specifying the mode used for temperature and field variable input
+                across the section thickness. Possible values are GRADIENT and POINTWISE. The default
+                value is GRADIENT.
+            idealization
+                A SymbolicConstant specifying the mechanical idealization used for the section
+                calculations. This member is only applicable when **preIntegrate** is set to ON. Possible
+                values are NO_IDEALIZATION, SMEAR_ALL_LAYERS, MEMBRANE, and BENDING. The default value
+                is NO_IDEALIZATION.
+            nTemp
+                None or an Int specifying the number of temperature points to be input. This argument is
+                valid only when **temperature** = POINTWISE. The default value is None.
+            thicknessModulus
+                None or a Float specifying the effective thickness modulus. This argument is relevant
+                only for continuum shells and must be used in conjunction with the argument **poisson**.
+                The default value is None.
+            useDensity
+                A Boolean specifying whether or not to use the value of **density**. The default value is
+                OFF.
+            density
+                A Float specifying the value of density to apply to this section. The default value is
+                0.0.
+            thicknessField
+                A String specifying the name of the AnalyticalField or DiscreteField object used to
+                define the thickness of the shell elements. The **thicknessField** argument applies only
+                when **thicknessType** = ANALYTICAL_FIELD or **thicknessType** = DISCRETE_FIELD. The default
+                value is an empty string.
+            nodalThicknessField
+                A String specifying the name of the AnalyticalField or DiscreteField object used to
+                define the thickness of the shell elements at each node. The **nodalThicknessField**
+                argument applies only when **thicknessType** = NODAL_ANALYTICAL_FIELD or
+                **thicknessType** = NODAL_DISCRETE_FIELD. The default value is an empty string.
 
         Returns
         -------
@@ -951,14 +940,13 @@ class SectionOdb(OdbBase):
     ) -> HomogeneousSolidSection:
         """This method creates a HomogeneousSolidSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].HomogeneousSolidSection
-            session.odbs[name].HomogeneousSolidSection
+                mdb.models[name].HomogeneousSolidSection
+                session.odbs[name].HomogeneousSolidSection
 
         Parameters
         ----------
@@ -997,14 +985,13 @@ class SectionOdb(OdbBase):
     ) -> MembraneSection:
         """This method creates a MembraneSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].MembraneSection
-            session.odbs[name].MembraneSection
+                mdb.models[name].MembraneSection
+                session.odbs[name].MembraneSection
 
         Parameters
         ----------
@@ -1064,14 +1051,13 @@ class SectionOdb(OdbBase):
     ) -> MPCSection:
         """This method creates a MPCSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].MPCSection
-            session.odbs[name].MPCSection
+                mdb.models[name].MPCSection
+                session.odbs[name].MPCSection
 
         Parameters
         ----------
@@ -1111,14 +1097,13 @@ class SectionOdb(OdbBase):
     ) -> PEGSection:
         """This method creates a PEGSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].PEGSection
-            session.odbs[name].PEGSection
+                mdb.models[name].PEGSection
+                session.odbs[name].PEGSection
 
         Parameters
         ----------
@@ -1156,14 +1141,13 @@ class SectionOdb(OdbBase):
     ) -> SurfaceSection:
         """This method creates a SurfaceSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].SurfaceSection
-            session.odbs[name].SurfaceSection
+                mdb.models[name].SurfaceSection
+                session.odbs[name].SurfaceSection
 
         Parameters
         ----------
@@ -1191,14 +1175,13 @@ class SectionOdb(OdbBase):
     def TrussSection(self, name: str, material: str, area: float = 1) -> TrussSection:
         """This method creates a TrussSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].TrussSection
-            session.odbs[name].TrussSection
+                mdb.models[name].TrussSection
+                session.odbs[name].TrussSection
 
         Parameters
         ----------

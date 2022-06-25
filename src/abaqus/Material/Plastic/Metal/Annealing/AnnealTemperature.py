@@ -1,41 +1,39 @@
 class AnnealTemperature:
     r"""The AnnealTemperature object specifies the material annealing temperature.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].Plastic.annealTemperature
-        import odbMaterial
-        session.odbs[name].materials[name].Plastic.annealTemperature
+            import material
+            mdb.models[name].materials[name].Plastic.annealTemperature
+            import odbMaterial
+            session.odbs[name].materials[name].Plastic.annealTemperature
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - The annealing temperature, :math:`\theta`.
-    - Temperature, if the data depend on temperature.
-    - Value of the first field variable, if the data depend on field variables.
-    - Value of the second field variable.
-    - Etc.
+        - The annealing temperature, :math:`\theta`.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - ANNEAL TEMPERATURE
+        - ANNEAL TEMPERATURE
     """
 
     def __init__(self, table: tuple, dependencies: int = 0):
         """This method creates an AnnealTemperature object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].Plastic.AnnealTemperature
-            session.odbs[name].materials[name].Plastic.AnnealTemperature
+                mdb.models[name].materials[name].Plastic.AnnealTemperature
+                session.odbs[name].materials[name].Plastic.AnnealTemperature
 
         Parameters
         ----------

@@ -6,20 +6,19 @@ class GeneralizedProfile(Profile):
     of inertia, etc.
     The GeneralizedProfile object is derived from the Profile object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].profiles[name]
-        import odbSection
-        session.odbs[name].profiles[name]
+            import section
+            mdb.models[name].profiles[name]
+            import odbSection
+            session.odbs[name].profiles[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - BEAM GENERAL SECTION
+        - BEAM GENERAL SECTION
     """
 
     #: A String specifying the repository key.
@@ -59,14 +58,13 @@ class GeneralizedProfile(Profile):
     ):
         """This method creates a GeneralizedProfile object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].GeneralizedProfile
-            session.odbs[name].GeneralizedProfile
+                mdb.models[name].GeneralizedProfile
+                session.odbs[name].GeneralizedProfile
 
         Parameters
         ----------

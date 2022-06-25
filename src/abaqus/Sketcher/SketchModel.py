@@ -5,13 +5,12 @@ from ..Model.ModelBase import ModelBase
 class SketchModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name]
+            mdb.models[name]
     """
 
     def ConstrainedSketch(
@@ -24,13 +23,12 @@ class SketchModel(ModelBase):
         """This method creates a ConstrainedSketch object. If the sketch cannot be created, the
         method returns None.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ConstrainedSketch
+                mdb.models[name].ConstrainedSketch
 
         Parameters
         ----------

@@ -7,25 +7,23 @@ class RegisteredDictionary(CommandRegister):
     RegisteredDictionary must be either strings or integers.
     The RegisteredDictionary object is derived from the CommandRegister object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import customKernel
+            import customKernel
     """
 
     def __init__(self):
         """This method creates a RegisteredDictionary object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            customKernel.RegisteredDictionary
+                customKernel.RegisteredDictionary
 
         Returns
         -------

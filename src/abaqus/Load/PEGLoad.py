@@ -9,14 +9,13 @@ class PEGLoad(Load):
     """The PEGLoad object stores the data for a PEG load.
     The PEGLoad object is derived from the Load object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].loads[name]
+            import load
+            mdb.models[name].loads[name]
     """
 
     #: A String specifying the load repository key.
@@ -48,13 +47,12 @@ class PEGLoad(Load):
     ):
         """This method creates a PEGLoad object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].PEGLoad
+                mdb.models[name].PEGLoad
 
         Parameters
         ----------

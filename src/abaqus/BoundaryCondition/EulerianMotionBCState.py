@@ -10,18 +10,17 @@ class EulerianMotionBCState(BoundaryConditionState):
     The EulerianMotionBCState object has no constructor or methods.
     The EulerianMotionBCState object is derived from the BoundaryConditionState object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].steps[name].boundaryConditionStates[name]
+            import load
+            mdb.models[name].steps[name].boundaryConditionStates[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - EULERIAN MESH MOTION
+        - EULERIAN MESH MOTION
     """
 
     #: A SymbolicConstant specifying the 1-direction translational constraint on the center of

@@ -9,20 +9,19 @@ class DiscreteFastener(Fastener):
     """The DiscreteFastener object defines a discrete fastener.
     The DiscreteFastener object is derived from the Fastener object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].engineeringFeatures.fasteners[name]
-        import assembly
-        mdb.models[name].rootAssembly.engineeringFeatures.fasteners[name]
+            import part
+            mdb.models[name].parts[name].engineeringFeatures.fasteners[name]
+            import assembly
+            mdb.models[name].rootAssembly.engineeringFeatures.fasteners[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - COUPLING
+        - COUPLING
     """
 
     #: A Boolean specifying whether the fastener is suppressed or not. The default value is
@@ -85,14 +84,13 @@ class DiscreteFastener(Fastener):
         both for parts and for the assembly, DiscreteFastener objects are currently supported
         only under the assembly.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].engineeringFeatures.DiscreteFastener
-            mdb.models[name].rootAssembly.engineeringFeatures.DiscreteFastener
+                mdb.models[name].parts[name].engineeringFeatures.DiscreteFastener
+                mdb.models[name].rootAssembly.engineeringFeatures.DiscreteFastener
 
         Parameters
         ----------

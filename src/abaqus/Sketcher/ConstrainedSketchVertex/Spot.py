@@ -5,13 +5,12 @@ class Spot(ConstrainedSketchVertex):
     def __init__(self, point: tuple[float]):
         """This method creates a spot (construction point) located at the specified coordinates.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].Spot
+                mdb.models[name].sketches[name].Spot
 
         Parameters
         ----------

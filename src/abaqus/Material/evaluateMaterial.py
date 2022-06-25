@@ -32,13 +32,12 @@ def evaluateMaterial(
     """This method evaluates the behavior of a hyperelastic material under standard test
     conditions.
 
-    Notes
-    -----
-        This function can be accessed by:
+    .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            evaluateMaterial
+                evaluateMaterial
 
     Parameters
     ----------

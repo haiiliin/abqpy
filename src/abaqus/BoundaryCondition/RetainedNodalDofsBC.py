@@ -8,14 +8,13 @@ class RetainedNodalDofsBC(BoundaryCondition):
     condition.
     The RetainedNodalDofsBC object is derived from the BoundaryCondition object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].boundaryConditions[name]
+            import load
+            mdb.models[name].boundaryConditions[name]
     """
 
     #: A String specifying the boundary condition repository key.
@@ -47,13 +46,12 @@ class RetainedNodalDofsBC(BoundaryCondition):
     ):
         """This method creates a RetainedNodalDofsBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].RetainedNodalDofsBC
+                mdb.models[name].RetainedNodalDofsBC
 
         Parameters
         ----------

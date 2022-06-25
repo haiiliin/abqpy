@@ -6,13 +6,12 @@ class PrintOptions:
     methods. The PrintOptions object has no constructor. Abaqus creates the **printOptions**
     member when a session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        session.printOptions
+            session.printOptions
     """
 
     def setValues(

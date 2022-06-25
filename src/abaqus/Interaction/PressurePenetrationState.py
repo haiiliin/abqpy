@@ -10,18 +10,17 @@ class PressurePenetrationState(InteractionState):
     The PressurePenetrationState object has no constructor or methods.
     The PressurePenetrationState object is derived from the InteractionState object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].steps[name].interactionStates[name]
+            import interaction
+            mdb.models[name].steps[name].interactionStates[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - PRESSURE PENETRATION
+        - PRESSURE PENETRATION
     """
 
     #: A Float specifying the fraction of the current step time over which the fluid pressure

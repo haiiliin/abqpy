@@ -7,22 +7,21 @@ class ConnectorSection(Section):
     """A :py:class:`~abaqus.Connector.ConnectorSection.ConnectorSection` object describes the connection type and the behavior of a connector.
     The ConnectorSection object is derived from the Section object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].sections[name]
-        import odbSection
-        session.odbs[name].sections[name]
+            import section
+            mdb.models[name].sections[name]
+            import odbSection
+            session.odbs[name].sections[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONNECTOR SECTION
-            - CONNECTOR BEHAVIOR
-            - CONNECTOR CONSTITUTIVE REFERENCE
+        - CONNECTOR SECTION
+                - CONNECTOR BEHAVIOR
+                - CONNECTOR CONSTITUTIVE REFERENCE
     """
 
     #: A String specifying the repository key.
@@ -145,14 +144,13 @@ class ConnectorSection(Section):
     ):
         """This method creates a ConnectorSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ConnectorSection
-            session.odbs[name].ConnectorSection
+                mdb.models[name].ConnectorSection
+                session.odbs[name].ConnectorSection
 
         Parameters
         ----------

@@ -20,20 +20,19 @@ class CoupledTempDisplacementStep(AnalysisStep):
     simultaneous solution of the temperature and stress/displacement fields is necessary.
     The CoupledTempDisplacementStep object is derived from the AnalysisStep object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name]
+            import step
+            mdb.models[name].steps[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - COUPLED TEMPERATURE-DISPLACEMENT
-            - SOLUTION TECHNIQUE
-            - STEP
+        - COUPLED TEMPERATURE-DISPLACEMENT
+                - SOLUTION TECHNIQUE
+                - STEP
     """
 
     #: A String specifying the repository key.
@@ -255,13 +254,12 @@ class CoupledTempDisplacementStep(AnalysisStep):
     ):
         """This method creates a CoupledTempDisplacementStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].CoupledTempDisplacementStep
+                mdb.models[name].CoupledTempDisplacementStep
 
         Parameters
         ----------

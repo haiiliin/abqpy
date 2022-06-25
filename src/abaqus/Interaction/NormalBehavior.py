@@ -6,29 +6,28 @@ from abaqusConstants import *
 class NormalBehavior:
     """The NormalBehavior object specifies normal behavior for a contact interaction property.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactionProperties[name].normalBehavior
+            import interaction
+            mdb.models[name].interactionProperties[name].normalBehavior
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **pressureOverclosure** = EXPONENTIAL, the table data specify the following:
-    
-        - Pressure at zero clearance, p0p0.
-        - Clearance at which the contact pressure is zero, c0c0.
-    - If **pressureOverclosure** = TABULAR, the table data specify the following:
-    
-        - Pressure.
-        - Overclosure.
+        - If **pressureOverclosure** = EXPONENTIAL, the table data specify the following:
+        
+            - Pressure at zero clearance, p0p0.
+            - Clearance at which the contact pressure is zero, c0c0.
+        - If **pressureOverclosure** = TABULAR, the table data specify the following:
+        
+            - Pressure.
+            - Overclosure.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - SURFACE BEHAVIOR
+        - SURFACE BEHAVIOR
     """
 
     #: The SymbolicConstant DEFAULT or a Float specifying the contact stiffness. This argument
@@ -123,13 +122,12 @@ class NormalBehavior:
     ):
         """This method creates a NormalBehavior object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].interactionProperties[name].NormalBehavior
+                mdb.models[name].interactionProperties[name].NormalBehavior
 
         Parameters
         ----------

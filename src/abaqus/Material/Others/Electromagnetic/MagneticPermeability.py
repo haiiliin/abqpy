@@ -4,70 +4,69 @@ from abaqusConstants import *
 class MagneticPermeability:
     r"""The MagneticPermeability object specifies magnetic permeability.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].magneticPermeability
-        import odbMaterial
-        session.odbs[name].materials[name].magneticPermeability
+            import material
+            mdb.models[name].materials[name].magneticPermeability
+            import odbMaterial
+            session.odbs[name].materials[name].magneticPermeability
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **type** = ISOTROPIC, the table data specify the following:
-    
-        - Magnetic permeability.
-        - Frequency, if the data depend on frequency.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **type** = ISOTROPIC, and **nonlinearBH** = TRUE, the table data specify the following:
-    
-        - Magntitude of the magnetic flux density vector.
-        - Magnitude of the magnetic field vector.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **type** = ORTHOTROPIC, the table data specify the following:
-    
-        - :math:`\mu_{11}^{E}`.
-        - :math:`\mu_{22}^{E}`.
-        - :math:`\mu_{33}^{E}`.
-        - Frequency, if the data depend on frequency.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **type** = ORTHOTROPIC, and **nonlinearBH** = TRUE, the table data specify the following:
-    
-        - Magntitude of the magnetic flux density vector in the first direction.
-        - Magnitude of the magnetic field vector in the second direction.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **type** = ANISOTROPIC, the table data specify the following:
-    
-        - :math:`\mu_{11}^{E}`.
-        - :math:`\mu_{12}^{E}`.
-        - :math:`\mu_{22}^{E}`.
-        - :math:`\mu_{13}^{E}`.
-        - :math:`\mu_{23}^{E}`.
-        - :math:`\mu_{33}^{E}`.
-        - Frequency, if the data depend on frequency.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+        - If **type** = ISOTROPIC, the table data specify the following:
+        
+            - Magnetic permeability.
+            - Frequency, if the data depend on frequency.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **type** = ISOTROPIC, and **nonlinearBH** = TRUE, the table data specify the following:
+        
+            - Magntitude of the magnetic flux density vector.
+            - Magnitude of the magnetic field vector.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **type** = ORTHOTROPIC, the table data specify the following:
+        
+            - :math:`\mu_{11}^{E}`.
+            - :math:`\mu_{22}^{E}`.
+            - :math:`\mu_{33}^{E}`.
+            - Frequency, if the data depend on frequency.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **type** = ORTHOTROPIC, and **nonlinearBH** = TRUE, the table data specify the following:
+        
+            - Magntitude of the magnetic flux density vector in the first direction.
+            - Magnitude of the magnetic field vector in the second direction.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **type** = ANISOTROPIC, the table data specify the following:
+        
+            - :math:`\mu_{11}^{E}`.
+            - :math:`\mu_{12}^{E}`.
+            - :math:`\mu_{22}^{E}`.
+            - :math:`\mu_{13}^{E}`.
+            - :math:`\mu_{23}^{E}`.
+            - :math:`\mu_{33}^{E}`.
+            - Frequency, if the data depend on frequency.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - MAGNETIC PERMEABILITY
+        - MAGNETIC PERMEABILITY
     """
 
     def __init__(
@@ -83,14 +82,13 @@ class MagneticPermeability:
     ):
         """This method creates a MagneticPermeability object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].MagneticPermeability
-            session.odbs[name].materials[name].MagneticPermeability
+                mdb.models[name].materials[name].MagneticPermeability
+                session.odbs[name].materials[name].MagneticPermeability
 
         Parameters
         ----------

@@ -7,16 +7,15 @@ from .OdbSet import OdbSet
 class RebarOrientation:
     """The RebarOrientation object represents the orientation of the rebar reference.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name].parts[name].rebarOrientations[i]
-        session.odbs[name].rootAssembly.instances[name].rebarOrientations[i]
-        session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.rebarOrientations[i]
+            import odbAccess
+            session.odbs[name].parts[name].rebarOrientations[i]
+            session.odbs[name].rootAssembly.instances[name].rebarOrientations[i]
+            session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.rebarOrientations[i]
     """
 
     #: A SymbolicConstant specifying the axis of a cylindrical or spherical datum coordinate

@@ -6,20 +6,19 @@ class CohesiveSection(Section):
     """The CohesiveSection object defines the properties of a cohesive section.
     The CohesiveSection object is derived from the Section object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].sections[name]
-        import odbSection
-        session.odbs[name].sections[name]
+            import section
+            mdb.models[name].sections[name]
+            import odbSection
+            session.odbs[name].sections[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - COHESIVE SECTION
+        - COHESIVE SECTION
     """
 
     #: A String specifying the repository key.
@@ -59,14 +58,13 @@ class CohesiveSection(Section):
     ):
         """This method creates a CohesiveSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].CohesiveSection
-            session.odbs[name].CohesiveSection
+                mdb.models[name].CohesiveSection
+                session.odbs[name].CohesiveSection
 
         Parameters
         ----------

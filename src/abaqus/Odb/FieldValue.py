@@ -10,14 +10,13 @@ class FieldValue:
     object using the addData method. For faster, bulk-data access, see Using bulk data
     access to an output database.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i]
+            import odbAccess
+            session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i]
     """
 
     #: A SymbolicConstant specifying the position of the output in the element. Possible values

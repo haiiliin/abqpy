@@ -6,18 +6,17 @@ class StabilizationAssignment:
     definition for domain pairs in a ContactStd object. The StabilizationAssignment object
     has no constructor or members.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactions[name].stabilizationAssignments
+            import interaction
+            mdb.models[name].interactions[name].stabilizationAssignments
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONTACT STABILIZATION
+        - CONTACT STABILIZATION
     """
 
     def changeValuesInStep(self, stepName: str, index: int, value: str):

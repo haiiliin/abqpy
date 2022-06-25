@@ -6,18 +6,17 @@ class ActuatorSensorProp(ContactProperty):
     referred to by an ActuatorSensor object.
     The ActuatorSensorProp object is derived from the InteractionProperty object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactionProperties[name]
+            import interaction
+            mdb.models[name].interactionProperties[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - UEL PROPERTY
+        - UEL PROPERTY
     """
 
     #: A String specifying the interaction property repository key.
@@ -36,13 +35,12 @@ class ActuatorSensorProp(ContactProperty):
     ):
         """This method creates an ActuatorSensorProp object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ActuatorSensorProp
+                mdb.models[name].ActuatorSensorProp
 
         Parameters
         ----------

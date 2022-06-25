@@ -15,13 +15,12 @@ class ObliqueDimension(ConstrainedSketchDimension):
         """This method constructs a ConstrainedSketchDimension object between two vertices. An
         oblique dimension indicates the distance between two vertices.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].ObliqueDimension
+                mdb.models[name].sketches[name].ObliqueDimension
 
         Parameters
         ----------

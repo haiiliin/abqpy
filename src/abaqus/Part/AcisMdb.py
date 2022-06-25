@@ -7,13 +7,12 @@ class AcisMdb(MdbBase):
     """The Mdb object is the high-level Abaqus model database. A model database stores models
     and analysis controls.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb
+            mdb
     """
 
     @staticmethod
@@ -21,13 +20,12 @@ class AcisMdb(MdbBase):
         """This method creates an AcisFile object from a file containing ACIS-format geometry. This
         object is subsequently used by the PartFromGeometryFile method.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.openAcis
+                mdb.openAcis
 
         Parameters
         ----------
@@ -61,13 +59,12 @@ class AcisMdb(MdbBase):
         """This method creates an AcisFile object from a file containing V5-format geometry. This
         object is subsequently used by the PartFromGeometryFile method.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.openCatia
+                mdb.openCatia
 
         Parameters
         ----------
@@ -105,13 +102,12 @@ class AcisMdb(MdbBase):
         File-format geometry that was created by CATIA V5, I-DEAS, or Pro/ENGINEER. This object
         is subsequently used by the PartFromGeometryFile method.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.openEnf
+                mdb.openEnf
 
         Parameters
         ----------
@@ -152,13 +148,12 @@ class AcisMdb(MdbBase):
         """This method creates an AcisFile object from a file containing IGES-format geometry. This
         object is subsequently used by the PartFromGeometryFile method.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.openIges
+                mdb.openIges
 
         Parameters
         ----------
@@ -210,13 +205,12 @@ class AcisMdb(MdbBase):
         """This method creates an AcisFile object from a file containing Parasolid-format geometry.
         This object is subsequently used by the PartFromGeometryFile method.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.openParasolid
+                mdb.openParasolid
 
         Parameters
         ----------
@@ -241,13 +235,12 @@ class AcisMdb(MdbBase):
         """This method creates an AcisFile object from a file containing STEP-format geometry. This
         object is subsequently used by the PartFromGeometryFile method.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.openStep
+                mdb.openStep
 
         Parameters
         ----------
@@ -274,13 +267,12 @@ class AcisMdb(MdbBase):
         """This method creates an AcisFile object from a file containing VDA-FS-format geometry.
         This object is subsequently used by the PartFromGeometryFile method.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.openVda
+                mdb.openVda
 
         Parameters
         ----------

@@ -14,16 +14,15 @@ class FreeBodyOptions:
     preferences.
     - The free body options associated with a particular viewport.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.defaultOdbDisplay.freeBodyOptions
-        session.viewports[name].layers[name].odbDisplay.freeBodyOptions
-        session.viewports[name].odbDisplay.freeBodyOptions
+            import visualization
+            session.defaultOdbDisplay.freeBodyOptions
+            session.viewports[name].layers[name].odbDisplay.freeBodyOptions
+            session.viewports[name].odbDisplay.freeBodyOptions
     """
 
     def setValues(

@@ -5,16 +5,15 @@ class Fastener:
     """The Fastener object is the abstract base type for PointFastener, DiscreteFastener, and
     AssembledFastener.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].engineeringFeatures.fasteners[name]
-        import assembly
-        mdb.models[name].rootAssembly.engineeringFeatures.fasteners[name]
+            import part
+            mdb.models[name].parts[name].engineeringFeatures.fasteners[name]
+            import assembly
+            mdb.models[name].rootAssembly.engineeringFeatures.fasteners[name]
     """
 
     #: A String specifying the repository key.

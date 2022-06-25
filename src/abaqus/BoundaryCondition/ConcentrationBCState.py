@@ -10,18 +10,17 @@ class ConcentrationBCState(BoundaryConditionState):
     The ConcentrationBCState object has no constructor or methods.
     The ConcentrationBCState object is derived from the BoundaryConditionState object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].steps[name].boundaryConditionStates[name]
+            import load
+            mdb.models[name].steps[name].boundaryConditionStates[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - BOUNDARY
+        - BOUNDARY
     """
 
     #: A Float specifying the concentration magnitude.

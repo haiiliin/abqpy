@@ -12,15 +12,14 @@ from .SectionPoint import SectionPoint
 class FieldOutput:
     """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object contains field data for a specific output variable.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import
-        odbAccess
-        session.odbs[name].steps[name].frames[i].fieldOutputs[name]
+            import
+            odbAccess
+            session.odbs[name].steps[name].frames[i].fieldOutputs[name]
     """
 
     #: An Int specifying the dimension of vector or the first dimension (number of rows) of
@@ -84,13 +83,12 @@ class FieldOutput:
     ):
         """This method creates a FieldOutput object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].steps[name].frames[i].FieldOutput
+                session.odbs[name].steps[name].frames[i].FieldOutput
 
         Parameters
         ----------
@@ -132,13 +130,12 @@ class FieldOutput:
         """This method creates a FieldOutput object from an existing FieldOutput object of the same
         output database.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].steps[name].frames[i].FieldOutput
+                session.odbs[name].steps[name].frames[i].FieldOutput
 
         Parameters
         ----------

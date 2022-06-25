@@ -10,13 +10,12 @@ class LeafFromPartElementLabels(Leaf):
     commands.
     The LeafFromPartElementLabels object is derived from the Leaf object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import displayGroupMdbToolset
+            import displayGroupMdbToolset
     """
 
     #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
@@ -27,13 +26,12 @@ class LeafFromPartElementLabels(Leaf):
         """This method creates a Leaf object from a sequence of Strings specifying element labels.
         Leaf objects specify the items in a display group.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            LeafFromPartElementLabels
+                LeafFromPartElementLabels
 
         Parameters
         ----------

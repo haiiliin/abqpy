@@ -10,18 +10,17 @@ class ConcentratedFilmConditionState(InteractionState):
     The ConcentratedFilmConditionState object has no constructor or methods.
     The ConcentratedFilmConditionState object is derived from the InteractionState object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].steps[name].interactionStates[name]
+            import interaction
+            mdb.models[name].steps[name].interactionStates[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CFILM
+        - CFILM
     """
 
     #: A SymbolicConstant specifying the propagation state of the **interactionProperty** member.

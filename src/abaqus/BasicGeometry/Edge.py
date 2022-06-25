@@ -4,37 +4,36 @@ from abaqusConstants import *
 class Edge:
     """Edges are one-dimensional regions of geometry.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].allInternalSets[name].edges[i]
-        mdb.models[name].parts[name].allInternalSurfaces[name].edges[i]
-        mdb.models[name].parts[name].allSets[name].edges[i]
-        mdb.models[name].parts[name].allSurfaces[name].edges[i]
-        mdb.models[name].parts[name].edges[i]
-        mdb.models[name].parts[name].sets[name].edges[i]
-        mdb.models[name].parts[name].surfaces[name].edges[i]
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name].edges[i]
-        mdb.models[name].rootAssembly.allInstances[name].sets[name].edges[i]
-        mdb.models[name].rootAssembly.allInstances[name].surfaces[name].edges[i]
-        mdb.models[name].rootAssembly.allInternalSets[name].edges[i]
-        mdb.models[name].rootAssembly.allInternalSurfaces[name].edges[i]
-        mdb.models[name].rootAssembly.allSets[name].edges[i]
-        mdb.models[name].rootAssembly.allSurfaces[name].edges[i]
-        mdb.models[name].rootAssembly.edges[i]
-        mdb.models[name].rootAssembly.instances[name].edges[i]
-        mdb.models[name].rootAssembly.instances[name].sets[name].edges[i]
-        mdb.models[name].rootAssembly.instances[name].surfaces[name].edges[i]
-        mdb.models[name].rootAssembly.modelInstances[i].edges[i]
-        mdb.models[name].rootAssembly.modelInstances[i].sets[name].edges[i]
-        mdb.models[name].rootAssembly.modelInstances[i].surfaces[name].edges[i]
-        mdb.models[name].rootAssembly.sets[name].edges[i]
-        mdb.models[name].rootAssembly.surfaces[name].edges[i]
+            import part
+            mdb.models[name].parts[name].allInternalSets[name].edges[i]
+            mdb.models[name].parts[name].allInternalSurfaces[name].edges[i]
+            mdb.models[name].parts[name].allSets[name].edges[i]
+            mdb.models[name].parts[name].allSurfaces[name].edges[i]
+            mdb.models[name].parts[name].edges[i]
+            mdb.models[name].parts[name].sets[name].edges[i]
+            mdb.models[name].parts[name].surfaces[name].edges[i]
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name].edges[i]
+            mdb.models[name].rootAssembly.allInstances[name].sets[name].edges[i]
+            mdb.models[name].rootAssembly.allInstances[name].surfaces[name].edges[i]
+            mdb.models[name].rootAssembly.allInternalSets[name].edges[i]
+            mdb.models[name].rootAssembly.allInternalSurfaces[name].edges[i]
+            mdb.models[name].rootAssembly.allSets[name].edges[i]
+            mdb.models[name].rootAssembly.allSurfaces[name].edges[i]
+            mdb.models[name].rootAssembly.edges[i]
+            mdb.models[name].rootAssembly.instances[name].edges[i]
+            mdb.models[name].rootAssembly.instances[name].sets[name].edges[i]
+            mdb.models[name].rootAssembly.instances[name].surfaces[name].edges[i]
+            mdb.models[name].rootAssembly.modelInstances[i].edges[i]
+            mdb.models[name].rootAssembly.modelInstances[i].sets[name].edges[i]
+            mdb.models[name].rootAssembly.modelInstances[i].surfaces[name].edges[i]
+            mdb.models[name].rootAssembly.sets[name].edges[i]
+            mdb.models[name].rootAssembly.surfaces[name].edges[i]
     """
 
     #: An Int specifying the index of the edge in the EdgeArray.

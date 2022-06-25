@@ -9,19 +9,18 @@ class PressureState(LoadState):
     The PressureState object has no constructor or methods.
     The PressureState object is derived from the LoadState object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].steps[name].loadStates[name]
+            import load
+            mdb.models[name].steps[name].loadStates[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - DSLOAD
-            - DLOAD
+        - DSLOAD
+                - DLOAD
     """
 
     #: A Float or a Complex specifying the pressure magnitude.

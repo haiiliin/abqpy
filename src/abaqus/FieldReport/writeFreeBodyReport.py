@@ -16,13 +16,12 @@ def writeFreeBodyRepor(
 ):
     """This method writes a FreeBody object to a user-defined ASCII file.
 
-    Notes
-    -----
-        This function can be accessed by:
+    .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.writeFreeBodyReport
+                session.writeFreeBodyReport
 
     Parameters
     ----------

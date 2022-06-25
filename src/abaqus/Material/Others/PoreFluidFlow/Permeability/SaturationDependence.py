@@ -2,38 +2,36 @@ class SaturationDependence:
     r"""The SaturationDependence object specifies the dependence of the permeability of a
     material on the saturation of the wetting liquid.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].permeability.saturationDependence
-        import odbMaterial
-        session.odbs[name].materials[name].permeability.saturationDependence
+            import material
+            mdb.models[name].materials[name].permeability.saturationDependence
+            import odbMaterial
+            session.odbs[name].materials[name].permeability.saturationDependence
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - :math:`k_{s}`. (Dimensionless.)
-    - Saturation, :math:`\boldsymbol{S}`. (Dimensionless.)
+        - :math:`k_{s}`. (Dimensionless.)
+        - Saturation, :math:`\boldsymbol{S}`. (Dimensionless.)
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - PERMEABILITY
+        - PERMEABILITY
     """
 
     def __init__(self, table: tuple):
         """This method creates a SaturationDependence object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].permeability.SaturationDependence
-            session.odbs[name].materials[name].permeability.SaturationDependence
+                mdb.models[name].materials[name].permeability.SaturationDependence
+                session.odbs[name].materials[name].permeability.SaturationDependence
 
         Parameters
         ----------

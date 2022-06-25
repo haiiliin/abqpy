@@ -9,18 +9,17 @@ class CavityRadiationState(InteractionState):
     The CavityRadiationState object has no constructor or methods.
     The CavityRadiationState object is derived from the InteractionState object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].steps[name].interactionStates[name]
+            import interaction
+            mdb.models[name].steps[name].interactionStates[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - RADIATION VIEWFACTOR
+        - RADIATION VIEWFACTOR
     """
 
     #: A SymbolicConstant specifying the blocking checks to be performed in the viewfactor

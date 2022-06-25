@@ -8,18 +8,17 @@ class DGSuperimposeOptions:
     *odbDisplayOptions.superimposeOptions* member when a display group instance is created,
     using values from *odbDisplay.superimposeOptions*.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        session.viewports[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.superimposeOptions
-        session.viewports[name].layers[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.superimposeOptions
-        session.viewports[name].layers[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.superimposeOptions
-        session.viewports[name].layers[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.superimposeOptions
-        session.viewports[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.superimposeOptions
-        session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.superimposeOptions
+            session.viewports[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.superimposeOptions
+            session.viewports[name].layers[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.superimposeOptions
+            session.viewports[name].layers[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.superimposeOptions
+            session.viewports[name].layers[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.superimposeOptions
+            session.viewports[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.superimposeOptions
+            session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.superimposeOptions
     """
 
     #: A SymbolicConstant specifying the render style of the plot. Possible values are

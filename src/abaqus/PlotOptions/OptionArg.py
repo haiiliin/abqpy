@@ -6,22 +6,21 @@ class OptionArg:
     associated with a viewCutOptions object. The OptionArg object has only a constructor
     command.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.defaultOdbDisplay.viewCutOptions.aboveOptions
-        session.defaultOdbDisplay.viewCutOptions.belowOptions
-        session.defaultOdbDisplay.viewCutOptions.onOptions
-        session.viewports[name].layers[name].odbDisplay.viewCutOptions.aboveOptions
-        session.viewports[name].layers[name].odbDisplay.viewCutOptions.belowOptions
-        session.viewports[name].layers[name].odbDisplay.viewCutOptions.onOptions
-        session.viewports[name].odbDisplay.viewCutOptions.aboveOptions
-        session.viewports[name].odbDisplay.viewCutOptions.belowOptions
-        session.viewports[name].odbDisplay.viewCutOptions.onOptions
+            import visualization
+            session.defaultOdbDisplay.viewCutOptions.aboveOptions
+            session.defaultOdbDisplay.viewCutOptions.belowOptions
+            session.defaultOdbDisplay.viewCutOptions.onOptions
+            session.viewports[name].layers[name].odbDisplay.viewCutOptions.aboveOptions
+            session.viewports[name].layers[name].odbDisplay.viewCutOptions.belowOptions
+            session.viewports[name].layers[name].odbDisplay.viewCutOptions.onOptions
+            session.viewports[name].odbDisplay.viewCutOptions.aboveOptions
+            session.viewports[name].odbDisplay.viewCutOptions.belowOptions
+            session.viewports[name].odbDisplay.viewCutOptions.onOptions
     """
 
     #: A SymbolicConstant specifying the render style of the plot. Possible values are
@@ -79,13 +78,12 @@ class OptionArg:
     ):
         """This method creates an OptionArg object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            visualization.OptionArg
+                visualization.OptionArg
 
         Parameters
         ----------

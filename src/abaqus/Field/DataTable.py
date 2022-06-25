@@ -1,14 +1,13 @@
 class DataTable:
     """A DataTable is an object used to define the domain and data for a DiscreteField.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import field
-        mdb.models[name].discreteFields[name].data[i]
+            import field
+            mdb.models[name].discreteFields[name].data[i]
     """
 
     #: An Int specifying the width of the data. Valid widths are 1, 6, 21, corresponding to

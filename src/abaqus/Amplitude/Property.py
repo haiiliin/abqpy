@@ -17,13 +17,12 @@ Notes
 def assignBeamSectionOrientatio(region: tuple, method: SymbolicConstant, n1: tuple):
     """This method assigns a beam section orientation to a region of a part.
 
-    Notes
-    -----
-        This function can be accessed by:
+    .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].assignBeamSectionOrientation
+                mdb.models[name].parts[*name*].assignBeamSectionOrientation
 
     Parameters
     ----------
@@ -45,13 +44,12 @@ def assignMaterialOrientatio(
 ):
     """This method assigns a material orientation to a region.
 
-    Notes
-    -----
-        This function can be accessed by:
+    .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].assignMaterialOrientation
+                mdb.models[name].parts[*name*].assignMaterialOrientation
 
     Parameters
     ----------
@@ -77,13 +75,12 @@ def assignRebarOrientatio(
 ):
     """This method assigns a rebar reference orientation to a region.
 
-    Notes
-    -----
-        This function can be accessed by:
+    .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].assignRebarOrientation
+                mdb.models[name].parts[*name*].assignRebarOrientation
 
     Parameters
     ----------
@@ -108,13 +105,12 @@ def flipNorma(regions: Region, referenceRegion: str = ""):
     """This method flips the normals of shell or membrane elements of an orphan mesh or of
     two-dimensional geometric regions.
 
-    Notes
-    -----
-        This function can be accessed by:
+    .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].flipNormal
+                mdb.models[name].parts[*name*].flipNormal
 
     Parameters
     ----------
@@ -136,13 +132,12 @@ def flipTangen(regions: Region):
     """This method flips the tangents of beam or truss elements of an orphan mesh or of
     one-dimensional geometric regions.
 
-    Notes
-    -----
-        This function can be accessed by:
+    .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].flipTangent
+                mdb.models[name].parts[*name*].flipTangent
 
     Parameters
     ----------
@@ -156,13 +151,12 @@ def flipTangen(regions: Region):
 def unassignBeamSectionOrientatio(index: int):
     """This method deletes a beam section orientation assignment.
 
-    Notes
-    -----
-        This function can be accessed by:
+    .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].unassignBeamSectionOrientation
+                mdb.models[name].parts[*name*].unassignBeamSectionOrientation
 
     Parameters
     ----------
@@ -175,13 +169,12 @@ def unassignBeamSectionOrientatio(index: int):
 def unassignMaterialOrientatio(index: int):
     """This method deletes a material orientation assignment.
 
-    Notes
-    -----
-        This function can be accessed by:
+    .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].unassignMaterialOrientation
+                mdb.models[name].parts[*name*].unassignMaterialOrientation
 
     Parameters
     ----------
@@ -194,13 +187,12 @@ def unassignMaterialOrientatio(index: int):
 def unassignRebarOrientatio(index: int):
     """This method deletes a rebar orientation assignment.
 
-    Notes
-    -----
-        This function can be accessed by:
+    .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].unassignRebarOrientation
+                mdb.models[name].parts[*name*].unassignRebarOrientation
 
     Parameters
     ----------

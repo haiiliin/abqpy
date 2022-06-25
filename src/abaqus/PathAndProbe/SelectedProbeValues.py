@@ -5,14 +5,13 @@ class SelectedProbeValues:
     """The SelectedProbeValues object has no constructor. The SelectedProbeValues object is
     created when you import the Visualization module.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.selectedProbeValues
+            import visualization
+            session.selectedProbeValues
     """
 
     #: An Int specifying the length of the **values** member.

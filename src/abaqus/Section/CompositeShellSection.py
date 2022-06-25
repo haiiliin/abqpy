@@ -9,22 +9,21 @@ class CompositeShellSection(GeometryShellSection):
     """The CompositeShellSection object defines the properties of a composite shell section.
     The CompositeShellSection object is derived from the GeometryShellSection object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].parts[name].compositeLayups[i].section
-        mdb.models[name].sections[name]
-        import odbSection
-        session.odbs[name].sections[name]
+            import section
+            mdb.models[name].parts[name].compositeLayups[i].section
+            mdb.models[name].sections[name]
+            import odbSection
+            session.odbs[name].sections[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - SHELL SECTION
-            - SHELL GENERAL SECTION
+        - SHELL SECTION
+                - SHELL GENERAL SECTION
     """
 
     #: A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object specifying reinforcement properties.
@@ -134,15 +133,14 @@ class CompositeShellSection(GeometryShellSection):
     ):
         """This method creates a CompositeShellSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].compositeLayups[i].CompositeShellSection
-            mdb.models[name].CompositeShellSection
-            session.odbs[name].CompositeShellSection
+                mdb.models[name].parts[name].compositeLayups[i].CompositeShellSection
+                mdb.models[name].CompositeShellSection
+                session.odbs[name].CompositeShellSection
 
         Parameters
         ----------

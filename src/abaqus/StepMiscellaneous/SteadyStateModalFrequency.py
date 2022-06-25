@@ -1,14 +1,13 @@
 class SteadyStateModalFrequency:
     """A SteadyStateModalFrequency is an object used to define frequency over a range of modes.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name].frequencyRange[i]
+            import step
+            mdb.models[name].steps[name].frequencyRange[i]
     """
 
     #: A Float specifying the lower limit of frequency range or a single frequency, in

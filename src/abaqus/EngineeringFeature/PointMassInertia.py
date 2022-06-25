@@ -8,20 +8,19 @@ class PointMassInertia(Inertia):
     an assembly region.
     The PointMassInertia object is derived from the Inertia object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].engineeringFeatures.inertias[name]
-        import assembly
-        mdb.models[name].rootAssembly.engineeringFeatures.inertias[name]
+            import part
+            mdb.models[name].parts[name].engineeringFeatures.inertias[name]
+            import assembly
+            mdb.models[name].rootAssembly.engineeringFeatures.inertias[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - MASS
+        - MASS
     """
 
     #: A Boolean specifying whether the inertia is suppressed or not. The default value is OFF.
@@ -104,14 +103,13 @@ class PointMassInertia(Inertia):
     ):
         """This method creates a PointMassInertia object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].engineeringFeatures.PointMassInertia
-            mdb.models[name].rootAssembly.engineeringFeatures.PointMassInertia
+                mdb.models[name].parts[name].engineeringFeatures.PointMassInertia
+                mdb.models[name].rootAssembly.engineeringFeatures.PointMassInertia
 
         Parameters
         ----------

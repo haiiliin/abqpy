@@ -7,18 +7,17 @@ class PropertyTableData:
     The values in each column in the PropertyTableData object corresponds to the properties
     and variables mentioned in the PropertyTable object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name].tableCollections[name].propertyTables[name].propertyTableDatas[name]
+            mdb.models[name].tableCollections[name].propertyTables[name].propertyTableDatas[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - PROPERTY TABLE TYPE
-            - PROPERTY TABLE
+        - PROPERTY TABLE TYPE
+                - PROPERTY TABLE
     """
 
     #: A String specifying a unique label name for the current PropertyTable object.
@@ -56,13 +55,12 @@ class PropertyTableData:
     ):
         """This method creates a PropertyTableData object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].tableCollections[name].propertyTables[name].PropertTableData
+                mdb.models[name].tableCollections[name].propertyTables[name].PropertTableData
 
         Parameters
         ----------

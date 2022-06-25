@@ -4,28 +4,27 @@ from abaqusConstants import *
 class SpecificHeat:
     """The SpecificHeat object specifies a material's specific heat.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].specificHeat
-        import odbMaterial
-        session.odbs[name].materials[name].specificHeat
+            import material
+            mdb.models[name].materials[name].specificHeat
+            import odbMaterial
+            session.odbs[name].materials[name].specificHeat
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Specific heat per unit mass.
-    - Temperature, if the data depend on temperature.
-    - Value of the first field variable, if the data depend on field variables.
-    - Value of the second field variable.
-    - Etc.
+        - Specific heat per unit mass.
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - SPECIFIC HEAT
+        - SPECIFIC HEAT
     """
 
     def __init__(
@@ -37,14 +36,13 @@ class SpecificHeat:
     ):
         """This method creates a SpecificHeat object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].SpecificHeat
-            session.odbs[name].materials[name].SpecificHeat
+                mdb.models[name].materials[name].SpecificHeat
+                session.odbs[name].materials[name].SpecificHeat
 
         Parameters
         ----------

@@ -7,18 +7,17 @@ class DGContourOptions:
     *odbDisplayOptions.contourOptions* member when a display group instance is created,
     using values from *odbDisplay.contourOptions*.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        session.viewports[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.contourOptions
-        session.viewports[name].layers[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.contourOptions
-        session.viewports[name].layers[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.contourOptions
-        session.viewports[name].layers[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.contourOptions
-        session.viewports[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.contourOptions
-        session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.contourOptions
+            session.viewports[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.contourOptions
+            session.viewports[name].layers[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.contourOptions
+            session.viewports[name].layers[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.contourOptions
+            session.viewports[name].layers[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.contourOptions
+            session.viewports[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.contourOptions
+            session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.contourOptions
     """
 
     #: A SymbolicConstant specifying the contour rendering method. Possible values are

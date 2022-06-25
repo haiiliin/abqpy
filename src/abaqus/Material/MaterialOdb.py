@@ -5,26 +5,24 @@ from ..Odb.OdbBase import OdbBase
 class MaterialOdb(OdbBase):
     """The Odb object is the in-memory representation of an output database (ODB) file.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name]
+            import odbAccess
+            session.odbs[name]
     """
 
     def Material(self, name: str, description: str = "", materialIdentifier: str = ""):
         """This method creates a Material object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].Material
+                session.odbs[name].Material
 
         Parameters
         ----------

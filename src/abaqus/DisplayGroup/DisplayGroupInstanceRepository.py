@@ -6,15 +6,14 @@ class DisplayGroupInstanceRepository:
     addition to all the standard Python repository methods, the DisplayGroupInstance
     repository defines additional methods as described below.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.viewports[name].layers[name].odbDisplay.displayGroupInstances
-        session.viewports[name].odbDisplay.displayGroupInstances
+            import visualization
+            session.viewports[name].layers[name].odbDisplay.displayGroupInstances
+            session.viewports[name].odbDisplay.displayGroupInstances
     """
 
     def syncOptions(self, name: str, updateInstances: Boolean = ON):

@@ -6,14 +6,13 @@ class LocalStopCondition(StopCondition):
     """The LocalStopCondition object defines a local stop condition.
     The LocalStopCondition object is derived from the StopCondition object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import optimization
-        mdb.models[name].optimizationTasks[name].stopConditions[name]
+            import optimization
+            mdb.models[name].optimizationTasks[name].stopConditions[name]
     """
 
     #: A String specifying the stop condition repository key.
@@ -75,13 +74,12 @@ class LocalStopCondition(StopCondition):
     ):
         """This method creates a LocalStopCondition object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      mdb.models[name].optimizationTasks[name].LocalStopCondition
+                mdb.models[name].optimizationTasks[name].LocalStopCondition
 
         Parameters
         ----------

@@ -6,13 +6,12 @@ class RegionAssemblyBase(AssemblyBase):
     """The following commands operate on Assembly objects. For more information about the
     Assembly object, see Assembly object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import regionToolset
+            import regionToolset
     """
 
     def clashSets(self, arg1: str, arg2: str):

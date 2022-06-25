@@ -61,13 +61,12 @@ class InteractionModel(
 ):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name]
+            mdb.models[name]
     """
 
     def contactDetection(
@@ -216,8 +215,7 @@ class InteractionModel(
     ) -> AcousticImpedance:
         """This method creates an AcousticImpedance object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -294,8 +292,7 @@ class InteractionModel(
     ) -> AcousticImpedanceProp:
         """This method creates an AcousticImpedanceProp object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -345,8 +342,7 @@ class InteractionModel(
     ) -> ActuatorSensor:
         """This method creates an ActuatorSensor object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -403,8 +399,7 @@ class InteractionModel(
     ) -> ActuatorSensorProp:
         """This method creates an ActuatorSensorProp object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -476,8 +471,7 @@ class InteractionModel(
     ) -> CavityRadiation:
         """This method creates a CavityRadiation object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -695,8 +689,7 @@ class InteractionModel(
     ) -> CavityRadiationProp:
         """This method creates a CavityRadiationProp object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -745,8 +738,7 @@ class InteractionModel(
     ) -> ConcentratedFilmCondition:
         """This method creates a ConcentratedFilmCondition object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -849,8 +841,7 @@ class InteractionModel(
     ) -> ConcentratedRadiationToAmbient:
         """This method creates a ConcentratedRadiationToAmbient object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -929,8 +920,7 @@ class InteractionModel(
     ):
         """This method creates a ContactExp object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -997,8 +987,7 @@ class InteractionModel(
     def ContactProperty(self, name: str) -> ContactProperty:
         """This method creates a ContactProperty object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -1040,8 +1029,7 @@ class InteractionModel(
     ) -> ContactStd:
         """This method creates a ContactStd object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -1135,8 +1123,7 @@ class InteractionModel(
     ) -> CyclicSymmetry:
         """This method creates a CyclicSymmetry object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -1222,8 +1209,7 @@ class InteractionModel(
     ) -> ElasticFoundation:
         """This method creates an ElasticFoundation object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -1264,8 +1250,7 @@ class InteractionModel(
     ) -> ExpContactControl:
         """This method creates an ExpContactControl object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -1335,8 +1320,7 @@ class InteractionModel(
     ) -> FilmCondition:
         """This method creates a FilmCondition object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -1422,8 +1406,7 @@ class InteractionModel(
     ) -> FilmConditionProp:
         """This method creates a FilmConditionProp object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -1471,8 +1454,7 @@ class InteractionModel(
     ) -> FluidCavity:
         """This method creates an FluidCavity object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -1545,8 +1527,7 @@ class InteractionModel(
     ) -> FluidCavityProperty:
         """This method creates a FluidCavityProperty object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -1689,8 +1670,7 @@ class InteractionModel(
     ) -> FluidExchange:
         """This method creates an FluidExchange object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -1744,8 +1724,7 @@ class InteractionModel(
     ) -> FluidExchangeProperty:
         """This method creates a FluidExchangeProperty object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -1855,8 +1834,7 @@ class InteractionModel(
     ) -> IncidentWave:
         """This method creates an IncidentWave object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -1973,8 +1951,7 @@ class InteractionModel(
     ) -> IncidentWaveProperty:
         """This method creates an IncidentWaveProperty object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -2154,8 +2131,7 @@ class InteractionModel(
     ) -> ModelChange:
         """This method creates a ModelChange object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -2217,8 +2193,7 @@ class InteractionModel(
     ) -> PressurePenetration:
         """This method creates a PressurePenetration object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -2287,8 +2262,7 @@ class InteractionModel(
     ) -> RadiationToAmbient:
         """This method creates a RadiationToAmbient object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -2358,8 +2332,7 @@ class InteractionModel(
     ) -> SelfContactExp:
         """This method creates a SelfContactExp object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -2413,8 +2386,7 @@ class InteractionModel(
     ) -> SelfContactStd:
         """This method creates a SelfContactStd object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -2487,8 +2459,7 @@ class InteractionModel(
     ) -> StdContactControl:
         """This method creates an StdContactControl object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -2622,8 +2593,7 @@ class InteractionModel(
     ) -> StdInitialization:
         """This method creates a StdInitialization object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -2684,8 +2654,7 @@ class InteractionModel(
     ) -> StdStabilization:
         """This method creates a StdStabilization object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -2747,8 +2716,7 @@ class InteractionModel(
     ) -> StdXplCosimulation:
         """This method creates a StdXplCosimulation object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -2811,8 +2779,7 @@ class InteractionModel(
     ) -> SurfaceToSurfaceContactExp:
         """This method creates a SurfaceToSurfaceContactExp object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -2936,8 +2903,7 @@ class InteractionModel(
     ) -> SurfaceToSurfaceContactStd:
         """This method creates a SurfaceToSurfaceContactStd object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python
@@ -3098,8 +3064,7 @@ class InteractionModel(
     ) -> XFEMCrackGrowth:
         """This method creates an XFEMCrackGrowth object.
 
-        Notes
-        -----
+        .. note:: 
             This function can be accessed by:
 
             .. code-block:: python

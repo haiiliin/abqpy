@@ -1,26 +1,24 @@
 class Spectrum:
     """The Spectrum object defines a color spectrum for the contour display.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.spectrums[name]
+            import visualization
+            session.spectrums[name]
     """
 
     def __init__(self, name: str, colors: tuple):
         """This method creates a Spectrum object and places it in the spectrums repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.Spectrum
+                session.Spectrum
 
         Parameters
         ----------

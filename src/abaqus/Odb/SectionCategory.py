@@ -10,31 +10,30 @@ class SectionCategory:
     in the output database. For more information, see Beam Section profile commands and
     Section commands.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import
-        odbAccess
-        session.odbs[name].parts[name].elements[i].sectionCategory
-        session.odbs[name].parts[name].elementSets[name].elements[i].sectionCategory
-        session.odbs[name].parts[name].nodeSets[name].elements[i].sectionCategory
-        session.odbs[name].parts[name].surfaces[name].elements[i].sectionCategory
-        session.odbs[name].rootAssembly.elements[i].sectionCategory
-        session.odbs[name].rootAssembly.elementSets[name].elements[i].sectionCategory
-        session.odbs[name].rootAssembly.instances[name].elements[i].sectionCategory
-        session.odbs[name].rootAssembly.instances[name].elementSets[name].elements[i].sectionCategory
-        session.odbs[name].rootAssembly.instances[name].nodeSets[name].elements[i].sectionCategory
-        session.odbs[name].rootAssembly.instances[name].surfaces[name].elements[i].sectionCategory
-        session.odbs[name].rootAssembly.nodeSets[name].elements[i].sectionCategory
-        session.odbs[name].rootAssembly.surfaces[name].elements[i].sectionCategory
-        session.odbs[name].sectionCategories[name]
-        session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.elements[i].sectionCategory
-        session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.elementSets[name].elements[i].sectionCategory
-        session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.nodeSets[name].elements[i].sectionCategory
-        session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.surfaces[name].elements[i].sectionCategory
+            import
+            odbAccess
+            session.odbs[name].parts[name].elements[i].sectionCategory
+            session.odbs[name].parts[name].elementSets[name].elements[i].sectionCategory
+            session.odbs[name].parts[name].nodeSets[name].elements[i].sectionCategory
+            session.odbs[name].parts[name].surfaces[name].elements[i].sectionCategory
+            session.odbs[name].rootAssembly.elements[i].sectionCategory
+            session.odbs[name].rootAssembly.elementSets[name].elements[i].sectionCategory
+            session.odbs[name].rootAssembly.instances[name].elements[i].sectionCategory
+            session.odbs[name].rootAssembly.instances[name].elementSets[name].elements[i].sectionCategory
+            session.odbs[name].rootAssembly.instances[name].nodeSets[name].elements[i].sectionCategory
+            session.odbs[name].rootAssembly.instances[name].surfaces[name].elements[i].sectionCategory
+            session.odbs[name].rootAssembly.nodeSets[name].elements[i].sectionCategory
+            session.odbs[name].rootAssembly.surfaces[name].elements[i].sectionCategory
+            session.odbs[name].sectionCategories[name]
+            session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.elements[i].sectionCategory
+            session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.elementSets[name].elements[i].sectionCategory
+            session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.nodeSets[name].elements[i].sectionCategory
+            session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.surfaces[name].elements[i].sectionCategory
     """
 
     #: A :py:class:`~abaqus.Odb.SectionPointArray.SectionPointArray` object.
@@ -49,13 +48,12 @@ class SectionCategory:
     def __init__(self, name: str, description: str):
         """This method creates a SectionCategory object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[*name*].SectionCategory
+                session.odbs[*name*].SectionCategory
 
         Parameters
         ----------
@@ -74,13 +72,12 @@ class SectionCategory:
     def SectionPoint(self, number: int, description: str) -> SectionPoint:
         """This method creates a SectionPoint object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[*name*].SectionCategory
+                session.odbs[*name*].SectionCategory
 
         Parameters
         ----------

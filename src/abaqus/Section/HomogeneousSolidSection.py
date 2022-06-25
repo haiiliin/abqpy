@@ -5,20 +5,19 @@ class HomogeneousSolidSection(SolidSection):
     """The HomogeneousSolidSection object defines the properties of a solid section.
     The HomogeneousSolidSection object is derived from the SolidSection object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].sections[name]
-        import odbSection
-        session.odbs[name].sections[name]
+            import section
+            mdb.models[name].sections[name]
+            import odbSection
+            session.odbs[name].sections[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - SOLID SECTION
+        - SOLID SECTION
     """
 
     #: A String specifying the repository key.
@@ -34,14 +33,13 @@ class HomogeneousSolidSection(SolidSection):
     def __init__(self, name: str, material: str, thickness: float = None):
         """This method creates a HomogeneousSolidSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].HomogeneousSolidSection
-            session.odbs[name].HomogeneousSolidSection
+                mdb.models[name].HomogeneousSolidSection
+                session.odbs[name].HomogeneousSolidSection
 
         Parameters
         ----------

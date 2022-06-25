@@ -33,19 +33,18 @@ class ResponseSpectrumStep(AnalysisStep):
     modes of the system.
     The ResponseSpectrumStep object is derived from the AnalysisStep object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name]
+            import step
+            mdb.models[name].steps[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - RESPONSE SPECTRUM
-            - STEP
+        - RESPONSE SPECTRUM
+                - STEP
     """
 
     #: A String specifying the repository key.
@@ -208,13 +207,12 @@ class ResponseSpectrumStep(AnalysisStep):
     ):
         """This method creates a ResponseSpectrumStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ResponseSpectrumStep
+                mdb.models[name].ResponseSpectrumStep
 
         Parameters
         ----------

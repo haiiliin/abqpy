@@ -21,26 +21,25 @@ class XYData:
     they are not used anymore. Temporary XYData objects are also created as a result of math
     operations found in the abaqusMath module.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.charts[name].axes1[i].axisData.curves[i].data
-        session.charts[name].axes2[i].axisData.curves[i].data
-        session.charts[name].curves[name].data
-        session.curves[name].data
-        session.defaultChartOptions.defaultAxis1Options.axisData.curves[i].data
-        session.defaultChartOptions.defaultAxis2Options.axisData.curves[i].data
-        import odbAccess
-        session.odbs[name].userData.xyDataObjects[name]
-        session.xyDataObjects[name]
-        session.xyPlots[name].charts[name].axes1[i].axisData.curves[i].data
-        session.xyPlots[name].charts[name].axes2[i].axisData.curves[i].data
-        session.xyPlots[name].charts[name].curves[name].data
-        session.xyPlots[name].curves[name].data
+            import visualization
+            session.charts[name].axes1[i].axisData.curves[i].data
+            session.charts[name].axes2[i].axisData.curves[i].data
+            session.charts[name].curves[name].data
+            session.curves[name].data
+            session.defaultChartOptions.defaultAxis1Options.axisData.curves[i].data
+            session.defaultChartOptions.defaultAxis2Options.axisData.curves[i].data
+            import odbAccess
+            session.odbs[name].userData.xyDataObjects[name]
+            session.xyDataObjects[name]
+            session.xyPlots[name].charts[name].axes1[i].axisData.curves[i].data
+            session.xyPlots[name].charts[name].axes2[i].axisData.curves[i].data
+            session.xyPlots[name].charts[name].curves[name].data
+            session.xyPlots[name].curves[name].data
     """
 
     #: A SymbolicConstant specifying the source type of the XYData object. Possible values are
@@ -110,14 +109,13 @@ class XYData:
     ):
         """This method creates an XYData object from a sequence of **X - Y** data pairs.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.XYData
-            xyPlot.XYData
+                session.XYData
+                xyPlot.XYData
 
         Parameters
         ----------
@@ -164,14 +162,13 @@ class XYData:
     def __init__(self, objectToCopy: "XYData"):
         """This method creates an XYData object by copying an existing XYData object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.XYData
-            xyPlot.XYData
+                session.XYData
+                xyPlot.XYData
 
         Parameters
         ----------
@@ -206,14 +203,13 @@ class XYData:
     ):
         """This method creates an XYData object from data in an ASCII file.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.XYData
-            xyPlot.XYData
+                session.XYData
+                xyPlot.XYData
 
         Parameters
         ----------
@@ -286,14 +282,13 @@ class XYData:
     ):
         """This method creates an XYData object by reading history data from an Odb object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.XYData
-            xyPlot.XYData
+                session.XYData
+                xyPlot.XYData
 
         Parameters
         ----------
@@ -362,14 +357,13 @@ class XYData:
     ) -> list["XYData"]:
         """This method creates a list of XYData objects by reading field data from an Odb object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.XYData
-            xyPlot.XYData
+                session.XYData
+                xyPlot.XYData
 
         Parameters
         ----------
@@ -461,14 +455,13 @@ class XYData:
         """This method creates a list of XYData objects by computing free body data from an Odb
         object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.XYData
-            xyPlot.XYData
+                session.XYData
+                xyPlot.XYData
 
         Parameters
         ----------
@@ -521,14 +514,13 @@ class XYData:
         """This method creates a list of XYData objects by reading through the thickness field data
         from an Odb object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.XYData
-            xyPlot.XYData
+                session.XYData
+                xyPlot.XYData
 
         Parameters
         ----------
@@ -618,14 +610,13 @@ class XYData:
     ):
         """This method creates an XYData object from path information.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.XYData
-            xyPlot.XYData
+                session.XYData
+                xyPlot.XYData
 
         Parameters
         ----------

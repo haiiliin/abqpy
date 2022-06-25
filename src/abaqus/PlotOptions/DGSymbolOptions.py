@@ -7,18 +7,17 @@ class DGSymbolOptions:
     *odbDisplayOptions.symbolOptions* member when a display group instance is created, using
     values from *odbDisplay.symbolOptions*.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        session.viewports[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.symbolOptions
-        session.viewports[name].layers[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.symbolOptions
-        session.viewports[name].layers[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.symbolOptions
-        session.viewports[name].layers[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.symbolOptions
-        session.viewports[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.symbolOptions
-        session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.symbolOptions
+            session.viewports[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.symbolOptions
+            session.viewports[name].layers[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.symbolOptions
+            session.viewports[name].layers[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.symbolOptions
+            session.viewports[name].layers[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.symbolOptions
+            session.viewports[name].odbDisplay.displayGroupInstances[name].odbDisplayOptions.symbolOptions
+            session.viewports[name].partDisplay.displayGroupInstances[name].odbDisplayOptions.symbolOptions
     """
 
     #: A SymbolicConstant specifying the vector line thickness. Possible values are VERY_THIN,

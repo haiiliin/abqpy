@@ -13,14 +13,13 @@ class Assembly(MeshEditAssembly, MeshAssembly, PropertyAssembly, RegionAssembly)
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
     created.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import assembly
-        mdb.models[name].rootAssembly
+            import assembly
+            mdb.models[name].rootAssembly
     """
 
     def ConnectorOrientation(
@@ -36,14 +35,13 @@ class Assembly(MeshEditAssembly, MeshAssembly, PropertyAssembly, RegionAssembly)
     ) -> ConnectorOrientation:
         """This method creates a ConnectorOrientation object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].rootAssembly.ConnectorOrientation
-            session.odbs[name].rootAssembly.ConnectorOrientation
+                mdb.models[name].rootAssembly.ConnectorOrientation
+                session.odbs[name].rootAssembly.ConnectorOrientation
 
         Parameters
         ----------

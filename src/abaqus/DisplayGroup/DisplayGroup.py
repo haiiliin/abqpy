@@ -6,22 +6,21 @@ class DisplayGroup:
     """DisplayGroup objects are used to select a subset of the entities displayed in the
     viewport.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        session.displayGroups[name]
-        import assembly
-        session.viewports[name].assemblyDisplay.displayGroup
-        session.viewports[name].layers[name].assemblyDisplay.displayGroup
-        import visualization
-        session.viewports[name].layers[name].odbDisplay.displayGroup
-        import part
-        session.viewports[name].layers[name].partDisplay.displayGroup
-        session.viewports[name].odbDisplay.displayGroup
-        session.viewports[name].partDisplay.displayGroup
+            session.displayGroups[name]
+            import assembly
+            session.viewports[name].assemblyDisplay.displayGroup
+            session.viewports[name].layers[name].assemblyDisplay.displayGroup
+            import visualization
+            session.viewports[name].layers[name].odbDisplay.displayGroup
+            import part
+            session.viewports[name].layers[name].partDisplay.displayGroup
+            session.viewports[name].odbDisplay.displayGroup
+            session.viewports[name].partDisplay.displayGroup
     """
 
     #: A Boolean specifying whether Undo is possible or not.
@@ -48,13 +47,12 @@ class DisplayGroup:
     def __init__(self, name: str, leaf: Leaf):
         """This method creates a DisplayGroup object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.DisplayGroup
+                session.DisplayGroup
 
         Parameters
         ----------

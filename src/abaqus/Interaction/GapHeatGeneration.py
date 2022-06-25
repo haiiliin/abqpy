@@ -2,18 +2,17 @@ class GapHeatGeneration:
     """The GapHeatGeneration object specifies heat generation for a contact interaction
     property.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactionProperties[name].heatGeneration
+            import interaction
+            mdb.models[name].interactionProperties[name].heatGeneration
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - GAP HEAT GENERATION
+        - GAP HEAT GENERATION
     """
 
     #: A Float specifying the fraction of dissipated energy caused by friction or electric
@@ -27,13 +26,12 @@ class GapHeatGeneration:
     def __init__(self, conversionFraction: float = 1, secondaryFraction: float = 0):
         """This method creates a GapHeatGeneration object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].interactionProperties[name].HeatGeneration
+                mdb.models[name].interactionProperties[name].HeatGeneration
 
         Parameters
         ----------

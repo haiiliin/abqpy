@@ -12,26 +12,24 @@ class ModelBase:
 class AssemblyModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb.models[name]
+            mdb.models[name]
     """
 
     def Instance(self, name: str, objectToCopy: PartInstance):
         """This method copies a PartInstance object from the specified model and creates a new
         PartInstance object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Instance
+                mdb.models[name].Instance
 
         Parameters
         ----------

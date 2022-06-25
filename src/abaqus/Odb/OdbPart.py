@@ -52,15 +52,14 @@ class OdbPart(OdbPartBase):
         instance-level sets) or from a sequence of arrays of OdbMeshNode objects (for
         assembly-level sets).
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].parts[name].NodeSet
-            session.odbs[name].rootAssembly.instances[name].NodeSet
-            session.odbs[name].rootAssembly.NodeSet
+                session.odbs[name].parts[name].NodeSet
+                session.odbs[name].rootAssembly.instances[name].NodeSet
+                session.odbs[name].rootAssembly.NodeSet
 
         Parameters
         ----------

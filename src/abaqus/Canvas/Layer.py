@@ -8,13 +8,12 @@ from ..UtilityAndView.View import View
 class Layer:
     """Objects can be superimposed by displaying them in different layers of a viewport.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        session.viewports[name].layers[name]
+            session.viewports[name].layers[name]
     """
 
     #: A :py:class:`~abaqus.Canvas.Displayable.Displayable` object specifying the object to be displayed. The Displayable type is an
@@ -43,13 +42,12 @@ class Layer:
     def __init__(self, name: str, copyViewName: str = ""):
         """This method creates a Layer object in the Layer repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.viewports[name].Layer
+                session.viewports[name].Layer
 
         Parameters
         ----------

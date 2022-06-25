@@ -5,43 +5,41 @@ class Trs:
     r"""The Trs object defines the temperature-time shift for time history viscoelastic
     analysis.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].viscoelastic.trs
-        mdb.models[name].materials[name].viscosity.trs
-        import odbMaterial
-        session.odbs[name].materials[name].viscoelastic.trs
-        session.odbs[name].materials[name].viscosity.trs
+            import material
+            mdb.models[name].materials[name].viscoelastic.trs
+            mdb.models[name].materials[name].viscosity.trs
+            import odbMaterial
+            session.odbs[name].materials[name].viscoelastic.trs
+            session.odbs[name].materials[name].viscosity.trs
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Reference temperature, :math:`\theta_{0}`.
-    - Calibration constant, :math:`C_{1}`.
-    - Calibration constant, :math:`C_{2}`.
+        - Reference temperature, :math:`\theta_{0}`.
+        - Calibration constant, :math:`C_{1}`.
+        - Calibration constant, :math:`C_{2}`.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - TRS
+        - TRS
     """
 
     def __init__(self, definition: SymbolicConstant = WLF, table: tuple = ()):
         """This method creates a Trs object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].viscoelastic.Trs
-            mdb.models[name].materials[name].viscosity.Trs
-            session.odbs[name].materials[name].viscoelastic.Trs
-            session.odbs[name].materials[name].viscosity.Trs
+                mdb.models[name].materials[name].viscoelastic.Trs
+                mdb.models[name].materials[name].viscosity.Trs
+                session.odbs[name].materials[name].viscoelastic.Trs
+                session.odbs[name].materials[name].viscosity.Trs
 
         Parameters
         ----------

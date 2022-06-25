@@ -8,19 +8,18 @@ class Axis:
     """The Axis object is used to store the display attributes of axes. Axes objects are
     automatically created when adding XYCurve objects to a Chart object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.charts[name].axes1[i]
-        session.charts[name].axes2[i]
-        session.defaultChartOptions.defaultAxis1Options
-        session.defaultChartOptions.defaultAxis2Options
-        session.xyPlots[name].charts[name].axes1[i]
-        session.xyPlots[name].charts[name].axes2[i]
+            import visualization
+            session.charts[name].axes1[i]
+            session.charts[name].axes2[i]
+            session.defaultChartOptions.defaultAxis1Options
+            session.defaultChartOptions.defaultAxis2Options
+            session.xyPlots[name].charts[name].axes1[i]
+            session.xyPlots[name].charts[name].axes2[i]
     """
 
     #: An Int specifying the frequency of the labels with respect to the tick marks. The

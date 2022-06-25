@@ -5,22 +5,21 @@ from .ConnectorOptions import ConnectorOptions
 class CDCTerm:
     """The CDCTerm object is used to create contributing terms for a DerivedComponent object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].sections[name].behaviorOptions[i].connectorPotentials[i].derivedComponent.cdcTerms[i]
-        mdb.models[name].sections[name].behaviorOptions[i].derivedComponent.cdcTerms[i]
-        mdb.models[name].sections[name].behaviorOptions[i].evolutionPotentials[i].derivedComponent.cdcTerms[i]
-        mdb.models[name].sections[name].behaviorOptions[i].initiationPotentials[i].derivedComponent.cdcTerms[i]
-        import odbSection
-        session.odbs[name].sections[name].behaviorOptions[i].connectorPotentials[i].derivedComponent.cdcTerms[i]
-        session.odbs[name].sections[name].behaviorOptions[i].derivedComponent.cdcTerms[i]
-        session.odbs[name].sections[name].behaviorOptions[i].evolutionPotentials[i].derivedComponent.cdcTerms[i]
-        session.odbs[name].sections[name].behaviorOptions[i].initiationPotentials[i].derivedComponent.cdcTerms[i]
+            import section
+            mdb.models[name].sections[name].behaviorOptions[i].connectorPotentials[i].derivedComponent.cdcTerms[i]
+            mdb.models[name].sections[name].behaviorOptions[i].derivedComponent.cdcTerms[i]
+            mdb.models[name].sections[name].behaviorOptions[i].evolutionPotentials[i].derivedComponent.cdcTerms[i]
+            mdb.models[name].sections[name].behaviorOptions[i].initiationPotentials[i].derivedComponent.cdcTerms[i]
+            import odbSection
+            session.odbs[name].sections[name].behaviorOptions[i].connectorPotentials[i].derivedComponent.cdcTerms[i]
+            session.odbs[name].sections[name].behaviorOptions[i].derivedComponent.cdcTerms[i]
+            session.odbs[name].sections[name].behaviorOptions[i].evolutionPotentials[i].derivedComponent.cdcTerms[i]
+            session.odbs[name].sections[name].behaviorOptions[i].initiationPotentials[i].derivedComponent.cdcTerms[i]
     """
 
     #: A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object specifying the ConnectorOptions used to define tabular options
@@ -89,20 +88,19 @@ class CDCTerm:
     ):
         """This method creates a CDCTerm object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sections[name].behaviorOptions[i].connectorPotentials[i].derivedComponent.CDCTerm
-            mdb.models[name].sections[name].behaviorOptions[i].derivedComponent.CDCTerm
-            mdb.models[name].sections[name].behaviorOptions[i].evolutionPotentials[i].derivedComponent.CDCTerm
-            mdb.models[name].sections[name].behaviorOptions[i].initiationPotentials[i].derivedComponent.CDCTerm
-            session.odbs[name].sections[name].behaviorOptions[i].connectorPotentials[i].derivedComponent.CDCTerm
-            session.odbs[name].sections[name].behaviorOptions[i].derivedComponent.CDCTerm
-            session.odbs[name].sections[name].behaviorOptions[i].evolutionPotentials[i].derivedComponent.CDCTerm
-            session.odbs[name].sections[name].behaviorOptions[i].initiationPotentials[i].derivedComponent.CDCTerm
+                mdb.models[name].sections[name].behaviorOptions[i].connectorPotentials[i].derivedComponent.CDCTerm
+                mdb.models[name].sections[name].behaviorOptions[i].derivedComponent.CDCTerm
+                mdb.models[name].sections[name].behaviorOptions[i].evolutionPotentials[i].derivedComponent.CDCTerm
+                mdb.models[name].sections[name].behaviorOptions[i].initiationPotentials[i].derivedComponent.CDCTerm
+                session.odbs[name].sections[name].behaviorOptions[i].connectorPotentials[i].derivedComponent.CDCTerm
+                session.odbs[name].sections[name].behaviorOptions[i].derivedComponent.CDCTerm
+                session.odbs[name].sections[name].behaviorOptions[i].evolutionPotentials[i].derivedComponent.CDCTerm
+                session.odbs[name].sections[name].behaviorOptions[i].initiationPotentials[i].derivedComponent.CDCTerm
 
         Parameters
         ----------
@@ -180,20 +178,19 @@ class CDCTerm:
         """This method creates a connector options object to be used in conjunction with an
         allowable connector behavior option, derived component term, or connector section.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sections[name].behaviorOptions[i].connectorPotentials[i].derivedComponent.CDCTerm
-            mdb.models[name].sections[name].behaviorOptions[i].derivedComponent.CDCTerm
-            mdb.models[name].sections[name].behaviorOptions[i].evolutionPotentials[i].derivedComponent.CDCTerm
-            mdb.models[name].sections[name].behaviorOptions[i].initiationPotentials[i].derivedComponent.CDCTerm
-            session.odbs[name].sections[name].behaviorOptions[i].connectorPotentials[i].derivedComponent.CDCTerm
-            session.odbs[name].sections[name].behaviorOptions[i].derivedComponent.CDCTerm
-            session.odbs[name].sections[name].behaviorOptions[i].evolutionPotentials[i].derivedComponent.CDCTerm
-            session.odbs[name].sections[name].behaviorOptions[i].initiationPotentials[i].derivedComponent.CDCTerm
+                mdb.models[name].sections[name].behaviorOptions[i].connectorPotentials[i].derivedComponent.CDCTerm
+                mdb.models[name].sections[name].behaviorOptions[i].derivedComponent.CDCTerm
+                mdb.models[name].sections[name].behaviorOptions[i].evolutionPotentials[i].derivedComponent.CDCTerm
+                mdb.models[name].sections[name].behaviorOptions[i].initiationPotentials[i].derivedComponent.CDCTerm
+                session.odbs[name].sections[name].behaviorOptions[i].connectorPotentials[i].derivedComponent.CDCTerm
+                session.odbs[name].sections[name].behaviorOptions[i].derivedComponent.CDCTerm
+                session.odbs[name].sections[name].behaviorOptions[i].evolutionPotentials[i].derivedComponent.CDCTerm
+                session.odbs[name].sections[name].behaviorOptions[i].initiationPotentials[i].derivedComponent.CDCTerm
 
         Parameters
         ----------

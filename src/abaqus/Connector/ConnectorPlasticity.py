@@ -9,74 +9,73 @@ class ConnectorPlasticity(ConnectorBehaviorOption):
     connector's relative motion.
     The ConnectorPlasticity object is derived from the ConnectorBehaviorOption object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].sections[name].behaviorOptions[i]
-        import odbSection
-        session.odbs[name].sections[name].behaviorOptions[i]
+            import section
+            mdb.models[name].sections[name].behaviorOptions[i]
+            import odbSection
+            session.odbs[name].sections[name].behaviorOptions[i]
 
-    The table data for this object are:
-    
-    Table data for **isotropicTable**:
-    
-    - If **isotropicType** = TABULAR, then each sequence of the table data specifies the following:
-    
-        - Equivalent yield force or moment defining the size of the elastic range.
-        - Equivalent relative Plastic motion.
-        - Equivalent relative Plastic motion rate.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **isotropicType** = EXPONENTIAL_LAW, then each sequence of the table data specifies the following:
+        The table data for this object are:
         
-        - Equivalent force or moment defining the size of the elastic range at zero Plastic motion.
-        - Isotropic hardening parameter QinfQinf.
-        - Isotropic hardening parameter bb.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+        Table data for **isotropicTable**:
         
-    Table data for **kinematicTable**:
-    
-    - If **kinematicType** = HALF_CYCLE, then each sequence of the table data specifies the following:
+        - If **isotropicType** = TABULAR, then each sequence of the table data specifies the following:
         
-        - Yield force or moment.
-        - Connector relative Plastic motion.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **kinematicType** = STABILIZED, then each sequence of the table data specifies the following:
+            - Equivalent yield force or moment defining the size of the elastic range.
+            - Equivalent relative Plastic motion.
+            - Equivalent relative Plastic motion rate.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **isotropicType** = EXPONENTIAL_LAW, then each sequence of the table data specifies the following:
+            
+            - Equivalent force or moment defining the size of the elastic range at zero Plastic motion.
+            - Isotropic hardening parameter QinfQinf.
+            - Isotropic hardening parameter bb.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+            
+        Table data for **kinematicTable**:
         
-        - Yield force or moment.
-        - Connector relative Plastic motion.
-        - Connector relative constitutive motion range.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **kinematicType** = PARAMETERS, then each sequence of the table data specifies the following:
-        
-        - Yield force or moment at zero relative Plastic motion.
-        - Kinematic hardening parameter CC.
-        - Kinematic hardening parameter γγ. Set γγ=0 to specify linear Ziegler kinematic hardening.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+        - If **kinematicType** = HALF_CYCLE, then each sequence of the table data specifies the following:
+            
+            - Yield force or moment.
+            - Connector relative Plastic motion.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **kinematicType** = STABILIZED, then each sequence of the table data specifies the following:
+            
+            - Yield force or moment.
+            - Connector relative Plastic motion.
+            - Connector relative constitutive motion range.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **kinematicType** = PARAMETERS, then each sequence of the table data specifies the following:
+            
+            - Yield force or moment at zero relative Plastic motion.
+            - Kinematic hardening parameter CC.
+            - Kinematic hardening parameter γγ. Set γγ=0 to specify linear Ziegler kinematic hardening.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONNECTOR PLASTICITY
-    - CONNECTOR HARDENING
-    - CONNECTOR POTENTIAL
+        - CONNECTOR PLASTICITY
+        - CONNECTOR HARDENING
+        - CONNECTOR POTENTIAL
     """
 
     #: A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object specifying the ConnectorOptions used to define tabular options
@@ -176,16 +175,15 @@ class ConnectorPlasticity(ConnectorBehaviorOption):
         """This method creates a connector plasticity behavior option for a ConnectorSection
         object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      import connectorBehavior
-                      connectorBehavior.ConnectorPlasticity
-                      import odbConnectorBehavior
-                      odbConnectorBehavior.ConnectorPlasticity
+                import connectorBehavior
+                          connectorBehavior.ConnectorPlasticity
+                          import odbConnectorBehavior
+                          odbConnectorBehavior.ConnectorPlasticity
 
         Parameters
         ----------

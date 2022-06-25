@@ -9,18 +9,17 @@ class MaterialAssignment(PredefinedField):
     predefined field, for use with an Eulerian analysis.
     The MaterialAssignment object is derived from the PredefinedField object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].predefinedFields[name]
+            import load
+            mdb.models[name].predefinedFields[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - INITIAL CONDITIONS
+        - INITIAL CONDITIONS
     """
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the predefined field is applied.
@@ -67,13 +66,12 @@ class MaterialAssignment(PredefinedField):
     ):
         """This method creates a MaterialAssignment predefined field object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].MaterialAssignment
+                mdb.models[name].MaterialAssignment
 
         Parameters
         ----------

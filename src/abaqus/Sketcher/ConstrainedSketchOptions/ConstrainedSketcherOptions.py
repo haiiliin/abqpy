@@ -6,14 +6,13 @@ class ConstrainedSketcherOptions:
     be applied to all sketches used in the current session. The ConstrainedSketcherOptions
     object has no constructor.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import sketch
-        session.sketcherOptions
+            import sketch
+            session.sketcherOptions
     """
 
     def setValues(

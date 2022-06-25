@@ -8,14 +8,13 @@ class ConcentratedRadiationToAmbient(Interaction):
     and its nonreflecting environment.
     The ConcentratedRadiationToAmbient object is derived from the Interaction object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactions[name]
+            import interaction
+            mdb.models[name].interactions[name]
     """
 
     #: A String specifying the repository key.
@@ -76,13 +75,12 @@ class ConcentratedRadiationToAmbient(Interaction):
     ):
         """This method creates a ConcentratedRadiationToAmbient object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ConcentratedRadiationToAmbient
+                mdb.models[name].ConcentratedRadiationToAmbient
 
         Parameters
         ----------

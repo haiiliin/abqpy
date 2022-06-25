@@ -7,14 +7,13 @@ class AnimationOptions:
     The AnimationOptions object has no constructor command. Abaqus creates the
     **animationOptions** member when it creates the AnimationController object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import animation
-        session.animationOptions
+            import animation
+            session.animationOptions
     """
 
     #: A SymbolicConstant specifying the animation mode. Possible values are PLAY_ONCE, LOOP,

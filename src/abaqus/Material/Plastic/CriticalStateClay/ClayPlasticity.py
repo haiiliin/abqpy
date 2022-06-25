@@ -5,48 +5,47 @@ from .ClayHardening import ClayHardening
 class ClayPlasticity:
     r"""The ClayPlasticity object specifies the extended Cam-clay plasticity model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].clayPlasticity
-        import odbMaterial
-        session.odbs[name].materials[name].clayPlasticity
+            import material
+            mdb.models[name].materials[name].clayPlasticity
+            import odbMaterial
+            session.odbs[name].materials[name].clayPlasticity
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **hardening** = EXPONENTIAL, the table data specify the following:
-    
-        - Logarithmic plastic bulk modulus, :math:`\lambda` (dimensionless).
-        - Stress ratio at critical state, :math:`M`.
-        - The initial yield surface size, :math:`a_{0}`.
-        - :math:`\beta`, the parameter defining the size of the yield surface on the "wet" side of critical state.
-        - :math:`K`, the ratio of the flow stress in triaxial tension to the flow stress in triaxial
-          compression. :math:`0.778 \leq K \leq 1.0`. If the default value of :math:`0.0` is accepted, a 
-          value of :math:`1.0` is assumed.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    - If **hardening** = TABULAR, the table data specify the following:
-    
-        - Stress ratio at critical state, :math:`M`
-        - The initial volumetric plastic strain, :math:`\left.\varepsilon_{\mathrm{vol}}^{p l}\right|_{0}`, 
-          corresponding to :math:`\left.p_{c}\right|_{0}` according to the ClayHardening definition.
-        - :math:`\beta`, the parameter defining the size of the yield surface on the "wet" side of critical state.
-        - :math:`K`, the ratio of the flow stress in triaxial tension to the flow stress in triaxial compression. 
-          :math:`0.778 \leq K \leq 1.0`.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+        - If **hardening** = EXPONENTIAL, the table data specify the following:
+        
+            - Logarithmic plastic bulk modulus, :math:`\lambda` (dimensionless).
+            - Stress ratio at critical state, :math:`M`.
+            - The initial yield surface size, :math:`a_{0}`.
+            - :math:`\beta`, the parameter defining the size of the yield surface on the "wet" side of critical state.
+            - :math:`K`, the ratio of the flow stress in triaxial tension to the flow stress in triaxial
+              compression. :math:`0.778 \leq K \leq 1.0`. If the default value of :math:`0.0` is accepted, a 
+              value of :math:`1.0` is assumed.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        - If **hardening** = TABULAR, the table data specify the following:
+        
+            - Stress ratio at critical state, :math:`M`
+            - The initial volumetric plastic strain, :math:`\left.\varepsilon_{\mathrm{vol}}^{p l}\right|_{0}`, 
+              corresponding to :math:`\left.p_{c}\right|_{0}` according to the ClayHardening definition.
+            - :math:`\beta`, the parameter defining the size of the yield surface on the "wet" side of critical state.
+            - :math:`K`, the ratio of the flow stress in triaxial tension to the flow stress in triaxial compression. 
+              :math:`0.778 \leq K \leq 1.0`.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CLAY PLASTICITY
+        - CLAY PLASTICITY
     """
 
     #: A :py:class:`~abaqus.Material.Plastic.CriticalStateClay.ClayHardening.ClayHardening` object.
@@ -62,14 +61,13 @@ class ClayPlasticity:
     ):
         """This method creates a ClayPlasticity object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].ClayPlasticity
-            session.odbs[name].materials[name].ClayPlasticity
+                mdb.models[name].materials[name].ClayPlasticity
+                session.odbs[name].materials[name].ClayPlasticity
 
         Parameters
         ----------

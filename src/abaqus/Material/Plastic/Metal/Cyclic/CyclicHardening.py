@@ -5,30 +5,29 @@ class CyclicHardening:
     r"""The CyclicHardening object defines the evolution of the elastic domain for the nonlinear
     isotropic/kinematic hardening model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].Plastic.cyclicHardening
-        import odbMaterial
-        session.odbs[name].materials[name].Plastic.cyclicHardening
+            import material
+            mdb.models[name].materials[name].Plastic.cyclicHardening
+            import odbMaterial
+            session.odbs[name].materials[name].Plastic.cyclicHardening
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Equivalent stress.
-    - :math:`Q_{\infty}`(only if **parameters** = ON).
-    - Hardening parameter (only if **parameters** = ON).
-    - Temperature, if the data depend on temperature.
-    - Value of the first field variable, if the data depend on field variables.
-    - Value of the second field variable.
-    - Etc.
+        - Equivalent stress.
+        - :math:`Q_{\infty}`(only if **parameters** = ON).
+        - Hardening parameter (only if **parameters** = ON).
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CYCLIC HARDENING
+        - CYCLIC HARDENING
     """
 
     def __init__(
@@ -40,14 +39,13 @@ class CyclicHardening:
     ):
         """This method creates a CyclicHardening object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].Plastic.CyclicHardening
-            session.odbs[name].materials[name].Plastic.CyclicHardening
+                mdb.models[name].materials[name].Plastic.CyclicHardening
+                session.odbs[name].materials[name].Plastic.CyclicHardening
 
         Parameters
         ----------

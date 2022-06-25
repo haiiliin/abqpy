@@ -7,14 +7,13 @@ class DesignDirection(GeometricRestriction):
     """The DesignDirection object defines a design direction geometric restriction.
     The DesignDirection object is derived from the GeometricRestriction object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import optimization
-        mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
+            import optimization
+            mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
     """
 
     #: A String specifying the geometric restriction repository key.
@@ -78,13 +77,12 @@ class DesignDirection(GeometricRestriction):
     ):
         """This method creates a DesignDirection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-                      mdb.models[name].optimizationTasks[name].DesignDirection
+                mdb.models[name].optimizationTasks[name].DesignDirection
 
         Parameters
         ----------

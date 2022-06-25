@@ -21,22 +21,21 @@ class ExplicitDynamicsStep(AnalysisStep):
     analysis using explicit integration in Abaqus/Explicit.
     The ExplicitDynamicsStep object is derived from the AnalysisStep object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name]
+            import step
+            mdb.models[name].steps[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - BULK VISCOSITY
-            - DYNAMIC
-            - FIXED MASS SCALING
-            - STEP
-            - VARIABLE MASS SCALING
+        - BULK VISCOSITY
+                - DYNAMIC
+                - FIXED MASS SCALING
+                - STEP
+                - VARIABLE MASS SCALING
     """
 
     #: A String specifying the repository key.
@@ -204,13 +203,12 @@ class ExplicitDynamicsStep(AnalysisStep):
     ):
         """This method creates an ExplicitDynamicsStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].ExplicitDynamicsStep
+                mdb.models[name].ExplicitDynamicsStep
 
         Parameters
         ----------

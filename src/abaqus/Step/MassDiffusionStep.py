@@ -20,19 +20,18 @@ class MassDiffusionStep(AnalysisStep):
     diffusion analysis.
     The MassDiffusionStep object is derived from the AnalysisStep object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name]
+            import step
+            mdb.models[name].steps[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - MASS DIFFUSION
-            - STEP
+        - MASS DIFFUSION
+                - STEP
     """
 
     #: A String specifying the repository key.
@@ -209,13 +208,12 @@ class MassDiffusionStep(AnalysisStep):
     ):
         """This method creates a MassDiffusionStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].MassDiffusionStep
+                mdb.models[name].MassDiffusionStep
 
         Parameters
         ----------

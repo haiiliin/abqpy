@@ -5,20 +5,19 @@ class RegionPairs:
     """The RegionPairs object stores the domain pair definition for ContactExp and ContactStd
     objects. The RegionPairs object has no constructor or members.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactions[name].excludedPairs
-        mdb.models[name].interactions[name].includedPairs
+            import interaction
+            mdb.models[name].interactions[name].excludedPairs
+            mdb.models[name].interactions[name].includedPairs
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONTACT INCLUSIONS
-            - CONTACT EXCLUSIONS
+        - CONTACT INCLUSIONS
+                - CONTACT EXCLUSIONS
     """
 
     def setValuesInStep(

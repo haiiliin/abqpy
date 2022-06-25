@@ -5,17 +5,16 @@ class IgnoredEdgeArray:
     """The IgnoredEdgeArray is a sequence of IgnoredEdge objects. If the part is modified, then
     IgnoredEdgeArray must be updated for that part.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].ignoredEdges
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name].ignoredEdges
-        mdb.models[name].rootAssembly.instances[name].ignoredEdges
+            import part
+            mdb.models[name].parts[name].ignoredEdges
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name].ignoredEdges
+            mdb.models[name].rootAssembly.instances[name].ignoredEdges
     """
 
     def findAt(self, coordinates: tuple, printWarning: Boolean = True):

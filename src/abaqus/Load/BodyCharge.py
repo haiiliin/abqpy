@@ -7,14 +7,13 @@ class BodyCharge(Load):
     """The BodyCharge object stores the data for a body charge.
     The BodyCharge object is derived from the Load object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].loads[name]
+            import load
+            mdb.models[name].loads[name]
     """
 
     #: A String specifying the load repository key.
@@ -44,13 +43,12 @@ class BodyCharge(Load):
     ):
         """This method creates a BodyCharge object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].BodyCharge
+                mdb.models[name].BodyCharge
 
         Parameters
         ----------

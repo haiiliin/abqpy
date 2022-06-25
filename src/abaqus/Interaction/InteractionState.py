@@ -6,14 +6,13 @@ class InteractionState:
     objects. The InteractionState object has no explicit constructor. The members of the
     InteractionState object are common to all objects derived from InteractionState.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].steps[name].interactionStates[name]
+            import interaction
+            mdb.models[name].steps[name].interactionStates[name]
     """
 
     #: A SymbolicConstant specifying the propagation state of the InteractionState object.

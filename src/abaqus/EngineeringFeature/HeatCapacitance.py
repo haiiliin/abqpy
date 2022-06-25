@@ -8,28 +8,27 @@ class HeatCapacitance(Inertia):
     region.
     The HeatCapacitance object is derived from the Inertia object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].engineeringFeatures.inertias[name]
-        import assembly
-        mdb.models[name].rootAssembly.engineeringFeatures.inertias[name]
+            import part
+            mdb.models[name].parts[name].engineeringFeatures.inertias[name]
+            import assembly
+            mdb.models[name].rootAssembly.engineeringFeatures.inertias[name]
 
-    The table data specify the following:
-    
-    - Heat capacitance magnitude, ρcVρ⁢c⁢V (density × specific heat × volume).
-    - Temperature, if the data depend on temperature.
-    - Value of the first field variable, if the data depend on field variables.
-    - Value of the second field variable.
-    - Etc.
+        The table data specify the following:
+        
+        - Heat capacitance magnitude, ρcVρ⁢c⁢V (density × specific heat × volume).
+        - Temperature, if the data depend on temperature.
+        - Value of the first field variable, if the data depend on field variables.
+        - Value of the second field variable.
+        - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - HEATCAP
+        - HEATCAP
     """
 
     #: A Boolean specifying whether the inertia is suppressed or not. The default value is OFF.
@@ -61,14 +60,13 @@ class HeatCapacitance(Inertia):
     ):
         """This method creates a HeatCapacitance object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[name].engineeringFeatures.HeatCapacitance
-            mdb.models[name].rootAssembly.engineeringFeatures.HeatCapacitance
+                mdb.models[name].parts[name].engineeringFeatures.HeatCapacitance
+                mdb.models[name].rootAssembly.engineeringFeatures.HeatCapacitance
 
         Parameters
         ----------

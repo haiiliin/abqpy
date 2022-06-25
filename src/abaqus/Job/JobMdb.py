@@ -9,13 +9,12 @@ class JobMdb(MdbBase):
     """The Mdb object is the high-level Abaqus model database. A model database stores models
     and analysis controls.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        mdb
+            mdb
     """
 
     def Job(
@@ -50,13 +49,12 @@ class JobMdb(MdbBase):
         """This method creates an analysis job using a model on a model database (MDB) for the
         model definition.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.Job
+                mdb.Job
 
         Parameters
         ----------
@@ -208,13 +206,12 @@ class JobMdb(MdbBase):
     ) -> JobFromInputFile:
         """This method creates an analysis job using an input file for the model definition.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.JobFromInputFile
+                mdb.JobFromInputFile
 
         Parameters
         ----------
@@ -330,13 +327,12 @@ class JobMdb(MdbBase):
     ) -> OptimizationProcess:
         """This method creates an OptimizationProcess object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.OptimizationProcess
+                mdb.OptimizationProcess
 
         Parameters
         ----------

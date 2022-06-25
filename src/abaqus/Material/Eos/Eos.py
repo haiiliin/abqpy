@@ -4,46 +4,45 @@ from abaqusConstants import *
 class Eos:
     r"""The Eos object specifies an equation of state model.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].eos
-        import odbMaterial
-        session.odbs[name].materials[name].eos
+            import material
+            mdb.models[name].materials[name].eos
+            import odbMaterial
+            session.odbs[name].materials[name].eos
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - If **type** = IDEALGAS, the table data represents the following:
-    
-        - Gas constant, :math:`R`.
-        - The ambient pressure, :math:`p_{A}`. If this field is left blank, a default of 0.0 is used.
+        - If **type** = IDEALGAS, the table data represents the following:
         
-    - If **type** = JWL, the table data represents the following:
-    
-        - Detonation wave speed, :math:`C_{d}`.
-        - :math:`A`.
-        - :math:`B`.
-        - :math:`\omega`. (Dimensionless.)
-        - :math:`R_{1}`. (Dimensionless.)
-        - :math:`R_{2}`. (Dimensionless.)
-        - Pre-detonation bulk modulus, :math:`K_{p d}`.
-        - Detonation energy density, :math:`E_{0}`.
+            - Gas constant, :math:`R`.
+            - The ambient pressure, :math:`p_{A}`. If this field is left blank, a default of 0.0 is used.
+            
+        - If **type** = JWL, the table data represents the following:
         
-    - If **type** = USUP, the table data represents the following:
-    
-        - :math:`C_{0}`
-        - :math:`\boldsymbol{S}`. (Dimensionless.)
-        - :math:`\Gamma_{0}`. (Dimensionless.)
+            - Detonation wave speed, :math:`C_{d}`.
+            - :math:`A`.
+            - :math:`B`.
+            - :math:`\omega`. (Dimensionless.)
+            - :math:`R_{1}`. (Dimensionless.)
+            - :math:`R_{2}`. (Dimensionless.)
+            - Pre-detonation bulk modulus, :math:`K_{p d}`.
+            - Detonation energy density, :math:`E_{0}`.
+            
+        - If **type** = USUP, the table data represents the following:
         
-    - If **type** = TABULAR, the table data represents the following:
-    
-        - :math:`F_{1}`
-        - :math:`F_{2}`
-        - :math:`\varepsilon_{v o l}^{c}`. (Dimensionless.)
+            - :math:`C_{0}`
+            - :math:`\boldsymbol{S}`. (Dimensionless.)
+            - :math:`\Gamma_{0}`. (Dimensionless.)
+            
+        - If **type** = TABULAR, the table data represents the following:
+        
+            - :math:`F_{1}`
+            - :math:`F_{2}`
+            - :math:`\varepsilon_{v o l}^{c}`. (Dimensionless.)
     """
 
     def __init__(
@@ -60,14 +59,13 @@ class Eos:
     ):
         """This method creates an Eos object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].Eos
-            session.odbs[name].materials[name].Eos
+                mdb.models[name].materials[name].Eos
+                session.odbs[name].materials[name].Eos
 
         Parameters
         ----------

@@ -19,14 +19,13 @@ class OdbInstance(OdbInstanceBase):
     ) -> OdbRigidBody:
         """This method creates a OdbRigidBody object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].rootAssembly.instances[name].RigidBody
-            session.odbs[name].rootAssembly.RigidBody
+                session.odbs[name].rootAssembly.instances[name].RigidBody
+                session.odbs[name].rootAssembly.RigidBody
 
         Parameters
         ----------
@@ -75,15 +74,14 @@ class OdbInstance(OdbInstanceBase):
         instance-level sets) or from a sequence of arrays of OdbMeshNode objects (for
         assembly-level sets).
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].parts[name].NodeSet
-            session.odbs[name].rootAssembly.instances[name].NodeSet
-            session.odbs[name].rootAssembly.NodeSet
+                session.odbs[name].parts[name].NodeSet
+                session.odbs[name].rootAssembly.instances[name].NodeSet
+                session.odbs[name].rootAssembly.NodeSet
 
         Parameters
         ----------

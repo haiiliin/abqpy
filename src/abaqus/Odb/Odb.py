@@ -11,14 +11,13 @@ from ..Material.MaterialOdb import MaterialOdb
 class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb):
     """The Odb object is the in-memory representation of an output database (ODB) file.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import odbAccess
-        session.odbs[name]
+            import odbAccess
+            session.odbs[name]
     """
 
     def Part(
@@ -27,13 +26,12 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb):
         """This method creates an OdbPart object. Nodes and elements are added to this object at a
         later stage.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].Part
+                session.odbs[name].Part
 
         Parameters
         ----------
@@ -66,13 +64,12 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb):
     ) -> OdbStep:
         """This method creates an OdbStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].Step
+                session.odbs[name].Step
 
         Parameters
         ----------
@@ -172,13 +169,12 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb):
     def SectionCategory(self, name: str, description: str) -> SectionCategory:
         """This method creates a SectionCategory object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.odbs[name].SectionCategory
+                session.odbs[name].SectionCategory
 
         Parameters
         ----------

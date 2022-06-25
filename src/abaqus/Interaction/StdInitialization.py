@@ -7,18 +7,17 @@ class StdInitialization(ContactInitialization):
     analyses to specify contact initialization data.
     The StdInitialization object is derived from the ContactInitialization object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].contactInitializations[name]
+            import interaction
+            mdb.models[name].contactInitializations[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - CONTACT INITIALIZATION DATA
+        - CONTACT INITIALIZATION DATA
     """
 
     #: A String specifying the contact initialization repository key.
@@ -58,13 +57,12 @@ class StdInitialization(ContactInitialization):
     ):
         """This method creates a StdInitialization object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].StdInitialization
+                mdb.models[name].StdInitialization
 
         Parameters
         ----------

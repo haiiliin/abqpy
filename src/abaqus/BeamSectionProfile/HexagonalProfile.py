@@ -5,20 +5,19 @@ class HexagonalProfile(Profile):
     """The HexagonalProfile object defines the properties of a hexagonal profile.
     The HexagonalProfile object is derived from the Profile object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import section
-        mdb.models[name].profiles[name]
-        import odbSection
-        session.odbs[name].profiles[name]
+            import section
+            mdb.models[name].profiles[name]
+            import odbSection
+            session.odbs[name].profiles[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - BEAM SECTION
+        - BEAM SECTION
     """
 
     #: A String specifying the repository key.
@@ -36,14 +35,13 @@ class HexagonalProfile(Profile):
     def __init__(self, name: str, r: float, t: float):
         """This method creates a HexagonalProfile object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].HexagonalProfile
-            session.odbs[name].HexagonalProfile
+                mdb.models[name].HexagonalProfile
+                session.odbs[name].HexagonalProfile
 
         Parameters
         ----------

@@ -6,14 +6,13 @@ class LoadCase:
     loading condition and the linear response of a structure subjected to that loading
     condition.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name].loadCases[name]
+            import step
+            mdb.models[name].steps[name].loadCases[name]
     """
 
     #: A Boolean specifying whether the load case is suppressed or not. The default value is
@@ -29,13 +28,12 @@ class LoadCase:
     ):
         """This method creates a load case in a step.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].steps[name].LoadCase
+                mdb.models[name].steps[name].LoadCase
 
         Parameters
         ----------

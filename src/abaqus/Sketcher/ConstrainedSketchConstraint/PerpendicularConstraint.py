@@ -12,13 +12,12 @@ class PerpendicularConstraint(ConstrainedSketchConstraint):
         types of ConstrainedSketchGeometry objects and constrains them to be perpendicular to
         each other.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].PerpendicularConstraint
+                mdb.models[name].sketches[name].PerpendicularConstraint
 
         Parameters
         ----------

@@ -6,13 +6,12 @@ class Viewport(AnnotationViewport):
     def Layer(self, name: str, copyViewName: str = "") -> Layer:
         """This method creates a Layer object in the Layer repository.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            session.viewports[name].Layer
+                session.viewports[name].Layer
 
         Parameters
         ----------

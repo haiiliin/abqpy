@@ -4,29 +4,27 @@ from .MeshFace import MeshFace
 class MeshFaceArray(list[MeshFace]):
     """The MeshFaceArray is a sequence of MeshFace objects.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].elementFaces
-        import assembly
-        mdb.models[name].rootAssembly.allInstances[name].elementFaces
-        mdb.models[name].rootAssembly.instances[name].elementFaces
+            import part
+            mdb.models[name].parts[name].elementFaces
+            import assembly
+            mdb.models[name].rootAssembly.allInstances[name].elementFaces
+            mdb.models[name].rootAssembly.instances[name].elementFaces
     """
 
     def __init__(self, elemFaces: list[MeshFace]):
         """This method creates a MeshFaceArray object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mesh.MeshFaceArray
+                mesh.MeshFaceArray
 
         Parameters
         ----------

@@ -12,14 +12,13 @@ class DefaultChartOptions:
     DefaultChartOptions object attributes are used whenever Chart or Axis are created. A
     DefaultChartOptions object is automatically created when opening a session.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.defaultChartOptions
+            import visualization
+            session.defaultChartOptions
     """
 
     areaStyle: AreaStyle = AreaStyle()

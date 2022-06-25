@@ -16,13 +16,12 @@ class HorizontalDimension(ConstrainedSketchDimension):
         horizontal dimension indicates the horizontal distance along the **X**-axis between two
         vertices.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].sketches[name].HorizontalDimension
+                mdb.models[name].sketches[name].HorizontalDimension
 
         Parameters
         ----------

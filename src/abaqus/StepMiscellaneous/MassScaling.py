@@ -4,14 +4,13 @@ from abaqusConstants import *
 class MassScaling:
     """A :py:class:`~abaqus.StepMiscellaneous.MassScaling.MassScaling` object defines the region and controls that govern mass scaling.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name].massScaling[i]
+            import step
+            mdb.models[name].steps[name].massScaling[i]
     """
 
     #: A SymbolicConstant specifying the objective of the mass scaling definition. Possible

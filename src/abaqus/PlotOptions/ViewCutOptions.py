@@ -14,16 +14,15 @@ class ViewCutOptions:
     preferences.
     - The view cut options associated with a particular viewport.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.defaultOdbDisplay.viewCutOptions
-        session.viewports[name].layers[name].odbDisplay.viewCutOptions
-        session.viewports[name].odbDisplay.viewCutOptions
+            import visualization
+            session.defaultOdbDisplay.viewCutOptions
+            session.viewports[name].layers[name].odbDisplay.viewCutOptions
+            session.viewports[name].odbDisplay.viewCutOptions
     """
 
     #: A Boolean specifying whether to use the options defined for displaying the model below

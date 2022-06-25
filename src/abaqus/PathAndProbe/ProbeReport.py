@@ -8,15 +8,14 @@ class ProbeReport:
     module. When probing is initiated for the first time, the values in the **probeReport**
     member are initialized using the values from the **defaultProbeReport** member.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import visualization
-        session.defaultProbeReport
-        session.probeReport
+            import visualization
+            session.defaultProbeReport
+            session.probeReport
     """
 
     def setValues(

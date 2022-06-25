@@ -20,19 +20,18 @@ class StaticStep(AnalysisStep):
     load step.
     The StaticStep object is derived from the AnalysisStep object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].steps[name]
+            import step
+            mdb.models[name].steps[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - STATIC
-            - STEP
+        - STATIC
+                - STEP
     """
 
     #: A String specifying the repository key.
@@ -265,13 +264,12 @@ class StaticStep(AnalysisStep):
     ):
         """This method creates a StaticStep object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].StaticStep
+                mdb.models[name].StaticStep
 
         Parameters
         ----------

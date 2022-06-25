@@ -8,13 +8,12 @@ def addImportCallback(moduleName: str, callback: str, userData: str = ""):
     imported. You cannot specify a custom module.
     For more information, see An example of a callback function.
 
-    Notes
-    -----
-        This function can be accessed by:
+    .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            addImportCallback
+                addImportCallback
 
     Parameters
     ----------
@@ -33,13 +32,12 @@ def addImportCallback(moduleName: str, callback: str, userData: str = ""):
 def removeImportCallback(callback: str, userData: str):
     """This function removes a callback added in addImportCallback.
 
-    Notes
-    -----
-        This function can be accessed by:
+    .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            removeImportCallback
+                removeImportCallback
 
     Parameters
     ----------

@@ -8,18 +8,17 @@ class Tie(Constraint):
     simulation.
     The Tie object is derived from the ConstrainedSketchConstraint object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].constraints[name]
+            import interaction
+            mdb.models[name].constraints[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - TIE
+        - TIE
     """
 
     #: A Boolean specifying whether the constraint is suppressed or not. The default value is
@@ -85,13 +84,12 @@ class Tie(Constraint):
     ):
         """This method creates a Tie object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].Tie
+                mdb.models[name].Tie
 
         Parameters
         ----------

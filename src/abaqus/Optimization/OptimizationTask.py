@@ -57,13 +57,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> SingleTermDesignResponse:
         """This method creates a SingleTermDesignResponse object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].SingleTermDesignResponse
+                mdb.models[name].optimizationTasks[name].SingleTermDesignResponse
 
         Parameters
         ----------
@@ -121,13 +120,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> ObjectiveFunction:
         """This method creates an ObjectiveFunction object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].ObjectiveFunction
+                mdb.models[name].optimizationTasks[name].ObjectiveFunction
 
         Parameters
         ----------
@@ -163,13 +161,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> OptimizationConstraint:
         """This method creates an OptimizationConstraint object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].OptimizationConstraint
+                mdb.models[name].optimizationTasks[name].OptimizationConstraint
 
         Parameters
         ----------
@@ -213,13 +210,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> BeadFixedRegion:
         """This method creates a BeadFixedRegion object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].BeadFixedRegion
+                mdb.models[name].optimizationTasks[name].BeadFixedRegion
 
         Parameters
         ----------
@@ -256,13 +252,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> BeadGrowth:
         """This method creates a BeadGrowth object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].BeadGrowth
+                mdb.models[name].optimizationTasks[name].BeadGrowth
 
         Parameters
         ----------
@@ -292,13 +287,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> BeadPenetrationCheck:
         """This method creates a BeadPenetrationCheck object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].BeadPenetrationCheck
+                mdb.models[name].optimizationTasks[name].BeadPenetrationCheck
 
         Parameters
         ----------
@@ -328,13 +322,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> BeadPlanarSymmetry:
         """This method creates a BeadPlanarSymmetry object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].BeadPlanarSymmetry
+                mdb.models[name].optimizationTasks[name].BeadPlanarSymmetry
 
         Parameters
         ----------
@@ -365,13 +358,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> BeadPointSymmetry:
         """This method creates a BeadPointSymmetry object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].BeadPointSymmetry
+                mdb.models[name].optimizationTasks[name].BeadPointSymmetry
 
         Parameters
         ----------
@@ -404,13 +396,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> BeadRotationalSymmetry:
         """This method creates a BeadRotationalSymmetry object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].BeadRotationalSymmetry
+                mdb.models[name].optimizationTasks[name].BeadRotationalSymmetry
 
         Parameters
         ----------
@@ -455,13 +446,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> DesignDirection:
         """This method creates a DesignDirection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].DesignDirection
+                mdb.models[name].optimizationTasks[name].DesignDirection
 
         Parameters
         ----------
@@ -538,13 +528,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> DrillControl:
         """This method creates a DrillControl object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].DrillControl
+                mdb.models[name].optimizationTasks[name].DrillControl
 
         Parameters
         ----------
@@ -618,13 +607,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> FixedRegion:
         """This method creates a FixedRegion object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].FixedRegion
+                mdb.models[name].optimizationTasks[name].FixedRegion
 
         Parameters
         ----------
@@ -664,13 +652,12 @@ class OptimizationTask(OptimizationTaskBase):
     def FrozenArea(self, name: str, region: Region = Region()) -> FrozenArea:
         """This method creates a FrozenArea object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].FrozenArea
+                mdb.models[name].optimizationTasks[name].FrozenArea
 
         Parameters
         ----------
@@ -701,13 +688,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> Growth:
         """This method creates a Growth object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].Growth
+                mdb.models[name].optimizationTasks[name].Growth
 
         Parameters
         ----------
@@ -746,13 +732,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> PenetrationCheck:
         """This method creates a PenetrationCheck object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].PenetrationCheck
+                mdb.models[name].optimizationTasks[name].PenetrationCheck
 
         Parameters
         ----------
@@ -795,13 +780,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> ShapeDemoldControl:
         """This method creates a ShapeDemoldControl object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].ShapeDemoldControl
+                mdb.models[name].optimizationTasks[name].ShapeDemoldControl
 
         Parameters
         ----------
@@ -876,13 +860,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> ShapeMemberSize:
         """This method creates a ShapeMemberSize object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].ShapeMemberSize
+                mdb.models[name].optimizationTasks[name].ShapeMemberSize
 
         Parameters
         ----------
@@ -934,13 +917,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> ShapePlanarSymmetry:
         """This method creates a ShapePlanarSymmetry object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].ShapePlanarSymmetry
+                mdb.models[name].optimizationTasks[name].ShapePlanarSymmetry
 
         Parameters
         ----------
@@ -1005,13 +987,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> ShapePointSymmetry:
         """This method creates a ShapePointSymmetry object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].ShapePointSymmetry
+                mdb.models[name].optimizationTasks[name].ShapePointSymmetry
 
         Parameters
         ----------
@@ -1075,13 +1056,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> ShapeRotationalSymmetry:
         """This method creates a ShapeRotationalSymmetry object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].ShapeRotationalSymmetry
+                mdb.models[name].optimizationTasks[name].ShapeRotationalSymmetry
 
         Parameters
         ----------
@@ -1150,13 +1130,12 @@ class OptimizationTask(OptimizationTaskBase):
     def SizingClusterAreas(self, name: str, regions: tuple) -> SizingClusterAreas:
         """This method creates a SizingClusterAreas object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].SizingClusterAreas
+                mdb.models[name].optimizationTasks[name].SizingClusterAreas
 
         Parameters
         ----------
@@ -1187,13 +1166,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> SizingCyclicSymmetry:
         """This method creates a SizingCyclicSymmetry object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].SizingCyclicSymmetry
+                mdb.models[name].optimizationTasks[name].SizingCyclicSymmetry
 
         Parameters
         ----------
@@ -1227,13 +1205,12 @@ class OptimizationTask(OptimizationTaskBase):
     def SizingFrozenArea(self, name: str, region: Region) -> SizingFrozenArea:
         """This method creates a SizingFrozenArea object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].SizingFrozenArea
+                mdb.models[name].optimizationTasks[name].SizingFrozenArea
 
         Parameters
         ----------
@@ -1257,13 +1234,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> SizingMemberSize:
         """This method creates a SizingMemberSize object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].SizingMemberSize
+                mdb.models[name].optimizationTasks[name].SizingMemberSize
 
         Parameters
         ----------
@@ -1295,13 +1271,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> SizingPlanarSymmetry:
         """This method creates a SizingPlanarSymmetry object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].SizingPlanarSymmetry
+                mdb.models[name].optimizationTasks[name].SizingPlanarSymmetry
 
         Parameters
         ----------
@@ -1338,13 +1313,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> SizingPointSymmetry:
         """This method creates a SizingPointSymmetry object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].SizingPointSymmetry
+                mdb.models[name].optimizationTasks[name].SizingPointSymmetry
 
         Parameters
         ----------
@@ -1380,13 +1354,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> SizingRotationalSymmetry:
         """This method creates a SizingRotationalSymmetry object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].SizingRotationalSymmetry
+                mdb.models[name].optimizationTasks[name].SizingRotationalSymmetry
 
         Parameters
         ----------
@@ -1434,13 +1407,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> SlideRegionControl:
         """This method creates a SlideRegionControl object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].SlideRegionControl
+                mdb.models[name].optimizationTasks[name].SlideRegionControl
 
         Parameters
         ----------
@@ -1519,13 +1491,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> StampControl:
         """This method creates a StampControl object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].StampControl
+                mdb.models[name].optimizationTasks[name].StampControl
 
         Parameters
         ----------
@@ -1597,13 +1568,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> TopologyCyclicSymmetry:
         """This method creates a TopologyCyclicSymmetry object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].TopologyCyclicSymmetry
+                mdb.models[name].optimizationTasks[name].TopologyCyclicSymmetry
 
         Parameters
         ----------
@@ -1651,13 +1621,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> TopologyDemoldControl:
         """This method creates a TopologyDemoldControl object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].TopologyDemoldControl
+                mdb.models[name].optimizationTasks[name].TopologyDemoldControl
 
         Parameters
         ----------
@@ -1716,13 +1685,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> TopologyMemberSize:
         """This method creates a TopologyMemberSize object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].TopologyMemberSize
+                mdb.models[name].optimizationTasks[name].TopologyMemberSize
 
         Parameters
         ----------
@@ -1764,13 +1732,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> TopologyMillingControl:
         """This method creates a TopologyMillingControl object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].TopologyMillingControl
+                mdb.models[name].optimizationTasks[name].TopologyMillingControl
 
         Parameters
         ----------
@@ -1817,13 +1784,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> TopologyPlanarSymmetry:
         """This method creates a TopologyPlanarSymmetry object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].TopologyPlanarSymmetry
+                mdb.models[name].optimizationTasks[name].TopologyPlanarSymmetry
 
         Parameters
         ----------
@@ -1864,13 +1830,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> TopologyPointSymmetry:
         """This method creates a TopologyPointSymmetry object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].TopologyPointSymmetry
+                mdb.models[name].optimizationTasks[name].TopologyPointSymmetry
 
         Parameters
         ----------
@@ -1908,13 +1873,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> TopologyRotationalSymmetry:
         """This method creates a TopologyRotationalSymmetry object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].TopologyRotationalSymmetry
+                mdb.models[name].optimizationTasks[name].TopologyRotationalSymmetry
 
         Parameters
         ----------
@@ -1963,13 +1927,12 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> TurnControl:
         """This method creates a TurnControl object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].optimizationTasks[name].TurnControl
+                mdb.models[name].optimizationTasks[name].TurnControl
 
         Parameters
         ----------

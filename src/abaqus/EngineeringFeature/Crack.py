@@ -4,16 +4,15 @@ from abaqusConstants import *
 class Crack:
     """The Crack object is the abstract base type for ContourIntegral and future crack objects.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].engineeringFeatures.cracks[name]
-        import assembly
-        mdb.models[name].rootAssembly.engineeringFeatures.cracks[name]
+            import part
+            mdb.models[name].parts[name].engineeringFeatures.cracks[name]
+            import assembly
+            mdb.models[name].rootAssembly.engineeringFeatures.cracks[name]
     """
 
     #: A String specifying the repository key.

@@ -13,20 +13,19 @@ from ..Section.SectionLayerArray import SectionLayerArray
 class CompositeLayup:
     """The CompositeLayup object is used to specify a composite layup on a part.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import part
-        mdb.models[name].parts[name].compositeLayups[i]
+            import part
+            mdb.models[name].parts[name].compositeLayups[i]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - SHELL SECTION
-            - SHELL GENERAL SECTION
-            - SOLID SECTION
+        - SHELL SECTION
+                - SHELL GENERAL SECTION
+                - SOLID SECTION
     """
 
     #: A :py:class:`~abaqus.Section.GeometryShellSection.GeometryShellSection` object.
@@ -78,13 +77,12 @@ class CompositeLayup:
     ):
         """This method creates a CompositeLayup object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].CompositeLayup
+                mdb.models[name].parts[*name*].CompositeLayup
 
         Parameters
         ----------
@@ -187,13 +185,12 @@ class CompositeLayup:
     ) -> CompositePly:
         """This method creates a CompositePly object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].CompositeLayup
+                mdb.models[name].parts[*name*].CompositeLayup
 
         Parameters
         ----------
@@ -302,13 +299,12 @@ class CompositeLayup:
     ) -> CompositeShellSection:
         """This method creates a CompositeShellSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].CompositeLayup
+                mdb.models[name].parts[*name*].CompositeLayup
 
         Parameters
         ----------
@@ -418,13 +414,12 @@ class CompositeLayup:
     ) -> GeometryShellSection:
         """This method creates a GeometryShellSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].CompositeLayup
+                mdb.models[name].parts[*name*].CompositeLayup
 
         Parameters
         ----------
@@ -519,13 +514,12 @@ class CompositeLayup:
     ) -> HomogeneousShellSection:
         """This method creates a HomogeneousShellSection object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].parts[*name*].CompositeLayup
+                mdb.models[name].parts[*name*].CompositeLayup
 
         Parameters
         ----------

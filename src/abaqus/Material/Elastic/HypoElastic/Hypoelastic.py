@@ -4,41 +4,39 @@ from abaqusConstants import *
 class Hypoelastic:
     r"""The Hypoelastic object specifies hypoelastic material properties.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].hypoelastic
-        import odbMaterial
-        session.odbs[name].materials[name].hypoelastic
+            import material
+            mdb.models[name].materials[name].hypoelastic
+            import odbMaterial
+            session.odbs[name].materials[name].hypoelastic
 
-    The table data for this object are:
+        The table data for this object are:
 
-    - Instantaneous Young's modulus, :math:`E`.
-    - Instantaneous Poisson's ratio, :math:`\nu`.
-    - First strain invariant, :math:`I_1`.
-    - Second strain invariant, :math:`I_2`.
-    - Third strain invariant, :math:`I_3`.
+        - Instantaneous Young's modulus, :math:`E`.
+        - Instantaneous Poisson's ratio, :math:`\nu`.
+        - First strain invariant, :math:`I_1`.
+        - Second strain invariant, :math:`I_2`.
+        - Third strain invariant, :math:`I_3`.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - HYPOELASTIC
+        - HYPOELASTIC
     """
 
     def __init__(self, table: tuple, user: Boolean = OFF):
         """This method creates a Hypoelastic object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].Hypoelastic
-            session.odbs[name].materials[name].Hypoelastic
+                mdb.models[name].materials[name].Hypoelastic
+                session.odbs[name].materials[name].Hypoelastic
 
         Parameters
         ----------

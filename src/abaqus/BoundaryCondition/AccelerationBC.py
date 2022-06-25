@@ -9,14 +9,13 @@ class AccelerationBC(BoundaryCondition):
     """The AccelerationBC object stores the data for an acceleration boundary condition.
     The AccelerationBC object is derived from the BoundaryCondition object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import load
-        mdb.models[name].boundaryConditions[name]
+            import load
+            mdb.models[name].boundaryConditions[name]
     """
 
     #: A String specifying the boundary condition repository key.
@@ -61,13 +60,12 @@ class AccelerationBC(BoundaryCondition):
     ):
         """This method creates an AccelerationBC object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].AccelerationBC
+                mdb.models[name].AccelerationBC
 
         Parameters
         ----------

@@ -5,37 +5,36 @@ class GapElectricalConductance:
     """The GapElectricalConductance object specifies electrical conductance for a contact
     interaction property.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import interaction
-        mdb.models[name].interactionProperties[name].electricalConductance
+            import interaction
+            mdb.models[name].interactionProperties[name].electricalConductance
 
-    The table data for this object are:
-    
-    The **clearanceDepTable** data specify the following:
-    
-        - Conductivity.
-        - Clearance.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
-    The **pressureDepTable** data specify the following:
-    
-        - Conductivity.
-        - Pressure.
-        - Temperature, if the data depend on temperature.
-        - Value of the first field variable, if the data depend on field variables.
-        - Value of the second field variable.
-        - Etc.
+        The table data for this object are:
+        
+        The **clearanceDepTable** data specify the following:
+        
+            - Conductivity.
+            - Clearance.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
+        The **pressureDepTable** data specify the following:
+        
+            - Conductivity.
+            - Pressure.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - GAP ELECTRICAL CONDUCTANCE
+        - GAP ELECTRICAL CONDUCTANCE
     """
 
     #: A SymbolicConstant specifying how the electrical conductance is defined. Possible values
@@ -86,13 +85,12 @@ class GapElectricalConductance:
     ):
         """This method creates a GapElectricalConductance object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].interactionProperties[name].GapElectricalConductance
+                mdb.models[name].interactionProperties[name].GapElectricalConductance
 
         Parameters
         ----------

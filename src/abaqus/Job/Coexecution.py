@@ -6,19 +6,18 @@ class Coexecution:
     """The Coexecution object contains a set of jobs as associated parameters to define a
     co-simulation analysis.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import job
-        mdb.coexecutions[name]
+            import job
+            mdb.coexecutions[name]
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - HEADING
-            - PREPRINT
+        - HEADING
+                - PREPRINT
     """
 
     #: A String specifying the name of the new job. The name must be a valid Abaqus/CAE object

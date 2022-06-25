@@ -10,14 +10,13 @@ class AdaptiveMeshConstraint:
     the AdaptiveMeshConstraint object are common to all objects derived from the
     AdaptiveMeshConstraint object.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import step
-        mdb.models[name].adaptiveMeshConstraints[name]
+            import step
+            mdb.models[name].adaptiveMeshConstraints[name]
     """
 
     #: A String specifying the adaptive mesh constraint repository key.
@@ -48,14 +47,12 @@ class AdaptiveMeshConstraint:
         the AdaptiveMeshConstraint object are common to all objects derived from the
         AdaptiveMeshConstraint object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].AdaptiveMeshConstraint
-
+                mdb.models[name].AdaptiveMeshConstraint
 
         Parameters
         ----------

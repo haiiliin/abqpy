@@ -2,45 +2,43 @@ class ShearTestData:
     r"""The ShearTestData object specifies the normalized shear creep compliance or relaxation
     modulus as a function of time.
 
-    Notes
-    -----
-    This object can be accessed by:
+    .. note:: 
+        This object can be accessed by:
 
-    .. code-block:: python
+        .. code-block:: python
 
-        import material
-        mdb.models[name].materials[name].viscoelastic.shearTestData
-        import odbMaterial
-        session.odbs[name].materials[name].viscoelastic.shearTestData
-        
-    The table data for this object are:
+            import material
+            mdb.models[name].materials[name].viscoelastic.shearTestData
+            import odbMaterial
+            session.odbs[name].materials[name].viscoelastic.shearTestData
             
-    - If **time** = RELAXATION_TEST_DATA, the table data specify the following:
-    
-        - Normalized shear relaxation modulus :math:`g_{R}(t)`. :math:`\left(0 \leq g_{R}(t) \leq 1\right)`
-        - Time :math:`t (t>0)`.
+        The table data for this object are:
+                
+        - If **time** = RELAXATION_TEST_DATA, the table data specify the following:
         
-    - If **time** = CREEP_TEST_DATA, the table data specify the following:
-    
-        - Normalized shear compliance :math:`j_{S}(t)`. :math:`\left(j_{S}(t) \geq 1\right)`.
-        - Time :math:`t (t>0)`.
+            - Normalized shear relaxation modulus :math:`g_{R}(t)`. :math:`\left(0 \leq g_{R}(t) \leq 1\right)`
+            - Time :math:`t (t>0)`.
+            
+        - If **time** = CREEP_TEST_DATA, the table data specify the following:
+        
+            - Normalized shear compliance :math:`j_{S}(t)`. :math:`\left(j_{S}(t) \geq 1\right)`.
+            - Time :math:`t (t>0)`.
 
-    The corresponding analysis keywords are:
+        The corresponding analysis keywords are:
 
-    - SHEAR TEST DATA
+        - SHEAR TEST DATA
     """
 
     def __init__(self, table: tuple, shrinf: float = None):
         r"""This method creates a ShearTestData object.
 
-        Notes
-        -----
-        This function can be accessed by:
+        .. note:: 
+            This function can be accessed by:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            mdb.models[name].materials[name].viscoelastic.ShearTestData
-            session.odbs[name].materials[name].viscoelastic.ShearTestData
+                mdb.models[name].materials[name].viscoelastic.ShearTestData
+                session.odbs[name].materials[name].viscoelastic.ShearTestData
 
         Parameters
         ----------
