@@ -404,7 +404,7 @@
 <h3>Mesh features for Assembly<a class="headerlink" href="#mesh-features-for-assembly" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MeshAssembly</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L17-L1123"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MeshAssembly</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L17-L1077"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly" title="Permalink to this definition">#</a></dt>
 <dd><p>An <code class="xref py py-class docutils literal notranslate"><span class="pre">Assembly</span></code> object is a container for instances of parts. The Assembly object has no
 constructor command. Abaqus creates the <strong>rootAssembly</strong> member when a Model object is
 created.</p>
@@ -889,11 +889,11 @@ default value is OFF.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds">
-<span class="sig-name descname"><span class="pre">getEdgeSeeds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attribute</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L420-L508"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getEdgeSeeds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attribute</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L420-L489"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an edge seed parameter for a specified edge of an assembly.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl>
+<dd class="field-odd"><dl class="simple">
 <dt><strong>edge</strong></dt><dd><p>An <a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><code class="xref py py-class docutils literal notranslate"><span class="pre">Edge</span></code></a> object specifying the edge to be queried.</p>
 </dd>
 <dt><strong>attribute</strong></dt><dd><p>A SymbolicConstant specifying the type of edge seed attribute to return. Possible values
@@ -912,83 +912,6 @@ are:</p>
 <li><p>SMALLEST_ELEM_LOCATION</p></li>
 <li><p>CONSTRAINT</p></li>
 </ul>
-<p>The return value is dependent on the <strong>attribute</strong> argument.</p>
-<ul>
-<li><p>If <strong>attribute</strong> = EDGE_SEEDING_METHOD, the return value is a SymbolicConstant specifying
-the edge seeding method used to create the seeds along the edge. Possible values are:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>UNIFORM_BY_NUMBER</p></li>
-<li><p>UNIFORM_BY_SIZE</p></li>
-<li><p>CURVATURE_BASED_BY_SIZE</p></li>
-<li><p>BIASED</p></li>
-<li><p>NONE</p></li>
-</ul>
-</div></blockquote>
-</li>
-<li><p>If <strong>attribute</strong> = BIAS_METHOD, the return value is a SymbolicConstant specifying the bias
-type used to create the seeds along the edge. Possible values are:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>SINGLE</p></li>
-<li><p>DOUBLE</p></li>
-<li><p>NONE</p></li>
-</ul>
-</div></blockquote>
-</li>
-<li><p>If <strong>attribute</strong> = NUMBER, the return value is an Int specifying the number of element
-seeds along the edge.</p></li>
-<li><p>If <strong>attribute</strong> = AVERAGE_SIZE, the return value is a Float specifying the average
-element size along the edge.</p></li>
-<li><p>If <strong>attribute</strong> = DEVIATION_FACTOR, the return value is a Float specifying the deviation
-factor h/Lh/L, where hh is the chordal deviation and LL is the element length. If edge</p></li>
-</ul>
-<blockquote>
-<div><p>seeds are not defined, the return value is zero.</p>
-</div></blockquote>
-<ul class="simple">
-<li><p>If <strong>attribute</strong> = MIN_SIZE_FACTOR, the return value is a Float specifying the size of the
-smallest allowable element as a fraction of the specified global element size. If edge
-seeds are not defined, the return value is zero.</p></li>
-<li><p>If <strong>attribute</strong> = BIAS_RATIO, the return value is a Float specifying the length ratio of
-the largest element to the smallest element.</p></li>
-<li><p>If <strong>attribute</strong> = BIAS_MIN_SIZE, the return value is a Float specifying the length of the
-largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were
-specified by minimum and maximum sizes.</p></li>
-<li><p>If <strong>attribute</strong> = BIAS_MAX_SIZE, the return value is a Float specifying the length of the
-largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were</p></li>
-</ul>
-<p>specified by minimum and maximum sizes.
-- If <strong>attribute</strong> = VERTEX_ADJ_TO_SMALLEST_ELEM, the return value is an Int specifying the</p>
-<blockquote>
-<div><p>ID of the vertex next to the smallest element; only applicable if the
-EDGE_SEEDING_METHOD is BIASED.</p>
-</div></blockquote>
-<ul>
-<li><p>If <strong>attribute</strong> = SMALLEST_ELEM_LOCATION, the return value is a SymbolicConstant
-specifying the location of smallest elements for double bias seeds; only applicable if
-the EDGE_SEEDING_METHOD is BIASED and BIAS_METHOD is DOUBLE. Possible values are:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>SMALLEST_ELEM_AT_CENTER</p></li>
-<li><p>SMALLEST_ELEM_AT_ENDS</p></li>
-<li><p>NONE</p></li>
-</ul>
-</div></blockquote>
-</li>
-<li><p>If <strong>attribute</strong> = CONSTRAINT, the return value is a SymbolicConstant specifying how close
-the seeds must be matched by the mesh. Possible values are:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>FREE</p></li>
-<li><p>FINER</p></li>
-<li><p>FIXED</p></li>
-<li><p>NONE</p></li>
-</ul>
-</div></blockquote>
-</li>
-</ul>
-<p>A value of NONE indicates that the edge is not seeded.</p>
 </dd>
 </dl>
 </dd>
@@ -996,6 +919,78 @@ the seeds must be matched by the mesh. Possible values are:</p>
 <dd class="field-even"><dl class="simple">
 <dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">The</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Float</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">an</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Int</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">or</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">SymbolicConstant</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">depending</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">on</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code></dt><dd></dd>
 <dt><strong>attribute</strong> argument.</dt><dd></dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">The</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">dependent</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">on</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <strong>attribute</strong> argument.</dt><dd></dd>
+</dl>
+<ul class="simple">
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">EDGE_SEEDING_METHOD</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">SymbolicConstant</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specifying</span></code></dt><dd><p>the edge seeding method used to create the seeds along the edge. Possible values are: UNIFORM_BY_NUMBER, UNIFORM_BY_SIZE, CURVATURE_BASED_BY_SIZE, BIASED, NONE</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">BIAS_METHOD</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">SymbolicConstant</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specifying</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">bias</span></code></dt><dd><p>type used to create the seeds along the edge. Possible values are: SINGLE, DOUBLE, NONE</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">NUMBER</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">an</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Int</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specifying</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">number</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">element</span></code></dt><dd><p>seeds along the edge.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">AVERAGE_SIZE</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Float</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specifying</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">average</span></code></dt><dd><p>element size along the edge.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">DEVIATION_FACTOR</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Float</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specifying</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">deviation</span></code></dt><dd><p>factor h/Lh/L, where hh is the chordal deviation and LL is the element length. If edge
+seeds are not defined, the return value is zero.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">MIN_SIZE_FACTOR</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Float</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specifying</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">size</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code></dt><dd><p>smallest allowable element as a fraction of the specified global element size. If edge
+seeds are not defined, the return value is zero.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">BIAS_RATIO</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Float</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specifying</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">length</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">ratio</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code></dt><dd><p>the largest element to the smallest element.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">BIAS_MIN_SIZE</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Float</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specifying</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">length</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code></dt><dd><p>largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were
+specified by minimum and maximum sizes.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">BIAS_MAX_SIZE</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Float</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specifying</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">length</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code></dt><dd><p>largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were
+specified by minimum and maximum sizes.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">VERTEX_ADJ_TO_SMALLEST_ELEM</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">an</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Int</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specifying</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code></dt><dd><p>ID of the vertex next to the smallest element; only applicable if the
+EDGE_SEEDING_METHOD is BIASED.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">SMALLEST_ELEM_LOCATION</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></dt><dd><p>specifying the location of smallest elements for double bias seeds; only applicable if
+the EDGE_SEEDING_METHOD is BIASED and BIAS_METHOD is DOUBLE. Possible values are: SMALLEST_ELEM_AT_CENTER, SMALLEST_ELEM_AT_ENDS, NONE</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRAINT</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">SymbolicConstant</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specifying</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">how</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">close</span></code></dt><dd><p>the seeds must be matched by the mesh. Possible values are: FREE, FINER, FIXED, NONE</p>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">NONE</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">indicates</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">that</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">edge</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code> seeded.</dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -1003,7 +998,7 @@ the seeds must be matched by the mesh. Possible values are:</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.getElementType">
-<span class="sig-name descname"><span class="pre">getElementType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemShape</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L510-L532"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getElementType" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getElementType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemShape</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L491-L513"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getElementType" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns the ElemType object of a given element shape assigned to a region of
 the assembly.</p>
 <dl class="field-list simple">
@@ -1033,7 +1028,7 @@ consistent with the dimension of the <strong>region</strong>.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces">
-<span class="sig-name descname"><span class="pre">getIncompatibleMeshInterfaces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L534-L548"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getIncompatibleMeshInterfaces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L515-L529"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a sequence of face objects that are meshed with incompatible
 elements.</p>
 <dl class="field-list simple">
@@ -1054,7 +1049,7 @@ elements.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl">
-<span class="sig-name descname"><span class="pre">getMeshControl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attribute</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L550-L614"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getMeshControl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attribute</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L531-L568"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a mesh control parameter for the specified region of the assembly.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
@@ -1062,71 +1057,26 @@ elements.</p>
 <dt><strong>region</strong></dt><dd><p>A Cell, a Face, or an Edge object specifying the region to be queried.</p>
 </dd>
 <dt><strong>attribute</strong></dt><dd><p>A SymbolicConstant specifying the mesh control attribute to return. Possible values are:</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p>ELEM_SHAPE</p></li>
 <li><p>TECHNIQUE</p></li>
 <li><p>ALGORITHM</p></li>
 <li><p>MIN_TRANSITION</p></li>
 </ul>
-</div></blockquote>
 <p>The return value is dependent on the <strong>attribute</strong> argument.
 - If <strong>attribute</strong> = ELEM_SHAPE, the return value is a SymbolicConstant specifying the</p>
 <blockquote>
-<div><p>element shape used during meshing. Possible values are:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>LINE</p></li>
-<li><p>QUAD</p></li>
-<li><p>TRI</p></li>
-<li><p>QUAD_DOMINATED</p></li>
-<li><p>HEX</p></li>
-<li><p>TET</p></li>
-<li><p>WEDGE</p></li>
-<li><p>HEX_DOMINATED</p></li>
-</ul>
+<div><p>element shape used during meshing. Possible values are: LINE, QUAD, TRI,  QUAD_DOMINATED, HEX, TET, WEDGE, HEX_DOMINATED</p>
 </div></blockquote>
-</div></blockquote>
-<ul>
+<ul class="simple">
 <li><p>If <strong>attribute</strong> = TECHNIQUE, the return value is a SymbolicConstant specifying the
-meshing technique to be used during meshing. Possible values are:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>FREE</p></li>
-<li><p>STRUCTURED</p></li>
-<li><p>SWEEP</p></li>
-<li><p>UNMESHABLE</p></li>
+meshing technique to be used during meshing. Possible values are: FREE, STRUCTURED, SWEEP, UNMESHABLE, Where UNMESHABLE indicates that no meshing technique is applicable with the currently assigned element shape.</p></li>
+<li><p>If <strong>attribute</strong> = ALGORITHM, the return value is a SymbolicConstant specifying the
+meshing algorithm to be used during meshing. Possible values are: MEDIAL_AXIS, ADVANCING_FRONT, DEFAULT, NON_DEFAULT, NONE, Where NONE indicates that no algorithm is applicable.</p></li>
+<li><p>If <strong>attribute</strong> = MIN_TRANSITION, the return value is a Boolean indicating whether
+minimum transition will be used during meshing. This option is applicable only to the
+following: Free quadrilateral meshing or sweep hexahedral meshing with <strong>algorithm</strong> = MEDIAL_AXIS, Structured quadrilateral meshing.</p></li>
 </ul>
-</div></blockquote>
-</li>
-</ul>
-<p>Where UNMESHABLE indicates that no meshing technique is applicable with the currently
-assigned element shape.
-- If <strong>attribute</strong> = ALGORITHM, the return value is a SymbolicConstant specifying the</p>
-<blockquote>
-<div><p>meshing algorithm to be used during meshing. Possible values are:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>MEDIAL_AXIS</p></li>
-<li><p>ADVANCING_FRONT</p></li>
-<li><p>DEFAULT</p></li>
-<li><p>NON_DEFAULT</p></li>
-<li><p>NONE</p></li>
-</ul>
-</div></blockquote>
-</div></blockquote>
-<p>Where NONE indicates that no algorithm is applicable.
-- If <strong>attribute</strong> = MIN_TRANSITION, the return value is a Boolean indicating whether</p>
-<blockquote>
-<div><p>minimum transition will be used during meshing. This option is applicable only to the</p>
-</div></blockquote>
-<dl class="simple">
-<dt>following:</dt><dd><ul class="simple">
-<li><p>Free quadrilateral meshing or sweep hexahedral meshing with <strong>algorithm</strong> = MEDIAL_AXIS.</p></li>
-<li><p>Structured quadrilateral meshing.</p></li>
-</ul>
-</dd>
-</dl>
 </dd>
 </dl>
 </dd>
@@ -1147,7 +1097,7 @@ assigned element shape.
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshStats">
-<span class="sig-name descname"><span class="pre">getMeshStats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L616-L630"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshStats" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getMeshStats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L570-L584"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshStats" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns the mesh statistics for the given part instances or regions.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1168,7 +1118,7 @@ statistics should be returned.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.getPartSeeds">
-<span class="sig-name descname"><span class="pre">getPartSeeds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attribute</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L632-L672"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getPartSeeds" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getPartSeeds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attribute</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L586-L626"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getPartSeeds" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a part seed parameter for the specified instance.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
@@ -1215,7 +1165,7 @@ seeds are not defined, the return value is zero.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.getUnmeshedRegions">
-<span class="sig-name descname"><span class="pre">getUnmeshedRegions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L674-L683"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getUnmeshedRegions" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getUnmeshedRegions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L628-L637"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.getUnmeshedRegions" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns all geometric regions in the assembly that require a mesh for
 submitting an analysis but are either unmeshed or are meshed incompletely.</p>
 <dl class="field-list simple">
@@ -1230,7 +1180,7 @@ submitting an analysis but are either unmeshed or are meshed incompletely.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.ignoreEntity">
-<span class="sig-name descname"><span class="pre">ignoreEntity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L685-L701"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.ignoreEntity" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">ignoreEntity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L639-L655"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.ignoreEntity" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a virtual topology feature. Virtual topology allows unimportant
 entities to be ignored during mesh generation. You can combine two adjacent faces by
 specifying a common edge to ignore. Similarly, you can combine two adjacent edges by
@@ -1253,7 +1203,7 @@ specifying a common vertex to ignore.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.restoreIgnoredEntity">
-<span class="sig-name descname"><span class="pre">restoreIgnoredEntity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L703-L718"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.restoreIgnoredEntity" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">restoreIgnoredEntity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L657-L672"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.restoreIgnoredEntity" title="Permalink to this definition">#</a></dt>
 <dd><p>This method restores vertices and edges that have been merged using a virtual topology
 feature.</p>
 <dl class="field-list simple">
@@ -1275,7 +1225,7 @@ be restored.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias">
-<span class="sig-name descname"><span class="pre">seedEdgeByBias</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">biasMethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end1Edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end2Edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">centerEdges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endEdges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ratio</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxSize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L720-L783"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">seedEdgeByBias</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">biasMethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end1Edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end2Edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">centerEdges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endEdges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ratio</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxSize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L674-L737"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias" title="Permalink to this definition">#</a></dt>
 <dd><p>This method seeds the given edges nonuniformly using the specified number of elements
 and bias ratio or the specified minimum and maximum element sizes.</p>
 <dl class="field-list simple">
@@ -1333,7 +1283,7 @@ of elements, not to the nodal positioning).</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByNumber">
-<span class="sig-name descname"><span class="pre">seedEdgeByNumber</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L785-L806"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByNumber" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">seedEdgeByNumber</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L739-L760"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByNumber" title="Permalink to this definition">#</a></dt>
 <dd><p>This method seeds the given edges uniformly based on the number of elements along the
 edges.</p>
 <dl class="field-list simple">
@@ -1358,7 +1308,7 @@ the nodal positioning).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeBySize">
-<span class="sig-name descname"><span class="pre">seedEdgeBySize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deviationFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSizeFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L808-L839"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeBySize" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">seedEdgeBySize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deviationFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSizeFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L762-L793"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeBySize" title="Permalink to this definition">#</a></dt>
 <dd><p>This method seeds the given edges either uniformly or following edge curvature
 distribution, based on the desired element size.</p>
 <dl class="field-list simple">
@@ -1388,7 +1338,7 @@ the nodal positioning).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.seedPartInstance">
-<span class="sig-name descname"><span class="pre">seedPartInstance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deviationFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSizeFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L841-L869"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.seedPartInstance" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">seedPartInstance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deviationFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSizeFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L795-L823"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.seedPartInstance" title="Permalink to this definition">#</a></dt>
 <dd><p>This method assigns global edge seeds to the given part instances.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1415,7 +1365,7 @@ seeds.FINER: The resulting mesh can be finer than the specified seeds.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls">
-<span class="sig-name descname"><span class="pre">setBoundaryLayerControls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">firstElemSize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">growthFactor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numLayers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inactiveFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L871-L904"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setBoundaryLayerControls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">firstElemSize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">growthFactor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numLayers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inactiveFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L825-L858"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls" title="Permalink to this definition">#</a></dt>
 <dd><p>This method sets the control parameters for boundary layer mesh for the specified
 regions.</p>
 <dl class="field-list simple">
@@ -1446,7 +1396,7 @@ selected regions.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.setElementType">
-<span class="sig-name descname"><span class="pre">setElementType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemTypes</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L906-L933"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setElementType" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setElementType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemTypes</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L860-L887"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setElementType" title="Permalink to this definition">#</a></dt>
 <dd><p>This method assigns element types to the specified regions.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1480,7 +1430,7 @@ incompatible with the newly assigned quadratic Hex element.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.setLogicalCorners">
-<span class="sig-name descname"><span class="pre">setLogicalCorners</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">corners</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L935-L946"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setLogicalCorners" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setLogicalCorners</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">corners</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L889-L900"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setLogicalCorners" title="Permalink to this definition">#</a></dt>
 <dd><p>This method sets the logical corners for a mappable face region.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1497,7 +1447,7 @@ face region.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.setMeshControls">
-<span class="sig-name descname"><span class="pre">setMeshControls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">technique</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">algorithm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minTransition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sizeGrowth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allowMapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L948-L1026"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setMeshControls" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setMeshControls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">technique</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">algorithm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minTransition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sizeGrowth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allowMapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L902-L980"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setMeshControls" title="Permalink to this definition">#</a></dt>
 <dd><p>This method sets the mesh control parameters for the specified regions.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1577,7 +1527,7 @@ can be used on faces that bound three-dimensional <strong>regions</strong>.</p><
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.setSweepPath">
-<span class="sig-name descname"><span class="pre">setSweepPath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sense</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L1028-L1044"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setSweepPath" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setSweepPath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sense</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L982-L998"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.setSweepPath" title="Permalink to this definition">#</a></dt>
 <dd><p>This method sets the sweep path for a sweepable region or the revolve path for a
 revolvable region.</p>
 <dl class="field-list simple">
@@ -1599,7 +1549,7 @@ underlying curve will be used.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshAssembly.MeshAssembly.verifyMeshQuality">
-<span class="sig-name descname"><span class="pre">verifyMeshQuality</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">criterion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L1046-L1123"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.verifyMeshQuality" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">verifyMeshQuality</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">criterion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshAssembly.py#L1000-L1077"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshAssembly.MeshAssembly.verifyMeshQuality" title="Permalink to this definition">#</a></dt>
 <dd><p>This method tests the quality of part instance meshes and returns poor-quality elements.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2436,24 +2386,18 @@ in use by any other element of the same part.</p>
 <span class="sig-name descname"><span class="pre">getBoundingBox</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshElementArray.py#L176-L190"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshElementArray.MeshElementArray.getBoundingBox" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a dictionary of two tuples representing minimum and maximum boundary
 values of the bounding box of the minimum size containing the element sequence.</p>
-<dl class="field-list">
+<dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><dl class="simple">
-<dt><code class="xref py py-class docutils literal notranslate"><span class="pre">python:dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">python:str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">python:tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">python:float</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">python:float</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">python:float</span></code>]]</dt><dd></dd>
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Dictionary</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">with</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">following</span></code> items:</dt><dd></dd>
-</dl>
+<dt><code class="xref py py-class docutils literal notranslate"><span class="pre">python:dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">python:str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">python:tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">python:float</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">python:float</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">python:float</span></code>]]</dt><dd><p>A Dictionary object with the following items:</p>
 <ul class="simple">
-<li><dl class="simple">
-<dt><strong>low</strong>: <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-class docutils literal notranslate"><span class="pre">python:tuple</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">three</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">floats</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">representing</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">minimum</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">x</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">y</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">and</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">z</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">boundary</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">values</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code></dt><dd><p>the bounding box.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>high</strong>: <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-class docutils literal notranslate"><span class="pre">python:tuple</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">three</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">floats</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">representing</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">maximum</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">x</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">y</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">and</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">z</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">boundary</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">values</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code></dt><dd><p>the bounding box.</p>
-</dd>
-</dl>
-</li>
+<li><p><strong>low</strong>: a tuple of three floats representing the minimum x, y, and z boundary values of
+the bounding box.</p></li>
+<li><p><strong>high</strong>: a tuple of three floats representing the maximum x, y, and z boundary values of
+the bounding box.</p></li>
 </ul>
+</dd>
+</dl>
 </dd>
 </dl>
 </dd></dl>
@@ -3315,16 +3259,16 @@ any other node of the same part.</p>
 <span class="sig-name descname"><span class="pre">getBoundingBox</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshNodeArray.py#L176-L193"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshNodeArray.MeshNodeArray.getBoundingBox" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a dictionary of two tuples representing minimum and maximum boundary
 values of the bounding box of the minimum size containing the node sequence.</p>
-<dl class="field-list">
+<dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><dl>
+<dd class="field-odd"><dl class="simple">
 <dt><code class="xref py py-class docutils literal notranslate"><span class="pre">python:dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">python:str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">python:tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">python:float</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">python:float</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">python:float</span></code>]]</dt><dd><p>A Dictionary object with the following items:</p>
 <ul class="simple">
-<li><p><strong>low</strong>: a tuple of three floats representing the minimum x, y and z boundary values of</p></li>
+<li><p><strong>low</strong>: a tuple of three floats representing the minimum x, y and z boundary values of
+the bounding box.</p></li>
+<li><p><strong>high</strong>: a tuple of three floats representing the maximum x, y and z boundary values of
+the bounding box.</p></li>
 </ul>
-<p>the bounding box.
-- <strong>high</strong>: a tuple of three floats representing the maximum x, y and z boundary values of
-the bounding box.</p>
 </dd>
 </dl>
 </dd>
@@ -3530,7 +3474,7 @@ labels.</p>
 <h3>MeshPart<a class="headerlink" href="#meshpart" title="Permalink to this headline">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshPart.MeshPart">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MeshPart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dimensionality</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">twist</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L17-L1157"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MeshPart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dimensionality</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">twist</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L17-L1110"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart" title="Permalink to this definition">#</a></dt>
 <dt class="sig sig-object py">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MeshPart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">objectToCopy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mirrorPlane</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SymbolicConstantType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">NONE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compressFeatureList</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">separate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BooleanType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>The following commands operate on Part objects. For more information about the Part
@@ -3651,7 +3595,7 @@ object, see Part object.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshPart.MeshPart.Node">
-<span class="sig-name descname"><span class="pre">Node</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinates</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L1128-L1157"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.Node" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">Node</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinates</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L1081-L1110"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.Node" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a node on an orphan mesh part.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -4051,11 +3995,11 @@ default value is OFF.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds">
-<span class="sig-name descname"><span class="pre">getEdgeSeeds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attribute</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L419-L507"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getEdgeSeeds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attribute</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L419-L488"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns an edge seed parameter for a specified edge of a part.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl>
+<dd class="field-odd"><dl class="simple">
 <dt><strong>edge</strong></dt><dd><p>An <a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.Edge.Edge" title="abaqus.BasicGeometry.Edge.Edge"><code class="xref py py-class docutils literal notranslate"><span class="pre">Edge</span></code></a> object specifying the edge to be queried.</p>
 </dd>
 <dt><strong>attribute</strong></dt><dd><p>A SymbolicConstant specifying the type of edge seed attribute to return. Possible values
@@ -4074,75 +4018,6 @@ are:</p>
 <li><p>SMALLEST_ELEM_LOCATION</p></li>
 <li><p>CONSTRAINT</p></li>
 </ul>
-<p>The return value is dependent on the <strong>attribute</strong> argument.</p>
-<ul>
-<li><p>If <strong>attribute</strong> = EDGE_SEEDING_METHOD, the return value is a SymbolicConstant specifying
-the edge seeding method used to create the seeds along the edge. Possible values are:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>UNIFORM_BY_NUMBER</p></li>
-<li><p>UNIFORM_BY_SIZE</p></li>
-<li><p>CURVATURE_BASED_BY_SIZE</p></li>
-<li><p>BIASED</p></li>
-<li><p>NONE</p></li>
-</ul>
-</div></blockquote>
-</li>
-<li><p>If <strong>attribute</strong> = BIAS_METHOD, the return value is a SymbolicConstant specifying the bias
-type used to create the seeds along the edge. Possible values are:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>SINGLE</p></li>
-<li><p>DOUBLE</p></li>
-<li><p>NONE</p></li>
-</ul>
-</div></blockquote>
-</li>
-<li><p>If <strong>attribute</strong> = NUMBER, the return value is an Int specifying the number of element
-seeds along the edge.</p></li>
-<li><p>If <strong>attribute</strong> = AVERAGE_SIZE, the return value is a Float specifying the average
-element size along the edge.</p></li>
-<li><p>If <strong>attribute</strong> = DEVIATION_FACTOR, the return value is a Float specifying the deviation
-factor h/Lh/L, where hh is the chordal deviation and LL is the element length. If edge
-seeds are not defined, the return value is zero.</p></li>
-<li><p>If <strong>attribute</strong> = MIN_SIZE_FACTOR, the return value is a Float specifying the size of the
-smallest allowable element as a fraction of the specified global element size. If edge
-seeds are not defined, the return value is zero.</p></li>
-<li><p>If <strong>attribute</strong> = BIAS_RATIO, the return value is a Float specifying the length ratio of
-the largest element to the smallest element.</p></li>
-<li><p>If <strong>attribute</strong> = BIAS_MIN_SIZE, the return value is a Float specifying the length of the
-largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were
-specified by minimum and maximum sizes.</p></li>
-<li><p>If <strong>attribute</strong> = BIAS_MAX_SIZE, the return value is a Float specifying the length of the
-largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were
-specified by minimum and maximum sizes.</p></li>
-<li><p>If <strong>attribute</strong> = VERTEX_ADJ_TO_SMALLEST_ELEM, the return value is an Int specifying the
-ID of the vertex next to the smallest element; only applicable if the
-EDGE_SEEDING_METHOD is BIASED.</p></li>
-<li><p>If <strong>attribute</strong> = SMALLEST_ELEM_LOCATION, the return value is a SymbolicConstant
-specifying the location of smallest elements for double bias seeds; only applicable if
-the EDGE_SEEDING_METHOD is BIASED and BIAS_METHOD is DOUBLE. Possible values are:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>SMALLEST_ELEM_AT_CENTER</p></li>
-<li><p>SMALLEST_ELEM_AT_ENDS</p></li>
-<li><p>NONE</p></li>
-</ul>
-</div></blockquote>
-</li>
-<li><p>If <strong>attribute</strong> = CONSTRAINT, the return value is a SymbolicConstant specifying how close
-the seeds must be matched by the mesh. Possible values are:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>FREE</p></li>
-<li><p>FINER</p></li>
-<li><p>FIXED</p></li>
-<li><p>NONE</p></li>
-</ul>
-</div></blockquote>
-</li>
-</ul>
-<p>A value of NONE indicates that the edge is not seeded.</p>
 </dd>
 </dl>
 </dd>
@@ -4150,6 +4025,78 @@ the seeds must be matched by the mesh. Possible values are:</p>
 <dd class="field-even"><dl class="simple">
 <dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">The</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Float</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">an</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Int</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">or</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">SymbolicConstant</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">depending</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">on</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code></dt><dd></dd>
 <dt><strong>attribute</strong> argument.</dt><dd></dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">The</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">dependent</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">on</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <strong>attribute</strong> argument.</dt><dd></dd>
+</dl>
+<ul class="simple">
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">EDGE_SEEDING_METHOD</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">SymbolicConstant</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specifying</span></code></dt><dd><p>the edge seeding method used to create the seeds along the edge. Possible values are: UNIFORM_BY_NUMBER, UNIFORM_BY_SIZE, CURVATURE_BASED_BY_SIZE, BIASED, NONE</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">BIAS_METHOD</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">SymbolicConstant</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specifying</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">bias</span></code></dt><dd><p>type used to create the seeds along the edge. Possible values are: SINGLE, DOUBLE, NONE</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">NUMBER</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">an</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Int</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specifying</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">number</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">element</span></code></dt><dd><p>seeds along the edge.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">AVERAGE_SIZE</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Float</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specifying</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">average</span></code></dt><dd><p>element size along the edge.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">DEVIATION_FACTOR</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Float</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specifying</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">deviation</span></code></dt><dd><p>factor h/Lh/L, where hh is the chordal deviation and LL is the element length. If edge
+seeds are not defined, the return value is zero.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">MIN_SIZE_FACTOR</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Float</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specifying</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">size</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code></dt><dd><p>smallest allowable element as a fraction of the specified global element size. If edge
+seeds are not defined, the return value is zero.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">BIAS_RATIO</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Float</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specifying</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">length</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">ratio</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code></dt><dd><p>the largest element to the smallest element.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">BIAS_MIN_SIZE</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Float</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specifying</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">length</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code></dt><dd><p>largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were
+specified by minimum and maximum sizes.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">BIAS_MAX_SIZE</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Float</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specifying</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">length</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code></dt><dd><p>largest element; only applicable if the EDGE_SEEDING_METHOD is BIASED and seeds were
+specified by minimum and maximum sizes.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">VERTEX_ADJ_TO_SMALLEST_ELEM</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">an</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">Int</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specifying</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code></dt><dd><p>ID of the vertex next to the smallest element; only applicable if the
+EDGE_SEEDING_METHOD is BIASED.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">SMALLEST_ELEM_LOCATION</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></dt><dd><p>specifying the location of smallest elements for double bias seeds; only applicable if
+the EDGE_SEEDING_METHOD is BIASED and BIAS_METHOD is DOUBLE. Possible values are: SMALLEST_ELEM_AT_CENTER, SMALLEST_ELEM_AT_ENDS, NONE</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">If</span></code> <strong>attribute</strong> = <code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRAINT</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">return</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">SymbolicConstant</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">specifying</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">how</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">close</span></code></dt><dd><p>the seeds must be matched by the mesh. Possible values are: FREE, FINER, FIXED, NONE</p>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">A</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">NONE</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">indicates</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">that</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">edge</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">is</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">not</span></code> seeded.</dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -4157,7 +4104,7 @@ the seeds must be matched by the mesh. Possible values are:</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshPart.MeshPart.getElementType">
-<span class="sig-name descname"><span class="pre">getElementType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemShape</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L509-L538"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.getElementType" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getElementType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemShape</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L490-L519"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.getElementType" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns the ElemType object of a given element shape assigned to a region of
 a part.</p>
 <dl class="field-list simple">
@@ -4195,7 +4142,7 @@ consistent with the dimension of the <strong>region</strong>.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces">
-<span class="sig-name descname"><span class="pre">getIncompatibleMeshInterfaces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L540-L554"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getIncompatibleMeshInterfaces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L521-L535"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a sequence of <a class="reference internal" href="part_assembly/geometry.html#abaqus.BasicGeometry.Face.Face" title="abaqus.BasicGeometry.Face.Face"><code class="xref py py-class docutils literal notranslate"><span class="pre">Face</span></code></a> objects that are meshed with incompatible
 elements.</p>
 <dl class="field-list simple">
@@ -4216,7 +4163,7 @@ elements.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshPart.MeshPart.getMeshControl">
-<span class="sig-name descname"><span class="pre">getMeshControl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attribute</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L556-L621"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.getMeshControl" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getMeshControl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attribute</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L537-L574"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.getMeshControl" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a mesh control parameter for the specified region of a part.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
@@ -4230,60 +4177,20 @@ elements.</p>
 <li><p>ALGORITHM</p></li>
 <li><p>MIN_TRANSITION</p></li>
 </ul>
-<p>The return value depends on the value of the <strong>attribute</strong> argument.</p>
-<ul>
-<li><p>If <strong>attribute</strong> = ELEM_SHAPE, the return value is a SymbolicConstant specifying the
-element shape used during meshing. Possible values are:</p>
+<p>The return value is dependent on the <strong>attribute</strong> argument.
+- If <strong>attribute</strong> = ELEM_SHAPE, the return value is a SymbolicConstant specifying the</p>
 <blockquote>
-<div><ul class="simple">
-<li><p>LINE</p></li>
-<li><p>QUAD</p></li>
-<li><p>TRI</p></li>
-<li><p>QUAD_DOMINATED</p></li>
-<li><p>HEX</p></li>
-<li><p>TET</p></li>
-<li><p>WEDGE</p></li>
-<li><p>HEX_DOMINATED</p></li>
-</ul>
+<div><p>element shape used during meshing. Possible values are: LINE, QUAD, TRI,  QUAD_DOMINATED, HEX, TET, WEDGE, HEX_DOMINATED</p>
 </div></blockquote>
-</li>
-<li><p>If <strong>attribute</strong> = TECHNIQUE, the return value is a SymbolicConstant specifying the
-meshing technique to be used during meshing. Possible values are:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>FREE</p></li>
-<li><p>STRUCTURED</p></li>
-<li><p>SWEEP</p></li>
-<li><p>UNMESHABLE</p></li>
-</ul>
-</div></blockquote>
-</li>
-</ul>
-<p>Where UNMESHABLE indicates that no meshing technique is applicable with the currently
-assigned element shape.
-- If <strong>attribute</strong> = ALGORITHM, the return value is a SymbolicConstant specifying the</p>
-<blockquote>
-<div><p>meshing algorithm to be used during meshing. Possible values are:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>MEDIAL_AXIS</p></li>
-<li><p>ADVANCING_FRONT</p></li>
-<li><p>DEFAULT</p></li>
-<li><p>NON_DEFAULT</p></li>
-<li><p>NONE</p></li>
-</ul>
-</div></blockquote>
-</div></blockquote>
-<p>Where NONE indicates that no algorithm is applicable.
-- If <strong>attribute</strong> = MIN_TRANSITION, the return value is a Boolean indicating whether</p>
-<blockquote>
-<div><p>minimum transition will be used during meshing. This option is applicable only to the
-following:</p>
 <ul class="simple">
-<li><p>Free quadrilateral meshing or sweep hexahedral meshing with <strong>algorithm</strong> = MEDIAL_AXIS.</p></li>
-<li><p>Structured quadrilateral meshing.</p></li>
+<li><p>If <strong>attribute</strong> = TECHNIQUE, the return value is a SymbolicConstant specifying the
+meshing technique to be used during meshing. Possible values are: FREE, STRUCTURED, SWEEP, UNMESHABLE, Where UNMESHABLE indicates that no meshing technique is applicable with the currently assigned element shape.</p></li>
+<li><p>If <strong>attribute</strong> = ALGORITHM, the return value is a SymbolicConstant specifying the
+meshing algorithm to be used during meshing. Possible values are: MEDIAL_AXIS, ADVANCING_FRONT, DEFAULT, NON_DEFAULT, NONE, Where NONE indicates that no algorithm is applicable.</p></li>
+<li><p>If <strong>attribute</strong> = MIN_TRANSITION, the return value is a Boolean indicating whether
+minimum transition will be used during meshing. This option is applicable only to the
+following: Free quadrilateral meshing or sweep hexahedral meshing with <strong>algorithm</strong> = MEDIAL_AXIS, Structured quadrilateral meshing.</p></li>
 </ul>
-</div></blockquote>
 </dd>
 </dl>
 </dd>
@@ -4304,7 +4211,7 @@ following:</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshPart.MeshPart.getMeshStats">
-<span class="sig-name descname"><span class="pre">getMeshStats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L623-L636"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.getMeshStats" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getMeshStats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L576-L589"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.getMeshStats" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns the mesh statistics for the given regions.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -4324,7 +4231,7 @@ following:</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshPart.MeshPart.getPartSeeds">
-<span class="sig-name descname"><span class="pre">getPartSeeds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attribute</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L638-L674"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.getPartSeeds" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getPartSeeds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attribute</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L591-L627"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.getPartSeeds" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns a part seed parameter for the part.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
@@ -4369,7 +4276,7 @@ seeds are not defined, the return value is zero.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshPart.MeshPart.getUnmeshedRegions">
-<span class="sig-name descname"><span class="pre">getUnmeshedRegions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L676-L685"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.getUnmeshedRegions" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">getUnmeshedRegions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L629-L638"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.getUnmeshedRegions" title="Permalink to this definition">#</a></dt>
 <dd><p>This method returns all geometric regions in the part that require a mesh for submitting
 an analysis but are either unmeshed or are meshed incompletely.</p>
 <dl class="field-list simple">
@@ -4384,7 +4291,7 @@ an analysis but are either unmeshed or are meshed incompletely.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshPart.MeshPart.ignoreEntity">
-<span class="sig-name descname"><span class="pre">ignoreEntity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L687-L703"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.ignoreEntity" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">ignoreEntity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L640-L656"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.ignoreEntity" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a virtual topology feature. Virtual topology allows unimportant
 entities to be ignored during mesh generation. You can combine two adjacent faces by
 specifying a common edge to ignore. Similarly, you can combine two adjacent edges by
@@ -4407,7 +4314,7 @@ specifying a common vertex to ignore.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshPart.MeshPart.restoreIgnoredEntity">
-<span class="sig-name descname"><span class="pre">restoreIgnoredEntity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L705-L720"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.restoreIgnoredEntity" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">restoreIgnoredEntity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L658-L673"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.restoreIgnoredEntity" title="Permalink to this definition">#</a></dt>
 <dd><p>This method restores vertices and edges that have been merged using a virtual topology
 feature.</p>
 <dl class="field-list simple">
@@ -4429,7 +4336,7 @@ be restored.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias">
-<span class="sig-name descname"><span class="pre">seedEdgeByBias</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">biasMethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end1Edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end2Edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">centerEdges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endEdges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ratio</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxSize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L722-L785"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">seedEdgeByBias</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">biasMethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end1Edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end2Edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">centerEdges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endEdges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ratio</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxSize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L675-L738"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias" title="Permalink to this definition">#</a></dt>
 <dd><p>This method seeds the given edges nonuniformly using the specified number of elements
 and bias ratio or the specified minimum and maximum element sizes.</p>
 <dl class="field-list simple">
@@ -4487,7 +4394,7 @@ of elements, not to the nodal positioning).</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber">
-<span class="sig-name descname"><span class="pre">seedEdgeByNumber</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L787-L810"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">seedEdgeByNumber</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L740-L763"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber" title="Permalink to this definition">#</a></dt>
 <dd><p>This method seeds the given edges uniformly based on the number of elements along the
 edges.</p>
 <dl class="field-list simple">
@@ -4515,7 +4422,7 @@ of elements, not to the nodal positioning).</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize">
-<span class="sig-name descname"><span class="pre">seedEdgeBySize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deviationFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSizeFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L812-L845"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">seedEdgeBySize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deviationFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSizeFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L765-L798"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize" title="Permalink to this definition">#</a></dt>
 <dd><p>This method seeds the given edges either uniformly or following edge curvature
 distribution, based on the desired element size.</p>
 <dl class="field-list simple">
@@ -4548,7 +4455,7 @@ of elements, not to the nodal positioning).</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshPart.MeshPart.seedPart">
-<span class="sig-name descname"><span class="pre">seedPart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deviationFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSizeFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L847-L872"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.seedPart" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">seedPart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deviationFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSizeFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FREE'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L800-L825"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.seedPart" title="Permalink to this definition">#</a></dt>
 <dd><p>This method assigns global edge seeds to the given parts.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -4573,7 +4480,7 @@ seeds.FINER: The resulting mesh can be finer than the specified seeds.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls">
-<span class="sig-name descname"><span class="pre">setBoundaryLayerControls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">firstElemSize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">growthFactor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numLayers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inactiveFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L874-L907"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setBoundaryLayerControls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">firstElemSize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">growthFactor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numLayers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inactiveFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L827-L860"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls" title="Permalink to this definition">#</a></dt>
 <dd><p>This method sets the control parameters for boundary layer mesh for the specified
 regions.</p>
 <dl class="field-list simple">
@@ -4604,7 +4511,7 @@ selected regions.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshPart.MeshPart.setElementType">
-<span class="sig-name descname"><span class="pre">setElementType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemTypes</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L909-L936"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.setElementType" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setElementType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemTypes</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L862-L889"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.setElementType" title="Permalink to this definition">#</a></dt>
 <dd><p>This method assigns element types to the specified regions.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -4638,7 +4545,7 @@ incompatible with the newly assigned quadratic Hex element.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshPart.MeshPart.setLogicalCorners">
-<span class="sig-name descname"><span class="pre">setLogicalCorners</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">corners</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L938-L949"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.setLogicalCorners" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setLogicalCorners</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">corners</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L891-L902"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.setLogicalCorners" title="Permalink to this definition">#</a></dt>
 <dd><p>This method sets the logical corners for a mappable face region.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -4655,7 +4562,7 @@ face region.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshPart.MeshPart.setMeshControls">
-<span class="sig-name descname"><span class="pre">setMeshControls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">technique</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">algorithm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minTransition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sizeGrowth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allowMapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L951-L1028"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.setMeshControls" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setMeshControls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">technique</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">algorithm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minTransition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sizeGrowth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allowMapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L904-L981"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.setMeshControls" title="Permalink to this definition">#</a></dt>
 <dd><p>This method sets the mesh control parameters for the specified regions.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -4734,7 +4641,7 @@ can be used on faces that bound three-dimensional <strong>regions</strong>.</p><
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshPart.MeshPart.setSweepPath">
-<span class="sig-name descname"><span class="pre">setSweepPath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sense</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L1030-L1046"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.setSweepPath" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setSweepPath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sense</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L983-L999"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.setSweepPath" title="Permalink to this definition">#</a></dt>
 <dd><p>This method sets the sweep path for a sweepable region or the revolve path for a
 revolvable region.</p>
 <dl class="field-list simple">
@@ -4756,7 +4663,7 @@ underlying curve will be used.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mesh.MeshPart.MeshPart.verifyMeshQuality">
-<span class="sig-name descname"><span class="pre">verifyMeshQuality</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">criterion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L1048-L1126"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.verifyMeshQuality" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">verifyMeshQuality</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">criterion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Mesh/MeshPart.py#L1001-L1079"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mesh.MeshPart.MeshPart.verifyMeshQuality" title="Permalink to this definition">#</a></dt>
 <dd><p>This method tests the mesh quality of a part and returns poor-quality elements.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

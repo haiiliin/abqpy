@@ -60,7 +60,7 @@ Each command in the :doc:`references` lists the standard Abaqus Scripting Interf
 
 For example, Figure 1 shows the layout of a typical exception description in the online documentation.
 
-.. figure:: images/cmd-int-exception-nls.png
+.. figure:: /images/cmd-int-exception-nls.png
     :width: 50%
     :align: center
 

@@ -110,7 +110,7 @@ The following statements illustrate the use of constructors, methods, and member
 You use the `Access` description provided with each object in the :doc:`references` to determine how you access the object. You append a method or member to this description when you are writing a script. Similarly, you use the `Path` description provided with each constructor in the :doc:`references` to determine the path to the constructor.
 
 Object-oriented programming and the Abaqus Scripting Interface - a summary
-------------------------------------------------------------------------
+--------------------------------------------------------------------------
 
 After you create an object, you then use methods of the objects to enter or to modify the data associated with the object. For example, you use the `addNodes` and `addElements` methods of the Part object to add nodes and elements, respectively. Similarly, you use the `addData` method of the `FieldOutput` object to add field output data.
 

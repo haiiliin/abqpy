@@ -608,7 +608,7 @@ ValueError: Unable to decode movie file</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.Path">
-<span class="sig-name descname"><span class="pre">Path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expression</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">circleDefinition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numSegments</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startAngle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endAngle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radialAngle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startRadius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endRadius</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L12-L120"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.Path" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">Path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expression</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">circleDefinition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numSegments</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startAngle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endAngle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radialAngle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startRadius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endRadius</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L12-L119"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.Path" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Path object.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -637,15 +637,12 @@ specifying the coordinates of each point.</p></li>
 <li><p>If <strong>type</strong> = EDGE_LIST, <strong>expression</strong> must be a sequence of sequences. Each inner sequence
 contains two items, the first item is a String specifying the name of the part instance,
 and the second item is a sequence of tuples of four Ints that uniquely identify an
-element edge. The four Ints are:</p>
-<ol class="arabic simple">
-<li><p>The element label.</p></li>
-<li><p>The element face index (one-based).</p></li>
-<li><p>The face edge index (one-based).</p></li>
-<li><p>The edge direction. A positive number specifies that the edge direction runs from the
+element edge. The four Ints are:
+1. The element label.
+2. The element face index (one-based).
+3. The face edge index (one-based).
+4. The edge direction. A positive number specifies that the edge direction runs from the
 edge start node to the edge end node. A negative number specifies the opposite.</p></li>
-</ol>
-</li>
 <li><p>When <strong>type</strong> = CIRCUMFERENTIAL or RADIAL, <strong>expression</strong> must be a sequence of three tuples
 of three Floats, specifying the coordinates of the points used to define a coordinate
 system.</p></li>
@@ -894,7 +891,7 @@ local machine. The default value is OFF.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.Spectrum">
-<span class="sig-name descname"><span class="pre">Spectrum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L122-L145"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.Spectrum" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">Spectrum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L121-L144"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.Spectrum" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates a Spectrum object and places it in the spectrums repository.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -923,7 +920,7 @@ local machine. The default value is OFF.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Session.Session.Session.Stream">
-<span class="sig-name descname"><span class="pre">Stream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numPointsOnRake</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointA</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointB</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L147-L187"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.Stream" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">Stream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numPointsOnRake</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointA</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointB</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Session/Session.py#L146-L186"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Session.Session.Session.Stream" title="Permalink to this definition">#</a></dt>
 <dd><p>This method creates aStream object and places it in the streams repository.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
