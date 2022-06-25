@@ -58,7 +58,7 @@ To open the debugger, select **Window -> Debugger** or click **Start debugger**.
 
 The debugger consists of a call stack area, action buttons, and the debugger command line interface (CLI) window, as shown in Figure 1. The debugger is positioned between the Abaqus PDE main window and the message area.
 
-.. figures:: /images/cmd-pde-debugger-nls.png
+.. figure:: /images/cmd-pde-debugger-nls.png
     :width: 50%
     :align: center
 
