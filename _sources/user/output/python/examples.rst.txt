@@ -903,7 +903,7 @@ where :math:`p(r)` is the acoustic pressure at a distance :math:`r` from the ref
 
 .. math::
     
-    &\mathrm{PORdB}=20 \log _{10}\left(\frac{p_{R M S}}{d B R e f}\right)
+    &\mathrm{PORdB}=20 \log _{10}\left(\frac{p_{R M S}}{d B R e f}\right) \\
     &p_{R M S}=\left(\frac{|\mathrm{POR}|}{\sqrt{2}}\right)
 
 where :math:`|\mathrm{POR}|` is the magnitude of the acoustic pressure at a point, :math:`p_{R M S}` is the root mean square acoustic pressure, and :math:`d B R e f` is the decibel reference value given as user input. The far-field pressure decibel value is defined in the same manner as :math:`\operatorname{POR} d B`, using the same reference value :math:`d B R e f)`
@@ -913,7 +913,7 @@ where :math:`|\mathrm{POR}|` is the magnitude of the acoustic pressure at a poin
 
 The script also calculates the far-field acoustic intensity, which is defined as
 
-.. math:: \mathrm{INTEN}_{\mathrm{FAR}}=\left(\frac{p_{R M S F A R}^{2}}{\rho^{*} c}\right)
+.. math:: \mathrm{INTEN}_{\mathrm{FAR}}=\left(\frac{p_{R M S F A R}^{2}}{\rho\times c}\right)
 
 where :math:`p_{R M S F A R}` is the far-field rms pressure, :math:`\rho` is the fluid density, and :math:`c` is the speed of sound in the medium.
 
@@ -1005,7 +1005,7 @@ and
 
 where :math:`p_{0}` is the known acoustic pressure at some reference distance :math:`r_{0}` and :math:`k` is the wave number.
 
-For this single-element example, you should enter a value of :math:`1.0` for the speed of sound; thus, :math:`k=2 \pi f`, where :math:`f` is the frequency in :math:`\mathrm{Hz} . r_{0}` in this model is 1 , and :math:`p_{0}` is :math:`0.001`. The equations for the acoustic pressure, :math:`p`, and the acoustic far-field pressure, :math:`p_{F A R}`, reduce to
+For this single-element example, you should enter a value of :math:`1.0` for the speed of sound; thus, :math:`k=2 \pi f`, where :math:`f` is the frequency in :math:`\mathrm{Hz}`. :math:`r_{0}` in this model is 1 , and :math:`p_{0}` is :math:`0.001`. The equations for the acoustic pressure, :math:`p`, and the acoustic far-field pressure, :math:`p_{F A R}`, reduce to
 
 .. math:: p(r)=\frac{0.001}{r} e^{-i k(r-1)}
 

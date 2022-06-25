@@ -12,9 +12,9 @@ The following sections describe the architecture of an output database and how t
     python/object-model
     python/output-object-model
     python/execute-script
-    python/read-output
-    python/write-output
+    python/read
+    python/write
     python/exceptions
     python/computations
     python/improve-efficiency
-    python/example-scripts
+    python/examples

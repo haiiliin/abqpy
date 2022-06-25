@@ -6,7 +6,7 @@ You can write your own data to an output database, and you can use Abaqus/CAE to
 
 After you create an object, you use methods of the objects to enter or modify the data associated with the object. For example, if you are creating an output database, you first create an Odb object. You then use the Part constructor to create a part. After creating the part, you use the addNodes and addElements methods of the Part object to add nodes and elements, respectively. Similarly, you use the addData method of the FieldOutput object to add field output data to the output database. After creating an output database, you should use the save method on the Odb object to save the output database.
 
-The example script in :doc:`user/output/python/example-scripts:creating an output database` also illustrates how you can write to an output database.
+The example script in :doc:`user/output/python/examples:creating an output database` also illustrates how you can write to an output database.
 
 Creating a new output database
 ------------------------------
@@ -22,7 +22,7 @@ You use the Odb constructor to create a new, empty Odb object.
 
 For a full description of the Odb command, see :py:class:`~abaqus.Odb.Odb.Odb` object. Abaqus creates the RootAssembly object when you create or open an output database.
 
-You use the save method to `save` the output database.
+You use the `save` method to `save` the output database.
 
 .. code-block:: python
 
@@ -42,9 +42,11 @@ To define the geometry of your model, you first create the parts that are used b
   .. code-block:: python
 
       part1 = odb.Part(name='part-1', 
-          embeddedSpace=THREE_D, type=DEFORMABLE_BODY)`
+          embeddedSpace=THREE_D, type=DEFORMABLE_BODY)
   
-  For a full description of the Part constructor, see :py:class:`~abaqus.Odb.OdbPart.OdbPart`. The new Part object is empty and does not contain geometry. After you create the Part object, you add nodes and elements.You use the addNodes method to add nodes by defining node labels and coordinates. You can also define an optional node set. For example,
+  For a full description of the Part constructor, see :py:class:`~abaqus.Odb.OdbPart.OdbPart`. The new Part object is empty and does not contain geometry. After you create the Part object, you add nodes and elements.
+  
+  You use the addNodes method to add nodes by defining node labels and coordinates. You can also define an optional node set. For example,
   
   .. code-block:: python
 
@@ -149,7 +151,9 @@ To define the geometry of your model, you first create the parts that are used b
 
 - **Section assignments**
 
-  You use the SectionAssignment object to assign sections and their associated material properties to regions of the model. SectionAssignment objects are members of the Odb object. For a full description of the assignSection method, see :py:meth:`~abaqus.Odb.OdbInstance.OdbInstance.assignSection`.All Elements in an Abaqus analysis need to be associated with section and material properties. Section assignments provide the relationship between elements in an Instance object and their section properties. The section properties include the associated material name. To create an element set and assign a section:
+  You use the SectionAssignment object to assign sections and their associated material properties to regions of the model. SectionAssignment objects are members of the Odb object. For a full description of the assignSection method, see :py:meth:`~abaqus.Odb.OdbInstance.OdbInstance.assignSection`.
+  
+  All Elements in an Abaqus analysis need to be associated with section and material properties. Section assignments provide the relationship between elements in an Instance object and their section properties. The section properties include the associated material name. To create an element set and assign a section:
   
   .. code-block:: python
     
@@ -164,6 +168,7 @@ Writing results data
 To write results data to the output database, you first create the Step objects that correspond to each step of the analysis. If you are writing field output data, you also create the Frame objects that will contain the field data. History output data are associated with Step objects.
 
 - **Steps**
+  
   You use the Step constructor to create a results step for time, frequency, or modal domain results. For example,
 
   .. code-block:: python
@@ -171,9 +176,10 @@ To write results data to the output database, you first create the Step objects 
       step1 = odb.Step(name='step-1',  
           description='', domain=TIME, timePeriod=1.0)
 
-  The Step constructor has an optional previousStepName argument that specifies the step after which this step must be inserted in the steps repository. For a full description of the Step command, see :py:class:`~abaqus.Step.Step.Step`.
+  The `Step` constructor has an optional previousStepName argument that specifies the step after which this step must be inserted in the steps repository. For a full description of the Step command, see :py:class:`~abaqus.Step.Step.Step`.
 
 - **Frames**
+  
   You use the Frame constructor to create a frame for field output. For example,
 
   .. code-block:: python

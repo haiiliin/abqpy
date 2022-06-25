@@ -1,0 +1,1364 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="API Summary" href="../../../summary.html" /><link rel="prev" title="Improving the efficiency of your scripts" href="improve-efficiency.html" />
+
+    <meta name="generator" content="sphinx-4.5.0, furo 2022.06.21"/>
+        <title>Example programs that access data from an output database - abqpy 2016a0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../../index.html"><div class="brand">abqpy 2016a0 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../../index.html">
+  
+  
+  <span class="sidebar-brand-text">abqpy 2016a0 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../../../user.html">User’s Guide</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../about.html">About the Abaqus Scripting Interface</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../about/interface.html">Abaqus/CAE and the Abaqus Scripting Interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../about/interact.html">How does the Abaqus Scripting Interface interact with Abaqus/CAE?</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../about/examples.html">Simple examples</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../about/examples/create-part.html">Creating a part</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../about/examples/summary.html">Summary</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../python.html">Using the Abaqus Scripting Interface</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../python/introduction.html">Introduction to Python</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../python/introduction/python-abaqus.html">Python and Abaqus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../python/introduction/python-resources.html">Python resources</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../python/introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../python/introduction/python-basics.html">The basics of Python</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../python/introduction/programming.html">Programming techniques</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../python/introduction/further-reading.html">Further reading</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../python/python-abaqus.html">Using Python and the Abaqus Scripting Interface</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../python/python-abaqus/executing.html">Executing scripts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../python/python-abaqus/style.html">Abaqus Scripting Interface documentation style</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../python/python-abaqus/types.html">Abaqus Scripting Interface data types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../python/python-abaqus/oop.html">Object-oriented programming and the Abaqus Scripting Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../python/python-abaqus/errors.html">Error handling in the Abaqus Scripting Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../python/python-abaqus/extending.html">Extending the Abaqus Scripting Interface</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../python/use-scripts.html">Using the Abaqus Scripting Interface with Abaqus/CAE</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../python/use-scripts/object-model.html">The Abaqus object model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../python/use-scripts/modify-objects.html">Copying, deleting, and renaming Abaqus Scripting Interface objects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../python/use-scripts/sequences.html">Abaqus/CAE sequences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../python/use-scripts/namespace.html">Namespace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../python/use-scripts/specify-viewport.html">Specifying what is displayed in the viewport</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../python/use-scripts/specify-region.html">Specifying a region</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../python/use-scripts/user-input.html">Prompting the user for input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../python/use-scripts/interact.html">Interacting with Abaqus/Standard and Abaqus/Explicit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../python/use-scripts/environment-file.html">Using Abaqus Scripting Interface commands in your environment file</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../environment.html">The Abaqus Python Development Environment</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../environment/about.html">About the Abaqus Python development environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../environment/pde-basics.html">Abaqus PDE basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../environment/use-pde.html">Using the Abaqus PDE</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../examples.html">Putting it all Together: Abaqus Scripting Interface Examples</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../examples/cantilever.html">Reproducing the cantilever beam tutorial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../examples/plot.html">Generating a customized plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../examples/sensitivity.html">Investigating the skew sensitivity of shell elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../examples/settings.html">Editing display preferences and GUI settings</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../../output.html">Accessing an Output Database</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 has-children"><a class="reference internal" href="../python.html">Using the Abaqus Scripting Interface to access an output database</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../python/need-what-to-understand.html">What do you need to access the output database?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/object-model.html">How the object model for the output database relates to commands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/output-object-model.html">Object model for the output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/execute-script.html">Executing a script that accesses an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/read.html">Reading from an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/write.html">Writing to an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/exceptions.html">Exception handling in an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/computations.html">Computations with Abaqus results</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/improve-efficiency.html">Improving the efficiency of your scripts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/examples.html">Example scripts that access data from an output database</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current has-children"><a class="reference internal" href="../cpp.html">Using C++ to access an output database</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="about.html">About the C++ interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="need-what-access.html">What do you need to access the output database?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="style.html">Abaqus Scripting Interface documentation style</a></li>
+<li class="toctree-l4"><a class="reference internal" href="object-model.html">How the object model for the output database relates to commands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="output-object-model.html">Object model for the output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="compile-link.html">Compiling and linking your C++ source code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="access.html">Accessing the C++ interface from an existing application</a></li>
+<li class="toctree-l4"><a class="reference internal" href="architecture.html">The Abaqus C++ API architecture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="utility.html">Utility interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="read.html">Reading from an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="write.html">Writing to an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exceptions.html">Exception handling in an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="computations.html">Computations with Abaqus results</a></li>
+<li class="toctree-l4"><a class="reference internal" href="improve-efficiency.html">Improving the efficiency of your scripts</a></li>
+<li class="toctree-l4 current current-page"><a class="current reference internal" href="#">Example programs that access data from an output database</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../summary.html">API Summary</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../summary/header.html">Header of the Python script</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../summary/mdb.html">Abaqus Model Database</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" role="switch" type="checkbox"/><label for="toctree-checkbox-14"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../summary/mdb/model.html">Abaqus Model</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" role="switch" type="checkbox"/><label for="toctree-checkbox-15"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/adaptivity.html">Adaptivity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/amplitude.html">Amplitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/assembly.html">Assembly</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/bc.html">Boundary Condition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/calibration.html">Calibration of Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/constraint.html">Constraint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/field.html">Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/filter.html">Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/interaction.html">Interaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/load.html">Load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/material.html">Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/optimization.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/output.html">Output Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/part.html">Part</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/predefined.html">Predefined Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/profile.html">Beam Section Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/property.html">Property</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../summary/mdb/model/section.html">Section</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" role="switch" type="checkbox"/><label for="toctree-checkbox-16"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../summary/mdb/model/section/connector.html">Connector</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../summary/mdb/model/sketcher.html">Sketcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../summary/mdb/model/step.html">Step</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" role="switch" type="checkbox"/><label for="toctree-checkbox-17"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../summary/mdb/model/step/step_miscellaneous.html">Step Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../summary/mdb/job.html">Abaqus Job</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../summary/odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../summary/session.html">Abaqus Session</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../references.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" role="switch" type="checkbox"/><label for="toctree-checkbox-18"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../reference/mdb.html">Abaqus Model Database</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" role="switch" type="checkbox"/><label for="toctree-checkbox-19"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../reference/mdb/model.html">Model</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" role="switch" type="checkbox"/><label for="toctree-checkbox-20"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/adaptivity.html">Adaptivity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/amplitude.html">Amplitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/bc.html">Boundary Condition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/calibration.html">Calibration of Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/constraint.html">Constraint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/field.html">Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/filter.html">Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/interaction.html">Interaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/load.html">Load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/material.html">Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/mesh.html">Mesh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/optimization.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/output.html">Output Request</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../reference/mdb/model/part_assembly.html">Part and Assembly</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" role="switch" type="checkbox"/><label for="toctree-checkbox-21"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../reference/mdb/model/part.html">Part</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../reference/mdb/model/assembly.html">Assembly</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../reference/mdb/model/part_assembly/datum.html">Datum</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../reference/mdb/model/part_assembly/engineering.html">Engineering Feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../reference/mdb/model/part_assembly/feature.html">Feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../reference/mdb/model/part_assembly/geometry.html">Basic Geometry</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../reference/mdb/model/part_assembly/region.html">Region</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/predefined.html">Predefined Field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/profile.html">Beam Section Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/property.html">Property</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../reference/mdb/model/section.html">Section</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" role="switch" type="checkbox"/><label for="toctree-checkbox-22"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../reference/mdb/model/section/connector.html">Connector</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../reference/mdb/model/sketcher.html">Sketcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../reference/mdb/model/step.html">Step</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" role="switch" type="checkbox"/><label for="toctree-checkbox-23"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../reference/mdb/model/step/step_miscellaneous.html">Step Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/mdb/job.html">Job</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/mdb/annotation.html">Annotation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/mdb/edit_mesh.html">Edit Mesh</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../reference/odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../reference/session.html">Abaqus Session</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" role="switch" type="checkbox"/><label for="toctree-checkbox-24"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/session/animation.html">Animation Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/session/canvas.html">Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/session/display_options.html">Display Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/session/display.html">Display Group</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/session/field_report.html">FieldReport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/session/odb_display.html">Odb Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/session/path.html">Path and Probe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/session/plot_options.html">Plot Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/session/print.html">Print</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/session/xy.html">XY</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../reference/kernel.html">Kernel</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" role="switch" type="checkbox"/><label for="toctree-checkbox-25"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/kernel/cae_display_preferences.html">Abaqus CAE Display Preferences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/kernel/input.html">Input File Parser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/kernel/kernel.html">Custom Kernel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/kernel/messaging.html">Messaging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/kernel/table_collection.html">Table Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/kernel/text_representation.html">Text Representation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../reference/kernel/utility.html">Utility and View</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="example-programs-that-access-data-from-an-output-database">
+<h1>Example programs that access data from an output database<a class="headerlink" href="#example-programs-that-access-data-from-an-output-database" title="Permalink to this headline">#</a></h1>
+<p>The following examples illustrate how you use the output database commands to access data from an output database.</p>
+<section id="finding-the-maximum-value-of-von-mises-stress">
+<h2>Finding the maximum value of von Mises stress<a class="headerlink" href="#finding-the-maximum-value-of-von-mises-stress" title="Permalink to this headline">#</a></h2>
+<p>This example illustrates how you can iterate through an output database and search for the maximum value of von Mises stress. The program opens the output database specified by the first argument on the command line and iterates through the following:</p>
+<ul class="simple">
+<li><p>Each step.</p></li>
+<li><p>Each frame in each step.</p></li>
+<li><p>Each value of von Mises stress in each frame.</p></li>
+</ul>
+<p>In addition, you can supply an optional assembly element set argument from the command line, in which case the program searches only the element set for the maximum value of von Mises stress.</p>
+<p>The following illustrates how you can run the example program from the system prompt. The program will search the element set ALL ELEMENTS in the viewer tutorial output database for the maximum value of von Mises stress:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus odbMaxMises.exe -odb viewer_tutorial.odb
+    -elset <span class="s2">&quot;ALL ELEMENTS&quot;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If a command line argument is a String that contains spaces, some systems will interpret the String correctly only if it is enclosed in double quotation marks. For example, “ALL ELEMENTS”.</p>
+</div>
+<p>You can also run the example with only the <strong>-help</strong> parameter for a summary of the usage.</p>
+<p>Use the following commands to retrieve the example program and the viewer tutorial output database:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// abaqus fetch job=odbMaxMises.C</span>
+<span class="c1">// abaqus fetch job=viewer_tutorial</span>
+
+<span class="cm">/***************************************************************</span>
+<span class="cm">odbMaxMises.C</span>
+<span class="cm">Code to determine the location and value of the maximum</span>
+<span class="cm">von-mises stress in an output database.</span>
+<span class="cm">Usage: abaqus odbMaxMises -odb odbName -elset(optional)</span>
+<span class="cm">    elsetName</span>
+<span class="cm">Requirements:</span>
+<span class="cm">1. -odb   : Name of the output database.</span>
+<span class="cm">2. -elset : Name of the assembly level element set.</span>
+<span class="cm">            Search will be done only for element belonging</span>
+<span class="cm">            to this set. If this parameter is not provided,</span>
+<span class="cm">            search will be performed over the entire model.</span>
+<span class="cm">3. -help  : Print usage</span>
+<span class="cm">****************************************************************/</span><span class="w"></span>
+<span class="cp">#if (defined(HP) &amp;&amp; (! defined(HKS_HPUXI)))</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream.h&gt;</span><span class="cp"></span>
+<span class="cp">#else</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
+<span class="cp">#endif</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;odb_API.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sys/stat.h&gt;</span><span class="cp"></span>
+<span class="cm">/*</span>
+<span class="cm">***************</span>
+<span class="cm">utility functions</span>
+<span class="cm">***************</span>
+<span class="cm">*/</span><span class="w"></span>
+<span class="kt">bool</span><span class="w"> </span><span class="nf">fileExists</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">odb_String</span><span class="w">  </span><span class="o">&amp;</span><span class="n">string</span><span class="p">);</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">rightTrim</span><span class="p">(</span><span class="n">odb_String</span><span class="w">  </span><span class="o">&amp;</span><span class="n">string</span><span class="p">,</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">char_set</span><span class="p">);</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">printExecutionSummary</span><span class="p">();</span><span class="w"></span>
+<span class="cm">/***************************************************************/</span><span class="w"></span>
+
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">ABQmain</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="n">odb_String</span><span class="w"> </span><span class="n">odbPath</span><span class="p">;</span><span class="w"></span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">ifOdbName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
+<span class="n">odb_String</span><span class="w"> </span><span class="n">elsetName</span><span class="p">;</span><span class="w"></span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">ifElset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
+<span class="n">odb_Set</span><span class="w"> </span><span class="n">myElset</span><span class="p">;</span><span class="w"></span>
+<span class="n">odb_String</span><span class="w"> </span><span class="n">region</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;over the entire model&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="kt">char</span><span class="w"> </span><span class="n">msg</span><span class="p">[</span><span class="mi">256</span><span class="p">];</span><span class="w"></span>
+<span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">abaCmd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span><span class="w"></span>
+
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">arg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">arg</span><span class="o">&lt;</span><span class="n">argc</span><span class="p">;</span><span class="w"> </span><span class="n">arg</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">strncmp</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="n">arg</span><span class="p">],</span><span class="s">&quot;-o**&quot;</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">arg</span><span class="o">++</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odbPath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="n">arg</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="n">rightTrim</span><span class="p">(</span><span class="n">odbPath</span><span class="p">,</span><span class="s">&quot;.odb&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">fileExists</span><span class="p">(</span><span class="n">odbPath</span><span class="p">))</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;**ERROR** output database  &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">odbPath</span><span class="p">.</span><span class="n">CStr</span><span class="p">()</span><span class="w"></span>
+<span class="w">        </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; does not exist</span><span class="se">\n</span><span class="s">&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">ifOdbName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">strncmp</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="n">arg</span><span class="p">],</span><span class="s">&quot;-e**&quot;</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">arg</span><span class="o">++</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">elsetName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="n">arg</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="n">ifElset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">strncmp</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="n">arg</span><span class="p">],</span><span class="s">&quot;-h**&quot;</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">printExecutionSummary</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">ifOdbName</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;**ERROR** output database name is not provided</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">printExecutionSummary</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="c1">// Open the output database</span>
+<span class="n">odb_Odb</span><span class="o">&amp;</span><span class="w"> </span><span class="n">myOdb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">openOdb</span><span class="p">(</span><span class="n">odbPath</span><span class="p">);</span><span class="w"></span>
+<span class="n">odb_Assembly</span><span class="o">&amp;</span><span class="w"> </span><span class="n">myAssembly</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myOdb</span><span class="p">.</span><span class="n">rootAssembly</span><span class="p">();</span><span class="w"></span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ifElset</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">myAssembly</span><span class="p">.</span><span class="n">elementSets</span><span class="p">().</span><span class="n">isMember</span><span class="p">(</span><span class="n">elsetName</span><span class="p">))</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">myElset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myAssembly</span><span class="p">.</span><span class="n">elementSets</span><span class="p">()[</span><span class="n">elsetName</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="n">region</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot; in the element set : &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">elsetName</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">else</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">cerr</span><span class="o">&lt;&lt;</span><span class="s">&quot;An assembly level elset &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">elsetName</span><span class="p">.</span><span class="n">CStr</span><span class="p">()</span><span class="w"></span>
+<span class="w">            </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; does not exist in the output database :&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">myOdb</span><span class="p">.</span><span class="n">name</span><span class="p">().</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">myOdb</span><span class="p">.</span><span class="n">close</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="c1">// Initialize maximum values.</span>
+<span class="kt">float</span><span class="w"> </span><span class="n">maxMises</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">-0.1</span><span class="p">;</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">numFV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">maxElem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="n">odb_String</span><span class="w"> </span><span class="n">maxStep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;__None__&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">maxFrame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span><span class="w"></span>
+<span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">odb_String</span><span class="w"> </span><span class="n">Stress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;S&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">isStressPresent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">numBD</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="n">numElems</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">numIP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">numComp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="c1">// Iterate over all available steps</span>
+<span class="n">odb_StepRepository</span><span class="o">&amp;</span><span class="w"> </span><span class="n">sRep1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myOdb</span><span class="p">.</span><span class="n">steps</span><span class="p">();</span><span class="w"></span>
+<span class="n">odb_StepRepositoryIT</span><span class="w"> </span><span class="n">sIter1</span><span class="w"> </span><span class="p">(</span><span class="n">sRep1</span><span class="p">);</span><span class="w"></span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">sIter1</span><span class="p">.</span><span class="n">first</span><span class="p">();</span><span class="w"> </span><span class="o">!</span><span class="n">sIter1</span><span class="p">.</span><span class="n">isDone</span><span class="p">();</span><span class="w"> </span><span class="n">sIter1</span><span class="p">.</span><span class="n">next</span><span class="p">())</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_Step</span><span class="o">&amp;</span><span class="w"> </span><span class="n">step</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sRep1</span><span class="p">[</span><span class="n">sIter1</span><span class="p">.</span><span class="n">currentKey</span><span class="p">()];</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;Processing Step: &quot;</span><span class="o">&lt;&lt;</span><span class="n">step</span><span class="p">.</span><span class="n">name</span><span class="p">().</span><span class="n">CStr</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_SequenceFrame</span><span class="o">&amp;</span><span class="w"> </span><span class="n">frameSequence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">step</span><span class="p">.</span><span class="n">frames</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">numFrames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frameSequence</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">f</span><span class="o">&lt;</span><span class="n">numFrames</span><span class="p">;</span><span class="w"> </span><span class="n">f</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_Frame</span><span class="o">&amp;</span><span class="w"> </span><span class="n">frame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frameSequence</span><span class="p">[</span><span class="n">f</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_FieldOutputRepository</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fieldRep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frame</span><span class="p">.</span><span class="n">fieldOutputs</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">fieldRep</span><span class="p">.</span><span class="n">isMember</span><span class="p">(</span><span class="n">Stress</span><span class="p">))</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">isStressPresent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">odb_FieldOutput</span><span class="w"> </span><span class="n">field</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fieldRep</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">Stress</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ifElset</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">field</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">field</span><span class="p">.</span><span class="n">getSubset</span><span class="p">(</span><span class="n">myElset</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceFieldBulkData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">seqVal</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">                </span><span class="n">field</span><span class="p">.</span><span class="n">bulkDataBlocks</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">numBlocks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seqVal</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">iblock</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">iblock</span><span class="o">&lt;</span><span class="n">numBlocks</span><span class="p">;</span><span class="w"> </span><span class="n">iblock</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">odb_FieldBulkData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">bulkData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seqVal</span><span class="p">[</span><span class="n">iblock</span><span class="p">];</span><span class="w"></span>
+<span class="w">        </span><span class="n">numBD</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bulkData</span><span class="p">.</span><span class="n">length</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="n">numElems</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bulkData</span><span class="p">.</span><span class="n">numberOfElements</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="n">numIP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">numBD</span><span class="o">/</span><span class="n">numElems</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">numComp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bulkData</span><span class="p">.</span><span class="n">width</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="n">mises</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bulkData</span><span class="p">.</span><span class="n">mises</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="n">elementLabels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bulkData</span><span class="p">.</span><span class="n">elementLabels</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="n">integrationPoints</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bulkData</span><span class="p">.</span><span class="n">integrationPoints</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">elem</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">elem</span><span class="o">&lt;</span><span class="n">numElems</span><span class="p">;</span><span class="w"> </span><span class="n">elem</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">ip</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">ip</span><span class="o">&lt;</span><span class="n">numIP</span><span class="p">;</span><span class="w"> </span><span class="n">ip</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="n">position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">elem</span><span class="o">*</span><span class="n">numIP</span><span class="o">+</span><span class="n">ip</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="kt">float</span><span class="w"> </span><span class="n">misesData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mises</span><span class="p">[</span><span class="n">position</span><span class="p">];</span><span class="w"></span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">misesData</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">maxMises</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="n">maxMises</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">misesData</span><span class="p">;</span><span class="w"></span>
+<span class="w">                </span><span class="n">maxElem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">elementLabels</span><span class="p">[</span><span class="n">elem</span><span class="p">];</span><span class="w"></span>
+<span class="w">                </span><span class="n">maxStep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">step</span><span class="p">.</span><span class="n">name</span><span class="p">();</span><span class="w"></span>
+<span class="w">                </span><span class="n">maxFrame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frame</span><span class="p">.</span><span class="n">incrementNumber</span><span class="p">();</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">isStressPresent</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Maximum von Mises stress &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">region</span><span class="p">.</span><span class="n">CStr</span><span class="p">()</span><span class="w"></span>
+<span class="w">    </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; is &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">maxMises</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;  in element &quot;</span><span class="w"></span>
+<span class="w">        </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">maxElem</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Location: frame # &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">maxFrame</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; step:  &quot;</span><span class="w"></span>
+<span class="w">        </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">maxStep</span><span class="p">.</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="k">else</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; Stress output is not available in  the &quot;</span><span class="w"></span>
+<span class="w">    </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;output database : &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">myOdb</span><span class="p">.</span><span class="n">name</span><span class="p">().</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="c1">// close the output database before exiting the program</span>
+<span class="n">myOdb</span><span class="p">.</span><span class="n">close</span><span class="p">();</span><span class="w"></span>
+<span class="k">return</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="kt">bool</span><span class="w"> </span><span class="nf">fileExists</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">odb_String</span><span class="w">  </span><span class="o">&amp;</span><span class="n">string</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">exists</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
+<span class="k">struct</span><span class="w">  </span><span class="nc">stat</span><span class="w">  </span><span class="n">buf</span><span class="p">;</span><span class="w"></span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">stat</span><span class="p">(</span><span class="n">string</span><span class="p">.</span><span class="n">CStr</span><span class="p">(),</span><span class="o">&amp;</span><span class="n">buf</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">exists</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
+<span class="k">return</span><span class="w"> </span><span class="n">exists</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">rightTrim</span><span class="p">(</span><span class="n">odb_String</span><span class="w">  </span><span class="o">&amp;</span><span class="n">string</span><span class="p">,</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">char_set</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">string</span><span class="p">.</span><span class="n">Length</span><span class="p">();</span><span class="w"></span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">string</span><span class="p">.</span><span class="n">Find</span><span class="p">(</span><span class="n">char_set</span><span class="p">)</span><span class="o">==</span><span class="n">length</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">string</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">odb_String</span><span class="p">(</span><span class="n">char_set</span><span class="p">));</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">printExecutionSummary</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; Code to determine the location and value of the</span><span class="se">\n</span><span class="s">&quot;</span><span class="w"></span>
+<span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; maximum von-mises stress in an output database.</span><span class="se">\n</span><span class="s">&quot;</span><span class="w"></span>
+<span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; Usage: abaqus odbMaxMises -odb odbName </span><span class="se">\n</span><span class="s">&quot;</span><span class="w"></span>
+<span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; -elset(optional), -elsetName</span><span class="se">\n</span><span class="s">&quot;</span><span class="w"></span>
+<span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; Requirements:</span><span class="se">\n</span><span class="s">&quot;</span><span class="w"></span>
+<span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; 1. -odb   : Name of the output database.</span><span class="se">\n</span><span class="s">&quot;</span><span class="w"></span>
+<span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; 2. -elset : Name of the assembly level element set.</span><span class="se">\n</span><span class="s">&quot;</span><span class="w"></span>
+<span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;             Search will be done only for element </span><span class="se">\n</span><span class="s">&quot;</span><span class="w"></span>
+<span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;             belonging to this set.</span><span class="se">\n</span><span class="s">&quot;</span><span class="w"></span>
+<span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;             If this parameter is not provided, search </span><span class="se">\n</span><span class="s">&quot;</span><span class="w"></span>
+<span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;             will be performed over the entire model.</span><span class="se">\n</span><span class="s">&quot;</span><span class="w"></span>
+<span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; 3. -help  : Print usage</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+<section id="creating-an-output-database">
+<h2>Creating an output database<a class="headerlink" href="#creating-an-output-database" title="Permalink to this headline">#</a></h2>
+<p>The following example illustrates how you can use the Abaqus C++ API commands to do the following:</p>
+<ol class="arabic simple">
+<li><p>Create a new output database.</p></li>
+<li><p>Add model data.</p></li>
+<li><p>Add field data.</p></li>
+<li><p>Add history data.</p></li>
+<li><p>Read history data.</p></li>
+<li><p>Save the output database.</p></li>
+</ol>
+<p>Use the following command to retrieve the example program:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// abaqus fetch job=odbWrite</span>
+
+<span class="c1">////////////////////////////////////////////////////</span>
+<span class="c1">// Code to create an output database and add model,</span>
+<span class="c1">// field, and history data. The code also reads</span>
+<span class="c1">// history data, performs an operation on the data, and writes</span>
+<span class="c1">// the result back to the output database.</span>
+<span class="c1">//</span>
+<span class="c1">// SECTION: System includes</span>
+<span class="c1">//</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;math.h&gt;</span><span class="cp"></span>
+<span class="c1">//</span>
+<span class="c1">// Begin local includes</span>
+<span class="c1">//</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;odb_API.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;odb_MaterialTypes.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;odb_SectionTypes.h&gt;</span><span class="cp"></span>
+<span class="c1">//</span>
+<span class="c1">// End local includes</span>
+<span class="c1">//</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">ABQmain</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Create an ODB (which also creates the rootAssembly).</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">name</span><span class="p">(</span><span class="s">&quot;simpleModel&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">analysisTitle</span><span class="p">(</span><span class="s">&quot;ODB created with C++ ODB API&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">description</span><span class="p">(</span><span class="s">&quot;example illustrating C++ ODB API&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">path</span><span class="p">(</span><span class="s">&quot;odbWriteC.odb&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_Odb</span><span class="o">&amp;</span><span class="w"> </span><span class="n">odb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Odb</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="n">analysisTitle</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="n">description</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="n">path</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Model data:</span>
+<span class="w">    </span><span class="c1">// Set up the section categories.</span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">sectionCategoryName</span><span class="p">(</span><span class="s">&quot;S5&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">sectionCategoryDescription</span><span class="p">(</span><span class="s">&quot;Five-Layered Shell&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_SectionCategory</span><span class="o">&amp;</span><span class="w"> </span><span class="n">sCat</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">        </span><span class="n">odb</span><span class="p">.</span><span class="n">SectionCategory</span><span class="p">(</span><span class="n">sectionCategoryName</span><span class="p">,</span><span class="w"></span>
+<span class="w">                            </span><span class="n">sectionCategoryDescription</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">sectionPointNumber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">sectionPointDescription</span><span class="p">(</span><span class="s">&quot;Bottom&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_SectionPoint</span><span class="w"> </span><span class="n">spBot</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">        </span><span class="n">sCat</span><span class="p">.</span><span class="n">SectionPoint</span><span class="p">(</span><span class="n">sectionPointNumber</span><span class="p">,</span><span class="w"></span>
+<span class="w">                        </span><span class="n">sectionPointDescription</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">sectionPointNumber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">sectionPointDescription</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Middle&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_SectionPoint</span><span class="w"> </span><span class="n">spMid</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">        </span><span class="n">sCat</span><span class="p">.</span><span class="n">SectionPoint</span><span class="p">(</span><span class="n">sectionPointNumber</span><span class="p">,</span><span class="w"></span>
+<span class="w">                        </span><span class="n">sectionPointDescription</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">sectionPointNumber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">sectionPointDescription</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Top&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_SectionPoint</span><span class="w"> </span><span class="n">spTop</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">        </span><span class="n">sCat</span><span class="p">.</span><span class="n">SectionPoint</span><span class="p">(</span><span class="n">sectionPointNumber</span><span class="p">,</span><span class="w"></span>
+<span class="w">                        </span><span class="n">sectionPointDescription</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Create few materials</span>
+<span class="w">    </span><span class="n">odb_MaterialApi</span><span class="w"> </span><span class="n">materialApi</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb</span><span class="p">.</span><span class="n">extendApi</span><span class="p">(</span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">odb_MATERIAL</span><span class="p">,</span><span class="n">materialApi</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">materialName</span><span class="p">(</span><span class="s">&quot;Elastic Material&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_Material</span><span class="o">&amp;</span><span class="w"> </span><span class="n">material_1</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">        </span><span class="n">materialApi</span><span class="p">.</span><span class="n">Material</span><span class="p">(</span><span class="n">materialName</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_SequenceSequenceDouble</span><span class="w"> </span><span class="n">myTable</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_SequenceDouble</span><span class="w"> </span><span class="n">myData</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">myData</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">12000.00</span><span class="p">);</span><span class="c1">//youngs modulus</span>
+<span class="w">    </span><span class="n">myData</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">0.3</span><span class="p">);</span><span class="c1">//poissons ratio</span>
+<span class="w">    </span><span class="n">myTable</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">myData</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">type</span><span class="p">(</span><span class="s">&quot;ISOTROPIC&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">noCompression</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">noTension</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">temperatureDependency</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">dependencies</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">moduli</span><span class="p">(</span><span class="s">&quot;LONG_TERM&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">material_1</span><span class="p">.</span><span class="n">Elastic</span><span class="p">(</span><span class="n">myTable</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="n">type</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="n">noCompression</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="n">noTension</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="n">temperatureDependency</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="n">dependencies</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="n">moduli</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">//create few sections</span>
+<span class="w">    </span><span class="n">odb_SectionApi</span><span class="w"> </span><span class="n">sectionApi</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb</span><span class="p">.</span><span class="n">extendApi</span><span class="p">(</span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">odb_SECTION</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="n">sectionApi</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">sectionName</span><span class="p">(</span><span class="s">&quot;Homogeneous Shell Section&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">thickness</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2.0</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_HomogeneousShellSection</span><span class="o">&amp;</span><span class="w"> </span><span class="n">section_1</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">        </span><span class="n">sectionApi</span><span class="p">.</span><span class="n">HomogeneousShellSection</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span><span class="n">thickness</span><span class="p">,</span><span class="n">materialName</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Create a 2-element shell model,</span>
+<span class="w">    </span><span class="c1">//4 integration points, 5 section points.</span>
+
+<span class="w">    </span><span class="n">odb_Part</span><span class="o">&amp;</span><span class="w"> </span><span class="n">part1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">Part</span><span class="p">(</span><span class="s">&quot;part-1&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                            </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">THREE_D</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">DEFORMABLE_BODY</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">odb_SequenceInt</span><span class="w"> </span><span class="n">nodeLabels</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="o">&lt;</span><span class="mi">7</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">nodeLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">c</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="w">  </span><span class="mi">0</span><span class="p">,</span><span class="w">  </span><span class="mf">0.0</span><span class="p">},</span><span class="w"></span>
+<span class="w">                </span><span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="w">  </span><span class="mi">0</span><span class="p">,</span><span class="w">  </span><span class="mf">0.0</span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="w">  </span><span class="mi">1</span><span class="p">,</span><span class="w">  </span><span class="mf">0.1</span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="w">  </span><span class="mi">1</span><span class="p">,</span><span class="w">  </span><span class="mf">0.1</span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span><span class="w"> </span><span class="mf">-0.1</span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span><span class="w"> </span><span class="mf">-0.1</span><span class="p">}</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_SequenceSequenceFloat</span><span class="w"> </span><span class="n">nodeCoor</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="o">&lt;</span><span class="n">nodeLabels</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">n</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_SequenceFloat</span><span class="w"> </span><span class="n">loc</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">&lt;</span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">loc</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="n">i</span><span class="p">]);</span><span class="w"></span>
+<span class="w">    </span><span class="n">nodeCoor</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">loc</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">nodeSetName</span><span class="p">(</span><span class="s">&quot;nset-1&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">part1</span><span class="p">.</span><span class="n">addNodes</span><span class="p">(</span><span class="n">nodeLabels</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="n">nodeCoor</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="n">nodeSetName</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">odb_SequenceInt</span><span class="w"> </span><span class="n">elLabels</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">elLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">elLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_SequenceSequenceInt</span><span class="w"> </span><span class="n">connect</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">numNodePerEl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">conn</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="n">numNodePerEl</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">},</span><span class="w"></span>
+<span class="w">                            </span><span class="p">{</span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">}</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">e</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">e</span><span class="o">&lt;</span><span class="n">elLabels</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">e</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_SequenceInt</span><span class="w"> </span><span class="n">l</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">&lt;</span><span class="n">numNodePerEl</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">l</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">conn</span><span class="p">[</span><span class="n">e</span><span class="p">][</span><span class="n">i</span><span class="p">]);</span><span class="w"></span>
+<span class="w">    </span><span class="n">connect</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">l</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">elType</span><span class="p">(</span><span class="s">&quot;S4&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">elsetName</span><span class="p">(</span><span class="s">&quot;eset-1&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">part1</span><span class="p">.</span><span class="n">addElements</span><span class="p">(</span><span class="n">elLabels</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="n">connect</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="n">elType</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="n">elsetName</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="n">sCat</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Instance the part.</span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">partInstanceName</span><span class="p">(</span><span class="s">&quot;part-1-1&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_Instance</span><span class="o">&amp;</span><span class="w"> </span><span class="n">instance1</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">        </span><span class="n">odb</span><span class="p">.</span><span class="n">rootAssembly</span><span class="p">().</span><span class="n">Instance</span><span class="p">(</span><span class="n">partInstanceName</span><span class="p">,</span><span class="w"> </span><span class="n">part1</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// create instance level sets for section assignment</span>
+<span class="w">    </span><span class="n">elsetName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Material 1&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_Set</span><span class="o">&amp;</span><span class="w"> </span><span class="n">elset_1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instance1</span><span class="p">.</span><span class="n">ElementSet</span><span class="p">(</span><span class="n">elsetName</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                            </span><span class="n">elLabels</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// section assignment on instance</span>
+<span class="w">    </span><span class="n">instance1</span><span class="p">.</span><span class="n">assignSection</span><span class="p">(</span><span class="n">elset_1</span><span class="p">,</span><span class="n">section_1</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Field data:</span>
+<span class="w">    </span><span class="c1">// Create a step and a frame.</span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">stepName</span><span class="p">(</span><span class="s">&quot;step-1&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">stepDescription</span><span class="p">(</span><span class="s">&quot;first analysis step&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_Step</span><span class="o">&amp;</span><span class="w"> </span><span class="n">step1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">Step</span><span class="p">(</span><span class="n">stepName</span><span class="p">,</span><span class="w"></span>
+<span class="w">                            </span><span class="n">stepDescription</span><span class="p">,</span><span class="w"></span>
+<span class="w">                            </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">TIME</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="mf">1.0</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">incrementNumber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">analysisTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">frameDescription</span><span class="p">(</span><span class="s">&quot;results frame for time&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">frameDescription</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">analysisTime</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_Frame</span><span class="w"> </span><span class="n">frame1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">step1</span><span class="p">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">incrementNumber</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                </span><span class="n">analysisTime</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                </span><span class="n">frameDescription</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Write nodal displacements.</span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">fieldName</span><span class="p">(</span><span class="s">&quot;U&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">fieldDescription</span><span class="p">(</span><span class="s">&quot;Displacements&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">uField</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">        </span><span class="n">frame1</span><span class="p">.</span><span class="n">FieldOutput</span><span class="p">(</span><span class="n">fieldName</span><span class="p">,</span><span class="w"></span>
+<span class="w">                        </span><span class="n">fieldDescription</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">VECTOR</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">odb_SequenceSequenceFloat</span><span class="w"> </span><span class="n">dispData</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_SequenceFloat</span><span class="w"> </span><span class="n">dispData1</span><span class="p">[</span><span class="mi">6</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// create some displacement values</span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="o">&lt;</span><span class="mi">6</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">m</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">m</span><span class="o">&lt;</span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="n">m</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">dispData1</span><span class="p">[</span><span class="n">n</span><span class="p">].</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="o">*</span><span class="mi">3</span><span class="o">+</span><span class="n">m</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">dispData</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">dispData1</span><span class="p">[</span><span class="n">n</span><span class="p">]);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">uField</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">NODAL</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="n">instance1</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="n">nodeLabels</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="n">dispData</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Make this the default deformed field for visualization.</span>
+
+<span class="w">    </span><span class="n">step1</span><span class="p">.</span><span class="n">setDefaultDeformedField</span><span class="p">(</span><span class="n">uField</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Write stress tensors (output only available at</span>
+<span class="w">    </span><span class="c1">// top/bottom section points)</span>
+<span class="w">    </span><span class="c1">// The element defined above (S4) has 4 integration points.</span>
+<span class="w">    </span><span class="c1">// Hence, there are 4 stress tensors per element.</span>
+<span class="w">    </span><span class="c1">// Each Field constructor refers to only one layer of</span>
+<span class="w">    </span><span class="c1">// section points.</span>
+
+<span class="w">    </span><span class="n">odb_SequenceSequenceFloat</span><span class="w"> </span><span class="n">topData</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_SequenceFloat</span><span class="w"> </span><span class="n">topData1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="o">&lt;</span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">topData1</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="o">&lt;</span><span class="mi">8</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">topData</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">topData1</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">odb_SequenceSequenceFloat</span><span class="w"> </span><span class="n">bottomData</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_SequenceFloat</span><span class="w"> </span><span class="n">bottomData1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="o">&lt;</span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">bottomData1</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="o">&lt;</span><span class="mi">8</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">bottomData</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">bottomData1</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">odb_SequenceSequenceFloat</span><span class="w"> </span><span class="n">transform</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">//transform = ((1.,0.,0.), (0.,1.,0.), (0.,0.,1.))</span>
+
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="o">&lt;</span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="o">++</span><span class="p">){</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_SequenceFloat</span><span class="w"> </span><span class="n">transform1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">m</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">m</span><span class="o">&lt;</span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="n">m</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">m</span><span class="o">==</span><span class="n">n</span><span class="p">)</span><span class="n">transform1</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="n">transform1</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">transform</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">transform1</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">odb_SequenceString</span><span class="w"> </span><span class="n">componentLabels</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">componentLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">&quot;S11&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">componentLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">&quot;S22&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">componentLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">&quot;S33&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">componentLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">&quot;S12&quot;</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">odb_SequenceInvariant</span><span class="w"> </span><span class="n">validInvariants</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">validInvariants</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">MISES</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">fieldName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;S&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">fieldDescription</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Stress&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">sField</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">        </span><span class="n">frame1</span><span class="p">.</span><span class="n">FieldOutput</span><span class="p">(</span><span class="n">fieldName</span><span class="p">,</span><span class="w"></span>
+<span class="w">                        </span><span class="n">fieldDescription</span><span class="p">,</span><span class="w"></span>
+<span class="w">                        </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">TENSOR_3D_PLANAR</span><span class="p">,</span><span class="w"></span>
+<span class="w">                        </span><span class="n">componentLabels</span><span class="p">,</span><span class="w"></span>
+<span class="w">                        </span><span class="n">validInvariants</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">sField</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">INTEGRATION_POINT</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="n">instance1</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="n">elLabels</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="n">topData</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="n">spTop</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="n">transform</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">sField</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">INTEGRATION_POINT</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="n">instance1</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="n">elLabels</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="n">bottomData</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="n">spBot</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="n">transform</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// For this step, make this the default</span>
+<span class="w">    </span><span class="c1">// field for visualization.</span>
+
+<span class="w">    </span><span class="n">step1</span><span class="p">.</span><span class="n">setDefaultField</span><span class="p">(</span><span class="n">sField</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// History data:</span>
+<span class="w">    </span><span class="c1">// Create a HistoryRegion for a specific point.</span>
+<span class="w">    </span><span class="n">odb_HistoryPoint</span><span class="w"> </span><span class="n">hPoint1</span><span class="p">(</span><span class="n">instance1</span><span class="p">.</span><span class="n">getNodeFromLabel</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">historyRegionName</span><span class="p">(</span><span class="s">&quot;historyNode0&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">historyRegionDescription</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="s">&quot;Displacement and reaction force&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_HistoryRegion</span><span class="o">&amp;</span><span class="w"> </span><span class="n">hRegionStep1</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">        </span><span class="n">step1</span><span class="p">.</span><span class="n">HistoryRegion</span><span class="p">(</span><span class="n">historyRegionName</span><span class="p">,</span><span class="w"></span>
+<span class="w">                            </span><span class="n">historyRegionDescription</span><span class="p">,</span><span class="w"></span>
+<span class="w">                            </span><span class="n">hPoint1</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Create variables for this history output in step1.</span>
+
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">historyOutputName</span><span class="p">(</span><span class="s">&quot;U1&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">historyOutputDescription</span><span class="p">(</span><span class="s">&quot;Displacement&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_HistoryOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">hOutputStep1U1</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">        </span><span class="n">hRegionStep1</span><span class="p">.</span><span class="n">HistoryOutput</span><span class="p">(</span><span class="n">historyOutputName</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                </span><span class="n">historyOutputDescription</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">SCALAR</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">historyOutputName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;RF1&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">historyOutputDescription</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Reaction Force&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_HistoryOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">hOutputStep1Rf1</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">        </span><span class="n">hRegionStep1</span><span class="p">.</span><span class="n">HistoryOutput</span><span class="p">(</span><span class="n">historyOutputName</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                </span><span class="n">historyOutputDescription</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">SCALAR</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Add history data for step1.</span>
+
+<span class="w">    </span><span class="n">hOutputStep1U1</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">hOutputStep1Rf1</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">hOutputStep1U1</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">hOutputStep1Rf1</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">hOutputStep1U1</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="mf">0.3</span><span class="p">,</span><span class="w"> </span><span class="mf">0.3</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">hOutputStep1Rf1</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="mf">0.3</span><span class="p">,</span><span class="mf">0.3</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">hOutputStep1U1</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.5</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">hOutputStep1Rf1</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">0.5</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Create another step for history data.</span>
+<span class="w">    </span><span class="n">stepName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;step-2&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">stepDescription</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;second analysis step&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_Step</span><span class="o">&amp;</span><span class="w"> </span><span class="n">step2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">Step</span><span class="p">(</span><span class="n">stepName</span><span class="p">,</span><span class="w"></span>
+<span class="w">                            </span><span class="n">stepDescription</span><span class="p">,</span><span class="w"></span>
+<span class="w">                            </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">TIME</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="mf">1.0</span><span class="p">);</span><span class="w"></span>
+
+
+<span class="w">    </span><span class="c1">// Create new history region</span>
+
+<span class="w">    </span><span class="n">odb_HistoryPoint</span><span class="w"> </span><span class="n">hPoint2</span><span class="p">(</span><span class="n">instance1</span><span class="p">.</span><span class="n">getNodeFromLabel</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">odb_HistoryRegion</span><span class="o">&amp;</span><span class="w"> </span><span class="n">hRegionStep2</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">        </span><span class="n">step2</span><span class="p">.</span><span class="n">HistoryRegion</span><span class="p">(</span><span class="n">historyRegionName</span><span class="p">,</span><span class="w"></span>
+<span class="w">                            </span><span class="n">historyRegionDescription</span><span class="p">,</span><span class="w"></span>
+<span class="w">                            </span><span class="n">hPoint2</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">//Create new history output</span>
+<span class="w">    </span><span class="n">historyOutputName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;U1&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">historyOutputDescription</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Displacement&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_HistoryOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">hOutputStep2U1</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">        </span><span class="n">hRegionStep2</span><span class="p">.</span><span class="n">HistoryOutput</span><span class="p">(</span><span class="n">historyOutputName</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                </span><span class="n">historyOutputDescription</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">SCALAR</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">historyOutputName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;RF1&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">historyOutputDescription</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Reaction Force&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_HistoryOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">hOutputStep2Rf1</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">        </span><span class="n">hRegionStep2</span><span class="p">.</span><span class="n">HistoryOutput</span><span class="p">(</span><span class="n">historyOutputName</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                </span><span class="n">historyOutputDescription</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">SCALAR</span><span class="p">);</span><span class="w"></span>
+
+
+<span class="w">    </span><span class="c1">// Add history data for the second step.</span>
+
+<span class="w">    </span><span class="n">hOutputStep2U1</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="mf">1.2</span><span class="p">,</span><span class="w"> </span><span class="mf">0.8</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">hOutputStep2Rf1</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="mf">1.2</span><span class="p">,</span><span class="mf">0.9</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">hOutputStep2U1</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="mf">1.9</span><span class="p">,</span><span class="w"> </span><span class="mf">0.9</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">hOutputStep2Rf1</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="mf">1.9</span><span class="p">,</span><span class="mf">1.1</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">hOutputStep2U1</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="mf">3.0</span><span class="p">,</span><span class="w"> </span><span class="mf">1.3</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">hOutputStep2Rf1</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="mf">3.0</span><span class="p">,</span><span class="mf">1.3</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">hOutputStep2U1</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="mf">4.0</span><span class="p">,</span><span class="w"> </span><span class="mf">1.5</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">hOutputStep2Rf1</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="mf">4.0</span><span class="p">,</span><span class="mf">1.5</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Square the history data U, and store as new history output</span>
+<span class="w">    </span><span class="n">historyOutputName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;squareU1&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">historyOutputDescription</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Square of displacements&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_HistoryOutput</span><span class="o">&amp;</span><span class="w">  </span><span class="n">hOutputStep1sumU1</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">        </span><span class="n">hRegionStep1</span><span class="p">.</span><span class="n">HistoryOutput</span><span class="p">(</span><span class="n">historyOutputName</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                </span><span class="n">historyOutputDescription</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">SCALAR</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">historyOutputName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;squareU2&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_HistoryOutput</span><span class="o">&amp;</span><span class="w">  </span><span class="n">hOutputStep2sumU1</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">        </span><span class="n">hRegionStep2</span><span class="p">.</span><span class="n">HistoryOutput</span><span class="p">(</span><span class="n">historyOutputName</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                </span><span class="n">historyOutputDescription</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">SCALAR</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Get XY Data from the two steps.</span>
+
+<span class="w">    </span><span class="n">odb_HistoryOutputRepository</span><span class="o">&amp;</span><span class="w"> </span><span class="n">historyOutputs1</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">        </span><span class="n">hRegionStep1</span><span class="p">.</span><span class="n">historyOutputs</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">historyOutputName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;U1&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_HistoryOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">u1FromStep1</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">        </span><span class="n">historyOutputs1</span><span class="p">[</span><span class="n">historyOutputName</span><span class="p">];</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">odb_HistoryOutputRepository</span><span class="o">&amp;</span><span class="w"> </span><span class="n">historyOutputs2</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="n">hRegionStep2</span><span class="p">.</span><span class="n">historyOutputs</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_HistoryOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">u1FromStep2</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">        </span><span class="n">historyOutputs2</span><span class="p">[</span><span class="n">historyOutputName</span><span class="p">];</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">odb_SequenceSequenceFloat</span><span class="w"> </span><span class="n">hdata1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">u1FromStep1</span><span class="p">.</span><span class="n">data</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_SequenceSequenceFloat</span><span class="w"> </span><span class="n">hdata2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">u1FromStep2</span><span class="p">.</span><span class="n">data</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Add the squared displacement to the two steps.</span>
+
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="o">&lt;</span><span class="n">hdata1</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">n</span><span class="o">++</span><span class="p">){</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_SequenceFloat</span><span class="w"> </span><span class="n">hdata11</span><span class="o">=</span><span class="n">hdata1</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">n</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">hOutputStep1sumU1</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="n">hdata11</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span><span class="w"></span>
+<span class="w">        </span><span class="n">pow</span><span class="p">((</span><span class="kt">double</span><span class="p">)</span><span class="n">hdata11</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">1</span><span class="p">),(</span><span class="kt">int</span><span class="p">)</span><span class="mi">2</span><span class="p">));</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="o">&lt;</span><span class="n">hdata2</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">n</span><span class="o">++</span><span class="p">){</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_SequenceFloat</span><span class="w"> </span><span class="n">hdata22</span><span class="o">=</span><span class="n">hdata2</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">n</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">hOutputStep2sumU1</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="n">hdata22</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span><span class="w"></span>
+<span class="w">        </span><span class="n">pow</span><span class="p">((</span><span class="kt">double</span><span class="p">)</span><span class="n">hdata22</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">1</span><span class="p">),(</span><span class="kt">int</span><span class="p">)</span><span class="mi">2</span><span class="p">));</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="w">    </span><span class="c1">// Save the results in the output database.</span>
+<span class="w">    </span><span class="c1">// Use the Visualization module of Abaqus/CAE to</span>
+<span class="w">    </span><span class="c1">// view the contents of the output database.</span>
+
+<span class="w">    </span><span class="n">odb</span><span class="p">.</span><span class="n">save</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb</span><span class="p">.</span><span class="n">close</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+<section id="reading-data-from-an-output-database">
+<h2>Reading data from an output database<a class="headerlink" href="#reading-data-from-an-output-database" title="Permalink to this headline">#</a></h2>
+<p>This example illustrates how you can print the content of an output database. The example opens the output database specified on the command line and calls functions that print the following:</p>
+<ul class="simple">
+<li><p>Parts</p></li>
+<li><p>Part instances</p></li>
+<li><p>The root assembly</p></li>
+<li><p>Connectors</p></li>
+<li><p>Connector properties</p></li>
+<li><p>Datum coordinate systems</p></li>
+<li><p>Nodes</p></li>
+<li><p>Elements</p></li>
+<li><p>Sets</p></li>
+<li><p>Faces</p></li>
+<li><p>Sections</p></li>
+<li><p>Steps</p></li>
+<li><p>Frames</p></li>
+<li><p>Fields</p></li>
+<li><p>Field values</p></li>
+<li><p>Field bulk data</p></li>
+<li><p>Field locations</p></li>
+<li><p>History regions</p></li>
+<li><p>History output</p></li>
+<li><p>History points</p></li>
+</ul>
+<p>Use the following command to retrieve the example program:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus fetch <span class="nv">job</span><span class="o">=</span>odbDump
+</pre></div>
+</div>
+</section>
+<section id="decreasing-the-amount-of-data-in-an-output-database-by-retaining-data-at-specific-frames">
+<h2>Decreasing the amount of data in an output database by retaining data at specific frames<a class="headerlink" href="#decreasing-the-amount-of-data-in-an-output-database-by-retaining-data-at-specific-frames" title="Permalink to this headline">#</a></h2>
+<p>This example illustrates how you can decrease the size of an output database. In most cases a large output database results from excessive field output being generated over a large number of frames. The Abaqus C++ API does not support the deletion of data from an output database; however, you can use this example program to copy data from select frames into a second output database created by a <strong>datacheck</strong> analysis that has identical model data. The original analysis and the <strong>datacheck</strong> analysis must be run using the same number of processors because the internal organization of data may differ based on the number of processors. The program uses addData to copy data at specified frames from the large output database into the new output database. The addData method works only when the model data in the two output databases are identical. For more information, see <code class="xref py py-meth docutils literal notranslate"><span class="pre">addData()</span></code>.</p>
+<p>When you run the program, the following command line parameters are required:</p>
+<ul>
+<li><p><strong>-smallOdb odbName</strong></p>
+<p>The name of the output database created with a <strong>datacheck</strong> analysis of the original problem. For more information, see <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXCRefMap/simaexc-c-analysisproc.htm?contextscope=all">Abaqus/Standard and Abaqus/Explicit execution</a>.</p>
+</li>
+<li><p><strong>-largeOdb odbName</strong></p>
+<p>The name of the large output database generated by the original problem. The program copies selected frames from this output database.</p>
+</li>
+</ul>
+<p>The following parameters are optional:</p>
+<ul>
+<li><p><strong>-history</strong></p>
+<p>Copy all history output from all available steps in the large output database. By default, history output is not copied.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Copying large amounts of history data can result in the program creating a very large output database.</p>
+</div>
+</li>
+<li><p><strong>-debug</strong></p>
+<p>Print a detailed report of all the operations performed during the running of the program. By default, no debug information is generated.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you are extracting data from a large output database, the debug option can generate large amounts of information.</p>
+</div>
+</li>
+</ul>
+<p>You can also run the example with only the <strong>-help</strong> parameter for a summary of the usage.</p>
+<p>The following is an example of how you can use this program in conjunction with the output database generated by the problem described in <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEBMKRefMap/simabmk-c-freering.htm?contextscope=all">Free ring under initial velocity: comparison of rate-independent and rate-dependent plasticity</a>. Use the following commands to retrieve the example program and the benchmark input file:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus fetch <span class="nv">job</span><span class="o">=</span>odbFilter.C
+abaqus fetch <span class="nv">job</span><span class="o">=</span>ringshell.inp
+</pre></div>
+</div>
+<ol class="arabic simple">
+<li><p>Run an analysis using the benchmark input file:</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus <span class="nv">job</span><span class="o">=</span>ringshell
+</pre></div>
+</div>
+<p>This creates an output database called <cite>ringshell.odb</cite> that contains 100 frames of data.</p>
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Run a <strong>datacheck</strong> analysis to obtain a new output database called <cite>ringshell_datacheck.odb</cite> that contains the same model data as <cite>ringshell.odb</cite>:</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus <span class="nv">job</span><span class="o">=</span>ringshell_datacheck -input ringshell datacheck
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Create the executable program:</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus make <span class="nv">job</span><span class="o">=</span>odbFilter.C
+</pre></div>
+</div>
+</div></blockquote>
+<p>The program displays the number of frames available in each step. For each step you must specify the number of increments between frames, which is the frequency at which the data will be copied to the new output database. Data for the first and last increment in each step are always copied. For example, if a step has 100 frames, and you enter a frame interval of 37, the program will copy data for frames 0, 37, 74, and 100.</p>
+<p>The following statement will run the executable program and read data from the small output database containing only model data and the large output database created by the benchmark example:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus odbFilter -smallOdb ringshell_datacheck -largeOdb ringshell
+</pre></div>
+</div>
+<p>The program prompts you for the increment between frames:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>Results from ODB : ringshell.odb will be filtered <span class="p">&amp;</span> written
+to ODB: ringshell_datacheck
+By default only the first <span class="p">&amp;</span> last increment of a step will
+be saved
+For each step enter the increment between frames
+<span class="k">for</span> example : <span class="nv">3</span> <span class="o">=</span>&gt; frames <span class="m">0</span>,3,6,..,lastframe will be saved
+STEP Step-1 has <span class="m">101</span> Frames
+Enter Increment between frames
+</pre></div>
+</div>
+<p>Enter 37 to define the increment between frames. The program then reads the data and displays the frames being processed:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>Processing frame <span class="c1"># : 0</span>
+Processing frame <span class="c1"># : 37</span>
+Processing frame <span class="c1"># : 74</span>
+Processing frame <span class="c1"># : 100</span>
+Filtering successfully completed
+</pre></div>
+</div>
+</section>
+<section id="stress-range-for-multiple-load-cases">
+<h2>Stress range for multiple load cases<a class="headerlink" href="#stress-range-for-multiple-load-cases" title="Permalink to this headline">#</a></h2>
+<p>This example illustrates how you can use the envelope operations to compute the stress range over a number of load cases. The example program does the following:</p>
+<ul class="simple">
+<li><p>For each load case during a specified step, the program collects the S11 components of the stress tensor fields into a list of scalar fields.</p></li>
+<li><p>Computes the maximum and minimum of the S11 stress component using the envelope calculations.</p></li>
+<li><p>Computes the stress range using the maximum and minimum values of the stress component.</p></li>
+<li><p>Creates a new frame in the step.</p></li>
+<li><p>Writes the computed stress range into a new FieldOutput object in the new frame.</p></li>
+</ul>
+<p>Use the following command to retrieve the example program:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus fetch <span class="nv">job</span><span class="o">=</span>stressRange
+</pre></div>
+</div>
+<p>The fetch command also retrieves an input file that you can use to generate an output database that can be read by the example program.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">////////////////////////////////////////////////////</span>
+<span class="c1">// Code to compute a stress range from</span>
+<span class="c1">// all the load cases in a step.</span>
+<span class="c1">//</span>
+<span class="c1">// The stress range is saved to a frame with the</span>
+<span class="c1">// description &quot;Stress Range&quot;</span>
+
+<span class="c1">// System includes</span>
+<span class="cp">#if (defined(HP) &amp;&amp; (! defined(HKS_HPUXI)))</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream.h&gt;</span><span class="cp"></span>
+<span class="cp">#else</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
+<span class="cp">#endif</span>
+
+<span class="c1">// Begin Local Includes</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;odb_API.h&gt;</span><span class="cp"></span>
+<span class="c1">// End Local Includes</span>
+
+<span class="n">odb_FieldOutput</span><span class="w"> </span><span class="nf">computeStressRange</span><span class="p">(</span><span class="w"> </span><span class="n">odb_Step</span><span class="o">&amp;</span><span class="w"> </span><span class="n">step</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">ABQmain</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="w"> </span><span class="n">argc</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Usage: abaqus stressRange.x odb_name&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="o">&lt;&lt;</span><span class="w">         </span><span class="s">&quot;step_name&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="o">&lt;&lt;</span><span class="w">         </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">odbName</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">stepName</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Computing for odb </span><span class="se">\&quot;</span><span class="s">&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">odbName</span><span class="p">.</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; and step </span><span class="se">\&quot;</span><span class="s">&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">stepName</span><span class="p">.</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// compute stress range and save to odb</span>
+<span class="w">    </span><span class="n">odb_Odb</span><span class="o">&amp;</span><span class="w"> </span><span class="n">odb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">openOdb</span><span class="p">(</span><span class="n">odbName</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_Step</span><span class="o">&amp;</span><span class="w"> </span><span class="n">step</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">steps</span><span class="p">()[</span><span class="n">stepName</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_FieldOutput</span><span class="w"> </span><span class="n">range</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">computeStressRange</span><span class="p">(</span><span class="n">step</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Save the results in the output database.</span>
+<span class="w">    </span><span class="n">odb_Frame</span><span class="w"> </span><span class="n">rangeFrame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">step</span><span class="p">.</span><span class="n">Frame</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Stress Range&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">rangeFrame</span><span class="p">.</span><span class="n">FieldOutput</span><span class="p">(</span><span class="n">range</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;S11 Range&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb</span><span class="p">.</span><span class="n">save</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb</span><span class="p">.</span><span class="n">close</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="n">odb_FieldOutput</span><span class="w"></span>
+<span class="nf">computeStressRange</span><span class="p">(</span><span class="n">odb_Step</span><span class="o">&amp;</span><span class="w"> </span><span class="n">step</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// collect stress fields for all load cases</span>
+<span class="w">    </span><span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="n">sFields</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_LoadCaseRepositoryIT</span><span class="w"> </span><span class="n">iter</span><span class="p">(</span><span class="n">step</span><span class="p">.</span><span class="n">loadCases</span><span class="p">());</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="w"> </span><span class="n">iter</span><span class="p">.</span><span class="n">first</span><span class="p">();</span><span class="w"> </span><span class="o">!</span><span class="n">iter</span><span class="p">.</span><span class="n">isDone</span><span class="p">();</span><span class="w"> </span><span class="n">iter</span><span class="p">.</span><span class="n">next</span><span class="p">()</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">odb_Frame</span><span class="w"> </span><span class="n">frame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">step</span><span class="p">.</span><span class="n">getFrame</span><span class="p">(</span><span class="w"> </span><span class="n">iter</span><span class="p">.</span><span class="n">currentValue</span><span class="p">()</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">stressField</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frame</span><span class="p">.</span><span class="n">fieldOutputs</span><span class="p">()[</span><span class="s">&quot;S&quot;</span><span class="p">];</span><span class="w"></span>
+<span class="w">        </span><span class="n">sFields</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">stressField</span><span class="p">.</span><span class="n">getScalarField</span><span class="p">(</span><span class="s">&quot;S11&quot;</span><span class="p">));</span><span class="w"></span>
+<span class="w">    </span><span class="p">};</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// compute maximum and minimum envelopes</span>
+<span class="w">    </span><span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="n">maxFields</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxEnvelope</span><span class="p">(</span><span class="n">sFields</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="n">minFields</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">minEnvelope</span><span class="p">(</span><span class="n">sFields</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// compute and return range</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">maxFields</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">minFields</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+<section id="a-c-version-of-felbow">
+<h2>A C++ version of FELBOW<a class="headerlink" href="#a-c-version-of-felbow" title="Permalink to this headline">#</a></h2>
+<p>This example illustrates the use of a C++ program to read selected element integration point records from an output database and to postprocess the elbow element results. The program creates <strong>X - Y</strong> data that can be plotted with the <em>X–Y</em> plotting capability in Abaqus/CAE. The program performs the same function as the Fortran program described in <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXARefMap/simaexa-c-felbow.htm?contextscope=all">Creation of a data file to facilitate the postprocessing of elbow element results: FELBOW</a>.</p>
+<p>The program reads integration point data for elbow elements from an output database to visualize one of the following:</p>
+<ol class="arabic simple">
+<li><p>Variation of an output variable around the circumference of a given elbow element, or</p></li>
+<li><p>Ovalization of a given elbow element.</p></li>
+</ol>
+<p>The program creates either an ASCII file containing <em>X–Y</em> data or a new output database file that can be viewed using Abaqus/CAE.</p>
+<p>To use option 2, you must ensure that the integration point coordinates (COORD) are written to the output database. For option 1 the <em>X</em>-data are data for the distance around the circumference of the elbow element, measured along the middle surface, and the <em>Y</em>-data are data for the output variable. For option 2 the <em>X–Y</em> data are the current coordinates of the middle-surface integration points around the circumference of the elbow element, projected to a local coordinate system in the plane of the deformed cross-section. The origin of the local system coincides with the center of the cross-section; the plane of the deformed cross-section is defined as the plane that contains the center of the cross-section.</p>
+<p>You should specify the name of the output database during program execution. The program prompts for more information, depending on the option that was chosen; this information includes the following:</p>
+<ul class="simple">
+<li><p>Your choice for storing results (ASCII file or a new output database)</p></li>
+<li><p>File name based on the above choice</p></li>
+<li><p>The postprocessing option (1 or 2)</p></li>
+<li><p>The part name</p></li>
+<li><p>The step name</p></li>
+<li><p>The frame number</p></li>
+<li><p>The element output variable (option 1 only)</p></li>
+<li><p>The component of the variable (option 1 only)</p></li>
+<li><p>The section point number (option 1 only)</p></li>
+<li><p>The element number or element set name</p></li>
+</ul>
+<p>Before program execution, compile and link the C++ program using the <strong>abaqus make</strong> utility:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus make <span class="nv">job</span><span class="o">=</span>felbow.C
+</pre></div>
+</div>
+<p>After successful compilation, the program’s object code is linked automatically with the Abaqus object codes stored in the shared program library and interface library to build the executable program. Refer to <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEILGRefMap/simailg-m-Environment-sb.htm?contextscope=all">Customizing the Abaqus environment</a> to see which compile and link commands are used for a particular computer.</p>
+<p>Before executing the program, run an analysis that creates an output database file containing the appropriate output. This analysis includes, for example, output for the elements and the integration point coordinates of the elements. Execute the program using the following command:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus felbow &lt;filename.odb&gt;
+</pre></div>
+</div>
+<p>The program prompts for other information, such as the desired postprocessing option, part name, etc. The program processes the data and produces a text file or a new output database file that contains the information required to visualize the elbow element results.</p>
+<p><a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXARefMap/simaexa-c-elbowcollapse.htm?contextscope=all">Elastic-plastic collapse of a thin-walled elbow under in-plane bending and internal pressure</a> contains several figures that can be created with the aid of this program.</p>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="../../../summary.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">API Summary</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="improve-efficiency.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Improving the efficiency of your scripts</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, WANG Hailin
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Example programs that access data from an output database</a><ul>
+<li><a class="reference internal" href="#finding-the-maximum-value-of-von-mises-stress">Finding the maximum value of von Mises stress</a></li>
+<li><a class="reference internal" href="#creating-an-output-database">Creating an output database</a></li>
+<li><a class="reference internal" href="#reading-data-from-an-output-database">Reading data from an output database</a></li>
+<li><a class="reference internal" href="#decreasing-the-amount-of-data-in-an-output-database-by-retaining-data-at-specific-frames">Decreasing the amount of data in an output database by retaining data at specific frames</a></li>
+<li><a class="reference internal" href="#stress-range-for-multiple-load-cases">Stress range for multiple load cases</a></li>
+<li><a class="reference internal" href="#a-c-version-of-felbow">A C++ version of FELBOW</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/scripts/furo.js"></script>
+    </body>
+</html>
