@@ -25,7 +25,7 @@ The following example examines the von Mises stress in each element during a par
             print
         count = count + 1
 
-In this example every time the script accesses a strain component from *strainField.value*, Abaqus must reconstruct the sequence of FieldValue objects. This reconstruction could result in a significant performance degradation, particularly for a large model.
+In this example every time the script accesses a strain component from **strainField.value**, Abaqus must reconstruct the sequence of FieldValue objects. This reconstruction could result in a significant performance degradation, particularly for a large model.
 
 A slight change in the script greatly improves its performance, as shown in the following example:
 
