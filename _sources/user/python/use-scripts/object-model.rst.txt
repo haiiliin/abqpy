@@ -25,7 +25,7 @@ Abaqus extends Python with approximately 500 additional objects, and there are m
 
 In general terms the Abaqus object model is divided into the Session, the Mdb, and the Odb objects, as shown in Figure 1.
 
-.. figures:: /images/cmd-int-model-overview-nls.png
+.. figure:: /images/cmd-int-model-overview-nls.png
     :width: 50%
     :align: center
 
@@ -49,7 +49,7 @@ An object in the object model can be one of the following:
 
   Session objects are objects that are not saved between Abaqus/CAE sessions; for example, the objects that define viewports, remote queues, and user-defined views, as shown in Figure 2.
 
-.. figures:: /images/cmd-int-model-session-nls.png
+.. figure:: /images/cmd-int-model-session-nls.png
     :width: 50%
     :align: center
 
@@ -57,7 +57,7 @@ An object in the object model can be one of the following:
 
   The viewports container is owned by the Session object, as shown in Figure 3.
 
-  .. figures:: /images/cmd-int-model-viewport-nls.png
+  .. figure:: /images/cmd-int-model-viewport-nls.png
       :width: 50%
       :align: center
 
@@ -67,7 +67,7 @@ An object in the object model can be one of the following:
   
   The statement from abaqus import * creates an instance of the Mdb object called mdb. Mdb objects are objects that are saved in a model database and can be recovered between Abaqus/CAE sessions. Mdb objects include the Model object and the Job object. The Model object, in turn, is comprised of Part objects, Section objects, Material objects, Step objects, etc. Figure 4 shows the basic structure of the objects under the Model object. For more information, see The Model object model.
 
-  .. figures:: /images/cmd-int-model-model-nls.png
+  .. figure:: /images/cmd-int-model-model-nls.png
       :width: 50%
       :align: center
 
@@ -77,7 +77,7 @@ An object in the object model can be one of the following:
 
   Odb objects are saved in an output database and contain both model and results data, as shown in Figure 5.
 
-  .. figures:: /images/cmd-int-model-odb-nls.png
+  .. figure:: /images/cmd-int-model-odb-nls.png
       :width: 50%
       :align: center
 
@@ -135,13 +135,13 @@ The Model object model
 
 The Model object contains many objects. Figure 1 and Figure 2 show the most commonly used objects that are contained in the Part and RootAssembly.
 
-.. figures:: /images/cmd-int-model-overview-nls.png
+.. figure:: /images/cmd-int-model-overview-nls.png
     :width: 50%
     :align: center
 
     Figure 1. The Part object model.
 
-.. figures:: /images/cmd-int-model-assembly-nls.png
+.. figure:: /images/cmd-int-model-assembly-nls.png
     :width: 50%
     :align: center
 
@@ -175,7 +175,7 @@ The Abaqus object model includes the concept of an abstract base type. An abstra
 
 In Figure 1 AnalysisStep and Step are both abstract base types. In terms of the real world a static step is an analysis step and a static step is also a step. In terms of the object model a StaticStep object is an AnalysisStep object and a StaticStep object is also a Step object.
 
-.. figures:: /images/cmd-int-abstract-nls.png
+.. figure:: /images/cmd-int-abstract-nls.png
     :width: 50%
     :align: center
 

@@ -6,7 +6,7 @@ Some methods take arguments that are described as a sequence of sequences of Flo
 
 For example, consider the case where the user is creating an elastic material and describing a temperature-dependent behavior.
 
-.. figures:: /images/cmd-int-table-editor-nls.png
+.. figure:: /images/cmd-int-table-editor-nls.png
     :width: 50%
     :align: center
 

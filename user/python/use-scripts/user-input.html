@@ -371,6 +371,9 @@
 </pre></div>
 </div>
 <p>The <cite>float</cite> function on the third line converts the string returned by <cite>getInput</cite> into a floating point number. The following figure shows the dialog box that appears when this script is executed:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/utl-getinput-nls.png"><img alt="../../../_images/utl-getinput-nls.png" src="../../../_images/utl-getinput-nls.png" style="width: 50%;" /></a>
+</figure>
 <p>The next example shows how to modify a macro recorded by the <strong>Macro Manager</strong> in Abaqus/CAE to use the getInput function. The following text shows a macro named <cite>createViewport</cite> that was recorded by Abaqus/CAE while the user created a viewport. Macros are stored in the file <cite>abaqusMacros.py</cite> in your local or home directory.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="k">def</span> <span class="nf">createViewport</span><span class="p">():</span>
@@ -392,6 +395,9 @@
 </pre></div>
 </div>
 <p>The <cite>eval</cite> function in the third line of the macro converts the string returned by the <cite>getInput</cite> function into two integers. When you supply the default values shown in this example to the <cite>getInput</cite> function, the prompt and the text field in the dialog box that appears are shown in the following figure. If the user clicks <strong>[OK]</strong> or presses <strong>[Enter]</strong>, the default values are accepted and returned to the <cite>getInput</cite> function. If the user clicks <strong>[Cancel]</strong>, None is returned.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/utl-getinput-default-nls.png"><img alt="../../../_images/utl-getinput-default-nls.png" src="../../../_images/utl-getinput-default-nls.png" style="width: 50%;" /></a>
+</figure>
 </section>
 <section id="requesting-multiple-inputs-from-the-user">
 <h2>Requesting multiple inputs from the user<a class="headerlink" href="#requesting-multiple-inputs-from-the-user" title="Permalink to this headline">#</a></h2>
@@ -406,6 +412,9 @@
 </pre></div>
 </div>
 <p>The following figure shows the dialog box that these statements create:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/utl-getinputs-nls.png"><img alt="../../../_images/utl-getinputs-nls.png" src="../../../_images/utl-getinputs-nls.png" style="width: 50%;" /></a>
+</figure>
 <p>The <cite>fields</cite> argument to the <cite>getInputs</cite> method is a sequence of sequences of Strings. The inner sequence is a pair of Strings that specifies the description of the text field and the default value of the field. If the text field does not have a default value, you must specify an empty string; for example,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fields</span> <span class="o">=</span> <span class="p">((</span><span class="s1">&#39;Width&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Length&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Height&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">))</span>
 <span class="n">length</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span>
@@ -435,6 +444,9 @@
 </pre></div>
 </div>
 <p>The following figure shows the dialog box that appears when this script is executed:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/utl-getwarningreply-nls.png"><img alt="../../../_images/utl-getwarningreply-nls.png" src="../../../_images/utl-getwarningreply-nls.png" style="width: 50%;" /></a>
+</figure>
 </section>
 </section>
 
