@@ -95,6 +95,7 @@ def linkcode_resolve(domain: str, info: dict):
 python_use_unqualified_type_names = True
 autodoc_typehints_format = 'short'
 typehints_defaults = 'comma'
+typehints_document_rtype = False
 
 numpydoc_show_class_members = True
 numpydoc_show_inherited_class_members = False
