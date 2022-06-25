@@ -1,4 +1,5 @@
 from abaqus.Odb.OdbCommands import *
+from abaqus.UtilityAndView.BackwardCompatibility import BackwardCompatibility
 
 
 def openOdb(name: str, *args, **kwargs):
@@ -20,3 +21,6 @@ def openOdb(name: str, *args, **kwargs):
     except:
         pass
     os.system(f'{abaqus} cae database={odbName} script={fileName}')
+
+
+backwardCompatibility = BackwardCompatibility()

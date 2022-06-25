@@ -5,6 +5,7 @@ from .Canvas.Highlight import *
 from .Mdb.Mdb import Mdb as AbaqusMdb
 from .Odb.Odb import Odb
 from .Session.Session import Session as AbaqusSession
+from .UtilityAndView.BackwardCompatibility import BackwardCompatibility
 
 
 class Mdb(AbaqusMdb):
@@ -69,3 +70,5 @@ class Session(AbaqusSession):
 
 session = Session()
 mdb = Mdb()
+
+backwardCompatibility = BackwardCompatibility()
