@@ -150,60 +150,32 @@ class Surface:
         kwargs
             The required parameters for different conditions are:
             
-            - On three-dimensional solid faces, you can use the following arguments:
+            - On three-dimensional solid faces, you can use the following arguments: 
+              side1Faces, side2Faces
 
-                - side1Faces
-                - side2Faces
-
-            - On three-dimensional shell faces, you can use the following arguments:
-
-                side1Faces
-                side2Faces
-                side12Faces
+            - On three-dimensional shell faces, you can use the following arguments: 
+              side1Faces, side2Faces, side12Faces
 
             - On three-dimensional wire edges, you can use the following arguments:
-
-                - end1Edges
-                - end2Edges
-                - circumEdges
+              end1Edges, end2Edges, circumEdges
 
             - On three-dimensional or two-dimensional or axisymmetric edges, you can use the following arguments:
-
-                - side1Edges
-                - side2Edges
+              side1Edges, side2Edges
 
             - On two-dimensional or axisymmetric shell elements, you can use the following arguments:
-
-                - face1Elements
-                - face2Elements
-                - face3Elements
-                - face4Elements
+              face1Elements, face2Elements, face3Elements, face4Elements
 
             - On solid elements, you can use the following arguments:
-
-                - face1Elements
-                - face2Elements
-                - face3Elements
-                - face4Elements
-                - face5Elements
-                - face6Elements
+              face1Elements, face2Elements, face3Elements, face4Elements, face5Elements, face6Elements
 
             - On three-dimensional shell elements, you can use the following arguments:
-
-                - side1Elements
-                - side2Elements
-                - side12Elements
+              side1Elements, side2Elements, side12Elements
 
             - On three-dimensional wire elements, you can use the following arguments:
-
-                - end1Elements
-                - end2Elements
-                - circumElements
+              end1Elements, end2Elements, circumElements
 
             - On two-dimensional or axisymmetric wire elements, you can use the following arguments:
-
-                - side1Elements
-                - side2Elements
+              side1Elements, side2Elements
 
         Returns
         -------

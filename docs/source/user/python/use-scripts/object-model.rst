@@ -26,7 +26,7 @@ Abaqus extends Python with approximately 500 additional objects, and there are m
 In general terms the Abaqus object model is divided into the Session, the Mdb, and the Odb objects, as shown in Figure 1.
 
 .. figure:: /images/cmd-int-model-overview-nls.png
-    :width: 50%
+    :width: 100%
     :align: center
 
     Figure 1. The Abaqus object model.
@@ -49,11 +49,11 @@ An object in the object model can be one of the following:
 
   Session objects are objects that are not saved between Abaqus/CAE sessions; for example, the objects that define viewports, remote queues, and user-defined views, as shown in Figure 2.
 
-.. figure:: /images/cmd-int-model-session-nls.png
-    :width: 50%
-    :align: center
+  .. figure:: /images/cmd-int-model-session-nls.png
+      :width: 50%
+      :align: center
 
-    Figure 2. The Session object model.
+      Figure 2. The Session object model.
 
   The viewports container is owned by the Session object, as shown in Figure 3.
 
@@ -78,7 +78,7 @@ An object in the object model can be one of the following:
   Odb objects are saved in an output database and contain both model and results data, as shown in Figure 5.
 
   .. figure:: /images/cmd-int-model-odb-nls.png
-      :width: 50%
+      :width: 100%
       :align: center
 
       Figure 5. The Odb object model.
@@ -136,13 +136,13 @@ The Model object model
 The Model object contains many objects. Figure 1 and Figure 2 show the most commonly used objects that are contained in the Part and RootAssembly.
 
 .. figure:: /images/cmd-int-model-overview-nls.png
-    :width: 50%
+    :width: 100%
     :align: center
 
     Figure 1. The Part object model.
 
 .. figure:: /images/cmd-int-model-assembly-nls.png
-    :width: 50%
+    :width: 100%
     :align: center
 
     Figure 2. The RootAssembly object model.

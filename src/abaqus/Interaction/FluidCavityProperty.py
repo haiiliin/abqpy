@@ -253,7 +253,8 @@ class FluidCavityProperty(ContactProperty):
             - The third molar heat capacity coefficient.
             - The fourth molar heat capacity coefficient.
             - The fifth molar heat capacity coefficient.
-              Alternatively, the sequence data may specify the molar heat capacity values at constant
+              
+            Alternatively, the sequence data may specify the molar heat capacity values at constant
             pressure for an ideal gas species. This argument is applicable only when
             **definition** = PNEUMATIC, when **useCapacity** = True, and when **capacityType** = TABULAR. Each
             sequence contains the following data:
@@ -379,10 +380,10 @@ class FluidCavityProperty(ContactProperty):
             - The fourth molar heat capacity coefficient.
             - The fifth molar heat capacity coefficient.
             
-              Alternatively, the sequence data may specify the molar heat capacity values at constant
-              pressure for an ideal gas species. This argument is applicable only when
-              **definition** = PNEUMATIC, when **useCapacity** = True, and when **capacityType** = TABULAR. Each
-              sequence contains the following data:
+            Alternatively, the sequence data may specify the molar heat capacity values at constant
+            pressure for an ideal gas species. This argument is applicable only when
+            **definition** = PNEUMATIC, when **useCapacity** = True, and when **capacityType** = TABULAR. Each
+            sequence contains the following data:
               
             - The molar heat capacity at constant pressure.
             - Temperature, if the data depend on temperature.

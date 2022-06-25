@@ -180,12 +180,12 @@ class MeshElementArray(list[MeshElement]):
         Returns
         -------
         dict[str, tuple[float, float, float]]
-        A Dictionary object with the following items:
-        
-        - **low**: a tuple of three floats representing the minimum x, y, and z boundary values of
-          the bounding box.
-        - **high**: a tuple of three floats representing the maximum x, y, and z boundary values of
-          the bounding box.
+            A Dictionary object with the following items:
+            
+            - **low**: a tuple of three floats representing the minimum x, y, and z boundary values of
+              the bounding box.
+            - **high**: a tuple of three floats representing the maximum x, y, and z boundary values of
+              the bounding box.
         """
         pass
 

@@ -388,14 +388,14 @@ class InteractionPropertyModel(ModelBase):
             sequence contains the following data:
             
             - The mass flow rate per unit area.
-              Alternatively, the sequence data may specify the mass rate leakage. This is applicable
-              only when **definition** = MASS_RATE_LEAK. Each sequence contains the following data:
-              
-              - The absolute value of the mass flow rate per unit area. (The first tabular value
-                entered must always be zero.)
-              - The absolute value of the pressure difference. (The first tabular value entered must
-              always be zero.)
             
+            Alternatively, the sequence data may specify the mass rate leakage. This is applicable
+            only when **definition** = MASS_RATE_LEAK. Each sequence contains the following data:
+              
+            - The absolute value of the mass flow rate per unit area. (The first tabular value
+              entered must always be zero.)
+            - The absolute value of the pressure difference. (The first tabular value entered must
+              always be zero.)
             - The average absolute pressure, if the data depend on pressure.
             - The average temperature, if the data depend on temperature.
             - The value of the first field variable, if the data depend on field variables.
@@ -407,7 +407,8 @@ class InteractionPropertyModel(ModelBase):
             sequence contains the following data:
             
             - The volumetric flow rate per unit area.
-              Alternatively, the sequence data may specify the volume rate leakage. This is applicable
+              
+            Alternatively, the sequence data may specify the volume rate leakage. This is applicable
             only when **definition** = VOL_RATE_LEAK. Each sequence contains the following data:
             
             - The absolute value of the volumetric flow rate per unit area. (The first tabular value

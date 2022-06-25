@@ -1620,16 +1620,17 @@ class InteractionModel(
             - The third molar heat capacity coefficient.
             - The fourth molar heat capacity coefficient.
             - The fifth molar heat capacity coefficient.
-              Alternatively, the sequence data may specify the molar heat capacity values at constant
-              pressure for an ideal gas species. This argument is applicable only when
-              **definition** = PNEUMATIC, when **useCapacity** = True, and when **capacityType** = TABULAR. Each
-              sequence contains the following data:
               
-              - The molar heat capacity at constant pressure.
-              - Temperature, if the data depend on temperature.
-              - Value of the first field variable, if the data depend on field variables.
-              - Value of the second field variable.
-              - Etc.
+            Alternatively, the sequence data may specify the molar heat capacity values at constant
+            pressure for an ideal gas species. This argument is applicable only when
+            **definition** = PNEUMATIC, when **useCapacity** = True, and when **capacityType** = TABULAR. Each
+            sequence contains the following data:
+            
+            - The molar heat capacity at constant pressure.
+            - Temperature, if the data depend on temperature.
+            - Value of the first field variable, if the data depend on field variables.
+            - Value of the second field variable.
+            - Etc.
 
         Returns
         -------
@@ -1753,18 +1754,19 @@ class InteractionModel(
             sequence contains the following data:
             
             - The mass flow rate per unit area.
-              Alternatively, the sequence data may specify the mass rate leakage. This is applicable
-              only when **definition** = MASS_RATE_LEAK. Each sequence contains the following data:
+            
+            Alternatively, the sequence data may specify the mass rate leakage. This is applicable
+            only when **definition** = MASS_RATE_LEAK. Each sequence contains the following data:
               
-              - The absolute value of the mass flow rate per unit area. (The first tabular value
-                entered must always be zero.)
-              - The absolute value of the pressure difference. (The first tabular value entered must
-                always be zero.)
-              - The average absolute pressure, if the data depend on pressure.
-              - The average temperature, if the data depend on temperature.
-              - The value of the first field variable, if the data depend on field variables.
-              - The value of the second field variable.
-              - Etc.
+            - The absolute value of the mass flow rate per unit area. (The first tabular value
+              entered must always be zero.)
+            - The absolute value of the pressure difference. (The first tabular value entered must
+              always be zero.)
+            - The average absolute pressure, if the data depend on pressure.
+            - The average temperature, if the data depend on temperature.
+            - The value of the first field variable, if the data depend on field variables.
+            - The value of the second field variable.
+            - Etc.
             
             Alternatively, the sequence data may specify the volume flow rate. This is applicable
             only when **definition** = VOL_FLUX. In this form, only one sequence is specified and that

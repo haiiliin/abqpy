@@ -41,13 +41,14 @@ class FluidExchangeProperty(ContactProperty):
     #: sequence contains the following data:
     #: 
     #: - The mass flow rate per unit area.
+    #: 
     #: Alternatively, the sequence data may specify the mass rate leakage. This is applicable
     #: only when **definition** = MASS_RATE_LEAK. Each sequence contains the following data:
     #: 
     #: - The absolute value of the mass flow rate per unit area. (The first tabular value
-    #: entered must always be zero.)
+    #:   entered must always be zero.)
     #: - The absolute value of the pressure difference. (The first tabular value entered must
-    #: always be zero.)
+    #:   always be zero.)
     #: - The average absolute pressure, if the data depend on pressure.
     #: - The average temperature, if the data depend on temperature.
     #: - The value of the first field variable, if the data depend on field variables.
@@ -59,13 +60,14 @@ class FluidExchangeProperty(ContactProperty):
     #: sequence contains the following data:
     #: 
     #: - The volumetric flow rate per unit area.
+    #: 
     #: Alternatively, the sequence data may specify the volume rate leakage. This is applicable
     #: only when **definition** = VOL_RATE_LEAK. Each sequence contains the following data:
     #: 
     #: - The absolute value of the volumetric flow rate per unit area. (The first tabular value
-    #: entered must always be zero.)
+    #:   entered must always be zero.)
     #: - The absolute value of the pressure difference. (The first tabular value entered must
-    #: always be zero.)
+    #:   always be zero.)
     #: - The average absolute pressure, if the data depend on pressure.
     #: - The average temperature, if the data depend on temperature.
     #: - The value of the first field variable, if the data depend on field variables.
@@ -133,36 +135,38 @@ class FluidExchangeProperty(ContactProperty):
             sequence contains the following data:
             
             - The mass flow rate per unit area.
-              Alternatively, the sequence data may specify the mass rate leakage. This is applicable
-              only when **definition** = MASS_RATE_LEAK. Each sequence contains the following data:
+            
+            Alternatively, the sequence data may specify the mass rate leakage. This is applicable
+            only when **definition** = MASS_RATE_LEAK. Each sequence contains the following data:
               
-              - The absolute value of the mass flow rate per unit area. (The first tabular value
-                entered must always be zero.)
-              - The absolute value of the pressure difference. (The first tabular value entered must
-                always be zero.)
-              - The average absolute pressure, if the data depend on pressure.
-              - The average temperature, if the data depend on temperature.
-              - The value of the first field variable, if the data depend on field variables.
-              - The value of the second field variable.
-              - Etc.
+            - The absolute value of the mass flow rate per unit area. (The first tabular value
+              entered must always be zero.)
+            - The absolute value of the pressure difference. (The first tabular value entered must
+              always be zero.)
+            - The average absolute pressure, if the data depend on pressure.
+            - The average temperature, if the data depend on temperature.
+            - The value of the first field variable, if the data depend on field variables.
+            - The value of the second field variable.
+            - Etc.
             
             Alternatively, the sequence data may specify the volume flow rate. This is applicable
             only when **definition** = VOL_FLUX. In this form, only one sequence is specified and that
             sequence contains the following data:
             
             - The volumetric flow rate per unit area.
-              Alternatively, the sequence data may specify the volume rate leakage. This is applicable
-              only when **definition** = VOL_RATE_LEAK. Each sequence contains the following data:
               
-              - The absolute value of the volumetric flow rate per unit area. (The first tabular value
-                entered must always be zero.)
-              - The absolute value of the pressure difference. (The first tabular value entered must
-                always be zero.)
-              - The average absolute pressure, if the data depend on pressure.
-              - The average temperature, if the data depend on temperature.
-              - The value of the first field variable, if the data depend on field variables.
-              - The value of the second field variable.
-              - Etc.
+            Alternatively, the sequence data may specify the volume rate leakage. This is applicable
+            only when **definition** = VOL_RATE_LEAK. Each sequence contains the following data:
+              
+            - The absolute value of the volumetric flow rate per unit area. (The first tabular value
+              entered must always be zero.)
+            - The absolute value of the pressure difference. (The first tabular value entered must
+              always be zero.)
+            - The average absolute pressure, if the data depend on pressure.
+            - The average temperature, if the data depend on temperature.
+            - The value of the first field variable, if the data depend on field variables.
+            - The value of the second field variable.
+            - Etc.
         definition
             A SymbolicConstant specifying the type of fluid exchange property to be defined.
             Possible values are BULK_VISCOSITY, MASS_FLUX, MASS_RATE_LEAK, VOL_FLUX, and

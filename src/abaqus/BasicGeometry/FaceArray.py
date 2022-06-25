@@ -228,10 +228,10 @@ class FaceArray:
         dict[str, tuple[float, ...]]
             A Dictionary object with the following items:
             
-            - **low**: a tuple of three floats representing the minimum **X**-, **Y**-, and **Z**-boundary
-            values of the bounding box.
-            - **high**: a tuple of three floats representing the maximum **X**-, **Y**-, and **Z**-boundary
-            values of the bounding box.
+            - **low**: a tuple of three floats representing the minimum **X** -, **Y** -, and **Z**  -boundary
+              values of the bounding box.
+            - **high**: a tuple of three floats representing the maximum **X** -, **Y** -, and **Z**  -boundary
+              values of the bounding box.
         """
         pass
 

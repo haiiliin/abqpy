@@ -27,7 +27,7 @@ class ConnectorDamage(ConnectorBehaviorOption):
                
                 - Lower (compression) limiting force or moment. Use -1.0E+36 to indicate an unspecified lower limit.
                 - Upper (tension) limiting force or moment. Use 1.0E+36 to indicate an unspecified upper limit. At least one
-              limit, lower or upper, must be specified.
+                  limit, lower or upper, must be specified.
                 - Temperature, if the data depend on temperature.
                 - Value of the first field variable, if the data depend on field variables.
                 - Value of the second field variable.
@@ -36,9 +36,9 @@ class ConnectorDamage(ConnectorBehaviorOption):
             - If **criterion** = MOTION, then each sequence of the table data specifies the following:
             
                 - Lower (compression) limiting connector constitutive relative displacement or rotation. Use -1.0E+36 to
-              indicate an unspecified lower limit.
+                  indicate an unspecified lower limit.
                 - Upper (tension) limiting connector constitutive relative displacement or rotation. Use 1.0E+36 to indicate an
-              unspecified upper limit. At least one limit, lower or upper, must be specified.
+                  unspecified upper limit. At least one limit, lower or upper, must be specified.
                 - Temperature, if the data depend on temperature.
                 - Value of the first field variable, if the data depend on field variables.
                 - Value of the second field variable.
