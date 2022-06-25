@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 import inspect
+import re
 import sys
-
 
 project = 'abqpy'
 copyright = '2022, WANG Hailin'
@@ -27,7 +27,6 @@ author = 'WANG Hailin'
 
 # The full version, including alpha/beta/rc tags
 release = '2016a0'
-
 
 # -- General configuration ---------------------------------------------------
 
@@ -41,24 +40,25 @@ extensions = [
     'numpydoc',
     'sphinx.ext.mathjax',
     'sphinx.ext.linkcode',
-    'sphinx.ext.githubpages', 
+    'sphinx.ext.githubpages',
 ]
 
+
 # linkcode source
-def linkcode_resolve(domain: str, info: dict):
+def linkcode_resolve(domain: str, info: dict[str, str | list[str]]):
     """Resolve linkcode source
     Parameters
     ----------
     domain : str
         specifies the language domain the object is in
-    info : dict
+    info : dict[str, str | list[str]]
         a dictionary with the following keys guaranteed to be present (dependent on the domain)
-        
+
         - py: module (name of the module), fullname (name of the object)
         - c: names (list of names for the object)
         - cpp: names (list of names for the object)
         - javascript: object (name of the object), fullname (name of the item)
-        
+
     Returns
     -------
     source url of the object
@@ -85,6 +85,33 @@ def linkcode_resolve(domain: str, info: dict):
             return baseurl
     try:
         source, lineno = inspect.getsourcelines(obj)
+    except TypeError:
+        # Find source line for an attribute, the obj is None
+        attr = fullname.split('.')[-1]
+        obj = submod
+        for part in fullname.split('.')[:-1]:
+            try:
+                obj = getattr(obj, part)
+            except Exception:
+                return baseurl
+        source, lineno = inspect.getsourcelines(obj)
+        attr_sources: list[str] = re.findall(rf'\n(    {attr}: [\w\W]+?)\n\n', '\n'.join(source))
+        if len(attr_sources) > 0:
+            attr_source = attr_sources[0].splitlines()
+
+            def find_line_number(string: str, text: list[str]):
+                for line_number, line in enumerate(text):
+                    if string in line:
+                        return line_number
+
+            index = find_line_number(attr_source[0], source)
+            for row in range(index - 1, -1, -1):
+                if source[row].startswith('    #: '):
+                    attr_source.insert(0, source[row])
+                else:
+                    break
+            lineno += find_line_number(attr_source[0], source)
+            source = attr_source
     except Exception:
         return baseurl
 
@@ -113,7 +140,6 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
-
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
@@ -132,7 +158,6 @@ html_theme_options = {
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
-
 
 # -- Options for LaTeX output -------------------------------------------------
 
