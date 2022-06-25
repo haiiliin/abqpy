@@ -45,11 +45,11 @@ Runtime library location
 
 The runtime libraries required to execute a program that accesses the C++ interface are located in the following directories:
 
-- *Linux*
+- **Linux**
 
   *abaqus_dir/code/bin*
 
-- *Windows*
+- **Windows**
 
   *abaqus_dir\code\bin*
 
@@ -70,6 +70,6 @@ he header files required to compile a program that accesses the C++ interface ar
 
   *abaqus_dir\code\include*
 
-where **abaqus_dir** is the name of the directory in which Abaqus is installed. To determine the location of **abaqus_dir** at your site, type `abaqus whereami `at an operating system prompt.
+where **abaqus_dir** is the name of the directory in which Abaqus is installed. To determine the location of **abaqus_dir** at your site, type `abaqus whereami` at an operating system prompt.
 
 Only `odb_API.h` must be included to access the C++ interface, but the path to the header files must be provided during compilation.
