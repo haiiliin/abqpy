@@ -61,7 +61,7 @@ An object in the object model can be one of the following:
 
   .. cmd-int-model-session-nls:
   .. figure:: /images/cmd-int-model-viewport-nls.png
-      :width: 50%
+      :width: 100%
       :align: center
 
       The Viewport object model.

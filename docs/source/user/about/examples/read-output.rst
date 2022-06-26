@@ -26,7 +26,7 @@ The resulting contour plot is shown in :numref:`cmd-super`.
 
 .. _cmd-super:
 .. figure:: /images/cmd-super.png
-    :width: 50%
+    :width: 100%
     :align: center
 
     The resulting contour plot. 
